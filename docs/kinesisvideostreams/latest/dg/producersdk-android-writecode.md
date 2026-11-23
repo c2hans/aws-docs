@@ -18,7 +18,7 @@ The following sections provide details.
 
 You create the `[KinesisVideoClient](https://github.com/aws-amplify/aws-sdk-android/blob/main/aws-android-sdk-kinesisvideo/src/main/java/com/amazonaws/kinesisvideo/client/KinesisVideoClient.java)` object by calling the `[createKinesisVideoClient](https://github.com/aws-amplify/aws-sdk-android/blob/main/aws-android-sdk-kinesisvideo/src/main/java/com/amazonaws/mobileconnectors/kinesisvideo/client/KinesisVideoAndroidClientFactory.java)` operation.
 
-```
+```java
 mKinesisVideoClient = KinesisVideoAndroidClientFactory.createKinesisVideoClient(
                     getActivity(),
                     KinesisVideoDemoApp.KINESIS_VIDEO_REGION,
@@ -36,7 +36,7 @@ For example, the Kinesis Video Streams Android library provides the `[AndroidCam
 
 In the following code example (from the `[fragment/StreamConfigurationFragment.java](https://github.com/awslabs/aws-sdk-android-samples/blob/main/AmazonKinesisVideoDemoApp/src/main/java/com/amazonaws/kinesisvideo/demoapp/fragment/StreamConfigurationFragment.java)` file), the configuration for the media source is created:
 
-```
+```java
 private AndroidCameraMediaSourceConfiguration getCurrentConfiguration() {
 return new AndroidCameraMediaSourceConfiguration(
         AndroidCameraMediaSourceConfiguration.builder()

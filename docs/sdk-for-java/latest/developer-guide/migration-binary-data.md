@@ -10,7 +10,7 @@ You can convert `SdkBytes` to `ByteBuffer` automatically using the [migration to
 
 **Example - Get binary data from a message attribute in version 1**
 
-```
+```java
 // Get binary data from a message attribute
 MessageAttributeValue messageAttributeValue = new MessageAttributeValue();
 ByteBuffer binaryValue = messageAttributeValue.getBinaryValue();
@@ -19,7 +19,7 @@ String binaryString = new String(messageAttributeValue.getBinaryValue().array())
 
 **Example - Get binary data from a message attribute in version 2**
 
-```
+```java
 // Get binary data from a message attribute
 MessageAttributeValue messageAttributeValue = MessageAttributeValue.builder().build();
 ByteBuffer binaryValue = messageAttributeValue.binaryValue().asByteBuffer();

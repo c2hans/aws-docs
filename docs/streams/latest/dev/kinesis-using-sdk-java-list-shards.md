@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-jav
 
 A data stream can have one or more shards. The recommended method for listing or retrieving the shards from a data stream is to use the [ListShards](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListShards.html) API. The following example shows how you can get a list of the shards in a data stream. For a full description of the main operation used in this example and all of the parameters you can set for the operation, see [ListShards](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListShards.html).
 
-```
+```java
 import software.amazon.awssdk.services.kinesis.KinesisAsyncClient;
 import software.amazon.awssdk.services.kinesis.model.ListShardsRequest;
 import software.amazon.awssdk.services.kinesis.model.ListShardsResponse;
@@ -35,7 +35,7 @@ public class ShardSample {
 
 To run the previous code example you can use a POM file like the following one.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_UpdateRela
 Updates the content of a related item associated with a case. The following related item types are supported:
 +  **Comment** - Update the text content of an existing comment
 +  **Custom** - Update the fields of a custom related item. You can add, modify, and remove fields from a custom related item. There's a quota for the number of fields allowed in a Custom type related item. See [Connect Customer Cases quotas](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#cases-quotas).
++  **Sla** - Update the target duration (`targetSlaMinutes`) of an SLA. The new deadline counts from the SLA's creation time, not from when you make the update. When you update the SLA, Cases recalculates its status against the new deadline: an open SLA becomes Active or Overdue, and a completed SLA becomes Met or NotMet.
 
  **Important things to know**
 + When updating a Custom related item, all existing and new fields, and their associated values should be included in the request. Fields not included as part of this request will be removed.
@@ -182,7 +183,7 @@ This section provides examples for updating supported related item types.
 
 Request to update a comment's text and content type:
 
-```
+```json
 {
   "domainId": "[domain_id]",
   "caseId": "[case_id]",
@@ -204,7 +205,7 @@ Request to update field values in a custom related item:
 **Note**
  [System case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html#system-case-fields) cannot be used in a custom related item.
 
-```
+```json
 {
   "domainId": "[domain_id]",
   "caseId": "[case_id]",
@@ -236,12 +237,57 @@ Request to update field values in a custom related item:
 }
 ```
 
-### Update with performedBy parameter
+### Update Sla related item
 <a name="API_connect-cases_UpdateRelatedItem_Example_3"></a>
+
+Request to update the target duration of an SLA, followed by the response. In the response, the new `targetTime` is the SLA's `associationTime` plus 960 minutes:
+
+```json
+{
+  "domainId": "[domain_id]",
+  "caseId": "[case_id]",
+  "relatedItemId": "[related_item_id]",
+  "content": {
+    "sla": {
+      "slaUpdateConfiguration": {
+        "targetSlaMinutes": 960
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "relatedItemArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/case/[case_id]/related-item/[related_item_id]",
+  "relatedItemId": "[related_item_id]",
+  "type": "Sla",
+  "content": {
+    "sla": {
+      "slaConfiguration": {
+        "name": "Resolution SLA",
+        "type": "CaseField",
+        "status": "Active",
+        "fieldId": "status",
+        "targetFieldValues": [
+          {
+            "stringValue": "closed"
+          }
+        ],
+        "targetTime": "2024-11-22T17:35:46.329Z"
+      }
+    }
+  },
+  "associationTime": "2024-11-22T01:35:46.329Z"
+}
+```
+
+### Update with performedBy parameter
+<a name="API_connect-cases_UpdateRelatedItem_Example_4"></a>
 
 Request to update a comment and specify who performed the update:
 
-```
+```json
 {
   "domainId": "[domain_id]",
   "caseId": "[case_id]",
@@ -259,11 +305,11 @@ Request to update a comment and specify who performed the update:
 ```
 
 ### UpdateRelatedItem Response example
-<a name="API_connect-cases_UpdateRelatedItem_Example_4"></a>
+<a name="API_connect-cases_UpdateRelatedItem_Example_5"></a>
 
 All successful UpdateRelatedItem requests return the updated related item:
 
-```
+```json
 {
   "relatedItemArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/case/[case_id]/related-item/[related_item_id]",
   "relatedItemId": "[related_item_id]",

@@ -49,7 +49,7 @@ When Amazon Connect Health integrates with AWS services, data is always encrypte
 
 By default, Amazon Connect Health does not retain protected health information (PHI) after a call ends. If memory and personalization is turned on for your domain, Amazon Connect Health keeps a limited amount of structured information between calls so that a patient can resume an unfinished task or reuse an earlier choice. For more information, see [Memory and personalization](pe-memory.md).
 
-For Amazon Connect Health patient engagement workflows integrated with Amazon Connect Customer contact center features, customers can rely on Amazon Connect Customer’s native PHI handling. Amazon Connect Customer provides proactive PHI redaction in chats and transcripts, encrypts data in transit, and manages customer profiles securely. For example, customers can enable Connect Contact Lens sensitive data blocking to prevent PHI from being stored in plain text.
+For Amazon Connect Health patient engagement workflows integrated with Amazon Connect Customer contact center features, Amazon Connect Customer handles PHI at the contact center layer. For more information about how Amazon Connect Customer protects your data, including encryption, see [Data protection in Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/data-protection.html) in the *Amazon Connect Customer Administrator Guide*.
 
 Both services are HIPAA eligible. Together, the two services form a layered approach: Amazon Connect Health handles PHI securely at the agentic layer, while Amazon Connect Customer provides PHI protection controls at the contact center infrastructure level.
 

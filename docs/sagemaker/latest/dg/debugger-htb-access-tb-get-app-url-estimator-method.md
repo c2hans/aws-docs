@@ -20,7 +20,7 @@ This functionality is available in the SageMaker Python SDK v2.184.0 and later. 
 
 The following code automatically opens the TensorBoard application from the unsigned URL that the `get_app_url()` method returns in the your environment's default web browser.
 
-```
+```py
 model_trainer.get_app_url(
     app_type=SupportedInteractiveAppTypes.TENSORBOARD # Required.
 )
@@ -30,7 +30,7 @@ model_trainer.get_app_url(
 
 The following code prints an unsigned URL that you can copy to a web browser and open the TensorBoard application.
 
-```
+```py
 print(
     model_trainer.get_app_url(
         app_type=SupportedInteractiveAppTypes.TENSORBOARD, # Required.
@@ -51,7 +51,7 @@ Note that this option requires the domain user to have the `sagemaker:CreatePres
 **Important**
 Do not share any presigned URLs. The `get_app_url` function creates presigned URLs, which automatically authenticates with your domain and user profile and gives access to any applications and files associated with your domain.
 
-```
+```py
 print(
     model_trainer.get_app_url(
         app_type=SupportedInteractiveAppTypes.TENSORBOARD, # Required

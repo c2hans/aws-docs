@@ -28,7 +28,7 @@ First, perform the steps in [Configuring the FreeRTOS demos](freertos-prereqs.md
 **Demo Project Configuration**
 Open the coreMQTT Mutual Authentication demo as described in the guide for your board in [Board-specific getting started guides](getting-started-guides.md) . In the project, open the file `aws_dev_mode_key_provisioning.c` and change the definition of `keyprovisioningFORCE_GENERATE_NEW_KEY_PAIR`, which is set to zero by default, to one:
 
-```
+```c
 #define keyprovisioningFORCE_GENERATE_NEW_KEY_PAIR 1
 ```
 Then build and run the demo project and continue to the next step.
@@ -65,13 +65,13 @@ Don't forget to disable the temporary key generation setting you enabled above. 
 Follow the instructions in [ Registering Your CA Certificate](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html#register-CA-cert) to create a certificate hierarchy for your device lab certificate. Stop before executing the sequence described in the section *Creating a Device Certificate Using Your CA Certificate*.
 In this case, the device will not be signing the certificate request (that is, the Certificate Service Request or CSR) because the X.509 encoding logic required for creating and signing a CSR has been excluded from the FreeRTOS demo projects to reduce ROM size. Instead, for lab testing purposes, create a private key on your workstation and use it to sign the CSR.
 
-```
+```bash
 openssl genrsa -out tempCsrSigner.key 2048
 openssl req -new -key tempCsrSigner.key -out deviceCert.csr
 ```
 Once your Certificate Authority has been created and registered with AWS IoT, use the following command to issue a client certificate based on the device CSR that was signed in the previous step:
 
-```
+```bash
 openssl x509 -req -in deviceCert.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out deviceCert.pem -days 500 -sha256 -force_pubkey DevicePublicKey.pem
 ```
 Even though the CSR was signed with a temporary private key, the issued certificate can only be used with the actual device private key. The same mechanism can be used in production if you store the CSR signer key in separate hardware, and configure your certificate authority so that it only issues certificates for requests that have been signed by that specific key. That key should also remain under the control of a designated administrator.

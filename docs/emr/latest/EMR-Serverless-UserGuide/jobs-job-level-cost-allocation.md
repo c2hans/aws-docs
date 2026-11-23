@@ -18,7 +18,7 @@ You can configure job-level cost allocation during application creation or updat
 
 Specify the `jobLevelCostAllocation` parameter when creating a new application:
 
-```
+```bash,sh,zsh
 # Enable job-level cost allocation:
 aws emr-serverless create-application \
     --name "my-application" \
@@ -40,7 +40,7 @@ aws emr-serverless create-application \
 
 Update the `jobLevelCostAllocationConfiguration` parameter for an existing application:
 
-```
+```bash,sh,zsh
 # Enable job-level cost allocation:
 aws emr-serverless update-application \
     --application-id <application-id> \

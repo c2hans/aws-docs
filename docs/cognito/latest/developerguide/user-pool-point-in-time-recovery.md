@@ -160,7 +160,7 @@ To recover a user pool, initiate a recovery, review the recovery preview, and th
 
 1. Initiate a recovery with the `initiate-point-in-time-recovery` command. The following example initiates a recovery to October 7, 2026 at 12:00 UTC.
 
-   ```
+   ```bash
    aws cognito-idp initiate-point-in-time-recovery \
        --user-pool-id {{us-east-1_EXAMPLE}} \
        --restore-timestamp {{2026-10-07T12:00:00Z}}
@@ -168,7 +168,7 @@ To recover a user pool, initiate a recovery, review the recovery preview, and th
 
    The response includes the ID of the recovery.
 
-   ```
+   ```json
    {
        "Restoration": {
            "RestoreId": "a1b2c3d4-5678-90ab-cdef-111111111111",
@@ -181,7 +181,7 @@ To recover a user pool, initiate a recovery, review the recovery preview, and th
 
 1. Check the status of the recovery and review the recovery preview with the `describe-point-in-time-recovery` command.
 
-   ```
+   ```bash
    aws cognito-idp describe-point-in-time-recovery \
        --user-pool-id {{us-east-1_EXAMPLE}} \
        --restore-id {{a1b2c3d4-5678-90ab-cdef-111111111111}}
@@ -189,7 +189,7 @@ To recover a user pool, initiate a recovery, review the recovery preview, and th
 
    When the status is `PREVIEW_GENERATED`, the response includes the recovery preview. For each type of entity, the preview shows the number of entities that the recovery creates, updates, and deletes.
 
-   ```
+   ```json
    {
        "Restoration": {
            "RestoreId": "a1b2c3d4-5678-90ab-cdef-111111111111",
@@ -229,14 +229,14 @@ To recover a user pool, initiate a recovery, review the recovery preview, and th
 1. Start or cancel the recovery.
    + To apply the recovery, use the `start-point-in-time-recovery` command.
 
-     ```
+     ```bash
      aws cognito-idp start-point-in-time-recovery \
          --user-pool-id {{us-east-1_EXAMPLE}} \
          --restore-id {{a1b2c3d4-5678-90ab-cdef-111111111111}}
      ```
    + To discard the recovery and resume write operations without changes, use the `cancel-point-in-time-recovery` command.
 
-     ```
+     ```bash
      aws cognito-idp cancel-point-in-time-recovery \
          --user-pool-id {{us-east-1_EXAMPLE}} \
          --restore-id {{a1b2c3d4-5678-90ab-cdef-111111111111}}
@@ -244,7 +244,7 @@ To recover a user pool, initiate a recovery, review the recovery preview, and th
 
 1. After you start the recovery, check its status with the `describe-point-in-time-recovery` command until the status is `RESTORE_COMPLETED`. To list the current and past recoveries of a user pool, use the `list-point-in-time-recoveries` command.
 
-   ```
+   ```bash
    aws cognito-idp list-point-in-time-recoveries \
        --user-pool-id {{us-east-1_EXAMPLE}}
    ```
@@ -278,7 +278,7 @@ A principal that can initiate a recovery can pause write operations in your user
 
 The following example identity-based policy allows a principal to view the recoveries of all user pools in an AWS account, and to initiate, start, and cancel recoveries of one user pool.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

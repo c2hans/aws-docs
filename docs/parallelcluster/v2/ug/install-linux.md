@@ -10,7 +10,7 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
 1. To determine if your version of Linux includes Python and `pip`, run `pip --version`.
 
-   ```
+   ```sh
    $ pip --version
    ```
 
@@ -18,7 +18,7 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
 1. To determine if Python is installed, run `python --version`.
 
-   ```
+   ```sh
    $ python --version
    ```
 
@@ -28,19 +28,19 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
 1. Use the `curl` command to download the installation script.
 
-   ```
+   ```sh
    $ curl -O https://bootstrap.pypa.io/get-pip.py
    ```
 
 1. Run the script with Python to download and install the latest version of `pip` and other required support packages.
 
-   ```
+   ```sh
    $ python get-pip.py --user
    ```
 
    or
 
-   ```
+   ```sh
    $ python3 get-pip.py --user
    ```
 
@@ -50,7 +50,7 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
    1. Find your shell's profile script in your user folder. If you're not sure which shell you have, run `basename $SHELL`.
 
-      ```
+      ```sh
       $ ls -a ~
       .  ..  .bash_logout  .bash_profile  .bashrc  Desktop  Documents  Downloads
       ```
@@ -60,7 +60,7 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
    1. Add an export command at the end of your profile script that's similar to the following example.
 
-      ```
+      ```sh
       export PATH={{~/.local/bin}}:$PATH
       ```
 
@@ -68,13 +68,13 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
    1. To put these changes into effect, reload the profile into your current session.
 
-      ```
+      ```sh
       $ source ~/{{.bash_profile}}
       ```
 
 1. Verify that `pip` is installed correctly.
 
-   ```
+   ```sh
    $ pip3 --version
    pip 21.3.1 from ~/.local/lib/python3.6/site-packages (python 3.6)
    ```
@@ -89,7 +89,7 @@ You can install AWS ParallelCluster and its dependencies on most Linux distribut
 
 Use `pip` to install AWS ParallelCluster.
 
-```
+```sh
 $ python3 -m pip install "aws-parallelcluster<3.0" --upgrade --user
 ```
 
@@ -97,14 +97,14 @@ When you use the `--user` switch, `pip` installs AWS ParallelCluster to `~/.loca
 
 Verify that AWS ParallelCluster installed correctly.
 
-```
+```sh
 $ pcluster version
 2.11.9
 ```
 
 To upgrade to the latest version, run the installation command again.
 
-```
+```sh
 $ python3 -m pip install "aws-parallelcluster<3.0" --upgrade --user
 ```
 
@@ -115,21 +115,21 @@ After installing with `pip`, you might need to add the `pcluster` executable to 
 
 To verify the folder in which `pip` installed AWS ParallelCluster, run the following command.
 
-```
+```sh
 $ which pcluster
 /home/{{username}}/.local/bin/pcluster
 ```
 
 If you omitted the `--user` switch when you installed AWS ParallelCluster, the executable might be in the `bin` folder of your Python installation. If you don't know where Python is installed, run this command.
 
-```
+```sh
 $ which python
 /usr/local/bin/python
 ```
 
 Note that the output might be the path to a symlink, not to the actual executable. To see where the symlink points, run `ls -al`.
 
-```
+```sh
 $ ls -al $(which python)
 /usr/local/bin/python -> ~/.local/Python/3.6/bin/python3.6
 ```

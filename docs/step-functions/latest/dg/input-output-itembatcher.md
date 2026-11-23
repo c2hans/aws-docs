@@ -11,7 +11,7 @@ The `ItemBatcher` field is a JSON object, which specifies to process a group of 
 
 The following example shows the syntax of the `ItemBatcher` field. In the following syntax, the maximum number of items that each child workflow execution should process is set to 100.
 
-```
+```json
 {
   "ItemBatcher": {
     "MaxItemsPerBatch": {{100}}
@@ -21,7 +21,7 @@ The following example shows the syntax of the `ItemBatcher` field. In the follow
 
 By default, each item in a dataset is passed as input to individual child workflow executions. For example, assume you specify a JSON file as input that contains the following array:
 
-```
+```json
 [
   {
     "verdict": "true",
@@ -44,7 +44,7 @@ By default, each item in a dataset is passed as input to individual child workfl
 
 For the given input, each child workflow execution receives an array item as its input. The following example shows the input of a child workflow execution:
 
-```
+```json
 {
   "verdict": "true",
   "statement_date": "6/11/2008",
@@ -54,7 +54,7 @@ For the given input, each child workflow execution receives an array item as its
 
 To help optimize the performance and cost of your processing job, select a batch size that balances the number of items against the items processing time. If you use batching, Step Functions adds the items to an **Items** array. It then passes the array as input to each child workflow execution. The following example shows a batch of two items passed as input to a child workflow execution:
 
-```
+```json
 {
   "Items": [
     {
@@ -92,14 +92,14 @@ For example, imagine you run an execution with an input JSON file that contains 
 Alternatively, you can specify the maximum items for each batch as a [reference path](amazon-states-language-paths.md#amazon-states-language-reference-paths) to an existing key-value pair in your *Distributed Map state* input. This path must resolve to a positive integer.
 For example, given the following input:
 
-```
+```json
 {
   "maxBatchItems": 500
 }
 ```
 You can specify the maximum number of items to batch using a reference path (**JSONPath only**) as follows:
 
-```
+```json
 {
   ...
   "Map": {
@@ -122,14 +122,14 @@ Alternatively, you can specify the maximum batch size as a [reference path](amaz
 If you use batching and don't specify a maximum batch size, the interpreter processes as many items it can process up to 256 KiB in each child workflow execution.
 For example, given the following input:
 
-```
+```json
 {
   "batchSize": 131072
 }
 ```
 You can specify the maximum batch size using a reference path as follows:
 
-```
+```json
 {
   ...
   "Map": {
@@ -149,7 +149,7 @@ You can specify either the `MaxInputBytesPerBatch` or the `MaxInputBytesPerBatch
 **Batch input**
 Optionally, you can also specify a fixed JSON input to include in each batch passed to each child workflow execution. Step Functions merges this input with the input for each individual child workflow executions. For example, given the following fixed input of a fact check date on an array of items:
 
-```
+```json
 "ItemBatcher": {
     "BatchInput": {
         "factCheck": "December 2022"
@@ -158,7 +158,7 @@ Optionally, you can also specify a fixed JSON input to include in each batch pas
 ```
 Each child workflow execution receives the following as input:
 
-```
+```json
 {
   "BatchInput": {
     "factCheck": "December 2022"

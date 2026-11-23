@@ -126,6 +126,7 @@ The recognized artifact properties are the same ones `sam package` rewrites toda
 | --- | --- |
 | `AWS::Serverless::Function` | `CodeUri`, `ImageUri` |
 | `AWS::Serverless::LayerVersion` | `ContentUri` |
+| `AWS::Serverless::MicrovmImage` | `CodeUri` |
 | `AWS::Serverless::Api` | `DefinitionUri` |
 | `AWS::Serverless::HttpApi` | `DefinitionUri` |
 | `AWS::Serverless::StateMachine` | `DefinitionUri` |
@@ -133,6 +134,7 @@ The recognized artifact properties are the same ones `sam package` rewrites toda
 | `AWS::Serverless::Application` | `Location` |
 | `AWS::Lambda::Function` | `Code`, `Code.ImageUri` |
 | `AWS::Lambda::LayerVersion` | `Content` |
+| `AWS::Lambda::MicrovmImage` | `CodeArtifact`, `CodeArtifact.Uri` |
 | `AWS::ApiGateway::RestApi` | `BodyS3Location` |
 | `AWS::ApiGatewayV2::Api` | `BodyS3Location` |
 | `AWS::AppSync::GraphQLSchema` | `DefinitionS3Location` |

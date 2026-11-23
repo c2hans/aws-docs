@@ -62,7 +62,7 @@ The following example policy permits Amazon EMR runtime execution roles belongin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ If your Amazon EMR cluster is not in your Studio account, allow your SageMaker A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -126,7 +126,7 @@ If your Amazon EMR cluster is not in your Studio account, allow your SageMaker A
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -151,7 +151,7 @@ If your Amazon EMR cluster is not in your Studio account, allow your SageMaker A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -220,7 +220,7 @@ In a JupyterLab application started from a space using the SageMaker AI executio
 
 Alternatively, use `client.update_domain` to update the domain settings if your space uses an execution role set at the domain level.
 
-```
+```python
 import botocore.session
 import json
 sess = botocore.session.get_session()

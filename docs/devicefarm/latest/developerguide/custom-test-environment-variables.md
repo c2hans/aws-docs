@@ -34,6 +34,9 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ** `$DEVICEFARM_DEVICE_PLATFORM_NAME` **
  The device's platform name. It is either `Android` or `iOS`.
 
+** `$DEVICEFARM_DEVICE_TYPE` **
+ The type of the device under test. It is either `VIRTUAL` for a simulator or emulator, or `PHYSICAL` for a physical device.
+
 ** `$DEVICEFARM_DEVICE_OS_VERSION` **
  The device's OS version.
 

@@ -9,7 +9,7 @@ Defines an AWS virtual network function (VNF) node.
 ## Syntax
 <a name="vnf-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.VNF:
   properties:
     descriptor\_id: String
@@ -56,7 +56,7 @@ Type: String
 ## Example
 <a name="vnf-example"></a>
 
-```
+```yaml
 SampleVNF:
   type: tosca.nodes.AWS.VNF
   properties:

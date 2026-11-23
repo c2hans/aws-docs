@@ -122,7 +122,7 @@ HTTP Status Code: 400
 
 The following example shows how to invoke the API from the CLI:
 
-```
+```sh
 aws stepfunctions validate-state-machine-definition \
     --definition '{"StartAt":"WaitState","States":{"WaitState":{"Type":"Wait","Seconds":5,"End":true}}}' \
     --type 'STANDARD'
@@ -133,7 +133,7 @@ aws stepfunctions validate-state-machine-definition \
 
 If your state machine definition is saved in a JSON file, you can use the `file://` notation to pass the file contents to the API.
 
-```
+```sh
 aws stepfunctions validate-state-machine-definition \
     --definition file://my-state-machine-definition.asl.json
 ```
@@ -143,7 +143,7 @@ aws stepfunctions validate-state-machine-definition \
 
 On POSIX compliant systems, you can use a command-line utility like grep to parse the output and generate a non-zero return code if the definition did not successfully pass the syntax check:
 
-```
+```sh
 aws stepfunctions validate-state-machine-definition \
     --definition file://my-state-machine-definition.asl.json | grep '"result": "OK"'
 ```
@@ -155,13 +155,13 @@ By setting the **severity level** to `WARNING`, you can gain visibility into pot
 
 Example results with static analysis warnings:
 
-```
+```sh
 $ aws stepfunctions validate-state-machine-definition \
                     --definition file://my-workflow-definition.asl.json \
                     --severity WARNING
 ```
 
-```
+```json
 {
     "result": "OK",
     "diagnostics": [

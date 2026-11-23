@@ -39,7 +39,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the [DescribeJob](https://docs.aws.amazon.com/snowball/latest/api-reference/API_DescribeJob.html) operation.
 
-```
+```json
       {"Records": [
     {
         "eventVersion": "1.05",

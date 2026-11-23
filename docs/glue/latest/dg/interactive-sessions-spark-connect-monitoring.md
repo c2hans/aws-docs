@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-spar
 
  The following example creates a Spark Connect session with the Spark Live UI enabled:
 
-```
+```python
 import boto3
 
 glue = boto3.client("glue", region_name="{{us-east-1}}")
@@ -45,7 +45,7 @@ glue.create_session(
 
  You can access the Spark UI dashboard by using the `GetDashboardUrl` API or from the AWS Glue console. The dashboard opens in a new browser tab. Authentication is handled automatically through the dashboard URL token.
 
-```
+```python
 response = glue.get_dashboard_url(
     ResourceId="{{my-session}}",
     ResourceType="SESSION",
@@ -67,7 +67,7 @@ The dashboard URL token is single-use. It is exchanged for a session cookie on t
 
  To enable executor logs for your Spark Connect session, specify the S3 paths for Spark event logs and Spark logs in the `DefaultArguments` parameter when you create the session.
 
-```
+```python
 glue.create_session(
     Id="{{my-session}}",
     Role="arn:aws:iam::{{123456789012}}:role/{{GlueRole}}",

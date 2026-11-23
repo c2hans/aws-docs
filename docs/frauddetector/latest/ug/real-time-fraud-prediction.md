@@ -29,7 +29,7 @@ You can optionally send data to invoke an SageMaker AI model by passing the data
 
 To generate a fraud prediction, call the `GetEventPrediction` API. The example below assumes you have completed [Part B: Generate fraud predictions](part-b.md). As part of the response, you will receive a model score as well as any matched rules and corresponding outcomes. You can find additional examples of `GetEventPrediction` requests on the [aws-fraud-detector-samples GitHub repository](https://github.com/aws-samples/aws-fraud-detector-samples).
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

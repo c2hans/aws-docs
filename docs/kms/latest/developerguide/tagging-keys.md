@@ -12,7 +12,7 @@ In AWS KMS, you can add tags to a customer managed key when you create the KMS k
 
 For example, you can add a `"Project"="Alpha"` tag to all KMS keys and Amazon S3 buckets that you use for the Alpha project.
 
-```
+```json
 TagKey   = "Project"
 TagValue = "Alpha"
 ```

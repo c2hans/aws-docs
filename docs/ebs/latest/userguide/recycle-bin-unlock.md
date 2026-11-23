@@ -37,7 +37,7 @@ You can unlock a locked Region-level retention rule using one of the following m
 **To unlock a locked retention rule**
 Use the [unlock-rule](https://docs.aws.amazon.com/cli/latest/reference/rbin/unlock-rule.html) AWS CLI command. For `--identifier`, specify the ID of the retention rule to unlock.
 
-```
+```bash
 aws rbin unlock-rule \
 --identifier {{rule_ID}}
 ```
@@ -45,7 +45,7 @@ aws rbin unlock-rule \
 **Example**
 The following example command unlocks retention rule `6lsJ2Fa9nh9`
 
-```
+```bash
 aws rbin unlock-rule \
 --identifier 6lsJ2Fa9nh9
 ```

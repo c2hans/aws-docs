@@ -11,7 +11,7 @@ Here are additional examples of how interfaces can be used in different industri
 
 A power generation company can use interfaces to standardize metrics across different types of generation equipment:
 
-```
+```json
 {
   "assetModelName": "GENERATOR-INTERFACE",
   "assetModelDescription": "Standard interface for power generators",
@@ -67,7 +67,7 @@ This interface can be applied to various generator asset models (gas turbines, s
 
 A water utility can use interfaces to standardize monitoring across treatment plants:
 
-```
+```json
 {
   "assetModelName": "WATER-QUALITY-INTERFACE",
   "assetModelDescription": "Standard interface for water quality monitoring",

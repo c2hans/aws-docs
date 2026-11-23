@@ -13,7 +13,7 @@ The Dynamo Service Level APIs allow you to create, update and delete tables. You
 
 To create a DynamoDB client:
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials,region);
 ```
 
@@ -25,7 +25,7 @@ AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials,region);
 
 To save an item to a DynamoDB table:
 
-```
+```csharp
 // Create a client
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials,region);
 
@@ -56,7 +56,7 @@ var response = await client.PutItemAsync(request);
 
 To retrieve an item:
 
-```
+```csharp
 // Create a client
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials,region);
 
@@ -92,7 +92,7 @@ foreach (var keyValuePair in item)
 
 To update an item:
 
-```
+```csharp
 // Create a client
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials,region);
 
@@ -127,7 +127,7 @@ var response = await client.UpdateItemAsync(request);
 
 To delete an item:
 
-```
+```csharp
 // Create a client
 AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials,region);
 
@@ -152,7 +152,7 @@ var response = await client.DeleteItemAsync(request);
 
 To query and retrieve all books whose author is “Mark Twain”:
 
-```
+```csharp
 public void Query(AWSCredentials credentials, RegionEndpoint region) {
   using(var client = new AmazonDynamoDBClient(credentials, region)) {
     var queryResponse = await client.QueryAsync(new QueryRequest() {
@@ -177,7 +177,7 @@ public void Query(AWSCredentials credentials, RegionEndpoint region) {
 
 The scan example code below returns all books in our table:
 
-```
+```csharp
 public void Scan(AWSCredentials credentials, RegionEndpoint region) {
       using(var client = new AmazonDynamoDBClient(credentials, region)) {
               var queryResponse = client.Scan(new ScanRequest() {

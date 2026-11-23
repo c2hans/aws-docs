@@ -71,7 +71,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### POST schema
 <a name="controlpanel-request-body-post-example"></a>
 
-```
+```json
 {
   "ClusterArn": "string",
   "ClientToken": "string",
@@ -84,7 +84,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### PUT schema
 <a name="controlpanel-request-body-put-example"></a>
 
-```
+```json
 {
   "ControlPanelArn": "string",
   "ControlPanelName": "string"
@@ -97,7 +97,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### CreateControlPanelResponse schema
 <a name="controlpanel-response-body-createcontrolpanelresponse-example"></a>
 
-```
+```json
 {
   "ControlPanel": {
     "ClusterArn": "string",
@@ -114,7 +114,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### UpdateControlPanelResponse schema
 <a name="controlpanel-response-body-updatecontrolpanelresponse-example"></a>
 
-```
+```json
 {
   "ControlPanel": {
     "ClusterArn": "string",
@@ -131,7 +131,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### ValidationException schema
 <a name="controlpanel-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -140,7 +140,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### ServiceQuotaExceededException schema
 <a name="controlpanel-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### AccessDeniedException schema
 <a name="controlpanel-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -158,7 +158,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### ResourceNotFoundException schema
 <a name="controlpanel-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -167,7 +167,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### ConflictException schema
 <a name="controlpanel-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -176,7 +176,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### ThrottlingException schema
 <a name="controlpanel-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -185,7 +185,7 @@ Note that only ASCII characters are supported for control panel names, and each 
 #### InternalServerException schema
 <a name="controlpanel-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

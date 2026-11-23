@@ -14,7 +14,7 @@ The Fleet Intelligence portal cannot establish a WebSocket connection for real-t
 
 1. Confirm the WebSocket endpoint is the correct one from the CloudFormation outputs:
 
-   ```
+   ```bash
    STAGE=staging
    aws cloudformation describe-stacks \
      --stack-name cms-$STAGE-ui \
@@ -24,7 +24,7 @@ The Fleet Intelligence portal cannot establish a WebSocket connection for real-t
 
 1. Test the endpoint directly using a WebSocket client. The upgrade URL must include the `?token=<jwt>` query parameter. An upgrade without the parameter, or with an expired token, returns HTTP 401:
 
-   ```
+   ```bash
    # Install wscat if needed: npm install -g wscat
    JWT=<id-token-from-cognito>
    WS_ENDPOINT=<websocket-endpoint-from-cfn-outputs>
@@ -33,7 +33,7 @@ The Fleet Intelligence portal cannot establish a WebSocket connection for real-t
 
 1. If the endpoint returns HTTP 401 even with a valid token, check the authorizer Lambda logs:
 
-   ```
+   ```bash
    aws logs tail /aws/lambda/cms-$STAGE-websocket-authorizer \
      --since 5m --follow
    ```
@@ -53,7 +53,7 @@ Cognito ID tokens expire after one hour by default. The UI refreshes tokens auto
 
 This CDK context flag disables the `$connect` authorizer and allows anonymous WebSocket connections. This setting is intended only for demos. In production, ensure `cms.allow_unauth_websocket` is set to `false` (the default). Redeploy the UI stack with the flag absent or explicitly set to false:
 
-```
+```bash
 cd deployment
 cdk deploy cms-$STAGE-ui \
   --context cms.allow_unauth_websocket=false \

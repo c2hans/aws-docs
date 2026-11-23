@@ -26,7 +26,7 @@ The following code example shows how to use `GetQueryResults`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwl#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cwl->getqueryresults(
           iv_queryid = iv_query_id ).
@@ -55,7 +55,7 @@ The following code example shows how to use `StartQuery`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwl#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_log_group_name = '/aws/lambda/my-function'
         " iv_query_string = 'fields @timestamp, @message | sort @timestamp desc | limit 20'

@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 
 1.  Use `git` to clone the [Deadline Cloud samples GitHub repository](https://github.com/aws-deadline/deadline-cloud-samples) on the GitHub website.
 
-   ```
+   ```bash
    git clone https://github.com/aws-deadline/deadline-cloud-samples.git
     Cloning into 'deadline-cloud-samples'...
     ...
@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 
 1.  Use the Deadline Cloud CLI to submit the `job_env_daemon_process` sample.
 
-   ```
+   ```bash
     git clone https://github.com/aws-deadline/deadline-cloud-samples.git
    Cloning into 'deadline-cloud-samples'...
     ...
@@ -85,7 +85,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 
     The following lines from the job template specified this action.
 
-   ```
+   ```yaml
       stepEnvironments:
       - name: DaemonProcess
         description: Runs a daemon process for the step's tasks to share.
@@ -172,7 +172,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/run
 
     The following lines from the job template are what specified this action. ``` steps:
 
-   ```
+   ```yaml
     steps:
     - name: EnvWithDaemonProcess
       parameterSpace:

@@ -10,7 +10,7 @@ After creating a Code Interpreter, you can start a session to execute code.
 
 1. To start a Code Interpreter session using the AWS CLI, use the `start-code-interpreter-session` command:
 
-   ```
+   ```bash
    aws bedrock-agentcore start-code-interpreter-session \
      --region <Region> \
      --code-interpreter-id "<your-code-interpreter-id>" \
@@ -21,7 +21,7 @@ After creating a Code Interpreter, you can start a session to execute code.
 
 1. To start a Code Interpreter session using the AWS SDK for Python, use the `start_code_interpreter_session` method:
 
-   ```
+   ```python
    import boto3
 
    # Initialize the boto3 client
@@ -45,7 +45,7 @@ After creating a Code Interpreter, you can start a session to execute code.
 
 1. To start a new Code Interpreter session using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X PUT \
      "https://bedrock-agentcore.<Region>.amazonaws.com/code-interpreters/aws.codeinterpreter.v1/sessions/start" \

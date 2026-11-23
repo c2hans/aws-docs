@@ -110,7 +110,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="cells-cellname-request-body-put-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"
@@ -124,7 +124,7 @@ Enable CORS by returning correct headers.
 #### CellOutput schema
 <a name="cells-cellname-response-body-celloutput-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"

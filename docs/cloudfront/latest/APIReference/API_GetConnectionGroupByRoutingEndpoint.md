@@ -53,6 +53,9 @@ HTTP/1.1 200
          </Tag>
       </Items>
    </Tags>
+   <ViewerFallback>
+      <DistributionId>string</DistributionId>
+   </ViewerFallback>
 </ConnectionGroup>
 ```
 
@@ -114,6 +117,10 @@ Type: String
  ** [Tags](#API_GetConnectionGroupByRoutingEndpoint_ResponseSyntax) **   <a name="cloudfront-GetConnectionGroupByRoutingEndpoint-response-Tags"></a>
 A complex type that contains zero or more `Tag` elements.
 Type: [Tags](API_Tags.md) object
+
+ ** [ViewerFallback](#API_GetConnectionGroupByRoutingEndpoint_ResponseSyntax) **   <a name="cloudfront-GetConnectionGroupByRoutingEndpoint-response-ViewerFallback"></a>
+The distribution whose certificate CloudFront uses for viewer requests that arrive on the connection group's Anycast static IPs without Server Name Indication (SNI).
+Type: [ViewerFallback](API_ViewerFallback.md) object
 
 ## Errors
 <a name="API_GetConnectionGroupByRoutingEndpoint_Errors"></a>

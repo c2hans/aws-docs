@@ -54,7 +54,7 @@ To create a forecast with the AWS CLI, use the `create-forecast` command. Provid
 
 For information on required and optional parameters see [CreateForecast](API_CreateForecast.md).
 
-```
+```cmd
 aws forecast create-forecast \
 --forecast-name {{forecast_name}} \
 --forecast-types 0.1 0.5 0.9 \
@@ -69,7 +69,7 @@ To create a forecast with the AWS SDK for Python (Boto3), use the `create_foreca
 
 For information on required and optional parameters see [CreateForecast](API_CreateForecast.md).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')
@@ -117,7 +117,7 @@ The following CSV file selects the following five time series:
 
 1. Item\_id: 003, store\_location: Denver
 
-```
+```csv
 001, Seattle
 001, New York
 002, Seattle
@@ -184,7 +184,7 @@ To export a forecast with the SDK for Python (Boto3) you use the `export_forecas
 
 For more information about required and optional parameters, see [CreateForecastExportJob](API_CreateForecastExportJob.md) operation.
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')

@@ -97,7 +97,7 @@ Tumbling windows fully support the existing retry policies `maxRetryAttempts` an
 **Example Handler.py – Aggregation and processing**
 The following Python function demonstrates how to aggregate and then process your final state:
 
-```
+```python
 def lambda_handler(event, context):
     print('Incoming event: ', event)
     print('Incoming state: ', event['state'])

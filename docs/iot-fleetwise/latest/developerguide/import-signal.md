@@ -58,7 +58,7 @@ To import a signal catalog, run the following command.
 
 For more information about how to configure branches, attributes, sensors, and actuators, see [Configure AWS IoT FleetWise signals](define-signal.md).
 
-```
+```bash
 aws iotfleetwise import-signal-catalog \
                  --name {{signal-catalog-name}} \
                  --description  {{description}} \
@@ -70,7 +70,7 @@ aws iotfleetwise import-signal-catalog \
 
 The JSON must be stringified and passed through the `vssJson` field. The following is an example of signals defined in VSS.
 
-```
+```json
 {
 	"Vehicle": {
 		"type": "branch",
@@ -361,7 +361,7 @@ The JSON must be stringified and passed through the `vssJson` field. The followi
 
 The following example shows the same signals defined in VSS in a JSON string.
 
-```
+```vssjson
 {
    "vssJson": "{\"Vehicle\":{\"type\":\"branch\",\"children\":{\"Chassis\":{\"type\":\"branch\",\"description\":\"All data concerning steering, suspension, wheels, and brakes.\",\"children\":{\"SteeringWheel\":{\"type\":\"branch\",\"description\":\"Steering wheel signals\",\"children\":{\"Diameter\":{\"type\":\"attribute\",\"description\":\"The diameter of the steering wheel\",\"datatype\":\"float\",\"unit\":\"cm\",\"min\":1,\"max\":50},\"HandsOff\":{\"type\":\"branch\",\"children\":{\"HandsOffSteeringState\":{\"type\":\"actuator\",\"description\":\"HndsOffStrWhlDtSt. Hands Off Steering State\",\"datatype\":\"boolean\"},\"HandsOffSteeringMode\":{\"type\":\"actuator\",\"description\":\"HndsOffStrWhlDtMd. Hands Off Steering Mode\",\"datatype\":\"int8\",\"min\":0,\"max\":2}}}}},\"Accelerator\":{\"type\":\"branch\",\"description\":\"\",\"children\":{\"AcceleratorPedalPosition\":{\"type\":\"sensor\",\"description\":\"Throttle__Position. Accelerator pedal position as percent. 0 = Not depressed. 100 = Fully depressed.\",\"datatype\":\"uint8\",\"unit\":\"%\",\"min\":0,\"max\":100.000035}}}}},\"Powertrain\":{\"type\":\"branch\",\"description\":\"Powertrain data for battery management, etc.\",\"children\":{\"Transmission\":{\"type\":\"branch\",\"description\":\"Transmission-specific data, stopping at the drive shafts.\",\"children\":{\"VehicleOdometer\":{\"type\":\"sensor\",\"description\":\"Vehicle_Odometer\",\"datatype\":\"float\",\"unit\":\"km\",\"min\":0,\"max\":67108863.984375}}},\"CombustionEngine\":{\"type\":\"branch\",\"description\":\"Engine-specific data, stopping at the bell housing.\",\"children\":{\"Engine\":{\"type\":\"branch\",\"description\":\"Engine description\",\"children\":{\"timing\":{\"type\":\"branch\",\"description\":\"timing description\",\"children\":{\"run_time\":{\"type\":\"sensor\",\"description\":\"Engine run time\",\"datatype\":\"int16\",\"unit\":\"ms\",\"min\":0,\"max\":10000},\"idle_time\":{\"type\":\"sensor\",\"description\":\"Engine idle time\",\"datatype\":\"int16\",\"min\":0,\"unit\":\"ms\",\"max\":10000}}}}}}}}},\"Axle\":{\"type\":\"branch\",\"description\":\"Axle signals\",\"children\":{\"TireRRPrs\":{\"type\":\"sensor\",\"description\":\"TireRRPrs. Right rear Tire pressure in kilo-Pascal\",\"datatype\":\"float\",\"unit\":\"kPaG\",\"min\":0,\"max\":1020}}}}}}"
 }
@@ -378,7 +378,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

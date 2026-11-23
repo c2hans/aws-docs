@@ -17,7 +17,7 @@ You must also configure your project dependencies (for example, in your `pom.xml
 
 For example:
 
-```
+```xml
 <project>
   <dependencyManagement>
    <dependencies>
@@ -43,7 +43,7 @@ To instantiate a waiters object, first create a service client. Set the service 
 
 The following code snippet shows how to wait for a DynamoDB table to exist and be in an **ACTIVE** state.
 
-```
+```java
 DynamoDbClient dynamo = DynamoDbClient.create();
 DynamoDbWaiter waiter = dynamo.waiter();
 
@@ -59,7 +59,7 @@ waiterResponse.matched().response().ifPresent(System.out::println);
 
 The following code snippet shows how to wait for a DynamoDB table to no longer exist.
 
-```
+```java
 DynamoDbAsyncClient asyncDynamo = DynamoDbAsyncClient.create();
 DynamoDbAsyncWaiter asyncWaiter = asyncDynamo.waiter();
 
@@ -84,7 +84,7 @@ You can customize the configuration for a waiter by using the `overrideConfigura
 
 The following code snippet shows how to override the configuration on a waiter.
 
-```
+```java
 // sync
 DynamoDbWaiter waiter =
    DynamoDbWaiter.builder()
@@ -106,7 +106,7 @@ DynamoDbAsyncWaiter asyncWaiter =
 
 The following code snippet shows how to override the configuration for a waiter on a per-request basis. Note that only some operations have customizable configurations.
 
-```
+```java
 waiter.waitUntilTableNotExists(b -> b.tableName("myTable"),
                o -> o.maxAttempts(10));
 

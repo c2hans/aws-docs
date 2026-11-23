@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
 ![Picture of three equations](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation5.png)
 
+*Equation 5*
+
  So, for two subsystems whose availability is 99%, the probability that one fails is 1% and the probability that they both fail is (1−99%) × (1−99%) = .01%. This makes the availability using two redundant subsystems 99.99%.
 
  This can be generalized to incorporate additional redundant spares, *s**,* as well. In Equation *(5)* we only assumed a single spare, but a workload might have two, three, or more spares so that it can survive the simultaneous loss of multiple subsystems without impacting availability. If a workload has three subsystems and two are spares, the probability that all three subsystems fail at the same time is (1−*α*) × (1−*α*) × (1−*α*) or (1−*α*)3. In general, a workload with *s* spares will only fail if *s* \+ 1 subsystems fail.
@@ -20,9 +22,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
 ![Picture of four equations](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation6.png)
 
+*Equation 6 *
+
  We can then produce a generalized availability approximation that incorporates the number of failure modes and sparing. (To understand why this in an approximation, refer to Appendix 2 of Highleyman, et al. [Breaking the Availability Barrier](https://www.amazon.com/Breaking-Availability-Barrier-Survivable-Enterprise/dp/1410792331).)
 
 ![Picture of four equations](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation7.png)
+
+*Equation 7 *
 
  Sparing can be applied to any dependency that provides resources that fail independently. Amazon EC2 instances in different AZs or Amazon S3 buckets in different AWS Regions are examples of this. Using spares helps that dependency achieve a higher total availability to support the workload's availability goals.
 
@@ -36,6 +42,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
  Using our general availability with spares formula, Equation *(7)*, for a subsystem that has a 99.5% availability, with two spares the workload's availability is *A* ≈ 1 − (1)(1−.995)3 = 99.9999875% (approximately 3.94 seconds of downtime a year), and with 10 spares we get *A* ≈ 1 − (1)(1−.995)11 = 25.5  9′*s* (the approximate downtime would be 1.26252 × 10−15*m**s* per year, effectively 0). In comparing these two workloads, we've incurred a 5X increase in the cost of sparing to achieve four seconds less downtime a year. For most workloads, the increase in cost would be unwarranted for this increase in availability. The following figure shows this relationship.
 
 ![Diagram showing diminishing returns from increased sparing](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/effect-of-sparing.png)
+
+* Diminishing returns from increased sparing*
 
  At three spares and beyond, the result is fractions of a second of expected downtime a year, meaning that after this point you reach the area of diminishing returns. There might be an urge to "just add more" to achieve higher levels of availability, but in reality, the cost benefit disappears very quickly. Using more than three spares does not provide material, noticeable gain for almost all workloads when the subsystem itself has at least a 99% availability.
 

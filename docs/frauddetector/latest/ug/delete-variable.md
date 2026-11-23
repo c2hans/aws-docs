@@ -34,7 +34,7 @@ You can delete variable in Amazon Fraud Detector console, using the [delete-vari
 
 The following code sample deletes a variable *customer\_name* using the [DeleteVariable](https://docs.aws.amazon.com/frauddetector/latest/api/API_DeleteVariable.html) API.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

@@ -29,9 +29,9 @@ You must have a project in Device Farm. Follow the instructions in [Creating a p
 
 1. Open your project, and then choose **Create run**.
 
-1. Under **Select app and run type**, in the **Run type** section, select your run type. Select **Android app** if you do not have an app ready for testing, or if you are testing an android (.apk) app. Select **iOS app** if you are testing an iOS (.ipa) app. Select **Web app** if you want to test web applications.
+1. Under **Select app and run type**, in the **Run type** section, select your run type. Select **Android app** if you do not have an app ready for testing, or if you are testing an android (.apk) app. Select **iOS app** if you are testing an iOS app. Select **Web app** if you want to test web applications.
 
-1. Under **Select app**, in the **App selection options** section, choose **Select sample app provided by Device Farm** if you do not have an app available for testing. If you are bringing your own app, select **Upload own app**, and choose your application file. If you're uploading an iOS app, be sure to choose **iOS device**, as opposed to a simulator.
+1. Under **Select app**, in the **App selection options** section, choose **Select sample app provided by Device Farm** if you do not have an app available for testing. If you are bringing your own app, select **Upload own app**, and choose your application file. For more information about the app file to upload, see [Preparing an Android app for emulators](apps.md#test-runs-android-emulator-app) and [Packaging an iOS app](apps.md#test-runs-ios-app-packaging).
 
 1. Under **Configure test**, choose one of the available test frameworks.
 **Note**
@@ -60,12 +60,12 @@ If you don't have any tests available, choose **Built-in: Fuzz** to run a standa
    + Assign your run with a custom **Run name**. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
    + Test Insights is selected by default for runs in a custom test environment. Clear **Generate test report** if you want to turn off Test Insights for the run. For more information, see [Test Insights](reports.md#reports-test-insights).
    + Assign a **Job timeout**, which is the maximum number of minutes a job can run on a device. If your tests are complete before the job timeout, the job completes, and you are not charged for the remainder of the job timeout. The default is 150 minutes.
-   + Choose a **Billing method**. By default, if you do not have slots purchased on your account, the Device Farm console selects Metered. If you have slots, the console defaults to Unmetered.
+   + Choose a **Billing method**. By default, if you do not have slots purchased on your account, the Device Farm console selects Metered. If you have slots, the console defaults to Unmetered. If your device selection includes an iOS simulator, the console selects **Metered** and you cannot choose **Unmetered**. For more information, see [Device slots for Android emulators and iOS simulators](how-to-purchase-device-slots.md#how-to-purchase-device-slots-simulators).
 
 1. (Optional) To add additional configuration, open the **Additional configuration** dropdown. In this section, you can do any of the following:
    + To provide an execution role ARN, or override one configured on the parent project, use the Exectuion role ARN field.
    + To provide other data for Device Farm to use during the run, next to **Add extra data**, choose **Choose File**, and then browse to and choose the .zip file that contains the data.
-   + To install an additional app for Device Farm to use during the run, next to **Install other apps**, choose **Choose File**, and then browse to and choose the .apk or .ipa file that contains the app. Repeat this for other apps you want to install. You can change the installation order by dragging and dropping the apps after you upload them.
+   + To install an additional app for Device Farm to use during the run, next to **Install other apps**, choose **Choose File**, and then browse to and select the `.apk` or `.ipa` file that contains the app. Repeat this for other apps you want to install. You can change the installation order by dragging and dropping the apps after you upload them.
    + To specify whether Wi-Fi, Bluetooth, GPS, or NFC is enabled during the run, next to **Set radio states**, select the appropriate boxes.
    + To preset the device latitude and longitude for the run, next to **Device location**, enter the coordinates.
    + To preset the device locale for the run, in **Device locale**, choose the locale.
@@ -190,6 +190,12 @@ For more information, see [**create-upload**](https://docs.aws.amazon.com/cli/la
 
    ```
    aws devicefarm create-upload -–project-arn arn:MyProjectArn -–name {{MyAndroid.apk}} -–type ANDROID_APP
+   ```
+
+   This example creates an upload for an iOS app. The type is `IOS_APP` for a device build and a simulator build alike:
+
+   ```
+   aws devicefarm create-upload --project-arn arn:MyProjectArn --name {{MyApp.ipa}} --type IOS_APP
    ```
 
    The response includes your app upload ARN and a presigned URL.

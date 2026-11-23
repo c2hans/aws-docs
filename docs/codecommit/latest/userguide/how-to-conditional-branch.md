@@ -34,7 +34,7 @@ You can create a policy in IAM that prevents users from updating a branch, inclu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

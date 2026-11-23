@@ -30,7 +30,7 @@ The following code example shows how to use `AssumeRole`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Assume an IAM role that requires an MFA token and use temporary credentials to list Amazon S3 buckets for the account.
 
-```
+```python
 def list_buckets_from_assumed_role_with_mfa(
     assume_role_arn, session_name, mfa_serial_number, mfa_totp, sts_client
 ):
@@ -80,7 +80,7 @@ The following code example shows how to use `GetSessionToken`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Get a session token by passing an MFA token and use it to list Amazon S3 buckets for the account.
 
-```
+```python
 def list_buckets_with_session_token_with_mfa(mfa_serial_number, mfa_totp, sts_client):
     """
     Gets a session token with MFA credentials and uses the temporary session
@@ -133,7 +133,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Create an IAM user, register an MFA device, and create a role that grants permission to list S3 buckets. The user has rights only to assume the role.
 
-```
+```python
 def setup(iam_resource):
     """
     Creates a new user with no permissions.
@@ -255,7 +255,7 @@ def setup(iam_resource):
 ```
 Show that assuming the role without an MFA token is not allowed.
 
-```
+```python
 def try_to_assume_role_without_mfa(assume_role_arn, session_name, sts_client):
     """
     Shows that attempting to assume the role without sending MFA credentials results
@@ -277,7 +277,7 @@ def try_to_assume_role_without_mfa(assume_role_arn, session_name, sts_client):
 ```
 Assume the role that grants permission to list S3 buckets, passing the required MFA token, and show that buckets can be listed.
 
-```
+```python
 def list_buckets_from_assumed_role_with_mfa(
     assume_role_arn, session_name, mfa_serial_number, mfa_totp, sts_client
 ):
@@ -318,7 +318,7 @@ def list_buckets_from_assumed_role_with_mfa(
 ```
 Destroy the resources created for the demo.
 
-```
+```python
 def teardown(user, virtual_mfa_device, role):
     """
     Removes all resources created during setup.
@@ -347,7 +347,7 @@ def teardown(user, virtual_mfa_device, role):
 ```
 Run this scenario by using the previously defined functions.
 
-```
+```python
 def usage_demo():
     """Drives the demonstration."""
     print("-" * 88)
@@ -390,7 +390,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Create a role that grants read-only access to the current account's S3 resources.
 
-```
+```python
 def setup(iam_resource):
     """
     Creates a role that can be assumed by the current user.
@@ -425,7 +425,7 @@ def setup(iam_resource):
 ```
 Get a security token from the AWS federation endpoint and construct a URL that can be used to access the console with federated credentials.
 
-```
+```python
 def construct_federated_url(assume_role_arn, session_name, issuer, sts_client):
     """
     Constructs a URL that gives federated users direct access to the AWS Management
@@ -488,7 +488,7 @@ def construct_federated_url(assume_role_arn, session_name, issuer, sts_client):
 ```
 Destroy the resources created for the demo.
 
-```
+```python
 def teardown(role):
     """
     Removes all resources created during setup.
@@ -503,7 +503,7 @@ def teardown(role):
 ```
 Run this scenario by using the previously defined functions.
 
-```
+```python
 def usage_demo():
     """Drives the demonstration."""
     print("-" * 88)
@@ -550,7 +550,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Create an IAM user, register an MFA device, and create a role that grants permission to let the user list S3 buckets only when MFA credentials are used.
 
-```
+```python
 def setup(iam_resource):
     """
     Creates a new user with no permissions.
@@ -632,7 +632,7 @@ def setup(iam_resource):
 ```
 Get temporary session credentials by passing an MFA token, and use the credentials to list S3 buckets for the account.
 
-```
+```python
 def list_buckets_with_session_token_with_mfa(mfa_serial_number, mfa_totp, sts_client):
     """
     Gets a session token with MFA credentials and uses the temporary session
@@ -666,7 +666,7 @@ def list_buckets_with_session_token_with_mfa(mfa_serial_number, mfa_totp, sts_cl
 ```
 Destroy the resources created for the demo.
 
-```
+```python
 def teardown(user, virtual_mfa_device):
     """
     Removes all resources created during setup.
@@ -688,7 +688,7 @@ def teardown(user, virtual_mfa_device):
 ```
 Run this scenario by using the previously defined functions.
 
-```
+```python
 def usage_demo():
     """Drives the demonstration."""
     print("-" * 88)

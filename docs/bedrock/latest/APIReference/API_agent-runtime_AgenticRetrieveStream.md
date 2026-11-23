@@ -423,7 +423,7 @@ The following example uses the managed foundation model type to query a knowledg
 #### Sample Request
 <a name="API_agent-runtime_AgenticRetrieveStream_Example_1_Request"></a>
 
-```
+```json
 POST /agenticRetrieveStream HTTP/1.1
 Content-type: application/json
 

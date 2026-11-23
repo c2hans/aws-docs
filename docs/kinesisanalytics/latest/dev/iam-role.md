@@ -36,7 +36,7 @@ To grant Amazon Kinesis Data Analytics permissions to assume a role to access a 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -66,7 +66,7 @@ If you are creating an IAM role to allow Amazon Kinesis Data Analytics to read f
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -97,7 +97,7 @@ If you are creating an IAM role to allow Amazon Kinesis Data Analytics to read f
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ If you direct Amazon Kinesis Data Analytics to write output to external destinat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -161,7 +161,7 @@ If you direct Amazon Kinesis Data Analytics to write output to external destinat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -191,7 +191,7 @@ If you direct Amazon Kinesis Data Analytics to write output to external destinat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

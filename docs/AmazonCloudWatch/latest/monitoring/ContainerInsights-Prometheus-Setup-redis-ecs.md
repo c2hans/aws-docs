@@ -16,7 +16,7 @@ The Docker images in the following two Docker Hub repositories are used in this 
 
 **Prerequisite**
 
-To collect metrics from a sample Prometheus workload for Amazon ECS, you must be running Container Insights in the cluster. For information about installing Container Insights, see [Amazon ECS](deploy-container-insights-ECS.md).
+To collect metrics from a sample Prometheus workload for Amazon ECS, you must be running Container Insights in the cluster. For information about installing Container Insights, see [Container Insights for Amazon ECS](deploy-container-insights-ECS.md).
 
 **Topics**
 + [Set the Amazon ECS Fargate cluster environment variable](#ContainerInsights-Prometheus-Setup-redis-ecs-variable)

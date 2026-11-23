@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-listpro
 
 The following Java example shows how to use the [`ListProfilePermissions`](https://docs.aws.amazon.com/signer/latest/api/API_ListProfilePermissions.html) operation.
 
-```
+```java
 package com.examples;
 
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;

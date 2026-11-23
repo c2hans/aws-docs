@@ -17,7 +17,7 @@ If you do not have the required permissions to attach this policy to your IAM id
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

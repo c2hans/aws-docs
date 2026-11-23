@@ -18,7 +18,7 @@ Retrieve the list of existing custom images.
 ## Request syntax
 <a name="list-images-request"></a>
 
-```
+```json
 GET /images/custom
 {
   "imageStatus": "string",
@@ -49,7 +49,7 @@ Required: No
 ## Response syntax
 <a name="list-images-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "images": [
@@ -110,13 +110,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ list_images({{"AVAILABLE"}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   'images': [
     {

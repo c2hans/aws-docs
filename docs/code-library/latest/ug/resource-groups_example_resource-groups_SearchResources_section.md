@@ -48,7 +48,7 @@ For more information, see [Creating query-based groups in AWS Resource Groups](h
 **Tools for PowerShell V4**
 **Example 1: This example creates a ResourceQuery for Instance resource types with tag filters and finds resources. **
 
-```
+```powershell
 $query = [Amazon.ResourceGroups.Model.ResourceQuery]::new()
 $query.Type = [Amazon.ResourceGroups.QueryType]::TAG_FILTERS_1_0
 $query.Query = ConvertTo-Json -Compress -Depth 4 -InputObject @{
@@ -73,7 +73,7 @@ arn:aws:ec2:eu-west-1:123456789012:instance/i-0123445b6cb7bd67b AWS::EC2::Instan
 **Tools for PowerShell V5**
 **Example 1: This example creates a ResourceQuery for Instance resource types with tag filters and finds resources. **
 
-```
+```powershell
 $query = [Amazon.ResourceGroups.Model.ResourceQuery]::new()
 $query.Type = [Amazon.ResourceGroups.QueryType]::TAG_FILTERS_1_0
 $query.Query = ConvertTo-Json -Compress -Depth 4 -InputObject @{

@@ -31,12 +31,12 @@ In each Region, AWS maintains multiple Availability Zones. These Availability Zo
 
 The following is an example of a REST request that you send to Amazon Pinpoint:
 
-```
+```HTTP
 GET /v1/apps/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6/campaigns
 Accept: application/json
 ```
 
-```
+```HTTP
 Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20161127/us-east-1/mobiletargeting/aws4_request, SignedHeaders=accept;host;x-amz-date, Signature=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6
 Host: pinpoint.us-east-1.amazonaws.com
 X-Amz-Date: 20161127T202324Z
@@ -44,7 +44,7 @@ X-Amz-Date: 20161127T202324Z
 
 Following this request, Amazon Pinpoint returns a response that includes the following header:
 
-```
+```HTTP
 200
 Access-Control-Allow-Origin: *
 Connection: keep-alive

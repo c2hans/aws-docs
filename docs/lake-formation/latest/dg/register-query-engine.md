@@ -17,7 +17,7 @@ Before a third-party query engine can use the application integration API operat
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {"Effect": "Allow",
@@ -42,7 +42,7 @@ Before a third-party query engine can use the application integration API operat
 
 1. Set up a role trust policy on the query engine execution role to have fine access control on which session tag key value pair can be attached to this role. In the following example, this role is only allowed to have session tag key `"LakeFormationAuthorizedCaller"` and session tag value `"engine1"` to be attached, and no other session tag key value pair is allowed.
 
-   ```
+   ```JSON
    {
        "Sid": "AllowPassSessionTags",
        "Effect": "Allow",

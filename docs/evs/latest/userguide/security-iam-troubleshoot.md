@@ -11,7 +11,7 @@ Use the following information to help you diagnose and fix common issues that yo
 
 You receive an error like the following when you call an Amazon EVS API operation.
 
-```
+```text
 An error occurred (AccessDeniedException) when calling the CreateEnvironment operation:
 User: arn:aws:iam::111122223333:user/user-name is not authorized to perform:
 evs:CreateEnvironment on resource: arn:aws:evs:region-code:111122223333:environment/my-env

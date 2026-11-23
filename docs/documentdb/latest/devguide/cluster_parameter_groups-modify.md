@@ -64,7 +64,7 @@ In this example, you list the parameter values of `sample-parameter-group` and m
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
           "Parameters": [
               {
@@ -115,7 +115,7 @@ In this example, you list the parameter values of `sample-parameter-group` and m
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
           "DBClusterParameterGroupName": "sample-parameter-group"
       }
@@ -141,7 +141,7 @@ In this example, you list the parameter values of `sample-parameter-group` and m
 
    Output from this operation looks something like the following (JSON format).
 
-   ```
+   ```json
    {
           "Parameters": [
               {

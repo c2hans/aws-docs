@@ -46,7 +46,7 @@ The following limitations apply to nested data:
 + Querying the pseudocolumns of nested data in a Redshift Spectrum table is not supported. For more information, see [Pseudocolumns](c-spectrum-external-tables.md#c-spectrum-external-tables-pseudocolumns).
 + When extracting data from array or map columns by specifying them in a `FROM` clause, you can only select values from those columns if the values are `scalar`. For example, the following queries both try to `SELECT` elements from inside an array. The query that selects `arr.a` works because `arr.a` is a `scalar` value. The second query doesn't work because `array` is an array extracted from `s3.nested table` in the `FROM` clause. (preview)
 
-  ```
+  ```sql
   SELECT array_column FROM s3.nested_table;
 
   array_column

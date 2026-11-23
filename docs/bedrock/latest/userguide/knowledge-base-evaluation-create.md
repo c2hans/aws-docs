@@ -27,7 +27,7 @@ The IAM policy must grant access to both an evaluator model and, for retrieve an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

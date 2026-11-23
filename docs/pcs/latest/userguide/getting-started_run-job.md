@@ -9,13 +9,13 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_run
  Connect to the login node of your cluster and run the following commands at its shell prompt.
 + Become the default user. Change to the shared directory.
 
-  ```
+  ```sh
   sudo su - ec2-user
   cd /shared
   ```
 + Use the following commands to create an example job script:
 
-  ```
+  ```sh
   cat << EOF > job.sh
   #!/bin/bash
   #SBATCH -J single
@@ -27,17 +27,17 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_run
   ```
 + Submit the job script to the Slurm scheduler:
 
-  ```
+  ```sh
   sbatch -p demo job.sh
   ```
 +  When the job is submitted, it will return a job ID as a number. Use that ID to check the job status. Replace {{job-id}} in the following command with the number returned from `sbatch`.
 
-  ```
+  ```sh
   squeue --job {{job-id}}
   ```
 **Example**
 
-  ```
+  ```sh
   squeue --job 1
   ```
 
@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_run
 +  Continue to check the status of the job until it reaches the `R` (running) status. The job is done when `squeue` doesn't return anything.
 +  Inspect the contents of the `/shared` directory.
 
-  ```
+  ```sh
   ls -alth /shared
   ```
 
@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_run
    The files named `single.1.out` and `single.1.err` were written by one of your cluster's compute nodes. Because the job was run in a shared directory (`/shared`), they are also available on your login node. This is why you configured an FSx for Lustre file system for this cluster.
 +  Inspect the contents of the `single.1.out` file.
 
-  ```
+  ```sh
   cat /shared/single.1.out
   ```
 

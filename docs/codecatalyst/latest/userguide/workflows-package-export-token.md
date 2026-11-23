@@ -60,7 +60,7 @@ Use the following instructions to use an authorization token with a workflow act
 
 1. In a **Build** or **Test** action, add code similar to the following:
 
-   ```
+   ```yaml
    Actions:
      {{action-name}}:
        Packages:

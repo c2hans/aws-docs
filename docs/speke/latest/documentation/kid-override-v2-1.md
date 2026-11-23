@@ -8,7 +8,7 @@ The encryptor creates a new key identifier (KID) each time that it rotates keys.
 
 The following is an example request with the KID `11111111-1111-1111-1111-111111111111`:
 
-```
+```xml
 <cpix:CPIX contentId="abc123" version="2.4" xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc">
 	<cpix:ContentKeyList>
 		<cpix:ContentKey explicitIV="OFj2IjCsPJFfMAxmQxLGPw==" kid="11111111-1111-1111-1111-111111111111" commonEncryptionScheme="cbcs"></cpix:ContentKey>
@@ -36,7 +36,7 @@ The following is an example request with the KID `11111111-1111-1111-1111-111111
 
 The following response overrides the KID to `22222222-2222-2222-2222-222222222222`:
 
-```
+```xml
 <cpix:CPIX contentId="abc123" version="2.4" xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc">
 	<cpix:ContentKeyList>
 		<cpix:ContentKey explicitIV="OFj2IjCsPJFfMAxmQxLGPw==" kid="22222222-2222-2222-2222-222222222222" commonEncryptionScheme="cbcs">

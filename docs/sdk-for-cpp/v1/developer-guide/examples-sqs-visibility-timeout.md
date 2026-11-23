@@ -24,7 +24,7 @@ When you have received a message, you can modify its visibility timeout by passi
 
  **Includes**
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/sqs/SQSClient.h>
 #include <aws/sqs/model/ChangeMessageVisibilityRequest.h>
@@ -34,7 +34,7 @@ When you have received a message, you can modify its visibility timeout by passi
 
  **Code**
 
-```
+```cpp
     Aws::SQS::Model::ChangeMessageVisibilityRequest request;
     request.SetQueueUrl(queue_url);
     request.SetReceiptHandle(messageReceiptHandle);

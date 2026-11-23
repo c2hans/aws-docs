@@ -62,13 +62,13 @@ To see a list of AWS Proton actions, see [Actions defined by AWS Proton](https:/
 
 Policy actions in AWS Proton use the following prefix before the action:
 
-```
+```text
 proton
 ```
 
 To specify multiple actions in a single statement, separate them with commas.
 
-```
+```json
 "Action": [
       "proton:{{action1}}",
       "proton:{{action2}}"
@@ -77,7 +77,7 @@ To specify multiple actions in a single statement, separate them with commas.
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `List`, include the following action:
 
-```
+```json
 "Action": "proton:List*"
 ```
 

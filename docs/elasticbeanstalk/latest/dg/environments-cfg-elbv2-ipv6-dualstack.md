@@ -242,7 +242,7 @@ aws elasticbeanstalk update-environment \
 
 **Example**
 
-```
+```json
 ### example options.json ###
 [
   {

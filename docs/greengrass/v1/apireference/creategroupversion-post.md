@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="creategroupversion-post-cli"></a>
 
-```
+```bash
 aws greengrass create-group-version \
   --group-id <value> \
   [--core-definition-version-arn <value>] \
@@ -32,7 +32,7 @@ aws greengrass create-group-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "CoreDefinitionVersionArn": "string",
@@ -58,7 +58,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "CoreDefinitionVersionArn": "string",
 "DeviceDefinitionVersionArn": "string",
@@ -107,7 +107,7 @@ type: string
 Success. The response contains information about the group version.
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -135,7 +135,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

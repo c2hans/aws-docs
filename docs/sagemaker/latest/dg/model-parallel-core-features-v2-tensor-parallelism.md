@@ -36,7 +36,7 @@ The following code snippets show how to add the SMP initialization module `torch
 
 **SMP configuration**
 
-```
+```json
 {
     "tensor_parallel_degree": 8,
     "random_seed": 0
@@ -47,7 +47,7 @@ The following code snippets show how to add the SMP initialization module `torch
 
 Initialize with `torch.sagemaker.init()` to activate SMP v2 and wrap your model with the [`torch.sagemaker.transform`](distributed-model-parallel-v2-reference.md#model-parallel-v2-torch-sagemaker-reference-transform) API.
 
-```
+```py
 import torch.sagemaker as tsm
 tsm.init()
 

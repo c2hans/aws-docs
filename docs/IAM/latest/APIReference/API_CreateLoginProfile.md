@@ -16,7 +16,8 @@ For more information about managing passwords, see [Managing passwords](https://
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** MaxSigninSessionDuration **
-The maximum duration (in seconds) of an AWS Sign-In session for this IAM user. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive. If you do not specify a value, the setting remains unset and the existing sign-in session behavior applies.
+The maximum duration (in seconds) of an AWS Sign-In session that uses this login profile, which is the IAM user's user name and password. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive. If you do not specify a value, the setting remains unset and the existing sign-in session behavior applies.
+This setting applies only to sessions created through OAuth-based flows (`signin:CreateOAuth2Token`). It does not affect AWS Management Console browser sessions or traditional STS sessions.
 This setting is not supported for the root user.
 Type: Integer
 Valid Range: Minimum value of 3600. Maximum value of 7776000.

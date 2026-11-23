@@ -42,7 +42,7 @@ For the best experience, we recommend having both AWS Regions enabled during reg
 
 For example, the following call results in agents having a 50% chance of using the us-west-2 sign-in server and a 50% of using the us-east-1 sign-in server for a given login call from the identity provider.
 
-```
+```json
 aws connect update-traffic-distribution \
 --id traffic distribution group ID or ARN \
 --cli-input-json \
@@ -64,7 +64,7 @@ aws connect update-traffic-distribution \
 
 Conversely, the following sign-in distribution routes 100% of traffic on the sign-in endpoint to use the us-east-1 sign-in server.
 
-```
+```json
 aws connect update-traffic-distribution \
 --id traffic distribution group ID or ARN \
 --cli-input-json \
@@ -94,7 +94,7 @@ If the sign-in endpoint is not responsive during agent sign-in and your `SignInC
 
 To shift all new inbound voice contacts, agent sign-in distribution, and agent distribution from us-west-2 to us-east-1, use the following code snippet.
 
-```
+```json
 aws connect update-traffic-distribution \
 --id traffic distribution group ID or ARN \
 --cli-input-json \

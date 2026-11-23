@@ -272,7 +272,7 @@ The CDK CLI automatically creates a CDK app that contains a single stack. The CD
 **Example**
 Located in `bin/cdk-hello-world.ts`:
 
-```
+```javascript
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -284,7 +284,7 @@ new CdkHelloWorldStack(app, 'CdkHelloWorldStack', {
 ```
 Located in `bin/cdk-hello-world.js`:
 
-```
+```javascript
 #!/usr/bin/env node
 const cdk = require('aws-cdk-lib');
 const { CdkHelloWorldStack } = require('../lib/cdk-hello-world-stack');
@@ -294,7 +294,7 @@ new CdkHelloWorldStack(app, 'CdkHelloWorldStack', {
 ```
 Located in `app.py`:
 
-```
+```python
 #!/usr/bin/env python3
 import os
 import aws_cdk as cdk
@@ -306,7 +306,7 @@ app.synth()
 ```
 Located in `src/main/java/…​/CdkHelloWorldApp.java`:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -328,7 +328,7 @@ public class JavaApp {
 ```
 Located in `src/CdkHelloWorld/Program.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using System;
 using System.Collections.Generic;
@@ -352,7 +352,7 @@ namespace CdkHelloWorld
 ```
 Located in `cdk-hello-world.go`:
 
-```
+```go
 package main
 import (
     "github.com/aws/aws-cdk-go/awscdk/v2"
@@ -472,7 +472,7 @@ To keep this tutorial simple, we use a JavaScript Lambda function for all CDK pr
 
 Define your Lambda function by adding the following to the newly created file:
 
-```
+```javascript
 exports.handler = async (event) => {
     return {
         statusCode: 200,
@@ -492,7 +492,7 @@ Open the project file that defines your CDK stack. You will modify this file to 
 **Example**
 Located in `lib/cdk-hello-world-stack.ts`:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -507,7 +507,7 @@ export class CdkHelloWorldStack extends cdk.Stack {
 ```
 Located in `lib/cdk-hello-world-stack.js`:
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 const lambda = require('aws-cdk-lib/aws-lambda');
 const apigateway = require('aws-cdk-lib/aws-apigateway');
@@ -526,7 +526,7 @@ module.exports = { CdkHelloWorldStack }
 ```
 Located in `cdk_hello_world/cdk_hello_world_stack.py`:
 
-```
+```python
 from aws_cdk import Stack
 from constructs import Construct
 
@@ -538,7 +538,7 @@ class CdkHelloWorldStack(Stack):
 ```
 Located in `src/main/java/…​/CdkHelloWorldStack.java`:
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -559,7 +559,7 @@ public class CdkHelloWorldStack extends Stack {
 ```
 Located in `src/CdkHelloWorld/CdkHelloWorldStack.cs`:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -576,7 +576,7 @@ namespace CdkHelloWorld
 ```
 Located at `cdk-hello-world.go`:
 
-```
+```go
 package main
 
 import (
@@ -627,7 +627,7 @@ Modify your stack file as follows:
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 // Import Lambda L2 construct
@@ -647,7 +647,7 @@ export class CdkHelloWorldStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 // Import Lambda L2 construct
 const lambda = require('aws-cdk-lib/aws-lambda');
@@ -668,7 +668,7 @@ class CdkHelloWorldStack extends Stack {
 module.exports = { CdkHelloWorldStack }
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
     # Import Lambda L2 construct
@@ -692,7 +692,7 @@ class CdkHelloWorldStack(Stack):
 ```
 We import the `aws_lambda` module as `\_lambda` because `lambda` is a build-in identifier in Python.
 
-```
+```java
 // ...
 // Import Lambda L2 construct
 import software.amazon.awscdk.services.lambda.Code;
@@ -717,7 +717,7 @@ public class CdkHelloWorldStack extends Stack {
 }
 ```
 
-```
+```csharp
 // ...
 // Import Lambda L2 construct
 using Amazon.CDK.AWS.Lambda;
@@ -740,7 +740,7 @@ namespace CdkHelloWorld
 }
 ```
 
-```
+```go
 package main
 
 import (
@@ -788,7 +788,7 @@ Modify your stack file as follows:
 
 **Example**
 
-```
+```javascript
 // ...
 //Import API Gateway L2 construct
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
@@ -812,7 +812,7 @@ export class CdkHelloWorldStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 // ...
 // Import API Gateway L2 construct
 const apigateway = require('aws-cdk-lib/aws-apigateway');
@@ -838,7 +838,7 @@ class CdkHelloWorldStack extends Stack {
 // ...
 ```
 
-```
+```python
 from aws_cdk import (
     # ...
     # Import API Gateway L2 construct
@@ -866,7 +866,7 @@ class CdkHelloWorldStack(Stack):
         hello_resource.add_method("GET")
 ```
 
-```
+```java
 // ...
 // Import API Gateway L2 construct
 import software.amazon.awscdk.services.apigateway.LambdaRestApi;
@@ -895,7 +895,7 @@ public class CdkHelloWorldStack extends Stack {
 }
 ```
 
-```
+```csharp
 // ...
 // Import API Gateway L2 construct
 using Amazon.CDK.AWS.APIGateway;
@@ -923,7 +923,7 @@ namespace CdkHelloWorld
 }
 ```
 
-```
+```go
 // ...
 
 import (
@@ -1015,7 +1015,7 @@ The following is an example output of the AWS CloudFormation template:
 ### AWS CloudFormation template
 <a name="serverless-example-deploy-cfn"></a>
 
-```
+```yaml
 Resources:
   HelloWorldFunctionServiceRoleunique-identifier:
     Type: AWS::IAM::Role
@@ -1366,7 +1366,7 @@ Use the AWS CLI to invoke your Lambda function.
 
 1. Modify your stack file to capture the output value of your deployed Lambda function name. The following is an example:
 
-   ```
+   ```javascript
    ...
 
    class CdkHelloWorldStack extends Stack {

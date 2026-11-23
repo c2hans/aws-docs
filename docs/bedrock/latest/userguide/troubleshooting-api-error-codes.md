@@ -219,7 +219,7 @@ Enabling TCP keep-alive on the Amazon Bedrock client requires *two* settings wor
 
 1. **Enable TCP keep-alive in your AWS SDK client.** The boto3 `Config` object accepts a `tcp_keepalive` parameter, which defaults to `False`. Set it to `True` when constructing the Amazon Bedrock client:
 
-   ```
+   ```python
    import boto3
    from botocore.config import Config
 
@@ -231,7 +231,7 @@ Enabling TCP keep-alive on the Amazon Bedrock client requires *two* settings wor
 
 1. **Configure the OS-level keep-alive interval to fire before the 350-second idle timeout.** Linux defaults to `net.ipv4.tcp_keepalive_time = 7200` (2 hours), which is much longer than the NAT or VPC endpoint idle timeout, so SDK-level keep-alive alone has no effect. Lower the kernel setting to a value safely below 350 seconds (for example, 45 seconds):
 
-   ```
+   ```bash
    sysctl -w net.ipv4.tcp_keepalive_time=45
    ```
 

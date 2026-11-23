@@ -14,7 +14,7 @@ The following code examples show how to use `StartEngagementByAcceptingInvitatio
 **SDK for Java 2.x**
 Starts the engagement by accepting an EngagementInvitation.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -97,7 +97,7 @@ public class StartEngagementByAcceptingInvitationTask {
 **SDK for Python (Boto3)**
 Starts the engagement by accepting an EngagementInvitation.
 
-```
+```python
 #!/usr/bin/env python
 
 """

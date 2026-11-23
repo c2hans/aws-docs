@@ -243,7 +243,7 @@ The following Apache Airflow configuration options are not available in Amazon M
 
 You can use the following DAG to print your `email_backend` Apache Airflow configuration options. To run in response to Amazon MWAA events, copy the code to your environment's DAGs folder on your Amazon S3 storage bucket.
 
-```
+```python
 from airflow.decorators import dag
 from airflow.operators.python import PythonOperator
 from datetime import datetime

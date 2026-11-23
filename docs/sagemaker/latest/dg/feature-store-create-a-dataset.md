@@ -29,7 +29,7 @@ By default, Feature Store doesn't include records that you've deleted from the d
 
 Before you use the SDK to create a dataset, you must start a SageMaker AI session. Use the following code to start the session.
 
-```
+```python
 import boto3
 from sagemaker.core.helper.session_helper import Session
 from sagemaker.mlops.feature_store import FeatureStore
@@ -55,7 +55,7 @@ feature_store = FeatureStore(feature_store_session)
 
 The following code shows an example of creating a dataset from multiple feature groups. The following code snippet uses the example feature groups "{{base\_fg\_name}}", "{{first\_fg\_name}}", and "{{second\_fg\_name}}", which may not exist or have the same schema within your Feature Store. It is recommended to replace these feature groups with feature groups that exist within your Feature Store. For information on how to create a feature group, see [Step 3: Create feature groups](feature-store-introduction-notebook.md#feature-store-set-up-feature-groups-introduction).
 
-```
+```python
 from sagemaker.mlops.feature_store import FeatureGroup
 
 s3_bucket_name = "offline-store-sdk-test"
@@ -79,7 +79,7 @@ builder = feature_store.create_dataset(
 
 The following code shows an example of creating a dataset from multiple feature groups and a pandas dataframe.
 
-```
+```python
 base_data = [[1, 187512346.0, 123, 128],
              [2, 187512347.0, 168, 258],
              [3, 187512348.0, 125, 184],
@@ -133,7 +133,7 @@ After you've configured the dataset, you can specify the output using one of the
 
 You can retrieve data that comes after a specific period in time. The following code retrieves data after a timestamp.
 
-```
+```python
 fg1 = FeatureGroup("example-feature-group-1")
 feature_store.create_dataset(
     base=fg1,
@@ -143,7 +143,7 @@ feature_store.create_dataset(
 
 You can also retrieve data from a specific time period. You can use the following code to get data for a specific time range:
 
-```
+```python
 fg1 = FeatureGroup("fg1")
 feature_store.create_dataset(
     base=fg1,
@@ -156,7 +156,7 @@ feature_store.create_dataset(
 
 You might want to join multiple feature groups to a pandas dataframe where the event time values of the feature group happen no later than the event time of the data frame. Use the following code as a template to help you perform the join.
 
-```
+```python
 fg1 = FeatureGroup("fg1")
 fg2 = FeatureGroup("fg2")
 events = [['2020-02-01T08:30:00Z', 6, 1],
@@ -177,7 +177,7 @@ feature_store.create_dataset(
 
 You can also retrieve data that comes after a specific period in time. The following code retrieves data after the time specified by the timestamp in the `as_of` method.
 
-```
+```python
 fg1 = FeatureGroup("fg1")
 feature_store.create_dataset(
     base=fg1,

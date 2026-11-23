@@ -31,7 +31,7 @@ The *instance profile credentials* step in the default provider chain is availab
 
 For example:
 
-```
+```java
 AmazonS3 s3 = AmazonS3ClientBuilder.standard()
               .withCredentials(new InstanceProfileCredentialsProvider(false))
               .build();
@@ -84,14 +84,14 @@ Let’s build the sample application to run on the EC2 instance. First, create a
 
 Next, copy the AWS SDK for Java libraries into your newly-created directory. If you downloaded the AWS SDK for Java to your `~/Downloads` directory, you can copy them using the following commands:
 
-```
+```sh
 cp -r ~/Downloads/aws-java-sdk-{1.7.5}/lib .
 cp -r ~/Downloads/aws-java-sdk-{1.7.5}/third-party .
 ```
 
 Open a new file, call it `GetS3Object.java`, and add the following code:
 
-```
+```java
 import java.io.*;
 
 import com.amazonaws.auth.*;
@@ -139,7 +139,7 @@ public class GetS3Object {
 
 Open a new file, call it `build.xml`, and add the following lines:
 
-```
+```xml
 <project name="Get {S3} Object" default="run" basedir=".">
   <path id="aws.java.sdk.classpath">
     <fileset dir="./lib" includes="**/*.jar"/>
@@ -164,7 +164,7 @@ Open a new file, call it `build.xml`, and add the following lines:
 
 Build and run the modified program. Note that there are no credentials are stored in the program. Therefore, unless you have your AWS credentials specified already, the code will throw `AmazonServiceException`. For example:
 
-```
+```sh
 $ ant
 Buildfile: /path/to/my/GetS3ObjectApp/build.xml
 
@@ -183,7 +183,7 @@ BUILD SUCCESSFUL
 
 Transfer the program to your Amazon EC2 instance using secure copy (** `` **), along with the AWS SDK for Java libraries. The sequence of commands looks something like the following.
 
-```
+```sh
 scp -p -i {my-key-pair}.pem GetS3Object.class ec2-user@{public_dns}:GetS3Object.class
 scp -p -i {my-key-pair}.pem build.xml ec2-user@{public_dns}:build.xml
 scp -r -p -i {my-key-pair}.pem lib ec2-user@{public_dns}:lib
@@ -202,7 +202,7 @@ In the preceding commands:
 **Note**
 The `-p` switch works only on Linux, macOS, or Unix. If you are copying files from Windows, you may need to fix the file permissions on your instance using the following command:
 
-```
+```sh
 chmod -R u+rwx GetS3Object.class build.xml lib third-party
 ```
 
@@ -213,13 +213,13 @@ To run the program, connect to your Amazon EC2 instance. For more information, s
 
 If ** ` ant ` ** is not available on your instance, install it using the following command:
 
-```
+```sh
 sudo yum install ant
 ```
 
 Then, run the program using `ant` as follows:
 
-```
+```sh
 ant run
 ```
 

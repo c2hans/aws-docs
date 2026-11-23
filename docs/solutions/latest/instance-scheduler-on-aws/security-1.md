@@ -33,7 +33,7 @@ To grant permission to use an AWS KMS key with Instance Scheduler, add the AWS K
 
 This will automatically generate the following policy and add it to the scheduling role for that account:
 
-```
+```json
  {
 
    "Version": "2012-10-17",
@@ -82,7 +82,7 @@ To grant permission to use AWS License Manager with Instance Scheduler, add the 
 
 This will automatically generate the following policy and add it to the scheduling role for that account:
 
-```
+```json
  {
 
    "Version": "2012-10-17",

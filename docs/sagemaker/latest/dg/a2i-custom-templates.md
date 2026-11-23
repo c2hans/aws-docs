@@ -31,7 +31,7 @@ Amazon Augmented AI custom templates enable you to embed external scripts and st
 
 **Example**
 
-```
+```html
 <script src="https://www.example.com/my-enhancment-script.js"></script>
 <link rel="stylesheet" type="text/css" href="https://www.example.com/my-enhancement-styles.css">
 ```

@@ -11,7 +11,7 @@ To migrate your models to Amazon Bedrock, we recommend attaching [AmazonBedrockF
 
 ****
 
-```
+```json
 {
     	"Version":"2012-10-17",
     	"Statement": [
@@ -183,7 +183,7 @@ To migrate your models to Amazon Bedrock, we recommend attaching [AmazonBedrockF
 ```
 The Amazon Bedrock Full Access policy only provides permissions to the Amazon Bedrock API. To use Amazon Bedrock in the AWS Management Console, your IAM role must also have the following permissions:
 
-```
+```json
 {
         "Sid": "AllowConsoleS3AccessForBedrockMarketplace",
         "Effect": "Allow",
@@ -201,7 +201,7 @@ If you’re writing your own policy, you must include the policy statement that 
 
 ****
 
-```
+```json
 {
 
         "Version":"2012-10-17",

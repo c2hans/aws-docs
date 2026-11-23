@@ -67,7 +67,7 @@ To view a code example for using the `$changeStreamSplitLargeEvent` aggregation 
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -104,7 +104,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 import threading
 import time

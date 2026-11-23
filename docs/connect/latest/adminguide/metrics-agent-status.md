@@ -53,7 +53,7 @@ To find out what the agent status is in the real-time metrics report, look at th
 
 In the agent event stream you'll see the **AgentStatus**, for example:
 
-```
+```json
 {
  "AWSAccountId": "012345678901",
  "AgentARN": "arn:aws:connect:us-east-1:012345678901:instance/aaaaaaaa-bbbb-cccc-dddd-111111111111/agent/agent-ARN",

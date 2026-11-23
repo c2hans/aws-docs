@@ -1396,7 +1396,7 @@ To access the list of supported resource types from code, you can invoke the [Li
 
 For example, you can run the [list-supported-resource-types](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/list-supported-resource-types.html) AWS Command Line Interface (AWS CLI) command, as shown in the following example.
 
-```
+```bash
 $ aws resource-explorer-2 list-supported-resource-types
 {
     "ResourceTypes": [

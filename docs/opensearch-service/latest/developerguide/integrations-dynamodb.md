@@ -19,7 +19,7 @@ Before proceeding, you must have the following resources.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -44,7 +44,7 @@ Before proceeding, you must have the following resources.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -64,7 +64,7 @@ Before proceeding, you must have the following resources.
 
 Follow the instructions in [Create the Lambda deployment package](integrations-s3-lambda.md#integrations-s3-lambda-deployment-package), but create a directory named `ddb-to-opensearch` and use the following code for `sample.py`:
 
-```
+```python
 import boto3
 import requests
 from requests_aws4auth import AWS4Auth

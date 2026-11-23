@@ -12,12 +12,12 @@ Update a configuration bundle to create a new immutable version with changed con
 **Example**
 If you added the bundle with `agentcore add config-bundle`, change its `components` in `agentcore/agentcore.json` and deploy. The deployment creates a new immutable version:
 
-```
+```bash
 agentcore deploy
 ```
 To update a configuration bundle that your project does not manage, such as one that you created with `agentcore eval config-bundle create`, provide the complete replacement component map. The command creates a new immutable version on `mainline` by default:
 
-```
+```bash
 agentcore eval config-bundle update \
   --id <configuration-bundle-id> \
   --components file://components.json \
@@ -25,12 +25,12 @@ agentcore eval config-bundle update \
 ```
 To list the versions of either kind of bundle, run the following command. For a bundle in your project, the bundle ID is the last segment of its `arn` in `agentcore status --json`:
 
-```
+```bash
 agentcore eval config-bundle version list --id <configuration-bundle-id>
 ```
 Update changing the model ID:
 
-```
+```python
 import boto3
 import uuid
 
@@ -61,7 +61,7 @@ print(f"New version ID: {response['versionId']}")
 ```
 Update with a recommended system prompt from a recommendation result:
 
-```
+```python
 import time
 import boto3
 import uuid

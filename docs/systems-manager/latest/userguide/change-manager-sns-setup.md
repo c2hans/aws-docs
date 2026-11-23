@@ -115,7 +115,7 @@ If you turned on AWS Key Management Service (AWS KMS) server-side encryption for
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

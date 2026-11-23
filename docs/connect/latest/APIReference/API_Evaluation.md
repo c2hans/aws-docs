@@ -61,11 +61,33 @@ Type: String
 Valid Values: `STANDARD | CALIBRATION`
 Required: No
 
+ ** ItemEnablementStatus **   <a name="connect-Type-Evaluation-ItemEnablementStatus"></a>
+A map of item (section or question) identifiers to their enablement status, computed by the service from each item's conditional enablement configuration. Disabled items are excluded from scoring. Valid values: `ENABLED` \| `DISABLED`.
+Type: String to string map
+Map Entries: Maximum number of 100 items.
+Valid Values: `ENABLED | DISABLED`
+Required: No
+
  ** Scores **   <a name="connect-Type-Evaluation-Scores"></a>
 A map of item (section or question) identifiers to score value.
 Type: String to [EvaluationScore](API_EvaluationScore.md) object map
 Map Entries: Maximum number of 100 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 500.
+Required: No
+
+ ** SourceResolutionStatus **   <a name="connect-Type-Evaluation-SourceResolutionStatus"></a>
+The aggregate status of resolving the external source data (such as Contact Lens analysis and AI metrics) that is used by conditional enablement in the evaluation. Source data is resolved asynchronously after the evaluation is started. While a source is pending or after it fails to resolve, conditions that depend on it evaluate to the item's `DefaultAction`. Valid values:
++  `PENDING` - One or more sources have not been resolved yet. Call `DescribeContactEvaluation` again to get updated `ItemEnablementStatus` values.
++  `RESOLVED` - All sources have been resolved.
++  `FAILED` - One or more sources could not be resolved. Dependent conditions use the item's `DefaultAction`.
+Type: String
+Valid Values: `PENDING | RESOLVED | FAILED`
+Required: No
+
+ ** SourceValues **   <a name="connect-Type-Evaluation-SourceValues"></a>
+The resolved values of the external sources (such as contact data, evaluation metadata, form metadata, and AI metrics) that are used by the conditions in the evaluation form. You can use these values to evaluate the conditions against the current answers without calling `DescribeContactEvaluation` again.
+Type: Array of [EvaluationResolvedSource](API_EvaluationResolvedSource.md) objects
+Array Members: Maximum number of 100 items.
 Required: No
 
  ** Tags **   <a name="connect-Type-Evaluation-Tags"></a>

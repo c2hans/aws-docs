@@ -80,7 +80,7 @@ You may need to add a prefix to the file path to indicate which artifact or sour
 
 1. In a workflow action, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name}}:
      Outputs:
        Artifacts:

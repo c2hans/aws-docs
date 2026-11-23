@@ -47,7 +47,7 @@ For example, you can create an IAM policy that allows a user to have full access
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

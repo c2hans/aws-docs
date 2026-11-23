@@ -80,7 +80,7 @@ Retrieves information about the communication requirements and options that are 
 #### SegmentResponse schema
 <a name="apps-application-id-segments-segment-id-versions-version-response-body-segmentresponse-example"></a>
 
-```
+```json
 {
   "Name": "string",
   "Dimensions": {
@@ -258,7 +258,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-segments-segment-id-versions-version-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example builds the AWS CodeBuild project specified on the command line. If no command-line argument is supplied, it emits an error and quits.
 
-```
+```go
 package main
 
 import (

@@ -22,7 +22,7 @@ You can also add additional *Change Schema* nodes to the job diagram as needed â
 
 1.  In the **SQL Query** transform, use an SQL query to cast the remapped column to the desired precision. The SQL query would look like this:
 
-   ```
+   ```SQL
    SELECT col1, col2, CAST(DecimalCol AS DECIMAL(18,6)) AS OutputDecimalCol
    FROM __THIS__
    ```

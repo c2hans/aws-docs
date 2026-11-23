@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-graphqlapi-datasource-dynamodb-syntax-yaml"></a>
 
-```
+```yaml
 {{LogicalId}}:
   DeltaSync: {{[DeltaSyncConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html)}}
   Description: {{String}}

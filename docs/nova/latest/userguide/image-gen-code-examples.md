@@ -9,7 +9,7 @@ The following examples provide sample code for various image generation tasks.
 ------
 #### [ Text to image generation ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -126,7 +126,7 @@ if __name__ == "__main__":
 ------
 #### [ Inpainting ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -248,7 +248,7 @@ if __name__ == "__main__":
 ------
 #### [ Outpainting ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -375,7 +375,7 @@ if __name__ == "__main__":
 ------
 #### [ Image variation ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -496,7 +496,7 @@ if __name__ == "__main__":
 ------
 #### [ Image conditioning ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -617,7 +617,7 @@ if __name__ == "__main__":
 ------
 #### [ Color guided content ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -738,7 +738,7 @@ if __name__ == "__main__":
 ------
 #### [ Background removal ]
 
-```
+```Python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

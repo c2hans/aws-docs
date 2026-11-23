@@ -58,7 +58,7 @@ You can chain roles so that your cluster can assume another IAM role, possibly b
  To this IAM role, attach an IAM permissions policy similar to the following.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -122,7 +122,7 @@ SHOW DATABASES FROM DATA CATALOG ACCOUNT '123456789012' IAM_ROLE <iam-role-arn>;
 
 The following example displays all of the databases in the connected Amazon Redshift data warehouse.
 
-```
+```sql
 SHOW DATABASES
 
 database_name  | database_owner | database_type        | database_acl | parameters | database_isolation_level

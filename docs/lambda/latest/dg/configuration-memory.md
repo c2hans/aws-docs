@@ -66,7 +66,7 @@ You can use the [AWS Serverless Application Model](https://docs.aws.amazon.com/s
 
 **Example template.yaml**
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: An AWS Serverless Application Model template describing your function.

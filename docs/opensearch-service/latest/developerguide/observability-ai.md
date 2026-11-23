@@ -31,7 +31,7 @@ pip install opentelemetry-instrumentation-openai-v2 opentelemetry-sdk openteleme
 
 The following example shows how to register the OTel SDK, annotate your agent functions with the `@observe` decorator, and enrich spans with GenAI attributes.
 
-```
+```python
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

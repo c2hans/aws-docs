@@ -44,7 +44,7 @@ Replace {{`<account_id>`}} with the ID of the account that you are using to crea
 
 ****
 
-```
+```json
 {
     "Id": "key-console-policy",
     "Version":"2012-10-17",
@@ -97,7 +97,7 @@ Replace {{`<account_id>`}} with the ID of the account that you are using to crea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

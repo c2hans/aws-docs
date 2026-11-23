@@ -29,7 +29,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
    +  **Role name** must start with `SpatialDataManagementContentDerivation-`.
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -51,7 +51,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -64,7 +64,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `dynamodb:GetItem` on the target table:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -92,7 +92,7 @@ The partition key value can be resolved in two ways:
 ### Example – enrich file metadata from a DynamoDB table
 <a name="_example-enrich-file-metadata-from-a-dynamodb-table"></a>
 
-```
+```json
 {
   "securityConfig": {
     "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-DynamoDBLookup",
@@ -144,7 +144,7 @@ A DynamoDB connector can serve values from a table as selectable options in the 
 ### Example – serve classification values from DynamoDB for template authoring
 <a name="_example-serve-classification-values-from-dynamodb-for-template-authoring"></a>
 
-```
+```json
 {
   "securityConfig": {
     "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-FieldProvider",

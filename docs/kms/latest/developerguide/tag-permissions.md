@@ -34,7 +34,7 @@ You can provide tagging permissions in a key policy or IAM policy. For example, 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "example-key-policy",
@@ -85,7 +85,7 @@ For example, the following IAM policy allows the principals to create KMS keys. 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -135,7 +135,7 @@ Because `TagResource` and `UntagResource` requests can include multiple tags, yo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -21,8 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```json
 {
   "[ArchiveOutputSettings](#cfn-medialive-channel-outputsettings-archiveoutputsettings)" : {{ArchiveOutputSettings}},
-  "[CmafIngestOutputSettings](#cfn-medialive-channel-outputsettings-cmafingestoutputsettings)" : {{CmafIngestFrameCaptureOutputSettings}},
-  "[FrameCaptureOutputSettings](#cfn-medialive-channel-outputsettings-framecaptureoutputsettings)" : {{CmafIngestFrameCaptureOutputSettings}},
+  "[CmafIngestOutputSettings](#cfn-medialive-channel-outputsettings-cmafingestoutputsettings)" : {{CmafIngestOutputSettings}},
+  "[FrameCaptureOutputSettings](#cfn-medialive-channel-outputsettings-framecaptureoutputsettings)" : {{FrameCaptureOutputSettings}},
   "[HlsOutputSettings](#cfn-medialive-channel-outputsettings-hlsoutputsettings)" : {{HlsOutputSettings}},
   "[MediaConnectRouterOutputSettings](#cfn-medialive-channel-outputsettings-mediaconnectrouteroutputsettings)" : {{MediaConnectRouterOutputSettings}},
   "[MediaPackageOutputSettings](#cfn-medialive-channel-outputsettings-mediapackageoutputsettings)" : {{MediaPackageOutputSettings}},
@@ -41,9 +41,9 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ArchiveOutputSettings](#cfn-medialive-channel-outputsettings-archiveoutputsettings): {{
     ArchiveOutputSettings}}
   [CmafIngestOutputSettings](#cfn-medialive-channel-outputsettings-cmafingestoutputsettings): {{
-    CmafIngestFrameCaptureOutputSettings}}
+    CmafIngestOutputSettings}}
   [FrameCaptureOutputSettings](#cfn-medialive-channel-outputsettings-framecaptureoutputsettings): {{
-    CmafIngestFrameCaptureOutputSettings}}
+    FrameCaptureOutputSettings}}
   [HlsOutputSettings](#cfn-medialive-channel-outputsettings-hlsoutputsettings): {{
     HlsOutputSettings}}
   [MediaConnectRouterOutputSettings](#cfn-medialive-channel-outputsettings-mediaconnectrouteroutputsettings): {{
@@ -74,14 +74,14 @@ The settings for an archive output.
 `CmafIngestOutputSettings`  <a name="cfn-medialive-channel-outputsettings-cmafingestoutputsettings"></a>
 Cmaf Ingest Output Settings
 *Required*: No
-*Type*: [CmafIngestFrameCaptureOutputSettings](aws-properties-medialive-channel-cmafingestframecaptureoutputsettings.md)
+*Type*: [CmafIngestOutputSettings](aws-properties-medialive-channel-cmafingestoutputsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FrameCaptureOutputSettings`  <a name="cfn-medialive-channel-outputsettings-framecaptureoutputsettings"></a>
 The settings for a frame capture output.
 The parent of this entity is OutputGroupSettings.
 *Required*: No
-*Type*: [CmafIngestFrameCaptureOutputSettings](aws-properties-medialive-channel-cmafingestframecaptureoutputsettings.md)
+*Type*: [FrameCaptureOutputSettings](aws-properties-medialive-channel-framecaptureoutputsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HlsOutputSettings`  <a name="cfn-medialive-channel-outputsettings-hlsoutputsettings"></a>

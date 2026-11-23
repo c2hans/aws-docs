@@ -42,7 +42,7 @@ rule lambda_soon_to_be_deprecated_runtime when %lambda_functions !empty {
 
 Now suppose you write the following `iac/lambda.yaml` CloudFormation template that defines a Lambda function:
 
-```
+```yaml
   Fn:
     Type: AWS::Lambda::Function
     Properties:

@@ -24,7 +24,7 @@ The following code example shows how to use `ListHostedZones`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/route53#code-examples).
 
-```
+```rust
 async fn show_host_info(client: &aws_sdk_route53::Client) -> Result<(), aws_sdk_route53::Error> {
     let hosted_zone_count = client.get_hosted_zone_count().send().await?;
 

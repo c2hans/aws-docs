@@ -29,7 +29,7 @@ The following code example shows how to use `AssumeRole`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -135,7 +135,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/085-amazon-ecs-service-connect) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS Service Connect Tutorial Script v4 - Modified to use Default VPC
@@ -781,7 +781,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/086-amazon-ecs-fargate-linux) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon ECS Fargate Tutorial Script - Version 5
@@ -1373,7 +1373,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/087-apigateway-lambda-integration) repository.
 
-```
+```bash
 #!/bin/bash
 
 set -euo pipefail
@@ -1694,7 +1694,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/018-ecs-ec2) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS EC2 Launch Type Tutorial Script - UPDATED VERSION
@@ -2381,7 +2381,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/044-amazon-managed-grafana-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Managed Grafana Workspace Creation Script
@@ -2696,7 +2696,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/031-cloudwatch-dynamicdash) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to create a CloudWatch dashboard with Lambda function name as a variable
@@ -3110,7 +3110,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/053-aws-config-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Config Setup Script (v2)
@@ -3545,7 +3545,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/078-amazon-elastic-container-registry-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon ECR Getting Started Script
@@ -3824,7 +3824,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/063-aws-iot-core-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS IoT Core Getting Started Script
@@ -4215,7 +4215,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/028-sagemaker-featurestore) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon SageMaker Feature Store Tutorial Script - Version 3
@@ -4773,7 +4773,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/034-eks-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon EKS Cluster Creation Script (v2)
@@ -5245,7 +5245,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/057-amazon-managed-streaming-for-apache-kafka-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon MSK Getting Started Tutorial Script - Version 8
@@ -6274,7 +6274,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/049-aws-end-user-messaging-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS End User Messaging Push Getting Started Script
@@ -6759,7 +6759,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/016-opensearch-service-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon OpenSearch Service Getting Started Script - Version 8 Fixed
@@ -7294,7 +7294,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/052-aws-waf-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS WAF Getting Started Script
@@ -7784,7 +7784,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/073-aws-secrets-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to move hardcoded secrets to AWS Secrets Manager
@@ -8115,7 +8115,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/069-aws-fault-injection-service-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS FIS CPU Stress Test Tutorial Script
@@ -8723,7 +8723,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/046-aws-systems-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Systems Manager Setup Script

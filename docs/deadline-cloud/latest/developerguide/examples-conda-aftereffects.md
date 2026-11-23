@@ -11,6 +11,6 @@ The samples repository on the GitHub website includes the following After Effect
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job aftereffects-25.1
 ```

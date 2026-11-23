@@ -17,7 +17,7 @@ aws quicksight {{OPERATION}} --generate-cli-skeleton
 
 A JSON file that contains a skeleton of the command that you want to run then appears in your terminal. Enter the required input values and save the file. The following example shows a cli example that is generated for the `UpdateDashboardPermissions` API.
 
-```
+```json
 $ aws quicksight update-dashboard-permissions --generate-cli-skeleton
 {
 	"AwsAccountId": "",

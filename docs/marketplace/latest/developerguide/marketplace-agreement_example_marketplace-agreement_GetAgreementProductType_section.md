@@ -14,7 +14,7 @@ The following code examples show how to get the product type of an agreement.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
 
-```
+```java
 package com.example.awsmarketplace.agreementapi.seller;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -75,7 +75,7 @@ public class GetAgreementProductType {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

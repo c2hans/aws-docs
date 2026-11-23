@@ -10,7 +10,7 @@ The control prohibits direct projection but does not fully prevent values from b
 
 The following example adds `user_id` to the `disallowedOutputColumns` control:
 
-```
+```json
 {
   "disallowedOutputColumns": [
     "user_id"

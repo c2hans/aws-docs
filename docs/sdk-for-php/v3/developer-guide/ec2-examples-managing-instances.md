@@ -24,7 +24,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Ec2\Ec2Client;
@@ -32,7 +32,7 @@ use Aws\Ec2\Ec2Client;
 
  **Sample Code**
 
-```
+```php
 $ec2Client = new Aws\Ec2\Ec2Client([
     'region' => 'us-west-2',
     'version' => '2016-11-15',
@@ -52,13 +52,13 @@ foreach ($result['Reservations'] as $reservation) {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 ```
 
  **Sample Code**
 
-```
+```php
 $ec2Client = new Aws\Ec2\Ec2Client([
     'region' => 'us-west-2',
     'version' => '2016-11-15',
@@ -87,13 +87,13 @@ var_dump($result);
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 ```
 
  **Sample Code**
 
-```
+```php
 $ec2Client = new Aws\Ec2\Ec2Client([
     'region' => 'us-west-2',
     'version' => '2016-11-15',
@@ -122,13 +122,13 @@ var_dump($result);
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 ```
 
  **Sample Code**
 
-```
+```php
 $ec2Client = new Aws\Ec2\Ec2Client([
     'region' => 'us-west-2',
     'version' => '2016-11-15',

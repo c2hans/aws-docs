@@ -374,7 +374,7 @@ Public IPv4 pools and IPAM pools are managed by distinct resources in AWS. Publi
 
   In the output, you'll see the public IPv4 pool ID. You will need this ID in the next step.
 
-  ```
+  ```json
   {
       "PoolId": "ipv4pool-ec2-09037ce61cf068f9a"
   }
@@ -399,7 +399,7 @@ This step must be done by the member account using the AWS CLI.
 
    In the output, you'll see the provisioned CIDR.
 
-   ```
+   ```json
    {
        "PoolId": "ipv4pool-ec2-09037ce61cf068f9a",
        "PoolAddressRange": {
@@ -419,7 +419,7 @@ This step must be done by the member account using the AWS CLI.
 
    In the output, you'll see the provisioned CIDR. By default the CIDR is not advertised, which means it's not publicly accessible over the internet. You will have the chance to set this CIDR to advertised in the last step of this tutorial.
 
-   ```
+   ```json
    {
        "PublicIpv4Pools": [
            {
@@ -470,7 +470,7 @@ This step must be done by the member account using the AWS CLI.
 
    In the output, you'll see the IP addresses in your BYOIP CIDR.
 
-   ```
+   ```json
    {
        "PublicIpv4Pools": [
            {
@@ -507,7 +507,7 @@ This step must be done by the member account using the AWS CLI.
 
    In the output, you'll see the IP addresses count in your public IPv4 pool.
 
-   ```
+   ```json
    {
        "PublicIpv4Pools": [
            {
@@ -537,7 +537,7 @@ This step must be done by the member account.
 
   In the output, you'll see the return value **true**.
 
-  ```
+  ```json
   {
   "ReturnValue": true
   }

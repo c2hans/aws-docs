@@ -52,7 +52,7 @@ DATE
 
 The following example returns the date of the first Tuesday after 8/20/2014.
 
-```
+```sql
 select next_day('2014-08-20','Tuesday');
 
 next_day
@@ -62,7 +62,7 @@ next_day
 
 The following example returns the date of the first Tuesday after 1/1/2008 at 5:54:44.
 
-```
+```sql
 select listtime, next_day(listtime, 'Tue') from listing limit 1;
 
 listtime            | next_day
@@ -72,7 +72,7 @@ listtime            | next_day
 
 The following example gets target marketing dates for the third quarter.
 
-```
+```sql
 select username, (firstname ||' '|| lastname) as name,
 eventname, caldate, next_day (caldate, 'Monday') as marketing_target
 from sales, date, users, event

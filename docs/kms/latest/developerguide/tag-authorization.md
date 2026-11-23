@@ -31,7 +31,7 @@ For example, consider the following IAM policy. It allows the principals to call
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -62,7 +62,7 @@ The following example IAM policy allows the principals to use any KMS key in the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

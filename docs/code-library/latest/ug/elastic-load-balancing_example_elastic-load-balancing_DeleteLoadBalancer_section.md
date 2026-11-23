@@ -29,7 +29,7 @@ For more information, see [Create an internet-facing Classic Load Balancer](http
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancer -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -45,7 +45,7 @@ Performing operation "Remove-ELBLoadBalancer (DeleteLoadBalancer)" on Target "my
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBLoadBalancer -LoadBalancerName my-load-balancer
 ```
 **Output:**

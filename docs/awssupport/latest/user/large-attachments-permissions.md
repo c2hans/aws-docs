@@ -18,7 +18,7 @@ All listed permissions are required for each operation. For example, to upload a
 
 The following example policy grants full upload and download permissions for large attachments:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

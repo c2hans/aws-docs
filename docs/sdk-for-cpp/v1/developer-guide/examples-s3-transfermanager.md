@@ -25,7 +25,7 @@ To run the examples, the user profile your code uses to make the requests must h
 
 This example demonstrates how [`TransferManager`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-transfer/html/class_aws_1_1_transfer_1_1_transfer_manager.html) transfers large object in memory. `UploadFile` and `DownloadFile` methods are both called asynchronously and return a `TransferHandle` to manage the status of your request. If the object uploaded is larger than `bufferSize` then a multipart upload will be performed. The `bufferSize` defaults to 5MB, but this can be configured via [`TransferManagerConfiguration`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-transfer/html/struct_aws_1_1_transfer_1_1_transfer_manager_configuration.html).
 
-```
+```cpp
         auto s3_client = Aws::MakeShared<Aws::S3::S3Client>("S3Client");
         auto executor = Aws::MakeShared<Aws::Utils::Threading::PooledThreadExecutor>("executor", 25);
         Aws::Transfer::TransferManagerConfiguration transfer_config(executor.get());

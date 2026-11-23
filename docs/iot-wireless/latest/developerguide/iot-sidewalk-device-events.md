@@ -59,7 +59,7 @@ You can't use the wildcard character `#` to subscribe to the reserved topics. Fo
 
 After you enable notifications for device registration state events, event notifications are published over MQTT with a JSON payload. These events contain the following example payload:
 
-```
+```JSON
 {
     "eventId": "string",
     "eventType": "provisioned|registered",

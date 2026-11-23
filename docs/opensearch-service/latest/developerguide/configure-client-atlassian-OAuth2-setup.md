@@ -141,7 +141,7 @@ Use the following procedure to help you generate and refresh an Atlassian Develo
 **Tip**
 You can also use a third-party service such as Postman.
 
-   ```
+   ```sh
    curl --request POST --url 'https://auth.atlassian.com/oauth/token' \
    --header 'Content-Type: application/json' \
    --data '{"grant_type": "authorization_code",

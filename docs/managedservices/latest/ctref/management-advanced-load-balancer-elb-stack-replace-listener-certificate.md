@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-load-balancer-elb-stack-replace-listener-certificate-ex-min"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-SetClassicLoadBalancerCertificate",
     "Region": "us-east-1",
@@ -168,7 +168,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-load-balancer-elb-stack-replace-listener-certificate-ex-max"></a>
 
-```
+```json
 {
     "DocumentName": "AWSManagedServices-SetClassicLoadBalancerCertificate",
     "Region": "us-east-1",

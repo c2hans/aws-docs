@@ -17,6 +17,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
 ![An image that shows a common HL7v2 interoperability architecture that synchronously exchanges messages with a target integration service.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/hl7v2-interoperability-architecture.png)
 
+*A common HL7v2 interoperability architecture where the integration may exchange HL7 v2 messages through a VPN tunnel or SFTP. MLLP over TLS can help keep messages encrypted in transit.*
+
 ## HL7 v3
 <a name="hl7-v3"></a>
 
@@ -28,6 +30,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  The following diagram illustrates a representative FHIR interoperability architecture, which presents an integration point in front of one or more systems of record, typically within a provider or payer organization.
 
 ![Diagram of a representative FHIR interoperability architecture.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/fhir-interoperability-architecture.png)
+
+*Example FHIR enabled interoperability architecture.*
 
 +  An API or server endpoint is made available for integration with other systems or users. A managed API service, like Amazon API Gateway, ensures scalability and high availability. Restrict network access to the API if possible and use a web application firewall to filter malicious requests.
 +  Inbound requests are authenticated with [OAuth](https://build.fhir.org/security.html) or a service like Amazon Cognito to verify that sensitive health data is only exchanged with appropriate parties.

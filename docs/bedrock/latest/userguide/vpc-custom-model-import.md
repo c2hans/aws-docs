@@ -45,7 +45,7 @@ You can use [resource-based policies](https://docs.aws.amazon.com/IAM/latest/Use
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -78,7 +78,7 @@ After you finish setting up your VPC and endpoint, you need to attach the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -197,7 +197,7 @@ For the Amazon Bedrock console, you specify VPC subnets and security groups in t
 
 When you submit a [CreateModelCustomizationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCustomizationJob.html) request, you can include a `VpcConfig` as a request parameter to specify the VPC subnets and security groups to use, as in the following example.
 
-```
+```json
 "VpcConfig": {
 "SecurityGroupIds": [
     "{{sg-0123456789abcdef0}}"

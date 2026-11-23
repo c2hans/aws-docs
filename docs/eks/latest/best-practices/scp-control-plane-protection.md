@@ -30,7 +30,7 @@ This approach allows:
 ## Example SCP
 <a name="_example_scp"></a>
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -127,7 +127,7 @@ The SCP includes `eks:TagResource` and `eks:UntagResource` in the deny list. Thi
 
 To allow multiple roles to bypass the deny, use `ForAnyValue:StringEquals` or list multiple ARNs:
 
-```
+```json
 "Condition": {
   "ArnNotLike": {
     "aws:PrincipalArn": [

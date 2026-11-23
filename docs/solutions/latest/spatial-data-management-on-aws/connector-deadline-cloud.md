@@ -71,7 +71,7 @@ Create an IAM role that SDMA can assume to submit jobs to your Deadline Cloud fa
 +  **Role name** must start with `SpatialDataManagementContentDerivation-` (for example, `SpatialDataManagementContentDerivation-CogConversion`).
 +  **Trust policy** must allow the SDMA solution account to assume it:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -95,7 +95,7 @@ Create an IAM role that SDMA can assume to submit jobs to your Deadline Cloud fa
 
 \+
 
-```
+```bash
 aws lambda get-function \
   --function-name SpatialDataManagement-ConnectorInvocationFunction \
   --query 'Configuration.Role' --output text
@@ -108,7 +108,7 @@ aws lambda get-function \
 \+ Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
 +  **Permissions policy** must grant access to Deadline Cloud job submission and status queries on your farm and queue:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -138,7 +138,7 @@ Upload the following files to the asset:
 
  ** `template.yaml` ** — the Open Job Description job template:
 
-```
+```yaml
 specificationVersion: 'jobtemplate-2023-09'
 name: TIF to COG Conversion
 description: |
@@ -197,7 +197,7 @@ steps:
 
  ** `scripts/convert_to_cog.py` ** — the conversion script (runs on the Deadline Cloud worker):
 
-```
+```python
 # Reads input TIF, builds overviews, writes COG to output directory.
 # Uses rasterio/GDAL — install via CondaPackages in the job template.
 import sys, os, rasterio
@@ -216,7 +216,7 @@ The script receives its arguments from the job template’s `{{Param.*}}` refere
 
 In the Spatial Data Portal, go to **Library settings** > **Content** > **Connectors** > **Derive content** > **Create deriver**. Select **AWS Deadline Cloud** as the connector type and paste the following configuration:
 
-```
+```json
 {
   "deadlineConfig": {
     "farmId": "<farm-id>",
@@ -308,7 +308,7 @@ Deadline Cloud is directly compatible with SDMA’s content-addressable storage 
 
 Use the `templateAsset` block to reference an SDMA asset containing the job template and any supporting files. SDMA attaches the entire asset to the Deadline Cloud job as a job attachment, so the template can reference scripts, configuration files, or other resources stored alongside it.
 
-```
+```json
 "deadlineConfig": {
   "farmId": "farm-a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
   "queueId": "queue-d4e5f6a7b8c9d0e1f2a3b4c5d6a7b8c9",
@@ -337,7 +337,7 @@ These mount paths are deterministic, so your job template can reference files at
 
 Use `templateProjectId` and `templateAssetId` to reference the template asset directly. This mode uses a single-manifest attachment with the asset’s original root path.
 
-```
+```json
 "deadlineConfig": {
   "farmId": "farm-a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
   "queueId": "queue-d4e5f6a7b8c9d0e1f2a3b4c5d6a7b8c9",
@@ -358,7 +358,7 @@ Template asset mode and simple mode are mutually exclusive. Use template asset m
 
 Any job template used with an SDMA Deadline Cloud connector must declare the following parameters. SDMA auto-injects values for these at submission time. Your template does not need to use all of them in its scripts, but it must declare them so that Deadline Cloud accepts the values SDMA provides.
 
-```
+```yaml
 parameterDefinitions:
   - name: InputFile
     type: PATH
@@ -393,7 +393,7 @@ If your job template omits any of these parameter declarations, Deadline Cloud r
 
 The `parameters` block in the trigger-level `deadlineJob` configuration passes values for the parameters declared in your job template. Parameter values support `${variable}` substitution from SDMA resource metadata.
 
-```
+```json
 "deadlineJob": {
   "template": "processing/template.yaml",
   "parameters": {
@@ -428,7 +428,7 @@ A Deadline Cloud job routes its results with the same `output` block as every ot
 
 A job writes its outputs to the `WorkspacePath` directory. When the job completes, Deadline Cloud job attachments upload the outputs to Amazon S3, and SDMA reads the job’s output manifest. A `rest` or `lambdaInvoke` step names where its results are, with `s3Uri`. A Deadline Cloud job instead names nothing, so each output entry uses a `filter` to choose files from the manifest.
 
-```
+```json
 "deadlineJob": {
   "template": "conversion/template.yaml",
   "output": {
@@ -452,7 +452,7 @@ A job writes its outputs to the `WorkspacePath` directory. When the job complete
 
 A job writes metadata as a JSON file in its output directory. The `metadataAttributes` target reads that file, and its `fieldMappings` take their `source` from the file’s top-level fields.
 
-```
+```json
 "deadlineJob": {
   "template": "quality-analysis/template.yaml",
   "output": {
@@ -481,7 +481,7 @@ A file named `spatial_data_mgmt_metadata.json` is read even without a `metadataA
 
 In template asset mode, you can attach additional SDMA assets to the job as extra job attachments. Use this when a job needs access to shared libraries, reference data, or other assets beyond the triggering asset and the template.
 
-```
+```json
 "deadlineConfig": {
   "farmId": "farm-a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
   "queueId": "queue-d4e5f6a7b8c9d0e1f2a3b4c5d6a7b8c9",
@@ -511,7 +511,7 @@ SDMA currently resolves additional assets from the triggering asset’s project.
 
 You can also use the `deadlineJob` step type within the trigger\+steps model for multi-step workflows:
 
-```
+```json
 "triggers": [
   {
     "resources": ["file"],

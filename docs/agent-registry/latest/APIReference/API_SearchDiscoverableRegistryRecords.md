@@ -151,6 +151,18 @@ Content-type: application/json
                      "url": "string"
                   }
                }
+            },
+            "signatureAgentCard": {
+               "additionalData": {
+                  "category": "string"
+               },
+               "data": "string",
+               "dataSchemaVersion": "string",
+               "source": {
+                  "fromUrl": {
+                     "url": "string"
+                  }
+               }
             }
          },
          "displayName": "string",

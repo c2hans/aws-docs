@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-functions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-function-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -43,7 +43,7 @@ aws greengrass list-function-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 Success. The response contains the IDs of all of the Greengrass Lambda function definitions in this account.
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {
@@ -135,7 +135,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -295,7 +295,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-functions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-function-definition \
   [--name <value>] \
   [--initial-version <value>] \
@@ -307,7 +307,7 @@ aws greengrass create-function-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -372,7 +372,7 @@ cli-input-json format:
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -412,7 +412,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

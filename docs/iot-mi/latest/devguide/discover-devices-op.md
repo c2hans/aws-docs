@@ -202,7 +202,7 @@ Include a `DeviceMetadata` object in each device entry and map:
 
 The following example shows a device entry with `DeviceMetadata` included:
 
-```
+```JSON
 {
     "ConnectorDeviceId": "Your_Device_Id_1",
     "ConnectorDeviceName": "Your-Device-Name",

@@ -21,7 +21,7 @@ aws codeartifact list-package-version-assets --domain {{my_domain}} --domain-own
 
 The following shows the output.
 
-```
+```json
 {
     "format": "{{pypi}}",
     "package": "{{flatten-json}}",

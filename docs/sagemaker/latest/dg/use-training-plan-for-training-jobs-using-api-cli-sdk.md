@@ -34,7 +34,7 @@ aws sagemaker create-training-job \
 
 This AWS CLI example command creates a new training job in SageMaker AI passing a training plan in the `--resource-config` argument.
 
-```
+```sh
 aws sagemaker create-training-job \
   --training-job-name {{job-name}} \
   --role-arn {{arn:aws:iam::111122223333:role/DataAndAPIAccessRole}} \
@@ -63,7 +63,7 @@ The following example demonstrates how to create a SageMaker training job and as
 
 For more information on the SageMaker ModelTrainer, see [Use a SageMaker ModelTrainer to run a training job](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
-```
+```python
 import boto3
 from sagemaker.core.helper.session_helper import get_execution_role
 from sagemaker.train import ModelTrainer
@@ -104,7 +104,7 @@ model_trainer.train(input_data_config=[trainingInput])
 
 After creating the training job, you can verify that it was properly assigned to the training plan by calling the `DescribeTrainingJob` API.
 
-```
+```python
 # Check job details
 sagemaker_session.describe_training_job(TrainingJobName=job_name)
 ```

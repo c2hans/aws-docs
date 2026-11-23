@@ -176,7 +176,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateModelInvocationJob.
 
-```
+```json
 POST /model-invocation-job HTTP/1.1
 Content-type: application/json
 

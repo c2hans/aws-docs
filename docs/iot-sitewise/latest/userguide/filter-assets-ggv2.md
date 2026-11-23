@@ -19,7 +19,7 @@ Set up edge filtering on your SiteWise Edge gateway by adding the following IAM 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -58,7 +58,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/aws-ground-stat
 
  The following example lists all antennas at a ground station using the AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 
 # Create AWS Ground Station client

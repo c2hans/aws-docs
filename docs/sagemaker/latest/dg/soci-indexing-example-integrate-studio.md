@@ -10,7 +10,7 @@ You must reference the SOCI-indexed image tag to use SOCI-indexed images in Stud
 
 1. First set your variables for the AWS CLI commands that follow. The following is an example of setting up your variables.
 
-   ```
+   ```bash
    ACCOUNT_ID="{{111122223333}}"
    REGION="{{us-east-1}}"
    IMAGE_NAME="{{sagemaker-image-name}}"
@@ -33,7 +33,7 @@ If you are attaching the image to a SageMaker Unified Studio project and you nee
 
 1. Export your region:
 
-   ```
+   ```bash
    export AWS_REGION=$REGION
    ```
 

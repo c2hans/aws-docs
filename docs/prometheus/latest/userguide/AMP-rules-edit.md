@@ -26,13 +26,13 @@ If you want to change the rules in a rule file that you have already uploaded to
 
 1. Base64 encode the contents of your rules file. On Linux, you can use the following command:
 
-   ```
+   ```bash
    base64 {{input-file}} {{output-file}}
    ```
 
    On macOS, you can use the following command:
 
-   ```
+   ```bash
    openssl base64 {{input-file}} {{output-file}}
    ```
 
@@ -40,19 +40,19 @@ If you want to change the rules in a rule file that you have already uploaded to
 
    On AWS CLI version 2, enter:
 
-   ```
+   ```bash
    aws amp put-rule-groups-namespace --data file://{{path_to_base_64_output_file}} --name {{namespace-name}}  --workspace-id {{my-workspace-id}} --region {{region}}
    ```
 
    On AWS CLI version 1, enter:
 
-   ```
+   ```bash
    aws amp put-rule-groups-namespace --data fileb://{{path_to_base_64_output_file}} --name {{namespace-name}}  --workspace-id {{my-workspace-id}} --region {{region}}
    ```
 
 1. It takes a few seconds for your rules file to become active. To check the status, enter the following command:
 
-   ```
+   ```bash
    aws amp describe-rule-groups-namespace --workspace-id {{workspace_id}} --name {{namespace-name}} --region {{region}}
    ```
 

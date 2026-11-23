@@ -109,7 +109,7 @@ Now make a change to the pipeline code that builds the model and commit the chan
 
 1. In the `pipeline.py` file, find the line that sets the training instance type.
 
-   ```
+   ```python
    training_instance_type = ParameterString(
            name="TrainingInstanceType", default_value="ml.m5.xlarge"
    ```

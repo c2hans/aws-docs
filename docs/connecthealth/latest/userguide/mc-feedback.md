@@ -64,7 +64,7 @@ The file can be up to 5 MiB. If the file is too large, isn’t valid JSON, has n
 
 The following example shows a `SubmitFeedback` request body:
 
-```
+```json
 {
   "artifactType": "MEDICAL_CODES",
   "artifactSourceId": "4f9c2e1a-7b3d-4e8a-9c21-5d6f0a1b2c3d",

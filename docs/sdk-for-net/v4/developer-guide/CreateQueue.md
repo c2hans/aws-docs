@@ -30,7 +30,7 @@ The following snippet shows a list of the existing queues in the SQS client's re
 
 The example [at the end of this topic](#CreateQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to show a list of the existing queues
     private static async Task ShowQueues(IAmazonSQS sqsClient)
@@ -64,7 +64,7 @@ The following snippet creates a queue. The snippet includes the use of a dead-le
 
 The example [at the end of this topic](#CreateQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to create a queue. Returns the queue URL.
     private static async Task<string> CreateQueue(
@@ -104,7 +104,7 @@ The following snippet gets the ARN of the queue identified by the given queue UR
 
 The example [at the end of this topic](#CreateQueue-complete-code) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to get the ARN of a queue
     private static async Task<string> GetQueueArn(IAmazonSQS sqsClient, string qUrl)
@@ -145,7 +145,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c29c17c25b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;

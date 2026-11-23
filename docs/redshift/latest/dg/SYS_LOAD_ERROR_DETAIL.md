@@ -36,7 +36,7 @@ SYS\_LOAD\_ERROR\_DETAIL is visible to all users. Superusers can see all rows; r
 
 The following query shows the load error details of copy command for specific query.
 
-```
+```sql
 SELECT query_id,
        table_id,
        start_time,

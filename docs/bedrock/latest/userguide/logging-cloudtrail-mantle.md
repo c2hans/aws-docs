@@ -79,7 +79,7 @@ Customer-supplied `metadata` on `CreateInference` calls is logged verbatim in Cl
 
 The following example configures a trail to capture `bedrock-mantle` data events associated with a project:
 
-```
+```bash
 aws cloudtrail put-event-selectors \
     --trail-name <trailName> \
     --advanced-event-selectors '[
@@ -108,7 +108,7 @@ The `resources` array in a delivered event references the following resource typ
 
 The following example is a `CreateInference` data event. The `eventType` value `AwsApiCall` indicates that the event records an API call; it doesn't classify the event as a management event. The `eventCategory` value `Data` and the `managementEvent` value `false` identify it as a data event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

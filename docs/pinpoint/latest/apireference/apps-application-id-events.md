@@ -76,7 +76,7 @@ Retrieves information about the communication requirements and options that are 
 #### POST schema
 <a name="apps-application-id-events-request-body-post-example"></a>
 
-```
+```json
 {
   "BatchItem": {
   }
@@ -89,7 +89,7 @@ Retrieves information about the communication requirements and options that are 
 #### EventsResponse schema
 <a name="apps-application-id-events-response-body-eventsresponse-example"></a>
 
-```
+```json
 {
   "Results": {
   }
@@ -99,7 +99,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-events-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

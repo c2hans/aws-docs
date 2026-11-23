@@ -9,16 +9,15 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-m
 For Amazon ECS deployments, your software must use [Amazon ECS task IAM](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) role to sign the API call for the [`MeterUsage`](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html) API operation. Using the node role or long-term access keys are not supported.
 For Amazon Bedrock AgentCore Runtime deployments, your software must use the [AgentCore Runtime execution role](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-permissions.html#runtime-permissions-execution) to sign the API call for the [`MeterUsage`](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html) API operation. Long-term access keys are not supported.
 
-AWS Marketplace container products can have custom metering on up to 24 different pricing dimensions per product. Each dimension can have a long-term contract price associated with it. To enable custom metering, integrate your container product with AWS Marketplace Metering Service. You can define your own pricing units and custom metering for that usage to AWS for billing using the [`MeterUsage`](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_MeterUsage.html) API operation. The following sections show you how to configure custom metering for your container product.
+AWS Marketplace container products can have custom metering on up to 200 different pricing dimensions per product. Each dimension can have a long-term contract price associated with it. To enable custom metering, integrate your container product with AWS Marketplace Metering Service. You can define your own pricing units and custom metering for that usage to AWS for billing using the [`MeterUsage`](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_MeterUsage.html) API operation. The following sections show you how to configure custom metering for your container product.
 
-Price dimensions are defined in two locations, once when creating your product in the AWS Marketplace Management Portal (seller portal) and once in your software to perform the `MeterUsage` operation. This two-factor method ensures that the subsequent offers are working as intended before they're made available to the public.
+Price dimensions are defined in two places: in your product's pricing in AWS Partner Central, and in your software that calls the `MeterUsage` operation. This two-factor method ensures that the subsequent offers are working as intended before they're made available to the public.
 
-To set up custom metering, you'll need to choose the usage category, the unit type, and pricing dimensions:
-+ **Usage category** – The usage category helps buyers understand what your product is and how to use it.
-+ **Unit type** – The unit type defines the unit of measure for billing. For example, bandwidth measured in GBps or MBps, the number of hosts, or data measured in MB, GB, or TB.
+To set up custom metering, you choose the unit type and the pricing dimensions:
++ **Unit type** – The unit type defines the unit of measure for billing. For example, bandwidth measured in Gbps or Mbps, the number of hosts, or data measured in MB, GB, or TB.
 + **Pricing dimensions** – The pricing dimensions represents a feature or service that you've set a per-unit price for (for example, users, scans, vCPUs, or deployed agents). Pricing dimensions are public. However, you can still define private and Bring Your Own License (BYOL) offers for public products. Don't send pricing in the metering records. You meter the quantity of units, and we use that along with the prices you defined when creating your product to compute the buyer's bill.
 
-  If your product pricing doesn't fit with any of the predefined categories or unit types, you can choose the generic **Units** category. Then, use the dimension description to describe what the unit is.
+  If your product pricing doesn't fit any of the predefined unit types, choose **Units** for **Dimension unit type**. Then, use the dimension's **Description** to describe what the unit is.
 
 To report fractional usage, set `UsageQuantityAsDecimal` instead of `UsageQuantity`. `UsageQuantityAsDecimal` is a string with up to 10 digits before the decimal point and up to 6 digits after it, for example `17.42`. For more information, see [MeterUsage](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_MeterUsage.html) in the *AWS Marketplace Metering Service API Reference*.
 
@@ -48,7 +47,7 @@ Free trial and prepaid entitlement are tracked on an hourly level. As a result, 
 
 Before publishing the product, you must do the following:
 
-1. Create a new container product in the AWS Marketplace Management Portal, and make a note of its product code.
+1. Create a new container product in AWS Partner Central, and make a note of its product code. The product code appears in the **Product summary** section of your product's page after you choose **Show more**.
 
 1. Use an AWS Identity and Access Management (IAM) role for the task, pod, or AgentCore Runtime endpoint running your application with the IAM permissions necessary to call `MeterUsage`. The IAM managed policy `AWSMarketplaceMeteringRegisterUsage` has these permissions. For more information about the policy, see [ AWSMarketplaceMeteringFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceMeteringFullAccess.html) in the *AWS Managed Policy Reference*.
 
@@ -159,13 +158,13 @@ The following code example is provided to help you integrate your container prod
 
 The following code example is relevant for container products with consumption pricing models. The Python example sends a metering record with appropriate usage allocation tags to AWS Marketplace to charge your customers for pay-as-you-go fees.
 
-```
+```python
 # NOTE: Your application will need to aggregate usage for the
 #       customer for the hour and set the quantity as seen below.
 #       AWS Marketplace can only accept records for up to an hour in the past.
 #
-# productCode is supplied after the AWS Marketplace Ops team has
-# published the product to limited
+# To find productCode, open the product in AWS Partner Central
+# and choose Show more in the Product summary
 
 # Import AWS Python SDK
 import boto3

@@ -34,7 +34,7 @@ For more information, see [Zero-ETL integrations](https://docs.aws.amazon.com/re
 
 The following SQL command displays the columns of the log of integrations.
 
-```
+```sql
 select * from svv_integration_table_state;
 
           integration_id              | target_database | schema_name |     table_name    | table_state  |table_last_replicated_checkpoint | reason | last_updated_timestamp     |table_rows  | table_size | is_history_mode

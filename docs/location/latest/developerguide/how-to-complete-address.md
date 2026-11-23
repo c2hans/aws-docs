@@ -22,7 +22,7 @@ In this example, minimal data is returned to keep the response concise and cost-
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "100 McCullum Rd"
 }
@@ -31,7 +31,7 @@ In this example, minimal data is returned to keep the response concise and cost-
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -47,7 +47,7 @@ In this example, minimal data is returned to keep the response concise and cost-
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/autocomplete?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -59,7 +59,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places autocomplete --key ${YourKey} --query-text "100 McCullum Rd"
 ```
 
@@ -73,7 +73,7 @@ This example returns multiple address suggestions, allowing users to select a st
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "100 McCullum Rd",
   "AdditionalFeatures": [
@@ -85,7 +85,7 @@ This example returns multiple address suggestions, allowing users to select a st
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -174,7 +174,7 @@ This example returns multiple address suggestions, allowing users to select a st
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/autocomplete?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -189,7 +189,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places autocomplete --key ${YourKey} --query-text "100 McCullum Rd" --additional-features "Core"
 ```
 

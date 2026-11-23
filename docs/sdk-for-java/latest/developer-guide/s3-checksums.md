@@ -23,7 +23,7 @@ When you upload an object with the `putObject` method and provide a checksum alg
 
 The following code snippet shows a request to upload an object with a `SHA256` checksum. When the SDK sends the request, it calculates the `SHA256` checksum and uploads the object. Amazon S3 validates the integrity of the content by calculating the checksum and comparing it to the checksum provided by the SDK. Amazon S3 then stores the checksum with the object.
 
-```
+```java
 public void putObjectWithChecksum() {
         s3Client.putObject(b -> b
                 .bucket(bucketName)
@@ -49,7 +49,7 @@ A pre-calculated checksum value provided with the request disables automatic com
 
 The following example shows a request with a pre-calculated SHA256 checksum.
 
-```
+```java
     public void putObjectWithPrecalculatedChecksum(String bucketName, String key, String filePath) {
         String checksum = calculateChecksum(filePath, "SHA-256");
 
@@ -72,7 +72,7 @@ You can also use checksums with multipart uploads.
 
 The following transfer manager example specifies the SHA1 algorithm for the upload.
 
-```
+```java
     public void multipartUploadWithChecksumTm(String bucketName, String key, String filePath) {
         S3TransferManager transferManager = S3TransferManager.create();
         UploadFileRequest uploadFileRequest = UploadFileRequest.builder()
@@ -92,7 +92,7 @@ If you don't provide a checksum algorithm when using the transfer manager for up
 
 The second option uses the [`S3Client` API](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html) (or the [`S3AsyncClient` API](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3AsyncClient.html)) to perform the multipart upload. If you specify a checksum with this approach, you must specify the algorithm to use on the initiation of the upload. You must also specify the algorithm for each part request and provide the checksum calculated for each part after it is uploaded.
 
-```
+```java
     public void multipartUploadWithChecksumS3Client(String bucketName, String key, String filePath) {
         ChecksumAlgorithm algorithm = ChecksumAlgorithm.CRC32;
 
@@ -166,7 +166,7 @@ The request in the following snippet directs the SDK to validate the checksum in
 ### Imports
 <a name="use-service-S3-checksum-download-imports"></a>
 
-```
+```java
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
@@ -176,7 +176,7 @@ import software.amazon.awssdk.services.s3.model.ChecksumMode;
 import software.amazon.awssdk.services.s3.model.GetObjectResponse;
 ```
 
-```
+```java
     public byte[] getObjectWithChecksum() throws IOException {
         try (ResponseInputStream<GetObjectResponse> objectStream = s3Client.getObject(b -> b
                         .bucket(bucketName)
@@ -233,7 +233,7 @@ The following list describes the settings you can use to minimize checksum calcu
 
   Set the system property at the start of your application:
 
-  ```
+  ```java
   import software.amazon.awssdk.core.SdkSystemSetting;
   import software.amazon.awssdk.core.checksums.RequestChecksumCalculation;
   import software.amazon.awssdk.core.checksums.ResponseChecksumValidation;
@@ -283,7 +283,7 @@ The `LegacyMd5Plugin` is particularly useful when you need to maintain compatibi
 
 To use the `LegacyMd5Plugin`, add it to your S3 client builder:
 
-```
+```java
 // For synchronous S3 client.
 S3Client s3Client = S3Client.builder()
                            .addPlugin(LegacyMd5Plugin.create())
@@ -297,7 +297,7 @@ S3AsyncClient asyncClient = S3AsyncClient.builder()
 
 If you want to add MD5 checksums to the operations that require checksums and want to skip adding SDK default checksums for operations that support checksums but are not required, you can enable the `ClientBuilder` options `requestChecksumCalculation` and `responseChecksumValidation` as `WHEN_REQUIRED`. This will add SDK default checksums only to operations that require checksums:
 
-```
+```java
 // Use the `LegacyMd5Plugin` with `requestChecksumCalculation` and `responseChecksumValidation` set to WHEN_REQUIRED.
 S3AsyncClient asyncClient = S3AsyncClient.builder()
                                        .addPlugin(LegacyMd5Plugin.create())

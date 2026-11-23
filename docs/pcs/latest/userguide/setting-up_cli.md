@@ -10,6 +10,6 @@ You must configure the AWS CLI. For more information, see [Configure the AWS CLI
 
 Enter the following command at a command prompt to check your AWS CLI; it should display help information.
 
-```
+```cmd
 aws pcs help
 ```

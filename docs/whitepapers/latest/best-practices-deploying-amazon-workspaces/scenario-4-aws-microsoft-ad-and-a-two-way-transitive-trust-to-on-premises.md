@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
 ![Sample architecture showing AWS Managed AD deployed in the AWS Cloud, which has a two-way transitive trust to the customer on-premises AD.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloud-only-transitive-trust.png)
 
+*Figure 9: AWS Microsoft AD and a two-way transitive trust to on-premises*
+
  As in scenario 3, the AD DS (Microsoft AD) is deployed into dedicated subnets that span two AZs, making AD DS highly available in the AWS Cloud.
 
  This scenario works well for customers who want to have a fully managed AWS Directory Service, including deployment, patching, high availability, and monitoring of their AWS Cloud. This scenario also allows WorkSpaces users to access AD-joined resources on their existing networks. This scenario requires a domain trust to be in place. Security groups and firewall rules need to allow communication between the two active directories.

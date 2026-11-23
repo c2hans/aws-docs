@@ -10,7 +10,7 @@ The operation assigns access permissions from a private CA to a designated AWS s
 
 Once a permission is created, you can inspect it with the [ListPermissions](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListPermissions.html) function or delete it with the [DeletePermission](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DeletePermission.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

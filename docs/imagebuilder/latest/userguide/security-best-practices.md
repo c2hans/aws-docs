@@ -44,11 +44,11 @@ After the file clean up completes, Image Builder appends steps to the script tha
 + **Systems Manager agent** – Whether Image Builder uninstalls the agent depends on the `systemsManagerAgent.uninstallAfterBuild` setting in your image recipe and whether Image Builder installed the agent. For more information, see the `uninstallAfterBuild` setting in [Create an image recipe with the AWS CLI or Tools for PowerShell](create-image-recipes.md#create-image-recipe-cli).
 + **`cronie` package** – This step applies to Amazon Linux 1, Amazon Linux 2, and Amazon Linux 2023. If Image Builder installed a crontab during the build, it records a `crontab_installed` marker in the service working directory. Image Builder then removes the `cronie` package as part of clean up. To keep `cronie` in your final image, delete the marker file before clean up runs by adding the following command to a component or to your user data:
 
-  ```
+  ```bash
   rm -f /tmp/imagebuilder_service/crontab_installed
   ```
 
-```
+```py
 #!/bin/bash
 if [[ ! -f {{workingDirectory}}/perform_cleanup ]]; then
     echo "Skipping cleanup"
@@ -459,7 +459,7 @@ When the pipeline completes its build and test stages, Image Builder automatical
 **Important**
 If you override **User data** in your recipe, the script doesn't run. In that case, make sure that you include a command in your user data that creates an empty file named `perform_cleanup`. Image Builder detects this file and runs the clean-up script prior to creating the new image.
 
-```
+```py
 #!/bin/bash
 if [[ ! -f {{workingDirectory}}/perform_cleanup ]]; then
   echo "Skipping cleanup"

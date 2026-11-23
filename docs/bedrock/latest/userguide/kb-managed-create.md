@@ -237,6 +237,7 @@ Managed knowledge bases support the following data source connectors:
 + Box
 + Confluence Cloud
 + Confluence Data Center
++ Dropbox
 + Microsoft SharePoint Online
 + Google Drive
 + Microsoft OneDrive

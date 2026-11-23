@@ -69,7 +69,7 @@ Because the endpoint is reused, integrations that pointed at the previous capabi
 
 To get the exact endpoint for a capability, use the `describe-capability` command and read the `serverUrl` value. Replace {{region-code}}, {{my-cluster}}, and {{my-argocd}} with your values:
 
-```
+```bash
 aws eks describe-capability \
   --region {{region-code}} \
   --cluster-name {{my-cluster}} \
@@ -86,7 +86,7 @@ The `serverUrl` field and the endpoint’s DNS records are available after the c
 
 By default, the Argo CD endpoint uses the following format:
 
-```
+```text
 https://{{capability-name}}-{{hash}}-{{account-id}}.eks-capabilities.{{region-code}}.amazonaws.com
 ```
 
@@ -98,13 +98,13 @@ The hostname consists of the following components:
 
 For example, a capability named `my-argocd` on cluster `my-cluster` in account `111122223333` in the `us-west-2` Region has an endpoint similar to the following:
 
-```
+```text
 https://my-argocd-dc855fdf-111122223333.eks-capabilities.us-west-2.amazonaws.com
 ```
 
 The hostname uses the normalized capability name, but the hash uses the raw name you specified. For example, the capability `Payments_GitOps` on cluster `my-cluster` normalizes to `payments-gitops` in the hostname, and its hash comes from the raw string `Payments_GitOps/my-cluster`:
 
-```
+```text
 https://payments-gitops-4ce0b382-111122223333.eks-capabilities.us-west-2.amazonaws.com
 ```
 
@@ -113,7 +113,7 @@ Use the `describe-capability` output to confirm the exact endpoint for your AWS 
 
 You can compute the {{hash}} component yourself. Use `sha256sum` on Linux or `shasum -a 256` on macOS. The following commands use the example capability `my-argocd` on cluster `my-cluster`. Substitute the exact names that you specified when you created the capability:
 
-```
+```bash
 # Linux
 printf '%s' "my-argocd/my-cluster" | sha256sum | cut -c1-8
 
@@ -128,13 +128,13 @@ Both commands return `dc855fdf`.
 
 Instead of using the default hostname, you can specify a prefix for your endpoint. If you specify an endpoint prefix when you create the capability, the endpoint uses the following format:
 
-```
+```text
 https://{{endpoint-prefix}}-{{account-id}}.eks-capabilities.{{region-code}}.amazonaws.com
 ```
 
 A custom prefix replaces the capability name and the hash, so the hostname starts with your prefix followed by your AWS account ID. For example, the prefix `payments` in account `111122223333` in the `us-west-2` Region produces the following endpoint:
 
-```
+```text
 https://payments-111122223333.eks-capabilities.us-west-2.amazonaws.com
 ```
 
@@ -149,7 +149,7 @@ Amazon EKS reserves a small set of prefixes that collide with well-known hostnam
 
 To specify a prefix, include `endpointPrefix` in the `argoCd` object that you pass to the `--configuration` parameter of `aws eks create-capability`. The following example uses the prefix `payments`:
 
-```
+```json
 {
   "argoCd": {
     "endpointPrefix": "payments",
@@ -170,7 +170,7 @@ To specify a prefix, include `endpointPrefix` in the `argoCd` object that you pa
 
 For the complete procedure, see [Create an Argo CD capability using the AWS CLI](argocd-create-cli.md). You can also specify the prefix when you create the capability in the AWS Management Console. For more information, see [Create an Argo CD capability using the Console](argocd-create-console.md). In AWS CloudFormation, use the `EndpointPrefix` property of `Configuration.ArgoCd` in the `AWS::EKS::Capability` resource.
 
-```
+```yaml
 Resources:
   ArgoCdCapability:
     Type: AWS::EKS::Capability

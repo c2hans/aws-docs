@@ -17,6 +17,8 @@ AWS customers begin by building resources in a single AWS account that represent
 
 ![A diagram depicting AWS Control Tower initial deployment](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/control-tower-deployment.png)
 
+**AWS Control Tower initial deployment**
+
 When you set up your multi-account environment using AWS Control Tower, it creates two Organizational Units (OUs):
 + **Security OU** – Within this OU, AWS Control Tower creates two accounts:
 + Log Archive
@@ -28,6 +30,8 @@ When you set up your multi-account environment using AWS Control Tower, it creat
  The following diagram shows the OUs initially deployed by AWS Control Tower. You can expand your AWS environment to implement any of the recommended OUs included in the diagram, to meet your requirements.
 
 ![A diagram depicting AWS organizational OUs.](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/organization-ous.png)
+
+**AWS organizational OUs**
 
 For further details on multi-account environment using AWS Control Tower, refer to [*Appendix E*](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/appendix-e-establish-multi-account.html) in the *Organizing Your AWS Environment Using Multiple Accounts* whitepaper.
 

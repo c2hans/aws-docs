@@ -131,7 +131,7 @@ List all resources for a recommendation by its identifier.
 #### Sample Request
 <a name="API_ListRecommendationResources_Example_1_Request"></a>
 
-```
+```json
 {
                     "recommendationIdentifier": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578"
                     }
@@ -140,7 +140,7 @@ List all resources for a recommendation by its identifier.
 #### Sample Response
 <a name="API_ListRecommendationResources_Example_1_Response"></a>
 
-```
+```json
 {
                     "recommendationResourceSummaries": [
                     {

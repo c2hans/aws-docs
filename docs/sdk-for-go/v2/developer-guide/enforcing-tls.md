@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/enforcing-
 
  The following example builds an HTTP client that requires a minimum of TLS 1.2 and passes it to `config.LoadDefaultConfig`.
 
-```
+```go
 import (
     "context"
     "crypto/tls"

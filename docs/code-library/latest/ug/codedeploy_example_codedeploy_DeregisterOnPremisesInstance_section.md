@@ -29,7 +29,7 @@ For more information, see [Manually deregister an on-premises instance](https://
 **Tools for PowerShell V4**
 **Example 1: This example deregisters the on-premises instance with the specified name.**
 
-```
+```powershell
 Unregister-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 ```
 +  For API details, see [DeregisterOnPremisesInstance](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Unregister-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 **Tools for PowerShell V5**
 **Example 1: This example deregisters the on-premises instance with the specified name.**
 
-```
+```powershell
 Unregister-CDOnPremiseInstance -InstanceName AssetTag12010298EX
 ```
 +  For API details, see [DeregisterOnPremisesInstance](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

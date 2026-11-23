@@ -13,7 +13,7 @@ In addition to using the S3 TransferUtility, you can also interact with S3 using
 
 To use Amazon S3, we first need to create an AmazonS3Client instance which takes a reference to the CognitoAWSCredentials instance you created previously and your region:
 
-```
+```csharp
 AmazonS3Client S3Client = new AmazonS3Client (credentials,region);
 ```
 
@@ -22,7 +22,7 @@ AmazonS3Client S3Client = new AmazonS3Client (credentials,region);
 
 To download a file from S3:
 
-```
+```csharp
 // Create a GetObject request
 GetObjectRequest request = new GetObjectRequest
 {
@@ -48,7 +48,7 @@ using (GetObjectResponse response = client.GetObject(request))
 
 To upload a file to S3:
 
-```
+```csharp
 // Create a client
 AmazonS3Client client = new AmazonS3Client();
 
@@ -69,7 +69,7 @@ PutObjectResponse response = client.PutObject(request);
 
 To delete an item in S3:
 
-```
+```csharp
 // Create a client
 AmazonS3Client client = new AmazonS3Client();
 
@@ -89,7 +89,7 @@ client.DeleteObject(request);
 
 To delete multiple objects from a bucket using a single HTTP request:
 
-```
+```csharp
 // Create a client
 AmazonS3Client client = new AmazonS3Client();
 
@@ -137,7 +137,7 @@ You may specify up to 1000 keys.
 
 To return a list of all buckets owned by the authenticated sender of the request:
 
-```
+```csharp
 // Create a client
 AmazonS3Client client = new AmazonS3Client();
 
@@ -157,7 +157,7 @@ foreach (S3Bucket bucket in response.Buckets)
 
 You can returns some or all (up to 1000) of the objects stored in your S3 bucket. To do so, you must have read access to the bucket.
 
-```
+```csharp
 // Create a GetObject request
 GetObjectRequest request = new GetObjectRequest
 {
@@ -183,7 +183,7 @@ using (GetObjectResponse response = client.GetObject(request))
 
 To obtain the region that a bucket resides in:
 
-```
+```csharp
 // Create a client
 AmazonS3Client client = new AmazonS3Client();
 
@@ -205,7 +205,7 @@ Console.WriteLine("Bucket location - {0}", response.Location);
 
 To get a bucket’s policy:
 
-```
+```csharp
 // Create a client
 AmazonS3Client client = new AmazonS3Client();
 

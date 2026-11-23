@@ -15,7 +15,7 @@ Create a new segment in Amazon Pinpoint by defining dimensions of the segment in
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpoint;
 import com.amazonaws.services.pinpoint.AmazonPinpointClientBuilder;
 import com.amazonaws.services.pinpoint.model.CreateSegmentRequest;
@@ -33,7 +33,7 @@ import com.amazonaws.services.pinpoint.model.WriteSegmentRequest;
 
  **Code**
 
-```
+```java
 Pinpoint pinpoint = AmazonPinpointClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
 Map<String, AttributeDimension> segmentAttributes = new HashMap<>();
 segmentAttributes.put("Team", new AttributeDimension().withAttributeType(AttributeType.INCLUSIVE).withValues("Lakers"));
@@ -57,7 +57,7 @@ Next set the [SegmentDimensions](https://docs.aws.amazon.com/sdk-for-java/v1/ref
 
  **Code**
 
-```
+```java
 WriteSegmentRequest writeSegmentRequest = new WriteSegmentRequest()
         .withName("MySegment").withDimensions(dimensions);
 

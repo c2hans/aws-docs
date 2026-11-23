@@ -25,7 +25,7 @@ The following code example shows how to use `ChangeMessageVisibility`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs' # v2: require 'aws-sdk'
 # Replace us-west-2 with the AWS Region you're using for Amazon SQS.
 sqs = Aws::SQS::Client.new(region: 'us-west-2')
@@ -71,7 +71,7 @@ The following code example shows how to use `CreateQueue`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 # This code example demonstrates how to create a queue in Amazon Simple Queue Service (Amazon SQS).
 
 require 'aws-sdk-sqs'
@@ -121,7 +121,7 @@ The following code example shows how to use `DeleteQueue`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs' # v2: require 'aws-sdk'
 # Replace us-west-2 with the AWS Region you're using for Amazon SQS.
 sqs = Aws::SQS::Client.new(region: 'us-west-2')
@@ -138,7 +138,7 @@ The following code example shows how to use `ListQueues`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs'
 require 'aws-sdk-sts'
 
@@ -208,7 +208,7 @@ The following code example shows how to use `ReceiveMessage`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs'
 require 'aws-sdk-sts'
 
@@ -284,7 +284,7 @@ The following code example shows how to use `SendMessage`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs'
 require 'aws-sdk-sts'
 
@@ -346,7 +346,7 @@ The following code example shows how to use `SendMessageBatch`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs'
 require 'aws-sdk-sts'
 
@@ -429,7 +429,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event:, context:)
@@ -459,7 +459,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda-with-batch-item-handling) repository.
 Reporting SQS batch item failures with Lambda using Ruby.
 
-```
+```ruby
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 require 'json'

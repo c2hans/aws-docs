@@ -29,6 +29,8 @@ If you have three event buses in the same account, and set up a rule on the firs
 
  The following video covers routing events between accounts:
 
+[![AWS Videos](https://img.youtube.com/vi/pX_xIW_EuCE/0.jpg)](https://www.youtube.com/watch?v=pX_xIW_EuCE)
+
 ## Grant permissions to allow events from other AWS accounts
 <a name="eb-receiving-events-from-another-account"></a>
 

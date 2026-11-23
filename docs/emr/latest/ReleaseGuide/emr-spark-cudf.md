@@ -20,7 +20,7 @@ To use the NVIDIA cuDF plugin for Spark, the core and task instance groups must 
 
 To install plugins, supply the following configuration when you create your cluster:
 
-```
+```json
 {
 	"Classification":"spark",
 	"Properties":{
@@ -38,7 +38,7 @@ For details on how to use GPU on YARN, see [Using GPU on YARN](https://hadoop.ap
 
 **Example YARN configuration for Amazon EMR 7.x**
 
-```
+```json
 {
     "Classification":"yarn-site",
     "Properties":{
@@ -79,7 +79,7 @@ For details on how to use GPU on YARN, see [Using GPU on YARN](https://hadoop.ap
 
 **Example YARN configuration for Amazon EMR 6.x**
 
-```
+```json
 {
     "Classification":"yarn-site",
     "Properties":{
@@ -121,7 +121,7 @@ For details on how to use GPU on YARN, see [Using GPU on YARN](https://hadoop.ap
 
 The following configuration enables Spark to use the cuDF plugin:
 
-```
+```json
 {
 	"Classification":"spark-defaults",
 	"Properties":{
@@ -134,7 +134,7 @@ The following configuration enables Spark to use the cuDF plugin:
 
 [XGBoost4J-Spark library](https://xgboost.readthedocs.io/en/latest/jvm/xgboost4j_spark_tutorial.html) in XGBoost documentation is also available when the cuDF plugin is enabled on your cluster. You can use the following configuration to integrate XGBoost with your Spark job:
 
-```
+```json
 {
 	"Classification":"spark-defaults",
 	"Properties":{
@@ -149,7 +149,7 @@ For additional Spark configurations that you can use to tune a GPU-accelerated E
 
 `DominantResourceCalculator` must be configured to enable GPU scheduling and isolation. For more information, please refer to [Using GPU on YARN](https://hadoop.apache.org/docs/r3.2.1/hadoop-yarn/hadoop-yarn-site/UsingGpus.html) in Apache Hadoop documentation.
 
-```
+```json
 {
 	"Classification":"capacity-scheduler",
 	"Properties":{
@@ -171,7 +171,7 @@ Use the following sample files as templates to build your own configurations.
 
 **Example `my-configurations.json` file for Amazon EMR 7.x**
 
-```
+```json
 [
     {
         "Classification":"spark",
@@ -245,7 +245,7 @@ Use the following sample files as templates to build your own configurations.
 
 **Example `my-configurations.json` file for Amazon EMR 6.x**
 
-```
+```json
 [
     {
         "Classification":"spark",
@@ -334,7 +334,7 @@ The following example scripts show how to make a bootstrap action file for Amazo
 
 To use YARN to manage GPU resources with Amazon EMR 7.x releases, you must manually mount CGroup v1 on your cluster. You can do this with a bootstrap action script, as shown in this example.
 
-```
+```bash,sh,zsh
 #!/bin/bash
 set -ex
 
@@ -350,7 +350,7 @@ sudo chmod a+rwx -R /spark-cudf-cgroup
 
 For Amazon EMR 6.x releases, you must open CGroup permissions to YARN on your cluster. You can do this with a bootstrap action script, as shown in this example.
 
-```
+```bash,sh,zsh
 #!/bin/bash
 set -ex
 
@@ -365,7 +365,7 @@ sudo chmod a+rwx -R /sys/fs/cgroup/devices
 
 The last step is to launch your cluster with the configurations from the previous steps. The following AWS CLI command launches a cluster that uses the cuDF plugin:
 
-```
+```bash,sh,zsh
  aws emr create-cluster \
 --release-label emr-7.14.0 \
 --applications Name=Hadoop Name=Spark \

@@ -55,7 +55,7 @@ To mix in Nova data, you simply need to add a data\_mixing block to your recipe 
 ### Example Data Mixing Block for Nova 1.0 Text Mixing
 <a name="nova-1-text-mixing"></a>
 
-```
+```yaml
 ## Run config
 run:
   name: "my-lora-run"             # A descriptive name for your training job
@@ -125,7 +125,7 @@ data_mixing:
 ### Nova 2.0 Configuration Example
 <a name="nova-2-configuration"></a>
 
-```
+```yaml
 run:
   name: my-lora-sft-run
   model_type: amazon.nova-2-lite-v1:0:256k
@@ -162,7 +162,7 @@ training_config:
 ### Nova 2.0 Text Data Mixing
 <a name="nova-2-text-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_1p5_text_chat
   sources:
@@ -197,7 +197,7 @@ data_mixing:
 ### Nova 1.0 Multimodal Data Mixing
 <a name="nova-1-multimodal-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_mm
   sources:
@@ -218,7 +218,7 @@ data_mixing:
 ### Nova 2.0 Multimodal Data Mixing
 <a name="nova-2-multimodal-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_1p5_mm_chat
   sources:
@@ -403,7 +403,7 @@ You can also supply your custom data by formatting them in below format and then
 
 Create jsonl per task with the following structure:
 
-```
+```json
 {
   "metadata": "{key:4, category:'apple'}",
   "system": "arithmetic-patterns, please answer the following with no other words: ",
@@ -414,7 +414,7 @@ Create jsonl per task with the following structure:
 
 Outputs generated during inference phase of the evaluation job will have following structure:
 
-```
+```json
 {
   "prompt": "[{'role': 'system', 'content': 'arithmetic-patterns, please answer the following with no other words: '}, {'role': 'user', 'content': 'What is the next number in this series? 1, 2, 4, 8, 16, ?'}]",
   "inference": "['32']",
@@ -464,7 +464,7 @@ hyperpod start-job -n kubeflow \
 
 Full set of hyper-parameters other than data mixing:
 
-```
+```yaml
 ## Run config
 run:
   name: my-lora-sft-run
@@ -516,7 +516,7 @@ Below we describe each available Nova data category.
 ### Nova 1.0 Configuration with Data mixing
 <a name="nova-1-config-data-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_text       # Nova text dataset catalog
   sources:
@@ -555,7 +555,7 @@ What do these categories mean?
 ### Multimodal Data Mixing (Nova 1.0)
 <a name="nova-1-mm-data-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_mm        # Nova multi-modal dataset catalog
   sources:
@@ -591,7 +591,7 @@ What do these categories mean?
 ### Nova 2.0 Configuration with data mixing
 <a name="nova-2-config-data-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_1p5_text_chat       # Nova text dataset catalog
   sources:
@@ -656,7 +656,7 @@ What do these categories mean?
 ### Multimodal Data Mixing (Nova 2.0)
 <a name="nova-2-mm-data-mixing"></a>
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_1p5_mm_chat       # Nova text dataset catalog
   sources:
@@ -732,7 +732,7 @@ For Nova 2.0 sft:
 
 The data mixing config will look the same, but with an extra data mixing section at the bottom similar to this
 
-```
+```yaml
 data_mixing:
   dataset_catalog: sft_text_lite
   sources:
@@ -968,7 +968,7 @@ You can also supply your custom data by formatting them in below format and then
 
 Crate jsonl per task with the following structure:
 
-```
+```json
 {
   "metadata": "{key:4, category:'apple'}",
   "system": "arithmetic-patterns, please answer the following with no other words: ",
@@ -979,7 +979,7 @@ Crate jsonl per task with the following structure:
 
 Outputs generated during inference phase of the evaluation job will have following structure:
 
-```
+```json
 {
   "prompt": "[{'role': 'system', 'content': 'arithmetic-patterns, please answer the following with no other words: '}, {'role': 'user', 'content': 'What is the next number in this series? 1, 2, 4, 8, 16, ?'}]",
   "inference": "['32']",

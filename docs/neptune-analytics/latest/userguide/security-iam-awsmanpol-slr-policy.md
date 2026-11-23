@@ -14,7 +14,7 @@ This policy was released on 2023-11-29.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

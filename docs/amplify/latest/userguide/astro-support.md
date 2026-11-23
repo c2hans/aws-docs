@@ -14,3 +14,5 @@ To learn how to deploy an Astro app to Amplify, see [Deploy an Astro.js app to A
 
 **Demo**
 For a video demonstration, see *How to deploy an Astro Website to AWS* on the Amazon Web Services YouTube channel.
+
+[![AWS Videos](https://img.youtube.com/vi/SXkZEVFS9d0/0.jpg)](https://www.youtube.com/watch?v=SXkZEVFS9d0)

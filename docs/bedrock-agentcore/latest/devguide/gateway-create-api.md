@@ -30,7 +30,7 @@ The remaining fields depend on your gateway configuration and whether you want t
 
 If your authorizer type is `CUSTOM_JWT` , you must also include an authorizer configuration in the `authorizerConfiguration` field. The basic structure of the authorizer configuration is as follows:
 
-```
+```json
 {
   "customJWTAuthorizer": {
     "discoveryUrl": "string",
@@ -63,7 +63,7 @@ The following examples show the structure of the CustomClaimValidationsType obje
 
 1.
 
-   ```
+   ```json
    {
      "inboundTokenClaimName": "string",
      "inboundTokenClaimValueType": "STRING",
@@ -78,7 +78,7 @@ The following examples show the structure of the CustomClaimValidationsType obje
 
 1.
 
-   ```
+   ```json
    {
      "inboundTokenClaimName": "string",
      "inboundTokenClaimValueType": "STRING_ARRAY",
@@ -93,7 +93,7 @@ The following examples show the structure of the CustomClaimValidationsType obje
 
 1.
 
-   ```
+   ```json
    {
      "inboundTokenClaimName": "string",
      "inboundTokenClaimValueType": "STRING_ARRAY",
@@ -131,7 +131,7 @@ Select one of the following methods:
 
    Run the following command in a terminal to create a gateway with no authorization (the default). To add Custom JWT authorization, specify the authorizer flags as shown in the next example:
 
-   ```
+   ```bash
    agentcore add gateway --name my-gateway
    ```
 
@@ -139,7 +139,7 @@ Select one of the following methods:
 
    The following command shows how to create a gateway with Custom JWT authorization and explicit configuration:
 
-   ```
+   ```bash
    agentcore add gateway \
      --name my-gateway \
      --authorizer-type CUSTOM_JWT \
@@ -168,7 +168,7 @@ Select one of the following methods:
 
 1. Run the following code in a terminal to create a basic gateway with the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::123456789012:role/my-gateway-service-role \
@@ -186,7 +186,7 @@ Select one of the following methods:
 
 1. The following Python code shows how to create a basic gateway with the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    # Initialize the AgentCore client
@@ -220,7 +220,7 @@ Select one of the following methods:
 
 1. Run the following commands in your AgentCore project. The CLI creates a gateway service role when you don’t provide one:
 
-   ```
+   ```bash
    agentcore add gateway \
      --name my-gateway \
      --authorizer-type AWS_IAM
@@ -229,7 +229,7 @@ Select one of the following methods:
 
 1. Run the following in a terminal:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
    --name my-gateway \
    --role-arn arn:aws:iam::123456789012:role/MyAgentCoreServiceRole \
@@ -239,7 +239,7 @@ Select one of the following methods:
 
 1.
 
-   ```
+   ```python
    import boto3
 
    # Create the AgentCore client
@@ -269,7 +269,7 @@ Select one of the following methods:
 
 1. Use the AgentCore CLI to create a gateway with the NONE authorizer type:
 
-   ```
+   ```bash
    agentcore add gateway \
      --name my-gateway \
      --authorizer-type NONE
@@ -292,7 +292,7 @@ Select one of the following methods:
 
 1. Run the following code in a terminal to create a gateway with NONE authorizer type using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::111122223333:role/my-gateway-service-role \
@@ -304,7 +304,7 @@ Select one of the following methods:
 
 1. The following Python code shows how to create a gateway with NONE authorizer type using the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    # Initialize the AgentCore client
@@ -335,7 +335,7 @@ Select one of the following methods:
 
 1. Run the following command to create a gateway with `AUTHENTICATE_ONLY` authorization:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::111122223333:role/my-gateway-service-role \
@@ -346,7 +346,7 @@ Select one of the following methods:
 
 1. The following Python code shows how to create a gateway with `AUTHENTICATE_ONLY` authorization:
 
-   ```
+   ```python
    import boto3
 
    # Initialize the AgentCore client
@@ -373,7 +373,7 @@ Select one of the following methods:
 
 1. Semantic search is disabled by default. To enable it, create an MCP gateway and pass `--enable-semantic-search`:
 
-   ```
+   ```bash
    agentcore add gateway \
      --name my-gateway \
      --protocol-type MCP \
@@ -395,7 +395,7 @@ Select one of the following methods:
 
 1. Turn on semantic search when creating a gateway in the AWS CLI by specifying `searchType` as `SEMANTIC` in the `--protocol-configuration` object, as in the following example:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::123456789012:role/my-gateway-service-role \
@@ -418,7 +418,7 @@ Select one of the following methods:
 
 1. Turn on semantic search when creating a gateway using the AWS Python SDK (Boto3) by specifying `searchType` as `SEMANTIC` in the `protocolConfiguration` object, as in the following example:
 
-   ```
+   ```python
    import boto3
 
    # Initialize the AgentCore client
@@ -460,14 +460,14 @@ Select one of the following methods:
 
 1. When you create a gateway using the AgentCore CLI, pass the `--exception-level` flag to enable debugging messages:
 
-   ```
+   ```bash
    agentcore add gateway --name my-gateway --exception-level debug
    agentcore deploy
    ```
 
 1. Run the following code in a terminal to create a gateway with debugging messages turned on in the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::123456789012:role/my-gateway-service-role \
@@ -486,7 +486,7 @@ Select one of the following methods:
 
 1. The following Python code shows how to create a basic gateway with the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    # Initialize the AgentCore client
@@ -524,7 +524,7 @@ Select one of the following methods:
 
 1. Add the gateway to your project:
 
-   ```
+   ```bash
    agentcore add gateway \
      --name my-gateway \
      --authorizer-type CUSTOM_JWT \
@@ -538,13 +538,13 @@ Select one of the following methods:
 
    The project configuration has no interceptor field, so declare the interceptor in `agentcore/cdk/lib/cdk-stack.ts`. Add `aws_bedrockagentcore` and `aws_lambda` to the `aws-cdk-lib` import:
 
-   ```
+   ```typescript
    import { Stack, type StackProps, aws_bedrockagentcore as bedrockagentcore, aws_lambda as lambda } from 'aws-cdk-lib';
    ```
 
    Then add the interceptor after the line that creates the `AgentCoreApplication`:
 
-   ```
+   ```typescript
    const interceptor = lambda.Function.fromFunctionArn(
      this, 'Interceptor',
      'arn:aws:lambda:us-west-2:123456789012:function:my-interceptor-lambda',
@@ -556,7 +556,7 @@ Select one of the following methods:
 
    The interceptor grants the gateway service role `lambda:InvokeFunction` on the function. Deploy the project:
 
-   ```
+   ```bash
    agentcore deploy
    ```
 
@@ -576,7 +576,7 @@ Select one of the following methods:
 
 1. Run the following code in a terminal to create a gateway with interceptor configurations using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::123456789012:role/my-gateway-service-role \
@@ -602,7 +602,7 @@ Select one of the following methods:
 
 1. The following Python code shows how to create a gateway with interceptor configurations using the AWS Python SDK (Boto3):
 
-   ```
+   ```python
    import boto3
 
    # Initialize the AgentCore client
@@ -642,7 +642,7 @@ You can create a gateway with a policy engine configuration. A policy engine is 
 
 1. First, add a policy engine to your project. Then, create a gateway that references the policy engine:
 
-   ```
+   ```bash
    agentcore add policy-engine \
      --name MyPolicyEngine
 
@@ -665,7 +665,7 @@ You can create a gateway with a policy engine configuration. A policy engine is 
 
 1. Run the following command to create a gateway with a policy engine configuration using the AWS CLI:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway \
      --name my-gateway \
      --role-arn arn:aws:iam::123456789012:role/my-gateway-service-role \

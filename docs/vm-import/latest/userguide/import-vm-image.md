@@ -67,7 +67,7 @@ aws ec2 import-image \
 
 Use the [Import-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2Image.html) cmdlet as follows.
 
-```
+```powershell
 Import-EC2Image `
     -Description ((Get-Date -Format "MMM dd HH:mm ") + "{{My server OVA}}") `
     -LicenseType "AWS" `
@@ -121,7 +121,7 @@ aws ec2 import-image \
 
 Use the [Import-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2Image.html) cmdlet as follows.
 
-```
+```powershell
 Import-EC2Image `
     -Description ((Get-Date -Format "MMM dd HH:mm ") + "{{My server disks}}") `
     -LicenseType "AWS" `
@@ -176,7 +176,7 @@ aws ec2 import-image \
 
 Use the [Import-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Import-EC2Image.html) cmdlet as follows.
 
-```
+```powershell
 Import-EC2Image `
     -Description ((Get-Date -Format "MMM dd HH:mm ") + "{{My server disks}}") `
     -LicenseType "AWS" `

@@ -11,7 +11,7 @@ Choose a YAML property in the following code to see a description of it.
 **Note**
 Most of the YAML properties that follow have corresponding UI elements in the visual editor. To look up a UI element, use **Ctrl\+F**. The element will be listed with its associated YAML property.
 
-```
+```yaml
 SchemaVersion: 1.0
 Name: MyAction   # Name of the action - string
 Id: my-action   # String

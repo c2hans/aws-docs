@@ -114,7 +114,7 @@ When Amazon Macie publishes findings to AWS Security Hub CSPM, it uses the [AWS 
 
 Here's an example of a sensitive data finding that Macie published to Security Hub CSPM using the ASFF.
 
-```
+```JSON
 {
     "SchemaVersion": "2018-10-08",
     "Id": "5be50fce24526e670df77bc00example",
@@ -258,7 +258,7 @@ Here's an example of a sensitive data finding that Macie published to Security H
 
 Here's an example of a new policy finding that Macie published to Security Hub CSPM in the ASFF.
 
-```
+```JSON
 {
     "SchemaVersion": "2018-10-08",
     "Id": "36ca8ba0-caf1-4fee-875c-37760example",

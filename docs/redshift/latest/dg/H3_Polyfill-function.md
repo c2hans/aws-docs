@@ -40,7 +40,7 @@ If *geom* is empty, then NULL is returned.
 
 The following SQL returns a SUPER data type array of H3 cell IDs from a polygon and resolution `4`.
 
-```
+```sql
 SELECT H3_Polyfill(ST_GeomFromText('POLYGON((0 0, 0 1, 1 1, 1 0, 0 0))'), 4);
 ```
 

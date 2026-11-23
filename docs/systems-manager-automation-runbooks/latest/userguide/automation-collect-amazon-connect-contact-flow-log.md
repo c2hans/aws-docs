@@ -35,7 +35,7 @@ Linux, macOS, Windows
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
 
-```
+```json
         {
             "Statement": [
                 {

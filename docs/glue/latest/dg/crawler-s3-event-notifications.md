@@ -63,7 +63,7 @@ Complete the following setup tasks. Note the values in parenthesis reference the
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

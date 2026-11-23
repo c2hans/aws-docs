@@ -76,7 +76,7 @@ To view external tables, query the [SVV\_EXTERNAL\_TABLES](r_SVV_EXTERNAL_TABLES
 
 By default, Amazon Redshift creates external tables with the pseudocolumns `$path`, `$size`, and `$spectrum_oid`. Select the `$path` column to view the path to the data files on Amazon S3, and select the `$size` column to view the size of the data files for each row returned by a query. The `$spectrum_oid` column provides the ability to perform correlated queries with Redshift Spectrum. For an example, see [Example: Performing correlated subqueries in Redshift Spectrum](c_performing-correlated-subqueries-spectrum.md). You must delimit the `$path`, `$size`, and `$spectrum_oid` column names with double quotation marks. A SELECT \* clause doesn't return the pseudocolumns. You must explicitly include the `$path`, `$size`, and `$spectrum_oid` column names in your query, as the following example shows.
 
-```
+```SQL
 select "$path", "$size", "$spectrum_oid"
 from spectrum.sales_part where saledate = '2008-12-01';
 ```
@@ -445,7 +445,7 @@ Apache Hudi format is only supported when you use an AWS Glue Data Catalog. It's
 
 The DDL to define an unpartitioned table has the following format.
 
-```
+```sql
 CREATE EXTERNAL TABLE tbl_name (columns)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
 STORED AS
@@ -456,7 +456,7 @@ LOCATION 's3://s3-bucket/prefix'
 
 The DDL to define a partitioned table has the following format.
 
-```
+```sql
 CREATE EXTERNAL TABLE tbl_name (columns)
 PARTITIONED BY(pcolumn1 pcolumn1-type[,...])
 ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
@@ -470,7 +470,7 @@ To add partitions to a partitioned Hudi table, run an ALTER TABLE ADD PARTITION 
 
 The DDL to add partitions has the following format.
 
-```
+```sql
 ALTER TABLE tbl_name
 ADD IF NOT EXISTS PARTITION(pcolumn1=pvalue1[,...])
 LOCATION 's3://s3-bucket/prefix/partition-path'
@@ -489,7 +489,7 @@ The DDL for partitioned and unpartitioned Delta Lake tables is similar to that f
 
 The DDL to define an unpartitioned table has the following format.
 
-```
+```sql
 CREATE EXTERNAL TABLE tbl_name (columns)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
 STORED AS
@@ -500,7 +500,7 @@ LOCATION 's3://s3-bucket/prefix/_symlink_format_manifest'
 
 The DDL to define a partitioned table has the following format.
 
-```
+```sql
 CREATE EXTERNAL TABLE tbl_name (columns)
 PARTITIONED BY(pcolumn1 pcolumn1-type[,...])
 ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
@@ -514,7 +514,7 @@ To add partitions to a partitioned Delta Lake table, run an ALTER TABLE ADD PART
 
 The DDL to add partitions has the following format.
 
-```
+```sql
 ALTER TABLE tbl_name
 ADD IF NOT EXISTS PARTITION(pcolumn1=pvalue1[,...])
 LOCATION
@@ -523,7 +523,7 @@ LOCATION
 
 Or run DDL that points directly to the Delta Lake manifest file.
 
-```
+```sql
 ALTER TABLE tbl_name
 ADD IF NOT EXISTS PARTITION(pcolumn1=pvalue1[,...])
 LOCATION

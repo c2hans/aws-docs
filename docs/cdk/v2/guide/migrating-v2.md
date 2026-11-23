@@ -130,7 +130,7 @@ Update your app’s dependencies, then install the new packages. Finally, update
 For CDK apps, update `package.json` as follows. Remove dependencies on v1-style individual stable modules and establish the lowest version of `aws-cdk-lib` you require for your application (2.0.0 here).
 Experimental constructs are provided in separate, independently versioned packages with names that end in `alpha` and an alpha version number. The alpha version number corresponds to the first release of `aws-cdk-lib` with which they’re compatible. Here, we have pinned `aws-codestar` to v2.0.0-alpha.1.
 
-```
+```json
 {
   "dependencies": {
     "aws-cdk-lib": "^2.0.0",
@@ -143,7 +143,7 @@ Experimental constructs are provided in separate, independently versioned packag
 For construct libraries, establish the lowest version of `aws-cdk-lib` you require for your application (2.0.0 here) and update `package.json` as follows.
 Note that `aws-cdk-lib` appears both as a peer dependency and a dev dependency.
 
-```
+```json
 {
   "peerDependencies": {
     "aws-cdk-lib": "^2.0.0",
@@ -162,7 +162,7 @@ It’s up to you how long you want to continue supporting AWS CDK v1 customers. 
 Install the new dependencies by running `npm install` or `yarn install`.
 Change your imports to import `Construct` from the new `constructs` module, core types such as `App` and `Stack` from the top level of `aws-cdk-lib`, and stable Construct Library modules for the services you use from namespaces under `aws-cdk-lib`.
 
-```
+```javascript
 import { Construct } from 'constructs';
 import { App, Stack } from 'aws-cdk-lib';                 // core constructs
 import { aws_s3 as s3 } from 'aws-cdk-lib';               // stable module
@@ -171,7 +171,7 @@ import * as codestar from '@aws-cdk/aws-codestar-alpha';  // experimental module
 Update `package.json` as follows. Remove dependencies on v1-style individual stable modules and establish the lowest version of `aws-cdk-lib` you require for your application (2.0.0 here).
 Experimental constructs are provided in separate, independently versioned packages with names that end in `alpha` and an alpha version number. The alpha version number corresponds to the first release of `aws-cdk-lib` with which they’re compatible. Here, we have pinned `aws-codestar` to v2.0.0-alpha.1.
 
-```
+```json
 {
   "dependencies": {
     "aws-cdk-lib": "^2.0.0",
@@ -186,7 +186,7 @@ Change your app’s imports to do the following:
 + Import core types, such as `App` and `Stack`, from the top level of `aws-cdk-lib`
 + Import AWS Construct Library modules from namespaces under `aws-cdk-lib`
 
-```
+```javascript
 const { Construct } = require('constructs');
 const { App, Stack } = require('aws-cdk-lib');              // core constructs
 const s3 = require('aws-cdk-lib').aws_s3;                   // stable module
@@ -195,7 +195,7 @@ const codestar = require('@aws-cdk/aws-codestar-alpha');    // experimental modu
 Update `requirements.txt` or the `install_requires` definition in `setup.py` as follows. Remove dependencies on v1-style individual stable modules.
 Experimental constructs are provided in separate, independently versioned packages with names that end in `alpha` and an alpha version number. The alpha version number corresponds to the first release of `aws-cdk-lib` with which they’re compatible. Here, we have pinned `aws-codestar` to v2.0.0alpha1.
 
-```
+```python
 install_requires=[
      "aws-cdk-lib>=2.0.0",
      "constructs>=10.0.0",
@@ -209,7 +209,7 @@ Change your app’s imports to do the following:
 + Import core types, such as `App` and `Stack`, from the top level of `aws_cdk`
 + Import AWS Construct Library modules from namespaces under `aws_cdk`
 
-```
+```python
 from constructs import Construct
 from aws_cdk import App, Stack                    # core constructs
 from aws_cdk import aws_s3 as s3                  # stable module
@@ -228,7 +228,7 @@ s3.Bucket(...)
 In `pom.xml`, remove all `software.amazon.awscdk` dependencies for stable modules and replace them with dependencies on `software.constructs` (for `Construct`) and `software.amazon.awscdk`.
 Experimental constructs are provided in separate, independently versioned packages with names that end in `alpha` and an alpha version number. The alpha version number corresponds to the first release of `aws-cdk-lib` with which they’re compatible. Here, we have pinned `aws-codestar` to v2.0.0-alpha.1.
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awscdk</groupId>
     <artifactId>aws-cdk-lib</artifactId>
@@ -250,7 +250,7 @@ Change your code to do the following:
 + Import core classes, like `Stack` and `App`, from `software.amazon.awscdk`
 + Import service constructs from `software.amazon.awscdk.services`
 
-```
+```java
 import software.constructs.Construct;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.StackProps;
@@ -261,7 +261,7 @@ import software.amazon.awscdk.services.codestar.alpha.GitHubRepository;
 The most straightforward way to upgrade the dependencies of a C\# CDK application is to edit the `.csproj` file manually. Remove all stable `Amazon.CDK.*` package references and replace them with references to the `Amazon.CDK.Lib` and `Constructs` packages.
 Experimental constructs are provided in separate, independently versioned packages with names that end in `alpha` and an alpha version number. The alpha version number corresponds to the first release of `aws-cdk-lib` with which they’re compatible. Here, we have pinned `aws-codestar` to v2.0.0-alpha.1.
 
-```
+```xml
 <PackageReference Include="Amazon.CDK.Lib" Version="2.0.0" />
 <PackageReference Include="Amazon.CDK.AWS.Codestar.Alpha" Version="2.0.0-alpha.1" />
 <PackageReference Include="Constructs" Version="10.0.0" />
@@ -269,7 +269,7 @@ Experimental constructs are provided in separate, independently versioned packag
 Install the new dependencies by running `dotnet restore`.
 Change the imports in your source files as follows.
 
-```
+```csharp
 using Constructs;                   // for Construct class
 using Amazon.CDK;                   // for core classes like App and Stack
 using Amazon.CDK.AWS.S3;            // for stable constructs like Bucket

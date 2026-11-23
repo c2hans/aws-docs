@@ -26,7 +26,7 @@ This policy includes the following permissions.
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -127,7 +127,7 @@ You can attach the `AmazonMemoryDBReadOnlyAccess` policy to your IAM identities.
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [{
@@ -155,7 +155,7 @@ You can attach the `AmazonMemoryDBFullAccess` policy to your IAM identities. Thi
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [{
@@ -184,7 +184,7 @@ You can attach the `AmazonMemoryDBFullAccess` policy to your IAM identities. Thi
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [{

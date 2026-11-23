@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve a task with the specified Step Functions activity
     /// with the specified Amazon Resource Name (ARN).
@@ -41,7 +41,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static List<String> getActivityTask(SfnClient sfnClient, String actArn) {
         List<String> myList = new ArrayList<>();
         GetActivityTaskRequest getActivityTaskRequest = GetActivityTaskRequest.builder()
@@ -62,7 +62,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun getActivityTask(actArn: String?): List<String> {
     val myList: MutableList<String> = ArrayList()
     val getActivityTaskRequest =
@@ -85,7 +85,7 @@ suspend fun getActivityTask(actArn: String?): List<String> {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -127,7 +127,7 @@ class Activity:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sfn->getactivitytask(
           iv_activityarn = iv_activity_arn

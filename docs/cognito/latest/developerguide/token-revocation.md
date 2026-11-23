@@ -38,7 +38,7 @@ Before you can revoke a token for an existing user pool client, you must enable 
 
 To create or modify an app client with token revocation enabled with the Amazon Cognito API or with an AWS SDK, include the following parameter in your [CreateUserPoolClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolClient.html) or [UpdateUserPoolClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html) API request.
 
-```
+```json
 "EnableTokenRevocation": {{true}}
 ```
 
@@ -54,7 +54,7 @@ When you enable session tracking for your user pool, `RevokeToken` also deletes 
 
 The following is the body of an example `RevokeToken` API request.
 
-```
+```json
 {
    "ClientId": "{{1example23456789}}",
    "ClientSecret": "{{abcdef123456789ghijklexample}}",
@@ -65,7 +65,7 @@ The following is the body of an example `RevokeToken` API request.
 
 The following is an example cURL request to the `/oauth2/revoke` endpoint of a user pool with a custom domain.
 
-```
+```shell
 curl --location 'auth.mydomain.com/oauth2/revoke' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic {{Base64Encode(client_id:client_secret)}}' \

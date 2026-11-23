@@ -17,7 +17,7 @@ By default, only 10 policy store aliases can be associated with the same policy 
 **To create a policy store alias**
 You can create a policy store alias by using the [CreatePolicyStoreAlias](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_CreatePolicyStoreAlias.html) operation. The following example creates a policy store alias with the name `example-policy-store`.
 
-```
+```bash
 $ aws verifiedpermissions create-policy-store-alias \
     --alias-name policy-store-alias/example-policy-store \
     --policy-store-id PSEXAMPLEabcdefg111111

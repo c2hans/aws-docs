@@ -17,7 +17,7 @@ This section describes the configurable view properties for the 4 view types: ta
 
 The following example shows a widget configured as a table.
 
-```
+```JSON
 {
     "ViewProperties": {
        "Height": "2",
@@ -44,7 +44,7 @@ The following table describes the configurable view properties for a table.
 
 The following example shows a widget configured as a line chart.
 
-```
+```JSON
 {
     "ViewProperties": {
        "Height": "2",
@@ -77,7 +77,7 @@ The following table describes the configurable view properties for a line chart.
 
 The following example shows a widget configured as a pie chart.
 
-```
+```JSON
 {
     "ViewProperties": {
        "Height": "2",
@@ -110,7 +110,7 @@ The following table describes configurable view properties for a pie chart.
 
 The following example shows a widget configured as a bar chart.
 
-```
+```JSON
 {
     "ViewProperties": {
        "Height": "2",

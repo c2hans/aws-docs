@@ -49,7 +49,7 @@ The steps use the S3 controller (`ack-s3-controller`) as an example.
 
 1. Create the ACK capability with those services turned off (see [Create an ACK capability](create-ack-capability.md)). For example, if you self-manage S3, EC2, and IAM:
 
-   ```
+   ```bash
    aws eks create-capability \
      --region {{region-code}} \
      --cluster-name {{my-cluster}} \
@@ -64,14 +64,14 @@ The steps use the S3 controller (`ack-s3-controller`) as an example.
 
 1. For the service that you want to migrate, scale its self-managed controller down to zero replicas **before** you turn the service on in the capability:
 
-   ```
+   ```bash
    kubectl scale deployment ack-s3-controller \
      --namespace ack-system --replicas=0
    ```
 
 1. Turn the service on in the capability by removing it from `disabledServices`. Specify the complete list of services that you want to remain turned off. If this service was the only one turned off, specify an empty list:
 
-   ```
+   ```bash
    aws eks update-capability \
      --region {{region-code}} \
      --cluster-name {{my-cluster}} \
@@ -85,7 +85,7 @@ The steps use the S3 controller (`ack-s3-controller`) as an example.
 
 1. Remove the self-managed controller for that service:
 
-   ```
+   ```bash
    helm uninstall ack-s3-controller --namespace ack-system
    ```
 
@@ -114,7 +114,7 @@ With this approach, running a controller self-managed alongside the capability i
 
 1. Enable leader election on your self-managed ACK controller and move its lease to `kube-system`:
 
-   ```
+   ```bash
    helm upgrade --install ack-s3-controller \
      oci://public.ecr.aws/aws-controllers-k8s/s3-chart \
      --namespace ack-system \
@@ -130,7 +130,7 @@ With this approach, running a controller self-managed alongside the capability i
 
 1. When you are ready to begin the migration, scale the self-managed controller down to zero replicas. This releases the lease so that the capability can acquire leadership and take over reconciliation:
 
-   ```
+   ```bash
    kubectl scale deployment ack-s3-controller \
      --namespace ack-system --replicas=0
    ```
@@ -141,7 +141,7 @@ With this approach, running a controller self-managed alongside the capability i
 
 1. After you have confirmed the capability is managing your resources correctly, remove the self-managed controller:
 
-   ```
+   ```bash
    helm uninstall ack-s3-controller --namespace ack-system
    ```
 

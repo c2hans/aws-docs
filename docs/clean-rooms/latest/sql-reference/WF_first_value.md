@@ -58,7 +58,7 @@ The following example returns the seating capacity for each venue in the VENUE t
 
 For California, `Qualcomm Stadium` has the highest number of seats (`70561`), so this name is the first value for all of the rows in the `CA` partition.
 
-```
+```sql
 select venuestate, venueseats, venuename,
 first_value(venuename)
 over(partition by venuestate

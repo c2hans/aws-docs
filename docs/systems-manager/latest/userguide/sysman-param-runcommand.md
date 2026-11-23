@@ -58,7 +58,7 @@ The following example command includes a Systems Manager parameter named `DNS-IP
 ------
 #### [ Linux & macOS ]
 
-```
+```bash
 aws ssm send-command \
     --document-name "AWS-RunShellScript" \
     --document-version "1" \
@@ -73,7 +73,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm send-command ^
     --document-name "AWS-RunPowerShellScript" ^
     --document-version "1" ^
@@ -154,7 +154,7 @@ The next example command uses a `SecureString` parameter named **SecureMerchantI
 ------
 #### [ Linux ]
 
-```
+```bash
 aws ssm send-command \
         --document-name "AWS-RunShellScript" \
         --document-version "1" \
@@ -169,7 +169,7 @@ aws ssm send-command \
 ------
 #### [ Windows ]
 
-```
+```bash
 aws ssm send-command ^
         --document-name "AWS-RunPowerShellScript" ^
         --document-version "1" ^
@@ -186,7 +186,7 @@ aws ssm send-command ^
 **Example 3: Reference a parameter in an SSM document**
 You can also reference Systems Manager parameters in the *Parameters* section of an SSM document, as shown in the following example.
 
-```
+```json
 {
    "schemaVersion":"2.0",
    "description":"Sample version 2.0 document v2",
@@ -210,7 +210,7 @@ You can also reference Systems Manager parameters in the *Parameters* section of
 
 Don't confuse the similar syntax for *local parameters* used in the `runtimeConfig` section of SSM documents with Parameter Store parameters. A local parameter isn't the same as a Systems Manager parameter. You can distinguish local parameters from Systems Manager parameters by the absence of the `ssm:` prefix.
 
-```
+```json
 "runtimeConfig":{
         "aws:runShellScript":{
             "properties":[
@@ -224,28 +224,28 @@ Don't confuse the similar syntax for *local parameters* used in the `runtimeConf
 **Note**
 SSM documents don't support references to `SecureString` parameters. This means that to use `SecureString` parameters with, for example, Run Command, you have to retrieve the parameter value before passing it to Run Command, as shown in the following examples.
 
-```
+```bash
 merchant_id=$(aws ssm get-parameters --names {{parameter-name}} --with-decryption --query Parameters[0].Value --output text)
 ```
 
-```
+```bash
 aws ssm send-command \
     --document-name AWS-RunShellScript \
     --parameters commands="test \"$merchant_id\" != \"\" && case \"$merchant_id\" in merchant-*) echo Merchant ID value retrieved ;; *) echo Unexpected merchant ID value; exit 1 ;; esac" \
     --instance-ids {{instance-id}}
 ```
 
-```
+```bash
 aws ssm send-command ^
     --document-name AWS-RunPowerShellScript ^
     --parameters commands="$merchantId = (Get-SSMParameterValue -Names {{parameter-name}} -WithDecryption $True).Parameters[0].Value; if ($merchantId -like 'merchant-*') { Write-Host 'Merchant ID value retrieved' } else { Write-Host 'Unexpected merchant ID value'; exit 1 }" ^
     --instance-ids {{instance-id}}
 ```
 
-```
+```powershell
 ${{merchantId}} = (Get-SSMParameterValue -Names {{parameter-name}} -WithDecryption $True).Parameters[0].Value
 ```
 
-```
+```powershell
 if (${{merchantId}} -like "merchant-*") { Write-Host "Merchant ID value retrieved" } else { Write-Host "Unexpected merchant ID value"; exit 1 }
 ```

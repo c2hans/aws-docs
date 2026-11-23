@@ -19,14 +19,14 @@ Required: Yes
 The unique identifier of the allocation to retrieve.
 Type: String
 Length Constraints: Fixed length of 18.
-Pattern: `mrsa-[A-Za-z0-9]{13}`
+Pattern: `mrsa-[a-z0-9]{13}`
 Required: Yes
 
- ** ProductId **
-The AWS Marketplace product identifier of the parent revenue share.
+ ** MarketplaceRevenueShareIdentifier **
+The identifier of the parent marketplace revenue share, as an ID (for example, mrs-0a1b2c3d4e5f6) or ARN.
 Type: String
-Length Constraints: Fixed length of 18.
-Pattern: `prod-[a-z0-9]{13}`
+Length Constraints: Minimum length of 17. Maximum length of 1011.
+Pattern: `(arn:[a-z-]+:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/marketplace-revenue-share/mrs-[a-z0-9]{13}|mrs-[a-z0-9]{13})`
 Required: Yes
 
  ** MarketplaceRevenueShareRevision **
@@ -41,9 +41,9 @@ Required: No
 
 The following elements are returned by the service.
 
- ** Arn **
-The Amazon Resource Name (ARN) of the allocation.
-Type: String
+ ** CreatedDate **
+The date when the allocation was created.
+Type: Timestamp
 
  ** EffectiveFrom **
 The effective start date of the allocation.
@@ -51,17 +51,39 @@ Type: String
 Length Constraints: Fixed length of 10.
 Pattern: `\d{4}-\d{2}-\d{2}`
 
+ ** EffectiveUntil **
+The effective end date of the marketplace revenue share allocation.
+Type: String
+Length Constraints: Fixed length of 10.
+Pattern: `\d{4}-\d{2}-\d{2}`
+
+ ** LastModifiedDate **
+The date when the allocation was last modified.
+Type: Timestamp
+
  ** MarketplaceRevenueShareAllocationId **
 The unique identifier of the allocation.
 Type: String
 Length Constraints: Fixed length of 18.
-Pattern: `mrsa-[A-Za-z0-9]{13}`
+Pattern: `mrsa-[a-z0-9]{13}`
 
- ** ProductId **
-The AWS Marketplace product identifier.
+ ** MarketplaceRevenueShareIdentifier **
+The identifier of the parent marketplace revenue share, in short ID form (for example, mrs-0a1b2c3d4e5f6).
 Type: String
-Length Constraints: Fixed length of 18.
-Pattern: `prod-[a-z0-9]{13}`
+Length Constraints: Fixed length of 17.
+Pattern: `mrs-[a-z0-9]{13}`
+
+ ** MarketplaceRevenueShareLatestRevision **
+The latest revision of the parent marketplace revenue share.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 19.
+Pattern: `[1-9][0-9]*`
+
+ ** MarketplaceRevenueShareRevision **
+The revision of the parent marketplace revenue share at which the marketplace revenue share allocation was retrieved.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 19.
+Pattern: `[1-9][0-9]*`
 
  ** RevenueSharePercent **
 The revenue share percentage.
@@ -74,30 +96,6 @@ The status of the allocation.
 Type: String
 Valid Values: `ACTIVE | INACTIVE`
 
- ** CreatedDate **
-The date when the allocation was created.
-Type: Timestamp
-
- ** EffectiveUntil **
-The effective end date of the allocation, or null if open-ended.
-Type: String
-Length Constraints: Fixed length of 10.
-Pattern: `\d{4}-\d{2}-\d{2}`
-
- ** LastModifiedDate **
-The date when the allocation was last modified.
-Type: Timestamp
-
- ** LatestMarketplaceRevenueShareRevision **
-The latest revision of the parent marketplace revenue share.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 19.
-Pattern: `[1-9][0-9]*`
-
- ** ProductName **
-The display name of the AWS Marketplace product.
-Type: String
-
 ## Errors
 <a name="API_prm_GetMarketplaceRevenueShareAllocation_Errors"></a>
 
@@ -105,22 +103,30 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 The request was denied due to insufficient permissions.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason for the access denial.
 HTTP Status Code: 403
 
  ** InternalServerException **
 An internal server error occurred. Retry your request.
+ ** Message **
+A message that describes the internal server error.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
 The specified resource was not found.
+ ** Message **
+A message that describes which resource was not found.
  ** Reason **
 The reason the resource was not found.
 HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was throttled due to too many requests. Retry your request.
+ ** Message **
+A message that indicates the request rate limit was exceeded.
  ** QuotaCode **
 The quota code associated with the throttling error.
  ** ServiceCode **
@@ -131,6 +137,8 @@ HTTP Status Code: 429
 The request failed validation due to invalid input parameters.
  ** FieldList **
 A list of fields that failed validation.
+ ** Message **
+A message that describes the validation failure.
  ** Reason **
 The reason for the validation failure.
 HTTP Status Code: 400

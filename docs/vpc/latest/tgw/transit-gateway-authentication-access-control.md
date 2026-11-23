@@ -29,7 +29,7 @@ The second statement uses the `ec2:CreateAction` condition key to allow users to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ The following example enables users to create and delete transit gateway route t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -139,7 +139,7 @@ Both actions support resource-level permissions on the transit gateway attachmen
 
 The following example allows NAT management only on attachments tagged `environment=prod`.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

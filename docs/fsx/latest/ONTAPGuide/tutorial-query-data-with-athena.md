@@ -23,7 +23,7 @@ Before you begin, make sure you have the following:
 
   1. Save the following trust policy as `glue-trust-policy.json`. It allows AWS Glue to assume the role.
 
-     ```
+     ```json
      {
          "Version": "2012-10-17",
          "Statement": [
@@ -38,7 +38,7 @@ Before you begin, make sure you have the following:
 
   1. Save the following permissions policy as `glue-s3-policy.json`. It grants access to the access point. Replace `{{region}}`, `{{account-id}}`, and `{{access-point-name}}` with your values.
 
-     ```
+     ```json
      {
          "Version": "2012-10-17",
          "Statement": [
@@ -168,7 +168,7 @@ A AWS Glue crawler automatically discovers the schema of your data and creates a
 
 If you already know the schema of your data, you can create the table directly in Athena using a `CREATE EXTERNAL TABLE` statement. Use the access point alias in the `LOCATION` clause.
 
-```
+```sql
 CREATE EXTERNAL TABLE fsxn_taxi_demo.yellow_taxi_trips (
     VendorID bigint,
     tpep_pickup_datetime timestamp,
@@ -204,7 +204,7 @@ Open the Athena query editor or use the AWS CLI to run SQL queries against your 
 
 **Count total trips and calculate averages**
 
-```
+```sql
 SELECT
     COUNT(*) AS total_trips,
     ROUND(AVG(trip_distance), 2) AS avg_distance_miles,
@@ -221,7 +221,7 @@ Example output:
 
 **Find the busiest pickup hours**
 
-```
+```sql
 SELECT
     HOUR(tpep_pickup_datetime) AS pickup_hour,
     COUNT(*) AS trip_count,
@@ -234,7 +234,7 @@ LIMIT 5
 
 **Find the highest-revenue pickup locations**
 
-```
+```sql
 SELECT
     PULocationID AS pickup_location,
     COUNT(*) AS trip_count,
@@ -260,7 +260,7 @@ To avoid ongoing charges, delete the resources you created in this tutorial.
 
 1. Drop the Athena tables and database.
 
-   ```
+   ```sql
    DROP TABLE IF EXISTS fsxn_taxi_demo.taxi_data;
    DROP TABLE IF EXISTS fsxn_taxi_demo.yellow_taxi_trips;
    DROP DATABASE IF EXISTS fsxn_taxi_demo CASCADE;

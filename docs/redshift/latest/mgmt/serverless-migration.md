@@ -61,7 +61,7 @@ jdbc:redshift://<{{workgroup-name}}>.<{{account-number}}>.<{{aws-region}}>.redsh
 
 To establish a connection using the Amazon Redshift Python connector with password-based authentication, use the following syntax:
 
-```
+```python
 import redshift_connector
 with redshift_connector.connect(
     host='<{{workgroup-name}}>.<{{account-number}}>.<{{aws-region}}>.redshift-serverless.amazonaws.com',
@@ -99,7 +99,7 @@ Ensure that your AWS identity has the correct IAM policy for the `redshift-serve
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ Ensure that your AWS identity has the correct IAM policy for the `redshift-serve
 
 To establish a connection using the Amazon Redshift Python connector with IAM based authentication, use `iam=true` in your code, as shown in the following syntax:
 
-```
+```python
 import redshift_connector
 with redshift_connector.connect(
     iam=True,
@@ -162,7 +162,7 @@ Following is a sample IAM policy with the permissions required to use `GetCluste
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -201,7 +201,7 @@ jdbc:redshift:iam://redshift-serverless-<{{workgroup-name}}>:<{{aws-region}}>/<{
 
 To establish a connection using the Amazon Redshift Python connector with `GetClusterCredentials`, use the following syntax:
 
-```
+```python
 import redshift_connector
 with redshift_connector.connect(
     iam=True,

@@ -68,14 +68,14 @@ To remove AWS WAF using the AWS Command Line Interface (AWS CLI), complete the f
 
 1. Set the Region and namespace of your deployment. In the following example, replace `<region>` and `<namespace>` with your values:
 
-   ```
+   ```bash
    REGION=<region>
    NAMESPACE=<namespace>
    ```
 
 1. Find the ARN of the API stage and the name and ID of the Web ACL associated with it:
 
-   ```
+   ```bash
    REST_API_ID=$(aws apigateway get-rest-apis --region $REGION \
      --query "items[?name=='${NAMESPACE}-DeepRacerIndyApi'].id" --output text)
    STAGE_ARN="arn:aws:apigateway:${REGION}::/restapis/${REST_API_ID}/stages/prod"
@@ -86,13 +86,13 @@ To remove AWS WAF using the AWS Command Line Interface (AWS CLI), complete the f
 
 1. Disassociate the Web ACL from the API stage:
 
-   ```
+   ```bash
    aws wafv2 disassociate-web-acl --region $REGION --resource-arn $STAGE_ARN
    ```
 
 1. Delete the Web ACL. In the following example, replace `<web-acl-name>` and `<web-acl-id>` with the values that the previous step returned:
 
-   ```
+   ```bash
    LOCK_TOKEN=$(aws wafv2 get-web-acl --region $REGION --scope REGIONAL \
      --name <web-acl-name> --id <web-acl-id> --query LockToken --output text)
 

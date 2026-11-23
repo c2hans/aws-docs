@@ -22,3 +22,5 @@ For unstructured data, a keyword typically has to be within 30 characters (inclu
 Keywords aren’t case sensitive. In addition, if a keyword contains a space, Macie automatically matches keyword variations that don’t contain the space or contain an underscore (\_) or a hyphen (-) instead of the space. In certain cases, Macie also expands or abbreviates a keyword to address common variations of the keyword.
 
 For a demonstration of how keywords provide context and help Macie detect specific types of sensitive data, watch the following video:
+
+[![AWS Videos](https://img.youtube.com/vi/GBaIAwLYN-o/0.jpg)](https://www.youtube.com/watch?v=GBaIAwLYN-o)

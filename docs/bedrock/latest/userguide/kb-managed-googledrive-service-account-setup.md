@@ -104,7 +104,7 @@ The service account impersonates a Google Workspace admin user when crawling con
 
 Store the credentials in an AWS Secrets Manager secret with the following key-value pairs. Copy `clientEmail` and `privateKey` from the JSON key file you downloaded in Step 4 (use the `client_email` and `private_key` values).
 
-```
+```json
 {
     "adminAccountEmail": "{{admin@your-domain.com}}",
     "clientEmail": "{{your-service-account@your-project.iam.gserviceaccount.com}}",

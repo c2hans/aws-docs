@@ -26,7 +26,7 @@ The following shows an example `RecipeAction` to use as member of an example `Re
 
 **Example in JSON**
 
-```
+```json
 {
     "Action": {
         "Operation": "FLAG_OUTLIERS",
@@ -51,7 +51,7 @@ The following shows an example `RecipeAction` to use as member of an example `Re
 
 **Example in YAML**
 
-```
+```yaml
 - Action:
   Operation: FLAG_OUTLIERS
   Parameters:

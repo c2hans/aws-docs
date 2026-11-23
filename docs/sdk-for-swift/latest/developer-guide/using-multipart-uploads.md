@@ -24,7 +24,7 @@ This example can be [found in its entirety on GitHub](https://github.com/awsdocs
 
 The first step is to call the SDK for Swift function `[S3Client.createMultipartUpload(input:)](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/createmultipartupload(input:))` with the name of the bucket to store the object into and the key (name) for the new object.
 
-```
+```swift
     /// Start a multi-part upload to Amazon S3.
     /// - Parameters:
     ///   - bucket: The name of the bucket to upload into.
@@ -67,7 +67,7 @@ The output from `createMultipartUpload(input:)` is a string which uniquely ident
 
 After creating the multipart upload, upload the numbered parts by calling `S3Client.uploadPart(input:)` once for each part. Each part (except the last) must be at least 5 MB in size.
 
-```
+```swift
             for partNumber in 1...blockCount {
                 let data: Data
                 let startIndex = UInt64(partNumber - 1) * UInt64(blockSize)
@@ -144,7 +144,7 @@ This example iterates over chunks of the file, reading the data from the source 
 
 Once all parts have been uploaded, call the `S3Client` function `completeMultipartUpload(input:)`. This takes as input the names of the bucket and key for the object, the upload ID string, and the array that matches each of the object's part numbers to the corresponding ETags, as created in the section above.
 
-```
+```swift
     /// Complete a multi-part upload using an array of `CompletedMultipartUpload`
     /// objects describing the completed parts.
     ///

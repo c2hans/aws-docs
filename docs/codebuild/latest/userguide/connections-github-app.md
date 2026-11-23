@@ -44,7 +44,7 @@ You can grant CodeBuild project IAM role access to use the GitHub tokens vended 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

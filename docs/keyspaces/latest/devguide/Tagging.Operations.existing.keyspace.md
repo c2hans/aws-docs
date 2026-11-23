@@ -27,7 +27,7 @@ The following examples show how to add tags to a keyspace in Amazon Keyspaces.
 **Add a tag to an existing keyspace using CQL**
 +
 
-  ```
+  ```sql
   ALTER KEYSPACE mykeyspace ADD TAGS {'key1':'val1', 'key2':'val2'};
   ```
 

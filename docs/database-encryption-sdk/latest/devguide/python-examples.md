@@ -25,7 +25,7 @@ By comparing these examples, you can see the work that the client helper class d
 Step 1: Create the table
 Start by creating an instance of a standard DynamoDB table with the table name.
 
-```
+```python
 table_name='test-table'
 table = boto3.resource('dynamodb').Table({{table_name}})
 ```
@@ -34,7 +34,7 @@ Step 2: Create a cryptographic materials provider
 Create an instance of the [cryptographic materials provider](crypto-materials-providers.md) (CMP) that you selected.
 This example uses the [Direct KMS Provider](direct-kms-provider.md), but you can use any compatible CMP. To create a Direct KMS Provider, specify an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys). This example uses the Amazon Resource Name (ARN) of the AWS KMS key, but you can use any valid key identifier.
 
-```
+```python
 kms_key_id='arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab'
 kms_cmp = AwsKmsCryptographicMaterialsProvider(key_id={{kms_key_id}})
 ```
@@ -43,7 +43,7 @@ Step 3: Create the attribute actions object
 [Attribute actions](DDBEC-legacy-concepts.md#legacy-attribute-actions) tell the item encryptor which actions to perform on each attribute of the item. The `AttributeActions` object in this example encrypts and signs all items except for the `test` attribute, which is ignored.
 Do not specify attribute actions for the primary key attributes when you use a client helper class. The `EncryptedTable` class signs, but never encrypts, the primary key attributes.
 
-```
+```python
 actions = AttributeActions(
     default_action=CryptoAction.ENCRYPT_AND_SIGN,
     attribute_actions={'test': CryptoAction.DO_NOTHING}
@@ -53,7 +53,7 @@ actions = AttributeActions(
 Step 4: Create the encrypted table
 Create the encrypted table using the standard table, the Direct KMS Provider, and the attribute actions. This step completes the configuration.
 
-```
+```python
 encrypted_table = EncryptedTable(
     table=table,
     materials_provider=kms_cmp,
@@ -65,7 +65,7 @@ Step 5: Put the plaintext item in the table
 When you call the `put_item` method on the `encrypted_table`, your table items are transparently encrypted, signed, and added to your DynamoDB table.
 First, define the table item.
 
-```
+```python
 plaintext_item = {
     'partition_attribute': 'value1',
     'sort_attribute': 55
@@ -77,7 +77,7 @@ plaintext_item = {
 ```
 Then, put it in the table.
 
-```
+```python
 encrypted_table.put_item(Item=plaintext_item)
 ```
 
@@ -97,7 +97,7 @@ This example uses the [Direct KMS Provider](direct-kms-provider.md), but you can
 Step 1: Create the table
 Start by creating an instance of a standard DynamoDB table resource with the table name.
 
-```
+```python
 table_name='test-table'
 table = boto3.resource('dynamodb').Table({{table_name}})
 ```
@@ -106,7 +106,7 @@ Step 2: Create a cryptographic materials provider
 Create an instance of the [cryptographic materials provider](crypto-materials-providers.md) (CMP) that you selected.
 This example uses the [Direct KMS Provider](direct-kms-provider.md), but you can use any compatible CMP. To create a Direct KMS Provider, specify an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys). This example uses the Amazon Resource Name (ARN) of the AWS KMS key, but you can use any valid key identifier.
 
-```
+```python
 kms_key_id='arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab'
 kms_cmp = AwsKmsCryptographicMaterialsProvider(key_id={{kms_key_id}})
 ```
@@ -115,7 +115,7 @@ Step 3: Use the TableInfo helper class
 To get information about the table from DynamoDB, create an instance of the [TableInfo](python-using.md#python-helpers) helper class. When you work directly with the item encryptor, you need to create a `TableInfo` instance and call its methods. The [client helper classes](python-using.md#python-helpers) do this for you.
 The `refresh_indexed_attributes` method of `TableInfo` uses the [DescribeTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeTable.html) DynamoDB operation to get real-time, accurate information about the table. This includes its primary key and its local and global secondary indexes. The caller needs to have permission to call `DescribeTable`.
 
-```
+```python
 table_info = TableInfo(name={{table_name}})
 table_info.refresh_indexed_attributes(table.meta.client)
 ```
@@ -143,7 +143,7 @@ Step 5: Create the attribute actions object
 When you interact directly with the item encryptor and your default action is `ENCRYPT_AND_SIGN`, you must specify an alternative action for the primary key. You can use the `set_index_keys` method, which uses `SIGN_ONLY` for the primary key, or it uses `DO_NOTHING` if it's the default action.
 To specify the primary key, this example uses the index keys in the [TableInfo](python-using.md#python-helpers) object, which is populated by a call to DynamoDB. This technique is safer than hard-coding primary key names.
 
-```
+```python
 actions = AttributeActions(
     default_action=CryptoAction.ENCRYPT_AND_SIGN,
     attribute_actions={'test': CryptoAction.DO_NOTHING}
@@ -154,7 +154,7 @@ actions.set_index_keys(*table_info.protected_index_keys())
 Step 6: Create the configuration for the item
 To configure the DynamoDB Encryption Client, use the objects that you just created in a [CryptoConfig](https://aws-dynamodb-encryption-python.readthedocs.io/en/latest/lib/encrypted/config.html) configuration for the table item. The client helper classes create the CryptoConfig for you.
 
-```
+```python
 crypto_config = CryptoConfig(
     materials_provider=kms_cmp,
     encryption_context=encryption_context,
@@ -167,7 +167,7 @@ This step encrypts and signs the item, but it doesn't put it in the DynamoDB tab
 When you use a client helper class, your items are transparently encrypted and signed, and then added to your DynamoDB table when you call the `put_item` method of the helper class. When you use the item encryptor directly, the encrypt and put actions are independent.
 First, create a plaintext item.
 
-```
+```python
 plaintext_item = {
     'partition_attribute': 'value1',
     'sort_key': 55,
@@ -179,20 +179,20 @@ plaintext_item = {
 ```
 Then, encrypt and sign it. The `encrypt_python_item` method requires the `CryptoConfig` configuration object.
 
-```
+```python
 encrypted_item = encrypt_python_item(plaintext_item, crypto_config)
 ```
 
 Step 8: Put the item in the table
 This step puts the encrypted and signed item in the DynamoDB table.
 
-```
+```python
 table.put_item(Item=encrypted_item)
 ```
 
 To view the encrypted item, call the `get_item` method on the original `table` object, instead of the `encrypted_table` object. It gets the item from the DynamoDB table without verifying and decrypting it.
 
-```
+```python
 encrypted_item = table.get_item(Key=partition_key)['Item']
 ```
 

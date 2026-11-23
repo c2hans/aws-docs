@@ -89,7 +89,7 @@ Use the [register-targets](https://docs.aws.amazon.com/cli/latest/reference/elbv
 **To create a target group**
 Define a resource of type [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html). The following example creates a target group with the TCP protocol, targets registered by IP address, one tag, default health check settings, and two registered targets.
 
-```
+```yaml
 Resources:
   myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'

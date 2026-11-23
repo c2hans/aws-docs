@@ -28,7 +28,7 @@ To set up the service roles to enable Amazon Managed Service for Prometheus to i
 
 1. Create a file named `createIRSA-AMPIngest.sh` with the following content. Replace `<my_amazon_eks_clustername>` with the name of your cluster, and replace `<my_prometheus_namespace>` with your Prometheus namespace.
 
-   ```
+   ```bash
    #!/bin/bash -e
    CLUSTER_NAME=<my_amazon_eks_clustername>
    SERVICE_ACCOUNT_NAMESPACE=<my_prometheus_namespace>
@@ -152,7 +152,7 @@ To set up the IAM role for service account (service role) to enable the querying
 
 1. Create a file named `createIRSA-AMPQuery.sh` with the following content. Replace `<my_amazon_eks_clustername>` with the name of your cluster, and replace <my\_prometheus\_namespace> with your Prometheus namespace.
 
-   ```
+   ```bash
    #!/bin/bash -e
    CLUSTER_NAME=<my_amazon_eks_clustername>
    SERVICE_ACCOUNT_NAMESPACE=<my_prometheus_namespace>

@@ -11,7 +11,7 @@ Assigns an ordinal number of the current row within a group of rows, counting fr
 ## Syntax
 <a name="r_WF_ROW_NUMBER-synopsis"></a>
 
-```
+```sql
 ROW_NUMBER() OVER(
   [ PARTITION BY expr_list ]
   [ ORDER BY order_list ]
@@ -46,7 +46,7 @@ The following examples use the `WINSALES` table. For a description of the `WINSA
 
 The following example orders the table by QTY (in ascending order), then assigns a row number to each row. The results are sorted after the window function results are applied.
 
-```
+```sql
 SELECT salesid, sellerid, qty,
 ROW_NUMBER() OVER(
    ORDER BY qty ASC) AS row
@@ -70,7 +70,7 @@ salesid   sellerid   qty   row
 
 The following example partitions the table by SELLERID and orders each partition by QTY (in ascending order), then assigns a row number to each row. The results are sorted after the window function results are applied.
 
-```
+```sql
 SELECT salesid, sellerid, qty,
 ROW_NUMBER() OVER(
   PARTITION BY sellerid
@@ -95,7 +95,7 @@ ORDER BY 2,4;
 
 The following example shows the results when not using the optional clauses.
 
-```
+```sql
 SELECT salesid, sellerid, qty, ROW_NUMBER() OVER() AS row
 FROM winsales
 ORDER BY 4,1;

@@ -14,7 +14,7 @@ The following are examples of how to construct the different types of loop actio
 ------
 #### [ do while ]
 
-```
+```yaml
 name: RepeatMyLambdaFunctionUntilOutputIsReturned
 action: aws:loop
 inputs:
@@ -36,7 +36,7 @@ inputs:
 ------
 #### [ for each ]
 
-```
+```yaml
 name: stopAllInstancesWithWaitTime
 action: aws:loop
 inputs:

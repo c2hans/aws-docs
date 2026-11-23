@@ -75,7 +75,7 @@ The SDK doesn't support the `legacy` retry mode. If you pass `retry_mode="legacy
 
 The two settings that control retry behavior are the retry mode and the maximum number of attempts. If you set neither, `resolve()` sets `retry_mode` to `standard` and leaves `max_attempts` unset:
 
-```
+```python
 config = BedrockRuntimeConfig.resolve()
 
 print(config.retry_mode)     # "standard"
@@ -89,14 +89,14 @@ The SDK resolves each setting separately, in the order that [Resolution order](c
 
 You can set both in the environment:
 
-```
+```bash
 export AWS_RETRY_MODE=adaptive
 export AWS_MAX_ATTEMPTS=5
 ```
 
 Or in the shared config file:
 
-```
+```ini
 # ~/.aws/config
 [default]
 retry_mode = adaptive
@@ -105,7 +105,7 @@ max_attempts = 5
 
 Or in code, when you resolve a client configuration:
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 
 config = BedrockRuntimeConfig.resolve(
@@ -122,13 +122,13 @@ with BedrockRuntimeClient(config=config) as client:
 
 `max_attempts` counts total attempts, not retries. Setting it to `1` turns off retries and still makes the original request:
 
-```
+```python
 config = BedrockRuntimeConfig.resolve(max_attempts=1)
 ```
 
 If you need behavior that the built-in modes don't provide, you can supply your own retry strategy object. A strategy passed this way takes precedence. The SDK ignores any `retry_mode` or `max_attempts` setting.
 
-```
+```python
 from smithy_core.retries import SimpleRetryStrategy
 
 config = BedrockRuntimeConfig.resolve(

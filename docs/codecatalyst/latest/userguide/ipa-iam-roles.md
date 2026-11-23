@@ -94,7 +94,7 @@ The trust role for the policy allows CodeCatalyst to assume the role.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -208,7 +208,7 @@ This role gives permissions to do the following:
 
 This role uses the following policy:
 
-```
+```yaml
 {"Action": [
         "cloudformation:CreateStack",
         "cloudformation:DeleteStack",
@@ -277,7 +277,7 @@ This role uses the following policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -490,7 +490,7 @@ Follow these steps to create these roles in IAM.
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -574,7 +574,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -687,7 +687,7 @@ You can choose to create and use AWS CloudFormation templates to create the poli
 
 The following example template creates a deploy action role and policy.
 
-```
+```yaml
 Parameters:
   CodeCatalystAccountId:
     Type: String
@@ -760,7 +760,7 @@ Follow these steps to create the role in IAM.
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -866,7 +866,7 @@ Follow these steps to create the roles in IAM.
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -886,7 +886,7 @@ Follow these steps to create the roles in IAM.
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 
@@ -982,7 +982,7 @@ The first time the role is used to run workflow actions, use the wildcard in the
 **Note**
 The first time the role is used to run workflow actions, use the wildcard in the resource policy statement and then scope down the policy with the resource name after it is available.
 
-      ```
+      ```yaml
       "Resource": "*"
       ```
 

@@ -13,7 +13,7 @@ The following example uses [policy variables](https://docs.aws.amazon.com/IAM/la
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -28,7 +28,7 @@ The following code example shows how to get started using SageMaker AI.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sagemaker#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -76,7 +76,7 @@ The following code example shows how to use `CreatePipeline`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Create a pipeline from the example pipeline JSON.
     public static void setupPipeline(SageMakerClient sageMakerClient, String filePath, String roleArn,
             String functionArn, String pipelineName) {
@@ -124,7 +124,7 @@ The following code example shows how to use `DeletePipeline`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Delete a SageMaker pipeline by name.
     public static void deletePipeline(SageMakerClient sageMakerClient, String pipelineName) {
         DeletePipelineRequest pipelineRequest = DeletePipelineRequest.builder()
@@ -145,7 +145,7 @@ The following code example shows how to use `DescribePipelineExecution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Check the status of a pipeline execution.
     public static void waitForPipelineExecution(SageMakerClient sageMakerClient, String executionArn)
             throws InterruptedException {
@@ -176,7 +176,7 @@ The following code example shows how to use `StartPipelineExecution`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
     // Start a pipeline run with job configurations.
     public static String executePipeline(SageMakerClient sageMakerClient, String bucketName, String queueUrl,
             String roleArn, String pipelineName) {
@@ -287,7 +287,7 @@ For more information, see [Create and run SageMaker pipelines using AWS SDKs on 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/workflow_sagemaker_pipes#code-examples).
 
-```
+```java
 public class SagemakerWorkflow {
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
     private static String eventSourceMapping = "";

@@ -152,7 +152,7 @@ To associate your project for inference requests, provide the project ID when cr
 ------
 #### [ cURL ]
 
-```
+```bash
 curl -X POST $OPENAI_BASE_URL/responses \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
@@ -166,7 +166,7 @@ curl -X POST $OPENAI_BASE_URL/responses \
 ------
 #### [ Python ]
 
-```
+```python
 from openai import OpenAI
 client = OpenAI(project="proj_5d5ykleja6cwpirysbb7")
 ```
@@ -354,7 +354,7 @@ Archived projects cannot be used for new inference requests, but historical data
 ------
 #### [ Responses API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(project="proj_abc123")
@@ -369,7 +369,7 @@ print(response)
 ------
 #### [ Chat Completions API ]
 
-```
+```python
 from openai import OpenAI
 
 client = OpenAI(project="proj_abc123")

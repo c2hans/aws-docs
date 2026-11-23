@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-inter
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText":"910 Beach Avenue, Vancouver",
     "AdditionalFeatures": ["Intersections"]
@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-inter
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -157,7 +157,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-inter
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -170,7 +170,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places geocode --key ${YourKey} --query-text "910 Beach Avenue, Vancouver" --additional-features "Intersections"
 ```
 

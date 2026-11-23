@@ -8,7 +8,7 @@ CloudFormation enables you to create and provision AWS infrastructure deployment
 
 The following is a CloudFormation YAML template for configuring a VPC to use AWS CodeBuild. This file is also available in [samples.zip](./samples/samples.zip).
 
-```
+```yaml
 Description:  This template deploys a VPC, with a pair of public and private subnets spread
   across two Availability Zones. It deploys an internet gateway, with a default
   route on the public subnets. It deploys a pair of NAT gateways (one in each AZ),

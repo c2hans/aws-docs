@@ -34,14 +34,14 @@ You can't delete a service that has any service instance with an attached compon
 
 Command:
 
-```
+```sh
 $ aws proton delete-service \
     --name "{{simple-svc}}"
 ```
 
 Response:
 
-```
+```json
 {
     "service": {
         "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc",

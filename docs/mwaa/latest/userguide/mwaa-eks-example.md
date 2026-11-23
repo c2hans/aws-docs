@@ -179,7 +179,7 @@ Create a new role for the Amazon MWAA environment using the steps in [Amazon MWA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -282,7 +282,7 @@ After you create role, edit your Amazon MWAA environment to use the role you cre
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

@@ -13,7 +13,7 @@ In this step, you use a pre-configured certificate to enroll a user with adminis
 
 Run the following command to copy the `managedblockchain-tls-chain.pem` to the `/home/ec2-user` directory. Replace `{{MyRegion}}` with the AWS Region you are using—for example, `us-east-1`.
 
-```
+```bash
 aws s3 cp s3://{{MyRegion}}.managedblockchain/etc/managedblockchain-tls-chain.pem  /home/ec2-user/managedblockchain-tls-chain.pem
 ```
 
@@ -21,7 +21,7 @@ If the command fails with a permissions error, ensure that a service role associ
 
 Run the following command to test that you copied the contents to the file correctly:
 
-```
+```bash
 openssl x509 -noout -text -in /home/ec2-user/managedblockchain-tls-chain.pem
 ```
 
@@ -34,7 +34,7 @@ AMB Access registers the user identity that you specified when you created the m
 
 Use the `get-member` command to get the CA endpoint for your membership as shown in the following example. Replace the values of `--network-id` and `--member-id` with the values returned in [Step 1: Create the Network and First Member](get-started-create-network.md).
 
-```
+```bash
 aws managedblockchain get-member \
 --network-id {{n-MWY63ZJZU5HGNCMBQER7IN6OIU}} \
 --member-id {{m-K46ICRRXJRCGRNNS4ES4XUUS5A}}
@@ -44,7 +44,7 @@ The command returns information about the initial member that you created in the
 
 The command returns output similar to the following:
 
-```
+```json
 {
     "Member": {
         "NetworkId": "n-MWY63ZJZU5HGNCMBQER7IN6OIU",
@@ -66,7 +66,7 @@ The command returns output similar to the following:
 
 Use the CA endpoint, administrator profile, and the certificate file to enroll the member administrator using the `fabric-ca-client enroll` command, as shown in the following example:
 
-```
+```bash
 fabric-ca-client enroll \
 -u 'https://${{{AdminUsername}}}:${{{AdminPassword}}}@$CASERVICEENDPOINT' \
 --tls.certfiles /home/ec2-user/managedblockchain-tls-chain.pem -M /home/ec2-user/admin-msp
@@ -81,7 +81,7 @@ Always use variables in your code to pass user credentials. For more information
 
 An example command with fictitious administrator name, password, and endpoint is shown in the following example:
 
-```
+```bash
 fabric-ca-client enroll \
 -u https://Example-AdminUser:Example-Password123@ca.m-K46ICRRXJRCGRNNS4ES4XUUS5A.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{us-east-1}}.amazonaws.com:30002 \
 --tls.certfiles /home/ec2-user/managedblockchain-tls-chain.pem -M /home/ec2-user/admin-msp
@@ -89,7 +89,7 @@ fabric-ca-client enroll \
 
 The command returns output similar to the following:
 
-```
+```bash
 2018/11/16 02:21:40 [INFO] Created a default configuration file at /home/ec2-user/.fabric-ca-client/fabric-ca-client-config.yaml
 2018/11/16 02:21:40 [INFO] TLS Enabled
 2018/11/16 02:21:40 [INFO] generating key: &{A:ecdsa S:256}
@@ -106,6 +106,6 @@ It may take a minute or two after you enroll for you to be able to use your admi
 
 In Hyperledger Fabric, the Membership Service Provider (MSP) identifies which root CAs and intermediate CAs are trusted to define the members of a trust domain. Certificates for the administrator's MSP are in `/home/ec2-user/admin-msp` in this tutorial. Because this MSP is for the member administrator, copy the certificates from `signcerts` to `admincerts` as shown in the following example. The example assumes you are in the `/home/ec2-user` directory when running the command.
 
-```
+```bash
 cp -r /home/ec2-user/admin-msp/signcerts admin-msp/admincerts
 ```

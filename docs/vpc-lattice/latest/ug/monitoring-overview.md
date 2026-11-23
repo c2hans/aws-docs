@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-overvie
 
 # Monitoring Amazon VPC Lattice
 
-Use the features in this section to monitor your Amazon VPC Lattice service networks, services, target groups, and VPC connections.
+Use the features in this section to monitor your Amazon VPC Lattice service networks, services, target groups, resource gateways, resource configurations, and VPC connections.
 
 **Topics**
 + [CloudWatch metrics for Amazon VPC Lattice](monitoring-cloudwatch.md)

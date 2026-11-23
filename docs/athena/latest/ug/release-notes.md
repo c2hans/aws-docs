@@ -21,6 +21,11 @@ Describes Amazon Athena features, improvements, and bug fixes by release date.
 ## Athena release notes for 2026
 <a name="release-notes-2026"></a>
 
+### November 20, 2026
+<a name="release-note-2026-11-20"></a>
+
+AWS releases Amazon Athena ODBC driver version 2.6.0.0. This release adds support for all ODBC interval C types and fixes interval reads, metadata sizes, and SQLSTATEs to follow the ODBC specification. Some interval reads return different results. Review the interval read changes in the release notes before you upgrade. This driver version is available in all AWS Regions where Athena is supported. For more information about this version of the driver, see [Amazon Athena ODBC 2.x release notes](odbc-v2-driver-release-notes.md). To download the ODBC 2.x driver, see [ODBC 2.x driver download](odbc-v2-driver.md#odbc-v2-driver-download).
+
 ### November 6, 2026
 <a name="release-note-2026-11-06"></a>
 

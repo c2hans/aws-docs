@@ -91,7 +91,7 @@ In `syncSchedule`, specify exactly one of the following frequency fields:
 
 The following example shows a `dataSourceConfiguration` that schedules a weekly sync on Mondays:
 
-```
+```json
 "dataSourceConfiguration": {
     "type": "MANAGED_KNOWLEDGE_BASE_CONNECTOR",
     "managedKnowledgeBaseConnectorConfiguration": {
@@ -110,7 +110,7 @@ The following example shows a `dataSourceConfiguration` that schedules a weekly 
 
 To sync on the 15th of each month, replace the `syncSchedule` value with the following:
 
-```
+```json
 "syncSchedule": {
     "monthly": {
         "dayOfMonth": {

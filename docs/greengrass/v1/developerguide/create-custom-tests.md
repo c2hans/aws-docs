@@ -91,7 +91,7 @@ Contains information about a test case. You must create a `test.json` file for e
 
 1. In the `MyTestSuite_1.0.0/suite` folder, create a `suite.json` file with the following structure:
 
-   ```
+   ```json
    {
        "id": "MyTestSuite_1.0.0",
        "title": "My Test Suite",
@@ -102,7 +102,7 @@ Contains information about a test case. You must create a `test.json` file for e
 
 1. In the `MyTestSuite_1.0.0/myTestGroup` folder, create a `group.json` file with the following structure:
 
-   ```
+   ```json
    {
        "id": "MyTestGroup",
        "title": "My Test Group",
@@ -113,7 +113,7 @@ Contains information about a test case. You must create a `test.json` file for e
 
 1. In the `MyTestSuite_1.0.0/myTestGroup/myTestCase` folder, create a `test.json` file with the following structure:
 
-   ```
+   ```json
    {
        "id": "MyTestCase",
        "title": "My Test Case",
@@ -177,7 +177,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
    In the `MyTestSuite_1.0.0/suite/myTestGroup/myTestCase` folder, create a `myTestCase.py` file with the following content:
 
-   ```
+   ```python
    from idt_client import *
 
    def main():
@@ -192,7 +192,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
    1. Run an SSH command on the device under test.
 
-      ```
+      ```python
       from idt_client import *
 
       def main():
@@ -214,7 +214,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
    1. Send the test result to IDT.
 
-      ```
+      ```python
       from idt_client import *
 
       def main():
@@ -245,7 +245,7 @@ Test case executables contain the test logic that you want to run. A test suite 
 
 Configure your device information for IDT to run the test. You must update the `device.json` template located in the `{{<device-tester-extract-location>}}/configs` folder with the following information.
 
-```
+```json
 [
   {
     "id": "pool",

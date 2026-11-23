@@ -18,7 +18,7 @@ The following program is an example of using Amazon Kendra in a Java program. Th
 
 1. When the data source is active, it synchronizes the index with the contents of the data source using the [StartDataSourceSyncJob](https://docs.aws.amazon.com/kendra/latest/APIReference/API_StartDataSourceSyncJob.html) operation.
 
-```
+```java
 package com.amazonaws.kendra;
 
 import java.util.concurrent.TimeUnit;

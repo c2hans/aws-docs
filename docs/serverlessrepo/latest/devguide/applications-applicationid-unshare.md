@@ -62,7 +62,7 @@ This operation can be called only from the organization's management account.
 #### POST schema
 <a name="applications-applicationid-unshare-request-body-post-example"></a>
 
-```
+```json
 {
   "organizationId": "string"
 }
@@ -74,7 +74,7 @@ This operation can be called only from the organization's management account.
 #### BadRequestException schema
 <a name="applications-applicationid-unshare-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -84,7 +84,7 @@ This operation can be called only from the organization's management account.
 #### ForbiddenException schema
 <a name="applications-applicationid-unshare-response-body-forbiddenexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -94,7 +94,7 @@ This operation can be called only from the organization's management account.
 #### NotFoundException schema
 <a name="applications-applicationid-unshare-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -104,7 +104,7 @@ This operation can be called only from the organization's management account.
 #### TooManyRequestsException schema
 <a name="applications-applicationid-unshare-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -114,7 +114,7 @@ This operation can be called only from the organization's management account.
 #### InternalServerErrorException schema
 <a name="applications-applicationid-unshare-response-body-internalservererrorexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"

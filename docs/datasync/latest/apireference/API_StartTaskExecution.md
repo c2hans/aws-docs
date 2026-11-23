@@ -191,7 +191,7 @@ HTTP Status Code: 400
 
 The following example starts a task execution using the default options for the specified task.
 
-```
+```json
 {
     "OverrideOptions": {
         "Atime": "BEST_EFFORT",
@@ -213,7 +213,7 @@ The following example starts a task execution using the default options for the 
 
 This example illustrates one usage of StartTaskExecution.
 
-```
+```json
 {
   "TaskExecutionArn": "arn:aws:datasync:us-east-2:111222333444:task/task-08de6e6697796f026/execution/exec-04ce9d516d69bd52f"
 }

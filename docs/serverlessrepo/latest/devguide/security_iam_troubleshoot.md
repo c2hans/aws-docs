@@ -19,7 +19,7 @@ If the AWS Management Console tells you that you're not authorized to perform an
 
 The following example error occurs when the `mateojackson` IAM user tries to use the console to view details about an application but doesn't have `serverlessrepo:{{GetApplication}}` permissions.
 
-```
+```text
 User: arn:aws:iam::123456789012:user/mateojackson is not authorized to perform: serverlessrepo:{{GetApplication}} on resource: {{my-example-application}}
 ```
 

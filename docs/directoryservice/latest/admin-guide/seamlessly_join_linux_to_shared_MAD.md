@@ -79,7 +79,7 @@ The following steps allow you to create the resource policies to enable users to
 
 ****
 
-     ```
+     ```json
      {
        "Version":"2012-10-17",
        "Statement": [
@@ -109,7 +109,7 @@ The following steps allow you to create the resource policies to enable users to
 
 1. The following key policy statement allows `ApplicationRole` in `Account 2` to use the KMS key in `Account 1` to decrypt the secret in `Account 1`. To use this statement, add it to the key policy for your KMS key. For more information, see [Changing a key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html).
 
-   ```
+   ```json
    {
    {
      "Effect": "Allow",
@@ -139,7 +139,7 @@ The following steps allow you to create the resource policies to enable users to
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

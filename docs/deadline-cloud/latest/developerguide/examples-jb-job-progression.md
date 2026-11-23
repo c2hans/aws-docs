@@ -8,19 +8,19 @@ The [job\_dev\_progression](https://github.com/aws-deadline/deadline-cloud-sampl
 
 Submit the first stage to your farm:
 
-```
+```bash
 deadline bundle submit stage_1_self_contained_template
 ```
 
 You can also run jobs locally for development with the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli) on the GitHub website.
 
-```
+```bash
 openjd run stage_1_self_contained_template/template.yaml
 ```
 
 To use a queue environment locally to provide conda packages, pass the `--environment` option:
 
-```
+```bash
 openjd run --environment ../../queue_environments/conda_queue_env_from_console.yaml \
     stage_1_self_contained_template/template.yaml
 ```

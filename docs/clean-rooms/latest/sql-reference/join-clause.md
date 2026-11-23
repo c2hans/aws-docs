@@ -47,7 +47,7 @@ An optional clause that can be used to filter the result set further, based on a
 
 The following example is a join between two tables with the USING clause. In this case, the columns listid and eventid are used as the join columns. The results are limited to five rows.
 
-```
+```sql
 select listid, listing.sellerid, eventid, listing.dateid, numtickets
 from listing join sales
 using (listid, eventid)

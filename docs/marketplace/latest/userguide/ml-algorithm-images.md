@@ -108,7 +108,7 @@ The workflow for creating a SageMaker AI algorithm for AWS Marketplace includes 
 
  **`./train`**
 
-```
+```bash
 #!/bin/bash
 
 # Run your training program here
@@ -125,7 +125,7 @@ The workflow for creating a SageMaker AI algorithm for AWS Marketplace includes 
 
  **`./Dockerfile`**
 
-```
+```docker
 FROM ubuntu:18.04
 
 # Add training dependencies and programs
@@ -165,7 +165,7 @@ ENV PATH=/opt/program:${PATH}
 
  Run the Docker command in the build context to build and tag the image. This example uses the tag `my-training-image`.
 
-```
+```bash
 sudo docker build --tag my-training-image ./
 ```
 
@@ -181,7 +181,7 @@ Successfully tagged my-training-image:latest
 
  After that has completed, test the image locally as shown in the following example.
 
-```
+```bash
 sudo docker run \
   --rm \
   --volume '<path_to_input>:/opt/ml/input:ro' \
@@ -249,7 +249,7 @@ The following example uses a web service, [Flask](https://pypi.org/project/Flask
 
  **`./web_app_serve.py`**
 
-```
+```py
 # Import modules
 import json
 import re
@@ -293,7 +293,7 @@ def endpoint_invocations():
 
  **`./serve`**
 
-```
+```bash
 #!/bin/bash
 
 # Run flask server on port 8080 for SageMaker AI
@@ -307,7 +307,7 @@ flask run --host 0.0.0.0 --port 8080
 
  **`./Dockerfile`**
 
-```
+```docker
 FROM ubuntu:18.04
 
 # Specify encoding
@@ -363,7 +363,7 @@ ENV PATH=/opt/program:${PATH}
 
  Run the Docker command to build and tag the image. This example uses the tag `my-inference-image`.
 
-```
+```bash
 sudo docker build --tag my-inference-image ./
 ```
 
@@ -379,7 +379,7 @@ Successfully tagged my-inference-image:latest
 
  After your build has completed, you can test the image locally.
 
-```
+```bash
 sudo docker run \
   --rm \
   --publish 8080:8080/tcp \
@@ -408,7 +408,7 @@ sudo docker run \
 
  Run the following command to test the endpoint and include the response header.
 
-```
+```bash
 curl --include http://127.0.0.1:8080/ping
 ```
 
@@ -429,7 +429,7 @@ Date: Mon, 21 Oct 2019 06:58:54 GMT
 
  Run the following command to test the inference endpoint.
 
-```
+```bash
 curl \
   --request POST \
   --data "hello world" \
@@ -438,7 +438,7 @@ curl \
 
  Example output is shown in the following example..
 
-```
+```bash
 {"prediction": "a", "text": "hello world"}
 ```
 
@@ -449,7 +449,7 @@ curl \
 
  To stop the container, run the following command.
 
-```
+```bash
 sudo docker container stop my-inference-container
 ```
 

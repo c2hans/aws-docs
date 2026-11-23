@@ -11,7 +11,7 @@ Support for `LoginNodes` is added in AWS ParallelCluster version 3.7.0.
 
 **(Optional)** Specifies the configuration for the login nodes pool.
 
-```
+```yaml
 LoginNodes:
   Pools:
     - Name: {{string}}
@@ -76,7 +76,7 @@ LoginNodes:
 
 Defines groups of login nodes that have the same resource configuration. Starting with AWS ParallelCluster 3.11.0 up to 10 pools can be specified.
 
-```
+```yaml
 Pools:
   - Name: {{string}}
     Count: {{integer}}
@@ -154,7 +154,7 @@ The triggering event involves interactions between multiple AWS services. Someti
 `Image` (**Optional**)
 Defines the image configuration for the login nodes.
 
-```
+```yaml
 Image:
   CustomAmi: {{String}}
 ```
@@ -165,7 +165,7 @@ Specifies the custom AMI used to provision the login nodes. If not specified, th
 `Ssh` (**Optional**)
 Defines the `ssh` configuration for the login nodes.
 
-```
+```yaml
 Ssh:
   KeyName: {{string}}
   AllowedIps: {{string}}
@@ -182,7 +182,7 @@ Support for AllowedIps for login nodes is added in AWS ParallelCluster version 3
 
 `Networking` (**Required**)
 
-```
+```yaml
 Networking:
   SubnetIds:
     - {{string}}
@@ -205,7 +205,7 @@ A list of additional security groups to use for the login nodes pool.
 `Dcv` (**Optional**)
 Defines configuration settings for the Amazon DCV server that runs on the [login nodes](LoginNodes-v3.md). For more information, see [Connect to the head and login nodes through Amazon DCV](dcv-v3.md)
 
-```
+```yaml
 Dcv:
   Enabled: {{boolean}}
   Port: {{integer}}
@@ -228,7 +228,7 @@ Specifies the CIDR-formatted IP range for connections to Amazon DCV. This settin
 `CustomActions` (**Optional**)
 Specifies the custom scripts to run on the login nodes.
 
-```
+```yaml
 CustomActions:
   OnNodeStart:
     Sequence:
@@ -301,7 +301,7 @@ AWS ParallelCluster doesn't support including both a single script and `Sequence
 `Iam` (**Optional**)
 Specifies either an instance role or an instance profile to use on the login nodes to override the default instance role or instance profile for the cluster.
 
-```
+```yaml
 Iam:
   InstanceRole: {{string}}
   InstanceProfile: {{string}}
@@ -317,7 +317,7 @@ Specifies an instance role to override the default login node instance role. You
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 `AdditionalIamPolicies` (**Optional**)
 
-```
+```yaml
 AdditionalIamPolicies:
   - Policy: {{string}}
 ```

@@ -100,7 +100,7 @@ aws --region us-west-2 globalaccelerator describe-custom-routing-accelerator
          --accelerator-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh
 ```
 
-```
+```json
 {
     "Accelerator": {
         "AcceleratorArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",

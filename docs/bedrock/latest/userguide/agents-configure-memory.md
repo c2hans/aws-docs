@@ -50,7 +50,7 @@ In the Amazon Bedrock API, you specify the `memoryConfiguration` when you send a
 
 The following shows the general format of the `memoryConfiguration`:
 
-```
+```json
 "memoryConfiguration": {
 "enabledMemoryTypes": [ "SESSION_SUMMARY" ],
 "storageDays":{{30}},

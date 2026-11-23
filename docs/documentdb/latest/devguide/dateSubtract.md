@@ -64,7 +64,7 @@ To view a code example for using the `$dateSubtract` command, choose the tab for
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function example() {
@@ -97,7 +97,7 @@ example();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 from bson.date_time import datetime
 

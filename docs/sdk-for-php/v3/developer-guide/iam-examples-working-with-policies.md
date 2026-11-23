@@ -31,7 +31,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -40,7 +40,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -88,7 +88,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -97,7 +97,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -140,7 +140,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -149,7 +149,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -192,7 +192,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -201,7 +201,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -227,7 +227,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -236,7 +236,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -262,7 +262,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -271,7 +271,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -297,7 +297,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -306,7 +306,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -330,7 +330,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -339,7 +339,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -365,7 +365,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -374,7 +374,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -400,7 +400,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -409,7 +409,7 @@ use Aws\Iam\IamClient;
 
  **Sample Code**
 
-```
+```php
 $client = new IamClient([
     'profile' => 'default',
     'region' => 'us-west-2',

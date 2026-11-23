@@ -34,7 +34,7 @@ You can use the AWS Systems Manager console to end a session in your account.
 
 To end a session using the AWS CLI, run the following command. Replace {{session-id}} with your own information.
 
-```
+```sh
 aws ssm terminate-session \
     --session-id {{session-id}}
 ```

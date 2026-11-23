@@ -16,7 +16,7 @@ When using global endpoints you have to have a Route 53 health check to monitor
 
 Use the following template to define your Route 53 health check.
 
-```
+```yaml
 Description: |-
   Global endpoints health check that will fail when the average Amazon EventBridge
   latency is above 30 seconds for a duration of 5 minutes. Note, missing data will

@@ -66,7 +66,7 @@ For detailed best practices for using TLS with .NET Framework, see the Microsoft
 
 Windows PowerShell 2.0 through 5.x run on .NET Framework. You can verify which .NET runtime (2.0 or 4.0) is being used by PowerShell by using the following command.
 
-```
+```sh
 $PSVersionTable.CLRVersion
 ```
 + When using .NET Runtime 2.0, follow the instructions provided earlier regarding the AWS SDK for .NET and .NET Framework 3.5.
@@ -78,7 +78,7 @@ On August 15th, 2024, the AWS SDK for .NET ended support for .NET Framework 3.5 
 
 PowerShell 6.0 and newer run on .NET. You can verify which version of .NET is being used by running the following command.
 
-```
+```sh
 [System.Reflection.Assembly]::GetEntryAssembly().GetCustomAttributes([System.Runtime.Versioning.TargetFrameworkAttribute], $true).FrameworkName
 ```
 

@@ -90,7 +90,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 **Note**
  The size of this file must be less than 100 MB.
 
-   ```
+   ```bash
    {"GroupId":"{{groupId1}}", "GroupVersionId":"{{groupVersionId1}}", "DeploymentType":"NewDeployment"}
    {"GroupId":"{{groupId2}}", "GroupVersionId":"{{groupVersionId2}}", "DeploymentType":"NewDeployment"}
    {"GroupId":"{{groupId3}}", "GroupVersionId":"{{groupVersionId3}}", "DeploymentType":"NewDeployment"}
@@ -121,7 +121,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -143,7 +143,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 **Note**
  This policy must have a resource for each group or group version in your bulk deployment input file to be deployed by AWS IoT Greengrass. To allow access to all groups, for `Resource`, specify an asterisk:
 
-   ```
+   ```bash
    "Resource": ["*"]
    ```
 
@@ -156,7 +156,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -191,7 +191,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -228,7 +228,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "examplePolicy",
@@ -262,7 +262,7 @@ aws s3api get-bucket-policy --bucket {{amzn-s3-demo-bucket}}
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -288,7 +288,7 @@ aws s3api get-bucket-policy --bucket {{amzn-s3-demo-bucket}}
 
     We recommend that you include an `X-Amzn-Client-Token` token in every **StartBulkDeployment** request. These requests are idempotent with respect to the token and the request parameters. This token can be any unique, case-sensitive string of up to 64 ASCII characters.
 
-   ```
+   ```bash
    aws greengrass start-bulk-deployment --cli-input-json "{
              "InputFileUri":"{{URI of file in S3 bucket}}",
              "ExecutionRoleArn":"{{ARN of execution role}}",
@@ -310,13 +310,13 @@ Although bulk deployment operations are not currently supported, you can create 
 
 1.  Use the following command to check the status of your bulk deployment.
 
-   ```
+   ```bash
    aws greengrass get-bulk-deployment-status --bulk-deployment-id {{1234567}}
    ```
 
     The command should return a successful status code of `200` in addition to a JSON payload of information:
 
-   ```
+   ```bash
     {
      "BulkDeploymentStatus": {{Running}},
      "Statistics": {
@@ -378,13 +378,13 @@ aws greengrass list-bulk-deployments
 
  Now call the **ListBulkDeploymentDetailedReports** command to gather detailed information about each deployment.
 
-```
+```bash
 aws greengrass list-bulk-deployment-detailed-reports --bulk-deployment-id {{1234567}}
 ```
 
  The command should return a successful status code of `200` along with a JSON payload of information:
 
-```
+```bash
 {
   "BulkDeploymentResults": [
     {

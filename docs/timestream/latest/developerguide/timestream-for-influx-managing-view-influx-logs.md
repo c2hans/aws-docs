@@ -16,7 +16,7 @@ To view InfluxDB logs generated from the Instance you have created through Times
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "PolicyForInfluxLogs",
@@ -38,7 +38,7 @@ To view InfluxDB logs generated from the Instance you have created through Times
 
   Here is the command you can call to make an instance to receive influx logs:
 
-  ```
+  ```bash
   aws timestream-influxdb create-db-instance \
       --name myinfluxDbinstance \
       --allocated-storage 400 \
@@ -52,7 +52,7 @@ To view InfluxDB logs generated from the Instance you have created through Times
 
   Here is the format of this parameter.
 
-  ```
+  ```json
   -- log-delivery-configuration
   {
       "S3Configuration": {

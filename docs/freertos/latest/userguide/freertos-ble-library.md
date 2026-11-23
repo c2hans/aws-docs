@@ -136,7 +136,7 @@ Here are the supported modes, and their associated properties:
 
 **Mode 1, Level 1 (No security)**
 
-```
+```c
 /* Disable numeric comparison */
 #define IOT_BLE_ENABLE_NUMERIC_COMPARISON        ( 0 )
 #define IOT_BLE_ENABLE_SECURE_CONNECTION         ( 0 )
@@ -146,7 +146,7 @@ Here are the supported modes, and their associated properties:
 
 **Mode 1, Level 2 (Unauthenticated pairing with encryption)**
 
-```
+```c
 #define IOT_BLE_ENABLE_NUMERIC_COMPARISON        ( 0 )
 #define IOT_BLE_ENABLE_SECURE_CONNECTION         ( 0 )
 #define IOT_BLE_INPUT_OUTPUT                     ( eBTIONone )
@@ -193,7 +193,7 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
    The Bluetooth Low Energy low-level API provides an enable/disable call to the Bluetooth Low Energy stack for optimizing power and resources. Before calling the APIs, you must enable Bluetooth Low Energy.
 
-   ```
+   ```C
    const BTInterface_t * pxIface = BTGetBluetoothInterface();
    xStatus = pxIface->pxEnable( 0 );
    ```
@@ -202,7 +202,7 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
    The Bluetooth manager contains APIs that are common to both Bluetooth Low Energy and Bluetooth classic. The callbacks for the common manager must be initialized second.
 
-   ```
+   ```C
    xStatus = xBTInterface.pxBTInterface->pxBtManagerInit( &xBTManagerCb );
    ```
 
@@ -210,7 +210,7 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
    The Bluetooth Low Energy adapter fits on top of the common API. You must initialize its callbacks like you initialized the common API.
 
-   ```
+   ```C
    xBTInterface.pxBTLeAdapterInterface = ( BTBleAdapter_t * ) xBTInterface.pxBTInterface->pxGetLeAdapter();
    xStatus = xBTInterface.pxBTLeAdapterInterface->pxBleAdapterInit( &xBTBleAdapterCb );
    ```
@@ -219,7 +219,7 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
    Register your new user application.
 
-   ```
+   ```C
    xBTInterface.pxBTLeAdapterInterface->pxRegisterBleApp( pxAppUuid );
    ```
 
@@ -227,14 +227,14 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
    Initialize the callbacks to the GATT servers.
 
-   ```
+   ```C
    xBTInterface.pxGattServerInterface = ( BTGattServerInterface_t * ) xBTInterface.pxBTLeAdapterInterface->ppvGetGattServerInterface();
    xBTInterface.pxGattServerInterface->pxGattServerInit( &xBTGattServerCb );
    ```
 
    After you initialize the Bluetooth Low Energy adapter, you can add a GATT server. You can register only one GATT server at a time.
 
-   ```
+   ```C
    xStatus = xBTInterface.pxGattServerInterface->pxRegisterServer( pxAppUuid );
    ```
 
@@ -242,7 +242,7 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
    Set application properties like secure connection only and MTU size.
 
-   ```
+   ```C
    xStatus = xBTInterface.pxBTInterface->pxSetDeviceProperty( &pxProperty[ usIndex ] );
    ```
 
@@ -261,7 +261,7 @@ The examples below demonstrate how to use the Bluetooth Low Energy library for a
 
 1. In your application, set the advertising UUID:
 
-   ```
+   ```C
    static const BTUuid_t _advUUID =
    {
        .uu.uu128 = IOT_BLE_ADVERTISING_UUID,
@@ -271,7 +271,7 @@ The examples below demonstrate how to use the Bluetooth Low Energy library for a
 
 1. Then define the `IotBle_SetCustomAdvCb` callback function:
 
-   ```
+   ```c
    void IotBle_SetCustomAdvCb( IotBleAdvertisementParams_t * pAdvParams,  IotBleAdvertisementParams_t * pScanParams)
    {
        memset(pAdvParams, 0, sizeof(IotBleAdvertisementParams_t));
@@ -298,7 +298,7 @@ For full examples of services, see `{{freertos}}/.../ble/services`.
 
 1. Create UUIDs for the service's characteristic and descriptors:
 
-   ```
+   ```C
    #define xServiceUUID_TYPE \
    {\
        .uu.uu128 = gattDemoSVC_UUID, \
@@ -323,7 +323,7 @@ For full examples of services, see `{{freertos}}/.../ble/services`.
 
 1. Create a buffer to register the handles of the characteristic and descriptors:
 
-   ```
+   ```C
    static uint16_t usHandlesBuffer[egattDemoNbAttributes];
    ```
 
@@ -331,7 +331,7 @@ For full examples of services, see `{{freertos}}/.../ble/services`.
 **Important**
 Always create the attributes in order, with the service as the first attribute.
 
-   ```
+   ```C
    static const BTAttribute_t pxAttributeTable[] = {
         {
             .xServiceUUID =  xServiceUUID_TYPE
@@ -369,7 +369,7 @@ Always create the attributes in order, with the service as the first attribute.
 
    For example, if `vReadCounter` gets triggered when `xCharCounterUUID_TYPE` is accessed, and `vWriteCommand` gets triggered when `xCharControlUUID_TYPE` is accessed, define the array as follows:
 
-   ```
+   ```C
    static const IotBleAttributeEventCallback_t pxCallBackArray[egattDemoNbAttributes] =
        {
      NULL,
@@ -381,7 +381,7 @@ Always create the attributes in order, with the service as the first attribute.
 
 1. Create the service:
 
-   ```
+   ```C
    static const BTService_t xGattDemoService =
    {
      .xNumberOfAttributes = egattDemoNbAttributes,
@@ -398,7 +398,7 @@ Always create the attributes in order, with the service as the first attribute.
 
    1. Create IotBle\_AddCustomServicesCb in your application:
 
-      ```
+      ```c
       void IotBle_AddCustomServicesCb(void)
       {
           BTStatus_t xStatus;
@@ -415,7 +415,7 @@ Always create the attributes in order, with the service as the first attribute.
 
 A secure connection requires both input and output for numeric comparison. The `eBLENumericComparisonCallback` event can be registered using the event manager:
 
-```
+```C
 xEventCb.pxNumericComparisonCb = &prvNumericComparisonCb;
 xStatus = BLE_RegisterEventCb( eBLENumericComparisonCallback, xEventCb );
 ```

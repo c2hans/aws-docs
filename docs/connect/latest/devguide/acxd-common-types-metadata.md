@@ -14,7 +14,7 @@ The `metadata` object is optional organizational metadata used to categorize and
 ## Example
 <a name="acxd-common-types-metadata-example"></a>
 
-```
+```json
 {
   "metadata": {
     "path": "/customer-support/sentiment",

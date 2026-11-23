@@ -75,7 +75,7 @@ The model decides when to call search and when to call fetch based on the conten
 
 **Allow search and cached fetch in a specific Region**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -99,7 +99,7 @@ The model decides when to call search and when to call fetch based on the conten
 
 **Allow search, cached fetch, and external web access**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -119,7 +119,7 @@ The model decides when to call search and when to call fetch based on the conten
 
 **Allow cached fetch only**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -137,7 +137,7 @@ The model decides when to call search and when to call fetch based on the conten
 
 **Deny Web Search across an organization (SCP)**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

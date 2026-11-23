@@ -213,7 +213,7 @@ Use the following steps to create the **MigrationStatusSummary** column:
 
 1. Enter the following SQL query into the SQL editor:
 
-   ```
+   ```bash
    ifelse(migration_status ='Cutover instance launched', 'Completed', 'InProgress')
    ```
 

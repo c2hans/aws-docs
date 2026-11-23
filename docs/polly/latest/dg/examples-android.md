@@ -10,7 +10,7 @@ The code shown here covers the major tasks but does not handle errors. For the c
 
 **Initialize**
 
-```
+```java
 // Cognito pool ID. Pool needs to be unauthenticated pool with
 // Amazon Polly permissions.
 String COGNITO_POOL_ID = "{{YourCognitoIdentityPoolId}}";
@@ -31,7 +31,7 @@ AmazonPollyPresigningClient client = new AmazonPollyPresigningClient(credentials
 
 **Get List of Available Voices**
 
-```
+```java
 // Create describe voices request.
 DescribeVoicesRequest describeVoicesRequest = new DescribeVoicesRequest();
 
@@ -42,7 +42,7 @@ List<Voice> voices = describeVoicesResult.getVoices();
 
 **Get URL for Audio Stream**
 
-```
+```java
 // Create speech synthesis request.
 SynthesizeSpeechPresignRequest synthesizeSpeechPresignRequest =
         new SynthesizeSpeechPresignRequest()
@@ -60,7 +60,7 @@ URL presignedSynthesizeSpeechUrl =
 
 **Play Synthesized Speech**
 
-```
+```java
 // Use MediaPlayer: https://developer.android.com/guide/topics/media/mediaplayer.html
 
 // Create a media player to play the synthesized audio stream.

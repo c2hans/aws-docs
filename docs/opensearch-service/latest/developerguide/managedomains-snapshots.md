@@ -32,7 +32,7 @@ To create snapshots manually, you need to work with IAM and Amazon S3. Make sure
 
 To delete a manual snapshot, run the following command:
 
-```
+```json
 DELETE _snapshot/{{repository-name}}/{{snapshot-name}}
 ```
 

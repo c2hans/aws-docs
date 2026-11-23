@@ -42,7 +42,7 @@ Kubernetes exposes control plane metrics at the `/metrics` endpoint.
 
 You can view the metrics exposed using `kubectl`:
 
-```
+```shell
 kubectl get --raw /metrics
 ```
 

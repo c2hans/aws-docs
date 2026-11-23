@@ -10,7 +10,7 @@ The samples repository on the GitHub website includes the following VRED conda r
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job vredcore-2026
 ```
 

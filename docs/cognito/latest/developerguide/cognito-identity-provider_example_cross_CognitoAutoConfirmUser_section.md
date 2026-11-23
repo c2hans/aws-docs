@@ -17,7 +17,7 @@ The following code examples show how to automatically confirm known Amazon Cogni
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -154,7 +154,7 @@ func (runner *AutoConfirm) Run(ctx context.Context, stackName string) {
 ```
 Handle the `PreSignUp` trigger with a Lambda function.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -248,7 +248,7 @@ func main() {
 ```
 Create a struct that performs common tasks.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -355,7 +355,7 @@ func (helper ScenarioHelper) ListRecentLogEvents(ctx context.Context, functionNa
 ```
 Create a struct that wraps Amazon Cognito actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -546,7 +546,7 @@ func (actor CognitoActions) AdminSetUserPassword(ctx context.Context, userPoolId
 ```
 Create a struct that wraps DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -649,7 +649,7 @@ func (actor DynamoActions) AddUser(ctx context.Context, tableName string, user U
 ```
 Create a struct that wraps CloudWatch Logs actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -702,7 +702,7 @@ func (actor CloudWatchLogsActions) GetLogEvents(ctx context.Context, functionNam
 ```
 Create a struct that wraps CloudFormation actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -735,7 +735,7 @@ func (actor CloudFormationActions) GetOutputs(ctx context.Context, stackName str
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -811,7 +811,7 @@ func (resources *Resources) Cleanup(ctx context.Context) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-pools-triggers#code-examples).
 Configure an interactive "Scenario" run. The JavaScript (v3) examples share a Scenario runner to streamline complex examples. The complete source code is on GitHub.
 
-```
+```javascript
 import { AutoConfirm } from "./scenario-auto-confirm.js";
 
 /**
@@ -859,7 +859,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 This Scenario demonstrates auto-confirming a known user. It orchestrates the example steps.
 
-```
+```javascript
 import { wait } from "@aws-doc-sdk-examples/lib/utils/util-timers.js";
 import {
   Scenario,
@@ -1214,7 +1214,7 @@ export const AutoConfirm = (context) =>
 ```
 These are steps that are shared with other Scenarios.
 
-```
+```javascript
 import {
   ScenarioAction,
   ScenarioInput,
@@ -1262,7 +1262,7 @@ export const logCleanUpReminder = new ScenarioOutput(
 ```
 A handler for the `PreSignUp` trigger with a Lambda function.
 
-```
+```javascript
 import type { PreSignUpTriggerEvent, Handler } from "aws-lambda";
 import type { UserRepository } from "./user-repository";
 import { DynamoDBUserRepository } from "./user-repository";
@@ -1337,7 +1337,7 @@ export const handler: Handler = async (event: PreSignUpTriggerEvent) => {
 ```
 Module of CloudWatch Logs actions.
 
-```
+```javascript
 import {
   CloudWatchLogsClient,
   GetLogEventsCommand,
@@ -1407,7 +1407,7 @@ export const getLogEvents = async ({
 ```
 Module of Amazon Cognito actions.
 
-```
+```javascript
 import {
   AdminGetUserCommand,
   CognitoIdentityProviderClient,
@@ -1544,7 +1544,7 @@ export const deleteUser = async ({ region, accessToken }) => {
 ```
 Module of DynamoDB actions.
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   BatchWriteCommand,

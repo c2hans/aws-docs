@@ -23,7 +23,7 @@ A `ClusterResourceOptimizationPolicy` selects workloads and sets the mode and pr
 ### Example – ClusterResourceOptimizationPolicy
 <a name="auto-ro-reference-crop-example"></a>
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1beta1
 kind: ClusterResourceOptimizationPolicy
 metadata:
@@ -95,7 +95,7 @@ Resource optimization deletes the object when no valid policy selects the worklo
 
 The following object is for a Deployment named `checkout` with one container that declares requests of `cpu: 250m` and `memory: 256Mi` and limits of `cpu: 500m` and `memory: 512Mi`.
 
-```
+```yaml
 apiVersion: eks.amazonaws.com/v1beta1
 kind: ResourceOptimization
 metadata:

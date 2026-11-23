@@ -26,7 +26,7 @@ The following code example shows how to use `ListUserPools`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Cognito#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the Amazon Cognito user pools for an account.
     /// </summary>

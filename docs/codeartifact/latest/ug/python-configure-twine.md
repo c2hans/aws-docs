@@ -66,7 +66,7 @@ Before using twine to publish Python package assets, you must first configure Co
 
 After you configure twine, you can run `twine` commands. Use the following command to publish Python package assets.
 
-```
+```bash
 twine upload --repository codeartifact mypackage-1.0.tgz
 ```
 

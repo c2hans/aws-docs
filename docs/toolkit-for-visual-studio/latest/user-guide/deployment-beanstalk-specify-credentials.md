@@ -11,7 +11,7 @@ Although not recommended, you may also need to specify AWS account credentials t
 If you must use AWS account credentials instead of an IAM role, you can specify the AWS account credentials for your application in one of the following ways:
 + Reference a profile corresponding to the AWS account credentials in the `appSettings` element of the project's `Web.config` file. (To create a profile, see [Configuring AWS Credentials](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/net-dg-config-creds.html).) The following example specifies credentials whose profile name is `myProfile`.
 
-  ```
+  ```xml
   <appSettings>
     <!-- AWS CREDENTIALS -->
     <add key="AWSProfileName" value="myProfile"/>

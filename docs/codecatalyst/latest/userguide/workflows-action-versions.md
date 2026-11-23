@@ -12,7 +12,7 @@ By default, when you add an action to a workflow, Amazon CodeCatalyst adds the f
 
 For example:
 
-```
+```yaml
 My-Build-Action:
   Identifier: aws/build@v1.0.0
 ```
@@ -21,7 +21,7 @@ You can shorten the full version in the `Identifier` property so that the workfl
 
 For example, if you specify:
 
-```
+```yaml
 My-CloudFormation-Action:
   Identifier: aws/cfn-deploy@v1.0
 ```

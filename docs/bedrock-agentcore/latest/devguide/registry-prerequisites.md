@@ -14,7 +14,7 @@ Before you use AWS Agent Registry, complete the following prerequisites.
 
 You need an AWS account with credentials configured. To configure credentials, install and use the AWS Command Line Interface by following the steps at [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
 
-```
+```bash
 # Verify installation
 aws --version  # Should show version 2.
 ```
@@ -44,7 +44,7 @@ For administrators who manage the full lifecycle of registries, records, and app
 
 **Example**
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -148,7 +148,7 @@ For administrators who manage the full lifecycle of registries, records, and app
 }
 ```
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -259,7 +259,7 @@ For curators who review and approve/reject records but don’t perform administr
 
 **Example**
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -323,7 +323,7 @@ For curators who review and approve/reject records but don’t perform administr
 }
 ```
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -393,14 +393,14 @@ For curators who review and approve/reject records but don’t perform administr
 For publishers who submit MCP servers, agents, or other resources to the registry:
 
 **Note**
-The three sync-related statements (`AllowWorkloadIdentityForSynchronization`, `AllowGetResourceOauth2TokenForOauthBasedSynchronization`, `AllowPassRoleForIamBasedSynchronization`) authorize workload identity and OAuth credential provider resources managed by AgentCore Identity. Those resources intentionally remain under the `bedrock-agentcore` namespace, so their actions, ARNs, and service principal do not change.
+The `AllowWorkloadIdentityForSynchronization` and `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statements authorize workload identity and OAuth credential provider resources managed by AgentCore Identity. Those resources remain under the `bedrock-agentcore` namespace, so their actions and ARNs do not change. The `AllowPassRoleForIamBasedSynchronization` statement passes the role to AWS Agent Registry, so in the `agent-registry` namespace its `iam:PassedToService` value is `agent-registry.amazonaws.com` and its `iam:AssociatedResourceARN` is a record ARN in the `agent-registry` namespace.
 
 **Note**
 Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to the specific OAuth credential provider ARN whose access token this identity needs. Avoid wildcards in the provider segment of the ARN — patterns such as `token-vault/ ` or `token-vault/default/oauth2credentialprovider/` grant access to every OAuth credential provider in the account, which can enable cross-team credential access. Follow the principle of least privilege by naming the specific provider in the `Resource` field, for example `arn:aws:bedrock-agentcore:<region>:<account>:token-vault/default/oauth2credentialprovider/<oauthProviderName>`.
 
 **Example**
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -492,11 +492,11 @@ Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to
             {
                 "StringEquals":
                 {
-                    "iam:PassedToService": "bedrock-agentcore.amazonaws.com"
+                    "iam:PassedToService": "agent-registry.amazonaws.com"
                 },
                 "ArnLike":
                 {
-                    "iam:AssociatedResourceARN": "arn:aws:bedrock-agentcore:<region>:<account>:registry/*/record/*"
+                    "iam:AssociatedResourceARN": "arn:aws:agent-registry:<region>:<account>:registry/*/record/*"
                 }
             }
         }
@@ -504,7 +504,7 @@ Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to
 }
 ```
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -608,6 +608,8 @@ Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to
 }
 ```
 
+To upload skill packages, or to synchronize skills from Amazon S3 or GitHub, publishers also need the permissions in [Permissions for skill packages and skill synchronization](registry-iam-permissions.md#registry-iam-skills).
+
 ### Consumer permissions
 <a name="registry-prereq-consumer-permissions"></a>
 
@@ -615,7 +617,7 @@ For consumers who search for and use approved resources:
 
 **Example**
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":
@@ -660,7 +662,7 @@ For consumers who search for and use approved resources:
 }
 ```
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement":

@@ -50,6 +50,7 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
    "IdTokenValidity": {{number}},
    "LogoutURLs": [ "{{string}}" ],
    "PreventUserExistenceErrors": "{{string}}",
+   "PublishSecretsInAWSSecretsManager": {{boolean}},
    "ReadAttributes": [ "{{string}}" ],
    "RefreshTokenRotation": {
       "Feature": "{{string}}",
@@ -232,6 +233,12 @@ Type: String
 Valid Values: `LEGACY | ENABLED`
 Required: No
 
+ ** [PublishSecretsInAWSSecretsManager](#API_CreateUserPoolClient_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPoolClient-request-PublishSecretsInAWSSecretsManager"></a>
+Specifies whether Amazon Cognito stores and manages this app client's secret in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) instead of returning the plaintext value. Applies only when `GenerateSecret` is `true`. When you set this parameter to `true`, the response returns `ClientSecretArn` instead of `ClientSecret`. Amazon Cognito starts the first rotation of the secret right away, and then rotates the secret every 7 days by default. You can change the rotation schedule in Secrets Manager.
+Defaults to `false`. If you don't set this parameter, Amazon Cognito doesn't manage the secret in Secrets Manager and returns the plaintext `ClientSecret` value. The Amazon Cognito console turns on this option by default when it creates an app client with a generated client secret.
+Type: Boolean
+Required: No
+
  ** [ReadAttributes](#API_CreateUserPoolClient_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPoolClient-request-ReadAttributes"></a>
 The list of user attributes that you want your app client to have read access to. After your user authenticates in your app, their access token authorizes them to read their own attribute value for any attribute in this list.
 An example of this kind of activity is when your user selects a link to view their profile information. Your app makes a [GetUser](API_GetUser.md) API request to retrieve and display your user's profile data.
@@ -306,6 +313,8 @@ Required: No
       "ClientId": "string",
       "ClientName": "string",
       "ClientSecret": "string",
+      "ClientSecretArn": "string",
+      "ClientType": "string",
       "CreationDate": number,
       "DefaultRedirectURI": "string",
       "EnablePropagateAdditionalUserContextData": boolean,
@@ -417,7 +426,7 @@ The following example creates an app client with all configurable properties set
 #### Sample Request
 <a name="API_CreateUserPoolClient_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-east-1.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -488,7 +497,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_CreateUserPoolClient_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -558,6 +567,64 @@ Connection: keep-alive
           "family_name",
           "email"
         ]
+      }
+}
+```
+
+### Example
+<a name="API_CreateUserPoolClient_Example_2"></a>
+
+The following example shows how you can create an app client with a secret managed in AWS Secrets Manager. Because you set `PublishSecretsInAWSSecretsManager` to `true`, Amazon Cognito returns `ClientSecretArn` instead of a plaintext `ClientSecret`:
+
+#### Sample Request
+<a name="API_CreateUserPoolClient_Example_2_Request"></a>
+
+```HTTP
+POST HTTP/1.1
+Host: cognito-idp.us-east-1.amazonaws.com
+X-Amz-Date: 20230613T200059Z
+Accept-Encoding: gzip, deflate, br
+X-Amz-Target: AWSCognitoIdentityProviderService.CreateUserPoolClient
+User-Agent: <UserAgentString>
+Authorization: AWS4-HMAC-SHA256 Credential=<Credential>, SignedHeaders=<Headers>, Signature=<Signature>
+Content-Length: <PayloadSizeBytes>
+
+{
+    "ClientName": "my-confidential-app-client",
+    "EnableTokenRevocation": true,
+    "ExplicitAuthFlows": [
+        "ALLOW_REFRESH_TOKEN_AUTH"
+    ],
+    "GenerateSecret": true,
+    "PublishSecretsInAWSSecretsManager": true,
+    "UserPoolId": "us-east-1_EXAMPLE"
+}
+```
+
+#### Sample Response
+<a name="API_CreateUserPoolClient_Example_2_Response"></a>
+
+```HTTP
+HTTP/1.1 200 OK
+Date: Tue, 13 Jun 2023 20:00:59 GMT
+Content-Type: application/x-amz-json-1.0
+Content-Length: <PayloadSizeBytes>
+x-amzn-requestid: a1b2c3d4-e5f6-a1b2-c3d4-EXAMPLE11111
+Connection: keep-alive
+
+{
+      "UserPoolClient": {
+        "ClientId": "1example23456789",
+        "ClientName": "my-confidential-app-client",
+        "ClientSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:cognito-idp!1example23456789-AbCdEf",
+        "CreationDate": 1689885426.107,
+        "EnablePropagateAdditionalUserContextData": false,
+        "EnableTokenRevocation": true,
+        "ExplicitAuthFlows": [
+          "ALLOW_REFRESH_TOKEN_AUTH"
+        ],
+        "LastModifiedDate": 1689885426.107,
+        "UserPoolId": "us-east-1_EXAMPLE"
       }
 }
 ```

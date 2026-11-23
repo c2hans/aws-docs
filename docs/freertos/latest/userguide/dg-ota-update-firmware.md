@@ -12,7 +12,7 @@ The OTA Agent included with FreeRTOS checks the version of any update and instal
 
 1. To schedule an update to a Renesas rx65n platform with a filetype other than 0 (non-firmware files), you must sign the file with the Renesas Secure Flash Programmer tool, otherwise it will fail the signature check on the device. The tool creates a signed file package with the extension `.rsu` which is a proprietary file type for Renesas. The tool can be found on [Github](https://github.com/renesas/Amazon-FreeRTOS-Tools). You can use the following example command to generate the image:
 
-   ```
+   ```bash
    "Renesas Secure Flash Programmer.exe" CUI Update "RX65N(ROM 2MB)/Secure Bootloader=256KB" "sig-sha256-ecdsa" 1 "{{file_name}}" "{{output_file_name}}.rsu"
    ```
 

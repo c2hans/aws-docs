@@ -16,6 +16,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 ![Clickstream Analytics on AWS architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/clickstream-analytics-on-aws.png)
 
+****Clickstream Analytics on AWS architecture****
+
  This guidance deploys the AWS CloudFormation template in your AWS Cloud account and completes the following settings.
 
 1.  An[Amazon Cognito](https://aws.amazon.com/cognito) user pool or OpenID Connect (OIDC) handles authentication.
@@ -43,6 +45,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 ![Ingestion module architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/ingestion-module-arch.png)
 
+***Ingestion module architecture***
+
  Suppose you create a data pipeline in the guidance. This guidance deploys the Amazon CloudFormation template in your AWS account and completes the following settings.
 
 **Note**
@@ -69,6 +73,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 ![Data processing module architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-processing-module-arch.png)
 
+***Data processing module architecture***
+
  Suppose you create a data pipeline in the guidance and enable data processing. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
 1.  Amazon EventBridge is used to trigger the data processing jobs periodically.
@@ -85,6 +91,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 <a name="data-modeling-module"></a>
 
 ![Data modeling in Redshift architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-modeling-module-arch.png)
+
+***Data modeling in Redshift architecture***
 
  Suppose you create a data pipeline in the guidance and enable data modeling in Amazon Redshift. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
@@ -110,6 +118,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 ![Data modeling in Athena architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-modeling-in-athena-arch.png)
 
+***Data modeling in Athena architecture***
+
  Suppose you create a data pipeline in the guidance and enable data modeling in Amazon Athena. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
 1.  Amazon EventBridge invokes the data load into [Amazon Athena](https://aws.amazon.com/athena/) periodically.
@@ -127,6 +137,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 ![Reporting module architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/reporting-module.png)
 
+***Reporting module architecture***
+
  Suppose you create a data pipeline in the guidance, enable data modeling in Amazon Redshift, and enable reporting in Quick. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
 1.  VPC connection in Quick is used for securely connecting your Redshift within VPC.
@@ -139,6 +151,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 Analytics Studio is a unified web interface for business analysts or data analysts to view and create dashboards, query and explore clickstream data, and manage metadata.
 
 ![Analytics Studio architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/analytics-studio-arch.png)
+
+***Analytics Studio architecture***
 
 1. When analysts access Analytics Studio, requests are sent to [Amazon CloudFront](https://aws.amazon.com/cloudfront/), which distributes the web application.
 

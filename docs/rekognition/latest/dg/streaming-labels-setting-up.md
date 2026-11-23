@@ -94,7 +94,7 @@ Enter the following commands into the AWS CLI to set up an IAM role with the nec
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

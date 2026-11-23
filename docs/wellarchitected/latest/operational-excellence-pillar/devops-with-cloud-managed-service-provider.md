@@ -16,6 +16,8 @@ Managed services providers such as [AWS Managed Services](http://aws.amazon.com/
 
 ![DevOps with cloud managed service provider](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/devops-msp.en.png)
 
+*DevOps with cloud managed service provider*
+
 For this variation, we treat governance as centralized and managed by the platform team, with account creation and policies managed with AWS Organizations and AWS Control Tower.
 
 This model requires you to modify your mechanisms to work with those of your service provider. It does not address the bottlenecks and delays created by transition of tasks between teams, including your service provider, or the potential rework related to the late identification of defects.

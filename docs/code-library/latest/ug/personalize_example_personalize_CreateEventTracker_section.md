@@ -14,7 +14,7 @@ The following code examples show how to use `CreateEventTracker`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createEventTracker(PersonalizeClient personalizeClient, String eventTrackerName,
             String datasetGroupArn) {
 
@@ -75,7 +75,7 @@ The following code examples show how to use `CreateEventTracker`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateEventTrackerCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";

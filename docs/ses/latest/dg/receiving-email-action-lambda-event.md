@@ -18,7 +18,7 @@ When you add a Lambda action to a receipt rule, Amazon SES sends an event record
 
 The following example shows the values that these event records typically contain.
 
-```
+```json
 {
   "Records": [{
     "eventSource": "aws:ses",
@@ -211,7 +211,7 @@ The `Message` attribute contains a JSON-encoded string. This string contains the
 
 The following example shows the values that are contained in the `Message` attribute.
 
-```
+```json
 {
   "notificationType": "Received",
   "mail": {

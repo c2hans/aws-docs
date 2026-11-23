@@ -10,7 +10,7 @@ For example, the set `[a, a, b]` contains one unique value (`b`) and two distinc
 
 **Syntax**
 
-```
+```json
 UniqueValueRatio {{<COL_NAME>}} {{<EXPRESSION>}}
 ```
 + **COL\_NAME** – The name of the column that you want to evaluate the data quality rule against.
@@ -22,7 +22,7 @@ UniqueValueRatio {{<COL_NAME>}} {{<EXPRESSION>}}
 
 This example checks the unique value ratio of a column against a range of values.
 
-```
+```json
 UniqueValueRatio "test_score" between 0 and 0.5
 UniqueValueRatio "Customer_ID" between 0 and 0.9 where "Customer_ID < 10"
 ```

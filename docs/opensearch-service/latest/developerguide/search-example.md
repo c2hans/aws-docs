@@ -243,7 +243,7 @@ Your OpenSearch Service domain must allow the Lambda function to make `GET` requ
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -268,7 +268,7 @@ Alternatively, you can choose to make your domain access policy more granular. F
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -303,7 +303,7 @@ Attach the following IAM policy to your Lambda execution role to allow it to mak
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -330,7 +330,7 @@ If you're using OpenSearch Service Serverless, attach the following IAM policy t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

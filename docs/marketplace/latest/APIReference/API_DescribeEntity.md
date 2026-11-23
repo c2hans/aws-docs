@@ -21,7 +21,7 @@ The request uses the following URI parameters.
  ** [Catalog](#API_DescribeEntity_RequestSyntax) **   <a name="AWSMarketplaceService-DescribeEntity-request-uri-Catalog"></a>
 Required. The catalog related to the request. Fixed value: `AWSMarketplace`
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-zA-Z]+$`
+Pattern: `^(?![.-])(?!.*[.-]{2})(?![0-9]+\.[0-9.]+$)[a-zA-Z0-9.-]{1,47}(?<![.-])$`
 Required: Yes
 
  ** [EntityId](#API_DescribeEntity_RequestSyntax) **   <a name="AWSMarketplaceService-DescribeEntity-request-uri-EntityId"></a>
@@ -126,6 +126,8 @@ HTTP Status Code: 429
  ** ValidationException **
 An error occurred during validation.
 HTTP status code: 422
+ ** ValidationExceptionFieldList **
+A list of detailed entries describing the request fields that failed validation. Present when the failure can be attributed to one or more specific fields.
 HTTP Status Code: 422
 
 ## See Also

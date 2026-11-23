@@ -23,7 +23,7 @@ Use the following procedure to create a resource data sync for Compliance by usi
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

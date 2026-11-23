@@ -32,7 +32,7 @@ The following example displays how to enable full permissions, including access 
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -210,7 +210,7 @@ To deny users access to specific VPCs, use `StringEquals` to check the value of 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -248,7 +248,7 @@ To allow users access to specific VPCs, use `StringEquals` to check the value of
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -281,7 +281,7 @@ To allow users access to specific VPCs, use `StringEquals` to check the value of
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

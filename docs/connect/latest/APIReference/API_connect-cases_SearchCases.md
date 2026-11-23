@@ -175,7 +175,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of SearchCases.
 
-```
+```json
 {
    "filter":{
       "andAll":[
@@ -224,7 +224,7 @@ This example illustrates one usage of SearchCases.
 
 This example illustrates one usage of SearchCases.
 
-```
+```json
 {
    "cases":[
       {

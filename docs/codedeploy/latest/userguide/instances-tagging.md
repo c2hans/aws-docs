@@ -42,7 +42,7 @@ CodeDeploy console setup view:
 
 JSON structure:
 
-```
+```json
 "ec2TagSet": {
          "ec2TagSetList": [
             [
@@ -77,7 +77,7 @@ CodeDeploy console setup view:
 
 JSON structure:
 
-```
+```json
 "ec2TagSet": {
          "ec2TagSetList": [
             [
@@ -132,7 +132,7 @@ CodeDeploy console setup view:
 
 JSON structure:
 
-```
+```json
 "ec2TagSet": {
          "ec2TagSetList": [
             [
@@ -205,7 +205,7 @@ CodeDeploy console setup view:
 
 JSON structure:
 
-```
+```json
 "ec2TagSet": {
          "ec2TagSetList": [
             [

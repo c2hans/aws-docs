@@ -191,7 +191,7 @@ Choose the appropriate policy based on your role:
 
  **Testing this policy:**
 
-```
+```bash
 # Verify read access works
 aws amscm list-rfc-summaries --output json
 
@@ -203,7 +203,7 @@ aws amscm create-rfc --change-type-id <id> --change-type-version 1.0 --title tes
 
  **Purpose:** Provides read-only access to AMS change management resources for monitoring and auditing purposes.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -235,7 +235,7 @@ aws amscm create-rfc --change-type-id <id> --change-type-version 1.0 --title tes
 
  **Testing this policy:**
 
-```
+```bash
 # Verify operator access works (requires MFA)
 aws amscm create-rfc --change-type-id <id> --change-type-version 1.0 --title "Patch window" --execution-parameters '{}'
 
@@ -247,7 +247,7 @@ aws amscm approve-rfc --rfc-id <rfc-id>
 
  **Purpose:** Provides operational access to submit and track AMS RFCs with MFA requirement.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -286,7 +286,7 @@ aws amscm approve-rfc --rfc-id <rfc-id>
 
  **Testing this policy:**
 
-```
+```bash
 # Verify full admin access works (requires MFA)
 aws amscm approve-rfc --rfc-id <rfc-id>
 ```
@@ -295,7 +295,7 @@ aws amscm approve-rfc --rfc-id <rfc-id>
 
  **Purpose:** Provides full AMS administrative access with MFA and session time restrictions.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -367,7 +367,7 @@ Ensure AWS Managed Services environments are operated with security-first config
 ### Configuration Monitoring
 <a name="aws_managed_services_ams_configuration_monitoring"></a>
 
-```
+```bash
 # List change type categories and review RFC activity against baseline
 aws amscm list-change-type-categories --output table
 aws amscm list-rfc-summaries --output json > current-ams-rfcs.json
@@ -393,7 +393,7 @@ aws amscm list-rfc-summaries --output json > current-ams-rfcs.json
 
  **Primary Export Commands:**
 
-```
+```bash
 # Export AMS change management data
 aws amscm list-rfc-summaries --output json > ams-rfcs.json
 aws amscm list-change-type-categories --output json > ams-change-type-categories.json
@@ -417,7 +417,7 @@ aws amscm list-change-type-categories --output json > ams-change-type-categories
 
  **API Command:**
 
-```
+```bash
 # Create a Request for Change (RFC) for an approved change type
 aws amscm create-rfc \
   --change-type-id <change-type-id> \
@@ -433,7 +433,7 @@ aws amscm create-rfc \
 
  **API Command:**
 
-```
+```bash
 # Retrieve details of a specific RFC for audit
 aws amscm get-rfc --rfc-id <rfc-id>
 ```

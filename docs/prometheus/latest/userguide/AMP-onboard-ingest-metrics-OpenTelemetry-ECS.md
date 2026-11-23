@@ -25,7 +25,7 @@ Use the following config file as a template to define your own ADOT collector co
 **Note**
 This configuration uses the `sigv4auth` extension to authenticate calls to Amazon Managed Service for Prometheus. For more information about configuring `sigv4auth`, see [Authenticator - Sigv4](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/sigv4authextension) on GitHub.
 
-```
+```sh
 receivers:
   prometheus:
     config:
@@ -87,7 +87,7 @@ Use a Dockerfile to create and push your container image to an Amazon Elastic Co
 
 1. Build the Dockerfile to copy and add your container image to the OTEL Docker image.
 
-   ```
+   ```sh
    FROM public.ecr.aws/aws-observability/aws-otel-collector:latest
    COPY adot-config.yaml /etc/ecs/otel-config.yaml
    CMD ["--config=/etc/ecs/otel-config.yaml"]
@@ -95,7 +95,7 @@ Use a Dockerfile to create and push your container image to an Amazon Elastic Co
 
 1. Create an Amazon ECR repository.
 
-   ```
+   ```sh
    # create repo:
    COLLECTOR_REPOSITORY=$(aws ecr create-repository --repository aws-otel-collector \
                                   --query repository.repositoryUri --output text)
@@ -103,7 +103,7 @@ Use a Dockerfile to create and push your container image to an Amazon Elastic Co
 
 1. Create your container image.
 
-   ```
+   ```sh
    # build ADOT collector image:
    docker build -t $COLLECTOR_REPOSITORY:ecs .
    ```
@@ -112,7 +112,7 @@ This assumes you are building your container in the same environment that it wil
 
 1. Sign in to the Amazon ECR repository. Replace {{my-region}} with your `region` value.
 
-   ```
+   ```sh
    # sign in to repo:
    aws ecr get-login-password --region {{my-region}} | \
            docker login --username AWS --password-stdin $COLLECTOR_REPOSITORY
@@ -120,7 +120,7 @@ This assumes you are building your container in the same environment that it wil
 
 1. Push your container image.
 
-   ```
+   ```sh
    # push ADOT collector image:
    docker push $COLLECTOR_REPOSITORY:ecs
    ```
@@ -137,7 +137,7 @@ Amazon Managed Service for Prometheus runs as a service, collecting metrics from
 
 The following is an example of how your task definition might look. You can use this example as a template to create your own task definition. Replace the `image` value of `adot-collector` with your repository URL and image tag (`$COLLECTOR_REPOSITORY:ecs`). Replace the `region` values of `adot-collector` and `prometheus` with your `region` values.
 
-```
+```sh
 {
   "family": "adot-prom",
   "networkMode": "awsvpc",

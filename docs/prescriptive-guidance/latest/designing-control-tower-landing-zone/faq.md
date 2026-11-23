@@ -24,7 +24,7 @@ This section provides answers to commonly raised questions about designing an AW
 
 **Q. How can I further customize my AWS Control Tower landing zone?**
 
-**A. **You can use the [Customizations for AWS Control Tower](https://aws.amazon.com/solutions/implementations/customizations-for-aws-control-tower/) or [Landing Zone Accelerator](https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/) solution to customize your AWS Control Tower landing zone. To customize the accounts provisioned, you can use the [Account Factory Customization (AFC)](https://docs.aws.amazon.com/controltower/latest/userguide/af-customization-page.html) or the [Account Factory for Terraform (AFT)](https://docs.aws.amazon.com/controltower/latest/userguide/taf-account-provisioning.html) solution. For additional solutions that you can integrate with AWS Control Tower, see AWS Control Tower in [AWS Marketplace](https://aws.amazon.com/marketplace/solutions/control-tower).
+**A. **You can use the [Customizations for AWS Control Tower](https://aws.amazon.com/solutions/implementations/customizations-for-aws-control-tower/) or [Landing Zone Accelerator on AWS](https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/) solution to customize your AWS Control Tower landing zone. To customize the accounts provisioned, you can use the [Account Factory Customization (AFC)](https://docs.aws.amazon.com/controltower/latest/userguide/af-customization-page.html) or the [Account Factory for Terraform (AFT)](https://docs.aws.amazon.com/controltower/latest/userguide/taf-account-provisioning.html) solution. For additional solutions that you can integrate with AWS Control Tower, see AWS Control Tower in [AWS Marketplace](https://aws.amazon.com/marketplace/solutions/control-tower).
 
 **Q. Where can I find up-to-date information about all AWS Control Tower controls?**
 
@@ -32,11 +32,11 @@ This section provides answers to commonly raised questions about designing an AW
 
 **Q. How can I automate operations in AWS Control Tower?**
 
-**A. **AWS Control Tower provides an API that exposes some of the most commonly used operations such as enabling or disabling controls, or provisioning or closing accounts. For more information, see [Automate tasks in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/automating-tasks.html)in the AWS Control Tower documentation.
+**A. **AWS Control Tower provides an API that exposes commonly used operations, such as enabling or disabling controls, or provisioning or closing accounts. For more information, see [Automate tasks in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/automating-tasks.html) in the AWS Control Tower documentation.
 
 **Q. Where can I find more best practices for architecting multi-account environments on AWS?**
 
-**A. **See the white paper [Organizing Your AWS Environment Using Multiple Accounts ](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)for additional guidance.
+**A. **See the whitepaper [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) for additional guidance.
 
 **Q. Where can I find more best practices for designing a secure landing zone?**
 

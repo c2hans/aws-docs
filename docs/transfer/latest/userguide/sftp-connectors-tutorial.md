@@ -73,7 +73,7 @@ For the access role, create a policy with the following permissions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -522,7 +522,7 @@ The following example grants the necessary permissions to access our two buckets
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

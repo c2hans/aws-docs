@@ -64,6 +64,25 @@ Validate record metadata on the consumer side. For more information, see [Valida
 **Note**
 For JWT enabled registries, At least one **JWT authorization configuration** field is required: allowed audiences, allowed clients, allowed scopes, or custom claims. If you configure more than one, AWS Agent Registry verifies all of them.
 
+### Record approval and public-association approval
+<a name="registry-create-approval-dimensions"></a>
+
+Approval in AWS Agent Registry has two independent dimensions. Auto-approval settings apply to each dimension separately.
++  **Record approval** governs internal discoverability. When auto-approval for record approval is off, a curator must approve each record before it becomes discoverable within your organization. When it is on, a submitted record moves directly to `APPROVED`. This is the single-dimension behavior described in the preceding steps.
++  **Public-association approval** governs public discoverability. When auto-approval for public association is on, every record that has a Publisher is published directly to the AWS-authenticated public discovery page, with no manual curator gate on the public association. When it is off, associating a record with a Publisher requires curator approval before the record enters the public discovery plane. For more information, see [Promote a record to public discovery](registry-promote-to-public.md).
+
+The following matrix shows how the two auto-approval settings combine.
+
+| Auto-approve private (record) | Auto-approve public (association) | Result |
+| --- | --- | --- |
+| Off | Off | Every change needs manual curator approval, for both internal discovery and public promotion. This is the enterprise default. |
+| On | Off | Records are approved for internal discovery automatically. Promoting a record to public discovery still needs curator approval. |
+| Off | On | Records need manual curator approval for internal discovery. Once a record is approved and associated with a Publisher, its public association is approved automatically. |
+| On | On | Both dimensions are automatic. Records are discoverable internally on submission, and records that have a Publisher are published to public discovery with no manual curation. |
+
+**Important**
+Turning on auto-approval for public association removes human review of what your organization represents outside its boundaries. Apply the same compensating controls you use for record auto-approval — restricting who can submit and associate records, and validating records through [Amazon EventBridge](registry-eventbridge.md) events — to the public-association gate.
+
 ### AWS CLI
 <a name="registry-create-cli"></a>
 
@@ -71,14 +90,14 @@ For JWT enabled registries, At least one **JWT authorization configuration** fie
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry \
   --name "MyRegistry" \
   --description "Production registry" \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry \
   --name "MyRegistry" \
   --description "Production registry" \
@@ -89,14 +108,14 @@ aws bedrock-agentcore-control create-registry \
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry \
   --name "MyOAuthRegistry" \
   --discovery-configuration '{"authorizerType": "CUSTOM_JWT", "authorizerConfiguration": {"customJWTAuthorizer": {"discoveryUrl": "https://cognito-idp.us-east-1.amazonaws.com/<poolId>/.well-known/openid-configuration", "allowedClients": ["<appClientId>"]}}}' \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry \
   --name "MyOAuthRegistry" \
   --authorizer-type CUSTOM_JWT \
@@ -109,7 +128,7 @@ aws bedrock-agentcore-control create-registry \
 
 **Example**
 
-```
+```bash
 aws agent-registry-control create-registry \
   --name "MyEncryptedRegistry" \
   --description "Registry with customer managed encryption" \
@@ -117,7 +136,7 @@ aws agent-registry-control create-registry \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control create-registry \
   --name "MyEncryptedRegistry" \
   --description "Registry with customer managed encryption" \
@@ -135,7 +154,7 @@ You can only set the `--encryption-configuration` parameter during registry crea
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -147,7 +166,7 @@ response = client.create_registry(
 print(response['registryArn'])
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -163,7 +182,7 @@ print(response['registryArn'])
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -183,7 +202,7 @@ response = client.create_registry(
 print(response['registryArn'])
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -206,7 +225,7 @@ print(response['registryArn'])
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -221,7 +240,7 @@ response = client.create_registry(
 print(response['registryArn'])
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -297,12 +316,12 @@ print(response['registryArn'])
 
 **Example**
 
-```
+```bash
 aws agent-registry-control list-registries \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control list-registries \
   --region us-east-1
 ```
@@ -312,7 +331,7 @@ aws bedrock-agentcore-control list-registries \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -322,7 +341,7 @@ for registry in response['registries']:
     print(f"{registry['name']} - {registry['status']} - {registry['registryArn']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -385,13 +404,13 @@ for registry in response['registries']:
 
 **Example**
 
-```
+```bash
 aws agent-registry-control get-registry \
   --registry-id "<registryId>" \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control get-registry \
   --registry-id "<registryId>" \
   --region us-east-1
@@ -402,7 +421,7 @@ aws bedrock-agentcore-control get-registry \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -415,7 +434,7 @@ print(f"Status: {response['status']}")
 print(f"ARN: {response['registryArn']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -487,14 +506,14 @@ The inbound authorization type (IAM or JWT) and the JWT discovery URL cannot be 
 
 **Example**
 
-```
+```bash
 aws agent-registry-control update-registry \
   --registry-id "<registryId>" \
   --description '{"optionalValue": "Updated description"}' \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control update-registry \
   --registry-id "<registryId>" \
   --description '{"optionalValue": "Updated description"}' \
@@ -506,7 +525,7 @@ aws bedrock-agentcore-control update-registry \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -518,7 +537,7 @@ response = client.update_registry(
 print(f"Updated: {response['name']} - Status: {response['status']}")
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')
@@ -569,13 +588,13 @@ The registry status changes to **Deleting**. A success banner confirms when dele
 
 **Example**
 
-```
+```bash
 aws agent-registry-control delete-registry \
   --registry-id "<registryId>" \
   --region us-east-1
 ```
 
-```
+```bash
 aws bedrock-agentcore-control delete-registry \
   --registry-id "<registryId>" \
   --region us-east-1
@@ -586,7 +605,7 @@ aws bedrock-agentcore-control delete-registry \
 
 **Example**
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry-control')
@@ -597,7 +616,7 @@ response = client.delete_registry(
 print(f"Status: {response['status']}")  # DELETING
 ```
 
-```
+```python
 import boto3
 
 client = boto3.client('bedrock-agentcore-control')

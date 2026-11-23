@@ -56,7 +56,7 @@ In addition to the `billingconductor:*` permissions, `pricing:DescribeServices` 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ In this example, you grant an IAM entity full access to the Billing Conductor AP
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ In this example, you grant an IAM entity read-only access to the Billing Conduct
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -161,7 +161,7 @@ In this example, IAM entities can toggle and view pro forma billing data through
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -189,7 +189,7 @@ In this example, IAM entities can toggle and view pro forma billing data through
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -218,7 +218,7 @@ In this example, IAM entities have read-only access to the specific AWS Organiza
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -247,7 +247,7 @@ In this example, IAM entities are denied access to services and features that do
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

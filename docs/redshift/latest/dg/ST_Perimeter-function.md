@@ -37,7 +37,7 @@ If the SRID value is not found, then an error is returned.
 
 The following SQL returns the Cartesian perimeter of a multipolygon.
 
-```
+```sql
 SELECT ST_Perimeter(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((10 0,20 0,20 10,10 0)))'));
 ```
 
@@ -49,7 +49,7 @@ SELECT ST_Perimeter(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((10 0,2
 
 The following SQL returns the Cartesian perimeter of a multipolygon.
 
-```
+```sql
 SELECT ST_Perimeter(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((10 0,20 0,20 10,10 0)))'));
 ```
 
@@ -61,7 +61,7 @@ SELECT ST_Perimeter(ST_GeomFromText('MULTIPOLYGON(((0 0,10 0,0 10,0 0)),((10 0,2
 
 The following SQL returns the perimeter of a polygon in a geography.
 
-```
+```sql
 SELECT ST_Perimeter(ST_GeogFromText('SRID=4326;POLYGON((0 0,1 0,0 1,0 0))'));
 ```
 
@@ -73,7 +73,7 @@ SELECT ST_Perimeter(ST_GeogFromText('SRID=4326;POLYGON((0 0,1 0,0 1,0 0))'));
 
 The following SQL returns the perimeter of a linestring in a geography.
 
-```
+```sql
 SELECT ST_Perimeter(ST_GeogFromText('SRID=4326;LINESTRING(5 0,10 0)'));
 ```
 

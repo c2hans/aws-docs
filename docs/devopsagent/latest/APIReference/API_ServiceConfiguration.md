@@ -117,6 +117,11 @@ Required: No
 Type: [SourceAwsConfiguration](API_SourceAwsConfiguration.md) object
 Required: No
 
+ ** sourceAwsOrg **   <a name="devopsagent-Type-ServiceConfiguration-sourceAwsOrg"></a>
+The AWS Organization source configuration used to monitor resources across an entire AWS Organization or specified organizational units.
+Type: [SourceAwsOrgConfiguration](API_SourceAwsOrgConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_ServiceConfiguration_SeeAlso"></a>
 

@@ -26,7 +26,7 @@ By default, all CID dashboards are built in USD ($). AWS Billing allows the use 
 + Access to upload CSV to S3, create external table in Athena and amend Quick Sight Dataset and Dashboards.
 + Currency conversion rate file in CSV format [example.csv](samples/currency-conversion-rate.csv.zip), averaging currency conversion on monthly basis. For this example we use USD to GBP change rate, assuming that the CUR is in USD and we want to show it in GBP.
 
-```
+```csv
 Month,CurrencyConversionRate
 2024-02-01,0.7845326
 2024-03-01,0.79015638
@@ -60,7 +60,7 @@ This customization requires several manual steps:
 
 1. In Amazon Athena, choose the cid database, then create an external table pointing to the currencyconversionrate.csv file uploaded to S3 by running the following SQL query. Please update the folder location with your Account Id.
 
-   ```
+   ```sql
        CREATE EXTERNAL TABLE IF NOT EXISTS currencyconversionrate (
            Month date,
            CurrencyConversionRate double
@@ -103,7 +103,7 @@ This customization requires several manual steps:
 
 **Example**
 
-```
+```sql
 switch( ${Currency},
     "$", {unblended_cost},
     "£", {unblended_cost} * {currencyconversionrate},
@@ -111,7 +111,7 @@ switch( ${Currency},
 )
 ```
 
-```
+```sql
 switch( ${Currency},
     "$", switch(substring(region, 1, 4), 'cn-', {unblended_cost} * {currencyconversionrate}, {unblended_cost}),
     "¥", switch(substring(region, 1, 4), 'cn-', {unblended_cost}, {unblended_cost} / {currencyconversionrate}),
@@ -127,7 +127,7 @@ switch( ${Currency},
 ------
 #### [ Simple Conversion ]
 
-   ```
+   ```sql
    switch( ${Currency},
        "$", {amortized_cost},
        "£", {amortized_cost} * {currencyconversionrate},
@@ -138,7 +138,7 @@ switch( ${Currency},
 ------
 #### [ Multi Currency ]
 
-   ```
+   ```sql
    switch( ${Currency},
        "$", switch(substring(region, 1, 4), 'cn-', {amortized_cost} * {currencyconversionrate}, {amortized_cost}),
        "¥", switch(substring(region, 1, 4), 'cn-', {amortized_cost}, {amortized_cost} / {currencyconversionrate}),

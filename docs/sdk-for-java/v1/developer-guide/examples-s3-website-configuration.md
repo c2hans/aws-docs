@@ -20,7 +20,7 @@ Setting an index document is *required*; all other parameters are optional.
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -30,7 +30,7 @@ import com.amazonaws.services.s3.model.BucketWebsiteConfiguration;
 
  **Code**
 
-```
+```java
     String bucket_name, String index_doc, String error_doc) {
 BucketWebsiteConfiguration website_config = null;
 
@@ -68,7 +68,7 @@ The configuration will be returned as a [BucketWebsiteConfiguration](https://doc
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -78,7 +78,7 @@ import com.amazonaws.services.s3.model.BucketWebsiteConfiguration;
 
  **Code**
 
-```
+```java
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
     BucketWebsiteConfiguration config =
@@ -107,7 +107,7 @@ To delete an Amazon S3 bucket’s website configuration, call the AmazonS3’s `
 
  **Imports**
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
@@ -116,7 +116,7 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
  **Code**
 
-```
+```java
 final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
 try {
     s3.deleteBucketWebsiteConfiguration(bucket_name);

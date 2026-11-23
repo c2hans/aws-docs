@@ -134,7 +134,17 @@ Type: [TranscriptionJob](API_TranscriptionJob.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** BadRequestException **
-Your request didn't pass one or more validation tests. This can occur when the entity you're trying to delete doesn't exist or if it's in a non-terminal state (such as `IN PROGRESS`). See the exception message field for more information.
+Your request didn't pass one or more validation tests. This can occur when a parameter has an invalid value, when you combine parameters in a way that isn't supported, when the entity you're trying to delete doesn't exist, or if it's in a non-terminal state (such as `IN PROGRESS`). See the exception message field for more information.
+ ** Reason **
+A code that identifies why the audio in your request was rejected. Currently, `TranscribeAudio` returns this field, and only for problems with your audio. It isn't returned for other validation errors.
+Possible values:
++  `audioTooLong`: The audio is longer than the maximum duration of 1 hour.
++  `audioTooShort`: The audio is shorter than 0.5 seconds.
++  `audioFileTooLarge`: The audio is larger than the maximum size.
++  `unsupportedAudioFormat`: The media format isn't supported.
++  `unsupportedChannelCount`: You enabled `ChannelIdentification` and the audio has more than two channels.
++  `invalidAudio`: Amazon Transcribe couldn't decode the audio.
++  `mediaDownloadFailed`: Amazon Transcribe couldn't download the audio at your `MediaFileUri`.
 HTTP Status Code: 400
 
  ** InternalFailureException **

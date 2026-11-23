@@ -326,7 +326,7 @@ The AgentCore Code Interpreter includes a comprehensive set of pre-installed Pyt
 
 For a complete list of all pre-installed Python libraries with their specific versions, you can run the following code in your Code Interpreter session:
 
-```
+```python
 import pkg_resources
 installed_packages = [d for d in pkg_resources.working_set]
 for package in sorted(installed_packages, key=lambda x: x.project_name.lower()):

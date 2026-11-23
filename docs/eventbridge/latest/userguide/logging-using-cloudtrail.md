@@ -119,7 +119,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event that demonstrates the `PutRule` operation.
 
-```
+```JSON
 {
   "eventVersion":"1.03",
   "userIdentity":{
@@ -161,7 +161,7 @@ The following example shows a CloudTrail event that demonstrates the `PutRule` o
 
 In a successful Custom Event Bus `PutResourcePolicy` call, the `requestParameters` field holds the policy document as the caller submitted it. The following example shows a CloudTrail event for such a call:
 
-```
+```JSON
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -229,7 +229,7 @@ For information about CloudTrail record contents, see [CloudTrail record content
 
 The following example shows a CloudTrail data event for a successful `PutEvents` call.
 
-```
+```JSON
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -300,7 +300,7 @@ The following example shows a CloudTrail data event for a successful `PutEvents`
 
 The following example shows a CloudTrail data event for a `PutEvents` call using a [global endpoint](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html). Note the additional `AWS::Events::Endpoint` resource in the `resources` array.
 
-```
+```JSON
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -376,7 +376,7 @@ The following example shows a CloudTrail data event for a `PutEvents` call using
 
 The following example shows a CloudTrail data event for a successful `PutPartnerEvents` call.
 
-```
+```JSON
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -452,7 +452,7 @@ EventBridge Pipes assumes the provided IAM role when it reads events from source
 
 **Sample CloudTrail log entry for all enrichments, targets, and Amazon SQS, Kinesis, and DynamoDB sources**
 
-```
+```JSON
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -500,7 +500,7 @@ For all other sources, the `sourceIPAddress` field of the CloudTrail log entries
 
 **Sample CloudTrail log entry for all other sources**
 
-```
+```JSON
 {
   "eventVersion": "1.08",
   "userIdentity": {

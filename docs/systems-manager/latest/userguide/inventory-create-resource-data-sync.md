@@ -53,7 +53,7 @@ Systems Manager Inventory can't add data to a specified Amazon S3 bucket if that
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -162,7 +162,7 @@ Use the following procedure to create a central Amazon S3 bucket to store aggreg
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

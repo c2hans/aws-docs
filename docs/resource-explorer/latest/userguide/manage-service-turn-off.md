@@ -46,7 +46,7 @@ If you no longer want to support searching for resources in one or more of the A
 
 Run the following command for each Region with the indexes that you want to delete. You must run the command in the Region with the index you want to delete. The following example command deletes the Resource Explorer index in the US West (Oregon) (`us-west-2`).
 
-```
+```bash
 $ aws resource-explorer-2 delete-index \
     --arn arn:aws:resource-explorer-2:us-west-2:123456789012:index/1a2b3c4d-5d6e-7f8a-9b0c-abcd22222222 \
     --region us-west-2
@@ -111,7 +111,7 @@ You can check the box in the table header row next to **Index** to check the box
 **To turn off Resource Explorer in all AWS Regions**
 If you no longer want to support searching for resources in any AWS Regions in your account, run the following command to find the ARN of every index in each AWS Region in which you previously turned on Resource Explorer.
 
-```
+```bash
 $ aws resource-explorer-2 list-indexes --query Indexes[*].Arn[
 "arn:aws:resource-explorer-2:us-east-1:123456789012:index/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111",
 "arn:aws:resource-explorer-2:us-west-1:123456789012:index/1a2b3c4d-5d6e-7f8a-9b0c-abcd22222222",
@@ -121,7 +121,7 @@ $ aws resource-explorer-2 list-indexes --query Indexes[*].Arn[
 
 For each response, run the following command to delete the Resource Explorer index in that Region.
 
-```
+```bash
 $ aws resource-explorer-2 delete-index \
     --arn arn:aws:resource-explorer-2:us-east-1:123456789012:index/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111 \
     --region us-east-1

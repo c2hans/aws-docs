@@ -66,7 +66,7 @@ The following are example endpoint policies for accessing Kinesis data streams.
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement": [

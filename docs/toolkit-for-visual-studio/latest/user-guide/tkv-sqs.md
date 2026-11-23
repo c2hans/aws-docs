@@ -44,6 +44,8 @@ You can view and edit the properties for any of the queues displayed in AWS Expl
 
 ![SQS queue configuration showing timeout, message size, retention period, and queue identifiers.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-sqs-queue-properties.png)
 
+SQS queue properties view
+
 ## Sending a Message to a Queue
 <a name="tkv-sqs-message-send"></a>
 
@@ -55,8 +57,10 @@ From the queue properties view, you can send a message to the queue.
 
 1. Type the message. (Optional) Enter a delivery delay that will override the default delivery delay for the queue. In the following example, we have overridden the delay with a value of 240 seconds. Choose **OK**.
 ![Send Message dialog box with SQS message body and delivery delay set to 240 seconds.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-sqs-send-message.png)
+   **Send Message** dialog box
 
 1. Wait for approximately 240 seconds (four minutes). The message will appear in the **Message Sampling** section of the of the queue properties view.
 ![Message Sampling section showing one message with ID, body text, sender ID, and timestamp.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-sqs-message-sent.png)
+   SQS properties view with sent message
 
    The timestamp in the queue properties view is the time you chose the **Send** button. It does not include the delay. Therefore, the time that the message appears in the queue and is available to receivers might be later than this timestamp. The timestamp is displayed in your computer's local time.

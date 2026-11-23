@@ -32,7 +32,7 @@ $ nitro-cli build-enclave --docker-uri hello-world:latest  --output-file hello-w
 
 This command creates an enclave image file named `hello-world.eif`, along with the following output.
 
-```
+```json
 Start building the Enclave Image...
 Enclave Image successfully created.
 {

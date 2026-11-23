@@ -21,6 +21,8 @@ AWS offers a growing number of database options (15\+) with diverse data models 
 
 [![AWS Videos](https://img.youtube.com/vi/MSB_mHUJUaA/0.jpg)](https://www.youtube.com/watch?v=MSB_mHUJUaA)
 
+This video explores the broad range of AWS database services outlined at AWS re:Invent 2024.
+
 ## Understand
 <a name="db-understand"></a>
 

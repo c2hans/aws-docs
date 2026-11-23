@@ -22,7 +22,7 @@ AWS SDK clients are thread safe and do not require special handling.
 
 The following code uses a static database connection object which is shared between concurrent requests. The `SqlConnection` object is not thread safe.
 
-```
+```csharp
 public class DBQueryHandler
 {
     // Single connection shared across threads - NOT SAFE
@@ -48,7 +48,7 @@ public class DBQueryHandler
 
 To address this, use a separate connection for each request, drawn from a connection pool. ADO.NET providers like `Microsoft.Data.SqlClient` automatically support connection pooling when the connection object is opened.
 
-```
+```csharp
 public class DBQueryHandler
 {
     public DBQueryHandler()
@@ -73,7 +73,7 @@ public class DBQueryHandler
 
 Standard .NET collections are not thread safe:
 
-```
+```csharp
 public class Handler
 {
     private static List<string> items = new List<string>();
@@ -91,7 +91,7 @@ public class Handler
 
 Use collections from the `System.Collections.Concurrent` namespace for concurrency safety:
 
-```
+```csharp
 public class Handler
 {
     private static ConcurrentBag<string> items = new ConcurrentBag<string>();
@@ -130,7 +130,7 @@ Use `ILambdaContext.RemainingTime` to detect timeouts. See [Error handling and r
 
 Check remaining time before each unit of work and stop processing before the timeout fires. Configure the buffer based on the expected duration of your next chunk of work.
 
-```
+```csharp
 private static readonly TimeSpan Buffer = TimeSpan.FromMilliseconds(2000);
 
 public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -150,7 +150,7 @@ public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest request, I
 
 When making calls to downstream services, propagate the remaining time as a timeout to avoid hanging on network calls that would outlive your invocation. Use a `CancellationToken` with a shared client rather than creating a new client per invocation:
 
-```
+```csharp
 using Amazon.S3;
 
 private static readonly IAmazonS3 s3 = new AmazonS3Client();

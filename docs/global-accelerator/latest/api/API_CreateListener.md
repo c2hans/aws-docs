@@ -135,7 +135,7 @@ aws globalaccelerator create-listener \
        --region us-west-2
 ```
 
-```
+```json
 {
     "Listener": {
         "PortRanges": [

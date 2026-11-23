@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 # ResourceSnapshotPayload
 
- Represents the payload of a resource snapshot. This structure is designed to accommodate different types of resource snapshots, currently supporting opportunity summaries.
+Represents the payload of a resource snapshot. This structure is designed to accommodate different types of resource snapshots, currently supporting opportunity summaries.
 
 ## Contents
 <a name="API_ResourceSnapshotPayload_Contents"></a>
@@ -21,7 +21,7 @@ Type: [AwsOpportunitySummaryFullView](API_AwsOpportunitySummaryFullView.md) obje
 Required: No
 
  ** OpportunitySummary **   <a name="AWSPartnerCentral-Type-ResourceSnapshotPayload-OpportunitySummary"></a>
- An object that contains an `opportunity`'s subset of fields.
+An object that contains an `opportunity`'s subset of fields.
 Type: [OpportunitySummaryView](API_OpportunitySummaryView.md) object
 Required: No
 

@@ -29,7 +29,7 @@ For example, the following sample policy allows the user or role to perform any 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [
@@ -69,7 +69,7 @@ The following example shows how to allow an action only when the specified tag (
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -107,7 +107,7 @@ You can use [`ForAllValues:`](https://docs.aws.amazon.com/IAM/latest/UserGuide/r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -136,7 +136,7 @@ Alternatively, you can use [`ForAnyValue:`](https://docs.aws.amazon.com/IAM/late
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -167,7 +167,7 @@ For example, the following sample policy denies any request by the user or role 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

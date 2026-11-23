@@ -11,7 +11,7 @@ Configuration profiles help ensure that tags are applied uniformly to resources 
 
 A configuration profile is a JSON object with the following structure:
 
-```
+```json
 {
    "Options": {
       "ReadOnly": false

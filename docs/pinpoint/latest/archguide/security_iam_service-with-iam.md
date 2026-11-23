@@ -40,7 +40,7 @@ For example, to grant someone permission to view information about all the segme
 
 To specify multiple actions in a single statement, separate them with commas:
 
-```
+```json
 "Action": [
       "mobiletargeting:action1",
       "mobiletargeting:action2"
@@ -48,7 +48,7 @@ To specify multiple actions in a single statement, separate them with commas:
 
 You can also specify multiple actions by using wildcards (\*). For example, to specify all actions that begin with the word `Get`, include the following action:
 
-```
+```json
 "Action": "mobiletargeting:Get*"
 ```
 
@@ -69,7 +69,7 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 
 For example, the `mobiletargeting:GetSegments` action retrieves information about all the segments that are associated with a specific Amazon Pinpoint project. You identify a project with an ARN in the following format:
 
-```
+```json
 arn:aws:mobiletargeting:${Region}:${Account}:apps/${projectId}
 ```
 
@@ -85,19 +85,19 @@ In IAM policies, you can specify ARNs for the following types of Amazon Pinpoint
 
 For example, to create a policy statement for the project that has the project ID `810c7aab86d42fb2b56c8c966example`, use the following ARN:
 
-```
+```json
 "Resource": "arn:aws:mobiletargeting:us-east-1:123456789012:apps/810c7aab86d42fb2b56c8c966example"
 ```
 
 To specify all the projects that belong to a specific account, use the wildcard (\*):
 
-```
+```json
 "Resource": "arn:aws:mobiletargeting:us-east-1:123456789012:apps/*"
 ```
 
 Some Amazon Pinpoint actions, such as certain actions for creating resources, can't be performed on a specific resource. In those cases, you must use the wildcard (\*):
 
-```
+```json
 "Resource": "*"
 ```
 
@@ -128,7 +128,7 @@ Some Amazon Pinpoint SMS and Voice actions are not performed on a specific resou
 
 Some Amazon Pinpoint API actions involve multiple resources. For example, the `TagResource` action can add a tag to multiple projects. To specify multiple resources in a single statement, separate the ARNs with commas:
 
-```
+```json
 "Resource": [
       "resource1",
       "resource2"

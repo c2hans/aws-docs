@@ -92,7 +92,7 @@ https://sns.us-west-2.amazonaws.com/?Action=CreatePlatformApplication
 #### Sample Response
 <a name="API_CreatePlatformApplication_Example_1_Response"></a>
 
-```
+```xml
 <CreatePlatformApplicationResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <CreatePlatformApplicationResult>
         <PlatformApplicationArn>arn:aws:sns:us-west-2:123456789012:app/GCM/gcmpushapp</PlatformApplicationArn>

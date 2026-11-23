@@ -30,7 +30,7 @@ The following code example shows how to use `Approve-WKSIpRule`.
 **Tools for PowerShell V5**
 **Example 1: This sample adds rules to an existing IP Group**
 
-```
+```powershell
 $Rule = @(
 @{IPRule = "10.1.0.0/0"; RuleDesc = "First Rule Added"},
 @{IPRule = "10.2.0.0/0"; RuleDesc = "Second Rule Added"}
@@ -48,7 +48,7 @@ The following code example shows how to use `Copy-WKSWorkspaceImage`.
 **Tools for PowerShell V5**
 **Example 1: This sample copies workspace Image with specified ID from us-west-2 to the current region with the name "CopiedImageTest"**
 
-```
+```powershell
 Copy-WKSWorkspaceImage -Name CopiedImageTest -SourceRegion us-west-2 -SourceImageId wsi-djfoedhw6
 ```
 **Output:**
@@ -66,7 +66,7 @@ The following code example shows how to use `Edit-WKSClientProperty`.
 **Tools for PowerShell V5**
 **Example 1: This sample enables Reconnection for the Workspaces Client**
 
-```
+```powershell
 Edit-WKSClientProperty -Region us-west-2 -ClientProperties_ReconnectEnabled "ENABLED" -ResourceId d-123414a369
 ```
 +  For API details, see [ModifyClientProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -79,7 +79,7 @@ The following code example shows how to use `Edit-WKSSelfServicePermission`.
 **Tools for PowerShell V5**
 **Example 1: This sample enables self service permissions to Change compute type and Increase Volume Size for the specified Directory**
 
-```
+```powershell
 Edit-WKSSelfservicePermission -Region us-west-2 -ResourceId d-123454a369 -SelfservicePermissions_ChangeComputeType ENABLED -SelfservicePermissions_IncreaseVolumeSize ENABLED
 ```
 +  For API details, see [ModifySelfservicePermissions](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -92,7 +92,7 @@ The following code example shows how to use `Edit-WKSWorkspaceAccessProperty`.
 **Tools for PowerShell V5**
 **Example 1: This sample enables Workspace access on Android and Chrome OS for the specified Directory**
 
-```
+```powershell
 Edit-WKSWorkspaceAccessProperty -Region us-west-2 -ResourceId d-123454a369 -WorkspaceAccessProperties_DeviceTypeAndroid ALLOW -WorkspaceAccessProperties_DeviceTypeChromeOs ALLOW
 ```
 +  For API details, see [ModifyWorkspaceAccessProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -105,7 +105,7 @@ The following code example shows how to use `Edit-WKSWorkspaceCreationProperty`.
 **Tools for PowerShell V5**
 **Example 1: This sample enables Internet Access and Maintenance Mode to true as default values while creating a Workspace**
 
-```
+```powershell
 Edit-WKSWorkspaceCreationProperty -Region us-west-2 -ResourceId d-123454a369 -WorkspaceCreationProperties_EnableInternetAccess $true -WorkspaceCreationProperties_EnableMaintenanceMode $true
 ```
 +  For API details, see [ModifyWorkspaceCreationProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -118,7 +118,7 @@ The following code example shows how to use `Edit-WKSWorkspaceProperty`.
 **Tools for PowerShell V5**
 **Example 1: This Sample changes the Workspace Running Mode Property to Auto Stop for the specified Workspace**
 
-```
+```powershell
 Edit-WKSWorkspaceProperty -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceProperties_RunningMode AUTO_STOP
 ```
 +  For API details, see [ModifyWorkspaceProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -131,7 +131,7 @@ The following code example shows how to use `Edit-WKSWorkspaceState`.
 **Tools for PowerShell V5**
 **Example 1: This sample changes the state of the specified Workspace to Available**
 
-```
+```powershell
 Edit-WKSWorkspaceState -WorkspaceId ws-w361s100v -Region us-west-2 -WorkspaceState AVAILABLE
 ```
 +  For API details, see [ModifyWorkspaceState](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -144,7 +144,7 @@ The following code example shows how to use `Get-WKSClientProperty`.
 **Tools for PowerShell V5**
 **Example 1: This sample gets the Client Properties of the Workspace Client for the specified Directory**
 
-```
+```powershell
 Get-WKSClientProperty -ResourceId d-223562a123
 ```
 +  For API details, see [DescribeClientProperties](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -157,7 +157,7 @@ The following code example shows how to use `Get-WKSIpGroup`.
 **Tools for PowerShell V5**
 **Example 1: This sample gets the details of the specified IP Group in the specified region**
 
-```
+```powershell
 Get-WKSIpGroup -Region us-east-1 -GroupId wsipg-8m1234v45
 ```
 **Output:**
@@ -177,7 +177,7 @@ The following code example shows how to use `Get-WKSTag`.
 **Tools for PowerShell V5**
 **Example 1: This Sample fetches tag for the given Workspace**
 
-```
+```powershell
 Get-WKSTag -WorkspaceId ws-w361s234r -Region us-west-2
 ```
 **Output:**
@@ -198,7 +198,7 @@ The following code example shows how to use `Get-WKSWorkspace`.
 **Tools for PowerShell V5**
 **Example 1: Retrieves details of all your WorkSpaces to the pipeline.**
 
-```
+```powershell
 Get-WKSWorkspace
 ```
 **Output:**
@@ -221,7 +221,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 ```
 **Example 2: This command shows the values of child properties of `WorkSpaceProperties` for a workspace in the `us-west-2` region. For more information about the child properties of `WorkSpaceProperties`, see https://docs.aws.amazon.com/workspaces/latest/api/API\_WorkspaceProperties.html.**
 
-```
+```powershell
 (Get-WKSWorkspace -Region us-west-2 -WorkSpaceId ws-xdaf7hc9s).WorkspaceProperties
 ```
 **Output:**
@@ -235,7 +235,7 @@ WorkspaceProperties         : Amazon.WorkSpaces.Model.WorkspaceProperties
 ```
 **Example 3: This command shows the value of the child property `RootVolumeSizeGib` of `WorkSpaceProperties` for a workspace in the `us-west-2` region. The root volume size, in GiB, is 80.**
 
-```
+```powershell
 (Get-WKSWorkspace -Region us-west-2 -WorkSpaceId ws-xdaf7hc9s).WorkspaceProperties.RootVolumeSizeGib
 ```
 **Output:**
@@ -253,7 +253,7 @@ The following code example shows how to use `Get-WKSWorkspaceBundle`.
 **Tools for PowerShell V5**
 **Example 1: This sample fetches details of all the Workspace bundles in the current region**
 
-```
+```powershell
 Get-WKSWorkspaceBundle
 ```
 **Output:**
@@ -279,7 +279,7 @@ The following code example shows how to use `Get-WKSWorkspaceDirectory`.
 **Tools for PowerShell V5**
 **Example 1: This sample lists the directory details for registered directories**
 
-```
+```powershell
 Get-WKSWorkspaceDirectory
 ```
 **Output:**
@@ -312,7 +312,7 @@ The following code example shows how to use `Get-WKSWorkspaceImage`.
 **Tools for PowerShell V5**
 **Example 1: This sample fetches all the details of all images in the region**
 
-```
+```powershell
 Get-WKSWorkspaceImage
 ```
 **Output:**
@@ -337,7 +337,7 @@ The following code example shows how to use `Get-WKSWorkspaceSnapshot`.
 **Tools for PowerShell V5**
 **Example 1: This sample shows the timestamp of the most recent snapshot created for the specified Workspace**
 
-```
+```powershell
 Get-WKSWorkspaceSnapshot -WorkspaceId ws-w361s100v
 ```
 **Output:**
@@ -357,7 +357,7 @@ The following code example shows how to use `Get-WKSWorkspacesConnectionStatus`.
 **Tools for PowerShell V5**
 **Example 1: This sample fetches the connection status for the specified Workspace**
 
-```
+```powershell
 Get-WKSWorkspacesConnectionStatus -WorkspaceId ws-w123s234r
 ```
 +  For API details, see [DescribeWorkspacesConnectionStatus](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -370,7 +370,7 @@ The following code example shows how to use `New-WKSIpGroup`.
 **Tools for PowerShell V5**
 **Example 1: This sample creates an empty Ip group named FreshEmptyIpGroup**
 
-```
+```powershell
 New-WKSIpGroup -GroupName "FreshNewIPGroup"
 ```
 **Output:**
@@ -388,7 +388,7 @@ The following code example shows how to use `New-WKSTag`.
 **Tools for PowerShell V5**
 **Example 1: This example adds a new tag to a workspace named `ws-wsname`. The tag has a key of "Name", and a key value of `AWS_Workspace`.**
 
-```
+```powershell
 $tag = New-Object Amazon.WorkSpaces.Model.Tag
 $tag.Key = "Name"
 $tag.Value = "AWS_Workspace"
@@ -396,7 +396,7 @@ New-WKSTag -Region us-west-2 -WorkspaceId ws-wsname -Tag $tag
 ```
 **Example 2: This example adds multiple tags to a workspace named `ws-wsname`. One tag has a key of "Name" and a key value of `AWS_Workspace`; the other tag has a tag key of "Stage" and a key value of "Test".**
 
-```
+```powershell
 $tag = New-Object Amazon.WorkSpaces.Model.Tag
 $tag.Key = "Name"
 $tag.Value = "AWS_Workspace"
@@ -416,12 +416,12 @@ The following code example shows how to use `New-WKSWorkspace`.
 **Tools for PowerShell V5**
 **Example 1: Create a WorkSpace for the supplied bundle, directory, and user.**
 
-```
+```powershell
 New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME"}
 ```
 **Example 2: This example creates multiple WorkSpaces**
 
-```
+```powershell
 New-WKSWorkspace -Workspace @{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME_1"},@{"BundleID" = "wsb-1a2b3c4d"; "DirectoryId" = "d-1a2b3c4d"; "UserName" = "USERNAME_2"}
 ```
 +  For API details, see [CreateWorkspaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -434,7 +434,7 @@ The following code example shows how to use `Register-WKSIpGroup`.
 **Tools for PowerShell V5**
 **Example 1: This sample registers the specified IP Group with the specified Directory**
 
-```
+```powershell
 Register-WKSIpGroup -GroupId wsipg-23ahsdres -DirectoryId d-123412e123
 ```
 +  For API details, see [AssociateIpGroups](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -447,7 +447,7 @@ The following code example shows how to use `Register-WKSWorkspaceDirectory`.
 **Tools for PowerShell V5**
 **Example 1: This sample registers the specified directory for Workspaces Service**
 
-```
+```powershell
 Register-WKSWorkspaceDirectory -DirectoryId d-123412a123 -EnableWorkDoc $false
 ```
 +  For API details, see [RegisterWorkspaceDirectory](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -460,7 +460,7 @@ The following code example shows how to use `Remove-WKSIpGroup`.
 **Tools for PowerShell V5**
 **Example 1: This sample deletes the specified IP Group**
 
-```
+```powershell
 Remove-WKSIpGroup -GroupId wsipg-32fhgtred
 ```
 **Output:**
@@ -481,7 +481,7 @@ The following code example shows how to use `Remove-WKSTag`.
 **Tools for PowerShell V5**
 **Example 1: This sample removes the tag associated with the Workspace**
 
-```
+```powershell
 Remove-WKSTag -ResourceId ws-w10b3abcd -TagKey "Type"
 ```
 **Output:**
@@ -502,17 +502,17 @@ The following code example shows how to use `Remove-WKSWorkspace`.
 **Tools for PowerShell V5**
 **Example 1: Terminates multiple WorkSpaces. use of the -Force switch stops the cmdlet from prompting for confirmation.**
 
-```
+```powershell
 Remove-WKSWorkspace -WorkspaceId "ws-1a2b3c4d5","ws-6a7b8c9d0" -Force
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Remove-WKSWorkspace, terminating all of the WorkSpaces. The cmdlet will prompt before each WorkSpace is terminated. To suppress the confirmation prompt add the -Force switch.**
 
-```
+```powershell
 Get-WKSWorkspaces | Remove-WKSWorkspace
 ```
 **Example 3: This example shows how to pass TerminateRequest objects defining the WorkSpaces to be terminated. The cmdlet will prompt for confirmation before proceeding, unless the -Force switch parameter is also specified.**
 
-```
+```powershell
 $arrRequest = @()
 $request1 = New-Object Amazon.WorkSpaces.Model.TerminateRequest
 $request1.WorkspaceId = 'ws-12345678'
@@ -532,12 +532,12 @@ The following code example shows how to use `Reset-WKSWorkspace`.
 **Tools for PowerShell V5**
 **Example 1: Rebuilds the specified WorkSpace.**
 
-```
+```powershell
 Reset-WKSWorkspace -WorkspaceId "ws-1a2b3c4d"
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Reset-WKSWorkspace, causing the WorkSpaces to be rebuilt.**
 
-```
+```powershell
 Get-WKSWorkspaces | Reset-WKSWorkspace
 ```
 +  For API details, see [RebuildWorkspaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -550,17 +550,17 @@ The following code example shows how to use `Restart-WKSWorkspace`.
 **Tools for PowerShell V5**
 **Example 1: Reboots the specified WorkSpace.**
 
-```
+```powershell
 Restart-WKSWorkspace -WorkspaceId "ws-1a2b3c4d"
 ```
 **Example 2: Reboots multiple WorkSpaces.**
 
-```
+```powershell
 Restart-WKSWorkspace -WorkspaceId "ws-1a2b3c4d","ws-5a6b7c8d"
 ```
 **Example 3: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Restart-WKSWorkspace, causing the WorkSpaces to be restarted.**
 
-```
+```powershell
 Get-WKSWorkspaces | Restart-WKSWorkspace
 ```
 +  For API details, see [RebootWorkspaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -573,17 +573,17 @@ The following code example shows how to use `Stop-WKSWorkspace`.
 **Tools for PowerShell V5**
 **Example 1: Stops multiple WorkSpaces.**
 
-```
+```powershell
 Stop-WKSWorkspace -WorkspaceId "ws-1a2b3c4d5","ws-6a7b8c9d0"
 ```
 **Example 2: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Stop-WKSWorkspace causing the WorkSpaces to be stopped.**
 
-```
+```powershell
 Get-WKSWorkspaces | Stop-WKSWorkspace
 ```
 **Example 3: This example shows how to pass StopRequest objects defining the WorkSpaces to be stopped.**
 
-```
+```powershell
 $arrRequest = @()
 $request1 = New-Object Amazon.WorkSpaces.Model.StopRequest
 $request1.WorkspaceId = 'ws-12345678'
@@ -603,7 +603,7 @@ The following code example shows how to use `Unregister-WKSIpGroup`.
 **Tools for PowerShell V5**
 **Example 1: This sample unregisters the specified IP Group from the specified Directory**
 
-```
+```powershell
 Unregister-WKSIpGroup -GroupId wsipg-12abcdphq -DirectoryId d-123454b123
 ```
 +  For API details, see [DisassociateIpGroups](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -43,7 +43,7 @@ For more information, see [Register instances with your Classic Load Balancer](h
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified EC2 instance from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBInstanceFromLoadBalancer -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Output:**
@@ -64,7 +64,7 @@ i-87654321
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified EC2 instance from the specified load balancer. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-ELBInstanceFromLoadBalancer -LoadBalancerName my-load-balancer -Instance i-12345678
 ```
 **Output:**

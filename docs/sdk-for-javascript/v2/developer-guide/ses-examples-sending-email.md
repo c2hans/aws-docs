@@ -45,7 +45,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an object to pass the parameter values that define the email to be sent, including sender and receiver addresses, subject, email body in plain text and HTML formats, to the `sendEmail` method of the `AWS.SES` client class. To call the `sendEmail` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -106,7 +106,7 @@ sendPromise
 
 To run the example, type the following at the command line. The email is queued for sending by Amazon SES.
 
-```
+```javascript
 node ses_sendemail.js
 ```
 
@@ -119,7 +119,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an object to pass the parameter values that define the email to be sent, including sender and receiver addresses, subject, email body in plain text and HTML formats, to the `sendTemplatedEmail` method of the `AWS.SES` client class. To call the `sendTemplatedEmail` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -161,7 +161,7 @@ sendPromise
 
 To run the example, type the following at the command line. The email is queued for sending by Amazon SES.
 
-```
+```javascript
 node ses_sendtemplatedemail.js
 ```
 
@@ -174,7 +174,7 @@ In this example, use a Node.js module to send email with Amazon SES. Create a No
 
 Create an object to pass the parameter values that define the email to be sent, including sender and receiver addresses, subject, email body in plain text and HTML formats, to the `sendBulkTemplatedEmail` method of the `AWS.SES` client class. To call the `sendBulkTemplatedEmail` method, create a promise for invoking an Amazon SES service object, passing the parameters. Then handle the `response` in the promise callback.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -223,7 +223,7 @@ sendPromise
 
 To run the example, type the following at the command line. The email is queued for sending by Amazon SES.
 
-```
+```javascript
 node ses_sendbulktemplatedemail.js
 ```
 

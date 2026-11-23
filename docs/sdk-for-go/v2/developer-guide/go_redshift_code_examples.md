@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon Redshift.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -91,7 +91,7 @@ The following code example shows how to:
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 package scenarios
 
 import (
@@ -499,7 +499,7 @@ The following code example shows how to use `CreateCluster`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -551,7 +551,7 @@ The following code example shows how to use `DeleteCluster`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -604,7 +604,7 @@ The following code example shows how to use `DescribeClusters`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -647,7 +647,7 @@ The following code example shows how to use `ModifyCluster`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"

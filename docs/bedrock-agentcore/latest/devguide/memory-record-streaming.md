@@ -56,7 +56,7 @@ The following table describes the supported stream event types and when they are
 
  `MemoryRecordCreated` and `MemoryRecordUpdated` events share the same schema.
 
-```
+```json
 {
   "memoryStreamEvent": {
     "eventType": "<MemoryRecordCreated, MemoryRecordUpdated>",
@@ -78,7 +78,7 @@ The `memoryRecordText` field is only included when the content level on the stre
 ### MemoryRecordDeleted
 <a name="memory-record-streaming-deleted-schema"></a>
 
-```
+```json
 {
   "memoryStreamEvent": {
     "eventType": "MemoryRecordDeleted",
@@ -123,7 +123,7 @@ Create an IAM role that Amazon Bedrock AgentCore can assume to publish events to
 
 Trust policy:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -147,7 +147,7 @@ Permissions policy:
 
 For built-in memory strategies, the permissions policy looks like the following:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -165,7 +165,7 @@ For built-in memory strategies, the permissions policy looks like the following:
 
 For custom memory strategies, the permissions policy looks like the following:
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -199,7 +199,7 @@ For custom memory strategies, the permissions policy looks like the following:
 
 If your Kinesis Data Stream uses server-side encryption, add the following to the permissions policy:
 
-```
+```json
 {
   "Sid": "KMSPermissions",
   "Effect": "Allow",
@@ -213,7 +213,7 @@ If your Kinesis Data Stream uses server-side encryption, add the following to th
 
 Use the `CreateMemory` API to create an Amazon Bedrock AgentCore Memory with a stream delivery resource. You must provide the `memoryExecutionRoleArn` when specifying a stream delivery resource.
 
-```
+```bash
 aws bedrock-agentcore-control create-memory \
   --name "MyStreamingMemory" \
   --description "Memory with long term memory record streaming enabled" \
@@ -243,7 +243,7 @@ When you create a memory with streaming enabled, Amazon Bedrock AgentCore Memory
 
 Check your consumer for a validation event in the following format:
 
-```
+```json
 {
   "memoryStreamEvent": {
     "eventType": "StreamingEnabled",
@@ -273,7 +273,7 @@ Use the Data Plane APIs to generate memory record lifecycle events and verify th
 
 Create events via short-term memory (triggers asynchronous extraction):
 
-```
+```bash
 aws bedrock-agentcore create-event \
   --memory-id "<memory-id>" \
   --actor-id "test-user" \
@@ -297,7 +297,7 @@ aws bedrock-agentcore create-event \
 
 Create records directly:
 
-```
+```bash
 aws bedrock-agentcore batch-create-memory-records \
   --memory-id "<memory-id>" \
   --records '[
@@ -319,7 +319,7 @@ You can also monitor delivery health using [Metrics](#memory-record-streaming-me
 
 You can use the `ListMemoryRecords` API to cross-reference:
 
-```
+```bash
 aws bedrock-agentcore list-memory-records \
   --memory-id "<memory-id>" \
   --namespace "<namespace>"
@@ -335,7 +335,7 @@ Use the `UpdateMemory` API to modify or remove the stream delivery resource.
 
 Remove streaming:
 
-```
+```bash
 aws bedrock-agentcore-control update-memory \
   --region us-east-1 \
   --memory-id "<memory-id>" \
@@ -345,7 +345,7 @@ aws bedrock-agentcore-control update-memory \
 ### Change content level
 <a name="memory-record-streaming-change-content-level"></a>
 
-```
+```bash
 aws bedrock-agentcore-control update-memory \
   --memory-id "<memory-id>" \
   --stream-delivery-resources '{

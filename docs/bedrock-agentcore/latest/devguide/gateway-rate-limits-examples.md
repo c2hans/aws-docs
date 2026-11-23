@@ -15,7 +15,7 @@ The following example creates a rate limit that controls requests per second on 
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --dimension-keys '["targetName"]' \
@@ -44,7 +44,7 @@ The following example creates a rate limit that controls requests per second on 
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -87,7 +87,7 @@ The following example creates a rate limit based on the caller’s JWT `sub` cla
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --dimension-keys '["$.context.jwt.sub"]' \
@@ -125,7 +125,7 @@ The following example creates a rate limit based on the caller’s JWT `sub` cla
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -177,7 +177,7 @@ The following example creates a rate limit with three dimension keys that limits
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --dimension-keys '["targetName", "qualifiedModelId", "$.context.jwt.sub"]' \
@@ -218,7 +218,7 @@ The following example creates a rate limit with three dimension keys that limits
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -273,7 +273,7 @@ The following example creates a connection rate limit per model. This limits the
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --dimension-keys '["qualifiedModelId"]' \
@@ -302,7 +302,7 @@ The following example creates a connection rate limit per model. This limits the
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -345,7 +345,7 @@ The following example blocks a specific caller by setting their rate to 0. This 
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --dimension-keys '["$.context.jwt.sub"]' \
@@ -374,7 +374,7 @@ The following example blocks a specific caller by setting their rate to 0. This 
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -417,7 +417,7 @@ The following example rate limits by a caller-supplied `X-Customer-Id` request h
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control create-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --dimension-keys '["$.context.request.header.X-Customer-Id", "$.context.jwt.sub"]' \
@@ -446,7 +446,7 @@ The following example rate limits by a caller-supplied `X-Customer-Id` request h
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -489,7 +489,7 @@ The following example retrieves the details of a specific rate limit.
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control get-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --rate-limit-id rl-abc123def456
@@ -497,7 +497,7 @@ The following example retrieves the details of a specific rate limit.
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -524,7 +524,7 @@ The `dimensionKeys` field is immutable after creation. To change dimension keys,
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control update-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --rate-limit-id rl-abc123def456 \
@@ -553,7 +553,7 @@ The `dimensionKeys` field is immutable after creation. To change dimension keys,
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -596,14 +596,14 @@ The following example lists all rate limits for a gateway.
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control list-gateway-rate-limits \
        --gateway-identifier my-gateway-abc1234567
    ```
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -631,7 +631,7 @@ The following example deletes a rate limit from a gateway.
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control delete-gateway-rate-limit \
        --gateway-identifier my-gateway-abc1234567 \
        --rate-limit-id rl-abc123def456
@@ -639,7 +639,7 @@ The following example deletes a rate limit from a gateway.
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")
@@ -664,7 +664,7 @@ Batch put is idempotent. You can safely retry failed calls without creating dupl
 
 1. Run the following command:
 
-   ```
+   ```bash
    aws bedrock-agentcore-control batch-put-gateway-rate-limits \
        --gateway-identifier my-gateway-abc1234567 \
        --rate-limits '[
@@ -693,7 +693,7 @@ Batch put is idempotent. You can safely retry failed calls without creating dupl
 
 1.
 
-   ```
+   ```python
    import boto3
 
    client = boto3.client("bedrock-agentcore-control", region_name="us-west-2")

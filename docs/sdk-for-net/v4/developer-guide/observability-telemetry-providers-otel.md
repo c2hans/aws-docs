@@ -16,7 +16,7 @@ The AWS SDK for .NET includes an implementation of an OpenTelemetry-based teleme
 
 The OpenTelemetry implementation included with the SDK can be configured to reduce the amount of tracing for HTTPS requests, credentials, and compression. To do so, set the `SuppressDownstreamInstrumentation` option to `true`, similar to the following:
 
-```
+```cs
 Sdk.CreateTracerProviderBuilder()
     .ConfigureResource(e => e.AddService("DemoOtel"))
     .AddAWSInstrumentation(options => options.SuppressDownstreamInstrumentation = true)

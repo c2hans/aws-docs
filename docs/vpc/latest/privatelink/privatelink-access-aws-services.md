@@ -83,7 +83,7 @@ aws ec2 describe-vpc-endpoints --vpc-endpoint-id {{vpce-099deb00b40f00e22}} --qu
 
 The following is example output for an interface endpoint for Amazon CloudWatch with private DNS names enabled. The first entry is the private Regional endpoint. The next three entries are the private zonal endpoints. The final entry is from the hidden private hosted zone, which resolves requests to the public endpoint to the private IP addresses of the endpoint network interfaces.
 
-```
+```json
 [
     [
         {

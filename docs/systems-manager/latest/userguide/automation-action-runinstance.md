@@ -15,7 +15,7 @@ The action supports most API parameters. For more information, see the [RunInsta
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: launchInstance
 action: aws:runInstances
 maxAttempts: 3
@@ -39,7 +39,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "name":"launchInstance",
    "action":"aws:runInstances",

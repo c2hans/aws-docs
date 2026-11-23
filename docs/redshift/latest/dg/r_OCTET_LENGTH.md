@@ -40,7 +40,7 @@ If *expression* is a `VARCHAR` string, trailing spaces are counted.
 
 To return the number of bytes when the string `francais` with three trailing spaces is cast to a `CHAR` and a `VARCHAR` type, use the following example. For more information, see the [CAST function](r_CAST_function.md).
 
-```
+```sql
 SELECT OCTET_LENGTH(CAST('francais   ' AS CHAR(15))) AS octet_length_char, OCTET_LENGTH(CAST('francais   ' AS VARCHAR(15))) AS octet_length_varchar;
 
 +-------------------+----------------------+
@@ -52,7 +52,7 @@ SELECT OCTET_LENGTH(CAST('francais   ' AS CHAR(15))) AS octet_length_char, OCTET
 
 To return the number of bytes and the number of characters in the string `français`, use the following example.
 
-```
+```sql
 SELECT OCTET_LENGTH('français'), LEN('français');
 
 +--------------+-----+
@@ -64,7 +64,7 @@ SELECT OCTET_LENGTH('français'), LEN('français');
 
 To return the number of bytes when the string `français` is cast as a `VARBYTE`, use the following example.
 
-```
+```sql
 SELECT OCTET_LENGTH(CAST('français' AS VARBYTE));
 
 +--------------+

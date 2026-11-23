@@ -24,7 +24,7 @@ AL2023 uses the cloud-init actions in `/etc/cloud/cloud.cfg.d` and `/etc/cloud/c
   + By default, for the `m1.small` and `c1.medium` instance types, all swap volumes that are associated with the instance are mounted.
   + You can override the default instance store volume mount with the following cloud-init directive:
 
-    ```
+    ```yaml
     #cloud-config
     mounts:
     - [ ephemeral0 ]

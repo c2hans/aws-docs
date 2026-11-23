@@ -51,7 +51,7 @@ The service role created by AWS IoT SiteWise for the user, if the user chose to 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -75,7 +75,7 @@ The service role created by AWS IoT SiteWise for the user, if the user chose to 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -94,7 +94,7 @@ The service role created by AWS IoT SiteWise for the user, if the user chose to 
 
 1.  Create a file **create-dataset.json** with the template provided in the example. Populate `datasetId`, `kendra knowledgeBaseArn` and `roleArn` to connect with this dataset.
 
-   ```
+   ```json
    {
        "datasetId": "<UUID>",
        "datasetName": "DatasetForAssistant",
@@ -113,7 +113,7 @@ The service role created by AWS IoT SiteWise for the user, if the user chose to 
 
 1.  Create the dataset with the following command:
 
-   ```
+   ```json
    aws iotsitewise create-dataset --cli-input-json {{file://create-dataset.json}} —-region us-east-1
    ```
 

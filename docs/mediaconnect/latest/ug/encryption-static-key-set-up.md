@@ -71,7 +71,7 @@ In [step 1](#encryption-static-key-set-up-store-key), you created a secret and s
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -145,7 +145,7 @@ The following example uses both the **Account ID** and **flow ARN** conditions. 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -11,7 +11,7 @@ The following example policy grants account 111122223333 permission to send all 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

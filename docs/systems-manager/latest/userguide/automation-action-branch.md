@@ -15,7 +15,7 @@ The `aws:branch` action supports complex choice evaluations by using a combinati
 **Input**
 Specify one or more `Choices` in a step. The `Choices` can be based on either a value that you specified in the `Parameters` section of the runbook, or a dynamic value generated as the output from the previous step. Here is a YAML sample that evaluates a parameter.
 
-```
+```yaml
 mainSteps:
 - name: chooseOS
   action: aws:branch
@@ -33,7 +33,7 @@ mainSteps:
 
 Here is a YAML sample that evaluates output from a previous step.
 
-```
+```yaml
 mainSteps:
 - name: chooseOS
   action: aws:branch

@@ -45,7 +45,7 @@ Use the following `put-items` command to add one or more items with the AWS CLI.
 
 For `properties`, for each field in your Items dataset, replace the `propertyName` with the field name from your schema in camel case. For example, GENRES would be `genres` and CREATION\_TIMESTAMP would be creationTimestamp. Replace `item data` with the data for the item. `CREATION_TIMESTAMP` data must be in [Unix epoch time format](interactions-datasets.md#timestamp-data) and in seconds. For categorical string data, to include multiple categories for a single property, separate each category with a pipe (`|`). For example `\"Horror|Action\"`.
 
-```
+```cmd
 aws personalize-events put-items \
   --dataset-arn {{dataset arn}} \
   --items '[{
@@ -70,7 +70,7 @@ For categorical string data, to include multiple categories for a single propert
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize_events = boto3.client(service_name='personalize-events')
@@ -91,7 +91,7 @@ personalize_events.put_items(
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static int putItems(PersonalizeEventsClient personalizeEventsClient,
                            String datasetArn,
                            String item1Id,
@@ -140,7 +140,7 @@ public static int putItems(PersonalizeEventsClient personalizeEventsClient,
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 import {
   PutItemsCommand,
   PersonalizeEventsClient,

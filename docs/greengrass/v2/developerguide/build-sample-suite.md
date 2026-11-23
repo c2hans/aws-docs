@@ -60,7 +60,7 @@ To complete this tutorial, you need the following:
 
 Configure your device information for IDT to run the test. You must update the `device.json` template located in the `{{<device-tester-extract-location>}}/configs` folder with the following information.
 
-```
+```json
 [
   {
     "id": "pool",

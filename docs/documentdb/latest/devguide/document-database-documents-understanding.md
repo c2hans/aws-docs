@@ -36,7 +36,7 @@ All documents in a document database are self-describing. This documentation use
 
 A simple document has one or more fields that are all at the same level within the document. In the following example, the fields `SSN`, `LName`, `FName`, `DOB`, `Street`, `City`, `State-Province`, `PostalCode`, and `Country` are all siblings within the document.
 
-```
+```json
 {
    "SSN": "123-45-6789",
    "LName": "Rivera",
@@ -57,7 +57,7 @@ When information is organized in a simple document, each field is managed indivi
 
 A complex document organizes its data by creating embedded documents within the document. Embedded documents help manage data in groupings and as individual data items, whichever is more efficient in a given case. Using the preceding example, you could embed an `Address` document in the main document. Doing this results in the following document structure:
 
-```
+```json
 {
    "SSN": "123-45-6789",
    "LName": "Rivera",
@@ -83,7 +83,7 @@ As stated earlier, because each document in a document database is self-describi
 
 The following is a sample book document:
 
-```
+```json
 {
     "_id" : "9876543210123",
     "Type": "book",
@@ -100,7 +100,7 @@ The following is a sample book document:
 
 The following is a sample periodical document with two articles:
 
-```
+```json
 {
     "_id" : "0123456789012",
     "Publication": "Programming Today",
@@ -140,7 +140,7 @@ Developing against a document database enables quick, iterative development. Thi
 
 Document databases are not normalized; data found in one document can be repeated in another document. Further, some data discrepancies can exist between documents. For example, consider the scenario in which you make a purchase at an online store and all the details of your purchases are stored in a single document. The document might look something like the following JSON document:
 
-```
+```json
 {
     "DateTime": "2018-08-15T12:13:10Z",
     "LName" : "Santos",
@@ -177,7 +177,7 @@ Document databases are not normalized; data found in one document can be repeate
 
 All this information is stored as a document in a transaction collection. Later, you realize that you forgot to purchase one item. So you again log on to the same store and make another purchase, which is also stored as another document in the transaction collection.
 
-```
+```json
 {
     "DateTime": "2018-08-15T14:49:00Z",
     "LName" : "Santos",

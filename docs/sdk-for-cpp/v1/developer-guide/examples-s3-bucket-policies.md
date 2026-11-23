@@ -22,7 +22,7 @@ You can set the bucket policy for a particular S3 bucket by calling the `S3Clien
 
  **Code**
 
-```
+```cpp
 //! Build a policy JSON string.
 /*!
   \param userArn: Aws user Amazon Resource Name (ARN).
@@ -54,7 +54,7 @@ Aws::String getPolicyString(const Aws::String &userArn,
 }
 ```
 
-```
+```cpp
 bool AwsDoc::S3::putBucketPolicy(const Aws::String &bucketName,
                                  const Aws::String &policyBody,
                                  const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -96,7 +96,7 @@ To retrieve the policy for an Amazon S3 bucket, call the `S3Client`’s `GetBuck
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::getBucketPolicy(const Aws::String &bucketName,
                                  const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client s3Client(clientConfig);
@@ -135,7 +135,7 @@ To delete a bucket policy, call the `S3Client`’s `DeleteBucketPolicy` function
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucketPolicy(const Aws::String &bucketName,
                                     const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);

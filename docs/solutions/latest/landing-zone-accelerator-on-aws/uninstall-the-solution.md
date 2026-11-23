@@ -28,11 +28,11 @@ Determine whether the AWS Command Line Interface (AWS CLI) is available in your 
 **Note**
 These stacks will have TerminationProtection enabled and need to be disabled prior to deletion. Follow the steps outlined in [Problem: "ValidationError: Stack <stack-name> cannot be deleted while TerminationProtection is enabled"](problem-validationerror.md).
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name AWSAccelerator-InstallerStack
 ```
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name AWSAccelerator-PipelineStack
 ```
 
@@ -53,7 +53,7 @@ This solution is configured to retain the solution-created Amazon S3 buckets if 
 
 To delete the Amazon S3 buckets using AWS CLI, run the following command for each bucket:
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```
 
@@ -62,7 +62,7 @@ $ aws s3 rb s3://<bucket-name> --force
 
 This solution deploys several CloudFormation stacks to each account and AWS Region that’s activated for management by Landing Zone Accelerator on AWS. Each stack deployed by the solution uses the following naming convention:
 
-```
+```bash
 AWSAccelerator-<pipeline action>-<account number>-<region>
 ```
 

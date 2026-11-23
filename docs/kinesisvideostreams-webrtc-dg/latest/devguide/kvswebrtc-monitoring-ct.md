@@ -44,7 +44,7 @@ For more information, see the [CloudTrail userIdentity Element](https://docs.aws
 
 The following example shows a CloudTrail log entry that demonstrates the [CreateSignalingChannel](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_CreateSignalingChannel.html) action.
 
-```
+```json
 {
    "eventVersion":"1.05",
    "userIdentity":{

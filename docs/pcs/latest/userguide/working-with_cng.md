@@ -20,3 +20,4 @@ Most compute-bound HPC workloads see equivalent or better performance with SMT d
 + [Finding compute node group instances in AWS PCS](working-with_compute-instances.md)
 + [Configuring instance settings for compute node groups in AWS PCS](working-with_cng_instance-settings.md)
 + [Run custom scripts with node lifecycle actions in AWS PCS](cng-node-lifecycle-actions.md)
++ [Detecting and repairing hardware faults with instance health checks](cng-instance-health-checks.md)

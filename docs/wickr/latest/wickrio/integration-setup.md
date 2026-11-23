@@ -18,7 +18,7 @@ Complete the following procedure to setup a new custom Wickr IO integration.
 
 1. In the root directory of your new package, create a file named `processes.json` with the following contents:
 
-   ```
+   ```json
    {
      "apps": [
        {

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-domainaccessassociation-syntax.yaml"></a>
 
-```
+```yaml
  VpcEndpointId: {{String}}
 ```
 

@@ -120,7 +120,7 @@ This example lists the identity stores that you have access to.
 #### Sample Request
 <a name="API_ListIdentityStores_Example_1_Request"></a>
 
-```
+```json
 {
     "MaxResults": 10,
     "NextToken": ""
@@ -130,7 +130,7 @@ This example lists the identity stores that you have access to.
 #### Sample Response
 <a name="API_ListIdentityStores_Example_1_Response"></a>
 
-```
+```json
 {
     "IdentityStores": [
         {

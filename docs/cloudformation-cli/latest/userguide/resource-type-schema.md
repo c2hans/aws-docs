@@ -11,7 +11,7 @@ To be considered valid, your resource type's schema must adhere to the [Resource
 
 Below is the structure for a typical resource type schema. For the complete meta-schema definition, see the [Resource Provider Definition Schema](https://github.com/aws-cloudformation/cloudformation-cli/blob/master/src/rpdk/core/data/schema/provider.definition.schema.v1.json) on [GitHub](https://github.com).
 
-```
+```json
 {
     "typeName": "string",
     "description": "string",
@@ -192,7 +192,7 @@ Any properties that are required if this property is specified.
 `patternProperties`  <a name="schema-properties-properties-patternproperties"></a>
 Use to specify a specification for key-value pairs.
 
-```
+```json
 "type": "object",
 "propertyNames": {
    "format": "regex"

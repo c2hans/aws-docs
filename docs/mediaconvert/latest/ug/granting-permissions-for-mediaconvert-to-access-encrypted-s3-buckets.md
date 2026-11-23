@@ -24,7 +24,7 @@ This policy grants permissions for both `kms:Decrypt` and `kms:GenerateDataKey`.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

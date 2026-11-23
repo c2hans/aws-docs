@@ -59,7 +59,7 @@ This section describes how to configure distribution settings with a launch temp
 
    The following sample file, named `create-distribution-config-launch-template.json`, shows a few possible scenarios for launch template configuration in the source Region:
 
-   ```
+   ```json
    {
        "name": "NewDistributionConfiguration",
        "description": "This is just a test",
@@ -114,7 +114,7 @@ Tools for PowerShell doesn't take a JSON input file. Instead, each top-level JSO
 
 The following example shows how to use the [New-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBDistributionConfiguration.html) cmdlet to create distribution settings with the same launch template configurations as the AWS CLI example:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 $distribution = [Amazon.Imagebuilder.Model.Distribution]@{
     Region = "us-west-2"

@@ -24,7 +24,7 @@ For information about setting up and configuring the AWS Command Line Interface 
 **List all maintenance windows in your AWS account**
 Run the following command.
 
-```
+```sh
 aws ssm describe-maintenance-windows
 ```
 
@@ -56,7 +56,7 @@ The system returns information similar to the following.
 **List all enabled maintenance windows**
 Run the following command.
 
-```
+```sh
 aws ssm describe-maintenance-windows --filters "Key=Enabled,Values=true"
 ```
 
@@ -88,7 +88,7 @@ The system returns information similar to the following.
 **List all disabled maintenance windows**
 Run the following command.
 
-```
+```sh
 aws ssm describe-maintenance-windows --filters "Key=Enabled,Values=false"
 ```
 
@@ -111,7 +111,7 @@ The system returns information similar to the following.
 **List all maintenance windows having names that start with a certain prefix**
 Run the following command.
 
-```
+```sh
 aws ssm describe-maintenance-windows --filters "Key=Name,Values={{My}}"
 ```
 
@@ -156,7 +156,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-targets \
     --window-id "{{mw-6e5c9d4b7cEXAMPLE}}" \
     --filters "Key=OwnerInformation,Values={{CostCenter1}}"
@@ -165,7 +165,7 @@ aws ssm describe-maintenance-window-targets \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-targets ^
     --window-id "{{mw-6e5c9d4b7cEXAMPLE}}" ^
     --filters "Key=OwnerInformation,Values={{CostCenter1}}"
@@ -209,7 +209,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-tasks \
     --window-id "{{mw-0c50858d01EXAMPLE}}" \
     --filters "Key=TaskArn,Values=AWS-RunPowerShellScript"
@@ -218,7 +218,7 @@ aws ssm describe-maintenance-window-tasks \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-tasks ^
     --window-id "{{mw-0c50858d01EXAMPLE}}" ^
     --filters "Key=TaskArn,Values=AWS-RunPowerShellScript"
@@ -285,7 +285,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-tasks \
     --window-id "{{mw-9a8b7c6d5eEXAMPLE}}" \
     --filters "Key=Priority,Values={{3}}"
@@ -294,7 +294,7 @@ aws ssm describe-maintenance-window-tasks \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-tasks ^
     --window-id "{{mw-9a8b7c6d5eEXAMPLE}}" ^
     --filters "Key=Priority,Values={{3}}"
@@ -339,7 +339,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-tasks \
     --window-id "{{mw-0c50858d01EXAMPLE}}" \
     --filters "Key=Priority,Values={{1}}" "Key=TaskType,Values=RUN_COMMAND"
@@ -348,7 +348,7 @@ aws ssm describe-maintenance-window-tasks \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-tasks ^
     --window-id "{{mw-0c50858d01EXAMPLE}}" ^
     --filters "Key=Priority,Values={{1}}" "Key=TaskType,Values=RUN_COMMAND"
@@ -414,7 +414,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-windows-for-target \
     --resource-type INSTANCE \
     --targets "Key=InstanceIds,Values=i-02573cafcfEXAMPLE" \
@@ -424,7 +424,7 @@ aws ssm describe-maintenance-windows-for-target \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-windows-for-target ^
     --resource-type INSTANCE ^
     --targets "Key=InstanceIds,Values=i-02573cafcfEXAMPLE" ^
@@ -459,7 +459,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-executions \
     --window-id "{{mw-9a8b7c6d5eEXAMPLE}}" \
     --filters "Key=ExecutedBefore,Values={{2019-05-12T05:00:00Z}}"
@@ -468,7 +468,7 @@ aws ssm describe-maintenance-window-executions \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-executions ^
     --window-id "{{mw-9a8b7c6d5eEXAMPLE}}" ^
     --filters "Key=ExecutedBefore,Values={{2019-05-12T05:00:00Z}}"
@@ -513,7 +513,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-executions \
     --window-id "{{mw-9a8b7c6d5eEXAMPLE}}" \
     --filters "Key=ExecutedAfter,Values={{2018-12-31T17:00:00Z}}"
@@ -522,7 +522,7 @@ aws ssm describe-maintenance-window-executions \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-executions ^
     --window-id "{{mw-9a8b7c6d5eEXAMPLE}}" ^
     --filters "Key=ExecutedAfter,Values={{2018-12-31T17:00:00Z}}"
@@ -570,7 +570,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-schedule \
     --resource-type INSTANCE \
     --targets "Key=InstanceIds,Values=i-07782c72faEXAMPLE" \
@@ -580,7 +580,7 @@ aws ssm describe-maintenance-window-schedule \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-schedule ^
     --resource-type INSTANCE ^
     --targets "Key=InstanceIds,Values=i-07782c72faEXAMPLE" ^
@@ -655,7 +655,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-schedule \
     --resource-type INSTANCE \
     --targets "Key=tag:prod,Values=rhel7"
@@ -664,7 +664,7 @@ aws ssm describe-maintenance-window-schedule \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-schedule ^
     --resource-type INSTANCE ^
     --targets "Key=tag:prod,Values=rhel7"
@@ -713,7 +713,7 @@ Run the following command.
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 aws ssm describe-maintenance-window-schedule \
     --window-id "{{mw-0c50858d01EXAMPLE}}" \
     --max-results "4"
@@ -722,7 +722,7 @@ aws ssm describe-maintenance-window-schedule \
 ------
 #### [ Windows ]
 
-```
+```sh
 aws ssm describe-maintenance-window-schedule ^
     --window-id "{{mw-0c50858d01EXAMPLE}}" ^
     --max-results "4"

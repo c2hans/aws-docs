@@ -54,7 +54,7 @@ No manual download or installation is required. When you add the MCP server to y
 
 To configure the MCP server, add the following JSON to your AI assistant’s MCP configuration file. Replace `YOUR_AWS_PROFILE` with the name of your AWS profile.
 
-```
+```json
 {
   "mcpServers": {
     "awslabs.aws-for-sap-management-mcp-server": {
@@ -79,7 +79,7 @@ If your configuration file does not exist, create it with the complete structure
 
 You can also use the ** AWS API MCP Server** alongside the ** AWS for SAP Management MCP Server** for general-purpose AWS API access. To use both servers, add the following combined configuration to your MCP configuration file.
 
-```
+```json
 {
   "mcpServers": {
     "awslabs.aws-for-sap-management-mcp-server": {

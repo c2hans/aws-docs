@@ -9,7 +9,7 @@ Defines an AWS Helm Node.
 ## Syntax
 <a name="node-helm-syntax"></a>
 
-```
+```yaml
 tosca.nodes.AWS.Artifacts.Helm:
   properties:
     implementation: String
@@ -26,7 +26,7 @@ Type: String
 ## Example
 <a name="node-helm-example"></a>
 
-```
+```yaml
 SampleHelm:
   type: tosca.nodes.AWS.Artifacts.Helm
   properties:

@@ -276,7 +276,7 @@ Step 1: Attach the following minimal required policy to your AWS Glue job runtim
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -29,7 +29,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/018-ecs-ec2) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS EC2 Launch Type Tutorial Script - UPDATED VERSION
@@ -716,7 +716,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/013-ec2-basics) repository.
 
-```
+```bash
 #!/bin/bash
 
 # EC2 Basics Tutorial Script - Revised
@@ -1141,7 +1141,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/046-aws-systems-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Systems Manager Setup Script

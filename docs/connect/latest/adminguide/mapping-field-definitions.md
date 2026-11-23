@@ -8,7 +8,7 @@ An object type mapping has two parts: field definitions and key definitions. Thi
 
 A field defines a single piece of data extracted from a source object. Each field specifies a source, an optional target, and a content type:
 
-```
+```json
 "Fields": {
     "{fieldName}": {
         "Source": "{source}",
@@ -28,7 +28,7 @@ The `Source` tells Customer Profiles where to read the field's value from the in
 
 Most fields use a simple JSON accessor:
 
-```
+```json
 "FirstName": {
     "Source": "_source.FirstName",
     "Target": "_profile.FirstName",

@@ -157,7 +157,7 @@ Before running the sample notebook, refer to the following tables for selecting 
 
 The following sample notebook demonstrates how to run a training job. For additional getting started notebooks on how to customize Nova models using SageMaker Training Jobs, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
-```
+```Python
 # 1. Install dependencies
 
 !pip install sagemaker==2.254.1
@@ -242,7 +242,7 @@ For details about minimum, maximum, and default values for epochs, learning rate
 Here are some common recipe adjustments based on specific use cases:
 + **For smaller datasets (< 1,000 examples)**
 
-  ```
+  ```yaml
   training_config:
       max_epochs: 2  # More passes through a smaller dataset
   model:
@@ -251,14 +251,14 @@ Here are some common recipe adjustments based on specific use cases:
   ```
 + **For efficiency with limited compute**
 
-  ```
+  ```yaml
   peft:
       peft_scheme: "lora"
       lora_tuning:
   ```
 + **For complex instruction tuning**
 
-  ```
+  ```yaml
   optim:
       lr: 5e-6  # Lower learning rate for more stable learning
       sched:

@@ -27,27 +27,27 @@ The following example applies the tag **key** with the value **value** to a cons
 
 **Example**
 
-```
+```javascript
 Tags.of(myConstruct).add('key', 'value');
 ```
 
-```
+```javascript
 Tags.of(myConstruct).add('key', 'value');
 ```
 
-```
+```python
 Tags.of(my_construct).add("key", "value")
 ```
 
-```
+```java
 Tags.of(myConstruct).add("key", "value");
 ```
 
-```
+```csharp
 Tags.Of(myConstruct).Add("key", "value");
 ```
 
-```
+```go
 awscdk.Tags_Of(myConstruct).Add(jsii.String("key"), jsii.String("value"), &awscdk.TagProps{})
 ```
 
@@ -55,27 +55,27 @@ The following example deletes the tag **key** from a construct.
 
 **Example**
 
-```
+```javascript
 Tags.of(myConstruct).remove('key');
 ```
 
-```
+```javascript
 Tags.of(myConstruct).remove('key');
 ```
 
-```
+```python
 Tags.of(my_construct).remove("key")
 ```
 
-```
+```java
 Tags.of(myConstruct).remove("key");
 ```
 
-```
+```csharp
 Tags.Of(myConstruct).Remove("key");
 ```
 
-```
+```go
 awscdk.Tags_Of(myConstruct).Remove(jsii.String("key"), &awscdk.TagProps{})
 ```
 
@@ -90,32 +90,32 @@ The following applies a tag with a priority of 300 to a construct.
 
 **Example**
 
-```
+```javascript
 Tags.of(myConstruct).add('key', 'value', {
   priority: 300
 });
 ```
 
-```
+```javascript
 Tags.of(myConstruct).add('key', 'value', {
   priority: 300
 });
 ```
 
-```
+```python
 Tags.of(my_construct).add("key", "value", priority=300)
 ```
 
-```
+```java
 Tags.of(myConstruct).add("key", "value", TagProps.builder()
         .priority(300).build());
 ```
 
-```
+```csharp
 Tags.Of(myConstruct).Add("key", "value", new TagProps { Priority = 300 });
 ```
 
-```
+```go
 awscdk.Tags_Of(myConstruct).Add(jsii.String("key"), jsii.String("value"), &awscdk.TagProps{
   Priority: jsii.Number(300),
 })
@@ -139,7 +139,7 @@ The following example applies the tag **tagname** with the value **value** and p
 
 **Example**
 
-```
+```javascript
 Tags.of(myConstruct).add('tagname', 'value', {
   applyToLaunchedInstances: false,
   includeResourceTypes: ['AWS::Xxx::Yyy'],
@@ -148,7 +148,7 @@ Tags.of(myConstruct).add('tagname', 'value', {
 });
 ```
 
-```
+```javascript
 Tags.of(myConstruct).add('tagname', 'value', {
   applyToLaunchedInstances: false,
   includeResourceTypes: ['AWS::Xxx::Yyy'],
@@ -157,7 +157,7 @@ Tags.of(myConstruct).add('tagname', 'value', {
 });
 ```
 
-```
+```python
 Tags.of(my_construct).add("tagname", "value",
     apply_to_launched_instances=False,
     include_resource_types=["AWS::Xxx::Yyy"],
@@ -165,7 +165,7 @@ Tags.of(my_construct).add("tagname", "value",
     priority=100)
 ```
 
-```
+```java
 Tags.of(myConstruct).add("tagname", "value", TagProps.builder()
                 .applyToLaunchedInstances(false)
                 .includeResourceTypes(Arrays.asList("AWS::Xxx::Yyy"))
@@ -173,7 +173,7 @@ Tags.of(myConstruct).add("tagname", "value", TagProps.builder()
                 .priority(100).build());
 ```
 
-```
+```csharp
 Tags.Of(myConstruct).Add("tagname", "value", new TagProps
 {
     ApplyToLaunchedInstances = false,
@@ -183,7 +183,7 @@ Tags.Of(myConstruct).Add("tagname", "value", new TagProps
 });
 ```
 
-```
+```go
 awscdk.Tags_Of(myConstruct).Add(jsii.String("tagname"), jsii.String("value"), &awscdk.TagProps{
   ApplyToLaunchedInstances: jsii.Bool(false),
   IncludeResourceTypes:     &[]*string{jsii.String("AWS::Xxx:Yyy")},
@@ -196,7 +196,7 @@ The following example removes the tag **tagname** with priority **200** from res
 
 **Example**
 
-```
+```javascript
 Tags.of(myConstruct).remove('tagname', {
   includeResourceTypes: ['AWS::Xxx::Yyy'],
   excludeResourceTypes: ['AWS::Xxx::Zzz'],
@@ -204,7 +204,7 @@ Tags.of(myConstruct).remove('tagname', {
 });
 ```
 
-```
+```javascript
 Tags.of(myConstruct).remove('tagname', {
   includeResourceTypes: ['AWS::Xxx::Yyy'],
   excludeResourceTypes: ['AWS::Xxx::Zzz'],
@@ -212,14 +212,14 @@ Tags.of(myConstruct).remove('tagname', {
 });
 ```
 
-```
+```python
 Tags.of(my_construct).remove("tagname",
     include_resource_types=["AWS::Xxx::Yyy"],
     exclude_resource_types=["AWS::Xxx::Zzz"],
     priority=200,)
 ```
 
-```
+```java
 Tags.of((myConstruct).remove("tagname", TagProps.builder()
         .includeResourceTypes(Arrays.asList("AWS::Xxx::Yyy"))
         .excludeResourceTypes(Arrays.asList("AWS::Xxx::Zzz"))
@@ -227,7 +227,7 @@ Tags.of((myConstruct).remove("tagname", TagProps.builder()
         )
 ```
 
-```
+```csharp
 Tags.Of(myConstruct).Remove("tagname", new TagProps
 {
     IncludeResourceTypes = ["AWS::Xxx::Yyy"],
@@ -236,7 +236,7 @@ Tags.Of(myConstruct).Remove("tagname", new TagProps
 });
 ```
 
-```
+```go
 awscdk.Tags_Of(myConstruct).Remove(jsii.String("tagname"), &awscdk.TagProps{
   IncludeResourceTypes: &[]*string{jsii.String("AWS::Xxx:Yyy")},
   ExcludeResourceTypes: &[]*string{jsii.String("AWS::Xxx:Zzz")},
@@ -251,7 +251,7 @@ The following example adds the tag key **StackType** with value **TheBest** to a
 
 **Example**
 
-```
+```javascript
 import { App, Stack, Tags } from 'aws-cdk-lib';
 
 const app = new App();
@@ -266,7 +266,7 @@ Tags.of(theBestStack).remove('StackType', {
 });
 ```
 
-```
+```javascript
 const { App, Stack, Tags } = require('aws-cdk-lib');
 
 const app = new App();
@@ -281,7 +281,7 @@ Tags.of(theBestStack).remove('StackType', {
 });
 ```
 
-```
+```python
 from aws_cdk import App, Stack, Tags
 
 app = App();
@@ -295,7 +295,7 @@ Tags.of(the_best_stack).remove("StackType",
     exclude_resource_types=["AWS::EC2::Subnet"])
 ```
 
-```
+```java
 import software.amazon.awscdk.App;
 import software.amazon.awscdk.Tags;
 
@@ -308,7 +308,7 @@ Tags.of(theBestStack).remove("StackType", TagProps.builder()
         .build());
 ```
 
-```
+```csharp
 using Amazon.CDK;
 
 var app = new App();
@@ -324,7 +324,7 @@ Tags.Of(theBestStack).Remove("StackType", new TagProps
 });
 ```
 
-```
+```go
 import "github.com/aws/aws-cdk-go/awscdk/v2"
 app := awscdk.NewApp(nil)
 theBestStack := awscdk.NewStack(app, jsii.String("MarketingSystem"), &awscdk.StackProps{})
@@ -342,34 +342,34 @@ The following code achieves the same result. Consider which approach (inclusion 
 
 **Example**
 
-```
+```javascript
 Tags.of(theBestStack).add('StackType', 'TheBest',
   { includeResourceTypes: ['AWS::EC2::Subnet']});
 ```
 
-```
+```javascript
 Tags.of(theBestStack).add('StackType', 'TheBest',
   { includeResourceTypes: ['AWS::EC2::Subnet']});
 ```
 
-```
+```python
 Tags.of(the_best_stack).add("StackType", "TheBest",
     include_resource_types=["AWS::EC2::Subnet"])
 ```
 
-```
+```java
 Tags.of(theBestStack).add("StackType", "TheBest", TagProps.builder()
         .includeResourceTypes(Arrays.asList("AWS::EC2::Subnet"))
         .build());
 ```
 
-```
+```csharp
 Tags.Of(theBestStack).Add("StackType", "TheBest", new TagProps {
     IncludeResourceTypes = ["AWS::EC2::Subnet"]
 });
 ```
 
-```
+```go
 awscdk.Tags_Of(theBestStack).Add(jsii.String("StackType"), jsii.String("TheBest"), &awscdk.TagProps{
   IncludeResourceTypes: &[]*string{jsii.String("AWS::EC2::Subnet")},
 })
@@ -386,27 +386,27 @@ Tags are implemented using [aspects](aspects.md), and the CDK calls the tag’s 
 
 **Example**
 
-```
+```javascript
 new cdk.Tag(key, value).visit(scope);
 ```
 
-```
+```javascript
 new cdk.Tag(key, value).visit(scope);
 ```
 
-```
+```python
 cdk.Tag(key, value).visit(scope)
 ```
 
-```
+```java
 Tag.Builder.create(key, value).build().visit(scope);
 ```
 
-```
+```csharp
 new Tag(key, value).Visit(scope);
 ```
 
-```
+```go
 awscdk.NewTag(key, value, &awscdk.TagProps{}).Visit(scope)
 ```
 
@@ -416,7 +416,7 @@ The following example applies a tag to each resource in a stack containing the r
 
 **Example**
 
-```
+```javascript
 class PathTagger implements cdk.IAspect {
   visit(node: IConstruct) {
     new cdk.Tag("aws-cdk-path", node.node.path).visit(node);
@@ -427,7 +427,7 @@ stack = new MyStack(app);
 cdk.Aspects.of(stack).add(new PathTagger())
 ```
 
-```
+```javascript
 class PathTagger {
   visit(node) {
     new cdk.Tag("aws-cdk-path", node.node.path).visit(node);
@@ -438,7 +438,7 @@ stack = new MyStack(app);
 cdk.Aspects.of(stack).add(new PathTagger())
 ```
 
-```
+```python
 @jsii.implements(cdk.IAspect)
 class PathTagger:
     def visit(self, node: IConstruct):
@@ -448,7 +448,7 @@ stack = MyStack(app)
 cdk.Aspects.of(stack).add(PathTagger())
 ```
 
-```
+```java
 final class PathTagger implements IAspect {
 	public void visit(IConstruct node) {
 		Tag.Builder.create("aws-cdk-path", node.getNode().getPath()).build().visit(node);
@@ -459,7 +459,7 @@ stack stack = new MyStack(app);
 Aspects.of(stack).add(new PathTagger());
 ```
 
-```
+```csharp
 public class PathTagger : IAspect
 {
     public void Visit(IConstruct node)

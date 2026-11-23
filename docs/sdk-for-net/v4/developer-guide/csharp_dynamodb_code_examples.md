@@ -34,7 +34,7 @@ The following code example shows how to get started using DynamoDB.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -112,7 +112,7 @@ The following code example shows how to:
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
 /// <summary>
 /// This example application performs the following basic Amazon DynamoDB
 /// functions:
@@ -334,7 +334,7 @@ public class DynamoDbBasics
 ```
 Use the injected client for table operations.
 
-```
+```csharp
 using System.Text.Json;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
@@ -361,7 +361,7 @@ public class DynamoDbWrapper
 ```
 Creates a table to contain movie data.
 
-```
+```csharp
     /// <summary>
     /// Creates a new Amazon DynamoDB table and then waits for the new
     /// table to become active.
@@ -448,7 +448,7 @@ Creates a table to contain movie data.
 ```
 Adds a single movie to the table.
 
-```
+```csharp
     /// <summary>
     /// Adds a new item to the table.
     /// </summary>
@@ -494,7 +494,7 @@ Adds a single movie to the table.
 ```
 Updates a single item in a table.
 
-```
+```csharp
     /// <summary>
     /// Updates an existing item in the movies table.
     /// </summary>
@@ -560,7 +560,7 @@ Updates a single item in a table.
 ```
 Retrieves a single item from the movie table.
 
-```
+```csharp
     /// <summary>
     /// Gets information about an existing movie from the table.
     /// </summary>
@@ -607,7 +607,7 @@ Retrieves a single item from the movie table.
 ```
 Writes a batch of items to the movie table.
 
-```
+```csharp
     /// <summary>
     /// Loads the contents of a JSON file into a list of movies to be
     /// added to the DynamoDB table.
@@ -695,7 +695,7 @@ Writes a batch of items to the movie table.
 ```
 Deletes a single item from the table.
 
-```
+```csharp
     /// <summary>
     /// Deletes a single item from a DynamoDB table.
     /// </summary>
@@ -741,7 +741,7 @@ Deletes a single item from the table.
 ```
 Queries the table for movies released in a particular year.
 
-```
+```csharp
     /// <summary>
     /// Queries the table for movies released in a particular year and
     /// then displays the information for the movies returned.
@@ -814,7 +814,7 @@ Queries the table for movies released in a particular year.
 ```
 Scans the table for movies released in a range of years.
 
-```
+```csharp
     /// <summary>
     /// Scans the table for movies released between the specified years.
     /// </summary>
@@ -879,7 +879,7 @@ Scans the table for movies released in a range of years.
 ```
 Deletes the movie table.
 
-```
+```csharp
     /// <summary>
     /// Deletes a DynamoDB table.
     /// </summary>
@@ -941,7 +941,7 @@ The following code example shows how to use `BatchWriteItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 Writes a batch of items to the movie table.
 
-```
+```csharp
     /// <summary>
     /// Loads the contents of a JSON file into a list of movies to be
     /// added to the DynamoDB table.
@@ -1037,7 +1037,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a new Amazon DynamoDB table and then waits for the new
     /// table to become active.
@@ -1132,7 +1132,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes a single item from a DynamoDB table.
     /// </summary>
@@ -1186,7 +1186,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes a DynamoDB table.
     /// </summary>
@@ -1234,7 +1234,7 @@ The following code example shows how to use `GetItem`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Gets information about an existing movie from the table.
     /// </summary>
@@ -1289,7 +1289,7 @@ The following code example shows how to use `PutItem`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Adds a new item to the table.
     /// </summary>
@@ -1343,7 +1343,7 @@ The following code example shows how to use `Query`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Queries the table for movies released in a particular year and
     /// then displays the information for the movies returned.
@@ -1424,7 +1424,7 @@ The following code example shows how to use `Scan`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Scans the table for movies released between the specified years.
     /// </summary>
@@ -1497,7 +1497,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Updates an existing item in the movies table.
     /// </summary>

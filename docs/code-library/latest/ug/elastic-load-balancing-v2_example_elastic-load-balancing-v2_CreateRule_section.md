@@ -274,7 +274,7 @@ For more information, see [Add a listener rule for your Application Load Balance
 **Tools for PowerShell V4**
 **Example 1: This example creates new Listener rule with fixed-response action based on the customer header value for the specified Listener.**
 
-```
+```powershell
 $newRuleAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
   "FixedResponseConfig" = @{
     "ContentType" = "text/plain"
@@ -308,7 +308,7 @@ RuleArn    : arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/a
 **Tools for PowerShell V5**
 **Example 1: This example creates new Listener rule with fixed-response action based on the customer header value for the specified Listener.**
 
-```
+```powershell
 $newRuleAction = [Amazon.ElasticLoadBalancingV2.Model.Action]@{
   "FixedResponseConfig" = @{
     "ContentType" = "text/plain"

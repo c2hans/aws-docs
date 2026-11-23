@@ -35,13 +35,13 @@ You can check the environment by using the Amazon EVS console or the AWS CLI.
 
    Replace the example environment ID with your own value, and replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs get-environment --environment-id env-abcde12345 --region <region-code>
    ```
 
    The environment is ready to use when `environmentState` is `CREATED`. If it still shows `CREATING`, run the command again. The following is a sample response.
 
-   ```
+   ```json
    {
        "environment": {
            "environmentId": "env-abcde12345",
@@ -90,7 +90,7 @@ You can check the environment by using the Amazon EVS console or the AWS CLI.
 
    Replace the example environment ID with your own value, and replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs list-environment-hosts --environment-id env-abcde12345 --region <region-code>
    ```
 

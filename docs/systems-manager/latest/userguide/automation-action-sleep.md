@@ -12,7 +12,7 @@ You can delay an automation for a specified duration.
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: sleep
 action: aws:sleep
 inputs:
@@ -22,7 +22,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
    "name":"sleep",
    "action":"aws:sleep",
@@ -39,7 +39,7 @@ You can also delay an automation until a specified date and time. If the specifi
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: sleep
 action: aws:sleep
 inputs:
@@ -49,7 +49,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "sleep",
     "action": "aws:sleep",

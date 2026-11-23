@@ -19,7 +19,7 @@ The following examples perform the IAM authentication on the user's behalf. This
 ------
 #### [ Java ]
 
-```
+```java
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicSessionCredentials;
@@ -104,7 +104,7 @@ public class GetQuicksightEmbedUrlIAMAuth {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 global.fetch = require('node-fetch');
 const AWS = require('aws-sdk');
 
@@ -176,7 +176,7 @@ function getDashboardEmbedURL(
 ------
 #### [ Python3 ]
 
-```
+```python
 import json
 import boto3
 from botocore.exceptions import ClientError
@@ -237,7 +237,7 @@ The following example shows the JavaScript (Node.js) that you can use on the app
 
 **Example**
 
-```
+```javascript
 const AWS = require('aws-sdk');
             const https = require('https');
 
@@ -280,7 +280,7 @@ The following example shows the .NET/C\# code that you can use on the app server
 
 **Example**
 
-```
+```csharp
             var client = new AmazonQuickSightClient(
                 AccessKey,
                 SecretAccessKey,

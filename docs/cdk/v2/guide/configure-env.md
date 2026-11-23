@@ -85,7 +85,7 @@ Use the `env` property of the `Stack` construct to specify AWS environment value
 
 **Example**
 
-```
+```javascript
 const envEU  = { account: '2383838383', region: 'eu-west-1' };
 const envUSA = { account: '8373873873', region: 'us-west-2' };
 
@@ -93,7 +93,7 @@ new MyFirstStack(app, 'first-stack-us', { env: envUSA });
 new MyFirstStack(app, 'first-stack-eu', { env: envEU });
 ```
 
-```
+```javascript
 const envEU  = { account: '2383838383', region: 'eu-west-1' };
 const envUSA = { account: '8373873873', region: 'us-west-2' };
 
@@ -101,7 +101,7 @@ new MyFirstStack(app, 'first-stack-us', { env: envUSA });
 new MyFirstStack(app, 'first-stack-eu', { env: envEU });
 ```
 
-```
+```python
 env_EU = cdk.Environment(account="8373873873", region="eu-west-1")
 env_USA = cdk.Environment(account="2383838383", region="us-west-2")
 
@@ -109,7 +109,7 @@ MyFirstStack(app, "first-stack-us", env=env_USA)
 MyFirstStack(app, "first-stack-eu", env=env_EU)
 ```
 
-```
+```java
 public class MyApp {
 
     // Helper method to build an environment
@@ -136,7 +136,7 @@ public class MyApp {
 }
 ```
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account, string region)
 {
     return new Amazon.CDK.Environment
@@ -153,7 +153,7 @@ new MyFirstStack(app, "first-stack-us", new StackProps { Env=envUSA });
 new MyFirstStack(app, "first-stack-eu", new StackProps { Env=envEU });
 ```
 
-```
+```go
 env_EU := awscdk.Environment{
 	Account: jsii.String("8373873873"),
 	Region:  jsii.String("eu-west-1"),
@@ -190,7 +190,7 @@ You need the `DefinitelyTyped` module to use `process` in TypeScript. `cdk init`
 npm install @types/node
 ```
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
@@ -199,7 +199,7 @@ new MyDevStack(app, 'dev', {
 ```
 Access environment variables via Node’s `process` object.
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
@@ -208,7 +208,7 @@ new MyDevStack(app, 'dev', {
 ```
 Use the `os` module’s `environ` dictionary to access environment variables.
 
-```
+```python
 import os
 MyDevStack(app, "dev", env=cdk.Environment(
     account=os.environ["CDK_DEFAULT_ACCOUNT"],
@@ -216,7 +216,7 @@ MyDevStack(app, "dev", env=cdk.Environment(
 ```
 Use `System.getenv()` to get the value of an environment variable.
 
-```
+```java
 public class MyApp {
 
     // Helper method to build an environment
@@ -247,7 +247,7 @@ public class MyApp {
 ```
 Use `System.Environment.GetEnvironmentVariable()` to get the value of an environment variable.
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account=null, string region=null)
 {
     return new Amazon.CDK.Environment
@@ -260,7 +260,7 @@ Amazon.CDK.Environment makeEnv(string account=null, string region=null)
 new MyDevStack(app, "dev", new StackProps { Env = makeEnv() });
 ```
 
-```
+```go
 import "os"
 
 MyDevStack(app, "dev", &awscdk.StackProps{
@@ -280,7 +280,7 @@ This approach is great for development environments when deploying the same stac
 
 When deploying an environment-agnostic template, use the `--profile` option with any CDK CLI command to specify the profile to use. The following is an example that deploys a CDK stack named `myStack` using the `prod` profile that is defined in the `credentials` and `config` files:
 
-```
+```bash
 $ cdk deploy <myStack> --profile <prod>
 ```
 
@@ -305,7 +305,7 @@ The following is our example CDK stack. This stack defines an Amazon S3 bucket a
 
 **Example**
 
-```
+```javascript
 export class CdkAppStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -323,7 +323,7 @@ export class CdkAppStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 class CdkAppStack extends cdk.Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
@@ -341,7 +341,7 @@ class CdkAppStack extends cdk.Stack {
 }
 ```
 
-```
+```python
 class CdkAppStack(cdk.Stack):
 
     def __init__(self, scope: cdk.Construct, id: str, **kwargs) -> None:
@@ -358,7 +358,7 @@ class CdkAppStack(cdk.Stack):
         )
 ```
 
-```
+```java
 public class CdkAppStack extends Stack {
 
     public CdkAppStack(final Construct scope, final String id, final StackProps props) {
@@ -377,7 +377,7 @@ public class CdkAppStack extends Stack {
 }
 ```
 
-```
+```csharp
 namespace MyCdkApp
 {
     public class CdkAppStack : Stack
@@ -400,7 +400,7 @@ namespace MyCdkApp
 }
 ```
 
-```
+```go
 func NewCdkAppStack(scope constructs.Construct, id string, props *CdkAppStackProps) awscdk.Stack {
 	stack := awscdk.NewStack(scope, &id, &props.StackProps)
 
@@ -420,7 +420,7 @@ func NewCdkAppStack(scope constructs.Construct, id string, props *CdkAppStackPro
 
 When we run `cdk synth`, the CDK CLI produces a CloudFormation template with the pseudo parameter ` AWS::Region` as the output value for the bucket’s Region. This parameter will be resolved at deployment:
 
-```
+```yaml
 Outputs:
   BucketRegion:
     Value:
@@ -429,7 +429,7 @@ Outputs:
 
 To deploy this stack to an environment that is specified in the `dev` profile of our credentials and configuration files, we run the following:
 
-```
+```bash
 $ cdk deploy CdkAppStack --profile dev
 ```
 
@@ -442,7 +442,7 @@ In this example, we configure the `env` property of our `stack` instance to use 
 
 **Example**
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
@@ -450,7 +450,7 @@ new MyDevStack(app, 'dev', {
 }});
 ```
 
-```
+```javascript
 new MyDevStack(app, 'dev', {
   env: {
     account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
@@ -458,7 +458,7 @@ new MyDevStack(app, 'dev', {
 }});
 ```
 
-```
+```python
 MyDevStack(app, "dev", env=cdk.Environment(
     account=os.environ.get("CDK_DEPLOY_ACCOUNT", os.environ["CDK_DEFAULT_ACCOUNT"]),
     region=os.environ.get("CDK_DEPLOY_REGION", os.environ["CDK_DEFAULT_REGION"])
@@ -466,7 +466,7 @@ MyDevStack(app, "dev", env=cdk.Environment(
 )
 ```
 
-```
+```java
 public class MyApp {
 
     // Helper method to build an environment
@@ -498,7 +498,7 @@ public class MyApp {
 }
 ```
 
-```
+```csharp
 Amazon.CDK.Environment makeEnv(string account=null, string region=null)
 {
     return new Amazon.CDK.Environment
@@ -515,7 +515,7 @@ Amazon.CDK.Environment makeEnv(string account=null, string region=null)
 new MyDevStack(app, "dev", new StackProps { Env = makeEnv() });
 ```
 
-```
+```go
 var account, region string
 var b bool
 
@@ -538,7 +538,7 @@ With our stack’s environment declared this way, we can then write a short scri
 
 **Example**
 
-```
+```bash
 #!/usr/bin/env bash
 if [[ $# -ge 2 ]]; then
     export CDK_DEPLOY_ACCOUNT=$1
@@ -554,7 +554,7 @@ fi
 ```
 Save the script as `cdk-deploy-to.sh`, then execute `chmod +x cdk-deploy-to.sh` to make it executable.
 
-```
+```bat
 @findstr /B /V @ %~dpnx0 > %~dpn0.ps1 && powershell -ExecutionPolicy Bypass %~dpn0.ps1 %*
 @exit /B %ERRORLEVEL%
 if ($args.length -ge 2) {
@@ -574,13 +574,13 @@ We can then write additional scripts that use the `cdk-deploy-to` script to depl
 
 **Example**
 
-```
+```bash
 #!/usr/bin/env bash
 # cdk-deploy-to-test.sh
 ./cdk-deploy-to.sh 123457689 us-east-1 "$@"
 ```
 
-```
+```bat
 @echo off
 rem cdk-deploy-to-test.bat
 cdk-deploy-to 135792469 us-east-1 %*
@@ -590,14 +590,14 @@ The following is an example that uses the `cdk-deploy-to` script to deploy to mu
 
 **Example**
 
-```
+```bash
 #!/usr/bin/env bash
 # cdk-deploy-to-prod.sh
 ./cdk-deploy-to.sh 135792468 us-west-1 "$@" || exit
 ./cdk-deploy-to.sh 246813579 eu-west-1 "$@"
 ```
 
-```
+```bat
 @echo off
 rem cdk-deploy-to-prod.bat
 cdk-deploy-to 135792469 us-west-1 %* || exit /B

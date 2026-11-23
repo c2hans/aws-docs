@@ -14,13 +14,13 @@ Complete all steps in [Prerequisites and cluster setup](pacemaker-tutorial-prere
 
 Create the custom resource agent directory and script on all instances. This example manages a component named `PythonWebServer`.
 
-```
+```shell
 sudo mkdir -p /usr/lib/ocf/resource.d/custom
 ```
 
 Create the resource agent script at `/usr/lib/ocf/resource.d/custom/gg-webserver` with the following content.
 
-```
+```shell
 #!/bin/bash
 # OCF Resource Agent for Greengrass Web Server component
 . /usr/lib/ocf/lib/heartbeat/ocf-shellfuncs
@@ -88,7 +88,7 @@ esac
 
 Make the script executable.
 
-```
+```shell
 sudo chmod +x /usr/lib/ocf/resource.d/custom/gg-webserver
 ```
 
@@ -100,14 +100,14 @@ The `start` action restarts the entire AWS IoT Greengrass V2 service, which rest
 
 Create the Pacemaker resource using the custom OCF agent.
 
-```
+```shell
 sudo pcs property set stonith-enabled=false
 ```
 
 **Warning**
 STONITH is disabled here to simplify this tutorial. In a production environment, you must enable STONITH and configure a fencing agent (for example, `fence_aws` for Amazon EC2 instances) to prevent split-brain and data corruption.
 
-```
+```shell
 sudo pcs resource create gg-webserver ocf:custom:gg-webserver \
   op monitor interval=30s \
   op start timeout=60s \
@@ -120,13 +120,13 @@ sudo pcs resource create gg-webserver ocf:custom:gg-webserver \
 
 1. **Check the initial state.** Verify that the AWS IoT Greengrass V2 component is running and healthy on all instances.
 
-   ```
+   ```shell
    sudo pcs status
    ```
 
 1. **Simulate component failure.** Kill the component's process to simulate a transient failure. AWS IoT Greengrass V2 might attempt internal recovery first. If the component enters a `BROKEN` state, Pacemaker detects it and triggers a service restart. If AWS IoT Greengrass V2 recovers the component internally, Pacemaker takes no action.
 
-   ```
+   ```shell
    sudo pkill -f "PythonWebServer"
 
    # Wait 30-60 seconds, then check the component state
@@ -137,7 +137,7 @@ sudo pcs resource create gg-webserver ocf:custom:gg-webserver \
 
    Other services such as HAProxy and AWS IoT Greengrass V2 continue to operate normally on all instances. The application on the standby instances continues to take requests without interruption.
 
-   ```
+   ```shell
    sudo pcs status
    ```
 

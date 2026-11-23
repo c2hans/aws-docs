@@ -16,7 +16,7 @@ SELECT foo.bar AS bar.baz FROM 'topic/subtopic'
 
 selects the value of the `bar` property in the `foo` object from the following message payload sent to the `topic/subtopic` topic.
 
-```
+```json
 {
   "foo": {
     "bar": "RED",
@@ -28,7 +28,7 @@ selects the value of the `bar` property in the `foo` object from the following m
 
 The resulting outgoing payload is:
 
-```
+```json
 {
   "bar": {
     "baz": "RED"
@@ -40,7 +40,7 @@ If a JSON property name includes a hyphen character or numeric characters, the '
 
  In this example, the following message is sent to the `iot/rules` topic.
 
-```
+```json
 {
   "mydata": {
     "item2": {
@@ -54,13 +54,13 @@ If a JSON property name includes a hyphen character or numeric characters, the '
 
 Normally, the value of `my-key` would be identified as in this query.
 
-```
+```sql
 SELECT * from iot/rules WHERE mydata.item2.0.my-key= "myValue"
 ```
 
 However, because the property name `my-key` contains a hyphen and `item2` contains a numeric character, the [get function](iot-sql-functions.md#iot-sql-function-get) must be used as the following query shows.
 
-```
+```sql
 SELECT * from 'iot/rules' WHERE get(get(get(mydata,"item2"),"0"),"my-key") = "myValue"
 ```
 
@@ -75,7 +75,7 @@ SELECT * FROM 'topic/subtopic'
 **Applying a Function to an Attribute Value**
 The following is an example JSON payload that might be published by a device:
 
-```
+```JSON
 {
     "deviceid" : "iot123",
     "temp" : 54.98,
@@ -95,7 +95,7 @@ SELECT temp, md5(deviceid) AS hashed_id FROM topic/#
 
 The result of this query is the following JSON object:
 
-```
+```JSON
 {
    "temp": 54.98,
    "hashed_id": "e37f81fb397e595c4aeb5645b8cbbbd1"

@@ -36,6 +36,11 @@ Lambda invocation parameters for subscribers. Values are forwarded to the Lambda
 Type: [LambdaParameters](API_LambdaParameters.md) object
 Required: No
 
+ ** MskParameters **   <a name="eventbridgev2-Type-UpdateInvokeConfiguration-MskParameters"></a>
+MSK (Apache Kafka) invocation parameters for subscribers targeting an Amazon MSK cluster.
+Type: [MskParameters](API_MskParameters.md) object
+Required: No
+
  ** SnsParameters **   <a name="eventbridgev2-Type-UpdateInvokeConfiguration-SnsParameters"></a>
 SNS invocation parameters for subscribers. Values are forwarded to the SNS PublishBatch API. All scalar values accept a literal or a JSONata expression (e.g. "{% $events.Data.groupId %}").
 Type: [SnsParameters](API_SnsParameters.md) object

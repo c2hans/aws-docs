@@ -50,7 +50,7 @@ This section contains sample requests for API actions that set an application's 
 
 The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action sets parallelism when you are creating an application:
 
-```
+```json
 {
    "ApplicationName": "string",
    "RuntimeEnvironment":"FLINK-1_18",
@@ -80,7 +80,7 @@ The following example request for the [`CreateApplication`](https://docs.aws.ama
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action sets parallelism for an existing application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 4,
@@ -99,7 +99,7 @@ The following example request for the [`UpdateApplication`](https://docs.aws.ama
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action disables parallelism for an existing application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "CurrentApplicationVersionId": 4,

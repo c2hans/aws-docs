@@ -14,13 +14,13 @@ In this section, you deploy the component to the core device to test its functio
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    sudo nano /home/ggc_user/virtual_battery.json
    ```
 
    Copy the following JSON into the file.
 
-   ```
+   ```json
    {
      "battery_level": 50
    }
@@ -46,7 +46,7 @@ In this section, you deploy the component to the core device to test its functio
 
       1. In the **Configure com.example.BatteryAwareHelloWorld** modal, under **Configuration update**, in **Configuration to merge**, enter the following configuration update.
 
-         ```
+         ```json
          {
            "BatteryThreshold": 70
          }
@@ -65,21 +65,21 @@ In this section, you deploy the component to the core device to test its functio
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.BatteryAwareHelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\com.example.BatteryAwareHelloWorld.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\com.example.BatteryAwareHelloWorld.log -Tail 10 -Wait
    ```
 
@@ -93,16 +93,16 @@ In this section, you deploy the component to the core device to test its functio
 **Note**
 If the file doesn't exist, the deployment may not be complete yet. If the file doesn't exist within 30 seconds, the deployment likely failed. This can occur if the core device doesn't have permission to download the component's artifacts from the S3 bucket, for example. Run the following command to view the AWS IoT Greengrass Core software log file. This file includes logs from the Greengrass core device's deployment service.
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
    ```
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\greengrass.log
    ```
 <a name="windows-cmd-type-observe-logs"></a>The `type` command writes the file's contents to the terminal. Run this command multiple times to observe changes in the file.
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
    ```
 
@@ -123,21 +123,21 @@ If the file doesn't exist, the deployment may not be complete yet. If the file d
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.BatteryAwareHelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\com.example.BatteryAwareHelloWorld.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\com.example.BatteryAwareHelloWorld.log -Tail 10 -Wait
    ```
 
@@ -155,13 +155,13 @@ If the file doesn't exist, the deployment may not be complete yet. If the file d
 
    <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-   ```
+   ```bash
    sudo nano /home/ggc_user/virtual_battery.json
    ```
 
    Change the battery level to `80`.
 
-   ```
+   ```json
    {
      "battery_level": 80
    }
@@ -172,21 +172,21 @@ If the file doesn't exist, the deployment may not be complete yet. If the file d
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.BatteryAwareHelloWorld.log
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    type {{C:\greengrass\v2}}\logs\com.example.BatteryAwareHelloWorld.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}\logs\com.example.BatteryAwareHelloWorld.log -Tail 10 -Wait
    ```
 

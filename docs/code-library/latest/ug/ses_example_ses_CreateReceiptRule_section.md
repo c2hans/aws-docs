@@ -14,7 +14,7 @@ The following code examples show how to use `CreateReceiptRule`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
 
-```
+```cpp
 //! Create an Amazon Simple Email Service (Amazon SES) receipt rule.
 /*!
   \param receiptRuleName: The name for the receipt rule.
@@ -74,7 +74,7 @@ bool AwsDoc::SES::createReceiptRule(const Aws::String &receiptRuleName,
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { CreateReceiptRuleCommand, TlsPolicy } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -134,7 +134,7 @@ const run = async () => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 Create an Amazon S3 bucket where Amazon SES can put copies of incoming emails and create a rule that copies incoming email to the bucket for a specific list of recipients.
 
-```
+```python
 class SesReceiptHandler:
     """Encapsulates Amazon SES receipt handling functions."""
 
@@ -237,7 +237,7 @@ class SesReceiptHandler:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
 
-```
+```sap-abap
     " Create S3 action for copying emails to S3
     DATA(lo_s3_action) = NEW /aws1/cl_sess3action(
       iv_bucketname = iv_bucket_name

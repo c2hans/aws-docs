@@ -11,6 +11,8 @@ Spaces allow your team to get the most relevant results from conversational agen
 **Note**
 Quick resources added to a space respect user access permissions. If a user can't access a resource outside a space, they won't be able to access it inside a space. Files uploaded to a space are always available to everyone with access to the space.
 
+Your spaces and the data in them are available wherever you work with Quick, across the web, desktop, and mobile. To focus a conversation on a space, add the space to the conversation so Quick grounds its responses in that space's content.
+
 You can use spaces to accomplish tasks like:
 + Aggregating and sharing customer feedback, allowing any team member to ask questions and get summaries
 + Onboarding new team members with team documents, manuals, and processes
@@ -74,8 +76,8 @@ The document is being deleted.
 
 The following list outlines the limitations of spaces:
 + A space can't contain other spaces.
-+ Users can't access AWS Quick resouces (topics, dashboards) in a space if they don't have access to the resource outside it. Sharing a space doesn't automatically give access to users to assets within it.
-+ If an AWS Quick resource is linked to a space is deleted outside the space, users of the space won't get notified of the deletion. Deleted assets will only display a message indicating unavailability.
++ Users must have access to AWS Quick resources outside a space to access them within it. Sharing a space doesn't automatically grant access to the assets in the space.
++ If an AWS Quick resource in a space is deleted outside the space, users aren't notified. A deleted resource displays a message that it's no longer available.
 + Files uploaded to spaces will be rejected if your index data storage capacity is full. Reach out to your system administrator if this happens.
 + Files uploaded to a space must be one of the following formats: `.html`, `.xhtml`, `.txt`, `.pdf`, `.csv`, `.tsv`, `.xml`, `.json`, `.md`, `.rtf`, `.xslt`, `.eml`, `.vtt`, `.docx`, `.dotx`, `.docm`, `.dotm`, `.ppt`, `.pptx`, `.pptm`, `.ppsm`, `.ppsx`, `.xlsx`, `.xls`, `.xlam`, `.xlsm`, `.xltx`, `.xltm`, `.c`, `.h`, `.cpp`, `.hpp`, `.cs`, `.java`, `.py`, `.go`, `.rb`, `.scala`, `.m`, `.sql`, `.clj`, `.mp3`, `.wav`, `.m4a`, `.flac`, `.ogg`, `.mp4`, `.mov`, `.m4v`.
 + File uploads are limited to 500 MB for PDF, Word, and PowerPoint files, and 50 MB for all other supported file types.

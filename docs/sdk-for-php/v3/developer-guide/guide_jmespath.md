@@ -17,13 +17,13 @@ The `Aws\ResultInterface` interface has a `search($expression)` method that extr
 
 To demonstrate how it works, we’ll start with the default JSON output below, which describes two Amazon Elastic Block Store (Amazon EBS) volumes attached to separate Amazon EC2 instances.
 
-```
+```php
 $result = $ec2Client->describeVolumes();
 // Output the result data as JSON (just so we can clearly visualize it)
 echo json_encode($result->toArray(), JSON_PRETTY_PRINT);
 ```
 
-```
+```json
 {
     "Volumes": [
         {
@@ -81,19 +81,19 @@ echo json_encode($result->toArray(), JSON_PRETTY_PRINT);
 
 First, we can retrieve only the first volume from the Volumes list with the following command.
 
-```
+```php
 $firstVolume = $result->search('Volumes[0]');
 ```
 
 Now, we use the `wildcard-index` expression `[*]` to iterate over the entire list and also extract and rename three elements: `VolumeId` is renamed to `ID`, `AvailabilityZone` is renamed to `AZ`, and `Size` remains `Size`. We can extract and rename these elements using a `multi-hash` expression placed after the `wildcard-index` expression.
 
-```
+```php
 $data = $result->search('Volumes[*].{ID: VolumeId, AZ: AvailabilityZone, Size: Size}');
 ```
 
 This gives us an array of PHP data like the following:
 
-```
+```php
 array(2) {
   [0] =>
   array(3) {
@@ -118,7 +118,7 @@ array(2) {
 
 In the `multi-hash` notation, you can also use chained keys such as `key1.key2[0].key3` to extract elements deeply nested within the structure. The following example demonstrates this with the `Attachments[0].InstanceId` key, aliased to simply `InstanceId`. (In most cases, JMESPath expressions will ignore whitespace.)
 
-```
+```php
 $expr = 'Volumes[*].{ID: VolumeId,
                      InstanceId: Attachments[0].InstanceId,
                      AZ: AvailabilityZone,
@@ -130,7 +130,7 @@ var_dump($data);
 
 The previous expression will output the following data:
 
-```
+```php
 array(2) {
   [0] =>
   array(4) {
@@ -159,7 +159,7 @@ array(2) {
 
 You can also filter multiple elements with the `multi-list` expression:`[key1, key2]`. This formats all filtered attributes into a single ordered list per object, regardless of type.
 
-```
+```php
 $expr = 'Volumes[*].[VolumeId, Attachments[0].InstanceId, AvailabilityZone, Size]';
 $data = $result->search($expr);
 var_dump($data);
@@ -167,7 +167,7 @@ var_dump($data);
 
 Running the previous search produces the following data:
 
-```
+```php
 array(2) {
   [0] =>
   array(4) {
@@ -196,13 +196,13 @@ array(2) {
 
 Use a `filter` expression to filter results by the value of a specific field. The following example query outputs only volumes in the `us-west-2a` Availability Zone.
 
-```
+```php
 $data = $result->search("Volumes[?AvailabilityZone ## 'us-west-2a']");
 ```
 
 JMESPath also supports function expressions. Let’s say you want to run the same query as above, but instead retrieve all volumes in which the volume is in an AWS Region that starts with “us-“. The following expression uses the `starts_with` function, passing in a string literal of `us-`. This function’s result is then compared against the JSON literal value of `true`, passing only results of the filter predicate that returned `true` through the filter projection.
 
-```
+```php
 $data = $result->search('Volumes[?starts_with(AvailabilityZone, 'us-') ## `true`]');
 ```
 
@@ -213,7 +213,7 @@ As you know from the [Paginators in the AWS SDK for PHP Version 3](guide_paginat
 
 Let’s say you want to create an `iterator` that yields only objects from a bucket that are larger than 1 MB. This can be achieved by first creating a `ListObjects` paginator and then applying a `search()` function to the paginator, creating a flat-mapped iterator over the paginated data.
 
-```
+```php
 $result = $s3Client->getPaginator('ListObjects', ['Bucket' => 't1234']);
 $filtered = $result->search('Contents[?Size > `1048576`]');
 

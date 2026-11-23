@@ -36,7 +36,7 @@ The following code example shows how to use `BatchExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 Use batches of INSERT statements to add items.
 
-```
+```csharp
         /// <summary>
         /// Inserts movies imported from a JSON file into the movie table by
         /// using an Amazon DynamoDB PartiQL INSERT statement.
@@ -132,7 +132,7 @@ Use batches of INSERT statements to add items.
 ```
 Use batches of SELECT statements to get items.
 
-```
+```csharp
         /// <summary>
         /// Gets movies from the movie table by
         /// using an Amazon DynamoDB PartiQL SELECT statement.
@@ -200,7 +200,7 @@ Use batches of SELECT statements to get items.
 ```
 Use batches of UPDATE statements to update items.
 
-```
+```csharp
         /// <summary>
         /// Updates information for multiple movies.
         /// </summary>
@@ -261,7 +261,7 @@ Use batches of UPDATE statements to update items.
 ```
 Use batches of DELETE statements to delete items.
 
-```
+```csharp
         /// <summary>
         /// Deletes multiple movies using a PartiQL BatchExecuteAsync
         /// statement.
@@ -323,7 +323,7 @@ The following code example shows how to use `BatchGetItem`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2;
@@ -473,7 +473,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
     private static async Task GetTableInformation()
     {
         Console.WriteLine("\n*** Retrieving table information ***");
@@ -500,7 +500,7 @@ The following code example shows how to use `ExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 Use an INSERT statement to add an item.
 
-```
+```csharp
         /// <summary>
         /// Inserts a single movie into the movies table.
         /// </summary>
@@ -528,7 +528,7 @@ Use an INSERT statement to add an item.
 ```
 Use a SELECT statement to get an item.
 
-```
+```csharp
         /// <summary>
         /// Uses a PartiQL SELECT statement to retrieve a single movie from the
         /// movie database.
@@ -556,7 +556,7 @@ Use a SELECT statement to get an item.
 ```
 Use a SELECT statement to get a list of items.
 
-```
+```csharp
         /// <summary>
         /// Retrieve multiple movies by year using a SELECT statement.
         /// </summary>
@@ -582,7 +582,7 @@ Use a SELECT statement to get a list of items.
 ```
 Use an UPDATE statement to update an item.
 
-```
+```csharp
         /// <summary>
         /// Updates a single movie in the table, adding information for the
         /// producer.
@@ -613,7 +613,7 @@ Use an UPDATE statement to update an item.
 ```
 Use a DELETE statement to delete a single movie.
 
-```
+```csharp
         /// <summary>
         /// Deletes a single movie from the table.
         /// </summary>
@@ -649,7 +649,7 @@ The following code example shows how to use `ListTables`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
     private static async Task ListMyTables()
     {
         Console.WriteLine("\n*** Listing tables ***");
@@ -720,7 +720,7 @@ The following code example shows how to:
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
 // Before you run this example, download 'movies.json' from
 // https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Js.02.html,
 // and put it in the same folder as the example.
@@ -1135,7 +1135,7 @@ The following code example shows how to:
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-```
+```csharp
 namespace PartiQL_Basics_Scenario
 {
     public class PartiQLMethods
@@ -1497,7 +1497,7 @@ For more information, see [Document model](https://docs.aws.amazon.com/amazondyn
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb/mid-level-api#code-examples).
 Perform CRUD operations using a document model.
 
-```
+```csharp
     /// <summary>
     /// Performs CRUD operations on an Amazon DynamoDB table.
     /// </summary>
@@ -1721,7 +1721,7 @@ Perform CRUD operations using a document model.
 ```
 Perform batch write operations using a document model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to use mid-level Amazon DynamoDB API calls to perform batch
     /// operations.
@@ -1812,7 +1812,7 @@ Perform batch write operations using a document model.
 ```
 Scan a table using a document model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to use mid-level Amazon DynamoDB API calls to scan a DynamoDB
     /// table for values.
@@ -1919,7 +1919,7 @@ Scan a table using a document model.
 ```
 Query and scan a table using a document model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to perform mid-level query procedures on an Amazon DynamoDB
     /// table.
@@ -2129,7 +2129,7 @@ For more information, see [Object persistence model](https://docs.aws.amazon.com
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb/high-level-api#code-examples).
 Perform CRUD operations using a high-level object persistence model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to perform high-level CRUD operations on an Amazon DynamoDB
     /// table.
@@ -2192,7 +2192,7 @@ Perform CRUD operations using a high-level object persistence model.
 ```
 Perform batch write operations using a high-level object persistence model.
 
-```
+```csharp
     /// <summary>
     /// Performs high-level batch write operations to an Amazon DynamoDB table.
     /// This example was written using the AWS SDK for .NET version 3.7 and .NET
@@ -2275,7 +2275,7 @@ Perform batch write operations using a high-level object persistence model.
 ```
 Map arbitrary data to a table using a high-level object persistence model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to map arbitrary data to an Amazon DynamoDB table.
     /// </summary>
@@ -2332,7 +2332,7 @@ Map arbitrary data to a table using a high-level object persistence model.
 ```
 Query and scan a table using a high-level object persistence model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to perform high-level query and scan operations to Amazon
     /// DynamoDB tables.
@@ -2487,7 +2487,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using System.Text.Json;
@@ -2528,7 +2528,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using .NET.
 
-```
+```csharp
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 using System.Text.Json;

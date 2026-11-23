@@ -82,7 +82,7 @@ For more information, see [Working with OpsItems](https://docs.aws.amazon.com/sy
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ssm#code-examples).
 
-```
+```java
     /**
      * Describes AWS SSM OpsItems asynchronously.
      *
@@ -139,7 +139,7 @@ For more information, see [Working with OpsItems](https://docs.aws.amazon.com/sy
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ssm#code-examples).
 
-```
+```javascript
 import {
   OpsItemFilterOperator,
   OpsItemFilterKey,
@@ -187,7 +187,7 @@ export const main = async ({ opsItemId }) => {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ssm#code-examples).
 
-```
+```python
 class OpsItemWrapper:
     """Encapsulates AWS Systems Manager OpsItem actions."""
 
@@ -242,7 +242,7 @@ class OpsItemWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create filter for OpsItem ID
         DATA(lt_filters) = VALUE /aws1/cl_ssmopsitemfilter=>tt_opsitemfilters(

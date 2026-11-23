@@ -32,7 +32,7 @@ Starting with comment line 4, the example shows two variations of accessing the 
 
 The `PageIterable` interface offers multiple ways to process results because of its two parent interfaces—[`java.lang.Iterable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) and [`SdkIterable`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/pagination/sync/SdkIterable.html). `Iterable` brings the `forEach`, `iterator` and `spliterator` methods, and `SdkIterable` brings the `stream` method.
 
-```
+```java
     public static void scanSync(DynamoDbTable<ProductCatalog> productCatalog) {
 
         Map<String, AttributeValue> expressionValues = Map.of(
@@ -87,7 +87,7 @@ After the list is retrieved, the code sorts all `ProductCatalog` items by price 
 
 The [CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html) in the `ProductCatalogSubscriber` class blocks the calling thread until all items have been added to the list before continuing after comment line 5.
 
-```
+```java
     public static void scanAsync(DynamoDbAsyncTable productCatalog) {
         ScanEnhancedRequest request = ScanEnhancedRequest.builder()
                 .consistentRead(true)
@@ -130,7 +130,7 @@ The [CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurr
     }
 ```
 
-```
+```java
     private static class ProductCatalogSubscriber implements Subscriber<Page<ProductCatalog>> {
         private CountDownLatch latch = new CountDownLatch(1);
         private Subscription subscription;
@@ -171,7 +171,7 @@ The [CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurr
 
 The following snippet example uses the version of the `PagePublisher.subscribe` method that accepts a `Consumer` after comment line 6. The Java lambda parameter consumes pages, which further process each item. In this example, each page is processed and the items on each page are sorted and then logged.
 
-```
+```java
         // 6. Use a Consumer to work through each page.
         pagePublisher.subscribe(page -> page
                         .items().stream()
@@ -183,7 +183,7 @@ The following snippet example uses the version of the `PagePublisher.subscribe` 
 
 The `items` method of `PagePublisher` unwraps the model instances so that your code can process the items directly. This approach is shown in the following snippet.
 
-```
+```java
         // 7. Use a Consumer to work through each ProductCatalog item.
         pagePublisher.items()
                 .subscribe(product -> logger.info(product.toString()))
@@ -209,7 +209,7 @@ The `query()` method code example that follows uses the `MovieActor` class. The 
 #### `MovieActor` class
 <a name="ddb-en-client-use-movieactor-class"></a>
 
-```
+```java
 package org.example.tests.model;
 
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbAttribute;
@@ -320,7 +320,7 @@ The code examples that follow query against the following items.
 #### Items in the `MovieActor` table
 <a name="ddb-en-client-use-movieactor-items"></a>
 
-```
+```java
 MovieActor{movieName='movie01', actorName='actor0', actingAward='actingaward0', actingYear=2001, actingSchoolName='null'}
 MovieActor{movieName='movie01', actorName='actor1', actingAward='actingaward1', actingYear=2001, actingSchoolName='actingschool1'}
 MovieActor{movieName='movie01', actorName='actor2', actingAward='actingaward2', actingYear=2001, actingSchoolName='actingschool2'}
@@ -349,7 +349,7 @@ This example also defines a filter expression after comment line 2 that filters 
 
 The `QueryEnhancedRequest` combines the key condition and filter expression for the query.
 
-```
+```java
     public static void query(DynamoDbTable movieActorTable) {
 
         // 1. Define a QueryConditional instance to return items matching a partition value.

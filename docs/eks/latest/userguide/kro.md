@@ -39,7 +39,7 @@ kro supports declarative configuration through Kubernetes manifests, enabling Gi
 
 The following example shows a simple `ResourceGraphDefinition` that creates a web application with a Deployment and Service:
 
-```
+```yaml
 apiVersion: kro.run/v1alpha1
 kind: ResourceGraphDefinition
 metadata:

@@ -83,7 +83,7 @@ Enable CORS by returning correct headers
 #### POST schema
 <a name="v1-replicators-request-body-post-example"></a>
 
-```
+```json
 {
   "replicatorName": "string",
   "logDelivery": {
@@ -182,7 +182,7 @@ Enable CORS by returning correct headers
 #### ListReplicatorsResponse schema
 <a name="v1-replicators-response-body-listreplicatorsresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "replicators": [
@@ -220,7 +220,7 @@ Enable CORS by returning correct headers
 #### CreateReplicatorResponse schema
 <a name="v1-replicators-response-body-createreplicatorresponse-example"></a>
 
-```
+```json
 {
   "replicatorArn": "string",
   "replicatorName": "string",

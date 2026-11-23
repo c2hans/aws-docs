@@ -34,7 +34,7 @@ aws codeartifact delete-repository --domain {{my_domain}} --domain-owner {{11112
 
 Example output:
 
-```
+```json
 {
     "repository": {
         "name": "{{my_repo}}",
@@ -59,7 +59,7 @@ You can prevent a repository from being accidentally deleted by including a doma
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ This policy prevents all principals from deleting the repository, but if you dec
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -117,7 +117,7 @@ This policy prevents all principals from deleting the repository, but if you dec
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

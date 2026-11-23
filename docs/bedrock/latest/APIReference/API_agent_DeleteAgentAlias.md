@@ -106,7 +106,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DeleteAgentAlias.
 
-```
+```json
 DELETE /agents/ABCDEFGHIJ/agentaliases/ABCDEFGHIJ/ HTTP/1.1
 ```
 

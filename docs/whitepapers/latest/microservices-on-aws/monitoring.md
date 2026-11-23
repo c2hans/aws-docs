@@ -12,4 +12,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
 ![Diagram showing a serverless architecture with monitoring components](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-arch-with-monitoring.png)
 
+*Figure 10: A serverless architecture with monitoring components*
+
 ![A container-based architecture with monitoring components](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/container-arch-with-monitoring.png)
+
+*Figure 11: A container-based architecture with monitoring components*

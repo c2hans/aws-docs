@@ -13,7 +13,7 @@ After migrating to V2, if you don't want empty strings stored in DynamoDB, you m
 
 **Example custom converter for V2 that converts an empty string attribute to null**
 
-```
+```java
 /**
  * Custom converter that maintains V1 behavior by converting empty strings to null values
  * when writing to DynamoDB, ensuring compatibility with existing data. No attribute will be saved to DynamoDB.

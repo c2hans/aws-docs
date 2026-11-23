@@ -30,7 +30,7 @@ This example uses Amazon Cognito, but if you are not using Amazon Cognito then y
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -68,7 +68,7 @@ The CloudFormation template was generated using the AWS CDK available [here on G
 **Important**
 The stack name must be unique within an AWS Region and AWS account. You can specify up to 128 characters, and numbers and hyphens are allowed.
 
-   ```
+   ```javascript
    aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM
    ```
 
@@ -84,7 +84,7 @@ Create a Node.js module with the file name `polly_synthesize_to_s3.js`. Make sur
 
 Call the `StartSpeechSynthesisCommand` method of the Amazon Polly client service object synthesize the voice message and upload it to the Amazon S3 bucket.
 
-```
+```javascript
 import { StartSpeechSynthesisTaskCommand } from "@aws-sdk/client-polly";
 import { pollyClient } from "./libs/pollyClient.js";
 

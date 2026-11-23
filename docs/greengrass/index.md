@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/greengrass/index.html
 title: 'AWS IoT Greengrass Documentation'
 canonical_url: https://docs.aws.amazon.com/greengrass/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-20
 ---
 
 # AWS IoT Greengrass Documentation

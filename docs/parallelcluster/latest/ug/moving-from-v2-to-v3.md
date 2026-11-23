@@ -34,7 +34,7 @@ In addition to requiring a YAML file format, a number of configuration sections,
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 queue_settings = ht-enabled, ht-disabled
 ...
@@ -55,7 +55,7 @@ instance_type = c5.xlarge
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 Scheduling:
   Scheduler: slurm
@@ -82,7 +82,7 @@ Scheduling:
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 fsx_settings = fsx
 ...
@@ -100,7 +100,7 @@ data_compression_type = LZ4
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 SharedStorage:
   - Name: fsx
@@ -120,7 +120,7 @@ SharedStorage:
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 fsx_settings = fsx
 ...
@@ -132,7 +132,7 @@ fsx_fs_id = {{fsx_fs_id}}
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 SharedStorage:
   - Name: fsx
@@ -146,7 +146,7 @@ SharedStorage:
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 enable_intel_hpc_platform = true
 ...
@@ -154,7 +154,7 @@ enable_intel_hpc_platform = true
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 AdditionalPackages:
   IntelSoftware:
@@ -168,7 +168,7 @@ Notes:
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 additional_iam_policies = arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess,arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess
 ec2_iam_role = {{ec2_iam_role}}
@@ -178,7 +178,7 @@ iam_lambda_role = {{lambda_iam_role}}
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 Iam:
   Roles:
@@ -211,7 +211,7 @@ Notes:
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 s3_read_resource = arn:aws:s3:::{{amzn-s3-demo-bucket}}/*
 pre_install = s3://{{amzn-s3-demo-bucket}}/scripts/pre_install.sh
@@ -223,7 +223,7 @@ post_install_args = "R curl wget"
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 HeadNode:
   ...
@@ -261,7 +261,7 @@ Scheduling:
 
 AWS ParallelCluster 2:
 
-```
+```ini
 [cluster default]
 s3_read_resource = arn:aws:s3:::{{amzn-s3-demo-bucket}}/read_only/*
 s3_read_write_resource = arn:aws:s3:::{{amzn-s3-demo-bucket}}/read_and_write/*
@@ -270,7 +270,7 @@ s3_read_write_resource = arn:aws:s3:::{{amzn-s3-demo-bucket}}/read_and_write/*
 
 AWS ParallelCluster 3:
 
-```
+```yaml
 ...
 HeadNode:
   ...
@@ -333,7 +333,7 @@ An AWS ParallelCluster 3 configuration file contains a single cluster definition
 
 The following is an example configuration file.
 
-```
+```sh
 # AWS ParallelCluster v2
 $ pcluster create \
     -r {{REGION}} \
@@ -355,7 +355,7 @@ The `pcluster list` AWS ParallelCluster 2.x command must be replaced with [`pclu
 
  Note: You need AWS ParallelCluster v2 CLI to list clusters created with 2.x versions of AWS ParallelCluster. See [Install AWS ParallelCluster in a virtual environment (recommended)](install-v3-virtual-environment.md) for how to install multiple versions of AWS ParallelCluster using virtual environments.
 
-```
+```sh
 # AWS ParallelCluster v2
 $ pcluster list -r {{REGION}}
 
@@ -369,7 +369,7 @@ The `pcluster start` and `pcluster stop` AWS ParallelCluster 2.x commands must b
 
  Starting a compute fleet:
 
-```
+```sh
 # AWS ParallelCluster v2
 $ pcluster start \
     -r {{REGION}} \
@@ -390,7 +390,7 @@ $ pcluster update-compute-fleet \
 
  Stopping a compute fleet:
 
-```
+```sh
 # AWS ParallelCluster v2
 $ pcluster stop \
     -r {{REGION}} \
@@ -415,7 +415,7 @@ The `pcluster ssh` AWS ParallelCluster 2.x command has different parameters name
 
 Connecting to a cluster:
 
-```
+```sh
 # AWS ParallelCluster v2
 $ pcluster ssh \
     -r {{REGION}} \

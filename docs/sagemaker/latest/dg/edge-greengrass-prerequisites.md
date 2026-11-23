@@ -29,7 +29,7 @@ The IAM Role must start with `SageMaker*`
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement":[
@@ -57,7 +57,7 @@ The IAM Role must start with `SageMaker*`
 
 ****
 
-     ```
+     ```json
      {
        "Version":"2012-10-17",
        "Statement": [

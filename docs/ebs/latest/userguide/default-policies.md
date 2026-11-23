@@ -91,7 +91,7 @@ If you get the `Role with name AWSDataLifecycleManagerDefaultRole already exists
 Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/reference/dlm/create-lifecycle-policy.html) command. You can specify the request parameters in one of two methods, depending on your use case or preferences:
 + **Method 1**
 
-  ```
+  ```bash
   $ aws dlm create-lifecycle-policy \
   --state {{ENABLED | DISABLED}} \
   --description "{{policy_description}}" \
@@ -107,7 +107,7 @@ Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/refere
 
   For example, to create a default policy for EBS snapshots that targets all volumes in the Region, uses the default IAM role, runs daily (default), and retains snapshots for 7 days (default), you need to specify the following parameters:
 
-  ```
+  ```bash
   $ aws dlm create-lifecycle-policy \
   --state ENABLED \
   --description "Daily default snapshot policy" \
@@ -116,7 +116,7 @@ Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/refere
   ```
 + **Method 2**
 
-  ```
+  ```bash
   $ aws dlm create-lifecycle-policy \
   --state {{ENABLED | DISABLED}} \
   --description "{{policy_description}}" \
@@ -127,7 +127,7 @@ Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/refere
 
   Where `policyDetails.json` includes the following:
 
-  ```
+  ```json
   {
       "PolicyLanguage": "SIMPLIFIED",
       "PolicyType": "EBS_SNAPSHOT_MANAGEMENT",
@@ -209,7 +209,7 @@ If you get the `Role with name AWSDataLifecycleManagerDefaultRoleForAMIManagemen
 Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/reference/dlm/create-lifecycle-policy.html) command. You can specify the request parameters in one of two methods, depending on your use case or preferences:
 + **Method 1**
 
-  ```
+  ```bash
   $ aws dlm create-lifecycle-policy \
   --state {{ENABLED | DISABLED}} \
   --description "{{policy_description}}" \
@@ -225,7 +225,7 @@ Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/refere
 
   For example, to create a default policy for EBS-backed AMIs that targets all instances in the Region, uses the default IAM role, runs daily (default), and retains AMIs for 7 days (default), you need to specify the following parameters:
 
-  ```
+  ```bash
   $ aws dlm create-lifecycle-policy \
   --state ENABLED \
   --description "Daily default AMI policy" \
@@ -234,7 +234,7 @@ Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/refere
   ```
 + **Method 2**
 
-  ```
+  ```bash
   $ aws dlm create-lifecycle-policy \
   --state {{ENABLED | DISABLED}} \
   --description "{{policy_description}}" \
@@ -245,7 +245,7 @@ Use the [ create-lifecycle-policy](https://docs.aws.amazon.com/cli/latest/refere
 
   Where `policyDetails.json` includes the following:
 
-  ```
+  ```json
   {
       "PolicyLanguage": "SIMPLIFIED",
       "PolicyType": "IMAGE_MANAGEMENT",

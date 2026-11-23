@@ -33,7 +33,7 @@ A `SUPER` expression or column.
 
 To check if `2.22::FLOAT` is a `FLOAT` using the IS\_FLOAT function, use the following example.
 
-```
+```sql
 CREATE TABLE t(s SUPER);
 
 INSERT INTO t VALUES(2.22::FLOAT);

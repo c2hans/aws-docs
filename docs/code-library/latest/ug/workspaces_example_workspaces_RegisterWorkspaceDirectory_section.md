@@ -32,7 +32,7 @@ For more information, see [Register an existing AWS Directory Service directory 
 **Tools for PowerShell V4**
 **Example 1: This sample registers the specified directory for Workspaces Service**
 
-```
+```powershell
 Register-WKSWorkspaceDirectory -DirectoryId d-123412a123 -EnableWorkDoc $false
 ```
 +  For API details, see [RegisterWorkspaceDirectory](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -40,7 +40,7 @@ Register-WKSWorkspaceDirectory -DirectoryId d-123412a123 -EnableWorkDoc $false
 **Tools for PowerShell V5**
 **Example 1: This sample registers the specified directory for Workspaces Service**
 
-```
+```powershell
 Register-WKSWorkspaceDirectory -DirectoryId d-123412a123 -EnableWorkDoc $false
 ```
 +  For API details, see [RegisterWorkspaceDirectory](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

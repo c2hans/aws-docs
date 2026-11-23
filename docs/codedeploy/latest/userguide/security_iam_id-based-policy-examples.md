@@ -32,7 +32,7 @@ The following example shows a permissions policy that allows a user to delete th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -80,7 +80,7 @@ The following example grants permissions to perform CodeDeploy operations in the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -109,7 +109,7 @@ The following example grants permissions to register application revisions for a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -138,7 +138,7 @@ The following example allows permission to create deployments for the deployment
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -209,7 +209,7 @@ You don't need to allow minimum console permissions for users who are making cal
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ The following code example uses default credentials stored in the AWS SDK config
 
 For more information on this operation, see the reference for the [`PutLexicon`](https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon.html) API.
 
-```
+```python
 from argparse import ArgumentParser
 
 from boto3 import Session

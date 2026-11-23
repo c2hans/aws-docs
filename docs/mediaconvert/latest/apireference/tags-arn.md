@@ -90,7 +90,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="tags-arn-request-body-get-example"></a>
 
-```
+```json
 {
   "arn": "string"
 }
@@ -99,7 +99,7 @@ Supports CORS preflight requests.
 #### PUT schema
 <a name="tags-arn-request-body-put-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "tagKeys": [
@@ -114,7 +114,7 @@ Supports CORS preflight requests.
 #### ListTagsForResourceResponse schema
 <a name="tags-arn-response-body-listtagsforresourceresponse-example"></a>
 
-```
+```json
 {
   "resourceTags": {
     "arn": "string",
@@ -127,7 +127,7 @@ Supports CORS preflight requests.
 #### UntagResourceResponse schema
 <a name="tags-arn-response-body-untagresourceresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -135,7 +135,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="tags-arn-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

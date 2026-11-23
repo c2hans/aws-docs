@@ -150,7 +150,7 @@ To add permissions to your CodeBuild service role policy, you create a customer-
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -290,7 +290,7 @@ The CloudTrail logs for the action also log the `AccessDenied` error.
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Id": "SSEAndSSLPolicy",

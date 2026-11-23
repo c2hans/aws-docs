@@ -105,7 +105,7 @@ For details on how these settings interact with revision-level concurrency and g
 **To create a HomeRegion endpoint (AWS CLI)**
 +
 
-  ```
+  ```bash
   aws lambda-web create-web-function-endpoint \
       --function-name {{my-web-app}} \
       --endpoint-name {{my-endpoint}} \
@@ -117,7 +117,7 @@ For details on how these settings interact with revision-level concurrency and g
 **To create a MultiRegion endpoint (AWS CLI)**
 +
 
-  ```
+  ```bash
   aws lambda-web create-web-function-endpoint \
       --function-name {{my-web-app}} \
       --endpoint-name {{my-global-endpoint}} \
@@ -132,7 +132,7 @@ For details on how these settings interact with revision-level concurrency and g
 ### Listing endpoints
 <a name="web-functions-endpoint-list"></a>
 
-```
+```bash
 aws lambda-web list-web-function-endpoints \
     --function-name {{my-web-app}}
 ```
@@ -142,7 +142,7 @@ The response includes each endpoint's name, type, domain name, state, and config
 ### Getting endpoint details
 <a name="web-functions-endpoint-get"></a>
 
-```
+```bash
 aws lambda-web get-web-function-endpoint \
     --function-name {{my-web-app}} \
     --endpoint-name {{my-endpoint}}
@@ -168,7 +168,7 @@ You *cannot* update the following properties. To change these, create a new endp
 ### Deleting an endpoint
 <a name="web-functions-endpoint-delete"></a>
 
-```
+```bash
 aws lambda-web delete-web-function-endpoint \
     --function-name {{my-web-app}} \
     --endpoint-name {{my-endpoint}}

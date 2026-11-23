@@ -64,7 +64,7 @@ Each contact version has one of the following statuses:
 
  The following example updates a contact with new tracking overrides and waits for the update to complete using the Boto3 `ContactUpdated` waiter.
 
-```
+```python
 import boto3
 import uuid
 
@@ -142,7 +142,7 @@ except WaiterError as e:
 
  The following example retrieves the details of a specific contact version, including its status, configuration, and any failure information.
 
-```
+```python
 import boto3
 
 # Create AWS Ground Station client
@@ -199,7 +199,7 @@ if version["status"] == "FAILED_TO_UPDATE":
 
  The following example lists all versions of a contact to view the full history of changes, using pagination to handle large result sets.
 
-```
+```python
 import boto3
 
 # Create AWS Ground Station client

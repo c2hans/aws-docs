@@ -12,7 +12,7 @@ Contains error information for a pentest job that encountered an error.
  ** code **   <a name="securityagent-Type-ErrorInformation-code"></a>
 The error code. Valid values include CLIENT\_ERROR, INTERNAL\_ERROR, and STOPPED\_BY\_USER.
 Type: String
-Valid Values: `CLIENT_ERROR | INTERNAL_ERROR | STOPPED_BY_USER`
+Valid Values: `CLIENT_ERROR | INTERNAL_ERROR | STOPPED_BY_USER | PAUSED_BY_USER`
 Required: No
 
  ** message **   <a name="securityagent-Type-ErrorInformation-message"></a>

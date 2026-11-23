@@ -178,7 +178,7 @@ When CodePipeline runs the action, the CodePipeline service role policy requires
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: Test
 Actions:
   - Name: TestDeviceFarm
@@ -205,7 +205,7 @@ Region: us-west-2
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "Test",
     "Actions": [

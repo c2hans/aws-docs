@@ -23,21 +23,21 @@ IDT for AWS IoT Greengrass V2 tests your device for compatibility with a specifi
 ------
 #### [ Linux or Unix ]
 
-```
+```bash
 curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-{{version}}.zip > aws.greengrass.nucleus.zip
 ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-```
+```cmd
 curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-{{version}}.zip > aws.greengrass.nucleus.zip
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```ps
 iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-{{version}}.zip -OutFile aws.greengrass.nucleus.zip
 ```
 
@@ -80,7 +80,7 @@ In this step, configure the permissions that IDT for AWS IoT Greengrass V2 uses 
 
    1. If you are not using PreInstalled, on the **JSON** tab, replace the placeholder content with the following policy. If you are using PreInstalled, proceed to the following step.
 
-      ```
+      ```json
       <a name="customer-managed-policy-cli"></a>{
           "Version":"2012-10-17",
           "Statement":[
@@ -240,7 +240,7 @@ In this step, configure the permissions that IDT for AWS IoT Greengrass V2 uses 
       + Replace {{thingName}} and {{thingGroup}} in the `iotResources` statement with the thing name and thing group that were created during the Greengrass installation on your device under test (DUT) to add permissions.
       + Replace the {{passRole}} and {{roleAlias}} in the `roleAliasResources` statement and the `passRoleForResources` statement with the roles that were created during the Greengrass installation on your DUT.
 
-      ```
+      ```json
       <a name="customer-managed-policy-cli"></a>{
           "Version":"2012-10-17",
           "Statement":[
@@ -435,7 +435,7 @@ The AWS CLI is an open source tool that you can use to interact with AWS service
 
    1. If you are not using PreInstalled, open a text editor and save the following policy contents in a JSON file. If you are using PreInstalled, proceed to the following step.
 
-      ```
+      ```json
       <a name="customer-managed-policy-cli"></a>{
           "Version":"2012-10-17",
           "Statement":[
@@ -595,7 +595,7 @@ The AWS CLI is an open source tool that you can use to interact with AWS service
       + Replace {{thingName}} and {{thingGroup}} in the `iotResources` statement that were created during the Greengrass installation on your device under test (DUT) to add permissions.
       + Replace the {{passRole}} and {{roleAlias}} in the `roleAliasResources` statement and the `passRoleForResources` statement with the roles that were created during the Greengrass installation on your DUT.
 
-      ```
+      ```json
       <a name="customer-managed-policy-cli"></a>{
           "Version":"2012-10-17",
           "Statement":[
@@ -755,7 +755,7 @@ If you want to use a [custom IAM role as the token exchange role](set-config.md#
 
    1. Run the following command to create a customer managed policy named `IDTGreengrassIAMPermissions`. Replace `{{policy.json}}` with the full path to the JSON file that you created in the previous step.
 
-      ```
+      ```bash
       aws iam create-policy --policy-name IDTGreengrassIAMPermissions --policy-document file://{{policy.json}}
       ```
 
@@ -763,19 +763,19 @@ If you want to use a [custom IAM role as the token exchange role](set-config.md#
 
    1. Create an IAM user. In this example setup, the user is named `IDTGreengrassUser`.
 
-      ```
+      ```bash
       aws iam create-user --user-name IDTGreengrassUser
       ```
 
    1. Attach the `IDTGreengrassIAMPermissions` policy you created in step 2 to your IAM user. Replace {{<account-id>}} in the command with the ID of your AWS account.
 
-      ```
+      ```bash
       aws iam attach-user-policy --user-name IDTGreengrassUser --policy-arn arn:aws:iam::{{<account-id>}}:policy/IDTGreengrassIAMPermissions
       ```
 
 1. Create a secret access key for the user.
 
-   ```
+   ```bash
    aws iam create-access-key --user-name IDTGreengrassUser
    ```
 

@@ -109,7 +109,7 @@ For more information, see [Deleting an Amazon EKS cluster](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the Amazon EKS cluster control plane.**
 
-```
+```powershell
 Remove-EKSCluster -Name "DEV-KUBE-CL"
 ```
 **Output:**
@@ -140,7 +140,7 @@ Version              : 1.14
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes the Amazon EKS cluster control plane.**
 
-```
+```powershell
 Remove-EKSCluster -Name "DEV-KUBE-CL"
 ```
 **Output:**
@@ -174,7 +174,7 @@ Version              : 1.14
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/eks#code-examples).
 
-```
+```rust
 async fn remove_cluster(
     client: &aws_sdk_eks::Client,
     name: &str,

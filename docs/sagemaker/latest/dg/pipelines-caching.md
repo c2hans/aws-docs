@@ -23,6 +23,7 @@ Step caching is available for the following step types:
 + [`ClarifyCheck`](build-and-manage-steps-types.md#step-type-clarify-check)
 + [`QualityCheck`](build-and-manage-steps-types.md#step-type-quality-check)
 + [EMR](build-and-manage-steps-types.md#step-type-emr)
++ [Athena](build-and-manage-steps-types.md#step-type-athena)
 
 **Topics**
 + [Turn on step caching](pipelines-caching-enabling.md)

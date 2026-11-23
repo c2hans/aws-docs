@@ -29,7 +29,7 @@ Complete the following procedure to create an Amazon DataZone domain.
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

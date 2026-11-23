@@ -116,7 +116,7 @@ Updates the specified application.
 #### PATCH schema
 <a name="applications-applicationid-request-body-patch-example"></a>
 
-```
+```json
 {
   "description": "string",
   "author": "string",
@@ -135,7 +135,7 @@ Updates the specified application.
 #### Application schema
 <a name="applications-applicationid-response-body-application-example"></a>
 
-```
+```json
 {
   "applicationId": "string",
   "name": "string",
@@ -190,7 +190,7 @@ Updates the specified application.
 #### BadRequestException schema
 <a name="applications-applicationid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -200,7 +200,7 @@ Updates the specified application.
 #### ForbiddenException schema
 <a name="applications-applicationid-response-body-forbiddenexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -210,7 +210,7 @@ Updates the specified application.
 #### NotFoundException schema
 <a name="applications-applicationid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -220,7 +220,7 @@ Updates the specified application.
 #### ConflictException schema
 <a name="applications-applicationid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -230,7 +230,7 @@ Updates the specified application.
 #### TooManyRequestsException schema
 <a name="applications-applicationid-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"
@@ -240,7 +240,7 @@ Updates the specified application.
 #### InternalServerErrorException schema
 <a name="applications-applicationid-response-body-internalservererrorexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "errorCode": "string"

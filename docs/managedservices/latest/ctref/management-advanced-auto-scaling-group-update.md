@@ -144,14 +144,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-auto-scaling-group-update-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-auto-scaling-group-update-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-12345678",
   "StackId": "stack-12345678901234567",

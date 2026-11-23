@@ -18,7 +18,7 @@ Initiate the deletion of the custom AWS ParallelCluster image.
 ## Request syntax
 <a name="delete-image-request"></a>
 
-```
+```json
 DELETE /v3/images/custom/{{{imageId}}}
 {
   "force": boolean,
@@ -47,7 +47,7 @@ Required: No
 ## Response syntax
 <a name="delete-image-response"></a>
 
-```
+```json
 {
   "image": {
     "imageId": "string",
@@ -100,13 +100,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ delete_image({{custom-image-id}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   "image": {
     "image_build_status": "DELETE_IN_PROGRESS",

@@ -72,7 +72,7 @@ For every Lambda function invocation from a flow, you pass a default set of info
 
 The following is an example JSON request to a Lambda function:
 
-```
+```json
 {
     "Details": {
         "ContactData": {
@@ -142,7 +142,7 @@ The request is divided into two parts:
 
 The [AWS Lambda function](invoke-lambda-function-block.md) block can receive input parameters in JSON format, accommodating both primitive data types and nested JSON. The following is an example of a JSON input that can be used in the [AWS Lambda function](invoke-lambda-function-block.md) block.
 
-```
+```json
 {
   "Name": "Jane",
   "Age":10,
@@ -177,7 +177,7 @@ To successfully pass attributes and parameters between your Lambda function and 
 
 For example, the following code shows how to access `exampleParameterKey1` from **Invoke AWS Lambda function** block and `exampleAttributeKey1` from **Set contact attributes** block using Node.JS:
 
-```
+```nodejs
 exports.handler = function(event, context, callback) {
 // Example: access value from parameter (Invoke AWS Lambda function)
 let parameter1 = event['Details']['Parameters']['exampleParameterKey1'];
@@ -207,7 +207,7 @@ The Lambda response can be up to 64 KB. If you fail to reach Lambda, the functio
 
 Test the output returned from your Lambda function to confirm that it will be correctly consumed when returned to Connect Customer. The following example shows a sample response in Node.JS:
 
-```
+```nodejs
 exports.handler = function(event, context, callback) {
 // Extract data from the event object
 let phone = event['Details']['ContactData']['CustomerEndpoint']['Address'];
@@ -228,7 +228,7 @@ callback(null, resultMap);
 
 This example shows an example response using Python:
 
-```
+```python
 def lambda_handler(event, context):
 // Extract data from the event object
   phone = event['Details']['ContactData']['CustomerEndpoint']['Address']
@@ -249,7 +249,7 @@ The output returned from the function must be a flat object of key/value pairs, 
 
 The following example shows the JSON output from these Lambda functions:
 
-```
+```json
 {
 "AccountId": "a12345689",
 "Balance": "$1000"
@@ -258,7 +258,7 @@ The following example shows the JSON output from these Lambda functions:
 
 If response validation is set to JSON, then Lambda function can return even a nested JSON, for example:
 
-```
+```json
 {
   "Name": {
       "First": "John",
@@ -328,7 +328,7 @@ Make sure that the name specified for the source external attribute matches the 
 1. Copy and paste the following code into the code editor as shown in the following image:
 ![The Code source section, the deploy button.](https://docs.aws.amazon.com/connect/latest/adminguide/images/lambdafunctions-tutorial-code-source.png)
 
-   ```
+   ```json
    exports.handler = async (event, context, callback) => {
    // Extract information
            const customerNumber = event.Details.ContactData.CustomerEndpoint.Address;
@@ -367,7 +367,7 @@ If you are using Node.js 18 or later, use `export const handler` instead of `exp
 
 1. In the **Event JSON** box, delete the sample code and enter the following code instead.
 
-   ```
+   ```json
    {
    "Details": {
    "ContactData": {

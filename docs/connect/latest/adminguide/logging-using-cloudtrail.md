@@ -39,7 +39,7 @@ For more information, see the [CloudTrail userIdentity Element](https://docs.aws
 
 The following example shows a CloudTrail log entry that demonstrates the `GetContactAttributes` action.
 
-```
+```json
 {
         "eventVersion": "1.05",
         "userIdentity": {
@@ -90,7 +90,7 @@ For security reasons, the sensitive fields which might contain PII information i
 
 The following example shows a CloudTrail log entry that demonstrates the ` CreateDomain` action.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

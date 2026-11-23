@@ -18,7 +18,7 @@ These DSLs build **low-level** expressions: they are not restricted by or adhere
 
 Every expression references at least one attribute through the `attr` accessor. A top-level attribute is `attr["name"]`. Nested values inside maps and lists are reached by chaining the `[]` operator with string keys and integer indexes:
 
-```
+```kotlin
 attr["status"]              // a top-level attribute
 attr["shipping"]["city"]    // the "city" entry of the "shipping" map attribute
 attr["productSkus"][0]      // the first element of the "productSkus" list attribute
@@ -29,7 +29,7 @@ attr["productSkus"][0]      // the first element of the "productSkus" list attri
 
 Set a `filter { }` on a [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) or [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) to drop items that don’t match a condition. The filter is applied by DynamoDB after items are read, so it narrows results but doesn’t reduce read cost.
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
 
 val largeShipped = ordersTable
@@ -61,7 +61,7 @@ The following equality/inequality comparison operators are available:
 +  `A lte B`: true if `A` is less than or equal to `B`
 +  `A neq B`: true if `A` is not equal to `B`
 
-```
+```kotlin
 filter { attr["totalCents"] gte 5_000L } // totalCents is greater than or equal to 5,000
 ```
 
@@ -72,7 +72,7 @@ The following operators work on ranges and collections:
 +  `A.isBetween(B, C)`: true if `A` is greater than or equal to `B` **and** less than or equal to `C`
 +  `A isIn B`: true if `A` is an element in the collection/range `B`
 
-```
+```kotlin
 filter { attr["totalCents"] isIn 1_000L..5_000L }       // totalCents is between 1,000 and 5,000
 filter { attr["status"] isIn setOf("PAID", "SHIPPED") } // status is either PAID or SHIPPED
 ```
@@ -88,7 +88,7 @@ The following functions are available:
 +  `A.size`: computes the string length or collection size of `A`. Note that this is not a boolean expression and must be combined with another operator or function to form a valid filter expression.
 +  `A startsWith B`: true if `A` begins with `B`
 
-```
+```kotlin
 filter { attr["productSkus"] contains "SKU-1" }    // SKU-1 is an element in productSkus
 filter { attr["couponCode"].exists() }             // the item has a couponCode
 filter { attr["orderId"] startsWith "ORDER#2026" } // orderId begins with ORDER#2026
@@ -103,7 +103,7 @@ The following boolean logic operations are available:
 +  `or(A, B, C, …​)`: true if at least one of `A`, `B`, `C`, `…​` is true
 +  `not(A)`: true if `A` is false; false if `A` is true
 
-```
+```kotlin
 filter {
     or(
         attr["status"] eq "PENDING",
@@ -120,7 +120,7 @@ filter {
 
 A [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) also takes a `keyCondition`, built with `KeyFilter`. Unlike a filter, a key condition is evaluated by DynamoDB to select which items to read. It always specifies the partition key and can add a condition on the sort key through a lambda argument:
 
-```
+```kotlin
 // All orders for a customer:
 keyCondition = KeyFilter("customer-123")
 
@@ -142,7 +142,7 @@ Set an `update { }` on [`updateItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper
 +  `remove { }`: delete attributes or elements
 +  `set { }`: add or modify attributes
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
 
 ordersTable.updateItem {
@@ -172,7 +172,7 @@ ordersTable.updateItem {
 
  ** `add` ** increments a number or adds elements to a set with `+=`. Unlike a `set` increment, this maps to the low-level `ADD` action, which also creates the attribute if it’s absent.
 
-```
+```kotlin
 add {
     attr["tags"] += setOf("backordered")
 }
@@ -180,7 +180,7 @@ add {
 
  ** `delete` ** removes elements from a set with `-=`:
 
-```
+```kotlin
 delete {
     attr["tags"] -= setOf("gift", "priority")
 }
@@ -188,7 +188,7 @@ delete {
 
  ** `remove` ** deletes attributes, map entries, or list elements with the unary `-` operator:
 
-```
+```kotlin
 remove {
     -attr["couponCode"]
     -attr["productSkus"][0]
@@ -197,7 +197,7 @@ remove {
 
  ** `set` ** adds or replaces attributes and elements. Assign a literal value or an expression with `=`. Derive numeric values with `+`/`-` (or `+=`/`-=`), fall back to a default for a missing attribute with `orElse`, and concatenate lists with `appending`:
 
-```
+```kotlin
 set {
     attr["status"] = "PAID"
     attr["totalCents"] += 250

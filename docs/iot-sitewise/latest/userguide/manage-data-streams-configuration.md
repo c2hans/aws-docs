@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-dat
 **Example IAM user policy that disables disassociated data ingestion from the gateway**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-dat
 **Example IAM user policy that disables all data ingestion from the gateway**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

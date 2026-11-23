@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/handle-err
 
  It is important that your application check whether an error occurred after invoking a function or method that can return an `error` interface type. The most basic form of error handling looks similar to the following example:
 
-```
+```go
 if err != nil {
     // Handle error
     return
@@ -20,7 +20,7 @@ if err != nil {
 
  The simplest form of error handling is traditionally to log or print the error message before returning or exiting from the application.
 
-```
+```go
 import "log"
 
 // ...
@@ -36,7 +36,7 @@ if err != nil {
 
  The SDK wraps all errors returned by service clients with the [smithy.OperationError](https://pkg.go.dev/github.com/aws/smithy-go#OperationError) error type. `OperationError` provides contextual information about the service name and operation that is associated with an underlying error. This information can be useful for applications that perform batches of operations to one or more services, with a centralized error handling mechanism. Your application can use `errors.As` to access this `OperationError` metadata.
 
-```
+```go
 import "log"
 import "github.com/aws/smithy-go"
 
@@ -58,7 +58,7 @@ if err != nil {
 
  For example, to check if an error was a `BucketAlreadyExists` error:
 
-```
+```go
 import "log"
 import "github.com/aws/aws-sdk-go-v2/service/s3/types"
 
@@ -75,7 +75,7 @@ if err != nil {
 
  All service API response errors implement the [smithy.APIError](https://pkg.go.dev/github.com/aws/smithy-go/#APIError) interface type. This interface can be used to handle both modeled or un-modeled service error responses. This type provides access to the error code and message returned by the service. Additionally, this type provides indication of whether the fault of the error was due to the client or server if known.
 
-```
+```go
 import "log"
 import "github.com/aws/smithy-go"
 
@@ -95,7 +95,7 @@ if err != nil {
 
  When working with AWS Support, you may be asked to provide the request identifier that identifies the request you are attempting to troubleshoot. You can use [http.ResponseError](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws/transport/http#ResponseError) and use the `ServiceRequestID()` method to retrieve the request identifier associated with error response.
 
-```
+```go
 import "log"
 import awshttp "github.com/aws/aws-sdk-go-v2/aws/transport/http"
 
@@ -115,7 +115,7 @@ if err != nil {
 
  Amazon S3 requests contain additional identifiers that can be used to assist AWS Support with troubleshooting your request. You can use [s3.ResponseError](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/s3#ResponseError) and call `ServiceRequestID()` and `ServiceHostID()` to retrieve the request ID and host ID.
 
-```
+```go
 import "log"
 import "github.com/aws/aws-sdk-go-v2/service/s3"
 

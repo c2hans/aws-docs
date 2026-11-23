@@ -70,7 +70,7 @@ If you create your own role, it must have the following contents:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

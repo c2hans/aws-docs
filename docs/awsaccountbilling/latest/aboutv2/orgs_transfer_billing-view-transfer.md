@@ -71,7 +71,7 @@ You can use one of the following operations:
 
      Run the following command to find the billing transfer ID for inbound billings:
 
-     ```
+     ```bash
      $ C:\> aws organizations list-inbound-responsibility-transfers \
          --type BILLING
      ```
@@ -80,7 +80,7 @@ You can use one of the following operations:
 
      Run the following command to find the billing transfer ID for outbound billings:
 
-     ```
+     ```bash
      $ C:\> aws organizations list-outbound-responsibility-transfers \
          --type BILLING
      ```
@@ -89,7 +89,7 @@ You can use one of the following operations:
 
   1. Run the following command to view details for the transfer:
 
-     ```
+     ```bash
      $ C:\> aws organizations describe-responsibility-transfer \
          --id {{exampleid}}
      ```

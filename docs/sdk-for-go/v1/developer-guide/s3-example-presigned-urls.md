@@ -26,7 +26,7 @@ To generate a pre-signed URL, use the [Presign](https://docs.aws.amazon.com/sdk-
 
 The following example generates a pre-signed URL that enables you to temporarily share a file without making it public. Anyone with access to the URL can view the file.
 
-```
+```go
 package main
 
 import (
@@ -74,7 +74,7 @@ You can generate a pre-signed URL for a PUT operation that checks whether users 
 
 The following example adds a `Body` field to generate a pre-signed PUT operation that requires a specific payload to be uploaded by users.
 
-```
+```go
 package main
 
 import (
@@ -111,7 +111,7 @@ If you omit the `Body` field, users can write any contents to the given object.
 
 The following example shows the enforcing of Content-MD5.
 
-```
+```go
 package main
 
 import (

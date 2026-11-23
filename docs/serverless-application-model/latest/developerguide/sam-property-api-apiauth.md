@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-apiauth-syntax.yaml"></a>
 
-```
+```yaml
   AddApiKeyRequiredToCorsPreflight: {{Boolean}}
   [AddDefaultAuthorizerToCorsPreflight](#sam-api-apiauth-adddefaultauthorizertocorspreflight): {{Boolean}}
   [ApiKeyRequired](#sam-api-apiauth-apikeyrequired): {{Boolean}}
@@ -104,7 +104,7 @@ Cognito Auth example
 #### YAML
 <a name="sam-property-api-apiauth--examples--cognitoauth--yaml"></a>
 
-```
+```yaml
 Auth:
   Authorizers:
     MyCognitoAuth:
@@ -141,7 +141,7 @@ AWS IAM example
 #### YAML
 <a name="sam-property-api-apiauth--examples--cognitoauth--yaml"></a>
 
-```
+```yaml
 Auth:
   Authorizers: AWS_IAM
 ```

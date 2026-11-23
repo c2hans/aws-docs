@@ -48,6 +48,11 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[a-zA-Z]+$`
 Required: No
 
+ ** ExpressPrivateOfferConfigurationSummary **   <a name="AWSMarketplaceService-Type-EntitySummary-ExpressPrivateOfferConfigurationSummary"></a>
+An object that contains summary information about the express private offer configuration.
+Type: [ExpressPrivateOfferConfigurationSummary](API_ExpressPrivateOfferConfigurationSummary.md) object
+Required: No
+
  ** LastModifiedDate **   <a name="AWSMarketplaceService-Type-EntitySummary-LastModifiedDate"></a>
 The last time the entity was published, using ISO 8601 format (2018-02-27T13:45:22Z).
 Type: String

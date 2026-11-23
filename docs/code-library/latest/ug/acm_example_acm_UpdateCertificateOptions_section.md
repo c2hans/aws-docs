@@ -14,7 +14,7 @@ The following code examples show how to use `UpdateCertificateOptions`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Update an AWS Certificate Manager (ACM) certificate option.
 /*!
   \param certificateArn: The Amazon Resource Name (ARN) of a certificate.

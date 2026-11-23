@@ -8,19 +8,19 @@ Starting with MDAA 1.8.0, the CLI has an `init` action that scaffolds a new conf
 
 To scaffold a new project into an empty directory, choosing the starter kit interactively:
 
-```
+```bash
 npx @aws-mdaa/cli init ./my-data-platform
 ```
 
 To scaffold a specific starter kit without prompts, pass `--starter-kit` and `--no-prompt`:
 
-```
+```bash
 npx @aws-mdaa/cli init ./my-data-platform --starter-kit basic_datalake --no-prompt
 ```
 
 To add the schemas, module documentation, and AI steering files to an existing config directory (one that already contains an `mdaa.yaml`), use `--enhance`:
 
-```
+```bash
 npx @aws-mdaa/cli init ./existing-config --enhance
 ```
 

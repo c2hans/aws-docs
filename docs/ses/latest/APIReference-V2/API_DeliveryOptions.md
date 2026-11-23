@@ -20,8 +20,18 @@ The name of the dedicated IP pool to associate with the configuration set.
 Type: String
 Required: No
 
+ ** SharedPoolDeliveryMode **   <a name="SES-Type-DeliveryOptions-SharedPoolDeliveryMode"></a>
+The shared pool delivery mode for email that you send with the configuration set from shared IP addresses. This setting overrides the shared pool delivery mode of your account. Can be one of the following:
++  `GLOBAL` – Amazon SES delivers from your sending Region first and, when it improves your deliverability, also uses Amazon SES shared IP addresses with established sending history in other AWS Regions within the same AWS partition.
++  `REGIONAL` – Amazon SES delivers your email only from shared IP addresses in your sending Region.
++  `ACCOUNT` – The configuration set uses the shared pool delivery mode of your account.
+If you don't specify a value, the configuration set uses the shared pool delivery mode of your account.
+Type: String
+Valid Values: `GLOBAL | REGIONAL | ACCOUNT`
+Required: No
+
  ** TlsPolicy **   <a name="SES-Type-DeliveryOptions-TlsPolicy"></a>
-Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS). If the value is `Require`, messages are only delivered if a TLS connection can be established. If the value is `Optional`, messages can be delivered in plain text if a TLS connection can't be established.
+Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS). If the value is `REQUIRE`, messages are only delivered if a TLS connection can be established. If the value is `OPTIONAL`, messages can be delivered in plain text if a TLS connection can't be established.
 Type: String
 Valid Values: `REQUIRE | OPTIONAL`
 Required: No

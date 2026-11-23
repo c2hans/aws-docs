@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following is an example CloudTrail log entry for the `CreateSavingsPlan` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

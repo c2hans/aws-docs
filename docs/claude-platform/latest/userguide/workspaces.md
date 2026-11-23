@@ -13,7 +13,7 @@ Workspaces are bound to a single AWS region. A workspace created in `us-west-2` 
 
 Workspaces also serve as the primary IAM resource for Claude Platform on AWS. You grant or deny access to specific workspaces through AWS IAM policies using the workspace ARN. The ARN’s resource segment is the same `wrkspc_`-prefixed ID you pass in the `anthropic-workspace-id` header:
 
-```
+```text
 arn:aws:aws-external-anthropic:{region}:{account-id}:workspace/{workspace-id}
 ```
 
@@ -33,7 +33,7 @@ Every data plane request must include the workspace ID in the `anthropic-workspa
 
 1.  **Environment variable** — set `ANTHROPIC_AWS_WORKSPACE_ID`, and the client reads it automatically.
 
-   ```
+   ```bash
    export ANTHROPIC_AWS_WORKSPACE_ID='wrkspc_01AbCdEf23GhIj'
    ```
 
@@ -55,7 +55,7 @@ Update tags on the existing workspace with `TagResource` and `UntagResource` in 
 
 You can gate `aws-external-anthropic` actions on workspace tag values using the `aws:ResourceTag/<key>` condition context key. The following policy allows inference only on workspaces tagged `Environment=production`:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

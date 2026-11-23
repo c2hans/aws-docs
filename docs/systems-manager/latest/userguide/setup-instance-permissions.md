@@ -37,7 +37,7 @@ You can turn on the Default Host Management Configuration from the Fleet Manager
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -165,7 +165,7 @@ For information about the AWS managed S3 buckets you provide access to in the fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

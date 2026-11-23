@@ -43,7 +43,7 @@ Store the credentials in an AWS Secrets Manager secret with the following key-va
 
 **Without document-level access control**
 
-```
+```json
 {
     "username": "{{your-confluence-email}}",
     "password": "{{your-atlassian-api-token}}",
@@ -53,7 +53,7 @@ Store the credentials in an AWS Secrets Manager secret with the following key-va
 
 **With document-level access control**
 
-```
+```json
 {
     "username": "{{your-confluence-email}}",
     "password": "{{your-atlassian-api-token}}",

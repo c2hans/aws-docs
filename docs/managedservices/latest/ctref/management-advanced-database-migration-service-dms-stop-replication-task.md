@@ -139,14 +139,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-database-migration-service-dms-stop-replication-task-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-advanced-database-migration-service-dms-stop-replication-task-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-StopDmsTask",
   "Region": "us-east-1",

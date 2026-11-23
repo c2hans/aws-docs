@@ -17,7 +17,7 @@ The following example creates a copy of an AMI in the Seoul region (`SourceImage
 ------
 #### [ YAML ]
 
-```
+```yaml
 name: createEncryptedCopy
 action: aws:copyImage
 maxAttempts: 3
@@ -32,7 +32,7 @@ inputs:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "name": "createEncryptedCopy",
     "action": "aws:copyImage",

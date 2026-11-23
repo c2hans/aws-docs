@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information on the current account's send quota.
     /// </summary>
@@ -71,7 +71,7 @@ For more information, see [Managing your Amazon SES sending limits](https://docs
 **Tools for PowerShell V4**
 **Example 1: This command returns the user's current sending limits.**
 
-```
+```powershell
 Get-SESSendQuota
 ```
 +  For API details, see [GetSendQuota](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -79,7 +79,7 @@ Get-SESSendQuota
 **Tools for PowerShell V5**
 **Example 1: This command returns the user's current sending limits.**
 
-```
+```powershell
 Get-SESSendQuota
 ```
 +  For API details, see [GetSendQuota](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

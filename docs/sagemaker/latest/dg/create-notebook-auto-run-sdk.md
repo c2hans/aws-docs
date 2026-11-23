@@ -27,7 +27,7 @@ You can either create a notebook job that runs immediately or on a schedule. The
 **Important**
 If you schedule your notebook job using the SageMaker Python SDK, you can only specify certain images to run your notebook job. For more information, see [Image constraints for SageMaker AI Python SDK notebook jobs](notebook-auto-run-constraints.md#notebook-auto-run-constraints-image-sdk).
 
-   ```
+   ```py
    notebook_job_step = NotebookJobStep(
        input_notebook={{input-notebook}},
        image_uri={{image-uri}},
@@ -37,7 +37,7 @@ If you schedule your notebook job using the SageMaker Python SDK, you can only s
 
 1. Create a pipeline with your `NotebookJobStep` as a single step, as shown in the following snippet:
 
-   ```
+   ```py
    pipeline = Pipeline(
        name={{pipeline-name}},
        steps=[notebook_job_step],
@@ -47,7 +47,7 @@ If you schedule your notebook job using the SageMaker Python SDK, you can only s
 
 1. Run the pipeline on demand or optionally schedule future pipeline runs. To initiate an immediate run, use the following command:
 
-   ```
+   ```py
    execution = pipeline.start(
        parameters={...}
    )
@@ -67,7 +67,7 @@ If you schedule your notebook job using the SageMaker Python SDK, you can only s
 
    The following example schedules your pipeline to run at 10:15am UTC on the last Friday of each month during the years 2022 to 2023. For details about cron-based scheduling, see [Cron-based schedules](https://docs.aws.amazon.com/scheduler/latest/UserGuide/schedule-types.html#cron-based).
 
-   ```
+   ```py
    my_schedule = PipelineSchedule(
        name="my-schedule“,
        cron="15 10 ? * 6L 2022-2023"
@@ -110,7 +110,7 @@ The Papermill-based notebook job executor searches for a Jupyter cell tagged wit
 
 Once you have performed this step, pass your parameters to your `NotebookJobStep`, as shown in the following example:
 
-```
+```py
 notebook_job_parameters = {
     "company": "Amazon"
 }
@@ -139,7 +139,7 @@ The SageMaker SDK gives you the option to set defaults for a subset of parameter
 
 To set up the notebook job defaults, apply your new defaults to the notebook job section of the config file as shown in the following snippet:
 
-```
+```json
 SageMaker:
   PythonSDK:
     Modules:

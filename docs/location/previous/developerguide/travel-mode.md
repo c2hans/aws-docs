@@ -24,7 +24,7 @@ If you specify a `TravelMode` of {{`Truck`}}, you can specify additional route p
 **Example**
 The following `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` request specifies {{`Truck`}} as the mode of travel. Additional route restrictions include: avoiding routes that use ferries and avoiding roads that can't accommodate the truck dimensions and weight.
 
-```
+```json
 {
    "DeparturePosition": [-122.7565,49.0021],
    "DestinationPosition": [-122.3394, 47.6159],

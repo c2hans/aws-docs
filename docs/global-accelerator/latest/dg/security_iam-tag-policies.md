@@ -20,7 +20,7 @@ For example, the AWS `GlobalAcceleratorFullAccess` managed user policy gives use
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

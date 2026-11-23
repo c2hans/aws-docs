@@ -123,7 +123,7 @@ RETURN success
 
 Here is an example of the output returned by .louvain.mutate when run against the [ sample air-routes dataset [nodes]](https://github.com/krlawrence/graph/blob/main/sample-data/air-routes-latest-nodes.csv), and [ sample air-routes dataset [edges]](https://github.com/krlawrence/graph/blob/main/sample-data/air-routes-latest-edges.csv), when using the following query:
 
-```
+```json
 aws neptune-graph execute-query \
     --graph-identifier ${graphIdentifier} \
     --query-string 'CALL neptune.algo.louvain.mutate({writeProperty: "communityId"}) YIELD success RETURN success' \

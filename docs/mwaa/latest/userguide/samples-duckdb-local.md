@@ -42,7 +42,7 @@ You don't need additional dependencies to use the code example on this page. Ama
 
 1. Copy the following Python code example, and save it locally as `duckdb_local.py`.
 
-   ```
+   ```python
    import pendulum
 
    from airflow.providers.duckdb.operators.duckdb import DuckDBExecuteQueryOperator

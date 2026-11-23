@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition in:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ApiGatewayToDynamoDBProps, ApiGatewayToDynamoDB } from "@aws-solutions-constructs/aws-apigateway-dynamodb";
@@ -33,7 +33,7 @@ import { ApiGatewayToDynamoDBProps, ApiGatewayToDynamoDB } from "@aws-solutions-
 new ApiGatewayToDynamoDB(this, 'test-api-gateway-dynamodb-default', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_dynamodb import ApiGatewayToDynamoDB
 from aws_cdk import Stack
 from constructs import Construct
@@ -41,7 +41,7 @@ from constructs import Construct
 ApiGatewayToDynamoDB(self, 'test-api-gateway-dynamodb-default')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

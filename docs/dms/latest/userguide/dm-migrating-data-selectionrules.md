@@ -21,7 +21,7 @@ The support for selection rules AWS DMS for homogeneous data migrations varies b
 **Example Migrate all tables in a schema**
 The following example migrates all tables from a schema named `dmsst` in your source to your target endpoint.
 
-```
+```json
 {
     "rules": [
         {
@@ -42,7 +42,7 @@ The following example migrates all tables from a schema named `dmsst` in your so
 **Example Migrate some tables in a schema**
 The following example migrates all tables with a name starting with `collectionTest`, from a schema named `dmsst` in your source to your target endpoint.
 
-```
+```json
 {
     "rules": [
         {
@@ -63,7 +63,7 @@ The following example migrates all tables with a name starting with `collectionT
 **Example Migrate specific tables from multiple schemas**
 The following example migrates some of the tables from multiple schemas named `dmsst` and `Test` in your source to your target endpoint.
 
-```
+```json
 {
     "rules": [
         {

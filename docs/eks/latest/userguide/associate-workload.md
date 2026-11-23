@@ -22,7 +22,7 @@ This `nodeSelector` value is not required for EKS Auto Mode. This `nodeSelector`
 
 You can add this `nodeSelector` to Deployments or other workloads to require Kubernetes schedule them onto EKS Auto Mode nodes.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 spec:
@@ -37,7 +37,7 @@ spec:
 
 You can add this `nodeAffinity` to Deployments or other workloads to require Kubernetes **not** schedule them onto EKS Auto Mode nodes.
 
-```
+```yaml
   affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
@@ -61,7 +61,7 @@ An Amazon EKS Auto Mode cluster can have more than one NodePool. You might want 
 
 First, define a label on the NodePool.
 
-```
+```yaml
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
@@ -77,7 +77,7 @@ For more information about NodePool configuration, see [Create a Node Pool for E
 
 Next, match that label from the workload.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -97,7 +97,7 @@ Pods from this Deployment schedule only onto nodes that the `gpu` NodePool provi
 **NodePool name changes affect scheduling**
 Pinning a workload by name can leave pods in the `Pending` state if you rename or delete the target NodePool. Use a custom capability label for any workload that you expect to outlive a single NodePool definition.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 spec:

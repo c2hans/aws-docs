@@ -268,7 +268,7 @@ Your asset model must define at least one asset property, including the asset pr
 **Important**
 The alarm composite model must have the same name as the AWS IoT Events alarm model you create later. Alarm model names can contain only alphanumeric characters. Specify a unique, alphanumeric name so that you can use the same name for the alarm model.
 
-   ```
+   ```json
    {
      {{...}}
      "assetModelCompositeModels": [
@@ -303,7 +303,7 @@ The alarm composite model must have the same name as the AWS IoT Events alarm mo
 **Note**
 The alarm threshold attribute must be an `INTEGER` or a `DOUBLE`.
 
-   ```
+   ```json
    {
      {{...}}
      "assetModelProperties": [
@@ -329,13 +329,13 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
    1. Add an attribute that specifies the ID of your IAM Identity Center identity store. You can use the IAM Identity Center [ListInstances](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListInstances.html) API operation to list your identity stores. This operation works only in the Region where you enable IAM Identity Center.
 
-      ```
+      ```bash
       aws sso-admin list-instances
       ```
 
       Then, specify the identity store ID (for example, `d-123EXAMPLE`) as the default value for the attribute.
 
-      ```
+      ```json
       {
         {{...}}
         "assetModelProperties": [
@@ -357,7 +357,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
       1. You can use the IAM Identity Center [ListUsers](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListUsers.html) API to get the ID of a user whose user name you know. Replace {{d-123EXAMPLE}} with the ID of your identity store, and replace {{Name}} with the user name of the user.
 
-         ```
+         ```bash
          aws identitystore list-users \
            --identity-store-id {{d-123EXAMPLE}} \
            --filters AttributePath=UserName,AttributeValue={{Name}}
@@ -367,7 +367,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
       Then, specify the user ID (for example, `123EXAMPLE-a1b2c3d4-5678-90ab-cdef-33333EXAMPLE`) as the default value for the attribute, or define the attribute without a default value.
 
-      ```
+      ```json
       {
         {{...}}
         "assetModelProperties": [
@@ -387,7 +387,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
    1. (Optional) Add an attribute that specifies the default sender ID for SMS (text) message notifications. The sender ID displays as the message sender on messages that Amazon Simple Notification Service (Amazon SNS) sends. For more information, see [Request a sender ID in AWS End User Messaging SMS](https://docs.aws.amazon.com/sms-voice/latest/userguide/sender-id-request.html) in the *AWS End User Messaging SMS User Guide*.
 
-      ```
+      ```json
       {
         {{...}}
         "assetModelProperties": [
@@ -407,7 +407,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
    1. (Optional) Add an attribute that specifies the default email address to use as the *from* address in email notifications.
 
-      ```
+      ```json
       {
         {{...}}
         "assetModelProperties": [
@@ -427,7 +427,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
    1. (Optional) Add an attribute that specifies the default subject to use in email notifications.
 
-      ```
+      ```json
       {
         {{...}}
         "assetModelProperties": [
@@ -447,7 +447,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
    1. (Optional) Add an attribute that specifies an additional message to include in notifications. By default, notification messages include information about the alarm. You can also include an additional message that gives the user more information..
 
-      ```
+      ```json
       {
         {{...}}
         "assetModelProperties": [
@@ -468,12 +468,12 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 1. Create the asset model or update the existing asset model. Do one of the following:
    + To create the asset model, run the following command.
 
-     ```
+     ```bash
      aws iotsitewise create-asset-model --cli-input-json file://asset-model-payload.json
      ```
    + To update the existing asset model, run the following command. Replace {{asset-model-id}} with the ID of the asset model.
 
-     ```
+     ```bash
      aws iotsitewise update-asset-model \
        --asset-model-id {{asset-model-id}} \
        --cli-input-json file://asset-model-payload.json
@@ -486,7 +486,7 @@ You can send alarm notifications to AWS IAM Identity Center users. To use this f
 
 The following asset model represents a boiler that reports temperature data. This asset model defines an alarm that detects when the boiler overheats.
 
-```
+```json
 {
   "assetModelName": "Boiler Model",
   "assetModelDescription": "Represents a boiler.",
@@ -631,7 +631,7 @@ When you create the alarm model, you can define literals instead of expressions 
 
    Run the following command to retrieve the IDs of these properties on the asset model. Replace {{asset-model-id}} with the ID of the asset model from the previous step.
 
-   ```
+   ```bash
    aws iotsitewise describe-asset-model --asset-model-id {{asset-model-id}}
    ```
 
@@ -648,7 +648,7 @@ When you create the alarm model, you can define literals instead of expressions 
 The alarm model must have the same name as the alarm composite model that you defined on your asset model earlier.
 Alarm model names can contain only alphanumeric characters.
 
-      ```
+      ```json
       {
         "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
         "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -668,7 +668,7 @@ Alarm model names can contain only alphanumeric characters.
         + `GREATER_OR_EQUAL`
         + `GREATER`
 
-      ```
+      ```json
       {
         "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
         "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -690,7 +690,7 @@ For advanced configuration, you can define additional actions to perform when th
       + Replace {{alarmPropertyId}} with the ID of the property that the alarm monitors.
       + Replace {{alarmStatePropertyId}} with the ID of the alarm state property in the alarm composite model.
 
-      ```
+      ```json
       {
         "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
         "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -720,7 +720,7 @@ For advanced configuration, you can define additional actions to perform when th
       1. Add the alarm notification configuration (`alarmNotification`) to the payload in `alarm-model-payload.json`.
          + Replace {{alarmNotificationFunctionArn}} with the ARN of the Lambda function that handles alarm notifications.
 
-         ```
+         ```json
          {
            "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
            "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -762,7 +762,7 @@ For advanced configuration, you can define additional actions to perform when th
          + Replace {{senderIdAttributeId}} with the ID of the attribute that contains the Amazon SNS sender ID, or remove `senderId` from the payload.
          + Replace {{additionalMessageAttributeId}} with the ID of the attribute that contains the additional message, or remove `additionalMessage` from the payload.
 
-         ```
+         ```json
          {
            "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
            "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -819,7 +819,7 @@ For advanced configuration, you can define additional actions to perform when th
          + Replace {{emailSubjectAttributeId}} with the ID of the email subject attribute property, or remove `subject` from the payload.
          + Replace {{additionalMessageAttributeId}} with the ID of the additional message attribute property, or remove `additionalMessage` from the payload.
 
-         ```
+         ```json
          {
            "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
            "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -890,7 +890,7 @@ For advanced configuration, you can define additional actions to perform when th
 
    1. (Optional) Add the alarm capabilities (`alarmCapabilities`) to the payload in `alarm-model-payload.json`. In this object, you can specify if the acknowledge flow is enabled and the default enable state for assets based on the asset model. For more information about the acknowledge flow, see [Alarm states](industrial-alarms.md#alarm-states).
 
-      ```
+      ```json
       {
         "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
         "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -970,7 +970,7 @@ For advanced configuration, you can define additional actions to perform when th
    1. Add the IAM service role (`roleArn`) that AWS IoT Events can assume to send data to AWS IoT SiteWise. This role requires the `iotsitewise:BatchPutAssetPropertyValue` permission and a trust relationship that allows `iotevents.amazonaws.com` to assume the role. To send notifications, this role also requires the `lambda:InvokeFunction` and `sso-directory:DescribeUser` permissions. For more information, see [Alarm service roles](https://docs.aws.amazon.com/iotevents/latest/developerguide/security-iam.html) in the *AWS IoT Events Developer Guide*.
       + Replace the `roleArn` with the ARN of the role that AWS IoT Events can assume to perform these actions.
 
-      ```
+      ```json
       {
         "alarmModelName": "{{BoilerTemperatureHighAlarm}}",
         "alarmModelDescription": "{{Detects when the boiler temperature is high.}}",
@@ -1050,7 +1050,7 @@ For advanced configuration, you can define additional actions to perform when th
 
    1. Run the following command to create the AWS IoT Events alarm model from the payload in `alarm-model-payload.json`.
 
-      ```
+      ```bash
       aws iotevents create-alarm-model --cli-input-json file://alarm-model-payload.json
       ```
 
@@ -1066,7 +1066,7 @@ After you create the required resources in AWS IoT SiteWise and AWS IoT Events, 
 
   1. Run the following command to retrieve the existing asset model definition. Replace {{asset-model-id}} with the ID of the asset model.
 
-     ```
+     ```bash
      aws iotsitewise describe-asset-model --asset-model-id {{asset-model-id}}
      ```
 
@@ -1083,7 +1083,7 @@ After you create the required resources in AWS IoT SiteWise and AWS IoT Events, 
 
   1. Add the alarm source property (`AWS/ALARM_SOURCE`) to the alarm composite model that you defined earlier. Replace {{alarmModelArn}} with the ARN of the alarm model, which sets the value of the alarm source property.
 
-     ```
+     ```json
      {
        {{...}}
        "assetModelCompositeModels": [
@@ -1128,7 +1128,7 @@ After you create the required resources in AWS IoT SiteWise and AWS IoT Events, 
 
   1. Run the following command to update the asset model with the definition stored in the `update-asset-model-payload.json` file. Replace {{asset-model-id}} with the ID of the asset model.
 
-     ```
+     ```bash
      aws iotsitewise update-asset-model \
        --asset-model-id {{asset-model-id}} \
        --cli-input-json file://update-asset-model-payload.json

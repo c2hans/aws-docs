@@ -26,7 +26,7 @@ The following code example shows how to use `GetRoutingControlState`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/r5v#code-examples).
 
-```
+```sap-abap
     CONSTANTS cv_pfl TYPE /aws1/rt_profile_id VALUE 'ZCODE_DEMO'.
     DATA lo_exception TYPE REF TO /aws1/cx_rt_generic.
     DATA lo_session TYPE REF TO /aws1/cl_rt_session_base.
@@ -104,7 +104,7 @@ The following code example shows how to use `UpdateRoutingControlState`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/r5v#code-examples).
 
-```
+```sap-abap
     CONSTANTS cv_pfl TYPE /aws1/rt_profile_id VALUE 'ZCODE_DEMO'.
     DATA lo_exception TYPE REF TO /aws1/cx_rt_generic.
     DATA lo_session TYPE REF TO /aws1/cl_rt_session_base.

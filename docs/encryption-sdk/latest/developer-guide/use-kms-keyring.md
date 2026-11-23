@@ -76,7 +76,7 @@ To identify an AWS KMS key in an encryption keyring in the AWS Encryption SDK fo
 
 For a complete example, see [string.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/string.cpp).
 
-```
+```cpp
 const char * generator_key = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}"
 
 const char * additional_key = "{{arn:aws:kms:us-west-2:111122223333:key/0987dcba-09fe-87dc-65ba-ab0987654321}}"
@@ -96,7 +96,7 @@ When you specify an AWS KMS key for an encryption keyring in the AWS Encryption 
 
 The following example uses version 4.*x* of the AWS Encryption SDK for .NET and the `CreateAwsKmsKeyring()` method to customize the AWS KMS client.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -123,7 +123,7 @@ The following example uses the `buildClient` function to specify the [default co
 
 For a complete example, see [kms\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/kms_simple.ts) in the AWS Encryption SDK for JavaScript repository in GitHub.
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -154,7 +154,7 @@ The following example uses the `buildClient` function to specify the [default co
 
 For a complete example, see [kms\_simple.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_simple.ts) in the AWS Encryption SDK for JavaScript repository in GitHub.
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -186,7 +186,7 @@ When you specify an AWS KMS key for an encryption keyring in the AWS Encryption 
 
 For a complete example, see [BasicEncryptionKeyringExample.java](https://github.com/aws/aws-encryption-sdk-java/blob/master/src/examples/java/com/amazonaws/crypto/examples/keyrings/BasicEncryptionKeyringExample.java) in the AWS Encryption SDK for Java repository in GitHub.
 
-```
+```java
 // Instantiate the AWS Encryption SDK and material providers
 final AwsCrypto crypto = AwsCrypto.builder().build();
 final MaterialProviders materialProviders = MaterialProviders.builder()
@@ -214,7 +214,7 @@ When you specify an AWS KMS key for an encryption keyring in the AWS Encryption 
 
 The following example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. For a complete example, see [aws\_kms\_multi\_keyring\_example.py](https://github.com/aws/aws-encryption-sdk-python/tree/master/examples/src/aws_kms_multi_keyring_example.py) in the AWS Encryption SDK for Python repository in GitHub.
 
-```
+```python
 # Instantiate the AWS Encryption SDK client
 client = aws_encryption_sdk.EncryptionSDKClient(
     commitment_policy=CommitmentPolicy.{{REQUIRE_ENCRYPT_REQUIRE_DECRYPT}}
@@ -256,7 +256,7 @@ When you specify an AWS KMS key for an encryption keyring in the AWS Encryption 
 
 The following example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. For a complete example, see [aws\_kms\_keyring\_example.rs](https://github.com/aws/aws-encryption-sdk-dafny/tree/mainline/AwsEncryptionSDK/runtimes/rust/examples/keyring/aws_kms_keyring_example.rs) in the Rust directory of the aws-encryption-sdk repository on GitHub.
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -302,7 +302,7 @@ When you specify an AWS KMS key for an encryption keyring in the AWS Encryption 
 
 The following example instantiates the AWS Encryption SDK client with the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`.
 
-```
+```go
 import (
     "context"
 
@@ -366,7 +366,7 @@ The following examples use the `CreateAwsKmsRsaKeyring` method to create an AWS 
 
 To create an asymmetric RSA AWS KMS keyring, you must provide the public key and private key ARN from your asymmetric RSA KMS key. The public key must be PEM encoded. The following example creates an AWS KMS keyring with an asymmetric RSA key pair.
 
-```
+```cs
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -391,7 +391,7 @@ var kmsRsaKeyring = mpl.CreateAwsKmsRsaKeyring(createKeyringInput);
 
 To create an asymmetric RSA AWS KMS keyring, you must provide the public key and private key ARN from your asymmetric RSA KMS key. The public key must be PEM encoded. The following example creates an AWS KMS keyring with an asymmetric RSA key pair.
 
-```
+```java
 // Instantiate the AWS Encryption SDK and material providers
 final AwsCrypto crypto = AwsCrypto.builder()
         // Specify algorithmSuite without asymmetric signing here
@@ -431,7 +431,7 @@ IKeyring awsKmsRsaKeyring = matProv.CreateAwsKmsRsaKeyring(createAwsKmsRsaKeyrin
 
 To create an asymmetric RSA AWS KMS keyring, you must provide the public key and private key ARN from your asymmetric RSA KMS key. The public key must be PEM encoded. The following example creates an AWS KMS keyring with an asymmetric RSA key pair.
 
-```
+```python
 # Instantiate the AWS Encryption SDK client
 client = aws_encryption_sdk.EncryptionSDKClient(
     commitment_policy=CommitmentPolicy.{{REQUIRE_ENCRYPT_REQUIRE_DECRYPT}}
@@ -469,7 +469,7 @@ kms_rsa_keyring: IKeyring = mat_prov.create_aws_kms_rsa_keyring(
 
 To create an asymmetric RSA AWS KMS keyring, you must provide the public key and private key ARN from your asymmetric RSA KMS key. The public key must be PEM encoded. The following example creates an AWS KMS keyring with an asymmetric RSA key pair.
 
-```
+```rust
 // Instantiate the AWS Encryption SDK client
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -505,7 +505,7 @@ let kms_rsa_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -591,7 +591,7 @@ Before using this code, replace the example AWS account and partition values wit
 
 For a complete example, see: [ kms\_discovery.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/kms_discovery.cpp).
 
-```
+```cpp
 std::shared_ptr<KmsKeyring::> discovery_filter(
     KmsKeyring::DiscoveryFilter::Builder("{{aws}}")
         .AddAccount("{{111122223333}}")
@@ -606,7 +606,7 @@ struct aws_cryptosdk_keyring *kms_discovery_keyring = Aws::Cryptosdk::KmsKeyring
 
 The following example uses version 4.*x* of the AWS Encryption SDK for .NET.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -635,7 +635,7 @@ In JavaScript, you must explicitly specify the discovery property.
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   KmsKeyringBrowser,
   buildClient,
@@ -662,7 +662,7 @@ In JavaScript, you must explicitly specify the discovery property.
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -684,7 +684,7 @@ const keyring = new KmsKeyringNode({
 ------
 #### [ Java ]
 
-```
+```java
 // Create discovery filter
 DiscoveryFilter discoveryFilter = DiscoveryFilter.builder()
         .partition("{{aws}}")
@@ -700,7 +700,7 @@ IKeyring decryptKeyring = matProv.CreateAwsKmsMrkDiscoveryMultiKeyring(createAws
 ------
 #### [ Python ]
 
-```
+```python
 # Instantiate the AWS Encryption SDK
 client = aws_encryption_sdk.EncryptionSDKClient(
     commitment_policy=CommitmentPolicy.REQUIRE_ENCRYPT_REQUIRE_DECRYPT
@@ -740,7 +740,7 @@ discovery_keyring: IKeyring = mat_prov.create_aws_kms_discovery_keyring(
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -771,7 +771,7 @@ let discovery_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -853,7 +853,7 @@ For example, the following code creates an AWS KMS regional discovery keyring wi
 
 To view this keyring, and the `create_kms_client` method, in a working example, see [kms\_discovery.cpp](https://github.com/aws/aws-encryption-sdk-c/blob/master/examples/kms_discovery.cpp).
 
-```
+```cpp
 std::shared_ptr<KmsKeyring::DiscoveryFilter> discovery_filter(
     KmsKeyring::DiscoveryFilter::Builder("{{aws}}")
         .AddAccount("{{111122223333}}")
@@ -874,7 +874,7 @@ The keyring returned by the `CreateAwsKmsMrkDiscoveryKeyring()` method filters K
 
 The following examples uses version 4.*x* of the AWS Encryption SDK for .NET.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -902,7 +902,7 @@ You can also limit KMS keys to a particular AWS Region by specifying a Region in
 
 The following example uses version 4.*x* of the AWS Encryption SDK for .NET.
 
-```
+```csharp
 // Instantiate the AWS Encryption SDK and material providers
 var esdk =  new ESDK(new AwsEncryptionSdkConfig());
 var mpl = new MaterialProviders(new MaterialProvidersConfig());
@@ -929,7 +929,7 @@ var kmsRegionalDiscoveryKeyring = mlp.CreateAwsKmsDiscoveryKeyring(createRegiona
 
 The following example uses the `buildClient` function to specify the [default commitment policy](migrate-commitment-policy.md), `REQUIRE_ENCRYPT_REQUIRE_DECRYPT`. You can also use the `buildClient` to limit the number of encrypted data keys in an encrypted message. For more information, see [Limiting encrypted data keys](configure.md#config-limit-keys).
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -957,7 +957,7 @@ The following example uses the `buildClient` function to specify the [default co
 
 To view this keyring, and the `limitRegions` function, in a working example, see [kms\_regional\_discovery.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-node/src/kms_regional_discovery.ts).
 
-```
+```js
 import {
   KmsKeyringNode,
   buildClient,
@@ -980,7 +980,7 @@ const keyring = new KmsKeyringNode({
 ------
 #### [ Java ]
 
-```
+```java
 // Create the discovery filter
 DiscoveryFilter discoveryFilter = DiscoveryFilter.builder()
         .partition("{{aws}}")
@@ -997,7 +997,7 @@ IKeyring decryptKeyring = matProv.CreateAwsKmsMrkDiscoveryMultiKeyring(createAws
 ------
 #### [ Python ]
 
-```
+```python
 # Instantiate the AWS Encryption SDK
 client = aws_encryption_sdk.EncryptionSDKClient(
     commitment_policy=CommitmentPolicy.REQUIRE_ENCRYPT_REQUIRE_DECRYPT
@@ -1039,7 +1039,7 @@ regional_discovery_keyring_input: CreateAwsKmsMrkDiscoveryKeyringInput = \
 ------
 #### [ Rust ]
 
-```
+```rust
 // Instantiate the AWS Encryption SDK
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
@@ -1082,7 +1082,7 @@ let discovery_keyring = mpl
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
 
@@ -1144,7 +1144,7 @@ The AWS Encryption SDK for C does not have an analogous method, but you can impl
 
 This example shows the code for Node.js.
 
-```
+```js
 const discovery = true
 const clientProvider = excludeRegions(['us-east-1'], getKmsClient)
 const keyring = new KmsKeyringNode({

@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createdeployment-post-cli"></a>
 
-```
+```bash
 aws greengrass create-deployment \
   --group-id <value> \
   [--deployment-type <value>] \
@@ -28,7 +28,7 @@ aws greengrass create-deployment \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "DeploymentType": "NewDeployment|Redeployment|ResetDeployment|ForceResetDeployment",
@@ -50,7 +50,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "DeploymentType": "NewDeployment|Redeployment|ResetDeployment|ForceResetDeployment",
 "DeploymentId": "string",
@@ -85,7 +85,7 @@ type: string
 Success. The group was deployed.
  [ CreateDeploymentResponse](definitions-createdeploymentresponse.md)
 
-```
+```json
 {
 "DeploymentArn": "string",
 "DeploymentId": "string"
@@ -104,7 +104,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

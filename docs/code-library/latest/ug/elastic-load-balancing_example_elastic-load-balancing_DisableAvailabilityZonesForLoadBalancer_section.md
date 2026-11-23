@@ -38,7 +38,7 @@ For more information, see [Configure subnets for your Classic Load Balancer](htt
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified Availability Zone from the specified load balancer. The output includes the remaining Availability Zones.**
 
-```
+```powershell
 Disable-ELBAvailabilityZoneForLoadBalancer -LoadBalancerName my-load-balancer -AvailabilityZone us-west-2a
 ```
 **Output:**
@@ -51,7 +51,7 @@ us-west-2b
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified Availability Zone from the specified load balancer. The output includes the remaining Availability Zones.**
 
-```
+```powershell
 Disable-ELBAvailabilityZoneForLoadBalancer -LoadBalancerName my-load-balancer -AvailabilityZone us-west-2a
 ```
 **Output:**

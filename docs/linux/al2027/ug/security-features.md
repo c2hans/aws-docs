@@ -75,7 +75,7 @@ If you have `sudo` access, the simplest option is to run the debugger as `root`,
 
 1. Check the current value.
 
-   ```
+   ```sh
    $ sysctl kernel.yama.ptrace_scope
    ```
 
@@ -83,13 +83,13 @@ If you have `sudo` access, the simplest option is to run the debugger as `root`,
 
 1. Install the opt-in package `elfutils-yama-ptrace-enable`. The package sets `kernel.yama.ptrace_scope` to `0`, and the setting persists across reboots.
 
-   ```
+   ```sh
    $ sudo dnf install elfutils-yama-ptrace-enable
    ```
 
 1. Verify that the value is now `0`.
 
-   ```
+   ```sh
    $ sysctl kernel.yama.ptrace_scope
    ```
 
@@ -113,13 +113,13 @@ To check the current mount options, run `findmnt /var/tmp`. For the layout of te
 
 1. Mask the mount unit so that it does not mount `/var/tmp` with `noexec` at the next boot.
 
-   ```
+   ```sh
    $ sudo systemctl mask --now var-tmp.mount
    ```
 
 1. Remount `/var/tmp` for the current boot.
 
-   ```
+   ```sh
    $ sudo mount -o remount,rw,exec,suid,dev /var/tmp
    ```
 
@@ -131,7 +131,7 @@ To check the current mount options, run `findmnt /var/tmp`. For the layout of te
 
 1. Verify the mount options.
 
-   ```
+   ```sh
    $ findmnt /var/tmp
    ```
 

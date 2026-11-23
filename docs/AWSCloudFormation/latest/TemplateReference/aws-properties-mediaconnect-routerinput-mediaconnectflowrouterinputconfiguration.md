@@ -8,10 +8,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Configuration settings for connecting a router input to a flow output.
 
-To connect the router input to the flow output, provide both `flowArn` and `flowOutputArn`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+To connect the router input to the flow output, specify both `FlowArn` and `FlowOutputArn`. To disconnect it, update the stack without these properties and keep the `MediaConnectFlow` configuration.
 
 **Note**
-You can't change `sourceTransitDecryption` while the router input is connected to a flow output. To change it, first disconnect the router input, then update the decryption.
+The `EncryptionKeyType` of `SourceTransitDecryption` must match the `EncryptionKeyType` of the flow output's `RouterIntegrationTransitEncryption`. If you change `SourceTransitDecryption` while the router input is connected, CloudFormation temporarily disconnects the router input before it applies the update.
+To change the key type, first update the stack to disconnect the router input. Then change `RouterIntegrationTransitEncryption` on the flow output (`AWS::MediaConnect::FlowOutput`). Finally, update the router input with the new `SourceTransitDecryption` and both ARNs. This reconnects it in the same update.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routerinput-mediaconnectflowrouterinputconfiguration-syntax"></a>

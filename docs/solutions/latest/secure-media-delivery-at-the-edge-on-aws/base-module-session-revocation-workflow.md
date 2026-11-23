@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 ![Diagram of session revocation workflow for Base module.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image5.png)
 
+***Base module: Session revocation workflow***
+
  With every change that occurs in DynamoDB, for example, adding a new session designated to be blocked, a Lambda function is invoked and all entries in the DynamoDB table are evaluated.
 
  In a first step, older session IDs are filtered out before the next step to eliminate the sessions that went past retention period. Retention period is a setting defined when a stack is launched, specifying for how long a session should be kept on the blocking list when WCU limit prevents including all the sessions. After filtering the sessions past their retention timestamp, Lambda function will look into more parameters corresponding to each session to order them accordingly as follows:

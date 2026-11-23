@@ -39,7 +39,7 @@ boto_sess = Session(profile_name=`profile`)
 **Note**
 If the expected API calls have Region-based restrictions that are not aligned with your `profile` default Region, you can specify a Region for the Boto3 session as shown in the following example.
 
-```
+```python
 # Insert CLI profile name _and_ region
 boto_sess = Session(profile_name=`profile`, region_name=`region`)
 ```
@@ -51,7 +51,7 @@ For the argument designated as `region`, substitute a value that corresponds to 
 
 The following example shows how to initialize a Boto3 Braket session and instantiate a device in that session.
 
-```
+```python
 from braket.aws import AwsSession, AwsDevice
 
 # Initialize Braket session with Boto3 Session credentials

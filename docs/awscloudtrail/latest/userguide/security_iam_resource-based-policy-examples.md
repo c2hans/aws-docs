@@ -47,7 +47,7 @@ The following example grants permissions to the principals with the ARNs `arn:aw
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -87,7 +87,7 @@ The example grants permissions to the principals with the ARNs `arn:aws:iam::111
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -159,7 +159,7 @@ The following example policy includes a statement that allows CloudTrail to run 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -204,7 +204,7 @@ The following example policy includes a statement that allows root users in acco
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -249,7 +249,7 @@ The following example policy allows CloudTrail to refresh a dashboard named `exa
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":

@@ -14,7 +14,7 @@ To run this bundle, you need:
 
 Submit the bundle:
 
-```
+```bash
 deadline bundle submit arnold_standalone_render/ \
     -p SceneDirectory={{path-to-ass-files}} \
     -p FilePattern={{robot.####.ass}} \

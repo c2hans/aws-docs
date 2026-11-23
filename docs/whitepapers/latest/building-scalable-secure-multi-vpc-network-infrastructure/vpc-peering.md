@@ -12,6 +12,8 @@ At scale, when you have tens or hundreds of VPCs, interconnecting them with peer
 
 ![A diagram depicting network setup using VPC peering](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/network-setup-vpc-peering.png)
 
+**Network setup using VPC peering**
+
 If you are using VPC peering, on-premises connectivity (VPN and/or Direct Connect) must be made to each VPC. Resources in a VPC cannot reach on-premises using the hybrid connectivity of a peered VPC, as shown in the preceding figure.
 
  VPC peering is best used when resources in one VPC must communicate with resources in another VPC, the environment of both VPCs is controlled and secured, and the number of VPCs to be connected is less than 10 (to allow for the individual management of each connection). VPC peering offers the lowest overall cost and highest aggregate performance when compared to other options for inter-VPC connectivity.

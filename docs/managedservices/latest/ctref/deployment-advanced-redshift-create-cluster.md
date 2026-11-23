@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-redshift-create-cluster-ex-min"></a>
 
-```
+```json
 {
   "Description": "Create a Redshift cluster",
   "VpcId": "vpc-12345678901234567",
@@ -167,7 +167,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-redshift-create-cluster-ex-max"></a>
 
-```
+```json
 {
   "Description": "Create a Redshift cluster",
   "VpcId": "vpc-12345678901234567",

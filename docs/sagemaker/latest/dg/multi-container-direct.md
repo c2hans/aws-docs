@@ -10,7 +10,7 @@ SageMaker AI multi-container endpoints enable customers to deploy multiple conta
 
  The following example directly invokes the `secondContainer` of a multi-container endpoint to get a prediction.
 
-```
+```python
 import boto3
 runtime_sm_client = boto3.Session().client('sagemaker-runtime')
 

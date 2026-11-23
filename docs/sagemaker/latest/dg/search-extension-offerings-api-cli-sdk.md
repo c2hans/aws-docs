@@ -8,7 +8,7 @@ Use the [`SearchTrainingPlanOfferings`](https://docs.aws.amazon.com/sagemaker/la
 
 The following example uses an AWS CLI command to search for extension offerings for an existing training plan.
 
-```
+```sh
 aws sagemaker search-training-plan-offerings \
 --training-plan-arn "arn:aws:sagemaker:{{us-east-2}}:{{123456789012}}:training-plan/{{my-training-plan}}" \
 --duration-hours {{48}}
@@ -16,7 +16,7 @@ aws sagemaker search-training-plan-offerings \
 
 This JSON document is a sample response from the SageMaker training plans API. The response includes `TrainingPlanExtensionOfferings` containing available extension offerings for the specified training plan.
 
-```
+```JSON
 {
     "TrainingPlanOfferings": [],
     "TrainingPlanExtensionOfferings": [

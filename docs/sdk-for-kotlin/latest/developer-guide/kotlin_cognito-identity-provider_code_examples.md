@@ -27,7 +27,7 @@ The following code example shows how to use `AdminGetUser`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun getAdminUser(
     userNameVal: String?,
     poolIdVal: String?,
@@ -54,7 +54,7 @@ The following code example shows how to use `AdminInitiateAuth`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun checkAuthMethod(
     clientIdVal: String,
     userNameVal: String,
@@ -90,7 +90,7 @@ The following code example shows how to use `AdminRespondToAuthChallenge`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 // Respond to an authentication challenge.
 suspend fun adminRespondToAuthChallenge(
     userName: String,
@@ -127,7 +127,7 @@ The following code example shows how to use `AssociateSoftwareToken`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun getSecretForAppMFA(sessionVal: String?): String? {
     val softwareTokenRequest =
         AssociateSoftwareTokenRequest {
@@ -153,7 +153,7 @@ The following code example shows how to use `ConfirmSignUp`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun confirmSignUp(
     clientIdVal: String?,
     codeVal: String?,
@@ -182,7 +182,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun listAllUsers(userPoolId: String) {
     val request =
         ListUsersRequest {
@@ -207,7 +207,7 @@ The following code example shows how to use `ResendConfirmationCode`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun resendConfirmationCode(
     clientIdVal: String?,
     userNameVal: String?,
@@ -234,7 +234,7 @@ The following code example shows how to use `SignUp`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 suspend fun signUp(
     clientIdVal: String?,
     userNameVal: String?,
@@ -273,7 +273,7 @@ The following code example shows how to use `VerifySoftwareToken`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 // Verify the TOTP and register for MFA.
 suspend fun verifyTOTP(
     sessionVal: String?,
@@ -307,7 +307,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cognito#code-examples).
 
-```
+```kotlin
 /**
  Before running this Kotlin code example, set up your development environment, including your credentials.
 

@@ -26,6 +26,8 @@ Publication date: **March 30, 2023** ([Document revisions](document-revisions.md
 
 ![Picture showing the decomposition of the name of a resource into its parts.](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/images/structured-approach-to-resource-naming.png)
 
+*Structured approach to resource naming*
+
  For example, EC2 instances have a predefined tag called Name that provides similar functionality and allows you to name workloads as they are moved to AWS.
 
  In 2010, AWS launched [*resource tags*](https://aws.amazon.com/blogs/aws/new-amazon-ec2-feature-resource-tagging/) to provide a ﬂexible and scalable mechanism for attaching metadata to your resources. This whitepaper guides you through the process of developing and implementing a robust tagging strategy across your AWS environment. This guidance will help you ensure tagging consistency and coverage that supports your decision-making and operational activities

@@ -45,7 +45,7 @@ To filter on AWS service events or SaaS partner events, use `aws:Source` and `aw
 
 `PutRawEvents` publishes a payload with a content type. A `DATA` filter matches the payload directly, and a `METADATA` filter matches the publisher's metadata map. The following configuration has one filter per scope; the subscriber receives an event only when all three match: the payload's `amount` is over 500, the metadata key `region` is `EU`, and the content type is JSON.
 
-```
+```json
 {
     "Filters": [
         { "Scope": "DATA", "Pattern": "{\"amount\":[{\"numeric\":[\">\",500]}]}" },
@@ -60,7 +60,7 @@ To filter on AWS service events or SaaS partner events, use `aws:Source` and `aw
 
 `PutEvents` publishes an event in the EventBridge envelope, built from the entry's `Source`, `DetailType`, `Resources`, `Time`, and `Detail`. A `DATA` filter matches this envelope, with your `Detail` nested under `detail`. The event's `ContentType` is `application/eventbridge+json`, `aws:Source` and `aws:DetailType` come from the entry's `Source` and `DetailType`, and the envelope also exposes `source` and `detail-type` in the `DATA` scope. The following configuration matches when the `amount` in the detail is over 500 and the source is `com.myapp.storage`.
 
-```
+```json
 {
     "Filters": [
         { "Scope": "DATA", "Pattern": "{\"detail\":{\"amount\":[{\"numeric\":[\">\",500]}]}}" },
@@ -74,7 +74,7 @@ To filter on AWS service events or SaaS partner events, use `aws:Source` and `aw
 
 Events that an event source ingests arrive in the EventBridge envelope, with the originating service or partner in `aws:Source`. To receive only Amazon S3 object-created events for one bucket, match the service in `SYSTEM_METADATA` and the bucket in `DATA`. For a partner, match the partner event source name, for example with a `prefix` on `aws.partner/example.com`.
 
-```
+```json
 {
     "Filters": [
         { "Scope": "SYSTEM_METADATA", "Pattern": "{\"aws:Source\":[\"aws.s3\"]}" },

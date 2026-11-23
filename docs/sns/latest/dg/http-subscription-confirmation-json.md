@@ -49,7 +49,7 @@ The URL to the certificate that was used to sign the message.
 
 The following HTTP POST message is an example of a `SubscriptionConfirmation` message to an HTTP endpoint.
 
-```
+```http
 POST / HTTP/1.1
 x-amz-sns-message-type: SubscriptionConfirmation
 x-amz-sns-message-id: 165545c9-2a5c-472c-8df2-7ff2be2b3b1b

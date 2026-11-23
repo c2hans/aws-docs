@@ -86,7 +86,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 **Example : Log entry for RefreshCheck**
 The following example shows a CloudTrail log entry that demonstrates the `RefreshCheck` action for the Amazon S3 Bucket Versioning check (ID R365s2Qddf).
 
-```
+```json
 {
         "eventVersion":"1.04",
         "userIdentity":{
@@ -129,7 +129,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Refres
 **Example : Log entry for UpdateNotificationPreferences**
 The following example shows a CloudTrail log entry that demonstrates the `UpdateNotificationPreferences` action.
 
-```
+```JSON
 {
         "eventVersion":"1.04",
         "userIdentity":{
@@ -183,7 +183,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Update
 **Example : Log entry for GenerateReport**
 The following example shows a CloudTrail log entry that demonstrates the `GenerateReport` action. This action creates a report for your AWS organization.
 
-```
+```JSON
 {
         "eventVersion":"1.04",
         "userIdentity":{

@@ -132,7 +132,7 @@ The Automation Job APIs require IAM permissions attached to your IAM identity (u
 
 Attach a policy that grants the `quicksight:StartAutomationJob` action. Scope the resource ARN to the specific automation that you want to allow.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -154,7 +154,7 @@ Attach a policy that grants the `quicksight:StartAutomationJob` action. Scope th
 
 Attach a policy that grants the `quicksight:DescribeAutomationJob` action. The resource ARN for this operation includes the job ID segment. To allow describing any job under an automation, use a wildcard (\*) for the job segment.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -289,7 +289,7 @@ Before you run an automation with API triggers, make sure the following are in p
 
 To include input values, pass a JSON payload in the **StartAutomationJob** request using the **InputPayload** parameter.
 
-```
+```json
 Sample Request
 
 POST /accounts/123456789012/automation-groups/a1b2c3d4-e5f6-7890-abcd-ef1234567890/automations/11111111-2222-3333-4444-555555555555/jobs
@@ -317,7 +317,7 @@ You can retrieve output values by calling the **DescribeAutomationJob** API. To 
 
 The response includes the **OutputPayload** field only when the automation completes successfully.
 
-```
+```json
 Sample Request
 
 GET /accounts/123456789012/automation-groups/a1b2c3d4-e5f6-7890-abcd-ef1234567890/automations/11111111-2222-3333-4444-555555555555/jobs/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee?includeInputPayload=true&includeOutputPayload=true

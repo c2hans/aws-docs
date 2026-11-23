@@ -31,7 +31,7 @@ select * from stl_disk_full_diag
 
 The following example converts the `currenttime` to a timestamp.
 
-```
+```sql
 select '2000-01-01'::timestamp + (currenttime/1000000.0)* interval '1 second' as currenttime,node_num,query_id,temp_blocks from pg_catalog.stl_disk_full_diag;
 ```
 

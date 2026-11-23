@@ -26,7 +26,7 @@ To delete a guardrail, send a [DeleteGuardrail](https://docs.aws.amazon.com/bedr
 
 The following is the request format:
 
-```
+```json
 DELETE /guardrails/{{guardrailIdentifier}}?guardrailVersion={{guardrailVersion}} HTTP/1.1
 ```
 

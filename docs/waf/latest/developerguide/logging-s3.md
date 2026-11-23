@@ -100,7 +100,7 @@ When you set the permissions listed below, you might see errors in your AWS Clou
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -152,7 +152,7 @@ If the user creating the log owns the bucket, the service automatically attaches
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -209,7 +209,7 @@ For example, the following bucket policy allows AWS account `111122223333` to pu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "AWSLogDeliveryWrite20150319",

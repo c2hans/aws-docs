@@ -54,7 +54,7 @@ aws ec2 describe-vpc-endpoint-associations --vpc-endpoint-id {{vpce-123456789abc
 
 The following is example output for a resource endpoint for an Amazon RDS database with private DNS names enabled. The first DNS name is the default DNS name. The second DNS name is from the hidden private hosted zone, which resolves requests to the public endpoint to the private IP addresses of the endpoint network interfaces.
 
-```
+```json
 [
     [
         "vpce-rsc-asc-abcd1234abcd",

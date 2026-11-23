@@ -56,7 +56,7 @@ aws bedrock-agent create-data-source \
 
 The `salesforce-managed-connector.json` file contains the following:
 
-```
+```json
 {
     "type": "MANAGED_KNOWLEDGE_BASE_CONNECTOR",
     "managedKnowledgeBaseConnectorConfiguration": {

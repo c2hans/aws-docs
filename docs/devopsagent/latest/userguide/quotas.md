@@ -26,6 +26,10 @@ The following table describes the quotas for AWS DevOps Agent.
 | Memory stores per agent space | 50 | No | The maximum number of memory stores that can exist in a single agent space. |
 | Memories per memory store | 200 | No | The maximum number of individual memory files within a single memory store. |
 | Individual memory content size | 100 KB | No | The maximum size of a single memory file. |
+| Organization associations per agent space | 20 | No | The maximum number of organization associations, including invalid ones, in a single agent space. Service Quotas code: L-0178C38B. |
+| Organization-covered accounts per agent space | 3,000 | No | The maximum number of member accounts that all organization associations in a single agent space cover. An account that two associations cover counts twice. Service Quotas code: L-10E2D25F. |
+| Accounts in an organization association's account list | 1,000 | No | The maximum number of accounts that you can list in a single organization association. |
+| OUs per organization association | 1 | No | Each organization association covers one organizational unit (OU) or the organization root. |
 
 ## Requesting a quota increase
 <a name="requesting-a-quota-increase"></a>

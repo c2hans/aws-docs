@@ -139,14 +139,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-direct-change-mode-enable-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-managed-direct-change-mode-enable-ex-max"></a>
 
-```
+```json
 {
   "SamlIdentityProviderArns": [
     "SAML1",

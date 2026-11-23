@@ -43,7 +43,7 @@ The following examples show you how to programmatically create and update a prof
 
 This example shows you how to create a profile and save it to the SDK Store programmatically. It uses the following classes of the [Amazon.Runtime.CredentialManagement](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/NRuntimeCredentialManagement.html) namespace: [CredentialProfileOptions](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TCredentialProfileOptions.html), [CredentialProfile](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TCredentialProfile.html), and [NetSDKCredentialsFile](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TNetSDKCredentialsFile.html).
 
-```
+```csharp
 using Amazon.Runtime.CredentialManagement;
 ...
 
@@ -70,7 +70,7 @@ Code such as this generally shouldn't be in your application. If it's included i
 
 The following is the profile that's created by this example.
 
-```
+```ini
 "[generated GUID]" : {
     "AWSAccessKey" : "01000000D08...[etc., encrypted access key ID]",
     "AWSSecretKey" : "01000000D08...[etc., encrypted secret access key]",
@@ -84,7 +84,7 @@ The following is the profile that's created by this example.
 
 This example shows you how to programmatically update the profile that was created earlier. It uses the following classes of the [Amazon.Runtime.CredentialManagement](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/NRuntimeCredentialManagement.html) namespace: [CredentialProfile](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TCredentialProfile.html) and [NetSDKCredentialsFile](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TNetSDKCredentialsFile.html). It also uses the [RegionEndpoint](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/TRegionEndpoint.html) class of the [Amazon](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/N.html) namespace.
 
-```
+```csharp
 using Amazon.Runtime.CredentialManagement;
 ...
 
@@ -105,7 +105,7 @@ void AddRegion(string profileName, RegionEndpoint region)
 
 The following is the updated profile.
 
-```
+```ini
 "[generated GUID]" : {
     "AWSAccessKey" : "01000000D08...[etc., encrypted access key ID]",
     "AWSSecretKey" : "01000000D08...[etc., encrypted secret access key]",

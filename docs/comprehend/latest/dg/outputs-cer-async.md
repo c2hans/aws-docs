@@ -13,7 +13,7 @@ For text input files, the output consists of a list of entities for each input d
 
 The following example shows the output for two documents from an input file named **50\_docs**, using one document per line format.
 
-```
+```json
 {
         "File": "50_docs",
         "Line": 0,
@@ -60,7 +60,7 @@ The following example shows the output for a one-page native PDF input document.
 
 **Example output from a custom entity recognition analysis of a PDF document**
 
-```
+```json
 {
         "Blocks":
         [

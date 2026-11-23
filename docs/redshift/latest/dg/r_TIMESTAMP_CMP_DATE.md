@@ -34,7 +34,7 @@ INTEGER
 
 The following example compares LISTTIME to the date `2008-06-18`. Listings made after this date return `1`; listings made before this date return `-1`. LISTTIME values are timestamps.
 
-```
+```sql
 select listid, listtime,
 timestamp_cmp_date(listtime, '2008-06-18')
 from listing

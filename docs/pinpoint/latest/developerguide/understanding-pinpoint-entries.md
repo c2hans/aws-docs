@@ -10,7 +10,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `GetCampaigns` and `CreateCampaign` actions of the Amazon Pinpoint API.
 
-```
+```json
 {
   "Records": [
     {
@@ -112,7 +112,7 @@ The following example shows a CloudTrail log entry that demonstrates the `GetCam
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateConfigurationSet` and `CreateConfigurationSetEventDestination` actions in the Amazon Pinpoint SMS and Voice API.
 
-```
+```json
 {
   "Records": [
     {

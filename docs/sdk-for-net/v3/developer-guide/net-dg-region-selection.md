@@ -24,7 +24,7 @@ You can specify the Region for any of the AWS service clients in your applicatio
 
 This example shows you how to instantiate an [Amazon EC2 client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TEC2Client.html) in an existing Region. It uses defined [RegionEndpoint](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/TRegionEndpoint.html) fields.
 
-```
+```csharp
 using (AmazonEC2Client ec2Client = new AmazonEC2Client(RegionEndpoint.USWest2))
 {
   // Make a request to EC2 in the us-west-2 Region using ec2Client
@@ -36,7 +36,7 @@ using (AmazonEC2Client ec2Client = new AmazonEC2Client(RegionEndpoint.USWest2))
 
 This example shows you how to construct a new Region endpoint by using [RegionEndpoint.GetBySystemName](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/MRegionEndpointGetBySystemNameString.html).
 
-```
+```c#
 var newRegion = RegionEndpoint.GetBySystemName("us-west-new");
 using (var ec2Client = new AmazonEC2Client(newRegion))
 {
@@ -51,7 +51,7 @@ This example shows you how to use the `ServiceURL` property of the service clien
 
 This technique works even if the Region endpoint doesn't follow the regular Region endpoint pattern.
 
-```
+```c#
 var ec2ClientConfig = new AmazonEC2Config
 {
     // Specify the endpoint explicitly
@@ -83,13 +83,13 @@ Set in the `AWS_REGION` environment variable.
 
 On Linux or macOS:
 
-```
+```sh
 export AWS_REGION='us-west-2'
 ```
 
 On Windows:
 
-```
+```sh
 set AWS_REGION=us-west-2
 ```
 
@@ -101,7 +101,7 @@ If you set this environment variable for the whole system (using `export` or `se
 
 Set as an [AWSConfigs.AWSRegion](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/TAWSConfigs.html) property.
 
-```
+```c#
 AWSConfigs.AWSRegion = "us-west-2";
 using (var ec2Client = new AmazonEC2Client())
 {

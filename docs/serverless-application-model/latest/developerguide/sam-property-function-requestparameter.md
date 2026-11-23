@@ -16,7 +16,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-function-requestparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Caching](#sam-function-requestparameter-caching): {{Boolean}}
   [Required](#sam-function-requestparameter-required): {{Boolean}}
 ```
@@ -47,7 +47,7 @@ Example of setting Request Parameters
 #### YAML
 <a name="sam-property-function-requestparameter--examples--request-parameter--yaml"></a>
 
-```
+```yaml
 RequestParameters:
   - method.request.header.Authorization:
       Required: true

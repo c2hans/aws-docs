@@ -218,7 +218,7 @@ The following example demonstrates a FoxyProxy Standard (version 7.5.1) configur
 
 1. Copy the following code and save locally as `mwaa-proxy.json`. Substitute the sample value in {{YOUR\_HOST\_NAME}} with your **Apache Airflow URL**.
 
-   ```
+   ```json
    {
      "e0b7kh1606694837384": {
        "type": 3,

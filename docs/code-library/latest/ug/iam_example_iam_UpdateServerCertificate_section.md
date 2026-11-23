@@ -14,7 +14,7 @@ The following code examples show how to use `UpdateServerCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::updateServerCertificate(const Aws::String &currentCertificateName,
                                           const Aws::String &newCertificateName,
                                           const Aws::Client::ClientConfiguration &clientConfig) {
@@ -72,7 +72,7 @@ For more information, see [Managing server certificates in IAM](https://docs.aws
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Update a server certificate.
 
-```
+```javascript
 import { UpdateServerCertificateCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -97,7 +97,7 @@ export const updateServerCertificate = (currentName, newName) => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -128,12 +128,12 @@ iam.updateServerCertificate(params, function (err, data) {
 **Tools for PowerShell V4**
 **Example 1: This example renames the certificate named `MyServerCertificate` to `MyRenamedServerCertificate`.**
 
-```
+```powershell
 Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewServerCertificateName MyRenamedServerCertificate
 ```
 **Example 2: This example moves the certificate named `MyServerCertificate` to the path /Org1/Org2/. This changes the ARN for the resource to `arn:aws:iam::123456789012:server-certificate/Org1/Org2/MyServerCertificate`.**
 
-```
+```powershell
 Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewPath /Org1/Org2/
 ```
 +  For API details, see [UpdateServerCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -141,12 +141,12 @@ Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewPath 
 **Tools for PowerShell V5**
 **Example 1: This example renames the certificate named `MyServerCertificate` to `MyRenamedServerCertificate`.**
 
-```
+```powershell
 Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewServerCertificateName MyRenamedServerCertificate
 ```
 **Example 2: This example moves the certificate named `MyServerCertificate` to the path /Org1/Org2/. This changes the ARN for the resource to `arn:aws:iam::123456789012:server-certificate/Org1/Org2/MyServerCertificate`.**
 
-```
+```powershell
 Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewPath /Org1/Org2/
 ```
 +  For API details, see [UpdateServerCertificate](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -158,7 +158,7 @@ Update-IAMServerCertificate -ServerCertificateName MyServerCertificate -NewPath 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, update, and delete server certificates.
 
-```
+```ruby
 class ServerCertificateManager
   def initialize(iam_client, logger: Logger.new($stdout))
     @iam_client = iam_client

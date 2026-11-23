@@ -21,6 +21,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Analytics logical architecture showing ingestion, data processing, lakehouse storage, data warehouse, and reporting layers for an advertising analytics platform](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-02a-analytics-logical-architecture.jpg)
 
+*Advertising analytics logical architecture*
+
  The architecture consists of the following components:
 
 1.  **Ingestion module**: Web servers ingest clickstream and event data from ad servers, DSPs, SSPs, and measurement SDKs. Amazon Kinesis Data Streams captures high-throughput real-time events. Amazon Data Firehose de-aggregates and delivers to Amazon S3.
@@ -40,6 +42,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 1.  **AWS Key Management Service (AWS KMS)**: Encrypts data at rest in Kinesis, S3, DynamoDB, and Redshift. Maintains encryption key audit trails for compliance. <a name="scenario-02-fig2"></a>
 
 ![Advertising data pipeline architecture on AWS showing the flow from data ingestion through processing, lakehouse storage, and analytics consumption layers](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-02b-data-pipeline-architecture.jpg)
+
+*Advertising data pipeline architecture on AWS*
 
 ## Configuration notes
 <a name="s02-configuration-notes"></a>

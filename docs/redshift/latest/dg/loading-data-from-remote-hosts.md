@@ -250,7 +250,7 @@ Upload the manifest file to an Amazon S3 bucket. If the Amazon S3 bucket does no
 
 Run a [COPY](r_COPY.md) command to connect to the host and load the data into an Amazon Redshift table. In the COPY command, specify the explicit Amazon S3 object path for the manifest file and include the SSH option. For example,
 
-```
+```sql
 COPY sales
 FROM 's3://amzn-s3-demo-bucket/ssh_manifest'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'

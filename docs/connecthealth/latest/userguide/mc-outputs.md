@@ -23,7 +23,7 @@ Medical coding writes the results file using the credentials of the caller that 
 
 The following example shows a `GetMedicalCodingJob` response for a job that has succeeded:
 
-```
+```json
 {
   "jobId": "4f9c2e1a-7b3d-4e8a-9c21-5d6f0a1b2c3d",
   "jobArn": "arn:aws:health-agent:us-east-1:111122223333:domain/dom-a1b2c3d4e5f6g7h8/medical-coding-job/4f9c2e1a-7b3d-4e8a-9c21-5d6f0a1b2c3d",
@@ -58,7 +58,7 @@ The response also returns the inputs the job was submitted with. `medicalCodingO
 
 The results file is a JSON object with one field, `medicalCodes`, which is an array of suggested codes:
 
-```
+```json
 { "medicalCodes": [ ... ] }
 ```
 
@@ -115,7 +115,7 @@ Each entry in `medicalCodes` has the following fields.
 
 The following example is for an office visit where an established patient presents with fever and sore throat, a rapid strep test is positive, and an intramuscular antibiotic injection is given. Descriptions in the example are written for this guide and aren’t official CPT descriptors.
 
-```
+```json
 {
   "medicalCodes": [
     {

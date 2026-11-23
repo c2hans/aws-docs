@@ -91,7 +91,7 @@ Required: No
 The ARN of the IAM execution role used for recommendation actions.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 Required: Yes
 
  ** [name](#API_CreateAgentProfile_RequestSyntax) **   <a name="wellarchitected-CreateAgentProfile-request-name"></a>
@@ -215,7 +215,7 @@ Type: Boolean
 The ARN of the IAM execution role.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 
  ** [fieldErrors](#API_CreateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-CreateAgentProfile-response-fieldErrors"></a>
 A map of field paths to error messages for invalid or missing input fields.

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-requests-boto3.h
 ------
 #### [ PyTorch and MXNet ]
 
-```
+```python
 import boto3
 
 import json
@@ -61,7 +61,7 @@ ioc_response = client.invoke_endpoint(
 
  For an XGBoost application, you should submit a CSV text instead:
 
-```
+```python
 import boto3
 import json
 

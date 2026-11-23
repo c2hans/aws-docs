@@ -11,7 +11,7 @@ Connect Customer supports adding custom data to an AI agent session so that it c
 
 You add data to a session by using the [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html) API. Use the following sample AWS CLI command.
 
-```
+```bash
 aws qconnect update-session-data \
   --assistant-id {{<YOUR_CONNECT_AI_AGENT_ASSISTANT_ID>}} \
   --session-id {{<YOUR_CONNECT_AI_AGENT_SESSION_ID>}} \
@@ -44,7 +44,7 @@ For example, say a customer needs information related to a specific product. You
 
 The following excerpt from an AI prompt shows {{$.Custom.productId}} being provided to the LLM.
 
-```
+```yaml
 anthropic_version: bedrock-2023-05-31
 system: You are an intelligent assistant that assists with query construction.
 messages:

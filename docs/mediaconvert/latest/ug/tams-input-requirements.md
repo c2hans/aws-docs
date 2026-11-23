@@ -21,7 +21,7 @@ A UUID that identifies a valid multi-format source on your TAMS server. The sour
 Your MediaConvert service role must have permissions to access the specified EventBridge connection. Add the following permissions to your service role:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

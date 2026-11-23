@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-shadow-deploym
 
 1.  Create two SageMaker AI models: one for your production variant, and one for your shadow variant.
 
-   ```
+   ```py
    import boto3
    from sagemaker.core.helper.session_helper import get_execution_role, Session
 
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-shadow-deploym
 
 1.  Create an endpoint configuration. Specify both your production and shadow variants in the configuration.
 
-   ```
+   ```py
    endpoint_config_name = {{name-of-your-endpoint-config}}
 
    create_endpoint_config_response = sagemaker_client.create_endpoint_config(
@@ -84,7 +84,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-shadow-deploym
 
 1. Create an endpoint.
 
-   ```
+   ```py
    create_endpoint_response = sm.create_endpoint(
        EndpointName={{name-of-your-endpoint}},
        EndpointConfigName=endpoint_config_name,

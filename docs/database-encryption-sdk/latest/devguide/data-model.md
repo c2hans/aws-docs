@@ -49,7 +49,7 @@ When using the `DynamoDB Mapper` and `AttributeEncryptor`, by default, all attri
 
 This example uses the `@DoNotEncrypt` annotation for the new `link` attribute.
 
-```
+```java
 @DynamoDBTable(tableName = "ExampleTable")
 public static final class DataPoJo {
   private String partitionAttribute;
@@ -98,7 +98,7 @@ public static final class DataPoJo {
 
  In the lower-level DynamoDB encryptor, you must set actions for each attribute. This example uses a switch statement where the default is `encryptAndSign` and exceptions are specified for the partition key, sort key, and the new `link` attribute. In this example, if the link attribute code was not fully deployed before it was used, the link attribute would be encrypted and signed by some applications, but only signed by others.
 
-```
+```java
 for (final String attributeName : record.keySet()) {
     switch (attributeName) {
         case partitionKeyName:
@@ -128,7 +128,7 @@ If you use a Python [client helper class](python-using.md#python-helpers), you d
 
 This example specifies an exception for the new `link` attribute, which gets the `SIGN_ONLY` action.
 
-```
+```py
 actions = AttributeActions(
     default_action=CryptoAction.ENCRYPT_AND_SIGN,
     attribute_actions={

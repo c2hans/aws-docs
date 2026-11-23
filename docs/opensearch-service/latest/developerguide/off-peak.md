@@ -141,7 +141,7 @@ aws opensearch list-scheduled-actions \
 
 **Response**:
 
-```
+```json
 {
     "ScheduledActions": [
         {
@@ -217,7 +217,7 @@ aws opensearch update-scheduled-action \
 
 **Response**:
 
-```
+```json
 {
    "ScheduledAction": {
       "Cancellable": true,

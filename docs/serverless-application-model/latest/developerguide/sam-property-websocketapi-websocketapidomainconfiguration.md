@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-websocketapi-websocketapidomainconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BasePath](#sam-websocketapi-websocketapidomainconfiguration-basepath): {{List}}
   [CertificateArn](#sam-websocketapi-websocketapidomainconfiguration-certificatearn): {{String}}
   [DomainName](#sam-websocketapi-websocketapidomainconfiguration-domainname): {{String}}
@@ -78,7 +78,7 @@ DomainName example
 #### YAML
 <a name="sam-property-websocketapi-websocketapidomainconfiguration--examples--domainname--yaml"></a>
 
-```
+```yaml
 Domain:
   DomainName: ws.example.com
   CertificateArn: arn:aws:acm:us-east-1:123456789012:certificate/example

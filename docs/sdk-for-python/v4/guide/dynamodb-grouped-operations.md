@@ -19,7 +19,7 @@ A successful `batch_write_item` response can still contain unprocessed writes. R
 
  **Imports**
 
-```
+```python
 import time
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -27,7 +27,7 @@ from aws_sdk_dynamodb import DynamoDBClient
 
  **Code**
 
-```
+```python
 def batch_write_items(
     client: DynamoDBClient,
     table_name: str,
@@ -76,7 +76,7 @@ For request and response details, see the [batch\_get\_item()](https://docs.aws.
 
  **Imports**
 
-```
+```python
 import time
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -85,7 +85,7 @@ from aws_sdk_dynamodb.models import AttributeValue
 
  **Code**
 
-```
+```python
 def batch_get_items(
     client: DynamoDBClient,
     table_name: str,
@@ -132,7 +132,7 @@ For request and response details, see the [transact\_write\_items()](https://doc
 
  **Imports**
 
-```
+```python
 import uuid
 
 from aws_sdk_dynamodb import DynamoDBClient
@@ -140,7 +140,7 @@ from aws_sdk_dynamodb import DynamoDBClient
 
  **Code**
 
-```
+```python
 def transact_write_items(
     client: DynamoDBClient,
     table_name: str,

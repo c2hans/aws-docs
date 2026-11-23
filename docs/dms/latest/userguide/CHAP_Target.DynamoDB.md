@@ -55,7 +55,7 @@ Before you begin to work with a DynamoDB database as a target for AWS DMS, make 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -80,7 +80,7 @@ The role that you use for the migration to DynamoDB must have the following perm
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

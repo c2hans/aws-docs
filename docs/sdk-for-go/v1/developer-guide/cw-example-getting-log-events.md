@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example lists up to 100 of the latest events for a log group’s log stream. Replace LOG-GROUP-NAME with the name of the CloudWatch log group and LOG-STREAM-NAME with the name of the log stream for the log group.
 
-```
+```go
 package main
 
 import (

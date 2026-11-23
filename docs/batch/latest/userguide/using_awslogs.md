@@ -63,7 +63,7 @@ By default, AWS Batch enables the `awslogs` log driver. This section describes h
 
 The following log configuration JSON snippets have a `logConfiguration` object specified for each job. One is for a WordPress job that sends logs to a log group called `awslogs-wordpress`, and another is for a MySQL container that sends logs to a log group called `awslogs-mysql`. Both containers use the `awslogs-example` log stream prefix.
 
-```
+```json
 "logConfiguration": {
     "logDriver": "awslogs",
     "options": {
@@ -73,7 +73,7 @@ The following log configuration JSON snippets have a `logConfiguration` object s
 }
 ```
 
-```
+```json
 "logConfiguration": {
     "logDriver": "awslogs",
     "options": {

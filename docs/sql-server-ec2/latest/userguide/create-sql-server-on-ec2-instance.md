@@ -126,7 +126,7 @@ Perform the following steps to create a two-node Windows cluster.
 
 1. On each instance, install the cluster feature on the nodes from the Server Manager, or run the following Windows PowerShell command:
 
-   ```
+   ```powershell
    Install-WindowsFeature -Name Failover-Clustering -IncludeManagementTools
    ```
 

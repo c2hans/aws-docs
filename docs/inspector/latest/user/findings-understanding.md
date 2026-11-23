@@ -32,3 +32,4 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/findings-understan
 + [Viewing details for your Amazon Inspector findings](findings-understanding-details.md)
 + [Viewing the Amazon Inspector score and understanding vulnerability intelligence details](findings-understanding-score.md)
 + [Understanding severity levels for your Amazon Inspector findings](findings-understanding-severity.md)
++ [Understanding runtime reachability for your Amazon Inspector findings](findings-understanding-runtime-reachability.md)

@@ -50,7 +50,7 @@ As a best practice, replace the {{\*}} with a flow ID after you have created it.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -99,7 +99,7 @@ Attach the following policy to provide permissions for the service role, replaci
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

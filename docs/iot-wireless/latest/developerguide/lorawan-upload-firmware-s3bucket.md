@@ -56,7 +56,7 @@ To create an IAM policy for your AWS IoT Core for LoRaWAN destination role, open
 1. Delete any content from the editor and paste this policy document. The policy provides permissions to access the `iotwireless` bucket and the firmware update file, `fwstation`, stored inside an object.
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -101,7 +101,7 @@ In the confirmation message displayed after you ran the previous step, choose th
 
 1. In **Policy Document**, change the `Principal` property to look like this example.
 
-   ```
+   ```json
    "Principal": {
        "Service": "iotwireless.amazonaws.com"
    },
@@ -110,7 +110,7 @@ In the confirmation message displayed after you ran the previous step, choose th
    After you change the `Principal` property, the complete policy document should look like this example.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

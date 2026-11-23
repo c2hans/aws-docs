@@ -43,7 +43,7 @@ This topic includes Amazon Linux 1 (AL1) release notes updates for the 2011.09 r
 **To disable the security update on boot from the Amazon EC2 Console:**
 +  On the "Advanced Instance Options" page in the Request Instances Wizard, there is a text field for sending the Amazon Linux 1 (AL1) `user-data`. This data can be entered as text, or uploaded as a file. In either case, the data should be:
 
-  ```
+  ```yaml
   #cloud-config
   repo_upgrade: none
   ```
@@ -67,19 +67,19 @@ As of 2011-11-01, the latest version of the PV-Grub Amazon Kernel Images (AKIs) 
 
 1.
 
-   ```
+   ```sh
    $ ec2-stop-instances --region us-east-1 i-#####
    ```
 
 1.
 
-   ```
+   ```sh
    $ ec2-modify-instance-attribute --kernel aki-805ea7e9 --region us-east-1 i-#####
    ```
 
 1.
 
-   ```
+   ```sh
    $ ec2-start-instances --region us-east-1 i-#####.
    ```
 

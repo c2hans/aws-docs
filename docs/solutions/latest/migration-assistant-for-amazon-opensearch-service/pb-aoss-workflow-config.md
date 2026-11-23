@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 Extend the configuration with the snapshot, metadata, and document-backfill settings. The snapshot repository and snapshot belong under `sourceClusters.source.snapshotInfo`. For a full-domain migration, set `documentBackfillConfig.indexAllowlist` to an empty array to include every index, and set `includeGlobalState` under the snapshot’s `createSnapshotConfig` so legacy and composable templates come across:
 
-```
+```json
 {
   "sourceClusters": {
     "source": {
@@ -63,6 +63,6 @@ Because replay is not part of a backfill-only run, you do not configure `speedup
 
 Review the assembled configuration:
 
-```
+```bash
 workflow configure view
 ```

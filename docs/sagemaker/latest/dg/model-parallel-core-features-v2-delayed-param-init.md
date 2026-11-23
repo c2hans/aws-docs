@@ -12,7 +12,7 @@ The following code snippets show how to apply the `torch.sagemaker.delayed_param
 
 Assume that you have a PyTorch FSDP training script as follows.
 
-```
+```py
 # Creation of model on meta device
 from accelerate import init_empty_weights
 with init_empty_weights():
@@ -50,7 +50,7 @@ Note that the delayed parameter initialization approach is not model agnostic. T
 
 Using the `torch.sagemaker.delayed_param.DelayedParamIniter` API, you can adapt your PyTorch FSDP script as follows. After creating a model with empty weights, register the `torch.sagemaker.delayed_param.DelayedParamIniter` API to the model, and define an object of it. Pass the object to the `param_init_fn` of the PyTorch FSDP class.
 
-```
+```py
 from torch.sagemaker.delayed_param import DelayedParamIniter
 from accelerate import init_empty_weights
 
@@ -71,7 +71,7 @@ with delayed_initer.validate_params_and_buffers_inited():
 
 When training models with tied weights, we need to take special care to tie the weights after initializing the weights with delayed parameter initialization. PyTorch FSDP does not have a mechanism to tie the weights after initializing them using `param_init_fn` as above. To address such cases we added API to allow a `post_init_hook_fn`, which can be used to tie the weights. You can pass any function in there which accepts the module as argument, but we also have a predefined `post_param_init_fn` defined in `DelayedParamIniter` which calls `tie_weights` method of the module if it exists. Note that it’s safe to always pass in `post_param_init_fn` even if there’s no `tie_weights` method for the module.
 
-```
+```py
 with delayed_initer.validate_params_and_buffers_inited():
     model = FSDP(
         model,

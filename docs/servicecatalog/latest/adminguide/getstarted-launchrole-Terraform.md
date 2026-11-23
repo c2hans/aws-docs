@@ -30,7 +30,7 @@ In this step, you will create an IAM role (launch role) specifying the permissio
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -102,7 +102,7 @@ In this step, you will create an IAM role (launch role) specifying the permissio
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

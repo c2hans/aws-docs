@@ -23,7 +23,7 @@ Other types of activities specify settings that apply to that type of activity. 
 
  **Sample JourneyResponse object**
 
-```
+```json
 {
   "Name" : "Example Corp New Subscriber Journey",
   "Schedule" : {

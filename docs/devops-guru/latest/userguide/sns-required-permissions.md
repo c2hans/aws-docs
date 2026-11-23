@@ -86,7 +86,7 @@ After you add a topic, we recommend that you make your policy more secure by spe
 
    For example, in the following response, the channel ID for the topic with the ARN `arn:aws:sns:{{region-id}}:{{111122223333}}:{{topic-name}}` is `{{e89be5f7-989d-4c4c-b1fe-e7145037e531}}`
 
-   ```
+   ```json
    {
      "Channels": [
        {
@@ -109,7 +109,7 @@ After you add a topic, we recommend that you make your policy more secure by spe
 
    Your updated `Condition` statement looks like the following.
 
-   ```
+   ```json
    "Condition" : {
      "StringEquals" : {
        "AWS:SourceArn": "arn:aws:devops-guru:{{us-east-1}}:{{111122223333}}:channel/{{e89be5f7-989d-4c4c-b1fe-e7145037e531}}",

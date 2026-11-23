@@ -10,32 +10,32 @@ The result of the `SendBulkEmail` operation of each specified `BulkEmailEntry`.
 <a name="API_BulkEmailEntryResult_Contents"></a>
 
  ** Error **   <a name="SES-Type-BulkEmailEntryResult-Error"></a>
-A description of an error that prevented a message being sent using the `SendBulkTemplatedEmail` operation.
+A description of an error that prevented a message being sent using the `SendBulkEmail` operation.
 Type: String
 Required: No
 
  ** MessageId **   <a name="SES-Type-BulkEmailEntryResult-MessageId"></a>
-The unique message identifier returned from the `SendBulkTemplatedEmail` operation.
+The unique message identifier returned from the `SendBulkEmail` operation.
 Type: String
 Required: No
 
  ** Status **   <a name="SES-Type-BulkEmailEntryResult-Status"></a>
-The status of a message sent using the `SendBulkTemplatedEmail` operation.
+The status of a message sent using the `SendBulkEmail` operation.
 Possible values for this parameter include:
-+ SUCCESS: Amazon SES accepted the message, and will attempt to deliver it to the recipients.
-+ MESSAGE\_REJECTED: The message was rejected because it contained a virus.
-+ MAIL\_FROM\_DOMAIN\_NOT\_VERIFIED: The sender's email address or domain was not verified.
-+ CONFIGURATION\_SET\_DOES\_NOT\_EXIST: The configuration set you specified does not exist.
-+ TEMPLATE\_DOES\_NOT\_EXIST: The template you specified does not exist.
-+ ACCOUNT\_SUSPENDED: Your account has been shut down because of issues related to your email sending practices.
-+ ACCOUNT\_THROTTLED: The number of emails you can send has been reduced because your account has exceeded its allocated sending limit.
-+ ACCOUNT\_DAILY\_QUOTA\_EXCEEDED: You have reached or exceeded the maximum number of emails you can send from your account in a 24-hour period.
-+ INVALID\_SENDING\_POOL\_NAME: The configuration set you specified refers to an IP pool that does not exist.
-+ ACCOUNT\_SENDING\_PAUSED: Email sending for the Amazon SES account was disabled using the [UpdateAccountSendingEnabled](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateAccountSendingEnabled.html) operation.
-+ CONFIGURATION\_SET\_SENDING\_PAUSED: Email sending for this configuration set was disabled using the [UpdateConfigurationSetSendingEnabled](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetSendingEnabled.html) operation.
-+ INVALID\_PARAMETER\_VALUE: One or more of the parameters you specified when calling this operation was invalid. See the error message for additional information.
-+ TRANSIENT\_FAILURE: Amazon SES was unable to process your request because of a temporary issue.
-+ FAILED: Amazon SES was unable to process your request. See the error message for additional information.
++  `SUCCESS` – Amazon SES accepted the message, and will attempt to deliver it to the recipients.
++  `MESSAGE_REJECTED` – The message was rejected because it contained a virus.
++  `MAIL_FROM_DOMAIN_NOT_VERIFIED` – The sender's email address or domain was not verified.
++  `CONFIGURATION_SET_NOT_FOUND` – The configuration set you specified does not exist.
++  `TEMPLATE_NOT_FOUND` – The template you specified does not exist.
++  `ACCOUNT_SUSPENDED` – Your account has been shut down because of issues related to your email sending practices.
++  `ACCOUNT_THROTTLED` – The number of emails you can send has been reduced because your account has exceeded its allocated sending limit.
++  `ACCOUNT_DAILY_QUOTA_EXCEEDED` – You have reached or exceeded the maximum number of emails you can send from your account in a 24-hour period.
++  `INVALID_SENDING_POOL_NAME` – The configuration set you specified refers to an IP pool that does not exist.
++  `ACCOUNT_SENDING_PAUSED` – Email sending for the Amazon SES account was disabled using the [PutAccountSendingAttributes](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountSendingAttributes.html) operation.
++  `CONFIGURATION_SET_SENDING_PAUSED` – Email sending for this configuration set was disabled using the [PutConfigurationSetSendingOptions](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetSendingOptions.html) operation.
++  `INVALID_PARAMETER` – One or more of the parameters you specified when calling this operation was invalid. See the error message for additional information.
++  `TRANSIENT_FAILURE` – Amazon SES was unable to process your request because of a temporary issue.
++  `FAILED` – Amazon SES was unable to process your request. See the error message for additional information.
 Type: String
 Valid Values: `SUCCESS | MESSAGE_REJECTED | MAIL_FROM_DOMAIN_NOT_VERIFIED | CONFIGURATION_SET_NOT_FOUND | TEMPLATE_NOT_FOUND | ACCOUNT_SUSPENDED | ACCOUNT_THROTTLED | ACCOUNT_DAILY_QUOTA_EXCEEDED | INVALID_SENDING_POOL_NAME | ACCOUNT_SENDING_PAUSED | CONFIGURATION_SET_SENDING_PAUSED | INVALID_PARAMETER | TRANSIENT_FAILURE | FAILED`
 Required: No

@@ -34,13 +34,13 @@ You can set up Amazon CloudWatch Events along with Amazon Simple Notification Se
 <a name="w2aac21c13b9b3"></a>
 + Use the following command:
 
-  ```
+  ```bash
   aws managedblockchain list-invitations
   ```
 
   The command returns a list of invitations, along with detail for each invitation, as shown in the following example for an invitation in the `PENDING` status:
 
-  ```
+  ```json
   {
      "Invitations": [
         {

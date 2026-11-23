@@ -60,7 +60,7 @@ You can modernize a .NET solution from the command line using the ATX CLI (AWS T
 
 Use the following command form:
 
-```
+```bash
 atx custom def exec -n AWS/dotnet-modernization -p <path-to-solution> [-q] [-x] [-t]
 ```
 

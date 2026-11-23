@@ -18,7 +18,7 @@ To enable alarm actions for a CloudWatch alarm, call the AmazonCloudWatchClientâ
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.EnableAlarmActionsRequest;
@@ -27,7 +27,7 @@ import com.amazonaws.services.cloudwatch.model.EnableAlarmActionsResult;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 
@@ -44,7 +44,7 @@ To disable alarm actions for a CloudWatch alarm, call the AmazonCloudWatchClient
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;
 import com.amazonaws.services.cloudwatch.model.DisableAlarmActionsRequest;
@@ -53,7 +53,7 @@ import com.amazonaws.services.cloudwatch.model.DisableAlarmActionsResult;
 
  **Code**
 
-```
+```java
 final AmazonCloudWatch cw =
     AmazonCloudWatchClientBuilder.defaultClient();
 

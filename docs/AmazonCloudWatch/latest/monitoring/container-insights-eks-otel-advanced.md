@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/container-insights-eks-otel-advanced.html
 ---
 
-# Advanced configuration for OTel Container Insights on Amazon EKS
+# Advanced configuration
 
 This topic covers advanced configuration scenarios for OTel Container Insights on Amazon EKS. Use these configurations to customize metric collection, filter logs, collect telemetry across accounts, add custom dimensions, and tune resource allocation for large clusters.
 

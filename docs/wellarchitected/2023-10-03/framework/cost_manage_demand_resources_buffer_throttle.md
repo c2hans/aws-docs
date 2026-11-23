@@ -23,6 +23,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Demand curve with two distinct peaks that require high provisioned capacity](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/provisioned-capacity-1.png)
 
+*Demand curve with two distinct peaks that require high provisioned capacity*
+
  Assume a workload with the demand curve shown in preceding image. This workload has two peaks, and to handle those peaks, the resource capacity as shown by orange line is provisioned. The resources and energy used for this workload are not indicated by the area under the demand curve, but the area under the provisioned capacity line, as provisioned capacity is needed to handle those two peaks. Flattening the workload demand curve can help you to reduce the provisioned capacity for a workload and reduce its environmental impact. To smooth out the peak, consider to implement throttling or buffering solution.
 
  To understand them better, let’s explore throttling and buffering.

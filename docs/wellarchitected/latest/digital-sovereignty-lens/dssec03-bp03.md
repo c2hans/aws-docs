@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
     **Note:** The code snippets shown here are for illustration only and may not be accurate. Validate against your own environment and requirements unique to your workload.
    +  **Validate KMS key residency:**
 
-     ```
+     ```tcl/tk
      # Verify KMS keys are single-region only
      rule check_kms_single_region {
        Resources[ Type == 'AWS::KMS::Key' ].Properties {
@@ -69,7 +69,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
      ```
    +  **Validate S3 replication restrictions:**
 
-     ```
+     ```tcl/tk
      # Verify S3 buckets do not have cross-region replication
      rule check_s3_no_cross_region_replication {
        Resources[ Type == 'AWS::S3::Bucket' ].Properties {
@@ -82,7 +82,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
      ```
    +  **Validate sovereignty tags:**
 
-     ```
+     ```tcl/tk
      # Verify resources have required sovereignty tags
      rule check_sovereignty_tags {
        Resources[ Type in ['AWS::S3::Bucket', 'AWS::DynamoDB::Table'] ].Properties {
@@ -105,7 +105,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
      ```
    +  **Validate Secrets Manager replication:**
 
-     ```
+     ```tcl/tk
      # Verify Secrets Manager secrets are not replicated to other regions
      rule check_secrets_manager_no_replication {
        Resources[ Type == 'AWS::SecretsManager::Secret' ].Properties {

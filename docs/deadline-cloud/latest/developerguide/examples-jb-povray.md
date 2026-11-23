@@ -8,6 +8,6 @@ The [povray-3.7 job bundle](https://github.com/aws-deadline/deadline-cloud-sampl
 
 The bundle includes a sample POV-Ray scene (`sample/sample.pov`) that demonstrates 3D shapes and textures. Submit the bundle to a queue that supports conda with a `CondaChannels` parameter:
 
-```
+```bash
 deadline bundle gui-submit povray-3.7/
 ```

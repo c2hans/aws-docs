@@ -11,7 +11,7 @@ Unsupported versions of the official AMIs distributed by AWS ParallelCluster wil
 
 **(Required)** Defines the operating system for the cluster.
 
-```
+```yaml
 Image:
   Os: {{string}}
   CustomAmi: {{string}}
@@ -50,7 +50,7 @@ If the custom AMI requires additional permissions for its launch, these permissi
 For example, if a custom AMI has an encrypted snapshot associated with it, the following additional policies are required in both the user and head node policies:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

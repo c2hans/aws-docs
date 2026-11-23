@@ -46,6 +46,6 @@ sudo -u root dcv-session-manager-broker unregister-auth-server --url https://my-
 
 **Output**
 
-```
+```json
 Jwk urlhttps://my-auth-server.com/.well-known/jwks.json unregistered
 ```

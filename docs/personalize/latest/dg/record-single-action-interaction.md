@@ -14,7 +14,7 @@ The `userId`, `actionId`, and `sentAt` parameters map to the USER\_ID, ACTION\_I
 
 **Corresponding Action interactions dataset**
 
-```
+```cmd
 USER_ID, ACTION_ID, TIMESTAMP, EVENT_TYPE
 user123, action-xyz, 1543631760, TAKEN
 ```
@@ -24,7 +24,7 @@ user123, action-xyz, 1543631760, TAKEN
 ------
 #### [ AWS CLI ]
 
-```
+```cmd
 aws personalize-events put-action-interactions \
 --tracking-id {{12345678-xxxx-xxxx-xxxx-xxxxxxxxxxxx}} \
 --action-interactions '[{
@@ -38,7 +38,7 @@ aws personalize-events put-action-interactions \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize_events = boto3.client(service_name='personalize-events')

@@ -15,7 +15,7 @@ Before your kernels can send log data to Amazon S3, the permissions policy for t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

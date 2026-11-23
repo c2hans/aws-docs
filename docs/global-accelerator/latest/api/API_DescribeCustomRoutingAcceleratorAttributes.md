@@ -82,7 +82,7 @@ aws globalaccelerator describe-custom-routing-accelerator-attributes
        --accelerator-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh
 ```
 
-```
+```json
 {
     "AcceleratorAttributes": {
         "FlowLogsEnabled": true,

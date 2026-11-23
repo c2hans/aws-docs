@@ -18,7 +18,7 @@ The following code examples show how to perform list operations in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate list operations using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -230,7 +230,7 @@ import java.util.Map;
 ```
 Example usage of list operations with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -315,7 +315,7 @@ Example usage of list operations with AWS SDK for Java 2.x.
 **SDK for JavaScript (v3)**
 Demonstrate list operations using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -651,7 +651,7 @@ async function getItem(
 ```
 Example usage of list operations with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to work with lists in DynamoDB.
  */
@@ -851,7 +851,7 @@ async function updateWithMultipleActions(
 **SDK for Python (Boto3)**
 Demonstrate list operations using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 import json
 from typing import Any, Dict, List, Optional, Union
@@ -1175,7 +1175,7 @@ def append_to_list_safely(
 ```
 Example usage of list operations with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use list operations in DynamoDB."""
     # Example parameters

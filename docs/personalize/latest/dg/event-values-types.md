@@ -22,7 +22,7 @@ You can choose item interaction data as follows:
 
 The following code shows how to use the AWS SDK for Python (Boto3) to create a solution that uses only `watch` events where the user watched more than half of the video.
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')

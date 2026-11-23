@@ -136,7 +136,7 @@ Generate a [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-po
 
 Include the following content in the `LambdaVersion` parameter of your request. A `LambdaVersion` value of `V2_0` causes your user pool to add parameters for, and apply changes to, access tokens. A `LambdaVersion` value of `V3_0` produces the same event as `V2_0`, but causes your user pool to *also* apply changes to M2M access tokens. To invoke a specific function version, use a Lambda function ARN with a function version as the value of `LambdaArn`.
 
-```
+```json
 "PreTokenGenerationConfig": {
    "LambdaArn": "{{arn:aws:lambda:us-west-2:123456789012:function:MyFunction}}",
    "LambdaVersion": "{{V3_0}}"
@@ -189,7 +189,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 
 The version one token can set group membership, IAM roles, and new claims in ID tokens. Group membership overrides also apply to the `cognito:groups` claim in access tokens.
 
-```
+```json
 {
     "request": {
         "userAttributes": {"string": "string"},
@@ -239,7 +239,7 @@ The versions two and three request events add fields that customize the access t
 + Array of strings, numbers, booleans, or a combination of any of these
 + JSON
 
-```
+```json
 {
     "request": {
         "userAttributes": {
@@ -337,7 +337,7 @@ The removal of `phone_number` from scopes only prevents retrieval of a user's ph
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 export const handler = function(event, context) {
   event.response = {
     "claimsAndScopeOverrideDetails": {
@@ -388,7 +388,7 @@ Amazon Cognito passes event information to your Lambda function. The function th
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "version": "2",
     "triggerSource": "TokenGeneration_Authentication",
@@ -444,7 +444,7 @@ This example makes the following modifications to a user's tokens.
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 export const handler = function(event, context) {
 
     var scopes = ["MyAPI.read", "MyAPI.write", "MyAPI.admin"]
@@ -514,7 +514,7 @@ Amazon Cognito passes event information to your Lambda function. The function th
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "version": "2",
     "triggerSource": "TokenGeneration_HostedAuth",
@@ -563,7 +563,7 @@ This example uses a version 1 trigger event with a pre token generation Lambda f
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   event.response = {
     claimsOverrideDetails: {
@@ -605,7 +605,7 @@ This example uses a version 1 trigger event with a pre token generation Lambda f
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   event.response = {
     claimsOverrideDetails: {

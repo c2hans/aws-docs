@@ -53,7 +53,7 @@ For streaming, you specify the key value pairs for the `KmsEncryptionContext` in
 
 AWS HealthScribe uses the same encryption context in all AWS Key Management Service cryptographic operations. The encryption context is a map of String to String that can be customized to anything you want.
 
-```
+```json
 "encryptionContext": {
    "ECKey": "ECValue"
    ...
@@ -62,7 +62,7 @@ AWS HealthScribe uses the same encryption context in all AWS Key Management Serv
 
 For AWS HealthScribe streams, the following is the default service generated encryption context. It applies this context on top of any encryption context that you provide.
 
-```
+```json
 "encryptionContext": {
   "aws:<region>:transcribe:medical-scribe:session-id": "1234abcd-12ab-34cd-56ef-123456SAMPLE"
 }
@@ -70,7 +70,7 @@ For AWS HealthScribe streams, the following is the default service generated enc
 
 For AWS HealthScribe transcription jobs, the following is the default service generated encryption context. It applies this context on top of any encryption context that you provide.
 
-```
+```json
 "encryptionContext": {
   "aws:<region>:transcribe:medical-scribe:job-name": "<job-name>",
   "aws:<region>:transcribe:medical-scribe:start-time-epoch-ms": "<job-start-time>"
@@ -94,7 +94,7 @@ When you use a symmetric customer managed key to encrypt your data at rest in AW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -141,7 +141,7 @@ The following examples are CloudTrail Encrypt and Decrypt events you can use tha
 
 **Encrypt**
 
-```
+```json
 {
    "eventVersion":"1.09",
    "userIdentity":{
@@ -198,7 +198,7 @@ The following examples are CloudTrail Encrypt and Decrypt events you can use tha
 
 **Decrypt**
 
-```
+```json
 {
    "eventVersion":"1.09",
    "userIdentity":{

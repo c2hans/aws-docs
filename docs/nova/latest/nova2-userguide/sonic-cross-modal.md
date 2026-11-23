@@ -35,7 +35,7 @@ All three events must use the same promptName and contentName to maintain the se
 
 Initiates the text input sequence with configuration details:
 
-```
+```json
 {
   "event": {
     "contentStart": {
@@ -65,7 +65,7 @@ Initiates the text input sequence with configuration details:
 
 Contains the actual text message content:
 
-```
+```json
 {
   "event": {
     "textInput": {
@@ -87,7 +87,7 @@ Contains the actual text message content:
 
 Signals the completion of the text input:
 
-```
+```json
 {
   "event": {
     "contentEnd": {

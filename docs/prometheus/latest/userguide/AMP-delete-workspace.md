@@ -13,7 +13,7 @@ Deleting an Amazon Managed Service for Prometheus workspace does not automatical
 
 Use the following command:
 
-```
+```cmd
 aws amp delete-workspace --workspace-id {{my-workspace-id}}
 ```
 

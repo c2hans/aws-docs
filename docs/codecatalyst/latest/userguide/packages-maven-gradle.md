@@ -177,7 +177,7 @@ You will not be able to see or copy your PAT again after you close the dialog bo
 
 1. Add the `maven-publish` plugin to the `plugins` section of the project's `build.gradle` file.
 
-   ```
+   ```groovy
    plugins {
        id 'java-library'
        id 'maven-publish'
@@ -191,7 +191,7 @@ If copying from the console instructions, the following values should be updated
    + Replace {{proj\_name}} with your CodeCatalyst project name.
    + Replace {{repo\_name}} with your CodeCatalyst package repository name.
 
-   ```
+   ```groovy
    publishing {
        publications {
            mavenJava(MavenPublication) {

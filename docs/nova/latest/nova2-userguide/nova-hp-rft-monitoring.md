@@ -69,7 +69,7 @@ After training completes, locate your checkpoint:
 
 Use the checkpoint S3 path for inference or further training:
 
-```
+```yaml
 run:
     model_type: amazon.nova-2-lite-v1:0:256k
     model_name_or_path: "s3://customer-escrow-<account-number>-smtj-<unique-identifier>/<job-name>"

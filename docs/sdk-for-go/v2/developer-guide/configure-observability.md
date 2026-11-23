@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 
  The following example shows how to configure tracing for an Amazon S3 client:
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go-v2/service/s3"
     "github.com/aws/smithy-go/tracing/smithyoteltracing"
@@ -43,7 +43,7 @@ svc := s3.NewFromConfig(cfg, func(o *s3.Options) {
 
  The following example shows how to configure metrics for an Amazon S3 client:
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go-v2/service/s3"
     "github.com/aws/smithy-go/metrics/smithyotelmetrics"

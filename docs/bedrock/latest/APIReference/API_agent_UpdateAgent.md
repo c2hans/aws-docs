@@ -281,7 +281,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of UpdateAgent.
 
-```
+```json
 PUT /agents/ABCDEFGHIJ/ HTTP/1.1
 Content-type: application/json
 

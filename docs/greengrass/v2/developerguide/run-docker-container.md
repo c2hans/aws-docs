@@ -30,7 +30,7 @@ To run a Docker container in a component, you need the following:
 **Tip**
 You can also configure the core device to install Docker Engine when the component installs. For example, the following install script installs Docker Engine before it loads the Docker image. This install script works on Debian-based Linux distributions, such as Ubuntu. If you configure the component to install Docker Engine with this command, you may need to set `RequiresPrivilege` to `true` in the lifecycle script to run the installation and `docker` commands. For more information, see [AWS IoT Greengrass component recipe reference](component-recipe-reference.md).
 
-  ```
+  ```bash
   apt-get install docker-ce docker-ce-cli containerd.io && docker load -i {artifacts:path}/{{hello-world.tar}}
   ```
 + <a name="docker-user-permissions-requirement"></a>The system user that runs a Docker container component must have root or administrator permissions, or you must configure Docker to run it as a non-root or non-admistrator user.
@@ -42,7 +42,7 @@ You can also configure the core device to install Docker Engine when the compone
 
   To add `ggc_user`, or the non-root user that you use to run Docker container components, to the `docker` group, run the following command.
 
-  ```
+  ```bash
   sudo usermod -aG docker {{ggc_user}}
   ```
 
@@ -53,7 +53,7 @@ You can also configure the core device to install Docker Engine when the compone
 
   To add `ggc_user`, or the user that you use to run Docker container components, to the `docker-users` group, run the following command as an administrator.
 
-  ```
+  ```cmd
   net localgroup docker-users {{ggc_user}} /add
   ```
 
@@ -62,7 +62,7 @@ You can also configure the core device to install Docker Engine when the compone
 
   To add `ggc_user`, or the user that you use to run Docker container components, to the `docker-users` group, run the following command as an administrator.
 
-  ```
+  ```ps
   Add-LocalGroupMember -Group docker-users -Member {{ggc_user}}
   ```
 
@@ -88,7 +88,7 @@ In addition to these requirements, you must also meet the following requirements
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ In addition to these requirements, you must also meet the following requirements
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -152,7 +152,7 @@ This section describes how you can create a custom component that uses Docker Co
 
 1. Create and upload a Docker Compose file to an Amazon S3 bucket. Make sure that the [Greengrass device role](device-service-role.md) allows the `s3:GetObject` permission to enable the device to access the Compose file. The example Compose file shown in the following example includes the Amazon CloudWatch Agent image from Amazon ECR and the MySQL image from Docker Hub.
 
-   ```
+   ```yaml
    version: "3"
    services:
      cloudwatchagent:
@@ -171,7 +171,7 @@ This section describes how you can create a custom component that uses Docker Co
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.MyDockerComposeComponent",
@@ -210,7 +210,7 @@ This section describes how you can create a custom component that uses Docker Co
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.MyDockerComposeComponent
@@ -244,7 +244,7 @@ You must install and start the Docker daemon before you deploy the component.
 
    After you deploy the component locally, you can run the [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/) command to verify that your container runs.
 
-   ```
+   ```bash
    docker container ls
    ```
 
@@ -266,7 +266,7 @@ This section describes how you can create a custom component that runs a Docker 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.MyPrivateDockerComponent",
@@ -302,7 +302,7 @@ This section describes how you can create a custom component that runs a Docker 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.MyPrivateDockerComponent
@@ -336,7 +336,7 @@ You must install and start the Docker daemon before you deploy the component.
 
    After you deploy the component locally, you can run the [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/) command to verify that your container runs.
 
-   ```
+   ```bash
    docker container ls
    ```
 
@@ -351,7 +351,7 @@ This section describes how you can run a Docker container in a component from a 
 
 1. Run the [docker save](https://docs.docker.com/engine/reference/commandline/save/) command to create a backup of a Docker container. You provide this backup as a component artifact to run the container on AWS IoT Greengrass. Replace {{hello-world}} with the name of the image, and replace {{hello-world.tar}} with the name of the archive file to create.
 
-   ```
+   ```bash
    docker save {{hello-world}} > {{artifacts/com.example.MyDockerComponent/1.0.0/hello-world.tar}}
    ```
 
@@ -362,7 +362,7 @@ This section describes how you can run a Docker container in a component from a 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.MyS3DockerComponent",
@@ -390,7 +390,7 @@ This section describes how you can run a Docker container in a component from a 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.MyS3DockerComponent
@@ -418,7 +418,7 @@ This section describes how you can run a Docker container in a component from a 
 
    After you deploy the component locally, you can run the [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/) command to verify that your container runs.
 
-   ```
+   ```bash
    docker container ls
    ```
 
@@ -429,7 +429,7 @@ This section describes how you can run a Docker container in a component from a 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
      "RecipeFormatVersion": "2020-01-25",
      "ComponentName": "com.example.MyS3DockerComponent",
@@ -462,7 +462,7 @@ This section describes how you can run a Docker container in a component from a 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    ---
    RecipeFormatVersion: '2020-01-25'
    ComponentName: com.example.MyS3DockerComponent
@@ -503,7 +503,7 @@ The following recipe defines an example Docker container component that publishe
   + The additional `-e` arguments set environment variables used by this example.
   + The `--rm` argument cleans up the container when it exits.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.python.docker.PublishToIoTCore",
@@ -549,7 +549,7 @@ The following recipe defines an example Docker container component that publishe
 }
 ```
 
-```
+```yaml
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.python.docker.PublishToIoTCore
 ComponentVersion: 1.0.0
@@ -610,7 +610,7 @@ The following recipe defines an example Docker container component that lists th
   + The `-e` argument sets the required environment variables in the Docker container.
   + The `--rm` argument cleans up the container when it exits.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.python.docker.ListS3Buckets",
@@ -642,7 +642,7 @@ The following recipe defines an example Docker container component that lists th
 }
 ```
 
-```
+```yaml
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.python.docker.ListS3Buckets
 ComponentVersion: 1.0.0
@@ -696,7 +696,7 @@ The following recipe defines an example Docker container component that creates 
   + The `-v` argument mounts the component's [work folder](component-recipe-reference.md#component-recipe-work-path) in the container. This example creates a file in the work folder to upload that file to Amazon S3 using stream manager.
   + The `--rm` argument cleans up the container when it exits.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.python.docker.StreamFileToS3",
@@ -733,7 +733,7 @@ The following recipe defines an example Docker container component that creates 
 }
 ```
 
-```
+```yaml
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.python.docker.StreamFileToS3
 ComponentVersion: 1.0.0

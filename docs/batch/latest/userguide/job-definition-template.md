@@ -9,11 +9,11 @@ The following is an empty job definition template that includes a single contain
 **Note**
 You can generate a single-container job definition template with the following AWS CLI command:
 
-```
+```sh
 $ aws batch register-job-definition --generate-cli-skeleton
 ```
 
-```
+```json
 {
     "jobDefinitionName": "",
     "type": "container",

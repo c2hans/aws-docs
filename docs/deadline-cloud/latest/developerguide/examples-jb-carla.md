@@ -14,7 +14,7 @@ To run this bundle, you need a Deadline Cloud farm with a GPU fleet (minimum 1 N
 
 From the `job_bundles` directory, submit the job:
 
-```
+```bash
 deadline bundle gui-submit autonomous_driving_carla
 ```
 

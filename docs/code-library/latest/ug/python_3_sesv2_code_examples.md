@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon SES API v2.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/attachments_scenario#code-examples).
 
-```
+```python
 def hello_sesv2(sesv2_client):
     """
     Use the AWS SDK for Python (Boto3) to create an Amazon SESv2 client and
@@ -82,7 +82,7 @@ The following code example shows how to use `CreateConfigurationSet`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Create a configuration set to use in the Amazon SES API v2 search-and-filter scenario.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -143,7 +143,7 @@ The following code example shows how to use `CreateContact`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -213,7 +213,7 @@ The following code example shows how to use `CreateContactList`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -259,7 +259,7 @@ The following code example shows how to use `CreateEmailIdentity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -305,7 +305,7 @@ The following code example shows how to use `CreateEmailTemplate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -359,7 +359,7 @@ The following code example shows how to use `CreateTenant`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Create a tenant to use in the Amazon SES API v2 search-and-filter scenario.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -419,7 +419,7 @@ The following code example shows how to use `DeleteConfigurationSet`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Delete a configuration set that was created by the Amazon SES API v2 search-and-filter scenario.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -477,7 +477,7 @@ The following code example shows how to use `DeleteContactList`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -523,7 +523,7 @@ The following code example shows how to use `DeleteEmailIdentity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -569,7 +569,7 @@ The following code example shows how to use `DeleteEmailTemplate`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -616,7 +616,7 @@ The following code example shows how to use `DeleteTenant`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Delete a tenant that was created by the Amazon SES API v2 search-and-filter scenario.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -671,7 +671,7 @@ The following code example shows how to use `GetEmailIdentity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/attachments_scenario#code-examples).
 
-```
+```python
 class SESv2Wrapper:
     """Encapsulates Amazon SESv2 email sending actions."""
 
@@ -732,7 +732,7 @@ The following code example shows how to use `ListConfigurationSets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Filter configuration sets by name using the Amazon SES API v2 filter support.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -812,7 +812,7 @@ The following code example shows how to use `ListContacts`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -860,7 +860,7 @@ The following code example shows how to use `ListEmailIdentities`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Filter email identities by name using the Amazon SES API v2 filter support.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -941,7 +941,7 @@ The following code example shows how to use `ListTenants`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Filter tenants by name using the Amazon SES API v2 filter support.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 
@@ -1023,7 +1023,7 @@ The following code example shows how to use `SendBulkEmail`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/attachments_scenario#code-examples).
 
-```
+```python
 class SESv2Wrapper:
     """Encapsulates Amazon SESv2 email sending actions."""
 
@@ -1117,7 +1117,7 @@ The following code example shows how to use `SendEmail`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 Sends a message to all members of the contact list.
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -1162,7 +1162,7 @@ class SESv2Workflow:
 ```
 Sends a message to all members of the contact list using a template.
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -1219,7 +1219,7 @@ The following code example shows how to send emails with attachments using Amazo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/attachments_scenario#code-examples).
 Run an interactive scenario demonstrating email attachments.
 
-```
+```python
 class SESv2EmailAttachmentsScenario:
     """
     Demonstrates sending emails with attachments using Amazon SESv2.
@@ -1575,7 +1575,7 @@ class SESv2EmailAttachmentsScenario:
 ```
 Create an SESv2 wrapper class to manage operations.
 
-```
+```python
 class SESv2Wrapper:
     """Encapsulates Amazon SESv2 email sending actions."""
 
@@ -1902,7 +1902,7 @@ The following code example shows how to run the Amazon SES API v2 newsletter sce
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -2099,7 +2099,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/search_filter_scenario#code-examples).
 Run the Search and Filter SES resources scenario.
 
-```
+```python
 class SearchFilterBasicsScenario:
     """Runs the SES v2 Search and Filter Basics scenario."""
 
@@ -2388,7 +2388,7 @@ class SearchFilterBasicsScenario:
 ```
 A wrapper class for the Amazon SES API v2 search-and-filter operations.
 
-```
+```python
 class SearchFilterWrapper:
     """Encapsulates Amazon SES v2 search-and-filter operations."""
 

@@ -29,7 +29,7 @@ To manage all provisioned products for the account, you need `AWSServiceCatalogA
 
 1. Use the provisioned product ID to identify the AWS CloudTrail record that corresponds to this launch and identify the requesting user (typically, you enter an email address during federation). In this example, it is "steve".
 
-   ```
+   ```json
    {
      "eventVersion":"1.03","userIdentity":
      {

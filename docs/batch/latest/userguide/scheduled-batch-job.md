@@ -21,7 +21,7 @@ Before you begin, you need the following:
 + A job queue and a valid job definition. To create these, see [Getting started with AWS Batch tutorials](Batch_GetStarted.md). To schedule a service job, you need a service environment and a SageMaker job queue instead. To create these, see [Getting started with AWS Batch on SageMaker AI](getting-started-sagemaker.md).
 + An IAM execution role that EventBridge Scheduler assumes to call `SubmitJob` on your behalf. The role must include a policy that grants the `batch:SubmitJob` permission. To schedule a service job, grant the `batch:SubmitServiceJob` permission instead. As a security best practice, scope the policy to the job queue and job definition that the schedule uses:
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ Parameter names in the input JSON must be in PascalCase (for example, `JobQueue`
 
    For example:
 
-   ```
+   ```json
    {
      "JobName": "my-scheduled-job",
      "JobQueue": "my-job-queue",
@@ -97,7 +97,7 @@ Parameter names in the input JSON must be in PascalCase (for example, `JobQueue`
 
    You can also include any other `SubmitJob` request parameter. For example, to submit an array job with 10 child jobs and retry the job up to 3 times if it fails:
 
-   ```
+   ```json
    {
      "JobName": "my-scheduled-job",
      "JobQueue": "my-job-queue",
@@ -124,7 +124,7 @@ Parameter names in the input JSON must be in PascalCase (for example, `JobQueue`
 
    For example:
 
-   ```
+   ```json
    {
      "JobName": "my-scheduled-training-job",
      "JobQueue": "my-sagemaker-job-queue",

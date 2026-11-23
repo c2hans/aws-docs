@@ -33,7 +33,7 @@ To configure a Salesforce connection:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -82,7 +82,7 @@ To configure a Salesforce connection:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -23,7 +23,7 @@ This section describes how to create the AWS Sync user and associate the appropr
 
 ****
 
-   ```
+   ```json
    {
            "Version":"2012-10-17",
            "Statement": [
@@ -53,7 +53,7 @@ This section describes how to create the AWS Sync user and associate the appropr
 
 ****
 
-   ```
+   ```json
    {
            "Version":"2012-10-17",
            "Statement": [
@@ -77,7 +77,7 @@ This section describes how to create the AWS Sync user and associate the appropr
 
 ****
 
-   ```
+   ```json
    {
            "Version":"2012-10-17",
            "Statement": [
@@ -103,7 +103,7 @@ This section describes how to create the AWS Sync user and associate the appropr
 
 ****
 
-   ```
+   ```json
    {
            "Version":"2012-10-17",
            "Statement": [

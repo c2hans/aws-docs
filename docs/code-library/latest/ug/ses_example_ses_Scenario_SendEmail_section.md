@@ -19,7 +19,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
 Verify an email address with Amazon SES and send messages.
 
-```
+```python
 def usage_demo():
     print("-" * 88)
     print("Welcome to the Amazon Simple Email Service (Amazon SES) email demo!")
@@ -117,7 +117,7 @@ This message is sent from the Amazon SES SMTP mail demo."""
 ```
 Create functions to wrap Amazon SES identity actions.
 
-```
+```python
 class SesIdentity:
     """Encapsulates Amazon SES identity functions."""
 
@@ -236,7 +236,7 @@ class SesIdentity:
 ```
 Create functions to wrap Amazon SES template actions.
 
-```
+```python
 class SesTemplate:
     """Encapsulates Amazon SES template functions."""
 
@@ -362,7 +362,7 @@ class SesTemplate:
 ```
 Create functions to wrap Amazon SES email actions.
 
-```
+```python
 class SesDestination:
     """Contains data about an email destination."""
 

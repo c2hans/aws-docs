@@ -70,7 +70,7 @@ aws transcribe create-call-analytics-category \
 
 The file *my-first-analytics-category.json* contains the following request body.
 
-```
+```json
 {
   "CategoryName": "{{my-new-category}}",
   "InputType": "{{POST_CALL}}",
@@ -133,7 +133,7 @@ The following example creates a category with the rules:
 + The agent had a negative sentiment at some point in the call.
 + The words "welcome" or "hello" were not used in the first 10,000 milliseconds of the call.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3
@@ -208,7 +208,7 @@ Rules using interruptions ([`InterruptionFilter`](https://docs.aws.amazon.com/tr
 
 Here's an example of the parameters available with [`InterruptionFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_InterruptionFilter.html):
 
-```
+```json
 "InterruptionFilter": {
     "AbsoluteTimeRange": {
        {{Specify the time frame, in milliseconds, when the match should occur}}
@@ -234,7 +234,7 @@ Rules using keywords ([`TranscriptFilter`](https://docs.aws.amazon.com/transcrib
 
 Here's an example of the parameters available with [`TranscriptFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptFilter.html):
 
-```
+```json
 "TranscriptFilter": {
     "AbsoluteTimeRange": {
        {{Specify the time frame, in milliseconds, when the match should occur}}
@@ -260,7 +260,7 @@ Rules using non-talk time ([`NonTalkTimeFilter`](https://docs.aws.amazon.com/tra
 
 Here's an example of the parameters available with [`NonTalkTimeFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTalkTimeFilter.html):
 
-```
+```json
 "NonTalkTimeFilter": {
     "AbsoluteTimeRange": {
  {{Specify the time frame, in milliseconds, when the match should occur}}
@@ -286,7 +286,7 @@ Rules using sentiment ([`SentimentFilter`](https://docs.aws.amazon.com/transcrib
 
 Here's an example of the parameters available with [`SentimentFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_SentimentFilter.html):
 
-```
+```json
 "SentimentFilter": {
     "AbsoluteTimeRange": {
     {{Specify the time frame, in milliseconds, when the match should occur}}

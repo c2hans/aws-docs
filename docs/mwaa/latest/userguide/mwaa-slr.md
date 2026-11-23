@@ -32,7 +32,7 @@ The following trust policy allows the service principal to assume the service-li
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ The role permissions policy named `AmazonMWAAServiceRolePolicy` allows Amazon MW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -157,7 +157,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 
 We recommend scoping the `ec2:CreateVpcEndpoint` permission using the `aws:CalledVia` condition key to restrict the permission to calls made through the Amazon MWAA service:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": "ec2:CreateVpcEndpoint",

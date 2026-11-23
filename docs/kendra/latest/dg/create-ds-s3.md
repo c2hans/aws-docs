@@ -25,7 +25,7 @@ aws kendra create-data-source \
 
 The following snippet of Python code creates an Amazon S3 data source. For the complete example, see [Getting started (AWS SDK for Python (Boto3))](gs-python.md).
 
-```
+```Python
 print("Create an Amazon S3 data source.")
 
     # Provide a name for the data source
@@ -74,7 +74,7 @@ aws kendra describe-data-source \
 
 The following snippet of Python code gets information about an S3 data source. For the complete example, see [Getting started (AWS SDK for Python (Boto3))](gs-python.md).
 
-```
+```python
 print("Wait for Amazon Kendra to create the data source.")
 
     while True:
@@ -109,7 +109,7 @@ aws kendra start-data-source-sync-job \
 
 The following snippet of Python code synchronizes an Amazon S3 data source. For the complete example, see [Getting started (AWS SDK for Python (Boto3))](gs-python.md).
 
-```
+```python
 print("Synchronize the data source.")
 
     sync_response = kendra.start_data_source_sync_job(

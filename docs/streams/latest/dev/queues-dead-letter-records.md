@@ -45,7 +45,7 @@ The following example receives a dead-letter record, and then acknowledges or re
 
 Receive a dead-letter record:
 
-```
+```bash
 aws kinesis receive-dead-letter-queue-records \
     --queue-arn arn:aws:kinesis:us-east-1:111122223333:queue/resource-id \
     --limit 10
@@ -53,7 +53,7 @@ aws kinesis receive-dead-letter-queue-records \
 
 The response includes a receipt handle, a record ID, and the receive count. The following is example output.
 
-```
+```json
 {
     "QueueRecords": [
         {
@@ -73,7 +73,7 @@ After you inspect the record, acknowledge it if you have handled it, or restore 
 
 Acknowledge the dead-letter record:
 
-```
+```bash
 aws kinesis acknowledge-dead-letter-queue-records \
     --queue-arn arn:aws:kinesis:us-east-1:111122223333:queue/resource-id \
     --entries '[
@@ -83,7 +83,7 @@ aws kinesis acknowledge-dead-letter-queue-records \
 
 Or restore the dead-letter record:
 
-```
+```bash
 aws kinesis restore-dead-letter-queue-records \
     --queue-arn arn:aws:kinesis:us-east-1:111122223333:queue/resource-id \
     --entries '[

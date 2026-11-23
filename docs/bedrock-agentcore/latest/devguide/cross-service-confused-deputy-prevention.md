@@ -14,7 +14,7 @@ If the `aws:SourceArn` value does not contain the account ID, such as an Amazon 
 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in AgentCore to prevent the confused deputy problem.
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement": [

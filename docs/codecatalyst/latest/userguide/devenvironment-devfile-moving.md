@@ -36,7 +36,7 @@ If you edit your devfile, you have to restart the devfile for the changes to tak
 
 You can review which devfile is being used by running `/aws/mde/mde status`. The location field has the path of the devfile relative to the environment’s `/projects` folder.
 
-```
+```yaml
 {
             "status": "STABLE",
             "location": "devfile.yaml"

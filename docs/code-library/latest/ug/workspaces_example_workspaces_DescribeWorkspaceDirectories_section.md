@@ -81,7 +81,7 @@ For more information, see [Manage directories for WorkSpaces Personal](https://d
 **Tools for PowerShell V4**
 **Example 1: This sample lists the directory details for registered directories**
 
-```
+```powershell
 Get-WKSWorkspaceDirectory
 ```
 **Output:**
@@ -109,7 +109,7 @@ WorkspaceSecurityGroupId    : sg-0ed2441234a123c43
 **Tools for PowerShell V5**
 **Example 1: This sample lists the directory details for registered directories**
 
-```
+```powershell
 Get-WKSWorkspaceDirectory
 ```
 **Output:**

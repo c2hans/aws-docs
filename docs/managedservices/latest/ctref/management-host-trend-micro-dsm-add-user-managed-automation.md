@@ -136,13 +136,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-host-trend-micro-dsm-add-user-managed-automation-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-host-trend-micro-dsm-add-user-managed-automation-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

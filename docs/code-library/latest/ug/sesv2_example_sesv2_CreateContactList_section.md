@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Creates a contact list with the specified name.
     /// </summary>
@@ -66,7 +66,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
 
-```
+```java
     try {
       // 2. Create a contact list
       String contactListName = CONTACT_LIST_NAME;
@@ -93,7 +93,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
 
-```
+```python
 def main():
     """
     The main function that orchestrates the execution of the workflow.
@@ -137,7 +137,7 @@ class SESv2Workflow:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
 
-```
+```rust
 async fn make_list(client: &Client, contact_list: &str) -> Result<(), Error> {
     client
         .create_contact_list()
@@ -158,7 +158,7 @@ async fn make_list(client: &Client, contact_list: &str) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_se2->createcontactlist(
           iv_contactlistname = iv_contact_list_name ).

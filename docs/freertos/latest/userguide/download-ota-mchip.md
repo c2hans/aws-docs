@@ -19,13 +19,13 @@ In agreement with Microchip, we are removing the Curiosity PIC32MZEF (DM320104) 
 
 1. Open the `vendors/{{vendor}}/boards/{{board}}/aws_demos/config_files/ota_demo_config.h` file, and enter your certificate.
 
-   ```
+   ```c
    [] = "{{your-certificate-key}}";
    ```
 
 1. Paste the contents of your code-signing certificate here:
 
-   ```
+   ```c
    #define otapalconfigCODE_SIGNING_CERTIFICATE [] = "{{your-certificate-key}}";
    ```
 

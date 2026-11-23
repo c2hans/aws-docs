@@ -52,7 +52,7 @@ Replace the items under `excludeFiles:` with your own files and directories. For
 **Note**
 Be sure to use relative paths for files and directories that you add to your `aws-codeguru-reviewer.yml` file.
 
-```
+```yaml
 version: 1.0
 
 # Sample YAML file
@@ -86,7 +86,7 @@ In your `aws-codeguru-reviewer.yml` file, add files and directories to exclude u
 
 In the following example, CodeGuru Reviewer excludes from analysis anything in the `resources` directory.
 
-```
+```yaml
 version: 1.0
 
 excludeFiles:
@@ -97,7 +97,7 @@ excludeFiles:
 
 In the following example, CodeGuru Reviewer excludes from analysis all files under any directory named `configuration`.
 
-```
+```yaml
 version: 1.0
 
 excludeFiles:
@@ -108,7 +108,7 @@ excludeFiles:
 
 In the following example, CodeGuru Reviewer excludes from analysis any file with a `.java` extension.
 
-```
+```yaml
 version: 1.0
 
 excludeFiles:

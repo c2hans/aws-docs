@@ -84,7 +84,7 @@ To configure the outbound endpoint for your chatbot, use the Amazon Chime [PutEv
 
 The following sample code demonstrates how to configure an endpoint using the AWS SDK for Java.
 
-```
+```java
 PutEventsConfigurationRequest putEventsConfigurationRequest = new PutEventsConfigurationRequest()
      .withAccountId("{{chimeAccountId}}")
      .withBotId("{{botId}}")

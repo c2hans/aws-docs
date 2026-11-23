@@ -16,7 +16,7 @@ For endpoint configurations created after June 17, 2026, `EnableDetailedObservab
 ### Verify via API
 <a name="detailed-observability-getting-started-verify-api"></a>
 
-```
+```bash
 aws sagemaker describe-endpoint-config \
     --endpoint-config-name {{your-config-name}} \
     --query 'MetricsConfig.EnableDetailedObservability'
@@ -29,7 +29,7 @@ Expected output: `true`
 
 To disable detailed observability, create a new endpoint configuration with the flag set to `false`, then update your endpoint to use it:
 
-```
+```bash
 # Create endpoint config with detailed observability disabled
 aws sagemaker create-endpoint-config \
     --endpoint-config-name {{name}}-no-observability \
@@ -49,7 +49,7 @@ aws sagemaker update-endpoint \
 ### Via API
 <a name="detailed-observability-getting-started-existing-api"></a>
 
-```
+```bash
 # Create a new endpoint config with detailed observability enabled
 aws sagemaker create-endpoint-config \
     --endpoint-config-name {{name}}-v2 \
@@ -122,7 +122,7 @@ Your container must expose metrics in Prometheus format on port 8080. The defaul
 
 You still need to set `EnableDetailedObservability` and `MetricPublishFrequencyInSeconds` in the endpoint configuration. Then, set `ContainerMetricsConfig` on the inference component or production variant with your custom metrics path:
 
-```
+```json
 {
     "ContainerMetricsConfig": {
         "MetricsEndpoints": [
@@ -158,7 +158,7 @@ OTel metric enrichment converts CloudWatch metrics into OpenTelemetry format and
 ### Via AWS CLI
 <a name="detailed-observability-getting-started-enrichment-cli"></a>
 
-```
+```bash
 # Enable OTel enrichment
 aws cloudwatch start-otel-enrichment
 

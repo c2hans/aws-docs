@@ -20,7 +20,7 @@ Use the workflow transform pipeline when you want the workflow to mount the tran
 
 1. Create a JavaScript transformation file. You can author it anywhere you run `kubectl`, such as the Migration Console pod:
 
-   ```
+   ```bash
    cat > content-type-transformer.js << 'SCRIPT'
    const NEW_CONTENT_TYPE = "application/json";
    const ELASTIC_CONTENT_TYPE = "application/vnd.elasticsearch+json";
@@ -62,14 +62,14 @@ Use the workflow transform pipeline when you want the workflow to mount the tran
 
 1. Create a ConfigMap from the transformation file:
 
-   ```
+   ```bash
    kubectl create configmap replayer-transforms -n ma \
      --from-file=content-type-transformer.js=content-type-transformer.js
    ```
 
 1. Add the transformation to the workflow configuration under the replayer’s `replayerConfig`. The examples in this section show only the relevant replayer entry; keep the rest of the workflow configuration, including the captured-traffic source referenced by `fromCapturedTraffic` and the target cluster referenced by `toTarget`.
 
-   ```
+   ```json
    {
      "traffic": {
        "replayers": {
@@ -103,14 +103,14 @@ If you are not using the workflow transform pipeline, provide the raw transforme
 
 Build the configuration from your JavaScript file with `jq`, which embeds the script as the `initializationScript` value without manual escaping:
 
-```
+```bash
 jq -Rs '[{"JsonJSTransformerProvider":{"initializationScript":.,"bindingsObject":"{}"}}]' \
   content-type-transformer.js
 ```
 
 Use the single-line output as the `transformerConfig` value:
 
-```
+```json
 {
   "traffic": {
     "replayers": {
@@ -149,7 +149,7 @@ For each pipeline type, use either the workflow pipeline field or the raw config
 
 The raw request transformer configuration is an array of transformer-provider objects. For JavaScript request transforms, use `JsonJSTransformerProvider` with either `initializationScript` or `initializationScriptFile`.
 
-```
+```json
 [
   {
     "JsonJSTransformerProvider": {

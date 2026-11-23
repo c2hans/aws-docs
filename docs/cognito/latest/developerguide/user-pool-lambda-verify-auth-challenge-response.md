@@ -29,7 +29,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "userAttributes": {
@@ -90,7 +90,7 @@ In this example, if the user's response matches the expected response, Amazon Co
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   if (
     event.request.privateChallengeParameters.answer ===

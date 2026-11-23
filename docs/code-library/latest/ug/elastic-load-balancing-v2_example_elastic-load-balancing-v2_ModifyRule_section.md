@@ -57,7 +57,7 @@ For more information, see [Edit a listener rule for your Application Load Balanc
 **Tools for PowerShell V4**
 **Example 1: This example modifes the specified Listener rule configurations.**
 
-```
+```powershell
 $newRuleCondition = [Amazon.ElasticLoadBalancingV2.Model.RuleCondition]@{
     "PathPatternConfig" = @{
     "Values" = "/login1","/login2","/login3"
@@ -81,7 +81,7 @@ RuleArn    : arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/a
 **Tools for PowerShell V5**
 **Example 1: This example modifes the specified Listener rule configurations.**
 
-```
+```powershell
 $newRuleCondition = [Amazon.ElasticLoadBalancingV2.Model.RuleCondition]@{
     "PathPatternConfig" = @{
     "Values" = "/login1","/login2","/login3"

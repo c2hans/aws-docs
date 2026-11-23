@@ -63,7 +63,7 @@ Both segments and subsegments inside a Lambda function are managed by the Lambda
 
 The following code example shows you how to add an annotation to a subsegment inside a Lambda function:
 
-```
+```dotnet
 #Create the subsegment
 AWSXRayRecorder.Instance.BeginSubsegment("custom method");
 #Add an annotation

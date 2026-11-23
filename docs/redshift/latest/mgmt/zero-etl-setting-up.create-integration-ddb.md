@@ -181,7 +181,7 @@ When creating zero-ETL integrations, your sign in credentials must have permissi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -250,7 +250,7 @@ The following sample key policy statements demonstrate the permissions required 
 
 The following policy statement allows the requester account or role to retrieve information about a KMS key.
 
-```
+```json
 {
    "Effect":"Allow",
    "Principal":{
@@ -263,7 +263,7 @@ The following policy statement allows the requester account or role to retrieve 
 
 The following policy statement allows the requester account or role to add a grant to a KMS key. The [`kms:ViaService`](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-via-service) condition key limits use of the KMS key to requests from Amazon Redshift.
 
-```
+```json
 {
    "Effect":"Allow",
    "Principal":{
@@ -289,7 +289,7 @@ The following policy statement allows the requester account or role to add a gra
 
 The following policy statement allows the Amazon Redshift service principal to add a grant to a KMS key.
 
-```
+```json
 {
    "Effect":"Allow",
    "Principal":{

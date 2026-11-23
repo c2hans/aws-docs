@@ -158,7 +158,7 @@ The substate of the session. If the request completes successfully, the substate
 **Request**
 The following example creates three sessions.
 
-```
+```python
 from swagger_client.models.create_session_request_data import CreateSessionRequestData
 
 def get_sessions_api():
@@ -192,7 +192,7 @@ def main():
 **Response**
 The following is the sample output.
 
-```
+```json
 {
               "RequestId": "e32d0b83-25f7-41e7-8c8b-e89326ecc87f",
     "SuccessfulList": [

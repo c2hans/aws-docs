@@ -45,14 +45,14 @@ The following steps refer to the AWS Load Balancer Controller **v2.14.1** releas
 
 1. Download an IAM policy for the AWS Load Balancer Controller that allows it to make calls to AWS APIs on your behalf.
 
-   ```
+   ```shell
    curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.14.1/docs/install/iam_policy.json
    ```
    + If you are in a non-standard AWS partition, such as a Government or China region, [review the policies on GitHub](https://github.com/kubernetes-sigs/aws-load-balancer-controller/tree/main/docs/install) and download the appropriate policy for your region.
 
 1. Create an IAM policy using the policy downloaded in the previous step.
 
-   ```
+   ```shell
    aws iam create-policy \
        --policy-name AWSLoadBalancerControllerIAMPolicy \
        --policy-document file://iam_policy.json
@@ -62,7 +62,7 @@ If you view the policy in the AWS Management Console, the console shows warnings
 
 1. Replace the values for cluster name, region code, and account ID.
 
-   ```
+   ```shell
    eksctl create iamserviceaccount \
        --cluster=<cluster-name> \
        --namespace=kube-system \
@@ -78,13 +78,13 @@ If you view the policy in the AWS Management Console, the console shows warnings
 
 1. Add the `eks-charts` Helm chart repository. AWS maintains [this repository](https://github.com/aws/eks-charts) on GitHub.
 
-   ```
+   ```shell
    helm repo add eks https://aws.github.io/eks-charts
    ```
 
 1. Update your local repo to make sure that you have the most recent charts.
 
-   ```
+   ```shell
    helm repo update eks
    ```
 
@@ -98,7 +98,7 @@ If you view the policy in the AWS Management Console, the console shows warnings
 
      For more information about configuring the helm chart, see [values.yaml](https://github.com/aws/eks-charts/blob/master/stable/aws-load-balancer-controller/values.yaml) on GitHub.
 
-     ```
+     ```shell
      helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
        -n kube-system \
        --set clusterName=my-cluster \
@@ -112,7 +112,7 @@ The deployed chart doesn’t receive security updates automatically. You need to
 
 The `helm install` command automatically installs the custom resource definitions (CRDs) for the controller. The `helm upgrade` command does not. If you use `helm upgrade,` you must manually install the CRDs. Run the following command to install the CRDs:
 
-```
+```shell
 wget https://raw.githubusercontent.com/aws/eks-charts/master/stable/aws-load-balancer-controller/crds/crds.yaml
 kubectl apply -f crds.yaml
 ```
@@ -122,13 +122,13 @@ kubectl apply -f crds.yaml
 
 1. Verify that the controller is installed.
 
-   ```
+   ```shell
    kubectl get deployment -n kube-system aws-load-balancer-controller
    ```
 
    An example output is as follows.
 
-   ```
+   ```bash
    NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
    aws-load-balancer-controller   2/2     2            2           84s
    ```

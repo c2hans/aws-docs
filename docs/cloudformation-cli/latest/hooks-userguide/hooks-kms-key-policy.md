@@ -48,7 +48,7 @@ When creating your customer managed key, you must define its key policy to allow
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -165,7 +165,7 @@ During the [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -209,7 +209,7 @@ To call [GetHookResult](https://docs.aws.amazon.com/AWSCloudFormation/latest/API
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

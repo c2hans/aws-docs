@@ -44,7 +44,7 @@ For more information, see [**What is AWS X-Ray**](https://docs.aws.amazon.com/xr
 ## Container insights
 <a name="Investigations-ContainerInsights"></a>
 
-If you use Amazon ECS or Amazon EKS, we recommend that you install Container insights. This improves the ability of CloudWatch investigations to find issues in your containers. For more information about the CloudWatch agent and how to install it, see [Container Insights](ContainerInsights.md).
+If you use Amazon ECS or Amazon EKS, we recommend that you install Container insights. This improves the ability of CloudWatch investigations to find issues in your containers. For more information about the CloudWatch agent and how to install it, see [Container Insights for Amazon EKS](ContainerInsights.md).
 
 ## Database insights
 <a name="Investigations-DatabaseInsights"></a>

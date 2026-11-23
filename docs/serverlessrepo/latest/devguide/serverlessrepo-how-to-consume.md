@@ -54,7 +54,7 @@ To acknowledge an application's capabilities using the AWS CLI, follow these ste
 
 1. **Review the application's capabilities. **Use the following AWS CLI command to review an application's capabilities:
 
-   ```
+   ```sh
    aws serverlessrepo get-application \
    --application-id {{application-arn}}
    ```
@@ -63,7 +63,7 @@ To acknowledge an application's capabilities using the AWS CLI, follow these ste
 
 1. **Create the changeset. **You must provide the set of required [capabilities](https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-changesets.html#applications-applicationid-changesets-createcloudformationchangesetinput-capabilities) when you create the CloudFormation changeset. For example, use the following AWS CLI command to deploy an application by acknowledging its capabilities:
 
-   ```
+   ```sh
    aws serverlessrepo create-cloud-formation-change-set \
    --application-id {{application-arn}} \
    --stack-name {{unique-name-for-cloud-formation-stack}} \
@@ -74,7 +74,7 @@ To acknowledge an application's capabilities using the AWS CLI, follow these ste
 
    For example, the following AWS CLI command acknowledges an application that contains an [AWS::IAM::Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html) resource with a custom name and one or more nested applications:
 
-   ```
+   ```sh
    aws serverlessrepo create-cloud-formation-change-set \
    --application-id {{application-arn}} \
    --stack-name {{unique-name-for-cloud-formation-stack}} \
@@ -85,7 +85,7 @@ To acknowledge an application's capabilities using the AWS CLI, follow these ste
 
    The following example AWS CLI command executes the application changeset to deploy the application:
 
-   ```
+   ```sh
    aws cloudformation execute-change-set \
    --change-set-name {{changeset-id-arn}}
    ```

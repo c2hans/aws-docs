@@ -35,13 +35,19 @@ Required: Yes
  ** status **   <a name="rtbfabric-Type-LinkRoutingRuleSummary-status"></a>
 The status of the routing rule.
 Type: String
-Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED`
+Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED | CREATE_FAILED | DELETE_FAILED`
 Required: Yes
 
  ** updatedAt **   <a name="rtbfabric-Type-LinkRoutingRuleSummary-updatedAt"></a>
 The timestamp of when the routing rule was last updated.
 Type: Timestamp
 Required: Yes
+
+ ** errorDetails **   <a name="rtbfabric-Type-LinkRoutingRuleSummary-errorDetails"></a>
+The causes of this routing rule's failure. Present only when the rule is CREATE\_FAILED, DELETE\_FAILED, or FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
 
 ## See Also
 <a name="API_LinkRoutingRuleSummary_SeeAlso"></a>

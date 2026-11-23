@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::RouterInput ContentQualityAnalysisFeatureConfiguration
 
-<a name="aws-properties-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-description"></a>The `ContentQualityAnalysisFeatureConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
+Configures the content quality analysis features for the router input.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-syntax"></a>
@@ -40,19 +40,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-properties"></a>
 
 `BlackFrames`  <a name="cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-blackframes"></a>
-Property description not available.
+Settings for black frames detection.
 *Required*: No
 *Type*: [BlackFramesConfiguration](aws-properties-mediaconnect-routerinput-blackframesconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FrozenFrames`  <a name="cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-frozenframes"></a>
-Property description not available.
+Settings for frozen frames detection.
 *Required*: No
 *Type*: [FrozenFramesConfiguration](aws-properties-mediaconnect-routerinput-frozenframesconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SilentAudio`  <a name="cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-silentaudio"></a>
-Property description not available.
+Settings for silent audio detection.
 *Required*: No
 *Type*: [SilentAudioConfiguration](aws-properties-mediaconnect-routerinput-silentaudioconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

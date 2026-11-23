@@ -16,7 +16,7 @@ When a grant is created with the [`GranteeServicePrincipal`](grants.md#terms-gra
 
 For example, the following command lists all of the grants for a KMS key.
 
-```
+```bash
 $  aws kms list-grants --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 {
     "Grants": [
@@ -43,7 +43,7 @@ $  aws kms list-grants --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 
 The following example shows a `ListGrants` response for a grant created with `GranteeServicePrincipal`. Notice that the response includes a `GranteeServicePrincipal` field instead of `GranteePrincipal`, and the `Constraints` field contains a `SourceArn` value.
 
-```
+```bash
 $  aws kms list-grants --key-id 1234abcd-12ab-34cd-56ef-1234567890ab
 {
     "Grants": [

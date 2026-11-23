@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Updates the status of the cluster compute fleet.
 
-```
+```sh
 pcluster update-compute-fleet [-h]
                  --cluster-name {{CLUSTER_NAME}}
                  --status {START_REQUESTED,STOP_REQUESTED,ENABLED,DISABLED}

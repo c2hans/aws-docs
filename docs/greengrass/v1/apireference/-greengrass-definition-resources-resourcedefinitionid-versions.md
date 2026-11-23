@@ -24,7 +24,7 @@ Produces: application/json
 Information about the resource definition version.
 where used: body; required: true
 
-```
+```json
 {
 "Resources": [
   {
@@ -197,7 +197,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-resources-resourcedefinitionid-versions-post-cli"></a>
 
-```
+```bash
 aws greengrass create-resource-definition-version \
   --resource-definition-id <value> \
   [--resources <value>] \
@@ -208,7 +208,7 @@ aws greengrass create-resource-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceDefinitionId": "string",
 "Resources": [
@@ -268,7 +268,7 @@ cli-input-json format:
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -296,7 +296,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -363,7 +363,7 @@ type: integer
 ### CLI
 <a name="-greengrass-definition-resources-resourcedefinitionid-versions-get-cli"></a>
 
-```
+```bash
 aws greengrass list-resource-definition-versions \
   --resource-definition-id <value> \
   [--next-token <value>] \
@@ -374,7 +374,7 @@ aws greengrass list-resource-definition-versions \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceDefinitionId": "string",
 "NextToken": "string",
@@ -389,7 +389,7 @@ cli-input-json format:
 
  [ ListVersionsResponse](definitions-listversionsresponse.md)
 
-```
+```json
 {
 "Versions": [
   {
@@ -432,7 +432,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

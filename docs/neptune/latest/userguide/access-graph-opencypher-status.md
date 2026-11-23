@@ -51,17 +51,17 @@ You can use the HTTP `GET` and `POST` methods to get current status from the ser
 #### [ AWS CLI ]
 
   ```
-  aws neptunedata get-open-cypher-query-status \
+  aws neptunedata list-open-cypher-queries \
     --endpoint-url https://{{your-neptune-endpoint}}:{{port}} \
     --include-waiting
   ```
 
-  For more information, see [get-open-cypher-query-status](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/get-open-cypher-query-status.html) in the AWS CLI Command Reference.
+  For more information, see [list-open-cypher-queries](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/list-open-cypher-queries.html) in the AWS CLI Command Reference.
 
 ------
 #### [ SDK ]
 
-  ```
+  ```python
   import boto3
   from botocore.config import Config
 
@@ -71,7 +71,7 @@ You can use the HTTP `GET` and `POST` methods to get current status from the ser
       config=Config(read_timeout=None, retries={'total_max_attempts': 1})
   )
 
-  response = client.get_open_cypher_query_status(
+  response = client.list_open_cypher_queries(
       includeWaiting=True
   )
 
@@ -91,8 +91,7 @@ You can use the HTTP `GET` and `POST` methods to get current status from the ser
     -d "includeWaiting=true"
   ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -102,11 +101,13 @@ This example assumes that your AWS credentials are configured in your environmen
     --data-urlencode "includeWaiting=true"
   ```
 
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
   *Response:*
 
-  ```
+  ```json
   {
     "acceptedQueryCount" : 0,
     "runningQueryCount" : 0,
@@ -119,16 +120,16 @@ This example assumes that your AWS credentials are configured in your environmen
 #### [ AWS CLI ]
 
   ```
-  aws neptunedata get-open-cypher-query-status \
+  aws neptunedata list-open-cypher-queries \
     --endpoint-url https://{{your-neptune-endpoint}}:{{port}}
   ```
 
-  For more information, see [get-open-cypher-query-status](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/get-open-cypher-query-status.html) in the AWS CLI Command Reference.
+  For more information, see [list-open-cypher-queries](https://docs.aws.amazon.com/cli/latest/reference/neptunedata/list-open-cypher-queries.html) in the AWS CLI Command Reference.
 
 ------
 #### [ SDK ]
 
-  ```
+  ```python
   import boto3
   from botocore.config import Config
 
@@ -138,7 +139,7 @@ This example assumes that your AWS credentials are configured in your environmen
       config=Config(read_timeout=None, retries={'total_max_attempts': 1})
   )
 
-  response = client.get_open_cypher_query_status()
+  response = client.list_open_cypher_queries()
 
   print(response)
   ```
@@ -154,8 +155,7 @@ This example assumes that your AWS credentials are configured in your environmen
     --service neptune-db
   ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -164,11 +164,13 @@ This example assumes that your AWS credentials are configured in your environmen
   curl https://{{your-neptune-endpoint}}:{{port}}/openCypher/status
   ```
 
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
   *Response:*
 
-  ```
+  ```json
   {
     "acceptedQueryCount" : 0,
     "runningQueryCount" : 0,
@@ -191,7 +193,7 @@ This example assumes that your AWS credentials are configured in your environmen
 ------
 #### [ SDK ]
 
-  ```
+  ```python
   import boto3
   from botocore.config import Config
 
@@ -221,8 +223,7 @@ This example assumes that your AWS credentials are configured in your environmen
     -d "queryId={{eadc6eea-698b-4a2f-8554-5270ab17ebee}}"
   ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -232,11 +233,13 @@ This example assumes that your AWS credentials are configured in your environmen
     --data-urlencode "queryId={{eadc6eea-698b-4a2f-8554-5270ab17ebee}}"
   ```
 
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
   *Response:*
 
-  ```
+  ```json
   {
     "queryId" : "eadc6eea-698b-4a2f-8554-5270ab17ebee",
     "queryString" : "MATCH (n1)-[:knows]->(n2), (n2)-[:knows]->(n3), (n3)-[:knows]->(n4), (n4)-[:knows]->(n5), (n5)-[:knows]->(n6), (n6)-[:knows]->(n7), (n7)-[:knows]->(n8), (n8)-[:knows]->(n9), (n9)-[:knows]->(n10) RETURN COUNT(n1);",
@@ -263,7 +266,7 @@ This example assumes that your AWS credentials are configured in your environmen
 ------
 #### [ SDK ]
 
-  ```
+  ```python
   import boto3
   from botocore.config import Config
 
@@ -293,8 +296,7 @@ This example assumes that your AWS credentials are configured in your environmen
     -d "cancelQuery&queryId={{f43ce17b-db01-4d37-a074-c76d1c26d7a9}}"
   ```
 
-**Note**
-This example assumes that your AWS credentials are configured in your environment. Replace {{us-east-1}} with the Region of your Neptune cluster.
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
 
 ------
 #### [ curl ]
@@ -322,11 +324,13 @@ This example assumes that your AWS credentials are configured in your environmen
     "https://{{your-neptune-endpoint}}:{{port}}/openCypher/status?queryId={{b9a516d1-d25c-4301-bb80-10b2743ecf0e}}"
   ```
 
+  To connect to a cluster that has IAM authentication enabled, each request must be signed. See [Connecting from the command line](iam-auth-connect-command-line.md).
+
 ------
 
   *Response:*
 
-  ```
+  ```json
   {
     "status" : "200 OK",
     "payload" : true

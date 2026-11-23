@@ -30,7 +30,7 @@ The following code example shows how to get started using Support.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -89,7 +89,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class SupportCasesScenario:
     """Runs an interactive scenario that shows how to get started using AWS Support."""
 
@@ -308,7 +308,7 @@ if __name__ == "__main__":
 ```
 Define a class that wraps support client actions.
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -629,7 +629,7 @@ The following code example shows how to use `AddAttachmentsToSet`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -690,7 +690,7 @@ The following code example shows how to use `AddCommunicationToCase`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -746,7 +746,7 @@ The following code example shows how to use `CreateCase`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -811,7 +811,7 @@ The following code example shows how to use `DescribeAttachment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -868,7 +868,7 @@ The following code example shows how to use `DescribeCases`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -936,7 +936,7 @@ The following code example shows how to use `DescribeCommunications`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -993,7 +993,7 @@ The following code example shows how to use `DescribeServices`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -1050,7 +1050,7 @@ The following code example shows how to use `DescribeSeverityLevels`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 
@@ -1107,7 +1107,7 @@ The following code example shows how to use `ResolveCase`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 

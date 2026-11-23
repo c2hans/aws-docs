@@ -66,7 +66,7 @@ Enable CORS by returning correct headers.
 #### Channel schema
 <a name="channels-id-credentials-response-body-channel-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "ingressAccessLogs": {

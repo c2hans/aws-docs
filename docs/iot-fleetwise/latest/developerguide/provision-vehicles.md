@@ -20,7 +20,7 @@ You can create AWS IoT Core policies to authenticate your vehicles.
   + Replace {{policy-name}} with the name of the policy that you want to create.
   + Replace {{file-name}} with the name of the JSON file that contains the AWS IoT Core policy.
 
-  ```
+  ```bash
   aws iot create-policy --policy-name {{policy-name}} --policy-document file://{{file-name}}.json
   ```
 
@@ -38,7 +38,7 @@ This example includes topics reserved by AWS IoT FleetWise. You must add the top
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ We recommend that you create a new certificate for each vehicle.
    + Replace {{public-key}} with the name of the file that saves the command output contents of keyPair.PublicKey.
    + Replace {{private-key}} with the name of the file that saves the command output contents of keyPair.PrivateKey.
 
-   ```
+   ```bash
    aws iot create-keys-and-certificate \
        --set-as-active \
        --certificate-pem-outfile {{cert}}.pem \
@@ -115,7 +115,7 @@ We recommend that you create a new certificate for each vehicle.
    + Replace {{policy-name}} with the name of the AWS IoT Core policy that you created.
    + Replace {{certificate-arn}} with the ARN of the certificate that you copied.
 
-   ```
+   ```bash
    aws iot attach-policy \
        --policy-name {{policy-name}}\
        --target "{{certificate-arn}}"
@@ -125,7 +125,7 @@ We recommend that you create a new certificate for each vehicle.
    + Replace {{thing-name}} with the name of your AWS IoT thing or the ID of your vehicle.
    + Replace {{certificate-arn}} with the ARN of the certificate that you copied.
 
-   ```
+   ```bash
    aws iot attach-thing-principal \
        --thing-name {{thing-name}} \
        --principal "{{certificate-arn}}"

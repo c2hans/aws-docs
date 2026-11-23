@@ -25,7 +25,7 @@ Filters, `output` blocks, `${…​}` variables, and `$temp` values work the sam
    +  **Role name** must start with `SpatialDataManagementContentPublisher-` (for example, `SpatialDataManagementContentPublisher-MyRestConnector`).
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -47,7 +47,7 @@ Filters, `output` blocks, `${…​}` variables, and `$temp` values work the sam
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -60,7 +60,7 @@ Filters, `output` blocks, `${…​}` variables, and `$temp` values work the sam
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant access to the Secrets Manager secret (if using API key, token, or basic auth):
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -102,7 +102,7 @@ The REST API connector supports the following step type.
 ## Configuration
 <a name="rest-configuration"></a>
 
-```
+```json
 {
   "restConfig": {
     "apiBase": "https://api.example.com/v1",
@@ -212,7 +212,7 @@ When a REST `POST` or `PUT` step creates or updates a record in an external syst
 
 Use `responseFieldMapping` in the step to control which response field SDMA captures and what name SDMA stores it under:
 
-```
+```json
 {
   "method": "POST",
   "path": "/records",
@@ -234,7 +234,7 @@ In the full configuration example above, the `POST /records` step creates a reco
 
 The `bodyFromFile` step field sends binary file content directly as the HTTP request body instead of a JSON payload constructed from field mappings. Use this when an external API expects the raw file content — for example, uploading a derived file to a third-party system.
 
-```
+```json
 {
   "stepType": "rest",
   "method": "PUT",
@@ -254,7 +254,7 @@ When `bodyFromFile` is present, SDMA reads the file content from the asset’s c
 
 The `body` step field provides a JSON body template with `${variable}` references that SDMA resolves at execution time. Use this when the request body structure differs from what field mappings produce. For example, use `body` when the external API expects a specific JSON shape with nested objects or when you need to include values from `$temp.*` variables set by previous steps.
 
-```
+```json
 {
   "method": "POST",
   "path": "/v1/jobs",
@@ -284,7 +284,7 @@ SDMA determines the AWS service name for signing from the endpoint hostname:
 + Hostnames containing `bedrock` → signed as `bedrock`
 + All other hostnames → signed as `execute-api` (suitable for Amazon API Gateway endpoints)
 
-```
+```json
 {
   "restConfig": {
     "apiBase": "https://runtime.sagemaker.us-west-2.amazonaws.com",
@@ -303,7 +303,7 @@ The assumed role must have permissions to invoke the target AWS service endpoint
 
 Some REST APIs require a session handshake before accepting requests. The `restConfig.initialize` block configures this. When present, SDMA sends a POST request to the specified endpoint before the first step executes and captures a session token from the response to include in all subsequent requests.
 
-```
+```json
 "restConfig": {
   "apiBase": "https://api.example.com",
   "initialize": {
@@ -327,7 +327,7 @@ Session initialization runs once per connector invocation. If initialization fai
 
 The `restConfig.sampling` block enables SDMA to respond to text-generation callbacks from external APIs that support this pattern. When configured, SDMA invokes a configured provider to generate a response and returns it to the external API before continuing with the connector step.
 
-```
+```json
 "restConfig": {
   "sampling": {
     "modelId": "abcd-20240307-v1:0",

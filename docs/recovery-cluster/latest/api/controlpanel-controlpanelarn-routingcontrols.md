@@ -67,7 +67,7 @@ Returns an array of routing controls for a control panel. A routing control is a
 #### ListRoutingControlsResponse schema
 <a name="controlpanel-controlpanelarn-routingcontrols-response-body-listroutingcontrolsresponse-example"></a>
 
-```
+```json
 {
   "NextToken": "string",
   "RoutingControls": [
@@ -85,7 +85,7 @@ Returns an array of routing controls for a control panel. A routing control is a
 #### ValidationException schema
 <a name="controlpanel-controlpanelarn-routingcontrols-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -94,7 +94,7 @@ Returns an array of routing controls for a control panel. A routing control is a
 #### AccessDeniedException schema
 <a name="controlpanel-controlpanelarn-routingcontrols-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ Returns an array of routing controls for a control panel. A routing control is a
 #### ResourceNotFoundException schema
 <a name="controlpanel-controlpanelarn-routingcontrols-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ Returns an array of routing controls for a control panel. A routing control is a
 #### ThrottlingException schema
 <a name="controlpanel-controlpanelarn-routingcontrols-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ Returns an array of routing controls for a control panel. A routing control is a
 #### InternalServerException schema
 <a name="controlpanel-controlpanelarn-routingcontrols-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

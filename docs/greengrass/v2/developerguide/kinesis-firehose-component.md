@@ -57,7 +57,7 @@ This component has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ This component has the following requirements:
 ------
 #### [ Legacy subscription router v2.1.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-kinesisfirehose": {
@@ -99,7 +99,7 @@ This component has the following requirements:
 ------
 #### [ Legacy subscription router v2.0.x ]
 
-  ```
+  ```json
   {
     "subscriptions": {
       "aws-greengrass-kinesisfirehose": {
@@ -385,7 +385,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (container mode)**
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -398,7 +398,7 @@ Default: `PUB_SUB`
 
 **Example: Configuration merge update (no container mode)**
 
-```
+```json
 {
   "lambdaExecutionParameters": {
     "EnvironmentVariables": {
@@ -433,7 +433,7 @@ Type: `string`
 
 **Example input**
 
-```
+```json
 {
   "request": {
     "delivery_stream_arn": "arn:aws:firehose:{{region}}:{{account-id}}:deliverystream/stream2-name",
@@ -458,7 +458,7 @@ If you don't want to map a request to a response, you can publish your messages 
 **Example output**
 The response contains the status of each data record sent in the batch.
 
-```
+```json
 {
   "response": [
     {
@@ -496,7 +496,7 @@ This component uses the following log file.
 **To view this component's logs**
 + Run the following command on the core device to view this component's log file in real time. Replace `{{/greengrass/v2}}` with the path to the AWS IoT Greengrass root folder.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.KinesisFirehose.log
   ```
 

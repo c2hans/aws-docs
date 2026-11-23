@@ -46,7 +46,7 @@ Additionally, depending on the issues you face, the following metrics can provid
 
 You can enable `INFO`-level browser logs by passing `LogLevel.INFO` to the `ConsoleLogger` object.
 
-```
+```javascript
 const logger = new ConsoleLogger('MyLogger', LogLevel.INFO);const meetingSession = new DefaultMeetingSession(configuration,logger,deviceController);
 ```
 

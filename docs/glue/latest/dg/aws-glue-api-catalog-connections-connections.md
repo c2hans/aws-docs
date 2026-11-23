@@ -380,7 +380,7 @@ A structure containing properties for OAuth2 authentication.
 A structure containing properties for OAuth2 in the CreateConnection request.
 
 **Fields**
-+ `OAuth2GrantType` – UTF-8 string (valid values: `AUTHORIZATION_CODE` \| `CLIENT_CREDENTIALS` \| `JWT_BEARER`).
++ `OAuth2GrantType` – UTF-8 string (valid values: `AUTHORIZATION_CODE` \| `CLIENT_CREDENTIALS` \| `JWT_BEARER` \| `REFRESH_TOKEN`).
 
   The OAuth2 grant type in the CreateConnection request. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, or `CLIENT_CREDENTIALS`.
 + `OAuth2ClientApplication` – An [OAuth2ClientApplication](#aws-glue-api-catalog-connections-connections-OAuth2ClientApplication) object.

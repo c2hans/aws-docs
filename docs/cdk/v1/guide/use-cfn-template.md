@@ -71,7 +71,7 @@ dotnet add package Amazon.CDK.CloudFormation.Include
 **Tip**
 You can use either a JSON or YAML template. We recommend JSON if available, since YAML parsers can vary slightly in what they accept.
 
-```
+```json
 {
   "Resources": {
     "MyBucket": {
@@ -89,7 +89,7 @@ And here's how you import it into your stack using `cloudformation-include`.
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import * as cfninc from '@aws-cdk/cloudformation-include';
 
@@ -107,7 +107,7 @@ export class MyStack extends cdk.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const cfninc = require('@aws-cdk/cloudformation-include');
 
@@ -127,7 +127,7 @@ module.exports = { MyStack }
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk import core
 from aws_cdk import cloudformation_include as cfn_inc
 
@@ -143,7 +143,7 @@ class MyStack(core.Stack):
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.core.Construct;
 import software.amazon.awscdk.core.Stack;
 import software.amazon.awscdk.core.StackProps;
@@ -167,7 +167,7 @@ public class MyStack extends Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 using cfnInc = Amazon.CDK.CloudFormation.Include;
 
@@ -195,7 +195,7 @@ If you are instead developing an AWS CDK construct wrapper for the template so i
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const template = new cfninc.CfnInclude(this, 'MyConstruct', {
   templateFile: 'my-template.json',
   preserveLogicalIds: false
@@ -205,7 +205,7 @@ const template = new cfninc.CfnInclude(this, 'MyConstruct', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const template = new cfninc.CfnInclude(this, 'MyConstruct', {
   templateFile: 'my-template.json',
   preserveLogicalIds: false
@@ -215,7 +215,7 @@ const template = new cfninc.CfnInclude(this, 'MyConstruct', {
 ------
 #### [ Python ]
 
-```
+```python
 template = cfn_inc.CfnInclude(self, "Template",
     template_file="my-template.json",
     preserve_logical_ids=False)
@@ -224,7 +224,7 @@ template = cfn_inc.CfnInclude(self, "Template",
 ------
 #### [ Java ]
 
-```
+```java
 CfnInclude template = CfnInclude.Builder.create(this, "Template")
 	.templateFile("my-template.json")
 	.preserveLogicalIds(false)
@@ -234,7 +234,7 @@ CfnInclude template = CfnInclude.Builder.create(this, "Template")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var template = new cfnInc.CfnInclude(this, "Template", new cfn_inc.CfnIncludeProps
 {
     TemplateFile = "my-template.json",
@@ -249,7 +249,7 @@ To put the imported resources under the control of your AWS CDK app, add the sta
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 import * as cdk from '@aws-cdk/core';
 import { MyStack } from '../lib/my-stack';
 
@@ -260,7 +260,7 @@ new MyStack(app, 'MyStack');
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cdk = require('@aws-cdk/core');
 const { MyStack } = require('../lib/my-stack');
 
@@ -271,7 +271,7 @@ new MyStack(app, 'MyStack');
 ------
 #### [ Python ]
 
-```
+```python
 from aws_cdk import core
 from mystack.my_stack import MyStack
 
@@ -282,7 +282,7 @@ MyStack(app, "MyStack")
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awscdk.core.App;
 
 public class MyApp {
@@ -297,7 +297,7 @@ public class MyApp {
 ------
 #### [ C\# ]
 
-```
+```csharp
 using Amazon.CDK;
 
 namespace CdkApp
@@ -331,35 +331,35 @@ The name `template` in the example code represents the imported CloudFormation t
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const cfnBucket = template.getResource('MyBucket') as s3.CfnBucket;
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const cfnBucket = template.getResource('MyBucket');
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 cfn_bucket = template.get_resource("MyBucket")
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 CfnBucket cfnBucket = (CfnBucket)template.getResource("MyBucket");
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 var cfnBucket = (CfnBucket)template.GetResource("MyBucket");
 ```
 
@@ -372,35 +372,35 @@ To wrap the L1 `CfnBucket` resource in a L2 [`aws-s3.Bucket`](https://docs.aws.a
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const bucket = s3.Bucket.fromBucketName(this, 'Bucket', cfnBucket.ref);
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const bucket = s3.Bucket.fromBucketName(this, 'Bucket', cfnBucket.ref);
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 bucket = s3.Bucket.from_bucket_name(self, "Bucket", cfn_bucket.ref)
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 Bucket bucket = (Bucket)Bucket.fromBucketName(this, "Bucket", cfnBucket.getRef());
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 var bucket = (Bucket)Bucket.FromBucketName(this, "Bucket", cfnBucket.Ref);
 ```
 
@@ -415,35 +415,35 @@ In the example, `bucket` is now an L2 `Bucket` construct that you can use as you
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 bucket.grantWrite(lambdaFunc);
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 bucket.grantWrite(lambdaFunc);
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 bucket.grant_write(lambda_func)
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 bucket.grantWrite(lambdaFunc);
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 bucket.GrantWrite(lambdaFunc);
 ```
 
@@ -457,7 +457,7 @@ If your included CloudFormation template has parameters, you can replace these w
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const template = new cfninc.CfnInclude(this, 'Template', {
   templateFile: 'my-template.json',
   parameters: {
@@ -469,7 +469,7 @@ const template = new cfninc.CfnInclude(this, 'Template', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const template = new cfninc.CfnInclude(this, 'Template', {
   templateFile: 'my-template.json',
   parameters: {
@@ -481,7 +481,7 @@ const template = new cfninc.CfnInclude(this, 'Template', {
 ------
 #### [ Python ]
 
-```
+```python
 template = cfn_inc.CfnInclude(self, "Template",
     template_file="my-template.json",
     parameters=dict(UploadBucket=bucket.bucket_arn)
@@ -491,7 +491,7 @@ template = cfn_inc.CfnInclude(self, "Template",
 ------
 #### [ Java ]
 
-```
+```java
 CfnInclude template = CfnInclude.Builder.create(this, "Template")
 	.templateFile("my-template.json")
 	.parameters(java.util.Map.of(    // Map.of requires Java 9+
@@ -502,7 +502,7 @@ CfnInclude template = CfnInclude.Builder.create(this, "Template")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var template = new cfnInc.CfnInclude(this, "Template", new cfnInc.CfnIncludeProps
 {
     TemplateFile = "my-template.json",
@@ -531,7 +531,7 @@ Each of these methods returns an instance of a class representing the specific t
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const param = template.getParameter('MyParameter');
 param.default = "AWS CDK"
 ```
@@ -539,7 +539,7 @@ param.default = "AWS CDK"
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const param = template.getParameter('MyParameter');
 param.default = "AWS CDK"
 ```
@@ -547,7 +547,7 @@ param.default = "AWS CDK"
 ------
 #### [ Python ]
 
-```
+```python
 param = template.get_parameter("MyParameter")
 param.default = "AWS CDK"
 ```
@@ -555,7 +555,7 @@ param.default = "AWS CDK"
 ------
 #### [ Java ]
 
-```
+```java
 CfnParameter param = template.getParameter("MyParameter");
 param.setDefaultValue("AWS CDK")
 ```
@@ -563,7 +563,7 @@ param.setDefaultValue("AWS CDK")
 ------
 #### [ C\# ]
 
-```
+```csharp
 var cfnBucket = (CfnBucket)template.GetResource("MyBucket");
 var param = template.GetParameter("MyParameter");
 param.Default = "AWS CDK";
@@ -578,7 +578,7 @@ You may import [nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/lat
 
 Given this resource definition in the main template, the following code shows how to import the referenced nested stack both ways.
 
-```
+```json
 "NestedStack": {
   "Type": "AWS::CloudFormation::Stack",
   "Properties": {
@@ -589,7 +589,7 @@ Given this resource definition in the main template, the following code shows ho
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 // include nested stack when importing main stack
 const mainTemplate = new cfninc.CfnInclude(this, 'MainStack', {
   templateFile: 'main-template.json',
@@ -609,7 +609,7 @@ const nestedTemplate = mainTemplate.loadNestedStack('NestedTemplate', {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 // include nested stack when importing main stack
 const mainTemplate = new cfninc.CfnInclude(this, 'MainStack', {
   templateFile: 'main-template.json',
@@ -629,7 +629,7 @@ const nestedTemplate = mainTemplate.loadNestedStack('NestedStack', {
 ------
 #### [ Python ]
 
-```
+```python
 # include nested stack when importing main stack
 main_template = cfn_inc.CfnInclude(self, "MainStack",
     template_file="main-template.json",
@@ -644,7 +644,7 @@ nested_template = main_template.load_nested_stack("NestedStack",
 ------
 #### [ Java ]
 
-```
+```java
 CfnInclude mainTemplate = CfnInclude.Builder.create(this, "MainStack")
 	.templateFile("main-template.json")
 	.loadNestedStacks(java.util.Map.of(    // Map.of requires Java 9+
@@ -661,7 +661,7 @@ IncludedNestedStack nestedTemplate = mainTemplate.loadNestedStack("NestedTemplat
 ------
 #### [ C\# ]
 
-```
+```csharp
 // include nested stack when importing main stack
 var mainTemplate = new cfnInc.CfnInclude(this, "MainStack", new cfnInc.CfnIncludeProps
 {
@@ -687,35 +687,35 @@ After importing a nested stack, you can access it using the main template's [`ge
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 const nestedStack = mainTemplate.getNestedStack('NestedStack').stack;
 ```
 
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const nestedStack = mainTemplate.getNestedStack('NestedStack').stack;
 ```
 
 ------
 #### [ Python ]
 
-```
+```python
 nested_stack = main_template.get_nested_stack("NestedStack").stack
 ```
 
 ------
 #### [ Java ]
 
-```
+```java
 NestedStack nestedStack = mainTemplate.getNestedStack("NestedStack").getStack();
 ```
 
 ------
 #### [ C\# ]
 
-```
+```csharp
 var nestedStack = mainTemplate.GetNestedStack("NestedStack").Stack;
 ```
 

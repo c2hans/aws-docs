@@ -79,7 +79,7 @@ We recommend that you *don't* run PowerShell as an administrator with elevated p
 
 1. You can now install the module for each service that you want to use. For example, the following command installs the Amazon EC2 and Amazon S3 modules. This command also installs any dependent modules that are required for the specified module to work. For example, when you install your first `AWS.Tools` service module, it also installs `AWS.Tools.Common`. This is a shared module required by all AWS service modules. It also removes older versions of the modules, and updates other modules to the same newer version.
 
-   ```
+   ```ps
    PS > Install-AWSToolsModule AWS.Tools.EC2,AWS.Tools.S3 -CleanUp
    Confirm
    Are you sure you want to perform this action?
@@ -103,7 +103,7 @@ The `Install-AWSToolsModule` cmdlet downloads all requested modules from the `PS
 
    The previous command installs modules into the default directories on your system. The actual directories depend on your operating system distribution and version and on the version of PowerShell you installed. For example, if you installed PowerShell 7 on a RHEL-like system, the default modules are most likely located in `/opt/microsoft/powershell/7/Modules` (or `$PSHOME/Modules`) and user modules are most likely located in `~/.local/share/powershell/Modules`. For more information, see [Install PowerShell on Linux](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux) on the Microsoft PowerShell website. To see where modules are installed, run the following command:
 
-   ```
+   ```ps
    PS > Get-Module -ListAvailable
    ```
 

@@ -12,7 +12,7 @@ The Wickr IO Node.js Bot API is published to the default NPM registry. The name 
 
 You will need to have a require() statement to include the Wickr Node.js Bot API in your integration. Also, since the Wickr IO addon is required you will need to have a require() statement for it as well. For example:
 
-```
+```javascript
 var addon = require('wickrio_addon');
 var botapi = require('wickrio-bot-api');
 ```
@@ -24,7 +24,7 @@ If you use this API you will not need to call these addon APIs. This API will re
 + client\_username(REQUIRED) - The string user name of the Wickr IO client that is going to be used.
 **Example:**
 
-```
+```javascript
 var result = botapi.start(process.argv[2]);
 if (result === true) {
   console.log("Client started successfully");
@@ -44,7 +44,7 @@ close()
 This API will close the currently open connection to the Wickr IO client. This should be called when done interacting with the client set up by the start() API.
 **Example:**
 
-```
+```javascript
 process.on('SIGINT', function() {
   console.log("Received SIGINT. Graceful shutdown ...");
   botapi.close();

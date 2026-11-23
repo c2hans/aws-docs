@@ -160,7 +160,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-standard-stack-remove-stack-resources-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-HandleRemoveStackResources-Admin",
   "Region": "us-east-1",
@@ -174,7 +174,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-standard-stack-remove-stack-resources-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-HandleRemoveStackResources-Admin",
   "Region": "us-east-1",

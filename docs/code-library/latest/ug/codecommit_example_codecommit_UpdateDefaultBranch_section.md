@@ -30,7 +30,7 @@ For more information, see [Change branch settings in AWS CodeCommit](https://doc
 **Tools for PowerShell V4**
 **Example 1: This example changes the default branch for the specified repository to the specified branch.**
 
-```
+```powershell
 Update-CCDefaultBranch -RepositoryName MyDemoRepo -DefaultBranchName MyNewBranch
 ```
 +  For API details, see [UpdateDefaultBranch](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -38,7 +38,7 @@ Update-CCDefaultBranch -RepositoryName MyDemoRepo -DefaultBranchName MyNewBranch
 **Tools for PowerShell V5**
 **Example 1: This example changes the default branch for the specified repository to the specified branch.**
 
-```
+```powershell
 Update-CCDefaultBranch -RepositoryName MyDemoRepo -DefaultBranchName MyNewBranch
 ```
 +  For API details, see [UpdateDefaultBranch](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

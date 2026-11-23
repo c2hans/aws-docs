@@ -33,7 +33,7 @@ The third key, `modelResponses` contains a list of JSON objects which contains t
 
 The following is an example output for the text summarization task type with only one metric, accuracy, selected.
 
-```
+```json
 {
 "automatedEvaluationResult": {
     "scores": [{
@@ -69,7 +69,7 @@ When a model evaluation job has completed, you see the following parameters in t
 
 <a name="code-sample-model-eval"></a>The following is an example of output data from a model evaluation job.
 
-```
+```json
 {
 "humanEvaluationResult": [{
     "flowDefinitionArn": "arn:aws:sagemaker:us-west-2:111122223333:flow-definition/flow-definition-name",

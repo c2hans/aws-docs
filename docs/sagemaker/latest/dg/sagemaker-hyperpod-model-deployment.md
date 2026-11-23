@@ -71,4 +71,5 @@ We collect certain routine operational metrics to provide essential service avai
 + [KV caching and intelligent routing](sagemaker-hyperpod-model-deployment-caching-routing.md)
 + [Deploy models with Managed NVIDIA Dynamo on HyperPod](sagemaker-hyperpod-model-deployment-dynamo.md)
 + [Inference Gateway for Amazon SageMaker HyperPod Inference](sagemaker-hyperpod-model-deployment-inference-gateway.md)
++ [Global Inference Gateway for Amazon SageMaker HyperPod Inference](sagemaker-hyperpod-model-deployment-global-inference-gateway.md)
 + [Amazon SageMaker HyperPod Inference release notes](sagemaker-hyperpod-inference-release-notes.md)

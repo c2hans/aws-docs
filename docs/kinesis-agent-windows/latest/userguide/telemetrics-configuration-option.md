@@ -15,7 +15,7 @@ You can opt out of the collection and transmission of these statistics. To do th
 
 For example, the following configuration file configures a source, sink, and pipe, and also disables telemetrics:
 
-```
+```json
 {
   "Sources": [
     {

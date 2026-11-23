@@ -48,7 +48,7 @@ First, create a new Amazon VPC that the owner and participant accounts will shar
 
 1. Sign in to the console using `Owner`, then, open the CloudFormation console. Use the following template to create a stack. This stack provisions a number of networking resources including a Amazon VPC, and the subnets that the two accounts will share in this scenario.
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
    Description: This template deploys a VPC, with a pair of public and private subnets spread across two Availability Zones. It deploys an internet gateway, with a default route on the public subnets. It deploys a pair of NAT gateways (one in each AZ), and default routes for them in the private subnets.
    Parameters:

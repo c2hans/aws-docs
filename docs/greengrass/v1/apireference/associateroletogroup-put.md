@@ -13,7 +13,7 @@ URI: `PUT /greengrass/groups/{{GroupId}}/role`
 ## CLI:
 <a name="associateroletogroup-put-cli"></a>
 
-```
+```bash
 aws greengrass associate-role-to-group \
   --group-id <value> \
   [--role-arn <value>]  \
@@ -23,7 +23,7 @@ aws greengrass associate-role-to-group \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "RoleArn": "string"
@@ -42,7 +42,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "RoleArn": "string"
 }
@@ -62,7 +62,7 @@ type: string
 Success.
  [ AssociateRoleToGroupResponse](definitions-associateroletogroupresponse.md)
 
-```
+```json
 {
 "AssociatedAt": "string"
 }
@@ -77,7 +77,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -113,7 +113,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

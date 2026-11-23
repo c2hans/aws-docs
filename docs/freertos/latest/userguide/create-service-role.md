@@ -56,7 +56,7 @@ To address the confused deputy security issue, you must follow instructions in t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -98,7 +98,7 @@ The following procedure isn't required if your Amazon S3 bucket name begins with
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

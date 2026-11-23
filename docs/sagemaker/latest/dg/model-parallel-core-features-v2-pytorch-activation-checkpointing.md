@@ -10,7 +10,7 @@ SMP v2 supports the PyTorch activation checkpointing module, [`apply_activation_
 
 **Checkpointing Transformer layers of the Hugging Face GPT-NeoX model**
 
-```
+```py
 from transformers.models.gpt_neox import GPTNeoXLayer
 from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
     apply_activation_checkpointing
@@ -27,7 +27,7 @@ apply_activation_checkpointing(model, check_fn=is_transformer_layer)
 
 **Checkpointing every other Transformer layer of the Hugging Face GPT-NeoX model**
 
-```
+```py
 # check_fn receives a module as arg,
 # and it needs to return whether the module is to be checkpointed
 # here we define that function based on global variable (transformer_layers)

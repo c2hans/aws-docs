@@ -103,7 +103,7 @@ The following snippet shows you how to create a Spot Instance request with the e
 
 The example [at the end of this topic](#tutor-spot-net-main) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to create a Spot Instance request
     private static async Task<SpotInstanceRequest> CreateSpotInstanceRequest(
@@ -139,7 +139,7 @@ The following snippet shows you how to get information about your Spot Instance 
 
 The example [at the end of this topic](#tutor-spot-net-main) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to get information about a Spot Instance request, including the status,
     // instance ID, etc.
@@ -165,7 +165,7 @@ When you no longer need to request Spot Instances, it's important to cancel any 
 
 The example [at the end of this topic](#tutor-spot-net-main) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to cancel a Spot Instance request
     private static async Task CancelSpotInstanceRequest(
@@ -185,7 +185,7 @@ To avoid unnecessary costs, it's important that you terminate any instances that
 
 The example [at the end of this topic](#tutor-spot-net-main) shows this snippet in use.
 
-```
+```csharp
     //
     // Method to terminate a Spot Instance
     private static async Task TerminateSpotInstance(
@@ -258,7 +258,7 @@ Programming elements:
 ### The code
 <a name="w2aac19c15c17c21c43b7b1"></a>
 
-```
+```csharp
 using System;
 using System.Threading;
 using System.Threading.Tasks;

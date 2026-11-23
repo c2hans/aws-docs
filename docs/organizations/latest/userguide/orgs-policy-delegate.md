@@ -70,7 +70,7 @@ You can use the following command to create a delegation policy:
 
   The following example creates a delegation policy.
 
-  ```
+  ```bash
   $ aws organizations put-resource-policy --content
   {
       "Version": "2012-10-17",

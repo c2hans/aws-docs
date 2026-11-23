@@ -10,7 +10,7 @@ If you already have an OpenSearch cluster, you can manually install the plugin o
 
 1.  Use the following command to start your OpenSearch cluster:
 
-   ```
+   ```cmd
    bin/opensearch
    ```
 

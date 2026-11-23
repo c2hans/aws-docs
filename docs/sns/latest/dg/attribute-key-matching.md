@@ -11,20 +11,20 @@ Use the `exists` operator in a filter policy to match incoming messages based on
 
   For example, the following policy property uses the `exists` operator with a value of `true`:
 
-  ```
+  ```json
   "store": [{"exists": true}]
   ```
 
   It matches any list of message attributes that contains the `store` attribute key, such as the following:
 
-  ```
+  ```json
   "store": {"Type": "String", "Value": "fans"}
   "customer_interests": {"Type": "String.Array", "Value": "[\"baseball\", \"basketball\"]"}
   ```
 
   It also matches either of the following message body:
 
-  ```
+  ```json
   {
       "store": "fans"
       "customer_interests": ["baseball", "basketball"]
@@ -33,13 +33,13 @@ Use the `exists` operator in a filter policy to match incoming messages based on
 
   However, it doesn't match any list of message attributes *without* the `store` attribute key, such as the following:
 
-  ```
+  ```json
   "customer_interests": {"Type": "String.Array", "Value": "[\"baseball\", \"basketball\"]"}
   ```
 
   Nor does it match the following message body:
 
-  ```
+  ```json
   {
       "customer_interests": ["baseball", "basketball"]
   }
@@ -50,20 +50,20 @@ Use the `exists` operator in a filter policy to match incoming messages based on
 
   For example, the following policy property uses the `exists` operator with a value of `false`:
 
-  ```
+  ```json
   "store": [{"exists": false}]
   ```
 
   It *doesn't* match any list of message attributes that contains the `store` attribute key, such as the following:
 
-  ```
+  ```json
   "store": {"Type": "String", "Value": "fans"}
   "customer_interests": {"Type": "String.Array", "Value": "[\"baseball\", \"basketball\"]"}
   ```
 
   It also doesn’t match the following message body:
 
-  ```
+  ```json
   {
       "store": "fans"
       "customer_interests": ["baseball", "basketball"]
@@ -72,13 +72,13 @@ Use the `exists` operator in a filter policy to match incoming messages based on
 
   However, it matches any list of message attributes *without* the `store` attribute key, such as the following:
 
-  ```
+  ```json
   "customer_interests": {"Type": "String.Array", "Value": "[\"baseball\", \"basketball\"]"}
   ```
 
   It also matches the following message body:
 
-  ```
+  ```json
   {
       "customer_interests": ["baseball", "basketball"]
   }

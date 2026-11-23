@@ -33,7 +33,7 @@ If *geom* is null, then null is returned.
 
 The following SQL checks if the specified linestring is simple. In this example, it isn't simple because it has self-intersection.
 
-```
+```sql
 SELECT ST_IsSimple(ST_GeomFromText('LINESTRING(0 0,10 0,5 5,5 -5)'));
 ```
 

@@ -94,7 +94,7 @@ Add the `data_mixing` section to your recipe with the appropriate percentage dis
 #### Nova 1.0 Configuration with Data mixing
 <a name="nova-forge-cpt-nova1-config"></a>
 
-```
+```yaml
 run:
   name: "cpt-job-name"             # A descriptive name for your training job
   model_type: "amazon.nova-lite-v1:0:300k"  # Model variant specification, do not change
@@ -173,7 +173,7 @@ data_mixing:
 #### Nova 2.0 Configuration with data mixing
 <a name="nova-forge-cpt-nova2-config"></a>
 
-```
+```yaml
 # Note:
 # This recipe can run on p5.48xlarge
 

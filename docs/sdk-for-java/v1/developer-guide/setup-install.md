@@ -58,7 +58,7 @@ Only the latest version of the complete SDK is provided in pre-built form as a d
 
 1. Build and install the SDK with the following command ([Maven](https://maven.apache.org/) required):
 
-   ```
+   ```java
    mvn clean install -Dgpg.skip=true
    ```
 
@@ -66,7 +66,7 @@ Only the latest version of the complete SDK is provided in pre-built form as a d
 
 1. (Optional) Build the API Reference documentation using the following command:
 
-   ```
+   ```java
    mvn javadoc:javadoc
    ```
 

@@ -27,7 +27,7 @@ Configure the hub SDK log settings by calling the API to set up runtime log conf
 
 **Example sample API Request**
 
-```
+```JSON
 aws iot-managed-integrations put-runtime-log-configuration \
     --managed-thing-id MANAGED_THING_ID \
     --runtime-log-configurations LogLevel=DEBUG,UploadLog=TRUE

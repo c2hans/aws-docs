@@ -26,12 +26,12 @@ To configure test reports for your Appium tests:
 
    Device Farm reads every JUnit XML report that your tests write under `$DEVICEFARM_LOG_DIR`. It does not read reports stored anywhere else. It accepts reports from the JUnit Platform Console Launcher, Maven Surefire, and Gradle. It supports JUnit 5 tests, and JUnit 4 tests that run on the JUnit Vintage engine. The default Appium Java JUnit test spec produces and stores the reports. If you use the default test spec, you don't need to change anything.
 
-   If you replace the default test command in your test spec file, set up the reports in one of the following ways. We recommend Option 1, because it records a start and end time for each test. JUnit XML reports don't include per-test timestamps.
+   If you replace the default test command in your test spec file, set up the reports in one of the following ways. We recommend Option 1, because it records a start and end time for each test. You need the start times to get per-test video. JUnit XML reports don't include per-test timestamps. For more information, see [Per-test video](reports.md#reports-test-insights-video).
 
 Option 1: Console Launcher with open test reporting (recommended)
 In the `test` phase of your test spec file, run the Console Launcher with the report directory and the open test reporting flag. Open test reporting requires JUnit Platform 1.9 or later, with `junit-platform-reporting` on the classpath. The following command runs the tests in a package with open test reporting enabled:
 
-   ```
+   ```bash
    java -cp "$DEVICEFARM_TEST_PACKAGE_PATH/*:$DEVICEFARM_TEST_PACKAGE_PATH/dependency-jars/*" \
      org.junit.platform.console.ConsoleLauncher \
      --config=junit.platform.reporting.open.xml.enabled=true \
@@ -41,9 +41,9 @@ In the `test` phase of your test spec file, run the Console Launcher with the re
 This writes an `open-test-report.xml` file to the report directory. Device Farm uses this file when it contains results.
 
 Option 2: Console Launcher with JUnit XML reports only
-In the `test` phase of your test spec file, run the Console Launcher with the report directory, as in the following command. The test report has durations but no per-test start or end times.
+In the `test` phase of your test spec file, run the Console Launcher with the report directory, as in the following command. The test report has durations but no per-test start or end times, so you don't get per-test video.
 
-   ```
+   ```bash
    java -cp "$DEVICEFARM_TEST_PACKAGE_PATH/*:$DEVICEFARM_TEST_PACKAGE_PATH/dependency-jars/*" \
      org.junit.platform.console.ConsoleLauncher \
      --select-package {{com.example.tests}} \
@@ -54,7 +54,7 @@ Option 3: Maven or Gradle
 The build tool writes its reports to its own directory: `target/surefire-reports` for Maven and `build/test-results/test` for Gradle. Copy the reports into `$DEVICEFARM_LOG_DIR` in the `post_test` phase of your test spec file. Device Farm reads only what that directory contains.
 To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of your test spec file before your build command. The value enables open test reporting and points its output directory at `$DEVICEFARM_LOG_DIR`:
 
-   ```
+   ```yaml
    phases:
      test:
        commands:
@@ -62,16 +62,16 @@ To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of
          - {{your build command}}
    ```
 
-   If Device Farm does not generate a report for your run, see [Test insights](troubleshooting-appium-java-junit.md#troubleshooting-appium-java-junit-insights).
+   If Device Farm does not generate a report for your run, see [Troubleshooting test reports and insights in AWS Device Farm](troubleshooting-test-insights.md).
 
 ------
 #### [ Java (TestNG) ]
 
    TestNG writes its results as an XML report named `testng-results.xml`. Device Farm reads that report to build your test insights, so your tests must write it to `$DEVICEFARM_LOG_DIR`. Device Farm accepts a file named `testng-results.xml`, or any XML file in that directory that has the TestNG root element.
 
-   The default Appium Java TestNG test spec produces and stores this report if you keep the default configuration, so most customers do not need to change anything. If you run TestNG yourself in your test spec file, set its output directory to `$DEVICEFARM_LOG_DIR`, as in the following example:
+   The default Appium Java TestNG test spec produces and stores this report if you keep the default configuration, so most customers do not need to change anything. The report records a start time for each test, so you also get per-test video. If you run TestNG yourself in your test spec file, set its output directory to `$DEVICEFARM_LOG_DIR`, as in the following example:
 
-   ```
+   ```bash
    java org.testng.TestNG -d $DEVICEFARM_LOG_DIR/test-output testng.xml
    ```
 
@@ -83,18 +83,18 @@ To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of
 #### [ Node.JS ]
 
    Device Farm reads the output of a [WebdriverIO](https://webdriver.io/) reporter. If you run your tests with WebdriverIO, enable one of the following reporters:
-   + [@wdio/json-reporter](https://webdriver.io/docs/json-reporter/). Records test names, results, durations, stack traces, and a start and end time for each test. This is the recommended reporter.
-   + [@wdio/junit-reporter](https://webdriver.io/docs/junit-reporter/). Records test names, results, durations, and stack traces, but no per-test start or end times. If you enable both reporters, Device Farm builds the report from the JSON output.
+   + [@wdio/json-reporter](https://webdriver.io/docs/json-reporter/). Records test names, results, durations, stack traces, and a start and end time for each test. This is the recommended reporter, and the only one that gives you per-test video.
+   + [@wdio/junit-reporter](https://webdriver.io/docs/junit-reporter/). Records test names, results, durations, and stack traces, but no per-test start or end times, so you don't get per-test video. If you enable both reporters, Device Farm builds the report from the JSON output.
 
    Install the reporter that you chose so that it is available inside your test package:
 
-   ```
+   ```bash
    npm install --save-dev @wdio/json-reporter
    ```
 
    Next, add the reporter to the `reporters` array in your `wdio.conf.js` file and set its `outputDir` to a directory under `$DEVICEFARM_LOG_DIR`:
 
-   ```
+   ```javascript
    exports.config = {
      // ...
      reporters: [
@@ -107,7 +107,7 @@ To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of
 
    Install the reporter and update `wdio.conf.js` before you package your tests so that both are inside the package that you upload. For more information, see [Create a zipped test package file](#test-types-appium-create-a-zip).
 
-   If Device Farm does not generate a report for your run, see [Test insights](troubleshooting-appium-node.md#troubleshooting-appium-node-insights).
+   If Device Farm does not generate a report for your run, see [Troubleshooting test reports and insights in AWS Device Farm](troubleshooting-test-insights.md).
 
 ------
 #### [ Python ]
@@ -116,7 +116,7 @@ To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of
 
    1. In the `test` phase of your test spec file, run pytest with `--junit-xml` and write the report to a file under `$DEVICEFARM_LOG_DIR`:
 
-      ```
+      ```yaml
       phases:
         test:
           commands:
@@ -127,9 +127,9 @@ To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of
 
    1. If your test spec file runs pytest more than once, for example to retry failed tests, write each run to its own file. For example, use `junitreport-1.xml` and `junitreport-2.xml`. If two runs write to the same file, only the last run is reported.
 
-   1. (Optional) To record a start and end time for each test, save the following code as `conftest.py` in your `tests` directory. If you already have a `conftest.py` file, add the code to it. pytest does not record these times, so without this code the report has no `startTimestamp` or `endTimestamp` field.
+   1. (Optional) To record a start and end time for each test, and get per-test video, save the following code as `conftest.py` in your `tests` directory. If you already have a `conftest.py` file, add the code to it. pytest does not record these times, so without this code the report has no `startTimestamp` or `endTimestamp` field.
 
-      ```
+      ```python
       import datetime
 
       import pytest
@@ -153,7 +153,7 @@ To record per-test timestamps, export `JAVA_TOOL_OPTIONS` in the `test` phase of
 
    1. If you added `conftest.py`, package your tests after you add it, so that the file is in the package that you upload. For more information, see [Create a zipped test package file](#test-types-appium-create-a-zip).
 
-   If Device Farm does not generate a report for your run, see [Test insights](troubleshooting-appium-python.md#troubleshooting-appium-python-insights).
+   If Device Farm does not generate a report for your run, see [Troubleshooting test reports and insights in AWS Device Farm](troubleshooting-test-insights.md).
 
 ------
 
@@ -432,7 +432,7 @@ To package your Appium Node.js tests and upload them to Device Farm, you must in
 
 1. Verify that nvm is present
 
-   ```
+   ```bash
    command -v nvm
    ```
 
@@ -442,25 +442,25 @@ To package your Appium Node.js tests and upload them to Device Farm, you must in
 
 1. Run this command to install Node.js:
 
-   ```
+   ```bash
    nvm install node
    ```
 
    You can specify a particular version of Node.js:
 
-   ```
+   ```bash
    nvm install 11.4.0
    ```
 
 1. Verify that the correct version of Node is in use:
 
-   ```
+   ```bash
    node -v
    ```
 
 1. Install **npm-bundle** globally:
 
-   ```
+   ```bash
    npm install -g npm-bundle
    ```
 
@@ -545,7 +545,7 @@ RVM is loaded as a function for the bash shell only.
 
 1. Verify that **rvm** is installed correctly
 
-   ```
+   ```bash
    command -v rvm
    ```
 
@@ -553,13 +553,13 @@ RVM is loaded as a function for the bash shell only.
 
 1. If you want to install a specific version of Ruby, such as {{2.5.3}}, run the following command:
 
-   ```
+   ```bash
    rvm install ruby 2.5.3 --autolibs=0
    ```
 
    Verify that you are on the requested version of Ruby:
 
-   ```
+   ```bash
    ruby -v
    ```
 
@@ -583,7 +583,7 @@ RVM is loaded as a function for the bash shell only.
 
 1. The **bundler** gem is usually installed by default. If it is not, install it:
 
-   ```
+   ```bash
    gem install bundler -v 2.3.26
    ```
 
@@ -631,7 +631,7 @@ If you want Device Farm to generate a test report for your run, enable a Webdriv
 
 1. Run this command to install your local dependencies.
 
-   ```
+   ```bash
    npm install
    ```
 
@@ -641,7 +641,7 @@ At this point, you should be able to run your tests locally.
 
 1. Run this command to package the files in your current folder into a \*.tgz file. The file is named using the `name` property in your `package.json` file.
 
-   ```
+   ```bash
    npm-bundle
    ```
 
@@ -649,7 +649,7 @@ At this point, you should be able to run your tests locally.
 
 1. Run this command to bundle the tarball (\*.tgz file) generated in the previous step into a single zipped archive:
 
-   ```
+   ```bash
    zip -r {{MyTests.zip}} *.tgz
    ```
 
@@ -682,14 +682,14 @@ $ zip -r {{test_bundle.zip}} tests/ requirements.txt
 
 1. Run this command to create a virtual Ruby environment:
 
-   ```
+   ```bash
    # myGemset is the name of your virtual Ruby environment
    rvm gemset create {{myGemset}}
    ```
 
 1. Run this command to use the environment you just created:
 
-   ```
+   ```bash
    rvm gemset use {{myGemset}}
    ```
 
@@ -699,26 +699,26 @@ $ zip -r {{test_bundle.zip}} tests/ requirements.txt
 
 1. Run this command to install your local dependencies and all gems from the `Gemfile`:
 
-   ```
+   ```bash
    bundle install
    ```
 **Note**
 At this point, you should be able to run your tests locally. Use this command to run a test locally:
 
-   ```
+   ```bash
    bundle exec $test_command
    ```
 
 1. Package your gems in the `vendor/cache` folder.
 
-   ```
+   ```bash
    # This will copy all the .gem files needed to run your tests into the vendor/cache directory
    bundle package --all-platforms
    ```
 
 1. Run the following command to bundle your source code, along with all your dependencies, into a single zipped archive:
 
-   ```
+   ```bash
    zip -r MyTests.zip Gemfile vendor/ $(any other source code directory files)
    ```
 
@@ -739,9 +739,9 @@ You can use the Device Farm console to upload your tests.
 
 1. Open your project, and then choose **Create run**.
 
-1. Under **Select app and run type**, in the **Run type** section, select your run type. Select **Android app** if you are testing an Android app (.apk file format). Select **iOS app** if you are testing an iOS app (.ipa file format). Select **Web App** if you are testing a mobile web application.
+1. Under **Select app and run type**, in the **Run type** section, select your run type. Select **Android app** for an Android (.apk) app, **iOS app** for an iOS app, or **Web App** for a mobile web application.
 
-1. Under **Select app**, in the **App selection options** section, choose **Select sample app provided by Device Farm** if you do not have an app. If you are bringing your own app, select **Upload own app**. Then choose your APK (.apk file format) for Android or your IPA (.ipa file format) for iOS. If you are uploading an iOS app, make sure that you choose **iOS device**, not a simulator.
+1. Under **Select app**, in the **App selection options** section, choose **Select sample app provided by Device Farm** if you do not have an app. If you are bringing your own app, select **Upload own app**. Then choose your APK (.apk file format) for Android or your `.ipa` file for iOS. For the iOS build that your devices need, see [Packaging an iOS app](apps.md#test-runs-ios-app-packaging).
 
 1. Under **Configure test**, in the **Select test framework** section, choose the Appium framework that you test with, and then select **Upload your own test package**. Browse to and choose the .zip file that contains your tests. The .zip file must follow the format described in [Configure your Appium test package](#test-types-appium-prepare).
 
@@ -782,6 +782,8 @@ The job results include a **Test report** tab. Choose it to see a per-test break
 
 To download the full test report as a JSON file, choose **Download full summary** at the top of the job details.
 
+When the run records a video, the **Video** column has a play button for each test that plays the test in the job video. For more information, see [Watch a test in the job video](reports.md#reports-test-insights-video-console).
+
 To choose which columns appear, choose the gear icon. In the settings, you can select the columns to display and turn **Group by class** on or off. **Group by class** is on by default, which groups the tests by their test class. Turn it off to see a flat list of all tests.
 
 ------
@@ -791,9 +793,13 @@ The following screenshot shows the **Test report** tab for a run that wrote an o
 
 ![The Test report tab for a completed Appium Java JUnit job, with the tests grouped by test class.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-junit-insights-enabled-test-report-column.png)
 
-Without an open test reporting file, the **Start time** and **End time** columns do not appear. The following screenshot shows a run that did not write one.
+The following screenshot shows the **Test report** tab with the **Test video** panel open.
 
-![The Test report tab for a run without an open test reporting file, which has no Start time or End time column.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-junit-insights-enabled-test-report-without-open-test-reporting.png)
+![The Test report tab for a completed Appium Java JUnit job, with the Test video panel open on the selected test.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-junit-insights-enabled-test-video-panel.png)
+
+If Device Farm doesn't find a test report file, the **Start time** and **End time** columns do not appear, and the report doesn't show per-test video. The following screenshot shows a run that did not write one.
+
+![The Test report tab for a run without a test report file, which has no Start time or End time column.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-junit-insights-enabled-test-report-without-open-test-reporting.png)
 
 ------
 #### [ Java (TestNG) ]
@@ -806,25 +812,37 @@ The following screenshot shows the same tab with **Group by class** turned off.
 
 ![The Test report tab with Group by class turned off, showing a flat list of tests.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-testng-insights-enabled-test-report-without-grouping.png)
 
+The following screenshot shows the **Test report** tab with the **Test video** panel open.
+
+![The Test report tab for a completed Appium Java TestNG job, with the Test video panel open on the selected test.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-testng-insights-enabled-test-video-panel.png)
+
 ------
 #### [ Node.JS ]
 
-Device Farm builds the report from the WebdriverIO reporter you enabled. The JSON reporter records a start and end time for each test and the JUnit reporter does not, so a report built from the JUnit reporter omits the `startTimestamp` and `endTimestamp` fields. If you enable both reporters, Device Farm uses the JSON output.
+Device Farm builds the report from the WebdriverIO reporter you enabled. The JSON reporter records a start and end time for each test and the JUnit reporter does not. A report built from the JUnit reporter omits the `startTimestamp` and `endTimestamp` fields and doesn't show per-test video. If you enable both reporters, Device Farm uses the JSON output.
 
 The following screenshot shows the **Test report** tab.
 
-![The Test report tab for a completed Appium Node.js job.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-node-insights-enabled-test-report-column.png)
+![The Test report tab for a completed Appium Node.js job, with the stack trace of a failed test open.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-node-insights-enabled-test-report-column.png)
 
 The following screenshot shows the same tab with **Group by class** turned off.
 
 ![The Test report tab with Group by class turned off, showing a flat list of tests.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-node-insights-enabled-test-report-without-grouping.png)
 
+The following screenshot shows the **Test report** tab with the **Test video** panel open.
+
+![The Test report tab for a completed Appium Node.js job, with the Test video panel open on the selected test.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-node-insights-enabled-test-video-panel.png)
+
 ------
 #### [ Python ]
 
-The following screenshot shows the **Test report** tab for a run that recorded start and end times with the `conftest.py` code described in [Configure Appium test reports using a custom test environment](#test-types-appium-generate-reports). Without that code, the **Start time** and **End time** columns do not appear.
+The following screenshot shows the **Test report** tab for a run that recorded start and end times with the `conftest.py` code described in [Configure Appium test reports using a custom test environment](#test-types-appium-generate-reports). Without that code, the **Start time** and **End time** columns do not appear, and the report doesn't show per-test video.
 
 ![The Test report tab for a completed Appium Python job, with the tests grouped by test class.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-pytest-insights-enabled-test-report.png)
+
+The following screenshot shows the **Test report** tab with the **Test video** panel open.
+
+![The Test report tab for a completed Appium Python job, with the Test video panel open on the selected test.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/appium-pytest-insights-enabled-test-video-panel.png)
 
 ------
 
@@ -846,7 +864,7 @@ aws devicefarm get-job --arn {{arn:aws:devicefarm:us-west-2:123456789012:job:PRO
 
 If the run did not generate test insights, for example because it used the standard test environment or you turned off test insights, the response contains the standard job fields, such as the job status, result, counters, and device:
 
-```
+```json
 {
     "job": {
         "arn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -883,7 +901,7 @@ If the run did not generate test insights, for example because it used the stand
 
 If the run generated test insights, the response also includes an `insights` object. This object contains the test report status, high-level metrics, and a presigned URL to the detailed report:
 
-```
+```json
 {
     "job": {
         "arn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -926,7 +944,7 @@ Choose your framework tab for an example test report.
 
 The following report is from a job that wrote an open test reporting file:
 
-```
+```json
 {
   "version": "1.0",
   "jobArn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -984,7 +1002,7 @@ A report built from JUnit XML files has the same shape, without the `startTimest
 ------
 #### [ Java (TestNG) ]
 
-```
+```json
 {
   "version": "1.0",
   "jobArn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -1010,7 +1028,9 @@ A report built from JUnit XML files has the same shape, without the `startTimest
       "result": "PASSED",
       "durationSeconds": 1.83,
       "startTimestamp": "2026-07-31T16:58:26.646000Z",
-      "endTimestamp": "2026-07-31T16:58:28.476000Z"
+      "endTimestamp": "2026-07-31T16:58:28.476000Z",
+      "videoStartSeconds": 12.4,
+      "videoEndSeconds": 14.23
     },
     {
       "testName": "testCheckout",
@@ -1020,6 +1040,8 @@ A report built from JUnit XML files has the same shape, without the `startTimest
       "durationSeconds": 3.102,
       "startTimestamp": "2026-07-31T16:58:28.500000Z",
       "endTimestamp": "2026-07-31T16:58:31.602000Z",
+      "videoStartSeconds": 14.254,
+      "videoEndSeconds": 17.356,
       "stackTrace": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\t...",
       "params": ["premium-user", "US"]
     },
@@ -1030,7 +1052,9 @@ A report built from JUnit XML files has the same shape, without the `startTimest
       "result": "SKIPPED",
       "durationSeconds": 0.489,
       "startTimestamp": "2026-07-31T16:58:31.700000Z",
-      "endTimestamp": "2026-07-31T16:58:32.189000Z"
+      "endTimestamp": "2026-07-31T16:58:32.189000Z",
+      "videoStartSeconds": 17.454,
+      "videoEndSeconds": 17.943
     }
   ]
 }
@@ -1041,7 +1065,7 @@ A report built from JUnit XML files has the same shape, without the `startTimest
 
 The following report is from a job that used the JSON reporter:
 
-```
+```json
 {
   "version": "1.0",
   "jobArn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -1100,7 +1124,7 @@ A report built from the JUnit reporter has the same shape, without the `startTim
 
 The following report is from a job that recorded start and end times:
 
-```
+```json
 {
   "version": "1.0",
   "jobArn": "arn:aws:devicefarm:us-west-2:123456789012:job:EXAMPLE-PROJECT/EXAMPLE-RUN/00000",
@@ -1228,6 +1252,12 @@ For a parameterized test, the argument values for the invocation. Present when t
 `stackTrace`
 For a failed or errored test, the stack trace of the failure.
 
+`videoStartSeconds`
+Where the test started in the job video, in seconds. See [Per-test video](reports.md#reports-test-insights-video).
+
+`videoEndSeconds`
+Where the test ended in the job video, in seconds.
+
 ------
 #### [ Java (TestNG) ]
 
@@ -1258,6 +1288,12 @@ For a parameterized test, the parameter values that TestNG passed to the test.
 `stackTrace`
 For a failed test, the stack trace of the failure.
 
+`videoStartSeconds`
+Where the test started in the job video, in seconds. See [Per-test video](reports.md#reports-test-insights-video).
+
+`videoEndSeconds`
+Where the test ended in the job video, in seconds.
+
 ------
 #### [ Node.JS ]
 
@@ -1287,6 +1323,12 @@ The names of the spec files that the test came from. WebdriverIO runs your spec 
 `stackTrace`
 For a failed test, the stack trace of the failure.
 
+`videoStartSeconds`
+Where the test started in the job video, in seconds. See [Per-test video](reports.md#reports-test-insights-video).
+
+`videoEndSeconds`
+Where the test ended in the job video, in seconds.
+
 ------
 #### [ Python ]
 
@@ -1312,6 +1354,12 @@ The time when the test's setup started and when its teardown ended. Present only
 
 `stackTrace`
 For a failed or errored test, the failure output that pytest recorded. For a skipped test, the location and reason of the skip.
+
+`videoStartSeconds`
+Where the test started in the job video, in seconds. See [Per-test video](reports.md#reports-test-insights-video).
+
+`videoEndSeconds`
+Where the test ended in the job video, in seconds.
 
 ------
 

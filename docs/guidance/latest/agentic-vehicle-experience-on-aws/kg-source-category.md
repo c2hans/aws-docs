@@ -29,7 +29,7 @@ The current KB content is organized into the following source categories:
 
 A metadata sidecar file accompanying each document declares the applicable categories:
 
-```
+```json
 {
   "source_category": ["dtc_guide"],
   "applicable_personas": ["technician", "service_advisor"],
@@ -40,7 +40,7 @@ A metadata sidecar file accompanying each document declares the applicable categ
 
 The `knowledge()` tool constructs the Bedrock Retrieve filter based on the current persona’s allowed source categories:
 
-```
+```python
 filter_expression = {
     "orAll": [
         {"equals": {"key": "source_category", "value": cat}}

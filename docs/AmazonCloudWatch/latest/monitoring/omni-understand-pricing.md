@@ -51,6 +51,8 @@ Centralizing telemetry across Regions does not incur cross-Region data transfer 
 
 ![Accounts under one payer account. Source accounts 1, 2, and 3 ingest 10 TB, 8 TB, and 2 TB, at standard CloudWatch ingestion rates with storage charged per retention. Source account 1 runs queries that scan 10 TB, and source accounts 2 and 3 run no queries. A centralization rule copies the data to the central account that hosts the Omni space, with no charge for the first copy. The central account has no ingestion of its own, pays storage per retention, and runs queries that scan 90 TB. An additional copy to a backup in another Region is charged at $0.05 per GB, plus storage per retention. The Omni query allowance is (10 + 8 + 2) TB × 5 = 100 TB, pooled across all accounts under the payer account. It applies to queries in any account, including the central account, and centralized copies do not add to it. 10 TB plus 90 TB of queries equals 100 TB, so no query charges apply.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/omni-pricing-hub-and-spoke.png)
 
+Where each charge applies in a hub-and-spoke setup. Illustrative volumes.
+
 For storage of centralized copies, see [Storage for centralized copies](#omni-understand-pricing-storage-centralized). For queries in a central account, see [Queries in a central account](#omni-understand-pricing-central-account).
 
 ## Storage

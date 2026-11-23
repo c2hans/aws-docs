@@ -54,6 +54,11 @@ Content-type: application/json
       {
          "createTime": number,
          "id": "string",
+         "intermediateTableConfiguration": {
+            "arn": "string",
+            "id": "string",
+            "name": "string"
+         },
          "jobComputePayerAccountId": "string",
          "membershipArn": "string",
          "membershipId": "string",

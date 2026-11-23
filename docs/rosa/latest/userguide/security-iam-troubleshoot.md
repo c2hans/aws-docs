@@ -68,7 +68,7 @@ To resolve this issue, follow these steps:
 
 1. Check if your account has the `AWSServiceRoleForElasticLoadBalancing` role.
 
-   ```
+   ```highlight.js
    aws iam get-role --role-name "AWSServiceRoleForElasticLoadBalancing"
    ```
 

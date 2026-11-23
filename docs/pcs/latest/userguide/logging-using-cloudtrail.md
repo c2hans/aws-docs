@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an S3
 
 The following example shows a CloudTrail log entry for a `CreateQueue` action.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

@@ -38,7 +38,7 @@ The following code example shows how to configure a hyperparameter tuning job us
 
 In this code example, the objective metric for the hyperparameter tuning job finds the hyperparameter configuration that maximizes `validation:auc`. SageMaker AI built-in algorithms automatically write the objective metric to CloudWatch Logs. The following code example also shows how to set a `RandomSeed`.
 
-```
+```python
 tuning_job_config = {
     "ParameterRanges": {
       "CategoricalParameterRanges": [],
@@ -103,7 +103,7 @@ The following code example sets static values for the `eval_metric`, `num_round`
 ------
 #### [ SageMaker Python SDK v1 ]
 
-```
+```python
 from sagemaker.amazon.amazon_estimator import get_image_uri
 training_image = get_image_uri(region, 'xgboost', repo_version='1.0-1')
 
@@ -166,7 +166,7 @@ training_job_definition = {
 ------
 #### [ SageMaker Python SDK v2 ]
 
-```
+```python
 training_image = sagemaker.image_uris.retrieve('xgboost', region, '1.0-1')
 
 s3_input_train = 's3://{}/{}/train'.format(bucket, prefix)

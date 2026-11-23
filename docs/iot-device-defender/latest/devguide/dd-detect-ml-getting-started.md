@@ -153,7 +153,7 @@ Mark your alarms by setting the verification state and providing a description o
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

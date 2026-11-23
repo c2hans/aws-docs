@@ -25,7 +25,7 @@ The following example shows how to submit click and relevance feedback using the
 ------
 #### [ Python ]
 
-   ```
+   ```python
    import boto3
    import time
 
@@ -61,7 +61,7 @@ The following example shows how to submit click and relevance feedback using the
 ------
 #### [ Java ]
 
-   ```
+   ```java
    package com.amazonaws.kendra;
 
    import java.time.Instant;

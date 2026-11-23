@@ -32,6 +32,8 @@ If you create a source action in the delegated admin account for one of your mem
 
    You can reuse the same SSM parameter in multiple source actions. To use a parameter across accounts, share it by using AWS Resource Access Manager and reference it by its ARN. For more information, see [Working with shared parameters in Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-shared-parameters.html) in the *AWS Systems Manager User Guide*.
 
+   When you provide the script content, AWS Transform MGN creates the SSM parameter in your account's default parameter tier. The default tier is Standard unless you changed it, so by default a script larger than 4 KB is rejected. To use a larger script, up to 8 KB, either set your account's default parameter tier to Advanced or Intelligent-Tiering, or create an Advanced parameter in Parameter Store and choose it in the source action. For more information, see [Managing parameter tiers](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html) in the *AWS Systems Manager User Guide*.
+
 1. Set the **Timeout** in seconds (default: 3,600 seconds, minimum: 60 seconds, maximum: 5,400 seconds)
 
 1. (Optional) Add **Tags** to the source action. Each tag consists of a key and an optional value

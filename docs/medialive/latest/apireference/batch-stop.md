@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### POST schema
 <a name="batch-stop-request-body-post-example"></a>
 
-```
+```json
 {
   "channelIds": [
     "string"
@@ -57,7 +57,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### BatchStopResultModel schema
 <a name="batch-stop-response-body-batchstopresultmodel-example"></a>
 
-```
+```json
 {
   "failed": [
     {
@@ -80,7 +80,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### InvalidRequest schema
 <a name="batch-stop-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -89,7 +89,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### AccessDenied schema
 <a name="batch-stop-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -98,7 +98,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### ResourceNotFound schema
 <a name="batch-stop-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -107,7 +107,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### ResourceConflict schema
 <a name="batch-stop-response-body-resourceconflict-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -116,7 +116,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### LimitExceeded schema
 <a name="batch-stop-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -125,7 +125,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### InternalServiceError schema
 <a name="batch-stop-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### BadGatewayException schema
 <a name="batch-stop-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -143,7 +143,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 #### GatewayTimeoutException schema
 <a name="batch-stop-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

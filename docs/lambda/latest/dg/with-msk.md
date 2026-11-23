@@ -31,7 +31,7 @@ For examples on how to set up a Lambda integration with an Amazon MSK cluster, s
 
 Lambda sends the batch of messages in the event parameter when it invokes your Event Function. The event payload contains an array of messages. Each array item contains details of the Amazon MSK topic and partition identifier, together with a timestamp and a base64-encoded message.
 
-```
+```json
 {
    "eventSource":"aws:kafka",
    "eventSourceArn":"arn:aws:kafka:us-east-1:123456789012:cluster/vpc-2priv-2pub/751d2973-a626-431c-9d4e-d7975eb44dd7-2",

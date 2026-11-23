@@ -23,7 +23,7 @@ A *reference path* is a path whose syntax is limited in such a way that it can i
 
 For example, if state input data contains the following values:
 
-```
+```json
 {
   "foo": 123,
   "bar": ["a", "b", "c"],
@@ -50,7 +50,7 @@ If the [Parallel workflow state](state-parallel.md) or [Map workflow state](stat
 
 To flatten arrays, use the syntax: `[*]` in the `ResultSelector` field as shown in the following example.
 
-```
+```json
 "ResultSelector": {
     "flattenArray.$": "$[*][*]"
   }

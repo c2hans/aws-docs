@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-c
 
 You can use the AWS Management Console or the AWS Command Line Interface (AWS CLI) to create a connection to GitHub.
 
+**Note**
+If your enterprise is on GitHub Enterprise Cloud with data residency and has a URL such as `https://{{subdomain}}.ghe.com`, see [Create a connection to GitHub Enterprise Cloud with data residency](connections-create-ghec-dr.md) instead.
+
 Before you begin:
 + You must have already created an account with GitHub.
 + You must have already created your third-party code repository.

@@ -41,7 +41,7 @@ To create, view, or change logging configuration in AWS Entity Resolution, you m
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

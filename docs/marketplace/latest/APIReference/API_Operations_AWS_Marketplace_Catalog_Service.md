@@ -17,6 +17,7 @@ The following actions are supported by AWS Marketplace Catalog Service:
 +  [ListEntities](API_ListEntities.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)
 +  [PutResourcePolicy](API_PutResourcePolicy.md)
++  [StartAssessment](API_StartAssessment.md)
 +  [StartChangeSet](API_StartChangeSet.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)

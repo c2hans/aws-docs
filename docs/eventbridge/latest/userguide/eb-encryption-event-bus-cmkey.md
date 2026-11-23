@@ -59,7 +59,7 @@ As a security best practice, we recommend you include condition keys in the key 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

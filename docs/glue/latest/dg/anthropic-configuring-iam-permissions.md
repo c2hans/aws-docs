@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/anthropic-configuring-iam
 
 The following sample policy describes the required IAM permissions for creating, managing, and using Anthropic connections within AWS Glue ETL jobs. If you are creating a new role, create a policy that contains the following:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -34,7 +34,7 @@ You can also use the following managed IAM policies to allow access:
 
 If providing Network Options when creating an Anthropic connection, the following actions must also be included in the IAM role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

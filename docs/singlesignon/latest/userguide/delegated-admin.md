@@ -70,7 +70,7 @@ If your delegated admin needs to set up user provisioning with SCIM, or perform 
 
 If you create your users and groups directly in IAM Identity Center, rather than using an external IdP or Directory Service, then you should take precautions for who can create users, reset passwords, and control group membership. These actions give the administrator great powers for who can sign in and who can gain access through membership in groups. These policies are best implemented as in-line policies within the permission sets you use for your IAM Identity Center administrators, rather than as SCPs. The following example inline policy has two objectives. Firstly, it prevents adding users to specific groups. You can use this to prevent delegated admins from adding users to groups that grant access to the management account. Secondly, it prevents the issuance of SCIM bearer tokens.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

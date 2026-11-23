@@ -115,7 +115,7 @@ aws globalaccelerator list-listeners
          --region us-west-2
 ```
 
-```
+```json
 {
     "Listeners": [
         {

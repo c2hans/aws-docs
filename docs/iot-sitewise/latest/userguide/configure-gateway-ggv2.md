@@ -104,7 +104,7 @@ If you use the AWS IoT SiteWise console to create your SiteWise Edge gateway, th
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

@@ -126,7 +126,7 @@ Do the following until you resolve the error:
 
 1. In your `hdfs-site.xml` file, verify that your `dfs.data.transfer.protection` property has only one value. For example:
 
-   ```
+   ```xml
    <property>
       <name>dfs.data.transfer.protection</name>
       <value>privacy</value>

@@ -36,7 +36,7 @@ If you use the API, CLI, or an SDK, specify the relevant settings in your JSON j
 
 The following example shows the key parts of a JSON job specification for an MV-HEVC output. The left eye video is specified as the primary `FileInput`, and the right eye video is specified in `MultiViewSettings`.
 
-```
+```json
 {
   "Inputs": [
     {

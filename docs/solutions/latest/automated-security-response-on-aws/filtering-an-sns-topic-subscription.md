@@ -22,7 +22,7 @@ Example policies:
 
 Filter by account
 
-```
+```yaml
  {
  "finding": {
  "account": [
@@ -35,7 +35,7 @@ Filter by account
 
 Filter for errors
 
-```
+```yaml
  {
  "severity": ["ERROR"]
  }
@@ -43,7 +43,7 @@ Filter for errors
 
 Filter by controls
 
-```
+```yaml
  {
  "finding": {
  "standard_control": ["S3.9","S3.6"]

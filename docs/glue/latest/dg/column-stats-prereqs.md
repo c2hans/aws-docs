@@ -36,7 +36,7 @@ In the following policies, replace account ID with a valid AWS account, and repl
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -65,7 +65,7 @@ In the following policies, replace account ID with a valid AWS account, and repl
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -96,7 +96,7 @@ In the following policies, replace account ID with a valid AWS account, and repl
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -145,7 +145,7 @@ In the following policies, replace account ID with a valid AWS account, and repl
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -171,7 +171,7 @@ In the following policies, replace account ID with a valid AWS account, and repl
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

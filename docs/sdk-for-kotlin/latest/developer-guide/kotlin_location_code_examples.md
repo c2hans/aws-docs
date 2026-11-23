@@ -28,7 +28,7 @@ The following code example shows how to get started using Amazon Location Servic
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.
@@ -110,7 +110,7 @@ The following code example shows how to:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.
@@ -789,7 +789,7 @@ The following code example shows how to use `BatchUpdateDevicePosition`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Updates the position of a device in the location tracking system.
  *
@@ -826,7 +826,7 @@ The following code example shows how to use `CalculateRoute`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Calculates the distance between two locations.
  *
@@ -861,7 +861,7 @@ The following code example shows how to use `CreateGeofenceCollection`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Creates a new geofence collection.
  *
@@ -889,7 +889,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Creates a new API key with the specified name and restrictions.
  *
@@ -925,7 +925,7 @@ The following code example shows how to use `CreateMap`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Creates a new map with the specified name and configuration.
  *
@@ -959,7 +959,7 @@ The following code example shows how to use `CreateRouteCalculator`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Creates a new route calculator with the specified name and data source.
  *
@@ -988,7 +988,7 @@ The following code example shows how to use `CreateTracker`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Creates a new tracker resource in your AWS account, which you can use to track the location of devices.
  *
@@ -1018,7 +1018,7 @@ The following code example shows how to use `DeleteGeofenceCollection`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Deletes a geofence collection.
  *
@@ -1046,7 +1046,7 @@ The following code example shows how to use `DeleteKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Deletes the specified key from the key-value store.
  *
@@ -1073,7 +1073,7 @@ The following code example shows how to use `DeleteMap`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Deletes the specified key from the key-value store.
  *
@@ -1100,7 +1100,7 @@ The following code example shows how to use `DeleteRouteCalculator`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Deletes a route calculator from the system.
  * @param calcName the name of the route calculator to delete
@@ -1126,7 +1126,7 @@ The following code example shows how to use `DeleteTracker`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Deletes a tracker with the specified name.
  * @param trackerName the name of the tracker to be deleted
@@ -1152,7 +1152,7 @@ The following code example shows how to use `GetDevicePosition`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Retrieves the position of a device using the provided LocationClient.
  *
@@ -1180,7 +1180,7 @@ The following code example shows how to use `PutGeofence`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
  * Adds a new geofence to the specified collection.
  *

@@ -13,7 +13,7 @@ To create a key pair, call the AmazonEC2Client’s `createKeyPair` method with a
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.CreateKeyPairRequest;
@@ -22,7 +22,7 @@ import com.amazonaws.services.ec2.model.CreateKeyPairResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 CreateKeyPairRequest request = new CreateKeyPairRequest()
@@ -40,7 +40,7 @@ To list your key pairs or to get information about them, call the AmazonEC2Clien
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DescribeKeyPairsResult;
@@ -49,7 +49,7 @@ import com.amazonaws.services.ec2.model.KeyPairInfo;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 DescribeKeyPairsResult response = ec2.describeKeyPairs();
@@ -72,7 +72,7 @@ To delete a key pair, call the AmazonEC2Client’s `deleteKeyPair` method, passi
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DeleteKeyPairRequest;
@@ -81,7 +81,7 @@ import com.amazonaws.services.ec2.model.DeleteKeyPairResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 DeleteKeyPairRequest request = new DeleteKeyPairRequest()

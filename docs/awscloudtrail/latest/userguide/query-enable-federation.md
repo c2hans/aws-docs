@@ -37,7 +37,7 @@ The following procedure shows you how to enable Lake query federation on an exis
 
 To enable federation, run the **aws cloudtrail enable-federation** command, providing the required **--event-data-store** and **--role** parameters. For **--event-data-store**, provide the event data store ARN (or the ID suffix of the ARN). For **--role**, provide the ARN for your federation role. The role must exist in your account and provide the [required minimum permissions](query-federation.md#query-federation-permissions-role).
 
-```
+```JSON
 aws cloudtrail enable-federation
 --event-data-store arn:aws:cloudtrail:{{region}}:{{account-id}}:eventdatastore/{{eds-id}}
 --role arn:aws:iam::{{account-id}}:role/{{federation-role-name}}
@@ -45,7 +45,7 @@ aws cloudtrail enable-federation
 
 This example shows how a delegated administrator can enable federation on an organization event data store by specifying the ARN of the event data store in the management account and the ARN of the federation role in the delegated administrator account.
 
-```
+```JSON
 aws cloudtrail enable-federation
 --event-data-store arn:aws:cloudtrail:{{region}}:{{management-account-id}}:eventdatastore/{{eds-id}}
 --role arn:aws:iam::{{delegated-administrator-account-id}}:role/{{federation-role-name}}

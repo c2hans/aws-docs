@@ -83,7 +83,7 @@ The following instructions assume you chose **Apps \+ OS** in the previous step.
 
    To do this, run the following commands one at a time, in the following order, to update the instance, install Node Version Manager (nvm) on the instance, activate nvm on the instance, and then install the latest version of Node.js on the instance.
 
-   ```
+   ```sh
    sudo apt update
    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
    . ~/.bashrc

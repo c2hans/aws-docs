@@ -101,7 +101,7 @@ If your location data is stored in a classic shadow, you must set `thingIndexing
 
 In the following thing indexing configuration example, you specify the location data path `shadow.reported.coordinates` as `name` and `LonLat` as `order`.
 
-```
+```JSON
 {
 	"thingIndexingMode": "REGISTRY_AND_SHADOW",
 	"filter": {
@@ -139,7 +139,7 @@ If your location data is stored in a named shadow, set `namedShadowIndexingMode`
 
 In the following thing indexing configuration example, you specify the location data path `shadow.name.namedShadow1.reported.coordinates` as `name` and `LonLat` as `order`.
 
-```
+```JSON
 {
 	"thingIndexingMode": "REGISTRY",
 	"namedShadowIndexingMode": "ON",

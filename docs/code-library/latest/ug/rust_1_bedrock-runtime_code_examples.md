@@ -28,7 +28,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/bedrock-runtime#code-examples).
 The primary scenario and logic for the demo. This orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```rust
 #[derive(Debug)]
 #[allow(dead_code)]
 struct InvokeToolResult(String, ToolResultBlock);
@@ -207,7 +207,7 @@ async fn main() {
 ```
 The weather tool used by the demo. This script defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```rust
 const ENDPOINT: &str = "https://api.open-meteo.com/v1/forecast";
 async fn fetch_weather_data(
     tool_use: &ToolUseBlock,
@@ -262,7 +262,7 @@ async fn fetch_weather_data(
 ```
 Utilities to print the Message Content Blocks.
 
-```
+```rust
 fn print_model_response(block: &ContentBlock) -> Result<(), ToolUseScenarioError> {
     if block.is_text() {
         let text = block.as_text().unwrap();
@@ -277,7 +277,7 @@ fn print_model_response(block: &ContentBlock) -> Result<(), ToolUseScenarioError
 ```
 Use statements, Error utility, and constants.
 
-```
+```rust
 use std::{collections::HashMap, io::stdin};
 
 use aws_config::BehaviorVersion;
@@ -404,7 +404,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```rust
 #[tokio::main]
 async fn main() -> Result<(), BedrockConverseError> {
     tracing_subscriber::fmt::init();
@@ -457,7 +457,7 @@ fn get_converse_output_text(output: ConverseOutput) -> Result<String, BedrockCon
 ```
 Use statements, Error utility, and constants.
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_sdk_bedrockruntime::{
     operation::converse::{ConverseError, ConverseOutput},
@@ -508,7 +508,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude and stream reply tokens, using Bedrock's ConverseStream API.
 
-```
+```rust
 #[tokio::main]
 async fn main() -> Result<(), BedrockConverseStreamError> {
     tracing_subscriber::fmt::init();
@@ -575,7 +575,7 @@ fn get_converse_output_text(
 ```
 Use statements, Error utility, and constants.
 
-```
+```rust
 use aws_config::BehaviorVersion;
 use aws_sdk_bedrockruntime::{
     error::ProvideErrorMetadata,
@@ -653,7 +653,7 @@ The following code example shows how to build a typical interaction between an a
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/bedrock-runtime#code-examples).
 The primary scenario and logic for the demo. This orchestrates the conversation between the user, the Amazon Bedrock Converse API, and a weather tool.
 
-```
+```rust
 #[derive(Debug)]
 #[allow(dead_code)]
 struct InvokeToolResult(String, ToolResultBlock);
@@ -832,7 +832,7 @@ async fn main() {
 ```
 The weather tool used by the demo. This script defines the tool specification and implements the logic to retrieve weather data using from the Open-Meteo API.
 
-```
+```rust
 const ENDPOINT: &str = "https://api.open-meteo.com/v1/forecast";
 async fn fetch_weather_data(
     tool_use: &ToolUseBlock,
@@ -887,7 +887,7 @@ async fn fetch_weather_data(
 ```
 Utilities to print the Message Content Blocks.
 
-```
+```rust
 fn print_model_response(block: &ContentBlock) -> Result<(), ToolUseScenarioError> {
     if block.is_text() {
         let text = block.as_text().unwrap();
@@ -902,7 +902,7 @@ fn print_model_response(block: &ContentBlock) -> Result<(), ToolUseScenarioError
 ```
 Use statements, Error utility, and constants.
 
-```
+```rust
 use std::{collections::HashMap, io::stdin};
 
 use aws_config::BehaviorVersion;

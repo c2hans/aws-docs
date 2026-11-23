@@ -16,21 +16,21 @@ This example shows the basic pattern for encrypting and decrypting data. It encr
 **Step 1: Instantiate the AWS Encryption SDK.**
 You'll use the methods in the AWS Encryption SDK to encrypt and decrypt data.
 
-```
+```rust
 let esdk_config = AwsEncryptionSdkConfig::builder().build()?;
 let esdk_client = esdk_client::Client::from_conf(esdk_config)?;
 ```
 
 **Step 2: Create an AWS KMS client.**
 
-```
+```rust
 let sdk_config = aws_config::load_defaults(aws_config::BehaviorVersion::latest()).await;
 let kms_client = aws_sdk_kms::Client::new(&sdk_config);
 ```
 
 **Optional: Create your encryption context.**
 
-```
+```rust
 let encryption_context = HashMap::from([
     ("encryption".to_string(), "context".to_string()),
     ("is not".to_string(), "secret".to_string()),
@@ -43,7 +43,7 @@ let encryption_context = HashMap::from([
 **Step 3: Instantiate the material providers library.**
 You'll use the methods in the material providers library to create the keyrings that specify which keys protect your data.
 
-```
+```rust
 let mpl_config = MaterialProvidersConfig::builder().build()?;
 let mpl = mpl_client::Client::from_conf(mpl_config)?;
 ```
@@ -51,7 +51,7 @@ let mpl = mpl_client::Client::from_conf(mpl_config)?;
 **Step 4: Create an AWS KMS keyring.**
 To create the keyring, call the keyring method with the keyring input object. This example uses the `create_aws_kms_keyring()` method and specifies one KMS key.
 
-```
+```rust
 let kms_keyring = mpl
     .create_aws_kms_keyring()
     .kms_key_id(kms_key_id)
@@ -62,7 +62,7 @@ let kms_keyring = mpl
 
 **Step 5: Encrypt the plaintext.**
 
-```
+```rust
 let plaintext = example_data.as_bytes();
 
 let encryption_response = esdk_client.encrypt()
@@ -79,7 +79,7 @@ let ciphertext = encryption_response
 
 **Step 6: Decrypt your encrypted data using the same keyring you used on encrypt.**
 
-```
+```rust
 let decryption_response = esdk_client.decrypt()
     .ciphertext(ciphertext)
     .keyring(kms_keyring)

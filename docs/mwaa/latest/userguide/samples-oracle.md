@@ -171,7 +171,7 @@ Amazon MWAA will extract the contents of plugins.zip into `/usr/local/airflow/pl
 Apache Airflow will execute the contents of Python files in the plugins folder at startup. This is used to set and modify environment variables. The following steps describe the sample code for the custom plugin.
 + Copy the contents of the following code sample and save locally as `env_var_plugin_oracle.py`.
 
-  ```
+  ```python
   from airflow.plugins_manager import AirflowPlugin
   import os
 

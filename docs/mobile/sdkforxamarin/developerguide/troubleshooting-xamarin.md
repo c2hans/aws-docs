@@ -19,7 +19,7 @@ You will need to either modify the existing policy file or associate a new polic
 
 The following policy file shows how to grant access to an S3 bucket:
 
-```
+```default
 {
    "Statement":[
       {
@@ -39,7 +39,7 @@ The following policy file shows how to grant access to an S3 bucket:
 
 The following policy file shows how to grant access to a DynamoDB database:
 
-```
+```default
 {
    "Statement":[
       {

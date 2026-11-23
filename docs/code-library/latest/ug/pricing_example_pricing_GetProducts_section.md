@@ -58,7 +58,7 @@ For more information, see [Finding services and products using AWS Price List Qu
 **Tools for PowerShell V4**
 **Example 1: Returns details of all products for Amazon EC2.**
 
-```
+```powershell
 Get-PLSProduct -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Output:**
@@ -68,7 +68,7 @@ Get-PLSProduct -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Example 2: Returns data for Amazon EC2 in the us-east-1 region filtered by volume types of 'General Purpose' that are SSD-backed.**
 
-```
+```powershell
 Get-PLSProduct -ServiceCode AmazonEC2 -Filter @{Type="TERM_MATCH";Field="volumeType";Value="General Purpose"},@{Type="TERM_MATCH";Field="storageMedia";Value="SSD-backed"} -Region us-east-1
 ```
 **Output:**
@@ -81,7 +81,7 @@ Get-PLSProduct -ServiceCode AmazonEC2 -Filter @{Type="TERM_MATCH";Field="volumeT
 **Tools for PowerShell V5**
 **Example 1: Returns details of all products for Amazon EC2.**
 
-```
+```powershell
 Get-PLSProduct -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Output:**
@@ -91,7 +91,7 @@ Get-PLSProduct -ServiceCode AmazonEC2 -Region us-east-1
 ```
 **Example 2: Returns data for Amazon EC2 in the us-east-1 region filtered by volume types of 'General Purpose' that are SSD-backed.**
 
-```
+```powershell
 Get-PLSProduct -ServiceCode AmazonEC2 -Filter @{Type="TERM_MATCH";Field="volumeType";Value="General Purpose"},@{Type="TERM_MATCH";Field="storageMedia";Value="SSD-backed"} -Region us-east-1
 ```
 **Output:**

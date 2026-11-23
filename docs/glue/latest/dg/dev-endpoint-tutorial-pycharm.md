@@ -24,7 +24,7 @@ The tutorial uses Amazon S3 as a data source. If you want to use a JDBC data sou
 
 1. Create a file named `get_person_schema.py` in the project with the following content:
 
-   ```
+   ```python
    from pyspark.context import SparkContext
    from awsglue.context import GlueContext
 

@@ -41,6 +41,9 @@ To create a proxy mode firewall, specify `VpcEndpoint` and `NatGatewayCreateMapp
    "FirewallName": "{{string}}",
    "FirewallPolicyArn": "{{string}}",
    "FirewallPolicyChangeProtection": {{boolean}},
+   "IgwFirewallConfiguration": {
+      "EnforcementMode": "{{string}}"
+   },
    "NatGatewayCreateMappings": [
       {
          "AllocationIds": [ "{{string}}" ],
@@ -147,6 +150,12 @@ A setting indicating whether the firewall is protected against a change to the f
 Type: Boolean
 Required: No
 
+ ** [IgwFirewallConfiguration](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-IgwFirewallConfiguration"></a>
+Settings that make this firewall an internet gateway firewall. An internet gateway firewall inspects all traffic between a VPC and its internet gateway, without changes to your subnets or route tables. AWS Network Security Manager creates and manages internet gateway firewalls on your behalf, so you don't include this setting when you create a standard Network Firewall firewall.
+When this setting is present, `FirewallName` must equal the `VpcId`, `AvailabilityZoneMappings` is required and must use Availability Zone IDs, and you can't specify `SubnetMappings` or a transit gateway.
+Type: [IgwFirewallConfiguration](API_IgwFirewallConfiguration.md) object
+Required: No
+
  ** [NatGatewayCreateMappings](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-NatGatewayCreateMappings"></a>
 The NAT gateways that Network Firewall creates for a proxy mode firewall, one for each Availability Zone. When you specify this, you create a proxy mode firewall. Destinations see the IP address of the NAT gateway in the client's Availability Zone as the source of the traffic.
 Specify one mapping for each Availability Zone in `VpcEndpoint`, and no other Availability Zones. Each NAT gateway subnet must be in the `VpcEndpoint` VPC and can't be one of the firewall endpoint subnets.
@@ -236,6 +245,9 @@ Required: No
       "FirewallName": "string",
       "FirewallPolicyArn": "string",
       "FirewallPolicyChangeProtection": boolean,
+      "IgwFirewallConfiguration": {
+         "EnforcementMode": "string"
+      },
       "NatGatewayCreateMappings": [
          {
             "AllocationIds": [ "string" ],
@@ -301,6 +313,10 @@ Required: No
       "Status": "string",
       "SyncStates": {
          "string" : {
+            "AddressTranslations": {
+               "PublicIPv4Addresses": [ "string" ],
+               "PublicIPv6Addresses": [ "string" ]
+            },
             "Attachment": {
                "DnsName": "string",
                "EndpointId": "string",

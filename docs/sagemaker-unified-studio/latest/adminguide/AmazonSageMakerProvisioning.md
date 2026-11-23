@@ -15,7 +15,7 @@ The default `AmazonSageMakerProvisioning-<domainAccountId>` role has the followi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -42,7 +42,7 @@ If you are using your own query execution role (instead of the default [AmazonSa
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

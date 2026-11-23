@@ -33,7 +33,7 @@ You can subscribe to an MQTT topic to receive location data as it becomes availa
 
    **Contents of deviceposition.json**
 
-   ```
+   ```JSON
    {
        "coordinates": [
            {{11.11}},
@@ -105,7 +105,7 @@ To create a new Sidewalk device with positioning enabled, use the [`CreateWirele
 
 **Sample CreateWirelessDevice request**
 
-```
+```JSON
 POST /wireless-devices HTTP/1.1
 Content-type: application/json
 
@@ -128,7 +128,7 @@ To enable positioning for an existing Sidewalk device, use the [`UpdateWirelessD
 
 **Sample UpdateWirelessDevice request**
 
-```
+```JSON
 PATCH /wireless-devices/{{{Id}}} HTTP/1.1
 Content-type: application/json
 
@@ -179,7 +179,7 @@ To update the position information for a given wireless device, specify the coor
 
 **Sample of the UpdateResourcePosition API operation**
 
-```
+```JSON
 PATCH /resource-positions/{{ResourceIdentifier}}?resourceType=WirelessDevice HTTP/1.1
 {
     "coordinates": [
@@ -205,7 +205,7 @@ After updating the position, the following message will be published to your loc
 
 **Contents of deviceposition.json**
 
-```
+```JSON
 {
     "coordinates": [
         {{33.33}},
@@ -233,7 +233,7 @@ To get the position information for a given wireless device, use the [ GetResour
 
 **Sample of the GetResourcePosition API operation**
 
-```
+```JSON
 GET /resource-positions/{{ResourceIdentifier}}?resourceType=WirelessDevice HTTP/1.1
 ```
 
@@ -251,7 +251,7 @@ This command returns the position information of your wireless device as a GeoJS
 
 **Contents of get-resource-position-api-response.json**
 
-```
+```JSON
 {
     "coordinates": [
         {{33.33}},

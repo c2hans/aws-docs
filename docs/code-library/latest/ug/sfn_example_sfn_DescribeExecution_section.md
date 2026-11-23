@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/StepFunctions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Retrieve information about the specified Step Functions execution.
     /// </summary>
@@ -39,7 +39,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/stepfunctions#code-examples).
 
-```
+```java
     public static void describeExe(SfnClient sfnClient, String executionArn) {
         try {
             DescribeExecutionRequest executionRequest = DescribeExecutionRequest.builder()
@@ -77,7 +77,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/stepfunctions#code-examples).
 
-```
+```kotlin
 suspend fun describeExe(executionArnVal: String?) {
     val executionRequest =
         DescribeExecutionRequest {
@@ -112,7 +112,7 @@ suspend fun describeExe(executionArnVal: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
     def describe_run(self, run_arn):
         """
         Get data about a state machine run, such as its current status or final output.
@@ -143,7 +143,7 @@ suspend fun describeExe(executionArnVal: String?) {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sfn#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sfn->describeexecution(
           iv_executionarn = iv_execution_arn

@@ -11,7 +11,7 @@ Findings are what Tier 2 agents write. Actions are what customers and dealers do
 
  **Finding** (Tier 2 output):
 
-```
+```json
 {
   "finding_id": "FIND-{uuid}",
   "finding_key": "sha256:{agent_id}:{scope_field}:{scope_value}:{finding_kind}[:{subject_key}]",
@@ -70,7 +70,7 @@ Findings are what Tier 2 agents write. Actions are what customers and dealers do
 
  **Action** (approval from customer or dealer):
 
-```
+```json
 {
   "action_id": "AVX-ACT-{uuid}",
   "finding_id": "FIND-...",

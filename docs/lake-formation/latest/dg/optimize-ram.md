@@ -69,7 +69,7 @@ To share resources directly with IAM principals in another account or to enable 
 
 ****
 
-```
+```json
 
 {
   "Version":"2012-10-17",

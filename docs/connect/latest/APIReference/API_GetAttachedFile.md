@@ -129,7 +129,7 @@ Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
  ** [FileUseCaseType](#API_GetAttachedFile_ResponseSyntax) **   <a name="connect-GetAttachedFile-response-FileUseCaseType"></a>
 The use case for the file.
 Type: String
-Valid Values: `CONTACT_ANALYSIS | EMAIL_MESSAGE | EMAIL_MESSAGE_PLAIN_TEXT | EMAIL_MESSAGE_REDACTED | EMAIL_MESSAGE_PLAIN_TEXT_REDACTED | ATTACHMENT | VOICE_RECORDING`
+Valid Values: `CONTACT_ANALYSIS | EMAIL_MESSAGE | EMAIL_MESSAGE_PLAIN_TEXT | EMAIL_MESSAGE_REDACTED | EMAIL_MESSAGE_PLAIN_TEXT_REDACTED | ATTACHMENT | VOICE_RECORDING | VOICEMAIL_RECORDING | VOICEMAIL_RECORDING_REDACTED | VOICEMAIL_ANALYSIS | VOICEMAIL_ANALYSIS_REDACTED`
 
  ** [Tags](#API_GetAttachedFile_ResponseSyntax) **   <a name="connect-GetAttachedFile-response-Tags"></a>
 The tags used to organize, track, or control access for this resource. For example, `{ "Tags": {"key1":"value1", "key2":"value2"} }`.

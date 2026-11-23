@@ -25,7 +25,7 @@ If your function reads a file for the first time during an invocation rather tha
 
 The following example runs on Amazon Linux 2023. It installs the SOCI snapshotter, containerd, and nerdctl, then creates a SOCI index for an existing image in Amazon ECR and pushes the result. Replace the placeholder values with your own. For other ways to create and push a SOCI index, see [Getting started with the SOCI snapshotter](https://github.com/awslabs/soci-snapshotter/blob/main/docs/getting-started.md) on GitHub.
 
-```
+```bash
 sudo yum install -y soci-snapshotter containerd nerdctl
 sudo systemctl start soci-snapshotter
 sudo systemctl restart containerd

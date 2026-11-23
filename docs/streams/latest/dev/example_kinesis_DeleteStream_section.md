@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Kinesis#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.Kinesis;
@@ -90,7 +90,7 @@ For more information, see [Deleting a Stream](https://docs.aws.amazon.com/stream
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kinesis#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.kinesis.KinesisClient;
 import software.amazon.awssdk.services.kinesis.model.DeleteStreamRequest;
@@ -155,7 +155,7 @@ public class DeleteDataStream {
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified stream. You are prompted for confirmation before the command executes. To suppress confirmation prompting use the -Force switch.**
 
-```
+```powershell
 Remove-KINStream -StreamName "mystream"
 ```
 +  For API details, see [DeleteStream](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -163,7 +163,7 @@ Remove-KINStream -StreamName "mystream"
 **Tools for PowerShell V5**
 **Example 1: Deletes the specified stream. You are prompted for confirmation before the command executes. To suppress confirmation prompting use the -Force switch.**
 
-```
+```powershell
 Remove-KINStream -StreamName "mystream"
 ```
 +  For API details, see [DeleteStream](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -174,7 +174,7 @@ Remove-KINStream -StreamName "mystream"
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
 
-```
+```python
 class KinesisStream:
     """Encapsulates a Kinesis stream."""
 
@@ -207,7 +207,7 @@ class KinesisStream:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kinesis#code-examples).
 
-```
+```rust
 async fn remove_stream(client: &Client, stream: &str) -> Result<(), Error> {
     client.delete_stream().stream_name(stream).send().await?;
 
@@ -224,7 +224,7 @@ async fn remove_stream(client: &Client, stream: &str) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_kns->deletestream(
             iv_streamname = iv_stream_name ).

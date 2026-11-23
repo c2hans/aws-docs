@@ -31,7 +31,7 @@ aws kendra delete-thesaurus \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -57,7 +57,7 @@ print("Program ends.")
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazonaws.kendra;
 
 import software.amazon.awssdk.services.kendra.KendraClient;

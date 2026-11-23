@@ -62,7 +62,7 @@ aws elb attach-load-balancer-to-subnets --load-balancer-name {{my-load-balancer}
 
 The response lists all subnets for the load balancer. For example:
 
-```
+```json
 {
     "Subnets": [
         "subnet-5c11033e",
@@ -81,7 +81,7 @@ aws elb detach-load-balancer-from-subnets --load-balancer-name {{my-loadbalancer
 
 The response lists the remaining subnets for the load balancer. For example:
 
-```
+```json
 {
     "Subnets": [
         "subnet-15aaab61"

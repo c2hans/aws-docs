@@ -39,13 +39,13 @@ let response =   {
 
 Binary classification
 
-```
+```json
 {"score": 0.4, "predicted_label": 0}
 ```
 
 Regression
 
-```
+```json
 {"score": 0.4}
 ```
 

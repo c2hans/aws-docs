@@ -41,6 +41,8 @@ The principal components are:
 
 <a name="bedrock-managed-agents-openai-architecture"></a>![Your application calls BMA, which invokes an OpenAI model on Amazon Bedrock and exchanges tool requests and results with your execution environment.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/bma-architecture.png)
 
+BMA session and execution environment
+
 The service-managed conversation and the execution environment's files have separate lifecycles. Deleting a BMA session does not delete files that you store in your own S3 buckets or on your own host.
 
 ## Choose an execution environment

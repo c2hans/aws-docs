@@ -148,7 +148,7 @@ Replace `<snapshot_id>` with the actual snapshot ID retrieved from `GET /_cat/sn
 
   Example Response:
 
-  ```
+  ```json
   {
       "snapshots": [
           {

@@ -142,6 +142,19 @@ Service endpoint
 You can use the following endpoints for AWS Invoice Configuration, AWS Procurement Portal Preferences, and AWS Invoice Management:
 +  `https://invoicing.us-east-1.api.aws`
 
+## AWS Payments
+<a name="Welcome_AWS_Payments"></a>
+
+ AWS Payments manages how money moves between you and AWS. It holds the payment instruments you use to pay AWS and to receive money from AWS, such as cards and bank accounts. It collects payment for your AWS invoices, applies your payments and credit memos to them, and returns refunds.
+
+A payment instrument is a channel that moves money between you and AWS, and its payment method is the kind of instrument, such as a card or a bank account. A financial record is an invoice or credit memo. It shows how much of its amount is outstanding, processing, settled, and canceled as AWS applies payments and credits.
+
+With the AWS Payments API, you can read your financial records and account balances, and read your payment instruments and their status.
+
+The AWS Payments API provides the following endpoint:
+
+ `https://payments.us-east-1.api.aws`
+
 ## AWS Price List
 <a name="Welcome_AWS_Price_List_Service"></a>
 

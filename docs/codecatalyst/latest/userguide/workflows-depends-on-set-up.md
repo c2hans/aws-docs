@@ -62,7 +62,7 @@ When configuring dependencies, follow these guidelines:
 
 1. In an action that will depend on another, add code similar to the following:
 
-   ```
+   ```yaml
    {{action-name:}}
      DependsOn:
        - action-1

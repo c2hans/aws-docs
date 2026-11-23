@@ -97,7 +97,7 @@ You can specify certain user agent bots to either ‘Allow’ or ‘Disallow’ 
 
 You can also add a User-Agent suffix that can be used to allowlist your crawler in bot protection systems. Note that this suffix does not need to be added to the `robots.txt` file to make sure that no one can impersonate the User Agent string. For example, to allow the Web Crawler to crawl all website content and disallow crawling for any other robots, use the following directive:
 
-```
+```json
 User-agent: bedrockbot-UUID # Amazon Bedrock Web Crawler
 Allow: / # allow access to all pages
 User-agent: * # any (other) robot
@@ -161,7 +161,7 @@ You can't change the chunking strategy after connecting to the data source.
 
 To connect a knowledge base to a data source using WebCrawler, send a [CreateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt), specify `WEB` in the `type` field of the [DataSourceConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DataSourceConfiguration.html), and include the `webConfiguration` field. The following is an example of a configuration of Web Crawler for your Amazon Bedrock knowledge base.
 
-```
+```json
 {
     "webConfiguration": {
         "sourceConfiguration": {

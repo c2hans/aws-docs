@@ -14,6 +14,8 @@ If you choose to retrieve and reveal sensitive data samples for a finding again,
 
 For a demonstration of how you can retrieve and reveal sensitive data samples by using the Amazon Macie console, watch the following video:
 
+[![AWS Videos](https://img.youtube.com/vi/Js08sHGpxtI/0.jpg)](https://www.youtube.com/watch?v=Js08sHGpxtI)
+
 **Topics**
 + [Before you begin](#findings-retrieve-sd-proc-prereqs)
 + [Determining whether samples are available for a finding](#findings-retrieve-sd-proc-criteria)

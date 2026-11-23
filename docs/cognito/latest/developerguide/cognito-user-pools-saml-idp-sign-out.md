@@ -46,7 +46,7 @@ Your SAML provider might send a `LogoutResponse` with more than one `AuthnStatem
 
 Configure single logout with the `IDPSignout` parameter of a [CreateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html) or [UpdateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateIdentityProvider.html) API request. The following is an example `ProviderDetails` of an IdP that supports SAML single logout.
 
-```
+```json
 "ProviderDetails": {
       "MetadataURL" : "{{https://myidp.example.com/saml/metadata}}",
       "IDPSignout" : "{{true}}",,

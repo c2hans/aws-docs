@@ -12,7 +12,7 @@ With a valid profile ID, you should see values for your calculated attributes:
 
 **Example response**
 
-```
+```json
 {
     "CalculatedAttributeName": "_average_hold_time",
     "DisplayName": "Average hold time",
@@ -28,7 +28,7 @@ With a valid profile ID, you should see values for your calculated attributes:
 
 **Use the AWS CLI**
 
-```
+```bash
 aws customer-profiles list-calculated-attributes-for-profile --region {{your-region}} --domain-name {{your-domain-name}} --profile-id {{your-profile-id}}
 ```
 
@@ -36,20 +36,20 @@ aws customer-profiles list-calculated-attributes-for-profile --region {{your-reg
 
 Create a JSON file with the following contents:
 
-```
+```json
 {
     "DomainName": "your-domain-name",
     "ProfileId" "some-profile-id"
 }
 ```
 
-```
+```bash
 aws customer-profiles list-calculated-attributes-for-profile --region {{your-region}} --cli-input-json file://{{list_calculated_attributes_for_profile_cli}}.json
 ```
 
 **Endpoint:**
 
-```
+```json
 https://profile.{{your-region}}.amazonaws.com/domains/{{your-domain-name}}/profile/{{your-profile-id}}/calculated-attributes/
 ```
 
@@ -58,7 +58,7 @@ https://profile.{{your-region}}.amazonaws.com/domains/{{your-domain-name}}/profi
 
 **Use the AWS CLI**:
 
-```
+```bash
 aws customer-profiles get-calculated-attributes-for-profile --region {{your-region}} --domain-name {{your-domain-name}} --calculated-attribute-name {{your-calculated-attribute-name}} --profile-id {{your-profile-id}}
 ```
 
@@ -66,7 +66,7 @@ aws customer-profiles get-calculated-attributes-for-profile --region {{your-regi
 
 Create a JSON file with the following contents:
 
-```
+```json
 {
     "DomainName": "your-domain-name",
     "CalculatedAttributeName": "your-calculated-attribute-name",
@@ -74,12 +74,12 @@ Create a JSON file with the following contents:
 }
 ```
 
-```
+```bash
 aws customer-profiles get-calculated-attributes-for-profile --region {{your-region}} --cli-input-json file://{{list_calculated_attributes_for_profile_cli}}.json
 ```
 
 **Endpoint:**
 
-```
+```json
 https://profile.{{your-region}}.amazonaws.com/domains/{{your-domain-name}}/profile/{{your-profile-id}}/calculated-attributes/{{your-calculated-attribute-name}}
 ```

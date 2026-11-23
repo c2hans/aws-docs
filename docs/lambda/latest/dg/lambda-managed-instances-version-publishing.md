@@ -10,13 +10,13 @@ Lambda Managed Instances functions support the same numbered versioning workflow
 
 The following AWS CLI command creates or republishes the `$LATEST.PUBLISHED` version.
 
-```
+```bash
 aws lambda publish-version --function-name my-function --publish-to LATEST_PUBLISHED
 ```
 
 You should see the following output:
 
-```
+```json
 {
   "FunctionName": "my-function",
   "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:$LATEST.PUBLISHED",

@@ -37,7 +37,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/json/JsonSerializer.h>
 #include <aws/monitoring/CloudWatchClient.h>
@@ -863,7 +863,7 @@ The following code example shows how to use `DeleteAlarmMuteRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DeleteAlarmMuteRuleRequest.h>
@@ -871,7 +871,7 @@ Include the required files.
 ```
 Delete the alarm mute rule.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -900,7 +900,7 @@ The following code example shows how to use `DeleteAlarms`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DeleteAlarmsRequest.h>
@@ -908,7 +908,7 @@ Include the required files.
 ```
 Delete the alarm.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::DeleteAlarmsRequest request;
         request.AddAlarmNames(alarm_name);
@@ -936,7 +936,7 @@ The following code example shows how to use `DescribeAlarmContributors`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/AlarmContributor.h>
@@ -945,7 +945,7 @@ Include the required files.
 ```
 Describe the contributors to a PromQL alarm.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1014,7 +1014,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DescribeAlarmsRequest.h>
@@ -1024,7 +1024,7 @@ Include the required files.
 ```
 Describe the alarms.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::DescribeAlarmsRequest request;
         request.SetMaxRecords(1);
@@ -1081,7 +1081,7 @@ The following code example shows how to use `DisableAlarmActions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/DisableAlarmActionsRequest.h>
@@ -1089,7 +1089,7 @@ Include the required files.
 ```
 Disable the alarm actions.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
 
         Aws::CloudWatch::Model::DisableAlarmActionsRequest disableAlarmActionsRequest;
@@ -1119,7 +1119,7 @@ The following code example shows how to use `EnableAlarmActions`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/EnableAlarmActionsRequest.h>
@@ -1128,7 +1128,7 @@ Include the required files.
 ```
 Enable the alarm actions.
 
-```
+```cpp
     Aws::CloudWatch::CloudWatchClient cw;
     Aws::CloudWatch::Model::PutMetricAlarmRequest request;
     request.SetAlarmName(alarm_name);
@@ -1183,7 +1183,7 @@ The following code example shows how to use `GetAlarmMuteRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/AlarmMuteRuleStatus.h>
@@ -1192,7 +1192,7 @@ Include the required files.
 ```
 Get the alarm mute rule.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1237,7 +1237,7 @@ The following code example shows how to use `GetOTelEnrichment`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/GetOTelEnrichmentRequest.h>
@@ -1246,7 +1246,7 @@ Include the required files.
 ```
 Get the OpenTelemetry enrichment status.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1285,7 +1285,7 @@ The following code example shows how to use `ListAlarmMuteRules`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/AlarmMuteRuleStatus.h>
@@ -1294,7 +1294,7 @@ Include the required files.
 ```
 List the alarm mute rules.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1337,7 +1337,7 @@ The following code example shows how to use `ListMetrics`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/ListMetricsRequest.h>
@@ -1347,7 +1347,7 @@ Include the required files.
 ```
 List the metrics.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::ListMetricsRequest request;
 
@@ -1417,7 +1417,7 @@ The following code example shows how to use `PutAlarmMuteRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/MuteTargets.h>
@@ -1428,7 +1428,7 @@ Include the required files.
 ```
 Create the alarm mute rule.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1479,7 +1479,7 @@ The following code example shows how to use `PutMetricAlarm`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files for a PromQL alarm.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/AlarmPromQLCriteria.h>
@@ -1489,7 +1489,7 @@ Include the required files for a PromQL alarm.
 ```
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1523,7 +1523,7 @@ Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 ```
 Include the required files for a metric alarm.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/PutMetricAlarmRequest.h>
@@ -1531,7 +1531,7 @@ Include the required files for a metric alarm.
 ```
 Create the alarm to watch the metric.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::PutMetricAlarmRequest request;
         request.SetAlarmName(alarm_name);
@@ -1576,7 +1576,7 @@ The following code example shows how to use `PutMetricData`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/PutMetricDataRequest.h>
@@ -1584,7 +1584,7 @@ Include the required files.
 ```
 Put data into the metric.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
 
         Aws::CloudWatch::Model::Dimension dimension;
@@ -1623,7 +1623,7 @@ The following code example shows how to use `StartOTelEnrichment`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/StartOTelEnrichmentRequest.h>
@@ -1631,7 +1631,7 @@ Include the required files.
 ```
 Start OpenTelemetry enrichment.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1659,7 +1659,7 @@ The following code example shows how to use `StopOTelEnrichment`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/StopOTelEnrichmentRequest.h>
@@ -1667,7 +1667,7 @@ Include the required files.
 ```
 Stop OpenTelemetry enrichment.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";

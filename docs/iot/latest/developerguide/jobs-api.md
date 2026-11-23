@@ -25,7 +25,7 @@ Contains information about an error that occurred during an AWS IoT Jobs service
 
 The following example shows the syntax of this operation:
 
-```
+```JSON
 {
     "code": "ErrorCode",
     "message": "string",

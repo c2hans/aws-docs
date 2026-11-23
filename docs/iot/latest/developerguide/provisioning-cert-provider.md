@@ -64,7 +64,7 @@ The following diagram is a simplified illustration of how self-certificate signi
 
 AWS IoT Core sends the following object to the Lambda function when a device registers with it. The value of `certificateSigningRequest` is the CSR in [Privacy-Enhanced Mail (PEM) format](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-format.html) that's provided in the `CreateCertificateFromCsr` request. The `principalId` is the ID of the principal used to connect to AWS IoT Core when making the `CreateCertificateFromCsr` request. `clientId` is the client ID set for the MQTT connection.
 
-```
+```JSON
 {
 	"certificateSigningRequest": "string",
 	"principalId": "string",
@@ -77,7 +77,7 @@ AWS IoT Core sends the following object to the Lambda function when a device reg
 
 The Lambda function must return a response that contains the `certificatePem` value. The following is an example of a successful response. AWS IoT Core will use the return value (`certificatePem`) to create the certificate.
 
-```
+```JSON
 {
 	"certificatePem": "string"
 }
@@ -90,7 +90,7 @@ If the registration is successful, `CreateCertificateFromCsr` will return the sa
 
 Before creating a certificate provider, you must create a Lambda function to sign a CSR. The following is an example Lambda function in Python. This function calls AWS Private CA to sign the input CSR, using a private CA and the `SHA256WITHRSA` signing algorithm. The returned client certificate will be valid for one year. For more information about AWS Private CA and how to create a private CA, see [What is AWS Private CA?](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html) and [Creating a private CA](https://docs.aws.amazon.com/privateca/latest/userguide/create-CA.html).
 
-```
+```python
 import os
 import time
 import uuid
@@ -131,7 +131,7 @@ The following resource-based policy example for [Lambda](https://docs.aws.amazon
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Id": "InvokePermission",
@@ -179,7 +179,7 @@ aws iot create-certificate-provider \
 
 The following shows an example output for this command:
 
-```
+```json
 {
 	"certificateProviderName": "my-certificate-provider",
 	"certificateProviderArn": "arn:aws:iot:us-east-1:123456789012:certificateprovider:my-certificate-provider"
@@ -225,7 +225,7 @@ aws iot create-certificate-provider \
 
 The following shows an example output for this command:
 
-```
+```json
 {
 	"certificateProviderName": "my-certificate-provider",
 	"certificateProviderArn": "arn:aws:iot:us-east-1:123456789012:certificateprovider:my-certificate-provider"
@@ -248,7 +248,7 @@ aws iot update-certificate-provider \
 
 The following shows an example output for this command:
 
-```
+```json
 {
 	"certificateProviderName": "my-certificate-provider",
 	"certificateProviderArn": "arn:aws:iot:us-east-1:123456789012:certificateprovider:my-certificate-provider"
@@ -268,7 +268,7 @@ aws iot describe-certificate-provider --certificateProviderName {{my-certificate
 
 The following shows an example output for this command:
 
-```
+```json
 {
 	"certificateProviderName": "my-certificate-provider",
 	"lambdaFunctionArn": "arn:aws:lambda:us-east-1:123456789012:function:my-function",
@@ -306,7 +306,7 @@ aws iot list-certificate-providers
 
 The following shows an example output for this command:
 
-```
+```json
 {
 	"certificateProviders": [
 		{

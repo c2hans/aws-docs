@@ -12,7 +12,7 @@ To create a signal catalog, run the following command.
 
 Replace {{signal-catalog-configuration}} with the name of the .json file that contains the configuration.
 
-```
+```bash
 aws iotfleetwise create-signal-catalog --cli-input-json file://{{signal-catalog-configuration}}.json
 ```
 
@@ -23,7 +23,7 @@ aws iotfleetwise create-signal-catalog --cli-input-json file://{{signal-catalog-
 
 For more information about how to configure branches, attributes, sensors, and actuators, see [Configure AWS IoT FleetWise signals](define-signal.md).
 
-```
+```json
 {
     "name": "signal-catalog-name",
     "description": "description",
@@ -206,7 +206,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

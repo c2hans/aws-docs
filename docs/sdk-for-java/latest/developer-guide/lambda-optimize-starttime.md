@@ -22,7 +22,7 @@ Along with the explicit use of an AWS CRT-based client, you can remove other HTT
 
 The following snippet of a Maven `pom.xml` file shows the exclusion of the Apache-based HTTP client and the Netty-based HTTP client. (These clients aren't needed when you use an AWS CRT-based client.) This example excludes the HTTP client artifacts from the S3 client dependency and adds the `aws-crt-client` artifact to allow access to the AWS CRT-based HTTP clients.
 
-```
+```xml
 <project>
     <properties>
         <aws.java.sdk.version>2.27.21</aws.java.sdk.version>
@@ -82,7 +82,7 @@ If you intend to use [Lambda SnapStart for Java](#lambda-quick-snapstart) at som
 
 The following code snippet shows an S3 service client appropriately configured for use in a Lambda environment.
 
-```
+```java
 S3Client s3Client = S3Client.builder()
     .region(Region.of(System.getenv(SdkSystemSetting.AWS_REGION.environmentVariable())))
     .credentialsProvider(EnvironmentVariableCredentialsProvider.create())
@@ -97,7 +97,7 @@ We recommend initializing an SDK client outside of the Lambda handler method. Th
 
 In the following example, the `S3Client` instance is initialized in the constructor using a static factory method. If the container that is managed by the Lambda environment is reused, the initialized `S3Client` instance is reused.
 
-```
+```java
 public class App implements RequestHandler<Object, Object> {
     private final S3Client s3Client;
 

@@ -12,7 +12,7 @@ To view different versions of the model card, choose **Actions**, **Select versi
 
 You can edit a model card using the `{{model_card}}.update()` method. Updating a model card creates a new model card version in order to have an immutable record of model changes. You cannot update the name of a model card.
 
-```
+```python
 {{my_card}}.model_overview.model_description = {{"updated-model-decription"}}
 {{my_card}}.update()
 ```

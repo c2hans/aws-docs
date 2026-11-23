@@ -22,7 +22,7 @@ This service-linked role has an IAM managed permissions policy attached to it na
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -83,7 +83,7 @@ This service-linked role has an IAM managed permissions policy attached to it na
 **Note**
 To allow an IAM entity such as a user, group, or role to be able to create, edit, or delete a service-linked role, you must set the appropriate permissions, like this:
 
-```
+```json
 {
   "Action": "iam:CreateServiceLinkedRole",
   "Effect": "Allow",

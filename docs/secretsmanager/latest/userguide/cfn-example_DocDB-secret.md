@@ -16,7 +16,7 @@ For information about creating resources with CloudFormation, see [Learn templat
 ## JSON
 <a name="cfn-example_DocDB-secret.json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Transform":"AWS::SecretsManager-2020-07-23",
@@ -213,7 +213,7 @@ For information about creating resources with CloudFormation, see [Learn templat
 ## YAML
 <a name="cfn-example_DocDB-secret.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::SecretsManager-2020-07-23
 Resources:

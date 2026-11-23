@@ -17,7 +17,7 @@ The `$submit` operation enables you to electronically submit prior authorization
 ## API endpoint
 <a name="submit-api-endpoint"></a>
 
-```
+```http
 POST /datastore/{datastoreId}/r4/Claim/$submit
 Content-Type: application/fhir+json
 ```
@@ -59,7 +59,7 @@ Your request must be a FHIR Bundle resource with:
 ## Example request
 <a name="submit-example-request"></a>
 
-```
+```json
 POST /datastore/example-datastore/r4/Claim/$submit
 Content-Type: application/fhir+json
 Authorization: Bearer <your-token>
@@ -300,7 +300,7 @@ You'll receive a PAS Response Bundle containing:
 + All original resources from your request
 + Timestamp confirming receipt
 
-```
+```json
 {
   "resourceType" : "Bundle",
   "identifier": {
@@ -583,7 +583,7 @@ You'll receive a PAS Response Bundle containing:
 
 Returned when the request format is invalid or malformed.
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [{
@@ -599,7 +599,7 @@ Returned when the request format is invalid or malformed.
 
 Returned when the same prior authorization request has already been submitted (duplicate submission detected).
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [{
@@ -618,7 +618,7 @@ The `$submit` operation is idempotent. Submitting the same request multiple time
 
 Returned when FHIR validation fails.
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [{

@@ -19,7 +19,7 @@ After you create your key, configure the following permission policies.
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Id": "KMS key policy",
@@ -60,7 +60,7 @@ After you create your key, configure the following permission policies.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -88,7 +88,7 @@ After you create your key, configure the following permission policies.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

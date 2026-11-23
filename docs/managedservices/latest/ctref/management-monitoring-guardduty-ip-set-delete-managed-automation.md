@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-monitoring-guardduty-ip-set-delete-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "IpSetId": "0cb0141ab9fbde177613ab9436212e90",
   "Region": "us-east-1"
@@ -147,7 +147,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-monitoring-guardduty-ip-set-delete-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "DetectorId": "12abc34d567e8fa901bc2d34e56789f0",
   "IpSetId": "0cb0141ab9fbde177613ab9436212e90",

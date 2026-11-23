@@ -69,7 +69,7 @@ We open our *stack file* in our IDE or editor and add the new interface, class, 
 **Example**
 File: `lib/multistack-stack.ts`
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -88,7 +88,7 @@ export class MultistackStack extends cdk.Stack {
 File: `lib/multistack-stack.js`
 JavaScript doesn’t have an interface feature; we don’t need to add any code.
 
-```
+```javascript
 const cdk = require('aws-cdk-stack');
 
 class MultistackStack extends cdk.Stack {
@@ -104,7 +104,7 @@ module.exports = { MultistackStack }
 File: `multistack/multistack_stack.py`
 Python does not have an interface feature, so we’ll extend our stack to accept the new property by adding a keyword argument.
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 
@@ -121,7 +121,7 @@ class MultistackStack(cdk.Stack):
 File: `src/main/java/com/myorg/MultistackStack.java`
 It’s more complicated than we really want to get into to extend a props type in Java. Instead, write the stack’s constructor to accept an optional Boolean parameter. Because `props` is an optional argument, we’ll write an additional constructor that lets you skip it. It will default to `false`.
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.Stack;
@@ -150,7 +150,7 @@ public class MultistackStack extends Stack {
 ```
 File: `src/Multistack/MultistackStack.cs`
 
-```
+```csharp
 using Amazon.CDK;
 using constructs;
 
@@ -182,7 +182,7 @@ Next, we define our stack class, using our new property. New code is highlighted
 **Example**
 File: `lib/multistack-stack.ts`
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from constructs;
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -212,7 +212,7 @@ export class MultistackStack extends cdk.Stack {
 ```
 File: `lib/multistack-stack.js`
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 
@@ -239,7 +239,7 @@ module.exports = { MultistackStack }
 ```
 File: `multistack/multistack_stack.py`
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 from aws_cdk import aws_s3 as s3
@@ -265,7 +265,7 @@ class MultistackStack(cdk.Stack):
 ```
 File: `src/main/java/com/myorg/MultistackStack.java`
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.Stack;
@@ -308,7 +308,7 @@ public class MultistackStack extends Stack {
 ```
 File: `src/Multistack/MultistackStack.cs`
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.S3;
 
@@ -355,7 +355,7 @@ In our *application file*, we add the code to instantiate two separate stacks. W
 **Example**
 File: `bin/multistack.ts`
 
-```
+```javascript
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -377,7 +377,7 @@ app.synth();
 ```
 File: `bin/multistack.js`
 
-```
+```javascript
 #!/usr/bin/env node
 const cdk = require('aws-cdk-lib');
 const { MultistackStack } = require('../lib/multistack-stack');
@@ -398,7 +398,7 @@ app.synth();
 ```
 File: `./app.py`
 
-```
+```python
 #!/usr/bin/env python3
 
 import aws_cdk as cdk
@@ -418,7 +418,7 @@ app.synth()
 ```
 File: `src/main/java/com/myorg/MultistackApp.java`
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -447,7 +447,7 @@ public class MultistackApp {
 ```
 File: src/Multistack/Program.cs
 
-```
+```csharp
 using Amazon.CDK;
 
 namespace Multistack

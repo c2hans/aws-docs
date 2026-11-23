@@ -10,7 +10,7 @@ Currently, CodeCatalyst only supports `postStart` events in your devfile. For mo
 
 The following example shows you how to add `postStart` event bindings in your devfile.
 
-```
+```yaml
 commands:
   - id: executescript
     exec:

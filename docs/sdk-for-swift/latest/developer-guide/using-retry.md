@@ -50,7 +50,7 @@ In the `adaptive` retry mode, initial and retry requests may be delayed by an ad
 
 First, import the modules needed to configure retry:
 
-```
+```swift
 import AWSS3
 import SmithyRetries
 import SmithyRetriesAPI
@@ -58,7 +58,7 @@ import SmithyRetriesAPI
 
 Then create the custom configuration. This example's `S3ClientConfig` asks for the client to make up to three attempts for each action, using the `adaptive` retry mode.
 
-```
+```swift
         let config: S3Client.S3ClientConfig
 
         // Create an Amazon S3 client configuration object that specifies the

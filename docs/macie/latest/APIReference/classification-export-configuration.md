@@ -73,7 +73,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### PUT schema
 <a name="classification-export-configuration-request-body-put-example"></a>
 
-```
+```json
 {
   "configuration": {
     "s3Destination": {
@@ -92,7 +92,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### GetClassificationExportConfigurationResponse schema
 <a name="classification-export-configuration-response-body-getclassificationexportconfigurationresponse-example"></a>
 
-```
+```json
 {
   "configuration": {
     "s3Destination": {
@@ -108,7 +108,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### PutClassificationExportConfigurationResponse schema
 <a name="classification-export-configuration-response-body-putclassificationexportconfigurationresponse-example"></a>
 
-```
+```json
 {
   "configuration": {
     "s3Destination": {
@@ -124,7 +124,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### ValidationException schema
 <a name="classification-export-configuration-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### ServiceQuotaExceededException schema
 <a name="classification-export-configuration-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### AccessDeniedException schema
 <a name="classification-export-configuration-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### ResourceNotFoundException schema
 <a name="classification-export-configuration-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -160,7 +160,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### ConflictException schema
 <a name="classification-export-configuration-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -169,7 +169,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### ThrottlingException schema
 <a name="classification-export-configuration-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -178,7 +178,7 @@ Adds or updates the configuration settings for storing data classification resul
 #### InternalServerException schema
 <a name="classification-export-configuration-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

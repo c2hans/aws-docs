@@ -23,7 +23,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-websocketapi-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::WebSocketApi
 Properties:
   [ApiKeySelectionExpression](#sam-websocketapi-apikeyselectionexpression): {{String}}
@@ -172,7 +172,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 The following example creates a WebSocket API with three routes.
 
-```
+```yaml
 Resources:
   MyWebSocketApi:
     Type: AWS::Serverless::WebSocketApi
@@ -213,7 +213,7 @@ Resources:
 
 The following example creates a WebSocket API with a Lambda authorizer.
 
-```
+```yaml
 Resources:
   MyWebSocketApi:
     Type: AWS::Serverless::WebSocketApi

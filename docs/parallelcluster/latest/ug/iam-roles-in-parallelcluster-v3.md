@@ -73,7 +73,7 @@ If existing Amazon EFS file systems are the only file systems used in your clust
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -353,7 +353,7 @@ In case you need to create and manage a cluster with AWS Batch scheduler, the fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -444,7 +444,7 @@ In case you need to create and manage a cluster with AWS Batch scheduler, the fo
 
 To create and manage a cluster with [LoginNodes](LoginNodes-v3.md), add the following policy to the `pcluster` user. This policy grants the permissions to create the required service-linked roles and to manage the Auto Scaling groups and load balancers that the login nodes use:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -540,7 +540,7 @@ If existing Amazon FSx file systems are the only file systems used in your clust
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -604,7 +604,7 @@ Users that intend to create custom Amazon EC2 images with AWS ParallelCluster mu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -851,7 +851,7 @@ This mode enables the user to have IAM Administrator privileges in the AWS accou
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -939,7 +939,7 @@ When building a custom image the following parameters are required:
 
 The IAM roles passed as part of the above listed parameters must be created on the `/parallelcluster/` path prefix. If this isn't possible, the user policy needs to be updated to grant `iam:PassRole` permission on the specific custom roles, as in the following example.
 
-```
+```json
 {
    "Condition": {
        "StringEqualsIfExists": {
@@ -984,7 +984,7 @@ If you configure the [`HeadNode`](HeadNode-v3.md) / [`Iam`](HeadNode-v3.md#HeadN
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1112,7 +1112,7 @@ Here is the minimal set of policies to be used as part of this role when the sch
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -1269,7 +1269,7 @@ AWS ParallelCluster version 3.15.1 and earlier supports AWS Batch as a scheduler
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -1426,7 +1426,7 @@ Here is the minimal set of policies to be used as part of this role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1497,7 +1497,7 @@ Here is the minimal set of policies to be used as part of this role:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -1548,7 +1548,7 @@ Attach the following minimal set of policies to this role:
 + Attach the `arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore` managed IAM policy. For more information, see [AWS managed policies for AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/security_iam_service-with-iam.html#managed-policies) in the *AWS Systems Manager User Guide*.
 + Attach an additional IAM policy with the permissions that login nodes require. The following policy grants login nodes the permissions to read objects from Amazon S3, describe the cluster CloudFormation stack, read and write items in the AWS ParallelCluster DynamoDB tables, and complete Auto Scaling lifecycle actions:
 
-  ```
+  ```json
   {
       "Version": "2012-10-17",
       "Statement": [
@@ -1626,7 +1626,7 @@ Here is the minimal set of policies to be used as part of this role:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -1663,7 +1663,7 @@ Here is the minimal set of policies to be used as part of this role:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

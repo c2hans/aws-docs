@@ -64,7 +64,7 @@ The OAuth token expires based on the session duration configured for the IAM rol
 **Prerequisites**
 Grant OAuth sign-in permissions to your IAM role or user. Add an explicit `Allow` for the `signin:AuthorizeOAuth2Access` and `signin:CreateOAuth2Token` actions to your IAM policy, as shown in the following policy.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ To sign in again after the token expires, the connector owner must open the conn
 **Claude Code CLI**
 Run the following command:
 
-```
+```bash
 claude mcp add partnercentral --transport http https://partnercentral-agents-mcp.us-east-1.api.aws/mcp
 ```
 
@@ -152,7 +152,7 @@ https://partnercentral-agents-mcp.us-east-1.api.aws/mcp
 **Kiro CLI (v3 or later)**
 Run the following command:
 
-```
+```bash
 kiro-cli --v3 mcp add --name partnercentral --url https://partnercentral-agents-mcp.us-east-1.api.aws/mcp
 ```
 
@@ -193,7 +193,7 @@ Sign requests using AWS Signature Version 4 with the following parameters:
 
 Example using `awscurl`:
 
-```
+```bash
 awscurl --service partnercentral-agents-mcp --region us-east-1 \
   -X POST -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","method":"tools/list","id":1}' \
@@ -208,7 +208,7 @@ When you connect to the MCP server, you have protocol access only. To perform Pa
 **Restricting MCP access**
 By default, all authenticated AWS identities have protocol access to the MCP server. To block MCP access for specific users or accounts, apply an explicit Deny on `partnercentral:InvokeMcp`:
 
-```
+```JSON
 {
     "Effect": "Deny",
     "Action": "partnercentral:InvokeMcp",
@@ -228,7 +228,7 @@ The request and response format is identical for both OAuth and SigV4 authentica
 
 Send an `initialize` request to establish the protocol:
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 1,
@@ -246,7 +246,7 @@ Send an `initialize` request to establish the protocol:
 
 Expected response:
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 1,
@@ -268,7 +268,7 @@ Expected response:
 ### List available tools
 <a name="mcp-list-tools"></a>
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 2,
@@ -315,7 +315,7 @@ To actually perform Partner Central operations through the agent, you need addit
 
 **Opportunity management:**
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -334,7 +334,7 @@ To actually perform Partner Central operations through the agent, you need addit
 
 **Funding programs:**
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -356,7 +356,7 @@ To actually perform Partner Central operations through the agent, you need addit
 
 **Marketplace access:**
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -371,7 +371,7 @@ To actually perform Partner Central operations through the agent, you need addit
 
 **Partner Central Onboarding:**
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -401,7 +401,7 @@ To actually perform Partner Central operations through the agent, you need addit
 
 For Marketplace seller setup, also add:
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -416,7 +416,7 @@ For Marketplace seller setup, also add:
 
 For service-linked role management (Resale Authorizations/CPPO):
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": [
@@ -432,7 +432,7 @@ For service-linked role management (Resale Authorizations/CPPO):
 
 For development and testing, you can combine all permissions into a single policy:
 
-```
+```bash
 aws iam create-policy \
     --policy-name PartnerCentralAgentsFullAccess \
     --policy-document '{
@@ -510,7 +510,7 @@ aws iam create-policy \
 
 For production environments or read-only use cases, restrict permissions to read operations:
 
-```
+```bash
 aws iam create-policy \
     --policy-name PartnerCentralAgentReadOnly \
     --policy-document '{
@@ -556,7 +556,7 @@ When making requests to Partner Central agents MCP, we recommend including the c
 
 For code that directly constructs MCP `tools/call` requests, provide the `_meta` field on requests.
 
-```
+```JSON
 {
     "method": "tools/call",
     "params": {
@@ -583,7 +583,7 @@ For code that directly constructs MCP `tools/call` requests, provide the `_meta`
 
 For custom MCP clients establishing sessions, provide MCP header info inside the `clientInfo` field:
 
-```
+```JSON
 {
     "method": "initialize",
     "params": {
@@ -616,7 +616,7 @@ Server URL: `https://partnercentral-agents-mcp.us-east-1.api.aws/mcp?appId=<Inte
 
 Send a simple message to confirm everything is working. Use the `Sandbox` catalog for testing:
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 3,
@@ -644,7 +644,7 @@ If you receive a response with `"status": "complete"` and a text reply from the 
 ### Query your opportunities
 <a name="mcp-query-opportunities"></a>
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 4,
@@ -668,7 +668,7 @@ If you receive a response with `"status": "complete"` and a text reply from the 
 ### Check funding eligibility
 <a name="mcp-check-funding"></a>
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 5,
@@ -692,7 +692,7 @@ If you receive a response with `"status": "complete"` and a text reply from the 
 ### Retrieve session history
 <a name="mcp-retrieve-session"></a>
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 6,
@@ -710,7 +710,7 @@ If you receive a response with `"status": "complete"` and a text reply from the 
 ### Partner onboarding
 <a name="mcp-partner-onboarding-task"></a>
 
-```
+```JSON
 {
     "jsonrpc": "2.0",
     "id": 7,

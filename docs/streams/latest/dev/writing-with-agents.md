@@ -81,7 +81,7 @@ CMD ["start-aws-kinesis-agent"]
 
    In this configuration file, specify the files ( `"filePattern"` ) from which the agent collects data, and the name of the stream ( `"kinesisStream"` ) to which the agent sends data. Note that the file name is a pattern, and the agent recognizes file rotations. You can rotate files or create new files no more than once per second. The agent uses the file creation timestamp to determine which files to track and tail into your stream; creating new files or rotating files more frequently than once per second does not allow the agent to differentiate properly between them.
 
-   ```
+   ```json
    {
       "flows": [
            {
@@ -158,7 +158,7 @@ The following are the flow configuration settings.
 
 By specifying multiple flow configuration settings, you can configure the agent to monitor multiple file directories and send data to multiple streams. In the following configuration example, the agent monitors two file directories and sends data to an Kinesis stream and a Firehose delivery stream respectively. Note that you can specify different endpoints for Kinesis Data Streams and Firehose so that your Kinesis stream and Firehose delivery stream don’t need to be in the same region.
 
-```
+```json
 {
     "cloudwatch.emitMetrics": {{true}},
     "kinesis.endpoint": "{{https://your/kinesis/endpoint}}",
@@ -188,7 +188,7 @@ The agent supports the following processing options listed. Because the agent is
 `SINGLELINE`
 Converts a multi-line record to a single line record by removing newline characters, leading spaces, and trailing spaces.
 
-```
+```json
 {
     "optionName": "SINGLELINE"
 }
@@ -197,7 +197,7 @@ Converts a multi-line record to a single line record by removing newline charact
 `CSVTOJSON`
 Converts a record from delimiter separated format to JSON format.
 
-```
+```json
 {
     "optionName": "CSVTOJSON",
     "customFieldNames": [ "{{field1}}", "{{field2}}", {{...}} ],
@@ -212,7 +212,7 @@ The string used as the delimiter in the record. The default is a comma (,).
 `LOGTOJSON`
 Converts a record from a log format to JSON format. The supported log formats are **Apache Common Log**, **Apache Combined Log**, **Apache Error Log**, and **RFC3164 Syslog**.
 
-```
+```json
 {
     "optionName": "LOGTOJSON",
     "logFormat": "{{logformat}}",
@@ -234,7 +234,7 @@ The custom field names used as keys in each JSON key value pair. You can use thi
 **Example : LOGTOJSON configuration**  <a name="example-logtojson"></a>
 Here is one example of a `LOGTOJSON` configuration for an Apache Common Log entry converted to JSON format:
 
-```
+```json
 {
     "optionName": "LOGTOJSON",
     "logFormat": "COMMONAPACHELOG"
@@ -254,7 +254,7 @@ After conversion:
 **Example : LOGTOJSON configuration with custom fields**  <a name="example-logtojson-custom-fields"></a>
 Here is another example `LOGTOJSON` configuration:
 
-```
+```json
 {
     "optionName": "LOGTOJSON",
     "logFormat": "COMMONAPACHELOG",
@@ -270,7 +270,7 @@ With this configuration setting, the same Apache Common Log entry from the previ
 **Example : Convert Apache common log entry**  <a name="example-apache-common-log-entry"></a>
 The following flow configuration converts an Apache Common Log entry to a single line record in JSON format:
 
-```
+```json
 {
     "flows": [
         {
@@ -290,7 +290,7 @@ The following flow configuration converts an Apache Common Log entry to a single
 **Example : Convert multi-line records**  <a name="example-convert-multiline"></a>
 The following flow configuration parses multi-line records whose first line starts with "`[SEQUENCE=`". Each record is first converted to a single line record. Then, values are extracted from the record based on a tab delimiter. Extracted values are mapped to specified `customFieldNames` values to form a single-line record in JSON format.
 
-```
+```json
 {
     "flows": [
         {
@@ -315,7 +315,7 @@ The following flow configuration parses multi-line records whose first line star
 **Example : LOGTOJSON configuration with match pattern**  <a name="example-logtojson-match-pattern"></a>
 Here is one example of a `LOGTOJSON` configuration for an Apache Common Log entry converted to JSON format, with the last field (bytes) omitted:
 
-```
+```json
 {
     "optionName": "LOGTOJSON",
     "logFormat": "COMMONAPACHELOG",

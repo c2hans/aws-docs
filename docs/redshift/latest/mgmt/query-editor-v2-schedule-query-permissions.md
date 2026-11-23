@@ -23,7 +23,7 @@ For the IAM user logged into query editor v2, edit the IAM user using the IAM co
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

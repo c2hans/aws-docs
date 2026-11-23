@@ -43,7 +43,7 @@ The `sso-session` section of the `config` file is used to group configuration va
 
 The following shared `config` file example configures the SDK or tool using a `dev` profile to request IAM Identity Center credentials.
 
-```
+```ini
 [profile {{dev}}]
 sso_session = {{my-sso}}
 sso_account_id = {{111122223333}}
@@ -66,7 +66,7 @@ Registration scopes are configured as part of an `sso-session`. Scope is a mecha
 
 The following example shows how you can reuse the same `sso-session` configuration across multiple profiles.
 
-```
+```ini
 [profile {{dev}}]
 sso_session = {{my-sso}}
 sso_account_id = {{111122223333}}
@@ -103,7 +103,7 @@ You specify the user portal for a profile with the `sso_start_url` and `sso_regi
 
 The following example sets the four required values in the `config` file.
 
-```
+```ini
 [profile {{my-sso-profile}}]
 sso_start_url = {{https://my-sso-portal.awsapps.com/start}}
 sso_region = {{us-west-2}}

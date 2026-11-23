@@ -45,6 +45,11 @@ Type: String
 Valid Values: `pending | active | failed`
 Required: No
 
+ ** UseClientCertificateOCSPEndpoint **   <a name="cloudfront-Type-TrustStore-UseClientCertificateOCSPEndpoint"></a>
+A boolean. When true, performs real-time certificate revocation checks by querying the OCSP endpoint specified within the client certificate.
+Type: Boolean
+Required: No
+
 ## See Also
 <a name="API_TrustStore_SeeAlso"></a>
 

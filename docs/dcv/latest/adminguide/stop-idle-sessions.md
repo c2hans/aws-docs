@@ -14,7 +14,7 @@ $ dcv describe-session {{my-session}} -j
 
 Output:
 
-```
+```json
 {
     "id" : "my-session",
     "owner" : "dcvuser",

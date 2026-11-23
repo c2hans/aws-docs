@@ -33,7 +33,7 @@ The following code example shows how to get started using Amazon Redshift.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.redshift.RedshiftClient;
 import software.amazon.awssdk.services.redshift.paginators.DescribeClustersIterable;
@@ -86,7 +86,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Run an interactive scenario demonstrating Amazon Redshift features.
 
-```
+```java
 import com.example.redshift.User;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
@@ -464,7 +464,7 @@ public class RedshiftScenario {
 ```
 A wrapper class for Amazon Redshift SDK methods.
 
-```
+```java
 public class RedshiftActions {
 
     private static final Logger logger = LoggerFactory.getLogger(RedshiftActions.class);
@@ -928,7 +928,7 @@ The following code example shows how to use `CreateCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Create the cluster.
 
-```
+```java
     /**
      * Creates a new Amazon Redshift cluster asynchronously.
      * @param clusterId     the unique identifier for the cluster
@@ -968,7 +968,7 @@ The following code example shows how to use `DeleteCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Delete the cluster.
 
-```
+```java
     /**
      * Deletes a Redshift cluster asynchronously.
      *
@@ -1008,7 +1008,7 @@ The following code example shows how to use `DescribeClusters`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Describe the cluster.
 
-```
+```java
     /**
      * Waits asynchronously for the specified cluster to become available.
      * @param clusterId the identifier of the cluster to wait for
@@ -1073,7 +1073,7 @@ The following code example shows how to use `DescribeStatement`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 
-```
+```java
     /**
      * Checks the status of an SQL statement asynchronously and handles the completion of the statement.
      *
@@ -1125,7 +1125,7 @@ The following code example shows how to use `ExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Executes a SQL statement to create a database table.
 
-```
+```java
     /**
      * Creates an asynchronous task to execute a SQL statement for creating a new table.
      *
@@ -1158,7 +1158,7 @@ Executes a SQL statement to create a database table.
 ```
 Executes a SQL statement to insert data into a database table.
 
-```
+```java
     /**
      * Asynchronously pops a table from a JSON file.
      *
@@ -1242,7 +1242,7 @@ Executes a SQL statement to insert data into a database table.
 ```
 Executes a SQL statement to query a database table.
 
-```
+```java
     /**
      * Asynchronously queries movies by a given year from a Redshift database.
      *
@@ -1295,7 +1295,7 @@ The following code example shows how to use `GetStatementResult`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Check the statement result.
 
-```
+```java
     /**
      * Asynchronously retrieves the results of a statement execution.
      *
@@ -1337,7 +1337,7 @@ The following code example shows how to use `ListDatabases`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 
-```
+```java
     /**
      * Lists all databases asynchronously for the specified cluster, database user, and database.
      * @param clusterId the identifier of the cluster to list databases for
@@ -1377,7 +1377,7 @@ The following code example shows how to use `ModifyCluster`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
 Modify a cluster.
 
-```
+```java
     /**
      * Modifies an Amazon Redshift cluster asynchronously.
      *

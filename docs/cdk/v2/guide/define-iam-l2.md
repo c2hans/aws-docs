@@ -18,7 +18,7 @@ The following is an example that defines permissions between an AWS Lambda funct
 
 **Example**
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -46,7 +46,7 @@ export class CdkDemoStack extends cdk.Stack {
 }
 ```
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 const s3 = require('aws-cdk-lib/aws-s3');
 const lambda = require('aws-cdk-lib/aws-lambda');
@@ -76,7 +76,7 @@ class CdkDemoStack extends Stack {
 // ...
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
     aws_s3 as s3,
@@ -104,7 +104,7 @@ class CdkDemoStack(Stack):
         bucket.grants.read(handler)
 ```
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.core.App;
@@ -154,7 +154,7 @@ public class CdkDemoStack extends Stack {
 }
 ```
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.KMS;
 using Amazon.CDK.AWS.S3;
@@ -187,7 +187,7 @@ namespace CdkDemo
 }
 ```
 
-```
+```go
 package main
 import (
     "github.com/aws/aws-cdk-go/awscdk/v2"
@@ -221,7 +221,7 @@ For each method that you use, the CDK creates a unique IAM role for the specifie
 
 **Example**
 
-```
+```javascript
 import { aws_iam as iam } from 'aws-cdk-lib';
 
 handler.addToRolePolicy(new iam.PolicyStatement({
@@ -233,7 +233,7 @@ handler.addToRolePolicy(new iam.PolicyStatement({
 }));
 ```
 
-```
+```javascript
 const iam = require('aws-cdk-lib/aws-iam');
 
 handler.addToRolePolicy(new iam.PolicyStatement({
@@ -245,7 +245,7 @@ handler.addToRolePolicy(new iam.PolicyStatement({
 }));
 ```
 
-```
+```python
 from aws_cdk import aws_iam as iam
 
 handler.add_to_role_policy(iam.PolicyStatement(
@@ -257,7 +257,7 @@ handler.add_to_role_policy(iam.PolicyStatement(
 ))
 ```
 
-```
+```java
 import software.amazon.awscdk.services.iam.PolicyStatement;
 import software.amazon.awscdk.services.iam.PolicyStatementProps;
 
@@ -270,7 +270,7 @@ handler.addToRolePolicy(PolicyStatement.Builder.create()
     .build());
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.IAM;
 using Amazon.CDK.AWS.S3;
 using Amazon.CDK.AWS.Lambda;
@@ -282,7 +282,7 @@ handler.AddToRolePolicy(new PolicyStatement(new PolicyStatementProps
 }));
 ```
 
-```
+```go
 package main
 
 import (
@@ -321,7 +321,7 @@ Constructs that require a role have an optional `role` property that you can use
 
 1. Use `Role.fromRoleName()` to reference your pre-existing role. The following is an example:
 
-   ```
+   ```javascript
    const existingRole = Role.fromRoleName(stack, 'Role', 'my-pre-existing-role', {
      mutable: false // Prevent CDK from attempting to add policies to this role
    })
@@ -329,7 +329,7 @@ Constructs that require a role have an optional `role` property that you can use
 
 1. Pass the pre-existing role when defining your resource. The following is an example:
 
-   ```
+   ```javascript
    const handler = new lambda.Function(stack, 'Handler', { runtime: lambda.Runtime.NODEJS_20_XZ, handler:
             'index.handler', code: lambda.Code.fromAsset(path.join(__dirname, 'lambda-handler')), // Pass in pre-existing role
             role: existingRole, });
@@ -344,7 +344,7 @@ The AWS CDK *role customization* feature generates a report of roles and policie
 
 1. Add `Role.customizeRoles()` somewhere towards the top of your CDK application. The following is an example:
 
-   ```
+   ```javascript
    const stack = new Stack(app, 'LambdaStack');
 
    // Add this to use the role customization feature
@@ -409,7 +409,7 @@ The AWS CDK *role customization* feature generates a report of roles and policie
 
 1. Once the role is created, you can pass it into your application for the resource that it applies to. For example, if the name of the role created for `LambdaStack/Handler/ServiceRole` is `lambda-service-role`, you would update your CDK app as follows:
 
-   ```
+   ```javascript
    const stack = new Stack(app, 'LambdaStack');
 
    // Add this to pass in the role

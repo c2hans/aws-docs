@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint RouterOutputSourceEndpointAssociatedResourceDetails
 
-<a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-description"></a>The `RouterOutputSourceEndpointAssociatedResourceDetails` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The details of the router output that is associated with a source endpoint.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-syntax"></a>
@@ -37,19 +37,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-properties"></a>
 
 `MaximumBitrate`  <a name="cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-maximumbitrate"></a>
-Property description not available.
+The maximum bitrate of the router output, in bits per second.
 *Required*: Yes
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-name"></a>
-Property description not available.
+The name of the router output.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `State`  <a name="cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-state"></a>
-Property description not available.
+The state of the router output.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `CREATING | STANDBY | STARTING | ACTIVE | STOPPING | DELETING | UPDATING | ERROR | RECOVERING | MIGRATING`

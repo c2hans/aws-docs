@@ -89,7 +89,7 @@ Retrieves information about the communication requirements and options that are 
 #### JourneyRunExecutionMetricsResponse schema
 <a name="apps-application-id-journeys-journey-id-runs-run-id-execution-metrics-response-body-journeyrunexecutionmetricsresponse-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "JourneyId": "string",
@@ -103,7 +103,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-journeys-journey-id-runs-run-id-execution-metrics-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

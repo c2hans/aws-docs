@@ -14,7 +14,7 @@ aws arc-zonal-shift start-practice-run
     "awayFrom": "usw2-az1",
 ```
 
-```
+```json
 {
     "awayFrom": "usw2-az1",
     "comment": "Practice run started. Shifting traffic away from Availability Zone usw2-az1.",

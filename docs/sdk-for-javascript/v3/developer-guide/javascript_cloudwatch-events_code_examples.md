@@ -27,7 +27,7 @@ The following code example shows how to use `PutEvents`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-events#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PutEventsCommand } from "@aws-sdk/client-cloudwatch-events";
 import { client } from "../libs/client.js";
 
@@ -59,7 +59,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchEventsClient } from "@aws-sdk/client-cloudwatch-events";
 
 export const client = new CloudWatchEventsClient({});
@@ -76,7 +76,7 @@ The following code example shows how to use `PutRule`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-events#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PutRuleCommand } from "@aws-sdk/client-cloudwatch-events";
 import { client } from "../libs/client.js";
 
@@ -105,7 +105,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchEventsClient } from "@aws-sdk/client-cloudwatch-events";
 
 export const client = new CloudWatchEventsClient({});
@@ -122,7 +122,7 @@ The following code example shows how to use `PutTargets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-events#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PutTargetsCommand } from "@aws-sdk/client-cloudwatch-events";
 import { client } from "../libs/client.js";
 
@@ -152,7 +152,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchEventsClient } from "@aws-sdk/client-cloudwatch-events";
 
 export const client = new CloudWatchEventsClient({});

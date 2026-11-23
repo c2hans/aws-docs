@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-update-co
 
 You can change the log level at any time using [UpdateEventLogConfiguration](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateEventLogConfiguration.html):
 
-```
+```bash
 aws iot-managed-integrations update-event-log-configuration \
     --id "{{your-configuration-id}}" \
     --event-log-level "DEBUG"

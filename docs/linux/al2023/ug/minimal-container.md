@@ -37,17 +37,17 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/minimal-container.html
 
  You can pull these tags using `docker` with the following example:
 
-```
+```sh
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:minimal
 ```
 
-```
+```sh
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:2023-minimal
 ```
 
 The following example shows a `Dockerfile` that takes the minimal container image and installs GCC on top of it :
 
-```
+```dockerfile
 FROM public.ecr.aws/amazonlinux/amazonlinux:2023-minimal
 RUN dnf install -y gcc && dnf clean all
 ```

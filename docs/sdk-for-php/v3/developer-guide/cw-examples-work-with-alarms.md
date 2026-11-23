@@ -23,7 +23,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudWatch\CloudWatchClient;
@@ -32,7 +32,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function describeAlarms($cloudWatchClient)
 {
     try {
@@ -93,7 +93,7 @@ function describeTheAlarms()
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudWatch\CloudWatchClient;
@@ -102,7 +102,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function putMetricAlarm(
     $cloudWatchClient,
     $cloudWatchRegion,
@@ -206,7 +206,7 @@ function putTheMetricAlarm()
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\CloudWatch\CloudWatchClient;
@@ -215,7 +215,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 function deleteAlarms($cloudWatchClient, $alarmNames)
 {
     try {

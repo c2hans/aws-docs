@@ -70,7 +70,7 @@ Once you have updated the template with your values, return to [Step 2: Prepare 
 
 The kms:Decrypt action alone does not restrict access to read-only operations. The IAM policy must enforce read-only access on IAM Identity Center service APIs.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -140,7 +140,7 @@ To use this policy:
 
 1. Replace the example IAM Identity Center instance ARN with your actual instance ARN
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -211,7 +211,7 @@ To use this policy:
 
 1. Replace the example IAM Identity Center instance ARN with your actual instance ARN
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

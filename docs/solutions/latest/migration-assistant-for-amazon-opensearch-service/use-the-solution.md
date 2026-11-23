@@ -23,20 +23,20 @@ Make sure all of the following are true:
 ### Step 1: Access the Migration Console
 <a name="step-1-access-console"></a>
 
-```
+```bash
 kubectl exec -it migration-console-0 -n ma -- /bin/bash
 ```
 
 If you are accessing Amazon EKS from a new shell, refresh your kubeconfig first:
 
-```
+```bash
 aws eks update-kubeconfig --region <REGION> --name migration-eks-cluster-<STAGE>-<REGION>
 ```
 
 ### Step 2: Confirm the installed version
 <a name="step-2-confirm-version"></a>
 
-```
+```bash
 console --version
 ```
 
@@ -45,7 +45,7 @@ This matters because the workflow schema can change by release.
 ### Step 3: Load the version-matched sample
 <a name="step-3-load-sample"></a>
 
-```
+```bash
 workflow configure sample --load
 ```
 
@@ -54,7 +54,7 @@ This gives you the safest starting point for your installed release.
 ### Step 4: Edit the workflow configuration
 <a name="step-4-edit-config"></a>
 
-```
+```bash
 workflow configure edit
 ```
 
@@ -76,7 +76,7 @@ Do not start by editing every possible field. Start with the minimum required fi
 
 When the target is an Amazon OpenSearch Serverless NextGen collection, set the target cluster like this:
 
-```
+```json
 {
   "targetClusters": {
     "target": {
@@ -99,7 +99,7 @@ The migration IAM role created by the Amazon EKS deployment must also be added a
 
 When the target is an Amazon OpenSearch Service domain:
 
-```
+```json
 {
   "targetClusters": {
     "target": {
@@ -120,7 +120,7 @@ If your domain has fine-grained access control (FGAC) enabled, map the migration
 ### Step 5: Create credentials if you use basic authentication
 <a name="step-5-create-secrets"></a>
 
-```
+```bash
 workflow configure credentials create source-credentials
 workflow configure credentials create target-credentials
 ```
@@ -130,20 +130,20 @@ Reference those credential names in `authConfig.basic.secretName` in your workfl
 ### Step 6: Verify connectivity before submitting a workflow
 <a name="step-6-verify-connectivity"></a>
 
-```
+```bash
 console clusters connection-check
 ```
 
 The check runs against both source and target by default. To narrow it to one side:
 
-```
+```bash
 console clusters connection-check --cluster source
 console clusters connection-check --cluster target
 ```
 
 For a direct API check:
 
-```
+```bash
 console clusters curl source /
 console clusters curl target /
 ```
@@ -155,7 +155,7 @@ If these checks fail, stop and fix connectivity or authentication first. Do not 
 
 If your source or target uses Amazon OpenSearch Service or Amazon OpenSearch Serverless NextGen, verify pod identity is working from the Migration Console pod:
 
-```
+```bash
 aws sts get-caller-identity
 ```
 
@@ -166,7 +166,7 @@ If `console clusters connection-check` works in the Migration Console but the wo
 
 Use a small allowlist or a representative subset before you attempt the full migration. This is the easiest way to catch mapping issues, authentication issues, and throughput problems early.
 
-```
+```bash
 workflow submit
 workflow manage
 ```
@@ -178,7 +178,7 @@ Use `workflow manage` to watch the run and approve any gated steps.
 
 Check counts and basic behavior on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection before you expand scope:
 
-```
+```bash
 console clusters cat-indices
 console clusters curl target /<index>/_count
 console clusters curl target /<index>/_search?size=5&pretty
@@ -191,7 +191,7 @@ If you are migrating applications with live traffic, also validate representativ
 
 After the pilot succeeds, widen the configuration to the full index set and submit again:
 
-```
+```bash
 workflow configure edit
 workflow submit
 workflow manage
@@ -200,7 +200,7 @@ workflow manage
 ### Step 11: Use logs if anything fails
 <a name="step-11-logs"></a>
 
-```
+```bash
 workflow status
 workflow log all
 workflow log all -f
@@ -210,7 +210,7 @@ workflow log resource snapshotmigration.<NAME> -- --tail=100
 
  `workflow submit` automatically stops and replaces an existing workflow with the same name, so you do not need to manually clean up between runs. If a previous run left orphaned migration custom resources, use `workflow reset` instead of deleting Argo workflows directly:
 
-```
+```bash
 workflow reset                # lists migration custom resources
 workflow reset --list         # lists migration custom resources and exits
 workflow reset migration-foo  # delete a specific resource by name
@@ -405,7 +405,7 @@ The workflow path drives `metadata`, `backfill`, and `replay` automatically. Rea
 
 Not every migration step should run without human review. Approval gates let the workflow stop at meaningful checkpoints — typically transitions after metadata work, backfill milestones, and cutover-sensitive steps — so you can validate before continuing.
 
-```
+```bash
 workflow manage
 workflow approve step <STEP_NAME>
 ```
@@ -441,7 +441,7 @@ Migration Assistant supports three migration patterns. Pick the one that matches
 
 Best when you can tolerate a brief write freeze, or when writes can be paused and replayed from an external queue.
 
-```
+```text
 Snapshot source → Migrate metadata → Backfill documents → Verify → Switch traffic
 ```
 
@@ -450,7 +450,7 @@ Snapshot source → Migrate metadata → Backfill documents → Verify → Switc
 
 Best when the data is small enough that live replay alone can synchronize the target on Amazon OpenSearch Service or Amazon OpenSearch Serverless NextGen, or when you want to replay traffic against multiple targets to compare results.
 
-```
+```text
 Reroute traffic to capture proxy → Migrate metadata → Replay traffic → Verify → Switch traffic to target
 ```
 
@@ -459,7 +459,7 @@ Reroute traffic to capture proxy → Migrate metadata → Replay traffic → Ver
 
 The most comprehensive approach. Capture begins first so no writes are lost, then backfill brings over historical data, then replay catches the target up to real-time.
 
-```
+```text
 Reroute traffic to capture proxy → Snapshot source → Migrate metadata → Backfill documents → Replay captured traffic → Verify → Switch traffic to target
 ```
 

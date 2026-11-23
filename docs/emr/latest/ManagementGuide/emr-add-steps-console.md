@@ -83,12 +83,12 @@ When you use the AWS Management Console to add a step to your cluster, you can s
 **Example : Correct arguments**
 The following example arguments are formatted correctly for the AWS Management Console, with quotation marks around the final string argument.
 
-```
+```bash
 bash -c "aws s3 cp s3://amzn-s3-demo-bucket/my-script.sh ."
 ```
 You can also put each argument on a separate line for readability as shown in the following example.
 
-```
+```bash
 bash
 -c
 "aws s3 cp s3://amzn-s3-demo-bucket/my-script.sh ."
@@ -97,6 +97,6 @@ bash
 **Example : Incorrect arguments**
 The following example arguments are improperly formatted for the AWS Management Console. Notice that the final string argument, `aws s3 cp s3://amzn-s3-demo-bucket/my-script.sh .`, contains whitespace and is not surrounded by quotation marks.
 
-```
+```bash
 bash -c aws s3 cp s3://amzn-s3-demo-bucket/my-script.sh .
 ```

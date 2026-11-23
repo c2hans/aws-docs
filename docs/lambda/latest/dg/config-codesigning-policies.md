@@ -13,7 +13,7 @@ The following example policy statement grants permission to create, update, and 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -41,7 +41,7 @@ The following example policy statement grants permission to create a function. T
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

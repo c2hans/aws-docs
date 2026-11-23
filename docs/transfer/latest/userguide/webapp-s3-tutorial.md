@@ -59,7 +59,7 @@ Use the following trust policy for both IAM roles:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ Create an IAM role with the following policy for read-only access to your downlo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -120,7 +120,7 @@ Create another IAM role with the following policy for write access to your uploa
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -216,7 +216,7 @@ Configure a CORS policy for both S3 buckets to allow access through your AWS Tra
 
    You can find your web app endpoint URL in the AWS Transfer Family console under WebApps. It will look similar to **https://webapp-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*.transfer-webapp.us-west-2.on.aws**.
 
-   ```
+   ```json
    [
      {
        "AllowedHeaders": [

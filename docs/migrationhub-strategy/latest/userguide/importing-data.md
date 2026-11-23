@@ -33,7 +33,7 @@ This section describes how to use the application import template to import data
 
 The import template that you download is a `.json` file as shown in the following example.
 
-```
+```json
 {
     "ImportFormatVersion": 1,
     "Resources": [

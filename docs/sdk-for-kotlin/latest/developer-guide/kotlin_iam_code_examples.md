@@ -35,7 +35,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 Create functions that wrap IAM user actions.
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
     Usage:
@@ -310,7 +310,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun attachIAMRolePolicy(
     roleNameVal: String,
     policyArnVal: String,
@@ -368,7 +368,7 @@ The following code example shows how to use `CreateAccessKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun createIAMAccessKey(user: String?): String {
     val request =
         CreateAccessKeyRequest {
@@ -391,7 +391,7 @@ The following code example shows how to use `CreateAccountAlias`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun createIAMAccountAlias(alias: String) {
     val request =
         CreateAccountAliasRequest {
@@ -414,7 +414,7 @@ The following code example shows how to use `CreatePolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun createIAMPolicy(policyNameVal: String?): String {
     val policyDocumentVal = """
     {
@@ -457,7 +457,7 @@ The following code example shows how to use `CreateUser`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun createIAMUser(usernameVal: String?): String? {
     val request =
         CreateUserRequest {
@@ -480,7 +480,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun deleteKey(
     userNameVal: String,
     accessKey: String,
@@ -507,7 +507,7 @@ The following code example shows how to use `DeleteAccountAlias`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun deleteIAMAccountAlias(alias: String) {
     val request =
         DeleteAccountAliasRequest {
@@ -530,7 +530,7 @@ The following code example shows how to use `DeletePolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun deleteIAMPolicy(policyARNVal: String?) {
     val request =
         DeletePolicyRequest {
@@ -553,7 +553,7 @@ The following code example shows how to use `DeleteUser`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun deleteIAMUser(userNameVal: String) {
     val request =
         DeleteUserRequest {
@@ -577,7 +577,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun detachPolicy(
     roleNameVal: String,
     policyArnVal: String,
@@ -604,7 +604,7 @@ The following code example shows how to use `GetPolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun getIAMPolicy(policyArnVal: String?) {
     val request =
         GetPolicyRequest {
@@ -627,7 +627,7 @@ The following code example shows how to use `ListAccessKeys`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun listKeys(userNameVal: String?) {
     val request =
         ListAccessKeysRequest {
@@ -651,7 +651,7 @@ The following code example shows how to use `ListAccountAliases`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun listAliases() {
     IamClient.fromEnvironment { region = "AWS_GLOBAL" }.use { iamClient ->
         val response = iamClient.listAccountAliases(ListAccountAliasesRequest {})
@@ -671,7 +671,7 @@ The following code example shows how to use `ListUsers`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun listAllUsers() {
     IamClient.fromEnvironment { region = "AWS_GLOBAL" }.use { iamClient ->
         val response = iamClient.listUsers(ListUsersRequest { })
@@ -695,7 +695,7 @@ The following code example shows how to use `UpdateUser`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun updateIAMUser(
     curName: String?,
     newName: String?,

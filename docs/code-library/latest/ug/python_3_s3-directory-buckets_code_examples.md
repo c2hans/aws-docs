@@ -38,7 +38,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3-directory-buckets/#code-examples).
 Run a scenario demonstrating the basics of Amazon S3 directory buckets and S3 Express One Zone.
 
-```
+```python
 class S3ExpressScenario:
     """Runs an interactive scenario that shows how to get started with S3 Express."""
 
@@ -616,7 +616,7 @@ creates directories and uses the object "key" as a path to the object.
 ```
 A wrapper class for Amazon S3 Express SDK functions.
 
-```
+```python
 class S3ExpressWrapper:
     """Encapsulates Amazon S3 Express One Zone actions using the client interface."""
 
@@ -814,7 +814,7 @@ The following code example shows how to use `CreateSession`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3-directory-buckets#code-examples).
 
-```
+```python
 class S3ExpressWrapper:
     """Encapsulates Amazon S3 Express One Zone actions using the client interface."""
 

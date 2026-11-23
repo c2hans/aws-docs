@@ -19,7 +19,7 @@ For specific steps for all the above, see [Getting Started with IVS Low-Latency 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

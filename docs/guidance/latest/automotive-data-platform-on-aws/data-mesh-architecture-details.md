@@ -84,7 +84,7 @@ The foundation deploy automatically registers 12 DataZone projects covering 10 c
 
  **Query Example**:
 
-```
+```sql
 SELECT
   c.customer_id,
   c.health_score,

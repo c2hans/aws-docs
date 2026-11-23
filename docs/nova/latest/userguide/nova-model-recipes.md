@@ -15,7 +15,7 @@ To access the recipes pages in Amazon SageMaker Studio, the execution role must 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ To execute the sample notebooks on SageMaker training jobs and SageMaker HyperPo
 
 To get a base Amazon Nova recipe, clone the [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes) repository by running the following command.
 
-```
+```sh
 git clone https://github.com/aws/sagemaker-hyperpod-recipes.git
 ```
 

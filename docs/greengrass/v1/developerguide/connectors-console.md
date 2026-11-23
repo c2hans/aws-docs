@@ -142,7 +142,7 @@ To create a Lambda function, you must first create a Lambda function *deployment
 
 1. Save the following Python code function in a local file named `temp_monitor.py`.
 
-   ```
+   ```python
    import greengrasssdk
    import json
    import random
@@ -301,7 +301,7 @@ Deploy the group to the core device.
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -311,7 +311,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```

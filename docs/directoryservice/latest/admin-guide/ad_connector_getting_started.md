@@ -209,7 +209,7 @@ The IP address of a domain controller in your existing domain. The ports will be
 
 The following is the source code for the **DirectoryServicePortTest** application.
 
-```
+```dotnet
 using System;
 using System.Collections.Generic;
 using System.IO;

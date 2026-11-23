@@ -143,7 +143,7 @@ This error indicates the underlying Apache HTTP connection pool was closed. The 
   Check your code for places where the `DefaultCredentialsProvider` is closed, as shown in the following examples.
   + The singleton instance is closed by calling `DefaultCredentialsProvider#close().`
 
-    ```
+    ```java
     DefaultCredentialsProvider defaultCredentialsProvider = DefaultCredentialsProvider.create(); // Singleton instance returned.
     AwsCredentials credentials = defaultCredentialsProvider.resolveCredentials();
 
@@ -160,7 +160,7 @@ This error indicates the underlying Apache HTTP connection pool was closed. The 
     ```
   + Invoke `DefaultCredentialsProvider#create()` in a try-with-resources block.
 
-    ```
+    ```java
     try (DefaultCredentialsProvider defaultCredentialsProvider = DefaultCredentialsProvider.create()) {
         AwsCredentials credentials = defaultCredentialsProvider.resolveCredentials();
 
@@ -253,7 +253,7 @@ Check that environment variables, credentials files, or IAM Identity Center conf
   Solution: Add the STS module to your project dependencies:
   +
 
-    ```
+    ```xml
     <dependency>
         <groupId>software.amazon.awssdk</groupId>
         <artifactId>sts</artifactId>
@@ -262,7 +262,7 @@ Check that environment variables, credentials files, or IAM Identity Center conf
 
     For some services, you might also need the `aws-query-protocol` dependency:
 
-    ```
+    ```xml
     <dependency>
         <groupId>software.amazon.awssdk</groupId>
         <artifactId>aws-query-protocol</artifactId>

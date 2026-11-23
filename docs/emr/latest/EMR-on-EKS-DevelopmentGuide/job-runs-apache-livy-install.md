@@ -10,7 +10,7 @@ Complete the following steps to install Apache Livy. They include configuring th
 
 1. Authenticate your Helm client to the Amazon ECR registry. You can find the corresponding `ECR-registry-account` value for your AWS Region from [Amazon ECR registry accounts by Region](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/docker-custom-images-tag.html#docker-custom-images-ECR).
 
-   ```
+   ```bash,sh,zsh
    aws ecr get-login-password \--region {{<AWS_REGION>}} | helm registry login \
    --username AWS \
    --password-stdin {{<ECR-registry-account>}}.dkr.ecr.{{<region-id>}}.amazonaws.com
@@ -20,7 +20,7 @@ Complete the following steps to install Apache Livy. They include configuring th
 
 1. Create a namespace to run your Spark workloads.
 
-   ```
+   ```bash,sh,zsh
    kubectl create ns {{<spark-ns>}}
    ```
 
@@ -30,7 +30,7 @@ Complete the following steps to install Apache Livy. They include configuring th
 **Note**
 By default, SSL is not enabled within this Livy endpoint and the endpoint is only visible inside the VPC of the EKS cluster. If you set `loadbalancer.internal=false` and `ssl.enabled=false`, you are exposing an insecure endpointto outside of your VPC. To set up a secure Livy endpoint, see [Configuring a secure Apache Livy endpoint with TLS/SSL](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-runs-apache-livy-secure-endpoint.html).
 
-   ```
+   ```bash,sh,zsh
    helm install livy-demo \
      oci://895885662937.dkr.ecr.region-id.amazonaws.com/livy \
      --version 7.14.0 \
@@ -42,7 +42,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
    You should see the following output.
 
-   ```
+   ```bash,sh,zsh
    NAME: livy-demo
    LAST DEPLOYED: Mon Mar 18 09:23:23 2024
    NAMESPACE: livy-ns
@@ -66,20 +66,20 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
    The default service account names for the Livy server and the Spark session are `emr-containers-sa-livy` and `emr-containers-sa-spark-livy`. To use custom names, use the `serviceAccounts.name` and `sparkServiceAccount.name` parameters.
 
-   ```
+   ```bash,sh,zsh
    --set serviceAccounts.name=my-service-account-for-livy
    --set sparkServiceAccount.name=my-service-account-for-spark
    ```
 
 1. Verify that you installed the Helm chart.
 
-   ```
+   ```bash,sh,zsh
    helm list -n livy-ns -o yaml
    ```
 
    The `helm list` command should return information about your new Helm chart.
 
-   ```
+   ```bash,sh,zsh
    app_version: 0.7.1-incubating
    chart: livy-emr-7.14.0
    name: livy-demo
@@ -91,7 +91,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
 1. Verify that the Network Load Balancer is active.
 
-   ```
+   ```bash,sh,zsh
    LIVY_NAMESPACE={{<livy-ns>}}
    LIVY_APP_NAME={{<livy-app-name>}}
    AWS_REGION={{<AWS_REGION>}}
@@ -109,7 +109,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
 1. Now verify that the target group in the Network Load Balancer is healthy.
 
-   ```
+   ```bash,sh,zsh
    LIVY_NAMESPACE={{<livy-ns>}}
    LIVY_APP_NAME={{<livy-app-name>}}
    AWS_REGION={{<AWS_REGION>}}
@@ -132,7 +132,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
    The following is sample output that shows the status of the target group:
 
-   ```
+   ```bash,sh,zsh
    {
        "TargetHealthDescriptions": [
            {
@@ -154,7 +154,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
 1. Retrieve the Livy endpoint from the Helm installation. Whether or not your Livy endpoint is secure depends on whether you enabled SSL.
 
-   ```
+   ```bash,sh,zsh
    LIVY_NAMESPACE={{<livy-ns>}}
     LIVY_APP_NAME={{livy-app-name}}
     LIVY_ENDPOINT=$(kubectl get svc -n livy-ns -l app.kubernetes.io/instance={{livy-app-name}},emr-containers.amazonaws.com/type=loadbalancer -o jsonpath='{.items[0].status.loadBalancer.ingress[0].hostname}' |  awk '{printf "%s:8998\n", $0}')
@@ -163,7 +163,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
 1. Retrieve the Spark service account from the Helm installation
 
-   ```
+   ```bash,sh,zsh
    SPARK_NAMESPACE=spark-ns
    LIVY_APP_NAME={{<livy-app-name>}}
    SPARK_SERVICE_ACCOUNT=$(kubectl --namespace $SPARK_NAMESPACE get sa -l "app.kubernetes.io/instance=$LIVY_APP_NAME" -o jsonpath='{.items[0].metadata.name}')
@@ -172,7 +172,7 @@ By default, SSL is not enabled within this Livy endpoint and the endpoint is onl
 
    You should see something similar to the following output:
 
-   ```
+   ```bash,sh,zsh
    emr-containers-sa-spark-livy
    ```
 

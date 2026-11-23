@@ -52,7 +52,7 @@ You can use the AWS CLI to uninstall a Distributor package from managed nodes by
 **To uninstall a package using the AWS CLI**
 + Run the following command in the AWS CLI.
 
-  ```
+  ```sh
   aws ssm send-command \
       --document-name "AWS-ConfigureAWSPackage" \
       --instance-ids "{{instance-IDs}}" \
@@ -61,7 +61,7 @@ You can use the AWS CLI to uninstall a Distributor package from managed nodes by
 
   The following is an example.
 
-  ```
+  ```sh
   aws ssm send-command \
       --document-name "AWS-ConfigureAWSPackage" \
       --instance-ids "i-02573cafcfEXAMPLE" \

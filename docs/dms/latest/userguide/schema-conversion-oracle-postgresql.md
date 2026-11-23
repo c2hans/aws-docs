@@ -15,7 +15,7 @@ Each setting shows the AWS Management Console label followed by the API and AWS 
 **Target engine version** (`ORACLE_TO_POSTGRESQL_target_engine_version`)
 Choose the engine version for your target database. This setting is the PostgreSQL major version feature set that DMS Schema Conversion targets for conversion, and it determines which versioned settings section DMS Schema Conversion applies (`ORACLE_TO_POSTGRESQL_14` or `ORACLE_TO_POSTGRESQL_15`). The value `15` targets the features of PostgreSQL 15 and later versions, and `14` targets the features of PostgreSQL 14, so your target database can run a later version than the value you choose (for example, a value of `15` for a PostgreSQL 16 target). Unlike the other settings on this page, this setting isn't stored in a conversion path section. Instead, it's stored in the top-level `Conversion version` section, as shown in the following example.
 
-```
+```json
 {
   "Conversion version": {
     "ORACLE_TO_POSTGRESQL_target_engine_version": "15"
@@ -206,7 +206,7 @@ Choose the Orafce built-in routines to use in the converted code. Orafce is a Po
 
 Each routine is a separate Boolean key. The following example turns on the Orafce routines for the Oracle `ADD_MONTHS`, `NVL`, and `SUBSTR` functions. Add or remove keys to match the functions in your source code, and apply the same keys to each section name that your project uses.
 
-```
+```json
 {
   "ORACLE_TO_POSTGRESQL_15": {
     "AddMonthsBuiltinFunctionOracle": true,
@@ -239,7 +239,7 @@ Specifies whether DMS Schema Conversion creates stub objects in a separate schem
 
 The following example keeps materialized views as PostgreSQL materialized views, emulates the `ROWID` pseudocolumn by using the `bigint` data type, and converts procedures to functions. Apply the same settings to each section name that your project uses (check the output of [DescribeConversionConfiguration](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first).
 
-```
+```json
 {
   "ORACLE_TO_POSTGRESQL_15": {
     "MaterializedViewConvert": "MATERIALIZED_VIEW",

@@ -36,7 +36,7 @@ To restrict who can perform deployments and the actions that can be performed du
 
 To configure the IAM identities in your AWS account with permission to assume these roles, add a policy with the following policy statement to the identities:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{

@@ -83,7 +83,7 @@ The following diagram shows that AWS Proton takes care of most of these steps di
 
   Run the following command:
 
-  ```
+  ```sh
   $ aws proton update-account-settings \
       --pipeline-service-role-arn \
           "arn:aws:iam::{{123456789012}}:role/{{my-pipeline-role}}"
@@ -145,7 +145,7 @@ The following diagram illustrates the steps that AWS Proton performs and the ste
 
   Run the following command:
 
-  ```
+  ```sh
   $ aws proton update-account-settings \
       --pipeline-codebuild-role-arn \
           "arn:aws:iam::{{123456789012}}:role/{{my-pipeline-role}}"
@@ -212,7 +212,7 @@ Developers creating services use the same process regardless of provisioning met
 
   Run the following command:
 
-  ```
+  ```sh
   $ aws proton update-account-settings \
       --pipeline-provisioning-repository \
           "provider={{GITHUB}},name={{my-pipeline-repo-name}},branch={{my-branch}}"

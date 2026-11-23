@@ -24,7 +24,7 @@ Before you create a pipeline with a Lambda processor, create the following resou
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -52,7 +52,7 @@ To use AWS Lambda as a processor, configure an OpenSearch Ingestion pipeline and
 
 The following example pipeline receives data from an HTTP source, enriches it using a date processor and the AWS Lambda processor, and ingests the processed data to an OpenSearch domain.
 
-```
+```YAML
 version: "2"
 lambda-processor-pipeline:
   source:
@@ -81,7 +81,7 @@ lambda-processor-pipeline:
 
 The following example AWS Lambda function transforms incoming data by adding a new key-value pair (`"transformed": "true"`) to each element in the provided array of events, and then sends back the modified version.
 
-```
+```python
 import json
 
 def lambda_handler(event, context):
@@ -101,7 +101,7 @@ Pipelines send batched events to the Lambda processor, and dynamically adjusts t
 
 The following is an example of a pipeline batch:
 
-```
+```YAML
 batch:
     key_name: "events"
 
@@ -118,7 +118,7 @@ Conditional filtering allows you to control when your AWS Lambda processor invok
 
 The following example configuration uses conditional filtering:
 
-```
+```YAML
 processors:
   - aws_lambda:
       function_name: "my-lambda-function"

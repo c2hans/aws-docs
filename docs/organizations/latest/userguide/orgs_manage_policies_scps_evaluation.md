@@ -59,7 +59,7 @@ AWS Organizations attaches an AWS managed SCP named [**FullAWSAccess**](https://
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ A policy combining the two statements might look like the following example, whi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

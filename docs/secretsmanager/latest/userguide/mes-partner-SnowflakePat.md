@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "account": "{{Snowflake account identifier}}",
   "user": "{{Snowflake username}}",
@@ -43,7 +43,7 @@ The programmatic access token secret value. This is the field that gets rotated.
 
 The following are the metadata fields for Snowflake Programmatic Access Token:
 
-```
+```json
 {
   "daysToExpiry": "{{15}}",
   "expireOldTokenAfterHours": "{{24}}"

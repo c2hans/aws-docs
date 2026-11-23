@@ -135,7 +135,7 @@ For more information, see [HTML/Elements/progress](http://www.w3.org/wiki/HTML/E
 
 Scalable Vector Graphics (SVG) is an XML-based format for describing two-dimensional web graphics. Amazon Silk supports SVG both inline via the `<svg>` tag and externally using the `<img>`, `<object>`, and `<embed>` tags. The example below creates an SVG rendering of a rectangle with a horizontal linear gradient. The image shows the result rendered by Silk.
 
-```
+```html
 <html>
   <body>
     <svg width="180" height="120">

@@ -165,7 +165,7 @@ The key\_mgmt\_util (KMU) command-line tool has an additional setting for client
 
 These are the client-side synchronization properties, shown in an excerpt of the `cloudhsm_client.cfg`:
 
-```
+```json
 {
     "client": {
         "create_object_minimum_nodes" : 2,

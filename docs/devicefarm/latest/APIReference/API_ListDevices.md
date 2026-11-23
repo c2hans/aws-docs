@@ -54,6 +54,7 @@ Used to select a set of devices. A filter is made up of an attribute, an operato
   + INSTANCE\_ARN: The Amazon Resource Name (ARN) of the device instance.
   + INSTANCE\_LABELS: The label of the device instance.
   + FLEET\_TYPE: The fleet type. Valid values are PUBLIC or PRIVATE.
+  + DEVICE\_TYPE: The device type. Valid values are PHYSICAL or VIRTUAL.
 + Operator: The filter operator.
   + The EQUALS operator is available for every attribute except INSTANCE\_LABELS.
   + The CONTAINS operator is available for the INSTANCE\_LABELS and MODEL attributes.
@@ -122,7 +123,8 @@ Required: No
          "resolution": {
             "height": number,
             "width": number
-         }
+         },
+         "type": "string"
       }
    ],
    "nextToken": "string"

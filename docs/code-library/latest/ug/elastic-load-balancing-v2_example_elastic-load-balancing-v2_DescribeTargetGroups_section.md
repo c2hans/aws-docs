@@ -80,7 +80,7 @@ For more information, see [Target groups](https://docs.aws.amazon.com/elasticloa
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/elastic-load-balancing-v2#code-examples).
 
-```
+```javascript
   const client = new ElasticLoadBalancingV2Client({});
   const { TargetGroups } = await client.send(
     new DescribeTargetGroupsCommand({
@@ -96,7 +96,7 @@ For more information, see [Target groups](https://docs.aws.amazon.com/elasticloa
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**
@@ -124,7 +124,7 @@ VpcId                      : vpc-2cfd7000
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified Target Group.**
 
-```
+```powershell
 Get-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970'
 ```
 **Output:**

@@ -26,7 +26,7 @@ The following code example shows how to use `CreateAlias`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -79,7 +79,7 @@ The following code example shows how to use `CreateGrant`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
         public static async Task Main()
         {
             var client = new AmazonKeyManagementServiceClient();
@@ -124,7 +124,7 @@ The following code example shows how to use `CreateKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -174,7 +174,7 @@ The following code example shows how to use `DescribeKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -216,7 +216,7 @@ The following code example shows how to use `DisableKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -266,7 +266,7 @@ The following code example shows how to use `EnableKey`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -314,7 +314,7 @@ The following code example shows how to use `ListAliases`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -359,7 +359,7 @@ The following code example shows how to use `ListGrants`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -409,7 +409,7 @@ The following code example shows how to use `ListKeys`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;

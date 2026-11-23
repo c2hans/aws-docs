@@ -36,7 +36,7 @@ You cannot change source type from individual account(s) to organization and vic
 
    **For individuals accounts**
 
-   ```
+   ```json
    {
        "ConfigurationAggregator": {
            "ConfigurationAggregatorArn": "arn:aws:config:{{Region}}:{{AccountID}}:config-aggregator/config-aggregator-xz2upuu6",
@@ -62,7 +62,7 @@ You cannot change source type from individual account(s) to organization and vic
 
    **For an organization**
 
-   ```
+   ```json
    {
        "ConfigurationAggregator": {
            "ConfigurationAggregatorArn": "arn:aws:config:{{Region}}:{{AccountID}}:config-aggregator/config-aggregator-floqpus3",

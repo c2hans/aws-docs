@@ -34,7 +34,7 @@ First, you must attach the below permissions to your IAM user.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -112,7 +112,7 @@ Second, if you use the CLI or SDK, you must also create an IAM role and policy t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -184,7 +184,7 @@ Second, if you use the CLI or SDK, you must also create an IAM role and policy t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -218,7 +218,7 @@ Third, if you use an Amazon S3 to store your documents or you are using S3 to te
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -277,7 +277,7 @@ Third, if you use an Amazon S3 to store your documents or you are using S3 to te
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

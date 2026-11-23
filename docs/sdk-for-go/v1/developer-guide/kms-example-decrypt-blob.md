@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example uses the AWS SDK for Go[Decrypt](https://docs.aws.amazon.com/sdk-for-go/api/service/kms/#KMS.Decrypt) method, which implements the [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation, to decrypt the provided string and emits the result.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws/session"
     "github.com/aws/aws-sdk-go/service/kms"

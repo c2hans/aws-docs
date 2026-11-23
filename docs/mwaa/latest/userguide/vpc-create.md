@@ -60,7 +60,7 @@ The following CloudFormation template creates an Amazon VPC network with interne
 
 1. Copy the contents of the following template and save locally as `cfn-vpc-public-private.yaml`. You can also [download the template](./samples/cfn-vpc-public-private.zip).
 
-   ```
+   ```yaml
    Description:  This template deploys a VPC, with a pair of public and private subnets spread
      across two Availability Zones. It deploys an internet gateway, with a default
      route on the public subnets. It deploys a pair of NAT gateways (one in each AZ),
@@ -332,7 +332,7 @@ The following CloudFormation template creates an Amazon VPC network with interne
 
 1. Use the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI. Replace {{availability-zone-1}} and {{availability-zone-2}} with two different, supported Availability Zones in your Region.
 
-   ```
+   ```bash
    aws cloudformation create-stack --stack-name mwaa-environment --template-body file://cfn-vpc-public-private.yaml --parameters ParameterKey=AvailabilityZone1,ParameterValue={{availability-zone-1}} ParameterKey=AvailabilityZone2,ParameterValue={{availability-zone-2}}
    ```
 **Note**
@@ -347,7 +347,7 @@ This option uses [Private routing without internet access](networking-about.md#n
 
 1. Copy the contents of the following template and save locally as `cfn-vpc-private.yaml`. You can also [download the template](./samples/cfn-vpc-private-no-ops.zip).
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: "2010-09-09"
 
    Parameters:
@@ -540,7 +540,7 @@ This option uses [Private routing without internet access](networking-about.md#n
 
 1. Use the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI. Replace {{availability-zone-1}} and {{availability-zone-2}} with two different, supported Availability Zones in your Region.
 
-   ```
+   ```bash
    aws cloudformation create-stack --stack-name mwaa-private-environment --template-body file://cfn-vpc-private.yaml --parameters ParameterKey=AvailabilityZone1,ParameterValue={{availability-zone-1}} ParameterKey=AvailabilityZone2,ParameterValue={{availability-zone-2}}
    ```
 **Note**

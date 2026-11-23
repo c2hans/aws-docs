@@ -151,7 +151,7 @@ If you haven't created a parameter yet, you can use the AWS Command Line Interfa
 
 1. Open the AWS CLI and run the `aws ssm update-service-setting` command to increase or decrease the transactions per second that Parameter Store can process in the current AWS account and AWS Region. The following example increases the throughput to the high level.
 
-   ```
+   ```bash
    aws ssm update-service-setting \
    --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/high-throughput-enabled \
    --setting-value true
@@ -161,7 +161,7 @@ If you haven't created a parameter yet, you can use the AWS Command Line Interfa
 
 1. Run the following command to view the current throughput service settings for Parameter Store in the current AWS account and AWS Region.
 
-   ```
+   ```bash
    aws ssm get-service-setting \
    --setting-id arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/high-throughput-enabled
    ```
@@ -188,7 +188,7 @@ If you haven't created a parameter yet, you can use the AWS Command Line Interfa
 
 1. Increase or decrease Parameter Store throughput in the current AWS account and AWS Region using the AWS Tools for PowerShell (Tools for PowerShell). The following example set throughput to the high level.
 
-   ```
+   ```powershell
    Update-SSMServiceSetting -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/high-throughput-enabled" -SettingValue "true" -Region {{region}}
    ```
 
@@ -196,7 +196,7 @@ If you haven't created a parameter yet, you can use the AWS Command Line Interfa
 
 1. Run the following command to view the current throughput service settings for Parameter Store in the current AWS account and AWS Region.
 
-   ```
+   ```powershell
    Get-SSMServiceSetting -SettingId "arn:aws:ssm:{{region}}:{{account-id}}:servicesetting/ssm/parameter-store/high-throughput-enabled" -Region {{region}}
    ```
 

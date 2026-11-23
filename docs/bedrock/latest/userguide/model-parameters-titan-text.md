@@ -22,7 +22,7 @@ The request body is passed in the `body` field of an [InvokeModel](https://docs.
 ------
 #### [ Request ]
 
-```
+```json
 {
     "inputText": string,
     "textGenerationConfig": {
@@ -37,7 +37,7 @@ The request body is passed in the `body` field of an [InvokeModel](https://docs.
 The following parameters are required:
 + **inputText** – The prompt to provide the model for generating a response. To generate responses in a conversational style, submit the prompt by using the following format:
 
-  ```
+  ```json
   "inputText": "User: {{<theUserPrompt>}}\nBot:"
   ```
 
@@ -84,7 +84,7 @@ The `textGenerationConfig` is optional. You can use it to configure the followin
 ------
 #### [ InvokeModel Response ]
 
-```
+```json
 {
     "inputTextTokenCount": int,
     "results": [{
@@ -112,7 +112,7 @@ The response body contains the following fields:
 
 Each chunk of text in the body of the response stream is in the following format. You must decode the `bytes` field (see [Submit a single prompt with InvokeModel](inference-invoke.md) for an example).
 
-```
+```json
 {
     "chunk": {
         "bytes": b'{
@@ -143,7 +143,7 @@ Each chunk of text in the body of the response stream is in the following format
 
 The following example shows how to run inference with the Amazon Titan Text Premier model with the Python SDK.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """
@@ -265,7 +265,7 @@ if __name__ == "__main__":
 
 The following example shows how to run inference with the Amazon Titan Text G1 - Express model with the Python SDK.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 """

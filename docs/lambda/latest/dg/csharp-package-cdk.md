@@ -81,7 +81,7 @@ To learn how to install the latest version of the AWS CDK see [Getting started w
 
 1. Open the `HelloWorldStack.cs` file from the `src/HelloWorld` directory. Replace the contents of the file with the following code.
 
-   ```
+   ```csharp
    using Amazon.CDK;
    using Amazon.CDK.AWS.Lambda;
    using Amazon.CDK.AWS.Logs;

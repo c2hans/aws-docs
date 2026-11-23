@@ -32,7 +32,7 @@ Currently, AWS Resource Access Manager (AWS RAM) cannot be used to share your AW
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

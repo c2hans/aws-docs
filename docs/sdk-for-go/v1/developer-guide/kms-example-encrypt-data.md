@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example uses the AWS SDK for Go[Encrypt](https://docs.aws.amazon.com/sdk-for-go/api/service/kms/#KMS.Encrypt) method, which implements the [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) operation, to encrypt the string “1234567890”. The example displays a readable version of the resulting encrypted blob.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"

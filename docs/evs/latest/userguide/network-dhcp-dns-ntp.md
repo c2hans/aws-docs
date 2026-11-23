@@ -80,7 +80,7 @@ Create the DHCP option set and associate it with your VPC in the Amazon VPC cons
 
 1. Create the DHCP option set and store its ID. Replace the example addresses and names with your own values.
 
-   ```
+   ```bash
    DHCP_OPTIONS_ID=$(aws ec2 create-dhcp-options \
      --dhcp-configurations \
        "Key=domain-name,Values=example.com" \
@@ -92,7 +92,7 @@ Create the DHCP option set and associate it with your VPC in the Amazon VPC cons
 
 1. Associate the DHCP option set with your VPC. If `$VPC_ID` isn’t set in your shell, replace it in the following commands with the ID of your VPC.
 
-   ```
+   ```bash
    aws ec2 associate-dhcp-options \
      --dhcp-options-id $DHCP_OPTIONS_ID \
      --vpc-id $VPC_ID
@@ -100,7 +100,7 @@ Create the DHCP option set and associate it with your VPC in the Amazon VPC cons
 
 1. Verify the association.
 
-   ```
+   ```bash
    aws ec2 describe-vpcs \
      --vpc-ids $VPC_ID \
      --query 'Vpcs[0].DhcpOptionsId'

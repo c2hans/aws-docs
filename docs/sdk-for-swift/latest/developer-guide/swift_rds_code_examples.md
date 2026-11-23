@@ -32,7 +32,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 The `Package.swift` file.
 
-```
+```swift
 // swift-tools-version: 5.9
 //
 // The swift-tools-version declares the minimum version of Swift required to
@@ -74,7 +74,7 @@ let package = Package(
 ```
 The Swift code file, `entry.swift`.
 
-```
+```swift
 // An example that shows how to use the AWS SDK for Swift to perform a variety
 // of operations using Amazon Relational Database Service (RDS).
 //
@@ -898,7 +898,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Create a new database instance.
@@ -961,7 +961,7 @@ The following code example shows how to use `CreateDBParameterGroup`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Create a new database parameter group with the specified name.
@@ -996,7 +996,7 @@ The following code example shows how to use `CreateDBSnapshot`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Create a snapshot of the specified name.
@@ -1036,7 +1036,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Delete the specified database instance.
@@ -1067,7 +1067,7 @@ The following code example shows how to use `DeleteDBParameterGroup`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Delete the specified database parameter group.
@@ -1095,7 +1095,7 @@ The following code example shows how to use `DescribeDBEngineVersions`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Get all the database engine versions available for the specified
@@ -1129,7 +1129,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Wait until the specified database is available to use.
@@ -1186,7 +1186,7 @@ The following code example shows how to use `DescribeDBParameterGroups`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Get descriptions of the database parameter groups matching the given
@@ -1220,7 +1220,7 @@ The following code example shows how to use `DescribeDBParameters`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Returns the detailed parameter list for the specified database
@@ -1269,7 +1269,7 @@ The following code example shows how to use `DescribeDBSnapshots`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Wait until the specified database snapshot is available to use.
@@ -1329,7 +1329,7 @@ The following code example shows how to use `DescribeOrderableDBInstanceOptions`
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Print a list of available database instances with "micro" in the class
@@ -1390,7 +1390,7 @@ The following code example shows how to use `ModifyDBParameterGroup`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/rds#code-examples).
 
-```
+```swift
 import AWSRDS
 
     /// Demonstrates modifying two of the specified database parameter group's

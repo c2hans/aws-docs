@@ -42,7 +42,7 @@ nitro-cli describe-eif --eif-path {{image.eif}}
 
 **Output**
 
-```
+```json
 {
   "Measurements": {
     "HashAlgorithm": "Sha384 { ... }",

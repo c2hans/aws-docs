@@ -24,7 +24,7 @@ Access the Customer 360 solution through Quick Suite dashboards and Bedrock agen
 
  **Via AWS CLI**:
 
-```
+```bash
 aws bedrock-agent-runtime invoke-agent \
   --agent-id <AGENT_ID> \
   --agent-alias-id <ALIAS_ID> \

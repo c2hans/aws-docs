@@ -127,7 +127,7 @@ For more information, see [Quotas for your Application Load Balancers](https://d
 **Tools for PowerShell V4**
 **Example 1: This command lists ELB2 account limits for a given region.**
 
-```
+```powershell
 Get-ELB2AccountLimit
 ```
 **Output:**
@@ -155,7 +155,7 @@ Max  Name
 **Tools for PowerShell V5**
 **Example 1: This command lists ELB2 account limits for a given region.**
 
-```
+```powershell
 Get-ELB2AccountLimit
 ```
 **Output:**

@@ -11,14 +11,14 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 This guide is part of a library that provides architectural blueprints and technical guidance for designing and building security architectures on AWS. The library consists of implementation code ([AWS SRA code library](https://github.com/aws-samples/aws-security-reference-architecture-examples)), a validation tool ([SRA Verify](https://github.com/awslabs/sra-verify)), and two complementary categories of guides that cover the core architecture and deep dive architectures.
 
 ## AWS SRA – core architecture guide
-<a name="9999999999999999aws--sra---core-architecture-guide.bea2dbd0-83f1-58a4-938d-61b74321ca1a"></a>
+<a name="9999999999999999aws--sra---core-architecture-guide.ce0b3add-eafe-53be-a88a-2637b6f82eae"></a>
 
-The [AWS SRA – core architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/) guide represents a foundation for the recommended AWS security architecture. It is the starting point that applies to all organizations, regardless of their industry, application type, or any other considerations. This foundation helps you build a strong and scalable architecture on AWS and helps create a strong AWS multi-account security baseline that scales securely as your business grows.
+The [AWS SRA – core architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/) guide provides a foundation for the recommended AWS security architecture. It is the starting point that applies to all organizations, regardless of their industry, application type, or any other considerations. This foundation helps you build a scalable architecture on AWS and establish an AWS multi-account security baseline that grows with your business.
 
 ## AWS SRA – deep dive architectures
-<a name="9999999999999999aws--sra---deep-dive-architectures.43c965e8-6f57-5764-b0c5-ef085f2a100f"></a>
+<a name="9999999999999999aws--sra---deep-dive-architectures.79f8293b-97ca-53dc-ab9f-6d7252fd97c5"></a>
 
-The *AWS SRA – core architecture* guide is complemented by additional publications that provide architectural patterns aligned to specific security capabilities, application types, and compliance or regulatory requirements. These patterns extend the core architecture and should be used with the *AWS SRA – core architecture* guide.
+Additional publications complement the *AWS SRA – core architecture* guide and provide architectural patterns aligned to specific security capabilities, application types, and compliance or regulatory requirements. These patterns extend the core architecture. Use them with the *AWS SRA – core architecture* guide.
 
 The following guides provide architectural patterns aligned to specific security capabilities:
 + [AWS SRA – identity management](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/) provides guidance on how to implement a scalable, robust, and centralized identity and access management solution on AWS.

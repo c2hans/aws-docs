@@ -53,7 +53,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### ListReservationsResultModel schema
 <a name="reservations-response-body-listreservationsresultmodel-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "reservations": [
@@ -94,7 +94,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### InvalidRequest schema
 <a name="reservations-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -103,7 +103,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### AccessDenied schema
 <a name="reservations-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -112,7 +112,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### LimitExceeded schema
 <a name="reservations-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -121,7 +121,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### InternalServiceError schema
 <a name="reservations-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### BadGatewayException schema
 <a name="reservations-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -139,7 +139,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 #### GatewayTimeoutException schema
 <a name="reservations-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

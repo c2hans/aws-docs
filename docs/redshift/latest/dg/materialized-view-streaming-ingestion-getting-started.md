@@ -26,7 +26,7 @@ Assuming you have a Kinesis Data Streams stream available, the first step is to 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -61,7 +61,7 @@ Assuming you have a Kinesis Data Streams stream available, the first step is to 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

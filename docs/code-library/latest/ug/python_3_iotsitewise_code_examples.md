@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS IoT SiteWise.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 import boto3
 
 def hello_iot_sitewise(iot_sitewise_client):
@@ -82,7 +82,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class IoTSitewiseGettingStarted:
     """
     A scenario that demonstrates how to use Boto3 to manage IoT physical assets using
@@ -475,7 +475,7 @@ In this step, we get a description of the portal and display the portal URL.
 ```
 IoTSitewiseWrapper class that wraps AWS IoT SiteWise actions.
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -908,7 +908,7 @@ The following code example shows how to use `BatchPutAssetPropertyValue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -959,7 +959,7 @@ class IoTSitewiseWrapper:
 ```
 A helper function to generate the entries parameter from a values list.
 
-```
+```python
     def properties_to_values(
         self, asset_id: str, values: list[dict[str, Any]]
     ) -> list[dict[str, Any]]:
@@ -1005,7 +1005,7 @@ A helper function to generate the entries parameter from a values list.
 ```
 Here is an example of a values list to pass to the helper function.
 
-```
+```python
         values = [
             {
                 "propertyId": humidity_property_id,
@@ -1029,7 +1029,7 @@ The following code example shows how to use `CreateAsset`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1090,7 +1090,7 @@ The following code example shows how to use `CreateAssetModel`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1147,7 +1147,7 @@ class IoTSitewiseWrapper:
 ```
 Here is an example of a properties list to pass to the function.
 
-```
+```python
             properties = [
                 {
                     "name": temperature_property_name,
@@ -1175,7 +1175,7 @@ The following code example shows how to use `CreateGateway`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1238,7 +1238,7 @@ The following code example shows how to use `DeleteAsset`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1288,7 +1288,7 @@ The following code example shows how to use `DeleteAssetModel`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1338,7 +1338,7 @@ The following code example shows how to use `DeleteGateway`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1391,7 +1391,7 @@ The following code example shows how to use `DescribeGateway`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1446,7 +1446,7 @@ The following code example shows how to use `GetAssetPropertyValue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 
@@ -1507,7 +1507,7 @@ The following code example shows how to use `ListAssetModels`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iotsitewise#code-examples).
 
-```
+```python
 class IoTSitewiseWrapper:
     """Encapsulates AWS IoT SiteWise actions using the client interface."""
 

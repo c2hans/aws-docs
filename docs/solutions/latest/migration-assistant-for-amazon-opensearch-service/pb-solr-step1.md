@@ -11,7 +11,7 @@ Migration Assistant can also create the Solr backup during the workflow when the
 
  **SolrCloud.** Trigger an asynchronous collection backup, then poll for completion before continuing:
 
-```
+```bash
 curl "http://<SOLR_HOST>:<SOLR_PORT>/solr/admin/collections?action=BACKUP&name=<BACKUP_NAME>&collection=<COLLECTION>&location=/path/to/backup&async=backup-1"
 
 curl "http://<SOLR_HOST>:<SOLR_PORT>/solr/admin/collections?action=REQUESTSTATUS&requestid=backup-1&wt=json"
@@ -23,7 +23,7 @@ For multiple SolrCloud collections, repeat the backup request for each collectio
 
  **Standalone (single-core) Solr.** Trigger a replication-handler backup, then confirm it finished:
 
-```
+```bash
 curl "http://<SOLR_HOST>:<SOLR_PORT>/solr/<CORE>/replication?command=backup&name=<BACKUP_NAME>&location=/path/to/backup"
 
 curl "http://<SOLR_HOST>:<SOLR_PORT>/solr/<CORE>/replication?command=details&wt=json"
@@ -36,7 +36,7 @@ For SolrCloud, the backup `location` must be a path that is reachable from every
 
 After the backup completes, sync the parent backup directory to your Amazon S3 migration bucket so RFS can read it. The synced directory should contain the `<BACKUP_NAME>` directory:
 
-```
+```bash
 aws s3 sync /path/to/backup s3://<BUCKET>/solr-backup/
 ```
 
@@ -44,7 +44,7 @@ You can use the default Migration Assistant bucket (`s3://migrations-default-<AC
 
 Before configuring the workflow, check the S3 layout:
 
-```
+```bash
 aws s3 ls s3://<BUCKET>/solr-backup/<BACKUP_NAME>/
 ```
 

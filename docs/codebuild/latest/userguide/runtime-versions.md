@@ -91,7 +91,7 @@ Custom runtime version selection is only supported for Ubuntu and Amazon Linux i
 
 Here is an example of a buildspec that specifies custom runtime versions.
 
-```
+```yaml
 version: 0.2
 phases:
   install:

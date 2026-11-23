@@ -8,7 +8,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `DeleteLicenseConfiguration` action.
 
-```
+```json
 {
    "eventVersion":"1.05",
    "userIdentity":{

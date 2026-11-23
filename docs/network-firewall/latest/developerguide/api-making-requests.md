@@ -54,7 +54,7 @@ Condition: Required if the request body itself contains information. Most toolki
 
 The following is an example header for an HTTP request to create a firewall in Network Firewall:
 
-```
+```json
 POST / HTTP/1.1
 Host: network-firewall.amazonaws.com:443
 X-Amz-Date: 20151007T174952Z

@@ -19,7 +19,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 Create a class that wraps Amazon Glacier operations.
 
-```
+```python
 import argparse
 import logging
 import os
@@ -182,7 +182,7 @@ class GlacierWrapper:
 ```
 Call functions on the wrapper class to create a vault and upload a file, then configure the vault to publish notifications and initiate a job to retrieve the archive.
 
-```
+```python
 def upload_demo(glacier, vault_name, topic_arn):
     """
     Shows how to:

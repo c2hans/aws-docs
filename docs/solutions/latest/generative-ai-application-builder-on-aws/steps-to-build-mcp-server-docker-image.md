@@ -28,7 +28,7 @@ We recommend the following project structure:
 
 For the Dockerfile structure, we recommend using a format similar to the following example:
 
-```
+```dockerfile
 FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim
 WORKDIR /app
 
@@ -79,25 +79,25 @@ Once your MCP server is created and tested locally, follow these steps to deploy
 
 1. Retrieve an authentication token and authenticate your Docker client to your registry. Use the AWS CLI:
 
-   ```
+   ```bash
    aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <account-id>.dkr.ecr.us-east-1.amazonaws.com
    ```
 
 1. Build your Docker image using the following command. For information on building a Docker file from scratch, see the [Docker documentation](https://docs.docker.com/engine/reference/builder/). You can skip this step if your image is already built:
 
-   ```
+   ```bash
    docker build -t <repository-name> .
    ```
 
 1. After the build completes, tag your image so you can push the image to this repository:
 
-   ```
+   ```bash
    docker tag <repository-name>:latest <account-id>.dkr.ecr.us-east-1.amazonaws.com/<repository-name>:latest
    ```
 
 1. Run the following command to push this image to your newly created AWS repository:
 
-   ```
+   ```bash
    docker push <account-id>.dkr.ecr.us-east-1.amazonaws.com/<repository-name>:latest
    ```
 

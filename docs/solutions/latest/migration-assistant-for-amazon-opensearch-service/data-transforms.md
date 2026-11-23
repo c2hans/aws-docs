@@ -44,7 +44,7 @@ When context values are loaded from files, the provider type controls materializ
 
 The workflow generates the container volume and mount fields for any `configMap` or `image` file references you declare in `entryPoint`, `context.values.fromFile`, or `context.valueDirectories`. Do not set `fileSourceVolumes` or `fileSourceVolumeMounts` manually unless you are bypassing the workflow pipeline and using raw transformer configuration files that you mount yourself.
 
-```
+```json
 {
   "entryPoint": {
     "javascriptFile": {

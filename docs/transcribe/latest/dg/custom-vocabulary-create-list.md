@@ -60,7 +60,7 @@ aws transcribe create-vocabulary \
 
 The file *my-first-vocab-list.json* contains the following request body.
 
-```
+```json
 {
   "VocabularyName": "{{my-first-vocabulary}}",
   "LanguageCode": "{{en-US}}",
@@ -84,7 +84,7 @@ This example uses the AWS SDK for Python (Boto3) to create a custom vocabulary f
 
 For additional examples using the AWS SDKs, including feature-specific, scenario, and cross-service examples, refer to the [Code examples for Amazon Transcribe using AWS SDKs](service_code_examples.md) chapter.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3

@@ -42,7 +42,7 @@ When sending or receiving data between services, the maximum input or result for
 
 The following includes a `Task` state that creates a virtual cluster.
 
-```
+```json
 "Create_Virtual_Cluster": {
   "Type": "Task",
   "Resource": "arn:aws:states:::emr-containers:createVirtualCluster",
@@ -64,7 +64,7 @@ The following includes a `Task` state that creates a virtual cluster.
 
 The following includes a `Task` state that submits a job to a virtual cluster and waits for it to complete.
 
-```
+```json
 "Submit_Job": {
     "Type": "Task",
     "Resource": "arn:aws:states:::emr-containers:startJobRun.sync",
@@ -113,7 +113,7 @@ The following includes a `Task` state that submits a job to a virtual cluster an
 
 The following includes a `Task` state that deletes a virtual cluster and waits for the deletion to complete.
 
-```
+```json
 "Delete_Virtual_Cluster": {
   "Type": "Task",
   "Resource": "arn:aws:states:::emr-containers:deleteVirtualCluster.sync",

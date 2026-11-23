@@ -78,7 +78,7 @@ The default content type is application/json when the payload is in JSON format.
 
 The following JSON example defines an AWS IoT rule with an HTTP action.
 
-```
+```JSON
 {
     "topicRulePayload": {
         "sql": "SELECT * FROM 'some/topic'",
@@ -106,7 +106,7 @@ The following JSON example defines an AWS IoT rule with an HTTP action.
 }
 ```
 
-```
+```JSON
 "http": {
     "url": "https://www.example.com/subpath",
     "confirmationUrl": "https://www.example.com",

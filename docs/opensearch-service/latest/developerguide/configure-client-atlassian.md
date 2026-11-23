@@ -84,7 +84,7 @@ The role passed in the pipeline must have the following policy attached to read 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -113,7 +113,7 @@ The role should also have a policy attached to access and write to your chosen s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

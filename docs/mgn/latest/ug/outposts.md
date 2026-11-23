@@ -90,7 +90,7 @@ When the staging area subnet is on an Outpost, MGN uses the following read-only 
 
 The `AWSApplicationMigrationFullAccess` managed policy includes these actions. If you use your own policies, add these actions to the principals that call MGN. You can limit `cloudwatch:GetMetricData` to calls that MGN makes for you with the `aws:CalledVia` condition key:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -119,6 +119,24 @@ The `AWSApplicationMigrationFullAccess` managed policy includes these actions. I
 ```
 
 If `ec2:DescribeInstanceTypeOfferings` or `s3-outposts:ListOutpostsWithS3` is denied, MGN rejects the replication settings. Before a launch, MGN skips a capacity check that it can't run, and the launch can fail later if the Outpost doesn't have enough capacity. MGN always blocks a launch to a location that doesn't match the staging area.
+
+## Data that goes to the Region
+<a name="outposts-data-flow"></a>
+
+Replicated data always goes from your source servers to the replication servers on the Outpost, whichever snapshot storage option you choose.
+
+The following always go to the parent AWS Region:
++ Control traffic, such as source server metadata and the calls from the replication servers to MGN, over TCP port 443.
++ The AWS Replication Agent installation file, which is downloaded from the public Amazon S3 URL in the Region. AWS PrivateLink is supported.
++ Command output from post-launch actions, if you use post-launch actions with AWS Systems Manager.
+
+Snapshots depend on the **Outpost snapshot storage** setting:
++ **Store on Outpost** – Snapshots are stored on the Outpost in Amazon S3 on Outposts. No snapshot data goes to the Region.
++ **Store in AWS Region** – Snapshots are stored in Amazon S3 in the parent Region, and the snapshot data goes over the Outpost service link.
+
+Second-generation (Gen2) Outposts don't support local snapshots. On a Gen2 Outpost, use **Store in AWS Region**.
+
+The route that replicated data takes from your source servers to the Outpost depends on your network. With public IP routing, replication traffic leaves your premises before it reaches the Outpost. To make sure that your replication data goes directly to the Outpost, use private IP connectivity. For more information, see [Architecture diagram for migration to Outposts](#outposts-network-architecture).
 
 ## Considerations and constraints
 <a name="outposts-considerations"></a>

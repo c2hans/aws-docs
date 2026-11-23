@@ -45,7 +45,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the [AddApplicationCloudWatchLoggingOption](/managed-flink/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html) and [DescribeApplication](/managed-flink/latest/apiv2/API_DescribeApplication.html) actions.
 
-```
+```json
 {
     "Records": [
         {
@@ -119,7 +119,7 @@ The following example shows a CloudTrail log entry that demonstrates the [AddApp
 
 The following example shows a CloudTrail log entry for the [`CreateSnapshot`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateSnapshot.html) action. The `resources` field lists the ARN of the application and the ARN of the enhanced snapshot.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

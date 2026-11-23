@@ -12,7 +12,7 @@ The following example uses the asynchronous client to send one Amazon Nova 2 Mes
 
  **Imports**
 
-```
+```python
 import asyncio
 import json
 from typing import Any
@@ -26,7 +26,7 @@ from aws_sdk_bedrock_runtime.models import (
 
 The following constant names the expected Amazon Nova 2 event types.
 
-```
+```python
 NOVA_EVENT_NAMES = {
     "messageStart",
     "contentBlockStart",
@@ -39,7 +39,7 @@ NOVA_EVENT_NAMES = {
 
 The following helper builds the model-native request.
 
-```
+```python
 def build_native_request(prompt: str) -> dict[str, Any]:
     """Build an Amazon Nova 2 Messages API request."""
     return {
@@ -50,7 +50,7 @@ def build_native_request(prompt: str) -> dict[str, Any]:
 
 `invoke_model_with_response_stream` returns model-native JSON events over an open network connection. The following function reads the events inside an `async with` block, which closes the connection when the stream ends or an error interrupts it. It narrows every generated event union, validates every model-native JSON payload, collects the text deltas, and accepts output only if the model signaled a complete message. A modeled error event, such as a model timeout, makes the `async for` loop raise the generated exception, such as `ModelTimeoutException`.
 
-```
+```python
 async def consume_stream(response: Any) -> str:
     """Consume Nova JSON events and reject errors or incomplete output."""
     text_parts: list[str] = []
@@ -102,7 +102,7 @@ The following function calls `invoke_model_with_response_stream` with the same k
 
  **Code**
 
-```
+```python
 async def invoke_model_with_response_stream(client: AsyncBedrockRuntimeClient) -> str:
     """Send a native streaming request and consume its validated output."""
     # Model-native request and event schemas vary by model provider.
@@ -122,7 +122,7 @@ async def invoke_model_with_response_stream(client: AsyncBedrockRuntimeClient) -
 
 The entry point creates an asynchronous client with `create_async_client` and runs the streaming request. Run the program with `python invoke_model_with_response_stream.py`.
 
-```
+```python
 async def main() -> None:
     """Create an asynchronous client and run the example."""
     client = await create_async_client()

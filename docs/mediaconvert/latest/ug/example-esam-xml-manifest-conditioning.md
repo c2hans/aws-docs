@@ -10,7 +10,7 @@ Note the `dataPassThrough` attribute on the first ad break. When this attribute 
 
 MediaConvert supports manifest conditioning with ESAM only in HLS packages.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ns2:ManifestConfirmConditionNotification xmlns:ns2="http://www.cablelabs.com/namespaces/metadata/xsd/confirmation/2" xmlns="http://www.cablelabs.com/namespaces/metadata/xsd/core/2" xmlns:ns3="http://www.cablelabs.com/namespaces/metadata/xsd/signaling/2">
   <ns2:ManifestResponse acquisitionPointIdentity="ExampleESAM" acquisitionSignalID="1" duration="PT30S" dataPassThrough="true">

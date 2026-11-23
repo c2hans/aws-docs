@@ -77,7 +77,7 @@ aws cloudwatch get-metric-statistics --namespace AWS/Route53RecoveryReadiness \
 
 The following is example output from the command:
 
-```
+```json
 {
     "Label": "ReadinessChecks",
     "Datapoints": [

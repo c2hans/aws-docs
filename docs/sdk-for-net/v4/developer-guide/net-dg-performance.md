@@ -33,7 +33,7 @@ In applications that use dependency injection, register the client as a singleto
 
 You can also register a client as a singleton manually.
 
-```
+```csharp
 builder.Services.AddSingleton<IAmazonS3>(_ => new AmazonS3Client());
 ```
 
@@ -49,7 +49,7 @@ Some SDK response objects carry a live network stream. The most common example i
 
 Always wrap a streaming response in a `using` statement and read or copy its stream promptly.
 
-```
+```csharp
 using Amazon.S3;
 using Amazon.S3.Model;
 
@@ -65,7 +65,7 @@ Disposing the response and disposing its `ResponseStream` are equivalent; either
 **Tip**
 If you only need object metadata, such as size, last-modified time, content type, or ETag, call `GetObjectMetadata` or `GetObjectMetadataAsync` instead of `GetObject`. The metadata operation issues an HTTP `HEAD` request and transfers no object body, so there's no content stream to manage.
 
-```
+```csharp
 var metadata = await s3Client.GetObjectMetadataAsync(bucketName, key);
 Console.WriteLine($"Size: {metadata.ContentLength} bytes");
 ```
@@ -85,7 +85,7 @@ Some contexts capture a `SynchronizationContext`, such as classic ASP.NET, Windo
 
 The following method blocks on the asynchronous call and can deadlock or starve the thread pool.
 
-```
+```csharp
 // Anti-pattern: do not do this.
 public GetObjectResponse Get(GetObjectRequest request)
 {
@@ -95,7 +95,7 @@ public GetObjectResponse Get(GetObjectRequest request)
 
 Instead, make the method `async` and `await` the call.
 
-```
+```csharp
 public async Task<GetObjectResponse> GetAsync(GetObjectRequest request)
 {
     return await s3Client.GetObjectAsync(request);
@@ -118,14 +118,14 @@ To help the GC work well in constrained environments:
 + On small AWS Lambda and Amazon ECS hosts, consider disabling concurrent (background) garbage collection so the collector doesn't reserve additional memory; for example, set the `DOTNET_gcConcurrent` environment variable to `0`, or set `<ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>` in the project file.
 + Bound your concurrency. Launching many operations at once, such as calling `Task.WhenAll` over a large collection, inflates process memory and can starve the connection pool. Cap the degree of parallelism instead. For example, avoid this unbounded pattern:
 
-  ```
+  ```csharp
   // Anti-pattern: starts one task per item with no limit.
   await Task.WhenAll(keys.Select(key => s3Client.GetObjectMetadataAsync(bucket, key)));
   ```
 
   Instead, cap concurrency with `Parallel.ForEachAsync`:
 
-  ```
+  ```csharp
   var options = new ParallelOptions { MaxDegreeOfParallelism = 10 };
   await Parallel.ForEachAsync(keys, options, async (key, token) =>
   {
@@ -142,7 +142,7 @@ Under high throughput, two connection-related problems are common. The first is 
 
 To tune the number of concurrent connections per endpoint, set the `MaxConnectionsPerServer` property on the client configuration. When this property is `null` (the default), the underlying `HttpClientHandler` default applies, which is effectively unlimited on .NET. Raise it only when many concurrent requests to the same endpoint are bottlenecked on connections. A good starting point is the peak number of concurrent requests you expect per endpoint. Setting it far higher than your workload needs wastes sockets without improving throughput.
 
-```
+```csharp
 using Amazon.S3;
 
 var config = new AmazonS3Config
@@ -157,7 +157,7 @@ If you already use dependency injection, configure your clients through `AWSSDK.
 
 Finally, bound your own parallelism so that you don't start more concurrent operations than your connection limit allows. For example, gate calls with a `SemaphoreSlim` sized to your connection limit:
 
-```
+```csharp
 var throttle = new SemaphoreSlim(50); // match MaxConnectionsPerServer
 await throttle.WaitAsync(token);
 try
@@ -197,7 +197,7 @@ When you investigate a slowdown, hang, or apparent leak, the following signals h
 + A growing number of sockets in the `CLOSE_WAIT` or `TIME_WAIT` state (visible with `netstat`) is the fingerprint of undisposed responses or of clients being created and discarded per request. See [Dispose responses and streams](#net-dg-performance-dispose) and [Reuse service clients](#net-dg-performance-reuse-clients).
 + Enable request metrics and response logging to confirm that requests are actually being dispatched and to measure latency. Set the properties of the [LoggingConfig](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Util/TLoggingConfig.html) object on [AWSConfigs](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Amazon/TAWSConfigs.html) before you create your service clients. A client captures settings such as `LogMetrics` when it is constructed.
 
-  ```
+  ```csharp
   using Amazon;
 
   AWSConfigs.LoggingConfig.LogMetrics = true;

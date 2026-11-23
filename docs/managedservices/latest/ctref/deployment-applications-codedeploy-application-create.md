@@ -138,14 +138,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-applications-codedeploy-application-create-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-applications-codedeploy-application-create-ex-max"></a>
 
-```
+```json
 {
   "Description": "Stack Description.",
   "VpcId": "vpc-12345678",

@@ -15,7 +15,7 @@ Use the `ListJobs` operation to list all existing address validation jobs. You c
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "Filter": {
         "JobStatus": "Running"
@@ -28,7 +28,7 @@ Use the `ListJobs` operation to list all existing address validation jobs. You c
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "Entries": [{
             "Action": "ValidateAddress",
@@ -63,7 +63,7 @@ Use the `ListJobs` operation to list all existing address validation jobs. You c
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws location list-jobs --region us-west-2
 ```
 

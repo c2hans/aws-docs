@@ -50,7 +50,7 @@ This section includes example requests for API actions for configuring checkpoin
 
 The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action configures checkpointing when you are creating an application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "RuntimeEnvironment":"FLINK-1_19",
@@ -80,7 +80,7 @@ The following example request for the [`CreateApplication`](https://docs.aws.ama
 
 The following example request for the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action disables checkpointing when you are creating an application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "RuntimeEnvironment":"FLINK-1_19",
@@ -107,7 +107,7 @@ The following example request for the [`CreateApplication`](https://docs.aws.ama
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action configures checkpointing for an existing application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "ApplicationConfigurationUpdate": {
@@ -128,7 +128,7 @@ The following example request for the [`UpdateApplication`](https://docs.aws.ama
 
 The following example request for the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action disables checkpointing for an existing application:
 
-```
+```json
 {
    "ApplicationName": "MyApplication",
    "ApplicationConfigurationUpdate": {

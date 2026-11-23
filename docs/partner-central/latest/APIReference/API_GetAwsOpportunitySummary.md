@@ -45,6 +45,7 @@ Required: Yes
 {
    "Catalog": "string",
    "CosellMotion": "string",
+   "CosellMotionReason": "string",
    "Customer": {
       "Contacts": [
          {
@@ -169,6 +170,15 @@ Required: Yes
       "Solutions": [ "string" ]
    },
    "RelatedOpportunityId": "string",
+   "SoftwareRevenue": {
+      "Discount": "string",
+      "EffectiveDate": "string",
+      "ExpirationDate": "string",
+      "Value": {
+         "Amount": "string",
+         "CurrencyCode": "string"
+      }
+   },
    "Visibility": "string"
 }
 ```
@@ -187,6 +197,10 @@ Pattern: `[a-zA-Z]+`
 
  ** [CosellMotion](#API_GetAwsOpportunitySummary_ResponseSyntax) **   <a name="AWSPartnerCentral-GetAwsOpportunitySummary-response-CosellMotion"></a>
 Engagement classification for this opportunity. Read-only. Null before scoring. Known values: `AWS Field-engaged`, `Agent-engaged`, `Partner-led`.
+Type: String
+
+ ** [CosellMotionReason](#API_GetAwsOpportunitySummary_ResponseSyntax) **   <a name="AWSPartnerCentral-GetAwsOpportunitySummary-response-CosellMotionReason"></a>
+The plain-language reason for the current `CosellMotion` value. Read-only. Null when `CosellMotion` is null.
 Type: String
 
  ** [Customer](#API_GetAwsOpportunitySummary_ResponseSyntax) **   <a name="AWSPartnerCentral-GetAwsOpportunitySummary-response-Customer"></a>
@@ -233,6 +247,10 @@ Provides the unique identifier of the related partner opportunity, allowing part
 Type: String
 Pattern: `O[0-9]{1,19}`
 
+ ** [SoftwareRevenue](#API_GetAwsOpportunitySummary_ResponseSyntax) **   <a name="AWSPartnerCentral-GetAwsOpportunitySummary-response-SoftwareRevenue"></a>
+Seller-provided PARC deal terms: commitment value, discount, and contract dates.
+Type: [AwsSoftwareRevenue](API_AwsSoftwareRevenue.md) object
+
  ** [Visibility](#API_GetAwsOpportunitySummary_ResponseSyntax) **   <a name="AWSPartnerCentral-GetAwsOpportunitySummary-response-Visibility"></a>
 Defines the visibility level for the AWS Opportunity. Use `Full` visibility for most cases, while `Limited` visibility is reserved for special programs or sensitive opportunities.
 Type: String
@@ -246,6 +264,8 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 This error occurs when you don't have permission to perform the requested action.
 You don’t have access to this action or resource. Review IAM policies or contact your AWS administrator for assistance.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason why access was denied for the requested operation.
 HTTP Status Code: 400
@@ -253,16 +273,22 @@ HTTP Status Code: 400
  ** InternalServerException **
 This error occurs when the specified resource can’t be found or doesn't exist. Resource ID and type might be incorrect.
 Suggested action: This is usually a transient error. Retry after the provided retry delay or a short interval. If the problem persists, contact AWS support.
+ ** Message **
+A message that describes the internal error.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
 This error occurs when the specified resource can't be found. The resource might not exist, or isn't visible with the current credentials.
 Suggested action: Verify that the resource ID is correct and the resource is in the expected AWS region. Check IAM permissions for accessing the resource.
+ ** Message **
+A message that describes which resource the service couldn't find.
 HTTP Status Code: 400
 
  ** ThrottlingException **
 This error occurs when there are too many requests sent. Review the provided quotas and adapt your usage to avoid throttling.
 This error occurs when there are too many requests sent. Review the provided [Quotas](https://docs.aws.amazon.com/partner-central/latest/selling-api/quotas.html) and retry after the provided delay.
+ ** Message **
+A message that describes why the service throttled the request.
 HTTP Status Code: 400
 
  ** ValidationException **
@@ -270,6 +296,8 @@ The input fails to satisfy the constraints specified by the service or business 
 Suggested action: Review the error message, including the failed fields and reasons, to correct the request payload.
  ** ErrorList **
 A list of issues that were discovered in the submitted request or the resource state.
+ ** Message **
+A message that describes the validation error.
  ** Reason **
 The primary reason for this validation exception to occur.
 +  *REQUEST\_VALIDATION\_FAILED:* The request format is not valid.

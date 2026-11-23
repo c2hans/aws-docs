@@ -28,7 +28,7 @@ The following code example shows how to get started using AWS Control Tower.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
 public class HelloControlTower {
 
     public static void main(String[] args) {
@@ -94,7 +94,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 Run an interactive scenario demonstrating AWS Control Tower features.
 
-```
+```java
 public class ControlTowerScenario {
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
     private static final Scanner scanner = new Scanner(in);
@@ -1394,7 +1394,7 @@ The following code example shows how to use `DisableBaseline`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Disables a baseline for a specified target.
      *
@@ -1482,7 +1482,7 @@ The following code example shows how to use `DisableControl`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Disables a control for a specified target.
      *
@@ -1572,7 +1572,7 @@ The following code example shows how to use `EnableBaseline`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Asynchronously enables a baseline for the specified target if not already enabled.
      *
@@ -1685,7 +1685,7 @@ The following code example shows how to use `EnableControl`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Enables a control for a specified target.
      *
@@ -1796,7 +1796,7 @@ The following code example shows how to use `GetBaselineOperation`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Gets the status of a baseline operation.
      *
@@ -1868,7 +1868,7 @@ The following code example shows how to use `GetControlOperation`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Gets the status of a control operation.
      *
@@ -1928,7 +1928,7 @@ The following code example shows how to use `ListBaselines`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Lists all available baselines using pagination to retrieve complete results.
      *
@@ -1996,7 +1996,7 @@ The following code example shows how to use `ListEnabledBaselines`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Lists all enabled baselines using pagination to retrieve complete results.
      *
@@ -2075,7 +2075,7 @@ The following code example shows how to use `ListEnabledControls`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Lists all enabled controls for a specific target using pagination.
      *
@@ -2151,7 +2151,7 @@ The following code example shows how to use `ListLandingZones`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Lists all landing zones using pagination to retrieve complete results.
      *
@@ -2212,7 +2212,7 @@ The following code example shows how to use `ResetEnabledBaseline`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/controltower#code-examples).
 
-```
+```java
     /**
      * Resets an enabled baseline for a specific target.
      *

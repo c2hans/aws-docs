@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Interacts with the Amazon DCV server running on the head node.
 
-```
+```sh
 pcluster dcv [ -h ] ( connect )
 ```
 
@@ -34,7 +34,7 @@ Shows the help text for `pcluster dcv`.
 ### `pcluster dcv connect`
 <a name="pcluster-dcv-connect"></a>
 
-```
+```sh
 pcluster dcv connect [ -h ] [ -k {{SSH_KEY_PATH}} ] [ -r {{REGION}} ] {{cluster_name}}
 ```
 
@@ -66,7 +66,7 @@ Support for the `--show-url` argument was added in AWS ParallelCluster version 2
 
 **Example using AWS ParallelCluster version 2.11.7:**
 
-```
+```sh
 $ pcluster dcv connect -k {{~/.ssh/id_rsa}} {{mycluster}}
 ```
 

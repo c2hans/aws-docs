@@ -24,7 +24,7 @@ This policy allows the caller to use the selected VPCs, subnets, and security gr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -69,7 +69,7 @@ The `codebuild:source.buildspec` condition key supports only the Null operator t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -101,7 +101,7 @@ This policy allows creating fleets that can build with only `c5.large` or `m5.la
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -129,7 +129,7 @@ This policy allows the caller to override the `STAGE` environment variable to be
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -181,7 +181,7 @@ You can use variables in condition key names like `secondarySources/${sourceIden
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

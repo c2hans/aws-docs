@@ -154,7 +154,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListModelInvocationJobs.
 
-```
+```json
 GET /model-invocation-jobs?maxResults=10&sortBy=CreationTime&sortOrder=Descending HTTP/1.1
 ```
 

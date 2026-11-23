@@ -22,7 +22,7 @@ The following `SHOW` commands are supported for common discovery operations:
 ## Examples
 <a name="r_SHOW_LIST-examples"></a>
 
-```
+```sql
 SHOW SCHEMAS FROM DATABASE dev;
 
 database_name |     schema_name      | schema_owner | schema_type |         schema_acl          | source_database | schema_option
@@ -34,7 +34,7 @@ dev           | information_schema   |            1 | local       | jpuser=UC/jp
 dev           | schemad79cd6d93bf043 |            1 | local       |                             |                 |
 ```
 
-```
+```sql
 SHOW TABLES FROM SCHEMA dev.s1 LIKE '%view' LIMIT 1;
 
 database_name | schema_name |    table_name     | table_type |              table_acl               | remarks | owner | last_altered_time | last_modified_time | dist_style |   table_subtype
@@ -42,7 +42,7 @@ database_name | schema_name |    table_name     | table_type |              tabl
 dev           | s1          | late_binding_view | VIEW       | {alice=arwdRxtDPA/alice,bob=d/alice} |         | alice |                   |                    |            | LATE BINDING VIEW
 ```
 
-```
+```sql
 SHOW COLUMNS FROM TABLE second_db.public.t22;
 
  database_name | schema_name | table_name | column_name | ordinal_position | column_default | is_nullable |          data_type          | character_maximum_length | numeric_precision | numeric_scale | remarks | sort_key_type | sort_key | dist_key | encoding | collation

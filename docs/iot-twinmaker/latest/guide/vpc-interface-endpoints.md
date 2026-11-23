@@ -18,7 +18,7 @@ Before you set up an interface VPC endpoint for AWS IoT TwinMaker, review [Inter
 AWS IoT TwinMaker supports making calls to all of its API actions from your VPC.
 + For data plane API operations, use the following endpoint:
 
-  ```
+  ```console
   data.iottwinmaker.{{region}}.amazonaws.com
   ```
 
@@ -28,7 +28,7 @@ AWS IoT TwinMaker supports making calls to all of its API actions from your VPC.
   + [BatchPutPropertyValues](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_BatchPutPropertyValues.html)
 + For the control plane API operations, use the following endpoint:
 
-  ```
+  ```console
   api.iottwinmaker.{{region}}.amazonaws.com
   ```
 
@@ -66,12 +66,12 @@ You can create a VPC endpoint for the AWS IoT TwinMaker service by using either 
 Create a VPC endpoint for AWS IoT TwinMaker that uses the following service name.
 + For data plane API operations, use the following service name:
 
-  ```
+  ```console
   com.amazonaws.{{region}}.iottwinmaker.data
   ```
 + For control plane API operations, use the following service name:
 
-  ```
+  ```console
   com.amazonaws.{{region}}.iottwinmaker.api
   ```
 
@@ -103,12 +103,12 @@ When you create an interface endpoint, AWS IoT TwinMaker generates endpoint-spec
 If you enable private DNS for the endpoint, you can make API requests to AWS IoT TwinMaker through one of the following VPC endpoints.
 + For the data plane API operations, use the following endpoint. Replace {{region}} with your AWS Region.
 
-  ```
+  ```bash
   data.iottwinmaker.{{region}}.amazonaws.com
   ```
 + For the control plane API operations, use the following endpoint. Replace {{region}} with your AWS Region.
 
-  ```
+  ```bash
   api.iottwinmaker.{{region}}.amazonaws.com
   ```
 
@@ -116,12 +116,12 @@ If you disable private DNS for the endpoint, you must do the following to access
 + Specify the VPC endpoint URL in API requests.
   + For the data plane API operations, use the following endpoint URL. Replace {{vpc-endpoint-id}} and {{region}} with your VPC endpoint ID and Region.
 
-    ```
+    ```bash
     {{vpc-endpoint-id}}.data.iottwinmaker.{{region}}.vpce.amazonaws.com
     ```
   + For the control plane API operations, use the following endpoint URL. Replace {{vpc-endpoint-id}} and {{region}} with your VPC endpoint ID and Region.
 
-    ```
+    ```bash
     {{vpc-endpoint-id}}.api.iottwinmaker.{{region}}.vpce.amazonaws.com
     ```
 + Disable host prefix injection. The AWS CLI and AWS SDKs prepend the service endpoint with various host prefixes when you call each API operation. This causes the AWS CLI and AWS SDKs to produce invalid URLs for AWS IoT TwinMaker when you specify a VPC endpoint.

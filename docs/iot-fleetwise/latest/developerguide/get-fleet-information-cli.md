@@ -12,7 +12,7 @@ To retrieve a paginated list of IDs of all fleets that the vehicle belongs to, r
 
 Replace {{vehicle-name}} with the ID of the vehicle.
 
-```
+```bash
 aws iotfleetwise list-fleets-for-vehicle \
             --vehicle-name {{vehicle-name}}
 ```
@@ -24,7 +24,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ To retrieve a paginated list of summaries of all vehicles in a fleet, run the fo
 
 Replace {{fleet-id}} with the ID of the fleet.
 
-```
+```bash
 aws iotfleetwise list-vehicles-in-fleet \
             --fleet-id {{fleet-id}}
 ```
@@ -61,7 +61,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ To retrieve the metadata of a fleet, run the following command.
 
 Replace {{fleet-id}} with the ID of the fleet.
 
-```
+```bash
 aws iotfleetwise get-fleet \
             --fleet-id {{fleet-id}}
 ```
@@ -101,7 +101,7 @@ If you [enabled encryption](key-management.md) using a customer managed AWS KMS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

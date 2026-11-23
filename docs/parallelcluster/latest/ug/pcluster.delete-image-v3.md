@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Starts the deletion of the custom AWS ParallelCluster image.
 
-```
+```sh
 pcluster delete-image [-h]
                  --image-id {{IMAGE_ID}}
                 [--debug]

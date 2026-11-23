@@ -35,7 +35,7 @@ After deleting or changing which Region contains the aggregator index, you must 
 **To promote a user-owned (local) index to be the aggregator index for the account**
 The following example command updates the index in the specified AWS Region from type `LOCAL` to type `AGGREGATOR`. You must call the operation from the AWS Region that you want to contain the aggregator index. For information about the banner workflow option, see the Console tab above.
 
-```
+```bash
 $ aws resource-explorer-2 update-index-type \
     --arn arn:aws:resource-explorer-2:us-east-1:123456789012:index/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111 \
     --type AGGREGATOR \

@@ -65,7 +65,7 @@ effectivePartition = itemPartition % numberOfPartitions
 ------
 #### [ Java ]
 
-```
+```java
 List<StandardBeacon> standardBeaconList = new ArrayList<>();
 StandardBeacon exampleStandardBeacon = StandardBeacon.builder()
     .name("{{beaconName}}")
@@ -78,7 +78,7 @@ standardBeaconList.add(exampleStandardBeacon);
 ------
 #### [ C\# / .NET ]
 
-```
+```cs
 var standardBeaconList = new List<StandardBeacon>();
 StandardBeacon exampleStandardBeacon = new StandardBeacon
   {
@@ -92,7 +92,7 @@ standardBeaconList.Add(exampleStandardBeacon);
 ------
 #### [ Rust ]
 
-```
+```rs
 let standard_beacon_list = vec![
     StandardBeacon::builder()
         .name("{{beacon_name}}")

@@ -8,7 +8,7 @@ An Amazon S3 policy is a plaintext file that is structured according to the rule
 
 The following Amazon S3 policy example shows the basic policy syntax:
 
-```
+```json
 {
     "s3_attributes": {
         "public_access_block_configuration": {

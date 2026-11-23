@@ -8,6 +8,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/gnupg-minimal.html
 
  For more functionality from `gnupg2`, such as the ability to download keys from a key server, ensure that the `gnupg2-full` package is installed. Run the following command to swap `gnupg2-minimal` for `gnupg2-full`.
 
-```
+```bash
 $ dnf swap gnupg2-minimal gnupg2-full
 ```

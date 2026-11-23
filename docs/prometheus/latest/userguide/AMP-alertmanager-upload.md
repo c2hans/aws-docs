@@ -29,13 +29,13 @@ Alternately, you can create a new file and edit it directly in the console, by c
 
 1. Base64 encode the contents of your alert manager file. On Linux, you can use the following command:
 
-   ```
+   ```bash
    base64 {{input-file}} {{output-file}}
    ```
 
    On macOS, you can use the following command:
 
-   ```
+   ```bash
    openssl base64 {{input-file}} {{output-file}}
    ```
 
@@ -43,19 +43,19 @@ Alternately, you can create a new file and edit it directly in the console, by c
 
    On AWS CLI version 2, enter:
 
-   ```
+   ```bash
    aws amp create-alert-manager-definition --data file://{{path_to_base_64_output_file}} --workspace-id {{my-workspace-id}} --region {{region}}
    ```
 
    On AWS CLI version 1, enter:
 
-   ```
+   ```bash
    aws amp create-alert-manager-definition --data fileb://{{path_to_base_64_output_file}} --workspace-id {{my-workspace-id}} --region {{region}}
    ```
 
 1. It takes a few seconds for your alert manager configuration to become active. To check the status, enter the following command:
 
-   ```
+   ```bash
    aws amp describe-alert-manager-definition --workspace-id {{workspace_id}} --region {{region}}
    ```
 
@@ -65,13 +65,13 @@ Alternately, you can create a new file and edit it directly in the console, by c
 
 1. Base64 encode the contents of your alert manager file. On Linux, you can use the following command:
 
-   ```
+   ```bash
    base64 {{input-file}} {{output-file}}
    ```
 
    On macOS, you can use the following command:
 
-   ```
+   ```bash
    openssl base64 {{input-file}} {{output-file}}
    ```
 
@@ -79,19 +79,19 @@ Alternately, you can create a new file and edit it directly in the console, by c
 
    On AWS CLI version 2, enter:
 
-   ```
+   ```bash
    aws amp put-alert-manager-definition --data file://{{path_to_base_64_output_file}} --workspace-id {{my-workspace-id}} --region {{region}}
    ```
 
    On AWS CLI version 1, enter:
 
-   ```
+   ```bash
    aws amp put-alert-manager-definition --data file://{{path_to_base_64_output_file}} --workspace-id {{my-workspace-id}} --region {{region}}
    ```
 
 1. It takes a few seconds for your new alert manager configuration to become active. To check the status, enter the following command:
 
-   ```
+   ```bash
    aws amp describe-alert-manager-definition --workspace-id {{workspace_id}} --region {{region}}
    ```
 

@@ -12,6 +12,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 + [Automate the creation of Amazon WorkSpaces Applications resources using AWS CloudFormation](automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation.md)
 + [Create an API-driven resource orchestration framework using GitHub Actions and Terragrunt](create-an-api-driven-resource-orchestration-framework-using-github-actions-and-terragrunt.md)
 + [Create automated pull requests for Terraform-managed AWS infrastructure by using GitHub Actions](create-automated-pull-requests-for-terraform-managed-aws-infrastructure.md)
++ [Create dynamic CI pipelines for Java and Python projects automatically](create-dynamic-ci-pipelines-for-java-and-python-projects-automatically.md)
 + [Deploy agentic systems on Amazon Bedrock with the CrewAI framework by using Terraform](deploy-agentic-systems-on-amazon-bedrock-with-the-crewai-framework.md)
 + [Execute Amazon Redshift SQL queries by using Terraform](execute-redshift-sql-queries-using-terraform.md)
 + [Export tags for a list of Amazon EC2 instances to a CSV file](export-tags-for-a-list-of-amazon-ec2-instances-to-a-csv-file.md)

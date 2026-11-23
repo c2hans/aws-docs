@@ -46,7 +46,7 @@ For a single-value metric, the `Rows` object contains a `Values` object that:
 
 For example, the following JSON response contains the query results for a single-value metric. This metric reports the number of unique endpoints that messages were delivered to by all the campaigns that are associated with a project, from August 1, 2019 through August 31, 2019:
 
-```
+```json
 {
     "ApplicationDateRangeKpiResponse":{
         "ApplicationId":"1234567890123456789012345example",
@@ -77,7 +77,7 @@ In this example, the response indicates that all the project's campaigns deliver
 
 If the query results for a single-value metric is null (not greater than or equal to zero), the `Rows` object is empty. Amazon Pinpoint returns a null value for a metric if there isn't any data to return for the metric. For example:
 
-```
+```json
 {
     "ApplicationDateRangeKpiResponse":{
         "ApplicationId":"2345678901234567890123456example",
@@ -102,7 +102,7 @@ However, the `Rows` object for a multiple-value metric also contains one or more
 
 For example, the following JSON response contains the query results for a multiple-value metric that reports the number of unique endpoints that messages were delivered to, for each campaign that's associated with a project, from August 1, 2019 through August 31, 2019:
 
-```
+```json
 {
     "ApplicationDateRangeKpiResponse":{
         "ApplicationId":"1234567890123456789012345example",

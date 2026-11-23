@@ -39,7 +39,7 @@ Some examples of values of the `status` column are as follows:
 
 In the following example, the rows in the result show actions taken by Amazon Redshift.
 
-```
+```sql
 select table_id, type, status, eventtime, sequence, previous_state
 from SVL_AUTO_WORKER_ACTION;
 ```

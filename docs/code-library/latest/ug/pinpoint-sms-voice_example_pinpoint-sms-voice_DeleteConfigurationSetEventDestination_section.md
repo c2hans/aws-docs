@@ -14,7 +14,7 @@ The following code example shows how to use `DeleteConfigurationSetEventDestinat
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Delete the event destination
         lo_pps->deleteconfseteventdst(

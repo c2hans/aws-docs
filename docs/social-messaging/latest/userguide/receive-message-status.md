@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/receiv
 
 You can set the [status of the message](managing-event-destinations-status.md) to `read` to show the end user two blue check marks on their screen.
 
-```
+```bsh
 aws socialmessaging send-whatsapp-message --message '{"messaging_product":"whatsapp","message_id":"'{{{MESSAGE_ID}}}'","status":"read"}' --origination-phone-number-id {{{ORIGINATION_PHONE_NUMBER_ID}}} --meta-api-version v20.0
 ```
 

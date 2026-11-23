@@ -110,7 +110,7 @@ When you call `[update-association](https://docs.aws.amazon.com/cli/latest/refer
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Update-SSMAssociation `
        -Name {{document_name}} `
        -DocumentVersion {{version_of_document_applied}} `
@@ -162,7 +162,7 @@ When you call `[update-association](https://docs.aws.amazon.com/cli/latest/refer
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Update-SSMAssociation `
      -AssociationId b85ccafe-9f02-4812-9b81-01234EXAMPLE `
      -AssociationName TestHostnameAssociation2 `
@@ -205,7 +205,7 @@ When you call `[update-association](https://docs.aws.amazon.com/cli/latest/refer
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Update-SSMAssociation `
      -AssociationId b85ccafe-9f02-4812-9b81-01234EXAMPLE `
      -AssociationName CalendarAssociation `
@@ -246,7 +246,7 @@ When you call `[update-association](https://docs.aws.amazon.com/cli/latest/refer
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Update-SSMAssociation `
      -AssociationId b85ccafe-9f02-4812-9b81-01234EXAMPLE `
      -AssociationName MultiCalendarAssociation `
@@ -278,7 +278,7 @@ When you call `[update-association](https://docs.aws.amazon.com/cli/latest/refer
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Get-SSMAssociation `
      -AssociationId b85ccafe-9f02-4812-9b81-01234EXAMPLE | Select-Object *
    ```

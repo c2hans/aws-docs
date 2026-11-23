@@ -18,13 +18,13 @@ It is recommended that write access to the bucket be restricted to the IAM user 
 
 If you plan to use multiple CDK applications within the same AWS account and region, then you should consider creating a separate CDK bootstrap bucket using:
 
-```
+```bash
 cdk bootstrap --bootstrap-bucket-name my-bootstrap-bucket-name
 ```
 
 If doing so, you will also need to modify **cdk.json** in the root of your CDK application with (see the [CDK docs](https://github.com/aws/aws-cdk/tree/master/packages/aws-cdk#json-configuration-files)):
 
-```
+```json
 {
   // ...
   "toolkitBucketName": "my-bootstrap-bucket-name",
@@ -44,7 +44,7 @@ The following example creates a dedicated subnet group for the `RenderQueue` to 
 ------
 #### [ Python ]
 
-```
+```python
 vpc = Vpc(self, 'Vpc',
   # ...
   subnet_configuration=[
@@ -78,7 +78,7 @@ render_queue = RenderQueue(self, 'RenderQueue',
 ------
 #### [ TypeScript ]
 
-```
+```typescript
 const vpc = new Vpc(this, 'Vpc', {
   // ...
   subnetConfiguration: [

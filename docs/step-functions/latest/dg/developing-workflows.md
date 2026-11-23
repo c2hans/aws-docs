@@ -52,7 +52,7 @@ The following example CloudFormation templates show how you can provide the same
 ------
 #### [ JSON with Definition ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS Step Functions sample template.",
@@ -129,7 +129,7 @@ The following example CloudFormation templates show how you can provide the same
 ------
 #### [ JSON with DefinitionString ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS Step Functions sample template.",
@@ -198,7 +198,7 @@ The following example CloudFormation templates show how you can provide the same
 ------
 #### [ YAML with Definition ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS Step Functions sample template.
 Resources:
@@ -249,7 +249,7 @@ Outputs:
 ------
 #### [ YAML with DefinitionString ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS Step Functions sample template.
 Resources:

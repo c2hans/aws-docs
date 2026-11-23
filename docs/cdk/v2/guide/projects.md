@@ -59,7 +59,7 @@ File that specifies which files and folders to ignore when publishing a package 
 The *application file* defines your CDK app. CDK projects can contain one or more application files. Application files are stored in the `bin` folder.
 The following is an example of a basic application file that defines a CDK app:
 
-```
+```javascript
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
@@ -74,7 +74,7 @@ Configuration file for Jest. * Jest * is a popular JavaScript testing framework.
 The *stack file* defines your CDK stack. Within your stack, you define AWS resources and properties using constructs.
 The following is an example of a basic stack file that defines a CDK stack:
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -123,7 +123,7 @@ File that specifies which files and folders to ignore when publishing a package 
 The *application file* defines your CDK app. CDK projects can contain one or more application files. Application files are stored in the `bin` folder.
 The following is an example of a basic application file that defines a CDK app:
 
-```
+```javascript
 #!/usr/bin/env node
 
 const cdk = require('aws-cdk-lib');
@@ -138,7 +138,7 @@ Configuration file for Jest. * Jest * is a popular JavaScript testing framework.
 The *stack file* defines your CDK stack. Within your stack, you define AWS resources and properties using constructs.
 The following is an example of a basic stack file that defines a CDK stack:
 
-```
+```javascript
 const { Stack, Duration } = require('aws-cdk-lib');
 
 class MyCdkJsProjectStack extends Stack {
@@ -186,7 +186,7 @@ The CDK CLI automatically creates a virtual environment for your project. The `.
 The *application file* defines your CDK app. CDK projects can contain one or more application files.
 The following is an example of a basic application file that defines a CDK app:
 
-```
+```python
 #!/usr/bin/env python3
 import os
 
@@ -205,7 +205,7 @@ Directory that contains your *stack files*. The CDK CLI creates the following he
 +  `my_cdk_py_project` – File that defines your CDK stack. You then define AWS resources and properties within the stack using constructs.
 The following is an example of a stack file:
 
-```
+```python
 from aws_cdk import Stack
 
 from constructs import Construct
@@ -226,7 +226,7 @@ Batch file for Windows that is used to set up the Python virtual environment.
 Directory that contains tests for your CDK project.
 The following is an example of a unit test:
 
-```
+```python
 import aws_cdk as core
 import aws_cdk.assertions as assertions
 
@@ -260,7 +260,7 @@ File that contains configuration information and metadata about your CDK project
 Directory containing your *application* and *stack* files.
 The following is an example application file:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -282,7 +282,7 @@ public class MyCdkJavaProjectApp {
 ```
 The following is an example stack file:
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -304,7 +304,7 @@ public class MyCdkJavaProjectStack extends Stack {
  `src/test`
 Directory containing your test files. The following is an example:
 
-```
+```java
 package com.myorg;
 
 import software.amazon.awscdk.App;
@@ -346,7 +346,7 @@ my-cdk-csharp-project
 Directory containing your *application* and *stack* files.
 The following is an example application file:
 
-```
+```csharp
 using Amazon.CDK;
 using System;
 using System.Collections.Generic;
@@ -367,7 +367,7 @@ namespace MyCdkCsharpProject
 ```
 The following is an example stack file:
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 
@@ -406,7 +406,7 @@ File that contains module information and is used to manage dependencies and ver
 File that defines your CDK application and stacks.
 The following is an example:
 
-```
+```go
 package main
 import (
  "github.com/aws/aws-cdk-go/awscdk/v2"
@@ -449,7 +449,7 @@ func env() *awscdk.Environment {
 File that defines a sample test.
 The following is an example:
 
-```
+```go
 package main
 
 import (

@@ -64,7 +64,7 @@ To achieve this scenario, the manager tags the production pipelines with the "en
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -99,7 +99,7 @@ In addition, the manager attaches the following policy to the production IAM gro
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -20,7 +20,7 @@ In the following example, replace the red highlighted text with your actual valu
 
 List the stacks, using the AWS Region where you installed the PCUI:
 
-```
+```bash
 $ aws cloudformation list-stacks --region {{aws-region-id}}
 ```
 
@@ -33,7 +33,7 @@ Note the stack names for the following stacks:
 
 List the log groups of the PCUI stack, as shown in the following example:
 
-```
+```bash
 $ aws cloudformation describe-stack-resources \
    --region {{aws-region-id}} \
    --stack-name {{pcluster-ui}} \
@@ -43,7 +43,7 @@ $ aws cloudformation describe-stack-resources \
 
 List the log groups of the AWS ParallelCluster API stack, as shown in the following example:
 
-```
+```bash
 $ aws cloudformation describe-stack-resources \
    --region {{aws-region-id}} \
    --stack-name {{pcluster-ui-ParallelCluster-Api-ABCD1234EFGH}} \
@@ -68,7 +68,7 @@ Use the following steps to gather and export the logs:
 
 1. Run the following query:
 
-   ```
+   ```bash
    $ fields @timestamp, @message
    | sort @timestamp desc
    | limit 10000

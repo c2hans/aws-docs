@@ -31,7 +31,7 @@ The following code example shows how to use `GetRestApis`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/apigateway#code-examples).
 Displays the Amazon API Gateway REST APIs in the Region.
 
-```
+```rust
 async fn show_apis(client: &Client) -> Result<(), Error> {
     let resp = client.get_rest_apis().send().await?;
 

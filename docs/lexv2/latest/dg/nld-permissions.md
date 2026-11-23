@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/nld-permissions.html
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

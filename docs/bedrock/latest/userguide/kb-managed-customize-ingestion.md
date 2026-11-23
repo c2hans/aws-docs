@@ -21,7 +21,7 @@ Managed knowledge bases support two parsing strategies:
 
 To use smart parsing, you can either omit the `parsingConfiguration` field from the `vectorIngestionConfiguration`, or explicitly specify it as follows:
 
-```
+```json
 {
     "parsingConfiguration": {
         "parsingStrategy": "SMART_PARSING"
@@ -47,7 +47,7 @@ In the AWS Management Console you choose the chunking strategy when connecting t
 
 If you omit this configuration or specify the default chunking strategy, the service uses fixed-size chunking with 300 tokens and 20% overlap.
 
-```
+```json
 {
     "chunkingConfiguration": {
         "chunkingStrategy": "DEFAULT"
@@ -62,7 +62,7 @@ Expand the section that corresponds to the chunking strategy that you want to us
 
 To treat each document in your data source as a single source chunk, specify `NONE` in the `chunkingStrategy` field of the `ChunkingConfiguration`, as in the following format:
 
-```
+```json
 {
     "chunkingStrategy": "NONE"
 }
@@ -73,7 +73,7 @@ To treat each document in your data source as a single source chunk, specify `NO
 
 To divide each document in your data source into chunks of approximately the same size, specify `FIXED_SIZE` in the `chunkingStrategy` field of the `ChunkingConfiguration` and include a [FixedSizeChunkingConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FixedSizeChunkingConfiguration.html) in the `fixedSizeChunkingConfiguration` field, as in the following format:
 
-```
+```json
 {
     "chunkingStrategy": "FIXED_SIZE",
     "fixedSizeChunkingConfiguration": {

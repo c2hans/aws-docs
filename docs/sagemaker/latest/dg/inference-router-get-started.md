@@ -11,7 +11,7 @@ In this tutorial, you create an inference router that routes between endpoints i
 + A version of the AWS CLI or an AWS SDK that supports inference routers. For more information, see [Tools and Regions](inference-router.md#inference-router-tools).
 + An IAM identity with permissions to manage the router, and to invoke the router and every destination (`sagemaker:InvokeEndpoint`). For the reason, see [How the router authorizes requests to destinations](inference-router-security.md#inference-router-security-confused-deputy). The following policy is an example.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -73,7 +73,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    It lists both endpoints as destinations.
 
-   ```
+   ```json
    [
      {
        "Name": "{{my-model}}",
@@ -87,7 +87,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
 1. <a name="inference-router-create"></a>**Create the router in `us-west-2`.**
 
-   ```
+   ```bash
    aws sagemaker create-inference-router \
        --region us-west-2 \
        --inference-router-name {{my-router}} \
@@ -98,7 +98,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
 1. <a name="inference-router-describe"></a>**Check the router status.**
 
-   ```
+   ```bash
    aws sagemaker describe-inference-router \
        --region us-west-2 \
        --inference-router-name {{my-router}}
@@ -106,7 +106,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    The following is example output.
 
-   ```
+   ```json
    {
        "InferenceRouterName": "{{my-router}}",
        "InferenceRouterArn": "arn:aws:sagemaker:us-west-2:{{111122223333}}:inference-router/{{my-router}}",
@@ -139,7 +139,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    Call `InvokeInferenceRouter` with the router name and the routing target name. The router passes the request body to the destination unchanged.
 
-   ```
+   ```bash
    aws sagemaker-inference-router-runtime invoke-inference-router \
        --region us-west-2 \
        --inference-router-name {{my-router}} \
@@ -151,7 +151,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    The model's response is written to `output.json`. The command prints the destination that served the request and the routing reason.
 
-   ```
+   ```json
    {
        "ContentType": "application/json",
        "InvokedProductionVariant": "{{AllTraffic}}",
@@ -162,7 +162,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    The following example uses Boto3.
 
-   ```
+   ```py
    import boto3
    from botocore.config import Config
 
@@ -194,7 +194,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    `UpdateInferenceRouter` replaces the complete list of routing targets. To add or remove a destination, send every routing target that you want to keep. For example, to add an endpoint in `us-east-2`, change `routing-targets.json` to the following.
 
-   ```
+   ```json
    [
      {
        "Name": "{{my-model}}",
@@ -211,7 +211,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    1. Update the router.
 
-      ```
+      ```bash
       aws sagemaker update-inference-router \
           --region us-west-2 \
           --inference-router-name {{my-router}} \
@@ -224,7 +224,7 @@ Without `DescribeEndpoint` or `DescribeInferenceComponent` on a destination, rou
 
    Deleting a router doesn't delete its destinations.
 
-   ```
+   ```bash
    aws sagemaker delete-inference-router \
        --region us-west-2 \
        --inference-router-name {{my-router}}

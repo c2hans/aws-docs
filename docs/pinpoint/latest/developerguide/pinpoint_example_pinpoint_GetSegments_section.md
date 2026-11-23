@@ -15,7 +15,7 @@ The following code examples show how to use `GetSegments`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/pinpoint#code-examples).
 List segments.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.GetSegmentsRequest;
@@ -85,7 +85,7 @@ public class ListSegments {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/pinpoint#code-examples).
 
-```
+```kotlin
 suspend fun listSegs(appId: String?) {
     PinpointClient.fromEnvironment { region = "us-west-2" }.use { pinpoint ->
         val response =

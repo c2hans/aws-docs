@@ -86,7 +86,7 @@ For more information, see [Creating a budget](https://docs.aws.amazon.com/cost-m
 **Tools for PowerShell V4**
 **Example 1: Creates a new budget with the specified budgetary and time constraints with email notifications.**
 
-```
+```powershell
 $notification = @{
     NotificationType = "ACTUAL"
     ComparisonOperator = "GREATER_THAN"
@@ -112,7 +112,7 @@ New-BGTBudget -Budget_BudgetName "Tester" -Budget_BudgetType COST -CostTypes_Inc
 **Tools for PowerShell V5**
 **Example 1: Creates a new budget with the specified budgetary and time constraints with email notifications.**
 
-```
+```powershell
 $notification = @{
     NotificationType = "ACTUAL"
     ComparisonOperator = "GREATER_THAN"

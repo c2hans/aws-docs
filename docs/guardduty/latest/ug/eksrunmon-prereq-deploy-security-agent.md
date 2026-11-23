@@ -37,7 +37,7 @@ Choose a preferred access method to create an Amazon VPC endpoint.
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [

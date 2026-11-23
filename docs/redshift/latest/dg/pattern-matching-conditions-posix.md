@@ -131,7 +131,7 @@ WHERE city ~ '.*E.*|.*H.*' ORDER BY city LIMIT 5;
 
 The following example finds cities whose names don't contain `E` or `H`:
 
-```
+```sql
 SELECT DISTINCT city FROM users WHERE city !~ '.*E.*|.*H.*' ORDER BY city LIMIT 5;
 
       city

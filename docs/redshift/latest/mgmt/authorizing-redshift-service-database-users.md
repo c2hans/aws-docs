@@ -29,7 +29,7 @@ To permit only specific database users to use an IAM role, take the following st
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -55,7 +55,7 @@ To permit only specific database users to use an IAM role, take the following st
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

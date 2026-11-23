@@ -25,7 +25,7 @@ In the following steps, you'll create an IAM role that allows SageMaker HyperPod
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -61,7 +61,7 @@ Because SageMaker HyperPod requires specific permissions that aren't available i
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

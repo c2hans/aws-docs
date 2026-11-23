@@ -76,7 +76,7 @@ For more information, see [Improving query identifier tracking using the SYS mon
 
 The following query returns running and queued queries.
 
-```
+```sql
 SELECT user_id,
        query_id,
        transaction_id,
@@ -255,7 +255,7 @@ Sample output.
 
 The following example shows the difference in query hash results between several queries. Observe the following queries:
 
-```
+```sql
 CREATE TABLE test_table (col1 INT);
 
 INSERT INTO test_table VALUES (1),(2);
@@ -276,7 +276,7 @@ DESC LIMIT 10;
 
 Following is a sample output:
 
-```
+```sql
 query_id | user_query_hash | generic_query_hash | text
 ---------+-----------------+--------------------+----------
 24723049 | oPuFtjEPLTs=    | oPuFtjEPLTs=       | select query_id, trim(user_query_hash) as user_query_hash, trim(generic_query_hash) as generic_query_hash, query_hash_version, trim(query_text) as text from sys_query_history order by start_time\r\ndesc limit 20

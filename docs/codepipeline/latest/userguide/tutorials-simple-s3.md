@@ -453,7 +453,7 @@ You can pipe the JSON directly into a file with the **get-pipeline** command as 
 
    For example, remove the following lines from the structure:
 
-   ```
+   ```json
    "metadata": {
      "pipelineArn": "arn:aws:codepipeline:{{region}}:{{account-ID}}:{{pipeline-name}}",
      "created": "{{date}}",

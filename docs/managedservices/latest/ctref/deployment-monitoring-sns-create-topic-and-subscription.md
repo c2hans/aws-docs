@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-monitoring-sns-create-topic-and-subscription-ex-min"></a>
 
-```
+```json
 {
   "Description" : "Creates SNS Topic using random Topic name with no input or parameter given.",
   "VpcId" : "vpc-12345678901234567",
@@ -160,7 +160,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-monitoring-sns-create-topic-and-subscription-ex-max"></a>
 
-```
+```json
 {
   "Description" : "Creates just SNS Topic per the given name",
   "VpcId" : "vpc-12345678",

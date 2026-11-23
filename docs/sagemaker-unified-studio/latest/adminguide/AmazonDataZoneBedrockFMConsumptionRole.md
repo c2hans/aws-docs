@@ -15,7 +15,7 @@ The default `AmazonDataZoneBedrockFMConsumptionRole` has the following inline po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -48,7 +48,7 @@ The default `AmazonDataZoneBedrockFMConsumptionRole` has the following trust pol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

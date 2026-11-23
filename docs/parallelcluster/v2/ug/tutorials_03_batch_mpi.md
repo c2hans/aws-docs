@@ -19,7 +19,7 @@ This tutorial walks you through running an MPI job with `awsbatch` as a schedule
 
 First, let's create a configuration for a cluster that uses `awsbatch` as the scheduler. Make sure to insert the missing data in the `vpc` section and the `key_name` field with the resources that you created at configuration time.
 
-```
+```INI
 [global]
 sanity_check = true
 
@@ -49,7 +49,7 @@ compute_subnet_id = {{subnet-#######}}
 
 You can now start the creation of the cluster. Let's call our cluster {{awsbatch-tutorial}}.
 
-```
+```sh
 $ pcluster create -c /path/to/the/created/config/aws_batch.config -t {{awsbatch awsbatch-tutorial}}
 ```
 
@@ -71,13 +71,13 @@ The [AWS ParallelCluster Batch CLI](awsbatchcli.md) commands are all available o
 
 Use your SSH pem file to log into your head node.
 
-```
+```sh
 $ pcluster ssh awsbatch-tutorial -i {{/path/to/keyfile.pem}}
 ```
 
 When you are logged in, run the commands `awsbqueues` and `awsbhosts` to show the configured AWS Batch queue and the running Amazon ECS instances.
 
-```
+```sh
 [ec2-user@ip-10-0-0-111 ~]$ awsbqueues
 jobQueueName                       status
 ---------------------------------  --------
@@ -98,7 +98,7 @@ Before moving to MPI, let's create a dummy job that sleeps for a little while an
 
 Create a file called "hellojob.sh" with the following content.
 
-```
+```bash
 #!/bin/bash
 
 sleep 30
@@ -108,14 +108,14 @@ echo "Hello $1 from $HOSTNAME" > "/shared/secret_message_for_${1}_by_${AWS_BATCH
 
 Next, submit the job using `awsbsub` and verify that it runs.
 
-```
+```sh
 $ awsbsub -jn hello -cf hellojob.sh Luca
 Job 6efe6c7c-4943-4c1a-baf5-edbfeccab5d2 (hello) has been submitted.
 ```
 
 View your queue, and check the status of the job.
 
-```
+```sh
 $ awsbstat
 jobId                                 jobName      status    startedAt            stoppedAt    exitCode
 ------------------------------------  -----------  --------  -------------------  -----------  ----------
@@ -124,7 +124,7 @@ jobId                                 jobName      status    startedAt          
 
 The output provides detailed information for the job.
 
-```
+```sh
 $ awsbstat {{6efe6c7c-4943-4c1a-baf5-edbfeccab5d2}}
 jobId                    : 6efe6c7c-4943-4c1a-baf5-edbfeccab5d2
 jobName                  : hello
@@ -148,7 +148,7 @@ log                      : https://console.aws.amazon.com/cloudwatch/home?region
 
 Note that the job is currently in a `RUNNING` state. Wait 30 seconds for the job to finish, and then run `awsbstat` again.
 
-```
+```sh
 $ awsbstat
 jobId                                 jobName      status    startedAt            stoppedAt    exitCode
 ------------------------------------  -----------  --------  -------------------  -----------  ----------
@@ -156,7 +156,7 @@ jobId                                 jobName      status    startedAt          
 
 Now you can see that the job is in the `SUCCEEDED` status.
 
-```
+```sh
 $ awsbstat -s SUCCEEDED
 jobId                                 jobName      status     startedAt            stoppedAt              exitCode
 ------------------------------------  -----------  ---------  -------------------  -------------------  ----------
@@ -165,7 +165,7 @@ jobId                                 jobName      status     startedAt         
 
 Because there are no jobs in the queue now, we can check for output through the `awsbout` command.
 
-```
+```sh
 $ awsbout {{6efe6c7c-4943-4c1a-baf5-edbfeccab5d2}}
 2018-11-12 09:41:29: Starting Job 6efe6c7c-4943-4c1a-baf5-edbfeccab5d2
 download: s3://{{amzn-s3-demo-bucket}}/batch/job-hellojob_sh-1542015680924.sh to tmp/batch/job-hellojob_sh-1542015680924.sh
@@ -183,7 +183,7 @@ To explore all of the available features that are not part of this tutorial, see
 
 While still logged into the head node, create a file in the `/shared` directory named `mpi_hello_world.c`. Add the following MPI program to the file:
 
-```
+```c
 // Copyright 2011 www.mpitutorial.com
 //
 // An intro MPI hello world program that uses MPI_Init, MPI_Comm_size,
@@ -223,7 +223,7 @@ int main(int argc, char** argv) {
 
 Now save the following code as `submit_mpi.sh`:
 
-```
+```bash
 #!/bin/bash
 echo "ip container: $(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)"
 echo "ip host: $(curl -s "http://169.254.169.254/latest/meta-data/local-ipv4")"
@@ -263,19 +263,19 @@ fi
 
 We are now ready to submit our first MPI job and make it run concurrently on three nodes:
 
-```
+```sh
 $ awsbsub -n 3 -cf submit_mpi.sh
 ```
 
 Now let's monitor the job status, and wait for it to enter the `RUNNING` status:
 
-```
+```sh
 $ watch awsbstat -d
 ```
 
 When the job enters the `RUNNING` status, we can look at its output. To show the output of the main node, append `#0` to the job id. To show the output of the compute nodes, use `#1` and `#2`:
 
-```
+```sh
 [ec2-user@ip-10-0-0-111 ~]$ awsbout -s {{5b4d50f8-1060-4ebf-ba2d-1ae868bbd92d#0}}
 2018-11-27 15:50:10: Job id: 5b4d50f8-1060-4ebf-ba2d-1ae868bbd92d#0
 2018-11-27 15:50:10: Initializing the environment...
@@ -323,7 +323,7 @@ download: s3://{{amzn-s3-demo-bucket}}/batch/job-submit_mpi_sh-1543333713772.sh 
 
 We can now confirm that the job completed successfully:
 
-```
+```sh
 [ec2-user@ip-10-0-0-111 ~]$ awsbstat -s ALL
 jobId                                 jobName        status     startedAt            stoppedAt            exitCode
 ------------------------------------  -------------  ---------  -------------------  -------------------  ----------

@@ -28,7 +28,7 @@ To follow the principle of least privilege, do not allow full access to `kms:Cre
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

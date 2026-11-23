@@ -89,7 +89,7 @@ hooks:
 
 Here is an example of a correctly spaced AppSpec file:
 
-```
+```yaml
 version: 0.0
 os: linux
 files:

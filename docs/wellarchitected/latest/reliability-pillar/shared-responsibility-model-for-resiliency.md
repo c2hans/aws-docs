@@ -24,6 +24,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Chart illustrating the shared resiliency model.](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/shared-model-resiliency.png)
 
+*Responsibility for resilience in and of the cloud for customers and AWS.*
+
  You can use AWS services to achieve your resilience objectives. As a customer, you are responsible for management of the following aspects of your system to achieve resilience in the cloud. For more detail on each service in particular, see [AWS documentation](https://docs.aws.amazon.com/index.html).
 
  **Networking, quotas, and constraints**

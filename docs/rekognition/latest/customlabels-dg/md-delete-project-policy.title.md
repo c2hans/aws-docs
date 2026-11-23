@@ -40,7 +40,7 @@ You can use the [DeleteProjectPolicy](https://docs.aws.amazon.com/rekognition/la
 
    For example: `python delete_project_policy.py {{policy_name}} {{project_arn}}` {{policy\_revision\_id}}
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -163,7 +163,7 @@ You can use the [DeleteProjectPolicy](https://docs.aws.amazon.com/rekognition/la
    + `project-arn` – The Amazon Resource Name of the project that contains the project policy that you want to delete.
    + `policy-revision-id` – The revision ID of the project policy that you want to delete.
 
-   ```
+   ```java
    /*
       Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       SPDX-License-Identifier: Apache-2.0

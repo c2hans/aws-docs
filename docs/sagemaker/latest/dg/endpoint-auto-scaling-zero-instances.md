@@ -29,7 +29,7 @@ For each inference component that the endpoint hosts, do the following:
 
 1. Register the inference component as a scalable target. When you register it, set the minimum capacity to `0`, as shown by the following command:
 
-   ```
+   ```bash
    aws application-autoscaling register-scalable-target \
      --service-namespace sagemaker \
      --resource-id inference-component/{{inference-component-name}} \
@@ -44,7 +44,7 @@ For each inference component that the endpoint hosts, do the following:
 
 1. Apply a target tracking policy to the inference component, as shown by the following command:
 
-   ```
+   ```bash
    aws application-autoscaling put-scaling-policy \
      --policy-name my-scaling-policy \
      --policy-type TargetTrackingScaling \
@@ -58,7 +58,7 @@ For each inference component that the endpoint hosts, do the following:
 
    In the example, the `config.json` file contains a target tracking policy configuration, such as the following:
 
-   ```
+   ```json
    {
      "PredefinedMetricSpecification": {
          "PredefinedMetricType": "SageMakerInferenceComponentInvocationsPerCopy"
@@ -79,7 +79,7 @@ For each inference component that the endpoint hosts, do the following:
 
 1. Apply a step scaling policy to the inference component, as shown by the following command:
 
-   ```
+   ```bash
    aws application-autoscaling put-scaling-policy \
      --policy-name {{my-scaling-policy}} \
      --policy-type StepScaling \
@@ -93,7 +93,7 @@ For each inference component that the endpoint hosts, do the following:
 
    In the example, the `config.json` file contains a step scaling policy configuration, such as the following:
 
-   ```
+   ```json
    {
        "AdjustmentType": "ChangeInCapacity",
        "MetricAggregationType": "Maximum",
@@ -116,7 +116,7 @@ For each inference component that the endpoint hosts, do the following:
 
 1. Create a CloudWatch alarm and assign the step scaling policy to it, as shown by the following example:
 
-   ```
+   ```bash
    aws cloudwatch put-metric-alarm \
    --alarm-actions {{step-scaling-policy-arn}} \
    --alarm-description "Alarm when SM IC endpoint invoked that has 0 instances." \

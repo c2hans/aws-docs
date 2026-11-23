@@ -15,6 +15,8 @@ In open banking, banks use an API messaging framework to securely share their cu
 
 ![Open banking reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/open-banking-reference-architecture.png)
 
+*Figure 4. Reference architecture for data holder*
+
  **Architecture description**
 
 1.  A consumer accesses the licensed or accredited third-party application and provides consent to the third party to access consumer data or make a payment submission request.

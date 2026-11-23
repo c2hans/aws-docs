@@ -99,7 +99,7 @@ The following are two VPC endpoint policies that you can use. Use the first poli
 
 The following policy grants the necessary access to your VPC endpoint for basic operations in Canvas.
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -131,7 +131,7 @@ The following policy grants the necessary access to your VPC endpoint for basic 
 
 The following policy grants the necessary access to your VPC endpoint for basic operations in Canvas, as well as using generative AI foundation models.
 
-```
+```json
         {
             "Effect": "Allow",
             "Action": [
@@ -188,7 +188,7 @@ To grant your user’s IAM role the granular `ec2:DescribeVpcEndpointServices` p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

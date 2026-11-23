@@ -8,7 +8,7 @@ Update an existing alias to point to a different physical index. This command on
 
 **Syntax**
 
-```
+```text
 FT.ALIASUPDATE <alias> <index>
 ```
 

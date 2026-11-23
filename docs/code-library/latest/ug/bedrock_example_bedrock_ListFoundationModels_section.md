@@ -15,7 +15,7 @@ The following code examples show how to use `ListFoundationModels`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Bedrock#code-examples).
 List the available Bedrock foundation models.
 
-```
+```csharp
     /// <summary>
     /// List foundation models.
     /// </summary>
@@ -57,7 +57,7 @@ List the available Bedrock foundation models.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock#code-examples).
 List the available Bedrock foundation models.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -96,7 +96,7 @@ func (wrapper FoundationModelWrapper) ListFoundationModels(ctx context.Context) 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/bedrock#code-examples).
 List the available Amazon Bedrock foundation models using the synchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Lists Amazon Bedrock foundation models that you can use.
      * You can filter the results with the request parameters.
@@ -132,7 +132,7 @@ List the available Amazon Bedrock foundation models using the synchronous Amazon
 ```
 List the available Amazon Bedrock foundation models using the asynchronous Amazon Bedrock client.
 
-```
+```java
     /**
      * Lists Amazon Bedrock foundation models that you can use.
      * You can filter the results with the request parameters.
@@ -178,7 +178,7 @@ List the available Amazon Bedrock foundation models using the asynchronous Amazo
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock#code-examples).
 List the available foundation models.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 
 import {
@@ -223,7 +223,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/bedrock#code-examples).
 List the available Amazon Bedrock foundation models.
 
-```
+```kotlin
 suspend fun listFoundationModels(): List<FoundationModelSummary>? {
     BedrockClient.fromEnvironment { region = "us-east-1" }.use { bedrockClient ->
         val response = bedrockClient.listFoundationModels(ListFoundationModelsRequest {})
@@ -252,7 +252,7 @@ suspend fun listFoundationModels(): List<FoundationModelSummary>? {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/bedrock#code-examples).
 List the available Amazon Bedrock foundation models.
 
-```
+```php
     public function listFoundationModels()
     {
         $bedrockClient = new BedrockClient([
@@ -272,7 +272,7 @@ List the available Amazon Bedrock foundation models.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock#code-examples).
 List the available Amazon Bedrock foundation models.
 
-```
+```python
     def list_foundation_models(self):
         """
         List the available Amazon Bedrock foundation models.
@@ -298,7 +298,7 @@ List the available Amazon Bedrock foundation models.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/bedrock#code-examples).
 
-```
+```swift
 import AWSBedrock
 
         // Always use the Region "us-east-1" to have access to the most models.

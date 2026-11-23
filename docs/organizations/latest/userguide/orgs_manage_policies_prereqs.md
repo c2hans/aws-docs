@@ -28,7 +28,7 @@ The following example IAM policy provides permissions to use all aspects of decl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

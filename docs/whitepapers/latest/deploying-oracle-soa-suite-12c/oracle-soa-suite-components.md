@@ -17,6 +17,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
 
 ![A diagram depicting Oracle SOA Suite components deployed on Oracle WebLogic Server.](https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-suite-12c/images/soa-components.jpeg)
 
+*Oracle SOA Suite components deployed on Oracle WebLogic Server*
+
  Each WebLogic Server deployment has a WebLogic domain, which typically contains multiple WebLogic Server instances (Managed Servers). A WebLogic domain is the basic unit of administration for WebLogic Server instances: it is a group of logically- related WebLogic Server resources. For example, you can have one WebLogic domain for each component of Oracle SOA Suite.
 
  WebLogic Server instances can run on physical or virtual servers (such as [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2) (Amazon EC2) or in containers. You can create a group of multiple WebLogic Managed Servers, known as a WebLogic Server Cluster. WebLogic Server Clusters support load balancing and failover and are required for high availability and scalability of your production deployments. You should deploy your WebLogic Server Cluster across multiple WebLogic Server Machines (Amazon EC2 instances) so that the loss of a single WebLogic Server Machine does not affect the availability of your application.

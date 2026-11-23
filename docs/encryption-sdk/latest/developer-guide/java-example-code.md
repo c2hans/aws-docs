@@ -22,7 +22,7 @@ When you call the `encryptData()` method, it returns an [encrypted message](conc
 
 Similarly, when you call `decryptData()`, the `CryptoResult` object it returns contains the plaintext message and an AWS KMS key ID. Before your application returns the plaintext, verify that the AWS KMS key ID and the encryption context in the encrypted message are the ones that you expect.
 
-```
+```java
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -125,7 +125,7 @@ When encrypting, this example uses the `AwsCrypto.builder() .withEncryptionAlgor
 
 If you're encrypting with the default algorithm suite, which includes digital signatures, use the `createDecryptingStream()` method instead, as shown in the next example.
 
-```
+```java
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -254,7 +254,7 @@ The following example shows you how to use the AWS Encryption SDK with a [multi-
 
 This example encrypts with the [default algorithm suite](supported-algorithms.md), which includes a [digital signature](concepts.md#digital-sigs). When streaming, the AWS Encryption SDK releases plaintext after integrity checks, but before it has verified the digital signature. To avoid using the plaintext until the signature is verified, this example buffers the plaintext, and writes it to disk only when decryption and verification are complete.
 
-```
+```java
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 

@@ -16,19 +16,19 @@ You can use any of the following methods to install the Amazon Redshift Python c
 
 To install the Python connector from the Python Package Index (PyPI), you can use pip. To do this, run the following command.
 
-```
+```python
 >>> pip install redshift_connector
 ```
 
 You can install the connector within a virtual environment. To do this, run the following command.
 
-```
+```python
 >>> pip install redshift_connector
 ```
 
 Optionally, you can install pandas and NumPy with the connector.
 
-```
+```python
 >>> pip install 'redshift_connector[full]'
 ```
 
@@ -39,7 +39,7 @@ For more information on pip, see the [pip site](https://pip.pypa.io/en/stable/).
 
 You can install the Python connector from Anaconda.org.
 
-```
+```python
 >>>conda install -c conda-forge redshift_connector
 ```
 

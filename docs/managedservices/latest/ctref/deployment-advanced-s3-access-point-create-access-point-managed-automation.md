@@ -135,7 +135,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-s3-access-point-create-access-point-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "AccessPointName": "exampleaccesspointname",
   "BucketName": "examplebucketname",
@@ -146,7 +146,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-s3-access-point-create-access-point-managed-automation-ex-max"></a>
 
-```
+```json
 {
     "AccessPointName": "exampleaccesspointname",
     "BucketName": "examplebucketname",

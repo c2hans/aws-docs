@@ -35,7 +35,7 @@ The date and time when the Code Interpreter tool was created.
 
 1. To create a Code Interpreter using the AWS CLI, use the `create-code-interpreter` command:
 
-   ```
+   ```bash
    aws bedrock-agentcore create-code-interpreter \
      --region <Region> \
      --name "my-code-interpreter" \
@@ -48,7 +48,7 @@ The date and time when the Code Interpreter tool was created.
 
 1. To create a Code Interpreter using the AWS SDK for Python, use the `create_code_interpreter` method:
 
-   ```
+   ```python
    import boto3
 
    # Initialize the boto3 client
@@ -75,7 +75,7 @@ The date and time when the Code Interpreter tool was created.
 
 1. To create a new Code Interpreter instance using the API, use the following call:
 
-   ```
+   ```bash
    # Using awscurl
    awscurl -X PUT "https://bedrock-agentcore-control.<Region>.amazonaws.com/code-interpreters" \
    -H "Content-Type: application/json" \

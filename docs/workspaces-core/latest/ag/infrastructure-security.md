@@ -25,7 +25,7 @@ You can create an interface endpoint to connect to Amazon WorkSpaces Instances w
 
 *After you have created a VPC endpoint*, you can use the following example CLI commands that use the `endpoint-url` parameter to specify interface endpoints to the Amazon WorkSpaces Instances API endpoint:
 
-```
+```bash
 aws workspaces-instances list-regions --region us-west-2 \
 --endpoint https://workspaces-instances.us-west-2.api.aws
 ```
@@ -61,7 +61,7 @@ The following example VPC endpoint policy specifies that all users who have acce
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
 

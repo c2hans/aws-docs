@@ -23,7 +23,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 Run an interactive scenario demonstrating AWS Entity Resolution features.
 
-```
+```java
 public class EntityResScenario {
     private static final Logger logger = LoggerFactory.getLogger(EntityResScenario.class);
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
@@ -496,7 +496,7 @@ public class EntityResScenario {
 ```
 A wrapper class for AWS Entity Resolution SDK methods.
 
-```
+```java
 public class EntityResActions {
 
     private static final String PREFIX = "eroutput/";
@@ -1185,7 +1185,7 @@ public class EntityResActions {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/entityresolution#code-examples).
 Run an interactive scenario demonstrating AWS Entity Resolution features.
 
-```
+```javascript
 import {
   Scenario,
   ScenarioAction,

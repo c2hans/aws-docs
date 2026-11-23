@@ -35,7 +35,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `cw_listmetrics.js`. Be sure to configure the SDK as previously shown. To access CloudWatch, create an `AWS.CloudWatch` service object. Create a JSON object containing the parameters needed to list metrics within the `AWS/Logs` namespace. Call the `listMetrics` method to list the `IncomingLogEvents` metric.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -65,7 +65,7 @@ cw.listMetrics(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_listmetrics.js
 ```
 
@@ -76,7 +76,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `cw_putmetricdata.js`. Be sure to configure the SDK as previously shown. To access CloudWatch, create an `AWS.CloudWatch` service object. Create a JSON object containing the parameters needed to submit a data point for the `PAGES_VISITED` custom metric. Call the `putMetricData` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -114,7 +114,7 @@ cw.putMetricData(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node cw_putmetricdata.js
 ```
 

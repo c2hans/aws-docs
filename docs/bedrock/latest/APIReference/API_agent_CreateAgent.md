@@ -303,7 +303,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateAgent.
 
-```
+```json
 PUT /agents/ HTTP/1.1
 Content-type: application/json
 

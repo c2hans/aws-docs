@@ -40,7 +40,7 @@ likemusicals  | boolean                | none     | false   |       0
 
 Now add the feedback\_score column:
 
-```
+```sql
 alter table users
 add column feedback_score int
 default NULL;
@@ -48,7 +48,7 @@ default NULL;
 
 Select the FEEDBACK\_SCORE column from USERS to verify that it was added:
 
-```
+```sql
 select feedback_score from users limit 5;
 
 feedback_score
@@ -62,7 +62,7 @@ NULL
 
 Drop the column to reinstate the original DDL:
 
-```
+```sql
 alter table users drop column feedback_score;
 ```
 
@@ -73,7 +73,7 @@ The following example drops a column that has a dependent object. As a result, t
 
 To start, add the FEEDBACK\_SCORE column to the USERS table again:
 
-```
+```sql
 alter table users
 add column feedback_score int
 default NULL;
@@ -81,13 +81,13 @@ default NULL;
 
 Next, create a view from the USERS table called USERS\_VIEW:
 
-```
+```sql
 create view users_view as select * from users;
 ```
 
 Now, try to drop the FEEDBACK\_SCORE column from the USERS table. This DROP statement uses the default behavior (RESTRICT):
 
-```
+```sql
 alter table users drop column feedback_score;
 ```
 
@@ -95,7 +95,7 @@ Amazon Redshift displays an error message that the column can't be dropped becau
 
 Try dropping the FEEDBACK\_SCORE column again, this time specifying CASCADE to drop all dependent objects:
 
-```
+```sql
 alter table users
 drop column feedback_score cascade;
 ```

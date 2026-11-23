@@ -57,7 +57,7 @@ If the object is encrypted with an AWS KMS key (SSE-KMS), the key policy must al
 
 The following example bucket policy grants Lambda access to read your deployment packages for any revision of the specified Web Function.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -92,7 +92,7 @@ You specify your S3 deployment package in the `codeConfig` section of `buildConf
 **To create a Web Function with code from Amazon S3 (AWS CLI)**
 + Run the following command to create a Web Function that references your .zip deployment package in Amazon S3.
 
-  ```
+  ```bash
   aws lambda-web create-web-function \
       --function-name {{my-web-app}} \
       --revision-config '{
@@ -118,7 +118,7 @@ You specify your S3 deployment package in the `codeConfig` section of `buildConf
 **To create a new revision with a specific object version (AWS CLI)**
 + Run the following command to create a new revision that uses a specific version of your deployment package.
 
-  ```
+  ```bash
   aws lambda-web create-web-function-revision \
       --function-name {{my-web-app}} \
       --build-config '{

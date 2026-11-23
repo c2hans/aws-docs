@@ -8,7 +8,7 @@ The [keyshot-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/m
 
 Submit the build:
 
-```
+```bash
 ./submit-package-job keyshot-2025
 ```
 

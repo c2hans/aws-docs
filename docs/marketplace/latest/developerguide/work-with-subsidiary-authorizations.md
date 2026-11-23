@@ -79,7 +79,7 @@ To create a subsidiary authorization in `Draft` state, call the `StartChangeSet`
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -145,7 +145,7 @@ You don't supply `Status`, `CreatedDate`, `Issuer`, `Rules`, or the `Resource` f
 
 A change set is created for your request. The response to this request gives you the `ChangeSetId` and `ChangeSetArn` for the change set and looks like the following.
 
-```
+```json
 {
   "ChangeSetId": "example111122223333abcdef",
   "ChangeSetArn": "arn:aws:aws-marketplace:us-east-1:111122223333:AWSMarketplace/ChangeSet/example111122223333abcdef"
@@ -154,13 +154,13 @@ A change set is created for your request. The response to this request gives you
 
 The change request is added to a queue and processed.
 
-You can check the status of the request through the AWS Marketplace Management Portal, or directly through the Catalog API using the `[DescribeChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)` API operation.
+You can check the status of the request in AWS Partner Central, or directly through the Catalog API using the `[DescribeChangeSet](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html)` API operation.
 
 When the request is complete (if the `Status` is `SUCCEEDED`), a new `SubsidiaryAuthorization` is generated. Although the `SUCCEEDED` status indicates that the `CreateSubsidiaryAuthorization` change type call is completed, the subsidiary authorization is still in `Draft` state.
 
 The following shows the response from the `DescribeChangeSet` API operation.
 
-```
+```json
 {
   "ChangeSetId": "example111122223333abcdef",
   "ChangeSetArn": "arn:aws:aws-marketplace:us-east-1:111122223333:AWSMarketplace/ChangeSet/example111122223333abcdef",
@@ -232,7 +232,7 @@ To update a subsidiary authorization, call the `StartChangeSet` API operation wi
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -288,7 +288,7 @@ Provide information for the fields to add the `UpdateInformation` change type:
 
 **Response Syntax**
 
-```
+```json
 {
   "ChangeSetId": "example111122223333abcdef",
   "ChangeSetArn": "arn:aws:aws-marketplace:us-east-1:111122223333:AWSMarketplace/ChangeSet/example111122223333abcdef"
@@ -316,7 +316,7 @@ To release a subsidiary authorization, call the `StartChangeSet` API operation a
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -347,7 +347,7 @@ Provide information for the fields to add the `UpdateAvailability` change type:
 
 **Response Syntax**
 
-```
+```json
 {
   "ChangeSetId": "example123456789012abcdef",
   "ChangeSetArn": "arn:aws:aws-marketplace:us-east-1:111122223333:AWSMarketplace/ChangeSet/example123456789012abcdef"
@@ -367,7 +367,7 @@ Revoking a subsidiary authorization does not cancel offers the subsidiary accoun
 
 **Request Syntax**
 
-```
+```json
 POST /StartChangeSet HTTP/1.1
 Content-type: application/json
 
@@ -391,7 +391,7 @@ Content-type: application/json
 
 **Response Syntax**
 
-```
+```json
 {
   "ChangeSetId": "example123456789012abcdef",
   "ChangeSetArn": "arn:aws:aws-marketplace:us-east-1:111122223333:AWSMarketplace/ChangeSet/example123456789012abcdef"
@@ -407,7 +407,7 @@ The `[ListEntities](https://docs.aws.amazon.com/marketplace-catalog/latest/api-r
 
 **Request Syntax**
 
-```
+```json
 POST /ListEntities HTTP/1.1
 Content-type: application/json
 
@@ -451,7 +451,7 @@ Content-type: application/json
 
 **Response Syntax**
 
-```
+```json
 {
   "EntitySummaryList": [
     {
@@ -490,7 +490,7 @@ You can use the `[DescribeEntity](https://docs.aws.amazon.com/marketplace-catalo
 
 **Request Syntax**
 
-```
+```json
 GET /DescribeEntity?catalog=AWSMarketplace&entityId=subauthz-1a2bEXAMPLE34 HTTP/1.1
 ```
 + **catalog** (string) (required) – The catalog related to the request. Fixed value: `AWSMarketplace`.
@@ -498,7 +498,7 @@ GET /DescribeEntity?catalog=AWSMarketplace&entityId=subauthz-1a2bEXAMPLE34 HTTP/
 
 **Response Syntax**
 
-```
+```json
 {
   "EntityType": "SubsidiaryAuthorization@1.0",
   "EntityIdentifier": "subauthz-1a2bEXAMPLE34",

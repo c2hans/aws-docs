@@ -53,7 +53,7 @@ The object prefix is an optional addition to the S3 object key that organizes yo
 
 ****
 
-```
+```json
 {
             "Version":"2012-10-17",
             "Statement": [
@@ -109,7 +109,7 @@ If you don't want to specify an object prefix, use the following policy.
 
 ****
 
-```
+```json
 {
             "Version":"2012-10-17",
             "Statement": [

@@ -78,7 +78,7 @@ The following key policy allows Amazon Rekognition to access an Amazon KMS key d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

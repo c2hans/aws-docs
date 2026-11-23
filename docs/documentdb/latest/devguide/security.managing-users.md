@@ -41,7 +41,7 @@ db.createUser(
 
 To view user details, you can use the `show users` command as follows. You can additionally remove users with the `dropUser` command. For more information, see [Common commands](role_based_access_control.md#role_based_access_control-common_commands).
 
-```
+```json
 show users
 {
     "_id" : "serviceadmin",

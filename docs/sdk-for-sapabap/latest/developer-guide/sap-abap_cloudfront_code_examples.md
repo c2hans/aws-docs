@@ -24,7 +24,7 @@ The following code example shows how to use `ListDistributions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/fnt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_fnt->listdistributions( ). " oo_result is returned for testing purposes. "
         MESSAGE 'Retrieved list of CloudFront distributions.' TYPE 'I'.
@@ -42,7 +42,7 @@ The following code example shows how to use `UpdateDistribution`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/fnt#code-examples).
 
-```
+```sap-abap
     TRY.
         " Get the current distribution configuration and ETag "
         DATA(lo_distribution_config_result) = lo_fnt->getdistributionconfig( iv_id = iv_distribution_id ).

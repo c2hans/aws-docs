@@ -126,7 +126,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GetSession.
 
-```
+```json
 GET bedrock-agent-runtime.us-east-1.amazonaws.com/sessions/12345abc-1234-abcd-1234-abcdef123456/ HTTP/1.1
 ```
 

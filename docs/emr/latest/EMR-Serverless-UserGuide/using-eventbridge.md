@@ -208,7 +208,7 @@ The **startedAt** field will only be present in the event if the job had moved t
 
 To match events only for job runs that use [Flex](jobs-flex-execution.md), add `flexEnabled` to your event pattern. The following example pattern matches Flex job runs that move to the `FAILED` state.
 
-```
+```json
 {
   "source": ["aws.emr-serverless"],
   "detail-type": ["EMR Serverless Job Run State Change"],

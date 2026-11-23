@@ -9,7 +9,7 @@ You can use the [describe-opt-out-lists](https://docs.aws.amazon.com/cli/latest/
 **To list all opt-out lists shared with your account using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-opt-out-lists --owner {{SHARED}}
   ```
 

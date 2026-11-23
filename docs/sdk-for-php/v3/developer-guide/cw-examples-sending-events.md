@@ -23,7 +23,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -31,7 +31,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new Aws\cloudwatchevents\cloudwatcheventsClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -57,7 +57,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -65,7 +65,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new Aws\cloudwatchevents\cloudwatcheventsClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -94,7 +94,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -102,7 +102,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $client = new Aws\cloudwatchevents\cloudwatcheventsClient([
     'profile' => 'default',
     'region' => 'us-west-2',

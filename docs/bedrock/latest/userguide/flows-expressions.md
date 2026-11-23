@@ -10,7 +10,7 @@ When you configure the inputs for a node, you must define it in relation to the 
 
 As an example to understand how to use expressions, let's say that the whole input is the following JSON object:
 
-```
+```json
 {
     "animals": {
         "mammals": ["cat", "dog"],

@@ -15,6 +15,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/modern
 
 ![Reference architecture displaying Direct Connect interfacing with a CSP network, AWS Regions, and AWS Local Zones.](https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/images/scenario3-ims.png)
 
+*Reference architecture displaying Direct Connect interfacing with a CSP network, AWS Regions, and AWS Local Zones.*
+
  The AWS global infrastructure of Regions and Availability Zones provides the foundation for deploying highly available and resilient IMS networks. Deploying IMS workloads across multiple AWS Regions offers benefits such as:
 +  **High availability and fault tolerance:** IMS components can be distributed across Availability Zones within a Region, or even across Regions, to provide continuous service in the event of a failure.
 +  **Disaster recovery and business continuity:** You can architect active-active or active-passive setups between Regions to enable fast recovery and failover in the case of a Regional disruption.

@@ -154,7 +154,7 @@ For more information, see [Describe a Spot Fleet request, its instances, and eve
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified Spot fleet request.**
 
-```
+```powershell
 Get-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE | format-list
 ```
 **Output:**
@@ -167,7 +167,7 @@ SpotFleetRequestState : active
 ```
 **Example 2: This example describes all your Spot fleet requests.**
 
-```
+```powershell
 Get-EC2SpotFleetRequest
 ```
 +  For API details, see [DescribeSpotFleetRequests](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -175,7 +175,7 @@ Get-EC2SpotFleetRequest
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified Spot fleet request.**
 
-```
+```powershell
 Get-EC2SpotFleetRequest -SpotFleetRequestId sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE | format-list
 ```
 **Output:**
@@ -188,7 +188,7 @@ SpotFleetRequestState : active
 ```
 **Example 2: This example describes all your Spot fleet requests.**
 
-```
+```powershell
 Get-EC2SpotFleetRequest
 ```
 +  For API details, see [DescribeSpotFleetRequests](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

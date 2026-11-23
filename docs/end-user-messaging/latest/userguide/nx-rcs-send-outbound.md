@@ -28,7 +28,7 @@ After your test device has accepted the tester invitation, you can send a test m
 
 Use the `send-text-message` command. The example sends through a phone pool, so the service selects the best identity and falls back to SMS if RCS delivery is not possible.
 
-```
+```bsh
 aws pinpoint-sms-voice-v2 send-text-message \\
     --destination-phone-number {{+12065550100}} \\
     --origination-identity {{pool-a1b2c3d4e5f6g7h8i}} \\

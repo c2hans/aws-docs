@@ -30,7 +30,7 @@ For more information, see [Delete an Amazon EBS snapshot](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified snapshot. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2Snapshot -SnapshotId snap-12345678
 ```
 **Output:**
@@ -46,7 +46,7 @@ Performing the operation "Remove-EC2Snapshot (DeleteSnapshot)" on target "snap-1
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified snapshot. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2Snapshot -SnapshotId snap-12345678
 ```
 **Output:**
@@ -65,7 +65,7 @@ Performing the operation "Remove-EC2Snapshot (DeleteSnapshot)" on target "snap-1
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ebs#code-examples).
 
-```
+```rust
 async fn delete_snapshot(client: &Client, id: &str) -> Result<(), Error> {
     client.delete_snapshot().snapshot_id(id).send().await?;
 

@@ -142,7 +142,7 @@ If you need some value (from AWS or elsewhere) for which there is no native CDK 
  **Let the AWS CDK manage roles and security groups**
 With the AWS CDK construct library’s `grants` property and its convenience methods, you can create AWS Identity and Access Management roles that grant access to one resource by another using minimally scoped permissions. For example, consider a line like the following:
 
-```
+```javascript
 amzn-s3-demo-bucket.grants.read(myLambda)
 ```
 This single line adds a policy to the Lambda function’s role (which is also created for you). That role and its policies are more than a dozen lines of CloudFormation that you don’t have to write. The AWS CDK grants only the minimal permissions required for the function to read from the bucket.

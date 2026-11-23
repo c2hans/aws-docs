@@ -30,36 +30,36 @@ Type: String
 Required: No
 
  ** OpportunityId **   <a name="AWSPartnerCentral-Type-ListEngagementFromOpportunityTaskSummary-OpportunityId"></a>
- The unique identifier of the original Opportunity from which the Engagement is being created. This field helps track the source of the Engagement creation task.
+The unique identifier of the original Opportunity from which the Engagement is being created. This field helps track the source of the Engagement creation task.
 Type: String
 Pattern: `O[0-9]{1,19}`
 Required: No
 
  ** ReasonCode **   <a name="AWSPartnerCentral-Type-ListEngagementFromOpportunityTaskSummary-ReasonCode"></a>
- A code indicating the specific reason for a task failure. This field is populated when the task status is FAILED and provides a categorized reason for the failure.
+A code indicating the specific reason for a task failure. This field is populated when the task status is FAILED and provides a categorized reason for the failure.
 Type: String
 Valid Values: `InvitationAccessDenied | InvitationValidationFailed | EngagementAccessDenied | OpportunityAccessDenied | ResourceSnapshotJobAccessDenied | ResourceSnapshotJobValidationFailed | ResourceSnapshotJobConflict | EngagementValidationFailed | EngagementConflict | OpportunitySubmissionFailed | EngagementInvitationConflict | InternalError | OpportunityValidationFailed | OpportunityConflict | ResourceSnapshotAccessDenied | ResourceSnapshotValidationFailed | ResourceSnapshotConflict | ServiceQuotaExceeded | RequestThrottled | ContextNotFound | CustomerProjectContextNotPermitted | DisqualifiedLeadNotPermitted`
 Required: No
 
  ** ResourceSnapshotJobId **   <a name="AWSPartnerCentral-Type-ListEngagementFromOpportunityTaskSummary-ResourceSnapshotJobId"></a>
- The identifier of the resource snapshot job associated with this task, if a snapshot was created as part of the Engagement creation process.
+The identifier of the resource snapshot job associated with this task, if a snapshot was created as part of the Engagement creation process.
 Type: String
 Pattern: `job-[0-9a-z]{13}`
 Required: No
 
  ** StartTime **   <a name="AWSPartnerCentral-Type-ListEngagementFromOpportunityTaskSummary-StartTime"></a>
- The timestamp indicating when the task was initiated, in RFC 3339 5.6 date-time format.
+The timestamp indicating when the task was initiated, in RFC 3339 5.6 date-time format.
 Type: Timestamp
 Required: No
 
  ** TaskArn **   <a name="AWSPartnerCentral-Type-ListEngagementFromOpportunityTaskSummary-TaskArn"></a>
- The Amazon Resource Name (ARN) uniquely identifying this task within AWS. This ARN can be used for referencing the task in other AWS services or APIs.
+The Amazon Resource Name (ARN) uniquely identifying this task within AWS. This ARN can be used for referencing the task in other AWS services or APIs.
 Type: String
 Pattern: `arn:.*`
 Required: No
 
  ** TaskId **   <a name="AWSPartnerCentral-Type-ListEngagementFromOpportunityTaskSummary-TaskId"></a>
- A unique identifier for a specific task.
+A unique identifier for a specific task.
 Type: String
 Pattern: `.*task-[0-9a-z]{13}`
 Required: No

@@ -35,7 +35,7 @@ To run the application, you must provide the following information:
 
 The applications uses a function called `getRecognizeTextRequest` to create individual requests to the bot. The function builds a request with the required parameters to send to Amazon Lex V2.
 
-```
+```java
 package com.lex.recognizetext.sample;
 
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;

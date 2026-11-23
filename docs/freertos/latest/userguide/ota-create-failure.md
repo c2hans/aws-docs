@@ -10,7 +10,7 @@ If the process of creating an OTA update job fails, there may be actions you can
 
 1. Run `aws configure` and enter the following information.
 
-   ```
+   ```bash
    $ aws configure
    AWS Access Key ID [None]: {{AccessID}}
    AWS Secret Access Key [None]: {{AccessKey}}
@@ -22,7 +22,7 @@ If the process of creating an OTA update job fails, there may be actions you can
 
 1. Run:
 
-   ```
+   ```bash
    aws iot get-ota-update --ota-update-id {{ota_update_job_001}}
    ```
 
@@ -30,7 +30,7 @@ If the process of creating an OTA update job fails, there may be actions you can
 
 1. The output will look like this:
 
-   ```
+   ```json
    {
        "otaUpdateInfo": {
            "otaUpdateId": "ota_update_job_001",

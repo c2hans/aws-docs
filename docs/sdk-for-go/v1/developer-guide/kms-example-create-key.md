@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example uses the AWS SDK for Go[CreateKey](https://docs.aws.amazon.com/sdk-for-go/api/service/kms/#KMS.CreateKey) method, which implements the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) operation, to create a customer master key (CMK). Since the example only encrypts a small amount of data, a CMK is fine for our purposes. For larger amounts of data, use the CMK to encrypt a data encryption key (DEK).
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"

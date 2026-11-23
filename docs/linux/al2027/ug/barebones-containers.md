@@ -18,7 +18,7 @@ Rebuild the image from an updated AL2027 base image to include package updates.
 
 Install and start Docker on the system that you use to build the image. On AL2027, run the following commands.
 
-```
+```sh
 $ sudo dnf install -y docker
 $ sudo systemctl start docker
 ```
@@ -34,14 +34,14 @@ The following procedure creates a container image that contains Bash and the pac
 
 1. Create and open a directory for the example.
 
-   ```
+   ```sh
    $ mkdir al2027-barebones-bash-example
    $ cd al2027-barebones-bash-example
    ```
 
 1. Create a file named `Dockerfile` with the following content.
 
-   ```
+   ```Dockerfile
    FROM public.ecr.aws/amazonlinux/amazonlinux:2027 AS build
    RUN mkdir /sysroot
    RUN dnf --releasever=$(rpm -q system-release --qf '%{VERSION}') \
@@ -68,13 +68,13 @@ The following procedure creates a container image that contains Bash and the pac
 
 1. Build the container image.
 
-   ```
+   ```sh
    $ docker build -t al2027-barebones-bash-example .
    ```
 
 1. Run Bash in the container.
 
-   ```
+   ```sh
    $ docker run --rm -it al2027-barebones-bash-example
    ```
 
@@ -87,14 +87,14 @@ The following procedure compiles a C application in the build stage and copies t
 
 1. Create and open a directory for the example.
 
-   ```
+   ```sh
    $ mkdir al2027-barebones-c-example
    $ cd al2027-barebones-c-example
    ```
 
 1. Create a file named `hello-world.c` with the following content.
 
-   ```
+   ```c
    #include <stdio.h>
 
    int main(void)
@@ -106,7 +106,7 @@ The following procedure compiles a C application in the build stage and copies t
 
 1. Create a file named `Dockerfile` with the following content.
 
-   ```
+   ```Dockerfile
    FROM public.ecr.aws/amazonlinux/amazonlinux:2027 AS build
    COPY hello-world.c /
    RUN dnf -y install gcc
@@ -131,13 +131,13 @@ The following procedure compiles a C application in the build stage and copies t
 
 1. Build the container image.
 
-   ```
+   ```sh
    $ docker build -t al2027-barebones-c-example .
    ```
 
 1. Run the application.
 
-   ```
+   ```sh
    $ docker run --rm al2027-barebones-c-example
    Hello World!
    ```

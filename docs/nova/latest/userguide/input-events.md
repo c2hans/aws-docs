@@ -38,7 +38,7 @@ The structure of the input event flow is provided in this section.
 
 1. `RequestStartEvent`
 
-   ```
+   ```JSON
    {
        "event": {
            "sessionStart": {
@@ -54,7 +54,7 @@ The structure of the input event flow is provided in this section.
 
 1. `PromptStartEvent`
 
-   ```
+   ```JSON
    {
        "event": {
            "promptStart": {
@@ -95,7 +95,7 @@ The structure of the input event flow is provided in this section.
 1. `InputContentStartEvent`
    + `Text`
 
-     ```
+     ```JSON
      {
          "event": {
              "contentStart": {
@@ -113,7 +113,7 @@ The structure of the input event flow is provided in this section.
      ```
    + `Audio`
 
-     ```
+     ```JSON
      {
          "event": {
              "contentStart": {
@@ -136,7 +136,7 @@ The structure of the input event flow is provided in this section.
      ```
    + `Tool`
 
-     ```
+     ```JSON
      {
          "event": {
              "contentStart": {
@@ -159,7 +159,7 @@ The structure of the input event flow is provided in this section.
 
 1. `TextInputContent`
 
-   ```
+   ```JSON
    {
        "event": {
            "textInput": {
@@ -173,7 +173,7 @@ The structure of the input event flow is provided in this section.
 
 1. `AudioInputContent`
 
-   ```
+   ```JSON
    {
        "event": {
            "audioInput": {
@@ -187,7 +187,7 @@ The structure of the input event flow is provided in this section.
 
 1. `ToolResultContentEvent`
 
-   ```
+   ```JSON
    "event": {
        "toolResult": {
            "promptName": "string", // same unique identifier from promptStart event
@@ -199,7 +199,7 @@ The structure of the input event flow is provided in this section.
 
 1. `InputContentEndEvent`
 
-   ```
+   ```JSON
    {
        "event": {
            "contentEnd": {
@@ -212,7 +212,7 @@ The structure of the input event flow is provided in this section.
 
 1. `PromptEndEvent`
 
-   ```
+   ```JSON
    {
        "event": {
            "promptEnd": {
@@ -224,7 +224,7 @@ The structure of the input event flow is provided in this section.
 
 1. `RequestEndEvent`
 
-   ```
+   ```JSON
    {
        "event": {
            "sessionEnd": {}

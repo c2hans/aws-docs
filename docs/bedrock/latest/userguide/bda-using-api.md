@@ -16,7 +16,7 @@ To begin processing files with BDA, you first need to create a Data Automation P
 
 When using the API to create a project, you invoke the CreateDataAutomationProject. When creating a project, you must define your configuration settings for the type of file you tend to process (the modality you intend to use). Here's an example of how you might configure the standard output for images:
 
-```
+```json
 {
     "standardOutputConfiguration": {
         "image": {
@@ -60,7 +60,7 @@ This API call initiates the asynchronous processing of your files in a specified
 
 The following is the structure of the JSON request:
 
-```
+```json
 {
    {
    "blueprints": [
@@ -120,7 +120,7 @@ This API call initiates the synchronous processing of the provided through an S3
 
 Here is the structure of the JSON request for both image and document. Sync API request supports both image bytes and S3 bucket. To use image bytes, simply replace `“s3Uri”: “string”` in “inputConfiguration” section with `“bytes“: “base64-encoded string“` `outputConfiguration` is optional with default is inline output. If S3 uri is provided as outputConfiguration, encrypted output will be put into the specified S3 bucket.
 
-```
+```json
 {
    {
     "blueprints": [
@@ -151,7 +151,7 @@ The output includes unique structures depending on both the file, operations, an
 
 Here is the structure of the JSON response with both standard and custom output configuration:
 
-```
+```json
 {
   "semanticModality": "IMAGE",
   "outputSegments": [
@@ -436,7 +436,7 @@ For a blueprint, you can call InvokeBlueprintOptimizationAsync API which initiat
 
 **Request Body**
 
-```
+```json
 {
     "blueprint": {
         "blueprintArn": "arn:aws:bedrock:us-east-1:123456789012:blueprint/my-document-processor",
@@ -463,7 +463,7 @@ For a blueprint, you can call InvokeBlueprintOptimizationAsync API which initiat
 
 **Response**
 
-```
+```json
 {
     "invocationArn": "arn:aws:bedrock:us-east-1:123456789012:blueprint-optimization-invocation/opt-12345abcdef"
 }
@@ -479,7 +479,7 @@ Retrieves the current status and results of a blueprint optimization job outputt
 
 **Response**
 
-```
+```json
 {
     "status": "Success",
     "outputConfiguration": {
@@ -505,7 +505,7 @@ Copies the Blueprint from source stage to the target stage (eg. DEVELOPMENT stag
 
 **Request Body**
 
-```
+```json
 {
     "blueprintArn": "arn:aws:bedrock:us-east-1:123456789012:blueprint/my-document-processor",
     "sourceStage": "DEVELOPMENT",
@@ -520,7 +520,7 @@ Copies the Blueprint from source stage to the target stage (eg. DEVELOPMENT stag
 
 **Response**
 
-```
+```json
 {}
 ```
 

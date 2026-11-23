@@ -25,7 +25,7 @@ In this step, as an administrator, you register an example environment template,
 
    The environment template resource tracks environment template versions.
 
-   ```
+   ```sh
    $ aws proton create-environment-template \
      --name "fargate-env" \
      --display-name "Public VPC Fargate" \
@@ -36,7 +36,7 @@ In this step, as an administrator, you register an example environment template,
 
    AWS Proton sets up a sync relationship between your repository and your environment template. It then creates template version 1.0 in `DRAFT` status.
 
-   ```
+   ```sh
    $ aws proton create-template-sync-config \
      --template-name "fargate-env" \
      --template-type "ENVIRONMENT" \
@@ -50,7 +50,7 @@ In this step, as an administrator, you register an example environment template,
 
    When this command returns with an exit status of `0`, version registration is complete. This is useful in scripts to ensure you can successfully run the command in the next step.
 
-   ```
+   ```sh
    $ aws proton wait environment-template-version-registered \
      --template-name "fargate-env" \
      --major-version "1" \
@@ -59,7 +59,7 @@ In this step, as an administrator, you register an example environment template,
 
 1. Publish the environment template version to make it available for environment creation.
 
-   ```
+   ```sh
    $ aws proton update-environment-template-version \
      --template-name "fargate-env" \
      --major-version "1" \
@@ -78,7 +78,7 @@ In this step, as an administrator, you register an example service template, whi
 
    The service template resource tracks service template versions.
 
-   ```
+   ```sh
    $ aws proton create-service-template \
      --name "load-balanced-fargate-svc" \
      --display-name "Load balanced Fargate service" \
@@ -89,7 +89,7 @@ In this step, as an administrator, you register an example service template, whi
 
    AWS Proton sets up a sync relationship between your repository and your service template. It then creates template version 1.0 in `DRAFT` status.
 
-   ```
+   ```sh
    $ aws proton create-template-sync-config \
      --template-name "load-balanced-fargate-svc" \
      --template-type "SERVICE" \
@@ -103,7 +103,7 @@ In this step, as an administrator, you register an example service template, whi
 
    When this command returns with an exit status of `0`, version registration is complete. This is useful in scripts to ensure you can successfully run the command in the next step.
 
-   ```
+   ```sh
    $ aws proton wait service-template-version-registered \
      --template-name "load-balanced-fargate-svc" \
      --major-version "1" \
@@ -112,7 +112,7 @@ In this step, as an administrator, you register an example service template, whi
 
 1. Publish the service template version to make it available for service creation.
 
-   ```
+   ```sh
    $ aws proton update-service-template-version \
      --template-name "load-balanced-fargate-svc" \
      --major-version "1" \
@@ -135,7 +135,7 @@ In this step, as an administrator, you instantiate an AWS Proton environment fro
 
    AWS Proton reads input values from your environment spec, combines them with your environment template, and provisions environment resources in your AWS account using your AWS Proton service role.
 
-   ```
+   ```sh
    $ aws proton create-environment \
      --name "fargate-env-prod" \
      --template-name "fargate-env" \
@@ -146,7 +146,7 @@ In this step, as an administrator, you instantiate an AWS Proton environment fro
 
 1. Wait for the environment to successfully deploy.
 
-   ```
+   ```sh
    $ aws proton wait environment-deployed --name "fargate-env-prod"
    ```
 
@@ -167,7 +167,7 @@ In the previous steps, an administrator registered and published a service templ
 
    AWS Proton reads input values from your service spec, combines them with your service template, and provisions service resources in your AWS account in the environment that is specified in the spec. An AWS CodePipeline pipeline deploys your application code from the repository that you specify in the command.
 
-   ```
+   ```sh
    $ aws proton create-service \
      --name "static-website" \
      --repository-connection-arn \
@@ -181,7 +181,7 @@ In the previous steps, an administrator registered and published a service templ
 
 1. Wait for the service to successfully deploy.
 
-   ```
+   ```sh
    $ aws proton wait service-created --name "static-website"
    ```
 
@@ -189,7 +189,7 @@ In the previous steps, an administrator registered and published a service templ
 
    Run the following command:
 
-   ```
+   ```sh
    $ aws proton list-service-instance-outputs \
      --service-name "static-website" \
      --service-instance-name load-balanced-fargate-svc-prod
@@ -197,7 +197,7 @@ In the previous steps, an administrator registered and published a service templ
 
    The command's output should be similar to the following:
 
-   ```
+   ```json
    {
        "outputs": [
            {
@@ -220,19 +220,19 @@ In this step, when you're done exploring the AWS resources that you created as p
 
 1. To delete the service, run the following command:
 
-   ```
+   ```sh
    $ aws proton delete-service --name "static-website"
    ```
 
 1. To delete the environment, run the following command:
 
-   ```
+   ```sh
    $ aws proton delete-environment --name "fargate-env-prod"
    ```
 
 1. To delete the service template, run the following commands:
 
-   ```
+   ```sh
    $ aws proton delete-template-sync-config \
      --template-name "load-balanced-fargate-svc" \
      --template-type "SERVICE"
@@ -241,7 +241,7 @@ In this step, when you're done exploring the AWS resources that you created as p
 
 1. To delete the environment template, run the following commands:
 
-   ```
+   ```sh
    $ aws proton delete-template-sync-config \
      --template-name "fargate-env" \
      --template-type "ENVIRONMENT"

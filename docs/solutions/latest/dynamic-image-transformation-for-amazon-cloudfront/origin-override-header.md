@@ -24,13 +24,13 @@ To use this capability, follow these steps:
 
    1. Use same header that was supplied in the CloudFormation stack parameters:
 
-      ```
+      ```javascript
       const ditOriginHeader = ""; // eg. dit-origin
       ```
 
    1. Update the business logic to populate origin override header value - this could be as simple as using a request header that your application is already sending or it could involve a more "on-the-fly" origin calculation:
 
-      ```
+      ```javascript
       // Customer-specific origin header mapping (placeholder for extension)
       // Customers can extend this logic to set dit-origin based on their routing needs
       if (ditOriginHeader) {

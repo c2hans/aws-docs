@@ -43,7 +43,7 @@ Operands of the enablement condition.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Operator`  <a name="cfn-connect-evaluationform-evaluationformitemenablementcondition-operator"></a>
-The operator to be used to be applied to operands if more than one provided.
+The operator to apply to the operands when more than one operand is provided.
 *Required*: No
 *Type*: String
 *Allowed values*: `OR | AND`

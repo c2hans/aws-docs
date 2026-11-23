@@ -13,7 +13,7 @@ To create a new policy, provide the policy’s name and a JSON-formatted policy 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.CreatePolicyRequest;
@@ -22,7 +22,7 @@ import com.amazonaws.services.identitymanagement.model.CreatePolicyResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -35,7 +35,7 @@ CreatePolicyResult response = iam.createPolicy(request);
 
 IAM policy documents are JSON strings with a [well-documented syntax](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html). Here is an example that provides access to make particular requests to DynamoDB.
 
-```
+```java
 public static final String POLICY_DOCUMENT =
     "{" +
     "  \"Version\": \"2012-10-17\",		 	 	 " +
@@ -69,7 +69,7 @@ To retrieve an existing policy, call the AmazonIdentityManagementClient’s `get
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.GetPolicyRequest;
@@ -78,7 +78,7 @@ import com.amazonaws.services.identitymanagement.model.GetPolicyResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -97,7 +97,7 @@ You can attach a policy to an IAMhttp://docs.aws.amazon.com/IAM/latest/UserGuide
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.AttachRolePolicyRequest;
@@ -106,7 +106,7 @@ import com.amazonaws.services.identitymanagement.model.AttachedPolicy;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -129,7 +129,7 @@ Call `getAttachedPolicies` on the returned [ListAttachedRolePoliciesResult](http
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.ListAttachedRolePoliciesRequest;
@@ -141,7 +141,7 @@ import java.util.stream.Collectors;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 
@@ -179,7 +179,7 @@ To detach a policy from a role, call the AmazonIdentityManagementClient’s `det
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagement;
 import com.amazonaws.services.identitymanagement.AmazonIdentityManagementClientBuilder;
 import com.amazonaws.services.identitymanagement.model.DetachRolePolicyRequest;
@@ -188,7 +188,7 @@ import com.amazonaws.services.identitymanagement.model.DetachRolePolicyResult;
 
  **Code**
 
-```
+```java
 final AmazonIdentityManagement iam =
     AmazonIdentityManagementClientBuilder.defaultClient();
 

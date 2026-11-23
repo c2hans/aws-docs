@@ -48,6 +48,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
 ![Image showing WorkSpaces client browser network check window](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-client-network-check.png)
 
+*Figure 1: WorkSpaces Client: network check*
+
 A user initiates a connection from their client to the Amazon WorkSpaces service by supplying their login information for the directory used by the Directory Service construct, typically their corporate directory. The login information is sent via HTTPS to the authentication gateways of the Amazon WorkSpaces service in the Region where the WorkSpace is located. The authentication gateway of the Amazon WorkSpaces service then forwards the traffic to the specific AWS Directory Service construct associated with your WorkSpace.
 
  For example, when using the AD Connector, the AD Connector forwards the authentication request directly to your AD service, which could be on-premises or in an AWS VPC. For more information, refer to the [AD DS Deployment Scenarios](ad-ds-deployment-scenarios.md) section of this document. The AD Connector does not store any authentication information, and it acts as a stateless proxy. As a result, it’s imperative that the AD Connector has connectivity to an AD server. The AD Connector determines which AD server to connect to by using the DNS servers that you define when you create the AD Connector.
@@ -90,6 +92,8 @@ Similarly, a [Route 53 Resolver Inbound Endpoint](https://docs.aws.amazon.com/R
 
 ![Image showing WorkSpaces DNS resolution](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-route-53-dns-resolution.png)
 
+*Figure 2: WorkSpaces DNS resolution example with Route 53 endpoints*
+
 + Your Amazon WorkSpaces will use the AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) DNS service for DNS resolution. The AWS Managed Microsoft AD DNS service resolves the `example.aws` domain, and forwards all other DNS queries to the default Route 53 DNS Resolver at the VPC CIDR base IP address \+2 to enable DNS resolution
 
   The Shared Services VPC contains a Route 53 Outbound Resolver endpoint, which is associated with two Route 53 Forwarding rules. One of these rules forwards DNS queries for the `example.com` domain to the on-premises DNS servers. The second rule forwards DNS queries for your AWS Managed Microsoft AD domain `example.aws` to your Active Directory DNS service in the Shared Services VPC.
@@ -126,6 +130,8 @@ Similarly, a [Route 53 Resolver Inbound Endpoint](https://docs.aws.amazon.com/R
 
 ![Sample architecture showing an example VPC configuration with NAT gateway](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/high-level-vpc-design.png)
 
+*Figure 3: High-level VPC design*
+
  The following information describes how to configure the two different WorkSpaces types:
 
  **To configure WorkSpaces for full-time employees**:
@@ -152,6 +158,8 @@ Similarly, a [Route 53 Resolver Inbound Endpoint](https://docs.aws.amazon.com/R
  The security group applies only to the ENI that is in the VPC (`eth1` on the WorkSpace), and access to the WorkSpace from the WorkSpaces client is not restricted as a result of a security group. The following figure shows the final WorkSpaces VPC design.
 
 ![Sample architecture showing an example of a final WorkSpaces VPC design.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-design-user-personas.png)
+
+*Figure 4: WorkSpaces design with user personas*
 
 ## AWS Directory Service
 <a name="aws-directory-service"></a>

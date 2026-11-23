@@ -19,7 +19,7 @@ Your IAM user or role also needs the following permissions to run on-demand eval
 ## Console and API operations
 <a name="console-api-operations-on-demand"></a>
 
-```
+```json
 {
 "Version": "2012-10-17",
     "Statement": [

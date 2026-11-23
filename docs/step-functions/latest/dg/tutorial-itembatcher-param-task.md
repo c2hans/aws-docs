@@ -18,7 +18,7 @@ In this step, you create the workflow prototype of the state machine that passes
 **Important**
 Make sure to replace the Amazon Resource Name (ARN) of the Lambda function in the following code with the ARN of the function you'll create in [Step 2](#itembatcher-param-task-config-resource).
 
-  ```
+  ```json
   {
     "StartAt": "Pass",
     "States": {
@@ -93,7 +93,7 @@ Ensure that your Lambda function is under the same AWS Region as your state mach
 
 1. Copy the following code for the Lambda function and paste it into the **Code source** section of your Lambda function.
 
-   ```
+   ```python
    import json
 
    def lambda_handler(event, context):
@@ -125,7 +125,7 @@ When you run the [state machine](#itembatcher-param-task-create-state-machine), 
 
 The following example shows the data passed to the [`ProcessEntireBatch`](#itembatcher-param-task-config-resource) function by one of the child workflow executions.
 
-```
+```json
 {
   "BatchInput": {
     "MyMultiplicationFactor": 7
@@ -136,7 +136,7 @@ The following example shows the data passed to the [`ProcessEntireBatch`](#itemb
 
 Given this input, the following example shows the output array named `multiplied` that is returned by the Lambda function.
 
-```
+```json
 {
   "statusCode": 200,
   "multiplied": [7, 14, 21]
@@ -145,7 +145,7 @@ Given this input, the following example shows the output array named `multiplied
 
 The state machine returns the following output that contains four arrays named `multiplied` for the four child workflow executions. These arrays contain the multiplication results of the individual input items.
 
-```
+```json
 [
   {
     "statusCode": 200,
@@ -170,7 +170,7 @@ To combine all the array items returned into a single output array, you can use 
 
 To use the `ResultSelector` field, update your state machine definition as shown in the following example.
 
-```
+```json
 {
   "StartAt": "Pass",
   "States": {
@@ -191,7 +191,7 @@ To use the `ResultSelector` field, update your state machine definition as shown
 
 The updated state machine returns a consolidated output array as shown in the following example.
 
-```
+```json
 {
   "multiplied": [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
 }

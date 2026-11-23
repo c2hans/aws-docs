@@ -27,6 +27,6 @@ SVV\_COPY\_JOB\_INTEGRATIONS is visible to all users. Superusers can see all row
 
 The following example returns S3 integrations for the current database.
 
-```
+```sql
 SELECT * FROM SVV_COPY_JOB_INTEGRATIONS WHERE db_name = pg_catalog.current_database();
 ```

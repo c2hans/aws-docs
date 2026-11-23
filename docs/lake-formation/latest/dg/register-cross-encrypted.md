@@ -42,7 +42,7 @@ Review the [requirements for the role used to register the location](registratio
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -70,7 +70,7 @@ Review the [requirements for the role used to register the location](registratio
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

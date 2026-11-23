@@ -23,7 +23,7 @@ Defining a calculated attribute makes it available for all profiles within a dom
 POST /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
 ```
 
-```
+```json
 {
     "CalculatedAttributeName": "string",
     "DisplayName": "string",
@@ -55,7 +55,7 @@ POST /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
 
 **Response**
 
-```
+```json
 {
     "CalculatedAttributeName": "string",
     "DisplayName": "string",
@@ -221,7 +221,7 @@ TimestampSource and TimestampFormat cannot be updated after a calculated attribu
 PUT /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
 ```
 
-```
+```json
 {
     "DisplayName": "string",
     "Description": "string",
@@ -241,7 +241,7 @@ PUT /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
 
 **Response**
 
-```
+```json
 {
     "CalculatedAttributeName": "string",
     "DisplayName": "string",
@@ -361,7 +361,7 @@ The request does not have a request body.
 
 **Response**
 
-```
+```json
 {
 "CalculatedAttributeName": "string",
     "DisplayName": "string",
@@ -482,7 +482,7 @@ The request does not have a request body.
 
 **Response**
 
-```
+```json
 {
     "Items": [
         {
@@ -539,7 +539,7 @@ The request does not have a request body.
 
 **Response**
 
-```
+```json
 {
 "Name": "string",
     "DisplayName": "string",
@@ -585,7 +585,7 @@ The request does not have a request body.
 
 **Response**
 
-```
+```json
 {
 "Items": [
         {

@@ -12,7 +12,7 @@ The following example uses the synchronous client to run a complete two-turn con
 
  **Imports**
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
     ContentBlockText,
@@ -24,7 +24,7 @@ from aws_sdk_bedrock_runtime.models import (
 
 The generated `output` member is a union. Narrow it to `ConverseOutputMessage` before using `.value`. Each message content block is also a union, so narrow text blocks before reading their values. The following helper functions raise an error when the response has no message or the message has no text content.
 
-```
+```python
 def narrow_message(response: object) -> Message:
     """Narrow a Converse output union and return its message."""
     output = getattr(response, "output", None)
@@ -48,7 +48,7 @@ The code also prints the response's `stop_reason` and `usage` fields. The `stop_
 
  **Code**
 
-```
+```python
 def converse(client: BedrockRuntimeClient) -> tuple[str, str]:
     """Run a complete two-turn conversation and return both assistant replies."""
     model_id = "global.amazon.nova-2-lite-v1:0"
@@ -93,7 +93,7 @@ def converse(client: BedrockRuntimeClient) -> tuple[str, str]:
 
 The entry point creates a synchronous client with `create_client` and runs the conversation. Run the program with `python converse.py`.
 
-```
+```python
 def main() -> None:
     """Create a synchronous client and run the example."""
     with create_client() as client:

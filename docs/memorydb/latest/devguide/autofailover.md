@@ -178,7 +178,7 @@ To track the progress of your failover, use the AWS CLI `describe-events` operat
 
 It will return the following JSON response:
 
-```
+```json
 {
     "Events": [
         {

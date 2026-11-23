@@ -76,7 +76,7 @@ To access private resources like an Amazon Aurora database or Amazon ElastiCache
 
 Set `suspendedDurationSeconds: 0` and `autoResumeEnabled: false` for per-session MicroVMs. Set `maximumDurationInSeconds` as a ceiling for stuck sessions (max 28,800 s).
 
-```
+```json
 {
   "maxIdleDurationSeconds": 120,
   "suspendedDurationSeconds": 0,
@@ -89,13 +89,13 @@ Set `suspendedDurationSeconds: 0` and `autoResumeEnabled: false` for per-session
 
 **Application logs** – Review application logs in CloudWatch Logs:
 
-```
+```bash
 aws logs tail /aws/lambda-microvms/claude-worker --follow
 ```
 
 **Running MicroVMs** – List the running MicroVMs in your account:
 
-```
+```bash
 aws lambda-microvms list-microvms \
   --image-identifier claude-worker \
   --query 'items[].[microvmId,state,startedAt]' --output table

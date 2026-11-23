@@ -87,6 +87,7 @@ HTTP/1.1 200
          <Domains>
             <DomainResult>
                <Domain>string</Domain>
+               <ServeOn>string</ServeOn>
                <Status>string</Status>
             </DomainResult>
          </Domains>

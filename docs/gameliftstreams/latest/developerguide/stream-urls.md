@@ -51,7 +51,7 @@ You can create a stream URL in the Amazon GameLift Streams console, with the AWS
 
 The following AWS CLI example creates a stream URL for an application in a stream group. The stream URL is valid for two hours and can be used up to five times, and it prefers the `us-west-2` and `us-east-1` locations.
 
-```
+```bash
 aws gameliftstreams create-stream-url \
     --identifier sg-1AB2C3De4 \
     --application-identifier a-9ZY8X7Wv6 \
@@ -64,7 +64,7 @@ aws gameliftstreams create-stream-url \
 
 A successful call returns the stream URL resource, including its `StreamUrlId` (prefixed `su-`), its ARN, the full shareable `StreamUrl`, the computed expiration time, and the initial remaining uses.
 
-```
+```json
 {
     "StreamUrlId": "su-1AB2C3De4",
     "Arn": "arn:aws:gameliftstreams:us-west-2:111122223333:streamurl/sg-1AB2C3De4/su-1AB2C3De4",
@@ -104,7 +104,7 @@ The following parameters are optional. Any session settings you provide are froz
 
 Use [GetStreamUrl](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetStreamUrl.html) to retrieve a single stream URL. Specify the stream group with `--identifier` and the stream URL with `--stream-url-identifier` (a stream URL ID or ARN). In addition to the stream URL's configuration, current `Status`, and `RemainingUses`, the response includes a `StreamSessions` list of the sessions started from it, so you can see who is actively streaming.
 
-```
+```bash
 aws gameliftstreams get-stream-url \
     --identifier sg-1AB2C3De4 \
     --stream-url-identifier su-1AB2C3De4
@@ -112,7 +112,7 @@ aws gameliftstreams get-stream-url \
 
 Use [ListStreamUrls](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_ListStreamUrls.html) to enumerate the stream URLs in your account. You can filter by `Status` and by stream group, and page through results with `MaxResults` (1–100, default 25) and `NextToken`.
 
-```
+```bash
 aws gameliftstreams list-stream-urls \
     --status ACTIVE \
     --stream-group-identifier sg-1AB2C3De4
@@ -132,7 +132,7 @@ Revoke a stream URL when you want to stop it from starting any more sessions, fo
 | REVOKE\_URL (default) | The stream URL can no longer start new sessions. Sessions already in progress continue until they end on their own. |
 | REVOKE\_AND\_TERMINATE\_SESSIONS | The stream URL can no longer start new sessions, and all sessions currently running from it are terminated. When a running session is terminated this way, the end user is disconnected and sees a message that the stream is no longer available. |
 
-```
+```bash
 aws gameliftstreams revoke-stream-url \
     --identifier sg-1AB2C3De4 \
     --stream-url-identifier su-1AB2C3De4 \

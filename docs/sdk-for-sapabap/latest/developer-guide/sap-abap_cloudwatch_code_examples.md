@@ -27,7 +27,7 @@ The following code example shows how to use `DeleteAlarms`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_cwt->deletealarms(
           it_alarmnames = it_alarm_names ).
@@ -46,7 +46,7 @@ The following code example shows how to use `DescribeAlarms`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cwt->describealarms(                 " oo_result is returned for testing purposes. "
           it_alarmnames = it_alarm_names ).
@@ -66,7 +66,7 @@ The following code example shows how to use `DescribeAlarmsForMetric`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cwt->describealarmsformetric(          " oo_result is returned for testing purposes. "
           iv_namespace   = iv_namespace
@@ -91,7 +91,7 @@ The following code example shows how to use `DisableAlarmActions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     "Disables actions on the specified alarm. "
     TRY.
         lo_cwt->disablealarmactions(
@@ -112,7 +112,7 @@ The following code example shows how to use `EnableAlarmActions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     "Enable actions on the specified alarm."
     TRY.
         lo_cwt->enablealarmactions(
@@ -133,7 +133,7 @@ The following code example shows how to use `GetMetricStatistics`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cwt->getmetricstatistics(              " oo_result is returned for testing purposes. "
           iv_namespace   = iv_namespace
@@ -157,7 +157,7 @@ The following code example shows how to use `ListMetrics`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     "The following list-metrics example displays the metrics for Amazon CloudWatch."
     TRY.
         oo_result = lo_cwt->listmetrics(            " oo_result is returned for testing purposes. "
@@ -178,7 +178,7 @@ The following code example shows how to use `PutMetricAlarm`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_cwt->putmetricalarm(
           iv_alarmname                 = iv_alarm_name
@@ -208,7 +208,7 @@ The following code example shows how to use `PutMetricData`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     DATA lt_metricdata TYPE /aws1/cl_cwtmetricdatum=>tt_metricdata.
 
     "Create metric data object.
@@ -230,7 +230,7 @@ The following code example shows how to use `PutMetricData`.
 ```
 Put a set of data into a CloudWatch metric.
 
-```
+```sap-abap
     DATA lt_metricdata TYPE /aws1/cl_cwtmetricdatum=>tt_metricdata.
 
     "Create metric data object with values and counts.
@@ -269,7 +269,7 @@ The following code example shows how to:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     DATA lt_alarmnames TYPE /aws1/cl_cwtalarmnames_w=>tt_alarmnames.
     DATA lo_alarmname TYPE REF TO /aws1/cl_cwtalarmnames_w.
 

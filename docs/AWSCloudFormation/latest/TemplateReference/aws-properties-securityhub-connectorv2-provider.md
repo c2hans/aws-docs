@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```json
 {
   "[Azure](#cfn-securityhub-connectorv2-provider-azure)" : {{AzureProviderConfiguration}},
+  "[GCP](#cfn-securityhub-connectorv2-provider-gcp)" : {{GcpProviderConfiguration}},
   "[JiraCloud](#cfn-securityhub-connectorv2-provider-jiracloud)" : {{JiraCloudProviderConfiguration}},
   "[ServiceNow](#cfn-securityhub-connectorv2-provider-servicenow)" : {{ServiceNowProviderConfiguration}}
 }
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```yaml
   [Azure](#cfn-securityhub-connectorv2-provider-azure): {{
     AzureProviderConfiguration}}
+  [GCP](#cfn-securityhub-connectorv2-provider-gcp): {{
+    GcpProviderConfiguration}}
   [JiraCloud](#cfn-securityhub-connectorv2-provider-jiracloud): {{
     JiraCloudProviderConfiguration}}
   [ServiceNow](#cfn-securityhub-connectorv2-provider-servicenow): {{
@@ -43,6 +46,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: [AzureProviderConfiguration](aws-properties-securityhub-connectorv2-azureproviderconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`GCP`  <a name="cfn-securityhub-connectorv2-provider-gcp"></a>
+Property description not available.
+*Required*: No
+*Type*: [GcpProviderConfiguration](aws-properties-securityhub-connectorv2-gcpproviderconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `JiraCloud`  <a name="cfn-securityhub-connectorv2-provider-jiracloud"></a>

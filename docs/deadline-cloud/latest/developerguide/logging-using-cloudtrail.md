@@ -145,7 +145,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event that demonstrates the `CreateFarm` operation.
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {

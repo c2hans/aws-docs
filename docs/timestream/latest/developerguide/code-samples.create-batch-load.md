@@ -11,7 +11,7 @@ You can use the following code snippets to create batch load tasks.
 ------
 #### [  Java  ]
 
-```
+```java
 package com.example.tryit;
 
 import java.util.Arrays;
@@ -118,7 +118,7 @@ public class BatchLoadExample {
 ------
 #### [  Go  ]
 
-```
+```go
 package main
 
 import (
@@ -209,7 +209,7 @@ func main() {
 ------
 #### [  Python  ]
 
-```
+```python
 import boto3
 from botocore.config import Config
 
@@ -301,7 +301,7 @@ The following snippet uses AWS SDK for JavaScript v3. For more information about
 
 For API details, see [Class CreateBatchLoadCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-timestream-write/classes/createbatchloadtaskcommand.html) and [CreateBatchLoadTask](https://docs.aws.amazon.com/timestream/latest/developerguide/API_CreateBatchLoadTask.html).
 
-```
+```javascript
 import { TimestreamWriteClient, CreateBatchLoadTaskCommand } from "@aws-sdk/client-timestream-write";
 const writeClient = new TimestreamWriteClient({ region: "us-west-2", endpoint: "https://gamma-ingest-cell3.timestream.us-west-2.amazonaws.com" });
 
@@ -370,7 +370,7 @@ try {
 ------
 #### [  .NET  ]
 
-```
+```cs
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -485,7 +485,7 @@ namespace TimestreamDotNetSample
 }
 ```
 
-```
+```cs
 using Amazon.TimestreamWrite;
 using Amazon.TimestreamWrite.Model;
 using Amazon;

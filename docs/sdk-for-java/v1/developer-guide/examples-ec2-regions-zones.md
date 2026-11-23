@@ -13,7 +13,7 @@ To list the Regions available to your account, call the AmazonEC2Client’s `des
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DescribeRegionsResult;
@@ -24,7 +24,7 @@ import com.amazonaws.services.ec2.model.DescribeAvailabilityZonesResult;
 
  **Code**
 
-```
+```java
 DescribeRegionsResult regions_response = ec2.describeRegions();
 
 for(Region region : regions_response.getRegions()) {
@@ -45,7 +45,7 @@ To list each Availability Zone available to your account, call the AmazonEC2Clie
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DescribeRegionsResult;
@@ -56,7 +56,7 @@ import com.amazonaws.services.ec2.model.DescribeAvailabilityZonesResult;
 
  **Code**
 
-```
+```java
 DescribeAvailabilityZonesResult zones_response =
     ec2.describeAvailabilityZones();
 
@@ -82,7 +82,7 @@ You can get your account’s attribute values by invoking the [AccountAttribute]
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.AccountAttributeValue;
@@ -94,7 +94,7 @@ import java.util.ListIterator;
 
  **Code**
 
-```
+```java
 AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 try{

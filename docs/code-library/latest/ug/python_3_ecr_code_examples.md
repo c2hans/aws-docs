@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon ECR.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 import boto3
 import argparse
 from boto3 import client
@@ -98,7 +98,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class ECRGettingStarted:
     """
     A scenario that demonstrates how to use Boto3 to perform basic operations using
@@ -445,7 +445,7 @@ if __name__ == "__main__":
 ```
 ECRWrapper class that wraps Amazon ECR actions.
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -658,7 +658,7 @@ The following code example shows how to use `CreateRepository`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -708,7 +708,7 @@ The following code example shows how to use `DeleteRepository`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -752,7 +752,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -806,7 +806,7 @@ The following code example shows how to use `DescribeRepositories`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -850,7 +850,7 @@ The following code example shows how to use `GetAuthorizationToken`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -891,7 +891,7 @@ The following code example shows how to use `GetRepositoryPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -940,7 +940,7 @@ The following code example shows how to use `PutLifeCyclePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -978,7 +978,7 @@ class ECRWrapper:
 ```
 Example that puts an expiration date policy.
 
-```
+```python
     def put_expiration_policy(self):
         """
         Puts an expiration policy on the ECR repository.
@@ -1013,7 +1013,7 @@ The following code example shows how to use `SetRepositoryPolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -1054,7 +1054,7 @@ class ECRWrapper:
 ```
 Example that grants an IAM role download access.
 
-```
+```python
     def grant_role_download_access(self, role_arn: str):
         """
         Grants the specified role access to download images from the ECR repository.

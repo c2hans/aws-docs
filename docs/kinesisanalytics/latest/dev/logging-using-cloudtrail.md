@@ -43,7 +43,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the [AddApplicationCloudWatchLoggingOption](/kinesisanalytics/latest/dev/API_AddApplicationCloudWatchLoggingOption.html) and [DescribeApplication](/kinesisanalytics/latest/dev/API_DescribeApplication.html) actions.
 
-```
+```json
 {
     "Records": [
         {

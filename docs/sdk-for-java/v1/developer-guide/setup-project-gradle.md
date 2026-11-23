@@ -18,13 +18,13 @@ In the following examples, replace {{1.12.529}} in the build file with a valid v
 
 1. If you’re using Gradle 5.0 or later, skip to step 2. Otherwise, enable the *IMPROVED\_POM\_SUPPORT* feature in the `settings.gradle` file.
 
-   ```
+   ```groovy
    enableFeaturePreview('IMPROVED_POM_SUPPORT')
    ```
 
 1. Add the BOM to the *dependencies* section of the application's `build.gradle` file.
 
-   ```
+   ```groovy
    ...
    dependencies {
        implementation platform('com.amazonaws:aws-java-sdk-bom:{{1.12.529}}')
@@ -36,7 +36,7 @@ In the following examples, replace {{1.12.529}} in the build file with a valid v
 
 1. Specify the SDK modules to use in the *dependencies* section. For example, the following includes a dependency for Amazon Simple Storage Service (Amazon S3).
 
-   ```
+   ```groovy
    ...
    dependencies {
        implementation platform('com.amazonaws:aws-java-sdk-bom:{{1.12.529}}')
@@ -49,7 +49,7 @@ Gradle automatically resolves the correct version of your SDK dependencies by us
 
 The following is an example of a complete `build.gradle` file that includes a dependency for Amazon S3.
 
-```
+```groovy
 group 'aws.test'
 version '1.0-SNAPSHOT'
 
@@ -77,7 +77,7 @@ Gradle versions earlier than 4.6 lack native BOM support. To manage AWS SDK for 
 
 1. Add the dependency management plugin to your application's `build.gradle` file.
 
-   ```
+   ```groovy
    buildscript {
        repositories {
            mavenCentral()
@@ -92,7 +92,7 @@ Gradle versions earlier than 4.6 lack native BOM support. To manage AWS SDK for 
 
 1. Add the BOM to the *dependencyManagement* section of the file.
 
-   ```
+   ```groovy
    dependencyManagement {
        imports {
            mavenBom 'com.amazonaws:aws-java-sdk-bom:{{1.12.529}}'
@@ -102,7 +102,7 @@ Gradle versions earlier than 4.6 lack native BOM support. To manage AWS SDK for 
 
 1. Specify the SDK modules that you’ll use in the *dependencies* section. For example, the following includes a dependency for Amazon S3.
 
-   ```
+   ```groovy
    dependencies {
        compile 'com.amazonaws:aws-java-sdk-s3'
    }
@@ -112,7 +112,7 @@ Gradle automatically resolves the correct version of your SDK dependencies by us
 
 The following is an example of a complete `build.gradle` file that includes a dependency for Amazon S3.
 
-```
+```groovy
 group 'aws.test'
 version '1.0'
 

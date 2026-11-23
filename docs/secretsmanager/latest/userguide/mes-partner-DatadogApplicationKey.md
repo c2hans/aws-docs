@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "appKey": "{{Application key starting with ddapp_}}",
   "appKeyId": "{{Application key UUID}}",
@@ -31,7 +31,7 @@ The Datadog Service Account ID (UUID) that owns this Application key. Only servi
 
 The following are the metadata fields for Datadog Application Key:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{DatadogAdminKey}}"
 }

@@ -56,7 +56,7 @@ The following procedure creates a Spark application that uses dual-stack subnets
 
 The following AWS CLI command creates a Spark application with dual-stack subnets and enables IPv6:
 
-```
+```bash
 aws emr-serverless create-application \
 --type SPARK \
 --name {{my-application-name}} \
@@ -96,7 +96,7 @@ For IPv6-only subnets, omit `--runtime-configuration`. The application runs over
 
    The following AWS CLI command updates the application with the new subnets and the enablement property:
 
-   ```
+   ```bash
    aws emr-serverless update-application \
    --application-id {{application-id}} \
    --network-configuration '{

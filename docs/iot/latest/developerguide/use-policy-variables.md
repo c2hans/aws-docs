@@ -144,7 +144,7 @@ If your X.509 certificate doesn't include a particular certificate attribute but
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -176,7 +176,7 @@ All of the certificate policy variables have String values, so all of the [Strin
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

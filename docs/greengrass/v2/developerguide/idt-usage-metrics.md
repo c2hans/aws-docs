@@ -48,7 +48,7 @@ Follow these steps to use the console to configure permissions for IDT for AWS I
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -104,7 +104,7 @@ The AWS CLI is an open source tool that you can use to interact with AWS service
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    aws iam create-policy --policy-name IDTUsageMetricsIAMPermissions --policy-document '{
        "Version": "2012-10-17",
        "Statement": [
@@ -122,7 +122,7 @@ The AWS CLI is an open source tool that you can use to interact with AWS service
 ------
 #### [ Windows command prompt ]
 
-   ```
+   ```cmd
    aws iam create-policy --policy-name IDTUsageMetricsIAMPermissions --policy-document
                                            '{\"Version\": \"2012-10-17\",		 	 	  \"Statement\": [{\"Effect\": \"Allow\", \"Action\": [\"iot-device-tester:SendMetrics\"], \"Resource": \"*\"}]}'
    ```
@@ -133,7 +133,7 @@ This step includes a Windows command prompt example because it uses a different 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    aws iam create-policy --policy-name IDTUsageMetricsIAMPermissions --policy-document '{
        "Version": "2012-10-17",
        "Statement": [
@@ -154,19 +154,19 @@ This step includes a Windows command prompt example because it uses a different 
 
    1. Create an IAM user.
 
-      ```
+      ```bash
       aws iam create-user --user-name {{user-name}}
       ```
 
    1. Attach the `IDTUsageMetricsIAMPermissions` policy you created to your IAM user. Replace {{user-name}} with your IAM user name and {{<account-id>}} in the command with the ID of your AWS account.
 
-      ```
+      ```bash
       aws iam attach-user-policy --user-name {{user-name}} --policy-arn arn:aws:iam::{{<account-id>}}:policy/IDTGreengrassIAMPermissions
       ```
 
 1. Create a secret access key for the user.
 
-   ```
+   ```bash
    aws iam create-access-key --user-name {{user-name}}
    ```
 
@@ -184,7 +184,7 @@ To allow IDT to access your AWS credentials and submit metrics to AWS, do the fo
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       export AWS_ACCESS_KEY_ID={{access-key}}
       export AWS_SECRET_ACCESS_KEY={{secret-access-key}}
       ```
@@ -192,7 +192,7 @@ To allow IDT to access your AWS credentials and submit metrics to AWS, do the fo
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       set AWS_ACCESS_KEY_ID={{access-key}}
       set AWS_SECRET_ACCESS_KEY={{secret-access-key}}
       ```
@@ -200,7 +200,7 @@ To allow IDT to access your AWS credentials and submit metrics to AWS, do the fo
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       $env:AWS_ACCESS_KEY_ID="{{access-key}}"
       $env:AWS_SECRET_ACCESS_KEY="{{secret-access-key}}"
       ```

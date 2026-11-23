@@ -148,6 +148,10 @@ HTTP Status Code: 429
 Unable to create resource. Resource already exists.
 HTTP Status Code: 409
 
+ ** ResourceNotFoundException **
+Resource not found. Verify the connection resource ARN and try again.
+HTTP Status Code: 404
+
  ** ThrottlingException **
 The request was denied due to request throttling.
 HTTP Status Code: 429

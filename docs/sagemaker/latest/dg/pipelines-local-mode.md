@@ -23,7 +23,7 @@ Pipelines local mode is not compatible with SageMaker AI algorithms such as XGBo
 
 In order to execute a pipeline locally, the `sagemaker_session` fields associated with the pipeline steps and the pipeline itself need to be of type `LocalPipelineSession`. The following example shows how you can define a SageMaker AI pipeline to execute locally.
 
-```
+```python
 from sagemaker.core.workflow.pipeline_context import LocalPipelineSession
 from sagemaker.train import ModelTrainer
 from sagemaker.train.configs import InputData, SourceCode
@@ -81,7 +81,7 @@ step_outputs = local_pipeline_session.sagemaker_client.describe_training_job(Tra
 
 Once you are ready to execute the pipeline on the managed SageMaker Pipelines service, you can do so by replacing `LocalPipelineSession` in the previous code snippet with `PipelineSession` (as shown in the following code sample) and rerunning the code.
 
-```
+```python
 from sagemaker.workflow.pipeline_context import PipelineSession
 
 pipeline_session = PipelineSession()

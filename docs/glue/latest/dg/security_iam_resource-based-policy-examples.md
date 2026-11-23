@@ -26,7 +26,7 @@ You use a policy document written in JSON format to create or modify a resource 
 + The `"Principal"` or `"NotPrincipal"` must identify valid existing principals. Wildcard patterns (like `arn:aws:iam::{{account-id}}:user/*`) are not allowed.
 + The `"Resource"` block in the policy requires all resource ARNs to match the following regular expression syntax (where the first `%s` is the {{region}}, and the second `%s` is the {{account-id}}):
 
-  ```
+  ```json
   *arn:aws:glue:%s:%s:(\*|[a-zA-Z\*]+\/?.*)
   ```
 
@@ -107,7 +107,7 @@ $ aws glue get-table --profile alice --region us-west-2 --database-name "default
 
 In response to Alice's `get-table` call, the AWS Glue service returns the following.
 
-```
+```json
 {
   "Table": {
     "Name": "tbl1",

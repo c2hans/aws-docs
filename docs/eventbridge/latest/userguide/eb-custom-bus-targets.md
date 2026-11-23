@@ -12,6 +12,7 @@ The following pages describe each target type. For an AWS API action that has no
 + [Amazon SNS topic target](eb-custom-bus-target-sns.md)
 + [Kinesis stream target](eb-custom-bus-target-kinesis.md)
 + [Amazon Data Firehose stream target](eb-custom-bus-target-firehose.md)
++ [Amazon MSK cluster target](eb-custom-bus-target-msk.md)
 + [Step Functions state machine target](eb-custom-bus-target-sfn.md)
 + [HTTP targets: API Gateway and API destinations](eb-custom-bus-target-http.md)
 + [Event bus target: bus to bus](eb-custom-bus-target-bus.md)

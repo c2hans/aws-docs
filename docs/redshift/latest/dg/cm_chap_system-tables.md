@@ -128,7 +128,7 @@ When you migrate your monitoring and diagnostic queries from provisioned-only vi
 
 For an example of how Amazon Redshift records queries differently in provisioned-only and SYS monitoring views, see the following sample query. This is the query written as you would run it in Amazon Redshift.
 
-```
+```sql
 SELECT
   s_name
   , COUNT(*) AS numwait
@@ -167,7 +167,7 @@ Under the hood the Amazon Redshift query optimizer rewrites the above user-submi
 
 The first child query creates a temporary table to materialize a subquery.
 
-```
+```sql
 CREATE TEMP TABLE volt_tt_606590308b512(l_orderkey
                                         , l_suppkey
                                         , s_name   ) AS SELECT
@@ -189,13 +189,13 @@ CREATE TEMP TABLE volt_tt_606590308b512(l_orderkey
 
 The second child query collects statistics from the temporary table.
 
-```
+```sql
 padb_fetch_sample: select count(*) from volt_tt_606590308b512;
 ```
 
 The third child query creates another temporary table to materialize another subquery, referencing the temporary table created above.
 
-```
+```sql
 CREATE TEMP TABLE volt_tt_606590308c2ef(l_orderkey
                                         , l_suppkey) AS (SELECT
                                                           volt_tt_606590308b512.l_orderkey
@@ -214,13 +214,13 @@ CREATE TEMP TABLE volt_tt_606590308c2ef(l_orderkey
 
 The fourth child query again collects the temporary table’s statistics.
 
-```
+```sql
 padb_fetch_sample: select count(*) from volt_tt_606590308c2ef
 ```
 
 The last child query uses the temporary tables created above to generate the output.
 
-```
+```sql
 SELECT
   volt_tt_606590308b512.s_name AS s_name
   , COUNT(*) AS numwait
@@ -238,7 +238,7 @@ ORDER BY
 
 In the provisioned-only system view STL\_QUERY, Amazon Redshift records five rows at the child query level, as follows:
 
-```
+```sql
 SELECT userid, xid, pid, query, querytxt::varchar(100);
 FROM stl_query
 WHERE xid = 48237350
@@ -256,7 +256,7 @@ ORDER BY xid, starttime;
 
 In the SYS monitoring view SYS\_QUERY\_HISTORY, Amazon Redshift records the query as follows:
 
-```
+```sql
 SELECT user_id, transaction_id, session_id, query_id, query_text::varchar(100)
 FROM sys_query_history
 WHERE transaction_id = 48237350
@@ -269,7 +269,7 @@ ORDER BY start_time;
 
 In SYS\_QUERY\_DETAIL, you can find child query-level details using the query\_id value from SYS\_QUERY\_HISTORY. The child\_query\_sequence column shows the order the child queries are executed in. For more information on the columns in SYS\_QUERY\_DETAIL, see [SYS\_QUERY\_DETAIL](SYS_QUERY_DETAIL.md).
 
-```
+```sql
 select user_id,
        query_id,
        child_query_sequence,

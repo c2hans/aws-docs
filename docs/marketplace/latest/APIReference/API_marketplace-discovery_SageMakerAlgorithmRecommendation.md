@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 
 # SageMakerAlgorithmRecommendation
 
-Recommended instance types for training and inference with a SageMaker algorithm.
+The recommended instance types for training and inference with a SageMaker algorithm.
 
 ## Contents
 <a name="API_marketplace-discovery_SageMakerAlgorithmRecommendation_Contents"></a>
@@ -13,7 +13,7 @@ Recommended instance types for training and inference with a SageMaker algorithm
 In the following list, the required parameters are described first.
 
  ** recommendedBatchTransformInstanceType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerAlgorithmRecommendation-recommendedBatchTransformInstanceType"></a>
-The recommended instance type for batch inference.
+The instance type that the seller recommends for batch transform jobs with this algorithm.
 Type: String
 Required: Yes
 
@@ -23,7 +23,7 @@ Type: String
 Required: Yes
 
  ** recommendedRealtimeInferenceInstanceType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerAlgorithmRecommendation-recommendedRealtimeInferenceInstanceType"></a>
-The recommended instance type for real-time inference.
+The instance type that the seller recommends for real-time inference endpoints with this algorithm.
 Type: String
 Required: No
 

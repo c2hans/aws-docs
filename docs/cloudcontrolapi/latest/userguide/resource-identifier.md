@@ -16,22 +16,22 @@ To determine which resource property (or combination of properties) is the prima
 You can find the identifier *value* for a specific resource by using Cloud Control API commands. Each of the following commands returns a `ProgressEvent` object that contains the primary identifier of the specified resources:
 +
 
-  ```
+  ```sh
   cancel-resource-request
   ```
 +
 
-  ```
+  ```sh
   create-resource
   ```
 +
 
-  ```
+  ```sh
   get-resource-request-status
   ```
 +
 
-  ```
+  ```sh
   list-resource-requests
   ```
 
@@ -54,7 +54,7 @@ For example, given a database with a database name of `MyDatabase` and table nam
 
 For compound identifiers specified as JSON, property order is not required, as shown in the following example.
 
-```
+```json
 {
   "TableName": "MyTable",
   "DatabaseName": "MyDatabase"

@@ -34,7 +34,7 @@ You can also delete a tag by choosing the **X** next to the tag.
 **To add tags to a view**
 Run the following command to add tags to a view. The following example add tags with the key name `environment` and the value `production` to the specified view.
 
-```
+```bash
 $ aws resource-explorer-2 tag-resource \
     --resource-id arn:aws:resource-explorer-2:us-east-1:123456789012:view/MyViewName/1a2b3c4d-5d6e-7f8a-9b0c-abcd11111111 \
     --tags environment=production

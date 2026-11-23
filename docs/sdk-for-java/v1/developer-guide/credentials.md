@@ -49,13 +49,13 @@ You can use the AWS Profile environment variable to change the profile loaded by
 
 For example, on Linux, macOS, or Unix you would run the following command to change the profile to *myProfile*.
 
-```
+```sh
 export AWS_PROFILE="myProfile"
 ```
 
 On Windows you would use the following.
 
-```
+```bat
 set AWS_PROFILE="myProfile"
 ```
 
@@ -76,12 +76,12 @@ You can use this feature to temporarily change the location where the AWS SDK fo
 + Set the `AWS_CREDENTIAL_PROFILES_FILE` environment variable to the location of your AWS credentials file.
   + On Linux, macOS, or Unix, use:
 
-    ```
+    ```sh
     export AWS_CREDENTIAL_PROFILES_FILE=path/to/credentials_file
     ```
   + On Windows, use:
 
-    ```
+    ```bat
     set AWS_CREDENTIAL_PROFILES_FILE=path/to/credentials_file
     ```
 
@@ -90,7 +90,7 @@ You can use this feature to temporarily change the location where the AWS SDK fo
 
 By following the[ instructions in the Basic setup](signup-create-iam-user.md#setup-temp-creds) of this guide, your credentials file should have the following basic format.
 
-```
+```ini
 [default]
 aws_access_key_id={{<value from AWS access portal>}}
 aws_secret_access_key={{<value from AWS access portal>}}
@@ -113,7 +113,7 @@ After you set temporary credentials, the SDK loads them by using the default cre
 
 To do this, you instantiate an AWS service client without explicitly providing credentials to the builder, as follows.
 
-```
+```java
 AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
                        .withRegion(Regions.US_WEST_2)
                        .build();
@@ -126,7 +126,7 @@ You can specify a credential provider that is different from the *default* crede
 
 You provide an instance of a credentials provider or provider chain to a client builder that takes an [AWSCredentialsProvider](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/auth/AWSCredentialsProvider.html) interface as input. The following example shows how to use *environment* credentials specifically.
 
-```
+```java
 AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
                        .withCredentials(new EnvironmentVariableCredentialsProvider())
                        .build();
@@ -150,7 +150,7 @@ If the default credential chain or a specific or custom provider or provider cha
 
 The following is an example.
 
-```
+```java
 BasicSessionCredentials awsCreds = new BasicSessionCredentials("access_key_id", "secret_key_id", "session_token");
 AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
                         .withCredentials(new AWSStaticCredentialsProvider(awsCreds))

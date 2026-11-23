@@ -36,7 +36,7 @@ You can use the update-protect-configuration-country-set command to change a pro
 **To edit a protect configuration**
 + To edit two country rules at the command line, enter the following command:
 
-  ```
+  ```bsh
   aws pinpoint-sms-voice-v2 update-protect-configuration-country-rule-set --protect-configuration-id {{ProtectConfigId}} --number-capability {{Capability}} --country-rule-set-updates '{"{{CountryISO1}}":{"ProtectStatus": "{{Rule1}}"}, "{{CountryISO2}}": {"ProtectStatus":"{{Rule2}}"}}'
   ```
 

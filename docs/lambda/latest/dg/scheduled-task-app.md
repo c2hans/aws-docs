@@ -59,7 +59,7 @@ Expand the following sections to view the code and to learn more about the role 
 
 Copy and paste the following code into a file named `template.yaml`.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: SAM Template for DynamoDB Table with Order_number as Partition Key and Date as Sort Key
@@ -151,7 +151,7 @@ This file contains some example test data to populate your DynamoDB table with i
 
 Copy and paste the following code into a file named `load_sample_data.py`.
 
-```
+```python
 import boto3
 import csv
 from decimal import Decimal
@@ -188,7 +188,7 @@ This Python script first uses the AWS SDK for Python (Boto3) to create a connect
 
 Copy and paste the following code into a file named `lambda_function.py`.
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta
 from boto3.dynamodb.conditions import Key, Attr
@@ -290,7 +290,7 @@ A version of the SDK for Python (Boto3) is included as part of the Lambda runtim
 
 Copy and paste the following code into a file named `template.yaml`.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: SAM Template for Lambda function and EventBridge Scheduler rule
@@ -347,7 +347,7 @@ In addition to the Lambda function and the EventBridge Scheduler schedule, we al
 
 Copy and paste the following code into a file named `test_app.py`.
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta
 import json
@@ -594,7 +594,7 @@ To give your function the permissions it needs to read and delete DynamoDB items
 1. Use the JSON editor and enter the following policy:
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -703,7 +703,7 @@ To give your function the permissions it needs to read and delete DynamoDB items
 
 1. Run the script.
 
-   ```
+   ```bash
    python test_app.py
    ```
 

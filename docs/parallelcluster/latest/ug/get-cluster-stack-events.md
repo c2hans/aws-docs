@@ -21,7 +21,7 @@ Starting in version 3.6.0, AWS ParallelCluster uses nested stacks to create the 
 ## Request syntax
 <a name="get-cluster-stack-events-request"></a>
 
-```
+```json
 GET /v3/clusters/{{{clusterName}}}/stackevents
 {
   "nextToken": "string",
@@ -50,7 +50,7 @@ Required: No
 ## Response syntax
 <a name="get-cluster-stack-events-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "events": [
@@ -123,13 +123,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ get_cluster_stack_events({{cluster_name_3x}})
 ```
 
 **200 Response**
 
-```
+```json
 {
   "events": [
     {

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 ![Reducing latency with network acceleration and game servers deployed globally](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image3.jpeg)
 
+*Reducing latency with network acceleration and game servers deployed globally*
+
 1.  Players in a globally available game can originate from anywhere. When a player requests a game session or match, their game client sends a request to the game backend service registered with Amazon Route 53. Route 53 latency-based routing can be used to route the player to the closest available game backend.
 
 1.  The game backend is deployed in multiple AWS Regions closest to player populations. Each game backend includes a Regional matchmaking service that finds a game session from across the game Regions. Although a player's matchmaking request is processed by a Regional matchmaking service near them, the matchmaking service is capable of routing a player to a game session in another game Region, if necessary. This action improves resiliency and performance. Additionally, each game backend service uses AWS WAF and AWS Shield Advanced to provide layer-7 web filtering and bot control, and protections against distribution denial of service (DDoS) attacks. You have many options for how you build your game backend service, such as serverless, containers, EC2 instances, or hosting the game backend service in your own data centers.

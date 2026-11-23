@@ -10,13 +10,13 @@ For more information about using the AWS CLI with CodeBuild, see the [Command li
 
 1. Run the `start-build` command in one of the following ways:
 
-   ```
+   ```shell
    aws codebuild start-build --project-name {{<project-name>}}
    ```
 
    Use this if you want to run a build that uses the latest version of the build input artifact and the build project's existing settings.
 
-   ```
+   ```shell
    aws codebuild start-build --generate-cli-skeleton
    ```
 
@@ -28,7 +28,7 @@ For more information about using the AWS CLI with CodeBuild, see the [Command li
 
 1. If you run the **start-build** command with the `--generate-cli-skeleton` option, JSON-formatted data appears in the output. Copy the data to a file (for example, `{{start-build.json}}`) in a location on the local computer or instance where the AWS CLI is installed. Modify the copied data to match the following format, and save your results:
 
-   ```
+   ```json
    {
      "projectName": "{{projectName}}",
      "sourceVersion": "{{sourceVersion}}",
@@ -122,7 +122,7 @@ For more information about using the AWS CLI with CodeBuild, see the [Command li
 
 1. Switch to the directory that contains the file you just saved, and run the `start-build` command again.
 
-   ```
+   ```shell
    aws codebuild start-build --cli-input-json file://start-build.json
    ```
 

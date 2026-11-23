@@ -39,7 +39,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iam_create_user_assume_role
 #
@@ -272,7 +272,7 @@ function iam_create_user_assume_role() {
 ```
 The IAM functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function iam_user_exists
 #
@@ -1077,7 +1077,7 @@ The following code example shows how to use `AttachRolePolicy`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -1170,7 +1170,7 @@ The following code example shows how to use `CreateAccessKey`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -1269,7 +1269,7 @@ The following code example shows how to use `CreatePolicy`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -1362,7 +1362,7 @@ The following code example shows how to use `CreateRole`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -1459,7 +1459,7 @@ The following code example shows how to use `CreateUser`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1568,7 +1568,7 @@ The following code example shows how to use `DeleteAccessKey`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -1667,7 +1667,7 @@ The following code example shows how to use `DeletePolicy`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1767,7 +1767,7 @@ The following code example shows how to use `DeleteRole`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1868,7 +1868,7 @@ The following code example shows how to use `DeleteUser`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -1974,7 +1974,7 @@ The following code example shows how to use `DetachRolePolicy`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2067,7 +2067,7 @@ The following code example shows how to use `GetUser`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2124,7 +2124,7 @@ The following code example shows how to use `ListAccessKeys`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2211,7 +2211,7 @@ The following code example shows how to use `ListUsers`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -2286,7 +2286,7 @@ The following code example shows how to use `UpdateAccessKey`.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iam_update_access_key
 #
@@ -2422,7 +2422,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/085-amazon-ecs-service-connect) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS Service Connect Tutorial Script v4 - Modified to use Default VPC
@@ -3068,7 +3068,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/086-amazon-ecs-fargate-linux) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon ECS Fargate Tutorial Script - Version 5
@@ -3660,7 +3660,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/087-apigateway-lambda-integration) repository.
 
-```
+```bash
 #!/bin/bash
 
 set -euo pipefail
@@ -3981,7 +3981,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/018-ecs-ec2) repository.
 
-```
+```bash
 #!/bin/bash
 
 # ECS EC2 Launch Type Tutorial Script - UPDATED VERSION
@@ -4668,7 +4668,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/044-amazon-managed-grafana-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Managed Grafana Workspace Creation Script
@@ -4983,7 +4983,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/031-cloudwatch-dynamicdash) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to create a CloudWatch dashboard with Lambda function name as a variable
@@ -5395,7 +5395,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/019-lambda-gettingstarted) repository.
 
-```
+```bash
 #!/bin/bash
 # AWS Lambda - Create Your First Function
 # This script creates a Lambda function, invokes it with a test event,
@@ -5879,7 +5879,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/038-redshift-serverless) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Redshift Serverless Tutorial Script with Secrets Manager (No jq dependency)
@@ -6563,7 +6563,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/053-aws-config-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Config Setup Script (v2)
@@ -7002,7 +7002,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/079-aws-iot-device-defender-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS IoT Device Defender Getting Started Script
@@ -7824,7 +7824,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/028-sagemaker-featurestore) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon SageMaker Feature Store Tutorial Script - Version 3
@@ -8382,7 +8382,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/034-eks-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon EKS Cluster Creation Script (v2)
@@ -8854,7 +8854,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/057-amazon-managed-streaming-for-apache-kafka-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon MSK Getting Started Tutorial Script - Version 8
@@ -9884,7 +9884,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/039-redshift-provisioned) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Amazon Redshift Provisioned Cluster Tutorial Script
@@ -10305,7 +10305,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/080-aws-step-functions-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Step Functions Getting Started Tutorial Script
@@ -11165,7 +11165,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/073-aws-secrets-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to move hardcoded secrets to AWS Secrets Manager
@@ -11496,7 +11496,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/069-aws-fault-injection-service-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS FIS CPU Stress Test Tutorial Script
@@ -12102,7 +12102,7 @@ The following code example shows how to implement Attribute-Based Access Control
 **AWS CLI with Bash script**
 Create an IAM policy for ABAC.
 
-```
+```bash
 # Step 1: Create a policy document for ABAC
 cat > abac-policy.json << 'EOF'
 {
@@ -12150,7 +12150,7 @@ aws iam create-policy \
 ```
 Create tables with tags for different departments.
 
-```
+```bash
 # Create a DynamoDB table with tags for ABAC
 aws dynamodb create-table \
     --table-name FinanceData \
@@ -12177,7 +12177,7 @@ aws dynamodb create-table \
 ```
 List and filter tables based on tags.
 
-```
+```bash
 # List all DynamoDB tables
 echo "Listing all tables:"
 aws dynamodb list-tables
@@ -12222,7 +12222,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/046-aws-systems-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # AWS Systems Manager Setup Script
@@ -12807,7 +12807,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/032-cloudwatch-streams) repository.
 
-```
+```bash
 #!/bin/bash
 
 # CloudWatch Dashboard with Lambda Function Variable Script
@@ -13149,7 +13149,7 @@ The following code example shows how to manage DynamoDB Streams and Time-to-Live
 **AWS CLI with Bash script**
 Create a table with Streams enabled.
 
-```
+```bash
 # Create a table with DynamoDB Streams enabled
 aws dynamodb create-table \
     --table-name StreamsDemo \
@@ -13162,7 +13162,7 @@ aws dynamodb create-table \
 ```
 Describe Streams.
 
-```
+```bash
 # Get information about the stream
 aws dynamodb describe-table \
     --table-name StreamsDemo \
@@ -13182,7 +13182,7 @@ aws dynamodbstreams describe-stream \
 ```
 Create a Lambda function for Streams.
 
-```
+```bash
 # Step 1: Create an IAM role for the Lambda function
 cat > trust-policy.json << 'EOF'
 {
@@ -13221,7 +13221,7 @@ echo "    --starting-position LATEST"
 ```
 Enable TTL on a table.
 
-```
+```bash
 # Create a table for TTL demonstration
 aws dynamodb create-table \
     --table-name TTLDemo \
@@ -13241,7 +13241,7 @@ aws dynamodb update-time-to-live \
 ```
 Add items with TTL attributes.
 
-```
+```bash
 # Calculate expiration time (current time + 1 day in seconds)
 EXPIRATION_TIME=$(date -d "+1 day" +%s)
 
@@ -13266,7 +13266,7 @@ aws dynamodb put-item \
 ```
 Describe TTL settings.
 
-```
+```bash
 # Describe TTL settings for a table
 aws dynamodb describe-time-to-live \
     --table-name TTLDemo

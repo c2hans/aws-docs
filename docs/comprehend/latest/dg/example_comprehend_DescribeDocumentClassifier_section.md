@@ -66,7 +66,7 @@ For more information, see [Creating and managing custom models](https://docs.aws
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
 
-```
+```python
 class ComprehendClassifier:
     """Encapsulates an Amazon Comprehend custom classifier."""
 
@@ -106,7 +106,7 @@ class ComprehendClassifier:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cpd->describedocumentclassifier(
           iv_documentclassifierarn = iv_classifier_arn

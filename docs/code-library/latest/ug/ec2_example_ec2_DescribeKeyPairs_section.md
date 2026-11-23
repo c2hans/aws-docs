@@ -19,7 +19,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information about an Amazon EC2 key pair.
     /// </summary>
@@ -67,7 +67,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_describe_key_pairs
 #
@@ -124,7 +124,7 @@ function ec2_describe_key_pairs() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -176,7 +176,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) instance key pairs.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -246,7 +246,7 @@ For more information, see [Describe public keys](https://docs.aws.amazon.com/AWS
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Asynchronously describes the key pairs associated with the current AWS account.
      *
@@ -272,7 +272,7 @@ For more information, see [Describe public keys](https://docs.aws.amazon.com/AWS
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeKeyPairsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -307,7 +307,7 @@ export const main = async ({ dryRun }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun describeEC2Keys() {
     Ec2Client.fromEnvironment { region = "us-west-2" }.use { ec2 ->
         val response = ec2.describeKeyPairs(DescribeKeyPairsRequest {})
@@ -325,7 +325,7 @@ suspend fun describeEC2Keys() {
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified key pair.**
 
-```
+```powershell
 Get-EC2KeyPair -KeyName my-key-pair
 ```
 **Output:**
@@ -337,7 +337,7 @@ KeyFingerprint                                              KeyName
 ```
 **Example 2: This example describes all your key pairs.**
 
-```
+```powershell
 Get-EC2KeyPair
 ```
 +  For API details, see [DescribeKeyPairs](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -345,7 +345,7 @@ Get-EC2KeyPair
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified key pair.**
 
-```
+```powershell
 Get-EC2KeyPair -KeyName my-key-pair
 ```
 **Output:**
@@ -357,7 +357,7 @@ KeyFingerprint                                              KeyName
 ```
 **Example 2: This example describes all your key pairs.**
 
-```
+```powershell
 Get-EC2KeyPair
 ```
 +  For API details, see [DescribeKeyPairs](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -368,7 +368,7 @@ Get-EC2KeyPair
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class KeyPairWrapper:
     """
     Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) key pair actions.
@@ -442,7 +442,7 @@ class KeyPairWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
     pub async fn list_key_pair(&self) -> Result<Vec<KeyPairInfo>, EC2Error> {
         let output = self.client.describe_key_pairs().send().await?;
         Ok(output.key_pairs.unwrap_or_default())
@@ -456,7 +456,7 @@ class KeyPairWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describekeypairs( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_key_pairs) = oo_result->get_keypairs( ).
@@ -474,7 +474,7 @@ class KeyPairWrapper:
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Describe the key pairs associated with the user by outputting each key

@@ -69,7 +69,7 @@ When you run `sam local start-lambda`, the AWS SAM CLI assumes that your curren
 
    The following is an example using the AWS SDK for Python:
 
-   ```
+   ```python
    import boto3
    from botocore.config import Config
    from botocore import UNSIGNED

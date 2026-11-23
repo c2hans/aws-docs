@@ -34,7 +34,7 @@ Required: No
 The coverage metrics to include in the results.
 Valid value for SavingsPlansCoverageQuery metrics is `SpendCoveredBySavingsPlans`.
 Type: Array of strings
-Valid Values: `AmortizedCost | BlendedCost | NetAmortizedCost | NetUnblendedCost | NormalizedUsageAmount | UnblendedCost | UsageQuantity | SpendCoveredBySavingsPlans | Hour | Unit | Cost`
+Valid Values: `AmortizedCost | BlendedCost | NetAmortizedCost | NetUnblendedCost | NormalizedUsageAmount | UnblendedCost | ListCost | ContractedCost | BilledCost | PublicEquivalentBilledCost | PublicOnDemandCost | UsageQuantity | SpendCoveredBySavingsPlans | Hour | Unit | Cost`
 Required: No
 
 ## See Also

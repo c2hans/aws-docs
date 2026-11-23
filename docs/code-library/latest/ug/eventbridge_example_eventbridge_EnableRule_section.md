@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Enable a rule by its rule name.
 
-```
+```csharp
     /// <summary>
     /// Enable a particular rule on an event bus.
     /// </summary>
@@ -58,7 +58,7 @@ For more information, see [Rules in Amazon EventBridge](https://docs.aws.amazon.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 Enable a rule by using its rule name.
 
-```
+```java
     public static void changeRuleState(EventBridgeClient eventBrClient, String eventRuleName, Boolean isEnabled) {
         try {
             if (!isEnabled) {
@@ -90,7 +90,7 @@ Enable a rule by using its rule name.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun changeRuleState(
     eventRuleName: String,
     isEnabled: Boolean?,

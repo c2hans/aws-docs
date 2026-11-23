@@ -29,7 +29,7 @@ Follow these steps to set up your AWS Glue environment to use security configura
 
    In the following example, {{"role1"}}, {{"role2"}}, and {{"role3"}} are IAM roles that are passed to crawlers and jobs.
 
-   ```
+   ```json
    {
           "Effect": "Allow",
           "Principal": { "Service": "logs.{{region}}.amazonaws.com",

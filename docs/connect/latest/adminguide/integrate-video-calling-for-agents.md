@@ -22,7 +22,7 @@ Complete the following steps to add support for video handling when your custome
 
 1. To check whether a contact has video capability:
 
-   ```
+   ```json
    // Return true if any connection has video send capability
    contact.hasVideoRTCCapabilities()
 
@@ -39,7 +39,7 @@ Complete the following steps to add support for video handling when your custome
 
 1. To accept a video call, the contact must have video capability and the agent must have video permission.
 
-   ```
+   ```json
    function shouldRenderVideoUI() {
        return contact.getContactSubtype() === "connect:WebRTC" &&
        contact.hasVideoRTCCapabilities() &&
@@ -49,7 +49,7 @@ Complete the following steps to add support for video handling when your custome
 
 1. To join a video session, call `getVideoConnectionInfo`:
 
-   ```
+   ```json
    if (shouldRenderVideoUI()) {
       const response = await
       contact.getAgentConnection().getVideoConnectionInfo();
@@ -62,7 +62,7 @@ Complete the following steps to add support for video handling when your custome
 
 1. For simplicity, the following code snippets use examples from the Amazon Chime SDK React Components Library.
 
-   ```
+   ```json
    import { MeetingSessionConfiguration } from "amazon-chime-sdk-js";
    import {
      useMeetingStatus,
@@ -98,7 +98,7 @@ Complete the following steps to add support for video handling when your custome
 
 1. To render a video preview, you can use [VideoPreview](https://aws.github.io/amazon-chime-sdk-component-library-react/?path=/docs/sdk-components-previewvideo--page) and [CameraSelection](https://aws.github.io/amazon-chime-sdk-component-library-react/?path=/docs/sdk-components-deviceselection-camera-cameraselection--page) components. To choose or change a camera video, you can use `meetingManager.selectVideoInputDevice` or `meetingManager.startVideoInput `if the meeting is in progress.
 
-   ```
+   ```json
    const meetingManager = useMeetingManager();
    const { isVideoEnabled } = useLocalVideo();
    if (isVideoEnabled) {
@@ -123,7 +123,7 @@ Complete the following steps to enable screen sharing on your custom agent appli
 
 1. Check whether a contact has screen sharing capability.
 
-   ```
+   ```json
    // Return true if any connection has screen sharing send capability
    contact.hasScreenShareCapability()
 
@@ -136,13 +136,13 @@ Complete the following steps to enable screen sharing on your custom agent appli
 
 1. Check whether the agent has video permission.
 
-   ```
+   ```json
    agent.getPermissions().includes('videoContact');
    ```
 
 1. Check whether the agent can initiate a screen sharing session for the eligible contact.
 
-   ```
+   ```json
    fun canStartScreenSharingSession() {
        return contactgetContactSubtype() === "connect:WebRTC" &&
        contact.hasScreenShareCapability() &&
@@ -152,13 +152,13 @@ Complete the following steps to enable screen sharing on your custom agent appli
 
 1. Call `startScreenSharing` to initiate the screen sharing session. This adds `ScreenSharingActivated` to the contact, enabling you to search for it in the [contact record](ctr-data-model.md).
 
-   ```
+   ```json
    contact.startScreenSharing();
    ```
 
 1. Call `getVideoConnectionInfo` to join the session. You can skip the step if the agent has joined the video session to handle video.
 
-   ```
+   ```json
    if (canStartScreenSharingSession) {
        contact.startScreenSharing();
        const response = await
@@ -172,13 +172,13 @@ Complete the following steps to enable screen sharing on your custom agent appli
 
 1. Call `stopScreenSharing` when end the session.
 
-   ```
+   ```json
    contact.stopScreenSharing();
    ```
 
 1. You can receive events for the screen sharing activity by subscribing the following callbacks:
 
-   ```
+   ```json
    initScreenSharingListeners() {
        this.contact.onScreenSharingStarted(() => {
            // Screen sharing session started

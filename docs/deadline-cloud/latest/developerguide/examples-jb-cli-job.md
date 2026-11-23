@@ -8,7 +8,7 @@ The [cli\_job](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainl
 
 Submit the bundle with a data directory:
 
-```
+```bash
 deadline bundle submit job_bundles/cli_job -p DataDir={{~/data_dir}}
 ```
 

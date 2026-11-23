@@ -90,7 +90,7 @@ The following example Lambda resource-based policy grants Amazon Cognito a limit
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "default",
@@ -151,7 +151,7 @@ Amazon Cognito passes event information to your Lambda function. The Lambda func
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "version": "{{string}}",
     "triggerSource": "{{string}}",
@@ -226,7 +226,7 @@ Here is an example of passing client metadata to the pre sign-up trigger.
 
 The following is an example [SignUp](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html#CognitoUserPools-SignUp-request-ValidationData) request with client metadata that Amazon Cognito passes to a pre sign-up trigger.
 
-```
+```http
 POST HTTP/1.1
 Host: cognito-idp.us-east-1.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -267,7 +267,7 @@ Content-Length: <PayloadSizeBytes>
 
 The request results in the following request body to your pre sign-up function.
 
-```
+```json
 {
     "callerContext": {
         "awsSdkVersion": "aws-sdk-unknown-unknown",

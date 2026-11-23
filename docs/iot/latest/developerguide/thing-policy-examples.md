@@ -8,7 +8,7 @@ The following policy allows a device to connect if the certificate used to authe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -30,7 +30,7 @@ The following policy allows a device to publish if the certificate is attached t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -58,7 +58,7 @@ The following policy allows a device to publish to a topic that starts with an a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

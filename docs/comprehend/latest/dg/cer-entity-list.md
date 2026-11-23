@@ -45,7 +45,7 @@ We highly recommended that CSV input files are generated programmatically to avo
 
 The following example uses Python to generate a CSV for the annotations shown above:
 
-```
+```python
 import csv
 with open("./entitylist/entitylist.csv", "w", encoding="utf-8") as csv_file:
     csv_writer = csv.writer(csv_file)

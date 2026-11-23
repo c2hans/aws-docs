@@ -16,6 +16,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
 ![Figure showing data processing components](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/data-processing-components.png)
 
+*Figure 6: Data processing components*
+
 **Topics**
 + [Data collection](data-collection.md)
 + [Data preparation](data-preparation.md)

@@ -13,7 +13,7 @@ For example, consider a scenario where you create a Firehose stream that deliver
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

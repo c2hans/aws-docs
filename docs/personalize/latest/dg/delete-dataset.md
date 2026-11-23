@@ -43,7 +43,7 @@ To delete a dataset with the Amazon Personalize console, navigate to the dataset
 
 The following code shows how to delete a dataset with the AWS CLI and the [DeleteDataset](API_DeleteDataset.md) operation.
 
-```
+```json
 aws personalize delete-dataset --dataset-arn {{dataset-arn}}
 ```
 
@@ -55,7 +55,7 @@ The following code shows how to delete a dataset with the AWS SDKs and the [Dele
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -68,7 +68,7 @@ response = personalize.delete_dataset(
 ------
 #### [ SDK for Java 2.x ]
 
-```
+```java
 public static void deleteDataset(PersonalizeClient personalizeClient,
                                  String datasetArn) {
 

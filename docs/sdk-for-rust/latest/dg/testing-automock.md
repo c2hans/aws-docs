@@ -10,7 +10,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
 
 1. In a command prompt for your project directory, add the `[mockall](https://docs.rs/mockall/latest/mockall)` crate as a dependency:
 
-   ```
+   ```sh
    $ cargo add --dev mockall
    ```
 
@@ -18,7 +18,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
 
    This example code also use Amazon Simple Storage Service as the example AWS service.
 
-   ```
+   ```sh
    $ cargo add aws-sdk-s3
    ```
 
@@ -28,7 +28,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
 
    Also include any other libraries related to the AWS service that you are testing, in this case, Amazon S3.
 
-   ```
+   ```rust
    use aws_sdk_s3 as s3;
    #[allow(unused_imports)]
    use mockall::automock;
@@ -42,7 +42,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
 
    In this example, the one that's selected is given the name `S3`. The selection is conditional based on the `test` attribute:
 
-   ```
+   ```rust
    #[cfg(test)]
    pub use MockS3Impl as S3;
    #[cfg(not(test))]
@@ -54,7 +54,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
    +  The conditional `#[cfg_attr(test, automock)]` indicates that when testing is enabled, the `automock` attribute should be set. This tells `mockall` to generate a mock of `S3Impl` that will be named `Mock{{S3Impl}}`.
    + In this example, the `list_objects()` method is the call you want mocked. `automock` will automatically create an `expect_{{list_objects()}}` method for you.
 
-   ```
+   ```rust
    #[allow(dead_code)]
    pub struct S3Impl {
        inner: s3::Client,
@@ -88,7 +88,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
 1. Create the test functions in a module named `test`.
    + The conditional `#[cfg(test)]` indicates that `mockall` should build the test module if the `test` attribute is `true`.
 
-   ```
+   ```rust
    #[cfg(test)]
    mod test {
        use super::*;
@@ -165,7 +165,7 @@ This example tests a custom method called `determine_prefix_file_size()`. This m
 
 1. The `determine_prefix_file_size()` function uses the Amazon S3 wrapper to get the size of the prefix file:
 
-   ```
+   ```rust
    #[allow(dead_code)]
    pub async fn determine_prefix_file_size(
        // Now we take a reference to our trait object instead of the S3 client

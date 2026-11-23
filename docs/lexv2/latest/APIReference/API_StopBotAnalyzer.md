@@ -117,7 +117,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of StopBotAnalyzer.
 
-```
+```json
 PUT https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/<RequestId>/stop/
 ```
 
@@ -126,7 +126,7 @@ PUT https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/<Requ
 
 This example illustrates one usage of StopBotAnalyzer.
 
-```
+```json
 {
     "botId": "<BotId>",
     "botVersion": "DRAFT",

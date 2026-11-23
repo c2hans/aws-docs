@@ -19,7 +19,7 @@ Before you can use S3 Express One Zone with AWS Glue, you must have the followin
 
 Add the following permission to your AWS Glue job's IAM role to allow access to S3 Express One Zone directory buckets:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ AWS Glue version 5.1\+ supports accessing S3 Express One Zone directory buckets 
 
 The following example shows how to read and write data from an S3 Express One Zone directory bucket in a AWS Glue ETL job:
 
-```
+```python
 import sys
 from pyspark.context import SparkContext
 from awsglue.context import GlueContext
@@ -62,7 +62,7 @@ df.write.mode("overwrite").parquet(express_path + "output/")
 
 You can also use DynamicFrames with S3 Express One Zone:
 
-```
+```python
 # Read with DynamicFrame
 dynamicFrame = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",

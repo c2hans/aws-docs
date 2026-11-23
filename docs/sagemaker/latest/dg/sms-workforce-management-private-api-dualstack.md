@@ -22,7 +22,7 @@ The process for creating a dual-stack workforce is similar to creating an IPv4-o
 
 For more information, see [create\_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/create_workforce.html#SageMaker.Client.create_workforce).
 
-```
+```python
 import boto3
 
 client = boto3.resource('sagemaker')
@@ -53,7 +53,7 @@ When updating an existing workforce to be dual-stack, note the following. For mo
 
 For more information, see [update\_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/update_workforce.html#SageMaker.Client.update_workforce).
 
-```
+```python
 import boto3
 
 client = boto3.resource('sagemaker')

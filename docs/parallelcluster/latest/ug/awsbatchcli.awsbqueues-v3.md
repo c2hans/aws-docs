@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Shows the job queue that is associated with the cluster.
 
-```
+```sh
 awsbqueues [-h] [-c {{CLUSTER}}] [-d] [{{job_queues}} [{{job_queues}} ... ]]
 ```
 

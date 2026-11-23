@@ -20,6 +20,8 @@ Your workload first requests a token from AWS STS in the source partition, then 
 
 <a name="cross-partition-flow-diagram"></a>![Source STS issues a token; destination STS validates it and returns credentials the workload uses to access resources.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/outbound-cross-partition-flow.png)
 
+The numbered steps that follow describe each request and response in the diagram.
+
 The flow works as follows:
 
 1. **Token request**: Your workload, running in an AWS Region in the source partition (for example, `us-east-1` in the `aws` partition), calls the `sts:GetWebIdentityToken` API.

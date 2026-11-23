@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! Request an AWS Certificate Manager (ACM) certificate.
 /*!
   \param domainName: A fully qualified domain name.
@@ -144,7 +144,7 @@ For more information, see [AWS Certificate Manager public certificates](https://
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/acm#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -190,7 +190,7 @@ public class RequestCert {
 **Tools for PowerShell V4**
 **Example 1: Creates a new certificate. The service returns the ARN of the new certificate.**
 
-```
+```powershell
 New-ACMCertificate -DomainName "www.example.com"
 ```
 **Output:**
@@ -200,7 +200,7 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 ```
 **Example 2: Creates a new certificate. The service returns the ARN of the new certificate.**
 
-```
+```powershell
 New-ACMCertificate -DomainName "www.example.com" -SubjectAlternativeName "example.com","www.example.net"
 ```
 **Output:**
@@ -213,7 +213,7 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 **Tools for PowerShell V5**
 **Example 1: Creates a new certificate. The service returns the ARN of the new certificate.**
 
-```
+```powershell
 New-ACMCertificate -DomainName "www.example.com"
 ```
 **Output:**
@@ -223,7 +223,7 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 ```
 **Example 2: Creates a new certificate. The service returns the ARN of the new certificate.**
 
-```
+```powershell
 New-ACMCertificate -DomainName "www.example.com" -SubjectAlternativeName "example.com","www.example.net"
 ```
 **Output:**
@@ -239,7 +239,7 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -307,7 +307,7 @@ class AcmCertificate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_domain_name = 'example.com'
         " iv_validation_method = 'DNS' or 'EMAIL'

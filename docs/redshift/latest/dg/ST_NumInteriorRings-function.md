@@ -35,7 +35,7 @@ If *geom* is not a polygon, then null is returned.
 
 The following SQL returns the number of interior rings in the input polygon.
 
-```
+```sql
 SELECT ST_NumInteriorRings(ST_GeomFromText('POLYGON((0 0,100 0,100 100,0 100,0 0),(1 1,1 5,5 1,1 1),(7 7,7 8,8 7,7 7))'));
 ```
 

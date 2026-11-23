@@ -16,7 +16,7 @@ The value of `aws:SourceArn` must be cluster.
 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in Amazon DocumentDB to prevent the confused deputy problem.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": {

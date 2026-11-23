@@ -23,7 +23,7 @@ You upload objects to Amazon S3 with the SDK for Swift by using the [`putObject(
 
 The following code snippet shows a request to upload an object with a `SHA256` checksum. When the SDK sends the request, it calculates the `SHA256` checksum and uploads the object. Amazon S3 stores the checksum with the object.
 
-```
+```swift
 let output = try await s3Client.putObject(
     input: PutObjectInput(
         body: dataStream,
@@ -50,7 +50,7 @@ A pre-calculated checksum value provided with the request disables automatic com
 
 The following example shows a request with a pre-calculated SHA256 checksum.
 
-```
+```swift
 let output = try await s3Client.putObject(
     input: PutObjectInput(
         body: dataStream,
@@ -71,7 +71,7 @@ You can also use checksums with multipart uploads.
 
  You must specify the checksum algorithm when calling `createMultipartUpload(input:)`, as well as in each call to `uploadPart(input:)`. Also, each part's returned checksum must be included in the list of completed parts passed into `completeMultipartUpload(input:)`.
 
-```
+```swift
     /// Upload a file to Amazon S3.
     ///
     /// - Parameters:
@@ -210,7 +210,7 @@ When you use the [`getObject(input:)`](https://sdk.amazonaws.com/swift/api/awss3
 
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 
-```
+```swift
 let output = GetObject(
     input: GetObjectInput(
         bucket: "{{amzn-s3-demo-bucket}}",

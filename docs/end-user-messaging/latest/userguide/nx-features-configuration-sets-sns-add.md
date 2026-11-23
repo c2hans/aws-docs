@@ -44,7 +44,7 @@ To create an Amazon SNS event destination using the AWS End User Messaging conso
 
 You can use the [create-event-destination](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/create-event-destination.html) command to create an event destination.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 create-event-destination \
 > --event-destination-name {{eventDestinationName}} \
 > --configuration-set-name {{configurationSet}} \

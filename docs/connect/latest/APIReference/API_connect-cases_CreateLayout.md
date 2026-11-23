@@ -129,7 +129,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateLayout.
 
-```
+```json
 {
   "content": {
     "basic": {
@@ -171,7 +171,7 @@ This example illustrates one usage of CreateLayout.
 }
 ```
 
-```
+```json
 {
   "layoutArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/layout/[layout_id]",
   "layoutId": "[layout_id]"

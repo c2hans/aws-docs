@@ -89,28 +89,38 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 The request was denied due to insufficient permissions.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason for the access denial.
 HTTP Status Code: 403
 
  ** ConflictException **
 The request could not be completed due to a conflict with the current state of the resource.
+ ** Message **
+A message that describes the conflict.
  ** Reason **
 The reason for the conflict.
 HTTP Status Code: 409
 
  ** InternalServerException **
 An internal server error occurred. Retry your request.
+ ** Message **
+A message that describes the internal server error.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
 The specified resource was not found.
+ ** Message **
+A message that describes which resource was not found.
  ** Reason **
 The reason the resource was not found.
 HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was throttled due to too many requests. Retry your request.
+ ** Message **
+A message that indicates the request rate limit was exceeded.
  ** QuotaCode **
 The quota code associated with the throttling error.
  ** ServiceCode **
@@ -121,6 +131,8 @@ HTTP Status Code: 429
 The request failed validation due to invalid input parameters.
  ** FieldList **
 A list of fields that failed validation.
+ ** Message **
+A message that describes the validation failure.
  ** Reason **
 The reason for the validation failure.
 HTTP Status Code: 400

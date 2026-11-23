@@ -137,7 +137,7 @@ HTTP Status Code: 429
 
 The following request and response example shows setting the proficiency on an attribute named Name1.
 
-```
+```json
 PUT https://connect.us-west-2.amazonaws.com/predefined-attributes/InstanceId HTTP/1.1
 Content-type: application/json
 {

@@ -103,7 +103,7 @@ The gateway exposes health and readiness endpoints on port `8088`:
 
 You can query these endpoints manually for diagnostics by running a temporary debug container or by port-forwarding:
 
-```
+```bash
 kubectl port-forward -n eks-hybrid-nodes-gateway {{POD_NAME}} 8088:8088 &
 curl -s http://localhost:8088/healthz
 curl -s http://localhost:8088/readyz

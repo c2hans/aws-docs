@@ -27,7 +27,7 @@ The following code example shows how to use `SendMessages`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/pinpoint#code-examples).
 Send an email message.
 
-```
+```javascript
 "use strict";
 
 const AWS = require("aws-sdk");
@@ -131,7 +131,7 @@ pinpoint.sendMessages(params, function (err, data) {
 ```
 Send an SMS message.
 
-```
+```javascript
 "use strict";
 
 var AWS = require("aws-sdk");

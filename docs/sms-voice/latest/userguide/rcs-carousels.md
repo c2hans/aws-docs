@@ -120,7 +120,7 @@ The `TALL` media height is not supported in carousel cards. For tall media, use 
 
 The following JSON shows the structure of the `RcsMessageContent` parameter for a carousel message:
 
-```
+```json
 {
   "Content": {
     "Carousel": {

@@ -26,7 +26,7 @@ The following code example shows how to use `AllocateAddress`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->allocateaddress( iv_domain = 'vpc' ).   " oo_result is returned for testing purposes. "
         MESSAGE 'Allocated an Elastic IP address.' TYPE 'I'.
@@ -45,7 +45,7 @@ The following code example shows how to use `AssociateAddress`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->associateaddress(                         " oo_result is returned for testing purposes. "
             iv_allocationid = iv_allocation_id
@@ -66,7 +66,7 @@ The following code example shows how to use `AuthorizeSecurityGroupIngress`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " Create IP permissions for SSH access (port 22)
     " iv_cidr_ip = '192.0.2.0/24'
     DATA lt_ip_permissions TYPE /aws1/cl_ec2ippermission=>tt_ippermissionlist.
@@ -100,7 +100,7 @@ The following code example shows how to use `CreateKeyPair`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->createkeypair( iv_keyname = iv_key_name ).                            " oo_result is returned for testing purposes. "
         MESSAGE 'Amazon EC2 key pair created.' TYPE 'I'.
@@ -119,7 +119,7 @@ The following code example shows how to use `CreateSecurityGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->createsecuritygroup(                 " oo_result is returned for testing purposes. "
           iv_description = 'Security group example'
@@ -141,7 +141,7 @@ The following code example shows how to use `CreateVpc`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " iv_cidr_block = '10.0.0.0/16'
     TRY.
         oo_result = lo_ec2->createvpc( iv_cidrblock = iv_cidr_block ).             " oo_result is returned for testing purposes. "
@@ -162,7 +162,7 @@ The following code example shows how to use `CreateVpcEndpoint`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " iv_vpc_id = 'vpc-abc123'
     " iv_service_name = 'com.amazonaws.region.service'
     TRY.
@@ -187,7 +187,7 @@ The following code example shows how to use `DeleteKeyPair`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->deletekeypair( iv_keyname = iv_key_name ).
         MESSAGE 'Amazon EC2 key pair deleted.' TYPE 'I'.
@@ -206,7 +206,7 @@ The following code example shows how to use `DeleteSecurityGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->deletesecuritygroup( iv_groupid = iv_security_group_id ).
         MESSAGE 'Security group deleted.' TYPE 'I'.
@@ -225,7 +225,7 @@ The following code example shows how to use `DeleteVpc`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->deletevpc( iv_vpcid = iv_vpc_id ).
         MESSAGE 'Deleted VPC.' TYPE 'I'.
@@ -244,7 +244,7 @@ The following code example shows how to use `DeleteVpcEndpoints`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->deletevpcendpoints( it_vpcendpointids = it_vpc_endpoint_ids ).
         MESSAGE 'Deleted VPC endpoint(s).' TYPE 'I'.
@@ -263,7 +263,7 @@ The following code example shows how to use `DescribeAddresses`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeaddresses( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_addresses) = oo_result->get_addresses( ).
@@ -283,7 +283,7 @@ The following code example shows how to use `DescribeAvailabilityZones`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeavailabilityzones( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_zones) = oo_result->get_availabilityzones( ).
@@ -304,7 +304,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeimages( it_imageids = it_image_ids ).             " oo_result is returned for testing purposes. "
         DATA(lt_images) = oo_result->get_images( ).
@@ -324,7 +324,7 @@ The following code example shows how to use `DescribeInstanceTypes`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " Create filters for architecture and instance type patterns
     " iv_architecture = 'x86_64'
     DATA lt_filters TYPE /aws1/cl_ec2filter=>tt_filterlist.
@@ -362,7 +362,7 @@ The following code example shows how to use `DescribeInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeinstances( ).                        " oo_result is returned for testing purposes. "
 
@@ -395,7 +395,7 @@ The following code example shows how to use `DescribeKeyPairs`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describekeypairs( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_key_pairs) = oo_result->get_keypairs( ).
@@ -415,7 +415,7 @@ The following code example shows how to use `DescribeRegions`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeregions( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_regions) = oo_result->get_regions( ).
@@ -435,7 +435,7 @@ The following code example shows how to use `DescribeRouteTables`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " Create filter for VPC ID
     " iv_vpc_id = 'vpc-abc123'
     DATA lt_filters TYPE /aws1/cl_ec2filter=>tt_filterlist.
@@ -465,7 +465,7 @@ The following code example shows how to use `DescribeSecurityGroups`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA lt_group_ids TYPE /aws1/cl_ec2groupidstrlist_w=>tt_groupidstringlist.
         APPEND NEW /aws1/cl_ec2groupidstrlist_w( iv_value = iv_group_id ) TO lt_group_ids.
@@ -487,7 +487,7 @@ The following code example shows how to use `MonitorInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     DATA lt_instance_ids TYPE /aws1/cl_ec2instidstringlist_w=>tt_instanceidstringlist.
     APPEND NEW /aws1/cl_ec2instidstringlist_w( iv_value = iv_instance_id ) TO lt_instance_ids.
 
@@ -525,7 +525,7 @@ The following code example shows how to use `RebootInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     DATA lt_instance_ids TYPE /aws1/cl_ec2instidstringlist_w=>tt_instanceidstringlist.
     APPEND NEW /aws1/cl_ec2instidstringlist_w( iv_value = iv_instance_id ) TO lt_instance_ids.
 
@@ -563,7 +563,7 @@ The following code example shows how to use `ReleaseAddress`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->releaseaddress( iv_allocationid = iv_allocation_id ).
         MESSAGE 'Elastic IP address released.' TYPE 'I'.
@@ -582,7 +582,7 @@ The following code example shows how to use `RunInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     " Create tags for resource created during instance launch. "
     DATA lt_tagspecifications TYPE /aws1/cl_ec2tagspecification=>tt_tagspecificationlist.
     DATA ls_tagspecifications LIKE LINE OF lt_tagspecifications.
@@ -618,7 +618,7 @@ The following code example shows how to use `StartInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     DATA lt_instance_ids TYPE /aws1/cl_ec2instidstringlist_w=>tt_instanceidstringlist.
     APPEND NEW /aws1/cl_ec2instidstringlist_w( iv_value = iv_instance_id ) TO lt_instance_ids.
 
@@ -656,7 +656,7 @@ The following code example shows how to use `StopInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     DATA lt_instance_ids TYPE /aws1/cl_ec2instidstringlist_w=>tt_instanceidstringlist.
     APPEND NEW /aws1/cl_ec2instidstringlist_w( iv_value = iv_instance_id ) TO lt_instance_ids.
 

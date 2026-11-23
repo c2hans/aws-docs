@@ -17,7 +17,7 @@ Complete these prerequisites before configuring CloudWatch alarm monitoring:
 
 The following example shows a minimal IAM policy that grants the required permissions for CloudWatch alarm monitoring:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -66,7 +66,7 @@ The `--alarm-configuration` parameter accepts a JSON structure with the followin
 
 The following example starts an automation that monitors a CloudWatch alarm named `my-alarm`. Because `IgnorePollAlarmFailure` is set to `false`, the automation stops if it cannot retrieve the alarm state:
 
-```
+```bash
 aws ssm start-automation-execution \
     --document-name "AWS-RestartEC2Instance" \
     --parameters '{"InstanceId":["i-02573cafcfEXAMPLE"]}' \

@@ -13,6 +13,7 @@ Depending on your setting for max results and the number of firewalls, a single 
 
 ```
 {
+   "FirewallType": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "VpcIds": [ "{{string}}" ]
@@ -25,6 +26,15 @@ Depending on your setting for max results and the number of firewalls, a single 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [FirewallType](#API_ListFirewalls_RequestSyntax) **   <a name="networkfirewall-ListFirewalls-request-FirewallType"></a>
+Specifies the firewall type to filter the results by. You can specify one of the following values:
++  `IGW_FIREWALL` - Returns only internet gateway firewalls, which AWS Network Security Manager creates and manages for your VPCs.
++  `FIREWALL` - Returns only standard Network Firewall firewalls.
+If you don't specify a type, the default is to return firewalls of both types.
+Type: String
+Valid Values: `FIREWALL | IGW_FIREWALL`
+Required: No
 
  ** [MaxResults](#API_ListFirewalls_RequestSyntax) **   <a name="networkfirewall-ListFirewalls-request-MaxResults"></a>
 The maximum number of objects that you want Network Firewall to return for this request. If more objects are available, in the response, Network Firewall provides a `NextToken` value that you can use in a subsequent call to get the next batch of objects.

@@ -16,7 +16,7 @@ Alternatively, you can use a [Service Control Policy](https://docs.aws.amazon.co
 This denial policy blocks all AWS actions for a specific user, regardless of other permissions they might have been granted elsewhere. This policy overrides any `Allow` policies.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [
@@ -35,7 +35,7 @@ This denial policy blocks all AWS actions for a specific user, regardless of oth
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [

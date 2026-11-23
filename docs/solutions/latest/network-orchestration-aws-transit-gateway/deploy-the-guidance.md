@@ -59,13 +59,13 @@ Use the following procedure to build the Organizations ARN manually after you ha
 
 1. Use the following sample to manually build the Organization ARN. Replace the placeholders with your management account and organization IDs.
 
-   ```
+   ```yaml
    arn:<AWS_PARTITION>:organizations::<ORG_MANAGEMENT_ACCOUNT_ID>:organization/<ORG-ID>
    ```
 
 To use the AWS CLI to query the ARN, use the [describe-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html) API call. To set up AWS CLI, refer to [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the *AWS Command Line Interface\_User Guide*.
 
-```
+```bash
 aws organizations describe-organization --query 'Organization.Arn' --output text
 ```
 

@@ -33,7 +33,7 @@ A notebook instance user has root access for installing packages and other perti
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

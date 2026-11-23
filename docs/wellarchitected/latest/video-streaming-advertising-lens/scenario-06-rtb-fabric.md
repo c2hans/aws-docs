@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![AWS RTB Fabric architecture showing SSP (Requester) and DSP (Responder) gateways deployed across multiple Availability Zones with Managed Endpoints routing directly to bidder pods, built-in traffic management modules, and the CloudWatch monitoring integration](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-06-rtb-fabric.jpg)
 
+*AWS RTB Fabric architecture showing SSP (Requester) and DSP (Responder) gateways deployed across multiple Availability Zones with Managed Endpoints routing directly to bidder pods, built-in traffic management modules, and the CloudWatch monitoring integration*
+
  The architecture consists of the following components:
 
 1.  **Requester Gateway (SSP side)**: RTB Fabric gateway that sends bid requests to partner DSPs. Deployed in each Availability Zone where SSP compute runs. Routes traffic over the RTB Fabric private network rather than the public internet. Configured with IAM task roles (ECS) or IRSA (EKS) for least-privilege access.

@@ -34,6 +34,9 @@ The role permissions policy allows Compute Optimizer to complete the following a
 + Action: `organizations:ListAccounts` on all AWS resources.
 + Action: `organizations:ListAWSServiceAccessForOrganization` on all AWS resources.
 + Action: `organizations:ListDelegatedAdministrators` on all AWS resources.
++ Action: `organizations:ListParents` on all AWS resources.
++ Action: `organizations:ListChildren` on all AWS resources.
++ Action: `organizations:DescribeOrganizationalUnit` on all AWS resources.
 + Action: `autoscaling:DescribeAutoScalingInstances` on all AWS resources.
 + Action: `autoscaling:DescribeAutoScalingGroups` on all AWS resources.
 + Action: `autoscaling:DescribePolicies` on all AWS resources.
@@ -73,7 +76,7 @@ Add the following policy to the IAM entity that needs to create the service-link
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -104,7 +107,7 @@ Add the following policy to the IAM entity that needs to create the service-link
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -139,7 +142,7 @@ Add the following policy to the IAM entity that needs to create the service-link
 
 Add the following statement to the permissions policy for the IAM entity that needs to create a service-linked role, or any service role that includes the needed policies. This policy attaches a policy to the role.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "iam:CreateServiceLinkedRole",

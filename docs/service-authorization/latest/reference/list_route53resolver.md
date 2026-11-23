@@ -272,6 +272,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListFirewallRuleDomains  **
+  - **IAM action:**  [route53resolver:ListFirewallRuleDomains](#list_route53resolver-action-ListFirewallRuleDomains)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListFirewallRuleGroupAssociations  **
   - **IAM action:**  [route53resolver:ListFirewallRuleGroupAssociations](#list_route53resolver-action-ListFirewallRuleGroupAssociations)
   - **Condition key:**

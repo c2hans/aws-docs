@@ -45,7 +45,7 @@ The following example policy contains the permission to pass a role to AWS Trans
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

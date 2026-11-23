@@ -19,7 +19,7 @@ The following code example shows how to manage tags for DynamoDB resources.
 **AWS CLI with Bash script**
 Create a table with tags.
 
-```
+```bash
 # Create a table with tags
 aws dynamodb create-table \
     --table-name TaggedTable \
@@ -35,7 +35,7 @@ aws dynamodb create-table \
 ```
 List tags for a resource.
 
-```
+```bash
 # Get the table ARN
 TABLE_ARN=$(aws dynamodb describe-table \
     --table-name TaggedTable \
@@ -48,7 +48,7 @@ aws dynamodb list-tags-of-resource \
 ```
 Add tags to a resource.
 
-```
+```bash
 # Add tags to an existing table
 aws dynamodb tag-resource \
     --resource-arn $TABLE_ARN \
@@ -58,7 +58,7 @@ aws dynamodb tag-resource \
 ```
 Remove tags from a resource.
 
-```
+```bash
 # Remove tags from a table
 aws dynamodb untag-resource \
     --resource-arn $TABLE_ARN \
@@ -66,7 +66,7 @@ aws dynamodb untag-resource \
 ```
 Filter tables by tags.
 
-```
+```bash
 # Create another table with different tags
 aws dynamodb create-table \
     --table-name AnotherTaggedTable \

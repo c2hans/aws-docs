@@ -12,7 +12,7 @@ Follow these steps to uninstall the solution:
 
 1. Run `mdaa destroy` using the same configuration file (`mdaa.yaml`) that was used for deployment. This tears down all remaining MDAA-managed stacks in the correct dependency order.
 
-   ```
+   ```bash
    mdaa destroy -c ./mdaa.yaml
    ```
 

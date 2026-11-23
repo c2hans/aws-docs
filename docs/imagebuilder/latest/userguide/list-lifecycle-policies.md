@@ -94,7 +94,7 @@ To use your default AWS Region, run this command without the `--region` paramete
 
 The following example shows how to use the [Get-EC2IBLifecyclePolicyList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBLifecyclePolicyList.html) cmdlet to list image lifecycle policies for a specific AWS Region:
 
-```
+```ps
 Get-EC2IBLifecyclePolicyList -Region {{us-west-1}}
 ```
 

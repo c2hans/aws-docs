@@ -73,7 +73,7 @@ The following examples show endpoint policies for different AgentCore components
 
 1. The following endpoint policy allows specific IAM principals to invoke agent runtime resources.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -94,7 +94,7 @@ The following examples show endpoint policies for different AgentCore components
 
    The `InvokeAgentRuntime` API supports two modes of VPC endpoint authorization. The following example policy allows both IAM principals and OAuth callers to access different agent runtime resources.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -123,7 +123,7 @@ The following examples show endpoint policies for different AgentCore components
 
 1. The following endpoint policy allows specific IAM principals to invoke Code Interpreter resources.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -144,7 +144,7 @@ The following examples show endpoint policies for different AgentCore components
 
    The following endpoint policy allows specific IAM principals to access us-east-1 data plane operations for a specific AgentCore Memory.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -177,7 +177,7 @@ The following examples show endpoint policies for different AgentCore components
 
    The following endpoint policy allows specific IAM principals access to all memories.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -210,7 +210,7 @@ The following examples show endpoint policies for different AgentCore components
 
    The following endpoint policy grants permission for a specific IAM principal to create events in a specific AgentCore Memory resource.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -229,7 +229,7 @@ The following examples show endpoint policies for different AgentCore components
 
 1. The following endpoint policy allows specific IAM principals to connect to Browser Tool resources.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -248,7 +248,7 @@ The following examples show endpoint policies for different AgentCore components
 
 1. The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it allows all principals to invoke the gateway specified in the `Resource` field.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -265,7 +265,7 @@ The following examples show endpoint policies for different AgentCore components
 
 1. The following endpoint policy allows access to Identity resources.
 
-   ```
+   ```json
    {
       "Statement": [
          {
@@ -282,7 +282,7 @@ The following examples show endpoint policies for different AgentCore components
 
 1. The following endpoint policy allows specific IAM principals to access Evaluations and Optimizations operations.
 
-   ```
+   ```json
    {
       "Statement": [
          {

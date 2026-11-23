@@ -32,7 +32,7 @@ aws servicediscovery list-namespaces
 
 Output:
 
-```
+```json
 {
     "Namespaces": [
         {

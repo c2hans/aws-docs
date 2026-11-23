@@ -27,7 +27,7 @@ For more information about the permissions to S3 API operations by S3 resource t
 
 The following video includes how to set up IAM permissions for Batch Operations jobs using the Amazon S3 console.
 
-[![AWS Videos](https://img.youtube.com/vi/qpwHUrwAiUI//0.jpg)](https://www.youtube.com/watch?v=qpwHUrwAiUI/)
+[![AWS Videos](https://img.youtube.com/vi/qpwHUrwAiUI/0.jpg)](https://www.youtube.com/watch?v=qpwHUrwAiUI)
 
 ### Trust policy
 <a name="batch-ops-iam-role-policies-trust"></a>

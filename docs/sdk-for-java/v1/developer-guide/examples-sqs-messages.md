@@ -15,7 +15,7 @@ Add a single message to an Amazon SQS queue by calling the AmazonSQS client’s 
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.SendMessageRequest;
@@ -23,7 +23,7 @@ import com.amazonaws.services.sqs.model.SendMessageRequest;
 
  **Code**
 
-```
+```java
 SendMessageRequest send_msg_request = new SendMessageRequest()
         .withQueueUrl(queueUrl)
         .withMessageBody("hello world")
@@ -40,14 +40,14 @@ You can send more than one message in a single request. To send multiple message
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.model.SendMessageBatchRequest;
 import com.amazonaws.services.sqs.model.SendMessageBatchRequestEntry;
 ```
 
  **Code**
 
-```
+```java
 SendMessageBatchRequest send_batch_request = new SendMessageBatchRequest()
         .withQueueUrl(queueUrl)
         .withEntries(
@@ -68,7 +68,7 @@ Retrieve any messages that are currently in the queue by calling the AmazonSQS c
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.AmazonSQSException;
 import com.amazonaws.services.sqs.model.SendMessageBatchRequest;
@@ -76,7 +76,7 @@ import com.amazonaws.services.sqs.model.SendMessageBatchRequest;
 
  **Code**
 
-```
+```java
 List<Message> messages = sqs.receiveMessage(queueUrl).getMessages();
 ```
 
@@ -87,7 +87,7 @@ After receiving a message and processing its contents, delete the message from t
 
  **Code**
 
-```
+```java
 for (Message m : messages) {
     sqs.deleteMessage(queueUrl, m.getReceiptHandle());
 }

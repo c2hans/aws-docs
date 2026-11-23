@@ -18,6 +18,7 @@ Secret ARN : arn:aws:us-east-1:ServiceID!MySecret-a1b2c3
 
 **IDs for services that manage secrets**
 + `appflow` – [How Amazon AppFlow uses AWS Secrets Manager](integrating_how-services-use-secrets_appflow.md)
++ `cognito-idp` – [How Amazon Cognito uses AWS Secrets Manager](integrating_how-services-use-secrets_cognito-idp.md)
 + `databrew` – [How AWS Glue DataBrew uses AWS Secrets Manager](integrating_how-services-use-secrets_databrew.md)
 + `datasync` – [How AWS DataSync uses AWS Secrets Manager](integrating_how-services-use-secrets_datasync.md)
 + `directconnect` – [How AWS Direct Connect uses AWS Secrets Manager](integrating_how-services-use-secrets_directconnect.md)

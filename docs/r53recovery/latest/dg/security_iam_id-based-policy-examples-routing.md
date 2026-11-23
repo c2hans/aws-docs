@@ -43,7 +43,7 @@ To give users full access to use ARC routing control features through the consol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -104,7 +104,7 @@ To work with API operations for recovery control configuration, attach a policy 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -155,7 +155,7 @@ If you want to allow an operator to use the recovery cluster data plane API but 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

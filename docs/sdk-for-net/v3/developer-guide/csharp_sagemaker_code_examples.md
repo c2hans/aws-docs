@@ -32,7 +32,7 @@ The following code example shows how to get started using SageMaker AI.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
 using Amazon.SageMaker;
 using Amazon.SageMaker.Model;
 
@@ -84,7 +84,7 @@ The following code example shows how to use `CreatePipeline`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a pipeline from a JSON definition, or update it if the pipeline already exists.
     /// </summary>
@@ -130,7 +130,7 @@ The following code example shows how to use `DeletePipeline`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a SageMaker pipeline by name.
     /// </summary>
@@ -157,7 +157,7 @@ The following code example shows how to use `DescribePipelineExecution`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Check the status of a run.
     /// </summary>
@@ -184,7 +184,7 @@ The following code example shows how to use `StartPipelineExecution`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Run a pipeline with input and output file locations.
     /// </summary>
@@ -259,7 +259,7 @@ The following code example shows how to use `UpdatePipeline`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a pipeline from a JSON definition, or update it if the pipeline already exists.
     /// </summary>
@@ -317,7 +317,7 @@ For more information, see [Create and run SageMaker pipelines using AWS SDKs on 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 Create a class that wraps SageMaker AI operations.
 
-```
+```csharp
 using System.Text.Json;
 using Amazon.SageMaker;
 using Amazon.SageMaker.Model;
@@ -471,7 +471,7 @@ public class SageMakerWrapper
 ```
 Create a function that handles callbacks from the SageMaker AI pipeline.
 
-```
+```csharp
 using System.Text.Json;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SQSEvents;
@@ -638,7 +638,7 @@ public class SageMakerLambdaFunction
 ```
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 public static class PipelineWorkflow
 {
     public static IAmazonIdentityManagementService _iamClient = null!;

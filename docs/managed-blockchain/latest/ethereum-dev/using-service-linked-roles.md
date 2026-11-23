@@ -29,7 +29,7 @@ The role permissions policy allows AMB Access to complete actions on the specifi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

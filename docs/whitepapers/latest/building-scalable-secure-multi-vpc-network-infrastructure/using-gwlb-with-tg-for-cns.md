@@ -16,6 +16,8 @@ For more information on centralized security inspection with Gateway Load Balanc
 
 ![A diagram depicting VPC-to-VPC and on-premises-to-VPC traffic inspection using Transit Gateway and AWS Gateway Load Balancer (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/vpc-traffic-inspection-2.png)
 
+**VPC-to-VPC and on-premises-to-VPC traffic inspection using Transit Gateway and AWS Gateway Load Balancer (route table design)**
+
 ## Key considerations for AWS Network Firewall and AWS Gateway Load Balancer
 <a name="key-considerations-3"></a>
 + Appliance mode should be enabled on the Transit Gateway when doing east-west inspection.

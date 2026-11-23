@@ -57,7 +57,7 @@ For more information, see [Instance console output](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: This example gets the console output for the specified Linux instance. The console output is encoded.**
 
-```
+```powershell
 Get-EC2ConsoleOutput -InstanceId i-0e19abcd47c123456
 ```
 **Output:**
@@ -69,7 +69,7 @@ i-0e194d3c47c123637 WyAgICAwLjAwMDAwMF0gQ29tbW...bGU9dHR5UzAgc2Vs
 ```
 **Example 2: This example stores the encoded console output in a variable and then decodes it.**
 
-```
+```powershell
 $Output_encoded = (Get-EC2ConsoleOutput -InstanceId i-0e19abcd47c123456).Output
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($Output_encoded))
 ```
@@ -78,7 +78,7 @@ $Output_encoded = (Get-EC2ConsoleOutput -InstanceId i-0e19abcd47c123456).Output
 **Tools for PowerShell V5**
 **Example 1: This example gets the console output for the specified Linux instance. The console output is encoded.**
 
-```
+```powershell
 Get-EC2ConsoleOutput -InstanceId i-0e19abcd47c123456
 ```
 **Output:**
@@ -90,7 +90,7 @@ i-0e194d3c47c123637 WyAgICAwLjAwMDAwMF0gQ29tbW...bGU9dHR5UzAgc2Vs
 ```
 **Example 2: This example stores the encoded console output in a variable and then decodes it.**
 
-```
+```powershell
 $Output_encoded = (Get-EC2ConsoleOutput -InstanceId i-0e19abcd47c123456).Output
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($Output_encoded))
 ```

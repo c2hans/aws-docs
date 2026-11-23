@@ -90,7 +90,7 @@ Then, perform the following configuration.
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -135,7 +135,7 @@ Create the following applications. They will be run on the SSO user's computer.
 
 Include NuGet packages `AWSSDK.SSO` and `AWSSDK.SSOOIDC` in addition to `AWSSDK.S3` and `AWSSDK.SecurityToken`.
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 
@@ -208,7 +208,7 @@ namespace SSOExample.S3.CLI_login
 
 Include NuGet packages `AWSSDK.SSO` and `AWSSDK.SSOOIDC` in addition to `AWSSDK.IdentityManagement` and `AWSSDK.SecurityToken`.
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 

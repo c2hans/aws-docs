@@ -8,7 +8,7 @@ Clear the arrays or an objects at the path.
 
 Syntax
 
-```
+```json
 JSON.CLEAR <key> [path]
 ```
 + key (required) – key of JSON document type
@@ -24,7 +24,7 @@ Prior to Redis OSS version 6.2.6.R2, clearing an empty array or object accounts 
 
 **Examples**
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '[[], [0], [0,1], [0,1,2], 1, true, null, "d"]'
 OK
 127.0.0.1:6379>  JSON.CLEAR k1  $[*]

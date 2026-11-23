@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
    +  Catches any EC2 instance with a direct path to the IGW, bypassing both the NAT Gateway and Network Firewall entirely (instance in a public subnet or misconfigured route).
    +  Catches the NAT Gateway reaching the IGW directly. In the correct setup, NAT Gateway traffic should route through the Network Firewall endpoint before reaching the IGW. If the NAT GW subnet route table points directly to the IGW instead of the firewall endpoint, this finding fires.
 
-   ```
+   ```bash
    AWS ec2 create-network-insights-access-scope \
    --match-paths '[
        {
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 
     After creating the scope, run an analysis to identify any matching paths:
 
-   ```
+   ```bash
    AWS ec2 start-network-insights-access-scope-analysis \
    --network-insights-access-scope-id <scope-id>
    ```

@@ -10,7 +10,7 @@ An A/B test campaign behaves like a standard campaign, but enables you to define
 
 The following example demonstrates how to create an A/B test campaign with the AWS SDK for Java.
 
-```
+```java
 import com.amazonaws.services.pinpoint.AmazonPinpointClient;
 import com.amazonaws.services.pinpoint.model.Action;
 import com.amazonaws.services.pinpoint.model.CampaignResponse;

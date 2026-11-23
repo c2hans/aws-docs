@@ -123,7 +123,7 @@ In the following sample policy, replace the {{placeholder text }}with your own i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -180,7 +180,7 @@ The role must also have the following trust policy, which specifies the target I
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

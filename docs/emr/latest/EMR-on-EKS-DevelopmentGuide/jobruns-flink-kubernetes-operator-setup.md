@@ -16,7 +16,7 @@ Complete the following tasks to get set up before you install the Flink Kubernet
 + Create an operator execution role. This step is optional. You can use the same role for Flink jobs and operator. If you want to have a different IAM role for your operator, you can create a separate role.
 + Update the trust policy of the operator execution role. You must explicitly add one trust policy entry for the roles you want to use for the Amazon EMR Flink Kubernetes operator service account. You can follow this example format:
 
-  ```
+  ```json
   {
     "Version": "2012-10-17",
     "Statement": [

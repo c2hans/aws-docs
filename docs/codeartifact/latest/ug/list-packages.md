@@ -12,7 +12,7 @@ aws codeartifact list-packages --domain {{my_domain}} --domain-owner {{111122223
 
 Sample output:
 
-```
+```json
 {
     "nextToken": "eyJidWNrZXRJZCI6I...",
     "packages": [
@@ -100,7 +100,7 @@ aws codeartifact list-packages --domain {{my_domain}} --domain-owner {{111122223
 
 Sample output:
 
-```
+```json
 {
     "nextToken": "eyJidWNrZXRJZ...",
     "packages": [
@@ -141,7 +141,7 @@ aws codeartifact list-packages --domain {{my_domain}} --domain-owner {{111122223
 
 Sample output:
 
-```
+```json
 {
     "nextToken": "eyJidWNrZXRJZ...",
     "packages": [
@@ -189,7 +189,7 @@ aws codeartifact list-packages --domain {{my_domain}} --domain-owner {{111122223
 
 Sample output:
 
-```
+```json
 {
     "nextToken": "eyJidWNrZXRJZ...",
     "packages": [
@@ -231,7 +231,7 @@ aws codeartifact list-packages --domain {{my_domain}} --domain-owner {{111122223
 
 Sample output:
 
-```
+```text
 accepts
 array-flatten
 body-parser

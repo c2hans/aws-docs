@@ -28,7 +28,7 @@ AWS owns the data gathered though this survey. Data collection is subject to the
 
 1. Modify the AWS CloudFormation template mapping section from:
 
-   ```
+   ```yaml
    AnonymizedData:
     SendAnonymizedData:
     Data: Yes
@@ -36,7 +36,7 @@ AWS owns the data gathered though this survey. Data collection is subject to the
 
    to:
 
-   ```
+   ```yaml
    AnonymizedData:
     SendAnonymizedData:
     Data: No

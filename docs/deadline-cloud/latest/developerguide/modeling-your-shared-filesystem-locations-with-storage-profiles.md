@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/mod
 
  A storage profile is made up of a list of file system locations that each tell Deadline Cloud the location and type of a file system location that is relevant for jobs submitted from or run on a host. A storage profile should only model the locations that are relevant for jobs. For example, the shared `FSCommon` location is located on workstation `WS1` at `S:\`, so the corresponding file system location is:
 
-```
+```json
 {
     "name": "FSCommon",
     "path": "S:\\",
@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/mod
 
  Use the following commands to create the storage profile for workstation configurations `WS1`, `WS2`, and `WS3` and the worker configuration `WorkerConfig` using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html):
 
-```
+```bash
 # Change the value of FARM_ID to your farm's identifier
 FARM_ID=farm-{{00112233445566778899aabbccddeeff}}
 

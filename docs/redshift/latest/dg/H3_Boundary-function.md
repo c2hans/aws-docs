@@ -33,7 +33,7 @@ If *index* is not valid, then an error is returned.
 
 The following SQL inputs a `VARCHAR` that represents the index of an H3 cell, and returns a POLYGON with SRID 0 that represents the boundary of the input H3 cell. The output of H3\_Boundary is input to ST\_AwEWKT to display in extended well-known text (EWKT) representation.
 
-```
+```sql
 SELECT ST_AsEWKT(H3_Boundary('8025fffffffffff'));
 ```
 
@@ -45,7 +45,7 @@ SELECT ST_AsEWKT(H3_Boundary('8025fffffffffff'));
 
 The following SQL inputs a `BIGINT` that represents the index of an H3 cell, and returns a POLYGON with SRID 0 that represents the boundary of the input H3 cell. The output of H3\_Boundary is input to ST\_AwEWKT to display in extended well-known text (EWKT) representation.
 
-```
+```sql
 SELECT ST_AsEWKT(H3_Boundary(577129255373111295));
 ```
 

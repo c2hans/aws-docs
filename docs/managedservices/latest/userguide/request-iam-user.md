@@ -43,7 +43,7 @@ AMS change type statement in the default IAM instance profile that allows access
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -32,6 +32,12 @@ The timestamp when the resource was last updated.
 Type: Timestamp
 Required: Yes
 
+ ** awsSourceMode **   <a name="devopsagent-Type-AgentSpace-awsSourceMode"></a>
+The AWS source mode for the AgentSpace, indicating whether its AWS source configuration targets an individual AWS account or an AWS Organization.
+Type: String
+Valid Values: `standalone | organization`
+Required: No
+
  ** description **   <a name="devopsagent-Type-AgentSpace-description"></a>
 The description of the AgentSpace.
 Type: String

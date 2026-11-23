@@ -17,7 +17,7 @@ The following `IsAuthorized` command uses a policy store alias with the name `ex
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 $ aws verifiedpermissions is-authorized \
     --policy-store-id policy-store-alias/example-policy-store \
     --principal entityType=User,entityId=alice \
@@ -42,7 +42,7 @@ You could create a different version of your application in each Region or use a
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 $ aws --region us-east-1 verifiedpermissions create-policy-store-alias \
     --alias-name policy-store-alias/my-app \
     --policy-store-id PSEXAMPLEabcdefg111111
@@ -59,7 +59,7 @@ Then, use the policy store alias in your code. When your code runs in each Regio
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 $ aws verifiedpermissions is-authorized \
     --policy-store-id policy-store-alias/my-app \
     --principal entityType=User,entityId=alice \

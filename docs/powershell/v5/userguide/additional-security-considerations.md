@@ -19,7 +19,7 @@ Some operations of this tool might return information that could be considered s
 
 Version 5 (V5) of the AWS Tools for PowerShell has been updated to exclude potentially sensitive information from logs by default. If you need to revert to tool behavior that could result in sensitive information being logged, you can do so for a particular PowerShell session by running the following command:
 
-```
+```ps
 Set-AWSSensitiveDataConfiguration -ShowSensitiveData $true
 ```
 

@@ -13,7 +13,7 @@ To create a security group, call the AmazonEC2Client’s `createSecurityGroup` m
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.CreateSecurityGroupRequest;
@@ -22,7 +22,7 @@ import com.amazonaws.services.ec2.model.CreateSecurityGroupResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 CreateSecurityGroupRequest create_request = new
@@ -46,7 +46,7 @@ To add ingress rules to your security group, use the AmazonEC2Client’s `author
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.CreateSecurityGroupRequest;
@@ -55,7 +55,7 @@ import com.amazonaws.services.ec2.model.CreateSecurityGroupResult;
 
  **Code**
 
-```
+```java
 IpRange ip_range = new IpRange()
     .withCidrIp("0.0.0.0/0");
 
@@ -91,7 +91,7 @@ To describe your security groups or get information about them, call the AmazonE
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DescribeSecurityGroupsRequest;
@@ -100,7 +100,7 @@ import com.amazonaws.services.ec2.model.DescribeSecurityGroupsResult;
 
  **Code**
 
-```
+```java
 final String USAGE =
     "To run this example, supply a group id\n" +
     "Ex: DescribeSecurityGroups <group-id>\n";
@@ -122,7 +122,7 @@ To delete a security group, call the AmazonEC2Client’s `deleteSecurityGroup` m
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
 import com.amazonaws.services.ec2.model.DeleteSecurityGroupRequest;
@@ -131,7 +131,7 @@ import com.amazonaws.services.ec2.model.DeleteSecurityGroupResult;
 
  **Code**
 
-```
+```java
 final AmazonEC2 ec2 = AmazonEC2ClientBuilder.defaultClient();
 
 DeleteSecurityGroupRequest request = new DeleteSecurityGroupRequest()

@@ -8,7 +8,7 @@ AWS Elemental MediaConnect publishes this event when the metadata for a flow's s
 
 For information about subscribing to this event, see [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
 
-The following message is an example of this event.
+The following message is an example of this event:
 
 ```
 {

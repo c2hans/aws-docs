@@ -17,7 +17,7 @@ This code uses the javax.sound.sampled package to stream audio from an input dev
 
  **Code**
 
-```
+```java
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
@@ -46,7 +46,7 @@ This code implements a publisher that publishes audio data from the Amazon Trans
 
  **Code**
 
-```
+```java
 package com.amazonaws.transcribe;
 
 import java.io.IOException;
@@ -162,7 +162,7 @@ Then, use the TranscribeStreamingAsyncClient’s `startStreamTranscription` meth
 
  **Imports**
 
-```
+```java
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
@@ -180,7 +180,7 @@ import software.amazon.awssdk.services.transcribestreaming.model.TranscriptEvent
 
  **Code**
 
-```
+```java
     public static void convertAudio(TranscribeStreamingAsyncClient client) throws Exception {
 
         try {

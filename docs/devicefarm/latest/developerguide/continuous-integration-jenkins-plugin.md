@@ -100,7 +100,7 @@ The AWS root account or IAM user that you use to complete the following steps mu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -269,7 +269,7 @@ For each mitigation action that you define, you must provide the role used to ap
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -289,7 +289,7 @@ For each mitigation action that you define, you must provide the role used to ap
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -309,7 +309,7 @@ For each mitigation action that you define, you must provide the role used to ap
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -330,7 +330,7 @@ For each mitigation action that you define, you must provide the role used to ap
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -350,7 +350,7 @@ For each mitigation action that you define, you must provide the role used to ap
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -375,7 +375,7 @@ For each mitigation action that you define, you must provide the role used to ap
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -399,7 +399,7 @@ For all mitigation action types, use the following trust policy template:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

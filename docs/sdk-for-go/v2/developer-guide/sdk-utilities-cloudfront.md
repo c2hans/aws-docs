@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 
  The following example creates a signed URL that's valid for one hour after it is created.
 
-```
+```go
 import "github.com/aws/aws-sdk-go-v2/feature/cloudfront/sign"
 
 // ...

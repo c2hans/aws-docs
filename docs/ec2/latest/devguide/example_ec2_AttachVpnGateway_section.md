@@ -37,7 +37,7 @@ For more information, see [Get started with AWS Site-to-Site VPN](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example attaches the specified virtual private gateway to the specified VPC.**
 
-```
+```powershell
 Add-EC2VpnGateway -VpnGatewayId vgw-1a2b3c4d -VpcId vpc-12345678
 ```
 **Output:**
@@ -52,7 +52,7 @@ attaching    vpc-12345678
 **Tools for PowerShell V5**
 **Example 1: This example attaches the specified virtual private gateway to the specified VPC.**
 
-```
+```powershell
 Add-EC2VpnGateway -VpnGatewayId vgw-1a2b3c4d -VpcId vpc-12345678
 ```
 **Output:**

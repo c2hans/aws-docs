@@ -154,7 +154,7 @@ gremlin=g.V().has('code','AUS').repeat(out().simplePath()).until(has('code','AGR
 
 Then, if slow-query logging was enabled in debug mode, the following attributes would be logged for the query, in a form like this:
 
-```
+```json
 {
   "requestResponseMetadata": {
     "requestId": "5311e493-0e98-457e-9131-d250a2ce1e12",

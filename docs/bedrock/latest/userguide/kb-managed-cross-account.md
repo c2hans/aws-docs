@@ -45,7 +45,7 @@ For more information about how IAM evaluates cross-account access, see [Cross-ac
 
 The following resource policy grants a specific IAM role in another account permission to call `Retrieve` and `GetDocumentContent`:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -69,7 +69,7 @@ The following resource policy grants a specific IAM role in another account perm
 
 To grant access to multiple consuming roles, list each role ARN in `Principal.AWS` as an array:
 
-```
+```json
 "Principal": {
     "AWS": [
         "arn:aws:iam::{{ACCOUNT_ID_1}}:role/{{role-name-1}}",
@@ -80,7 +80,7 @@ To grant access to multiple consuming roles, list each role ARN in `Principal.AW
 
 To grant access to all principals in another account, use the account root as the principal:
 
-```
+```json
 "Principal": {
     "AWS": "arn:aws:iam::{{CONSUMER_ACCOUNT_ID}}:root"
 }
@@ -91,7 +91,7 @@ To grant access to all principals in another account, use the account root as th
 
 Resource policies support both `Allow` and `Deny` effects. An explicit `Deny` in a resource policy overrides any `Allow` in the principal's identity-based policy.
 
-```
+```json
 {
     "Sid": "DenySpecificPrincipals",
     "Effect": "Deny",
@@ -119,7 +119,7 @@ To manage resource policies on knowledge bases, the knowledge base owner's IAM p
 
 **Example policy for the knowledge base owner**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -140,7 +140,7 @@ To manage resource policies on knowledge bases, the knowledge base owner's IAM p
 
 **PutResourcePolicy** — Attaches or replaces a resource-based policy on a knowledge base.
 
-```
+```HTTP
 PUT /resourcepolicy/{{{knowledgeBaseArn}}} HTTP/1.1
 Content-Type: application/json
 
@@ -153,7 +153,7 @@ The `policy` field is a JSON-escaped string containing the policy document.
 
 **GetResourcePolicy** — Returns the resource-based policy currently attached to a knowledge base.
 
-```
+```HTTP
 GET /resourcepolicy/{{{knowledgeBaseArn}}} HTTP/1.1
 ```
 
@@ -161,7 +161,7 @@ Returns a `ResourceNotFoundException` if no policy is attached.
 
 **DeleteResourcePolicy** — Removes the resource-based policy from a knowledge base.
 
-```
+```HTTP
 DELETE /resourcepolicy/{{{knowledgeBaseArn}}} HTTP/1.1
 ```
 
@@ -182,7 +182,7 @@ In the consuming account, attach an identity-based policy to the principal that 
 
 **Example identity-based policy**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

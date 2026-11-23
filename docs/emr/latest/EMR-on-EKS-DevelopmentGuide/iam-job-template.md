@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/i
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -39,7 +39,7 @@ To enforce that a user or role is able to invoke `StartJobRun` operation only wh
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

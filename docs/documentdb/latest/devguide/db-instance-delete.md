@@ -56,7 +56,7 @@ The following procedure deletes an Amazon DocumentDB instance using the AWS CLI.
 
    Output from this operation looks something like the following.
 
-   ```
+   ```json
    [
        [
            "sample-cluster",
@@ -79,7 +79,7 @@ The following procedure deletes an Amazon DocumentDB instance using the AWS CLI.
 
    Output from this operation looks something like the following.
 
-   ```
+   ```json
    {
        "DBInstance": {
            "DBInstanceIdentifier": "sample-instance-2",

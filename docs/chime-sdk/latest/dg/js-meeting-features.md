@@ -54,7 +54,7 @@ If UHD (4K) content is requested, a high-definition WebRTC session is created.
 
 If a client attems to send a content share beyond the maximum resolution, that resolution is scaled down to the specified maximum. You scale by applying `MediaTrackConstraints` to the content share track. The following examples shows how to scale a share track.
 
-```
+```javascript
 const constraint: MediaTrackConstraints = {
     width: { ideal: videoQualitySettings.videoWidth },
     height: { ideal: videoQualitySettings.videoHeight },
@@ -102,7 +102,7 @@ Attendee capacity costs apply for high-definition sessions. Refer to the [Amazon
 
 To create a meeting, call the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) API and specify the desired meeting features. The following example shows how to specify all the features.
 
-```
+```javascript
 // You must migrate to the Amazon Chime SDK Meetings namespace.
 const chime = AWS.ChimeSDKMeetings({ region: "{{eu-central-1}}" });
 
@@ -131,7 +131,7 @@ const meetingInfo = await chime.createMeeting({
 
 After you create a meeting with the desired features, you can pass in the `joinInfo` when you create the `MeetingSessionConfiguration` object. The meeting features are used at `meetingSession` creation to set webcam video resolution and bitrate, and the content share resolution and bitrate.
 
-```
+```javascript
 const configuration = new MeetingSessionConfiguration(this.joinInfo.Meeting, this.joinInfo.Attendee);
 
 this.meetingSession = new DefaultMeetingSession(

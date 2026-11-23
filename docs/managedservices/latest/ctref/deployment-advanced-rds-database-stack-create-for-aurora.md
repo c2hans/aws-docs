@@ -174,7 +174,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-database-stack-create-for-aurora-ex-min"></a>
 
-```
+```json
 {
   "Description": "Create an RDS stack for an Aurora database (DB) with multiple availability zones (MultiAZ) or as a single instance DB. Also creates an Aurora DB cluster consisting of a DB instance, compatible with either MySQL or PostgreSQL, and a cluster volume that represents the data for the DB cluster, copied across three Availability Zones as a single, virtual volume. The DB cluster contains a primary instance and, optionally, up to 15 Aurora Replicas.",
   "VpcId": "vpc-12345678901234567",
@@ -205,7 +205,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-rds-database-stack-create-for-aurora-ex-max"></a>
 
-```
+```json
 {
   "Description": "Create an RDS stack for an Aurora database (DB) with multiple availability zones (MultiAZ) or as a single instance DB. Also creates an Aurora DB cluster consisting of a DB instance, compatible with either MySQL or PostgreSQL, and a cluster volume that represents the data for the DB cluster, copied across three Availability Zones as a single, virtual volume. The DB cluster contains a primary instance and, optionally, up to 15 Aurora Replicas.",
   "VpcId": "vpc-12345678901234567",

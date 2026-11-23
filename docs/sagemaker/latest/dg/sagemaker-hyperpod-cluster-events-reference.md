@@ -13,7 +13,7 @@ Cluster events are available for HyperPod clusters with `NodeProvisioningMode` s
 
 Each cluster event is represented as a structured record containing identification, timing, scope, severity, and operation-specific metadata. The following example shows a complete event record as delivered through the `DescribeClusterEvent` API and Amazon EventBridge:
 
-```
+```json
 {
   "version": "0",
   "id": "0bd4a141-0a02-9d8a-f977-3924c3fb259c",
@@ -329,7 +329,7 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 
 **All HyperPod cluster events:**
 
-```
+```json
 {
   "source": ["aws.sagemaker"],
   "detail-type": ["SageMaker HyperPod Cluster Event"]
@@ -338,7 +338,7 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 
 **Error events only (for alerting):**
 
-```
+```json
 {
   "source": ["aws.sagemaker"],
   "detail-type": ["SageMaker HyperPod Cluster Event"],
@@ -352,7 +352,7 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 
 **Events for a specific cluster:**
 
-```
+```json
 {
   "source": ["aws.sagemaker"],
   "detail-type": ["SageMaker HyperPod Cluster Event"],
@@ -362,7 +362,7 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 
 **Node health events:**
 
-```
+```json
 {
   "source": ["aws.sagemaker"],
   "detail-type": ["SageMaker HyperPod Cluster Node Health Event"]

@@ -59,7 +59,7 @@ For information about zero-ETL integrations, see [Zero-ETL integrations](https:/
 
 The following SQL command displays mapping of metadata values from source to target.
 
-```
+```sql
 select * from svv_integration_table_mapping;
 
            integration_id              | source_database | target_database |  source_schema_name | target_schema_name | source_table_name | target_table_name |

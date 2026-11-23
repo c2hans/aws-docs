@@ -14,7 +14,7 @@ The following code examples show how to use `GetAwsOpportunitySummary`.
 **SDK for Java 2.x**
 Retrieves a summary of an AWS Opportunity.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -72,7 +72,7 @@ public class GetAwsOpportunitySummary {
 **SDK for Python (Boto3)**
 Retrieves a summary of an AWS Opportunity.
 
-```
+```python
 #!/usr/bin/env python
 
 """

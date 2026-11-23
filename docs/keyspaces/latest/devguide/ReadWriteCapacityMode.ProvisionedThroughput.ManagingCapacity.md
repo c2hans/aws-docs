@@ -15,13 +15,13 @@ To change the provisioned throughput of a table, see [Change the capacity mode o
 
 **Example**
 
-```
+```sql
 SELECT * from system_schema_mcs.tables where keyspace_name = 'mykeyspace' and table_name = 'mytable';
 ```
 
 A table configured with on-demand capacity mode returns the following.
 
-```
+```JSON
 {
    "capacity_mode":{
       "last_update_to_pay_per_request_timestamp":"1579551547603",
@@ -32,7 +32,7 @@ A table configured with on-demand capacity mode returns the following.
 
 A table configured with provisioned throughput capacity mode returns the following.
 
-```
+```JSON
 {
    "capacity_mode":{
       "last_update_to_pay_per_request_timestamp":"1579048006000",

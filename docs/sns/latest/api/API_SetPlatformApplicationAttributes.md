@@ -87,7 +87,7 @@ https://sns.us-west-2.amazonaws.com/?Action=SetPlatformApplicationAttributes
 #### Sample Response
 <a name="API_SetPlatformApplicationAttributes_Example_1_Response"></a>
 
-```
+```xml
 <SetPlatformApplicationAttributesResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>cf577bcc-b3dc-5463-88f1-3180b9412395</RequestId>

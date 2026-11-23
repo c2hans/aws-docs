@@ -66,7 +66,7 @@ If your domain uses an IAM-based domain access policy or fine-grained access con
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -110,7 +110,7 @@ output {
 
 If you don't want to provide your IAM credentials within the configuration file, you can export them (or run `aws configure`):
 
-```
+```bash
 export AWS_ACCESS_KEY_ID="{{your-access-key}}"
 export AWS_SECRET_ACCESS_KEY="{{your-secret-key}}"
 export AWS_SESSION_TOKEN="{{your-session-token}}"

@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing a full mapping.](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/full-mapping.jpg)
 
+*Full mapping*
+
  Advantages:
 +  Simple to implement.
 +  More control over distribution to control hot cells and to perform a cell migration.

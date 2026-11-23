@@ -19,19 +19,19 @@ This section contains information about how you can use your preferred command l
 **To view packages using the AWS CLI on Linux**
 + To view all packages, excluding shared packages, run the following command.
 
-  ```
+  ```sh
   aws ssm list-documents \
       --filters Key=DocumentType,Values=Package
   ```
 + To view all packages owned by Amazon, run the following command.
 
-  ```
+  ```sh
   aws ssm list-documents \
       --filters Key=DocumentType,Values=Package Key=Owner,Values=Amazon
   ```
 + To view all packages owned by third parties, run the following command.
 
-  ```
+  ```sh
   aws ssm list-documents \
       --filters Key=DocumentType,Values=Package Key=Owner,Values=ThirdParty
   ```
@@ -42,19 +42,19 @@ This section contains information about how you can use your preferred command l
 **To view packages using the AWS CLI on Windows**
 + To view all packages, excluding shared packages, run the following command.
 
-  ```
+  ```sh
   aws ssm list-documents ^
       --filters Key=DocumentType,Values=Package
   ```
 + To view all packages owned by Amazon, run the following command.
 
-  ```
+  ```sh
   aws ssm list-documents ^
       --filters Key=DocumentType,Values=Package Key=Owner,Values=Amazon
   ```
 + To view all packages owned by third parties, run the following command.
 
-  ```
+  ```sh
   aws ssm list-documents ^
       --filters Key=DocumentType,Values=Package Key=Owner,Values=ThirdParty
   ```
@@ -65,7 +65,7 @@ This section contains information about how you can use your preferred command l
 **To view packages using the Tools for PowerShell**
 + To view all packages, excluding shared packages, run the following command.
 
-  ```
+  ```ps
   $filter = New-Object Amazon.SimpleSystemsManagement.Model.DocumentKeyValuesFilter
   $filter.Key = "DocumentType"
   $filter.Values = "Package"
@@ -75,7 +75,7 @@ This section contains information about how you can use your preferred command l
   ```
 + To view all packages owned by Amazon, run the following command.
 
-  ```
+  ```ps
   $typeFilter = New-Object Amazon.SimpleSystemsManagement.Model.DocumentKeyValuesFilter
   $typeFilter.Key = "DocumentType"
   $typeFilter.Values = "Package"
@@ -89,7 +89,7 @@ This section contains information about how you can use your preferred command l
   ```
 + To view all packages owned by third parties, run the following command.
 
-  ```
+  ```ps
   $typeFilter = New-Object Amazon.SimpleSystemsManagement.Model.DocumentKeyValuesFilter
   $typeFilter.Key = "DocumentType"
   $typeFilter.Values = "Package"

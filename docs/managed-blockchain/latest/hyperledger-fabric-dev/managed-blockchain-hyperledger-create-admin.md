@@ -41,7 +41,7 @@ The following example uses a [Fabric-CA Client CLI](https://hyperledger-fabric-c
 + The `--tls.certfiles` option specifies the location and file name of the AMB Access TLS certificate that you copied from Amazon S3 (see [Step 5.1: Create the Certificate File](get-started-enroll-admin.md#get-started-enroll-member-create-cert)).
 + `--mspdir` specifies the MSP directory on the local machine where certificates are saved. The example uses `/home/ec2-user/admin-msp`.
 
-```
+```bash
 fabric-ca-client register \
 –-url https://{{Example-AdminUser}}:{{Example-Password123}}@{{ca.m-K46ICRRXJRCGRNNS4ES4XUUS5A.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{us-east-1}}.amazonaws.com:30002}} \
 --id.name {{AdminUser2}} --id.secret {{Password456}} \
@@ -58,7 +58,7 @@ After registering an identity as an admin, or creating a member along with the b
 + `tls.certfiles` specifies the location and file name of the AMB Access TLS certificate that you copied from Amazon S3 (see [Step 5.1: Create the Certificate File](get-started-enroll-admin.md#get-started-enroll-member-create-cert)).
 + `-M` (an alternative for `--mspdir`) specifies the MSP directory on the local machine where certificates are saved. The example uses `/home/ec2-user/admin-msp`.
 
-```
+```bash
 fabric-ca-client enroll \
 -u https://{{Example-AdminUser}}:{{Example-Password123}}@{{ca.m-K46ICRRXJRCGRNNS4ES4XUUS5A.n-MWY63ZJZU5HGNCMBQER7IN6OIU.managedblockchain.{{us-east-1}}.amazonaws.com:30002}} \
 --tls.certfiles /home/ec2-user/managedblockchain-tls-chain.pem \

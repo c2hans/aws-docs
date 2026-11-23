@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### POST schema
 <a name="claimdevice-request-body-post-example"></a>
 
-```
+```json
 {
   "id": "string"
 }
@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### InvalidRequest schema
 <a name="claimdevice-response-body-invalidrequest-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -61,7 +61,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### AccessDenied schema
 <a name="claimdevice-response-body-accessdenied-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -70,7 +70,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### ResourceNotFound schema
 <a name="claimdevice-response-body-resourcenotfound-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -79,7 +79,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### ValidationError schema
 <a name="claimdevice-response-body-validationerror-example"></a>
 
-```
+```json
 {
   "elementPath": "string",
   "errorMessage": "string"
@@ -89,7 +89,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### LimitExceeded schema
 <a name="claimdevice-response-body-limitexceeded-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -98,7 +98,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### InternalServiceError schema
 <a name="claimdevice-response-body-internalserviceerror-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -107,7 +107,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### BadGatewayException schema
 <a name="claimdevice-response-body-badgatewayexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -116,7 +116,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 #### GatewayTimeoutException schema
 <a name="claimdevice-response-body-gatewaytimeoutexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

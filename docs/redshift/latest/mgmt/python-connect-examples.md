@@ -19,7 +19,7 @@ Following are examples of how to use the Amazon Redshift Python connector. To ru
 
 The following example guides you through connecting to an Amazon Redshift cluster using your AWS credentials, then querying a table and retrieving the query results.
 
-```
+```python
 #Connect to the cluster
 >>> import redshift_connector
 >>> conn = redshift_connector.connect(
@@ -47,7 +47,7 @@ The following example guides you through connecting to an Amazon Redshift cluste
 
 The autocommit property is off by default, following the Python Database API Specification. You can use the following commands to turn on the connection's autocommit property after performing a rollback command to make sure that a transaction is not in progress.
 
-```
+```python
 #Connect to the cluster
 >>> import redshift_connector
 >>> conn = redshift_connector.connect(...)
@@ -113,7 +113,7 @@ A text file named `category_csv.txt` containing the following data is uploaded t
 
 Following is an example of the Python code, which first connects to the Amazon Redshift database. It then creates a table called `category` and copies the CSV data from the S3 bucket into the table.
 
-```
+```python
 #Connect to the cluster and create a Cursor
 >>> import redshift_connector
 >>> with redshift_connector.connect(...) as conn:

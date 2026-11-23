@@ -92,7 +92,7 @@ If you create a labeling job using the API, you must supply a worker task templa
 
 Upload this template to S3, and provide the S3 URI for this file in `UiTemplateS3Uri`.
 
-```
+```html
 <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
 <crowd-form>
   <crowd-classifier

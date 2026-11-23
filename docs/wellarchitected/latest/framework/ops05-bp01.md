@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05-b
 
 1.  **Draft the runbook from a standard template:** Create a document from a shared template so every runbook records the same structure and metadata. Fill in the title, the runbook info, and each step in order. Keeping the runbook in Markdown makes it portable across most automation systems.
 
-   ```
+   ```markdown
    # Runbook title
    ## Runbook info
    | Runbook ID | Description | Tools used | Special permissions | Author | Last updated | Escalation contact |

@@ -18,7 +18,7 @@ Run the kubectl steps below from your local machine or instance that you use to 
 ## Step 1: List your nodes
 <a name="_step_1_list_your_nodes"></a>
 
-```
+```yaml
 kubectl get nodes
 ```
 
@@ -27,7 +27,7 @@ kubectl get nodes
 
 See [kubectl drain](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_drain/) in the Kubernetes documentation for more information on the `kubectl drain` command.
 
-```
+```yaml
 kubectl drain --ignore-daemonsets <node-name>
 ```
 
@@ -36,7 +36,7 @@ kubectl drain --ignore-daemonsets <node-name>
 
 You can use the Amazon EKS Hybrid Nodes CLI (`nodeadm`) to stop and remove the hybrid nodes artifacts from the host. You must run `nodeadm` with a user that has root/sudo privileges. By default, `nodeadm uninstall` will not proceed if there are pods remaining on the node. If you are using AWS Systems Manager (SSM) as your credentials provider, the `nodeadm uninstall` command deregisters the host as an AWS SSM managed instance. For more information, see [Hybrid nodes `nodeadm` reference](hybrid-nodes-nodeadm.md).
 
-```
+```yaml
 nodeadm uninstall
 ```
 
@@ -45,7 +45,7 @@ nodeadm uninstall
 
 With the hybrid nodes artifacts stopped and uninstalled, remove the node resource from your cluster.
 
-```
+```yaml
 kubectl delete node <node-name>
 ```
 

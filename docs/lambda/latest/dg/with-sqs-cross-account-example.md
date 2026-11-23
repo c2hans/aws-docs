@@ -46,7 +46,7 @@ The following Node.js code example writes each message to a log in CloudWatch Lo
 
 **Example index.mjs**
 
-```
+```javascript
 export const handler = async function(event, context) {
   event.Records.forEach(record => {
     const { body } = record;
@@ -146,7 +146,7 @@ In **Account B**, create an Amazon SQS queue that the Lambda Event Function in *
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Id": "Queue1_Policy_UUID",

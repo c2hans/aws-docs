@@ -340,13 +340,13 @@ The [tile\_render\_with\_vray\_linux](https://github.com/aws-deadline/deadline-c
 
 You can submit this job bundle using the Deadline Cloud CLI:
 
-```
+```bash
 deadline bundle submit <path-to-job-bundle>
 ```
 
 Or use the GUI submitter:
 
-```
+```bash
 deadline bundle gui-submit <path-to-job-bundle>
 ```
 

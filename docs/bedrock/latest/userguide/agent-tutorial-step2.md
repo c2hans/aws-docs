@@ -55,7 +55,7 @@ For more information, see [Create and configure agent manually](agents-create.md
 
 1. In **In-line OpenAPI schema** text box, replace the existing schema with the following OpenAPI YAML schema:
 
-   ```
+   ```yaml
    openapi: 3.0.0
    info:
      title: Time API
@@ -99,7 +99,7 @@ For more information, see [Create and configure agent manually](agents-create.md
 
 1. Choose **JSON** and paste the following policy. Make sure `Resource` is the Amazon Resource Name (ARN) for your Lambda function. You noted the ARN in step 6 of [Step 1: Create a Lambda function](agent-tutorial-step1.md).
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

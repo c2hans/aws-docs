@@ -24,7 +24,7 @@ For an example on uploading objects asynchronously, see [Asynchronous programmin
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::putObject(const Aws::String &bucketName,
                            const Aws::String &fileName,
                            const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -74,7 +74,7 @@ For an example on uploading objects asynchronously, see [Asynchronous programmin
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::putObjectBuffer(const Aws::String &bucketName,
                                  const Aws::String &objectName,
                                  const std::string &objectContent,
@@ -116,7 +116,7 @@ The `ListObjects` function returns a `ListObjectsOutcome` object that you can us
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::listObjects(const Aws::String &bucketName,
                              Aws::Vector<Aws::String> &keysResult,
                              const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -170,7 +170,7 @@ The following example downloads an object from Amazon S3. The object contents ar
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::getObject(const Aws::String &objectKey,
                            const Aws::String &fromBucket,
                            const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -205,7 +205,7 @@ Use the `S3Client` object’s `DeleteObject` function, passing it a `DeleteObjec
 
  **Code**
 
-```
+```cpp
 bool AwsDoc::S3::deleteObject(const Aws::String &objectKey,
                               const Aws::String &fromBucket,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {

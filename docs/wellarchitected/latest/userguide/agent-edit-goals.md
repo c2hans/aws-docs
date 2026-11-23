@@ -43,7 +43,7 @@ Concrete, specific goals help AWS WA Agent prioritize and recommend actions. For
 
 To create a new goal:
 
-```
+```bash
 aws wellarchitected create-agent-goal \
     --profile-arn "{{profile-arn}}" \
     --title "{{Reduce EC2 spend by 20%}}" \
@@ -52,7 +52,7 @@ aws wellarchitected create-agent-goal \
 
 To update an existing goal:
 
-```
+```bash
 aws wellarchitected update-agent-goal \
     --profile-arn "{{profile-arn}}" \
     --goal-id "{{goal-id}}" \
@@ -61,7 +61,7 @@ aws wellarchitected update-agent-goal \
 
 To delete a goal:
 
-```
+```bash
 aws wellarchitected delete-agent-goal \
     --profile-arn "{{profile-arn}}" \
     --goal-id "{{goal-id}}"

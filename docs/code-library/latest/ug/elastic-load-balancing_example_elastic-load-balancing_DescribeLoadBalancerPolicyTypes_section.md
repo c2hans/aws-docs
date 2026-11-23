@@ -116,7 +116,7 @@ For more information, see [Configure your Classic Load Balancer](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: This example gets the policy types supported by Elastic Load Balancing.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicyType
 ```
 **Output:**
@@ -133,7 +133,7 @@ Policy that controls whether to incl... {ProxyProtocol}                         
 ```
 **Example 2: This example describes the specified policy type.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicyType -PolicyTypeName ProxyProtocolPolicyType
 ```
 **Output:**
@@ -145,7 +145,7 @@ Policy that controls whether to incl... {ProxyProtocol}                         
 ```
 **Example 3: This example displays the complete description of the specified policy type.**
 
-```
+```powershell
 (Get-ELBLoadBalancerPolicyType -PolicyTypeName).Description
 ```
 **Output:**
@@ -159,7 +159,7 @@ This policy operates on TCP/SSL listeners only
 **Tools for PowerShell V5**
 **Example 1: This example gets the policy types supported by Elastic Load Balancing.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicyType
 ```
 **Output:**
@@ -176,7 +176,7 @@ Policy that controls whether to incl... {ProxyProtocol}                         
 ```
 **Example 2: This example describes the specified policy type.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicyType -PolicyTypeName ProxyProtocolPolicyType
 ```
 **Output:**
@@ -188,7 +188,7 @@ Policy that controls whether to incl... {ProxyProtocol}                         
 ```
 **Example 3: This example displays the complete description of the specified policy type.**
 
-```
+```powershell
 (Get-ELBLoadBalancerPolicyType -PolicyTypeName).Description
 ```
 **Output:**

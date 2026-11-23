@@ -16,12 +16,12 @@ IAM Roles Anywhere sends daily expiry notifications for each trust anchor that s
 
 IAM Roles Anywhere also sends daily expiry notifications for each end-entity certificate that was used to authenticate over the last day and satisfies the [notification evaluation criteria](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/customize-notification-settings.html#notification-evaluation). For these notifications, the "Affected Resources" will each be end-entity certificates. Each of these end-entity certificates will have a composite "Resource ID/ARN", of the form given below.
 
-```
+```text
 serialNumber={{SerialNumber}};certificateId={{CertificateId}}
 ```
 
 The `serialNumber` in the above resource identifier will contain the value of the serial number of the end-entity certificate that was used for authentication and will be expiring soon. And the `certificateId` in the above resource identifier will contain the value of the certificate ID for that certificate. The certificate ID is defined as `Hex(SHA256({{ASN.1 DER Certificate Bytes}}))`, where the result is a lowercase hex-encoded string. If you have a PEM file that contains your certificate data, you can use OpenSSL to convert your certificate into its DER representation and then take the SHA256 hash of the resulting value.
 
-```
+```bash
 openssl x509 -in {{end-entity-certificate.pem}} -inform PEM -outform DER | sha256sum
 ```

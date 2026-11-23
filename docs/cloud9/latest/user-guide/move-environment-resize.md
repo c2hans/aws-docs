@@ -84,12 +84,12 @@ The script also resizes Amazon EBS volumes exposed as NVMe block devices on Nitr
 1. From a terminal session in the IDE, switch to the directory that contains the `resize.sh` file. Then run either of the following commands, replacing `20` with the size in GiB that you want to resize the Amazon EBS volume to:
    +
 
-     ```
+     ```sh
      bash resize.sh 20
      ```
    +
 
-     ```
+     ```sh
      chmod +x resize.sh
      ./resize.sh 20
      ```

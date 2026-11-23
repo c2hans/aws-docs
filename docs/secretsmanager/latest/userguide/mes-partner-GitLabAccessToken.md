@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "token": "{{GitLab access token value}}",
   "tokenId": "{{numeric token ID}}",
@@ -39,7 +39,7 @@ groupId
 
 The following are the metadata fields for GitLab Access Token:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{GitLabAdmin}}",
   "daysToExpiry": "{{30 (optional)}}"

@@ -15,7 +15,7 @@ The following code examples show how to use `AddJobFlowSteps`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 Add a Spark step, which is run by the cluster as soon as it is added.
 
-```
+```python
 def add_step(cluster_id, name, script_uri, script_args, emr_client):
     """
     Adds a job step to the specified cluster. This example adds a Spark
@@ -58,7 +58,7 @@ def add_step(cluster_id, name, script_uri, script_args, emr_client):
 ```
 Run an Amazon EMR File System (EMRFS) command as a job step on a cluster. This can be used to automate EMRFS commands on a cluster instead of running commands manually through an SSH connection.
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/emr#code-examples).
 
-```
+```sap-abap
     TRY.
         " Build args list for Spark submit
         DATA lt_args TYPE /aws1/cl_emrxmlstringlist_w=>tt_xmlstringlist.

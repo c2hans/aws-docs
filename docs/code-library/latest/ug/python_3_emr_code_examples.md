@@ -30,7 +30,7 @@ The following code example shows how to use `AddJobFlowSteps`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 Add a Spark step, which is run by the cluster as soon as it is added.
 
-```
+```python
 def add_step(cluster_id, name, script_uri, script_args, emr_client):
     """
     Adds a job step to the specified cluster. This example adds a Spark
@@ -73,7 +73,7 @@ def add_step(cluster_id, name, script_uri, script_args, emr_client):
 ```
 Run an Amazon EMR File System (EMRFS) command as a job step on a cluster. This can be used to automate EMRFS commands on a cluster instead of running commands manually through an SSH connection.
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -131,7 +131,7 @@ The following code example shows how to use `DescribeCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def describe_cluster(cluster_id, emr_client):
     """
     Gets detailed information about a cluster.
@@ -160,7 +160,7 @@ The following code example shows how to use `DescribeStep`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def describe_step(cluster_id, step_id, emr_client):
     """
     Gets detailed information about the specified step, including the current state of
@@ -191,7 +191,7 @@ The following code example shows how to use `ListSteps`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def list_steps(cluster_id, emr_client):
     """
     Gets a list of steps for the specified cluster. In this example, all steps are
@@ -221,7 +221,7 @@ The following code example shows how to use `RunJobFlow`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def run_job_flow(
     name,
     log_uri,
@@ -314,7 +314,7 @@ The following code example shows how to use `TerminateJobFlows`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 def terminate_cluster(cluster_id, emr_client):
     """
     Terminates a cluster. This terminates all instances in the cluster and cannot
@@ -359,7 +359,7 @@ The following code example shows how to use AWS Systems Manager to run a shell s
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/emr#code-examples).
 
-```
+```python
 import argparse
 import time
 import boto3

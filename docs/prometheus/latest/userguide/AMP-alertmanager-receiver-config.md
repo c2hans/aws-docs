@@ -24,7 +24,7 @@ Additionally, SigV4 settings are required to have a Region property. Without the
 
 1. Add the following YAML block within the `receivers` section.
 
-   ```
+   ```yaml
    - name: {{name_of_receiver}}
      sns_configs:
        - sigv4:

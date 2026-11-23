@@ -19,7 +19,7 @@ AWS uses service roles to grant permissions to an AWS service so it can access A
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -57,7 +57,7 @@ You must use the name listed above. The Amazon Chime SDK only accepts that speci
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

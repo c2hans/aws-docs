@@ -15,7 +15,7 @@ Each log entry is a JSON object, so you can select events by any field. Use the 
 
 To search the logs from the AWS CLI, use `filter-log-events` with a filter pattern. The following example returns the warnings and errors from the last hour:
 
-```
+```bash
 aws logs filter-log-events \
   --log-group-name /aws/lambda/capacity-provider/{{my-capacity-provider}} \
   --start-time $(($(date +%s) - 3600))000 \

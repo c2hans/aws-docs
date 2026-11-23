@@ -23,13 +23,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT data endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:Data-ATS
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-data-prefix}}-ats.iot.us-west-2.amazonaws.com"
    }
@@ -37,13 +37,13 @@ Get the AWS IoT endpoints for your AWS account, and save them to use later. Your
 
 1. Get the AWS IoT credentials endpoint for your AWS account.
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
    ```
 
    The response looks similar to the following example, if the request succeeds.
 
-   ```
+   ```json
    {
      "endpointAddress": "{{device-credentials-prefix}}.credentials.iot.us-west-2.amazonaws.com"
    }

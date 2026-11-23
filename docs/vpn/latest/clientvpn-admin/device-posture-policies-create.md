@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 
 To attach or replace the authorization policy on an endpoint, use `modify-client-vpn-endpoint-authorization-policy`.
 
-```
+```bash
 aws ec2 modify-client-vpn-endpoint-authorization-policy \
   --client-vpn-endpoint-id cvpn-endpoint-EXAMPLE \
   --policy-document 'permit(principal, action, resource) when { context.crowdstrike.assessment.overall > 50 };' \

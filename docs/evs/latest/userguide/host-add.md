@@ -42,7 +42,7 @@ To create the host in the Amazon EVS console or with the AWS CLI, use the follow
 
 1. Run the `aws evs create-environment-host` command. The following example adds a host that runs ESX 9.0.2. Replace the example environment ID, host name, and key pair name with your own values. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs create-environment-host \
        --environment-id env-abcde12345 \
        --esx-version ESXi-9.0.2.0.25148076 \
@@ -56,7 +56,7 @@ To create the host in the Amazon EVS console or with the AWS CLI, use the follow
 
 1. Check the host state. The create command doesn’t return a host ID, so use the host name to find the host. Replace the example environment ID with your own value. Replace `<region-code>` with the Region where you created the environment.
 
-   ```
+   ```bash
    aws evs list-environment-hosts \
        --environment-id env-abcde12345 \
        --query 'environmentHosts[].[hostName,hostState,ipAddress]' \

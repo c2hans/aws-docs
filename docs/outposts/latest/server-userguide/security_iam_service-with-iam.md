@@ -53,7 +53,7 @@ outposts
 
 To specify multiple actions in a single statement, separate them with commas.
 
-```
+```json
 "Action": [
     "outposts:{{action1}}",
     "outposts:{{action2}}"
@@ -62,7 +62,7 @@ To specify multiple actions in a single statement, separate them with commas.
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `List`, include the following action:
 
-```
+```json
 "Action": "outposts:List*"
 ```
 
@@ -81,7 +81,7 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 
 Some AWS Outposts API actions support multiple resources. To specify multiple resources in a single statement, separate the ARNs with commas.
 
-```
+```json
 "Resource": [
     "{{resource1}}",
     "{{resource2}}"

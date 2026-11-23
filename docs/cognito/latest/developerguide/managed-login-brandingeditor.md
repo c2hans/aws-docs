@@ -230,7 +230,7 @@ Amazon Cognito manages a file in the [JSON-Schema format](https://json-schema.or
 
 1. Retrieve the settings for the branding style with a [DescribeManagedLoginBrandingByClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeManagedLoginBrandingByClient.html) API request with `ReturnMergedResources` set to `true`. The following is an example request body.
 
-   ```
+   ```json
    {
       "ClientId": "1example23456789",
       "ReturnMergedResources": true,

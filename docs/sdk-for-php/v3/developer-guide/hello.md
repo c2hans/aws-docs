@@ -31,7 +31,7 @@ Make sure you can authenticate.
 
 Copy and paste the following code into a new source file. Save and name the file `hello-s3.php`.
 
-```
+```php
 <?php
 
 require 'vendor/autoload.php';

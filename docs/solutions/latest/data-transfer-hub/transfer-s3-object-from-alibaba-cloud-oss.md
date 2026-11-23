@@ -79,6 +79,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/trans
 
 ![Transfer task details and status](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/create-oss-transfer-task.png)
 
+**Transfer task details and status**
+
  Select the Task ID to go to the task Details page, and then choose CloudWatch Dashboard to monitor the task status.
 
 ## How to achieve real-time data transfer by OSS event trigger
@@ -101,7 +103,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/trans
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

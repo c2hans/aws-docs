@@ -82,7 +82,7 @@ For more Feature Store examples and resources, see [Amazon SageMaker Feature Sto
 
 The following code shows different example search queries using the API:
 
-```
+```python
 # Return all features in your feature groups
 sagemaker_client.search(
     Resource="FeatureMetadata",

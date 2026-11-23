@@ -21,7 +21,7 @@ Create a log group:
 **Example**
 Open the CloudWatch console, go to **Logs > Log groups**, and choose **Create log group**. Enter a name like `/bedrock-agentcore/payments/my-logs` and select your preferred retention period.
 
-```
+```bash
 aws logs create-log-group --log-group-name /bedrock-agentcore/payments/my-logs
 ```
 
@@ -30,7 +30,7 @@ aws logs create-log-group --log-group-name /bedrock-agentcore/payments/my-logs
 
 Your IAM user or role must have the following permissions to create log and span delivery resources:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -186,7 +186,7 @@ From the Payment Manager details page in the Amazon Bedrock AgentCore console:
 1. Enable traces to view spans in AWS X-Ray.
 The **Observability** section on the Payment Manager details page provides real-time metrics including session counts, API invocations, transaction success rates, and error rates.
 
-```
+```bash
 # Step 1: Allow vended log delivery for your Payment Manager
 aws bedrock-agentcore allow-vended-log-delivery-for-resource \
     --resource-arn "arn:aws:bedrock-agentcore:us-west-2:123456789012:payment-manager/my-manager"
@@ -208,7 +208,7 @@ aws logs create-delivery \
     --delivery-destination-arn "arn:aws:logs:us-west-2:123456789012:delivery-destination:payments-log-destination"
 ```
 
-```
+```python
 import boto3
 
 # Allow vended log delivery for your Payment Manager

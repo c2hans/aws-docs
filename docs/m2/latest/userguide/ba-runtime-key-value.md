@@ -24,7 +24,7 @@ In Spring Boot applications `application-main.yml` is the configuration file in 
 
 In the following documentation, a property such as `parent.child1.child2=true` is written as follows in YAML format.
 
-```
+```yml
  parent:
   child1:
     child2: true
@@ -958,7 +958,7 @@ Your modernized application may require specific property configurations for the
 
 The in-memory cache feature enables users to cache read-only data within memory, significantly improving performance for data-intensive programs. The cache system optimizes performance in three ways: loading data only on first access, creating data access maps on demand, and storing cached data efficiently near program memory. This design minimizes memory overhead while maximizing speed improvements.
 
-```
+```yml
 ###################################################################
 # Cache configuration for read operations called from DAO classes #
 ###################################################################
@@ -1007,7 +1007,7 @@ When enabled, user can provide logback file configuration to log API access logs
 
 To configure a dedicated log file for API access logs, add the following to your logback configuration:
 
-```
+```xml
 <!-- File appender -->
 <appender name="ApiAccessFile" class="ch.qos.logback.core.FileAppender">
     <file>logs/main/main-api-access.log</file>

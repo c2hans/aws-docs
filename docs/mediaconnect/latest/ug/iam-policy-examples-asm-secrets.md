@@ -28,7 +28,7 @@ Replace the {{placeholder text}} in the ARNs with your own information. The ARNs
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,7 +69,7 @@ Replace the {{placeholder text}} in the ARNs with your own information. The Regi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -104,7 +104,7 @@ The following IAM policy allows read access to all resources that you create in 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -13,7 +13,7 @@ The following policy can be attached to an IAM role to allow it to perform direc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

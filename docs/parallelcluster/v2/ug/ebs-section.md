@@ -18,7 +18,7 @@ For more information, see [Best practices: moving a cluster to a new AWS Paralle
 
 The format is `[ebs {{ebs-name}}]`. {{ebs-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [ebs custom1]
 shared_dir = {{vol1}}
 ebs_snapshot_id = {{snap-xxxxx}}
@@ -53,7 +53,7 @@ This parameter is required when using multiple Amazon EBS volumes.
 
 When you use one Amazon EBS volume, this option overwrites the [`shared_dir`](cluster-definition.md#cluster-shared-dir) that's specified under the [`[cluster]` section](cluster-definition.md). In the following example, the volume mounts to `/vol1`.
 
-```
+```ini
 shared_dir = vol1
 ```
 
@@ -68,7 +68,7 @@ This parameter must be used together with `encrypted = true`. It also must have 
 
 For more information, see [Disk encryption with a custom KMS Key](tutorials_04_encrypted_kms_fs.md).
 
-```
+```ini
 ebs_kms_key_id = {{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}}
 ```
 
@@ -81,7 +81,7 @@ ebs_kms_key_id = {{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}}
 
 There is no default value.
 
-```
+```ini
 ebs_snapshot_id = {{snap-xxxxx}}
 ```
 
@@ -94,7 +94,7 @@ ebs_snapshot_id = {{snap-xxxxx}}
 
 There is no default value.
 
-```
+```ini
 ebs_volume_id = {{vol-xxxxxx}}
 ```
 
@@ -107,7 +107,7 @@ ebs_volume_id = {{vol-xxxxxx}}
 
 The default value is `false`.
 
-```
+```ini
 encrypted = false
 ```
 
@@ -135,7 +135,7 @@ Default `volume_iops` = 3000
 Supported values `volume_iops` = 3000–16000
 Maximum `volume_iops` to `volume_size` ratio = 500 IOPS for each GiB. 5000 IOPS requires a `volume_size` of at least 10 GiB.
 
-```
+```ini
 volume_iops = 200
 ```
 
@@ -162,7 +162,7 @@ Supported values `volume_size` = 1–16384 GiB
 Default `volume_size` = 500 GiB
 Supported values `volume_size` = 500–16384 GiB
 
-```
+```ini
 volume_size = 20
 ```
 
@@ -182,7 +182,7 @@ Supported values `volume_throughput` = 125–1000 MiB/s
 
 The ratio of `volume_throughput` to `volume_iops` can be no more than 0.25. The maximum throughput of 1000 MiB/s requires that the `volume_iops` setting is at least 4000.
 
-```
+```ini
 volume_throughput = 1000
 ```
 
@@ -217,7 +217,7 @@ For more information, see [Amazon EBS volume types](https://docs.aws.amazon.com/
 
 The default value is `gp2`.
 
-```
+```ini
 volume_type = io2
 ```
 

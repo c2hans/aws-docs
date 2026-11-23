@@ -29,7 +29,7 @@ Attach an IAM policy to the role to allow it to access AWS Transform for mainfra
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

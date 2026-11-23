@@ -73,7 +73,7 @@ To create the pool in the IPAM console or with the AWS CLI, choose the tab for t
 
 1. Get the public scope ID of your IPAM.
 
-   ```
+   ```bash
    SCOPE_ID=$(aws ec2 describe-ipam-scopes \
      --filters Name=ipam-scope-type,Values=public \
      --query 'IpamScopes[0].IpamScopeId' \
@@ -82,7 +82,7 @@ To create the pool in the IPAM console or with the AWS CLI, choose the tab for t
 
 1. Create a pool in the public scope. Use the Region of your VPC for `--locale`.
 
-   ```
+   ```bash
    aws ec2 create-ipam-pool \
      --ipam-scope-id $SCOPE_ID \
      --address-family ipv4 \
@@ -96,7 +96,7 @@ To create the pool in the IPAM console or with the AWS CLI, choose the tab for t
 
 1. Store the pool ID.
 
-   ```
+   ```bash
    POOL_ID=$(aws ec2 describe-ipam-pools \
      --filters Name=tag:Name,Values=evs-hcx-public-pool \
      --query 'IpamPools[0].IpamPoolId' \
@@ -105,7 +105,7 @@ To create the pool in the IPAM console or with the AWS CLI, choose the tab for t
 
 1. Provision a CIDR block from the pool. The minimum netmask length is /28.
 
-   ```
+   ```bash
    aws ec2 provision-ipam-pool-cidr \
      --ipam-pool-id $POOL_ID \
      --netmask-length 28
@@ -139,7 +139,7 @@ To allocate the addresses in the Amazon VPC console or with the AWS CLI, choose 
 
 1. Allocate each address from the pool. Use the pool ID from [Step 2](#evs-env-hcx-internet-access-create-pool) (`POOL_ID`). Replace the example addresses with addresses from your CIDR block.
 
-   ```
+   ```bash
    aws ec2 allocate-address \
      --domain vpc \
      --tag-specifications 'ResourceType=elastic-ip,Tags=[{Key=Name,Value=evs-hcx-manager-eip}]' \
@@ -187,7 +187,7 @@ To add the CIDR block in the Amazon VPC console or with the AWS CLI, choose the 
 
 1. Get the CIDR block that you provisioned in the pool. Use the pool ID from [Step 2](#evs-env-hcx-internet-access-create-pool) (`POOL_ID`).
 
-   ```
+   ```bash
    CIDR_BLOCK=$(aws ec2 get-ipam-pool-cidrs \
      --ipam-pool-id $POOL_ID \
      --query 'IpamPoolCidrs[0].Cidr' \
@@ -196,7 +196,7 @@ To add the CIDR block in the Amazon VPC console or with the AWS CLI, choose the 
 
 1. Add the CIDR block to your VPC. Replace `<vpc-id>` with the ID of your VPC.
 
-   ```
+   ```bash
    aws ec2 associate-vpc-cidr-block \
      --vpc-id <vpc-id> \
      --cidr-block $CIDR_BLOCK
@@ -247,7 +247,7 @@ Must be `hcx`.
  `allocation-id`
 The allocation ID of the Elastic IP address.
 
-   ```
+   ```bash
    aws evs associate-eip-to-vlan \
      --environment-id <environment-id> \
      --vlan-name "hcx" \
@@ -255,7 +255,7 @@ The allocation ID of the Elastic IP address.
    ```
 The command returns the VLAN with the new association in the `eipAssociations` array:
 
-   ```
+   ```json
    {
        "vlan": {
            "vlanId": 80,
@@ -315,7 +315,7 @@ Must be `hcx`.
  `association-id`
 The ID of the association to remove.
 
-   ```
+   ```bash
    aws evs disassociate-eip-from-vlan \
      --environment-id <environment-id> \
      --vlan-name "hcx" \

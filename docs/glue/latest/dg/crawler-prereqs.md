@@ -23,7 +23,7 @@ If you specify an existing role for a crawler, ensure that it includes the `AWSG
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -49,7 +49,7 @@ For an Amazon DynamoDB data store, the policy would at a minimum be the followin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

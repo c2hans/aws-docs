@@ -49,7 +49,7 @@ Each entry shows an example `Operations` item. The operators that read record te
 `TextQualityFilter`
 Drops records that fail one text quality check. Set `FilterType` to one of `Alphanumeric`, `AverageLineLength`, `CharacterLength`, `CharRepetition`, `Mojibake`, `Urls`, or `WordRepetition`, and then set the thresholds for that check. The following example drops records whose prompt is shorter than 20 characters.
 
-```
+```python
 {"Operator": "TextQualityFilter",
  "Config": {"FilterType": "CharacterLength", "TextField": "prompt", "MinLength": 20}}
 ```
@@ -59,14 +59,14 @@ Removes records whose text field matches another record's. How it matches depend
 + Inputs smaller than 500 MiB – Text must match exactly. Don't set `Normalize` to `True`. The job fails with an `InternalServerError` reason.
 + Inputs of 500 MiB or more – By default, the match ignores case and extra whitespace. For an exact match, set `Normalize` to `False`.
 
-```
+```python
 {"Operator": "ExactDedup", "Config": {"TextField": "prompt"}}
 ```
 
 `FuzzyDedup`
 Removes near-duplicate records by using MinHash similarity. `JaccardThreshold` sets the approximate similarity, from 0 to 1, at which two records count as near-duplicates. `NgramSize` is measured in words. Records with fewer than 5 words aren't checked for near-duplicates.
 
-```
+```python
 {"Operator": "FuzzyDedup",
  "Config": {"TextField": "prompt", "JaccardThreshold": 0.7, "NumPerm": 128, "NgramSize": 5}}
 ```
@@ -74,7 +74,7 @@ Removes near-duplicate records by using MinHash similarity. `JaccardThreshold` s
 `LanguageFilter`
 Keeps records whose text is in one of the languages that you list, and drops the rest. `TextField` is required and must name a field that holds plain text. The job fails if the field holds a chat messages array. `Languages` takes lowercase language codes, such as `en`. When you set `Languages`, records with empty text are dropped.
 
-```
+```python
 {"Operator": "LanguageFilter", "Config": {"TextField": "text", "Languages": ["en"]}}
 ```
 
@@ -98,7 +98,7 @@ The categories it detects are the following:
 + `drop` – Removes the record.
 To handle some entity types differently, set `ActionMap`. Its keys are uppercase entity types, such as `EMAIL`, `PHONE`, `SSN`, `PRIVATE_NAMES`, or `FULL_ADDRESSES`, and its values are actions. Entity types that aren't in the map use `DefaultAction`. A record that contains an entity type mapped to `drop` is removed, even if it also contains other types. The following example redacts email addresses, drops records that contain a phone number, and keeps other records unchanged.
 
-```
+```python
 {"Operator": "PiiRedaction",
  "Config": {"TextField": "text", "ActionMap": {"EMAIL": "redact", "PHONE": "drop"}}}
 ```
@@ -107,7 +107,7 @@ When `DefaultAction` or any `ActionMap` value is `redact` or `drop`, records tha
 + A chat record with a message field that the operator doesn't check, such as `tool_call_id`.
 When `EmitEvidence` is `True`, `report.json` lists each record's outcome, the entity types found, and the start and end character offsets of up to 10 pieces of PII. To identify records in that list by one of their fields, set `RowIdField` to that field's name.
 
-```
+```python
 {"Operator": "PiiRedaction",
  "Config": {"TextField": "text", "EmitEvidence": True, "RowIdField": "id"}}
 ```
@@ -116,7 +116,7 @@ When `EmitEvidence` is `True`, `report.json` lists each record's outcome, the en
 `Split`
 Divides one dataset into several, such as training and test sets. `Ratios` is required. It needs at least two entries, and the values must sum to 1.0. Each part is published as its own dataset, named from the job name and the ratio key, for example `{{job-name}}-train`. Ratio keys are converted to lowercase. They can contain only letters, numbers, and hyphens, and must start and end with a letter or number. A key such as `train_set` fails the job.
 
-```
+```python
 {"Operator": "Split", "Config": {"Ratios": {"train": 0.8, "test": 0.2}, "Seed": 42}}
 ```
 `Method` sets how records are assigned to parts:
@@ -125,7 +125,7 @@ Divides one dataset into several, such as training and test sets. `Ratios` is re
 + `cluster` – Groups records whose text in `TextField` is similar, and then divides each group across the parts by `Ratios`. A small group can end up in only one part. To set the maximum number of groups, set `NumClusters` to an integer of 2 or more. If the dataset is too small for that number, SageMaker AI uses fewer groups. If you leave it out, SageMaker AI chooses the number. To also keep the share of each label about the same, set `StratifyField`.
 `TextField` and `NumClusters` are valid only with `cluster`, and `StratifyField` isn't valid with `random`. The following examples split by label and by topic.
 
-```
+```python
 {"Operator": "Split",
  "Config": {"Method": "stratified", "StratifyField": "label", "Ratios": {"train": 0.8, "test": 0.2}}}
 
@@ -136,33 +136,33 @@ Divides one dataset into several, such as training and test sets. `Ratios` is re
 `Merge`
 Combines two datasets into a new dataset named from the job name, for example `{{job-name}}-merged`. Pass exactly two datasets in `input_data_config`. Leave `Config` empty. Any key fails the job.
 
-```
+```python
 {"Operator": "Merge", "Config": {}}
 ```
 
 `SchemaConversion`
 Converts records into another dataset format. Set `TargetFormat` to `Bedrock_Converse`, `HF_Prompt_Completion`, or `OpenAI_Messages`. It must differ from the input dataset's format. One input record can produce more than one output record. For example, a multi-turn conversation becomes one prompt and completion pair for each turn.
 
-```
+```python
 {"Operator": "SchemaConversion", "Config": {"TargetFormat": "HF_Prompt_Completion"}}
 ```
 
 `SchemaFilter`
 Drops records that don't match a dataset format. Use it to clean up a dataset that mixes formats. `ExpectedFormat` takes the same values as `TargetFormat`. If you leave it out, records are checked against the input dataset's format.
 
-```
+```python
 {"Operator": "SchemaFilter", "Config": {"ExpectedFormat": "HF_Prompt_Completion"}}
 ```
 
 `BYOC`
 Runs a Python module that you upload to Amazon S3. A `BYOC` job takes one input dataset. In the following example, replace {{amzn-s3-demo-bucket}} with your bucket name.
 
-```
+```python
 {"Operator": "BYOC", "Config": {"TransformationCodeS3Uri": "s3://{{amzn-s3-demo-bucket}}/code/transformer.py"}}
 ```
 The module must define a function named `transform_dataset`. The following Python module strips whitespace from each completion.
 
-```
+```python
 import json
 import os
 
@@ -188,7 +188,7 @@ The code runs in a restricted Python environment. It can import `pandas`, `numpy
 `CodeGen`
 Has a model write the transformation code from a specification, a text or Markdown file that you upload to Amazon S3. In the following example, replace {{amzn-s3-demo-bucket}} with your bucket name.
 
-```
+```python
 {"Operator": "CodeGen",
  "Config": {"SpecificationS3Uri": "s3://{{amzn-s3-demo-bucket}}/specs/transform-spec.md",
             "AutoExecute": True}}
@@ -213,7 +213,7 @@ You can run DT in the Amazon SageMaker Python SDK directly, or through a coding 
 
 The following example removes exact duplicates from a dataset, and then splits the result into training and test sets. It assumes that you've configured an execution role and a default Amazon S3 bucket, as described in [Set up and prerequisites](ai-data-preparation-getting-started.md#ai-data-preparation-setup). Replace {{your-dataset-arn}} with the ARN of your dataset, and {{amzn-s3-demo-bucket}} with your bucket name.
 
-```
+```python
 from sagemaker.core.helper.session_helper import Session
 from sagemaker.ai_registry import DataPreparer, DatasetJobConfig, JobCategory
 

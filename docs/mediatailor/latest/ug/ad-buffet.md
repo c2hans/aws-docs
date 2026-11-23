@@ -13,7 +13,7 @@ AWS Elemental MediaTailor supports this specification through the `AdSequencingM
 
 The following example shows a VAST response that contains sequenced ads and standalone ads:
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="sequencedAd1">...</Ad>    <!-- Sequenced Ad 1 -->
   <Ad sequence="2" id="sequencedAd2">...</Ad>    <!-- Sequenced Ad 2 -->
@@ -77,7 +77,7 @@ When you enable ad buffet, MediaTailor respects the `Wrapper.fallbackOnNoAd` and
 
 The following example enables ad buffet for both live and VOD workflows:
 
-```
+```json
 {
     "PlaybackConfiguration": {
         "AdDecisionServerConfiguration": {
@@ -91,7 +91,7 @@ The following example enables ad buffet for both live and VOD workflows:
 
 The following example enables ad buffet for live workflows only:
 
-```
+```json
 {
     "PlaybackConfiguration": {
         "AdDecisionServerConfiguration": {
@@ -105,7 +105,7 @@ The following example enables ad buffet for live workflows only:
 
 The following example enables ad buffet for VOD workflows only:
 
-```
+```json
 {
     "PlaybackConfiguration": {
         "AdDecisionServerConfiguration": {
@@ -122,7 +122,7 @@ The following example enables ad buffet for VOD workflows only:
 
 The following example enables ad buffet for live preroll ads:
 
-```
+```json
 {
     "PlaybackConfiguration": {
         "LivePrerollConfiguration": {
@@ -194,7 +194,7 @@ The following table describes MediaTailor behavior when the redirect response is
 **Example fallbackOnNoAd=true (redirect fails)**
 **Parent VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad sequence="2">
@@ -209,7 +209,7 @@ The following table describes MediaTailor behavior when the redirect response is
 **Wrapper redirect response:** Empty VAST, times out, or errors.
 **Resolved VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <!-- standAloneAd1 replaced failed Wrapper Ad and now has the Wrapper's sequence (2) -->
@@ -226,7 +226,7 @@ The following table describes MediaTailor behavior when the redirect response is
 **Example fallbackOnNoAd=false (redirect fails)**
 **Parent VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad sequence="2">
@@ -241,7 +241,7 @@ The following table describes MediaTailor behavior when the redirect response is
 **Wrapper redirect response:** Empty VAST, times out, or errors.
 **Resolved VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <!-- sequence 2 is not replaced -->
@@ -266,7 +266,7 @@ The following table describes MediaTailor behavior when the redirect response co
 **Example allowMultipleAds=false, wrapper has sequence=2**
 **Parent VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad sequence="2">
@@ -281,7 +281,7 @@ The following table describes MediaTailor behavior when the redirect response co
 ```
 **Wrapper redirect response:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="redirectSeqAd1">...</Ad>
   <Ad sequence="2" id="redirectSeqAd2">...</Ad>
@@ -290,7 +290,7 @@ The following table describes MediaTailor behavior when the redirect response co
 ```
 **Resolved VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad sequence="2" id="redirectSeqAd1">...</Ad> <!-- redirectSeqAd1 selected, inherits Wrapper's sequence (2) -->
@@ -310,7 +310,7 @@ The following table describes MediaTailor behavior when the redirect response co
 **Example allowMultipleAds=false, wrapper has no sequence**
 **Parent VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad>
@@ -325,7 +325,7 @@ The following table describes MediaTailor behavior when the redirect response co
 ```
 **Wrapper redirect response:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="redirectSeqAd1">...</Ad>
   <Ad sequence="2" id="redirectSeqAd2">...</Ad>
@@ -334,7 +334,7 @@ The following table describes MediaTailor behavior when the redirect response co
 ```
 **Resolved VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad id="redirectSeqAd1">...</Ad> <!-- redirectSeqAd1 selected, inherits Wrapper's sequence (UNDEFINED) -->
@@ -353,7 +353,7 @@ redirectSeqAd1 is not played because it has no sequence defined.
 **Example allowMultipleAds=true, wrapper has sequence=2**
 **Parent VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad sequence="2">
@@ -368,7 +368,7 @@ redirectSeqAd1 is not played because it has no sequence defined.
 ```
 **Wrapper redirect response:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="redirectSeqAd1">...</Ad>
   <Ad sequence="2" id="redirectSeqAd2">...</Ad>
@@ -377,7 +377,7 @@ redirectSeqAd1 is not played because it has no sequence defined.
 ```
 **Resolved VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <!-- Redirect response merged at sequence 2 -->
@@ -402,7 +402,7 @@ redirectSeqAd1 is not played because it has no sequence defined.
 **Example allowMultipleAds=true, wrapper has no sequence**
 **Parent VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad>
@@ -417,7 +417,7 @@ redirectSeqAd1 is not played because it has no sequence defined.
 ```
 **Wrapper redirect response:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="redirectSeqAd1">...</Ad>
   <Ad sequence="2" id="redirectSeqAd2">...</Ad>
@@ -426,7 +426,7 @@ redirectSeqAd1 is not played because it has no sequence defined.
 ```
 **Resolved VAST:**
 
-```
+```xml
 <VAST>
   <Ad sequence="1" id="seqAd1">...</Ad>
   <Ad sequence="3" id="seqAd3">...</Ad>

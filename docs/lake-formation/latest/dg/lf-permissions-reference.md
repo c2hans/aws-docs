@@ -32,6 +32,14 @@ Following are the valid Lake Formation permissions available for each type of re
     - DESCRIBE
     - DROP
 
+- **`User-defined function`**
+  - **Permission:**
+    - ALL (Super)
+    - ALTER
+    - DESCRIBE
+    - DROP
+    - EXECUTE
+
 - ** `Table`**
   - **Permission:**
     - ALL (Super)
@@ -97,6 +105,8 @@ Following are the valid Lake Formation permissions available for each type of re
 
 - ** `Table with column filter`**
   - **Permission:** SELECT
+
+For governed Data Catalog user-defined functions, you can use these permissions to control who can discover, run, update, or delete a function. You can also grant the UDF principal `SELECT` on tables. For registration, update, and delete examples, see [Governing AWS Glue Data Catalog user-defined functions with Lake Formation](governing-user-defined-functions.md).
 
 **Topics**
 + [Lake Formation permissions per resource type](#lf-resource-permissions-summary)

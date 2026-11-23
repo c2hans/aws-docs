@@ -57,7 +57,7 @@ At this point you've created:
 
    Run the following command:
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
    ```
 
@@ -66,7 +66,7 @@ At this point you've created:
 
    In [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html), run the following command:
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
    ```
 
@@ -81,7 +81,7 @@ At this point you've created:
 
    Run the following command:
 
-   ```
+   ```bash
    aws iot describe-endpoint --endpoint-type iot:Data-ATS
    ```
 
@@ -104,7 +104,7 @@ At this point you've created:
 
    Run the following command to validate that your items were generated correctly.
 
-   ```
+   ```bash
    curl --header "x-amzn-iot-thingname:{{your-thing-name}}" \
      --cert /{{path}}/{{to}}/{{certificateID-certificate}}.pem.crt \
      --key /{{path}}/{{to}}/{{certificateID-private}}.pem.key \

@@ -46,7 +46,7 @@ Where:
 **Example Endpoint request file**
 The example `update-endpoint` command uses a JSON file as the argument for the `--endpoint-request` parameter. This file contains a user definition like the following:
 
-```
+```json
 {
     "User":{
         "UserId":"example_user",
@@ -69,7 +69,7 @@ You can use the Amazon Pinpoint API in your Java applications by using the clien
 **Example Code**
 To add a user to an endpoint, initialize an EndpointRequest object, and pass it to the `updateEndpoint` method of the `AmazonPinpoint` client. You can use this object to define a new endpoint, which can include a user. Or, to update an existing endpoint, you can update just the properties that you want to change. The following example adds a user to an existing endpoint by adding an EndpointUser object to the EndpointRequest object:
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.EndpointRequest;
@@ -84,7 +84,7 @@ import java.util.List;
 import java.util.Map;
 ```
 
-```
+```java
     public static void updatePinpointEndpoint(PinpointClient pinpoint, String applicationId, String endPointId) {
         try {
             List<String> wangXiList = new ArrayList<>();
@@ -147,7 +147,7 @@ Where:
 + {{endpoint-id}} is the ID that you're assigning to a new endpoint, or it's the ID of an existing endpoint that you're updating.
 In your request, include the required headers, and provide the [EndpointRequest](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-schemas) JSON as the body. The request body can define a new endpoint, which can include a user. Or, to update an existing endpoint, you can provide just the attributes that you want to change. The following example adds a user to an existing endpoint by providing only the user attributes:
 
-```
+```http
 PUT /v1/apps/{{application_id}}/endpoints/{{example_endpoint}} HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 X-Amz-Date: 20180415T182538Z

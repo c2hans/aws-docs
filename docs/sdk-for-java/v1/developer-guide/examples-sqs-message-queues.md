@@ -17,7 +17,7 @@ Use the AmazonSQS client’s `createQueue` method, providing a [CreateQueueReque
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.AmazonSQSException;
@@ -26,7 +26,7 @@ import com.amazonaws.services.sqs.model.CreateQueueRequest;
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 CreateQueueRequest create_request = new CreateQueueRequest(QUEUE_NAME)
         .addAttributesEntry("DelaySeconds", "60")
@@ -43,7 +43,7 @@ try {
 
 You can use the simplified form of `createQueue`, which needs only a queue name, to create a standard queue.
 
-```
+```java
 sqs.createQueue("MyQueue" + new Date().getTime());
 ```
 
@@ -56,7 +56,7 @@ To list the Amazon SQS queues for your account, call the AmazonSQS client’s `l
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.ListQueuesResult;
@@ -64,7 +64,7 @@ import com.amazonaws.services.sqs.model.ListQueuesResult;
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 ListQueuesResult lq_result = sqs.listQueues();
 System.out.println("Your SQS Queue URLs:");
@@ -77,7 +77,7 @@ Using the `listQueues` overload without any parameters returns *all queues*. You
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.ListQueuesRequest;
@@ -85,7 +85,7 @@ import com.amazonaws.services.sqs.model.ListQueuesRequest;
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 String name_prefix = "Queue";
 lq_result = sqs.listQueues(new ListQueuesRequest(name_prefix));
@@ -104,14 +104,14 @@ Call the AmazonSQS client’s `getQueueUrl` method.
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 ```
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 String queue_url = sqs.getQueueUrl(QUEUE_NAME).getQueueUrl();
 ```
@@ -125,14 +125,14 @@ Provide the queue’s [URL](#sqs-get-queue-url) to the AmazonSQS client’s `del
 
  **Imports**
 
-```
+```java
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 ```
 
  **Code**
 
-```
+```java
 AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 sqs.deleteQueue(queue_url);
 ```

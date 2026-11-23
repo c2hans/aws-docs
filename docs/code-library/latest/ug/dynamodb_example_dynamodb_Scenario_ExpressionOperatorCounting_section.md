@@ -17,7 +17,7 @@ The following code examples show how to count expression operators in DynamoDB.
 **SDK for Java 2.x**
 Demonstrate expression operator counting using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -426,7 +426,7 @@ import java.util.regex.Pattern;
 ```
 Example usage of expression operator counting with AWS SDK for Java 2.x.
 
-```
+```java
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -511,7 +511,7 @@ Example usage of expression operator counting with AWS SDK for Java 2.x.
 **SDK for JavaScript (v3)**
 Demonstrate expression operator counting using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
@@ -846,7 +846,7 @@ function countOperatorsInExpression(expression) {
 ```
 Example usage of expression operator counting with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example of how to work with expression operator counting.
  */
@@ -931,7 +931,7 @@ async function exampleUsage() {
 **SDK for Python (Boto3)**
 Demonstrate expression operator counting using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 from typing import Any, Dict, List, Optional, Tuple
@@ -1217,7 +1217,7 @@ def _test_expression_limit(
 ```
 Example usage of expression operator counting with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the expression operator counting functions."""
 

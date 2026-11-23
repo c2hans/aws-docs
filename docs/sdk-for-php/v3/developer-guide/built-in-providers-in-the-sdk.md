@@ -8,7 +8,7 @@ The SDK provides several built-in credential providers that you can use individu
 
 When you specify a credential provider during service client creation, the SDK attempts to load credentials by using only the specified credential provider. It does not use the [default credential provider chain](guide_credentials_default_chain.md). If you know that you want a service client to use the `instanceProfile` provider, you can short-circuit the default chain by specifying the `instanceProfile` provider in the service client constructor:
 
-```
+```php
 use Aws\Credentials\CredentialProvider;
 use Aws\S3\S3Client;
 

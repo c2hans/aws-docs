@@ -176,7 +176,7 @@ Controls whether system schemas appear in the schema tree view alongside user sc
 
 The following example sets the partition count and the date format. Apply the same settings to each section name that your project uses (check the output of [DescribeConversionConfiguration](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first).
 
-```
+```json
 {
   "DB2ZOS_TO_POSTGRESQL_15": {
     "PartitionCount": 20,

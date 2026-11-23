@@ -33,6 +33,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
 ![Chart showing the disaster recovery matrix](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/disaster-recovery-matrix.png)
 
+*Example disaster recovery matrix*
+
  For each workload, investigate and understand the impact of downtime and lost data on your business. The impact typically grows with downtime and data loss, but the shape of the impact can differ based on the workload type. For example, downtime for up to an hour might have low impact, but after that, the impact could quickly intensify. Impact can take many forms, including financial impact (such as lost revenue), reputational impact (including loss of customer trust), operational impact (such as a missed payroll or decreased productivity), and regulatory risk. Once completed, assign the workload to the appropriate tier.
 
  Consider the following questions when you analyze the impact of failure:
@@ -62,6 +64,8 @@ All updated guidance and best practices now live in the [Well-Architected Framew
  The following worksheet can aid your evaluation of each workload. You may modify this worksheet to suit your specific needs, such as adding additional questions.
 
 <a name="worksheet"></a>![Worksheet](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/worksheet.png)
+
+*Worksheet*
 
 ### Implementation steps
 <a name="implementation-steps"></a>

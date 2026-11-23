@@ -70,7 +70,7 @@ bedrock
 
 To specify multiple actions in a single statement, separate them with commas.
 
-```
+```json
 "Action": [
    "bedrock:{{action1}}",
    "bedrock:{{action2}}"
@@ -96,7 +96,7 @@ To see a list of Amazon Bedrock resource types and their ARNs, see [Resources de
 
 Some Amazon Bedrock API actions support multiple resources. For example, [AssociateAgentKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentKnowledgeBase.html) accesses {{AGENT12345}} and {{KB12345678}}, so a principal must have permissions to access both resources. To specify multiple resources in a single statement, separate the ARNs with commas.
 
-```
+```json
 "Resource": [
    "arn:aws:bedrock:{{aws-region}}:{{111122223333}}:agent/{{AGENT12345}}",
    "arn:aws:bedrock:{{aws-region}}:{{111122223333}}:knowledge-base/{{KB12345678}}"

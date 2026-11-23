@@ -26,7 +26,7 @@ The permissions that your IAM role needs can depend on whether bucket is a DataS
 ------
 #### [ Amazon S3 (source location) ]
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -57,7 +57,7 @@ The permissions that your IAM role needs can depend on whether bucket is a DataS
 ------
 #### [ Amazon S3 (destination location) ]
 
-```
+```JSON
 {
  "Version": "2012-10-17",
  "Statement": [

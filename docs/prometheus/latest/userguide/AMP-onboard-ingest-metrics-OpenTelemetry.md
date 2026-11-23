@@ -44,7 +44,7 @@ Before you begin the following ingestion setup steps, you must set up your IAM r
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -74,7 +74,7 @@ Before you begin the following ingestion setup steps, you must set up your IAM r
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -106,7 +106,7 @@ When you create a namespace in Amazon EKS, `alertmanager` and node exporter are 
 
    Then run the following commands.
 
-   ```
+   ```bash
    cd ./sample-apps/prometheus-sample-app
    docker build . -t prometheus-sample-app:latest
    ```

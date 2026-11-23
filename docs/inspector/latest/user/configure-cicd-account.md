@@ -34,7 +34,7 @@ To integrate Amazon Inspector scanning into your CI/CD pipeline you need to crea
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -63,7 +63,7 @@ To integrate Amazon Inspector scanning into your CI/CD pipeline you need to crea
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

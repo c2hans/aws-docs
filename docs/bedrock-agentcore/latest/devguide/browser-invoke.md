@@ -76,7 +76,7 @@ Content-type: application/json
 
 The request body contains an `action` field with exactly one member of the `BrowserAction` union set:
 
-```
+```json
 {
     "action": {
         "mouseClick": {
@@ -96,7 +96,7 @@ The `sessionId` is returned via the `x-amzn-browser-session-id` response header.
 
 On success:
 
-```
+```json
 {
     "result": {
         "mouseClick": {
@@ -118,7 +118,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
 1. To click at a specific position:
 
-   ```
+   ```bash
    aws bedrock-agentcore invoke-browser \
      --region <Region> \
      --browser-identifier "aws.browser.v1" \
@@ -128,7 +128,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
    To type text:
 
-   ```
+   ```bash
    aws bedrock-agentcore invoke-browser \
      --region <Region> \
      --browser-identifier "aws.browser.v1" \
@@ -138,7 +138,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
    To press a keyboard shortcut:
 
-   ```
+   ```bash
    aws bedrock-agentcore invoke-browser \
      --region <Region> \
      --browser-identifier "aws.browser.v1" \
@@ -148,7 +148,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
    To take a screenshot:
 
-   ```
+   ```bash
    aws bedrock-agentcore invoke-browser \
      --region <Region> \
      --browser-identifier "aws.browser.v1" \
@@ -158,7 +158,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
 1. To click at a specific position:
 
-   ```
+   ```python
    response = dp_client.invoke_browser(
        browserIdentifier="aws.browser.v1",
        sessionId="<your-session-id>",
@@ -176,7 +176,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
    To type text:
 
-   ```
+   ```python
    response = dp_client.invoke_browser(
        browserIdentifier="aws.browser.v1",
        sessionId="<your-session-id>",
@@ -190,7 +190,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
    To take a screenshot and save it:
 
-   ```
+   ```python
    import base64
 
    response = dp_client.invoke_browser(
@@ -212,7 +212,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
 1. To click at a specific position:
 
-   ```
+   ```bash
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/invoke" \
      -H "Content-Type: application/json" \
@@ -234,7 +234,7 @@ The following examples show how to invoke browser actions using the AWS CLI, AWS
 
    To take a screenshot:
 
-   ```
+   ```bash
    awscurl -X POST \
      "https://bedrock-agentcore.<Region>.amazonaws.com/browsers/aws.browser.v1/sessions/invoke" \
      -H "Content-Type: application/json" \

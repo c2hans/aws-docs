@@ -11,7 +11,7 @@ The `smartCrop` transformation accepts one of three value forms:
 
 At least one detection method (`faces`, `faceIndex`, `labels`, `customModelArn`, `retainText`, or `retainLogo`) must be present in the expanded form.
 
-```
+```json
 {
   "transformation": "smartCrop",
   "value": {

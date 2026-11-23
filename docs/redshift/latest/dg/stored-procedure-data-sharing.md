@@ -16,7 +16,7 @@ The examples in this section use a producer database named `producer_db` that is
 **To share a procedure**
 + On the producer, use the following SQL statements to grant `EXECUTE` on the procedure to the datashare and give the consumer access to the datashare. Replace {{consumer-namespace-id}} with the namespace ID of the consumer cluster:
 
-  ```
+  ```sql
   -- On the producer, in producer_db
   CREATE PROCEDURE public.refresh_summary(p_region varchar)
   AS $$
@@ -39,20 +39,20 @@ The examples in this section use a producer database named `producer_db` that is
 
 1. On the consumer, create a database from the datashare. Replace {{producer-namespace-id}} with the namespace ID of the producer cluster:
 
-   ```
+   ```sql
    -- On the consumer, in consumer_db
    CREATE DATABASE datashare_db FROM DATASHARE salesshare OF NAMESPACE '{{producer-namespace-id}}';
    ```
 
 1. Run `USE` to set the database context to the database that contains the procedure. For a procedure shared through a datashare, that is the database that you created from the datashare. You must run `USE` even when you call the procedure by its three-part name:
 
-   ```
+   ```sql
    USE datashare_db;
    ```
 
 1. Call the procedure by its one-part, two-part, or three-part name:
 
-   ```
+   ```sql
    -- Three-part name
    CALL datashare_db.public.refresh_summary('WEST');
 
@@ -67,7 +67,7 @@ The examples in this section use a producer database named `producer_db` that is
 **To stop sharing a procedure**
 + On the producer, revoke `EXECUTE` on the procedure from the datashare:
 
-  ```
+  ```sql
   -- On the producer
   REVOKE EXECUTE ON PROCEDURE public.refresh_summary(varchar) FROM DATASHARE salesshare;
   ```
@@ -82,7 +82,7 @@ Object names resolve according to the following rules:
 
 The following procedure compares a total in the shared table with a total in a table that is local to the consumer:
 
-```
+```sql
 -- On the producer, in producer_db
 CREATE PROCEDURE public.compare_totals(p_region varchar)
 AS $$
@@ -101,7 +101,7 @@ $$ LANGUAGE plpgsql;
 GRANT EXECUTE ON PROCEDURE public.compare_totals(varchar) TO DATASHARE salesshare;
 ```
 
-```
+```sql
 -- On the consumer, in consumer_db
 USE datashare_db;
 CALL datashare_db.public.compare_totals('WEST');
@@ -118,7 +118,7 @@ A `USE` or `RESET USE` in the procedure body applies to the statements that foll
 
 The following procedure updates a summary in the shared database and then writes a log row to a database local to the consumer:
 
-```
+```sql
 -- On the producer, in producer_db
 CREATE PROCEDURE public.summarize_and_log(p_region varchar)
 AS $$
@@ -135,7 +135,7 @@ $$ LANGUAGE plpgsql;
 GRANT EXECUTE ON PROCEDURE public.summarize_and_log(varchar) TO DATASHARE salesshare;
 ```
 
-```
+```sql
 -- On the consumer, in consumer_db
 USE datashare_db;
 CALL datashare_db.public.summarize_and_log('EAST');

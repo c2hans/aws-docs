@@ -24,7 +24,7 @@ You can use the `SearchText` API to filter on contacts and opening hours.
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryText": "Nursing Home",
     "BiasPosition": [
@@ -39,7 +39,7 @@ You can use the `SearchText` API to filter on contacts and opening hours.
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "PricingBucket": "Advanced",
     "ResultItems": [
@@ -514,7 +514,7 @@ You can use the `SearchText` API to filter on contacts and opening hours.
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/search-text?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -531,7 +531,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places search-text --key ${YourKey} --query-text "Nursing Home" \
 --bias-position -123.11336 49.26038 \
 --additional-features "Contact"

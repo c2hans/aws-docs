@@ -250,7 +250,7 @@ The following example returns all instances in the `us-west-2` AWS Region.
 #### Sample Request
 <a name="API_GetInstances_Example_1_Request"></a>
 
-```
+```http
 POST / HTTP/1.1
 Host: lightsail.us-west-2.amazonaws.com
 Accept-Encoding: identity
@@ -268,7 +268,7 @@ Content-Length: 2
 #### Sample Response
 <a name="API_GetInstances_Example_1_Response"></a>
 
-```
+```http,https,json
 HTTP/1.1 200 OK
 Server: Server
 Date: Mon, 22 Apr 2024 14:43:17 GMT

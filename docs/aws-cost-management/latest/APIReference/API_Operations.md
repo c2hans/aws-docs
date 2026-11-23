@@ -238,6 +238,14 @@ The following actions are supported by AWS Invoicing:
 +  [UpdateProcurementPortalPreferenceStatus](API_invoicing_UpdateProcurementPortalPreferenceStatus.md)
 +  [VerifyProcurementPortalValidation](API_invoicing_VerifyProcurementPortalValidation.md)
 
+The following actions are supported by AWS Payments:
++  [BatchGetFinancialRecord](API_payments_BatchGetFinancialRecord.md)
++  [GetAccountBalance](API_payments_GetAccountBalance.md)
++  [GetFinancialRecord](API_payments_GetFinancialRecord.md)
++  [GetPaymentInstrument](API_payments_GetPaymentInstrument.md)
++  [ListFinancialRecords](API_payments_ListFinancialRecords.md)
++  [ListPaymentInstruments](API_payments_ListPaymentInstruments.md)
+
 The following actions are supported by AWS Price List:
 +  [DescribeServices](API_pricing_DescribeServices.md)
 +  [GetAttributeValues](API_pricing_GetAttributeValues.md)

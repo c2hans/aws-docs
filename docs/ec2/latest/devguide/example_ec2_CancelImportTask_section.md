@@ -35,7 +35,7 @@ For more information, see [Monitor an import image task](https://docs.aws.amazon
 **Tools for PowerShell V4**
 **Example 1: This example cancels the specified import task (either snapshot or image import). If required, a reason can be providing using the `-CancelReason` parameter.**
 
-```
+```powershell
 Stop-EC2ImportTask -ImportTaskId import-ami-abcdefgh
 ```
 +  For API details, see [CancelImportTask](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -43,7 +43,7 @@ Stop-EC2ImportTask -ImportTaskId import-ami-abcdefgh
 **Tools for PowerShell V5**
 **Example 1: This example cancels the specified import task (either snapshot or image import). If required, a reason can be providing using the `-CancelReason` parameter.**
 
-```
+```powershell
 Stop-EC2ImportTask -ImportTaskId import-ami-abcdefgh
 ```
 +  For API details, see [CancelImportTask](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -39,7 +39,7 @@ To trace requests with the X-Ray SDK for Node.js, you must modify your applicati
 
 When the X-Ray SDK for Node.js was used, the `aws-xray-sdk` package was required to configure the X-Ray SDK with service plug-ins or local sampling rules before using the SDK to instrument your code.
 
-```
+```javascript
 var AWSXRay = require('aws-xray-sdk');
 
 AWSXRay.config([AWSXRay.plugins.EC2Plugin,AWSXRay.plugins.ElasticBeanstalkPlugin]);

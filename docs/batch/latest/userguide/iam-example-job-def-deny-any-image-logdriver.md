@@ -13,7 +13,7 @@ For the list of condition keys for AWS Batch, see [Condition keys for AWS Batch]
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

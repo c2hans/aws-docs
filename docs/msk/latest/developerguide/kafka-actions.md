@@ -33,6 +33,8 @@ The following table lists the actions that you can include in an authorization p
 | kafka-cluster:DescribeGroup | Grants permission to describe groups on a cluster, equivalent to Apache Kafka's DESCRIBE GROUP ACL. | `kafka-cluster:Connect` | group | Yes |
 | kafka-cluster:AlterGroup | Grants permission to join groups on a cluster, equivalent to Apache Kafka's READ GROUP ACL. | `kafka-cluster:Connect`<br />`kafka-cluster:DescribeGroup` | group | Yes |
 | kafka-cluster:DeleteGroup | Grants permission to delete groups on a cluster, equivalent to Apache Kafka's DELETE GROUP ACL. | `kafka-cluster:Connect`<br />`kafka-cluster:DescribeGroup` | group | Yes |
+| kafka-cluster:DescribeGroupDynamicConfiguration | Grants permission to describe the dynamic configuration of groups on a cluster, equivalent to Apache Kafka's DESCRIBE\_CONFIGS GROUP ACL. | `kafka-cluster:Connect` | group | No |
+| kafka-cluster:AlterGroupDynamicConfiguration | Grants permission to alter the dynamic configuration of groups on a cluster, equivalent to Apache Kafka's ALTER\_CONFIGS GROUP ACL. | `kafka-cluster:Connect`<br />`kafka-cluster:DescribeGroupDynamicConfiguration` | group | No |
 | kafka-cluster:DescribeTransactionalId | Grants permission to describe transactional IDs on a cluster, equivalent to Apache Kafka's DESCRIBE TRANSACTIONAL\_ID ACL. | `kafka-cluster:Connect` | transactional-id | Yes |
 | kafka-cluster:AlterTransactionalId | Grants permission to alter transactional IDs on a cluster, equivalent to Apache Kafka's WRITE TRANSACTIONAL\_ID ACL. | `kafka-cluster:Connect`<br />`kafka-cluster:DescribeTransactionalId`<br />`kafka-cluster:WriteData` | transactional-id | Yes |
 

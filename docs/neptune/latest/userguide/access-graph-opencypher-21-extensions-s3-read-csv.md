@@ -105,7 +105,6 @@ Every row in the file would be required to have an integer in that position or b
 Given the following CSV file:
 
 ```
-<s3 path>
 colA:byte,colB:short,colC:int,colD:long,colE:float,colF:double,colG:string
 -128,-32768,-2147483648,-9223372036854775808,1.23456,1.23457,first
 127,32767,2147483647,9223372036854775807,nan,nan,second

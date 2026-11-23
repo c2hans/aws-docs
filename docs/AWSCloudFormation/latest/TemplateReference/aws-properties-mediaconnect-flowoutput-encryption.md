@@ -46,7 +46,7 @@ The type of algorithm that is used for static key encryption (such as aes128, ae
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KeyType`  <a name="cfn-mediaconnect-flowoutput-encryption-keytype"></a>
-The type of key that is used for the encryption. If you don't specify a `keyType` value, the service uses the default setting (`static-key`). Valid key types are: `static-key`, `speke`, and `srt-password`.
+The type of key that is used for the encryption. If you don't specify a `KeyType` value, the service uses the default setting (`static-key`). Valid key types are: `static-key` and `srt-password`.
 *Required*: No
 *Type*: String
 *Allowed values*: `static-key | srt-password`

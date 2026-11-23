@@ -27,7 +27,7 @@ Before you deploy a connectivity switch, set up the following in the destination
 + **Certificate** – Register the same device certificate in the destination account. The certificate must be the same certificate that the device uses in the source account.
 + **AWS IoT policy** – Attach a policy to the certificate. The policy must allow `iot:Connect` with a resource ARN that uses a wildcard suffix for the client ID:
 
-  ```
+  ```json
   "Resource": "arn:aws:iot:*:*:client/${iot:Connection.Thing.ThingName}*"
   ```
 
@@ -57,7 +57,7 @@ Create a deployment that targets the core device or its thing group in the sourc
    + Replace {{componentName}} with `aws.greengrass.Nucleus` for nucleus or `aws.greengrass.NucleusLite` for nucleus lite.
    + Replace {{componentVersion}} with the version of the nucleus running on the device.
 
-   ```
+   ```json
    {
      "targetArn": "{{targetArn}}",
      "deploymentName": "SwitchConnectivity",
@@ -77,7 +77,7 @@ Create a deployment that targets the core device or its thing group in the sourc
 
    For Greengrass nucleus core devices that do not already have `greengrassDataPlaneEndpoint` set to **iotdata**, add it to the merge configuration:
 
-   ```
+   ```json
    "merge": "{\"iotDataEndpoint\":\"...\",\"iotCredEndpoint\":\"...\",\"awsRegion\":\"...\",\"iotRoleAlias\":\"...\",\"greengrassDataPlaneEndpoint\":\"iotdata\"}"
    ```
 
@@ -85,7 +85,7 @@ Create a deployment that targets the core device or its thing group in the sourc
 
 1. Run the following command to create the deployment.
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment \
      --cli-input-json file://switch-deployment.json
    ```
@@ -113,14 +113,14 @@ After the deployment completes, verify that the connectivity switch succeeded.
 
 1. Check the deployment status in the source account. The deployment reports `SUCCEEDED` after the device connects to the new endpoint.
 
-   ```
+   ```bash
    aws greengrassv2 list-effective-deployments \
      --core-device-thing-name {{thing-name}}
    ```
 
 1. Verify that the core device appears in the destination account. Open the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass) or run the following command.
 
-   ```
+   ```bash
    aws greengrassv2 get-core-device \
      --core-device-thing-name {{thing-name}}
    ```

@@ -16,7 +16,7 @@ This is an example role for use by a integrated partner or developer when using 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ This is an example role for use by a integrated partner or developer when using 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

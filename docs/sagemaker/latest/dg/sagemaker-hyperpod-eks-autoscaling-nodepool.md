@@ -19,7 +19,7 @@ The following steps cover how to create a `NodePool`.
 
    Look for `Ready` under `Conditions` to indicate all dependent resources are functioning properly.
 
-   ```
+   ```yaml
    apiVersion: karpenter.sh/v1
    kind: NodePool
    metadata:
@@ -49,7 +49,7 @@ The following steps cover how to create a `NodePool`.
    kubectl get nodepool sample-np -oyaml
    ```
 
-   ```
+   ```yaml
    apiVersion: karpenter.sh/v1
    kind: NodePool
    metadata:

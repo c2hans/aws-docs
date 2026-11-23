@@ -27,7 +27,7 @@ The following code example shows how to get started using Amazon Bedrock Runtime
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock-runtime#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -117,7 +117,7 @@ The following code example shows how to send a text message to Amazon Nova, usin
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock-runtime#code-examples).
 Send a text message to Amazon Nova, using Bedrock's Converse API.
 
-```
+```go
 func (wrapper ConverseWrapper) ConverseNova(ctx context.Context, prompt string) (string, error) {
 	var content = types.ContentBlockMemberText{
 		Value: prompt,
@@ -156,7 +156,7 @@ The following code example shows how to invoke Amazon Titan Image on Amazon Bedr
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock-runtime#code-examples).
 Create an image with the Amazon Titan Image Generator.
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -253,7 +253,7 @@ The following code example shows how to send a text message to Anthropic Claude,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/bedrock-runtime#code-examples).
 Send a text message to Anthropic Claude, using Bedrock's Converse API.
 
-```
+```go
 import (
 	"context"
 	"github.com/aws/aws-sdk-go-v2/aws"

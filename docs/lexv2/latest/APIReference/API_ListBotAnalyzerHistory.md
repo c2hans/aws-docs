@@ -146,7 +146,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of ListBotAnalyzerHistory.
 
-```
+```json
 POST https://models-v2-lex.us-east-1.amazonaws.com/bots/<BotId>/botanalyzer/history/
 
 Payload:
@@ -161,7 +161,7 @@ Payload:
 
 This example illustrates one usage of ListBotAnalyzerHistory.
 
-```
+```json
 {
     "botId": "<BotId>",
     "localeId": "en_US",

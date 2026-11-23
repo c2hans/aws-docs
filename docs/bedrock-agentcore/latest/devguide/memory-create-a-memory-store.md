@@ -25,21 +25,21 @@ When creating an AgentCore Memory, consider the following factors to maintain it
 
 1. The AgentCore CLI memory commands must be run inside an existing AgentCore project. If you don’t have one yet, create a project first:
 
-   ```
+   ```bash
    agentcore create --name MemoryProject --template empty
    cd MemoryProject
    ```
 
     **Create** a basic memory (short-term only):
 
-   ```
+   ```bash
    agentcore add memory --name my_agent_memory
    agentcore deploy
    ```
 
     **Create** memory with long-term strategies:
 
-   ```
+   ```bash
    agentcore add memory --name ShoppingSupportAgentMemory \
      --strategies SUMMARIZATION,USER_PREFERENCE
    agentcore deploy
@@ -47,7 +47,7 @@ When creating an AgentCore Memory, consider the following factors to maintain it
 
     **Check** memory status. Run `agentcore status --json` to find the deployed memory `arn`. The memory ID is the part of the ARN after `memory/`. Then check that the memory status is `ACTIVE`:
 
-   ```
+   ```bash
    agentcore status --json
    agentcore memory get --id <memory-id>
    ```
@@ -64,20 +64,20 @@ When creating an AgentCore Memory, consider the following factors to maintain it
 
 1. Press Ctrl\+C to exit the TUI, then deploy the project to create the memory:
 
-   ```
+   ```bash
    agentcore deploy
    ```
 
 1. Run `agentcore status --json` to find the deployed memory `arn`. The memory ID is the part of the ARN after `memory/`. Then check that the memory status is `ACTIVE`:
 
-   ```
+   ```bash
    agentcore status --json
    agentcore memory get --id <memory-id>
    ```
 
 1. For more information, see [AWS SDK](aws-sdk-memory.md).
 
-   ```
+   ```python
    import boto3
    import time
 

@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example demonstrates how to use the AWS SDK for Go to get statistics about Amazon SES. Use this information to avoid damaging your reputation when emails are bounced or rejected.
 
-```
+```go
 package main
 
 import (

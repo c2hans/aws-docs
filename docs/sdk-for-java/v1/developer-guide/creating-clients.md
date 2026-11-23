@@ -15,13 +15,13 @@ Each AWS service has a service interface with methods for each action in the ser
 
 To obtain an instance of the client builder, use the static factory method `standard`, as shown in the following example.
 
-```
+```java
 AmazonDynamoDBClientBuilder builder = AmazonDynamoDBClientBuilder.standard();
 ```
 
 Once you have a builder, you can customize the client’s properties by using many fluent setters in the builder API. For example, you can set a custom region and a custom credentials provider, as follows.
 
-```
+```java
 AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.standard()
                         .withRegion(Regions.US_WEST_2)
                         .withCredentials(new ProfileCredentialsProvider("myProfile"))
@@ -35,7 +35,7 @@ A builder can create multiple clients with the same configuration. When you’re
 
 The following code uses the builder as a factory for client instances.
 
-```
+```java
 public class DynamoDBClientFactory {
     private final AmazonDynamoDBClientBuilder builder =
         AmazonDynamoDBClientBuilder.standard()
@@ -52,7 +52,7 @@ The builder also exposes fluent setters for [ClientConfiguration](https://docs.a
 
 The following is a complete example that overrides all configurable properties.
 
-```
+```java
 AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.standard()
         .withRegion(Regions.US_WEST_2)
         .withCredentials(new ProfileCredentialsProvider("myProfile"))
@@ -70,7 +70,7 @@ The AWS SDK for Java has asynchronous (or async) clients for every service (exce
 ### To create an async DynamoDB client with the default ExecutorService
 <a name="w3aab9c13b9b5"></a>
 
-```
+```java
 AmazonDynamoDBAsync ddbAsync = AmazonDynamoDBAsyncClientBuilder.standard()
         .withRegion(Regions.US_WEST_2)
         .withCredentials(new ProfileCredentialsProvider("myProfile"))
@@ -82,7 +82,7 @@ In addition to the configuration options that the synchronous (or sync) client b
 ### To create an async client with a custom executor
 <a name="w3aab9c13b9b9"></a>
 
-```
+```java
 AmazonDynamoDBAsync ddbAsync = AmazonDynamoDBAsyncClientBuilder.standard()
             .withExecutorFactory(() -> Executors.newFixedThreadPool(10))
             .build();
@@ -96,7 +96,7 @@ Both the sync and async client builders have another factory method named `defau
 ### To create a default service client
 <a name="w3aab9c13c11b5"></a>
 
-```
+```java
 AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();
 ```
 
@@ -110,7 +110,7 @@ To explicitly shut down a client, call the `shutdown` method. After calling `shu
 ### To shut down a client
 <a name="w3aab9c13c13b7"></a>
 
-```
+```java
 AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();
 ddb.shutdown();
 // Client is now unusable

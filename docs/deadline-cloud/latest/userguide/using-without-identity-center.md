@@ -68,7 +68,7 @@ The ID of the AWS account that contains your farm.
 {{farm-id}}
 The ID of your farm, such as `farm-1234567890abcdef1234567890abcdef`.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -171,7 +171,7 @@ To limit an artist to one queue, in the `SubmitAndMonitorJobs` statement replace
 
 The preceding policy doesn't include the budget manager or the usage explorer. To let someone open them in the monitor, add a policy like the following one. Replace {{region}}, {{account-id}}, and {{farm-id}} with the same values as in the preceding policy.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -202,7 +202,7 @@ To try these features with sample data, open the [demo budget manager](https://_
 
 The following policy grants the Deadline Cloud actions from the `AWSDeadlineCloud-UserAccessFarms`, `AWSDeadlineCloud-UserAccessQueues`, `AWSDeadlineCloud-UserAccessJobs`, and `AWSDeadlineCloud-UserAccessFleets` managed policies, without their membership conditions. It has no resource restrictions, so it grants owner-level access to every farm in the account. Use it for administrators, or as a starting point that you limit to specific farms and actions.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -289,7 +289,7 @@ Before you begin, install the submitter and the Deadline Cloud monitor desktop a
 
 1. On the workstation, signed in as the artist, add the following profile to `~/.aws/config` (on Windows, `%USERPROFILE%\.aws\config`). Replace {{region}} with the Region that contains your farm.
 
-   ```
+   ```ini
    [profile workstation]
    region = {{region}}
    ```
@@ -298,13 +298,13 @@ Before you begin, install the submitter and the Deadline Cloud monitor desktop a
 
 1. Make the profile the default for the Deadline Cloud tools. Either sign in to the monitor with the profile, which the monitor labels **Local Profile**, and select **Set this profile as default for Deadline Cloud tools**, or run the following command.
 
-   ```
+   ```bash
    deadline config set defaults.aws_profile_name workstation
    ```
 
 1. Set the default farm and queue for the profile, or choose them in a submitter.
 
-   ```
+   ```bash
    deadline config set defaults.farm_id {{farm-id}}
    deadline config set defaults.queue_id {{queue-id}}
    ```

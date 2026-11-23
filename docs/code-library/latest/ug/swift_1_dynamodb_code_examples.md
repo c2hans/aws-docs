@@ -36,7 +36,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 A Swift class that handles DynamoDB calls to the SDK for Swift.
 
-```
+```swift
 import AWSDynamoDB
 import Foundation
 
@@ -564,7 +564,7 @@ public class MovieTable {
 ```
 The structures used by the MovieTable class to represent movies.
 
-```
+```swift
 import Foundation
 import AWSDynamoDB
 
@@ -710,7 +710,7 @@ public struct Movie: Codable {
 ```
 A program that uses the MovieTable class to access a DynamoDB database.
 
-```
+```swift
 import ArgumentParser
 import ClientRuntime
 import Foundation
@@ -890,7 +890,7 @@ The following code example shows how to use `BatchGetItem`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Gets an array of `Movie` objects describing all the movies in the
@@ -988,7 +988,7 @@ The following code example shows how to use `BatchWriteItem`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb/#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Populate the movie database from the specified JSON file.
@@ -1061,7 +1061,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     ///
@@ -1105,7 +1105,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Delete a movie, given its title and release year.
@@ -1144,7 +1144,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     ///
@@ -1176,7 +1176,7 @@ The following code example shows how to use `GetItem`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Return a `Movie` record describing the specified movie from the Amazon
@@ -1225,7 +1225,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Get a list of the DynamoDB tables available in the specified Region.
@@ -1248,7 +1248,7 @@ The following code example shows how to use `PutItem`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Add a movie specified as a `Movie` structure to the Amazon DynamoDB
@@ -1322,7 +1322,7 @@ The following code example shows how to use `Query`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Get all the movies released in the specified year.
@@ -1384,7 +1384,7 @@ The following code example shows how to use `Scan`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Return an array of `Movie` objects released in the specified range of
@@ -1459,7 +1459,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Update the specified movie with new `rating` and `plot` information.

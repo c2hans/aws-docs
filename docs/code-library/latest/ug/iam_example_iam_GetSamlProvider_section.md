@@ -47,7 +47,7 @@ For more information, see [Creating IAM SAML identity providers](https://docs.aw
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the details about the SAML 2.0 provider whose ARM is arn:aws:iam::123456789012:saml-provider/SAMLADFS. The response includes the metadata document that you got from the identity provider to create the AWS SAML provider entity as well as the creation and expiration dates.**
 
-```
+```powershell
 Get-IAMSAMLProvider -SAMLProviderArn arn:aws:iam::123456789012:saml-provider/SAMLADFS
 ```
 **Output:**
@@ -62,7 +62,7 @@ CreateDate                 SAMLMetadataDocument                                 
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the details about the SAML 2.0 provider whose ARM is arn:aws:iam::123456789012:saml-provider/SAMLADFS. The response includes the metadata document that you got from the identity provider to create the AWS SAML provider entity as well as the creation and expiration dates.**
 
-```
+```powershell
 Get-IAMSAMLProvider -SAMLProviderArn arn:aws:iam::123456789012:saml-provider/SAMLADFS
 ```
 **Output:**

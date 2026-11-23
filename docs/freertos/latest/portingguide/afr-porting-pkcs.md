@@ -132,7 +132,7 @@ The following instructions describe how to run the tests:
 
 The following is an example of the output test result.
 
-```
+```json
 TEST(Full_PKCS11_StartFinish, PKCS11_StartFinish_FirstTest) PASS
 TEST(Full_PKCS11_StartFinish, PKCS11_GetFunctionList) PASS
 TEST(Full_PKCS11_StartFinish, PKCS11_InitializeFinalize) PASS

@@ -163,6 +163,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [glue:CreateCustomEntityType](#list_glue-action-CreateCustomEntityType)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [glue:TagResource](#list_glue-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateDataQualityEvaluationConfig  **
+  - **IAM action:**  [glue:CreateDataQualityEvaluationConfig](#list_glue-action-CreateDataQualityEvaluationConfig)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [glue:TagResource](#list_glue-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** glue.amazonaws.com / **Access level:** Write
+
 - **   CreateDataQualityRuleset  **
   - **IAM action:**  [glue:CreateDataQualityRuleset](#list_glue-action-CreateDataQualityRuleset)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [glue:TagResource](#list_glue-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -1415,6 +1420,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   UpdateDataQualityEvaluationConfig  **
+  - **IAM action:**  [glue:UpdateDataQualityEvaluationConfig](#list_glue-action-UpdateDataQualityEvaluationConfig)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** glue.amazonaws.com / **Access level:** Write
 
 - **   UpdateDataQualityRuleset  **
   - **IAM action:**  [glue:UpdateDataQualityRuleset](#list_glue-action-UpdateDataQualityRuleset)

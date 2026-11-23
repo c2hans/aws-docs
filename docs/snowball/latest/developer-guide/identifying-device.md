@@ -8,13 +8,13 @@ AWS Snowball Edge is no longer available to new customers. New customers should 
 
 Use the `describe-device` command to find the device type, then look up the returned value of `DeviceType` in the table below to determine the configuration.
 
-```
+```bash,sh,zsh
   snowballEdge describe-device
 ```
 
 **Example of `describe-device` output**
 
-```
+```JSON
   {
   "DeviceId" : "JID-206843500001-35-92-20-211-23-06-02-18-24",
   "UnlockStatus" : {

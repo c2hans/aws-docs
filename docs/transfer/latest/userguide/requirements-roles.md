@@ -83,7 +83,7 @@ In our examples, we use both `ArnLike` and `ArnEquals`. They are functionally id
 1. In the **Edit Trust Relationship** editor, make sure **service** is `"transfer.amazonaws.com"`. The access policy is shown following.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -153,7 +153,7 @@ In AWS Transfer Family, a session policy is supported only when you are transfer
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -228,7 +228,7 @@ If you have *ever* enabled versioning for your bucket, then you need these permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -275,7 +275,7 @@ In the following examples, replace {{region}} with your region, {{account-id}} w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -297,7 +297,7 @@ The following example policy grants user file system access to files in your Ama
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

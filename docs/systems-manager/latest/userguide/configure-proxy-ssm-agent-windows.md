@@ -19,7 +19,7 @@ In the following procedure, you run a command to configure SSM Agent to use a pr
 
 1. Run the following command block in PowerShell. Replace {{hostname}} and {{port}} with the information about your proxy.
 
-   ```
+   ```powershell
    $serviceKey = "HKLM:\SYSTEM\CurrentControlSet\Services\AmazonSSMAgent"
    $keyInfo = (Get-Item -Path $serviceKey).GetValue("Environment")
    $proxyVariables = @("http_proxy={{hostname}}:{{port}}", "https_proxy={{hostname}}:{{port}}", "no_proxy={{IP address for instance metadata services (IMDS)}}")
@@ -54,7 +54,7 @@ After running the preceding command, you can review the SSM Agent logs to confir
 
 1. Run the following command block in PowerShell.
 
-   ```
+   ```powershell
    Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\AmazonSSMAgent -Name Environment
    Restart-Service AmazonSSMAgent
    ```
@@ -88,7 +88,7 @@ For Run Command, configure `WinINet` proxy settings on your Windows Server insta
 
 The following PowerShell commands return the current `WinINet` proxy settings, and apply your proxy settings to `WinINet`.
 
-```
+```ps
 [System.Net.WebRequest]::DefaultWebProxy
 
 $proxyServer = "http://{{hostname}}:{{port}}"
@@ -100,7 +100,7 @@ $WebProxy = New-Object System.Net.WebProxy($proxyServer,$true,$proxyBypass)
 
 For Patch Manager, configure system-wide proxy settings so the Windows Update client can scan for and download updates. We recommend that you use Run Command to run the following commands because they run on the SYSTEM account, and the settings apply system-wide. The following `netsh` commands return the current proxy settings, and apply your proxy settings to the local system.
 
-```
+```sh
 netsh winhttp show proxy
 
 netsh winhttp set proxy proxy-server="{{hostname}}:{{port}}" bypass-list="169.254.169.254"

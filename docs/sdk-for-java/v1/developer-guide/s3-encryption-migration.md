@@ -45,7 +45,7 @@ Completing this step before deploying new application code helps to ensure that 
 
 Snippet from a pom.xml file:
 
-```
+```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -64,7 +64,7 @@ Snippet from a pom.xml file:
 
 Snippet from a build.gradle file:
 
-```
+```json
 dependencies {
   implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.837')
   implementation 'com.amazonaws:aws-java-sdk-s3'
@@ -80,7 +80,7 @@ These code snippets demonstrate how to use client-side encryption with the AWS S
 
  **V1**
 
-```
+```java
 // minimal configuration in V1; default CryptoMode.EncryptionOnly.
 EncryptionMaterialsProvider encryptionMaterialsProvider = ...
 AmazonS3Encryption encryptionClient = AmazonS3EncryptionClient.encryptionBuilder()
@@ -90,7 +90,7 @@ AmazonS3Encryption encryptionClient = AmazonS3EncryptionClient.encryptionBuilder
 
  **V2**
 
-```
+```java
 // minimal configuration in V2; default CryptoMode.StrictAuthenticatedEncryption.
 EncryptionMaterialsProvider encryptionMaterialsProvider = ...
 AmazonS3EncryptionV2 encryptionClient = AmazonS3EncryptionClientV2.encryptionBuilder()
@@ -142,14 +142,14 @@ The following example demonstrates how to specify the crypto configuration in V1
 
  **V1**
 
-```
+```java
 CryptoConfiguration cryptoConfiguration = new CryptoConfiguration()
         .withCryptoMode(CryptoMode.StrictAuthenticatedEncryption);
 ```
 
  **V2**
 
-```
+```java
 CryptoConfigurationV2 cryptoConfiguration = new CryptoConfigurationV2()
         .withCryptoMode(CryptoMode.StrictAuthenticatedEncryption);
 ```
@@ -164,7 +164,7 @@ The following examples demonstrate how to address specific use cases related to 
 
 To read objects that were previously written using a V1 encryption client, set the `cryptoMode` to `AuthenticatedEncryption`. The following code snippet demonstrates how to construct a configuration object with this setting.
 
-```
+```java
 CryptoConfigurationV2 cryptoConfiguration = new CryptoConfigurationV2()
         .withCryptoMode(CryptoMode.AuthenticatedEncryption);
 ```
@@ -178,7 +178,7 @@ If you plan to use the Amazon S3 TransferManager to perform multipart downloads 
 
 The following code snippet demonstrates how to configure the V2 client for performing a ranged `get`.
 
-```
+```java
 // Allows range gets using AES/CTR, for V2 encrypted objects only
 CryptoConfigurationV2 cryptoConfiguration = new CryptoConfigurationV2()
        .withRangeGetMode(CryptoRangeGetMode.ALL);

@@ -26,7 +26,7 @@ The following example allows a user or a role to perform the `ListTagsForResourc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ The second statement allows the user to create an Network File System (NFS) or S
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

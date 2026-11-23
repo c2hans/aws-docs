@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-failure-co
 
 1. Run `aws configure` and enter following information.
 
-   ```
+   ```bash
    $ aws configure
    AWS Access Key ID [None]: {{AccessID}}
    AWS Secret Access Key [None]: {{AccessKey}}
@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-failure-co
 
 1. Run:
 
-   ```
+   ```bash
    aws iot describe-job-execution --job-id {{JobID}} --thing-name {{ThingName}}
    ```
 
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-failure-co
 
 1. The output will look like this:
 
-   ```
+   ```json
    {
        "execution": {
            "jobId": "AFR_OTA-****************",

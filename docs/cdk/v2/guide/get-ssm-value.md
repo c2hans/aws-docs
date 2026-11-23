@@ -18,7 +18,7 @@ To read values from the Systems Manager Parameter Store, use the [`valueForStrin
 
 **Example**
 
-```
+```javascript
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
 // Get latest version or specified version of plain string attribute
@@ -32,7 +32,7 @@ const secureStringToken = ssm.StringParameter.valueForSecureStringParameter(
     this, 'my-secure-parameter-name', 1);   // must specify version
 ```
 
-```
+```javascript
 const ssm = require('aws-cdk-lib/aws-ssm');
 
 // Get latest version or specified version of plain string attribute
@@ -46,7 +46,7 @@ const secureStringToken = ssm.StringParameter.valueForSecureStringParameter(
     this, 'my-secure-parameter-name', 1);   // must specify version
 ```
 
-```
+```python
 import aws_cdk.aws_ssm as ssm
 
 # Get latest version or specified version of plain string attribute
@@ -60,7 +60,7 @@ secure_string_token = ssm.StringParameter.value_for_secure_string_parameter(
     self, "my-secure-parameter-name", 1)   # must specify version
 ```
 
-```
+```java
 import software.amazon.awscdk.services.ssm.StringParameter;
 
 //Get latest version or specified version of plain string attribute
@@ -74,7 +74,7 @@ String secureStringToken = StringParameter.valueForSecureStringParameter(
             this, "my-secure-parameter-name", 1);   // must specify version
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.SSM;
 
 // Get latest version or specified version of plain string attribute
@@ -101,31 +101,31 @@ The following is an example:
 
 **Example**
 
-```
+```javascript
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
 const stringValue = ssm.StringParameter.valueFromLookup(this, 'my-plain-parameter-name');
 ```
 
-```
+```javascript
 const ssm = require('aws-cdk-lib/aws-ssm');
 
 const stringValue = ssm.StringParameter.valueFromLookup(this, 'my-plain-parameter-name');
 ```
 
-```
+```python
 import aws_cdk.aws_ssm as ssm
 
 string_value = ssm.StringParameter.value_from_lookup(self, "my-plain-parameter-name")
 ```
 
-```
+```java
 import software.amazon.awscdk.services.ssm.StringParameter;
 
 String stringValue = StringParameter.valueFromLookup(this, "my-plain-parameter-name");
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.SSM;
 
 var stringValue = StringParameter.ValueFromLookup(this, "my-plain-parameter-name");

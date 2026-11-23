@@ -22,7 +22,7 @@ Your custom model training script should be an executable Python script like the
 
 Your training script is run on a SageMaker AI training instance using a syntax like this:
 
-```
+```python
 python3 {{(script entry point)}} --{{(1st parameter)}} {{(1st value)}} --{{(2nd parameter)}} {{(2nd value)}} {{(...)}}
 ```
 
@@ -65,7 +65,7 @@ Your custom model transform script should be an executable Python script like th
 
 The script runs on a SageMaker AI training instance with a syntax like this:
 
-```
+```python
 python3 {{(your transform script entry point)}}
 ```
 
@@ -90,7 +90,7 @@ You must provide a range for a hyperparameter if you want it to be tunable, and 
 
 You must also provide the metric definition that the SageMaker AI HyperParameter Optimization job will use to evaluate the candidate models trained. To do this, you add an `eval_metric` JSON object to the `model-hpo-configuration.json` file like this:
 
-```
+```json
 "eval_metric": {
   "tuning_objective": {
       "MetricName": "{{(metric_name)}}",

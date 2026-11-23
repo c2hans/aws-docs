@@ -30,7 +30,7 @@ An IAM policy is created first and then attached to the role.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -109,7 +109,7 @@ After creating an IAM policy, you create an IAM role and attach it to the policy
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

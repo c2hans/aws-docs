@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 
  To deploy, retrieve the `OutputModelPackageArn` from your completed training job and use it to create an endpoint.
 
-```
+```bash
 # Retrieve the output model ARN from your completed job
 aws sagemaker describe-job \
   --job-name "my-agent-rft-job" \
@@ -43,7 +43,7 @@ aws sagemaker describe-job \
 
  Deploy to a SageMaker AI endpoint:
 
-```
+```python
 from sagemaker.serve import ModelBuilder
 from sagemaker.core.resources import ModelPackage
 
@@ -69,7 +69,7 @@ endpoint = model_builder.deploy(
 
  Invoke the endpoint:
 
-```
+```python
 import json
 
 response = endpoint.invoke(

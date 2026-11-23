@@ -33,7 +33,7 @@ eu-north-1, me-south-1, ap-south-1, eu-west-3, ap-southeast-3, us-east-2, af-sou
 us-gov-east-1, us-gov-west-1
 
 **Note**
-To add AWS Regions for metering, contact [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/).
+To add AWS Regions for metering, contact the AWS Marketplace support team on the [AWS Partner Central and Marketplace Support page](https://us-east-1.console.aws.amazon.com/partnercentral/support?region=us-east-1) in the AWS Partner Central console.
 
 ## MeterUsage Region support for Amazon ECS and Amazon EKS
 <a name="meterusage-region-support-ecs-eks"></a>

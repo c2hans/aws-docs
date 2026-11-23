@@ -13,7 +13,7 @@ The default `AmazonSageMakerDomainService` role has the following trust policy a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

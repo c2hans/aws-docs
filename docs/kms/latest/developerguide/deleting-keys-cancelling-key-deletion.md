@@ -34,7 +34,7 @@ $ aws kms cancel-key-deletion --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
 
 When used successfully, the AWS CLI returns output like the output shown in the following example:
 
-```
+```json
 {
     "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
 }

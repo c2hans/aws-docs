@@ -8,7 +8,7 @@ By default, all responses use an input stream backed by a `stringbuf`. If needed
 
  **Example file stream request**
 
-```
+```cpp
  //! Use a custom response stream when downloading an object from an Amazon Simple
 //! Storage Service (Amazon S3) bucket.
 /*!

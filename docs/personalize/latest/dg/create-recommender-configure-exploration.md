@@ -19,7 +19,7 @@ The following code shows how to configure exploration when you create a recommen
 
 If you have an Items dataset and want the option to include metadata when you get recommendations, update the `recommender-config` to add a `enableMetadataWithRecommendations` field and set it to `true`.
 
-```
+```cmd
 aws personalize create-recommender \
 --name {{recommender name}} \
 --dataset-group-arn {{dataset group ARN}} \
@@ -41,7 +41,7 @@ The following code shows how to configure exploration when you create a recommen
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```py
 import boto3
 
 personalize = boto3.client('personalize')
@@ -61,7 +61,7 @@ print('Recommender ARN:' + recommender_arn)
 ------
 #### [ SDK for JavaScript v3 ]
 
-```
+```JavaScript
 // Get service clients and commands using ES6 syntax.
 import { CreateRecommenderCommand, PersonalizeClient } from
   "@aws-sdk/client-personalize";

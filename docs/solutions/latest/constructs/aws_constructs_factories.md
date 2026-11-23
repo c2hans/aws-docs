@@ -36,7 +36,7 @@ Create fully well-architected S3 buckets with as little as one function call. He
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ConstructsFactories } from '@aws-solutions-constructs/aws-constructs-factories';
@@ -46,7 +46,7 @@ const factories = new ConstructsFactories(this, 'MyFactories');
 factories.s3BucketFactory('GoodBucket', {});
 ```
 
-```
+```python
 from aws_cdk import (
     Stack,
 )
@@ -60,7 +60,7 @@ factories = cf.ConstructsFactories(self, 'MyFactories')
 factories.s3_bucket_factory('GoodBucket')
 ```
 
-```
+```java
 import software.constructs.Construct;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.StackProps;
@@ -76,7 +76,7 @@ factories.s3BucketFactory("GoodBucket",
 ## S3BucketFactory Function Signature
 <a name="_s3bucketfactory_function_signature"></a>
 
-```
+```typescript
 s3BucketFactory(id: string, props: S3BucketFactoryProps): S3BucketFactoryResponse
 ```
 
@@ -132,7 +132,7 @@ Create fully well-architected Step Functions state machine with log group. The l
 
 **Example**
 
-```
+```typescript
 import { App, Stack } from "aws-cdk-lib";
 import { ConstructsFactories } from "../../lib";
 import { generateIntegStackName, CreateTestStateMachineDefinitionBody } from '@aws-solutions-constructs/core';
@@ -151,18 +151,18 @@ factories.stateMachineFactory('testsm', {
 });
 ```
 
-```
+```python
 # Pending
 ```
 
-```
+```java
 // Pending
 ```
 
 ## stateMachineFactory Function Signature
 <a name="_statemachinefactory_function_signature"></a>
 
-```
+```typescript
 stateMachineFactory(id: string, props: StateMachineFactoryProps): StateMachineFactoryResponse
 ```
 
@@ -211,7 +211,7 @@ Create SQS queues complete with DLQs and KMS CMKs with one function call. Here i
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ConstructsFactories } from '@aws-solutions-constructs/aws-constructs-factories';
@@ -221,18 +221,18 @@ const factories = new ConstructsFactories(this, 'MyFactories');
 factories.sqsQueueFacgory('GoodQueue', {});
 ```
 
-```
+```python
 Pending
 ```
 
-```
+```java
 Pendiong
 ```
 
 ## SqsQueueFactory Function Signature
 <a name="_sqsqueuefactory_function_signature"></a>
 
-```
+```typescript
 SqsQueueFactory(id: string, props: SqsQueueFactoryProps): SqsQueueFactoryResponse
 ```
 
@@ -284,7 +284,7 @@ Creates a VPC with a flow log enabled and any requested VPC Endpoints configured
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { ConstructsFactories } from '@aws-solutions-constructs/aws-constructs-factories';
@@ -299,18 +299,18 @@ factories.vpcFactory('new-vpc', {
 ]});
 ```
 
-```
+```python
 Pending
 ```
 
-```
+```java
 Pendiong
 ```
 
 ## VpcFactory Function Signature
 <a name="_vpcfactory_function_signature"></a>
 
-```
+```typescript
 VpcFactory(id: string, props: VpcFactoryProps): VpcFactoryResponse
 ```
 

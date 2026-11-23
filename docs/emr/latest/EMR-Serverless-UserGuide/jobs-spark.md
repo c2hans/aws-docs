@@ -68,7 +68,7 @@ This property is available in all Amazon EMR release versions.
 
 The following is a sample configuration classification with `dynamicAllocationOptimization`.
 
-```
+```bash,sh,zsh
 [
   {
     "Classification": "spark",
@@ -156,7 +156,7 @@ Configuring your resources in this manner ensures that EMR Serverless can alloca
 #### Option 1: Use sparkSubmitParameters
 <a name="-spark-option-sparksubmitparameters"></a>
 
-```
+```json
 "jobDriver": {
  "sparkSubmit": {
     "entryPoint": "s3://your-script-path.py",
@@ -171,7 +171,7 @@ Configuring your resources in this manner ensures that EMR Serverless can alloca
 #### Option 2: Use configurationOverrides for the spark-defaults classification
 <a name="spark-option2configurationoverrides"></a>
 
-```
+```json
 "configurationOverrides": {
  "applicationConfiguration": [
  {
@@ -192,7 +192,7 @@ Configuring your resources in this manner ensures that EMR Serverless can alloca
 
 The following example shows how to use the `StartJobRun` API to run a Python script. For an end-to-end tutorial that uses this example, refer to [Getting started with Amazon EMR Serverless](getting-started.md). You can find additional examples of how to run PySpark jobs and add Python dependencies in the [EMR Serverless Samples](https://github.com/aws-samples/emr-serverless-samples/tree/main/examples/pyspark) GitHub repository.
 
-```
+```bash
 aws emr-serverless start-job-run \
     --application-id {{application-id}} \
     --execution-role-arn {{job-role-arn}} \
@@ -207,7 +207,7 @@ aws emr-serverless start-job-run \
 
 The following example shows how to use the `StartJobRun` API to run a Spark JAR.
 
-```
+```bash
 aws emr-serverless start-job-run \
     --application-id {{application-id}} \
     --execution-role-arn {{job-role-arn}} \

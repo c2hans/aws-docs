@@ -10,7 +10,7 @@ This operation deletes the private certificate authority (CA) that you created u
 
 For a Java example that shows you how to use the [RestoreCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_RestoreCertificateAuthority.html) operation, see [RestoreCertificateAuthority](JavaApi-RestoreCertificateAuthority.md).
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

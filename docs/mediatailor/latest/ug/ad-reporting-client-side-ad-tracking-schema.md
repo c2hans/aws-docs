@@ -13,7 +13,7 @@ The following JSON structure shows the MediaTailor client-side ad-tracking schem
 
 For detailed information about each property, see [Properties](#ad-reporting-client-side-ad-tracking-schema-properties).
 
-```
+```json
 {
   "avails": [
     {

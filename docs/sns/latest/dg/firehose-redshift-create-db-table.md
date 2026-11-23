@@ -12,7 +12,7 @@ After you connect to the initial database in Amazon Redshift, you typically use 
 
 1. In SQL Workbench/J, copy the following code and paste it into the **Statement 1** window.
 
-   ```
+   ```sql
    CREATE TABLE notifications (
        type varchar(256),
        messageid varchar(256),

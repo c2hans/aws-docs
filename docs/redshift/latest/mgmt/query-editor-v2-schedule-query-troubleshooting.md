@@ -20,7 +20,7 @@ If the scheduled query is using an AWS Secrets Manager connection, the IAM role 
 View the SYS\_QUERY\_HISTORY system view for details about why the query failed. A common issue is that the database user or role that was used to run the query might not have the required privilege to run the SQL. For more information, see [Authenticating a scheduled query](query-editor-v2-schedule-query-authentication.md).
 The following SQL queries the SYS\_QUERY\_HISTORY view to return failed queries.
 
-```
+```sql
 SELECT user_id, query_id, transaction_id, session_id, database_name, query_type, status, error_message, query_text
 FROM sys_query_history
 WHERE status = 'failed';

@@ -38,7 +38,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
  A log entry created by [`DescribeProfilingGroup`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html) includes the name of the proﬁle group in the `requestParameters` ﬁeld.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -86,7 +86,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
  A log entry created by [`GetProfile`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html) includes the name of the proﬁle group and the period in the `requestParameters` ﬁeld.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {

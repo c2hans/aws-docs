@@ -33,7 +33,7 @@ If *geom* is not a `LINESTRING`, then an error is returned.
 
 The following SQL checks if the specified linestring is a ring.
 
-```
+```sql
 SELECT ST_IsRing(ST_GeomFromText('linestring(0 0, 1 1, 1 2, 0 0)'));
 ```
 

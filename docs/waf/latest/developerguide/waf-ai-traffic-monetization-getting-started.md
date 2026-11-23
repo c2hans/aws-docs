@@ -31,7 +31,7 @@ The MonetizationConfig contains:
 ## MonetizationConfig structure
 <a name="waf-ai-traffic-monetization-config-structure"></a>
 
-```
+```JSON
 {
   "MonetizationConfig": {
     "CryptoConfig": {
@@ -67,7 +67,7 @@ The `Amount` is specified in USDC as a decimal string with up to 3 decimal place
 
 A MonetizationConfig can also contain a `ConnectedAccountConfigs` entry, either on its own or alongside `CryptoConfig`. When you combine the two, a given chain (BASE or SOLANA) can be used by only one of them. The following example settles BASE payments to a self-managed wallet and SOLANA payments through a connected account:
 
-```
+```JSON
 {
   "MonetizationConfig": {
     "CryptoConfig": {
@@ -121,7 +121,7 @@ To settle payments with a connected account, you need the following:
 
 To use a connected account, configure `ConnectedAccountConfigs` in your MonetizationConfig. Reference your connected account by its ARN and set per-network pricing for each chain you accept. The following example shows a MonetizationConfig that settles payments through a connected account:
 
-```
+```JSON
 {
   "MonetizationConfig": {
     "ConnectedAccountConfigs": [

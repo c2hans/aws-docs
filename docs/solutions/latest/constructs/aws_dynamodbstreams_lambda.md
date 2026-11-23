@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { DynamoDBStreamsToLambdaProps,  DynamoDBStreamsToLambda} from '@aws-solutions-constructs/aws-dynamodbstreams-lambda';
@@ -40,7 +40,7 @@ new DynamoDBStreamsToLambda(this, 'test-dynamodbstreams-lambda', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_dynamodbstreams_lambda import DynamoDBStreamsToLambda
 from aws_cdk import (
   aws_lambda as _lambda,
@@ -57,7 +57,7 @@ DynamoDBStreamsToLambda(self, 'test-dynamodbstreams-lambda',
                         )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

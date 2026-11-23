@@ -37,7 +37,7 @@ The `SkippedAnalysis` section shows contact analysis that was marked as 'Skipped
 
 Following is an example of failed categories within `JobDetails`:
 
-```
+```json
 "JobDetails": {
     "SkippedAnalysis": [
         {

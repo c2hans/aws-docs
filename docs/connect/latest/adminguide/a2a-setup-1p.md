@@ -24,7 +24,7 @@ This is the right choice when the collaborator performs a discrete job: looking 
 
 Call `UpdateAIAgent` and add the collaborator under `orchestrationAIAgentConfiguration.multiAgentConfigurations`:
 
-```
+```json
 {
   "assistantId": "YOUR_ASSISTANT_ID",
   "aiAgentId": "YOUR_ORCHESTRATING_AGENT_ID",
@@ -73,7 +73,7 @@ Before you add a collaborator that talks to the customer, review the following r
 
 Call `UpdateAIAgent` and add the collaborator under `orchestrationAIAgentConfiguration.multiAgentConfigurations`:
 
-```
+```json
 {
   "assistantId": "YOUR_ASSISTANT_ID",
   "aiAgentId": "YOUR_ORCHESTRATING_AGENT_ID",
@@ -143,7 +143,7 @@ The `instruction` field determines when your Connect AI agent calls the collabor
 
 After you add or modify collaborators, create a new version to make the configuration live. The updated collaborator settings do not take effect on new contacts until you publish a version.
 
-```
+```bash
 aws qconnect create-ai-agent-version \
   --assistant-id YOUR_ASSISTANT_ID \
   --ai-agent-id YOUR_ORCHESTRATING_AGENT_ID
@@ -156,7 +156,7 @@ The response includes the new version number. Contacts that start after this poi
 
 The IAM principal that makes these API calls needs the following permissions on the relevant Connect Customer resources. Attach these as an IAM policy to the user or role that manages your Connect AI agent configuration.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

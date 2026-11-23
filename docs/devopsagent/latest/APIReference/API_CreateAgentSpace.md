@@ -14,6 +14,7 @@ POST /v1/agentspaces HTTP/1.1
 Content-type: application/json
 
 {
+   "awsSourceMode": "{{string}}",
    "clientToken": "{{string}}",
    "description": "{{string}}",
    "kmsKeyArn": "{{string}}",
@@ -37,6 +38,12 @@ The request does not use any URI parameters.
 <a name="API_CreateAgentSpace_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [awsSourceMode](#API_CreateAgentSpace_RequestSyntax) **   <a name="devopsagent-CreateAgentSpace-request-awsSourceMode"></a>
+Specifies whether the AgentSpace's AWS source configuration targets an individual AWS account or an AWS Organization.
+Type: String
+Valid Values: `standalone | organization`
+Required: No
 
  ** [clientToken](#API_CreateAgentSpace_RequestSyntax) **   <a name="devopsagent-CreateAgentSpace-request-clientToken"></a>
 Client-provided token to ensure request idempotency. When the same token is provided in subsequent calls, the same response is returned within a 8-hour window.
@@ -99,6 +106,7 @@ Content-type: application/json
 {
    "agentSpace": {
       "agentSpaceId": "string",
+      "awsSourceMode": "string",
       "createdAt": "string",
       "description": "string",
       "kmsKeyArn": "string",

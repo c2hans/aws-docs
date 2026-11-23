@@ -31,7 +31,7 @@ INTEGER
 
 The following example finds the year from a date literal.
 
-```
+```sql
 SELECT DATE_PART_YEAR(date '20220502 04:05:06.789');
 
 date_part_year
@@ -41,7 +41,7 @@ date_part_year
 
 The following example extracts the year from the CALDATE column. The values in the CALDATE column are dates. For more information about the data used in this example, see [Sample database](c_sampledb.md).
 
-```
+```sql
 select caldate, date_part_year(caldate)
 from date
 order by

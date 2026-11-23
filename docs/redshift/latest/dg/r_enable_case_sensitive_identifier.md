@@ -23,7 +23,7 @@ The case of a *username* enclosed in double quotation marks is always preserved 
 
 The following example shows how to create and use case sensitive identifiers for a table and column name.
 
-```
+```sql
 -- To create and use case sensitive identifiers
 SET enable_case_sensitive_identifier TO true;
 
@@ -60,7 +60,7 @@ mixedcasedcolumn
 
 The following example shows when the case of identifiers is not preserved.
 
-```
+```sql
 -- To not use case sensitive identifiers
 RESET enable_case_sensitive_identifier;
 

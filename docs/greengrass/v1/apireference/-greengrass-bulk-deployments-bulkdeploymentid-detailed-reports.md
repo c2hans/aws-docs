@@ -41,7 +41,7 @@ type: string
 ### CLI
 <a name="-greengrass-bulk-deployments-bulkdeploymentid-detailed-reports-get-cli"></a>
 
-```
+```bash
 aws greengrass list-bulk-deployment-detailed-reports \
   --bulk-deployment-id <value> \
   [--max-results <value>] \
@@ -52,7 +52,7 @@ aws greengrass list-bulk-deployment-detailed-reports \
 
 cli-input-json format:
 
-```
+```json
 {
 "BulkDeploymentId": "string",
 "MaxResults": "integer",
@@ -67,7 +67,7 @@ cli-input-json format:
 Success. The response body contains the list of deployments for the given group.
  [ ListBulkDeploymentDetailedReportsResponse](definitions-listbulkdeploymentdetailedreportsresponse.md)
 
-```
+```json
 {
 "Deployments": [
   {
@@ -141,7 +141,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

@@ -41,7 +41,7 @@ For more information, see [Creating query-based groups in AWS Resource Groups](h
 **Tools for PowerShell V4**
 **Example 1: This example fetches the resource query for the given resource group**
 
-```
+```powershell
 Get-RGGroupQuery -GroupName auto-no | Select-Object -ExpandProperty ResourceQuery
 ```
 **Output:**
@@ -56,7 +56,7 @@ Query                                                                           
 **Tools for PowerShell V5**
 **Example 1: This example fetches the resource query for the given resource group**
 
-```
+```powershell
 Get-RGGroupQuery -GroupName auto-no | Select-Object -ExpandProperty ResourceQuery
 ```
 **Output:**

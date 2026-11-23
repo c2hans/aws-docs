@@ -32,7 +32,7 @@ You can choose from the following Spark parameters to send to a Spark SQL job. U
 
 For a Spark SQL job, create a start-job-run-request.json file and specify the required parameters for your job run, as in the following example:
 
-```
+```JSON
 {
   "name": "{{myjob}}",
   "virtualClusterId": "{{123456}}",

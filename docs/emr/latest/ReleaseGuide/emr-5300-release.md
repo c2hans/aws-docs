@@ -116,7 +116,7 @@ Last updated date: June 25, 2020
 
   You can also use a bootstrap action (BA) script to configure the instance-controller ulimit to 65536 files at cluster creation.
 
-  ```
+  ```bash
   #!/bin/bash
   for user in hadoop spark hive; do
   sudo tee /etc/security/limits.d/$user.conf << EOF

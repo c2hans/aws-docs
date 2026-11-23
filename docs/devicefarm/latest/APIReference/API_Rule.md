@@ -21,6 +21,9 @@ Supported operators: `EQUALS`, `IN`, `NOT_IN`
 AVAILABILITY
 The current availability of the device. Valid values are AVAILABLE, HIGHLY\_AVAILABLE, BUSY, or TEMPORARY\_NOT\_AVAILABLE.
 Supported operators: `EQUALS`
+DEVICE\_TYPE
+The device type. Valid values are PHYSICAL or VIRTUAL.
+Supported operators: `EQUALS`
 FLEET\_TYPE
 The fleet type. Valid values are PUBLIC or PRIVATE.
 Supported operators: `EQUALS`
@@ -53,7 +56,7 @@ Whether the device is enabled for remote debugging. Valid values are TRUE or FAL
 Supported operators: `EQUALS`
 Because remote debugging is [no longer supported](https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html), this filter is ignored.
 Type: String
-Valid Values: `ARN | PLATFORM | FORM_FACTOR | MANUFACTURER | REMOTE_ACCESS_ENABLED | REMOTE_DEBUG_ENABLED | APPIUM_VERSION | INSTANCE_ARN | INSTANCE_LABELS | FLEET_TYPE | OS_VERSION | MODEL | AVAILABILITY`
+Valid Values: `ARN | PLATFORM | FORM_FACTOR | DEVICE_TYPE | MANUFACTURER | REMOTE_ACCESS_ENABLED | REMOTE_DEBUG_ENABLED | APPIUM_VERSION | INSTANCE_ARN | INSTANCE_LABELS | FLEET_TYPE | OS_VERSION | MODEL | AVAILABILITY`
 Required: No
 
  ** operator **   <a name="devicefarm-Type-Rule-operator"></a>

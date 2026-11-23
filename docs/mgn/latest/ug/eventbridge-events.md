@@ -28,7 +28,7 @@ Possible states (referring to the **state** field within the **details** field):
 
 Sample event:
 
-```
+```json
 {
   "version": "0",
   "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -53,7 +53,7 @@ Emitted when a source server reaches the READY\_FOR\_TEST lifecycle state for th
 
 Sample event:
 
-```
+```json
 {
   "version": "0",
   "id": "9da9af57-9253-4406-87cb-7cc400e43465",
@@ -84,7 +84,7 @@ Possible states (referring to the **state** field within the **details** field):
 
 Sample event:
 
-```
+```json
 {
   "version": "0",
   "id": "9da9af57-9253-4406-87cb-7cc400e43465",

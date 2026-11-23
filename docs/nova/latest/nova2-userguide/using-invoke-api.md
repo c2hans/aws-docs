@@ -14,7 +14,7 @@ The Invoke API supports the same features as the Converse API except for documen
 
 An Invoke API request requires the model ID and a JSON request body:
 
-```
+```Python
 import boto3
 import json
 

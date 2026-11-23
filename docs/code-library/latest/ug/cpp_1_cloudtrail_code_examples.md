@@ -26,7 +26,7 @@ The following code example shows how to use `CreateTrail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which creates an AWS CloudTrail trail.
 /*!
   \param trailName: The name of the CloudTrail trail.
@@ -65,7 +65,7 @@ The following code example shows how to use `DeleteTrail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which deletes an AWS CloudTrail trail.
 /*!
   \param trailName: The name of the CloudTrail trail.
@@ -101,7 +101,7 @@ The following code example shows how to use `DescribeTrail`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which describes the AWS CloudTrail trails in an account.
 /*!
   \param clientConfig: Aws client configuration.
@@ -138,7 +138,7 @@ The following code example shows how to use `LookupEvents`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudtrail#code-examples).
 
-```
+```cpp
 // Routine which looks up events captured by AWS CloudTrail.
 /*!
   \param clientConfig: Aws client configuration.

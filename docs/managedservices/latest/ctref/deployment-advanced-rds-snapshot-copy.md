@@ -149,7 +149,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-rds-snapshot-copy-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CopyDbSnapshot",
   "Region": "us-east-1",
@@ -164,7 +164,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-rds-snapshot-copy-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CopyDbSnapshot",
   "Region": "us-east-1",

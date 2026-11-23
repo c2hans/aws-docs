@@ -31,7 +31,7 @@ You can also view current information about consumable resources from a job deta
 
 Use the [`DescribeConsumableResource` API](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeConsumableResource.html) which returns the following information:
 
-```
+```JSON
 {
    "availableQuantity": number,
    "consumableResourceArn": "string",

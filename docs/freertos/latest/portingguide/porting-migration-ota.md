@@ -50,7 +50,7 @@ Demos for OTA version 3 are available here:
 
 When initializing the OTA Agent in v1 the `OTA_AgentInit` API is used which takes parameters for connection context, thing name, complete callback and timeout as input.
 
-```
+```c
 OTA_State_t OTA_AgentInit( void * pvConnectionContext,
                            const uint8_t * pucThingName,
                            pxOTACompleteCallback_t xFunc,
@@ -59,7 +59,7 @@ OTA_State_t OTA_AgentInit( void * pvConnectionContext,
 
 This API is now changed to `OTA_Init` with parameters for the buffers required for ota, ota interfaces, thing name and application callback.
 
-```
+```c
 OtaErr_t OTA_Init( OtaAppBuffer_t * pOtaBuffer,
                    OtaInterfaces_t * pOtaInterfaces,
                    const uint8_t * pThingName,
@@ -81,7 +81,7 @@ The parameter is renamed to OtaAppCallback and its type is changed to OtaAppCall
 The application must allocate the buffers and pass them to the OTA library using the OtaAppBuffer\_t structure during initialization. The buffers required differ slightly depending on the protocol used for downloading the file. For the MQTT protocol the buffers for stream name are required and for the HTTP protocol the buffers for pre-signed url and authorization scheme are required.
 Buffers required when using MQTT for file download -
 
-```
+```c
 static OtaAppBuffer_t otaBuffer =
 {
     .pUpdateFilePath    = updateFilePath,
@@ -98,7 +98,7 @@ static OtaAppBuffer_t otaBuffer =
 ```
 Buffers required when using HTTP for file download -
 
-```
+```c
 static OtaAppBuffer_t otaBuffer =
 {
     .pUpdateFilePath    = updateFilePath,
@@ -117,7 +117,7 @@ static OtaAppBuffer_t otaBuffer =
 ```
 Where -
 
-```
+```c
     pUpdateFilePath    Path to store the files.
     updateFilePathsize Maximum size of the file path.
     pCertFilePath      Path to certificate file.
@@ -139,7 +139,7 @@ The second input parameter to OTA\_Init is a reference to the OTA interfaces for
 The OTA OS Functional interface is a set of APIs that must be implemented for the device to use the OTA library. The function implementations for this interface are provided to the OTA library in the user application. The OTA library calls the function implementations to perform functionalities that are typically provided by an operating system. This includes managing events, timers, and memory allocation. The implementations for FreeRTOS and POSIX are provided with the OTA library.
 Example for FreeRTOS using the provided FreeRTOS port -
 
-```
+```c
     OtaInterfaces_t otaInterfaces;
     otaInterfaces.os.event.init   = OtaInitEvent_FreeRTOS;
     otaInterfaces.os.event.send   = OtaSendEvent_FreeRTOS;
@@ -153,7 +153,7 @@ Example for FreeRTOS using the provided FreeRTOS port -
 ```
 Example for Linux using the provided POSIX port -
 
-```
+```c
   OtaInterfaces_t otaInterfaces;
   otaInterfaces.os.event.init    = Posix_OtaInitEvent;
   otaInterfaces.os.event.send    = Posix_OtaSendEvent;
@@ -169,7 +169,7 @@ Example for Linux using the provided POSIX port -
 The OTA MQTT interface is a set of APIs that must be implemented in a library to enable the OTA library to download a file block from streaming service.
 Example using the coreMQTT Agent APIs from the [ OTA over MQTT demo](https://github.com/aws/amazon-freertos/blob/main/demos/ota/ota_demo_core_mqtt/ota_demo_core_mqtt.c)-
 
-```
+```c
   OtaInterfaces_t otaInterfaces;
   otaInterfaces.mqtt.subscribe = prvMqttSubscribe;
   otaInterfaces.mqtt.publish = prvMqttPublish;
@@ -179,7 +179,7 @@ Example using the coreMQTT Agent APIs from the [ OTA over MQTT demo](https://git
 The OTA HTTP interface is a set of APIs that must be implemented in a library to enable the OTA library to download a file block by connecting to a pre-signed url and fetching data blocks. It is optional unless you configure the OTA library to download from a pre-signed URL instead of a streaming service.
 Example using the coreHTTP APIs from the [ OTA over HTTP demo](https://github.com/aws/amazon-freertos/blob/main/demos/ota/ota_demo_core_http/ota_demo_core_http.c)-
 
-```
+```c
   OtaInterfaces_t otaInterfaces;
   otaInterfaces.http.init = httpInit;
   otaInterfaces.http.request = httpRequest;
@@ -188,7 +188,7 @@ Example using the coreHTTP APIs from the [ OTA over HTTP demo](https://github.co
 **OTA PAL Interface**
 The OTA PAL interface is a set of APIs that must be implemented for the device to use the OTA library. The device specific implementation for the OTA PAL is provided to the library in the user application. These functions are used by the library to store, manage, and authenticate downloads.
 
-```
+```c
     OtaInterfaces_t otaInterfaces;
     otaInterfaces.pal.getPlatformImageState = otaPal_GetPlatformImageState;
     otaInterfaces.pal.setPlatformImageState = otaPal_SetPlatformImageState;
@@ -209,13 +209,13 @@ In the OTA Library version 1 the API used to shutdown the OTA Agent was OTA\_Age
 
 **OTA Agent Shutdown ( version 1 )**
 
-```
+```c
 OTA_State_t OTA_AgentShutdown( TickType_t xTicksToWait );
 ```
 
 **OTA Agent Shutdown ( version 3 ) **
 
-```
+```c
 OtaState_t OTA_Shutdown( uint32_t ticksToWait,
                          uint8_t unsubscribeFlag );
 ```
@@ -238,13 +238,13 @@ The API name is changed from OTA\_AgentGetState to OTA\_GetState.
 
 **OTA Agent Shutdown ( version 1 )**
 
-```
+```c
 OTA_State_t OTA_GetAgentState( void );
 ```
 
 **OTA Agent Shutdown ( version 3 )**
 
-```
+```c
 OtaState_t OTA_GetState( void );
 ```
 
@@ -259,7 +259,7 @@ New single API added for statistics. It replaces the APIs OTA\_GetPacketsReceive
 
 **OTA Library version 1**
 
-```
+```c
 uint32_t OTA_GetPacketsReceived( void );
 uint32_t OTA_GetPacketsQueued( void );
 uint32_t OTA_GetPacketsProcessed( void );
@@ -268,7 +268,7 @@ uint32_t OTA_GetPacketsDropped( void );
 
 **OTA Library version 3**
 
-```
+```c
 OtaErr_t OTA_GetStatistics( OtaAgentStatistics_t * pStatistics );
 ```
 
@@ -280,7 +280,7 @@ OTA error code.
 
 **Example usage - **
 
-```
+```c
 OtaAgentStatistics_t otaStatistics = { 0 };
 OTA_GetStatistics( &otaStatistics );
 LogInfo( ( " Received: %u   Queued: %u   Processed: %u   Dropped: %u",
@@ -297,20 +297,20 @@ The input parameters are the same but the return OTA error code is renamed and n
 
 **OTA Library version 1**
 
-```
+```c
 OTA_Err_t OTA_ActivateNewImage( void );
 ```
 
 **OTA Library version 3**
 
-```
+```c
 OtaErr_t OTA_ActivateNewImage( void );
 ```
 The return OTA error code enum is changed and new error codes are added. Please refer to [AWS IoT Over-the-air Update v3.0.0 : OtaErr\_t](https://freertos.org/Documentation/api-ref/ota-for-aws-iot-embedded-sdk/docs/doxygen/output/html/group__ota__enum__types.html#ga7ab3c74dc057383c56c6cb9aa6bf0b2d).
 
 **Example usage - **
 
-```
+```c
  OtaErr_t otaErr = OtaErrNone;
  otaErr = OTA_ActivateNewImage();
  /* Handle error */
@@ -323,13 +323,13 @@ The input parameters are the same and renamed, the return OTA error code is rena
 
 **OTA Library version 1 **
 
-```
+```c
 OTA_Err_t OTA_SetImageState( OTA_ImageState_t eState );
 ```
 
 **OTA Library version 3**
 
-```
+```c
 OtaErr_t OTA_SetImageState( OtaImageState_t state );
 ```
 The input parameter is renamed to OtaImageState\_t. Please refer to [AWS IoT Over-the-air Update v3.0.0](https://freertos.org/Documentation/api-ref/ota-for-aws-iot-embedded-sdk/docs/doxygen/output/html/group__ota__enum__types.html#gad4909faa8b9c8672e7f7bef1bc6b5b84).
@@ -337,7 +337,7 @@ The return OTA error code enum is changed and new error codes are added. Please 
 
 **Example usage - **
 
-```
+```c
   OtaErr_t otaErr = OtaErrNone;
   otaErr = OTA_SetImageState( OtaImageStateAccepted );
   /* Handle error */
@@ -350,20 +350,20 @@ The input parameters are same, the return enum is renamed in the version 3 of th
 
 **OTA Library version 1 **
 
-```
+```c
 OTA_ImageState_t OTA_GetImageState( void );
 ```
 
 **OTA Library version 3**
 
-```
+```c
 OtaImageState_t OTA_GetImageState( void );
 ```
 The return enum is renamed to OtaImageState\_t. Please refer to [AWS IoT Over-the-air Update v3.0.0 : OtaImageState\_t ](https://freertos.org/Documentation/api-ref/ota-for-aws-iot-embedded-sdk/docs/doxygen/output/html/group__ota__enum__types.html#gad4909faa8b9c8672e7f7bef1bc6b5b84).
 
 **Example usage - **
 
-```
+```c
  OtaImageState_t imageState;
  imageState = OTA_GetImageState();
 ```
@@ -375,20 +375,20 @@ The input parameters are the same, the return OTA error code is renamed and new 
 
 **OTA Library version 1 **
 
-```
+```c
 OTA_Err_t OTA_Suspend( void );
 ```
 
 **OTA Library version 3**
 
-```
+```c
 OtaErr_t OTA_Suspend( void );
 ```
 The return OTA error code enum is changed and new error codes are added. Please refer to [AWS IoT Over-the-air Update v3.0.0 : OtaErr\_t](https://freertos.org/Documentation/api-ref/ota-for-aws-iot-embedded-sdk/docs/doxygen/output/html/group__ota__enum__types.html#ga7ab3c74dc057383c56c6cb9aa6bf0b2d).
 
 **Example usage - **
 
-```
+```c
 OtaErr_t xOtaError = OtaErrUninitialized;
 xOtaError = OTA_Suspend();
 /* Handle error */
@@ -401,20 +401,20 @@ The input parameter for connection is removed as the connection is handled in th
 
 **OTA Library version 1 **
 
-```
+```c
 OTA_Err_t OTA_Resume( void * pxConnection );
 ```
 
 **OTA Library version 3**
 
-```
+```c
 OtaErr_t OTA_Resume( void );
 ```
 The return OTA error code enum is changed and new error codes are added. Please refer to [AWS IoT Over-the-air Update v3.0.0 : OtaErr\_t](https://freertos.org/Documentation/api-ref/ota-for-aws-iot-embedded-sdk/docs/doxygen/output/html/group__ota__enum__types.html#ga7ab3c74dc057383c56c6cb9aa6bf0b2d).
 
 **Example usage - **
 
-```
+```c
 OtaErr_t xOtaError = OtaErrUninitialized;
 xOtaError = OTA_Resume();
 /* Handle error */
@@ -427,13 +427,13 @@ The input parameters are the same, the return OTA error code is renamed and new 
 
 **OTA Library version 1 **
 
-```
+```c
 OTA_Err_t OTA_CheckForUpdate( void );
 ```
 
 **OTA Library version 3**
 
-```
+```c
 OtaErr_t OTA_CheckForUpdate( void )
 ```
 The return OTA error code enum is changed and new error codes are added. Please refer to [AWS IoT Over-the-air Update v3.0.0 : OtaErr\_t](https://freertos.org/Documentation/api-ref/ota-for-aws-iot-embedded-sdk/docs/doxygen/output/html/group__ota__enum__types.html#ga7ab3c74dc057383c56c6cb9aa6bf0b2d).
@@ -445,13 +445,13 @@ This is a new API and is the main event loop to handle events for OTA updates. I
 
 **OTA Library version 3 **
 
-```
+```c
 void OTA_EventProcessingTask( void * pUnused );
 ```
 
 **Example for FreeRTOS -**
 
-```
+```c
 /* Create FreeRTOS task*/
 xTaskCreate( prvOTAAgentTask,
              "OTA Agent Task",
@@ -474,7 +474,7 @@ static void prvOTAAgentTask( void * pParam )
 
 **Example for POSIX - **
 
-```
+```c
 /* Create posix thread.*/
 if( pthread_create( &threadHandle, NULL, otaThread, NULL ) != 0 )
 {
@@ -503,13 +503,13 @@ This is a new API that adds the event to the back of the event queue and is also
 
 **OTA Library version 3**
 
-```
+```c
 bool OTA_SignalEvent( const OtaEventMsg_t * const pEventMsg );
 ```
 
 **Example usage - **
 
-```
+```c
 OtaEventMsg_t xEventMsg = { 0 };
 xEventMsg.eventId = OtaAgentEventStart;
 ( void ) OTA_SignalEvent( &xEventMsg );
@@ -520,15 +520,15 @@ xEventMsg.eventId = OtaAgentEventStart;
 
 If you want to integrate the OTA library in your own application you can use the git submodule command. Git submodules allow you to keep a Git repository as a subdirectory of another Git repository. The OTA library version 3 is maintained in the [ ota-for-aws-iot-embedded-sdk](https://github.com/aws/ota-for-aws-iot-embedded-sdk) repository.
 
-```
+```bash
 git submodule add https://github.com/aws/ota-for-aws-iot-embedded-sdk.git {{destination_folder}}
 ```
 
-```
+```bash
 git commit -m "Added the OTA Library as submodule to the project."
 ```
 
-```
+```bash
 git push
 ```
 

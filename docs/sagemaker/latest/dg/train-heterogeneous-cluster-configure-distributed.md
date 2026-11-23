@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-heterogeneous-
 
 Through the `distribution` argument of the SageMaker AI ModelTrainer class, you can assign a specific instance group to run distributed training. For example, assume that you have the following two instance groups and want to run multi-GPU training on one of them.
 
-```
+```py
 from sagemaker.instance_group import InstanceGroup
 
 instance_group_1 = InstanceGroup("instance_group_1", "ml.c5.18xlarge", 1)
@@ -22,7 +22,7 @@ Currently, only one instance group of a heterogeneous cluster can be specified t
 
 **PyTorch**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.distributed import Torchrun
 
@@ -38,7 +38,7 @@ model_trainer = ModelTrainer(
 
 **TensorFlow**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.distributed import Torchrun
 
@@ -56,7 +56,7 @@ model_trainer = ModelTrainer(
 
 **PyTorch**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.distributed import Torchrun
 
@@ -69,7 +69,7 @@ model_trainer = ModelTrainer(
 
 **TensorFlow**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.distributed import Torchrun
 
@@ -89,7 +89,7 @@ For more information about the SageMaker AI data parallel library, see [SageMake
 
 **PyTorch**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.distributed import Torchrun
 
@@ -102,7 +102,7 @@ model_trainer = ModelTrainer(
 
 **TensorFlow**
 
-```
+```py
 from sagemaker.train import ModelTrainer
 from sagemaker.train.distributed import Torchrun
 

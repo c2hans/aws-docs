@@ -64,7 +64,7 @@ Create a file called `travel_server.py` with the following code. This travel boo
 ### travel\_server.py - Complete MCP Server
 <a name="mcp-stateful-server-code"></a>
 
-```
+```python
 """
 Travel Booking Agent - Stateful MCP Server
 Demonstrates all MCP features in a real-world travel booking workflow:
@@ -334,7 +334,7 @@ Create a file called `test_client.py` with the following code. This client tests
 ### test\_client.py - Complete Test Client
 <a name="mcp-stateful-client-code"></a>
 
-```
+```python
 """
 Travel Booking Agent - Test Client
 Tests all MCP features: Elicitation, Sampling, Progress, Resources, Prompts

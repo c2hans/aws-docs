@@ -35,7 +35,7 @@ After you generate a forecast and then import more data, you can view the result
 
  To get monitoring results with the SDK for Python (Boto3), use the `list_monitor_evaluations` method. Provide the Amazon Resource Name (ARN) of the monitor, and optionally specify the maximum number of results to retrieve with the `MaxResults` parameter. Optionally specify a `Filter` to filter results. You can filter evaluations by a `EvaluationState` of either `SUCCESS` or `FAILURE`. The following code gets at maximum 20 successful monitoring evaluations.
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')
@@ -56,7 +56,7 @@ print(monitor_results)
 
  The following is an example JSON response.
 
-```
+```json
 {
   "NextToken": "string",
   "PredictorMonitorEvaluations": [

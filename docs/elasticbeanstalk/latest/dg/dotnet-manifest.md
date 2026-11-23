@@ -155,7 +155,7 @@ The following deployment manifest configures a custom IIS website that listens o
 
 **Example aws-windows-deployment-manifest.json - IIS website configuration**
 
-```
+```JSON
 {
   "manifestVersion": 1,
   "iisConfig": {
@@ -202,7 +202,7 @@ The following example shows a simple deployment manifest that configures a websi
 
 **Example aws-windows-deployment-manifest.json - Simple ARR setup**
 
-```
+```JSON
 {
   "manifestVersion": 1,
   "iisConfig": {
@@ -239,7 +239,7 @@ ARR configuration is done through ebextensions. The following configuration sets
 
 **Example .ebextensions/arr-config.config - Basic ARR configuration**
 
-```
+```yaml
 files:
   "C:\\temp\\configure-arr.ps1":
     content: |
@@ -282,7 +282,7 @@ To configure Kestrel to run multiple applications in one application pool, add `
 
 **Example web.config - for Kestrel out-of-process hosting model**
 
-```
+```xml
 <configuration>
 <location path="." inheritInChildApplications="false">
 <system.webServer>
@@ -306,7 +306,7 @@ To configure Kestrel to run multiple applications in one application pool, add `
 
 **Example aws-windows-deployment-manifest.json - multiple applications**
 
-```
+```JSON
 {
 "manifestVersion": 1,
   "deployments": {"msDeploy": [
@@ -337,7 +337,7 @@ The following deployment manifest configures two application pools that restart 
 
 **Example aws-windows-deployment-manifest.json - one application per application pool**
 
-```
+```JSON
 {
 "manifestVersion": 1,
   "iisConfig": {"appPools": [

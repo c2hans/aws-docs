@@ -20,7 +20,7 @@ Service client timeouts operate at the API level and control the overall behavio
 
 The API call timeout sets the maximum amount of time for an entire API operation, including all retry attempts. This timeout provides a hard limit on how long your application waits for a complete operation to finish.
 
-```
+```java
 S3Client s3Client = S3Client.builder()
     .overrideConfiguration(ClientOverrideConfiguration.builder()
         .apiCallTimeout(Duration.ofMinutes(2))  // Total time for entire operation, such as when you call the getObject method.
@@ -39,7 +39,7 @@ Key characteristics:
 
 The API call attempt timeout sets the maximum time for a single attempt of an API operation. If this timeout is exceeded, the SDK retries the operation (if retries are configured) rather than failing the entire call.
 
-```
+```java
 S3Client s3Client = S3Client.builder()
     .overrideConfiguration(ClientOverrideConfiguration.builder()
         .apiCallAttemptTimeout(Duration.ofSeconds(30))  // Time for single attempt.
@@ -60,7 +60,7 @@ You can configure service client timeouts globally for all operations or per-req
 
 **Global Configuration:**
 
-```
+```java
 S3Client s3Client = S3Client.builder()
     .overrideConfiguration(b -> b
         .apiCallTimeout(Duration.ofSeconds(105L))
@@ -71,7 +71,7 @@ S3Client s3Client = S3Client.builder()
 
 **Per-Request Configuration:**
 
-```
+```java
 S3Client basicS3Client = S3Client.create();
 
 // The following configuration uses the same settings as shown before, but these settings
@@ -104,7 +104,7 @@ HTTP client timeouts operate at the network level and control various aspects of
 
 The connection timeout controls how long to wait when establishing a new connection to the AWS service endpoint.
 
-```
+```java
 // Available with all HTTP clients.
 ApacheHttpClient.builder()
     .connectionTimeout(Duration.ofSeconds(5L))
@@ -121,7 +121,7 @@ Purpose:
 
 The socket timeout controls how long to wait for data on an established connection.
 
-```
+```java
 ApacheHttpClient.builder()
     .socketTimeout(Duration.ofSeconds(30L))  // Time to wait for response data.
     .build();
@@ -132,7 +132,7 @@ ApacheHttpClient.builder()
 
 The Netty client provides separate timeouts for read and write operations:
 
-```
+```java
 NettyNioAsyncHttpClient.builder()
     .readTimeout(Duration.ofSeconds(30L))   // Reading response data.
     .writeTimeout(Duration.ofSeconds(30L))  // Writing request data.
@@ -144,7 +144,7 @@ NettyNioAsyncHttpClient.builder()
 
 Controls the time allowed for TLS/SSL handshake:
 
-```
+```java
 NettyNioAsyncHttpClient.builder()
     .tlsNegotiationTimeout(Duration.ofSeconds(3L))
     .build();
@@ -155,7 +155,7 @@ NettyNioAsyncHttpClient.builder()
 
 Some HTTP clients provide timeouts for connection pool operations:
 
-```
+```java
 ApacheHttpClient.builder()
     .connectionAcquisitionTimeout(Duration.ofSeconds(10L))  // Wait for pool connection.
     .connectionTimeToLive(Duration.ofMinutes(5L))           // Maximum connection age.
@@ -192,7 +192,7 @@ API Call Timeout (2 minutes)
 
 API call timeout ≥ API call attempt timeout
 
-```
+```java
 // Correct configuration.
 .apiCallTimeout(Duration.ofMinutes(2))         // 120 seconds.
 .apiCallAttemptTimeout(Duration.ofSeconds(30)) // 30 seconds.
@@ -200,7 +200,7 @@ API call timeout ≥ API call attempt timeout
 
 API call attempt timeout ≥ HTTP client timeouts
 
-```
+```java
 // HTTP client timeouts must be less than attempt timeout.
 .apiCallAttemptTimeout(Duration.ofSeconds(30L))   // 30 seconds.
 // HTTP client configuration.
@@ -210,7 +210,7 @@ API call attempt timeout ≥ HTTP client timeouts
 
 Account for multiple attempts
 
-```
+```java
 // If you have 3 retry attempts, each taking up to 30 seconds
 // API call timeout must be at least 90 seconds plus overhead.
 .apiCallTimeout(Duration.ofMinutes(2L))          // 120 seconds.
@@ -222,7 +222,7 @@ Account for multiple attempts
 
 The SDK provides smart defaults that automatically configure appropriate timeout values:
 
-```
+```java
 // Enable smart defaults.
 S3Client client = S3Client.builder()
     .defaultsMode(DefaultsMode.AUTO)  // Automatically choose appropriate defaults.

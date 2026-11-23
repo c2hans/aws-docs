@@ -37,7 +37,7 @@ This section includes example events from AWS Well-Architected Tool.
 
 **Updating an answer in a workload**
 
-```
+```json
  {
    "version":"0",
    "id":"00de336a-83cc-b80b-f0e6-f44c88a96050",
@@ -105,7 +105,7 @@ This section includes example events from AWS Well-Architected Tool.
 
 **Publishing a custom lens**
 
-```
+```json
 {
    "version":"0",
    "id":"4054a34b-60a9-53c1-3146-c1a384dba41b",

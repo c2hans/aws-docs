@@ -13,7 +13,7 @@ pcs-multi-cluster-login-configure.sh
 ## Script source code
 <a name="multi-cluster-login-script-code-content"></a>
 
-```
+```sh
 #!/bin/bash
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 

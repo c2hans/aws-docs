@@ -11,6 +11,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 ![A diagram depicting a transit VPC with virtual appliances](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/transit-vpc-virtual-appliances.png)
 
+**Transit VPC with virtual appliances**
+
 Transit VPC comes with its own challenges, such as higher costs for running third-party vendor virtual appliances on EC2 based on the instance size/family, limited throughput per VPN connection (up to 1.25 Gbps per VPN tunnel), and additional conﬁguration, management and resiliency overhead (customers are responsible for managing the HA and redundancy of EC2 instances running the third-party vendor virtual appliances).
 
 ## VPC peering vs. Transit VPC vs. Transit Gateway

@@ -95,7 +95,7 @@ The following details provide the default compute that is used for the Commands 
 ------
 #### [ YAML ]
 
-```
+```yaml
 result: FAIL
 rules:
 - name: CommandsRule
@@ -116,7 +116,7 @@ rules:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "result": "FAIL",
     "rules": [

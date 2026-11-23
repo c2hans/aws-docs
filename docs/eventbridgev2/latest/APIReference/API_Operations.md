@@ -25,6 +25,7 @@ The following actions are supported:
 +  [PutRawEvents](API_PutRawEvents.md)
 +  [PutResourcePolicy](API_PutResourcePolicy.md)
 +  [RevokeResource](API_RevokeResource.md)
++  [RotateWebhookCredentials](API_RotateWebhookCredentials.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
 +  [UpdateEventBus](API_UpdateEventBus.md)

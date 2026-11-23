@@ -52,7 +52,7 @@ Use the following CLI command to update an existing catalog with optimizer setti
 
 **Example Update catalog with optimizer settings**
 
-```
+```bash
 aws glue update-catalog \
    --name {{catalog-id}} \
   --catalog-input \

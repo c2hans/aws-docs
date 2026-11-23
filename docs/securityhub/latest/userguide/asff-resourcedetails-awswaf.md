@@ -17,7 +17,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```json
 "AwsWafRateBasedRule":{
     "MatchPredicates" : [{
         "DataId" : "391b7a7e-5f00-40d2-b114-3f27ceacbbb0",
@@ -41,7 +41,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```json
 "AwsWafRegionalRateBasedRule":{
     "MatchPredicates" : [{
         "DataId" : "391b7a7e-5f00-40d2-b114-3f27ceacbbb0",
@@ -65,7 +65,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```JSON
 "AwsWafRegionalRule": {
     "MetricName": "SampleWAF_Rule__Metric_1",
     "Name": "bb-waf-regional-rule-not-empty-conditions-compliant",
@@ -87,7 +87,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```JSON
 "AwsWafRegionalRuleGroup": {
     "MetricName": "SampleWAF_Metric_1",
     "Name": "bb-WAFClassicRuleGroupWithRuleCompliant",
@@ -112,7 +112,7 @@ The following is an example `AwsWafRegionalWebAcl` finding in the AWS Security F
 
 **Example**
 
-```
+```JSON
 "AwsWafRegionalWebAcl": {
     "DefaultAction": "ALLOW",
     "MetricName" : "web-regional-webacl-metric-1",
@@ -149,7 +149,7 @@ The following is an example `AwsWafRule` finding in the AWS Security Finding For
 
 **Example**
 
-```
+```JSON
 "AwsWafRule": {
     "MetricName": "AwsWafRule_Metric_1",
     "Name": "AwsWafRule_Name_1",
@@ -171,7 +171,7 @@ The following is an example `AwsWafRuleGroup` finding in the AWS Security Findin
 
 **Example**
 
-```
+```JSON
 "AwsWafRuleGroup": {
     "MetricName": "SampleWAF_Metric_1",
     "Name": "bb-WAFRuleGroupWithRuleCompliant",
@@ -196,7 +196,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```JSON
 "AwsWafv2RuleGroup": {
     "Arn": "arn:aws:wafv2:us-east-1:123456789012:global/rulegroup/wafv2rulegroupasff/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Capacity": 1000,
@@ -244,7 +244,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```JSON
 "AwsWafWebAcl": {
     "DefaultAction": "ALLOW",
     "Name": "MyWafAcl",
@@ -279,7 +279,7 @@ The following example shows the AWS Security Finding Format (ASFF) for the `AwsW
 
 **Example**
 
-```
+```JSON
 "AwsWafv2WebAcl": {
     "Arn": "arn:aws:wafv2:us-east-1:123456789012:regional/webacl/WebACL-RoaD4QexqSxG/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Capacity": 1326,

@@ -73,7 +73,7 @@ Enable CORS by returning the correct headers.
 #### ListConfigurationRevisionsResponse schema
 <a name="configurations-arn-revisions-response-body-listconfigurationrevisionsresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "revisions": [
@@ -89,7 +89,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="configurations-arn-revisions-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

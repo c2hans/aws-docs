@@ -25,7 +25,7 @@ Choose a menu based on your access preference to AWS HealthLake.
 
 **Example 1: Rename a data store**
 
-```
+```sh
 aws healthlake update-fhir-datastore \
   --datastore-id "{{datastore-id}}" \
   --datastore-name "RenamedFhirDatastore"
@@ -33,7 +33,7 @@ aws healthlake update-fhir-datastore \
 
 **Example 2: Enable NLP**
 
-```
+```sh
 aws healthlake update-fhir-datastore \
   --datastore-id "{{datastore-id}}" \
   --nlp-configuration '{ "Status": "ENABLED" }'
@@ -41,7 +41,7 @@ aws healthlake update-fhir-datastore \
 
 **Example 3: Pause analytics**
 
-```
+```sh
 aws healthlake update-fhir-datastore \
   --datastore-id "{{datastore-id}}" \
   --analytics-configuration '{ "Status": "PAUSED" }'
@@ -49,7 +49,7 @@ aws healthlake update-fhir-datastore \
 
 **Example 4: Update default FHIR validation profiles**
 
-```
+```sh
 aws healthlake update-fhir-datastore \
   --datastore-id "{{datastore-id}}" \
   --profile-configuration '{ "DefaultProfiles": ["us-core-3.1.1", "carin-bb-2.0.0"] }'
@@ -57,7 +57,7 @@ aws healthlake update-fhir-datastore \
 
 The response returns the full `DatastoreProperties` — the same shape returned by `DescribeFHIRDatastore`.
 
-```
+```json
 {
     "DatastoreProperties": {
         "DatastoreId": "{{datastore-id}}",
@@ -84,7 +84,7 @@ For API details, see [update-fhir-datastore](https://docs.aws.amazon.com/cli/lat
 
 **SDK for Python (Boto3)**
 
-```
+```python
 def update_fhir_datastore(
     self,
     datastore_id: str,

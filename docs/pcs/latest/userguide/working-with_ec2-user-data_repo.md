@@ -11,7 +11,7 @@ This script uses **cloud-config** to install software packages on node group ins
 **Note**
 Your instances must be able to connect to their configured package repositories.
 
-```
+```txt
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
 

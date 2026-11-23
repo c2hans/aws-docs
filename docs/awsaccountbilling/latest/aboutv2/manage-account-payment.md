@@ -133,7 +133,7 @@ To allow the Tax Settings API to access the object in your Amazon S3 bucket, add
 Replace {{DOC-EXAMPLE-BUCKET1}} with the name of your bucket.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -162,7 +162,7 @@ Replace {{DOC-EXAMPLE-BUCKET1}} with the name of your bucket.
 Replace {{amzn-s3-demo-bucket1}} with the name of your bucket.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -218,7 +218,7 @@ If your S3 bucket is encrypted with AWS KMS managed key (SSE-KMS), add the follo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-consolepolicy-3",

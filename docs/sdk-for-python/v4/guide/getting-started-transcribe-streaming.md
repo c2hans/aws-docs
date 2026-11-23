@@ -19,13 +19,13 @@ Complete [Prerequisites and installation](getting-started-prerequisites-installa
 
 Download the linked file in your browser and save it as `test.wav` in the directory where you'll create the example. Alternatively, download it with Python:
 
-```
+```bash
 python -c "from urllib.request import urlretrieve; urlretrieve('https://github.com/aws/aws-sdk-python/raw/refs/heads/develop/clients/aws-sdk-transcribe-streaming/examples/test.wav', 'test.wav')"
 ```
 
 Bidirectional streaming requires the AWS Common Runtime (CRT) HTTP client, which the example selects as the client's transport. Opt in by installing the client's `awscrt` extra. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 
-```
+```bash
 python -m pip install "aws-sdk-transcribe-streaming[awscrt]"
 ```
 
@@ -37,7 +37,7 @@ Streaming audio with Amazon Transcribe can incur charges. Review [Amazon Transcr
 
 Create a file named `getting_started_transcribe.py` with the following code:
 
-```
+```python
 """Transcribe a prerecorded audio stream with the AWS SDK for Python v4."""
 
 import asyncio
@@ -164,7 +164,7 @@ Amazon Transcribe returns partial and final results while you stream audio. The 
 
 Run the program from the directory that contains `getting_started_transcribe.py` and `test.wav`:
 
-```
+```bash
 python getting_started_transcribe.py
 ```
 

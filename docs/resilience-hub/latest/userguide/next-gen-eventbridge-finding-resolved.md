@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 
 The following is an example event emitted when a failure mode finding is marked as Resolved or Irrelevant.
 
-```
+```json
 {
   "version": "0",
   "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

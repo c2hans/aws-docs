@@ -199,7 +199,7 @@ You must create a secret in AWS Secrets Manager to securely store the informatio
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement" : [ {

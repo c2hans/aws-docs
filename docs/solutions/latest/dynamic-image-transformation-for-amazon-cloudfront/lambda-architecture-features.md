@@ -47,7 +47,7 @@ When you activate this feature, the image handler AWS Lambda function checks for
 **Note**
 If you are using query parameter based edits, the query parameters must be sorted prior to signature generation.
 
-```
+```javascript
 const secret = '<YOUR_SECRET_VALUE_IN_SECRETS_MANAGER>';
 const path = '/<YOUR_PATH>'; // Add the first '/' to path.
 const query_params = '?<YOUR_QUERY_PARAMS>'

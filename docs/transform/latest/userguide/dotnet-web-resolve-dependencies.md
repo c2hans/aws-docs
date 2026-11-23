@@ -70,7 +70,7 @@ For NuGet uploads AWS Transform requires either:
 
   **Example format:**
 
-  ```
+  ```xml
   <dependencies>
       <group targetFramework="net8.0" />
   </dependencies>

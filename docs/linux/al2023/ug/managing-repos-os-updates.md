@@ -48,7 +48,7 @@ If you don't specify the release version with the optional flag to the `dnf chec
 
  First, we fetch this container image from the container registry. The `.0` at the end indicates the version of the image for a particular release; this image version is usually zero.
 
-```
+```bash
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:{{2023.0.20230315.0}}
 	  2023.0.20230315.0: Pulling from amazonlinux/amazonlinux
 b76f3b09316a: Pull complete
@@ -59,7 +59,7 @@ public.ecr.aws/amazonlinux/amazonlinux:2023.0.20230315.0
 
  We can now spawn a shell inside the container, from which we will check for updates.
 
-```
+```bash
 $ docker run -it public.ecr.aws/amazonlinux/amazonlinux:{{2023.0.20230315.0}}
 	  bash-5.2#
 ```
@@ -116,7 +116,7 @@ bash-5.2#
 
  First, we fetch this container image from the container registry. The `.1` at the end indicates the version of the image for a particular release. While the image version is typically zero, this example uses a release where the image version is one.
 
-```
+```bash
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:{{2023.4.20240319.1}}
 	  2023.4.20240319.1: Pulling from amazonlinux/amazonlinux
 6de065fda9a2: Pull complete
@@ -127,7 +127,7 @@ public.ecr.aws/amazonlinux/amazonlinux:2023.4.20240319.1
 
  We can now spawn a shell inside the container, from which we will check for updates.
 
-```
+```bash
 $ docker run -it public.ecr.aws/amazonlinux/amazonlinux:{{2023.4.20240319.1}}
 	  bash-5.2#
 ```
@@ -194,7 +194,7 @@ New package updates and security updates are made available to new repository ve
 
  First, we fetch this container image from the container registry. The `.0` at the end indicates the version of the image for a particular release; this image version is usually zero.
 
-```
+```bash
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:{{2023.0.20230315.0}}
 	  2023.0.20230315.0: Pulling from amazonlinux/amazonlinux
 b76f3b09316a: Pull complete
@@ -205,7 +205,7 @@ public.ecr.aws/amazonlinux/amazonlinux:2023.0.20230315.0
 
  We can now spawn a shell inside the container, from which we will apply updates.
 
-```
+```bash
 $ docker run -it public.ecr.aws/amazonlinux/amazonlinux:{{2023.0.20230315.0}}
 	  bash-5.2#
 ```
@@ -453,7 +453,7 @@ bash-5.2#
 
  First, we fetch this container image from the container registry. The `.1` at the end indicates the version of the image for a particular release. While the image version is typically zero, this example uses a release where the image version is one.
 
-```
+```bash
 $ docker pull public.ecr.aws/amazonlinux/amazonlinux:{{2023.4.20240319.1}}
 	  2023.4.20240319.1: Pulling from amazonlinux/amazonlinux
 6de065fda9a2: Pull complete
@@ -464,7 +464,7 @@ public.ecr.aws/amazonlinux/amazonlinux:2023.4.20240319.1
 
  We can now spawn a shell inside the container, from which we will apply updates.
 
-```
+```bash
 $ docker run -it public.ecr.aws/amazonlinux/amazonlinux:{{2023.4.20240319.1}}
 	  bash-5.2#
 ```
@@ -682,7 +682,7 @@ Amazon Linux now ships with the [smart-restart](https://github.com/amazonlinux/s
 **To install `smart-restart`**
 Run the following DNF command (as you would with any other package).
 
-```
+```bash
 $ sudo dnf install smart-restart
 ```
 
@@ -691,7 +691,7 @@ After the installation, the subsequent transactions will trigger the `smart-rest
 **Denylist**
 `Smart-restart` can be instructed to block certain services from being restarted. The blocked services won't contribute to the decision of whether a reboot is required. To block additional services, add a file with the suffix `-denylist` in `/etc/smart-restart-conf.d/` as shown in the following example.
 
-```
+```bash
 $ cat /etc/smart-restart-conf.d/custom-denylist
 # Some comments
 myservice.service
@@ -705,7 +705,7 @@ In addition to denylisting, `smart-restart` provides a mechanism to run custom s
 
 All scripts in `/etc/smart-restart-conf.d/` with the suffix `-pre-restart` or `-post-restart`are executed. If the order is important, prefix all of the scripts with a number to ensure the execution order as shown in the following example.
 
-```
+```bash
 $ ls /etc/smart-restart-conf.d/*-pre-restart
 001-my-script-pre-restart
 002-some-other-script-pre-restart
@@ -724,7 +724,7 @@ In some situations, Amazon Linux requires a reboot to apply updates:
 
 You can add DNF commands to a user-data script to control what RPM packages are installed on an Amazon Linux AMI when it's launched. In the following example, a user-data script is used to make sure that any instance launched with the user-data script has the same package updates installed.
 
-```
+```bash
 #!/bin/bash
 dnf upgrade --releasever=2023.0.20230210
 # Additional setup and install commands below
@@ -774,14 +774,14 @@ Other Info           : This is the support statement for AL2023. The
 **Note**
  AL2023 container images do not include the `dnf check-release-update` command by default.
 
-```
+```bash
 $ dnf check-release-update
 No such command: check-release-update. Please use /usr/bin/dnf --help
 It could be a DNF plugin command, try: "dnf install 'dnf-command(check-release-update)'"
 ```
  When `dnf install 'dnf-command(check-release-update)'` is run, `dnf` will install the package which provides the `check-release-update` command, which is the `dnf-plugin-release-notification` package. In the below example, the `-q` argument is given to `dnf` for it to have quiet output.
 
-```
+```bash
 $ dnf -y -q install 'dnf-command(check-release-update)'
 Installed:
   dnf-plugin-release-notification-1.2-1.amzn2023.0.2.noarch
@@ -789,7 +789,7 @@ Installed:
 
  In non-containerized environments such as an Amazon EC2 instance, the `check-release-update` command is included by default.
 
-```
+```bash
 $ sudo dnf check-release-update
 WARNING:
   A newer release of "Amazon Linux" is available.
@@ -807,7 +807,7 @@ WARNING:
 
 This returns a full list of all the newer versions of the DNF repositories that are available. If nothing's returned, this means that DNF is currently configured to use the latest available version. The version of the currently installed `system-release` package sets the `releasever` DNF variable. To check the current repository version, run the following command.
 
-```
+```bash
 $ rpm -q system-release --qf "%{VERSION}\n"
 ```
 
@@ -1012,7 +1012,7 @@ In addition to adding a repository using the previous method, you can also add a
 
 To add a new package repository, we recommend the use of the following template. Consider saving this file locally.
 
-```
+```yaml
 #cloud-config
 yum_repos:
   repository.repo:

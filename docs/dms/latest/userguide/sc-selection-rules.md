@@ -26,7 +26,7 @@ A selection rules document is a JSON object with a single `rules` array. Each en
 
 The following minimal example targets one schema on a source server.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -66,7 +66,7 @@ The `object-locator` identifies one or more database objects through a hierarchy
 
 The following example selects one specific Microsoft SQL Server table.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -87,7 +87,7 @@ The following example selects one specific Microsoft SQL Server table.
 
 To widen the scope to the entire schema, omit the leaf-level key. The rule then applies to all addressable object types in that schema, including tables, views, procedures, functions, sequences, and any other objects the source engine exposes.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -401,7 +401,7 @@ The following examples show how to write selection rules for common migration sc
 
 Select one specific table for conversion from a Microsoft SQL Server source. Microsoft SQL Server requires `database-name` in addition to `schema-name`.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -425,7 +425,7 @@ Select one specific table for conversion from a Microsoft SQL Server source. Mic
 
 Select all objects in an Oracle schema by omitting the object-level key. Oracle has no `database-name` level; the schema is the top container under `server-name`.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -447,7 +447,7 @@ Select all objects in an Oracle schema by omitting the object-level key. Oracle 
 
 Select all objects in a Microsoft SQL Server database by omitting `schema-name` from the object locator. The rule then widens to the whole database, and the locator contains only `server-name` and `database-name`. Selecting an entire database is supported for Microsoft SQL Server and SAP ASE (Sybase ASE) sources, which have a `database-name` level in the object locator.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -469,7 +469,7 @@ Select all objects in a Microsoft SQL Server database by omitting `schema-name` 
 
 Use `"rule-action": "include"` with `"schema-name": "%"` to match every schema in a Microsoft SQL Server database. Microsoft SQL Server requires `database-name` in the object locator.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -495,7 +495,7 @@ Do not use `"schema-name": "%"` with `"rule-action": "explicit"`. Under `explici
 
 Use `"rule-action": "include"` with `"schema-name": "%"` to match every schema (Oracle user). Oracle has no `database-name` level; the schema is the top container under `server-name`, so the object locator contains only `server-name` and `schema-name`.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -517,7 +517,7 @@ Use `"rule-action": "include"` with `"schema-name": "%"` to match every schema (
 
 Oracle views are addressed using `table-name` with `"table-type": "view"`. There is no separate `view-name` key.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -541,7 +541,7 @@ Oracle views are addressed using `table-name` with `"table-type": "view"`. There
 
 Select one specific stored procedure from an IBM Db2 for z/OS source. IBM Db2 for z/OS uses `procedure-name` and goes directly from `server-name` to `schema-name` with no `database-name` level.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -564,7 +564,7 @@ Select one specific stored procedure from an IBM Db2 for z/OS source. IBM Db2 fo
 
 Select every procedure in a SAP ASE (Sybase ASE) schema by using `%` as a wildcard for `procedure-name`. SAP ASE (Sybase ASE) requires `database-name` between `server-name` and `schema-name`.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -588,7 +588,7 @@ Select every procedure in a SAP ASE (Sybase ASE) schema by using `%` as a wildca
 
 Use `%` to match multiple tables by prefix. This example selects all tables whose names start with `Fact_`.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -612,7 +612,7 @@ Use `%` to match multiple tables by prefix. This example selects all tables whos
 
 Include all objects in an Oracle schema, then exclude any tables whose names start with `TMP_`. Rules are evaluated in `rule-id` order; `exclude` takes precedence when it matches.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -645,7 +645,7 @@ Include all objects in an Oracle schema, then exclude any tables whose names sta
 
 Use multiple `explicit` rules in a single document to select a specific set of procedures by name.
 
-```
+```JSON
 {
   "rules": [
     {
@@ -693,7 +693,7 @@ Use multiple `explicit` rules in a single document to select a specific set of p
 
 Use an `include` rule to match every procedure whose name starts with `PROC_`, then an `exclude` rule to remove `PROC_TEST` from that set. An `exclude` rule must follow an `include` rule; a standalone `exclude` has no effect.
 
-```
+```JSON
 {
   "rules": [
     {

@@ -138,12 +138,12 @@ You might see this error when the AWS IoT Greengrass Core software fails to star
 Do one of the following:
 + Run the following command to remount the `/tmp` folder with `exec` permissions and try again.
 
-  ```
+  ```bash
   sudo mount -o remount,exec /tmp
   ```
 + If you run Greengrass nucleus v2.5.0 or later, you can set a JVM option to change the folder that the AWS CRT library uses. You can specify the `jvmOptions` parameter in the Greengrass nucleus component configuration in a deployment or when you install the AWS IoT Greengrass Core software. Replace {{/path/to/use}} with the path to a folder that the AWS CRT library can use.
 
-  ```
+  ```json
   {
     "jvmOptions": "-Daws.crt.lib.dir=\"{{/path/to/use}}\""
   }
@@ -162,7 +162,7 @@ If you must use Windows 2016, you can do the following:
 
 1. Add the `<autoRefresh>` tag to the end of the file just before the `</service>` tag.
 
-   ```
+   ```xml
      </log>
      <autoRefresh>false</autoRefresh>
    </service>
@@ -200,21 +200,21 @@ You might see this error when you [install the AWS IoT Greengrass Core software 
 ------
 #### [ Linux or Unix ]
 
-     ```
+     ```bash
      unset AWS_SESSION_TOKEN
      ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-     ```
+     ```cmd
      set AWS_SESSION_TOKEN=
      ```
 
 ------
 #### [ PowerShell ]
 
-     ```
+     ```ps
      Remove-Item Env:\AWS_SESSION_TOKEN
      ```
 
@@ -290,7 +290,7 @@ This error can occur when you use the [secret manager component](secret-manager-
 
 1. Add the `secretsmanager:GetSecretValue` permission to the core device's token exchange role. The following example policy statement grants permission to get the value of a secret.
 
-   ```
+   ```json
    {
        "Effect": "Allow",
        "Action": [
@@ -343,21 +343,21 @@ If your Greengrass core device won't revise your deployment from nucleus version
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo systemctl stop greengrass
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    sc stop "greengrass"
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Stop-Service -Name "greengrass"
    ```
 
@@ -368,21 +368,21 @@ If your Greengrass core device won't revise your deployment from nucleus version
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-2.12.2.zip > greengrass-2.12.2.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-2.12.2.zip > greengrass-2.12.2.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    iwr -Uri https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-2.12.2.zip -OutFile greengrass-2.12.2.zip
    ```
 
@@ -393,21 +393,21 @@ If your Greengrass core device won't revise your deployment from nucleus version
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    unzip greengrass-2.12.2.zip -d GreengrassInstaller && rm greengrass-2.12.2.zip
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    mkdir {{GreengrassInstaller}} && tar -xf greengrass-2.12.2.zip -C {{GreengrassInstaller}} && del greengrass-2.12.2.zip
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Expand-Archive -Path greengrass-2.12.2.zip -DestinationPath .\\{{GreengrassInstaller}}
    rm greengrass-2.12.2.zip
    ```
@@ -419,21 +419,21 @@ If your Greengrass core device won't revise your deployment from nucleus version
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo cp ./GreengrassInstaller/lib/Greengrass.jar /greengrass/v2/packages/artifacts-unarchived/aws.greengrass.Nucleus/2.12.3/aws.greengrass.nucleus/lib
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    robocopy ./GreengrassInstaller/lib/Greengrass.jar /greengrass/v2/packages/artifacts-unarchived/aws.greengrass.Nucleus/2.12.3/aws.greengrass.nucleus/lib /E
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    cp -Path ./GreengrassInstaller/lib/Greengrass.jar -Destination /greengrass/v2/packages/artifacts-unarchived/aws.greengrass.Nucleus/2.12.3/aws.greengrass.nucleus/lib
    ```
 
@@ -444,21 +444,21 @@ If your Greengrass core device won't revise your deployment from nucleus version
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo systemctl start greengrass
    ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-   ```
+   ```cmd
    sc start "greengrass"
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    Start-Service -Name "greengrass"
    ```
 
@@ -474,7 +474,7 @@ You might encounter this issue if you installed Greengrass nucleus v2.14.0 on a 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo sed -i 's|ExecStart=/bin/sh -c "\(.*\) >> .*/logs/loader.log 2>&1"|ExecStart=/bin/sh \1|' /etc/systemd/system/greengrass.service
    ```
 
@@ -485,7 +485,7 @@ You might encounter this issue if you installed Greengrass nucleus v2.14.0 on a 
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo systemctl daemon-reload
    sudo systemctl restart greengrass
    ```
@@ -624,7 +624,7 @@ To resolve this issue, recreate the launch directory for the device. We also str
 
 The following is a Linux script to recreate the launch directory. Save the script in a file called `fix_directory.sh`.
 
-```
+```bash
 #!/bin/bash
 
 set -e
@@ -655,7 +655,7 @@ ln -sf $DISTRO $DISTRO_LINK
 
 To run the script, execute the following command:
 
-```
+```bash
 [root@ip-172-31-27-165 ~]# ./fix_directory.sh /greengrass/v2 {{2.9.5}}
 Relinking /greengrass/v2/alts/directory_fix to /greengrass/v2/alts/current
 Relinking Nucleus artifacts to /greengrass/v2/alts/directory_fix/distro
@@ -796,14 +796,14 @@ Greengrass core devices collect logs that you can use to identify issues with co
 ------
 #### [ Linux or Unix ]
 
-  ```
+  ```bash
   python3 -u hello_world.py
   ```
 
 ------
 #### [ Windows ]
 
-  ```
+  ```cmd
   py -3 -u hello_world.py
   ```
 
@@ -812,14 +812,14 @@ Greengrass core devices collect logs that you can use to identify issues with co
 + Flush the buffer for the `stdout` or `stderr` streams. Do one of the following:
   + Flush a message when you print.
 
-    ```
+    ```python
     import sys
 
     print('Hello, error!', file=sys.stderr, flush=True)
     ```
   + Flush a message after you print. You can send multiple messages before you flush the stream.
 
-    ```
+    ```python
     import sys
 
     print('Hello, error!', file=sys.stderr)
@@ -838,7 +838,7 @@ When you change the `DefaultConfiguration` in a component's recipe, the new defa
 
 **Reset paths**
 
-```
+```json
 [""]
 ```
 
@@ -847,13 +847,13 @@ When you change the `DefaultConfiguration` in a component's recipe, the new defa
 
 The following command creates a deployment to a core device.
 
-```
+```bash
 aws greengrassv2 create-deployment --cli-input-json file://reset-configuration-deployment.json
 ```
 
 The `reset-configuration-deployment.json` file contains the following JSON document.
 
-```
+```json
 {
   "targetArn": "arn:aws:iot:us-west-2:123456789012:thing/MyGreengrassCore",
   "deploymentName": "Deployment for MyGreengrassCore",
@@ -873,7 +873,7 @@ The `reset-configuration-deployment.json` file contains the following JSON docum
 
 The following [Greengrass CLI](greengrass-cli-component.md) command creates a local deployment on a core device.
 
-```
+```bash
 sudo greengrass-cli deployment create \
   --recipeDir recipes \
   --artifactDir artifacts \
@@ -883,7 +883,7 @@ sudo greengrass-cli deployment create \
 
 The `reset-configuration-deployment.json` file contains the following JSON document.
 
-```
+```json
 {
   "com.example.HelloWorld": {
     "RESET": [""]
@@ -920,13 +920,13 @@ Do the following:
 
 1. Identify the token exchange role that the core device uses. The error message includes the core device's AWS IoT role alias, which points to the token exchange role. Run the following command on your development computer, and replace {{MyGreengrassCoreTokenExchangeRoleAlias}} with the name of the AWS IoT role alias from the error message.
 
-   ```
+   ```bash
    aws iot describe-role-alias --role-alias {{MyGreengrassCoreTokenExchangeRoleAlias}}
    ```
 
    The response includes the Amazon Resource Name (ARN) of the token exchange IAM role.
 
-   ```
+   ```json
    {
      "roleAliasDescription": {
        "roleAlias": "MyGreengrassCoreTokenExchangeRoleAlias",
@@ -942,7 +942,7 @@ Do the following:
 
 1. Check that the role exists. Run the following command, and replace {{MyGreengrassV2TokenExchangeRole}} with the name of the token exchange role.
 
-   ```
+   ```bash
    aws iam get-role --role-name {{MyGreengrassV2TokenExchangeRole}}
    ```
 
@@ -955,7 +955,7 @@ Do the following:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -1025,7 +1025,7 @@ Take one of the following actions:
 
   1. Update the `credsStore` option in the Docker configuration file (`.docker/config.json`) to use the new name for the Windows Docker credential helper. For example, if you renamed the program to `docker-credential-wincredreal`, update the `credsStore` option to `wincredreal`.
 
-     ```
+     ```json
      {
        "credsStore": "{{wincredreal}}"
      }
@@ -1040,13 +1040,13 @@ You might see this error on a Windows core device when the system user that runs
 
 1. Run the following command as an administrator to set the user's password. Replace {{ggc\_user}} with the system user, and replace {{password}} with the password to set.
 
-   ```
+   ```cmd
    net user {{ggc_user}} {{password}}
    ```
 
 1. Use the [PsExec utility](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) to store the user's new password in the Credential Manager instance for the LocalSystem account. Replace {{password}} with the user's password that you set.
 
-   ```
+   ```cmd
    psexec -s cmd /c cmdkey /generic:ggc_user /user:ggc_user /pass:password
    ```
 
@@ -1054,17 +1054,17 @@ You might see this error on a Windows core device when the system user that runs
 Depending on your Windows configuration, the user's password might be set to expire at a date in the future. To ensure your Greengrass applications continue to operate, track when the password expires, and update it before it expires. You can also set the user's password to never expire.
 To check when a user and its password expire, run the following command.
 
-  ```
+  ```cmd
   net user {{ggc_user}} | findstr /C:expires
   ```
 To set a user's password to never expire, run the following command.
 
-  ```
+  ```cmd
   wmic UserAccount where "Name='{{ggc_user}}'" set PasswordExpires=False
   ```
 If you’re using Windows 10 or later where the [`wmic` command is deprecated](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic), run the following PowerShell command.
 
-  ```
+  ```powershell
   Get-CimInstance -Query "SELECT * from Win32_UserAccount WHERE name = '{{ggc_user}}'" | Set-CimInstance -Property @{PasswordExpires="False"}
   ```
 
@@ -1119,13 +1119,13 @@ To see which deployments you need to revise, do the following using the AWS Comm
 
 1. Run the following command to get a list of your core devices.
 
-   ```
+   ```bash
    aws greengrassv2 list-core-devices
    ```
 
 1. Run the following command to retrieve the status of the components on each core device from Step 1. Replace `{{coreDeviceName}}` with the name of each core device to query.
 
-   ```
+   ```bash
    aws greengrassv2 list-installed-components --core-device-thing-name {{coreDeviceName}}
    ```
 
@@ -1133,7 +1133,7 @@ To see which deployments you need to revise, do the following using the AWS Comm
 
 1. Run the following command to retrieve the status of all deployment jobs for each core device from Step 3. Replace `{{coreDeviceName}}` with the name of the core device to query.
 
-   ```
+   ```bash
    aws greengrassv2 list-effective-deployments --core-device-thing-name {{coreDeviceName}}
    ```
 
@@ -1156,7 +1156,7 @@ Do one of the following to set the root path, and replace `{{/greengrass/v2}}` w
 + Set the `GGC_ROOT_PATH` environment variable to `{{/greengrass/v2}}`.
 + Add the `--ggcRootPath {{/greengrass/v2}}` argument to your command as shown in the following example.
 
-  ```
+  ```bash
   greengrass-cli --ggcRootPath {{/greengrass/v2}} <command> <subcommand> [arguments]
   ```
 
@@ -1180,7 +1180,7 @@ This error indicates that you have a version of the AWS CLI that doesn't support
 **Tip**  <a name="tip-check-aws-cli-version"></a>
 You can run the following command to check the version of the AWS CLI that you have.
 
-```
+```bash
 aws --version
 ```
 

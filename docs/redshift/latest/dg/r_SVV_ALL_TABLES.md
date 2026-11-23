@@ -32,7 +32,7 @@ Use the [SHOW TABLES](r_SHOW_TABLES.md) command for table discovery. SHOW TABLES
 
 The following example returns the output of SVV\_ALL\_TABLES.
 
-```
+```sql
 SELECT *
 FROM svv_all_tables
 WHERE database_name = 'tickit_db'

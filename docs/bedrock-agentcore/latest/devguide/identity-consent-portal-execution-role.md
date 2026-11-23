@@ -16,7 +16,7 @@ In the policy, replace:
 +  `111122223333` with your AWS account ID
 +  {{consent-portal-id}} with the ID of your consent portal
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [
@@ -55,7 +55,7 @@ In the policy, replace:
 +  `111122223333` with your AWS account ID
 +  {{gateway-id}} with the ID of the gateway that the consent portal serves
 
-```
+```json
 {
 "Version": "2012-10-17",
   "Statement": [

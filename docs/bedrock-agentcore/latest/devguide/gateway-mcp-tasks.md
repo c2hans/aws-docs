@@ -87,7 +87,7 @@ This example shows the JSON-RPC bodies for a task through AgentCore Gateway. Sen
 
  **Call the tool, declaring the tasks extension.**
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": "tool-call-1",
@@ -111,7 +111,7 @@ This example shows the JSON-RPC bodies for a task through AgentCore Gateway. Sen
 
 The target returns a task, and the gateway returns it with a gateway task ID.
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": "tool-call-1",
@@ -129,7 +129,7 @@ The target returns a task, and the gateway returns it with a gateway task ID.
 
  **Poll with the gateway task ID** until the task reaches a terminal status, declaring the tasks extension again. `tasks/update` and `tasks/cancel` take the same `params.taskId` and `_meta`.
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": "poll-9",
@@ -148,7 +148,7 @@ The target returns a task, and the gateway returns it with a gateway task ID.
 }
 ```
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "id": "poll-9",

@@ -43,7 +43,7 @@ The preferred way to debug Python or PySpark scripts while running on AWS is to 
 
 Paste the following boilerplate script into the development endpoint notebook to import the AWS Glue libraries that you need, and set up a single `GlueContext`:
 
-```
+```python
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -59,7 +59,7 @@ glueContext = GlueContext(SparkContext.getOrCreate())
 
 Next, you can see if the schema that was recognized by an Apache Spark `DataFrame` is the same as the one that your AWS Glue crawler recorded. Run this code:
 
-```
+```python
 medicare = spark.read.format(
    "com.databricks.spark.csv").option(
    "header", "true").option(
@@ -88,7 +88,7 @@ root
 
 Next, look at the schema that an AWS Glue `DynamicFrame` generates:
 
-```
+```python
 medicare_dynamicframe = glueContext.create_dynamic_frame.from_catalog(
        database = "payments",
        table_name = "medicare")
@@ -123,7 +123,7 @@ To address this kind of problem, the AWS Glue `DynamicFrame` introduces the conc
 
 To query the `provider id` column, resolve the choice type first. You can use the `resolveChoice` transform method in your `DynamicFrame` to convert those `string` values to `long` values with a `cast:long` option:
 
-```
+```python
 medicare_res = medicare_dynamicframe.resolveChoice(specs = [('provider id','cast:long')])
 medicare_res.printSchema()
 ```
@@ -152,7 +152,7 @@ Another option is to convert the choice type to a `struct`, which keeps values o
 
 Next, look at the rows that were anomalous:
 
-```
+```python
 medicare_res.toDF().where("'provider id' is NULL").show()
 ```
 
@@ -169,7 +169,7 @@ You see the following:
 
 Now remove the two malformed records, as follows:
 
-```
+```python
 medicare_dataframe = medicare_res.toDF()
 medicare_dataframe = medicare_dataframe.where("'provider id' is NOT NULL")
 ```
@@ -181,7 +181,7 @@ AWS Glue does not yet directly support Lambda functions, also known as user-defi
 
 Next, turn the payment information into numbers, so analytic engines like Amazon Redshift or Amazon Athena can do their number crunching faster:
 
-```
+```python
 from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType
 
@@ -228,7 +228,7 @@ only showing top 20 rows
 
 These are all still strings in the data. We can use the powerful `apply_mapping` transform method to drop, rename, cast, and nest the data so that other data programming languages and systems can easily access it:
 
-```
+```python
 from awsglue.dynamicframe import DynamicFrame
 medicare_tmp_dyf = DynamicFrame.fromDF(medicare_dataframe, glueContext, "nested")
 medicare_nest_dyf = medicare_tmp_dyf.apply_mapping([('drg definition', 'string', 'drg', 'string'),
@@ -264,7 +264,7 @@ root
 
 Turning the data back into a Spark `DataFrame`, you can show what it looks like now:
 
-```
+```python
 medicare_nest_dyf.toDF().show()
 ```
 
@@ -303,7 +303,7 @@ only showing top 20 rows
 
 AWS Glue makes it easy to write the data in a format such as Apache Parquet that relational databases can effectively consume:
 
-```
+```python
 glueContext.write_dynamic_frame.from_options(
        frame = medicare_nest_dyf,
        connection_type = "s3",

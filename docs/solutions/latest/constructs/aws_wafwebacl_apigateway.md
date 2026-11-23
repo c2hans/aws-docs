@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import * as lambda from "aws-cdk-lib/aws-lambda";
@@ -46,7 +46,7 @@ new WafwebaclToApiGateway(this, 'test-wafwebacl-apigateway', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_apigateway_lambda import ApiGatewayToLambda
 from aws_solutions_constructs.aws_wafwebacl_apigateway import WafwebaclToApiGatewayProps, WafwebaclToApiGateway
 from aws_cdk import (
@@ -71,7 +71,7 @@ WafwebaclToApiGateway(self, 'test_wafwebacl_apigateway',
                     )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

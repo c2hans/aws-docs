@@ -41,7 +41,7 @@ If you have a custom version of an AMI that is compatible with CodeDeploy, choos
 
    The contents of the `config.json` file:
 
-   ```
+   ```asciidoc perl powershell json bash xml gemspec
    {
      "InstanceType":"t1.micro",
      "ImageId":"image-id",
@@ -60,7 +60,7 @@ If you have a custom version of an AMI that is compatible with CodeDeploy, choos
 
    The contents of the `config.json` file:
 
-   ```
+   ```asciidoc perl powershell json bash xml gemspec
    {
      "InstanceType":"t1.micro",
      "ImageId":"image-id",

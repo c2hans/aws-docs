@@ -34,7 +34,7 @@ The BTRIM function returns a VARCHAR string.
 
 The following example trims leading and trailing blanks from the string `' abc '`:
 
-```
+```sql
 select '     abc    ' as untrim, btrim('     abc    ') as trim;
 
 untrim    | trim
@@ -44,7 +44,7 @@ untrim    | trim
 
 The following example removes the leading and trailing `'xyz'` strings from the string `'xyzaxyzbxyzcxyz'`. The leading and trailing occurrences of `'xyz'` are removed, but occurrences that are internal within the string are not removed.
 
-```
+```sql
 select 'xyzaxyzbxyzcxyz' as untrim,
 btrim('xyzaxyzbxyzcxyz', 'xyz') as trim;
 
@@ -55,7 +55,7 @@ btrim('xyzaxyzbxyzcxyz', 'xyz') as trim;
 
 The following example removes the leading and trailing parts from the string `'setuphistorycassettes'` that match any of the characters in the *trim\_chars* list `'tes'`. Any `t`, `e`, or `s` that occur before another character that is not in the *trim\_chars* list at the beginning or ending of the input string are removed.
 
-```
+```sql
 SELECT btrim('setuphistorycassettes', 'tes');
 
      btrim

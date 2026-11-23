@@ -28,6 +28,7 @@ The request uses the following URI parameters.
 
  ** [ClientContext](#API_InvokeWithResponseStream_RequestSyntax) **   <a name="lambda-InvokeWithResponseStream-request-ClientContext"></a>
 Up to 3,583 bytes of base64-encoded data about the invoking client to pass to the function in the context object.
+ `ClientContext` is logged to AWS CloudTrail if you turn on data events.
 
  ** [FunctionName](#API_InvokeWithResponseStream_RequestSyntax) **   <a name="lambda-InvokeWithResponseStream-request-uri-FunctionName"></a>
 The name or ARN of the Lambda function.

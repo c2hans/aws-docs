@@ -14,7 +14,7 @@ The following code example shows how to add index.html to request URLs without a
 **JavaScript runtime 2.0 for CloudFront Functions**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [CloudFront Functions examples](https://github.com/aws-samples/amazon-cloudfront-functions/tree/main/url-rewrite-single-page-apps) repository.
 
-```
+```javascript
 async function handler(event) {
     var request = event.request;
     var uri = request.uri;

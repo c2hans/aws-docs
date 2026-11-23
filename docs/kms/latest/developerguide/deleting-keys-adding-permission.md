@@ -38,7 +38,7 @@ To give key administrators permission to schedule and cancel key deletion.
 
      1. In the policy statement for key administrators, add the `kms:ScheduleKeyDeletion` and `kms:CancelKeyDeletion` permissions to the `Action` element.
 
-        ```
+        ```json
         {
           "Sid": "Allow access for Key Administrators",
           "Effect": "Allow",
@@ -74,7 +74,7 @@ You can use the AWS Command Line Interface to add permissions for scheduling and
 
 1. Open the policy document in your preferred text editor. In the policy statement for key administrators, add the `kms:ScheduleKeyDeletion` and `kms:CancelKeyDeletion` permissions. The following example shows a policy statement with these two permissions:
 
-   ```
+   ```json
    {
      "Sid": "Allow access for Key Administrators",
      "Effect": "Allow",

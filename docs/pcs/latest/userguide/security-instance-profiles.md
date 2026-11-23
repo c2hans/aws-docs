@@ -33,7 +33,7 @@ The IAM role associated with the instance profile must have `/aws-pcs/` in its p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-api-cognitoauthorizationidentity-syntax.yaml"></a>
 
-```
+```yaml
   [Header](#sam-api-cognitoauthorizationidentity-header): {{String}}
   [ReauthorizeEvery](#sam-api-cognitoauthorizationidentity-reauthorizeevery): {{Integer}}
   [ValidationExpression](#sam-api-cognitoauthorizationidentity-validationexpression): {{String}}
@@ -52,7 +52,7 @@ Specify a validation expression for validating the incoming Identity
 #### YAML
 <a name="sam-property-api-cognitoauthorizationidentity--examples--cognitoauthidentity--yaml"></a>
 
-```
+```yaml
 Identity:
   Header: MyCustomAuthHeader
   ValidationExpression: Bearer.*

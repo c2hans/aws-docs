@@ -33,7 +33,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
 /// <summary>
 /// Hello Amazon Simple Storage Service
 // (Amazon S3) example.
@@ -114,7 +114,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 Run an interactive scenario demonstrating Amazon S3 features.
 
-```
+```csharp
 public class S3_Basics
 {
     public static bool IsInteractive = true;
@@ -425,7 +425,7 @@ public class S3_Basics
 ```
 A wrapper class for Amazon S3 SDK methods.
 
-```
+```csharp
 using Amazon.S3;
 using Amazon.S3.Model;
 
@@ -711,7 +711,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Copies an object in an Amazon S3 bucket to a folder within the
     /// same bucket.
@@ -757,7 +757,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Shows how to create a new Amazon S3 bucket.
     /// </summary>
@@ -795,7 +795,7 @@ The following code example shows how to use `CreatePresignedPost`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 Create a presigned POST URL.
 
-```
+```csharp
     /// <summary>
     /// Create a presigned POST URL with conditions.
     /// </summary>
@@ -852,7 +852,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Shows how to delete an Amazon S3 bucket.
     /// </summary>
@@ -885,7 +885,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete all of the objects stored in an existing Amazon S3 bucket.
     /// </summary>
@@ -928,7 +928,7 @@ The following code example shows how to use `GetObject`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Shows how to download an object from an Amazon S3 bucket to the
     /// local computer.
@@ -976,7 +976,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Shows how to list the objects in an Amazon S3 bucket.
     /// </summary>
@@ -1041,7 +1041,7 @@ The following code example shows how to use `PutObject`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Shows how to upload a file from the local computer to an Amazon S3
     /// bucket.
@@ -1091,7 +1091,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/S3/Scenarios/S3_CreatePresignedPost#code-examples).
 Create and use presigned POST URLs for direct browser uploads.
 
-```
+```csharp
 /// <summary>
 /// Scenario demonstrating the complete workflow for presigned POST URLs:
 /// 1. Create an S3 bucket

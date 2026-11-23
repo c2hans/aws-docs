@@ -37,7 +37,7 @@ When Amazon EBS determines that a volume's data is potentially inconsistent, it 
 **To view the autoEnableIO attribute of a volume**
 Use the [describe-volume-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-volume-attribute.html) command.
 
-```
+```bash
 aws ec2 describe-volume-attribute \
     --attribute autoEnableIO \
     --volume-id {{vol-01234567890abcdef}}
@@ -45,7 +45,7 @@ aws ec2 describe-volume-attribute \
 
 The following is example output.
 
-```
+```json
 {
     "AutoEnableIO": {
         "Value": true
@@ -57,7 +57,7 @@ The following is example output.
 **To modify the autoEnableIO attribute of a volume**
 Use the [modify-volume-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-volume-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-volume-attribute \
     --auto-enable-io \
     --volume-id {{vol-01234567890abcdef}}
@@ -69,7 +69,7 @@ aws ec2 modify-volume-attribute \
 **To view the autoEnableIO attribute of a volume**
 Use the [Get-EC2VolumeAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2VolumeAttribute.html) cmdlet.
 
-```
+```powershell
 (Get-EC2VolumeAttribute `
     -Attribute autoEnableIO `
     -VolumeId {{vol-01234567890abcdef}}).AutoEnableIO
@@ -84,7 +84,7 @@ True
 **To modify the autoEnableIO attribute of a volume**
 Use the [Edit-EC2VolumeAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2VolumeAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2VolumeAttribute `
     -AutoEnableIO $true `
     -VolumeId {{vol-01234567890abcdef}}

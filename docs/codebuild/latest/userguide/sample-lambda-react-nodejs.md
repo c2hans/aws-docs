@@ -57,7 +57,7 @@ In order to build your React app, CodeBuild reads and executes build commands fr
 
 1. Delete the pre-filled build commands and paste in the following buildspec.
 
-   ```
+   ```yaml
    version: 0.2
    phases:
      build:

@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getconnectivityinfo-get-cli"></a>
 
-```
+```bash
 aws greengrass get-connectivity-info \
   --thing-name <value>  \
   [--cli-input-json <value>] \
@@ -24,7 +24,7 @@ aws greengrass get-connectivity-info \
 
 cli-input-json format:
 
-```
+```json
 {
 "ThingName": "string"
 }
@@ -45,7 +45,7 @@ type: string
 Success.
  [ GetConnectivityInfoResponse](definitions-getconnectivityinforesponse.md)
 
-```
+```json
 {
 "message": "string",
 "ConnectivityInfo": [
@@ -88,7 +88,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -124,7 +124,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

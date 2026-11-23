@@ -61,6 +61,16 @@ Text to include in the message.
 Type: String
 Required: No
 
+ ** toolAddition **   <a name="bedrock-Type-runtime_ContentBlock-toolAddition"></a>
+A content block for adding a tool to the available tool set mid-conversation.
+Type: [ToolAdditionBlock](API_runtime_ToolAdditionBlock.md) object
+Required: No
+
+ ** toolRemoval **   <a name="bedrock-Type-runtime_ContentBlock-toolRemoval"></a>
+A content block for removing a tool from the available tool set mid-conversation.
+Type: [ToolRemovalBlock](API_runtime_ToolRemovalBlock.md) object
+Required: No
+
  ** toolResult **   <a name="bedrock-Type-runtime_ContentBlock-toolResult"></a>
 The result for a tool request that a model makes.
 Type: [ToolResultBlock](API_runtime_ToolResultBlock.md) object

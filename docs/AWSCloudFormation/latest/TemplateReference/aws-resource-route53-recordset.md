@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::Route53::RecordSet",
   "Properties" : {
       "[AliasTarget](#cfn-route53-recordset-aliastarget)" : {{AliasTarget}},
+      "[AZAffinity](#cfn-route53-recordset-azaffinity)" : {{AZAffinity}},
       "[CidrRoutingConfig](#cfn-route53-recordset-cidrroutingconfig)" : {{CidrRoutingConfig}},
       "[Comment](#cfn-route53-recordset-comment)" : {{String}},
       "[Failover](#cfn-route53-recordset-failover)" : {{String}},
@@ -52,6 +53,8 @@ Type: AWS::Route53::RecordSet
 Properties:
   [AliasTarget](#cfn-route53-recordset-aliastarget): {{
     AliasTarget}}
+  [AZAffinity](#cfn-route53-recordset-azaffinity): {{
+    AZAffinity}}
   [CidrRoutingConfig](#cfn-route53-recordset-cidrroutingconfig): {{
     CidrRoutingConfig}}
   [Comment](#cfn-route53-recordset-comment): {{String}}
@@ -82,6 +85,13 @@ If you're creating resource records sets for a private hosted zone, note the fol
 + For information about creating failover resource record sets in a private hosted zone, see [Configuring Failover in a Private Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-private-hosted-zones.html) in the *Amazon Route 53 Developer Guide*.
 *Required*: No
 *Type*: [AliasTarget](aws-properties-route53-recordset-aliastarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AZAffinity`  <a name="cfn-route53-recordset-azaffinity"></a>
+*AZ-affinity resource record sets only:* The location that this resource record set answers DNS queries from, such as an Availability Zone (AZ) or an AWS Region. For each query, Route 53 starts with the most specific location that the query matches and falls back to a less specific location when there's no record for that location or the record is unhealthy (its health check fails or, for an alias record that has `EvaluateTargetHealth` set to `true`, its target is unhealthy). You must also specify `SetIdentifier`, and you can't specify another routing policy element, such as `Weight`, in the same resource record set.
+For more information, see [AZ-affinity routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-azaffinity.html) in the *Amazon Route 53 Developer Guide*.
+*Required*: No
+*Type*: [AZAffinity](aws-properties-route53-recordset-azaffinity.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CidrRoutingConfig`  <a name="cfn-route53-recordset-cidrroutingconfig"></a>

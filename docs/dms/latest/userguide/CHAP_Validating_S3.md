@@ -41,7 +41,7 @@ To set up access for using S3 target validation, ensure that the role assigned t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

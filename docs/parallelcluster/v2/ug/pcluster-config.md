@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Updates the AWS ParallelCluster configuration file.
 
-```
+```sh
 pcluster-config [ -h ] [convert]
 ```
 
@@ -29,7 +29,7 @@ The `pcluster-config` command was added in AWS ParallelCluster version 2.9.0.
 #### `pcluster-config convert`
 <a name="pcluster-config-convert"></a>
 
-```
+```sh
 pcluster-config convert [ -h ] [ -c {{CONFIG_FILE}} ] [ -t {{CLUSTER_TEMPLATE}} ]
                         [ -o {{OUTPUT_FILE}} ]
 ```
@@ -53,7 +53,7 @@ Specifies the path of the converted configuration file to be written. By default
 
 Example:
 
-```
+```sh
 $ pcluster-config convert -t alpha -o ~/.parallelcluster/multiinstance
 ```
 

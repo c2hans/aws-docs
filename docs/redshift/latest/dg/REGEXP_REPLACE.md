@@ -50,7 +50,7 @@ If either *pattern* or *replace\_string* is `NULL`, the function returns `NULL`.
 
 To replace all occurrences of the string `FOX` within the value `quick brown fox` using case-insensitive matching, use the following example.
 
-```
+```sql
 SELECT REGEXP_REPLACE('the fox', 'FOX', 'quick brown fox', 1, 'i');
 
 +---------------------+
@@ -62,7 +62,7 @@ SELECT REGEXP_REPLACE('the fox', 'FOX', 'quick brown fox', 1, 'i');
 
 The following example uses a pattern written in the PCRE dialect to locate words containing at least one number and one lowercase letter. It uses the `?=` operator, which has a specific look-ahead connotation in PCRE. To replace each occurrence of such a word with the value `[hidden]`, use the following example.
 
-```
+```sql
 SELECT REGEXP_REPLACE('passwd7 plain A1234 a1234', '(?=[^ ]*[a-z])(?=[^ ]*[0-9])[^ ]+', '[hidden]', 1, 'p');
 
 +-------------------------------+
@@ -74,7 +74,7 @@ SELECT REGEXP_REPLACE('passwd7 plain A1234 a1234', '(?=[^ ]*[a-z])(?=[^ ]*[0-9])
 
 The following example uses a pattern written in the PCRE dialect to locate words containing at least one number and one lowercase letter. It uses the `?=` operator, which has a specific look-ahead connotation in PCRE. To replace each occurrence of such a word with the value `[hidden]`, but differs from the previous example in that it uses case-insensitive matching, use the following example.
 
-```
+```sql
 SELECT REGEXP_REPLACE('passwd7 plain A1234 a1234', '(?=[^ ]*[a-z])(?=[^ ]*[0-9])[^ ]+', '[hidden]', 1, 'ip');
 
 +----------------------------------+
@@ -88,7 +88,7 @@ The following examples use data from the USERS table in the TICKIT sample databa
 
 To delete the `@` and domain name from email addresses, use the following example.
 
-```
+```sql
 SELECT email, REGEXP_REPLACE(email, '@.*\\.(org|gov|com|edu|ca)$')
 FROM users
 ORDER BY userid LIMIT 4;
@@ -105,7 +105,7 @@ ORDER BY userid LIMIT 4;
 
 To replace the domain names of email addresses with `internal.company.com`, use the following example.
 
-```
+```sql
 SELECT email, REGEXP_REPLACE(email, '@.*\\.[[:alpha:]]{2,3}','@internal.company.com')
 FROM users
 ORDER BY userid LIMIT 4;

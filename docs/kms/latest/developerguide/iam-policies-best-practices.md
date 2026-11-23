@@ -19,7 +19,7 @@ Give permission to create keys ([kms:CreateKey](https://docs.aws.amazon.com/kms/
 **Specify KMS keys in an IAM policy**
 As a best practice, specify the [key ARN](concepts.md#key-id-key-ARN) of each KMS key to which the permission applies in the `Resource` element of the policy statement. This practice restricts the permission to the KMS keys that principal requires. For example, this `Resource` element lists only the KMS keys the principal needs to use.
 
-```
+```json
 "Resource": [
     "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
     "arn:aws:kms:us-west-2:111122223333:key/0987dcba-09fe-87dc-65ba-ab0987654321"

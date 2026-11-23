@@ -21,4 +21,6 @@ The following actions are available for customer managed permissions on the `acm
 
 You can create customer managed permissions that include any combination of these actions. For example, you can create a read-only permission that excludes `IssueCertificate` and `RevokeCertificate`, or a full-access permission that includes all seven actions.
 
+You can also add conditions to a customer managed permission. For example, add X.509 certificate condition keys to the `IssueCertificate` statement to restrict the certificates that principals in other accounts can request. Customer managed permissions support only `Allow` statements. For more information, see [Control certificate issuance with X.509 certificate condition keys](certguard-condition-keys.md).
+
 For more information about creating customer managed permissions, see [Creating customer managed permissions](https://docs.aws.amazon.com/ram/latest/userguide/create-customer-managed-permissions.html) in the *AWS RAM User Guide*.

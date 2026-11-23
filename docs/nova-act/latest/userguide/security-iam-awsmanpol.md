@@ -31,7 +31,7 @@ Amazon Nova Act does not yet define a managed policy which grants access to the 
 
 For example:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -53,7 +53,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### Empty Schema schema
 <a name="members-disassociate-id-response-body-empty-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -61,7 +61,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### ValidationException schema
 <a name="members-disassociate-id-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -70,7 +70,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### ServiceQuotaExceededException schema
 <a name="members-disassociate-id-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -79,7 +79,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### AccessDeniedException schema
 <a name="members-disassociate-id-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -88,7 +88,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### ResourceNotFoundException schema
 <a name="members-disassociate-id-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -97,7 +97,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### ConflictException schema
 <a name="members-disassociate-id-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -106,7 +106,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### ThrottlingException schema
 <a name="members-disassociate-id-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -115,7 +115,7 @@ Disassociates an Amazon Macie administrator account from a member account.
 #### InternalServerException schema
 <a name="members-disassociate-id-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

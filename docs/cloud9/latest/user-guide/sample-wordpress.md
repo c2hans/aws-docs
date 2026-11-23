@@ -41,7 +41,7 @@ Installing WordPress on your environment's EC2 instance involves the following s
 
 1. In the AWS Cloud9 IDE, choose **Window**, **New Terminal** and enter the following commands to install and start a MariaDB Server installation:
 
-   ```
+   ```sh
    sudo yum install -y mariadb-server
    sudo systemctl start mariadb
    ```
@@ -58,7 +58,7 @@ Installing WordPress on your environment's EC2 instance involves the following s
 
    (Press **Enter** when asked for your password.)
 
-   ```
+   ```sh
    sudo mysql -u root -p
    MariaDB [(none)]> create database wp_test;
    MariaDB [(none)]> grant all privileges on wp_test.* to root@localhost identified by ';'

@@ -29,7 +29,7 @@ For more information, see [Delete a listener rule for your Application Load Bala
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified rule from the Listener**
 
-```
+```powershell
 Remove-ELB2Rule -RuleArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/app/test-alb/3651b4394dd9a24f/3873f123b98f7618/4b25eb10a42e33ab'
 ```
 **Output:**
@@ -45,7 +45,7 @@ Performing the operation "Remove-ELB2Rule (DeleteRule)" on target "arn:aws:elast
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified rule from the Listener**
 
-```
+```powershell
 Remove-ELB2Rule -RuleArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:listener-rule/app/test-alb/3651b4394dd9a24f/3873f123b98f7618/4b25eb10a42e33ab'
 ```
 **Output:**

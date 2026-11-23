@@ -42,7 +42,7 @@ You also must include at least one [`[cluster]` section](cluster-definition.md) 
 
 A section starts with the section name in brackets, followed by parameters and configuration.
 
-```
+```ini
 [global]
 cluster_template = default
 update_check = true

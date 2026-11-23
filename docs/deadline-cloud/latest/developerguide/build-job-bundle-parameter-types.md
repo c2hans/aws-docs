@@ -47,7 +47,7 @@ The `PATH` and `LIST[PATH]` types carry two extra fields. `objectType` is `FILE`
 
 The following definitions show a checkbox, a frame range, a list of camera names, and a list of input files. The template lists `EXPR` because the last four types require it.
 
-```
+```yaml
 specificationVersion: 'jobtemplate-2023-09'
 extensions:
   - EXPR
@@ -82,7 +82,7 @@ parameterDefinitions:
 
 In a template with the `EXPR` extension, each parameter has a matching expression type: `int`, `float`, `string`, `path`, `bool`, `range_expr`, or `list[{{T}}]`. A `RANGE_EXPR` or list parameter can be the `range` of a task parameter directly, so that each frame or item becomes a task. For `PATH` and `LIST[PATH]`, `RawParam.{{Name}}` is the value as submitted, as a string, before path mapping.
 
-```
+```yaml
 steps:
   - name: Render
     parameterSpace:

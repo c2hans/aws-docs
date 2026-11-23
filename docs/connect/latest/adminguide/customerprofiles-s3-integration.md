@@ -13,7 +13,7 @@ In this topic we show how to create an S3 integration with a sync interval of 15
 
 Create a JSON file with the following contents:
 
-```
+```json
 {
     "DomainName": "{{your-domain}}",
     "ObjectTypeName": "{{your-object-name}}",
@@ -61,13 +61,13 @@ To customize the JSON with your own values, follow these guidelines:
 
 After you have created and customized the JSON file with your values, call the [PutIntegration](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutIntegration.html) API, as shown in the following example:
 
-```
+```json
 aws customer-profiles put-integration --cli-input-json file:///{{put_integration_s3_cli.json}} --region {{us-west-2}}
 ```
 
 The response from `PutIntegration` returns a flow URI. For example:
 
-```
+```json
 {
     "DomainName": "testDomain",
     "Uri": "arn:aws:appflow:us-west-2:9999999999999:flow/Customer_Profiles_testDomain_S3_Salesforce-Account_1634244122247",
@@ -83,6 +83,6 @@ The response from `PutIntegration` returns a flow URI. For example:
 
 Use the flow URI to call the Amazon AppFlow [StartFlow](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_StartFlow.html) API. For example:
 
-```
+```json
 aws appflow start-flow —flow-name {{uri}} --region {{us-west-2}}
 ```

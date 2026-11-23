@@ -28,7 +28,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-webfunction-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::WebFunction
 Properties:
   [AuthType](#sam-webfunction-authtype): {{String}}
@@ -265,7 +265,7 @@ To reference the revision or endpoint that AWS SAM generates, use their logical 
 
 The following example creates a Web Function with an IAM-authorized endpoint in the stack's Region. AWS SAM generates the execution role, and the endpoint routes all traffic to the revision that this deployment creates.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
@@ -291,7 +291,7 @@ Outputs:
 
 The following example disables automatic deployment and sends 90% of traffic to one existing revision and 10% to another. Both revisions must already exist.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
@@ -313,7 +313,7 @@ Resources:
 
 The following example replicates the function to the US Regions except `us-west-1` and routes each request to the nearest Region. Because `RevisionWeights` is omitted, the endpoint routes all traffic to the revision created in this stack.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
@@ -342,7 +342,7 @@ Resources:
 
 The following example creates a network connector for Web Functions and routes the function's outbound traffic through the connector's subnets and security groups.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 

@@ -33,4 +33,3 @@ This section describes the mathematical operators and functions supported in AWS
 + [SIGN function](SIGN.md)
 + [SIN function](SIN.md)
 + [SQRT function](SQRT.md)
-+ [TRUNC function](TRUNC.md)

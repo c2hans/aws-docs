@@ -89,7 +89,7 @@ aws imagebuilder create-image --image-recipe-arn arn:aws:imagebuilder:{{us-west-
 
 The following example creates an image and requests an on-demand AMI scan of the output AMI. The image fails if the AMI has a finding with a fix available that's more severe than `HIGH`. Save the following scanning configuration in a file named `scan-config.json`:
 
-```
+```json
 {
     "imageScanningEnabled": true,
     "imageScanningTypes": ["ON_DEMAND_AMI_CVE"],
@@ -106,7 +106,7 @@ Replace the following values in the scanning configuration:
 
 Then run the following AWS CLI command. Replace the Region, account ID, recipe, and infrastructure configuration names with your own values:
 
-```
+```sh
 aws imagebuilder create-image \
     --image-recipe-arn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-recipe/{{simple-recipe-linux}}/{{1.0.0}} \
     --infrastructure-configuration-arn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:infrastructure-configuration/{{simple-infra-config-linux}} \
@@ -119,7 +119,7 @@ aws imagebuilder create-image \
 
 The following example shows how to use the [New-EC2IBImage](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBImage.html) cmdlet to create an image. This example uses default distribution settings:
 
-```
+```ps
 New-EC2IBImage `
     -ImageRecipeArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image-recipe/{{simple-recipe-linux}}/{{1.0.0}} `
     -InfrastructureConfigurationArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:infrastructure-configuration/{{simple-infra-config-linux}}
@@ -144,7 +144,7 @@ aws imagebuilder cancel-image-creation --image-build-version-arn arn:aws:imagebu
 
 The following example shows how to use the [Stop-EC2IBImageCreation](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2IBImageCreation.html) cmdlet to cancel an in-progress image build:
 
-```
+```ps
 Stop-EC2IBImageCreation -ImageBuildVersionArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image/{{my-example-recipe}}/2019.12.03/1
 ```
 

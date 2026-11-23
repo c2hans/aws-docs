@@ -133,7 +133,7 @@ List all resources for an organization recommendation by its identifier.
 #### Sample Request
 <a name="API_ListOrganizationRecommendationResources_Example_1_Request"></a>
 
-```
+```json
 {
                     "organizationRecommendationIdentifier": "arn:aws:trustedadvisor:::organization-recommendation/5a694939-2e54-45a2-ae72-730598fa89d0"
                     }
@@ -142,7 +142,7 @@ List all resources for an organization recommendation by its identifier.
 #### Sample Response
 <a name="API_ListOrganizationRecommendationResources_Example_1_Response"></a>
 
-```
+```json
 {
                     "organizationRecommendationResourceSummaries": [
                     {

@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List the Amazon S3 Glacier vaults associated with the current account.
     /// </summary>
@@ -75,7 +75,7 @@ For more information, see [Retrieving Vault Metadata in Amazon Glacier](https://
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glacier#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.glacier.model.ListVaultsRequest;
 import software.amazon.awssdk.services.glacier.model.ListVaultsResponse;
@@ -154,7 +154,7 @@ public class ListVaults {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 

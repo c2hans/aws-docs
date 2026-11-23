@@ -15,7 +15,7 @@ Otherwise, the bucket owner must add this policy to the bucket, specifying the A
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

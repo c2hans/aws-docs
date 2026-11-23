@@ -89,7 +89,7 @@ Any `AWSServiceError` received over an HTTP connection also conforms to `HTTPErr
 
 The following code tries to create an object on Amazon S3, with code to handle service errors. It features a `catch` clause that specifically handles the error code `NoSuchBucket`, which indicates that the bucket doesn't exist. This snippet assumes that the given bucket name doesn't exist.
 
-```
+```swift
         do {
             let client = try S3Client(region: "us-east-1")
 
@@ -126,7 +126,7 @@ Currently, HTTP is the only network protocol used by AWS. If a future AWS produc
 
 `HTTPError` includes an `httpResponse` property that contains an object of the class `HttpResponse`. The `httpResponse` provides information received in the response to the failed HTTP request. This provides access to the response headers, including the HTTP status code.
 
-```
+```swift
         do {
             let client = try S3Client(region: "us-east-1")
 
@@ -152,7 +152,7 @@ The second `catch` block is a catch-all that just dumps the error to the console
 
 To catch any errors not already caught for a given `do` block, use the `catch` keyword with no qualifiers. The following snippet simply catches all errors.
 
-```
+```swift
 do {
     let s3 = try await S3Client()
 
@@ -168,7 +168,7 @@ If you use a catch-all like this in your code, it needs to safely stop whatever 
 
 While developing a project, it can be helpful to temporarily output error details to the console. This can be useful when debugging, or to help determine which errors that occur may need special handling. The Swift `dump()` function can be used to do this.
 
-```
+```swift
 do {
     let output = try await client.listBuckets(input: ListBucketsInput())
 

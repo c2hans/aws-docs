@@ -18,7 +18,7 @@ The following IAM policy example grants a user or role `PassRole` permissions fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ The following IAM policy grants the minimum permissions to create pipelines and 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

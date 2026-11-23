@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
 Delete a rule by its name.
 
-```
+```csharp
     /// <summary>
     /// Delete an event rule by name.
     /// </summary>
@@ -56,7 +56,7 @@ For more information, see [Disabling or deleting a rule in Amazon EventBridge](h
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
 
-```
+```java
     public static void deleteRuleByName(EventBridgeClient eventBrClient, String ruleName) {
         DeleteRuleRequest ruleRequest = DeleteRuleRequest.builder()
                 .name(ruleName)
@@ -74,7 +74,7 @@ For more information, see [Disabling or deleting a rule in Amazon EventBridge](h
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
 
-```
+```kotlin
 suspend fun deleteRuleByName(ruleName: String?) {
     val ruleRequest =
         DeleteRuleRequest {

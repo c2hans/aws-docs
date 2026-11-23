@@ -173,7 +173,7 @@ To complete the steps in this guide, you must have the following:
 + [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Install the Git client if you haven't already.
 + [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). Maven must be in your working path. To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 
@@ -239,7 +239,7 @@ aws-cli/1.16.63
 
 1. Add a named profile for the administrator user in the AWS CLI `config` file. You use this profile when executing the AWS CLI commands. For more information about named profiles, see [Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) in the *AWS Command Line Interface User Guide*.
 
-   ```
+   ```bash
    [profile adminuser]
    aws_access_key_id = {{adminuser access key ID}}
    aws_secret_access_key = {{adminuser secret access key}}
@@ -252,7 +252,7 @@ The example code and commands in this tutorial use the US West (Oregon) Region. 
 
 1. Verify the setup by entering the following help command at the command prompt:
 
-   ```
+   ```bash
    aws help
    ```
 
@@ -288,7 +288,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the first stream (`ExampleInputStream`), use the following Amazon Kinesis `create-stream` AWS CLI command.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleInputStream \
    --shard-count 1 \
@@ -298,7 +298,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the second stream that the application uses to write output, run the same command, changing the stream name to `ExampleOutputStream`.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleOutputStream \
    --shard-count 1 \
@@ -316,7 +316,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
        import datetime
        import json
        import random
@@ -341,7 +341,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Later in the tutorial, you run the `stock.py` script to send data to the application.
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -382,7 +382,7 @@ In this section, you use the Apache Maven compiler to create the Java code for t
 1. To use your application code, you compile and package it into a JAR file. You can compile and package your code in one of two ways:
    + Use the command-line Maven tool. Create your JAR file by running the following command in the directory that contains the `pom.xml` file:
 
-     ```
+     ```bash
      mvn package -Dflink.version=1.13.2
      ```
    + Use your development environment. See your development environment documentation for details.
@@ -481,7 +481,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -616,7 +616,7 @@ Use the following code to create the `AKReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -700,7 +700,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (`{{username}}`) with the suffix that you chose in the previous section. Replace the sample account ID (`{{012345678901}}`) in the service execution role with your account ID.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "ApplicationDescription": "my java test app",
@@ -740,7 +740,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
    ```
 
@@ -755,7 +755,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "RunConfiguration": {
@@ -768,7 +768,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
    ```
 
@@ -783,7 +783,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
       "ApplicationName": "test"
    }
@@ -791,7 +791,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
    ```
 
@@ -811,7 +811,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "test",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {
@@ -839,7 +839,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
    ```
 
@@ -1008,7 +1008,7 @@ To complete the steps in this guide, you must have the following:
 + [Git client](https://git-scm.com/book/en/v2/earlier-gs-1_11-Installing-Git). Install the Git client if you haven't already.
 + [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). Maven must be in your working path. To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 
@@ -1069,7 +1069,7 @@ aws-cli/1.16.63
 
 1. Add a named profile for the administrator user in the AWS CLI `config` file. You use this profile when executing the AWS CLI commands. For more information about named profiles, see [Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) in the *AWS Command Line Interface User Guide*.
 
-   ```
+   ```bash
    [profile adminuser]
    aws_access_key_id = {{adminuser access key ID}}
    aws_secret_access_key = {{adminuser secret access key}}
@@ -1082,7 +1082,7 @@ The example code and commands in this tutorial use the US West (Oregon) Region. 
 
 1. Verify the setup by entering the following help command at the command prompt:
 
-   ```
+   ```bash
    aws help
    ```
 
@@ -1118,7 +1118,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the first stream (`ExampleInputStream`), use the following Amazon Kinesis `create-stream` AWS CLI command.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleInputStream \
    --shard-count 1 \
@@ -1128,7 +1128,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the second stream that the application uses to write output, run the same command, changing the stream name to `ExampleOutputStream`.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleOutputStream \
    --shard-count 1 \
@@ -1146,7 +1146,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/sdk
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
 
    import datetime
    import json
@@ -1176,7 +1176,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/sdk
 
 1. Later in the tutorial, you run the `stock.py` script to send data to the application.
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -1217,7 +1217,7 @@ In this section, you use the Apache Maven compiler to create the Java code for t
 1. To use your application code, you compile and package it into a JAR file. You can compile and package your code in one of two ways:
    + Use the command-line Maven tool. Create your JAR file by running the following command in the directory that contains the `pom.xml` file:
 
-     ```
+     ```bash
      mvn package -Dflink.version=1.11.3
      ```
    + Use your development environment. See your development environment documentation for details.
@@ -1316,7 +1316,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -1453,7 +1453,7 @@ Use the following code to create the `AKReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1537,7 +1537,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (`{{username}}`) with the suffix that you chose in the previous section. Replace the sample account ID (`{{012345678901}}`) in the service execution role with your account ID.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "ApplicationDescription": "my java test app",
@@ -1577,7 +1577,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
    ```
 
@@ -1592,7 +1592,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "RunConfiguration": {
@@ -1605,7 +1605,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
    ```
 
@@ -1620,7 +1620,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test"
    }
@@ -1628,7 +1628,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
    ```
 
@@ -1648,7 +1648,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "test",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {
@@ -1676,7 +1676,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
    ```
 
@@ -1844,7 +1844,7 @@ To complete the steps in this guide, you must have the following:
 + [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Install the Git client if you haven't already.
 + [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). Maven must be in your working path. To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 
@@ -1900,7 +1900,7 @@ aws-cli/1.16.63
 
 1. Add a named profile for the administrator user in the AWS CLI `config` file. You use this profile when executing the AWS CLI commands. For more information about named profiles, see [Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) in the *AWS Command Line Interface User Guide*.
 
-   ```
+   ```bash
    [profile adminuser]
    aws_access_key_id = {{adminuser access key ID}}
    aws_secret_access_key = {{adminuser secret access key}}
@@ -1913,7 +1913,7 @@ The example code and commands in this tutorial use the US West (Oregon) Region. 
 
 1. Verify the setup by entering the following help command at the command prompt:
 
-   ```
+   ```bash
    aws help
    ```
 
@@ -1949,7 +1949,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the first stream (`ExampleInputStream`), use the following Amazon Kinesis `create-stream` AWS CLI command.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleInputStream \
    --shard-count 1 \
@@ -1959,7 +1959,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the second stream that the application uses to write output, run the same command, changing the stream name to `ExampleOutputStream`.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleOutputStream \
    --shard-count 1 \
@@ -1977,7 +1977,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
 
    import datetime
    import json
@@ -2007,7 +2007,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Later in the tutorial, you run the `stock.py` script to send data to the application.
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -2051,7 +2051,7 @@ In this section, you use the Apache Maven compiler to create the Java code for t
 1. To use your application code, you compile and package it into a JAR file. You can compile and package your code in one of two ways:
    + Use the command-line Maven tool. Create your JAR file by running the following command in the directory that contains the `pom.xml` file:
 
-     ```
+     ```bash
      mvn package -Dflink.version=1.8.2
      ```
    + Use your development environment. See your development environment documentation for details.
@@ -2150,7 +2150,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -2287,7 +2287,7 @@ Use the following code to create the `AKReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -2371,7 +2371,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (`{{username}}`) with the suffix that you chose in the previous section. Replace the sample account ID (`{{012345678901}}`) in the service execution role with your account ID.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "ApplicationDescription": "my java test app",
@@ -2411,7 +2411,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
    ```
 
@@ -2426,7 +2426,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "RunConfiguration": {
@@ -2439,7 +2439,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
    ```
 
@@ -2454,7 +2454,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
       "ApplicationName": "test"
    }
@@ -2462,7 +2462,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
    ```
 
@@ -2482,7 +2482,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "test",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {
@@ -2510,7 +2510,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
    ```
 
@@ -2662,7 +2662,7 @@ To complete the steps in this guide, you must have the following:
 + [Git Client.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) Install the Git client if you haven't already.
 + [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). Maven must be in your working path. To test your Apache Maven installation, enter the following:
 
-  ```
+  ```bash
   $ mvn -version
   ```
 
@@ -2718,7 +2718,7 @@ aws-cli/1.16.63
 
 1. Add a named profile for the administrator user in the AWS CLI `config` file. You use this profile when executing the AWS CLI commands. For more information about named profiles, see [Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) in the *AWS Command Line Interface User Guide*.
 
-   ```
+   ```bash
    [profile adminuser]
    aws_access_key_id = {{adminuser access key ID}}
    aws_secret_access_key = {{adminuser secret access key}}
@@ -2731,7 +2731,7 @@ The example code and commands in this tutorial use the US West (Oregon) Region. 
 
 1. Verify the setup by entering the following help command at the command prompt:
 
-   ```
+   ```bash
    aws help
    ```
 
@@ -2766,7 +2766,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the first stream (`ExampleInputStream`), use the following Amazon Kinesis `create-stream` AWS CLI command.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleInputStream \
    --shard-count 1 \
@@ -2776,7 +2776,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
 
 1. To create the second stream that the application uses to write output, run the same command, changing the stream name to `ExampleOutputStream`.
 
-   ```
+   ```bash
    $ aws kinesis create-stream \
    --stream-name ExampleOutputStream \
    --shard-count 1 \
@@ -2794,7 +2794,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
 
    import datetime
    import json
@@ -2824,7 +2824,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Later in the tutorial, you run the `stock.py` script to send data to the application.
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -2868,7 +2868,7 @@ In this section, you use the Apache Maven compiler to create the Java code for t
 1. To use your application code, you compile and package it into a JAR file. You can compile and package your code in one of two ways:
    + Use the command-line Maven tool. Create your JAR file by running the following command in the directory that contains the `pom.xml` file:
 
-     ```
+     ```bash
      mvn package
      ```
 **Note**
@@ -2971,7 +2971,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -3105,7 +3105,7 @@ Use the following code to create the `AKReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -3189,7 +3189,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (`{{username}}`) with the suffix that you chose in the previous section. Replace the sample account ID (`{{012345678901}}`) in the service execution role with your account ID.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "ApplicationDescription": "my java test app",
@@ -3229,7 +3229,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
    ```
 
@@ -3244,7 +3244,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "RunConfiguration": {
@@ -3257,7 +3257,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
    ```
 
@@ -3272,7 +3272,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
       "ApplicationName": "test"
    }
@@ -3280,7 +3280,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
    ```
 
@@ -3300,7 +3300,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "test",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {
@@ -3328,7 +3328,7 @@ In this section, you use the [`UpdateApplication`](https://docs.aws.amazon.com/m
 
 1. Execute the [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) action with the preceding request to update environment properties:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 update-application --cli-input-json file://update_properties_request.json
    ```
 
@@ -3513,7 +3513,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
        import datetime
        import json
        import random
@@ -3542,7 +3542,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -3577,7 +3577,7 @@ The application code is located in the `TumblingWindowStreamingJob.java` file. N
   ```
 + The application uses the `timeWindow` operator to find the count of values for each stock symbol over a 5-second tumbling window. The following code creates the operator and sends the aggregated data to a new Kinesis Data Streams sink:
 
-  ```
+  ```java
   input.flatMap(new Tokenizer()) // Tokenizer for generating words
                       .keyBy(0) // Logically partition the stream for each word
 
@@ -3663,7 +3663,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -3862,7 +3862,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
 
    import datetime
    import json
@@ -3892,7 +3892,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -3928,7 +3928,7 @@ The application code is located in the `SlidingWindowStreamingJobWithParallelism
   ```
 + The application uses the `timeWindow` operator to find the count of values for each stock symbol over a 5-second tumbling window. The following code creates the operator and sends the aggregated data to a new Kinesis Data Streams sink:
 
-  ```
+  ```java
   input.flatMap(new Tokenizer()) // Tokenizer for generating words
                   .keyBy(0) // Logically partition the stream for each word
 
@@ -4012,7 +4012,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -4238,7 +4238,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
        import datetime
        import json
        import random
@@ -4267,7 +4267,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -4409,7 +4409,7 @@ Edit the IAM policy to add permissions to access the Kinesis data stream.
 
 1. Add the highlighted section of the following policy example to the policy. Replace the sample account IDs ({{012345678901}}) with your account ID. Replace <username> with your user name.
 
-   ```
+   ```json
    {
                "Sid": "S3",
                "Effect": "Allow",
@@ -4538,14 +4538,14 @@ To customize the folder names created in the S3 bucket, do the following:
 
 1. Add the following import statements to the beginning of the `S3StreamingSinkJob.java` file:
 
-   ```
+   ```java
    import org.apache.flink.streaming.api.functions.sink.filesystem.rollingpolicies.DefaultRollingPolicy;
    import org.apache.flink.streaming.api.functions.sink.filesystem.bucketassigners.DateTimeBucketAssigner;
    ```
 
 1. Update the `createS3SinkFromStaticConfig()` method in the code to look like the following:
 
-   ```
+   ```java
    private static StreamingFileSink<String> createS3SinkFromStaticConfig() {
 
        final StreamingFileSink<String> sink = StreamingFileSink
@@ -4572,7 +4572,7 @@ To set the read frequency of the Kinesis consumer, you set the `SHARD_GETRECORDS
 
 The following code example sets the `SHARD_GETRECORDS_INTERVAL_MILLIS` setting to one second:
 
-```
+```java
 kinesisConsumerConfig.setProperty(ConsumerConfigConstants.SHARD_GETRECORDS_INTERVAL_MILLIS, "1000");
 ```
 
@@ -4590,7 +4590,7 @@ To configure the `DefaultRollingPolicy` object, do the following:
 
 1. Increase the application's `CheckpointInterval` setting. The following input for the [ UpdateApplication](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html) action sets the checkpoint interval to 10 minutes:
 
-   ```
+   ```json
    {
       "ApplicationConfigurationUpdate": {
          "FlinkApplicationConfigurationUpdate": {
@@ -4609,13 +4609,13 @@ To configure the `DefaultRollingPolicy` object, do the following:
 
 1. Add the following import statement to the beginning of the `S3StreamingSinkJob.java` file:
 
-   ```
+   ```java
    import java.util.concurrent.TimeUnit;
    ```
 
 1. Update the `createS3SinkFromStaticConfig` method in the `S3StreamingSinkJob.java` file to look like the following:
 
-   ```
+   ```java
    private static StreamingFileSink<String> createS3SinkFromStaticConfig() {
 
            final StreamingFileSink<String> sink = StreamingFileSink
@@ -4943,7 +4943,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
 
        import datetime
        import json
@@ -4973,7 +4973,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -5083,7 +5083,7 @@ These permissions grant the application the ability to access the EFO consumer.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -5344,7 +5344,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
     import datetime
        import json
        import random
@@ -5373,7 +5373,7 @@ This section requires the [AWS SDK for Python (Boto)](https://aws.amazon.com/dev
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -5509,7 +5509,7 @@ Edit the IAM policy to add permissions to access the Kinesis data stream and Fir
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -5631,7 +5631,7 @@ Use the following code to create the `AKReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -5715,7 +5715,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix with the suffix that you chose in the [Create dependent resources](#get-started-exercise-fh-1) section (`ka-app-code-{{<username>}}`.) Replace the sample account ID ({{012345678901}}) in the service execution role with your account ID.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "ApplicationDescription": "my java test app",
@@ -5738,7 +5738,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 1. Execute the [`CreateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_CreateApplication.html) action with the preceding request to create the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 create-application --cli-input-json file://create_request.json
    ```
 
@@ -5753,7 +5753,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test",
        "RunConfiguration": {
@@ -5766,7 +5766,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ma
 
 1. Execute the [`StartApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StartApplication.html) action with the preceding request to start the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 start-application --cli-input-json file://start_request.json
    ```
 
@@ -5781,7 +5781,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "test"
    }
@@ -5789,7 +5789,7 @@ In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/man
 
 1. Execute the [`StopApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_StopApplication.html) action with the following request to stop the application:
 
-   ```
+   ```bash
    aws kinesisanalyticsv2 stop-application --cli-input-json file://stop_request.json
    ```
 
@@ -6006,7 +6006,7 @@ When you use the console to create your application, the console creates a polic
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -6079,7 +6079,7 @@ When you use the console to create your application, the console creates a polic
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -6131,7 +6131,7 @@ When you use the console to create your application, the console creates a polic
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -6330,7 +6330,7 @@ If you are using the legacy SourceFunction APIs, your application will use custo
 
 The custom truststore is retrieved and stored using the following code:
 
-```
+```java
 public static void initializeKafkaTruststore() {
     ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
     URL inputUrl = classLoader.getResource("kafka.client.truststore.jks");
@@ -6614,7 +6614,7 @@ aws configure
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
        import datetime
        import json
        import random
@@ -6643,7 +6643,7 @@ aws configure
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -6667,7 +6667,7 @@ The Python application code for this example is available from GitHub. To downlo
 The application code is located in the `tumbling-windows.py` file. Note the following about the application code:
 + The application uses a Kinesis table source to read from the source stream. The following snippet calls the `create_table` function to create the Kinesis table source:
 
-  ```
+  ```python
   table_env.execute_sql(
           create_input_table(input_table_name, input_stream, input_region, stream_initpos)
       )
@@ -6675,7 +6675,7 @@ The application code is located in the `tumbling-windows.py` file. Note the foll
 
   The `create_table` function uses a SQL command to create a table that is backed by the streaming source:
 
-  ```
+  ```python
   def create_input_table(table_name, stream_name, region, stream_initpos):
       return """ CREATE TABLE {0} (
                   ticker VARCHAR(6),
@@ -6695,7 +6695,7 @@ The application code is located in the `tumbling-windows.py` file. Note the foll
   ```
 + The application uses the `Tumble` operator to aggregate records within a specified tumbling window, and return the aggregated records as a table object:
 
-  ```
+  ```python
   tumbling_window_table = (
           input_table.window(
               Tumble.over("10.seconds").on("event_time").alias("ten_second_window")
@@ -6835,7 +6835,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -7015,7 +7015,7 @@ aws configure
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
        import datetime
        import json
        import random
@@ -7044,7 +7044,7 @@ aws configure
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -7068,7 +7068,7 @@ The Python application code for this example is available from GitHub. To downlo
 The application code is located in the `sliding-windows.py` file. Note the following about the application code:
 + The application uses a Kinesis table source to read from the source stream. The following snippet calls the `create_input_table` function to create the Kinesis table source:
 
-  ```
+  ```python
   table_env.execute_sql(
           create_input_table(input_table_name, input_stream, input_region, stream_initpos)
       )
@@ -7076,7 +7076,7 @@ The application code is located in the `sliding-windows.py` file. Note the follo
 
   The `create_input_table` function uses a SQL command to create a table that is backed by the streaming source:
 
-  ```
+  ```python
   def create_input_table(table_name, stream_name, region, stream_initpos):
       return """ CREATE TABLE {0} (
                   ticker VARCHAR(6),
@@ -7097,7 +7097,7 @@ The application code is located in the `sliding-windows.py` file. Note the follo
   ```
 + The application uses the `Slide` operator to aggregate records within a specified sliding window, and return the aggregated records as a table object:
 
-  ```
+  ```python
   sliding_window_table = (
           input_table
               .window(
@@ -7244,7 +7244,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -7429,7 +7429,7 @@ aws configure
 
 1. Create a file named `stock.py` with the following contents:
 
-   ```
+   ```python
        import datetime
        import json
        import random
@@ -7458,7 +7458,7 @@ aws configure
 
 1. Run the `stock.py` script:
 
-   ```
+   ```bash
    $ python stock.py
    ```
 
@@ -7482,7 +7482,7 @@ The Python application code for this example is available from GitHub. To downlo
 The application code is located in the `streaming-file-sink.py` file. Note the following about the application code:
 + The application uses a Kinesis table source to read from the source stream. The following snippet calls the `create_source_table` function to create the Kinesis table source:
 
-  ```
+  ```python
   table_env.execute_sql(
           create_source_table(input_table_name, input_stream, input_region, stream_initpos)
       )
@@ -7490,7 +7490,7 @@ The application code is located in the `streaming-file-sink.py` file. Note the f
 
   The `create_source_table` function uses a SQL command to create a table that is backed by the streaming source
 
-  ```
+  ```python
   import datetime
       import json
       import random
@@ -7664,7 +7664,7 @@ Edit the IAM policy to add permissions to access the Kinesis data streams.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -7861,7 +7861,7 @@ Note the following about the application code:
 + The `BasicStreamingJob.scala` file contains the main method that defines the application's functionality.
 + The application uses a Kinesis source to read from the source stream. The following snippet creates the Kinesis source:
 
-  ```
+  ```python
   private def createSource: FlinkKinesisConsumer[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val inputProperties = applicationProperties.get("ConsumerConfigProperties")
@@ -7873,7 +7873,7 @@ Note the following about the application code:
 
   The application also uses a Kinesis sink to write into the result stream. The following snippet creates the Kinesis sink:
 
-  ```
+  ```python
   private def createSink: KinesisStreamsSink[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val outputProperties = applicationProperties.get("ProducerConfigProperties")
@@ -7888,7 +7888,7 @@ Note the following about the application code:
   ```
 + The application uses the window operator to find the count of values for each stock symbol over a 5-seconds tumbling window. The following code creates the operator and sends the aggregated data to a new Kinesis Data Streams sink:
 
-  ```
+  ```json
   environment.addSource(createSource)
     .map { value =>
       val jsonNode = jsonParser.readValue(value, classOf[JsonNode])
@@ -8053,7 +8053,7 @@ Edit the IAM policy to add permissions to access the Amazon S3 bucket.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -8297,7 +8297,7 @@ In this section, you use the [StartApplication](https://docs.aws.amazon.com/mana
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "tumbling_window",
        "RunConfiguration": {
@@ -8325,7 +8325,7 @@ In this section, you use the [StopApplication](https://docs.aws.amazon.com/manag
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
       "ApplicationName": "tumbling_window"
    }
@@ -8353,7 +8353,7 @@ In this section, you use the [UpdateApplication](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "tumbling_window",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {
@@ -8530,7 +8530,7 @@ Note the following about the application code:
 + The `BasicStreamingJob.scala` file contains the main method that defines the application's functionality.
 + The application uses a Kinesis source to read from the source stream. The following snippet creates the Kinesis source:
 
-  ```
+  ```python
   private def createSource: FlinkKinesisConsumer[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val inputProperties = applicationProperties.get("ConsumerConfigProperties")
@@ -8542,7 +8542,7 @@ Note the following about the application code:
 
   The application also uses a Kinesis sink to write into the result stream. The following snippet creates the Kinesis sink:
 
-  ```
+  ```python
   private def createSink: KinesisStreamsSink[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val outputProperties = applicationProperties.get("ProducerConfigProperties")
@@ -8557,7 +8557,7 @@ Note the following about the application code:
   ```
 + The application uses the window operator to find the count of values for each stock symbol over a 10-seconds window that slides by 5 seconds. The following code creates the operator and sends the aggregated data to a new Kinesis Data Streams sink:
 
-  ```
+  ```json
   environment.addSource(createSource)
       .map { value =>
         val jsonNode = jsonParser.readValue(value, classOf[JsonNode])
@@ -8722,7 +8722,7 @@ Edit the IAM policy to add permissions to access the Amazon S3 bucket.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -8906,7 +8906,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (username) with the suffix that you chose in the previous section. Replace the sample account ID (012345678901) in the service execution role with your account ID.
 
-```
+```json
 {
     "ApplicationName": "sliding_window",
     "ApplicationDescription": "Scala sliding_window application",
@@ -8967,7 +8967,7 @@ In this section, you use the [StartApplication](https://docs.aws.amazon.com/mana
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {
        "ApplicationName": "sliding_window",
        "RunConfiguration": {
@@ -8995,7 +8995,7 @@ In this section, you use the [StopApplication](https://docs.aws.amazon.com/manag
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
       "ApplicationName": "sliding_window"
    }
@@ -9023,7 +9023,7 @@ In this section, you use the [UpdateApplication](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "sliding_window",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {
@@ -9200,7 +9200,7 @@ Note the following about the application code:
 + The `BasicStreamingJob.scala` file contains the main method that defines the application's functionality.
 + The application uses a Kinesis source to read from the source stream. The following snippet creates the Kinesis source:
 
-  ```
+  ```python
   private def createSource: FlinkKinesisConsumer[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val inputProperties = applicationProperties.get("ConsumerConfigProperties")
@@ -9212,7 +9212,7 @@ Note the following about the application code:
 
   The application also uses a StreamingFileSink to write to an Amazon S3 bucket:`
 
-  ```
+  ```python
   def createSink: StreamingFileSink[String] = {
     val applicationProperties = KinesisAnalyticsRuntime.getApplicationProperties
     val s3SinkPath = applicationProperties.get("ProducerConfigProperties").getProperty("s3.sink.path")
@@ -9373,7 +9373,7 @@ Edit the IAM policy to add permissions to access the Amazon S3 bucket.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -9466,7 +9466,7 @@ Use the following code to create the `AKReadSourceStreamWriteSinkStream` permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -9581,7 +9581,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (username) with the suffix that you chose in the previous section. Replace the sample account ID (012345678901) in the service execution role with your account ID.
 
-```
+```json
 {
     "ApplicationName": "s3_sink",
     "ApplicationDescription": "Scala tumbling window application",
@@ -9641,7 +9641,7 @@ In this section, you use the [StartApplication](https://docs.aws.amazon.com/mana
 
 1. Save the following JSON code to a file named `start_request.json`.
 
-   ```
+   ```json
    {{
        "ApplicationName": "s3_sink",
        "RunConfiguration": {
@@ -9669,7 +9669,7 @@ In this section, you use the [StopApplication](https://docs.aws.amazon.com/manag
 
 1. Save the following JSON code to a file named `stop_request.json`.
 
-   ```
+   ```json
    {
       "ApplicationName": "s3_sink"
    }
@@ -9697,7 +9697,7 @@ In this section, you use the [UpdateApplication](https://docs.aws.amazon.com/man
 
 1. Save the following JSON code to a file named `update_properties_request.json`.
 
-   ```
+   ```json
    {"ApplicationName": "s3_sink",
       "CurrentApplicationVersionId": 1,
       "ApplicationConfigurationUpdate": {

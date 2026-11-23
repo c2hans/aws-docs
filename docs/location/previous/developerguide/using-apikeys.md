@@ -66,7 +66,7 @@ Use the `[CreateKey](https://docs.aws.amazon.com/location/previous/APIReference/
 
 The following example is an API request to create an API key called {{ExampleKey}} with no expiration date, and access to a single map resource.
 
-```
+```json
 POST /metadata/v0/keys HTTP/1.1
 Content-type: application/json
 
@@ -157,7 +157,7 @@ You can use the API key value to render a map in your application using MapLibre
 
 The following sample code shows using the API key to render a map in a simple webpage by using the MapLibre GL JS map control. For this code to work properly, replace the {{v1.public.your-api-key-value}}, {{us-east-1}}, and {{ExampleMap}} strings with values that match your AWS account.
 
-```
+```js
 <!-- index.html -->
 <html>
   <head>

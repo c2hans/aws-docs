@@ -128,7 +128,7 @@ Important If your OS is not listed in the following sections, you can follow the
 ### Amazon Linux 2
 <a name="amazon-linux-2"></a>
 
-```
+```bash
 sudo yum install openssl11
 ```
 
@@ -137,7 +137,7 @@ sudo yum install openssl11
 
  **22.04**
 
-```
+```bash
 ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 ln -s /snap/core18/current/usr/lib/x86_64-linux-gnu/libssl.so.1.1 /usr/lib/libssl.so.1.1
 ln -s /snap/core18/current/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1 /usr/lib/libcrypto.so.1.1
@@ -145,13 +145,13 @@ ln -s /snap/core18/current/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1 /usr/lib/li
 
  **20.04**
 
-```
+```bash
 ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 ```
 
  **18.04**
 
-```
+```bash
 ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 ```
 
@@ -160,13 +160,13 @@ ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 
  **GNU/10**
 
-```
+```bash
 ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 ```
 
  **GNU/11**
 
-```
+```bash
 ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 ```
 
@@ -179,7 +179,7 @@ OpenSSL 1.1 is installed by default.
 
  **7.X**
 
-```
+```bash
 sudo su -
 
 yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
@@ -216,7 +216,7 @@ Note: CentOS Linux 7 will reach end of life (EOL) on June 30, 2024. It is not an
 
 1. Log in to your CentOS 7 machine and install SSM Agent manually.
 
-   ```
+   ```bash
    sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
    sudo systemctl enable amazon-ssm-agent
    sudo systemctl start amazon-ssm-agent
@@ -226,7 +226,7 @@ Note: CentOS Linux 7 will reach end of life (EOL) on June 30, 2024. It is not an
 
 1. Log in to CentOS 7 and install fluent-bit 1.9.3 manually.
 
-   ```
+   ```bash
    export RELEASE_URL=${FLUENT_BIT_PACKAGES_URL:-https://packages.fluentbit.io}
    export RELEASE_KEY=${FLUENT_BIT_PACKAGES_KEY:-https://packages.fluentbit.io/fluentbit.key}
 
@@ -257,7 +257,7 @@ Note: CentOS Linux 7 will reach end of life (EOL) on June 30, 2024. It is not an
 
 Upload the SSL certificate by running the AWS CLI command upload-server-certificate similar to the following:
 
-```
+```bash
 aws iam upload-server-certificate --path /cloudfront/ \
 --server-certificate-name YourCertificate \
 --certificate-body file://Certificate.pem \
@@ -274,7 +274,7 @@ After the certificate is uploaded, the AWS command upload-server-certificate ret
 
 To view the uploaded certificate, run the AWS CLI command list-server-certificates:
 
-```
+```bash
 aws iam list-server-certificates
 ```
 
@@ -292,7 +292,7 @@ We strongly recommend you run the commands with environments first. Any upgrade 
 
 For Redhat 7.9, the whole process will take about 2 hours, and at least 10 GB storage is needed.
 
-```
+```bash
 # install library
 yum install -y gcc gcc-c++ m4 python3 bison  fontconfig-devel  libXpm-devel texinfo bzip2 wget
 echo /usr/local/lib  >> /etc/ld.so.conf
@@ -366,7 +366,7 @@ rm -rf /tmp/library
 
  **Ubuntu 22**
 
-```
+```bash
 sudo ln -s /snap/core20/1623/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
 sudo ln -s /snap/core20/1623/usr/lib/x86_64-linux-gnu/libssl.so.1.1 /usr/lib/x86_64-linux-gnu/libssl.so.1.1
 sudo ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
@@ -374,7 +374,7 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libsasl2.so.2 /usr/lib/libsasl2.so.3
 
  **Amazon Linux 2023**
 
-```
+```bash
 sudo su -
 
 yum install -y wget perl unzip gcc zlib-devel

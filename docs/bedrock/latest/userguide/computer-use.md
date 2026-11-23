@@ -63,7 +63,7 @@ Each of the following examples asks the model to take a screenshot. The model re
 
 The following Python example sends a request through the `bedrock-runtime` endpoint with the `computer_20251124` tool and the required beta value.
 
-```
+```python
 import boto3
 import json
 
@@ -96,7 +96,7 @@ print(result["content"])      # contains the tool_use block describing the actio
 
 The model requests the action through the `computer` tool:
 
-```
+```json
 {
     "type": "tool_use",
     "name": "computer",
@@ -108,7 +108,7 @@ The model requests the action through the `computer` tool:
 
 The following example uses `computer_toolset_20260801` instead. No beta value is required, and the toolset entry has no `name`.
 
-```
+```python
 import boto3
 import json
 
@@ -132,7 +132,7 @@ print(result["content"])
 
 The model calls the `screenshot` tool from the toolset directly. The `toolset_name` field identifies the toolset that the tool belongs to:
 
-```
+```json
 {
     "type": "tool_use",
     "name": "screenshot",
@@ -145,7 +145,7 @@ The model calls the `screenshot` tool from the toolset directly. The `toolset_na
 
 With the Converse API, pass the computer tool and the beta value in `additionalModelRequestFields`. The model's action is returned as a `toolUse` content block.
 
-```
+```python
 import boto3
 
 client = boto3.client("bedrock-runtime", region_name="us-east-1")

@@ -76,7 +76,7 @@ In addition to the EC2ImageBuilderExecutionPolicy managed policy, the role needs
 
 The following example policy grants these permissions for one group. Attach it to the execution role with EC2ImageBuilderExecutionPolicy.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -112,7 +112,7 @@ The following example policy grants these permissions for one group. Attach it t
 
 Instead of writing the policy yourself, you can create a role that has EC2ImageBuilderExecutionPolicy and these permissions from the EC2ImageBuilderParentInstanceASGRoleTemplate role template. In the console, choose **Create new role with required permission** in the infrastructure configuration. With the AWS CLI, use the [acquire-role](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/acquire-role.html) command. The following example creates a role named `EC2ImageBuilderParentInstanceASG-{{my-build-pool}}` for the `{{my-build-pool}}` group. The role template isn't available in the AWS GovCloud (US) Regions or the China Regions.
 
-```
+```sh
 aws iam acquire-role \
     --template-arn arn:aws:iam::aws:role-template/imagebuilder.amazonaws.com/EC2ImageBuilderParentInstanceASGRoleTemplate:3 \
     --replacement-values \

@@ -50,7 +50,7 @@ Additionally, you might have to grant usage permission for the schema your deep 
 
 The following example performs a deep copy on the SAMPLE table using a duplicate of SAMPLE named sample\_copy.
 
-```
+```sql
 --Create a copy of the original table in the sample_namespace namespace using the original CREATE TABLE DDL.
 create table {{sample_namespace}}.sample_copy ( … );
 
@@ -94,7 +94,7 @@ alter table sample_namespace.sample_copy rename to sample;
 
 The following example performs a deep copy on the SAMPLE table using CREATE TABLE LIKE.
 
-```
+```sql
 --Create a copy of the original table in the sample_namespace namespace using CREATE TABLE LIKE.
 create table {{sameple_namespace}}.sample_copy (like {{public}}.sample);
 
@@ -132,7 +132,7 @@ alter table sample_namespace.sample_copy rename to sample;
 
 The following example performs a deep copy on the SALES table by creating a temporary table and truncating the original table. Since the original table remains, you don't need to grant permissions to the copy table.
 
-```
+```sql
 --Create a temp table copy using CREATE TABLE AS.
 create temp table salestemp as select * from sales;
 

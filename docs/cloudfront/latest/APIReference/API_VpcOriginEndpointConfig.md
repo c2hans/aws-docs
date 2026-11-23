@@ -35,6 +35,12 @@ Type: String
 Valid Values: `http-only | match-viewer | https-only`
 Required: Yes
 
+ ** IpAddressType **   <a name="cloudfront-Type-VpcOriginEndpointConfig-IpAddressType"></a>
+The IP address type of the CloudFront VPC origin endpoint configuration. Valid values are `ipv4` and `dualstack`. IPv6-only is not supported for VPC origins.
+Type: String
+Valid Values: `ipv4 | dualstack`
+Required: No
+
  ** OriginSslProtocols **   <a name="cloudfront-Type-VpcOriginEndpointConfig-OriginSslProtocols"></a>
 A complex type that contains information about the SSL/TLS protocols that CloudFront can use when establishing an HTTPS connection with your origin.
 Type: [OriginSslProtocols](API_OriginSslProtocols.md) object

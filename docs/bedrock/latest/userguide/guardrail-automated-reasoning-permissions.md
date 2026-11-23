@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrail-autom
 
 When using Automated Reasoning policies with the `ApplyGuardrail` API, you need an IAM policy that allows you to invoke the Automated Reasoning policy.
 
-```
+```json
 {
     "Sid": "AutomatedReasoningChecks",
     "Effect": "Allow",

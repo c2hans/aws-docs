@@ -62,7 +62,7 @@ Authorization policies for the Greengrass CLI have the following properties.
 **Example authorization policy**
 The following example authorization policies allow a component to create local deployments, view all local deployments and components, and restart and stop a component named `com.example.HelloWorld`.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.Cli": {
@@ -135,7 +135,7 @@ The name of the component.
 `value`
 The configuration update JSON object for the component. The JSON object must have the following format.
 
-```
+```json
 {
   "MERGE": {
     "{{config-key}}": "{{config-value}}"
@@ -360,7 +360,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Restart a component**
 
-```
+```rust
 use gg_sdk::Sdk;
 
 fn main() {
@@ -381,7 +381,7 @@ fn main() {
 
 **Example: Restart a component**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -423,7 +423,7 @@ int main(void) {
 
 **Example: Restart a component**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 

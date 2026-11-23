@@ -10,7 +10,7 @@ This section contains the full HTML and JavaScript code for the example in which
 
 The HTML for the example:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,7 +31,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 The browser script code for the example:
 
-```
+```javascript
 //
 // Data constructs and initialization.
 //

@@ -8,7 +8,7 @@ Checks whether the length of each row in a column conforms to a given expression
 
 **Syntax**
 
-```
+```json
 ColumnLength {{<COL_NAME>}}{{<EXPRESSION>}}
 ```
 + **COL\_NAME** – The name of the column that you want to evaluate the data quality rule against.
@@ -20,7 +20,7 @@ ColumnLength {{<COL_NAME>}}{{<EXPRESSION>}}
 
 The following example rule checks whether the value in each row in the column named `Postal_Code` is 5 characters long.
 
-```
+```json
 ColumnLength "Postal_Code" = 5
 ColumnLength "weightinkgs" = 2 where "weightinkgs > 10"
 ```
@@ -29,16 +29,16 @@ ColumnLength "weightinkgs" = 2 where "weightinkgs > 10"
 
  The `ColumnLength` rule treats `NULL`s as 0 length strings. For a `NULL` row:
 
-```
+```json
 ColumnLength "Postal_Code" > 4 # this will fail
 ```
 
-```
+```json
 ColumnLength "Postal_Code" < 6 # this will succeed
 ```
 
  The following example compound rule provides a way to explicitly fail `NULL` values:
 
-```
+```json
 (ColumnLength "Postal_Code" > 4) AND (ColumnValues "Postal_Code" != NULL)
 ```

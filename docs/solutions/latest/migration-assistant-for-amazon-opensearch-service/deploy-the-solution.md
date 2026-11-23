@@ -38,7 +38,7 @@ After the CloudFormation stack deploys, run the bootstrap script to install the 
 
 Throughout this guide, `<STAGE>` is a short label such as `dev`, `staging`, or `prod`. It is used in cluster and resource names so you can keep multiple deployments separate.
 
-```
+```bash
 curl -sL -o aws-bootstrap.sh \
   "https://solutions-reference.s3.amazonaws.com/migration-assistant-for-amazon-opensearch-service/latest/aws-bootstrap.sh" \
   && chmod +x aws-bootstrap.sh
@@ -70,7 +70,7 @@ The following table highlights the flags most users need first:
 ### New VPC (latest published release)
 <a name="deploy-new-vpc"></a>
 
-```
+```bash
 ./aws-bootstrap.sh \
   --deploy-create-vpc-cfn \
   --stack-name MA \
@@ -81,7 +81,7 @@ The following table highlights the flags most users need first:
 ### New VPC pinned to a specific release
 <a name="deploy-new-vpc-pinned"></a>
 
-```
+```bash
 ./aws-bootstrap.sh \
   --deploy-create-vpc-cfn \
   --stack-name MA \
@@ -96,7 +96,7 @@ Pinning a version makes the deployment reproducible. Customers and CI runs that 
 ### Existing VPC
 <a name="deploy-existing-vpc"></a>
 
-```
+```bash
 ./aws-bootstrap.sh \
   --deploy-import-vpc-cfn \
   --stack-name MA \
@@ -113,13 +113,13 @@ When the script finishes, it has already installed the Helm chart and configured
 
 Update your kubeconfig to point at the new Amazon EKS cluster:
 
-```
+```bash
 aws eks update-kubeconfig --region <REGION> --name migration-eks-cluster-<STAGE>-<REGION>
 ```
 
 Then list the pods in the `ma` namespace:
 
-```
+```bash
 kubectl get pods -n ma
 ```
 
@@ -128,7 +128,7 @@ You should see the Migration Console (`migration-console-0`), the Argo workflow 
 ## Step 4: Access the Migration Console
 <a name="step-4-access-console"></a>
 
-```
+```bash
 kubectl exec -it migration-console-0 -n ma -- /bin/bash
 ```
 
@@ -144,7 +144,7 @@ The Amazon EKS deployment provides a default Amazon S3 bucket and snapshot-role 
 
 The deployment creates a default Amazon S3 bucket for migration artifacts and snapshots:
 
-```
+```text
 s3://migrations-default-<ACCOUNT_ID>-<STAGE>-<REGION>
 ```
 
@@ -155,7 +155,7 @@ The default bucket is mounted read-only on the Migration Console pod at `/s3/art
 
 If your workflow needs a snapshot role ARN, look it up from the AWS CloudFormation outputs:
 
-```
+```bash
 aws cloudformation describe-stacks \
   --stack-name <YOUR_STACK_NAME> \
   --query "Stacks[0].Outputs[?contains(OutputKey,'MigrationsExportString')].OutputValue" \
@@ -170,7 +170,7 @@ aws cloudformation describe-stacks \
 
 For sources that require basic authentication, create managed HTTP Basic credentials from the Migration Console pod and reference the name in `authConfig.basic.secretName` in your workflow configuration:
 
-```
+```bash
 workflow configure credentials create source-credentials
 ```
 
@@ -199,7 +199,7 @@ The workflow schema exposes `authConfig.mtls` with `caCert` and `clientSecretNam
 
 If your subnets do not have direct internet access, the bootstrap script mirrors images into private Amazon ECR by default and creates the VPC endpoints needed to pull from inside the cluster:
 
-```
+```bash
 ./aws-bootstrap.sh \
   --deploy-import-vpc-cfn \
   --create-vpc-endpoints \
@@ -220,7 +220,7 @@ If you prefer to manage VPC endpoints with another tool, omit `--create-vpc-endp
 
 After the cluster is already bootstrapped, run the script in grant-only mode to add a second admin principal:
 
-```
+```bash
 ./aws-bootstrap.sh \
   --grant-eks-access-only \
   --eks-access-principal-arn arn:aws:iam::123456789012:role/MyCIRole \
@@ -232,7 +232,7 @@ This applies the Amazon EKS access entry and policy association for the principa
 
 Verify the access entry from the account that owns the cluster:
 
-```
+```bash
 aws eks list-access-entries \
   --cluster-name <CLUSTER_NAME> \
   --region <REGION>
@@ -248,20 +248,20 @@ aws eks list-associated-access-policies \
 
 If AWS CloudFormation fails, check the stack status first:
 
-```
+```bash
 aws cloudformation describe-stacks --stack-name <STACK_NAME> --query "Stacks[0].StackStatus"
 ```
 
 If the stack is stuck in `ROLLBACK_COMPLETE` or `CREATE_FAILED`, delete it and rerun the bootstrap script:
 
-```
+```bash
 aws cloudformation delete-stack --stack-name <STACK_NAME>
 aws cloudformation wait stack-delete-complete --stack-name <STACK_NAME>
 ```
 
 If AWS CloudFormation succeeded but the Helm portion failed, rerun only the bootstrap’s cluster-side steps:
 
-```
+```bash
 ./aws-bootstrap.sh --skip-cfn-deploy --stage <STAGE> --region <REGION>
 ```
 

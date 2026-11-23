@@ -29,7 +29,7 @@ The following shows an example of a permissions policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ You need to update the policy by providing an IAM role name for which you want t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -189,7 +189,7 @@ Add this policy to the user.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -225,7 +225,7 @@ If you want the user to be able to start one of the existing applications, attac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -252,7 +252,7 @@ If you want the user to create an application, you can then attach the following
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

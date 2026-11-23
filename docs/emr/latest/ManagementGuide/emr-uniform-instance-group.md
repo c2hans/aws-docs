@@ -58,7 +58,7 @@ The following example demonstrates a `create-cluster` command that creates prima
 **Note**
 Linux line continuation characters (\\) are included for readability. They can be removed or used in Linux commands. For Windows, remove them or replace with a caret (^).
 
-```
+```bash
 aws emr create-cluster --name "{{MySpotCluster}}" \
   --release-label {{emr-7.14.0}} \
   --use-default-roles \
@@ -74,7 +74,7 @@ Using the CLI, you can create uniform instance group clusters that specify a uni
 
 The following example shows a uniform instance group cluster created with two instance types, each with its own custom AMI. Notice that the custom AMIs are specified only at the instance type level, not at the cluster level. This is to avoid conflicts between the instance type AMIs and an AMI at the cluster level, which would cause the cluster launch to fail.
 
-```
+```bash
 aws emr create-cluster
   --release-label emr-7.14.0 \
   --service-role EMR_DefaultRole \
@@ -86,7 +86,7 @@ aws emr create-cluster
 
 You can add multiple custom AMIs to an instance group that you add to a running cluster. The `CustomAmiId` argument can be used with the `add-instance-groups` command as shown in the following example.
 
-```
+```bash
 aws emr add-instance-groups --cluster-id j-123456 \
   --instance-groups \
     InstanceGroupType=Task,InstanceType=m5.xlarge,InstanceCount=1,CustomAmiId=ami-123456

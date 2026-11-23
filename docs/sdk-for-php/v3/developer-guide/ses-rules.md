@@ -34,7 +34,7 @@ A receipt rule set contains a collection of receipt rules. You must have at leas
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -42,7 +42,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -70,7 +70,7 @@ Control your incoming email by adding a receipt rule to an existing receipt rule
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -78,7 +78,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -122,7 +122,7 @@ Once per second, return the details of the specified receipt rule set. To use th
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -130,7 +130,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -158,7 +158,7 @@ Return the details of a specified receipt rule. To use the [DescribeReceiptRule]
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -166,7 +166,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -196,7 +196,7 @@ To list the receipt rule sets that exist under your AWS account in the current A
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -204,7 +204,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -228,7 +228,7 @@ This example shows you how to update a receipt rule that sends incoming messages
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -236,7 +236,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -279,7 +279,7 @@ Remove a specified receipt rule set that isn’t currently disabled. This also d
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -287,7 +287,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
@@ -315,7 +315,7 @@ To delete a specified receipt rule, provide the RuleName and RuleSetName to the 
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -323,7 +323,7 @@ use Aws\Exception\AwsException;
 
  **Sample Code**
 
-```
+```php
 $SesClient = new Aws\Ses\SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',

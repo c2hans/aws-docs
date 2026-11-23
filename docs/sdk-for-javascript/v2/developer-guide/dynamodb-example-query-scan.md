@@ -35,7 +35,7 @@ This example queries a table that contains episode information about a video ser
 
 Create a Node.js module with the file name `ddb_query.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB` service object. Create a JSON object containing the parameters needed to query the table, which in this example includes the table name, the `ExpressionAttributeValues` needed by the query, a `KeyConditionExpression` that uses those values to define which items the query returns, and the names of attribute values to return for each item. Call the `query` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -70,7 +70,7 @@ ddb.query(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_query.js
 ```
 
@@ -81,7 +81,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `ddb_scan.js`. Be sure to configure the SDK as previously shown. To access DynamoDB, create an `AWS.DynamoDB` service object. Create a JSON object containing the parameters needed to scan the table for items, which in this example includes the name of the table, the list of attribute values to return for each matching item, and an expression to filter the result set to find items containing a specified phrase. Call the `scan` method of the DynamoDB service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js.
 var AWS = require("aws-sdk");
 // Set the AWS Region.
@@ -121,7 +121,7 @@ ddb.scan(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node ddb_scan.js
 ```
 

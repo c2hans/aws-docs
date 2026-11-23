@@ -12,13 +12,13 @@ The procedure requires the following prerequisites:
 
 Add the following entry to either the `build` or `post_build` phase of your `buildspec.yml` file. This code automatically discovers tests in the current directory and exports the test reports to the file specified by {{<test report directory>}}/{{<report filename>}}. The report uses the `JunitXml` format.
 
-```
+```yaml
       - python -m pytest --junitxml={{<test report directory>}}/{{<report filename>}}
 ```
 
 In your `buildspec.yml` file, add/update the following sections.
 
-```
+```yaml
 version: 0.2
 
 phases:

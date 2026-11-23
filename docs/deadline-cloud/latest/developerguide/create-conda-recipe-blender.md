@@ -24,7 +24,7 @@ The recipe also includes a `deadline-cloud.yaml` file that specifies the conda p
 
 Use `rattler-build publish` to build the Blender 4.5 recipe and publish the package to a channel. You can publish to a local filesystem channel for testing or directly to an Amazon S3 channel for production use. If you completed the setup in [Build and test packages locally](build-test-packages-locally.md), run the following command from the `conda_recipes` directory.
 
-```
+```bash
 rattler-build publish blender-4.5/recipe/recipe.yaml \
     --to file://$HOME/my-conda-channel \
     --build-number=+1

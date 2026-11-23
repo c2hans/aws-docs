@@ -13,7 +13,7 @@ The following is a sample IAM policy with the relevant actions that would provid
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

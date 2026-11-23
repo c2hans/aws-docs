@@ -45,7 +45,7 @@ The following example command and response shows how you can edit the descriptio
 
 Run the following command.
 
-```
+```sh
 $ aws proton update-environment-template \
     --name "{{simple-env}}" \
     --description "{{A single VPC with public access}}"
@@ -53,7 +53,7 @@ $ aws proton update-environment-template \
 
 Response:
 
-```
+```json
 {
     "environmentTemplate": {
         "arn": "arn:aws:proton:region-id:123456789012:environment-template/simple-env",

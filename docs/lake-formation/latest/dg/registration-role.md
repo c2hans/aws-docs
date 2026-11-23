@@ -32,7 +32,7 @@ The following are the requirements for a user-defined role:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -70,7 +70,7 @@ The following are the requirements for a user-defined role:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -101,7 +101,7 @@ The following are the requirements for a user-defined role:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -129,7 +129,7 @@ Writing to CloudWatch Logs incurs a charge.
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

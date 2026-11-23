@@ -37,7 +37,7 @@ Step 1. Load error strings.
 Call the `aws_cryptosdk_load_error_strings()` method in your C or C\+\+ code. It loads error information that is very useful for debugging.
 You only need to call it once, such as in your `main` method.
 
-```
+```cpp
 /* Load error strings for debugging */
 aws_cryptosdk_load_error_strings();
 ```
@@ -49,7 +49,7 @@ To identify an AWS KMS key in an encryption keyring in the AWS Encryption SDK fo
 When you create a keyring with multiple AWS KMS keys, you specify the AWS KMS key used to generate and encrypt the plaintext data key, and an optional array of additional AWS KMS keys that encrypt the same plaintext data key. In this case, you specify only the generator AWS KMS key.
 Before running this code, replace the example key ARN with a valid one.
 
-```
+```cpp
 const char * key_arn = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}";
 
 struct aws_cryptosdk_keyring *kms_keyring =
@@ -61,7 +61,7 @@ Create a session using the allocator, a mode enumerator, and the keyring.
 Every session requires a mode: either `AWS_CRYPTOSDK_ENCRYPT` to encrypt or `AWS_CRYPTOSDK_DECRYPT` to decrypt. To change the mode of an existing session, use the `aws_cryptosdk_session_reset` method.
 After you create a session with the keyring, you can release your reference to the keyring using the method that the SDK provides. The session retains a reference to the keyring object during its lifetime. References to the keyring and session objects are released when you destroy the session. This [reference counting](c-language-using.md#c-language-using-release) technique helps to prevent memory leaks and to prevent the objects from being released while they are in use.
 
-```
+```cpp
 struct aws_cryptosdk_session *session =
        aws_cryptosdk_session_new_from_keyring_2(alloc, AWS_CRYPTOSDK_ENCRYPT, kms_keyring);
 
@@ -73,7 +73,7 @@ Step 4: Set the encryption context.
 An [encryption context](concepts.md#encryption-context) is arbitrary, non-secret additional authenticated data. When you provide an encryption context on encrypt, the AWS Encryption SDK cryptographically binds the encryption context to the ciphertext so that the same encryption context is required to decrypt the data. Using an encryption context is optional, but we recommend it as a best practice.
 First, create a hash table that includes the encryption context strings.
 
-```
+```cpp
 /* Allocate a hash table for the encryption context */
 int set_up_enc_ctx(struct aws_allocator *alloc, struct aws_hash_table *my_enc_ctx)
 
@@ -90,7 +90,7 @@ aws_hash_table_put(my_enc_ctx, enc_ctx_key2, (void *)enc_ctx_value2, &was_create
 Get a mutable pointer to the encryption context in the session. Then, use the `aws_cryptosdk_enc_ctx_clone` function to copy the encryption context into the session. Keep the copy in `my_enc_ctx` so you can validate the value after decrypting the data.
 The encryption context is part of the session, not a parameter passed to the session process function. This guarantees that the same encryption context is used for every segment of a message, even if the session process function is called multiple times to encrypt the entire message.
 
-```
+```cpp
 struct aws_hash_table *session_enc_ctx = aws_cryptosdk_session_get_enc_ctx_ptr_mut(session);
 
 aws_cryptosdk_enc_ctx_clone(alloc, session_enc_ctx, my_enc_ctx)
@@ -100,7 +100,7 @@ Step 5: Encrypt the string.
 To encrypt the plaintext string, use the `aws_cryptosdk_session_process_full` method with the session in encryption mode. This method, introduced in AWS Encryption SDK versions 1.9.*x* and 2.2.*x*, is designed for non-streaming encryption and decryption. To handle streaming data, call the `aws_cryptosdk_session_process` in a loop.
 When encrypting, the plaintext fields are input fields; the ciphertext fields are output fields. When the processing is complete, the `ciphertext_output` field contains the [encrypted message](concepts.md#message), including the actual ciphertext, encrypted data keys, and the encryption context. You can decrypt this encrypted message by using the AWS Encryption SDK for any supported programming language.
 
-```
+```cpp
 /* Gets the length of the plaintext that the session processed */
 size_t ciphertext_len_output;
 if (AWS_OP_SUCCESS != aws_cryptosdk_session_process_full(session,
@@ -127,7 +127,7 @@ Step 1: Load error strings.
 Call the `aws_cryptosdk_load_error_strings()` method in your C or C\+\+ code. It loads error information that is very useful for debugging.
 You only need to call it once, such as in your `main` method.
 
-```
+```cpp
 /* Load error strings for debugging */
 aws_cryptosdk_load_error_strings();
 ```
@@ -138,7 +138,7 @@ On decrypt, you can configure a keyring with only the AWS KMS keys that you want
 When you specify an AWS KMS key for a decryption keyring, you must use its [key ARN](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN). [Alias ARNs](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-alias-arn) are permitted only in encryption keyrings. For help identifying the AWS KMS keys in an AWS KMS keyring, see [Identifying AWS KMS keys in an AWS KMS keyring](use-kms-keyring.md#kms-keyring-id).
 In this example, we specify a keyring configured with the same AWS KMS key used to encrypt the string. Before running this code, replace the example key ARN with a valid one.
 
-```
+```cpp
 const char * key_arn = "{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}"
 
 struct aws_cryptosdk_keyring *kms_keyring =
@@ -149,7 +149,7 @@ Step 3: Create a session.
 Create a session using the allocator and the keyring. To configure the session for decryption, configure the session with the `AWS_CRYPTOSDK_DECRYPT` mode.
 After you create a session with a keyring, you can release your reference to the keyring using the method that the SDK provides. The session retains a reference to the keyring object during its lifetime, and both the session and keyring are released when you destroy the session. This reference counting technique helps to prevent memory leaks and to prevent the objects from being released while they are in use.
 
-```
+```cpp
 struct aws_cryptosdk_session *session =
 	aws_cryptosdk_session_new_from_keyring_2(alloc, AWS_CRYPTOSDK_DECRYPT, kms_keyring);
 
@@ -161,7 +161,7 @@ Step 4: Decrypt the string.
 To decrypt the string, use the `aws_cryptosdk_session_process_full` method with the session that is configured for decryption. This method, introduced in AWS Encryption SDK versions 1.9.*x* and 2.2.*x*, is designed for non-streaming encryption and decryption. To handle streaming data, call the `aws_cryptosdk_session_process` in a loop.
 When decrypting, the ciphertext fields are input fields and the plaintext fields are output fields. The `ciphertext_input` field holds the [encrypted message](message-format.md) that the encrypt method returned. When the processing is complete, the `plaintext_output` field contains the plaintext (decrypted) string.
 
-```
+```cpp
 size_t plaintext_len_output;
 
 if (AWS_OP_SUCCESS != aws_cryptosdk_session_process_full(session,
@@ -185,7 +185,7 @@ const struct aws_hash_table *session_enc_ctx = aws_cryptosdk_session_get_enc_ctx
 ```
 Then, loop through the encryption context in the `my_enc_ctx` hash table that you copied when encrypting. Verify that each pair in the `my_enc_ctx` hash table that was used to encrypt appears in the `session_enc_ctx` hash table that was used to decrypt. If any key is missing, or that key has a different value, stop processing and write an error message.
 
-```
+```cpp
 for (struct aws_hash_iter iter = aws_hash_iter_begin(my_enc_ctx); !aws_hash_iter_done(&iter);
       aws_hash_iter_next(&iter)) {
      struct aws_hash_element *session_enc_ctx_kv_pair;
@@ -203,6 +203,6 @@ for (struct aws_hash_iter iter = aws_hash_iter_begin(my_enc_ctx); !aws_hash_iter
 Step 6: Clean up the session.
 After you verify the encryption context, you can destroy the session, or reuse it. If you need to reconfigure the session, use the `aws_cryptosdk_session_reset` method.
 
-```
+```cpp
 aws_cryptosdk_session_destroy(session);
 ```

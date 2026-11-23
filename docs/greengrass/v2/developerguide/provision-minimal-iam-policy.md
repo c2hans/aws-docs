@@ -19,7 +19,7 @@ The `DeployDevTools` policy statement is required only if you specify the `--dep
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -90,7 +90,7 @@ The `DeployDevTools` policy statement is required only if you specify the `--dep
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

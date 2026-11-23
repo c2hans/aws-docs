@@ -95,7 +95,7 @@ You can use the AWS Management Console and the AWS CLI to create clusters that u
 **Example 1**
 Type the following command to launch a cluster and submit a Streaming step that uses `-cacheFile` to add one file, `sample_dataset_cached.dat`, to the cache.
 
-```
+```bash
 aws emr create-cluster --name "Test cluster" --release-label emr-7.14.0 --applications Name=Hive Name=Pig --use-default-roles --ec2-attributes KeyName=myKey --instance-type m5.xlarge --instance-count 3 --steps Type=STREAMING,Name="Streaming program",ActionOnFailure=CONTINUE,Args=["--files","s3://amzn-s3-demo-bucket/my_mapper.py s3://amzn-s3-demo-bucket/my_reducer.py","-mapper","my_mapper.py","-reducer","my_reducer.py,"-input","s3://amzn-s3-demo-bucket/my_input","-output","s3://amzn-s3-demo-bucket/my_output", "-cacheFile","s3://amzn-s3-demo-bucket/sample_dataset.dat#sample_dataset_cached.dat"]
 ```
 When you specify the instance count without using the `--instance-groups` parameter, a single primary node is launched, and the remaining instances are launched as core nodes. All nodes will use the instance type specified in the command.
@@ -104,7 +104,7 @@ If you have not previously created the default EMR service role and EC2 instance
 **Example 2**
 The following command shows the creation of a streaming cluster and uses `-cacheArchive` to add an archive of files to the cache.
 
-```
+```bash
 aws emr create-cluster --name "Test cluster" --release-label emr-7.14.0 --applications Name=Hive Name=Pig --use-default-roles --ec2-attributes KeyName=myKey --instance-type m5.xlarge --instance-count 3 --steps Type=STREAMING,Name="Streaming program",ActionOnFailure=CONTINUE,Args=["--files","s3://amzn-s3-demo-bucket/my_mapper.py s3://amzn-s3-demo-bucket/my_reducer.py","-mapper","my_mapper.py","-reducer","my_reducer.py,"-input","s3://amzn-s3-demo-bucket/my_input","-output","s3://amzn-s3-demo-bucket/my_output", "-cacheArchive","s3://amzn-s3-demo-bucket/sample_dataset.tgz#sample_dataset_cached"]
 ```
 When you specify the instance count without using the `--instance-groups` parameter, a single primary node is launched, and the remaining instances are launched as core nodes. All nodes will use the instance type specified in the command.

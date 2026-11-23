@@ -172,7 +172,7 @@ Use the following tutorial to create an AWS Identity and Access Management (IAM)
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -124,7 +124,7 @@ Delete the old compute environment.
 
    Replace the example values with your actual configuration from the previous step:
 
-   ```
+   ```sh
    cat <<EOF > ./blue-green-compute-environment.json
    {
      "computeEnvironmentName": "{{your-new-compute-environment-name}}",
@@ -157,7 +157,7 @@ Delete the old compute environment.
    EOF
    ```
 
-   ```
+   ```sh
    $ aws batch create-compute-environment --cli-input-json file://./blue-green-compute-environment.json
    ```
 

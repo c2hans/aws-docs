@@ -17,7 +17,7 @@ With this format, you can trace any AWS API calls made by your application back 
 
 You can also use the `sts:RoleSessionName` condition key in your role's trust policy to restrict which sessions can use the role. For example:
 
-```
+```json
 "Condition": {
   "StringLike": {
     "sts:RoleSessionName": "streamsession_*"

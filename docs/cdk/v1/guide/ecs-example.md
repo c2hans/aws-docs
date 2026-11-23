@@ -73,7 +73,7 @@ pip install -r requirements.txt
 ------
 #### [ Java ]
 
-```
+```java
 mkdir MyEcsConstruct
 cd MyEcsConstruct
 cdk init --language java
@@ -180,7 +180,7 @@ Add the following AWS Construct Library module imports to the indicated file.
 
 File: `lib/my_ecs_construct-stack.ts`
 
-```
+```javascript
 import * as ec2 from "@aws-cdk/aws-ec2";
 import * as ecs from "@aws-cdk/aws-ecs";
 import * as ecs_patterns from "@aws-cdk/aws-ecs-patterns";
@@ -191,7 +191,7 @@ import * as ecs_patterns from "@aws-cdk/aws-ecs-patterns";
 
 File: `lib/my_ecs_construct-stack.js`
 
-```
+```javascript
 const ec2 = require("@aws-cdk/aws-ec2");
 const ecs = require("@aws-cdk/aws-ecs");
 const ecs_patterns = require("@aws-cdk/aws-ecs-patterns");
@@ -202,7 +202,7 @@ const ecs_patterns = require("@aws-cdk/aws-ecs-patterns");
 
 File: `my_ecs_construct/my_ecs_construct_stack.py`
 
-```
+```python
 from aws_cdk import (core, aws_ec2 as ec2, aws_ecs as ecs,
                      aws_ecs_patterns as ecs_patterns)
 ```
@@ -212,7 +212,7 @@ from aws_cdk import (core, aws_ec2 as ec2, aws_ecs as ecs,
 
 File: `src/main/java/com/myorg/MyEcsConstructStack.java`
 
-```
+```java
 import software.amazon.awscdk.services.ec2.*;
 import software.amazon.awscdk.services.ecs.*;
 import software.amazon.awscdk.services.ecs.patterns.*;
@@ -223,7 +223,7 @@ import software.amazon.awscdk.services.ecs.patterns.*;
 
 File: `src/MyEcsConstruct/MyEcsConstructStack.cs`
 
-```
+```csharp
 using Amazon.CDK.AWS.EC2;
 using Amazon.CDK.AWS.ECS;
 using Amazon.CDK.AWS.ECS.Patterns;
@@ -236,7 +236,7 @@ Replace the comment at the end of the constructor with the following code.
 ------
 #### [ TypeScript ]
 
-```
+```javascript
 // Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
 // This file is licensed under the Apache License, Version 2.0 (the "License").
@@ -281,7 +281,7 @@ export class MyEcsConstructStack extends core.Stack {
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 // Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
 // This file is licensed under the Apache License, Version 2.0 (the "License").
@@ -326,7 +326,7 @@ export class MyEcsConstructStack extends core.Stack {
 ------
 #### [ Python ]
 
-```
+```python
         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
 
         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
@@ -344,7 +344,7 @@ export class MyEcsConstructStack extends core.Stack {
 ------
 #### [ Java ]
 
-```
+```java
         Vpc vpc = Vpc.Builder.create(this, "MyVpc")
                             .maxAzs(3)  // Default is all AZs in region
                             .build();
@@ -369,7 +369,7 @@ export class MyEcsConstructStack extends core.Stack {
 ------
 #### [ C\# ]
 
-```
+```csharp
             var vpc = new Vpc(this, "MyVpc", new VpcProps
             {
                 MaxAzs = 3 // Default is all AZs in region

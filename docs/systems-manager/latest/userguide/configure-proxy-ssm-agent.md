@@ -45,7 +45,7 @@ For IPv6, specify `no_proxy=[fd00:ec2::254]`. The IPv6 address of the instance m
 
 1. Stop and restart SSM Agent using the following commands.
 
-   ```
+   ```sh
    sudo service stop amazon-ssm-agent
    sudo service start amazon-ssm-agent
    ```
@@ -66,13 +66,13 @@ Some of the steps in this procedure contain explicit instructions for Ubuntu Ser
 1. Run one of the follow commands, depending on the operating system type.
    + On Ubuntu Server instances where SSM Agent is installed by using a snap:
 
-     ```
+     ```sh
      sudo systemctl edit snap.amazon-ssm-agent.amazon-ssm-agent
      ```
 
      On other operating systems:
 
-     ```
+     ```sh
      sudo systemctl edit amazon-ssm-agent
      ```
 
@@ -115,12 +115,12 @@ For IPv6, specify `no_proxy=[fd00:ec2::254]`. The IPv6 address of the instance m
 1. Restart SSM Agent by using one of the following commands, depending on the operating system type.
    + On Ubuntu Server instances installed by using a snap:
 
-     ```
+     ```sh
      sudo systemctl daemon-reload && sudo systemctl restart snap.amazon-ssm-agent.amazon-ssm-agent
      ```
    + On other operating systems:
 
-     ```
+     ```sh
      sudo systemctl daemon-reload && sudo systemctl restart amazon-ssm-agent
      ```
 

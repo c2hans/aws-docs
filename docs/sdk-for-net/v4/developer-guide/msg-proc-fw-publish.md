@@ -14,7 +14,7 @@ The AWS Message Processing Framework for .NET supports publishing one or more me
 
 The following code shows a configuration for an application that is publishing different message types to different AWS services.
 
-```
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 
 // Register the AWS Message Processing Framework for .NET
@@ -35,7 +35,7 @@ Once you have registered the framework during startup, inject the generic `IMess
 
  In the following example, an ASP.NET MVC controller receives both `ChatMessage` messages and `OrderInfo` events from users, and then publishes them to Amazon SQS and Amazon SNS respectively. Both message types can be published using the generic publisher that was configured above.
 
-```
+```csharp
 [ApiController]
 [Route("[controller]")]
 public class PublisherController : ControllerBase
@@ -84,7 +84,7 @@ public class PublisherController : ControllerBase
 
 In order to route a message to the appropriate handling logic, the framework uses metadata called the *message type identifier*. By default, this is the full name of the message's .NET type, including its assembly name. If you're both sending and handling messages, this mechanism works well if you share the definition of your message objects across projects. However, if the messages are redefined in different namespaces, or if you're exchanging messages with other frameworks or programming languages, then you might need to override the message type identifier.
 
-```
+```csharp
 var builder = Host.CreateDefaultBuilder(args);
 
 builder.ConfigureServices(services =>
@@ -105,7 +105,7 @@ The example shown above uses the generic `IMessagePublisher`, which can publish 
 
 For example, when sending messages to an SQS FIFO queue, you must set the appropriate [message group ID](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-key-terms.html). The following code shows the `ChatMessage` example again, but now using an `ISQSPublisher` to set SQS-specific options.
 
-```
+```csharp
 public class PublisherController : ControllerBase
 {
     private readonly ISQSPublisher _sqsPublisher;
@@ -144,7 +144,7 @@ public class PublisherController : ControllerBase
 
 The same can be done for SNS and EventBridge, using `ISNSPublisher` and `IEventBridgePublisher` respectively.
 
-```
+```csharp
 await _snsPublisher.PublishAsync(message, new SNSOptions
 {
     Subject = <subject>,
@@ -154,7 +154,7 @@ await _snsPublisher.PublishAsync(message, new SNSOptions
 });
 ```
 
-```
+```csharp
 await _eventBridgePublisher.PublishAsync(message, new EventBridgeOptions
 {
     DetailType = <detail-type>,
@@ -167,7 +167,7 @@ await _eventBridgePublisher.PublishAsync(message, new EventBridgeOptions
 
 By default, messages of a given type are sent to the destination that is configured in advance. However, you can override the destination for a single message using the message-specific publishers. You can also override the underlying AWS SDK for .NET client that is used to publish the message, which can be useful in multi-tenant applications where you need to change roles or credentials, depending on the destination.
 
-```
+```csharp
 await _sqsPublisher.SendAsync(message, new SQSOptions
 {
     OverrideClient = <override IAmazonSQS client>,

@@ -47,7 +47,7 @@ The CloudFormation CLI can be installed using pip from the [Python Package Index
 
 The language plugins are also available on PyPI. Use the following command to install all the language plugins at once.
 
-```
+```sh
 $ pip install cloudformation-cli cloudformation-cli-java-plugin cloudformation-cli-go-plugin cloudformation-cli-python-plugin cloudformation-cli-typescript-plugin
 ```
 
@@ -60,7 +60,7 @@ $ pip install cloudformation-cli cloudformation-cli-java-plugin cloudformation-c
 
 1. Use Homebrew to install Python and the CloudFormation Command Line Interface (CFN-CLI).
 
-   ```
+   ```sh
    $ brew update
    $ brew install cloudformation-cli
    ```
@@ -93,19 +93,19 @@ Enhancements in CFN-CLI 2.0 include:
 
 1. Upgrade the Go Plugin using the following command:
 
-   ```
+   ```sh
    $ pip3 install --upgrade cloudformation-cli-go-plugin
    ```
 
 1. Update the Go plugin in the `go.mod` file.
 
-   ```
+   ```sh
    $ go get -u github.com/aws-cloudformation/cloudformation-cli-go-plugin
    ```
 
 1. To update a resource type to use the CFN-CLI 2.0, build and register a new version of the resource using the following command:
 
-   ```
+   ```sh
    $ make
    $ cfn submit --set-default
    ```
@@ -114,13 +114,13 @@ Enhancements in CFN-CLI 2.0 include:
 
 1. Upgrade the Java Plugin using the following command:
 
-   ```
+   ```sh
    $ pip3 install --upgrade cloudformation-cli-java-plugin
    ```
 
 1. Update Java plugin in maven pom.xml to 2.0.0.
 
-   ```
+   ```xml
    <dependency>
      <groupId>software.amazon.cloudformation</groupId>
      <artifactId>aws-cloudformation-rpdk-java-plugin</artifactId>
@@ -130,7 +130,7 @@ Enhancements in CFN-CLI 2.0 include:
 
 1. To update a resource type to use the CFN-CLI 2.0, build and register a new version of the resource using the following command:
 
-   ```
+   ```sh
    $ mvn package
    $ cfn submit --set-default
    ```
@@ -139,12 +139,12 @@ Enhancements in CFN-CLI 2.0 include:
 
 1. Upgrade the Python Plugin using the following command:
 
-   ```
+   ```sh
    $ pip3 install cloudformation-cli-python-plugin
    ```
 
 1. To update a resource type to use the CFN-CLI 2.0, build and register a new version of the resource using the following command:
 
-   ```
+   ```sh
    $ cfn submit --set-default
    ```

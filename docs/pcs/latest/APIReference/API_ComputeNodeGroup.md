@@ -88,6 +88,11 @@ The list of errors that occurred during compute node group provisioning.
 Type: Array of [ErrorInfo](API_ErrorInfo.md) objects
 Required: No
 
+ ** instanceHealthChecks **   <a name="PCS-Type-ComputeNodeGroup-instanceHealthChecks"></a>
+The instance health check settings of the compute node group. Instance health checks detect faults on instances in the compute node group and respond with the repair action that you choose.
+Type: [InstanceHealthChecks](API_InstanceHealthChecks.md) object
+Required: No
+
  ** launchTemplateMode **   <a name="PCS-Type-ComputeNodeGroup-launchTemplateMode"></a>
 Indicates whether the compute node group uses a custom launch template or a launch template that AWS PCS manages. The default value is `CUSTOM`.
 Valid values:

@@ -46,7 +46,7 @@ As an example, this section provides step-by-step instructions for running graph
 
 1. Create a new JSON task definition as follows:
 
-   ```
+   ```json
    {
      "family": "explorer-test",
      "containerDefinitions": [

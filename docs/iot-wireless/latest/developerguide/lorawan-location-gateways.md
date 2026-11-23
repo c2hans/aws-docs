@@ -65,7 +65,7 @@ The following shows the contents of the `{{gatewayposition.json}}` file.
 
 **Contents of gatewayposition.json**
 
-```
+```JSON
 {
      "type": "Point",
      "coordinates": {{[33.3318, -22.2155, 13.123]}},
@@ -90,7 +90,7 @@ aws iotwireless get-resource-position \
 
 Running this command displays the position information of your wireless gateway as a GeoJSON payload. You'll see information about the position coordinates, the type of position information, and additional properties, such as the timestamp which corresponds to the last known position of the gateway.
 
-```
+```JSON
 {
     {
     "type": "Point",

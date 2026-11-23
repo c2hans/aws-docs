@@ -77,7 +77,7 @@ To deploy the stack using a custom Lambda function:
 
 Your Lambda function is passed as an event:
 
-```
+```json
 {
   // prompt for the LLM
   "prompt": "string",
@@ -93,13 +93,13 @@ Your Lambda function is passed as an event:
 
 The Lambda function returns a JSON structure:
 
-```
+```json
 {"generated_text":"string"}
 ```
 
 An example of a minimal Lambda function for testing, which you must extend to invoke your LLM:
 
-```
+```json
 def lambda_handler(event, context):
     print(event)
     prompt = event["prompt"]

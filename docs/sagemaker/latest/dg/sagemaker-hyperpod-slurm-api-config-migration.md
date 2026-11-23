@@ -38,7 +38,7 @@ If your cluster is configured with multiple controller (head) nodes using the [S
 
 The multi-head node architecture relies on the `slurm_configurations` block in `provisioning_parameters.json` to configure several components that have no equivalent in the API-driven approach:
 
-```
+```json
 "slurm_configurations": {
     "slurm_database_secret_arn": "$SLURM_DB_SECRET_ARN",
     "slurm_database_endpoint": "$SLURM_DB_ENDPOINT_ADDRESS",
@@ -186,7 +186,7 @@ The following example shows a legacy `provisioning_parameters.json` file and the
 
 The following shows the legacy `provisioning_parameters.json` file:
 
-```
+```json
 {
     "version": "1.0.0",
     "workload_manager": "slurm",
@@ -209,7 +209,7 @@ The following shows the legacy `provisioning_parameters.json` file:
 
 The following shows the equivalent API-driven `UpdateCluster` request (`update_cluster_migration.json`):
 
-```
+```json
 {
     "ClusterName": "my-hyperpod-cluster",
     "InstanceGroups": [
@@ -443,7 +443,7 @@ With API-driven configuration, HyperPod handles Slurm topology setup and Amazon 
 
 The following example shows a minimal `on_create.sh` lifecycle script for clusters using API-driven configuration:
 
-```
+```bash
 #!/bin/bash
 set -e
 

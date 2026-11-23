@@ -14,7 +14,7 @@ To create the external schema and external tables for this example, see [Getting
 
 Following is an example of a correlated subquery in Redshift Spectrum.
 
-```
+```SQL
 select *
 from myspectrum_schema.sales s
 where exists

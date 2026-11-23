@@ -14,11 +14,11 @@ Session logging records information about current and completed sessions in the 
 Note the following requirements and limitations for Session Manager:
 Session Manager logs the commands you enter and their output during a session depending on your session preferences. To prevent sensitive data, such as passwords, from being viewed in your session logs we recommend using the following commands when entering sensitive data during a session.
 
-  ```
+  ```sh
   stty -echo; read passwd; stty echo;
   ```
 
-  ```
+  ```ps
   $Passwd = Read-Host -AsSecureString
   ```
 If you're using Windows Server 2012 or earlier, the data in your logs might not be formatted optimally. We recommend using Windows Server 2012 R2 and later for optimal log formats.

@@ -30,7 +30,7 @@ Edit a service sync configuration using the console.
 
 Run the following command.
 
-```
+```sh
 $ aws proton update-service-sync-config \
     --service-name "{{service name}}" \
     --repository-provider "{{GITHUB}}" \
@@ -41,7 +41,7 @@ $ aws proton update-service-sync-config \
 
 The response is as follows.
 
-```
+```json
 {
     "serviceSyncConfig": {
         "branch": "main",

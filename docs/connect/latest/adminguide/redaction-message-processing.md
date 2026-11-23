@@ -86,7 +86,7 @@ Connect Customer honors your Lambda function's configured timeout, which must be
 
 Your custom processor Lambda receives an input event in the following format:
 
-```
+```json
 {
   "version": "1.0",
   "instanceId": "string",
@@ -107,7 +107,7 @@ Your custom processor Lambda receives an input event in the following format:
 
 Your Lambda function must return a response in the following format:
 
-```
+```json
 {
   "status": "PROCESSED | APPROVED | REJECTED",
   "result": {

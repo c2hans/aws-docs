@@ -246,7 +246,7 @@ Default: No subscriptions
 **Example configuration update (defining a subscription to AWS IoT Core)**
 The following example specifies that the `com.example.HelloWorldLambda` Lambda function component publishes MQTT message to AWS IoT Core on the `hello/world` topic.
 
-```
+```json
 {
   "subscriptions": {
     "Greengrass_HelloWorld_to_cloud": {
@@ -262,7 +262,7 @@ The following example specifies that the `com.example.HelloWorldLambda` Lambda f
 **Example configuration update (defining a subscription to another Lambda function)**
 The following example specifies that the `com.example.HelloWorldLambda` Lambda function component publishes MQTT messages to the `com.example.MessageRelay` Lambda function component on the `hello/world` topic.
 
-```
+```json
 {
   "subscriptions": {
     "Greengrass_HelloWorld_to_MessageRelay": {
@@ -304,7 +304,7 @@ Default: No subscriptions
 **Example configuration update (defining a subscription to AWS IoT Core)**
 The following example specifies that the `Greengrass_HelloWorld` function publishes MQTT message to AWS IoT Core on the `hello/world` topic.
 
-```
+```json
 "subscriptions": {
   "Greengrass_HelloWorld_to_cloud": {
     "id": "Greengrass_HelloWorld_to_cloud",
@@ -318,7 +318,7 @@ The following example specifies that the `Greengrass_HelloWorld` function publis
 **Example configuration update (defining a subscription to another Lambda function)**
 The following example specifies that the `Greengrass_HelloWorld` function publishes MQTT messages to the `Greengrass_MessageRelay` on the `hello/world` topic.
 
-```
+```json
 "subscriptions": {
   "Greengrass_HelloWorld_to_MessageRelay": {
     "id": "Greengrass_HelloWorld_to_MessageRelay",

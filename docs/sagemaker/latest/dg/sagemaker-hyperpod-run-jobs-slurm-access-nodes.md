@@ -10,7 +10,7 @@ You can access your **InService** cluster through AWS Systems Manager (SSM) by r
 Granting users access to HyperPod cluster nodes allows them to install and operate user-managed software on the nodes. Ensure that you maintain the principle of least-privilege permissions for users.
 If you haven't set up AWS Systems Manager, follow the instructions provided at [Setting up AWS Systems Manager and Run As for cluster user access control](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-ssm).
 
-```
+```bash
 $ aws ssm start-session \
     --target sagemaker-cluster:{{aa11bbbbb222}}_{{controller-group}}-{{i-111222333444555aa}} \
     --region {{us-west-2}}

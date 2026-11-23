@@ -103,7 +103,7 @@ RETURN embedding, n, distance
 
 Here is an example of the output returned by `.vectors.distanceByEmbedding` when run against a sample Wikipedia dataset using the following query:
 
-```
+```json
 aws neptune-graph execute-query \
   --graph-identifier ${graphIdentifier} \
   --query-string "***embedding part***

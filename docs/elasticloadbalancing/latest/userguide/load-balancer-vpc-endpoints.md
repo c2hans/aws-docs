@@ -32,7 +32,7 @@ You can attach a policy to your VPC endpoint to control access to the Elastic Lo
 
 The following example shows a VPC endpoint policy that denies everyone permission to create a load balancer through the endpoint. The example policy also grants everyone permission to perform all other actions.
 
-```
+```json
 {
    "Statement": [
         {

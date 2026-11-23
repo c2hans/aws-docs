@@ -64,7 +64,7 @@ You can use the CLI to create PATs in CodeCatalyst.
 
    If successful, the command returns information about the created PAT like the following example.
 
-   ```
+   ```json
    {
        "secret": "{{value}}",
        "name": "{{marymajor-22222EXAMPLE}}",
@@ -115,7 +115,7 @@ You can use the CLI to view PATs associated with your user identity in CodeCatal
 
   If successful, the command returns information about the PATs associated with your user account like the following example.
 
-  ```
+  ```json
   {
       "items": [
           {

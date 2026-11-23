@@ -74,7 +74,7 @@ Enable CORS by returning correct headers
 #### POST schema
 <a name="recoverygroups-request-body-post-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"
@@ -91,7 +91,7 @@ Enable CORS by returning correct headers
 #### ListRecoveryGroupsResult schema
 <a name="recoverygroups-response-body-listrecoverygroupsresult-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "recoveryGroups": [
@@ -111,7 +111,7 @@ Enable CORS by returning correct headers
 #### RecoveryGroupOutput schema
 <a name="recoverygroups-response-body-recoverygroupoutput-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"

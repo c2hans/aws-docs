@@ -11,6 +11,7 @@ The following actions are supported by AWS Marketplace Discovery:
 +  [GetOfferTerms](API_marketplace-discovery_GetOfferTerms.md)
 +  [GetProduct](API_marketplace-discovery_GetProduct.md)
 +  [ListFulfillmentOptions](API_marketplace-discovery_ListFulfillmentOptions.md)
++  [ListListingAttributes](API_marketplace-discovery_ListListingAttributes.md)
 +  [ListPurchaseOptions](API_marketplace-discovery_ListPurchaseOptions.md)
 +  [SearchFacets](API_marketplace-discovery_SearchFacets.md)
 +  [SearchListings](API_marketplace-discovery_SearchListings.md)

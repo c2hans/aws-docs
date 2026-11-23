@@ -24,7 +24,7 @@ The following code example shows how to use `CreateConfigurationSet`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create a new configuration set
         lo_pps->createconfigurationset(
@@ -60,7 +60,7 @@ The following code example shows how to use `CreateConfigurationSetEventDestinat
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create event destination for the configuration set
         lo_pps->createconfseteventdst(
@@ -101,7 +101,7 @@ The following code example shows how to use `DeleteConfigurationSet`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Delete the configuration set
         lo_pps->deleteconfigurationset(
@@ -134,7 +134,7 @@ The following code example shows how to use `DeleteConfigurationSetEventDestinat
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Delete the event destination
         lo_pps->deleteconfseteventdst(
@@ -168,7 +168,7 @@ The following code example shows how to use `GetConfigurationSetEventDestination
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Get event destinations for the configuration set
         oo_result = lo_pps->getconfseteventdestinations(
@@ -228,7 +228,7 @@ The following code example shows how to use `ListConfigurationSets`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " List all configuration sets
         oo_result = lo_pps->listconfigurationsets(
@@ -269,7 +269,7 @@ The following code example shows how to use `SendVoiceMessage`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create SSML message type object with voice parameters
         DATA(lo_ssml_message) = NEW /aws1/cl_ppsssmlmessagetype(
@@ -317,7 +317,7 @@ The following code example shows how to use `UpdateConfigurationSetEventDestinat
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
 
-```
+```sap-abap
     TRY.
         " Update the event destination
         lo_pps->updateconfseteventdst(

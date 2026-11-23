@@ -91,7 +91,7 @@ The following is an example file system policy that grants `ClientMount` (read) 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "efs-policy-wizard-8698b356-4212-4d30-901e-ad2030b57762",

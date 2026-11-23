@@ -30,7 +30,7 @@ The following code example shows how to get started using Amazon ECR.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
 import aws.sdk.kotlin.services.ecr.EcrClient
 import aws.sdk.kotlin.services.ecr.model.ListImagesRequest
 import kotlin.system.exitProcess
@@ -90,7 +90,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 Run an interactive scenario demonstrating Amazon ECR features.
 
-```
+```kotlin
 import java.util.Scanner
 
 /**
@@ -384,7 +384,7 @@ private fun waitForInputToContinue(scanner: Scanner) {
 ```
 A wrapper class for Amazon ECR SDK methods.
 
-```
+```kotlin
 import aws.sdk.kotlin.services.ecr.EcrClient
 import aws.sdk.kotlin.services.ecr.model.CreateRepositoryRequest
 import aws.sdk.kotlin.services.ecr.model.DeleteRepositoryRequest
@@ -759,7 +759,7 @@ The following code example shows how to use `CreateRepository`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Creates an Amazon Elastic Container Registry (Amazon ECR) repository.
      *
@@ -798,7 +798,7 @@ The following code example shows how to use `DeleteRepository`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Deletes an ECR (Elastic Container Registry) repository.
      *
@@ -831,7 +831,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Verifies the existence of an image in an Amazon Elastic Container Registry (Amazon ECR) repository asynchronously.
      *
@@ -875,7 +875,7 @@ The following code example shows how to use `DescribeRepositories`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Retrieves the repository URI for the specified repository name.
      *
@@ -910,7 +910,7 @@ The following code example shows how to use `GetAuthorizationToken`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Retrieves the authorization token for Amazon Elastic Container Registry (ECR).
      *
@@ -937,7 +937,7 @@ The following code example shows how to use `GetRepositoryPolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Gets the repository policy for the specified repository.
      *
@@ -968,7 +968,7 @@ The following code example shows how to use `PushImageCmd`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Pushes a Docker image to an Amazon Elastic Container Registry (ECR) repository.
      *
@@ -1025,7 +1025,7 @@ The following code example shows how to use `SetRepositoryPolicy`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Sets the repository policy for the specified ECR repository.
      *
@@ -1075,7 +1075,7 @@ The following code example shows how to use `StartLifecyclePolicyPreview`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Verifies the existence of an image in an Amazon Elastic Container Registry (Amazon ECR) repository asynchronously.
      *

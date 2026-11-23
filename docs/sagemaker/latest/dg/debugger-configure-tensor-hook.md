@@ -9,7 +9,7 @@ Amazon SageMaker Debugger is no longer open to new customers. Existing customers
 
 Use the [DebuggerHookConfig](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html                 #sagemaker.debugger.DebuggerHookConfig) API to create a `debugger_hook_config` object using the `collection_configs` object you created in the previous step.
 
-```
+```py
 from sagemaker.core.debugger import DebuggerHookConfig
 
 debugger_hook_config=DebuggerHookConfig(
@@ -21,7 +21,7 @@ Debugger saves the model training output tensors into the default S3 bucket. The
 
 If you want to specify an exact S3 bucket URI, use the following code example:
 
-```
+```py
 from sagemaker.core.debugger import DebuggerHookConfig
 
 debugger_hook_config=DebuggerHookConfig(

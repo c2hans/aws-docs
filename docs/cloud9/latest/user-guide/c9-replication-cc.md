@@ -253,7 +253,7 @@ Say that you're running repositories that aren't GitHub repositories. You can ad
 
 From within your AWS Cloud9 IDE, add a remote repository that points to the source repository that you created in step 3 of the replication process in CodeCatalyst. Replace `CODECATALYST_SOURCE_REPO_CLONE_URL` in the command with the Clone URL that you saved in the step 10 of [Step 3. Creating a source repository in your project](#c9-replication-cc-repo-creation).
 
-```
+```sh
  git remote add codecatalyst CODECATALYST_SOURCE_REPO_CLONE_URL
 ```
 

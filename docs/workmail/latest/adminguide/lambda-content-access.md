@@ -41,7 +41,7 @@ The following example policy grants an IAM entity full read access to all inboun
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -65,7 +65,7 @@ If you have multiple organizations in your AWS account, you can also limit acces
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ The following example policy grants access only to messages that are incoming to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -115,7 +115,7 @@ The following example policy grants an IAM entity full read and update access to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

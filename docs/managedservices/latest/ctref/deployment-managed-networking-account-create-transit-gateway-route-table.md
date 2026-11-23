@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-networking-account-create-transit-gateway-route-table-ex-min"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateTGWRouteTable",
   "Region": "us-east-1",
@@ -154,7 +154,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-managed-networking-account-create-transit-gateway-route-table-ex-max"></a>
 
-```
+```json
 {
   "DocumentName": "AWSManagedServices-CreateTGWRouteTable",
   "Region": "us-east-1",

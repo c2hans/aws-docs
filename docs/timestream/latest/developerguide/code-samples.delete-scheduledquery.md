@@ -11,7 +11,7 @@ You can use the following code snippets to delete a scheduled query.
 ------
 #### [  Java  ]
 
-```
+```java
 public void deleteScheduledQuery(String scheduledQueryArn) {
     System.out.println("Deleting Scheduled Query");
 
@@ -28,7 +28,7 @@ public void deleteScheduledQuery(String scheduledQueryArn) {
 ------
 #### [  Java v2  ]
 
-```
+```java
 public void deleteScheduledQuery(String scheduledQueryArn) {
     System.out.println("Deleting Scheduled Query");
 
@@ -77,7 +77,7 @@ func (timestreamBuilder TimestreamBuilder) DeleteScheduledQuery(scheduledQueryAr
 ------
 #### [  Python  ]
 
-```
+```python
 def delete_scheduled_query(self, scheduled_query_arn):
     print("\nDeleting Scheduled Query")
     try:
@@ -93,7 +93,7 @@ def delete_scheduled_query(self, scheduled_query_arn):
 
 The following snippet uses the AWS SDK for JavaScript V2 style. It is based on the sample application at [Node.js sample Amazon Timestream for LiveAnalytics application on GitHub](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/sample_apps_reinvent2021/js/schedule-query-example.js).
 
-```
+```javascript
 async function deleteScheduleQuery(scheduledQueryArn) {
      console.log("Deleting Scheduled Query");
      const params = {
@@ -111,7 +111,7 @@ async function deleteScheduleQuery(scheduledQueryArn) {
 ------
 #### [  .NET  ]
 
-```
+```cs
 private async Task DeleteScheduledQuery(string scheduledQueryArn)
  {
      try

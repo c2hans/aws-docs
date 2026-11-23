@@ -35,6 +35,8 @@ Throttle requests to mitigate resource exhaustion due to unexpected increases in
 
 ![Diagram describing the token bucket algorithm.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/token-bucket-algorithm.png)
 
+*The token bucket algorithm.*
+
  [Amazon API Gateway](https://aws.amazon.com/api-gateway/) implements the token bucket algorithm according to account and region limits and can be configured per-client with usage plans. Additionally, [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) and [Amazon Kinesis](https://aws.amazon.com/kinesis/) can buffer requests to smooth out the request rate, and allow higher throttling rates for requests that can be addressed. Finally, you can implement rate limiting with [AWS WAF](https://aws.amazon.com/waf/) to throttle specific API consumers that generate unusually high load.
 
 ## Implementation steps

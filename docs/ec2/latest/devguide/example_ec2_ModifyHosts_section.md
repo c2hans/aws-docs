@@ -56,7 +56,7 @@ For more information, see [Modify the auto-placement setting for a Dedicated Hos
 **Tools for PowerShell V4**
 **Example 1: This example modifies the AutoPlacement settings to off for the dedicated host h-01e23f4cd567890f3**
 
-```
+```powershell
 Edit-EC2Host -HostId h-03e09f8cd681609f3 -AutoPlacement off
 ```
 **Output:**
@@ -71,7 +71,7 @@ Successful            Unsuccessful
 **Tools for PowerShell V5**
 **Example 1: This example modifies the AutoPlacement settings to off for the dedicated host h-01e23f4cd567890f3**
 
-```
+```powershell
 Edit-EC2Host -HostId h-03e09f8cd681609f3 -AutoPlacement off
 ```
 **Output:**

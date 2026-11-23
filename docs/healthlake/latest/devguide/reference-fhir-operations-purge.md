@@ -15,7 +15,7 @@ AWS HealthLake supports the `$purge` operation, enabling permanent deletion of a
 
 The `$purge` operation can be invoked on Patient resources:
 
-```
+```HTTP
 POST [base]/Patient/[ID]/$purge?deleteAuditEvent=true
 ```
 
@@ -34,13 +34,13 @@ POST [base]/Patient/[ID]/$purge?deleteAuditEvent=true
 
 **Example Request**
 
-```
+```HTTP
 POST [base]/Patient/example-patient/$purge?deleteAuditEvent=true
 ```
 
 **Example Response**
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "id": "purge-job",
@@ -59,13 +59,13 @@ POST [base]/Patient/example-patient/$purge?deleteAuditEvent=true
 
 To check the status of a purge job:
 
-```
+```HTTP
 GET [base]/$purge/[jobId]
 ```
 
 The operation returns job status information:
 
-```
+```json
 {
       "datastoreId": "36622996b1fcecb7e12ee2ee085308d3",
       "jobId": "3dd1c7a5b6c0ef8c110f566eb87e2ef9",

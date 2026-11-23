@@ -29,7 +29,7 @@ This policy includes the following permissions.
 + `sagemaker` – Allows describing and listing public hub content, such as pre-built models, in the AWS owned SageMaker AI public hub.
 + `s3` – Allows creating the SageMaker AI default Amazon S3 bucket, listing its contents, and deleting output objects in buckets whose names begin with `sagemaker-`. Restricted to resources in the same account.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -204,7 +204,7 @@ This policy includes the following permissions.
 + `sagemaker` – Allows accessing, creating, and describing model packages, and describing model package groups for checkpoint publication workflows. Restricted to resources in the same account.
 + `ec2` – Allows managing Amazon VPC network interfaces for training sessions running in Amazon VPC mode, including creating, deleting, and describing network interfaces and related Amazon VPC resources. The `ec2:CreateTags` action is restricted to the `CreateNetworkInterface` action. Restricted to resources in the same account.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ The following code example shows how to use `CreateTransformJob`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     DATA lo_transforminput TYPE REF TO /aws1/cl_sgmtransforminput.
     DATA lo_transformoutput TYPE REF TO /aws1/cl_sgmtransformoutput.
     DATA lo_transformresources TYPE REF TO /aws1/cl_sgmtransformresources.

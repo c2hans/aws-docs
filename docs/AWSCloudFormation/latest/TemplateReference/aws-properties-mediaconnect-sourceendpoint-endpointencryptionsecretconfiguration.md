@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::MediaConnect::SourceEndpoint EndpointEncryptionSecretConfiguration
 
-<a name="aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-description"></a>The `EndpointEncryptionSecretConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md).
+The configuration for the AWS Secrets Manager secret that holds the key or passphrase used to encrypt an endpoint connection.
 
 ## Syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-syntax"></a>
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-properties"></a>
 
 `SecretArn`  <a name="cfn-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-secretarn"></a>
-Property description not available.
+The ARN of the AWS Secrets Manager secret that holds the key or passphrase. The secret must be encrypted with a customer managed AWS KMS key that is enabled and symmetric; it cannot use the AWS managed key `aws/secretsmanager`. The secret must be in the same AWS account and Region as the endpoint.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:(aws[a-zA-Z-]*):secretsmanager:[a-z0-9-]+:[0-9]{12}:secret:[a-zA-Z0-9/_+=.@-]+$`

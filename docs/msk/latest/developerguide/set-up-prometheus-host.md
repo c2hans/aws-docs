@@ -39,7 +39,7 @@ This procedure describes how to set up a Prometheus host using a prometheus.yml 
 ------
 #### [ Brokers only ]
 
-   ```
+   ```json
    [
      {
        "labels": {
@@ -73,7 +73,7 @@ This procedure describes how to set up a Prometheus host using a prometheus.yml 
 ------
 #### [ Brokers and controllers ]
 
-   ```
+   ```json
    [
      {
        "labels": {

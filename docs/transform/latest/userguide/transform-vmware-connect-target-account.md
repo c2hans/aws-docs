@@ -63,7 +63,7 @@ For multi-account migrations, you can also use a Delegated Administrator (DA) ac
 
 To make an account a delegated administrator for AWS Organizations, save the following policy as `organizations-delegation-policy.json` and run the following command from the management account. Replace {{connector-account-id}} with the account that you intend to connect.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -172,7 +172,7 @@ If the target AWS Region differs from the discovery AWS Region, AWS Transform wi
 
 If you plan to modify the AWS Transform MGN template to enable post-launch actions, add the following permission to the target connector role. This JSON policy statement grants the `iam:PassRole` permission for the post-launch actions role. You can find the role name in the **Collaboration** tab after the connector is created. For information about adding permissions to a role, see [Update permissions for a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-role-permissions.html) in the *IAM User Guide*.
 
-```
+```json
 {
       "Sid": "MGNPostLaunchActions",
       "Effect": "Allow",

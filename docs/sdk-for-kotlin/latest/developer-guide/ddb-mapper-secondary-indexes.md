@@ -18,7 +18,7 @@ Create a class that describes the items as they appear in the index. It’s anno
 
 For example, an online store keeps a `products-by-category` index on the `products` table so it can list products within a category ordered by price. The index partitions on `category` and sorts on `priceCents`, and projects the `sku` and `name` attributes:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbSortKey
@@ -41,7 +41,7 @@ As with any annotated class, the schema generator produces a `ProductByCategoryS
 
 Call [`getIndex`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-table/get-index.html) on the base table, passing the index name and the index’s schema. The result is an [`Index`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-index/index.html) typed to the index’s item type:
 
-```
+```kotlin
 import com.example.store.model.dynamodbmapper.generatedschemas.ProductByCategorySchema
 
 val productsTable = mapper.getProductTable("products")
@@ -53,7 +53,7 @@ val byCategory = productsTable.getIndex("products-by-category", ProductByCategor
 
 Querying an index works exactly like [querying a table](ddb-mapper-operations.md): supply a `keyCondition` and collect the paginated results. This query finds products in the `Electronics` category priced under $50.00, using a sort-key condition on `priceCents`:
 
-```
+```kotlin
 import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
 
 val cheapElectronics = byCategory
@@ -72,7 +72,7 @@ The `keyCondition` always constrains the partition key and can add a condition o
 
 You can also [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) an index to read every projected item, optionally narrowing the results with a filter expression:
 
-```
+```kotlin
 val discountable = byCategory
     .scanPaginated {
         filter { attr["priceCents"] gt 10_000L }

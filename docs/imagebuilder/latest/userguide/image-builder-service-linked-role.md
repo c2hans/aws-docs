@@ -57,7 +57,7 @@ If the Image Builder service is using the role when you try to delete the resour
 
    To cancel a running build, use the [Stop-EC2IBImageCreation](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2IBImageCreation.html) cmdlet:
 
-   ```
+   ```ps
    Stop-EC2IBImageCreation -ImageBuildVersionArn {{arn:aws:imagebuilder:us-east-1:123456789012:image/sample-image/1.0.0/1}}
    ```
 

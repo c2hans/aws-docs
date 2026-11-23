@@ -8,7 +8,7 @@ To get the value of an environment variable, use code like the following. This c
 
 **Example**
 
-```
+```javascript
 // Sets bucket_name to undefined if environment variable not set
 var bucket_name = process.env.amzn-s3-demo-bucket;
 
@@ -16,7 +16,7 @@ var bucket_name = process.env.amzn-s3-demo-bucket;
 var bucket_name = process.env.amzn-s3-demo-bucket || "DefaultName";
 ```
 
-```
+```javascript
 // Sets bucket_name to undefined if environment variable not set
 var bucket_name = process.env.amzn-s3-demo-bucket;
 
@@ -24,7 +24,7 @@ var bucket_name = process.env.amzn-s3-demo-bucket;
 var bucket_name = process.env.amzn-s3-demo-bucket || "DefaultName";
 ```
 
-```
+```python
 import os
 
 # Raises KeyError if environment variable doesn't exist
@@ -37,7 +37,7 @@ bucket_name = os.getenv("amzn-s3-demo-bucket")
 bucket_name = os.getenv("amzn-s3-demo-bucket", "DefaultName")
 ```
 
-```
+```java
 // Sets bucketName to null if environment variable doesn't exist
 String bucketName = System.getenv("amzn-s3-demo-bucket");
 
@@ -46,7 +46,7 @@ String bucketName = System.getenv("amzn-s3-demo-bucket");
 if (bucketName == null) bucketName = "DefaultName";
 ```
 
-```
+```csharp
 using System;
 
 // Sets bucket name to null if environment variable doesn't exist

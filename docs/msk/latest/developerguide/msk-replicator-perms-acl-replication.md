@@ -12,7 +12,7 @@ When `copyAccessControlListsForTopics` is enabled (the default), the replicator 
 **Source cluster**
 The service execution role must have permission to read ACLs from the source cluster.
 
-```
+```json
 {
     "Sid": "SourceAclReadPermissions",
     "Effect": "Allow",
@@ -29,7 +29,7 @@ The service execution role must have permission to read ACLs from the source clu
 **Target cluster**
 The service execution role must have permission to write ACLs to the target cluster.
 
-```
+```json
 {
     "Sid": "TargetAclWritePermissions",
     "Effect": "Allow",

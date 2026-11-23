@@ -60,7 +60,7 @@ ImportError: libopenjp2.so.7: cannot open shared object file: No such file or di
 
 Run the following command to manually install the dependencies for `opencv-python`:
 
-```
+```bash
 sudo apt-get install libopenjp2-7 libilmbase23 libopenexr-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk-3-0 libwebp-dev
 ```
 
@@ -82,14 +82,14 @@ You might see this error in the ML runtime component logs (`variant.DLR.log` or 
 ------
 #### [ Linux or Unix ]
 
-     ```
+     ```bash
      sudo -H -u {{ggc_user}} bash -c "python3 -c 'import {{tflite_runtime}}'"
      ```
 
 ------
 #### [ Windows ]
 
-     ```
+     ```cmd
      runas /user:{{ggc_user}} "py -3 -c \"import {{tflite_runtime}}\""
      ```
 
@@ -100,14 +100,14 @@ You might see this error in the ML runtime component logs (`variant.DLR.log` or 
 ------
 #### [ Linux or Unix ]
 
-     ```
+     ```bash
      sudo -H -u {{ggc_user}} bash -c "python3 -m pip install --user {{tflite_runtime}}"
      ```
 
 ------
 #### [ Windows ]
 
-     ```
+     ```cmd
      runas /user:{{ggc_user}} "py -3 -m pip install --user {{tflite_runtime}}"
      ```
 
@@ -124,7 +124,7 @@ You might see this error in the ML runtime component logs (`variant.DLR.log` or 
 
 You might see the following error when you use GPU acceleration. Run the following command to enable GPU access for the Greengrass user.
 
-```
+```bash
 sudo usermod -a -G video ggc_user
 ```
 
@@ -158,7 +158,7 @@ ImportError: numpy.core.multiarray failed to import
 
 This error occurs because Raspberry Pi OS Bullseye includes an earlier version of NumPy than the version that OpenCV requires. To fix this issue, run the following command to upgrade NumPy to the latest version.
 
-```
+```bash
 pip3 install --upgrade numpy
 ```
 
@@ -177,7 +177,7 @@ This error occurs because Raspberry Pi OS Bullseye includes a new camera stack t
 
 1. Run the following command to open the Raspberry Pi configuration tool.
 
-   ```
+   ```bash
    sudo raspi-config
    ```
 

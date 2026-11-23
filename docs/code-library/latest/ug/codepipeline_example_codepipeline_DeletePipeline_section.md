@@ -29,7 +29,7 @@ For more information, see [Delete a pipeline in CodePipeline](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified pipeline. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the pipeline without a prompt.**
 
-```
+```powershell
 Remove-CPPipeline -Name CodePipelineDemo
 ```
 +  For API details, see [DeletePipeline](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-CPPipeline -Name CodePipelineDemo
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified pipeline. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the pipeline without a prompt.**
 
-```
+```powershell
 Remove-CPPipeline -Name CodePipelineDemo
 ```
 +  For API details, see [DeletePipeline](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

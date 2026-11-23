@@ -64,7 +64,7 @@ The following is an example of an endpoint policy for Amazon Managed Grafana. Th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

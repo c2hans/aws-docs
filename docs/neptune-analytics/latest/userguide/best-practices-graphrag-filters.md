@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/best-
 
 Use:
 
-```
+```json
 {
     "retrievalConfiguration": {
         "vectorSearchConfiguration": {
@@ -72,7 +72,7 @@ Use:
 
 Avoid:
 
-```
+```json
 {
     "retrievalConfiguration": {
         "vectorSearchConfiguration": {
@@ -106,7 +106,7 @@ Avoid:
 
 Instead of using a `startsWith` filter like this in the Amazon Bedrock `Retrieve` or `RetrieveAndGenerate` API:
 
-```
+```json
 {
     "retrievalConfiguration": {
         "vectorSearchConfiguration": {
@@ -123,7 +123,7 @@ Instead of using a `startsWith` filter like this in the Amazon Bedrock `Retrieve
 
 Add a dedicated metadata attribute (for example, `document_category`) to your documents and use an `equals` filter. Note that adding new metadata attributes requires updating your source documents and re-syncing the knowledge base for the new attributes to take effect.
 
-```
+```json
 {
     "retrievalConfiguration": {
         "vectorSearchConfiguration": {
@@ -140,7 +140,7 @@ Add a dedicated metadata attribute (for example, `document_category`) to your do
 
  If you must match multiple categories, use `in`:
 
-```
+```json
 {
     "retrievalConfiguration": {
         "vectorSearchConfiguration": {

@@ -46,7 +46,7 @@ Password Recovery Key
 ### Retention key — Statements to add
 <a name="custom-kms-key-retention-statements"></a>
 
-```
+```json
 {
   "Sid": "EnclaveGenerateDataKey",
   "Effect": "Allow",
@@ -118,7 +118,7 @@ Purpose of each statement can be found at [Encryption at rest](encryption-rest.m
 ### Password recovery key — Statements to add
 <a name="custom-kms-key-password-recovery-statements"></a>
 
-```
+```json
 {
   "Sid": "EnclaveDeriveSharedSecret",
   "Effect": "Allow",
@@ -163,7 +163,7 @@ Purpose of each statement:
 
 Before:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -178,7 +178,7 @@ Before:
 
 After:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

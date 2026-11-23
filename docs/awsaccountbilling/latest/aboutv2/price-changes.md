@@ -72,7 +72,7 @@ To call the Price List Query API or Price List Bulk API, see the following examp
 
 In the following example, specify the {{region\_name}} and use it to create the `PricingClient`.
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
 
@@ -91,7 +91,7 @@ public class Main {
 
 Specify the Region with the following command.
 
-```
+```bash
 aws pricing describe-services --region us-east-1
 ```
 

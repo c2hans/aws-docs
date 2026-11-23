@@ -39,7 +39,7 @@ AWS RAM authorizes APIs separately for each principal and resource listed in the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -72,7 +72,7 @@ The following SCP blocks any principal in an affected account from accepting an 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ For more information about when and why to use `...IfExists` operators, see [...
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -144,7 +144,7 @@ AWS RAM authorizes APIs separately for each principal and resource listed in the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -184,7 +184,7 @@ AWS RAM authorizes APIs separately for each principal and resource listed in the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -219,7 +219,7 @@ AWS RAM authorizes APIs separately for each principal and resource listed in the
 
 The following SCP prevents users from creating or modifying resource shares when the `ram:RetainSharingOnAccountLeaveOrganization` condition key is set to `true`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

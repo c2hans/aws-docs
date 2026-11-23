@@ -25,7 +25,7 @@ You can also use the SageMaker Python SDK and the `ModelBuilder.from_jumpstart_c
 
    The following AWS CLI command example uses the [DescribeAutoMLJobV2](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJobV2.html) API to obtain recommended container definitions for your job name.
 
-   ```
+   ```bash
    aws sagemaker describe-auto-ml-job-v2 --auto-ml-job-name {{job-name}} --region {{region}}
    ```
 
@@ -33,7 +33,7 @@ You can also use the SageMaker Python SDK and the `ModelBuilder.from_jumpstart_c
 
    Use the container definitions from the previous step to create a SageMaker AI model by using the [CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API. See the following AWS CLI command as an example. Use the `CandidateName` for your model name.
 
-   ```
+   ```bash
    aws sagemaker create-model --model-name '{{<your-candidate-name>}}' \
                        --primary-container '{{<container-definition}}' \
                        --execution-role-arn '{{<execution-role-arn>}}' --region '{{<region>}}
@@ -45,7 +45,7 @@ You can also use the SageMaker Python SDK and the `ModelBuilder.from_jumpstart_c
 **Note**
 To prevent the endpoint creation from timing out due to a lengthy model download, we recommend setting `ModelDataDownloadTimeoutInSeconds = 3600` and `ContainerStartupHealthCheckTimeoutInSeconds = 3600`.
 
-   ```
+   ```bash
    aws sagemaker create-endpoint-config --endpoint-config-name '{{<your-endpoint-config-name>}}' \
                        --production-variants '{{<list-of-production-variants>}}' ModelDataDownloadTimeoutInSeconds=3600 ContainerStartupHealthCheckTimeoutInSeconds=3600 \
                        --region '{{<region>}}'
@@ -55,7 +55,7 @@ To prevent the endpoint creation from timing out due to a lengthy model download
 
    The following AWS CLI example uses the [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create the endpoint.
 
-   ```
+   ```bash
    aws sagemaker create-endpoint --endpoint-name '{{<your-endpoint-name>}}' \
                        --endpoint-config-name '{{<endpoint-config-name-you-just-created>}}' \
                        --region '{{<region>}}'
@@ -63,7 +63,7 @@ To prevent the endpoint creation from timing out due to a lengthy model download
 
    Check the progress of your endpoint deployment by using the [DescribeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeEndpoint.html) API. See the following AWS CLI command as an example.
 
-   ```
+   ```bash
    aws sagemaker describe-endpoint —endpoint-name '{{<endpoint-name>}}' —region {{<region>}}
    ```
 
@@ -75,7 +75,7 @@ To prevent the endpoint creation from timing out due to a lengthy model download
 **Note**
 The format of your input prompt depends on the language model. For more information on the format of text generation prompts, see [Request format for text generation models real-time inference](#autopilot-llms-finetuning-realtime-prompt-examples).
 
-   ```
+   ```bash
    aws sagemaker invoke-endpoint --endpoint-name '{{<endpoint-name>}}' \
                      --region '{{<region>}}' --body '{{<your-promt-in-bytes>}}' [--content-type] 'application/json' {{<outfile>}}
    ```
@@ -88,7 +88,7 @@ Different large language models (LLMs) may have specific software dependencies, 
 Here are example inputs for some models and recommended containers.
 + For Falcon models with the recommended container `huggingface-pytorch-tgi-inference:2.0.1-tgi1.0.3-gpu-py39-cu118-ubuntu20.04`:
 
-  ```
+  ```JSON
   payload = {
       "inputs": "Large language model fine-tuning is defined as",
       "parameters": {
@@ -102,7 +102,7 @@ Here are example inputs for some models and recommended containers.
   ```
 + For all other models with the recommended container `djl-inference:0.22.1-fastertransformer5.3.0-cu118`:
 
-  ```
+  ```JSON
   payload= {
       "text_inputs": "Large language model fine-tuning is defined as"
   }

@@ -81,7 +81,7 @@ Supports CORS preflight requests.
 #### GET schema
 <a name="queues-request-body-get-example"></a>
 
-```
+```json
 {
   "listBy": enum,
   "order": enum,
@@ -93,7 +93,7 @@ Supports CORS preflight requests.
 #### POST schema
 <a name="queues-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string",
   "tags": {
@@ -117,7 +117,7 @@ Supports CORS preflight requests.
 #### ListQueuesResponse schema
 <a name="queues-response-body-listqueuesresponse-example"></a>
 
-```
+```json
 {
   "queues": [
     {
@@ -160,7 +160,7 @@ Supports CORS preflight requests.
 #### CreateQueueResponse schema
 <a name="queues-response-body-createqueueresponse-example"></a>
 
-```
+```json
 {
   "queue": {
     "arn": "string",
@@ -198,7 +198,7 @@ Supports CORS preflight requests.
 #### ExceptionBody schema
 <a name="queues-response-body-exceptionbody-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/telemetry.setup
 
  The following CloudFormation snippet demonstrates how to create the prerequisite AWS resources for telemetry delivery. This snippet creates a Kinesis Data Streams stream and an IAM role that grants AWS Ground Station permission to write telemetry data to the stream.
 
-```
+```yaml
 {{TelemetryStream}}:
   Type: AWS::Kinesis::Stream
   Properties:

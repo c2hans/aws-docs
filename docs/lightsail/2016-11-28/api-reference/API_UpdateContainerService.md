@@ -238,7 +238,7 @@ The following example updates an existing container service named `container-ser
 #### Sample Request
 <a name="API_UpdateContainerService_Example_1_Request"></a>
 
-```
+```http,https,json
 POST / HTTP/1.1
 Host: lightsail.us-west-2.amazonaws.com
 Accept-Encoding: identity
@@ -266,7 +266,7 @@ Content-Length: 192
 #### Sample Response
 <a name="API_UpdateContainerService_Example_1_Response"></a>
 
-```
+```http,https,json
 HTTP/1.1 200 OK
 Server: Server
 Date: Thu, 22 Oct 2020 20:31:00 GMT

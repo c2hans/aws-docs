@@ -61,7 +61,7 @@ The key that you use must be *symmetric*. Encrypted Amazon SNS topics don't supp
 
 The key policy must be modified to allow AWS End User Messaging Social to use the key. Follow the directions in [Changing a key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html), in the *AWS Key Management Service Developer Guide*, to add the following permissions to the existing key policy:
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -96,7 +96,7 @@ In the following IAM permission policy, make the following changes:
 + Replace {{{ACCOUNT}}} with the unique ID for your AWS account.
 + Replace {{{TOPIC\_NAME}}} with the Amazon SNS topics that will receive messages.
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -125,7 +125,7 @@ To create new IAM polices, do the following:
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -162,7 +162,7 @@ To create new IAM polices, do the following:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

@@ -25,7 +25,7 @@ To transform the JSON metadata for the Amazon Redshift endpoint, you can use the
 
 The following query returns all SNS messages received in the specified date range:
 
-```
+```sql
 SELECT *
 FROM public.notifications
 WHERE timestamp > '2020-12-01T09:00:00.000Z' AND timestamp < '2020-12-02T09:00:00.000Z';

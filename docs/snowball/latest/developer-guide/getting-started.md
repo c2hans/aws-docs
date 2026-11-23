@@ -140,7 +140,7 @@ This scenario requires IAM users with programmatic access and long-term credenti
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -163,7 +163,7 @@ This scenario requires IAM users with programmatic access and long-term credenti
 
    Use the `attach-user-policy` to attach the s3-only-policy to a user.
 
-   ```
+   ```bash,sh,zsh
      aws iam attach-user-policy --endpoint {{endpointIPaddress}}:6078 --region snow --user-name {{UserName}} --policy-arn arn:aws:iam::{{AccountID}}:{{policy/POLICYNAME}} --profile {{ProfileID}}
    ```
 

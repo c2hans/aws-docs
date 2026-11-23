@@ -16,7 +16,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
 The following is an example of this kind of notification message.
 
-```
+```json
 {
     "type":"AUTO_TRIGGER_SUCCESS",
     "arn":"arn:aws:timestream:us-east-1:123456789012:scheduled-query/ PT1mPerMinutePerRegionMeasureCount-9376096f7309",

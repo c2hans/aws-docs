@@ -43,7 +43,7 @@ Next, complete the following procedure.
 
 1. Copy and paste the following policy into the editor. Change the {{`Region`}}``, {{`accountID`}}, and {{`keyID`}}`` to your own values.
 
-   ```
+   ```json
    {
       "Effect": "Allow",
       "Action": [

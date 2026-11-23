@@ -151,7 +151,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of GenerateBotElement.
 
-```
+```json
 POST https://models-v2-lex.us-east-1.amazonaws.com/bots/BOT1234567/botversions/DRAFT/botlocales/en_US/generate
 
 Payload:
@@ -165,7 +165,7 @@ Payload:
 
 This example illustrates one usage of GenerateBotElement.
 
-```
+```json
 {
     "botId": "BOT1234567",
     "botVersion": "DRAFT",

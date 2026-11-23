@@ -59,7 +59,7 @@ Get information about the resource policy for a cluster.
 #### GetResourcePolicyResponse schema
 <a name="resourcepolicy-resourcearn-response-body-getresourcepolicyresponse-example"></a>
 
-```
+```json
 {
   "Policy": "string"
 }
@@ -68,7 +68,7 @@ Get information about the resource policy for a cluster.
 #### ResourceNotFoundException schema
 <a name="resourcepolicy-resourcearn-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -77,7 +77,7 @@ Get information about the resource policy for a cluster.
 #### InternalServerException schema
 <a name="resourcepolicy-resourcearn-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

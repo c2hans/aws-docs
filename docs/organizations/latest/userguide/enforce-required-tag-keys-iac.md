@@ -23,7 +23,7 @@ To enforce required tag keys with CloudFormation, you must specify required tags
 
 Before activating the `AWS::TagPolicies::TaggingComplianceValidator` hook, you must create an execution role that the hook uses to access AWS services. The role must have the following Trust Policy attached to it:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -45,7 +45,7 @@ Before activating the `AWS::TagPolicies::TaggingComplianceValidator` hook, you m
 
 The execution role must also have a Role Policy with at least the following permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ This AWS-managed hook can be configured in two modes:
 
 To activate the hook using the AWS CLI:
 
-```
+```bash
 aws cloudformation activate-type \
     --type HOOK \
     --type-name AWS::TagPolicies::TaggingComplianceValidator \
@@ -84,7 +84,7 @@ aws cloudformation activate-type \
     --region us-east-1
 ```
 
-```
+```bash
 aws cloudformation set-type-configuration \
   --configuration '{"CloudFormationConfiguration":{"HookConfiguration":{"HookInvocationStatus": "ENABLED", "FailureMode": "WARN", "TargetOperations": ["STACK"], "Properties":{}}}}' \
   --type-arn "arn:aws:cloudformation:us-east-1:123456789012:type/hook/AWS-TagPolicies-TaggingComplianceValidator" \
@@ -114,7 +114,7 @@ The CloudFormation StackSets deployment will automatically handle the activation
 **Important**
 This hook only functions as a StackHook. It has no effect when used as a resource hook.
 
-```
+```yaml
 Resources:
   # Activate the AWS-managed hook type
   HookTypeActivation:

@@ -21,7 +21,7 @@ If your submitter doesn't support adding host requirements, you can also apply a
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      hostRequirements:
        amounts:
        - name: amount.{{name}}
@@ -31,7 +31,7 @@ If your submitter doesn't support adding host requirements, you can also apply a
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "hostRequirements": {
        "amounts": [
            {
@@ -49,7 +49,7 @@ If your submitter doesn't support adding host requirements, you can also apply a
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      hostRequirements:
        amounts:
        - name: {{amount.name_1}}
@@ -61,7 +61,7 @@ If your submitter doesn't support adding host requirements, you can also apply a
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "hostRequirements": {
        "amounts": [
            {
@@ -98,7 +98,7 @@ This example shows how to set up a limit for 5 V-Ray floating licenses and verif
 
 1. Create the limit on your farm:
 
-   ```
+   ```bash
    aws deadline create-limit \
        --farm-id {{farm-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}} \
        --display-name "VRay License" \
@@ -108,7 +108,7 @@ This example shows how to set up a limit for 5 V-Ray floating licenses and verif
 
 1. Associate the limit with your queue:
 
-   ```
+   ```bash
    aws deadline create-queue-limit-association \
        --farm-id {{farm-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}} \
        --queue-id {{queue-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}} \
@@ -117,7 +117,7 @@ This example shows how to set up a limit for 5 V-Ray floating licenses and verif
 
 1. Add the host requirement to your job template:
 
-   ```
+   ```yaml
    specificationVersion: jobtemplate-2023-09
    name: My VRay Render
    parameterDefinitions:

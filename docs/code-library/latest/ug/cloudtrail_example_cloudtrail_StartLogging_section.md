@@ -29,12 +29,12 @@ For more information, see [Managing trails with the AWS CLI](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: Starts the recording of AWS API calls and log file delivery for the trail named 'myExampleTrail'. This example assumes the trail was created in the same region as the current shell default.**
 
-```
+```powershell
 Start-CTLogging -Name myExampleTrail
 ```
 **Example 2: Starts the recording of AWS API calls and log file delivery for a trail that was created in a region other than the current shell default (in this case, the Frankfurt (eu-central-1) region).**
 
-```
+```powershell
 Start-CTLogging -Name myExampleTrail -Region eu-central-1
 ```
 +  For API details, see [StartLogging](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -42,12 +42,12 @@ Start-CTLogging -Name myExampleTrail -Region eu-central-1
 **Tools for PowerShell V5**
 **Example 1: Starts the recording of AWS API calls and log file delivery for the trail named 'myExampleTrail'. This example assumes the trail was created in the same region as the current shell default.**
 
-```
+```powershell
 Start-CTLogging -Name myExampleTrail
 ```
 **Example 2: Starts the recording of AWS API calls and log file delivery for a trail that was created in a region other than the current shell default (in this case, the Frankfurt (eu-central-1) region).**
 
-```
+```powershell
 Start-CTLogging -Name myExampleTrail -Region eu-central-1
 ```
 +  For API details, see [StartLogging](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

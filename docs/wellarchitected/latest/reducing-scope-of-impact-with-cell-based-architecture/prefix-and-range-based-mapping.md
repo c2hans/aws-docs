@@ -8,9 +8,13 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 
 ![Diagram showing prefix and range-based mapping](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/prefix-and-range-based-mapping.jpg)
 
+*Prefix and range-based mapping*
+
  Depending on the granularity of your service, you can further reduce the cardinality by making ranges of groups of keys.
 
 ![Diagram showing making ranges as groups of keys](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/images/ranges-as-groups-of-keys.jpg)
+
+*Ranges as groups of keys*
 
  Advantages:
 +  Reduces the performance issue of full mapping, by grouping key and reducing the total cardinality.

@@ -12,7 +12,7 @@ To run this bundle, your queue needs Nuke available through a queue environment 
 
 Submit the bundle with custom parameters:
 
-```
+```bash
 deadline bundle submit nuke_render/ \
   --name "My Nuke Render" \
   -p Frames="1-10" \
@@ -22,6 +22,6 @@ deadline bundle submit nuke_render/ \
 
 Or open the GUI submitter:
 
-```
+```bash
 deadline bundle gui-submit nuke_render/
 ```

@@ -135,7 +135,7 @@ Fix any errors if the JSON is invalid. The following image shows an example erro
 
 The following code sample shows how this same configuration would be represented by the [ShowView](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-showview.html) action in the Flow language:
 
-```
+```json
 {
       "Parameters": {
         "ViewResource": {
@@ -308,7 +308,7 @@ Connect Customer flow logs provide you with real-time details about events in yo
 
 Following sample ShowView input (ingress log)
 
-```
+```json
 {
   "ContactId": "string",
   "ContactFlowId": "string",
@@ -356,7 +356,7 @@ Following sample ShowView input (ingress log)
 
 Following sample ShowView output (egress log)
 
-```
+```json
 {
   "Results": "string",
   "ContactId": "string",

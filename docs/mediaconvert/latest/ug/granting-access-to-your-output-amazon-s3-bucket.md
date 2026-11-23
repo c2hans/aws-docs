@@ -10,7 +10,7 @@ For a tutorial about how to grant this access, see [Example 2: Bucket owner gran
 
 The following example bucket policy grants access to your output bucket:
 
-```
+```json
 {
     "Id": "Policy1572454561447",
     "Version": "2012-10-17",

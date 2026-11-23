@@ -59,7 +59,7 @@ The following permissions policy grants permissions to a user to run all of the 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

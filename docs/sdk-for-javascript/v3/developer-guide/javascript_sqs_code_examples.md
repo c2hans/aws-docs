@@ -32,7 +32,7 @@ The following code example shows how to get started using Amazon SQS.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Initialize an Amazon SQS client and list queues.
 
-```
+```javascript
 import { SQSClient, paginateListQueues } from "@aws-sdk/client-sqs";
 
 export const helloSqs = async () => {
@@ -74,7 +74,7 @@ The following code example shows how to use `ChangeMessageVisibility`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Receive an Amazon SQS message and change its timeout visibility.
 
-```
+```javascript
 import {
   ReceiveMessageCommand,
   ChangeMessageVisibilityCommand,
@@ -120,7 +120,7 @@ The following code example shows how to use `CreateQueue`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Create an Amazon SQS standard queue.
 
-```
+```javascript
 import { CreateQueueCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -142,7 +142,7 @@ export const main = async (sqsQueueName = SQS_QUEUE_NAME) => {
 ```
 Create an Amazon SQS queue with long polling.
 
-```
+```javascript
 import { CreateQueueCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -178,7 +178,7 @@ The following code example shows how to use `DeleteMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Receive and delete Amazon SQS messages.
 
-```
+```javascript
 import {
   ReceiveMessageCommand,
   DeleteMessageCommand,
@@ -239,7 +239,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 
-```
+```javascript
 import {
   ReceiveMessageCommand,
   DeleteMessageCommand,
@@ -301,7 +301,7 @@ The following code example shows how to use `DeleteQueue`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Delete an Amazon SQS queue.
 
-```
+```javascript
 import { DeleteQueueCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -326,7 +326,7 @@ The following code example shows how to use `GetQueueAttributes`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 
-```
+```javascript
 import { GetQueueAttributesCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -365,7 +365,7 @@ The following code example shows how to use `GetQueueUrl`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Get the URL for an Amazon SQS queue.
 
-```
+```javascript
 import { GetQueueUrlCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -391,7 +391,7 @@ The following code example shows how to use `ListQueues`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 List your Amazon SQS queues.
 
-```
+```javascript
 import { paginateListQueues, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -424,7 +424,7 @@ The following code example shows how to use `ReceiveMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Receive a message from an Amazon SQS queue.
 
-```
+```javascript
 import {
   ReceiveMessageCommand,
   DeleteMessageCommand,
@@ -477,7 +477,7 @@ export const main = async (queueUrl = SQS_QUEUE_URL) => {
 ```
 Receive a message from an Amazon SQS queue using long-poll support.
 
-```
+```javascript
 import { ReceiveMessageCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -514,7 +514,7 @@ The following code example shows how to use `SendMessage`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Send a message to an Amazon SQS queue.
 
-```
+```javascript
 import { SendMessageCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -558,7 +558,7 @@ The following code example shows how to use `SetQueueAttributes`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 
-```
+```javascript
 import { SetQueueAttributesCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -579,7 +579,7 @@ export const main = async (queueUrl = SQS_QUEUE_URL) => {
 ```
 Configure an Amazon SQS queue to use long polling.
 
-```
+```javascript
 import { SetQueueAttributesCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -600,7 +600,7 @@ export const main = async (queueUrl = SQS_QUEUE_URL) => {
 ```
 Configure a dead-letter queue.
 
-```
+```javascript
 import { SetQueueAttributesCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -664,7 +664,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-topics-queues#code-examples).
 This is the entry point for this scenario.
 
-```
+```javascript
 import { SNSClient } from "@aws-sdk/client-sns";
 import { SQSClient } from "@aws-sdk/client-sqs";
 
@@ -684,7 +684,7 @@ export const startSnsWorkflow = () => {
 ```
 The preceding code provides the necessary dependencies and starts the scenario. The next section contains the bulk of the example.
 
-```
+```javascript
 const toneChoices = [
   { name: "cheerful", value: "cheerful" },
   { name: "funny", value: "funny" },
@@ -1110,7 +1110,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/blob/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using JavaScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 exports.handler = async (event, context) => {
@@ -1133,7 +1133,7 @@ async function processMessageAsync(message) {
 ```
 Consuming an SQS event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { SQSEvent, Context, SQSHandler, SQSRecord } from "aws-lambda";
@@ -1169,7 +1169,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using JavaScript.
 
-```
+```javascript
 // Node.js 20.x Lambda runtime, AWS SDK for Javascript V3
 export const handler = async (event, context) => {
     const batchItemFailures = [];
@@ -1192,7 +1192,7 @@ async function processMessageAsync(record, context) {
 ```
 Reporting SQS batch item failures with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { SQSEvent, SQSBatchResponse, Context, SQSBatchItemFailure, SQSRecord } from 'aws-lambda';

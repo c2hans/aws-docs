@@ -27,7 +27,7 @@ Jupyter notebooks contain optional metadata that you can access through the Amaz
 
 The metadata should look similar to the following.
 
-```
+```json
 {
     "instance_type": "ml.t3.medium",
     "kernelspec": {
@@ -68,14 +68,14 @@ Additional metadata might be included for internal use by Studio Classic and is 
 
 1. Run the following commands to display the contents of the `resource-metadata.json` file.
 
-   ```
+   ```zsh
    $ cd /opt/ml/metadata/
    cat resource-metadata.json
    ```
 
    The file should look similar to the following.
 
-   ```
+   ```json
    {
        "AppType": "KernelGateway",
        "DomainId": "d-xxxxxxxxxxxx",

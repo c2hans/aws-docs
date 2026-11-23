@@ -6,7 +6,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 # `list_images`
 
-```
+```python
 list_images(image_status, region, next_token)
 ```
 

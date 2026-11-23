@@ -25,7 +25,7 @@ Use the AWS CLI to request admin shell access credentials, then use the [Session
 
 **AWS Command Line Interface with Bash script**
 
-```
+```bash
 #!/bin/bash
 # GameLift Streams session with admin shell script
 # This script sets up a terminal connection to an Amazon GameLift Streams session

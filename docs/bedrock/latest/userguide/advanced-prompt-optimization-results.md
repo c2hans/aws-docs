@@ -40,7 +40,7 @@ Median time to first token, average latency, and median latency are available fo
 ## Reading results programmatically
 <a name="advanced-prompt-optimization-results-code"></a>
 
-```
+```python
 import boto3
 import json
 

@@ -50,7 +50,7 @@ aws omics create-annotation-store --name my_annotation_store \
 
 You receive the following response to confirm the creation of your annotation store.
 
-```
+```json
 {
            "creationTime": "2022-08-24T20:34:19.229500Z",
            "id": "3b93cdef69d2",
@@ -71,7 +71,7 @@ aws omics get-annotation-store --name my_annotation_store
 
 You receive the following response.
 
-```
+```json
 {
           "id": "eeb019ac79c2",
           "reference": {
@@ -98,7 +98,7 @@ aws omics list-annotation-stores
 
 You receive a response that lists all annotation stores, along with their IDs, statuses, and other details, as shown in the following example response.
 
-```
+```json
 {
            "annotationStores": [
                {

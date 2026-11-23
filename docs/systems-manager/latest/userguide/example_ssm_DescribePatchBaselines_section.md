@@ -105,7 +105,7 @@ For more information, see [About Predefined and Custom Patch Baselines](https://
 **Tools for PowerShell V4**
 **Example 1: This example lists all patch baselines.**
 
-```
+```powershell
 Get-SSMPatchBaseline
 ```
 **Output:**
@@ -119,7 +119,7 @@ Baseline containing all updates approved for production systems pb-0a2f1059b670e
 ```
 **Example 2: This example lists all patch baselines provided by AWS. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="OWNER";Values=@("AWS")}
 ```
 **Output:**
@@ -129,7 +129,7 @@ Get-SSMPatchBaseline -Filter $filter1
 ```
 **Example 3: This example lists all patch baselines with you as the owner. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="OWNER";Values=@("Self")}
 ```
 **Output:**
@@ -139,7 +139,7 @@ Get-SSMPatchBaseline -Filter $filter1
 ```
 **Example 4: With PowerShell version 2, you must use New-Object to create each tag.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.PatchOrchestratorFilter
 $filter1.Key = "OWNER"
 $filter1.Values = "AWS"
@@ -159,7 +159,7 @@ Default Patch Baseline Provided by AWS. arn:aws:ssm:us-west-2:123456789012:patch
 **Tools for PowerShell V5**
 **Example 1: This example lists all patch baselines.**
 
-```
+```powershell
 Get-SSMPatchBaseline
 ```
 **Output:**
@@ -173,7 +173,7 @@ Baseline containing all updates approved for production systems pb-0a2f1059b670e
 ```
 **Example 2: This example lists all patch baselines provided by AWS. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="OWNER";Values=@("AWS")}
 ```
 **Output:**
@@ -183,7 +183,7 @@ Get-SSMPatchBaseline -Filter $filter1
 ```
 **Example 3: This example lists all patch baselines with you as the owner. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="OWNER";Values=@("Self")}
 ```
 **Output:**
@@ -193,7 +193,7 @@ Get-SSMPatchBaseline -Filter $filter1
 ```
 **Example 4: With PowerShell version 2, you must use New-Object to create each tag.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.PatchOrchestratorFilter
 $filter1.Key = "OWNER"
 $filter1.Values = "AWS"

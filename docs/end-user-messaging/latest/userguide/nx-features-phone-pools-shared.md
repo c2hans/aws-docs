@@ -9,7 +9,7 @@ You can use the [describe-pools](https://docs.aws.amazon.com/cli/latest/referenc
 **To retrieve a list of pools shared with you using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-pools --owner {{SHARED}}
   ```
 

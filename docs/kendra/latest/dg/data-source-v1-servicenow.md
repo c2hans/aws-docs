@@ -157,7 +157,7 @@ You must specify the following using [ServiceNowConfiguration API](https://docs.
 
    If you are using basic authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": {{"user name"}},
       "password": {{"password"}}
@@ -166,7 +166,7 @@ You must specify the following using [ServiceNowConfiguration API](https://docs.
 
   If you are using OAuth2 authentication, the secret is stored in a JSON structure with the following keys:
 
-  ```
+  ```json
   {
       "username": "{{user name}}",
       "password": "{{password}}",

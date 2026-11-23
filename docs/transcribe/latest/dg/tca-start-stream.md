@@ -63,7 +63,7 @@ This example includes [post-call analytics](tca-post-call.md). If you don't want
 
 Note that the configuration event shown in the following example needs to be passed as the first event in the stream.
 
-```
+```http
 POST /stream-transcription HTTP/2
 host: transcribestreaming.{{us-west-2}}.amazonaws.com
 X-Amz-Target: com.amazonaws.transcribe.Transcribe.{{StartCallAnalyticsStreamTranscription}}
@@ -169,7 +169,7 @@ When you start your real-time Call Analytics transcription, all categories that 
 
 Here's an example of real-time Call Analytics transcription output for a `CategoryEvent` match:
 
-```
+```json
 "CategoryEvent": {
     "MatchedCategories": [ "{{shipping-complaint}}" ],
     "MatchedDetails": {

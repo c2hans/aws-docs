@@ -50,7 +50,7 @@ Creates a new voice message and sends it to a recipient's phone number.
 #### POST schema
 <a name="v1-sms-voice-voice-message-request-body-post-example"></a>
 
-```
+```json
 {
   "Content": {
     "CallInstructionsMessage": {
@@ -80,7 +80,7 @@ Creates a new voice message and sends it to a recipient's phone number.
 #### SendVoiceMessageResponse schema
 <a name="v1-sms-voice-voice-message-response-body-sendvoicemessageresponse-example"></a>
 
-```
+```json
 {
   "MessageId": "string"
 }
@@ -89,7 +89,7 @@ Creates a new voice message and sends it to a recipient's phone number.
 #### BadRequestException schema
 <a name="v1-sms-voice-voice-message-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -98,7 +98,7 @@ Creates a new voice message and sends it to a recipient's phone number.
 #### TooManyRequestsException schema
 <a name="v1-sms-voice-voice-message-response-body-toomanyrequestsexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }
@@ -107,7 +107,7 @@ Creates a new voice message and sends it to a recipient's phone number.
 #### InternalServiceErrorException schema
 <a name="v1-sms-voice-voice-message-response-body-internalserviceerrorexception-example"></a>
 
-```
+```json
 {
   "Message": "string"
 }

@@ -433,7 +433,27 @@ If you selected **Read-only** during registration, the GitHub App requests only 
 | Actions | Read and write | Monitor GitHub Actions workflow runs and access run logs during incident investigations and release testing. |
 | Contents | Read and write | Read repository source code for code review analysis and dependency mapping. Write access enables the agent to propose fixes for identified issues. |
 | Pull requests | Read and write | Read pull request details to trigger automated code reviews. Write access enables posting inline review comments with findings and recommended fixes. |
+| Issues | Read and write | Create and manage issues in your connected repositories. |
 | Organization administration | Read | Read the list of applications installed in the target organization to verify that the AWS DevOps Agent GitHub App is installed. |
+
+## (Optional) Permissions for directed actions
+<a name="optional-permissions-for-directed-actions"></a>
+
+To allow approved write actions on GitHub (directed actions), make sure the connection has the permissions below. Directed actions must also be enabled on the agent space, and you approve each action in chat before it runs. For more information, see [Working with directed actions](working-with-devops-agent-working-with-directed-actions.md).
+
+**GitHub App registration**
+
+With the AWS DevOps Agent GitHub App registered at the **Read and write** level, you already have the permissions these actions use (Contents, Issues, Pull requests, and Actions write). A Read-only registration cannot perform write actions.
+
+**Personal access token registration**
+
+The token must allow writes. For a classic token, use the `repo` scope, which grants read and write. For a fine-grained token, grant the following permissions:
++ Issues: Read and write
++ Pull requests: Read and write
++ Contents: Read and write
++ Actions: Read and write
++ Metadata: Read-only
++ Members: Read-only (grant only when you scope the registration to an organization; the classic-token equivalent is the `read:org` scope)
 
 ## Managing GitHub connections
 <a name="managing-github-connections"></a>

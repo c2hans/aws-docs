@@ -128,7 +128,7 @@ If you use an Amazon S3 VPC Endpoint, you must provide sufficient permissions fo
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	 "Statement": [

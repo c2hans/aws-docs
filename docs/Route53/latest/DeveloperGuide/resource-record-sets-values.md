@@ -26,3 +26,5 @@ Alias records that route traffic to certain AWS resources for which you specify 
 + [Values specific for multivalue answer records](resource-record-sets-values-multivalue.md)
 + [Values specific for weighted records](resource-record-sets-values-weighted.md)
 + [Values specific for weighted alias records](resource-record-sets-values-weighted-alias.md)
++ [Values specific for AZ-affinity records](resource-record-sets-values-azaffinity.md)
++ [Values specific for AZ-affinity alias records](resource-record-sets-values-azaffinity-alias.md)

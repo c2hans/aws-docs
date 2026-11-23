@@ -12,7 +12,7 @@ After you registered your job definition, you can submit an AWS Batch array job 
 **Note**
 This example uses the job queue mentioned in the [Prerequisites](array-tutorial-prereqs.md) section.
 
-   ```
+   ```json
    {
      "jobName": "print-color",
      "jobQueue": "{{{{existing-job-queue}}}}",
@@ -25,7 +25,7 @@ This example uses the job queue mentioned in the [Prerequisites](array-tutorial-
 
 1. Submit the job to your AWS Batch job queue. Note the job ID that's returned in the output.
 
-   ```
+   ```sh
    $ aws batch submit-job --cli-input-json file://print-color-job.json
    ```
 

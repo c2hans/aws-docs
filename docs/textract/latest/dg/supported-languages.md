@@ -4,12 +4,12 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/supported-languages.h
 
 # Supported languages
 
-The following tables show the supported language categories and the API operations that fall into each category.
+The Amazon Textract Core APIs support more than 40 languages. Language support varies by API operation and by feature. The following tables show the supported language categories and the Amazon Textract Core API operations that fall into each category.
 
 ## Language support categories
 <a name="supported-languages-categories"></a>
 
-Amazon Textract groups language support into the following three categories.
+Amazon Textract Core groups language support into the following three categories.
 
 | Category | Languages |
 | --- | --- |
@@ -20,10 +20,15 @@ Amazon Textract groups language support into the following three categories.
 ## Language support by API operation
 <a name="supported-languages-by-api"></a>
 
-The following table shows the language support category for each API operation and feature.
+The following table shows the language support category for each Amazon Textract Core API operation and feature.
 
 | Category | APIs |
 | --- | --- |
 | Category 1 | `AnalyzeDocument` – Queries<br />`AnalyzeExpense`<br />`AnalyzeID`<br />`CreateAdapter`<br />`CreateAdapterVersion`<br />`DeleteAdapter`<br />`DeleteAdapterVersion`<br />`GetAdapter`<br />`GetAdapterVersion`<br />`GetExpenseAnalysis`<br />`GetLendingAnalysis`<br />`GetLendingAnalysisSummary`<br />`ListAdapters`<br />`ListAdapterVersions`<br />`ListTagsForResource`<br />`StartDocumentAnalysis` – Queries<br />`StartExpenseAnalysis`<br />`StartLendingAnalysis`<br />`TagResource`<br />`UntagResource`<br />`UpdateAdapter` |
 | Category 2 | `AnalyzeDocument` – Forms<br />`GetDocumentAnalysis`<br />`StartDocumentAnalysis` – Forms |
 | Category 3 | `AnalyzeDocument` – Tables<br />`AnalyzeDocument` – Signatures<br />`AnalyzeDocument` – Layout<br />`DetectDocumentText`<br />`GetDocumentTextDetection`<br />`StartDocumentAnalysis` – Tables<br />`StartDocumentAnalysis` – Signatures<br />`StartDocumentAnalysis` – Layout<br />`StartDocumentTextDetection` |
+
+## Amazon Textract Insights languages
+<a name="supported-languages-insights"></a>
+
+Amazon Textract Insights processes documents in six languages: English, French, German, Italian, Portuguese, and Spanish. These are the same as the Category 2 languages for Amazon Textract Core.

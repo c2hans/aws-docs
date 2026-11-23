@@ -50,7 +50,7 @@ To avoid incurring charges, you can run this tutorial without creating a Kinesis
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -113,7 +113,7 @@ In this step, you create a Lambda function deployment package that contains Pyth
 **Tip**
  For example code that uses Java and NodeJS, see the [AWS IoT Greengrass Core SDK for Java](https://github.com/aws/aws-greengrass-core-sdk-java/blob/master/samples/StreamManagerKinesis/src/main/java/com/amazonaws/greengrass/examples/StreamManagerKinesis.java) and [AWS IoT Greengrass Core SDK for Node.js](https://github.com/aws/aws-greengrass-core-sdk-js/blob/master/greengrassExamples/StreamManagerKinesis/index.js) on GitHub.
 
-   ```
+   ```python
    import asyncio
    import logging
    import random
@@ -322,7 +322,7 @@ Deploy the group to the core device.
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -332,7 +332,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
 
    1. To start the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd start
       ```

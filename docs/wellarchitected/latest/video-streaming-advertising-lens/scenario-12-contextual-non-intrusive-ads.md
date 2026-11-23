@@ -20,6 +20,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Contextual advertising with non-intrusive ads architecture on AWS showing the asynchronous content classification pipeline, auction-time signal retrieval, non-intrusive ad rendering using IAB SIMID, and shoppable ad matching pipeline](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/scenario-12-contextual-non-intrusive-ads.jpg)
 
+*Contextual advertising with non-intrusive ads architecture on AWS showing the asynchronous content classification pipeline, auction-time signal retrieval, non-intrusive ad rendering using IAB SIMID, and shoppable ad matching pipeline*
+
  The architecture consists of the following components:
 
 1.  **Content classification pipeline**: Amazon Bedrock Data Automation (for video and audio content) or Amazon Comprehend (for text and web content) classifies publisher content at ingest time. EventBridge triggers classification when new content is published (S3 object creation event). Extracts IAB Content Taxonomy categories, scene segments, brand safety signals, and product detection for shoppable ads.

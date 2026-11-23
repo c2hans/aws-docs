@@ -22,18 +22,18 @@ Controls whether the client sends requests to account-based endpoints. These end
 
 For how each mode chooses the endpoint, see [Use account-based endpoints](config-endpoints.md#endpoints-account-id).
 
-```
+```bash
 # Environment variable
 export AWS_ACCOUNT_ID_ENDPOINT_MODE=disabled
 ```
 
-```
+```ini
 # Config file
 [default]
 account_id_endpoint_mode = disabled
 ```
 
-```
+```python
 # Explicit override
 from aws_sdk_dynamodb import DynamoDBConfig
 
@@ -62,7 +62,7 @@ The resolver that determines the endpoint for each request. By default, each cli
 
 To send every request to `endpoint_uri` without evaluating the endpoint rules, use `StaticEndpointResolver`. To write your own resolver, see [Use a custom endpoint resolver](config-endpoints.md#endpoints-custom-resolver).
 
-```
+```python
 # Explicit override
 from aws_sdk_bedrock_runtime import BedrockRuntimeConfig
 from smithy_core.endpoints import StaticEndpointResolver
@@ -89,7 +89,7 @@ The endpoint rules don't allow FIPS or dual-stack endpoints with a custom endpoi
 
 The SDK also checks a service-specific environment variable and a service-specific config file setting for this field. For the order in which the SDK checks these sources, see [Set a custom endpoint](config-endpoints.md#endpoints-custom-endpoint).
 
-```
+```bash
 # Global environment variable (applies to all services)
 export AWS_ENDPOINT_URL=http://localhost:4566
 
@@ -97,7 +97,7 @@ export AWS_ENDPOINT_URL=http://localhost:4566
 export AWS_ENDPOINT_URL_BEDROCK_RUNTIME=http://localhost:5000
 ```
 
-```
+```ini
 # Config file
 [default]
 endpoint_url = http://localhost:4566
@@ -124,12 +124,12 @@ The maximum number of attempts for a single request, including the initial attem
 | Default | None (the retry strategy uses its own default of 3 attempts, or 4 attempts for DynamoDB clients) |
 | Valid values | Positive integer (>= 1) |
 
-```
+```bash
 # Environment variable
 export AWS_MAX_ATTEMPTS=5
 ```
 
-```
+```ini
 # Config file
 [default]
 max_attempts = 5
@@ -147,18 +147,18 @@ The AWS Region to send requests to. The service's endpoint rules use the Region 
 | Default | None |
 | Valid values | AWS Region identifiers like us-east-1, eu-west-1, ap-southeast-1 |
 
-```
+```bash
 # Environment variable
 export AWS_REGION=us-west-2
 ```
 
-```
+```ini
 # Config file
 [default]
 region = us-west-2
 ```
 
-```
+```python
 # Explicit override
 from aws_sdk_bedrock_runtime import BedrockRuntimeConfig
 
@@ -179,12 +179,12 @@ A string that represents the type of retries the SDK performs. For more informat
 
 Passing `"legacy"` to `resolve()` raises `ConfigValidationError`.
 
-```
+```bash
 # Environment variable
 export AWS_RETRY_MODE=standard
 ```
 
-```
+```ini
 # Config file
 [default]
 retry_mode = standard
@@ -211,12 +211,12 @@ An identifier for your application. The SDK appends it to the `User-Agent` heade
 | Default | None |
 | Valid values | Any string. The SDK logs a warning for values longer than 50 characters. |
 
-```
+```bash
 # Environment variable
 export AWS_SDK_UA_APP_ID=my-web-app
 ```
 
-```
+```ini
 # Config file
 [default]
 sdk_ua_app_id = my-web-app
@@ -245,18 +245,18 @@ Whether to send requests to a dual-stack endpoint, which accepts both IPv4 and I
 
 If the Region's partition doesn't support dual-stack endpoints, or if you also set `endpoint_uri`, the request fails with an `EndpointResolutionError`.
 
-```
+```bash
 # Environment variable
 export AWS_USE_DUALSTACK_ENDPOINT=true
 ```
 
-```
+```ini
 # Config file
 [default]
 use_dualstack_endpoint = true
 ```
 
-```
+```python
 # Explicit override
 from aws_sdk_dynamodb import DynamoDBConfig
 
@@ -277,18 +277,18 @@ Whether to send requests to a FIPS endpoint. FIPS endpoints use cryptographic mo
 
 If the Region's partition doesn't support FIPS endpoints, or if you also set `endpoint_uri`, the request fails with an `EndpointResolutionError`.
 
-```
+```bash
 # Environment variable
 export AWS_USE_FIPS_ENDPOINT=true
 ```
 
-```
+```ini
 # Config file
 [default]
 use_fips_endpoint = true
 ```
 
-```
+```python
 # Explicit override
 from aws_sdk_dynamodb import DynamoDBConfig
 

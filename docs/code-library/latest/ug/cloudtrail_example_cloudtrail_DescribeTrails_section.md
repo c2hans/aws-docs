@@ -59,17 +59,17 @@ For more information, see [Managing trails with the AWS CLI](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: Returns the settings of all trails associated with the current region for your account.**
 
-```
+```powershell
 Get-CTTrail
 ```
 **Example 2: Returns the settings for the specified trails.**
 
-```
+```powershell
 Get-CTTrail -TrailNameList trail1,trail2
 ```
 **Example 3: Returns the settings for the specified trails that were created in a region other than the current shell default (in this case the Frankfurt (eu-central-1) region).**
 
-```
+```powershell
 Get-CTTrail -TrailNameList trailABC,trailDEF -Region eu-central-1
 ```
 +  For API details, see [DescribeTrails](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -77,17 +77,17 @@ Get-CTTrail -TrailNameList trailABC,trailDEF -Region eu-central-1
 **Tools for PowerShell V5**
 **Example 1: Returns the settings of all trails associated with the current region for your account.**
 
-```
+```powershell
 Get-CTTrail
 ```
 **Example 2: Returns the settings for the specified trails.**
 
-```
+```powershell
 Get-CTTrail -TrailNameList trail1,trail2
 ```
 **Example 3: Returns the settings for the specified trails that were created in a region other than the current shell default (in this case the Frankfurt (eu-central-1) region).**
 
-```
+```powershell
 Get-CTTrail -TrailNameList trailABC,trailDEF -Region eu-central-1
 ```
 +  For API details, see [DescribeTrails](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

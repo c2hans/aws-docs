@@ -46,7 +46,7 @@ The values returned are as follows.
 
 The following SQL returns the extended well-known text (EWKT) representation of a linestring. In this case, the convex hull returned is a polygon.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_ConvexHull(ST_GeomFromText('LINESTRING(0 0,1 0,0 1,1 1,0.5 0.5)'))) as output;
 ```
 
@@ -58,7 +58,7 @@ POLYGON((0 0,0 1,1 1,1 0,0 0))
 
 The following SQL returns the EWKT representation of a linestring. In this case, the convex hull returned is a linestring.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_ConvexHull(ST_GeomFromText('LINESTRING(0 0,1 1,0.2 0.2,0.6 0.6,0.5 0.5)'))) as output;
 ```
 
@@ -70,7 +70,7 @@ LINESTRING(0 0,1 1)
 
 The following SQL returns the EWKT representation of a multipoint. In this case, the convex hull returned is a point.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_ConvexHull(ST_GeomFromText('MULTIPOINT(0 0,0 0,0 0)'))) as output;
 ```
 

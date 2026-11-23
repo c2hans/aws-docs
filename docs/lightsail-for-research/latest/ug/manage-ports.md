@@ -65,13 +65,13 @@ Complete the following procedure to get the port states for a virtual computer. 
 
 1. Enter the following command to get the firewall port states and allowed IP addresses and protocols. In the command, replace `{{REGION}}` with the code of the AWS Region in which the virtual computer was created, such as `us-east-2`. Replace `{{NAME}}` with the name of your virtual computer.
 
-   ```
+   ```cmd
    aws lightsail get-instance-port-states --region {{REGION}} --instance-name {{NAME}}
    ```
 
    **Example**
 
-   ```
+   ```cmd
    aws lightsail get-instance-port-states --region {{us-east-2}} --instance-name {{MyUbuntu}}
    ```
 
@@ -99,13 +99,13 @@ Complete the following procedure to open ports for a virtual computer. This proc
    + Replace `{{TO-PORT}}` with the last port in a range of ports that you want to open.
    + Replace `{{IP}}` with the IP address or range of IP address that you want to allow to connect to your virtual computer.
 
-   ```
+   ```cmd
    aws lightsail open-instance-public-ports --region {{REGION}} --instance-name {{NAME}} --port-info fromPort={{FROM-PORT}}, protocol={{PROTOCOL}}, toPort={{TO-PORT}},cidrs={{IP}}
    ```
 
    **Example**
 
-   ```
+   ```cmd
    aws lightsail open-instance-public-ports --region {{us-east-2}} --instance-name {{MyUbuntu}} --port-info fromPort={{22}}, protocol={{TCP}}, toPort={{22}},cidrs={{192.0.2.0/24}}
    ```
 
@@ -133,13 +133,13 @@ Complete the following procedure to close ports for a virtual computer. This pro
    + Replace `{{TO-PORT}}` with the last port in a range of ports that you want to close.
    + Replace `{{IP}}` with the IP address or range of IP address that you want to remove.
 
-   ```
+   ```cmd
    aws lightsail close-instance-public-ports --region {{REGION}} --instance-name {{NAME}} --port-info fromPort={{FROM-PORT}}, protocol={{PROTOCOL}}, toPort={{TO-PORT}},cidrs={{IP}}
    ```
 
    **Example**
 
-   ```
+   ```cmd
    aws lightsail close-instance-public-ports --region {{us-east-2}} --instance-name {{MyUbuntu}} --port-info fromPort={{22}}, protocol={{TCP}}, toPort={{22}},cidrs={{192.0.2.0/24}}
    ```
 

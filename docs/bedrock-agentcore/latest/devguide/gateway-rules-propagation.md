@@ -35,7 +35,7 @@ For example, if a configuration bundle overrides a target’s tool description, 
 
 To apply these overrides, the gateway calls `GetConfigurationBundleVersion` to read the bundle contents. Add this permission to the gateway’s execution role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -86,7 +86,7 @@ aws omics get-run-group --id {{run group id}}
 
 The response includes the limit settings for the run group and the assigned tags.
 
-```
+```json
 {
     "arn": "arn:aws:omics:us-west-2:776893852117:runGroup/2839621",
     "id": "2839621",

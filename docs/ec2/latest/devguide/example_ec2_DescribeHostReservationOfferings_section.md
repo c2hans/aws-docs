@@ -82,7 +82,7 @@ For more information, see [Amazon EC2 Dedicated Host pricing and billing](https:
 **Tools for PowerShell V4**
 **Example 1: This example describes the Dedicated Host reservations that are available to purchase for the given filter 'instance-family' where PaymentOption is 'NoUpfront'**
 
-```
+```powershell
 Get-EC2HostReservationOffering -Filter @{Name="instance-family";Values="m4"} | Where-Object PaymentOption -eq NoUpfront
 ```
 **Output:**
@@ -109,7 +109,7 @@ UpfrontPrice   : 0.000
 **Tools for PowerShell V5**
 **Example 1: This example describes the Dedicated Host reservations that are available to purchase for the given filter 'instance-family' where PaymentOption is 'NoUpfront'**
 
-```
+```powershell
 Get-EC2HostReservationOffering -Filter @{Name="instance-family";Values="m4"} | Where-Object PaymentOption -eq NoUpfront
 ```
 **Output:**

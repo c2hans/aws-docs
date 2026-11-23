@@ -24,7 +24,7 @@ The following code example shows how to use `CreateRepository`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_repository_name = 'my-repository'
         oo_result = lo_ecr->createrepository(
@@ -54,7 +54,7 @@ The following code example shows how to use `DeleteRepository`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_repository_name = 'my-repository'
         lo_ecr->deleterepository(
@@ -75,7 +75,7 @@ The following code example shows how to use `DescribeImages`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_repository_name = 'my-repository'
         " it_image_ids = VALUE #( ( NEW /aws1/cl_ecrimageidentifier( iv_imagetag = 'latest' ) ) )
@@ -107,7 +107,7 @@ The following code example shows how to use `DescribeRepositories`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " it_repository_names = VALUE #( ( NEW /aws1/cl_ecrrepositorynamels00( iv_value = 'my-repository' ) ) )
         oo_result = lo_ecr->describerepositories(
@@ -128,7 +128,7 @@ The following code example shows how to use `GetAuthorizationToken`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ecr->getauthorizationtoken( ).
         DATA(lt_auth_data) = oo_result->get_authorizationdata( ).
@@ -151,7 +151,7 @@ The following code example shows how to use `GetRepositoryPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_repository_name = 'my-repository'
         oo_result = lo_ecr->getrepositorypolicy(
@@ -174,7 +174,7 @@ The following code example shows how to use `PutLifeCyclePolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_repository_name = 'my-repository'
         " iv_lifecycle_policy_text = '{"rules":[{"rulePriority":1,"description":"Expire images older than 14 days",...}]}'
@@ -198,7 +198,7 @@ The following code example shows how to use `SetRepositoryPolicy`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_repository_name = 'my-repository'
         " iv_policy_text = '{"Version":"2012-10-17",		 	 	 "Statement":[...]}'

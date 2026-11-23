@@ -77,7 +77,7 @@ You can create and test the finding filters by using either API or CLI commands.
 **Example 1**: Create a new filter to view all the findings that match a specific finding type
 The following example creates a filter that matches all `PortScan` findings for an instance created from a specific image. The placeholder values are shown in red. Replace these values with suitable values for your account. For example, replace {{12abc34d567e8fa901bc2d34EXAMPLE}} with your regional detector ID.
 
-  ```
+  ```JSON
   aws guardduty create-filter \
   --detector-id {{12abc34d567e8fa901bc2d34EXAMPLE}} \
   --name {{FilterExampleName}} \
@@ -86,7 +86,7 @@ The following example creates a filter that matches all `PortScan` findings for 
 **Example 2**: Create a new filter to view all the findings that match severity levels
 The following example creates a filter that matches all findings associated with the `HIGH` severity levels. The placeholder values are shown in red. Replace these values with suitable values for your account. For example, replace {{12abc34d567e8fa901bc2d34EXAMPLE}} with your regional detector ID.
 
-  ```
+  ```JSON
   aws guardduty create-filter \
   --detector-id {{12abc34d567e8fa901bc2d34EXAMPLE}} \
   --name {{FilterExampleName}} \

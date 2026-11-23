@@ -40,7 +40,7 @@ Filters, `output` blocks, `${…​}` variables, `$temp` values, and type suffix
    +  **Role name** must start with `SpatialDataManagementContentPublisher-` (publish connectors) or `SpatialDataManagementContentDerivation-` (derive connectors).
    +  **Trust policy** must allow the SDMA connector invocation Lambda to assume it:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -62,7 +62,7 @@ Filters, `output` blocks, `${…​}` variables, `$temp` values, and type suffix
 
      If you have AWS CLI access, you can find these values by running:
 
-     ```
+     ```bash
      aws lambda get-function \
        --function-name SpatialDataManagement-ConnectorInvocationFunction \
        --query 'Configuration.Role' --output text
@@ -75,7 +75,7 @@ Filters, `output` blocks, `${…​}` variables, `$temp` values, and type suffix
      Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `lambda:InvokeFunction` on the target function:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -98,7 +98,7 @@ In publish mode, the connector builds a payload from field mappings and invokes 
 
 In the following example, replace the placeholder values in angle brackets with your own values.
 
-```
+```json
 {
   "securityConfig": {
     "type": "AssumeRole",
@@ -147,7 +147,7 @@ The Lambda function processes the input and returns a JSON response. SDMA applie
 ### Example – invoke an analysis function and write results back
 <a name="_example-invoke-an-analysis-function-and-write-results-back"></a>
 
-```
+```json
 {
   "securityConfig": {
     "type": "AssumeRole",
@@ -199,7 +199,7 @@ Besides values for `fieldMappings`, the response can list derived files for SDMA
 
 The following JSON shows a `derivedFiles` response with a single-object entry and a prefix entry:
 
-```
+```json
 {
   "derivedFiles": [
     { "s3Uri": "s3://amzn-s3-demo-bucket/jobs/123/preview.glb", "path": "preview.glb" },
@@ -237,7 +237,7 @@ To keep a payload within the limits, use one or more of the following approaches
 
 The `lambdaInvoke` step type can appear in multi-step triggers alongside other step types. For example, a trigger might call a REST API, then invoke a Lambda function to post-process the result:
 
-```
+```json
 "steps": [
   {
     "stepType": "rest",

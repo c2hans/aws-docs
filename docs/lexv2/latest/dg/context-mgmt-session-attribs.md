@@ -18,7 +18,7 @@ If either the client application or a Lambda function passes session attributes,
 
 To send session attributes to Amazon Lex V2, you create a string-to-string map of the attributes. The following shows how to map session attributes:
 
-```
+```json
 {
    "attributeName": "attributeValue",
    "attributeName": "attributeValue"
@@ -27,7 +27,7 @@ To send session attributes to Amazon Lex V2, you create a string-to-string map o
 
 For the `RecognizeText` operation, you insert the map into the body of the request using the `sessionAttributes` field of the `sessionState` structure, as follows:
 
-```
+```json
 "sessionState": {
     "sessionAttributes": {
         "attributeName": "attributeValue",

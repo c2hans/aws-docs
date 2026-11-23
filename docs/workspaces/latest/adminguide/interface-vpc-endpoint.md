@@ -17,7 +17,7 @@ You can create an interface endpoint to connect to Amazon WorkSpaces with either
 
 *After you have created a VPC endpoint*, you can use the following example CLI commands that use the `endpoint-url` parameter to specify interface endpoints to the Amazon WorkSpaces API endpoint:
 
-```
+```bash
 aws workspaces copy-workspace-image --endpoint-url {{VPC_Endpoint_ID}}.workspaces.{{Region}}.vpce.amazonaws.com
 
 aws workspaces delete-workspace-image --endpoint-url {{VPC_Endpoint_ID.api}}.workspaces.{{Region}}.vpce.amazonaws.com

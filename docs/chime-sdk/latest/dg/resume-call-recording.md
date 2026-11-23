@@ -8,7 +8,7 @@ The `ResumeCallRecording` action resumes the recording of a call leg. Before the
 
 The following example resumes recording.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Actions":[

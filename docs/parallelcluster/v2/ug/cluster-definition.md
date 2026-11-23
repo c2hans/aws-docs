@@ -14,7 +14,7 @@ The format is `[cluster {{cluster-template-name}}]`. The [`[cluster]` section](c
 
 {{cluster-template-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-```
+```ini
 [cluster default]
 ```
 
@@ -81,7 +81,7 @@ The value must be an HTTP URL to a public template, with all parameters provided
 
 There is no default value.
 
-```
+```ini
 additional_cfn_template = https://{{<bucket-name>}}.s3.amazonaws.com/{{my-cfn-template.yaml}}
 ```
 
@@ -96,7 +96,7 @@ If your intent is to add extra policies to the default settings for cluster node
 
 There is no default value.
 
-```
+```ini
 additional_iam_policies = arn:aws:iam::123456789012:policy/{{CustomEC2Policy}}
 ```
 
@@ -144,7 +144,7 @@ Before AWS ParallelCluster version 2.7.0, the [`base_os`](#base-os) parameter wa
 **Note**
 If the [`scheduler`](#scheduler) parameter is `awsbatch`, only `alinux2` is supported.
 
-```
+```ini
 base_os = alinux2
 ```
 
@@ -159,7 +159,7 @@ If this parameter isn't specified, a new bucket is created when the cluster is c
 
 The default value is `parallelcluster-{{random_string}}`.
 
-```
+```ini
 cluster_resource_bucket = amzn-s3-demo-bucket
 ```
 
@@ -182,12 +182,12 @@ For more information about Spot Instances, see [Working with Spot Instances](spo
 **Note**
 Using Spot Instances requires that the `AWSServiceRoleForEC2Spot` service-linked role exist in your account. To create this role in your account using the AWS CLI, run the following command:
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
 ```
 For more information, see [Service-linked role for Spot Instance requests](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#service-linked-roles-spot-instance-requests) in the *Amazon EC2 User Guide*.
 
-```
+```ini
 cluster_type = ondemand
 ```
 
@@ -202,7 +202,7 @@ If you're using the `awsbatch` scheduler, see the Compute Environments creation 
 
 Defaults to `t2.micro`, `optimal` when the scheduler is `awsbatch`.
 
-```
+```ini
 compute_instance_type = t2.micro
 ```
 
@@ -221,7 +221,7 @@ The default value is `35`.
 **Note**
 For AWS ParallelCluster versions between 2.5.0 and 2.10.4, the default was 25. Before AWS ParallelCluster version 2.5.0, the default was 20.
 
-```
+```ini
 compute_root_volume_size = 35
 ```
 
@@ -234,7 +234,7 @@ compute_root_volume_size = 35
 
 There is no default value.
 
-```
+```ini
 custom_ami = ami-00d4efc81188687a0
 ```
 
@@ -247,7 +247,7 @@ For example, if a custom AMI has an encrypted snapshot associated with it, the f
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -280,7 +280,7 @@ For more information, see the [`[cw_log]` section](cw-log-section.md), [Amazon C
 
 For example, the following setting specifies that the section that starts `[cw_log custom-cw]` is used for the CloudWatch Logs configuration.
 
-```
+```ini
 cw_log_settings = custom-cw
 ```
 
@@ -298,7 +298,7 @@ For more information, see the [`[dashboard]` section](dashboard-section.md).
 
 For example, the following setting specifies that the section that starts `[dashboard custom-dashboard` is used for the CloudWatch dashboard configuration.
 
-```
+```ini
 dashboard_settings = custom-dashboard
 ```
 
@@ -316,7 +316,7 @@ For more information, see the [`[dcv]` section](dcv-section.md).
 
 For example, the following setting specifies that the section that starts `[dcv custom-dcv]` is used for the Amazon DCV configuration.
 
-```
+```ini
 dcv_settings = custom-dcv
 ```
 
@@ -335,7 +335,7 @@ Support for [`dcv_settings`](#dcv-settings) was added in AWS ParallelCluster ver
 
 The default value is `4`.
 
-```
+```ini
 desired_vcpus = 4
 ```
 
@@ -348,7 +348,7 @@ desired_vcpus = 4
 
 The default value is `false`.
 
-```
+```ini
 disable_cluster_dns = true
 ```
 
@@ -370,7 +370,7 @@ Support for [`disable_cluster_dns`](#disable-cluster-dns-settings) was added in 
 
 The default value is `false`.
 
-```
+```ini
 disable_hyperthreading = true
 ```
 
@@ -393,7 +393,7 @@ For more information, see the [`[ebs]` section](ebs-section.md).
 
 For example, the following setting specifies that the sections that start `[ebs custom1]` and `[ebs custom2]` are used for the Amazon EBS volumes.
 
-```
+```ini
 ebs_settings = custom1, custom2
 ```
 
@@ -410,7 +410,7 @@ If this option isn't specified, the default AWS ParallelCluster IAM role for Ama
 
 There is no default value.
 
-```
+```ini
 ec2_iam_role = ParallelClusterInstanceRole
 ```
 
@@ -425,7 +425,7 @@ For more information, see the [`[efs]` section](efs-section.md).
 
 For example, the following setting specifies that the section that starts `[efs customfs]` is used for the Amazon EFS file system configuration.
 
-```
+```ini
 efs_settings = customfs
 ```
 
@@ -436,7 +436,7 @@ efs_settings = customfs
 
 **(Optional)** If present, specifies that Elastic Fabric Adapter (EFA) is enabled for the compute nodes. To view the list of EC2 instances that support EFA, see [Supported instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html#efa-instance-types) in the *Amazon EC2 User Guide for Linux Instances*. For more information, see [Elastic Fabric Adapter](efa.md). If the [`queue_settings`](#queue-settings) setting is defined, either this setting can be defined, or the [`enable_efa`](queue-section.md#queue-enable-efa) settings in the [`[queue]` section](queue-section.md) can be defined. A cluster placement group should be used to minimize latencies between instances. For more information, see [`placement`](#placement) and [`placement_group`](#placement-group).
 
-```
+```ini
 enable_efa = compute
 ```
 
@@ -453,7 +453,7 @@ Support for EFA on Arm-based Graviton2 instances was added in AWS ParallelCluste
 **Note**
 AWS ParallelCluster version 2.10.0 through 2.11.2: If `compute`, specifies that Elastic Fabric Adapter (EFA) support for GPUDirect RDMA (remote direct memory access) is enabled for the compute nodes. Setting this setting to `compute` requires that the [`enable_efa`](#enable-efa) setting is set to `compute`. EFA support for GPUDirect RDMA is supported by specific instance types (`p4d.24xlarge`) on specific operating systems ([`base_os`](#base-os) is `alinux2`, `centos7`, `ubuntu1804`, or `ubuntu2004`). If the [`queue_settings`](#queue-settings) setting is defined, either this setting can be defined, or the [`enable_efa_gdr`](queue-section.md#queue-enable-efa-gdr) settings in the [`[queue]` sections](queue-section.md) can be defined. A cluster placement group should be used to minimize latencies between instances. For more information, see [`placement`](#placement) and [`placement_group`](#placement-group).
 
-```
+```ini
 enable_efa_gdr = compute
 ```
 
@@ -469,7 +469,7 @@ Support for `enable_efa_gdr` was added in AWS ParallelCluster version 2.10.0.
 
 The default value is `false`.
 
-```
+```ini
 enable_intel_hpc_platform = true
 ```
 
@@ -490,7 +490,7 @@ For more information, see [https://gitlab.com/cryptsetup/cryptsetup/blob/master/
 
 The default value is `false`.
 
-```
+```ini
 encrypted_ephemeral = true
 ```
 
@@ -503,7 +503,7 @@ encrypted_ephemeral = true
 
 The default value is `/scratch`.
 
-```
+```ini
 ephemeral_dir = /scratch
 ```
 
@@ -516,14 +516,14 @@ ephemeral_dir = /scratch
 
 The default value is `{}`.
 
-```
+```ini
 extra_json = {}
 ```
 
 **Note**
 Starting with AWS ParallelCluster version 2.6.1, most of the install recipes are skipped by default when launching nodes to improve start up times. To run all of the install recipes for better backwards compatibility at the expense of startup times, add `"skip_install_recipes" : "no"` to the `cluster` key in the [`extra_json`](#extra-json) setting. For example:
 
-```
+```ini
 extra_json = { "cluster" : { "skip_install_recipes" : "no" } }
 ```
 
@@ -538,7 +538,7 @@ For more information, see the [`[fsx]` section](fsx-section.md).
 
 For example, the following setting specifies that the section that starts `[fsx fs]` is used for the FSx for Lustre configuration.
 
-```
+```ini
 fsx_settings = fs
 ```
 
@@ -556,7 +556,7 @@ An IAM role name and its Amazon Resource Name (ARN) are different. ARNs can't be
 
 There is no default value.
 
-```
+```ini
 iam_lambda_role = ParallelClusterLambdaRole
 ```
 
@@ -579,7 +579,7 @@ If the scheduler is `awsbatch`, use [`min_vcpus`](#min-vcpus) instead.
 
 Defaults to `2`.
 
-```
+```ini
 initial_queue_size = 2
 ```
 
@@ -590,7 +590,7 @@ initial_queue_size = 2
 
 **(Optional)** Names an existing Amazon EC2 key pair with which to enable SSH access to the instances.
 
-```
+```ini
 key_name = mykey
 ```
 
@@ -617,7 +617,7 @@ If the [`queue_settings`](#queue-settings) setting is defined then this setting 
 
 Defaults to `false`.
 
-```
+```ini
 maintain_initial_size = false
 ```
 
@@ -630,7 +630,7 @@ maintain_initial_size = false
 
 In AWS Regions that have a Free Tier, defaults to the Free Tier instance type (`t2.micro` or `t3.micro`). In AWS Regions that do not have a Free Tier, defaults to `t3.micro`. For more information about the AWS Free Tier, see [AWS Free Tier FAQs](https://aws.amazon.com/free/free-tier-faqs/).
 
-```
+```ini
 master_instance_type = t2.micro
 ```
 
@@ -649,7 +649,7 @@ The default value is `35`.
 **Note**
 For AWS ParallelCluster versions between 2.5.0 and 2.10.4, the default was 25. Before AWS ParallelCluster version 2.5.0, the default was 20.
 
-```
+```ini
 master_root_volume_size = 35
 ```
 
@@ -669,7 +669,7 @@ If the scheduler is `awsbatch`, use [`max_vcpus`](#max-vcpus) instead.
 
 Defaults to `10`.
 
-```
+```ini
 max_queue_size = 10
 ```
 
@@ -682,7 +682,7 @@ Update policy: This setting can be changed during an update, but the compute fle
 
 The default value is `20`.
 
-```
+```ini
 max_vcpus = 20
 ```
 
@@ -702,7 +702,7 @@ The compute environment never has fewer members than the value of [`min_vcpus`](
 
 Defaults to `0`.
 
-```
+```ini
 min_vcpus = 0
 ```
 
@@ -721,7 +721,7 @@ This parameter isn't used when the scheduler is `awsbatch`.
 
 The default value is `compute`.
 
-```
+```ini
 placement = compute
 ```
 
@@ -746,7 +746,7 @@ There is no default value.
 
 Not all instance types support cluster placement groups. For example, the default instance type of `t3.micro` doesn't support cluster placement groups. For information about the list of instance types that support cluster placement groups, see [Cluster placement group rules and limitations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html#placement-groups-limitations-cluster) in the *Amazon EC2 User Guide*. See [Placement groups and instance launch issues](troubleshooting.md#placement-groups-and-instance-launch-issues) for tips when working with placement groups.
 
-```
+```ini
 placement_group = DYNAMIC
 ```
 
@@ -763,7 +763,7 @@ The parameter format can be either `http://{{hostname/path/to/script.sh}}` or `s
 
 There is no default value.
 
-```
+```ini
 post_install = s3://{{<bucket-name>}}/{{my-post-install-script.sh}}
 ```
 
@@ -776,7 +776,7 @@ post_install = s3://{{<bucket-name>}}/{{my-post-install-script.sh}}
 
 There is no default value.
 
-```
+```ini
 post_install_args = "{{argument-1}} {{argument-2}}"
 ```
 
@@ -793,7 +793,7 @@ The parameter format can be either `http://{{hostname/path/to/script.sh}}` or `s
 
 There is no default value.
 
-```
+```ini
 pre_install = s3://{{bucket-name}}/{{my-pre-install-script.sh}}
 ```
 
@@ -806,7 +806,7 @@ pre_install = s3://{{bucket-name}}/{{my-pre-install-script.sh}}
 
 There is no default value.
 
-```
+```ini
 pre_install_args = "{{argument-3}} {{argument-4}}"
 ```
 
@@ -819,7 +819,7 @@ pre_install_args = "{{argument-3}} {{argument-4}}"
 
 There is no default value.
 
-```
+```ini
 proxy_server = http://{{10.11.12.13:8080}}
 ```
 
@@ -839,7 +839,7 @@ For more information, see the [`[queue]` section](queue-section.md).
 
 For example, the following setting specifies that the sections that start `[queue q1]` and `[queue q2]` are used.
 
-```
+```ini
 queue_settings = q1, q2
 ```
 
@@ -857,7 +857,7 @@ For more information, see the [`[raid]` section](raid-section.md).
 
 For example, the following setting specifies that the section that starts `[raid rs]` be used for the Auto Scaling configuration.
 
-```
+```ini
 raid_settings = rs
 ```
 
@@ -874,7 +874,7 @@ See [working with Amazon S3](s3_resources.md) for details on format.
 
 There is no default value.
 
-```
+```ini
 s3_read_resource = arn:aws:s3:::{{my_corporate_bucket}}*
 ```
 
@@ -891,7 +891,7 @@ See [working with Amazon S3](s3_resources.md) for details on format.
 
 There is no default value.
 
-```
+```ini
 s3_read_write_resource = arn:aws:s3:::{{my_corporate_bucket}}/*
 ```
 
@@ -906,7 +906,7 @@ For more information, see the [`[scaling]` section](scaling-section.md).
 
 For example, the following setting specifies that the section that starts `[scaling custom]` is used for the Auto Scaling configuration.
 
-```
+```ini
 scaling_settings = custom
 ```
 
@@ -937,7 +937,7 @@ Torque Resource Manager (Torque)
 **Note**
 Before AWS ParallelCluster version 2.7.0, the `scheduler` parameter was optional, and the default was `sge`. Starting with AWS ParallelCluster version 2.7.0, the `scheduler` parameter is required.
 
-```
+```ini
 scheduler = slurm
 ```
 
@@ -956,7 +956,7 @@ The default value is `/shared`.
 
 The following example shows a shared Amazon EBS volume mounted at `/myshared`.
 
-```
+```ini
 shared_dir = myshared
 ```
 
@@ -969,7 +969,7 @@ shared_dir = myshared
 
 If unspecified, the current spot market price is selected, capped at the On-Demand price.
 
-```
+```ini
 spot_bid_percentage = 85
 ```
 
@@ -987,7 +987,7 @@ If the scheduler is `awsbatch`, use [spot\_bid\_percentage](#spot-bid-percentage
 
 For assistance finding a Spot Instance that meets your needs, see the [Spot Instance advisor](https://aws.amazon.com/ec2/spot/instance-advisor/).
 
-```
+```ini
 spot_price = 1.50
 ```
 
@@ -1009,7 +1009,7 @@ Tags are JSON formatted. Don't use quotes outside of the curly braces.
 
 For more information, see [CloudFormation resource tags type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) in the *AWS CloudFormation User Guide*.
 
-```
+```ini
 tags = {"key" : "value", "key2" : "value2"}
 ```
 
@@ -1031,7 +1031,7 @@ Defaults to `https://{{aws_region_name}}-aws-parallelcluster.s3.amazonaws.com/te
 **Warning**
 This is an advanced parameter. Any change to this setting is done at your own risk.
 
-```
+```ini
 template_url = https://us-east-1-aws-parallelcluster.s3.amazonaws.com/templates/aws-parallelcluster-2.11.9.cfn.json
 ```
 
@@ -1046,7 +1046,7 @@ For more information, see the [`[vpc]` section](vpc-section.md).
 
 For example, the following setting specifies that the section that starts `[vpc public]` is used for the Amazon VPC configuration.
 
-```
+```ini
 vpc_settings = public
 ```
 

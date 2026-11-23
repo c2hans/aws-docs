@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/getting-st
 
  The AWS SDK for Go requires a minimum version of Go 1.23. You can view your current version of Go by running the following command:
 
-```
+```sh
 go version
 ```
 
@@ -22,7 +22,7 @@ go version
 
  The AWS SDK for Go v2 uses Go modules, which was a feature introduced in Go 1.11. Initialize your local project by running the following Go command.
 
-```
+```bash
 go mod init example
 ```
 
@@ -30,7 +30,7 @@ go mod init example
 
  The following commands show how to retrieve the standard set of SDK modules to use in your application.
 
-```
+```sh
 go get github.com/aws/aws-sdk-go-v2
 go get github.com/aws/aws-sdk-go-v2/config
 ```
@@ -39,7 +39,7 @@ go get github.com/aws/aws-sdk-go-v2/config
 
  Next you can install one or more AWS service API clients required by your application. All API clients are located under `github.com/aws/aws-sdk-go-v2/service` import hierarchy. A complete set of currently supported API clients can be found [here](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service). To install a service client, execute the following command to retrieve the module and record the dependency in your `go.mod` file. In this example we retrieve the Amazon S3 API client.
 
-```
+```sh
 go get github.com/aws/aws-sdk-go-v2/service/s3
 ```
 
@@ -81,7 +81,7 @@ To create access keys, you must have permissions to perform the required IAM act
 
  After you have installed the SDK, you import AWS packages into your Go applications to use the SDK, as shown in the following example, which imports the AWS, Config, and Amazon S3 libraries. After importing the SDK packages, the AWS SDK Shared Configuration is loaded, a client is constructed, and an API operation is invoked.
 
-```
+```go
 package main
 
 import (

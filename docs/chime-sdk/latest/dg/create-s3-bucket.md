@@ -27,7 +27,7 @@ The following example shows an Amazon S3 bucket policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "{{AWSChimeMediaCaptureBucketPolicy}}",

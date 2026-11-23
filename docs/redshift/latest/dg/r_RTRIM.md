@@ -34,7 +34,7 @@ A string that is the same data type as the *string* argument.
 
 The following example trims leading and trailing blanks from the string `' abc '`:
 
-```
+```sql
 select '     abc    ' as untrim, rtrim('     abc    ') as trim;
 
 untrim    | trim
@@ -44,7 +44,7 @@ untrim    | trim
 
 The following example removes the trailing `'xyz'` strings from the string `'xyzaxyzbxyzcxyz'`. The trailing occurrences of `'xyz'` are removed, but occurrences that are internal within the string are not removed.
 
-```
+```sql
 select 'xyzaxyzbxyzcxyz' as untrim,
 rtrim('xyzaxyzbxyzcxyz', 'xyz') as trim;
 
@@ -55,7 +55,7 @@ rtrim('xyzaxyzbxyzcxyz', 'xyz') as trim;
 
 The following example removes the trailing parts from the string `'setuphistorycassettes'` that match any of the characters in the *trim\_chars* list `'tes'`. Any `t`, `e`, or `s` that occur before another character that is not in the *trim\_chars* list at the ending of the input string are removed.
 
-```
+```sql
 SELECT rtrim('setuphistorycassettes', 'tes');
 
      rtrim
@@ -65,7 +65,7 @@ SELECT rtrim('setuphistorycassettes', 'tes');
 
 The following example trims the characters 'Park' from the end of VENUENAME where present:
 
-```
+```sql
 select venueid, venuename, rtrim(venuename, 'Park')
 from venue
 order by 1, 2, 3

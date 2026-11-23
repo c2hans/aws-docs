@@ -53,7 +53,7 @@ Example experiment template
 
  The following example shows a provisioned throughput exception for all requests up to 5 Kinesis Data streams with the specified tag. AWS FIS selects the streams to affect at random. After 5 minutes the fault is removed.
 
-```
+```json
 {
     "description": "Kinesis stream experiment",
     "targets": {

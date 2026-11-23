@@ -28,7 +28,7 @@ By default, only the most recent 100 builds or build projects are displayed. To 
 <a name="retry-build-cli"></a>
 + Run the **retry-build** command:
 
-  ```
+  ```bash
   aws codebuild retry-build --id {{<build-id>}} --idempotency-token {{<idempotencyToken>}}
   ```
 

@@ -30,7 +30,7 @@ Lists all documents in a knowledge base.
 ### Sample Request
 <a name="acxd-knowledge-base-documents-listknowledgebasedocuments-sample-request"></a>
 
-```
+```typescript
 client.send(new ListKnowledgeBaseDocumentsCommand({
       knowledgeBaseId: KNOWLEDGE_BASE_ID,
     }));
@@ -39,7 +39,7 @@ client.send(new ListKnowledgeBaseDocumentsCommand({
 ### Output
 <a name="acxd-knowledge-base-documents-listknowledgebasedocuments-output"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -76,7 +76,7 @@ Gets a pre-signed download URL for a document.
 ### Sample Request
 <a name="acxd-knowledge-base-documents-getknowledgebasedocument-sample-request"></a>
 
-```
+```typescript
 await client.send(new GetKnowledgeBaseDocumentCommand({
       knowledgeBaseId: KNOWLEDGE_BASE_ID,
       documentId: "product-guide-v2.pdf",
@@ -86,7 +86,7 @@ await client.send(new GetKnowledgeBaseDocumentCommand({
 ### Output
 <a name="acxd-knowledge-base-documents-getknowledgebasedocument-output"></a>
 
-```
+```json
 {
   "url": "https://s3.amazonaws.com/bucket/path/document.pdf?X-Amz-Signature=..."
 }
@@ -116,7 +116,7 @@ Registers a document and returns a pre-signed upload URL. Use the returned URL a
 ### Sample Request
 <a name="acxd-knowledge-base-documents-putknowledgebasedocument-sample-request"></a>
 
-```
+```typescript
 await client.send(new PutKnowledgeBaseDocumentCommand({
   knowledgeBaseId: KNOWLEDGE_BASE_ID,
   documentId: "product-guide-v2.pdf",
@@ -128,7 +128,7 @@ await client.send(new PutKnowledgeBaseDocumentCommand({
 ### Output
 <a name="acxd-knowledge-base-documents-putknowledgebasedocument-output"></a>
 
-```
+```json
 {
   "url": "https://s3.amazonaws.com/bucket/upload-path",
   "fields": {
@@ -164,7 +164,7 @@ Deletes a document.
 ### Sample Request
 <a name="acxd-knowledge-base-documents-deleteknowledgebasedocument-sample-request"></a>
 
-```
+```typescript
 await client.send(new DeleteKnowledgeBaseDocumentCommand({
   knowledgeBaseId: KNOWLEDGE_BASE_ID,
   documentId: "product-guide-v2.pdf",

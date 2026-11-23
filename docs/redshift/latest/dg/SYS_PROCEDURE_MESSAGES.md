@@ -26,7 +26,7 @@ SYS\_PROCEDURE\_MESSAGES is visible to all users. Superusers can see all rows; r
 
 The following query shows sample output of SYS\_PROCEDURE\_MESSAGES.
 
-```
+```sql
 select transaction_id, query_id, record_time, log_level, trim(message), line_number from sys_procedure_messages;
 ```
 

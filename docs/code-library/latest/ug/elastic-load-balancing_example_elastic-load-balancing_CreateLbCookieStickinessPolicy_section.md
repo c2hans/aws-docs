@@ -31,12 +31,12 @@ For more information, see [Configure sticky sessions for your Classic Load Balan
 **Tools for PowerShell V4**
 **Example 1: This example creates a stickiness policy with sticky session lifetimes controlled by the specified expiration period (in seconds).**
 
-```
+```powershell
 New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy -CookieExpirationPeriod 60
 ```
 **Example 2: This example creates a stickiness policy with sticky session lifetimes controlled by the by the lifetime of the browser (user-agent).**
 
-```
+```powershell
 New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy
 ```
 +  For API details, see [CreateLbCookieStickinessPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -44,12 +44,12 @@ New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName m
 **Tools for PowerShell V5**
 **Example 1: This example creates a stickiness policy with sticky session lifetimes controlled by the specified expiration period (in seconds).**
 
-```
+```powershell
 New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy -CookieExpirationPeriod 60
 ```
 **Example 2: This example creates a stickiness policy with sticky session lifetimes controlled by the by the lifetime of the browser (user-agent).**
 
-```
+```powershell
 New-ELBLBCookieStickinessPolicy -LoadBalancerName my-load-balancer -PolicyName my-duration-cookie-policy
 ```
 +  For API details, see [CreateLbCookieStickinessPolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

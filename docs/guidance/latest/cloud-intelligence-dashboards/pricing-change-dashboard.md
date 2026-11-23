@@ -47,13 +47,13 @@ An alternative method to install dashboards is the [cid-cmd](https://github.com/
 
 1. In your command-line interface run the following command to download and install the CID CLI tool:
 
-   ```
+   ```bash
    pip3 install --upgrade cid-cmd
    ```
 
 1. In your command-line interface run the following command to deploy the dashboard:
 
-   ```
+   ```bash
    cid-cmd deploy --dashboard-id pricing-change-analysis
    ```
 
@@ -64,7 +64,7 @@ An alternative method to install dashboards is the [cid-cmd](https://github.com/
 
 Please note that dashboards are not updated with update of CloudFormation Stack. When a new version of the dashboard template is released, you can update your dashboard by running the following command in your command-line interface:
 
-```
+```bash
 cid-cmd update --dashboard-id pricing-change-analysis
 ```
 

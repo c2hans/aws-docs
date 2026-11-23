@@ -32,7 +32,7 @@ When using `ApplyGuardrail`, you specify the `{{guardrailIdentifier}}` and `{{gu
 ------
 #### [ ApplyGuardrail API request ]
 
-```
+```json
 POST /guardrail/{{{guardrailIdentifier}}}/version/{{{guardrailVersion}}}/apply HTTP/1.1
 {
     "source": "INPUT" | "OUTPUT",
@@ -47,7 +47,7 @@ POST /guardrail/{{{guardrailIdentifier}}}/version/{{{guardrailVersion}}}/apply H
 ------
 #### [ ApplyGuardrail API response ]
 
-```
+```json
 {
     "usage": {
           "topicPolicyUnits": "integer",
@@ -158,7 +158,7 @@ The outputs of the `ApplyGuardrail` request depends on the action guardrail took
 
 **Request example**
 
-```
+```json
 {
     "source": "OUTPUT",
     "content": [
@@ -171,7 +171,7 @@ The outputs of the `ApplyGuardrail` request depends on the action guardrail took
 
 **Response example**
 
-```
+```json
 {
     "usage": {
         "topicPolicyUnitsProcessed": 1,
@@ -190,7 +190,7 @@ The outputs of the `ApplyGuardrail` request depends on the action guardrail took
 
 **Response example**
 
-```
+```json
 {
     "usage": {
         "topicPolicyUnitsProcessed": 1,
@@ -229,7 +229,7 @@ The outputs of the `ApplyGuardrail` request depends on the action guardrail took
 
 Guardrails intervenes by masking the name `ZAID`.
 
-```
+```json
 {
     "usage": {
         "topicPolicyUnitsProcessed": 1,
@@ -263,7 +263,7 @@ Guardrails intervenes by masking the name `ZAID`.
 
 **Input example**
 
-```
+```json
 aws bedrock-runtime apply-guardrail \
     --cli-input-json '{
         "guardrailIdentifier": "someGuardrailId",
@@ -283,7 +283,7 @@ aws bedrock-runtime apply-guardrail \
 
 **Output example (blocks content)**
 
-```
+```json
 {
     "usage": {
         "topicPolicyUnits": 1,

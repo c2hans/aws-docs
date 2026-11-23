@@ -13,7 +13,7 @@ You can use the EventBridge Sandbox to test event patterns against sample events
 
 For example, consider the following event from Amazon EC2:
 
-```
+```json
 {
   "version": "0",
   "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
@@ -40,7 +40,7 @@ The following event pattern selects all Amazon EC2 `instance-termination` events
 
 1. The state of the Amazon EC2 instance must be `terminated`.
 
-```
+```json
 {
   "source": ["aws.ec2"],
   "detail-type": ["EC2 Instance State-change Notification"],
@@ -64,6 +64,8 @@ For event buses, you can specify an event pattern for each rule you create for t
 ![An event is compared to each bus rule's event pattern, and sent to the target if it matches.](https://docs.aws.amazon.com/eventbridge/latest/userguide/images/event-pattern-bus_eventbridge_architecture.svg)
 
  The following video discusses the basics of event patterns for event buses:
+
+[![AWS Videos](https://img.youtube.com/vi/69Z394rGclk/0.jpg)](https://www.youtube.com/watch?v=69Z394rGclk)
 
 ## Event patterns for EventBridge Pipes
 <a name="eb-event-patterns-pipes"></a>

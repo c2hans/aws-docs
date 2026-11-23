@@ -8,7 +8,7 @@ Below are the detail fields for the `Support Case Update` event.
 
 The `source` and `detail-type` fields are included below because they contain specific values for AWS Support events. For definitions of the other metadata fields that are included in all events, see [Event structure ](https://docs.aws.amazon.com/eventbridge/latest/ref/overiew-event-structure.html) in the *Amazon EventBridge Events Reference*.
 
-```
+```json
 {
   . . .,
   "detail-type": "Support Case Update",
@@ -50,7 +50,7 @@ Currently, only events with an `event-name` of `AddCommunicationToCase` will con
 
 **Example Support Case Update event example: Support case created**  <a name="event-detail-support-case-update.example-1"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "3433df007-9285-55a3-f6d1-536944be45d7",
@@ -72,7 +72,7 @@ Currently, only events with an `event-name` of `AddCommunicationToCase` will con
 
 **Example Support Case Update event example: AWS Support replies to a support case**  <a name="event-detail-support-case-update.example-2"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "f90cb8cb-32be-1c91-c0ba-d50b4ca5e51b",
@@ -94,7 +94,7 @@ Currently, only events with an `event-name` of `AddCommunicationToCase` will con
 
 **Example Support Case Update event example: Support case resolved**  <a name="event-detail-support-case-update.example-3"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "1aa4458d-556f-732e-ddc1-4a5b2fbd14a5",
@@ -116,7 +116,7 @@ Currently, only events with an `event-name` of `AddCommunicationToCase` will con
 
 **Example Support Case Update event example: Support case reopened**  <a name="event-detail-support-case-update.example-4"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "3bb9d8fe-6089-ad27-9508-804209b233ad",

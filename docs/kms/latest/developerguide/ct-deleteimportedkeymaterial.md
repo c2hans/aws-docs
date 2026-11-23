@@ -8,7 +8,7 @@ If you import key material into a KMS key, you can delete the imported key mater
 
 The following example shows an AWS CloudTrail log entry generated for the `DeleteImportedKeyMaterial` operation.
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

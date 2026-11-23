@@ -31,7 +31,7 @@ The COS function returns a `DOUBLE PRECISION` number.
 
 To return the cosine of `0`, use the following example.
 
-```
+```sql
 SELECT COS(0);
 
 +-----+
@@ -43,7 +43,7 @@ SELECT COS(0);
 
 To return the cosine of `pi`, use the following example.
 
-```
+```sql
 SELECT COS(PI());
 
 +-----+

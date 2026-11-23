@@ -623,7 +623,7 @@ aws docdb describe-db-cluster-parameters ^
 
  The command returns output similar to the following.
 
-```
+```json
 [
     {
         "ParameterName": "global_db_rpo",

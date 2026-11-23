@@ -15,7 +15,7 @@ To run the Spark application, follow these steps:
 
 1. Run a container with an Amazon EMR on EKS base image. See [How to select a base image URI](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/docker-custom-images-tag.html) for more information.
 
-   ```
+   ```bash,sh,zsh
    kubectl run -it {{containerName}} --image={{EMRonEKSImage}} --command -n {{namespace}} /bin/bash
    ```
 
@@ -28,7 +28,7 @@ To run the Spark application, follow these steps:
 
 1. Now, submit the Spark application with the following command:
 
-   ```
+   ```shell
    $SPARK_HOME/bin/spark-submit \
     --class org.apache.spark.examples.SparkPi \
     --master $MASTER_URL \

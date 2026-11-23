@@ -18,7 +18,7 @@ To declare this entity in your AWS SAM template, use the following syntax.
 ### YAML
 <a name="sam-property-function-msk-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#sam-function-msk-batchsize): {{Integer}}
   [BisectBatchOnFunctionError](#sam-function-msk-bisectbatchonfunctionerror): {{Boolean}}
   [ConsumerGroupId](#sam-function-msk-consumergroupid): {{String}}
@@ -182,7 +182,7 @@ The name of the Kafka topic.
 
 The following example shows a complete setup including the required IAM role configuration for using Schema Registry:
 
-```
+```yaml
 Parameters:
   PreCreatedSubnetOne:
     Type: String
@@ -292,7 +292,7 @@ Resources:
 ### ProvisionedPollerConfig example
 <a name="sam-property-function-msk-example-provisionedpollerconfig"></a>
 
-```
+```yaml
 ProvisionedPollerConfig:
   MinimumPollers: 1
   MaximumPollers: 200
@@ -306,7 +306,7 @@ The following is an example of an `MSK` event source type for an Amazon MSK clus
 #### YAML
 <a name="sam-property-function-msk--examples--amazon-msk-example-for-existing-cluster--yaml"></a>
 
-```
+```yaml
 Events:
   MSKEvent:
     Type: MSK
@@ -325,7 +325,7 @@ The following is an example of an `MSK` event source type for an Amazon MSK clus
 #### YAML
 <a name="sam-property-function-msk--examples--amazon-msk-example-for-cluster-declared-in-same-template--yaml"></a>
 
-```
+```yaml
 Events:
   MSKEvent:
     Type: MSK
@@ -342,7 +342,7 @@ Events:
 
 The following is an example of an `MSK` event source type configured with a schema registry.
 
-```
+```yaml
 Events:
   MSKEvent:
     Type: MSK
@@ -367,7 +367,7 @@ Events:
 
 The following is an example of an `MSK` event source type configured with a Confluent Schema Registry.
 
-```
+```yaml
 Events:
   MSKEvent:
     Type: MSK

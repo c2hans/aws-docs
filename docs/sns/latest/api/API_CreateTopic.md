@@ -155,7 +155,7 @@ https://sns.us-east-2.amazonaws.com/?Action=CreateTopic
 #### Sample Response
 <a name="API_CreateTopic_Example_1_Response"></a>
 
-```
+```xml
 <CreateTopicResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <CreateTopicResult>
         <TopicArn>arn:aws:sns:us-east-2:123456789012:My-Topic</TopicArn>

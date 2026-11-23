@@ -90,7 +90,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -129,7 +129,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -190,7 +190,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -222,7 +222,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -261,7 +261,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":
@@ -326,7 +326,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

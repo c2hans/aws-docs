@@ -101,7 +101,7 @@ To check the product codes on a base AMI, run the Amazon EC2 [describe-images](h
   ```
 To check the product codes on a base AMI, run the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet and read the `ProductCodes` property, as shown in the following example:
 
-  ```
+  ```ps
   (Get-EC2Image -ImageId {{ami-example12345}}).ProductCodes
   ```
 + You can include up to 20 components (build and test combined). This is the default limit, which you can request to increase through AWS Support.
@@ -173,7 +173,7 @@ Image Builder automatically installed the Systems Manager agent on the build ins
 **Note**
 The user data is always base 64 encoded. For example, the following commands are encoded as `IyEvYmluL2Jhc2gKbWtkaXIgLXAgL3Zhci9iYi8KdG91Y2ggL3Zhcg==`:
 
-       ```
+       ```sh
        #!/bin/bash
        mkdir -p /var/bb/
        touch /var
@@ -185,7 +185,7 @@ The Linux example uses this encoded value.
 
    The base image (`parentImage` property) in the following example is an AMI. When you use an AMI, you must have access to it. The AMI must also be in the source Region, which is the Region where you run the command. Save the file as `create-image-recipe.json`, and use it in the **create-image-recipe** command. The following example shows the recipe JSON file:
 
-   ```
+   ```json
    {
    	"name": "{{bb-ubuntu-image-recipe}}",
    	"description": "{{Hello World image recipe for Linux.}}",
@@ -210,7 +210,7 @@ The Linux example uses this encoded value.
 
    The following example refers to the latest version of the Windows Server 2016 English Full Base image. The ARN in this example references the latest image based on the semantic version filters that you've specified: `arn:aws:imagebuilder:{{us-west-2}}:aws:image/{{windows-server-2016-english-full-base-x86/x.x.x}}`. The following example shows the recipe JSON file:
 
-   ```
+   ```json
    {
    	"name": "{{my-basic-recipe}}",
    	"description": "{{This example image recipe creates a Windows 2016 image.}}",
@@ -235,7 +235,7 @@ To learn more about semantic versioning for Image Builder resources, see [Semant
 
    The base image (`parentImage` property) in the following example is an AMI. When you use an AMI, you must have access to it. The AMI must also be in the source Region, which is the Region where you run the command. Save the file as `create-image-recipe.json`, and use it in the **create-image-recipe** command. The following example shows the recipe JSON file:
 
-   ```
+   ```json
    {
    	"name": "{{macos-catalina-image-recipe}}",
    	"description": "{{Hello World image recipe for macOS.}}",
@@ -260,7 +260,7 @@ To learn more about semantic versioning for Image Builder resources, see [Semant
 **Recipe without components**
 You can create recipes without any components for testing existing AMIs or distribution-only workflows. The following example shows a recipe that uses an existing AMI without applying any additional components:
 
-   ```
+   ```json
    {
    	"name": "{{test-distribution-recipe}}",
    	"description": "{{Recipe for testing and distributing existing AMI without modifications.}}",
@@ -285,7 +285,7 @@ You can create recipes without any components for testing existing AMIs or distr
 
    To create the recipe, run the following command. In the `--cli-input-json` parameter, provide the name of the JSON file that you created in the prior step:
 
-   ```
+   ```sh
    aws imagebuilder create-image-recipe --cli-input-json file://{{create-image-recipe.json}}
    ```
 
@@ -295,7 +295,7 @@ The path for the JSON file should follow the appropriate convention for the base
 
    The command returns the ARN of the new image recipe, as shown in the following example output:
 
-   ```
+   ```json
    {
    	"requestId": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}",
    	"clientToken": "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}",
@@ -315,7 +315,7 @@ The base image (`ParentImage` parameter) in this example is an AMI. When you use
 
    Run the following cmdlet to create the recipe:
 
-   ```
+   ```ps
    Import-Module AWS.Tools.Imagebuilder
 
    $component = [Amazon.Imagebuilder.Model.ComponentConfiguration]@{
@@ -336,7 +336,7 @@ This example refers to the latest version of the Windows Server 2016 English Ful
 
    Run the following cmdlet to create the recipe:
 
-   ```
+   ```ps
    Import-Module AWS.Tools.Imagebuilder
 
    $components = @(
@@ -360,7 +360,7 @@ The base image (`ParentImage` parameter) in this example is an AMI. When you use
 
    Run the following cmdlet to create the recipe:
 
-   ```
+   ```ps
    Import-Module AWS.Tools.Imagebuilder
 
    $component = [Amazon.Imagebuilder.Model.ComponentConfiguration]@{
@@ -379,7 +379,7 @@ The base image (`ParentImage` parameter) in this example is an AMI. When you use
 **Recipe without components**
 You can create recipes without any components for testing existing AMIs or distribution-only workflows. The following example creates a recipe that uses an existing AMI without applying any additional components:
 
-   ```
+   ```ps
    New-EC2IBImageRecipe -Name {{test-distribution-recipe}} `
        -Description "{{Recipe for testing and distributing existing AMI without modifications.}}" `
        -ParentImage {{ami-1234567890abcdef1}} `
@@ -400,7 +400,7 @@ You can create recipes without any components for testing existing AMIs or distr
 
    To confirm that Image Builder created your recipe as expected, run the [get-image-recipe](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-image-recipe.html) command with the ARN that the previous step returned:
 
-   ```
+   ```sh
    aws imagebuilder get-image-recipe --image-recipe-arn arn:aws:imagebuilder:us-west-2:{{111122223333}}:image-recipe/{{my-recipe}}/1.0.1
    ```
 
@@ -409,7 +409,7 @@ You can create recipes without any components for testing existing AMIs or distr
 
    To confirm that Image Builder created your recipe as expected, run the [Get-EC2IBImageRecipe](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImageRecipe.html) cmdlet with the ARN that the previous step returned:
 
-   ```
+   ```ps
    Get-EC2IBImageRecipe -ImageRecipeArn arn:aws:imagebuilder:us-west-2:{{111122223333}}:image-recipe/{{my-recipe}}/1.0.1
    ```
 
@@ -443,7 +443,7 @@ You can't use the reserved tag keys `CreatedBy` or `Ec2ImageBuilderArn`. Image B
 
 Specify AMI tags with the `amiTags` parameter in your JSON input file, as shown in the following example:
 
-```
+```json
 {
 	"name": "{{tagged-recipe}}",
 	"semanticVersion": "1.0.0",
@@ -466,7 +466,7 @@ Specify AMI tags with the `amiTags` parameter in your JSON input file, as shown 
 
 Specify AMI tags with the `AmiTag` parameter of the [New-EC2IBImageRecipe](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2IBImageRecipe.html) cmdlet. The parameter takes a hashtable, as shown in the following example:
 
-```
+```ps
 Import-Module AWS.Tools.Imagebuilder
 
 $component = [Amazon.Imagebuilder.Model.ComponentConfiguration]@{

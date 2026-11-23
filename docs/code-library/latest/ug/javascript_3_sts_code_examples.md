@@ -27,7 +27,7 @@ The following code example shows how to use `AssumeRole`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sts#code-examples).
 Create the client.
 
-```
+```javascript
 import { STSClient } from "@aws-sdk/client-sts";
 // Set the AWS Region.
 const REGION = "us-east-1";
@@ -36,7 +36,7 @@ export const client = new STSClient({ region: REGION });
 ```
 Assume the IAM role.
 
-```
+```javascript
 import { AssumeRoleCommand } from "@aws-sdk/client-sts";
 
 import { client } from "../libs/client.js";

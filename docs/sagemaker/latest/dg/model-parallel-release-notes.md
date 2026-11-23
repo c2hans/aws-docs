@@ -360,7 +360,7 @@ For more information about Conda channels in general, see [Channels](https://doc
 The SMP library team distributes Docker containers in replacement of the SageMaker PyTorch framework containers. This release incorporates the aforementioned bug fixes into the following SMP Docker image.
 + SMP Docker container for PyTorch v2.2.0 with CUDA v12.1
 
-  ```
+  ```txt
   658645717510.dkr.ecr.{{us-west-2}}.amazonaws.com/smdistributed-modelparallel:2.2.0-gpu-py310-cu121
   ```
 
@@ -377,7 +377,7 @@ The SMP library team distributes Docker containers in replacement of the SageMak
 The SMP library team distributes Docker containers in replacement of the SageMaker PyTorch framework containers. If you use the PyTorch ModelTrainer class in the SageMaker Python SDK and specify distribution configuration to use SMP v2, SageMaker automatically picks up the SMP Docker containers. To use this release of SMP v2, upgrade your SageMaker Python SDK to v2.214.4 or later.
 + SMP Docker container for PyTorch v2.2.0 with CUDA v12.1
 
-  ```
+  ```txt
   658645717510.dkr.ecr.{{us-west-2}}.amazonaws.com/smdistributed-modelparallel:2.2.0-gpu-py310-cu121
   ```
   + Pre-installed packages in this Docker container
@@ -424,7 +424,7 @@ The SMP library team distributes Docker containers in replacement of the SageMak
 The SMP library team distributes Docker containers in replacement of the SageMaker PyTorch framework containers. If you use the PyTorch ModelTrainer class in the SageMaker Python SDK and specify distribution configuration to use SMP v2, SageMaker AI automatically picks up the SMP Docker containers. To use this release of SMP v2, upgrade your SageMaker Python SDK to v2.212.0 or later.
 + SMP Docker container for PyTorch v2.2.0 with CUDA v12.1
 
-  ```
+  ```txt
   658645717510.dkr.ecr.{{us-west-2}}.amazonaws.com/smdistributed-modelparallel:2.2.0-gpu-py310-cu121
   ```
   + Available for P4d, P4de, and P5 instances
@@ -457,7 +457,7 @@ The SMP library team distributes Docker containers in replacement of the SageMak
 The SMP library team distributes Docker containers in replacement of the SageMaker PyTorch framework containers. If you use the PyTorch ModelTrainer class in the SageMaker Python SDK and specify distribution configuration to use SMP v2, SageMaker automatically picks up the SMP Docker containers. To use this release of SMP v2, upgrade your SageMaker Python SDK to v2.207.0 or later.
 + SMP Docker container for PyTorch v2.1.2 with CUDA v12.1
 
-  ```
+  ```txt
   658645717510.dkr.ecr.{{us-west-2}}.amazonaws.com/smdistributed-modelparallel:2.1.2-gpu-py310-cu121
   ```
   + Available for P4d, P4de, and P5 instances
@@ -516,6 +516,6 @@ Released the SageMaker model parallelism (SMP) library v2.0.0 with the following
 The SMP library team distributes Docker containers in replacement of the SageMaker PyTorch framework containers. If you use the PyTorch ModelTrainer class in the SageMaker Python SDK and specify distribution configuration to use SMP v2, SageMaker AI automatically picks up the SMP Docker containers. To use this release of SMP v2, upgrade your SageMaker Python SDK to v2.207.0 or later.
 + SMP Docker container for PyTorch v2.0.1 with CUDA v12.1
 
-  ```
+  ```txt
   658645717510.dkr.ecr.{{us-west-2}}.amazonaws.com/smdistributed-modelparallel:2.0.1-gpu-py310-cu121
   ```

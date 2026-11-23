@@ -53,7 +53,7 @@ To filter actions recommendations by custom criteria, you can create a filter an
 
  If you recorded events for a user before they logged in (an anonymous user), you can get recommendations for this user by providing the `sessionId` from those events as if it is their `userId`. For more information about recording events for anonymous users, see [Recording events for anonymous users](recording-events.md#recording-anonymous-user-events).
 
-```
+```cmd
 aws personalize-runtime get-action-recommendations \
 --campaign-arn {{campaign arn}} \
 --user-id {{User ID}} \
@@ -71,7 +71,7 @@ To filter actions recommendations by custom criteria, you can create a filter an
 
  If you recorded events for a user before they logged in (an anonymous user), you can get recommendations for this user by providing the `sessionId` from those events as if it is their `userId`. For more information about recording events for anonymous users, see [Recording events for anonymous users](recording-events.md#recording-anonymous-user-events).
 
-```
+```py
 import boto3
 
 personalizeRt = boto3.client('personalize-runtime')

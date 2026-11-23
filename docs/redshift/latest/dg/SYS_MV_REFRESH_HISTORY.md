@@ -38,7 +38,7 @@ For Iceberg materialized views, the `mv_id` column is NULL. Use the `mv_name`, `
 
 The following query shows the refresh history for materialized views.
 
-```
+```sql
 SELECT user_id,
      session_id,
      transaction_id,

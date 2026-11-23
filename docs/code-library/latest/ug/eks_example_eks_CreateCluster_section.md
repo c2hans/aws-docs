@@ -116,7 +116,7 @@ For more information, see [Create an Amazon EKS cluster](https://docs.aws.amazon
 **Tools for PowerShell V4**
 **Example 1: This example creates a new cluster called 'prod'.**
 
-```
+```powershell
 New-EKSCluster -Name prod -ResourcesVpcConfig @{SubnetIds=@("subnet-0a1b2c3d","subnet-3a2b1c0d");SecurityGroupIds="sg-6979fe18"} -RoleArn "arn:aws:iam::012345678901:role/eks-service-role"
 ```
 **Output:**
@@ -139,7 +139,7 @@ Version              : 1.10
 **Tools for PowerShell V5**
 **Example 1: This example creates a new cluster called 'prod'.**
 
-```
+```powershell
 New-EKSCluster -Name prod -ResourcesVpcConfig @{SubnetIds=@("subnet-0a1b2c3d","subnet-3a2b1c0d");SecurityGroupIds="sg-6979fe18"} -RoleArn "arn:aws:iam::012345678901:role/eks-service-role"
 ```
 **Output:**
@@ -165,7 +165,7 @@ Version              : 1.10
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/eks#code-examples).
 
-```
+```rust
 async fn make_cluster(
     client: &aws_sdk_eks::Client,
     name: &str,

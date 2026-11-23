@@ -41,7 +41,7 @@ TIMESTAMPTZ
 
 The following example demonstrates using the TO\_TIMESTAMP function to convert a TIMESTAMP string to a TIMESTAMPTZ.
 
-```
+```sql
 select sysdate, to_timestamp(sysdate, 'YYYY-MM-DD HH24:MI:SS') as second;
 
 timestamp                  | second
@@ -51,7 +51,7 @@ timestamp                  | second
 
 It's possible to pass TO\_TIMESTAMP part of a date. The remaining date parts are set to default values. The time is included in the output:
 
-```
+```sql
 SELECT TO_TIMESTAMP('2017','YYYY');
 
 to_timestamp
@@ -61,7 +61,7 @@ to_timestamp
 
 The following SQL statement converts the string '2011-12-18 24:38:15' to a TIMESTAMPTZ. The result is a TIMESTAMPTZ that falls on the next day because the number of hours is more than 24 hours:
 
-```
+```sql
 SELECT TO_TIMESTAMP('2011-12-18 24:38:15', 'YYYY-MM-DD HH24:MI:SS');
 
 to_timestamp
@@ -71,7 +71,7 @@ to_timestamp
 
 The following SQL statement converts the string '2011-12-18 24:38:15' to a TIMESTAMPTZ. The result is an error because the time value in the timestamp is more than 24 hours:
 
-```
+```sql
 SELECT TO_TIMESTAMP('2011-12-18 24:38:15', 'YYYY-MM-DD HH24:MI:SS', TRUE);
 
 ERROR:  date/time field time value out of range: 24:38:15.0

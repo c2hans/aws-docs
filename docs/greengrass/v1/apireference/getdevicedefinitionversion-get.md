@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="getdevicedefinitionversion-get-cli"></a>
 
-```
+```bash
 aws greengrass get-device-definition-version \
   --device-definition-id <value> \
   --device-definition-version-id <value> \
@@ -26,7 +26,7 @@ aws greengrass get-device-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "DeviceDefinitionId": "string",
 "DeviceDefinitionVersionId": "string",
@@ -59,7 +59,7 @@ type: string
 
  [ GetDeviceDefinitionVersionResponse](definitions-getdevicedefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -123,7 +123,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

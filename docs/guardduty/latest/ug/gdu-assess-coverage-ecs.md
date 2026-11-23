@@ -103,7 +103,7 @@ In an EventBridge rule, you can use the pre-defined sample events and event patt
 
 Additionally, you can create a custom event pattern by using the following example notification schema. Make sure to replace the values for your account. To get notified when the coverage status of your Amazon ECS cluster changes from `Healthy` to `Unhealthy`, the `detail-type` should be {{GuardDuty Runtime Protection Unhealthy}}. To get notified when the coverage status changes from `Unhealthy` to `Healthy`, replace the value of `detail-type` with {{GuardDuty Runtime Protection Healthy}}.
 
-```
+```JSON
 {
   "version": "0",
   "id": "event ID",

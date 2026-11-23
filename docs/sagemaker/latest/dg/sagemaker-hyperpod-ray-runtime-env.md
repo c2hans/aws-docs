@@ -11,7 +11,7 @@ Ray `runtime_env` installs pip packages and ships a working directory to the clu
 
 Pass `runtime_env` to `ray.init()`. Ray installs the packages and uploads the working directory to the cluster before your code runs.
 
-```
+```python
 import ray
 
 ray.init(runtime_env={
@@ -25,7 +25,7 @@ ray.init(runtime_env={
 
 For a job you submit from the command line, pass the same environment with `--working-dir` and `--runtime-env-json`.
 
-```
+```bash
 ray job submit \
     --address sagemaker_ray://{{my-cluster}}/{{my-namespace}} \
     --working-dir {{./src}} \

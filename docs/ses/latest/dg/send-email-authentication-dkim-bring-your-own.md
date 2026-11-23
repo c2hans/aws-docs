@@ -112,7 +112,7 @@ To configure a new domain, use the `CreateEmailIdentity` operation in the Amazon
 
 1. In a text editor, paste the following code:
 
-   ```
+   ```json
    {
        "EmailIdentity":"{{example.com}}",
        "DkimSigningAttributes":{
@@ -174,7 +174,7 @@ To configure an existing domain, use the `PutEmailIdentityDkimSigningAttributes`
 
 1. In a text editor, paste the following code:
 
-   ```
+   ```json
    {
        "SigningAttributes":{
            "DomainSigningPrivateKey":"{{privateKey}}",

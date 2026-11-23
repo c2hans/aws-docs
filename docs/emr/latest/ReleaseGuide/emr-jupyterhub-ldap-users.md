@@ -55,7 +55,7 @@ c.LDAPAuthenticator.bind_dn_template = 'cn={username},ou={{people}},dc={{example
 
 Use a text editor to create a bash script with the following contents:
 
-```
+```bash
 #!/bin/bash
 
 # Uncomment the following lines to install LDAP client libraries only if

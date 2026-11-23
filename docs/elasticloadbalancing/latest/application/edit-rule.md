@@ -68,7 +68,7 @@ aws elbv2 modify-listener \
 **To modify the default action**
 Update the [AWS::ElasticLoadBalancingV2::Listener](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listener.html) resource.
 
-```
+```yaml
 Resources:
     myHTTPlistener:
       Type: 'AWS::ElasticLoadBalancingV2::Listener'
@@ -124,7 +124,7 @@ aws elbv2 set-rule-priorities \
 **To update rule priorities**
 Update the [AWS::ElasticLoadBalancingV2::ListenerRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listenerrule.html) resource.
 
-```
+```yaml
 Resources:
     myListenerRule:
      Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
@@ -252,7 +252,7 @@ aws elbv2 remove-tags \
 **To add tags to a rule**
 Update the [AWS::ElasticLoadBalancingV2::ListenerRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-listenerrule.html) resource.
 
-```
+```yaml
 Resources:
     myListenerRule:
      Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'

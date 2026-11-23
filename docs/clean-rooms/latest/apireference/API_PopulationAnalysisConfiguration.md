@@ -12,6 +12,11 @@ Contains the configuration that defines the analysis used to populate an interme
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** jobParameters **   <a name="API-Type-PopulationAnalysisConfiguration-jobParameters"></a>
+Specifies the PySpark job parameters for the population analysis. Use `jobParameters` instead of `sqlParameters` when you populate the intermediate table with results from a PySpark job.
+Type: [PopulationAnalysisJobParameters](API_PopulationAnalysisJobParameters.md) object
+Required: No
+
  ** sqlParameters **   <a name="API-Type-PopulationAnalysisConfiguration-sqlParameters"></a>
 The SQL parameters for the population analysis, including the query string or analysis template ARN.
 Type: [PopulationAnalysisSqlParameters](API_PopulationAnalysisSqlParameters.md) object

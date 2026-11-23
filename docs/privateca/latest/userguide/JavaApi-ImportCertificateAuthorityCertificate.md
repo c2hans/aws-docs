@@ -8,7 +8,7 @@ The following Java sample shows how to use the [ImportCertificateAuthorityCertif
 
 This operation imports your signed private CA certificate into AWS Private CA. Before you can call this operation, you must create the private certificate authority by calling the [CreateCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthority.html) operation. You must then generate a certificate signing request (CSR) by calling the [GetCertificateAuthorityCsr](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificateAuthorityCsr.html) operation. Take the CSR to your on-premises CA and use your root certificate or a subordinate certificate to sign it. Create a certificate chain and copy the signed certificate and the certificate chain to your working directory.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.auth.AWSCredentials;

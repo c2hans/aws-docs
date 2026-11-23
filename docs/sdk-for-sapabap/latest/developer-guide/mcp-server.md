@@ -32,7 +32,7 @@ To connect your IDE to the AWS SDK for SAP ABAP Knowledge MCP Server, add the fo
 
 The following example shows the configuration for Kiro. Add this to your workspace MCP config file `.kiro/settings/mcp.json` or your user-level config file `~/.kiro/settings/mcp.json`:
 
-```
+```json
 {
   "mcpServers": {
     "abap-sdk-knowledge": {

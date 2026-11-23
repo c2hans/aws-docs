@@ -43,7 +43,7 @@ Supports [substitution templates](iot-substitution-templates.md): No
 
 The following JSON example defines an S3 action in an AWS IoT rule.
 
-```
+```JSON
 {
     "topicRulePayload": {
         "sql": "SELECT * FROM 'some/topic'",

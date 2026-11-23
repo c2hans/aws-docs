@@ -14,7 +14,7 @@ The following code examples show how to use `DescribeRegions`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Describe all Amazon Elastic Compute Cloud (Amazon EC2) Regions.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -338,7 +338,7 @@ For more information, see [Regions and Zones](https://docs.aws.amazon.com/AWSEC2
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DescribeRegionsCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -387,7 +387,7 @@ export const main = async ({ regionNames, includeOptInRegions }) => {
 **Tools for PowerShell V4**
 **Example 1: This example describes the regions that are available to you.**
 
-```
+```powershell
 Get-EC2Region
 ```
 **Output:**
@@ -410,7 +410,7 @@ ec2.us-west-2.amazonaws.com         us-west-2
 **Tools for PowerShell V5**
 **Example 1: This example describes the regions that are available to you.**
 
-```
+```powershell
 Get-EC2Region
 ```
 **Output:**
@@ -436,7 +436,7 @@ ec2.us-west-2.amazonaws.com         us-west-2
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ec2#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ec2'
 
 # @param ec2_client [Aws::EC2::Client] An initialized EC2 client.
@@ -547,7 +547,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 
-```
+```rust
 async fn show_regions(client: &Client) -> Result<(), Error> {
     let rsp = client.describe_regions().send().await?;
 
@@ -567,7 +567,7 @@ async fn show_regions(client: &Client) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ec2->describeregions( ).                        " oo_result is returned for testing purposes. "
         DATA(lt_regions) = oo_result->get_regions( ).

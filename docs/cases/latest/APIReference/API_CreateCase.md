@@ -163,7 +163,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateCase.
 
-```
+```json
 {
   "templateId": "[template_id]",
   "fields": [
@@ -188,7 +188,7 @@ This example illustrates one usage of CreateCase.
 }
 ```
 
-```
+```json
 {
   "caseArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/case/[case_id]",
   "caseId": "[case_id]"

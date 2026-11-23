@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/create-iam-test-set.html
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/create-iam-test-set.html
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

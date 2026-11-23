@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 Retrieve an archive from a vault. This example uses the ArchiveTransferManager class. For API details see [ArchiveTransferManager](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Glacier/TArchiveTransferManager).
 
-```
+```csharp
     /// <summary>
     /// Download an archive from an Amazon S3 Glacier vault using the Archive
     /// Transfer Manager.
@@ -131,7 +131,7 @@ For more information, see [Retrieving Amazon Glacier Archives](https://docs.aws.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glacier#code-examples).
 Retrieve a vault inventory.
 
-```
+```java
 import software.amazon.awssdk.core.ResponseBytes;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.glacier.GlacierClient;
@@ -270,7 +270,7 @@ public class ArchiveDownload {
 **Tools for PowerShell V4**
 **Example 1: Starts a job to retrieve an archive from the specified vault owned by the user. The status of the job can be checked using the Get-GLCJob cmdlet. When the job completes successfully the Read-GCJobOutput cmdlet can be used to retrieve the contents of the archive to the local file system.**
 
-```
+```powershell
 Start-GLCJob -VaultName myvault -JobType "archive-retrieval" -JobDescription "archive retrieval" -ArchiveId "o9O9j...TX-TpIhQJw"
 ```
 **Output:**
@@ -285,7 +285,7 @@ op1x...JSbthM                  /012345678912/vaults/test/jobs/op1xe...I4HqCHkSJS
 **Tools for PowerShell V5**
 **Example 1: Starts a job to retrieve an archive from the specified vault owned by the user. The status of the job can be checked using the Get-GLCJob cmdlet. When the job completes successfully the Read-GCJobOutput cmdlet can be used to retrieve the contents of the archive to the local file system.**
 
-```
+```powershell
 Start-GLCJob -VaultName myvault -JobType "archive-retrieval" -JobDescription "archive retrieval" -ArchiveId "o9O9j...TX-TpIhQJw"
 ```
 **Output:**
@@ -304,7 +304,7 @@ op1x...JSbthM                  /012345678912/vaults/test/jobs/op1xe...I4HqCHkSJS
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 Retrieve a vault inventory.
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 
@@ -335,7 +335,7 @@ class GlacierWrapper:
 ```
 Retrieve an archive from a vault.
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 

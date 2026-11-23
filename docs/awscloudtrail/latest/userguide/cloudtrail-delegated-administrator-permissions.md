@@ -8,7 +8,7 @@ When assigning a CloudTrail delegated administrator, you must have the permissio
 
 You can add the following statement to the end of an IAM policy to grant these permissions:
 
-```
+```json
 {
     "Sid": "Permissions",
     "Effect": "Allow",

@@ -64,7 +64,7 @@ The following example activity worker code implements a consumer-producer patter
 
 The following code is the main entry point for this example Ruby activity worker.
 
-```
+```ruby
 require_relative '{{../lib/step_functions/activity}}'
     credentials = Aws::SharedCredentials.new
     region = '{{us-west-2}}'

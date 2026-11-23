@@ -28,12 +28,12 @@ Your replacement Snowball Edge is now on its way to you. Use the following proce
 
 1. Use the `describe-cluster` command to ensure the unhealthy node unreachable. This is indicated by the value of `UNREACHABLE` for the `State` name of the `NetworkReachability` object.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-cluster --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{ip-address-of-device-in-cluster}}
    ```
 **Example of `describe-cluster` output**
 
-   ```
+   ```JSON
    {
        "ClusterId": "CID12345678-1234-1234-1234-123456789012",
        "Devices": [
@@ -87,12 +87,12 @@ Your replacement Snowball Edge is now on its way to you. Use the following proce
 
 1. Use the `describe-service` command to ensure the status of the `s3-snow` service is `DEGRADED`.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-service --service-id s3-snow --device-ip-addresses {{snow-device-1-address snow-device-2-address}} --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{snow-device-ip-address}}
    ```
 **Example of output of `describe-service` command**
 
-   ```
+   ```JSON
    {
        "ServiceId": "s3-snow",
        "Autostart": true,
@@ -166,7 +166,7 @@ Your replacement Snowball Edge is now on its way to you. Use the following proce
 
 1. Use the `disassociate-device` command to disassociate and remove the unhealthy node from the cluster.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge disassociate-device --device-id {{device-id}} --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{ip-address-of-unhealthy-device}}
    ```
 **Example output of `disassociate-device` command**
@@ -177,7 +177,7 @@ Your replacement Snowball Edge is now on its way to you. Use the following proce
 
 1. Use the `describe-cluster` command again to ensure the unhealthy node is disassociated from the cluster.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-cluster --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https:{{ip-address-of-healthy-device}}
    ```
 **Example of `describe-cluster` command showing node is disassociated**
@@ -243,7 +243,7 @@ When the replacement device arrives, use the following procedure to add it to th
 
 1. Use the `unlock-cluster` command and include the IP address of the new node.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge unlock-cluster --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{ip-address-of-cluster-device}} --device-ip-addresses {{node-1-ip-address node-2-ip-address new-node-ip-address}}
    ```
 
@@ -251,7 +251,7 @@ When the replacement device arrives, use the following procedure to add it to th
 
 1. Use the `associate-device` command to associate the replacement node with the cluster.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge associate-device --device-ip-address {{new-node-ip-address}}
    ```
 **Example of `associate-device` command output**
@@ -262,12 +262,12 @@ When the replacement device arrives, use the following procedure to add it to th
 
 1. Use the `describe-cluster` command to ensure the new node is associated with the cluster.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-cluster --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{node-ip-address}}
    ```
 **Example of `describe-cluster` command output**
 
-   ```
+   ```JSON
    {
        "ClusterId": "CID12345678-1234-1234-1234-123456789012",
        "Devices": [
@@ -331,7 +331,7 @@ When the replacement device arrives, use the following procedure to add it to th
 
 1. Use the `stop-service` command to stop the s3-snow service.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge stop-service --service-id s3-snow --device-ip-addresses {{cluster-device-1-ip-address cluster-device-2-ip-address cluster-device-3-ip-address}} --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{snow-device-ip-address}}
    ```
 **Example of `stop-service` command output**
@@ -342,7 +342,7 @@ When the replacement device arrives, use the following procedure to add it to th
 
 1. Use the `start-service` command to start the s3-snow service after adding the new node to the cluster.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge start-service --service-id s3-snow --device-ip-addresses {{cluster-device-1-ip-address cluster-device-2-ip-address cluster-device-3-ip-address}} --virtual-network-interface-arns "{{device-1-vni-ip-address-a}}" "{{device-1-vni-ip-address-b}}" "{{device-2-vni-ip-address-a}}" "{{device-2-vni-ip-address-b}}" "{{device-3-vni-ip-address-a}}" "{{device-3-vni-ip-address-b}}" --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{snow-device-ip-address}}
    ```
 **Example of `start-service` command output**
@@ -353,12 +353,12 @@ When the replacement device arrives, use the following procedure to add it to th
 
 1. Use the `describe-service` command to ensure the s3-snow service started.
 
-   ```
+   ```bash,sh,zsh
    snowballEdge describe-service --service-id s3-snow --device-ip-addresses {{snow-device-1-address snow-device-2-address snow-device-3-address}} --manifest-file {{path/to/manifest/file.bin}} --unlock-code {{unlock-code}} --endpoint https://{{snow-device-ip-address}}
    ```
 **Example of `descibe-service` command output**
 
-   ```
+   ```JSON
    {
        "ServiceId": "s3-snow",
        "Autostart": true,

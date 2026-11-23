@@ -66,7 +66,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for Amazon Lightsail actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it denies everyone permission to delete block storage disks in Lightsail through the endpoint and grants everyone permission to perform all other Lightsail actions.
 
-```
+```json
 {
   "Statement": [
     {

@@ -106,7 +106,7 @@ Retrieves information about the communication requirements and options that are 
 #### PUT schema
 <a name="apps-application-id-settings-request-body-put-example"></a>
 
-```
+```json
 {
   "QuietTime": {
     "Start": "string",
@@ -133,7 +133,7 @@ Retrieves information about the communication requirements and options that are 
 #### ApplicationSettingsResource schema
 <a name="apps-application-id-settings-response-body-applicationsettingsresource-example"></a>
 
-```
+```json
 {
   "ApplicationId": "string",
   "LastModifiedDate": "string",
@@ -167,7 +167,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="apps-application-id-settings-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

@@ -10,7 +10,7 @@ When you use the AWS SDK for Kotlin, it needs certain AWS and third-party depend
 
 When you build your Kotlin application, you’ll likely use Gradle to manage dependencies. Adding a dependency on an SDK service client to your project automatically includes all necessary related dependencies. However, if your application has other dependencies, they might clash with those required by the SDK. For example, the SDK relies on OkHttp, a popular HTTP client that your application might also use. To help you spot these conflicts, Gradle offers a handy task the lists your project’s dependencies:
 
-```
+```bash
 ./gradlew dependencies
 ```
 
@@ -35,13 +35,13 @@ Remember that minor version updates in SDK/Smithy modules may include breaking c
 
  [OkHttp](https://square.github.io/okhttp/) is a popular HTTP engine that the SDK uses by default on JVM. Your application might include other dependencies or frameworks that bring in a different OkHttp version. This can cause a `NoClassDefFoundError` for classes in the `okhttp3` namespace, such as `okhttp/coroutines/ExecuteAsyncKt` or `okhttp3/ConnectionListener`. When this happens, you should generally choose the newer version to resolve conflicts. To help you trace the sources of these conflicts, Gradle offers a useful task. You can list all dependencies by running:
 
-```
+```bash
 ./gradlew dependencies
 ```
 
 For instance, if the SDK depends on OkHttp `5.0.0-alpha.14` and another dependency such as Spring Boot depends on OkHttp `4.12.0` then you should use the `5.0.0-alpha.14 version`. You can do this with a `constraints` block in Gradle:
 
-```
+```kotlin
 dependencies {
     constraints {
         implementation("com.squareup.okhttp3:okhttp:4.12.0")

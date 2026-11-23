@@ -8,7 +8,7 @@ To use rules in Amazon Managed Service for Prometheus, you create a rules file t
 
 The following is a basic example of a rules file:
 
-```
+```yaml
 groups:
   - name: cpu_metrics
      interval: 60s

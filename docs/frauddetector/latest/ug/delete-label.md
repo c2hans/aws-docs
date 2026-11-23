@@ -32,7 +32,7 @@ You can delete labels in Amazon Fraud Detector console, using the [delete-label]
 
 The following AWS SDK for Python (Boto3) example code deletes a label *legit* using the [DeleteLabel](https://docs.aws.amazon.com/frauddetector/latest/api/API_DeleteLabel.html) API.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

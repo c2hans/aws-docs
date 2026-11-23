@@ -18,7 +18,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;
@@ -31,7 +31,7 @@ First create an AWS.S3 client service that specifies the AWS region and version.
 
  **Sample Code**
 
-```
+```php
 $s3 = new S3Client([
     'version'     => 'latest',
     'region'      => 'us-west-2',
@@ -49,7 +49,7 @@ First create an AWS.S3 client service that specifies the AWS Region and version.
 
  **Sample Code**
 
-```
+```php
 $s3 = new S3Client([
     'version'     => 'latest',
     'region'      => 'us-west-2',
@@ -68,7 +68,7 @@ When using an S3 access point ARN in an S3 client operation, by default the clie
 
  **Sample Code**
 
-```
+```php
 $s3 = new S3Client([
     'version'        => 'latest',
     'region'         => 'us-west-2',
@@ -82,13 +82,13 @@ The client will also check an environment variable and a config file option, in 
 
 1. The environment variable `AWS_S3_USE_ARN_REGION`
 
-```
+```ini
 export AWS_S3_USE_ARN_REGION=true
 ```
 
 1. The config variable `s3_use_arn_region` in the AWS shared configuration file (by default in `~/.aws/config`).
 
-```
+```ini
 [default]
 s3_use_arn_region = true
 ```

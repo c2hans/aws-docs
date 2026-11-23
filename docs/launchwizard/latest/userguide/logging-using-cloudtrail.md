@@ -51,7 +51,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateDeployment` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -104,7 +104,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `DeleteDeployment` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -156,7 +156,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Delete
 
 The following example shows a CloudTrail log entry that demonstrates the `GetDeployment` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -205,7 +205,7 @@ The following example shows a CloudTrail log entry that demonstrates the `GetDep
 
 The following example shows a CloudTrail log entry that demonstrates the `GetWorkload` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -254,7 +254,7 @@ The following example shows a CloudTrail log entry that demonstrates the `GetWor
 
 The following example shows a CloudTrail log entry that demonstrates the `ListDeploymentEvents` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -303,7 +303,7 @@ The following example shows a CloudTrail log entry that demonstrates the `ListDe
 
 The following example shows a CloudTrail log entry that demonstrates the `ListDeployments` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -352,7 +352,7 @@ The following example shows a CloudTrail log entry that demonstrates the `ListDe
 
 The following example shows a CloudTrail log entry that demonstrates the `ListWorkloadDeploymentPattern` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -402,7 +402,7 @@ The following example shows a CloudTrail log entry that demonstrates the `ListWo
 
 The following example shows a CloudTrail log entry that demonstrates the `ListWorkloads` operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "clientId": "{{service account OAuth client ID}}",
   "clientSecret": "{{service account OAuth client secret}}",
@@ -31,7 +31,7 @@ The 24-character hexadecimal Atlas Organization ID. You can find this in your At
 
 The following are the metadata fields for MongoDB Atlas Service Account:
 
-```
+```json
 {
   "adminSecretArn": "arn:aws:secretsmanager:us-east-1:111122223333:secret:{{MongoDBAtlasServiceAccount}}",
   "apiVersion": "{{2025-03-12}}"

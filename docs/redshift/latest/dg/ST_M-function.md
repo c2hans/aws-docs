@@ -39,7 +39,7 @@ If *point* is not a `POINT`, then an error is returned.
 
 The following SQL returns the `m` coordinate of a point in a 3DM geometry.
 
-```
+```sql
 SELECT ST_M(ST_GeomFromEWKT('POINT M (1 2 3)'));
 ```
 
@@ -51,7 +51,7 @@ st_m
 
 The following SQL returns the `m` coordinate of a point in a 4D geometry.
 
-```
+```sql
 SELECT ST_M(ST_GeomFromEWKT('POINT ZM (1 2 3 4)'));
 ```
 

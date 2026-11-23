@@ -20,7 +20,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 
  **Example: Attribute group metadata**
 
-```
+```json
 {
  "Team" : "WebTeam",
  "Department": "10006",

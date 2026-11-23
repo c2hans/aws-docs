@@ -29,7 +29,7 @@ The train channel only supports `S3DataDistributionType=ShardedByS3Key` and the 
 **Note**
 The `sagemaker.inputs.s3_input` method is replaced by the `Channel` and `S3DataSource` shapes in SageMaker Python SDK v3. Distribution type is configured on the `S3DataSource` within a `Channel`.
 
-```
+```py
   import sagemaker
   from sagemaker.train import ModelTrainer
   from sagemaker.core.shapes import Channel, DataSource, S3DataSource

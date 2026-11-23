@@ -60,7 +60,7 @@ For more information, see [Creating Amazon EFS file systems](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: Creates a new, empty file system. The token used to ensure idempotent creation will be generated automatically and can be accessed from the `CreationToken` member of the returned object.**
 
-```
+```powershell
 New-EFSFileSystem
 ```
 **Output:**
@@ -77,7 +77,7 @@ SizeInBytes          : Amazon.ElasticFileSystem.Model.FileSystemSize
 ```
 **Example 2: Creates a new, empty file system using a custom token to ensure idempotent creation.**
 
-```
+```powershell
 New-EFSFileSystem -CreationToken "MyUniqueToken"
 ```
 +  For API details, see [CreateFileSystem](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -85,7 +85,7 @@ New-EFSFileSystem -CreationToken "MyUniqueToken"
 **Tools for PowerShell V5**
 **Example 1: Creates a new, empty file system. The token used to ensure idempotent creation will be generated automatically and can be accessed from the `CreationToken` member of the returned object.**
 
-```
+```powershell
 New-EFSFileSystem
 ```
 **Output:**
@@ -102,7 +102,7 @@ SizeInBytes          : Amazon.ElasticFileSystem.Model.FileSystemSize
 ```
 **Example 2: Creates a new, empty file system using a custom token to ensure idempotent creation.**
 
-```
+```powershell
 New-EFSFileSystem -CreationToken "MyUniqueToken"
 ```
 +  For API details, see [CreateFileSystem](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -8,6 +8,7 @@ The following table describes the releases for AWS PrivateLink.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [CloudWatch metrics for resource and service-network endpoints](doc-history.md) | Resource VPC endpoints and service-network VPC endpoints now publish CloudWatch metrics to the `AWS/VpcLattice` namespace. | November 19, 2026 |
 | [Update resource gateway DNS resolution](doc-history.md) | You can now change the Resource Config DNS Resolution setting of a resource gateway after creation. | November 17, 2026 |
 | [Transit gateway network function attachment support](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html) | Endpoint services can grant and accept connections for transit gateway network function attachments of type Gateway Load Balancer. | November 17, 2026 |
 | [Endpoint updates](doc-history.md) | You can now add subnets to service-network VPC endpoints, and enable or disable private DNS on resource VPC endpoints and service-network VPC endpoints. VPC Lattice also reuses existing private hosted zones for group resource configurations with the same group domain. | November 17, 2026 |

@@ -33,7 +33,7 @@ This process describes how to test TLS encryption on Amazon MSK.
 
    A successful result looks like the following. Save this result because you need it for the next step.
 
-   ```
+   ```JSON
    {
        "BootstrapBrokerStringTls": "a-1.example.g7oein.c2.kafka.us-east-1.amazonaws.com:0123,a-3.example.g7oein.c2.kafka.us-east-1.amazonaws.com:0123,a-2.example.g7oein.c2.kafka.us-east-1.amazonaws.com:0123"
    }

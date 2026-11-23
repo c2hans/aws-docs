@@ -48,7 +48,7 @@ aws route53-recovery-readiness --region us-west-2 --profile {{profile-in-us-east
 				list-cross-account-authorizations
 ```
 
-```
+```json
 {
     "CrossAccountAuthorizations": [
         "arn:aws:iam::999999999999:root"

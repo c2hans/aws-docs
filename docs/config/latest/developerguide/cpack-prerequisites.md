@@ -59,7 +59,7 @@ For AWS Config to be able to store conformance pack artifacts, you will need to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ For AWS Config to be able to store conformance pack artifacts, you will need to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -178,7 +178,7 @@ For AWS Config to be able to store conformance pack artifacts, you will need to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -102,7 +102,7 @@ The operations that are described in this section use the MQTT protocol.
 **Note**
 The payload message that's sent to the device must use the protobuf format.
 
-   ```
+   ```JSON
    $aws/commands/things/{{<DeviceID>}}/executions/+/request/protobuf
    ```
 
@@ -114,7 +114,7 @@ The payload message that's sent to the device must use the protobuf format.
 **Note**
 It is optional for your vehicles to subscribe to the `/accepted` and `/rejected` response topics. Your vehicles will automatically receive these response messages even if they haven't explicitly subscribed to these topics.
 
-   ```
+   ```JSON
    $aws/commands/things/{{<DeviceID>}}/executions/{{<ExecutionId>}}/response/protobuf/accepted
    $aws/commands/things/{{<DeviceID>}}/executions/{{<ExecutionId>}}/response/protobuf/rejected
    ```
@@ -218,7 +218,7 @@ To receive notifications for all commands and command execution statuses, you ca
 
 The following code shows a sample payload for the commands events notifications that you'll receive.
 
-```
+```JSON
 {
     "executionId": "{{2bd65c51-4cfd-49e4-9310-d5cbfdbc8554}}",
     "status":"FAILED",

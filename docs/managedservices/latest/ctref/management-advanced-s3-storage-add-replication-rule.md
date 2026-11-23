@@ -151,7 +151,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-s3-storage-add-replication-rule-ex-min"></a>
 
-```
+```json
 {
     "DocumentName" : "AWSManagedServices-PutReplicationRule",
     "Region": "us-east-1",
@@ -168,7 +168,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-s3-storage-add-replication-rule-ex-max"></a>
 
-```
+```json
 {
     "DocumentName" : "AWSManagedServices-PutReplicationRule",
     "Region": "us-east-1",

@@ -44,7 +44,7 @@ aws memorydb describe-clusters ^
    --cluster-name {{mycluster}}
 ```
 
-```
+```json
 {
     "Clusters": [
         {

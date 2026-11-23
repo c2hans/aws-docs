@@ -89,7 +89,7 @@ You also specify the type of group entity that you want to derive from the ID to
 
 The following example shows how to reflect the attributes from the example identity token in your Verified Permissions schema. For more information about editing your schema, see [Editing policy store schemas](schema-edit.md). If your identity source configuration specifies the principal type `User`, then you can include something similar to the following example to make those attributes available to Cedar.
 
-```
+```JSON
 "User": {
    "shape": {
       "type": "Record",
@@ -162,7 +162,7 @@ An Amazon Cognito access token is mapped to a context object when passed to Veri
 
 The following example shows how to reflect the attributes from the example access token in your Verified Permissions schema. For more information about editing your schema, see [Editing policy store schemas](schema-edit.md).
 
-```
+```JSON
 {
    "MyApplication": {
       "actions": {
@@ -218,7 +218,7 @@ You can continue to use dot notation in manually-built schema and policies for A
 
 A schema for dot notation nests each instance of a `:` character as a child of the `cognito` or `custom` initial phrase, as shown in the following example:
 
-```
+```json
 "CognitoUser": {
    "shape": {
       "type": "Record",
@@ -279,7 +279,7 @@ Policies typically reference schema attributes in a format like `principal.usern
 
 A partial example schema for a principal attribute of this type looks like the following:
 
-```
+```json
 "User": {
    "shape": {
       "type": "Record",
@@ -303,7 +303,7 @@ A partial example schema for a principal attribute of this type looks like the f
 
 A partial example schema for a context attribute of this type looks like the following:
 
-```
+```json
 "GetOrder": {
    "memberOf": [],
    "appliesTo": {

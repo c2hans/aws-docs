@@ -19,7 +19,7 @@ If you want to opt out of the account-based routing, you have four options:
 
 The following snippet is an example of how to disable account-based routing by configuring a DynamoDB service client:
 
-```
+```kotlin
 DynamoDbClient.fromEnvironment {
     accountIdEndpointMode = AccountIdEndpointMode.DISABLED // The default value is PREFERRED.
 }

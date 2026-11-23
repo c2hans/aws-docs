@@ -43,7 +43,7 @@ For more information, see [View deployment configuration details with CodeDeploy
 **Tools for PowerShell V4**
 **Example 1: This example gets summary information about the specified deployment configuration.**
 
-```
+```powershell
 Get-CDDeploymentConfig -DeploymentConfigName ThreeQuartersHealthy
 ```
 **Output:**
@@ -55,7 +55,7 @@ CreateTime              DeploymentConfigId                      DeploymentConfig
 ```
 **Example 2: This example gets information about the definition of the specified deployment configuration.**
 
-```
+```powershell
 Write-Output ((Get-CDDeploymentConfig -DeploymentConfigName ThreeQuartersHealthy).MinimumHealthyHosts)
 ```
 **Output:**
@@ -70,7 +70,7 @@ FLEET_PERCENT    75
 **Tools for PowerShell V5**
 **Example 1: This example gets summary information about the specified deployment configuration.**
 
-```
+```powershell
 Get-CDDeploymentConfig -DeploymentConfigName ThreeQuartersHealthy
 ```
 **Output:**
@@ -82,7 +82,7 @@ CreateTime              DeploymentConfigId                      DeploymentConfig
 ```
 **Example 2: This example gets information about the definition of the specified deployment configuration.**
 
-```
+```powershell
 Write-Output ((Get-CDDeploymentConfig -DeploymentConfigName ThreeQuartersHealthy).MinimumHealthyHosts)
 ```
 **Output:**

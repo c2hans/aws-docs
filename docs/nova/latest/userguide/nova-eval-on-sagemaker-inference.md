@@ -38,7 +38,7 @@ Before you begin, ensure you have:
 
 Your IAM user or role needs the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -68,7 +68,7 @@ Once your endpoint is in `InService` status, note the endpoint name for use in t
 
 Create a Python virtual environment and install the required packages.
 
-```
+```sh
 # Create virtual environment
 python3.12 -m venv venv
 source venv/bin/activate
@@ -90,7 +90,7 @@ Choose one of the following authentication methods:
 
 **Option 1: AWS CLI (Recommended)**
 
-```
+```sh
 aws configure
 ```
 
@@ -98,7 +98,7 @@ Enter your AWS Access Key ID, Secret Access Key, and default region when prompte
 
 **Option 2: Environment variables**
 
-```
+```sh
 export AWS_ACCESS_KEY_ID=your_access_key
 export AWS_SECRET_ACCESS_KEY=your_secret_key
 export AWS_DEFAULT_REGION=us-west-2
@@ -110,7 +110,7 @@ If running on Amazon EC2 or SageMaker notebooks, the instance's IAM role is used
 
 **Verify credentials**
 
-```
+```python
 import boto3
 
 sts = boto3.client('sts')
@@ -124,7 +124,7 @@ print(f"User/Role: {identity['Arn']}")
 
 Clone the Inspect Evals repository to access standard benchmarks:
 
-```
+```sh
 git clone https://github.com/UKGovernmentBEIS/inspect_evals.git
 ```
 
@@ -139,7 +139,7 @@ This repository includes benchmarks such as:
 
 Run an evaluation using your SageMaker endpoint:
 
-```
+```sh
 cd inspect_evals/src/inspect_evals/
 
 inspect eval mmlu_pro/mmlu_pro.py \
@@ -164,7 +164,7 @@ inspect eval mmlu_pro/mmlu_pro.py \
 
 For a multi-instance endpoint:
 
-```
+```sh
 # 10-instance endpoint example
 --max-connections 250   # ~25 connections per instance
 --max-retries 100       # Handle transient errors
@@ -177,7 +177,7 @@ Setting `--max-connections` too high may overwhelm the endpoint and cause thrott
 
 Launch the Inspect AI viewer to analyze evaluation results:
 
-```
+```sh
 inspect view
 ```
 
@@ -193,7 +193,7 @@ The viewer displays:
 
 To update an existing endpoint with a new model or configuration:
 
-```
+```python
 import boto3
 
 sagemaker = boto3.client('sagemaker', region_name=REGION)
@@ -208,7 +208,7 @@ sagemaker.update_endpoint(
 
 **Delete an endpoint**
 
-```
+```python
 sagemaker.delete_endpoint(EndpointName=ENDPOINT_NAME)
 ```
 
@@ -229,7 +229,7 @@ You can add new benchmarks to Inspect AI using the following workflow:
 
 Example task structure:
 
-```
+```python
 from inspect_ai import Task, task
 from inspect_ai.dataset import hf_dataset
 from inspect_ai.scorer import choice

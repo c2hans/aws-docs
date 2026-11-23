@@ -51,7 +51,7 @@ All updated guidance and best practices now live in the [Well-Architected Framew
 
  If you don't have an existing document repository, we suggest creating a version control repository for your playbook library. You can build your playbooks using Markdown, which is compatible with most playbook automation systems. If you are starting from scratch, use the following example playbook template.
 
-```
+```markdown
 # Playbook Title
 ## Playbook Info
 | Playbook ID | Description | Tools Used | Special Permissions | Playbook Author | Last Updated | Escalation POC | Stakeholders | Communication Plan |

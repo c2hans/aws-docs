@@ -125,7 +125,7 @@ List at most two Checks.
 #### Sample Request
 <a name="API_ListChecks_Example_1_Request"></a>
 
-```
+```json
 {
                     "maxResults": 2
                     }
@@ -134,7 +134,7 @@ List at most two Checks.
 #### Sample Response
 <a name="API_ListChecks_Example_1_Response"></a>
 
-```
+```json
 {
                     "checkSummaries": [
                     {

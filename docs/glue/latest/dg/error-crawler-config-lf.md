@@ -21,7 +21,7 @@ Please add the `lakeformation:GetDataAccess` permission to the crawler role usin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

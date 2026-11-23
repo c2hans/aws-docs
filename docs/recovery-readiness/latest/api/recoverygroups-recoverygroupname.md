@@ -110,7 +110,7 @@ Enable CORS by returning correct headers
 #### PUT schema
 <a name="recoverygroups-recoverygroupname-request-body-put-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"
@@ -124,7 +124,7 @@ Enable CORS by returning correct headers
 #### RecoveryGroupOutput schema
 <a name="recoverygroups-recoverygroupname-response-body-recoverygroupoutput-example"></a>
 
-```
+```json
 {
   "cells": [
     "string"

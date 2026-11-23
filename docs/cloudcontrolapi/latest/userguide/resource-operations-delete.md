@@ -13,7 +13,7 @@ To update an existing resource, you must specify the resource's identifier. For 
 
 The follow example deletes an [`AWS::Logs::LogGroup`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html) resource with the name of `CloudControlApiLogGroup`.
 
-```
+```bash
 $ aws cloudcontrol delete-resource \
     --type-name AWS::Logs::LogGroup --identifier CloudControlApiLogGroup
 ```

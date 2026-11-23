@@ -94,7 +94,7 @@ The policy's JSON code is shown following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

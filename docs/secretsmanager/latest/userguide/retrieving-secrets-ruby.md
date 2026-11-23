@@ -10,7 +10,7 @@ The following code example shows how to get a Secrets Manager secret value.
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 
-```
+```ruby
   # Use this code snippet in your app.
   # If you need more information about configurations or implementing the sample code, visit the AWS docs:
   # https://aws.amazon.com/developer/language/ruby/

@@ -330,4 +330,38 @@ To transfer ownership:
 ALTER FOREIGN TABLE ft_orders OWNER TO new_owner_role;
 ```
 
+### Restricting access to columns and rows
+<a name="aurora-analytics-foreign-tables-permissions-restrict"></a>
+
+Because AWS Lake Formation data filters aren't supported (see [Lake Formation access control](aurora-analytics-limitations.md#aurora-analytics-limitations-access-control)), use PostgreSQL privileges to limit which columns and rows a database role can query.
+
+To limit columns, grant `SELECT` on specific columns of the foreign table:
+
+```SQL
+GRANT SELECT ({{customer_id}}, {{name}}, {{created_at}}) ON {{ft_customers}} TO {{analyst_role}};
+```
+
+Replace {{ft\_customers}} with the name of your foreign table, the column names with the columns that the role can query, and {{analyst\_role}} with the name of the database role.
+
+With column-level privileges, queries must name the granted columns. `SELECT *` returns a `permission denied` error.
+
+To limit columns and rows, create a view with the permitted columns and a `WHERE` clause, and grant `SELECT` on the view instead of the foreign table:
+
+```SQL
+CREATE VIEW {{customers_us}} AS
+    SELECT {{customer_id}}, {{name}}, {{created_at}}
+    FROM {{ft_customers}}
+    WHERE {{region = 'US'}};
+
+REVOKE ALL ON {{ft_customers}} FROM PUBLIC;
+GRANT SELECT ON {{customers_us}} TO {{analyst_role}};
+```
+
+Replace {{customers\_us}} with a name for the view, the column names and {{region = 'US'}} with the columns and rows that the role can query, {{ft\_customers}} with the name of your foreign table, and {{analyst\_role}} with the name of the database role.
+
+PostgreSQL row-level security policies (`ALTER TABLE ... ENABLE ROW LEVEL SECURITY`) can't be used on foreign tables, and the `security_barrier` view option has no effect on them. For more information, see [Query execution](aurora-analytics-limitations.md#aurora-analytics-limitations-query-execution).
+
+**Important**
+With this approach, the AWS Identity and Access Management (IAM) role that Aurora PostgreSQL uses to read your data can still read the full table in Amazon S3. PostgreSQL privileges are the only access boundary. A database role with `USAGE` on `aurora_analytics_server` can create its own foreign table on the same location and read all columns and rows. Make sure that database roles that must not see restricted data don't own the foreign table, don't have `USAGE` on `aurora_analytics_server`, and aren't members of `rds_superuser`.
+
 For more information about PostgreSQL privilege management, see [GRANT](https://www.postgresql.org/docs/current/sql-grant.html) in the PostgreSQL documentation.

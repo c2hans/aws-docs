@@ -9,7 +9,7 @@ While the default credentials provider chain is convenient for many scenarios, e
 Reasons that you might want to specify a credentials provider might include:
 + The default provider chain checks multiple sources sequentially, which can add latency:
 
-  ```
+  ```java
   // The default provider chain checks might check multiple sources until it finds
   // sufficient configuration.
   S3Client s3Client = S3Client.builder().build();
@@ -21,7 +21,7 @@ Reasons that you might want to specify a credentials provider might include:
   ```
 + You need to use non-standard locations for accessing credentials configuration:
 
-  ```
+  ```java
   // Use configuration from a custom file location.
   S3Client s3Client = S3Client.builder()
       .credentialsProvider(ProfileCredentialsProvider.builder()
@@ -35,7 +35,7 @@ Reasons that you might want to specify a credentials provider might include:
   ```
 + Use different credentials for different service clients. For example, if your application needs to access multiple AWS accounts or use different permissions for different services:
 
-  ```
+  ```java
   // S3 client using one set of credentials.
   S3Client s3Client = S3Client.builder()
       .credentialsProvider(ProfileCredentialsProvider.create("s3-readonly"))
@@ -48,7 +48,7 @@ Reasons that you might want to specify a credentials provider might include:
   ```
 + Control credential refresh behavior:
 
-  ```
+  ```java
   // Create a provider with custom refresh behavior.
   StsAssumeRoleCredentialsProvider customRefreshProvider =
       StsAssumeRoleCredentialsProvider.builder()

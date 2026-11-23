@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_login-
 
 Confirm that the `sackd` service is running. Sample output follows. If there are errors, they will commonly show up here.
 
-```
+```sh
 [root@ip-10-3-27-112 ~]# systemctl status sackd
 [x] sackd.service - Slurm auth and cred kiosk daemon
    Loaded: loaded (/etc/systemd/system/sackd.service; enabled; vendor preset: disabled)
@@ -22,7 +22,7 @@ Dec 17 16:34:55 ip-10-3-27-112.ec2.internal sackd[9985]: sackd: running
 
 Confirm connections to the cluster are working using Slurm client commands such as `sinfo` and `squeue`. Here is example output from `sinfo`.
 
-```
+```sh
 [root@ip-10-3-27-112 ~]# /opt/aws/pcs/scheduler/slurm-25.05/bin/sinfo
 PARTITION AVAIL TIMELIMIT NODES STATE NODELIST
 all up infinite 4 idle~ compute-[1-4]
@@ -30,6 +30,6 @@ all up infinite 4 idle~ compute-[1-4]
 
 You should also be able to submit jobs. For example, a command similar to this example would launch an interactive job on 1 node in the cluster.
 
-```
+```sh
 /opt/aws/pcs/scheduler/slurm-25.05/bin/srun --nodes=1 -p all --pty bash -i
 ```

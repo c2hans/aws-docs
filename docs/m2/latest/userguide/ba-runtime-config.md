@@ -59,7 +59,7 @@ The database configuration might be supplied with JNDI in the context.xml file i
 
 The following example shows sample configurations for JICS and Blusam databases.
 
-```
+```xml
 <Resource auth="Container" driverClassName="org.postgresql.Driver" initialSize="0" maxIdle="5"
    maxOpenPreparedStatements="-1" maxTotal="10" maxWaitMillis="-1" name="{{jdbc/jics}}"
    poolPreparedStatements="true" testOnBorrow="false" type="javax.sql.DataSource"

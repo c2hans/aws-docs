@@ -41,7 +41,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-functions-functiondefinitionid-versions-functiondefinitionversionid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-function-definition-version \
   --function-definition-id <value> \
   --function-definition-version-id <value> \
@@ -52,7 +52,7 @@ aws greengrass get-function-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "FunctionDefinitionId": "string",
 "FunctionDefinitionVersionId": "string",
@@ -67,7 +67,7 @@ cli-input-json format:
 Success.
  [ GetFunctionDefinitionVersionResponse](definitions-getfunctiondefinitionversionresponse.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -234,7 +234,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

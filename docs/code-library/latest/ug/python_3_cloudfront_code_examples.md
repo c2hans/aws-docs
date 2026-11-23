@@ -26,7 +26,7 @@ The following code example shows how to use `GetDistributionConfig`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudfront#code-examples).
 
-```
+```python
 class CloudFrontWrapper:
     """Encapsulates Amazon CloudFront operations."""
 
@@ -70,7 +70,7 @@ The following code example shows how to use `ListDistributions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudfront#code-examples).
 
-```
+```python
 class CloudFrontWrapper:
     """Encapsulates Amazon CloudFront operations."""
 
@@ -109,7 +109,7 @@ The following code example shows how to use `UpdateDistribution`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudfront#code-examples).
 
-```
+```python
 class CloudFrontWrapper:
     """Encapsulates Amazon CloudFront operations."""
 

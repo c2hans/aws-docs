@@ -77,7 +77,7 @@ You must disconnect from the instance and then reconnect before running the foll
 
 1. Create a new file named `Dockerfile` and then add the following.
 
-   ```
+   ```yaml
    # start the Docker image from the Alpine Linux distribution
    FROM alpine:latest
    # copy the vsock-sample binary to the Docker file

@@ -29,12 +29,12 @@ For more information, see [Share a Systems Manager Document](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example adds "share" permissions to all accounts for a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Edit-SSMDocumentPermission -Name "RunShellScript" -PermissionType "Share" -AccountIdsToAdd all
 ```
 **Example 2: This example adds "share" permissions to a specific account for a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Edit-SSMDocumentPermission -Name "RunShellScriptNew" -PermissionType "Share" -AccountIdsToAdd "123456789012"
 ```
 +  For API details, see [ModifyDocumentPermission](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -42,12 +42,12 @@ Edit-SSMDocumentPermission -Name "RunShellScriptNew" -PermissionType "Share" -Ac
 **Tools for PowerShell V5**
 **Example 1: This example adds "share" permissions to all accounts for a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Edit-SSMDocumentPermission -Name "RunShellScript" -PermissionType "Share" -AccountIdsToAdd all
 ```
 **Example 2: This example adds "share" permissions to a specific account for a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Edit-SSMDocumentPermission -Name "RunShellScriptNew" -PermissionType "Share" -AccountIdsToAdd "123456789012"
 ```
 +  For API details, see [ModifyDocumentPermission](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

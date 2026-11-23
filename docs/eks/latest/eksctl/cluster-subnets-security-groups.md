@@ -13,13 +13,13 @@ When a cluster is created with eksctl, a set of public and private subnets are c
 
 To update the subnets used by the EKS control plane, run:
 
-```
+```console
 eksctl utils update-cluster-vpc-config --cluster=<cluster> --control-plane-subnet-ids=subnet-1234,subnet-5678
 ```
 
 To update the setting using a config file:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
@@ -30,7 +30,7 @@ vpc:
   controlPlaneSubnetIDs: [subnet-1234, subnet-5678]
 ```
 
-```
+```console
 eksctl utils update-cluster-vpc-config -f config.yaml
 ```
 
@@ -41,13 +41,13 @@ Without the `--approve` flag, eksctl only logs the proposed changes. Once you ar
 
 To manage traffic between the control plane and worker nodes, EKS supports passing additional security groups that are applied to the cross-account network interfaces provisioned by EKS. To update the security groups for the EKS control plane, run:
 
-```
+```console
 eksctl utils update-cluster-vpc-config --cluster=<cluster> --control-plane-security-group-ids=sg-1234,sg-5678
 ```
 
 To update the setting using a config file:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
@@ -58,19 +58,19 @@ vpc:
   controlPlaneSecurityGroupIDs: [sg-1234, sg-5678]
 ```
 
-```
+```console
 eksctl utils update-cluster-vpc-config -f config.yaml
 ```
 
 To update both control plane subnets and security groups for a cluster, run:
 
-```
+```console
 eksctl utils update-cluster-vpc-config --cluster=<cluster> --control-plane-subnet-ids=<> --control-plane-security-group-ids=<>
 ```
 
 To update both fields using a config file:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
@@ -82,7 +82,7 @@ vpc:
   controlPlaneSecurityGroupIDs: [sg-1234, sg-5678]
 ```
 
-```
+```console
 eksctl utils update-cluster-vpc-config -f config.yaml
 ```
 

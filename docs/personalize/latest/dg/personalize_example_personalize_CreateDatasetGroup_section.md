@@ -12,7 +12,7 @@ The following code examples show how to use `CreateDatasetGroup`.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
 
-```
+```java
     public static String createDatasetGroup(PersonalizeClient personalizeClient, String datasetGroupName) {
 
         try {
@@ -28,7 +28,7 @@ The following code examples show how to use `CreateDatasetGroup`.
 ```
 Create a domain dataset group.
 
-```
+```java
     public static String createDomainDatasetGroup(PersonalizeClient personalizeClient,
             String datasetGroupName,
             String domain) {
@@ -53,7 +53,7 @@ Create a domain dataset group.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 
 import { CreateDatasetGroupCommand } from "@aws-sdk/client-personalize";
@@ -82,7 +82,7 @@ run(createDatasetGroupParam);
 ```
 Create a domain dataset group.
 
-```
+```javascript
 // Get service clients module and commands using ES6 syntax.
 import { CreateDatasetGroupCommand } from "@aws-sdk/client-personalize";
 import { personalizeClient } from "./libs/personalizeClients.js";

@@ -105,7 +105,7 @@ For more information, see [Create an internal Classic Load Balancer](https://doc
 **Tools for PowerShell V4**
 **Example 1: This example creates a load balancer with an HTTP listener in a VPC.**
 
-```
+```powershell
 $httpListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpListener.Protocol = "http"
 $httpListener.LoadBalancerPort = 80
@@ -117,7 +117,7 @@ my-vpc-load-balancer-1234567890.us-west-2.elb.amazonaws.com
 ```
 **Example 2: This example creates a load balancer with an HTTP listener in EC2-Classic.**
 
-```
+```powershell
 New-ELBLoadBalancer -LoadBalancerName my-classic-load-balancer -AvailabilityZone us-west-2a` -Listener $httpListener
 ```
 **Output:**
@@ -127,7 +127,7 @@ my-classic-load-balancer-123456789.us-west-2.elb.amazonaws.com
 ```
 **Example 3: This example creates a load balancer with an HTTPS listener.**
 
-```
+```powershell
 $httpsListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpsListener.Protocol = "https"
 $httpsListener.LoadBalancerPort = 443
@@ -143,7 +143,7 @@ my-load-balancer-123456789.us-west-2.elb.amazonaws.com
 **Tools for PowerShell V5**
 **Example 1: This example creates a load balancer with an HTTP listener in a VPC.**
 
-```
+```powershell
 $httpListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpListener.Protocol = "http"
 $httpListener.LoadBalancerPort = 80
@@ -155,7 +155,7 @@ my-vpc-load-balancer-1234567890.us-west-2.elb.amazonaws.com
 ```
 **Example 2: This example creates a load balancer with an HTTP listener in EC2-Classic.**
 
-```
+```powershell
 New-ELBLoadBalancer -LoadBalancerName my-classic-load-balancer -AvailabilityZone us-west-2a` -Listener $httpListener
 ```
 **Output:**
@@ -165,7 +165,7 @@ my-classic-load-balancer-123456789.us-west-2.elb.amazonaws.com
 ```
 **Example 3: This example creates a load balancer with an HTTPS listener.**
 
-```
+```powershell
 $httpsListener = New-Object Amazon.ElasticLoadBalancing.Model.Listener
 $httpsListener.Protocol = "https"
 $httpsListener.LoadBalancerPort = 443

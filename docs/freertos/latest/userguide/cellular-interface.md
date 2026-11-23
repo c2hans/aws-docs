@@ -59,13 +59,13 @@ The source code can be downloaded as part of the FreeRTOS libraries or by itself
 
 To clone the library from Github using HTTPS:
 
-```
+```bash
 git clone https://github.com/FreeRTOS/FreeRTOS-Cellular-Interface.git
 ```
 
 Using SSH:
 
-```
+```bash
 git clone git@github.com:FreeRTOS/FreeRTOS-Cellular-Interface.git
 ```
 

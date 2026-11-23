@@ -53,7 +53,7 @@ To use the AWS Management Console to transcribe a clinician-patient dialogue, cr
 
   The following is an example request that uses the AWS SDK for Python (Boto3) to transcribe a medical conversation of a clinician in the `PRIMARYCARE` specialty and a patient.
 
-  ```
+  ```python
   from __future__ import print_function
   import time
   import boto3
@@ -83,7 +83,7 @@ To use the AWS Management Console to transcribe a clinician-patient dialogue, cr
 
 The following example code shows the transcription results of a clinician-patient conversation.
 
-```
+```json
 {
     "jobName": "conversation-medical-transcription-job",
     "accountId": "111122223333",
@@ -180,7 +180,7 @@ The following example code shows the transcription results of a clinician-patien
 
   The following code shows the contents of `example-start-command.json`.
 
-  ```
+  ```json
   {
         "MedicalTranscriptionJobName": "{{my-first-med-transcription-job}}",
         "Media": {

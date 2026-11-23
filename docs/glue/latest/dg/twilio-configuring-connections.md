@@ -28,7 +28,7 @@ You must create a secret for your connections in AWS Glue.
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

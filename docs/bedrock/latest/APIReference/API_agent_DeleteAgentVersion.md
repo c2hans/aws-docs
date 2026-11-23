@@ -111,7 +111,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of DeleteAgentVersion.
 
-```
+```json
 DELETE /agents/ABCDEFGHIJ/agentversions/1/?skipResourceInUseCheck=true HTTP/1.1
 ```
 

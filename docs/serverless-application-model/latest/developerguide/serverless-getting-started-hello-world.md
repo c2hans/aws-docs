@@ -591,7 +591,7 @@ Next, you will modify your Lambda function code. The AWS SAM CLI will automatic
 
 1. Change the `message` and save your file. The following is an example:
 
-   ```
+   ```python
    import json
    {{...}}
    def lambda_handler(event, context):

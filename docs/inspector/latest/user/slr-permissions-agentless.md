@@ -23,7 +23,7 @@ The role is configured with the following permissions policy.
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

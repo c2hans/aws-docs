@@ -18,6 +18,9 @@ This service is available in the following AWS GovCloud (US) Regions:
 
 The following differences apply to Amazon Route 53:
 
+ **Hosted Zone Tiers and Features**
++ Hosted zone tiers, Change History, Change Guardrails, and public DNS fallback are not available.
+
  **Public Hosted Zones**
 + DNS queries will be answered from within FedRAMP boundary.
 + When creating alias records, you can now choose alias targets in the AWS GovCloud (US) Regions, but you cannot choose alias targets in global AWS Regions. Currently, we support alias targets for API Gateway, Elastic Beanstalk, Application Load Balancer, Classic Load Balancer, Network Load Balancer, Amazon S3 website endpoint, and VPC endpoint. The other alias targets are not available.

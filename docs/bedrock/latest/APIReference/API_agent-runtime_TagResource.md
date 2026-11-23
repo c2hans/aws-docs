@@ -97,7 +97,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of TagResource.
 
-```
+```json
 POST /tags/arn:aws:bedrock:us-west-2:123456789012:session/12345abc-1234-abcd-1234-abcdef123456 HTTP/1.1
 Content-type: application/json
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 This example illustrates one usage of TagResource.
 
-```
+```json
 HTTP/1.1 200
 ```
 

@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 If you send a text message that contains links, and the security group settings have the "Send Link Preview" option enabled, the text message contains a list of the URLs for those links.
 
-```
+```json
 {
   "links": [
     {

@@ -40,6 +40,8 @@ The following operations fail while function creation is pending:
 + [UpdateFunctionConfiguration](https://docs.aws.amazon.com/lambda/latest/api/API_UpdateFunctionConfiguration.html)
 + [PublishVersion](https://docs.aws.amazon.com/lambda/latest/api/API_PublishVersion.html)
 
+Instead of polling [GetFunction](https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html), you can receive an Amazon EventBridge event each time an Event Function version's `State` or `LastUpdateStatus` changes as a result of a customer action. That covers activation, updates, deactivation and deletion. Lambda sends these events to your AWS account's default event bus at no additional cost, so your pipelines and tools can react when a function version becomes `Active`, an update finishes, or an update fails. For the event types, an example event and delivery behavior, see [Lambda Function state events in Amazon EventBridge](monitoring-eventbridge-function-state.md).
+
 ## Event Function states during updates
 <a name="functions-states-updating"></a>
 

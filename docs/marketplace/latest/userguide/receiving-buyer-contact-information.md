@@ -42,14 +42,14 @@ To retrieve buyer contact information, call [GetAgreementContacts](https://docs.
 
 The following example uses the AWS CLI to retrieve buyer contact information.
 
-```
+```bash
 aws marketplace-agreement get-agreement-contacts \
     --agreement-id agmt-1111111111111111111111111
 ```
 
 The following is an example JSON response.
 
-```
+```json
 {
     "acceptorContact": {
         "firstName": "Richard",

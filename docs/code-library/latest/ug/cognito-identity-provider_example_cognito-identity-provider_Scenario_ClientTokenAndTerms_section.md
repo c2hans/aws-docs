@@ -20,7 +20,7 @@ The following code example shows how to use Amazon Cognito machine-to-machine (M
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cognito/scenarios/client_token#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class ClientTokenAndTermsScenario:
     """
     Runs an interactive scenario that demonstrates the Amazon Cognito
@@ -349,7 +349,7 @@ class ClientTokenAndTermsScenario:
 ```
 Create a class that wraps Amazon Cognito Identity Provider operations.
 
-```
+```python
 class CognitoIdentityProviderWrapper:
     """Encapsulates Amazon Cognito Identity Provider actions."""
 

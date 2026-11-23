@@ -73,7 +73,7 @@ The WP Offload Media plugin requires access to your AWS account to create the Am
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

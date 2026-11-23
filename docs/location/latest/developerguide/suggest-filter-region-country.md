@@ -21,7 +21,7 @@ Adding a filter by country ensures you only receive the most relevant results. U
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "hote",
   "BiasPosition": [
@@ -41,7 +41,7 @@ Adding a filter by country ensures you only receive the most relevant results. U
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -162,7 +162,7 @@ Adding a filter by country ensures you only receive the most relevant results. U
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/suggest?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -185,7 +185,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places suggest --key ${YourKey} \
 --query-text "hote" \
 --bias-position 2.2982750966095398 48.856078089325294 \
@@ -203,7 +203,7 @@ Adding a filter-by-region option for a search limits results to only those which
 ------
 #### [ Sample request ]
 
-```
+```json
 {
   "QueryText": "Mariot",
   "Filter": {
@@ -224,7 +224,7 @@ Adding a filter-by-region option for a search limits results to only those which
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -336,7 +336,7 @@ Adding a filter-by-region option for a search limits results to only those which
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/suggest?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -360,7 +360,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places suggest --key ${YourKey} \
 --query-text "hote" \
 --filter '{"IncludeCountries": ["FRA"], "BoundingBox": [ -71.15693983012913,42.261623506672635, -70.97249727163558,42.37584075627763]}' \

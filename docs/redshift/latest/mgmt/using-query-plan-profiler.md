@@ -15,7 +15,7 @@ Query profiler is a query monitoring and troubleshooting feature that's viewable
   + **Temp table query**: The text of this child query starts with the `CREATE TEMP TABLE` command. This child query creates temporary tables for other child queries to process.
   + **Statistics query**: Query profiler adds the following comment to the start of this child query to help identify it:
 
-    ```
+    ```sql
     -- collect statistics of child query {{queryID}}
     ```
 
@@ -46,7 +46,7 @@ Use the following policy to add minimum permissions to your IAM user account or 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

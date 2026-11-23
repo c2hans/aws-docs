@@ -30,7 +30,7 @@ The following code example shows how to get started using Neptune.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 
@@ -99,7 +99,7 @@ The following code example shows how to:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 import boto3
 import time
 from botocore.exceptions import ClientError
@@ -796,7 +796,7 @@ The following code example shows how to use `CreateDBCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def create_db_cluster(neptune_client, db_name: str) -> str:
     """
     Creates a Neptune DB cluster and returns its identifier.
@@ -851,7 +851,7 @@ The following code example shows how to use `CreateDBInstance`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def create_db_instance(neptune_client, db_instance_id: str, db_cluster_id: str) -> str:
     try:
         request = {
@@ -902,7 +902,7 @@ The following code example shows how to use `CreateDBSubnetGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def create_subnet_group(neptune_client, group_name: str):
     """
     Creates a Neptune DB subnet group and returns its name and ARN.
@@ -965,7 +965,7 @@ The following code example shows how to use `CreateGraph`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 """
 Running this example.
 
@@ -1025,7 +1025,7 @@ The following code example shows how to use `DeleteDBCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def delete_db_cluster(neptune_client, cluster_id: str):
     """
     Deletes a Neptune DB cluster and throws exceptions to the caller.
@@ -1068,7 +1068,7 @@ The following code example shows how to use `DeleteDBInstance`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def delete_db_instance(neptune_client, instance_id: str):
     """
     Deletes a Neptune DB instance and waits for its deletion to complete.
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DeleteDBSubnetGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def delete_db_subnet_group(neptune_client, subnet_group_name):
     """
     Deletes a Neptune DB subnet group synchronously using Boto3.
@@ -1157,7 +1157,7 @@ The following code example shows how to use `DescribeDBClusters`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def describe_db_clusters(neptune_client, cluster_id: str):
     """
     Describes details of a Neptune DB cluster, paginating if needed.
@@ -1225,7 +1225,7 @@ The following code example shows how to use `DescribeDBInstances`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def check_instance_status(neptune_client, instance_id: str, desired_status: str):
     """
     Polls the status of a Neptune DB instance until it reaches desired_status.
@@ -1279,7 +1279,7 @@ The following code example shows how to use `ExecuteGremlinProfileQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 # Replace this with your actual Neptune endpoint
 NEPTUNE_ENDPOINT = "https://[Specify Endpoint]:8182"
 
@@ -1331,7 +1331,7 @@ The following code example shows how to use `ExecuteGremlinQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 """
 Running this example.
 
@@ -1403,7 +1403,7 @@ The following code example shows how to use `ExecuteOpenCypherExplainQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 # Replace with your actual Neptune endpoint URL
 NEPTUNE_ENDPOINT = "https://<your-neptune-endpoint>:8182"
 
@@ -1495,7 +1495,7 @@ The following code example shows how to use `ExecuteQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 """
 Running this example.
 
@@ -1602,7 +1602,7 @@ The following code example shows how to use `StartDBCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def start_db_cluster(neptune_client, cluster_identifier: str):
     """
     Starts an Amazon Neptune DB cluster and waits until it reaches 'available'.
@@ -1672,7 +1672,7 @@ The following code example shows how to use `StopDBCluster`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 def stop_db_cluster(neptune_client, cluster_identifier: str):
     """
     Stops an Amazon Neptune DB cluster and waits until it's fully stopped.

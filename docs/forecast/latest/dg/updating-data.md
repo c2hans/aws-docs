@@ -44,7 +44,7 @@ To update a dataset, use the `create-dataset-import-job` command. For the `impor
 
 The following code shows how to create a dataset import job that incrementally imports new data into a dataset.
 
-```
+```bash
 aws forecast create-dataset-import-job \
                         --dataset-import-job-name {{dataset import job name}} \
                         --dataset-arn {{dataset arn}} \
@@ -57,7 +57,7 @@ aws forecast create-dataset-import-job \
 
 To update a dataset, use the `create_dataset_import_job` method. For the `import-mode`, specify `FULL`, to replace existing data or `INCREMENTAL` to add to it. For more information, see [Import modes](#idsi).
 
-```
+```python
 import boto3
 
 forecast = boto3.client('forecast')

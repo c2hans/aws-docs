@@ -46,7 +46,6 @@ Space and tagging operations use the control plane endpoint. Event and memory op
 | Text per event, across all messages | 5 MiB (UTF-8) | No |
 | Structured data per event | 1 MiB | No |
 | Maximum JSON nesting depth of structured data | 10 | No |
-| Size of a blob document in Amazon S3 | 25 MB | No |
 | Extraction tokens per minute, per account in each AWS Region | 400,000 | Yes |
 | Event IDs per [BatchGetEvent](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_BatchGetEvent.html) request | 10 | No |
 | Session IDs per [SearchEvents](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchEvents.html) request | 10 | No |

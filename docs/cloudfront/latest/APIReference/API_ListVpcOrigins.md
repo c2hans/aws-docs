@@ -39,9 +39,11 @@ HTTP/1.1 200
    <IsTruncated>boolean</IsTruncated>
    <Items>
       <VpcOriginSummary>
+         <AccountId>string</AccountId>
          <Arn>string</Arn>
          <CreatedTime>timestamp</CreatedTime>
          <Id>string</Id>
+         <IpAddressType>string</IpAddressType>
          <LastModifiedTime>timestamp</LastModifiedTime>
          <Name>string</Name>
          <OriginEndpointArn>string</OriginEndpointArn>

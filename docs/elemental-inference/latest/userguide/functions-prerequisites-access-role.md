@@ -17,7 +17,7 @@ Elemental Inference invokes Amazon Bedrock as the access role in your account, s
 
 Attach a policy that allows `bedrock:InvokeModel` on exactly the models that your functions target. In the following policy, replace `{{region}}` with the feed's Region, `{{model-id}}` with the model ID, `{{111122223333}}` with your account ID, and `{{profile-id}}` with the inference profile ID.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -50,7 +50,7 @@ The role must trust the Elemental Inference service principal. Elemental Inferen
 
 In the following policy, replace `{{111122223333}}` with the ID of the account that owns the feed, and `{{region}}` with the feed's Region.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

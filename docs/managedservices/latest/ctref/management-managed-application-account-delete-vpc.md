@@ -135,14 +135,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-application-account-delete-vpc-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-managed-application-account-delete-vpc-ex-max"></a>
 
-```
+```json
 {
   "VPCId": "vpc-0078e69aa52274dea"
 }

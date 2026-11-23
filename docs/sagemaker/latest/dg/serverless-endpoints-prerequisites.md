@@ -55,7 +55,7 @@ The following topic describes the prerequisites that you must complete before cr
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

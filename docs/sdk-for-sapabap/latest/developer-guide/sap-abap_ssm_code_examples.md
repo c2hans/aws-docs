@@ -24,7 +24,7 @@ The following code example shows how to use `CreateDocument`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->createdocument(
             iv_name = iv_name
@@ -47,7 +47,7 @@ The following code example shows how to use `CreateMaintenanceWindow`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ssm->createmaintenancewindow(
             iv_name = iv_name
@@ -70,7 +70,7 @@ The following code example shows how to use `CreateOpsItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ssm->createopsitem(
             iv_title = iv_title
@@ -95,7 +95,7 @@ The following code example shows how to use `DeleteDocument`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->deletedocument( iv_name = iv_name ).
         MESSAGE 'Document deleted.' TYPE 'I'.
@@ -115,7 +115,7 @@ The following code example shows how to use `DeleteMaintenanceWindow`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->deletemaintenancewindow( iv_windowid = iv_window_id ).
         MESSAGE 'Maintenance window deleted.' TYPE 'I'.
@@ -133,7 +133,7 @@ The following code example shows how to use `DeleteOpsItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->deleteopsitem( iv_opsitemid = iv_ops_item_id ).
         MESSAGE 'OpsItem deleted.' TYPE 'I'.
@@ -151,7 +151,7 @@ The following code example shows how to use `DescribeDocument`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ssm->describedocument( iv_name = iv_name ).
         DATA(lo_document) = lo_result->get_document( ).
@@ -173,7 +173,7 @@ The following code example shows how to use `DescribeOpsItems`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         " Create filter for OpsItem ID
         DATA(lt_filters) = VALUE /aws1/cl_ssmopsitemfilter=>tt_opsitemfilters(
@@ -216,7 +216,7 @@ The following code example shows how to use `ListCommandInvocations`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         " Use paginator to get all results
         DATA(lo_paginator) = lo_ssm->get_paginator( ).
@@ -251,7 +251,7 @@ The following code example shows how to use `SendCommand`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_result) = lo_ssm->sendcommand(
             it_instanceids = it_instance_ids
@@ -278,7 +278,7 @@ The following code example shows how to use `UpdateMaintenanceWindow`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->updatemaintenancewindow(
             iv_windowid = iv_window_id
@@ -303,7 +303,7 @@ The following code example shows how to use `UpdateOpsItem`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ssm#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ssm->updateopsitem(
             iv_opsitemid = iv_ops_item_id

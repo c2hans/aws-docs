@@ -20,7 +20,7 @@ AWS ParallelCluster configures and rotates the following logs:
 
 **Head node logs**
 
-```
+```bash
 /var/log/cloud-init.log
 /var/log/supervisord.log
 /var/log/cfn-init.log
@@ -43,7 +43,7 @@ AWS ParallelCluster configures and rotates the following logs:
 
 **Compute node logs**
 
-```
+```bash
 /var/log/cloud-init.log
 /var/log/supervisord.log
 /var/log/cloud-init-output.log
@@ -53,7 +53,7 @@ AWS ParallelCluster configures and rotates the following logs:
 
 **Login node logs**
 
-```
+```bash
 /var/log/cloud-init.log
 /var/log/cloud-init.log
 /var/log/cloud-init-output.log

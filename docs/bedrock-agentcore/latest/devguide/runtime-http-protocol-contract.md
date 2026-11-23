@@ -49,7 +49,7 @@ The `/invocations` endpoint serves several key purposes:
 
  **Example Request format**
 
-```
+```json
 Content-Type: application/json
 
 {

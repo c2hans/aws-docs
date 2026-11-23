@@ -9,18 +9,18 @@ You can use your Amazon Bedrock API key in the following ways:
   + Open a terminal to set it:
     + **MacOS/Linux**
 
-      ```
+      ```bash
       export AWS_BEARER_TOKEN_BEDROCK={{${api-key}}}
       ```
     + **Windows**
 
-      ```
+      ```bash
       setx AWS_BEARER_TOKEN_BEDROCK "{{${api-key}}}"
       ```
   + Set it as an environment variable in your code before you make the API request. For example, you could include the following lines before making the request:
     + **Python**
 
-      ```
+      ```python
       import os
       os.environ['AWS_BEARER_TOKEN_BEDROCK'] = "{{${api-key}}}"
       ```
@@ -45,7 +45,7 @@ To see an example of using the API key to send a [Converse](https://docs.aws.ama
 
 The following example shows how to send an API request with the AWS SDK for Python (Boto3). If you didn't already set the API key as the `AWS_BEARER_TOKEN_BEDROCK` environment variable, specify it in place of {{${api-key}}} in the following code:
 
-```
+```python
 import os
 import boto3
 
@@ -73,13 +73,13 @@ response = client.converse(
 
 **Prerequisite:** Install the `requests` package by opening a terminal and running the following command:
 
-```
+```bash
 python3 -m pip install requests
 ```
 
 The following example shows how to directly send an API request with an HTTP client. Specify the {{${api-key}}} in the header.
 
-```
+```python
 import requests
 
 url = "https://bedrock-runtime.us-east-1.amazonaws.com/model/us.anthropic.claude-sonnet-4-6/converse"
@@ -108,7 +108,7 @@ print(response.text)
 
 The following example shows how to directly send an API request, using cURL. If you didn't set the API key as the AWS\_BEARER\_TOKEN\_BEDROCK environment variable, you'll have to replace `$AWS_BEARER_TOKEN_BEDROCK` in the example with the literal value of the key.
 
-```
+```bash
 curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/model/us.anthropic.claude-sonnet-4-6/converse" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AWS_BEARER_TOKEN_BEDROCK" \

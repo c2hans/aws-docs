@@ -57,7 +57,7 @@ Follow these guidelines when defining application context:
 
 To add application context:
 
-```
+```bash
 aws wellarchitected create-agent-context \
     --profile-arn "{{profile-arn}}" \
     --title "{{My application}}" \
@@ -70,7 +70,7 @@ aws wellarchitected create-agent-context \
 
 To update existing application context:
 
-```
+```bash
 aws wellarchitected update-agent-context \
     --profile-arn "{{profile-arn}}" \
     --context-id "{{context-id}}" \
@@ -80,7 +80,7 @@ aws wellarchitected update-agent-context \
 
 To delete application context:
 
-```
+```bash
 aws wellarchitected delete-agent-context \
     --profile-arn "{{profile-arn}}" \
     --context-id "{{context-id}}"

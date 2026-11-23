@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 
 Uses player parameters for app and device identification. Suitable for production multi-device deployments.
 
-```
+```JSON
 {
   "app": {
     "id": "{{player_params.app_id}}",

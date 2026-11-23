@@ -67,7 +67,7 @@ You can use the Connect Customer console or the AWS CLI to obtain the ARN.
 
 Construct a policy statement that gives permission to the ARN of the Connect Customer service-link role to generate data keys. The following code shows a sample policy.
 
-```
+```json
 {
     "Sid": "Allow use of the key for Connect Customer streaming",
     "Effect": "Allow",

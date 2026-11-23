@@ -26,7 +26,7 @@ The following code example shows how to use `CreateVault`.
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/glacier#code-examples).
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require("aws-sdk");
 // Set the region
@@ -52,7 +52,7 @@ The following code example shows how to use `UploadArchive`.
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/glacier#code-examples).
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require("aws-sdk");
 // Set the region
@@ -84,7 +84,7 @@ The following code example shows how to use `UploadMultipartPart`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/glacier#code-examples).
 Create a multipart upload of 1 megabyte chunks of a Buffer object.
 
-```
+```javascript
 // Create a new service object and some supporting variables
 var glacier = new AWS.Glacier({ apiVersion: "2012-06-01" }),
   vaultName = "YOUR_VAULT_NAME",

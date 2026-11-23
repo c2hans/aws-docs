@@ -13,7 +13,7 @@ EventBridge delivers a near real-time stream of system events that describe chan
 
 With EventBridge, you can monitor for changes to tags and track the tag state on AWS resources. Previously, to achieve similar functionality, you might have continuously polled APIs and orchestrated multiple calls. Now, any change to a tag including individual service APIs, [Tag Editor](https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html), and the [Tagging API](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/index.html) will initiate the tag change on resource event. The following example shows a typical EventBridge event prompted by a tag change. It shows the new, updated, or deleted tag keys, and their associated values.
 
-```
+```json
 {
   "version": "0",
   "id": "bddcf1d6-0251-35a1-aab0-adc1fb47c11c",

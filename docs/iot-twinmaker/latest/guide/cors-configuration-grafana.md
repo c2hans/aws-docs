@@ -20,7 +20,7 @@ To configure your Amazon S3 bucket with CORS, use the following steps:
 **Note**
 You need to keep the asterisk `*` character at the beginning of the `"AllowedOrigins":` JSON element.
 
-   ```
+   ```json
            [
        {
            "AllowedHeaders": [

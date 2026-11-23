@@ -28,7 +28,7 @@ Use `ListDiscoverableRegistryRecords` to return paginated summaries of every app
 
     Duplicate filter names are rejected. If you specify multiple values for a single filter, the values are joined by **OR**. If you specify multiple filters, the filters are joined by **AND**.
 
-Each summary in the response contains: `registryArn`, `recordArn`, `recordId`, `name`, `displayName`, `description`, `recordType`, `recordVersion`, `status`, `createdAt`, `updatedAt`.
+Each summary in the response contains: `registryArn`, `recordArn`, `recordId`, `name`, `displayName`, `description`, `recordType`, `recordVersion`, `status`, `createdAt`, `updatedAt`. Summaries don’t include skill package download URLs. To get one, use `BatchGetDiscoverableRegistryRecord`.
 
 ### Response ordering and pagination
 <a name="registry-browse-list-ordering"></a>
@@ -50,7 +50,7 @@ Results are sorted alphabetically by record name.
 
 1. (Optional) Use the **Properties** menu next to the search bar to filter by **Record type**.
 
-1. Choose a record’s name to view its full descriptor content.
+1. Choose a record’s name to view its full descriptor content. For a Skills record with an approved skill package, you can download the package and view its checksum in the **Skill package** section, and browse its files under **Skill package files**. If you open the record from search results instead of the record list, the console doesn’t show the package.
 Browsing the approved-record catalog with `ListDiscoverableRegistryRecords` is only available in the `agent-registry` namespace. The older Bedrock-AgentCore console does not have a **Record directory** page or a browse feature. To find records in a registry created under the `bedrock-agentcore` namespace, use the **Search records** tab on the registry detail page — see [Search for registry records](registry-search-records.md).
 
 **Note**
@@ -59,7 +59,7 @@ The **Record directory** page requires IAM-based inbound authorization on the se
 ### AWS CLI
 <a name="registry-browse-list-cli"></a>
 
-```
+```bash
 aws agent-registry list-discoverable-registry-records \
   --registry-id "<registryARN>" \
   --filters '[{"name": "recordType", "values": ["MCP"]}]' \
@@ -69,7 +69,7 @@ aws agent-registry list-discoverable-registry-records \
 
 To page through results, pass the `nextToken` value from the previous response:
 
-```
+```bash
 aws agent-registry list-discoverable-registry-records \
   --registry-id "<registryARN>" \
   --next-token "<tokenFromPreviousResponse>" \
@@ -79,7 +79,7 @@ aws agent-registry list-discoverable-registry-records \
 ### AWS SDK
 <a name="registry-browse-list-sdk"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry')
@@ -97,7 +97,7 @@ for page in paginator.paginate(
 ### HTTP client
 <a name="registry-browse-list-http"></a>
 
-```
+```bash
 curl -X POST "https://agent-registry.<region>.api.aws/registries/<registryARN>/discoverable-records-list" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <accessToken>" \
@@ -122,7 +122,11 @@ Use `BatchGetDiscoverableRegistryRecord` to retrieve the full descriptor content
 
 ### Response
 <a name="registry-browse-batch-get-response"></a>
-+  **registryRecords**: Full record objects (with descriptors) for records that were successfully retrieved.
++  **registryRecords**: Full record objects (with descriptors) for records that were successfully retrieved. For a SKILL record whose approved revision has a skill package, the record object also contains **artifact**:
+  +  **downloadUrl**: A presigned URL that downloads the package. It’s valid for up to 5 minutes. To get a new URL, call `BatchGetDiscoverableRegistryRecord` again.
+  +  **sha256**: The SHA-256 checksum of the package, as lowercase hexadecimal. Verify the downloaded package against it.
+
+    The package is always the one from the approved revision. A new package that is still in review isn’t returned until it’s approved. `ListDiscoverableRegistryRecords` and `SearchDiscoverableRegistryRecords` don’t return **artifact**. For more information, see [Download a skill package](registry-skill-package-download.md).
 +  **errors**: A per-record error list. Empty when every requested record was returned successfully.
 
 The call returns HTTP 200 even on partial failure — records that could not be retrieved appear in the `errors` list rather than causing the whole call to fail. Each error entry echoes `registryId` and `recordId` from the request, plus an `errorCode`:
@@ -135,7 +139,7 @@ Batch-level failures (the registry doesn’t exist, the caller has no access to 
 ### AWS CLI
 <a name="registry-browse-batch-get-cli"></a>
 
-```
+```bash
 aws agent-registry batch-get-discoverable-registry-record \
   --entries '[{"registryId": "<registryARN>", "recordIds": ["<recordId1>", "<recordId2>", "<recordId3>"]}]' \
   --region us-east-1
@@ -144,7 +148,7 @@ aws agent-registry batch-get-discoverable-registry-record \
 ### AWS SDK
 <a name="registry-browse-batch-get-sdk"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client('agent-registry')
@@ -168,7 +172,7 @@ for error in response['errors']:
 ### HTTP client
 <a name="registry-browse-batch-get-http"></a>
 
-```
+```bash
 curl -X POST "https://agent-registry.<region>.api.aws/discoverable-records-batch" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <accessToken>" \

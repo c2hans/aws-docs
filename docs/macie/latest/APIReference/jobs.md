@@ -47,7 +47,7 @@ Creates and defines the settings for a classification job.
 #### POST schema
 <a name="jobs-request-body-post-example"></a>
 
-```
+```json
 {
   "allowListIds": [
     "string"
@@ -192,7 +192,7 @@ Creates and defines the settings for a classification job.
 #### CreateClassificationJobResponse schema
 <a name="jobs-response-body-createclassificationjobresponse-example"></a>
 
-```
+```json
 {
   "jobArn": "string",
   "jobId": "string"
@@ -202,7 +202,7 @@ Creates and defines the settings for a classification job.
 #### ValidationException schema
 <a name="jobs-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -211,7 +211,7 @@ Creates and defines the settings for a classification job.
 #### ServiceQuotaExceededException schema
 <a name="jobs-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -220,7 +220,7 @@ Creates and defines the settings for a classification job.
 #### AccessDeniedException schema
 <a name="jobs-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -229,7 +229,7 @@ Creates and defines the settings for a classification job.
 #### ResourceNotFoundException schema
 <a name="jobs-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -238,7 +238,7 @@ Creates and defines the settings for a classification job.
 #### ConflictException schema
 <a name="jobs-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -247,7 +247,7 @@ Creates and defines the settings for a classification job.
 #### ThrottlingException schema
 <a name="jobs-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -256,7 +256,7 @@ Creates and defines the settings for a classification job.
 #### InternalServerException schema
 <a name="jobs-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

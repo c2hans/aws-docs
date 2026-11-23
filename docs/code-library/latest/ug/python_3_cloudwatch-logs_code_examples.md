@@ -30,7 +30,7 @@ The following code example shows how to get started using CloudWatch Logs.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 
-```
+```python
 def hello_cloudwatch_logs() -> None:
     """
     Verifies connectivity to CloudWatch Logs by calling DescribeLogGroups
@@ -79,7 +79,7 @@ The following code example shows how to use `DeleteSyslogConfiguration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 
-```
+```python
     def delete_syslog_configuration(
         self, log_group_identifier: str, vpc_endpoint_id: str
     ) -> None:
@@ -126,7 +126,7 @@ The following code example shows how to use `GetQueryResults`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs#code-examples).
 
-```
+```python
     def _wait_for_query_results(self, client, query_id):
         """
         Waits for the query to complete and retrieves the results.
@@ -158,7 +158,7 @@ The following code example shows how to use `ListSyslogConfigurations`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 
-```
+```python
     def list_syslog_configurations(
         self,
         log_group_identifier: Optional[str] = None,
@@ -216,7 +216,7 @@ The following code example shows how to use `PutResourcePolicy`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 
-```
+```python
     def put_resource_policy(
         self,
         log_group_arn: str,
@@ -279,7 +279,7 @@ The following code example shows how to use `PutSyslogConfiguration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 
-```
+```python
     def put_syslog_configuration(
         self, log_group_identifier: str, vpc_endpoint_id: str
     ) -> None:
@@ -326,14 +326,14 @@ The following code example shows how to use `StartLiveTail`.
 **SDK for Python (Boto3)**
 Include the required files.
 
-```
+```python
 import boto3
 import time
 from datetime import datetime
 ```
 Start the Live Tail session.
 
-```
+```python
     # Initialize the client
     client = boto3.client('logs')
 
@@ -378,7 +378,7 @@ The following code example shows how to use `StartQuery`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs#code-examples).
 
-```
+```python
     def perform_query(self, date_range):
         """
         Performs the actual CloudWatch log query.
@@ -469,7 +469,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/syslog_ingestion#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class SyslogIngestionScenario:
     """Interactive scenario demonstrating CloudWatch Logs syslog ingestion."""
 
@@ -877,7 +877,7 @@ class SyslogIngestionScenario:
 ```
 Create a class that wraps CloudWatch Logs operations.
 
-```
+```python
 class CloudWatchLogsWrapper:
     """Encapsulates Amazon CloudWatch Logs actions."""
 
@@ -917,7 +917,7 @@ The following code example shows how to use CloudWatch Logs to query more than 1
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs/scenarios/large-query#code-examples).
 This file invokes an example module for managing CloudWatch queries exceeding 10,000 results.
 
-```
+```python
 import logging
 import os
 import sys
@@ -1055,7 +1055,7 @@ if __name__ == "__main__":
 ```
 This module processes CloudWatch queries exceeding 10,000 results.
 
-```
+```python
 import logging
 import time
 from datetime import datetime

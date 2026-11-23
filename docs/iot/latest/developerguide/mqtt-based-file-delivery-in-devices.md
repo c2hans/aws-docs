@@ -38,7 +38,7 @@ If you replace `json` with `cbor` in the topics and topic filters shown, your de
 
 A typical `DescribeStream` request in JSON looks like the following example.
 
-```
+```JSON
 {
     "c": "ec944cfb-1e3c-49ac-97de-9dc4aaad0039"
 }
@@ -52,7 +52,7 @@ A typical `DescribeStream` request in JSON looks like the following example.
 
 A `DescribeStream` response in JSON looks like the following example.
 
-```
+```JSON
 {
     "c": "ec944cfb-1e3c-49ac-97de-9dc4aaad0039",
     "s": 1,
@@ -106,7 +106,7 @@ Regardless of the total size of data requested, you should program your device t
 
 A typical `GetStream` request in JSON looks like the following example.
 
-```
+```JSON
 {
     "c": "1bb8aaa1-5c18-4d21-80c2-0b44fee10380",
     "s": 1,
@@ -147,7 +147,7 @@ Either "`n`" or "`b`" should be specified. If neither of them is specified, the 
 
 A `GetStream` response in JSON looks like this example for each data block that is requested.
 
-```
+```JSON
 {
     "c": "1bb8aaa1-5c18-4d21-80c2-0b44fee10380",
     "f": 0,
@@ -188,7 +188,7 @@ You can convert the standard binary to hexadecimal notation. Take four binary di
 
 Putting this all together, the JSON for our `GetStream` request looks like the following.
 
-```
+```JSON
 {
     "c" : "1",
     "s" : 1,
@@ -212,7 +212,7 @@ Putting this all together, the JSON for our `GetStream` request looks like the f
 
 An error response that is sent to a device for both `DescribeStream` and `GetStream` APIs contains a client token, an error code and an error message. A typical error response looks like the following example.
 
-```
+```JSON
 {
     "o": "BlockSizeOutOfBounds",
     "m": "The block size is out of bounds",

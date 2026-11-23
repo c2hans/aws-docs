@@ -56,7 +56,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Create the VPC and store its ID for the following commands. Replace the example addresses and names with your own values.
 
-   ```
+   ```bash
    VPC_ID=$(aws ec2 create-vpc \
      --cidr-block 10.10.0.0/16 \
      --instance-tenancy default \
@@ -67,7 +67,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Enable DNS hostnames and DNS support.
 
-   ```
+   ```bash
    aws ec2 modify-vpc-attribute \
      --vpc-id $VPC_ID \
      --enable-dns-hostnames
@@ -78,7 +78,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Create the private subnet (the service access subnet) and store its ID.
 
-   ```
+   ```bash
    PRIVATE_SUBNET_ID=$(aws ec2 create-subnet \
      --vpc-id $VPC_ID \
      --cidr-block 10.10.200.0/24 \
@@ -90,7 +90,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Create a public subnet for the NAT gateway and store its ID. Self-deployed mode requires the NAT gateway. In EVS-deployed mode, you can skip this step and the next two if you don’t need outbound internet access.
 
-   ```
+   ```bash
    PUBLIC_SUBNET_ID=$(aws ec2 create-subnet \
      --vpc-id $VPC_ID \
      --cidr-block 10.10.201.0/24 \
@@ -102,7 +102,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Create an internet gateway and attach it to the VPC.
 
-   ```
+   ```bash
    IGW_ID=$(aws ec2 create-internet-gateway \
      --tag-specifications 'ResourceType=internet-gateway,Tags=[{Key=Name,Value=evs-igw}]' \
      --query 'InternetGateway.InternetGatewayId' \
@@ -115,7 +115,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Allocate an Elastic IP address and create a NAT gateway in the public subnet.
 
-   ```
+   ```bash
    EIP_ID=$(aws ec2 allocate-address \
      --domain vpc \
      --tag-specifications 'ResourceType=elastic-ip,Tags=[{Key=Name,Value=evs-nat-eip}]' \
@@ -134,7 +134,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Create a private route table and a public route table, and store their IDs.
 
-   ```
+   ```bash
    PRIVATE_RT_ID=$(aws ec2 create-route-table \
      --vpc-id $VPC_ID \
      --tag-specifications 'ResourceType=route-table,Tags=[{Key=Name,Value=evs-private-rt}]' \
@@ -150,7 +150,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Add the default routes. The public route table routes to the internet gateway, and the private route table routes to the NAT gateway.
 
-   ```
+   ```bash
    aws ec2 create-route \
      --route-table-id $PUBLIC_RT_ID \
      --destination-cidr-block 0.0.0.0/0 \
@@ -164,7 +164,7 @@ You can create the VPC and subnets in the Amazon VPC console or with the AWS CLI
 
 1. Associate the route tables with your subnets.
 
-   ```
+   ```bash
    aws ec2 associate-route-table \
      --route-table-id $PRIVATE_RT_ID \
      --subnet-id $PRIVATE_SUBNET_ID
@@ -212,7 +212,7 @@ To add a route in the Amazon VPC console or with the AWS CLI, choose the tab for
 
 1. Find the ID of the main route table. If `$VPC_ID` isn’t set in your shell, replace it in the following commands with the ID of your VPC.
 
-   ```
+   ```bash
    MAIN_RT_ID=$(aws ec2 describe-route-tables \
      --filters Name=vpc-id,Values=$VPC_ID Name=association.main,Values=true \
      --query 'RouteTables[0].RouteTableId' \
@@ -221,7 +221,7 @@ To add a route in the Amazon VPC console or with the AWS CLI, choose the tab for
 
 1. Add a route. This example sends the default route to the NAT gateway. If `$NAT_GW_ID` isn’t set in your shell, replace it in the following commands with the ID of your NAT gateway.
 
-   ```
+   ```bash
    aws ec2 create-route \
      --route-table-id $MAIN_RT_ID \
      --destination-cidr-block 0.0.0.0/0 \

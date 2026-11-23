@@ -23,7 +23,7 @@ We sign in to the AWS access portal provided by our organization to gather our I
 
 Next, we use the AWS CLI `aws configure sso` command to configure an IAM Identity Center profile and `sso-session` on our local machine:
 
-```
+```bash
 $ aws configure sso
 SSO session name (Recommended): <my-sso>
 SSO start URL [None]: <https://my-sso-portal.awsapps.com/start>
@@ -95,7 +95,7 @@ For detailed instructions on this step, see [Use an IAM Identity Center named pr
 
 We use the AWS CLI `aws sso login` command to request security credentials for our profile:
 
-```
+```bash
 $ aws sso login --profile <my-dev-profile>
 ```
 
@@ -134,6 +134,6 @@ Unable to resolve AWS account to use. It must be either configured when you defi
 
 To refresh our credentials, we use the AWS CLI `aws sso login` command:
 
-```
+```bash
 $ aws sso login --profile <my-dev-profile>
 ```

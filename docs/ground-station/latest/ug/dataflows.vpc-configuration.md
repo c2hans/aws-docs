@@ -26,7 +26,7 @@ The below list calls out unique setup considerations when setting up your VPC fo
 
  The following CloudFormation template demonstrates how to create the infrastructure described in this section.
 
-```
+```yaml
 {{ReceiveInstanceEIP}}:
   Type: AWS::EC2::EIP
   Properties:
@@ -89,7 +89,7 @@ Your satellite data is provided to a dataflow endpoint application instance that
 
  The following CloudFormation template demonstrates how to create the infrastructure described in this section.
 
-```
+```yaml
 {{DataflowEndpointSecurityGroup}}:
   Type: AWS::EC2::SecurityGroup
   Properties:

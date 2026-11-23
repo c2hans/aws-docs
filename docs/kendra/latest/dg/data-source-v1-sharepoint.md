@@ -189,7 +189,7 @@ You must specify the following using [SharePointConfiguration](https://docs.aws.
 
   For **SharePoint Online basic authentication**, the following is the minimum JSON structure that must be in your secret:
 
-  ```
+  ```json
   {
       "userName": "{{user name}}",
       "password": "{{password}}"
@@ -198,7 +198,7 @@ You must specify the following using [SharePointConfiguration](https://docs.aws.
 
   For **SharePoint Online OAuth 2.0 authentication**, the following is the minimum JSON structure that must be in your secret:
 
-  ```
+  ```json
   {
       "userName": "{{SharePoint account user name"}}",
       "password": "{{SharePoint account password}}",
@@ -209,7 +209,7 @@ You must specify the following using [SharePointConfiguration](https://docs.aws.
 
   For **SharePoint Server basic authentication**, the following is the minimum JSON structure that must be in your secret:
 
-  ```
+  ```json
   {
       "userName": "{{user name}}",
       "password": "{{password}}",
@@ -219,7 +219,7 @@ You must specify the following using [SharePointConfiguration](https://docs.aws.
 
   For **SharePoint Server LDAP authentication** (if you need to convert your access control list (ACL) to email format for filtering on user context you can include the LDAP server URL and LDAP search base in your secret), the following is the minimum JSON structure that must be in your secret:
 
-  ```
+  ```json
   {
       "userName": "{{user name}}",
       "password": "{{password}}",
@@ -231,7 +231,7 @@ You must specify the following using [SharePointConfiguration](https://docs.aws.
 
   For **SharePoint Server Manual authentication**, the following is the minimum JSON structure that must be in your secret::
 
-  ```
+  ```json
   {
       "userName": "{{user name}}",
       "password": "{{password}}",

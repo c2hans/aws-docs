@@ -34,7 +34,7 @@ The following permissions policy uses a wildcard character (`"codecommit:*"`) to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ The following example allows the specified user to pull from, and push to, the C
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -106,7 +106,7 @@ You can create a `Deny` policy that denies access to all users who are not withi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -137,7 +137,7 @@ The following example policy allows the specified user to access a CodeCommit re
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -189,7 +189,7 @@ If you want to create a policy that applies to all branches named *main* in all 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -226,7 +226,7 @@ The following example policy allows a user to make changes to a branch named mai
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -263,7 +263,7 @@ The following example denies all CodeCommit actions on repositories tagged with 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -341,7 +341,7 @@ This policy example only includes actions for CodeCommit. It does not include ac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/attribute-trans-succ
 
 The following example shows how a successful [PlayAudio](play-audio.md) sends the stored `TransactionAttributes` as part of the `CallDetails `.
 
-```
+```json
 {
     "SchemaVersion": "1.0",
     "Sequence": 2,

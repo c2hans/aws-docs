@@ -119,7 +119,7 @@ In the `storageConfiguration` field, which maps to a [StorageConfiguration](http
 
 The following shows an example request to create a knowledge base connected to an OpenSearch Serverless collection. The data from connected data sources will be converted into binary vector embeddings with Amazon Titan Text Embeddings V2 and multimodal data extracted by the parser is set up to be stored in a bucket called {{MyBucket}}.
 
-```
+```json
 PUT /knowledgebases/ HTTP/1.1
 Content-type: application/json
 

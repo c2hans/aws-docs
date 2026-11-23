@@ -19,7 +19,7 @@ This tutorial walks you through creating a glossary, tagging assets, and using s
 
 Attach the following IAM policy to grant the required permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -45,7 +45,7 @@ Attach the following IAM policy to grant the required permissions:
 **To create a glossary**
 Run the following command:
 
-```
+```bash
 aws glue create-glossary \
   --name "Enterprise Data Glossary" \
   --description "Standardized business definitions for enterprise data assets."
@@ -53,7 +53,7 @@ aws glue create-glossary \
 
 Example output:
 
-```
+```json
 {
     "Id": "d7xm3np5rk2w9j",
     "Name": "Enterprise Data Glossary"
@@ -63,7 +63,7 @@ Example output:
 **To create a glossary term**
 Replace the glossary identifier with the `Id` from the preceding output.
 
-```
+```bash
 aws glue create-glossary-term \
   --glossary-identifier "d7xm3np5rk2w9j" \
   --name "Active User" \
@@ -73,7 +73,7 @@ aws glue create-glossary-term \
 
 Example output:
 
-```
+```json
 {
     "Id": "c2fymbu18rtsx5",
     "GlossaryId": "d7xm3np5rk2w9j",
@@ -84,7 +84,7 @@ Example output:
 **To associate the term with an asset**
 Run the following command:
 
-```
+```bash
 aws glue associate-glossary-terms \
   --asset-identifier "arn:aws:glue:us-east-1:123456789012:table/mydb/sales_transactions" \
   --glossary-term-identifiers "c2fymbu18rtsx5"
@@ -95,14 +95,14 @@ aws glue associate-glossary-terms \
 
 Use the `SearchAssets` API to find assets by business meaning.
 
-```
+```bash
 aws glue search-assets \
   --search-text "active users"
 ```
 
 Example output:
 
-```
+```json
 {
     "Items": [
         {"Id": "c9vq7sh2fk4t2h", "AssetName": "Customer Sales Transactions", "AssetTypeId": "Table"}
@@ -112,7 +112,7 @@ Example output:
 
 To filter results by asset type:
 
-```
+```bash
 aws glue search-assets \
   --search-text "active users" \
   --filter-clause '{"AttributeFilter":{"Attribute":"type","Operator":"equals","Value":{"StringValue":"Table"}}}' \
@@ -121,7 +121,7 @@ aws glue search-assets \
 
 To filter to only AWS Glue tables (excluding tables from other source systems):
 
-```
+```bash
 aws glue search-assets \
   --search-text "active users" \
   --filter-clause '{"AndAllFilters":[{"AttributeFilter":{"Attribute":"type","Operator":"equals","Value":{"StringValue":"Table"}}},{"AttributeFilter":{"Attribute":"namespace","Operator":"equals","Value":{"StringValue":"amazon.glue"}}}]}' \

@@ -58,13 +58,13 @@ To connect to your own server to verify and meet requirements, search the intern
 
   For Amazon Linux:
 
-  ```
+  ```sh
   sudo yum install -y make glibc-devel gcc gcc-c++
   ```
 
   For Ubuntu Server:
 
-  ```
+  ```sh
   sudo apt install build-essential
   ```
 + It must have Node.js installed. We recommend installing the latest Node.js version supported by the host's operating system.
@@ -79,7 +79,7 @@ AWS Cloud9 installation problems might occur when creating an SSH environment if
 
   For example, if the directory's path is `~` (where `~` represents the home directory for the login name that you specify for **User** on the **Configure settings** page), you can set these permissions on the directory by running the **`chmod`** command on the instance or server using the following command and instructions that follow.
 
-  ```
+  ```sh
   sudo chmod u=rwx,g=rx,o=rx ~
   ```
 +  [Download and run the AWS Cloud9 Installer](installer.md#installer-download-run) on the existing instance or server.

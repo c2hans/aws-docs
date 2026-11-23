@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
 ![Diagram showing hardware and software failure rates](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/failure-rates.png)
 
+*Hardware and software failure rates*
+
  Additionally, the software in distributed systems typically changes at rates exponentially higher than hardware. For example, a standard magnetic hard drive might have an average annualized failure rate (AFR) of 0.93% which, in practice for an HDD, can mean a lifespan of at least 3–5 years before it reaches the wear-out period, potentially longer (see [Backblaze Hard Drive Data and Stats, 2020](https://www.backblaze.com/b2/hard-drive-test-data.html).) The hard drive doesn't materially change during that lifetime, where, in 3–5 years, as an example, Amazon might deploy more than 450 to 750 million changes to its software systems. (See [Amazon Builders' Library – Automating safe, hands-off deployments](https://aws.amazon.com/about-aws/whats-new/2020/06/new-abl-article-automating-safe-hands-off-deployments/).)
 
  Hardware is also subject to the concept of planned obsolescence, that is, it has a built-in lifespan, and will need to be replaced after a certain period of time. (See [The Great Lightbulb Conspiracy](https://spectrum.ieee.org/tech-history/dawn-of-electronics/the-great-lightbulb-conspiracy).) Software, theoretically, is not subject to this constraint, it doesn't have a wear-out period and can be operated indefinitely.

@@ -24,6 +24,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SageMaker::Domain](aws-resource-sagemaker-domain.md)
 + [AWS::SageMaker::Endpoint](aws-resource-sagemaker-endpoint.md)
 + [AWS::SageMaker::EndpointConfig](aws-resource-sagemaker-endpointconfig.md)
++ [AWS::SageMaker::EndpointPolicy](aws-resource-sagemaker-endpointpolicy.md)
 + [AWS::SageMaker::Experiment](aws-resource-sagemaker-experiment.md)
 + [AWS::SageMaker::ExperimentTrialComponent](aws-resource-sagemaker-experimenttrialcomponent.md)
 + [AWS::SageMaker::Extension](aws-resource-sagemaker-extension.md)

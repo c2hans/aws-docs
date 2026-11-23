@@ -13,7 +13,7 @@ HttpProxy allows you to configure your own proxy and make Task Runner access the
 
 The following pipeline definition shows an `HttpProxy` object:
 
-```
+```json
 {
   "objects": [
     {

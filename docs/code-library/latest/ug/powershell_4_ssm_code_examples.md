@@ -26,13 +26,13 @@ The following code example shows how to use `Add-SSMResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example updates a maintenance window with new tags. There is no output if the command succeeds. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $option1 = @{Key="Stack";Value=@("Production")}
 Add-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow" -Tag $option1
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create each tag. There is no output if the command succeeds.**
 
-```
+```powershell
 $tag1 = New-Object Amazon.SimpleSystemsManagement.Model.Tag
 $tag1.Key = "Stack"
 $tag1.Value = "Production"
@@ -49,12 +49,12 @@ The following code example shows how to use `Edit-SSMDocumentPermission`.
 **Tools for PowerShell V4**
 **Example 1: This example adds "share" permissions to all accounts for a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Edit-SSMDocumentPermission -Name "RunShellScript" -PermissionType "Share" -AccountIdsToAdd all
 ```
 **Example 2: This example adds "share" permissions to a specific account for a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Edit-SSMDocumentPermission -Name "RunShellScriptNew" -PermissionType "Share" -AccountIdsToAdd "123456789012"
 ```
 +  For API details, see [ModifyDocumentPermission](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -67,7 +67,7 @@ The following code example shows how to use `Get-SSMActivation`.
 **Tools for PowerShell V4**
 **Example 1: This example provides details about the activations on your account.**
 
-```
+```powershell
 Get-SSMActivation
 ```
 **Output:**
@@ -93,7 +93,7 @@ The following code example shows how to use `Get-SSMAssociation`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the association between an instance and a document.**
 
-```
+```powershell
 Get-SSMAssociation -InstanceId "i-0000293ffd8c57862" -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**
@@ -117,7 +117,7 @@ The following code example shows how to use `Get-SSMAssociationExecution`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the executions for the association ID provided**
 
-```
+```powershell
 Get-SSMAssociationExecution -AssociationId 123a45a0-c678-9012-3456-78901234db5e
 ```
 **Output:**
@@ -142,7 +142,7 @@ The following code example shows how to use `Get-SSMAssociationExecutionTarget`.
 **Tools for PowerShell V4**
 **Example 1: This example displays the resource ID and its execution status that are part of the the association execution targets**
 
-```
+```powershell
 Get-SSMAssociationExecutionTarget -AssociationId 123a45a0-c678-9012-3456-78901234db5e -ExecutionId 123a45a0-c678-9012-3456-78901234db5e | Select-Object ResourceId, Status
 ```
 **Output:**
@@ -158,7 +158,7 @@ i-0ddc1df23c4a5fb67  Success
 ```
 **Example 2: This command checks the particular execution of a particular automation since yesterday, where a command document is associated. It further checkes if the association execution failed, and if so, it will display the command invocation details for the execution along with the instance id**
 
-```
+```powershell
 $AssociationExecution= Get-SSMAssociationExecutionTarget -AssociationId 1c234567-890f-1aca-a234-5a678d901cb0 -ExecutionId 12345ca12-3456-2345-2b45-23456789012 |
     Where-Object {$_.LastExecutionDate -gt (Get-Date -Hour 00 -Minute 00).AddDays(-1)}
 
@@ -199,7 +199,7 @@ The following code example shows how to use `Get-SSMAssociationList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the associations for an instance. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="InstanceId";Value=@("i-0000293ffd8c57862")}
 Get-SSMAssociationList -AssociationFilterList $filter1
 ```
@@ -217,7 +217,7 @@ Targets            : {InstanceIds}
 ```
 **Example 2: This example lists all associations for a configuration document. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter2 = @{Key="Name";Value=@("AWS-UpdateSSMAgent")}
 Get-SSMAssociationList -AssociationFilterList $filter2
 ```
@@ -235,7 +235,7 @@ Targets            : {InstanceIds}
 ```
 **Example 3: With PowerShell version 2, you must use New-Object to create each filter.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.AssociationFilter
 $filter1.Key = "InstanceId"
 $filter1.Value = "i-0000293ffd8c57862"
@@ -264,7 +264,7 @@ The following code example shows how to use `Get-SSMAssociationVersionList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves all versions of the association provided.**
 
-```
+```powershell
 Get-SSMAssociationVersionList -AssociationId 123a45a0-c678-9012-3456-78901234db5e
 ```
 **Output:**
@@ -308,7 +308,7 @@ The following code example shows how to use `Get-SSMAutomationExecution`.
 **Tools for PowerShell V4**
 **Example 1: This example displays the details of an Automation Execution.**
 
-```
+```powershell
 Get-SSMAutomationExecution -AutomationExecutionId "4105a4fc-f944-11e6-9d32-8fb2db27a909"
 ```
 **Output:**
@@ -335,7 +335,7 @@ StepExecutions            : {launchInstance, updateOSSoftware, stopInstance, cre
 ```
 **Example 2: This example lists step details for the given automation execution id**
 
-```
+```powershell
 Get-SSMAutomationExecution -AutomationExecutionId e1d2bad3-4567-8901-ae23-456c7c8901be | Select-Object -ExpandProperty StepExecutions | Select-Object StepName, Action, StepStatus, ValidNextSteps
 ```
 **Output:**
@@ -368,7 +368,7 @@ The following code example shows how to use `Get-SSMAutomationExecutionList`.
 **Tools for PowerShell V4**
 **Example 1: This example describes all active and terminated Automation Executions associated with your account.**
 
-```
+```powershell
 Get-SSMAutomationExecutionList
 ```
 **Output:**
@@ -386,7 +386,7 @@ Outputs                   : {[createImage.ImageId, Amazon.Runtime.Internal.Util.
 ```
 **Example 2: This example displays ExecutionID, document, execution start/end timestamp for executions with AutomationExecutionStatus other than 'Success'**
 
-```
+```powershell
 Get-SSMAutomationExecutionList | Where-Object AutomationExecutionStatus -ne "Success" | Select-Object AutomationExecutionId, DocumentName, AutomationExecutionStatus, ExecutionStartTime, ExecutionEndTime | Format-Table -AutoSize
 ```
 **Output:**
@@ -408,7 +408,7 @@ The following code example shows how to use `Get-SSMAutomationStepExecution`.
 **Tools for PowerShell V4**
 **Example 1: This exmaple displays information about all active and terminated step executions in an Automation workflow.**
 
-```
+```powershell
 Get-SSMAutomationStepExecution -AutomationExecutionId e1d2bad3-4567-8901-ae23-456c7c8901be | Select-Object StepName, Action, StepStatus
 ```
 **Output:**
@@ -441,7 +441,7 @@ The following code example shows how to use `Get-SSMAvailablePatch`.
 **Tools for PowerShell V4**
 **Example 1: This example gets all available patches for Windows Server 2012 that have a MSRC severity of Critical. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="PRODUCT";Values=@("WindowsServer2012")}
 $filter2 = @{Key="MSRC_SEVERITY";Values=@("Critical")}
 
@@ -469,7 +469,7 @@ Vendor         : Microsoft
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create each filter.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.PatchOrchestratorFilter
 $filter1.Key = "PRODUCT"
 $filter1.Values = "WindowsServer2012"
@@ -481,7 +481,7 @@ Get-SSMAvailablePatch -Filter $filter1,$filter2
 ```
 **Example 3: This example fetches all the updates which are released in last 20 days and applicable to products matching WindowsServer2019**
 
-```
+```powershell
 Get-SSMAvailablePatch | Where-Object ReleaseDate -ge (Get-Date).AddDays(-20) | Where-Object Product -eq "WindowsServer2019" | Select-Object ReleaseDate, Product, Title
 ```
 **Output:**
@@ -503,7 +503,7 @@ The following code example shows how to use `Get-SSMCommand`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all commands requested.**
 
-```
+```powershell
 Get-SSMCommand
 ```
 **Output:**
@@ -532,12 +532,12 @@ Targets            : {}
 ```
 **Example 2: This example gets the status of a specific command.**
 
-```
+```powershell
 Get-SSMCommand -CommandId "4b75a163-d39a-4d97-87c9-98ae52c6be35"
 ```
 **Example 3: This example retrieves all SSM commands invoked after 2019-04-01T00:00:00Z **
 
-```
+```powershell
 Get-SSMCommand -Filter @{Key="InvokedAfter";Value="2019-04-01T00:00:00Z"} | Select-Object CommandId, DocumentName, Status, RequestedDateTime | Sort-Object -Property RequestedDateTime -Descending
 ```
 **Output:**
@@ -562,7 +562,7 @@ The following code example shows how to use `Get-SSMCommandInvocation`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the invocations of a command.**
 
-```
+```powershell
 Get-SSMCommandInvocation -CommandId "b8eac879-0541-439d-94ec-47a80d554f44" -Detail $true
 ```
 **Output:**
@@ -585,7 +585,7 @@ TraceOutput        :
 ```
 **Example 2: This example lists CommandPlugins for invocation of the command id e1eb2e3c-ed4c-5123-45c1-234f5612345f**
 
-```
+```powershell
 Get-SSMCommandInvocation -CommandId e1eb2e3c-ed4c-5123-45c1-234f5612345f -Detail:$true | Select-Object -ExpandProperty CommandPlugins
 ```
 **Output:**
@@ -616,7 +616,7 @@ The following code example shows how to use `Get-SSMCommandInvocationDetail`.
 **Tools for PowerShell V4**
 **Example 1: This example displays the details of a command executed on an instance.**
 
-```
+```powershell
 Get-SSMCommandInvocationDetail -InstanceId "i-0cb2b964d3e14fd9f" -CommandId "b8eac879-0541-439d-94ec-47a80d554f44"
 ```
 **Output:**
@@ -648,7 +648,7 @@ The following code example shows how to use `Get-SSMComplianceItemList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists compliance items list for the given resource id and type, filtering compliance-type being 'Association'**
 
-```
+```powershell
 Get-SSMComplianceItemList -ResourceId i-1a2caf345f67d0dc2 -ResourceType ManagedInstance -Filter @{Key="ComplianceType";Values="Association"}
 ```
 **Output:**
@@ -674,7 +674,7 @@ The following code example shows how to use `Get-SSMComplianceSummaryList`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a summary count of compliant and non-compliant resources for all compliance types. **
 
-```
+```powershell
 Get-SSMComplianceSummaryList
 ```
 **Output:**
@@ -697,7 +697,7 @@ The following code example shows how to use `Get-SSMConnectionStatus`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the Session Manager connection status for an instance to determine whether it is connected and ready to receive Session Manager connections. **
 
-```
+```powershell
 Get-SSMConnectionStatus -Target i-0a1caf234f12d3dc4
 ```
 **Output:**
@@ -717,7 +717,7 @@ The following code example shows how to use `Get-SSMDefaultPatchBaseline`.
 **Tools for PowerShell V4**
 **Example 1: This example displays the default patch baseline.**
 
-```
+```powershell
 Get-SSMDefaultPatchBaseline
 ```
 **Output:**
@@ -735,7 +735,7 @@ The following code example shows how to use `Get-SSMDeployablePatchSnapshotForIn
 **Tools for PowerShell V4**
 **Example 1: This example displays the current snapshot for the patch baseline used by an Instance. This command must be run from the instance using the instance credentials. To ensure it uses the instance credentials, the example passes an `Amazon.Runtime.InstanceProfileAWSCredentials` object to the Credentials parameter.**
 
-```
+```powershell
 $credentials = [Amazon.Runtime.InstanceProfileAWSCredentials]::new()
 Get-SSMDeployablePatchSnapshotForInstance -SnapshotId "4681775b-098f-4435-a956-0ef33373ac11" -InstanceId "i-0cb2b964d3e14fd9f" -Credentials $credentials
 ```
@@ -748,7 +748,7 @@ i-0cb2b964d3e14fd9f https://patch-baseline-snapshot-us-west-2.s3-us-west-2.amazo
 ```
 **Example 2: This example shows how to get the full SnapshotDownloadUrl. This command must be run from the instance using the instance credentials. To ensure it uses the instance credentials, the example configures the PowerShell session to use an `Amazon.Runtime.InstanceProfileAWSCredentials` object.**
 
-```
+```powershell
 Set-AWSCredential -Credential ([Amazon.Runtime.InstanceProfileAWSCredentials]::new())
 (Get-SSMDeployablePatchSnapshotForInstance -SnapshotId "4681775b-098f-4435-a956-0ef33373ac11" -InstanceId "i-0cb2b964d3e14fd9f").SnapshotDownloadUrl
 ```
@@ -767,7 +767,7 @@ The following code example shows how to use `Get-SSMDocument`.
 **Tools for PowerShell V4**
 **Example 1: This example returns the content of a document.**
 
-```
+```powershell
 Get-SSMDocument -Name "RunShellScript"
 ```
 **Output:**
@@ -779,7 +779,7 @@ Content
 ```
 **Example 2: This example displays the complete contents of a document.**
 
-```
+```powershell
 (Get-SSMDocument -Name "RunShellScript").Content
 {
    "schemaVersion":"2.0",
@@ -820,7 +820,7 @@ The following code example shows how to use `Get-SSMDocumentDescription`.
 **Tools for PowerShell V4**
 **Example 1: This example returns information about a document.**
 
-```
+```powershell
 Get-SSMDocumentDescription -Name "RunShellScript"
 ```
 **Output:**
@@ -852,7 +852,7 @@ The following code example shows how to use `Get-SSMDocumentList`.
 **Tools for PowerShell V4**
 **Example 1: Lists all the configuration documents in your account.**
 
-```
+```powershell
 Get-SSMDocumentList
 ```
 **Output:**
@@ -882,7 +882,7 @@ SchemaVersion   : 1.2
 ```
 **Example 2: This example retrieves all automation documents with name matchingi 'Platform'**
 
-```
+```powershell
 Get-SSMDocumentList -DocumentFilterList @{Key="DocumentType";Value="Automation"} | Where-Object Name -Match "Platform"
 ```
 **Output:**
@@ -909,7 +909,7 @@ The following code example shows how to use `Get-SSMDocumentPermission`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the versions for a document.**
 
-```
+```powershell
 Get-SSMDocumentVersionList -Name "RunShellScript"
 ```
 **Output:**
@@ -929,7 +929,7 @@ The following code example shows how to use `Get-SSMDocumentVersionList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the versions for a document.**
 
-```
+```powershell
 Get-SSMDocumentVersionList -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**
@@ -952,7 +952,7 @@ The following code example shows how to use `Get-SSMEffectiveInstanceAssociation
 **Tools for PowerShell V4**
 **Example 1: This example describes the effective associations for an instance.**
 
-```
+```powershell
 Get-SSMEffectiveInstanceAssociationList -InstanceId "i-0000293ffd8c57862" -MaxResult 5
 ```
 **Output:**
@@ -964,7 +964,7 @@ d8617c07-2079-4c18-9847-1655fc2698b0 {...
 ```
 **Example 2: This example displays the contents of the effective associations for an instance.**
 
-```
+```powershell
 (Get-SSMEffectiveInstanceAssociationList -InstanceId "i-0000293ffd8c57862" -MaxResult 5).Content
 ```
 **Output:**
@@ -1015,7 +1015,7 @@ The following code example shows how to use `Get-SSMEffectivePatchesForPatchBase
 **Tools for PowerShell V4**
 **Example 1: This example lists all patch baselines, with a maximum result list of 1.**
 
-```
+```powershell
 Get-SSMEffectivePatchesForPatchBaseline -BaselineId "pb-0a2f1059b670ebd31" -MaxResult 1
 ```
 **Output:**
@@ -1027,7 +1027,7 @@ Amazon.SimpleSystemsManagement.Model.Patch Amazon.SimpleSystemsManagement.Model.
 ```
 **Example 2: This example displays the patch status for all patch baselines, with a maximum result list of 1.**
 
-```
+```powershell
 (Get-SSMEffectivePatchesForPatchBaseline -BaselineId "pb-0a2f1059b670ebd31" -MaxResult 1).PatchStatus
 ```
 **Output:**
@@ -1047,7 +1047,7 @@ The following code example shows how to use `Get-SSMInstanceAssociationsStatus`.
 **Tools for PowerShell V4**
 **Example 1: This example shows details of the associations for an instance.**
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus -InstanceId "i-0000293ffd8c57862"
 ```
 **Output:**
@@ -1066,7 +1066,7 @@ Status           : Pending
 ```
 **Example 2: This example checks the instance association status for the given instance id and further, displays the execution status of those associations**
 
-```
+```powershell
 Get-SSMInstanceAssociationsStatus -InstanceId i-012e3cb4df567e8aa | ForEach-Object {Get-SSMAssociationExecution -AssociationId .AssociationId}
 ```
 **Output:**
@@ -1091,7 +1091,7 @@ The following code example shows how to use `Get-SSMInstanceInformation`.
 **Tools for PowerShell V4**
 **Example 1: This example shows details of each of your instances.**
 
-```
+```powershell
 Get-SSMInstanceInformation
 ```
 **Output:**
@@ -1119,7 +1119,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 2: This example shows how to use the -Filter parameter to filter results to only those AWS Systems Manager instances in region `us-east-1` with an `AgentVersion` of `2.2.800.0`. You can find a list of valid -Filter key values in the InstanceInformation API reference topic (https://docs.aws.amazon.com/systems-manager/latest/APIReference/API\_InstanceInformation.html\#systemsmanager-Type-InstanceInformation-ActivationId).**
 
-```
+```powershell
 $Filters = @{
     Key="AgentVersion"
     Values="2.2.800.0"
@@ -1171,7 +1171,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 3: This example shows how to use the -InstanceInformationFilterList parameter to filter results to only those AWS Systems Manager instances in region `us-east-1` with `PlatformTypes` of `Windows` or `Linux`. You can find a list of valid -InstanceInformationFilterList key values in the InstanceInformationFilter API reference topic (https://docs.aws.amazon.com/systems-manager/latest/APIReference/API\_InstanceInformationFilter.html).**
 
-```
+```powershell
 $Filters = @{
    Key="PlatformTypes"
    ValueSet=("Windows","Linux")
@@ -1223,7 +1223,7 @@ ResourceType                           : EC2Instance
 ```
 **Example 4: This example lists ssm managed instances and exports InstanceId, PingStatus, LastPingDateTime and PlatformName to a csv file.**
 
-```
+```powershell
 Get-SSMInstanceInformation | Select-Object InstanceId, PingStatus, LastPingDateTime, PlatformName | Export-Csv Instance-details.csv -NoTypeInformation
 ```
 +  For API details, see [DescribeInstanceInformation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1236,7 +1236,7 @@ The following code example shows how to use `Get-SSMInstancePatch`.
 **Tools for PowerShell V4**
 **Example 1: This example gets the patch compliance details for an instance.**
 
-```
+```powershell
 Get-SSMInstancePatch -InstanceId "i-08ee91c0b17045407"
 ```
 +  For API details, see [DescribeInstancePatches](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1249,12 +1249,12 @@ The following code example shows how to use `Get-SSMInstancePatchState`.
 **Tools for PowerShell V4**
 **Example 1: This example gets the patch summary states for an instance.**
 
-```
+```powershell
 Get-SSMInstancePatchState -InstanceId "i-08ee91c0b17045407"
 ```
 **Example 2: This example gets the patch summary states for two instances.**
 
-```
+```powershell
 Get-SSMInstancePatchState -InstanceId "i-08ee91c0b17045407","i-09a618aec652973a9"
 ```
 +  For API details, see [DescribeInstancePatchStates](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1267,7 +1267,7 @@ The following code example shows how to use `Get-SSMInstancePatchStatesForPatchG
 **Tools for PowerShell V4**
 **Example 1: This example gets the patch summary states per-instance for a patch group.**
 
-```
+```powershell
 Get-SSMInstancePatchStatesForPatchGroup -PatchGroup "Production"
 ```
 +  For API details, see [DescribeInstancePatchStatesForPatchGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1280,7 +1280,7 @@ The following code example shows how to use `Get-SSMInventory`.
 **Tools for PowerShell V4**
 **Example 1: This example gets the custom metadata for your inventory.**
 
-```
+```powershell
 Get-SSMInventory
 ```
 **Output:**
@@ -1300,7 +1300,7 @@ The following code example shows how to use `Get-SSMInventoryEntriesList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the custom inventory entries for an instance.**
 
-```
+```powershell
 Get-SSMInventoryEntriesList -InstanceId "i-0cb2b964d3e14fd9f" -TypeName "Custom:RackInfo"
 ```
 **Output:**
@@ -1315,7 +1315,7 @@ TypeName      : Custom:RackInfo
 ```
 **Example 2: This example lists the details.**
 
-```
+```powershell
 (Get-SSMInventoryEntriesList -InstanceId "i-0cb2b964d3e14fd9f" -TypeName "Custom:RackInfo").Entries
 ```
 **Output:**
@@ -1335,7 +1335,7 @@ The following code example shows how to use `Get-SSMInventoryEntryList`.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves `AWS:Network` type inventory entries for the instance.**
 
-```
+```powershell
 Get-SSMInventoryEntryList -InstanceId mi-088dcb0ecea37b076 -TypeName AWS:Network | Select-Object -ExpandProperty Entries
 ```
 **Output:**
@@ -1362,7 +1362,7 @@ The following code example shows how to use `Get-SSMInventorySchema`.
 **Tools for PowerShell V4**
 **Example 1: This example returns a list of inventory type names for the account.**
 
-```
+```powershell
 Get-SSMInventorySchema
 ```
 +  For API details, see [GetInventorySchema](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -1375,7 +1375,7 @@ The following code example shows how to use `Get-SSMLatestEC2Image`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the lastest Windows AMIs.**
 
-```
+```powershell
 PS Get-SSMLatestEC2Image -Path ami-windows-latest
 ```
 **Output:**
@@ -1391,7 +1391,7 @@ Windows_Server-2012-R2_RTM-Dutch-64Bit-Base                             ami-0250
 ```
 **Example 2: This example retrieves the AMI id of a specific Amazon Linux image for the us-west-2 region.**
 
-```
+```powershell
 PS Get-SSMLatestEC2Image -Path ami-amazon-linux-latest -ImageName amzn-ami-hvm-x86_64-ebs -Region us-west-2
 ```
 **Output:**
@@ -1401,7 +1401,7 @@ ami-09b92cd132204c704
 ```
 **Example 3: This example lists all the lastest Windows AMIs matching the specified wildcard expression.**
 
-```
+```powershell
 Get-SSMLatestEC2Image -Path ami-windows-latest -ImageName *Windows*2019*English*
 ```
 **Output:**
@@ -1425,7 +1425,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindow`.
 **Tools for PowerShell V4**
 **Example 1: This example gets details about a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindow -WindowId "mw-03eb9db42890fb82d"
 ```
 **Output:**
@@ -1451,7 +1451,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowExecution`.
 **Tools for PowerShell V4**
 **Example 1: This example lists information about a task executed as part of a maintenance window execution.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecution -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
 ```
 **Output:**
@@ -1474,7 +1474,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowExecutionLi
 **Tools for PowerShell V4**
 **Example 1: This example lists all of the executions for a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecutionList -WindowId "mw-03eb9db42890fb82d"
 ```
 **Output:**
@@ -1489,13 +1489,13 @@ WindowId          : mw-03eb9db42890fb82d
 ```
 **Example 2: This example lists all of the executions for a maintenance window before a specified date.**
 
-```
+```powershell
 $option1 = @{Key="ExecutedBefore";Values=@("2016-11-04T05:00:00Z")}
 Get-SSMMaintenanceWindowExecutionList -WindowId "mw-03eb9db42890fb82d" -Filter $option1
 ```
 **Example 3: This example lists all of the executions for a maintenance window after a specified date.**
 
-```
+```powershell
 $option1 = @{Key="ExecutedAfter";Values=@("2016-11-04T05:00:00Z")}
 Get-SSMMaintenanceWindowExecutionList -WindowId "mw-03eb9db42890fb82d" -Filter $option1
 ```
@@ -1509,7 +1509,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowExecutionTa
 **Tools for PowerShell V4**
 **Example 1: This example lists information about a task that was part of a maintenance window execution.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecutionTask -TaskId "ac0c6ae1-daa3-4a89-832e-d384503b6586" -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
 ```
 **Output:**
@@ -1540,7 +1540,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowExecutionTa
 **Tools for PowerShell V4**
 **Example 1: This example lists the invocations for a task executed as part of a maintenance window execution.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecutionTaskInvocationList -TaskId "ac0c6ae1-daa3-4a89-832e-d384503b6586" -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
 ```
 **Output:**
@@ -1569,7 +1569,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowExecutionTa
 **Tools for PowerShell V4**
 **Example 1: This example lists the tasks associated with a maintenance window execution.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowExecutionTaskList -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
 ```
 **Output:**
@@ -1593,7 +1593,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all maintenance windows on your account.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowList
 ```
 **Output:**
@@ -1615,7 +1615,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowTarget`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all of the targets for a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowTarget -WindowId "mw-06cf17cbefcb4bf4f"
 ```
 **Output:**
@@ -1643,7 +1643,7 @@ The following code example shows how to use `Get-SSMMaintenanceWindowTaskList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all of the tasks for a maintenance window.**
 
-```
+```powershell
 Get-SSMMaintenanceWindowTaskList -WindowId "mw-06cf17cbefcb4bf4f"
 ```
 **Output:**
@@ -1671,7 +1671,7 @@ The following code example shows how to use `Get-SSMParameterHistory`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the value history for a parameter.**
 
-```
+```powershell
 Get-SSMParameterHistory -Name "Welcome"
 ```
 **Output:**
@@ -1695,7 +1695,7 @@ The following code example shows how to use `Get-SSMParameterList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all parameters.**
 
-```
+```powershell
 Get-SSMParameterList
 ```
 **Output:**
@@ -1718,7 +1718,7 @@ The following code example shows how to use `Get-SSMParameterValue`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the values for a parameter.**
 
-```
+```powershell
 Get-SSMParameterValue -Name "Welcome"
 ```
 **Output:**
@@ -1730,7 +1730,7 @@ InvalidParameters Parameters
 ```
 **Example 2: This example lists the details of the value.**
 
-```
+```powershell
 (Get-SSMParameterValue -Name "Welcome").Parameters
 ```
 **Output:**
@@ -1750,7 +1750,7 @@ The following code example shows how to use `Get-SSMPatchBaseline`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all patch baselines.**
 
-```
+```powershell
 Get-SSMPatchBaseline
 ```
 **Output:**
@@ -1764,7 +1764,7 @@ Baseline containing all updates approved for production systems pb-0a2f1059b670e
 ```
 **Example 2: This example lists all patch baselines provided by AWS. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="OWNER";Values=@("AWS")}
 ```
 **Output:**
@@ -1774,7 +1774,7 @@ Get-SSMPatchBaseline -Filter $filter1
 ```
 **Example 3: This example lists all patch baselines with you as the owner. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="OWNER";Values=@("Self")}
 ```
 **Output:**
@@ -1784,7 +1784,7 @@ Get-SSMPatchBaseline -Filter $filter1
 ```
 **Example 4: With PowerShell version 2, you must use New-Object to create each tag.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.PatchOrchestratorFilter
 $filter1.Key = "OWNER"
 $filter1.Values = "AWS"
@@ -1809,7 +1809,7 @@ The following code example shows how to use `Get-SSMPatchBaselineDetail`.
 **Tools for PowerShell V4**
 **Example 1: This example displays the details for a patch baseline.**
 
-```
+```powershell
 Get-SSMPatchBaselineDetail -BaselineId "pb-03da896ca3b68b639"
 ```
 **Output:**
@@ -1836,7 +1836,7 @@ The following code example shows how to use `Get-SSMPatchBaselineForPatchGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example displays the patch baseline for a patch group.**
 
-```
+```powershell
 Get-SSMPatchBaselineForPatchGroup -PatchGroup "Production"
 ```
 **Output:**
@@ -1856,7 +1856,7 @@ The following code example shows how to use `Get-SSMPatchGroup`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the patch group registrations.**
 
-```
+```powershell
 Get-SSMPatchGroup
 ```
 **Output:**
@@ -1876,7 +1876,7 @@ The following code example shows how to use `Get-SSMPatchGroupState`.
 **Tools for PowerShell V4**
 **Example 1: This example gets the high-level patch compliance summary for a patch group.**
 
-```
+```powershell
 Get-SSMPatchGroupState -PatchGroup "Production"
 ```
 **Output:**
@@ -1899,7 +1899,7 @@ The following code example shows how to use `Get-SSMResourceComplianceSummaryLis
 **Tools for PowerShell V4**
 **Example 1: This example gets a resource-level summary count. The summary includes information about compliant and non-compliant statuses and detailed compliance-item severity counts for products that match "Windows10". Because the MaxResult default is 100 if the parameter is not specified, and this value is not valid, MaxResult parameter is added, and the value is set to 50.**
 
-```
+```powershell
 $FilterValues = @{
 		"Key"="Product"
         "Type"="EQUAL"
@@ -1917,7 +1917,7 @@ The following code example shows how to use `Get-SSMResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example lists the tags for a maintenance window.**
 
-```
+```powershell
 Get-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow"
 ```
 **Output:**
@@ -1937,7 +1937,7 @@ The following code example shows how to use `New-SSMActivation`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a managed instance.**
 
-```
+```powershell
 New-SSMActivation -DefaultInstanceName "MyWebServers" -IamRole "SSMAutomationRole" -RegistrationLimit 10
 ```
 **Output:**
@@ -1957,7 +1957,7 @@ The following code example shows how to use `New-SSMAssociation`.
 **Tools for PowerShell V4**
 **Example 1: This example associates a configuration document with an instance, using instance IDs.**
 
-```
+```powershell
 New-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgent"
 ```
 **Output:**
@@ -1973,7 +1973,7 @@ Status.AdditionalInfo :
 ```
 **Example 2: This example associates a configuration document with an instance, using targets.**
 
-```
+```powershell
 $target = @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 New-SSMAssociation -Name "AWS-UpdateSSMAgent" -Target $target
 ```
@@ -1990,7 +1990,7 @@ Status.AdditionalInfo :
 ```
 **Example 3: This example associates a configuration document with an instance, using targets and parameters.**
 
-```
+```powershell
 $target = @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 $params = @{
   "action"="configure"
@@ -2014,7 +2014,7 @@ Status.AdditionalInfo :
 ```
 **Example 4: This example creates an association with all instances in the region, with `AWS-GatherSoftwareInventory`. It also provides custom files and registry locations in the parameters to collect**
 
-```
+```powershell
 $params = [Collections.Generic.Dictionary[String,Collections.Generic.List[String]]]::new()
 $params["windowsRegistry"] ='[{"Path":"HKEY_LOCAL_MACHINE\SOFTWARE\Amazon\MachineImage","Recursive":false,"ValueNames":["AMIName"]}]'
 $params["files"] = '[{"Path":"C:\Program Files","Pattern":["*.exe"],"Recursive":true}, {"Path":"C:\ProgramData","Pattern":["*.log"],"Recursive":true}]'
@@ -2041,7 +2041,7 @@ The following code example shows how to use `New-SSMAssociationFromBatch`.
 **Tools for PowerShell V4**
 **Example 1: This example associates a configuration document with multiple instances. The output returns a list of successful and failed operations, if applicable.**
 
-```
+```powershell
 $option1 = @{InstanceId="i-0cb2b964d3e14fd9f";Name=@("AWS-UpdateSSMAgent")}
 $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 New-SSMAssociationFromBatch -Entry $option1,$option2
@@ -2055,7 +2055,7 @@ Failed  Successful
 ```
 **Example 2: This example will show the full details of a successful operation.**
 
-```
+```powershell
 $option1 = @{InstanceId="i-0cb2b964d3e14fd9f";Name=@("AWS-UpdateSSMAgent")}
 $option2 = @{InstanceId="i-0000293ffd8c57862";Name=@("AWS-UpdateSSMAgent")}
 (New-SSMAssociationFromBatch -Entry $option1,$option2).Successful
@@ -2070,7 +2070,7 @@ The following code example shows how to use `New-SSMDocument`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a document in your account. The document must be in JSON format. For more information about writing a configuration document, see Configuration Document in the SSM API Reference.**
 
-```
+```powershell
 New-SSMDocument -Content (Get-Content -Raw "c:\temp\RunShellScript.json") -Name "RunShellScript" -DocumentType "Command"
 ```
 **Output:**
@@ -2102,7 +2102,7 @@ The following code example shows how to use `New-SSMMaintenanceWindow`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new maintenance window with the specified name that runs at 4 PM on every Tuesday for 4 hours, with a 1 hour cutoff, and that allows unassociated targets.**
 
-```
+```powershell
 New-SSMMaintenanceWindow -Name "MyMaintenanceWindow" -Duration 4 -Cutoff 1 -AllowUnassociatedTarget $true -Schedule "cron(0 16 ? * TUE *)"
 ```
 **Output:**
@@ -2120,7 +2120,7 @@ The following code example shows how to use `New-SSMPatchBaseline`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a patch baseline that approves patches, seven days after they are released by Microsoft, for managed instances running Windows Server 2019 in a production environment.**
 
-```
+```powershell
 $rule = New-Object Amazon.SimpleSystemsManagement.Model.PatchRule
 $rule.ApproveAfterDays = 7
 
@@ -2165,7 +2165,7 @@ The following code example shows how to use `Register-SSMDefaultPatchBaseline`.
 **Tools for PowerShell V4**
 **Example 1: This example registers a patch baseline as the default patch baseline.**
 
-```
+```powershell
 Register-SSMDefaultPatchBaseline -BaselineId "pb-03da896ca3b68b639"
 ```
 **Output:**
@@ -2183,7 +2183,7 @@ The following code example shows how to use `Register-SSMPatchBaselineForPatchGr
 **Tools for PowerShell V4**
 **Example 1: This example registers a patch baseline for a patch group.**
 
-```
+```powershell
 Register-SSMPatchBaselineForPatchGroup -BaselineId "pb-03da896ca3b68b639" -PatchGroup "Production"
 ```
 **Output:**
@@ -2203,7 +2203,7 @@ The following code example shows how to use `Register-SSMTargetWithMaintenanceWi
 **Tools for PowerShell V4**
 **Example 1: This example registers an instance with a maintenance window.**
 
-```
+```powershell
 $option1 = @{Key="InstanceIds";Values=@("i-0000293ffd8c57862")}
 Register-SSMTargetWithMaintenanceWindow -WindowId "mw-06cf17cbefcb4bf4f" -Target $option1 -OwnerInformation "Single instance" -ResourceType "INSTANCE"
 ```
@@ -2214,7 +2214,7 @@ d8e47760-23ed-46a5-9f28-927337725398
 ```
 **Example 2: This example registers multiple instances with a maintenance window.**
 
-```
+```powershell
 $option1 = @{Key="InstanceIds";Values=@("i-0000293ffd8c57862","i-0cb2b964d3e14fd9f")}
 Register-SSMTargetWithMaintenanceWindow -WindowId "mw-06cf17cbefcb4bf4f" -Target $option1 -OwnerInformation "Single instance" -ResourceType "INSTANCE"
 ```
@@ -2225,7 +2225,7 @@ Register-SSMTargetWithMaintenanceWindow -WindowId "mw-06cf17cbefcb4bf4f" -Target
 ```
 **Example 3: This example registers an instance with a maintenance window using EC2 tags.**
 
-```
+```powershell
 $option1 = @{Key="tag:Environment";Values=@("Production")}
 Register-SSMTargetWithMaintenanceWindow -WindowId "mw-06cf17cbefcb4bf4f" -Target $option1 -OwnerInformation "Production Web Servers" -ResourceType "INSTANCE"
 ```
@@ -2244,7 +2244,7 @@ The following code example shows how to use `Register-SSMTaskWithMaintenanceWind
 **Tools for PowerShell V4**
 **Example 1: This example registers a task with a maintenance window using an instance ID. The output is the Task ID.**
 
-```
+```powershell
 $parameters = @{}
 $parameterValues = New-Object Amazon.SimpleSystemsManagement.Model.MaintenanceWindowTaskParameterValueExpression
 $parameterValues.Values = @("Install")
@@ -2259,7 +2259,7 @@ f34a2c47-ddfd-4c85-a88d-72366b69af1b
 ```
 **Example 2: This example registers a task with a maintenance window using a target ID. The output is the Task ID.**
 
-```
+```powershell
 $parameters = @{}
 $parameterValues = New-Object Amazon.SimpleSystemsManagement.Model.MaintenanceWindowTaskParameterValueExpression
 $parameterValues.Values = @("Install")
@@ -2274,7 +2274,7 @@ f34a2c47-ddfd-4c85-a88d-72366b69af1b
 ```
 **Example 3: This example creates a parameter object for the run command document `AWS-RunPowerShellScript` and creates a task with given maintenance window using target ID. The return output is the task ID.**
 
-```
+```powershell
 $parameters = [Collections.Generic.Dictionary[String,Collections.Generic.List[String]]]::new()
 $parameters.Add("commands",@("ipconfig","dir env:\computername"))
 $parameters.Add("executionTimeout",@(3600))
@@ -2301,7 +2301,7 @@ f1e2ef34-5678-12e3-456a-12334c5c6cbe
 ```
 **Example 4: This example registers an AWS Systems Manager Automation task by using a document named `Create-Snapshots`.**
 
-```
+```powershell
 $automationParameters = @{}
 $automationParameters.Add( "instanceId", @("{{ TARGET_ID }}") )
 $automationParameters.Add( "AutomationAssumeRole", @("{arn:aws:iam::111111111111:role/AutomationRole}") )
@@ -2324,7 +2324,7 @@ The following code example shows how to use `Remove-SSMActivation`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes an activation. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMActivation -ActivationId "08e51e79-1e36-446c-8e63-9458569c1363"
 ```
 +  For API details, see [DeleteActivation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2337,7 +2337,7 @@ The following code example shows how to use `Remove-SSMAssociation`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes the association between an instance and a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMAssociation -InstanceId "i-0cb2b964d3e14fd9f" -Name "AWS-UpdateSSMAgent"
 ```
 +  For API details, see [DeleteAssociation](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2350,7 +2350,7 @@ The following code example shows how to use `Remove-SSMDocument`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes a document. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMDocument -Name "RunShellScript"
 ```
 +  For API details, see [DeleteDocument](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2363,7 +2363,7 @@ The following code example shows how to use `Remove-SSMMaintenanceWindow`.
 **Tools for PowerShell V4**
 **Example 1: This example removes a maintenance window.**
 
-```
+```powershell
 Remove-SSMMaintenanceWindow -WindowId "mw-06d59c1a07c022145"
 ```
 **Output:**
@@ -2381,7 +2381,7 @@ The following code example shows how to use `Remove-SSMParameter`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMParameter -Name "helloWorld"
 ```
 +  For API details, see [DeleteParameter](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2394,7 +2394,7 @@ The following code example shows how to use `Remove-SSMPatchBaseline`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes a patch baseline.**
 
-```
+```powershell
 Remove-SSMPatchBaseline -BaselineId "pb-045f10b4f382baeda"
 ```
 **Output:**
@@ -2412,7 +2412,7 @@ The following code example shows how to use `Remove-SSMResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example removes a tag from a maintenance window. There is no output if the command succeeds.**
 
-```
+```powershell
 Remove-SSMResourceTag -ResourceId "mw-03eb9db42890fb82d" -ResourceType "MaintenanceWindow" -TagKey "Production"
 ```
 +  For API details, see [RemoveTagsFromResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2425,7 +2425,7 @@ The following code example shows how to use `Send-SSMCommand`.
 **Tools for PowerShell V4**
 **Example 1: This example runs an echo command on a target instance.**
 
-```
+```powershell
 Send-SSMCommand -DocumentName "AWS-RunPowerShellScript" -Parameter @{commands = "echo helloWorld"} -Target @{Key="instanceids";Values=@("i-0cb2b964d3e14fd9f")}
 ```
 **Output:**
@@ -2454,7 +2454,7 @@ Targets            : {instanceids}
 ```
 **Example 2: This example shows how to run a command that accepts nested parameters.**
 
-```
+```powershell
 Send-SSMCommand -DocumentName "AWS-RunRemoteScript" -Parameter @{ sourceType="GitHub";sourceInfo='{"owner": "me","repository": "amazon-ssm","path": "Examples/Install-Win32OpenSSH"}'; "commandLine"=".\Install-Win32OpenSSH.ps1"} -InstanceId i-0cb2b964d3e14fd9f
 ```
 +  For API details, see [SendCommand](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2467,7 +2467,7 @@ The following code example shows how to use `Start-SSMAutomationExecution`.
 **Tools for PowerShell V4**
 **Example 1: This example runs a document specifying an Automation role, an AMI source ID, and an Amazon EC2 instance role.**
 
-```
+```powershell
 Start-SSMAutomationExecution -DocumentName AWS-UpdateLinuxAmi -Parameter @{'AutomationAssumeRole'='arn:aws:iam::123456789012:role/SSMAutomationRole';'SourceAmiId'='ami-f173cc91';'InstanceIamRole'='EC2InstanceRole'}
 ```
 **Output:**
@@ -2485,7 +2485,7 @@ The following code example shows how to use `Start-SSMSession`.
 **Tools for PowerShell V4**
 **Example 1: This example initiates a connection to a target for a Session Manager session, enabling port forwarding.**
 
-```
+```powershell
 Start-SSMSession -Target 'i-064578e5e7454488f' -DocumentName 'AWS-StartPortForwardingSession' -Parameter @{ localPortNumber = '8080'; portNumber = '80' }
 ```
 **Output:**
@@ -2505,7 +2505,7 @@ The following code example shows how to use `Stop-SSMAutomationExecution`.
 **Tools for PowerShell V4**
 **Example 1: This example stops an Automation Execution. There is no output if the command succeeds.**
 
-```
+```powershell
 Stop-SSMAutomationExecution -AutomationExecutionId "4105a4fc-f944-11e6-9d32-8fb2db27a909"
 ```
 +  For API details, see [StopAutomationExecution](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2518,7 +2518,7 @@ The following code example shows how to use `Stop-SSMCommand`.
 **Tools for PowerShell V4**
 **Example 1: This example attempts to cancel a command. There is no output if the operation succeeds.**
 
-```
+```powershell
 Stop-SSMCommand -CommandId "9ded293e-e792-4440-8e3e-7b8ec5feaa38"
 ```
 +  For API details, see [CancelCommand](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2531,7 +2531,7 @@ The following code example shows how to use `Unregister-SSMManagedInstance`.
 **Tools for PowerShell V4**
 **Example 1: This example deregisters a managed instance. There is no output if the command succeeds.**
 
-```
+```powershell
 Unregister-SSMManagedInstance -InstanceId "mi-08ab247cdf1046573"
 ```
 +  For API details, see [DeregisterManagedInstance](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2544,7 +2544,7 @@ The following code example shows how to use `Unregister-SSMPatchBaselineForPatch
 **Tools for PowerShell V4**
 **Example 1: This example deregisters a patch group from a patch baseline.**
 
-```
+```powershell
 Unregister-SSMPatchBaselineForPatchGroup -BaselineId "pb-045f10b4f382baeda" -PatchGroup "Production"
 ```
 **Output:**
@@ -2564,7 +2564,7 @@ The following code example shows how to use `Unregister-SSMTargetFromMaintenance
 **Tools for PowerShell V4**
 **Example 1: This example removes a target from a maintenance window.**
 
-```
+```powershell
 Unregister-SSMTargetFromMaintenanceWindow -WindowTargetId "6ab5c208-9fc4-4697-84b7-b02a6cc25f7d" -WindowId "mw-06cf17cbefcb4bf4f"
 ```
 **Output:**
@@ -2584,7 +2584,7 @@ The following code example shows how to use `Unregister-SSMTaskFromMaintenanceWi
 **Tools for PowerShell V4**
 **Example 1: This example removes a task from a maintenance window.**
 
-```
+```powershell
 Unregister-SSMTaskFromMaintenanceWindow -WindowTaskId "f34a2c47-ddfd-4c85-a88d-72366b69af1b" -WindowId "mw-03a342e62c96d31b0"
 ```
 **Output:**
@@ -2604,7 +2604,7 @@ The following code example shows how to use `Update-SSMAssociation`.
 **Tools for PowerShell V4**
 **Example 1: This example updates an association with a new document version.**
 
-```
+```powershell
 Update-SSMAssociation -AssociationId "93285663-92df-44cb-9f26-2292d4ecc439" -DocumentVersion "1"
 ```
 **Output:**
@@ -2628,7 +2628,7 @@ The following code example shows how to use `Update-SSMAssociationStatus`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the association status of the association between an instance and a configuration document.**
 
-```
+```powershell
 Update-SSMAssociationStatus -Name "AWS-UpdateSSMAgent" -InstanceId "i-0000293ffd8c57862" -AssociationStatus_Date "2015-02-20T08:31:11Z" -AssociationStatus_Name "Pending" -AssociationStatus_Message "temporary_status_change" -AssociationStatus_AdditionalInfo "Additional-Config-Needed"
 ```
 **Output:**
@@ -2652,7 +2652,7 @@ The following code example shows how to use `Update-SSMDocument`.
 **Tools for PowerShell V4**
 **Example 1: This creates a new version of a document with the updated contents of the json file you specify. The document must be in JSON format. You can obtain the document version with the "Get-SSMDocumentVersionList" cmdlet.**
 
-```
+```powershell
 Update-SSMDocument -Name RunShellScript -DocumentVersion "1" -Content (Get-Content -Raw "c:\temp\RunShellScript.json")
 ```
 **Output:**
@@ -2684,7 +2684,7 @@ The following code example shows how to use `Update-SSMDocumentDefaultVersion`.
 **Tools for PowerShell V4**
 **Example 1: This updates the default version of a document. You can obtain the available document versions with the "Get-SSMDocumentVersionList" cmdlet.**
 
-```
+```powershell
 Update-SSMDocumentDefaultVersion -Name "RunShellScript" -DocumentVersion "2"
 ```
 **Output:**
@@ -2704,7 +2704,7 @@ The following code example shows how to use `Update-SSMMaintenanceWindow`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the name of a maintenance window.**
 
-```
+```powershell
 Update-SSMMaintenanceWindow -WindowId "mw-03eb9db42890fb82d" -Name "My-Renamed-MW"
 ```
 **Output:**
@@ -2720,7 +2720,7 @@ WindowId                 : mw-03eb9db42890fb82d
 ```
 **Example 2: This example enables a maintenance window.**
 
-```
+```powershell
 Update-SSMMaintenanceWindow -WindowId "mw-03eb9db42890fb82d" -Enabled $true
 ```
 **Output:**
@@ -2736,7 +2736,7 @@ WindowId                 : mw-03eb9db42890fb82d
 ```
 **Example 3: This example disables a maintenance window.**
 
-```
+```powershell
 Update-SSMMaintenanceWindow -WindowId "mw-03eb9db42890fb82d" -Enabled $false
 ```
 **Output:**
@@ -2760,7 +2760,7 @@ The following code example shows how to use `Update-SSMManagedInstanceRole`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the role of a managed instance. There is no output if the command succeeds.**
 
-```
+```powershell
 Update-SSMManagedInstanceRole -InstanceId "mi-08ab247cdf1046573" -IamRole "AutomationRole"
 ```
 +  For API details, see [UpdateManagedInstanceRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -2773,7 +2773,7 @@ The following code example shows how to use `Update-SSMPatchBaseline`.
 **Tools for PowerShell V4**
 **Example 1: This example adds two patches as rejected and one patch as approved to an existing patch baseline.**
 
-```
+```powershell
 Update-SSMPatchBaseline -BaselineId "pb-03da896ca3b68b639" -RejectedPatch "KB2032276","MS10-048" -ApprovedPatch "KB2124261"
 ```
 **Output:**
@@ -2799,7 +2799,7 @@ The following code example shows how to use `Write-SSMComplianceItem`.
 **Tools for PowerShell V4**
 **Example 1: This example writes a custom compliance item for the given managed instance**
 
-```
+```powershell
 $item = [Amazon.SimpleSystemsManagement.Model.ComplianceItemEntry]::new()
 $item.Id = "07Jun2019-3"
 $item.Severity="LOW"
@@ -2817,7 +2817,7 @@ The following code example shows how to use `Write-SSMInventory`.
 **Tools for PowerShell V4**
 **Example 1: This example assigns rack location information to an instance. There is no output if the command succeeds.**
 
-```
+```powershell
 $data = New-Object "System.Collections.Generic.Dictionary[System.String,System.String]"
 $data.Add("RackLocation", "Bay B/Row C/Rack D/Shelf F")
 
@@ -2844,12 +2844,12 @@ The following code example shows how to use `Write-SSMParameter`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Write-SSMParameter -Name "Welcome" -Type "String" -Value "helloWorld"
 ```
 **Example 2: This example changes a parameter. There is no output if the command succeeds.**
 
-```
+```powershell
 Write-SSMParameter -Name "Welcome" -Type "String" -Value "Good day, Sunshine!" -Overwrite $true
 ```
 +  For API details, see [PutParameter](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

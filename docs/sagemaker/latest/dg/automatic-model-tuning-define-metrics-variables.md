@@ -40,7 +40,7 @@ GAN_loss=0.138318;  Scaled_reg=2.654134; disc:[-0.017371,0.102429] real 93.3% ge
 
 The following code example shows how to use regular expressions in Python (regex). This is used to search the sample log output and capture the numeric values of four different metrics.
 
-```
+```json
 [
     {
         "Name": "ganloss",

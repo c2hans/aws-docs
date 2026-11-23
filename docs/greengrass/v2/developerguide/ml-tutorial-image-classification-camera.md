@@ -37,13 +37,13 @@ You also need the following:
   + On Greengrass core devices running Amazon Linux 2 or Ubuntu 18.04, [GNU C Library](https://www.gnu.org/software/libc/) (glibc) version 2.27 or later installed on the device.
   + On Armv7l devices, such as Raspberry Pi, dependencies for OpenCV-Python installed on the device. Run the following command to install the dependencies.
 
-    ```
+    ```bash
     sudo apt-get install libopenjp2-7 libilmbase23 libopenexr-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk-3-0 libwebp-dev
     ```
   + Raspberry Pi devices that run Raspberry Pi OS Bullseye must meet the following requirements:
     + NumPy 1.22.4 or later installed on the device. Raspberry Pi OS Bullseye includes an earlier version of NumPy, so you can run the following command to upgrade NumPy on the device.
 
-      ```
+      ```bash
       pip3 install --upgrade numpy
       ```
     + The legacy camera stack enabled on the device. Raspberry Pi OS Bullseye includes a new camera stack that is enabled by default and isn't compatible, so you must enable the legacy camera stack.<a name="raspberry-pi-bullseye-enable-legacy-camera-stack"></a>
@@ -52,7 +52,7 @@ You also need the following:
 
       1. Run the following command to open the Raspberry Pi configuration tool.
 
-         ```
+         ```bash
          sudo raspi-config
          ```
 
@@ -73,13 +73,13 @@ In this step, you install and enable the camera module for your device. Run the 
 
 1. <a name="install-picamera-step"></a>Install the `picamera` interface for the camera module. Run the following command to install the camera module and the other Python libraries that are required for this tutorial.
 
-   ```
+   ```bash
    sudo apt-get install -y python3-picamera
    ```
 
 1. Verify that Picamera installed successfully.
 
-   ```
+   ```bash
    sudo -u ggc_user bash -c 'python3 -c "import picamera"'
    ```
 
@@ -89,13 +89,13 @@ If the Python executable file that is installed on your device is `python3.7`, u
 
 1. Reboot the device.
 
-   ```
+   ```bash
    sudo reboot
    ```
 
 1. Open the Raspberry Pi configuration tool.
 
-   ```
+   ```bash
    sudo raspi-config
    ```
 
@@ -103,7 +103,7 @@ If the Python executable file that is installed on your device is `python3.7`, u
 
 1. Run the following command to test the camera setup.
 
-   ```
+   ```bash
    raspistill -v -o test.jpg
    ```
 
@@ -111,7 +111,7 @@ If the Python executable file that is installed on your device is `python3.7`, u
 
 1. Run the following command to create a symlink to enable the inference component to access your camera from the virtual environment that is created by the runtime component.
 
-   ```
+   ```bash
    sudo ln -s /usr/lib/python3/dist-packages/picamera "{{MLRootPath}}/greengrass_ml_tflite_venv/lib/python3.7/site-packages"
    ```
 
@@ -122,7 +122,7 @@ If the Python executable file that is installed on your device is `python3.7`, u
 
 1. Run the following command to test the camera setup.
 
-   ```
+   ```bash
    gst-launch-1.0 nvarguscamerasrc num-buffers=1 ! "video/x-raw(memory:NVMM), width=1920, height=1080, format=NV12, framerate=30/1" ! nvjpegenc ! filesink location=test.jpg
    ```
 
@@ -130,7 +130,7 @@ If the Python executable file that is installed on your device is `python3.7`, u
 
 1. (Optional) Reboot the device. If you encounter issues when you run the `gst-launch` command in the previous step, rebooting your device might resolve those issues.
 
-   ```
+   ```bash
    sudo reboot
    ```
 
@@ -178,7 +178,7 @@ In this step, you configure and deploy the TensorFlow Lite image classification 
 
    1. Under **Configuration update**, enter the following configuration update in the **Configuration to merge** box.
 
-      ```
+      ```json
       {
         "InferenceInterval": "60",
         "UseCamera": "true"
@@ -198,7 +198,7 @@ In this step, you configure and deploy the TensorFlow Lite image classification 
 
 1. Create a `deployment.json` file to define the deployment configuration for the TensorFlow Lite image classification component. This file should look like the following:
 
-   ```
+   ```json
    {
      "targetArn":"{{targetArn}}",
      "components": {
@@ -221,7 +221,7 @@ In this step, you configure and deploy the TensorFlow Lite image classification 
 
 1. Run the following command to deploy the TensorFlow Lite image classification component on the device:
 
-   ```
+   ```bash
    aws greengrassv2 create-deployment \
        --cli-input-json file://{{path/to/}}deployment.json
    ```
@@ -241,13 +241,13 @@ After you deploy the component, you can view the inference results in the compon
   1. Under **Subscriptions**, choose **ml/tflite/image-classification**.
 + **Component log**—To view the inference results in the component log, run the following command on your Greengrass core device.
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.TensorFlowLiteImageClassification.log
   ```
 
 If you can't see inference results in the component log or in the MQTT client, the deployment failed or didn't reach the core device. This can occur if your core device isn't connected to the internet or doesn't have the required permissions to run the component. Run the following command on your core device to view the AWS IoT Greengrass Core software log file. This file includes logs from the Greengrass core device's deployment service.
 
-```
+```bash
 sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
 ```
 

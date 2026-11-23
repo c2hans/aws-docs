@@ -30,7 +30,7 @@ The following AWS Glue ETL script shows the process of reading Ion files or fold
 
 For this example, use the [create\_dynamic\_frame.from\_options](aws-glue-api-crawler-pyspark-extensions-glue-context.md#aws-glue-api-crawler-pyspark-extensions-glue-context-create_dynamic_frame_from_options) method.
 
-```
+```python
 # Example: Read ION from S3
 
 from pyspark.context import SparkContext
@@ -51,7 +51,7 @@ dynamicFrame = glueContext.create_dynamic_frame.from_options(
 
 For this example, use the [getSourceWithFormat](glue-etl-scala-apis-glue-gluecontext.md#glue-etl-scala-apis-glue-gluecontext-defs-getSourceWithFormat) operation.
 
-```
+```scala
 // Example: Read ION from S3
 
 import com.amazonaws.services.glue.util.JsonOptions

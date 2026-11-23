@@ -40,7 +40,7 @@ When a request is made to an AWS service using an identity-enhanced IAM role ses
 
 The following is an example of how a request made to an AWS service using an identity-enhanced role session is logged in CloudTrail.
 
-```
+```JSON
 "userIdentity": {
       "type": "AssumedRole",
       "principalId": "AROAEXAMPLE:MyRole",

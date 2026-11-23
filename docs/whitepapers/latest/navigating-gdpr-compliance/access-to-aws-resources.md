@@ -10,7 +10,7 @@ For other users, you can allow read-only access to only some Amazon S3 buckets; 
 
 The following policy is an example of one method you can use to allow all actions on a specific Amazon S3 bucket and explicitly deny access to every AWS service that is not Amazon S3.
 
-```
+```json
 {
 “Version”: “2012-10-17”,
 “Statement”: [

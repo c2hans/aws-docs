@@ -14,7 +14,7 @@ The following code examples show how to use `RejectEngagementInvitation`.
 **SDK for Java 2.x**
 Rejects an EngagementInvitation that AWS shared.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -73,7 +73,7 @@ public class RejectEngagementInvitation {
 **SDK for Python (Boto3)**
 Rejects an EngagementInvitation that AWS shared.
 
-```
+```python
 #!/usr/bin/env python
 
 """

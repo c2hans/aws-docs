@@ -27,7 +27,7 @@ The following is an example policy. For the `Resource` elements, replace {{amzn-
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "AWSLogDeliveryWrite",
@@ -98,7 +98,7 @@ The key policy must allow the service to encrypt and decrypt the logs. The follo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -169,7 +169,7 @@ aws elbv2 modify-load-balancer-attributes \
 **To enable access logs**
 Update the [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) resource to include the related attributes.
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'

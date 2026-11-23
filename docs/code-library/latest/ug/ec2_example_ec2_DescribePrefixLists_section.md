@@ -45,7 +45,7 @@ For more information, see [AWS-managed prefix lists](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This example fetches the available AWS services in a prefix list format for the region**
 
-```
+```powershell
 Get-EC2PrefixList
 ```
 **Output:**
@@ -61,7 +61,7 @@ Cidrs                                          PrefixListId PrefixListName
 **Tools for PowerShell V5**
 **Example 1: This example fetches the available AWS services in a prefix list format for the region**
 
-```
+```powershell
 Get-EC2PrefixList
 ```
 **Output:**

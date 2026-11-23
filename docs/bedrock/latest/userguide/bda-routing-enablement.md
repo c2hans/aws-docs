@@ -19,7 +19,7 @@ When using the BDA console, modality enablement is handled by a checklist, where
 **Disabling modalities with the BDA API**
 When using the BDA API, modality enablement is handled by the `overrideConfiguration` request element, located in the `CreateDataAutomation` operation. Each modality has an associate section where you can declare the modality `ENABLED` or `DISABLED`. Below is an example of the `overrideConfiguration` element with only document and audio modalities enabled. The `modalityProcessing` flag defaults to `ENABLED`.
 
-```
+```json
 "overrideConfiguration" : {
     "document": {
         "splitter": {

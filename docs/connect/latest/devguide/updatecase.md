@@ -9,7 +9,7 @@ Updates an existing case by providing the case’s id and the fields that should
 ## Parameter object
 <a name="updatecase-parameter"></a>
 
-```
+```json
 {
   “LinkContactToCase” : "true" or "false", If set to true, cases open automatically when the agent accepts the contact.
   “CaseId”: the unique identifier of the case

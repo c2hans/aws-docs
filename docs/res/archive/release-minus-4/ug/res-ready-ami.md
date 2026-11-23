@@ -41,7 +41,7 @@ Follow the directions to [Create a component using the Image Builder console](ht
 
 1. Enter your component's version number and optionally add a description.
 
-   ```
+   ```YAML
    key : value
    ```
 
@@ -52,7 +52,7 @@ In the definition file, replace **latest** in the download URI (`- source: 's3:/
 ------
 #### [ Linux ]
 
-   ```
+   ```YAML
    #  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    #
    #  Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance
@@ -120,7 +120,7 @@ In the definition file, replace **latest** in the download URI (`- source: 's3:/
 ------
 #### [ Windows ]
 
-   ```
+   ```YAML
    #  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    #
    #  Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance

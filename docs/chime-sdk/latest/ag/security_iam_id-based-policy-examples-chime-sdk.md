@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/security_iam_id-base
 
 You use the AWS managed `AmazonChimeVoiceConnectorServiceLinkedRolePolicy` to grant users access to Amazon Chime SDK actions. For more information, see [Example IAM roles](https://docs.aws.amazon.com/chime/latest/dg/iam-roles.html) in the *Amazon Chime SDK Developer Guide*, and [Actions, resources, and condition keys for Amazon Chime](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonchime.html) in the *Service Authorization Reference*.
 
-```
+```json
 // Policy ARN: arn:aws:iam::aws:policy/AmazonChimeSDK
 // Description: Provides access to Amazon Chime SDK operations
 {

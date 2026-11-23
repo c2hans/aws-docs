@@ -244,7 +244,7 @@ Amazon Chime SDK SIP trunking and voice have the following quotas.
 |  Amazon Chime SDK SIP trunking and voice - Voice Connector groups  |  3  |  Yes  |  The maximum number of Voice Connector groups you can have in this account.  |
 |  Amazon Chime SDK SIP trunking and voice - Voice Connectors per Voice Connector group  |  3  |  Yes  |  The maximum number of Voice Connectors you can have in any Voice Connector group  |
 |  Amazon Chime SDK SIP trunking and voice - calls per second (CPS)  |  1  |  Yes  |  The maximum calls per second (CPS) allowed on each Voice Connector in the current AWS Region  |
-|  Amazon Chime SDK SIP trunking and voice - SIP media applications  |  30  |  Yes  |  The maximum number of SIP media applications you can have in the current AWS Region  |
+|  Amazon Chime SDK SIP trunking and voice - SIP media applications  |  0  |  Yes  |  The maximum number of SIP media applications you can have in the current AWS Region  |
 |  Amazon Chime SDK SIP trunking and voice - SIP media applications per SIP rule  |  25  |  Yes  |  The maximum number of SIP media applications you can have in a SIP rule in the current AWS Region  |
 |  Amazon Chime SDK SIP trunking and voice - CreateSipMediaApplicationCall API rate limit  |  1  |  Yes  |  The maximum number of requests to the CreateSipMediaApplicationCall API per second allowed in the current AWS Region.  |
 |  Amazon Chime SDK SIP trunking and voice - UpdateSipMediaApplicationCall API rate limit  |  5  |  Yes  |  The maximum number of requests to the UpdateSipMediaApplicationCall API per second allowed in the current AWS Region.  |

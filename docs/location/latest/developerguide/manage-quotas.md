@@ -37,7 +37,7 @@ Service Quotas console allows you to [request quota increases or decrease quota]
 
 Run the following command to view the default Amazon Location quotas.
 
-```
+```sh
 aws service-quotas list-aws-default-service-quotas \
     --query 'Quotas[*].{Adjustable:Adjustable,Name:QuotaName,Value:Value,Code:QuotaCode}' \
     --service-code geo \

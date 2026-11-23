@@ -46,7 +46,7 @@ For more information, see [Track your Spot Instance costs using the Spot Instanc
 **Tools for PowerShell V4**
 **Example 1: This example creates a Spot instance data feed.**
 
-```
+```powershell
 New-EC2SpotDatafeedSubscription -Bucket amzn-s3-demo-bucket -Prefix spotdata
 ```
 **Output:**
@@ -63,7 +63,7 @@ State   : Active
 **Tools for PowerShell V5**
 **Example 1: This example creates a Spot instance data feed.**
 
-```
+```powershell
 New-EC2SpotDatafeedSubscription -Bucket amzn-s3-demo-bucket -Prefix spotdata
 ```
 **Output:**

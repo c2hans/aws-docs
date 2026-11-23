@@ -103,7 +103,7 @@ Amazon Aurora PostgreSQL administrative access is managed through the Master dat
    + Use temporary credentials instead of passwords
    + Example policy for IAM database authentication:
 
-     ```
+     ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -361,7 +361,7 @@ Choose the appropriate policy based on your role:
 
  **Testing this policy:**
 
-```
+```bash
 # Verify read access works
 aws rds describe-db-instances
 aws rds describe-db-clusters
@@ -372,7 +372,7 @@ aws rds modify-db-instance --db-instance-identifier test-db
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -406,7 +406,7 @@ aws rds modify-db-instance --db-instance-identifier test-db
 
  **Testing this policy:**
 
-```
+```bash
 # Verify operator access works (requires MFA)
 aws rds modify-db-cluster --db-cluster-identifier <cluster-id> --apply-immediately
 
@@ -416,7 +416,7 @@ aws rds delete-db-cluster --db-cluster-identifier <cluster-id>
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -457,7 +457,7 @@ aws rds delete-db-cluster --db-cluster-identifier <cluster-id>
 
  **Testing this policy:**
 
-```
+```bash
 # Verify full admin access works (requires MFA)
 aws rds create-db-cluster --db-cluster-identifier new-cluster --engine aurora-postgresql
 aws rds delete-db-cluster --db-cluster-identifier old-cluster --skip-final-snapshot
@@ -465,7 +465,7 @@ aws rds delete-db-cluster --db-cluster-identifier old-cluster --skip-final-snaps
 
  **Policy JSON:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -500,7 +500,7 @@ Amazon Aurora PostgreSQL requires encryption at rest using AWS KMS customer-mana
 
    Create dedicated KMS key for encrypting Aurora PostgreSQL cluster
 
-   ```
+   ```bash
    # Create KMS key for Aurora encryption
    aws kms create-key --description 'Aurora PostgreSQL Encryption Key' --key-usage ENCRYPT_DECRYPT
    # Create alias for the key
@@ -511,7 +511,7 @@ Amazon Aurora PostgreSQL requires encryption at rest using AWS KMS customer-mana
 
    Create Aurora cluster with encryption enabled and secure master user configuration
 
-   ```
+   ```bash
    # Create encrypted Aurora PostgreSQL cluster
    aws rds create-db-cluster \
      --db-cluster-identifier my-aurora-pg-cluster \
@@ -529,7 +529,7 @@ Amazon Aurora PostgreSQL requires encryption at rest using AWS KMS customer-mana
 
    Enable SSL enforcement and comprehensive audit logging with pg\_audit
 
-   ```
+   ```bash
    # Create parameter group with SSL enforcement and pg_audit
    aws rds create-db-cluster-parameter-group \
      --db-cluster-parameter-group-name aurora-postgresql-secure \
@@ -562,7 +562,7 @@ Amazon Aurora PostgreSQL requires implementation of privileged account security 
 
    Configure Amazon Aurora PostgreSQL with minimal required permissions for administrative accounts
 
-   ```
+   ```bash
    # Create least privilege IAM policy for Amazon Aurora PostgreSQL administration
    aws iam create-policy --policy-name ServiceAdminPolicy --policy-document file://admin-policy.json
    # Attach policy to administrative role
@@ -573,7 +573,7 @@ Amazon Aurora PostgreSQL requires implementation of privileged account security 
 
    Require MFA for all privileged operations and administrative access
 
-   ```
+   ```bash
    # Create MFA-required policy condition
    # Add MFA condition to administrative policies
    # Verify MFA enforcement for privileged operations
@@ -583,7 +583,7 @@ Amazon Aurora PostgreSQL requires implementation of privileged account security 
 
    Enable comprehensive logging and monitoring of all privileged account activities
 
-   ```
+   ```bash
    # Enable CloudTrail for API logging
    aws cloudtrail create-trail --name ServicePrivilegedAccess --s3-bucket-name audit-logs
    # Configure CloudWatch alarms for privileged operations
@@ -642,7 +642,7 @@ Export Aurora PostgreSQL configuration using AWS CLI describe commands in JSON f
 
  **API Command:**
 
-```
+```bash
 Configure via AWS RDS APIs for Aurora PostgreSQL cluster management
 ```
 

@@ -18,6 +18,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 
 ![Artificial intelligence and machine learning reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/artificial-intelligence-machine-learning-reference-architecture.png)
 
+*Figure 2: Reference architecture for an AI/ML pipeline*
+
  **AI/ML architecture description**
 
  **Business requirements phase:** Define the functional requirements of the workload identifying the business problem and the desired outcomes of the AI system. Then frame the business problem by analyzing what the AI/ML application solves, what behaviors are observed, and what information should be predicted.

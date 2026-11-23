@@ -89,7 +89,7 @@ To prevent capacity management from recommending specific instances to stop, spe
 
    Example JSON file:
 
-   ```
+   ```JSON
    {
      "InstancePools": [
        {

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
-```
+```json
 {
   "api_key": "{{Paddle API key value}}"
 }
@@ -23,7 +23,7 @@ The Paddle API key value (starts with `pdl_live_`, `pdl_test_`, or `pdl_sdbx_` f
 
 The following are the metadata fields for Paddle API Key:
 
-```
+```json
 {
   "gracePeriodSeconds": "{{300 (optional)}}"
 }

@@ -123,7 +123,7 @@ This example illustrates one usage of BatchGetIncidentFindings.
 #### Sample Request
 <a name="API_BatchGetIncidentFindings_Example_1_Request"></a>
 
-```
+```json
 POST /batchGetIncidentFindings HTTP/1.1
 Host: ssm-incidents.us-east-2.amazonaws.com
 Accept-Encoding: identity
@@ -146,7 +146,7 @@ Content-Length: 154
 #### Sample Response
 <a name="API_BatchGetIncidentFindings_Example_1_Response"></a>
 
-```
+```json
 {
   "errors": [
     {

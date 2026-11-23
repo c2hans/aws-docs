@@ -35,7 +35,7 @@ For more information, see [Tutorial: Getting started with AWS Glue Studio](https
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
         Usage:
@@ -329,7 +329,7 @@ The following code example shows how to use `CreateCrawler`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun createGlueCrawler(
     iam: String?,
     s3Path: String?,
@@ -377,7 +377,7 @@ The following code example shows how to use `GetCrawler`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun getSpecificCrawler(crawlerName: String?) {
     val request =
         GetCrawlerRequest {
@@ -400,7 +400,7 @@ The following code example shows how to use `GetDatabase`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun getSpecificDatabase(databaseName: String?) {
     val request =
         GetDatabaseRequest {
@@ -424,7 +424,7 @@ The following code example shows how to use `StartCrawler`.
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/glue#code-examples).
 
-```
+```kotlin
 suspend fun startSpecificCrawler(crawlerName: String?) {
     val request =
         StartCrawlerRequest {

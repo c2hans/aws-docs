@@ -65,7 +65,7 @@ Enable CORS by returning correct headers.
 #### PUT schema
 <a name="channels-id-configure_logs-request-body-put-example"></a>
 
-```
+```json
 {
   "ingressAccessLogs": {
     "logGroupName": "string"
@@ -82,7 +82,7 @@ Enable CORS by returning correct headers.
 #### Channel schema
 <a name="channels-id-configure_logs-response-body-channel-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "ingressAccessLogs": {

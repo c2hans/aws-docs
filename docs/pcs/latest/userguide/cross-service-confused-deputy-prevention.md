@@ -16,7 +16,7 @@ The value of `aws:SourceArn` must be a cluster ARN.
 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in AWS PCS to prevent the confused deputy problem.
 
-```
+```JSON
 {
 "Version": "2012-10-17",
   "Statement": {
@@ -47,7 +47,7 @@ AWS PCS automatically orchestrates Amazon EC2 capacity for each of the configure
 
 The following example policy grants permissions to pass only IAM roles whose name begins with `AWSPCS`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

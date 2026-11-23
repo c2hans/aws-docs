@@ -37,7 +37,7 @@ Before you build the Maya package, download the Maya installer from your Autodes
 
 Use `rattler-build publish` to build and publish the package. The Maya recipe requires `patchelf` as a build dependency on Linux, which is available from [conda-forge](https://conda-forge.org/) on the conda-forge website. Add `-c conda-forge` to make the dependency available during the build. From the `conda_recipes` directory, run the following command.
 
-```
+```bash
 rattler-build publish maya-2026/recipe/recipe.yaml \
     --to file://$HOME/my-conda-channel \
     --build-number=+1 \

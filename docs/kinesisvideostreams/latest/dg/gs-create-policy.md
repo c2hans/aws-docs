@@ -39,7 +39,7 @@ For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com/io
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

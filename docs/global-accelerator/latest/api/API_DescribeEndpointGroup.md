@@ -102,7 +102,7 @@ aws globalaccelerator describe-endpoint-group
     --endpoint-group-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz-vxyz-6789-vxyz-6789lmnopqrs/endpoint-group/ab88888example
 ```
 
-```
+```json
 {
     "EndpointGroup": {
         "TrafficDialPercentage": 100,

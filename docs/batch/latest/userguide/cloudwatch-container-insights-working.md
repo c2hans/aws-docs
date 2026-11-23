@@ -26,7 +26,7 @@ You can select a default interval to aggregate the metrics or create a custom in
 
 Use the `--ecs-settings` parameter with `create-compute-environment` to enable Container Insights on a new compute environment.
 
-```
+```sh
 $ aws batch create-compute-environment \
     --compute-environment-name {{my-compute-env}} \
     --type MANAGED \
@@ -41,7 +41,7 @@ Valid values for `containerInsights` are `ENABLED`, `ENHANCED`, and `DISABLED`.
 
 Use `update-compute-environment` to enable or change Container Insights on an existing compute environment.
 
-```
+```sh
 $ aws batch update-compute-environment \
     --compute-environment {{my-compute-env}} \
     --ecs-settings containerInsights=ENHANCED
@@ -51,7 +51,7 @@ $ aws batch update-compute-environment \
 
 Use `describe-compute-environments` to verify the current setting.
 
-```
+```sh
 $ aws batch describe-compute-environments \
     --compute-environments {{my-compute-env}} \
     --query "computeEnvironments[0].ecsSettings"
@@ -59,7 +59,7 @@ $ aws batch describe-compute-environments \
 
 The following shows the output when Container Insights is enabled.
 
-```
+```JSON
 {
     "containerInsights": "ENHANCED"
 }
@@ -77,7 +77,7 @@ Use the `ecsSettings` parameter in your [CreateComputeEnvironment](https://docs.
 
 Include `ecsSettings` in the request body:
 
-```
+```JSON
 {
     "computeEnvironmentName": "{{my-compute-env}}",
     "type": "MANAGED",
@@ -96,7 +96,7 @@ Include `ecsSettings` in the request body:
 
 **Update Container Insights on an existing compute environment**
 
-```
+```JSON
 {
     "computeEnvironment": "{{my-compute-env}}",
     "ecsSettings": {

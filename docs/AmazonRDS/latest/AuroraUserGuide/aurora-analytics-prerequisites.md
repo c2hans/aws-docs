@@ -52,7 +52,7 @@ The minimum privileges depend on how you reference the data: the data format (Pa
 If your data is encrypted with SSE-KMS, add `kms:Decrypt` on the KMS key.
 
 **Note**
-Additional privileges are required for `IMPORT FOREIGN SCHEMA` (`glue:GetTables` or `s3tables:ListTables`), cross-account access, resource-policy-based access, and Lake Formation-governed tables.
+Additional privileges are required for `IMPORT FOREIGN SCHEMA` (`glue:GetTables` or `s3tables:ListTables`), cross-account access, resource-policy-based access, and Lake Formation-governed tables. For Lake Formation-governed tables, the IAM role also needs Amazon S3 permissions on the data, because Lake Formation doesn't currently provide temporary credentials to Aurora PostgreSQL. Lake Formation fine-grained access control (column-level, row-level, and cell-level security) isn't supported. For more information, see [Lake Formation access control](aurora-analytics-limitations.md#aurora-analytics-limitations-access-control).
 
 For detailed policy examples, see [IAM policies reference](aurora-analytics-iam-policies-reference.md). For more information about creating IAM policies, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*.
 

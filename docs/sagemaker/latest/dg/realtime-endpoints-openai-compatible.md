@@ -33,7 +33,7 @@ The token contains your role or user credentials and requires the `sagemaker:Cal
 
 Use the `generate_token` function from the SageMaker AI Python SDK to create a bearer token:
 
-```
+```python
 from sagemaker.core.token_generator import generate_token
 from datetime import timedelta
 
@@ -49,7 +49,7 @@ The function accepts a `region`, an optional `aws_credentials_provider`, and the
 
 For applications that run continuously, you can implement an auto-refreshing pattern using `httpx` so that a fresh token is generated on each request:
 
-```
+```python
 import httpx
 from sagemaker.core.token_generator import generate_token
 
@@ -69,7 +69,7 @@ http_client = httpx.Client(auth=SageMakerAuth(region="us-west-2"))
 
 The IAM role or user invoking the endpoint needs the following permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -121,7 +121,7 @@ SageMaker AI endpoints incur charges while in service, regardless of traffic. Se
 ### Deploy the endpoint
 <a name="realtime-endpoints-openai-compatible-single-model-deploy"></a>
 
-```
+```python
 import boto3
 import sagemaker
 import time
@@ -153,7 +153,7 @@ sagemaker_client = boto3.client("sagemaker", region_name=REGION)
 
 Create the model, endpoint configuration, and endpoint:
 
-```
+```python
 TIMESTAMP = str(int(time.time()))
 
 SME_MODEL_NAME = f"openai-compat-sme-model-{TIMESTAMP}"
@@ -212,7 +212,7 @@ With the endpoint in service, invoke it using the OpenAI Python SDK. The base UR
 https://runtime.sagemaker.{{REGION}}.amazonaws.com/endpoints/{{ENDPOINT_NAME}}/openai/v1
 ```
 
-```
+```python
 from openai import OpenAI
 from sagemaker.core.token_generator import generate_token
 
@@ -252,7 +252,7 @@ Inference components allow you to host multiple models on a single endpoint, eac
 ### Deploy an inference component endpoint
 <a name="realtime-endpoints-openai-compatible-ic-deploy"></a>
 
-```
+```python
 IC_MODEL_NAME = f"openai-compat-ic-model-{TIMESTAMP}"
 IC_ENDPOINT_CONFIG_NAME = f"openai-compat-ic-epc-{TIMESTAMP}"
 IC_ENDPOINT_NAME = f"openai-compat-ic-ep-{TIMESTAMP}"
@@ -338,7 +338,7 @@ https://runtime.sagemaker.{{REGION}}.amazonaws.com/endpoints/{{ENDPOINT_NAME}}/i
 
 The following example shows how to invoke an inference component using the OpenAI SDK with a shared connection pool:
 
-```
+```python
 import httpx
 from openai import OpenAI
 from sagemaker.core.token_generator import generate_token

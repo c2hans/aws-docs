@@ -35,7 +35,7 @@ Create a new Go file named `ec2_describe_keypairs.go`.
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -50,7 +50,7 @@ import (
 
 Use the following code to create a session and Amazon EC2 client.
 
-```
+```go
 //    go run ec2_describe_keypairs.go
     // credentials from the shared credentials file ~/.aws/credentials.
     sess, err := session.NewSession(&aws.Config{
@@ -62,7 +62,7 @@ Use the following code to create a session and Amazon EC2 client.
 
 Call `DescribeKeyPairs` to get a list of key pairs and print them out.
 
-```
+```go
     //  Returns a list of key pairs
     result, err := svc.DescribeKeyPairs(nil)
     if err != nil {
@@ -77,7 +77,7 @@ Call `DescribeKeyPairs` to get a list of key pairs and print them out.
 
 The routine uses the following utility function.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -92,7 +92,7 @@ Create a new Go file named `ec2_create_keypair.go`.
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -109,7 +109,7 @@ import (
 
 Get the key pair name passed in to the code and, to access Amazon EC2, create an EC2 client.
 
-```
+```go
 func main() {
     if len(os.Args) != 2 {
         exitErrorf("pair name required\nUsage: %s key_pair_name",
@@ -126,7 +126,7 @@ func main() {
 
 Create a new key pair with the provided name.
 
-```
+```go
     result, err := svc.CreateKeyPair(&ec2.CreateKeyPairInput{
         KeyName: aws.String(pairName),
     })
@@ -145,7 +145,7 @@ Create a new key pair with the provided name.
 
 The routine uses the following utility function.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)
@@ -161,7 +161,7 @@ Create a new Go file named `ec2_delete_keypair.go`.
 
 Import the required AWS SDK for Go packages.
 
-```
+```go
 package main
 
 import (
@@ -178,7 +178,7 @@ import (
 
 Get the key pair name passed in to the code and, to access Amazon EC2, create an EC2 client.
 
-```
+```go
 func main() {
     if len(os.Args) != 2 {
         exitErrorf("pair name required\nUsage: %s key_pair_name",
@@ -196,7 +196,7 @@ func main() {
 
 Delete the key pair with the provided name.
 
-```
+```go
     _, err = svc.DeleteKeyPair(&ec2.DeleteKeyPairInput{
         KeyName: aws.String(pairName),
     })
@@ -213,7 +213,7 @@ Delete the key pair with the provided name.
 
 The routine uses the following utility function.
 
-```
+```go
 func exitErrorf(msg string, args ...interface{}) {
     fmt.Fprintf(os.Stderr, msg+"\n", args...)
     os.Exit(1)

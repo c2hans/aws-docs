@@ -11,7 +11,7 @@ AWS will end support for Amazon EKS AL2-optimized and AL2-accelerated AMIs, star
 
 Example configuration using both AMI types:
 
-```
+```json
 {
   "computeResources": {
     "launchTemplate": {

@@ -12,7 +12,7 @@ The following examples use data from the `TICKIT` sample data. For more informat
 
 The following query is an inner join (without the JOIN keyword) between the LISTING table and SALES table, where the LISTID from the LISTING table is between 1 and 5. This query matches LISTID column values in the LISTING table (the left table) and SALES table (the right table). The results show that LISTID 1, 4, and 5 match the criteria.
 
-```
+```sql
 select listing.listid, sum(pricepaid) as price, sum(commission) as comm
 from listing, sales
 where listing.listid = sales.listid
@@ -29,7 +29,7 @@ listid | price  |  comm
 
 The following query is a left outer join. Left and right outer joins retain values from one of the joined tables when no match is found in the other table. The left and right tables are the first and second tables listed in the syntax. NULL values are used to fill the "gaps" in the result set. This query matches LISTID column values in the LISTING table (the left table) and the SALES table (the right table). The results show that LISTIDs 2 and 3 did not result in any sales.
 
-```
+```sql
 select listing.listid, sum(pricepaid) as price, sum(commission) as comm
 from listing left outer join sales on sales.listid = listing.listid
 where listing.listid between 1 and 5
@@ -47,7 +47,7 @@ listid | price  |  comm
 
 The following query is a right outer join. This query matches LISTID column values in the LISTING table (the left table) and the SALES table (the right table). The results show that LISTIDs 1, 4, and 5 match the criteria.
 
-```
+```sql
 select listing.listid, sum(pricepaid) as price, sum(commission) as comm
 from listing right outer join sales on sales.listid = listing.listid
 where listing.listid between 1 and 5
@@ -63,7 +63,7 @@ listid | price  |  comm
 
 The following query is a full join. Full joins retain values from the joined tables when no match is found in the other table. The left and right tables are the first and second tables listed in the syntax. NULL values are used to fill the "gaps" in the result set. This query matches LISTID column values in the LISTING table (the left table) and the SALES table (the right table). The results show that LISTIDs 2 and 3 did not result in any sales.
 
-```
+```sql
 select listing.listid, sum(pricepaid) as price, sum(commission) as comm
 from listing full join sales on sales.listid = listing.listid
 where listing.listid between 1 and 5
@@ -81,7 +81,7 @@ listid | price  |  comm
 
 The following query is a full join. This query matches LISTID column values in the LISTING table (the left table) and the SALES table (the right table). Only rows that do not result in any sales (LISTIDs 2 and 3) are in the results.
 
-```
+```sql
 select listing.listid, sum(pricepaid) as price, sum(commission) as comm
 from listing full join sales on sales.listid = listing.listid
 where listing.listid between 1 and 5
@@ -97,7 +97,7 @@ listid | price  |  comm
 
 The following example is an inner join with the ON clause. In this case, NULL rows are not returned.
 
-```
+```sql
 select listing.listid, sum(pricepaid) as price, sum(commission) as comm
 from sales join listing
 on sales.listid=listing.listid and sales.eventid=listing.eventid
@@ -114,7 +114,7 @@ listid | price  |  comm
 
 The following query is a cross join or Cartesian join of the LISTING table and the SALES table with a predicate to limit the results. This query matches LISTID column values in the SALES table and the LISTING table for LISTIDs 1, 2, 3, 4, and 5 in both tables. The results show that 20 rows match the criteria.
 
-```
+```sql
 select sales.listid as sales_listid, listing.listid as listing_listid
 from sales cross join listing
 where sales.listid between 1 and 5
@@ -147,7 +147,7 @@ sales_listid | listing_listid
 
 The following example is a natural join between two tables. In this case, the columns listid, sellerid, eventid, and dateid have identical names and data types in both tables and so are used as the join columns. The results are limited to five rows.
 
-```
+```sql
 select listid, sellerid, eventid, dateid, numtickets
 from listing natural join sales
 order by 1
@@ -164,7 +164,7 @@ listid | sellerid  | eventid | dateid | numtickets
 
 The following example is a join between two tables with the USING clause. In this case, the columns listid and eventid are used as the join columns. The results are limited to five rows.
 
-```
+```sql
 select listid, listing.sellerid, eventid, listing.dateid, numtickets
 from listing join sales
 using (listid, eventid)
@@ -182,7 +182,7 @@ listid | sellerid | eventid | dateid | numtickets
 
 The following query is an inner join of two subqueries in the FROM clause. The query finds the number of sold and unsold tickets for different categories of events (concerts and shows). The FROM clause subqueries are *table* subqueries; they can return multiple columns and rows.
 
-```
+```sql
 select catgroup1, sold, unsold
 from
 (select catgroup, sum(qtysold) as sold

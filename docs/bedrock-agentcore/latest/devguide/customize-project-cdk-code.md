@@ -15,13 +15,13 @@ This example adds an Amazon DynamoDB table for a Runtime named `agent`, grants t
 
 Add the DynamoDB import at the top of `cdk-stack.ts`:
 
-```
+```typescript
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 ```
 
 Add the resource and grants in the constructor, after the line that creates `this.application`:
 
-```
+```typescript
 const orders = new dynamodb.Table(this, 'Orders', {
   partitionKey: { name: 'pk', type: dynamodb.AttributeType.STRING },
 });
@@ -43,7 +43,7 @@ Runtimes and harnesses provide the following methods:
 
 Runtimes and harnesses also implement the AWS CDK `iam.IGrantable` interface, so you can pass them to standard AWS CDK L2 grant methods:
 
-```
+```typescript
 orders.grantReadData(this.application.harness('support'));
 ```
 
@@ -54,7 +54,7 @@ If a workload uses an imported execution role (`executionRoleArn`), CDK cannot a
 
 From the project root, synthesize the updated stack and deploy it:
 
-```
+```bash
 agentcore build
 agentcore deploy
 ```

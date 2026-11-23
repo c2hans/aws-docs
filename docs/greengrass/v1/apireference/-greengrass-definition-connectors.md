@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-connectors-get-cli"></a>
 
-```
+```bash
 aws greengrass list-connector-definitions \
   [--max-results <value>] \
   [--next-token <value>]  \
@@ -43,7 +43,7 @@ aws greengrass list-connector-definitions \
 
 cli-input-json format:
 
-```
+```json
 {
 "MaxResults": "integer",
 "NextToken": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 
  [ ListDefinitionsResponse](definitions-listdefinitionsresponse.md)
 
-```
+```json
 {
 "Definitions": [
   {
@@ -135,7 +135,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -198,7 +198,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-connectors-post-cli"></a>
 
-```
+```bash
 aws greengrass create-connector-definition \
   [--name <value>] \
   [--initial-version <value>] \
@@ -210,7 +210,7 @@ aws greengrass create-connector-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "Name": "string",
 "InitialVersion": {
@@ -242,7 +242,7 @@ cli-input-json format:
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -282,7 +282,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

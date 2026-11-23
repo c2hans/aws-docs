@@ -33,7 +33,7 @@ type: string
 ### CLI
 <a name="-greengrass-groups-groupid-certificateauthorities-certificateauthorityid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-group-certificate-authority \
   --group-id <value> \
   --certificate-authority-id <value>  \
@@ -43,7 +43,7 @@ aws greengrass get-group-certificate-authority \
 
 cli-input-json format:
 
-```
+```json
 {
 "GroupId": "string",
 "CertificateAuthorityId": "string"
@@ -57,7 +57,7 @@ cli-input-json format:
 Success. The response body contains the PKI configuration.
  [ GetGroupCertificateAuthorityResponse](definitions-getgroupcertificateauthorityresponse.md)
 
-```
+```json
 {
 "PemEncodedCertificate": "string",
 "GroupCertificateAuthorityArn": "string",
@@ -81,7 +81,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -117,7 +117,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

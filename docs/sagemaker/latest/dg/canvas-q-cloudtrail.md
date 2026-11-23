@@ -15,7 +15,7 @@ To learn more about CloudTrail, see the [*AWS CloudTrail User Guide*](https://do
 
 The following is an example log file entry for the `SendConversation` API:
 
-```
+```json
 {
     "eventVersion":"1.10",
     "userIdentity": {

@@ -15,7 +15,7 @@ You can also install AWS ParallelCluster in a non-virtual environment using pip,
 
 1. Use `pip` to install AWS ParallelCluster.
 
-   ```
+   ```sh
    $ python3 -m pip install "aws-parallelcluster" --upgrade --user
    ```
 
@@ -29,7 +29,7 @@ If your Node.js installation isn't working on your platform, you can install an 
    $  nvm install --lts=Hydrogen
    ```
 
-   ```
+   ```sh
    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
    $ chmod ug+x ~/.nvm/nvm.sh
    $ source ~/.nvm/nvm.sh
@@ -39,7 +39,7 @@ If your Node.js installation isn't working on your platform, you can install an 
 
 1. Verify that AWS ParallelCluster installed correctly.
 
-   ```
+   ```sh
    $ pcluster version
    {
      "version": "3.16.3"
@@ -48,6 +48,6 @@ If your Node.js installation isn't working on your platform, you can install an 
 
 1. To upgrade to the latest version, run the installation command again.
 
-   ```
+   ```sh
    $ python3 -m pip install "aws-parallelcluster" --upgrade --user
    ```

@@ -36,7 +36,7 @@ The `state_dict` translation functions between Hugging Face Transformers and `sm
 
 Start with wrapping the model as shown in the following code.
 
-```
+```py
 from transformers import AutoModelForCausalLM
 
 with smp.tensor_parallelism():
@@ -47,7 +47,7 @@ model = smp.DistributedModel(model)
 
 Given a `state_dict` from the `DistributedModel` object, you can load the weights into the original Hugging Face GPT-2 model using the `translate_state_dict_to_hf_gpt2` function as shown in the following code.
 
-```
+```py
 from smdistributed.modelparallel.torch.nn.huggingface.gpt2 \
                                       import translate_state_dict_to_hf_gpt2
 max_seq_len = 1024
@@ -65,7 +65,7 @@ if smp.rdp_rank() == 0:
 
 Similarly, given a supported HuggingFace model `state_dict`, you can use the `translate_hf_state_dict_to_smdistributed` function to convert it to a format readable by `smp.DistributedModel`. This can be useful in transfer learning use cases, where a pre-trained model is loaded into a `smp.DistributedModel` for model-parallel fine-tuning:
 
-```
+```py
 from smdistributed.modelparallel.torch.nn.huggingface.roberta \
                                       import translate_state_dict_to_smdistributed
 

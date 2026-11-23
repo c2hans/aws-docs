@@ -50,7 +50,7 @@ Required: No
  ** [memberType](#API_ListMemberships_RequestSyntax) **   <a name="securityagent-ListMemberships-request-memberType"></a>
 Filter memberships by member type.
 Type: String
-Valid Values: `USER | ALL`
+Valid Values: `USER | GROUP | ALL`
 Required: No
 
  ** [nextToken](#API_ListMemberships_RequestSyntax) **   <a name="securityagent-ListMemberships-request-nextToken"></a>

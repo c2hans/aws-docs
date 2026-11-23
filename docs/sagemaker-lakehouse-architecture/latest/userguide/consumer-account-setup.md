@@ -156,7 +156,7 @@ Verify your access by running test queries in Athena:
 
 1. Run a join query using the three-point notation for referring to tables from different catalogs as show in the following example:
 
-   ```
+   ```sql
    SELECT
        {{returns_tb.market}} as Market,
        sum({{orders_tb}}.quantity) as Total_Quantity

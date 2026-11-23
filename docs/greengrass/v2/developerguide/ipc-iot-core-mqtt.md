@@ -69,7 +69,7 @@ You can reference the following authorization policy examples to help you config
 **Example authorization policy with unrestricted access**
 The following example authorization policy allows a component to publish and subscribe to all topics.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.mqttproxy": {
@@ -88,7 +88,7 @@ The following example authorization policy allows a component to publish and sub
 }
 ```
 
-```
+```yaml
 ---
 accessControl:
   aws.greengrass.ipc.mqttproxy:
@@ -104,7 +104,7 @@ accessControl:
 **Example authorization policy with limited access**
 The following example authorization policy allows a component to publish and subscribe to two topics named `factory/1/events` and `factory/1/actions`.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.mqttproxy": {
@@ -124,7 +124,7 @@ The following example authorization policy allows a component to publish and sub
 }
 ```
 
-```
+```yaml
 ---
 accessControl:
   aws.greengrass.ipc.mqttproxy:
@@ -142,7 +142,7 @@ accessControl:
 This example uses a feature that is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). Greengrass nucleus v2.6.0 adds support for most [recipe variables](component-recipe-reference.md#recipe-variables), such as `{iot:thingName}`, in component configurations.
 The following example authorization policy allows a component to publish and subscribe to a topic that contains the name of the core device that runs the component.
 
-```
+```json
 {
   "accessControl": {
     "aws.greengrass.ipc.mqttproxy": {
@@ -161,7 +161,7 @@ The following example authorization policy allows a component to publish and sub
 }
 ```
 
-```
+```yaml
 ---
 accessControl:
   aws.greengrass.ipc.mqttproxy:
@@ -254,7 +254,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Publish a message**
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
@@ -290,7 +290,7 @@ public class PublishToIoTCore {
 **Example: Publish a message**
 This example assumes that you are using version 1.5.4 or later of the AWS IoT Device SDK for Python v2.
 
-```
+```python
 import awsiot.greengrasscoreipc.clientv2 as clientV2
 
 topic = 'my/topic'
@@ -308,7 +308,7 @@ ipc_client.close()
 **Example: Publish a message**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -380,7 +380,7 @@ public class PublishToIoTCore {
 **Example: Publish a message**
 This example assumes that you are using version 1.5.4 or later of the AWS IoT Device SDK for Python v2.
 
-```
+```python
 import awsiot.greengrasscoreipc
 import awsiot.greengrasscoreipc.client as client
 from awsiot.greengrasscoreipc.model import (
@@ -411,7 +411,7 @@ future_response.result(TIMEOUT)
 
 **Example: Publish a message**
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -491,7 +491,7 @@ int main() {
 
 **Example: Publish a message**
 
-```
+```javascript
 
 import * as greengrasscoreipc from "aws-iot-device-sdk-v2/dist/greengrasscoreipc";
 import {QOS, PublishToIoTCoreRequest} from "aws-iot-device-sdk-v2/dist/greengrasscoreipc/model";
@@ -547,7 +547,7 @@ const publishToIoTCore = new PublishToIoTCore();
 
 **Example: Publish a message**
 
-```
+```rust
 use gg_sdk::{Qos, Sdk};
 
 fn main() {
@@ -570,7 +570,7 @@ fn main() {
 
 **Example: Publish a message**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -612,7 +612,7 @@ int main(void) {
 
 **Example: Publish a message**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 
@@ -723,7 +723,7 @@ The following examples demonstrate how to call this operation in custom componen
 
 **Example: Subscribe to messages**
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import software.amazon.awssdk.aws.greengrass.GreengrassCoreIPCClientV2;
@@ -794,7 +794,7 @@ public class SubscribeToIoTCore {
 **Example: subscribe to messages**
 This example assumes that you are using version 1.5.4 or later of the AWS IoT Device SDK for Python v2.
 
-```
+```python
 import threading
 import traceback
 
@@ -842,7 +842,7 @@ ipc_client.close()
 **Example: Subscribe to messages**
 This example uses an `IPCUtils` class to create a connection to the AWS IoT Greengrass Core IPC service. For more information, see [Connect to the AWS IoT Greengrass Core IPC service](interprocess-communication.md#ipc-service-connect).
 
-```
+```java
 package com.aws.greengrass.docs.samples.ipc;
 
 import com.aws.greengrass.docs.samples.ipc.util.IPCUtils;
@@ -955,7 +955,7 @@ public class SubscribeToIoTCore {
 **Example: Subscribe to messages**
 This example assumes that you are using version 1.5.4 or later of the AWS IoT Device SDK for Python v2.
 
-```
+```python
 import time
 import traceback
 
@@ -1016,7 +1016,7 @@ operation.close()
 
 **Example: Subscribe to messages**
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -1126,7 +1126,7 @@ int main() {
 
 **Example: Subscribe to messages**
 
-```
+```javascript
 import * as greengrasscoreipc from "aws-iot-device-sdk-v2/dist/greengrasscoreipc";
 import {IoTCoreMessage, QOS, SubscribeToIoTCoreRequest} from "aws-iot-device-sdk-v2/dist/greengrasscoreipc/model";
 import {RpcError} from "aws-iot-device-sdk-v2/dist/eventstream_rpc";
@@ -1202,7 +1202,7 @@ const subscribeToIoTCore = new SubscribeToIoTCore();
 
 **Example: Subscribe to messages**
 
-```
+```rust
 use gg_sdk::{Qos, Sdk};
 use std::{thread, time::Duration};
 
@@ -1236,7 +1236,7 @@ fn main() {
 
 **Example: Subscribe to messages**
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -1304,7 +1304,7 @@ int main(void) {
 
 **Example: Subscribe to messages**
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <unistd.h>
 #include <iostream>
@@ -1387,7 +1387,7 @@ Each event in the stream is the JSON serialization of an `IoTCoreConnectionStatu
 
 After you subscribe, you receive the following example event when the core device is connected to AWS IoT Core. You also receive this event when the connection resumes.
 
-```
+```json
 {
   "connectionStatusEvent": {
     "status": "CONNECTED"
@@ -1397,7 +1397,7 @@ After you subscribe, you receive the following example event when the core devic
 
 You receive the following example event when the core device loses its MQTT connection.
 
-```
+```json
 {
   "connectionStatusEvent": {
     "status": "DISCONNECTED"
@@ -1418,7 +1418,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCorePublisherCpp",
@@ -1463,7 +1463,7 @@ The following example recipe allows the component to publish to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.IoTCorePublisherCpp
@@ -1493,7 +1493,7 @@ Manifests:
 
 The following example C\+\+ application demonstrates how to use the AWS IoT Core MQTT IPC service to publish messages to AWS IoT Core.
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -1584,7 +1584,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCoreSubscriberCpp",
@@ -1629,7 +1629,7 @@ The following example recipe allows the component to subscribe to all topics.
 ------
 #### [ YAML ]
 
-```
+```yaml
 ---
 RecipeFormatVersion: '2020-01-25'
 ComponentName: com.example.IoTCoreSubscriberCpp
@@ -1659,7 +1659,7 @@ Manifests:
 
 The following example C\+\+ application demonstrates how to use the AWS IoT Core MQTT IPC service to subscribe to messages from AWS IoT Core.
 
-```
+```cpp
 #include <iostream>
 
 #include <aws/crt/Api.h>
@@ -1778,7 +1778,7 @@ int main() {
 
 The following example recipe allows the component to publish to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCorePublisherRust",
@@ -1822,7 +1822,7 @@ The following example recipe allows the component to publish to all topics.
 
 The following example Rust application demonstrates how to use the AWS IoT Core MQTT IPC service to publish messages to AWS IoT Core.
 
-```
+```rust
 use gg_sdk::{Qos, Sdk};
 
 fn main() {
@@ -1845,7 +1845,7 @@ fn main() {
 
 The following example recipe allows the component to subscribe to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCoreSubscriberRust",
@@ -1889,7 +1889,7 @@ The following example recipe allows the component to subscribe to all topics.
 
 The following example Rust application demonstrates how to use the AWS IoT Core MQTT IPC service to subscribe to messages from AWS IoT Core.
 
-```
+```rust
 use gg_sdk::{Qos, Sdk};
 use std::{thread, time::Duration};
 
@@ -1923,7 +1923,7 @@ fn main() {
 
 The following example recipe allows the component to publish to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCorePublisherC",
@@ -1967,7 +1967,7 @@ The following example recipe allows the component to publish to all topics.
 
 The following example C application demonstrates how to use the AWS IoT Core MQTT IPC service to publish messages to AWS IoT Core.
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -2009,7 +2009,7 @@ int main(void) {
 
 The following example recipe allows the component to subscribe to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCoreSubscriberC",
@@ -2053,7 +2053,7 @@ The following example recipe allows the component to subscribe to all topics.
 
 The following example C application demonstrates how to use the AWS IoT Core MQTT IPC service to subscribe to messages from AWS IoT Core.
 
-```
+```c
 #include <gg/error.h>
 #include <gg/ipc/client.h>
 #include <gg/sdk.h>
@@ -2121,7 +2121,7 @@ int main(void) {
 
 The following example recipe allows the component to publish to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCorePublisherCpp",
@@ -2165,7 +2165,7 @@ The following example recipe allows the component to publish to all topics.
 
 The following example C\+\+ application demonstrates how to use the AWS IoT Core MQTT IPC service to publish messages to AWS IoT Core.
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <iostream>
 
@@ -2197,7 +2197,7 @@ int main() {
 
 The following example recipe allows the component to subscribe to all topics.
 
-```
+```json
 {
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.example.IoTCoreSubscriberCpp",
@@ -2241,7 +2241,7 @@ The following example recipe allows the component to subscribe to all topics.
 
 The following example C\+\+ application demonstrates how to use the AWS IoT Core MQTT IPC service to subscribe to messages from AWS IoT Core.
 
-```
+```cpp
 #include <gg/ipc/client.hpp>
 #include <unistd.h>
 #include <iostream>

@@ -13,7 +13,7 @@ A chat applications policy is a plaintext file that is structured according to t
 
 The following example shows the basic syntax for a chat applications policy:
 
-```
+```json
 {
     "chatbot":{
        "platforms":{
@@ -156,7 +156,7 @@ The example policies that follow are for information purposes only.
 
 The following policy is focused on controlling the allowed configurations for Slack and Microsoft Teams chatbot integrations.
 
-```
+```json
 {
    "chatbot": {
       "platforms": {
@@ -222,7 +222,7 @@ The following policy is focused on controlling the allowed configurations for Sl
 
 The following policy takes a more permissive approach to Slack, allowing all Slack workspaces but restricting the authentication mode to only User level IAM roles.
 
-```
+```json
 {
    "chatbot":{
       "platforms":{
@@ -283,7 +283,7 @@ The following policy takes a more permissive approach to Slack, allowing all Sla
 
 The following example policy locks down the organization to only allow Microsoft Teams chatbot integrations within the specified tenant, while completely blocking Slack integrations.
 
-```
+```json
 {
    "chatbot":{
       "platforms":{
@@ -331,7 +331,7 @@ The following example policy locks down the organization to only allow Microsoft
 
 The following policy allows restricted Amazon Q Developer in chat applications access for selected Slack workspaces and a Microsoft Teams tenant.
 
-```
+```json
 {
     "chatbot":{
        "platforms":{

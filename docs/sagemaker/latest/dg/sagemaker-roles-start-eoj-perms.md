@@ -11,7 +11,7 @@ For an execution role that you can pass in a `StartEarthObservationJob` API requ
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -115,7 +115,7 @@ aws --region us-west-2 globalaccelerator create-custom-routing-listener
        --port-ranges FromPort=5000,ToPort=10000
 ```
 
-```
+```json
 {
     "Listener": {
         "PortRanges": [

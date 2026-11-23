@@ -79,7 +79,7 @@ To create the role with the AWS CLI, first install the AWS CLI and configure it 
 
 1. Run the following command, entering `partnercentral-account.amazonaws.com` for `--aws-service-name`.
 
-   ```
+   ```bash
    PROMPT> aws iam create-service-linked-role --aws-service-name partnercentral-account.amazonaws.com
    ```
 **Note**

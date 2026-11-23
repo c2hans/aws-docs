@@ -66,7 +66,7 @@ The IAM entity you use to make your transcription request must have a trust poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -102,7 +102,7 @@ The IAM entity you use to make your transcription request must have a trust poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -141,7 +141,7 @@ The following policy gives an IAM role permission to access files from the speci
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -170,7 +170,7 @@ The following policy gives an IAM role permission to write files to the specifie
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -197,7 +197,7 @@ If you're using a KMS key to encrypt an Amazon S3 bucket, include the following 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -227,7 +227,7 @@ If you use a customer-managed KMS key to encrypt your custom vocabularies, custo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -254,7 +254,7 @@ You must also add a key policy to your customer-managed key that grants the data
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -285,7 +285,7 @@ The role you specify in `DataAccessRoleArn` must also have a trust policy that a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -320,7 +320,7 @@ The role you specify in `DataAccessRoleArn` must also have a trust policy that a
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -365,7 +365,7 @@ The following policy grants the IAM role “`ExampleRole`” permission to use t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -411,7 +411,7 @@ Here's an example of an assume role policy that shows how you can use `aws:Sourc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -452,7 +452,7 @@ For more information on tagging in Amazon Transcribe, see [Tagging resources](ta
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -119,7 +119,7 @@ Your application must reference the following NuGet packages so that SSO resolut
 `AWSSDK.SSOOIDC`
 Failure to reference these packages will result in a *runtime* exception.
 
-```
+```cs
 static AWSCredentials LoadSsoCredentials()
 {
     var chain = new CredentialProfileStoreChain();
@@ -186,7 +186,7 @@ Failure to reference these packages will result in a *runtime* exception.
 
 Your application creates an [`AWSCredentials`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TAWSCredentials.html) object for the SSO profile, which loads the temporary credentials generated earlier by the AWS CLI. This is similar to the methods shown in [Accessing credentials and profiles in an application](creds-locate.md) and has the following form:
 
-```
+```cs
 static AWSCredentials LoadSsoCredentials()
 {
     var chain = new CredentialProfileStoreChain();
@@ -199,7 +199,7 @@ static AWSCredentials LoadSsoCredentials()
 
 The `AWSCredentials` object is then passed to the constructor for a service client. For example:
 
-```
+```cs
 var S3Client_SSO = new AmazonS3Client(LoadSsoCredentials());
 ```
 

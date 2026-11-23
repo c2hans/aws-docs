@@ -11,7 +11,7 @@ Before deregistering the Hook, you must individually deregister all previous act
 
 To deregister a Hook, use the [deregister-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deregister-type.html) operation and specify your Hook ARN.
 
-```
+```sh
 $ aws cloudformation deregister-type \
     --arn {{HOOK_TYPE_ARN}}
 ```

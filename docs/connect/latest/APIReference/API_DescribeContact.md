@@ -387,6 +387,9 @@ Content-type: application/json
       },
       "TotalPauseCount": number,
       "TotalPauseDurationInSeconds": number,
+      "VoicemailInfo": {
+         "NumberOfVoicemails": number
+      },
       "WisdomInfo": {
          "AiAgents": [
             {

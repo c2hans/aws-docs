@@ -28,7 +28,7 @@ The following is the trust policy that is attached to the `AWSServiceRoleForAmaz
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ Replace the sample {{account ID}} in the following example with your actual AWS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

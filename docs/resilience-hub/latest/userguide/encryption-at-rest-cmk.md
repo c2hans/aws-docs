@@ -84,7 +84,7 @@ Key policies control access to your customer managed key. Every customer managed
 
 The following key policy allows Next generation Resilience Hub to use your key. It scopes each permission to only the operations Next generation Resilience Hub requires, using encryption context conditions to ensure your key can only be used for your specific resources. Replace {{CUSTOMER-ACCOUNT-ID}}, {{CUSTOMER-ROLE}}, and {{REGION}} with your values.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -226,7 +226,7 @@ Next generation Resilience Hub uses the following encryption context keys depend
 
 Example encryption context for a service-level operation:
 
-```
+```JSON
 "encryptionContext": {
     "aws:resiliencehub:service-arn": "arn:aws:resiliencehub:us-west-2:{{111122223333}}:service/{{my-service}}:{{abc123}}"
 }
@@ -251,7 +251,7 @@ CreateGrant
 When you create a service with a customer managed key, Next generation Resilience Hub sends a `CreateGrant` request on your behalf to enable asynchronous assessment workflows to use your key. The grant is specific to the service and constrained by encryption context. Next generation Resilience Hub uses `RetireGrant` to remove the grant when you delete the service.
 The following example event records the `CreateGrant` operation:
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -316,7 +316,7 @@ GenerateDataKey
 When Next generation Resilience Hub encrypts data using your customer managed key, it sends a `GenerateDataKey` request to generate a data key. This occurs during both synchronous API calls (such as creating a service with a description) and asynchronous assessment workflows.
 The following example event records the `GenerateDataKey` operation:
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -359,7 +359,7 @@ Decrypt
 When you retrieve resources through API operations or when assessment workflows process previously stored data, Next generation Resilience Hub sends `Decrypt` requests to decrypt the data.
 The following example event records the `Decrypt` operation:
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -414,7 +414,7 @@ DescribeKey
 Next generation Resilience Hub sends `DescribeKey` requests to verify that the customer managed key associated with your service exists in the account and region and is a valid symmetric encryption key.
 The following example event records the `DescribeKey` operation:
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {

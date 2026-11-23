@@ -42,7 +42,7 @@ For more information, see [Health checks for the instances for your Classic Load
 **Tools for PowerShell V4**
 **Example 1: This example configures the health check settings for the specified load balancer.**
 
-```
+```powershell
 Set-ELBHealthCheck -LoadBalancerName my-load-balancer `
 >> -HealthCheck_HealthyThreshold 2 `
 >> -HealthCheck_UnhealthyThreshold 2 `
@@ -64,7 +64,7 @@ UnhealthyThreshold : 2
 **Tools for PowerShell V5**
 **Example 1: This example configures the health check settings for the specified load balancer.**
 
-```
+```powershell
 Set-ELBHealthCheck -LoadBalancerName my-load-balancer `
 >> -HealthCheck_HealthyThreshold 2 `
 >> -HealthCheck_UnhealthyThreshold 2 `

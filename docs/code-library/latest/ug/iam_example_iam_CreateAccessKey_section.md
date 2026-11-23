@@ -19,7 +19,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an IAM access key for a user.
     /// </summary>
@@ -45,7 +45,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -142,7 +142,7 @@ function iam_create_user_access_key() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 Aws::String AwsDoc::IAM::createAccessKey(const Aws::String &userName,
                                          const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -205,7 +205,7 @@ For more information, see [Managing access keys for IAM users](https://docs.aws.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -246,7 +246,7 @@ func (wrapper UserWrapper) CreateAccessKeyPair(ctx context.Context, userName str
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.services.iam.model.CreateAccessKeyRequest;
 import software.amazon.awssdk.services.iam.model.CreateAccessKeyResponse;
 import software.amazon.awssdk.regions.Region;
@@ -314,7 +314,7 @@ public class CreateAccessKey {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Create the access key.
 
-```
+```javascript
 import { CreateAccessKeyCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -334,7 +334,7 @@ export const createAccessKey = (userName) => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -360,7 +360,7 @@ iam.createAccessKey({ UserName: "IAM_USER_NAME" }, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun createIAMAccessKey(user: String?): String {
     val request =
         CreateAccessKeyRequest {
@@ -381,7 +381,7 @@ suspend fun createIAMAccessKey(user: String?): String {
 **Tools for PowerShell V4**
 **Example 1: This example creates a new access key and secret access key pair and assigns it to the user `David`. Ensure that you save the `AccessKeyId` and `SecretAccessKey` values to a file because this is the only time you can obtain the `SecretAccessKey`. You cannot retrieve it later. If you lose the secret key, you must create a new access key pair.**
 
-```
+```powershell
 New-IAMAccessKey -UserName David
 ```
 **Output:**
@@ -398,7 +398,7 @@ UserName        : David
 **Tools for PowerShell V5**
 **Example 1: This example creates a new access key and secret access key pair and assigns it to the user `David`. Ensure that you save the `AccessKeyId` and `SecretAccessKey` values to a file because this is the only time you can obtain the `SecretAccessKey`. You cannot retrieve it later. If you lose the secret key, you must create a new access key pair.**
 
-```
+```powershell
 New-IAMAccessKey -UserName David
 ```
 **Output:**
@@ -418,7 +418,7 @@ UserName        : David
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def create_key(user_name):
     """
     Creates an access key for the specified user. Each user can have a
@@ -449,7 +449,7 @@ def create_key(user_name):
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 This example module lists, creates, deactivates, and deletes access keys.
 
-```
+```ruby
 # Manages access keys for IAM users
 class AccessKeyManager
   def initialize(iam_client, logger: Logger.new($stdout))
@@ -535,7 +535,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn create_access_key(client: &iamClient, user_name: &str) -> Result<AccessKey, iamError> {
     let mut tries: i32 = 0;
     let max_tries: i32 = 10;
@@ -566,7 +566,7 @@ pub async fn create_access_key(client: &iamClient, user_name: &str) -> Result<Ac
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_iam->createaccesskey(
           iv_username = iv_user_name ).
@@ -585,7 +585,7 @@ pub async fn create_access_key(client: &iamClient, user_name: &str) -> Result<Ac
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
 
-```
+```swift
 import AWSIAM
 import AWSS3
 

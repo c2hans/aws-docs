@@ -76,7 +76,7 @@ Replace the following placeholder values in the policy:
 + `MyRole` – The IAM role you use to call AWS Continuum
 + `us-east-1` – The AWS Region where you use AWS Continuum
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -152,7 +152,7 @@ Replace the following placeholder values in the policy:
 + `MyRole` – The IAM role you use to call AWS Continuum
 + `us-east-1` – The AWS Region where you use AWS Continuum
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

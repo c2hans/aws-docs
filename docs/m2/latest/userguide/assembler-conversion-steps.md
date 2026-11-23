@@ -84,7 +84,7 @@ To learn about creating an IAM policy, see [Creating IAM policies](https://docs.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -166,7 +166,7 @@ For information about creating a service role, see [Creating a Role to Delegate 
 
 ****
 
-   ```
+   ```json
    {
              "Version":"2012-10-17",
              "Statement": [

@@ -226,6 +226,17 @@ The application protocol that's used for the port mapping. This parameter only a
 If you don't set a value for this parameter, then TCP is used. However, Amazon ECS doesn't add protocol-specific telemetry for TCP.
 For more information, see [Use Service Connect to connect Amazon ECS services with short names](service-connect.md).
 Valid protocol values: `"http" | "http2" | "grpc" `
+**Protocol can't be changed after creation**
+After you create a Service Connect service, you can't change the `appProtocol` of the port mapping that the service uses. If a service update changes the value, the service returns an error similar to the following:
+
+```
+The following config cannot be changed for a SC service.
+```
+To use a different protocol, choose one of the following options:
++ **Create a new Service Connect service with the new protocol.** Use a new `discoveryName` and a new client alias. Update your client services to call the new client alias and redeploy them. Then delete the old service. With this option there is no downtime, but clients must change the address that they call.
++ **Delete the service and create it again with the new protocol.** Clients keep the same address, but they can't reach the service until the new tasks start running.
+With either option, redeploy every client service after the change. Clients use the new protocol only after you redeploy them.
+For more information about why you can't change the value, see [ECS Service Connect: allow changing of app protocol after creation](https://github.com/aws/containers-roadmap/issues/2378) on GitHub.
 `containerPort`
 Type: Integer
 Required: Yes, when `portMappings` are used

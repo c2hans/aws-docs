@@ -31,7 +31,7 @@ When you train a model using multi-turn reinforcement learning (MTRL) on SageMak
 
 Use the `MultiTurnRLTrainer` class to run MTRL training. The `output_model_package_group` parameter is optional — if not provided, the SDK auto-creates a Model Package Group named `{model}-mtrl-mpg` with `StorageType: "Restricted"`.
 
-```
+```python
 from sagemaker.train.multi_turn_rl_trainer import MultiTurnRLTrainer
 
 trainer = MultiTurnRLTrainer(

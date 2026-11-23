@@ -67,7 +67,7 @@ To view a code example for using the `$multiply` command, choose the tab for the
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function multiplyBonusMiles() {
@@ -100,7 +100,7 @@ multiplyBonusMiles();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def multiply_bonus_miles():

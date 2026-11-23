@@ -23,7 +23,7 @@ The following are example events from Amazon Translate.
 
 You run batch translation jobs by using the Amazon Translate console or the [StartTextTranslationJob](https://docs.aws.amazon.com/translate/latest/APIReference/API_StartTextTranslationJob.html) operation. Amazon Translate sends events when these jobs are complete, either successfully or unsuccessfully. These events resemble the following example.
 
-```
+```json
 {
  "version": "0",
  "id": "CWE-event-id",
@@ -53,7 +53,7 @@ When you use Amazon Translate to create or update a parallel data resource, it s
 
 You create parallel data resources by using the Amazon Translate console or the [CreateParallelData](https://docs.aws.amazon.com/translate/latest/APIReference/API_CreateParallelData.html) operation. When you do this, Amazon Translate sends an event like the following.
 
-```
+```json
 {
  "version": "0",
  "id": "CWE-event-id",
@@ -77,7 +77,7 @@ Values for the `status` attribute are:
 
 You update parallel data resources by using the Amazon Translate console or the [UpdateParallelData](https://docs.aws.amazon.com/translate/latest/APIReference/API_UpdateParallelData.html) operation. When you do this, Amazon Translate sends an event like the following.
 
-```
+```json
 {
  "version": "0",
  "id": "CWE-event-id",

@@ -13,7 +13,7 @@ You need the following permissions to deploy the ParallelCluster API with Terraf
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

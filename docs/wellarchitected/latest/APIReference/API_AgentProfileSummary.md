@@ -80,7 +80,7 @@ Required: No
 The ARN of the IAM execution role used for recommendation actions. Not present for basic profiles.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
+Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(?!aws-service-role/)(?:[a-zA-Z0-9+=,.@\-_]+/)*[a-zA-Z0-9+=,.@\-_]{1,64}`
 Required: No
 
  ** fieldErrors **   <a name="wellarchitected-Type-AgentProfileSummary-fieldErrors"></a>

@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following is an example CloudTrail log entry for a call to the AWS FIS `StopExperiment` action.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {
@@ -144,7 +144,7 @@ The following is an example CloudTrail log entry for a call to the AWS FIS `Stop
 
 The following is an example CloudTrail log entry for an API action that AWS FIS invoked as part of an experiment that includes the `aws:ssm:send-command` AWS FIS action. The `userIdentity` element reflects a request made with temporary credentials obtained by assuming a role. The name of the assumed role appears in `userName`. The ID of the experiment, EXP21nT17WMzA6dnUgz, appears in `principalId` and as part of the ARN of the assumed role.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

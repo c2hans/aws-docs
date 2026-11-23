@@ -15,7 +15,7 @@ Keep up to date with AL2027 releases to benefit from security updates and new fe
 
 To check for and apply updates within the locked release version:
 
-```
+```bash
 # Check for available updates
 dnf check-update
 
@@ -25,7 +25,7 @@ sudo dnf upgrade
 
 To move to a newer AL2027 release, pass the target release version. For more information, see [Manage package and operating system updates in AL2027](manage-updates.md).
 
-```
+```bash
 sudo dnf upgrade --releasever=<version>
 ```
 

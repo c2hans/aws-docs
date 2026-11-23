@@ -17,7 +17,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -46,7 +46,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "EventRole": {
      "Type": "AWS::IAM::Role",
      "Properties": {
@@ -104,7 +104,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRule:
        Type: AWS::Events::Rule
        Properties:
@@ -134,7 +134,7 @@ To use CloudFormation to create a rule, update your template as shown here.<a na
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "EventRule": {
      "Type": "AWS::Events::Rule",
      "Properties": {
@@ -254,7 +254,7 @@ In many cases, the `PollForSourceChanges` parameter defaults to true when you cr
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -276,7 +276,7 @@ In many cases, the `PollForSourceChanges` parameter defaults to true when you cr
 ------
 #### [ JSON ]
 
-  ```
+  ```json
   {
     "Name": "Source",
     "Actions": [

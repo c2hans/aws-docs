@@ -47,7 +47,7 @@ Your EMR Studio service role must also have the access permissions to use your A
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

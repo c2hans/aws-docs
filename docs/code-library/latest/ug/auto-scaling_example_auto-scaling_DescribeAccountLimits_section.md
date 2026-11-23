@@ -37,7 +37,7 @@ For more information, see [Amazon EC2 Auto Scaling service quotas](https://docs.
 **Tools for PowerShell V4**
 **Example 1: This example describes the Auto Scaling resource limits for your AWS account.**
 
-```
+```powershell
 Get-ASAccountLimit
 ```
 **Output:**
@@ -51,7 +51,7 @@ MaxNumberOfLaunchConfigurations : 100
 **Tools for PowerShell V5**
 **Example 1: This example describes the Auto Scaling resource limits for your AWS account.**
 
-```
+```powershell
 Get-ASAccountLimit
 ```
 **Output:**

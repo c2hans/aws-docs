@@ -50,7 +50,7 @@ The sample code shows how to add the required functionality, as described in [Ad
 ### Integration sample code
 <a name="w2aab9c11c11b9c19c15c13b1"></a>
 
-```
+```csharp
 using System.Collections.Generic;
 using Aws.GameLift.Server;
 using UnityEngine;

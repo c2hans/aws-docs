@@ -72,19 +72,19 @@ Kernel Live Patching is disabled by default on AL2023. To use live patching, you
 
 1. Kernel live patches are available for AL2023 with kernel version `6.1`. To check your kernel version, run the following command.
 
-   ```
+   ```sh
    $ sudo dnf list kernel
    ```
 
 1. Install the **DNF** plugin for Kernel Live Patching.
 
-   ```
+   ```sh
    $ sudo dnf install -y kpatch-dnf
    ```
 
 1. Enable the **DNF** plugin for Kernel Live Patching.
 
-   ```
+   ```sh
    $ sudo dnf kernel-livepatch -y auto
    ```
 
@@ -94,7 +94,7 @@ Kernel Live Patching is disabled by default on AL2023. To use live patching, you
 
    When you enable Kernel Live Patching, an empty kernel live patch RPM is automatically applied. If Kernel Live Patching was successfully enabled, this command returns a list that includes the initial empty kernel live patch RPM (and another RPM setting up the DNF repository containing the livepatches).
 
-   ```
+   ```sh
    $ sudo rpm -qa | grep kernel-livepatch
    kernel-livepatch-repo-s3-2023.7.20250428-0.amzn2023.noarch
    kernel-livepatch-6.1.134-150.224-1.0-0.amzn2023.x86_64
@@ -102,19 +102,19 @@ Kernel Live Patching is disabled by default on AL2023. To use live patching, you
 
 1. Install the **kpatch** package.
 
-   ```
+   ```sh
    $ sudo dnf install -y kpatch-runtime
    ```
 
 1. Update the **kpatch** service if it was previously installed.
 
-   ```
+   ```sh
    $ sudo dnf upgrade kpatch-runtime
    ```
 
 1. Start the **kpatch** service. This service loads all of the kernel live patches upon initialization or at boot.
 
-   ```
+   ```sh
    $ sudo systemctl enable kpatch.service && sudo systemctl start kpatch.service
    ```
 
@@ -128,7 +128,7 @@ You can also discover the available kernel live patches for advisories and CVEs 
 **To list all available kernel live patches for advisories**
 Use the following command.
 
-```
+```sh
 $ sudo dnf updateinfo list
 Last metadata expiration check: 1:06:23 ago on Mon 13 Feb 2023 09:28:19 PM UTC.
 ALAS2LIVEPATCH-2021-123   important/Sec. kernel-livepatch-6.1.12-17.42-1.0-4.amzn2023.x86_64
@@ -138,7 +138,7 @@ ALAS2LIVEPATCH-2022-124   important/Sec. kernel-livepatch-6.1.12-17.42-1.0-3.amz
 **To list all available kernel live patches for CVEs**
 Use the following command.
 
-```
+```sh
 $ sudo dnf updateinfo list cves
 Last metadata expiration check: 1:07:26 ago on Mon 13 Feb 2023 09:28:19 PM UTC.
 CVE-2022-0123    important/Sec. kernel-livepatch-6.1.12-17.42-1.0-4.amzn2023.x86_64
@@ -161,20 +161,20 @@ You can choose to apply a specific kernel live patch, or to apply any available 
 
 1. Apply the kernel live patch for your AL2023 kernel.
 
-   ```
+   ```sh
    $ sudo dnf install kernel-livepatch-{{kernel_version}}-{{package_version}}.amzn2023.x86_64
    ```
 
    For example, the following command applies a kernel live patch for AL2023 kernel version `6.1.12-17.42`
 
-   ```
+   ```sh
    $ sudo dnf install kernel-livepatch-6.1.12-17.42-1.0-4.amzn2023.x86_64
    ```
 
 **To apply any available kernel live patches along with your regular security updates**
 Use the following command.
 
-```
+```sh
 $ sudo dnf upgrade --security
 ```
 
@@ -186,7 +186,7 @@ An AL2023 kernel receives kernel live patches for 3 months. After this period, n
 To continue to receive kernel live patches after 3 months, you must reboot the instance to move to the new kernel version. The instance continues to receive kernel live patches for the next 3 months after you update it.
 To check the support window for your kernel version, run the following command:
 
-  ```
+  ```sh
   $ sudo dnf kernel-livepatch support
   The current version of the Linux kernel you are running will no longer receive live patches after 2025-07-22.
   ```
@@ -197,7 +197,7 @@ To check the support window for your kernel version, run the following command:
 **To view the applied kernel live patches**
 Use the following command.
 
-```
+```sh
 $ sudo kpatch list
 Loaded patch modules:
 livepatch_CVE_2022_36946 [enabled]

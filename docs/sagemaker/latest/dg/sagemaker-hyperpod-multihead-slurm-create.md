@@ -41,7 +41,7 @@ After setting up all the required resources and uploading the scripts to the Ama
 
    After successful execution, the command returns the cluster ARN like the following.
 
-   ```
+   ```JSON
    {
        "ClusterArn": "arn:aws:sagemaker:{{us-east-1}}:{{111122223333}}:cluster/{{cluster_id}}"
    }

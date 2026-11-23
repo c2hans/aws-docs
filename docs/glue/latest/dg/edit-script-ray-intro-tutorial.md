@@ -71,7 +71,7 @@ In this step, you create an AWS Glue job using the AWS Management Console, provi
 
 In this tutorial, we address the following ETL scenario: you would like to read the January 2022 records from the New York City TLC Trip Record dataset, add a new column (`tip_rate`) to the dataset by combining data in existing columns, then remove a number of columns that aren't relevant to your current analysis, and then you would like to write the results to {{yourBucketName}}. The following Ray script performs these steps:
 
-```
+```python
 import ray
 import pandas
 from ray import data

@@ -61,7 +61,7 @@ Enable CORS by returning the correct headers.
 #### ListKafkaVersionsResponse schema
 <a name="kafka-versions-response-body-listkafkaversionsresponse-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "kafkaVersions": [
@@ -76,7 +76,7 @@ Enable CORS by returning the correct headers.
 #### Error schema
 <a name="kafka-versions-response-body-error-example"></a>
 
-```
+```json
 {
   "message": "string",
   "invalidParameter": "string"

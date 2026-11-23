@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps, Duration } from 'aws-cdk-lib';
 import { EventbridgeToStepfunctions, EventbridgeToStepfunctionsProps } from '@aws-solutions-constructs/aws-eventbridge-stepfunctions';
@@ -46,7 +46,7 @@ const constructProps: EventbridgeToStepfunctionsProps = {
 new EventbridgeToStepfunctions(this, 'test-eventbridge-stepfunctions-stack', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_eventbridge_stepfunctions import EventbridgeToStepfunctions, EventbridgeToStepfunctionsProps
 from aws_cdk import (
     aws_stepfunctions as stepfunctions,
@@ -68,7 +68,7 @@ EventbridgeToStepfunctions(self, 'test-eventbridge-stepfunctions-stack',
                             ))
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

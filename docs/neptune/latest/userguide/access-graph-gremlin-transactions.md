@@ -25,7 +25,7 @@ For either of the above contexts, there is the additional context of the request
 
 For scripts, the implication is that one or more Gremlin statements sent in a single request will commit or rollback as a single transaction. For example:
 
-```
+```java
 Cluster cluster = Cluster.open();
 Client client = cluster.connect(); // sessionless
 // 3 vertex additions in one request/transaction:
@@ -34,7 +34,7 @@ client.submit("g.addV();g.addV();g.addV()").all().get();
 
 For bytecode, a sessionless request is made for each traversal spawned and executed from `g`:
 
-```
+```java
 GraphTraversalSource g = traversal().withRemote({{...}});
 
 // 3 vertex additions in three individual requests/transactions:
@@ -53,7 +53,7 @@ When bound to a session, multiple requests can be applied within the context of 
 
 For scripts, the implication is that there is no need to concatenate together all of the graph operations into a single embedded string value:
 
-```
+```java
 Cluster cluster = Cluster.open();
 Client client = cluster.connect(sessionName); // session
 try {
@@ -80,7 +80,7 @@ A query like `g.inject(0).fail('rollback')`, used to intentionally throw an erro
 
 For bytecode, the transaction can be explicitly controlled and the session managed transparently. Gremlin Language Variants (GLV) support Gremlin's `tx()` syntax to `commit()` or `rollback()` a transaction as follows:
 
-```
+```java
 GraphTraversalSource g = traversal().withRemote(conn);
 
 Transaction tx = g.tx();

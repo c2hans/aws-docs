@@ -31,7 +31,7 @@ The following code examples demonstrate how to use the AWS SDK for .NET to progr
 
 The code examples in this topic rely on the following two example items in a DynamoDB table named `ProductCatalog`. These items describe information about product entries in a fictitious bicycle store catalog. These items are based on the example provided in [Case Study: A ProductCatalog Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.CaseStudy.html). The data type descriptors such as `BOOL`, `L`, `M`, `N`, `NS`, `S`, and `SS` correspond to those in the [JSON Data Format](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataFormat.html).
 
-```
+```csharp
 {
   "Id": {
     "N": "205"
@@ -209,7 +209,7 @@ The code examples in this topic rely on the following two example items in a Dyn
 
 The following example features the `Amazon.DynamoDBv2.AmazonDynamoDBClient.GetItem` method and a set of expressions to get and then print the item that has an `Id` of `205`. Only the following attributes of the item are returned: `Id`, `Title`, `Description`, `Color`, `RelatedItems`, `Pictures`, and `ProductReviews`.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -241,7 +241,7 @@ In the preceding example, the `ProjectionExpression` property specifies the attr
 
 The following example features the `Amazon.DynamoDBv2.AmazonDynamoDBClient.Query` method and a set of expressions to get and then print the item that has an `Id` of `301`, but only if the value of `Price` is greater than `150`. Only the following attributes of the item are returned: `Id`, `Title`, and all of the `ThreeStar` attributes in `ProductReviews`.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -291,7 +291,7 @@ In the preceding example, the `ProjectionExpression` property specifies the attr
 
 The following example features the `Amazon.DynamoDBv2.AmazonDynamoDBClient.Scan` method and a set of expressions to get and then print all items that have a `ProductCategory` of `Bike`. Only the following attributes of the item are returned: `Id`, `Title`, and all of the attributes in `ProductReviews`.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -329,7 +329,7 @@ In the preceding example, the `ProjectionExpression` property specifies the attr
 
 The following example shows how to print an item’s attributes and values. This example is used in the preceding examples that show how to [Get a Single Item by Using Expressions and the Item’s Primary Key](#dynamodb-expressions-get-item), [Get Multiple Items by Using Expressions and the Table’s Primary Key](#dynamodb-expressions-query), and [Get Multiple Items by Using Expressions and Other Item Attributes](#dynamodb-expressions-scan).
 
-```
+```csharp
 // using Amazon.DynamoDBv2.Model;
 
 // Writes out an item's attribute keys and values.
@@ -414,7 +414,7 @@ In the preceding example, each attribute value has several data-type-specific pr
 
 The following example features the `Amazon.DynamoDBv2.AmazonDynamoDBClient.PutItem` method and a set of expressions to update the item that has a `Title` of `18-Bicycle 301`. If the item doesn’t already exist, a new item is added.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -439,7 +439,7 @@ client.PutItem(request);
 
 In the preceding example, the `ExpressionAttributeNames` property specifies the placeholder `#title` to represent the `Title` attribute. The `ExpressionAttributeValues` property specifies the placeholder `:product` to represent the value `18-Bicycle 301`. The `ConditionExpression` property specifies that `#title` (`Title`) must be equal to `:product` (`18-Bicycle 301`). The call to `CreateItemData` refers to the following custom function:
 
-```
+```csharp
 // using Amazon.DynamoDBv2.Model;
 
 // Provides a sample item that can be added to a table.
@@ -487,7 +487,7 @@ In the preceding example, an example item with sample data is returned to the ca
 
 The following example features the `Amazon.DynamoDBv2.AmazonDynamoDBClient.UpdateItem` method and a set of expressions to change the `Title` to `18" Girl's Bike` for the item with `Id` of `301`.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 
@@ -519,7 +519,7 @@ In the preceding example, the `ExpressionAttributeNames` property specifies the 
 
 The following example features the `Amazon.DynamoDBv2.AmazonDynamoDBClient.DeleteItem` method and a set of expressions to delete the item with `Id` of `301`, but only if the item’s `Title` is `18-Bicycle 301`.
 
-```
+```csharp
 // using Amazon.DynamoDBv2;
 // using Amazon.DynamoDBv2.Model;
 

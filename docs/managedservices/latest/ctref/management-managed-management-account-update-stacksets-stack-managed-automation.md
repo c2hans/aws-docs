@@ -156,7 +156,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-management-account-update-stacksets-stack-managed-automation-ex-min"></a>
 
-```
+```json
 {
   "Name": "test-stackset",
   "OuId": ["ou-cccc-00000000"],
@@ -168,7 +168,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-management-account-update-stacksets-stack-managed-automation-ex-max"></a>
 
-```
+```json
 {
   "CloudFormationTemplate": "template",
   "CloudFormationTemplateS3Endpoint": "https://s3.amazonaws.com/cf-templates-33kj7hiuwdk9-us-east-1/2017261mYA-stm-dynamic-sqs-no-params-sept-2017.template",

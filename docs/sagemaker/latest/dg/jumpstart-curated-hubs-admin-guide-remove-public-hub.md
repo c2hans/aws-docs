@@ -18,7 +18,7 @@ You can specify any additional Amazon S3 buckets that you want your hub to acces
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

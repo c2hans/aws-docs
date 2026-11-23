@@ -27,7 +27,7 @@ Before calling `create-logging-configuration`, attach the following policy or eq
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

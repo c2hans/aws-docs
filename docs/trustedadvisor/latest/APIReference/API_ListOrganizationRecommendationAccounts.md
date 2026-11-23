@@ -118,7 +118,7 @@ List all account recommendation summaries for an organization recommendation by 
 #### Sample Request
 <a name="API_ListOrganizationRecommendationAccounts_Example_1_Request"></a>
 
-```
+```json
 {
                     "organizationRecommendationIdentifier": "arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5"
                     }
@@ -127,7 +127,7 @@ List all account recommendation summaries for an organization recommendation by 
 #### Sample Response
 <a name="API_ListOrganizationRecommendationAccounts_Example_1_Response"></a>
 
-```
+```json
 {
                     "accountRecommendationLifecycleSummaries": [{
                     "accountId": "000000000000",

@@ -9,12 +9,12 @@ After you’ve enabled message streaming successfully, you might need to filter 
 To filter by participant, read the specific SNS headers attribute— `MessageVisibility`—to determine whether the message is intended for customer-only, agent-only, or all.
 + To send to the customer only: For all code that faces the customer, clients need to filter out messages intended for the customer and build the following logic for forwarding the message to them.
 
-  ```
+  ```json
   if ( ( MessageVisibility == CUSTOMER || MessageVisibility == ALL)  && ParticipantRole != CUSTOMER )
   ```
 + To send to the agent only:
 
-  ```
+  ```json
   if ( ( MessageVisibility == AGENT || MessageVisibility == ALL)  && ParticipantRole != AGENT )
   ```
 
@@ -36,7 +36,7 @@ Following is a description of each message attribute in the Amazon SNS payload:
 ## Example SNS payload
 <a name="sns-message-payload"></a>
 
-```
+```json
 {
   "Type" : "Notification",
   "MessageId" : "ccccccccc-cccc-cccc-cccc-ccccccccccccc",

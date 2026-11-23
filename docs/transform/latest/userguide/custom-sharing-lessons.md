@@ -20,7 +20,7 @@ A run of a shared TD never adds lessons to the consumer account. A consumer that
 
 Contributing is off by default. To contribute lessons from one run, add `--share-learnings`.
 
-```
+```bash
 atx custom def exec \
   -n arn:aws:transform-custom:us-east-1:111122223333:package/java17-upgrade \
   -p ./my-repo --share-learnings

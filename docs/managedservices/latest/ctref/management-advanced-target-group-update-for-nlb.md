@@ -137,7 +137,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-advanced-target-group-update-for-nlb-ex-min"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234567890abcdef0",
   "StackId": "stack-123456789abcdefgh",
@@ -148,7 +148,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-advanced-target-group-update-for-nlb-ex-max"></a>
 
-```
+```json
 {
   "VpcId": "vpc-1234567890abcdef0",
   "StackId": "stack-123456789abcdefgh",

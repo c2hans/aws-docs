@@ -25,7 +25,7 @@ The following is an example resource policy that AWS RAM creates and stores when
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

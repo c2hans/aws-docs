@@ -14,7 +14,7 @@ Add the following statements to the topic replication policy. The source cluster
 **Source cluster**
 The source cluster requires permission to read topic configurations.
 
-```
+```json
 {
     "Sid": "SourceTopicConfigReadPermissions",
     "Effect": "Allow",
@@ -30,7 +30,7 @@ The source cluster requires permission to read topic configurations.
 **Target cluster — PREFIXED\_WITH\_SOURCE\_CLUSTER\_ALIAS (default)**
 The target cluster requires permission to alter topic configurations and partitions on the replicated topics. Because the full alias is not known until the replicator is created, use a wildcard prefix with the topic pattern.
 
-```
+```json
 {
     "Sid": "TargetTopicConfigWritePermissions",
     "Effect": "Allow",
@@ -48,7 +48,7 @@ The target cluster requires permission to alter topic configurations and partiti
 **Target cluster — IDENTICAL**
 When using identical topic naming, replicated topics keep the same name as on the source. Use the same topic pattern as the source.
 
-```
+```json
 {
     "Sid": "TargetTopicConfigWritePermissions",
     "Effect": "Allow",

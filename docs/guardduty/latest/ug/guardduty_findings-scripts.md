@@ -115,7 +115,7 @@ To prepare your test environment, you will need the following items:
 
   To verify that Docker has been installed, run the following command and confirm there is an output similar to the following output:
 
-  ```
+  ```bash
   $ docker --version
   Docker version 19.03.1
   ```
@@ -144,7 +144,7 @@ Perform the following steps to start deploying the resources:
 
 1. Run the following commands to deploy the resources:
 
-   ```
+   ```bash
    git clone https://github.com/awslabs/amazon-guardduty-tester && cd amazon-guardduty-tester
    npm install
    cdk bootstrap
@@ -171,7 +171,7 @@ This is a two-step process where you first need to start a session with test dri
 
 1. After your resources are deployed, save the Region code to a variable in your current terminal session. Use the following command and replace {{us-east-1}} with the Region code where you deployed the resources:
 
-   ```
+   ```bash
    $ REGION={{us-east-1}}
    ```
 
@@ -179,7 +179,7 @@ This is a two-step process where you first need to start a session with test dri
 
 1. Use the following command to begin your session for the tester script:
 
-   ```
+   ```bash
    aws ssm start-session
      --region $REGION
      --document-name AWS-StartInteractiveCommand
@@ -198,7 +198,7 @@ The tester script is a Python-based program that dynamically builds a bash scrip
 
 Use the following command examples as reference, and run one or more commands to generate findings that you want to explore:
 
-```
+```bash
 python3 guardduty_tester.py
 python3 guardduty_tester.py --{{all}}
 python3 guardduty_tester.py --{{s3}}
@@ -212,7 +212,7 @@ python3 guardduty_tester.py --finding '{{CryptoCurrency:EC2/BitcoinTool.B!DNS}}'
 
 For more information about valid parameters, you can run the following help command:
 
-```
+```bash
 python3 guardduty_tester.py --help
 ```
 
@@ -242,7 +242,7 @@ Choose a preferred method to view the generated findings in your account.
 #### [ AWS CLI ]
 + Run the following AWS CLI command to view the generated findings and replace {{us-east-1}} and {{12abc34d567e8fa901bc2d34EXAMPLE}} with suitable values:
 
-  ```
+  ```bash
   aws guardduty list-findings --region {{us-east-1}} --detector-id {{12abc34d567e8fa901bc2d34EXAMPLE}}
   ```
 
@@ -260,7 +260,7 @@ The account-level settings and other configuration status updates made during [S
 After you have run the tester script, you can choose to clean up the AWS test resources. You can choose to do this by using one of the following methods:
 + Run the following command:
 
-  ```
+  ```bash
   cdk destroy
   ```
 + Delete the CloudFormation stack with the name **GuardDutyTesterStack**. For information about steps, see [Deleting a stack on the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html).
@@ -297,7 +297,7 @@ GuardDuty has identified common issues and recommends troubleshooting steps:
 
      Run the following command to view a list of Availability zones. Make sure to specify your preferred instance type and the Region ({{us-east-1}}).
 
-     ```
+     ```bash
      aws ec2 describe-instance-type-offerings --location-type availability-zone  --filters Name=instance-type,Values={{Preferred instance type}} --region {{us-east-1}} --output table
      ```
 

@@ -11,7 +11,7 @@ The AWS SDK for PHP Version 3 provides a generic multi-region client that can be
 
 The basic usage pattern of an Amazon S3 client is the same whether using a standard S3 client or its multi-region counterpart. The only usage difference at the command level is that an AWS Region can be specified using the `@region` input parameter.
 
-```
+```php
 // Create a multi-region S3 client
 $s3Client = (new \Aws\Sdk)->createMultiRegionS3(['version' => 'latest']);
 
@@ -42,7 +42,7 @@ When using the multi-region Amazon S3 client, you will not encounter any permane
 
 Amazon S3 multi-region clients maintain an internal cache of the AWS Regions in which given buckets reside. By default, each client has its own in-memory cache. To share a cache between clients or processes, supply an instance of `Aws\CacheInterface` as the `bucket_region_cache` option to your multi-region client.
 
-```
+```php
 use Aws\DoctrineCacheAdapter;
 use Aws\Sdk;
 use Doctrine\Common\Cache\ApcuCache;

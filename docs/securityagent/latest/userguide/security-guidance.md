@@ -188,7 +188,7 @@ Currently there is no way to preview the course of action for AWS Security Agent
 #### Does AWS Security Agent integrate with security tools (SIEM, vulnerability management) or CI/CD pipelines?
 <a name="_does_aws_security_agent_integrate_with_security_tools_siem_vulnerability_management_or_cicd_pipelines"></a>
 
-AWS Security Agent does not integrate with any existing security tools or CI/CD pipelines.
+AWS Security Agent does not integrate with any existing security tools. You can run a penetration test from a CI/CD pipeline as a post-deployment gate that tests each deployed change and can block promotion on findings. For more information, see [Run penetration tests from your CI/CD pipeline](cicd-pentest.md).
 
 #### How does AWS Security Agent handle environment-specific configurations?
 <a name="_how_does_aws_security_agent_handle_environment_specific_configurations"></a>

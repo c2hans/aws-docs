@@ -31,7 +31,7 @@ For more information, see [Changing environment settings in AWS Cloud9](https://
 **Tools for PowerShell V4**
 **Example 1: This example changes the specified settings of the specified existing AWS Cloud9 development environment.**
 
-```
+```powershell
 Update-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Description "My changed demonstration development environment." -Name my-changed-demo-env
 ```
 +  For API details, see [UpdateEnvironment](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ Update-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Descriptio
 **Tools for PowerShell V5**
 **Example 1: This example changes the specified settings of the specified existing AWS Cloud9 development environment.**
 
-```
+```powershell
 Update-C9Environment -EnvironmentId ffd88420d4824eeeaeaa8a04bfde8cEX -Description "My changed demonstration development environment." -Name my-changed-demo-env
 ```
 +  For API details, see [UpdateEnvironment](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

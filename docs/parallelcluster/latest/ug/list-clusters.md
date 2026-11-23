@@ -18,7 +18,7 @@ Retrieve a list of existing clusters.
 ## Request syntax
 <a name="list-clusters-request"></a>
 
-```
+```json
 GET /v3/clusters
 {
   "clusterStatus": "string",
@@ -49,7 +49,7 @@ Required: No
 ## Response syntax
 <a name="list-clusters-response"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "clusters": [
@@ -121,13 +121,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ list_clusters()
 ```
 
 **200 Response**
 
-```
+```json
 {
   'clusters':
    [

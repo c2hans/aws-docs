@@ -126,7 +126,7 @@ aws globalaccelerator update-listener
     --port-ranges FromPort=100,ToPort=100
 ```
 
-```
+```json
 {
     "Listener": {
         "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz",

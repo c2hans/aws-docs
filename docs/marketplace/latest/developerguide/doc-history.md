@@ -10,6 +10,8 @@ The following table describes the documentation updates for this guide.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Case studies, specializations, and trust center information in the AWS Marketplace Discovery API](doc-history.md) | Documented how to retrieve a listing's case studies, specializations, and trust center information with the AWS Marketplace Discovery API. Added the ListListingAttributes operation and its AWS Identity and Access Management (IAM) permission, request quota, and AWS CloudTrail logging. | November 20, 2026 |
+| [Agentic Commerce for API delivery options](doc-history.md) | Added the Agentic Commerce access model for API delivery options in the AWS Marketplace Catalog API, where buyers pay for each request through the x402 payment protocol. Documented the `AccessModels`, `AgenticCommerceConfiguration`, and `EstimatedUsageCost` fields, their validation errors, the reserved `agentic_commerce_default` pricing dimension, and offer pricing requirements. | November 19, 2026 |
 | [Agreement request and buyer approval support in the AWS Marketplace Agreement API](doc-history.md) | Documented how buyers view, list, and cancel agreement requests, and how they get approval for an agreement request before accepting it. Added 10 API operations: CancelAgreementRequest, GetAgreementRequest, GetAgreementRequestTerms, ListAgreementRequests, GetAgreementRequestApprovalPlans, StartAgreementApprovals, ListAgreementApprovals, GetAgreementApproval, AcceptAgreementApproval, and RejectAgreementApproval. Added the related IAM permissions and error codes. | November 7, 2026 |
 | [Auto-renewal support in the AWS Marketplace Agreement API](doc-history.md) | Documented how buyers turn auto-renewal on and off with the AWS Marketplace Agreement API, including when the preference can still be changed and why turning auto-renewal on does not by itself guarantee that an agreement renews. | August 31, 2026 |
 | [AWS Marketplace Discovery API public launch](doc-history.md) | The AWS Marketplace Discovery API is now available. Added 9 API operations: GetListing, GetProduct, GetOffer, GetOfferTerms, GetOfferSet, ListPurchaseOptions, ListFulfillmentOptions, SearchFacets, and SearchListings. Standard AWS SDK support and IAM-based access. | April 8, 2026 |
@@ -39,76 +41,3 @@ The following table describes the documentation updates for this guide.
 | [Support for managing private marketplaces](doc-history.md) | Added the ability to create and maintain private marketplaces for AWS Organizations programmatically. See [Working with a private marketplace](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/private-marketplace.html). | December 3, 2020 |
 | [The AWS Marketplace Discovery API is now available](doc-history.md) | The Discovery API provides programmatic access to find products in the AWS Marketplace. For details, see [Discovery API](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/discovery-api.html). | September 30, 2020 |
 | [The AWS Marketplace Catalog API is now generally available](doc-history.md) | This service provides an API interface for approved providers to programmatically access the self-service publishing capabilities on the AWS Marketplace Management Portal. | November 12, 2019 |
-
-## Release notes for AWS Marketplace Discovery API
-<a name="discovery-release-notes"></a>
-
-Release notes for AWS Marketplace Discovery API. Details about new features, improvements, fixes, and announcements.
-
-### Discovery API release notes for 2026
-<a name="release-notes-2026"></a>
-
-#### April 8, 2026
-<a name="april-8-2026"></a>
-
-The AWS Marketplace Discovery API is now publicly available through the standard AWS SDK. The API provides programmatic access to the AWS Marketplace catalog, including searching and browsing listings, retrieving product details and fulfillment options, and accessing public and private offer pricing and terms.
-
-##### Launch announcements
-<a name="4-8-launch"></a>
-+ 9 API operations available: GetListing, GetProduct, GetOffer, GetOfferTerms, GetOfferSet, ListPurchaseOptions, ListFulfillmentOptions, SearchFacets, and SearchListings.
-+ Standard AWS SDK support in all languages (Java, Python, JavaScript, .NET, Go, and others). No private SDK required.
-+ IAM-based access control with resource-level permissions. No manual onboarding required.
-+ Available in US East (N. Virginia), US West (Oregon), and Europe (Ireland).
-
-### Discovery API release notes for 2024
-<a name="release-notes-2024"></a>
-
-#### August 15, 2024
-<a name="august-15-2024"></a>
-
-Discovery API customers can access the updated Discovery API documentation and SDK on the Amazon Simple Storage Service bucket provided by the Discovery API team. Customers can refer to the Change Log in the private documentation for more details.
-
-##### Launch announcements
-<a name="8-15-launch"></a>
-
-The Discovery API Private SDK is now available in JavaScript V3.
-+ For information about using the AWS SDK for JavaScript V3, see the [AWS SDK for JavaScript V3 Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/welcome.html).
-+ For information about migrating from V2 to V3, see [ Migrate from version 2.x to 3.x of the AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating.html), in the *AWS SDK for JavaScript V3 Developer Guide*.
-
-##### Improvements
-<a name="8-15-improvements"></a>
-+ AWS SDK paginators are now available for the `SearchListings` and `ListListingViewQueries` API operations in all supported languages that have native SDK support for paginators.
-
-  You can still use `NextToken` to manually paginate. You can use `NextToken` with the `SearchListings`, `ListListingViewQueries`, and `GetSearchFacets` API operations across all the SDKs that we vend.
-+ SDK updated for all supported languages with the latest AWS SDK artifacts.
-+ Private documentation updated to include an SDK usage section for JavaScript V3.
-
-### Discovery API release notes for 2022
-<a name="release-notes-2022"></a>
-
-#### May 20, 2022
-<a name="may-20-2022"></a>
-
-Published on May 20, 2022
-
-Discovery API customers can access the updated Discovery API documentation and SDK on the Amazon Simple Storage Service (Amazon S3) bucket that the Discovery API team shared with them previously. Refer to the Change Log in the private documentation for more details.
-
-Discovery API announces the following launch, and improvements:
-
-##### Launch announcements
-<a name="may-20-launch-annoucements"></a>
-+ Discovery API launched in two additional AWS Regions:
-  + US West (Oregon) – `us-west-2`
-  + Europe (Ireland) – `eu-west-1`
-+ Discovery API Private SDK is now available in Java 2.x:
-  + For more information about how to use the AWS SDK for Java 2.x, see the [AWS SDK for Java 2.x Developer Guide](https://docs.aws.amazon.com/sdk-for-java/v2/developer-guide/welcome.html).
-  + For more information about migration, see [migrating from version 1.x to 2.x of the AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/v2/migration-guide/what-is-java-migration.html) in the *AWS SDK for Java 2.x Developer Guide*.
-  + For more information about changes between versions 1.11.x and 2.x of the AWS SDK for Java 2.x, see [ 1.11 to 2.x Changelog](https://github.com/aws/aws-sdk-java-v2/blob/master/docs/LaunchChangelog.md) on the GitHub website.
-
-##### Improvements
-<a name="may-20-improvements"></a>
-+ Enhanced sorting functionality for the `SearchListings` API operation by introducing new options for:
-  + `SortBy` – `AVERAGE_CUSTOMER_RATING`, `CREATION_TIME`, `LAST_MODIFIED_TIME`
-  + `SortOrder` – `ASCENDING`
-+ SDK updated for all the existing languages with the latest AWS SDK artifacts.
-+ Documentation updated to include SDK usage section for all languages.

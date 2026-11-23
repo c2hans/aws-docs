@@ -28,7 +28,7 @@ The following code example shows how to use `Add-RGTResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This example adds the tag keys "stage" and "version" with values "beta" and "preprod\_test" to an Amazon S3 bucket and an Amazon DynamoDB table. A single call is made to the service to apply the tags.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -36,7 +36,7 @@ Add-RGTResourceTag -ResourceARNList $arn1,$arn2 -Tag @{ "stage"="beta"; "version
 ```
 **Example 2: This example adds the specified tags and values to an Amazon S3 bucket and an Amazon DynamoDB table. Two calls are made to the service, one for each resource ARN piped into the cmdlet.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -52,7 +52,7 @@ The following code example shows how to use `Get-RGTResource`.
 **Tools for PowerShell V4**
 **Example 1: Returns all the tagged resources in a region and the tag keys associated with the resource. If no -Region parameter is supplied to the cmdlet it will attempt to infer region from the shell or EC2 instance metadata.**
 
-```
+```powershell
 Get-RGTResource
 ```
 **Output:**
@@ -65,7 +65,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 2: Returns all the tagged resources of the specified type in a region. The string for each service name and resource type is the same as that embedded in a resource's Amazon Resource Name (ARN).**
 
-```
+```powershell
 Get-RGTResource -ResourceType "s3"
 ```
 **Output:**
@@ -77,7 +77,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 3: Returns all the tagged resources of the specified type in a region. Note that when the resource types are piped into the cmdlet, one call to the service is made for each supplied resource type.**
 
-```
+```powershell
 "dynamodb","s3" | Get-RGTResource
 ```
 **Output:**
@@ -90,7 +90,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 4: Returns all the tagged resources that match the specified filter.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage" }
 ```
 **Output:**
@@ -102,7 +102,7 @@ arn:aws:s3:::amzn-s3-demo-bucket                                            {sta
 ```
 **Example 5: Returns all the tagged resources that match the specified filter and resource type.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage" } -ResourceType "dynamodb"
 ```
 **Output:**
@@ -114,7 +114,7 @@ arn:aws:dynamodb:us-west-2:123456789012:table/mytable            {stage, version
 ```
 **Example 6: Returns all the tagged resources that match the specified filter.**
 
-```
+```powershell
 Get-RGTResource -TagFilter @{ Key="stage"; Values=@("beta","gamma") }
 ```
 **Output:**
@@ -134,7 +134,7 @@ The following code example shows how to use `Get-RGTTagKey`.
 **Tools for PowerShell V4**
 **Example 1: Returns all tag keys in the specified region. If the -Region parameter is not specified the cmdlet will attempt to infer the region from the default shell region or EC2 instance metadata. Note that the tag keys are not returned in any specific order.**
 
-```
+```powershell
 Get-RGTTagKey -region us-west-2
 ```
 **Output:**
@@ -153,7 +153,7 @@ The following code example shows how to use `Get-RGTTagValue`.
 **Tools for PowerShell V4**
 **Example 1: Returns the value for the specified tag in a region. If the -Region parameter is not specified the cmdlet will attempt to infer the region from the default shell region or EC2 instance metadata.**
 
-```
+```powershell
 Get-RGTTagValue -Key "stage" -Region us-west-2
 ```
 **Output:**
@@ -171,7 +171,7 @@ The following code example shows how to use `Remove-RGTResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: Removes the tag keys "stage" and "version", and the associated values, from an Amazon S3 bucket and an Amazon DynamoDB table. A single call is made to the service to remove the tags. Before the tags are removed the cmdlet will prompt for confirmation. To bypass confirmation add the -Force parameter.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 
@@ -179,7 +179,7 @@ Remove-RGTResourceTag -ResourceARNList $arn1,$arn2 -TagKey "stage","version"
 ```
 **Example 2: Removes the tag keys "stage" and "version", and the associated values, from an Amazon S3 bucket and an Amazon DynamoDB table. Two calls are made to the service, one for each resource ARN piped into the cmdlet. Before each call the cmdlet will prompt for confirmation. To bypass confirmation add the -Force parameter.**
 
-```
+```powershell
 $arn1 = "arn:aws:s3:::amzn-s3-demo-bucket"
 $arn2 = "arn:aws:dynamodb:us-west-2:123456789012:table/mytable"
 

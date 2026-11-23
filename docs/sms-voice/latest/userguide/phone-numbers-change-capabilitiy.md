@@ -8,7 +8,7 @@ After you request a phone number, you can use the [update-phone-number](https://
 
 An example of an additional feature that you can enable by updating a phone number is two-way messaging. Support for two-way messaging varies depending on which country you plan to send messages to. For a list of supported countries, see [Supported countries and regions for SMS messaging with AWS End User Messaging SMS](phone-numbers-sms-by-country.md).
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 update-phone-number \
 > --phone-number-id {{phone-d2b0f5dd4fd14ebdb2a3b9128example}} \
 > --deletion-protection-enabled {{true}} \

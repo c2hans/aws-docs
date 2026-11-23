@@ -42,18 +42,18 @@ The following errors can occur during the conversion phase when you launch a dri
 1. Test connectivity from the staging area to the Elastic Disaster Recovery, Amazon S3, and Amazon EC2 endpoints. Run one of the following commands depending on your operating system:
    + Linux:
 
-     ```
+     ```bash
      curl -v https://drs.{{region}}.amazonaws.com
      ```
    + Windows:
 
-     ```
+     ```powershell
      Test-NetConnection -ComputerName drs.{{region}}.amazonaws.com -Port 443
      ```
 
 1. Verify the route tables for the staging area subnet:
 
-   ```
+   ```bash
    aws ec2 describe-route-tables \
        --filters "Name=association.subnet-id,Values={{subnet-id}}"
    ```

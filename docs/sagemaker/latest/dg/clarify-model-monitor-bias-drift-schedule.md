@@ -61,7 +61,7 @@ model_bias_monitor.create_monitoring_schedule(
 
 To schedule a bias drift monitor for a batch transform job, pass your `BatchTransformInput` instance to the `batch_transform_input` argument of your `ModelBiasModelMonitor` instance, as shown in the following code sample:
 
-```
+```py
 from sagemaker.model_monitor import CronExpressionGenerator
 
 model_bias_monitor = ModelBiasModelMonitor(

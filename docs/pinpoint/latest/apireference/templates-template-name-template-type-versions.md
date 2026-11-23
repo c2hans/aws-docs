@@ -89,7 +89,7 @@ Retrieves information about the communication requirements and options that are 
 #### TemplateVersionsResponse schema
 <a name="templates-template-name-template-type-versions-response-body-templateversionsresponse-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string",
@@ -111,7 +111,7 @@ Retrieves information about the communication requirements and options that are 
 #### MessageBody schema
 <a name="templates-template-name-template-type-versions-response-body-messagebody-example"></a>
 
-```
+```json
 {
   "RequestID": "string",
   "Message": "string"

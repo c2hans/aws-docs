@@ -15,7 +15,7 @@ The Amazon Data Firehose API offers two operations for sending data to your Fire
 
 Putting data requires only the Firehose stream name and a byte buffer (<=1000 KB). Because Amazon Data Firehose batches multiple records before loading the file into Amazon S3, you may want to add a record separator. To put data one record at a time into a Firehose stream, use the following code:
 
-```
+```java
 PutRecordRequest putRecordRequest = new PutRecordRequest();
 putRecordRequest.setDeliveryStreamName(deliveryStreamName);
 
@@ -35,7 +35,7 @@ For more code context, see the sample code included in the AWS SDK. For informat
 
 Putting data requires only the Firehose stream name and a list of records. Because Amazon Data Firehose batches multiple records before loading the file into Amazon S3, you may want to add a record separator. To put data records in batches into a Firehose stream, use the following code:
 
-```
+```java
 PutRecordBatchRequest putRecordBatchRequest = new PutRecordBatchRequest();
 putRecordBatchRequest.setDeliveryStreamName(deliveryStreamName);
 putRecordBatchRequest.setRecords(recordList);

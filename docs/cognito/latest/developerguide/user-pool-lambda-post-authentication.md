@@ -28,7 +28,7 @@ The request that Amazon Cognito passes to this Lambda function is a combination 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "request": {
         "userAttributes": {
@@ -72,7 +72,7 @@ This post authentication sample Lambda function sends data from a successful sig
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const handler = async (event) => {
   // Send post authentication data to Amazon CloudWatch logs
   console.log("Authentication successful");

@@ -32,7 +32,7 @@ An IAM policy defines the permissions for an entity, such as an identity or reso
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -101,7 +101,7 @@ An IAM policy defines the permissions for an entity, such as an identity or reso
 
    If the policy was created successfully, you see output similar to the following:
 
-   ```
+   ```json
    {
        "Policy": {
            "CreateDate": "2018-04-11T18:44:34.805Z",
@@ -135,7 +135,7 @@ Now that you've created an IAM policy, you can create a role and attach the poli
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement":[

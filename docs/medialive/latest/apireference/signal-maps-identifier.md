@@ -106,7 +106,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### PATCH schema
 <a name="signal-maps-identifier-request-body-patch-example"></a>
 
-```
+```json
 {
   "cloudWatchAlarmTemplateGroupIdentifiers": [
     "string"
@@ -127,7 +127,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### GetSignalMapResponseContent schema
 <a name="signal-maps-identifier-response-body-getsignalmapresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "cloudWatchAlarmTemplateGroupIds": [
@@ -165,7 +165,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### StartUpdateSignalMapResponseContent schema
 <a name="signal-maps-identifier-response-body-startupdatesignalmapresponsecontent-example"></a>
 
-```
+```json
 {
   "arn": "string",
   "cloudWatchAlarmTemplateGroupIds": [
@@ -203,7 +203,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### BadRequestExceptionResponseContent schema
 <a name="signal-maps-identifier-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -212,7 +212,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### ForbiddenExceptionResponseContent schema
 <a name="signal-maps-identifier-response-body-forbiddenexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -221,7 +221,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### NotFoundExceptionResponseContent schema
 <a name="signal-maps-identifier-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -230,7 +230,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### ConflictExceptionResponseContent schema
 <a name="signal-maps-identifier-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -239,7 +239,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### TooManyRequestsExceptionResponseContent schema
 <a name="signal-maps-identifier-response-body-toomanyrequestsexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -248,7 +248,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 #### InternalServerErrorExceptionResponseContent schema
 <a name="signal-maps-identifier-response-body-internalservererrorexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

@@ -27,7 +27,7 @@ STL\_USAGE\_CONTROL is visible only to superusers. For more information, see [Vi
 
 The following SQL example returns some of the information logged when a usage limit is reached.
 
-```
+```sql
 select query, pid, eventtime, feature_type
 from stl_usage_control
 order by eventtime desc

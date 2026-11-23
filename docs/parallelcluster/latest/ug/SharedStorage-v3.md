@@ -19,7 +19,7 @@ For [shared storage quotas](shared-storage-quotas-v3.md) and more information ab
 **Note**
 If AWS Batch is used as a scheduler, FSx for Lustre is only available on the cluster head node.
 
-```
+```yaml
 SharedStorage:
   - MountDir: {{string}}
     Name: {{string}}
@@ -126,7 +126,7 @@ If you use AWS Batch as a scheduler, FSx for Lustre is only available on the clu
 
 **(Optional)** The settings for an Amazon EBS volume.
 
-```
+```yaml
 EbsSettings:
   VolumeType: {{string}}
   Iops: {{integer}}
@@ -213,7 +213,7 @@ For more information, see [Shared storage](shared-storage-quotas-integration-v3.
 
 **(Optional)** Defines the configuration of a RAID volume.
 
-```
+```yaml
 Raid:
   Type: {{string}}
   NumberOfVolumes: {{integer}}
@@ -237,7 +237,7 @@ Defines the number of Amazon EBS volumes to use to create the RAID array. The su
 
 **(Optional)** The settings for an Amazon EFS file system.
 
-```
+```yaml
 EfsSettings:
   Encrypted: {{boolean}}
   KmsKeyId: {{string}}
@@ -336,7 +336,7 @@ You must define `FsxLustreSettings` if `FsxLustre` is specified for [`StorageTyp
 
 **(Optional)** The settings for an FSx for Lustre file system.
 
-```
+```yaml
 FsxLustreSettings:
   StorageCapacity: {{integer}}
   DeploymentType: {{string}}
@@ -551,7 +551,7 @@ You must define `FsxOntapSettings` if `FsxOntap` is specified for [`StorageType`
 
 **(Optional)** The settings for an FSx for ONTAP file system.
 
-```
+```yaml
 FsxOntapSettings:
   VolumeId: {{string}}
 ```
@@ -586,7 +586,7 @@ You must define `FsxOpenZfsSettings` if `FsxOpenZfs` is specified for [`StorageT
 
 **(Optional)** The settings for a FSx for OpenZFS file system.
 
-```
+```yaml
 FsxOpenZfsSettings:
   VolumeId: {{string}}
 ```
@@ -622,7 +622,7 @@ You must define `FileCacheSettings` if `FileCache` is specified for [`StorageTyp
 
 **(Optional)** The settings for a File Cache.
 
-```
+```yaml
 FileCacheSettings:
   FileCacheId: {{string}}
 ```

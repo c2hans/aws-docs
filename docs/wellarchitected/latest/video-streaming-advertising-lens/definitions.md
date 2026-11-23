@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 
 ![Online video advertising logical environment showing the buy side (advertiser, agency, DSP), sell side (publisher, ad network, SSP, ad server), and technology intermediaries (ad exchange, DMP, CDP) and the data and bid flows between them](https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/definitions-online-video-advertising-environment.jpg)
 
+*Online video advertising logical environment*
+
 ## Digital advertising formats
 <a name="digital-advertising-formats"></a>
 +  **Search advertising:** Ads appearing in search engine results pages. Typically text ads that appear above or alongside organic search results.

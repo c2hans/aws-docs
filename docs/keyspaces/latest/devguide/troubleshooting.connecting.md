@@ -283,7 +283,7 @@ To resolve these issues, verify the following configuration details. To follow a
 
 1. Confirm that the IAM entity used to connect to Amazon Keyspaces has read/write access to the user table and read access to the system tables as shown in the following example.
 
-   ```
+   ```JSON
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -304,7 +304,7 @@ To resolve these issues, verify the following configuration details. To follow a
 
 1. Confirm that the IAM entity used to connect to Amazon Keyspaces has the required read permissions to access the VPC endpoint information on your Amazon EC2 instance as shown in the following example.
 
-   ```
+   ```JSON
    {
       "Version":"2012-10-17",
       "Statement":[

@@ -45,7 +45,7 @@ The SMART on FHIR authorization strategy is set when your data store is created.
 
 When using SMART on FHIR V1, the general syntax for constructing FHIR resource scopes for HealthLake follows. To view the entire URL path in the following example, scroll over the **Copy** button.
 
-```
+```http
 ('patient' | 'user' | 'system') '/' (fhir-resource | '*') '.' ('read' | 'write' | '*')
 ```
 
@@ -62,7 +62,7 @@ When using SMART on FHIR V1, the general syntax for constructing FHIR resource s
 
 When using SMART on FHIR V2, the general syntax for constructing FHIR resource scopes for HealthLake follows. To view the entire URL path in the following example, scroll over the **Copy** button.
 
-```
+```http
 ('patient' | 'user' | 'system') '/' (fhir-resource | '*') '.' ('c' | 'r' | 'u' | 'd' | 's')
 ```
 
@@ -105,7 +105,7 @@ The enablement path depends on whether you are creating a new data store or upda
 
 When creating a new data store, add `permission-v2.2` to the `capabilities` array in the `Metadata` field of your [`IdentityProviderConfiguration`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html):
 
-```
+```json
 "capabilities": [
   "launch-ehr",
   "sso-openid-connect",
@@ -127,7 +127,7 @@ Requirements:
 
 The change takes effect immediately, with no downtime. To verify, fetch the [Discovery Document](reference-smart-on-fhir-discovery-document.md) (requires SigV4):
 
-```
+```http
 GET {healthlake-endpoint}/r4/.well-known/smart-configuration
 ```
 
@@ -138,7 +138,7 @@ If the `capabilities` array in the response includes `permission-v2.2`, SMART on
 
 The V2 grammar is extended with an optional query string:
 
-```
+```http
 V2:   (patient|user|system) / resource . cruds
 V2.2: (patient|user|system) / resource . cruds [? param=value [& param=value ...]]
 ```
@@ -216,13 +216,13 @@ Scenario: A patient app should only show finalized lab results from 2023 onward.
 
 1. Authorization server issues token with scope:
 
-   ```
+   ```http
    patient/Observation.rs?category=laboratory&status=final&date=ge2023-01-01
    ```
 
 1. Client calls HealthLake:
 
-   ```
+   ```http
    GET {endpoint}/r4/Observation?patient=Patient/123
    ```
 

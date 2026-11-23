@@ -83,7 +83,7 @@ To enable SSE-S3 encryption for the data that you're importing into Amazon S3, s
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Id": "PutObjPolicy",

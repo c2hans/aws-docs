@@ -18,7 +18,7 @@ An EC2 policy is a plaintext file that is structured according to the rules of [
 
 The following example shows basic EC2 policy syntax:
 
-```
+```json
 {
   "ec2_attributes": {
     "exception_message": {
@@ -53,7 +53,7 @@ Controls if resources in Amazon VPCs and subnets can reach the internet through 
 
 **Policy contents**
 
-```
+```json
 {
   "ec2_attributes": {
     "vpc_block_public_access": {
@@ -98,7 +98,7 @@ Controls if the EC2 serial console is accessible. For more information about the
 
 **Policy contents**
 
-```
+```json
 {
   "ec2_attributes": {
     "serial_console_access": {
@@ -130,7 +130,7 @@ Controls if Amazon Machine Images (AMIs) are publicly sharable. For more informa
 
 **Policy contents**
 
-```
+```json
 {
   "ec2_attributes": {
     "image_block_public_access": {
@@ -164,7 +164,7 @@ Controls the discovery and use of Amazon Machine Images (AMI) in Amazon EC2 with
 
 The following are the available fields for this attribute:
 
-```
+```json
 {
   "ec2_attributes": {
     "allowed_images_settings": {
@@ -313,7 +313,7 @@ Controls IMDS defaults and IMDSv2 enforcement for all new EC2 instance launches.
 
 The following are the available fields for this attribute:
 
-```
+```json
 {
   "ec2_attributes": {
     "instance_metadata_defaults": {
@@ -373,7 +373,7 @@ Controls if Amazon EBS snapshots are publicly accessible. For more information a
 
 **Policy contents**
 
-```
+```json
 {
   "ec2_attributes": {
     "snapshot_block_public_access": {
@@ -405,7 +405,7 @@ Controls whether Amazon VPC encryption controls are enabled and in which mode fo
 
 **Policy contents**
 
-```
+```json
 {
   "ec2_attributes": {
     "vpc_encryption_control": {
@@ -464,7 +464,7 @@ Controls how the networking costs of NAT gateways, EC2 instances, and VPC peerin
 
 **Policy contents**
 
-```
+```json
 {
   "ec2_attributes": {
     "networking_flex_cost_allocation": {

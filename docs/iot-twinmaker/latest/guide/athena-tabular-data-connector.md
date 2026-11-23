@@ -80,7 +80,7 @@ You have now successfully created a component with the Athena data connector as 
 
 The following example is the full the JSON reference for the Athena tabular data connector. Use this as a resource to create custom data connectors and component types.
 
-```
+```JSON
 {
     "componentTypeId": "com.amazon.athena.connector",
     "description": "Athena connector for syncing tabular data",

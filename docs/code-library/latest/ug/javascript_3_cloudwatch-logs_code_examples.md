@@ -29,7 +29,7 @@ The following code example shows how to use `CreateLogGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
 import { CreateLogGroupCommand } from "@aws-sdk/client-cloudwatch-logs";
 import { client } from "../libs/client.js";
 
@@ -58,7 +58,7 @@ The following code example shows how to use `DeleteLogGroup`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
 import { DeleteLogGroupCommand } from "@aws-sdk/client-cloudwatch-logs";
 import { client } from "../libs/client.js";
 
@@ -87,7 +87,7 @@ The following code example shows how to use `DeleteSubscriptionFilter`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
 import { DeleteSubscriptionFilterCommand } from "@aws-sdk/client-cloudwatch-logs";
 import { client } from "../libs/client.js";
 
@@ -118,7 +118,7 @@ The following code example shows how to use `DescribeLogGroups`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
 import {
   paginateDescribeLogGroups,
   CloudWatchLogsClient,
@@ -150,7 +150,7 @@ The following code example shows how to use `DescribeSubscriptionFilters`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
 import { DescribeSubscriptionFiltersCommand } from "@aws-sdk/client-cloudwatch-logs";
 import { client } from "../libs/client.js";
 
@@ -181,7 +181,7 @@ The following code example shows how to use `GetQueryResults`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
   /**
    * Simple wrapper for the GetQueryResultsCommand.
    * @param {string} queryId
@@ -200,7 +200,7 @@ The following code example shows how to use `PutSubscriptionFilter`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
 import { PutSubscriptionFilterCommand } from "@aws-sdk/client-cloudwatch-logs";
 import { client } from "../libs/client.js";
 
@@ -242,12 +242,12 @@ The following code example shows how to use `StartLiveTail`.
 **SDK for JavaScript (v3)**
 Include the required files.
 
-```
+```javascript
 import { CloudWatchLogsClient, StartLiveTailCommand } from "@aws-sdk/client-cloudwatch-logs";
 ```
 Handle the events from the Live Tail session.
 
-```
+```javascript
 async function handleResponseAsync(response) {
     try {
       for await (const event of response.responseStream) {
@@ -271,7 +271,7 @@ async function handleResponseAsync(response) {
 ```
 Start the Live Tail session.
 
-```
+```javascript
     const client = new CloudWatchLogsClient();
 
     const command = new StartLiveTailCommand({
@@ -289,7 +289,7 @@ Start the Live Tail session.
 ```
 Stop the Live Tail session after a period of time has elapsed.
 
-```
+```javascript
     /* Set a timeout to close the client. This will stop the Live Tail session. */
     setTimeout(function() {
         console.log("Client timeout");
@@ -306,7 +306,7 @@ The following code example shows how to use `StartQuery`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
 
-```
+```javascript
   /**
    * Wrapper for the StartQueryCommand. Uses a static query string
    * for consistency.
@@ -352,7 +352,7 @@ The following code example shows how to use CloudWatch Logs to query more than 1
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs/scenarios/large-query#code-examples).
 This is the entry point.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { CloudWatchLogsClient } from "@aws-sdk/client-cloudwatch-logs";
@@ -382,7 +382,7 @@ console.log(
 ```
 This is a class that splits queries into multiple steps if necessary.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import {

@@ -10,7 +10,7 @@ For an example of the CloudTrail log entry that is written when the key is delet
 
 The following example records a `ScheduleKeyDeletion` request for a single-Region KMS key.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -55,7 +55,7 @@ The following example records a `ScheduleKeyDeletion` request for a multi-Region
 
 Because AWS KMS won't delete a multi-Region key until all of its replica keys are deleted, in the `responseElements` field, the `keyState` is `PendingReplicaDeletion` and the `deletionDate` field is omitted.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -100,7 +100,7 @@ Because AWS KMS won't delete a multi-Region key until all of its replica keys ar
 
 The following example records a `ScheduleKeyDeletion` request for a KMS key in an AWS CloudHSM [custom key store](key-store-overview.md#custom-key-store-overview).
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

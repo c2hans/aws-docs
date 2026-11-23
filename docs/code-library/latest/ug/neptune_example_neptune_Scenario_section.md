@@ -23,7 +23,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/neptune#code-examples).
 Run an interactive scenario demonstrating Neptune features.
 
-```
+```java
 public class NeptuneScenario {
     public static final String DASHES = new String(new char[80]).replace("\0", "-");
     private static final Logger logger = LoggerFactory.getLogger(NeptuneScenario.class);
@@ -264,7 +264,7 @@ public class NeptuneScenario {
 ```
 A wrapper class for Neptune SDK methods.
 
-```
+```java
 public class NeptuneActions {
     private CompletableFuture<Void> instanceCheckFuture;
     private static NeptuneAsyncClient neptuneAsyncClient;
@@ -805,7 +805,7 @@ public class NeptuneActions {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/neptune#code-examples).
 
-```
+```python
 import boto3
 import time
 from botocore.exceptions import ClientError

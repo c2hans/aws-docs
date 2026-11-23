@@ -8,7 +8,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 
 The following example shows how to define two Amazon CodeCatalyst action groups: `BuildAndTest` and `Deploy`. The `BuildAndTest` group includes two actions (`Build` and `Test`), and the `Deploy` group also includes two actions (`DeployCloudFormationStack` and `DeployToECS`).
 
-```
+```yaml
 Actions:
   BuildAndTest: # Action group 1
     Actions:

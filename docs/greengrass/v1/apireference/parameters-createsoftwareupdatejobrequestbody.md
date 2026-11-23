@@ -6,7 +6,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 # CreateSoftwareUpdateJobRequestBody
 
-```
+```json
 {
 "UpdateTargetsArchitecture": "armv6l|armv7l|x86_64|aarch64",
 "UpdateTargets": [

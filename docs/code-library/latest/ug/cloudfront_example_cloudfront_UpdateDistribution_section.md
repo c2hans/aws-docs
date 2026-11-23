@@ -393,7 +393,7 @@ For more information, see [Update a distribution](https://docs.aws.amazon.com/Am
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
 import software.amazon.awssdk.services.cloudfront.model.GetDistributionRequest;
@@ -491,7 +491,7 @@ public class ModifyDistribution {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudfront#code-examples).
 
-```
+```python
 class CloudFrontWrapper:
     """Encapsulates Amazon CloudFront operations."""
 
@@ -533,7 +533,7 @@ class CloudFrontWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/fnt#code-examples).
 
-```
+```sap-abap
     TRY.
         " Get the current distribution configuration and ETag "
         DATA(lo_distribution_config_result) = lo_fnt->getdistributionconfig( iv_id = iv_distribution_id ).

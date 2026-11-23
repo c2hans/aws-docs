@@ -22,7 +22,7 @@ On the machine, run the following command to use `ssm-cli` to help you troublesh
 ------
 #### [ Linux & macOS ]
 
-```
+```sh
 ssm-cli get-diagnostics --output table
 ```
 
@@ -31,7 +31,7 @@ ssm-cli get-diagnostics --output table
 
 On Windows Server machines, you must navigate to the `C:\Program Files\Amazon\SSM` directory before running the command.
 
-```
+```sh
 ssm-cli.exe get-diagnostics --output table
 ```
 
@@ -40,7 +40,7 @@ ssm-cli.exe get-diagnostics --output table
 
 On Windows Server machines, you must navigate to the `C:\Program Files\Amazon\SSM` directory before running the command.
 
-```
+```ps
 .\ssm-cli.exe get-diagnostics --output table
 ```
 

@@ -72,13 +72,13 @@ To use the SageMaker APIs for batch inferencing, there are three steps:
 
    The following example shows how to use the [DescribeAutoMLJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJob.html) API to obtain candidate definitions for the best model candidate. See the following AWS CLI command as an example.
 
-   ```
+   ```bash
    aws sagemaker describe-auto-ml-job --auto-ml-job-name {{<job-name>}} --region {{<region>}}
    ```
 
    Use the [ListCandidatesForAutoMLJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCandidatesForAutoMLJob.html) API to list all candidates. See the following AWS CLI command as an example.
 
-   ```
+   ```bash
    aws sagemaker list-candidates-for-auto-ml-job --auto-ml-job-name {{<job-name>}} --region {{<region>}}
    ```
 
@@ -86,7 +86,7 @@ To use the SageMaker APIs for batch inferencing, there are three steps:
 
    To create a SageMaker AI model using the [CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API, use the container definitions from the previous steps. See the following AWS CLI command as an example.
 
-   ```
+   ```bash
    aws sagemaker create-model --model-name '{{<your-custom-model-name>}}' \
                        --containers ['{{<container-definition1}}>, {{<container-definition2>}}, {{<container-definition3>}}]' \
                        --execution-role-arn '{{<execution-role-arn>}}' --region '{{<region>}}
@@ -96,7 +96,7 @@ To use the SageMaker APIs for batch inferencing, there are three steps:
 
    The following example creates a SageMaker AI transform job with the [CreateTransformJob](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/create-transform-job.html) API. See the following AWS CLI command as an example.
 
-   ```
+   ```bash
    aws sagemaker create-transform-job --transform-job-name '{{<your-custom-transform-job-name>}}' --model-name '{{<your-custom-model-name-from-last-step>}}'\
    --transform-input '{
            "DataSource": {
@@ -120,7 +120,7 @@ To use the SageMaker APIs for batch inferencing, there are three steps:
 
 Check the progress of your transform job using the [DescribeTransformJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTransformJob.html) API. See the following AWS CLI command as an example.
 
-```
+```bash
 aws sagemaker describe-transform-job --transform-job-name '{{<your-custom-transform-job-name>}}' --region {{<region>}}
 ```
 
@@ -135,7 +135,7 @@ The following tabs show code examples for SageMaker Python SDK, AWS SDK for Pyth
 
 The following example uses the **[SageMaker Python SDK ](https://sagemaker.readthedocs.io/en/stable/)** to make predictions in batches.
 
-```
+```python
 from sagemaker import AutoML
 
 sagemaker_session= sagemaker.session.Session()
@@ -236,13 +236,13 @@ The batch inference job returns a response in the following format.
 
 1. **Obtain the candidate definitions** by using the following the code example.
 
-   ```
+   ```bash
    aws sagemaker describe-auto-ml-job --auto-ml-job-name '{{test-automl-job}}' --region {{us-west-2}}
    ```
 
 1. **Create the model** by using the following the code example.
 
-   ```
+   ```bash
    aws sagemaker create-model --model-name '{{test-sagemaker-model}}'
    --containers '[{
        "Image": "348316444620.dkr.ecr.us-west-2.amazonaws.com/sagemaker-sklearn-automl:2.5-1-cpu-py3",
@@ -282,7 +282,7 @@ The batch inference job returns a response in the following format.
 
 1. **Create the transform job** by using the following the code example.
 
-   ```
+   ```bash
    aws sagemaker create-transform-job --transform-job-name '{{test-tranform-job}}'\
     --model-name '{{test-sagemaker-model}}'\
    --transform-input '{
@@ -308,7 +308,7 @@ The batch inference job returns a response in the following format.
 
 1. **Check the progress of the transform job** by using the following the code example.
 
-   ```
+   ```bash
    aws sagemaker describe-transform-job --transform-job-name  '{{test-tranform-job}}' --region {{us-west-2}}
    ```
 

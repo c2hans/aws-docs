@@ -23,7 +23,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-property-webfunction-revisionweights-syntax.yaml"></a>
 
-```
+```yaml
 {{revision-id}}: {{Integer}}
 {{revision-id}}: {{Integer}}
 ```
@@ -36,7 +36,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 
 The following example sends 90% of traffic to `rev-abc123` and 10% to `rev-def456`.
 
-```
+```yaml
 AutoDeploymentMode: Disabled
 RevisionWeights:
   rev-abc123: 90
@@ -45,7 +45,7 @@ RevisionWeights:
 
 AWS SAM transforms this into the following endpoint property:
 
-```
+```yaml
 RevisionWeights:
   - RevisionId: rev-abc123
     Weight: 90

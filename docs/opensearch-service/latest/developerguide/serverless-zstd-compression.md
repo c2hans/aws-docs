@@ -18,7 +18,7 @@ For more details, refer to the [OpenSearch Index Codecs documentation](https://o
 
 You can specify the ZSTD codec during index creation using the `index.codec` setting:
 
-```
+```json
 PUT /your_index
 {
   "settings": {
@@ -32,7 +32,7 @@ PUT /your_index
 
 ZSTD codecs support optional compression levels via the `index.codec.compression_level` setting, accepting integers in the range [1, 6]. Higher compression levels result in better compression ratios (smaller storage) but slower compression and decompression speeds. The default compression level is 3.
 
-```
+```json
 PUT /your_index
 {
   "settings": {

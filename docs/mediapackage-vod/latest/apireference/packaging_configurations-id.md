@@ -88,7 +88,7 @@ Enable cross-origin resource sharing (CORS) by returning correct headers.
 #### PackagingConfiguration schema
 <a name="packaging_configurations-id-response-body-packagingconfiguration-example"></a>
 
-```
+```json
 {
   "createdAt": "string",
   "packagingGroupId": "string",

@@ -8,7 +8,7 @@ Create a target role in each account that contains targeted resources. Its trust
 
 **Trust policy**
 
-```
+```json
 {
   "Version": "2012-10-17"		 	 	 ,
   "Statement": [

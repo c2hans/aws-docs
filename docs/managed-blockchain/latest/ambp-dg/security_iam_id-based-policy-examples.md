@@ -46,7 +46,7 @@ To ensure that users and roles can still use the AMB Access Polygon console, als
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ In order to access the public endpoints for the Polygon `mainnet` and `mainnet` 
 This example grants an IAM user in your AWS account access to all Polygon networks.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ This example grants an IAM user in your AWS account access to all Polygon networ
 This example grants an IAM user in your AWS account access to the Polygon Mainnet network.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

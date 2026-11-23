@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/reserving-conta
 ### Example: List and reserve with azimuth elevation ephemeris
 <a name="w2aac28c19b7b5"></a>
 
-```
+```python
 import boto3
 from datetime import datetime, timezone
 import time
@@ -125,7 +125,7 @@ else:
 ### Example: List and reserve with TLE ephemeris
 <a name="w2aac28c19b7b7"></a>
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta, timezone
 import time
@@ -217,7 +217,7 @@ else:
 ### Example: Direct reservation with azimuth elevation ephemeris
 <a name="w2aac28c19b9b5"></a>
 
-```
+```python
 import boto3
 from datetime import datetime, timezone
 import time
@@ -295,7 +295,7 @@ print(f"Reserved contact: {reservation['contactId']}")
 ### Example: Direct reservation with TLE ephemeris
 <a name="w2aac28c19b9b7"></a>
 
-```
+```python
 import boto3
 from datetime import datetime, timedelta, timezone
 import time
@@ -401,7 +401,7 @@ print(f"Reserved contact: {reservation['contactId']}")
 
  The EventBridge rule should use the following event pattern to match all Ground Station contact state changes:
 
-```
+```json
 {
   "source": ["aws.groundstation"],
   "detail-type": ["Ground Station Contact State Change"]
@@ -410,7 +410,7 @@ print(f"Reserved contact: {reservation['contactId']}")
 
  To filter for specific states only (e.g., failures), you can add a detail filter:
 
-```
+```json
 {
   "source": ["aws.groundstation"],
   "detail-type": ["Ground Station Contact State Change"],

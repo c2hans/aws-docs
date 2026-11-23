@@ -20,6 +20,8 @@ The Container Insights Prometheus solution includes pre-built dashboards for the
 
 You can also configure Container Insights to collect Prometheus metrics from other containerized services and applications by editing the agent configuration file.
 
+To set up Prometheus metrics collection on Amazon ECS clusters, see [Set up and configure Prometheus metrics collection on Amazon ECS clusters](ContainerInsights-Prometheus-Setup-ECS.md).
+
 Workloads with pre-built dashboards for Amazon EKS clusters and Kubernetes clusters running on Amazon EC2 instances:
 + AWS App Mesh
 + NGINX

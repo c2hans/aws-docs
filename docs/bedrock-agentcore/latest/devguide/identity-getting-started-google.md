@@ -34,7 +34,7 @@ The `BedrockAgentCoreFullAccess` managed policy grants broad permissions includi
 
 To get started, install the `bedrock-agentcore` package:
 
-```
+```bash
 pip install bedrock-agentcore
 ```
 
@@ -60,7 +60,7 @@ To allow your agent to access Google Drive, you need to obtain a Google client I
 
 Create a new OAuth 2.0 Credential Provider with the Google client ID and client secret obtained earlier using the following AWS CLI command:
 
-```
+```bash
 OAUTH2_CREDENTIAL_PROVIDER_RESPONSE=$(aws bedrock-agentcore-control create-oauth2-credential-provider \
   --region us-east-1 \
   --name "google-provider" \
@@ -86,7 +86,7 @@ Obtain the `callbackUrl` from the [CreateOauth2CredentialProvider](https://docs.
 
 Add this import statement to your Python file:
 
-```
+```python
 from bedrock_agentcore.services.identity import IdentityClient
 from bedrock_agentcore.identity.auth import requires_access_token, requires_api_key
 ```
@@ -98,7 +98,7 @@ Once you have the Google Credential Provider created in the previous step, add t
 
 The following code sample is intended to be integrated into your agent code to invoke an authorization workflow. This is not standalone code that can be copied and run independently.
 
-```
+```python
 import asyncio
 
 # Injects Google Access Token
@@ -146,13 +146,13 @@ Once the agent obtains a Google access token with the steps above, it can use th
 
 First, install the Google client library for Python:
 
-```
+```bash
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 ```
 
 Then, copy the following code:
 
-```
+```python
 import asyncio
 from bedrock_agentcore.identity.auth import requires_access_token, requires_api_key
 from google.auth.transport.requests import Request

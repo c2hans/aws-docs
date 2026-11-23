@@ -14,7 +14,7 @@ The policy includes the following statement defining permissions:
 
 Add, modify, and remove the statements, resources, and conditions in the following policy and replace `${values}` as necessary:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

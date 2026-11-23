@@ -10,14 +10,14 @@ Use the [COPY](r_COPY.md) command to load a table in parallel from data files on
 
 The syntax to specify the files to be loaded by using a prefix is as follows:
 
-```
+```sql
 COPY <table_name> FROM 's3://<bucket_name>/<object_prefix>'
 authorization;
 ```
 
  The manifest file is a JSON-formatted file that lists the data files to be loaded. The syntax to specify the files to be loaded by using a manifest file is as follows:
 
-```
+```sql
 COPY <table_name> FROM 's3://<bucket_name>/<manifest_file>'
 authorization
 MANIFEST;
@@ -35,7 +35,7 @@ IAM_ROLE 'arn:aws:iam::{{<aws-account-id>}}:role/{{<role-name>}}'
 
 The following example shows authentication using an IAM role.
 
-```
+```sql
 COPY customer
 FROM 's3://amzn-s3-demo-bucket/mydata'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole';
@@ -69,7 +69,7 @@ The following COPY command loads the VENUE table using the pipe-delimited data i
 **Note**
 The Amazon S3 bucket `amzn-s3-demo-bucket` in the following examples does not exist. For sample COPY commands that use real data in an existing Amazon S3 bucket, see [Load sample data](https://docs.aws.amazon.com/redshift/latest/gsg/cm-dev-t-load-sample-data.html).
 
-```
+```sql
 COPY venue FROM 's3://amzn-s3-demo-bucket/venue'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
 DELIMITER '|';

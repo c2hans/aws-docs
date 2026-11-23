@@ -52,7 +52,7 @@ If *x*, *y*, *z*, or *m* is null, then null is returned.
 
 The following SQL returns a `GEOMETRY` type of subtype `POINT` with the provided coordinates.
 
-```
+```sql
 SELECT ST_AsText(ST_MakePoint(1,3));
 ```
 
@@ -64,7 +64,7 @@ st_astext
 
 The following SQL returns a `GEOMETRY` type of subtype `POINT` with the provided coordinates.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_MakePoint(1, 2, 3));
 ```
 
@@ -76,7 +76,7 @@ st_asewkt
 
 The following SQL returns a `GEOMETRY` type of subtype `POINT` with the provided coordinates.
 
-```
+```sql
 SELECT ST_AsEWKT(ST_MakePoint(1, 2, 3, 4));
 ```
 

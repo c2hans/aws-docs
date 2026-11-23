@@ -54,7 +54,7 @@ If your development environment is not set up for programmatic access as previou
 
 Before running an application that accesses AWS services, you need an active AWS access portal session in order for the SDK to use IAM Identity Center authentication to resolve credentials. Run the following command in the AWS CLI to sign in to the AWS access portal.
 
-```
+```bash
 aws sso login
 ```
 
@@ -62,7 +62,7 @@ Since you have a default profile setup, you do not need to call the command with
 
 To test if you already have an active session, run the following AWS CLI command.
 
-```
+```bash
 aws sts get-caller-identity
 ```
 

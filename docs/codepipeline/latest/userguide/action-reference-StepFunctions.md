@@ -115,7 +115,7 @@ For the `StepFunctions` action, the following are the minimum permissions needed
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: ActionName
 ActionTypeId:
   Category: Invoke
@@ -132,7 +132,7 @@ Configuration:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "ActionName",
     "ActionTypeId": {
@@ -161,7 +161,7 @@ Configuration:
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: ActionName
 ActionTypeId:
   Category: Invoke
@@ -179,7 +179,7 @@ Configuration:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "ActionName",
     "ActionTypeId": {
@@ -209,7 +209,7 @@ Configuration:
 ------
 #### [ YAML ]
 
-```
+```yaml
 Name: ActionName
 InputArtifacts:
   - Name: myInputArtifact
@@ -230,7 +230,7 @@ Configuration:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Name": "ActionName",
     "InputArtifacts": [

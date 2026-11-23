@@ -35,7 +35,7 @@ To restrict which functions can be associated with a Connect Customer instance, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ This example follows a similar model to the Amazon S3 example. It restricts whic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

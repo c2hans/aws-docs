@@ -15,7 +15,7 @@ After `ttl` is enabled, you can't disable it for the table.
 **Enable custom TTL settings for a table using CQL**
 +
 
-  ```
+  ```SQL
   ALTER TABLE {{my_table}} WITH CUSTOM_PROPERTIES={'ttl':{'status': 'enabled'}};
   ```
 

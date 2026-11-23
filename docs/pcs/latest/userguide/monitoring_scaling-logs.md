@@ -33,7 +33,7 @@ The IAM principal that manages the AWS PCS cluster must allow the `pcs:AllowVend
 
 The following example IAM policy grants the required permissions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ You can set up scaling logs for your AWS PCS cluster with the AWS Management Con
 
 1. Create a log delivery destination:
 
-   ```
+   ```cmd
    aws logs put-delivery-destination --region {{region}} \
      --name {{pcs-logs-destination}} \
      --delivery-destination-configuration \
@@ -94,7 +94,7 @@ You can set up scaling logs for your AWS PCS cluster with the AWS Management Con
 
 1. Set the PCS cluster as a log delivery source:
 
-   ```
+   ```cmd
    aws logs put-delivery-source --region {{region}} \
      --name {{cluster-logs-source-name}} \
      --resource-arn {{cluster-arn}} \
@@ -110,7 +110,7 @@ You can set up scaling logs for your AWS PCS cluster with the AWS Management Con
 
 1. Connect the delivery source to the delivery destination:
 
-   ```
+   ```cmd
    aws logs create-delivery --region {{region}} \
      --delivery-source-name {{cluster-logs-source}} \
      --delivery-destination-arn {{destination-arn}}
@@ -135,7 +135,7 @@ You can configure log destinations in CloudWatch Logs and Amazon S3. AWS PCS use
 
 AWS PCS uses the following name format for the CloudWatch Logs stream:
 
-```
+```txt
 AWSLogs/PCS/{{cluster-id}}/node_lifecycle.log
 ```
 
@@ -146,7 +146,7 @@ For example: `AWSLogs/PCS/pcs_abc123de45/node_lifecycle.log`
 
 AWS PCS uses the following name format for the S3 path:
 
-```
+```txt
 AWSLogs/{{account-id}}/PCS/{{region}}/{{cluster-id}}/node_lifecycle/{{year}}/{{month}}/{{day}}/{{hour}}/
 ```
 
@@ -154,7 +154,7 @@ For example: `AWSLogs/111122223333/PCS/us-east-1/pcs_abc123de45/node_lifecycle/2
 
 AWS PCS uses the following name format for the log files:
 
-```
+```txt
 PCS_{{cluster-id}}_node_lifecycle_{{year}}-{{month}}-{{day}}-{{hour}}_{{random-id}}.log.gz
 ```
 
@@ -227,7 +227,7 @@ The `status_code` field tells you the state the node entered. The `reason_code` 
 
 The following example shows a successful instance launch:
 
-```
+```json
 {
     "resource_id": "pcs_abc123de45",
     "resource_type": "PCS_CLUSTER",
@@ -247,7 +247,7 @@ The following example shows a successful instance launch:
 
 The following example shows a launch failure caused by insufficient EC2 capacity. No `instance_id` is present because no instance was launched.
 
-```
+```json
 {
     "resource_id": "pcs_abc123de45",
     "resource_type": "PCS_CLUSTER",

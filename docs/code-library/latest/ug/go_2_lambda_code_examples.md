@@ -37,7 +37,7 @@ The following code example shows how to get started using Lambda.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 package main
 
 import (
@@ -102,7 +102,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 Create an interactive scenario that shows you how to get started with Lambda functions.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -431,7 +431,7 @@ func (helper *ScenarioHelper) CreateDeploymentPackage(sourceFile string, destina
 ```
 Create a struct that wraps individual Lambda actions.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -615,7 +615,7 @@ type LambdaResultFloat struct {
 ```
 Define a Lambda handler that increments a number.
 
-```
+```go
 import logging
 
 logger = logging.getLogger()
@@ -644,7 +644,7 @@ def lambda_handler(event, context):
 ```
 Define a second Lambda handler that performs arithmetic operations.
 
-```
+```go
 import logging
 import os
 
@@ -709,7 +709,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -778,7 +778,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -818,7 +818,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -862,7 +862,7 @@ The following code example shows how to use `Invoke`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -915,7 +915,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -962,7 +962,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1016,7 +1016,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/lambda#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -1066,7 +1066,7 @@ The following code example shows how to automatically confirm known Amazon Cogni
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1203,7 +1203,7 @@ func (runner *AutoConfirm) Run(ctx context.Context, stackName string) {
 ```
 Handle the `PreSignUp` trigger with a Lambda function.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1297,7 +1297,7 @@ func main() {
 ```
 Create a struct that performs common tasks.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1404,7 +1404,7 @@ func (helper ScenarioHelper) ListRecentLogEvents(ctx context.Context, functionNa
 ```
 Create a struct that wraps Amazon Cognito actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -1595,7 +1595,7 @@ func (actor CognitoActions) AdminSetUserPassword(ctx context.Context, userPoolId
 ```
 Create a struct that wraps DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1698,7 +1698,7 @@ func (actor DynamoActions) AddUser(ctx context.Context, tableName string, user U
 ```
 Create a struct that wraps CloudWatch Logs actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -1751,7 +1751,7 @@ func (actor CloudWatchLogsActions) GetLogEvents(ctx context.Context, functionNam
 ```
 Create a struct that wraps CloudFormation actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1784,7 +1784,7 @@ func (actor CloudFormationActions) GetOutputs(ctx context.Context, stackName str
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -1867,7 +1867,7 @@ The following code example shows how to automatically migrate known Amazon Cogni
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -2042,7 +2042,7 @@ func (runner *MigrateUser) Run(ctx context.Context, stackName string) {
 ```
 Handle the `MigrateUser` trigger with a Lambda function.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -2135,7 +2135,7 @@ func main() {
 ```
 Create a struct that performs common tasks.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -2242,7 +2242,7 @@ func (helper ScenarioHelper) ListRecentLogEvents(ctx context.Context, functionNa
 ```
 Create a struct that wraps Amazon Cognito actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -2433,7 +2433,7 @@ func (actor CognitoActions) AdminSetUserPassword(ctx context.Context, userPoolId
 ```
 Create a struct that wraps DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2536,7 +2536,7 @@ func (actor DynamoActions) AddUser(ctx context.Context, tableName string, user U
 ```
 Create a struct that wraps CloudWatch Logs actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2589,7 +2589,7 @@ func (actor CloudWatchLogsActions) GetLogEvents(ctx context.Context, functionNam
 ```
 Create a struct that wraps CloudFormation actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -2622,7 +2622,7 @@ func (actor CloudFormationActions) GetOutputs(ctx context.Context, stackName str
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -2707,7 +2707,7 @@ The following code example shows how to write custom activity data with a Lambda
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/user_pools_and_lambda_triggers#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -2863,7 +2863,7 @@ func (runner *ActivityLog) Run(ctx context.Context, stackName string) {
 ```
 Handle the `PostAuthentication` trigger with a Lambda function.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2961,7 +2961,7 @@ func main() {
 ```
 Create a struct that performs common tasks.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -3068,7 +3068,7 @@ func (helper ScenarioHelper) ListRecentLogEvents(ctx context.Context, functionNa
 ```
 Create a struct that wraps Amazon Cognito actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -3259,7 +3259,7 @@ func (actor CognitoActions) AdminSetUserPassword(ctx context.Context, userPoolId
 ```
 Create a struct that wraps DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -3362,7 +3362,7 @@ func (actor DynamoActions) AddUser(ctx context.Context, tableName string, user U
 ```
 Create a struct that wraps CloudWatch Logs actions.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -3415,7 +3415,7 @@ func (actor CloudWatchLogsActions) GetLogEvents(ctx context.Context, functionNam
 ```
 Create a struct that wraps CloudFormation actions.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -3448,7 +3448,7 @@ func (actor CloudFormationActions) GetOutputs(ctx context.Context, stackName str
 ```
 Clean up resources.
 
-```
+```go
 import (
 	"context"
 	"log"
@@ -3530,7 +3530,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Go.
 
-```
+```go
 /*
 Golang v2 code here.
 */
@@ -3620,7 +3620,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -3664,7 +3664,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -3709,7 +3709,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Go.
 
-```
+```go
 package main
 
 import (
@@ -3766,7 +3766,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using Go.
 
-```
+```go
 package main
 
 import (
@@ -3805,7 +3805,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -3859,7 +3859,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -3899,7 +3899,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package integration_sqs_to_lambda
@@ -3941,7 +3941,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -3990,7 +3990,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main
@@ -4043,7 +4043,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Go.
 
-```
+```go
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 package main

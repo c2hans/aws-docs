@@ -33,6 +33,19 @@ The easiest way to create a trigger is to use the Lambda console. When you creat
 
 1. Fill out the options in the **Trigger configuration** pane and choose **Add**. Depending on the AWS service you choose to invoke your function, the trigger configuration options are different.
 
+## Response timeouts for synchronous callers
+<a name="lambda-services-caller-limits"></a>
+
+An Event Function can run for up to 30 minutes. When a service invokes your function synchronously, the service might stop waiting for the response before your function finishes. Your function keeps running until it returns or reaches its timeout, and you're charged for that duration. The following table shows how long some services wait for a response.
+
+| Caller | How long the caller waits |
+| --- | --- |
+| [Amazon API Gateway](services-apigateway.md) REST APIs | 29 seconds by default (integration timeout) |
+| [Amazon API Gateway](services-apigateway.md) HTTP APIs | 30 seconds (maximum integration timeout) |
+| [Amazon Cognito user pool triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-working-with-lambda-triggers.html) | 5 seconds |
+| [AWS Step Functions](with-step-functions.md) | Until the function returns |
+| [Lambda function URLs](urls-configuration.md) | Until the function returns |
+
 ## Services that can invoke Lambda Event Functions
 <a name="listing-of-services-and-links-to-more-information"></a>
 

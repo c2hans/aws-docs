@@ -53,7 +53,7 @@ In Visual Studio, choose **Tools**, **NuGet Package Manager**, **Package Manager
 
 You can install the AWSSDK packages you want from the Package Manager Console by using the **`Install-Package`** command. For example, to install [AWSSDK.S3](https://www.nuget.org/packages/AWSSDK.S3), use the following command.
 
-```
+```sh
 PM> Install-Package AWSSDK.S3
 ```
 
@@ -61,7 +61,7 @@ NuGet also installs any dependencies, such as [AWSSDK.Core](https://www.nuget.or
 
 If you need to install an earlier version of a package, use the `-Version` option and specify the package version you want, as shown in the following example.
 
-```
+```sh
 PM> Install-Package AWSSDK.S3 -Version 3.3.106.6
 ```
 

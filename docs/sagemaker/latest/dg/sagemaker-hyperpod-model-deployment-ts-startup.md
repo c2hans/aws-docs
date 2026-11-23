@@ -28,7 +28,7 @@ HyperpodInferenceAccessPolicy-ml-cluster to include all resources
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

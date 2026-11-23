@@ -45,7 +45,7 @@ When you define a hierarchy for an asset model with the AWS IoT SiteWise API, yo
 **Example hierarchy definition**
 The following example demonstrates an asset model hierarchy that represents a wind farm's relationship to wind turbines. This object is an example of an [AssetModelHierarchy](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetModelHierarchy.html). For more information, see [Create an asset model (AWS CLI)](create-asset-models.md#create-asset-model-cli).
 
-```
+```json
 {
   {{...}}
   "assetModelHierarchies": [

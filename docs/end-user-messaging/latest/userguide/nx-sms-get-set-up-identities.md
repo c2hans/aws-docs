@@ -41,7 +41,7 @@ To request a number from the console or the AWS CLI, choose the tab that matches
 
 Use the [request-phone-number](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/request-phone-number.html) command. Replace {{XX}} with the two-letter ISO country code and {{NUMBER\_TYPE}} with a type that supports your destination (such as `LONG_CODE`, `TOLL_FREE`, or `SHORT_CODE`).
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 request-phone-number \
 > --iso-country-code {{XX}} \
 > --message-type {{TRANSACTIONAL}} \

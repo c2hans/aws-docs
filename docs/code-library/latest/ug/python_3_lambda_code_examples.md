@@ -34,7 +34,7 @@ The following code example shows how to get started using Lambda.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 import boto3
 
 def main():
@@ -77,7 +77,7 @@ For more information, see [Create a Lambda function with the console](https://do
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 Define a Lambda handler that increments a number.
 
-```
+```python
 import logging
 
 logger = logging.getLogger()
@@ -106,7 +106,7 @@ def lambda_handler(event, context):
 ```
 Define a second Lambda handler that performs arithmetic operations.
 
-```
+```python
 import logging
 import os
 
@@ -153,7 +153,7 @@ def lambda_handler(event, context):
 ```
 Create functions that wrap Lambda actions.
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -415,7 +415,7 @@ class LambdaWrapper:
 ```
 Create a function that runs the scenario.
 
-```
+```python
 class UpdateFunctionWaiter(CustomWaiter):
     """A custom waiter that waits until a function is successfully updated."""
 
@@ -576,7 +576,7 @@ The following code example shows how to use `CreateFunction`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -630,7 +630,7 @@ The following code example shows how to use `DeleteFunction`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -658,7 +658,7 @@ The following code example shows how to use `GetFunction`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -697,7 +697,7 @@ The following code example shows how to use `Invoke`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -736,7 +736,7 @@ The following code example shows how to use `ListFunctions`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -773,7 +773,7 @@ The following code example shows how to use `UpdateFunctionCode`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -814,7 +814,7 @@ The following code example shows how to use `UpdateFunctionConfiguration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/lambda#code-examples).
 
-```
+```python
 class LambdaWrapper:
     def __init__(self, lambda_client, iam_resource):
         self.lambda_client = lambda_client
@@ -978,7 +978,7 @@ The following code example shows how to implement a Lambda function that connect
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-connect-rds-iam) repository.
 Connecting to an Amazon RDS database in a Lambda function using Python.
 
-```
+```python
 import json
 import os
 import boto3
@@ -1033,7 +1033,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda) repository.
 Consuming a Kinesis event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 import base64
@@ -1060,7 +1060,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Python.
 
-```
+```python
 import json
 
 def lambda_handler(event, context):
@@ -1084,7 +1084,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-docdb-to-lambda) repository.
 Consuming a Amazon DocumentDB event with Lambda using Python.
 
-```
+```python
 import json
 
 def lambda_handler(event, context):
@@ -1114,7 +1114,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
 Consuming an Amazon MSK event with Lambda using Python.
 
-```
+```python
 import base64
 
 def lambda_handler(event, context):
@@ -1138,7 +1138,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 import json
@@ -1174,7 +1174,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sns-to-lambda) repository.
 Consuming an SNS event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event, context):
@@ -1202,7 +1202,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-sqs-to-lambda) repository.
 Consuming an SQS event with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def lambda_handler(event, context):
@@ -1228,7 +1228,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-kinesis-to-lambda-with-batch-item-handling) repository.
 Reporting Kinesis batch item failures with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def handler(event, context):
@@ -1255,7 +1255,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def handler(event, context):
@@ -1282,7 +1282,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/lambda-function-sqs-report-batch-item-failures) repository.
 Reporting SQS batch item failures with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 

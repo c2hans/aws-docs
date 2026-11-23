@@ -20,7 +20,7 @@ Produces: application/json
 ### CLI
 <a name="-tags-resource-arn-get-cli"></a>
 
-```
+```bash
 aws greengrass list-tags-for-resource  \
   --resource-arn <value> \
   [--cli-input-json <value>] \
@@ -29,7 +29,7 @@ aws greengrass list-tags-for-resource  \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceArn": "string"
 }
@@ -50,7 +50,7 @@ type: string
 HTTP Status Code 200: OK.
  [ tags](definitions-tags.md)
 
-```
+```json
 {
   "tags": {
       "keyName0": "value0",
@@ -68,7 +68,7 @@ additionalProperties: The key-value pair for the resource tag. Type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -114,7 +114,7 @@ Produces: application/json
 ### CLI
 <a name="-tags-resource-arn-post-cli"></a>
 
-```
+```bash
 aws greengrass tag-resource \
   --resource-arn <value> \
   [--tags <value>]  \
@@ -124,7 +124,7 @@ aws greengrass tag-resource \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceArn": "string",
 "tags": {
@@ -158,7 +158,7 @@ HTTP Status Code 204: Successful response.
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -204,7 +204,7 @@ Produces: application/json
 ### CLI
 <a name="-tags-resource-arn-delete-cli"></a>
 
-```
+```bash
 aws greengrass untag-resource  \
   --resource-arn <value> \
   --tag-keys <value> \
@@ -214,7 +214,7 @@ aws greengrass untag-resource  \
 
 cli-input-json format:
 
-```
+```json
 {
 "ResourceArn": "string",
 "TagKeys": [
@@ -246,7 +246,7 @@ HTTP Status Code 204: Successful response.
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

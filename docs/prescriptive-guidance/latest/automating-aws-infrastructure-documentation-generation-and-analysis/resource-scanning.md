@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-
 ---
 
 # Resource scanning
-<a name="resource-scanning"></a>
 
 The *resource scanning* component is the foundation of the Infrastructure Documentation Generator. Its job is to discover and inventory AWS resources across AWS Regions in a consistent and structured way. This process is critical because all subsequent phases (documentation generation and dependency mapping) rely on the data collected here.
 
@@ -20,7 +19,7 @@ The resource scanner begins by identifying all AWS resources across AWS services
 The scanner uses a declarative configuration approach through the [SERVICE\_SCAN\_FUNCTIONS](https://github.com/awslabs/InfraDocGen/blob/dc1ea8a4ebdba821f6954a2b03c4fecbec809c10/constants.py#L33) dictionary, which maps each AWS service to its specific API calls and response structures.
 
 ### Optimize parallel execution
-<a name="optimize-parallel-execution.321a6020-3d61-5908-8ca3-5ddbcd3c096b"></a>
+<a name="optimize-parallel-execution.e60ba22a-a490-5e6c-95ee-f8a135ec7526"></a>
 
 To maximize efficiency when scanning large AWS environments, the system implements parallel processing across multiple AWS Regions and services simultaneously. Using a thread pool architecture, the scanner distributes API calls across concurrent workers, dramatically reducing total execution time.
 

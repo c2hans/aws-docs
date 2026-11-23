@@ -149,7 +149,7 @@ mkdir resources
 
 Create the following JavaScript file, `widgets.js`, in the `resources` directory.
 
-```
+```javascript
 import { S3Client, ListObjectsCommand } from "@aws-sdk/client-s3";
 
 // The following code uses the AWS SDK for JavaScript (v3).
@@ -289,7 +289,7 @@ pip install aws_cdk.aws_apigateway aws_cdk.aws_lambda aws_cdk.aws_s3
 
 Add the following dependencies in the `dependencies` element of your project's `pom.xml` file.
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awscdk</groupId>
     <artifactId>apigateway</artifactId>
@@ -333,7 +333,7 @@ Create a new source file to define the widget service with the source code shown
 
 File: `lib/widget_service.ts`
 
-```
+```javascript
 import * as core from "@aws-cdk/core";
 import * as apigateway from "@aws-cdk/aws-apigateway";
 import * as lambda from "@aws-cdk/aws-lambda";
@@ -375,7 +375,7 @@ export class WidgetService extends core.Construct {
 
 File: `lib/widget_service.js`
 
-```
+```javascript
 const core = require("@aws-cdk/core");
 const apigateway = require("@aws-cdk/aws-apigateway");
 const lambda = require("@aws-cdk/aws-lambda");
@@ -419,7 +419,7 @@ module.exports = { WidgetService }
 
 File: `my_widget_service/widget_service.py`
 
-```
+```python
 from aws_cdk import (core,
                      aws_apigateway as apigateway,
                      aws_s3 as s3,
@@ -456,7 +456,7 @@ class WidgetService(core.Construct):
 
 File: `src/src/main/java/com/myorg/WidgetService.java`
 
-```
+```java
 package com.myorg;
 
 import java.util.HashMap;
@@ -507,7 +507,7 @@ public class WidgetService extends Construct {
 
 File: `src/MyWidgetService/WidgetService.cs`
 
-```
+```csharp
 using Amazon.CDK;
 using Amazon.CDK.AWS.APIGateway;
 using Amazon.CDK.AWS.Lambda;
@@ -580,13 +580,13 @@ File: `lib/my_widget_service-stack.ts`
 
 Add the following line of code after the existing `import` statement.
 
-```
+```javascript
 import * as widget_service from "../lib/widget_service";
 ```
 
 Replace the comment in the constructor with the following line of code.
 
-```
+```javascript
 new widget_service.WidgetService(this, "Widgets");
 ```
 
@@ -597,13 +597,13 @@ File: `lib/my_widget_service-stack.js`
 
 Add the following line of code after the existing `require()` line.
 
-```
+```javascript
 const widget_service = require('../lib/widget_service');
 ```
 
 Replace the comment in the constructor with the following line of code.
 
-```
+```javascript
 new widget_service.WidgetService(this, "Widgets");
 ```
 
@@ -614,13 +614,13 @@ File: `my_widget_service/my_widget_service_stack.py`
 
 Add the following line of code after the existing `import` statement.
 
-```
+```python
 from . import widget_service
 ```
 
 Replace the comment in the constructor with the following line of code.
 
-```
+```python
         widget_service.WidgetService(self, "Widgets")
 ```
 
@@ -631,7 +631,7 @@ File: `src/src/main/java/com/myorg/MyWidgetServiceStack.java`
 
 Replace the comment in the constructor with the following line of code.
 
-```
+```java
 new WidgetService(this, "Widgets");
 ```
 
@@ -642,7 +642,7 @@ File: `src/MyWidgetService/MyWidgetServiceStack.cs`
 
 Replace the comment in the constructor with the following line of code.
 
-```
+```csharp
 new WidgetService(this, "Widgets");
 ```
 
@@ -704,7 +704,7 @@ The next step is to create Lambda functions to create, show, and delete individu
 
 Replace the code in `widgets.js` (in `resources`) with the following.
 
-```
+```javascript
 const AWS = require('aws-sdk');
 const S3 = new AWS.S3();
 
@@ -830,7 +830,7 @@ Wire up these functions to your API Gateway code at the end of the `WidgetServic
 
 File: `lib/widget_service.ts`
 
-```
+```javascript
     const widget = api.root.addResource("{id}");
 
     const widgetIntegration = new apigateway.LambdaIntegration(handler);
@@ -845,7 +845,7 @@ File: `lib/widget_service.ts`
 
 File: `lib/widget_service.js`
 
-```
+```javascript
     const widget = api.root.addResource("{id}");
 
     const widgetIntegration = new apigateway.LambdaIntegration(handler);
@@ -860,7 +860,7 @@ File: `lib/widget_service.js`
 
 File: `my_widget_service/widget_service.py`
 
-```
+```python
         widget = api.root.add_resource("{id}")
 
         widget_integration = apigateway.LambdaIntegration(handler)
@@ -875,7 +875,7 @@ File: `my_widget_service/widget_service.py`
 
 File: `src/src/main/java/com/myorg/WidgetService.java`
 
-```
+```java
         Resource widget = api.getRoot().addResource("{id}");
 
         LambdaIntegration widgetIntegration = new LambdaIntegration(handler);
@@ -890,7 +890,7 @@ File: `src/src/main/java/com/myorg/WidgetService.java`
 
 File: `src/MyWidgetService/WidgetService.cs`
 
-```
+```csharp
             var widget = api.Root.AddResource("{id}");
 
             var widgetIntegration = new LambdaIntegration(handler);

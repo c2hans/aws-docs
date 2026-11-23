@@ -14,7 +14,7 @@ This policy grants read-only permissions that allow users to view information in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

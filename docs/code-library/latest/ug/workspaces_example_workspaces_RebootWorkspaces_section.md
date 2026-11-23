@@ -35,17 +35,17 @@ For more information, see [Reboot a WorkSpace](https://docs.aws.amazon.com/works
 **Tools for PowerShell V4**
 **Example 1: Reboots the specified WorkSpace.**
 
-```
+```powershell
 Restart-WKSWorkspace -WorkspaceId "ws-1a2b3c4d"
 ```
 **Example 2: Reboots multiple WorkSpaces.**
 
-```
+```powershell
 Restart-WKSWorkspace -WorkspaceId "ws-1a2b3c4d","ws-5a6b7c8d"
 ```
 **Example 3: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Restart-WKSWorkspace, causing the WorkSpaces to be restarted.**
 
-```
+```powershell
 Get-WKSWorkspaces | Restart-WKSWorkspace
 ```
 +  For API details, see [RebootWorkspaces](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -53,17 +53,17 @@ Get-WKSWorkspaces | Restart-WKSWorkspace
 **Tools for PowerShell V5**
 **Example 1: Reboots the specified WorkSpace.**
 
-```
+```powershell
 Restart-WKSWorkspace -WorkspaceId "ws-1a2b3c4d"
 ```
 **Example 2: Reboots multiple WorkSpaces.**
 
-```
+```powershell
 Restart-WKSWorkspace -WorkspaceId "ws-1a2b3c4d","ws-5a6b7c8d"
 ```
 **Example 3: Retrieves the collection of all your WorkSpaces and pipes the IDs to the -WorkSpaceId parameter of Restart-WKSWorkspace, causing the WorkSpaces to be restarted.**
 
-```
+```powershell
 Get-WKSWorkspaces | Restart-WKSWorkspace
 ```
 +  For API details, see [RebootWorkspaces](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

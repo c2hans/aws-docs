@@ -62,7 +62,7 @@ For more information, see [Target groups](https://docs.aws.amazon.com/elasticloa
 **Tools for PowerShell V4**
 **Example 1: This example modifes the properties of the specified Target Group.**
 
-```
+```powershell
 Edit-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -HealthCheckIntervalSecond 60 -HealthCheckPath '/index.html' -HealthCheckPort 8080
 ```
 **Output:**
@@ -90,7 +90,7 @@ VpcId                      : vpc-2cfd7000
 **Tools for PowerShell V5**
 **Example 1: This example modifes the properties of the specified Target Group.**
 
-```
+```powershell
 Edit-ELB2TargetGroup -TargetGroupArn 'arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/test-tg/a4e04b3688be1970' -HealthCheckIntervalSecond 60 -HealthCheckPath '/index.html' -HealthCheckPort 8080
 ```
 **Output:**

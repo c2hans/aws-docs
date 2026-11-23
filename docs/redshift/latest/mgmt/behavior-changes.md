@@ -173,7 +173,7 @@ Beginning December 31, 2026, Amazon Redshift will discontinue support for the [O
 
 You may be impacted by this if you use any version of the [ODBC 1.x driver](https://docs.aws.amazon.com/redshift/latest/mgmt/configure-odbc-connection.html) to connect to Amazon Redshift. To verify whether you are using an ODBC 1.x driver, run the following query:
 
-```
+```sql
 SELECT *
 FROM SYS_CONNECTION_LOG
 WHERE

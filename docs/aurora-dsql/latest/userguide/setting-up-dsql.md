@@ -11,5 +11,8 @@ Aurora DSQL provides several configuration options to help you establish the rig
 + [Configuring multi-Region clusters](configuring-multi-region-clusters.md)
 + [Configuring Aurora DSQL clusters using AWS CloudFormation](mr-cluster-setup.md)
 + [Aurora DSQL cluster lifecycle](cluster-lifecycle.md)
++ [Early-access features and ephemeral clusters in Aurora DSQL](ephemeral-clusters.md)
++ [Cluster versions in Aurora DSQL](cluster-versions.md)
++ [Upgrading cluster versions in Aurora DSQL](version-upgrade.md)
 
 The features and functionality discussed in this guide ensure that your Aurora DSQL environment is more resilient, responsive, and capable of supporting your applications as they grow and evolve.

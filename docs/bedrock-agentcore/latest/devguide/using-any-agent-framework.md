@@ -88,7 +88,7 @@ app.run()
 
 For the full example, see [https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/03-integrations/agentic-frameworks/adk](https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/03-integrations/agentic-frameworks/adk).
 
-```
+```python
 from google.adk.agents import Agent
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
@@ -149,7 +149,7 @@ app.run()
 
 For the full example, see [https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/03-integrations/agentic-frameworks/openai-agents](https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/03-integrations/agentic-frameworks/openai-agents).
 
-```
+```python
 from agents import Agent, Runner, WebSearchTool
 import logging
 import asyncio

@@ -13,7 +13,7 @@ For more information, see [Controlling Access to Services with VPC Endpoints](ht
 
 The following example VPC endpoint policy specifies that the IAM user `MyUser` is allowed to publish to the Amazon SNS topic `MyTopic`.
 
-```
+```json
 {
   "Statement": [{
     "Action": ["sns:Publish"],

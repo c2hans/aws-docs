@@ -32,7 +32,7 @@ When working in the interactive experience, in addition to the project’s role,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

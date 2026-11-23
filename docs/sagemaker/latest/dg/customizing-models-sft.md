@@ -27,7 +27,7 @@ SFT supports two dataset formats. All datasets must be in JSONL format (one JSON
 
 Represent the conversation as a list of role-tagged messages. If included, the `system` message must be the first element.
 
-```
+```json
 {
   "messages": [
     {"role": "system", "content": "..."},
@@ -42,7 +42,7 @@ Represent the conversation as a list of role-tagged messages. If included, the `
 
 Provide the input and expected output as separate fields, with an optional top-level `system` field.
 
-```
+```json
 {
   "system": "...",
   "prompt": "...",
@@ -58,7 +58,7 @@ The `system` message is optional. Ensure diversity in prompts and response style
 
 Use `SFTTrainer` for serverless SFT customization jobs:
 
-```
+```python
 from sagemaker.train import SFTTrainer
 
 trainer = SFTTrainer(

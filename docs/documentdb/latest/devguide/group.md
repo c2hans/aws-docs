@@ -57,7 +57,7 @@ To view a code example for using the `$group` command, choose the tab for the la
 ------
 #### [ Node.js ]
 
-```
+```nodejs
 const { MongoClient } = require('mongodb');
 
 async function groupByCity() {
@@ -91,7 +91,7 @@ groupByCity();
 ------
 #### [ Python ]
 
-```
+```python
 from pymongo import MongoClient
 
 def group_by_city():

@@ -11,7 +11,7 @@ The `AmazonChimeVoiceConnectorServiceLinkedRolePolicy` enables Amazon Chime SDK 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

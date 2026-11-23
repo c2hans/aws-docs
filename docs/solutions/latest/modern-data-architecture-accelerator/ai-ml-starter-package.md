@@ -124,7 +124,7 @@ Before deploying the AI/ML Starter Package using the CLI method, verify you have
 
  **Step 1: Clone the MDAA repository**
 
-```
+```bash
 git clone https://github.com/aws/modern-data-architecture-accelerator.git &&
 cd modern-data-architecture-accelerator
 ```

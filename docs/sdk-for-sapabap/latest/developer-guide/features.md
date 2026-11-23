@@ -113,7 +113,7 @@ ENDTRY.
 
 SDK for SAP ABAP enables you to configure the maximum number of retries for requests to AWS services that fail due to throttling or transient errors. The number of retries allowed at the service client level, that is the number of times the SDK retries the operation before failing and raising an exception is specified by the `AV_MAX_ATTEMPTS` attribute in the service configuration object. When a service client object is created, the SDK configures `AV_MAX_ATTEMPTS` attribute to a default value of 3. The service configuration object may be used to programmatically set the maximum retry attempt to a desired value. See the following example for more details.
 
-```
+```JSON
 " Retrieve configuration object using Amazon S3 service’s get_config( ) method
 DATA(lo_config) = lo_s3->get_config( ).
 
@@ -132,7 +132,7 @@ Although the configuration object ABAP SDK allows *retry mode* to be set with th
 
 You can use presigned URLs to grant time-limited access to some AWS services. A presigned URL can be entered in a browser or used by a program to perform the service operation. You can use the presigned URL multiple times, up to the expiration date and time. For more information, see [ Working with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) SDK for SAP ABAP clients for services that support presigners will have a special method called `GET_PRESIGNER()` to create a presigner for that service. Then call a method of the presigner, which correspond to the methods of the API client, except they return a presigned URL instead of actually performing the operation.
 
-```
+```JSON
 " Retrieve a presigner for Amazon S3
 DATA(lo_presigner) = lo_s3->get_presigner( iv_expires_sec = 600 ).
 

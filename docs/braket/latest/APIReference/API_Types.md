@@ -17,6 +17,7 @@ The following data types are supported:
 +  [DataSource](API_DataSource.md)
 +  [DeviceConfig](API_DeviceConfig.md)
 +  [DeviceQueueInfo](API_DeviceQueueInfo.md)
++  [DeviceStatusReason](API_DeviceStatusReason.md)
 +  [DeviceSummary](API_DeviceSummary.md)
 +  [ExperimentalCapabilities](API_ExperimentalCapabilities.md)
 +  [HybridJobQueueInfo](API_HybridJobQueueInfo.md)

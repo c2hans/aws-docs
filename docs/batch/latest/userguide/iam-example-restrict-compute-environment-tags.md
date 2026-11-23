@@ -11,7 +11,7 @@ The first statement allows the compute environment actions when the `CostCenter`
 **Requires a Team tag on every request**
 This policy denies every compute environment create or update that doesn't include a `Team` compute resource tag. AWS Batch evaluates `batch:ComputeResourcesTag/{{tag-key}}` only when your request includes `computeResources.tags`. The `Null` condition operator in the second statement matches whenever the `Team` compute resource tag is absent. This includes a request that sets no compute resource tags at all.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

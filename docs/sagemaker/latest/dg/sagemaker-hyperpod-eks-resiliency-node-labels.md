@@ -53,7 +53,7 @@ When a new node is added into a cluster, and if deep health check is not enabled
 
 If the health check passes, the nodes will be marked with the following label.
 
-```
+```txt
 sagemaker.amazonaws.com/node-health-status: Schedulable
 ```
 
@@ -66,19 +66,19 @@ When a new node is added into a SageMaker HyperPod cluster, and if the deep heal
 
 1. When the deep health check test passes
 
-   ```
+   ```txt
    sagemaker.amazonaws.com/node-health-status: Schedulable
    ```
 
 1. When the deep health check test fails, and the instance needs to be replaced
 
-   ```
+   ```txt
    sagemaker.amazonaws.com/node-health-status: UnschedulablePendingReplacement
    ```
 
 1. When the deep health check test fails, and the instance needs to be rebooted to rerun the deep health check
 
-   ```
+   ```txt
    sagemaker.amazonaws.com/node-health-status: UnschedulablePendingReboot
    ```
 
@@ -91,13 +91,13 @@ The SageMaker HyperPod health monitor agent also continuously monitors the healt
 
 1. When the node is unhealthy and needs to be replaced
 
-   ```
+   ```txt
    sagemaker.amazonaws.com/node-health-status: UnschedulablePendingReplacement
    ```
 
 1. When the node is unhealthy and needs to be rebooted
 
-   ```
+   ```txt
    sagemaker.amazonaws.com/node-health-status: UnschedulablePendingReboot
    ```
 

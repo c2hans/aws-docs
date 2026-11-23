@@ -14,6 +14,7 @@ PATCH /v1/agentspaces/{{agentSpaceId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "awsSourceMode": "{{string}}",
    "description": "{{string}}",
    "locale": "{{string}}",
    "name": "{{string}}",
@@ -37,6 +38,12 @@ Required: Yes
 <a name="API_UpdateAgentSpace_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [awsSourceMode](#API_UpdateAgentSpace_RequestSyntax) **   <a name="devopsagent-UpdateAgentSpace-request-awsSourceMode"></a>
+Specifies whether the AgentSpace's AWS source configuration targets an individual AWS account or an AWS Organization. Use this parameter to switch an existing AgentSpace between source modes.
+Type: String
+Valid Values: `standalone | organization`
+Required: No
 
  ** [description](#API_UpdateAgentSpace_RequestSyntax) **   <a name="devopsagent-UpdateAgentSpace-request-description"></a>
 The updated description of the AgentSpace.
@@ -76,6 +83,7 @@ Content-type: application/json
 {
    "agentSpace": {
       "agentSpaceId": "string",
+      "awsSourceMode": "string",
       "createdAt": "string",
       "description": "string",
       "kmsKeyArn": "string",

@@ -22,7 +22,7 @@ Also, you must select or create a multi-Region AWS Key Management Service (KMS) 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "KMS key policy",

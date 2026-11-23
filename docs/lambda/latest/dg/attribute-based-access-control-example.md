@@ -32,7 +32,7 @@ When using ABAC with Lambda, it's a best practice to require that all functions 
 **Example – Require tags on new functions**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -63,7 +63,7 @@ Create a second IAM policy using the [aws:ResourceTag/tag-key](https://docs.aws.
 **Example – Require matching tags on function and IAM principal**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -92,7 +92,7 @@ Create a policy that allows the principal to list Lambda functions and IAM roles
 **Example – Grant Lambda and IAM list permissions**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -121,7 +121,7 @@ Do not use the `ResourceTag` condition key in a policy with the `iam:PassRole` a
 **Example – Grant permission to pass the execution role**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -157,7 +157,7 @@ It's a best practice to [use roles to delegate permissions](https://docs.aws.ama
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

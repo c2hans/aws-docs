@@ -8,7 +8,7 @@ To configure automatic, scheduled updates of the CodeDeploy agent using AWS Syst
 
 For version 2.1.3 and later, to force an update, run:
 
-```
+```sh
 sudo /opt/codedeploy-agent/bin/codedeploy-agent update
 ```
 

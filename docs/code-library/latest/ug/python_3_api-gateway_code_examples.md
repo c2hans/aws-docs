@@ -29,7 +29,7 @@ The following code example shows how to use `CreateDeployment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -90,7 +90,7 @@ The following code example shows how to use `CreateResource`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -136,7 +136,7 @@ The following code example shows how to use `CreateRestApi`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -193,7 +193,7 @@ The following code example shows how to use `DeleteRestApi`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -231,7 +231,7 @@ The following code example shows how to use `GetResources`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -288,7 +288,7 @@ The following code example shows how to use `GetRestApis`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -340,7 +340,7 @@ The following code example shows how to use `PutIntegration`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -452,7 +452,7 @@ The following code example shows how to use `PutIntegrationResponse`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -564,7 +564,7 @@ The following code example shows how to use `PutMethod`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -676,7 +676,7 @@ The following code example shows how to use `PutMethodResponse`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 
-```
+```python
 class ApiGatewayToService:
     """
     Encapsulates Amazon API Gateway functions that are used to create a REST API that
@@ -853,7 +853,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/api-gateway#code-examples).
 Create a class that wraps API Gateway operations.
 
-```
+```python
 import argparse
 import json
 import logging
@@ -1053,7 +1053,7 @@ class ApiGatewayToService:
 ```
 Deploy a REST API and call it with the Requests package.
 
-```
+```python
 def usage_demo(table_name, role_name, rest_api_name):
     """
     Demonstrates how to used API Gateway to create and deploy a REST API, and how

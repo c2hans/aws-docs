@@ -52,7 +52,7 @@ This example VPC endpoint policy allows full access only to the user `bts` in AW
 
 ****
 
-```
+```json
 {
     "Id": "example-policy",
     "Version":"2012-10-17",

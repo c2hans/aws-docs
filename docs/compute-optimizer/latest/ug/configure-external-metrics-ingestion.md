@@ -53,7 +53,7 @@ If you don't complete the configuration process with your external metrics provi
    + Replace {{123456789012}} with your account ID.
    + Replace {{ExternalMetricsProvider}} with your external metrics provider.
 
-   ```
+   ```bash
    aws compute-optimizer put-recommendation-preferences --region {{myRegion}} --resource-type=Ec2Instance --scope='{"name":"AccountId", "value":"{{123456789012}}"}' --external-metrics-preference='{"source":"{{ExternalMetricsProvider}}"}'
    ```
 

@@ -61,7 +61,7 @@ Here’s a simple example of how to create and use a property injector:
 
 First, create a property injector for Amazon S3 buckets:
 
-```
+```typescript
 import { IPropertyInjector, InjectionContext } from 'aws-cdk-lib';
 import { Bucket, BucketProps, BlockPublicAccess } from 'aws-cdk-lib/aws-s3';
 
@@ -87,7 +87,7 @@ export class SecureBucketDefaults implements IPropertyInjector {
 
 Then, use the injector in your CDK application:
 
-```
+```typescript
 import { App, Stack } from 'aws-cdk-lib';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { SecureBucketDefaults } from './secure-bucket-defaults';
@@ -105,7 +105,7 @@ const myBucket = new Bucket(stack, 'MyBucket');
 
 Alternatively, you can use the `PropertyInjectors.of()` method:
 
-```
+```typescript
 import { App, Stack, PropertyInjectors } from 'aws-cdk-lib';
 import { SecureBucketDefaults } from './secure-bucket-defaults';
 

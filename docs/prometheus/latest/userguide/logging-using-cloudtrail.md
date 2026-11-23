@@ -40,7 +40,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail log entry that demonstrates the CreateWorkspace action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -98,7 +98,7 @@ The following example shows a CloudTrail log entry that demonstrates the CreateW
 
 The following example shows a CloudTrail log entry that demonstrates the CreateAlertManagerDefinition action.
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -155,7 +155,7 @@ The following example shows a CloudTrail log entry that demonstrates the CreateA
 
 The following example shows a CloudTrail log entry that demonstrates the CreateRuleGroupsNamespace action.
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {

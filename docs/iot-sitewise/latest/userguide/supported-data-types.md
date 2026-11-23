@@ -22,7 +22,7 @@ AWS IoT SiteWise query language supports the following data types.
 **Example**
 `TIMESTAMP` value examples:
 
-```
+```SQL
 TIMESTAMP '2025-12-21 23:59:59.999Z'
 TIMESTAMP '2025-12-21 23:59:59+23:59'
 '2025-12-21 23:59:59'

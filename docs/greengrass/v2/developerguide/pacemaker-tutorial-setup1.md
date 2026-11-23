@@ -17,13 +17,13 @@ Run the following commands on the primary instance only, unless otherwise noted.
 
 Verify that Pacemaker is running before proceeding.
 
-```
+```shell
 sudo systemctl status pacemaker
 ```
 
 Disable STONITH before creating any resources. Without a fencing device configured, Pacemaker will refuse to start resources if STONITH is enabled (the default).
 
-```
+```shell
 sudo pcs property set stonith-enabled=false
 ```
 
@@ -32,7 +32,7 @@ STONITH is disabled here to simplify this tutorial. In a production environment,
 
 Unmount the DRBD device on the primary instance and bring DRBD down on all instances so that Pacemaker has clean control of the DRBD lifecycle.
 
-```
+```shell
 # On the primary instance only
 sudo umount /greengrass/v2
 
@@ -42,7 +42,7 @@ sudo drbdadm down greengrass
 
 Create the DRBD resource in Pacemaker.
 
-```
+```shell
 sudo pcs resource create drbd-greengrass \
   ocf:linbit:drbd drbd_resource=greengrass \
   op monitor interval=15s role=Promoted \
@@ -51,7 +51,7 @@ sudo pcs resource create drbd-greengrass \
 
 Configure the resource as promotable so that only one instance is primary at a time. Set `clone-max` to the number of instances in your cluster.
 
-```
+```shell
 sudo pcs resource promotable drbd-greengrass \
   promoted-max=1 promoted-node-max=1 clone-max=2 clone-node-max=1 notify=true
 ```
@@ -63,7 +63,7 @@ All AWS IoT Greengrass V2 resources are stored under `/greengrass/v2`. This step
 
 Create the filesystem resource in a disabled state. You will enable it after all constraints are in place.
 
-```
+```shell
 sudo pcs resource create fs_greengrass Filesystem \
     device="/dev/drbd0" \
     directory="/greengrass/v2" \
@@ -78,7 +78,7 @@ sudo pcs resource create fs_greengrass Filesystem \
 
 Verify that the resources are created and propagated to all instances.
 
-```
+```shell
 sudo pcs status
 ```
 
@@ -87,7 +87,7 @@ sudo pcs status
 
 1. **Provision AWS IoT Greengrass V2.** Because you unmounted the DRBD device earlier, enable maintenance mode and remount it for provisioning:
 
-   ```
+   ```shell
    # Enable maintenance mode to prevent Pacemaker from interfering
    sudo pcs property set maintenance-mode=true
 
@@ -102,14 +102,14 @@ sudo pcs status
 
    Ensure that AWS IoT Greengrass V2 is installed to the `/greengrass/v2` directory (the DRBD-mounted path). After provisioning, unmount the device and disable maintenance mode:
 
-   ```
+   ```shell
    sudo umount /greengrass/v2
    sudo pcs property set maintenance-mode=false
    ```
 
 1. **Disable the AWS IoT Greengrass V2 service** so that Pacemaker can manage it instead of systemd.
 
-   ```
+   ```shell
    sudo systemctl disable greengrass
    sudo systemctl stop greengrass
    ```
@@ -118,21 +118,21 @@ sudo pcs status
 
 1. **Create systemd unit file on other instances.** Copy the AWS IoT Greengrass V2 systemd unit file to the standby instances so that Pacemaker can start the service on any instance during failover.
 
-   ```
+   ```shell
    # On the primary instance, view the unit file location
    systemctl show -p FragmentPath greengrass
    ```
 
    Copy that file to the same path on each other instance. Then reload systemd on each standby instance so it recognizes the new unit file.
 
-   ```
+   ```shell
    # On each standby instance
    sudo systemctl daemon-reload
    ```
 
 1. **Attach the AWS IoT Greengrass V2 resource.**
 
-   ```
+   ```shell
    sudo pcs resource create greengrass systemd:greengrass \
      op monitor interval=10s \
      op start timeout=60s \
@@ -145,7 +145,7 @@ sudo pcs status
 
 Create constraint ordering so that Pacemaker manages the resources in the correct order during failover.
 
-```
+```shell
 sudo pcs constraint order promote drbd-greengrass-clone then start fs_greengrass
 sudo pcs constraint colocation add fs_greengrass with Promoted drbd-greengrass-clone score=INFINITY
 sudo pcs resource group add greengrass-group fs_greengrass greengrass
@@ -154,14 +154,14 @@ sudo pcs constraint location greengrass-group prefers {{instance1}}=200
 
 Enable the resources now that constraints are in place.
 
-```
+```shell
 sudo pcs resource enable fs_greengrass
 sudo pcs resource enable greengrass
 ```
 
 Verify the final state of the resource constraints.
 
-```
+```shell
 sudo pcs constraint show
 ```
 
@@ -177,25 +177,25 @@ Simulate a failover to verify that the setup works.
 
 1. **Check the initial state.** Verify that AWS IoT Greengrass V2 is running on the primary instance.
 
-   ```
+   ```shell
    sudo pcs status
    ```
 
 1. **Simulate primary instance failure.** Put the primary node in standby mode to trigger resource migration.
 
-   ```
+   ```shell
    sudo pcs node standby {{primary-node-name}}
    ```
 
 1. **Verify failover.** On the standby instance, check the cluster status. The DRBD, filesystem, and AWS IoT Greengrass V2 resources should now be running on the standby instance.
 
-   ```
+   ```shell
    sudo pcs status
    ```
 
 1. **Recover the failed instance.**
 
-   ```
+   ```shell
    sudo pcs node unstandby {{primary-node-name}}
    ```
 
@@ -204,6 +204,6 @@ Simulate a failover to verify that the setup works.
 **Troubleshooting**
 If resources enter a failed state, you can clean up and restart them with the following command.
 
-```
+```shell
 sudo pcs resource cleanup
 ```

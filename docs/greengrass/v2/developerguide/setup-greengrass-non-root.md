@@ -58,13 +58,13 @@ This solution requires:
 
 1. Create the installation directory and ensure your user owns it.
 
-   ```
+   ```bash
    mkdir -p $HOME/greengrass/v2
    ```
 
 1. Run the installer without `sudo`. Set `--component-default-user` to your current user.
 
-   ```
+   ```bash
    java -Droot="$HOME/greengrass/v2" -Dlog.store=FILE \
      -jar ./GreengrassInstaller/lib/Greengrass.jar \
      --aws-region {{region}} \
@@ -86,13 +86,13 @@ You can configure a systemd user service to manage the AWS IoT Greengrass Core s
 
 1. Stop the AWS IoT Greengrass Core software if it is currently running.
 
-   ```
+   ```bash
    kill $(cat $HOME/greengrass/v2/alts/loader.pid)
    ```
 
 1. Create the systemd user service directory.
 
-   ```
+   ```bash
    mkdir -p $HOME/.config/systemd/user
    ```
 
@@ -121,7 +121,7 @@ You can configure a systemd user service to manage the AWS IoT Greengrass Core s
 
 1. Enable and start the service.
 
-   ```
+   ```bash
    systemctl --user daemon-reload
    systemctl --user enable greengrass.service
    systemctl --user start greengrass.service
@@ -171,13 +171,13 @@ This solution requires:
 
 1. Create a non-root user that will run the AWS IoT Greengrass Core software and all components.
 
-   ```
+   ```bash
    sudo useradd --create-home gg_non_root
    ```
 
 1. Log in as the non-root user and run the installer. Set `--component-default-user` to the same user. Do not use `sudo` and do not set up a system service.
 
-   ```
+   ```bash
    java -Droot="/home/gg_non_root/greengrass/v2" -Dlog.store=FILE \
      -jar ./GreengrassInstaller/lib/Greengrass.jar \
      --aws-region {{region}} \
@@ -217,7 +217,7 @@ This solution requires:
 
 1. Stop the running AWS IoT Greengrass Core instance, then enable and start the system service.
 
-   ```
+   ```bash
    sudo systemctl daemon-reload
    sudo systemctl enable greengrass.service
    sudo systemctl start greengrass.service
@@ -260,7 +260,7 @@ This solution requires:
 
 1. Create a non-root user that will run the AWS IoT Greengrass Core software.
 
-   ```
+   ```bash
    sudo useradd --create-home gg_non_root
    ```
 
@@ -279,7 +279,7 @@ This solution requires:
 
 1. Log in as the non-root user and run the installer. Do not use `sudo` and do not set up a system service.
 
-   ```
+   ```bash
    java -Droot="/home/gg_non_root/greengrass/v2" -Dlog.store=FILE \
      -jar ./GreengrassInstaller/lib/Greengrass.jar \
      --aws-region {{region}} \
@@ -326,7 +326,7 @@ This solution requires:
 
 1. Stop the running AWS IoT Greengrass Core instance, then enable and start the system service.
 
-   ```
+   ```bash
    sudo systemctl daemon-reload
    sudo systemctl enable greengrass.service
    sudo systemctl start greengrass.service
@@ -371,7 +371,7 @@ This solution requires:
 
 1. Run the installer with `--setup-system-service true`.
 
-   ```
+   ```bash
    sudo -E java -Droot="/greengrass/v2" -Dlog.store=FILE \
      -jar ./GreengrassInstaller/lib/Greengrass.jar \
      --aws-region {{region}} \

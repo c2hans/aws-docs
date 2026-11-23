@@ -49,7 +49,7 @@ For more information, see [Tag your Classic Load Balancer](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example lists the tags for the specified load balancers.**
 
-```
+```powershell
 Get-ELBResourceTag -LoadBalancerName @("my-load-balancer","my-internal-load-balancer")
 ```
 **Output:**
@@ -62,7 +62,7 @@ my-internal-load-balancer    {project, department}
 ```
 **Example 2: This example describes the tags for the specified load balancer.**
 
-```
+```powershell
 (Get-ELBResourceTag -LoadBalancerName my-load-balancer).Tags
 ```
 **Output:**
@@ -78,7 +78,7 @@ department    digital-media
 **Tools for PowerShell V5**
 **Example 1: This example lists the tags for the specified load balancers.**
 
-```
+```powershell
 Get-ELBResourceTag -LoadBalancerName @("my-load-balancer","my-internal-load-balancer")
 ```
 **Output:**
@@ -91,7 +91,7 @@ my-internal-load-balancer    {project, department}
 ```
 **Example 2: This example describes the tags for the specified load balancer.**
 
-```
+```powershell
 (Get-ELBResourceTag -LoadBalancerName my-load-balancer).Tags
 ```
 **Output:**

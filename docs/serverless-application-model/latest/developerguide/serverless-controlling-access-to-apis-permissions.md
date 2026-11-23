@@ -8,7 +8,7 @@ You can control access to your APIs by defining IAM permissions within your AWS 
 
 The following is an example AWS SAM template that uses for IAM permissions:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:

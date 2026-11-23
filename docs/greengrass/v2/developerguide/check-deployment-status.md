@@ -18,7 +18,7 @@ You can check the status of a deployment that you identify by its target or its 
 **To check deployment status by target (AWS CLI)**
 + Run the following command to retrieve the status of the latest deployment for a target. Replace {{targetArn}} with the Amazon Resource Name (ARN) of the AWS IoT thing or thing group that the deployment targets.
 
-  ```
+  ```bash
   aws greengrassv2 list-deployments --target-arn {{targetArn}}
   ```
 
@@ -27,7 +27,7 @@ You can check the status of a deployment that you identify by its target or its 
 **To check deployment status by ID (AWS CLI)**
 + Run the following command to retrieve the status of a deployment. Replace {{deploymentId}} with the ID of the deployment to query.
 
-  ```
+  ```bash
   aws greengrassv2 get-deployment --deployment-id {{deploymentId}}
   ```
 
@@ -41,7 +41,7 @@ You can check the status of a deployment job that applies to an individual core 
 **To check deployment job statuses for a core device (AWS CLI)**
 + Run the following command to retrieve the status of all deployment jobs for a core device. Replace {{coreDeviceName}} with the name of the core device to query.
 
-  ```
+  ```bash
   aws greengrassv2 list-effective-deployments --core-device-thing-name {{coreDeviceName}}
   ```
 
@@ -51,7 +51,7 @@ You can check the status of a deployment job that applies to an individual core 
 
 1. Run the following command to retrieve the ID of an existing deployment. Replace {{targetArn}} with the ARN of the target thing group.
 
-   ```
+   ```bash
    aws greengrassv2 list-deployments --target-arn {{targetArn}}
    ```
 
@@ -61,7 +61,7 @@ You can also list a deployment other than the latest deployment for the target. 
 
 1. Run the following command to get the deployment's details. Replace {{deploymentID}} with the ID from the previous step.
 
-   ```
+   ```bash
    aws greengrassv2 get-deployment --deployment-id {{deploymentId}}
    ```
 
@@ -69,7 +69,7 @@ You can also list a deployment other than the latest deployment for the target. 
 
 1. Run the following command to describe a core device's job execution for the deployment. Replace {{iotJobId}} and {{coreDeviceThingName}} with the job ID from the previous step and the core device you want to check the status for.
 
-   ```
+   ```bash
    aws iot describe-job-execution --job-id {{iotJobId}} --thing-name {{coreDeviceThingName}}
    ```
 
@@ -88,7 +88,7 @@ The AWS IoT Greengrass Core software ignores the failure handling policy for boo
 
    The response looks similar to the following example.
 
-   ```
+   ```json
    {
      "execution": {
        "jobId": "2cc2698a-5175-48bb-adf2-1dd345606ebd",

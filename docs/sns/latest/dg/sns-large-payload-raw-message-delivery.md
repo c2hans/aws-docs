@@ -33,7 +33,7 @@ To enable raw message delivery using an AWS SDK, you must use the `SetSubscripti
 In the following examples, the same message is sent to the same Amazon SQS queue twice. The only difference is that raw message delivery is disabled for the first message, and enabled for the second.
 + Raw message delivery is **disabled**
 
-  ```
+  ```json
   {
     "Type": "Notification",
     "MessageId": "dc1e94d9-56c5-5e96-808d-cc7f68faa162",

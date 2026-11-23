@@ -62,7 +62,7 @@ The following snippet creates a stream named `StreamName`. It defines stream pro
 ------
 #### [ Python ]
 
-```
+```python
 client = StreamManagerClient()
 
 try:
@@ -94,7 +94,7 @@ Python SDK reference: [create\_message\_stream](https://aws-greengrass.github.io
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = StreamManagerClientFactory.standard().build()) {
     client.createMessageStream(
             new MessageStreamDefinition()
@@ -124,7 +124,7 @@ Java SDK reference: [createMessageStream](https://aws-greengrass.github.io/aws-g
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
   try {
@@ -186,7 +186,7 @@ This snippet has the following requirements:
 ------
 #### [ Python ]
 
-```
+```python
 client = StreamManagerClient()
 
 try:
@@ -204,7 +204,7 @@ Python SDK reference: [append\_message](https://aws-greengrass.github.io/aws-gre
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = StreamManagerClientFactory.standard().build()) {
     long sequenceNumber = client.appendMessage("StreamName", "Arbitrary byte array".getBytes());
 } catch (StreamManagerException e) {
@@ -217,7 +217,7 @@ Java SDK reference: [appendMessage](https://aws-greengrass.github.io/aws-greengr
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
     try {
@@ -444,7 +444,7 @@ The following snippet reads messages from the stream named `StreamName`. The rea
 ------
 #### [ Python ]
 
-```
+```python
 client = StreamManagerClient()
 
 try:
@@ -474,7 +474,7 @@ Python SDK reference: [read\_messages](https://aws-greengrass.github.io/aws-gree
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = StreamManagerClientFactory.standard().build()) {
     List<Message> messages = client.readMessages("StreamName",
             // By default, if no options are specified, it tries to read one message from the beginning of the stream.
@@ -498,7 +498,7 @@ Java SDK reference: [readMessages](https://aws-greengrass.github.io/aws-greengra
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
     try {
@@ -547,7 +547,7 @@ The following snippet gets a list of the streams (by name) in stream manager.
 ------
 #### [ Python ]
 
-```
+```python
 client = StreamManagerClient()
 
 try:
@@ -565,7 +565,7 @@ Python SDK reference: [list\_streams](https://aws-greengrass.github.io/aws-green
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = StreamManagerClientFactory.standard().build()) {
     List<String> streamNames = client.listStreams();
 } catch (StreamManagerException e) {
@@ -578,7 +578,7 @@ Java SDK reference: [listStreams](https://aws-greengrass.github.io/aws-greengras
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
     try {
@@ -616,7 +616,7 @@ The following snippet gets metadata about the stream named `StreamName`, includi
 ------
 #### [ Python ]
 
-```
+```python
 client = StreamManagerClient()
 
 try:
@@ -643,7 +643,7 @@ Python SDK reference: [describe\_message\_stream](https://aws-greengrass.github.
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = StreamManagerClientFactory.standard().build()) {
     MessageStreamInfo description = client.describeMessageStream("StreamName");
     String lastErrorMessage = description.getExportStatuses().get(0).getErrorMessage();
@@ -667,7 +667,7 @@ Java SDK reference: [describeMessageStream](https://aws-greengrass.github.io/aws
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
     try {
@@ -729,7 +729,7 @@ The following snippet updates the stream named `StreamName`. It updates multiple
 ------
 #### [ Python ]
 
-```
+```java
 client = StreamManagerClient()
 
 try:
@@ -758,7 +758,7 @@ Python SDK reference: [updateMessageStream](https://aws-greengrass.github.io/aws
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = GreengrassClientBuilder.streamManagerClient().build()) {
     MessageStreamInfo messageStreamInfo = client.describeMessageStream(STREAM_NAME);
     // Update the message stream with new values.
@@ -791,7 +791,7 @@ Java SDK reference: [update\_message\_stream](https://aws-greengrass.github.io/a
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
     try {
@@ -863,7 +863,7 @@ The following snippet deletes the stream named `StreamName`.
 ------
 #### [ Python ]
 
-```
+```python
 client = StreamManagerClient()
 
 try:
@@ -881,7 +881,7 @@ Python SDK reference: [deleteMessageStream](https://aws-greengrass.github.io/aws
 ------
 #### [ Java ]
 
-```
+```java
 try (final StreamManagerClient client = StreamManagerClientFactory.standard().build()) {
     client.deleteMessageStream("StreamName");
 } catch (StreamManagerException e) {
@@ -894,7 +894,7 @@ Java SDK reference: [delete\_message\_stream](https://aws-greengrass.github.io/a
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const client = new StreamManagerClient();
 client.onConnected(async () => {
     try {

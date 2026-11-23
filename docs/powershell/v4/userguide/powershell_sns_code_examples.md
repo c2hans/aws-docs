@@ -28,12 +28,12 @@ The following code example shows how to use `Publish-SNSMessage`.
 **Tools for PowerShell V4**
 **Example 1: This example shows publishing a message with a single MessageAttribute declared inline.**
 
-```
+```powershell
 Publish-SNSMessage -TopicArn "arn:aws:sns:us-west-2:123456789012:my-topic" -Message "Hello" -MessageAttribute @{'City'=[Amazon.SimpleNotificationService.Model.MessageAttributeValue]@{DataType='String'; StringValue ='AnyCity'}}
 ```
 **Example 2: This example shows publishing a message with multiple MessageAttributes declared in advance.**
 
-```
+```powershell
 $cityAttributeValue = New-Object Amazon.SimpleNotificationService.Model.MessageAttributeValue
 $cityAttributeValue.DataType = "String"
 $cityAttributeValue.StringValue = "AnyCity"

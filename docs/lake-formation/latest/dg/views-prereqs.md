@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-prereqs.h
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-prereqs.h
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-prereqs.h
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
                      "Statement": [

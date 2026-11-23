@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 Retrieve the list of existing custom images.
 
-```
+```sh
 pcluster list-images [-h]
                  --image-status {AVAILABLE,PENDING,FAILED}
                 [--debug]

@@ -41,7 +41,7 @@ To ensure that those users and roles can use the Security Hub console, also atta
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ To ensure that those users and roles can use the Security Hub console, also atta
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ This example shows how you might create a policy that allows IAM users to view t
 
 This example shows how you might create an IAM policy that allows a user to view Security Hub findings.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -132,7 +132,7 @@ This example shows how you might create an IAM policy that allows a user to view
 
 This example shows how you might create an IAM policy that allows a user to create, view, update, and delete Security Hub automation rules. For this IAM policy to work, the user must be a Security Hub administrator. To limit permissions— for example, to allow a user to only view automation rules—you can remove the create, update, and delete permissions.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

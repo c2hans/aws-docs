@@ -140,7 +140,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-advanced-vpn-gateway-create-ex-min"></a>
 
-```
+```json
 {
   "Description" : "Test description",
   "VpcId" : "vpc-12345678901234567",
@@ -156,7 +156,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-advanced-vpn-gateway-create-ex-max"></a>
 
-```
+```json
 {
   "Description" : "Test description",
   "VpcId" : "vpc-12345678",

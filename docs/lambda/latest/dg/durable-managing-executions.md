@@ -16,7 +16,7 @@ To find the executions to act on, use [ListDurableExecutionsByFunction](https://
 
 To end a running or paused execution permanently, call [StopDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_StopDurableExecution.html). The execution status changes to `STOPPED`, and Lambda doesn't invoke your function for that execution again. You can't resume a stopped execution.
 
-```
+```bash
 aws lambda stop-durable-execution \
   --durable-execution-arn {{arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:my-function-version/durable-execution/my-execution-name/my-execution-id}}
 ```

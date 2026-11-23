@@ -23,7 +23,7 @@ The Amazon Bedrock AgentCore SDK supports both synchronous and asynchronous proc
 
 Agent code communicates its processing status using the "/ping" endpoint health status. The `/ping` endpoint must return an HTTP 200 response with the following JSON payload:
 
-```
+```json
 {"status": "HealthyBusy"}
 ```
 

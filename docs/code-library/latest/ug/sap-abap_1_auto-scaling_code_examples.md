@@ -26,7 +26,7 @@ The following code example shows how to use `CreateAutoScalingGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     DATA lo_launch_template TYPE REF TO /aws1/cl_asclaunchtemplatespec.
 
     " Example: iv_group_name = 'my-auto-scaling-group'
@@ -84,7 +84,7 @@ The following code example shows how to use `DeleteAutoScalingGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
 
     TRY.
@@ -114,7 +114,7 @@ The following code example shows how to use `DescribeAutoScalingGroups`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     DATA lt_group_names TYPE /aws1/cl_ascautoscgroupnames_w=>tt_autoscalinggroupnames.
     DATA lo_group_name TYPE REF TO /aws1/cl_ascautoscgroupnames_w.
 
@@ -156,7 +156,7 @@ The following code example shows how to use `DescribeAutoScalingInstances`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: it_instance_ids contains a list of instance IDs
 
     TRY.
@@ -183,7 +183,7 @@ The following code example shows how to use `DescribeScalingActivities`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
 
     TRY.
@@ -210,7 +210,7 @@ The following code example shows how to use `DisableMetricsCollection`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
 
     TRY.
@@ -235,7 +235,7 @@ The following code example shows how to use `EnableMetricsCollection`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
     " Example: it_metrics contains list of metrics like 'GroupMinSize', 'GroupMaxSize', etc.
 
@@ -263,7 +263,7 @@ The following code example shows how to use `SetDesiredCapacity`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
     " Example: iv_capacity = 2
 
@@ -291,7 +291,7 @@ The following code example shows how to use `TerminateInstanceInAutoScalingGroup
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_instance_id = 'i-1234567890abcdef0'
     " Example: iv_decrease_capacity = abap_true
 
@@ -322,7 +322,7 @@ The following code example shows how to use `UpdateAutoScalingGroup`.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
     " Example: iv_max_size = 5
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 
 Attach the policy with shadow mode enabled. In shadow mode, Client VPN evaluates the policy and records the decision in your connection logs, but never blocks a connection.
 
-```
+```bash
 aws ec2 modify-client-vpn-endpoint-authorization-policy \
   --client-vpn-endpoint-id cvpn-endpoint-EXAMPLE \
   --policy-document 'permit(principal, action, resource) when { context.crowdstrike.assessment.overall > 50 };' \

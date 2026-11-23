@@ -31,7 +31,7 @@ For more information, see [Register an application revision in Amazon S3 with Co
 **Tools for PowerShell V4**
 **Example 1: This example registers an application revision with the specified Amazon S3 location, for the specified application.**
 
-```
+```powershell
 Register-CDApplicationRevision -ApplicationName MyNewApplication -S3Location_Bucket amzn-s3-demo-bucket -S3Location_BundleType zip -S3Location_Key aws-codedeploy_linux-master.zip -Revision_RevisionType S3
 ```
 +  For API details, see [RegisterApplicationRevision](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ Register-CDApplicationRevision -ApplicationName MyNewApplication -S3Location_Buc
 **Tools for PowerShell V5**
 **Example 1: This example registers an application revision with the specified Amazon S3 location, for the specified application.**
 
-```
+```powershell
 Register-CDApplicationRevision -ApplicationName MyNewApplication -S3Location_Bucket amzn-s3-demo-bucket -S3Location_BundleType zip -S3Location_Key aws-codedeploy_linux-master.zip -Revision_RevisionType S3
 ```
 +  For API details, see [RegisterApplicationRevision](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -9,7 +9,7 @@ Loops a sequence of prompts while a customer or agent is on hold or in queue. Th
 ## Parameter object
 <a name="messageparticipantiteratively-parameter"></a>
 
-```
+```json
 {
    "Messages" : [ A List of messages to be played in a loop. These are defined with either TTS or a Prompt
        {

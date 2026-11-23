@@ -139,7 +139,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-standalone-ec2-instance-create-for-wigs-managed-automation-ex-min"></a>
 
-```
+```json
 {
     "InstanceVpcId": "vpc-1234567890abcdef0",
     "InstanceAmiId": "ami-1234567890abcdef0",
@@ -150,7 +150,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="deployment-standalone-ec2-instance-create-for-wigs-managed-automation-ex-max"></a>
 
-```
+```json
 {
     "InstanceVpcId": "vpc-1234567890abcdef0",
     "InstanceAmiId": "ami-1234567890abcdef0",

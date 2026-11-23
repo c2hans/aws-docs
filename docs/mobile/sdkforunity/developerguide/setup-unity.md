@@ -44,7 +44,7 @@ First, [download the AWS Mobile SDK for Unity](http://sdk-for-net.amazonwebservi
 
 When working with the AWS Mobile SDK for Unity, you can get started by including the following line of code in the `Start` or `Awake` method of your mono behavior class:
 
-```
+```csharp
 UnityInitializer.AttachToGameObject(this.gameObject);
 ```
 
@@ -57,13 +57,13 @@ The AWS SDK for Unity contains client classes for each AWS service it supports. 
 
 To configure the default region for all service clients:
 
-```
+```csharp
 <aws region="us-west-2" />
 ```
 
 This sets the default region for all the service clients in the Unity SDK. This setting can be overridden by explicitly specifying the region at the time of creating an instance of the service client, like so:
 
-```
+```csharp
 IAmazonS3 s3Client = new AmazonS3Client(<credentials>,RegionEndpoint.USEast1);
 ```
 
@@ -72,7 +72,7 @@ IAmazonS3 s3Client = new AmazonS3Client(<credentials>,RegionEndpoint.USEast1);
 
 Logging settings are specified as follows:
 
-```
+```csharp
 <logging logTo="UnityLogger"
          logResponses="Always"
          logMetrics="true"
@@ -83,7 +83,7 @@ This setting is used to configure logging in Unity. When you log to `UnityLogger
 
 The following example shows the most commonly used settings in the awsconfig.xml file. For more information about specific service settings, see the service section below:
 
-```
+```csharp
 <?xml version="1.0" encoding="utf-8"?>
 <aws region="us-west-2"
     <logging logTo="UnityLogger"
@@ -98,7 +98,7 @@ The following example shows the most commonly used settings in the awsconfig.xml
 
 The SDK uses reflection for platform-specific components. If you are using the IL2CPP scripting backend, `strip bytecode` is always enabled on iOS, so you need to have a `link.xml` file in your assembly root with the following entries:
 
-```
+```csharp
 <linker>
 <!-- if you are using AWSConfigs.HttpClient.UnityWebRequest option-->
 <assembly fullname="UnityEngine">
@@ -138,7 +138,7 @@ To create an identity pool for your application:
 
 The next page displays code that creates a credentials provider so you can easily integrate Cognito Identity with your Unity application. You pass the credentials provider object to the constructor of the AWS client you are using. The code looks like this:
 
-```
+```csharp
 CognitoAWSCredentials credentials = new CognitoAWSCredentials (
     "IDENTITY_POOL_ID", // Identity Pool ID
     RegionEndpoint.USEast1 // Region

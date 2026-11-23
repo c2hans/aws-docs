@@ -99,7 +99,7 @@ The following example displays the main-level tree of a plugins.zip file for the
 **Example plugins/virtual\_python\_plugin.py**
 The following example displays the `PythonVirtualenvOperator` custom plugin.
 
-```
+```python
 """
 Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
@@ -149,7 +149,7 @@ The following example displays the main-level tree of a plugins.zip file for the
 **Example plugins/virtual\_python\_plugin.py**
 The following example displays the `PythonVirtualenvOperator` custom plugin.
 
-```
+```python
 """
 Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 

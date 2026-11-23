@@ -8,7 +8,7 @@ This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on 
 
 The AWS CDK uses *feature flags* to enable potentially breaking behaviors in a release. Flags are stored as [Runtime context](context.md) values in `cdk.json` (or `~/.cdk.json`) as shown here.
 
-```
+```json
 {
   "app": "npx ts-node bin/tscdk.ts",
   "context": {

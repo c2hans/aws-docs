@@ -14,7 +14,7 @@ The following code examples show how to use `ListTrainingJobs`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sagemaker#code-examples).
 
-```
+```rust
 async fn show_jobs(client: &Client) -> Result<(), Error> {
     let job_details = client.list_training_jobs().send().await?;
 
@@ -53,7 +53,7 @@ async fn show_jobs(client: &Client) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sgm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sgm->listtrainingjobs(       " oo_result is returned for testing purposes. "
           iv_namecontains = iv_name_contains

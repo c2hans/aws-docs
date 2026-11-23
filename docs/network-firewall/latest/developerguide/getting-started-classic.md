@@ -98,6 +98,8 @@ Firewalls associate the traffic filtering behavior of a firewall policy with the
 
 1. On the **Describe firewall** page, for **Name**, enter the name that you want to use to identify this firewall. You can't change the name of a firewall after you create it. Choose **Next**.
 
+1. On the **Firewall capability** page, for **Firewall capability**, choose **routed firewall**.
+
 1. On the **Attachment type** page, under **Attachment Details**, select **VPC**, select your VPC, and then select the **Availability Zone**, **Subnet**, and **IP address type** for the firewall subnet that you identified in [Before you begin](getting-started.md#getting-started-prerequisites). Choose **Next**.
 
 After you set the attachment type, configure the remaining settings, associate your firewall policy, and create the firewall.

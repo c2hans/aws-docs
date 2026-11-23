@@ -8,6 +8,8 @@ In Multi-AZ deployments, Amazon RDS creates a primary DB instance on one AWS Out
 
 ![Amazon RDS on Outpost with multi AZ](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-45-rds-outposts-multi-az.png)
 
+*Amazon RDS on Outpost with multi AZ*
+
 ## Considerations for Amazon RDS on Outposts with Multi-AZ
 <a name="rds-outpost-multi-az-considerations"></a>
 

@@ -23,7 +23,7 @@ Configuration resolution has the following characteristics:
 
 To resolve configuration before you create a client, or to customize values, call `resolve()` and pass the config object to the client. You can't construct a config object directly. Calling `BedrockRuntimeConfig()` raises a `ConfigError`:
 
-```
+```python
 # This raises ConfigError
 config = BedrockRuntimeConfig()
 
@@ -33,7 +33,7 @@ config = BedrockRuntimeConfig.resolve()
 
 The following example resolves configuration with overrides and passes it to a client:
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 from aws_sdk_bedrock_runtime.models import (
     ContentBlockText,
@@ -82,7 +82,7 @@ The SDK resolves each config field from the following sources, in order of prece
 
 Values that you pass to `resolve()` take precedence over all other sources. Use an override to set a value in code regardless of the environment or config files:
 
-```
+```python
 config = BedrockRuntimeConfig.resolve(
     region="us-west-2",
     max_attempts=10,
@@ -94,14 +94,14 @@ config = BedrockRuntimeConfig.resolve(
 
 If you don't pass an override, the SDK checks the standard AWS environment variables.
 
-```
+```bash
 export AWS_REGION=us-west-2
 export AWS_RETRY_MODE=standard
 export AWS_MAX_ATTEMPTS=5
 export AWS_ENDPOINT_URL=https://endpoint.example.com
 ```
 
-```
+```python
 config = BedrockRuntimeConfig.resolve()
 config.region   # "us-west-2"
 ```
@@ -111,7 +111,7 @@ config.region   # "us-west-2"
 
 If neither an override nor an environment variable provides a value, the SDK reads the shared AWS configuration files, `~/.aws/config` and `~/.aws/credentials`. It reads the active profile, which is `[default]` unless you set `AWS_PROFILE` or pass `profile=` to `resolve()`:
 
-```
+```ini
 # ~/.aws/config
 [default]
 region = us-east-1
@@ -121,7 +121,7 @@ endpoint_url = https://endpoint.example.com
 sdk_ua_app_id = my-application
 ```
 
-```
+```python
 config = BedrockRuntimeConfig.resolve()
 config.region   # "us-east-1"
 ```
@@ -131,7 +131,7 @@ config.region   # "us-east-1"
 
 If no other source provides a value, the SDK uses the field's default. Defaults vary by field:
 
-```
+```python
 # Empty environment, no config file
 config = BedrockRuntimeConfig.resolve(region="us-east-1")
 config.retry_mode  # "standard"
@@ -145,7 +145,7 @@ config.retry_mode  # "standard"
 
 The SDK tracks the origin of every resolved configuration value. Call `source_of()` with a field name to find out whether its value came from an explicit override, an environment variable, a config file profile, or a default.
 
-```
+```python
 # With AWS_REGION=us-west-2 set in the environment
 # and ~/.aws/config containing:
 #   [default]
@@ -177,7 +177,7 @@ Use `source_of()` to debug configuration, for example, to find out where a Regio
 
 Values that you pass to `resolve()` skip the other sources, as shown in [1. Explicit override](#resolution-explicit-override). The SDK validates them immediately. Passing an invalid value raises `ConfigValidationError`:
 
-```
+```python
 config = BedrockRuntimeConfig.resolve(region="bad!")
 # raises ConfigValidationError: Invalid value for 'region': 'bad!'.
 # Must be a valid AWS region identifier.
@@ -188,7 +188,7 @@ config = BedrockRuntimeConfig.resolve(region="bad!")
 
 You can change fields after resolution. The source changes to `override`. The SDK validates the new value:
 
-```
+```python
 config = BedrockRuntimeConfig.resolve(region="us-east-1")
 config.region = "us-east-2"
 config.source_of("region")  # override

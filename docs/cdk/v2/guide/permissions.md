@@ -44,23 +44,23 @@ Many constructs represent resources that can be accessed, such as an Amazon S3 b
 
 **Example**
 
-```
+```typescript
 BucketGrants.fromBucket(bucket); // bucket can be either a Bucket (L2) or a CfnBucket (L1)
 ```
 
-```
+```javascript
 BucketGrants.fromBucket(bucket); // bucket can be either a Bucket (L2) or a CfnBucket (L1)
 ```
 
-```
+```python
 BucketGrants.from_bucket(bucket) # bucket can be either a Bucket (L2) or a CfnBucket (L1)
 ```
 
-```
+```java
 BucketGrants.fromBucket(bucket); // bucket can be either a Bucket (L2) or a CfnBucket (L1)
 ```
 
-```
+```csharp
 BucketGrants.FromBucket(bucket); // bucket can be either a Bucket (L2) or a CfnBucket (L1)
 ```
 
@@ -76,23 +76,23 @@ For convenience, L2 constructs also offer a `grants` property that returns an in
 
 **Example**
 
-```
+```typescript
 bucket.grants.read(function);
 ```
 
-```
+```javascript
 bucket.grants.read(function);
 ```
 
-```
+```python
 bucket.grants.read(function)
 ```
 
-```
+```java
 bucket.getGrants().read(function);
 ```
 
-```
+```csharp
 bucket.Grants.Read(function);
 ```
 
@@ -104,31 +104,31 @@ To force the grant’s permissions to be applied before another resource is crea
 
 **Example**
 
-```
+```javascript
 const grant = bucket.grants.read(lambda);
 const custom = new CustomResource(...);
 custom.node.addDependency(grant);
 ```
 
-```
+```javascript
 const grant = bucket.grants.read(lambda);
 const custom = new CustomResource(...);
 custom.node.addDependency(grant);
 ```
 
-```
+```python
 grant = bucket.grants.read(function)
 custom = CustomResource(...)
 custom.node.add_dependency(grant)
 ```
 
-```
+```java
 Grant grant = bucket.getGrants().read(function);
 CustomResource custom = new CustomResource(...);
 custom.node.addDependency(grant);
 ```
 
-```
+```csharp
 var grant = bucket.Grants.Read(function);
 var custom = new CustomResource(...);
 custom.node.AddDependency(grant);
@@ -141,7 +141,7 @@ The IAM package contains a [`Role`](https://docs.aws.amazon.com/cdk/api/v2/docs/
 
 **Example**
 
-```
+```javascript
 import * as iam from 'aws-cdk-lib/aws-iam';
 
 const role = new iam.Role(this, 'Role', {
@@ -149,7 +149,7 @@ const role = new iam.Role(this, 'Role', {
 });
 ```
 
-```
+```javascript
 const iam = require('aws-cdk-lib/aws-iam');
 
 const role = new iam.Role(this, 'Role', {
@@ -157,14 +157,14 @@ const role = new iam.Role(this, 'Role', {
 });
 ```
 
-```
+```python
 import aws_cdk.aws_iam as iam
 
 role = iam.Role(self, "Role",
           assumed_by=iam.ServicePrincipal("ec2.amazonaws.com")) # required
 ```
 
-```
+```java
 import software.amazon.awscdk.services.iam.Role;
 import software.amazon.awscdk.services.iam.ServicePrincipal;
 
@@ -172,7 +172,7 @@ Role role = Role.Builder.create(this, "Role")
         .assumedBy(new ServicePrincipal("ec2.amazonaws.com")).build();
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.IAM;
 
 var role = new Role(this, "Role", new RoleProps
@@ -187,7 +187,7 @@ The following example adds a `Deny` policy statement to the role for the actions
 
 **Example**
 
-```
+```javascript
 role.addToPolicy(new iam.PolicyStatement({
   effect: iam.Effect.DENY,
   resources: [bucket.bucketArn, otherRole.roleArn],
@@ -197,7 +197,7 @@ role.addToPolicy(new iam.PolicyStatement({
 }}}));
 ```
 
-```
+```javascript
 role.addToPolicy(new iam.PolicyStatement({
   effect: iam.Effect.DENY,
   resources: [bucket.bucketArn, otherRole.roleArn],
@@ -207,7 +207,7 @@ role.addToPolicy(new iam.PolicyStatement({
 }}}));
 ```
 
-```
+```python
 role.add_to_policy(iam.PolicyStatement(
     effect=iam.Effect.DENY,
     resources=[bucket.bucket_arn, other_role.role_arn],
@@ -217,7 +217,7 @@ role.add_to_policy(iam.PolicyStatement(
 ))
 ```
 
-```
+```java
 role.addToPolicy(PolicyStatement.Builder.create()
         .effect(Effect.DENY)
         .resources(Arrays.asList(bucket.getBucketArn(), otherRole.getRoleArn()))
@@ -228,7 +228,7 @@ role.addToPolicy(PolicyStatement.Builder.create()
         .build());
 ```
 
-```
+```csharp
 role.AddToPolicy(new PolicyStatement(new PolicyStatementProps
 {
     Effect = Effect.DENY,
@@ -252,7 +252,7 @@ If you’re using a construct that requires a role to function correctly, you ca
 
 **Example**
 
-```
+```javascript
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 
 // imagine roleOrUndefined is a function that might return a Role object
@@ -266,7 +266,7 @@ const project = new codebuild.Project(this, 'Project', {
 });
 ```
 
-```
+```javascript
 const codebuild = require('aws-cdk-lib/aws-codebuild');
 
 // imagine roleOrUndefined is a function that might return a Role object
@@ -280,7 +280,7 @@ const project = new codebuild.Project(this, 'Project', {
 });
 ```
 
-```
+```python
 import aws_cdk.aws_codebuild as codebuild
 
 # imagine role_or_none is a function that might return a Role object
@@ -293,7 +293,7 @@ project = codebuild.Project(self, "Project",
 role=some_role)
 ```
 
-```
+```java
 import software.amazon.awscdk.services.iam.Role;
 import software.amazon.awscdk.services.codebuild.Project;
 
@@ -307,7 +307,7 @@ Project project = Project.Builder.create(this, "Project")
         .role(someRole).build();
 ```
 
-```
+```csharp
 using Amazon.CDK.AWS.CodeBuild;
 
 // imagine roleOrNull is a function that might return a Role object
@@ -330,7 +330,7 @@ The following example demonstrates:
 
 **Example**
 
-```
+```javascript
 // project is imported into the CDK application
 const project = codebuild.Project.fromProjectName(this, 'Project', 'ProjectName');
 
@@ -340,7 +340,7 @@ project.addToRolePolicy(new iam.PolicyStatement({
 }));
 ```
 
-```
+```javascript
 // project is imported into the CDK application
 const project = codebuild.Project.fromProjectName(this, 'Project', 'ProjectName');
 
@@ -350,7 +350,7 @@ project.addToRolePolicy(new iam.PolicyStatement({
 }));
 ```
 
-```
+```python
 # project is imported into the CDK application
 project = codebuild.Project.from_project_name(self, 'Project', 'ProjectName')
 
@@ -361,7 +361,7 @@ project.add_to_role_policy(iam.PolicyStatement(
 )
 ```
 
-```
+```java
 // project is imported into the CDK application
 Project project = Project.fromProjectName(this, "Project", "ProjectName");
 
@@ -372,7 +372,7 @@ project.addToRolePolicy(PolicyStatement.Builder.create()
 )
 ```
 
-```
+```csharp
 // project is imported into the CDK application
 var project = Project.FromProjectName(this, "Project", "ProjectName");
 
@@ -392,7 +392,7 @@ In the following example, the [Amazon S3 bucket](https://docs.aws.amazon.com/cdk
 
 **Example**
 
-```
+```javascript
 bucket.addToResourcePolicy(new iam.PolicyStatement({
   effect: iam.Effect.ALLOW,
   actions: ['s3:SomeAction'],
@@ -401,7 +401,7 @@ bucket.addToResourcePolicy(new iam.PolicyStatement({
 }));
 ```
 
-```
+```javascript
 bucket.addToResourcePolicy(new iam.PolicyStatement({
   effect: iam.Effect.ALLOW,
   actions: ['s3:SomeAction'],
@@ -410,7 +410,7 @@ bucket.addToResourcePolicy(new iam.PolicyStatement({
 }));
 ```
 
-```
+```python
 bucket.add_to_resource_policy(iam.PolicyStatement(
     effect=iam.Effect.ALLOW,
     actions=["s3:SomeAction"],
@@ -418,7 +418,7 @@ bucket.add_to_resource_policy(iam.PolicyStatement(
     principals=role))
 ```
 
-```
+```java
 bucket.addToResourcePolicy(PolicyStatement.Builder.create()
         .effect(Effect.ALLOW)
         .actions(Arrays.asList("s3:SomeAction"))
@@ -427,7 +427,7 @@ bucket.addToResourcePolicy(PolicyStatement.Builder.create()
         .build());
 ```
 
-```
+```csharp
 bucket.AddToResourcePolicy(new PolicyStatement(new PolicyStatementProps
 {
     Effect = Effect.ALLOW,

@@ -22,7 +22,7 @@ Before mapping, you must complete the following prerequistites:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -64,7 +64,7 @@ Complete the following before mapping users to AWS Marketplace IAM roles:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

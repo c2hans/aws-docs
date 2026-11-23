@@ -43,7 +43,7 @@ For complete details about a condition key and how to use it, see the page linke
 The following example IAM permissions policy shows how to force the user who creates or modifies an IAM policy's tags to include a tag with the key `Owner`. Also, the policy requires that the value of the tag is set to the same value as the `Owner` tag currently attached to the calling principal. For this strategy to work, all principals must have an `Owner` tag attached, and users must be prevented from modifying that tag. If an attempt to create or modify a policy occurs without including the `Owner` tag, the policy doesn't match and the operation isn't allowed.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ The following example IAM permissions policy shows how to force the user who cre
 The following example IAM permissions policy lets the user stop a running Amazon EC2 instance only if the calling principal is tagged with the same `project` tag value as the instance.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

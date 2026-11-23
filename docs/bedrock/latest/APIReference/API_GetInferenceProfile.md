@@ -10,7 +10,7 @@ Gets information about an inference profile. For more information, see [Increase
 <a name="API_GetInferenceProfile_RequestSyntax"></a>
 
 ```
-GET /inference-profiles/{{inferenceProfileIdentifier}} HTTP/1.1
+GET /inference-profiles/{{inferenceProfileIdentifier}}?projectIdentifier={{projectIdentifier}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -23,6 +23,13 @@ The ID or Amazon Resource Name (ARN) of the inference profile.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(arn:aws(|-us-gov|-cn|-iso|-iso-b):bedrock:(|[0-9a-z-]{0,20}):(|[0-9]{12}):(inference-profile|application-inference-profile)/)?[a-zA-Z0-9-:.]+`
 Required: Yes
+
+ ** [projectIdentifier](#API_GetInferenceProfile_RequestSyntax) **   <a name="bedrock-GetInferenceProfile-request-uri-projectIdentifier"></a>
+The ID or Amazon Resource Name (ARN) of a project. Amazon Bedrock uses the project's trusted access program participation when determining whether to return a system-defined inference profile. The project must belong to your account in the same AWS Region and partition as the request.
+If you omit this parameter or specify `default`, Amazon Bedrock uses your account's participation, including organization inheritance.
+A project that doesn't exist or is archived causes a `ValidationException`. Specifying a project other than `default` for an application inference profile also causes a `ValidationException`.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `([a-zA-Z0-9_-]+|arn:aws(-[^:]+)?:bedrock:[0-9a-z-]{1,20}:[0-9]{12}:project/[a-zA-Z0-9_-]+)`
 
 ## Request Body
 <a name="API_GetInferenceProfile_RequestBody"></a>
@@ -145,7 +152,7 @@ Run the following example to get information about the US Anthropic Claude 3 Son
 #### Sample Request
 <a name="API_GetInferenceProfile_Example_1_Request"></a>
 
-```
+```http
 GET /inference-profiles/us.anthropic.claude-3-sonnet-20240229-v1:0 HTTP/1.1
 ```
 

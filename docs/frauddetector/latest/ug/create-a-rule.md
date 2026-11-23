@@ -56,7 +56,7 @@ To use the example code, make sure that you have complete the following before y
 
 If you are creating a detector, rule, and outcome for your use case, replace the example detector name, rule name, rule expression and outcome name with names and expression relevant to your use case.
 
-```
+```python
 import boto3
 fraudDetector = boto3.client('frauddetector')
 

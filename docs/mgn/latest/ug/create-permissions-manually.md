@@ -18,7 +18,7 @@ To create the role:
 
 1. In the following JSON, replace the example account ID {{111122223333}} with your account number, and the example Region {{us-east-1}} with the connector Region. Then, create a policy from the JSON:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -66,7 +66,7 @@ To create the role:
 
 1. If you created an S3 bucket for SSM logging, replace **LOGS-BUCKET** with the bucket name and append the following to the policy:
 
-   ```
+   ```json
    {
        "Action": "s3:PutObject",
        "Resource": "arn:aws:s3:::LOGS-BUCKET/*",
@@ -76,7 +76,7 @@ To create the role:
 
 1. In order for the MGN connector to send logs to CloudWatch, append this statement to the policy:
 
-   ```
+   ```json
    {
        "Effect": "Allow",
        "Action": [
@@ -94,7 +94,7 @@ To create the role:
 
 1.  Create a role with the following trust relationship:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -126,7 +126,7 @@ To create the role:
 
 1.  Create a policy from the following JSON:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -143,7 +143,7 @@ To create the role:
 
 1.  Create a role with the following trust relationship, where *management-account-id* is the account in which the connector was created:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

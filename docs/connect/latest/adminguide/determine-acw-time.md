@@ -17,7 +17,7 @@ For example, in the following agent event stream output, the contact enters ACW 
 **Tip**
 In the agent event stream, events are listed in reverse chronological order. We recommend reading through following examples by starting at the bottom of each example.
 
-```
+```json
 {
     "AWSAccountId": "012345678901",
     "AgentARN": "arn:aws:connect:us-east-1:012345678901:instance/aaaaaaaa-bbbb-cccc-dddd-111111111111/agent/agent-ARN",
@@ -140,7 +140,7 @@ Next, determine when a contact left ACW. Here's how to do that:
 
 For example, in the following agent event stream file, the contact left ACW at "**EventTimestamp**": "2019-05-25T18:55:32.022Z".
 
-```
+```json
 {
     "AWSAccountId": "012345678901",
     "AgentARN": "arn:aws:connect:us-east-1:012345678901:instance/aaaaaaaa-bbbb-cccc-dddd-111111111111/agent/agent-ARN",

@@ -36,7 +36,7 @@ In the table named *Table operations* below, a POJO instance is referred to as `
 
 Note that most V2 operations can be called with a fluent consumer pattern even when not shown. For example,
 
-```
+```java
 Customer customer = table.getItem(r → r.key(key));
   or
 Customer customer = table.getItem(r → r.key(k -> k.partitionValue("id").sortValue("email")))
@@ -44,7 +44,7 @@ Customer customer = table.getItem(r → r.key(k -> k.partitionValue("id").sortVa
 
 For V1 operations, *Table operations* (below) contains some of the commonly used forms and not all overloaded forms. For example, the `load()` method has the following overloads:
 
-```
+```java
 mapper.load(Customer.class, hashKey)
 mapper.load(Customer.class, hashKey, rangeKey)
 mapper.load(Customer.class, hashKey, config)
@@ -144,7 +144,7 @@ In V1, you generally control specific behaviors by using an instance of `DynamoD
 
 In V1, some operations, such as `query()`, are highly configurable through an “expression” object submitted to the operation. For example:
 
-```
+```java
 DynamoDBQueryExpression<Customer> emailBwQueryExpr = new DynamoDBQueryExpression<Customer>()
     .withRangeKeyCondition("Email",
         new Condition()
@@ -157,7 +157,7 @@ mapper.query(Customer.class, emailBwQueryExpr);
 
 In V2, instead of using a configuration object, you set parameters on the request object by using a builder. For example:
 
-```
+```java
 QueryEnhancedRequest emailBw = QueryEnhancedRequest.builder()
     .queryConditional(QueryConditional
         .sortBeginsWith(kb -> kb
@@ -191,14 +191,14 @@ In V2, the SDK provides a set of default converters for all common types. You ca
 
 In V1, you can annotate a getter method with `@DynamoDBTypeConverted` to specify the class that converts between the Java attribute type and a DynamoDB attribute type. For instance, a `CurrencyFormatConverter` that converts between a Java `Currency` type and DynamoDB String can be applied as shown in the following snippet.
 
-```
+```java
 @DynamoDBTypeConverted(converter = CurrencyFormatConverter.class)
 public Currency getCurrency() { return currency; }
 ```
 
 The V2 equivalent of the previous snippet is shown below.
 
-```
+```java
 @DynamoDbConvertedBy(CurrencyFormatConverter.class)
 public Currency getCurrency() { return currency; }
 ```
@@ -211,7 +211,7 @@ In V1, you can apply the annotation to the attribute itself , a type or a user-d
 
 In V1, you can provide your own set of type converters, or override the types you care about by adding a type converter factory to the configuration. The type converter factory extends `DynamoDBTypeConverterFactory`, and overrides are done by getting a reference to the default set and extending it. The following snippet demonstrates how to do this.
 
-```
+```java
 DynamoDBTypeConverterFactory typeConverterFactory =
     DynamoDBTypeConverterFactory.standard().override()
         .with(String.class, CustomBoolean.class, new DynamoDBTypeConverter<String, CustomBoolean>() {
@@ -232,7 +232,7 @@ DynamoDBMapper mapperWithTypeConverterFactory = new DynamoDBMapper(dynamo, confi
 
 V2 provides similar functionality through the `@DynamoDbBean` annotation. You can provide a single `AttributeConverterProvider` or a chain of ordered `AttributeConverterProvider`s. Note that if you supply your own chain of attribute converter providers, you will override the default converter provider and must include it in the chain to use its attribute converters.
 
-```
+```java
 @DynamoDbBean(converterProviders = {
    ConverterProvider1.class,
    ConverterProvider2.class,

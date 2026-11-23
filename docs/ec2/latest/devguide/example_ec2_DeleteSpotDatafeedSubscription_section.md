@@ -26,7 +26,7 @@ For more information, see [Track your Spot Instance costs using the Spot Instanc
 **Tools for PowerShell V4**
 **Example 1: This example deletes your Spot instance data feed. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2SpotDatafeedSubscription
 ```
 **Output:**
@@ -42,7 +42,7 @@ Performing operation "Remove-EC2SpotDatafeedSubscription (DeleteSpotDatafeedSubs
 **Tools for PowerShell V5**
 **Example 1: This example deletes your Spot instance data feed. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2SpotDatafeedSubscription
 ```
 **Output:**

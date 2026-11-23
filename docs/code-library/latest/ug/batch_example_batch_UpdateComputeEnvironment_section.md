@@ -41,7 +41,7 @@ For more information, see [Update a compute environment in AWS Batch](https://do
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/batch#code-examples).
 
-```
+```java
     /**
      * Disables the specified compute environment asynchronously.
      *
@@ -72,7 +72,7 @@ For more information, see [Update a compute environment in AWS Batch](https://do
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def update_compute_environment(self, compute_environment: str, state: str) -> dict:
         """
         Updates a compute environment, such as disabling it before deletion.

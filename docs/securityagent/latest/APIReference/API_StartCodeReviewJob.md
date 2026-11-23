@@ -90,7 +90,7 @@ Type: Timestamp
  ** [status](#API_StartCodeReviewJob_ResponseSyntax) **   <a name="securityagent-StartCodeReviewJob-response-status"></a>
 The current status of the code review job.
 Type: String
-Valid Values: `IN_PROGRESS | STOPPING | STOPPED | FAILED | COMPLETED`
+Valid Values: `IN_PROGRESS | STOPPING | STOPPED | PAUSING | PAUSED | FAILED | COMPLETED`
 
  ** [title](#API_StartCodeReviewJob_ResponseSyntax) **   <a name="securityagent-StartCodeReviewJob-response-title"></a>
 The title of the code review job.

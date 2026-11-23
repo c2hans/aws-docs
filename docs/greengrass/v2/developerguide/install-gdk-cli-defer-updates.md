@@ -12,13 +12,13 @@ If you haven't installed the GDK CLI on your development computer, complete the 
 
 1. On your development computer, run the following command to install the latest version of the GDK CLI from its [GitHub repository](https://github.com/aws-greengrass/aws-greengrass-gdk-cli).
 
-   ```
+   ```bash
    python3 -m pip install -U git+https://github.com/aws-greengrass/aws-greengrass-gdk-cli.git@v1.6.2
    ```
 
 1. <a name="gdk-cli-verify-installation"></a>Run the following command to verify that the GDK CLI installed successfully.
 
-   ```
+   ```bash
    gdk --help
    ```
 

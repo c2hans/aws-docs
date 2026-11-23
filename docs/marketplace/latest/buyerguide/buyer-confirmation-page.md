@@ -16,3 +16,4 @@ From the confirmation page, you can:
 + Set up your account on the seller's website (for SaaS products).
 + Launch the software or continue to configuration (for AMI and container products).
 + View your subscription in the AWS Marketplace console.
++ Follow the usage instructions for the product (for RTB Fabric module products): deploy the module in the RTB Fabric console.

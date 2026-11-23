@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ACM#code-examples).
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -76,7 +76,7 @@ namespace ListCertificates
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/acm#code-examples).
 
-```
+```cpp
 //! List the AWS Certificate Manager (ACM) certificates in an account.
 /*!
   \param clientConfiguration: AWS client configuration.
@@ -214,7 +214,7 @@ For more information, see [Search certificates managed by AWS Certificate Manage
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/acm#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -263,7 +263,7 @@ public class ListCerts {
 **Tools for PowerShell V4**
 **Example 1: Retrieves a list of all your certificate ARNs and the domain name for each. The cmdlet will automatically paginate to retrieve all the ARNs. To manually control pagination, use the -MaxItem parameter to control how many certificate ARNs are returned for each service call and the -NextToken parameter to indicate the starting point for each call.**
 
-```
+```powershell
 Get-ACMCertificateList
 ```
 **Output:**
@@ -275,12 +275,12 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 ```
 **Example 2: Retrieves a list of all your certificate ARNs where the certificate status matches on the supplied states.**
 
-```
+```powershell
 Get-ACMCertificateList -CertificateStatus "VALIDATION_TIMED_OUT","FAILED"
 ```
 **Example 3: This example returns a list of all certificates in the us-east-1 region that have a key type of RSA\_2048, and an extended key usage, or purpose, of CODE\_SIGNING. You can find the values for these filtering parameters in the ListCertificates Filters API reference topic: https://docs.aws.amazon.com/acm/latest/APIReference/API\_Filters.html.**
 
-```
+```powershell
 Get-ACMCertificateList -Region us-east-1 -Includes_KeyType RSA_2048 -Includes_ExtendedKeyUsage CODE_SIGNING
 ```
 **Output:**
@@ -302,7 +302,7 @@ arn:aws:acm:us-east-1:8xxxxxxxxxxx:certificate/xxxxxxxx-fa47-40fe-a714-2d277d3ee
 **Tools for PowerShell V5**
 **Example 1: Retrieves a list of all your certificate ARNs and the domain name for each. The cmdlet will automatically paginate to retrieve all the ARNs. To manually control pagination, use the -MaxItem parameter to control how many certificate ARNs are returned for each service call and the -NextToken parameter to indicate the starting point for each call.**
 
-```
+```powershell
 Get-ACMCertificateList
 ```
 **Output:**
@@ -314,12 +314,12 @@ arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789
 ```
 **Example 2: Retrieves a list of all your certificate ARNs where the certificate status matches on the supplied states.**
 
-```
+```powershell
 Get-ACMCertificateList -CertificateStatus "VALIDATION_TIMED_OUT","FAILED"
 ```
 **Example 3: This example returns a list of all certificates in the us-east-1 region that have a key type of RSA\_2048, and an extended key usage, or purpose, of CODE\_SIGNING. You can find the values for these filtering parameters in the ListCertificates Filters API reference topic: https://docs.aws.amazon.com/acm/latest/APIReference/API\_Filters.html.**
 
-```
+```powershell
 Get-ACMCertificateList -Region us-east-1 -Includes_KeyType RSA_2048 -Includes_ExtendedKeyUsage CODE_SIGNING
 ```
 **Output:**
@@ -344,7 +344,7 @@ arn:aws:acm:us-east-1:8xxxxxxxxxxx:certificate/xxxxxxxx-fa47-40fe-a714-2d277d3ee
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/acm#code-examples).
 
-```
+```python
 class AcmCertificate:
     """
     Encapsulates ACM functions.
@@ -409,7 +409,7 @@ class AcmCertificate:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/acm#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_acm->listcertificates(
           iv_maxitems = iv_max_items

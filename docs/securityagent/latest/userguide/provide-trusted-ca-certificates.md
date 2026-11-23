@@ -39,7 +39,7 @@ Set `trustedCaCertificates` in the `assets` parameter of your `create-pentest` o
 
 The following example attaches an inline certificate:
 
-```
+```bash
 aws securityagent create-pentest \
   --title "My penetration test" \
   --agent-space-id "your-agent-space-id" \
@@ -48,7 +48,7 @@ aws securityagent create-pentest \
 
 The following example reads the certificate from Amazon S3 when the penetration test runs. AWS Security Agent reads the object using the penetration test service role, so the role must have `s3:GetObject` permission for the object.
 
-```
+```bash
 aws securityagent create-pentest \
   --title "My penetration test" \
   --agent-space-id "your-agent-space-id" \

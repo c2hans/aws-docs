@@ -655,7 +655,7 @@ Returns a `GetComputeCertificateResponse` object containing the following:
 ### Example
 <a name="integration-server-sdk5-unreal-getcomputecertificate-example"></a>
 
-```
+```cpp
 FGameLiftGetComputeCertificateOutcome FGameLiftServerSDKModule::GetComputeCertificate()
 {
   #if WITH_GAMELIFT
@@ -701,7 +701,7 @@ Returns a [FGameLiftGetFleetRoleCredentialsOutcome](integration-server-sdk5-unre
 ### Example
 <a name="integration-server-sdk5-unreal-getfleetrolecredentials-example"></a>
 
-```
+```cpp
 FGameLiftGetFleetRoleCredentialsOutcome FGameLiftServerSDKModule::GetFleetRoleCredentials(const FGameLiftGetFleetRoleCredentialsRequest &request)
 {
   #if WITH_GAMELIFT
@@ -753,7 +753,7 @@ Returns a [FGameLiftListContainersNetworkInfoOutcome](integration-server-sdk5-un
 ### Example
 <a name="integration-server-sdk5-unreal-listcontainersnetworkinfo-example"></a>
 
-```
+```cpp
 FGameLiftListContainersNetworkInfoOutcome FGameLiftServerSDKModule::ListContainersNetworkInfo()
 {
 #if WITH_GAMELIFT

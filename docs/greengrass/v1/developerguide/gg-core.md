@@ -42,7 +42,7 @@ The following is an example `config.json` file. This is the version that's gener
 ------
 #### [ GGC v1.11 ]
 
-```
+```json
 {
     "coreThing": {
         "caPath": "root.ca.pem",
@@ -156,7 +156,7 @@ The following versions of the AWS IoT Greengrass Core software are in the [exten
 
 GGC v1.10
 
-```
+```json
 {
   "coreThing" : {
     "caPath" : "root.ca.pem",
@@ -247,7 +247,7 @@ The following configuration properties are also supported:
 
 GGC v1.9
 
-```
+```json
 {
   "coreThing" : {
     "caPath" : "root.ca.pem",
@@ -332,7 +332,7 @@ The following configuration properties are also supported.
 
 **GGC v1.8**
 
-```
+```json
 {
   "coreThing" : {
     "caPath" : "root.ca.pem",
@@ -416,7 +416,7 @@ The following configuration properties are also supported:
 
 **GGC v1.7**
 
-```
+```json
 {
   "coreThing" : {
     "caPath" : "root.ca.pem",
@@ -497,7 +497,7 @@ The following configuration properties are also supported:
 
 **GGC v1.6**
 
-```
+```json
 {
    "coreThing": {
        "caPath": "{{root-ca-pem}}",
@@ -542,7 +542,7 @@ The `config.json` file supports the following properties:
 
 **GGC v1.5**
 
-```
+```json
 {
    "coreThing": {
        "caPath": "{{root-ca-pem}}",
@@ -582,7 +582,7 @@ The `config.json` file exists in `/{{greengrass-root}}/config` and contains the 
 
 **GGC v1.3**
 
-```
+```json
 {
    "coreThing": {
        "caPath": "{{root-ca-pem}}",
@@ -622,7 +622,7 @@ The `config.json` file exists in `/{{greengrass-root}}/config` and contains the 
 
 **GGC v1.1**
 
-```
+```json
 {
    "coreThing": {
        "caPath": "{{root-ca-pem}}",
@@ -661,7 +661,7 @@ The `config.json` file exists in `/{{greengrass-root}}/config` and contains the 
 **GGC v1.0**
 In AWS IoT Greengrass Core v1.0, `config.json` is deployed to `{{greengrass-root}}/configuration`.
 
-```
+```json
 {
    "coreThing": {
        "caPath": "{{root-ca-pem}}",
@@ -706,7 +706,7 @@ Your AWS IoT Core and AWS IoT Greengrass endpoints must correspond to the certif
 
 If your device uses an Amazon Trust Services (ATS) root CA certificate, which is the preferred method, it must also use ATS endpoints for device management and discovery data plane operations. ATS endpoints include the `ats` segment, as shown in the following syntax for the AWS IoT Core endpoint.
 
-```
+```json
 {{prefix}}-ats.iot.{{region}}.amazonaws.com
 ```
 
@@ -718,7 +718,7 @@ For backward compatibility, AWS IoT Greengrass currently supports legacy VeriSig
 
 On a Greengrass core device, endpoints are specified in the `coreThing` object in the [`config.json`](#config-json) file. The `iotHost` property represents the AWS IoT Core endpoint. The `ggHost` property represents the AWS IoT Greengrass endpoint. In the following example snippet, these properties specify ATS endpoints.
 
-```
+```json
 {
   "coreThing" : {
     ...
@@ -772,7 +772,7 @@ This procedure allows the Greengrass core to use port 443 for MQTT messaging wit
 
 1. Run the following command to stop the Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -781,7 +781,7 @@ This procedure allows the Greengrass core to use port 443 for MQTT messaging wit
 
 1. In the `coreThing` object, add the `iotMqttPort` property and set the value to **443**, as shown in the following example.
 
-   ```
+   ```json
    {
        "coreThing" : {
            "caPath" : "root.ca.pem",
@@ -799,7 +799,7 @@ This procedure allows the Greengrass core to use port 443 for MQTT messaging wit
 
 1. Start the daemon.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -814,7 +814,7 @@ This procedure configures the core to use port 443 for HTTPS communication.
 
 1. Run the following command to stop the Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -823,7 +823,7 @@ This procedure configures the core to use port 443 for HTTPS communication.
 
 1. In the `coreThing` object, add the `iotHttpPort` and `ggHttpPort` properties, as shown in the following example.
 
-   ```
+   ```json
    {
        "coreThing" : {
            "caPath" : "root.ca.pem",
@@ -842,7 +842,7 @@ This procedure configures the core to use port 443 for HTTPS communication.
 
 1. Start the daemon.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -857,7 +857,7 @@ This procedure allows AWS IoT Greengrass to connect to the internet through an H
 
 1. Run the following command to stop the Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -866,7 +866,7 @@ This procedure allows AWS IoT Greengrass to connect to the internet through an H
 
 1. In the `coreThing` object, add the [networkProxy](#networkProxy-object) object, as shown in the following example.
 
-   ```
+   ```json
    {
        "coreThing" : {
            "caPath" : "root.ca.pem",
@@ -891,7 +891,7 @@ This procedure allows AWS IoT Greengrass to connect to the internet through an H
 
 1. Start the daemon.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -980,7 +980,7 @@ This configuration results in the following directory structure.
 
 1. Run the following command to stop the AWS IoT Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -989,7 +989,7 @@ This configuration results in the following directory structure.
 
 1. Add `writeDirectory` as a parameter and specify the path to the target directory, as shown in the following example.
 
-   ```
+   ```json
    {
        "coreThing": {
            "caPath": "root-CA.pem",
@@ -1007,7 +1007,7 @@ You can update the `writeDirectory` setting as often as you want. After the sett
 
    Otherwise, start the AWS IoT Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -1041,7 +1041,7 @@ One way to make the {{greengrass-root}} directory read-only is to mount the dire
 
 1. Start the daemon.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -1383,7 +1383,7 @@ The Greengrass core acts as the local message broker for MQTT messaging between 
 
 1. Run the following command to stop the Greengrass daemon:
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd stop
    ```
@@ -1392,7 +1392,7 @@ The Greengrass core acts as the local message broker for MQTT messaging between 
 
 1. In the `coreThing` object, add the `ggMqttPort` property and set the value to the port number you want to use. Valid values are 1024 to 65535. The following example sets the port number to `9000`.
 
-   ```
+   ```json
    {
        "coreThing" : {
            "caPath" : "root.ca.pem",
@@ -1410,7 +1410,7 @@ The Greengrass core acts as the local message broker for MQTT messaging between 
 
 1. Start the daemon.
 
-   ```
+   ```bash
    cd /{{greengrass-root}}/ggc/core/
    sudo ./greengrassd start
    ```
@@ -1447,7 +1447,7 @@ This feature is available in AWS IoT Greengrass v1.10.2 or later.
 
 You can configure the amount of time (in seconds) to allow the Greengrass core to complete a publish, subscribe, or unsubscribe operation in MQTT connections to AWS IoT Core. You might want to adjust this setting if the operations time out because of bandwidth constraints or high latency. To configure this setting in the [config.json](#config-json) file, add or change the `mqttOperationTimeout` property in the `coreThing` object. For example:
 
-```
+```json
 {
   "coreThing": {
     "mqttOperationTimeout": 10,

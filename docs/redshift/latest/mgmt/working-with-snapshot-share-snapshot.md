@@ -20,7 +20,7 @@ After you have authorized access to an AWS customer account, no users in that ac
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement":[
@@ -47,7 +47,7 @@ After you have authorized access to an AWS customer account, no users in that ac
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement":[
@@ -72,7 +72,7 @@ After you have authorized access to an AWS customer account, no users in that ac
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement":[
@@ -134,7 +134,7 @@ In the following key-policy example, user `111122223333` is the owner of the KMS
 
 ****
 
-```
+```json
 {
     "Id": "key-policy-1",
     "Version":"2012-10-17",

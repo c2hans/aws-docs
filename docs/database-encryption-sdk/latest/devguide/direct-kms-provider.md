@@ -40,7 +40,7 @@ The DynamoDB Encryption Client for Java determines the Region for calling AWS KM
 ------
 #### [ Java ]
 
-```
+```java
 // Replace the example key ARN and Region with valid values for your application
 final String keyArn = 'arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab'
 final String region = 'us-west-2'
@@ -54,7 +54,7 @@ final DirectKmsMaterialProvider cmp = new DirectKmsMaterialProvider(kms, {{keyAr
 
 The following example uses the key ARN to specify the AWS KMS key. If your key identifier doesn't include an AWS Region, the DynamoDB Encryption Client gets the Region from the configured Botocore session, if there is one, or from Boto defaults.
 
-```
+```python
 # Replace the example key ID with a valid value
 kms_key = 'arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab'
 kms_cmp = AwsKmsCryptographicMaterialsProvider(key_id={{kms_key}})
@@ -76,7 +76,7 @@ The following example configures the DynamoDB Encryption Client to encrypt data 
 
 In this example, the DynamoDB Encryption Client gets the Region for calling AWS KMS from the Region in the AWS KMS client. The `keyArn` value identifies a multi-Region key in the same Region.
 
-```
+```java
 // Encrypt in us-east-1
 
 // Replace the example key ARN and Region with valid values for your application
@@ -87,7 +87,7 @@ final KmsClient kms = KmsClient.builder().region(Region.of({{region}})).build();
 final DirectKmsMaterialProvider cmp = new DirectKmsMaterialProvider(kms, {{usEastKey}});
 ```
 
-```
+```java
 // Decrypt in us-west-2
 
 // Replace the example key ARN and Region with valid values for your application
@@ -103,7 +103,7 @@ final DirectKmsMaterialProvider cmp = new DirectKmsMaterialProvider(kms, {{usWes
 
 In this example, the DynamoDB Encryption Client gets the Region for calling AWS KMS from the Region in the key ARN.
 
-```
+```python
 # Encrypt in us-east-1
 
 # Replace the example key ID with a valid value
@@ -111,7 +111,7 @@ us_east_key = 'arn:aws:kms:us-east-1:111122223333:key/mrk-1234abcd12ab34cd56ef12
 kms_cmp = AwsKmsCryptographicMaterialsProvider(key_id=us_east_key)
 ```
 
-```
+```python
 # Decrypt in us-west-2
 
 # Replace the example key ID with a valid value

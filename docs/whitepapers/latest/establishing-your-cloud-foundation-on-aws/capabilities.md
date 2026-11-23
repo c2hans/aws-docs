@@ -37,6 +37,8 @@ AWS has defined a set of 29 capabilities that span six categories to help you es
 
 ![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/category.png)
 
+*29 capabilities across six categories *
+
 Topics
 + [Governance, Risk Management, and Compliance](governance.md)
 + [Operations](operations.md)

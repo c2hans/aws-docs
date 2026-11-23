@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Java 2.x**
 Create a formal association between an Opportunity and various related entities.
 
-```
+```java
 package org.example;
 
 import static org.example.utils.Constants.*;
@@ -84,7 +84,7 @@ static AssociateOpportunityResponse getResponse(String opportunityId, String ent
 **SDK for Python (Boto3)**
 Create a formal association between an Opportunity and various related entities.
 
-```
+```python
 #!/usr/bin/env python
 
 """

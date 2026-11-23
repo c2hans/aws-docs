@@ -17,7 +17,7 @@ When you encounter an `SdkError::ServiceError` it means that your request was su
 
  The error response details are included in the error variant. The following example shows how to conveniently get at the underlying `ServiceError` variant and handle different error cases:
 
-```
+```rust
 // Needed to access the '.code()' function on the error type:
 use aws_sdk_s3::error::ProvideErrorMetadata;
 
@@ -77,7 +77,7 @@ By default, display of this error only outputs "dispatch failure". This lacks de
 
 When we wrap the error to be displayed and print it, `DisplayErrorContext` provides a much more detailed message similar to the following:
 
-```
+```json
 dispatch failure: other: Session token not found or invalid.
 DispatchFailure(
     DispatchFailure {

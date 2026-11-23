@@ -96,7 +96,7 @@ Input templates can use the following reserved variables:
 
 The following is an example Amazon EC2 event that we can use as our *sample event*.
 
-```
+```json
 {
   "version": "0",
   "id": "7bf73129-1428-4cd3-a780-95db273d1602",
@@ -117,7 +117,7 @@ The following is an example Amazon EC2 event that we can use as our *sample even
 
 Let's use the following JSON as our *Transformer*.
 
-```
+```json
 {
   "instance" : <$.detail.instance-id>,
   "state": <$.detail.state>,
@@ -129,7 +129,7 @@ Let's use the following JSON as our *Transformer*.
 
 The following will be the resulting *Output*:
 
-```
+```json
 {
   "instance" : "i-0123456789",
   "state": "RUNNING",

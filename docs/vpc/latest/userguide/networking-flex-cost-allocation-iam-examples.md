@@ -11,7 +11,7 @@ The following example IAM policies grant permissions for Networking Flexible Cos
 
 The following example policy grants read-only access to FCA policies, policy versions, and associations.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -33,7 +33,7 @@ The following example policy grants read-only access to FCA policies, policy ver
 
 The following example policy grants full access to FCA policies and associations.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -74,7 +74,7 @@ These actions support resource-level permissions. The preceding example uses `"*
 
 To associate a policy with a resource, the IAM principal also needs permission to describe that resource. The following example policy grants the describe permissions for all supported resource types. Combine these permissions with the FCA management permissions from the preceding example.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

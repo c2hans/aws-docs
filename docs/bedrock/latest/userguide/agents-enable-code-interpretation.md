@@ -40,7 +40,7 @@ To enable code interpretation for your agent, send an [CreateActionGroup](https:
 
 The following shows the general format of the required fields for enabling code interpretation with an [CreateActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) request.
 
-```
+```json
 CreateAgentActionGroup:
 {
   "actionGroupName": "CodeInterpreterAction",

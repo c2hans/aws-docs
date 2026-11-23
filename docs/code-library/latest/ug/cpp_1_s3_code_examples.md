@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon S3.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3/hello_s3#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -76,7 +76,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_s3.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/s3/S3Client.h>
 #include <iostream>
@@ -149,7 +149,7 @@ The following code example shows how to:
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 #include <iostream>
 #include <aws/core/Aws.h>
 #include <aws/s3/S3Client.h>
@@ -435,7 +435,7 @@ The following code example shows how to use `AbortMultipartUpload`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 //! Abort a multipart upload to an S3 bucket.
 /*!
     \param bucket: The name of the S3 bucket where the object will be uploaded.
@@ -476,7 +476,7 @@ The following code example shows how to use `CompleteMultipartUpload`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 //! Complete a multipart upload to an S3 bucket.
 /*!
     \param bucket: The name of the S3 bucket where the object will be uploaded.
@@ -519,7 +519,7 @@ The following code example shows how to use `CopyObject`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::copyObject(const Aws::String &objectKey, const Aws::String &fromBucket, const Aws::String &toBucket,
                             const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
@@ -553,7 +553,7 @@ The following code example shows how to use `CreateBucket`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::createBucket(const Aws::String &bucketName,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
@@ -591,7 +591,7 @@ The following code example shows how to use `CreateMultipartUpload`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 //! Create a multipart upload.
 /*!
     \param bucket: The name of the S3 bucket where the object will be uploaded.
@@ -634,7 +634,7 @@ The following code example shows how to use `DeleteBucket`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucket(const Aws::String &bucketName,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
 
@@ -667,7 +667,7 @@ The following code example shows how to use `DeleteBucketPolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucketPolicy(const Aws::String &bucketName,
                                     const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
@@ -698,7 +698,7 @@ The following code example shows how to use `DeleteBucketWebsite`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteBucketWebsite(const Aws::String &bucketName,
                                      const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
@@ -729,7 +729,7 @@ The following code example shows how to use `DeleteObject`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteObject(const Aws::String &objectKey,
                               const Aws::String &fromBucket,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -763,7 +763,7 @@ The following code example shows how to use `DeleteObjects`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteObjects(const std::vector<Aws::String> &objectKeys,
                                const Aws::String &fromBucket,
                                const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -810,7 +810,7 @@ The following code example shows how to use `GetBucketAcl`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::getBucketAcl(const Aws::String &bucketName,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client s3Client(clientConfig);
@@ -930,7 +930,7 @@ The following code example shows how to use `GetBucketPolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::getBucketPolicy(const Aws::String &bucketName,
                                  const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client s3Client(clientConfig);
@@ -969,7 +969,7 @@ The following code example shows how to use `GetBucketWebsite`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::getWebsiteConfig(const Aws::String &bucketName,
                                   const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client s3Client(clientConfig);
@@ -1013,7 +1013,7 @@ The following code example shows how to use `GetObject`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::getObject(const Aws::String &objectKey,
                            const Aws::String &fromBucket,
                            const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -1048,7 +1048,7 @@ The following code example shows how to use `GetObjectAcl`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::getObjectAcl(const Aws::String &bucketName,
                               const Aws::String &objectKey,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -1164,7 +1164,7 @@ The following code example shows how to use `GetObjectAttributes`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 // ! Routine which retrieves the hash value of an object stored in an S3 bucket.
 /*!
    \param bucket: The name of the S3 bucket where the object is stored.
@@ -1290,7 +1290,7 @@ The following code example shows how to use `ListBuckets`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::listBuckets(const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
 
@@ -1320,7 +1320,7 @@ The following code example shows how to use `ListObjectsV2`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::listObjects(const Aws::String &bucketName,
                              Aws::Vector<Aws::String> &keysResult,
                              const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -1372,7 +1372,7 @@ The following code example shows how to use `PutBucketAcl`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::putBucketAcl(const Aws::String &bucketName, const Aws::String &ownerID,
                               const Aws::String &granteePermission,
                               const Aws::String &granteeType, const Aws::String &granteeID,
@@ -1475,7 +1475,7 @@ The following code example shows how to use `PutBucketPolicy`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::putBucketPolicy(const Aws::String &bucketName,
                                  const Aws::String &policyBody,
                                  const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -1544,7 +1544,7 @@ The following code example shows how to use `PutBucketWebsite`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::putWebsiteConfig(const Aws::String &bucketName,
                                   const Aws::String &indexPage, const Aws::String &errorPage,
                                   const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -1588,7 +1588,7 @@ The following code example shows how to use `PutObject`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::putObject(const Aws::String &bucketName,
                            const Aws::String &fileName,
                            const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -1636,7 +1636,7 @@ The following code example shows how to use `PutObjectAcl`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::putObjectAcl(const Aws::String &bucketName, const Aws::String &objectKey, const Aws::String &ownerID,
                               const Aws::String &granteePermission, const Aws::String &granteeType,
                               const Aws::String &granteeID, const Aws::String &granteeEmailAddress,
@@ -1736,7 +1736,7 @@ The following code example shows how to use `UploadPart`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 //! Upload a part to an S3 bucket.
 /*!
     \param bucket: The name of the S3 bucket where the object will be uploaded.
@@ -1806,7 +1806,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 Generate a pre-signed URL to download an object.
 
-```
+```cpp
 //! Routine which demonstrates creating a pre-signed URL to download an object from an
 //! Amazon Simple Storage Service (Amazon S3) bucket.
 /*!
@@ -1827,7 +1827,7 @@ Aws::String AwsDoc::S3::generatePreSignedGetObjectUrl(const Aws::String &bucketN
 ```
 Download using libcurl.
 
-```
+```cpp
 static size_t myCurlWriteBack(char *buffer, size_t size, size_t nitems, void *userdata) {
     Aws::StringStream *str = (Aws::StringStream *) userdata;
 
@@ -1890,7 +1890,7 @@ bool AwsDoc::S3::getObjectWithPresignedObjectUrl(const Aws::String &presignedURL
 ```
 Generate a pre-signed URL to upload an object.
 
-```
+```cpp
 //! Routine which demonstrates creating a pre-signed URL to upload an object to an
 //! Amazon Simple Storage Service (Amazon S3) bucket.
 /*!
@@ -1910,7 +1910,7 @@ Aws::String AwsDoc::S3::generatePreSignedPutObjectUrl(const Aws::String &bucketN
 ```
 Upload using libcurl.
 
-```
+```cpp
 static size_t myCurlReadBack(char *buffer, size_t size, size_t nitems, void *userdata) {
     Aws::StringStream *str = (Aws::StringStream *) userdata;
 
@@ -2038,7 +2038,7 @@ The following code example shows how to work with S3 object integrity features.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3/s3_object_integrity_workflow#code-examples).
 Run an interactive scenario demonstrating Amazon S3 object integrity features.
 
-```
+```cpp
 //! Routine which runs the S3 object integrity workflow.
 /*!
    \param clientConfig: Aws client configuration.

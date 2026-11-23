@@ -20,7 +20,8 @@ Content-type: application/json
    ],
    "authorizerConfiguration": { ... },
    "capacityProviderConfiguration": {
-      "capacityProviderArn": "{{string}}"
+      "capacityProviderArn": "{{string}}",
+      "operatingSystemConfiguration": { ... }
    },
    "clientToken": "{{string}}",
    "description": "{{string}}",

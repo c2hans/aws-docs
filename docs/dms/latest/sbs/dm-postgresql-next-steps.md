@@ -20,7 +20,7 @@ After you’ve finished using your migration project, clean up your resources.
 + Delete your database users that you created in [Step 2](dm-postgresql-step-2.md) and [Step 3](dm-postgresql-step-3.md).
 + Drop the replication slot and the publisher in the source database by using the following code example.
 
-  ```
+  ```sql
   SELECT pg_drop_replication_slot('migration_subscriber_{ARN}');
   DROP PUBLICATION publication_{ARN};
   ```

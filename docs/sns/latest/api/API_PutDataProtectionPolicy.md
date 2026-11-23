@@ -76,7 +76,7 @@ https://sns.us-east-2.amazonaws.com/?Action=PutDataProtectionPolicy
 #### Sample Response
 <a name="API_PutDataProtectionPolicy_Example_1_Response"></a>
 
-```
+```xml
 <PutDataProtectionPolicyResponse xmlns="http://sns.amazonaws.com/doc/2010-03-31/">
     <ResponseMetadata>
         <RequestId>e6616aef-1cf0-5c13-b454-31657d8ed10b</RequestId>

@@ -26,7 +26,7 @@ The following code example shows how to use `CreateCluster`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/eks#code-examples).
 
-```
+```rust
 async fn make_cluster(
     client: &aws_sdk_eks::Client,
     name: &str,
@@ -59,7 +59,7 @@ The following code example shows how to use `DeleteCluster`.
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/eks#code-examples).
 
-```
+```rust
 async fn remove_cluster(
     client: &aws_sdk_eks::Client,
     name: &str,

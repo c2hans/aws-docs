@@ -41,9 +41,9 @@ When a user, space, or domain is deleted, the Amazon EFS volume that contains th
 
 1. Open the [SageMaker AI console](https://console.aws.amazon.com/sagemaker/).
 
-1. On the left navigation pane, choose **Admin configurations** to expand the options, if not already expanded.
+1. On the left navigation pane, choose **Environment configuration** to expand the options, if not already expanded.
 
-1. Under **Admin configurations**, choose **Domains**.
+1. Under **Environment configuration**, choose **Domains**.
 
 1. Select the domain name link that you want to delete.
 
@@ -88,20 +88,20 @@ When a user, space, or domain is deleted, the Amazon EFS volume that contains th
 
 1. Retrieve the list of domains in your account.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker list-domains
    ```
 
 1. Retrieve the list of applications for the domain to be deleted.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker list-apps \
        --domain-id-equals {{DomainId}}
    ```
 
 1. Delete each application in the list.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker delete-app \
        --domain-id {{DomainId}} \
        --app-name {{AppName}} \
@@ -111,14 +111,14 @@ When a user, space, or domain is deleted, the Amazon EFS volume that contains th
 
 1. Retrieve the list of user profiles in the domain.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker list-user-profiles \
        --domain-id-equals {{DomainId}}
    ```
 
 1. Delete each user profile in the list.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker delete-user-profile \
        --domain-id {{DomainId}} \
        --user-profile-name {{UserProfileName}}
@@ -126,14 +126,14 @@ When a user, space, or domain is deleted, the Amazon EFS volume that contains th
 
 1. Retrieve the list of shared spaces in the domain.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker list-spaces \
        --domain-id {{DomainId}}
    ```
 
 1. Delete each shared space in the list.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker delete-space \
        --domain-id {{DomainId}} \
        --space-name {{SpaceName}}
@@ -141,7 +141,7 @@ When a user, space, or domain is deleted, the Amazon EFS volume that contains th
 
 1. Delete the domain. To also delete the Amazon EFS volume, specify `HomeEfsFileSystem=Delete`.
 
-   ```
+   ```cmd
    aws --region {{Region}} sagemaker delete-domain \
        --domain-id {{DomainId}} \
        --retention-policy HomeEfsFileSystem={{Retain}}

@@ -22,7 +22,7 @@ We recommend that you create your cluster with the latest available Kubernetes v
 **Nitro Sandboxes version support**
 Nitro Sandboxes requires Kubernetes version 1.36 or later. It is supported on the two latest versions. For more information, see [Sandboxing on Amazon EKS with isolated and confidential pods](sandboxing.md).
 
-[![AWS Videos](https://img.youtube.com/vi/_dJdAZ_J_jw?rel=0/0.jpg)](https://www.youtube.com/watch?v=_dJdAZ_J_jw?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/_dJdAZ_J_jw/0.jpg)](https://www.youtube.com/watch?v=_dJdAZ_J_jw)
 
 ## Available versions on standard support
 <a name="available-versions"></a>
@@ -94,7 +94,7 @@ You can use the AWS CLI to get information about Kubernetes versions available o
 
 1. The command will return a JSON output with details about the available cluster versions. Here’s an example of the output:
 
-   ```
+   ```json
    {
        "clusterVersions": [
            {

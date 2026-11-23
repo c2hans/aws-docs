@@ -27,7 +27,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/location#code-examples).
 Run an interactive scenario demonstrating Amazon Location Service features.
 
-```
+```java
 /*
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -422,7 +422,7 @@ public class LocationScenario {
 ```
 A wrapper class for Amazon Location Service SDK methods.
 
-```
+```java
 public class LocationActions {
 
     private static LocationAsyncClient locationAsyncClient;
@@ -1026,7 +1026,7 @@ public class LocationActions {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/location/scenarios#code-examples).
 
-```
+```javascript
 /*
 Before running this JavaScript code example, set up your development environment, including your credentials.
 This demo illustrates how to use the AWS SDK for JavaScript (v3) to work with Amazon Location Service.
@@ -1668,7 +1668,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/location#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment,
 including your credentials.

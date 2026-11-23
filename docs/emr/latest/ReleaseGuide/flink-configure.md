@@ -22,7 +22,7 @@ Amazon EMR releases 6.9.0 and higher support both Hive Metastore and AWS Glue Ca
 
    `hive-metastore-setup.sh`
 
-   ```
+   ```shell
    sudo cp /usr/lib/hive/lib/antlr-runtime-3.5.2.jar /usr/lib/flink/lib
    sudo cp /usr/lib/hive/lib/hive-exec-3.1.3*.jar /lib/flink/lib
    sudo cp /usr/lib/hive/lib/libfb303-0.9.3.jar /lib/flink/lib
@@ -45,7 +45,7 @@ Amazon EMR releases 6.9.0 and higher support both Hive Metastore and AWS Glue Ca
 
    glue-catalog-setup.sh
 
-   ```
+   ```shell
    sudo cp /usr/lib/hive/auxlib/aws-glue-datacatalog-hive3-client.jar /usr/lib/flink/lib
    sudo cp /usr/lib/hive/lib/antlr-runtime-3.5.2.jar /usr/lib/flink/lib
    sudo cp /usr/lib/hive/lib/hive-exec-3.1.3*.jar /lib/flink/lib
@@ -158,7 +158,7 @@ Flink application containers create and write to three types of log files: `.out
 
 Starting with Amazon EMR 5.30.0, Flink uses the log4j2 logging framework with the configuration classification name `flink-log4j.` The following example configuration demonstrates the log4j2 format.
 
-```
+```json
 [
   {
     "Classification": "flink-log4j",
@@ -184,7 +184,7 @@ Starting with Amazon EMR 5.30.0, Flink uses the log4j2 logging framework with th
 
 With Amazon EMR versions 5.29.0 and earlier, Flink uses the log4j logging framework. The following example configuration demonstrates the log4j format.
 
-```
+```json
 [
   {
     "Classification": "flink-log4j",
@@ -229,7 +229,7 @@ Use the following steps to create an EMR cluster with Flink and Java 11 runtime
 
 1. Continue setting up your cluster. In the optional **Software settings** section, use the default **Enter configuration** option and enter the following configuration:
 
-   ```
+   ```json
    [
        {
          "Classification": "flink-conf",
@@ -251,7 +251,7 @@ Use the following steps to create an EMR cluster with Flink and Java 11 runtime
 
 1. Create a configuration file `configurations.json`that configures Flink to use Java 11.
 
-   ```
+   ```json
    [
        {
          "Classification": "flink-conf",
@@ -266,7 +266,7 @@ Use the following steps to create an EMR cluster with Flink and Java 11 runtime
 
 1. From the AWS CLI, create a new EMR cluster with Amazon EMR release 6.12.0 or higher, and install the Flink application, as shown in the following example:
 
-   ```
+   ```bash,sh,zsh
    aws emr create-cluster --release-label {{emr-6.12.0}} \
    --applications Name=Flink \
    --configurations file://./configurations.json \
@@ -324,7 +324,7 @@ Use the `modify-instance-groups` command to specify a new configuration for an i
 
 1. First, create a configuration file `configurations.json`that configures Flink to use Java 11. In the following example, replace {{ig-1xxxxxxx9}} with the ID for the instance group that you want to reconfigure. Save the file in the same directory where you will run the `modify-instance-groups` command.
 
-   ```
+   ```json
    [
       {
          "InstanceGroupId":"{{ig-1xxxxxxx9}}",
@@ -345,7 +345,7 @@ Use the `modify-instance-groups` command to specify a new configuration for an i
 
 1. From the AWS CLI, run the following command. Replace the ID for the instance group that you want to reconfigure:
 
-   ```
+   ```bash,sh,zsh
    aws emr modify-instance-groups --cluster-id {{j-2AL4XXXXXX5T9}} \
    --instance-groups file://configurations.json
    ```
@@ -357,7 +357,7 @@ Use the `modify-instance-groups` command to specify a new configuration for an i
 
 To determine the Java runtime for a running cluster, log in to the primary node with SSH as described in [Connect to the primary node with SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html). Then run the following command:
 
-```
+```bash,sh,zsh
 ps -ef | grep flink
 ```
 

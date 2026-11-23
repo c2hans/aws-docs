@@ -216,7 +216,7 @@ In this section, you will work with your generated sample application in CodeCat
 
 1. Add, commit and push your changes with the **git add**, **git commit**, and **git push** commands.
 
-   ```
+   ```bash
    git add .
    git commit -m "make an example change"
    git push

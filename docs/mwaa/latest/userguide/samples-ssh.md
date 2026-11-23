@@ -52,7 +52,7 @@ apache-airflow-providers-ssh
 
 Use the following AWS Command Line Interface command to copy your `.pem` key to your environment's `dags` directory in Amazon S3.
 
-```
+```bash
 aws s3 cp {{your-secret-key}}.pem s3://{{amzn-s3-demo-bucket}}/dags/
 ```
 
@@ -85,7 +85,7 @@ If the **SSH** connection type is not available in the list, Amazon MWAA hasn't 
 
    1. For **Extra**, enter the following key-value pair in JSON format:
 
-      ```
+      ```json
       { "key_file": "/usr/local/airflow/dags/{{your-secret-key}}.pem" }
       ```
 
@@ -104,7 +104,7 @@ The following DAG uses the `SSHOperator` to connect to your target Amazon EC2 in
 
 1. Copy the contents of the following code sample and save locally as `ssh.py`.
 
-   ```
+   ```python
    from airflow.decorators import dag
    from datetime import datetime
    from airflow.providers.ssh.operators.ssh import SSHOperator
@@ -127,7 +127,7 @@ The following DAG uses the `SSHOperator` to connect to your target Amazon EC2 in
 
 1.  Run the following AWS CLI command to copy the DAG to your environment's bucket, then trigger the DAG using the Apache Airflow UI.
 
-   ```
+   ```bash
    aws s3 cp {{your-dag}}.py s3://{{your-environment-bucket}}/dags/
    ```
 

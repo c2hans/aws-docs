@@ -37,6 +37,11 @@ Metric specific configuration for centralization source metrics.
 Type: [SourceMetricsConfiguration](API_SourceMetricsConfiguration.md) object
 Required: No
 
+ ** SourceProfilesConfiguration **   <a name="cwoa-Type-CentralizationRuleSource-SourceProfilesConfiguration"></a>
+Profile-specific configuration for centralization source profiles.
+Type: [SourceProfilesConfiguration](API_SourceProfilesConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_CentralizationRuleSource_SeeAlso"></a>
 

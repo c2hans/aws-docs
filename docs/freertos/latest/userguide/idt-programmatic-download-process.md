@@ -31,7 +31,7 @@ ProductVersion
 
 The API response has the following format. The `DownloadURL` includes a zip file.
 
-```
+```json
 {
     "Success": {{True or False}},
     "Message": {{Message}},
@@ -57,7 +57,7 @@ If the optional parameter **ProductVersion** is included, you must use a support
 + Replace {{linux}} with your host machine's operating system.
 + Replace {{202107.00}} with your version of FreeRTOS.
 
-```
+```bash
 url=$(curl --request GET "https://download.devicetester.iotdevicesecosystem.amazonaws.com/latestidt?HostOs={{linux}}&ProductVersion={{202107.00}}&TestSuiteType=FR" \
 --user $AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY \
 --aws-sigv4 "aws:amz:{{us-west-2}}:iot-device-tester" \
@@ -75,7 +75,7 @@ You can use the following cURL command with an AWS signature that you sign and c
 + Replace {{AWSRegion}} with your AWS Region. For the list of Region codes, see [Regional endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 + Replace {{AWSSignature}} with the [AWS signature](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-create-signed-request.html) that you generate.
 
-```
+```bash
 curl --location --request GET 'https://download.devicetester.iotdevicesecosystem.amazonaws.com/latestidt?HostOs={{linux}}&TestSuiteType=FR' \
 --header 'X-Amz-Date: {{Timestamp}} \
 --header 'Authorization: AWS4-HMAC-SHA256 Credential=$AWS_ACCESS_KEY_ID/{{Date}}/{{AWSRegion}}/iot-device-tester/aws4_request, SignedHeaders=host;x-amz-date, Signature={{AWSSignature}}'
@@ -88,7 +88,7 @@ This example uses the Python [requests](https://pypi.org/project/requests/) libr
 + Replace {{us-west-2}} with your region. For the list of Region codes, see [Regional endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 + Replace {{linux}} with your host machine's operating system.
 
-```
+```python
 # Copyright 2010-2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 # This file is licensed under the Apache License, Version 2.0 (the "License").

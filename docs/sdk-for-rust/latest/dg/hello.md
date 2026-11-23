@@ -29,13 +29,13 @@ This procedure creates your first SDK for Rust application that lists your Dynam
 
 1. Run the following command to create a `hello_world` directory and populate it with a skeleton Rust project:
 
-   ```
+   ```sh
    $ cargo new hello_world --bin
    ```
 
 1. Navigate into the `hello_world` directory and use the following command to add the required dependencies to the app:
 
-   ```
+   ```sh
    $ cargo add aws-config aws-sdk-dynamodb tokio --features tokio/full,aws-config/credentials-login
    ```
 
@@ -46,7 +46,7 @@ The `aws-config/credentials-login` feature enables support for AWS Management Co
 
 1. Update `main.rs` in the `src` directory to contain the following code.
 
-   ```
+   ```rust
    use aws_config::meta::region::RegionProviderChain;
    use aws_config::BehaviorVersion;
    use aws_sdk_dynamodb::{Client, Error};
@@ -82,7 +82,7 @@ This example only displays the first page of results. See [Using paginated resul
 
 1. Run the program:
 
-   ```
+   ```sh
    $ cargo run
    ```
 

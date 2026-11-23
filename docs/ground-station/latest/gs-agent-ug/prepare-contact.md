@@ -14,13 +14,13 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/prepar
 
 1. Confirm that the AWS Ground Station Agent is started prior to the scheduled contact start time via:
 
-   ```
+   ```bash
    systemctl status aws-groundstation-agent
    ```
 
 1. Confirm that the AWS Ground Station Agent is healthy prior to the scheduled contact start time via:
 
-   ```
+   ```bash
    aws groundstation get-dataflow-endpoint-group --dataflow-endpoint-group-id ${DATAFLOW-ENDPOINT-GROUP-ID} --region ${REGION}
    ```
 

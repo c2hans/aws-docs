@@ -32,7 +32,7 @@ The following AWS Glue ETL script shows the process of reading XML files or fold
 
 For this example, use the [create\_dynamic\_frame.from\_options](aws-glue-api-crawler-pyspark-extensions-glue-context.md#aws-glue-api-crawler-pyspark-extensions-glue-context-create_dynamic_frame_from_options) method.
 
-```
+```python
 # Example: Read XML from S3
 # Set the rowTag option to configure the reader.
 
@@ -52,7 +52,7 @@ dynamicFrame = glueContext.create_dynamic_frame.from_options(
 
 You can also use DataFrames in a script (`pyspark.sql.DataFrame`).
 
-```
+```python
 dataFrame = spark.read\
     .format("xml")\
     .option("rowTag", "{{xmlTag}}")\
@@ -64,7 +64,7 @@ dataFrame = spark.read\
 
 For this example, use the [getSourceWithFormat](glue-etl-scala-apis-glue-gluecontext.md#glue-etl-scala-apis-glue-gluecontext-defs-getSourceWithFormat) operation.
 
-```
+```scala
 // Example: Read XML from S3
 // Set the rowTag option to configure the reader.
 
@@ -88,7 +88,7 @@ object GlueApp {
 
 You can also use DataFrames in a script (`org.apache.spark.sql.DataFrame`).
 
-```
+```scala
 val dataFrame = spark.read
   .option("rowTag", "{{xmlTag}}")
   .format("xml")
@@ -126,7 +126,7 @@ You can use the following `format_options` wherever AWS Glue libraries specify `
 
 This is an example of using the `withSchema` format option to specify the schema for XML data.
 
-```
+```python
 from awsglue.gluetypes import *
 
 schema = StructType([

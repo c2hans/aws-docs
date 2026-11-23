@@ -26,7 +26,7 @@ The following code example shows how to use `GetRoutingControlState`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/route53-recovery-cluster#code-examples).
 
-```
+```python
 import boto3
 
 def create_recovery_client(cluster_endpoint):
@@ -77,7 +77,7 @@ The following code example shows how to use `UpdateRoutingControlState`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/route53-recovery-cluster#code-examples).
 
-```
+```python
 import boto3
 
 def create_recovery_client(cluster_endpoint):

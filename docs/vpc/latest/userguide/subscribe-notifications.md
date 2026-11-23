@@ -8,7 +8,7 @@ AWS publishes its current IP address ranges in JSON format. Whenever there is a 
 
 The payload of the notification contains information in the following format.
 
-```
+```json
 {
   "create-time":"{{yyyy}}-{{mm}}-{{dd}}T{{hh}}:{{mm}}:{{ss}}+00:00",
   "synctoken":"{{0123456789}}",

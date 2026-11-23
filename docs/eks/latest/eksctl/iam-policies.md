@@ -13,7 +13,7 @@ This page lists the pre-defined IAM policy templates available in eksctl. These 
 
 Example of all supported add-on policies:
 
-```
+```yaml
 nodeGroups:
   - name: ng-1
     instanceType: m5.xlarge
@@ -54,7 +54,7 @@ The `certManager` policy enables the ability to add records to Route 53 in order
 
 This example creates a nodegroup that reuses an existing IAM Instance Role from another cluster:
 
-```
+```yaml
 apiVersion: eksctl.io/v1alpha4
 kind: ClusterConfig
 metadata:
@@ -73,7 +73,7 @@ nodeGroups:
 ## Attaching inline policies
 <a name="_attaching_inline_policies"></a>
 
-```
+```yaml
 nodeGroups:
   - name: my-special-nodegroup
     iam:
@@ -89,7 +89,7 @@ nodeGroups:
 ## Attaching policies by ARN
 <a name="_attaching_policies_by_arn"></a>
 
-```
+```yaml
 nodeGroups:
   - name: my-special-nodegroup
     iam:

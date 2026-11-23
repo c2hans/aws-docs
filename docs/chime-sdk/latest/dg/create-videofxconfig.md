@@ -10,7 +10,7 @@ The `VideoFxConfig` class does no validation of its own. Validation occurs in th
 
 The following example shows a valid `VideoFxConfig`.
 
-```
+```javascript
 const videoFxConfig: VideoFxConfig = {
     backgroundBlur: {
         isEnabled: {{false}},

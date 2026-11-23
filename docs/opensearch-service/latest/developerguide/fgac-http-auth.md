@@ -34,7 +34,7 @@ Navigate to the Amazon OpenSearch Service console at [https://console.aws.amazon
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ Now that your user is configured, you can map your user to a role.
 
 1. For **Document level security**, specify the following query:
 
-   ```
+   ```json
    {
      "match": {
        "FlightDelay": true
@@ -112,7 +112,7 @@ When your roles are mapped correctly, you can sign in as the limited user and te
 
 1. Go to **Dev Tools** and run the default search:
 
-   ```
+   ```json
    GET _search
    {
      "query": {
@@ -125,7 +125,7 @@ When your roles are mapped correctly, you can sign in as the limited user and te
 
 1. Run another search:
 
-   ```
+   ```json
    GET dashboards_sample_data_flights/_search
    {
      "query": {

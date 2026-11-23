@@ -18,7 +18,7 @@ Retrieve the list of AWS ParallelCluster official images.
 ## Request syntax
 <a name="list-official-images-request"></a>
 
-```
+```json
 GET /v3/images/official
 {
   "architecture": "string",
@@ -50,7 +50,7 @@ Required: No
 ## Response syntax
 <a name="list-official-images-response"></a>
 
-```
+```json
 {
   "images": [
     {
@@ -92,13 +92,13 @@ Type: string
 
 **Request**
 
-```
+```python
 $ list_official_images()
 ```
 
 **200 Response**
 
-```
+```json
 {
   'images': [
     {

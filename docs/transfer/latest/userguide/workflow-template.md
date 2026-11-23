@@ -15,7 +15,7 @@ You can deploy an CloudFormation stack that creates a workflow and a server from
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Resources:
      SFTPServer:
@@ -63,7 +63,7 @@ You can deploy an CloudFormation stack that creates a workflow and a server from
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Resources": {

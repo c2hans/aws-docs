@@ -24,7 +24,7 @@ The following code example shows how to use `GetIdentityVerificationAttributes`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ses/v1#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ses' # v2: require 'aws-sdk'
 
 # Create client in us-west-2 region
@@ -57,7 +57,7 @@ The following code example shows how to use `ListIdentities`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ses/v1#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ses' # v2: require 'aws-sdk'
 
 # Create client in us-west-2 region
@@ -90,7 +90,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ses/v1#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ses' # v2: require 'aws-sdk'
 
 # Replace sender@example.com with your "From" address.
@@ -172,7 +172,7 @@ The following code example shows how to use `VerifyEmailIdentity`.
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/ses/v1#code-examples).
 
-```
+```ruby
 require 'aws-sdk-ses' # v2: require 'aws-sdk'
 
 # Replace recipient@example.com with a "To" address.

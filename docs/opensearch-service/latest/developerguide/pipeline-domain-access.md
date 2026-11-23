@@ -26,7 +26,7 @@ The following sample policy demonstrates the [least privilege](https://docs.aws.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -55,7 +55,7 @@ The role must have the following [trust relationship](https://docs.aws.amazon.co
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -84,7 +84,7 @@ The following sample domain access policy allows the pipeline role named `pipeli
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

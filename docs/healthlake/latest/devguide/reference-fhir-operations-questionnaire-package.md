@@ -23,7 +23,7 @@ The `$questionnaire-package` operation retrieves a comprehensive bundle containi
 ## API endpoint
 <a name="questionnaire-package-api-endpoint"></a>
 
-```
+```http
 POST /datastore/{datastoreId}/r4/Questionnaire/$questionnaire-package
 Content-Type: application/fhir+json
 ```
@@ -62,7 +62,7 @@ HealthLake does not support the `context` parameter. If you include `context` to
 ## Example request
 <a name="questionnaire-package-example-request"></a>
 
-```
+```json
 POST /datastore/example-datastore/r4/Questionnaire/$questionnaire-package
 Content-Type: application/fhir+json
 Authorization: Bearer <your-token>
@@ -141,7 +141,7 @@ The operation returns a FHIR Parameters resource containing one or more **Packag
 
 **Example response**
 
-```
+```json
 {
   "resourceType": "Parameters",
   "parameter": [
@@ -298,7 +298,7 @@ When you call `$questionnaire-package`, HealthLake performs the following steps:
 
 Returned when request validation fails.
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [{
@@ -316,7 +316,7 @@ Returned when request validation fails.
 
 Returned when a dependent resource cannot be retrieved.
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [{
@@ -369,7 +369,7 @@ Returned when an unexpected server error occurs.
 
 Returned when the requested operation is not yet implemented. For example, HealthLake returns this error when `context` is the only selector in the request.
 
-```
+```json
 {
   "resourceType": "OperationOutcome",
   "issue": [{
@@ -505,7 +505,7 @@ Each Package Bundle is self-contained with all necessary dependencies.
 
 **Scenario**: A provider needs to collect documentation for a home oxygen therapy prior authorization.
 
-```
+```json
 {
   "resourceType": "Parameters",
   "parameter": [
@@ -536,7 +536,7 @@ Each Package Bundle is self-contained with all necessary dependencies.
 
 **Scenario**: A provider needs a specific version of a questionnaire for compliance.
 
-```
+```json
 {
   "resourceType": "Parameters",
   "parameter": [
@@ -559,7 +559,7 @@ Each Package Bundle is self-contained with all necessary dependencies.
 
 **Scenario**: A provider wants to check if any questionnaire resources have been updated since last retrieval.
 
-```
+```json
 {
   "resourceType": "Parameters",
   "parameter": [
@@ -586,7 +586,7 @@ Each Package Bundle is self-contained with all necessary dependencies.
 
 **Scenario**: A provider submits multiple service requests that may require different questionnaires.
 
-```
+```json
 {
   "resourceType": "Parameters",
   "parameter": [
@@ -711,7 +711,7 @@ Each Package Bundle is self-contained with all necessary dependencies.
 
 Always specify version numbers when requesting specific questionnaires:
 
-```
+```json
 {
   "name": "questionnaire",
   "valueCanonical": "http://example.org/fhir/Questionnaire/dme|2.1.0"
@@ -725,7 +725,7 @@ Always specify version numbers when requesting specific questionnaires:
 
 For frequently accessed questionnaires, use `changedSince` to minimize data transfer:
 
-```
+```json
 {
   "name": "changedSince",
   "valueDateTime": "2024-03-10T15:30:00Z"
@@ -739,7 +739,7 @@ For frequently accessed questionnaires, use `changedSince` to minimize data tran
 
 Provide comprehensive coverage details to ensure correct questionnaire selection:
 
-```
+```json
 {
   "name": "coverage",
   "resource": {

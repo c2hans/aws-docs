@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/example-esam-xml.
 
 This ESAM XML block generates two 30-second ad breaks, one at 10 seconds in and the other at 75 seconds in.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SignalProcessingNotification xmlns="urn:cablelabs:iptvservices:esam:xsd:signal:1" xmlns:sig="urn:cablelabs:md:xsd:signaling:3.0" xmlns:common="urn:cablelabs:iptvservices:esam:xsd:common:1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" acquisitionPointIdentity="ExampleESAM">
 

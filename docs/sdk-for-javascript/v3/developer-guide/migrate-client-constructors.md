@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
    All v3 requests use HTTPS by default. You only need to provide custom httpsAgent.
 
-  ```
+  ```javascript
   const { Agent } = require("https");
   const { Agent: HttpAgent } = require("http");
   const { NodeHttpHandler } = require("@smithy/node-http-handler");
@@ -54,7 +54,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
    If you are passing custom endpoint which uses http, then you need to provide httpAgent.
 
-  ```
+  ```javascript
   const { Agent } = require("http");
   const { NodeHttpHandler } = require("@smithy/node-http-handler");
 
@@ -70,7 +70,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
    If the client is running in browsers, a different set of options is available. You can find more in [v3 API reference for FetchHttpHandler](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-smithy-fetch-http-handler/).
 
-  ```
+  ```javascript
   const { FetchHttpHandler } = require("@smithy/fetch-http-handler");
   const dynamodbClient = new DynamoDBClient({
       requestHandler: new FetchHttpHandler({

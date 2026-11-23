@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Support#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get case details for a list of case ids, optionally with date filters.
     /// </summary>
@@ -103,7 +103,7 @@ For more information, see [Case management](https://docs.aws.amazon.com/awssuppo
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/support#code-examples).
 
-```
+```java
     public static void getOpenCase(SupportClient supportClient) {
         try {
             // Specify the start and end time.
@@ -139,7 +139,7 @@ For more information, see [Case management](https://docs.aws.amazon.com/awssuppo
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { DescribeCasesCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -167,7 +167,7 @@ export const main = async () => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/support#code-examples).
 
-```
+```kotlin
 suspend fun getOpenCase() {
     // Specify the start and end time.
     val now = Instant.now()
@@ -198,27 +198,27 @@ suspend fun getOpenCase() {
 **Tools for PowerShell V4**
 **Example 1: Returns the details of all support cases.**
 
-```
+```powershell
 Get-ASACase
 ```
 **Example 2: Returns the details of all support cases since the specified date and time.**
 
-```
+```powershell
 Get-ASACase -AfterTime "2013-09-10T03:06Z"
 ```
 **Example 3: Returns the details of the first 10 support cases, including those that have been resolved.**
 
-```
+```powershell
 Get-ASACase -MaxResult 10 -IncludeResolvedCases $true
 ```
 **Example 4: Returns the details of the single specified support case.**
 
-```
+```powershell
 Get-ASACase -CaseIdList "case-12345678910-2013-c4c1d2bf33c5cf47"
 ```
 **Example 5: Returns the details of specified support cases.**
 
-```
+```powershell
 Get-ASACase -CaseIdList @("case-12345678910-2013-c4c1d2bf33c5cf47", "case-18929034710-2011-c4fdeabf33c5cf47")
 ```
 +  For API details, see [DescribeCases](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -226,27 +226,27 @@ Get-ASACase -CaseIdList @("case-12345678910-2013-c4c1d2bf33c5cf47", "case-189290
 **Tools for PowerShell V5**
 **Example 1: Returns the details of all support cases.**
 
-```
+```powershell
 Get-ASACase
 ```
 **Example 2: Returns the details of all support cases since the specified date and time.**
 
-```
+```powershell
 Get-ASACase -AfterTime "2013-09-10T03:06Z"
 ```
 **Example 3: Returns the details of the first 10 support cases, including those that have been resolved.**
 
-```
+```powershell
 Get-ASACase -MaxResult 10 -IncludeResolvedCases $true
 ```
 **Example 4: Returns the details of the single specified support case.**
 
-```
+```powershell
 Get-ASACase -CaseIdList "case-12345678910-2013-c4c1d2bf33c5cf47"
 ```
 **Example 5: Returns the details of specified support cases.**
 
-```
+```powershell
 Get-ASACase -CaseIdList @("case-12345678910-2013-c4c1d2bf33c5cf47", "case-18929034710-2011-c4fdeabf33c5cf47")
 ```
 +  For API details, see [DescribeCases](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -257,7 +257,7 @@ Get-ASACase -CaseIdList @("case-12345678910-2013-c4c1d2bf33c5cf47", "case-189290
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/support#code-examples).
 
-```
+```python
 class SupportWrapper:
     """Encapsulates Support actions."""
 

@@ -52,7 +52,7 @@ Use the `SearchDICOMAllInstances` API to search for all DICOM instances across a
 ------
 #### [ curl ]
 
-   ```
+   ```sh
    curl --request GET \
      "https://dicom-medical-imaging.{{region}}.amazonaws.com/datastore/{{datastoreId}}/instances[?query]" \
      --aws-sigv4 'aws:amz:{{region}}:medical-imaging' \

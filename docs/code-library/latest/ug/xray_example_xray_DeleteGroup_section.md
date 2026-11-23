@@ -30,7 +30,7 @@ For more information, see [Configuring Sampling, Groups, and Encryption Settings
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/xray#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.xray.XRayClient;
 import software.amazon.awssdk.services.xray.model.DeleteGroupRequest;
@@ -93,7 +93,7 @@ public class DeleteGroup {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/xray#code-examples).
 
-```
+```kotlin
 suspend fun deleteSpecificGroup(groupNameVal: String) {
     val groupRequest =
         DeleteGroupRequest {

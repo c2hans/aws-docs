@@ -140,14 +140,14 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-ams-schedule-delete-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="management-ams-schedule-delete-ex-max"></a>
 
-```
+```json
 {
   "DocumentName" : "AWSManagedServices-DeleteScheduleOrPeriod",
   "Region" : "us-east-1",

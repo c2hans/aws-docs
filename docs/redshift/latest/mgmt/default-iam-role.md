@@ -279,7 +279,7 @@ aws redshift create-cluster \
 
 The following snippet is an example of the response.
 
-```
+```json
 {
     "Cluster": {
         "ClusterIdentifier": "mycluster",
@@ -316,7 +316,7 @@ aws redshift modify-cluster-iam-roles \
 
 The following snippet is an example of the response.
 
-```
+```json
 {
     "Cluster": {
         "ClusterIdentifier": "mycluster",
@@ -361,7 +361,7 @@ aws redshift modify-cluster-iam-roles \
 
 The following snippet is an example of the response.
 
-```
+```json
 {
     "Cluster": {
         "ClusterIdentifier": "mycluster",
@@ -406,7 +406,7 @@ aws redshift modify-cluster-iam-roles \
 
 The following snippet is an example of the response.
 
-```
+```json
 {
     "Cluster": {
         "ClusterIdentifier": "mycluster",
@@ -444,7 +444,7 @@ aws redshift modify-cluster-iam-roles \
 
 The following snippet is an example of the response.
 
-```
+```json
 {
     "Cluster": {
         "ClusterIdentifier": "mycluster",
@@ -489,7 +489,7 @@ aws redshift restore-from-cluster-snapshot \
 
 The following snippet is an example of the response.
 
-```
+```json
 {
     "Cluster": {
         "ClusterIdentifier": "mycluster-clone",

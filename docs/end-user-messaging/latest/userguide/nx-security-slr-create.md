@@ -8,6 +8,6 @@ You can use the IAM console to create a service-linked role with the metrics use
 
 You can create the service-linked role with the following AWS CLI command:
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name social-messaging.amazonaws.com
 ```

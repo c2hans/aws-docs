@@ -11,7 +11,7 @@ After connecting to your MLflow Tracking Server, you can use the MLflow SDK to l
 
 Use `mlflow.log_metric` within an MLflow training run to track metrics. For more information about logging metrics using MLflow, see `[mlflow.log\_metric](https://mlflow.org/docs/2.13.2/python_api/mlflow.html#mlflow.log_metric)`.
 
-```
+```python
 with mlflow.start_run():
     mlflow.log_metric({{"foo"}}, {{1}})
 
@@ -20,7 +20,7 @@ print(mlflow.search_runs())
 
 This script should create an experiment run and print out an output similar to the following:
 
-```
+```python
 run_id experiment_id status artifact_uri ... tags.mlflow.source.name tags.mlflow.user tags.mlflow.source.type tags.mlflow.runName
 0 607eb5c558c148dea176d8929bd44869 0 FINISHED s3://dddd/0/607eb5c558c148dea176d8929bd44869/a... ... file.py user-id LOCAL experiment-code-name
 ```
@@ -41,7 +41,7 @@ The following example requires your environment to have `s3:PutObject` permissio
 
 The following example takes you through a basic model training workflow using SKLearn and shows you how to track that model in an MLflow experiment run. This example logs parameters, metrics, and model artifacts.
 
-```
+```python
 import mlflow
 
 from mlflow.models import infer_signature

@@ -150,7 +150,7 @@ Use the [copy-volumes](https://awscli.amazonaws.com/v2/documentation/api/latest/
 
 The following example creates a volume copy of `vol-01234567890abcdef` with the `gp3` volume type, a size of `100` GiB, and throughput of `250` MiB/s.
 
-```
+```bash
 aws ec2 copy-volumes \
 --source-volume-id {{vol-01234567890abcdef}} \
 --volume-type {{gp3}} \
@@ -185,7 +185,7 @@ Use the [Copy-EC2Volume](https://docs.aws.amazon.com/powershell/latest/reference
 
 The following example creates a volume copy of `vol-01234567890abcdef` with the `gp3` volume type, a size of `100` GiB, and throughput of `250` MiB/s.
 
-```
+```powershell
 Copy-EC2Volume `
 -SourceVolumeId {{vol-01234567890abcdef}} `
 -VolumeType {{gp3}} `
@@ -196,7 +196,7 @@ Copy-EC2Volume `
 **To encrypt an unencrypted volume during copy**
 Use the Copy-EC2Volume cmdlet with the `-Encrypted` and `-KmsKeyId` parameters.
 
-```
+```powershell
 Copy-EC2Volume `
 -SourceVolumeId {{vol-01234567890abcdef}} `
 -Encrypted $true `
@@ -206,7 +206,7 @@ Copy-EC2Volume `
 **To re-encrypt with a different customer managed key**
 Use the Copy-EC2Volume cmdlet with the `-KmsKeyId` parameter to specify a different key.
 
-```
+```powershell
 Copy-EC2Volume `
 -SourceVolumeId {{vol-01234567890abcdef}} `
 -KmsKeyId {{"arn:aws:kms:us-east-1:222222222222:key/abcd1234-a123-456a-a12b-a123b4cd56ef"}}

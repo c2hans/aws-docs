@@ -40,7 +40,7 @@ We recommend using the default encryption key (`DefaultEncryptionKey`). If you u
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

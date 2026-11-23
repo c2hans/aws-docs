@@ -34,7 +34,7 @@ In this step, you create an IAM policy that provides AWS DMS with access to Amaz
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

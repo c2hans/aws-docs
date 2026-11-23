@@ -64,7 +64,7 @@ For TBAC on instances, you can define IAM policies based on instance tags and as
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -91,7 +91,7 @@ For TBAC on instances, you can define IAM policies based on instance tags and as
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

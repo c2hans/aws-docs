@@ -22,6 +22,11 @@ Configuration for forwarding a partner event source's events through a managed p
 Type: [PartnerEventsSourceConfiguration](API_PartnerEventsSourceConfiguration.md) object
 Required: No
 
+ ** WebhookEventsConfiguration **   <a name="eventbridgev2-Type-EventSourceConfiguration-WebhookEventsConfiguration"></a>
+Configuration for receiving events that a third-party provider sends to an HTTPS webhook URL.
+Type: [WebhookEventsSourceConfiguration](API_WebhookEventsSourceConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_EventSourceConfiguration_SeeAlso"></a>
 

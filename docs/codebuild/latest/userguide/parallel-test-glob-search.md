@@ -11,7 +11,7 @@ AWS CodeBuild provides a built-in CLI tool called `codebuild-glob-search` that a
 
 The `codebuild-glob-search` CLI has the following usage syntax:
 
-```
+```json
 codebuild-glob-search {{<glob_pattern1>}} [{{<glob_pattern2>}} ...]
 ```
 + `{{<glob_pattern1>}}`, `{{<glob_pattern2>}}`, etc.: One or more glob patterns to match against the files in your working directory.
@@ -21,7 +21,7 @@ codebuild-glob-search {{<glob_pattern1>}} [{{<glob_pattern2>}} ...]
 **Note**
 Ensure that the glob string has quotes. To check the results of pattern-matching, use the `echo` command.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -45,7 +45,7 @@ Note that directories found due to any given pattern will be excluded from the s
 
 If you want to search only for files inside the tests directory and its subdirectories with a `.js` extension, you can use the following command with the `codebuild-glob-search` CLI:
 
-```
+```json
 codebuild-glob-search '**/__tests__/*.js'
 ```
 

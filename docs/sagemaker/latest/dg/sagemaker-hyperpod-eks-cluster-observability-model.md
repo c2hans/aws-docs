@@ -169,7 +169,7 @@ Data scientists need to set up the training script and docker image to emit metr
 
 1. Add the following lines at the beginning of your training script.
 
-   ```
+   ```py
    import mlflow
 
    # Set the Tracking Server URI using the ARN of the Tracking Server you created
@@ -184,7 +184,7 @@ Make sure that you add installation of mlflow and sagemaker-mlflow packages in t
 
 1. Add a service account in the training job Pods to give them access to `hyperpod-mlflow-role`. This allows Pods to call MLflow APIs. Run the following SageMaker HyperPod CLI job submission template. Create this with file name `mlflow-test.yaml`.
 
-   ```
+   ```yaml
    defaults:
     - override hydra/job_logging: stdout
 

@@ -88,7 +88,7 @@ https://sns.us-west-2.amazonaws.com/?Action=CreatePlatformEndpoint
 #### Sample Response
 <a name="API_CreatePlatformEndpoint_Example_1_Response"></a>
 
-```
+```xml
 <CreatePlatformEndpointResponse xmlns="https://sns.amazonaws.com/doc/2010-03-31/">
     <CreatePlatformEndpointResult>
         <EndpointArn>arn:aws:sns:us-west-2:123456789012:endpoint/GCM/gcmpushapp/5e3e9847-3183-3f18-a7e8-671c3a57d4b3</EndpointArn>

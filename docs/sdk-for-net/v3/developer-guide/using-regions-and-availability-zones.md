@@ -34,7 +34,7 @@ Programming elements:
 
   Class [Region](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/EC2/TRegion.html)
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.EC2;

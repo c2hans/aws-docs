@@ -65,13 +65,13 @@ To create an organization event data store run the [create-event-data-store](htt
 
 The following example AWS CLI `create-event-data-store` command creates an organization event data store that collects all management events. Because CloudTrail logs management events by default, you don't need to specify advanced event selectors if your event data store is logging all management events and is not collecting any data events.
 
-```
+```JSON
 aws cloudtrail create-event-data-store --name org-management-eds --organization-enabled
 ```
 
 The following is an example response.
 
-```
+```JSON
 {
     "EventDataStoreArn": "arn:aws:cloudtrail:us-east-1:123456789012:eventdatastore/EXAMPLE6-d493-4914-9182-e52a7934b207",
     "Name": "org-management-eds",
@@ -101,7 +101,7 @@ The following is an example response.
 
 The next example AWS CLI `create-event-data-store` command creates an organization event data store named `config-items-org-eds` that collects AWS Config configuration items. To collect configuration items, specify that the `eventCategory` field equals `ConfigurationItem` in the advanced event selectors.
 
-```
+```JSON
 aws cloudtrail create-event-data-store --name config-items-org-eds \
 --organization-enabled \
 --advanced-event-selectors '[

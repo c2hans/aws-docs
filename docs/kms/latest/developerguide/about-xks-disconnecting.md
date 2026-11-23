@@ -52,13 +52,13 @@ The examples in this section use the [AWS Command Line Interface (AWS CLI)](http
 
 This example disconnects an external key store with VPC endpoint service connectivity. Before running this example, replace the example custom key store ID with a valid one.
 
-```
+```bash
 $ aws kms disconnect-custom-key-store --custom-key-store-id {{cks-1234567890abcdef0}}
 ```
 
 To verify that the external key store is disconnected, use the [DescribeCustomKeyStores](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeCustomKeyStores.html) operation. By default, this operation returns all custom keys stores in your account and Region. But you can use either the `CustomKeyStoreId` and `CustomKeyStoreName` parameter (but not both) to limit the response to particular custom key stores. The `ConnectionState` value of `DISCONNECTED` indicates that this example external key store is no longer connected to its external key store proxy.
 
-```
+```bash
 $ aws kms describe-custom-key-stores --custom-key-store-name {{ExampleXksVpc}}
 {
     "CustomKeyStores": [

@@ -41,11 +41,11 @@ The name of the template.
 
 The following is an example of the SHOW TEMPLATE output for the template `test_template`:
 
-```
+```sql
 CREATE TEMPLATE test_template FOR COPY AS NOLOAD DELIMITER ',' ENCODING UTF16 ENCRYPTED;
 ```
 
-```
+```sql
 SHOW TEMPLATE test_template;
 
 CREATE OR REPLACE TEMPLATE dev.public.test_template FOR COPY AS ENCRYPTED NOLOAD ENCODING UTF16 DELIMITER ',';
@@ -53,13 +53,13 @@ CREATE OR REPLACE TEMPLATE dev.public.test_template FOR COPY AS ENCRYPTED NOLOAD
 
 The following example creates template `demo_template` in schema `demo_schema`.
 
-```
+```sql
 CREATE OR REPLACE TEMPLATE demo_schema.demo_template FOR COPY AS
 ACCEPTANYDATE ACCEPTINVCHARS DATEFORMAT 'DD-MM-YYYY' EXPLICIT_IDS ROUNDEC
 TIMEFORMAT  AS 'DD.MM.YYYY HH:MI:SS' TRUNCATECOLUMNS NULL  AS 'null_string';
 ```
 
-```
+```sql
 SHOW TEMPLATE demo_schema.demo_template;
 
 CREATE OR REPLACE TEMPLATE dev.demo_schema.demo_template FOR COPY AS TRUNCATECOLUMNS NULL 'null_string' EXPLICIT_IDS TIMEFORMAT 'DD.MM.YYYY HH:MI:SS' ACCEPTANYDATE ROUNDEC ACCEPTINVCHARS DATEFORMAT 'DD-MM-YYYY';

@@ -40,7 +40,7 @@ As a best practice for security purposes, replace the {{\*}} with specific agent
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ If you encrypt your agent with a customer-managed KMS key, refer to [Encryption 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -172,7 +172,7 @@ If you associate a [Provisioned Throughput](prov-throughput.md) with an alias of
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -203,7 +203,7 @@ If you enable [multi-agent collaboration](agents-multi-agent-collaboration.md), 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -234,7 +234,7 @@ If you associate a [guardrail](guardrails.md) with your agent, attach the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -262,7 +262,7 @@ If you enable [Enable code interpretation in Amazon Bedrock](agents-enable-code-
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -295,7 +295,7 @@ Follow the steps at [Using resource-based policies for Lambda](https://docs.aws.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

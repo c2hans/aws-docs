@@ -33,7 +33,7 @@ When you make a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReferen
 
 The following JSON object shows the minimal fields required in the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object to set the maximum number of results to return:
 
-```
+```json
 "retrievalConfiguration": {
     "vectorSearchConfiguration": {
         "numberOfResults": number
@@ -70,7 +70,7 @@ When you make a [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReferen
 
 The following JSON object shows the minimal fields required in the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html) object to set search type configurations:
 
-```
+```json
 "retrievalConfiguration": {
     "vectorSearchConfiguration": {
         "overrideSearchType": "HYBRID | SEMANTIC"
@@ -190,7 +190,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Use one filtering operator (see the **Filtering operators** table above).
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "vectorSearchConfiguration": {
            "filter": {
@@ -205,7 +205,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Use a logical operator (see the **Logical operators** table above) to combine up to 5.
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "vectorSearchConfiguration": {
            "filter": {
@@ -227,7 +227,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Use a logical operator to combine up to 5 filtering operators into a filter group, and a second logical operator to combine that filter group with another filtering operator.
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "vectorSearchConfiguration": {
            "filter": {
@@ -255,7 +255,7 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 1. Combine up to 5 filter groups by embedding them within another logical operator. You can create one level of embedding.
 
-   ```
+   ```json
    "retrievalConfiguration": {
        "vectorSearchConfiguration": {
            "filter": {
@@ -327,7 +327,7 @@ The `implicitFilterConfiguration` is specified in the `vectorSearchConfiguration
 
 The following shows an example of metadata schemas that you can add to the array in `metadataAttributes`.
 
-```
+```json
 [
     {
         "key": "company",
@@ -387,7 +387,7 @@ When you make a [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest
 
 The following JSON object shows the minimal fields required in the [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) to set the `guardrailConfiguration`:
 
-```
+```json
 "generationConfiguration": {
     "guardrailConfiguration": {
         "guardrailId": "{{string}}",
@@ -555,7 +555,7 @@ When you make a [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest
 
 The following JSON object shows the minimal fields required in the [GenerationConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerationConfiguration.html) object to set the maximum number of retrieved results to return:
 
-```
+```json
 "generationConfiguration": {
     "promptTemplate": {
         "textPromptTemplate": "string"

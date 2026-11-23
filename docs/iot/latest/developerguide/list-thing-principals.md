@@ -13,7 +13,7 @@ $ aws iot list-thing-principals \
 
 The output can look like the following.
 
-```
+```JSON
 {
     "principals": [
          "arn:aws:iot:{{us-east-1}}:{{123456789012}}:cert/{{2e1eb273792174ec2b9bf4e9b37e6c6c692345499506002a35159767055278e8}}",

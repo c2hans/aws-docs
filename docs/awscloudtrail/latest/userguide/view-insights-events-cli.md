@@ -74,13 +74,13 @@ aws cloudtrail lookup-events help
 
 To see the 50 latest Insights events, type the following command.
 
-```
+```bash
 aws cloudtrail lookup-events --event-category insight
 ```
 
 A returned event looks similar to the following example,
 
-```
+```JSON
 {
     "NextToken": "kbOt5LlZe++mErCebpy2TgaMgmDvF1kYGFcH64JSjIbZFjsuvrSqg66b5YGssKutDYIyII4lrP4IDbeQdiObkp9YAlju3oXd12juEXAMPLE=",
     "Events": [
@@ -199,13 +199,13 @@ For an explanation of the lookup-related fields in the output, see [Lookup outpu
 
 To see the 50 latest Insights events, type the following command.
 
-```
+```bash
 aws cloudtrail list-insights-data --data-type InsightsEvents --insight-source arn:aws:cloudtrail:us-east-2:123456789012:trail/{{TrailName}}
 ```
 
 A returned event looks similar to the following example,
 
-```
+```JSON
     {
     "NextToken": "kbOt5LlZe++mErCebpy2TgaMgmDvF1kYGFcH64JSjIbZFjsuvrSqg66b5YGssKutDYIyII4lrP4IDbeQdiObkp9YAlju3oXd12juEXAMPLE=",
     "Events": [

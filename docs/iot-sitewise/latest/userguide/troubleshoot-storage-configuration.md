@@ -30,7 +30,7 @@ Use the following information to troubleshoot and resolve issues with the storag
 
 ****
 
-  ```
+  ```json
   {
         "Version":"2012-10-17",
         "Statement": [

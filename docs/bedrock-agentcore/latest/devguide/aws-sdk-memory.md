@@ -14,7 +14,7 @@ pip install boto3
 
  **Add short-term memory**
 
-```
+```python
 import boto3
 from datetime import datetime
 
@@ -70,7 +70,7 @@ event = data_client.create_event(
 
  **Add long-term memory with strategies**
 
-```
+```python
 import boto3
 import time
 from datetime import datetime

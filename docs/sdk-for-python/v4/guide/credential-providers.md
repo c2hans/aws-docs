@@ -27,7 +27,7 @@ Synchronous and asynchronous clients support the same credential sources.
 
 To use the default chain, resolve the configuration without setting the `aws_credentials_identity_resolver` field or any of the static credential fields:
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 
 def create_client() -> BedrockRuntimeClient:
@@ -55,7 +55,7 @@ Each network-based source ships in a separate package:
 
 Install the package for each source that your application uses. Installing the package is all that the default chain needs. You don't need to change your code.
 
-```
+```bash
 python -m pip install aws-credentials-sts    # Assume role and web identity
 python -m pip install aws-credentials-http   # Container credentials
 python -m pip install aws-credentials-imds   # EC2 Instance Metadata Service
@@ -127,14 +127,14 @@ The following example uses `EnvironmentCredentialsResolver`, which reads credent
 
  **Imports**
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 from smithy_aws_core.identity import EnvironmentCredentialsResolver
 ```
 
  **Code**
 
-```
+```python
 def create_client() -> BedrockRuntimeClient:
     config = BedrockRuntimeConfig.resolve(
         region="us-east-1",
@@ -170,13 +170,13 @@ Don't hardcode credentials in source code. Static credentials are appropriate wh
 
  **Imports**
 
-```
+```python
 from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
 ```
 
  **Code**
 
-```
+```python
 def create_client(
     access_key_id: str,
     secret_access_key: str,

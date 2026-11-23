@@ -11,7 +11,7 @@ This operation can provide a complete list of all of the pools in your AWS End U
 **To retrieve a list of all of your pools using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-pools
   ```
 
@@ -20,7 +20,7 @@ To find information about specific pools, use the `PoolId` parameter.
 **To get information about specific pools using the AWS CLI**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 describe-pools \
   > --pool-id {{poolId}}
   ```
@@ -38,7 +38,7 @@ To see a filtered list of pools, use the `Filters` parameter. You can use the fo
 
 For example, if you want to view a list of pools for transactional messages that support two-way messaging, enter the following command at the command line:
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 describe-pools \
 > --filters Name=message-type,Values=TRANSACTIONAL \
 > --filters Name=two-way-enabled,Values=true

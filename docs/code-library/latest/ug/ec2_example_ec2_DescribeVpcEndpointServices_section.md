@@ -147,7 +147,7 @@ For more information, see [View available AWS service names](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example describes EC2 VPC endpoint service with the given filter, in this case com.amazonaws.eu-west-1.ecs. Further, it also expands the ServiceDetails property and displays the details**
 
-```
+```powershell
 Get-EC2VpcEndpointService -Region eu-west-1 -MaxResult 5 -Filter @{Name="service-name";Values="com.amazonaws.eu-west-1.ecs"} | Select-Object -ExpandProperty ServiceDetails
 ```
 **Output:**
@@ -164,7 +164,7 @@ VpcEndpointPolicySupported : False
 ```
 **Example 2: This example retrieves all the EC2 VPC Endpoint services and returns the ServiceNames matching "ssm"**
 
-```
+```powershell
 Get-EC2VpcEndpointService -Region eu-west-1 | Select-Object -ExpandProperty Servicenames | Where-Object { -match "ssm"}
 ```
 **Output:**
@@ -178,7 +178,7 @@ com.amazonaws.eu-west-1.ssmmessages
 **Tools for PowerShell V5**
 **Example 1: This example describes EC2 VPC endpoint service with the given filter, in this case com.amazonaws.eu-west-1.ecs. Further, it also expands the ServiceDetails property and displays the details**
 
-```
+```powershell
 Get-EC2VpcEndpointService -Region eu-west-1 -MaxResult 5 -Filter @{Name="service-name";Values="com.amazonaws.eu-west-1.ecs"} | Select-Object -ExpandProperty ServiceDetails
 ```
 **Output:**
@@ -195,7 +195,7 @@ VpcEndpointPolicySupported : False
 ```
 **Example 2: This example retrieves all the EC2 VPC Endpoint services and returns the ServiceNames matching "ssm"**
 
-```
+```powershell
 Get-EC2VpcEndpointService -Region eu-west-1 | Select-Object -ExpandProperty Servicenames | Where-Object { -match "ssm"}
 ```
 **Output:**

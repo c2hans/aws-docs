@@ -23,7 +23,7 @@ When you install the AWS SDK to these standard locations, CMake automatically fi
 (for version 1.8 and earlier) The location of dependencies: `aws-c-event-stream`, `aws-c-common`, `aws-checksums`
 To set a custom installation path:
 
-```
+```bash
 cmake -DCMAKE_PREFIX_PATH=/path/to/your/aws-sdk-installation /path/to/project/you/are/building
 ```
 If you don't set `CMAKE_PREFIX_PATH` for a custom installation, your build will fail with errors like "Could not find AWSSDK" when CMake tries to process `find_package(AWSSDK)` in your `CMakeLists.txt`.
@@ -40,7 +40,7 @@ To complete this example in Visual Studio: choose **Create New Project** and the
 
 1. Within that folder, add a `hello_s3.cpp` file that includes the following code, which reports the Amazon S3 buckets you own.
 
-   ```
+   ```cpp
    #include <aws/core/Aws.h>
    #include <aws/s3/S3Client.h>
    #include <iostream>
@@ -150,13 +150,13 @@ We recommend building the application following standard practices for your IDE.
 
 1. Create a directory where ** `cmake` ** will build your application.
 
-   ```
+   ```sh
    mkdir my_project_build
    ```
 
 1. Change to the build directory and run ** `cmake` ** using the path to your project’s source directory.
 
-   ```
+   ```sh
    cd my_project_build
    cmake ../
    ```
@@ -179,7 +179,7 @@ Remember to sign in\! If you are using IAM Identity Center to authenticate, reme
 
 1. Run the program using the name of the executable.
 
-   ```
+   ```sh
    hello_s3
    ```
 

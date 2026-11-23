@@ -70,7 +70,7 @@ If you don't see the **Manage New IAM Actions** section, this means your account
 **Example: Before and after IAM policy**
 The following IAM policy has the old `aws-portal:ViewPaymentMethods` action.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ The following IAM policy has the old `aws-portal:ViewPaymentMethods` action.
 ```
 After you copy the updated policy, the following example has the new `Sid` block with the fine-grained actions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

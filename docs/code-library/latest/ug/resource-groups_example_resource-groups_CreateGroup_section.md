@@ -81,7 +81,7 @@ For more information, see [Create Groups](https://docs.aws.amazon.com/ARG/latest
 **Tools for PowerShell V4**
 **Example 1: This example creates a new tag-based AWS Resource Groups resource group named TestPowerShellGroup. The group includes Amazon EC2 instances in the current region that are tagged with the tag key "Name", and tag value "test2". The command returns the query and type of group, and the results of the operation.**
 
-```
+```powershell
 $ResourceQuery = New-Object -TypeName Amazon.ResourceGroups.Model.ResourceQuery
 $ResourceQuery.Type = "TAG_FILTERS_1_0"
 $ResourceQuery.Query = '{"ResourceTypeFilters":["AWS::EC2::Instance"],"TagFilters":[{"Key":"Name","Values":["test2"]}]}'
@@ -109,7 +109,7 @@ HttpStatusCode   : OK
 **Tools for PowerShell V5**
 **Example 1: This example creates a new tag-based AWS Resource Groups resource group named TestPowerShellGroup. The group includes Amazon EC2 instances in the current region that are tagged with the tag key "Name", and tag value "test2". The command returns the query and type of group, and the results of the operation.**
 
-```
+```powershell
 $ResourceQuery = New-Object -TypeName Amazon.ResourceGroups.Model.ResourceQuery
 $ResourceQuery.Type = "TAG_FILTERS_1_0"
 $ResourceQuery.Query = '{"ResourceTypeFilters":["AWS::EC2::Instance"],"TagFilters":[{"Key":"Name","Values":["test2"]}]}'

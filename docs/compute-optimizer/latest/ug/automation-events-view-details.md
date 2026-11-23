@@ -10,7 +10,7 @@ This **Automation events** page displays automation events initiated by Compute 
 
 1. Open the Compute Optimizer console at [https://console.aws.amazon.com/compute-optimizer/](https://console.aws.amazon.com/compute-optimizer/).
 
-1. In the navigation pane, choose **Automation rules** under the **Automation** section.
+1. In the navigation pane, choose **Automation events** under the **Automation** section.
 
 1. You can perform the following actions on the **Automation events **page:
 
@@ -18,6 +18,6 @@ This **Automation events** page displays automation events initiated by Compute 
 
    - View monthly summary of automation events by status.
 
-   - (Optional) Filter by date range, account ID (management account only), event status, event type, AWS Region, or Resource type.
+   - (Optional) Filter by date range, account ID or organizational unit (OU) (management account or delegated administrator only), event status, event type, AWS Region, or Resource type. A filter for an OU includes accounts in the OU and in all of its child OUs.
 
    - Review history of automation events, including details on event status, estimated savings, created time, and completed time.

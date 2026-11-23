@@ -254,12 +254,12 @@ Do not include confidential or sensitive information in this field. This field m
 **Note**
 If you use AWS CLI version 1.0, run the following command before specifying a parameter with an HTTP or HTTPS value, such as the `XksProxyUriEndpoint` parameter.
 
-```
+```bash
 aws configure set cli_follow_urlparam false
 ```
 Otherwise, AWS CLI version 1.0 replaces the parameter value with the content found at that URI address, causing the following error:
 
-```
+```bash
 Error parsing parameter '--xks-proxy-uri-endpoint': Unable to retrieve
 https:// : received non 200 status code of 404
 ```
@@ -268,7 +268,7 @@ The following examples use fictitious values. Before running the command, replac
 
 Create an external key store with public endpoint connectivity.
 
-```
+```bash
 $ aws kms create-custom-key-store
         --custom-key-store-name {{ExampleExternalKeyStorePublic}} \
         --custom-key-store-type EXTERNAL_KEY_STORE \
@@ -280,7 +280,7 @@ $ aws kms create-custom-key-store
 
 Create an external key store with VPC endpoint service connectivity.
 
-```
+```bash
 $ aws kms create-custom-key-store
         --custom-key-store-name {{ExampleExternalKeyStoreVPC}} \
         --custom-key-store-type EXTERNAL_KEY_STORE \

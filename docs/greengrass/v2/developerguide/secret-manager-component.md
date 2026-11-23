@@ -55,7 +55,7 @@ This component has the following requirements:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ This component has the following requirements:
 
 ------
 
-  ```
+  ```json
   ```
 **Note**
 If you use a customer-managed AWS Key Management Service key to encrypt secrets, the device role must also allow the `kms:Decrypt` action.
@@ -282,7 +282,7 @@ This component provides the following configuration parameters that you can cust
 `periodicRefreshIntervalMin` (optional)
 The interval in minutes where this component syncs the configured secrets on the core device with the latest secret values from the AWS Secrets Manager service. If this interval is not configured, secret manager will not refresh the configured secrets periodically.
 
-```
+```json
 {
   "cloudSecrets": [
     {
@@ -307,7 +307,7 @@ Each label must be a string.
 
 **Example: Configuration merge update**
 
-```
+```json
 {
   "cloudSecrets": [
     {
@@ -344,14 +344,14 @@ This component uses the same log file as the [Greengrass nucleus](greengrass-nuc
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/greengrass.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\greengrass.log -Tail 10 -Wait
   ```
 

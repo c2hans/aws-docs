@@ -58,7 +58,7 @@ To receive feedback on your registration using the AWS End User Messaging consol
 
 To receive feedback on your registration using the AWS CLI, use the following command:
 
-```
+```shell
 $ aws pinpoint-sms-voice-v2 --region us-east-1 submit-registration-version \
   --registration-id {{<registration-XXXXXXXXX>}} \
   --aws-review

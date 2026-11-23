@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.KeyManagementService;
@@ -387,7 +387,7 @@ For more information, see [External key stores](https://docs.aws.amazon.com/kms/
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
 
-```
+```java
     /**
      * Creates a new symmetric encryption key asynchronously.
      *
@@ -417,7 +417,7 @@ For more information, see [External key stores](https://docs.aws.amazon.com/kms/
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
 
-```
+```kotlin
 suspend fun createKey(keyDesc: String?): String? {
     val request =
         CreateKeyRequest {
@@ -441,7 +441,7 @@ suspend fun createKey(keyDesc: String?): String? {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
 
-```
+```php
     /***
      * @param string $keySpec
      * @param string $keyUsage
@@ -475,7 +475,7 @@ suspend fun createKey(keyDesc: String?): String? {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
 
-```
+```python
 class KeyManager:
     def __init__(self, kms_client):
         self.kms_client = kms_client
@@ -517,7 +517,7 @@ class KeyManager:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/kms#code-examples).
 
-```
+```ruby
 require 'aws-sdk-kms' # v2: require 'aws-sdk'
 
 # Create a AWS KMS key.
@@ -547,7 +547,7 @@ puts resp.key_metadata.key_id
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/kms#code-examples).
 
-```
+```rust
 async fn make_key(client: &Client) -> Result<(), Error> {
     let resp = client.create_key().send().await?;
 
@@ -566,7 +566,7 @@ async fn make_key(client: &Client) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
 
-```
+```sap-abap
     TRY.
         " iv_description = 'Created by the AWS SDK for SAP ABAP'
         oo_result = lo_kms->createkey( iv_description = iv_description ).

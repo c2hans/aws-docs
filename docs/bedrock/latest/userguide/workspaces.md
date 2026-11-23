@@ -77,7 +77,7 @@ export BEDROCK_REGION="us-east-1"
 
 Workspaces are created using the Projects API. Create a workspace (project) with a name and tags for cost monitoring:
 
-```
+```bash
 curl -X POST "https://bedrock-mantle.$BEDROCK_REGION.api.aws/v1/organization/projects" \
   -H "Authorization: Bearer $BEDROCK_API_KEY" \
   -H "Content-Type: application/json" \
@@ -94,7 +94,7 @@ curl -X POST "https://bedrock-mantle.$BEDROCK_REGION.api.aws/v1/organization/pro
 
 Response:
 
-```
+```json
 {
   "arn": "arn:aws:bedrock-mantle:us-east-1:123456789012:project/proj_abc123def456",
   "created_at": 1772135628,
@@ -121,7 +121,7 @@ To associate your Messages API requests with a workspace, include the `anthropic
 ------
 #### [ curl ]
 
-```
+```bash
 curl -X POST "https://bedrock-mantle.$BEDROCK_REGION.api.aws/anthropic/v1/messages" \
   -H "x-api-key: $BEDROCK_API_KEY" \
   -H "anthropic-version: 2023-06-01" \
@@ -139,7 +139,7 @@ curl -X POST "https://bedrock-mantle.$BEDROCK_REGION.api.aws/anthropic/v1/messag
 ------
 #### [ Python (Anthropic SDK) ]
 
-```
+```python
 import anthropic
 
 client = anthropic.Anthropic(
@@ -168,7 +168,7 @@ All inference requests made with the same workspace ID are grouped together, ena
 
 List all workspaces (projects) to verify your workspace was created successfully:
 
-```
+```bash
 curl -X GET "https://bedrock-mantle.$BEDROCK_REGION.api.aws/v1/organization/projects" \
   -H "Authorization: Bearer $BEDROCK_API_KEY"
 ```

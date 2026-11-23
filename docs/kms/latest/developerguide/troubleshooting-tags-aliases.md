@@ -18,7 +18,7 @@ For example, suppose that a principal has access to a KMS key based on the `Proj
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -58,7 +58,7 @@ For example, the following IAM policy statement uses the [kms:ResourceAliases](c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

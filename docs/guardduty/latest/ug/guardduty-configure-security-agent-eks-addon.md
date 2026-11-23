@@ -40,7 +40,7 @@ The `disableCpuLimits` parameter is available for GuardDuty security agent versi
 When you set `disableCpuLimits` to `true`, the security agent pod does not enforce a CPU limit. Other resource settings are unaffected.
 To disable CPU limits, use the following configuration:
 
-```
+```JSON
 {"resources":{"disableCpuLimits":true}}
 ```
 

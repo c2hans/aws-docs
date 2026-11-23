@@ -9,7 +9,7 @@ A Channel assumes a service execution role to deliver data. The role needs a tru
 ## Trust policy
 <a name="msk-data-delivery-s3-iam-trust-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -38,7 +38,7 @@ Use the `aws:SourceArn` and `aws:SourceAccount` conditions to prevent confused d
 ## Permission policy — Amazon S3 general purpose buckets
 <a name="msk-data-delivery-s3-iam-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

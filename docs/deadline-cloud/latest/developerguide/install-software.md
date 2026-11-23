@@ -34,7 +34,7 @@ To install a digital content creation (DCC) adaptor on a customer-managed fleet
 
 1. Install the adaptor package for your DCC application. The following example installs the Maya adaptor:
 
-   ```
+   ```screen
    pip install deadline-cloud-for-maya
    ```
 

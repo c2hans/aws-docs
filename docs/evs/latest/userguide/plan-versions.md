@@ -53,7 +53,7 @@ The versions and builds available to your account can differ from the table, for
 
 In the following command, replace `<region-code>` with the Region where you plan to deploy.
 
-```
+```bash
 aws evs get-versions --region <region-code>
 ```
 

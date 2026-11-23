@@ -37,6 +37,17 @@ It takes time for AWS PCS to create the cluster. The cluster is in a `Creating` 
             "parameterValue": "{{string}}"
          }
       ],
+      "jobSubmitPlugins": [
+         {
+            "name": "{{string}}",
+            "scriptSource": {
+               "checksum": "{{string}}",
+               "s3VersionId": "{{string}}",
+               "scriptLocation": "{{string}}"
+            },
+            "type": "{{string}}"
+         }
+      ],
       "scaleDownIdleTimeInSeconds": {{number}},
       "slurmCustomSettings": [
          {
@@ -161,6 +172,17 @@ Required: No
             {
                "parameterName": "string",
                "parameterValue": "string"
+            }
+         ],
+         "jobSubmitPlugins": [
+            {
+               "name": "string",
+               "scriptSource": {
+                  "checksum": "string",
+                  "s3VersionId": "string",
+                  "scriptLocation": "string"
+               },
+               "type": "string"
             }
          ],
          "jwtAuth": {

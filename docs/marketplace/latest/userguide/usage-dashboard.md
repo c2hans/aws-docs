@@ -76,6 +76,9 @@ This section of the dashboard provides filters to refine records based on the us
 
 This section of the dashboard displays a key performance indicator (KPI) to visualize metrics related to consumption: estimated usage units, customers with usage, and products with usage. You can update the date range by updating the usage date criteria in the filters section. Note that the key metrics display data for all unit types.
 
+**Note**
+For Agentic Commerce products, the quantity for the `agentic_commerce_default` dimension is in dollars: one unit equals USD $1.00 of quoted charges. Don't add or compare these dollar-based units directly with usage units of other types.
+
 ## Section 4: Trends
 <a name="section-3-metrics"></a>
 
@@ -126,7 +129,7 @@ For more information about filtering, see [Exporting data from visuals](https://
 | Dimension key | The resource type associated with the product usage. Dimension keys apply for SaaS and server usage-based products. |
 | Region | The region where the buyer deployed Amazon EC2 instances. |
 | Estimated usage | The quantity of the usage recorded for the product. |
-| Usage unit types | The unit type for which the usage is recorded. |
+| Usage unit types | The unit type for which the usage is recorded. For Agentic Commerce products, the quantity for the agentic\_commerce\_default dimension is in dollars: one unit equals USD $1.00 of quoted charges. |
 | Usage rate per unit | The usage rate per unit. |
 | Charge item description | The description of the charge. |
 | Estimated revenue | The revenue from the product usage. Revenue should be considered estimated until billing is finalized at the end of the month. Usage-based invoices are presented to buyers on the second or third of the following month for the previous month's usage. |

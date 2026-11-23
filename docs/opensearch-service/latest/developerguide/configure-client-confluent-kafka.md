@@ -31,7 +31,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -68,7 +68,7 @@ The following permission is needed to manage the network interface:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -122,7 +122,7 @@ The following is permission needed to read secrets from AWS Secrets Manager serv
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -140,7 +140,7 @@ The following is permission needed to read secrets from AWS Secrets Manager serv
 
 The following permissions are needed to write to an Amazon OpenSearch Service domain:
 
-```
+```YAML
 {
   "Statement": [
     {
@@ -164,7 +164,7 @@ You can specify multiple OpenSearch Service domains as destinations for your dat
 
 You can also migrate data from a source Confluent Kafka cluster to an OpenSearch Serverless VPC collection. Ensure you provide a network access policy within the pipeline configuration. You can use a Confluent schema registry to define a Confluent schema.
 
-```
+```YAML
 version: "2"
 kafka-pipeline:
   source:
@@ -256,7 +256,7 @@ This change ensures that DNS resolution for the Confluent PrivateLink endpoint w
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -291,7 +291,7 @@ After you have your pipeline prerequisites set up, [configure the pipeline role]
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -362,7 +362,7 @@ You can specify multiple OpenSearch Service domains as destinations for your dat
 
 You can also migrate data from a source Confluent Kafka cluster to an OpenSearch Serverless VPC collection. Ensure you provide a network access policy within the pipeline configuration. You can use a Confluent schema registry to define a Confluent schema.
 
-```
+```YAML
  version: "2"
 kafka-pipeline:
   source:

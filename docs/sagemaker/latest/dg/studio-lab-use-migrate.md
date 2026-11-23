@@ -165,7 +165,7 @@ This example provides two options for how to clone a GitHub repository into Stud
 
 1. From the image terminal, run the following command to clone your repository. This command creates a directory named after `<REPOSITORY_NAME>` in your Studio Classic instance and clones your artifacts in that repository.
 
-   ```
+   ```zsh
    git clone https://github.com/{{<GITHUB_USERNAME>}}/{{<REPOSITORY_NAME>}}.git
    ```
 
@@ -176,7 +176,7 @@ This example provides two options for how to clone a GitHub repository into Stud
 
 You can now recreate your conda environment by using your YAML file in your Studio Classic instance. Open the Studio Classic **Launcher**. For more information on opening the **Launcher**, see [Amazon SageMaker Studio Classic Launcher](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launcher.html). From the **Launcher**, choose **Open image terminal**. In the terminal navigate to the directory that contains the YAML file, then run the following commands.
 
-```
+```zsh
 conda env create --file {{<ENVIRONMENT_NAME>}}.yml
 conda activate {{<ENVIRONMENT_NAME>}}
 ```

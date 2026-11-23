@@ -8,7 +8,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 **(Optional), Array** Defines the tags that are used by CloudFormation and propagated to all the cluster resources. For more information, see [CloudFormation resource tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) in the *AWS CloudFormation User Guide*.
 
-```
+```yaml
 Tags:
   - Key: {{string}}
     Value: {{string}}

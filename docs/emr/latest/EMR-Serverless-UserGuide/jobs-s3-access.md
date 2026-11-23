@@ -27,7 +27,7 @@ To access the S3 bucket in account B from account A, attach the following policy
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -89,7 +89,7 @@ The following steps illustrate how to use an assumed role to access cross-accoun
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -119,7 +119,7 @@ The following steps illustrate how to use an assumed role to access cross-accoun
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -152,7 +152,7 @@ The following steps illustrate how to use an assumed role to access cross-accoun
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -181,7 +181,7 @@ The following steps illustrate how to use an assumed role to access cross-accoun
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -231,7 +231,7 @@ The following examples demonstrate how to use an assumed role to start an EMR Se
 
 The following example shows how to use an assumed role to start an EMR Serverless Spark job run with cross-account access to S3.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
     --application-id application-id \
     --execution-role-arn job-role-arn \
@@ -259,7 +259,7 @@ aws emr-serverless start-job-run \
 
 The following example shows how to use an assumed role to start an EMR Serverless Hive job run with cross-account access to S3.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
     --application-id application-id \
     --execution-role-arn job-role-arn \
@@ -300,7 +300,7 @@ For example, use `arn:aws:iam::{{AccountB}}:role/Cross-Account-Role-B-1` to acce
 
 The following example shows how to use multiple assumed roles to create an EMR Serverless Spark job run.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
     --application-id application-id \
     --execution-role-arn job-role-arn \
@@ -327,7 +327,7 @@ aws emr-serverless start-job-run \
 
 The following examples demonstrate how to use multiple assumed roles to create an EMR Serverless Hive job run.
 
-```
+```bash,sh,zsh
 aws emr-serverless start-job-run \
     --application-id application-id \
     --execution-role-arn job-role-arn \

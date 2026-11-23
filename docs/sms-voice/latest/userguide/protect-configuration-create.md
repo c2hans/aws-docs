@@ -43,7 +43,7 @@ You can use the create-protect-configuration command to create a new protect con
 **To create a protect configuration**
 + At the command line, enter the following command:
 
-  ```
+  ```bsh
   $ aws pinpoint-sms-voice-v2 create-protect-configuration --tags Key=Name,Value={{ProtectConfigName}}
   ```
 

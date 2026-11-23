@@ -47,7 +47,7 @@ Lake Formation-based Amazon S3 location access follows this flow:
 
 This process is transparent to you and you will simply use existing Lake Formation permissions with standard file-based APIs.
 
-```
+```python
 # Read raw data (Lake Formation-based S3 Location access)
 raw_df = spark.read.json("s3://finance-datalake/raw/transactions/dt=2024-03-21/")
 

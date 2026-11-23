@@ -43,7 +43,7 @@ If your S3 bucket is encrypted, you need to add `kms:Decrypt` permissions
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

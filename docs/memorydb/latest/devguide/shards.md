@@ -59,7 +59,7 @@ It returns the following JSON response:
 
 Line breaks are added for ease of reading.
 
-```
+```json
 {
     "Clusters": [
         {

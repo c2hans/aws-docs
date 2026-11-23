@@ -36,7 +36,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `RequestQuotaIncrease` action.
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -96,7 +96,7 @@ This example shows that the user named `admin` generated a request for additiona
 
 The following is an example of an approved quota increase in Service Quotas:
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {

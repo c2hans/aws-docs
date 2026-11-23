@@ -36,7 +36,7 @@ The examples in this section use the [AWS Command Line Interface (AWS CLI)](http
 
 For example, the following command returns all custom key stores in the account and Region. You can use the `Limit` and `Marker` parameters to page through the custom key stores in the output.
 
-```
+```bash
 $ aws kms describe-custom-key-stores
 ```
 
@@ -47,7 +47,7 @@ The following example output represents an AWS CloudHSM key store that is connec
 **Note**
 The `CustomKeyStoreType` field was added to the `DescribeCustomKeyStores` response to distinguish AWS CloudHSM key stores from external key stores.
 
-```
+```bash
 $ aws kms describe-custom-key-stores --custom-key-store-name {{ExampleCloudHSMKeyStore}}
 {
    "CustomKeyStores": [
@@ -70,7 +70,7 @@ If the `ConnectionState` of the custom key store is `FAILED`, the `DescribeCusto
 
 For example, in the following output, the `INVALID_CREDENTIALS` value indicates that the custom key store connection failed because the [`kmsuser` password is invalid](fix-keystore.md#fix-keystore-password). For help with this and other connection error failures, see [Troubleshooting a custom key store](fix-keystore.md).
 
-```
+```bash
 $ aws kms describe-custom-key-stores --custom-key-store-id {{cks-1234567890abcdef0}}
 {
    "CustomKeyStores": [

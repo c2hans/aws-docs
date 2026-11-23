@@ -47,7 +47,7 @@ The following example shows a CloudTrail log entry that includes the following G
 + Listing the listeners for an account: `eventName` is `ListListeners`.
 + Deleting a listener: `eventName` is `DeleteListener`.
 
-```
+```JSON
 {
   "Records": [
     {

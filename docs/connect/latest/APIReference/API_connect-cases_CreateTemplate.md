@@ -183,7 +183,7 @@ HTTP Status Code: 400
 
 This example illustrates one usage of CreateTemplate.
 
-```
+```json
 {
   "name": "Shipping",
   "layoutConfiguration": {
@@ -207,7 +207,7 @@ This example illustrates one usage of CreateTemplate.
 }
 ```
 
-```
+```json
 {
   "templateArn": "arn:aws:cases:us-west-2:[account_id]:domain/[domain_id]/template/[template_id]",
   "templateId": "[template_id]"

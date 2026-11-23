@@ -10,7 +10,7 @@ The **addedusers** and **deletedusers** arrays show who was added and removed.
 
 **Member added**
 
-```
+```json
 {
   "control": {
     "addedusers": ["user003"],
@@ -29,7 +29,7 @@ The **addedusers** and **deletedusers** arrays show who was added and removed.
 
 **Member removed**
 
-```
+```json
 {
   "control": {
     "deletedusers": ["user003"],

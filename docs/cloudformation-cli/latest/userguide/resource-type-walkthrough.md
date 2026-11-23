@@ -29,7 +29,7 @@ This walkthrough uses the Community Edition of the [IntelliJ IDEA](https://www.j
 
 1. Use the `init` command to create your resource type project and generate the files it requires.
 
-   ```
+   ```sh
    $ cfn init
    Initializing new project
    ```
@@ -95,7 +95,7 @@ When you initiate the resource type project, an example resource type schema fil
 
    As we'll see later in the walkthrough, creating a WordPress site actually requires more information than represented in our resource model. However, we'll be handling that information on behalf of the user in the code for the resource `create` handler.
 
-   ```
+   ```json
    {
      "typeName": "Example::Testing::WordPress",
      "description": "An example resource that creates a website based on WordPress 5.2.2.",
@@ -167,7 +167,7 @@ When you initiate the resource type project, an example resource type schema fil
 
    When we first initiated the resource type project, the CloudFormation CLI generated supporting files and code for our resource type. Since we've made changes to the resource type schema, we'll need to regenerate that code to ensure that it reflects the updated schema. To do this, we use the generate command:
 
-   ```
+   ```sh
    $ cfn generate
    Generated files for Example::Testing::WordPress
    ```
@@ -191,7 +191,7 @@ To actually make WordPress handlers that call the associated Amazon EC2 API oper
 
 1. Add the following dependency in the `dependencies` section.
 
-   ```
+   ```xml
    <dependency>
      <groupId>com.amazonaws</groupId>
      <artifactId>aws-java-sdk-ec2</artifactId>
@@ -230,7 +230,7 @@ The CallbackContext is modeled as a POJO so you can define what information you 
 
 1. Replace the entire contents of the `CallbackContext.java` file with the following code.
 
-   ```
+   ```java
    package com.example.testing.wordpress;
 
    import com.amazonaws.services.ec2.model.Instance;
@@ -260,7 +260,7 @@ The CallbackContext is modeled as a POJO so you can define what information you 
 
 1. Replace the entire contents of the `CreateHandler.java` file with the following code.
 
-   ```
+   ```java
    package com.example.testing.wordpress;
 
    import software.amazon.cloudformation.proxy.AmazonWebServicesClientProxy;
@@ -485,7 +485,7 @@ Because our resource type is a high-level abstraction, a lot of implementation b
 
 1. Replace the entire contents of the `CreateHandlerTest.java` file with the following code.
 
-   ```
+   ```java
    package com.example.testing.wordpress;
 
    import software.amazon.cloudformation.proxy.AmazonWebServicesClientProxy;
@@ -698,7 +698,7 @@ Again, we'll implement the delete handler as a state machine.
 
 1. Replace the entire contents of the `DeleteHandler.java` file with the following code.
 
-   ```
+   ```java
    package com.example.testing.wordpress;
 
    import software.amazon.cloudformation.proxy.AmazonWebServicesClientProxy;
@@ -856,7 +856,7 @@ We'll also need to update the unit test for the delete handler.
 
 1. Replace the entire contents of the `DeleteHandlerTest.java` file with the following code.
 
-   ```
+   ```java
    package com.example.testing.wordpress;
 
    import software.amazon.cloudformation.proxy.AmazonWebServicesClientProxy;
@@ -1130,7 +1130,7 @@ Next, we'll use the AWS SAM CLI to test locally that our resource will work as e
 **Note**
 In the past, it was common practice to use persistent credentials, such as IAM user credentials or even root credentials, but this is not recommended. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
 
-   ```
+   ```json
    {
        "credentials": {
            # Real credentials need to go here.
@@ -1161,7 +1161,7 @@ In the past, it was common practice to use persistent credentials, such as IAM u
 **Note**
 In the past, it was common practice to use persistent credentials, such as IAM user credentials or even root credentials, but this is not recommended. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
 
-   ```
+   ```json
    {
        "credentials": {
            # Real credentials need to go here.
@@ -1192,7 +1192,7 @@ Ensure Docker is running on your computer.
 
 1. Invoke the SAM function from the resource package root directory using the following commands.
 
-   ```
+   ```sh
    $ sam local invoke TestEntrypoint --event sam-tests/create.json
    ```
 **Note**
@@ -1200,7 +1200,7 @@ Occasionally these tests will fail with a retry-able error. In such a case, run 
 
    Because the create handler was written as a state machine, invoking the tests will return an output that represents a state. For example:
 
-   ```
+   ```json
    {
        "callbackDelaySeconds": 0,
        "resourceModel": {
@@ -1313,13 +1313,13 @@ Occasionally these tests will fail with a retry-able error. In such a case, run 
 
 1. Invoke the `TestEntrypoint` function again.
 
-   ```
+   ```sh
    $ sam local invoke TestEntrypoint --event sam-tests/create.json
    ```
 
    If the resource has yet to complete provisioning, the test returns a response with a `status` of `IN_PROGRESS`. Once the resource has completed provisioning, the test returns a response with a `status` of `SUCCESS`. For example:
 
-   ```
+   ```json
    {
        "callbackDelaySeconds": 0,
        "resourceModel": {
@@ -1347,7 +1347,7 @@ Ensure Docker is running on your computer.
 
 1. Invoke the `TestEntrypoint` function from the resource package root directory using the following commands.
 
-   ```
+   ```sh
    $ sam local invoke TestEntrypoint --event sam-tests/delete.json
    ```
 **Note**
@@ -1359,7 +1359,7 @@ Occasionally these tests will fail with a retriable error. In such a case, run t
 
 1. Invoke the `TestEntrypoint` function again.
 
-   ```
+   ```sh
    $ sam local invoke TestEntrypoint --event sam-tests/delete.json
    ```
 
@@ -1383,7 +1383,7 @@ The CloudFormation CLI performs resource contract tests using input that's gener
 
 1. Include the following override, specifying an actual subnet ID to use when performing resource contract tests.
 
-   ```
+   ```json
    {
        "CREATE": {
            "/SubnetId": "subnet-0bc6136e" # This should be a real subnet that exists in the account you're testing against.
@@ -1398,13 +1398,13 @@ To run resource contract tests, you'll need two shell sessions.
 
 1. In a new session, run the following command:
 
-   ```
+   ```sh
    $ sam local start-lambda
    ```
 
 1. From the resource package root directory, in a session that's aware of the CloudFormation CLI, run the `test` command:
 
-   ```
+   ```sh
    $ cfn test
    ```
 
@@ -1416,7 +1416,7 @@ To run resource contract tests, you'll need two shell sessions.
 Once you have completed implementing and testing your resource provided, the final step is to submit it to the CloudFormation registry. This makes it available for use in stack operations in the account and region in which it was submitted.
 + In a terminal, run the `submit` command to register the resource type in the us-west-2 region.
 
-  ```
+  ```sh
   $ cfn submit -v --region us-west-2
   ```
 
@@ -1436,7 +1436,7 @@ Resource type registration is an asynchronous operation. You can use the supplie
 If you update your resource type, you can submit a new version of that resource type. Every time you submit your resource type, CloudFormation generates a new version of that resource type.
 To set the default version of a resource type, use `[set-type-default-version](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-type-default-version.html)`. For example:
 
-```
+```sh
 $ aws cloudformation set-type-default-version \
   --type "RESOURCE" \
   --type-name "Example::Testing::WordPress" \
@@ -1444,7 +1444,7 @@ $ aws cloudformation set-type-default-version \
 ```
 To retrieve information about the versions of a resource type, use `[list-type-versions](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-type-versions.html)`. For example:
 
-```
+```sh
 $ aws cloudformation list-type-versions \
   --type "RESOURCE" \
   --type-name "Example::Testing::WordPress"
@@ -1460,7 +1460,7 @@ Use [DescribeTypeRegistration](https://docs.aws.amazon.com/AWSCloudFormation/lat
 
 1. Save the following JSON as a stack template, with the name `stack.json`.
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "WordPress stack",
@@ -1482,7 +1482,7 @@ This resource uses an official WordPress image on AWS Marketplace. In order to c
 
    Navigate to the folder in which you saved the `stack.json` file, and create a stack named `wordpress`.
 
-   ```
+   ```sh
    $ aws cloudformation create-stack
      --region us-west-2 \
      --template-body "file://stack.json" \
@@ -1493,7 +1493,7 @@ This resource uses an official WordPress image on AWS Marketplace. In order to c
 
 As a final test of the resource type delete handler, you can delete the `wordpress` stack.
 
-```
+```sh
 $ aws cloudformation delete-stack \
   --region us-west-2 \
   --stack-name wordpress

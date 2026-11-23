@@ -36,7 +36,7 @@ To set up and run this example, you must first complete these tasks:
 
 Create a Node.js module with the file name `iam_listservercerts.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Call the `listServerCertificates` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -56,7 +56,7 @@ iam.listServerCertificates({}, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_listservercerts.js
 ```
 
@@ -67,7 +67,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_getservercert.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed get a certificate, which consists of the name of the server certificate you want. Call the `getServerCertificates` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -90,7 +90,7 @@ iam.getServerCertificate(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_getservercert.js
 ```
 
@@ -101,7 +101,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_updateservercert.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to update a certificate, which consists of the name of the existing server certificate as well as the name of the new certificate. Call the `updateServerCertificate` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -126,7 +126,7 @@ iam.updateServerCertificate(params, function (err, data) {
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_updateservercert.js
 ```
 
@@ -137,7 +137,7 @@ This sample code can be found [here on GitHub](https://github.com/awsdocs/aws-do
 
 Create a Node.js module with the file name `iam_deleteservercert.js`. Be sure to configure the SDK as previously shown. To access IAM, create an `AWS.IAM` service object. Create a JSON object containing the parameters needed to delete a server certificate, which consists of the name of the certificate you want to delete. Call the `deleteServerCertificates` method of the `AWS.IAM` service object.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -160,7 +160,7 @@ iam.deleteServerCertificate(
 
 To run the example, type the following at the command line.
 
-```
+```javascript
 node iam_deleteservercert.js
 ```
 

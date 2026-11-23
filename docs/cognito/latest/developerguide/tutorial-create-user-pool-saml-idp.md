@@ -12,7 +12,7 @@ You must update your SAML identity provider and configure your user pool. For in
 
 You must also provide an assertion consumer service (ACS) endpoint to your SAML identity provider. Configure the following endpoint in your user pool domain for SAML 2.0 POST binding in your SAML identity provider. For more information about user pool domains, see [Configuring a user pool domain](cognito-user-pools-assign-domain.md).
 
-```
+```http
 https://{{Your user pool domain}}/saml2/idpresponse
 With an Amazon Cognito domain:
 https://{{<yourDomainPrefix>}}.auth.{{<region>}}.amazoncognito.com/saml2/idpresponse

@@ -22,7 +22,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EC2#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an Amazon EC2 key pair.
     /// </summary>
@@ -71,7 +71,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/ec2#code-examples).
 
-```
+```bash
 ###############################################################################
 # function ec2_delete_keypair
 #
@@ -131,7 +131,7 @@ function ec2_delete_keypair() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -183,7 +183,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ec2#code-examples).
 
-```
+```cpp
 //! Delete an Amazon Elastic Compute Cloud (Amazon EC2) instance key pair.
 /*!
   \param keyPairName: A name for a key pair.
@@ -241,7 +241,7 @@ For more information, see [Create and delete key pairs](https://docs.aws.amazon.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ec2#code-examples).
 
-```
+```java
     /**
      * Deletes a key pair asynchronously.
      *
@@ -274,7 +274,7 @@ For more information, see [Create and delete key pairs](https://docs.aws.amazon.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ec2#code-examples).
 
-```
+```javascript
 import { DeleteKeyPairCommand, EC2Client } from "@aws-sdk/client-ec2";
 
 /**
@@ -307,7 +307,7 @@ export const main = async ({ keyName }) => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ec2#code-examples).
 
-```
+```kotlin
 suspend fun deleteKeys(keyPair: String?) {
     val request =
         DeleteKeyPairRequest {
@@ -328,7 +328,7 @@ suspend fun deleteKeys(keyPair: String?) {
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified key pair. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2KeyPair -KeyName my-key-pair
 ```
 **Output:**
@@ -344,7 +344,7 @@ Performing operation "Remove-EC2KeyPair (DeleteKeyPair)" on Target "my-key-pair"
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified key pair. You are prompted for confirmation before the operation proceeds, unless you also specify the Force parameter.**
 
-```
+```powershell
 Remove-EC2KeyPair -KeyName my-key-pair
 ```
 **Output:**
@@ -363,7 +363,7 @@ Performing operation "Remove-EC2KeyPair (DeleteKeyPair)" on Target "my-key-pair"
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2#code-examples).
 
-```
+```python
 class KeyPairWrapper:
     """
     Encapsulates Amazon Elastic Compute Cloud (Amazon EC2) key pair actions.
@@ -436,7 +436,7 @@ class KeyPairWrapper:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ec2#code-examples).
 Wrapper around delete\_key that also removes the backing private PEM key.
 
-```
+```rust
     pub async fn delete(self, ec2: &EC2, util: &Util) -> Result<(), EC2Error> {
         if let Some(key_name) = self.key_pair.key_name() {
             ec2.delete_key_pair(key_name).await?;
@@ -450,7 +450,7 @@ Wrapper around delete\_key that also removes the backing private PEM key.
     }
 ```
 
-```
+```rust
     pub async fn delete_key_pair(&self, key_name: &str) -> Result<(), EC2Error> {
         let key_name: String = key_name.into();
         tracing::info!("Deleting key pair {key_name}");
@@ -470,7 +470,7 @@ Wrapper around delete\_key that also removes the backing private PEM key.
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ec2#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_ec2->deletekeypair( iv_keyname = iv_key_name ).
         MESSAGE 'Amazon EC2 key pair deleted.' TYPE 'I'.
@@ -487,7 +487,7 @@ Wrapper around delete\_key that also removes the backing private PEM key.
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/ec2#code-examples).
 
-```
+```swift
 import AWSEC2
 
     /// Delete an EC2 key pair.

@@ -16,7 +16,7 @@ Every stack creates a farm and an Amazon S3 bucket for job attachments. Each sta
 
 To deploy, you need Node.js 18 or later, AWS credentials, an account and region bootstrapped for the AWS CDK, and a Deadline Cloud monitor. Then run:
 
-```
+```bash
 cd cdk/farm_templates/starter_farm
 npm ci
 npx cdk deploy SimpleFarm

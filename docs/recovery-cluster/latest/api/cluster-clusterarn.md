@@ -86,7 +86,7 @@ Delete a cluster.
 #### DescribeClusterResponse schema
 <a name="cluster-clusterarn-response-body-describeclusterresponse-example"></a>
 
-```
+```json
 {
   "Cluster": {
     "ClusterArn": "string",
@@ -107,7 +107,7 @@ Delete a cluster.
 #### DeleteClusterResponse schema
 <a name="cluster-clusterarn-response-body-deleteclusterresponse-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -115,7 +115,7 @@ Delete a cluster.
 #### ValidationException schema
 <a name="cluster-clusterarn-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -124,7 +124,7 @@ Delete a cluster.
 #### AccessDeniedException schema
 <a name="cluster-clusterarn-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ Delete a cluster.
 #### ResourceNotFoundException schema
 <a name="cluster-clusterarn-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ Delete a cluster.
 #### ConflictException schema
 <a name="cluster-clusterarn-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ Delete a cluster.
 #### ThrottlingException schema
 <a name="cluster-clusterarn-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -160,7 +160,7 @@ Delete a cluster.
 #### InternalServerException schema
 <a name="cluster-clusterarn-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

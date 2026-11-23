@@ -14,17 +14,17 @@ You can use SQL commands or the query editor v2 tree-view panel to create the da
 
 1. Create a database from the datashare for your account and the namespace of the producer cluster. For example:
 
-   ```
+   ```SQL
    create database share_db from datashare mysource of account '123456789012' namespace 'p1234567-8765-4321-p10987654321';
    ```
 
 1. Set permissions so that users can access the database and the schema. For example:
 
-   ```
+   ```SQL
    grant usage on database share_db to usernames;
    ```
 
-   ```
+   ```SQL
    grant usage on schema public to usernames;
    ```
 
@@ -46,10 +46,10 @@ You can use SQL commands or the query editor v2 tree-view panel to create the da
 
 1. Set permissions so that users can access the database and the schema. For example:
 
-   ```
+   ```SQL
    grant usage on database share_db to usernames;
    ```
 
-   ```
+   ```SQL
    grant usage on schema public to usernames;
    ```

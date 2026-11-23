@@ -239,7 +239,7 @@ Before pushing your image, you might need to run **docker login**. You will be p
 1. Copy the following example into a file named `Dockerrun.aws.json`.
 **Example `~/glassfish-prebuilt/Dockerrun.aws.json`**
 
-   ```
+   ```Docker
    {
      "AWSEBDockerrunVersion": "1",
      "Image": {

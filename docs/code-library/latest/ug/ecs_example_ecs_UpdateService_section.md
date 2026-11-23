@@ -773,7 +773,7 @@ For more information, see [Updating an Amazon ECS service using the console](htt
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ecs.EcsClient;
 import software.amazon.awssdk.services.ecs.model.EcsException;
@@ -844,12 +844,12 @@ public class UpdateService {
 **Tools for PowerShell V4**
 **Example 1: This example command updates the `my-http-service` service to use the `amazon-ecs-sample` task definition.**
 
-```
+```powershell
 Update-ECSService -Service my-http-service -TaskDefinition amazon-ecs-sample
 ```
 **Example 2: This example command updates the desired count of the `my-http-service` service to 10.**
 
-```
+```powershell
 Update-ECSService -Service my-http-service -DesiredCount 10
 ```
 +  For API details, see [UpdateService](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -857,12 +857,12 @@ Update-ECSService -Service my-http-service -DesiredCount 10
 **Tools for PowerShell V5**
 **Example 1: This example command updates the `my-http-service` service to use the `amazon-ecs-sample` task definition.**
 
-```
+```powershell
 Update-ECSService -Service my-http-service -TaskDefinition amazon-ecs-sample
 ```
 **Example 2: This example command updates the desired count of the `my-http-service` service to 10.**
 
-```
+```powershell
 Update-ECSService -Service my-http-service -DesiredCount 10
 ```
 +  For API details, see [UpdateService](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -873,7 +873,7 @@ Update-ECSService -Service my-http-service -DesiredCount 10
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
 
-```
+```python
 class EcsWrapper:
     """Encapsulates Amazon ECS operations."""
 

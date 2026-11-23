@@ -75,7 +75,7 @@ Every job writes to its own folder in the output location, so several jobs can s
 
 `EvaluationConfig.Operations` lists the operations of the job. Each operation names an `Operator`, a built-in metric or an evaluation from the table under [Operators](#ai-data-preparation-dq-how-operators), and an optional `Config` with its settings. The following operation counts the words of the `prompt` column. In the following example, replace `prompt` with the name of your text column:
 
-```
+```json
 {"Operator": "word_count", "Config": {"View": [{"Role": "Text", "Column": "prompt"}]}}
 ```
 
@@ -87,7 +87,7 @@ Every job writes to its own folder in the output location, so several jobs can s
 
 The other keys of `Config` are the operator's settings, and the service refuses a key that the operator does not define when you submit the job. The following operation detects the language of the `prompt` column and flags the rows that are not English, with the accepted languages and the lowest accepted score as settings:
 
-```
+```json
 {"Operator": "language_detection", "Config": {"View": [{"Role": "Text", "Column": "prompt"}], "languages": ["en"], "min_score": 0.5}}
 ```
 
@@ -335,7 +335,7 @@ When you register the dataset, you name its format in `DatasetFileFormat`, and m
 
 To bring your own dataset (BYOD), upload the file to a prefix of its own in Amazon S3 and register that prefix as a dataset in a hub in your account. In the Amazon SageMaker Python SDK, `DataSet.create` registers the dataset and returns the `DataSet` whose `arn` you pass to the job. The registry entry it writes has the `DatasetType` `BYOD`, the `DatasetFileFormat`, and the data's location:
 
-```
+```json
 {
     "DatasetType": "BYOD",
     "DatasetFileFormat": "HF_Prompt_Completion",
@@ -367,13 +367,13 @@ For another evaluation, change the `Operations` list.
 
 The example assumes an execution role and a default Amazon S3 bucket, as described in [Set up and prerequisites](ai-data-preparation-getting-started.md#ai-data-preparation-setup), and a registered dataset, as described under Inputs. The file `support-spec.md` is a structured specification in the form that [How a data quality specification works](#ai-data-preparation-dq-spec-write) shows. Upload it to Amazon S3 with the following AWS CLI command:
 
-```
+```bash
 aws s3 cp support-spec.md s3://{{amzn-s3-demo-bucket}}/dq/support-spec.md
 ```
 
 Then run the following Python code:
 
-```
+```python
 from sagemaker.core.helper.session_helper import Session
 from sagemaker.ai_registry import DataPreparer, DatasetJobConfig, JobCategory
 
@@ -521,7 +521,7 @@ The following excerpts come from the job of the Use example. The aggregate repor
 
 On a job without a `View`, the column read is a derived column, so the row-level report names its columns in the form `dq_word_count__dq_input__completion` and carries the derived text in `dq_input__prompt` and `dq_input__completion`. The following row of the example job passed every criterion, shown with two of its five criterion entries, one decided by code and one by a model:
 
-```
+```json
 {
  "ticket_id": "T10005",
  "prompt": "Can I share the annual plan with a colleague?",

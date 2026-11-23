@@ -17,7 +17,7 @@ Use this example to send an SMS message by using the [AWS SDK for .NET](https://
 
 This example assumes that you're using a shared credentials file to specify the Access Key and Secret Access Key for an existing IAM user. For more information, see [Configuring AWS credentials](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/creds-idc.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```dotnet
 using Amazon;
 using Amazon.Pinpoint;
 using Amazon.Pinpoint.Model;
@@ -135,7 +135,7 @@ Use this example to send an SMS message by using the [AWS SDK for Java](https://
 
 This example assumes that you're using a shared credentials file to specify the Access Key and Secret Access Key for an existing IAM user. For more information, see [Set default credentials and Region](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setup.html#setup-credentials) in the *AWS SDK for Java Developer Guide*.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.DirectMessageConfiguration;
@@ -151,7 +151,7 @@ import java.util.HashMap;
 import java.util.Map;
 ```
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.pinpoint.PinpointClient;
 import software.amazon.awssdk.services.pinpoint.model.DirectMessageConfiguration;
@@ -277,7 +277,7 @@ Use this example to send an SMS message by using the [AWS SDK for JavaScript in 
 
 This example assumes that you're using a shared credentials file to specify the Access Key and Secret Access Key for an existing IAM user. For more information, see [Setting credentials](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-credentials.html) in the *AWS SDK for JavaScript in Node.js Developer Guide*.
 
-```
+```js
 "use strict";
 
 var AWS = require("aws-sdk");
@@ -372,7 +372,7 @@ pinpoint.sendMessages(params, function (err, data) {
 
 Use this example to send an SMS message by using the [AWS SDK for Python (Boto3)](https://aws.amazon.com/sdk-for-python/). This example assumes that you've already installed and configured the SDK for Python (Boto3). For more information, see [Quickstart](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) in * AWS SDK for Python (Boto3) Getting Started*.
 
-```
+```py
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -451,7 +451,7 @@ if __name__ == "__main__":
 
 You can also use message templates to send SMS messages, as shown in the following example:
 
-```
+```py
 import logging
 import boto3
 from botocore.exceptions import ClientError

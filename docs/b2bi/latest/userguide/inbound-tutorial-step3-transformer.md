@@ -42,7 +42,7 @@ Before creating the transformer, you need to create sample input and output file
 
 1. Create a file named `sample-purchase-order-output.json` with the following content:
 
-   ```
+   ```json
    {
      "purchaseOrder": {
        "poNumber": "PO123456",

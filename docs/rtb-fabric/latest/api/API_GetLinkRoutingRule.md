@@ -61,6 +61,13 @@ Content-type: application/json
       "queryStringExists": "string"
    },
    "createdAt": number,
+   "errorDetails": [
+      {
+         "code": "string",
+         "message": "string",
+         "resourceIds": [ "string" ]
+      }
+   ],
    "gatewayId": "string",
    "linkId": "string",
    "priority": number,
@@ -88,6 +95,11 @@ Type: [RuleCondition](API_RuleCondition.md) object
 The timestamp of when the routing rule was created.
 Type: Timestamp
 
+ ** [errorDetails](#API_GetLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-GetLinkRoutingRule-response-errorDetails"></a>
+The causes of the routing rule's failure. Present only when the rule is CREATE\_FAILED, DELETE\_FAILED, or FAILED.
+Type: Array of [ErrorDetail](API_ErrorDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+
  ** [gatewayId](#API_GetLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-GetLinkRoutingRule-response-gatewayId"></a>
 The unique identifier of the gateway.
 Type: String
@@ -114,7 +126,7 @@ Pattern: `rule-[a-z0-9-]{1,25}`
  ** [status](#API_GetLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-GetLinkRoutingRule-response-status"></a>
 The status of the routing rule.
 Type: String
-Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED`
+Valid Values: `CREATION_IN_PROGRESS | ACTIVE | UPDATE_IN_PROGRESS | DELETION_IN_PROGRESS | DELETED | FAILED | CREATE_FAILED | DELETE_FAILED`
 
  ** [tags](#API_GetLinkRoutingRule_ResponseSyntax) **   <a name="rtbfabric-GetLinkRoutingRule-response-tags"></a>
 A map of the key-value pairs for the tag or tags assigned to the specified resource.
@@ -149,7 +161,7 @@ The request was denied due to request throttling.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request could not be completed because it fails satisfy the constraints specified by the service.
+The request could not be completed because it fails to satisfy the constraints specified by the service.
 HTTP Status Code: 400
 
 ## See Also

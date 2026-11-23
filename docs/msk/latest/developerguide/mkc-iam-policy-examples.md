@@ -11,7 +11,7 @@ To give a non-admin user full access to all MSK Connect functionality, attach a 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

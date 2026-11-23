@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -85,7 +85,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -120,7 +120,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
 
 ****
 
-```
+```json
 {
      "Version":"2012-10-17",
      "Statement": [
@@ -153,7 +153,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
 
 ****
 
-```
+```json
 {
      "Version":"2012-10-17",
      "Statement": [

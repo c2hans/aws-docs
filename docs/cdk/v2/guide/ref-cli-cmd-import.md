@@ -16,7 +16,7 @@ When considering moving resources into CDK management, sometimes creating new re
 
 1. Add constructs for the resources you want to import to your stack. For example, add the following for an Amazon S3 bucket:
 
-   ```
+   ```javascript
    new s3.Bucket(this, 'ImportedS3Bucket', {});
    ```
 

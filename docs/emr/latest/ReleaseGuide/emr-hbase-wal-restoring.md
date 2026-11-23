@@ -16,7 +16,7 @@ Use the following procedure to restore an existing WAL with a new cluster. This 
 
 1. To use the existing Amazon EMR WAL for the new cluster, set the `hbase.emr.wal.enabled` property to `true`. The following JSON snippet shows an example configuration object.
 
-```
+```json
 [
     {
         "Classification": "hbase-site",

@@ -36,7 +36,7 @@ To authenticate the security agent, GuardDuty uses the task execution role.
 
 The task execution role requires certain Amazon Elastic Container Registry (Amazon ECR) permissions to download the GuardDuty security agent container image:
 
-```
+```json
 ...
       "ecr:GetAuthorizationToken",
       "ecr:BatchCheckLayerAvailability",
@@ -107,7 +107,7 @@ Perform the following steps for all the SCPs that you have set up in your multi-
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

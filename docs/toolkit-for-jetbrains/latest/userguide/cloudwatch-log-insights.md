@@ -16,7 +16,7 @@ You can use the AWS Toolkit for JetBrains to work with CloudWatch Logs Insights.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [
@@ -44,7 +44,7 @@ The following permission is not required but will allow the AWS Toolkit for JetB
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

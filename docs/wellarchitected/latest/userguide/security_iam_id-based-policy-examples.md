@@ -55,7 +55,7 @@ You don't need to allow minimum console permissions for users that are making ca
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ In this example, you want to grant a user in your AWS account full access to you
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement" : [
@@ -132,7 +132,7 @@ In this example, you want to grant a user in your AWS account read-only access t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement" : [
@@ -160,7 +160,7 @@ In this example, you want to grant a user in your AWS account read-only access t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement" : [
@@ -193,7 +193,7 @@ In this example, you want to grant a user in your AWS account read-only access t
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -242,7 +242,7 @@ This policy grants full administrative access to AWS WA Agent, including creatin
 
 This policy also grants `iam:PassRole` so the administrator can pass the execution role to AWS WA Agent during profile creation. The condition restricts `PassRole` to the Well-Architected Agent service principal.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -308,7 +308,7 @@ This policy also grants `iam:PassRole` so the administrator can pass the executi
 
 This policy grants access to view recommendations and update their status without allowing profile management. Attach this policy to users who triage and act on recommendations but do not configure AWS WA Agent profiles.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

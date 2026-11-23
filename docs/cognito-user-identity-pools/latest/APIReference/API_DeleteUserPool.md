@@ -96,7 +96,7 @@ The following example request doesn't succeed in deletion of the user pool `us-w
 #### Sample Request
 <a name="API_DeleteUserPool_Example_1_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z
@@ -113,7 +113,7 @@ Content-Length: <PayloadSizeBytes>
 #### Sample Response
 <a name="API_DeleteUserPool_Example_1_Response"></a>
 
-```
+```HTTP
 HTTP/1.1 200 OK
 Date: Tue, 13 Jun 2023 20:00:59 GMT
 Content-Type: application/x-amz-json-1.0
@@ -134,7 +134,7 @@ The following example request deletes the user pool `us-west-2_EXAMPLE` after de
 #### Sample Request
 <a name="API_DeleteUserPool_Example_2_Request"></a>
 
-```
+```HTTP
 POST HTTP/1.1
 Host: cognito-idp.us-west-2.amazonaws.com
 X-Amz-Date: 20230613T200059Z

@@ -10,13 +10,13 @@ The `policyJSON` field is a string containing the JSON-encoded policy. The decod
 
  **List Policies**
 
-```
+```http
 GET /policies?nextToken={token}
 ```
 
 Response:
 
-```
+```json
 {
   "items": [
     {
@@ -35,7 +35,7 @@ Response:
 
  **Create Policy**
 
-```
+```http
 POST /policies
 {
   "policyName": "mobile-optimized",
@@ -47,13 +47,13 @@ POST /policies
 
  **Get Policy**
 
-```
+```http
 GET /policies/{policyId}
 ```
 
  **Update Policy**
 
-```
+```http
 PUT /policies/{policyId}
 {
   "policyName": "updated-mobile-optimized",
@@ -64,6 +64,6 @@ PUT /policies/{policyId}
 
  **Delete Policy**
 
-```
+```http
 DELETE /policies/{policyId}
 ```

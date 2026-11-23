@@ -94,7 +94,7 @@ For more information, see [How Patch Manager Operations Work](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: This example gets all available patches for Windows Server 2012 that have a MSRC severity of Critical. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="PRODUCT";Values=@("WindowsServer2012")}
 $filter2 = @{Key="MSRC_SEVERITY";Values=@("Critical")}
 
@@ -122,7 +122,7 @@ Vendor         : Microsoft
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create each filter.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.PatchOrchestratorFilter
 $filter1.Key = "PRODUCT"
 $filter1.Values = "WindowsServer2012"
@@ -134,7 +134,7 @@ Get-SSMAvailablePatch -Filter $filter1,$filter2
 ```
 **Example 3: This example fetches all the updates which are released in last 20 days and applicable to products matching WindowsServer2019**
 
-```
+```powershell
 Get-SSMAvailablePatch | Where-Object ReleaseDate -ge (Get-Date).AddDays(-20) | Where-Object Product -eq "WindowsServer2019" | Select-Object ReleaseDate, Product, Title
 ```
 **Output:**
@@ -151,7 +151,7 @@ ReleaseDate         Product           Title
 **Tools for PowerShell V5**
 **Example 1: This example gets all available patches for Windows Server 2012 that have a MSRC severity of Critical. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 $filter1 = @{Key="PRODUCT";Values=@("WindowsServer2012")}
 $filter2 = @{Key="MSRC_SEVERITY";Values=@("Critical")}
 
@@ -179,7 +179,7 @@ Vendor         : Microsoft
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create each filter.**
 
-```
+```powershell
 $filter1 = New-Object Amazon.SimpleSystemsManagement.Model.PatchOrchestratorFilter
 $filter1.Key = "PRODUCT"
 $filter1.Values = "WindowsServer2012"
@@ -191,7 +191,7 @@ Get-SSMAvailablePatch -Filter $filter1,$filter2
 ```
 **Example 3: This example fetches all the updates which are released in last 20 days and applicable to products matching WindowsServer2019**
 
-```
+```powershell
 Get-SSMAvailablePatch | Where-Object ReleaseDate -ge (Get-Date).AddDays(-20) | Where-Object Product -eq "WindowsServer2019" | Select-Object ReleaseDate, Product, Title
 ```
 **Output:**

@@ -28,7 +28,7 @@ You can grant agent access to your seller reporting data by using one of the fol
 
 The following policy grants access only to specific datasets. This is the recommended approach because it follows the principle of least privilege—granting agents access only to the data they need.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ The following policy grants access to all current and future AWS Marketplace rep
 **Important**
 We recommend using the specific datasets policy instead of this wildcard approach. Granting access to all datasets gives the agent broader access than may be necessary.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

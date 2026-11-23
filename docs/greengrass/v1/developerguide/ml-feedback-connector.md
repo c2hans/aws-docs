@@ -44,7 +44,7 @@ This configures your device to meet the Python requirement for AWS IoT Greengras
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -143,7 +143,7 @@ Valid pattern: `^$|^[0-9]{1,3}$`
 
 The following CLI command creates a `ConnectorDefinition` with an initial version that contains the ML Feedback connector.
 
-```
+```bash
 aws greengrass create-connector-definition --name MyGreengrassConnectors --initial-version '{
     "Connectors": [
         {
@@ -163,7 +163,7 @@ aws greengrass create-connector-definition --name MyGreengrassConnectors --initi
 
 The following is an expanded example value for the `FeedbackConfigurationMap` parameter. This example includes several feedback configurations that use different sampling strategies.
 
-```
+```json
 {
     "ConfigID1": {
         "s3-bucket-name": "my-aws-bucket-random-sampling",
@@ -291,7 +291,7 @@ This connector publishes data to three MQTT topics:
 Use this topic to monitor the status of sample uploads and dropped samples. The connector publishes to this topic every time that it receives a request.
 **Example output: Sample upload succeeded**
 
-```
+```json
 {
   "response": {
     "status": "success",
@@ -325,7 +325,7 @@ Use this topic to monitor the status of sample uploads and dropped samples. The 
 The connector adds the `bucket` and `key` fields to the response from Amazon S3. For more information about the Amazon S3 response, see [PUT object](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html#RESTObjectPUT-responses) in the *Amazon Simple Storage Service API Reference*.
 **Example output: Sample dropped because of the sampling strategy**
 
-```
+```json
 {
   "response": {
     "status": "sample_dropped_by_strategy"
@@ -336,7 +336,7 @@ The connector adds the `bucket` and `key` fields to the response from Amazon S3.
 **Example output: Sample upload failed**
 A failure status includes the error message as the `error_message` value and the exception class as the `error` value.
 
-```
+```json
 {
   "response": {
     "status": "fail",
@@ -348,7 +348,7 @@ A failure status includes the error message as the `error_message` value and the
 ```
 **Example output: Request throttled because of the request limit**
 
-```
+```json
 {
   "response": {
     "status": "fail",
@@ -364,7 +364,7 @@ Use this topic to listen for predictions based on uploaded sample data. This let
 You can also store prediction results and use them to report and analyze trends over time. Trends can provide valuable insights. For example, a *decreasing accuracy over time* trend can help you to decide whether the model needs to be retrained.
 **Example output**
 
-```
+```json
 {
   "source-ref": "s3://greengrass-feedback-connector-data-us-west-2/s3-key-prefix/UUID.file_ext",
   "model-prediction": [
@@ -391,7 +391,7 @@ Metrics include:
 + The number of throttled requests.
 **Example output: Size of the data sample (published before the actual upload)**
 
-```
+```json
 {
   "request": {
     "namespace": "GreengrassFeedbackConnector",
@@ -405,7 +405,7 @@ Metrics include:
 ```
 **Example output: Sample upload succeeded**
 
-```
+```json
 {
   "request": {
     "namespace": "GreengrassFeedbackConnector",
@@ -419,7 +419,7 @@ Metrics include:
 ```
 **Example output: Sample upload succeeded and prediction result published**
 
-```
+```json
 {
   "request": {
     "namespace": "GreengrassFeedbackConnector",
@@ -433,7 +433,7 @@ Metrics include:
 ```
 **Example output: Sample upload failed**
 
-```
+```json
 {
   "request": {
     "namespace": "GreengrassFeedbackConnector",
@@ -447,7 +447,7 @@ Metrics include:
 ```
 **Example output: Sample dropped because of the sampling strategy**
 
-```
+```json
 {
   "request": {
     "namespace": "GreengrassFeedbackConnector",
@@ -461,7 +461,7 @@ Metrics include:
 ```
 **Example output: Request throttled because of the request limit**
 
-```
+```json
 {
   "request": {
     "namespace": "GreengrassFeedbackConnector",
@@ -482,7 +482,7 @@ The following example is a user-defined Lambda function that uses the [AWS IoT G
 **Note**
 You can download the AWS IoT Greengrass Machine Learning SDK from the AWS IoT Greengrass [downloads page](what-is-gg.md#gg-ml-sdk-download).
 
-```
+```python
 import json
 import logging
 import os

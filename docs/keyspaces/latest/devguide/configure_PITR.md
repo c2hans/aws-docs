@@ -34,7 +34,7 @@ To learn how to restore a table, see [Restore a table from backup to a specified
 
    To enable PITR when you're creating a new table, you must set the status of `point_in_time_recovery` to `enabled`. You can use the following CQL command as an example.
 
-   ```
+   ```sql
    CREATE TABLE "my_keyspace1"."my_table1"(
    	"id" int,
    	"name" ascii,

@@ -18,7 +18,7 @@ Use the following configuration template for built-in rules to customize paramet
 
 For more information about the Debugger rule class, methods, and parameters, see [SageMaker AI Debugger Rule class](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html) in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable).
 
-```
+```py
 from sagemaker.core.debugger import Rule, ProfilerRule, rule_configs, CollectionConfig
 
 rules=[

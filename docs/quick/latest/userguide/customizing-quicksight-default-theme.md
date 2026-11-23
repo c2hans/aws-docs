@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-quick
 
    The following example shows a shell script that uses the `list-themes` command in the AWS CLI. It sets the AWS account ID and the AWS Region as variables. If you previously used `aws configure` to set a default Region, adding the `--region` variable to your command overrides your default setting.
 
-   ```
+   ```bash
    #declare variables
    awsacct1='111122223333'
    region='us-west-2'
@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-quick
 
 1. Assign the theme as the default for the same ARN or ARNs.
 
-   ```
+   ```bash
    #declare variables
    awsacct1='111122223333'
    namespace='default'

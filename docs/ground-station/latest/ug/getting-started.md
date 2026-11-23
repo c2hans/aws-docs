@@ -30,7 +30,7 @@ To get started with AWS, you need an AWS account. There are two ways to sign up 
 
 ****
 
-        ```
+        ```json
         {
           "Version":"2012-10-17",
           "Statement": [
@@ -55,7 +55,7 @@ To get started with AWS, you need an AWS account. There are two ways to sign up 
 
 ****
 
-        ```
+        ```json
         {
           "Version":"2012-10-17",
           "Statement": [
@@ -82,7 +82,7 @@ To get started with AWS, you need an AWS account. There are two ways to sign up 
 
 ****
 
-        ```
+        ```json
         {
             "Version":"2012-10-17",
             "Statement": [

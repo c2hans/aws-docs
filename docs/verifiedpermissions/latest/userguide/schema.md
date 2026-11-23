@@ -60,14 +60,14 @@ You must first escape the JSON into a single line string, and preface it with a 
 **Note**
 The example here is line wrapped for readability. You must have the entire file on a single line for the command to accept it.
 
-```
+```JSON
 {"cedarJson": "{\"MySampleNamespace\": {\"actions\": {\"remoteAccess\": {\"appliesTo\":
 {\"principalTypes\": [\"Employee\"]}}},\"entityTypes\": {\"Employee\": {\"shape\":
 {\"attributes\": {\"jobLevel\": {\"type\": \"Long\"},\"name\": {\"type\": \"String\"}},
 \"type\": \"Record\"}}}}}"}
 ```
 
-```
+```bash
 $ aws verifiedpermissions put-schema \
     --definition file://schema.json \
     --policy-store PSEXAMPLEabcdefg111111

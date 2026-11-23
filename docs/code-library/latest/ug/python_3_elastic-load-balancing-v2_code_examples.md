@@ -30,7 +30,7 @@ The following code example shows how to get started using Elastic Load Balancing
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 import boto3
 
 def hello_elbv2(elbv2_client):
@@ -68,7 +68,7 @@ The following code example shows how to use `CreateListener`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -145,7 +145,7 @@ The following code example shows how to use `CreateLoadBalancer`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -213,7 +213,7 @@ The following code example shows how to use `CreateTargetGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -285,7 +285,7 @@ The following code example shows how to use `DeleteLoadBalancer`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -334,7 +334,7 @@ The following code example shows how to use `DeleteTargetGroup`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -408,7 +408,7 @@ The following code example shows how to use `DescribeLoadBalancers`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -450,7 +450,7 @@ The following code example shows how to use `DescribeTargetHealth`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/elastic-load-balancing#code-examples).
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -512,7 +512,7 @@ The following code example shows how to create a load-balanced web service that 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/cross_service/resilient_service#code-examples).
 Run the interactive scenario at a command prompt.
 
-```
+```python
 class Runner:
     """
     Manages the deployment, demonstration, and destruction of resources for the resilient service.
@@ -869,7 +869,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps Auto Scaling and Amazon EC2 actions.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -1664,7 +1664,7 @@ class AutoScalingWrapper:
 ```
 Create a class that wraps Elastic Load Balancing actions.
 
-```
+```python
 class ElasticLoadBalancerWrapper:
     """Encapsulates Elastic Load Balancing (ELB) actions."""
 
@@ -1999,7 +1999,7 @@ class ElasticLoadBalancerWrapper:
 ```
 Create a class that uses DynamoDB to simulate a recommendation service.
 
-```
+```python
 class RecommendationService:
     """
     Encapsulates a DynamoDB table to use as a service that recommends books, movies,
@@ -2095,7 +2095,7 @@ class RecommendationService:
 ```
 Create a class that wraps Systems Manager actions.
 
-```
+```python
 class ParameterHelper:
     """
     Encapsulates Systems Manager parameters. This example uses these parameters to drive

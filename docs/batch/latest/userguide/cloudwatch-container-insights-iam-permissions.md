@@ -14,7 +14,7 @@ Using a custom service role
 If your compute environment uses a custom service role, you must add the `ecs:UpdateCluster` permission to that role. Without this permission, updating Container Insights settings causes the compute environment to go to an `INVALID` state.
 Add the following statement to your custom service role's policy:
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Action": "ecs:UpdateCluster",

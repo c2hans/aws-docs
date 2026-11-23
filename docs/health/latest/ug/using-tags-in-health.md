@@ -74,7 +74,7 @@ aws health describe-affected-entities --region us-east-1 \
 
 Each entity in the response includes `resourceTags`:
 
-```
+```json
 {
     "entities": [
         {
@@ -110,7 +110,7 @@ When you combine a tag filter with filters on other fields, AWS Health returns o
 
 For example, a filter on an event ARN and the tag `Env=Prod` returns only resources for that event that are tagged `Env=Prod`. The following filter returns resources tagged with any of `Env=Prod`, `Env=Dev`, `Owner=Finance`, or `Owner=Marketing`:
 
-```
+```json
 "tags": [
 { "Env": "Prod" },
 { "Env": "Dev" },
@@ -161,7 +161,7 @@ aws health describe-affected-entities-for-organization \
 
 Output:
 
-```
+```json
 "entities": [
         {
             "entityArn": "arn:aws:health:us-east-1:111122223333:entity/g1RV7YLEvQj4FnfF<truncated>",
@@ -191,7 +191,7 @@ If any affected resource matches the tags, EventBridge sends the full event, inc
 
 The following EventBridge event pattern matches AWS Health events for resources tagged `Environment=Production`:
 
-```
+```json
 {
 "source": ["aws.health"],
 "detail-type": ["AWS Health Event"],

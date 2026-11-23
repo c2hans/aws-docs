@@ -84,7 +84,7 @@ While viewing events for any log in AMB Access, you can enter a keyword or phras
 
 Choose **Actions** and then **Download** while viewing any log in AMB Access to save the events that are loaded to the default download directory on your local machine with a `.log` extension. Logged events are listed along with a header that contains log information as shown in the following example.
 
-```
+```bash
 Event Count: 100
 Filtered: Yes
 Filtered Event Count: 44

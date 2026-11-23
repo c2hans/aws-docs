@@ -8,7 +8,7 @@ AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [
 
 The following example lists the ARNs of your Amazon SNS topics in your default region.
 
-```
+```go
 package main
 
 import (

@@ -8,7 +8,7 @@ Using the shared `config` and `credentials` file, you can set up several profile
 
 The following code snippet demonstrates how to build a service client that uses the settings defined as part of the profile named `my_profile`.
 
-```
+```java
 Region region = Region.US_WEST_2;
 DynamoDbClient ddb = DynamoDbClient.builder()
       .region(region)
@@ -23,13 +23,13 @@ To set a profile other than the `[default]` profile as the default for your appl
 
 To set this variable on Linux, macOS, or Unix, use `export`:
 
-```
+```sh
 export AWS_PROFILE="other_profile"
 ```
 
 To set these variables on Windows, use `set`:
 
-```
+```sh
 set AWS_PROFILE="other_profile"
 ```
 
@@ -46,7 +46,7 @@ Settings such as `region`, `sso_session`, `sso_account_id`, and `source_profile`
 
 To configure a supported credentials provider to reload profile settings, provide an instance of [`ProfileFileSupplier`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/profiles/ProfileFileSupplier.html) to the `profileFile()` builder method. The following code example demonstrates a `ProfileCredentialsProvider` that reloads credential settings from the `[default]` profile.
 
-```
+```java
 ProfileCredentialsProvider provider = ProfileCredentialsProvider
     .builder()
     .profileFile(ProfileFileSupplier.defaultSupplier())
@@ -70,7 +70,7 @@ The following example shows the use of the `ProfileFileSupplier.reloadWhenModifi
 
 The settings will be reloaded when `resolveCredentials()` is called only if SDK determines the file's content has been modified.
 
-```
+```java
 Path credentialsFilePath = ...
 
 ProfileCredentialsProvider provider = ProfileCredentialsProvider
@@ -88,7 +88,7 @@ The `ProfileFileSupplier.aggregate()` method merges the contents of multiple con
 
 The following example shows a `DefaultCredentialsProvider` that merges the settings of two files that contain profile settings. The SDK reloads the settings in the file pointed to by the `credentialsFilePath` variable each time `resolveCredentials()` is called and the settings have changed. The settings from the `profileFile` object remain the same.
 
-```
+```java
 Path credentialsFilePath = ...;
 ProfileFile profileFile = ...;
 

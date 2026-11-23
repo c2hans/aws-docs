@@ -180,7 +180,7 @@ How you make EFS compliant depends on your current mode:
 
 The following sample file system policy denies all EFS access that is not encrypted in transit:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

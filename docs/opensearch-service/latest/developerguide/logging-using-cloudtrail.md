@@ -57,7 +57,7 @@ In the following example:
 
 **Example**
 
-```
+```json
  {
       "eventVersion": "1.11",
       "userIdentity": {
@@ -123,7 +123,7 @@ An event represents a single request from any source. It includes information ab
 
 The following example displays a CloudTrail log entry that demonstrates the `CreateCollection` action.
 
-```
+```json
 {
    "eventVersion":"1.08",
    "userIdentity":{

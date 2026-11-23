@@ -34,7 +34,7 @@ The following code example shows how to get started using Amazon S3.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   paginateListBuckets,
   S3Client,
@@ -92,7 +92,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 First, import all the necessary modules.
 
-```
+```javascript
 // Used to check if currently running file is this file.
 import { fileURLToPath } from "node:url";
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -115,7 +115,7 @@ import {
 ```
 The preceding imports reference some helper utilities. These utilities are local to the GitHub repository linked at the start of this section. For your reference, see the following implementations of those utilities.
 
-```
+```javascript
 export const dirnameFromMetaUrl = (metaUrl) =>
   fileURLToPath(new URL(".", metaUrl));
 
@@ -176,7 +176,7 @@ export const wrapText = (text, char = "=") => {
 ```
 Objects are stored in 'buckets'. Let's define a function for creating a new bucket.
 
-```
+```javascript
 export const createBucket = async () => {
   const bucketName = await prompter.input({
     message: "Enter a bucket name. Bucket names must be globally unique:",
@@ -189,7 +189,7 @@ export const createBucket = async () => {
 ```
 Buckets contain 'objects'. This function uploads the contents of a directory to your bucket as objects.
 
-```
+```javascript
 export const uploadFilesToBucket = async ({ bucketName, folderPath }) => {
   console.log(`Uploading files from ${folderPath}\n`);
   const keys = readdirSync(folderPath);
@@ -216,7 +216,7 @@ export const uploadFilesToBucket = async ({ bucketName, folderPath }) => {
 ```
 After uploading objects, check to confirm that they were uploaded correctly. You can use ListObjects for that. You'll be using the 'Key' property, but there are other useful properties in the response also.
 
-```
+```javascript
 export const listFilesInBucket = async ({ bucketName }) => {
   const command = new ListObjectsCommand({ Bucket: bucketName });
   const { Contents } = await s3Client.send(command);
@@ -227,7 +227,7 @@ export const listFilesInBucket = async ({ bucketName }) => {
 ```
 Sometimes you might want to copy an object from one bucket to another. Use the CopyObject command for that.
 
-```
+```javascript
 export const copyFileFromBucket = async ({ destinationBucket }) => {
   const proceed = await prompter.confirm({
     message: "Would you like to copy an object from another bucket?",
@@ -269,7 +269,7 @@ export const copyFileFromBucket = async ({ destinationBucket }) => {
 ```
 There's no SDK method for getting multiple objects from a bucket. Instead, you'll create a list of objects to download and iterate over them.
 
-```
+```javascript
 export const downloadFilesFromBucket = async ({ bucketName }) => {
   const { Contents } = await s3Client.send(
     new ListObjectsCommand({ Bucket: bucketName }),
@@ -292,7 +292,7 @@ export const downloadFilesFromBucket = async ({ bucketName }) => {
 ```
 It's time to clean up your resources. A bucket must be empty before it can be deleted. These two functions empty and delete the bucket.
 
-```
+```javascript
 export const emptyBucket = async ({ bucketName }) => {
   const listObjectsCommand = new ListObjectsCommand({ Bucket: bucketName });
   const { Contents } = await s3Client.send(listObjectsCommand);
@@ -314,7 +314,7 @@ export const deleteBucket = async ({ bucketName }) => {
 ```
 The 'main' function pulls everything together. If you run this file directly the main function will be called.
 
-```
+```javascript
 const main = async () => {
   const OBJECT_DIRECTORY = `${dirnameFromMetaUrl(
     import.meta.url,
@@ -375,7 +375,7 @@ The following code example shows how to use `CopyObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Copy the object.
 
-```
+```javascript
 import {
   S3Client,
   CopyObjectCommand,
@@ -428,7 +428,7 @@ export const main = async ({
 ```
 Copy the object on condition its ETag does not match the one provided.
 
-```
+```javascript
 import {
   CopyObjectCommand,
   NoSuchKey,
@@ -520,7 +520,7 @@ if (isMain(import.meta.url)) {
 ```
 Copy the object on condition its ETag does not match the one provided.
 
-```
+```javascript
 import {
   CopyObjectCommand,
   NoSuchKey,
@@ -613,7 +613,7 @@ if (isMain(import.meta.url)) {
 ```
 Copy the object using on condition it has been created or modified in a given timeframe.
 
-```
+```javascript
 import {
   CopyObjectCommand,
   NoSuchKey,
@@ -706,7 +706,7 @@ if (isMain(import.meta.url)) {
 ```
 Copy the object using on condition it has not been created or modified in a given timeframe.
 
-```
+```javascript
 import {
   CopyObjectCommand,
   NoSuchKey,
@@ -807,7 +807,7 @@ The following code example shows how to use `CreateBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Create the bucket.
 
-```
+```javascript
 import {
   BucketAlreadyExists,
   BucketAlreadyOwnedByYou,
@@ -865,7 +865,7 @@ The following code example shows how to use `DeleteBucket`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete the bucket.
 
-```
+```javascript
 import {
   DeleteBucketCommand,
   S3Client,
@@ -915,7 +915,7 @@ The following code example shows how to use `DeleteBucketPolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete the bucket policy.
 
-```
+```javascript
 import {
   DeleteBucketPolicyCommand,
   S3Client,
@@ -966,7 +966,7 @@ The following code example shows how to use `DeleteBucketWebsite`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete the website configuration from the bucket.
 
-```
+```javascript
 import {
   DeleteBucketWebsiteCommand,
   S3Client,
@@ -1021,7 +1021,7 @@ The following code example shows how to use `DeleteObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete an object.
 
-```
+```javascript
 import {
   DeleteObjectCommand,
   S3Client,
@@ -1081,7 +1081,7 @@ The following code example shows how to use `DeleteObjects`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete multiple objects.
 
-```
+```javascript
 import {
   DeleteObjectsCommand,
   S3Client,
@@ -1144,7 +1144,7 @@ The following code example shows how to use `GetBucketAcl`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Get the ACL permissions.
 
-```
+```javascript
 import {
   GetBucketAclCommand,
   S3Client,
@@ -1196,7 +1196,7 @@ The following code example shows how to use `GetBucketCors`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Get the CORS policy for the bucket.
 
-```
+```javascript
 import {
   GetBucketCorsCommand,
   S3Client,
@@ -1258,7 +1258,7 @@ The following code example shows how to use `GetBucketPolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Get the bucket policy.
 
-```
+```javascript
 import {
   GetBucketPolicyCommand,
   S3Client,
@@ -1309,7 +1309,7 @@ The following code example shows how to use `GetBucketWebsite`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Get the website configuration.
 
-```
+```javascript
 import {
   GetBucketWebsiteCommand,
   S3Client,
@@ -1361,7 +1361,7 @@ The following code example shows how to use `GetObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Download the object.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1403,7 +1403,7 @@ export const main = async ({ bucketName, key }) => {
 ```
 Download the object on condition its ETag matches the one provided.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1482,7 +1482,7 @@ if (isMain(import.meta.url)) {
 ```
 Download the object on condition its ETag does not match the one provided.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1561,7 +1561,7 @@ if (isMain(import.meta.url)) {
 ```
 Download the object using on condition it has been created or modified in a given timeframe.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1637,7 +1637,7 @@ if (isMain(import.meta.url)) {
 ```
 Download the object using on condition it has not been created or modified in a given timeframe.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -1722,7 +1722,7 @@ The following code example shows how to use `GetObjectLegalHold`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   GetObjectLegalHoldCommand,
   S3Client,
@@ -1807,7 +1807,7 @@ The following code example shows how to use `GetObjectLockConfiguration`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   GetObjectLockConfigurationCommand,
   S3Client,
@@ -1888,7 +1888,7 @@ The following code example shows how to use `GetObjectRetention`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   GetObjectRetentionCommand,
   S3Client,
@@ -1973,7 +1973,7 @@ The following code example shows how to use `ListBuckets`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 List the buckets.
 
-```
+```javascript
 import {
   paginateListBuckets,
   S3Client,
@@ -2031,7 +2031,7 @@ The following code example shows how to use `ListObjectsV2`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 List all of the objects in your bucket. If there is more than one object, IsTruncated and NextContinuationToken will be used to iterate over the full list.
 
-```
+```javascript
 import {
   S3Client,
   S3ServiceException,
@@ -2090,7 +2090,7 @@ The following code example shows how to use `PutBucketAcl`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Put the bucket ACL.
 
-```
+```javascript
 import {
   PutBucketAclCommand,
   S3Client,
@@ -2168,7 +2168,7 @@ The following code example shows how to use `PutBucketCors`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Add a CORS rule.
 
-```
+```javascript
 import {
   PutBucketCorsCommand,
   S3Client,
@@ -2238,7 +2238,7 @@ The following code example shows how to use `PutBucketPolicy`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Add the policy.
 
-```
+```javascript
 import {
   PutBucketPolicyCommand,
   S3Client,
@@ -2307,7 +2307,7 @@ The following code example shows how to use `PutBucketWebsite`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Set the website configuration.
 
-```
+```javascript
 import {
   PutBucketWebsiteCommand,
   S3Client,
@@ -2374,7 +2374,7 @@ The following code example shows how to use `PutObject`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Upload the object.
 
-```
+```javascript
 import { readFile } from "node:fs/promises";
 
 import {
@@ -2420,7 +2420,7 @@ or the multipart upload API (5TB max).`,
 ```
 Upload the object on condition its ETag matches the one provided.
 
-```
+```javascript
 import {
   GetObjectCommand,
   NoSuchKey,
@@ -2508,7 +2508,7 @@ The following code example shows how to use `PutObjectLegalHold`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   PutObjectLegalHoldCommand,
   S3Client,
@@ -2607,7 +2607,7 @@ The following code example shows how to use `PutObjectLockConfiguration`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Set the object lock configuration of a bucket.
 
-```
+```javascript
 import {
   PutObjectLockConfigurationCommand,
   S3Client,
@@ -2681,7 +2681,7 @@ if (isMain(import.meta.url)) {
 ```
 Set the default retention period of a bucket.
 
-```
+```javascript
 import {
   PutObjectLockConfigurationCommand,
   S3Client,
@@ -2783,7 +2783,7 @@ The following code example shows how to use `PutObjectRetention`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 
-```
+```javascript
 import {
   PutObjectRetentionCommand,
   S3Client,
@@ -2878,7 +2878,7 @@ The following code example shows how to create a presigned URL for Amazon S3 and
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Create a presigned URL to upload an object to a bucket.
 
-```
+```javascript
 import https from "node:https";
 
 import { XMLParser } from "fast-xml-parser";
@@ -2990,7 +2990,7 @@ export const main = async ({ bucketName, key, region }) => {
 ```
 Create a presigned URL to download an object from a bucket.
 
-```
+```javascript
 import { GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { fromIni } from "@aws-sdk/credential-providers";
 import { HttpRequest } from "@smithy/protocol-http";
@@ -3087,7 +3087,7 @@ The following code example shows how to list Amazon S3 objects in a web page.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/web/s3/list-objects#code-examples).
 The following code is the relevant React component that makes calls to the AWS SDK. A runnable version of the application containing this component can be found at the preceding GitHub link.
 
-```
+```javascript
 import { useEffect, useState } from "react";
 import {
   ListObjectsCommand,
@@ -3168,7 +3168,7 @@ The following code example shows how to delete all of the objects in an Amazon S
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete all objects for a given Amazon S3 bucket.
 
-```
+```javascript
 import {
   DeleteObjectsCommand,
   paginateListObjectsV2,
@@ -3259,7 +3259,7 @@ The following code example shows how to work with S3 object lock features.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3/scenarios/object-locking#code-examples).
 Entrypoint for the scenario (index.js). This orchestrates all of the steps. Visit GitHub to see the implementation details for Scenario, ScenarioInput, ScenarioOutput, and ScenarioAction.
 
-```
+```javascript
 import * as Scenarios from "@aws-doc-sdk-examples/lib/scenario/index.js";
 import {
   exitOnFalse,
@@ -3372,7 +3372,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Output welcome messages to the console (welcome.steps.js).
 
-```
+```javascript
 /**
  * @typedef {import("@aws-doc-sdk-examples/lib/scenario/index.js")} Scenarios
  */
@@ -3401,7 +3401,7 @@ export { welcome, welcomeContinue };
 ```
 Deploy buckets, objects, and file settings (setup.steps.js).
 
-```
+```javascript
 import {
   BucketVersioningStatus,
   ChecksumAlgorithm,
@@ -3885,7 +3885,7 @@ export {
 ```
 View and delete files in the buckets (repl.steps.js).
 
-```
+```javascript
 import {
   ChecksumAlgorithm,
   DeleteObjectCommand,
@@ -4130,7 +4130,7 @@ export { replInput, replAction, choices };
 ```
 Destroy all created resources (clean.steps.js).
 
-```
+```javascript
 import {
   DeleteObjectCommand,
   DeleteBucketCommand,
@@ -4277,7 +4277,7 @@ The following code example shows how to add preconditions to Amazon S3 requests.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3/scenarios/conditional-requests#code-examples).
 Entrypoint for the workflow (index.js). This orchestrates all of the steps. Visit GitHub to see the implementation details for Scenario, ScenarioInput, ScenarioOutput, and ScenarioAction.
 
-```
+```javascript
 import * as Scenarios from "@aws-doc-sdk-examples/lib/scenario/index.js";
 import {
   exitOnFalse,
@@ -4360,7 +4360,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Output welcome messages to the console (welcome.steps.js).
 
-```
+```javascript
 /**
  * @typedef {import("@aws-doc-sdk-examples/lib/scenario/index.js")} Scenarios
  */
@@ -4398,7 +4398,7 @@ export { welcome, welcomeContinue };
 ```
 Deploy buckets and objects (setup.steps.js).
 
-```
+```javascript
 import {
   ChecksumAlgorithm,
   CreateBucketCommand,
@@ -4546,7 +4546,7 @@ export {
 ```
 Get, copy, and put objects using S3 conditional requests (repl.steps.js).
 
-```
+```javascript
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
@@ -4986,7 +4986,7 @@ export { replInput, choices };
 ```
 Destroy all created resources (clean.steps.js).
 
-```
+```javascript
 import {
   DeleteObjectCommand,
   DeleteBucketCommand,
@@ -5071,7 +5071,7 @@ For more information, see [Uploading an object using multipart upload](https://d
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Upload a large file.
 
-```
+```javascript
 import { S3Client } from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
 
@@ -5125,7 +5125,7 @@ export const main = async ({ bucketName, key }) => {
 ```
 Download a large file.
 
-```
+```javascript
 import { fileURLToPath } from "node:url";
 import { GetObjectCommand, NoSuchKey, S3Client } from "@aws-sdk/client-s3";
 import { createWriteStream, rmSync } from "node:fs";
@@ -5217,7 +5217,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-s3-to-lambda) repository.
 Consuming an S3 event with Lambda using JavaScript.
 
-```
+```javascript
 import { S3Client, HeadObjectCommand } from "@aws-sdk/client-s3";
 
 const client = new S3Client();
@@ -5247,7 +5247,7 @@ export const handler = async (event, context) => {
 ```
 Consuming an S3 event with Lambda using TypeScript.
 
-```
+```javascript
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 import { S3Event } from 'aws-lambda';

@@ -30,7 +30,7 @@ The following code example shows how to get started using AWS Batch.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
 def hello_batch() -> None:
     """
     Lists compute environments using the AWS Batch service.
@@ -82,7 +82,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class BatchScenario:
     """Runs the AWS Batch Basics scenario."""
 
@@ -458,7 +458,7 @@ class BatchScenario:
 ```
 Create a class that wraps Batch operations.
 
-```
+```python
 class BatchWrapper:
     """Encapsulates AWS Batch operations."""
 
@@ -496,7 +496,7 @@ The following code example shows how to use `CreateComputeEnvironment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def create_compute_environment(
         self,
         compute_environment_name: str,
@@ -549,7 +549,7 @@ The following code example shows how to use `CreateJobQueue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def create_job_queue(
         self,
         job_queue_name: str,
@@ -600,7 +600,7 @@ The following code example shows how to use `DeleteComputeEnvironment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def delete_compute_environment(self, compute_environment: str) -> None:
         """
         Deletes a compute environment.
@@ -630,7 +630,7 @@ The following code example shows how to use `DeleteJobQueue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def delete_job_queue(self, job_queue: str) -> None:
         """
         Deletes a job queue. The queue must be disabled first.
@@ -658,7 +658,7 @@ The following code example shows how to use `DeregisterJobDefinition`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def deregister_job_definition(self, job_definition: str) -> None:
         """
         Deregisters a job definition.
@@ -686,7 +686,7 @@ The following code example shows how to use `DescribeComputeEnvironments`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def describe_compute_environments(
         self, compute_environment_names: Optional[list] = None
     ) -> list:
@@ -722,7 +722,7 @@ The following code example shows how to use `DescribeJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def describe_jobs(self, job_ids: list) -> list:
         """
         Describes one or more jobs.
@@ -752,7 +752,7 @@ The following code example shows how to use `ListJobs`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def list_jobs(self, job_queue: str, job_status: str = "SUCCEEDED") -> list:
         """
         Lists jobs in a job queue with a specific status.
@@ -791,7 +791,7 @@ The following code example shows how to use `RegisterJobDefinition`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def register_job_definition(
         self,
         job_definition_name: str,
@@ -863,7 +863,7 @@ The following code example shows how to use `SubmitJob`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def submit_job(self, job_name: str, job_queue: str, job_definition: str) -> dict:
         """
         Submits a job to a job queue.
@@ -904,7 +904,7 @@ The following code example shows how to use `UpdateComputeEnvironment`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def update_compute_environment(self, compute_environment: str, state: str) -> dict:
         """
         Updates a compute environment, such as disabling it before deletion.
@@ -946,7 +946,7 @@ The following code example shows how to use `UpdateJobQueue`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
 
-```
+```python
     def update_job_queue(self, job_queue: str, state: str) -> dict:
         """
         Updates a job queue, such as disabling it before deletion.

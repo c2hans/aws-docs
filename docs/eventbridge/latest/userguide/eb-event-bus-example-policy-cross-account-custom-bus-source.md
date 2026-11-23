@@ -13,7 +13,7 @@ You attach this resource-based policy to the `central-event-bus` in the bus-owne
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

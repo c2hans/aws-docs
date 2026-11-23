@@ -6,6 +6,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/Welcome.html
 
  AWS RTB Fabric provides secure, low-latency infrastructure for connecting real-time bidding (RTB) applications. Rather than hosting applications directly, RTB Fabric acts as the connecting fabric that enables your applications to communicate efficiently over private networks instead of the public internet. You maintain complete control over your applications, data, and bidding decisions, while RTB Fabric provides the underlying infrastructure for secure, reliable connectivity.
 
-You can use these APIs to complete RTB Fabric tasks, such as setting up audit log ingestions or viewing user access. For more information about RTB Fabric, including the required permissions to use the service, see the [AWS RTB Fabric User Guide](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/).
+You can use these APIs to complete RTB Fabric tasks, such as creating gateways and links, attaching modules to links, and tracking updates. For more information about RTB Fabric, including the required permissions to use the service, see the [AWS RTB Fabric User Guide](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/).
 
-This document was last published on November 18, 2026.
+This document was last published on November 20, 2026.

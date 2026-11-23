@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a transcription job. Also deletes the transcript associated with the job.
     /// </summary>
@@ -55,7 +55,7 @@ For more information, see [DeleteTranscriptionJob](https://docs.aws.amazon.com/t
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/transcribe#code-examples).
 Delete a transcription job.
 
-```
+```javascript
 // Import the required AWS SDK clients and commands for Node.js
 import { DeleteTranscriptionJobCommand } from "@aws-sdk/client-transcribe";
 import { transcribeClient } from "./libs/transcribeClient.js";
@@ -80,7 +80,7 @@ run();
 ```
 Create the client.
 
-```
+```javascript
 import { TranscribeClient } from "@aws-sdk/client-transcribe";
 // Set the AWS Region.
 const REGION = "REGION"; //e.g. "us-east-1"
@@ -97,7 +97,7 @@ export { transcribeClient };
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
 
-```
+```python
 def delete_job(job_name, transcribe_client):
     """
     Deletes a transcription job. This also deletes the transcript associated with
@@ -121,7 +121,7 @@ def delete_job(job_name, transcribe_client):
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_tnb->deletetranscriptionjob( iv_job_name ).
         MESSAGE 'Transcription job deleted.' TYPE 'I'.

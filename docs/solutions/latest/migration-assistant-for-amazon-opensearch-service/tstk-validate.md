@@ -10,7 +10,7 @@ The split from `string` into `text` and `keyword` changes how fields respond to 
 +  **Sorting** — Confirm that fields you sort on resolve to `keyword` (or a `keyword` sub-field). Sorting directly on a `text` field is rejected for the same doc-values reason.
 +  **Case-sensitive matching** — Analyzed `text` fields are lowercased by the standard analyzer, so case-sensitive exact matches must use the `keyword` representation of the field. Verify that any case-sensitive lookups still return the expected results.
 
-```
+```bash
 console clusters curl target /<INDEX>/_mapping?pretty
 console clusters curl target /<INDEX>/_search?pretty
 ```

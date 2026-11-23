@@ -11,7 +11,7 @@ Streaming allows you to receive model responses incrementally as they are genera
 
 Use `ConverseStream` to receive responses as a stream of events:
 
-```
+```Python
 import boto3
 
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')
@@ -38,7 +38,7 @@ for event in response['stream']:
 
 Use `InvokeModelWithResponseStream` for streaming with the Invoke API:
 
-```
+```Python
 import boto3
 import json
 

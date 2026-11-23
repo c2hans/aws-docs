@@ -34,7 +34,7 @@ The following code example shows how to get started using DynamoDB.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb/hello_dynamodb#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -76,7 +76,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_dynamodb.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/ListTablesRequest.h>
@@ -149,7 +149,7 @@ The following code example shows how to:
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
     {
         Aws::Client::ClientConfiguration clientConfig;
         //  1. Create a table with partition: year (N) and sort: title (S). (CreateTable)
@@ -688,7 +688,7 @@ The following code example shows how to use `BatchExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 Use batches of INSERT statements to add items.
 
-```
+```cpp
     // 2. Add multiple movies using "Insert" statements. (BatchExecuteStatement)
     Aws::DynamoDB::DynamoDBClient dynamoClient(clientConfiguration);
 
@@ -767,7 +767,7 @@ Use batches of INSERT statements to add items.
 ```
 Use batches of SELECT statements to get items.
 
-```
+```cpp
     // 3. Get the data for multiple movies using "Select" statements. (BatchExecuteStatement)
     {
         Aws::Vector<Aws::DynamoDB::Model::BatchStatementRequest> statements(
@@ -813,7 +813,7 @@ Use batches of SELECT statements to get items.
 ```
 Use batches of UPDATE statements to update items.
 
-```
+```cpp
     // 4. Update the data for multiple movies using "Update" statements. (BatchExecuteStatement)
 
     for (size_t i = 0; i < titles.size(); ++i) {
@@ -862,7 +862,7 @@ Use batches of UPDATE statements to update items.
 ```
 Use batches of DELETE statements to delete items.
 
-```
+```cpp
     // 6. Delete multiple movies using "Delete" statements. (BatchExecuteStatement)
     {
         Aws::Vector<Aws::DynamoDB::Model::BatchStatementRequest> statements(
@@ -906,7 +906,7 @@ The following code example shows how to use `BatchGetItem`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Batch get items from different Amazon DynamoDB tables.
 /*!
   \sa batchGetItem()
@@ -1029,7 +1029,7 @@ The following code example shows how to use `BatchWriteItem`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Batch write items from a JSON file.
 /*!
   \sa batchWriteItem()
@@ -1197,7 +1197,7 @@ The following code example shows how to use `CreateTable`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Create an Amazon DynamoDB table.
 /*!
   \sa createTable()
@@ -1249,7 +1249,7 @@ bool AwsDoc::DynamoDB::createTable(const Aws::String &tableName,
 ```
 Code that waits for the table to become active.
 
-```
+```cpp
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -1299,7 +1299,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Delete an item from an Amazon DynamoDB table.
 /*!
   \sa deleteItem()
@@ -1338,7 +1338,7 @@ bool AwsDoc::DynamoDB::deleteItem(const Aws::String &tableName,
 ```
 Code that waits for the table to become active.
 
-```
+```cpp
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -1388,7 +1388,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Delete an Amazon DynamoDB table.
 /*!
   \sa deleteTable()
@@ -1428,7 +1428,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Describe an Amazon DynamoDB table.
 /*!
   \sa describeTable()
@@ -1487,7 +1487,7 @@ The following code example shows how to use `ExecuteStatement`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 Use an INSERT statement to add an item.
 
-```
+```cpp
     Aws::DynamoDB::DynamoDBClient dynamoClient(clientConfiguration);
 
     // 2. Add a new movie using an "Insert" statement. (ExecuteStatement)
@@ -1542,7 +1542,7 @@ Use an INSERT statement to add an item.
 ```
 Use a SELECT statement to get an item.
 
-```
+```cpp
     //  3. Get the data for the movie using a "Select" statement. (ExecuteStatement)
     {
         Aws::DynamoDB::Model::ExecuteStatementRequest request;
@@ -1583,7 +1583,7 @@ Use a SELECT statement to get an item.
 ```
 Use an UPDATE statement to update an item.
 
-```
+```cpp
     //  4. Update the data for the movie using an "Update" statement. (ExecuteStatement)
     {
         rating = askQuestionForFloatRange(
@@ -1618,7 +1618,7 @@ Use an UPDATE statement to update an item.
 ```
 Use a DELETE statement to delete an item.
 
-```
+```cpp
     // 6. Delete the movie using a "Delete" statement. (ExecuteStatement)
     {
         Aws::DynamoDB::Model::ExecuteStatementRequest request;
@@ -1652,7 +1652,7 @@ The following code example shows how to use `GetItem`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Get an item from an Amazon DynamoDB table.
 /*!
   \sa getItem()
@@ -1707,7 +1707,7 @@ The following code example shows how to use `ListTables`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! List the Amazon DynamoDB tables for the current AWS account.
 /*!
   \sa listTables()
@@ -1749,7 +1749,7 @@ The following code example shows how to use `PutItem`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Put an item in an Amazon DynamoDB table.
 /*!
   \sa putItem()
@@ -1804,7 +1804,7 @@ bool AwsDoc::DynamoDB::putItem(const Aws::String &tableName,
 ```
 Code that waits for the table to become active.
 
-```
+```cpp
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -1854,7 +1854,7 @@ The following code example shows how to use `Query`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Perform a query on an Amazon DynamoDB Table and retrieve items.
 /*!
   \sa queryItem()
@@ -1949,7 +1949,7 @@ The following code example shows how to use `Scan`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Scan an Amazon DynamoDB table.
 /*!
   \sa scanTable()
@@ -2022,7 +2022,7 @@ The following code example shows how to use `UpdateItem`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Update an Amazon DynamoDB table item.
 /*!
   \sa updateItem()
@@ -2091,7 +2091,7 @@ bool AwsDoc::DynamoDB::updateItem(const Aws::String &tableName,
 ```
 Code that waits for the table to become active.
 
-```
+```cpp
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -2141,7 +2141,7 @@ The following code example shows how to use `UpdateTable`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Update a DynamoDB table.
 /*!
   \sa updateTable()
@@ -2187,7 +2187,7 @@ bool AwsDoc::DynamoDB::updateTable(const Aws::String &tableName,
 ```
 Code that waits for the table to become active.
 
-```
+```cpp
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -2262,7 +2262,7 @@ The following code example shows how to:
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         //  1. Create a table. (CreateTable)
         if (AwsDoc::DynamoDB::createMoviesDynamoDBTable(clientConfig)) {
@@ -2691,7 +2691,7 @@ The following code example shows how to:
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
         //  1. Create a table. (CreateTable)
         if (AwsDoc::DynamoDB::createMoviesDynamoDBTable(clientConfig)) {
 

@@ -58,7 +58,7 @@ The following examples show several ways to use channel membership preferences a
 **Preventing messages from going to senders**
 This filter rule sends messages to all channel members except the message sender.
 
-```
+```json
 {
     "Preferences": {
         "PushNotifications": {
@@ -71,7 +71,7 @@ This filter rule sends messages to all channel members except the message sender
 
 App instance users with the preferences shown above receive a channel message with the following attributes:
 
-```
+```json
 "MessageAttributes": {
     "senderId": {
         "StringValues": ["{{USER_ARN}}"]
@@ -82,7 +82,7 @@ App instance users with the preferences shown above receive a channel message wi
 **Inclusive string matching**
  This filter rule allows any message with the message attribute key “mention” and the value “Bob.”
 
-```
+```json
 {
     "Preferences": {
         "PushNotifications": {
@@ -95,7 +95,7 @@ App instance users with the preferences shown above receive a channel message wi
 
 An app instance user with the preferences shown above receives a channel message with the following message attributes:
 
-```
+```json
 "MessageAttributes": {
     "mention": {
         "StringValues": ["Bob", "Alice"]
@@ -105,7 +105,7 @@ An app instance user with the preferences shown above receives a channel message
 
 However, the app instance user will not receive a channel message with the following attributes:
 
-```
+```json
 "MessageAttributes": {
     "mention": {
         "StringValues": ["Tom"]
@@ -116,7 +116,7 @@ However, the app instance user will not receive a channel message with the follo
 **Exclusive string matching**
  This filter rule allows any message except those containing the attribute key “type” and the value “Room”.
 
-```
+```json
 {
     "Preferences": {
         "PushNotifications": {
@@ -129,7 +129,7 @@ However, the app instance user will not receive a channel message with the follo
 
 An app instance user with those preferences receives a channel message with the following message attributes:
 
-```
+```json
 "MessageAttributes": {
     "type": {
         "StringValues": ["Conversation"]
@@ -139,7 +139,7 @@ An app instance user with those preferences receives a channel message with the 
 
 However, the app instance user doesn't see a channel message with the following attributes:
 
-```
+```json
 "MessageAttributes": {
     "type": {
         "StringValues": ["Room"]
@@ -150,7 +150,7 @@ However, the app instance user doesn't see a channel message with the following 
 **A multiple filter rule with AND logic**
 When you combine filter rules with AND logic, a message must meet all the filter criteria for the filter to apply.
 
-```
+```json
 {
     "Preferences": {
         "PushNotifications": {
@@ -163,7 +163,7 @@ When you combine filter rules with AND logic, a message must meet all the filter
 
 An app instance user with the preferences above receives a channel message with the following message attributes:
 
-```
+```json
 "MessageAttributes": {
     "mention": {
         "StringValues": ["Bob"]
@@ -177,7 +177,7 @@ An app instance user with the preferences above receives a channel message with 
 **A multiple filter rule with OR logic**
 You use `$or` to combine filter rules with OR logic. When you use OR logic, a message must meet one of the criteria for the filter to apply.
 
-```
+```json
 {
     "Preferences": {
         "PushNotifications": {

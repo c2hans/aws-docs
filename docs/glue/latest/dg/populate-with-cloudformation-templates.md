@@ -17,7 +17,7 @@ If you plan to use CloudFormation templates that are compatible with AWS Glue, a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ An AWS Glue database in the Data Catalog contains metadata tables. The database 
 
 The following shows example values for common properties to create an AWS Glue database. For more information about the CloudFormation database template for AWS Glue, see [AWS::Glue::Database](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html).
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CloudFormation template in YAML to demonstrate creating a database named mysampledatabase
@@ -103,7 +103,7 @@ The following sample shows how to populate a database, a table, and partitions u
 
 The values in this sample define a table that contains flight data from a publicly available Amazon S3 bucket. For illustration, only a few columns of the data and one partitioning key are defined. Four partitions are also defined in the Data Catalog. Some fields to describe the storage of the base data are also shown in the `StorageDescriptor` fields.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CloudFormation template in YAML to demonstrate creating a database, a table, and partitions
@@ -268,7 +268,7 @@ An AWS Glue classifier determines the schema of your data. One type of custom cl
 
 This sample creates a classifier that creates a schema with one column named `message` and sets the classification to `greedy`.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a classifier
@@ -305,7 +305,7 @@ If the pattern matches, then the custom classifier is used to create your table'
 
 This sample creates a classifier that creates a schema with each record in the `Records3` array in an object.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a JSON classifier
@@ -338,7 +338,7 @@ An AWS Glue classifier determines the schema of your data. One type of custom cl
 
 This sample creates a classifier that creates a schema with each record in the `Record` tag and sets the classification to `XML`.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating an XML classifier
@@ -374,7 +374,7 @@ This sample creates a crawler, the required IAM role, and an AWS Glue database i
 
 When you submit this sample to the CloudFormation console, you must confirm that you want to create the IAM role.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a crawler
@@ -457,7 +457,7 @@ An AWS Glue connection in the Data Catalog contains the JDBC and network informa
 
 This sample creates a connection to an Amazon RDS MySQL database named `devdb`. When this connection is used, an IAM role, database credentials, and network connection values must also be supplied. See the details of necessary fields in the template.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a connection
@@ -511,7 +511,7 @@ AWS zero-ETL is a set of fully managed integrations that minimize the need to bu
 
 This sample creates a zero-ETL integration from the given source to the target.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a zero-ETL integration in AWS Glue
@@ -552,7 +552,7 @@ An AWS Glue zero-ETL integration requires resource properties to be defined for 
 
 The below sample defines the source and target resource properties and then creates a zero-ETL integration from the source to the target.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate defining the integration resource properties and then creating a zero-ETL integration in AWS Glue
@@ -623,7 +623,7 @@ This sample creates a crawler, required IAM role, and an AWS Glue database in th
 
 When you submit this sample to the CloudFormation console, you must confirm that you want to create the IAM role.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a crawler
@@ -720,7 +720,7 @@ This sample creates a job that reads flight data from an Amazon S3 bucket in `cs
 
 Common parameter values are shown in the template. For example, `AllocatedCapacity` (DPUs) defaults to 5.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a job using the public flights S3 table in a public bucket
@@ -778,7 +778,7 @@ This sample creates a job that reads flight data from a MySQL JDBC database as d
 
 Common parameter values are shown in the template. For example, `AllocatedCapacity` (DPUs) defaults to 5.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a job using a MySQL JDBC DB with the flights data to an S3 file
@@ -839,7 +839,7 @@ An AWS Glue trigger in the Data Catalog contains the parameter values that are r
 
 This sample creates an on-demand trigger that starts one job named `cfn-job-S3-to-S3-1`.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating an on-demand trigger
@@ -881,7 +881,7 @@ An AWS Glue trigger in the Data Catalog contains the parameter values that are r
 
 This sample creates a scheduled trigger that starts one job named `cfn-job-S3-to-S3-1`. The timer is a cron expression to run the job every 10 minutes on weekdays.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a scheduled trigger
@@ -925,7 +925,7 @@ An AWS Glue trigger in the Data Catalog contains the parameter values that are r
 
 This sample creates a conditional trigger that starts one job named `cfn-job-S3-to-S3-1`. This job starts when the job named `cfn-job-S3-to-S3-2 ` completes successfully.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a conditional trigger for a job, which starts when another job completes
@@ -975,7 +975,7 @@ An AWS Glue machine learning transform is a custom transform to cleanse your dat
 
 This sample creates a machine learning transform. For more information about the parameters that you need to create a machine learning transform, see [Record matching with AWS Lake Formation FindMatches](machine-learning.md).
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a machine learning transform
@@ -1022,7 +1022,7 @@ An AWS Glue Data Quality ruleset contains rules that can be evaluated on a table
 
 The following sample is a CloudFormation template which creates a ruleset with a variety of rules on the specified target table.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a DataQualityRuleset
 #
@@ -1078,7 +1078,7 @@ An AWS Glue Data Quality ruleset contains rules that can be evaluated on a table
 
 The following sample is a CloudFormation template which creates a Data Quality ruleset and a EventBridge Scheduler to evaluate the aforementioned ruleset every five minutes.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a DataQualityRuleset
 #
@@ -1169,7 +1169,7 @@ You provide an existing IAM role ARN (Amazon Resource Name) to create the develo
 **Note**
 For any notebook server that you create that is associated with a development endpoint, you manage it. Therefore, if you delete the development endpoint, to delete the notebook server, you must delete the CloudFormation stack on the CloudFormation console.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 # Sample CFN YAML to demonstrate creating a development endpoint

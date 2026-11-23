@@ -44,7 +44,7 @@ Assuming a role involves using a set of temporary security credentials that you 
 
 The following example uses an access token to create an Amazon S3 client object, where `linked::account::arn` is the Amazon Resource Name (ARN) of the role to assume and `session-name` is an identifier for the assumed role session.
 
-```
+```ruby
 role_credentials = Aws::AssumeRoleCredentials.new(
   client: Aws::STS::Client.new,
   role_arn: "{{linked::account::arn}}",

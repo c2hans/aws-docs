@@ -29,7 +29,7 @@ SYS\_QUERY\_EXPLAIN is visible to all users. Superusers can see all rows; regula
 
 The following example is the EXPLAIN plan of a single query.
 
-```
+```sql
 SELECT * FROM sys_query_explain WHERE query_id = 612635 ORDER BY plan_node_id;
 
  userid | query_id | child_query_sequence | plan_node_id | plan_parent_id |                                                                                                                                                                                                    plan_node                                                                                                                                                                                                     |                                                                                                                                                                                                    plan_info

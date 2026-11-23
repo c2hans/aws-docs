@@ -174,7 +174,7 @@ The service is stateless. To use a previous note as a style reference, your appl
 
 The following example shows a customization instruction for a SOAP note using the `customTemplate` configuration object.
 
-```
+```json
 {
   "clinicalNoteGenerationSettings": {
     "noteTemplateSettings": {

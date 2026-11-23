@@ -25,7 +25,7 @@ To use the FinSpace Dataset browser API operations, you need to configure a user
 
    1. Use the credentials to use the FinSpace Dataset browser APIs.
 
-      ```
+      ```python
                                 #!/usr/bin/env python
                                 import boto3
                                 session = boto3.session.Session()
@@ -40,7 +40,7 @@ To use the FinSpace Dataset browser API operations, you need to configure a user
 
 1. **Access credentials programmatically using IAM access key id and secret access key - ** Your Amazon Resource Name (ARN) must be registered with your user profile in the FinSpace Dataset browser web application to use this method. Please contact your administrator to verify. You can find your FinSpace environment id from the sign-in URL that you use to login to your Dataset browser web application. For example, if your FinSpace sign-in URL is https://vs57phhvijir4kv5rf6ywt.us-east-1.amazonfinspace.com, the environment id is vs57phhvijir4kv5rf6ywt.
 
-   ```
+   ```python
                              #!/usr/bin/env python
                              import boto3
                              REGION = "us-east-1"

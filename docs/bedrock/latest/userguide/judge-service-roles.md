@@ -22,7 +22,7 @@ The service role must include access to at least one supported evaluator model. 
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -57,7 +57,7 @@ Your service role policy needs to include access to the Amazon S3 bucket where y
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

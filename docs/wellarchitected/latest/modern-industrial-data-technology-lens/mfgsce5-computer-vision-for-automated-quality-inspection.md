@@ -159,6 +159,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 
 ![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image9.png)
 
+*ADD FIGURE CAPTION HERE*
+
 1.  Automatically upload training images from the manufacturing line camera to [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/).
 
 1.  Label the training images and identify defects. You can use [Amazon SageMaker Ground Truth](https://aws.amazon.com/sagemaker/groundtruth/) for creating and managing labeling jobs. Also, you can use state-of-the-art  [large language models](https://aws.amazon.com/what-is/large-language-model/) in  [Amazon Bedrock](https://aws.amazon.com/bedrock/) to create synthetic image datasets for scenarios that are too expensive, dangerous, or impossible to capture real-world image datasets and for automated segmentation and labeling images.

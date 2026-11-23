@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Lo
 
 # LogConfiguration
 
-Log configuration for a subscriber.
+Log configuration for a resource that delivers vended logs: a subscriber or a webhook EventSource.
 
 ## Contents
 <a name="API_LogConfiguration_Contents"></a>

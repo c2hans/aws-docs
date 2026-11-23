@@ -10,7 +10,7 @@ Create the file for your `afterAllowTraffic` hook Lambda function.
 
 1.  Copy the following Node.js code into `afterAllowTraffic.js`. This function executes during your deployment's `AfterAllowTraffic` hook.
 
-   ```
+   ```java
    'use strict';
 
        const AWS = require('aws-sdk');

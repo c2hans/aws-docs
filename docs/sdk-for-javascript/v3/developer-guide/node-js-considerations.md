@@ -16,13 +16,13 @@ AWS recommends using the Active LTS version of Node.js for development.
 
 Node.js provides a collection of built-in modules you can use without installing them. To use these modules, create an object with the `require` method to specify the module name. For example, to include the built-in HTTP module, use the following.
 
-```
+```javascript
 import http from 'http';
 ```
 
 Invoke methods of the module as if they are methods of that object. For example, here is code that reads an HTML file.
 
-```
+```javascript
 // include File System module
 import fs from "fs";
 // Invoke readFile method

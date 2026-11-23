@@ -26,7 +26,7 @@ The following examples demonstrate how to use condition keys for VPC settings. C
 
 To require that all users deploy only VPC-connected AgentCore Runtime and built-in tools, deny runtime and tool create and update operations that don’t include valid subnets and security groups.
 
-```
+```json
 {
     "Sid": "EnforceVPCRuntime",
     "Action": [
@@ -51,7 +51,7 @@ To require that all users deploy only VPC-connected AgentCore Runtime and built-
 
 To enforce that users use only specific approved subnets and security groups, use the `ForAnyValue` set operator with `StringNotEquals` . The condition returns true if any one of the context key values in the request does not match the context key values in the policy, denying requests that include any unapproved values. The following example enforces that users can only use `subnet-0123456789abcdef0` and `subnet-0123456789abcdef1` for subnets, and `sg-0123456789abcdef0` and `sg-0123456789abcdef1` for security groups.
 
-```
+```json
 [
   {
     "Sid": "DenyIfNotSpecificSubnets",
@@ -93,7 +93,7 @@ To enforce that users use only specific approved subnets and security groups, us
 
 To deny users access to specific subnets and security groups, use the `ForAnyValue` set operator with `StringEquals` . The condition returns true if any one of the context key values in the request matches any one of the context key values in the policy. The following example denies users access to `subnet-0123456789abcdef0` and `subnet-0123456789abcdef1` for subnets, and `sg-0123456789abcdef0` and `sg-0123456789abcdef1` for security groups.
 
-```
+```json
 [
   {
     "Sid": "EnforceOutOfSubnet",

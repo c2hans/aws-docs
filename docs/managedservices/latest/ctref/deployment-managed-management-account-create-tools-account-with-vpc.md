@@ -155,13 +155,13 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="deployment-managed-management-account-create-tools-account-with-vpc-ex-min"></a>
 
-```
+```json
 Example not available.
 ```
 
 ## Example: All Parameters
 <a name="deployment-managed-management-account-create-tools-account-with-vpc-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

@@ -68,7 +68,7 @@ For dynamic instance capacity, you can find the error in the `ResumeProgram` log
 
 The message looks similar to the following example:
 
-```
+```bash
 An error occurred (InsufficientInstanceCapacity) when calling the RunInstances/CreateFleet operation...
 ```
 
@@ -124,7 +124,7 @@ When a cluster is created, the head node must wait for the compute nodes to join
  **Compute nodes backed by Spot Instances:**
 + If it's the first time you use Spot Instances and the job remains in a PD (pending state), double check the `/var/log/parallelcluster/slurm_resume.log` file. You'll probably find an error like the following:
 
-  ```
+  ```None
   2022-05-20 13:06:24,796 - [slurm_plugin.common:add_instances_for_nodes] - ERROR - Encountered exception when launching instances for nodes (x1) ['spot-dy-t2micro-2']: An error occurred (AuthFailure.ServiceLinkedRoleCreationNotPermitted) when calling the RunInstances operation: The provided credentials do not have permission to create the service-linked role for Amazon EC2 Spot Instances.
   ```
 
@@ -157,35 +157,35 @@ This section continues to explore how you can troubleshoot node related issues, 
   + Wait for the compute node to start.
   + Modify the instance initiated shutdown behavior so that a failing compute node will be stopped rather than terminated.
 
-    ```
+    ```bash
     $ aws ec2 modify-instance-attribute \
         --instance-id {{i-1234567890abcdef0}} \
         --instance-initiated-shutdown-behavior "{\"Value\": \"stop\"}"
     ```
   + Enable termination protection.
 
-    ```
+    ```bash
     $ aws ec2 modify-instance-attribute \
         --instance-id {{i-1234567890abcdef0}} \
         --disable-api-termination
     ```
   + Tag the node to be easily identifiable.
 
-    ```
+    ```bash
     $ aws ec2 create-tags \
         --resources {{i-1234567890abcdef0}} \
         --tags Key=Name,Value=QUARANTINED-Compute
     ```
   + Detach the node from the cluster by changing the `parallelcluster:cluster-name` tag.
 
-    ```
+    ```bash
     $ aws ec2 create-tags \
         --resources {{i-1234567890abcdef0}} \
         --tags Key=parallelcluster:clustername,Value=QUARANTINED-ClusterName
     ```
   + Retrieve the console output from the node with this command.
 
-    ```
+    ```bash
     $ aws ec2 get-console-output --instance-id {{i-1234567890abcdef0}} --output text
     ```
 

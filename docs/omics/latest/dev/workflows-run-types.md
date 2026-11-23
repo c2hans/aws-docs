@@ -31,7 +31,7 @@ For dynamic run storage, the run provisions a filesystem that uses NFS protocol.
 
 The following python example shows how to delete a file without failing if the file does not exist.
 
-```
+```python
 import os
 import errno
 

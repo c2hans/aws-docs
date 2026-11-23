@@ -14,7 +14,7 @@ The **AWS Config Linked Resources** field should be set to the JSON string repre
 
 For example, the following value would show information on the S3 bucket `my-bucket` in `eu-central-1`, using the account and end user credentials specified in Jira for the AWS account identified in Jira as `MyAccount1`:
 
-```
+```json
                     [ { "resourceId": "my-bucket",
         "resourceType": "AWS::S3::Bucket",
         "accountName": "MyAccount1",

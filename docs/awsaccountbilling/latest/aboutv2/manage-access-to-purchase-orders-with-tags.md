@@ -12,7 +12,7 @@ To add tags to new purchase orders or update existing ones, see [Adding a purcha
 The following policy allows the IAM entity to add, modify, or tag purchase orders that have the `project` key and a value of `test`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -39,7 +39,7 @@ The following policy allows the IAM entity to add, modify, or tag purchase order
 The following policy denies the IAM entity from completing any purchase order action on purchase orders that have the `project` key and a value of `test`.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

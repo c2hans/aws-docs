@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 
 ![Diagram showing AWS X-Ray Service Map visualizing a workload using AWS Lambda, Amazon DynamoDB and Amazon EventBridge](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/aws-x-ray-service-map-visualizing-workload.png)
 
+*Figure 9: AWS X-Ray Service Map visualizing a workload using AWS Lambda, Amazon DynamoDB and Amazon EventBridge*
+
 Service Maps are helpful to understand integration points that need attention and resiliency practices. For integration calls, retries, backoffs, and possibly circuit breakers are necessary to prevent faults from propagating to downstream services.
 
  Another example is networking anomalies. You should not rely on default timeouts and retry settings. Instead, tune them to fail fast if a socket read/write timeout happens where the default can be seconds, if not minutes, in certain clients.
@@ -23,3 +25,5 @@ Service Maps are helpful to understand integration points that need attention an
 Combined, subsegments and annotations can help you quickly identify performance statistics on specific operations and business transactions. Examples are a database query duration, or the durations of a supporting function which parses an image.
 
 ![Screen shot showing AWS X-Ray Trace with subsegments beginning with ##](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/aws-x-ray-trace-with-subsegements.png)
+
+*Figure 10: AWS X-Ray Trace with subsegments beginning with \#\#*

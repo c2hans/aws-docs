@@ -85,7 +85,7 @@ The following sample shows the role permissions required for access to persisten
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -131,7 +131,7 @@ The following sample shows the role permissions required for removing the restri
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -60,7 +60,7 @@ Use this procedure for web applications.
 
 1. From the **BadBotHoneypotEndpoint** key, copy the endpoint URL.
 
-   ```
+   ```html
    <a href="<BadBotHoneypotEndpoint value>" rel="nofollow" style="display: none" aria-hidden="true"><honeypot link></a>
    ```
 **Note**

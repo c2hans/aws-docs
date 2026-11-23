@@ -57,7 +57,7 @@ When using an S3 VPC Endpoint, you must provide sufficient permissions for servi
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

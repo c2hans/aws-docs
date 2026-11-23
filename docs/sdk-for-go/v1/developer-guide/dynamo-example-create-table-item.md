@@ -10,7 +10,7 @@ The following example uses the DynamoDB [PutItem](https://docs.aws.amazon.com/s
 
 Create the file *DynamoDBCreateItem.go*. Add the following statements to import the Go and AWS SDK for Go packages used in the example.
 
-```
+```go
 import (
     "github.com/aws/aws-sdk-go/aws"
     "github.com/aws/aws-sdk-go/aws/session"
@@ -25,7 +25,7 @@ import (
 
 Create the data structure we use to containing the information about the table item.
 
-```
+```go
 // Create struct to hold info about new item
 type Item struct {
     Year   int
@@ -37,7 +37,7 @@ type Item struct {
 
 Initialize a session that the SDK will use to load credentials from the shared credentials file `~/.aws/credentials` and region from the shared configuration file `~/.aws/config`, and create the DynamoDB client.
 
-```
+```go
 // Initialize a session that the SDK will use to load
 // credentials from the shared credentials file ~/.aws/credentials
 // and region from the shared configuration file ~/.aws/config.
@@ -51,7 +51,7 @@ svc := dynamodb.New(sess)
 
 Create a struct with the movie data and marshall that data into a map of **AttributeValue** objects.
 
-```
+```go
 item := Item{
     Year:   2015,
     Title:  "The Big New Movie",
@@ -67,7 +67,7 @@ if err != nil {
 
 Create the input for **PutItem** and call it. If an error occurs, print the error and exit. If no error occurs, print an message that the item was added to the table.
 
-```
+```go
 // Create item in table Movies
 tableName := "Movies"
 

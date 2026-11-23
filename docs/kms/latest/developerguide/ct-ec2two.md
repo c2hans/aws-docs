@@ -12,7 +12,7 @@ The `instanceId` of the Amazon EC2 instance, `"i-81e2f56c"`, appears in the `Run
 
 The [key ARN](concepts.md#key-id-key-ARN) of the KMS key that protects the data volume, `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`, appears in all three AWS KMS calls (`CreateGrant`, `GenerateDataKeyWithoutPlaintext`, and `Decrypt`).
 
-```
+```json
 {
   "Records": [
     {

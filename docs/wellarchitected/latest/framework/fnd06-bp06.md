@@ -39,6 +39,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 
 ![Diagram showing a sample web application built on Amazon Route 53, AWS WAF, Amazon CloudFront, Amazon EC2, Amazon RDS, Elastic Load Balancing, Amazon S3, and Amazon EFS, with each service mapped to the Reserved Instance or Savings Plans commitment options available.](https://docs.aws.amazon.com/wellarchitected/latest/framework/images/ri-sp-services.png)
 
+*Mapping a web application workload to Reserved Instance and Savings Plans commitments*
+
  For services that can benefit from both Reserved Instances and Savings Plans discounts, AWS applies Reserved Instances first. Within Savings Plans, EC2 Instance Savings Plans apply before Compute Savings Plans. This means the most restrictive (and therefore highest-discount) commitments are exhausted first before broader commitments cover the remaining usage.
 
  [Commitment sharing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html) is turned on by default in AWS Organizations, so SPs and RIs purchased at the management account level apply across all member accounts. This maximizes utilization because a shared pool absorbs fluctuations across the organization better than fragmented per-account pools. Some organizations turn off sharing to improve cost accountability for individual teams, but this risks underutilization. If cost accountability is the driver, [AWS Billing and Cost Management Conductor](https://aws.amazon.com/aws-cost-management/aws-billing-conductor/) is usually a better answer, because it preserves the sharing benefit while supporting custom billing rates, credit and fee distribution, and per-team overhead allocation.

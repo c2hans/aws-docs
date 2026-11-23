@@ -29,7 +29,7 @@ All SageMaker AI built-in algorithms adhere to the common input inference format
 ## JSONLINES Response Format
 <a name="km-jsonlines"></a>
 
-```
+```json
 {"closest_cluster": 1.0, "distance_to_cluster": 3.0}
 {"closest_cluster": 2.0, "distance_to_cluster": 5.0}
 ```

@@ -34,7 +34,7 @@ The following code example shows how to get started using DynamoDB.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 import boto3
 
 # Create a DynamoDB client using the default credentials and region
@@ -82,7 +82,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that encapsulates a DynamoDB table.
 
-```
+```python
 from decimal import Decimal
 from io import BytesIO
 import json
@@ -407,7 +407,7 @@ class Movies:
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```python
 def get_sample_movie_data(movie_file_name):
     """
     Gets sample movie data, either from a local file or by first downloading it from
@@ -439,7 +439,7 @@ def get_sample_movie_data(movie_file_name):
 ```
 Run an interactive scenario to create the table and perform actions on it.
 
-```
+```python
 def run_scenario(table_name, movie_file_name, dyn_resource):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -595,7 +595,7 @@ if __name__ == "__main__":
 ```
 This scenario uses the following helper class to ask questions at a command prompt.
 
-```
+```python
 class Question:
     """
     A helper class to ask questions at a command prompt and validate and convert
@@ -741,7 +741,7 @@ The following code example shows how to use `BatchExecuteStatement`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class PartiQLBatchWrapper:
     """
     Encapsulates a DynamoDB resource to run PartiQL statements.
@@ -800,7 +800,7 @@ The following code example shows how to use `BatchGetItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 import decimal
 import json
 import logging
@@ -868,7 +868,7 @@ The following code example shows how to use `BatchWriteItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -938,7 +938,7 @@ The following code example shows how to use `CreateTable`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a table for storing movie data.
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1015,7 +1015,7 @@ The following code example shows how to use `DeleteItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1068,7 +1068,7 @@ class Movies:
 ```
 You can specify a condition so that an item is deleted only when it meets certain criteria.
 
-```
+```python
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1115,7 +1115,7 @@ The following code example shows how to use `DeleteTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1173,7 +1173,7 @@ The following code example shows how to use `DescribeTable`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1243,7 +1243,7 @@ The following code example shows how to use `DescribeTimeToLive`.
 **SDK for Python (Boto3)**
 Describe TTL configuration on an existing DynamoDB table using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 
 def describe_ttl(table_name, region):
@@ -1279,7 +1279,7 @@ The following code example shows how to use `ExecuteStatement`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class PartiQLWrapper:
     """
     Encapsulates a DynamoDB resource to run PartiQL statements.
@@ -1335,7 +1335,7 @@ The following code example shows how to use `GetItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1400,7 +1400,7 @@ The following code example shows how to use `ListTables`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1464,7 +1464,7 @@ The following code example shows how to use `PutItem`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1535,7 +1535,7 @@ The following code example shows how to use `Query`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Query items by using a key condition expression.
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1590,7 +1590,7 @@ class Movies:
 ```
 Query items and project them to return a subset of data.
 
-```
+```python
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1643,7 +1643,7 @@ The following code example shows how to use `Scan`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1723,7 +1723,7 @@ The following code example shows how to use `UpdateItem`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Update an item by using an update expression.
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1787,7 +1787,7 @@ class Movies:
 ```
 Update an item by using an update expression that includes an arithmetic operation.
 
-```
+```python
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1825,7 +1825,7 @@ class UpdateQueryWrapper:
 ```
 Update an item only when it meets certain conditions.
 
-```
+```python
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1877,7 +1877,7 @@ The following code example shows how to use `UpdateTimeToLive`.
 **SDK for Python (Boto3)**
 Enable TTL on an existing DynamoDB table.
 
-```
+```python
 import boto3
 
 def enable_ttl(table_name, ttl_attribute_name):
@@ -1915,7 +1915,7 @@ enable_ttl("your-table-name", "expireAt")
 ```
 Disable TTL on an existing DynamoDB table.
 
-```
+```python
 import boto3
 
 def disable_ttl(table_name, ttl_attribute_name):
@@ -1968,7 +1968,7 @@ For more information, see [Developing with the DynamoDB Accelerator Client](http
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb/TryDax#code-examples).
 Create a table with either the DAX or Boto3 client.
 
-```
+```python
 import boto3
 
 def create_dax_table(dyn_resource=None):
@@ -2005,7 +2005,7 @@ if __name__ == "__main__":
 ```
 Write test data to the table.
 
-```
+```python
 import boto3
 
 def write_data_to_dax_table(key_count, item_size, dyn_resource=None):
@@ -2045,7 +2045,7 @@ if __name__ == "__main__":
 ```
 Get items for a number of iterations for both the DAX client and the Boto3 client and report the time spent for each.
 
-```
+```python
 import argparse
 import sys
 import time
@@ -2115,7 +2115,7 @@ if __name__ == "__main__":
 ```
 Query the table for a number of iterations for both the DAX client and the Boto3 client and report the time spent for each.
 
-```
+```python
 import argparse
 import time
 import sys
@@ -2187,7 +2187,7 @@ if __name__ == "__main__":
 ```
 Scan the table for a number of iterations for both the DAX client and the Boto3 client and report the time spent for each.
 
-```
+```python
 import argparse
 import time
 import sys
@@ -2243,7 +2243,7 @@ if __name__ == "__main__":
 ```
 Delete the table.
 
-```
+```python
 import boto3
 
 def delete_dax_table(dyn_resource=None):
@@ -2284,7 +2284,7 @@ The following code example shows how to compare multiple values with a single at
 **SDK for Python (Boto3)**
 Compare multiple values with a single attribute using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 from typing import Any, Dict, List, Optional
@@ -2416,7 +2416,7 @@ def compare_with_or_conditions(
 ```
 Example usage of comparing multiple values with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the compare_multiple_values function."""
     # Example parameters
@@ -2477,7 +2477,7 @@ The following code example shows how to conditionally update an item's TTL.
 **SDK for Python (Boto3)**
 Update TTL on on an existing DynamoDB Item in a table, with a condition.
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -2549,7 +2549,7 @@ The following code example shows how to count expression operators in DynamoDB.
 **SDK for Python (Boto3)**
 Demonstrate expression operator counting using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 from typing import Any, Dict, List, Optional, Tuple
@@ -2835,7 +2835,7 @@ def _test_expression_limit(
 ```
 Example usage of expression operator counting with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the expression operator counting functions."""
 
@@ -2948,7 +2948,7 @@ The following code example shows how to create a table with warm throughput enab
 **SDK for Python (Boto3)**
 Create DynamoDB table with warm throughput setting using AWS SDK for Python (Boto3).
 
-```
+```python
 from boto3 import client
 from botocore.exceptions import ClientError
 
@@ -3098,7 +3098,7 @@ The following code example shows how to create an item with TTL.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -3156,7 +3156,7 @@ The following code example shows how to perform advanced query operations in Dyn
 **SDK for Python (Boto3)**
 Query with strongly consistent reads using AWS SDK for Python (Boto3).
 
-```
+```python
 import time
 
 import boto3
@@ -3201,7 +3201,7 @@ def query_with_consistent_read(
 ```
 Query using a Global Secondary Index with AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -3252,7 +3252,7 @@ def query_gsi(table_name, index_name, partition_key_name, partition_key_value):
 ```
 Query with pagination using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -3377,7 +3377,7 @@ def query_with_pagination_generator(
 ```
 Query with complex filters using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -3531,7 +3531,7 @@ def query_with_complex_filter_and_or(
 ```
 Query with a dynamically constructed filter expression using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -3608,7 +3608,7 @@ def query_with_dynamic_filter(
 ```
 Query with a filter expression and limit using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -3667,7 +3667,7 @@ The following code example shows how to perform list operations in DynamoDB.
 **SDK for Python (Boto3)**
 Demonstrate list operations using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 import json
 from typing import Any, Dict, List, Optional, Union
@@ -3991,7 +3991,7 @@ def append_to_list_safely(
 ```
 Example usage of list operations with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use list operations in DynamoDB."""
     # Example parameters
@@ -4150,7 +4150,7 @@ The following code example shows how to perform map operations in DynamoDB.
 **SDK for Python (Boto3)**
 Demonstrate map operations using AWS SDK for Python (Boto3).
 
-```
+```python
 """
 Example of updating map attributes in DynamoDB.
 
@@ -4429,7 +4429,7 @@ The following code example shows how to perform set operations in DynamoDB.
 **SDK for Python (Boto3)**
 Demonstrate set operations using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from typing import Any, Dict, List
 
@@ -4689,7 +4689,7 @@ def work_with_number_set(
 ```
 Example usage of set operations with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the set operations functions."""
     # Example parameters
@@ -4789,7 +4789,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that can run batches of PartiQL statements.
 
-```
+```python
 from datetime import datetime
 from decimal import Decimal
 import logging
@@ -4852,7 +4852,7 @@ class PartiQLBatchWrapper:
 ```
 Run a scenario that creates a table and runs PartiQL queries in batches.
 
-```
+```python
 def run_scenario(scaffold, wrapper, table_name):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -4971,7 +4971,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that can run PartiQL statements.
 
-```
+```python
 from datetime import datetime
 from decimal import Decimal
 import logging
@@ -5031,7 +5031,7 @@ class PartiQLWrapper:
 ```
 Run a scenario that creates a table and runs PartiQL queries.
 
-```
+```python
 def run_scenario(scaffold, wrapper, table_name):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -5119,7 +5119,7 @@ The following code example shows how to query a table using a Global Secondary I
 **SDK for Python (Boto3)**
 Query a DynamoDB table using its primary key and a Global Secondary Index (GSI) with AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -5180,7 +5180,7 @@ The following code example shows how to query a table using a begins\_with condi
 **SDK for Python (Boto3)**
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -5224,7 +5224,7 @@ The following code example shows how to query a table using a date range in the 
 **SDK for Python (Boto3)**
 Query a DynamoDB table for items within a date range with AWS SDK for Python (Boto3).
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -5330,7 +5330,7 @@ The following code example shows how to query a table with a complex filter expr
 **SDK for Python (Boto3)**
 Query a DynamoDB table with a complex filter expression using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -5495,7 +5495,7 @@ The following code example shows how to query a table with a dynamic filter expr
 **SDK for Python (Boto3)**
 Query a DynamoDB table with a dynamically constructed filter expression using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -5572,7 +5572,7 @@ def query_with_dynamic_filter(
 ```
 Demonstrates how to use dynamic filter expressions with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the query_with_dynamic_filter function."""
     # Example parameters
@@ -5622,7 +5622,7 @@ The following code example shows how to query a table with a filter expression a
 **SDK for Python (Boto3)**
 Query a DynamoDB table with a filter expression and limit using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -5669,7 +5669,7 @@ def query_with_filter_and_limit(
 ```
 Demonstrates how to use filter expressions with limits in AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the query_with_filter_and_limit function."""
     # Example parameters
@@ -5716,7 +5716,7 @@ The following code example shows how to query a table with nested attributes.
 **SDK for Python (Boto3)**
 Query a DynamoDB table with nested attributes using AWS SDK for Python (Boto3).
 
-```
+```python
 from typing import Any, Dict, List
 
 import boto3
@@ -5860,7 +5860,7 @@ The following code example shows how to query a table with pagination.
 **SDK for Python (Boto3)**
 Query a DynamoDB table with pagination using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -5996,7 +5996,7 @@ The following code example shows how to query a table with strongly consistent r
 **SDK for Python (Boto3)**
 Query a DynamoDB table with the option for strongly consistent reads using AWS SDK for Python (Boto3).
 
-```
+```python
 import time
 
 import boto3
@@ -6049,7 +6049,7 @@ The following code example shows how to query for TTL items.
 **SDK for Python (Boto3)**
 Query Filtered Expression to gather TTL items in a DynamoDB table using AWS SDK for Python (Boto3).
 
-```
+```python
 from datetime import datetime
 
 import boto3
@@ -6104,7 +6104,7 @@ The following code example shows how to query tables using date and time pattern
 **SDK for Python (Boto3)**
 Query using date ranges in sort keys with AWS SDK for Python (Boto3).
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -6199,7 +6199,7 @@ def query_with_date_range_by_month(
 ```
 Query using date-time variables with AWS SDK for Python (Boto3).
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -6286,7 +6286,7 @@ The following code example shows how to understand update expression order.
 **SDK for Python (Boto3)**
 Demonstrate update expression order using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 import json
 from typing import Any, Dict, Optional
@@ -6527,7 +6527,7 @@ def update_with_conditional_value_copying(
 ```
 Example usage of update expression order with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use update expression order of operations in DynamoDB."""
     # Example parameters
@@ -6632,7 +6632,7 @@ The following code example shows how to update a table's warm throughput setting
 **SDK for Python (Boto3)**
 Update warm throughput setting on an existing DynamoDB table using AWS SDK for Python (Boto3).
 
-```
+```python
 from boto3 import client
 from botocore.exceptions import ClientError
 
@@ -6701,7 +6701,7 @@ The following code example shows how to update an item's TTL.
 
 **SDK for Python (Boto3)**
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -6775,7 +6775,7 @@ The following code example shows how to use atomic counter operations in DynamoD
 **SDK for Python (Boto3)**
 Demonstrate atomic counter operations using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 from typing import Any, Dict, Union
@@ -6934,7 +6934,7 @@ def atomic_conditional_increment(
 ```
 Example usage of atomic counter operations with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the atomic counter operations functions."""
     # Example parameters
@@ -7028,7 +7028,7 @@ The following code example shows how to use conditional operations in DynamoDB.
 **SDK for Python (Boto3)**
 Demonstrate conditional operations using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 from typing import Any, Dict, Optional, Tuple, Union
@@ -7272,7 +7272,7 @@ def conditional_check_and_update(
 ```
 Example usage of conditional operations with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the conditional operations functions."""
     # Example parameters
@@ -7387,7 +7387,7 @@ The following code example shows how to use expression attribute names in Dynamo
 **SDK for Python (Boto3)**
 Demonstrate expression attribute names using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 from typing import Any, Dict, List
@@ -7638,7 +7638,7 @@ def demonstrate_attribute_name_requirements(table_name: str, key: Dict[str, Any]
 ```
 Example usage of expression attribute names with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use expression attribute names in DynamoDB."""
     # Example parameters
@@ -7773,7 +7773,7 @@ The following code example shows how to implement a Lambda function that receive
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda) repository.
 Consuming a DynamoDB event with Lambda using Python.
 
-```
+```python
 import json
 
 def lambda_handler(event, context):
@@ -7797,7 +7797,7 @@ The following code example shows how to implement partial batch response for Lam
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-ddb-to-lambda-with-batch-item-handling) repository.
 Reporting DynamoDB batch item failures with Lambda using Python.
 
-```
+```python
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 def handler(event, context):

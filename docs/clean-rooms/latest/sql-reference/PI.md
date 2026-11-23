@@ -23,7 +23,7 @@ PI()
 
 To return the value of pi, use the following example.
 
-```
+```sql
 SELECT PI();
 
 +-------------------+

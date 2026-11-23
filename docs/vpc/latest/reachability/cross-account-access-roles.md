@@ -15,7 +15,7 @@ Deregistering a delegated administrator removes it from the account list so that
 
 This IAM policy role enables cross-account read-only access to resources through role switching. For more information, see [AmazonEC2ReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess) and [AWSDirectConnectReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSDirectConnectReadOnlyAccess) in the IAM console.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Enables Console Access role
 Resources:

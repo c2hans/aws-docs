@@ -25,7 +25,7 @@ The following code example shows how to use `CreateFHIRDatastore`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -77,7 +77,7 @@ The following code example shows how to use `CreateFHIRDatastore`.
 ```
 The following code shows an example of parameters for a SMART on FHIR-enabled HealthLake data store.
 
-```
+```python
             sse_configuration = {
                 "KmsEncryptionConfig": {"CmkType": "AWS_OWNED_KMS_KEY"}
             }
@@ -126,7 +126,7 @@ The following code example shows how to use `DeleteFHIRDatastore`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -162,7 +162,7 @@ The following code example shows how to use `DescribeFHIRDatastore`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -202,7 +202,7 @@ The following code example shows how to use `DescribeFHIRExportJob`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -245,7 +245,7 @@ The following code example shows how to use `DescribeFHIRImportJob`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -288,7 +288,7 @@ The following code example shows how to use `ListFHIRDatastores`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -337,7 +337,7 @@ The following code example shows how to use `ListFHIRExportJobs`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -405,7 +405,7 @@ The following code example shows how to use `ListFHIRImportJobs`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -473,7 +473,7 @@ The following code example shows how to use `ListTagsForResource`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -513,7 +513,7 @@ The following code example shows how to use `StartFHIRExportJob`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -569,7 +569,7 @@ The following code example shows how to use `StartFHIRImportJob`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -630,7 +630,7 @@ The following code example shows how to use `TagResource`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """
@@ -667,7 +667,7 @@ The following code example shows how to use `UntagResource`.
 
 **SDK for Python (Boto3)**
 
-```
+```python
     @classmethod
     def from_client(cls) -> "HealthLakeWrapper":
         """

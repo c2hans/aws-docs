@@ -162,7 +162,7 @@ In the following instructions, `{your-custom-redirect-domain}` is the custom red
 
 To authorize your iOS app to handle Universal Links on your custom redirect domain, host the following file at `https://{your-custom-redirect-domain}/.well-known/apple-app-site-association`:
 
-```
+```json
 {
   "applinks": {
     "apps": [],
@@ -187,7 +187,7 @@ After hosting this file, add your custom redirect domain to your app's Associate
 
 To authorize your Android app to handle App Links on your custom redirect domain, host the following file at `https://{your-custom-redirect-domain}/.well-known/assetlinks.json`:
 
-```
+```json
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
@@ -207,7 +207,7 @@ After hosting this file, add an intent filter in your app's `AndroidManifest.xml
 
 Use the `ses:custom-path` attribute on individual `<a>` tags in your email HTML to add a fixed path segment to the tracking URL:
 
-```
+```html
 <a href="https://example.com/product/123" ses:custom-path="myapp">View product</a>
 ```
 
@@ -223,7 +223,7 @@ The `ses:custom-path` value must meet the following requirements:
 
 The `ses:custom-path` value does not appear in click event data. To attach custom metadata to click events for link identification or analytics, use the optional `ses:tags` attribute:
 
-```
+```html
 <a href="https://example.com/product/123"
    ses:custom-path="myapp"
    ses:tags="category:product">View product</a>

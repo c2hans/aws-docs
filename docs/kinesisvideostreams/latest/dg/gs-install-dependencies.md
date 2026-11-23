@@ -18,7 +18,7 @@ For a list of supported operating systems, see [What operating systems does Amaz
 
    Type:
 
-   ```
+   ```bash
    wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add -
    sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
    sudo apt-get update
@@ -35,7 +35,7 @@ For a list of supported operating systems, see [What operating systems does Amaz
 
    Type:
 
-   ```
+   ```bash
    sudo yum update -y && sudo yum upgrade -y && sudo yum clean all -y
    sudo yum install -y gcc-c++ openssl-devel libcurl-devel gstreamer1* wget \
    java-11-amazon-corretto tar
@@ -43,7 +43,7 @@ For a list of supported operating systems, see [What operating systems does Amaz
 
    Install `log4cplus-2.1.0` from the source.
 
-   ```
+   ```bash
    wget https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_0/log4cplus-2.1.0.tar.gz
    tar -xzvf log4cplus-2.1.0.tar.gz
    cd log4cplus-2.1.0 && \
@@ -56,7 +56,7 @@ For a list of supported operating systems, see [What operating systems does Amaz
 
    Install `apache-maven-3.9.2` from the source.
 
-   ```
+   ```bash
    wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
    RUN tar -xzvf apache-maven-3.9.2-bin.tar.gz -C /opt
    ```

@@ -8,7 +8,7 @@ To get a specific prompt, make a POST request to the gateway’s MCP endpoint an
 
 **Example**
 
-```
+```http
 POST /mcp HTTP/1.1
 Host: ${GatewayEndpoint}
 Accept: application/json, text/event-stream
@@ -20,7 +20,7 @@ ${RequestBody}
 ```
 On version `2026-07-28`, each request carries the `MCP-Protocol-Version` header, the `Mcp-Method` and `Mcp-Name` request-metadata headers, and the `_meta` version fields in the body.
 
-```
+```http
 POST /mcp HTTP/1.1
 Host: ${GatewayEndpoint}
 Accept: application/json, text/event-stream
@@ -56,7 +56,7 @@ To see examples of getting a prompt from the gateway, select one of the followin
 **Example**
 The following curl request shows an example request to get a prompt called `myTarget___code_review` through a gateway with the ID `mygateway-abcdefghij`. Set the `MCP-Protocol-Version` header to a version that your gateway supports.
 
-```
+```bash
 curl -X POST \
   https://mygateway-abcdefghij.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp \
   -H "Accept: application/json, text/event-stream" \
@@ -78,7 +78,7 @@ curl -X POST \
 ```
 On version `2026-07-28`, include the `Mcp-Method` and `Mcp-Name` request-metadata headers and the `_meta` version fields in the body. The `MCP-Protocol-Version` header must match `_meta.io.modelcontextprotocol/protocolVersion`. Your gateway’s `supportedVersions` must include `2026-07-28`.
 
-```
+```bash
 curl -X POST \
   https://mygateway-abcdefghij.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp \
   -H "Accept: application/json, text/event-stream" \
@@ -110,7 +110,7 @@ curl -X POST \
 ```
 Set the `MCP-Protocol-Version` header to a version that your gateway supports.
 
-```
+```python
 import requests
 import json
 
@@ -147,7 +147,7 @@ print(json.dumps(result, indent=2))
 ```
 On version `2026-07-28`, include the `Mcp-Method` and `Mcp-Name` request-metadata headers and the `_meta` version fields in the body. The `MCP-Protocol-Version` header must match `_meta.io.modelcontextprotocol/protocolVersion`. Your gateway’s `supportedVersions` must include `2026-07-28`.
 
-```
+```python
 import requests
 import json
 
@@ -190,7 +190,7 @@ result = get_prompt(
 print(json.dumps(result, indent=2))
 ```
 
-```
+```python
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
 import asyncio
@@ -250,7 +250,7 @@ if __name__ == "__main__":
 ```
 NOTE: LangGraph MCP adapter prompt support might vary. Use the MCP Client approach shown previously for the most reliable `prompts/get` implementation.
 
-```
+```python
 import asyncio
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client

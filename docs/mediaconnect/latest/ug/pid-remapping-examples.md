@@ -19,7 +19,7 @@ In the MediaConnect console, you can create the same rules under **Rules** in th
 
 This example moves every stream to the auto map range.
 
-```
+```json
 "processors": {
   "singleProgramTransportStreamPidMap": {
     "rules": [],
@@ -33,7 +33,7 @@ This example moves every stream to the auto map range.
 
 This example moves the first video stream to PID 256, moves the English and Spanish audio and metadata streams to the auto map range, and drops the rest.
 
-```
+```json
 "processors": {
   "singleProgramTransportStreamPidMap": {
     "rules": [
@@ -51,7 +51,7 @@ This example moves the first video stream to PID 256, moves the English and Span
 
 This example moves the first video stream to PID 256, audio streams to PIDs 257–271, and metadata streams to PIDs 272–287, and drops the rest.
 
-```
+```json
 "processors": {
   "singleProgramTransportStreamPidMap": {
     "rules": [

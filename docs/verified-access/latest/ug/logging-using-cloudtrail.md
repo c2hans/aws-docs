@@ -36,7 +36,7 @@ Verified Access logs control plan operations as management events. For a list, s
 
 The following example shows a CloudTrail event that demonstrates the `CreateVerifiedAccessInstance` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

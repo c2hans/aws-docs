@@ -13,7 +13,7 @@ You can also utilize this strategy to restrict the model from revealing parts of
 
 User:
 
-```
+```Markdown
 You're an expert Prompts creator. Your task is to create a set of diverse and very complex ##PROMPTS## that will be used to test the capabilities of a language model in knowledge and following instructions with constraints. Please create 10 ##PROMPTS##. You must strictly follow ##GUIDELINES##:
 
 ##GUIDELINES##

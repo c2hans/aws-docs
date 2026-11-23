@@ -34,7 +34,7 @@ For more information on how MLflow model deployment works with Amazon SageMaker 
 
 If using an Amazon S3 path, you can find the path of your registered model with the following commands:
 
-```
+```python
 registered_model = client.get_registered_model(name={{'AutoRegisteredModel'}})
 source_path = registered_model.latest_versions[0].source
 ```
@@ -47,7 +47,7 @@ You must use version [2.224.0](https://pypi.org/project/sagemaker/2.224.0/) or l
 **Note**
 Use the following code example for reference. For end-to-end examples that show you how to deploy registered MLflow models, see [MLflow tutorials using example Jupyter notebooks](mlflow-tutorials.md).
 
-```
+```python
 from sagemaker.serve import ModelBuilder
 from sagemaker.serve.mode.function_pointers import Mode
 from sagemaker.serve import SchemaBuilder

@@ -8,23 +8,23 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
 
 You can determine the status of the cluster with the following commands.
 
-```
+```bash
 $ pcluster describe-cluster -n {{ad-cluster}} --region {{"region-id"}} --query "clusterStatus"
 ```
 
 The output is as follows.
 
-```
+```bash
 "CREATE_IN_PROGRESS" / "CREATE_COMPLETE"
 ```
 
 When the status reaches `"CREATE_COMPLETE"`, log in with the created user name and password.
 
-```
+```bash
 $ HEAD_NODE_IP=$(pcluster describe-cluster -n {{"ad-cluster"}} --region {{"region-id"}} --query headNode.publicIpAddress | xargs echo)
 ```
 
-```
+```bash
 $ ssh {{user000}}@$HEAD_NODE_IP
 ```
 

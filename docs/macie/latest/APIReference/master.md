@@ -43,7 +43,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### GetMasterAccountResponse schema
 <a name="master-response-body-getmasteraccountresponse-example"></a>
 
-```
+```json
 {
   "master": {
     "accountId": "string",
@@ -57,7 +57,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### ValidationException schema
 <a name="master-response-body-validationexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -66,7 +66,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### ServiceQuotaExceededException schema
 <a name="master-response-body-servicequotaexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -75,7 +75,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### AccessDeniedException schema
 <a name="master-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -84,7 +84,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### ResourceNotFoundException schema
 <a name="master-response-body-resourcenotfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -93,7 +93,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### ConflictException schema
 <a name="master-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -102,7 +102,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### ThrottlingException schema
 <a name="master-response-body-throttlingexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -111,7 +111,7 @@ This resource has been deprecated and is retained only for backward compatibilit
 #### InternalServerException schema
 <a name="master-response-body-internalserverexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

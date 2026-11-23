@@ -206,7 +206,7 @@ The following example creates an investigation group.
 #### Sample Request
 <a name="API_CreateInvestigationGroup_Example_1_Request"></a>
 
-```
+```json
 {
     "name:": "TestInvestigationGroup",
     "roleArn": "arn:aws:iam::123456789012:role/AdminNew",

@@ -19,7 +19,7 @@ aws elemental-inference create-question-set-version \
 
 The response describes the new version. Its `sha256` value equals the `sha256` value of `DRAFT`. The following example omits the question lists for brevity.
 
-```
+```json
 {
   "arn": "arn:aws:elemental-inference:us-west-2:111122223333:question-set/abcd1234efgh5678ijk",
   "id": "abcd1234efgh5678ijk",

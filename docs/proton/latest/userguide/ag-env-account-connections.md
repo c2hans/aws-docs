@@ -132,7 +132,7 @@ Decide on a name for the environment that you plan to create in your management 
 
 Run the following command:
 
-```
+```sh
 $ aws proton create-environment-account-connection \
     --environment-name "{{simple-env-connected}}" \
     --role-arn "arn:aws:iam::{{222222222222}}:role/service-role/{{env-account-proton-service-role}}" \
@@ -141,7 +141,7 @@ $ aws proton create-environment-account-connection \
 
 Response:
 
-```
+```json
 {
     "environmentAccountConnection": {
         "arn": "arn:aws:proton:region-id:222222222222:environment-account-connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -168,14 +168,14 @@ If you specify **Accept**, the status changes from *pending* to *connected*.
 
 Run the following command to accept the environment account connection:
 
-```
+```sh
 $ aws proton accept-environment-account-connection \
     --id "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environmentAccountConnection": {
         "arn": "arn:aws:proton:region-id:222222222222:environment-account-connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -193,14 +193,14 @@ Response:
 
 Run the following command to reject the environment account connection:
 
-```
+```sh
 $ aws proton reject-environment-account-connection \
     --id "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environmentAccountConnection": {
         "arn": "arn:aws:proton:us-east-1:222222222222:environment-account-connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -220,14 +220,14 @@ Response:
 
 Run the following get command:
 
-```
+```sh
 $ aws proton get-environment-account-connection \
     --id "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environmentAccountConnection": {
         "arn": "arn:aws:proton:region-id:222222222222:environment-account-connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -250,14 +250,14 @@ If you delete this environment account connection, AWS Proton won't be able to m
 
 Run the following command:
 
-```
+```sh
 $ aws proton delete-environment-account-connection \
     --id "{{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}"
 ```
 
 Response:
 
-```
+```json
 {
     "environmentAccountConnection": {
         "arn": "arn:aws:proton:us-east-1:222222222222:environment-account-connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

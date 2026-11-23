@@ -54,6 +54,15 @@ The tenancy model for this revenue attribution.
 Type: String
 Valid Values: `MULTI_TENANT | SINGLE_TENANT`
 
+ ** Context **
+The key-value context attributes associated with the revenue attribution.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\x21-\x7E]+`
+Value Length Constraints: Minimum length of 1. Maximum length of 1024.
+Value Pattern: `[\x20-\x7E]+`
+
  ** CreatedDate **
 The date when the revenue attribution was created.
 Type: Timestamp
@@ -117,22 +126,30 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 The request was denied due to insufficient permissions.
+ ** Message **
+A message that describes why access was denied.
  ** Reason **
 The reason for the access denial.
 HTTP Status Code: 403
 
  ** InternalServerException **
 An internal server error occurred. Retry your request.
+ ** Message **
+A message that describes the internal server error.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
 The specified resource was not found.
+ ** Message **
+A message that describes which resource was not found.
  ** Reason **
 The reason the resource was not found.
 HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was throttled due to too many requests. Retry your request.
+ ** Message **
+A message that indicates the request rate limit was exceeded.
  ** QuotaCode **
 The quota code associated with the throttling error.
  ** ServiceCode **
@@ -143,6 +160,8 @@ HTTP Status Code: 429
 The request failed validation due to invalid input parameters.
  ** FieldList **
 A list of fields that failed validation.
+ ** Message **
+A message that describes the validation failure.
  ** Reason **
 The reason for the validation failure.
 HTTP Status Code: 400

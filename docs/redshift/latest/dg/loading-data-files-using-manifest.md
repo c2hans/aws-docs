@@ -30,7 +30,7 @@ The optional `mandatory` flag specifies whether COPY should return an error if t
 
 The following example runs the COPY command with the manifest in the previous example, which is named `cust.manifest`.
 
-```
+```sql
 COPY customer
 FROM 's3://amzn-s3-demo-bucket/cust.manifest'
 IAM_ROLE 'arn:aws:iam::0123456789012:role/MyRedshiftRole'

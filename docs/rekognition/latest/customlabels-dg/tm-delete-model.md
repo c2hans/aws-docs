@@ -75,7 +75,7 @@ You can't delete a model if it is running or is training. To determine if the mo
    + `project_arn` – the ARN of the project that contains the model that you want to delete.
    + `model_arn` – the ARN of the model version that you want to delete.
 
-   ```
+   ```python
    # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    # SPDX-License-Identifier: Apache-2.0
 
@@ -209,7 +209,7 @@ You can't delete a model if it is running or is training. To determine if the mo
    + `project_arn` – the ARN of the project that contains the model that you want to delete.
    + `model_arn` – the ARN of the model version that you want to delete.
 
-   ```
+   ```java
    //Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
    //PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-custom-labels-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 

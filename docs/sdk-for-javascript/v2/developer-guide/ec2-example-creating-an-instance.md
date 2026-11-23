@@ -36,7 +36,7 @@ Create an object to pass the parameters for the `runInstances` method of the AWS
 
 The code next adds a `Name` tag to a new instance, which the Amazon EC2 console recognizes and displays in the **Name** field of the instance list. You can add up to 50 tags to an instance, all of which can be added in a single call to the `createTags` method.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Load credentials and set region from JSON file
@@ -95,7 +95,7 @@ instancePromise
 
 To run the example, type the following at the command line.
 
-```
+```sh
 node ec2_createinstances.js
 ```
 

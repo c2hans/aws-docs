@@ -65,7 +65,7 @@ To add the inline policy, complete the following steps:
 
 1. Choose the **JSON** tab and replace the contents with the following policy:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [

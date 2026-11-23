@@ -30,7 +30,7 @@ Power to raise *expression1*. Must be an `INTEGER`, `DECIMAL`, or `FLOAT` data t
 ## Example
 <a name="POWER-examples"></a>
 
-```
+```sql
 SELECT (SELECT SUM(qtysold) FROM sales, date
 WHERE sales.dateid=date.dateid
 AND year=2008) * POW((1+7::FLOAT/100),10) qty2010;

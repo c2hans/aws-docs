@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/observab
 
 The SDK for Ruby provides an OpenTelemetry provider called [`OTelProvider`](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Telemetry/OTelProvider.html). The following example configures telemetry export using OpenTelemetry for the Amazon Simple Storage Service service client. For this simple example, the `OTEL_TRACES_EXPORTER` environment variable from OpenTelemetry is used to export the traces to the console output when you run the code. To learn more about `OTEL_TRACES_EXPORTER`, see [Exporter Selection](https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/#exporter-selection) in the OpenTelemetry documentation.
 
-```
+```ruby
 require 'aws-sdk-s3'
 require 'opentelemetry-sdk'
 require 'opentelemetry-exporter-otlp'
@@ -41,7 +41,7 @@ The previous code example shows the steps to configuring trace output for a serv
 
 1.  Using SDK for Ruby's OpenTelemetry provider, create an instance of the `OTelProvider` to pass as a configuration option to the service client that you want to trace.
 
-   ```
+   ```ruby
    otel_provider = Aws::Telemetry::OTelProvider.new
    client = Aws::S3::Client.new(telemetry_provider: otel_provider)
    ```
@@ -132,7 +132,7 @@ Instead of turning on telemetry for a specific service client like the previous 
 
 To emit telemetry data for **all** AWS service clients, you can set the telemetry provider on the `Aws.config` prior to creating service clients.
 
-```
+```ruby
 otel_provider = Aws::Telemetry::OTelProvider.new
 Aws.config[:telemetry_provider] = otel_provider
 ```

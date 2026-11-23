@@ -11,7 +11,7 @@ You can use AutoGluon-Tabular as an Amazon SageMaker AI built-in algorithm. The 
 
   After specifying the AutoGluon-Tabular image URI, you can use the AutoGluon-Tabular container to construct a ModelTrainer using the SageMaker AI ModelTrainer API and initiate a training job. The AutoGluon-Tabular built-in algorithm runs in script mode, but the training script is provided for you and there is no need to replace it. If you have extensive experience using script mode to create a SageMaker training job, then you can incorporate your own AutoGluon-Tabular training scripts.
 
-  ```
+  ```py
   from sagemaker.core import image_uris
   from sagemaker.core import model_uris, script_uris
 

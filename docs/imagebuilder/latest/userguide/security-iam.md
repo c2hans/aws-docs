@@ -45,7 +45,7 @@ For all resources, allow the following actions:
 + `ec2:RegisterImage`
 + `ec2:DescribeSnapshots`
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ The `Condition` block uses the `IpAddress` and `NotIpAddress` conditions and the
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "IBPolicyId1",

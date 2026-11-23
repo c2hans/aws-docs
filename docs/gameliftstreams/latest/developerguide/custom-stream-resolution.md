@@ -62,7 +62,7 @@ After the stream is active, you can view the current resolution in the real-time
 
 Use the `start-stream-session` command with the `--display-configuration` parameter:
 
-```
+```bash
 aws gameliftstreams start-stream-session \
   --identifier sg-ExampleStreamGroup \
   --application-identifier a-ExampleApp \
@@ -76,7 +76,7 @@ aws gameliftstreams start-stream-session \
 
 In the [StartStreamSession](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_StartStreamSession.html) API request, include the `DisplayConfiguration` parameter:
 
-```
+```json
 {
   "ApplicationIdentifier": "a-ExampleApp",
   "Protocol": "WebRTC",

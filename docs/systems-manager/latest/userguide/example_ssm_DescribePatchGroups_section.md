@@ -53,7 +53,7 @@ For more information, see Create a Patch Group <https://docs.aws.amazon.com/syst
 **Tools for PowerShell V4**
 **Example 1: This example lists the patch group registrations.**
 
-```
+```powershell
 Get-SSMPatchGroup
 ```
 **Output:**
@@ -68,7 +68,7 @@ Amazon.SimpleSystemsManagement.Model.PatchBaselineIdentity Production
 **Tools for PowerShell V5**
 **Example 1: This example lists the patch group registrations.**
 
-```
+```powershell
 Get-SSMPatchGroup
 ```
 **Output:**

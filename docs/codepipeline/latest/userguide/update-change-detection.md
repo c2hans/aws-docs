@@ -285,7 +285,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 
    **Why am I making this change?** Changing this parameter to `false` turns off periodic checks so you can use event-based change detection only.
 
-   ```
+   ```json
    "configuration": {
        {{"PollForSourceChanges": "false",}}
        "BranchName": "main",
@@ -330,7 +330,7 @@ The **update-pipeline** command stops the pipeline. If a revision is being run t
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -360,7 +360,7 @@ The **update-pipeline** command stops the pipeline. If a revision is being run t
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -452,7 +452,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-```
+```yaml
 Resources:
   AppPipeline:
     Type: AWS::CodePipeline::Pipeline
@@ -483,7 +483,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 "Stages": [
     {
         "Name": "Source",
@@ -525,7 +525,7 @@ Resources:
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -554,7 +554,7 @@ Resources:
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "EventRole": {
      "Type": "AWS::IAM::Role",
      "Properties": {
@@ -612,7 +612,7 @@ Resources:
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRule:
        Type: AWS::Events::Rule
        Properties:
@@ -642,7 +642,7 @@ Resources:
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "EventRule": {
      "Type": "AWS::Events::Rule",
      "Properties": {
@@ -762,7 +762,7 @@ In many cases, the `PollForSourceChanges` parameter defaults to true when you cr
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -784,7 +784,7 @@ In many cases, the `PollForSourceChanges` parameter defaults to true when you cr
 ------
 #### [ JSON ]
 
-  ```
+  ```json
   {
     "Name": "Source",
     "Actions": [
@@ -821,7 +821,7 @@ In many cases, the `PollForSourceChanges` parameter defaults to true when you cr
 **Example**
 When you create these resources with CloudFormation, your pipeline is triggered when files in your repository are created or updated. Here is the final template snippet:
 
-```
+```yaml
 Resources:
   EventRole:
     Type: AWS::IAM::Role
@@ -898,7 +898,7 @@ Resources:
 ...
 ```
 
-```
+```json
     "Resources": {
 
 ...
@@ -1106,7 +1106,7 @@ To build an event-driven pipeline with Amazon S3, you edit the `PollForSourceCha
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -1138,7 +1138,7 @@ To build an event-driven pipeline with Amazon S3, you edit the `PollForSourceCha
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -1195,7 +1195,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 
    **Why am I making this change?** Setting this parameter to `false` turns off periodic checks so you can use event-based change detection only.
 
-   ```
+   ```json
    "configuration": {
        "S3Bucket": "amzn-s3-demo-source-bucket",
        {{"PollForSourceChanges": "false",}}
@@ -1247,7 +1247,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-```
+```yaml
   AppPipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
@@ -1278,7 +1278,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-```
+```json
         "AppPipeline": {
             "Type": "AWS::CodePipeline::Pipeline",
             "Properties": {
@@ -1332,7 +1332,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -1363,7 +1363,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRole": {
        "Type": "AWS::IAM::Role",
        "Properties": {
@@ -1422,7 +1422,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRule:
        Type: AWS::Events::Rule
        Properties:
@@ -1451,7 +1451,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRule": {
        "Type": "AWS::Events::Rule",
        "Properties": {
@@ -1530,7 +1530,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -1552,7 +1552,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
    {
       "Name": "SourceAction",
       "ActionTypeId": {
@@ -1585,7 +1585,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 When you use CloudFormation to create these resources, your pipeline is triggered when files in your repository are created or updated.
 Do not stop here. Although your pipeline is created, you must create a second CloudFormation template for your Amazon S3 pipeline. If you do not create the second template, your pipeline does not have any change detection functionality.
 
-```
+```yaml
 Parameters:
   SourceObjectKey:
     Description: 'S3 source artifact'
@@ -1805,7 +1805,7 @@ Resources:
 ```
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -1897,7 +1897,7 @@ For more information, see [Creating a trail with the AWS command line interface]
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -1929,7 +1929,7 @@ For more information, see [Creating a trail with the AWS command line interface]
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -2016,7 +2016,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 
    **Why am I making this change?** Setting this parameter to `false` turns off periodic checks so you can use event-based change detection only.
 
-   ```
+   ```json
    "configuration": {
        "S3Bucket": "amzn-s3-demo-source-bucket",
        {{"PollForSourceChanges": "false",}}
@@ -2067,7 +2067,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-```
+```yaml
   AppPipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
@@ -2098,7 +2098,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-```
+```json
         "AppPipeline": {
             "Type": "AWS::CodePipeline::Pipeline",
             "Properties": {
@@ -2152,7 +2152,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRole:
        Type: AWS::IAM::Role
        Properties:
@@ -2183,7 +2183,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRole": {
        "Type": "AWS::IAM::Role",
        "Properties": {
@@ -2242,7 +2242,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      EventRule:
        Type: AWS::Events::Rule
        Properties:
@@ -2276,7 +2276,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "EventRule": {
        "Type": "AWS::Events::Rule",
        "Properties": {
@@ -2354,7 +2354,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    Outputs:
      SourceBucketARN:
        Description: "S3 bucket ARN that Cloudtrail will use"
@@ -2366,7 +2366,7 @@ The `Configuration` property in the source stage called `PollForSourceChanges`. 
 ------
 #### [ JSON ]
 
-   ```
+   ```json
      "Outputs" : {
        "SourceBucketARN" : {
          "Description" : "S3 bucket ARN that Cloudtrail will use",
@@ -2420,7 +2420,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -2442,7 +2442,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
    {
       "Name": "SourceAction",
       "ActionTypeId": {
@@ -2479,7 +2479,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
   ###################################################################################
   # Prerequisites:
   #   - S3 SourceBucket and SourceObjectKey must exist
@@ -2546,7 +2546,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
   {
     "Parameters": {
       "SourceObjectKey": {
@@ -2675,7 +2675,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 When you use CloudFormation to create these resources, your pipeline is triggered when files in your repository are created or updated.
 Do not stop here. Although your pipeline is created, you must create a second CloudFormation template for your Amazon S3 pipeline. If you do not create the second template, your pipeline does not have any change detection functionality.
 
-```
+```yaml
 Resources:
   SourceBucket:
     Type: AWS::S3::Bucket
@@ -2886,7 +2886,7 @@ Outputs:
       Name: SourceBucketARN
 ```
 
-```
+```json
     "Resources": {
         "SourceBucket": {
             "Type": "AWS::S3::Bucket",
@@ -3582,7 +3582,7 @@ Note the `PollForSourceChanges` configuration property in the source stage. If y
 ------
 #### [ YAML ]
 
-```
+```yaml
 Resources:
   AppPipeline:
     Type: AWS::CodePipeline::Pipeline
@@ -3616,7 +3616,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
         "AppPipeline": {
             "Type": "AWS::CodePipeline::Pipeline",
             "Properties": {
@@ -3682,7 +3682,7 @@ To disable periodic checks, you must explicitly add the `PollForSourceChanges` p
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
    Parameters:
            GitHubOwner:
              Type: String
@@ -3693,7 +3693,7 @@ To disable periodic checks, you must explicitly add the `PollForSourceChanges` p
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
    	"Parameters": {
    		"BranchName": {
@@ -3723,7 +3723,7 @@ The `TargetAction` you specify must match the `Name` property of the source acti
 ------
 #### [ YAML ]
 
-   ```
+   ```yaml
      AppPipelineWebhook:
        Type: AWS::CodePipeline::Webhook
        Properties:
@@ -3746,7 +3746,7 @@ The `TargetAction` you specify must match the `Name` property of the source acti
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    "AppPipelineWebhook": {
        "Type": "AWS::CodePipeline::Webhook",
        "Properties": {
@@ -3796,7 +3796,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ YAML ]
 
-  ```
+  ```yaml
             Name: Source
             Actions:
               -
@@ -3820,7 +3820,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 ------
 #### [ JSON ]
 
-  ```
+  ```json
    {
       "Name": "Source",
       "Actions": [{
@@ -3856,7 +3856,7 @@ When you create a pipeline with this method, the `PollForSourceChanges` paramete
 **Example**
 When you create these resources with CloudFormation, the webhook defined is created in the specified GitHub repository. Your pipeline is triggered on commit.
 
-```
+```yaml
 Parameters:
   GitHubOwner:
     Type: String
@@ -3907,7 +3907,7 @@ Resources:
 ...
 ```
 
-```
+```json
 {
     "Parameters": {
         "BranchName": {

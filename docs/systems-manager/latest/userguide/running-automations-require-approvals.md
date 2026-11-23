@@ -85,7 +85,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ Linux & macOS ]
 
-   ```
+   ```sh
    aws ssm start-automation-execution \
        --document-name "{{AWS-StartEC2InstanceWithApproval}}" \
        --parameters "InstanceId={{i-02573cafcfEXAMPLE}},Approvers=arn:aws:iam::{{123456789012:role/Administrator}},SNSTopicArn=arn:aws:sns:{{region:123456789012:AutomationApproval}}"
@@ -94,7 +94,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ Windows ]
 
-   ```
+   ```sh
    aws ssm start-automation-execution ^
        --document-name "{{AWS-StartEC2InstanceWithApproval}}" ^
        --parameters "InstanceId={{i-02573cafcfEXAMPLE}},Approvers=arn:aws:iam::{{123456789012:role/Administrator}},SNSTopicArn=arn:aws:sns:{{region:123456789012:AutomationApproval}}"
@@ -103,7 +103,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Start-SSMAutomationExecution `
        -DocumentName AWS-StartEC2InstanceWithApproval `
        -Parameters @{
@@ -150,7 +150,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm send-automation-signal \
       --automation-execution-id "{{df325c6d-b1b1-4aa0-8003-6cb7338213c6}}" \
       --signal-type "Approve" \
@@ -160,7 +160,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm send-automation-signal ^
       --automation-execution-id "{{df325c6d-b1b1-4aa0-8003-6cb7338213c6}}" ^
       --signal-type "Approve" ^
@@ -170,7 +170,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ PowerShell ]
 
-  ```
+  ```powershell
   Send-SSMAutomationSignal `
       -AutomationExecutionId {{df325c6d-b1b1-4aa0-8003-6cb7338213c6}} `
       -SignalType Approve `
@@ -187,7 +187,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ Linux & macOS ]
 
-  ```
+  ```sh
   aws ssm send-automation-signal \
       --automation-execution-id "{{df325c6d-b1b1-4aa0-8003-6cb7338213c6}}" \
       --signal-type "Deny" \
@@ -197,7 +197,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ Windows ]
 
-  ```
+  ```sh
   aws ssm send-automation-signal ^
       --automation-execution-id "{{df325c6d-b1b1-4aa0-8003-6cb7338213c6}}" ^
       --signal-type "Deny" ^
@@ -207,7 +207,7 @@ The specific names of the parameter values for approvers and the SNS topic depen
 ------
 #### [ PowerShell ]
 
-  ```
+  ```powershell
   Send-SSMAutomationSignal `
       -AutomationExecutionId {{df325c6d-b1b1-4aa0-8003-6cb7338213c6}} `
       -SignalType Deny `

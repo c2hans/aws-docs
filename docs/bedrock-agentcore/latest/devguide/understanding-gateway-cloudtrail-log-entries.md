@@ -24,7 +24,7 @@ The following sections show examples of CloudTrail events:
 
 The following example shows a CloudTrail log entry that demonstrates the `InvokeGateway` action with an authentication error. The authentication error can be seen in the `body` field of the `responseElements`.
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -93,7 +93,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Invoke
 
 The following example shows a CloudTrail log entry for a successful `InvokeGateway` action:
 
-```
+```json
 {
       "eventVersion": "1.11",
       "userIdentity": {
@@ -182,7 +182,7 @@ The following example shows a CloudTrail log entry for a successful `InvokeGatew
 
 The following example shows a CloudTrail log entry for a management event:
 
-```
+```json
 {
   "eventVersion": "1.09",
   "userIdentity": {

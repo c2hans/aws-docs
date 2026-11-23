@@ -99,7 +99,7 @@ Here is a sample policy that includes these actions. Add this policy to the IAM 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -11,7 +11,7 @@ The context key for your trust provider comes from the policy reference name tha
 
 The following [JSON schema](https://json-schema.org/) shows which data is included in the evaluation.
 
-```
+```JSON
 {
    "title": "AWS IAM Identity Center context specification",
    "type": "object",

@@ -79,7 +79,7 @@ Use the following example that includes confused deputy protection when you crea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ You can publish usage reports to Amazon S3 buckets that are owned by the AWS acc
 
 After you subscribe to daily usage reports, each day, Amazon SNS puts a CSV file with usage data in the following location:
 
-```
+```bash
 {{<my-s3-bucket>}}/SMSUsageReports/{{<region>}}/{{YYYY}}/{{MM}}/{{DD}}/{{00x}}.csv.gz
 ```
 

@@ -104,7 +104,7 @@ The following example key policy statement allows AWS CodeArtifact to create gra
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-consolepolicy-3",

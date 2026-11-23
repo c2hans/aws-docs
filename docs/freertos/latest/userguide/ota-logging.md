@@ -103,7 +103,7 @@ An MQTT topic used to make the request that generated the log.
 
 The following is an example log generated when a code-signing job is started:
 
-```
+```json
 {
     "timestamp": "2018-07-23 22:59:44.955",
     "logLevel": "DEBUG",
@@ -117,7 +117,7 @@ The following is an example log generated when a code-signing job is started:
 
 The following is an example log generated when an AWS IoT job is created:
 
-```
+```json
 {
     "timestamp": "2018-07-23 22:59:45.363",
     "logLevel": "DEBUG",
@@ -132,7 +132,7 @@ The following is an example log generated when an AWS IoT job is created:
 
 The following is an example log generated when an OTA update is created:
 
-```
+```json
 {
     "timestamp": "2018-07-23 22:59:45.413",
     "logLevel": "DEBUG",
@@ -146,7 +146,7 @@ The following is an example log generated when an OTA update is created:
 
 The following is an example log generated when a stream is created:
 
-```
+```json
 {
     "timestamp": "2018-07-23 23:00:26.391",
     "logLevel": "DEBUG",
@@ -161,7 +161,7 @@ The following is an example log generated when a stream is created:
 
 The following is an example log generated when an OTA update is deleted:
 
-```
+```json
 {
     "timestamp": "2018-07-23 23:03:09.505",
     "logLevel": "DEBUG",
@@ -175,7 +175,7 @@ The following is an example log generated when an OTA update is deleted:
 
 The following is an example log generated when a device requests a stream from the MQTT-based file delivery feature:
 
-```
+```json
 {
     "timestamp": "2018-07-25 22:09:02.678",
     "logLevel": "DEBUG",
@@ -192,7 +192,7 @@ The following is an example log generated when a device requests a stream from t
 
 The following is an example log generated when a device calls the `DescribeStream` API:
 
-```
+```json
 {
     "timestamp": "2018-07-25 22:10:12.690",
     "logLevel": "DEBUG",

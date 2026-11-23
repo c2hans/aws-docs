@@ -69,7 +69,7 @@ App
 
 The following is an example of our application code:
 
-```
+```typescript
 const app = new cdk.App();
 const myStack = new cdk.Stack(app, 'MyStack');
 
@@ -104,7 +104,7 @@ App
 
 And the refactored code would be:
 
-```
+```typescript
 // Refactored structure
 const app = new cdk.App();
 
@@ -180,7 +180,7 @@ To get started with refactoring, complete these prerequisites:
  **Bootstrap your environment with the latest template**
 The CDK refactoring feature requires new permissions in the bootstrap stack. To ensure you have the necessary permissions, bootstrap your environment with the latest template:
 
-```
+```bash
 cdk bootstrap
 ```
 For more information on bootstrapping, see [Bootstrapping environments for AWS CDK](bootstrapping-env.md).
@@ -188,7 +188,7 @@ For more information on bootstrapping, see [Bootstrapping environments for AWS C
  **Install the latest CDK CLI version**
 CDK refactoring requires a recent version of the CDK CLI. To ensure you have the latest version:
 
-```
+```bash
 npm install -g aws-cdk
 ```
 For detailed installation instructions, see [Getting started with the AWS CDK](getting-started.md).
@@ -201,7 +201,7 @@ The CDK CLI automatically computes all resource mappings based on comparing your
  **Create an override file to resolve ambiguities**
 An override file is a JSON file that provides mappings when the CDK CLI is unable to determine a refactoring resolution for resources. The file contains resource mappings organized by environment:
 
-```
+```json
 {
     "environments": [
         {
@@ -222,7 +222,7 @@ In this file:
 + Values represent the new locations in the same format.
 To use an override file with the CDK CLI:
 
-```
+```bash
 cdk refactor --override-file=overrides.json
 ```
 
@@ -273,14 +273,14 @@ You must be able to use the CDK CLI in your CI/CD environment to benefit from th
  **Integrating refactoring into your pipeline workflow**
 If you are using the CLI for deployment in your CI/CD pipeline, your script typically looks like:
 
-```
+```bash
 ...
 cdk deploy <stack filter>
 ...
 ```
 If you want to include refactoring as part of the workflow, the following is a basic example:
 
-```
+```bash
 ...
 cdk refactor <stack filter>
 cdk deploy <stack filter>
@@ -291,14 +291,14 @@ You can also have refactoring as a separate step in your pipeline.
  **Handling refactor failures**
 Be aware that `cdk refactor` will fail if your code includes actual resource modifications alongside refactoring. Since you’re calling refactor automatically in your pipeline, you need to handle potential failures:
 
-```
+```bash
 # Allow refactoring to fail but continue the pipeline
 cdk refactor <stack filter> || true
 cdk deploy <stack filter>
 ```
 Alternatively, you might want to ensure that no deployment happens until you’ve run a successful refactor:
 
-```
+```bash
 # Only deploy if refactoring succeeds
 cdk refactor <stack filter> && cdk deploy <stack filter>
 ```

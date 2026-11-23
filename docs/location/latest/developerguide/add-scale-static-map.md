@@ -14,7 +14,7 @@ In this example, you will display a map of Helsinki, Finland with the scale set 
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&zoom=13.5&center=24.9189564,60.1645772&scale-unit=Kilometers&key={{API_KEY}}
 ```
 
@@ -33,7 +33,7 @@ In this example, you will display a map of Helsinki, Finland with both `Kilomete
 ------
 #### [ Request URL ]
 
-```
+```terminal
 https://maps.geo.eu-central-1.amazonaws.com/v2/static/map?style=Satellite&width=1024&height=1024&zoom=14&center=24.9189564,60.1645772&scale-unit=KilometersMiles&key={{API_KEY}}
 ```
 

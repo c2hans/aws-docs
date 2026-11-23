@@ -28,7 +28,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CloudFrontToOaiToS3 } from '@aws-solutions-constructs/aws-cloudfront-oai-s3';
@@ -36,7 +36,7 @@ import { CloudFrontToOaiToS3 } from '@aws-solutions-constructs/aws-cloudfront-oa
 new CloudFrontToOaiToS3(this, 'test-cloudfront-oai-s3', {});
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_cloudfront_oai_s3 import CloudFrontToOaiToS3
 from aws_cdk import Stack
 from constructs import Construct
@@ -44,7 +44,7 @@ from constructs import Construct
 CloudFrontToOaiToS3(self, 'test-cloudfront-oai-s3')
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

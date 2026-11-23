@@ -14,7 +14,7 @@ You must create at least two subnets in different availability zones in your pri
 
 The following is an example of the `VpcConfig` parameter that you include in your call to `CreateModel`:
 
-```
+```json
 VpcConfig: {
       "Subnets": [
           "subnet-0123456789abcdef0",
@@ -76,7 +76,7 @@ You can also use a bucket policy to restrict access to your S3 buckets to only t
 
 The default endpoint policy allows users to install packages from the Amazon Linux and Amazon Linux 2 repositories on the model container. If you don't want users to install packages from those repositories, create a custom endpoint policy that explicitly denies access to the Amazon Linux and Amazon Linux 2 repositories. The following is an example of a policy that denies access to these repositories:
 
-```
+```json
 {
     "Statement": [
       {
@@ -95,7 +95,7 @@ The default endpoint policy allows users to install packages from the Amazon Lin
 }
 ```
 
-```
+```json
 {
     "Statement": [
         { "Sid": "AmazonLinux2AMIRepositoryAccess",
@@ -122,7 +122,7 @@ The `SageMakerFullAccess` managed policy includes the permissions that you need 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

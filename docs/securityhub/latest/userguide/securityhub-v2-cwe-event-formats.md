@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 **Example**
  This format is used when Security Hub sends an event to EventBridge.
 
-```
+```json
 {
    "version":"0",
    "id":"CWE-event-id",

@@ -35,7 +35,7 @@ To enable logging for AI agents, you use the CloudWatch API. Complete the follow
 
 1. Call [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html): Use this CloudWatch API to create a delivery source for the assistant. Pass the ARN of the assistant as the `resourceArn`. For `logType`, specify `EVENT_LOGS` to collect logs from your assistant.
 
-   ```
+   ```json
    {
    "logType": "EVENT_LOGS",
    "name": "{{your-assistant-delivery-source}}",
@@ -47,7 +47,7 @@ To enable logging for AI agents, you use the CloudWatch API. Complete the follow
 
    The following example shows how to configure logs to be stored in an Amazon CloudWatch Logs Group and in JSON format.
 
-   ```
+   ```json
    {
    "deliveryDestinationConfiguration": {
        "destinationResourceArn": "arn:aws:logs:{{your-region}}:{{your-account-id}}:log-group:{{your-log-group-name}}:*"
@@ -62,7 +62,7 @@ To enable logging for AI agents, you use the CloudWatch API. Complete the follow
 
 1. Call [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html): Use this CloudWatch API to link the delivery source to the delivery destination that you created in the previous steps. This API operation associates the delivery source with the end destination.
 
-   ```
+   ```json
    {
    "deliveryDestinationArn": "string",
    "deliverySourceName": "string",
@@ -76,7 +76,7 @@ The following example shows how to run the previous steps as a sequence of AWS C
 
 1. Create a delivery source for the assistant. Use the assistant ARN as the resource ARN, and specify `EVENT_LOGS` as the log type.
 
-   ```
+   ```bash
    aws logs put-delivery-source \
        --name {{your-assistant-delivery-source}} \
        --resource-arn arn:aws:wisdom:{{your-region}}:{{your-account-id}}:assistant/{{assistant-id}} \
@@ -85,7 +85,7 @@ The following example shows how to run the previous steps as a sequence of AWS C
 
 1. Create a delivery destination that points to your log group. To send logs to Amazon S3 or Amazon Data Firehose instead, specify that resource ARN.
 
-   ```
+   ```bash
    aws logs put-delivery-destination \
        --name {{your-delivery-destination}} \
        --delivery-destination-configuration "destinationResourceArn=arn:aws:logs:{{your-region}}:{{your-account-id}}:log-group:{{your-log-group-name}}" \
@@ -94,7 +94,7 @@ The following example shows how to run the previous steps as a sequence of AWS C
 
 1. Link the delivery source to the delivery destination. Use the destination ARN that the previous command returns.
 
-   ```
+   ```bash
    aws logs create-delivery \
        --delivery-source-name {{your-assistant-delivery-source}} \
        --delivery-destination-arn arn:aws:logs:{{your-region}}:{{your-account-id}}:delivery-destination:{{your-delivery-destination}}
@@ -187,7 +187,7 @@ Below are examples of different event logs for each event type. Refer to the [Ev
 #### CreateSession
 <a name="create-session-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173612,
@@ -200,7 +200,7 @@ Below are examples of different event logs for each event type. Refer to the [Ev
 #### IntentTriggeringReference
 <a name="intent-triggering-reference-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173623,
@@ -216,7 +216,7 @@ Below are examples of different event logs for each event type. Refer to the [Ev
 
 Query Reformulation
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
@@ -236,7 +236,7 @@ Query Reformulation
 
 Intent Detection
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
@@ -256,7 +256,7 @@ Intent Detection
 
 Intent Answer Generation
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
@@ -276,7 +276,7 @@ Intent Answer Generation
 
 Manual Search Generation
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
@@ -296,7 +296,7 @@ Manual Search Generation
 #### QueryAssistant
 <a name="query-assistant-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173667,
@@ -309,7 +309,7 @@ Manual Search Generation
 #### Recommendation
 <a name="recommendation-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173656,
@@ -324,7 +324,7 @@ Manual Search Generation
 #### ResultFeedback
 <a name="result-feedback-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173667,
@@ -338,7 +338,7 @@ Manual Search Generation
 #### SelfServiceMessage
 <a name="self-service-message-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "completion": "{\"citations\":[{\"generatedResponsePart\":{\"textResponsePart\":{\"span\":{\"end\":276,\"start\":0},\"text\":\"To autoscale Amazon DynamoDB...\"}}]}",
@@ -357,7 +357,7 @@ Manual Search Generation
 #### TranscriptSessionPolled
 <a name="transcript-session-polled-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "connect_user_arn": "arn:aws:connect:us-east-1:204585150770:instance/seaa9988-2233-4f44-8899-abcabcabcabc/agent/agbbccdd-9999-4b23-aaee-112233445566",
@@ -371,7 +371,7 @@ Manual Search Generation
 #### TriggerDetectionModelInvocation
 <a name="trigger-detection-model-invocation-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173634,
@@ -387,7 +387,7 @@ Manual Search Generation
 #### Utterance
 <a name="utterance-example"></a>
 
-```
+```json
 {
 "assistant_id": "a1c2d3e4-5b67-4a89-9abc-def012345678",
 "event_timestamp": 1729530173623,
@@ -403,7 +403,7 @@ Manual Search Generation
 
 Customer message
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -421,7 +421,7 @@ Customer message
 
 Bot text response
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -441,7 +441,7 @@ Bot text response
 
 Tool use
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -460,7 +460,7 @@ Tool use
 
 Tool result
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -479,7 +479,7 @@ Tool result
 
 Reasoning
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -501,7 +501,7 @@ Reasoning
 
 Maximum orchestration iterations exceeded
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -518,7 +518,7 @@ Maximum orchestration iterations exceeded
 
 System capacity constraints
 
-```
+```json
 {
 "ai_agent_id": "ai112233-7a85-4b3c-8def-0123456789ab",
 "ai_agent_orchestration_use_case": "CONNECT_AGENT_ASSISTANCE",
@@ -538,7 +538,7 @@ System capacity constraints
 
 Successful orchestration span (no guardrail intervention)
 
-```
+```json
 {
 "timestamp": 1729530173612,
 "resource_arn": "arn:aws:wisdom:us-east-1:204585150770:assistant/a1c2d3e4-5b67-4a89-9abc-def012345678",
@@ -587,7 +587,7 @@ Successful orchestration span (no guardrail intervention)
 
 Guardrail blocks output (topic policy violation)
 
-```
+```json
 {
 "timestamp": 1729530173612,
 "resource_arn": "arn:aws:wisdom:us-east-1:204585150770:assistant/a1c2d3e4-5b67-4a89-9abc-def012345678",
@@ -629,7 +629,7 @@ Guardrail blocks output (topic policy violation)
 
 Truncated input messages (long conversation)
 
-```
+```json
 {
 "timestamp": 1729530173612,
 "resource_arn": "arn:aws:wisdom:us-east-1:204585150770:assistant/a1c2d3e4-5b67-4a89-9abc-def012345678",

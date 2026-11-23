@@ -8,7 +8,7 @@ This guide documents the new AWS Wickr administration console, released on March
 
 This message identifies when a conversation is pinned or unpinned. The **pinned** value is true when the conversation is pinned, and false when it is being unpinned.
 
-```
+```json
 {
   "control": {
     "pinned": true,

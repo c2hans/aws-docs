@@ -16,13 +16,13 @@ You can create an interface VPC endpoint to connect to AWS IoT FleetWise by usin
 
 After you create an interface VPC endpoint, if you enable private DNS hostnames for the endpoint, the default AWS IoT FleetWise endpoint resolves to your VPC endpoint. The default service name endpoint for AWS IoT FleetWise is in the following format.
 
-```
+```bash
 iotfleetwise.{{Region}}.amazonaws.com
 ```
 
 If you don't enable private DNS hostnames, Amazon VPC provides a DNS endpoint name that you can use in the following format.
 
-```
+```bash
 {{VPCE_ID}}.iotfleetwise.{{Region}}.vpce.amazonaws.com
 ```
 
@@ -47,7 +47,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 **Example – VPC endpoint policy to deny all access from a specified AWS account**
 The following VPC endpoint policy denies AWS account {{123456789012}} all API calls using the endpoint.
 
-```
+```json
 {
     "Statement": [
         {
@@ -73,7 +73,7 @@ The following VPC endpoint policy denies AWS account {{123456789012}} all API ca
 **Example – VPC endpoint policy to allow VPC access only to a specified IAM principal (user)**
 The following VPC endpoint policy allows full access only to the a user {{lijuan}} in AWS account {{123456789012}}. It denies all other IAM principals access to the endpoint.
 
-```
+```json
 {
     "Statement": [
         {
@@ -92,7 +92,7 @@ The following VPC endpoint policy allows full access only to the a user {{lijuan
 **Example – VPC endpoint policy for AWS IoT FleetWise actions**
 The following is an example of an endpoint policy for AWS IoT FleetWise. When attached to an endpoint, this policy grants access to the listed AWS IoT FleetWise actions for the IAM user {{fleetWise}} in the AWS account {{123456789012}}.
 
-```
+```json
 {
     "Statement": [
         {

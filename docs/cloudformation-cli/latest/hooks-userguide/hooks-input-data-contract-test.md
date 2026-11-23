@@ -21,7 +21,7 @@ CloudFormation offers two ways for you to specify the input data for it to use w
 
 The following is an example of Amazon S3 Hook's input data using the `overrides` file.
 
-```
+```java
 {
     "CREATE_PRE_PROVISION": {
         "AWS::S3::Bucket": {
@@ -134,7 +134,7 @@ The following is an example directory for `inputs` for Amazon S3 specifying inpu
 `inputs_1_pre_create.json`  <a name="inputs_1_pre_create.json"></a>
 The following is an example of the `inputs_1_pre_create.json` contract test.
 
-```
+```java
 {
     "AWS::S3::Bucket": {
         "resourceProperties": {
@@ -166,7 +166,7 @@ The following is an example of the `inputs_1_pre_create.json` contract test.
 `inputs_1_pre_update.json`  <a name="inputs_1_pre_update.json"></a>
 The following is an example of the `inputs_1_pre_update.json` contract test.
 
-```
+```java
 {
     "AWS::S3::Bucket": {
         "resourceProperties": {
@@ -204,7 +204,7 @@ The following is an example of the `inputs_1_pre_update.json` contract test.
 `inputs_1_invalid.json`  <a name="inputs_1_invalid.json"></a>
 The following is an example of the `inputs_1_invalid.json` contract test.
 
-```
+```java
 {
     "AWS::S3::Bucket": {
         "resourceProperties": {
@@ -233,7 +233,7 @@ The following is an example of the `inputs_1_invalid.json` contract test.
 `inputs_1_invalid_pre_update.json`  <a name="inputs_1_invalid_pre_update.json"></a>
 The following is an example of the `inputs_1_invalid_pre_update.json` contract test.
 
-```
+```java
 {
     "AWS::S3::Bucket": {
         "resourceProperties": {

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/channel-id-output-b
 
 Here's an output example for a batch transcription with channel identification enabled.
 
-```
+```json
 {
     "jobName": "my-first-transcription-job",
     "accountId": "111122223333",

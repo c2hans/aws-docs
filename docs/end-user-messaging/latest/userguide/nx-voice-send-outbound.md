@@ -12,7 +12,7 @@ While your account is in the sandbox, you can only place calls to verified desti
 **To place a text-to-speech call**
 + Use the [send-voice-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-voice-message.html) command. Provide the spoken text in `--message-body`.
 
-  ```
+  ```bsh
   aws pinpoint-sms-voice-v2 send-voice-message \\
       --destination-phone-number {{+12065550150}} \\
       --origination-identity {{pool-a1b2c3d4e5f6g7h8i}} \\

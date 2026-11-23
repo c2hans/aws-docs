@@ -20,7 +20,7 @@ Update the *access policy* with the following statement to permit AWS End User M
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ If your Amazon SNS topic has server-side encryption enabled with AWS Key Managem
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "example-ID",

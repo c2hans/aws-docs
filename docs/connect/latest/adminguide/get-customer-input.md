@@ -99,7 +99,7 @@ Choose the following options:
 
 The following code example shows how a DTMF configuration would be represented by the [GetParticipantInput](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-getparticipantinput.html) action in the Flow language.
 
-```
+```json
 {
       "Parameters": {
         "StoreInput": "False",
@@ -354,7 +354,7 @@ For more information, see [How flow blocks use Amazon Lex session attributes](ho
 
 The following code sample shows how an Amazon Lex configuration would be represented by the [ConnectParticipantWithLexBot](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-connectparticipantwithlexbot.html) action in the Flow language:
 
-```
+```json
 {
     "Parameters": {
       "Text": "Welcome to Example Corp. Please press 1 for sales, press 2 for support",
@@ -392,7 +392,7 @@ The following code sample shows how an Amazon Lex configuration would be represe
 
 The following code sample represents a fragmented [Compare](https://docs.aws.amazon.com/connect/latest/APIReference/flow-control-actions-compare.html) action for a Amazon Lex V2 sentiment score returned from a Lex bot after the conversation.
 
-```
+```json
 {
       "Parameters": {
         "ComparisonValue": "$.Lex.SentimentResponse.Scores.Negative"

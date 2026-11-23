@@ -143,7 +143,7 @@ For more information, see [Create a Custom Patch Baseline](https://docs.aws.amaz
 **Tools for PowerShell V4**
 **Example 1: This example creates a patch baseline that approves patches, seven days after they are released by Microsoft, for managed instances running Windows Server 2019 in a production environment.**
 
-```
+```powershell
 $rule = New-Object Amazon.SimpleSystemsManagement.Model.PatchRule
 $rule.ApproveAfterDays = 7
 
@@ -183,7 +183,7 @@ pb-0z4z6221c4296b23z
 **Tools for PowerShell V5**
 **Example 1: This example creates a patch baseline that approves patches, seven days after they are released by Microsoft, for managed instances running Windows Server 2019 in a production environment.**
 
-```
+```powershell
 $rule = New-Object Amazon.SimpleSystemsManagement.Model.PatchRule
 $rule.ApproveAfterDays = 7
 

@@ -151,7 +151,7 @@ Business users can customize the report format, add new workflows, or change app
 
  **Example report sections**:
 
-```
+```html
 Critical Issues Detected:
 - Battery degradation affecting 847 vehicles
 - Revenue at risk: $2.3M

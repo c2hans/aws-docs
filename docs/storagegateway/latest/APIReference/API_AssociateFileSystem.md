@@ -146,7 +146,7 @@ This example illustrates one usage of AssociateFileSystem.
 #### Sample Request
 <a name="API_AssociateFileSystem_Example_1_Request"></a>
 
-```
+```json
 __Sample Request__
 {
  "UserName": "Admin",
@@ -166,7 +166,7 @@ This example illustrates one usage of AssociateFileSystem.
 #### Sample Response
 <a name="API_AssociateFileSystem_Example_2_Response"></a>
 
-```
+```json
 __Sample Response__
 {
   "FileSystemAssociationARNList": ["arn:aws:storagegateway:us-east-1:111122223333:fs-association/fsa-1122AABBCCDDEEFFG"]

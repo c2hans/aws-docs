@@ -48,6 +48,10 @@ Required: No
          "accountId": "string",
          "lastUpdatedTimestamp": number,
          "organizationRuleMode": "string",
+         "organizationRuleModeSource": {
+            "sourceTargetId": "string",
+            "sourceType": "string"
+         },
          "status": "string",
          "statusReason": "string"
       }
@@ -79,11 +83,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
  You do not have sufficient permissions to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ForbiddenException **
  You are not authorized to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
  An internal error occurred while processing the request.
@@ -94,20 +98,20 @@ HTTP Status Code: 500
 HTTP Status Code: 400
 
  ** NotManagementAccountException **
- The operation can only be performed by a management account.
+ The operation can only be performed by an organization's management account or a delegated administrator.
 HTTP Status Code: 400
 
  ** OptInRequiredException **
  The account must be opted in to Compute Optimizer Automation before performing this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ServiceUnavailableException **
  The service is temporarily unavailable.
-HTTP Status Code: 500
+HTTP Status Code: 503
 
  ** ThrottlingException **
  The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_automation_ListAccounts_SeeAlso"></a>

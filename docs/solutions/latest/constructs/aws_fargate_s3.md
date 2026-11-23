@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { FargateToS3, FargateToS3Props } from '@aws-solutions-constructs/aws-fargate-s3';
@@ -38,7 +38,7 @@ const constructProps: FargateToS3Props = {
 new FargateToS3(this, 'test-construct', constructProps);
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_fargate_s3 import FargateToS3, FargateToS3Props
 from aws_cdk import (
     Stack
@@ -50,7 +50,7 @@ FargateToS3(self, 'test_construct',
             ecr_repository_arn="arn:aws:ecr:us-east-1:123456789012:repository/your-ecr-repo")
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-things-thingname-connectivityinfo-get-cli"></a>
 
-```
+```bash
 aws greengrass get-connectivity-info \
   --thing-name <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass get-connectivity-info \
 
 cli-input-json format:
 
-```
+```json
 {
 "ThingName": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 Success.
  [ GetConnectivityInfoResponse](definitions-getconnectivityinforesponse.md)
 
-```
+```json
 {
 "message": "string",
 "ConnectivityInfo": [
@@ -93,7 +93,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -129,7 +129,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -179,7 +179,7 @@ Produces: application/json
 The connectivity information.
 where used: body; required:
 
-```
+```json
 {
 "ConnectivityInfo": [
   {
@@ -225,7 +225,7 @@ type: string
 ### CLI
 <a name="-greengrass-things-thingname-connectivityinfo-put-cli"></a>
 
-```
+```bash
 aws greengrass update-connectivity-info \
   --thing-name <value> \
   [--connectivity-info <value>]  \
@@ -235,7 +235,7 @@ aws greengrass update-connectivity-info \
 
 cli-input-json format:
 
-```
+```json
 {
 "ThingName": "string",
 "ConnectivityInfo": [
@@ -256,7 +256,7 @@ cli-input-json format:
 Success.
  [ UpdateConnectivityInfoResponse](definitions-updateconnectivityinforesponse.md)
 
-```
+```json
 {
 "message": "string",
 "Version": "string"
@@ -273,7 +273,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -309,7 +309,7 @@ type: string
 Server error.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

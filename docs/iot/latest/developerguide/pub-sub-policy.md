@@ -48,7 +48,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -104,7 +104,7 @@ For devices not registered in AWS IoT Core registry, the following policy allows
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -167,7 +167,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -215,7 +215,7 @@ For devices not registered in AWS IoT Core registry, the following policy allows
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -267,7 +267,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -323,7 +323,7 @@ For devices not registered in AWS IoT Core registry, the following policy allows
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -386,7 +386,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -454,7 +454,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -501,7 +501,7 @@ For devices not registered in AWS IoT Core registry, the following policy allows
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -552,7 +552,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -591,7 +591,7 @@ For devices not registered in AWS IoT Core registry, the following policy allows
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -636,7 +636,7 @@ For devices registered in AWS IoT Core registry, the following policy allows dev
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -680,7 +680,7 @@ For devices not registered in AWS IoT Core registry, the following policy allows
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -743,7 +743,7 @@ To allow unauthenticated Amazon Cognito identities to publish messages over HTTP
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -771,7 +771,7 @@ To allow unauthenticated Amazon Cognito identities to publish MQTT messages over
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

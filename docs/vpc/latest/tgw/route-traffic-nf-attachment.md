@@ -43,7 +43,7 @@ Use the AWS CLI or API to route traffic through a transit gateway network functi
 
   The following example routes traffic to a network function attachment of type AWS Network Firewall:
 
-  ```
+  ```bash
   aws ec2 create-transit-gateway-route \
     --transit-gateway-route-table-id tgw-rtb-0123456789abcdef0 \
     --destination-cidr-block 0.0.0.0/0 \
@@ -52,7 +52,7 @@ Use the AWS CLI or API to route traffic through a transit gateway network functi
 
   The output then returns:
 
-  ```
+  ```json
   {
     "Route": {
       "DestinationCidrBlock": "0.0.0.0/0",

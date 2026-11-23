@@ -16,6 +16,8 @@ The term *data mesh* refers to any architectural framework that enables access t
 
 ![Financial data mesh reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/financial-data-mesh-reference-architecture.png)
 
+*Figure 1. Financial data mesh*
+
  **Architecture description**
 +  **Producer accounts:** Business domains manage the lifecycle of their datasets in their own AWS accounts, including ETL, security, retention, and backup.
 +  **Catalog account:**

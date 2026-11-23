@@ -20,7 +20,7 @@ You can uninstall the Live Streaming on AWS solution from the AWS Management Con
 
 Determine whether the AWS Command Line Interface (AWS CLI) is available in your environment. For installation instructions, refer to [What Is the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) in the *AWS CLI User Guide*. After confirming that the AWS CLI is available, run the following command.
 
-```
+```bash
 $ aws cloudformation delete-stack --stack-name <installation-stack-name>
 ```
 
@@ -39,6 +39,6 @@ This solution is configured to retain the solution-created Amazon S3 buckets if 
 
 To delete the S3 buckets using AWS CLI, run the following command. You will not need to empty the bucket first when using the `--force` option.
 
-```
+```bash
 $ aws s3 rb s3://<bucket-name> --force
 ```

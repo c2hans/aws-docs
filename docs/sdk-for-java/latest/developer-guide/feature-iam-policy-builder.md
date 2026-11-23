@@ -12,7 +12,7 @@ The IAM Policy Builder API became available with version 2.20.105 of the SDK, so
 
 The following snippet shows an example dependency block for a Maven `pom.xml` file. This allows you to use the IAM Policy Builder API in your project.
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.awssdk</groupId>
     <artifactId>iam-policy-builder</artifactId>
@@ -32,7 +32,7 @@ In each of the following examples, start with the `[IamPolicy.Builder](https://s
 
 The following example creates an identity-based policy that permits the Amazon DynamoDB `GetItem` action between two points in time.
 
-```
+```java
     public String timeBasedPolicyExample() {
         IamPolicy policy = IamPolicy.builder()
                 .addStatement(b -> b
@@ -68,7 +68,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -94,7 +94,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 
 The following example shows how you can create an identity-based policy that allows access to specific DynamoDB attributes. The policy contains three conditions.
 
-```
+```java
     public String multipleConditionsExample() {
         IamPolicy policy = IamPolicy.builder()
                 .addStatement(b -> b
@@ -135,7 +135,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -173,7 +173,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 
 The following example shows how to create a resource-based policy that denies access to a bucket for all principals except for those specified in the condition.
 
-```
+```java
     public String specifyPrincipalsExample() {
         IamPolicy policy = IamPolicy.builder()
                 .addStatement(b -> b
@@ -204,7 +204,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : {
@@ -228,7 +228,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 
 The following example shows how to allow another AWS account to upload objects to your bucket while retaining full owner control of the uploaded objects.
 
-```
+```java
     public String allowCrossAccountAccessExample() {
         IamPolicy policy = IamPolicy.builder()
                 .addStatement(b -> b
@@ -258,7 +258,7 @@ Read more about this [example](https://docs.aws.amazon.com/AmazonS3/latest/userg
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : {
@@ -286,7 +286,7 @@ After you have created a `IamPolicy` instance, you use an [`IamClient`](https://
 
 The following example builds a policy that allows an [IAM identity](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) to write items to a DynamoDB table in the account that is specified with the `accountID` parameter. The policy is then uploaded to IAM as a JSON string.
 
-```
+```java
     public String createAndUploadPolicyExample(IamClient iam, String accountID, String policyName) {
         // Build the policy.
         IamPolicy policy =
@@ -305,7 +305,7 @@ The following example builds a policy that allows an [IAM identity](https://docs
 
 The next example builds on the previous example. The code downloads the policy and uses it as the basis for a new policy by copying and altering the statement. The new policy is then uploaded.
 
-```
+```java
     public String createNewBasedOnExistingPolicyExample(IamClient iam, String accountID, String policyName, String newPolicyName) {
 
         String policyArn = "arn:aws:iam::" + accountID + ":policy/" + policyName;
@@ -343,7 +343,7 @@ The next example builds on the previous example. The code downloads the policy a
 
 The previous examples use an `IamClient` argument that is created as shown in the following snippet.
 
-```
+```json
 IamClient iam = IamClient.builder().region(Region.AWS_GLOBAL).build();
 ```
 
@@ -352,7 +352,7 @@ IamClient iam = IamClient.builder().region(Region.AWS_GLOBAL).build();
 
 The examples return the following JSON strings.
 
-```
+```json
 First example
 {
   "Version": "2012-10-17",

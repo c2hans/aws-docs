@@ -17,7 +17,7 @@ To allow the connector to synchronize AWS Health data for a specific Region, you
 
 1. Set up an Amazon EventBridge rule to detect changes to findings and push them to the queue. For more information, refer to [Getting started with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html). The rule should have the following event pattern and point to the SQS queue from step 1.
 
-```
+```json
 "EventPattern": {
     "source": ["aws.health"]
 }

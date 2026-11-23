@@ -35,13 +35,13 @@ Before you use these tutorials, you must have first [installed your toolchain](n
 
 1. In that folder, run the following command to create the .NET project.
 
-   ```
+   ```sh
    dotnet new console --name S3CreateAndList
    ```
 
 1. Go to the newly created `S3CreateAndList` folder and run the following commands:
 
-   ```
+   ```sh
    dotnet add package AWSSDK.S3
    dotnet add package AWSSDK.SecurityToken
    dotnet add package AWSSDK.SSO
@@ -57,7 +57,7 @@ Before you use these tutorials, you must have first [installed your toolchain](n
 
 1. Replace the contents with the following code and save the file.
 
-   ```
+   ```csharp
    using System;
    using System.Threading.Tasks;
 
@@ -184,7 +184,7 @@ Before you use these tutorials, you must have first [installed your toolchain](n
 
 1. Run the following command.
 
-   ```
+   ```sh
    dotnet run
    ```
 
@@ -194,7 +194,7 @@ Before you use these tutorials, you must have first [installed your toolchain](n
 
 1. Run the following command, replacing {{amzn-s3-demo-bucket}} with the name of the bucket that you chose.
 
-   ```
+   ```sh
    dotnet run {{amzn-s3-demo-bucket}}
    ```
 

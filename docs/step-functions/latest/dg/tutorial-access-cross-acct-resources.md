@@ -62,7 +62,7 @@ Alternatively, you can also specify a [reference path](amazon-states-language-pa
 
 Your `Task` state definition should now look similar to the following definition.
 
-```
+```json
 {
   "StartAt": "Cross-account call",
   "States": {
@@ -96,7 +96,7 @@ After you create the trust relationship, a user from the source account can use 
 
 1. Choose **Edit trust policy** and paste the following trust policy. Make sure to replace the AWS account number and IAM role ARN. The `sts:ExternalId` field further controls who can assume the role. The state machine's name must include only characters that the AWS Security Token Service `AssumeRole` API supports. For more information, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -129,7 +129,7 @@ Permissions in the IAM policies determine whether a specific request is allowed 
 
 1. Choose the **JSON** tab and replace the existing content with the following permission. Make sure to replace your Lambda function ARN.
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -161,7 +161,7 @@ Step Functions doesn’t automatically generate the [AssumeRole](https://docs.aw
 
 1. Choose the **JSON** tab and replace the existing content with the following permission. Make sure to replace your Lambda function ARN.
 
-   ```
+   ```JSON
    {
      "Version": "2012-10-17",
      "Statement": [

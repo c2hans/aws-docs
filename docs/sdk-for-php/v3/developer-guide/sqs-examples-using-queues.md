@@ -24,7 +24,7 @@ Before running the example code, configure your AWS credentials, as described in
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -33,7 +33,7 @@ use Aws\Sqs\SqsClient;
 
  **Sample Code**
 
-```
+```php
 $client = new SqsClient([
     'profile' => 'default',
     'region' => 'us-west-2',
@@ -56,7 +56,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -65,7 +65,7 @@ use Aws\Sqs\SqsClient;
 
  **Sample Code**
 
-```
+```php
 $queueName = "SQS_QUEUE_NAME";
 
 $client = new SqsClient([
@@ -94,7 +94,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -103,7 +103,7 @@ use Aws\Sqs\SqsClient;
 
  **Sample Code**
 
-```
+```php
 $queueName = "SQS_QUEUE_NAME";
 
 $client = new SqsClient([
@@ -128,7 +128,7 @@ try {
 
  **Imports**
 
-```
+```php
 require 'vendor/autoload.php';
 
 use Aws\Exception\AwsException;
@@ -137,7 +137,7 @@ use Aws\Sqs\SqsClient;
 
  **Sample Code**
 
-```
+```php
 $queueUrl = "SQS_QUEUE_URL";
 
 $client = new SqsClient([

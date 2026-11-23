@@ -20,7 +20,7 @@ Remember the following:
 
 This example shows a configuration with an Amazon Transcribe processor and an Amazon S3 recording sink. The example also enables partial results stabilization, which can reduce latency in output, but may impact accuracy. For more information, refer to [ Partial-result stabilization](https://docs.aws.amazon.com/transcribe/latest/dg/streaming-partial-results.html#streaming-partial-result-stabilization), in the *Amazon Transcribe Developer Guide*.
 
-```
+```json
 {
     "MediaInsightsPipelineConfigurationName": unique_configuration_name,
     "ResourceAccessRoleArn": {{role_arn}},

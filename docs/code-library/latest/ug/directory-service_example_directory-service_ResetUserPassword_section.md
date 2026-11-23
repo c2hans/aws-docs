@@ -31,7 +31,7 @@ For more information, see [Resetting and enabling an AWS Managed Microsoft AD us
 **Tools for PowerShell V4**
 **Example 1: This example resets the password of Active Direcotry user named ADUser in AWS Managed microsoft AD or Simple AD Directory**
 
-```
+```powershell
 Reset-DSUserPassword -UserName ADuser -DirectoryId d-123456ijkl -NewPassword $Password
 ```
 +  For API details, see [ResetUserPassword](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ Reset-DSUserPassword -UserName ADuser -DirectoryId d-123456ijkl -NewPassword $Pa
 **Tools for PowerShell V5**
 **Example 1: This example resets the password of Active Direcotry user named ADUser in AWS Managed microsoft AD or Simple AD Directory**
 
-```
+```powershell
 Reset-DSUserPassword -UserName ADuser -DirectoryId d-123456ijkl -NewPassword $Password
 ```
 +  For API details, see [ResetUserPassword](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

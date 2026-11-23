@@ -33,7 +33,7 @@ The following code example shows how to get started using Step Functions.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 import boto3
 
 def hello_stepfunctions(stepfunctions_client):
@@ -72,7 +72,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class StateMachineScenario:
     """Runs an interactive scenario that shows how to get started using Step Functions."""
 
@@ -322,7 +322,7 @@ if __name__ == "__main__":
 ```
 Define a class that wraps state machine actions.
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -473,7 +473,7 @@ class StateMachine:
 ```
 Define a class that wraps activity actions.
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -619,7 +619,7 @@ The following code example shows how to use `CreateActivity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -659,7 +659,7 @@ The following code example shows how to use `CreateStateMachine`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -706,7 +706,7 @@ The following code example shows how to use `DeleteActivity`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -747,7 +747,7 @@ The following code example shows how to use `DeleteStateMachine`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -788,7 +788,7 @@ The following code example shows how to use `DescribeExecution`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
     def describe_run(self, run_arn):
         """
         Get data about a state machine run, such as its current status or final output.
@@ -821,7 +821,7 @@ The following code example shows how to use `DescribeStateMachine`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -863,7 +863,7 @@ The following code example shows how to use `GetActivityTask`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -907,7 +907,7 @@ The following code example shows how to use `ListActivities`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -950,7 +950,7 @@ The following code example shows how to use `ListStateMachines`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 Find a state machine by name by searching the list of state machines for the account.
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 
@@ -992,7 +992,7 @@ The following code example shows how to use `SendTaskSuccess`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class Activity:
     """Encapsulates Step Function activity actions."""
 
@@ -1036,7 +1036,7 @@ The following code example shows how to use `StartExecution`.
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/stepfunctions#code-examples).
 
-```
+```python
 class StateMachine:
     """Encapsulates Step Functions state machine actions."""
 

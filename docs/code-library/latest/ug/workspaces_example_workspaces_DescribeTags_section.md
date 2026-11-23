@@ -40,7 +40,7 @@ For more information, see [Tag WorkSpaces resources](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This Sample fetches tag for the given Workspace**
 
-```
+```powershell
 Get-WKSTag -WorkspaceId ws-w361s234r -Region us-west-2
 ```
 **Output:**
@@ -56,7 +56,7 @@ purpose     Workbench
 **Tools for PowerShell V5**
 **Example 1: This Sample fetches tag for the given Workspace**
 
-```
+```powershell
 Get-WKSTag -WorkspaceId ws-w361s234r -Region us-west-2
 ```
 **Output:**

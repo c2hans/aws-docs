@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 **Note**
  The code snippets shown here are for illustration only and may not be accurate. Validate against your own environment and requirements unique to your workload.
 
-   ```
+   ```json
    {
    "eventVersion": "1.08",
    "userIdentity": {

@@ -29,7 +29,7 @@ The following code example shows how to use `CreateTemplate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create an email template.
     /// </summary>
@@ -75,7 +75,7 @@ The following code example shows how to use `DeleteIdentity`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an email identity.
     /// </summary>
@@ -111,7 +111,7 @@ The following code example shows how to use `DeleteTemplate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an email template.
     /// </summary>
@@ -147,7 +147,7 @@ The following code example shows how to use `GetIdentityVerificationAttributes`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get identity verification status for an email.
     /// </summary>
@@ -185,7 +185,7 @@ The following code example shows how to use `GetSendQuota`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get information on the current account's send quota.
     /// </summary>
@@ -217,7 +217,7 @@ The following code example shows how to use `ListIdentities`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get the identities of a specified type for the current account.
     /// </summary>
@@ -253,7 +253,7 @@ The following code example shows how to use `ListTemplates`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List email templates for the current account.
     /// </summary>
@@ -285,7 +285,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     ///  Send an email by using Amazon SES.
     /// </summary>
@@ -356,7 +356,7 @@ The following code example shows how to use `SendTemplatedEmail`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Send an email using a template.
     /// </summary>
@@ -405,7 +405,7 @@ The following code example shows how to use `VerifyEmailIdentity`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Starts verification of an email identity. This request sends an email
     /// from Amazon SES to the specified email address. To complete

@@ -26,7 +26,7 @@ The following code example shows how to use `ConvertTo-TRNTargetLanguage`.
 **Tools for PowerShell V4**
 **Example 1: Converts the specified English text to French. The text to convert can also be passed as the -Text parameter.**
 
-```
+```powershell
 "Hello World" | ConvertTo-TRNTargetLanguage -SourceLanguageCode en -TargetLanguageCode fr
 ```
 +  For API details, see [TranslateText](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.

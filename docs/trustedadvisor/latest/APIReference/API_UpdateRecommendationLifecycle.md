@@ -107,7 +107,7 @@ Update the lifecycle stage of a recommendation managed by AWS Trusted Advisor Pr
 #### Sample Request
 <a name="API_UpdateRecommendationLifecycle_Example_1_Request"></a>
 
-```
+```json
 {
                     "recommendationIdentifier": "arn:aws:trustedadvisor::000000000000:recommendation/861c9c6e-f169-405a-8b59-537a8caccd7a",
                     "lifecycleStage": "resolved",

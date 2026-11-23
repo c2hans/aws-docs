@@ -146,7 +146,7 @@ HTTP Status Code: 400
 
 The following example shows how to return information about ten model copy jobs in an account, using the AWS CLI.
 
-```
+```bash
 aws bedrock list-model-copy-jobs --max-results 10
 ```
 

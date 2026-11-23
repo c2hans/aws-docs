@@ -55,7 +55,7 @@ To use the AWS Management Console to enable speaker diarization in your transcri
 
 The following request uses the AWS SDK for Python (Boto3) to start a batch transcription job of a primary care clinician patient dialogue with speaker partitioning enabled.
 
-```
+```python
 from __future__ import print_function
 import time
 import boto3
@@ -88,7 +88,7 @@ print(status)
 
 The following example code shows the transcription results of a transcription job with speaker partitioning enabled.
 
-```
+```json
 {
     "jobName": "job ID",
     "accountId": "111122223333",
@@ -172,7 +172,7 @@ The following example code shows the transcription results of a transcription jo
 
   The following code shows the contents of `example-start-command.json`.
 
-  ```
+  ```json
   {
       "MedicalTranscriptionJobName": "{{my-first-med-transcription-job}}",
        "Media": {

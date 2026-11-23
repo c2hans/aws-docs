@@ -27,7 +27,7 @@ To retrieve the ARN of a user or a group, use the `Describe` operation on the re
 
 Following is an example policy. It means that the caller with this policy attached can invoke the `CreateGroupMembership` operation for any group, if the user name they are adding to the group isn't `user1`.
 
-```
+```json
 {
 	"Effect": "Allow",
 	"Action": "quicksight:CreateGroupMembership",
@@ -51,25 +51,25 @@ The following procedure explains how to interact with Quick Sight API operations
 
 1. Set up your AWS CLI identity and AWS Region using the following command and follow-up instructions. Use the credentials for an IAM identity or role that has the proper permissions.
 
-   ```
+   ```bash
    aws configure
    ```
 
 1. Look at Quick Sight SDK help by running the following command.
 
-   ```
+   ```bash
    aws quicksight help
    ```
 
 1. To get detailed instructions on how to use an API, enter its name followed by `help`, as follows.
 
-   ```
+   ```bash
    aws quicksight list-users help
    ```
 
 1. Call an Quick Sight API operation. The following example returns a list of Quick Sight users in your account.
 
-   ```
+   ```bash
    aws quicksight list-users \
    --aws-account-id {{aws-account-id}} \
    --namespace default \
@@ -89,7 +89,7 @@ Use the following procedure to set up a Java app that interacts with Quick Sight
 
 1. After your IDE indexes the Quick Sight SDK, add an import line as follows.
 
-   ```
+   ```java
    import com.amazonaws.services.quicksight.AmazonQuickSight;
    ```
 
@@ -110,7 +110,7 @@ Use the following procedure to set up a Java app that interacts with Quick Sight
 
    The following client method is used to make all the API calls that follow.
 
-   ```
+   ```java
    private static AmazonQuickSight getClient() {
    	final AWSCredentialsProvider credsProvider = new AWSCredentialsProvider() {
    	@Override
@@ -135,7 +135,7 @@ Use the following procedure to set up a Java app that interacts with Quick Sight
 
    Provide the AWS account ID that you used to subscribe to Quick Sight. This ID must match the AWS account ID of the caller's identity. Cross-account calls aren't supported at this time. Also, make sure that the required parameter `namespace` is set to {{`default`}}.
 
-   ```
+   ```java
    getClient().listUsers(new ListUsersRequest()
    	.withAwsAccountId("{{relevant_AWS_account_ID}}")
    	.withNamespace("default"))
@@ -163,7 +163,7 @@ Use the following procedure to interact with Quick Sight using Node.js.
 
 1. Use the following code example to test your setup. HTTPS is required. The example displays a full listing of Quick Sight operations along with their URL request parameters, followed by a list of Quick Sight users in your account.
 
-   ```
+   ```javascript
    const AWS = require('aws-sdk');
    const https = require('https');
 
@@ -209,7 +209,7 @@ Use the following procedure to create a custom-built `botocore` package to inter
 
 1. As a test, use the following example code, a sample app that first creates, deletes, and lists groups. Then it lists users in a Quick Sight account.
 
-   ```
+   ```python
    import botocore.session
    default_namespace = 'default'
    account_id = '{{relevant_AWS_Account}}'
@@ -263,7 +263,7 @@ Use the following procedure to interact with Quick Sight using C\#.NET. This exa
 
 1. Copy and paste the following sample app into your console app editor.
 
-   ```
+   ```csharp
    using System;
    using Amazon.QuickSight.Model;
    using Amazon.QuickSight;

@@ -74,7 +74,7 @@ The solution uses the `aws:SourceArn` condition key in resource-based policies t
 
 The Resource Operation Lambda function has a resource-based policy that restricts API Gateway invocations to only the deployed API. This policy ensures that only the specific API Gateway instance can invoke the Lambda function, preventing other API Gateway instances from impersonating the service.
 
-```
+```json
 {
   "Version": "2012-10-17",			 	 	 &TCX5-2025-waiver;
   "Statement": [
@@ -99,7 +99,7 @@ The Resource Operation Lambda function has a resource-based policy that restrict
 
 SQS queues that receive events from EventBridge have policies that restrict message sending to specific EventBridge rules. This policy ensures that only the specific EventBridge rule can send messages to the queue, preventing unauthorized event sources from injecting messages.
 
-```
+```json
 {
   "Version": "2012-10-17",			 	 	 &TCX5-2025-waiver;
   "Statement": [

@@ -28,7 +28,7 @@ The query engine is able to use sort order to efficiently select which data bloc
 
 For example, the following query shows details for tables that use interleaved sort keys.
 
-```
+```sql
 select tbl as tbl_id, stv_tbl_perm.name as table_name,
 col, interleaved_skew, last_reindex
 from svv_interleaved_columns, stv_tbl_perm
@@ -101,7 +101,7 @@ If the range of sort keys in a set of new rows overlaps the range of existing ke
 
 To determine what proportion of a table was remerged, query SVV\_VACUUM\_SUMMARY after the vacuum operation completes. The following query shows the effect of six successive vacuums as CUSTSALES grew larger over time.
 
-```
+```sql
 select * from svv_vacuum_summary
 where table_name = 'custsales';
 

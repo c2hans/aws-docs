@@ -84,7 +84,7 @@ The compute fleet must be stopped (using [`pcluster update-compute-fleet`](pclus
 These settings can be changed, but if the change would reduce the size of the queue, the compute fleet must be stopped (using pcluster update-compute-fleet) or [QueueUpdateStrategy](Scheduling-v3.md#yaml-Scheduling-SlurmSettings-QueueUpdateStrategy) must be set to TERMINATE. After the compute fleet is stopped or [QueueUpdateStrategy](Scheduling-v3.md#yaml-Scheduling-SlurmSettings-QueueUpdateStrategy) is set to TERMINATE, you can update the cluster ([pcluster update-cluster](pcluster.update-cluster-v3.md) to activate the changes.
 + This example demonstrates an update with some allowed changes and the update is started directly.
 
-  ```
+  ```sh
   $ pcluster update-cluster --cluster-name {{cluster_name}} --cluster-config ~/.parallelcluster/test_cluster --region us-east-1
   {
     "cluster": {
@@ -110,7 +110,7 @@ These settings can be changed, but if the change would reduce the size of the qu
   ```
 + This example demonstrates a dryrun update with some allowed changes. Dryrun is useful to report the change set without starting the update.
 
-  ```
+  ```sh
   $ pcluster update-cluster --cluster-name {{cluster_name}} --cluster-config ~/.parallelcluster/test_cluster --region us-east-1 --dryrun true
   {
     "message": "Request would have succeeded, but DryRun flag is set.",
@@ -129,7 +129,7 @@ These settings can be changed, but if the change would reduce the size of the qu
   ```
 + This example demonstrates an update with some changes that block the update.
 
-  ```
+  ```sh
   $ pcluster update-cluster --cluster-name {{cluster_name}} --cluster-config ~/.parallelcluster/test_cluster --region us-east-1
   {
     "message": "Update failure",

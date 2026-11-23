@@ -142,9 +142,14 @@ Check your alarms before you upgrade. A threshold alarm on a pod-level `containe
 Use the following topics to set up and configure OTel Container Insights on your Amazon EKS clusters.
 
 **Topics**
-+ [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md) — Get started with OTel Container Insights using the fastest setup path.
-+ [Enable OTel Container Insights from the console](container-insights-eks-otel-console.md) — Enable OTel Container Insights through the AWS Management Console.
-+ [Deploy OTel Container Insights with Helm](container-insights-eks-otel-helm.md) — Deploy OTel Container Insights using the Helm chart for flexible, GitOps-friendly management.
-+ [Deploy OTel Container Insights with CloudFormation](container-insights-eks-otel-cfn.md) — Deploy OTel Container Insights using a CloudFormation template.
++ [Quick start](container-insights-eks-otel-quickstart.md) — Get started with OTel Container Insights using the fastest setup path.
++ [Enable from the console](container-insights-eks-otel-console.md) — Enable OTel Container Insights through the AWS Management Console.
++ [Deploy with Helm](container-insights-eks-otel-helm.md) — Deploy OTel Container Insights using the Helm chart for flexible, GitOps-friendly management.
++ [Deploy with CloudFormation](container-insights-eks-otel-cfn.md) — Deploy OTel Container Insights using a CloudFormation template.
 + [Sending logs to Amazon CloudWatch](container-insights-eks-otel-logs.md) — Configure log collection for your Amazon EKS clusters.
-+ [Advanced configuration for OTel Container Insights on Amazon EKS](container-insights-eks-otel-advanced.md) — Customize and fine-tune OTel Container Insights for your environment.
++ [Advanced configuration](container-insights-eks-otel-advanced.md) — Customize and fine-tune OTel Container Insights for your environment.
++ [Correlating DRA-allocated devices to pods with OTel Container Insights](container-insights-eks-otel-dra.md) — Attribute the metrics of EFA and Neuron devices that DRA allocates to the pods that use them.
++ [Custom telemetry](eks-observability-addon-custom-telemetry.md) — Send your own application telemetry to CloudWatch over OTLP, and scrape ServiceMonitor and PodMonitor targets.
++ [OpenTelemetry service identity](eks-observability-addon-service-identity.md) — Give each of your services one consistent name across its telemetry.
++ [Standard telemetry attributes](eks-standard-telemetry-attributes.md) — See the resource attributes that the CloudWatch agent adds to your OpenTelemetry telemetry.
++ [Optimizing costs](eks-observability-addon-cost-controls.md) — Limit which namespaces, metrics, and Kubernetes labels the add-on sends.

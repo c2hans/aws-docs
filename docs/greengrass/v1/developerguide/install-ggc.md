@@ -77,7 +77,7 @@ When you uninstall the AWS IoT Greengrass core software, you can choose whether 
 **To uninstall the AWS IoT Greengrass core software and preserve configuration information**
 + Run the following command to remove the AWS IoT Greengrass core software packages and preserve configuration information in the `/greengrass` folder.
 
-  ```
+  ```bash
   sudo apt remove aws-iot-greengrass-core aws-iot-greengrass-keyring
   ```
 
@@ -85,7 +85,7 @@ When you uninstall the AWS IoT Greengrass core software, you can choose whether 
 
 1. Run the following command to remove the AWS IoT Greengrass core software packages and remove configuration information from the `/greengrass folder`.
 
-   ```
+   ```bash
    sudo apt purge aws-iot-greengrass-core aws-iot-greengrass-keyring
    ```
 
@@ -99,7 +99,7 @@ You can remove the AWS IoT Greengrass core software repository sources when you 
 **To remove the APT repository from the sources list**
 + Run the following commands to remove the AWS IoT Greengrass core software repository from the sources list.
 
-  ```
+  ```bash
   sudo rm /etc/apt/sources.list.d/greengrass.list
   sudo apt update
   ```
@@ -131,7 +131,7 @@ A snap component that defines which version of a snap is installed and tracked f
 A snap component that grants access to resources, such as networks and user files.
 To run the AWS IoT Greengrass snap, the following interfaces must be connected. Note that `greengrass-support-no-container` must be connected first and never disconnected.
 
-```
+```bash
       - greengrass-support-no-container
       - hardware-observe
       - home-for-hooks
@@ -188,7 +188,7 @@ The `snapd` daemon is preinstalled on Ubuntu.
 
 1. Install the `core18` snap by running the following command in your device's terminal:
 
-   ```
+   ```bash
    sudo snap install core18
    ```
 
@@ -196,7 +196,7 @@ The `snapd` daemon is preinstalled on Ubuntu.
 
 1. Upgrade `snapd` by running the following command:
 
-   ```
+   ```bash
    sudo snap install --channel=edge snapd; sudo snap refresh --channel=edge snapd
    ```
 
@@ -204,7 +204,7 @@ The `snapd` daemon is preinstalled on Ubuntu.
 
    The following example response shows that `snapd` is installed, but `aws-iot-greengrass` isn't.
 
-   ```
+   ```bash
    Name              Version               Rev    Tracking         Publisher   Notes
    amazon-ssm-agent  3.0.161.0             2996   latest/stable/…  aws✓        classic
    core              16-2.48               10444  latest/stable    canonical✓  core
@@ -216,18 +216,18 @@ The `snapd` daemon is preinstalled on Ubuntu.
 1. Choose one of the following options to install AWS IoT Greengrass snap 1.11.x.
    + To install the AWS IoT Greengrass snap, run the following command:
 
-     ```
+     ```bash
      sudo snap install aws-iot-greengrass
      ```
 
      Example response:
 
-     ```
+     ```bash
      aws-iot-greengrass 1.11.5 from Amazon Web Services (aws) installed
      ```
    + To migrate from an earlier version to v1.11.x or update to the latest available patch version, run the following command:
 
-     ```
+     ```bash
      sudo snap refresh --channel=1.11.x aws-iot-greengrass
      ```
 
@@ -237,7 +237,7 @@ The `snapd` daemon is preinstalled on Ubuntu.
 
    Example response:
 
-   ```
+   ```bash
    name:      aws-iot-greengrass
    summary:   AWS supported software that extends cloud capabilities to local devices.
    publisher: Amazon Web Services (aws✓)
@@ -273,13 +273,13 @@ The `snapd` daemon is preinstalled on Ubuntu.
 
    Run the following command to get the list of AWS IoT Greengrass snap supported interfaces:
 
-   ```
+   ```bash
    snap connections aws-iot-greengrass
    ```
 
    Example response:
 
-   ```
+   ```bash
    Interface                Plug                                                Slot                 Notes
    camera                   aws-iot-greengrass:camera                           -                    -
    dvb                      aws-iot-greengrass:dvb                              -                    -
@@ -319,7 +319,7 @@ If you downloaded the file to a different device, follow this [step](start-green
    + Replace each instance of {{certificateId}} with the certificate ID in the name of the certificate and key files.
    + If you downloaded a different Amazon root CA certificate than Amazon Root CA 1, replace each instance of {{AmazonRootCA1.pem}} with the name of the Amazon root CA file.
 
-   ```
+   ```bash
    {
      ...
      "crypto" : {
@@ -341,7 +341,7 @@ If you downloaded the file to a different device, follow this [step](start-green
 
 1. Run the following command to add your AWS IoT Greengrass certificate and configuration files:
 
-   ```
+   ```bash
    sudo snap set aws-iot-greengrass gg-certs=/home/ubuntu/{{my-certs}}
    ```
 
@@ -355,13 +355,13 @@ AWS IoT Greengrass snap v1.11 only supports noncontainerized Lambda functions.
 
 1. Run the following command to start the AWS IoT Greengrass daemon:
 
-   ```
+   ```bash
    sudo snap start aws-iot-greengrass
    ```
 
    Example response:
 
-   ```
+   ```bash
    Started.
    ```
 **Note**
@@ -369,13 +369,13 @@ If you get an error, you can use the `snap run` command for a detailed error mes
 
 1. Run the following command to confirm that the daemon is running:
 
-   ```
+   ```bash
    snap services aws-iot-greengrass.greengrassd
    ```
 
    Example response:
 
-   ```
+   ```bash
    Service                         Startup   Current  Notes
    aws-iot-greengrass.greengrassd  disabled  active   -
    ```
@@ -407,7 +407,7 @@ You can use the `snap stop` command to stop a service.
 
 To stop the AWS IoT Greengrass daemon, run the following command:
 
-```
+```bash
 sudo snap stop aws-iot-greengrass
 ```
 
@@ -415,13 +415,13 @@ The command should return `Stopped.`.
 
 To check if you successfully stopped the snap, run the following command:
 
-```
+```bash
 snap services aws-iot-greengrass.greengrassd
 ```
 
 Example response:
 
-```
+```bash
 Service                         Startup   Current   Notes
 aws-iot-greengrass.greengrassd  disabled  inactive  -
 ```
@@ -431,13 +431,13 @@ aws-iot-greengrass.greengrassd  disabled  inactive  -
 
 To uninstall the AWS IoT Greengrass snap, run the following command:
 
-```
+```bash
 sudo snap remove aws-iot-greengrass
 ```
 
 Example response:
 
-```
+```bash
 aws-iot-greengrass removed
 ```
 
@@ -453,13 +453,13 @@ Use the following information to help troubleshoot issues with the AWS IoT Green
 
 Run the following command to install the tool.
 
-```
+```bash
 sudo snap install snappy-debug
 ```
 
 Example response:
 
-```
+```bash
 snappy-debug 0.36-snapd2.45.1 from Canonical✓ installed
 ```
 
@@ -467,7 +467,7 @@ Run the `sudo snappy-debug` command in a separate terminal session. The operatio
 
 For example, if your Lambda function tries to read a file in the `$HOME` directory, you may get the following response:
 
-```
+```bash
 INFO: Following '/var/log/syslog'. If have dropped messages, use:
 INFO: $ sudo journalctl --output=short --follow --all | sudo snappy-debug
 kernel.printk_ratelimit = 0
@@ -490,13 +490,13 @@ For more information, see [The snappy-debug snap](https://snapcraft.io/docs/debu
 
 For more troubleshooting information, run the following command:
 
-```
+```bash
 sudo snap run aws-iot-greengrass.greengrassd
 ```
 
 Example response:
 
-```
+```bash
 Couldn't find /snap/aws-iot-greengrass/44/greengrass/config/config.json.
 ```
 
@@ -531,7 +531,7 @@ You copy your current certificates, keys, and configuration file to the new inst
 
    1. To check whether the daemon is running:
 
-      ```
+      ```bash
       ps aux | grep -E 'greengrass.*daemon'
       ```
 
@@ -541,33 +541,33 @@ This procedure is written with the assumption that the AWS IoT Greengrass Core s
 
    1. To stop the daemon:
 
-      ```
+      ```bash
       cd /greengrass/ggc/core/
       sudo ./greengrassd stop
       ```
 
 1. Move the current Greengrass root directory to a different directory.
 
-   ```
+   ```bash
    sudo mv /greengrass /greengrass_backup
    ```
 
 1. Untar the new software on the core device. Replace the {{os-architecture}} and {{version}} placeholders in the command.
 
-   ```
+   ```bash
    sudo tar –zxvf greengrass-{{os-architecture}}-{{version}}.tar.gz –C /
    ```
 
 1. Copy the archived certificates, keys, and configuration file to the new installation.
 
-   ```
+   ```bash
    sudo cp /greengrass_backup/certs/* /greengrass/certs
    sudo cp /greengrass_backup/config/* /greengrass/config
    ```
 
 1. Start the daemon:
 
-   ```
+   ```bash
    cd /greengrass/ggc/core/
    sudo ./greengrassd start
    ```

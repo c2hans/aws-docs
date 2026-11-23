@@ -25,9 +25,13 @@ Buffering and throttling flatten the demand curve and reduce the provisioned cap
 
 ![Provisioned capacity waveform with two distinct peaks that require high provisioned capacity.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/provisioned-capacity-1.png)
 
+*Demand curve with two distinct peaks that require high provisioned capacity.*
+
  You can use buffering or throttling to modify the demand curve and smooth out the peaks, which means less provisioned capacity and less energy consumed. Implement throttling when your clients can perform retries. Implement buffering to store the request and defer processing until a later time.
 
 ![Waveform diagram displaying a workload with smoothed-out peaks created using buffering or throttling.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/provisioned-capacity-2.png)
+
+*Throttling's effect on the demand curve and provisioned capacity.*
 
  **Implementation steps**
 +  Analyze the client requests to determine how to respond to them. Questions to consider include:

@@ -24,7 +24,7 @@ Within your Code Editor environment, you can add connections to:
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

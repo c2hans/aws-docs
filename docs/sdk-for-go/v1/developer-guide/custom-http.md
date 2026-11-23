@@ -119,7 +119,7 @@ We’ll call this `TLSHandshake` as **time.Duration**.
 
 The complete example imports the following Go packages.
 
-```
+```go
 import (
     "bytes"
     "context"
@@ -143,7 +143,7 @@ import (
 
 Let’s create a struct to hold the timeout values we want to be able to set on our HTTP client.
 
-```
+```go
 type HTTPClientSettings struct {
     Connect          time.Duration
     ConnKeepAlive    time.Duration
@@ -161,7 +161,7 @@ type HTTPClientSettings struct {
 
 Next let’s create a function that takes a **ClientTimeout** struct and creates a custom HTTP client based on those timeout values.
 
-```
+```go
 func NewHTTPClientWithSettings(httpSettings HTTPClientSettings) (*http.Client, error) {
     var client http.Client
     tr := &http.Transport{
@@ -201,7 +201,7 @@ The following example creates an **http.Client** that is configured to have:
 + a five second TLS handshake timeout
 + a five second wait for the HTTP response headers
 
-```
+```go
 httpClient, err := NewHTTPClientWithSettings(HTTPClientSettings{
     Connect:          5 * time.Second,
     ExpectContinue:   1 * time.Second,
@@ -229,7 +229,7 @@ All of these settings give the client approximately 15 seconds create a connecti
 
 The following example uses a timeout context to limit the total time an API request can be active to a maximum of 20 seconds. The SDK must be able to read the full HTTP response body (Object body) within the timeout or the SDK returns a timeout error. For API operations that return an **io.ReadCloser** in their response type, the Context’s timeout includes reading the content from the **io.ReadCloser**.
 
-```
+```go
 ctx, cancelFn := context.WithTimeout(context.TODO(), 20*time.Second)
 defer cancelFn()
 

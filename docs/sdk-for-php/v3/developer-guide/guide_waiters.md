@@ -8,7 +8,7 @@ Waiters help make it easier to work with *eventually consistent* systems by prov
 
 In the following example, the Amazon S3 client is used to create a bucket. Then the waiter is used to wait until the bucket exists.
 
-```
+```php
 // Create a bucket
 $s3Client->createBucket(['Bucket' => 'amzn-s3-demo-bucket']);
 
@@ -25,7 +25,7 @@ Waiters are driven by an associative array of configuration options. All of the 
 
 You can modify waiter configuration options by passing an associative array of `@waiter` options to the `$args` argument of a client’s `waitUntil()` and `getWaiter()` methods.
 
-```
+```php
 // Providing custom waiter configuration options to a waiter
 $s3Client->waitUntil('BucketExists', [
     'Bucket'  => 'amzn-s3-demo-bucket',
@@ -48,7 +48,7 @@ Amount of time in seconds to wait before the first polling attempt. This might b
 **before (callable)**
 A PHP callable function that is invoked before each attempt. The callable is invoked with the `Aws\CommandInterface` command that is about to be executed and the number of attempts that have been executed so far. Uses of the `before` callable might be to modify commands before they are executed or provide progress information.
 
-```
+```php
 use Aws\CommandInterface;
 
 $s3Client->waitUntil('BucketExists', [
@@ -72,7 +72,7 @@ In addition to waiting synchronously, you can invoke a waiter to wait asynchrono
 
 You can access a waiter promise by retrieving a waiter from a client using the client’s `getWaiter($name, array $args = [])` method. Use the `promise()` method of a waiter to initiate the waiter. A waiter promise is fulfilled with the last `Aws\CommandInterface` that was executed in the waiter, and rejected with a `RuntimeException` on error.
 
-```
+```php
 use Aws\CommandInterface;
 
 $waiterName = 'BucketExists';
@@ -100,7 +100,7 @@ $promise->wait();
 
 Exposing a promise-based waiters API allows for some powerful and relatively low overhead use cases. For example, what if you wanted to wait on multiple resources, and do something with the first waiter that successfully resolved?
 
-```
+```php
 use Aws\CommandInterface;
 
 // Create an array of waiter promises

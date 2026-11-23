@@ -28,7 +28,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-subscriptions-subscriptiondefinitionid-get-cli"></a>
 
-```
+```bash
 aws greengrass get-subscription-definition \
   --subscription-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -37,7 +37,7 @@ aws greengrass get-subscription-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "SubscriptionDefinitionId": "string"
 }
@@ -50,7 +50,7 @@ cli-input-json format:
 
  [ DefinitionInformation](definitions-definitioninformation.md)
 
-```
+```json
 {
 "Name": "string",
 "Id": "string",
@@ -99,7 +99,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -153,7 +153,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-subscriptions-subscriptiondefinitionid-delete-cli"></a>
 
-```
+```bash
 aws greengrass delete-subscription-definition \
   --subscription-definition-id <value>  \
   [--cli-input-json <value>] \
@@ -162,7 +162,7 @@ aws greengrass delete-subscription-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "SubscriptionDefinitionId": "string"
 }
@@ -175,7 +175,7 @@ cli-input-json format:
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -187,7 +187,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [
@@ -237,7 +237,7 @@ Produces: application/json
 
 where used: body; required: true
 
-```
+```json
 {
 "Name": "string"
 }
@@ -258,7 +258,7 @@ type: string
 ### CLI
 <a name="-greengrass-definition-subscriptions-subscriptiondefinitionid-put-cli"></a>
 
-```
+```bash
 aws greengrass update-subscription-definition \
   --subscription-definition-id <value> \
   [--name <value>]  \
@@ -268,7 +268,7 @@ aws greengrass update-subscription-definition \
 
 cli-input-json format:
 
-```
+```json
 {
 "SubscriptionDefinitionId": "string",
 "Name": "string"
@@ -282,7 +282,7 @@ cli-input-json format:
 Success.
  [ Empty](definitions-empty.md)
 
-```
+```json
 {
 }
 ```
@@ -294,7 +294,7 @@ type: object
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

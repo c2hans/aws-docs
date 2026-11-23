@@ -162,7 +162,7 @@ If you upgrade the Greengrass nucleus from an earlier minor version, and the cor
          + This policy uses an `OR` operator to also allow client devices whose names start with `MyOtherClientDevice` to connect and communicate on all MQTT topics. You can remove this clause in the selection rule or modify it to match the client devices to connect.
          + This policy allows the client devices to publish and subscribe on all MQTT topics. To follow best security practices, restrict the `mqtt:publish` and `mqtt:subscribe` operations to the minimal set of topics that the client devices use to communicate.
 
-         ```
+         ```json
          {
            "deviceGroups": {
              "formatVersion": "2021-03-05",
@@ -217,7 +217,7 @@ If you upgrade the Greengrass nucleus from an earlier minor version, and the cor
 
       1. Under **Configuration**, in the **Configuration to merge** code block, enter the following configuration. This configuration specifies to relay MQTT messages on the `clients/+/hello/world` topic filter from client devices to the AWS IoT Core cloud service. For example, this topic filter matches the `clients/MyClientDevice1/hello/world` topic.
 
-         ```
+         ```json
          {
            "mqttTopicMapping": {
              "HelloWorldIotCoreMapping": {
@@ -261,19 +261,19 @@ The AWS IoT Device SDK is also available in other programming languages. This tu
 
    1. Clone the AWS IoT Device SDK v2 for Python repository to download it.
 
-      ```
+      ```bash
       git clone https://github.com/aws/aws-iot-device-sdk-python-v2.git
       ```
 
    1. Install the AWS IoT Device SDK v2 for Python.
 
-      ```
+      ```bash
       python3 -m pip install --user ./aws-iot-device-sdk-python-v2
       ```
 
 1. <a name="cd-iot-device-sdk-python-v2"></a>Change to the samples folder in the AWS IoT Device SDK v2 for Python.
 
-   ```
+   ```bash
    cd aws-iot-device-sdk-python-v2/samples/greengrass
    ```
 
@@ -286,7 +286,7 @@ This topic matches the topic where you configured the MQTT bridge to relay messa
    + Replace {{\~/certs/private.pem.key}} with the path to the private key file on the client device.
    + Replace {{us-east-1}} with the AWS Region where your client device and core device operate.
 
-   ```
+   ```bash
    python3 basic_discovery.py \\
      --thing_name {{MyClientDevice1}} \\
      --topic 'clients/{{MyClientDevice1}}/hello/world' \\
@@ -372,7 +372,7 @@ In this section, you update the MQTT bridge component to relay messages from cli
 
       1. Under **Configuration**, in the **Configuration to merge** code block, enter the following configuration. This configuration specifies to relay MQTT messages on topics that match the `clients/+/hello/world` topic filter from client devices to the AWS IoT Core cloud service and the local Greengrass publish/subscribe broker.
 
-         ```
+         ```json
          {
            "mqttTopicMapping": {
              "HelloWorldIotCoreMapping": {
@@ -408,7 +408,7 @@ In this section, you update the MQTT bridge component to relay messages from cli
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       mkdir recipes
       mkdir -p artifacts/com.example.clientdevices.MyHelloWorldSubscriber/1.0.0
       ```
@@ -416,7 +416,7 @@ In this section, you update the MQTT bridge component to relay messages from cli
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       mkdir recipes
       mkdir artifacts\com.example.clientdevices.MyHelloWorldSubscriber\1.0.0
       ```
@@ -424,7 +424,7 @@ In this section, you update the MQTT bridge component to relay messages from cli
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       mkdir recipes
       mkdir artifacts\com.example.clientdevices.MyHelloWorldSubscriber\1.0.0
       ```
@@ -441,13 +441,13 @@ You must use the following format for the artifact folder path. Include the comp
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano recipes/com.example.clientdevices.MyHelloWorldSubscriber-1.0.0.json
       ```
 
       Copy the following recipe into the file.
 
-      ```
+      ```json
       {
         "RecipeFormatVersion": "2020-01-25",
         "ComponentName": "com.example.clientdevices.MyHelloWorldSubscriber",
@@ -498,13 +498,13 @@ You must use the following format for the artifact folder path. Include the comp
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano artifacts/com.example.clientdevices.MyHelloWorldSubscriber/1.0.0/hello_world_subscriber.py
       ```
 
       Copy the following Python code into the file.
 
-      ```
+      ```python
       import sys
       import time
       import traceback
@@ -551,7 +551,7 @@ This component uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create \
         --recipeDir recipes \
         --artifactDir artifacts \
@@ -561,7 +561,7 @@ This component uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       {{C:\greengrass\v2}}/bin/greengrass-cli deployment create ^
         --recipeDir recipes ^
         --artifactDir artifacts ^
@@ -571,7 +571,7 @@ This component uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       {{C:\greengrass\v2}}/bin/greengrass-cli deployment create `
         --recipeDir recipes `
         --artifactDir artifacts `
@@ -585,14 +585,14 @@ This component uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.clientdevices.MyHelloWorldSubscriber.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}/logs/com.example.clientdevices.MyHelloWorldSubscriber.log -Tail 10 -Wait
    ```
 
@@ -602,7 +602,7 @@ This component uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](
 
 1. On the client device, run the sample Greengrass discovery application again to send messages to the core device.
 
-   ```
+   ```bash
    python3 basic_discovery.py \\
      --thing_name {{MyClientDevice1}} \\
      --topic 'clients/{{MyClientDevice1}}/hello/world' \\
@@ -619,14 +619,14 @@ This component uses the IPC client V2 in the [AWS IoT Device SDK v2 for Python](
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.clientdevices.MyHelloWorldSubscriber.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}/logs/com.example.clientdevices.MyHelloWorldSubscriber.log -Tail 10 -Wait
    ```
 
@@ -663,7 +663,7 @@ In this section, you deploy the [shadow manager component](shadow-manager-compon
 
       1. Under **Configuration**, in the **Configuration to merge** code block, enter the following configuration. This configuration specifies to relays MQTT messages on shadow topics.
 
-         ```
+         ```json
          {
            "mqttTopicMapping": {
              "HelloWorldIotCoreMapping": {
@@ -711,21 +711,21 @@ In this section, you deploy the [shadow manager component](shadow-manager-compon
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       mkdir -p artifacts/com.example.clientdevices.MySmartLightManager/1.0.0
       ```
 
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       mkdir artifacts\com.example.clientdevices.MySmartLightManager\1.0.0
       ```
 
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       mkdir artifacts\com.example.clientdevices.MySmartLightManager\1.0.0
       ```
 
@@ -741,13 +741,13 @@ You must use the following format for the artifact folder path. Include the comp
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano recipes/com.example.clientdevices.MySmartLightManager-1.0.0.json
       ```
 
       Copy the following recipe into the file.
 
-      ```
+      ```json
       {
         "RecipeFormatVersion": "2020-01-25",
         "ComponentName": "com.example.clientdevices.MySmartLightManager",
@@ -822,13 +822,13 @@ You must use the following format for the artifact folder path. Include the comp
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano artifacts/com.example.clientdevices.MySmartLightManager/1.0.0/smart_light_manager.py
       ```
 
       Copy the following Python code into the file.
 
-      ```
+      ```python
       import json
       import random
       import sys
@@ -1022,7 +1022,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Linux or Unix ]
 
-      ```
+      ```bash
       sudo {{/greengrass/v2}}/bin/greengrass-cli deployment create \
         --recipeDir recipes \
         --artifactDir artifacts \
@@ -1041,7 +1041,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Windows Command Prompt (CMD) ]
 
-      ```
+      ```cmd
       {{C:\greengrass\v2}}/bin/greengrass-cli deployment create ^
         --recipeDir recipes ^
         --artifactDir artifacts ^
@@ -1052,7 +1052,7 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ PowerShell ]
 
-      ```
+      ```ps
       {{C:\greengrass\v2}}/bin/greengrass-cli deployment create `
         --recipeDir recipes `
         --artifactDir artifacts `
@@ -1075,14 +1075,14 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.clientdevices.MySmartLightManager.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}/logs/com.example.clientdevices.MySmartLightManager.log -Tail 10 -Wait
    ```
 
@@ -1103,13 +1103,13 @@ You must use the following format for the artifact folder path. Include the comp
 
       <a name="nano-command-intro"></a>For example, on a Linux-based system, you can run the following command to use GNU nano to create the file.
 
-      ```
+      ```bash
       nano basic_discovery_shadow.py
       ```
 
       Copy the following Python code into the file.
 
-      ```
+      ```python
       # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
       # SPDX-License-Identifier: Apache-2.0.
 
@@ -1511,7 +1511,7 @@ You must use the following format for the artifact folder path. Include the comp
       + Replace {{\~/certs/private.pem.key}} with the path to the private key file on the client device.
       + Replace {{us-east-1}} with the AWS Region where your client device and core device operate.
 
-      ```
+      ```bash
       python3 basic_discovery_shadow.py \
         --thing_name {{MyClientDevice1}} \
         --shadow_property color \
@@ -1550,14 +1550,14 @@ You must use the following format for the artifact folder path. Include the comp
 ------
 #### [ Linux or Unix ]
 
-   ```
+   ```bash
    sudo tail -f {{/greengrass/v2}}/logs/com.example.clientdevices.MySmartLightManager.log
    ```
 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```ps
    gc {{C:\greengrass\v2}}/logs/com.example.clientdevices.MySmartLightManager.log -Tail 10 -Wait
    ```
 

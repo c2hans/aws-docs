@@ -144,7 +144,7 @@ The following example retrieves the original (raw) content of a document from a 
 #### Sample Request
 <a name="API_agent-runtime_GetDocumentContent_Example_1_Request"></a>
 
-```
+```json
 POST /knowledgebases/KB12345678/datasources/DS12345678/documents/DOC12345678/content HTTP/1.1
 Content-type: application/json
 
@@ -161,7 +161,7 @@ The following example shows the request body for retrieving an image embedded in
 #### Sample Request
 <a name="API_agent-runtime_GetDocumentContent_Example_2_Request"></a>
 
-```
+```json
 {
     "outputFormat": "RAW",
     "mediaId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
@@ -176,7 +176,7 @@ The following example response contains a pre-signed URL for the image, the imag
 #### Sample Response
 <a name="API_agent-runtime_GetDocumentContent_Example_3_Response"></a>
 
-```
+```json
 {
     "presignedUrl": "https://amzn-s3-demo-bucket1.s3.us-west-2.amazonaws.com/embedded-image.png?...",
     "mimeType": "image/png",

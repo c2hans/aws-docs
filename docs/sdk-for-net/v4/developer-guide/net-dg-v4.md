@@ -39,7 +39,7 @@ For additional information about this change, see the blog post [Preview 1 of AW
 
 Properties that use collections in classes that are used for making requests and responses now default to `null`. As a result, your code needs to verify that a collection isn't null before trying to use it. For example:
 
-```
+```cs
 var sqsClient = new AmazonSQSClient();
 var listResponse = await sqsClient.ListQueuesAsync(new ListQueuesRequest());
 if (listResponse.QueueUrls != null)
@@ -144,7 +144,7 @@ To include the SDK's logging into a logging framework, a separate adaptor packag
 
 Add the `AWSSDK.Extensions.Logging.Log4NetAdaptor` NuGet package and call the static `ConfigureAWSSDKLogging` method from `Log4NetAWSExtensions`.
 
-```
+```cs
 using Amazon.DynamoDBv2;
 using Amazon.Extensions.Logging.Log4NetAdaptor;
 using log4net;
@@ -160,7 +160,7 @@ var logger = LogManager.GetLogger(typeof(Program));
 
 Add the `AWSSDK.Extensions.Logging.ILoggerAdaptor` NuGet package and call the `ConfigureAWSSDKLogging` extension method from the `ILoggerFactory` interface.
 
-```
+```cs
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
@@ -253,7 +253,7 @@ A limitation of Native AOT is support for nested .NET types. In some cases, thes
 
 You can work around this limitation by adding the `DynamicDependency` somewhere in the code path that informs the trimmer about the dependency on the sub-type. The constructor of the top-level .NET type being saved is a likely place. The following code example shows you how to use the `DynamicDependency` attribute:
 
-```
+```cs
 [DynamoDBTable("TestTable")]
 class TypeWithNestedTypeProperty
 {

@@ -76,7 +76,7 @@ The following is an example of how to use IAM Identity Center with the Tools for
 
 Use the following PowerShell commands to display a list of the S3 buckets:
 
-```
+```ps
 Install-Module AWS.Tools.Installer
 Install-AWSToolsModule S3
 # And if using an older version of the AWS Tools for PowerShell:

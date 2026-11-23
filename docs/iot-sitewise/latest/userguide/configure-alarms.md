@@ -48,7 +48,7 @@ Use the [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/la
 
 1. Create a file called `batch-put-payload.json` and copy the following JSON object into the file. This example payload demonstrates how to set a wind turbine's latitude and longitude. Update the IDs, values, and timestamps to modify the payload for your use case.
 
-   ```
+   ```json
    {
      "entries": [
        {
@@ -98,6 +98,6 @@ Use the [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/la
 
 1. Run the following command to send the attribute values to AWS IoT SiteWise:
 
-   ```
+   ```bash
    aws iotsitewise batch-put-asset-property-value -\-cli-input-json file://batch-put-payload.json
    ```

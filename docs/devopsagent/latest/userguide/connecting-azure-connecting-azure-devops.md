@@ -150,6 +150,22 @@ After registering Azure DevOps at the account level, associate specific projects
 
 A single Agent Space can use projects from multiple registrations. To associate another project, from the same registration or a different one, repeat these steps.
 
+## (Optional) Permissions for directed actions
+<a name="optional-permissions-for-directed-actions"></a>
+
+To allow approved write actions on Azure DevOps (directed actions), make sure the connection has the permissions below. Directed actions must also be enabled on the agent space, and you approve each action in chat before it runs. For more information, see [Working with directed actions](working-with-devops-agent-working-with-directed-actions.md).
+
+By default, [Granting access in Azure DevOps](#granting-access-in-azure-devops) assigns the registered identity to the **Project Readers** group. This group is read-only. To enable directed actions, grant the identity write permissions on the project instead. The following table lists the permissions required for directed actions:
+
+| Permission | Used for |
+| --- | --- |
+| Contribute | Creating branches |
+| Contribute to pull requests | Creating and updating pull requests, and posting pull request comments |
+| Edit work items in this node | Creating and updating work items, and adding work item comments |
+| Queue builds | Retrying a build stage and rolling back a deployment |
+
+Granting these permissions widens the prompt-injection blast radius that the Security Requirement note above describes. Grant them only as a deliberate opt-in to enable directed actions, and scope them to the projects you associate with your Agent Spaces.
+
 ## Managing Azure DevOps connections
 <a name="managing-azure-devops-connections"></a>
 + **Viewing connected projects** – In the **Capabilities** tab, the **Pipelines** section lists all connected Azure DevOps projects.

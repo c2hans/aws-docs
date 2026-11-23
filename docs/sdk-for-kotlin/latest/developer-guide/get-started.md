@@ -39,7 +39,7 @@ This tutorial uses Gradle version 8.11.1 with the `gradle init` command, which o
 
 1. Use the following command to create a new Gradle project and a basic Kotlin class.
 
-   ```
+   ```bash
    gradle init --type kotlin-application --dsl kotlin
    ```
    + When prompted for the target `Java version`, press `Enter` (defaults to `21`).
@@ -51,7 +51,7 @@ This tutorial uses Gradle version 8.11.1 with the `gradle init` command, which o
  **To configure your project with dependencies for the AWS SDK for Kotlin and Amazon S3**
 + In the `getstarted` directory that you created in the previous procedure, replace the contents of the `settings.gradle.kts` file with the following content, replacing {{X.Y.Z}} with the [latest version](https://github.com/awslabs/aws-sdk-kotlin/releases/latest) of the SDK for Kotlin:
 
-  ```
+  ```kotlin
   dependencyResolutionManagement {
       repositories {
           mavenCentral()
@@ -74,7 +74,7 @@ This tutorial uses Gradle version 8.11.1 with the `gradle init` command, which o
   ```
 + Navigate to the `gradle` directory inside of the `getstarted` directory. Replace the contents of the version catalog file named `libs.versions.toml` with the following content:
 
-  ```
+  ```kotlin
   [versions]
   junit-jupiter-engine = "5.10.3"
 
@@ -86,7 +86,7 @@ This tutorial uses Gradle version 8.11.1 with the `gradle init` command, which o
   ```
 + Navigate to the `app` directory and open the `build.gradle.kts` file. Replace its contents with the following code, and then save your changes.
 
-  ```
+  ```kotlin
   plugins {
       alias(libs.plugins.kotlin.jvm)
       application
@@ -126,7 +126,7 @@ After the project has been created and configured, edit the project’s default 
 
 1. Replace its contents with the following code and save the file.
 
-   ```
+   ```kotlin
    package org.example
 
    import aws.sdk.kotlin.services.s3.*
@@ -197,7 +197,7 @@ After the project is created and contains the example class, build and run the a
 
 1. Use the following command to build and run your application:
 
-   ```
+   ```bash
    gradle run
    ```
 

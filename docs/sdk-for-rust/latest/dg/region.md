@@ -32,7 +32,7 @@ For examples on how to set the default region through the shared AWS `config` fi
 
 The `RegionProviderChain` is automatically used with no additional code when creating a basic configuration to use with a service client:
 
-```
+```rust
 let config = aws_config::defaults(BehaviorVersion::latest())
     .load()
     .await;
@@ -48,7 +48,7 @@ Use `Region::new()` directly in your configuration when you want to explicitly s
 
 The Region provider chain is not used - it does not check the environment, shared `config` file, or Amazon EC2 Instance Metadata Service.
 
-```
+```ruby
 use aws_config::{defaults, BehaviorVersion};
 use aws_sdk_s3::config::Region;
 
@@ -70,7 +70,7 @@ Be sure you are entering a valid string for an AWS Region; the value provided is
 
 Use the [AWS Region provider chain](#region-provider-chain) when you want to inject a Region conditionally, override it, or customize the resolution chain.
 
-```
+```ruby
 use aws_config::{defaults, BehaviorVersion};
 use aws_config::meta::region::RegionProviderChain;
 use aws_sdk_s3::config::Region;

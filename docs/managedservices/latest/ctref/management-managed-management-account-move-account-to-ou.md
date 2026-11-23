@@ -144,7 +144,7 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: Required Parameters
 <a name="management-managed-management-account-move-account-to-ou-ex-min"></a>
 
-```
+```json
 {
     "AccountId": "123456789012",
     "TargetOUPath": "applications:development"
@@ -154,6 +154,6 @@ For detailed information about the execution input parameters, see [Schema for C
 ## Example: All Parameters
 <a name="management-managed-management-account-move-account-to-ou-ex-max"></a>
 
-```
+```json
 Example not available.
 ```

@@ -23,7 +23,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ### YAML
 <a name="sam-resource-layerversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Serverless::LayerVersion
 Properties:
   [CompatibleArchitectures](#sam-layerversion-compatiblearchitectures): {{List}}
@@ -116,7 +116,7 @@ Example of a LayerVersion
 #### YAML
 <a name="sam-resource-layerversion--examples--layerversionexample--yaml"></a>
 
-```
+```yaml
 Properties:
   LayerName: MyLayer
   Description: Layer description

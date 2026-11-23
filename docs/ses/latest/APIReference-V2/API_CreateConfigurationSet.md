@@ -21,6 +21,7 @@ Content-type: application/json
    "DeliveryOptions": {
       "MaxDeliverySeconds": {{number}},
       "SendingPoolName": "{{string}}",
+      "SharedPoolDeliveryMode": "{{string}}",
       "TlsPolicy": "{{string}}"
    },
    "MessageSecurityOptions": {

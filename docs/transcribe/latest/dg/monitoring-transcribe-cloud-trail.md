@@ -42,7 +42,7 @@ Calls to the [`StartTranscriptionJob`](https://docs.aws.amazon.com/transcribe/la
 **Note**
 When CloudTrail logs Amazon Transcribe API operations, the CloudTrail log entry uses empty strings for sensitive information in the request and response parameters, such as Amazon S3 URI values.
 
-```
+```json
 {
     "Records": [
         {

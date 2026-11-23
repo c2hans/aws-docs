@@ -36,7 +36,7 @@ The IAM entity (User or Role) used for connecting to the Neptune database should
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

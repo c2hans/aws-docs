@@ -17,13 +17,13 @@ The `$erase` operation can be invoked at two levels:
 
 **Resource Instance Level**
 
-```
+```HTTP
 POST [base]/[ResourceType]/[ID]/$erase?deleteAuditEvent=true
 ```
 
 **Version-Specific Level**
 
-```
+```HTTP
 POST [base]/[ResourceType]/[ID]/_history/[VersionID]/$erase
 ```
 
@@ -39,13 +39,13 @@ POST [base]/[ResourceType]/[ID]/_history/[VersionID]/$erase
 
 **Example Request**
 
-```
+```HTTP
 POST [base]/Patient/example-patient/$erase
 ```
 
 **Example Response**
 
-```
+```json
 {
       "jobId": "5df47e2f51ff3c731847678cb8cad48e",
       "jobStatus": "SUBMITTED"
@@ -57,13 +57,13 @@ POST [base]/Patient/example-patient/$erase
 
 To check the status of an erase job:
 
-```
+```HTTP
 GET [base]/$erase/[jobId]
 ```
 
 The operation returns job status information:
 
-```
+```json
 {
       "datastoreId": "36622996b1fcecb7e12ee2ee085308d3",
       "jobId": "5df47e2f51ff3c731847678cb8cad48e",

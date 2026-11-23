@@ -206,7 +206,7 @@ For example, the bulk loader would generate a parsing error if it encountered a 
 
 As you can see, the second `http` in the row above should be preceded by  `<`  rather than  `|` . The resulting error object under `errorLogs` in a status response would look like this:
 
-```
+```json
 {
     "errorCode" : "PARSING_ERROR",
     "errorMessage" : "Expected '<', found: |",

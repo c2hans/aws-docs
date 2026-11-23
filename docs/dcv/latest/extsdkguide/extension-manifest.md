@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/extension-manifes
 
 Manifest files are JSON files in the format described below. Ensure that all special characters are properly escaped with a reverse backslash. A `.json` extension is required for the manifest file.
 
-```
+```javascript
 {
 "name": "MyExtension",
 "description": "My extension longer description",

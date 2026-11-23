@@ -29,7 +29,7 @@ The following code example shows how to use `CreateReceiptFilter`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import {
   CreateReceiptFilterCommand,
   ReceiptFilterPolicy,
@@ -84,7 +84,7 @@ The following code example shows how to use `CreateReceiptRule`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { CreateReceiptRuleCommand, TlsPolicy } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -145,7 +145,7 @@ The following code example shows how to use `CreateReceiptRuleSet`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { CreateReceiptRuleSetCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -178,7 +178,7 @@ The following code example shows how to use `CreateTemplate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { CreateTemplateCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -227,7 +227,7 @@ The following code example shows how to use `DeleteIdentity`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { DeleteIdentityCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -260,7 +260,7 @@ The following code example shows how to use `DeleteReceiptFilter`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { DeleteReceiptFilterCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
@@ -293,7 +293,7 @@ The following code example shows how to use `DeleteReceiptRule`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { DeleteReceiptRuleCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -328,7 +328,7 @@ The following code example shows how to use `DeleteReceiptRuleSet`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { DeleteReceiptRuleSetCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -360,7 +360,7 @@ The following code example shows how to use `DeleteTemplate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { DeleteTemplateCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -391,7 +391,7 @@ The following code example shows how to use `GetTemplate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { GetTemplateCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -426,7 +426,7 @@ The following code example shows how to use `ListIdentities`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { ListIdentitiesCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -454,7 +454,7 @@ The following code example shows how to use `ListReceiptFilters`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { ListReceiptFiltersCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -476,7 +476,7 @@ The following code example shows how to use `ListTemplates`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { ListTemplatesCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -504,7 +504,7 @@ The following code example shows how to use `SendBulkTemplatedEmail`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { SendBulkTemplatedEmailCommand } from "@aws-sdk/client-ses";
 import {
   getUniqueName,
@@ -582,7 +582,7 @@ The following code example shows how to use `SendEmail`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { SendEmailCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";
 
@@ -652,7 +652,7 @@ The following code example shows how to use `SendRawEmail`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 Use [nodemailer](https://nodemailer.com/transports/ses) to send an email with an attachment.
 
-```
+```javascript
 import sesClientModule from "@aws-sdk/client-ses";
 /**
  * nodemailer wraps the SES SDK and calls SendRawEmail. Use this for more advanced
@@ -705,7 +705,7 @@ The following code example shows how to use `SendTemplatedEmail`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { SendTemplatedEmailCommand } from "@aws-sdk/client-ses";
 import {
   getUniqueName,
@@ -772,7 +772,7 @@ The following code example shows how to use `UpdateTemplate`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { UpdateTemplateCommand } from "@aws-sdk/client-ses";
 import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
 import { sesClient } from "./libs/sesClient.js";
@@ -812,7 +812,7 @@ The following code example shows how to use `VerifyDomainIdentity`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 import { VerifyDomainIdentityCommand } from "@aws-sdk/client-ses";
 import {
   getUniqueName,
@@ -851,7 +851,7 @@ The following code example shows how to use `VerifyEmailIdentity`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
 
-```
+```javascript
 // Import required AWS SDK clients and commands for Node.js
 import { VerifyEmailIdentityCommand } from "@aws-sdk/client-ses";
 import { sesClient } from "./libs/sesClient.js";

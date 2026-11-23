@@ -31,7 +31,7 @@ Check the release notes for the new version:
 
 Although Amazon DynamoDB has Point-in-Time Recovery enabled, create explicit backups:
 
-```
+```bash
 # Backup DynamoDB tables (replace <STACK-NAME> with your stack name)
 for table in $(aws dynamodb list-tables --query 'TableNames[?contains(@, `<STACK-NAME>`)]' --output text); do
   aws dynamodb create-backup \
@@ -45,7 +45,7 @@ done
 
 Export current stack parameters:
 
-```
+```bash
 # Replace <STACK-NAME> with your CloudFormation stack name
 aws cloudformation get-template \
   --stack-name <STACK-NAME> \
@@ -74,7 +74,7 @@ The following steps guide you through updating the solution using AWS CloudForma
 
 If you don’t know your stack name, list all CloudFormation stacks to find it:
 
-```
+```bash
 # List all stacks
 aws cloudformation list-stacks \
   --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE \
@@ -94,7 +94,7 @@ Download the latest CloudFormation template for the new version. For download in
 
 Create a change set to preview changes before applying the update. Replace `<CHANGE-SET-NAME>` with a descriptive name based on the version you’re updating to (for example, `update-to-v1-1-0`). Refer to the [Document revisions](revisions.md) section or the version from the downloaded template to determine the appropriate version number.
 
-```
+```bash
 # Create change set to preview changes
 aws cloudformation create-change-set \
   --stack-name <STACK-NAME> \
@@ -107,7 +107,7 @@ aws cloudformation create-change-set \
 #### Step 3: Review Change Set
 <a name="step-3-review-change-set"></a>
 
-```
+```bash
 # Review the change set (use the same change set name from Step 2)
 aws cloudformation describe-change-set \
   --stack-name <STACK-NAME> \
@@ -119,7 +119,7 @@ aws cloudformation describe-change-set \
 #### Step 4: Execute Update
 <a name="step-4-execute-update"></a>
 
-```
+```bash
 aws cloudformation execute-change-set \
   --stack-name SpatialDataManagement \
   --change-set-name update-to-v1-1-0
@@ -128,7 +128,7 @@ aws cloudformation execute-change-set \
 #### Step 5: Monitor Update Progress
 <a name="step-5-monitor-update-progress"></a>
 
-```
+```bash
 aws cloudformation describe-stack-events \
   --stack-name SpatialDataManagement \
   --query 'StackEvents[*].[Timestamp,ResourceStatus,ResourceType,LogicalResourceId]' \
@@ -180,7 +180,7 @@ aws cloudformation describe-stack-events \
 ### 1. Verify Stack Status
 <a name="verify-stack-status"></a>
 
-```
+```bash
 aws cloudformation describe-stacks \
   --stack-name SpatialDataManagement \
   --query 'Stacks[0].StackStatus'
@@ -191,7 +191,7 @@ Expected: `UPDATE_COMPLETE`
 ### 2. Test API Functionality
 <a name="test-api-functionality"></a>
 
-```
+```bash
 API_ENDPOINT=$(aws cloudformation describe-stacks \
   --stack-name SpatialDataManagement \
   --query 'Stacks[0].Outputs[?OutputKey==`ApiEndpoint`].OutputValue' \
@@ -207,7 +207,7 @@ curl -H "Authorization: Bearer $TOKEN" $API_ENDPOINT/api/v1/libraries
 ### 3. Check Lambda Function Versions
 <a name="check-lambda-function-versions"></a>
 
-```
+```bash
 aws lambda list-functions \
   --query 'Functions[?contains(FunctionName, `SpatialDataManagement`)].[FunctionName,LastModified,State]' \
   --output table
@@ -221,7 +221,7 @@ aws lambda list-functions \
 
 CloudFormation automatically rolls back if update fails. Monitor rollback:
 
-```
+```bash
 aws cloudformation describe-stack-events \
   --stack-name SpatialDataManagement \
   --query 'StackEvents[?contains(ResourceStatus, `ROLLBACK`)]'
@@ -235,7 +235,7 @@ If you need to manually rollback to previous version:
 #### Option 1: Use Previous Template
 <a name="option-1-use-previous-template"></a>
 
-```
+```bash
 aws cloudformation update-stack \
   --stack-name SpatialDataManagement \
   --template-body file://current-template.json \

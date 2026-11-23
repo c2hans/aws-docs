@@ -113,7 +113,7 @@ aws globalaccelerator list-custom-routing-listeners
          --region us-west-2
 ```
 
-```
+```json
 {
     "Listeners": [
         {

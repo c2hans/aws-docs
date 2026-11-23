@@ -24,7 +24,7 @@ For general information about `cqlsh`, see [`cqlsh`: the CQL shell](https://cass
 
    You need Python 3 to install the `cqlsh-expansion`, to find out your Python version, use `Python --version`. To install, you can run the following command.
 
-   ```
+   ```python
    python3 -m pip install --user cqlsh-expansion
    ```
 
@@ -181,7 +181,7 @@ If you're connecting from an Amazon EC2 instance, you also need to configure an 
 **Cleanup**
 + To remove the `cqlsh-expansion` package you can use the `pip uninstall` command.
 
-  ```
+  ```python
   pip3 uninstall cqlsh-expansion
   ```
 

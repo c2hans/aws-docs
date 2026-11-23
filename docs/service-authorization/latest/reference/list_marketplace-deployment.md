@@ -23,6 +23,24 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_marketplace-deployment-actions-as-permissions).
 
+- **   GetDeploymentConfiguration  **
+  - **IAM action:**  [aws-marketplace:GetDeploymentConfiguration](#list_marketplace-deployment-action-GetDeploymentConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDeploymentConfigurationJob  **
+  - **IAM action:**  [aws-marketplace:GetDeploymentConfigurationJob](#list_marketplace-deployment-action-GetDeploymentConfigurationJob)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListDeploymentConfigurationJobs  **
+  - **IAM action:**  [aws-marketplace:ListDeploymentConfigurationJobs](#list_marketplace-deployment-action-ListDeploymentConfigurationJobs)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListTagsForResource  **
   - **IAM action:**  [aws-marketplace:ListTagsForResource](#list_marketplace-deployment-action-ListTagsForResource)
   - **Condition key:**
@@ -32,6 +50,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   PutDeploymentParameter  **
   - **IAM action:**  [aws-marketplace:PutDeploymentParameter](#list_marketplace-deployment-action-PutDeploymentParameter)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [aws-marketplace:TagResource](#list_marketplace-deployment-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   StartDeploymentConfigurationJob  **
+  - **IAM action:**  [aws-marketplace:StartDeploymentConfigurationJob](#list_marketplace-deployment-action-StartDeploymentConfigurationJob)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   TagResource  **
   - **IAM action:**  [aws-marketplace:TagResource](#list_marketplace-deployment-action-TagResource)

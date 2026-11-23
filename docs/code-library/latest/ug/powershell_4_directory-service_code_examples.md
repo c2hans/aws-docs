@@ -26,7 +26,7 @@ The following code example shows how to use `Add-DSIpRoute`.
 **Tools for PowerShell V4**
 **Example 1: This command removes the Resource Tag assigned to the specified Directory-id**
 
-```
+```powershell
 Add-DSIpRoute -DirectoryId d-123456ijkl -IpRoute @{CidrIp ="203.0.113.5/32"} -UpdateSecurityGroupForDirectoryController $true
 ```
 +  For API details, see [AddIpRoutes](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -39,7 +39,7 @@ The following code example shows how to use `Add-DSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This command adds the Resource Tag to the specified Directory-id**
 
-```
+```powershell
 Add-DSResourceTag -ResourceId d-123456ijkl -Tag @{Key="myTag"; Value="mytgValue"}
 ```
 +  For API details, see [AddTagsToResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -52,7 +52,7 @@ The following code example shows how to use `Approve-DSTrust`.
 **Tools for PowerShell V4**
 **Example 1: This example calls the AWS Directory Service VerifyTrust API operation for specified Trustid.**
 
-```
+```powershell
 Approve-DSTrust -TrustId t-9067157123
 ```
 +  For API details, see [VerifyTrust](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -65,7 +65,7 @@ The following code example shows how to use `Confirm-DSSharedDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This example accepts a directory sharing request sent from the directory owner AWS account.**
 
-```
+```powershell
 Confirm-DSSharedDirectory -SharedDirectoryId d-9067012345
 ```
 **Output:**
@@ -91,7 +91,7 @@ The following code example shows how to use `Connect-DSDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This example creates an AD Connector to connect to an on-premises directory.**
 
-```
+```powershell
 Connect-DSDirectory -Name contoso.com -ConnectSettings_CustomerUserName Administrator -Password $Password -ConnectSettings_CustomerDnsIp 172.31.36.96 -ShortName CONTOSO -Size Small -ConnectSettings_VpcId vpc-123459da -ConnectSettings_SubnetId subnet-1234ccaa, subnet-5678ffbb
 ```
 +  For API details, see [ConnectDirectory](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -104,7 +104,7 @@ The following code example shows how to use `Deny-DSSharedDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This example rejects a directory sharing request that was sent from the directory owner account. **
 
-```
+```powershell
 Deny-DSSharedDirectory -SharedDirectoryId d-9067012345
 ```
 **Output:**
@@ -122,7 +122,7 @@ The following code example shows how to use `Disable-DSDirectoryShare`.
 **Tools for PowerShell V4**
 **Example 1: This example stops the directory sharing between the directory owner and consumer account. **
 
-```
+```powershell
 Disable-DSDirectoryShare -DirectoryId d-123456ijkl -UnshareTarget_Id 123456784321 -UnshareTarget_Type ACCOUNT
 ```
 **Output:**
@@ -140,7 +140,7 @@ The following code example shows how to use `Disable-DSLDAPS`.
 **Tools for PowerShell V4**
 **Example 1: This example deactivates LDAP secure calls for the specified directory.**
 
-```
+```powershell
 Disable-DSLDAPS -DirectoryId d-123456ijkl -Type Client
 ```
 +  For API details, see [DisableLDAPS](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -153,7 +153,7 @@ The following code example shows how to use `Disable-DSRadius`.
 **Tools for PowerShell V4**
 **Example 1: This example disables RADIUS server configured for an AD Connector or Microsoft AD directory.**
 
-```
+```powershell
 Disable-DSRadius -DirectoryId d-123456ijkl
 ```
 +  For API details, see [DisableRadius](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -166,7 +166,7 @@ The following code example shows how to use `Disable-DSSso`.
 **Tools for PowerShell V4**
 **Example 1: This example disables single sign-on for a directory.**
 
-```
+```powershell
 Disable-DSSso -DirectoryId d-123456ijkl
 ```
 +  For API details, see [DisableSso](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -179,7 +179,7 @@ The following code example shows how to use `Enable-DSDirectoryShare`.
 **Tools for PowerShell V4**
 **Example 1: This example shares a specified directory in your AWS account with another AWS Account using Handshake method. **
 
-```
+```powershell
 Enable-DSDirectoryShare -DirectoryId d-123456ijkl -ShareTarget_Id 123456784321 -ShareMethod HANDSHAKE -ShareTarget_Type ACCOUNT
 ```
 **Output:**
@@ -197,7 +197,7 @@ The following code example shows how to use `Enable-DSLDAPS`.
 **Tools for PowerShell V4**
 **Example 1: This example activates the switch for the specific directory to always use LDAP secure calls.**
 
-```
+```powershell
 Enable-DSLDAPS -DirectoryId d-123456ijkl -Type Client
 ```
 +  For API details, see [EnableLDAPS](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -210,7 +210,7 @@ The following code example shows how to use `Enable-DSRadius`.
 **Tools for PowerShell V4**
 **Example 1: This example enables multi-factor authentication (MFA) with the provided RADIUS server configuration for an AD Connector or Microsoft AD directory.**
 
-```
+```powershell
 Enable-DSRadius -DirectoryId d-123456ijkl
 -RadiusSettings_AuthenticationProtocol PAP
 -RadiusSettings_DisplayLabel Radius
@@ -230,7 +230,7 @@ The following code example shows how to use `Enable-DSSso`.
 **Tools for PowerShell V4**
 **Example 1: This example enables single sign-on for a directory. **
 
-```
+```powershell
 Enable-DSSso -DirectoryId d-123456ijkl
 ```
 +  For API details, see [EnableSso](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -243,7 +243,7 @@ The following code example shows how to use `Get-DSCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example displays information about the certificate registered for a secured LDAP connection.**
 
-```
+```powershell
 Get-DSCertificate -DirectoryId d-123456ijkl -CertificateId c-906731e34f
 ```
 **Output:**
@@ -266,7 +266,7 @@ The following code example shows how to use `Get-DSCertificateList`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all the certificates registered for a secured LDAP connection for specified directory.**
 
-```
+```powershell
 Get-DSCertificateList -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -286,7 +286,7 @@ The following code example shows how to use `Get-DSConditionalForwarder`.
 **Tools for PowerShell V4**
 **Example 1: This command gets all configured Conditional Forwarders of given Directory-id. **
 
-```
+```powershell
 Get-DSConditionalForwarder -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -306,7 +306,7 @@ The following code example shows how to use `Get-DSDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This command Obtains information about the directories that belong to this account.**
 
-```
+```powershell
 Get-DSDirectory | Select-Object DirectoryId, Name, DnsIpAddrs, Type
 ```
 **Output:**
@@ -328,7 +328,7 @@ The following code example shows how to use `Get-DSDirectoryLimit`.
 **Tools for PowerShell V4**
 **Example 1: This example dislpays the directory limit information for the us-east-1 region. **
 
-```
+```powershell
 Get-DSDirectoryLimit -Region us-east-1
 ```
 **Output:**
@@ -353,7 +353,7 @@ The following code example shows how to use `Get-DSDomainControllerList`.
 **Tools for PowerShell V4**
 **Example 1: This command gets the detailed list of Domain Controllers launched for mentioned directory-id**
 
-```
+```powershell
 Get-DSDomainControllerList -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -391,7 +391,7 @@ The following code example shows how to use `Get-DSEventTopic`.
 **Tools for PowerShell V4**
 **Example 1: This command shows information of configured SNS Topic for notification while directory status changes.**
 
-```
+```powershell
 Get-DSEventTopic -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -413,7 +413,7 @@ The following code example shows how to use `Get-DSIpRouteList`.
 **Tools for PowerShell V4**
 **Example 1: This command gets the public IP address blocks configured in Directory IP Routing**
 
-```
+```powershell
 Get-DSIpRouteList -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -436,7 +436,7 @@ The following code example shows how to use `Get-DSLDAPSSetting`.
 **Tools for PowerShell V4**
 **Example 1: This example describes the status of LDAP security for the specified directory.**
 
-```
+```powershell
 Get-DSLDAPSSetting -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -456,7 +456,7 @@ The following code example shows how to use `Get-DSLogSubscriptionList`.
 **Tools for PowerShell V4**
 **Example 1: This command gets the log subscriptions information of specified directory-id **
 
-```
+```powershell
 Get-DSLogSubscriptionList -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -476,7 +476,7 @@ The following code example shows how to use `Get-DSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This command gets all the Tags of specified Directory.**
 
-```
+```powershell
 Get-DSResourceTag -ResourceId d-123456ijkl
 ```
 **Output:**
@@ -496,7 +496,7 @@ The following code example shows how to use `Get-DSSchemaExtension`.
 **Tools for PowerShell V4**
 **Example 1: This example lists all schema extensions applied to a Microsoft AD Directory.**
 
-```
+```powershell
 Get-DSSchemaExtension -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -520,7 +520,7 @@ The following code example shows how to use `Get-DSSharedDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This example gets the shared directories of your AWS Account**
 
-```
+```powershell
 Get-DSSharedDirectory -OwnerDirectoryId d-123456ijkl -SharedDirectoryId d-9067012345
 ```
 **Output:**
@@ -546,7 +546,7 @@ The following code example shows how to use `Get-DSSnapshot`.
 **Tools for PowerShell V4**
 **Example 1: This command gets information about the specified directory snapshots that belong to this account.**
 
-```
+```powershell
 Get-DSSnapshot -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -576,7 +576,7 @@ The following code example shows how to use `Get-DSSnapshotLimit`.
 **Tools for PowerShell V4**
 **Example 1: This command gets the manual snapshot limits for a specified directory.**
 
-```
+```powershell
 Get-DSSnapshotLimit -DirectoryId d-123456ijkl
 ```
 **Output:**
@@ -596,7 +596,7 @@ The following code example shows how to use `Get-DSTrust`.
 **Tools for PowerShell V4**
 **Example 1: This command gets the information of trust relationships created for specified directory-id.**
 
-```
+```powershell
 Get-DSTrust -DirectoryId d-123456abcd
 ```
 **Output:**
@@ -624,7 +624,7 @@ The following code example shows how to use `New-DSAlias`.
 **Tools for PowerShell V4**
 **Example 1: This command creates an alias for a directory and assigns the alias to the specified directory-id.**
 
-```
+```powershell
 New-DSAlias -DirectoryId d-123456ijkl -Alias MyOrgName
 ```
 **Output:**
@@ -644,7 +644,7 @@ The following code example shows how to use `New-DSComputer`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a new Active Directory computer object.**
 
-```
+```powershell
 New-DSComputer -DirectoryId d-123456ijkl -ComputerName ADMemberServer -Password $Password
 ```
 **Output:**
@@ -664,7 +664,7 @@ The following code example shows how to use `New-DSConditionalForwarder`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a Conditional forwarder in specified AWS Directory-id. **
 
-```
+```powershell
 New-DSConditionalForwarder -DirectoryId d-123456ijkl -DnsIpAddr 172.31.36.96,172.31.10.56 -RemoteDomainName contoso.com
 ```
 +  For API details, see [CreateConditionalForwarder](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -677,7 +677,7 @@ The following code example shows how to use `New-DSDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This example create a new Simple AD directory.**
 
-```
+```powershell
 New-DSDirectory -Name corp.example.com -Password $Password -Size Small -VpcSettings_VpcId vpc-123459d -VpcSettings_SubnetIds subnet-1234kkaa,subnet-5678ffbb
 ```
 +  For API details, see [CreateDirectory](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -690,7 +690,7 @@ The following code example shows how to use `New-DSLogSubscription`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your AWS account.**
 
-```
+```powershell
 New-DSLogSubscription -DirectoryId d-123456ijkl -LogGroupName /aws/directoryservice/d-123456ijkl-lan2.example.com
 ```
 +  For API details, see [CreateLogSubscription](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -703,7 +703,7 @@ The following code example shows how to use `New-DSMicrosoftAD`.
 **Tools for PowerShell V4**
 **Example 1: This example creates new Microsoft AD Directory in AWS Cloud.**
 
-```
+```powershell
 New-DSMicrosoftAD -Name corp.example.com -Password $Password -edition Standard -VpcSettings_VpcId vpc-123459d -VpcSettings_SubnetIds subnet-1234kkaa,subnet-5678ffbb
 ```
 +  For API details, see [CreateMicrosoftAD](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -716,7 +716,7 @@ The following code example shows how to use `New-DSSnapshot`.
 **Tools for PowerShell V4**
 **Example 1: This example creates a directory snapshot**
 
-```
+```powershell
 New-DSSnapshot -DirectoryId d-123456ijkl
 ```
 +  For API details, see [CreateSnapshot](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -729,7 +729,7 @@ The following code example shows how to use `New-DSTrust`.
 **Tools for PowerShell V4**
 **Example 1: This example creates Two-Way Forestwide trust between your AWS Managed Microsoft AD directory, and existing on-premises Microsoft Active Directory.**
 
-```
+```powershell
 New-DSTrust -DirectoryId d-123456ijkl -RemoteDomainName contoso.com -TrustDirection Two-Way -TrustType Forest -TrustPassword $Password -ConditionalForwarderIpAddr 172.31.36.96
 ```
 **Output:**
@@ -747,7 +747,7 @@ The following code example shows how to use `Register-DSCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example registers a certificate for secured LDAP connection.**
 
-```
+```powershell
 $Certificate = Get-Content contoso.cer -Raw
 Register-DSCertificate -DirectoryId d-123456ijkl -CertificateData $Certificate
 ```
@@ -766,7 +766,7 @@ The following code example shows how to use `Register-DSEventTopic`.
 **Tools for PowerShell V4**
 **Example 1: This example associate a directory as a publisher with an SNS topic.**
 
-```
+```powershell
 Register-DSEventTopic -DirectoryId d-123456ijkl -TopicName snstopicname
 ```
 +  For API details, see [RegisterEventTopic](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -779,7 +779,7 @@ The following code example shows how to use `Remove-DSConditionalForwarder`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the conditional forwarder that has been set up for your AWS Direcotry.**
 
-```
+```powershell
 Remove-DSConditionalForwarder -DirectoryId d-123456ijkl -RemoteDomainName contoso.com
 ```
 +  For API details, see [DeleteConditionalForwarder](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -792,7 +792,7 @@ The following code example shows how to use `Remove-DSDirectory`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes an AWS Directory service directory (Simple AD/Microsoft AD/AD Connector)**
 
-```
+```powershell
 Remove-DSDirectory -DirectoryId d-123456ijkl
 ```
 +  For API details, see [DeleteDirectory](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -805,7 +805,7 @@ The following code example shows how to use `Remove-DSIpRoute`.
 **Tools for PowerShell V4**
 **Example 1: This command removes the specified IP from Configured IP routes of Directory-id. **
 
-```
+```powershell
 Remove-DSIpRoute -DirectoryId d-123456ijkl -CidrIp 203.0.113.5/32
 ```
 +  For API details, see [RemoveIpRoutes](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -818,7 +818,7 @@ The following code example shows how to use `Remove-DSLogSubscription`.
 **Tools for PowerShell V4**
 **Example 1: This command removes the Log Subscription of specified Directory-id**
 
-```
+```powershell
 Remove-DSLogSubscription -DirectoryId d-123456ijkl
 ```
 +  For API details, see [DeleteLogSubscription](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -831,7 +831,7 @@ The following code example shows how to use `Remove-DSResourceTag`.
 **Tools for PowerShell V4**
 **Example 1: This command removes the Resource Tag assigned to the specified Directory-id**
 
-```
+```powershell
 Remove-DSResourceTag -ResourceId d-123456ijkl -TagKey myTag
 ```
 +  For API details, see [RemoveTagsFromResource](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -844,7 +844,7 @@ The following code example shows how to use `Remove-DSSnapshot`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the manually created snapshot.**
 
-```
+```powershell
 Remove-DSSnapshot -SnapshotId s-9068b488kc
 ```
 +  For API details, see [DeleteSnapshot](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -857,7 +857,7 @@ The following code example shows how to use `Remove-DSTrust`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the exsisting trust relationhip between your AWS Managed AD Directory and an external domain.**
 
-```
+```powershell
 Get-DSTrust -DirectoryId d-123456ijkl -Select Trusts.TrustId | Remove-DSTrust
 ```
 **Output:**
@@ -875,7 +875,7 @@ The following code example shows how to use `Reset-DSUserPassword`.
 **Tools for PowerShell V4**
 **Example 1: This example resets the password of Active Direcotry user named ADUser in AWS Managed microsoft AD or Simple AD Directory**
 
-```
+```powershell
 Reset-DSUserPassword -UserName ADuser -DirectoryId d-123456ijkl -NewPassword $Password
 ```
 +  For API details, see [ResetUserPassword](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -888,7 +888,7 @@ The following code example shows how to use `Restore-DSFromSnapshot`.
 **Tools for PowerShell V4**
 **Example 1: This example restores a directory using an exsisting directory snapshot.**
 
-```
+```powershell
 Restore-DSFromSnapshot -SnapshotId s-9068b488kc
 ```
 +  For API details, see [RestoreFromSnapshot](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -901,7 +901,7 @@ The following code example shows how to use `Set-DSDomainControllerCount`.
 **Tools for PowerShell V4**
 **Example 1: This example sets the number of domain controller to 3 for specified directory-id.**
 
-```
+```powershell
 Set-DSDomainControllerCount -DirectoryId d-123456ijkl -DesiredNumber 3
 ```
 +  For API details, see [UpdateNumberOfDomainControllers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -914,7 +914,7 @@ The following code example shows how to use `Start-DSSchemaExtension`.
 **Tools for PowerShell V4**
 **Example 1: This Example Applies a schema extension to a Microsoft AD directory.**
 
-```
+```powershell
 $ldif = Get-Content D:\Users\Username\Downloads\ExtendedSchema.ldf -Raw
 Start-DSSchemaExtension -DirectoryId d-123456ijkl -CreateSnapshotBeforeSchemaExtension $true -Description ManagedADSchemaExtension -LdifContent $ldif
 ```
@@ -933,7 +933,7 @@ The following code example shows how to use `Stop-DSSchemaExtension`.
 **Tools for PowerShell V4**
 **Example 1: This example cancels an in-progress schema extension to a Microsoft AD directory.**
 
-```
+```powershell
 Stop-DSSchemaExtension -DirectoryId d-123456ijkl -SchemaExtensionId e-9067306643
 ```
 +  For API details, see [CancelSchemaExtension](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -946,7 +946,7 @@ The following code example shows how to use `Unregister-DSCertificate`.
 **Tools for PowerShell V4**
 **Example 1: This example deletes from the system the certificate that was registered for a secured LDAP connection..**
 
-```
+```powershell
 Unregister-DSCertificate -DirectoryId d-123456ijkl -CertificateId c-906731e34f
 ```
 +  For API details, see [DeregisterCertificate](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -959,7 +959,7 @@ The following code example shows how to use `Unregister-DSEventTopic`.
 **Tools for PowerShell V4**
 **Example 1: This example removes the specefied directory as a publisher to the specified SNS topic. **
 
-```
+```powershell
 Unregister-DSEventTopic -DirectoryId d-123456ijkl -TopicName snstopicname
 ```
 +  For API details, see [DeregisterEventTopic](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -972,7 +972,7 @@ The following code example shows how to use `Update-DSConditionalForwarder`.
 **Tools for PowerShell V4**
 **Example 1: This example updates a conditional forwarder that has been set up for your AWS directory.**
 
-```
+```powershell
 Update-DSConditionalForwarder -DirectoryId d-123456ijkl -DnsIpAddr 172.31.36.96,172.31.16.108 -RemoteDomainName contoso.com
 ```
 +  For API details, see [UpdateConditionalForwarder](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -985,7 +985,7 @@ The following code example shows how to use `Update-DSRadius`.
 **Tools for PowerShell V4**
 **Example 1: This example updates RADIUS server information for an AD Connector or Microsoft AD directory.**
 
-```
+```powershell
 Update-DSRadius -DirectoryId d-123456ijkl -RadiusSettings_RadiusRetry 3
 ```
 +  For API details, see [UpdateRadius](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -998,7 +998,7 @@ The following code example shows how to use `Update-DSTrust`.
 **Tools for PowerShell V4**
 **Example 1: This example updates the SelectiveAuth parameter of specified trust-id from Disabled to Enabled.**
 
-```
+```powershell
 Update-DSTrust -TrustId t-9067157123 -SelectiveAuth Enabled
 ```
 **Output:**

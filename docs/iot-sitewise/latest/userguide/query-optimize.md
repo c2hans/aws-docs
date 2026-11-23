@@ -26,13 +26,13 @@ These fields provide better performance than the **latest\_value\_time\_series**
 **Note**
 Use literals on the right side of operators to properly limit the data scan. For example, the following query performs worse than using a strict string literal:
 
-```
+```SQL
 SELECT property_id FROM asset_property WHERE property_name = CONCAT('my', 'property')
 ```
 
 **Example for metadata filters:**
 
-```
+```SQL
 SELECT p.property_name FROM asset_property p
 WHERE p.property_type = 'attribute' AND p.string_attribute_value LIKE 'my-property-%'
 ```
@@ -55,7 +55,7 @@ All raw data tables (**raw\_time\_series**, **latest\_value\_time\_series**, **p
    We also highly recommend using a resolution filter (1m, 15m, 1h, or 1d) when querying the **precomputed\_aggregates** table. If you don't specify a resolution filter, AWS IoT SiteWise will default to a full table scan across all resolutions, which is inefficient.
 +  When querying raw data, timestamp functions can also be used in the `WHERE` clause to filter the amount of data scanned. For example, the following query only scans the last 30 minutes of data from the **raw\_time\_series** table:
 
-  ```
+  ```SQL
   SELECT r.event_timestamp, r.double_value
   FROM raw_time_series r
   WHERE r.event_timestamp > TIMESTAMP_SUB(MINUTE, 30, NOW())
@@ -71,13 +71,13 @@ AWS IoT SiteWise SQL supports the `JOIN` keyword to merge two tables together. O
 
 AWS IoT SiteWise also supports implicit `JOIN`s without using the `JOIN` keyword. These are allowed between different metadata tables and between a metadata table and a raw table. For example, this query:
 
-```
+```SQL
 SELECT a.asset_name, p.property_name FROM asset a, asset_property p
 ```
 
 Performs better than this equivalent query:
 
-```
+```SQL
 SELECT a.asset_name, p.property_name FROM asset a
 JOIN asset_property p ON a.asset_id = p.asset_id
 ```
@@ -95,7 +95,7 @@ The following implicit joins are allowed (O is allowed, X is prohibited):
 
 Use implicit `JOIN`s where possible. If you must use the `JOIN` keyword, apply filters on the individual `JOIN`ed tables to minimize data scanned. For example, instead of this query:
 
-```
+```SQL
 SELECT level1.asset_id, level2.asset_id, level3.asset_id
 FROM asset AS level1
 JOIN asset AS level2 ON level2.parent_asset_id = level1.asset_id
@@ -107,7 +107,7 @@ AND level3.asset_name LIKE 'level3%'
 
 Use this more efficient query:
 
-```
+```SQL
 SELECT level1.asset_id, level2.asset_id, level3.asset_id
 FROM asset AS level1
 JOIN (SELECT asset_id, parent_asset_id FROM asset WHERE asset_name LIKE 'level2%') AS level2 ON level2.parent_asset_id = level1.asset_id

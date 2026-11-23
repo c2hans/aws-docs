@@ -36,7 +36,7 @@ The compute\_type column will be empty for serverless clusters because Amazon Re
 
 The following query displays the automatic optimizations performed on table 155259.
 
-```
+```sql
 SELECT pid, trim(task_type) as task_type,
   trim(database) as database,
   trim(status) as status,
@@ -53,7 +53,7 @@ AND status = 'Task completed successfully';
 
 The following query shows all executed automatic "VacuumSort" optimizations. For more information about "VacuumSort", see [Automatic table sort](t_Reclaiming_storage_space202.md#automatic-table-sort).
 
-```
+```sql
 SELECT trim(task_type) as task_type,
   trim(database) as database,
   trim(object_type) as object_type,

@@ -40,7 +40,7 @@ Contains jars that can provide additional capabilities for the modernized applic
 
 To manage certain Java options for the application, add a properties file named `tomcat.properties` to the folder specified by `app-location`. This file can have three properties: `xms`, which specifies the minimum Java memory consumption, `xmx`, which specifies the maximum Java memory consumption, and `dnscachettl`, that manages the cache duration for dns resolutions. The following is an example of the contents of a valid `tomcat.properties` file.
 
-```
+```json
 xms=512M
 xmx=1G
 dnscachettl=5

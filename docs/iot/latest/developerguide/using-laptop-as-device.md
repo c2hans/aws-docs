@@ -34,7 +34,7 @@ This procedure explains how to install the latest version of Git and Python on y
 
 1. Check to see if you have Git installed on your computer. Enter this command in the command line.
 
-   ```
+   ```bash
    git --version
    ```
 
@@ -44,7 +44,7 @@ This procedure explains how to install the latest version of Git and Python on y
 
 1. Check to see if you have already installed Python. Enter the command in the command line.
 
-   ```
+   ```bash
    python -V
    ```
 **Note**
@@ -60,7 +60,7 @@ If this command gives an error: `Python was not found`, it might be because your
 
 1. Verify the installation of Python.
 
-   ```
+   ```bash
    python -V
    ```
 
@@ -73,7 +73,7 @@ If this command gives an error: `Python was not found`, it might be because your
 
 1. Install v2 of the AWS IoT Device SDK for Python.
 
-   ```
+   ```bash
    python3 -m pip install awsiotsdk
    ```
 
@@ -86,7 +86,7 @@ If this command gives an error: `Python was not found`, it might be because your
 
    In macOS and Linux, the {{home}} directory is `~`.
 
-   ```
+   ```bash
    cd ~
    git clone https://github.com/aws/aws-iot-device-sdk-python-v2.git
    ```
@@ -96,7 +96,7 @@ If this command gives an error: `Python was not found`, it might be because your
 
    In Windows, you can find the {{home}} directory path by running this command in the `cmd` window.
 
-   ```
+   ```bash
    echo %USERPROFILE%
    cd %USERPROFILE%
    git clone https://github.com/aws/aws-iot-device-sdk-python-v2.git
@@ -125,7 +125,7 @@ For more information, see the [AWS IoT Device SDK for Python GitHub repository](
 
   Run this command to create the `certs` subdirectory that you'll use when you run the sample applications.
 
-  ```
+  ```bash
   mkdir ~/certs
   ```
 
@@ -155,7 +155,7 @@ For more information, see the [AWS IoT Device SDK for Python GitHub repository](
 
   Run this command to create the `certs` subdirectory that you'll use when you run the sample applications.
 
-  ```
+  ```bash
   mkdir %USERPROFILE%\certs
   ```
 
@@ -216,7 +216,7 @@ Before running the script, make sure your thing's policy provides permissions fo
 1. The policy JSON is displayed in the following example. In the `"Resource"` element, replace `{{region:account}}` with your AWS Region and AWS account in each of the `Resource` values.
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -265,7 +265,7 @@ Before running the script, make sure your thing's policy provides permissions fo
 
 1. In your command line window, replace {{your-iot-endpoint}} as indicated and run this command.
 
-   ```
+   ```bash
    python3 pubsub.py --endpoint your-iot-endpoint --ca_file ~/certs/Amazon-root-CA-1.pem --cert ~/certs/device.pem.crt --key ~/certs/private.pem.key
    ```
 
@@ -350,7 +350,7 @@ You can see the sample app's messages as they pass through the message broker by
 ------
 #### [ Linux/macOS ]
 
-   ```
+   ```bash
    cd ~/aws-iot-device-sdk-python-v2/samples
    python3 pubsub.py --topic test/topic --ca_file ~/certs/Amazon-root-CA-1.pem --cert ~/certs/device.pem.crt --key ~/certs/private.pem.key --endpoint {{your-iot-endpoint}}
    ```
@@ -358,7 +358,7 @@ You can see the sample app's messages as they pass through the message broker by
 ------
 #### [ Windows ]
 
-   ```
+   ```bash
    cd %USERPROFILE%\aws-iot-device-sdk-python-v2\samples
    python3 pubsub.py --topic test/topic --ca_file %USERPROFILE%\certs\Amazon-root-CA-1.pem --cert %USERPROFILE%\certs\device.pem.crt --key %USERPROFILE%\certs\private.pem.key --endpoint {{your-iot-endpoint}}
    ```
@@ -391,7 +391,7 @@ AWS IoT Core supports [Shared Subscriptions](mqtt.md#mqtt5-shared-subscription) 
 
    1. In your command line window, replace {{your-iot-endpoint}} as indicated and run this command.
 
-      ```
+      ```bash
       python3 mqtt5_shared_subscription.py --endpoint your-iot-endpoint --ca_file ~/certs/Amazon-root-CA-1.pem --cert ~/certs/device.pem.crt --key ~/certs/private.pem.key --group_identifier consumer
       ```
 
@@ -418,7 +418,7 @@ You can optionally specify a group identifier based on your needs when you run t
 
 1. The output in your command line can look like the following:
 
-   ```
+   ```JSON
    Publisher]: Lifecycle Connection Success
    [Publisher]: Connected
    Subscriber One]: Lifecycle Connection Success

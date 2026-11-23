@@ -32,13 +32,13 @@ The key expires when your console session expires (maximum 12 hours). You can us
 
 Install the token generator:
 
-```
+```bash
 pip install aws-bedrock-token-generator
 ```
 
 Generate a token:
 
-```
+```python
 from aws_bedrock_token_generator import provide_token
 
 token = provide_token()
@@ -50,13 +50,13 @@ print(f"Token: {token}")
 
 Install the token generator:
 
-```
+```bash
 npm install @aws/bedrock-token-generator
 ```
 
 Generate a token:
 
-```
+```javascript
 import { getTokenProvider } from "@aws/bedrock-token-generator";
 
 const provideToken = getTokenProvider();
@@ -69,7 +69,7 @@ console.log(`Bearer Token: ${token}`);
 
 Add the dependency (Maven):
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.bedrock</groupId>
     <artifactId>aws-bedrock-token-generator</artifactId>
@@ -79,7 +79,7 @@ Add the dependency (Maven):
 
 Generate a token:
 
-```
+```java
 import software.amazon.bedrock.token.BedrockTokenGenerator;
 
 BedrockTokenGenerator tokenGenerator = BedrockTokenGenerator.builder().build();
@@ -112,7 +112,7 @@ Choose the tab for your preferred method, and then follow the steps:
 ------
 #### [ CLI ]
 
-```
+```bash
 # Create an IAM user
 aws iam create-user --user-name bedrock-api-user
 
@@ -131,7 +131,7 @@ The `ServiceApiKeyValue` in the response is your API key.
 
 To deactivate or delete the key later, use the `ServiceSpecificCredentialId` from the response:
 
-```
+```bash
 # Deactivate the key
 aws iam update-service-specific-credential \
     --user-name bedrock-api-user \
@@ -147,7 +147,7 @@ aws iam delete-service-specific-credential \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 iam_client = boto3.client("iam")
@@ -178,7 +178,7 @@ print(api_key)
 
 Set the key as an environment variable:
 
-```
+```bash
 # macOS/Linux
 export AWS_BEARER_TOKEN_BEDROCK={{${api-key}}}
 
@@ -198,7 +198,7 @@ choose the tab for your preferred method, and then follow the steps:
 ------
 #### [ cURL ]
 
-```
+```bash
 curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/model/us.anthropic.claude-sonnet-4-6/converse" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AWS_BEARER_TOKEN_BEDROCK" \
@@ -210,7 +210,7 @@ curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/model/us.anthropic
 ------
 #### [ Python (boto3) ]
 
-```
+```python
 import os
 import boto3
 
@@ -233,7 +233,7 @@ For long-running applications, call the token generator before each request. It 
 ------
 #### [ Python ]
 
-```
+```python
 from aws_bedrock_token_generator import provide_token
 import requests
 
@@ -250,7 +250,7 @@ print(response.json())
 ------
 #### [ Javascript ]
 
-```
+```javascript
 import { getTokenProvider } from "@aws/bedrock-token-generator";
 
 const provideToken = getTokenProvider();
@@ -300,7 +300,7 @@ IAM actions control API key generation and usage:
 **Example: Prevent an identity from using any API key**
 Attach this policy to the identity:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -319,7 +319,7 @@ Attach this policy to the identity:
 **Example: Allow only short-lived keys (max 90 days)**
 Attach this policy to the identity:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

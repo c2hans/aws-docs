@@ -32,7 +32,7 @@ Delegated administrators are accounts within a given AWS Organization that are g
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "EnabledServicePrincipals": [
            {
@@ -72,7 +72,7 @@ Delegated administrators are accounts within a given AWS Organization that are g
 
    You should see output similar to the following:
 
-   ```
+   ```json
    {
        "DelegatedAdministrators": [
            {

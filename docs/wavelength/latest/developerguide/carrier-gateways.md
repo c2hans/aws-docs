@@ -157,7 +157,7 @@ If you used the Amazon EC2 console to launch the instance, or you did not use th
 
    The following is example output:
 
-   ```
+   ```json
    {
        "AllocationId": "eipalloc-05807b62acEXAMPLE",
        "PublicIpv4Pool": "amazon",
@@ -176,7 +176,7 @@ If you used the Amazon EC2 console to launch the instance, or you did not use th
 
    The following is example output:
 
-   ```
+   ```json
    {
        "AssociationId": "eipassoc-02463d08ceEXAMPLE",
    }

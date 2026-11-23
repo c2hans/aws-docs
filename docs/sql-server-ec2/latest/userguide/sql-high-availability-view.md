@@ -41,14 +41,14 @@ You can run these commands from [AWS CloudShell](https://docs.aws.amazon.com/clo
 
 To view the current SQL HA states for Amazon EC2 instances, use the [Get-EC2InstanceSqlHaState](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceSqlHaState.html) cmdlet. This cmdlet returns only the instances that are currently enabled for SQL HA standby detection. If any instance ID that you specify is not currently enabled, the entire request fails and no states are returned.
 
-```
+```powershell
 Get-EC2InstanceSqlHaState `
 -InstanceId '{{i-1234567890abcdef0}}','{{i-0fedcba0987654321}}'
 ```
 
 To view the historical SQL HA states for instances, use the [ Get-EC2InstanceSqlHaHistoryState](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceSqlHaHistoryState.html) cmdlet. This cmdlet returns your SQL HA instance state transitions in descending time order. Specify `-StartTime` and `-EndTime` in UTC, using the ISO 8601 format `YYYY-MM-DDThh:mm:ssZ`.
 
-```
+```powershell
 Get-EC2InstanceSqlHaHistoryState `
 -InstanceId '{{i-1234567890abcdef0}}','{{i-0fedcba0987654321}}' `
 -StartTime '{{2026-08-01T00:00:00Z}}' `

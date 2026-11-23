@@ -12,6 +12,7 @@ Lake Formation provides central access controls for data in your data lake. You 
 + [Permissions example scenario](security-permissions-example-scenario.md)
 + [Data filtering and cell-level security in Lake Formation](data-filtering.md)
 + [Row-level security policies in AWS Lake Formation](rls-policies.md)
++ [Governing AWS Glue Data Catalog user-defined functions with Lake Formation](governing-user-defined-functions.md)
 + [Viewing database and table permissions in Lake Formation](viewing-permissions.md)
 + [Revoking permission using the Lake Formation console](revoking-permssions-console-all.md)
 + [Cross-account data sharing in Lake Formation](cross-account-permissions.md)

@@ -80,7 +80,7 @@ By default, MediaConvert adds a four-second preroll to the ESAM payload. This mi
 
    1. Optionally, include a manifest confirm condition XML notification document as a string in the setting `mccXml`:
 
-   ```
+   ```json
      "esam": {
        "responseSignalPreroll": 4000,
        "signalProcessingNotification": {

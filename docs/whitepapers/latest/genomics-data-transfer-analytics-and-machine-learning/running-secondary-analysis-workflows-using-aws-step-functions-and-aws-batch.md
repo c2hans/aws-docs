@@ -30,6 +30,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
 ![Secondary analysis reference architecture using AWS Step Functions and AWS Batch](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image3.png)
 
+Figure 2: Secondary analysis reference architecture using AWS Step Functions and AWS Batch
+
  Figure 2 shows the reference architecture for the secondary analysis workflow using AWS Step Functions and AWS Batch.
 
 1.  A CloudWatch event triggers an AWS Lambda function to start an AWS Step Functions secondary analysis state machine.

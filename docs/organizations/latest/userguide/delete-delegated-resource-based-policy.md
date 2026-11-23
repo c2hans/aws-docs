@@ -34,7 +34,7 @@ You can use the following command to delete a delegation policy:
 
   The following example deletes the policy.
 
-  ```
+  ```bash
   $ aws organizations delete-resource-policy
   ```
 + AWS SDK: [DeleteResourcePolicy](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeleteResourcePolicy.html)

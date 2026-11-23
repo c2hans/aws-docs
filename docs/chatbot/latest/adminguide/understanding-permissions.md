@@ -85,7 +85,7 @@ Amazon Q Developer in chat applications doesn't support running commands for ope
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -144,7 +144,7 @@ The expansion of usable CLI commands occurred on 11/28/2021. This expansion can 
 
 The protection policy contains the [ReadOnlyAccess policy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) and the following JSON code:
 
-```
+```json
 {
     "Statement": [
         {

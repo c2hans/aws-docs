@@ -42,6 +42,6 @@ For a list of supported versions of each of the following operating systems, see
 
 Use the package manager for your operating system to uninstall SSM Agent from Linux instances. Depending on the operating system, the uninstall command will be similar to the following example command:
 
-```
+```sh
 sudo dpkg -r amazon-ssm-agent
 ```

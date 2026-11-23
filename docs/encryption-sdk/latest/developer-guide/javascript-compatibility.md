@@ -47,7 +47,7 @@ The AWS Encryption SDK for JavaScript requires the following libraries and opera
 
 To configure a fallback for either limitation, add the following statements to your code. In the [configureFallback](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/web-crypto-backend/src/backend-factory.ts#L78) function, specify a library that supports the missing features. The following example uses the Microsoft Research JavaScript Cryptography Library (`msrcrypto`), but you can replace it with a compatible library. For a complete example, see [fallback.ts](https://github.com/aws/aws-encryption-sdk-javascript/blob/master/modules/example-browser/src/fallback.ts).
 
-```
+```javascript
 import { configureFallback } from '@aws-crypto/client-browser'
 configureFallback({{msrCrypto}})
 ```

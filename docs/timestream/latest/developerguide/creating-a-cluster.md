@@ -74,7 +74,7 @@ For multi-node clusters, nodes are automatically distributed across multiple Ava
 
 Create an InfluxDB 3 Core cluster:
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --region us-east-1 \
   --name "my-influxdb3-core-cluster" \
@@ -87,7 +87,7 @@ aws timestream-influxdb create-db-cluster \
 
 Create an InfluxDB 3 Enterprise cluster (3-node):
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --region us-east-1 \
   --name "my-influxdb3-enterprise-cluster" \
@@ -106,7 +106,7 @@ aws timestream-influxdb create-db-cluster \
 
  Create an InfluxDB 3 Enterprise cluster (single-node):
 
-```
+```sh
 aws timestream-influxdb create-db-cluster \
   --region us-east-1 \
   --name "my-influxdb3-enterprise-single" \
@@ -119,7 +119,7 @@ aws timestream-influxdb create-db-cluster \
 
  Create a cluster with a custom parameter group:
 
-```
+```sh
 # First, create a custom parameter group
 aws timestream-influxdb create-db-parameter-group \
   --name "custom-enterprise-pg" \
@@ -149,7 +149,7 @@ The `--db-parameter-group-identifier` requires the parameter group identifier (n
 
 Create a multi-node cluster (up to 15 nodes) with a custom parameter group:
 
-```
+```sh
 # First, create a custom parameter group with your desired node configuration
 aws timestream-influxdb create-db-parameter-group \
   --name "custom-multinode-pg" \
@@ -181,7 +181,7 @@ aws timestream-influxdb create-db-cluster \
 
 1.  **Retrieve endpoints:**
 
-   ```
+   ```sh
    aws timestream-influxdb get-db-cluster \
      --identifier "my-influxdb3-cluster-id"
    ```

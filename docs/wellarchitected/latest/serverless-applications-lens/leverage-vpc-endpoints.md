@@ -14,4 +14,8 @@ If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources,
 
 ![Diagram showing a Lambda function accessing Amazon SNS via NAT and Internet Gateways](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/lambda-function-accessing-amazon-sns-via-nat-and-internet-gateways.png)
 
+*Figure 34: Lambda function accessing Amazon SNS via NAT and Internet Gateways*
+
 ![Diagram showing a Lambda function accessing Amazon SNS via interface endpoints](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/lambda-function-accessing-amazon-sns-via-interface-endpoints.png)
+
+*Figure 35: Lambda function accessing Amazon SNS via interface endpoints*

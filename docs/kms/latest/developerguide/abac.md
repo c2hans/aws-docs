@@ -50,7 +50,7 @@ When attached to a user or role, the following IAM policy allows principals to u
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

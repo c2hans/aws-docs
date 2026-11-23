@@ -25,7 +25,7 @@ Here is a minimal deployable pattern definition:
 
 **Example**
 
-```
+```typescript
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { LambdaToSqsToLambda, LambdaToSqsToLambdaProps } from "@aws-solutions-constructs/aws-lambda-sqs-lambda";
@@ -45,7 +45,7 @@ new LambdaToSqsToLambda(this, 'LambdaToSqsToLambdaPattern', {
 });
 ```
 
-```
+```python
 from aws_solutions_constructs.aws_lambda_sqs_lambda import LambdaToSqsToLambda
 from aws_cdk import (
     aws_lambda as _lambda,
@@ -68,7 +68,7 @@ LambdaToSqsToLambda(
 )
 ```
 
-```
+```java
 import software.constructs.Construct;
 
 import software.amazon.awscdk.Stack;

@@ -20,7 +20,7 @@ The following function creates two buckets to work with the Multi-Region Access 
 
 The creation of the S3 client that passed in as the first argument is shown in the first example under [Work with objects and Multi-Region Access Points](#mrap-s3client-config).
 
-```
+```kotlin
         suspend fun setUpTwoBuckets(
             s3: S3Client,
             bucketName1: String,
@@ -62,7 +62,7 @@ You use the Kotlin SDK’s [S3 control client](/sdk-for-kotlin/api/latest/s3cont
 
 Add a dependency on the S3 control artifact as shown in the following snippet. Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/awslabs/aws-sdk-kotlin/releases/latest).
 
-```
+```kotlin
 ...
 implementation(platform("aws.sdk.kotlin:bom:{{X.Y.Z}}"))
 implementation("aws.sdk.kotlin:s3control")
@@ -71,7 +71,7 @@ implementation("aws.sdk.kotlin:s3control")
 
 Configure the S3 control client to work with AWS Region `us-west-2` as shown in the following code. All S3 control client operations must target the `us-west-2` region.
 
-```
+```kotlin
         suspend fun createS3ControlClient(): S3ControlClient {
             // Configure your S3ControlClient to send requests to US West (Oregon).
             val s3Control = S3ControlClient.fromEnvironment {
@@ -83,7 +83,7 @@ Configure the S3 control client to work with AWS Region `us-west-2` as shown in 
 
 Use the S3 control client to create a Multi-Region Access Point by specifying the bucket names (created previously) as shown in the following code.
 
-```
+```kotlin
     suspend fun createMrap(
         s3Control: S3ControlClient,
         accountIdParam: String,
@@ -135,7 +135,7 @@ Because the creation of a Multi-Region Access Point is an asynchronous operation
 
 Use the [`DescribeMultiRegionAccessPointOperation`](/sdk-for-kotlin/api/latest/s3control/aws.sdk.kotlin.services.s3control/-s3-control-client/describe-multi-region-access-point-operation.html) to check the status of the last operation. After the `requestStatus` value becomes "SUCCEEDED", you can work with the Multi-Region Access Point.
 
-```
+```kotlin
         suspend fun waitForSucceededStatus(
             s3Control: S3ControlClient,
             requestToken: String,
@@ -172,7 +172,7 @@ You use the [S3 client](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3
 
 Operations with Multi-Region Access Points are signed with the Asymmetric SigV4 (SigV4a) signing algorithm. To configure SigV4a, first add the following dependencies to your project. Replace {{X.Y.Z}} with the version you’re using in your app or with the latest version available ([aws-sdk-kotlin](https://github.com/awslabs/aws-sdk-kotlin/releases/latest), [smithy-kotlin](https://github.com/smithy-lang/smithy-kotlin/releases/latest)).
 
-```
+```kotlin
 ...
 implementation(platform("aws.sdk.kotlin:bom:{{X.Y.Z}}"))
 implementation(platform("aws.smithy.kotlin:bom:{{X.Y.Z}}"))
@@ -185,7 +185,7 @@ implementation("aws.sdk.kotlin:s3")
 
 After you add the dependencies, configure the S3 client to use the SigV4a signing algorithm as shown in the following code.
 
-```
+```kotlin
         suspend fun createS3Client(): S3Client {
             // Configure your S3Client to use the Asymmetric SigV4 (SigV4a) signing algorithm.
             val sigV4aScheme = SigV4AsymmetricAuthScheme(DefaultAwsSigner)
@@ -200,7 +200,7 @@ After you configure the S3 client, operations that S3 supports for Multi-Region 
 
 The following code example shows the ARN used in a [`GetObject`](/sdk-for-kotlin/api/latest/s3/aws.sdk.kotlin.services.s3/-s3-client/get-object.html) operation.
 
-```
+```kotlin
     suspend fun getObjectFromMrap(
         s3: S3Client,
         mrapArn: String,

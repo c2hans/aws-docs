@@ -31,7 +31,7 @@ The following code example shows how to get started using Support.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 Invoke `main()` to run the example.
 
-```
+```javascript
 import {
   DescribeServicesCommand,
   SupportClient,
@@ -84,7 +84,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 Run an interactive scenario in the terminal.
 
-```
+```javascript
 import {
   AddAttachmentsToSetCommand,
   AddCommunicationToCaseCommand,
@@ -429,7 +429,7 @@ The following code example shows how to use `AddAttachmentsToSet`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { AddAttachmentsToSetCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -468,7 +468,7 @@ The following code example shows how to use `AddCommunicationToCase`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { AddCommunicationToCaseCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -504,7 +504,7 @@ The following code example shows how to use `CreateCase`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { CreateCaseCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -544,7 +544,7 @@ The following code example shows how to use `DescribeAttachment`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { DescribeAttachmentCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -576,7 +576,7 @@ The following code example shows how to use `DescribeCases`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { DescribeCasesCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -606,7 +606,7 @@ The following code example shows how to use `DescribeCommunications`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { DescribeCommunicationsCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -641,7 +641,7 @@ The following code example shows how to use `DescribeSeverityLevels`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { DescribeSeverityLevelsCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";
@@ -668,7 +668,7 @@ The following code example shows how to use `ResolveCase`.
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/support#code-examples).
 
-```
+```javascript
 import { ResolveCaseCommand } from "@aws-sdk/client-support";
 
 import { client } from "../libs/client.js";

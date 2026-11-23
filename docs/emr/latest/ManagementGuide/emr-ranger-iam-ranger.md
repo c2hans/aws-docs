@@ -13,7 +13,7 @@ This role must be created with the minimum policy stated in the following exampl
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

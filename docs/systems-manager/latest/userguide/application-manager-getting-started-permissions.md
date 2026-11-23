@@ -28,7 +28,7 @@ To configure Application Manager permissions for an IAM entity (such as a user, 
 
 ****
 
-```
+```json
                     {
     "Version":"2012-10-17",
     "Statement": [

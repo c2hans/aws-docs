@@ -14,7 +14,7 @@ To allow any query without reviewing individual templates, set `allowedAnalyses`
 
 The following example adds an analysis template ARN to the `allowedAnalyses` control:
 
-```
+```json
 {
   "allowedAnalyses": [
     "arn:aws:cleanrooms:us-east-1:111122223333:membership/41327cc4-bbf0-43f1-b70c-a160dddceb08/analysistemplate/1ff1bf9d-781c-418d-a6ac-2b80c09d6292"
@@ -36,7 +36,7 @@ Allowing analysis providers is more permissive than reviewing templates individu
 
 The following example adds a query provider AWS account ID to the `allowedAnalysisProviders` control:
 
-```
+```json
 {
   "allowedAnalyses": [
     "ANY_QUERY"

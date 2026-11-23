@@ -38,7 +38,7 @@ For more information, see [Create and add a custom action in CodePipeline](https
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified custom action. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the custom action without a prompt.**
 
-```
+```powershell
 Remove-CPCustomActionType -Category Build -Provider MyBuildProviderName -Version 1
 ```
 +  For API details, see [DeleteCustomActionType](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -46,7 +46,7 @@ Remove-CPCustomActionType -Category Build -Provider MyBuildProviderName -Version
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified custom action. The command will prompt for confirmation before proceeding. Add the -Force parameter to delete the custom action without a prompt.**
 
-```
+```powershell
 Remove-CPCustomActionType -Category Build -Provider MyBuildProviderName -Version 1
 ```
 +  For API details, see [DeleteCustomActionType](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

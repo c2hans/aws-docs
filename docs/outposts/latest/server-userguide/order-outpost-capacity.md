@@ -227,7 +227,7 @@ AWS Outposts might request you to stop one or more running instances to enable r
 
    Example JSON file:
 
-   ```
+   ```JSON
    {
        "RequestedInstancePools": [
            {

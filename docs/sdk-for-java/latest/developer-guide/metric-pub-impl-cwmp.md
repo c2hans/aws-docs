@@ -22,7 +22,7 @@ Include the artifactId `cloudwatch-metric-publisher` with the version number `2.
 
 For example:
 
-```
+```xml
 <project>
   <dependencyManagement>
    <dependencies>
@@ -54,7 +54,7 @@ Enable `cloudwatch:PutMetricData` permissions for the IAM identity used by the m
 
 The following class shows how to enable the CloudWatch metrics publisher for a request to Amazon DynamoDB. It uses the default metrics publisher configuration.
 
-```
+```java
 import software.amazon.awssdk.metrics.MetricPublisher;
 import software.amazon.awssdk.metrics.publishers.cloudwatch.CloudWatchMetricPublisher;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -92,7 +92,7 @@ Make sure your application calls `close` on the `[MetricPublisher](https://sdk.a
 
 The following code snippet shows how to enable a CloudWatch metrics publisher with default settings for a service client.
 
-```
+```java
 MetricPublisher metricsPub = CloudWatchMetricPublisher.create();
 
 DynamoDbClient ddb = DynamoDbClient.builder()
@@ -105,7 +105,7 @@ DynamoDbClient ddb = DynamoDbClient.builder()
 
 The following class demonstrates how to set up a custom configuration for the metrics publisher for a specific service client. The customizations include loading a specific profile, specifying a AWS Region where the metrics publisher sends requests, and customizing how often the publisher sends metrics to CloudWatch.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.core.metrics.CoreMetric;
 import software.amazon.awssdk.metrics.MetricPublisher;

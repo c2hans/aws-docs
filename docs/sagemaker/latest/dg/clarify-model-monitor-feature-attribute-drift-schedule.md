@@ -19,7 +19,7 @@ If a baselining job has been submitted, the monitor automatically picks up analy
 
 To schedule a model explainability monitor for a real-time endpoint, pass your `EndpointInput` instance to the `endpoint_input` argument of your `ModelExplainabilityMonitor` instance, as shown in the following code sample:
 
-```
+```py
 from sagemaker.model_monitor import CronExpressionGenerator
 from sagemaker.core.helper.session_helper import get_execution_role
 
@@ -48,7 +48,7 @@ schedule = model_exp_model_monitor.create_monitoring_schedule(
 
 To schedule a model explainability monitor for a batch transform job, pass your `BatchTransformInput` instance to the `batch_transform_input` argument of your `ModelExplainabilityMonitor` instance, as shown in the following code sample:
 
-```
+```py
 from sagemaker.model_monitor import CronExpressionGenerator
 from sagemaker.core.helper.session_helper import get_execution_role
 

@@ -61,7 +61,7 @@ To perform one-time cluster setup for Amazon Redshift ML
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -140,7 +140,7 @@ To perform one-time cluster setup for Amazon Redshift ML
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -28,7 +28,7 @@ Before you start, make sure you have performed the following tasks:
 ### 1. Verify prerequisites
 <a name="_1_verify_prerequisites"></a>
 
-```
+```bash
 # Check that your Python version is 3.10 or higher
 python3 --version
 
@@ -84,7 +84,7 @@ Create the configuration file if it doesn’t exist. Be sure to replace the regi
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -108,7 +108,7 @@ Create the configuration file if it doesn’t exist. Be sure to replace the regi
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -162,7 +162,7 @@ Be sure to replace the region (`{region}`) placeholder with your desired region.
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -186,7 +186,7 @@ Be sure to replace the region (`{region}`) placeholder with your desired region.
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -231,7 +231,7 @@ Create the configuration file if it doesn’t exist. Be sure to replace the regi
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -255,7 +255,7 @@ Create the configuration file if it doesn’t exist. Be sure to replace the regi
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -316,7 +316,7 @@ Create the configuration file if it doesn’t exist. Be sure to replace the regi
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -340,7 +340,7 @@ Create the configuration file if it doesn’t exist. Be sure to replace the regi
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp": {
@@ -385,7 +385,7 @@ List the available MCP tools for EKS
 
 Optionally, you can create a [customer-managed IAM policy](https://docs.aws.amazon.com/privateca/latest/userguide/auth-CustManagedPolicies.html) that provides full access to the Amazon EKS MCP server. This policy grants permissions to use all tools in the EKS MCP server, including both privileged tools that may involve write operations and read-only tools. Note that high-risk permissions (anything with Delete\*, or unrestricted IAM resource) are included in this policy, as they’re required for setup/teardown of the cluster resources in the **manage\_eks\_stacks** tool.
 
-```
+```bash
 aws iam create-policy \
  --policy-name EKSMcpWriteManagementPolicy \
  --policy-document "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Action\": [\"eks:DescribeCluster\", \"eks:ListClusters\", \"eks:DescribeNodegroup\", \"eks:ListNodegroups\", \"eks:DescribeAddon\", \"eks:ListAddons\", \"eks:DescribeAccessEntry\", \"eks:ListAccessEntries\", \"eks:DescribeInsight\", \"eks:ListInsights\", \"eks:AccessKubernetesApi\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"eks:CreateCluster\", \"eks:DeleteCluster\", \"eks:CreateAccessEntry\", \"eks:TagResource\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"iam:GetRole\", \"iam:ListRolePolicies\", \"iam:ListAttachedRolePolicies\", \"iam:GetRolePolicy\", \"iam:GetPolicy\", \"iam:GetPolicyVersion\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"iam:TagRole\", \"iam:CreateRole\", \"iam:AttachRolePolicy\", \"iam:PutRolePolicy\", \"iam:DetachRolePolicy\", \"iam:DeleteRole\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"iam:PassRole\"], \"Resource\": \"*\", \"Condition\": {\"StringEquals\": {\"iam:PassedToService\": [\"eks.amazonaws.com\", \"ec2.amazonaws.com\"]}}}, {\"Effect\": \"Allow\", \"Action\": [\"ec2:CreateVpc\", \"ec2:CreateSubnet\", \"ec2:CreateRouteTable\", \"ec2:CreateRoute\", \"ec2:CreateInternetGateway\", \"ec2:CreateNatGateway\", \"ec2:CreateSecurityGroup\", \"ec2:AttachInternetGateway\", \"ec2:AssociateRouteTable\", \"ec2:ModifyVpcAttribute\", \"ec2:ModifySubnetAttribute\", \"ec2:AllocateAddress\", \"ec2:CreateTags\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"ec2:DeleteVpc\", \"ec2:DeleteSubnet\", \"ec2:DisassociateRouteTable\", \"ec2:DeleteRouteTable\", \"ec2:DeleteRoute\", \"ec2:DetachInternetGateway\", \"ec2:DeleteInternetGateway\", \"ec2:DeleteNatGateway\", \"ec2:ReleaseAddress\", \"ec2:DeleteSecurityGroup\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"ec2:DescribeVpcs\", \"ec2:DescribeSubnets\", \"ec2:DescribeRouteTables\", \"ec2:DescribeInternetGateways\", \"ec2:DescribeNatGateways\", \"ec2:DescribeAddresses\", \"ec2:DescribeSecurityGroups\", \"ec2:DescribeAvailabilityZones\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"cloudformation:CreateStack\", \"cloudformation:UpdateStack\", \"cloudformation:DeleteStack\", \"cloudformation:DescribeStacks\", \"cloudformation:TagResource\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"sts:GetCallerIdentity\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"logs:StartQuery\", \"logs:GetQueryResults\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"cloudwatch:GetMetricData\"], \"Resource\": \"*\"}, {\"Effect\": \"Allow\", \"Action\": [\"eks-mcp:*\"], \"Resource\": \"*\"}]}"
@@ -454,7 +454,7 @@ If you work with multiple AWS accounts, create separate MCP server configuration
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp-prod": {
@@ -493,7 +493,7 @@ If you work with multiple AWS accounts, create separate MCP server configuration
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp-prod": {
@@ -541,7 +541,7 @@ Create a read-only configuration for production environments.
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp-prod-readonly": {
@@ -569,7 +569,7 @@ Create a read-only configuration for production environments.
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp-prod-readonly": {
@@ -604,7 +604,7 @@ For development environments with full write access.
 
  **For Mac/Linux:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp-dev-full": {
@@ -626,7 +626,7 @@ For development environments with full write access.
 
  **For Windows:**
 
-```
+```json
 {
   "mcpServers": {
     "eks-mcp-dev-full": {

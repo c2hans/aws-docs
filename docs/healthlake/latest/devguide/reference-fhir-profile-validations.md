@@ -55,7 +55,7 @@ FHIR Profiles are validated when you add a new resource to your data store. To a
 **Example – To see which FHIR profile is referenced in a resource**
 The profile URL is added to the `profile` element in the `"meta" : "profile"` key-value pair. This resource was truncated for clarity.
 
-```
+```JSON
 {
     "resourceType": "Patient",
     "id": "abcd1234efgh5678hijk9012",
@@ -71,7 +71,7 @@ The profile URL is added to the `profile` element in the `"meta" : "profile"` ke
 **Example – How to reference a non-default supported FHIR profile**
 To validate against a supported non-default profile, add the versioned profile URL to the `meta.profile` element. The versioned URL includes the base profile URL followed by a pipe character (`|`) and the version number. This example resource was truncated for clarity.
 
-```
+```JSON
 {
     "resourceType": "ExplanationOfBenefit",
     "id": "sample-EOB",
@@ -85,7 +85,7 @@ To validate against a supported non-default profile, add the versioned profile U
 ```
 You can also include both the versioned URL and the base profile URL. Both formats are valid.
 
-```
+```JSON
 {
     "resourceType": "ExplanationOfBenefit",
     "id": "sample-EOB",

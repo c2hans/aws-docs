@@ -15,7 +15,7 @@ Produces: application/json
 ## CLI:
 <a name="createloggerdefinitionversion-post-cli"></a>
 
-```
+```bash
 aws greengrass create-logger-definition-version \
   --logger-definition-id <value> \
   [--loggers <value>] \
@@ -26,7 +26,7 @@ aws greengrass create-logger-definition-version \
 
 cli-input-json format:
 
-```
+```json
 {
 "LoggerDefinitionId": "string",
 "Loggers": [
@@ -54,7 +54,7 @@ type: string
 
 where used: body; required: true
 
-```
+```json
 {
 "Loggers": [
   {
@@ -107,7 +107,7 @@ type: string
 
  [ VersionInformation](definitions-versioninformation.md)
 
-```
+```json
 {
 "Arn": "string",
 "Id": "string",
@@ -135,7 +135,7 @@ type: string
 Invalid request.
  [ GeneralError](definitions-generalerror.md)
 
-```
+```json
 {
 "Message": "string",
 "ErrorDetails": [

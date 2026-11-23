@@ -81,7 +81,7 @@ price           REAL)
 
 The following example retrieves the most frequently occuring values in the sample stream created in the [Getting Started](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/getting-started.html) tutorial.
 
-```
+```sql
 CREATE OR REPLACE STREAM DESTINATION_SQL_STREAM (
   "TICKER_SYMBOL" VARCHAR(4),
   "MOST_FREQUENT_VALUES" BIGINT

@@ -11,7 +11,7 @@ Delete your SageMaker AI model with the [`DeleteModel`](https://docs.aws.amazon.
 ------
 #### [ Boto3 ]
 
-```
+```python
 import boto3
 
 # Create a low-level SageMaker service client.

@@ -20,7 +20,7 @@ One potential use case is to localize the query and/or the result.
 ------
 #### [ Sample request ]
 
-```
+```json
 {
     "QueryPosition": [
                 139.69172,
@@ -33,7 +33,7 @@ One potential use case is to localize the query and/or the result.
 ------
 #### [ Sample response ]
 
-```
+```json
 {
     "ResultItems": [
         {
@@ -85,7 +85,7 @@ One potential use case is to localize the query and/or the result.
 ------
 #### [ cURL ]
 
-```
+```bash
 curl --request POST \
   --url 'https://places.geo.eu-central-1.amazonaws.com/v2/reverse-geocode?key=Your_Key' \
   --header 'Content-Type: application/json' \
@@ -101,7 +101,7 @@ curl --request POST \
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws geo-places reverse-geocode --key ${YourKey} --query-position 139.69172 35.6895 --language "JA"
 ```
 

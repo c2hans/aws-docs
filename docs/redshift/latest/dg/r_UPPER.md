@@ -33,7 +33,7 @@ The following example uses data from the CATEGORY table in the TICKIT sample dat
 
 To convert the CATNAME field to uppercase, use the following.
 
-```
+```sql
 SELECT catname, UPPER(catname)
 FROM category
 ORDER BY 1,2;

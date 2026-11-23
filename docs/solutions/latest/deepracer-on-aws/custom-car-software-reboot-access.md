@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 
 1. Reboot the Raspberry Pi:
 
-   ```
+   ```bash
    sudo reboot
    ```
 

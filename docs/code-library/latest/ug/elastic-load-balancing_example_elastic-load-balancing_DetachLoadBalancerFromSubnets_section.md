@@ -38,7 +38,7 @@ For more information, see [Configure subnets for your Classic Load Balancer](htt
 **Tools for PowerShell V4**
 **Example 1: This example removes the specified subnet from the set of subnets configured for the specified load balancer. The output includes the remaining subnets.**
 
-```
+```powershell
 Dismount-ELBLoadBalancerFromSubnet -LoadBalancerName my-load-balancer -Subnet subnet-12345678
 ```
 **Output:**
@@ -51,7 +51,7 @@ subnet-87654321
 **Tools for PowerShell V5**
 **Example 1: This example removes the specified subnet from the set of subnets configured for the specified load balancer. The output includes the remaining subnets.**
 
-```
+```powershell
 Dismount-ELBLoadBalancerFromSubnet -LoadBalancerName my-load-balancer -Subnet subnet-12345678
 ```
 **Output:**

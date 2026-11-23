@@ -11,7 +11,7 @@ This page provides a concise workflow for creating and deploying a code-based St
 
 Create a Python project that uses the Strands Agents SDK and Amazon Bedrock:
 
-```
+```bash
 agentcore create \
   --name MyProject \
   --template agent-python-strands
@@ -27,7 +27,7 @@ To choose the template interactively, run `agentcore create` without options:
 
 Start the Runtime locally and open the Agent Inspector:
 
-```
+```bash
 cd MyProject
 agentcore dev --mode browser
 ```
@@ -37,20 +37,20 @@ Without `--mode browser`, `agentcore dev` defaults to headless mode and streams 
 ## Build and deploy your agent
 <a name="runtime-get-started-cli-deploy"></a>
 
-```
+```bash
 agentcore build
 agentcore deploy
 ```
 
 Check the deployed resources:
 
-```
+```bash
 agentcore status
 ```
 
 Invoke the deployed Runtime:
 
-```
+```bash
 agentcore invoke --runtime agent \
   --payload '{"prompt":"Hello, what can you do?"}'
 ```

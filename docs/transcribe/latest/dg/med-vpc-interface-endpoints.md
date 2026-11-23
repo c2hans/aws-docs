@@ -45,7 +45,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 **Example: VPC endpoint policy for Amazon Transcribe Medical streaming transcription actions**
 The following is an example of an endpoint policy for streaming transcription in Amazon Transcribe Medical. When attached to an endpoint, this policy grants access to the listed Amazon Transcribe Medical actions for all principals on all resources.
 
-```
+```json
 {
    "Statement":[
       {
@@ -63,7 +63,7 @@ The following is an example of an endpoint policy for streaming transcription in
 **Example: VPC endpoint policy for Amazon Transcribe Medical batch transcription actions**
 The following is an example of an endpoint policy for batch transcription in Amazon Transcribe Medical. When attached to an endpoint, this policy grants access to the listed Amazon Transcribe Medical actions for all principals on all resources.
 
-```
+```json
 {
    "Statement":[
       {

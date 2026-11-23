@@ -110,7 +110,7 @@ The `source` and `detail-type` fields are included below because they contain sp
 #### Event structure
 <a name="event-detail-execution-status-change-structure"></a>
 
-```
+```json
 {
   . . .,
   "detail-type": "Step Functions Execution Status Change",
@@ -160,7 +160,7 @@ An Execution Status Change event can contain an input property in its definition
 
 **Example Execution Status Change: execution started**  <a name="event-detail-execution-status-change-started.example"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "315c1398-40ff-a850-213b-158f73e60175",
@@ -199,7 +199,7 @@ An Execution Status Change event can contain an input property in its definition
 
 **Example Execution Status Change: execution succeeded**  <a name="event-detail-execution-status-change-succeeded.example"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "315c1398-40ff-a850-213b-158f73e60175",
@@ -240,7 +240,7 @@ An Execution Status Change event can contain an input property in its definition
 
 **Example Execution Status Change: execution failed**  <a name="event-detail-execution-status-change-failed.example"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "315c1398-40ff-a850-213b-158f73e60175",
@@ -279,7 +279,7 @@ An Execution Status Change event can contain an input property in its definition
 
 **Example Execution Status Change: timed-out**  <a name="event-detail-execution-status-change-timed-out.example"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "315c1398-40ff-a850-213b-158f73e60175",
@@ -318,7 +318,7 @@ An Execution Status Change event can contain an input property in its definition
 
 **Example Execution Status Change: aborted**  <a name="event-detail-execution-status-change-aborted.example"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "315c1398-40ff-a850-213b-158f73e60175",

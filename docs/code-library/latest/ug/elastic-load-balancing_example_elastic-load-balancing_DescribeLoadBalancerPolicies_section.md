@@ -93,7 +93,7 @@ For more information, see [Create a Classic Load Balancer with an HTTPS listener
 **Tools for PowerShell V4**
 **Example 1: This example describes the policies associated with the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -106,7 +106,7 @@ PolicyAttributeDescriptions             PolicyName                              
 ```
 **Example 2: This example describes the attributes of the specified policy.**
 
-```
+```powershell
 (Get-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-ProxyProtocol-policy).PolicyAttributeDescriptions
 ```
 **Output:**
@@ -118,7 +118,7 @@ ProxyProtocol    true
 ```
 **Example 3: This example describes the predefined policies, including the sample policies. The names of the sample policies have the ELBSample- prefix.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicy
 ```
 **Output:**
@@ -140,7 +140,7 @@ PolicyAttributeDescriptions             PolicyName                              
 **Tools for PowerShell V5**
 **Example 1: This example describes the policies associated with the specified load balancer.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer
 ```
 **Output:**
@@ -153,7 +153,7 @@ PolicyAttributeDescriptions             PolicyName                              
 ```
 **Example 2: This example describes the attributes of the specified policy.**
 
-```
+```powershell
 (Get-ELBLoadBalancerPolicy -LoadBalancerName my-load-balancer -PolicyName my-ProxyProtocol-policy).PolicyAttributeDescriptions
 ```
 **Output:**
@@ -165,7 +165,7 @@ ProxyProtocol    true
 ```
 **Example 3: This example describes the predefined policies, including the sample policies. The names of the sample policies have the ELBSample- prefix.**
 
-```
+```powershell
 Get-ELBLoadBalancerPolicy
 ```
 **Output:**

@@ -40,7 +40,7 @@ For hosted endpoints, inference supports two data formats. To perform inference 
 
 For batch transform, inference supports JSON Lines format. Batch transform expects the input in JSON Lines format and returns the output in JSON Lines format. Both content and accept types should be `application/jsonlines`. The format for input is as follows:
 
-```
+```json
 content-type: application/jsonlines
 
 {"source": "source_sequence_0"}
@@ -49,7 +49,7 @@ content-type: application/jsonlines
 
 The format for response is as follows:
 
-```
+```json
 accept: application/jsonlines
 
 {"target": "predicted_sequence_0"}

@@ -26,7 +26,7 @@ The following code example shows how to use `DescribeCertificate`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ACM#code-examples).
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -125,7 +125,7 @@ The following code example shows how to use `ListCertificates`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/ACM#code-examples).
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon;

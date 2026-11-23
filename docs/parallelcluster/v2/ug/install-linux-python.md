@@ -12,13 +12,13 @@ If your distribution didn't come with Python, or came with an earlier version, i
 
 1. Check to see if Python is already installed.
 
-   ```
+   ```sh
    $ python3 --version
    ```
 
    or
 
-   ```
+   ```sh
    $ python --version
    ```
 **Note**
@@ -27,23 +27,23 @@ If your Linux distribution came with Python, you might need to install the Pytho
 1. If Python 2.7 or later is not installed, install Python with your distribution's package manager. The command and package name varies:
    + On Debian derivatives such as Ubuntu, use `apt`.
 
-     ```
+     ```sh
      $ sudo apt-get install python3
      ```
    + On Red Hat and derivatives, use `yum`.
 
-     ```
+     ```sh
      $ sudo yum install python3
      ```
    + On SUSE and derivatives, use `zypper`.
 
-     ```
+     ```sh
      $ sudo zypper install python3
      ```
 
 1. To verify that Python installed correctly, open a command prompt or shell and run the following command.
 
-   ```
+   ```sh
    $ python3 --version
    Python 3.8.11
    ```

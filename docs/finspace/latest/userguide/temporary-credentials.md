@@ -25,7 +25,7 @@ You can obtain credentials from the web application if you're one of the followi
 
 1. Use these copied credentials to access the FinSpace data API operations.
 
-   ```
+   ```python
     #!/usr/bin/env python
 
     import boto3
@@ -87,7 +87,7 @@ You can also enable programmatic access for a user by using the `[CreateUser](ht
 
 **Example JSON for the `CreateUser` API operation**
 
-```
+```json
 {
     "emailAddress": "testemail1@amazon.com",
     "type": "APP_USER",
@@ -100,7 +100,7 @@ You can also enable programmatic access for a user by using the `[CreateUser](ht
 
  **Example JSON for the `UpdateUser` API operation**
 
-```
+```json
 {
     "type": "SUPER_USER",
     "firstName": "test",

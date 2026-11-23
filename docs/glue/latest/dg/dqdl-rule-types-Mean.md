@@ -8,7 +8,7 @@ Checks whether the mean (average) of all the values in a column matches a given 
 
 **Syntax**
 
-```
+```json
 Mean {{<COL_NAME>}} {{<EXPRESSION>}}
 ```
 + **COL\_NAME** – The name of the column that you want to evaluate the data quality rule against.
@@ -20,7 +20,7 @@ Mean {{<COL_NAME>}} {{<EXPRESSION>}}
 
 The following example rule checks whether the average of all of the values in a column exceeds a threshold.
 
-```
+```json
 Mean "Star_Rating" > 3
 Mean "Salary" < 6200 where "Customer_ID < 10"
 ```

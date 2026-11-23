@@ -55,7 +55,7 @@ Any external SAML IdP in your user pool can support response encryption, and eac
 
 Configure response encryption with the `EncryptedResponses` parameter of a [CreateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html) or [UpdateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateIdentityProvider.html) API request. The following is an example `ProviderDetails` of an IdP that supports request signing.
 
-```
+```json
 "ProviderDetails": {
       "MetadataURL" : "{{https://myidp.example.com/saml/metadata}}",
       "IDPSignout" : "{{true}}",
@@ -94,7 +94,7 @@ The ability to prove the integrity of SAML 2.0 requests to your IdP is a securit
 
 Configure request signing with the `RequestSigningAlgorithm` parameter of a [CreateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html) or [UpdateIdentityProvider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateIdentityProvider.html) API request. The following is an example `ProviderDetails` of an IdP that supports request signing.
 
-```
+```json
 "ProviderDetails": {
       "MetadataURL" : "{{https://myidp.example.com/saml/metadata}}",
       "IDPSignout" : "true",

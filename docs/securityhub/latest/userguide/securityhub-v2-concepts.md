@@ -31,7 +31,7 @@ Archived finding
  Finding providers can archive ﬁndings they create. Customers can archive any findings that they believe are no longer relevant using the [BatchUpdateFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindingsV2.html) operation of the Security Hub API or by updating the status in the Security Hub console.
  In the Security Hub console, default filter settings exclude archived findings from finding lists and tables. You can update the filters to include archived findings. If you retrieve findings by using the [GetFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) operation, the operation retrieves both archived and active findings. The following example shows how to exclude archived findings in the results.
 
-```
+```json
 {
     "StringFilters":
     [

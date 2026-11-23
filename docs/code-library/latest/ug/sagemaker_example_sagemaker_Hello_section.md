@@ -14,7 +14,7 @@ The following code examples show how to get started using SageMaker AI.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SageMaker#code-examples).
 
-```
+```csharp
 using Amazon.SageMaker;
 using Amazon.SageMaker.Model;
 
@@ -61,7 +61,7 @@ public static class HelloSageMaker
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sagemaker#code-examples).
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -104,7 +104,7 @@ public class HelloSageMaker {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sagemaker#code-examples).
 
-```
+```javascript
 import {
   SageMakerClient,
   ListNotebookInstancesCommand,
@@ -152,7 +152,7 @@ export const helloSagemaker = async () => {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sagemaker#code-examples).
 
-```
+```kotlin
 suspend fun listBooks() {
     SageMakerClient.fromEnvironment { region = "us-west-2" }.use { sageMakerClient ->
         val response = sageMakerClient.listNotebookInstances(ListNotebookInstancesRequest {})

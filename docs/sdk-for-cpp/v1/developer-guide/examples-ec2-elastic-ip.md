@@ -27,7 +27,7 @@ The [AllocateAddressResponse](https://docs.aws.amazon.com/sdk-for-cpp/latest/api
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/AllocateAddressRequest.h>
 #include <aws/ec2/model/AssociateAddressRequest.h>
@@ -36,7 +36,7 @@ The [AllocateAddressResponse](https://docs.aws.amazon.com/sdk-for-cpp/latest/api
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
 
     Aws::EC2::Model::AllocateAddressRequest request;
@@ -79,7 +79,7 @@ To list the Elastic IP addresses assigned to your account, call the EC2Client’
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/DescribeAddressesRequest.h>
 #include <aws/ec2/model/DescribeAddressesResponse.h>
@@ -89,7 +89,7 @@ To list the Elastic IP addresses assigned to your account, call the EC2Client’
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2Client(clientConfiguration);
     Aws::EC2::Model::DescribeAddressesRequest request;
     Aws::EC2::Model::DescribeAddressesOutcome outcome = ec2Client.DescribeAddresses(request);
@@ -126,7 +126,7 @@ To release an Elastic IP address, call the EC2Client’s `ReleaseAddress` functi
 
  **Includes**
 
-```
+```cpp
 #include <aws/ec2/EC2Client.h>
 #include <aws/ec2/model/ReleaseAddressRequest.h>
 #include <iostream>
@@ -134,7 +134,7 @@ To release an Elastic IP address, call the EC2Client’s `ReleaseAddress` functi
 
  **Code**
 
-```
+```cpp
     Aws::EC2::EC2Client ec2(clientConfiguration);
 
     Aws::EC2::Model::ReleaseAddressRequest request;

@@ -18,6 +18,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 
 ![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image6.png)
 
+*ADD FIGURE CAPTION HERE*
+
  A well-architected manufacturing digital thread with contextualization and knowledge graph capabilities should support the following characteristics:
 
 1.  **Data integration and ingestion:** The ability to ingest and integrate data from various sources, such as requirements, design, planning, supply chain, manufacturing execution data along with the unstructured data, is crucial for building a comprehensive digital thread.
@@ -39,6 +41,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 
 ![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image7.png)
 
+*ADD FIGURE CAPTION HERE*
+
  The solution aims to accelerate innovation by seamlessly connecting data from various systems and generate insights through the manufacturing digital thread framework. This framework establishes an intelligent structure where data is interconnected, empowering manufacturing stakeholders in their decision-making processes.
 
 ## Digital thread reference architecture
@@ -47,6 +51,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
  The manufacturing digital thread solution architecture is implemented through the strategic integration of Amazon Neptune graph database, Amazon OpenSearch Service, and Amazon Bedrock, a fully managed generative AI service. The components are further enhanced by various AWS services, creating a comprehensive solution for the digital thread.
 
 ![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image8.png)
+
+*ADD FIGURE CAPTION HERE*
 
 1.  Identify key stakeholders in the manufacturing organization and understand the business needs.
 

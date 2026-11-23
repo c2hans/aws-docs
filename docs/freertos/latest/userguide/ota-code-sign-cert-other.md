@@ -10,7 +10,7 @@ Use the AWS Command Line Interface to import your code-signing certificate, priv
 
 After you create your code-signing certificate, you can use the AWS CLI to import it into ACM:
 
-```
+```bash
 aws acm import-certificate --certificate fileb://code-sign.crt --private-key fileb://code-sign.key
 ```
 

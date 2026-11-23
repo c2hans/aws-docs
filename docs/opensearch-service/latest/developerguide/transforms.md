@@ -47,7 +47,7 @@ After the job finishes, you can use the standard `_search` API to search the tar
 
 For example, after running a transform job that transforms the flight data based on the `DestAirportID` field, you can run the following request to return all fields that have a value of `SFO`:
 
-```
+```json
 GET target_index/_search
 {
   "query": {

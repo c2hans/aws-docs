@@ -33,7 +33,7 @@ You can use the AWS CLI or the Amazon Location APIs.
 
 The following example is a `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for a meaningful address, point of interest or general location near the position [{{122.3394}},{{47.6159}}].
 
-```
+```json
 POST /places/v0/indexes/{{ExamplePlaceIndex}}/search/position
 Content-type: application/json
 
@@ -66,7 +66,7 @@ aws location \
 **Example**
 The following is an example response when calling the `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html)` operation from the Amazon Location Places APIs. The results return relevant [places](https://docs.aws.amazon.com/location/previous/APIReference/API_Place.html) and the request [summary](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPositionSummary.html). Two responses are shown, based on selecting Esri or Here as the partner.
 
-```
+```json
 POST /places/v0/indexes/ExamplePlaceIndex/search/position
 Content-type: application/json
 
@@ -76,7 +76,7 @@ Content-type: application/json
 }
 ```
 
-```
+```json
 {
     "Results": [
         {

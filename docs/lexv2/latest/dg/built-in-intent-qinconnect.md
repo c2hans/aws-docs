@@ -52,7 +52,7 @@ If the QinConnect Intent is used in an Amazon Lex V2 bot, and the bot is using a
 
 The Service Linked Role will get updated with the following permissions if the QinConnect intent gets added. A new policy will be added for QinConnect access:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ The `QInConnectKmsCMKPolicy` statement is only required if you are using a custo
 
 **Trust Policy**
 
-```
+```json
 {
     "Effect": "Allow",
     "Sid": "LexV2InternalTrustPolicy",

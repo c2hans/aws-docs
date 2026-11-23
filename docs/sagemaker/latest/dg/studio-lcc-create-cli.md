@@ -40,7 +40,7 @@ Each script can have up to **16,384 characters**.
 
 1. Convert your `my-script.sh` file into base64 format. This requirement prevents errors that occur from spacing and line break encoding.
 
-   ```
+   ```zsh
    LCC_CONTENT=`openssl base64 -A -in my-script.sh`
    ```
 

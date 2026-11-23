@@ -14,7 +14,7 @@ If the default credential chain or a specific or custom provider or provider cha
 
 The following example creates an Amazon S3 service client using temporary credentials returned by AWS STS for an IAM assumed role.
 
-```
+```java
     // The AWS IAM Identity Center identity (user) who executes this method does not have permission to list buckets.
     // The identity is configured in the [default] profile.
     public static void assumeRole(String roleArn, String roleSessionName) {
@@ -74,7 +74,7 @@ Without assuming the role, the `s3.listBuckets()` method shown in the example wo
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [
@@ -107,7 +107,7 @@ The following permissions policy is attached to the role that is assume in the p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ The following trust policy is attached to the role that is assume in the previou
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -35,7 +35,7 @@ You can use the [put-protect-configuration-rule-set-number-override](https://doc
 **Note**
 Because `--expiration-timestamp` is not specified this rule will never expire.
 
-```
+```bsh
 $ aws pinpoint-sms-voice-v2 put-protect-configuration-rule-set-number-override --protect-configuration-id {{ProtectConfigurationID}} --destination-phone-number {{+12065550150}} --action {{ACTION}}
 ```
 

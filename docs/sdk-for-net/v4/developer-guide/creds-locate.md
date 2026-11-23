@@ -38,7 +38,7 @@ This example shows you how to get credentials by using the `CredentialProfileSto
 
 This example also uses the [Amazon.Runtime.AWSCredentials](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TAWSCredentials.html) class.
 
-```
+```csharp
 var chain = new CredentialProfileStoreChain();
 AWSCredentials awsCredentials;
 if (chain.TryGetAWSCredentials("some_profile", out awsCredentials))
@@ -59,7 +59,7 @@ This example shows you how to get a profile by using the CredentialProfileStoreC
 
 This example also uses the [CredentialProfile](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TCredentialProfile.html) class.
 
-```
+```csharp
 var chain = new CredentialProfileStoreChain();
 CredentialProfile basicProfile;
 if (chain.TryGetProfile("basic_profile", out basicProfile))
@@ -75,7 +75,7 @@ This example shows you how to get credentials by using the CredentialProfileStor
 
 This example also uses the [Amazon.Runtime.AWSCredentials](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TAWSCredentials.html) class.
 
-```
+```csharp
 var chain = new
     CredentialProfileStoreChain("c:\\Users\\sdkuser\\customCredentialsFile.ini");
 AWSCredentials awsCredentials;
@@ -95,7 +95,7 @@ This examples shows you how to find a profile in the shared AWS credentials file
 
 This example also uses the [CredentialProfile](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TCredentialProfile.html) class and the [Amazon.Runtime.AWSCredentials](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Runtime/TAWSCredentials.html) class.
 
-```
+```csharp
 CredentialProfile basicProfile;
 AWSCredentials awsCredentials;
 var sharedFile = new SharedCredentialsFile();

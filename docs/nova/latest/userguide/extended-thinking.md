@@ -18,7 +18,7 @@ Due to extended thinking's large computational requirements, Nova allows selecti
 
 The following is an API response including `reasoningContent` blocks followed by text content blocks:
 
-```
+```json
 {
   "output": {
     "message": {
@@ -45,7 +45,7 @@ The following is an API response including `reasoningContent` blocks followed by
 
 The following is an example of a Converse API call with extended reasoning enabled:
 
-```
+```python
 import boto3
 import json
 

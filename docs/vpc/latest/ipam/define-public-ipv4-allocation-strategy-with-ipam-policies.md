@@ -37,6 +37,7 @@ You can create IPAM policies to define how public IPv4 addresses from IPAM pools
 + Amazon Relational Database Service (Amazon RDS)
 + NAT gateways in regional availability mode
 + Lambda Network Connector
++ Automated Internet Firewall
 
 **Important**
 If you choose a specific IPAM pool or Elastic IP address allocation ID when creating an AWS resource, that will override the IPAM policy.

@@ -52,14 +52,14 @@ You can't browse runtimes in other accounts in the Lambda console, because you c
 
 1. To view the runtime's description and license information, run the `get-runtime` command. For `--runtime-name`, specify the runtime ARN.
 
-   ```
+   ```bash
    aws lambda-core get-runtime \
      --runtime-name {{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}}
    ```
 
    The following example shows an excerpt of the output:
 
-   ```
+   ```json
    {
        "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8",
        "Name": "companyphp8",
@@ -70,7 +70,7 @@ You can't browse runtimes in other accounts in the Lambda console, because you c
 
 1. To view the description and lifecycle of each alias, run the `list-runtime-aliases` command. The `--query` option limits the output to the alias name, description, and release lifecycle.
 
-   ```
+   ```bash
    aws lambda-core list-runtime-aliases \
      --runtime-name {{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}} \
      --query "Items[].{Name: Name, Description: Description, ReleaseLifecycle: ReleaseLifecycle}"
@@ -78,7 +78,7 @@ You can't browse runtimes in other accounts in the Lambda console, because you c
 
    You should see output similar to the following:
 
-   ```
+   ```json
    [
        {
            "Name": "prod",
@@ -217,7 +217,7 @@ To use a runtime that another account shares with you, at step 4, select **Share
 
 1. To create the function, run the `create-function` command. Set `--runtime` to `custom`, and specify the runtime ARN and alias in `--runtime-config`.
 
-   ```
+   ```bash
    aws lambda create-function \
      --function-name {{my-function}} \
      --runtime custom \
@@ -232,13 +232,13 @@ To use a runtime that another account shares with you, at step 4, select **Share
 
    You can also specify `--runtime-config` in JSON format:
 
-   ```
+   ```bash
    --runtime-config '{"RuntimeArn":"{{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}}","RuntimeAlias":"{{prod}}"}'
    ```
 
    The output includes the runtime configuration. The following example shows an excerpt of the output:
 
-   ```
+   ```json
    {
        "FunctionName": "my-function",
        "FunctionArn": "arn:aws:lambda:us-east-1:111122223333:function:my-function",
@@ -257,7 +257,7 @@ To use a runtime that another account shares with you, at step 4, select **Share
 
 1. (Optional) To wait until the function is ready to invoke, run the `wait function-active-v2` command.
 
-   ```
+   ```bash
    aws lambda wait function-active-v2 \
      --function-name {{my-function}}
    ```
@@ -286,7 +286,7 @@ To use a runtime that another account shares with you, at step 4, select **Share
 **To switch a function to a customer-managed runtime, or change its alias (AWS CLI)**
 + Run the `update-function-configuration` command. Specify the runtime ARN and the alias that you want to use. If the handler format is different for the new runtime, also specify `--handler`.
 
-  ```
+  ```bash
   aws lambda update-function-configuration \
     --function-name {{my-function}} \
     --runtime custom \
@@ -299,7 +299,7 @@ To use a runtime that another account shares with you, at step 4, select **Share
 **To switch a function back to a Lambda-managed runtime (AWS CLI)**
 + Run the `update-function-configuration` command, and specify a Lambda runtime identifier. You don't need to clear the runtime configuration. Lambda doesn't use `RuntimeConfig` when `Runtime` is a Lambda runtime identifier.
 
-  ```
+  ```bash
   aws lambda update-function-configuration \
     --function-name {{my-function}} \
     --runtime {{python3.14}} \
@@ -316,7 +316,7 @@ You can check the runtime version in your function configuration and in your fun
 **To check your function's runtime version (AWS CLI)**
 + Run the `get-function-configuration` command.
 
-  ```
+  ```bash
   aws lambda get-function-configuration \
     --function-name {{my-function}} \
     --query RuntimeVersionConfig
@@ -324,7 +324,7 @@ You can check the runtime version in your function configuration and in your fun
 
   You should see output similar to the following:
 
-  ```
+  ```json
   {
       "RuntimeVersionArn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8/version/v8.3.2"
   }
@@ -350,7 +350,7 @@ Functions that use a customer-managed runtime have the `Runtime` value `custom`.
 **To list all functions that use a customer-managed runtime (AWS CLI)**
 + Run the `list-functions` command.
 
-  ```
+  ```bash
   aws lambda list-functions --function-version ALL \
     --query "Functions[?Runtime=='custom'].{Function:FunctionArn,Runtime:RuntimeConfig.RuntimeArn,Alias:RuntimeConfig.RuntimeAlias}" \
     --output table
@@ -361,7 +361,7 @@ Functions that use a customer-managed runtime have the `Runtime` value `custom`.
 **To list functions that use a specific customer-managed runtime (AWS CLI)**
 + Run the `list-functions` command, and filter on the runtime ARN.
 
-  ```
+  ```bash
   aws lambda list-functions --function-version ALL \
     --query "Functions[?RuntimeConfig.RuntimeArn=='{{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}}'].{Function:FunctionArn,Alias:RuntimeConfig.RuntimeAlias}" \
     --output table
@@ -369,7 +369,7 @@ Functions that use a customer-managed runtime have the `Runtime` value `custom`.
 
   To find only the functions that use a specific runtime alias, also filter on the alias name. For example:
 
-  ```
+  ```bash
   aws lambda list-functions --function-version ALL \
     --query "Functions[?RuntimeConfig.RuntimeArn=='{{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}}' && RuntimeConfig.RuntimeAlias=='{{prod}}'].FunctionArn" \
     --output table
@@ -417,7 +417,7 @@ If the runtime is in another account, you can't view it in the Lambda console. U
 **To check the lifecycle of a runtime alias (AWS CLI)**
 + Run the `get-runtime-alias` command. For `--runtime-name`, specify the runtime ARN.
 
-  ```
+  ```bash
   aws lambda-core get-runtime-alias \
     --runtime-name {{arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8}} \
     --name {{prod}}
@@ -427,7 +427,7 @@ If the runtime is in another account, you can't view it in the Lambda console. U
 
   If the publisher has set a lifecycle, the output includes a `ReleaseLifecycle` object. The following example shows an excerpt of the output:
 
-  ```
+  ```json
   {
       "Name": "prod",
       "Arn": "arn:aws:lambda:us-east-1:123456789012:runtime/companyphp8/alias/prod",
@@ -452,7 +452,7 @@ You can also use infrastructure as code tools to define functions that use custo
 
 The following AWS CloudFormation template creates a function that uses a customer-managed runtime. You pass in the runtime ARN and the alias name as parameters. You also pass in the ARN of an existing execution role and the Amazon S3 bucket that holds your deployment package.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
   RuntimeArn:

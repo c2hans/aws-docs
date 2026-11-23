@@ -127,7 +127,7 @@ For a list of supported evaluator models, see [Supported models](evaluation-kb.m
   aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
   ```
 
-  ```
+  ```json
   {
       "jobName": "my_rag_eval",
       "roleArn": "arn:aws:iam::{{111122223333}}:role/service-role/Amazon-Bedrock-Custom-Metric",
@@ -227,7 +227,7 @@ The example JSON file contains two `evaluatorModelConfig` objects. The one insid
   aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
   ```
 
-  ```
+  ```json
   {
       "jobName": "my_rag_eval",
       "roleArn": "arn:aws:iam::{{111122223333}}:role/service-role/Amazon-Bedrock-Custom-Metric",

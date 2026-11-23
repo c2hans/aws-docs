@@ -38,19 +38,19 @@ To delete an external key store, use the [DeleteCustomKeyStore](https://docs.aws
 
 To begin, disconnect the external key store. Before running this command, replace the example custom key store ID with a valid one.
 
-```
+```bash
 $ aws kms disconnect-custom-key-store --custom-key-store-id {{cks-1234567890abcdef0}}
 ```
 
 After the external key store is disconnected, you can use the [DeleteCustomKeyStore](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteCustomKeyStore.html) operation to delete it.
 
-```
+```bash
 $ aws kms delete-custom-key-store --custom-key-store-id {{cks-1234567890abcdef0}}
 ```
 
 To confirm that the external key store is deleted, use the [DescribeCustomKeyStores](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeCustomKeyStores.html) operation.
 
-```
+```bash
 $ aws kms describe-custom-key-stores
 
 {
@@ -60,7 +60,7 @@ $ aws kms describe-custom-key-stores
 
 If you specify a custom key store name or ID that no longer exists, AWS KMS returns a `CustomKeyStoreNotFoundException` exception.
 
-```
+```bash
 $ aws kms describe-custom-key-stores --custom-key-store-id {{cks-1234567890abcdef0}}
 
 An error occurred (CustomKeyStoreNotFoundException) when calling the DescribeCustomKeyStore operation:

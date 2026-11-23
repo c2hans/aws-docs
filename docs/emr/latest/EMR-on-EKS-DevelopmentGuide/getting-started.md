@@ -31,7 +31,7 @@ Take the following steps to run a simple Spark application on Amazon EMR on EKS.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

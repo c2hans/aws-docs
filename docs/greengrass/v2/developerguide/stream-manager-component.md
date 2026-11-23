@@ -234,7 +234,7 @@ This component provides the following configuration parameters that you can cust
 (Optional) The absolute path of the local directory used to store streams. This value must start with a forward slash (for example, `/data`).
 <a name="stream-manager-store-root-dir-parameter-folder-requirements"></a>You must specify an existing folder, and the [system user who runs the stream manager component](configure-greengrass-core-v2.md#configure-component-user) must have permissions to read and write to this folder. For example, you can run the following commands to create and configure a folder, `/var/greengrass/streams`, which you specify as the stream manager root folder. These commands allow the default system user, `ggc_user`, to read and write to this folder.
 
-```
+```bash
 sudo mkdir /var/greengrass/streams
 sudo chown ggc_user /var/greengrass/streams
 sudo chmod 700 /var/greengrass/streams
@@ -291,7 +291,7 @@ Default: `120`
 **Example: Configuration merge update**
 The following example configuration specifies to use a non-default port.
 
-```
+```json
 {
   "STREAM_MANAGER_SERVER_PORT": "18088"
 }
@@ -324,14 +324,14 @@ This component uses the following log file.
 ------
 #### [ Linux ]
 
-  ```
+  ```bash
   sudo tail -f {{/greengrass/v2}}/logs/aws.greengrass.StreamManager.log
   ```
 
 ------
 #### [ Windows (PowerShell) ]
 
-  ```
+  ```powershell
   Get-Content {{C:\greengrass\v2}}\logs\aws.greengrass.StreamManager.log -Tail 10 -Wait
   ```
 

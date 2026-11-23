@@ -36,7 +36,7 @@ Create a new Go file named `SendMessage.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -49,7 +49,7 @@ import (
 
 Get the name of the queue from the command line.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 flag.Parse()
 
@@ -61,7 +61,7 @@ if *queue == "" {
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -69,7 +69,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call *SendMessage*. The input represents information about a fiction best seller for a particular week and defines title, author, and weeks on the list values.
 
-```
+```go
 svc := sqs.New(sess)
 
 _, err := svc.SendMessage(&sqs.SendMessageInput{
@@ -102,7 +102,7 @@ Create a new Go file named `ReceiveMessage.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -115,7 +115,7 @@ import (
 
 Get the name of the queue and how long the message is hidden from other consumers from the command line.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 timeout := flag.Int64("t", 5, "How long, in seconds, that the message is hidden from others")
 flag.Parse()
@@ -136,7 +136,7 @@ if *timeout > 12*60*60 {
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -144,7 +144,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call the *GetQueueUrl* function to get the URL of the queue.
 
-```
+```go
 svc := sqs.New(sess)
 
 urlResult, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
@@ -154,13 +154,13 @@ urlResult, err := svc.GetQueueUrl(&sqs.GetQueueUrlInput{
 
 The URL of the queue is in the *QueueUrl* property of the returned object.
 
-```
+```go
 queueURL := urlResult.QueueUrl
 ```
 
 Call the *ReceiveMessage* function to get the messages in the queue.
 
-```
+```go
 msgResult, err := svc.ReceiveMessage(&sqs.ReceiveMessageInput{
     AttributeNames: []*string{
         aws.String(sqs.MessageSystemAttributeNameSentTimestamp),
@@ -176,7 +176,7 @@ msgResult, err := svc.ReceiveMessage(&sqs.ReceiveMessageInput{
 
 Print the message handle of the first message in the queue (you need the handle to delete the message).
 
-```
+```go
 fmt.Println("Message Handle: " + *msgResult.Messages[0].ReceiptHandle)
 ```
 
@@ -189,7 +189,7 @@ Create a new Go file named `DeleteMessage.go`.
 
 You must import the relevant Go and AWS SDK for Go packages by adding the following lines.
 
-```
+```go
 import (
     "flag"
     "fmt"
@@ -201,7 +201,7 @@ import (
 
 Get the name of the queue and the handle for the message from the command line.
 
-```
+```go
 queue := flag.String("q", "", "The name of the queue")
 messageHandle := flag.String("m", "", "The receipt handle of the message")
 flag.Parse()
@@ -214,7 +214,7 @@ if *queue == "" || *messageHandle == "" {
 
 Initialize a session that the SDK uses to load credentials from the shared credentials file, `~/.aws/credentials` and the default region from `~/.aws/config`.
 
-```
+```go
 sess := session.Must(session.NewSessionWithOptions(session.Options{
     SharedConfigState: session.SharedConfigEnable,
 }))
@@ -222,7 +222,7 @@ sess := session.Must(session.NewSessionWithOptions(session.Options{
 
 Create a service client and call the *DeleteMessage* function, passing in the name of the queue and the message handle.
 
-```
+```go
 svc := sqs.New(sess)
 
 _, err := svc.DeleteMessage(&sqs.DeleteMessageInput{

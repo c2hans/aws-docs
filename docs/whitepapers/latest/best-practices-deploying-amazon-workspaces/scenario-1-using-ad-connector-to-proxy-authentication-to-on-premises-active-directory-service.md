@@ -8,9 +8,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
 ![Sample architecture showing at a high-level each component and user authentication flow.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/ad-connector-to-onprem.png)
 
+*Figure 5: AD Connector to on-premises Active Directory*
+
  In this scenario, AWS Directory Service (AD Connector) is used for all user or MFA authentication that is proxied through the AD Connector to the customer on-premises AD DS (detailed in the following figure). For details on the protocols or encryption used for the authentication process, refer to the [Security](security.md) section of this document.
 
 ![Sample architecture showing how AD Connector is used for all user or MFA authentication that is proxied through the AD Connector to the customer on-premises AD DS.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/user-authentication-auth-gateway.png)
+
+*Figure 6: User authentication via the Authentication Gateway *
 
  Scenario 1 shows a hybrid architecture where the customer might already have resources in AWS, as well as resources in an on-premises data center that could be accessed via Amazon WorkSpaces. The customer can leverage their existing on-premises AD DS and RADIUS servers for user and MFA authentication.
 

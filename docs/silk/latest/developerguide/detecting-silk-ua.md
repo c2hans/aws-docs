@@ -8,7 +8,7 @@ To determine browser support for a given feature, the [Learn about feature detec
 
 If you want to detect version and configuration info in the Amazon Silk user agent, you can use a script like the one embedded in the following HTML document:
 
-```
+```html
 <html>
   <body>
     <script>
