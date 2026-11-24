@@ -26,7 +26,7 @@ The following AWS services support resources in shared VPC subnets. For more inf
   + [Network Access Analyzer](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/how-network-access-analyzer-works.html#analyzer-limitations)
   + [Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html#considerations)
 + Amazon OpenSearch Service
-+ [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#interface-endpoint-shared-subnets)†
++ [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#interface-endpoint-shared-subnets)<sup>†</sup>
 + [Amazon Relational Database Service (RDS)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html#USER_VPC.Shared_subnets)
 + [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-shared-subnet-vpc.html)
 + [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs-different-accounts.html)
@@ -38,6 +38,6 @@ The following AWS services support resources in shared VPC subnets. For more inf
   + [Traffic Mirroring](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-network-limitations.html)
 + [Amazon VPC Lattice](https://docs.aws.amazon.com/vpc-lattice/latest/ug/create-target-group.html#target-group-shared-subnets)
 
-† You can connect to all AWS services that support PrivateLink using a VPC endpoint in a shared VPC. For a list of services that support PrivateLink, see [AWS services that integrate with AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/aws-services-privatelink-support.html) in the *AWS PrivateLink Guide*.
+<sup>†</sup> You can connect to all AWS services that support PrivateLink using a VPC endpoint in a shared VPC. For a list of services that support PrivateLink, see [AWS services that integrate with AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/aws-services-privatelink-support.html) in the *AWS PrivateLink Guide*.
 
 This list is intended to include all services that support launching resources in shared VPC subnets. Despite our best efforts, there might be services that support launching resources in shared VPC subnets but are not listed here. We encourage you to submit documentation feedback if you have questions.

@@ -28,6 +28,66 @@ For changes to this guide that don't change the service, see [Document history](
 ## November 2026
 <a name="whats-new-2026-11"></a>
 
+### Multi-Region replication in additional Regions
+<a name="whats-new-2026-11-20-mrr-regions"></a>
+
+Region · User pools · Essentials, Plus · November 20, 2026
+
+You can now use multi-Region replication to replicate your user pool data to 16 additional AWS Regions. You could previously use multi-Region replication only in 16 commercial AWS Regions and the AWS GovCloud (US) Regions. The additional Regions are:
++ Asia Pacific (Hyderabad)
++ Asia Pacific (Hong Kong)
++ Asia Pacific (Jakarta)
++ Asia Pacific (Malaysia)
++ Asia Pacific (Melbourne)
++ Asia Pacific (New Zealand)
++ Asia Pacific (Osaka)
++ Asia Pacific (Taipei)
++ Asia Pacific (Thailand)
++ Canada West (Calgary)
++ Europe (Milan)
++ Europe (Spain)
++ Europe (Zurich)
++ Israel (Tel Aviv)
++ Mexico (Central)
++ Africa (Cape Town)
+
+Multi-Region replication is an add-on and requires a multi-Region AWS KMS customer managed key.
+
+See [Multi-Region replication](user-pool-multi-region.md) and the [What's New post](https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-mrr-opt-in-regions/) on the AWS website.
+
+### Client ID metadata documents (CIMD)
+<a name="whats-new-2026-11-19-cimd"></a>
+
+New · User pools, Managed login · Essentials, Plus · November 19, 2026
+
+Model Context Protocol (MCP) clients and AI agents can now sign users in to your user pool without a separate app client for each client. The client uses an HTTPS URL as its client ID and publishes a JSON metadata document at that URL. Amazon Cognito fetches and validates the document when sign-in starts.
+
+You choose which clients to accept with CIMD policies that map URL patterns to one of your app clients. Amazon Cognito grants only the scopes and grant types that both the app client and the metadata document allow.
+
+See [Client ID metadata documents (CIMD)](cognito-user-pools-client-id-metadata.md) and the [What's New post](https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-client-id-metadata-documents/) on the AWS website.
+
+### App client secrets in AWS Secrets Manager
+<a name="whats-new-2026-11-19-secrets-manager"></a>
+
+New · User pools · November 19, 2026
+
+You can now store and rotate your app client secrets in AWS Secrets Manager, which helps with periodic credential rotation and compliance requirements and keeps secrets out of the console. Secrets Manager adds rotation, access control with AWS Identity and Access Management (IAM) policies, and encryption with an AWS managed key or your own AWS KMS customer managed key. You can turn on the integration for a new or existing app client, and turn it off at any time. Standard Secrets Manager charges apply.
+
+The integration is available in all AWS Regions where Amazon Cognito and Secrets Manager are available, except the AWS European Sovereign Cloud (Germany).
+
+See [Managing app client secrets with AWS Secrets Manager](user-pool-settings-client-apps.md#user-pool-settings-client-apps-asm-managed-secrets) and the [What's New post](https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-secrets-manager-integration/) on the AWS website.
+
+### Dynamic client registration (RFC 7591)
+<a name="whats-new-2026-11-19-dcr"></a>
+
+New · User pools · Essentials, Plus · November 19, 2026
+
+MCP clients and AI agents can now register themselves as app clients at runtime, so you don't have to create an app client in advance for each one. Amazon Cognito advertises a registration endpoint in its OAuth authorization server metadata. Clients discover the endpoint, register to get a client ID, and then sign users in.
+
+You control who can register. Require an access token with a registration scope, or turn on open registration. Registered clients appear with your other app clients, with a client ID prefix and a client type that you can filter on.
+
+See [Dynamic client registration](cognito-user-pools-dynamic-client-registration.md) and the [What's New post](https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-dynamic-client-registration/) on the AWS website.
+
 ### Point-in-time recovery for user pools
 <a name="whats-new-2026-11-18-pitr"></a>
 

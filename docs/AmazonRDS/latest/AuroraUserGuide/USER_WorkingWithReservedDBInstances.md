@@ -15,14 +15,14 @@ For information about purchasing reserved DB instances and viewing the billing f
 ## Overview of reserved DB instances
 <a name="USER_WorkingWithReservedDBInstances.Overview"></a>
 
-When you purchase a reserved DB instance in Amazon RDS, you purchase a commitment to getting a discounted rate, on a specific DB instance type, for the duration of the reserved DB instance. To use an Amazon RDS reserved DB instance, you create a new DB instance just like you do for an on-demand instance.
+When you purchase a reserved DB instance in Amazon RDS, you purchase a commitment to getting a discounted rate, on a specific DB instance type, for the duration of the reserved DB instance. You don't need to create a new DB instance to use a reserved DB instance. The reserved DB instance discount automatically applies to any running DB instance in your account that matches it. The discount applies whether that DB instance existed before you made the purchase or you create it afterward.
 
-The new DB instance that you create must have the same specifications as the reserved DB instance for the following:
+To receive the discount, a DB instance must have the same specifications as the reserved DB instance for the following:
 + AWS Region
 + DB engine (The DB engine's version number doesn't need to match.)
 + DB instance type
 
-If the specifications of the new DB instance match an existing reserved DB instance for your account, you are billed at the discounted rate offered for the reserved DB instance. Otherwise, the DB instance is billed at an on-demand rate.
+If the specifications of a running DB instance match a reserved DB instance for your account, you're billed at the discounted rate offered for the reserved DB instance. Otherwise, the DB instance is billed at an on-demand rate.
 
 You can modify a DB instance that you're using as a reserved DB instance. If the modification is within the specifications of the reserved DB instance, part or all of the discount still applies to the modified DB instance. If the modification is outside the specifications, such as changing the instance class, the discount no longer applies. For more information, see [Size-flexible reserved DB instances](#USER_WorkingWithReservedDBInstances.SizeFlexible).
 
@@ -91,6 +91,7 @@ You can compare usage for different reserved DB instance sizes by using normaliz
 | 16xlarge | 128 | 166.4 | 384 | 499.2 |
 | 24xlarge | 192 | 249.6 | 576 | 748.8 |
 | 32xlarge | 256 | 332.8 | 768 | 998.4 |
+| 48xlarge | 384 | 499.2 | 1,152 | 1,497.6 |
 
 For example, suppose that you purchase a `db.t2.medium` reserved DB instance, and you have two running `db.t2.small` DB instances in your account in the same AWS Region. In this case, the billing benefit is applied in full to both instances.
 
@@ -124,7 +125,7 @@ If you choose to use an on-demand DB instance instead of a reserved DB instance,
 #### Example using an Aurora Standard DB cluster with two reader instances
 <a name="ri-example-3db"></a>
 
-To use reserved instances for Aurora DB clusters, simply purchase one reserved instance for each DB instance in the cluster.
+To use reserved DB instances for an Aurora DB cluster, purchase one reserved DB instance for each DB instance in the cluster. The discount applies to the existing DB instances in the cluster that match the reserved DB instance specifications.
 
 Extending the first example, you have an Aurora MySQL DB cluster with one writer DB instance and two Aurora Replicas, for a total of three DB instances in the cluster. The two Aurora Replicas incur no extra storage or backups charges. If you purchase three db.r5.large Aurora MySQL reserved DB instances, your cost will be $234.30 (for the writer DB instance) \+ 2 \* ($138.70 \+ $20 I/O per Aurora Replica), for a total of $551.70 per month.
 

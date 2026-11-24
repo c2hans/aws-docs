@@ -67,6 +67,9 @@ The following features are only available in Connect Customer. They are not incl
   + AI agent performance evaluations
 + [Flow designer analytics](monitor-flow-performance.md)
 + [Custom metrics in dashboards and APIs](custom-metrics-topic.md) — build tailored views of contact center performance
++ Automatic form population in step-by-step guides
+  + [Using AI agents](autofill-guides.md)
+  + [Using conversational analytics](integrate-views-conversational-analytics.md)
 
 ## Updating an existing instance to Connect Customer
 <a name="how-to-enable-ac"></a>

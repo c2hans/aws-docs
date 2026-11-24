@@ -16,9 +16,9 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| company\_id2 | string | No | Company ID. |
-| vendor\_tpartner\_id2 | string | Yes | Trading partner ID of the vendor. |
-| product\_id2 | string | Yes | Product ID. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| vendor\_tpartner\_id<sup>2</sup> | string | Yes | Trading partner ID of the vendor. |
+| product\_id<sup>2</sup> | string | Yes | Product ID. |
 | vendor\_product\_code | string | No | Product identifier used by the vendor. |
 | vendor\_product\_desc | string | No | Product description used by the vendor. |
 | vendor\_cost | double | No | Cost of product from this vendor. |
@@ -30,8 +30,8 @@ The table below lists the column names supported by the data entity:
 | weight\_uom | string | No | Weight unit of measurement for weight. |
 | release\_date | timestamp | No | Date when the product was released by the vendor. |
 | end\_date | timestamp | No | Date when the vendor stopped supplying the product. |
-| eff\_start\_date | timestamp | Yes1 | Displays the date and time from when the vendor's product is active. |
-| eff\_end\_date | timestamp | Yes1 | Displays the date and time till when the vendor's product will be active. |
+| eff\_start\_date | timestamp | Yes<sup>1</sup> | Displays the date and time from when the vendor's product is active. |
+| eff\_end\_date | timestamp | Yes<sup>1</sup> | Displays the date and time till when the vendor's product will be active. |
 | min\_order\_unit | double | No | Minimum order quantity for a product from this vendor. |
 | country\_of\_origin | string | No | Country of origin by product. |
 | sap\_eina\_\_infnr | string | No | Record on number of purchases. Predicate key for SAP mapping. Upsert key for EINE. |
@@ -42,9 +42,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system.  |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

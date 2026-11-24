@@ -4,6 +4,8 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/insta
 
 # Install the CloudWatch agent with the Amazon CloudWatch Observability EKS add-on or the Helm chart
 
+This page applies to both Enhanced Container Insights (Classic) and OTel Container Insights.
+
 You can use either the Amazon CloudWatch Observability EKS add-on or the Amazon CloudWatch Observability Helm chart to install the CloudWatch Agent and the Fluent-bit agent on an Amazon EKS cluster. You can also use the Helm chart to install the CloudWatch Agent and the Fluent-bit agent on a Kubernetes cluster that is not hosted on Amazon EKS.
 
 Using either method on an Amazon EKS cluster enables both [Container Insights](ContainerInsights.md) for Amazon EKS and [CloudWatch Application Signals](CloudWatch-Application-Monitoring-Sections.md) by default. Both features help you to collect infrastructure metrics, application performance telemetry, and container logs from the cluster. From version 8.0.0, the add-on and the chart also serve an OTLP endpoint and scrape ServiceMonitor and PodMonitor targets by default. For the full list, see [Features that are on by default](#install-CloudWatch-Observability-EKS-addon-defaults).
@@ -25,7 +27,7 @@ When you install the add-on or the Helm chart, you must also grant IAM permissio
 + [Option 1: Install using EKS Pod Identity](#install-CloudWatch-Observability-EKS-pod-identity)
 + [Option 2: Install with IAM permissions on worker nodes](#install-CloudWatch-Observability-EKS-addon-workernodes)
 + [Option 3: Install using IAM service account role (applies only to using the add-on)](#install-CloudWatch-Observability-EKS-addon-serviceaccountrole)
-+ [(Optional) Additional configuration](#install-CloudWatch-Observability-EKS-addon-configuration)
++ [(Optional) Configuring Enhanced Container Insights (Classic) and Fluent Bit](#install-CloudWatch-Observability-EKS-addon-configuration)
 + [Collect Java Management Extensions (JMX) metrics](#install-CloudWatch-Observability-EKS-addon-JMX-metrics)
 + [Enable Kueue metrics](#enable-Kueue-metrics)
 + [Appending OpenTelemetry collector configuration files](#install-CloudWatch-Observability-EKS-addon-OpenTelemetry)
@@ -43,12 +45,12 @@ The following table lists what version 8.0.0 and later of the add-on and the Hel
 | Feature | Configuration value | Default |
 | --- | --- | --- |
 | [Enhanced Container Insights (Classic)](container-insights-eks-classic.md) | containerInsights.enabled | On |
-| Container logs, collected by Fluent Bit | containerLogs.enabled | On |
+| Container logs, collected by Fluent Bit (Classic) | containerLogs.enabled | On |
 | [Application Signals (Classic)](eks-observability-addon-application-signals.md) | applicationSignals.enabled | On |
 | [OTLP ingestion](eks-observability-addon-otlp-endpoint.md) | otlp.enabled | On |
 | [Scraping ServiceMonitor and PodMonitor targets](eks-observability-addon-prometheus-monitors.md) | otelPrometheusMonitor.enabled | On |
 | [OpenTelemetry service identity](eks-observability-addon-service-identity.md) | otelServiceIdentity | Always on |
-| [Telemetry filters](eks-observability-addon-telemetry-filters.md) | otelFilters | Nothing filtered, except a built-in list of high-cardinality pod and node labels |
+| [OpenTelemetry filters](eks-observability-addon-telemetry-filters.md) | otelFilters | Nothing filtered, except a built-in list of high-cardinality pod and node labels |
 | [OTel Container Insights (Recommended)](container-insights-eks-otel.md) | otelContainerInsights.enabled | Off |
 
 ## Option 1: Install using EKS Pod Identity
@@ -354,16 +356,18 @@ This method is valid only if you are using the Amazon CloudWatch Observability E
 
 ------
 
-## (Optional) Additional configuration
+## (Optional) Configuring Enhanced Container Insights (Classic) and Fluent Bit
 <a name="install-CloudWatch-Observability-EKS-addon-configuration"></a>
+
+The settings in this section change the CloudWatch agent JSON configuration (`agent.config`) and the Fluent Bit log pipeline (`containerLogs`). Enhanced Container Insights (Classic) and Application Signals (Classic) read the agent JSON configuration. Fluent Bit is the container log pipeline of Enhanced Container Insights (Classic). OTel Container Insights doesn't read these settings. It collects logs with the OpenTelemetry components of the CloudWatch agent, and its settings are on the pages under [OTel Container Insights (Recommended)](container-insights-eks-otel.md). You can run Fluent Bit and OTel Container Insights at the same time.
+
+For settings that apply to both, such as `agent.resources` and `tolerations`, and for how to pass configuration values, see [Configuring the add-on and the Helm chart](eks-observability-addon-configure.md).
 
 **Topics**
 + [Opt out of collecting container logs](#CloudWatch-Observability-EKS-addon-OptOutContainerLogs)
 + [Use a custom Fluent Bit configuration](#CloudWatch-Observability-EKS-addon-CustomFluentBit)
-+ [Manage Kubernetes tolerations for the installed pod workloads](#CloudWatch-Observability-EKS-addon-Tolerations)
 + [Opt out of accelerated compute metrics collection](#CloudWatch-Observability-EKS-addon-OptOutAccelerated)
 + [Use a custom CloudWatch agent configuration](#CloudWatch-Observability-EKS-addon-CustomAgentConfig)
-+ [Manage admission webhook TLS certificates](#CloudWatch-Observability-EKS-addon-Webhook)
 + [Collect Amazon EBS volume IDs](#CloudWatch-Observability-EKS-addon-VolumeIDs)
 
 ### Opt out of collecting container logs
@@ -373,6 +377,8 @@ By default, the add-on uses Fluent Bit to collect container logs from all pods a
 
 **Note**
 Neither the add-on or the Helm chart manage existing Fluentd or Fluent Bit resources in a cluster. You can delete the existing Fluentd or Fluent Bit resources before installing the add-on or Helm chart. Alternatively, to keep your existing setup and avoid having the add-on or the Helm chart from also installing Fluent Bit, you can disable it by following the instructions in this section.
+
+If you turn on OTel Container Insights, it also collects container logs and sends them to CloudWatch Logs. To send container logs only once, turn off Fluent Bit or turn off OTel Container Insights log collection. For information about turning off OTel Container Insights log collection, see [Turning off log collection](container-insights-eks-otel-logs.md#container-insights-eks-otel-logs-disable).
 
 To opt out of the collection of container logs if you are using the Amazon CloudWatch Observability EKS add-on, pass the following option when you create or update the add-on:
 
@@ -479,35 +485,6 @@ config:
     application-log.conf: ""
 ```
 
-### Manage Kubernetes tolerations for the installed pod workloads
-<a name="CloudWatch-Observability-EKS-addon-Tolerations"></a>
-
-Starting with version 1.7.0 of the Amazon CloudWatch Observability EKS add-on, the add-on and the Helm chart by default set Kubernetes *tolerations* to tolerate all taints on the pod workloads that are installed by the add-on or the Helm chart. This ensures that daemonsets such as the CloudWatch agent and Fluent Bit can schedule pods on all nodes in your cluster by default. For more information about tolerations and taints, see [Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) in the Kubernetes documentation.
-
-The default tolerations set by the add-on or the Helm chart are as follows:
-
-```yaml
-tolerations:
-- operator: Exists
-```
-
-You can override the default tolerations by setting the `tolerations` field at the root level when using the add-on advanced config or when you install or upgrade the Helm chart with value overrides. An example would look like the following:
-
-```yaml
-tolerations:
-- key: "key1"
-  operator: "Exists"
-  effect: "NoSchedule"
-```
-
-To omit tolerations completely, you can use a config that looks like the following:
-
-```yaml
-tolerations: []
-```
-
-Any changes to tolerations apply to all pod workloads that are installed by the add-on or the Helm chart.
-
 ### Opt out of accelerated compute metrics collection
 <a name="CloudWatch-Observability-EKS-addon-OptOutAccelerated"></a>
 
@@ -520,6 +497,8 @@ AWS Neuron metrics for AWS Trainium and AWS Inferentia accelerators are collecte
 AWS Elastic Fabric Adapter (EFA) metrics from Linux nodes on Amazon EKS clusters are collected by default beginning with version `v1.5.2-eksbuild.1` of the EKS add-on or the Helm chart and version `1.300037.0` of the CloudWatch agent. For a list of metrics collected and prerequisites, see [AWS Elastic Fabric Adapter (EFA) metrics](Container-Insights-metrics-enhanced-EKS.md#Container-Insights-metrics-EFA).
 
 You can opt out of collecting these metrics by setting the `accelerated_compute_metrics` field in the CloudWatch agent configuration file to `false`. This field is in the `kubernetes` section of the `metrics_collected` section in the CloudWatch configuration file. The following is an example of an opt-out configuration. For more information about how to use custom CloudWatch agent configurations, see the following section, [Use a custom CloudWatch agent configuration](#CloudWatch-Observability-EKS-addon-CustomAgentConfig).
+
+This field applies to Enhanced Container Insights (Classic) only. OTel Container Insights collects NVIDIA GPU metrics from the DCGM exporter and Neuron metrics from the Neuron monitor. To stop collecting them in both modes, set `dcgmExporter.enabled` or `neuronMonitor.enabled` to `false`. Both are `true` by default.
 
 ```json
 {
@@ -541,6 +520,10 @@ To collect other metrics, logs or traces using the CloudWatch agent, you can spe
 
 **Important**
 Any custom configuration that you provide using additional configuration settings overrides the default configuration used by the agent. Be cautious not to unintentionally disable functionality that is enabled by default, such as Container Insights with enhanced observability and CloudWatch Application Signals. In the scenario that you are required to provide a custom agent configuration, we recommend using the following default configuration as a baseline and then modifying it accordingly.
+
+When you set `agent.config`, the agent uses it in place of the configuration that the add-on builds from `containerInsights.enabled` and `applicationSignals.enabled`, so those two values no longer change the agent configuration.
+
+The agent also reads `agent.config` when OTel Container Insights is on, so a `kubernetes` section in it keeps Enhanced Container Insights (Classic) running. `agent.config` doesn't configure OTel Container Insights.
 + For using the Amazon CloudWatch observability EKS add-on
 
   ```json
@@ -597,43 +580,6 @@ The following example shows the default agent configuration for the CloudWatch a
   }
 }
 ```
-
-### Manage admission webhook TLS certificates
-<a name="CloudWatch-Observability-EKS-addon-Webhook"></a>
-
-The Amazon CloudWatch Observability EKS add-on and the Helm chart use Kubernetes [ admission webhooks](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) to validate and mutate `AmazonCloudWatchAgent` and `Instrumentation` custom resource (CR) requests, and optionally Kubernetes pod requests on the cluster if CloudWatch Application Signals is enabled. In Kubernetes, webhooks require a TLS certificate that the API server is configured to trust to make sure secure communication.
-
-By default, the Amazon CloudWatch Observability EKS add-on and the Helm chart auto-generate a self-signed CA and a TLS certificate signed by this CA for securing the communication between the API server and the webhook server. This auto-generated certificate has a default expiry of 10 years and is not auto-renewed upon expiry. In addition, the CA bundle and the certificate are re-generated every time the add-on or Helm chart is upgraded or re-installed, thus resetting the expiry. If you want to change the default expiry of the auto-generated certificate, you can use the following additional configurations when creating or updating the add-on. Replace {{expiry-in-days}} with your desired expiry duration in days.
-+ Use this for the Amazon CloudWatch Observability EKS add-on
-
-  ```
-  --configuration-values '{ "admissionWebhooks": { "autoGenerateCert": { "expiryDays": {{expiry-in-days}} } } }'
-  ```
-+ Use this for the Helm chart
-
-  ```
-  --set admissionWebhooks.autoGenerateCert.expiryDays=expiry-in-days
-  ```
-
-For a more secure and feature-rich certificate authority solution, the add-on has opt-in support for [ cert-manager](https://cert-manager.io/docs/), a widely-adopted solution for TLS certificate management in Kubernetes that simplifies the process of obtaining, renewing, managing and using those certificates. It ensures that certificates are valid and up to date, and attempts to renew certificates at a configured time before expiry. cert-manager also simplifies issuing certificates from a variety of supported sources, including [AWS Certificate Manager Private Certificate Authority](https://aws.amazon.com/private-ca/).
-
-We recommend that you review best practices for management of TLS certificates on your clusters and advise you to opt in to cert-manager for production environments. Note that if you opt-in to enabling cert-manager for managing the admission webhook TLS certificates, you are required to pre-install cert-manager on your Amazon EKS cluster before you install the Amazon CloudWatch Observability EKS add-on or the Helm chart. For more information about available installation options, see [ cert-manager documentation](https://cert-manager.io/docs/installation/). After you install it, you can opt in to using cert-manager for managing the admission webhook TLS certificates using the following additional configuration.
-+ If you are using the Amazon CloudWatch Observability EKS add-on
-
-  ```
-  --configuration-values '{ "admissionWebhooks": { "certManager": { "enabled": true } } }'
-  ```
-+ If you are using the Helm chart
-
-  ```
-  --set admissionWebhooks.certManager.enabled=true
-  ```
-
-```
---configuration-values '{ "admissionWebhooks": { "certManager": { "enabled": true } } }'
-```
-
-The advanced configuration discussed in this section will by default use a [ SelfSigned](https://cert-manager.io/docs/configuration/selfsigned/) issuer.
 
 ### Collect Amazon EBS volume IDs
 <a name="CloudWatch-Observability-EKS-addon-VolumeIDs"></a>

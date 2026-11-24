@@ -168,7 +168,7 @@ To use the S3 Event Notifications API, add the required dependency element to yo
 </dependencies>
 ```
 
-1 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ### Use the `S3EventNotification` class
 <a name="s3-event-notifications-use"></a>

@@ -16,11 +16,11 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| cost\_id | string | Yes1 | A unique identifier for each cost record associated with an user.  |
-| customer\_id2 | string | Yes | The unique identifier for the user incurring the cost.  |
-| incurred\_date | timestamp | Yes1 | The date and time when the cost was incurred. Displays the timestamp of cost.  |
-| order\_id2 | string | No | The unique identifier of the user order associated with the cost.  |
-| shipment\_id2 | string | No | Unique identifier of the outbound shipment.  |
+| cost\_id | string | Yes<sup>1</sup> | A unique identifier for each cost record associated with an user.  |
+| customer\_id<sup>2</sup> | string | Yes | The unique identifier for the user incurring the cost.  |
+| incurred\_date | timestamp | Yes<sup>1</sup> | The date and time when the cost was incurred. Displays the timestamp of cost.  |
+| order\_id<sup>2</sup> | string | No | The unique identifier of the user order associated with the cost.  |
+| shipment\_id<sup>2</sup> | string | No | Unique identifier of the outbound shipment.  |
 | cost\_type | string | No | Displays the cost type. For example, handling, packing, storage, and shipping.  |
 | amount | double | No | The amount of cost incurred by the user.  |
 | amount\_uom | string | No | Unit of measure for the amount of cost incurred by the user.  |
@@ -39,9 +39,9 @@ The table below lists the column names supported by the data entity:
 | discount\_3 | double | No | The additional discount associated for a specific cost ID. |
 | online\_order\_id | string | No | Unique identifier for the order line. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_ VALUE\_PROVIDED and the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_ VALUE\_PROVIDED and the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

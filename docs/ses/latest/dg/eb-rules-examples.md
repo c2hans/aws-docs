@@ -20,10 +20,10 @@ Choose an example.
 <a name="eb-rules-examples-archive-deliver"></a>
 
 **Goal**
-Retain email for compliance before delivering it to an existing mail server.
+Submit email for compliance archiving before delivering it to an existing mail server.
 
 **How the pattern works**
-The rule selects recipients in the `example.com` domain, except `test@example.com`. Archive runs before SMTP relay. Setting the Archive action's `ActionFailurePolicy` to `DROP` prevents relay after a customer configuration error stops the archive action.
+The rule selects recipients in the `example.com` domain, except `test@example.com`. Archive runs before SMTP relay, so Mail Manager accepts the archive request before relay starts. This order does not confirm that durable archive storage has completed.
 
 **Rule configuration**
 The rule uses the following conditions and ordered actions.
@@ -31,7 +31,7 @@ The rule uses the following conditions and ordered actions.
 + **Unless** – `RECIPIENT EQUALS test@example.com`.
 + **Actions**
 
-  1. Archive in `ar-id-1234`.
+  1. Archive in `a-1a2b3c4d5e6f`.
 
   1. Relay through `rl-0123456789abcdef`.
 
@@ -71,8 +71,7 @@ The following `Rules` list implements the pattern.
     "Actions": [
       {
         "Archive": {
-          "TargetArchive": "ar-id-1234",
-          "ActionFailurePolicy": "DROP"
+          "TargetArchive": "a-1a2b3c4d5e6f"
         }
       },
       {
@@ -88,7 +87,7 @@ The following `Rules` list implements the pattern.
 ```
 
 **Expected result**
-For an email addressed to `orders@example.com` and `test@example.com`, the Archive and Relay actions run only for `orders@example.com`. The archive operation completes before relay starts. The rule takes no action for `test@example.com`, which remains available to later rules.
+For an email addressed to `orders@example.com` and `test@example.com`, the Archive and Relay actions run only for `orders@example.com`. Mail Manager accepts the archive request before relay starts. This result does not confirm that durable storage has completed. The rule takes no action for `test@example.com`, which remains available to later rules.
 
 **Related AWS walkthrough**
 For a complete in-transit archiving and SMTP delivery walkthrough, see [Archiving and sending to final SMTP server](https://aws.amazon.com/blogs/messaging-and-targeting/archiving-and-sending-to-final-smtp-server/).

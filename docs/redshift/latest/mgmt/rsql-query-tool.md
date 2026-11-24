@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/rsql-query-tool.htm
 
  Amazon Redshift RSQL is available for Linux, Windows, and macOS operating systems.
 
-To report issues for Amazon Redshift RSQL, write to redshift-rsql-support@amazon.com.
+To report issues for Amazon Redshift RSQL, write to [redshift-rsql-support@amazon.com](mailto:redshift-rsql-support@amazon.com).
 
 **Topics**
 + [Getting started with Amazon Redshift RSQL](rsql-query-tool-getting-started.md)

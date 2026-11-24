@@ -10,7 +10,7 @@ The following table shows which features are supported in each AWS Region:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AgentCore harness | ✓ Yes | ✓ Yes | No | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | ✓ Yes | No | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | No | No | ✓ Yes |
 | AgentCore Runtime microVMs | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes |
-| AgentCore Runtime Instances | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | ✓ Yes | No | ✓ Yes | ✓ Yes | ✓ Yes | No | No | No | No |
+| AgentCore Runtime Instances | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | ✓ Yes | No | ✓ Yes | ✓ Yes | ✓ Yes | No | No | No | ✓ Yes |
 | AgentCore Memory | ✓ Yes | ✓ Yes | No | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | No | ✓ Yes | ✓ Yes | No | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | No | No | ✓ Yes |
 | AgentCore Gateway | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes |
 | AgentCore Identity | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes |

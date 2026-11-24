@@ -48,6 +48,17 @@ The format of a notification looks like the following sample:
 + `CREATE_TASK`
 + `GENERATE_EVENTBRIDGE_EVENT`
 + `SEND_NOTIFICATION`
++ `SEND_IN_APP_NOTIFICATION`
++ `CREATE_CASE`
++ `UPDATE_CASE`
++ `ASSIGN_SLA`
++ `END_ASSOCIATED_TASKS`
++ `END_ASSOCIATED_EMAILS`
++ `EXTRACT_INFORMATION`
++ `SUBMIT_AUTO_EVALUATION`
++ `SET_CONTACT_ATTRIBUTES`
++ `SET_CONTACT_TAGS`
++ `SEND_WISDOM_QUERY`
 
 For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When conversational analytics can't analyze a contact](contact-lens-error-notifications.md).
 
@@ -57,11 +68,28 @@ For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When 
 + `REAL_TIME_CHAT`
 + `POST_CALL`
 + `POST_CHAT`
++ `ACW_CALL`
++ `ACW_CHAT`
++ `EMAIL`
++ `CONTACT_EVALUATION`
++ `METRICS`
 + `THIRD_PARTY`
+
+**Note**
+Rules triggered by Cases events, including a case SLA breach, report `THIRD_PARTY` as the trigger event.
 
 ## Reason codes for failed actions
 <a name="reason-codes-failed-actions"></a>
 
-When an action fails, the error notification service collects the reason codes from the supported actions. For more information about the reason codes for Task and EventBridge action failures, see the following topics:
+When an action fails, the error notification service collects the reason codes from the supported actions. The `reasonCode` field carries one of the following values.
++ `AccessDeniedException`
++ `InternalServerException`
++ `InvalidRequestException`
++ `ResourceConflictException`
++ `ResourceNotFoundException`
++ `ServiceQuotaExceededException`
++ `ThrottlingException`
+
+For more information about the reason codes for Task and EventBridge action failures, see the following topics:
 + For reason codes for Task action failures, see [Errors](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTaskContact.html#API_StartTaskContact_Errors) in the **StartTaskContact** API topic in the *Connect Customer API Reference Guide*.
 + For reason codes for EventBridge action failures, see [Errors](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html#API_PutEvents_Errors) in the **PutEvents** API topic in the *Amazon EventBridge API Reference Guide*.

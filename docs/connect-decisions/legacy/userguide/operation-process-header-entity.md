@@ -18,8 +18,8 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | process\_id | string | Yes | Process ID. For example, order, work order, maintenance order, or process inquiry. |
 | type | string | No | Type of process. For example, customer order, maintenance, or repair, etc. |
-| company\_id1 | string | No | Company ID. |
-| site\_id1 | string | No | Site or plant ID. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
+| site\_id<sup>1</sup> | string | No | Site or plant ID. |
 | site\_location | string | No | Name of the location or section in site or plant. |
 | planning\_group | string | No | Group planning the work. This field will be an organization entity in the source system. |
 | execution\_group | string | No | Group executing the work. This field will be an organization entity in the source system. |
@@ -49,7 +49,7 @@ The table below lists the column names supported by the data entity:
 | flex\_4 | string | No | Process flexible field 4 |
 | flex\_5 | string | No | Process flexible field 5 |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

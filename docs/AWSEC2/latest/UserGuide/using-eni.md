@@ -47,7 +47,7 @@ The following are important concepts to understand as you get started using netw
 Each instance has a default network interface, called the *primary network interface*. You can't detach a primary network interface from an instance.
 
 **Secondary network interfaces**
-You can create and attach secondary network interfaces to your instance. The maximum number of network interfaces varies by instance type. For more information, see [Maximum IP addresses per network interface](AvailableIpPerENI.md).
+You can create and attach secondary network interfaces to your instance. The maximum number of network interfaces varies by instance type. On instance types that support configurable ENA queue allocation, the number of network interfaces that you can attach also depends on the ENA queue count of each network interface. For more information, see [Maximum IP addresses per network interface](AvailableIpPerENI.md).
 
 **IPv4 addresses for network interfaces**
 When you launch an EC2 instance into an IPv4-only or dual stack subnet, the instance receives a primary private IP address from the IPv4 address range of the subnet. You can also specify additional private IPv4 addresses, known as secondary private IPv4 addresses. Unlike primary private IP addresses, secondary private IP addresses can be reassigned from one instance to another.
@@ -82,7 +82,9 @@ A *managed network interface* is managed by a service provider, such as Amazon E
 ## Network cards
 <a name="network-cards"></a>
 
-Most instance types support one network card. Instance types that support multiple network cards provide higher network performance, including bandwidth capabilities above 100 Gbps and improved packet rate performance. When you attach a network interface to an instance that supports multiple network cards, you can select the network card for the network interface. The primary network interface must be assigned to network card index 0.
+Most instance types support one network card. Instance types that support multiple network cards provide higher network performance. When you attach a network interface to an instance that supports multiple network cards, you can select the network card for the network interface. The primary network interface must be assigned to network card index 0.
+
+Each network card has its own ENA queue pool, and network interfaces on different network cards don't share queues. Starting with 8th generation instance types, the ENA queue count of each network interface determines how many network interfaces fit on a network card, up to the maximum number of network interfaces. Calculate the number of network interfaces separately for each network card. For more information, see [Network interface limits and ENA queues](ena-queues.md#ena-queues-network-interface-limits).
 
 EFA and EFA-only network interfaces count as a network interface. You can assign only one EFA or EFA-only network interface per network card. The primary network interface can't be an EFA-only network interface.
 
@@ -160,6 +162,7 @@ The following instance types support multiple network cards. For information abo
 | trn1n.32xlarge | 16 |
 | trn2.48xlarge | 16 |
 | trn2u.48xlarge | 16 |
+| trn3.48xlarge | 16 |
 | u7in-16tb.224xlarge | 2 |
 | u7in-24tb.224xlarge | 2 |
 | u7in-32tb.224xlarge | 2 |

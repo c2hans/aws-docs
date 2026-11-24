@@ -24,7 +24,7 @@ Derived metrics are not available for the metrics export and the CloudWatch publ
 S3 Storage Lens metrics unit multiples are written with prefix symbols. These prefix symbols match the International System of Units (SI) symbols that are standardized by the International Bureau of Weights and Measures (BIPM). These symbols are also used in the Unified Code for Units of Measure (UCUM). For more information, see [List of SI prefix symbols](https://www.bipm.org/en/measurement-units/si-prefixes).
 
 **Note**
-The unit of measurement for S3 storage bytes is in binary gigabytes (GB), where 1 GB is 230 bytes, 1 TB is 240 bytes, and 1 PB is 250 bytes. This unit of measurement is also known as a gibibyte (GiB), as defined by the International Electrotechnical Commission (IEC).
+The unit of measurement for S3 storage bytes is in binary gigabytes (GB), where 1 GB is 2<sup>30</sup> bytes, 1 TB is 2<sup>40</sup> bytes, and 1 PB is 2<sup>50</sup> bytes. This unit of measurement is also known as a gibibyte (GiB), as defined by the International Electrotechnical Commission (IEC).
 When an object reaches the end of its lifetime based on its lifecycle configuration, Amazon S3 queues the object for removal and removes it asynchronously. Therefore, there might be a delay between the expiration date and the date when Amazon S3 removes an object. S3 Storage Lens doesn't include metrics for objects that have expired but haven't been removed. For more information about expiration actions in S3 Lifecycle, see [Expiring objects](lifecycle-expire-general-considerations.md).
 Amazon S3 stores metadata (object key, timestamps, etc.) for every object, which requires minimum storage even for 0KB data files. This is why 0KB objects appear in the (0KB-128KB] size range in S3 Storage Lens.
 S3 Storage Lens provides best-effort tracking of cross-region data transfers, primarily focusing on requests from customer-managed resources like EC2 instances. Requests made through AWS PrivateLink or certain in-Region requests are unclassified.
@@ -38,7 +38,7 @@ When the feature is enabled, S3 Storage Lens presents the per-access-tier breakd
 
  The following table shows the S3 Storage Lens metrics glossary.
 
-| Metric name | CloudWatch and export | Description | Tier1 | Category2 | Derived | Derived metric formula | Storage Lens groups | Intelligent-Tiering access tier |
+| Metric name | CloudWatch and export | Description | Tier<sup>1</sup> | Category<sup>2</sup> | Derived | Derived metric formula | Storage Lens groups | Intelligent-Tiering access tier |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Total storage | StorageBytes | Total storage, inclusive of incomplete multipart uploads, object metadata, and delete markers | Free | Summary | N | - | Y | Y |
 | Object count | ObjectCount | Total number of objects inclusive of current version, noncurrent versions, incomplete multipart uploads, and delete markers | Free | Summary | N | - | Y | Y |
@@ -167,9 +167,9 @@ When the feature is enabled, S3 Storage Lens presents the per-access-tier breakd
 | 503 Service Unavailable error count | 503ServiceUnavailableErrorCount | Number of 503 Service Unavailable status codes | Advanced | Detailed status code | N | - | N | N |
 | % 503 Service Unavailable errors | - | Number of 503 Service Unavailable status codes as a percentage of total requests | Advanced | Detailed status code | Y | sum(503ServiceUnavailableErrorCount)/sum(AllRequests) | N | N |
 
-1 All free tier storage metrics are available at the Storage Lens group level. Advanced tier metrics are not available at the Storage Lens group level.
+<sup>1</sup> All free tier storage metrics are available at the Storage Lens group level. Advanced tier metrics are not available at the Storage Lens group level.
 
-2 Rule count metrics and bucket settings metrics aren't available at the prefix level.
+<sup>2</sup> Rule count metrics and bucket settings metrics aren't available at the prefix level.
 
 The following table shows the performance metrics available in S3 Storage Lens and their availability in CloudWatch:
 

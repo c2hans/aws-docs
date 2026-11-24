@@ -10,7 +10,7 @@ The PKCS \#11 library supports the following algorithms:
 + **Encryption and decryption** – AES-CBC, AES-CTR, AES-ECB, AES-GCM, DES3-CBC, DES3-ECB, RSA-OAEP, and RSA-PKCS
 + **Sign and verify** – RSA, HMAC, ECDSA (with and without hashing), EdDSA (Ed25519 and Ed25519ph), and ML-DSA (with pure and external mu modes)
 + **Hash/digest** – SHA1, SHA224, SHA256, SHA384, and SHA512
-+ **Key wrap** – AES Key Wrap[1](#mech1), AES-GCM, RSA-AES, and RSA-OAEP
++ **Key wrap** – AES Key Wrap<sup>[1](#mech1)</sup>, AES-GCM, RSA-AES, and RSA-OAEP
 + **Key derivation** – SP800-108 Counter KDF and ECDH with KDF (Supported KDF algorithms are X9.63 with SHA1, SHA224, SHA256, SHA384, SHA512)
 
 **Topics**
@@ -31,7 +31,7 @@ The AWS CloudHSM software library for PKCS \#11 library allows you to use the fo
 + `CKM_RSA_PKCS_KEY_PAIR_GEN`
 + `CKM_RSA_X9_31_KEY_PAIR_GEN` – This mechanism is functionally identical to the `CKM_RSA_PKCS_KEY_PAIR_GEN` mechanism, but offers stronger guarantees for `p` and `q` generation.
 + `CKM_EC_KEY_PAIR_GEN`
-+ `CKM_CLOUDHSM_ML_DSA_KEY_PAIR_GEN`[3](#mech3)
++ `CKM_CLOUDHSM_ML_DSA_KEY_PAIR_GEN`<sup>[3](#mech3)</sup>
 + `CKM_GENERIC_SECRET_KEY_GEN`
 + `CKM_AES_KEY_GEN`
 + `CKM_DES3_KEY_GEN` – upcoming change listed in footnote [5](#mech5).
@@ -68,19 +68,19 @@ With Client SDK 5 RSA and ECDSA hashing is done locally so there is no data limi
 + `CKM_ECDSA_SHA512`
 
 **ML-DSA**
-+ `CKM_CLOUDHSM_ML_DSA_KEY_PAIR_GEN`[3](#mech3) – Generates ML-DSA key pairs.
-+ `CKM_CLOUDHSM_ML_DSA`[3](#mech3) – Pure ML-DSA sign and verify.
-+ `CKM_CLOUDHSM_EXT_MU_ML_DSA`[3](#mech3) – ML-DSA sign and verify with external mu.
++ `CKM_CLOUDHSM_ML_DSA_KEY_PAIR_GEN`<sup>[3](#mech3)</sup> – Generates ML-DSA key pairs.
++ `CKM_CLOUDHSM_ML_DSA`<sup>[3](#mech3)</sup> – Pure ML-DSA sign and verify.
++ `CKM_CLOUDHSM_EXT_MU_ML_DSA`<sup>[3](#mech3)</sup> – ML-DSA sign and verify with external mu.
 
 **EdDSA**
-+ `CKM_CLOUDHSM_EDDSA`[6](#kdf6), [7](#mech7) – with NULL params (PureEdDSA), single-part operations only.
++ `CKM_CLOUDHSM_EDDSA`<sup>[6](#kdf6), [7](#mech7)</sup> – with NULL params (PureEdDSA), single-part operations only.
 
 **HMAC**
-+ `CKM_SHA_1_HMAC`[2](#mech2)
-+ `CKM_SHA224_HMAC`[2](#mech2)
-+ `CKM_SHA256_HMAC`[2](#mech2)
-+ `CKM_SHA384_HMAC`[2](#mech2)
-+ `CKM_SHA512_HMAC`[2](#mech2)
++ `CKM_SHA_1_HMAC`<sup>[2](#mech2)</sup>
++ `CKM_SHA224_HMAC`<sup>[2](#mech2)</sup>
++ `CKM_SHA256_HMAC`<sup>[2](#mech2)</sup>
++ `CKM_SHA384_HMAC`<sup>[2](#mech2)</sup>
++ `CKM_SHA512_HMAC`<sup>[2](#mech2)</sup>
 
 **CMAC**
 + `CKM_AES_CMAC`
@@ -114,20 +114,20 @@ The AWS CloudHSM software library for PKCS \#11 library allows you to use the fo
 + `CKM_DES3_CBC` – upcoming change listed in footnote [5](#mech5).
 + `CKM_DES3_ECB` – upcoming change listed in footnote [5](#mech5).
 + `CKM_DES3_CBC_PAD` – upcoming change listed in footnote [5](#mech5).
-+  `CKM_AES_GCM` [1](#mech1), [2](#mech2)
-+ `CKM_CLOUDHSM_AES_GCM`[3](#mech3)
++  `CKM_AES_GCM` <sup>[1](#mech1), [2](#mech2)</sup>
++ `CKM_CLOUDHSM_AES_GCM`<sup>[3](#mech3)</sup>
 
 ## Derive key functions
 <a name="pkcs11-mech-function-derive-key"></a>
 
 The AWS CloudHSM software library for PKCS \#11 library supports the following key derivation mechanisms:
 + `CKM_SP800_108_COUNTER_KDF`
-+ `CKM_ECDH1_DERIVE` - Supports ECDH key derivation with the following vendor-defined KDF types[6](#kdf6):
-  + `CKD_CLOUDHSM_X963_SHA1_KDF` - X9.63 KDF with SHA1[8](#kdf7)
-  + `CKD_CLOUDHSM_X963_SHA224_KDF` - X9.63 KDF with SHA224[8](#kdf7)
-  + `CKD_CLOUDHSM_X963_SHA256_KDF` - X9.63 KDF with SHA256[8](#kdf7)
-  + `CKD_CLOUDHSM_X963_SHA384_KDF` - X9.63 KDF with SHA384[8](#kdf7)
-  + `CKD_CLOUDHSM_X963_SHA512_KDF` - X9.63 KDF with SHA512[8](#kdf7)
++ `CKM_ECDH1_DERIVE` - Supports ECDH key derivation with the following vendor-defined KDF types<sup>[6](#kdf6)</sup>:
+  + `CKD_CLOUDHSM_X963_SHA1_KDF` - X9.63 KDF with SHA1<sup>[8](#kdf7)</sup>
+  + `CKD_CLOUDHSM_X963_SHA224_KDF` - X9.63 KDF with SHA224<sup>[8](#kdf7)</sup>
+  + `CKD_CLOUDHSM_X963_SHA256_KDF` - X9.63 KDF with SHA256<sup>[8](#kdf7)</sup>
+  + `CKD_CLOUDHSM_X963_SHA384_KDF` - X9.63 KDF with SHA384<sup>[8](#kdf7)</sup>
+  + `CKD_CLOUDHSM_X963_SHA512_KDF` - X9.63 KDF with SHA512<sup>[8](#kdf7)</sup>
 
 ## Wrap and Unwrap functions
 <a name="pkcs11-mech-function-wrap-unwrap"></a>
@@ -136,13 +136,13 @@ The AWS CloudHSM software library for PKCS \#11 library allows you to use the fo
 
 For additional information regarding AES key wrapping, see [AES Key Wrapping](manage-aes-key-wrapping.md).
 + `CKM_RSA_PKCS` – single-part operations only. An upcoming change is listed in footnote [5](#mech5).
-+ `CKM_RSA_PKCS_OAEP`[4](#mech4)
-+ `CKM_AES_GCM`[1](#mech1), [3](#mech3)
-+ `CKM_CLOUDHSM_AES_GCM`[3](#mech3)
++ `CKM_RSA_PKCS_OAEP`<sup>[4](#mech4)</sup>
++ `CKM_AES_GCM`<sup>[1](#mech1), [3](#mech3)</sup>
++ `CKM_CLOUDHSM_AES_GCM`<sup>[3](#mech3)</sup>
 + `CKM_RSA_AES_KEY_WRAP`
-+ `CKM_CLOUDHSM_AES_KEY_WRAP_NO_PAD`[3](#mech3)
-+ `CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD`[3](#mech3)
-+ `CKM_CLOUDHSM_AES_KEY_WRAP_ZERO_PAD`[3](#mech3)
++ `CKM_CLOUDHSM_AES_KEY_WRAP_NO_PAD`<sup>[3](#mech3)</sup>
++ `CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD`<sup>[3](#mech3)</sup>
++ `CKM_CLOUDHSM_AES_KEY_WRAP_ZERO_PAD`<sup>[3](#mech3)</sup>
 
 ## Maximum data size for each mechanism
 <a name="pkcs11-mech-max"></a>

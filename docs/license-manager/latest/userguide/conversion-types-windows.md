@@ -64,12 +64,12 @@ The following table confirms which media can be used on which instance licensing
 | --- |--- |--- |
 | AWS provided Windows Server image | No | Yes |
 | AWS provided SQL Server image | No | Yes |
-| Your Windows Server media1 | Yes | Yes |
-| Your SQL Server media2 | Yes | Yes |
+| Your Windows Server media<sup>1</sup> | Yes | Yes |
+| Your SQL Server media<sup>2</sup> | Yes | Yes |
 
-1 Denotes that the instance was originally launched from your own imported virtual machine (VM). You can import your VM using a service such as [VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html) or [AWS Transform MGN](https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html).
+<sup>1</sup> Denotes that the instance was originally launched from your own imported virtual machine (VM). You can import your VM using a service such as [VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html) or [AWS Transform MGN](https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html).
 
-2 Denotes that you have sourced your own SQL Server installation media (.iso, .exe).
+<sup>2</sup> Denotes that you have sourced your own SQL Server installation media (.iso, .exe).
 
 ## Conversion paths
 <a name="conversion-paths"></a>
@@ -99,14 +99,14 @@ Conversions that are specified as "Not needed" won't change the usage operation 
 
 For other conversion scenarios, you might need to take the following steps to perform a license conversion:
 
-1 You must first **install** SQL Server before converting to BYOL for SQL Server.
+<sup>1</sup> You must first **install** SQL Server before converting to BYOL for SQL Server.
 
-2 You must first modify your Windows configuration to use your own KMS server for license activation. For more information, see [Convert Windows Server from license included to BYOL](conversion-procedures-windows.md#convert-to-byol).
+<sup>2</sup> You must first modify your Windows configuration to use your own KMS server for license activation. For more information, see [Convert Windows Server from license included to BYOL](conversion-procedures-windows.md#convert-to-byol).
 
-3 You must first **install** SQL Server when you convert from a source without SQL Server to a target with SQL Server (regardless of the SQL Server license type).
+<sup>3</sup> You must first **install** SQL Server when you convert from a source without SQL Server to a target with SQL Server (regardless of the SQL Server license type).
 
-4 You must first **uninstall** SQL Server when you convert from a source with SQL Server to a target without SQL Server (regardless of the SQL Server license type).
+<sup>4</sup> You must first **uninstall** SQL Server when you convert from a source with SQL Server to a target without SQL Server (regardless of the SQL Server license type).
 
-5 You must first **uninstall** SQL Server before converting to license-included SQL Server.
+<sup>5</sup> You must first **uninstall** SQL Server before converting to license-included SQL Server.
 
-6 You must first perform the steps for 2 and 5. Once these steps are complete, you must convert the license type to Windows Server as license included, and then convert the license type once more to Windows Server as BYOL.
+<sup>6</sup> You must first perform the steps for <sup>2</sup> and <sup>5</sup>. Once these steps are complete, you must convert the license type to Windows Server as license included, and then convert the license type once more to Windows Server as BYOL.

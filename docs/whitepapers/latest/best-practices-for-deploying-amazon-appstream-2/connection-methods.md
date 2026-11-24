@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 | --- | --- | --- |
 |  Multiple monitor (up to 2k resolution)  |  Supported  |  Supported  |
 |  Multiple monitor (up to 4k resolution)  |  N/A  |  Supported  |
-|  Drawing tablet support  |  Supported \*  |  Supported  |
+|  Drawing tablet support  |  Supported <sup>\*</sup>  |  Supported  |
 |  Touchscreen device support  |  Supported  |  N/A  |
 |  USB passthrough device support  |  N/A  |  Supported  |
 |  Keyboard shortcuts  |  Supported  |  Supported  |

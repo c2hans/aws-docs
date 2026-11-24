@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/st
 
 **Topics**
 + [Automatically back up SAP HANA databases using Systems Manager and EventBridge](automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.md)
++ [Configure model invocation logging in Amazon Bedrock by using AWS CloudFormation](configure-bedrock-invocation-logging-cloudformation.md)
 + [Convert and unpack EBCDIC data to ASCII on AWS by using Python](convert-and-unpack-ebcdic-data-to-ascii-on-aws-by-using-python.md)
 + [Convert VARCHAR2(1) data type for Oracle to Boolean data type for Amazon Aurora PostgreSQL](convert-varchar2-1-data-type-for-oracle-to-boolean-data-type-for-amazon-aurora-postgresql.md)
 + [Create an Amazon ECS task definition and mount a file system on EC2 instances using Amazon EFS](create-an-amazon-ecs-task-definition-and-mount-a-file-system-on-ec2-instances-using-amazon-efs.md)

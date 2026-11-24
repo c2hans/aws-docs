@@ -22,4 +22,4 @@ When you monitor your Amazon Aurora databases and your other AWS solutions, your
 + [Monitoring Amazon Aurora log files](USER_LogAccess.md)
 + [Monitoring Amazon Aurora API calls in AWS CloudTrail](logging-using-cloudtrail.md)
 + [Monitoring Amazon Aurora with Database Activity Streams](DBActivityStreams.md)
-+ [Monitoring threats with Amazon GuardDuty RDS Protectionfor Amazon Aurora](guard-duty-rds-protection.md)
++ [Monitoring threats with Amazon GuardDuty RDS Protection for Amazon Aurora](guard-duty-rds-protection.md)

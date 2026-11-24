@@ -26,9 +26,9 @@ Aurora DSQL supports the following PostgreSQL numeric data types.
 | `bigint` | `int8` | -9223372036854775808 to \+9223372036854775807 | 8 bytes | Yes |
 | `real` | `float4` | 6 decimal digits precision | 4 bytes | Yes |
 | `double precision` | `float8` | 15 decimal digits precision | 8 bytes | Yes |
-| `numeric` [ `(`{{p}}, {{s}}`)` ] | `decimal` [ `(`{{p}}, {{s}}`)` ]<br />`dec`[ `(`{{p}},{{s}}`)`] | Exact numeric of selectable precision. The maximum precision is 1000 and scale can be between -1000 and 1000. 1 The default is `numeric (18,6)`. | 8 bytes \+ 2 bytes per group of 4 decimal digits. Maximum size is 510 bytes. | Yes |
+| `numeric` [ `(`{{p}}, {{s}}`)` ] | `decimal` [ `(`{{p}}, {{s}}`)` ]<br />`dec`[ `(`{{p}},{{s}}`)`] | Exact numeric of selectable precision. The maximum precision is 1000 and scale can be between -1000 and 1000. <sup>1</sup> The default is `numeric (18,6)`. | 8 bytes \+ 2 bytes per group of 4 decimal digits. Maximum size is 510 bytes. | Yes |
 
-1 – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
+<sub>1</sub> – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
 
 ## Character data types
 <a name="character-data-types"></a>
@@ -37,14 +37,14 @@ Aurora DSQL supports the following PostgreSQL character data types.
 
 | Name | Aliases | Description | Aurora DSQL limit | Storage size | Index support |
 | --- | --- | --- | --- | --- | --- |
-| `character` [ `(`{{n}}`)` ] | `char` [ `(`{{n}}`)` ] | Fixed-length character string | 4096 bytes1,2  | Variable up to 4100 bytes | Yes |
-| `character varying` [ `(`{{n}}`)` ] | `varchar` [ `(`{{n}}`)` ] | Variable-length character string | 65535 bytes1,2  | Variable up to 65539 bytes | Yes |
-| `bpchar` [ `(`{{n}}`)` ] |  | If fixed length, this is an alias for `char`. If variable length, this is an alias for `varchar`, where trailing spaces are semantically insignificant. | 4096 bytes1,2  | Variable up to 4100 bytes | Yes |
-| `text` |  | Variable-length character string | 1 MiB1,2  | Variable up to 1 MiB | Yes |
+| `character` [ `(`{{n}}`)` ] | `char` [ `(`{{n}}`)` ] | Fixed-length character string | 4096 bytes<sup>1,2</sup>  | Variable up to 4100 bytes | Yes |
+| `character varying` [ `(`{{n}}`)` ] | `varchar` [ `(`{{n}}`)` ] | Variable-length character string | 65535 bytes<sup>1,2</sup>  | Variable up to 65539 bytes | Yes |
+| `bpchar` [ `(`{{n}}`)` ] |  | If fixed length, this is an alias for `char`. If variable length, this is an alias for `varchar`, where trailing spaces are semantically insignificant. | 4096 bytes<sup>1,2</sup>  | Variable up to 4100 bytes | Yes |
+| `text` |  | Variable-length character string | 1 MiB<sup>1,2</sup>  | Variable up to 1 MiB | Yes |
 
-1 – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, then Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
+<sub>1</sub> – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, then Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
 
-2 – Aurora DSQL automatically applies compression to large `text`, `varchar`, and `bpchar` values during `INSERT` and `UPDATE` operations. Aurora DSQL compresses these values only in columns that aren't part of a key. Values in primary key columns and in the key columns of a secondary index are always stored uncompressed.
+<sub>2</sub> – Aurora DSQL automatically applies compression to large `text`, `varchar`, and `bpchar` values during `INSERT` and `UPDATE` operations. Aurora DSQL compresses these values only in columns that aren't part of a key. Values in primary key columns and in the key columns of a secondary index are always stored uncompressed.
 
 To disable compression, use the `STORAGE` keyword. For more information, see [`CREATE TABLE`](create-table-syntax-support.md#create-table-storage) and [`ALTER TABLE`](alter-table-syntax-support.md#alter-table-description).
 
@@ -69,12 +69,12 @@ Aurora DSQL supports the following PostgreSQL network address data types.
 
 | Name | Description | Storage size | Index support |
 | --- | --- | --- | --- |
-| `inet` | IPv4 or IPv6 host address, with an optional subnet | 10 or 22 bytes1 | Yes |
-| `cidr` | IPv4 or IPv6 network in Classless Inter-Domain Routing (CIDR) format | 10 or 22 bytes1 | Yes |
+| `inet` | IPv4 or IPv6 host address, with an optional subnet | 10 or 22 bytes<sup>1</sup> | Yes |
+| `cidr` | IPv4 or IPv6 network in Classless Inter-Domain Routing (CIDR) format | 10 or 22 bytes<sup>1</sup> | Yes |
 | `macaddr` | Media access control (MAC) address in EUI-48 format | 6 bytes | Yes |
 | `macaddr8` | MAC address in EUI-64 format | 8 bytes | Yes |
 
-1 – An IPv4 value uses 10 bytes and an IPv6 value uses 22 bytes. Each size includes a 4-byte header and 2 bytes for the address family and netmask length.
+<sup>1</sup> – An IPv4 value uses 10 bytes and an IPv6 value uses 22 bytes. Each size includes a 4-byte header and 2 bytes for the address family and netmask length.
 
 For more information, see [Network Address Types](https://www.postgresql.org/docs/16/datatype-net-types.html) in the PostgreSQL documentation.
 
@@ -108,14 +108,14 @@ Aurora DSQL supports the following miscellaneous PostgreSQL data types.
 | Name | Aliases | Description | Aurora DSQL limit | Storage size | Index support |
 | --- | --- | --- | --- | --- | --- |
 | `boolean` | `bool` | Logical Boolean (true/false) |  | 1 byte | Yes |
-| `bytea` |  | Binary data ("byte array") | 1 MiB1  | Variable up to 1 MiB limit | No |
+| `bytea` |  | Binary data ("byte array") | 1 MiB<sup>1</sup>  | Variable up to 1 MiB limit | No |
 | `UUID` |  | Universally unique identifier |  | 16 bytes | Yes |
-| `json` |  | JSON data | 1 MiB2 | Variable up to 1 MiB limit.2 | No |
-| `jsonb` |  | Binary JSON data | 1 MiB2 | Variable up to 1 MiB limit.2 | No |
+| `json` |  | JSON data | 1 MiB<sup>2</sup> | Variable up to 1 MiB limit.<sup>2</sup> | No |
+| `jsonb` |  | Binary JSON data | 1 MiB<sup>2</sup> | Variable up to 1 MiB limit.<sup>2</sup> | No |
 
-1 – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, then Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
+<sub>1</sub> – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, then Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
 
-2 – Aurora DSQL automatically applies compression to large `json` and `jsonb` values during `INSERT` and `UPDATE` operations. The 1 MiB limit applies to the compressed size, so you can store `json` and `jsonb` values significantly larger than 1 MiB as long as they compress below the limit.
+<sub>2</sub> – Aurora DSQL automatically applies compression to large `json` and `jsonb` values during `INSERT` and `UPDATE` operations. The 1 MiB limit applies to the compressed size, so you can store `json` and `jsonb` values significantly larger than 1 MiB as long as they compress below the limit.
 
 To disable compression, use the `STORAGE` keyword. For more information, see [`CREATE TABLE`](create-table-syntax-support.md#create-table-storage) and [`ALTER TABLE`](alter-table-syntax-support.md#alter-table-description).
 

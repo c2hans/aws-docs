@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-smart-sifting-
 
 # Troubleshooting
 
-If you run into an error, use the following list to try to troubleshoot the issue. If you need further support, reach out to the SageMaker AI team at sm-smart-sifting-feedback@amazon.com.
+If you run into an error, use the following list to try to troubleshoot the issue. If you need further support, reach out to the SageMaker AI team at [sm-smart-sifting-feedback@amazon.com](mailto:sm-smart-sifting-feedback@amazon.com).
 
 **Exceptions from the SageMaker smart sifting library**
 

@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/userguide/agents-networking.html
+---
+
+ **Help improve this page**
+
+To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
+
+# Control agent networking on Amazon EKS
+
+An agent decides at runtime which hosts to call, often from model output or a prompt, so you can’t predict its destinations from its code. A prompt injection can point it at an attacker’s host, and model-generated code can open any socket the pod allows. Containing that takes controls at more than one level, because each kind of control sees a different part of a connection and none of them sees everything.
+
+Build those controls as independent layers, each of which refuses traffic without relying on another being configured correctly. The following table shows what each layer can see, and what it can’t.
+
+| Layer | Sees and enforces | Can’t see | Page |
+| --- | --- | --- | --- |
+| Network policy | Each connection’s destination address and port, resolved from host names. Agents can’t modify it, and it applies to sandboxed pods. | Anything inside the connection, such as the model, tokens, or tool |  [Restrict agent egress with network policy](agents-network-policies.md)  |
+| Egress gateway | The full request. It budgets tokens per agent, chooses models, applies tool policy, logs every call, and attaches credentials the pod never holds. | Traffic that bypasses it. Only network policy can force agents through it. |  [Route agent egress through a gateway](agents-gateway.md)  |
+| Service mesh | The verified identity of both ends of a call between pods, with mTLS, a record of each connection, and Layer 7 attributes for policy. On the open source path, it can route a workload’s calls to the gateway | Traffic from Nitro Sandbox pods, which it doesn’t capture |  [Choose a service mesh mode for agents](agents-mesh.md)  |
+| Ingress | Inbound requests from outside the cluster, authenticated before they reach an agent | Anything an agent sends |  [Expose an agent through an authenticated Application Load Balancer](agents-ingress.md)  |
+
+The following diagram shows the networking layers. Network policy is on by default. Ingress, the egress gateway, and the mesh are off by default.
+
+![A caller reaches the agent in a Nitro Sandbox pod through optional authenticated ingress. Network policy is always on and limits the agent’s egress, which goes to an optional egress gateway. A service mesh is optional and doesn’t capture Nitro Sandbox pods.](https://docs.aws.amazon.com/eks/latest/userguide/images/agents-networking.png)
+
+## Layers
+<a name="agents-networking-order"></a>
+
+Every agent deployment needs network policy, and it’s the one layer in the base setup from [Set up an Amazon EKS cluster for agent workloads](agents-cluster-setup.md). Combined with an IAM role per agent, it gives each agent its own AWS permissions, a service account token that services trusting the cluster’s OIDC issuer can verify (see [Agent tokens](agents-identity-agent.md#agents-identity-tokens)), and an egress allowlist the agent can’t change. Without a gateway, the allowlist names the Amazon Bedrock runtime endpoint in the cluster’s Region and the AWS endpoints the agent calls with its own credentials. To get the same boundary in your own architecture, turn on network policy enforcement and write the allowlist as a cluster-scoped policy that agent namespaces can’t edit, backed by a default-deny policy in each namespace.
+
+An egress gateway adds the controls that depend on the request, such as per-agent token budgets, model selection or failover, tool-level policy, a single audit log of every call, and third-party tokens kept out of the pod. It’s the usual next layer on both paths, and the two work together: network policy is what makes the gateway mandatory. Once the gateway is the only destination the allowlist names, an agent that ignores its gateway configuration reaches nothing. See [Route agent egress through a gateway](agents-gateway.md).
+
+A mesh adds identity to the traffic between workloads. It gives each connection a verified caller identity, encrypts it with mTLS, and records it, and on the open source path it can route a workload’s calls through the gateway. Today that applies to unsandboxed workloads that run beside the agents, such as MCP and tool servers, in namespaces of their own, because ambient mode doesn’t capture traffic from sandboxed agents. Network policy remains the egress boundary. See [Choose a service mesh mode for agents](agents-mesh.md).
+
+Ingress is the only inbound layer. Agents aren’t reachable from outside the cluster by default, and an agent called only by other agents or on a schedule never needs it. Add it when a person or an external application must call an agent directly. See [Expose an agent through an authenticated Application Load Balancer](agents-ingress.md).
+
+The reference sample turns each layer on with one Terraform variable, and a layer that is off isn’t installed. `enable_network_policy` is on in the base setup in the reference sample. `enable_gateway`, `mesh_mode`, and `enable_ingress` are off until you set them.
+
+## Combinations
+<a name="agents-networking-combinations"></a>
+
+The three egress layers are independent, so any combination is valid. The following table describes four common combinations.
+
+| Network policy | Gateway | Mesh | What you have |
+| --- | --- | --- | --- |
+| On | On | On | Egress only to the gateway, with token budgets, model and tool policy, one audit log, and credentials outside the pod. mTLS, verified identity, and a record of each connection between unsandboxed workloads. Each layer refuses traffic on its own. |
+| On | On | Off | Egress only to the gateway, with token budgets, model and tool policy, one audit log, and credentials outside the pod. No mTLS or workload identity between pods. |
+| On | Off | Off | Egress only to allowlisted destinations. Agents call Amazon Bedrock with their own IAM role and hold any credentials they use. No per-agent token budgets or tool policy. |
+| Off | On | Any | Gateway controls apply only to agents that use the gateway. Nothing limits egress, so an agent that ignores its gateway endpoint can reach any destination. |
+
+## Defense in depth
+<a name="agents-networking-closed"></a>
+
+As you add layers, make sure no layer depends on another being configured correctly. For example, network policy refuses destinations the gateway would also refuse, an execution-tier pod with no network device needs no rule, and an agent that ignores the gateway endpoint can’t reach anything.
+
+Verify each layer after you turn it on. Each page in this section ends with a check that confirms the layer refuses a request it should refuse.

@@ -18,8 +18,8 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | id | string | Yes | Displays the product ID. Referred to by other entities as product\_id. |
 | description | string | Yes | Displays the description of the product. |
-| company\_id1 | string | No | Displays the company ID. |
-| product\_group\_id1 | string | No | Displays the product group ID that this product belongs to.  |
+| company\_id<sup>1</sup> | string | No | Displays the company ID. |
+| product\_group\_id<sup>1</sup> | string | No | Displays the product group ID that this product belongs to.  |
 | product\_type | string | No | Type of product, for example, finished good, component, service, or packaging.  |
 | hts\_code | string | No | Harmonized Tariff Schedule code. |
 | is\_hazmat | string | No | Displays whether product is Hazmat compliant. |
@@ -32,7 +32,7 @@ The table below lists the column names supported by the data entity:
 | is\_expiry\_controlled | string | No | Indicates if the product is an expiry-date controlled product. |
 | creation\_date | timestamp | No | Product launch or release date. |
 | brand\_name | string | No | Product brand name. |
-| parent\_product\_id1 | string | No | If the product is part of a bundle, lists the ID of the parent product. |
+| parent\_product\_id<sup>1</sup> | string | No | If the product is part of a bundle, lists the ID of the parent product. |
 | display\_desc | string | No | External facing description of the product. |
 | discontinue\_day | timestamp | No | Date when the product was discontinued. |
 | base\_uom | string | No | Unit of measure for product. Default is Eaches. |
@@ -66,7 +66,7 @@ The table below lists the column names supported by the data entity:
 | mrp\_enabled | string | No | Identifies parts enabled for planning in MRP. |
 | purchased\_item | string | No | Identifies parts that are purchased. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

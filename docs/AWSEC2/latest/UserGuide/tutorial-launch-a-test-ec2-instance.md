@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-launch-
 | Tutorial objective | Learn how to launch an Amazon EC2 instance that you can use for testing purposes. This instance will have no advanced configuration and won't store sensitive information. You will also learn about the essential instance configuration settings, how to connect to the instance, and how to stop it. |
 | EC2 experience | Beginner |
 | **Duration** | 30 minutes |
-| **Cost** | Free Tier eligible<br />When you create your AWS account, you can get started with Amazon EC2 for free using the [AWS Free Tier](https://aws.amazon.com/free/).<br />If you created your AWS account before July 15, 2025, it's less than 12 months old, and you haven't already exceeded the Free Tier benefits for Amazon EC2, it won't cost you anything to complete this tutorial, because we help you select options that are within the Free Tier benefits. Otherwise, you'll incur the standard Amazon EC2 usage fees from the time that you launch the instance (even if it remains idle) until you terminate it. <br />If you created your AWS account on or after July 15, 2025, it's less than 6 months old, and you haven't used up all your credits, it won't cost you anything to complete this tutorial, because we help you select options that are within the Free Tier benefits.<br />For information on how to determine whether you're eligible for the Free Tier, see [Track your Free Tier usage for Amazon EC2](ec2-free-tier-usage.md). |
+| **Cost** | Free Tier eligible<br />When you create your AWS account, you can get started with Amazon EC2 for free using the [AWS Free Tier](https://aws.amazon.com/free/).<br />If you're eligible for the AWS Free Tier, it won't cost you anything to complete this tutorial, because we help you select options that are within the Free Tier benefits.<br />For information on how to determine whether you're eligible for the Free Tier, see [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md). |
 | Prerequisites | Complete [Tutorial 1: Launch my very first Amazon EC2 instance](tutorial-launch-my-first-ec2-instance.md). |
 
 ## Tutorial overview
@@ -375,7 +375,7 @@ If the command isn't recognized, you must install an SSH client. Instructions fo
 ## Task 9: Stop your instance
 <a name="tut2-task-9-stop-test-ec2-instance"></a>
 
-In this task, you'll stop your instance to preserve your Free Tier benefits. When your instance is stopped, you stop incurring costs for it. If you created your AWS account before July 15, 2025 and you qualify for the Free Tier, you will continue to incur costs for the EBS storage.
+In this task, you'll stop your instance to preserve your Free Tier benefits. When your instance is stopped, you stop incurring costs for it. If you're using the Free Tier, you will continue to use Free Tier credits for the EBS storage.
 
 **Follow these steps to stop your instance**
 
@@ -415,6 +415,4 @@ To build confidence in launching, connecting to, and stopping instances, conside
 
 After you're comfortable with these basics, you can explore more advanced tutorials. For more tutorials, see [Looking for other tutorials?](ec2-instance-launch-tutorials.md#looking-for-other-tutorials)
 
-If you created your AWS account before July 15, 2025, consider watching the following 6-minute video: [How can I avoid charges on my account when using AWS Free Tier services](https://youtu.be/pZLG8McSugQ)
-
-If you created your AWS account on or after July 15, 2025, consider reviewing the following information: [Explore AWS services with AWS Free Tier](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html) in the *AWS Billing User Guide*
+If you're using the AWS Free Tier, consider reviewing the following information: [Explore AWS services with AWS Free Tier](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html) in the *AWS Billing User Guide*

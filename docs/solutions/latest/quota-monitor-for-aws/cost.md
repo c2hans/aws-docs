@@ -42,13 +42,13 @@ We calculated cost per month with the following formula: [monthly fixed cost for
 
 | AWS service | Cost per month [USD] |
 | --- | --- |
-|  **Amazon EventBridge**  | Free 1  |
-|  **AWS Lambda**  | \~ $0.01 2  |
+|  **Amazon EventBridge**  | Free <sup>1</sup>  |
+|  **AWS Lambda**  | \~ $0.01 <sup>2</sup>  |
 |  **Total cost:**  |  **$ 0.01**  |
 
- 1 AWS default service events are free. For more information, refer to [Amazon EventBridge Pricing](https://aws.amazon.com/eventbridge/pricing/).
+ <sup>1</sup> AWS default service events are free. For more information, refer to [Amazon EventBridge Pricing](https://aws.amazon.com/eventbridge/pricing/).
 
- 2 The stack uses Support APIs which are not available under the free developer plan. For more information, refer to [Compare Support Plans](https://aws.amazon.com/premiumsupport/plans).
+ <sup>2</sup> The stack uses Support APIs which are not available under the free developer plan. For more information, refer to [Compare Support Plans](https://aws.amazon.com/premiumsupport/plans).
 
  **Monthly cost for a Service Quotas spoke stack**
 

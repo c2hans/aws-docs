@@ -39,9 +39,9 @@ The following matrix helps you choose the right connector type for your use-case
 | Bandwidth available | 50 MBPS per account | Higher bandwidth, as available from customer owned Resource Gateway and NAT Gateway |
 | Traffic routing to internet over customer-owned NAT Gateways and Network Firewalls | Not supported. NAT Gateways are owned and managed by Transfer Family service. | Supported |
 
-1 *With Egress Type = VPC Lattice, connectivity to publicly hosted servers is supported using the egress infrastructure (NAT Gateways) setup in your egress VPCs.*
+<sup>1</sup> *With Egress Type = VPC Lattice, connectivity to publicly hosted servers is supported using the egress infrastructure (NAT Gateways) setup in your egress VPCs.*
 
-2 *With Egress Type = VPC Lattice, connectivity to privately hosted servers is supported using existing networks in your VPC, such as AWS Direct Connect or VPN.*
+<sup>2</sup> *With Egress Type = VPC Lattice, connectivity to privately hosted servers is supported using existing networks in your VPC, such as AWS Direct Connect or VPN.*
 
 ## Choosing IP addressing mode
 <a name="choosing-ip-address-type"></a>

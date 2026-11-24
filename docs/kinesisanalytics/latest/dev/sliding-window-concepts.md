@@ -16,7 +16,7 @@ Instead of grouping records using `GROUP BY`, you can define a time-based or row
 
 In this case, as the window slides with time, Amazon Kinesis Data Analytics emits an output when new records appear on the stream. Kinesis Data Analytics emits this output by processing rows in the window. Windows can overlap in this type of processing, and a record can be part of multiple windows and be processed with each window. The following example illustrates a sliding window.
 
-Consider a simple query that counts records on the stream. This example assumes a 5-second window. In the following example stream, new records arrive at time t1, t2, t6, and t7, and three records arrive at time t8 seconds.
+Consider a simple query that counts records on the stream. This example assumes a 5-second window. In the following example stream, new records arrive at time t<sub>1</sub>, t<sub>2</sub>, t<sub>6</sub>, and t<sub>7</sub>, and three records arrive at time t<sub>8</sub> seconds.
 
 ![Timeline showing records arriving at times t1, t2, t6, t7, and t8 along a stream.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-10.png)
 
@@ -25,32 +25,32 @@ Keep the following in mind:
 + For every row that enters a window, an output row is emitted by the sliding window. Soon after the application starts, you see the query emit output for every new record that appears on the stream, even though a 5-second window hasn't passed yet. For example, the query emits output when a record appears in the first second and second second. Later, the query processes records in the 5-second window.
 + The windows slide with time. If an old record on the stream falls out of the window, the query doesn't emit output unless there is also a new record on the stream that falls within that 5-second window.
 
-Suppose that the query starts executing at t0. Then the following occurs:
+Suppose that the query starts executing at t<sub>0</sub>. Then the following occurs:
 
-1. At the time t0, the query starts. The query doesn't emit output (count value) because there are no records at this time.
+1. At the time t<sub>0</sub>, the query starts. The query doesn't emit output (count value) because there are no records at this time.
 ![Timeline showing stream at top and time axis below with marker at t0.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t0.png)
 
-1. At time t1, a new record appears on the stream, and the query emits count value 1.
+1. At time t<sub>1</sub>, a new record appears on the stream, and the query emits count value 1.
 ![Timeline showing a stream with a record at time t1 and subsequent time points t2 and t3.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t1.png)
 
-1. At time t2, another record appears, and the query emits count 2.
+1. At time t<sub>2</sub>, another record appears, and the query emits count 2.
 ![Timeline showing stream with two records appearing at times t2 and t3.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t2.png)
 
 1. The 5-second window slides with time:
-   + At t3, the sliding window t3 to t0
-   + At t4 (sliding window t4 to t0)
-   + At t5 the sliding window t5–t0
+   + At t<sub>3</sub>, the sliding window t<sub>3</sub> to t<sub>0</sub>
+   + At t4 (sliding window t<sub>4</sub> to t<sub>0</sub>)
+   + At t<sub>5</sub> the sliding window t<sub>5</sub>–t<sub>0</sub>
 
    At all of these times, the 5-second window has the same records—there are no new records. Therefore, the query doesn't emit any output.
 ![Stream timeline showing a 5-second window at multiple time points with two records remaining constant.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t3-4-5.png)
 
-1. At time t6, the 5-second window is (t6 to t1). The query detects one new record at t6 so it emits output 2. The record at t1 is no longer in the window and doesn't count.
+1. At time t<sub>6</sub>, the 5-second window is (t<sub>6</sub> to t<sub>1</sub>). The query detects one new record at t<sub>6</sub> so it emits output 2. The record at t<sub>1</sub> is no longer in the window and doesn't count.
 ![Timeline showing stream with records at t1 and t6, illustrating a 5-second sliding window.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t6.png)
 
-1. At time t7, the 5-second window is t7 to t2. The query detects one new record at t7 so it emits output 2. The record at t2 is no longer in the 5-second window, and therefore isn't counted.
+1. At time t<sub>7</sub>, the 5-second window is t<sub>7</sub> to t<sub>2</sub>. The query detects one new record at t<sub>7</sub> so it emits output 2. The record at t<sub>2</sub> is no longer in the 5-second window, and therefore isn't counted.
 ![Timeline showing a stream with time points t2 through t7, illustrating a sliding window.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t7.png)
 
-1. At time t8, the 5-second window is t8 to t3. The query detects three new records, and therefore emits record count 5.
+1. At time t<sub>8</sub>, the 5-second window is t<sub>8</sub> to t<sub>3</sub>. The query detects three new records, and therefore emits record count 5.
 ![Timeline showing stream with three records appearing at different time points t6, t5, and t4.](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/sliding-t8.png)
 
 In summary, the window is a fixed size and slides with time. The query emits output when new records appear.

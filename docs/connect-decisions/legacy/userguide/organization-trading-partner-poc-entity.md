@@ -16,7 +16,7 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| tpartner\_id 1 | string | Yes | Partner ID. Referred to by other entities as tpartner\_id unless explicitly stated otherwise. |
+| tpartner\_id <sup>1</sup> | string | Yes | Partner ID. Referred to by other entities as tpartner\_id unless explicitly stated otherwise. |
 | email | string | Yes | Partner's email ID. |
 | poc\_first\_name | string | No | Partner's first name. |
 | poc\_last\_name | string | No | Partner's last name. |
@@ -26,7 +26,7 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

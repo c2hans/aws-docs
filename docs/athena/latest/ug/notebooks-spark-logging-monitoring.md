@@ -14,7 +14,7 @@ With managed logging and S3 logging, the following table lists the log locations
 | Both managed logging and S3 bucket | Stored in both places | Stored in S3 bucket | Supported |
 | Amazon S3 bucket | Stored in S3 bucket | Stored in S3 bucket | Not supported1 |
 
-1 We suggest that you keep the Managed logging option selected. Otherwise, you can't use the built-in application UIs.
+<sup>1</sup> We suggest that you keep the Managed logging option selected. Otherwise, you can't use the built-in application UIs.
 
 ## Managed logging
 <a name="notebooks-spark-logging-monitoring-managed"></a>

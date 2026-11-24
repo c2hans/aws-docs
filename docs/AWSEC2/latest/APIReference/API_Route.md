@@ -44,6 +44,11 @@ The ID of a gateway attached to your VPC.
 Type: String
 Required: No
 
+ ** igwFirewall **
+Information about the Automated Internet Firewall that inspects traffic for this route. The response includes this value only for routes that target an internet gateway or egress-only internet gateway in a VPC that has a firewall. The route target remains the internet gateway or egress-only internet gateway.
+Type: [IgwFirewall](API_IgwFirewall.md) object
+Required: No
+
  ** instanceId **
 The ID of a NAT instance in your VPC.
 Type: String

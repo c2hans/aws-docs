@@ -49,16 +49,16 @@ The first column in the following table lists usage types that appear in your bi
 | `{{region}}-CloudFront-In-Bytes` | GB | Hourly | The amount of data transferred into an AWS Region from a CloudFront distribution |
 | `{{region}}-CloudFront-Out-Bytes` | GB | Hourly | The amount of data transferred from an AWS Region to a CloudFront distribution |
 | `{{region}}-DataTransfer-In-Bytes` | GB | Hourly | The amount of data transferred into Amazon S3 from the internet |
-| `{{region}}-DataTransfer-Out-Bytes` | GB | Hourly | The amount of data transferred from Amazon S3 to the internet1 |
+| `{{region}}-DataTransfer-Out-Bytes` | GB | Hourly | The amount of data transferred from Amazon S3 to the internet<sup>1</sup> |
 | `{{region}}-DataTransfer-Regional-Bytes` | GB | Hourly | The amount of data transferred from Amazon S3 to AWS resources within the same AWS Region |
-| `{{region}}-EarlyDelete-ByteHrs` | GB-Hours | Hourly | Prorated storage usage for objects deleted from, S3 Glacier Flexible Retrieval storage before the 90-day minimum commitment ended2 |
-| `{{region}}-EarlyDelete-GDA` | GB-Hours | Hourly | Prorated storage usage for objects deleted from S3 Glacier Deep Archive storage before the 180-day minimum commitment ended 2 |
+| `{{region}}-EarlyDelete-ByteHrs` | GB-Hours | Hourly | Prorated storage usage for objects deleted from, S3 Glacier Flexible Retrieval storage before the 90-day minimum commitment ended<sup>2</sup> |
+| `{{region}}-EarlyDelete-GDA` | GB-Hours | Hourly | Prorated storage usage for objects deleted from S3 Glacier Deep Archive storage before the 180-day minimum commitment ended <sup>2</sup> |
 | `{{region}}-EarlyDelete-GIR` | GB-Hours | Hourly | Prorated storage usage for objects deleted or transitioned from S3 Glacier Instant Retrieval before the 90-day minimum commitment ended. |
 | `{{region}}-EarlyDelete-GIR-SmObjects` | GB-Hours | Hourly | Prorated storage usage for small objects (smaller than 128 KB) that were deleted from S3 Glacier Instant Retrieval before the 90-day minimum commitment ended. |
-| `{{region}}-EarlyDelete-SIA` | GB-Hours | Hourly | Prorated storage usage for objects deleted from S3 Standard-IA before the 30-day minimum commitment ended3 |
-| `{{region}}-EarlyDelete-SIA-SmObjects` | GB-Hours | Hourly | Prorated storage usage for small objects (smaller than 128 KB) that were deleted from S3 Standard-IA before the 30-day minimum commitment ended3 |
-| `{{region}}-EarlyDelete-ZIA` | GB-Hours | Hourly | Prorated storage usage for objects deleted from S3 One Zone-IA before the 30-day minimum commitment ended3 |
-| `{{region}}-EarlyDelete-ZIA-SmObjects` | GB-Hours | Hourly | Prorated storage usage for small objects (smaller than 128 KB) that were deleted from S3 One Zone-IA before the 30-day minimum commitment ended3 |
+| `{{region}}-EarlyDelete-SIA` | GB-Hours | Hourly | Prorated storage usage for objects deleted from S3 Standard-IA before the 30-day minimum commitment ended<sup>3</sup> |
+| `{{region}}-EarlyDelete-SIA-SmObjects` | GB-Hours | Hourly | Prorated storage usage for small objects (smaller than 128 KB) that were deleted from S3 Standard-IA before the 30-day minimum commitment ended<sup>3</sup> |
+| `{{region}}-EarlyDelete-ZIA` | GB-Hours | Hourly | Prorated storage usage for objects deleted from S3 One Zone-IA before the 30-day minimum commitment ended<sup>3</sup> |
+| `{{region}}-EarlyDelete-ZIA-SmObjects` | GB-Hours | Hourly | Prorated storage usage for small objects (smaller than 128 KB) that were deleted from S3 One Zone-IA before the 30-day minimum commitment ended<sup>3</sup> |
 | `{{region}}-Expedited-Retrieval-Bytes` | GB | Hourly | The amount of data retrieved with Expedited S3 Glacier Flexible Retrieval requests |
 | `Global-Bucket-Hrs-FreeTier` | Bucket | Monthly | The number of general purpose buckets in your account within the 2000 bucket account-level free tier |
 | `Global-Bucket-Hrs` | Bucket | Monthly | The number of general purpose buckets in your account beyond the 2000 bucket account-level free tier |
@@ -91,13 +91,13 @@ The first column in the following table lists usage types that appear in your bi
 | `{{region}}-Annotation-TimedStorage-ByteHrs` | GB-Month | Daily | Storage for annotations, billed at the Amazon S3 Standard rate |
 | `{{region}}-Requests-Annotation-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, `POST`, and `LIST` requests for annotations (`PutObjectAnnotation`, `ListObjectAnnotations`). Billed per 1,000 requests. |
 | `{{region}}-Requests-Annotation-Tier2` | Count | Hourly | The number of `GET` requests for annotations (`GetObjectAnnotation`). Billed per 1,000 requests. |
-| `{{region}}-Requests-GDA-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, `POST`, `CreateMultipartUpload`, `UploadPart`, or `CompleteMultipartUpload` requests on S3 Glacier Deep Archive objects 6 |
+| `{{region}}-Requests-GDA-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, `POST`, `CreateMultipartUpload`, `UploadPart`, or `CompleteMultipartUpload` requests on S3 Glacier Deep Archive objects <sup>6</sup> |
 | `{{region}}-Requests-GDA-Tier2` | Count | Hourly | The number of `GET` and `HEAD` requests on S3 Glacier Deep Archive objects |
 | `{{region}}-Requests-GDA-Tier3` | Count | Hourly | The number of S3 Glacier Deep Archive standard restore requests |
 | `{{region}}-Requests-GDA-Tier5` | Count | Hourly | The number of Bulk S3 Glacier Deep Archive restore requests |
 | `{{region}}-Requests-GIR-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, or `POST` requests on S3 Glacier Instant Retrieval objects. |
 | `{{region}}-Requests-GIR-Tier2` | Count | Hourly | The number of `GET` and all other non-S3 Glacier Instant Retrieval-Tier1 requests on S3 Glacier Instant Retrieval objects. |
-| `{{region}}-Requests-GLACIER-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, `POST`, `CreateMultipartUpload`, `UploadPart`, or `CompleteMultipartUpload` requests on S3 Glacier Flexible Retrieval objects 6 |
+| `{{region}}-Requests-GLACIER-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, `POST`, `CreateMultipartUpload`, `UploadPart`, or `CompleteMultipartUpload` requests on S3 Glacier Flexible Retrieval objects <sup>6</sup> |
 | `{{region}}-Requests-GLACIER-Tier2` | Count | Hourly | The number of GET and all other requests not listed on S3 Glacier Flexible Retrieval objects |
 | `{{region}}-Requests-INT-Tier1` | Count | Hourly | The number of `PUT`, `COPY`, or `POST` requests on S3 Intelligent-Tiering objects |
 | `{{region}}-Requests-INT-Tier2` | Count | Hourly | The number of `GET` and all other non-Tier1 requests for S3 Intelligent-Tiering objects |
@@ -152,14 +152,14 @@ The first column in the following table lists usage types that appear in your bi
 | `{{region}}-TimedStorage-GIR-SmObjects` | GB-Month | Daily | The number of GB-months that small objects (smaller than 128 KB) were stored in S3 Glacier Instant Retrieval storage. |
 | `{{region}}-TimedStorage-GlacierByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in S3 Glacier Flexible Retrieval storage |
 | `{{region}}-TimedStorage-GlacierStaging` | GB-Month | Daily | The number of GB-months that data was stored in S3 Glacier Flexible Retrieval staging storage |
-| `{{region}}-TimedStorage-INT-FA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in the Frequent Access tier of S3 Intelligent-Tiering storage5 |
+| `{{region}}-TimedStorage-INT-FA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in the Frequent Access tier of S3 Intelligent-Tiering storage<sup>5</sup> |
 | `{{region}}-TimedStorage-INT-IA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in the Infrequent Access tier of S3 Intelligent-Tiering storage |
 | `{{region}}-TimedStorage-INT-AA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in the Archive Access tier of S3 Intelligent-Tiering storage |
 | `{{region}}-TimedStorage-INT-AIA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in the Archive Instant Access tier of S3 Intelligent-Tiering storage |
 | `{{region}}-TimedStorage-INT-DAA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in the Deep Archive Access tier of S3 Intelligent-Tiering storage |
 | `{{region}}-TimedStorage-RRS-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in Reduced Redundancy Storage (RRS) storage |
 | `{{region}}-TimedStorage-SIA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in S3 Standard-IA storage |
-| `{{region}}-TimedStorage-SIA-SmObjects` | GB-Month | Daily | The number of GB-months that small objects (smaller than 128 KB) were stored in S3 Standard-IA storage4 |
+| `{{region}}-TimedStorage-SIA-SmObjects` | GB-Month | Daily | The number of GB-months that small objects (smaller than 128 KB) were stored in S3 Standard-IA storage<sup>4</sup> |
 | `{{region}}-TimedStorage-XZ-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in S3 Express One Zone storage |
 | `{{region}}-TimedStorage-ZIA-ByteHrs` | GB-Month | Daily | The number of GB-months that data was stored in S3 One Zone-IA storage |
 | `{{region}}-TimedStorage-ZIA-SmObjects` | GB-Month | Daily | The number of GB-months that small objects (smaller than 128 KB) were stored in S3 One Zone-IA storage |

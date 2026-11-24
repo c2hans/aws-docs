@@ -127,6 +127,6 @@ AWS Microservice Extractor for .NET collects the following files from `C:\Users\
 ## Questions and feedback
 <a name="troubleshooting-questions"></a>
 
-If you have questions that are not addressed in the AWS Microservice Extractor for .NET technical documentation, contact aws-microservice-extractor-support@amazon.com.
+If you have questions that are not addressed in the AWS Microservice Extractor for .NET technical documentation, contact [aws-microservice-extractor-support@amazon.com](mailto:aws-microservice-extractor-support@amazon.com).
 
 You can also provide feedback by choosing **Feedback** in the upper right-hand corner of this page.

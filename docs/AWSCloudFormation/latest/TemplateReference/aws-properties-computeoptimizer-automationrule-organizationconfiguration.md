@@ -19,6 +19,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```json
 {
   "[AccountIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-accountids)" : {{[ String, ... ]}},
+  "[ExcludedAccountIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-excludedaccountids)" : {{[ String, ... ]}},
+  "[ExcludedOrganizationalUnitIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-excludedorganizationalunitids)" : {{[ String, ... ]}},
+  "[OrganizationalUnitIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-organizationalunitids)" : {{[ String, ... ]}},
   "[RuleApplyOrder](#cfn-computeoptimizer-automationrule-organizationconfiguration-ruleapplyorder)" : {{String}}
 }
 ```
@@ -28,6 +31,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```yaml
   [AccountIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-accountids): {{
+    - String}}
+  [ExcludedAccountIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-excludedaccountids): {{
+    - String}}
+  [ExcludedOrganizationalUnitIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-excludedorganizationalunitids): {{
+    - String}}
+  [OrganizationalUnitIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-organizationalunitids): {{
     - String}}
   [RuleApplyOrder](#cfn-computeoptimizer-automationrule-organizationconfiguration-ruleapplyorder): {{String}}
 ```
@@ -41,6 +50,30 @@ The specific AWS account IDs where the organization rule should be applied. You 
 *Type*: Array of String
 *Minimum*: `1`
 *Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ExcludedAccountIds`  <a name="cfn-computeoptimizer-automationrule-organizationconfiguration-excludedaccountids"></a>
+The AWS account IDs to exclude from the organization rule scope. You can specify up to 50 account IDs. An excluded account remains excluded even if it is in an included OU.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ExcludedOrganizationalUnitIds`  <a name="cfn-computeoptimizer-automationrule-organizationconfiguration-excludedorganizationalunitids"></a>
+The organizational unit (OU) or organization root IDs to exclude from the organization rule scope. The rule doesn't apply to accounts in the specified OUs or their child OUs. You can specify up to 150 IDs.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OrganizationalUnitIds`  <a name="cfn-computeoptimizer-automationrule-organizationconfiguration-organizationalunitids"></a>
+The organizational unit (OU) or organization root IDs to include in the organization rule scope. The rule applies to accounts in the specified OUs and their child OUs. You can specify up to 150 IDs.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `150`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RuleApplyOrder`  <a name="cfn-computeoptimizer-automationrule-organizationconfiguration-ruleapplyorder"></a>

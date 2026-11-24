@@ -107,7 +107,7 @@ If you use a customer managed key (CMK) to encrypt your mTLS trust store, the fo
 ## Permission policies for SMTP relay
 <a name="eb-policies-relay"></a>
 
-Both of the polices in this section are required to create an SMTP relay. To learn how to create an SMTP relay and where to use these policies, see [Creating an SMTP relay in the SES console](eb-relay.md#eb-relay-create-console).
+Both of the polices in this section are required to create an SMTP relay. To learn how to create an SMTP relay and where to use these policies, see [Creating and managing an SMTP relay](eb-relay.md#eb-relay-create-console).
 
 ### Secrets Manager secrets resource permission policy for SMTP relay
 <a name="eb-policies-relay-secrets"></a>

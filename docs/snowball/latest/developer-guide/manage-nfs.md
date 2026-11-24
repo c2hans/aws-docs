@@ -71,7 +71,7 @@ The NFS interface is not running on the Snowball Edge device by default, so you 
 You can also have the Snowball Edge device configure the NFS interface automatically. For more information, see [Configuring the NFS interface automatically with AWS OpsHub](#auto-configure-nfs).
 
 1. At the bottom of **Transfer data** section, on the dashboard, choose **Configure manually**.
-[![AWS Videos](https://img.youtube.com/vi/StMa2A7X2yA/0.jpg)](https://www.youtube.com/watch?v=StMa2A7X2yA)
+[![AWS Videos](https://img.youtube.com/vi/StMa2A7X2yA/0.jpg)](https://www.youtube.com/watch?v=StMa2A7X2yA&t=78s)
 
 1. Choose **Enable & start** to open the **Start NFS** wizard. The **Physical network interface** field is populated. ![The Start NFS wizard](https://docs.aws.amazon.com/snowball/latest/developer-guide/images/opshub-nfs-console.png)
 

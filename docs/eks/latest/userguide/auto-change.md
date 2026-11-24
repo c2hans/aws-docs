@@ -16,6 +16,15 @@ To receive notifications of all source file changes to this specific documentati
 https://github.com/awsdocs/amazon-eks-user-guide/commits/mainline/latest/ug/automode/auto-change.adoc.atom
 ```
 
+## November 23, 2026
+<a name="_november_23_2026"></a>
+
+ **Feature**: Amazon EKS Auto Mode now supports Amazon EC2 G7 instances, which have NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. G7 instances require NVIDIA driver version 595 or later. EKS Auto Mode nodes select the NVIDIA driver version for EC2 GPU instances at boot time.
+
+G7 support in EKS Auto Mode is available on all Kubernetes versions that EKS Auto Mode supports. It is available in all AWS Regions where G7 instances are available.
+
+For more information, see [EKS Auto Mode supported instance reference](automode-learn-instances.md#auto-supported-instances) and [Deploy an accelerated workload](auto-accelerated.md).
+
 ## November 9, 2026
 <a name="_november_9_2026"></a>
 

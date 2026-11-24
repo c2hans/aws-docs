@@ -10,4 +10,4 @@ Amazon Aurora DSQL is a serverless, distributed SQL database suitable for worklo
 
 To investigate cluster cost and performance, such as database load, top SQL statements, and wait events, use Amazon CloudWatch Database Insights. For more information, see [Monitoring Aurora DSQL clusters with Aurora DSQL Database Insights](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/dsql-db-insights.html) in the *Aurora DSQL User Guide*.
 
-This document was last published on November 23, 2026.
+This document was last published on November 24, 2026.

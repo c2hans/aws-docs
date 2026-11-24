@@ -267,7 +267,7 @@ File name: 'Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0
 ## Can I disable FluentBit?
 <a name="Application-Signals-troubleshoot-FluentBit"></a>
 
-You can disable FluentBit by configuring the Amazon CloudWatch Observability EKS add-on. For more information, see [(Optional) Additional configuration](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
+You can disable FluentBit by configuring the Amazon CloudWatch Observability EKS add-on. For more information, see [(Optional) Configuring Enhanced Container Insights (Classic) and Fluent Bit](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
 
 ## Can I filter container logs before exporting to CloudWatch Logs?
 <a name="Application-Signals-troubleshoot-filter-logs"></a>

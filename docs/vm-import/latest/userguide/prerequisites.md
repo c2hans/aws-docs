@@ -143,34 +143,34 @@ The following Windows operating systems are supported by VM Import/Export.<a nam
 | Windows Server 2003 (Service Pack 1 or later) | Standard, Datacenter, Enterprise | 32, 64 | No |
 | Windows Server 2003 R2 | Standard, Datacenter, Enterprise | 32, 64 | No |
 | Windows Server 2008 | Standard, Datacenter, Enterprise | 32, 64 | No |
-| Windows Server 2008 R2 | Standard, Web Server, Datacenter, Enterprise | 64 | Yes 5 |
-| Windows Server 2012 | Standard, Datacenter | 64 | Yes 5 |
-| Windows Server 2012 R2 | Standard, Datacenter | 64 | Yes 5 |
-| Windows Server 2016 | Standard, Datacenter 3 | 64 | Yes 5 |
-| Windows Server 1709 | Standard, Datacenter | 64 | Yes 5 |
-| Windows Server 1803 | Standard, Datacenter | 64 | Yes 5 |
-| Windows Server 2019 | Standard, Datacenter | 64 | Yes 5 |
-| Windows Server 2022 | Standard, Datacenter | 64 | Yes 5,6 |
+| Windows Server 2008 R2 | Standard, Web Server, Datacenter, Enterprise | 64 | Yes <sup>5</sup> |
+| Windows Server 2012 | Standard, Datacenter | 64 | Yes <sup>5</sup> |
+| Windows Server 2012 R2 | Standard, Datacenter | 64 | Yes <sup>5</sup> |
+| Windows Server 2016 | Standard, Datacenter <sup>3</sup> | 64 | Yes <sup>5</sup> |
+| Windows Server 1709 | Standard, Datacenter | 64 | Yes <sup>5</sup> |
+| Windows Server 1803 | Standard, Datacenter | 64 | Yes <sup>5</sup> |
+| Windows Server 2019 | Standard, Datacenter | 64 | Yes <sup>5</sup> |
+| Windows Server 2022 | Standard, Datacenter | 64 | Yes <sup>5,</sup><sup>6</sup> |
 | Windows Server 2025 | Standard, Datacenter | 64 | Yes 5,6 |
-| Windows 7 1 | Home, Professional, Enterprise, Ultimate | 32, 64 4 | Yes 5 |
-| Windows 8 1 | Home, Professional, Enterprise | 32, 64 4 | Yes 5 |
-| Windows 8.1 1 | Professional, Enterprise | 64 | Yes 5 |
-| Windows 10 1 | Home, Professional, Enterprise, Education | 64 | Yes 5 |
-| Windows 11 1,2 | Home, Professional, Enterprise, Education | 64 | Yes 5,7 |
+| Windows 7 <sup>1</sup> | Home, Professional, Enterprise, Ultimate | 32, 64 <sup>4</sup> | Yes <sup>5</sup> |
+| Windows 8 <sup>1</sup> | Home, Professional, Enterprise | 32, 64 <sup>4</sup> | Yes <sup>5</sup> |
+| Windows 8.1 <sup>1</sup> | Professional, Enterprise | 64 | Yes <sup>5</sup> |
+| Windows 10 <sup>1</sup> | Home, Professional, Enterprise, Education | 64 | Yes <sup>5</sup> |
+| Windows 11 <sup>1,</sup><sup>2</sup> | Home, Professional, Enterprise, Education | 64 | Yes <sup>5,</sup><sup>7</sup> |
 
-1 The operating system must have its language set as `US English` during import.
+<sup>1</sup> The operating system must have its language set as `US English` during import.
 
-2 Windows 11 requires the Unified Extensible Firmware Interface (UEFI) boot mode to function. To help ensure a successful import of your VM, we recommend that you specify the optional `--boot-mode` parameter as `uefi`. For more information, see [Boot modes supported by VM Import/Export](#vmimport-boot-modes).
+<sup>2</sup> Windows 11 requires the Unified Extensible Firmware Interface (UEFI) boot mode to function. To help ensure a successful import of your VM, we recommend that you specify the optional `--boot-mode` parameter as `uefi`. For more information, see [Boot modes supported by VM Import/Export](#vmimport-boot-modes).
 
-3 Nano Server installations are not supported.
+<sup>3</sup> Nano Server installations are not supported.
 
-4 Only the 64-bit version of the OS is supported when launching instances within non-default AWS Regions. For more information, see [Available Regions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions) in the *Amazon EC2 User Guide*.
+<sup>4</sup> Only the 64-bit version of the OS is supported when launching instances within non-default AWS Regions. For more information, see [Available Regions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions) in the *Amazon EC2 User Guide*.
 
-5 You must first enable the Region before you can use the operating system there. For more information, see [Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
+<sup>5</sup> You must first enable the Region before you can use the operating system there. For more information, see [Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 
-6 Windows Server 2022 and Windows Server 2025 are not supported in the China (Beijing) and China (Ningxia) Regions.
+<sup>6</sup> Windows Server 2022 and Windows Server 2025 are not supported in the China (Beijing) and China (Ningxia) Regions.
 
-7 Windows 11 isn't supported in the Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Melbourne), China (Beijing), China (Ningxia), Europe (Spain), Europe (Zurich), and Middle East (UAE) Regions.
+<sup>7</sup> Windows 11 isn't supported in the Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Melbourne), China (Beijing), China (Ningxia), Europe (Spain), Europe (Zurich), and Middle East (UAE) Regions.
 
 ## Boot modes supported by VM Import/Export
 <a name="vmimport-boot-modes"></a>

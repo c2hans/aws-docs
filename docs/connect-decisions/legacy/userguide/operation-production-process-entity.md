@@ -19,9 +19,9 @@ The table below lists the column names supported by the data entity:
 | production\_process\_id | string | Yes | ID associated with the process and product. |
 | production\_process\_type | string | No | Type of the specific production process. For example, assembly, machining. |
 | production\_process\_name | string | No | Name of the specific production process. For example, milling, drilling, welding. |
-| product\_id1 | string | No | Product associated with the production process. |
-| company\_id1 | string | No | Company ID associated with the production process. |
-| site\_id1 | string | No | Site ID where the production process is taking place. |
+| product\_id<sup>1</sup> | string | No | Product associated with the production process. |
+| company\_id<sup>1</sup> | string | No | Company ID associated with the production process. |
+| site\_id<sup>1</sup> | string | No | Site ID where the production process is taking place. |
 | start\_location | string | No | Location where the process starts. |
 | end\_location | string | No | Location where the process ends. |
 | setup\_time | double | No | Time to setup the process. |
@@ -36,7 +36,7 @@ The table below lists the column names supported by the data entity:
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 | source\_event\_id | string | No | ID of the event created in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

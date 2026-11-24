@@ -572,7 +572,7 @@ For more information about managing a private marketplace, see [Working with a p
 
 To allow a user or role to add, remove, and list tags on all entities or change sets, they need the following IAM policy.
 
-``` json
+```json
 {
   "Statement": [
     {

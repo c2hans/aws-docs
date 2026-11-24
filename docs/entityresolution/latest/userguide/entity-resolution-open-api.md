@@ -14,7 +14,7 @@ The OpenAPI definition contains the following API operations:
 + `POST MapIdentities`
 + `GET Schema`
 
-To request the OpenAPI specification, contact the AWS Entity Resolution Business Development team at aws-entity-resolution-bd@amazon.com.
+To request the OpenAPI specification, contact the AWS Entity Resolution Business Development team at [aws-entity-resolution-bd@amazon.com](mailto:aws-entity-resolution-bd@amazon.com).
 
 The OpenAPI specification support two types of integrations for both encoding and transcoding consumer identifiers batch processing and synchronous processing. After you have obtained the OpenAPI specification, implement the type of processing integration for your use case.
 

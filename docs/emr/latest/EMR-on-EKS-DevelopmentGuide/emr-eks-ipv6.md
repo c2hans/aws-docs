@@ -134,13 +134,13 @@ The following table shows IPv6 support by submission model and Amazon EMR releas
 | StartJobRun | ✅ Supported | ✅ Supported | ✅ Supported |
 | Spark Connect Interactive Endpoints | ✅ Supported | ✅ Supported | ✅ Supported |
 | Amazon SageMaker Unified Studio | ✅ Supported | ✅ Supported | ✅ Supported |
-| Spark Operator | ✅ Supported1,​2 | ❌ Not supported | ✅ Supported2 |
-| Flink Operator | ✅ Supported1 | N/A | N/A |
-| Livy Operator | ✅ Supported2 | ✅ Supported2 | ✅ Supported2 |
+| Spark Operator | ✅ Supported<sup>1,​2</sup> | ❌ Not supported | ✅ Supported<sup>2</sup> |
+| Flink Operator | ✅ Supported<sup>1</sup> | N/A | N/A |
+| Livy Operator | ✅ Supported<sup>2</sup> | ✅ Supported<sup>2</sup> | ✅ Supported<sup>2</sup> |
 
-1 Requires the `KUBERNETES_DISABLE_HOSTNAME_VERIFICATION` workaround described in the preceding section for this submission model.
+<sup>1</sup> Requires the `KUBERNETES_DISABLE_HOSTNAME_VERIFICATION` workaround described in the preceding section for this submission model.
 
-2 Requires additional configuration described in the preceding section for this submission model.
+<sup>2</sup> Requires additional configuration described in the preceding section for this submission model.
 
 ## Troubleshooting EMR on EKS IPv6 clusters
 <a name="emr-eks-ipv6-troubleshooting"></a>

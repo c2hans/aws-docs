@@ -30,9 +30,9 @@ To authorize access to KMS keys based on their tags and aliases, use the followi
 | [kms:ResourceAliases](conditions-kms.md#conditions-kms-resource-aliases) | Aliases associated with the KMS key match the aliases or alias patterns in the policy | IAM policy only | KMS key resource operations 2 |
 | [kms:RequestAlias](conditions-kms.md#conditions-kms-request-alias) | Alias that represents the KMS key in the request matches the alias or alias patterns in the policy. | Key policy and IAM policies1 | [Cryptographic operations](kms-cryptography.md#cryptographic-operations), [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html), [GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) |
 
-1Any condition key that can be used in a key policy can also be used in an IAM policy, but only if [the key policy allows it](key-policy-default.md#key-policy-default-allow-root-enable-iam).
+<sup>1</sup>Any condition key that can be used in a key policy can also be used in an IAM policy, but only if [the key policy allows it](key-policy-default.md#key-policy-default-allow-root-enable-iam).
 
-2A *KMS key resource operation* is an operation authorized for a particular KMS key. To identify the KMS key resource operations, in the [AWS KMS permissions table](kms-api-permissions-reference.md#kms-api-permissions-reference-table), look for a value of KMS key in the `Resources` column for the operation.
+<sup>2</sup>A *KMS key resource operation* is an operation authorized for a particular KMS key. To identify the KMS key resource operations, in the [AWS KMS permissions table](kms-api-permissions-reference.md#kms-api-permissions-reference-table), look for a value of KMS key in the `Resources` column for the operation.
 
 For example, you can use these condition keys to create the following policies.
 + An IAM policy with `kms:ResourceAliases` that allows permission to use KMS keys with a particular alias or alias pattern. This is a bit different from policies that rely on tags: Although you can use alias patterns in a policy, each alias must be unique in an AWS account and Region. This allows you to apply a policy to a select set of KMS keys without listing the key ARNs of the KMS keys in the policy statement. To add or remove KMS keys from the set, change the alias of the KMS key.

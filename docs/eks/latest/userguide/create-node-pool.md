@@ -121,6 +121,7 @@ EKS Auto Mode uses different labels than Karpenter. Labels related to EC2 manage
 | eks.amazonaws.com/instance-gpu-manufacturer | nvidia | Name of the GPU manufacturer |
 | eks.amazonaws.com/instance-gpu-count | 1 | Number of GPUs on the instance |
 | eks.amazonaws.com/instance-gpu-memory | 16384 | Number of mebibytes of memory on the GPU |
+| nvidia.com/gpu.present | true | Whether the instance has NVIDIA GPUs. Present only on instance types with NVIDIA GPUs. |
 | eks.amazonaws.com/instance-accelerator-name | trainium | Name of the AWS accelerator on the instance, if available |
 | eks.amazonaws.com/instance-accelerator-manufacturer | aws | Name of the accelerator manufacturer |
 | eks.amazonaws.com/instance-accelerator-count | 1 | Number of accelerators on the instance |

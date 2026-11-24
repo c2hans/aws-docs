@@ -14,7 +14,7 @@ To use a rule group in a protection pack (web ACL), you add it to the protection
 Before you deploy changes in your protection pack (web ACL) for production traffic, test and tune them in a staging or testing environment until you are comfortable with the potential impact to your traffic. Then test and tune your updated rules in count mode with your production traffic before enabling them. For guidance, see [Testing and tuning your AWS WAF protections](web-acl-testing.md).
 
 **Note**
-Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond the basic protection pack (web ACL) price. For more information, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md) and [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
+For information about WCUs, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md). For pricing details, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
 **To use a rule group**
 

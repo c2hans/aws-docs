@@ -327,7 +327,7 @@ Add the `s3-transfer-manager` artifact to your project:
 </dependencies>
 ```
 
-1 [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ##### Imports
 <a name="get-presigned-tm-imports"></a>

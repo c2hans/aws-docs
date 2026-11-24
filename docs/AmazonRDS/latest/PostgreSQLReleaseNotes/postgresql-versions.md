@@ -33,11 +33,47 @@ To learn more about versioning policy for RDS for PostgreSQL, see [Amazon RDS FA
 <a name="postgresql-version19"></a>
 
 **Topics**
++ [PostgreSQL version 19.0 in the Amazon RDS Preview environment](#postgresql-versions-version190Preview)
 + [PostgreSQL version 19 RC1 in the Amazon RDS Preview environment](#postgresql-versions-version19RC1)
 + [PostgreSQL version 19 Beta 4 in the Amazon RDS Preview environment](#postgresql-versions-version19Beta4)
 + [PostgreSQL version 19 Beta 3 in the Amazon RDS Preview environment](#postgresql-versions-version19Beta3)
 + [PostgreSQL version 19 Beta 2 in the Amazon RDS Preview environment](#postgresql-versions-version19Beta2)
 + [PostgreSQL version 19 Beta 1 in the Amazon RDS Preview environment](#postgresql-versions-version19Beta1)
+
+### PostgreSQL version 19.0 in the Amazon RDS Preview environment
+<a name="postgresql-versions-version190Preview"></a>
+
+PostgreSQL 19 contains many new features and enhancements that can be seen in the release documentation: [PostgreSQL 19](https://www.postgresql.org/docs/19/release-19.html).
+
+The following modifiable parameters were added:
++ `auto_explain.log_extension_options`
++ `auto_explain.log_io`
+
+This version also includes the following extension changes:
++ The `orafce` extension was updated to version 4.17.1.
++ The `pg_cron` extension was updated to version 1.6.8.
++ The `pg_hint_plan` extension version 1.9.0 was added.
++ The `plv8` extension was updated to version 3.2.5.
+
+This release includes the fixes from the November 2026 PostgreSQL security release. The fix for [CVE-2026-6460](https://www.postgresql.org/support/security/CVE-2026-6460/) also affects the following extensions in the following ways:
++ `pglogical`: A subscriber on an engine version without the fix for CVE-2026-6460 (RDS for PostgreSQL 18.6, 17.11, 16.15, 15.19, 14.24 or earlier) can't use `synchronize_structure := true` with a provider that has the fix. Upgrade the subscriber first, or create the schema on the subscriber and set `synchronize_structure := false`.
++ `pg_transport`: A transport is refused if a table, materialized view, or index on the source stores values of a composite type (directly, or in an array, domain, or range), and that type was created or changed more recently than the destination's write-ahead log position. This is most likely when the destination is newer or less active than the source. The error names the affected types. Change those columns to non-composite types, or move those tables with `pg_dump`.
+
+The following extensions that are supported in Amazon RDS PostgreSQL version 18 aren't supported for Amazon RDS PostgreSQL version 19.0 in preview:
++ `address_standardizer`
++ `address_standardizer_data_us`
++ `h3-pg`
++ `pg_similarity`
++ `pg_stat_monitor`
++ `pgactive`
++ `pgrouting`
++ `plprofiler`
++ `postgis`
++ `postgis_raster`
++ `postgis_tiger_geocoder`
++ `postgis_topology`
+
+For version information on all extensions, see [Extensions supported for RDS for PostgreSQL 19](postgresql-extensions.md#postgresql-extensions-19x).
 
 ### PostgreSQL version 19 RC1 in the Amazon RDS Preview environment
 <a name="postgresql-versions-version19RC1"></a>

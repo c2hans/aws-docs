@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_Snapshot.htm
 
 # Snapshot
 
-A snapshot of an Amazon FSx for OpenZFS volume.
+A snapshot of an Amazon FSx for OpenZFS or Amazon FSx for NetApp ONTAP volume.
 
 ## Contents
 <a name="API_Snapshot_Contents"></a>
@@ -26,12 +26,13 @@ The lifecycle status of the snapshot.
 +  `CREATING` - Amazon FSx is creating the snapshot.
 +  `DELETING` - Amazon FSx is deleting the snapshot.
 +  `AVAILABLE` - The snapshot is fully available.
++  `FAILED` - Amazon FSx was unable to create the snapshot.
 Type: String
-Valid Values: `PENDING | CREATING | DELETING | AVAILABLE`
+Valid Values: `PENDING | CREATING | DELETING | AVAILABLE | FAILED`
 Required: No
 
  ** LifecycleTransitionReason **   <a name="FSx-Type-Snapshot-LifecycleTransitionReason"></a>
-Describes why a resource lifecycle state changed.
+The reason why the snapshot lifecycle status changed.
 Type: [LifecycleTransitionReason](API_LifecycleTransitionReason.md) object
 Required: No
 
@@ -40,6 +41,11 @@ The name of the snapshot.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 203.
 Pattern: `^[a-zA-Z0-9_:.-]{1,203}$`
+Required: No
+
+ ** OntapConfiguration **   <a name="FSx-Type-Snapshot-OntapConfiguration"></a>
+The configuration of an Amazon FSx for NetApp ONTAP snapshot.
+Type: [OntapSnapshotConfiguration](API_OntapSnapshotConfiguration.md) object
 Required: No
 
  ** ResourceARN **   <a name="FSx-Type-Snapshot-ResourceARN"></a>
@@ -54,6 +60,12 @@ The ID of the snapshot.
 Type: String
 Length Constraints: Minimum length of 11. Maximum length of 28.
 Pattern: `^((fs)?volsnap-[0-9a-f]{8,})$`
+Required: No
+
+ ** SnapshotType **   <a name="FSx-Type-Snapshot-SnapshotType"></a>
+The type of the snapshot.
+Type: String
+Valid Values: `ONTAP | OPENZFS`
 Required: No
 
  ** Tags **   <a name="FSx-Type-Snapshot-Tags"></a>

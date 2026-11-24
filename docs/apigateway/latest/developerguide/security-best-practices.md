@@ -23,3 +23,20 @@ AWS Config provides a detailed view of the configuration of AWS resources in you
 
 **Use AWS Security Hub CSPM**
 Monitor your usage of API Gateway as it relates to security best practices by using [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html). Security Hub CSPM uses *security controls* to evaluate resource configurations and *security standards* to help you comply with various compliance frameworks. For more information about using Security Hub CSPM to evaluate API Gateway resources, see [Amazon API Gateway controls](https://docs.aws.amazon.com/securityhub/latest/userguide/apigateway-controls.html) in the *AWS Security Hub User Guide*.
+
+## Security best practices for API Portal
+<a name="security-best-practices-apiportal"></a>
+
+### Preventative
+<a name="security-best-practices-apiportal-preventative"></a>
++ **Enable organization-wide discovery.** Shadow APIs in accounts that you don't scan stay invisible. Enable discovery at organization scope, and use inclusion or exclusion filters rather than leaving accounts out entirely.
++ **Administer discovery from a delegated administrator account**, not the management account, following AWS Organizations best practices.
++ **Require authorization on documentation portals** unless the portal is meant for the public. Use Amazon Cognito with fine-grained access control to limit each audience to its products. Publishing a portal with authorization set to **None** exposes your API documentation to the internet.
++ **Enable **Try it** only for non-production stages** or APIs that are safe to call from a browser, because it lets portal visitors invoke the operation.
++ **Grant least-privilege access** with the `apiportal` actions and resource ARNs, and separate the principals who promote and document APIs from those who configure discovery. See [Identity and access management for API Portal](security-iam-apiportal.md).
++ **Log API Portal activity with CloudTrail.** All `apiportal` control plane calls, including publishing a portal and changing discovery scope, are recorded as management events.
+
+### Detective
+<a name="security-best-practices-apiportal-detective"></a>
++ **Review new shadow APIs on a schedule.** Promote the APIs that you intend to keep, and investigate the ones that no team claims. Act on zombie and orphaned labels.
++ **Remediate security posture findings**, starting with public APIs that have no AWS WAF web ACL and APIs with no authentication.

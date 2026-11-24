@@ -45,7 +45,7 @@ Specifies that the setting is valid for the current transaction.
 
 SEED TO *value*
 Sets an internal seed to be used by the RANDOM function for random number generation.
-SET SEED takes a numeric *value* between 0 and 1, and multiplies this number by (231-1) for use with the [RANDOM function](r_RANDOM.md) function. If you use SET SEED before making multiple RANDOM calls, RANDOM generates numbers in a predictable sequence.
+SET SEED takes a numeric *value* between 0 and 1, and multiplies this number by (2<sup>31</sup>-1) for use with the [RANDOM function](r_RANDOM.md) function. If you use SET SEED before making multiple RANDOM calls, RANDOM generates numbers in a predictable sequence.
 
  *parameter\_name*
 Name of the parameter to set. See [Modifying the server configuration](cm_chap_ConfigurationRef.md#t_Modifying_the_default_settings) for information about parameters.

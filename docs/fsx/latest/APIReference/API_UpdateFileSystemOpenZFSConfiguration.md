@@ -70,7 +70,7 @@ The throughput of an Amazon FSx for OpenZFS file system, measured in megabytes p
 + For `MULTI_AZ_1` and `SINGLE_AZ_2`, valid values are 160, 320, 640, 1280, 2560, 3840, 5120, 7680, or 10240 MB/s.
 + For `SINGLE_AZ_1`, valid values are 64, 128, 256, 512, 1024, 2048, 3072, or 4096 MB/s.
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: No
 
  ** WeeklyMaintenanceStartTime **   <a name="FSx-Type-UpdateFileSystemOpenZFSConfiguration-WeeklyMaintenanceStartTime"></a>

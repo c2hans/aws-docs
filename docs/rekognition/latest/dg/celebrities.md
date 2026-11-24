@@ -11,7 +11,7 @@ The rapid proliferation of image and video content means that media companies of
 Amazon Rekognition celebrity recognition is designed to be used exclusively in cases where you expect there may be a known celebrity in an image or a video. For information about recognizing faces that are not celebrities, see [Searching faces in a collection](collections.md).
 
 **Note**
-If you are a celebrity and don’t want to be included in this feature, contact [AWS Support](https://aws.amazon.com/contact-us/) or email rekognition-celebrity-opt-out@amazon.com.
+If you are a celebrity and don’t want to be included in this feature, contact [AWS Support](https://aws.amazon.com/contact-us/) or email [rekognition-celebrity-opt-out@amazon.com](mailto:rekognition-celebrity-opt-out@amazon.com).
 
 **Topics**
 + [Celebrity recognition compared to face search](celebrity-recognition-vs-face-search.md)

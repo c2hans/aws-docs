@@ -9,3 +9,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::OpenSearchService::Application](aws-resource-opensearchservice-application.md)
 + [AWS::OpenSearchService::Domain](aws-resource-opensearchservice-domain.md)
++ [AWS::OpenSearchService::ReplicationPeer](aws-resource-opensearchservice-replicationpeer.md)

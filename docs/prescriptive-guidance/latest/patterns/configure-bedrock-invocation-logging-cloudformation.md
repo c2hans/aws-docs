@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure model invocation logging in Amazon Bedrock by using AWS CloudFormation
-<a name="configure-bedrock-invocation-logging-cloudformation"></a>
 
 *Vikramaditya Bhatnagar, Amazon Web Services*
 

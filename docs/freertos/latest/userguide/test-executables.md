@@ -147,7 +147,7 @@ Occurs when a test case runs for longer than the timeout value specified in the 
 To detect this event, use the IDT\_TEST\_TIMEOUT environment variable. When a test runner launches a test, IDT sets the value of the IDT\_TEST\_TIMEOUT environment variable to the calculated timeout value (in seconds) and passes the variable to the test case executable. You can read the variable value to set an appropriate timer.
 
 ****Interrupt****
-Occurs when the test runner interrupts IDT. For example, by pressing Ctrl\+C.
+Occurs when the test runner interrupts IDT. For example, by pressing **Ctrl\+C**.
 Because terminals propagate signals to all child processes, you can simply configure a signal handler in your test cases to detect interrupt signals.
 Alternatively, you can periodically poll the API to check the value of the `CancellationRequested` boolean in the `PollForNotifications` API response. When IDT receives an interrupt signal, it sets the value of the `CancellationRequested` boolean to `true`.
 

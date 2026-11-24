@@ -8,11 +8,11 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 Next, you tell the WorkSpaces Thin Client device to identify your keyboard.
 
-Begin by pressing and holding the key to the immediate RIGHT of the Shift key on the LEFT side of the keyboard.
+Begin by pressing and holding the key to the immediate RIGHT of the **Shift** key on the LEFT side of the keyboard.
 
 ![WorkSpaces Thin Client identify keyboard, part one](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-id-keyboard.png)
 
-Next, press and hold the key to the immediate LEFT of the Shift key on the RIGHT side of the keyboard.
+Next, press and hold the key to the immediate LEFT of the **Shift** key on the RIGHT side of the keyboard.
 
 ![WorkSpaces Thin Client identify keyboard, part two](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-id-keyboard1.png)
 

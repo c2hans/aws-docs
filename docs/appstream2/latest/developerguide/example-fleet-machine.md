@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 ```
 
 **Example `aws:SourceArn` Conditional:**
-If you want to use one IAM role for multiple fleets, we recommend using the `aws:SourceArn` global context condition key with wildcards (\*) to match multiple WorkSpaces Applications fleet resources.
+If you want to use one IAM role for multiple fleets, we recommend using the `aws:SourceArn` global context condition key with wildcards (**\***) to match multiple WorkSpaces Applications fleet resources.
 ****
 
 ```json

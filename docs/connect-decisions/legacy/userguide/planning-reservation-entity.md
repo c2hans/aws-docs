@@ -19,21 +19,21 @@ The table below lists the column names supported by the *reservation* data entit
 | reservation\_id | string | Yes | Reservation ID. |
 | reservation\_detail\_id | string | Yes | Reservation detail ID. |
 | reservation\_type | string | No | Type of reservation. For example, procurement or build-to-stock. |
-| company\_id1 | string | No | Company ID. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
 | status | string | No | Status of the reservation. |
-| product\_id1 | string | No | Product ID. |
-| site\_id1 | string | No | Site ID. |
+| product\_id<sup>1</sup> | string | No | Product ID. |
+| site\_id<sup>1</sup> | string | No | Site ID. |
 | quantity | double | No | Reservation quantity. |
 | quantity\_uom | string | No | Quantity UOM associated with reservation. |
 | reservation\_date | timestamp | No | Date when the reservation is generated. |
 | is\_deleted | string | No | Yes or No indicator to indicate whether the reservation is deleted or not. |
-| requisition\_id1 | string | No | Source object identifier reference to inbound order type. |
-| requisition\_line\_id1 | string | No | Source object identifier reference to inbound order line. |
-| rfq\_id1 | string | No | Source object identifier reference to inbound order type RFQ. |
-| rfq\_line\_id1 | string | No | Source object identifier reference to inbound order line of type RFQ. |
-| order\_id1 | string | No | Source object identifier reference to inbound order. |
-| order\_line\_id1 | string | No | Source object identifier reference to inbound order line. |
-| order\_line\_schedule\_id1 | string | No | Source object identifier reference to inbound order line schedule. |
+| requisition\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order type. |
+| requisition\_line\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order line. |
+| rfq\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order type RFQ. |
+| rfq\_line\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order line of type RFQ. |
+| order\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order. |
+| order\_line\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order line. |
+| order\_line\_schedule\_id<sup>1</sup> | string | No | Source object identifier reference to inbound order line schedule. |
 | stock\_transfer\_1\_order\_id | string | No | Stock transfer order ID. |
 | stock\_transfer\_1\_order\_line\_id | string | No | Stock transfer order line ID. |
 | stock\_transfer\_2\_order\_id | string | No | Stock transfer order ID. |
@@ -47,7 +47,7 @@ The table below lists the column names supported by the *reservation* data entit
 | flex\_4 | string | No | Reservation flexible field 4 |
 | flex\_5 | string | No | Reservation flexible field 5 |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

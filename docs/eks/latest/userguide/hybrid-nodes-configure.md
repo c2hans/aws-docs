@@ -21,12 +21,14 @@ The following lists the common capabilities and add-ons that you can use with hy
 +  **Pod Identities and IRSA**: You can use EKS Pod Identities and IAM Roles for Service Accounts (IRSA) with applications running on hybrid nodes to enable granular access for your pods running on hybrid nodes with other AWS services.
 +  **Webhooks**: If you are running webhooks, see [Configure webhooks for hybrid nodes](hybrid-nodes-webhooks.md) for considerations and steps to optionally run webhooks on cloud nodes if you cannot make your on-premises pod networks routable.
 +  **Proxy**: If you are using a proxy server in your on-premises environment for traffic leaving your data center or edge environment, you can configure your hybrid nodes and cluster to use your proxy server. For more information, see [Configure proxy for hybrid nodes](hybrid-nodes-proxy.md).
++  **Private installation**: If your hybrid nodes have restricted internet access, you can install the hybrid nodes dependencies from a private Amazon S3 bucket through a VPC endpoint. For more information, see [Configure private installation for hybrid nodes](hybrid-nodes-private-install.md).
 
 **Topics**
 + [Configure CNI for hybrid nodes](hybrid-nodes-cni.md)
 + [Configure add-ons for hybrid nodes](hybrid-nodes-add-ons.md)
 + [Configure webhooks for hybrid nodes](hybrid-nodes-webhooks.md)
 + [Configure proxy for hybrid nodes](hybrid-nodes-proxy.md)
++ [Configure private installation for hybrid nodes](hybrid-nodes-private-install.md)
 + [Configure Cilium BGP for hybrid nodes](hybrid-nodes-cilium-bgp.md)
 + [Configure Kubernetes Ingress for hybrid nodes](hybrid-nodes-ingress.md)
 + [Configure Services of type LoadBalancer for hybrid nodes](hybrid-nodes-load-balancing.md)

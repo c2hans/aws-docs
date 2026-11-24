@@ -95,7 +95,7 @@ Search to find guides and resources by keyword across all categories that you ha
 
 **To search guides and resources**
 
-1. On the **Guides** page, enter one or more keywords in the search box, and then press Enter.
+1. On the **Guides** page, enter one or more keywords in the search box, and then press **Enter**.
 
 1. Review the results. Each result shows the title, description, content type, category, and last updated date. The number of matches appears next to the filters.
 

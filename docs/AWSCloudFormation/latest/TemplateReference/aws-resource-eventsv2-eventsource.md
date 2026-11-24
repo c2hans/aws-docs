@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::EventsV2::EventSource
 
-Resource schema for `AWS::EventsV2::EventSource`. A managed event source that forwards AWS service events or partner events onto a custom event bus.
+Resource schema for `AWS::EventsV2::EventSource`. A managed event source that forwards AWS service events, partner events, or events a third-party provider sends to an inbound webhook URL, onto a custom event bus.
 
 ## Syntax
 <a name="aws-resource-eventsv2-eventsource-syntax"></a>
@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[Configuration](#cfn-eventsv2-eventsource-configuration)" : {{EventSourceConfiguration}},
       "[Description](#cfn-eventsv2-eventsource-description)" : {{String}},
+      "[Details](#cfn-eventsv2-eventsource-details)" : {{EventSourceDetails}},
       "[EventBusArn](#cfn-eventsv2-eventsource-eventbusarn)" : {{String}},
       "[Name](#cfn-eventsv2-eventsource-name)" : {{String}},
       "[Tags](#cfn-eventsv2-eventsource-tags)" : {{[ Tag, ... ]}}
@@ -38,6 +39,8 @@ Properties:
   [Configuration](#cfn-eventsv2-eventsource-configuration): {{
     EventSourceConfiguration}}
   [Description](#cfn-eventsv2-eventsource-description): {{String}}
+  [Details](#cfn-eventsv2-eventsource-details): {{
+    EventSourceDetails}}
   [EventBusArn](#cfn-eventsv2-eventsource-eventbusarn): {{String}}
   [Name](#cfn-eventsv2-eventsource-name): {{String}}
   [Tags](#cfn-eventsv2-eventsource-tags): {{
@@ -48,7 +51,7 @@ Properties:
 <a name="aws-resource-eventsv2-eventsource-properties"></a>
 
 `Configuration`  <a name="cfn-eventsv2-eventsource-configuration"></a>
-The event source configuration. Specify exactly one of AwsServiceEventsConfiguration or PartnerEventsConfiguration.
+The event source configuration. Specify exactly one of AwsServiceEventsConfiguration, PartnerEventsConfiguration or WebhookEventsConfiguration.
 *Required*: Yes
 *Type*: [EventSourceConfiguration](aws-properties-eventsv2-eventsource-eventsourceconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -59,6 +62,12 @@ A description of the event source. Control characters and Unicode line separator
 *Type*: String
 *Pattern*: `^[^\u0000-\u001F\u007F-\u009F\u2028\u2029]*(?![\s\S])`
 *Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Details`  <a name="cfn-eventsv2-eventsource-details"></a>
+Values EventBridge generated for the event source, such as a webhook's URL and the ARN of its secret. Absent for event source types that have no generated values.
+*Required*: No
+*Type*: [EventSourceDetails](aws-properties-eventsv2-eventsource-eventsourcedetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EventBusArn`  <a name="cfn-eventsv2-eventsource-eventbusarn"></a>
@@ -109,6 +118,12 @@ For more information about using `Fn::GetAtt`, see [`Fn::GetAtt`](https://docs.a
 
 `CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the event source was created, as an ISO 8601 timestamp.
+
+`Details.WebhookDetails.SecretArn`  <a name="Details.WebhookDetails.SecretArn-fn::getatt"></a>
+The ARN of the AWS Secrets Manager secret, in your account, that holds the webhook credential.
+
+`Details.WebhookDetails.WebhookUrl`  <a name="Details.WebhookDetails.WebhookUrl-fn::getatt"></a>
+The HTTPS URL to configure at the event provider. The URL does not change for the life of the event source. Treat the URL as a credential. The URL appears in stack describe output and in drift detection results.
 
 `EventSourceArn`  <a name="EventSourceArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the event source.

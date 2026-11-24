@@ -18,12 +18,12 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | snapshot\_date | timestamp | Yes | Date up to when data was captured to generate forecasts. |
 | creation\_date | timestamp | No | Date when a forecast was created. |
-| company\_id2 | string | No | Company ID. |
-| product\_id2 | string | Yes1 | Product or product group level for the forecast. |
-| site\_id2 | string | Yes1 | Site ID that the forecast is generated for . |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| product\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product or product group level for the forecast. |
+| site\_id<sup>2</sup> | string | Yes<sup>1</sup> | Site ID that the forecast is generated for . |
 | source | string | No | Source of the data. |
-| region\_id2 | string | Yes1 | Geographical region ID. |
-| product\_group\_id2 | string | Yes1 | Product group ID. |
+| region\_id<sup>2</sup> | string | Yes<sup>1</sup> | Geographical region ID. |
+| product\_group\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product group ID. |
 | reg\_agg\_type | string | No | Type of regional aggregation. |
 | mean | double | No | Mean value of forecast. |
 | p10 | double | No | P10 quantile of forecast. |
@@ -46,7 +46,7 @@ The table below lists the column names supported by the data entity:
 | user\_id | string | No | ID of the user that overrode the forecast. |
 | act\_qty | double | No | Actual order quantity sold in the forecast period. |
 | channel\_id | string | No | Unique identifier for a specific channel. Corresponds to channel\_id in the outbound\_order\_line dataset. |
-| tpartner\_id 2 | string | No | Tpartner ID. |
+| tpartner\_id <sup>2</sup> | string | No | Tpartner ID. |
 | user\_override\_p10 | double | No | Override value for the P10 quantile of forecast. |
 | user\_override\_p20 | double | No | Override value for the P20 quantile of forecast. |
 | user\_override\_p30 | double | No | Override value for the P30 quantile of forecast. |
@@ -70,9 +70,9 @@ The table below lists the column names supported by the data entity:
 | status | string | No | Status defining whether the plan generated in demand planning was created, saved, or published.  |
 | plan\_name | string | No | Represents the name of the demand plan associated with the forecast |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

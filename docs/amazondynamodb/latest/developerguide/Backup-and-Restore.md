@@ -14,11 +14,13 @@ There are two options for creating and managing DynamoDB on-demand backups:
 
 You can use the DynamoDB on-demand backup capability to create full backups of your tables for long-term retention, and archiving for regulatory compliance needs. You can back up and restore your table data anytime from the AWS Management Console or with a single API call.
 
+With AWS Backup, you can also create incremental backups. After an initial full backup, each incremental backup stores only the data that changed since the previous backup. You can copy incremental backups to other Regions and accounts. For more information, see [Using AWS Backup with DynamoDB](backuprestore_HowItWorksAWS.md).
+
 Point-in-time recovery (PITR) backups are fully managed by DynamoDB and provide up to 35 days of recovery points at a per second granularity. To use point-in-time recovery, which are continuous backups, enable point-in-time recovery (PITR) on your DynamoDB table. You get charged based on the size of your DynamoDB table for the duration you have PITR enabled on the table. Enabling Point-in-Time Recovery (PITR) on your DynamoDB table continuously backs up your data. This helps you restore your table to a specific point in time within the PITR recovery period by creating a new DynamoDB table with the exact state of your original table at that point in time.
 
 Point-in-time recovery helps protect your DynamoDB tables from accidental write or delete operations. With point-in-time recovery, you don't have to worry about creating, maintaining, or scheduling on-demand backups. For example, suppose that a test script writes accidentally to a production DynamoDB table.
 
-With point-in-time recovery, you can restore your table to any point in time during the last 35 days. You can set the recovery period to any value between 1 and 35 days. After you enable point-in-time recovery, you can restore to any point in time from five minutes before the current time until the configured recovery period. DynamoDB maintains incremental backups of your table.
+With PITR, you can restore your table to any point in time during the last 35 days. You can set the recovery period to any value between 1 and 35 days. After you enable PITR, you can restore to any point in time from five minutes before the current time until the configured recovery period. DynamoDB continuously records changes to your table so that you can restore at a per second granularity up to 35 days. PITR is separate from incremental backups in AWS Backup, and you can use each feature without the other.
 
 In addition, point-in-time operations don't affect performance or API latencies.
 

@@ -16,24 +16,24 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| snapshot\_date | timestamp | Yes1 | Date and time when the inventory snapshot was taken. |
-| site\_id2 | string | Yes1 | Site ID of the inventory. |
-| product\_id2 | string | Yes1 | Product ID of the inventory displayed. |
-| company\_id2 | string | No | Company ID. |
+| snapshot\_date | timestamp | Yes<sup>1</sup> | Date and time when the inventory snapshot was taken. |
+| site\_id<sup>2</sup> | string | Yes<sup>1</sup> | Site ID of the inventory. |
+| product\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product ID of the inventory displayed. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
 | on\_hand\_inventory | double | Yes | Physical inventory available at the site. |
 | allocated\_inventory | double | No | Inventory allocated for some process. |
 | bound\_inventory | double | No | Inventory bound to some process. |
 | quantity\_uom | string | No | Quantity unit of measure for inventory. |
-| inv\_condition | string | Yes 1 | Condition of the inventory. Inventory in different conditions are displayed in different rows. You can also enter your own value.<br />Reserved inventory condition values in AWS Supply Chain are as follows:+  Unrestricted - Inventory is available. <br />+  Inspection - Below quality or any other inspection. <br />+  Returns - Inventory goes to return area. <br />+  Blocked - Inventory is blocked for a reason. <br />+  InTransfer - Used during inventory stock transfer. <br />+  Restricted - Restricted for other reasons but not blocked.  |
-| lot\_number | string | Yes1 | Lot number of the inventory. |
+| inv\_condition | string | Yes <sup>1</sup> | Condition of the inventory. Inventory in different conditions are displayed in different rows. You can also enter your own value.<br />Reserved inventory condition values in AWS Supply Chain are as follows:+  Unrestricted - Inventory is available. <br />+  Inspection - Below quality or any other inspection. <br />+  Returns - Inventory goes to return area. <br />+  Blocked - Inventory is blocked for a reason. <br />+  InTransfer - Used during inventory stock transfer. <br />+  Restricted - Restricted for other reasons but not blocked.  |
+| lot\_number | string | Yes<sup>1</sup> | Lot number of the inventory. |
 | expiry\_date | timestamp | No | Expiry date of the inventory. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | tpartner\_id | string | No | Unique identifier for a trading partner. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* date type value is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* date type value is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

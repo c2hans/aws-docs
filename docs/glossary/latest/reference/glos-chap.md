@@ -1438,10 +1438,6 @@ A numerical address (for example, 192.0.2.44) that networked devices use to comm
 **IP match condition**<a name="IPmatchcondition"></a>
 [AWS WAF](#awswaf): An attribute that specifies the IP addresses or IP address ranges that web requests originate from. Based on the specified IP addresses, you can configure AWS WAF to allow or block web requests to AWS [resources](#resource) such as [Amazon CloudFront](#AmazonCF) distributions.
 
-**AWS IQ**<a name="iq"></a>
-AWS IQ is a cloud service that AWS customers can use to find, engage, and pay AWS Certified third-party experts for on-demand project work.
-See also [https://iq.aws.amazon.com](https://iq.aws.amazon.com).
-
 **ISP**<a name="ISP_abbrev"></a>
 See [internet service provider (ISP)](#internetserviceprovider).
 

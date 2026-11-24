@@ -31,7 +31,7 @@ We recommend using the AWS CLI and APIs to centrally administer IAM Identity Cen
 | Maximum size of inline policy per permission set | 32,768 bytes.<br />Maximum size of non-whitespace characters in the inline policy per permission set is 10,240 bytes. | No |
 | Number of IAM roles (permission sets) in the AWS account that can be updated at a time | 1 | No |
 
-1AWS Identity and Access Management (IAM) sets a quota of 10 managed policies per role. To take advantage of this quota, request an increase to the IAM quota *Managed policies attached to an IAM role* in the Service Quotas console for each AWS account where you want to deploy the permission set.
+<sup>1</sup>AWS Identity and Access Management (IAM) sets a quota of 10 managed policies per role. To take advantage of this quota, request an increase to the IAM quota *Managed policies attached to an IAM role* in the Service Quotas console for each AWS account where you want to deploy the permission set.
 
 **Note**
 [Manage AWS accounts with permission sets](permissionsetsconcept.md) are provisioned in AWS accounts as IAM roles, or use existing IAM roles in AWS accounts, and therefore follow IAM quotas. For more information about quotas that are associated with IAM roles, see [IAM and STS quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html).

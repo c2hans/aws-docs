@@ -50,7 +50,7 @@ You must sign in before you can use Kiro CLI in CloudShell. The first time you r
 Kiro CLI prompts you to finish signing in from a browser. You can sign in with Google, GitHub, AWS Builder ID, AWS IAM Identity Center, or your organization's identity provider. For more information, see [Sign in to Kiro](https://kiro.dev/docs/getting-started/authentication/#sign-in-to-kiro) on the Kiro website.
 
 **Note**
-During sign-in, the progress indicator refreshes the display while the sign-in URL is shown, which can make the URL difficult to select. To copy the URL, select it with your pointing device and continue to hold the selection while you press Ctrl\+C or Cmd\+C to copy the URL to your clipboard. Then paste the URL in your browser to complete the sign-in.
+During sign-in, the progress indicator refreshes the display while the sign-in URL is shown, which can make the URL difficult to select. To copy the URL, select it with your pointing device and continue to hold the selection while you press **Ctrl**\+**C** or **Cmd**\+**C** to copy the URL to your clipboard. Then paste the URL in your browser to complete the sign-in.
 
 To check which sign-in method you are using, run the following command.
 

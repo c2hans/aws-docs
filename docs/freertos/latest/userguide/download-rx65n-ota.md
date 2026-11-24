@@ -18,15 +18,15 @@ This chapter shows you how download, build, flash and run the FreeRTOS OTA demo 
 <a name="download-rx65n-ota-environment"></a>
 
 The procedures in this section use the following environments:
-+ **IDE**: e2 studio 7.8.0, e2 studio 2020-07
++ **IDE**: e<sup>2</sup> studio 7.8.0, e<sup>2</sup> studio 2020-07
 + **Toolchains**: CCRX Compiler v3.0.1
 + **Target devices**: RSKRX65N-2MB
-+ **Debuggers**: E2, E2 Lite emulator
++ **Debuggers**: E<sup>2</sup>, E<sup>2</sup> Lite emulator
 + **Software**: Renesas Flash Programmer, Renesas Secure Flash Programmer.exe, Tera Term
 
 **To set up your hardware**
 
-1. Connect the E2 Lite emulator and USB serial port to your RX65N board and PC.
+1. Connect the E<sup>2</sup> Lite emulator and USB serial port to your RX65N board and PC.
 
 1. Connect the power source to the RX65N.
 
@@ -97,7 +97,7 @@ If don't have Tera Term installed on your PC, you can download it from [https://
 
 To begin, you select the latest version of the FreeRTOS package, and this will be downloaded from GitHub and imported automatically into the project. This way you can focus on the configuring FreeRTOS and writing application code.
 
-1. Launch e2 studio.
+1. Launch e<sup>2</sup> studio.
 
 1. Choose **File**, and then choose **Import…**.
 

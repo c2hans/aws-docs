@@ -34,7 +34,7 @@ For information on opt-in Regions and what resources and features are supported 
 **Note**
 If a resource type does not have a checkmark in the Cross-Region backup or Cross-account backup columns, then copy operations for that resource type are not supported in any scenario, including same-Region and same-account copies to a different vault. If the underlying AWS service provides its own native copy or replication feature, refer to that service's documentation.
 
-| AWS Backup supports | [Cross-Region backup](cross-region-backup.md) | [Cross-account backup](create-cross-account-backup.md) | [AWS Backup Audit Manager](aws-backup-audit-manager.md) | [Incremental backup](about-backup-plans.md) | [Continuous backup and point-in-time restore](point-in-time-recovery.md) | [Full management](whatisbackup.md#full-management) | [Lifecycle to cold storage](plan-options-and-configuration.md) | Item-level restore 1 | [Restore testing](restore-testing.md) | [Logically air-gapped vault](logicallyairgappedvault.md) | [Backup search](backup-search.md) | [Backup tiering](backup-tiering.md) | [Malware Protection](malware-protection.md) | [Access points](backup-access-points.md) |
+| AWS Backup supports | [Cross-Region backup](cross-region-backup.md) | [Cross-account backup](create-cross-account-backup.md) | [AWS Backup Audit Manager](aws-backup-audit-manager.md) | [Incremental backup](about-backup-plans.md) | [Continuous backup and point-in-time restore](point-in-time-recovery.md) | [Full management](whatisbackup.md#full-management) | [Lifecycle to cold storage](plan-options-and-configuration.md) | Item-level restore <sup>1</sup> | [Restore testing](restore-testing.md) | [Logically air-gapped vault](logicallyairgappedvault.md) | [Backup search](backup-search.md) | [Backup tiering](backup-tiering.md) | [Malware Protection](malware-protection.md) | [Access points](backup-access-points.md) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Amazon EC2 | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  | ✓ |  |
 | Amazon S3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -66,31 +66,31 @@ Some resource types have both continuous backup capability and cross-Region and 
 + Amazon RDS and Amazon S3 support cross-account and cross-Region copy from incremental backups. Amazon RDS also supports simultaneous cross-Region and cross-account snapshot copying in a single action.
 + Amazon Aurora and SAP HANA on Amazon EC2 instances support cross-account and cross-Region copy from full backups. Amazon Aurora also supports simultaneous cross-Region and cross-account snapshot copying in a single action.
 
-1 The "item" in an item-level restore varies depending on the supported resource. For example, a file system item is a file or directory, whereas an S3 item is an S3 object. A VMware item is a disk. For more information, see the [Restore a backup by resource type](restoring-a-backup.md) section for the supported resource.
+<sup>1</sup> The "item" in an item-level restore varies depending on the supported resource. For example, a file system item is a file or directory, whereas an S3 item is an S3 object. A VMware item is a disk. For more information, see the [Restore a backup by resource type](restoring-a-backup.md) section for the supported resource.
 
-3 Amazon RDS, Aurora, DocumentDB, and Neptune now support cross-Region and cross-account snapshot copying in a single action. RDS multi availability zone (Multi-AZ) database instances can be copied, but Multi-AZ clusters do not currently support any copy operations. See [Cross-Region copy considerations with specific resources](cross-region-backup.md#cross-region-considerations) for further information.
+<sup>3</sup> Amazon RDS, Aurora, DocumentDB, and Neptune now support cross-Region and cross-account snapshot copying in a single action. RDS multi availability zone (Multi-AZ) database instances can be copied, but Multi-AZ clusters do not currently support any copy operations. See [Cross-Region copy considerations with specific resources](cross-region-backup.md#cross-region-considerations) for further information.
 
-4 See [ RDS multi-availability zone backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/rds-backup.html#rds-multiaz) for Regions where Backup Audit Manager support is available.
+<sup>4</sup> See [ RDS multi-availability zone backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/rds-backup.html#rds-multiaz) for Regions where Backup Audit Manager support is available.
 
-5 In [CloudFormation stack backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/applicationstackbackups.html), nested resources retain their source resource features. However, resources within the stack do not retain Point-in-Time Restore (PITR) functionality (such as Amazon S3 and Amazon RDS).
+<sup>5</sup> In [CloudFormation stack backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/applicationstackbackups.html), nested resources retain their source resource features. However, resources within the stack do not retain Point-in-Time Restore (PITR) functionality (such as Amazon S3 and Amazon RDS).
 
-6 Snapshots are full and incremental backup is offered through PITR.
+<sup>6</sup> Snapshots are full and incremental backup is offered through PITR.
 
-7 Amazon FSx for OpenZFS Multi-AZ (multi-availability zone) file systems can only be restored from the Amazon FSx console or the API request [`createFileSystemFromBackup`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystemFromBackup.html).
+<sup>7</sup> Amazon FSx for OpenZFS Multi-AZ (multi-availability zone) file systems can only be restored from the Amazon FSx console or the API request [`createFileSystemFromBackup`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystemFromBackup.html).
 
-8 Is supported in a restore test if FSx for Windows File Server uses AWS managed active directory
+<sup>8</sup> Is supported in a restore test if FSx for Windows File Server uses AWS managed active directory
 
-9 Is not currently available in Asia Pacific (Jakarta) Region
+<sup>9</sup> Is not currently available in Asia Pacific (Jakarta) Region
 
-10 Features for Persistent Storage Backups (e.g. Amazon EBS) taken as part of Amazon EKS Backups will reflect the feature support for the respective resource types in this table.
+<sup>10</sup> Features for Persistent Storage Backups (e.g. Amazon EBS) taken as part of Amazon EKS Backups will reflect the feature support for the respective resource types in this table.
 
-11 Is not currently available in Middle East (Bahrain) and Middle East (UAE)
+<sup>11</sup> Is not currently available in Middle East (Bahrain) and Middle East (UAE)
 
-12 AWS Backup supports continuous backups and point-in-time recovery for all Amazon RDS instances and Aurora that are supported by the native Amazon RDS service. Amazon RDS DB instances include both single-AZ and Multi-AZ instance deployments.
+<sup>12</sup> AWS Backup supports continuous backups and point-in-time recovery for all Amazon RDS instances and Aurora that are supported by the native Amazon RDS service. Amazon RDS DB instances include both single-AZ and Multi-AZ instance deployments.
 
-13 AWS Backup does not support continuous backups or point-in-time recovery for Amazon RDS Multi-AZ clusters.
+<sup>13</sup> AWS Backup does not support continuous backups or point-in-time recovery for Amazon RDS Multi-AZ clusters.
 
-14 Amazon EBS backups in a logically air-gapped vault can transition to the archive tier (Amazon EBS Snapshots Archive).
+<sup>14</sup> Amazon EBS backups in a logically air-gapped vault can transition to the archive tier (Amazon EBS Snapshots Archive).
 
 ## Feature availability by AWS Region
 <a name="features-by-region"></a>
@@ -150,11 +150,11 @@ Some Regions require account opt-in, as noted in the following table. Some featu
 | AWS GovCloud (US-West) | [AWS GovCloud (US)](https://aws.amazon.com/govcloud-us/) | ✓ | ✓ | ✓3 | ✓ |  |  | ✓ | ✓ | ✓ |  |
 | AWS European Sovereign Cloud (Germany) | [AWS European Sovereign Cloud (Germany)](https://aws.eu/) |  | ✓ | ✓ |  |  |  |  | ✓ |  |  |
 
-1China (Beijing) and China (Ningxia) support cross-Region copy only between these two Regions. Cross-account backup copy and cross-account management are supported in both China Regions for accounts that belong to the same organization in AWS Organizations. AWS Backup does not support cross-Region copy between the China Regions and Regions outside the AWS China partition.
+<sup>1</sup>China (Beijing) and China (Ningxia) support cross-Region copy only between these two Regions. Cross-account backup copy and cross-account management are supported in both China Regions for accounts that belong to the same organization in AWS Organizations. AWS Backup does not support cross-Region copy between the China Regions and Regions outside the AWS China partition.
 
-2Jobs dashboard and AWS Backup Audit Manager organizational reporting, and Jobs dashboard aggregation are only available in Regions that support cross-account management and AWS Backup Audit Manager.
+<sup>2</sup>Jobs dashboard and AWS Backup Audit Manager organizational reporting, and Jobs dashboard aggregation are only available in Regions that support cross-account management and AWS Backup Audit Manager.
 
-3AWS GovCloud (US-East) and AWS GovCloud (US-West) support cross-Region copy from one of these two Regions to the other. Cross-Region copy is not supported from these Regions to other Regions, or from other Regions into these Regions.
+<sup>3</sup>AWS GovCloud (US-East) and AWS GovCloud (US-West) support cross-Region copy from one of these two Regions to the other. Cross-Region copy is not supported from these Regions to other Regions, or from other Regions into these Regions.
 
 ## Supported services by AWS Region
 <a name="supported-services-by-region"></a>
@@ -219,4 +219,4 @@ AWS Backup cannot be deployed or operated locally on AWS Outposts infrastructure
 
 A check under Amazon FSx indicates that FSx for Windows File Server, FSx for Lustre, FSx for ONTAP, and FSx for OpenZFS are all supported in that Region by AWS Backup; otherwise, the supported configurations will be listed.
 
-1 Cross-account copy is not supported.
+<sup>1</sup> Cross-account copy is not supported.

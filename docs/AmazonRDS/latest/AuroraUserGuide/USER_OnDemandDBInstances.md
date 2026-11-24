@@ -8,7 +8,7 @@ Amazon RDS on-demand DB instances are billed based on the class of the DB instan
 
 Billing starts for a DB instance as soon as the DB instance is available. Pricing is listed on a per-hour basis, but bills are calculated down to the second and show times in decimal form. Amazon RDS usage is billed in one-second increments, with a minimum of 10 minutes. In the case of billable configuration change, such as scaling compute or storage capacity, you're charged a 10-minute minimum. Billing continues until the DB instance terminates, which occurs when you delete the DB instance or if the DB instance fails.
 
-If you no longer want to be charged for your DB instance, you must stop or delete it to avoid being billed for additional DB instance hours. For more information about the DB instance states for which you are billed, see [Viewing DB instance statusin an Aurora cluster](accessing-monitoring.md#Overview.DBInstance.Status).
+If you no longer want to be charged for your DB instance, you must stop or delete it to avoid being billed for additional DB instance hours. For more information about the DB instance states for which you are billed, see [Viewing DB instance status in an Aurora cluster](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ## Stopped DB instances
 <a name="USER_OnDemandDBInstances.Stopped"></a>
@@ -18,14 +18,14 @@ While your DB instance is stopped, you're charged for provisioned storage, inclu
 ## Multi-AZ DB instances
 <a name="USER_OnDemandDBInstances.MultiAZ"></a>
 
-A Multi-AZ setup enhances data durability and availability by automatically provisioning and maintaining a synchronous standby replica in a different Availability Zone. Due to the additional resources and increased availability, Multi-AZ deployments are priced higher than Single-AZ deployments, and can cost approximately twice as much due to the additional standby instance and associated resources.
+In Aurora, you create a Multi-AZ DB cluster by adding one or more Aurora Replicas in Availability Zones that are different from the writer DB instance's. Aurora always replicates your data across three Availability Zones in the cluster volume, whether the cluster has one DB instance or several. Each DB instance that you add increases your compute charges, but your storage charges stay the same.
 
 Consider the following important details about Multi-AZ pricing:
-+ **Compute costs**: Billed per DB instance-hour for both the primary and standby instances.
-+ **Storage costs**: Charged per GB-month for the storage provisioned for both the primary and standby instances.
-+ **Data transfer costs**: Replication between the primary and standby instances is included in the cost, but other data transfer charges might apply based on your usage.
++ **Compute costs**: Billed per DB instance-hour for each DB instance in the DB cluster, including the writer DB instance and each Aurora Replica.
++ **Storage costs**: Charged per GB-month for the storage that your DB cluster's shared cluster volume uses. All DB instances in the cluster, including Aurora Replicas in other Availability Zones, share the same cluster volume, so adding DB instances doesn't increase your storage charges.
++ **Data transfer costs**: Replication between the DB instances in your DB cluster is included in the cost, but other data transfer charges might apply based on your usage.
 
-To accurately estimate your monthly costs based on your specific use case and AWS Region, you can use the AWS Pricing Calculator. This tool lets you to input your configuration details and provides a comprehensive cost breakdown.
+To accurately estimate your monthly costs based on your specific use case and AWS Region, you can use the AWS Pricing Calculator. With this tool, you can input your configuration details and get a comprehensive cost breakdown.
 
 **Note**
 Pricing is subject to change. See the [Amazon RDS Pricing page](https://aws.amazon.com/rds/pricing/) for the most up-to-date information.

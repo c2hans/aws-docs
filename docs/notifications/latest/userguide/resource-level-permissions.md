@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/resource-
 
 # Resource-level permissions in AWS User Notifications
 
-*Resource-level permissions* define the AWS resources that you allow assigned entities (users, groups, and roles) to perform actions on. You specify the Amazon Resource Name (ARN) of one or more resources as part of an IAM policy. You can then attach this policy to IAM entities. When the action doesn't act on a named resource or you grant permission to perform the action on all resources, the value for the resource in the policy is a wildcard (\*).
+*Resource-level permissions* define the AWS resources that you allow assigned entities (users, groups, and roles) to perform actions on. You specify the Amazon Resource Name (ARN) of one or more resources as part of an IAM policy. You can then attach this policy to IAM entities. When the action doesn't act on a named resource or you grant permission to perform the action on all resources, the value for the resource in the policy is a wildcard (**\***).
 
 **Note**
 AWS User Notifications doesn't support *resource-based policies*, which are directly attached to AWS resources. For more information about the differences between policies and permissions, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the *IAM User Guide*.

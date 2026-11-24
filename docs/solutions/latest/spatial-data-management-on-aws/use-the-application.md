@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/use-the-application.html
 ---
 
-# User guide
+# User Guide
 
 This section provides information about permissions, common tasks, and access methods for working with the solution.
 
@@ -29,10 +29,12 @@ Depending on your permission level, you can perform the following tasks:
 
  **All Users (Viewer and above):**
 + Browse the default library, projects, and assets you have access to
++ Explore projects, assets, and located files on a map
 + Search for assets using metadata or geospatial queries
 + View asset details and metadata
 
  **Consumers and above:**
++ Open files in the Portal’s viewers, compare files, and layer maps (see [View and inspect your content](view-your-content.md))
 + Download asset files
 
  **Contributors and above:**
@@ -72,10 +74,17 @@ You can interact with Spatial Data Management on AWS through multiple interfaces
 + Capabilities: Programmatic access to solution features
 + Access: Use the API endpoint from your deployment
 
-## Learn more
+## Learn More
 <a name="learn-more"></a>
 
-For detailed walkthroughs of solution functionality, see [Upload your first asset](upload-first-asset.md). This guide covers creating projects, uploading assets, managing metadata, and using key features.
+For detailed walkthroughs of solution functionality, see [Upload Your First Asset](upload-first-asset.md). This guide covers creating projects, uploading assets, managing metadata, and using key features.
+
+To work with your content in the Spatial Data Portal, see:
++  [View and inspect your content](view-your-content.md) – Open point clouds, 3D models, maps, tables, images, and video in your browser, where they are stored.
+  +  [Compare versions and files](compare-files.md) – Compare versions of a file, or different files in an asset.
+  +  [Layer maps](layer-maps.md) – Show GeoTIFF, vector, and point cloud files together on one map.
++  [Edit assets in the Portal](edit-assets-in-the-portal.md) – Add, move, rename, and remove files, and save the changes as one version.
++  [Asset templates](asset-templates.md) – Set the rules that assets of one kind follow.
 
 ## Get Help
 <a name="get-help"></a>

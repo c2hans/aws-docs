@@ -12,7 +12,7 @@ The following table is a partial list of Amazon S3 operations and if they are co
 | --- | --- |
 | `[AbortMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html)` | Supported |
 | `[CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)` | Supported |
-| `[CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)` (same-Region copies only) | Supported, if source and destination are within the same access point. The `x-amz-object-annotation-directive` header is not supported. |
+| `[CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)` (same-Region copies only) | Supported. For supported source and destination combinations, see [Copying objects](#access-points-for-fsxn-copy-objects). |
 | `[CreateMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html)` | Supported |
 | `[DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)` | Supported |
 | `[DeleteObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html)` | Supported |
@@ -47,7 +47,7 @@ The following table is a partial list of Amazon S3 operations and if they are co
 | `[PutObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html)` | Supported |
 | `[RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html)` | Not supported |
 | `[UploadPart](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html)` | Supported |
-| `[UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html)` (same-Region copies only) | Supported, if source and destination are within the same access point |
+| `[UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html)` (same-Region copies only) | Supported. For supported source and destination combinations, see [Copying objects](#access-points-for-fsxn-copy-objects). |
 
 Limitations to using Amazon S3 operations are the following:
 + Maximum object size is 50 GiB for uploads, but you can download objects larger than that
@@ -74,3 +74,11 @@ Multipart upload allows you to upload a single object as a set of parts. Each pa
 
 **Access Control List (ACL)**
 Amazon S3 access control lists (ACLs) enable you to manage access to buckets and objects. S3 access points for FSx only support the `bucket-owner-full-control` ACL value. Using any other ACL value will result in a `InvalidArgument` exception.
+<a name="access-points-for-fsxn-copy-objects"></a>
+**Copying objects**
+`CopyObject` and `UploadPartCopy` copy objects within the same AWS Region in the following directions:
++ From an Amazon S3 bucket to an access point attached to an FSx for ONTAP volume
++ From an access point attached to an FSx for ONTAP volume to an Amazon S3 bucket
++ Between two access points attached to Amazon FSx volumes, including between an FSx for ONTAP volume and an FSx for OpenZFS volume
+
+Copies between accounts are supported. When the destination is an access point attached to an Amazon FSx volume, the copied object is encrypted with SSE-FSX, and a request for any other server-side encryption returns a 400 `InvalidArgument` error. When the destination is an Amazon S3 bucket, the copy uses the server-side encryption in the request, or the bucket's default encryption. For the required permissions, see [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) and [UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html) in the *Amazon Simple Storage Service API Reference*.

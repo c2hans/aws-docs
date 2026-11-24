@@ -96,7 +96,7 @@ Your Lightsail OpenClaw instance is configured to use Amazon Bedrock to power it
 The setup script performs the following actions: creates an IAM role specifically for your OpenClaw instance, attaches a policy granting access to Amazon Bedrock APIs, attaches a policy granting AWS Marketplace permissions (required for third-party models), and configures the instance profile to use this role. You can review the IAM policy details in the [IAM console](https://console.aws.amazon.com/iam/) after running the script. The IAM role will be named `LightsailRoleFor-[your-instance-id]`.
 ![Copy the Bedrock script for IAM role creation using test data.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/openclaw/bedrock_script.png)
 
-1. Paste the copied command into the CloudShell terminal and press Enter.
+1. Paste the copied command into the CloudShell terminal and press **Enter**.
 
 1. Wait for the script to complete. When you see **Done** in the output, the permissions have been applied successfully.
 

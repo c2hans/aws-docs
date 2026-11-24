@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The runtime identifier for the web function (for example, a Node.js runtime identifier).
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-z][a-z0-9]*[0-9]+(\.[a-z0-9]+)*$`
+*Pattern*: `^([a-z][a-z0-9]*(\.[a-z0-9]+)*|arn:(aws[a-z-]*):lambda:[a-z0-9-]+:[0-9]{12}:.+)$`
 *Minimum*: `1`
-*Maximum*: `30`
+*Maximum*: `2048`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

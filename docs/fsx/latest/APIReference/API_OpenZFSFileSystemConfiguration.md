@@ -101,7 +101,7 @@ Required: No
  ** ThroughputCapacity **   <a name="FSx-Type-OpenZFSFileSystemConfiguration-ThroughputCapacity"></a>
 The throughput of an Amazon FSx file system, measured in megabytes per second (MBps).
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: No
 
  ** WeeklyMaintenanceStartTime **   <a name="FSx-Type-OpenZFSFileSystemConfiguration-WeeklyMaintenanceStartTime"></a>

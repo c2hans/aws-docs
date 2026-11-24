@@ -20,7 +20,7 @@ The GE metric is computed following the [Generalized Entropy Index](https://en.w
 ![Equation defining generalized entropy index with alpha parameter set to 2.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/clarify-post-training-bias-metric-ge.png)
 
 The following variables used to calculate GE are defined as follows:
-+ bi is the benefit received by the `ith` data point.
++ b<sub>i</sub> is the benefit received by the `ith` data point.
 + b' is the mean of all benefits.
 
 GE can range from 0 to 0.5, where values of zero indicate no inequality in benefits across all data points. This occurs either when all inputs are correctly predicted or when all the predictions are false positives. GE is undefined when all predictions are false negatives.

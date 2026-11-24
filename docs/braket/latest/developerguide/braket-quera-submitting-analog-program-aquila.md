@@ -31,29 +31,29 @@ The Aquila machine from QuEra simulates the following (time-dependent) Hamiltoni
 Access to local detuning is an [Experimental capability](https://docs.aws.amazon.com/braket/latest/developerguide/braket-experimental-capabilities.html) and is available by request through Braket Direct.
 
 where
-+ Hdrive,k​(t)=( 1/2 ​Ω(t)eiϕ(t)S−,k​ \+ 1/2 ​Ω(t)e−iϕ(t) S\+,k​) \+ (−Δglobal​(t)nk​),
++ H<sub>drive,k</sub>​(t)=( <sup>1</sup>/<sub>2</sub> ​Ω(t)e<sup>iϕ(t)</sup>S<sub>−,k</sub>​ \+ <sup>1</sup>/<sub>2</sub> ​Ω(t)e<sup>−iϕ(t)</sup> S<sub>\+,k​</sub>) \+ (−Δ<sub>global</sub>​(t)n<sub>k</sub>​),
   + Ω(t) is the time-dependent, global driving amplitude (aka Rabi frequency), in units of (rad / s)
   + ϕ(t) is the time-dependent, global phase, measured in radians
-  + S−,k​ and S\+,k​ are the spin lowering and raising operators of atom k (in the basis \|↓⟩=\|g⟩, \|↑⟩=\|r⟩, they are S−​=\|g⟩⟨r\|, S\+​=(S−​)†=\|r⟩⟨g\|)
-  + Δglobal​(t) is the time-dependent, global detuning
-  + nk ​is the projection operator on the Rydberg state of atom k (that is, n=\|r⟩⟨r\|)
-+ Hlocal detuning,k(t)=-Δlocal(t)hknk
-  + Δlocal(t) is the time-dependent factor of the local frequency shift, in units of (rad / s)
-  + hk is the site-dependent factor, a dimensionless number between 0.0 and 1.0
-+ Vvdw,k,l​=C6​/(dk,l​)6nk​nl​,
-  + C6​ is the van der Waals coefficient, in units of (rad / s) \* (m)^6
-  + dk,l ​is the Euclidean distance between atom k and l, measured in meters.
+  + S<sub>−,k​</sub> and S<sub>\+,k</sub>​ are the spin lowering and raising operators of atom k (in the basis \|↓⟩=\|g⟩, \|↑⟩=\|r⟩, they are S<sub>−</sub>​=\|g⟩⟨r\|, S<sub>\+</sub>​=(S<sub>−</sub>​)<sup>†</sup>=\|r⟩⟨g\|)
+  + Δ<sub>global</sub>​(t) is the time-dependent, global detuning
+  + n<sub>k</sub> ​is the projection operator on the Rydberg state of atom k (that is, n=\|r⟩⟨r\|)
++ H<sub>local detuning,k</sub>(t)=-Δ<sub>local</sub>(t)h<sub>k</sub>n<sub>k</sub>
+  + Δ<sub>local</sub>(t) is the time-dependent factor of the local frequency shift, in units of (rad / s)
+  + h<sub>k</sub> is the site-dependent factor, a dimensionless number between 0.0 and 1.0
++ V<sub>vdw,k,l</sub>​=C<sub>6​</sub>/(d<sub>k,l</sub>​)<sup>6</sup>n<sub>k</sub>​n<sub>l</sub>​,
+  + C<sub>6</sub>​ is the van der Waals coefficient, in units of (rad / s) \* (m)^6
+  + d<sub>k,l</sub> ​is the Euclidean distance between atom k and l, measured in meters.
 
 Users have control over the following parameters through the Braket AHS program schema.
-+ 2-d atom arrangement (xk​ and yk​ coordinates of each atom k, in units of um), which controls the pairwise atomic distances dk,l​ with k,l=1,2,…N
++ 2-d atom arrangement (x<sub>k</sub>​ and y<sub>k</sub>​ coordinates of each atom k, in units of um), which controls the pairwise atomic distances d<sub>k,l​</sub> with k,l=1,2,…N
 + Ω(t), the time-dependent, global Rabi frequency, in units of (rad / s)
 + ϕ(t), the time-dependent, global phase, in units of (rad)
-+ Δglobal​(t), the time-dependent, global detuning, in units of (rad / s)
-+ Δlocal(t), the time-dependent (global) factor of the magnitude of local detuning, in units of (rad / s)
-+ hk, the (static) site-dependent factor of the magnitude of local detuning, a dimensionless number between 0.0 and 1.0
++ Δ<sub>global</sub>​(t), the time-dependent, global detuning, in units of (rad / s)
++ Δ<sub>local</sub>(t), the time-dependent (global) factor of the magnitude of local detuning, in units of (rad / s)
++ h<sub>k</sub>, the (static) site-dependent factor of the magnitude of local detuning, a dimensionless number between 0.0 and 1.0
 
 **Note**
-The user cannot control which levels are involved (that is, S−​,S\+​, n operators are fixed) nor the strength of the Rydberg-Rydberg interaction coefficient (C6​).
+The user cannot control which levels are involved (that is, S<sub>−</sub>​,S<sub>\+​</sub>, n operators are fixed) nor the strength of the Rydberg-Rydberg interaction coefficient (C<sub>6</sub>​).
 
 ## Braket AHS program schema
 <a name="braket-quera-ahs-program-schema"></a>

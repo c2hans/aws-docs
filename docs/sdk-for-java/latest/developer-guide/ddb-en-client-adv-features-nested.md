@@ -907,6 +907,6 @@ Refer to the following table to see which null values are ignored for each mode.
 | Scalar value of a bean or map entry | Yes1 | No2 | No |
 | List or set | Yes | Yes | No |
 
-1This assumes the map already exists in DynamoDB. Any scalar value—null or not null—of the bean or map that you provide in the object for update requires that a path to the value exists in DynamoDB. The SDK constructs a path to the attribute by using the `. (dot)` dereference operator before it submits the request.
+<sup>1</sup>This assumes the map already exists in DynamoDB. Any scalar value—null or not null—of the bean or map that you provide in the object for update requires that a path to the value exists in DynamoDB. The SDK constructs a path to the attribute by using the `. (dot)` dereference operator before it submits the request.
 
-2Since you use `MAPS_ONLY` mode to fully replace or to add a bean or map, all null values in the bean or map are retained in the map saved to DynamoDB.
+<sup>2</sup>Since you use `MAPS_ONLY` mode to fully replace or to add a bean or map, all null values in the bean or map are retained in the map saved to DynamoDB.

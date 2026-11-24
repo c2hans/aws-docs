@@ -7,6 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # Amazon Cognito
 
 **Resource types**
++ [AWS::Cognito::CIMDPolicy](aws-resource-cognito-cimdpolicy.md)
 + [AWS::Cognito::IdentityPool](aws-resource-cognito-identitypool.md)
 + [AWS::Cognito::IdentityPoolPrincipalTag](aws-resource-cognito-identitypoolprincipaltag.md)
 + [AWS::Cognito::IdentityPoolRoleAttachment](aws-resource-cognito-identitypoolroleattachment.md)

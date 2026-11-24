@@ -17,6 +17,7 @@ Multi-Region Access Point opt-in Regions are currently only supported through AW
 + `Asia Pacific (Jakarta)`
 + `Asia Pacific (Melbourne)`
 + `Asia Pacific (Hyderabad)`
++ `Asia Pacific (Thailand)`
 + `Canada West (Calgary)`
 + `Europe (Zurich)`
 + `Europe (Milan)`

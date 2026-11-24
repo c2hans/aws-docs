@@ -38,8 +38,8 @@ With the DCGM exporter, you get `DCGM_FI_DEV_*` metrics, which cover utilization
 Inference engine metrics
 The vLLM, SGLang, and Ray solutions of OTel Container Insights collect the metrics of your model servers, including the engine metrics of Ray Serve LLM. The SGLang and Ray solutions need add-on version 8.0.0 or later. For more information, see [Solutions](container-insights-eks-otel-solutions.md).
 
-DRA correlation
-On clusters that allocate devices with Kubernetes Dynamic Resource Allocation (DRA), the add-on attributes device metrics to the pods that use them. For more information, see [Correlating DRA-allocated devices to pods with OTel Container Insights](container-insights-eks-otel-dra.md).
+Pod attribution for devices
+The add-on attributes GPU, AWS Trainium and Inferentia, and AWS Elastic Fabric Adapter (EFA) metrics to the pods that use each device. This works for devices that a device plugin allocates and for devices that Kubernetes Dynamic Resource Allocation (DRA) allocates. For more information, see [Accelerated compute](container-insights-eks-otel-accelerated-compute.md).
 
 No per-accelerator configuration
 Accelerator collection needs no configuration flags. A GPU node reports GPU metrics automatically.

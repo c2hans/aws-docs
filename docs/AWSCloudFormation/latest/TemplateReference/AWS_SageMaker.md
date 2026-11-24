@@ -35,6 +35,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SageMaker::ImageVersion](aws-resource-sagemaker-imageversion.md)
 + [AWS::SageMaker::InferenceComponent](aws-resource-sagemaker-inferencecomponent.md)
 + [AWS::SageMaker::InferenceExperiment](aws-resource-sagemaker-inferenceexperiment.md)
++ [AWS::SageMaker::InferenceRouter](aws-resource-sagemaker-inferencerouter.md)
 + [AWS::SageMaker::MlflowApp](aws-resource-sagemaker-mlflowapp.md)
 + [AWS::SageMaker::MlflowTrackingServer](aws-resource-sagemaker-mlflowtrackingserver.md)
 + [AWS::SageMaker::Model](aws-resource-sagemaker-model.md)

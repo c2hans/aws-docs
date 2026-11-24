@@ -22,7 +22,7 @@ This topic lists Connect Customer features and which languages they support.
 
 The following table lists the languages supported by AI features in Connect Customer. The language codes are [W3C language identification tags](https://www.w3.org/TR/ltli/#language-terminology) (ISO 639-3 for the language name and ISO 3166 for the country code).
 
-| Language | Language code | Amazon Connect AI Agents | Amazon Connect agentic voice | Automated performance evaluations† | Post-call analytics | Real-time call analytics | Email and Chat analytics | Post-contact summaries | Information extraction | Sentiment analysis | Redaction | Pattern match rules |
+| Language | Language code | Amazon Connect AI Agents | Amazon Connect agentic voice | Automated performance evaluations<sup>†</sup> | Post-call analytics | Real-time call analytics | Email and Chat analytics | Post-contact summaries | Information extraction | Sentiment analysis | Redaction | Pattern match rules |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Afrikaans (South Africa) | af\_ZA | ✓\* |  | ✓ | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Arabic (Gulf) | ar\_AE | ✓\* | ✓\* | ✓ | ✓\* | ✓\* | ✓\* |  |  | ✓\* |  | ✓\* |
@@ -107,7 +107,7 @@ The following table lists the languages supported by AI features in Connect Cust
 | Zulu (South Africa) | zu\_ZA | ✓\* |  | ✓ | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 + \* Not available in instances in the Africa (Cape Town) AWS Region and AWS GovCloud (US-West).
 + \*\* Redaction support is only for post-call analytics and chat analytics. It is not supported for real-time call analytics.
-+ † You can manually complete performance evaluations in any language. Automated performance evaluations filled using generative AI is not available in instances in the following AWS Regions: Africa (Cape Town), Asia Pacific (Mumbai), and AWS GovCloud (US-West).
++ † You can manually complete performance evaluations in any language. Automated performance evaluations filled using generative AI is not available in instances in the following AWS Regions: Asia Pacific (Mumbai) and AWS GovCloud (US-West).
 
 ### Contacts with more than one language
 <a name="supported-languages-multi-language"></a>

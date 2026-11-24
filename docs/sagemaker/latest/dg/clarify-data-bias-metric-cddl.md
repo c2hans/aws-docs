@@ -11,29 +11,29 @@ The demographic disparity metric (DD) determines whether a facet has a larger pr
 
 The formula for the demographic disparity for the less favored facet *d* is as follows:
 
-        DDd = nd(0)/n(0) - nd(1)/n(1) = PdR(y0) - PdA(y1)
+        DD<sub>d</sub> = n<sub>d</sub><sup>(0)</sup>/n<sup>(0)</sup> - n<sub>d</sub><sup>(1)</sup>/n<sup>(1)</sup> = P<sub>d</sub><sup>R</sup>(y<sup>0</sup>) - P<sub>d</sub><sup>A</sup>(y<sup>1</sup>)
 
 Where:
-+ n(0) = na(0) \+ nd(0) is the total number of rejected outcomes in the dataset for the favored facet *a* and disadvantaged facet *d*.
-+ n(1) = na(1) \+ nd(1) is the total number of accepted outcomes in the dataset for the favored facet *a* and disadvantaged facet *d*.
-+ PdR(y0) is the proportion of rejected outcomes (with value 0) in facet *d*.
-+ PdA(y1) is the proportion of accepted outcomes (value 1) in facet *d*.
++ n<sup>(0)</sup> = n<sub>a</sub><sup>(0) </sup>\+ n<sub>d</sub><sup>(0)</sup> is the total number of rejected outcomes in the dataset for the favored facet *a* and disadvantaged facet *d*.
++ n<sup>(1)</sup> = n<sub>a</sub><sup>(1) </sup>\+ n<sub>d</sub><sup>(1)</sup> is the total number of accepted outcomes in the dataset for the favored facet *a* and disadvantaged facet *d*.
++ P<sub>d</sub><sup>R</sup>(y<sup>0</sup>) is the proportion of rejected outcomes (with value 0) in facet *d*.
++ P<sub>d</sub><sup>A</sup>(y<sup>1</sup>) is the proportion of accepted outcomes (value 1) in facet *d*.
 
-For the college admission example, the demographic disparity for women is DDd = 0.46 - 0.32 = 0.14. For men DDa = 0.54 - 0.68 = - 0.14.
+For the college admission example, the demographic disparity for women is DD<sub>d</sub> = 0.46 - 0.32 = 0.14. For men DD<sub>a</sub> = 0.54 - 0.68 = - 0.14.
 
 A conditional demographic disparity (CDD) metric that conditions DD on attributes that define a strata of subgroups on the dataset is needed to rule out Simpson's paradox. The regrouping can provide insights into the cause of apparent demographic disparities for less favored facets. The classic case arose in the case of Berkeley admissions where men were accepted at a higher rate overall than women. The statistics for this case were used in the example calculations of DD. However, when departmental subgroups were examined, women were shown to have higher admission rates than men when conditioned by department. The explanation was that women had applied to departments with lower acceptance rates than men had. Examining the subgrouped acceptance rates revealed that women were actually accepted at a higher rate than men for the departments with lower acceptance rates.
 
-The CDD metric gives a single measure for all of the disparities found in the subgroups defined by an attribute of a dataset by averaging them. It is defined as the weighted average of demographic disparities (DDi) for each of the subgroups, with each subgroup disparity weighted in proportion to the number of observations in contains. The formula for the conditional demographic disparity is as follows:
+The CDD metric gives a single measure for all of the disparities found in the subgroups defined by an attribute of a dataset by averaging them. It is defined as the weighted average of demographic disparities (DD<sub>i</sub>) for each of the subgroups, with each subgroup disparity weighted in proportion to the number of observations in contains. The formula for the conditional demographic disparity is as follows:
 
-        CDD = (1/n)\*∑ini \*DDi
+        CDD = (1/n)<sub>\*</sub>∑<sub>i</sub>n<sub>i</sub> <sub>\*</sub>DD<sub>i</sub>
 
 Where:
-+ ∑ini = n is the total number of observations and niis the number of observations for each subgroup.
-+ DDi = ni(0)/n(0) - ni(1)/n(1) = PiR(y0) - PiA(y1) is the demographic disparity for the ith subgroup.
++ ∑<sub>i</sub>n<sub>i</sub> = n is the total number of observations and n<sub>i</sub>is the number of observations for each subgroup.
++ DD<sub>i</sub> = n<sub>i</sub><sup>(0)</sup>/n<sup>(0)</sup> - n<sub>i</sub><sup>(1)</sup>/n<sup>(1)</sup> = P<sub>i</sub><sup>R</sup>(y<sup>0</sup>) - P<sub>i</sub><sup>A</sup>(y<sup>1</sup>) is the demographic disparity for the ith subgroup.
 
-The demographic disparity for a subgroup (DDi) are the difference between the proportion of rejected outcomes and the proportion of accepted outcomes for each subgroup.
+The demographic disparity for a subgroup (DD<sub>i</sub>) are the difference between the proportion of rejected outcomes and the proportion of accepted outcomes for each subgroup.
 
-The range of DD values for binary outcomes for the full dataset DDd or for its conditionalized subgroups DDi is [-1, \+1].
+The range of DD values for binary outcomes for the full dataset DD<sub>d</sub> or for its conditionalized subgroups DD<sub>i</sub> is [-1, \+1].
 + \+1: when there no rejections in facet *a* or subgroup and no acceptances in facet *d* or subgroup
 + Positive values indicate there is a demographic disparity as facet *d* or subgroup has a greater proportion of the rejected outcomes in the dataset than of the accepted outcomes. The higher the value the less favored the facet and the greater the disparity.
 + Negative values indicate there is not a demographic disparity as facet *d* or subgroup has a larger proportion of the accepted outcomes in the dataset than of the rejected outcomes. The lower the value the more favored the facet.

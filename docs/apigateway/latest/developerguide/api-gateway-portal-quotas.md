@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 
 # Quotas for configuring portals in API Gateway
 
-The following quotas apply to creating portals in API Gateway. For more information, see [API Gateway portals](apigateway-portals.md).
+The following quotas apply to creating portals in API Gateway. For more information, see [API Gateway Portals](apigateway-portals.md).
 
 | Resource or operation | Default quota | Can be increased |
 | --- | --- | --- |

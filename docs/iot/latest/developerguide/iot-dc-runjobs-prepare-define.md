@@ -161,4 +161,4 @@ This procedure runs a job on only a single device.
 
 1. While the AWS IoT Device Client is running and waiting for a job, you can submit another job by changing the `job-id` value and re-running the **create-job** from Step 1.
 
-When you’re done running jobs, in the terminal window, enter ^C (control-C) to stop the AWS IoT Device Client.
+When you’re done running jobs, in the terminal window, enter **^C** (control-C) to stop the AWS IoT Device Client.

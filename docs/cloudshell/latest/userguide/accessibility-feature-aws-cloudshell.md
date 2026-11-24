@@ -9,18 +9,18 @@ This topic describes how to use accessibility features for CloudShell. You can u
 ## Keyboard navigation in CloudShell
 <a name="keyboard-navigation"></a>
 
-To navigate through the focusable elements on the page, press Tab.
+To navigate through the focusable elements on the page, press **Tab**.
 
 ## CloudShell terminal accessibility features
 <a name="cloudshell-accessibility-features"></a>
 
-You can use the Tab key in the following modes:
-+ **Terminal mode (Default)** – In this mode, the terminal captures your Tab key entry. After the focus is on the terminal, press Tab to access only the functionality of the terminal.
-+ **Navigation mode** – In this mode, the terminal doesn't capture your Tab key entry. Press Tab to navigate through the focusable elements on the page.
+You can use the **Tab** key in the following modes:
++ **Terminal mode (Default)** – In this mode, the terminal captures your **Tab** key entry. After the focus is on the terminal, press **Tab** to access only the functionality of the terminal.
++ **Navigation mode** – In this mode, the terminal doesn't capture your **Tab** key entry. Press **Tab** to navigate through the focusable elements on the page.
 
-To switch between terminal mode and navigation mode, press Ctrl\+M. After you switch back, **Tab: navigation** appears in the header, and you can use the Tab key to navigate through the page.
+To switch between terminal mode and navigation mode, press **Ctrl**\+**M**. After you switch back, **Tab: navigation** appears in the header, and you can use the **Tab** key to navigate through the page.
 
-To return to terminal mode, press Ctrl\+M. Or, choose X next to **Tab: navigation**.
+To return to terminal mode, press **Ctrl**\+**M**. Or, choose **X** next to **Tab: navigation**.
 
 **Note**
 Currently, CloudShell terminal accessibility features are not available on mobile devices.

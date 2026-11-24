@@ -16,13 +16,13 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| id | string | Yes 1 | Object ID. |
-| company\_id2 | string | No | Company ID. |
+| id | string | Yes <sup>1</sup> | Object ID. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
 | order\_creation\_date | timestamp | No | Order creation date. |
 | order\_type | string | No | Displays the type of order. Reserved order types in AWS Supply Chain:+  PO - Purchase order <br />+  TO - Transfer order <br />+  MO - Manufacturing order <br />+  BO - Blanket order <br />+  CO - Consumption order  |
 | order\_status | string | No | Status of the order. |
-| to\_site\_id2 | string | No | Site where the order will arrive. |
-| tpartner\_id2 | string | Yes1 | Trading partner that the order will be sent to. |
+| to\_site\_id<sup>2</sup> | string | No | Site where the order will arrive. |
+| tpartner\_id<sup>2</sup> | string | Yes<sup>1</sup> | Trading partner that the order will be sent to. |
 | order\_currency\_uom | string | No | Currency UOM that the company uses. |
 | vendor\_currency\_uom | string | No | Currency UOM that the vendor uses. |
 | exchange\_rate | double | No | Exchange rate used for conversion. |
@@ -44,9 +44,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source | string | No | Source of data. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

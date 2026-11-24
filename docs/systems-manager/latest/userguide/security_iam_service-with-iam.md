@@ -128,7 +128,7 @@ Quick Setup uses the prefix `ssm-quicksetup:` before actions.
 | Application (AWS AppConfig) | arn:aws:appconfig:{{region}}:{{account-id}}:application/{{application-id}} |
 | Association | arn:aws:ssm:{{region}}:{{account-id}}:association/{{association-id}} |
 | Automation execution | arn:aws:ssm:{{region}}:{{account-id}}:automation-execution/{{automation-execution-id}} |
-| Automation definition (with version subresource) | arn:aws:ssm:{{region}}:{{account-id}}:automation-definition/{{automation-definition-id}}:{{version-id}} **1** |
+| Automation definition (with version subresource) | arn:aws:ssm:{{region}}:{{account-id}}:automation-definition/{{automation-definition-id}}:{{version-id}} **<sup>1</sup>** |
 | Configuration profile (AWS AppConfig) | arn:aws:appconfig:{{region}}:{{account-id}}:application/{{application-id}}/configurationprofile/{{configurationprofile-id}} |
 | Contact (Incident Manager) | arn:aws:ssm-contacts:{{region}}:{{account-id}}:contact/{{contact-alias}} |
 | Deployment strategy (AWS AppConfig) | arn:aws:appconfig:{{region}}:{{account-id}}:deploymentstrategy/{{deploymentstrategy-id}} |
@@ -139,21 +139,21 @@ Quick Setup uses the prefix `ssm-quicksetup:` before actions.
 | Managed node | arn:aws:ssm:{{region}}:{{account-id}}:managed-instance/{{managed-node-id}} |
 | Managed node inventory | arn:aws:ssm:{{region}}:{{account-id}}:managed-instance-inventory/{{managed-node-id}} |
 | OpsItem | arn:aws:ssm:{{region}}:{{account-id}}:opsitem/{{OpsItem-id}} |
-| Parameter | A one-level parameter:+  arn:aws:ssm:{{region}}:{{account-id}}:parameter/{{parameter-name}}/ <br />A parameter named with a hierarchical construction:+  arn:aws:ssm:{{region}}:{{account-id}}:parameter/{{parameter-name-root}}/{{level-2}}/{{level-3}}/{{level-4}}/{{level-5}} **2**  |
+| Parameter | A one-level parameter:+  arn:aws:ssm:{{region}}:{{account-id}}:parameter/{{parameter-name}}/ <br />A parameter named with a hierarchical construction:+  arn:aws:ssm:{{region}}:{{account-id}}:parameter/{{parameter-name-root}}/{{level-2}}/{{level-3}}/{{level-4}}/{{level-5}} **<sup>2</sup>**  |
 | Patch baseline | arn:aws:ssm:{{region}}:{{account-id}}:patchbaseline/{{patch-baseline-id}}  |
 | Response plan | arn:aws:ssm-incidents:{{region}}:{{account-id}}:response-plan/{{response-plan-name}} |
-| Session | arn:aws:ssm:{{region}}:{{account-id}}:session/{{session-id}} **3** |
+| Session | arn:aws:ssm:{{region}}:{{account-id}}:session/{{session-id}} **<sup>3</sup>** |
 | All Systems Manager resources | arn:aws:ssm:\* |
 | All Systems Manager resources owned by the specified AWS account in the specified AWS Region | arn:aws:ssm:{{region}}:{{account-id}}:\* |
 
 **Note**
 Automation definition resources are being deprecated. Update your IAM policies to include an allow for `ssm:StartAutomationExecution` or `ssm:StartChangeRequestExecution` on `document` and `automation-execution` resources. To view best practices and examples for setting up IAM permissions, refer to our [Setting up identity based policies example](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup-identity-based-policies.html) user guide.
 
-**1** For automation definitions, Systems Manager supports a second-level resource, *version ID*. In AWS, these second-level resources are known as *subresources*. Specifying a version subresource for an automation definition resource lets you provide access to certain versions of an automation definition. For example, you might want to make sure that only the latest version of an automation definition is used in your node management.
+**<sup>1</sup>** For automation definitions, Systems Manager supports a second-level resource, *version ID*. In AWS, these second-level resources are known as *subresources*. Specifying a version subresource for an automation definition resource lets you provide access to certain versions of an automation definition. For example, you might want to make sure that only the latest version of an automation definition is used in your node management.
 
-**2** To organize and manage parameters, you can create names for parameters with a hierarchical construction. With hierarchical construction, a parameter name can include a path that you define by using forward slashes. You can name a parameter resource with a maximum of fifteen levels. We recommend that you create hierarchies that reflect an existing hierarchical structure in your environment. For more information, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
+**<sup>2</sup>** To organize and manage parameters, you can create names for parameters with a hierarchical construction. With hierarchical construction, a parameter name can include a path that you define by using forward slashes. You can name a parameter resource with a maximum of fifteen levels. We recommend that you create hierarchies that reflect an existing hierarchical structure in your environment. For more information, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
 
-**3** In most cases, the session ID is constructed using the ID of the account user who started the session, plus an alphanumeric suffix. For example:
+**<sup>3</sup>** In most cases, the session ID is constructed using the ID of the account user who started the session, plus an alphanumeric suffix. For example:
 
 ```
 arn:aws:us-east-2:111122223333:session/JohnDoe-1a2b3c4sEXAMPLE

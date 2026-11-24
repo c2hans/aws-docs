@@ -48,13 +48,10 @@ The cluster status is `ACTIVE`, and `kubectl get nodes` shows the nodes that run
 ## Step 1: Create a dynamic GPU NodePool
 <a name="gpu-nodepool-cli-create"></a>
 
-Define a NodePool that dynamically provisions G-family GPU instances with a generation greater than 4, using Spot capacity with On-Demand as a fallback. The EKS Auto Mode and Karpenter paths both use the same NodePool API with the only difference being the NodeClass it points to. In EKS Auto Mode, the bundled `default` NodeClass already selects the right AMI and configures SOCI parallel pull, so the NodePool is the only object you create. In self-managed Karpenter, you also need a custom `EC2NodeClass` that pins the AMI and tunes SOCI. Because the two paths use different AMIs, the instance constraints differ between them, as noted in each path.
+Define a NodePool that dynamically provisions G-family GPU instances with a generation greater than 4, using Spot capacity with On-Demand as a fallback. The EKS Auto Mode and Karpenter paths both use the same NodePool API with the only difference being the NodeClass it points to. In EKS Auto Mode, the bundled `default` NodeClass already selects the right AMI and configures SOCI parallel pull, so the NodePool is the only object you create. In self-managed Karpenter, you also need a custom `EC2NodeClass` that pins the AMI and tunes SOCI.
 
 ------
 #### [ EKS Auto Mode ]
-
-**Important**
-EKS Auto Mode does not support the `g7` instance family yet, which requires NVIDIA driver version 595 or later. Therefore, the NodePool in this path excludes the `g7` family. Other generation-7 instances, such as `g7e`, run on NVIDIA driver 580 and are supported. If you need `g7` support, use the self-managed Karpenter path with the EKS-optimized AL2023 NVIDIA AMI. For more information, see [EKS-optimized NVIDIA AMIs](ml-eks-optimized-ami.md#eks-amis-nvidia).
 
 In EKS Auto Mode, the bundled `default` NodeClass automatically selects the Bottlerocket AMI for GPU instances, which includes pre-installed NVIDIA drivers, the NVIDIA device plugin, and SOCI parallel pull. You only need to apply a NodePool that references the `default` NodeClass:
 
@@ -87,9 +84,6 @@ spec:
         - key: eks.amazonaws.com/instance-generation
           operator: Gt
           values: ["4"]
-        - key: eks.amazonaws.com/instance-family
-          operator: NotIn
-          values: ["g7"]
         - key: kubernetes.io/arch
           operator: In
           values: ["amd64"]
@@ -99,7 +93,7 @@ spec:
 EOF
 ```
 
-This NodePool provisions G-family GPU instances with a generation greater than 4, excluding the `g7` family (for example, [G5](https://aws.amazon.com/ec2/instance-types/g5/), [G6e](https://aws.amazon.com/ec2/instance-types/g6e/), and G7e). EKS Auto Mode chooses an instance type within these constraints.
+This NodePool provisions G-family GPU instances with a generation greater than 4 (for example, [G5](https://aws.amazon.com/ec2/instance-types/g5/), [G6e](https://aws.amazon.com/ec2/instance-types/g6e/), G7, and G7e). EKS Auto Mode chooses an instance type within these constraints.
 
 ------
 #### [ Self-managed Karpenter ]
@@ -201,7 +195,7 @@ The `amiFamily: al2023` label on the node template is what the NVIDIA device plu
 
 ------
 
-Unlike the EKS Auto Mode path, this NodePool does not cap the instance generation, because the EKS-optimized AL2023 NVIDIA AMI includes a driver version that supports `g7` instances. The EKS AL2023 AMI currently uses NVIDIA driver 580 on all EC2 instances except `g7`, which uses NVIDIA driver 595. For more information, see [EKS-optimized NVIDIA AMIs](ml-eks-optimized-ami.md#eks-amis-nvidia).
+The EKS-optimized AL2023 NVIDIA AMI includes a driver version that supports `g7` instances. The EKS AL2023 AMI currently uses NVIDIA driver 580 on all EC2 instances except `g7`, which uses NVIDIA driver 595. For more information, see [EKS-optimized NVIDIA AMIs](ml-eks-optimized-ami.md#eks-amis-nvidia).
 
 Validate the NodePool was created:
 
@@ -334,7 +328,7 @@ NAME            TYPE         CAPACITY   ZONE         NODE                  READY
 gpu-inf-vxcnj   g6.4xlarge   spot       us-east-2c   i-0fb17a09bc4203164   True    51s
 ```
 
-The instance type, capacity type, and Availability Zone vary. Any G-family instance that satisfies your NodePool’s generation constraint is eligible: greater than 4 for both paths, with the `g7` family excluded on the EKS Auto Mode path. Because the NodePool allows both `spot` and `on-demand`, the CAPACITY column shows `on-demand` instead of the `spot` shown here whenever that is the cheapest available offering.
+The instance type, capacity type, and Availability Zone vary. Any G-family instance that satisfies your NodePool’s generation constraint is eligible: greater than 4 for both paths. Because the NodePool allows both `spot` and `on-demand`, the CAPACITY column shows `on-demand` instead of the `spot` shown here whenever that is the cheapest available offering.
 
 The `FailedCreatePodSandBox` warning in `kubectl describe pod nvidia-smi` is transient and expected. The VPC CNI initializes asynchronously after the node joins, and the kubelet retries automatically. If the Pod stays in `ContainerCreating`, check node events with `kubectl describe node <node-name>`.
 
@@ -465,9 +459,6 @@ spec:
         - key: eks.amazonaws.com/instance-generation
           operator: Gt
           values: ["4"]
-        - key: eks.amazonaws.com/instance-family
-          operator: NotIn
-          values: ["g7"]
         - key: kubernetes.io/arch
           operator: In
           values: ["amd64"]

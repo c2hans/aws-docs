@@ -9,6 +9,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026 Updates
 <a name="nov26-release-notes"></a>
 
+### Amazon Connect Customer AI agents now fill in step-by-step guides
+<a name="nov26-guides-autofill"></a>
+
+AI agents in Amazon Connect Customer can now populate fields of a step-by-step guide for contact center agents during live customer interactions. With step-by-step guides, managers can design forms and other user interfaces for common workflows, such as rebooking a trip or submitting a claim. Now, AI agents can fill in a guide when it first loads and suggest updates during live conversations, saving time and improving data accuracy.
+
+For more information, see [Automatically fill step-by-step guides using AI agents](https://docs.aws.amazon.com/connect/latest/adminguide/autofill-guides.html).
+
 ### Amazon Connect Customer conversational analytics now analyzes calls in more than one language
 <a name="nov26-multi-language-analytics"></a>
 
@@ -1573,7 +1580,7 @@ The following GIF shows the **Notes** tab for the **Set disconnect flow** block.
 The flow designer includes shortcuts and buttons to help locate blocks with issues more efficiently.
 
 When publishing, if a block contains errors, you can choose the associated error message button to navigate directly to the problematic block.
-+ Additionally, use Ctrl \+ ; and Ctrl \+ ' to cycle between blocks with errors.
++ Additionally, use **Ctrl \+ ;** and **Ctrl \+ '** to cycle between blocks with errors.
 + Each block's issue is also clearly displayed in the block configuration panel
 
 The following GIF shows how to navigate to the problematic blocks.
@@ -1590,7 +1597,7 @@ The flow designer includes the following accessibility improvements: screen read
 #### Screen reader support
 <a name="screen-reader-support"></a>
 
-Changes made on the canvas are announced if the users have enabled screen reader, allowing users to better follow updates as they happen. On Windows the shortcut is Win\+Ctrl\+Enter and on Mac Cmd\+F5.
+Changes made on the canvas are announced if the users have enabled screen reader, allowing users to better follow updates as they happen. On Windows the shortcut is **Win\+Ctrl\+Enter** and on Mac **Cmd\+F5**.
 
 #### Reflow Mode
 <a name="reflow-mode"></a>

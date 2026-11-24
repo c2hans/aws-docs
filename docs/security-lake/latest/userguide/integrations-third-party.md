@@ -20,7 +20,7 @@ Service integrations can help you implement Security Lake and other AWS services
 
 To search for a specific partner provider, see the [Partner Solutions Finder](https://partners.amazonaws.com/search/partners/). To purchase a third-party product, see the [AWS Marketplace](https://aws.amazon.com/marketplace).
 
-To request to be added as a partner integration or become a Security Lake partner, send an email to securitylake-partners@amazon.com.
+To request to be added as a partner integration or become a Security Lake partner, send an email to [securitylake-partners@amazon.com](mailto:securitylake-partners@amazon.com).
 
 If you use third-party integrations that send findings to AWS Security Hub CSPM, you can also review those findings in Security Lake if the Security Hub CSPM integration for Security Lake is enabled. For instructions on enabling the integration, see [Integration with AWS Security Hub CSPM](securityhub-integration.md). For a list of third-party integrations that send findings to Security Hub CSPM, see [Available third-party partner product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-partner-providers.html) in the *AWS Security Hub User Guide*.
 

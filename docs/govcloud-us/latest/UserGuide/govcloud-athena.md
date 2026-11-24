@@ -112,29 +112,29 @@ Use the links in this section to download the latest ODBC 2.x driver for Athena.
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 2.4.0.0 for Linux x86\_64 |  [Linux x86\_64 ODBC driver 2.4.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Linux/AmazonAthenaODBC-2.4.0.0-x86_64.rpm)  |
+| ODBC 2.6.0.0 for Linux x86\_64 |  [Linux x86\_64 ODBC driver 2.6.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.6.0.0/Linux/AmazonAthenaODBC-2.6.0.0-x86_64.rpm)  |
 
 To verify the Linux package, download the following files:
-+  [Linux package public key](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Linux/public_key.pem)
-+  [Linux package signature](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Linux/signature.bin)
++  [Linux package public key](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.6.0.0/Linux/public_key.pem)
++  [Linux package signature](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.6.0.0/Linux/signature.bin)
 
 ### macOS
 <a name="_macos"></a>
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 2.4.0.0 for macOS |  [macOS ODBC driver 2.4.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Mac/AmazonAthenaODBC-2.4.0.0-macos11-universal.pkg)  |
+| ODBC 2.6.0.0 for macOS |  [macOS ODBC driver 2.6.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.6.0.0/Mac/AmazonAthenaODBC-2.6.0.0-macos11-universal.pkg)  |
 
 ### Windows
 <a name="_windows"></a>
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 2.4.0.0 for Windows amd64 |  [Windows amd64 ODBC driver 2.4.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Windows/AmazonAthenaODBC-2.4.0.0-windows-amd64.msi)  |
+| ODBC 2.6.0.0 for Windows amd64 |  [Windows amd64 ODBC driver 2.6.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.6.0.0/Windows/AmazonAthenaODBC-2.6.0.0-windows-amd64.msi)  |
 
 ### Licenses
 <a name="_licenses"></a>
-+  [AWS license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/LICENSE.txt)
++  [AWS license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.6.0.0/LICENSE.txt)
 
 ## Previous versions of the Athena ODBC 2.x driver
 <a name="odbc-v2-driver-previous-versions"></a>
@@ -146,6 +146,8 @@ We highly recommend that you use the latest version of the ODBC 2.x driver. The 
 
 | Driver version | Download link |
 | --- | --- |
+| ODBC 2.5.0.0 for Linux 64-bit |  [Linux 64 bit ODBC driver 2.5.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.5.0.0/Linux/AmazonAthenaODBC-2.5.0.0-x86_64.rpm)  |
+| ODBC 2.4.0.0 for Linux 64-bit |  [Linux 64 bit ODBC driver 2.4.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Linux/AmazonAthenaODBC-2.4.0.0-x86_64.rpm)  |
 | ODBC 2.2.0.1 for Linux 64-bit |  [Linux 64 bit ODBC driver 2.2.0.1](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.1/Linux/AmazonAthenaODBC-2.2.0.1-x86_64.rpm)  |
 | ODBC 2.2.0.0 for Linux 64-bit |  [Linux 64 bit ODBC driver 2.2.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.0/Linux/AmazonAthenaODBC-2.2.0.0-x86_64.rpm)  |
 | ODBC 2.1.0.0 for Linux 64-bit |  [Linux 64 bit ODBC driver 2.1.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.1.0.0/Linux/AmazonAthenaODBC-2.1.0.0.rpm)  |
@@ -161,6 +163,8 @@ We highly recommend that you use the latest version of the ODBC 2.x driver. The 
 
 | Driver version | Download link |
 | --- | --- |
+| ODBC 2.5.0.0 for macOS Universal |  [macOS Universal ODBC driver 2.5.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.5.0.0/Mac/AmazonAthenaODBC-2.5.0.0-macos11-universal.pkg)  |
+| ODBC 2.4.0.0 for macOS Universal |  [macOS Universal ODBC driver 2.4.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Mac/AmazonAthenaODBC-2.4.0.0-macos11-universal.pkg)  |
 | ODBC 2.2.0.1 for macOS Universal |  [macOS Universal ODBC driver 2.2.0.1](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.1/Mac/AmazonAthenaODBC-2.2.0.1-macos11-universal.pkg)  |
 | ODBC 2.2.0.0 for macOS Universal |  [macOS Universal ODBC driver 2.2.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.0/Mac/AmazonAthenaODBC-2.2.0.0-macos11-universal.pkg)  |
 | ODBC 2.1.0.0 for macOS 64-bit (ARM) |  [macOS 64 bit ODBC driver 2.1.0.0 (ARM)](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.1.0.0/Mac/AmazonAthenaODBC-2.1.0.0_arm.pkg)  |
@@ -183,6 +187,8 @@ We highly recommend that you use the latest version of the ODBC 2.x driver. The 
 
 | Driver version | Download link |
 | --- | --- |
+| ODBC 2.5.0.0 for Windows 64-bit |  [Windows 64 bit ODBC driver 2.5.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.5.0.0/Windows/AmazonAthenaODBC-2.5.0.0-windows-amd64.msi)  |
+| ODBC 2.4.0.0 for Windows 64-bit |  [Windows 64 bit ODBC driver 2.4.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/Windows/AmazonAthenaODBC-2.4.0.0-windows-amd64.msi)  |
 | ODBC 2.2.0.1 for Windows 64-bit |  [Windows 64 bit ODBC driver 2.2.0.1](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.1/Windows/AmazonAthenaODBC-2.2.0.1-windows-amd64.msi)  |
 | ODBC 2.2.0.0 for Windows 64-bit |  [Windows 64 bit ODBC driver 2.2.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.0/Windows/AmazonAthenaODBC-2.2.0.0-windows-amd64.msi)  |
 | ODBC 2.1.0.0 for Windows 64-bit |  [Windows 64 bit ODBC driver 2.1.0.0](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.1.0.0/Windows/AmazonAthenaODBC-2.1.0.0.msi)  |
@@ -199,6 +205,8 @@ We highly recommend that you use the latest version of the ODBC 2.x driver. The 
 
 ### Licenses
 <a name="odbc-v2-license-previous"></a>
++  [ODBC 2.5.0.0 license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.5.0.0/LICENSE.txt)
++  [ODBC 2.4.0.0 license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.4.0.0/LICENSE.txt)
 +  [ODBC 2.2.0.1 license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.1/LICENSE.txt)
 +  [ODBC 2.2.0.0 license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.2.0.0/LICENSE.txt)
 +  [ODBC 2.1.0.0 license](https://aws-analytics-downloads-us-gov-west-1.s3.us-gov-west-1.amazonaws.com/athena/ODBC/v2.1.0.0/LICENSE.txt)

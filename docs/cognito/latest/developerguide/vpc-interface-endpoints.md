@@ -38,11 +38,11 @@ The following table describes the authentication flows available to clients in V
 | Identity pool | SDK and REST API unauthenticated requests ([basic](authentication-flow.md#authentication-flow-basic) and [enhanced](authentication-flow.md#authentication-flow-enhanced) flows) | RCPs, VPC endpoint policies | RCPs |
 | Identity pool | SDK and REST API SigV4 authenticated requests ([developer-authenticated](authentication-flow.md#authentication-flow-developer) flow) | RCPs, identity-based policies | RCPs, identity-based policies |
 
-1 VPC endpoints don't accept requests for user pool domains. If the client has a route to the internet, NAT is applied, making the origin public.
+<sup>1</sup> VPC endpoints don't accept requests for user pool domains. If the client has a route to the internet, NAT is applied, making the origin public.
 
-2 The existence of a user pool domain prevents completion of any user pool requests that transit a VPC endpoint. Any client can take public transit paths *only * to the user pool domain and API service endpoints, making the VPC endpoint unusable for the user pool. User pools with domains assigned are incompatible with AWS PrivateLink.
+<sup>2</sup> The existence of a user pool domain prevents completion of any user pool requests that transit a VPC endpoint. Any client can take public transit paths *only * to the user pool domain and API service endpoints, making the VPC endpoint unusable for the user pool. User pools with domains assigned are incompatible with AWS PrivateLink.
 
-3 User pool must *not* have a domain assigned.
+<sup>3</sup> User pool must *not* have a domain assigned.
 
 ## Operational modes for AWS PrivateLink
 <a name="privatelink-operational-modes"></a>

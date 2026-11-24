@@ -130,9 +130,9 @@ The following table shows the mapping from MySQL data types to Parquet data type
   <tr><td>BIGINT</td><td>INT64</td><td></td><td> </td></tr>
   <tr><td>BIGINT UNSIGNED</td><td>FIXED_LEN_BYTE_ARRAY(9) </td><td>DECIMAL(20,0)</td><td>Parquet supports only signed types, so the mapping requires an additional byte (8 plus 1) to store the BIGINT_UNSIGNED type.</td></tr>
   <tr><td>BIT</td><td>BYTE_ARRAY</td><td></td><td> </td></tr>
-  <tr><td rowspan="4">DECIMAL</td><td>INT32</td><td>DECIMAL(p,s)</td><td>If the source value is less than 231, it's stored as INT32. </td></tr>
-  <tr><td>INT64</td><td>DECIMAL(p,s)</td><td>If the source value is 231 or greater, but less than 263, it's stored as INT64.</td></tr>
-  <tr><td>FIXED_LEN_BYTE_ARRAY(N)</td><td>DECIMAL(p,s)</td><td>If the source value is 263 or greater, it's stored as FIXED_LEN_BYTE_ARRAY(N).</td></tr>
+  <tr><td rowspan="4">DECIMAL</td><td>INT32</td><td>DECIMAL(p,s)</td><td>If the source value is less than 2<sup>31</sup>, it's stored as INT32. </td></tr>
+  <tr><td>INT64</td><td>DECIMAL(p,s)</td><td>If the source value is 2<sup>31</sup> or greater, but less than 2<sup>63</sup>, it's stored as INT64.</td></tr>
+  <tr><td>FIXED_LEN_BYTE_ARRAY(N)</td><td>DECIMAL(p,s)</td><td>If the source value is 2<sup>63</sup> or greater, it's stored as FIXED_LEN_BYTE_ARRAY(N).</td></tr>
   <tr><td>BYTE_ARRAY</td><td>STRING</td><td>Parquet doesn't support Decimal precision greater than 38. The Decimal value is converted to a string in a BYTE_ARRAY type and encoded as UTF8.</td></tr>
   <tr><td>DOUBLE</td><td>DOUBLE</td><td></td><td> </td></tr>
   <tr><td>FLOAT</td><td>DOUBLE</td><td></td><td> </td></tr>
@@ -140,9 +140,9 @@ The following table shows the mapping from MySQL data types to Parquet data type
   <tr><td>INT UNSIGNED</td><td>INT64</td><td></td><td> </td></tr>
   <tr><td>MEDIUMINT</td><td>INT32</td><td></td><td> </td></tr>
   <tr><td>MEDIUMINT UNSIGNED</td><td>INT64</td><td></td><td> </td></tr>
-  <tr><td rowspan="4"> NUMERIC</td><td>INT32</td><td>DECIMAL(p,s)</td><td>If the source value is less than 231, it's stored as INT32.</td></tr>
-  <tr><td>INT64</td><td>DECIMAL(p,s)</td><td>If the source value is 231 or greater, but less than 263, it's stored as INT64.</td></tr>
-  <tr><td>FIXED_LEN_ARRAY(N)</td><td>DECIMAL(p,s)</td><td>If the source value is 263 or greater, it's stored as FIXED_LEN_BYTE_ARRAY(N).</td></tr>
+  <tr><td rowspan="4"> NUMERIC</td><td>INT32</td><td>DECIMAL(p,s)</td><td>If the source value is less than 2<sup>31</sup>, it's stored as INT32.</td></tr>
+  <tr><td>INT64</td><td>DECIMAL(p,s)</td><td>If the source value is 2<sup>31</sup> or greater, but less than 2<sup>63</sup>, it's stored as INT64.</td></tr>
+  <tr><td>FIXED_LEN_ARRAY(N)</td><td>DECIMAL(p,s)</td><td>If the source value is 2<sup>63</sup> or greater, it's stored as FIXED_LEN_BYTE_ARRAY(N).</td></tr>
   <tr><td>BYTE_ARRAY</td><td>STRING</td><td>Parquet doesn't support Numeric precision greater than 38. This Numeric value is converted to a string in a BYTE_ARRAY type and encoded as UTF8.</td></tr>
   <tr><td>SMALLINT</td><td>INT32</td><td></td><td> </td></tr>
   <tr><td>SMALLINT UNSIGNED</td><td>INT32</td><td></td><td> </td></tr>

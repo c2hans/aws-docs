@@ -70,7 +70,7 @@ To preview the verification screens before you begin, view the [interactive Japa
 
 **What it verifies:** your business details and legal representative identity.
 
-**Before you start:** your business registration number and business address are filled automatically from your **Tax settings** in the Billing console. If your tax registration is incomplete, the verification form is unavailable — complete your tax information in **Tax settings** first, and then return to this page.
+**Before you start:** your business registration number and business address are filled automatically from your **Tax settings** in the Billing console. If your tax registration is incomplete, the verification form is unavailable — complete your tax information in **Tax settings** first (you can also reach **Tax settings** from **Update tax registration** on the **Tax and invoices** page in AWS Partner Central), and then return to this page.
 
 **To complete Japan verification**
 

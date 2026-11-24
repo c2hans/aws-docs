@@ -84,7 +84,7 @@ The following table details the AWS Regions that Nitro-based encryption is avail
 | Second-generation file systems | Single-AZ 2, Multi-AZ 2 | Nitro-based encryption is available in all AWS Regions where second-generation file systems are available. For more information, see [Availability by AWS Region](available-aws-regions.md). |
 | Third-generation file systems | Single-AZ 3, Multi-AZ 3 | Nitro-based encryption is available in all AWS Regions where third-generation file systems are available. For more information, see [Availability by AWS Region](available-aws-regions.md). |
 
-1 First-generation file systems created on or after November 28, 2022 support Nitro-based in-transit encryption in the listed AWS Regions.
+<sup>1</sup> First-generation file systems created on or after November 28, 2022 support Nitro-based in-transit encryption in the listed AWS Regions.
 
 For more information about the AWS Regions where FSx for ONTAP is available, see [Amazon FSx for NetApp ONTAP Pricing](https://aws.amazon.com/fsx/netapp-ontap/pricing/).
 

@@ -21,7 +21,7 @@ In general, you need a DataSync agent when copying data between an AWS storage s
   <tr><th>Location</th><th>Network interfaces created by default</th><th>Where network interfaces are created when using a public or FIPS endpoint</th><th>Where network interfaces are created when using a private (VPC) endpoint </th></tr>
 </thead>
 <tbody>
-  <tr><td>Amazon S3</td><td>4</td><td>N/A1</td><td>The subnet you specify when activating your DataSync agent.</td></tr>
+  <tr><td>Amazon S3</td><td>4</td><td>N/A<sup>1</sup></td><td>The subnet you specify when activating your DataSync agent.</td></tr>
   <tr><td>Amazon EFS</td><td>4</td><td colspan="2">The subnet you specify when creating the Amazon EFS location.</td></tr>
   <tr><td>Amazon FSx for Windows File Server</td><td>4</td><td colspan="2">The same subnet as the file system's preferred file server.</td></tr>
   <tr><td>Amazon FSx for Lustre</td><td>4</td><td colspan="2">The same subnet as the file system.</td></tr>
@@ -30,7 +30,7 @@ In general, you need a DataSync agent when copying data between an AWS storage s
 </tbody>
 </table>
 
-1 Network interfaces aren't needed because the DataSync service communicates directly with the S3 bucket.
+<sup>1</sup> Network interfaces aren't needed because the DataSync service communicates directly with the S3 bucket.
 
 ## Network interfaces for transfers without agents
 <a name="transfers-without-agents-enis"></a>
@@ -41,14 +41,14 @@ The total number of network interfaces depends on the DataSync locations in your
 
 | Location | Network interfaces created by default | Where network interfaces are created |
 | --- | --- | --- |
-| Amazon S3 | N/A1 | N/A1 |
+| Amazon S3 | N/A<sup>1</sup> | N/A<sup>1</sup> |
 | Amazon EFS | 2 | The subnet you specify when creating the Amazon EFS location. |
 | FSx for Windows File Server | 2 | The same subnet as the preferred file server for the file system. |
 | FSx for Lustre | 2 | The same subnet as the file system. |
 | FSx for OpenZFS | 2 | The same subnet as the file system. |
 | FSx for ONTAP | 2 | The same subnet as the file system. |
 
-1 Network interfaces aren't needed because the DataSync service communicates directly with the S3 bucket.
+<sup>1</sup> Network interfaces aren't needed because the DataSync service communicates directly with the S3 bucket.
 
 ## Viewing your network interfaces
 <a name="view-network-interfaces"></a>

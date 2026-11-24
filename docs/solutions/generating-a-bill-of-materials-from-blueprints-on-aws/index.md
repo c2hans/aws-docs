@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generating-a-bill-of-materials
 title: 'Guidance for Generating a Bill of Materials from Blueprints on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generating-a-bill-of-materials-from-blueprints-on-aws/
 source: aws-documentation
-generated_on: 2026-11-23
+generated_on: 2026-11-24
 ---
 
 # Guidance for Generating a Bill of Materials from Blueprints on AWS

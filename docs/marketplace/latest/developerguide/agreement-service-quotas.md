@@ -12,6 +12,7 @@ Your AWS account has the following quotas related to the AWS Marketplace Agreeme
 
 |  **API operation**  | **Request rate (per AWS account)** |
 | --- | --- |
+| AcceptAgreementApproval | 4 per second |
 | AcceptAgreementCancellationRequest | 2 per second |
 | AcceptAgreementPaymentRequest | 5 per second |
 | AcceptAgreementRequest | 3 per second |
@@ -19,23 +20,33 @@ Your AWS account has the following quotas related to the AWS Marketplace Agreeme
 | CancelAgreement | 3 per second |
 | CancelAgreementCancellationRequest | 2 per second |
 | CancelAgreementPaymentRequest | 5 per second |
+| CancelAgreementRequest | 4 per second |
 | CreateAgreementRequest | 4 per second |
 | DescribeAgreement | 5 per second |
+| GetAgreementApproval | 10 per second |
 | GetAgreementCancellationRequest | 5 per second |
+| GetAgreementContacts | 5 per second |
 | GetAgreementEntitlements | 10 per second |
 | GetAgreementPaymentRequest | 5 per second |
+| GetAgreementRequest | 10 per second |
+| GetAgreementRequestApprovalPlans | 10 per second |
+| GetAgreementRequestTerms | 10 per second |
 | GetAgreementTerms | 10 per second |
 | GetBillingAdjustmentRequest | 5 per second |
+| ListAgreementApprovals | 10 per second |
 | ListAgreementCancellationRequests | 5 per second |
 | ListAgreementCharges | 15 per second |
 | ListAgreementInvoiceLineItems | 10 per second |
 | ListAgreementPaymentRequests | 5 per second |
+| ListAgreementRequests | 10 per second |
 | ListBillingAdjustmentRequests | 5 per second |
+| RejectAgreementApproval | 4 per second |
 | RejectAgreementCancellationRequest | 2 per second |
 | RejectAgreementPaymentRequest | 5 per second |
 | SearchAgreements | 5 per second |
 | SendAgreementCancellationRequest | 2 per second |
 | SendAgreementPaymentRequest | 5 per second |
+| StartAgreementApprovals | 4 per second |
 | UpdatePurchaseOrders | 3 per second |
 
 **Agreement quotas**

@@ -65,7 +65,7 @@ Each dashboard page has its own **Time range**. If you change the **Time range**
 
 1. <a name="modify-visualization-zoom-in-point"></a>Double-click on a time range to zoom in on the selected point.
 
-1. <a name="modify-visualization-zoom-out-point"></a>Press Shift and then double-click on a time range to zoom out from the selected point.
+1. <a name="modify-visualization-zoom-out-point"></a>Press **Shift** and then double-click on a time range to zoom out from the selected point.
 
 **To shift the selected time range**
-+ <a name="modify-visualization-shift-range"></a>Press Shift and then drag the mouse on a time range to shift the range left or right.
++ <a name="modify-visualization-shift-range"></a>Press **Shift** and then drag the mouse on a time range to shift the range left or right.

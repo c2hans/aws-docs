@@ -63,7 +63,7 @@ AWS WAF has fixed quotas on the following entity settings per account per Region
 | Maximum combined size of all response body content for a single rule group or a single protection pack (web ACL) | 50 KB |
 | Maximum number of Geo match country codes inside a single GeoMatchStatement | 50 |
 
-\*Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond the basic protection pack (web ACL) price. For more information, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md) and [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
+\*For information about WCUs, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md). For pricing details, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
 \*\*By default, the body inspection limit is set to 16 KB for CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway resources, but you can increase this for any of these resources in your protection pack (web ACL) configuration, up to the listed maximum. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 

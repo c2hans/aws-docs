@@ -206,4 +206,4 @@ UpdateWebhook
 Required to update a webhook.
  **Resource:** `arn:aws:codebuild:{{region-ID}}:{{account-ID}}:project/{{project-name}} `
 
-¹ Used for permission only. There is no API for this action.
+<sup>¹ Used for permission only. There is no API for this action.</sup>

@@ -50,7 +50,7 @@ The following table shows the bucket capacity (or burst) and refill rate (or sus
 | Tag read actions |  +   `ListTagsForResource`   | 50 | 20 |
 | Setting modify actions |  +   `DeleteAccountSetting` <br />+   `PutAccountSetting` <br />+   `PutAccountSettingDefault`   | 10 | 1 |
 | Setting read actions |  +   `ListAccountSettings`   | 50 | 20 |
-| Cluster resource modify actions |  +  `DeleteAttributes` <br />+  `DeregisterContainerInstance` <br />+  `ExecuteCommand` <br />+  `PutAttributes` <br />+  `RunTask`[1](#note-1) <br />+  `StartTask` <br />+  `StopTask` <br />+  `UpdateContainerAgent` <br />+  `UpdateContainerInstancesStates`   | 100 | 40 |
+| Cluster resource modify actions |  +  `DeleteAttributes` <br />+  `DeregisterContainerInstance` <br />+  `ExecuteCommand` <br />+  `PutAttributes` <br />+  `RunTask`<sup>[1](#note-1)</sup> <br />+  `StartTask` <br />+  `StopTask` <br />+  `UpdateContainerAgent` <br />+  `UpdateContainerInstancesStates`   | 100 | 40 |
 | Cluster resource read actions |  +  `DescribeContainerInstances` <br />+  `DescribeTasks` <br />+  `ListAttributes` <br />+  `ListContainerInstances` <br />+  `ListTasks`   | 100 | 20 |
 | Agent modify actions |  +  `RegisterContainerInstance` <br />+  `SubmitAttachmentStateChanges` <br />+  `SubmitContainerStateChange` <br />+  `SubmitTaskStateChange`   | 200 | 120 |
 | Service modify actions |  +  `CreateDaemon` <br />+  `CreateExpressGatewayService` <br />+  `CreateService` <br />+  `DeleteDaemon` <br />+  `DeleteExpressGatewayService` <br />+  `DeleteService` <br />+  `UpdateDaemon` <br />+  `UpdateExpressGatewayService` <br />+  `UpdateService`   | 50 | 5 |
@@ -60,7 +60,7 @@ The following table shows the bucket capacity (or burst) and refill rate (or sus
 | Task protection actions |  +  `UpdateTaskProtection` <br />+  `GetTaskProtection`   | 200 | 80 |
 | Cluster service resource read actions |  +  `ListServicesByNamespace`   | 10 | 1 |
 
-<a name="note-1"></a>1 AWS Fargate additionally throttles Amazon ECS `RunTask` API to the rates listed [here](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/throttling.html) in the *Amazon ECS Developer Guide*.
+<a name="note-1"></a><sup>1</sup> AWS Fargate additionally throttles Amazon ECS `RunTask` API to the rates listed [here](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/throttling.html) in the *Amazon ECS Developer Guide*.
 
 ## Adjusting API throttling quotas
 <a name="throttling-increase"></a>

@@ -17,6 +17,6 @@ If you want to switch to a dial-in connection to a meeting, you can do so in the
 
 1. Use the dial-in number shown or select an international number.
 
-1. Enter the **Meeting ID** followed by the \# key when prompted.
+1. Enter the **Meeting ID** followed by the **\#** key when prompted.
 
 The Amazon Chime desktop client also prompts you to switch to dial-in if your internet connection is poor. When prompted, dial the number shown to rejoin the meeting.

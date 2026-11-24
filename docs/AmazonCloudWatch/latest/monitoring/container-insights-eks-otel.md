@@ -72,6 +72,8 @@ OTel Container Insights is disabled by default. To enable it, set `otelContainer
 
 Starting with add-on version v6.2.0, the add-on supports publishing metrics through both Enhanced Container Insights (Classic) and OTel Container Insights simultaneously. This allows you to validate the new metrics pipeline before fully migrating.
 
+Each of the following commands replaces the whole add-on configuration. If you set other configuration values, merge these values into your configuration instead, as described in [Configuring the Amazon EKS add-on](eks-observability-addon-configure.md#eks-observability-addon-configure-addon).
+
 To enable OTel Container Insights alongside Enhanced Container Insights (Classic), run the following command.
 
 ```bash
@@ -147,9 +149,8 @@ Use the following topics to set up and configure OTel Container Insights on your
 + [Deploy with Helm](container-insights-eks-otel-helm.md) — Deploy OTel Container Insights using the Helm chart for flexible, GitOps-friendly management.
 + [Deploy with CloudFormation](container-insights-eks-otel-cfn.md) — Deploy OTel Container Insights using a CloudFormation template.
 + [Sending logs to Amazon CloudWatch](container-insights-eks-otel-logs.md) — Configure log collection for your Amazon EKS clusters.
-+ [Advanced configuration](container-insights-eks-otel-advanced.md) — Customize and fine-tune OTel Container Insights for your environment.
-+ [Correlating DRA-allocated devices to pods with OTel Container Insights](container-insights-eks-otel-dra.md) — Attribute the metrics of EFA and Neuron devices that DRA allocates to the pods that use them.
++ [Accelerated compute](container-insights-eks-otel-accelerated-compute.md) — Collect GPU, AWS Trainium and Inferentia, and EFA metrics and attribute them to the pods that use each device.
 + [Custom telemetry](eks-observability-addon-custom-telemetry.md) — Send your own application telemetry to CloudWatch over OTLP, and scrape ServiceMonitor and PodMonitor targets.
 + [OpenTelemetry service identity](eks-observability-addon-service-identity.md) — Give each of your services one consistent name across its telemetry.
-+ [Standard telemetry attributes](eks-standard-telemetry-attributes.md) — See the resource attributes that the CloudWatch agent adds to your OpenTelemetry telemetry.
++ [Telemetry enrichment](eks-standard-telemetry-attributes.md) — See the OpenTelemetry resource attributes that the CloudWatch agent adds to your metrics, logs, and traces.
 + [Optimizing costs](eks-observability-addon-cost-controls.md) — Limit which namespaces, metrics, and Kubernetes labels the add-on sends.

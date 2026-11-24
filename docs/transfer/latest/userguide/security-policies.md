@@ -63,7 +63,7 @@ The FIPS-2024-05 and FIPS-2024-01 security policies are identical, except that F
 Transfer Family has introduced new restricted policies that closely parallel existing policies:
 The TransferSecurityPolicy-Restricted-2018-11 and TransferSecurityPolicy-2018-11 security policies are identical, except that the restricted policy doesn't support the `chacha20-poly1305@openssh.com` cipher.
 The TransferSecurityPolicy-Restricted-2020-06 and TransferSecurityPolicy-2020-06 security policies are identical, except that the restricted policy doesn't support the `chacha20-poly1305@openssh.com` cipher.
-\*In the following table, the `chacha20-poly1305@openssh.com` cipher is included in the non-restricted policy only,
+<sup>\*</sup>In the following table, the `chacha20-poly1305@openssh.com` cipher is included in the non-restricted policy only,
 
 | Security policy | [TransferSecurityPolicy-2025-03](#security-policy-transfer-2025-03) | [TransferSecurityPolicy-FIPS-2025-03](#security-policy-transfer-2025-03-fips) | [TransferSecurityPolicy-SshAuditCompliant-2025-02](#security-policy-transferSecurityPolicy-SshAuditCompliant-2025-02) | [TransferSecurityPolicy-AS2Restricted-2025-07](#security-policy-transfer-as2restricted-2025-07) | [TransferSecurityPolicy-2024-01](#security-policy-transfer-2024-01) |  **[TransferSecurityPolicy-FIPS-2024-01/TransferSecurityPolicy-FIPS-2024-05](#security-policy-transfer-fips-2024-01)**  | [TransferSecurityPolicy-2023-05](#security-policy-transfer-2023-05) | [TransferSecurityPolicy-FIPS-2023-05](#security-policy-transfer-fips-2023-05) | [TransferSecurityPolicy-2022-03](#security-policy-transfer-2022-03) |  **[TransferSecurityPolicy-2020-06 and TransferSecurityPolicy-Restricted-2020-06](#security-policy-transfer-2020-06)**  | [TransferSecurityPolicy-FIPS-2020-06](#security-policy-transfer-fips-2020-06) |  **[TransferSecurityPolicy-2018-11 and TransferSecurityPolicy-Restricted-2018-11](#security-policy-transfer-2018-11)**  |
 | --- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -74,7 +74,7 @@ The TransferSecurityPolicy-Restricted-2020-06 and TransferSecurityPolicy-2020-06
 | aes192-ctr | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ |
 | aes256-ctr | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ |
 | aes256-gcm@openssh.com | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ | ♦ |
-| chacha20-poly1305@openssh.com |  |  |  |  |  |  |  |  |  | ♦\* |  | ♦\* |
+| chacha20-poly1305@openssh.com |  |  |  |  |  |  |  |  |  | ♦<sup>\*</sup> |  | ♦<sup>\*</sup> |
 |  **SshKexs**  |
 | --- |
 | mlkem768x25519-sha256 | ♦ | ♦ |  | ♦ |  |  |  |  |  |  |  |  |

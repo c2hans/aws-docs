@@ -55,7 +55,7 @@ Precision measures how well an algorithm predicts the true positives (TP) out of
 The precision macro computes precision for multiclass classification problems. It does this by calculating precision for each class and averaging scores to obtain precision for several classes. `PrecisionMacro` scores range from zero (0) to one (1). Higher scores reflect the model's ability to predict true positives (TP) out of all of the positives that it identifies, averaged across multiple classes.
 
 **`R2`**
-R2, also known as the coefficient of determination, is used in regression to quantify how much a model can explain the variance of a dependent variable. Values range from one (1) to negative one (-1). Higher numbers indicate a higher fraction of explained variability. `R2` values close to zero (0) indicate that very little of the dependent variable can be explained by the model. Negative values indicate a poor fit and that the model is outperformed by a constant function. For linear regression, this is a horizontal line.
+R<sup>2</sup>, also known as the coefficient of determination, is used in regression to quantify how much a model can explain the variance of a dependent variable. Values range from one (1) to negative one (-1). Higher numbers indicate a higher fraction of explained variability. `R2` values close to zero (0) indicate that very little of the dependent variable can be explained by the model. Negative values indicate a poor fit and that the model is outperformed by a constant function. For linear regression, this is a horizontal line.
 
 **`Recall`**
 Recall measures how well an algorithm correctly predicts all of the true positives (TP) in a dataset. A true positive is a positive prediction that is also an actual positive value in the data. Recall is defined as follows: Recall = TP/(TP\+FN), with values ranging from 0 to 1. Higher scores reflect a better ability of the model to predict true positives (TP) in the data. It is used in binary classification.
@@ -93,7 +93,7 @@ Autopilot uses cross-validation to build models in hyperparameter optimization (
 ### K-fold splitting
 <a name="autopilot-cross-validation-kfold"></a>
 
-K-fold splitting is a method that separates an input training dataset into multiple training and validation datasets. The dataset is split into `k` equally-sized sub-samples called folds. Models are then trained on `k-1` folds and tested against the remaining kth fold, which is the validation dataset. The process is repeated `k` times using a different data set for validation.
+K-fold splitting is a method that separates an input training dataset into multiple training and validation datasets. The dataset is split into `k` equally-sized sub-samples called folds. Models are then trained on `k-1` folds and tested against the remaining k<sup>th</sup> fold, which is the validation dataset. The process is repeated `k` times using a different data set for validation.
 
 The following image depicts k-fold splitting with k = 4 folds. Each fold is represented as a row. The dark-toned boxes represent the parts of the data used in training. The remaining light-toned boxes indicate the validation datasets.
 

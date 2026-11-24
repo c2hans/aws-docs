@@ -133,9 +133,9 @@ If you encounter errors such as "Command not found" and "No such file or directo
       /usr/sbin/sendmail -vf {{sender@example.com}} {{recipient@example.com}}
       ```
 
-      Replace {{sender@example.com}} with your From email address. Replace {{recipient@example.com}} with the To address. When you finish, press Enter.
+      Replace {{sender@example.com}} with your From email address. Replace {{recipient@example.com}} with the To address. When you finish, press **Enter**.
 
-   1. Enter the following message content. Press Enter at the end of each line.
+   1. Enter the following message content. Press **Enter** at the end of each line.
 
       ```
       From: {{sender@example.com}}
@@ -145,6 +145,6 @@ If you encounter errors such as "Command not found" and "No such file or directo
       This is a test message sent from Amazon SES using Sendmail.
       ```
 
-      When you finish entering the content of the email, press Ctrl\+D to send it.
+      When you finish entering the content of the email, press **Ctrl\+D** to send it.
 
 1. Check the recipient email's client for the email. If you can't find the email, check the junk mail folder. If you still can't find the email, check the Sendmail log on your mail server. The log is often located at */var/log/mail.log* or */var/log/maillog*.

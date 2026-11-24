@@ -15,7 +15,7 @@ AWS services support access through public endpoints. Some AWS services also sup
 
 The following table lists the AWS services that provide dual stack support, IPv6 only support, and endpoints that support IPv6. We will update this table as we release additional support for IPv6. For the specifics about how a service supports IPv6, refer to the documentation for the service.
 
-| Service name | Dual stack support | IPv6 only support | Public endpoints support IPv6 | Private endpoints support IPv6 1 |
+| Service name | Dual stack support | IPv6 only support | Public endpoints support IPv6 | Private endpoints support IPv6 <sup>1</sup> |
 | --- | --- | --- | --- | --- |
 | AWS Amplify | Yes | No | Yes |  |
 | Amazon API Gateway | Yes | No | Yes | Yes |
@@ -210,17 +210,17 @@ The following table lists the AWS services that provide dual stack support, IPv6
 | Amazon WorkSpaces | [Yes](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-vpc.html) | No | Yes | Yes |
 | AWS X-Ray | Yes | No | Yes | Yes |
 
-1 An empty cell indicates that the service does not [integrate with AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/aws-services-privatelink-support.html).
+<sup>1</sup> An empty cell indicates that the service does not [integrate with AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/aws-services-privatelink-support.html).
 
-2 This entry represents IPv6 support for AWS AppSync GraphlQL and Event API configuration operations, through the [AWS AppSync SDK API](https://docs.aws.amazon.com/appsync/latest/APIReference/API_Operations.html). IPv6 is not supported for client connections to customer managed AWS AppSync GraphQL and Event APIs.
+<sup>2</sup> This entry represents IPv6 support for AWS AppSync GraphlQL and Event API configuration operations, through the [AWS AppSync SDK API](https://docs.aws.amazon.com/appsync/latest/APIReference/API_Operations.html). IPv6 is not supported for client connections to customer managed AWS AppSync GraphQL and Event APIs.
 
-3 This entry represents IPv6 support for Grafana *workspace management* operations, such as updating workspaces and workspace permissions. There is no IPv6 support for general Grafana workspace operations, such as creating and editing dashboards or querying data sources.
+<sup>3</sup> This entry represents IPv6 support for Grafana *workspace management* operations, such as updating workspaces and workspace permissions. There is no IPv6 support for general Grafana workspace operations, such as creating and editing dashboards or querying data sources.
 
-4 This entry represents IPv6 support for AWS Ground Station *control plane* operations, such as calling the [AWS Ground Station API](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_Operations.html). IPv6 is not supported by the AWS Ground Station *data plane*, so make sure the resources you are delivering data to (such as Amazon EC2 instances) are accessible over IPv4.
+<sup>4</sup> This entry represents IPv6 support for AWS Ground Station *control plane* operations, such as calling the [AWS Ground Station API](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_Operations.html). IPv6 is not supported by the AWS Ground Station *data plane*, so make sure the resources you are delivering data to (such as Amazon EC2 instances) are accessible over IPv4.
 
-5 This entry represents IPv6 support for Amazon IVS *control plane* operations, such as calling an [IVS endpoint](https://docs.aws.amazon.com/general/latest/gr/ivs.html).
+<sup>5</sup> This entry represents IPv6 support for Amazon IVS *control plane* operations, such as calling an [IVS endpoint](https://docs.aws.amazon.com/general/latest/gr/ivs.html).
 
-6 For more details on IPv6 support in AWS Transfer Family, visit [IPv6 limitations](https://docs.aws.amazon.com/transfer/latest/userguide/ipv6-support.html#ipv6-limitations).
+<sup>6</sup> For more details on IPv6 support in AWS Transfer Family, visit [IPv6 limitations](https://docs.aws.amazon.com/transfer/latest/userguide/ipv6-support.html#ipv6-limitations).
 
 ## Additional IPv6 support
 <a name="ipv6-support"></a>

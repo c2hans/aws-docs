@@ -135,7 +135,7 @@ Both paths show `0` nodes for `gpu-inf` until a GPU workload is scheduled. EKS A
 Immediately after the apply, the `READY` column can show `False` or `Unknown` for up to a minute, while Karpenter resolves the AMI, subnets, and security groups. Re-run the command until both objects report `True`.
 
 **Note**
-The `g7` instance family requires NVIDIA driver version 595 or later, and the two paths differ in whether they can run it. The EKS-optimized AL2023 NVIDIA AMI that the self-managed Karpenter path uses includes driver 595, so `g7` is eligible on that path. EKS Auto Mode does not support `g7` yet, so the EKS Auto Mode NodePool excludes that family. Other generation-7 families, such as `g7e`, run on driver 580 and are eligible on both paths. If a NodePool manifest in `nodepools/{{strategy}}/` constrains the instance generation or family differently than you need, edit it before you apply. For more information, see [EKS-optimized NVIDIA AMIs](ml-eks-optimized-ami.md#eks-amis-nvidia).
+The `g7` instance family requires NVIDIA driver version 595 or later. EKS Auto Mode and the EKS-optimized AL2023 NVIDIA AMI that the self-managed Karpenter path uses both select driver 595 or later for `g7` nodes, so `g7` is eligible on both paths. Other generation-7 families, such as `g7e`, run on driver 580 and are eligible on both paths. If a NodePool manifest under `nodepools/` constrains the instance generation or family differently than you need, edit it before you apply. For more information, see [EKS-optimized NVIDIA AMIs](ml-eks-optimized-ami.md#eks-amis-nvidia).
 
 ## Step 2: Test with a sample Pod
 <a name="gpu-nodepool-tf-test"></a>

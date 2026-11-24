@@ -68,3 +68,4 @@ The following sections describe the rules and best practices for using AWS Clien
 + You can't establish a VPN connection from a computer if there are multiple users logged into the operating system.
 + Client-to-client communication is not supported for IPv6 clients. If an IPv6 client tries to communicate with another IPv6 client, the traffic will be dropped.
 + IPv6 and dual-stack endpoints require that user devices and internet service providers (ISPs) support the corresponding IP configuration.
++ Client VPN does not support traffic initiated by resources in the associated VPCs or by resources in networks connected through the Transit Gateway.

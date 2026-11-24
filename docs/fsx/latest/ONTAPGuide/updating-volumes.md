@@ -15,6 +15,8 @@ You can update the configuration of an FSx for ONTAP volume using the Amazon FSx
 + Tiering policy cooling period
 + Copy tags to backups (using the AWS CLI and Amazon FSx API)
 
+You can also split a volume clone from its parent volume. For more information about clones, see [Volume clones](managing-volumes.md#volume-clones).
+
 For more information, see [Managing FSx for ONTAP volumes](managing-volumes.md).
 
 ## To update a volume configuration (console)
@@ -63,3 +65,36 @@ For more information, see [Managing FSx for ONTAP volumes](managing-volumes.md).
              StorageEfficiencyEnabled=true, \
              TieringPolicy=all
   ```
+
+## To split a clone from its parent (console)
+<a name="split-clone-console"></a>
+
+**Important**
+You can't undo a split. After the split, the volume no longer shares storage blocks with its parent and consumes up to its full size in additional SSD storage capacity. Make sure that the file system has enough available capacity before you split a clone.
+
+1. Open the Amazon FSx console at [https://console.aws.amazon.com/fsx/](https://console.aws.amazon.com/fsx/).
+
+1. In the left navigation pane, choose **Volumes**.
+
+1. Choose the clone that you want to split.
+
+1. From **Actions**, choose **Split clone from parent**.
+
+1. In the **Split clone from parent** dialog box, review the additional storage capacity that the clone will consume, and then type the volume name to confirm.
+
+1. Choose **Split clone**.
+
+The volume stays online and writable during the split. Splitting typically takes minutes to hours, depending on how much data the clone shares with its parent. You can follow the split's progress in the **Clone** column of the **Volumes** page.
+
+## To split a clone from its parent (CLI)
+<a name="split-clone-cli"></a>
+
+1. Use the [update-volume](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-volume.html) CLI command with `SplitAction=START`, as shown in the following example.
+
+   ```
+   aws fsx update-volume \
+       --volume-id {{fsvol-abcdef0123456789b}} \
+       --ontap-configuration 'CloneConfiguration={SplitAction=START}'
+   ```
+
+1. Use the [describe-volumes](https://docs.aws.amazon.com/cli/latest/reference/fsx/describe-volumes.html) CLI command to monitor the split. The `VOLUME_CLONE_SPLIT` administrative action shows the progress. When the split completes, `CloneConfiguration` no longer appears in the volume's description.

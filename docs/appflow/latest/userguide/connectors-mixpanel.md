@@ -94,21 +94,21 @@ When you create a flow that uses Mixpanel as the data source, you can transfer a
 | Annotations | /annotations |  +  from\_date   |
 | Cohorts | /cohorts/list | None |
 | Engage | /engage | None |
-| Events | /events |  +  event\* <br />+  from\_date\* <br />+  interval <br />+  to\_date\* <br />+  type\* <br />+  unit\* <br />+  workspace\_id   |
-| Events Names | /events/names |  +  limit <br />+  type\* <br />+  workspace\_id   |
-| Events Properties | /events/properties |  +  event\* <br />+  from\_date\* <br />+  interval <br />+  limit <br />+  name\* <br />+  to\_date\* <br />+  type\* <br />+  unit\* <br />+  workspace\_id   |
-| Events Properties Top | /events/properties/top |  +  event\* <br />+  limit <br />+  workspace\_id   |
-| Events Properties Values | /events/properties/values |  +  event\* <br />+  limit <br />+  name\* <br />+  workspace\_id   |
-| Events Top | /events/top |  +  limit <br />+  type\* <br />+  workspace\_id   |
-| Funnels | /funnels |  +  from\_date\* <br />+  funnel\_id\* <br />+  interval <br />+  length <br />+  length\_unit <br />+  limit <br />+  to\_date <br />+  unit\* <br />+  workspace\_id   |
-| Profile Event Activity | /stream/query |  +  distinct\_ids <br />+  from\_date\* <br />+  to\_date\* <br />+  workspace\_id   |
-| Retention | /retention/addiction |  +  addiction\_unit <br />+  event <br />+  from\_date\* <br />+  limit <br />+  to\_date\* <br />+  unit\* <br />+  workspace\_id   |
-| Segmentation | /segmentation |  +  event\* <br />+  from\_date\* <br />+  interval <br />+  limit <br />+  to\_date\* <br />+  type <br />+  unit <br />+  workspace\_id   |
-| Segmentation Average | /segmentation/average |  +  event\* <br />+  from\_date\* <br />+  on\* <br />+  to\_date\* <br />+  unit <br />+  workspace\_id   |
-| Segmentation Numeric | /segmentation/numeric |  +  event\* <br />+  from\_date\* <br />+  on\* <br />+  to\_date\* <br />+  type <br />+  unit <br />+  workspace\_id   |
-| Segmentation Sum | /segmentation/sum |  +  event\* <br />+  from\_date\* <br />+  on\* <br />+  to\_date\* <br />+  unit <br />+  workspace\_id   |
+| Events | /events |  +  event<sup>\*</sup> <br />+  from\_date<sup>\*</sup> <br />+  interval <br />+  to\_date<sup>\*</sup> <br />+  type<sup>\*</sup> <br />+  unit<sup>\*</sup> <br />+  workspace\_id   |
+| Events Names | /events/names |  +  limit <br />+  type<sup>\*</sup> <br />+  workspace\_id   |
+| Events Properties | /events/properties |  +  event<sup>\*</sup> <br />+  from\_date<sup>\*</sup> <br />+  interval <br />+  limit <br />+  name<sup>\*</sup> <br />+  to\_date<sup>\*</sup> <br />+  type<sup>\*</sup> <br />+  unit<sup>\*</sup> <br />+  workspace\_id   |
+| Events Properties Top | /events/properties/top |  +  event<sup>\*</sup> <br />+  limit <br />+  workspace\_id   |
+| Events Properties Values | /events/properties/values |  +  event<sup>\*</sup> <br />+  limit <br />+  name<sup>\*</sup> <br />+  workspace\_id   |
+| Events Top | /events/top |  +  limit <br />+  type<sup>\*</sup> <br />+  workspace\_id   |
+| Funnels | /funnels |  +  from\_date<sup>\*</sup> <br />+  funnel\_id<sup>\*</sup> <br />+  interval <br />+  length <br />+  length\_unit <br />+  limit <br />+  to\_date <br />+  unit<sup>\*</sup> <br />+  workspace\_id   |
+| Profile Event Activity | /stream/query |  +  distinct\_ids <br />+  from\_date<sup>\*</sup> <br />+  to\_date<sup>\*</sup> <br />+  workspace\_id   |
+| Retention | /retention/addiction |  +  addiction\_unit <br />+  event <br />+  from\_date<sup>\*</sup> <br />+  limit <br />+  to\_date<sup>\*</sup> <br />+  unit<sup>\*</sup> <br />+  workspace\_id   |
+| Segmentation | /segmentation |  +  event<sup>\*</sup> <br />+  from\_date<sup>\*</sup> <br />+  interval <br />+  limit <br />+  to\_date<sup>\*</sup> <br />+  type <br />+  unit <br />+  workspace\_id   |
+| Segmentation Average | /segmentation/average |  +  event<sup>\*</sup> <br />+  from\_date<sup>\*</sup> <br />+  on<sup>\*</sup> <br />+  to\_date<sup>\*</sup> <br />+  unit <br />+  workspace\_id   |
+| Segmentation Numeric | /segmentation/numeric |  +  event<sup>\*</sup> <br />+  from\_date<sup>\*</sup> <br />+  on<sup>\*</sup> <br />+  to\_date<sup>\*</sup> <br />+  type <br />+  unit <br />+  workspace\_id   |
+| Segmentation Sum | /segmentation/sum |  +  event<sup>\*</sup> <br />+  from\_date<sup>\*</sup> <br />+  on<sup>\*</sup> <br />+  to\_date<sup>\*</sup> <br />+  unit <br />+  workspace\_id   |
 
-\* You must specify this filter in your flow definition before Amazon AppFlow can successfully retrieve your data.
+<sup>\*</sup> You must specify this filter in your flow definition before Amazon AppFlow can successfully retrieve your data.
 
 ## Supported destinations
 <a name="mixpanel-reference-destinations"></a>

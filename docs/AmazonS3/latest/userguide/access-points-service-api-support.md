@@ -15,11 +15,11 @@ The following table is a partial list of Amazon S3 operations and if they are co
 
 For more information see, access point compatibility in the [*FSx for ONTAP User Guide*](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/access-points-for-fsxn-object-api-support.html) or the [*FSx for OpenZFS User Guide*](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/access-points-object-api-support.html).
 
-| S3 operation | Access point attached to an S3 bucket | Access point attached to an FSx for OpenZFS volume | Access point attached to an Amazon S3 recovery point in AWS Backup |
+| S3 operation | Access point attached to an S3 bucket | Access point attached to an FSx for ONTAP or FSx for OpenZFS volume | Access point attached to an Amazon S3 recovery point in AWS Backup |
 | --- | --- | --- | --- |
 | `[AbortMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html)` | Supported | Supported | Not supported |
 | `[CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)` | Supported | Supported | Not supported |
-| `[CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)` (same-Region copies only) | Supported | Supported, if source and destination are the same access point | Not supported |
+| `[CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)` (same-Region copies only) | Supported | Supported. For supported source and destination combinations, see access point compatibility in the [*FSx for ONTAP User Guide*](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/access-points-for-fsxn-object-api-support.html#access-points-for-fsxn-copy-objects) or the [*FSx for OpenZFS User Guide*](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/access-points-object-api-support.html#access-points-copy-objects). | Not supported |
 | `[CreateMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html)` | Supported | Supported | Not supported |
 | `[DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)` | Supported | Supported | Not supported |
 | `[DeleteObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html)` | Supported | Supported | Not supported |
@@ -50,4 +50,4 @@ For more information see, access point compatibility in the [*FSx for ONTAP User
 | `[PutObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html)` | Supported | Supported | Not supported |
 | `[RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html)` | Supported | Not supported | Not supported |
 | `[UploadPart](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html)` | Supported | Supported | Not supported |
-| `[UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html)` (same-Region copies only) | Supported | Supported, if source and destination are the same access point | Not supported |
+| `[UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html)` (same-Region copies only) | Supported | Supported. For supported source and destination combinations, see access point compatibility in the [*FSx for ONTAP User Guide*](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/access-points-for-fsxn-object-api-support.html#access-points-for-fsxn-copy-objects) or the [*FSx for OpenZFS User Guide*](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/access-points-object-api-support.html#access-points-copy-objects). | Not supported |

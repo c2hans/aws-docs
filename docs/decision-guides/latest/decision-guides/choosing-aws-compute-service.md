@@ -33,7 +33,7 @@ To get the most from your investment in these services, it's important to choose
 
  This guide helps you select the AWS compute services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](https://img.youtube.com/vi/E0dYLPXrX_w/0.jpg)](https://www.youtube.com/watch?v=E0dYLPXrX_w)
+[![AWS Videos](https://img.youtube.com/vi/E0dYLPXrX_w/0.jpg)](https://www.youtube.com/watch?v=E0dYLPXrX_w&t=1577s)
 
 This two-minute excerpt is from a presentation at re:Invent 2023 by Lorenzo Winfrey, an AWS Senior Business Development Specialist. He provides an overview of AWS compute application use cases.
 

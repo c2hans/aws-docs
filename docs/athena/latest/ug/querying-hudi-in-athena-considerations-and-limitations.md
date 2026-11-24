@@ -14,7 +14,7 @@ When you use Athena to read Apache Hudi tables, consider the following points.
 + **Cross account queries** – Version 0.15.0 of the Hudi connector does not support cross account queries.
 + **Query types** – Currently, Athena supports snapshot queries and read optimized queries, but not incremental queries. On MoR tables, all data exposed to read optimized queries are compacted. This provides good performance but does not include the latest delta commits. Snapshot queries contain the freshest data but incur some computational overhead, which makes these queries less performant. For more information about the tradeoffs between table and query types, see [Table & Query Types](https://hudi.apache.org/docs/table_types/) in the Apache Hudi documentation.
 + **Incremental queries** – Athena does not support incremental queries.
-+ **CTAS** – Athena does not support [CTAS](ctas.md) or [INSERT INTO](insert-into.md) on Hudi data. If you would like Athena support for writing Hudi datasets, send feedback to athena-feedback@amazon.com.
++ **CTAS** – Athena does not support [CTAS](ctas.md) or [INSERT INTO](insert-into.md) on Hudi data. If you would like Athena support for writing Hudi datasets, send feedback to [athena-feedback@amazon.com](mailto:athena-feedback@amazon.com).
 
   For more information about writing Hudi data, see the following resources:
   + [Working with a Hudi dataset](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hudi-work-with-dataset.html) in the [Amazon EMR Release Guide](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/).

@@ -33,17 +33,17 @@ You can audit the encryption status of traffic flows inside the VPC using the `e
 + `0` = not encrypted
 + `1` = nitro-encrypted (managed by VPC Encryption Controls)
 + `2` = application-encrypted
-  +  flows on TCP port 443 for interface endpoint to AWS service \*
-  +  flows on TCP port 443 for gateway endpoint \*
-  +  flows to encrypted Redshift cluster through VPC endpoint \*\*
+  +  flows on TCP port 443 for interface endpoint to AWS service <sup>\*</sup>
+  +  flows on TCP port 443 for gateway endpoint <sup>\*</sup>
+  +  flows to encrypted Redshift cluster through VPC endpoint <sup>\*\*</sup>
 + `3` = both nitro AND application encrypted
 + `(-)` = Encryption Status Unknown or VPC encryption controls is off
 
 **Note:**
 
-\* For interface and gateway endpoints, AWS does not look at packet data to determine encryption status, we instead rely on the port used to assume encryption status.
+<sup>\*</sup> For interface and gateway endpoints, AWS does not look at packet data to determine encryption status, we instead rely on the port used to assume encryption status.
 
-\*\* For specified AWS managed endpoints, AWS determines encryption status based on the requirement for TLS in the service configuration.
+<sup>\*\*</sup> For specified AWS managed endpoints, AWS determines encryption status based on the requirement for TLS in the service configuration.
 
 **VPC Flow Log limitations**
 + For enabling flow logs for VPC Encryption Controls, you need to create new flow logs with the encryption-status field manually. The encryption-status field is not automatically added to existing flow logs.

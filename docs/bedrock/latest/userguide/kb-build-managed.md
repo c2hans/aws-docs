@@ -39,6 +39,8 @@ The following table summarizes the key differences between Bedrock Managed and C
 + [Sync a data source](kb-managed-sync.md)
 + [View data source information for your Amazon Bedrock knowledge base](kb-managed-ds-info.md)
 + [Access Control Lists awareness enablement](kb-managed-acl.md)
++ [Use IAM Identity Center identities for ACL-aware retrieval](kb-managed-identity-idc.md)
++ [Use SAML federated identities for ACL-aware retrieval](kb-managed-identity-saml.md)
 + [Resource policies for managed knowledge bases](kb-managed-cross-account.md)
 + [Amazon Quick integration with managed knowledge bases](kb-managed-byo-fmkb.md)
 + [Connect to your knowledge base through AgentCore Gateway](kb-gateway-target.md)

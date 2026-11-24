@@ -17,8 +17,8 @@ The table below lists the column names supported by the *process\_operation* dat
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | process\_operation\_id | string | Yes | Type of process operation. |
-| process\_id1 | string | Yes | Process ID. For example, process, work order, or maintenance order. |
-| company\_id1 | string | No | Company ID. |
+| process\_id<sup>1</sup> | string | Yes | Process ID. For example, process, work order, or maintenance order. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
 | type | string | No | Type of operation within the process. For example, open machine. |
 | site\_location | string | No | Name of the location or section in site or plant. |
 | status | string | No | Status of the process. |
@@ -27,7 +27,7 @@ The table below lists the column names supported by the *process\_operation* dat
 | planned\_start\_dttm | timestamp | No | Planned start date-time of operation. |
 | planned\_end\_dttm | timestamp | No | Planned end date-time of operation. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

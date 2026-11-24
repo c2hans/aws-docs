@@ -86,11 +86,12 @@ Add the following as Delegated permissions in your Entra app registration. For t
 
 | Permission | Description |
 | --- | --- |
+| email | Allows the app to read the signed-in user's primary email address. |
+| Files.Read.All | Allows the app to read all files the signed-in user can access. |
 | Files.ReadWrite | Allows the app to read, create, update, and delete the signed-in user's files. |
-| Files.ReadWrite.All | Allows the app to read, create, update, and delete all files the signed-in user can access. |
 | offline\_access | Allows the app to refresh access tokens without requiring the user to sign in again. This reduces how often users need to re-authenticate. |
+| openid | Allows users to sign in to the app with their work or school accounts, and allows the app to see basic user profile information. |
 | Sites.Read.All | Allows the app to read documents and list items in all site collections on behalf of the signed-in user. |
-| User.Read | Allows the app to read the signed-in user's profile. |
 | User.Read.All | Allows the app to read the full set of profile properties of all users in the organization on behalf of the signed-in user. |
 
 ### Record your credentials

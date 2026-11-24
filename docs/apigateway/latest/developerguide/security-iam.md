@@ -14,6 +14,7 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 + [Amazon API Gateway identity-based policy examples](security_iam_id-based-policy-examples.md)
 + [Amazon API Gateway resource-based policy examples](security_iam_resource-based-policy-examples.md)
 + [Troubleshooting Amazon API Gateway identity and access](security_iam_troubleshoot.md)
++ [Identity and access management for API Portal](security-iam-apiportal.md)
 + [Using service-linked roles for API Gateway](using-service-linked-roles.md)
 
 ## Audience

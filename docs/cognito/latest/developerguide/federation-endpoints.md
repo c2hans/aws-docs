@@ -29,11 +29,11 @@ Examples of [user pool domains](cognito-user-pools-assign-domain.md) are:
 | https://{{Your user pool domain}}/saml2/idpresponse | The Assertion Consumer Response (ACS) URL for integration with SAML 2.0 identity providers. | Redirected from SAML 2.0 IdP as the ACS URL, or the origination point for IdP-initiated sign-in[3](#cognito-federation-idp-init-note). |
 | https://{{Your user pool domain}}/saml2/logout | The [Single Logout](cognito-user-pools-saml-idp-sign-out.md#cognito-user-pools-saml-idp-sign-out.title) (SLO) URL for integration with SAML 2.0 identity providers. | Redirected from SAML 2.0 IdP as the single logout (SLO) URL. Accepts POST binding only. |
 
-1 The `openid-configuration` document might be updated at any time with additional information that keeps the endpoint compliant with the OIDC and OAuth2 specifications.
+<sup>1</sup> The `openid-configuration` document might be updated at any time with additional information that keeps the endpoint compliant with the OIDC and OAuth2 specifications.
 
-2The `jwks.json` JSON file can be updated at any time with new public token signing keys.
+<sup>2</sup>The `jwks.json` JSON file can be updated at any time with new public token signing keys.
 
-3 For more information about IdP-initiated SAML sign-in, see [Implement IdP-initiated SAML sign-in](cognito-user-pools-SAML-session-initiation.md#cognito-user-pools-SAML-session-initiation-idp-initiation).
+<sup>3</sup> For more information about IdP-initiated SAML sign-in, see [Implement IdP-initiated SAML sign-in](cognito-user-pools-SAML-session-initiation.md#cognito-user-pools-SAML-session-initiation-idp-initiation).
 
 For more information on the OpenID Connect and OAuth standards, see [OpenID Connect 1.0](http://openid.net/specs/openid-connect-core-1_0.html) and [OAuth 2.0](https://tools.ietf.org/html/rfc6749).
 

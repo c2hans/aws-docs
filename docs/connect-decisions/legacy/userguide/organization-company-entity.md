@@ -27,12 +27,12 @@ The table below lists the column names supported by the data entity.
 | country | string | No | Country where the company is located. |
 | phone\_number | string | No | Company's contact number. |
 | time\_zone | string | No | Company's local time zone. |
-| calendar\_id 1 | string | No | Default calendar that the company uses for planning. |
+| calendar\_id <sup>1</sup> | string | No | Default calendar that the company uses for planning. |
 | source | string | No | Source of data. |
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

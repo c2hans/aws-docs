@@ -227,7 +227,7 @@ If you don't set a value for this parameter, then TCP is used. However, Amazon E
 For more information, see [Use Service Connect to connect Amazon ECS services with short names](service-connect.md).
 Valid protocol values: `"http" | "http2" | "grpc" `
 **Protocol can't be changed after creation**
-After you create a Service Connect service, you can't change the `appProtocol` of the port mapping that the service uses. If a service update changes the value, the service returns an error similar to the following:
+After you create a Service Connect service, you can't change the `appProtocol` of the port mapping that the service uses. Service Connect returns an error similar to the following if a service update changes the value:
 
 ```
 The following config cannot be changed for a SC service.

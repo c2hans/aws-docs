@@ -16,9 +16,9 @@ The table below lists the column names supported by the *supply\_planning\_param
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| product\_id1 | string | Yes | ID of product |
-| product\_group\_id1 | string | Yes |  For future Use. Please populate SCN\_RESERVED\_NO\_VALUE\_PROVIDED for now. |
-| site\_id1 | string | Yes | For future Use. Please populate SCN\_RESERVED\_NO\_VALUE\_PROVIDED for now. |
+| product\_id<sup>1</sup> | string | Yes | ID of product |
+| product\_group\_id<sup>1</sup> | string | Yes |  For future Use. Please populate SCN\_RESERVED\_NO\_VALUE\_PROVIDED for now. |
+| site\_id<sup>1</sup> | string | Yes | For future Use. Please populate SCN\_RESERVED\_NO\_VALUE\_PROVIDED for now. |
 | planner\_name | string | No | name of the supply planner who manages a product or a product group |
 | demand\_time\_fence\_days | int | No | For future Use. |
 | forecast\_consumption\_backward\_days | int | No | For future Use |
@@ -27,7 +27,7 @@ The table below lists the column names supported by the *supply\_planning\_param
 | eff\_end\_date | timestamp | Yes | effective end date time |
 | connection\_id | string | Yes | Unique identifier for the data source (i.e. connection). Auto populated by ASC. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

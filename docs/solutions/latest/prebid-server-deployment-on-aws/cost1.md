@@ -22,7 +22,7 @@ The following assumptions apply for calculating the cost:
 + The cost breakdown per month includes deploying this solution with the default parameters in the US East (N. Virginia) Region.
 + The Fargate to Fargate Spot pricing ratio is 1:1. With Fargate Spot instances, customers can run interrupt-tolerant Amazon ECS tasks on spare capacity at up to a 70% discount off of the regular Fargate instance price. For more information, see [AWS Fargate Pricing](https://aws.amazon.com/fargate/pricing/).
 + Each ad request to the solution is 0.5 KB, and the response to the browser is 1 KB. Each ad request goes to three bidders over the public internet through the NAT gateways. Bid requests are 10 KB uncompressed (10,000 bytes), and bid responses average 1 KB (half are bids of about 2 KB, half are no-bids).
-+ Data volumes are in binary units (1 GiB = 230 bytes, 1 TB = 1,024 GiB), and prices quoted per GB apply to GiB.
++ Data volumes are in binary units (1 GiB = 2<sup>30</sup> bytes, 1 TB = 1,024 GiB), and prices quoted per GB apply to GiB.
 
 ### Sample cost table 1
 <a name="sample-cost-table-1"></a>
@@ -134,7 +134,7 @@ The following table provides a sample cost breakdown for one month in the US Eas
 | Other services | AWS CloudTrail, AWS DataSync, AWS Lambda, Amazon VPC gateway endpoint, and IAM | $2.00 |
 |  |  **Total:**  |  **$8,318.47**  |
 
-The amounts in this table are On-Demand, without free tier or discounts. Each ad request is 0.5 KB and the browser response is 1 KB. Each ad request goes to 3 bidders over the public internet, with 10 KB (10,000 byte) bid requests and 1 KB average bid responses. Data volumes are in GiB (230 bytes), and data transfer out uses the tiered rates for US East (N. Virginia). With the default `SpotInstanceWeight` of 1, about half of the Fargate tasks run on Fargate Spot, which lowers the Fargate line. The Other services line does not include invocations of the cache Lambda function, whose cost depends on how many bid responses are cached.
+The amounts in this table are On-Demand, without free tier or discounts. Each ad request is 0.5 KB and the browser response is 1 KB. Each ad request goes to 3 bidders over the public internet, with 10 KB (10,000 byte) bid requests and 1 KB average bid responses. Data volumes are in GiB (2<sup>30</sup> bytes), and data transfer out uses the tiered rates for US East (N. Virginia). With the default `SpotInstanceWeight` of 1, about half of the Fargate tasks run on Fargate Spot, which lowers the Fargate line. The Other services line does not include invocations of the cache Lambda function, whose cost depends on how many bid responses are cached.
 
 Sending bid requests through AWS RTB Fabric replaces the NAT gateway data processing and data transfer out to the internet rows. For details, see [AWS RTB Fabric cost comparison](#rtb-fabric-cost).
 
@@ -164,6 +164,6 @@ The following table provides a sample cost breakdown for one month in the US Eas
 | Other services | AWS CloudTrail, AWS DataSync, AWS Lambda, Amazon VPC gateway endpoint, and IAM | $2.00 |
 |  |  **Total:**  |  **$44,004.35**  |
 
-The amounts in this table are On-Demand, without free tier or discounts. Each ad request is 0.5 KB and the browser response is 1 KB. Each ad request goes to 3 bidders over the public internet, with 10 KB (10,000 byte) bid requests and 1 KB average bid responses. Data volumes are in GiB (230 bytes), and data transfer out uses the tiered rates for US East (N. Virginia). With the default `SpotInstanceWeight` of 1, about half of the Fargate tasks run on Fargate Spot, which lowers the Fargate line. The Other services line does not include invocations of the cache Lambda function, whose cost depends on how many bid responses are cached.
+The amounts in this table are On-Demand, without free tier or discounts. Each ad request is 0.5 KB and the browser response is 1 KB. Each ad request goes to 3 bidders over the public internet, with 10 KB (10,000 byte) bid requests and 1 KB average bid responses. Data volumes are in GiB (2<sup>30</sup> bytes), and data transfer out uses the tiered rates for US East (N. Virginia). With the default `SpotInstanceWeight` of 1, about half of the Fargate tasks run on Fargate Spot, which lowers the Fargate line. The Other services line does not include invocations of the cache Lambda function, whose cost depends on how many bid responses are cached.
 
 Sending bid requests through AWS RTB Fabric replaces the NAT gateway data processing and data transfer out to the internet rows. For details, see [AWS RTB Fabric cost comparison](#rtb-fabric-cost).

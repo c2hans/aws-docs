@@ -21,7 +21,7 @@ Free text search is *not* case sensitive.
 Search terms require a minimum of three characters and have a maximum of 20 characters.
 Free text search accepts up to five search terms.
 If you enter a space between search terms, the system includes the space when searching.
-You can combine free text search with other search options such as **Document type** or **Platform type**.
+You can combine free text search with other search options such as **Platform types** or **Cloud providers**.
 The **Document Name Prefix** filter and free text search can't be used together. they're mutually exclusive.
 
 **To search for an SSM document**
@@ -71,8 +71,8 @@ The **Document Name Prefix** filter and free text search can't be used together.
 The Systems Manager **Documents** page automatically displays the following filters when you choose the search box.
 + Document name prefix
 + Platform types
-+ Document type
 + Tag key
++ Cloud providers
 
 ![Filter options on SSM Documents page.](https://docs.aws.amazon.com/systems-manager/latest/userguide/images/ssm-documents-filters-1.png)
 
@@ -86,6 +86,12 @@ If you apply multiple filters, Systems Manager creates different search statemen
 
 **Note**
 Searches that use filters are case sensitive.
+
+When you choose one or more values for the **Cloud providers** filter, Systems Manager returns the documents whose default version can run against any of those cloud providers. If you created a document before cloud providers were available ([2026-11-24](systems-manager-release-history.md)), the document matches **AWS**. To use this filter with the AWS CLI or API, specify the `CloudProviders` filter key, as in the following example.
+
+```sh
+aws ssm list-documents --filters Key=CloudProviders,Values=Azure
+```
 
 ## Adding documents to your favorites
 <a name="favorite-documents"></a>

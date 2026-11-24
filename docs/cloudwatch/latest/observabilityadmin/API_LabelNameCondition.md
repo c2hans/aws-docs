@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
  The label name to match, supporting alphanumeric characters, underscores, hyphens, and colons.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `[0-9A-Za-z_\-:]+`
+Pattern: `[0-9A-Za-z_\-:.]+`
 Required: No
 
 ## See Also

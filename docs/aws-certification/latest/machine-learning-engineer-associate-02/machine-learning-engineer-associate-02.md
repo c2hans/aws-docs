@@ -95,10 +95,10 @@ The exam includes 15 unscored questions that do not affect your score. AWS colle
 ### Exam results
 <a name="machine-learning-engineer-associate-02-exam-results"></a>
 
-The AWS Certified Machine Learning Engineer - Associate (MLA-C02) exam has a pass or fail designation.1 The exam is scored against a minimum standard established by AWS professionals who follow certification industry best practices and guidelines.
+The AWS Certified Machine Learning Engineer - Associate (MLA-C02) exam has a pass or fail designation.<sup>1</sup> The exam is scored against a minimum standard established by AWS professionals who follow certification industry best practices and guidelines.
 
 **Note**
-1 Does not apply to the beta version of the exam. You can find more information about beta exams in general on the [AWS Certification website](https://aws.amazon.com/certification/policies/before-testing/).
+<sup>1</sup> Does not apply to the beta version of the exam. You can find more information about beta exams in general on the [AWS Certification website](https://aws.amazon.com/certification/policies/before-testing/).
 
 Your results for the exam are reported as a scaled score of 100–1,000. The minimum passing score is 720. Your score shows how you performed on the exam as a whole and whether you passed. Scaled scoring models help equate scores across multiple exam forms that might have slightly different difficulty levels.
 

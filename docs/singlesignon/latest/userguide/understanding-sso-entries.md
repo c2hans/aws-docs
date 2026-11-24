@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/understand
 
 A trail is a configuration that enables delivery of events to an Amazon S3 bucket that you specify. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail events aren't an ordered stack trace of the public API calls, so they do not appear in any specific order. Learn about the [contents of a CloudTrail record](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html) in the *CloudTrail User Guide*.
 
+For details on CloudTrail logging with the simplified experience for trusted identity propagation, see [Identity context fields in AWS CloudTrail (simplified experience)](sso-info-in-cloudtrail.md#sso-cloudtrail-simplified-tip-fields).
+
 This example demonstrates a CloudTrail log entry capturing a `DescribePermissionsPolicies` action performed by an IAM user (samadams) interacting with IAM Identity Center:
 
 ```

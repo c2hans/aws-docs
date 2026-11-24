@@ -77,7 +77,7 @@ You can complete the entire tutorial in one sitting, or you can complete it one 
 
 By completing this tutorial, you might incur costs for the AWS resources that you create.
 
-You can use Amazon EC2 under the [Free Tier](https://aws.amazon.com/free/) provided your AWS account qualifies for the Free Tier and you configure your resources according to the Free Tier requirements. For more information, [Free Tier benefits before and after July 15, 2025](ec2-free-tier-usage.md#ec2-free-tier-comparison).
+You can use Amazon EC2 under the [Free Tier](https://aws.amazon.com/free/) provided your AWS account qualifies for the Free Tier and you configure your resources according to the Free Tier requirements. For more information, [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 
 If your EC2 instance and your RDS database are in different Availability Zones, you will incur data transfer fees. To avoid incurring these fees, the EC2 instance and the RDS database must be in the same Availability Zone. For information about data transfer fees, see [Data Transfer](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer) on the Amazon EC2 On-Demand Pricing page.
 

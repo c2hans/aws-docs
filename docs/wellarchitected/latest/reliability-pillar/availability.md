@@ -39,7 +39,7 @@ This is often measured for one-minute or five-minute periods. Then a monthly upt
 
  **Calculating availability with hard dependencies.** Many systems have hard dependencies on other systems, where an interruption in a dependent system directly translates to an interruption of the invoking system. This is opposed to a soft dependency, where a failure of the dependent system is compensated for in the application. Where such hard dependencies occur, the invoking system’s availability is the product of the dependent systems’ availabilities. For example, if you have a system designed for 99.99% availability that has a hard dependency on two other independent systems that each are designed for 99.99% availability, the workload can theoretically achieve 99.97% availability:
 
- Availinvok × Avail*dep1* × Avail*dep2* = Availworkload
+ Avail<sub>invok</sub> × Avail<sub>*dep1*</sub> × Avail<sub>*dep2*</sub> = Avail<sub>workload</sub>
 
  99.99% × 99.99% × 99.99% = 99.97%
 
@@ -49,7 +49,7 @@ This is often measured for one-minute or five-minute periods. Then a monthly upt
 
 ![Diagram showing calculation of availability with redundant components in a system.](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/image2.png)
 
- Availeffective = *Avail*MAX − ((100%−Availdependency)×(100%−Availdependency))
+ Avail<sub>effective</sub> = *Avail*<sub>MAX</sub> − ((100%−Avail<sub>dependency</sub>)×(100%−Avail<sub>dependency</sub>))
 
  99.9999% = 100% − (0.1%×0.1%)
 

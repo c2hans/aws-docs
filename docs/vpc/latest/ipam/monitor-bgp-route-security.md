@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/monitor-bgp-route-securi
 
 # Monitor BGP route protection
 
-IPAM BGP route protection monitors Resource Public Key Infrastructure (RPKI) validity for all Bring Your Own IP (BYOIP) prefixes across accounts and Regions from a single dashboard, detects route overlaps that may indicate hijacking, and, with delegated RPKI, eliminates manual Route Origin Authorization (ROA) management at ARIN, RIPE, APNIC, LACNIC, and NIC.br. You go from logging into Internet Registry (RIR/NIR) portals per-prefix to zero manual ROA operations.
+IPAM Border Gateway Protocol (BGP) route protection monitors Resource Public Key Infrastructure (RPKI) validity for all Bring Your Own IP (BYOIP) prefixes across accounts and Regions from a single dashboard, detects route overlaps that may indicate hijacking, and, with delegated RPKI, eliminates manual Route Origin Authorization (ROA) management at ARIN, RIPE, APNIC, LACNIC, and NIC.br. You go from logging into Regional or National Internet Registry (RIR or NIR) portals per-prefix to zero manual ROA operations.
 
 ## The problem this solves
 <a name="monitor-bgp-route-security-problem"></a>
@@ -17,7 +17,7 @@ With delegated RPKI, you no longer have to provide authenticity or ownership pro
 <a name="monitor-bgp-route-security-how"></a>
 
 BGP route protection is built from three layers, each building on the previous one:
-+ **Route discovery**: IPAM discovers all BYOIP routes across accounts and Regions. You see prefix, ASN, advertisement status, and RPKI validity in one dashboard.
++ **Route discovery**: IPAM discovers all BYOIP routes across accounts and Regions. You see prefix, Autonomous System Number (ASN), advertisement status, and RPKI validity in one dashboard.
 + **Route protection findings**: IPAM evaluates each route against published ROA data. It flags conflicting ROAs, missing ROAs, permissive configurations, and overlapping announcements from other ASNs. Without this, you have no way to detect sub-prefix hijacks or expired ROAs until traffic is already misrouted.
 + **Delegated RPKI**: You authorize AWS to manage ROAs on your behalf through a one-time setup with your RIR. From that point, IPAM auto-creates ROAs when you provision CIDRs, auto-renews them before expiration, and manages ROAs for on-premises prefixes you haven't brought to AWS. Without delegation, you must manually track expiration dates across dozens of ROAs and renew them at each RIR portal individually.
 
@@ -116,6 +116,7 @@ The commands in this section link to the *AWS CLI Command Reference*. The docume
 + View association CIDRs: [get-ipam-internet-registry-association-cidrs](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ipam-internet-registry-association-cidrs.html)
 + Create a routing policy registration: [create-ipam-routing-policy-registration](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-ipam-routing-policy-registration.html)
 + Batch modify registrations: [batch-modify-ipam-routing-policy-registrations](https://docs.aws.amazon.com/cli/latest/reference/ec2/batch-modify-ipam-routing-policy-registrations.html)
++ Delete an Internet Registry Association: [delete-ipam-internet-registry-association](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-ipam-internet-registry-association.html)
 + View registration deltas: [get-ipam-routing-policy-registration-deltas](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ipam-routing-policy-registration-deltas.html)
 
 To see examples of how you can use the AWS CLI to set up BGP route protection, see [Tutorial: Set up delegated RPKI for BYOIP prefixes](tutorials-byoip-bgp-security.md).

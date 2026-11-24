@@ -52,14 +52,14 @@ This tutorial contains instructions for the following getting started steps:
 ## Set up your development environment
 <a name="renesas-setup-env"></a>
 
-To set up FreeRTOS configurations for the RSK\+ for RX65N-2MB, use the Renesas e2studio IDE and CC-RX compiler.
+To set up FreeRTOS configurations for the RSK\+ for RX65N-2MB, use the Renesas e<sup>2</sup>studio IDE and CC-RX compiler.
 
 **Note**
-The Renesas e2studio IDE and CC-RX compiler are only supported on Windows 7, 8, and 10 operating systems.
+The Renesas e<sup>2</sup>studio IDE and CC-RX compiler are only supported on Windows 7, 8, and 10 operating systems.
 
-**To download and install e2studio**
+**To download and install e<sup>2</sup>studio**
 
-1. Go to the [ Renesas e2studio installer](https://www.renesas.com/us/en/document/uid/e-studio-2020-10-installer-offline-installer) download page, and download the offline installer.
+1. Go to the [ Renesas e<sup>2</sup>studio installer](https://www.renesas.com/us/en/document/uid/e-studio-2020-10-installer-offline-installer) download page, and download the offline installer.
 
 1. You are directed to a Renesas Login page.
 
@@ -67,11 +67,11 @@ The Renesas e2studio IDE and CC-RX compiler are only supported on Windows 7, 8, 
 
    If you do not have an account, choose **Register now**, and follow the first registration steps. You should receive an email with a link to activate your Renesas account. Follow this link to complete your registration with Renesas, and then log in to Renesas.
 
-1. After you log in, download the e2studio installer to your computer.
+1. After you log in, download the e<sup>2</sup>studio installer to your computer.
 
 1. Open the installer and follow the steps to completion.
 
-For more information, see the [ e2studio](https://www.renesas.com/us/en/products/software-tools/tools/ide/e2studio.html#productInfo) on the Renesas website.
+For more information, see the [ e<sup>2</sup>studio](https://www.renesas.com/us/en/products/software-tools/tools/ide/e2studio.html#productInfo) on the Renesas website.
 
 **To download and install the RX Family C/C\+\+ Compiler Package**
 
@@ -89,26 +89,26 @@ The compiler is available free for evaluation version only and valid for 60 days
 
 Now that you have configured the demo project, you are ready to build and run the project on your board.
 
-### Build the FreeRTOS Demo in e2studio
+### Build the FreeRTOS Demo in e<sup>2</sup>studio
 <a name="renesas-freertos-import-project"></a>
 
-**To import and build the demo in e2studio**
+**To import and build the demo in e<sup>2</sup>studio**
 
-1. Launch e2studio from the Start menu.
+1. Launch e<sup>2</sup>studio from the Start menu.
 
 1. On the **Select a directory as a workspace** window, browse to the folder that you want to work in, and choose **Launch**.
 
-1. The first time you open e2studio, the **Toolchain Registry** window opens. Choose **Renesas Toolchains**, and confirm that **CC-RX v3.00.00** is selected. Choose **Register**, and then choose **OK**.
+1. The first time you open e<sup>2</sup>studio, the **Toolchain Registry** window opens. Choose **Renesas Toolchains**, and confirm that **CC-RX v3.00.00** is selected. Choose **Register**, and then choose **OK**.
 
-1. If you are opening e2studio for the first time, the **Code Generator Registration** window appears. Choose **OK**.
+1. If you are opening e<sup>2</sup>studio for the first time, the **Code Generator Registration** window appears. Choose **OK**.
 
-1. The **Code Generator COM component register** window appears. Under **Please restart e2studio to use Code Generator**, choose **OK**.
+1. The **Code Generator COM component register** window appears. Under **Please restart e<sup>2</sup>studio to use Code Generator**, choose **OK**.
 
-1. The **Restart e2studio** window appears. Choose **OK**.
+1. The **Restart e<sup>2</sup>studio** window appears. Choose **OK**.
 
-1. e2studio restarts. On the **Select a directory as a workspace** window, choose **Launch**.
+1. e<sup>2</sup>studio restarts. On the **Select a directory as a workspace** window, choose **Launch**.
 
-1. On the e2studio welcome screen, choose the **Go to the e2studio workbench** arrow icon.
+1. On the e<sup>2</sup>studio welcome screen, choose the **Go to the e<sup>2</sup>studio workbench** arrow icon.
 
 1. Right-click the **Project Explorer** window, and choose **Import**.
 
@@ -138,7 +138,7 @@ When the demo project successfully runs on your device you see "Hello World\!" s
 ### Run the FreeRTOS project
 <a name="renesas-run"></a>
 
-**To run the project in e2studio**
+**To run the project in e<sup>2</sup>studio**
 
 1. Confirm that you have connected the E2 Lite Debugger module to your RSK\+ for RX65N-2MB
 
@@ -152,7 +152,7 @@ When the demo project successfully runs on your device you see "Hello World\!" s
 
    You might be prompted by a firewall warning for `e2-server-gdb.exe`. Check **Private networks, such as my home or work network**, and then choose **Allow access**.
 
-1. e2studio might ask to change to **Renesas Debug Perspective**. Choose **Yes**.
+1. e<sup>2</sup>studio might ask to change to **Renesas Debug Perspective**. Choose **Yes**.
 
    The green 'ACT' LED on the E2 Lite Debugger illuminates.
 

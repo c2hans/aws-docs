@@ -16,15 +16,15 @@ Amazon Nova delivers powerful foundation models across three categories: underst
 
 | Model | Category | Description | Use cases | Regions |
 | --- |--- |--- |--- |--- |
-| Amazon Nova Premier | Understanding | Most capable multimodal model for complex tasks. Comprehends diverse inputs including text, images, video, documents, and code. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications, video analysis, UI workflow automation | US East (N. Virginia)1, AWS GovCloud (US-West) |
-| Amazon Nova Pro | Understanding | Highly capable multimodal model with best combination of accuracy, speed, and cost for a wide range of tasks. Comprehends diverse inputs including text, images, video, documents, and code. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications, video analysis, UI workflow automation | US East (N. Virginia)1, Asia Pacific (Sydney)1, Europe (London)1, AWS GovCloud (US-West) |
-| Amazon Nova Lite | Understanding | Very low cost multimodal model with lightning fast processing for image, video, and text inputs. Comprehends diverse inputs including text, images, video, documents, and code. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications, video analysis, UI workflow automation | US East (N. Virginia)1, Asia Pacific (Sydney)1, Europe (London)1, AWS GovCloud (US-West) |
-| Amazon Nova Micro | Understanding | Text-only model that delivers the lowest latency responses at very low cost. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications | US East (N. Virginia)1, Asia Pacific (Sydney)1, Europe (London)1, AWS GovCloud (US-West) |
+| Amazon Nova Premier | Understanding | Most capable multimodal model for complex tasks. Comprehends diverse inputs including text, images, video, documents, and code. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications, video analysis, UI workflow automation | US East (N. Virginia)<sup>1</sup>, AWS GovCloud (US-West) |
+| Amazon Nova Pro | Understanding | Highly capable multimodal model with best combination of accuracy, speed, and cost for a wide range of tasks. Comprehends diverse inputs including text, images, video, documents, and code. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications, video analysis, UI workflow automation | US East (N. Virginia)<sup>1</sup>, Asia Pacific (Sydney)<sup>1</sup>, Europe (London)<sup>1</sup>, AWS GovCloud (US-West) |
+| Amazon Nova Lite | Understanding | Very low cost multimodal model with lightning fast processing for image, video, and text inputs. Comprehends diverse inputs including text, images, video, documents, and code. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications, video analysis, UI workflow automation | US East (N. Virginia)<sup>1</sup>, Asia Pacific (Sydney)<sup>1</sup>, Europe (London)<sup>1</sup>, AWS GovCloud (US-West) |
+| Amazon Nova Micro | Understanding | Text-only model that delivers the lowest latency responses at very low cost. | Interactive chat interfaces, Retrieval-Augmented Generation (RAG) systems, agentic applications | US East (N. Virginia)<sup>1</sup>, Asia Pacific (Sydney)<sup>1</sup>, Europe (London)<sup>1</sup>, AWS GovCloud (US-West) |
 | Amazon Nova Canvas | Creative | High-quality image generation model with customization and control. Transforms text and image inputs into professional-grade images. | Media, entertainment, retail, marketing, advertising, customizable visual content generation | US East (N. Virginia), Europe (Ireland), and Asia Pacific (Tokyo) |
 | Amazon Nova Reel | Creative | Video generation model designed to democratize creative content generation. Transforms text and image inputs into professional-grade videos. | Media, entertainment, retail, marketing, advertising, customizable visual content generation | US East (N. Virginia), Europe (Ireland), and Asia Pacific (Tokyo) |
 | Amazon Nova Sonic | Speech | Foundation model for conversational speech understanding and generation in five languages (English (US, UK), French, Italian, German, and Spanish). Accepts speech as input and provides speech with text transcriptions as output. Features bidirectional streaming API capabilities for real-time, low-latency multi-turn conversations. | Virtual assistants, customer service solutions, interactive voice experiences, real-time voice interactions | US East (N. Virginia), Europe (Stockholm), and Asia Pacific (Tokyo) |
 
-*1You can access this model in additional regions through cross-region inference: US East (Ohio), US West (Oregon), Europe (Stockholm), Europe (Ireland), Europe (Frankfurt), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Seoul), and Asia Pacific (Mumbai). To learn more, see [Improve resilience with cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html).*
+*<sup>1</sup>You can access this model in additional regions through cross-region inference: US East (Ohio), US West (Oregon), Europe (Stockholm), Europe (Ireland), Europe (Frankfurt), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Seoul), and Asia Pacific (Mumbai). To learn more, see [Improve resilience with cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html).*
 
 For full model and region support information in Amazon Bedrock, see [Supported foundation models in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
 
@@ -44,8 +44,8 @@ The following tables provide detailed specifications for each Amazon Nova model 
 | Output Modalities | Text | Text | Text | Text |
 | Context Window | 1M | 300k | 300k | 128k |
 | Max Output Tokens | 10K | 10k | 10k | 10k |
-| Supported Languages | 200\+1 | 200\+1 | 200\+1 | 200\+1 |
-| Regions | US East (N. Virginia)2 | US East (N. Virginia)2, Asia Pacific (Tokyo)2, Asia Pacific (Sydney)2, Europe (London)2, AWS GovCloud (US-West) | US East (N. Virginia)2, Asia Pacific (Tokyo)2, Asia Pacific (Sydney)2, Europe (London)2, AWS GovCloud (US-West) | US East (N. Virginia)2, Asia Pacific (Tokyo)2, Asia Pacific (Sydney)2, Europe (London)2, AWS GovCloud (US-West) |
+| Supported Languages | 200\+<sup>1</sup> | 200\+<sup>1</sup> | 200\+<sup>1</sup> | 200\+<sup>1</sup> |
+| Regions | US East (N. Virginia)<sup>2</sup> | US East (N. Virginia)<sup>2</sup>, Asia Pacific (Tokyo)<sup>2</sup>, Asia Pacific (Sydney)<sup>2</sup>, Europe (London)<sup>2</sup>, AWS GovCloud (US-West) | US East (N. Virginia)<sup>2</sup>, Asia Pacific (Tokyo)<sup>2</sup>, Asia Pacific (Sydney)<sup>2</sup>, Europe (London)<sup>2</sup>, AWS GovCloud (US-West) | US East (N. Virginia)<sup>2</sup>, Asia Pacific (Tokyo)<sup>2</sup>, Asia Pacific (Sydney)<sup>2</sup>, Europe (London)<sup>2</sup>, AWS GovCloud (US-West) |
 | Document Support | PDF, CSV, DOC, DOCX, XLS, XLSX, HTML, TXT, MD | PDF, CSV, DOC, DOCX, XLS, XLSX, HTML, TXT, MD | PDF, CSV, DOC, DOCX, XLS, XLSX, HTML, TXT, MD | No |
 | Converse API | Yes | Yes | Yes | Yes |
 | InvokeAPI | Yes | Yes | Yes | Yes |
@@ -60,9 +60,9 @@ The following tables provide detailed specifications for each Amazon Nova model 
 | Bedrock Prompt flows | Yes | Yes | Yes | Yes |
 | Bedrock Studio | Yes | Yes | Yes | Yes |
 
-*1Optimized for these 15 languages: English, German, Spanish, French, Italian, Japanese, Korean, Arabic, Simplified Chinese, Russian, Hindi, Portuguese, Dutch, Turkish, and Hebrew.*
+*<sup>1</sup>Optimized for these 15 languages: English, German, Spanish, French, Italian, Japanese, Korean, Arabic, Simplified Chinese, Russian, Hindi, Portuguese, Dutch, Turkish, and Hebrew.*
 
-*2You can access this model in the US East (Ohio), US West (Oregon), Europe (Stockholm), Europe (Ireland), Europe (Frankfurt), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Seoul), and Asia Pacific (Mumbai) regions through cross-region inference. Cross-region inference allows you to seamlessly manage unplanned traffic bursts by utilizing compute across different AWS Regions. With cross-region inference, you can distribute traffic across multiple AWS Regions. To learn more about cross-region inference, see [Supported Regions and models for inference profiles](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html) and [Improve resilience with cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) in the Amazon Bedrock User Guide.*
+*<sup>2</sup>You can access this model in the US East (Ohio), US West (Oregon), Europe (Stockholm), Europe (Ireland), Europe (Frankfurt), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Seoul), and Asia Pacific (Mumbai) regions through cross-region inference. Cross-region inference allows you to seamlessly manage unplanned traffic bursts by utilizing compute across different AWS Regions. With cross-region inference, you can distribute traffic across multiple AWS Regions. To learn more about cross-region inference, see [Supported Regions and models for inference profiles](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html) and [Improve resilience with cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) in the Amazon Bedrock User Guide.*
 
 ### Creative and speech model specifications
 <a name="creative-speech-model-specs"></a>
@@ -76,15 +76,15 @@ The following tables provide detailed specifications for each Amazon Nova model 
 | Input Context Window |  | 512 characters | 300K context |
 | Output Resolution (generation tasks) | 4.19 million pixels (that is, 2048x2048, 2816x1536) | 1280x720, 24 frames per second |  |
 | Max Output Resolution (editing tasks) | Must meet all of the following:+  4096 pixels on its longest side <br />+  Aspect ratio between 1:4 and 4:1 <br />+  Total pixel count of 4.19 million or smaller  |  |  |
-| Max Connection Duration |  |  | 8 minutes connection timeout, with max 20 concurrent connections per customer.1 |
+| Max Connection Duration |  |  | 8 minutes connection timeout, with max 20 concurrent connections per customer.<sup>1</sup> |
 | Supported Input Types | PNG, JPEG | PNG, JPEG |  |
-| Supported Languages | English | English | English (US, UK), French, Italian, German, and Spanish2 |
+| Supported Languages | English | English | English (US, UK), French, Italian, German, and Spanish<sup>2</sup> |
 | Regions | US East (N. Virginia), Europe (Ireland), and Asia Pacific (Tokyo) | US East (N. Virginia), Europe (Ireland), and Asia Pacific (Tokyo) | US East (N. Virginia), Europe (Stockholm), and Asia Pacific (Tokyo) |
 | Asynchronous Invoke Model API | No | Yes |  |
 | Invoke Model API | Yes | No |  |
 | Bidirectional Stream API Support |  |  | Yes |
 | Bedrock Knowledge Bases |  |  | Supported through tool use (function calling) |
 
-*1By default, the connection limit is 8 minutes, however you can renew the connection and continue the conversation by providing the previous conversation's history.*
+*<sup>1</sup>By default, the connection limit is 8 minutes, however you can renew the connection and continue the conversation by providing the previous conversation's history.*
 
-*2For a list of supported voices, see [Voices available for Amazon Nova Sonic](https://docs.aws.amazon.com/nova/latest/userguide/available-voices.html).*
+*<sup>2</sup>For a list of supported voices, see [Voices available for Amazon Nova Sonic](https://docs.aws.amazon.com/nova/latest/userguide/available-voices.html).*

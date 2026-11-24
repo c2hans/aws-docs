@@ -262,11 +262,23 @@ Required: No
                "CreationTime": number,
                "Lifecycle": "string",
                "LifecycleTransitionReason": {
-                  "Message": "string"
+                  "Message": "string",
+                  "OntapError": {
+                     "Code": "string",
+                     "Message": "string"
+                  }
                },
                "Name": "string",
+               "OntapConfiguration": {
+                  "ExpiryTime": number,
+                  "SizeInMegabytes": number,
+                  "SnaplockExpiryTime": number,
+                  "SnapmirrorLabel": "string",
+                  "UUID": "string"
+               },
                "ResourceARN": "string",
                "SnapshotId": "string",
+               "SnapshotType": "string",
                "Tags": [
                   {
                      "Key": "string",
@@ -283,13 +295,21 @@ Required: No
                "FileSystemId": "string",
                "Lifecycle": "string",
                "LifecycleTransitionReason": {
-                  "Message": "string"
+                  "Message": "string",
+                  "OntapError": {
+                     "Code": "string",
+                     "Message": "string"
+                  }
                },
                "Name": "string",
                "OntapConfiguration": {
                   "AggregateConfiguration": {
                      "Aggregates": [ "string" ],
                      "TotalConstituents": number
+                  },
+                  "CloneConfiguration": {
+                     "ParentVolumeId": "string",
+                     "SnapshotId": "string"
                   },
                   "CopyTagsToBackups": boolean,
                   "FlexCacheEndpointType": "string",

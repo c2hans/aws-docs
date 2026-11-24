@@ -110,7 +110,7 @@ For any single web request, AWS WAF stores metrics for at most 100 labels. Your 
 | `ResourceType` | The type of the protected resource, such as `CF`, `APIGW`, or `ALB`. |
 | `Resource` | The Amazon Resource Name (ARN) of the protected resource. |
 | `LabelNamespace` | The namespace prefix of the label that was added to the request.  |
-| `Label` | The name of the label that was added to the request.  |
+| `LabelName` | The name of the label that was added to the request.  |
 | `Context` | The managed rule group that served as the context of the label addition. For example, the context for token management labels such as awswaf:managed:token:accepted is the AWS WAF managed rule group that uses token management on the request, such as the Bot Control or ATP managed rule group. This dimension doesn't apply to all labels.  |
 
 ## Free bot visibility metrics and dimensions

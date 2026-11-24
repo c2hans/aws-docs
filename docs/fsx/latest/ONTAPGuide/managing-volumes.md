@@ -29,6 +29,7 @@ When you create a volume, you define the following properties:
 **Topics**
 + [Volume styles](#volume-styles)
 + [Volume types](#volume-types)
++ [Volume clones](#volume-clones)
 + [Volume security style](#volume-security-style)
 + [Creating volumes](creating-volumes.md)
 + [Updating volumes](updating-volumes.md)
@@ -75,6 +76,15 @@ FlexVol and FlexGroup volumes can be either RW or DP.
 
 **Note**
 You can't update a volume's type after the volume is created.
+
+## Volume clones
+<a name="volume-clones"></a>
+
+A *volume clone* (FlexClone volume) is a writable, point-in-time copy of a parent volume. Amazon FSx creates a clone almost instantly, regardless of the size of the parent volume. A clone shares its storage blocks with its parent and consumes additional storage capacity only as data on the clone or the parent changes. You can use clones for testing, development, and analytics on a copy of production data without copying the data.
+
+You can create a clone from the current state of a volume, or from an existing snapshot of the volume. The parent must be a FlexVol or FlexGroup volume on the same file system. The clone is created in the same SVM as its parent, and you can manage it like any other volume. For more information, see [Creating volumes](creating-volumes.md).
+
+While a clone exists, you can't delete its parent volume or the snapshot that the clone was created from. To make a clone independent of its parent, you can split it. Splitting a clone copies the shared data to the clone, so the clone consumes its own storage capacity. For more information, see [To split a clone from its parent (console)](updating-volumes.md#split-clone-console).
 
 ## Volume security style
 <a name="volume-security-style"></a>

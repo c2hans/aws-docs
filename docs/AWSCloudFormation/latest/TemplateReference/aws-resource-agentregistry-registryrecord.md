@@ -64,6 +64,7 @@ If you remove this property from the template during a stack update, the existin
 
 `Description`  <a name="cfn-agentregistry-registryrecord-description"></a>
 The description of the registry record.
+For a `SKILL` record that synchronizes from Amazon S3, every synchronization sets the description from the `description` in the SKILL.md frontmatter. Set this property to the same value. Otherwise the next synchronization replaces it, and the resource drifts from the template.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -87,6 +88,7 @@ The human-readable display name of the registry record.
 
 `Name`  <a name="cfn-agentregistry-registryrecord-name"></a>
 The name of the registry record. Names are unique within a registry.
+For a `SKILL` record that synchronizes from Amazon S3, every synchronization sets the name from the `name` in the SKILL.md frontmatter. Set this property to the same value. Otherwise the next synchronization replaces it, and the resource drifts from the template.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_\-\.\/]*$`

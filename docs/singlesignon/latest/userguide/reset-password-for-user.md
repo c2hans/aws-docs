@@ -29,3 +29,6 @@ The instructions on this page apply to [AWS IAM Identity Center](https://aws.ama
 As a security best practice, verify that the email address for this user is correct prior to selecting this option. If this password reset email were to be sent to an incorrect or misconfigured email address, a malicious recipient could use it to gain unauthorized access to your AWS environment.
 
    1. **Generate a one-time password and share the password with the user** – This option provides you with the password details that you can manually send to the user from your email address.
+
+**Note**
+If you use trusted identity propagation with an IAM identity provider, the user can sign in to the AWS access portal with an IAM Identity Center credential after this action. If you want your users to sign in only through your IAM identity provider, don't take this action. For more information, see [Trusted identity propagation with an IAM identity provider](simplified-tip-enabling.md#tip-iam-federation).

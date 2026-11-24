@@ -34,7 +34,7 @@ If your snapshot contains multiple partitions, specify the file system identifie
 | Restore from cold storage (EBS Archive Tier) | Available | Unavailable | Unavailable |
 | Settings to specify | Volume type; size (GiB); Availability zone; Throughput | Gateway (in a reachable state); iSCSI target name; Disk id (for volume stored gateways); Capacity (for volume cached gateways) | Restore type, including: Destination bucket name; Path(s) to restore; Encryption type; File level restore KMS Key Id if SSE-KMS is set as encryption type |
 
-1In the AWS Backup console, you select one of the three encryption options; if you use CLI to restore, omit `encryptionType` to restore to the default destination bucket encryption.
+<sup>1</sup>In the AWS Backup console, you select one of the three encryption options; if you use CLI to restore, omit `encryptionType` to restore to the default destination bucket encryption.
 
 ## Restore an EBS snapshot with the AWS Backup console
 <a name="ebs-restore-console"></a>

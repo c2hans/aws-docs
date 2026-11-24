@@ -32,7 +32,11 @@ If you use [account access manager](https://docs.aws.amazon.com/IAM/latest/UserG
 ### User background sessions
 <a name="user-background-sessions-concept"></a>
 
-User background sessions are extended-duration sessions designed for applications that need to run processes for hours or days without interruption. Currently, this session type applies primarily to [Amazon SageMaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html), where data scientists might run machine learning training jobs that take many hours to complete.
+User background sessions are extended-duration sessions for jobs that run for hours or days without the user remaining signed in. The following AWS services support user background sessions:
++ Amazon SageMaker Studio. See [User background sessions](https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-user-background-sessions.html) in the *Amazon SageMaker AI Developer Guide*.
++ Amazon EMR. See [User background sessions](https://docs.aws.amazon.com/emr/latest/ManagementGuide/user-background-sessions.html) in the *Amazon EMR Management Guide*, and [User background sessions](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security-iam-service-trusted-prop-user-background.html) in the *Amazon EMR Serverless User Guide*.
++ AWS Glue. See [User background sessions for AWS Glue ETL](https://docs.aws.amazon.com/glue/latest/dg/user-background-sessions.html) in the *AWS Glue Developer Guide*.
++ AWS Transform. See [AWS Transform connectors](https://docs.aws.amazon.com/transform/latest/userguide/transform-user-connectors.html) in the *AWS Transform User Guide*.
 
 For information about configuring user background session duration, see [User background sessions](user-background-sessions.md).
 

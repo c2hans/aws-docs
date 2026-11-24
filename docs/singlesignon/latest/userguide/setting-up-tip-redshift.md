@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/setting-up-tip-redshift.html
 ---
 
-# Setting up trusted identity propagation with Amazon Redshift Query Editor V2
+# Setting up trusted identity propagation with Amazon Redshift Query Editor V2 (legacy experience)
 
 The following procedure walks you through how to achieve trusted identity propagation from Amazon Redshift Query Editor V2 to Amazon Redshift.
 

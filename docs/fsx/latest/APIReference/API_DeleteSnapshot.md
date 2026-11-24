@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteSnapsh
 
 # DeleteSnapshot
 
-Deletes an Amazon FSx for OpenZFS snapshot. After deletion, the snapshot no longer exists, and its data is gone. Deleting a snapshot doesn't affect snapshots stored in a file system backup.
+Deletes an Amazon FSx for OpenZFS or Amazon FSx for NetApp ONTAP snapshot. After deletion, the snapshot no longer exists, and its data is gone. Deleting a snapshot doesn't affect snapshots stored in a file system backup.
 
 The `DeleteSnapshot` operation returns instantly. The snapshot appears with the lifecycle status of `DELETING` until the deletion is complete.
 
@@ -59,7 +59,7 @@ The following data is returned in JSON format by the service.
  ** [Lifecycle](#API_DeleteSnapshot_ResponseSyntax) **   <a name="FSx-DeleteSnapshot-response-Lifecycle"></a>
 The lifecycle status of the snapshot. If the `DeleteSnapshot` operation is successful, this status is `DELETING`.
 Type: String
-Valid Values: `PENDING | CREATING | DELETING | AVAILABLE`
+Valid Values: `PENDING | CREATING | DELETING | AVAILABLE | FAILED`
 
  ** [SnapshotId](#API_DeleteSnapshot_ResponseSyntax) **   <a name="FSx-DeleteSnapshot-response-SnapshotId"></a>
 The ID of the deleted snapshot.
@@ -76,6 +76,14 @@ For information about the errors that are common to all actions, see [Common Err
 A generic error indicating a failure with a client request.
  ** Message **
 A detailed error message.
+HTTP Status Code: 400
+
+ ** IncompatibleParameterError **
+The error returned when a second request is received with the same client request token but different parameters settings. A client request token should always uniquely identify a single request.
+ ** Message **
+A detailed error message.
+ ** Parameter **
+A parameter that is incompatible with the earlier request.
 HTTP Status Code: 400
 
  ** InternalServerError **

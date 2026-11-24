@@ -82,7 +82,7 @@ EKS Auto Mode supports the following instance types:
 | Burstable (T) | t4g, t3, t3a, t2 |
 | High Memory (Z/X) | z1d, x8aedz, x8g, x8i, x2gd |
 | Storage Optimized (I/D) | i8g, i8ge, i7i, i7ie, i4g, is4gen, im4gn, i4i, i3, i3en, d3, d3en |
-| Accelerated Computing (Trn/P/Inf/G) | trn2, trn1, trn1n, p6-b200, p6-b300, p5, p5e, p5en, p4d, p4de, p3, p3dn, inf2, inf1, g7e, g6, gr6, g6e, g5, g5g, g4ad, g4dn |
+| Accelerated Computing (Trn/P/Inf/G) | trn2, trn1, trn1n, p6-b200, p6-b300, p5, p5e, p5en, p4d, p4de, p3, p3dn, inf2, inf1, g7e, g7, g6, gr6, g6e, g5, g5g, g4ad, g4dn |
 | High Performance Computing (X2/HPC) | x2idn, x2iedn, x2iezn, hpc8a |
 
 Additionally, EKS Auto Mode will only create EC2 instances that meet the following requirements:

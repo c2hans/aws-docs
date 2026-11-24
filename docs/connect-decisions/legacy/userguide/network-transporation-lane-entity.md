@@ -17,16 +17,16 @@ The table below lists the column names supported by the data entity:
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | id | string | Yes | Lane ID. |
-| from\_site\_id2 | string | Yes1 | Origin site location for the lane. You can exclude this field if the from\_geo\_id is populated. |
-| to\_site\_id2 | string | Yes1 | Destination site location for the lane. You can exclude this field if the to\_geo\_id is populated. |
-| company\_id2 | string | No | Company ID. |
-| from\_geo\_id2 | string | Yes1 | When lane definition is at geographical level, displays the 'from' or 'source' geographical region. |
-| to\_geo\_id2 | string | Yes1 | When lane definition is at geographical level, displays the 'to' or 'source' geographical region. |
-| carrier\_tpartner\_id2 | string | Yes1 | ID of the carrier. |
-| trans\_mode | string | Yes1 | Transportation mode, for example, ship, rail, or truck. |
-| service\_type | string | Yes1 | Provides information on the shipping method for the carrier. |
-| product\_group\_id2 | string | Yes1 | Product group ID if transit time varies by product group. |
-| product\_id2 | string | No | Product ID is used when a lane has product-specific configuration. |
+| from\_site\_id<sup>2</sup> | string | Yes<sup>1</sup> | Origin site location for the lane. You can exclude this field if the from\_geo\_id is populated. |
+| to\_site\_id<sup>2</sup> | string | Yes<sup>1</sup> | Destination site location for the lane. You can exclude this field if the to\_geo\_id is populated. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| from\_geo\_id<sup>2</sup> | string | Yes<sup>1</sup> | When lane definition is at geographical level, displays the 'from' or 'source' geographical region. |
+| to\_geo\_id<sup>2</sup> | string | Yes<sup>1</sup> | When lane definition is at geographical level, displays the 'to' or 'source' geographical region. |
+| carrier\_tpartner\_id<sup>2</sup> | string | Yes<sup>1</sup> | ID of the carrier. |
+| trans\_mode | string | Yes<sup>1</sup> | Transportation mode, for example, ship, rail, or truck. |
+| service\_type | string | Yes<sup>1</sup> | Provides information on the shipping method for the carrier. |
+| product\_group\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product group ID if transit time varies by product group. |
+| product\_id<sup>2</sup> | string | No | Product ID is used when a lane has product-specific configuration. |
 | transit\_time | double | No | Transit time of products. |
 | transit\_time\_sd | double | No | Standard deviation of transit time. |
 | time\_uom | string | No | Unit of measure of transit time. |
@@ -55,9 +55,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is: SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is: SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

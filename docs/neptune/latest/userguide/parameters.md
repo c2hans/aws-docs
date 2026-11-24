@@ -80,7 +80,7 @@ Lab mode features are typically disabled by default. To enable or explicitly dis
 
 Specifies a specific timeout duration for graph queries, in milliseconds.
 
-Allowed values range from `10` to `2,147,483,647` (231 - 1). The default value is `120,000` (2 minutes).
+Allowed values range from `10` to `2,147,483,647` (2<sup>31</sup> - 1). The default value is `120,000` (2 minutes).
 
 This parameter is static, meaning that changes to it do not take effect on any instance until it has been rebooted.
 
@@ -207,7 +207,7 @@ This DB instance parameter specifies a timeout duration for graph queries, in mi
 
 This parameter is static, meaning that changes to it do not take effect on any instance until it has been rebooted.
 
-Allowed values range from `10` to `2,147,483,647` (231 - 1). The default value is `120,000` (2 minutes).
+Allowed values range from `10` to `2,147,483,647` (2<sup>31</sup> - 1). The default value is `120,000` (2 minutes).
 
 **Note**
 It is possible to incur unexpected costs if you set the query timeout value too high, particularly on a serverless instance. Without a reasonable timeout setting, you may inadvertently issue a query that keeps running much longer than you expected, incurring costs you never anticipated. This is particularly true on a serverless instance that could scale up to a large, expensive instance type while running the query.

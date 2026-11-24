@@ -56,7 +56,7 @@ The following table provides detailed information for each HTTP client.
 |  Netty-based HTTP client *(default async HTTP client)* | Async | • Use it if your application relies on Java system properties for TLS configuration (such as `javax.net.ssl.keyStore`) | Slower startup time compared to other HTTP clients |
 |  AWS CRT-based async HTTP client1  | Async | • Use it if your application is running in AWS Lambda<br />• Use it if you prefer high throughput over low latency• Use it if you prefer async SDK clients | The following Java system properties are not supported:+  javax.net.ssl.keyStore <br />+  javax.net.ssl.keyStorePassword <br />+   javax.net.ssl.trustStore <br />+  javax.net.ssl.trustStorePassword  |
 
-1Because of their added benefits, we recommend that you use the AWS CRT-based HTTP clients if possible.
+<sup>1</sup>Because of their added benefits, we recommend that you use the AWS CRT-based HTTP clients if possible.
 
 ## Smart configuration defaults
 <a name="http-config-smart-defaults"></a>

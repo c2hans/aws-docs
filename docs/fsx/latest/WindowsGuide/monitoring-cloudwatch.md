@@ -154,8 +154,8 @@ Use the **Monitoring & performance** panel in the Amazon FSx console to view the
   - **How do I...:** ...determine the IOPS for operations that access storage volumes, as a percentage of the provisioned limit determined by SSD Storage Capacity? / **Chart:** Disk IOPS utilization (SSD) / **Relevant metrics:** DiskIopsUtilization
 
 **Note**
-1We recommend that you maintain an average throughput capacity utilization under 50% to ensure that you have enough spare throughput capacity for unexpected spikes in your workload, as well as for any background Windows storage operations (such as storage synchronization, deduplication, or shadow copies).
-2HDD storage volumes can experience significant performance variations depending on the workload. Sudden spikes in IOPS or throughput can lead to disk performance degradation. For more information, see [HDD burst performance](performance.md#hdd-burst-performance).
+<sup>1</sup>We recommend that you maintain an average throughput capacity utilization under 50% to ensure that you have enough spare throughput capacity for unexpected spikes in your workload, as well as for any background Windows storage operations (such as storage synchronization, deduplication, or shadow copies).
+<sup>2</sup>HDD storage volumes can experience significant performance variations depending on the workload. Sudden spikes in IOPS or throughput can lead to disk performance degradation. For more information, see [HDD burst performance](performance.md#hdd-burst-performance).
 
 ## Performance warnings and recommendations
 <a name="performance-insights-FSxW"></a>

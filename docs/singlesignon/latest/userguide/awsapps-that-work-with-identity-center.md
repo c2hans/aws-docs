@@ -11,14 +11,17 @@ IAM Identity Center lets you connect your existing identity source or create use
 
 All of the AWS managed applications in the following table integrate with [organization instances of IAM Identity Center](organization-instances-identity-center.md). The table also provides information about the following for a supported AWS managed application:
 + Whether the application also integrates with account instances of IAM Identity Center
-+  Whether the application can enable trusted identity propagation through IAM Identity Center
++  Whether the application can enable trusted identity propagation through IAM Identity Center (legacy experience)
 +  Whether the application supports IAM Identity Center configured with a customer managed KMS key
 + Whether the application supports deployment in additional Regions of IAM Identity Center
 
 **Note**
 Applications that support deployment in additional Regions of IAM Identity Center also support IAM Identity Center configured with a customer managed KMS key. Every AWS managed application listed here supports deployment in the primary Region. For more information, see [Deploying and managing AWS managed applications across multiple AWS Regions](multi-region-application-use.md#multi-region-aws-managed-applications).
 
-| AWS managed application | Integrated with [account instances of IAM Identity Center](account-instances-identity-center.md) | Enables [trusted identity propagation](trustedidentitypropagation-overview.md) through IAM Identity Center | Supports IAM Identity Center configured with a [customer managed KMS key](encryption-at-rest.md) | Supports deployment in [additional Regions of IAM Identity Center](multi-region-iam-identity-center.md) |
+**Note**
+The trusted identity propagation column in this table refers to the legacy experience.
+
+| AWS managed application | Integrated with [account instances of IAM Identity Center](account-instances-identity-center.md) | Enables [trusted identity propagation](trustedidentitypropagation-overview.md) through IAM Identity Center (legacy experience) | Supports IAM Identity Center configured with a [customer managed KMS key](encryption-at-rest.md) | Supports deployment in [additional Regions of IAM Identity Center](multi-region-iam-identity-center.md) |
 | --- | --- | --- | --- | --- |
 | Amazon Athena SQL | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |
 | Amazon CodeCatalyst | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |
@@ -61,13 +64,13 @@ Applications that support deployment in additional Regions of IAM Identity Cente
 | Multi-party approval | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |
 | OpenSearch user interface (Dashboards) | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |
 
-1 For Kiro, account instances of IAM Identity Center are supported unless your users require access to the full set of Kiro features on AWS websites. For more information, see [Setting up Kiro](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/getting-started-q-dev.html) in the *Kiro User Guide*.
+<sup>1</sup> For Kiro, account instances of IAM Identity Center are supported unless your users require access to the full set of Kiro features on AWS websites. For more information, see [Setting up Kiro](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/getting-started-q-dev.html) in the *Kiro User Guide*.
 
-2 For Amazon Redshift, account instances of IAM Identity Center are supported except for applications like Query Editor v2 that require permission sets, which are not supported by account instances.
+<sup>2</sup> For Amazon Redshift, account instances of IAM Identity Center are supported except for applications like Query Editor v2 that require permission sets, which are not supported by account instances.
 
-3 You enable account access manager in the primary Region of IAM Identity Center.
+<sup>3</sup> You enable account access manager in the primary Region of IAM Identity Center.
 
-4 AWS Quick can be deployed in additional Regions of IAM Identity Center through the AWS Command Line Interface (CLI). For more information about deploying AWS Quick in additional Regions, see [Using IAM Identity Center](https://docs.aws.amazon.com/quick/latest/userguide/setting-up-sso.html) in the *AWS Quick user guide*.
+<sup>4</sup> AWS Quick can be deployed in additional Regions of IAM Identity Center through the AWS Command Line Interface (CLI). For more information about deploying AWS Quick in additional Regions, see [Using IAM Identity Center](https://docs.aws.amazon.com/quick/latest/userguide/setting-up-sso.html) in the *AWS Quick user guide*.
 
 **Note**
 Some AWS services such as Connect Customer and AWS Client VPN are not listed in this table although you can use them with IAM Identity Center. This is because they integrate with IAM Identity Center exclusively using SAML and are therefore categorized as [customer managed applications](customermanagedapps.md).

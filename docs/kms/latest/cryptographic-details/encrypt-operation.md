@@ -8,7 +8,7 @@ A basic function of AWS KMS is to encrypt an object under a KMS key. By design, 
 
 The HSM runs the following:
 
-1. Decrypts the EKT to obtain the *HBK = Decrypt(DKi, EKT) *.
+1. Decrypts the EKT to obtain the *HBK = Decrypt(DK<sub>i</sub>, EKT) *.
 
 1. Generates a random nonce *N*.
 

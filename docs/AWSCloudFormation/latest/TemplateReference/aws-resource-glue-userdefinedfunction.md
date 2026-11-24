@@ -20,10 +20,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::Glue::UserDefinedFunction",
   "Properties" : {
+      "[ArtifactLocation](#cfn-glue-userdefinedfunction-artifactlocation)" : {{String}},
       "[ClassName](#cfn-glue-userdefinedfunction-classname)" : {{String}},
       "[DatabaseName](#cfn-glue-userdefinedfunction-databasename)" : {{String}},
       "[FunctionName](#cfn-glue-userdefinedfunction-functionname)" : {{String}},
       "[FunctionType](#cfn-glue-userdefinedfunction-functiontype)" : {{String}},
+      "[GovernanceMode](#cfn-glue-userdefinedfunction-governancemode)" : {{String}},
       "[OwnerName](#cfn-glue-userdefinedfunction-ownername)" : {{String}},
       "[OwnerType](#cfn-glue-userdefinedfunction-ownertype)" : {{String}},
       "[ResourceUris](#cfn-glue-userdefinedfunction-resourceuris)" : {{[ ResourceUri, ... ]}}
@@ -37,10 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```yaml
 Type: AWS::Glue::UserDefinedFunction
 Properties:
+  [ArtifactLocation](#cfn-glue-userdefinedfunction-artifactlocation): {{String}}
   [ClassName](#cfn-glue-userdefinedfunction-classname): {{String}}
   [DatabaseName](#cfn-glue-userdefinedfunction-databasename): {{String}}
   [FunctionName](#cfn-glue-userdefinedfunction-functionname): {{String}}
   [FunctionType](#cfn-glue-userdefinedfunction-functiontype): {{String}}
+  [GovernanceMode](#cfn-glue-userdefinedfunction-governancemode): {{String}}
   [OwnerName](#cfn-glue-userdefinedfunction-ownername): {{String}}
   [OwnerType](#cfn-glue-userdefinedfunction-ownertype): {{String}}
   [ResourceUris](#cfn-glue-userdefinedfunction-resourceuris): {{
@@ -49,6 +53,15 @@ Properties:
 
 ## Properties
 <a name="aws-resource-glue-userdefinedfunction-properties"></a>
+
+`ArtifactLocation`  <a name="cfn-glue-userdefinedfunction-artifactlocation"></a>
+The location of resources.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClassName`  <a name="cfn-glue-userdefinedfunction-classname"></a>
 The Java class that contains the function code.
@@ -82,6 +95,13 @@ The type of the function.
 *Required*: No
 *Type*: String
 *Allowed values*: `REGULAR_FUNCTION | AGGREGATE_FUNCTION | STORED_PROCEDURE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`GovernanceMode`  <a name="cfn-glue-userdefinedfunction-governancemode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `IAM_ONLY | LAKE_FORMATION`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `OwnerName`  <a name="cfn-glue-userdefinedfunction-ownername"></a>

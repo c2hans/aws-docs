@@ -21,4 +21,4 @@ Use the AWS Management Console, the AWS CLI, or the RDS API to change the passwo
 
 Amazon GuardDuty is a continuous security monitoring service that analyzes and processes various data sources, including Amazon RDS login activity. It uses threat intelligence feeds and machine learning to identify unexpected, potentially unauthorized, suspicious login behavior, and malicious activity within your AWS environment.
 
- When Amazon GuardDuty RDS Protection detects a potentially suspicious or anomalous login attempt that indicates a threat to your database, GuardDuty generates a new finding with details about the potentially compromised database. For more information, see [Monitoring threats with Amazon GuardDuty RDS Protectionfor Amazon Aurora](guard-duty-rds-protection.md) .
+ When Amazon GuardDuty RDS Protection detects a potentially suspicious or anomalous login attempt that indicates a threat to your database, GuardDuty generates a new finding with details about the potentially compromised database. For more information, see [Monitoring threats with Amazon GuardDuty RDS Protection for Amazon Aurora](guard-duty-rds-protection.md) .

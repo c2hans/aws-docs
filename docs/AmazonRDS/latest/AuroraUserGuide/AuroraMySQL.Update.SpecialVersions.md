@@ -24,6 +24,8 @@ We recommend that you upgrade to the latest release, instead of using the LTS re
 + The testing cycle for the cluster and associated applications takes a long time for each update to the Aurora MySQL database engine.
 + The database version for your Aurora MySQL cluster has all the DB engine features and bug fixes that your application needs.
 
+Because LTS patch versions include only fixes for critical stability and security issues, clusters that remain on an LTS release don't receive fixes for less critical issues or new features that are available in later minor versions. Consider this trade-off when you choose between an LTS release and upgrading to newer minor versions.
+
 The current LTS releases for Aurora MySQL are as follows:
 + Aurora MySQL version 3.10.\*.
 + Aurora MySQL version 3.04.\*.

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeSnap
 
 # DescribeSnapshots
 
-Returns the description of specific Amazon FSx for OpenZFS snapshots, if a `SnapshotIds` value is provided. Otherwise, this operation returns all snapshots owned by your AWS account in the AWS Region of the endpoint that you're calling.
+Returns the description of specific Amazon FSx for OpenZFS and Amazon FSx for NetApp ONTAP snapshots, if a `SnapshotIds` value is provided. Otherwise, this operation returns all snapshots owned by your AWS account in the AWS Region of the endpoint that you're calling.
 
 When retrieving all snapshots, you can optionally specify the `MaxResults` parameter to limit the number of snapshots in a response. If more snapshots remain, Amazon FSx returns a `NextToken` value in the response. In this case, send a later request with the `NextToken` request parameter set to the value of `NextToken` from the last response.
 
@@ -64,7 +64,7 @@ Pattern: `^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$`
 Required: No
 
  ** [SnapshotIds](#API_DescribeSnapshots_RequestSyntax) **   <a name="FSx-DescribeSnapshots-request-SnapshotIds"></a>
-The IDs of the snapshots that you want to retrieve. This parameter value overrides any filters. If any IDs aren't found, a `SnapshotNotFound` error occurs.
+The IDs of the snapshots that you want to retrieve. You can include snapshots of Amazon FSx for OpenZFS and Amazon FSx for NetApp ONTAP volumes in the same request. If you also specify `Filters`, only snapshots that match both the IDs and the filters are returned. If any IDs aren't found, or if a filter excludes any of them, a `SnapshotNotFound` error occurs.
 Type: Array of strings
 Array Members: Maximum number of 50 items.
 Length Constraints: Minimum length of 11. Maximum length of 28.
@@ -262,13 +262,21 @@ Required: No
                   "FileSystemId": "string",
                   "Lifecycle": "string",
                   "LifecycleTransitionReason": {
-                     "Message": "string"
+                     "Message": "string",
+                     "OntapError": {
+                        "Code": "string",
+                        "Message": "string"
+                     }
                   },
                   "Name": "string",
                   "OntapConfiguration": {
                      "AggregateConfiguration": {
                         "Aggregates": [ "string" ],
                         "TotalConstituents": number
+                     },
+                     "CloneConfiguration": {
+                        "ParentVolumeId": "string",
+                        "SnapshotId": "string"
                      },
                      "CopyTagsToBackups": boolean,
                      "FlexCacheEndpointType": "string",
@@ -366,11 +374,23 @@ Required: No
          "CreationTime": number,
          "Lifecycle": "string",
          "LifecycleTransitionReason": {
-            "Message": "string"
+            "Message": "string",
+            "OntapError": {
+               "Code": "string",
+               "Message": "string"
+            }
          },
          "Name": "string",
+         "OntapConfiguration": {
+            "ExpiryTime": number,
+            "SizeInMegabytes": number,
+            "SnaplockExpiryTime": number,
+            "SnapmirrorLabel": "string",
+            "UUID": "string"
+         },
          "ResourceARN": "string",
          "SnapshotId": "string",
+         "SnapshotType": "string",
          "Tags": [
             {
                "Key": "string",

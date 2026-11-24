@@ -11,10 +11,12 @@ In Amazon ECS Managed Instances, patching is a critical maintenance process wher
 
 By default, Amazon ECS managed container instances operate on a standardized 14–21 day lifecycle. Amazon ECS initiates graceful workload draining at day 14 from instance launch, with final termination occurring no later than day 21. Amazon ECS accommodates early draining under specific circumstances:
 + Detection of security vulnerabilities on the software
-+ Hardware health degradation
++ Hardware health degradation, such as a failed Amazon EC2 system or instance status check, or an Amazon EC2 scheduled event or AWS Health event for the instance or its Amazon EBS volumes. For more information, see [Status checks for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html) and [Scheduled events for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 + To honor customer-configured event windows
 
 This approach maintains system compliance while respecting customer-defined maintenance requirements.
+
+Service tasks stopped by this draining have the stopped reason `Task in service {{service-name}} stopped due to instance draining: {{reason}}`, where {{reason}} is `PATCHING` for the lifecycle and software updates, `INFRASTRUCTURE_HEALTH` for hardware health degradation, or `EVENT_WINDOW_PATCHING` for an event window.
 
 ## Event windows and maintenance scheduling
 <a name="managed-instances-event-windows"></a>

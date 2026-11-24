@@ -55,7 +55,11 @@ The following table shows the maximum supported values for workflow quotas. Thes
 | Workflows - CPU instance container size | The maximum container image size for a CPU instance. | 45 GiB | No |
 | Workflows - GPU instance container size | The maximum container image size for a GPU instance. | 95 GiB | No |
 | GPU instance /dev/shm shared memory | The maximum amount of shared memory per GPU instance. | 8 GB per GPU | No |
-| Workflows - Run parameter file | The maximum size of a run parameter file. | 256,000 bytes | No |
+| Workflows - Run parameter file | The maximum size of the run parameters that you specify inline in a StartRun request. To specify larger parameters, use a parameters file in Amazon S3 with the parametersUri field. | 256,000 bytes | No |
+| Workflows - Run parameters file in Amazon S3 | The size of a run parameters file that you specify with the parametersUri field. | 3 bytes minimum, 104,857,600 bytes (100 MiB) maximum | No |
+| Workflows - Run parameters file nesting depth | The maximum number of levels of nested JSON objects and arrays in a run parameters file that you specify with the parametersUri field. | 64 | No |
+| Workflows - Amazon S3 URIs in a run parameters file | The maximum number of distinct Amazon S3 URIs that the parameters of a run can reference, for a run that uses the parametersUri field and STATIC or DYNAMIC run storage. A folder URI or a glob pattern counts as one URI. | 60,000 | No |
+| Workflows - Amazon S3 buckets in a run parameters file | The maximum number of Amazon S3 buckets that the parameters of a run can reference, for a run that uses the parametersUri field. | 100 | No |
 | Workflows - Nextflow runtime configuration file | The maximum size of the Nextflow runtime configuration file that you supply through the engineConfig engine setting. | 8 MB. Maximum of 64 KB of JVM bytecode per closure method. | No |
 | Workflows - Workflow parameters template file | The maximum number of entries and maximum file size for a workflow parameters template file. This quota applies to workflows that you create using the console or API. | 1,000 entries, 400 KB  | No |
 | Workflows - Workflow definition file size - API (definitionZip direct upload) | The maximum size of the workflow definition file when you create the workflow using the API operation or an AWS SDK with definitionZip (direct upload). | 4.4 MB | No |
@@ -71,7 +75,7 @@ The following table shows the maximum supported values for workflow quotas. Thes
 | Workflows - Maximum subnets per Availability Zone | The maximum number of subnets per Availability Zone in a VPC configuration. | 1 | No |
 | Workflows - Elastic network interfaces per VPC configuration | The maximum number of elastic network interfaces (ENIs) per VPC configuration. | 5,000 | No |
 
-For suggestions on how to reduce the size of your run parameter file, see [Managing run parameters size](workflows-run-inputs.md#run-input-file-options).
+For suggestions on how to reduce the size of your run parameter file, see [Managing run parameters size](workflows-run-inputs.md#run-input-file-options). For more information about parameters files in Amazon S3, see [Specify run parameters by reference](workflows-run-inputs.md#run-parameters-uri).
 
 ## HealthOmics batch quotas
 <a name="fixed-quotas-batch"></a>

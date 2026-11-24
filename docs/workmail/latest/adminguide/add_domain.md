@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMa
 You can add up to 100 domains to your Amazon WorkMail organization. When you add a new domain, an Amazon Simple Email Service (Amazon SES) sending authorization policy is automatically added to the domain identity policy. This provides Amazon WorkMail with access to all Amazon SES sending actions for your domain and allows you to redirect email to your domain. You can also redirect email to external domains.
 
 **Note**
-As a best practice, you should add aliases for postmaster@ and abuse@ to all your domains. You can create distribution groups for these aliases if you want specific users in your organization to receive mail sent to these aliases.
+As a best practice, you should add aliases for [postmaster@](mailto:postmaster@) and [abuse@](mailto:abuse@) to all your domains. You can create distribution groups for these aliases if you want specific users in your organization to receive mail sent to these aliases.
 
 **When you configure your Amazon WorkMail organization with a custom domain, remember the following about your domain's DNS records:**
 + For MX and autodiscover CNAME records, we recommend setting the **Time to Live (TTL)** value to 3600. Reducing the TTL ensures that your mail servers don't use outdated or invalid MX records after you update those records or migrate your mailboxes.

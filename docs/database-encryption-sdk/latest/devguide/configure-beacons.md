@@ -156,8 +156,8 @@ Avoid creating a virtual field with source fields that overlap with existing sta
 You can use population and [beacon length](choosing-beacon-length.md) to determine if the source fields for a virtual field preserve the security of your dataset. The population is the expected number of unique values in a field. Your population does not need to be precise. For help estimating the population of a field, see [Estimate the population](choosing-beacon-length.md#estimate-population).
 
 Consider the following example as you review the security of your virtual fields.
-+ Beacon1 is constructed from `FieldA`. `FieldA` has a population greater than **2(Beacon1 length)**.
-+ Beacon2 is constructed from `VirtualField`, which is constructed from `FieldA`, `FieldB`, `FieldC`, and `FieldD`. Together, `FieldB`, `FieldC`, and `FieldD` have a population greater than **2N**
++ Beacon1 is constructed from `FieldA`. `FieldA` has a population greater than **2<sup>(Beacon1 length)</sup>**.
++ Beacon2 is constructed from `VirtualField`, which is constructed from `FieldA`, `FieldB`, `FieldC`, and `FieldD`. Together, `FieldB`, `FieldC`, and `FieldD` have a population greater than **2<sup>N</sup>**
 
 Beacon2 preserves the security of both Beacon1 and Beacon2 if the following statements are true:
 

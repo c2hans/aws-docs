@@ -51,9 +51,9 @@ The following table details the relationship between GuardDuty administrator acc
 | Suspend GuardDuty | Any\* | – | Any\* | – |
 | Disable GuardDuty | Any\* | – | Any\* | Self |
 
-\+Indicates that the delegated GuardDuty administrator account can take this action only if they have not set up the auto-enable preferences to `ALL` the organization members.
+<sup>\+</sup>Indicates that the delegated GuardDuty administrator account can take this action only if they have not set up the auto-enable preferences to `ALL` the organization members.
 
-\*Indicates that a delegated GuardDuty administrator account can't disable GuardDuty in a member account directly. The delegated GuardDuty administrator account must first disassociate the member account, and then delete them. After this, each member account can disable GuardDuty in their own accounts. For more information about performing these tasks in your organization, see [Continually managing your member accounts within GuardDuty](maintaining-guardduty-organization-delegated-admin.md).
+<sup>\*</sup>Indicates that a delegated GuardDuty administrator account can't disable GuardDuty in a member account directly. The delegated GuardDuty administrator account must first disassociate the member account, and then delete them. After this, each member account can disable GuardDuty in their own accounts. For more information about performing these tasks in your organization, see [Continually managing your member accounts within GuardDuty](maintaining-guardduty-organization-delegated-admin.md).
 
 ## Understanding member relationship status
 <a name="administrator_member_relationship_status"></a>

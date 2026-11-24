@@ -249,15 +249,15 @@ To better estimate your requirements, consider conducting a proof of concept (PO
 
 | Existing node type | Existing number of nodes | Recommended new node type | Upgrade action |
 | --- | --- | --- | --- |
-| ra3.16xlarge | 2–128 | rg.12xlarge | Start with 1 node of rg.12xlarge for every 1 node of ra3.16xlarge1. |
-| ra3.4xlarge | 2–64 | rg.4xlarge | Start with 3 nodes of rg.4xlarge for every 4 nodes of ra3.4xlarge1. |
-| ra3.xlplus | 1 | rg.large | Start with 2 nodes of rg.large for a single-node ra3.xlplus cluster1,2. |
-| ra3.xlplus | 2–32 | rg.xlarge | Start with 1 node of rg.xlarge for every 1 node of ra3.xlplus1. |
-| ra3.large | 1–16 | rg.large | Start with 1 node of rg.large for every 1 node of ra3.large1,2. |
+| ra3.16xlarge | 2–128 | rg.12xlarge | Start with 1 node of rg.12xlarge for every 1 node of ra3.16xlarge<sup>1</sup>. |
+| ra3.4xlarge | 2–64 | rg.4xlarge | Start with 3 nodes of rg.4xlarge for every 4 nodes of ra3.4xlarge<sup>1</sup>. |
+| ra3.xlplus | 1 | rg.large | Start with 2 nodes of rg.large for a single-node ra3.xlplus cluster<sup>1</sup><sup>,2</sup>. |
+| ra3.xlplus | 2–32 | rg.xlarge | Start with 1 node of rg.xlarge for every 1 node of ra3.xlplus<sup>1</sup>. |
+| ra3.large | 1–16 | rg.large | Start with 1 node of rg.large for every 1 node of ra3.large<sup>1</sup><sup>,2</sup>. |
 
-1Extra nodes might be needed depending on workload requirements. Add or remove nodes based on the compute requirements of your required query performance. RG instances are lower in price per vCPU compared to RA3, so adding nodes can still result in lower overall cost compared to your previous configuration. For more information, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
+<sup>1</sup>Extra nodes might be needed depending on workload requirements. Add or remove nodes based on the compute requirements of your required query performance. RG instances are lower in price per vCPU compared to RA3, so adding nodes can still result in lower overall cost compared to your previous configuration. For more information, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 
-2For single-node clusters, see **Single-node clusters** under [Things to consider when upgrading to RG nodes](#rg-upgrade-considerations).
+<sup>2</sup>For single-node clusters, see **Single-node clusters** under [Things to consider when upgrading to RG nodes](#rg-upgrade-considerations).
 
 ### Networking features supported by RG and RA3 nodes
 <a name="managing-cluster-rs-ra3-networking"></a>

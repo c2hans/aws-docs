@@ -112,7 +112,7 @@ The number of conditions in an expression is separate from the number of inline 
 
 `SearchVectors` compares Number values in a `SearchConditionExpression` as 64-bit binary floating-point values (IEEE 754 double precision). `Query`, `Scan`, and condition expressions on item-level operations such as `GetItem` and `UpdateItem` compare Number values exactly, with up to 38 digits of precision. Both methods return the same items whenever the stored value and the expression value each have 15 or fewer significant digits.
 
-Beyond 15 significant digits, two different Number values can round to the same double, and `SearchVectors` then treats them as equal. `SearchVectors` rounds each value to the nearest double, with ties to even, before it compares. Every integer from -9,007,199,254,740,992 to 9,007,199,254,740,992 (253) converts exactly. Larger integers can lose their last digits.
+Beyond 15 significant digits, two different Number values can round to the same double, and `SearchVectors` then treats them as equal. `SearchVectors` rounds each value to the nearest double, with ties to even, before it compares. Every integer from -9,007,199,254,740,992 to 9,007,199,254,740,992 (2<sup>53</sup>) converts exactly. Larger integers can lose their last digits.
 
 The following table shows how the two methods can disagree at high precision.
 

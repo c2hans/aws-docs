@@ -13,7 +13,7 @@ For example, the tasks and pods token bucket size for a Fargate customer account
 | Fargate Resource rate quota for On Demand Amazon ECS tasks and Amazon EKS pods[1](#fargate-throttling-note-1) | 100 | 20 |
 | Fargate Resource rate quota for Spot Amazon ECS tasks | 100 | 20 |
 
-<a name="fargate-throttling-note-1"></a>1Accounts launching only Amazon EKS pods have a burst rate of 20 with a sustained pod launch rate of 20 pod launches per second when using the platform versions called out in the [Amazon EKS platform versions](https://docs.aws.amazon.com/eks/latest/userguide/platform-versions.html).
+<a name="fargate-throttling-note-1"></a><sup>1</sup>Accounts launching only Amazon EKS pods have a burst rate of 20 with a sustained pod launch rate of 20 pod launches per second when using the platform versions called out in the [Amazon EKS platform versions](https://docs.aws.amazon.com/eks/latest/userguide/platform-versions.html).
 
 ## Throttling the `RunTask` API in Fargate
 <a name="fargate-throttling-runtask"></a>

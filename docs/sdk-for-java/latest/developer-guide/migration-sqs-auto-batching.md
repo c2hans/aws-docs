@@ -19,7 +19,7 @@ The AWS SDK for Java 2.x simplifies and enhances buffering functionality with th
 | Package names | com.amazonaws.services.sqs.buffered | software.amazon.awssdk.services.sqs.batchmanager |
 | Class names | `[AmazonSQSBufferedAsyncClient](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/sqs/buffered/AmazonSQSBufferedAsyncClient.html)` | [SqsAsyncBatchManager](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/batchmanager/SqsAsyncBatchManager.html) |
 
-1 [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). 2 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). <sup>2</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ## Using automatic SQS request batching
 <a name="migration-sqs-auto-batching-using"></a>

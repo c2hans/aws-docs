@@ -8,7 +8,7 @@ The Amazon CloudWatch Observability Helm chart provides a flexible deployment op
 
 Use the Helm chart when you need one or more of the following capabilities:
 + Fine-grained control over agent configuration
-+ OTel-native log collection using the filelog receiver (no Fluent Bit dependency)
++ OTel-native log collection using the filelog receiver
 + Custom TLS certificate management through cert-manager
 + Non-EKS Kubernetes clusters (ROSA, self-managed Kubernetes)
 + GitOps workflows with ArgoCD or Flux
@@ -147,7 +147,7 @@ Confirm that the Helm release and agent pods deployed successfully.
 ## Key configuration options
 <a name="container-insights-eks-otel-helm-config"></a>
 
-The following tables describe the key Helm chart values that you can configure. Pass these values by using the `--set` flag or a custom `values.yaml` file.
+The following tables describe the key Helm chart values that you can configure. Pass these values by using the `--set` flag or a custom `values.yaml` file. For settings that apply to all agents and for how to change values after you install, see [Configuring the add-on and the Helm chart](eks-observability-addon-configure.md).
 
 ### Cluster settings
 <a name="container-insights-eks-otel-helm-config-cluster"></a>
@@ -156,16 +156,14 @@ The following tables describe the key Helm chart values that you can configure. 
 | --- | --- | --- |
 | clusterName | — | The name of the Amazon EKS cluster. Required. |
 | region | — | The AWS Region where the cluster runs. Required. |
-| otelContainerInsights.enabled | false | Enables OTel Container Insights with the filelog receiver. |
+| otelContainerInsights.enabled | false | Specifies whether OTel Container Insights collects metrics and logs. |
 
-### Container logs (OTel filelog receiver)
+### Container logs
 <a name="container-insights-eks-otel-helm-config-logs"></a>
 
 | Parameter | Default | Description |
 | --- | --- | --- |
-| containerLogs.enabled | true | Enables container log collection by using the OTel filelog receiver. |
-| containerLogs.logGroupName | /aws/containerinsights/{{cluster-name}}/application | The CloudWatch Logs log group name for container logs. |
-| containerLogs.logRetentionDays | 7 | The number of days to retain container logs in CloudWatch Logs. |
+| otelContainerInsights.logs.enabled | true | Specifies whether OTel Container Insights collects container and host logs. Takes effect only when otelContainerInsights.enabled is true. For information about the log groups, see [Sending logs to Amazon CloudWatch](container-insights-eks-otel-logs.md). |
 
 ### Agent (metrics)
 <a name="container-insights-eks-otel-helm-config-agent"></a>
@@ -174,19 +172,15 @@ The following tables describe the key Helm chart values that you can configure. 
 | --- | --- | --- |
 | agent.enabled | true | Enables the CloudWatch agent DaemonSet for metric collection. |
 | agent.serviceAccount.name | cloudwatch-agent | The name of the Kubernetes service account for the agent. |
-| agent.resources.requests.cpu | 100m | The CPU request for the agent container. |
-| agent.resources.requests.memory | 128Mi | The memory request for the agent container. |
-| agent.resources.limits.cpu | 200m | The CPU limit for the agent container. |
-| agent.resources.limits.memory | 256Mi | The memory limit for the agent container. |
+| agent.resources | Requests: 250m CPU, 128Mi memory. Limits: 500m CPU, 512Mi memory. | The CPU and memory of every agent, including the cluster scraper. For details, see [Setting agent CPU and memory](eks-observability-addon-configure.md#eks-observability-addon-configure-agent-resources). |
 
 ### GPU monitoring
 <a name="container-insights-eks-otel-helm-config-gpu"></a>
 
 | Parameter | Default | Description |
 | --- | --- | --- |
-| agent.config.logs.metrics\_collected.kubernetes.enhanced\_container\_insights | true | Enables Enhanced Container Insights metrics, including GPU metrics. |
-| dcgmExporter.enabled | false | Enables the DCGM exporter for NVIDIA GPU metrics. Requires NVIDIA GPU nodes. |
-| neuronMonitor.enabled | false | Enables the Neuron monitor for AWS Inferentia and Trainium metrics. |
+| dcgmExporter.enabled | true | Enables the DCGM exporter for NVIDIA GPU metrics. Requires NVIDIA GPU nodes. |
+| neuronMonitor.enabled | true | Enables the Neuron monitor for AWS Inferentia and Trainium metrics. |
 
 ## TLS certificate management
 <a name="container-insights-eks-otel-helm-tls"></a>

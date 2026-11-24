@@ -25,4 +25,4 @@ This section contains the Amazon Managed Workflows for Apache Airflow (MWAA) API
 
 For a list of supported regions, see [Amazon MWAA endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/mwaa.html) in the * AWS General Reference*.
 
-This document was last published on November 23, 2026.
+This document was last published on November 24, 2026.

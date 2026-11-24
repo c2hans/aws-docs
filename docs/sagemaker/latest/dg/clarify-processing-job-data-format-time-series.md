@@ -31,17 +31,17 @@ JSON is a flexible format that can represent any level of complexity in your str
 
 This section shows you how to set an analysis configuration using `time_series_data_config` for time series data in JSON format. Suppose you have a dataset with two items, each with a timestamp (t), target time series (x), two related time series (r) and two static covariates (u) as follows:
 
- t1 = [0,1,2], t2 = [2,3]
+ t<sub>1</sub> = [0,1,2], t<sub>2</sub> = [2,3]
 
-x1 = [5,6,4], x2 = [0,4]
+x<sub>1</sub> = [5,6,4], x<sub>2</sub> = [0,4]
 
-r1 = [0,1,0], r21 = [1,1]
+r<sub>1</sub><sup></sup> = [0,1,0], r<sub>2</sub><sup>1</sup> = [1,1]
 
-r12 = [0,0,0], r22 = [1,0]
+r<sub>1</sub><sup>2</sup> = [0,0,0], r<sub>2</sub><sup>2</sup> = [1,0]
 
-u11 = -1, u21 = 0
+u<sub>1</sub><sup>1</sup> = -1, u<sub>2</sub><sup>1</sup> = 0
 
-u12 = 1, u22 = 2
+u<sub>1</sub><sup>2</sup> = 1, u<sub>2</sub><sup>2</sup> = 2
 
 You can encode the dataset using `time_series_data_config` in three different ways, depending on `dataset_format`. The following sections describe each method.
 

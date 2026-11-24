@@ -29,7 +29,7 @@ To create and offer free products in AWS Marketplace, you must:
 
 If you charge for your products or offer bring your own license (BYOL) products, you must also meet these additional requirements:
 + Be a permanent resident or citizen in an eligible jurisdiction, or a business entity organized or incorporated in one of those areas
-+ Provide tax information (W-9 form for US sellers, W-8 form for non-US sellers)
++ Provide tax information (W-9 form for US sellers, W-8 form for non-US sellers) on the **Tax and invoices** page in AWS Partner Central
 + Provide bank account information in an eligible jurisdiction that can accept USD disbursements
 + Complete Know Your Customer (KYC) process if selling to customers in Europe, the Middle East, and Africa (EMEA), getting paid for Republic of Korea transactions, or using U.K.-based bank accounts
 + Complete bank account verification process

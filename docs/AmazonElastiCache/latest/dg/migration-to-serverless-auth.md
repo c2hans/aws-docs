@@ -100,7 +100,7 @@ The IAM identity that calls `PrepareMigration` also needs `secretsmanager:GetSec
 
 The credentials you store decide which user ElastiCache connects as. What that user is allowed to do on your source determines whether the migration can finish.
 
-If your source uses a single password and no user names, ElastiCache connects with that password and there is nothing further to configure.
+If your source uses a single password and no user names, or if you do not provide credentials, ElastiCache connects as the `default` user. The `default` user has every permission in the following list unless you restricted it. If you restricted it, run `ACL SETUSER default` on every node, followed only by the `+` permissions from the following command. `ACL SETUSER` adds them to the access that the `default` user already has. The full command also removes every other command and adds a password. Those changes would block an application that connects as the `default` user.
 
 If your source authenticates users by name and controls what each one can do, create a user for the migration and grant it the following permissions. Run this valkey-cli command against every node in your source, or use whatever mechanism your source has for applying access control across the cluster:
 
@@ -123,7 +123,7 @@ Where:
 + `+psync`, `+sync`, and `+replconf` are the replication commands ElastiCache uses to synchronize your data.
 + `+multi`, `+exec`, `+client|pause`, `+client|kill`, and `+client|unpause` are required. ElastiCache uses these commands to run the cutover and validates them when you prepare the migration, except `+client|unpause` on Redis OSS 6.0 and 6.2.
 
-ElastiCache verifies these grants when you prepare the migration and again when you start the data sync, and a missing grant fails that step. The failure event might not name the missing permission. It can report instead that ElastiCache is unable to connect to your source, so if your source is reachable, check the migration user's grants against this list. After you prepare the migration, do not change or remove the migration user or its permissions. Doing so during a migration can cause data loss or make your cache unavailable.
+ElastiCache verifies these grants when you prepare the migration and again when you start the data sync, and a missing grant fails that step. The failure event reports that the migration user is missing ACL permissions. It does not name the missing permission or the node, so grant every permission in this list on every node in your source. After you prepare the migration, do not change or remove the migration user or its permissions. Doing so during a migration can cause data loss or make your cache unavailable.
 
 ## Setting up your application's users on your target
 <a name="migration-to-serverless-auth-target-users"></a>

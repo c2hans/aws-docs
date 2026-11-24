@@ -9,6 +9,11 @@ Used to specify changes to the ONTAP configuration for the volume you are updati
 ## Contents
 <a name="API_UpdateOntapVolumeConfiguration_Contents"></a>
 
+ ** CloneConfiguration **   <a name="FSx-Type-UpdateOntapVolumeConfiguration-CloneConfiguration"></a>
+Specifies the clone configuration changes to make to the volume. Use this property to split a clone from its parent volume.
+Type: [UpdateCloneConfiguration](API_UpdateCloneConfiguration.md) object
+Required: No
+
  ** CopyTagsToBackups **   <a name="FSx-Type-UpdateOntapVolumeConfiguration-CopyTagsToBackups"></a>
 A boolean flag indicating whether tags for the volume should be copied to backups. This value defaults to false. If it's set to true, all tags for the volume are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is true, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the volume, regardless of this value.
 Type: Boolean

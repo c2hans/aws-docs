@@ -57,6 +57,8 @@ The following burstable-performance DB instance class types are available:
 
   The db.t2 instance classes aren't available for the Aurora I/O-Optimized cluster storage configuration.
 
+Amazon RDS configures burstable-performance DB instance classes for Unlimited mode. For more information about Unlimited mode, including how instances earn and spend CPU credits, see [Unlimited mode for burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-unlimited-mode.html) in the Amazon EC2 User Guide.
+
 **Note**
 We recommend using the T DB instance classes only for development, test, or other nonproduction servers. For more detailed recommendations for the T instance classes, see [Using T instance classes for development and testing](AuroraMySQL.BestPractices.Performance.md#AuroraMySQL.BestPractices.T2Medium).
 

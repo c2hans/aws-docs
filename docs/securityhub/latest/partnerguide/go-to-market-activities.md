@@ -15,7 +15,7 @@ AWS Partner Network (APN) Partners can use APN Partner Marketing Central and the
 
 After you are approved as a Security Hub CSPM partner, your solution can be displayed on the [AWS Security Hub CSPM partners page](https://aws.amazon.com/security-hub/partners/).
 
-To be listed on this page, provide the following details to your APN Partner contacts. This could be your partner development manager (PDM), partner solution architect (PSA), or an email to securityhub-pms@amazon.com.
+To be listed on this page, provide the following details to your APN Partner contacts. This could be your partner development manager (PDM), partner solution architect (PSA), or an email to [securityhub-pms@amazon.com](mailto:securityhub-pms@amazon.com).
 + A brief description of your solution, its integration with Security Hub CSPM, and the value that the integration with Security Hub CSPM provides to customers. This description is limited to 700 characters including spaces.
 + The URL to a page that describes your solution. This site should be specific to your AWS integration and more specifically your Security Hub CSPM integration. It should focus on the customer experience and the value that customers receive when they use the integration.
 + A high-resolution copy of your logo that is 600 x 300 pixels. For details on the requirements for this logo, see [Logo for partners page](manifest-use-case-marketing.md#manifest-partners-page-logo).

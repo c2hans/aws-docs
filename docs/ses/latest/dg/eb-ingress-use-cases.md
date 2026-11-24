@@ -79,7 +79,7 @@ For a Vade Advanced Email Security Add On walkthrough, see [AWS Messaging Blog: 
 + **Source** – Inbound or outbound email that must be retained before mailbox delivery.
 + **Ingress point** – Choose `OPEN`, `AUTH`, or `MTLS` from the source's connection and identity requirements. Use separate ingress endpoints when retention requirements differ by business flow.
 + **Traffic policy** – Accept only the traffic that must enter the archive and delivery workflow.
-+ **Rule set** – Run the archive action before the relay or send-to-internet action when every delivered message must have an in-transit archive copy.
++ **Rule set** – Run the Archive action before the relay or send-to-internet action when the archive request must be accepted before delivery starts. This order does not confirm that durable archive storage has completed.
 + **Recommendation** – Use separate rule sets when retention periods, encryption keys, or delivery destinations differ.
 
 For the reasons to archive during transit rather than at individual mailboxes, see [AWS Messaging Blog: Email Archiving with Mail Manager: Why To Archive In Transit vs At The Mailbox](https://aws.amazon.com/blogs/messaging-and-targeting/email-archiving-with-mail-manager-why-to-archive-in-transit-vs-at-the-mailbox/).

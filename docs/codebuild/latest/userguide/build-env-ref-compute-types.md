@@ -639,7 +639,7 @@ AWS CodeBuild provides build environments with the following available memory, 
 | Windows XLarge ¹ | BUILD\_GENERAL1\_XLARGE | `WINDOWS_SERVER_2022_CONTAINER` | 72 GiB | 36 | 256 GB |
 | Windows 2XLarge ¹ | BUILD\_GENERAL1\_2XLARGE | `WINDOWS_SERVER_2022_CONTAINER` | 144 GiB | 72 | 824 GB |
 
-¹ The latest version of this image type is cached. If you specify a more specific version, then CodeBuild provisions that version instead of the cached version. This can result in longer build times. For example, to benefit from caching, specify `aws/codebuild/amazonlinux-x86_64-standard:5.0` instead of a more granular version, such as `aws/codebuild/amazonlinux-x86_64-standard:5.0-1.0.0`.
+<sup>¹ </sup>The latest version of this image type is cached. If you specify a more specific version, then CodeBuild provisions that version instead of the cached version. This can result in longer build times. For example, to benefit from caching, specify `aws/codebuild/amazonlinux-x86_64-standard:5.0` instead of a more granular version, such as `aws/codebuild/amazonlinux-x86_64-standard:5.0-1.0.0`.
 
 AWS CodeBuild provides build environments with the following available memory and disk space for AWS Lambda compute mode:
 

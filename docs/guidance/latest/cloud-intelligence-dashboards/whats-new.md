@@ -19,6 +19,17 @@ Subscribe to the RSS feed to get notified about new releases automatically: [clo
 
 The highlights below cover notable releases from the past year, most recent first.
 
+## Data Exports v0.14.0: standardized cost and rate columns in CUR 2.0 (November 24, 2026)
+<a name="whats-new-data-exports-0140"></a>
++  **Standardized cost and rate** — new `EnableStandardizedCostAndRate` parameter (default `yes`) turns on the `INCLUDE_STANDARDIZED_COST_AND_RATE` setting of the CUR 2.0 export. It adds 14 `cost_analytics_*` columns that show the cost and rate for billed, list, contracted, effective, public equivalent billed, public equivalent effective, and public On-Demand charges, so you can compare costs consistently across pricing models.
++  **CUR 2.0 table** — the `cur2` table now includes the new `cost_analytics_*` columns. They are empty for data delivered before you update the stack.
+
+To use the new columns, update the Data Exports stack in the source accounts and in the destination account. The existing export is updated in place. Set `EnableStandardizedCostAndRate` to `no` to keep the previous set of columns.
+
+See [Data Exports](data-exports.md).
+
+View the [changelog](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-data-collection/blob/main/data-exports/CHANGELOG.md).
+
 ## DROID Dashboard v1.0.0: new dashboard for Amazon RDS and Amazon Aurora (November 3, 2026)
 <a name="whats-new-droid-100"></a>
 

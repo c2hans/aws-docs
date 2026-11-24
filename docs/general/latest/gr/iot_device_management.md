@@ -297,7 +297,7 @@ AWS IoT provides endpoints that support the [Federal Information Processing Stan
 | `[StartNextPendingJobExecution/UpdateJobExecution throttle limit](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-C8F5F7B3)` | The maximum number of total write transactions per second per account which can be caused by invoking StartNextPendingJobExecution and/or UpdatePendingJobExecution. | 200 | No |
 | `[UpdateJob throttle limit](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-7365ADF8)` | The throttle limit for UpdateJob in your AWS account per Region per second. | 10 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-7365ADF8) |
 
-† For definitions of data plane and control plane, see **What are the ways for accessing AWS IoT Core?** in the [AWS IoT Core FAQs](https://aws.amazon.com/iot-core/faqs/)
+<sup>†</sup> For definitions of data plane and control plane, see **What are the ways for accessing AWS IoT Core?** in the [AWS IoT Core FAQs](https://aws.amazon.com/iot-core/faqs/)
 
 ### AWS IoT Device Management commands
 <a name="commands-limits"></a>

@@ -102,7 +102,11 @@ Required: No
          "FileSystemId": "string",
          "Lifecycle": "string",
          "LifecycleTransitionReason": {
-            "Message": "string"
+            "Message": "string",
+            "OntapError": {
+               "Code": "string",
+               "Message": "string"
+            }
          },
          "Name": "string",
          "ResourceARN": "string",

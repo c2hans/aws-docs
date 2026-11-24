@@ -19,7 +19,7 @@ Waiters classes are in the same Maven artifact as the service.
 | Package name | com.amazonaws.services.dynamodbv2.waiters | software.amazon.awssdk.services.dynamodb.waiters |
 | Class names | `[AmazonDynamoDBWaiters](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/waiters/AmazonDynamoDBWaiters.html)` |  +  Synchronous: `[DynamoDbWaiter](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/waiters/DynamoDbWaiter.html)` <br />+  Asynchronous: `[DynamoDbAsyncWaiter](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/waiters/DynamoDbAsyncWaiter.html)`   |
 
-1 [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). 2 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). <sup>2</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ## API changes
 <a name="migration-cf-presign-behavior-changes"></a>

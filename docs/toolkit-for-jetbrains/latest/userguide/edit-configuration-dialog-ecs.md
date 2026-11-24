@@ -14,10 +14,10 @@ The **Configuration** tab of the **Edit configuration** dialog box contains the 
 (Required) The name of this configuration.
 
 **Share / Share through VCS**
-(Optional) If selected, makes this configuration available to other team members.1
+(Optional) If selected, makes this configuration available to other team members.<sup>1</sup>
 
 **Allow parallel run / Allow running in parallel**
-(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.1
+(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.<sup>1</sup>
 
 **Cluster**
 (Required) The name of the Amazon Elastic Container Service (Amazon ECS) cluster to debug.
@@ -45,21 +45,21 @@ The following items apply to the selected container: **Platform**, **Remote Debu
 (Optional) A **Local Port** on your local development machine that maps to a **Remote Port** within the container. This enables local ports to communicate directly with ports on a remote resource. For example, for the command `curl localhost:3422`, port `3422` maps to some service. To specify a local and remote port mapping, choose **Add** (the **\+** icon).
 
 **Before launch: Activate tool window**
-(Optional) Lists any tasks that must be performed before starting this configuration.2
+(Optional) Lists any tasks that must be performed before starting this configuration.<sup>2</sup>
 
 **Show this page**
-(Optional) If selected, displays these configuration settings before starting this configuration.2
+(Optional) If selected, displays these configuration settings before starting this configuration.<sup>2</sup>
 
 **Activate tool window**
-(Optional) If selected, opens the **Run** or **Debug** tool window when you start this configuration.2
+(Optional) If selected, opens the **Run** or **Debug** tool window when you start this configuration.<sup>2</sup>
 
 ***Notes***
-1 For more information, see the following:
+<sup>1</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Common options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#common) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Common options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#common) on the PyCharm Help website.
 + For WebStorm, see [Common options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#common) on the WebStorm Help website.
 + For JetBrains Rider, see [Common options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#common) on the JetBrains Rider Help website.
-2 For more information, see the following:
+<sup>2</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Before Launch options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#before-launch-options) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Before Launch options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#before-launch-options) on the PyCharm Help website.
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.
@@ -79,27 +79,27 @@ The **AWS Connection** tab of the **Edit configuration** dialog box contains the
 (Required) The name of the AWS Region to use for the connected account.
 
 **Share / Share through VCS**
-(Optional) If selected, makes this configuration available to other team members.1
+(Optional) If selected, makes this configuration available to other team members.<sup>1</sup>
 
 **Allow parallel run / Allow running in parallel**
-(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.1
+(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.<sup>1</sup>
 
 **Before launch: Activate tool window**
-(Optional) Lists any tasks that must be performed before starting this configuration.2
+(Optional) Lists any tasks that must be performed before starting this configuration.<sup>2</sup>
 
 **Show this page**
-(Optional) If selected, displays these configuration settings before starting this configuration.2
+(Optional) If selected, displays these configuration settings before starting this configuration.<sup>2</sup>
 
 **Activate tool window**
-(Optional) If selected, opens the **Run** or **Debug** tool window when you start this configuration.2
+(Optional) If selected, opens the **Run** or **Debug** tool window when you start this configuration.<sup>2</sup>
 
 ***Notes***
-1 For more information, see the following:
+<sup>1</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Common options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#common) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Common options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#common) on the PyCharm Help website.
 + For WebStorm, see [Common options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#common) on the WebStorm Help website.
 + For JetBrains Rider, see [Common options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#common) on the JetBrains Rider Help website.
-2 For more information, see the following:
+<sup>2</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Before Launch options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#before-launch-options) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Before Launch options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#before-launch-options) on the PyCharm Help website.
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/deleting-personal-data.htm
 
 Depending on how you use it, Amazon SES might store certain data that could be considered personal. For example, in order to send email using Amazon SES, you must provide at least one verified identity (an email address or a domain). You can use the Amazon SES console or the Amazon SES API to permanently delete this personal data.
 
-This chapter provides procedures for deleting various types of data that might be considered personal. If you use Mail Manager, its archives and address lists can also contain personal data. To delete an archive, use the **Manage archives** tab in [Email archiving](eb-archiving.md). Mail Manager removes the archive 30 days after you delete it. To remove an address from an address list, or to delete the list, see [Managing Address Lists](eb-addlist.md#managing-address-lists).
+This chapter provides procedures for deleting various types of data that might be considered personal. If you use Mail Manager, its archives and address lists can also contain personal data. To delete an archive, use the **Manage archives** tab in [Email archiving](eb-archiving.md). Mail Manager removes the archive 30 days after you delete it. To remove an address from an address list, or to delete the list, see [Managing Address Lists](setting-up-address-lists.md#managing-address-lists).
 
 **Topics**
 + [Delete Email Addresses From the Account-Level Suppression List](#deleting-personal-data-account-suppression-list)

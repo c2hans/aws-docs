@@ -16,16 +16,16 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| company\_id2 | string | No | Company ID. |
-| vendor\_tpartner\_id2 | string | Yes | Trading partner ID of the vendor. |
-| outage\_start\_date | timestamp | Yes1 | Outage start date. |
-| outage\_end\_date | timestamp | Yes1 | Outage end date. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| vendor\_tpartner\_id<sup>2</sup> | string | Yes | Trading partner ID of the vendor. |
+| outage\_start\_date | timestamp | Yes<sup>1</sup> | Outage start date. |
+| outage\_end\_date | timestamp | Yes<sup>1</sup> | Outage end date. |
 | outage\_type | string | No | Type of outage. |
 | comment | string | No | Comment from the vendor. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

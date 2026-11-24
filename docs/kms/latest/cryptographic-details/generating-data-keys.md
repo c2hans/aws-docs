@@ -43,7 +43,7 @@ The HSM does the following:
 
 1. Generates the requested secret material and hold it in volatile memory.
 
-1. Decrypts the *EKT* matching the key ID of the KMS key that is defined in the request to obtain the active *HBK = Decrypt(DKi, EKT)*.
+1. Decrypts the *EKT* matching the key ID of the KMS key that is defined in the request to obtain the active *HBK = Decrypt(DK<sub>i</sub>, EKT)*.
 
 1. Generates a random nonce *N*.
 

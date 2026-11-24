@@ -52,7 +52,7 @@ Unless instructed otherwise by AWS, never affix a separate shipping label to the
 UPS ships Snowball Edge devices to the following EU member countries: Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Italy, Ireland, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, and Sweden.
 
 **Note**
-Orders between the United Kingdom and European Union countries are now considered to be international, and require approval through a special international process. If you need to ship your device between the UK and the EU, email us at snowball-shipping@amazon.com to request a commercial invoice prior to arranging pick up or drop off with UPS.
+Orders between the United Kingdom and European Union countries are now considered to be international, and require approval through a special international process. If you need to ship your device between the UK and the EU, email us at [snowball-shipping@amazon.com](mailto:snowball-shipping@amazon.com) to request a commercial invoice prior to arranging pick up or drop off with UPS.
 
 UPS services for Snowball Edge of products are domestic only within a country.
 
@@ -70,7 +70,7 @@ Unless personally instructed otherwise by AWS, never affix a separate shipping l
 UPS services for Snowball Edge of products is domestic only within a country.
 
 **Note**
-Since January 2021, UK is no longer a part of EU. Orders between UK and other EU countries are international orders, a non-general Availability process only approved through a special international process. If a customer has been approved and is returning a device from an EU-country back to LHR or from UK back to an EU-country, they must first request a return to snowball-shipping@amazon.com so a Commercial Invoice can be provided prior to arranging pick up/drop off with UPS.
+Since January 2021, UK is no longer a part of EU. Orders between UK and other EU countries are international orders, a non-general Availability process only approved through a special international process. If a customer has been approved and is returning a device from an EU-country back to LHR or from UK back to an EU-country, they must first request a return to [snowball-shipping@amazon.com](mailto:snowball-shipping@amazon.com) so a Commercial Invoice can be provided prior to arranging pick up/drop off with UPS.
 
 ### Snowball Edge pickups in Brazil
 <a name="Brazil-pickup"></a>

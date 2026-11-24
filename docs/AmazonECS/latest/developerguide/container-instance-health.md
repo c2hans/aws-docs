@@ -57,3 +57,5 @@ When the `overallStatus` any status other than `OK`, try the following:
 + View your container instance health in the EC2 console or by using the CLI.
 + Review the CloudWatch metrics. For more information, see [Monitor Amazon ECS using CloudWatch](cloudwatch-metrics.md)
 + Check the AWS Health Dashboard to see if there are any issues with the service.
+
+On Amazon ECS Managed Instances, Amazon ECS can drain and replace a container instance whose `overallStatus` is `IMPAIRED`. Service tasks on the instance stop with a stopped reason that names the failed health check, for example, `Task in service {{service-name}} stopped due to instance draining: INSTANCE_HEALTH: ACCELERATED_COMPUTE health check failure`, and the service starts replacement tasks. For more information, see [GPU auto repair for Amazon ECS managed instances](managed-instances-gpu-auto-repair.md) and [Daemon auto repair](managed-daemons-auto-repair.md).

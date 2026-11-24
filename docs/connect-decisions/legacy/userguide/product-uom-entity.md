@@ -20,7 +20,7 @@ The table below lists the column names supported by the data entity:
 | product\_id | string | Yes | Product associated with product-uom combination. |
 | uom | string | Yes | UOM identifier. |
 | description | string | No | Description of product-uom. |
-| company\_id 1 | string | No | Company ID. |
+| company\_id <sup>1</sup> | string | No | Company ID. |
 | price | double | No | Price of product-uom. |
 | cost | double | No | Cost of product-uom. |
 | currency\_uom | string | No | Unit of measure (UOM) of currency. |
@@ -43,7 +43,7 @@ The table below lists the column names supported by the data entity:
 | eff\_end\_date  | timestamp | Yes | Displays the date and time the record ends. |
 | source | string | No | Source of data.  |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

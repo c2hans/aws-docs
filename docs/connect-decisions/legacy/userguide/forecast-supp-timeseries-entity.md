@@ -20,25 +20,25 @@ The table below lists the column names supported by the data entity:
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | id | string | Yes | Unique identifier with each supplementary data entry. |
-| product\_id 2 | string | No | Unique identifier for a specific product. Corresponds to product\_id in the outbound\_order\_line dataset. |
+| product\_id <sup>2</sup> | string | No | Unique identifier for a specific product. Corresponds to product\_id in the outbound\_order\_line dataset. |
 | product\_group\_id | string | No | Product hierarchy or grouping. |
-| order\_date  | timestamp | Yes1 | The timestamp indicating the date and time when the date for the respective time-series was recorded. |
+| order\_date  | timestamp | Yes<sup>1</sup> | The timestamp indicating the date and time when the date for the respective time-series was recorded. |
 | channel\_id | string | No | Unique identifier for a specific product. Corresponds to product\_id in the outbound\_order\_line dataset. |
-| customer\_tpartner\_id 2 | string | No | Unique identifier for a specific user. Corresponds to customer\_tpartner\_id field in outbound\_order\_line dataset. |
-| site\_id 2 | string | No | Unique identifier for a specific site or location. |
-| ship\_to\_site\_id 2 | string | No | Unique identifier for a specific site or location. This corresponds to the *ship\_to\_site\_id* in the *outbound\_order\_line* dataset. |
+| customer\_tpartner\_id <sup>2</sup> | string | No | Unique identifier for a specific user. Corresponds to customer\_tpartner\_id field in outbound\_order\_line dataset. |
+| site\_id <sup>2</sup> | string | No | Unique identifier for a specific site or location. |
+| ship\_to\_site\_id <sup>2</sup> | string | No | Unique identifier for a specific site or location. This corresponds to the *ship\_to\_site\_id* in the *outbound\_order\_line* dataset. |
 | ship\_to\_site\_address\_zip | string | No | Postal code of *ship\_to\_site\_id*. |
-| geo\_id 2 | string | No | Geographical hierarchy ID. |
-| ship\_from\_site\_id 2 | string | No | Corresponds to the *ship\_from\_site\_id* in the *outbound\_order\_line* dataset. |
+| geo\_id <sup>2</sup> | string | No | Geographical hierarchy ID. |
+| ship\_from\_site\_id <sup>2</sup> | string | No | Corresponds to the *ship\_from\_site\_id* in the *outbound\_order\_line* dataset. |
 | ship\_from\_site\_address\_zip | string | No | Postal code of *ship\_from\_site\_id*. |
 | time\_series\_name | string | Yes | The *time\_series\_name* must start with a letter, should be 2 to 56 characters long, and can contain letters, numbers, and underscores. No other special characters are allowed. |
 | time\_series\_value | string | Yes | Value corresponding to the specific time series. This could represent quantities, metric, or string that is relevant to the type of the data. Demand planning only supports numerical value as additional forecast input. |
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

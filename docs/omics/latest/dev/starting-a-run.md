@@ -165,6 +165,8 @@ If the parameter template for a workflow declares any required parameters, you c
 
 Reference the input JSON file in the AWS CLI by adding `--parameters file://<input_file.json>` to your `start-run` request. For more information, see supported JSON types for parameter values in [Step 2: Add parameter values](#start-run-console-step2) and [HealthOmics run inputs](workflows-run-inputs.md).
 
+If your run parameters are larger than the inline limit, store them in a JSON file in Amazon S3 and add `--parameters-uri s3://{{amzn-s3-demo-bucket}}/{{run-parameters.json}}` to your `start-run` request instead of `--parameters`. For more information, see [Specify run parameters by reference](workflows-run-inputs.md#run-parameters-uri).
+
 **Provide a request ID**
 
 You can provide a unique `requestId` for each run. The request ID is an idempotency token that HealthOmics uses to catch duplicate requests. It won't start a run if the request ID is a duplicate of a previous run.

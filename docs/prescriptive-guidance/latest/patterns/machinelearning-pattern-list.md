@@ -9,6 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 + [Automatically extract content from PDF files using Amazon Textract](automatically-extract-content-from-pdf-files-using-amazon-textract.md)
 + [Build a cold start forecasting model by using DeepAR for time series in Amazon SageMaker AI Studio Lab](build-a-cold-start-forecasting-model-by-using-deepar.md)
 + [Build an MLOps workflow by using Amazon SageMaker AI and Azure DevOps](build-an-mlops-workflow-by-using-amazon-sagemaker-and-azure-devops.md)
++ [Configure model invocation logging in Amazon Bedrock by using AWS CloudFormation](configure-bedrock-invocation-logging-cloudformation.md)
 + [Use Amazon Bedrock agents to automate creation of access entry controls in Amazon EKS through text-based prompts](using-amazon-bedrock-agents-to-automate-creation-of-access-entry-controls-in-amazon-eks.md)
 + [Deploy real-time coding security validation by using an MCP server with Kiro](mcp-security-scanner-kiro.md)
 + [Document institutional knowledge from voice inputs by using Amazon Bedrock and Amazon Transcribe](document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.md)

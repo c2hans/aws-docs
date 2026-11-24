@@ -48,14 +48,14 @@ The following table summarizes the supported drivers for [Xen-based instances](i
 
 | Version | Storage driver | Enhanced networking driver |
 | --- | --- | --- |
-| Windows Server 2022 | AWS PV latest version |  + ENA latest version 1<br />+ Intel VF 2<br />+ AWS PV latest version 3  |
-| Windows Server 2019 | AWS PV latest version |  + ENA latest version 1<br />+ Intel VF 2<br />+ AWS PV latest version 3  |
-| Windows Server 2016 | AWS PV latest version |  + ENA latest version 1<br />+ Intel VF 2<br />+ AWS PV latest version 3  |
-| Windows Server 2012 R2 | AWS PV version 8.4.3 |  + ENA version 2.6.0 1<br />+ Intel VF 2<br />+ AWS PV version 8.4.3 3  |
-| Windows Server 2008 R2 | AWS PV version 8.3.5 |  + ENA version 2.2.3 1<br />+ Intel VF 2<br />+ AWS PV version 8.3.5 3  |
+| Windows Server 2022 | AWS PV latest version |  + ENA latest version <sup>1</sup><br />+ Intel VF <sup>2</sup><br />+ AWS PV latest version <sup>3</sup>  |
+| Windows Server 2019 | AWS PV latest version |  + ENA latest version <sup>1</sup><br />+ Intel VF <sup>2</sup><br />+ AWS PV latest version <sup>3</sup>  |
+| Windows Server 2016 | AWS PV latest version |  + ENA latest version <sup>1</sup><br />+ Intel VF <sup>2</sup><br />+ AWS PV latest version <sup>3</sup>  |
+| Windows Server 2012 R2 | AWS PV version 8.4.3 |  + ENA version 2.6.0 <sup>1</sup><br />+ Intel VF <sup>2</sup><br />+ AWS PV version 8.4.3 <sup>3</sup>  |
+| Windows Server 2008 R2 | AWS PV version 8.3.5 |  + ENA version 2.2.3 <sup>1</sup><br />+ Intel VF <sup>2</sup><br />+ AWS PV version 8.3.5 <sup>3</sup>  |
 
-1 For instance types G3, H1, I3, `m4.16xlarge`, P3dn, and R4.
+<sup>1</sup> For instance types G3, H1, I3, `m4.16xlarge`, P3dn, and R4.
 
-2 For instance types C3, C4, D2, I2, M4 (excluding `m4.16xlarge`), and R3.
+<sup>2</sup> For instance types C3, C4, D2, I2, M4 (excluding `m4.16xlarge`), and R3.
 
-3 For instance types C1, M1, M2, M3, T1, T2, X1, and X1e.
+<sup>3</sup> For instance types C1, M1, M2, M3, T1, T2, X1, and X1e.

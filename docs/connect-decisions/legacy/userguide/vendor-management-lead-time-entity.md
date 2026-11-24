@@ -16,12 +16,12 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| company\_id2 | string | No | Company ID. |
-| vendor\_tpartner\_id2 | string | Yes | Trading partner ID of the vendor. |
-| product\_id2 | string | Yes1 | Product ID. |
-| product\_group\_id2 | string | Yes1 |  Used if lead time is set at product-group level. |
-| site\_id2 | string | Yes1 | Site where this product is being supplied. |
-| region\_id2 | string | Yes1 | Used if lead time is set at geographical region level. Site level values will override this value. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| vendor\_tpartner\_id<sup>2</sup> | string | Yes | Trading partner ID of the vendor. |
+| product\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product ID. |
+| product\_group\_id<sup>2</sup> | string | Yes<sup>1</sup> |  Used if lead time is set at product-group level. |
+| site\_id<sup>2</sup> | string | Yes<sup>1</sup> | Site where this product is being supplied. |
+| region\_id<sup>2</sup> | string | Yes<sup>1</sup> | Used if lead time is set at geographical region level. Site level values will override this value. |
 | planned\_lead\_time | double | No | Planned lead time from vendor into company's site. |
 | planned\_lead\_time\_dev | double | No | Standard deviation of lead time. |
 | actual\_lead\_time\_mean | double | No | Field to store actual lead time computed from transactional data. |
@@ -31,18 +31,18 @@ The table below lists the column names supported by the data entity:
 | shipping\_cost | double | No | Inbound shipping cost from vendor to company. |
 | cost\_uom | string | No | Unit of measure of shipping cost. |
 | we\_pay | string | No | Yes or No indicator. Yes if company pays for inbound shipping, and No if vendor pays for shipping. |
-| eff\_start\_date | timestamp | Yes1 | Date and time from when this record is effective. |
-| eff\_end\_date | timestamp | Yes1 | Date and time till when this record is effective. |
+| eff\_start\_date | timestamp | Yes<sup>1</sup> | Date and time from when this record is effective. |
+| eff\_end\_date | timestamp | Yes<sup>1</sup> | Date and time till when this record is effective. |
 | sap\_eina\_\_infnr | string | No | Record on number of purchases. Predicate key for SAP mapping. Upsert key for EINE. |
-| source\_site\_id 2 | string | No | Site from where the inbound shipment is originated. |
+| source\_site\_id <sup>2</sup> | string | No | Site from where the inbound shipment is originated. |
 | trans\_mode | string | No | Transportation mode. For example, ship, water, truck, or rail. |
 | source | string | No | Source of data. |
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default values for string and timestamp date type values are SCN\_RESERVED\_NO\_VALUE\_PROVIDED for *string*; and for *timestamp*, 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default values for string and timestamp date type values are SCN\_RESERVED\_NO\_VALUE\_PROVIDED for *string*; and for *timestamp*, 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

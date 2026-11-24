@@ -16,7 +16,7 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| process\_id1 | string | Yes | Process ID. For example, order, work order, maintenance order, or process inquiry. |
+| process\_id<sup>1</sup> | string | Yes | Process ID. For example, order, work order, maintenance order, or process inquiry. |
 | process\_product\_id | string | No | ID associated with the process and product. |
 | preferred\_source | string | No | Describes if the product is sourced from inventory (that is, stocked to forecasted) or from direct purchase (for non-stocked products). |
 | product\_id | string | Yes | Product ID (material) in the work order. |
@@ -33,7 +33,7 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system.  |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

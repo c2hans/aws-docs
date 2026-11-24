@@ -167,7 +167,7 @@ You pay for additional throughput capacity that you provision.
 *Required*: No
 *Type*: Integer
 *Minimum*: `8`
-*Maximum*: `100000`
+*Maximum*: `2147483647`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WeeklyMaintenanceStartTime`  <a name="cfn-fsx-filesystem-openzfsconfiguration-weeklymaintenancestarttime"></a>

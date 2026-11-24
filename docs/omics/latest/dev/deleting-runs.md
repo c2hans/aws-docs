@@ -23,3 +23,5 @@ The following AWS CLI command deletes a run. To run the example, replace the `{{
 ```
 aws omics delete-run --id {{run id}}
 ```
+
+For a run that you started with `parametersUri`, HealthOmics attempts to delete the copies of the run parameters that it stores when you delete the run. Deleting the run doesn't delete or change your parameters file in Amazon S3. For more information, see [How HealthOmics stores and deletes your parameters](workflows-run-inputs.md#run-parameters-uri-storage).

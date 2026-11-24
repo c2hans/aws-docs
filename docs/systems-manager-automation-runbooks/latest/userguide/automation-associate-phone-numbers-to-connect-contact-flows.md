@@ -44,80 +44,131 @@ Linux, macOS, Windows
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
 
+**Create the AWS Lambda execution role first**
+Create the AWS Lambda execution role before you run this automation, and provide it in the `LambdaRoleArn` parameter. The `AutomationAssumeRole` policy on this page is written for this setup. For the role's permissions and trust policy, see the examples that follow.
+
+In the following example `AutomationAssumeRole` policy, replace {{amzn-s3-demo-bucket}} with your source bucket, {{amzn-s3-demo-bucket2}} with your destination bucket, {{REGION}} and {{ACCOUNT\_ID}} with the Region and account where you run the automation, {{INSTANCE\_ID}} with the ID of your Connect Customer instance, and {{LAMBDA\_ROLE\_ARN}} with the ARN of the role that you provide in `LambdaRoleArn`:
+
 ```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
         {
-            "Statement": [
-                {
-                    "Action": [
-                        "s3:GetBucketPublicAccessBlock",
-                        "s3:GetBucketPolicyStatus",
-                        "s3:GetBucketAcl",
-                        "s3:GetObject",
-                        "s3:GetObjectAttributes",
-                        "s3:PutObject",
-                        "s3:PutObjectAcl"
-                    ],
-                    "Resource": [
-                    "arn:aws:s3:::{{YOUR-BUCKET}}/*",
-                    "arn:aws:s3:::{{YOUR-BUCKET}}"
-                    ],
-                    "Effect": "Allow"
-                },
-                {
-                    "Action": [
-                        "cloudformation:CreateStack",
-                        "cloudformation:DescribeStacks",
-                        "cloudformation:DeleteStack",
-                        "iam:CreateRole",
-                        "iam:DeleteRole",
-                        "iam:DeleteRolePolicy",
-                        "iam:GetRole",
-                        "iam:PutRolePolicy",
-                        "lambda:CreateFunction",
-                        "lambda:DeleteFunction",
-                        "lambda:GetFunction",
-                        "lambda:InvokeFunction",
-                        "lambda:TagResource",
-                        "connect:AssociatePhoneNumberContactFlow",
-                        "logs:CreateLogGroup",
-                        "logs:TagResource",
-                        "logs:PutRetentionPolicy",
-                        "logs:DeleteLogGroup",
-                        "s3:GetAccountPublicAccessBlock"
-                    ],
-                    "Resource": "*",
-                    "Effect": "Allow"
-                },
-                {
-                    "Action": [
-                        "connect:DescribeInstance",
-                        "connect:ListPhoneNumbers",
-                        "connect:ListContactFlows",
-                        "ds:DescribeDirectories"
-                    ],
-                    "Resource": "*",
-                    "Effect": "Allow"
-                },
-                {
-                    "Condition": {
-                        "StringLikeIfExists": {
-                            "iam:PassedToService": [
-                                "ssm.amazonaws.com",
-                                "lambda.amazonaws.com"
-                            ]
-                        }
-                    },
-                    "Action": [
-                        "iam:PassRole"
-                    ],
-                    "Resource": "*",
-                    "Effect": "Allow"
-                }
+            "Sid": "S3BucketAccess",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketAcl",
+                "s3:GetObject",
+                "s3:GetObjectAttributes",
+                "s3:PutObject",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::{{amzn-s3-demo-bucket}}/*",
+                "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
+                "arn:aws:s3:::{{amzn-s3-demo-bucket2}}/*",
+                "arn:aws:s3:::{{amzn-s3-demo-bucket2}}"
             ]
+        },
+        {
+            "Sid": "S3AccountPublicAccessBlock",
+            "Effect": "Allow",
+            "Action": "s3:GetAccountPublicAccessBlock",
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudFormationStack",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CreateStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DeleteStack"
+            ],
+            "Resource": "arn:aws:cloudformation:{{REGION}}:{{ACCOUNT_ID}}:stack/AWSSupport-AssociatePhoneNumbersToContactFlow-*/*"
+        },
+        {
+            "Sid": "LambdaFunction",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:CreateFunction",
+                "lambda:DeleteFunction",
+                "lambda:GetFunction",
+                "lambda:InvokeFunction",
+                "lambda:TagResource"
+            ],
+            "Resource": "arn:aws:lambda:{{REGION}}:{{ACCOUNT_ID}}:function:PhoneNumberMappingLambda_*"
+        },
+        {
+            "Sid": "LambdaLogGroup",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:TagResource",
+                "logs:PutRetentionPolicy",
+                "logs:DeleteLogGroup"
+            ],
+            "Resource": "arn:aws:logs:{{REGION}}:{{ACCOUNT_ID}}:log-group:/aws/lambda/PhoneNumberMappingLambda_*"
+        },
+        {
+            "Sid": "ConnectDescribeInstance",
+            "Effect": "Allow",
+            "Action": "connect:DescribeInstance",
+            "Resource": "arn:aws:connect:{{REGION}}:{{ACCOUNT_ID}}:instance/{{INSTANCE_ID}}"
+        },
+        {
+            "Sid": "ConnectListResources",
+            "Effect": "Allow",
+            "Action": [
+                "connect:ListContactFlows",
+                "connect:ListPhoneNumbers"
+            ],
+            "Resource": [
+                "arn:aws:connect:{{REGION}}:{{ACCOUNT_ID}}:instance/{{INSTANCE_ID}}/contact-flow/*",
+                "arn:aws:connect:{{REGION}}:{{ACCOUNT_ID}}:instance/{{INSTANCE_ID}}/phone-number/*"
+            ]
+        },
+        {
+            "Sid": "ConnectAssociatePhoneNumber",
+            "Effect": "Allow",
+            "Action": "connect:AssociatePhoneNumberContactFlow",
+            "Resource": [
+                "arn:aws:connect:{{REGION}}:{{ACCOUNT_ID}}:instance/{{INSTANCE_ID}}/contact-flow/*",
+                "arn:aws:connect:{{REGION}}:{{ACCOUNT_ID}}:phone-number/*"
+            ]
+        },
+        {
+            "Sid": "DirectoryServiceDescribe",
+            "Effect": "Allow",
+            "Action": "ds:DescribeDirectories",
+            "Resource": "*"
+        },
+        {
+            "Sid": "GetLambdaRole",
+            "Effect": "Allow",
+            "Action": "iam:GetRole",
+            "Resource": "{{LAMBDA_ROLE_ARN}}"
+        },
+        {
+            "Sid": "PassLambdaRole",
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": "{{LAMBDA_ROLE_ARN}}",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": "lambda.amazonaws.com"
+                }
+            }
         }
+    ]
+}
 ```
 
-If providing `LambdaRoleArn` parameter, the role requires the following actions to use the runbook successfully.
+If you don't provide `LambdaRoleArn`, the automation's AWS CloudFormation stack creates the AWS Lambda execution role, which requires the `AutomationAssumeRole` to also have `iam:CreateRole`, `iam:PutRolePolicy`, `iam:DeleteRole`, `iam:DeleteRolePolicy`, and `iam:PassRole`. These permissions let any principal that can assume the `AutomationAssumeRole` create an IAM role with any permissions. Providing `LambdaRoleArn` avoids the need for them.
+
+Create the role that you provide in the `LambdaRoleArn` parameter with the following permissions:
 
 ------
 #### [ JSON ]
@@ -164,9 +215,28 @@ If providing `LambdaRoleArn` parameter, the role requires the following actions 
 
 ------
 
+The role must allow AWS Lambda to assume it. Example trust policy:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "lambda.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
  **Instructions**
 
 Follow these steps to configure the automation:
+
+1. Create the AWS Lambda execution role by using the example permissions and trust policy. Note the role ARN.
 
 1. Navigate to [`AWSSupport-AssociatePhoneNumbersToConnectContactFlows`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-AssociatePhoneNumbersToConnectContactFlows/description) in Systems Manager under Documents.
 
@@ -199,7 +269,7 @@ Follow these steps to configure the automation:
      The ARN of the IAM role with permissions to get the Amazon S3 bucket and account block public access settings, bucket encryption configuration, the bucket ACLs, the bucket policy status, and upload objects to the bucket. If this parameter is not specified, the runbook uses the `AutomationAssumeRole` (if specified) or user that starts this runbook (if `AutomationAssumeRole` is not specified). Please see the required permissions section in the runbook description.
    + **LambdaRoleArn (Optional)**
 
-     The ARN of the IAM role that allows AWS Lambda function to access required AWS services and resources. If no role is specified, this automation will create one IAM role for Lambda in your account.
+     The ARN of the IAM role that the AWS Lambda function uses to access required AWS services and resources. Create this role before you run the automation, and always provide it. If you don't specify a role, the automation creates an IAM role for AWS Lambda in your account. In that case, the `AutomationAssumeRole` needs permissions to create IAM roles. The example `AutomationAssumeRole` policy on this page doesn't include those permissions.
 
 1. Select Execute.
 

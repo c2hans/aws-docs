@@ -236,7 +236,7 @@ This format supports IP addresses, CIDR block, domain names, and SHA-256 file ha
 </stix:STIX_Package>
 ```
 
-### Open Threat Exchange (OTX)TM CSV
+### Open Threat Exchange (OTX)<sup>TM</sup> CSV
 <a name="guardduty-list-format-open-threat-exchange-csv"></a>
 
 This format supports CIDR block, individual IP addresses, domains, and the `SHA256` indicator type for file hashes. SHA-256 file hashes are supported only in threat entity lists. This file format has comma-separated values.
@@ -271,7 +271,7 @@ IPv4, 198.51.100.1, example
 IPv4, 203.0.113.1, example
 ```
 
-### FireEyeTM iSIGHT Threat Intelligence CSV
+### FireEye<sup>TM</sup> iSIGHT Threat Intelligence CSV
 <a name="guardduty-list-format-fireeye-sight-threat-intel"></a>
 
 This format supports CIDR block, individual IP addresses, domains, and SHA-256 file hashes in the `sha256` column. SHA-256 file hashes are supported only in threat entity lists. The following sample lists uses a `FireEyeTM` CSV format.
@@ -318,7 +318,7 @@ reportId, title, threatScape, audience, intelligenceType, publishDate, reportLin
 01-00000003, Example, Test, Operational, threat, 1494944400, https://www.example.com/report/01-00000003, https://www.example.com/report/01-00000003, , , , , , , , , , , , , , , , , , , , , , , , , , , Related, 203.0.113.1, , , , , network, , Ursnif, 8a78c3db-7bcb-40bc-a080-75bd35a2572d, , , 1494944400
 ```
 
-### ProofpointTM ET Intelligence Feed CSV
+### Proofpoint<sup>TM</sup> ET Intelligence Feed CSV
 <a name="guardduty-list-format-proofpoint"></a>
 
 In ProofPoint CSV format, you can add IP either addresses or domain names in a one list. The following sample list uses the `Proofpoint` CSV format. Providing value for the `ports` parameter is optional. When you don't provide it, leave a trailing comma (,) at the end.
@@ -339,7 +339,7 @@ ip, category, score, first_seen, last_seen, ports (|)
 203.0.113.1, 1, 100, 2000-01-01, 2000-01-01, 80
 ```
 
-### AlienVaultTM Reputation Feed
+### AlienVault<sup>TM</sup> Reputation Feed
 <a name="guardduty-list-format-alien-vault-reputation-feed"></a>
 
 The following sample list uses the `AlienVault` format. This format also supports SHA-256 file hashes in the indicator column. SHA-256 file hashes are supported only in threat entity lists.

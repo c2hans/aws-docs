@@ -17,7 +17,7 @@ The chat panel opens as an Eclipse view, and holds each conversation in a tab in
 
 1. Choose AWS Coding Plugin Chat, and then choose **Open**.
 
-You can also open the panel from Quick Access: press  Ctrl 3  (macOS:  Cmd 3 ), type AWS Coding Plugin Chat, and then press Enter.
+You can also open the panel from Quick Access: press **Ctrl+3** (macOS: **Cmd+3**), type AWS Coding Plugin Chat, and then press **Enter**.
 
 ## Sending a prompt
 <a name="using-chat-sending"></a>
@@ -30,9 +30,9 @@ With the chat panel open, you send a prompt from the input field at the bottom o
 
 1. (Optional) Choose up to five documents to attach to the prompt, so Kiro has more context. To work around this limit, Kiro can also read files directly from your filesystem.
 
-1. Choose **Send**, or press Enter.
+1. Choose **Send**, or press **Enter**.
 
-To write a prompt that spans several lines, press  Shift Enter  to start a new line without sending the prompt.
+To write a prompt that spans several lines, press **Shift+Enter** to start a new line without sending the prompt.
 
 Kiro responds in the same tab. The response streams in as Kiro works, and any permission prompt for a tool call appears inline in the conversation (see [Kiro Permissions](kiro-permissions.md)).
 

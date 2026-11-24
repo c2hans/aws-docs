@@ -163,7 +163,7 @@ The following table lists libraries that are released separately but work with t
 |  [Amazon S3 Encryption Client](https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/developerguide/what-is-s3-encryption-client.html)  |  3.0.01  |
 | [AWS Database Encryption SDK for DynamoDB](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/ddb-java.html) | 3.0.02 |
 
-#### 1Amazon S3 Encryption Client
+#### <sup>1</sup>Amazon S3 Encryption Client
 <a name="migration-s3-encryption-sdk"></a>
 
 The encryption client for Amazon S3 is available by using the following Maven dependency.
@@ -176,7 +176,7 @@ The encryption client for Amazon S3 is available by using the following Maven de
 </dependency>
 ```
 
-#### 2AWS Database Encryption SDK for DynamoDB
+#### <sup>2</sup>AWS Database Encryption SDK for DynamoDB
 <a name="migration-ddb-encryption-sdk"></a>
 
 The AWS Database Encryption SDK for DynamoDB is available for V2 by using the following Maven dependency.

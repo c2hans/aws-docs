@@ -44,7 +44,19 @@ If you use Amazon RDS Proxy, your blue cluster must already be a target of the p
 Before you create a blue/green deployment for an Aurora PostgreSQL DB cluster, make sure to do the following.
 + Associate the cluster with a custom DB cluster parameter group that has logical replication (`rds.logical_replication`) enabled. Logical replication is required for replication from the blue environment to the green environment.
 
-  When you enable logical replication, you also need to tune certain cluster parameters, such as `max_replication_slots`, `max_logical_replication_workers`, and `max_worker_processes`. For instructions to enable logical replication and tune these parameters, see [Setting up logical replication for your Aurora PostgreSQL DB cluster](AuroraPostgreSQL.Replication.Logical.Configure.md).
+  A blue/green deployment replicates each database in the DB cluster through its own logical replication slot, subscription, and apply worker. This includes the `postgres` database and the `rdsadmin` database. Set the following parameters according to the number of databases in the DB cluster. When you create the blue/green deployment, Aurora checks these values and fails the creation if they're too low. For instructions on enabling logical replication and tuning these parameters, see [Setting up logical replication for your Aurora PostgreSQL DB cluster](AuroraPostgreSQL.Replication.Logical.Configure.md).
+  + `max_replication_slots` (DB cluster parameter group) – At least the number of databases in the DB cluster plus one. The default value is 20.
+  + `max_wal_senders` (DB cluster parameter group) – At least the number of databases in the DB cluster plus one. The default value is 10.
+  + `max_logical_replication_workers` (DB cluster parameter group) – At least the number of databases in the DB cluster plus one. The default value is 4, so you must raise this parameter if the DB cluster has more than three user databases.
+  + `max_worker_processes` (DB parameter group of the writer instance) – At least `max_logical_replication_workers` plus one. The default value is the greater of 8 and twice the number of vCPUs.
+
+  To count the databases in the DB cluster, including the `rdsadmin` database, run the following query:
+
+  ```sql
+  SELECT count(*) FROM pg_database WHERE datistemplate = false;
+  ```
+
+  For example, if the query returns 7 (five user databases, `postgres`, and `rdsadmin`), set `max_replication_slots`, `max_wal_senders`, and `max_logical_replication_workers` to 8 or higher, and `max_worker_processes` to 9 or higher.
 
   In addition, make sure that the `synchronous_commit` parameter is set to `on`.
 

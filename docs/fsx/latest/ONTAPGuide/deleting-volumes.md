@@ -11,6 +11,9 @@ Before you delete a volume, make sure that no applications are accessing the dat
 **Important**
 You can only delete volumes using the Amazon FSx console, API, or CLI if the volume has Amazon FSx backups enabled.
 
+**Note**
+You can't delete a volume that is the parent of a volume clone. Delete the clone or split it from its parent first. For more information, see [Volume clones](managing-volumes.md#volume-clones).
+
 ## Taking a final volume backup
 <a name="final-volume-backup"></a>
 

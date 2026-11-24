@@ -126,13 +126,13 @@ Note that throughput capacity levels of 4,608 MBps and higher are supported only
 | --- |--- |--- |--- |--- |
 | 6,144 | 6,144 |  –  | 200K |  –  |
 | --- |--- |--- |--- |--- |
-| 9,216 | 9,2161 |  –  | 300K1 |  –  |
+| 9,216 | 9,216<sup>1</sup> |  –  | 300K<sup>1</sup> |  –  |
 | --- |--- |--- |--- |--- |
-| 12,288 | 12,2881 |  –  | 400K1 |  –  |
+| 12,288 | 12,288<sup>1</sup> |  –  | 400K<sup>1</sup> |  –  |
 | --- |--- |--- |--- |--- |
 
 **Note**
-1If you have a Multi-AZ file system with a throughput capacity of 9,216 or 12,288 MBps, performance will be limited to 9,000 MBps and 262,500 IOPS for write traffic only. Otherwise, for read traffic on all Multi-AZ file systems, read and write traffic on all Single-AZ file systems, and all other throughput capacity levels, your file system will support the performance limits shown in the table.
+<sup>1</sup>If you have a Multi-AZ file system with a throughput capacity of 9,216 or 12,288 MBps, performance will be limited to 9,000 MBps and 262,500 IOPS for write traffic only. Otherwise, for read traffic on all Multi-AZ file systems, read and write traffic on all Single-AZ file systems, and all other throughput capacity levels, your file system will support the performance limits shown in the table.
 
 ## Choosing the right level of throughput capacity
 <a name="choosing-throughput"></a>
@@ -170,7 +170,7 @@ Your file system provides the following default levels of disk throughput and IO
 | HDD | 12 baseline; 80 burst (up to a max. of 1 GBps per file system)  | 12 baseline; 80 burst |
 
 **Note**
-1For file systems with SSD storage type, you can provision additional IOPS, up to a maximum ratio of 500 IOPS per GiB of storage and 400,000 IOPS per file system.
+<sup>1</sup>For file systems with SSD storage type, you can provision additional IOPS, up to a maximum ratio of 500 IOPS per GiB of storage and 400,000 IOPS per file system.
 
 ### HDD burst performance
 <a name="hdd-burst-performance"></a>

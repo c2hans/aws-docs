@@ -16,7 +16,7 @@ The following table shows which common AWS Glue features support the Parquet for
 | --- | --- | --- | --- | --- |
 | Supported | Supported | Supported | Unsupported | Supported\* |
 
-\* Supported in AWS Glue version 1.0\+
+<sup>\*</sup> Supported in AWS Glue version 1.0\+
 
 ## Example: Read Parquet files or folders from S3
 <a name="aws-glue-programming-etl-format-parquet-read"></a>

@@ -24,7 +24,7 @@ Memory sizes: [256 GiB](#mem-256), [384 GiB](#mem-384), [488 GiB](#mem-512), [51
 ### 256 GiB Memory Systems
 <a name="mem-256"></a>
 
-Applicable Instance Types: **r8i.8xlarge**, **r7i.8xlarge**, **r6i.8xlarge**, **r5.8xlarge**, **r5b.8xlarge**, **x2iedn.2xlarge**, **r4.8xlarge**, **r3.8xlarge1 **, **x1e.2xlarge1 **
+Applicable Instance Types: **r8i.8xlarge**, **r7i.8xlarge**, **r6i.8xlarge**, **r5.8xlarge**, **r5b.8xlarge**, **x2iedn.2xlarge**, **r4.8xlarge**, **r3.8xlarge<sup>1</sup> **, **x1e.2xlarge<sup>1</sup> **
 
 Suggested Storage Configuration:
 
@@ -37,7 +37,7 @@ Suggested Storage Configuration:
 | HANA Shared | 256 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
 
- 1 Xen instance types. We suggest migrating to a Nitro instance type.
+ <sup>1</sup> Xen instance types. We suggest migrating to a Nitro instance type.
 
 ### 384 GiB Memory Systems
 <a name="mem-384"></a>
@@ -90,7 +90,7 @@ Suggested Storage Configuration:
 ### 976 GiB / 1024 GiB Memory Systems
 <a name="mem-1024"></a>
 
-Applicable Instance Types: **x2idn.16xlarge**, **r6i.32xlarge**, **x1.16xlarge1 **, **x8i.16xlarge**
+Applicable Instance Types: **x2idn.16xlarge**, **r6i.32xlarge**, **x1.16xlarge<sup>1</sup> **, **x8i.16xlarge**
 
 Suggested Storage Configuration:
 
@@ -103,7 +103,7 @@ Suggested Storage Configuration:
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
 
- 1 Xen instance types. We suggest migrating to a Nitro instance type.
+ <sup>1</sup> Xen instance types. We suggest migrating to a Nitro instance type.
 
 ### 1,536 GiB Memory Systems
 <a name="mem-1536"></a>
@@ -318,7 +318,7 @@ Memory sizes: [64 GiB](#mem-64), [128 GiB](#mem-128)
 ### 64 GiB Memory Systems
 <a name="mem-64"></a>
 
-Applicable Instance Types: **r8i.2xlarge**, **r7i.2xlarge**, **r6i.2xlarge**, **r5.2xlarge**, **r5b.2xlarge**, **r4.2xlarge1 **, **r3.2xlarge1 **
+Applicable Instance Types: **r8i.2xlarge**, **r7i.2xlarge**, **r6i.2xlarge**, **r5.2xlarge**, **r5b.2xlarge**, **r4.2xlarge<sup>1</sup> **, **r3.2xlarge<sup>1</sup> **
 
 Suggested Storage Configuration:
 
@@ -331,12 +331,12 @@ Suggested Storage Configuration:
 | HANA Shared | 64 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
 
- 1 Xen instance types. We suggest migrating to a Nitro instance type.
+ <sup>1</sup> Xen instance types. We suggest migrating to a Nitro instance type.
 
 ### 128 GiB Memory Systems
 <a name="mem-128"></a>
 
-Applicable Instance Types: **r8i.4xlarge**, **x2iedn.xlarge**, **r7i.4xlarge**, **r6i.4xlarge**, **r5.4xlarge**, **r5b.4xlarge**, **x1e.xlarge**, **r4.4xlarge1 **, **r3.4xlarge1 **
+Applicable Instance Types: **r8i.4xlarge**, **x2iedn.xlarge**, **r7i.4xlarge**, **r6i.4xlarge**, **r5.4xlarge**, **r5b.4xlarge**, **x1e.xlarge**, **r4.4xlarge<sup>1</sup> **, **r3.4xlarge<sup>1</sup> **
 
 Suggested Storage Configuration:
 
@@ -349,4 +349,4 @@ Suggested Storage Configuration:
 | HANA Shared | 128 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
 
- 1 Xen instance types. We suggest migrating to a Nitro instance type.
+ <sup>1</sup> Xen instance types. We suggest migrating to a Nitro instance type.

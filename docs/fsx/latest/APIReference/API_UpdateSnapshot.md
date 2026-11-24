@@ -4,7 +4,9 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateSnapsh
 
 # UpdateSnapshot
 
-Updates the name of an Amazon FSx for OpenZFS snapshot.
+Updates an Amazon FSx for OpenZFS or Amazon FSx for NetApp ONTAP snapshot.
+
+For Amazon FSx for OpenZFS snapshots, you can update only the name. For Amazon FSx for NetApp ONTAP snapshots, you can update the name and the properties in `OntapConfiguration`.
 
 ## Request Syntax
 <a name="API_UpdateSnapshot_RequestSyntax"></a>
@@ -13,6 +15,11 @@ Updates the name of an Amazon FSx for OpenZFS snapshot.
 {
    "ClientRequestToken": "{{string}}",
    "Name": "{{string}}",
+   "OntapConfiguration": {
+      "ExpiryTime": {{number}},
+      "SnaplockExpiryTime": {{number}},
+      "SnapmirrorLabel": "{{string}}"
+   },
    "SnapshotId": "{{string}}"
 }
 ```
@@ -36,7 +43,12 @@ The name of the snapshot to update.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 203.
 Pattern: `^[a-zA-Z0-9_:.-]{1,203}$`
-Required: Yes
+Required: No
+
+ ** [OntapConfiguration](#API_UpdateSnapshot_RequestSyntax) **   <a name="FSx-UpdateSnapshot-request-OntapConfiguration"></a>
+The configuration of the ONTAP snapshot that you are updating.
+Type: [UpdateOntapSnapshotConfiguration](API_UpdateOntapSnapshotConfiguration.md) object
+Required: No
 
  ** [SnapshotId](#API_UpdateSnapshot_RequestSyntax) **   <a name="FSx-UpdateSnapshot-request-SnapshotId"></a>
 The ID of the snapshot that you want to update, in the format `fsvolsnap-0123456789abcdef0`.
@@ -234,13 +246,21 @@ Required: Yes
                "FileSystemId": "string",
                "Lifecycle": "string",
                "LifecycleTransitionReason": {
-                  "Message": "string"
+                  "Message": "string",
+                  "OntapError": {
+                     "Code": "string",
+                     "Message": "string"
+                  }
                },
                "Name": "string",
                "OntapConfiguration": {
                   "AggregateConfiguration": {
                      "Aggregates": [ "string" ],
                      "TotalConstituents": number
+                  },
+                  "CloneConfiguration": {
+                     "ParentVolumeId": "string",
+                     "SnapshotId": "string"
                   },
                   "CopyTagsToBackups": boolean,
                   "FlexCacheEndpointType": "string",
@@ -338,11 +358,23 @@ Required: Yes
       "CreationTime": number,
       "Lifecycle": "string",
       "LifecycleTransitionReason": {
-         "Message": "string"
+         "Message": "string",
+         "OntapError": {
+            "Code": "string",
+            "Message": "string"
+         }
       },
       "Name": "string",
+      "OntapConfiguration": {
+         "ExpiryTime": number,
+         "SizeInMegabytes": number,
+         "SnaplockExpiryTime": number,
+         "SnapmirrorLabel": "string",
+         "UUID": "string"
+      },
       "ResourceARN": "string",
       "SnapshotId": "string",
+      "SnapshotType": "string",
       "Tags": [
          {
             "Key": "string",
@@ -374,6 +406,14 @@ For information about the errors that are common to all actions, see [Common Err
 A generic error indicating a failure with a client request.
  ** Message **
 A detailed error message.
+HTTP Status Code: 400
+
+ ** IncompatibleParameterError **
+The error returned when a second request is received with the same client request token but different parameters settings. A client request token should always uniquely identify a single request.
+ ** Message **
+A detailed error message.
+ ** Parameter **
+A parameter that is incompatible with the earlier request.
 HTTP Status Code: 400
 
  ** InternalServerError **

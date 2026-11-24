@@ -18,7 +18,7 @@ To help clarify the verification inheritance and email sending capabilities disc
 | Sending level | Email addresses limited to straightforward email sending. | Email address can be used in advanced sending\*. | Email address can be used in advanced sending\*. |
 | Displayed status | Console/API status: +  Domain/Subdomains = Verified <br />+  Email address = Unverified.  | Console/API status: +  Email address = Verified  | Console/API status: +  Domain/Subdomains = Verified <br />+  Email address = Verified.  |
 
-*\*Advanced sending includes using the email address with configuration sets, policy authorizations for delegate sending, and configurations that override the domain settings.*
+*<sup>\*</sup>Advanced sending includes using the email address with configuration sets, policy authorizations for delegate sending, and configurations that override the domain settings.*
 
 To send email from the same domain or email address in more than one AWS Region, you must create and verify a separate identity for each Region.
 

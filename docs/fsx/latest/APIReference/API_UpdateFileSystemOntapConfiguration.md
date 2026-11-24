@@ -69,7 +69,7 @@ Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following
 + The value of `ThroughputCapacity` and `ThroughputCapacityPerHAPair` are not the same value.
 + The value of `ThroughputCapacity` when divided by the value of `HAPairs` is outside of the valid range for `ThroughputCapacity`.
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: No
 
  ** ThroughputCapacityPerHAPair **   <a name="FSx-Type-UpdateFileSystemOntapConfiguration-ThroughputCapacityPerHAPair"></a>
@@ -86,7 +86,7 @@ Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following
 + The value of deployment type is `SINGLE_AZ_2` or `SINGLE_AZ_3` and `ThroughputCapacity` / `ThroughputCapacityPerHAPair` is not a valid HA pair (a value between 1 and 12).
 + The value of `ThroughputCapacityPerHAPair` is not a valid value.
 Type: Integer
-Valid Range: Minimum value of 128. Maximum value of 6144.
+Valid Range: Minimum value of 128. Maximum value of 2147483647.
 Required: No
 
  ** WeeklyMaintenanceStartTime **   <a name="FSx-Type-UpdateFileSystemOntapConfiguration-WeeklyMaintenanceStartTime"></a>

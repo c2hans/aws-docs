@@ -10,7 +10,7 @@ The registration process consists of the following steps:
 
 1. [Register and create your seller profile](create-public-profile.md) – Select an AWS account to use as your primary AWS Marketplace account and provide information that will be displayed to potential buyers.
 
-1. [Provide tax information](provide-tax-information.md) – Submit your tax information and VAT information (where applicable) to ensure accurate tax reporting and withholding.
+1. [Provide tax information](provide-tax-information.md) – Submit your tax information and VAT information (where applicable) on the **Tax and invoices** page in AWS Partner Central to ensure accurate tax reporting and withholding.
 
 1. [Provide bank account information](provide-bank-information.md) – For paid products, provide bank account details that can accept USD disbursements.
 

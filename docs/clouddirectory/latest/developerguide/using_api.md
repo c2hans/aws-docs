@@ -27,7 +27,7 @@ When reading data from Cloud Directory, you must specify either an Eventually Co
 
 The following table lists all of the Cloud Directory APIs and how they can impact billing for your AWS account.
 
-| API | Eventually Consistent Read 1 | Strongly Consistent Read 2 | Write 3 | Metadata 4 |
+| API | Eventually Consistent Read <sup>1</sup> | Strongly Consistent Read <sup>2</sup> | Write <sup>3</sup> | Metadata <sup>4</sup> |
 | --- | --- | --- | --- | --- |
 | AddFacetToObject |  |  | X |  |
 | ApplySchema |  |  |  | X |
@@ -96,12 +96,12 @@ The following table lists all of the Cloud Directory APIs and how they can impac
 | UpgradeAppliedSchema |  |  |  | X |
 | UpgradePublishedSchema |  |  |  | X |
 
-1 Eventually Consistent Read APIs are called with the EVENTUAL consistency level
+<sup>1</sup> Eventually Consistent Read APIs are called with the EVENTUAL consistency level
 
-2 Strongly Consistent Read APIs are called with the SERIALIZABLE consistency level
+<sup>2</sup> Strongly Consistent Read APIs are called with the SERIALIZABLE consistency level
 
-3 Write APIs are billed as write API calls
+<sup>3</sup> Write APIs are billed as write API calls
 
-4 Metadata APIs are NOT billed but are categorized as Metadata API calls
+<sup>4</sup> Metadata APIs are NOT billed but are categorized as Metadata API calls
 
 For additional information about billing, see [Amazon Cloud Directory Pricing](https://aws.amazon.com/cloud-directory/pricing/).

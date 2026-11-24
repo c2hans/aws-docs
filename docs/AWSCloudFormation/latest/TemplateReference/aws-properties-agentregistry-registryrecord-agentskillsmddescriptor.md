@@ -39,6 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Data`  <a name="cfn-agentregistry-registryrecord-agentskillsmddescriptor-data"></a>
 The agent skills Markdown content, serialized as descriptor payload data.
+Don't set this property when `Source` or `SkillPackage` names an Amazon S3 source. Each synchronization replaces it with the content of the source's SKILL.md.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -54,7 +55,7 @@ The schema version of the descriptor payload.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Source`  <a name="cfn-agentregistry-registryrecord-agentskillsmddescriptor-source"></a>
-The optional source configuration used to synchronize the agent skills Markdown content.
+The source that the registry synchronizes the SKILL.md document from. Specify an `s3://` URL of a SKILL.md object in Amazon S3. You can't set this property together with `SkillPackage`.
 *Required*: No
 *Type*: [SkillMdSource](aws-properties-agentregistry-registryrecord-skillmdsource.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -170,7 +170,7 @@ The following table outlines the transaction types, the transacting entity, and 
 | Eligible AWS Marketplace seller | Amazon Web Services EMEA SARL | Amazon Payments Europe, S.C.A.  |
 | Ineligible AWS Marketplace seller | Amazon Web Services, Inc. | AWS |
 
-To request a bank letter for the remittance instructions, select **Billing or account support** and create an **Account and billing support** case at [Contact AWS](https://aws.amazon.com/contact-us/) or send an email message to awslux-receivables-support@email.amazon.com.
+To request a bank letter for the remittance instructions, select **Billing or account support** and create an **Account and billing support** case at [Contact AWS](https://aws.amazon.com/contact-us/) or send an email message to [awslux-receivables-support@email.amazon.com](mailto:awslux-receivables-support@email.amazon.com).
 
 For more information about how to change your currency preference to a supported currency, refer to [Changing which currency you use to pay your bill](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-account-payment.html#manage-account-payment-change-currency) in the *AWS Billing User Guide*.
 

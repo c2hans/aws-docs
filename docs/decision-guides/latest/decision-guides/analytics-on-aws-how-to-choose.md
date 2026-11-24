@@ -45,7 +45,7 @@ You don't have to choose between individual services and a unified experience. A
 
 1. **Explore** reference architectures, solutions, and other resources.
 
-[![AWS Videos](https://img.youtube.com/vi/9Y1bwAmx0Do/0.jpg)](https://www.youtube.com/watch?v=9Y1bwAmx0Do)
+[![AWS Videos](https://img.youtube.com/vi/9Y1bwAmx0Do/0.jpg)](https://www.youtube.com/watch?v=9Y1bwAmx0Do&t=397s)
 
 This eight-minute excerpt is from a one-hour presentation by Sirish Chandrasekaran and Rick Sears at re:Invent 2024. It provides an overview of how a fictional company, Maxdome, uses SageMaker Unified Studio AI and analytics to unlock data insights.
 

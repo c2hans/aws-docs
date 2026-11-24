@@ -60,6 +60,7 @@ For the full list, see [EKS Auto Mode Supported Labels](https://docs.aws.amazon.
 |  `eks.amazonaws.com/instance-gpu-manufacturer`  |  `nvidia`  | Name of the GPU manufacturer. |
 |  `eks.amazonaws.com/instance-gpu-count`  |  `8`  | Number of GPUs on the instance. |
 |  `eks.amazonaws.com/instance-gpu-memory`  |  `81920`  | Mebibytes of memory per GPU. |
+|  `nvidia.com/gpu.present`  |  `true`  | Set to `true` on instance types with NVIDIA GPUs. Not set on other instance types. |
 |  `karpenter.sh/capacity-type`  |  `reserved`  | Capacity type: `spot`, `on-demand`, or `reserved`. |
 |  `topology.kubernetes.io/zone`  |  `us-east-1a`  | Availability Zone. |
 

@@ -81,7 +81,7 @@ Specifies the FSx for ONTAP file system deployment type to use in creating the f
 For information about the use cases for Multi-AZ and Single-AZ deployments, refer to [Choosing a file system deployment type](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/high-availability-AZ.html).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `MULTI_AZ_1 | SINGLE_AZ_1 | SINGLE_AZ_2 | MULTI_AZ_2`
+*Allowed values*: `MULTI_AZ_1 | SINGLE_AZ_1 | SINGLE_AZ_2 | MULTI_AZ_2 | SINGLE_AZ_3 | MULTI_AZ_3`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DiskIopsConfiguration`  <a name="cfn-fsx-filesystem-ontapconfiguration-diskiopsconfiguration"></a>
@@ -147,7 +147,7 @@ Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following
 *Required*: No
 *Type*: Integer
 *Minimum*: `8`
-*Maximum*: `100000`
+*Maximum*: `2147483647`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ThroughputCapacityPerHAPair`  <a name="cfn-fsx-filesystem-ontapconfiguration-throughputcapacityperhapair"></a>
@@ -166,7 +166,7 @@ Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following
 *Required*: No
 *Type*: Integer
 *Minimum*: `128`
-*Maximum*: `6144`
+*Maximum*: `2147483647`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WeeklyMaintenanceStartTime`  <a name="cfn-fsx-filesystem-ontapconfiguration-weeklymaintenancestarttime"></a>

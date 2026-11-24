@@ -58,264 +58,255 @@ Windows
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
 + `cloudformation:CreateStack`
 + `cloudformation:DeleteStack`
-+ `cloudformation:DescribeStacks`
-+ `cloudformation:DescribeStackResources`
 + `cloudformation:DescribeStackEvents`
-+ `ec2:CreateTags`
-+ `ec2:RunInstances`
-+ `ec2:TerminateInstances`
++ `cloudformation:DescribeStacks`
++ `ec2:AuthorizeSecurityGroupEgress`
 + `ec2:CreateLaunchTemplate`
++ `ec2:CreateSecurityGroup`
++ `ec2:CreateTags`
 + `ec2:DeleteLaunchTemplate`
-+ `ec2:DescribeSubnets`
-+ `ec2:DescribeSecurityGroups`
++ `ec2:DeleteSecurityGroup`
 + `ec2:DescribeImages`
 + `ec2:DescribeInstances`
-+ `ec2:DescribeLaunchTemplates`
++ `ec2:DescribeKeyPairs`
 + `ec2:DescribeLaunchTemplateVersions`
-+ `ec2:CreateSecurityGroup`
-+ `ec2:DeleteSecurityGroup`
++ `ec2:DescribeLaunchTemplates`
++ `ec2:DescribeSecurityGroups`
++ `ec2:DescribeSubnets`
 + `ec2:RevokeSecurityGroupEgress`
-+ `ec2:AuthorizeSecurityGroupEgress`
-+ `iam:CreateRole`
-+ `iam:CreateInstanceProfile`
-+ `iam:GetInstanceProfile`
-+ `iam:getRolePolicy`
-+ `iam:DeleteRole`
-+ `iam:DeleteInstanceProfile`
-+ `iam:AddRoleToInstanceProfile`
-+ `iam:RemoveRoleFromInstanceProfile`
-+ `iam:AttachRolePolicy`
-+ `iam:DetachRolePolicy`
-+ `iam:PutRolePolicy`
-+ `iam:DeleteRolePolicy`
-+ `iam:GetRole`
-+ `iam:PassRole`
-+ `ssm:SendCommand`
-+ `ssm:StartAutomationExecution`
-+ `ssm:DescribeInstanceInformation`
-+ `ssm:DescribeAutomationExecutions`
-+ `ssm:GetDocument`
-+ `ssm:GetAutomationExecution`
-+ `ssm:DescribeAutomationStepExecutions`
-+ `ssm:ListCommandInvocations`
-+ `ssm:GetParameters`
-+ `ssm:ListCommands`
-+ `ssm:GetCommandInvocation`
++ `ec2:RunInstances`
++ `ec2:TerminateInstances`
 + `fsx:DescribeFileSystems`
-+ `ds:DescribeDirectories`
-+ `s3:GetEncryptionConfiguration`
-+ `s3:GetBucketPublicAccessBlock`
++ `iam:GetInstanceProfile`
++ `iam:PassRole`
 + `s3:GetAccountPublicAccessBlock`
-+ `s3:GetBucketPolicyStatus`
 + `s3:GetBucketAcl`
 + `s3:GetBucketLocation`
++ `s3:GetBucketPolicyStatus`
++ `s3:GetBucketPublicAccessBlock`
++ `s3:GetEncryptionConfiguration`
++ `ssm:DescribeInstanceInformation`
++ `ssm:GetDocument`
++ `ssm:GetParameters`
++ `ssm:ListCommandInvocations`
++ `ssm:ListCommands`
++ `ssm:SendCommand`
 
  **Example IAM Policy for the Automation Assume Role**
 
-------
-#### [ JSON ]
+**Note**
+This policy assumes that you specify an existing instance profile in the `InstanceProfileName` parameter. The IAM role inside that instance profile must trust `ec2.amazonaws.com` and have the permissions listed for `InstanceProfileName` at the start of this page. If you specify an existing instance in `InstanceId`, the automation doesn't create an instance and doesn't use the instance profile. Before you run the automation, add the tag `CreatedBy` with the value `AWSSupport-ValidateFSxWindowsADConfig` to that instance. The example policy allows `ssm:SendCommand` only on instances with this tag.
+If you leave `InstanceProfileName` and `InstanceId` empty, the automation creates an IAM role and instance profile on your behalf, which requires permissions to create and configure IAM resources that this policy doesn't grant.
 
-****
+In the following example, replace {{111122223333}} with your AWS account ID, {{FSxValidationInstanceProfile}} with the name of the instance profile that you pass in `InstanceProfileName`, and {{FSxValidationInstanceRole}} with the name of the IAM role inside that instance profile:
 
 ```json
-                {
-                    "Version":"2012-10-17",
-                    "Statement": [
-                        {
-                            "Sid": "AllowDescribe",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:DescribeSubnets",
-                                "ec2:DescribeSecurityGroups",
-                                "ec2:DescribeImages",
-                                "ec2:DescribeInstances",
-                                "ec2:DescribeLaunchTemplates",
-                                "ec2:DescribeLaunchTemplateVersions",
-                                "ssm:DescribeInstanceInformation",
-                                "ssm:DescribeAutomationExecutions",
-                                "ssm:DescribeAutomationStepExecutions",
-                                "fsx:DescribeFileSystems",
-                                "ds:DescribeDirectories"
-                            ],
-                            "Resource": "*"
-                        },
-                        {
-                            "Sid": "CloudFormation",
-                            "Effect": "Allow",
-                            "Action": [
-                                "cloudformation:DescribeStacks",
-                                "cloudformation:DescribeStackResources",
-                                "cloudformation:DescribeStackEvents",
-                                "cloudformation:CreateStack",
-                                "cloudformation:DeleteStack"
-                            ],
-                            "Resource": "arn:*:cloudformation:*:*:stack/AWSSupport-ValidateFSxWindowsADConfig-*"
-                        },
-                        {
-                            "Sid": "AllowCreateLaunchTemplate",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:CreateLaunchTemplate",
-                                "ec2:CreateTags"
-                            ],
-                            "Resource": [
-                                "arn:aws:ec2:*:*:launch-template/*"
-                            ]
-                        },
-                        {
-                            "Sid": "AllowEC2RunInstances",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:RunInstances",
-                                "ec2:CreateTags"
-                            ],
-                            "Resource": [
-                                "arn:aws:ec2:*::image/*",
-                                "arn:aws:ec2:*::snapshot/*",
-                                "arn:aws:ec2:*:*:subnet/*",
-                                "arn:aws:ec2:*:*:network-interface/*",
-                                "arn:aws:ec2:*:*:security-group/*",
-                                "arn:aws:ec2:*:*:key-pair/*",
-                                "arn:aws:ec2:*:*:launch-template/*"
-                            ]
-                        },
-                        {
-                            "Sid": "AllowEC2RunInstancesWithTags",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:RunInstances",
-                                "ec2:CreateTags"
-                            ],
-                            "Resource": [
-                                "arn:aws:ec2:*:*:instance/*",
-                                "arn:aws:ec2:*:*:volume/*"
-                            ]
-                        },
-                        {
-                            "Sid": "EC2SecurityGroup",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:CreateSecurityGroup",
-                                "ec2:RevokeSecurityGroupEgress",
-                                "ec2:AuthorizeSecurityGroupEgress",
-                                "ec2:CreateTags"
-                            ],
-                            "Resource": [
-                                "arn:*:ec2:*:*:security-group/*",
-                                "arn:*:ec2:*:*:vpc/*"
-                            ]
-                        },
-                        {
-                            "Sid": "EC2Remove",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:TerminateInstances",
-                                "ec2:DeleteLaunchTemplate",
-                                "ec2:DeleteSecurityGroup"
-                            ],
-                            "Resource": [
-                                "arn:aws:ec2:*:*:instance/*",
-                                "arn:aws:ec2:*:*:launch-template/*",
-                                "arn:*:ec2:*:*:security-group/*"
-                            ]
-                        },
-                        {
-                            "Sid": "IAMInstanceProfile",
-                            "Effect": "Allow",
-                            "Action": [
-                                "iam:CreateInstanceProfile",
-                                "iam:DeleteInstanceProfile",
-                                "iam:GetInstanceProfile",
-                                "iam:AddRoleToInstanceProfile",
-                                "iam:RemoveRoleFromInstanceProfile"
-                            ],
-                            "Resource": "arn:*:iam::*:instance-profile/*"
-                        },
-                        {
-                            "Sid": "IAM",
-                            "Effect": "Allow",
-                            "Action": [
-                                "iam:CreateRole",
-                                "iam:DeleteRole",
-                                "iam:AttachRolePolicy",
-                                "iam:DetachRolePolicy",
-                                "iam:getRolePolicy",
-                                "iam:PutRolePolicy",
-                                "iam:DeleteRolePolicy",
-                                "iam:GetRole",
-                                "iam:TagRole"
-                            ],
-                            "Resource": "arn:*:iam::*:role/*"
-                        },
-                        {
-                            "Sid": "SSM",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ssm:StartAutomationExecution",
-                                "ssm:GetDocument",
-                                "ssm:GetAutomationExecution",
-                                "ssm:ListCommandInvocations",
-                                "ssm:GetParameters",
-                                "ssm:ListCommands",
-                                "ssm:GetCommandInvocation"
-                            ],
-                            "Resource": "*"
-                        },
-                        {
-                            "Sid": "SSMSendCommand",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ssm:SendCommand"
-                            ],
-                            "Resource": "arn:aws:ssm:*:*:document/AWS-RunPowerShellScript"
-                        },
-                        {
-                            "Sid": "SSMSendCommandOnlyFsxInstance",
-                            "Effect": "Allow",
-                            "Action": [
-                                "ssm:SendCommand"
-                            ],
-                            "Resource": [
-                                "arn:aws:ec2:*:*:instance/*"
-                            ],
-                            "Condition": {
-                                "StringLike": {
-                                    "ssm:resourceTag/CreatedBy": [
-                                        "AWSSupport-ValidateFSxWindowsADConfig"
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "Sid": "AllowPassRoleToEC2",
-                            "Effect": "Allow",
-                            "Action": "iam:PassRole",
-                            "Resource": "arn:*:iam::*:role/AWSSupport-ValidateFSxWindowsADConfig-*",
-                            "Condition": {
-                                "StringEquals": {
-                                    "iam:PassedToService": [
-                                        "ec2.amazonaws.com"
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "Effect": "Allow",
-                            "Action": [
-                                "s3:GetEncryptionConfiguration",
-                                "s3:GetBucketPublicAccessBlock",
-                                "s3:GetAccountPublicAccessBlock",
-                                "s3:GetBucketPolicyStatus",
-                                "s3:GetBucketAcl",
-                                "s3:GetBucketLocation"
-                            ],
-                            "Resource": "*"
-                        }
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ActionsWithoutResourceLevelPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeImages",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeLaunchTemplates",
+                "ec2:DescribeLaunchTemplateVersions",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "fsx:DescribeFileSystems",
+                "ssm:DescribeInstanceInformation",
+                "ssm:ListCommandInvocations",
+                "ssm:ListCommands"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudFormationStack",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStacks"
+            ],
+            "Resource": "arn:aws:cloudformation:*:{{111122223333}}:stack/AWSSupport-ValidateFSxWindowsADConfig-*"
+        },
+        {
+            "Sid": "ReadRunbookAttachment",
+            "Effect": "Allow",
+            "Action": "ssm:GetDocument",
+            "Resource": "arn:aws:ssm:*:*:document/AWSSupport-ValidateFSxWindowsADConfig"
+        },
+        {
+            "Sid": "ReadWindowsAmiParameter",
+            "Effect": "Allow",
+            "Action": "ssm:GetParameters",
+            "Resource": "arn:aws:ssm:*::parameter/aws/service/ami-windows-latest/*"
+        },
+        {
+            "Sid": "CreateTaggedLaunchTemplate",
+            "Effect": "Allow",
+            "Action": "ec2:CreateLaunchTemplate",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestTag/CreatedBy": "AWSSupport-ValidateFSxWindowsADConfig"
+                }
+            }
+        },
+        {
+            "Sid": "CreateTaggedSecurityGroup",
+            "Effect": "Allow",
+            "Action": "ec2:CreateSecurityGroup",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:security-group/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestTag/CreatedBy": "AWSSupport-ValidateFSxWindowsADConfig"
+                }
+            }
+        },
+        {
+            "Sid": "CreateSecurityGroupInVpc",
+            "Effect": "Allow",
+            "Action": "ec2:CreateSecurityGroup",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:vpc/*"
+        },
+        {
+            "Sid": "RunInstancesWithAmazonImage",
+            "Effect": "Allow",
+            "Action": "ec2:RunInstances",
+            "Resource": "arn:aws:ec2:*::image/*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:Owner": "amazon"
+                }
+            }
+        },
+        {
+            "Sid": "RunInstancesResources",
+            "Effect": "Allow",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:key-pair/*",
+                "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+                "arn:aws:ec2:*:{{111122223333}}:network-interface/*",
+                "arn:aws:ec2:*:{{111122223333}}:security-group/*",
+                "arn:aws:ec2:*:{{111122223333}}:subnet/*",
+                "arn:aws:ec2:*:{{111122223333}}:volume/*"
+            ]
+        },
+        {
+            "Sid": "RunTaggedInstance",
+            "Effect": "Allow",
+            "Action": "ec2:RunInstances",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:instance/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestTag/CreatedBy": "AWSSupport-ValidateFSxWindowsADConfig"
+                }
+            }
+        },
+        {
+            "Sid": "TagOnCreateOnly",
+            "Effect": "Allow",
+            "Action": "ec2:CreateTags",
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:instance/*",
+                "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+                "arn:aws:ec2:*:{{111122223333}}:network-interface/*",
+                "arn:aws:ec2:*:{{111122223333}}:security-group/*",
+                "arn:aws:ec2:*:{{111122223333}}:volume/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "ec2:CreateAction": [
+                        "CreateLaunchTemplate",
+                        "CreateSecurityGroup",
+                        "RunInstances"
                     ]
                 }
+            }
+        },
+        {
+            "Sid": "ManageTaggedResources",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:DeleteLaunchTemplate",
+                "ec2:DeleteSecurityGroup",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:TerminateInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:instance/*",
+                "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+                "arn:aws:ec2:*:{{111122223333}}:security-group/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "aws:ResourceTag/CreatedBy": "AWSSupport-ValidateFSxWindowsADConfig"
+                }
+            }
+        },
+        {
+            "Sid": "ReadInstanceProfile",
+            "Effect": "Allow",
+            "Action": "iam:GetInstanceProfile",
+            "Resource": "arn:aws:iam::{{111122223333}}:instance-profile/{{FSxValidationInstanceProfile}}"
+        },
+        {
+            "Sid": "AllowPassRoleToEC2",
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::{{111122223333}}:role/{{FSxValidationInstanceRole}}",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": "ec2.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "SSMSendCommand",
+            "Effect": "Allow",
+            "Action": "ssm:SendCommand",
+            "Resource": "arn:aws:ssm:*::document/AWS-RunPowerShellScript"
+        },
+        {
+            "Sid": "SSMSendCommandOnlyFsxInstance",
+            "Effect": "Allow",
+            "Action": "ssm:SendCommand",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:instance/*",
+            "Condition": {
+                "StringLike": {
+                    "ssm:resourceTag/CreatedBy": [
+                        "AWSSupport-ValidateFSxWindowsADConfig"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "CheckResultsBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketAcl",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetEncryptionConfiguration"
+            ],
+            "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
+        },
+        {
+            "Sid": "S3AccountPublicAccessBlock",
+            "Effect": "Allow",
+            "Action": "s3:GetAccountPublicAccessBlock",
+            "Resource": "*"
+        }
+    ]
+}
 ```
-
-------
 
  **Instructions**
 

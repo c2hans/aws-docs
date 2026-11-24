@@ -16,7 +16,7 @@ The following table shows which common AWS Glue operations support the Avro form
 | --- | --- | --- | --- | --- |
 | Supported | Supported | Supported\* | Unsupported | Supported |
 
-\*Supported with restrictions. For more information, see [Notes and restrictions for Avro streaming sources](add-job-streaming.md#streaming-avro-notes).
+<sup>\*</sup>Supported with restrictions. For more information, see [Notes and restrictions for Avro streaming sources](add-job-streaming.md#streaming-avro-notes).
 
 ## Example: Read Avro files or folders from S3
 <a name="aws-glue-programming-etl-format-avro-read"></a>

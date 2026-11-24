@@ -33,9 +33,9 @@ The following pages are categorized by the potentially impacted resource type as
 
 The following table shows all of the active finding types, grouped by their source: first the finding types from foundational threat detection (sorted by data source), then the [Extended Threat Detection](guardduty-extended-threat-detection.md) attack sequence finding types, and then the finding types from each protection plan (in alphabetical order by plan). In the following table, some of the findings have their *Finding severity* column values marked with an asterisk (\*) or a plus sign (\+):
 
-\*These finding types have variable severity. A finding of a particular type may have a different severity depending on the context specific to the finding. For more information about a finding type, view its detailed description.
+<sup>\*</sup>These finding types have variable severity. A finding of a particular type may have a different severity depending on the context specific to the finding. For more information about a finding type, view its detailed description.
 
-\+EC2 findings that use VPC flow logs as a data source do not support IPv6 traffic.
+<sup>\+</sup>EC2 findings that use VPC flow logs as a data source do not support IPv6 traffic.
 
 | Finding type | Resource type | Foundational data source/Feature | Finding severity |
 | --- | --- | --- | --- |
@@ -87,31 +87,31 @@ The following table shows all of the active finding types, grouped by their sour
 | [Trojan:EC2/DropPoint\!DNS](guardduty_finding-types-ec2.md#trojan-ec2-droppointdns) | Amazon EC2 | DNS logs | Medium |
 | [Trojan:EC2/PhishingDomainRequest\!DNS](guardduty_finding-types-ec2.md#trojan-ec2-phishingdomainrequestdns) | Amazon EC2 | DNS logs | High |
 | [UnauthorizedAccess:EC2/MetadataDNSRebind](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-metadatadnsrebind) | Amazon EC2 | DNS logs | High |
-| [Backdoor:EC2/C&CActivity.B](guardduty_finding-types-ec2.md#backdoor-ec2-ccactivityb) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Backdoor:EC2/DenialOfService.Dns](guardduty_finding-types-ec2.md#backdoor-ec2-denialofservicedns) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Backdoor:EC2/DenialOfService.Tcp](guardduty_finding-types-ec2.md#backdoor-ec2-denialofservicetcp) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Backdoor:EC2/DenialOfService.Udp](guardduty_finding-types-ec2.md#backdoor-ec2-denialofserviceudp) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Backdoor:EC2/DenialOfService.UdpOnTcpPorts](guardduty_finding-types-ec2.md#backdoor-ec2-denialofserviceudpontcpports) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Backdoor:EC2/DenialOfService.UnusualProtocol](guardduty_finding-types-ec2.md#backdoor-ec2-denialofserviceunusualprotocol) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Backdoor:EC2/Spambot](guardduty_finding-types-ec2.md#backdoor-ec2-spambot) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [Behavior:EC2/NetworkPortUnusual](guardduty_finding-types-ec2.md#behavior-ec2-networkportunusual) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [Behavior:EC2/TrafficVolumeUnusual](guardduty_finding-types-ec2.md#behavior-ec2-trafficvolumeunusual) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [CryptoCurrency:EC2/BitcoinTool.B](guardduty_finding-types-ec2.md#cryptocurrency-ec2-bitcointoolb) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [DefenseEvasion:EC2/UnusualDNSResolver](guardduty_finding-types-ec2.md#defenseevasion-ec2-unusualdnsresolver) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [DefenseEvasion:EC2/UnusualDoHActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unsualdohactivity) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [DefenseEvasion:EC2/UnusualDoTActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unusualdotactivity) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [Impact:EC2/PortSweep](guardduty_finding-types-ec2.md#impact-ec2-portsweep) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Impact:EC2/WinRMBruteForce](guardduty_finding-types-ec2.md#impact-ec2-winrmbruteforce) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Low[*](#gdu-active-findings-variable-severity) |
-| [Recon:EC2/PortProbeEMRUnprotectedPort](guardduty_finding-types-ec2.md#recon-ec2-portprobeemrunprotectedport) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [Recon:EC2/PortProbeUnprotectedPort](guardduty_finding-types-ec2.md#recon-ec2-portprobeunprotectedport) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Low[*](#gdu-active-findings-variable-severity) |
-| [Recon:EC2/Portscan](guardduty_finding-types-ec2.md#recon-ec2-portscan) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [Trojan:EC2/BlackholeTraffic](guardduty_finding-types-ec2.md#trojan-ec2-blackholetraffic) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [Trojan:EC2/DropPoint](guardduty_finding-types-ec2.md#trojan-ec2-droppoint) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [UnauthorizedAccess:EC2/MaliciousIPCaller.Custom](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-maliciousipcallercustom) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Medium |
-| [UnauthorizedAccess:EC2/RDPBruteForce](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-rdpbruteforce) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Low[*](#gdu-active-findings-variable-severity) |
-| [UnauthorizedAccess:EC2/SSHBruteForce](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-sshbruteforce) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | Low[*](#gdu-active-findings-variable-severity) |
-| [UnauthorizedAccess:EC2/TorClient](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-torclient) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
-| [UnauthorizedAccess:EC2/TorRelay](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-torrelay) | Amazon EC2 | VPC flow logs[+](#gdu-ec2-finding-no-support-ipv6-traffic) | High |
+| [Backdoor:EC2/C&CActivity.B](guardduty_finding-types-ec2.md#backdoor-ec2-ccactivityb) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Backdoor:EC2/DenialOfService.Dns](guardduty_finding-types-ec2.md#backdoor-ec2-denialofservicedns) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Backdoor:EC2/DenialOfService.Tcp](guardduty_finding-types-ec2.md#backdoor-ec2-denialofservicetcp) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Backdoor:EC2/DenialOfService.Udp](guardduty_finding-types-ec2.md#backdoor-ec2-denialofserviceudp) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Backdoor:EC2/DenialOfService.UdpOnTcpPorts](guardduty_finding-types-ec2.md#backdoor-ec2-denialofserviceudpontcpports) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Backdoor:EC2/DenialOfService.UnusualProtocol](guardduty_finding-types-ec2.md#backdoor-ec2-denialofserviceunusualprotocol) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Backdoor:EC2/Spambot](guardduty_finding-types-ec2.md#backdoor-ec2-spambot) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [Behavior:EC2/NetworkPortUnusual](guardduty_finding-types-ec2.md#behavior-ec2-networkportunusual) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [Behavior:EC2/TrafficVolumeUnusual](guardduty_finding-types-ec2.md#behavior-ec2-trafficvolumeunusual) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [CryptoCurrency:EC2/BitcoinTool.B](guardduty_finding-types-ec2.md#cryptocurrency-ec2-bitcointoolb) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [DefenseEvasion:EC2/UnusualDNSResolver](guardduty_finding-types-ec2.md#defenseevasion-ec2-unusualdnsresolver) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [DefenseEvasion:EC2/UnusualDoHActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unsualdohactivity) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [DefenseEvasion:EC2/UnusualDoTActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unusualdotactivity) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [Impact:EC2/PortSweep](guardduty_finding-types-ec2.md#impact-ec2-portsweep) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Impact:EC2/WinRMBruteForce](guardduty_finding-types-ec2.md#impact-ec2-winrmbruteforce) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Low[*](#gdu-active-findings-variable-severity) |
+| [Recon:EC2/PortProbeEMRUnprotectedPort](guardduty_finding-types-ec2.md#recon-ec2-portprobeemrunprotectedport) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [Recon:EC2/PortProbeUnprotectedPort](guardduty_finding-types-ec2.md#recon-ec2-portprobeunprotectedport) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Low[*](#gdu-active-findings-variable-severity) |
+| [Recon:EC2/Portscan](guardduty_finding-types-ec2.md#recon-ec2-portscan) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [Trojan:EC2/BlackholeTraffic](guardduty_finding-types-ec2.md#trojan-ec2-blackholetraffic) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [Trojan:EC2/DropPoint](guardduty_finding-types-ec2.md#trojan-ec2-droppoint) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [UnauthorizedAccess:EC2/MaliciousIPCaller.Custom](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-maliciousipcallercustom) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Medium |
+| [UnauthorizedAccess:EC2/RDPBruteForce](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-rdpbruteforce) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Low[*](#gdu-active-findings-variable-severity) |
+| [UnauthorizedAccess:EC2/SSHBruteForce](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-sshbruteforce) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | Low[*](#gdu-active-findings-variable-severity) |
+| [UnauthorizedAccess:EC2/TorClient](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-torclient) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
+| [UnauthorizedAccess:EC2/TorRelay](guardduty_finding-types-ec2.md#unauthorizedaccess-ec2-torrelay) | Amazon EC2 | VPC flow logs<sup>[+](#gdu-ec2-finding-no-support-ipv6-traffic)</sup> | High |
 | [AttackSequence:EKS/CompromisedCluster](guardduty-attack-sequence-finding-types.md#attack-sequence-eks-compromised-cluster) | Resources involved in attack sequence |  +  EKS audit log events <br />+  Runtime Monitoring for Amazon EKS <br />+  Amazon EKS malware detection for Amazon EC2 <br />+  AWS CloudTrail data events for S3 <br />+  AWS CloudTrail management events <br />+  VPC Flow Logs <br />+  Route53 Resolver DNS query logs   | Critical |
 | [AttackSequence:IAM/CompromisedCredentials](guardduty-attack-sequence-finding-types.md#attack-sequence-iam-compromised-credentials) | Resources involved in attack sequence | CloudTrail management events | Critical |
 | [AttackSequence:S3/CompromisedData](guardduty-attack-sequence-finding-types.md#attack-sequence-s3-compromised-data) | Resources involved in attack sequence | CloudTrail management events and CloudTrail data events for S3 | Critical |

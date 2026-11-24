@@ -74,3 +74,6 @@ Output:
 When you create users with the `create-user` CLI command or the [CreateUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html) API operation, the users do not have passwords. You can update the settings in IAM Identity Center to send these users a verification email after their first attempt to sign on so they can set up a password. If you do not enable this setting, you must generate a one-time password and share it with the user. For more information, see [Email one-time password to users created with API or CLI](userswithoutpwd.md).
 
 ------
+
+**Note**
+If you use trusted identity propagation with an IAM identity provider, a user that you add in the IAM Identity Center console can sign in to the AWS access portal with an IAM Identity Center credential. The console sets up an IAM Identity Center password for the user whether you choose to send the user an email with password setup instructions or to generate a one-time password that you share with the user. If you want your users to sign in only through your IAM identity provider, don't enable IAM Identity Center password-based sign-in for these users. For more information, see [Trusted identity propagation with an IAM identity provider](simplified-tip-enabling.md#tip-iam-federation).

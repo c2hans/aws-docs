@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-inferentia.html
 
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
-# Use AWS Inferentia instances with Amazon EKS for Machine Learning
+# Use AWS Inferentia instances with Amazon EKS for machine learning
 
 ## Overview
 <a name="_overview"></a>

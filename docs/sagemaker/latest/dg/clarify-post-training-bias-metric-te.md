@@ -11,21 +11,21 @@ The treatment equality (TE) is the difference in the ratio of false negatives to
 
 The formula for the treatment equality:
 
-        TE = FNd/FPd - FNa/FPa
+        TE = FN<sub>d</sub>/FP<sub>d</sub> - FN<sub>a</sub>/FP<sub>a</sub>
 
 Where:
-+ FNd are the false negatives predicted for facet *d*.
-+ FPd are the false positives predicted for facet *d*.
-+ FNa are the false negatives predicted for facet *a*.
-+ FPa are the false positives predicted for facet *a*.
++ FN<sub>d</sub> are the false negatives predicted for facet *d*.
++ FP<sub>d</sub> are the false positives predicted for facet *d*.
++ FN<sub>a</sub> are the false negatives predicted for facet *a*.
++ FP<sub>a</sub> are the false positives predicted for facet *a*.
 
-Note the metric becomes unbounded if FPa or FPd is zero.
+Note the metric becomes unbounded if FP<sub>a</sub> or FP<sub>d</sub> is zero.
 
-For example, suppose that there are 100 loan applicants from facet *a* and 50 from facet *d*. For facet *a*, 8 were wrongly denied a loan (FNa) and another 6 were wrongly approved (FPa). The remaining predictions were true, so TPa \+ TNa = 86. For facet *d*, 5 were wrongly denied (FNd) and 2 were wrongly approved (FPd). The remaining predictions were true, so TPd \+ TNd = 43. The ratio of false negatives to false positives equals 8/6 = 1.33 for facet *a* and 5/2 = 2.5 for facet *d*. Hence TE = 2.5 - 1.33 = 1.167, even though both facets have the same accuracy:
+For example, suppose that there are 100 loan applicants from facet *a* and 50 from facet *d*. For facet *a*, 8 were wrongly denied a loan (FN<sub>a</sub>) and another 6 were wrongly approved (FP<sub>a</sub>). The remaining predictions were true, so TP<sub>a</sub> \+ TN<sub>a</sub> = 86. For facet *d*, 5 were wrongly denied (FN<sub>d</sub>) and 2 were wrongly approved (FP<sub>d</sub>). The remaining predictions were true, so TP<sub>d</sub> \+ TN<sub>d</sub> = 43. The ratio of false negatives to false positives equals 8/6 = 1.33 for facet *a* and 5/2 = 2.5 for facet *d*. Hence TE = 2.5 - 1.33 = 1.167, even though both facets have the same accuracy:
 
-        ACCa = (86)/(86\+ 8 \+ 6) = 0.86
+        ACC<sub>a</sub> = (86)/(86\+ 8 \+ 6) = 0.86
 
-        ACCd = (43)/(43 \+ 5 \+ 2) = 0.86
+        ACC<sub>d</sub> = (43)/(43 \+ 5 \+ 2) = 0.86
 
 The range of values for differences in conditional rejection for binary and multicategory facet labels is (-∞, \+∞). The TE metric is not defined for continuous labels. The interpretation of this metric depends on the relative important of false positives (Type I error) and false negatives (Type II error).
 + Positive values occur when the ratio of false negatives to false positives for facet *d* is greater than that for facet *a*.
@@ -33,4 +33,4 @@ The range of values for differences in conditional rejection for binary and mult
 + Negative values occur when the ratio of false negatives to false positives for facet *d* is less than that for facet *a*.
 
 **Note**
-A previous version stated that the Treatment Equality metric is computed as FPa / FNa - FPd / FNd instead of FNd / FPd - FNa / FPa. While either of the versions can be used. For more information, see [`Fairness measures for Machine Learning in Finance`](https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf).
+A previous version stated that the Treatment Equality metric is computed as FP<sub>a</sub> / FN<sub>a</sub> - FP<sub>d</sub> / FN<sub>d</sub> instead of FN<sub>d</sub> / FP<sub>d</sub> - FN<sub>a</sub> / FP<sub>a</sub>. While either of the versions can be used. For more information, see [`Fairness measures for Machine Learning in Finance`](https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf).

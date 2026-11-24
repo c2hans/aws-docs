@@ -45,6 +45,14 @@ A type that indicates that the excluded rule has the action Count.
 ruleId
 The ID of the rule within the rule group that is excluded.
 
+**externalServiceCalls**
+Present when AWS WAF called another AWS service while evaluating the request and that service returned a request ID. Each entry identifies one call. Use the request ID to correlate the web request with the other service's records, for example when you troubleshoot a call or contact AWS Support.
+Currently, AWS WAF adds an entry when the AI Security managed rule group calls Amazon Bedrock Guardrails to assess the request. For more information, see [AWS WAF logs](waf-ai-security-components.md#waf-ai-security-components-logs).
+externalServiceCalls.serviceName
+The service that AWS WAF called. Possible values: `bedrock`.
+externalServiceCalls.requestId
+The request ID that the service returned for the call.
+
 **formatVersion**
 The format version for the log.
 

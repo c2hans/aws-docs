@@ -14,18 +14,18 @@ You can build a track of any shape as long as it meets the following requirement
   On a curved track, the turning radius (r) measures from the circle center to the outside border, as illustrated below.
 ![Track turning radius measurement diagram](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-turning-radius-diagram.png)
 
-  The minimum turning radius (rmin) depends on the track turning angle (α) at a corner and should comply to the following limits:
-  + If the track’s turning angle is α ≤ 90 degrees, rmin ≥ 25 inches
+  The minimum turning radius (r<sub>min</sub>) depends on the track turning angle (α) at a corner and should comply to the following limits:
+  + If the track’s turning angle is α ≤ 90 degrees, r<sub>min</sub> ≥ 25 inches
 
     We recommend 30 inches.
-  + If the track’s turning angle is α > 90 degrees, rmin ≥ 30 inches.
+  + If the track’s turning angle is α > 90 degrees, r<sub>min</sub> ≥ 30 inches.
 
     We recommend 35 inches.
 +  **Track width**
 
-  The track width (wtrack) should comply to the following limit:
+  The track width (w<sub>track</sub>) should comply to the following limit:
 
-  wtrack ≥ 24 ± 3 inches.
+  w<sub>track</sub> ≥ 24 ± 3 inches.
 +  **Track surface:**
 
   The track surface should be smooth and of a uniform dark color. The minimum enclosing area should be 30 inches x 60 inches in size.

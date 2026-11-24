@@ -55,6 +55,7 @@ Content-type: application/json
          "SourceContextGraphConfiguration": {
          },
          "SourceLogsConfiguration": {
+            "CentralizeWithDataProtection": "{{string}}",
             "DataSourceSelectionCriteria": "{{string}}",
             "EncryptedLogGroupStrategy": "{{string}}",
             "LogGroupSelectionCriteria": "{{string}}"

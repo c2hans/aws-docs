@@ -13,17 +13,17 @@ The following topics describe commands in CloudHSM CLI:
 | Command | Description | User Type |
 | --- | --- | --- |
 | [activate](cloudhsm_cli-cluster-activate.md) | Activates an CloudHSM cluster and provides confirmation the cluster is new. This must be done before any other operations can be performed. | Unactivated admin |
-| [hsm-info](cloudhsm_cli-cluster-hsm-info.md) | List the HSMs in your cluster. | All [1](#cli-ref-1), including unauthenticated users. Login is not required. |
+| [hsm-info](cloudhsm_cli-cluster-hsm-info.md) | List the HSMs in your cluster. | All <sup>[1](#cli-ref-1)</sup>, including unauthenticated users. Login is not required. |
 | [ecdsa](cloudhsm_cli-crypto-sign-ecdsa.md) | Generates a signature using an EC private key and the ECDSA signing mechanism.  | Crypto users (CU) |
 | [ed25519](cloudhsm_cli-crypto-sign-ed25519.md) | Generates a signature using an Ed25519 private key and the PureEdDSA signing mechanism.  | CU |
 | [ed25519ph](cloudhsm_cli-crypto-sign-ed25519ph.md) | Generates a signature using an Ed25519 private key and the HashEdDSA signing mechanism.  | CU |
-| [ml-dsa](cloudhsm_cli-crypto-sign-mldsa.md) | Generates a signature using an ML-DSA[2](#cli-ref-2) private key and the ML-DSA signing mechanism. | CU |
+| [ml-dsa](cloudhsm_cli-crypto-sign-mldsa.md) | Generates a signature using an ML-DSA<sup>[2](#cli-ref-2)</sup> private key and the ML-DSA signing mechanism. | CU |
 | [rsa-pkcs](cloudhsm_cli-crypto-sign-rsa-pkcs.md) | Generates a signature using an RSA private key and the RSA-PKCS signing mechanism. | CU |
 | [rsa-pkcs-pss](cloudhsm_cli-crypto-sign-rsa-pkcs-pss.md) | Generates a signature using an RSA private key and the RSA-PKCS-PSS signing mechanism. | CU |
 | [ecdsa](cloudhsm_cli-crypto-verify-ecdsa.md) | Confirms a file has been signed in the HSM by a given public key. Verifies the signature was generated using the ECDSA signing mechanism. Compares a signed file against a source file and determine whether the two are cryptographically related based on a given ecdsa public key and signing mechanism.  | CU |
 | [ed25519](cloudhsm_cli-crypto-verify-ed25519.md) | Verifies PureEdDSA signatures using an Ed25519 public key. | CU |
 | [ed25519ph](cloudhsm_cli-crypto-verify-ed25519ph.md) | Verifies HashEdDSA signatures using an Ed25519 public key. | CU |
-| [ml-dsa](cloudhsm_cli-crypto-verify-mldsa.md) | Verifies a signature using an ML-DSA[2](#cli-ref-2) public key and the ML-DSA verification mechanism. | CU |
+| [ml-dsa](cloudhsm_cli-crypto-verify-mldsa.md) | Verifies a signature using an ML-DSA<sup>[2](#cli-ref-2)</sup> public key and the ML-DSA verification mechanism. | CU |
 | [rsa-pkcs](cloudhsm_cli-crypto-verify-rsa-pkcs.md) | Confirms a file has been signed in the HSM by a given public key. Verifies the signature was generated using the RSA-PKCS signing mechanism. Compares a signed file against a source file and determines whether the two are cryptographically related based on a given rsa public key and signing mechanism. | CU |
 | [rsa-pkcs-pss](cloudhsm_cli-crypto-verify-rsa-pkcs-pss.md) | Confirms a file has been signed in the HSM by a given public key. Verifies the signature was generated using the RSA-PKCS-PSS signing mechanism. Compares a signed file against a source file and determines whether the two are cryptographically related based on a given rsa public key and signing mechanism. | CU |
 | [key delete](cloudhsm_cli-key-delete.md) | Deletes a key from your AWS CloudHSM cluster. | CU |
@@ -115,14 +115,14 @@ Specifies the file path to a signed quorum token file to approve operation for p
 | [logout](cloudhsm_cli-logout.md) | Log out of your AWS CloudHSM cluster. | Admin, CU, and appliance user (AU) |
 | [quorum token-sign delete](cloudhsm_cli-qm-token-del.md) | Deletes one or more tokens for a quorum authorized service. | Admin |
 | [quorum token-sign generate](cloudhsm_cli-qm-token-gen.md) | Generates a token for a quorum authorized service. | Admin |
-| [quorum token-sign list](cloudhsm_cli-qm-token-list.md) | Lists all token-sign quorum tokens present in your CloudHSM cluster. | All [1](#cli-ref-1), including unauthenticated users. Login is not required. |
-| [quorum token-sign list-quorum-values](cloudhsm_cli-qm-token-list-qm.md) | Lists the quorum values set in your CloudHSM cluster. | All [1](#cli-ref-1), including unauthenticated users. Login is not required. |
+| [quorum token-sign list](cloudhsm_cli-qm-token-list.md) | Lists all token-sign quorum tokens present in your CloudHSM cluster. | All <sup>[1](#cli-ref-1)</sup>, including unauthenticated users. Login is not required. |
+| [quorum token-sign list-quorum-values](cloudhsm_cli-qm-token-list-qm.md) | Lists the quorum values set in your CloudHSM cluster. | All <sup>[1](#cli-ref-1)</sup>, including unauthenticated users. Login is not required. |
 | [quorum token-sign set-quorum-value](cloudhsm_cli-qm-token-set-qm.md) | Sets a new quorum value for a quorum authorized service. | Admin |
 | [user change-mfa](cloudhsm_cli-user-change-mfa.md) | Changes a user's multi-factor authentication (MFA) strategy. | Admin, CU |
 | [user change-password](cloudhsm_cli-user-change-password.md) | Changes the passwords of users on the HSMs. Any user can change their own password. Admins can change anyone's password. | Admin, CU |
 | [user create](cloudhsm_cli-user-create.md) | Creates a user in your AWS CloudHSM cluster. | Admin |
 | [user delete](cloudhsm_cli-user-delete.md) | Deletes a user in your AWS CloudHSM cluster. | Admin |
-| [user list](cloudhsm_cli-user-list.md) | Lists the users in your AWS CloudHSM cluster. | All [1](#cli-ref-1), including unauthenticated users. Login is not required. |
+| [user list](cloudhsm_cli-user-list.md) | Lists the users in your AWS CloudHSM cluster. | All <sup>[1](#cli-ref-1)</sup>, including unauthenticated users. Login is not required. |
 | [user change-quorum token-sign register](cloudhsm_cli-user-chqm-token-reg.md) | Registers the quorum token-sign quorum strategy for a user. | Admin |
 
 **Annotations**

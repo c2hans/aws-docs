@@ -209,7 +209,7 @@ The Inventory **Detailed View** page is only available in AWS Regions that offer
 1. Choose the resource data sync for which you want to query data.
 ![Displaying inventory data in the AWS Systems Manager console](https://docs.aws.amazon.com/systems-manager/latest/userguide/images/inventory-display-data.png)
 
-1. In the **Inventory Type** list, choose the type of inventory data that you want to query, and then press Enter.
+1. In the **Inventory Type** list, choose the type of inventory data that you want to query, and then press **Enter**.
 ![Choosing an inventory type in the AWS Systems Manager console](https://docs.aws.amazon.com/systems-manager/latest/userguide/images/inventory-type.png)
 
 1. To filter the data, choose the Filter bar, and then choose a filter option.

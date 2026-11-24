@@ -15,7 +15,7 @@ This topic details the changes in the Amazon CloudFront from version 1 (v1) to v
 | Package name | com.amazonaws.services.cloudfront | software.amazon.awssdk.services.cloudfront |
 | Class names | [CloudFrontUrlSigner](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/cloudfront/CloudFrontUrlSigner.html)<br />[CloudFrontCookieSigner](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/cloudfront/CloudFrontCookieSigner.html) | [CloudFrontUtilities](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/CloudFrontUtilities.html)<br />[SignedUrl](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/url/SignedUrl.html)<br />[CannedSignerRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/model/CannedSignerRequest.html)<br />[CustomSignerRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudfront/model/CustomSignerRequest.html) |
 
-1 [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). 2 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). <sup>2</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ## API changes
 <a name="migration-cf-presign-behavior-changes"></a>

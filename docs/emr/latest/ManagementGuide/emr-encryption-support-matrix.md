@@ -27,9 +27,9 @@ For more information, see [Spark security](https://spark.apache.org/docs/latest/
 | Spark UI | spark.ui.port | 4440 | TLS | emr-5.3.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 | Spark Driver | spark.driver.port | Dynamic | Spark AES-based encryption | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 | Spark Executor | Executor Port (no named config) | Dynamic | Spark AES-based encryption | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
-| YARN NodeManager | spark.shuffle.service.port1 | 7337 | Spark AES-based encryption | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
+| YARN NodeManager | spark.shuffle.service.port<sup>1</sup> | 7337 | Spark AES-based encryption | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 
-1`spark.shuffle.service.port` is hosted on YARN NodeManager but is only used by Apache Spark.
+<sup>1</sup>`spark.shuffle.service.port` is hosted on YARN NodeManager but is only used by Apache Spark.
 
 **Known issue**
 
@@ -79,12 +79,12 @@ For more information, see [Hadoop in secure mode](https://hadoop.apache.org/docs
 | NodeManager | yarn.nodemanager.address | 8041 | SASL \+ Kerberos | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 | NodeManager | yarn.nodemanager.localizer.address | 8040 | SASL \+ Kerberos | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 | NodeManager | yarn.nodemanager.webapp.address | 8044 | TLS | emr-7.3.0\+ |
-| NodeManager | mapreduce.shuffle.port1 | 13562 | TLS | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
-| NodeManager | spark.shuffle.service.port2 | 7337 | Spark AES-based encryption | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
+| NodeManager | mapreduce.shuffle.port<sup>1</sup> | 13562 | TLS | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
+| NodeManager | spark.shuffle.service.port<sup>2</sup> | 7337 | Spark AES-based encryption | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 
-1 `mapreduce.shuffle.port` is hosted on YARN NodeManager but is only used by Hadoop MapReduce.
+<sup>1</sup> `mapreduce.shuffle.port` is hosted on YARN NodeManager but is only used by Hadoop MapReduce.
 
-2 `spark.shuffle.service.port` is hosted on YARN NodeManager but is only used by Apache Spark.
+<sup>2</sup> `spark.shuffle.service.port` is hosted on YARN NodeManager but is only used by Apache Spark.
 
 **Known issue**
 
@@ -133,9 +133,9 @@ For more information, see [Hadoop in secure mode](https://hadoop.apache.org/docs
 | Component | Endpoint | Port | In-Transit Encryption Mechanism | Supported from Release |
 | --- | --- | --- | --- | --- |
 | JobHistoryServer | mapreduce.jobhistory.webapp.https.address | 19890 | TLS | emr-7.3.0\+ |
-| YARN NodeManager | mapreduce.shuffle.port1 | 13562 | TLS | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
+| YARN NodeManager | mapreduce.shuffle.port<sup>1</sup> | 13562 | TLS | emr-4.8.0\+, emr-5.0.0\+, emr-6.0.0\+, emr-7.0.0\+ |
 
-1 `mapreduce.shuffle.port` is hosted on YARN NodeManager but is only used by Hadoop MapReduce.
+<sup>1</sup> `mapreduce.shuffle.port` is hosted on YARN NodeManager but is only used by Hadoop MapReduce.
 
 ## Presto
 <a name="emr-encryption-support-matrix-presto"></a>

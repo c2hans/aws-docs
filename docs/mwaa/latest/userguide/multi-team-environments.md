@@ -125,6 +125,7 @@ Multi-team environments have the following limitations:
 + **Shared metadata database** – All teams share the same SQL database instance containing Airflow metadata. A team's workload disproportionally loading the database can affect the performance of other teams.
 + **Shared plugins and Python dependencies** – All teams use the same plugins and the same `requirements.txt` file.
 + **IAM Identity Center dependency** – Teams require IAM Identity Center integration. After you enable IAM Identity Center integration on an environment, you can't disable it, even if you remove all teams.
++ **Private webserver access isn't supported yet** – Teams require IAM Identity Center integration. Because you can't use IAM Identity Center integration on environments that use the private network access mode for the Apache Airflow webserver, you can't use teams on those environments. This is a temporary limitation. For more information, see [Known limitations](identity-center-integration.md#iic-integration-limitations).
 + **No renaming** – You can't rename a team. To change a team's name, remove the team and add a new one.
 + **Version downgrade** – You can't downgrade an environment that has teams to an Apache Airflow version earlier than 3.3.1. To downgrade, first remove all teams.
 + **Team quota** – An environment can have up to 20 teams. You can't increase this quota.

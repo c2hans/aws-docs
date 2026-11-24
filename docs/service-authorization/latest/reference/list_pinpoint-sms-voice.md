@@ -70,13 +70,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
-- **   UpdateConfigurationSetEventDestination  **
-  - **SDK client:** pinpoint-sms-voice
-  - **IAM action:**  [sms-voice:UpdateConfigurationSetEventDestination](#list_pinpoint-sms-voice-action-UpdateConfigurationSetEventDestination)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
-
 - **   CreateConfigurationSet  **
   - **SDK client:** sms-voice
   - **IAM action:**  [sms-voice:CreateConfigurationSet](#list_pinpoint-sms-voice-action-CreateConfigurationSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -120,13 +113,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   SendVoiceMessage  **
   - **SDK client:** sms-voice
   - **IAM action:**  [sms-voice:SendVoiceMessage](#list_pinpoint-sms-voice-action-SendVoiceMessage)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
-
-- **   UpdateConfigurationSetEventDestination  **
-  - **SDK client:** sms-voice
-  - **IAM action:**  [sms-voice:UpdateConfigurationSetEventDestination](#list_pinpoint-sms-voice-action-UpdateConfigurationSetEventDestination)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

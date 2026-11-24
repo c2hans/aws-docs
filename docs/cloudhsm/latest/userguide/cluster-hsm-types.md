@@ -19,8 +19,8 @@ The following table lists the major differences between each cluster mode:
 | --- | --- | --- |
 | **HSM type compatibility** | Available with hsm1.medium and hsm2m.medium. | Available with hsm2m.medium. |
 | **Backup compatibility** | Can only be used to backup restore clusters in FIPS mode. | Can only be used to backup restore clusters in non-FIPS mode. |
-| **Key selection** | Supports generating and using keys with mechanisms that are FIPS approved[1](#cluster-mode-note-1). | Supports generating and using keys with all FIPS-validated mechanisms, in addition to other non-validated mechanisms. |
-| **Algorithms** | Supports AWS CloudHSM algorithms that are FIPS approved[1](#cluster-mode-note-1). | Supports AWS CloudHSM algorithms that are both FIPS approved and not FIPS approved. |
+| **Key selection** | Supports generating and using keys with mechanisms that are FIPS approved<sup>[1](#cluster-mode-note-1)</sup>. | Supports generating and using keys with all FIPS-validated mechanisms, in addition to other non-validated mechanisms. |
+| **Algorithms** | Supports AWS CloudHSM algorithms that are FIPS approved<sup>[1](#cluster-mode-note-1)</sup>. | Supports AWS CloudHSM algorithms that are both FIPS approved and not FIPS approved. |
 
 [1] See [Deprecation notifications](compliance-dep-notif.md#compliance-dep-notif-1) for details.
 

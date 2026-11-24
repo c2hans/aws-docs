@@ -37,7 +37,7 @@ Amazon Personalize generates scores for items relative to each other on a scale 
 
 For both User-Personalization-v2 and User-Personalization, the total of all scores equals 1. For example, if you're getting movie recommendations for a user and there are three movies appearing the Items dataset and Interactions dataset, their scores might be `0.6`, `0.3`, and `0.1`. Similarly, if you have 10,000 movies in your inventory, the highest-scoring movies might have very small scores (the average score would be`.001`), but, because scoring is relative, the recommendations are still valid.
 
-In mathematical terms, scores for each user-item pair (u,i) are computed according to the following formula, where `exp` is the exponential function, w̅u and wi/j are user and item embeddings respectively, and the Greek letter sigma (Σ) represents summation over all items with scores:
+In mathematical terms, scores for each user-item pair (u,i) are computed according to the following formula, where `exp` is the exponential function, w̅<sub>u</sub> and w<sub>i</sub>/<sub>j</sub> are user and item embeddings respectively, and the Greek letter sigma (Σ) represents summation over all items with scores:
 
 ![Depicts the formula used to calculate scores for each item in recommendations.](https://docs.aws.amazon.com/personalize/latest/dg/images/get_recommendations_score.png)
 

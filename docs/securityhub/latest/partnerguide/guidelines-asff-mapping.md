@@ -187,7 +187,7 @@ Here are some examples of how to map threat intelligence indicators:
 ## Resources
 <a name="asff-resources"></a>
 
-For `Resources`, use our provided resource types and detail fields whenever possible. Security Hub CSPM is constantly adding new resources to the ASFF. To receive a monthly log of the changes to ASFF, contact securityhub-partners@amazon.com.
+For `Resources`, use our provided resource types and detail fields whenever possible. Security Hub CSPM is constantly adding new resources to the ASFF. To receive a monthly log of the changes to ASFF, contact [securityhub-partners@amazon.com](mailto:securityhub-partners@amazon.com).
 
 If you cannot fit the information in the details fields for a modeled resource type, map the remaining details to `Details.Other`.
 

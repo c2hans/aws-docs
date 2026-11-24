@@ -32,13 +32,13 @@ Following are the default quotas on FSx for OpenZFS resources for each file syst
 | Maximum number of client connections per file server | 32,7682 |
 
 **Note**
-1 The maximum storage capacity for Single-AZ 2 (non-HA and HA) file systems is 512 TiB. The maximum storage capacity for Single-AZ 1 (non-HA and HA) and Multi-AZ (HA) file systems depends on the file system's provisioned throughput capacity, deployment type, and AWS Region. For more information, see the following tables.
-2 For more information, see [Data access from cache](performance-ssd.md#data-access-memory-cache).
+<sup>1</sup> The maximum storage capacity for Single-AZ 2 (non-HA and HA) file systems is 512 TiB. The maximum storage capacity for Single-AZ 1 (non-HA and HA) and Multi-AZ (HA) file systems depends on the file system's provisioned throughput capacity, deployment type, and AWS Region. For more information, see the following tables.
+<sup>2</sup> For more information, see [Data access from cache](performance-ssd.md#data-access-memory-cache).
 
 ### Maximum storage capacity of Multi-AZ (HA) file systems
 <a name="max-storage-capacity"></a>
 
-| Provisioned throughput capacity (MBps) | Maximum Storage Capacity (TiB)2 | Maximum Storage Capacity (TiB)3 | Maximum Storage Capacity (TiB)4 |
+| Provisioned throughput capacity (MBps) | Maximum Storage Capacity (TiB)<sup>2</sup> | Maximum Storage Capacity (TiB)<sup>3</sup> | Maximum Storage Capacity (TiB)<sup>4</sup> |
 | --- |--- |--- |--- |
 | 160 | 32 | 24 | 96 |
 | --- |--- |--- |--- |
@@ -60,14 +60,14 @@ Following are the default quotas on FSx for OpenZFS resources for each file syst
 | --- |--- |--- |--- |
 
 **Note**
-2 These storage capacity limits apply to the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Europe (Frankfurt), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore).
-3 These storage capacity limits apply to the following AWS Regions: Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Hong Kong), Canada (Central),Europe (Milan), Europe (Paris), Europe (London), Europe (Stockholm) Israel (Tel Aviv), Middle East (Bahrain), South America (São Paulo), Europe (Zurich), Europe (Spain).
-4 These storage capacity limits apply to the following AWS Regions: US West (N. California), Africa (Cape Town), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Middle East (UAE), AWS GovCloud (US-East), AWS GovCloud (US-West).
+<sup>2</sup> These storage capacity limits apply to the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Europe (Frankfurt), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore).
+<sup>3</sup> These storage capacity limits apply to the following AWS Regions: Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Hong Kong), Canada (Central),Europe (Milan), Europe (Paris), Europe (London), Europe (Stockholm) Israel (Tel Aviv), Middle East (Bahrain), South America (São Paulo), Europe (Zurich), Europe (Spain).
+<sup>4</sup> These storage capacity limits apply to the following AWS Regions: US West (N. California), Africa (Cape Town), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Middle East (UAE), AWS GovCloud (US-East), AWS GovCloud (US-West).
 
 ### Maximum storage capacity of Single-AZ 1 (non-HA and HA) file systems
 <a name="max-storage-capacity-saz1"></a>
 
-| Provisioned throughput capacity (MBps) | Maximum Storage Capacity (TiB) 5 | Maximum Storage Capacity (TiB) 6 |
+| Provisioned throughput capacity (MBps) | Maximum Storage Capacity (TiB) <sup>5</sup> | Maximum Storage Capacity (TiB) <sup>6</sup> |
 | --- |--- |--- |
 | 64 | 512 | 128 |
 | --- |--- |--- |
@@ -87,8 +87,8 @@ Following are the default quotas on FSx for OpenZFS resources for each file syst
 | --- |--- |--- |
 
 **Note**
-5 These storage capacity limits apply to the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Stockholm), Europe (London), Europe (Ireland), Europe (Frankfurt), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Hong Kong), Canada (Central).
-6 These storage capacity limits apply to the following AWS Regions: US West (N. California), Africa (Cape Town), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Osaka), Europe (Milan), Europe (Paris), Israel (Tel Aviv), Middle East (UAE), Middle East (Bahrain), South America (São Paulo), AWS GovCloud (US-East), AWS GovCloud (US-West), Europe (Zurich), Europe (Spain).
+<sup>5</sup> These storage capacity limits apply to the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Stockholm), Europe (London), Europe (Ireland), Europe (Frankfurt), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Hong Kong), Canada (Central).
+<sup>6</sup> These storage capacity limits apply to the following AWS Regions: US West (N. California), Africa (Cape Town), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Osaka), Europe (Milan), Europe (Paris), Israel (Tel Aviv), Middle East (UAE), Middle East (Bahrain), South America (São Paulo), AWS GovCloud (US-East), AWS GovCloud (US-West), Europe (Zurich), Europe (Spain).
 
 ### Maximum number of S3 access points attached to Single-AZ 1 (HA) file systems
 <a name="max-aps-saz1"></a>

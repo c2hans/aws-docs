@@ -1098,6 +1098,8 @@ Temporary credentials provide short-term access to AWS resources and are automat
 **Warning**
 Changing the permissions for a service role might break AWS WAF functionality. Edit service roles only when AWS WAF provides guidance to do so.
 
+The AI Security managed rule group uses a service role that you create and supply. AWS WAF assumes the role to call Amazon Bedrock Guardrails and assess message content. For more information, see [The IAM role for AI Security](waf-ai-security-role.md).
+
 ## Service-linked roles for AWS WAF
 <a name="security_iam_service-with-iam-roles-service-linked"></a>
 

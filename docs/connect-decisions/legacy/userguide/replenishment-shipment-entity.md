@@ -19,11 +19,11 @@ The table below lists the column names supported by the data entity:
 | id | string | Yes | Shipment ID. |
 | creation\_date | timestamp | No | Creation date. |
 | packaging\_hierarchy\_type | string | No | Information on how the shipment is structured, for example, container, pallet, carton, or pallet. |
-| supplier\_tpartner\_id2 | string | Yes1 | Supplier partner ID of the vendor. |
+| supplier\_tpartner\_id<sup>2</sup> | string | Yes<sup>1</sup> | Supplier partner ID of the vendor. |
 | supplier\_description | string | No | Partner description. |
-| company\_id2 | string | No | Company ID. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
 | customer\_description | string | No | Customer description. |
-| ship\_from\_site\_id2 | string | No | Site where this shipment starts from. |
+| ship\_from\_site\_id<sup>2</sup> | string | No | Site where this shipment starts from. |
 | ship\_from\_site\_description | string | No | Site description for outbound shipments. |
 | ship\_from\_site\_address\_1 | string | No | Address of ship-from site. |
 | ship\_from\_site\_address\_2 | string | No | Address of ship-from site. |
@@ -31,7 +31,7 @@ The table below lists the column names supported by the data entity:
 | ship\_from\_site\_address\_state | string | No | Site shipping state. |
 | ship\_from\_site\_address\_country | string | No | Site shipping country. |
 | ship\_from\_site\_address\_zip | string | No | Site shipping postal code. |
-| ship\_to\_site\_id2 | string | No | Site where this shipment ends. |
+| ship\_to\_site\_id<sup>2</sup> | string | No | Site where this shipment ends. |
 | ship\_to\_site\_description | string | No | Site description for inbound shipments. |
 | ship\_to\_site\_address\_1 | string | No | Address of ship-to site. |
 | ship\_to\_site\_address\_2 | string | No | Address of ship-to site. |
@@ -44,7 +44,7 @@ The table below lists the column names supported by the data entity:
 | transportation\_mode | string | No | Mode of transport. |
 | routing\_sequence | string | No | Routing sequence ID from the ASN. |
 | routing\_description | string | No | Routing description. |
-| carrier\_id2 | string | No | ID of the carrier. |
+| carrier\_id<sup>2</sup> | string | No | ID of the carrier. |
 | carrier\_description | string | No | Carrier description. |
 | service\_level | string | No | Service level of shipment. |
 | transportation\_id | string | No | Vessel code or trailer number. |
@@ -73,20 +73,20 @@ The table below lists the column names supported by the data entity:
 | latest\_milestone\_date | timestamp | No | Latest milestone date. |
 | incoterms | string | No | Three letter incoterm code. |
 | line\_id | string | No | Shipment line ID. |
-| product\_id2 | string | Yes | Product ID. |
+| product\_id<sup>2</sup> | string | Yes | Product ID. |
 | product\_description | string | No | Product description. |
 | tp\_product\_id | string | No | Trading partner product ID. |
 | upc | string | No | UPC |
 | units\_shipped | double | No | Units shipped. |
 | uom | string | No | UOM. |
 | hts\_code | string | No | Harmonized Tariff Schedule code. |
-| order\_id2 | string | Yes1 | Order ID. |
+| order\_id<sup>2</sup> | string | Yes<sup>1</sup> | Order ID. |
 | order\_type | string | No | Order type. |
 | order\_customer\_tpartner\_id | string | No | Customer ID of the order. |
 | order\_supplier\_tpartner\_id | string | No | Supplier ID of the order. |
-| order\_line\_id2 | string | Yes1 | Order line ID. |
-| ship\_to\_site2 | string | No | Final ship to location. |
-| package\_id | string | Yes1 | Package ID. |
+| order\_line\_id<sup>2</sup> | string | Yes<sup>1</sup> | Order line ID. |
+| ship\_to\_site<sup>2</sup> | string | No | Final ship to location. |
+| package\_id | string | Yes<sup>1</sup> | Package ID. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source | string | No | Source of data. |
@@ -98,9 +98,9 @@ The table below lists the column names supported by the data entity:
 | sap\_vttk\_\_bev1\_rpmowa | string | No | Vehicle number. Predicate key for SAP mapping. Upsert key for Equi. |
 | units\_received | double | No | Represent the received quantity for a shipment for users who track receipts at a shipment level. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

@@ -75,7 +75,7 @@ To create cases in the AWS Support Console, you need AWS Support permissions. Fo
 
 To use the Support page, your AWS Identity and Access Management (IAM) role needs permissions to create and manage support cases. The support chat also checks whether your account is an AWS Marketplace seller. It uses this check to categorize your case.
 
-If you use an AWS managed policy for AWS Marketplace or AWS Partner Central, you already have the right permissions. For more information, see [AWS managed policies for AWS Marketplace sellers](security-iam-awsmanpol.md).
+If you use an AWS managed policy for AWS Marketplace or AWS Partner Central, you already have the right permissions. The exception is `AWSMarketplaceSellerProductsReadOnly`. With that policy, you can track cases on the Support page, but you can't open one or reply to it. For more information, see [AWS managed policies for AWS Marketplace sellers](security-iam-awsmanpol.md).
 
 If you use a customer managed policy, add the permissions in the following table. Make sure that your users are assigned to a role that has these permissions.
 

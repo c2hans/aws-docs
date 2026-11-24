@@ -29,9 +29,7 @@ While the primary DB instance is being created, it appears as a reader instance,
    1. For **Available versions**, choose a MySQL–8.0 compatible version, such as **Aurora MySQL 3.04.0 (compatible with MySQL 8.0.28)**.
 ![Restore snapshot page.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/tut-restore-cluster2.png)
 
-1. Under **Settings**, for **DB instance identifier** enter the unique name that you want to use for the restored DB instance, for example **my-80**.
-**Note**
-To create the DB cluster identifier, Amazon RDS appends `-cluster` to the DB instance identifier you specify.
+1. Under **Settings**, for **DB cluster identifier**, enter a unique name for the restored DB cluster. For **DB instance identifier**, enter a unique name for the restored DB instance.
 
 1. Under **Connectivity**, use the default settings for the following:
    + **Virtual private cloud (VPC)**

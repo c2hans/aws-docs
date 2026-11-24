@@ -66,7 +66,7 @@ If you are enabling Application Signals for a Node.js application with ESM, skip
 ------
 #### [ Console ]
 
-   The **Console** option uses the advanced configuration of the Amazon CloudWatch Observability EKS add-on to setup Application Signals for your services. For more information about the add-on, see [(Optional) Additional configuration](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
+   The **Console** option uses the advanced configuration of the Amazon CloudWatch Observability EKS add-on to setup Application Signals for your services. For more information about the add-on, see [(Optional) Configuring Enhanced Container Insights (Classic) and Fluent Bit](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
 
    If you don't see a list of workloads and namespaces, make sure you have the right permissions to view them for this cluster. For more information, see [ Required permissions](https://docs.aws.amazon.com/eks/latest/userguide/view-kubernetes-resources.html#view-kubernetes-resources-permissions).
 

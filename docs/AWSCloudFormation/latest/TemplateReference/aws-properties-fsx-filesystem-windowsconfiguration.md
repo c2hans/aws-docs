@@ -149,7 +149,7 @@ To increase storage capacity, a file system must have a minimum throughput capac
 *Required*: Conditional
 *Type*: Integer
 *Minimum*: `8`
-*Maximum*: `100000`
+*Maximum*: `2147483647`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WeeklyMaintenanceStartTime`  <a name="cfn-fsx-filesystem-windowsconfiguration-weeklymaintenancestarttime"></a>

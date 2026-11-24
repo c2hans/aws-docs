@@ -25,7 +25,7 @@ In addition to using these services and tools to develop your app, you can:
 
 This decision guide helps you ask the right questions to build your web or mobile app on AWS. It explores how to articulate your business requirements and guides you through the architecture and hosting decisions you’ll need to make as you use AWS services to build your app.
 
-[![AWS Videos](https://img.youtube.com/vi/ihEZmQsz8zE/0.jpg)](https://www.youtube.com/watch?v=ihEZmQsz8zE)
+[![AWS Videos](https://img.youtube.com/vi/ihEZmQsz8zE/0.jpg)](https://www.youtube.com/watch?v=ihEZmQsz8zE&t=168s)
 
 In this five minute clip from a 2023 re:Invent talk, Mohit Srivastava, senior manager of product management for AWS Amplify, explores some of the challenges to consider in choosing a frontend web and mobile service.
 

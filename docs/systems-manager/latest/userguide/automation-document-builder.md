@@ -56,6 +56,8 @@ To add more runbook parameters, choose **Add a parameter**. To remove a runbook 
 **Note**
 If you specify a value of '`/`', the runbook can run on all types of resources. For a list of valid resource types, see [AWS Resource Types Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) in the *AWS CloudFormation User Guide*.
 
+1. (Optional) For **Cloud providers**, choose the cloud providers that the runbook can run against. If you don't choose a cloud provider, the default is AWS. For more information about cloud providers, see [CloudProviders](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateDocument.html#systemsmanager-CreateDocument-request-CloudProviders) in the *Systems Manager API Reference*.
+
 1. (Optional) Expand the **Document tags** section and enter one or more tag key-value pairs to apply to the runbook. Tags make it easier to identify, organize, and search for resources.
 
 1. In the **Step 1** section, provide the following information.

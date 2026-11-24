@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  In the previous section, we mentioned that hardware, software, and potentially other distributed systems are all components of your workload. We call these components *dependencies*, the things your workload depends on to provide its functionality. There are *hard* dependencies, which are those things that your workload cannot function without, and *soft* dependencies whose unavailability can go unnoticed or tolerated for some period of time. Hard dependencies have a direct impact on your workload's availability.
 
- We might want to try and calculate the theoretical maximum availability of a workload. This is the product of the availability of all of the dependencies, including the software itself, (*α**n* is the availability of a single subsystem) because each one must be operational.
+ We might want to try and calculate the theoretical maximum availability of a workload. This is the product of the availability of all of the dependencies, including the software itself, (*α*<sub>*n*</sub> is the availability of a single subsystem) because each one must be operational.
 
 ![Picture of equation. A = α1 X α2 X ... X αnsubscript>](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation4.png)
 

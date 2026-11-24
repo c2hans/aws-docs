@@ -23,7 +23,7 @@ Once you have a migration plan in place, data is transferred to AWS, and applica
 
 AWS offers a wide range of tools, resources, and support to help with this process, catering to diverse migration strategies, such as lift-and-shift, re-platforming, and refactoring. This guide is designed to help you choose the right tools and services to do your migration.
 
-[![AWS Videos](https://img.youtube.com/vi/9FjxnEoH5wg/0.jpg)](https://www.youtube.com/watch?v=9FjxnEoH5wg)
+[![AWS Videos](https://img.youtube.com/vi/9FjxnEoH5wg/0.jpg)](https://www.youtube.com/watch?v=9FjxnEoH5wg&t=134s)
 
 A five-minute video clip of a re:Invent 2024 presentation on migration and modernization.
 

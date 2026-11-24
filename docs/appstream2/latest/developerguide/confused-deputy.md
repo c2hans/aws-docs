@@ -12,7 +12,7 @@ We recommend using the `aws:SourceArn` and `aws:SourceAccount` global condition 
 + If the `aws:SourceArn` key doesn't contain an account ID, you must use both global condition context keys (`aws:SourceArn` and `aws:SourceAccount`) to limit permissions.
 + If you use both global condition context keys and the `aws:SourceArn` value contains an account ID, the `aws:SourceAccount` key must use the same account ID when used in the same policy statement.
 
-The most effective way to protect against the confused deputy problem is to use the exact Amazon Resource Name (ARN) of the resource you want to allow. If you don't know the full ARN of the resource, use the `aws:SourceArn` global context condition key with wildcards (such as \*) for the unknown portions of the ARN. You can also use a wildcard in the ARN if you want to specify multiple resources. For example, you can format the ARN as `arn:aws:{{servicename}}::{{region-name}}::{{your AWS account ID}}:*`.
+The most effective way to protect against the confused deputy problem is to use the exact Amazon Resource Name (ARN) of the resource you want to allow. If you don't know the full ARN of the resource, use the `aws:SourceArn` global context condition key with wildcards (such as **\***) for the unknown portions of the ARN. You can also use a wildcard in the ARN if you want to specify multiple resources. For example, you can format the ARN as `arn:aws:{{servicename}}::{{region-name}}::{{your AWS account ID}}:*`.
 
 **Topics**
 + [Example: WorkSpaces Applications service role cross-service confused deputy prevention](example-confused-deputy.md)

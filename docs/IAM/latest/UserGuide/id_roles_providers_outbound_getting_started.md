@@ -48,8 +48,7 @@ iam_client = boto3.client('iam')
 
 # Enable outbound identity federation
 response = iam_client.enable_outbound_web_identity_federation()
-print(f"Feature enabled. Issuer URL: {response['IssuerUrl']}")
-print(f"Status: {response['Status']}")
+print(f"Feature enabled. Issuer URL: {response['IssuerIdentifier']}")
 ```
 
 ### Using the AWS Console
@@ -259,7 +258,7 @@ The JWKS (JSON Web Key Set) endpoint contains keys used to verify token signatur
 <a name="fetch-jwks-curl"></a>
 
 ```bash
-curl https://{issuer_url}/.well-known/jwks.json
+curl {issuer_url}/.well-known/jwks.json
 ```
 
 Response:
@@ -287,22 +286,33 @@ Response:
 }
 ```
 
-### Using AWS SDK for Python
-<a name="fetch-using-sdk"></a>
+### Fetch metadata and keys using Python
+<a name="fetch-using-python"></a>
 
 ```python
 import requests
 
-# Fetch Openid Configuration
-open_id_config_response = requests.get("https://{issuer_url}/.well-known/openid-configuration")
-open_id_config = open_id_config_response.json()
+issuer = "{issuer_url}"  # Your account's issuer URL.
 
-# Fetch JWKS
-jwks_response = requests.get("https://{issuer_url}/.well-known/jwks.json")
-jwks = jwks_response.json()
+# Fetch the OpenID configuration.
+open_id_config = requests.get(f"{issuer}/.well-known/openid-configuration", timeout=5).json()
+
+# Fetch the JWKS.
+jwks = requests.get(open_id_config["jwks_uri"], timeout=5).json()
 ```
 
-We recommend caching these keys to avoid fetching them for every token verification.
+### Cache verification keys and metadata
+<a name="cache-verification-keys"></a>
+
+Cache the OpenID configuration and the JWKS so that you do not fetch them for every token verification. We recommend that you use a JWT library that fetches and caches keys for you. Either way, follow these guidelines.
++ Check the token's issuer (`iss`) against your list of trusted issuers before you fetch anything.
++ Look up cached keys by both issuer and key ID (`kid`).
++ If a trusted issuer's token has a `kid` that your cached JWKS lacks, fetch that issuer's JWKS again before you reject the token.
++ Limit fetches for each issuer, for example to one per minute. Without a limit, tokens with unknown key IDs, such as tokens sent by an unauthorized user, might cause your application to call the JWKS endpoint for each request. This can affect your application's performance and availability.
++ If a fetch fails, retry with exponential backoff and jitter, up to a maximum wait. This rule applies to throttling, server, and network errors. Error responses do not include a `Cache-Control` header, so do not cache them. For more information, see [REL05-BP03 Control and limit retry calls](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_mitigate_interaction_failure_limit_retries.html) in the AWS Well-Architected Framework.
++ Cache each response for as long as its HTTP caching headers allow, as defined in [RFC 9111](https://datatracker.ietf.org/doc/html/rfc9111). The `max-age` value is currently one hour (3600 seconds) for the JWKS and one day (86400 seconds) for the OpenID configuration.
+
+During rotation, AWS publishes new keys in the JWKS before it signs tokens with them. For more information, see [Verification key rotation](id_roles_providers_outbound.md#verification-key-rotation).
 
 ### Essential claim validations
 <a name="essential-claim-validations"></a>

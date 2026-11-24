@@ -314,6 +314,7 @@ Codec, 'MPEG2', 'AVC', 'HEVC', or 'AUDIO'
 + `HEVC`
 + `AUDIO`
 + `LINK`
++ `JPEGXS`
 
 ### ReservationMaximumBitrate
 <a name="offerings-offeringid-purchase-model-reservationmaximumbitrate"></a>
@@ -322,6 +323,7 @@ Maximum bitrate in megabits per second
 + `MAX_10_MBPS`
 + `MAX_20_MBPS`
 + `MAX_50_MBPS`
++ `MAX_500_MBPS`
 
 ### ReservationMaximumFramerate
 <a name="offerings-offeringid-purchase-model-reservationmaximumframerate"></a>

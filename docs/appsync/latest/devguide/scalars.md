@@ -27,7 +27,7 @@ A unique identifier for an object. This scalar is serialized like a `String` but
 A UTF-8 character sequence.
 
 `Int`
-An integer value between -(231) and 231-1.
+An integer value between -(2<sup>31</sup>) and 2<sup>31</sup>-1.
 
 `Float`
 An IEEE 754 floating point value.

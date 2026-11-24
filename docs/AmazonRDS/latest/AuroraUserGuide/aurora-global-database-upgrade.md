@@ -11,7 +11,9 @@ We recommend that you upgrade the primary and secondary DB clusters to the same 
 ## Major version upgrades
 <a name="aurora-global-database-upgrade.major"></a>
 
-When you perform a major version upgrade of an Amazon Aurora global database, you upgrade the global database cluster instead the individual clusters that it contains.
+When you perform a major version upgrade of an Amazon Aurora global database, you upgrade the global database cluster instead of the individual clusters that it contains.
+
+To upgrade the global database, run the `modify-global-cluster` AWS CLI command or the `ModifyGlobalCluster` API operation in the AWS Region of the primary DB cluster. For example, with the AWS CLI, set `--region` to the primary DB cluster's AWS Region. Suppose that the IAM policy that allows `rds:ModifyGlobalCluster` is scoped to the global cluster ARN. In this case, a call from any other AWS Region fails with an authorization error, even though the global cluster ARN doesn't include an AWS Region. If the policy allows the action on all resources (`"Resource": "*"`), the call succeeds from any AWS Region.
 
 To learn how to upgrade an Aurora PostgreSQL global database to a higher major version, see [Major upgrades for global databases](USER_UpgradeDBInstance.PostgreSQL.MajorVersion.md#USER_UpgradeDBInstance.PostgreSQL.GlobalDB).
 
@@ -45,10 +47,13 @@ This managed capability is currently supported only for Aurora PostgreSQL-compat
 
 When you initiate a global database minor version upgrade using the `modify-global-cluster` command, you specify the target engine version, and the service coordinates the upgrade across all clusters. This upgrade is applied immediately.
 
+To start the upgrade, run the command in the AWS Region of the primary DB cluster, as described in [Major version upgrades](#aurora-global-database-upgrade.major).
+
 For Linux, macOS, or Unix:
 
 ```
 aws rds modify-global-cluster \
+    --region {{primary_cluster_region}} \
     --global-cluster-identifier {{global_cluster_identifier}} \
     --engine-version {{target_engine_version}}
 ```
@@ -57,6 +62,7 @@ For Windows:
 
 ```
 aws rds modify-global-cluster ^
+    --region {{primary_cluster_region}} ^
     --global-cluster-identifier {{global_cluster_identifier}} ^
     --engine-version {{target_engine_version}}
 ```

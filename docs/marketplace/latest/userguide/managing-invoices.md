@@ -4,20 +4,20 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/managing-in
 
 # Managing your invoices
 
-You can view and download tax invoices for your AWS Marketplace seller account from the Tax details dashboard in AWS Partner Central. The dashboard provides access to both listing fee invoices and customer invoices.
+You can view and download tax invoices for your AWS Marketplace seller account from the **Tax and invoices** page in AWS Partner Central. The page provides access to both listing fee invoices and customer invoices.
 
 ## Accessing your invoices
 <a name="access-invoices"></a>
 
 **To access your invoices**
 
-1. Log in to the AWS Marketplace Management Portal or AWS Partner Central.
+1. Sign in to AWS Partner Central at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 
-   1. Go to the AWS Management Console and search for AWS Partner Central.
+1. In the left navigation pane, under **Settings**, choose **Tax and invoices**.
 
-   1. Choose **Launch AWS Partner Central**.
+1. Choose the **Listing fee invoices** tab to view invoices that AWS Marketplace issues for your listings, or the **Customer invoices** tab to view invoices for your customers' purchases.
 
-1. Expand the left side navigation and choose **Tax**. Then, in **Tax details**, choose **View invoices**.
+1. Select an invoice, and then choose **Download**.
 
 ## Viewing tax invoices
 <a name="view-tax-invoices"></a>
@@ -36,9 +36,6 @@ Within the **Listing fee invoices** table, you can do the following:
 <a name="customer-invoices"></a>
 
 Customer invoices represent transactions where your customers have purchased your products through AWS Marketplace. These invoices contain details about each customer transaction, including customer information and the AWS entity that processed the transaction. Each invoice includes the invoice ID, creation date, customer name, customer AWS account ID, and the invoicing entity.
-
-**Note**
-Customer invoices are available only for India-based sellers. India-based sellers can view and download tax invoices generated on their behalf to the buyer through this portal, with filtering by invoice ID, buyer name, date range, buyer account ID, or invoicing entity.
 
 Within the **Customer invoices** table, you can do the following:
 + Search for specific invoices. The table displays invoices that match any characters of their invoice ID, creation date, or invoicing entity.

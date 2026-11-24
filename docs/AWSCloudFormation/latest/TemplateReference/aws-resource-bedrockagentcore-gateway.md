@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AuthorizerConfiguration](#cfn-bedrockagentcore-gateway-authorizerconfiguration)" : {{AuthorizerConfiguration}},
       "[AuthorizerType](#cfn-bedrockagentcore-gateway-authorizertype)" : {{String}},
       "[Description](#cfn-bedrockagentcore-gateway-description)" : {{String}},
+      "[DomainOverride](#cfn-bedrockagentcore-gateway-domainoverride)" : {{DomainOverride}},
       "[ExceptionLevel](#cfn-bedrockagentcore-gateway-exceptionlevel)" : {{String}},
       "[InterceptorConfigurations](#cfn-bedrockagentcore-gateway-interceptorconfigurations)" : {{[ GatewayInterceptorConfiguration, ... ]}},
       "[KmsKeyArn](#cfn-bedrockagentcore-gateway-kmskeyarn)" : {{String}},
@@ -51,6 +52,8 @@ Properties:
     AuthorizerConfiguration}}
   [AuthorizerType](#cfn-bedrockagentcore-gateway-authorizertype): {{String}}
   [Description](#cfn-bedrockagentcore-gateway-description): {{String}}
+  [DomainOverride](#cfn-bedrockagentcore-gateway-domainoverride): {{
+    DomainOverride}}
   [ExceptionLevel](#cfn-bedrockagentcore-gateway-exceptionlevel): {{String}}
   [InterceptorConfigurations](#cfn-bedrockagentcore-gateway-interceptorconfigurations): {{
     - GatewayInterceptorConfiguration}}
@@ -91,6 +94,12 @@ The description of the gateway.
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DomainOverride`  <a name="cfn-bedrockagentcore-gateway-domainoverride"></a>
+The public domain names for a gateway that clients reach through your own proxy or custom domain. When you configure a domain override, the gateway advertises these domains instead of the inbound Host header in the URLs that it returns for OAuth discovery, such as the protected resource metadata and the `WWW-Authenticate` challenge.
+*Required*: No
+*Type*: [DomainOverride](aws-properties-bedrockagentcore-gateway-domainoverride.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExceptionLevel`  <a name="cfn-bedrockagentcore-gateway-exceptionlevel"></a>

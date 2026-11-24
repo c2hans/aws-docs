@@ -25,7 +25,6 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DatasetName](#cfn-bedrockagentcore-dataset-datasetname)" : {{String}},
       "[Description](#cfn-bedrockagentcore-dataset-description)" : {{String}},
       "[KmsKeyArn](#cfn-bedrockagentcore-dataset-kmskeyarn)" : {{String}},
-      "[SchemaType](#cfn-bedrockagentcore-dataset-schematype)" : {{String}},
       "[Source](#cfn-bedrockagentcore-dataset-source)" : {{DataSourceType}},
       "[Tags](#cfn-bedrockagentcore-dataset-tags)" : {{[ Tag, ... ]}}
     }
@@ -41,7 +40,6 @@ Properties:
   [DatasetName](#cfn-bedrockagentcore-dataset-datasetname): {{String}}
   [Description](#cfn-bedrockagentcore-dataset-description): {{String}}
   [KmsKeyArn](#cfn-bedrockagentcore-dataset-kmskeyarn): {{String}}
-  [SchemaType](#cfn-bedrockagentcore-dataset-schematype): {{String}}
   [Source](#cfn-bedrockagentcore-dataset-source): {{
     DataSourceType}}
   [Tags](#cfn-bedrockagentcore-dataset-tags): {{
@@ -72,13 +70,6 @@ Properties:
 *Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
 *Minimum*: `1`
 *Maximum*: `2048`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
-
-`SchemaType`  <a name="cfn-bedrockagentcore-dataset-schematype"></a>
- Versioned schema type governing the structure of examples. Immutable after creation.
-*Required*: Yes
-*Type*: String
-*Allowed values*: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | GENERIC_EVALUATION_PREDEFINED_V1 | THIRD_PARTY_EVALUATION_V1`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Source`  <a name="cfn-bedrockagentcore-dataset-source"></a>

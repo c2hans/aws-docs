@@ -358,9 +358,9 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
   - **Resource Type Value:** AWS::ImageBuilder::InfrastructureConfiguration / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::ImageBuilder::LifecyclePolicy / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*AWS Config records the configuration details of Dedicated hosts and the instances that you launch on them. As a result, you can use AWS Config as a data source when you report compliance with your server-bound software licenses. For example, you can view the configuration history of an instance and determine which Amazon Machine Image (AMI) it is based on. Then, you can look up the configuration history of the host, which includes details such as the numbers of sockets and cores, to check that the host complies with the license requirements of the AMI. For more information, see [Tracking Configuration Changes with AWS Config](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-aws-config.html) in the *Amazon EC2 User Guide*.
+<sup>\*</sup>AWS Config records the configuration details of Dedicated hosts and the instances that you launch on them. As a result, you can use AWS Config as a data source when you report compliance with your server-bound software licenses. For example, you can view the configuration history of an instance and determine which Amazon Machine Image (AMI) it is based on. Then, you can look up the configuration history of the host, which includes details such as the numbers of sockets and cores, to check that the host complies with the license requirements of the AMI. For more information, see [Tracking Configuration Changes with AWS Config](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-aws-config.html) in the *Amazon EC2 User Guide*.
 
-\*The EC2 SecurityGroup Properties definition contains IP CIDR blocks, which are converted to IP ranges internally, and may return unexpected results when trying to find a specific IP range. For workarounds to search for specific IP ranges, see [Limitations for Advanced Queries](https://docs.aws.amazon.com/config/latest/developerguide/querying-AWS-resources.html#query-limitations).
+<sup>\*</sup>The EC2 SecurityGroup Properties definition contains IP CIDR blocks, which are converted to IP ranges internally, and may return unexpected results when trying to find a specific IP range. For workarounds to search for specific IP ranges, see [Limitations for Advanced Queries](https://docs.aws.amazon.com/config/latest/developerguide/querying-AWS-resources.html#query-limitations).
 
 ## Amazon Elastic Container Registry
 <a name="amazonelasticcontainerregistry"></a>
@@ -388,7 +388,7 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
   - **Resource Type Value:** AWS::ECS::TaskSet / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::ECS::CapacityProvider / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*This service currently only support the new Amazon Resource Name (ARN) format. For more information, see [Amazon Resource Names (ARNs) and IDs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html#ecs-resource-ids) in the ECS developer guide.
+<sup>\*</sup>This service currently only support the new Amazon Resource Name (ARN) format. For more information, see [Amazon Resource Names (ARNs) and IDs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html#ecs-resource-ids) in the ECS developer guide.
 
 Old (not supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{service-name}}`
 
@@ -891,7 +891,7 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
   - **Resource Type Value:** AWS::S3Express::DirectoryBucket / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::S3Express::BucketPolicy / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*If you configured AWS Config to record your S3 buckets, and are not receiving configuration change notifications, check that your S3 bucket policies have the required permissions. For more information, see [Managing Permissions for S3 Bucket Recording](iamrole-permissions.md#troubleshooting-recording-s3-bucket-policy).
+<sup>\*</sup>If you configured AWS Config to record your S3 buckets, and are not receiving configuration change notifications, check that your S3 bucket policies have the required permissions. For more information, see [Managing Permissions for S3 Bucket Recording](iamrole-permissions.md#troubleshooting-recording-s3-bucket-policy).
 
 **Amazon S3 Bucket Attributes**
 
@@ -1099,7 +1099,7 @@ For more information, see [Managing backups using backup plans](https://docs.aws
   - **Resource Type Value:** AWS::CloudFormation::Stack\* / **Relationship:** contains / **Related Resource:** Supported AWS resource types / **Notes:**
   - **Resource Type Value:** AWS::CloudFormation::StackSet / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*AWS Config records configuration changes to CloudFormation stacks and supported resource types in the stacks. AWS Config does not record configuration changes for resource types in the stack that are not yet supported. Unsupported resource types appear in the supplementary configuration section of the configuration item for the stack.
+<sup>\*</sup>AWS Config records configuration changes to CloudFormation stacks and supported resource types in the stacks. AWS Config does not record configuration changes for resource types in the stack that are not yet supported. Unsupported resource types appear in the supplementary configuration section of the configuration item for the stack.
 
 ## AWS CloudTrail
 <a name="awscloudtrail"></a>
@@ -1144,7 +1144,7 @@ After careful consideration, we have made the decision to close new customer acc
   - **Related Resource:** IAM role / **Notes:**
   - **Resource Type Value:** AWS::CodeBuild::ReportGroup / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*To learn more about how AWS Config integrates with AWS CodeBuild, see [Use AWS Config with AWS CodeBuild Sample](https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-integrate-config.html).
+<sup>\*</sup>To learn more about how AWS Config integrates with AWS CodeBuild, see [Use AWS Config with AWS CodeBuild Sample](https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-integrate-config.html).
 
 ## AWS CodeDeploy
 <a name="awscodedeploy"></a>
@@ -1166,7 +1166,7 @@ After careful consideration, we have made the decision to close new customer acc
   - **Related Resource:** ElasticBeanstalk application / **Notes:**
   - **Resource Type Value:** AWS::CodePipeline::Webhook / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*AWS Config records configuration changes to CodePipeline pipelines and supported resource types in the pipelines. AWS Config does not record configuration changes for resource types in the pipelines that are not yet supported. Unsupported resource types such as `CodeCommit repository, CodeDeploy application, ECS cluster,` and `ECS service` appear in the supplementary configuration section of the configuration item for the stack.
+<sup>\*</sup>AWS Config records configuration changes to CodePipeline pipelines and supported resource types in the pipelines. AWS Config does not record configuration changes for resource types in the pipelines that are not yet supported. Unsupported resource types such as `CodeCommit repository, CodeDeploy application, ECS cluster,` and `ECS service` appear in the supplementary configuration section of the configuration item for the stack.
 
 ## AWS Config
 <a name="awsconfig"></a>
@@ -1180,9 +1180,9 @@ After careful consideration, we have made the decision to close new customer acc
   - **Resource Type Value:** AWS::Config::StoredQuery / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Config::OrganizationConformancePack / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-\*The relationship between `AWS::Config::ResourceCompliance` and a related resource depends on how `AWS::Config::ResourceCompliance` reports compliance for that specific resource type.
+<sup>\*</sup>The relationship between `AWS::Config::ResourceCompliance` and a related resource depends on how `AWS::Config::ResourceCompliance` reports compliance for that specific resource type.
 
-\*`AWS::Config::ConfigurationRecorder` is a system resource type of AWS Config and recording of this resource type is enabled by default.
+<sup>\*</sup>`AWS::Config::ConfigurationRecorder` is a system resource type of AWS Config and recording of this resource type is enabled by default.
 
 **Note**
 Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::ConfigurationRecorder` resource types come with no additional charge.
@@ -1645,7 +1645,7 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
   - **Related Resource:** NA
   - **Notes:**
 
-\*To learn more about managed instance inventory, see [Recording Software Configuration for Managed Instances with AWS Config](recording-managed-instance-inventory.md).
+<sup>\*</sup>To learn more about managed instance inventory, see [Recording Software Configuration for Managed Instances with AWS Config](recording-managed-instance-inventory.md).
 
 ## AWS Transfer Family
 <a name="awstransferfamily"></a>

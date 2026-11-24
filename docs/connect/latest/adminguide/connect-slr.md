@@ -125,6 +125,10 @@ If your Connect Customer instance was created before October 2018, you don't hav
 
 For a list of the IAM permissions required to create the service-linked role, see [Overview page](security-iam-amazon-connect-permissions.md#overview-page) in the [Required permissions for using custom IAM policies to manage access to the Connect Customer console](security-iam-amazon-connect-permissions.md) topic.
 
+**Keep the existing service role**
+Do not delete the service role or remove its permissions after you create the service-linked role. If you do, you can lose access to encrypted call recordings, chat transcripts, and other features on your instance.
+When you created your instance, Connect Customer created the service role for you. For storage locations encrypted with an AWS KMS key that you manage, Connect Customer also created AWS KMS grants that name that role. Creating the service-linked role does not re-create those grants.
+
 ## For Customer Profile domains created before Jan 31, 2025 and configured with a customer KMS key to encrypt data, you need to grant additional KMS permissions to your Amazon Connect Instance.
 <a name="kms-permissions-slr"></a>
 

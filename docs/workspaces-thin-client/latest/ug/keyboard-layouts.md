@@ -8,7 +8,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 WorkSpaces Thin Client supports the following keyboard layouts in English (United Kingdom), English (United States - International), French (France), German (Germany), Spanish (Spain), Spanish (Latin America), and Italian (Italy).
 
-WorkSpaces Thin Client supports AltGr and dead key keyboard layouts in English (United Kingdom), English (United States - International), French (France), German (Germany), Spanish (Spain), Spanish (Latin America), and Italian (Italy).
+WorkSpaces Thin Client supports **AltGr** and **dead key** keyboard layouts in English (United Kingdom), English (United States - International), French (France), German (Germany), Spanish (Spain), Spanish (Latin America), and Italian (Italy).
 
 **English (United States) keyboard layout**
 

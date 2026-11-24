@@ -70,7 +70,7 @@ what(): No such file or directory
 
 This is caused by a permission issue in the `/opt` directory. To resolve the issue, change the permissions of the `/opt/WickrIO` directory (or the name of the directory you created for your installation) to make it writeable. The following command will fix this problem:
 
-```none
+```
 chmod 777 /opt/WickrIO
 ```
 

@@ -66,12 +66,15 @@ Use the training session APIs when you need:
 
 | Model | Region |
 | --- | --- |
-| openai/gpt-oss-20b | us-east-1, us-west-2, ap-south-1 |
 | google/gemma-4-E2B-it | us-west-2 |
+| google/gemma-4-E4B-it | us-east-1, us-west-2 |
 | google/gemma-4-31B-it | us-east-1, us-west-2, ap-south-1 |
-| Qwen/Qwen3.6-27B | us-west-2, ap-south-1 |
-| Qwen/Qwen3.8-27B | us-west-2 |
 | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | us-east-1, us-west-2 |
+| openai/gpt-oss-20b | us-east-1, us-west-2, ap-south-1 |
+| Qwen/Qwen3.5-9B | us-east-1, us-west-2 |
+| Qwen/Qwen3.6-27B | us-west-2, ap-south-1 |
+| Qwen/Qwen3.6-35B-A3B | us-east-1, us-west-2 |
+| Qwen/Qwen3.8-27B | us-west-2 |
 
 ### Context length limits
 <a name="training-sessions-context-length"></a>
@@ -82,12 +85,15 @@ The following table lists the maximum context length for each supported model an
 
 | Model | Maximum context length (tokens) | Adjustable |
 | --- | --- | --- |
-| openai/gpt-oss-20b | 65,536 | No |
-| google/gemma-4-E2B-it | 32,768 | No |
-| google/gemma-4-31B-it | 32,768 | No |
-| Qwen/Qwen3.6-27B | 65,536 | No |
-| Qwen/Qwen3.8-27B | 65,536 | No |
+| google/gemma-4-E2B-it | 131,072 | No |
+| google/gemma-4-E4B-it | 131,072 | No |
+| google/gemma-4-31B-it | 131,072 | No |
 | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 131,072 | No |
+| openai/gpt-oss-20b | 65,536 | No |
+| Qwen/Qwen3.5-9B | 131,072 | No |
+| Qwen/Qwen3.6-27B | 65,536 | No |
+| Qwen/Qwen3.6-35B-A3B | 131,072 | No |
+| Qwen/Qwen3.8-27B | 65,536 | No |
 
 ### Pricing
 <a name="training-sessions-pricing"></a>

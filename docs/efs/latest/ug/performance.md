@@ -29,17 +29,17 @@ The following table outlines performance specifications for file systems using G
 
 **Performance specifications for file systems using General Purpose performance mode**
 
-| Storage and throughput configuration | Latency1 | Maximum IOPS | Maximum throughput |
+| Storage and throughput configuration | Latency<sup>1</sup> | Maximum IOPS | Maximum throughput |
 | --- |--- |--- |--- |
-|  ** File system type **  |  ** Throughput mode **  |  **Read operations**  |  **Write operations**  |  **Read operations**  |  **Write operations**  |  **Per-file-system read**2  |  **Per-file-system write**2  |  **Per-client read/write**  |
+|  ** File system type **  |  ** Throughput mode **  |  **Read operations**  |  **Write operations**  |  **Read operations**  |  **Write operations**  |  **Per-file-system read**<sup>2</sup>  |  **Per-file-system write**<sup>2</sup>  |  **Per-client read/write**  |
 | --- |--- |--- |--- |--- |--- |--- |--- |--- |
-|  **Regional**  | Elastic |  \~1 millisecond (ms)  | \~2.7 milliseconds (ms) | 900,000–2,500,0003 | 500,000**3** |  20–60 gibibytes per second (GiBps)  |  1–5 GiBps  |  1,500 mebibytes per second (MiBps)4  |
+|  **Regional**  | Elastic |  \~1 millisecond (ms)  | \~2.7 milliseconds (ms) | 900,000–2,500,000<sup>3</sup> | 500,000**<sup>3</sup>** |  20–60 gibibytes per second (GiBps)  |  1–5 GiBps  |  1,500 mebibytes per second (MiBps)<sup>4</sup>  |
 | --- |--- |--- |--- |--- |--- |--- |--- |--- |
 |  **Regional**  | Provisioned |  \~1 ms  | \~2.7 ms | 55,000 | 25,000 |  3–10 GiBps  |  1–3.33 GiBps  | 500 MiBps |
 | --- |--- |--- |--- |--- |--- |--- |--- |--- |
 |  **Regional**  | Bursting |  \~1 ms  | \~2.7 ms | 35,000 | 7,000 |  3–5 GiBps  |  1–3 GiBps  | 500 MiBps |
 | --- |--- |--- |--- |--- |--- |--- |--- |--- |
-|  **One Zone**  | Elastic, Provisioned, Bursting |  \~1 ms  |  \~1.6 ms  | 35,000 | 7,000 |  3 GiBps5  |  1 GiBps5  | 500 MiBps |
+|  **One Zone**  | Elastic, Provisioned, Bursting |  \~1 ms  |  \~1.6 ms  | 35,000 | 7,000 |  3 GiBps<sup>5</sup>  |  1 GiBps<sup>5</sup>  | 500 MiBps |
 | --- |--- |--- |--- |--- |--- |--- |--- |--- |
 
 1. Latency values shown represent best-case performance under optimal conditions. Actual results may vary based on network, workload, and system factors.

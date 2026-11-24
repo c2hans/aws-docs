@@ -25,6 +25,7 @@ Consider the following when using Auto Scaling group capacity providers in the c
 + You must associate capacity provider with a cluster before you associate it with the capacity provider strategy.
 + You can specify a maximum of 20 capacity providers for a capacity provider strategy.
 + You can't update a service using an Auto Scaling group capacity provider to use a Fargate capacity provider. The opposite is also the case.
++ Capacity provider strategies support only services that use an Application Load Balancer or a Network Load Balancer. If your service uses a Classic Load Balancer, specify the `EC2` launch type instead of a capacity provider strategy when you create the service.
 + In a capacity provider strategy, if no `weight` value is specified for a capacity provider in the console, then the default value of `1` is used. If using the API or AWS CLI, the default value of `0` is used.
 + When multiple capacity providers are specified within a capacity provider strategy, at least one of the capacity providers must have a weight value that's greater than zero. Any capacity providers with a weight of zero aren't used to place tasks. If you specify multiple capacity providers in a strategy with all the same weight of zero, then any `RunTask` or `CreateService` actions using the capacity provider strategy fail.
 + In a capacity provider strategy, only one capacity provider can have a defined *base* value. If no base value is specified, the default value of zero is used.

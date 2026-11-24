@@ -60,7 +60,7 @@ The SDK can use the following Java system properties and environment variables.
 | Environment variable | Description | HTTP client support |
 | --- | --- | --- |
 | HTTP\_PROXY1 | A valid URL with a scheme of HTTP | All |
-| HTTPS\_PROXY1 | A valid URL with a scheme of HTTPS | Netty, CRT |
+| HTTPS\_PROXY<sup>1</sup> | A valid URL with a scheme of HTTPS | Netty, CRT |
 | NO\_PROXY2 | List of hosts that should be reached directly, bypassing the proxy. The list is valid for both HTTP and HTTPS. | All |
 
 ### View key and footnotes
@@ -72,7 +72,7 @@ The SDK can use the following Java system properties and environment variables.
 
 **CRT** - The AWS CRT-based HTTP clients, (`AwsCrtHttpClient` and `AwsCrtAsyncHttpClient`).
 
-1The environment variable queried, whether `HTTP_PROXY` or `HTTPS_PROXY`, depends on the scheme setting in the client's `ProxyConfiguration`. The default scheme is HTTP. The following snippet shows how to change the scheme to HTTPS used for environment variable resolution.
+<sup>1</sup>The environment variable queried, whether `HTTP_PROXY` or `HTTPS_PROXY`, depends on the scheme setting in the client's `ProxyConfiguration`. The default scheme is HTTP. The following snippet shows how to change the scheme to HTTPS used for environment variable resolution.
 
 ```
 SdkHttpClient httpClient = ApacheHttpClient.builder()
@@ -82,7 +82,7 @@ SdkHttpClient httpClient = ApacheHttpClient.builder()
     .build();
 ```
 
-2The `NO_PROXY` environment variable supports a mix of "\|" and "," separators between host names. For supported wildcard formats, see [nonProxyHosts wildcard behavior](#http-config-proxy-nonproxyhosts-behavior).
+<sup>2</sup>The `NO_PROXY` environment variable supports a mix of "\|" and "," separators between host names. For supported wildcard formats, see [nonProxyHosts wildcard behavior](#http-config-proxy-nonproxyhosts-behavior).
 
 ## Use a combination of settings
 <a name="http-config-proxy-support-combo"></a>

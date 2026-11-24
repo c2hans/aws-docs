@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-bgp-secu
 
 # Tutorial: Set up delegated RPKI for BYOIP prefixes
 
-This tutorial walks through all BGP route protection capabilities end to end. You can stop after any step and use what you've set up so far. Steps 1 and 2 require no RIR interaction. Steps 3 and later require a one-time setup with your RIR. For background on BGP route protection concepts, tier requirements, and supported RIRs, see [Monitor BGP route protection](monitor-bgp-route-security.md).
+This tutorial walks through all Border Gateway Protocol (BGP) route protection capabilities end to end for your Bring Your Own IP (BYOIP) prefixes. You start by monitoring Resource Public Key Infrastructure (RPKI) validity, and then delegate Route Origin Authorization (ROA) management to AWS. You can stop after any step and use what you've set up so far. Steps 1 and 2 require no interaction with your Regional Internet Registry (RIR). Steps 3 and later require a one-time setup with your RIR. For background on BGP route protection concepts, tier requirements, and supported RIRs, see [Monitor BGP route protection](monitor-bgp-route-security.md).
 
 ## Prerequisites
 <a name="tutorials-byoip-bgp-security-prereqs"></a>
@@ -28,7 +28,7 @@ Once you have BYOIP prefixes provisioned to IPAM, view all advertised routes in 
 
 1. Under **Monitoring**, choose **Route monitoring**.
 
-The dashboard displays all BYOIP routes with prefix, locale, advertisement status, ASN, RPKI validity, ROA strength, and route overlaps.
+The dashboard displays all BYOIP routes with prefix, locale, advertisement status, Autonomous System Number (ASN), RPKI validity, ROA strength, and route overlaps.
 
 ------
 #### [ Command line ]
@@ -424,6 +424,45 @@ aws cloudwatch put-metric-alarm --region us-east-1 \
     --alarm-actions arn:aws:sns:us-east-1:123456789012:roa-expiry-notifications
 ```
 
+## Switch from delegated RPKI to hosted RPKI
+<a name="tutorials-byoip-bgp-security-switch-hosted"></a>
+
+If you want your registry, rather than AWS, to publish and manage your ROAs, you can switch to your registry's hosted RPKI service. Remove the delegation in IPAM before you change anything at your registry. You can't delete an Internet Registry Association while it has routing policy registrations, so you delete the registrations first.
+
+**Important**
+Complete these steps in order. If you remove the delegation or enable hosted RPKI at your registry first, AWS can no longer manage or remove the ROAs it published. IPAM then changes the Internet Registry Association and its routing policy registrations to `disable-complete`. You can't re-enable a disabled association, but you can delete it.
+
+Your registry doesn't let you create hosted ROAs while the delegation to AWS is in place. Your prefixes have RPKI status *Unknown* from the time you delete the Internet Registry Association until your registry publishes the new ROAs. BYOIP CIDRs that you provisioned through the association stay provisioned and advertised during this time. To keep this window short, prepare your ROA list in advance and complete steps 3 through 5 without a break.
+
+**To switch from delegated RPKI to hosted RPKI**
+
+1. Record the ROAs you need. Save the output of the following commands so that you can recreate the ROAs in the hosted service.
+
+   ```
+   aws ec2 get-ipam-route-origin-authorizations --region us-east-1 \
+       --ipam-internet-registry-association-id ipam-internet-registry-assoc-036486dfa6af58ee0
+
+   aws ec2 get-ipam-routing-policy-registrations --region us-east-1 \
+       --ipam-internet-registry-association-id ipam-internet-registry-assoc-036486dfa6af58ee0
+   ```
+
+1. Delete all routing policy registrations for the association. To delete them in one atomic change, list every registration in the `Delete` array of `batch-modify-ipam-routing-policy-registrations`. Wait until `get-ipam-routing-policy-registrations` shows no registrations in an in-progress state.
+
+1. Delete the Internet Registry Association. This removes the ROAs that AWS published for the association.
+
+   ```
+   aws ec2 delete-ipam-internet-registry-association --region us-east-1 \
+       --ipam-internet-registry-association-id ipam-internet-registry-assoc-036486dfa6af58ee0
+   ```
+
+   Run `describe-ipam-internet-registry-associations` until the state reaches `delete-complete`.
+
+1. After the association reaches `delete-complete`, remove the RPKI delegation to AWS in your registry portal.
+
+1. In your registry portal, enable hosted RPKI and create the ROAs that you recorded in step 1.
+
+1. Run `get-ipam-route-protection-findings` to confirm that your routes return to RPKI status `valid`. Your registry can take some time to publish the new ROAs. Until it does, findings show RPKI status `unknown`.
+
 ## Cleanup
 <a name="tutorials-byoip-bgp-security-cleanup"></a>
 
@@ -431,12 +470,14 @@ To remove delegated RPKI resources:
 
 1. Delete all routing policy registrations.
 
-1. Disassociate the Internet Registry Association.
+1. Delete the Internet Registry Association.
 
 1. (Optional) Remove the authorization at your RIR portal.
 
 **Important**
-Deleting an Internet Registry Association removes all AWS-managed ROAs for that association. Make sure your routes have alternative ROA coverage before you disassociate.
+Deleting an Internet Registry Association removes all AWS-managed ROAs for that association. Your routes have RPKI status *Unknown* until you create ROAs another way.
+
+To move to your registry's hosted RPKI service instead, see [Switch from delegated RPKI to hosted RPKI](#tutorials-byoip-bgp-security-switch-hosted).
 
 ## Related resources
 <a name="tutorials-byoip-bgp-security-related"></a>

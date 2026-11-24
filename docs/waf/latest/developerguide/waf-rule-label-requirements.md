@@ -113,5 +113,9 @@ awswaf:managed:aws:atp:aggregate:attribute:compromised_credentials
 ```
 
 ```
+awswaf:managed:aws:ai-security:traffic:recognized_mcp
+```
+
+```
 awswaf:managed:token:accepted
 ```

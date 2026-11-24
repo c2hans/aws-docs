@@ -12,9 +12,9 @@ With CloudWatch, specify the log types and log locations that you want to use, o
 | --- | --- | --- | --- |
 | Managed storage | Stored in managed storage | Stored in managed storage | Supported |
 | Both managed storage and S3 bucket | Stored in both places | Stored in S3 bucket | Supported |
-| Amazon S3 bucket | Stored in S3 bucket | Stored in S3 bucket | Not supported1 |
+| Amazon S3 bucket | Stored in S3 bucket | Stored in S3 bucket | Not supported<sup>1</sup> |
 
-1 We suggest that you keep the **Managed storage** option selected. Otherwise, you can't use the built-in application UIs.
+<sup>1</sup> We suggest that you keep the **Managed storage** option selected. Otherwise, you can't use the built-in application UIs.
 
 ## Logging for EMR Serverless with managed storage
 <a name="jobs-log-storage-managed-storage"></a>

@@ -16,13 +16,13 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| id | string | Yes 1 | Order line ID. The value must be unique. |
-| order\_id2 | string | Yes 1 | ID of parent order. |
-| order\_line\_id2 | string | Yes | ID of parent order line. |
-| company\_id2 | string | No | Company ID. |
+| id | string | Yes <sup>1</sup> | Order line ID. The value must be unique. |
+| order\_id<sup>2</sup> | string | Yes <sup>1</sup> | ID of parent order. |
+| order\_line\_id<sup>2</sup> | string | Yes | ID of parent order line. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
 | status | string | No | Status of line, for example, submitted, or confirmed. The following are the reserved values for AWS Supply Chain.+  Can celled - Populated in SAP mapping. Also used for deleted. <br />+  Open - Not populated in SAP mapping. <br />+  Closed - Not populated in SAP mapping. <br />+  InTransit - Not populated in SAP mapping. <br />+  Confirmed - Not populated in SAP mapping.  Null is also an accepted value, or you can enter your own value.  |
 | schedule\_creation\_date | timestamp | No | Schedule creation date. |
-| product\_id2 | string | Yes 1 | Product ID. |
+| product\_id<sup>2</sup> | string | Yes <sup>1</sup> | Product ID. |
 | external\_line\_number | string | No | External line number. |
 | expected\_delivery\_date | timestamp | No | Expected delivery date of the products. |
 | confirmation\_date | timestamp | No | Date and time when the vendor confirmed the order line schedule, or order. |
@@ -38,9 +38,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

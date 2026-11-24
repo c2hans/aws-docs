@@ -39,11 +39,11 @@ API Gateway supports multiple mechanisms for controlling and managing access to 
 | --- | --- | --- |
 | [IAM](permissions.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](permissions.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](http-api-access-control-iam.md) |
 | [Resource policies](apigateway-resource-policies.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No<br /> |
-| [Amazon Cognito](apigateway-integrate-with-cognito.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes 1 | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes 1 |
+| [Amazon Cognito](apigateway-integrate-with-cognito.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes <sup>1</sup> | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes <sup>1</sup> |
 | [Custom authorization with an AWS Lambda function](apigateway-use-lambda-authorizer.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](apigateway-use-lambda-authorizer.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](http-api-lambda-authorizer.md) |
 | [JSON Web Token (JWT)](rest-api-jwt-authorizer.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](rest-api-jwt-authorizer.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](http-api-jwt-authorizer.md) |
 
-1 You can use Amazon Cognito with a JWT authorizer. For more information, see [Control access to REST APIs using JWT authorizers](rest-api-jwt-authorizer.md) and [Control access to HTTP APIs with JWT authorizers in API Gateway](http-api-jwt-authorizer.md).
+<sup>1</sup> You can use Amazon Cognito with a JWT authorizer. For more information, see [Control access to REST APIs using JWT authorizers](rest-api-jwt-authorizer.md) and [Control access to HTTP APIs with JWT authorizers in API Gateway](http-api-jwt-authorizer.md).
 
 ## API management
 <a name="http-api-vs-rest.differences.management"></a>

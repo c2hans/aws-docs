@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/setting-up-tip-ate.html
 ---
 
-# Setting up trusted identity propagation with Amazon Athena workgroups
+# Setting up trusted identity propagation with Amazon Athena workgroups (legacy experience)
 
 The following procedure walks you through setting up Amazon Athena workgroups for trusted identity propagation.
 

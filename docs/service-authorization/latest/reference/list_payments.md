@@ -24,6 +24,11 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_payments-actions-as-permissions).
 
+- **   BatchGetFinancialRecord  **
+  - **IAM action:**  [payments:BatchGetFinancialRecord](#list_payments-action-BatchGetFinancialRecord)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [payments:GetPaymentStatus](#list_payments-action-GetPaymentStatus)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+
 - **   GetAccountBalance  **
   - **IAM action:**  [payments:GetPaymentStatus](#list_payments-action-GetPaymentStatus)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -36,6 +41,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [payments:GetPaymentStatus](#list_payments-action-GetPaymentStatus)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [payments:ListFinancialRecords](#list_payments-action-ListFinancialRecords)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+
+- **   ListPaymentInstruments  **
+  - **IAM action:**  [payments:ListPaymentInstruments](#list_payments-action-ListPaymentInstruments)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [aws-portal:ViewPaymentMethods](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 ## Actions defined by AWS Payments
 <a name="list_payments-actions-as-permissions"></a>

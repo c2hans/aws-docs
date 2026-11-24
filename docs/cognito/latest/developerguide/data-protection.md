@@ -32,7 +32,6 @@ Amazon Cognito encrypts the data in your user pool or identity pool with an AWS 
 
 **Customer managed key**
 Amazon Cognito encrypts the data in your user pool with a customer managed key. You own the administration of customer managed key policies, rotation, and scheduled deletion.
-Encryption with customer managed keys might not be available in some user pools. Newly-created user pools always have this form of encryption available to them.
 
 **Things to know about user pool encryption with customer managed keys**
 

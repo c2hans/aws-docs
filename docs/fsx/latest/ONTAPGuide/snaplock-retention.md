@@ -30,10 +30,10 @@ You can specify the retention period using several different units of time. The 
 | Months | 0 -12 |  |
 | Years | 0 - 100 |  |
 | Infinite | - | Retains the files forever. <br />Available for **Default retention**, **Maximum retention**, and **Minimum retention**.  |
-| Unspecified1 | - | Retains the files until you set a retention period. <br />Available for **Default retention** only.  |
+| Unspecified<sup>1</sup> | - | Retains the files until you set a retention period. <br />Available for **Default retention** only.  |
 
 **Note**
-1When you transition files to WORM with an unspecified retention period, they are given the minimum retention period that is configured for the SnapLock volume. When you transition the WORM-protected files to an absolute retention time, the new retention period must be greater than the minimum period that you set on the files previously.
+<sup>1</sup>When you transition files to WORM with an unspecified retention period, they are given the minimum retention period that is configured for the SnapLock volume. When you transition the WORM-protected files to an absolute retention time, the new retention period must be greater than the minimum period that you set on the files previously.
 
 ## Expired retention period
 <a name="expired-policy"></a>

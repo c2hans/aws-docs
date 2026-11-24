@@ -320,9 +320,9 @@ Now that you know the criteria for evaluating your security options, you're read
 The following table highlights which services are optimized for which circumstances. Use the table to help determine the service that is the best fit for your organization and use case.
 
 **Note**
-1 Integrates with AWS Security Hub CSPM ([full list](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.html))
-2 Integrates with Amazon GuardDuty ([full list](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_integrations.html))
-3 Integrates with Amazon Security Lake ([full list](https://docs.aws.amazon.com/security-lake/latest/userguide/aws-integrations.html))
+<sup>1</sup> Integrates with AWS Security Hub CSPM ([full list](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.html))
+<sup>2</sup> Integrates with Amazon GuardDuty ([full list](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_integrations.html))
+<sup>3</sup> Integrates with Amazon Security Lake ([full list](https://docs.aws.amazon.com/security-lake/latest/userguide/aws-integrations.html))
 
 ### Choose AWS identity and access management services
 <a name="identity-and-access-management"></a>
@@ -333,7 +333,7 @@ Grant appropriate individuals the appropriate level of access to systems, applic
   - ****What is it optimized for?**:** Helps you connect your source of identities, or create users. You can centrally manage workforce access to multiple AWS accounts and applications. / ****Security, identity, and governance services**:** [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
   - ****What is it optimized for?**:** Optimized for authenticating and authorizing users for web and mobile applications.  / ****Security, identity, and governance services**:** [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)
   - ****What is it optimized for?**:** Optimized for securely sharing resources within AWS.  / ****Security, identity, and governance services**:** [AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)
-  - ****What is it optimized for?**:** Enables secure, fine-grained control over access to AWS workload resources.  / ****Security, identity, and governance services**:** [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) 1
+  - ****What is it optimized for?**:** Enables secure, fine-grained control over access to AWS workload resources.  / ****Security, identity, and governance services**:** [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) <sup>1</sup>
 
 ### Choose AWS data protection services
 <a name="data-protection"></a>
@@ -341,7 +341,7 @@ Grant appropriate individuals the appropriate level of access to systems, applic
 Automate and simplify data protection and security tasks that range from key management and sensitive data discovery to credential management.
 
 - **Use these services to help you achieve and maintain the confidentiality, integrity, and availability of sensitive data stored and processed within AWS environments. **
-  - ****What is it optimized for?**:** Optimized for discovering sensitive data.  / ****Data protection services**:** [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html) 1
+  - ****What is it optimized for?**:** Optimized for discovering sensitive data.  / ****Data protection services**:** [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html) <sup>1</sup>
   - ****What is it optimized for?**:** Optimized for cryptographic keys.  / ****Data protection services**:** [AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
   - ****What is it optimized for?**:** Optimized for HSMs.  / ****Data protection services**:** [AWS CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)
   - ****What is it optimized for?**:** Optimized for private SSL/TLS X.509 certificates and keys.  / ****Data protection services**:** [AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
@@ -355,7 +355,7 @@ Automate and simplify data protection and security tasks that range from key man
 Centrally protect your internet resources against common DDoS and application attacks.
 
 - **Use these services to help you enforce detailed security policies at every network control point. **
-  - ****What is it optimized for?**:** Optimized for centrally configuring and managing firewall rules.  / ****Network and application protection services**:** [AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html) 1
+  - ****What is it optimized for?**:** Optimized for centrally configuring and managing firewall rules.  / ****Network and application protection services**:** [AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html) <sup>1</sup>
   - ****What is it optimized for?**:** Optimized for providing a stateful, managed network firewall and intrusion detection and prevention service.  / ****Network and application protection services**:** [AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html)
   - ****What is it optimized for?**:** Optimized for protecting against DDoS attacks for AWS resources at the network, transport, and application layers.  / ****Network and application protection services**:** [AWS Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html)
   - ****What is it optimized for?**:** Optimized for providing a web application firewall.  / ****Network and application protection services**:** [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html)
@@ -366,13 +366,13 @@ Centrally protect your internet resources against common DDoS and application at
 Continuously identify and prioritize security risks, while integrating security best practices early.
 
 - **Use these services to help you detect and respond to security risks [across your accounts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.html), so you can protect your workloads at scale. **
-  - ****What is it optimized for?**:** Optimized for automating security checks and centralizing security alerts with AWS and third-party integrations.  / ****Detection and response services**:** [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) 2, 3
-  - ****What is it optimized for?**:** Optimized for assessing, auditing, and evaluating the configuration of your resources.  / ****Detection and response services**:** [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) 1
+  - ****What is it optimized for?**:** Optimized for automating security checks and centralizing security alerts with AWS and third-party integrations.  / ****Detection and response services**:** [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) <sup>2, 3</sup>
+  - ****What is it optimized for?**:** Optimized for assessing, auditing, and evaluating the configuration of your resources.  / ****Detection and response services**:** [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) <sup>1</sup>
   - ****What is it optimized for?**:** Optimized for logging events from other AWS services as an audit trail.  / ****Detection and response services**:** [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
-  - ****What is it optimized for?**:** Optimized for intelligent threat detection and detailed reporting.  / ****Detection and response services**:** [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) 1
-  - ****What is it optimized for?**:** Optimized for vulnerability management.  / ****Detection and response services**:** [Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html) 1
-  - ****What is it optimized for?**:** Optimized for centralizing security data.  / ****Detection and response services**:** [ Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html) 1
-  - ****What is it optimized for?**:** Optimized for aggregating and summarizing potential security issues.  / ****Detection and response services**:** [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html) 1, 2, 3
+  - ****What is it optimized for?**:** Optimized for intelligent threat detection and detailed reporting.  / ****Detection and response services**:** [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) <sup>1</sup>
+  - ****What is it optimized for?**:** Optimized for vulnerability management.  / ****Detection and response services**:** [Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html) <sup>1</sup>
+  - ****What is it optimized for?**:** Optimized for centralizing security data.  / ****Detection and response services**:** [ Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html) <sup>1</sup>
+  - ****What is it optimized for?**:** Optimized for aggregating and summarizing potential security issues.  / ****Detection and response services**:** [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html) <sup>1, 2, 3</sup>
   - ****What is it optimized for?**:** Optimized for helping you triage findings, escalate security events, and manage cases that require your immediate attention.  / ****Detection and response services**:** [AWS Security Incident Response](https://docs.aws.amazon.com/security-ir/latest/userguide/what-is.html)
 
 ### Choose AWS governance and compliance services
@@ -383,7 +383,7 @@ Establish cloud governance across your resources, and automate your compliance a
 - **Use these services to help you implement best practices and meet industry standards when using AWS. **
   - ****What is it optimized for?**:** Optimized for centrally managing multiple accounts and consolidated billing.  / ****Governance and compliance services**:** [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
   - ****What is it optimized for?**:** Optimized for providing on-demand downloads of AWS security and compliance documents.  / ****Governance and compliance services**:** [AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html)
-  - ****What is it optimized for?**:** Optimized for auditing AWS usage.  / ****Governance and compliance services**:** [AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html) 1
+  - ****What is it optimized for?**:** Optimized for auditing AWS usage.  / ****Governance and compliance services**:** [AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html) <sup>1</sup>
   - ****What is it optimized for?**:** Optimized for setting up and governing an AWS multi-account environment.  / ****Governance and compliance services**:** [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
 
 ## Use AWS security, identity, and governance services

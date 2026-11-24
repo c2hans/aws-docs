@@ -33,7 +33,7 @@ You can cancel quantum tasks in the `CREATED` state for QPUs and on-demand simul
 ## AQT
 <a name="braket-qpu-partner-aqt"></a>
 
-AQT's IBEX-Q1 QPU is based on a crystal of 40Ca\+ ions in a macroscopic radio frequency trap sitting in ultra-high vacuum chamber. The device runs at room temperature and fits into two 19-inch datacenter compatible racks.
+AQT's IBEX-Q1 QPU is based on a crystal of <sup>40</sup>Ca<sup>\+</sup> ions in a macroscopic radio frequency trap sitting in ultra-high vacuum chamber. The device runs at room temperature and fits into two 19-inch datacenter compatible racks.
 
 High-fidelity gates are enabled by the low heating rates of the trap and the use of a direct optical transition for qubit rotation. The qubit transition is driven by a narrow linewidth laser with a very high relative frequency stability. The qubits also feature efficient state preparation and readout through optical shelfing. All-to-all connectivity is achieved by the long-range Coulomb interaction in the ion crystal. Single-ion addressing and readout are achieved by use of a high numerical aperture lens.
 

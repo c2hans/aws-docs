@@ -19,3 +19,6 @@ When you create users with the [CreateUser](https://docs.aws.amazon.com/singles
 1. In the **Standard authentication** section, choose ** Configure**.
 
 1. In the **Configure standard authentication** dialog box, select the **Send email OTP** check box. Then, choose **Save**. The status updates from **Disabled** to **Enabled**.
+
+**Note**
+If you use trusted identity propagation with an IAM identity provider and you turn on this setting, users can sign in to the AWS access portal with an IAM Identity Center credential. If you want your users to sign in only through your IAM identity provider, don't turn on this setting. For more information, see [Trusted identity propagation with an IAM identity provider](simplified-tip-enabling.md#tip-iam-federation).

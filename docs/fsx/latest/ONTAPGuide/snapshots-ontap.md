@@ -10,6 +10,8 @@ A snapshot contains the data that has changed since the last snapshot which cons
 
 **Topics**
 + [Snapshot policies](#snapshot-policies)
++ [Creating a snapshot](creating-snapshots.md)
++ [Creating a snapshot policy](creating-snapshot-policies.md)
 + [Restoring files from snapshots](user-restore-all-clients.md)
 + [Viewing the common snapshot](common-snapshot.md)
 + [Updating your volume's snapshot reserve](modify-snapshot-reserve.md)
@@ -40,7 +42,7 @@ The `default-1weekly` policy works in the same way as the `default` policy, exce
 
 The `none` policy doesn't take any snapshots. You can assign this policy to volumes to prevent automatic snapshots from being taken.
 
-You can also create a custom snapshot policy using the ONTAP CLI or REST API. For more information, see [Create a Snapshot Policy](https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html) in the *NetApp ONTAP Product Documentation*. You can choose a snapshot policy while creating or updating a volume in the Amazon FSx console, the AWS CLI, or the Amazon FSx API. For more information, see [Creating volumes](creating-volumes.md) and [Updating volumes](updating-volumes.md).
+You can also create a custom snapshot policy using the Amazon FSx console, the AWS CLI, or the Amazon FSx API. For more information, see [Creating a snapshot policy](creating-snapshot-policies.md). You can also use the ONTAP CLI or REST API. For more information, see [Create a Snapshot Policy](https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html) in the *NetApp ONTAP Product Documentation*. You can choose a snapshot policy while creating or updating a volume in the Amazon FSx console, the AWS CLI, or the Amazon FSx API. For more information, see [Creating volumes](creating-volumes.md) and [Updating volumes](updating-volumes.md).
 
 ## Deleting snapshots
 <a name="delete-snapshots"></a>

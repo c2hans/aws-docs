@@ -17,9 +17,9 @@ With [AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserG
 
 1. Once the VIF is attached to the Direct Connect gateway (DXGW), it announces the CIDR block to any resource associated with it (such as [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/) (Amazon VPC) or [AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/)). If SiteLink is enabled on this VIF, the CIDR block will also be announced to any other VIF that is attached to this Direct Connect gateway and has SiteLink enabled.
 
-1. The customer gateway in the corporate data center B configures its VIF and it is associated with the Direct Connect gateway. It receives the 10.0.1.0/24 block with AS PATH 65001 650011 65512. The block 10.0.2.0/24 will also be announced to corporate data center A through the gateway with AS PATH 65001 65001 65513. Now both locations will be able to route traffic between each other.
+1. The customer gateway in the corporate data center B configures its VIF and it is associated with the Direct Connect gateway. It receives the 10.0.1.0/24 block with AS PATH 65001 65001<sup>1</sup> 65512. The block 10.0.2.0/24 will also be announced to corporate data center A through the gateway with AS PATH 65001 65001 65513. Now both locations will be able to route traffic between each other.
 
-1 When connecting two Direct Connect connections to the same AWS device, you get \+1 AS prepended (Direct Connect gateway ASN) when using SiteLink. However, when these connections are in different sites, you get this ASN twice (\+2 AS prepended) – one for each AWS router.
+<sup>1</sup> When connecting two Direct Connect connections to the same AWS device, you get \+1 AS prepended (Direct Connect gateway ASN) when using SiteLink. However, when these connections are in different sites, you get this ASN twice (\+2 AS prepended) – one for each AWS router.
 
 ## Traffic Flow Between On-Premises Locations – Backup
 <a name="2-traffic-flow-between-on-premises-locations-backup"></a>

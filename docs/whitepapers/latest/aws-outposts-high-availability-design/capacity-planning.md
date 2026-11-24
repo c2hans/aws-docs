@@ -47,8 +47,8 @@ Consult your AWS account team to validate your planned AWS Outposts rack slottin
 ![Equation M = (available pool slots / maximum host slots)](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/equation.png)
 
  Where:
-+ **poolSlotsavailable** is the number of available slots in the given EC2 capacity pool (total number of slots in the pool minus the number of running instances)
-+  **serverSlotsmax** is the maximum number of slots contributed by any host to the given EC2 capacity pool
++ **poolSlots<sub>available</sub>** is the number of available slots in the given EC2 capacity pool (total number of slots in the pool minus the number of running instances)
++  **serverSlots<sub>max</sub>** is the maximum number of slots contributed by any host to the given EC2 capacity pool
 +  **M** is the number of hosts that can fail and still allow the remaining hosts to carry the running instances
 
  ***Example:*** An Outpost has three hosts that contribute slots to an `m5.2xlarge` capacity pool. The first contributes 4 slots, the second contributes 3 slots, and the third host contributes 2 slots. The `m5.2xlarge` instance pool on the Outpost has a total capacity of 9 slots (4 \+ 3 \+ 2). The Outpost has 4 running `m5.2xlarge` instances. How many hosts may fail and still allow the remaining hosts to carry the running instances?

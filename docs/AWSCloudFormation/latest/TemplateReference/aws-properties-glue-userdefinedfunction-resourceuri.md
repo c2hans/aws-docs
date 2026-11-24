@@ -18,6 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```json
 {
+  "[LastModified](#cfn-glue-userdefinedfunction-resourceuri-lastmodified)" : {{String}},
   "[ResourceType](#cfn-glue-userdefinedfunction-resourceuri-resourcetype)" : {{String}},
   "[Uri](#cfn-glue-userdefinedfunction-resourceuri-uri)" : {{String}}
 }
@@ -27,12 +28,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-glue-userdefinedfunction-resourceuri-syntax.yaml"></a>
 
 ```yaml
+  [LastModified](#cfn-glue-userdefinedfunction-resourceuri-lastmodified): {{String}}
   [ResourceType](#cfn-glue-userdefinedfunction-resourceuri-resourcetype): {{String}}
   [Uri](#cfn-glue-userdefinedfunction-resourceuri-uri): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-glue-userdefinedfunction-resourceuri-properties"></a>
+
+`LastModified`  <a name="cfn-glue-userdefinedfunction-resourceuri-lastmodified"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceType`  <a name="cfn-glue-userdefinedfunction-resourceuri-resourcetype"></a>
 The type of the resource.

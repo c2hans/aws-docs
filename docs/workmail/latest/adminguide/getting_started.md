@@ -32,8 +32,8 @@ We recommend that you complete the following steps first for test users before a
 1. Enable the user account that you are migrating to Amazon WorkMail. For more information, see [Enable existing users](https://docs.aws.amazon.com/workmail/latest/adminguide/enable_user.html).
 
 1. In the Amazon WorkMail console, ensure that there are at least two email addresses associated with the enabled user.
-   + {{workmailuser}}@{{orgname}}.awsapps.com (this is added automatically and can be used for tests without your Microsoft Exchange.)
-   + {{workmailuser}}@{{yourdomain}}.com (this is added automatically and is the primary Microsoft Exchange address.)
+   + [{{workmailuser}}@{{orgname}}.awsapps.com](mailto:workmailuser@orgname.awsapps.com) (this is added automatically and can be used for tests without your Microsoft Exchange.)
+   + [{{workmailuser}}@{{yourdomain}}.com](mailto:workmailuser@yourdomain.com) (this is added automatically and is the primary Microsoft Exchange address.)
 
      For more information, see [Edit user email addresses](https://docs.aws.amazon.com/workmail/latest/adminguide/edit_user_email_addresses.html).
 

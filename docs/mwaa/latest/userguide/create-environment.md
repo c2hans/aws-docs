@@ -180,7 +180,7 @@ You must have permissions to the key to select it on the Amazon MWAA console. Yo
 
    1. Enter the **Identity Store ID**, found in the IAM Identity Center console under **Settings**. Example: `d-xxxxxxxxxx`.
 **Optional configuration**
-This section is optional. Environments without IAM Identity Center integration continue to use the existing IAM token-based access model. IAM Identity Center integration requires an organization-level IAM Identity Center instance in the same AWS Region as the environment. For more information, see [Using IAM Identity Center with Amazon Managed Workflows for Apache Airflow](identity-center-integration.md).
+This section is optional. Environments without IAM Identity Center integration continue to use the existing IAM token-based access model. IAM Identity Center integration requires an organization-level IAM Identity Center instance in the same AWS Region as the environment. You can't use IAM Identity Center integration with the private network access mode for the Apache Airflow webserver, so don't enable it on an environment that uses private network access. For more information, see [Using IAM Identity Center with Amazon Managed Workflows for Apache Airflow](identity-center-integration.md).
 **Irreversible action**
 Once IAM Identity Center integration is enabled on an environment, it cannot be disabled. Use the parallel-environment approach in [Using IAM Identity Center with Amazon Managed Workflows for Apache Airflow](identity-center-integration.md) for a safe migration path.
 

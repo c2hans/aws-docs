@@ -14,7 +14,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
       hostname -I
       ```
 
-   1. On your computer, run the following command using the IP address of the core. You can use Ctrl \+ C to stop the **ping** command.
+   1. On your computer, run the following command using the IP address of the core. You can use **Ctrl** \+ **C** to stop the **ping** command.
 
       ```
       ping {{IP-address}}

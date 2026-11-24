@@ -189,27 +189,24 @@ Codex adds an identifier to the end of the callback URL, so the redirect URI to 
 ### Claude
 <a name="ema-step4-claude"></a>
 
-An administrator of your Claude organization adds the MCP server as a custom connector. The OAuth client that you choose for the connector decides how members sign in. The following table describes the sign-in modes.
+An administrator of your Claude organization adds the MCP server as a custom connector.
 
-| Mode | OAuth client | Managed authorization |
+Choose one of the following sign-in modes. In either mode, make sure that the client ID matches the resource connection configuration at the IdP.
+
+| Mode | Use case | OAuth client |
 | --- | --- | --- |
-| EMA only | Use your own OAuth client with the agent client ID from Step 3 | Set up for all roles |
-| Split mode, for EMA-testing purposes | Use your own OAuth client with a client ID that you register in each Region | Set up for a test role. Other members sign in through the browser. |
-
-Browser sign-in requires a client registered with AWS Sign-In. EMA accepts any client ID. That is why split mode needs a registered client, and EMA only does not. To register a client for split mode, call the [CreateOAuth2PublicClient](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_CreateOAuth2PublicClient.html) API in each Region with the Claude redirect URI. Use the returned client ID in the connector and in that Region's resource connection in the IdP.
+| EMA only | Enable EMA for all Claude member roles. | Use a client ID of your choosing, for example anthropic-claude. |
+| Mixed | Enable EMA for only a subset of Claude member roles for testing purposes. Other roles sign in through the browser. | Use a client ID that you register in each Region. To register a client, call the [CreateOAuth2PublicClient](https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane-signin_CreateOAuth2PublicClient.html) API with the Claude redirect URI `https://claude.ai/api/mcp/auth_callback`. |
 
 1. In Claude, open **Admin settings**, **Connectors**, and choose **Add**, **Custom connector**. Enter a name and the MCP server URL, for example `https://aws-mcp.us-west-2.api.aws/mcp`.
 
 1. For **Authentication**, choose **Sign in when needed**. For **OAuth client**, choose **Use your own OAuth client**, enter the client ID for your mode, and leave the client secret blank.
 
-1. Open the connector, and on the **Configuration** tab choose **Set up** next to **Managed authorization**. Choose **IdP-managed** as the identity source, complete [Step 3: Configure your identity provider](#ema-step3) if you haven't already, and confirm that the connection checks pass.
+1. Open the connector, and on the **Configuration** tab choose **Set up** next to **Managed authorization**. Choose **IdP-managed** as the identity source.
 
-1. Choose the roles that connect through managed authorization, and then choose **Save**.
+1. Choose the Claude member roles that connect through managed authorization, and then choose **Save**.
 
-**Note**
-If the connector doesn't have a **Managed authorization** setting, add the connector again with an AWS MCP Server endpoint in a Region other than US East (N. Virginia) (`us-east-1`) or Europe (Frankfurt) (`eu-central-1`), for example `https://aws-mcp.us-west-2.api.aws/mcp`.
-
-Use the same client ID in the IdP's resource connection for Claude. For more information, see [Auto-connect your organization's apps to Claude](https://support.claude.com/en/articles/15537633-authorize-mcp-connectors-for-your-entire-organization) on the Claude Help Center website.
+For more information, see [Auto-connect your organization's apps to Claude](https://support.claude.com/en/articles/15537633-authorize-mcp-connectors-for-your-entire-organization) on the Claude Help Center website.
 
 ## Monitoring enterprise-managed authorization
 <a name="ema-monitoring"></a>

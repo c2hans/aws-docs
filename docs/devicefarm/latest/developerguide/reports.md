@@ -84,7 +84,7 @@ Plays the full recording and keeps playing from one test into the next. The seek
 In both views, the selected test's name is bold in the test report and its card is highlighted at the top of the panel. You can go to any test at any time:
 + To play a test, choose its card at the top of the panel or its play button in the test report. The cards list the tests in the order that they ran, with each test's result.
 + To move to the previous or next test, choose the previous or next button.
-+ To go to a point in the video, choose it on the seek bar. When the seek bar has keyboard focus, the arrow keys move 5 seconds. Shift with an arrow key moves to the previous or next test. Home and End go to the start and end.
++ To go to a point in the video, choose it on the seek bar. When the seek bar has keyboard focus, the arrow keys move 5 seconds. **Shift** with an arrow key moves to the previous or next test. **Home** and **End** go to the start and end.
 + To watch in full screen, choose the full-screen button. To save the recording, choose the download button, which opens it in a new browser tab.
 
 While the panel is open, the test report hides some columns so that it fits beside the video. For example, it hides the test class and the start and end times. As the video plays, the test report scrolls to the row of the selected test. If you close the panel, choosing a play button again reopens it without downloading the video again. To watch the whole recording without the test report, use the job's **Video** tab.

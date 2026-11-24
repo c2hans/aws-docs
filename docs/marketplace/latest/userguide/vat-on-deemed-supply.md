@@ -18,81 +18,55 @@ You can submit invoices for transactions of AWS Marketplace sales of Digital Ser
 
 1. The AWS Marketplace sale is facilitated by the corresponding AWS EMEA SARL branch in that country.
 
+VAT on deemed supply lets EMEA-based sellers recover VAT on eligible AWS Marketplace sales and remit it to their tax authority. AWS Marketplace automatically identifies eligible payables so that you can review and submit them for disbursement. You can start from the **VAT on deemed supply** card (**Get started**) or the **VAT on deemed supply** tab on the **Tax and invoices** page in AWS Partner Central.
+
 ## Getting Started — How to view and submit your invoices for VAT on deemed supply
 <a name="vat-deemed-supply-getting-started"></a>
 
-### Step 1: Log in to AWS Partner Central
+### Step 1: Open the VAT on deemed supply tab
 <a name="vat-deemed-supply-step1"></a>
 
-1. Go to the AWS Console and search for AWS Partner Central
+1. Sign in to AWS Partner Central at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 
-1. Choose Launch AWS Partner Central
+1. In the left navigation pane, under **Settings**, choose **Tax and invoices**.
 
-1. In the bottom-left panel, select Marketplace Settings
+1. Choose the **VAT on deemed supply** tab, or choose **Get started** on the **VAT on deemed supply** card.
 
-![The AWS Partner Central console showing the Marketplace Settings option in the bottom-left panel.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-1.png)
-
-### Step 2: Navigate to the VAT on deemed supply Section
+### Step 2: Select eligible payables
 <a name="vat-deemed-supply-step2"></a>
 
-1. Go to Settings in AWS Partner Central
+1. In **VAT on deemed supply eligible payables**, select one or more payables in the same currency. To filter the list, use **Date range** and **Find eligible payables**. Each payable shows **Payable ID**, **AWS invoice ID**, **Offer ID**, **Payable status**, **Created on**, and **Offer currency**.
 
-1. Choose the Tax information tab
+1. Choose **Apply disbursement**. The **Apply VAT on deemed supply** page opens.
 
-1. Scroll down to the VAT on deemed supply section
-
-![The Tax information tab in AWS Partner Central showing the VAT on deemed supply section.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-2.png)
-
-Here you can expand two tables:
-+ **VAT on deemed supply — eligible line items:** transactions eligible for VAT Invoicing
-![The VAT on deemed supply eligible line items table showing transactions eligible for VAT invoicing.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-3.png)
-+ **VAT on deemed supply submissions:** your submitted VAT invoices and their status
-![The VAT on deemed supply submissions table showing submitted VAT invoices and their status.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-4.png)
-
-### Step 3: Select Line Items for Submission
+### Step 3: Review the summary
 <a name="vat-deemed-supply-step3"></a>
 
-1. Expand the VAT on deemed supply — eligible line items table, review your eligible transactions
+1. Review the **VAT on deemed supply summary**. Use the **Business location**, **AWS EMEA local VAT number**, and **Tax registration number** shown here when you issue your invoice to AWS.
 
-1. Select one or more line items in the same currency (USD, EUR, or GBP)
-   + Paid items qualify for immediate disbursement
-   + Unpaid items can be selected but will only be disbursed once the buyer invoice is collected
+1. Review the **Disbursement summary** (**Paid payables**, **Unpaid payables**, **Total VAT disbursement amount**, and **Total eligible VAT disbursement amount**) and the **Selected payables** table (**VAT percentage**, **Net amount**, **VAT amount**, and **Payable total**).
 
-1. Choose Apply VAT Disbursement
-
-![Selecting line items and choosing Apply VAT Disbursement.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-5.png)
-
-**Note**
-You can submit individual invoices for individual line items, or a single consolidated invoice covering multiple line items in the same currency.
-
-### Step 4: Upload Your VAT Invoice
+### Step 4: Upload your seller invoice and apply the disbursement
 <a name="vat-deemed-supply-step4"></a>
 
-1. On the Apply VAT on deemed supply page, review your selected line items and disbursement summary
+1. Under **Upload seller invoice**, choose **Choose seller invoice** and upload a single invoice that covers every selected payable. The file must be PDF, or XML for transactions in Italy, Poland, Belgium, Romania, or Croatia. The maximum file size is 10 MB. For more information about e-invoicing requirements, see [Do I need to submit an e-invoice instead of a PDF?](vat-deemed-supply-faq.md#faq-e-invoicing).
 
-1. Upload your VAT invoice:
-   + Accepted formats: PDF, or XML where electronic invoicing is required (Italy, Belgium, Poland, and Romania). For more information about e-invoicing requirements, see [Do I need to submit an e-invoice instead of a PDF?](vat-deemed-supply-faq.md#faq-e-invoicing).
-   + Maximum file size: 10 MB
-   + All selected line items must be included in a single uploaded file
+1. (Optional) Add tags, and then choose **Apply disbursement**.
 
-1. Choose Submit VAT on deemed supply disbursement
+Only verified, paid payables are disbursed immediately on approval. Unpaid payables are disbursed after the buyer pays. Missing or incorrect information results in rejection and processing delays.
 
-![The Apply VAT on deemed supply page showing selected line items, disbursement summary, and invoice upload.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-6.png)
-
-### Step 5: Track Your Submission
+### Step 5: Track your submissions
 <a name="vat-deemed-supply-step5"></a>
 
-After submission, your line item will move from the Eligible Line Items table to the VAT on deemed supply Submissions table. Each submission is assigned a unique task ID. Submission statuses are:
-+ **Accepted** — Your invoice has been validated. No further action is required. A green banner is displayed for 7 days.
-+ **Rejected** — Your invoice could not be validated. Remediation action required, please verify reject reason and address in your next amended invoice upload. A yellow banner is displayed for 7 days with the reason for rejection.
+On the **VAT on deemed supply** tab, the **VAT on deemed supply submissions** table lists each request with **Submission ID**, **Seller invoice ID**, **Submission status**, **VAT amount**, and **Date submitted**. To review a submission, select it and choose **View details**. Submission statuses are:
++ **Accepted** — Your invoice has been validated. No further action is required.
++ **Rejected** — Your invoice could not be validated. Review the submission with **View details**, correct the issue, and submit again.
 + **Pending** — Your submission is under review and is pending AWS for approval. (SLA: up to 3 business days).
 
 **Note**
-To check your disbursement status, visit the Collections and Disbursements dashboard.
+Disbursed VAT amounts are shown in Insights. To check your disbursement status, visit the Collections and Disbursements dashboard.
 
 Refer to [Deemed Supply FAQs](vat-deemed-supply-faq.md) for more details.
-
-![The VAT on deemed supply submissions table showing submission statuses.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-7.png)
 
 ## Submit a credit note for a refund
 <a name="vat-deemed-supply-refunds"></a>
@@ -102,33 +76,29 @@ If AWS previously disbursed VAT to you for a transaction that is later refunded,
 ### Step 1: Find the refund
 <a name="vat-deemed-supply-refunds-step1"></a>
 
-In AWS Partner Central, choose **Settings**, choose the **Tax information** tab, and scroll down to the **VAT on deemed supply** section. In the eligible line items table, locate the refund that you want to submit a credit note for. Refunds appear as separate line items and display negative amounts.
+On the **Tax and invoices** page in AWS Partner Central, choose the **VAT on deemed supply** tab. Refunds appear in the same **VAT on deemed supply eligible payables** table as forward charges. Locate the refund that you want to submit a credit note for. Refunds display negative amounts.
 
 If you do not see an expected refund:
 + Confirm that your selected date range includes the transaction.
 + Allow up to 72 hours after the Buyer refund is generated for the refund to appear.
 
-![The VAT on deemed supply eligible line items table showing refund line items with negative amounts.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-8.png)
-
 ### Step 2: Select the refund and upload your credit note
 <a name="vat-deemed-supply-refunds-step2"></a>
 
-Select the refund line item or eligible refund line items covered by your credit note, and then choose **Apply VAT disbursement**. Upload the applicable credit-note document:
+Select the refund payables covered by your credit note, and then choose **Apply disbursement**. Under **Upload seller invoice**, choose **Choose seller invoice** and upload the applicable credit-note document:
 + Use PDF where electronic invoicing is not required.
 + Use the applicable XML format where electronic invoicing is required.
 + The maximum file size is 10 MB.
 
 **Note**
-You can include multiple eligible refunds in one submission when the portal allows them to be selected together. You can select up to 100 eligible line items in a submission.
-
-![The Apply VAT on deemed supply page showing a selected refund line item with a negative VAT amount and an uploaded credit note.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-9.png)
+You can include multiple eligible refunds in one submission when the portal allows them to be selected together. You can select up to 100 eligible payables in a submission.
 
 ### Step 3: Review and submit
 <a name="vat-deemed-supply-refunds-step3"></a>
 
-Review the selected refund line items and the details of your credit note. Confirm that the VAT amount on your credit note matches the VAT amount displayed for the selected refunds. When prompted to confirm the total, enter the amount exactly as displayed, including the minus sign where applicable.
+Review the selected refund payables and the details of your credit note. Confirm that the VAT amount on your credit note matches the VAT amount displayed for the selected refunds. When prompted to confirm the total, enter the amount exactly as displayed, including the minus sign where applicable.
 
-Choose **Submit VAT on deemed supply disbursement** and complete the confirmation.
+Choose **Apply disbursement** and complete the confirmation.
 
 **Note**
 Submitting a credit note does not itself trigger VAT recovery. For more information about when AWS recovers VAT, see [Does submitting a credit note trigger VAT recovery?](vat-deemed-supply-faq.md#faq-refund-recovery-trigger).
@@ -141,8 +111,6 @@ After submitting your credit note, use the VAT on deemed supply submissions tabl
 + **Accepted** – AWS successfully validated the document.
 + **Rejected** – The document did not pass validation and needs to be corrected.
 
-If your credit note is rejected, the applicable refund line items become available again so that you can correct the document and submit a new credit note.
-
-![The VAT on deemed supply submissions table showing an accepted credit-note submission with a negative VAT amount.](https://docs.aws.amazon.com/marketplace/latest/userguide/images/vat-deemed-supply-screenshot-10.png)
+If your credit note is rejected, the applicable refund payables become available again so that you can correct the document and submit a new credit note.
 
 For more information about credit-note requirements, VAT recovery, document formats, and rejected submissions, see [Deemed Supply FAQs](vat-deemed-supply-faq.md).

@@ -88,7 +88,7 @@ The description for the gateway target.
 The gateway ID for the gateway target.
 *Required*: No
 *Type*: String
-*Pattern*: `^([0-9a-z][-]?){1,100}-[0-9a-z]{10}$`
+*Pattern*: `^(([0-9a-z][-]?){1,100}-[0-9a-z]{10}|[0-9]{12}-default-v1)$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MetadataConfiguration`  <a name="cfn-bedrockagentcore-gatewaytarget-metadataconfiguration"></a>

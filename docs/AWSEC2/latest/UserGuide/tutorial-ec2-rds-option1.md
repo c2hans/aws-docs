@@ -101,7 +101,7 @@ If you use an existing EC2 instance, make sure that it is in the same VPC as you
 The objective of this task is to launch an EC2 instance so that you can complete Task 3 where you configure the connection between your EC2 instance and your Amazon RDS database. The steps in this task configure the EC2 instance as follows:
 + Instance name: **tutorial-instance-1**
 + AMI: Amazon Linux 2
-+ Instance type: `t2.micro`
++ Instance type: `t3.micro`
 + Auto-assign public IP: Enabled
 + Security group with the following three rules:
   + Allow SSH from your IP address
@@ -123,12 +123,9 @@ In a production environment, you should configure your instance to meet your spe
 
 1. Under **Application and OS Images**, choose an AMI that meets your web server needs. This tutorial uses **Amazon Linux 2**.
 
-1. Under **Instance type**, for **Instance type**, select an instance type that meets your web server needs. This tutorial uses `t2.micro`.
+1. Under **Instance type**, for **Instance type**, select an instance type that meets your web server needs. This tutorial uses `t3.micro`.
 **Note**
-Depending on when you created your account, you might be eligible to use Amazon EC2 under the Free Tier.
-If your created your AWS account before July 15, 2025 and it's less than 12 months old, you can use Amazon EC2 under the Free Tier by selecting the **t2.micro** instance type, or the **t3.micro** instance type in Regions where **t2.micro** is unavailable. Be aware that when you launch a **t3.micro** instance, it defaults to [**Unlimited** mode](burstable-performance-instances-unlimited-mode.md), which might incur additional charges based on CPU usage. If an instance type can be used under the Free Tier, it is labeled **Free tier eligible**.
-If you created your AWS account on or after July 15, 2025, you can use **t3.micro**, **t3.small**, **t4g.micro**, **t4g.small**, **c7i-flex.large**, and **m7i-flex.large** instance types for 6 months or until your credits are used up.
-For more information, see [Free Tier benefits before and after July 15, 2025](ec2-free-tier-usage.md#ec2-free-tier-comparison).
+If you're eligible for the AWS Free Tier, you can use **t3.micro**, **t3.small**, **t4g.micro**, **t4g.small**, **t8i.micro**, **t8i.small**, **t9g.micro**, **t9g.small**, **c7i-flex.large**, and **m7i-flex.large** instance types for 6 months or until your credits are used up. If an instance type can be used under the Free Tier, it is labeled **Free tier eligible**. For more information, see [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 
 1. Under **Key pair (login)**, for **Key pair name**, choose your key pair.
 

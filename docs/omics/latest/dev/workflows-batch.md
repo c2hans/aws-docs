@@ -459,6 +459,9 @@ The following table shows which **StartRun** fields can be set per run and which
 **Note**
 The `runId` (for individual re-runs) field is not supported as an input to **StartRunBatch**. Each batch submission always creates new runs, and each run will receive a `runId`. See [Rerun a run in HealthOmics](rerun-a-run.md) for retrying individual runs.
 
+**Note**
+**StartRunBatch** doesn't support the `parametersUri` field. If you include `parametersUri` in `defaultRunSetting`, in an `inlineSettings` entry, or in an `s3UriSettings` file, HealthOmics ignores it, as it does any unrecognized field, and the runs start without those parameters. For more information, see [Limitations of parameters files](workflows-run-inputs.md#run-parameters-uri-limitations).
+
 ### Parameter merging
 <a name="batch-parameter-merging"></a>
 

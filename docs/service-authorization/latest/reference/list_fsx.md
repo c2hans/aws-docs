@@ -56,6 +56,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [fsx:CreateBackup](#list_fsx-action-CreateBackup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateClusterPeer  **
+  - **IAM action:**  [fsx:CreateClusterPeer](#list_fsx-action-CreateClusterPeer)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateDataRepositoryAssociation  **
   - **IAM action:**  [fsx:CreateDataRepositoryAssociation](#list_fsx-action-CreateDataRepositoryAssociation)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -77,12 +81,28 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [fsx:CreateFileSystemFromBackup](#list_fsx-action-CreateFileSystemFromBackup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateSnapmirrorPolicy  **
+  - **IAM action:**  [fsx:CreateSnapmirrorPolicy](#list_fsx-action-CreateSnapmirrorPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateSnapmirrorRelationship  **
+  - **IAM action:**  [fsx:CreateSnapmirrorRelationship](#list_fsx-action-CreateSnapmirrorRelationship)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateSnapshot  **
   - **IAM action:**  [fsx:CreateSnapshot](#list_fsx-action-CreateSnapshot)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateSnapshotPolicy  **
+  - **IAM action:**  [fsx:CreateSnapshotPolicy](#list_fsx-action-CreateSnapshotPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateStorageVirtualMachine  **
   - **IAM action:**  [fsx:CreateStorageVirtualMachine](#list_fsx-action-CreateStorageVirtualMachine)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateStorageVirtualMachinePeer  **
+  - **IAM action:**  [fsx:CreateStorageVirtualMachinePeer](#list_fsx-action-CreateStorageVirtualMachinePeer)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateVolume  **
@@ -95,6 +115,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteBackup  **
   - **IAM action:**  [fsx:DeleteBackup](#list_fsx-action-DeleteBackup)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteClusterPeer  **
+  - **IAM action:**  [fsx:DeleteClusterPeer](#list_fsx-action-DeleteClusterPeer)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -114,14 +140,38 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [fsx:DeleteFileSystem](#list_fsx-action-DeleteFileSystem)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [fsx:TagResource](#list_fsx-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   DeleteSnapmirrorPolicy  **
+  - **IAM action:**  [fsx:DeleteSnapmirrorPolicy](#list_fsx-action-DeleteSnapmirrorPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteSnapmirrorRelationship  **
+  - **IAM action:**  [fsx:DeleteSnapmirrorRelationship](#list_fsx-action-DeleteSnapmirrorRelationship)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteSnapshot  **
   - **IAM action:**  [fsx:DeleteSnapshot](#list_fsx-action-DeleteSnapshot)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteSnapshotPolicy  **
+  - **IAM action:**  [fsx:DeleteSnapshotPolicy](#list_fsx-action-DeleteSnapshotPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteStorageVirtualMachine  **
   - **IAM action:**  [fsx:DeleteStorageVirtualMachine](#list_fsx-action-DeleteStorageVirtualMachine)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteStorageVirtualMachinePeer  **
+  - **IAM action:**  [fsx:DeleteStorageVirtualMachinePeer](#list_fsx-action-DeleteStorageVirtualMachinePeer)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -133,6 +183,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeBackups  **
   - **IAM action:**  [fsx:DescribeBackups](#list_fsx-action-DescribeBackups)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeClusterPeers  **
+  - **IAM action:**  [fsx:DescribeClusterPeers](#list_fsx-action-DescribeClusterPeers)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -179,8 +235,32 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeSnapmirrorPolicies  **
+  - **IAM action:**  [fsx:DescribeSnapmirrorPolicies](#list_fsx-action-DescribeSnapmirrorPolicies)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeSnapmirrorRelationships  **
+  - **IAM action:**  [fsx:DescribeSnapmirrorRelationships](#list_fsx-action-DescribeSnapmirrorRelationships)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeSnapshotPolicies  **
+  - **IAM action:**  [fsx:DescribeSnapshotPolicies](#list_fsx-action-DescribeSnapshotPolicies)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   DescribeSnapshots  **
   - **IAM action:**  [fsx:DescribeSnapshots](#list_fsx-action-DescribeSnapshots)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeStorageVirtualMachinePeers  **
+  - **IAM action:**  [fsx:DescribeStorageVirtualMachinePeers](#list_fsx-action-DescribeStorageVirtualMachinePeers)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -245,6 +325,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
+- **   UpdateClusterPeer  **
+  - **IAM action:**  [fsx:UpdateClusterPeer](#list_fsx-action-UpdateClusterPeer)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateDataRepositoryAssociation  **
   - **IAM action:**  [fsx:UpdateDataRepositoryAssociation](#list_fsx-action-UpdateDataRepositoryAssociation)
   - **Condition key:**
@@ -269,14 +355,38 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateSnapmirrorPolicy  **
+  - **IAM action:**  [fsx:UpdateSnapmirrorPolicy](#list_fsx-action-UpdateSnapmirrorPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateSnapmirrorRelationship  **
+  - **IAM action:**  [fsx:UpdateSnapmirrorRelationship](#list_fsx-action-UpdateSnapmirrorRelationship)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateSnapshot  **
   - **IAM action:**  [fsx:UpdateSnapshot](#list_fsx-action-UpdateSnapshot)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateSnapshotPolicy  **
+  - **IAM action:**  [fsx:UpdateSnapshotPolicy](#list_fsx-action-UpdateSnapshotPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateStorageVirtualMachine  **
   - **IAM action:**  [fsx:UpdateStorageVirtualMachine](#list_fsx-action-UpdateStorageVirtualMachine)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateStorageVirtualMachinePeer  **
+  - **IAM action:**  [fsx:UpdateStorageVirtualMachinePeer](#list_fsx-action-UpdateStorageVirtualMachinePeer)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

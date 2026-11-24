@@ -17,12 +17,12 @@ The table below lists the column names supported by the data entity:
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | id | string | Yes | Policy ID. |
-| site\_id2 | string | Yes1 | Site ID for the policy being defined. |
-| product\_id2 | string | Yes1 | Product ID for the policy being defined. |
-| company\_id2 | string | No | Company ID. |
-| product\_group\_id2 | string | Yes1 | Product group ID that the policies are being defined for. Overridden at product level. |
-| dest\_geo\_id2 | string | Yes1 | Sets default values at geo level of the destination. |
-| vendor\_tpartner\_id2 | string | Yes1 | Trading partner ID of the vendor. This field is used when policies vary by vendor. |
+| site\_id<sup>2</sup> | string | Yes<sup>1</sup> | Site ID for the policy being defined. |
+| product\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product ID for the policy being defined. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| product\_group\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product group ID that the policies are being defined for. Overridden at product level. |
+| dest\_geo\_id<sup>2</sup> | string | Yes<sup>1</sup> | Sets default values at geo level of the destination. |
+| vendor\_tpartner\_id<sup>2</sup> | string | Yes<sup>1</sup> | Trading partner ID of the vendor. This field is used when policies vary by vendor. |
 | status | string | No | Status of the inventory policy record, for example, on-hold, or active. |
 | ss\_policy | string | No | Type of safety stock policy. The safety stock policy is associated with corresponding data.<br />**abs\_level** – Uses units specified in min/max safety stock (SS). Source is customer system or external tool. Ordering is suggested whenever inventory falls below min SS level.<br />**sl** – Targets inventory between min and max service level for in-stock percentages. For example, if min/max service level is 50% and 90%, ordering will be done to maintain inventory between these percentiles of forecast over plan horizon.<br />**DOC\_dem** – Uses days of cover computed from historical demand as target level of inventory.<br />**DOC\_fcst** – Uses days of cover computed from forecast as target level of inventory.  |
 | fallback\_policy\_1 | string | No | Fallback inventory policy. |
@@ -45,10 +45,10 @@ The table below lists the column names supported by the data entity:
 | max\_order\_qty | double | No | Maximum order quantity. |
 | order\_qty\_multiple | double | No | Order quantity computed in multiples of this value. |
 | holding\_cost\_percent | double | No | Annualized holding cost of inventory in percent. |
-| eff\_start\_date | timestamp | Yes1 | Dates from when the record is effective. |
-| eff\_end\_date | timestamp | Yes1 | Dates till when the record is effective. |
+| eff\_start\_date | timestamp | Yes<sup>1</sup> | Dates from when the record is effective. |
+| eff\_end\_date | timestamp | Yes<sup>1</sup> | Dates till when the record is effective. |
 | salvage\_value\_percentage | double | No | Product cost that can be expected to recovered at the end of Long Term Horizon. |
-| segment\_id 2 | string | No | ID of segment associated with the inventory policy |
+| segment\_id <sup>2</sup> | string | No | ID of segment associated with the inventory policy |
 | demand\_planning\_enabled | string | No | Identifies parts used for demand planning.  |
 | inventory\_planning\_enabled | string | No | Identifies parts used for inventory planning. |
 | mrp\_enabled | string | No | Identifies parts enabled for planning in MRP. |
@@ -57,9 +57,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default values for string and timestamp date type values are: SCN\_RESERVED\_NO\_VALUE\_PROVIDED for *string*; and for *timestamp* , 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default values for string and timestamp date type values are: SCN\_RESERVED\_NO\_VALUE\_PROVIDED for *string*; and for *timestamp* , 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

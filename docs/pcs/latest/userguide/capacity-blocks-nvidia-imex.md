@@ -22,6 +22,8 @@ AWS PCS manages topology through a dynamically generated `topology.yaml` file. A
 
 Block topology models uniform, high-bandwidth communication domains where all GPUs participate in a single high-speed NVLink domain with near-uniform latency. The `topology/block` plugin allocates nodes based on the defined network topology, ensuring that jobs are placed within the same UltraServer and GPU-to-GPU communication uses NVLink instead of falling back to EFA networking.
 
+A Slurm partition uses one topology, so queues with UltraServer compute node groups always use block topology. Set the `Topology` custom Slurm setting only on queues without UltraServer compute node groups. For more information, see [UltraServer queues](network-topology.md#network-topology-ultraserver).
+
 ## Using the topology/block plugin
 <a name="capacity-blocks-nvidia-imex-job-submission"></a>
 

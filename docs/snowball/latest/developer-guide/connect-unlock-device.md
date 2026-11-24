@@ -21,7 +21,7 @@ When your device arrives at your site, the first step is to connect and unlock i
 
 This video shows how to unlock a Snowball Edge device locally using AWS OpsHub.
 
-[![AWS Videos](https://img.youtube.com/vi/StMa2A7X2yA/0.jpg)](https://www.youtube.com/watch?v=StMa2A7X2yA)
+[![AWS Videos](https://img.youtube.com/vi/StMa2A7X2yA/0.jpg)](https://www.youtube.com/watch?v=StMa2A7X2yA&t=36s)
 
 **To connect and unlock your device locally**
 

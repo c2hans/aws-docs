@@ -10,9 +10,12 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
 **Important**
 This runbook performs various operations that require elevated privileges, such as modifying Amazon S3 bucket policies, tags, and public access configurations. These actions could potentially lead to privilege escalation or impact other workloads that depend on the targeted Amazon S3 bucket. You should review the permissions granted to the role specified by the `AutomationAssumeRole` parameter and ensure they are appropriate for the intended use case. You can refer to the following AWS documentation for more information on IAM permissions: [`Identity and Access Management (IAM) Permissions`](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html) [`AWS AWS Systems Manager Automation Permissions`](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup-iam.html).
-This runbook performs mutative actions that could potentially cause unavailability or disruption to your workloads. Specifically, the `Contain` action blocks all access to the specified Amazon S3 bucket, except for the roles specified in the `SecureRoles` parameter. This could impact any applications or services that rely on the targeted Amazon S3 bucket.
+This runbook performs mutative actions that could potentially cause unavailability or disruption to your workloads. Specifically, the `Contain` action blocks all access to the specified Amazon S3 bucket, except for the IAM users or roles specified in the `BucketRestrictAccess` parameter. This could impact any applications or services that rely on the targeted Amazon S3 bucket.
 During the `Contain` action, this runbook may create an additional Amazon S3 bucket (specified by the `BackupS3BucketName` parameter) to store the backup of the original bucket's configuration, if it does not already exist.
-If the `Action` parameter is set to `Restore`, this runbook attempts to restore the Amazon S3 bucket's configuration to its original state based on the backup stored in the `BackupS3BucketName` bucket. However, there is a risk that the restoration process may fail, leaving the Amazon S3 bucket in an inconsistent state. The runbook provides instructions for manual restoration in case of such failures, but you should be prepared to handle potential issues during the restoration process.
+Ensure that both the target and backup Amazon S3 buckets exist and are owned by the current AWS account. The Amazon S3 operations perform ownership verification and will fail if either bucket is missing or belongs to a different account.
+Always verify that the associated backup Amazon S3 bucket policy and ACLs do not grant unnecessary read or write permissions to principals that don't require access.
+We recommend using Amazon S3 server-side encryption, enabling Amazon S3 server access logging, and Amazon S3 Versioning for both the target and backup buckets to enhance security and maintain an audit trail.
+If the `Action` parameter is set to `Restore`, this runbook attempts to restore the Amazon S3 bucket's configuration to its original state based on the backup stored in the `BackupS3BucketName` bucket. Restoration to the exact previous state is not guaranteed, as changes in the account or associated Amazon S3 resources might have occurred between the time of containment and restoration. There is also a risk that the restoration process may fail, leaving the Amazon S3 bucket in an inconsistent state. The runbook provides instructions for manual restoration in case of such failures, but you should be prepared to handle potential issues during the restoration process.
 It is recommended to review the runbook thoroughly, understand its potential impacts, and test it in a non-production environment before executing it in your production environment.
 
  **How does it work?**
@@ -151,42 +154,41 @@ Follow these steps to configure the automation:
 
 1. For the input parameters, enter the following:
    + **BucketName (Required):**
-     + Description: (Required) The name of the Amazon S3 bucket.
+     + Description: (Required) The Amazon S3 bucket name.
      + Type: `AWS::S3::Bucket::Name`
    + **Action (Required):**
-     + Description: (Required) Select `Contain` to isolate the Amazon S3 resource or `Restore` to try to restore the resource configuration to its original state from a previous backup.
+     + Description: (Required) Select `Contain` to isolate the target Amazon S3 bucket or object or `Restore` to try to restore the target resource to its original configuration from a previous backup.
      + Type: String
      + Allowed Values: `Contain|Restore`
    + **DryRun (Optional):**
-     + Description: (Optional) When set to true, the automation will not make any changes to the target Amazon S3 resource, instead it will output what it would have attempted to change. Default value: true.
+     + Description: (Optional) When set to `true`, the automation will not make any changes to the target resource, instead it will output on what it would have attempted to change, detailing out on each step. Default value: `true`.
      + Type: Boolean
      + Allowed Values: `true|false`
    + **BucketKeyName (Optional):**
-     + Description: (Optional) The key of the Amazon S3 object you want to contain or restore. Used during object level containment.
+     + Description: (Optional) The key of the Amazon S3 object you want to contain or restore workflow. Used during object level containment.
      + Type: String
      + Allowed Pattern: `^[a-zA-Z0-9\\.\\-_\\\\!*'()/]{0,1024}$`
-   + **BucketRestrictAccess (Conditional):**
-     + Description: (Conditional) The ARN of the IAM users or roles that will be allowed access to the target Amazon S3 resource after running the containment actions. This parameter is required when `Action` is set to `Contain`.
+   + **BucketRestrictAccess (Optional):**
+     + Description: (Optional) The ARN of the IAM users or roles that will be allowed access to the target Amazon S3 resource after running the containment actions. If not provided when Action is `Contain`, only the `AutomationAssumeRole` will be allowed access to the resource. Note: Either this parameter or `AutomationAssumeRole` must be provided when Action is `Contain`. The `AutomationAssumeRole`, or in its absence the user under whose context the automation is running is automatically added to the list.
      + Type: StringList
      + Allowed Pattern: `^$|^arn:(aws|aws-cn|aws-us-gov|aws-iso(-[a-z])?):iam::[0-9]{12}:(role|user)\\/[\\w+\\/=,.@-]+$`
    + **TagIdentifier (Optional):**
-     + Description: (Optional) A tag in the format Key=BatchId,Value=78925 that will be added to the resources created or modified by this runbook during the containment workflow.
+     + Description: (Optional) Tag the Amazon S3 bucket principal with a tag of your choice using the following format: `Key=<EXAMPLE_KEY>,Value=<EXAMPLE_VALUE>`. This option allows you to track the Amazon S3 buckets that have been targeted by this runbook. Note: Tag keys and values are case-sensitive.
      + Type: String
      + Allowed Pattern: `^$|^[Kk][Ee][Yy]=[\\+\\-\\=\\.\\_\\:\\/@a-zA-Z0-9]{1,128},[Vv][Aa][Ll][Uu][Ee]=[\\+\\-\\=\\.\\_\\:\\/@a-zA-Z0-9]{0,128}$`
    + **BackupS3BucketName (Conditional):**
-     + Description: (Conditional) The Amazon S3 bucket to backup the target resource configuration when the `Action` is set to `Contain` or to restore the configuration from when the `Action` is set to `Restore`.
+     + Description: (Conditional) The Amazon S3 bucket to backup the target resource configuration when the **Action** is set to `Contain` or to restore the configuration from when the **Action** is `Restore`. Note that if the specified **Action** is `Contain` and the runbook is not able to access the bucket or a value is not provided, a new bucket is created in your account with the name `awssupport-contains3resource-<random-string>`.
      + Type: `AWS::S3::Bucket::Name`
    + **BackupS3KeyName (Conditional):**
-     + Description: (Conditional) If `Action` is set to `Restore`, this specifies the Amazon S3 key the automation will use to try to restore the target resource configuration.
+     + Description: (Conditional) If **Action** is set to `Restore`, this specifies the Amazon S3 key the automation will use to try to restore the target resource configuration. The Amazon S3 key typically follows this format: `{year}/{month}/{day}/{hour}/{minute}/{automation_execution_id}.json`. The key can be obtained from the output of a previous containment automation execution.
      + Type: String
      + Allowed Pattern: `^[a-zA-Z0-9\\.\\-_\\\\!*'()/]{0,1024}$`
-
    + **BackupS3BucketAccess (Conditional):**
-     + Description: (Conditional) The ARN of the IAM users or roles that will be allowed access to the backup Amazon S3 bucket after running the containment actions. This parameter is required when `Action` is `Contain`.
+     + Description: (Conditional) The ARN of the IAM users or roles that will be allowed access to the backup Amazon S3 bucket after running the containment actions. This parameter is required when Action is `Contain`. The `AutomationAssumeRole`, or in its absence the user under whose context the automation is running is automatically added to the list.
      + Type: StringList
      + Allowed Pattern: `^$|^arn:(aws|aws-cn|aws-us-gov|aws-iso(-[a-z])?):iam::[0-9]{12}:(role|user)\\/[\\w+\\/=,.@-]+$`
    + **AutomationAssumeRole (Optional):**
-     + Description: (Optional) The Amazon Resource Name (ARN) of the IAM role that allows Systems Manager Automation to perform the actions on your behalf.
+     + Description: (Optional) The Amazon Resource Name (ARN) of the IAM role that allows Systems Manager Automation to perform the actions on your behalf. If no role is specified, Systems Manager Automation uses the permissions of the user that starts this runbook.
      + Type: `AWS::IAM::Role::Arn`
 
 1. Select Execute.
@@ -194,45 +196,51 @@ Follow these steps to configure the automation:
 1. The automation initiates.
 
 1. The document performs the following steps:
-   + **validateRequiredInputs**
+   + **ValidateRequiredInputs**
 
-     Validates the required automation input parameters based on the Action specified.
-   + **assertBucketExists**
+     Validates the required automation input parameters based on the **Action** specified.
+   + **BranchOnTargetType**
 
-     Checks if the target Amazon S3 bucket exists and is accessible.
-   + **backupBucketPreChecks**
+     Branches the automation based on the target Amazon S3 resource: bucket or object.
+   + **AssertObjectExists**
 
-     Checks if the backup Amazon S3 bucket potentially grants public read or write access to its objects.
-   + **backupTargetBucketMetadata**
+     Asserts if the target Amazon S3 object exists and it is accessible by calling the `HeadObject` API.
+   + **AssertBucketExists**
 
-     Describes the current configuration of the target Amazon S3 bucket and uploads the backup to the specified backup Amazon S3 bucket.
-   + **containBucket**
+     Asserts if the target Amazon S3 bucket exists and it is accessible by calling the `HeadBucket` API.
+   + **CheckBackupS3BucketName**
 
-     Performs bucket level operations to contain the target Amazon S3 bucket.
-   + **BranchOnActionAndMode**
+     Checks if the backup Amazon S3 bucket potentially grants **read** or **write** public access to its objects. In case of containment workflow, a new Amazon S3 bucket is created if the `BackupS3BucketName` bucket doesn't exist.
+   + **BranchOnActionAndDryRun**
 
-     Branches the automation based on the input parameters Action and DryRun.
-   + **RestoreInstanceConfiguration**
-
-     Restores the Amazon S3 bucket configuration from the backup.
-   + **containFinalOutput**
-
-     Consolidates containment activity in readable format.
-   + **ReportContain**
+     Branches the automation based on the value of the specified `Action` and if it is running in `DryRun` mode.
+   + **ContainS3ResourceDryRun**
 
      Outputs dry run details for the containment actions.
-   + **ReportRestore**
+   + **BackupTargetS3ResourceMetadata**
+
+     Gets and stores the current configuration of the target Amazon S3 resource.
+   + **ContainS3Resource**
+
+     Performs the containment actions on the target Amazon S3 resource.
+   + **RestoreS3ResourceDryRun**
 
      Outputs dry run details for the restoring actions.
-   + **ReportRestoreFailure**
+   + **RestoreS3Resource**
 
-     Provides instructions to restore the Amazon S3 bucket original configuration during a restore workflow failure scenario.
+     Restores the target Amazon S3 resource configuration from the backup.
    + **ReportContainmentFailure**
 
-     Provides instructions to restore the Amazon S3 bucket original configuration during a containment workflow failure scenario.
-   + **FinalOutput**
+     Provides instructions to restore the target Amazon S3 resource original configuration during a containment workflow failure scenario.
+   + **ReportRestoreFailure**
+
+     Provides instructions to restore the target Amazon S3 resource original configuration during a restore workflow failure scenario.
+   + **ContainFinalOutput**
 
      Outputs the details of the containment actions.
+   + **RestoreFinalOutput**
+
+     Outputs the details of the restoring actions.
 
 1. After the execution completes, review the Outputs section for the detailed results of the execution:
    + **ContainFinalOutput.Output**

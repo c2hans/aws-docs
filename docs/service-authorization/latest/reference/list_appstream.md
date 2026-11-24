@@ -133,6 +133,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateThemeForStack  **
+  - **IAM action:**  [appstream:CreateThemeForStack](#list_appstream-action-CreateThemeForStack)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateUpdatedImage  **
   - **IAM action:**  [appstream:CreateUpdatedImage](#list_appstream-action-CreateUpdatedImage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

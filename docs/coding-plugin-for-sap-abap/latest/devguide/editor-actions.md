@@ -29,13 +29,13 @@ Inline assist changes a selection in place, without going to the chat panel.
 
 1. Select the code you want to change.
 
-1. Press  Ctrl Shift I  (macOS:  Cmd Shift I ) to open the inline assist input next to the selection.
+1. Press **Ctrl+Shift+I** (macOS: **Cmd+Shift+I**) to open the inline assist input next to the selection.
 
-1. Type an instruction and press Enter.
+1. Type an instruction and press **Enter**.
 
 1. Review the inline diff, then choose **Accept** or **Reject**.
 
- **Accept** replaces the selection with the proposed change. **Reject** or Esc restores the original code. If Coding Plugin cannot parse the response into code, it declines the change and restores your selection.
+ **Accept** replaces the selection with the proposed change. **Reject** or **Esc** restores the original code. If Coding Plugin cannot parse the response into code, it declines the change and restores your selection.
 
 **Note**
 While the inline diff is displayed, the editor shows syntax errors from the diff rendering. These errors clear after you accept or reject the change.

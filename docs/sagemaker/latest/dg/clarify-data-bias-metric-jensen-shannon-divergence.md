@@ -11,9 +11,9 @@ The Jensen-Shannon divergence (JS) measures how much the label distributions of 
 
 The formula for the Jensen-Shannon divergence is as follows:
 
-        JS = ½\*[KL(Pa \|\| P) \+ KL(Pd \|\| P)]
+        JS = ½<sub>\*</sub>[KL(P<sub>a</sub> \|\| P) \+ KL(P<sub>d</sub> \|\| P)]
 
-Where P = ½( Pa \+ Pd ), the average label distribution across facets *a* and *d*.
+Where P = ½( P<sub>a</sub> \+ P<sub>d</sub> ), the average label distribution across facets *a* and *d*.
 
 The range of JS values for binary, multicategory, continuous outcomes is [0, ln(2)).
 + Values near zero mean the labels are similarly distributed.

@@ -18,7 +18,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```json
 {
+  "[AmazonPayConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-amazonpayconfiguration)" : {{AmazonPayConfigurationOutput}},
   "[CoinbaseCdpConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-coinbasecdpconfiguration)" : {{CoinbaseCdpConfigurationOutput}},
+  "[PayPalConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-paypalconfiguration)" : {{PayPalConfigurationOutput}},
+  "[StripeConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-stripeconfiguration)" : {{StripeConfigurationOutput}},
   "[StripePrivyConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-stripeprivyconfiguration)" : {{StripePrivyConfigurationOutput}}
 }
 ```
@@ -27,8 +30,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-syntax.yaml"></a>
 
 ```yaml
+  [AmazonPayConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-amazonpayconfiguration): {{
+    AmazonPayConfigurationOutput}}
   [CoinbaseCdpConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-coinbasecdpconfiguration): {{
     CoinbaseCdpConfigurationOutput}}
+  [PayPalConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-paypalconfiguration): {{
+    PayPalConfigurationOutput}}
+  [StripeConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-stripeconfiguration): {{
+    StripeConfigurationOutput}}
   [StripePrivyConfiguration](#cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-stripeprivyconfiguration): {{
     StripePrivyConfigurationOutput}}
 ```
@@ -36,10 +45,28 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-properties"></a>
 
+`AmazonPayConfiguration`  <a name="cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-amazonpayconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [AmazonPayConfigurationOutput](aws-properties-bedrockagentcore-paymentcredentialprovider-amazonpayconfigurationoutput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `CoinbaseCdpConfiguration`  <a name="cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-coinbasecdpconfiguration"></a>
 Coinbase CDP configuration output, containing the Amazon Resource Names (ARNs) of the secrets that store the credentials.
 *Required*: No
 *Type*: [CoinbaseCdpConfigurationOutput](aws-properties-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationoutput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PayPalConfiguration`  <a name="cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-paypalconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [PayPalConfigurationOutput](aws-properties-bedrockagentcore-paymentcredentialprovider-paypalconfigurationoutput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StripeConfiguration`  <a name="cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-stripeconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [StripeConfigurationOutput](aws-properties-bedrockagentcore-paymentcredentialprovider-stripeconfigurationoutput.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StripePrivyConfiguration`  <a name="cfn-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationoutput-stripeprivyconfiguration"></a>

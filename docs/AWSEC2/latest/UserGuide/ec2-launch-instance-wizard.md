@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-insta
 You can launch an Amazon EC2 instance using the launch instance wizard in the Amazon EC2 console. The wizard provides default values for the launch parameters, which you can either accept or modify to suit your requirements. The only parameter that is not specified is the key pair. If you choose to accept the default values, you can quickly launch an instance by selecting only a key pair.
 
 **Important**
-You incur charges for the instance while the instance is in the `running` state, even if it remains idle. However, if you qualify for the Free Tier, you might not incur charges. For more information, see [Track your Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
+You incur charges for the instance while the instance is in the `running` state, even if it remains idle. However, if you qualify for the Free Tier, you might not incur charges. For more information, see [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 
 For a description of each parameter in the launch instance wizard, see [Reference for Amazon EC2 instance configuration parameters](ec2-instance-launch-parameters.md).
 
@@ -67,10 +67,7 @@ If you're launching an instance that you'll use in production, you'll need to co
    + Choose **Compare instance types** to compare different instance types by the following attributes: number of vCPUs, architecture, amount of memory (GiB), amount of storage (GB), storage type, and network performance.
    + Choose **Get advice** to get guidance and suggestions for instance types from the EC2 instance type finder. For more information, see [Get recommendations from EC2 instance type finder](get-ec2-instance-type-recommendations.md).
 **Note**
-Depending on when you created your account, you might be able to use instance types for free under the Free Tier. These instance types are labeled **Free tier eligible**.
-If your created your AWS account before July 15, 2025 and it's less than 12 months old, you can use Amazon EC2 under the Free Tier by selecting the **t2.micro** instance type, or the **t3.micro** instance type in Regions where **t2.micro** is unavailable. Be aware that when you launch a **t3.micro** instance, it defaults to [**Unlimited** mode](burstable-performance-instances-unlimited-mode.md), which might incur additional charges based on CPU usage.
-If you created your AWS account on or after July 15, 2025, you can use **t3.micro**, **t3.small**, **t4g.micro**, **t4g.small**, **c7i-flex.large**, and **m7i-flex.large** instance types for 6 months or until your credits are used up.
-For more information, see [Free Tier benefits before and after July 15, 2025](ec2-free-tier-usage.md#ec2-free-tier-comparison).
+If you're eligible for the AWS Free Tier, you can use **t3.micro**, **t3.small**, **t4g.micro**, **t4g.small**, **t8i.micro**, **t8i.small**, **t9g.micro**, **t9g.small**, **c7i-flex.large**, and **m7i-flex.large** instance types for 6 months or until your credits are used up. These instance types are labeled **Free tier eligible**. For more information, see [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 
 1. Under **Key pair (login)**, for **Key pair name**, choose an existing key pair or create a new one. If you do not require a key pair to connect to your instance, you can choose **Proceed without a key pair (not recommended)**.
 

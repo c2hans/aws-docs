@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-document-pro
 
 # Amazon Textract document processing skill
 
-The Amazon Textract document processing skill helps you extract content from documents by making a request to your AI coding agent in natural language. You can extract text, tables, form fields, receipts, and identity documents. You identify a document and describe the output you want, and the agent returns structured results. You don't run any commands directly.
+The Amazon Textract document processing skill (`ocr-document-processing-skill`) helps you extract content from documents by making a request to your AI coding agent in natural language. You can extract text, tables, form fields, receipts, and identity documents. You identify a document and describe the output you want, and the agent returns structured results. You don't run any commands directly.
 
 The skill is a way to use Amazon Textract through your AI coding agent, not a new API. The skill returns reading-order text, Markdown or CSV tables, key-value pairs, identity document fields, document answers, and confidence routing.
 
@@ -59,6 +59,8 @@ If you prefer to verify from the command line and have the AWS CLI installed, yo
 aws agent-toolkit list-installed-skills
 aws agent-toolkit search-skills --search-query document
 ```
+
+In the results, you should see the skill named `ocr-document-processing-skill`.
 
 For the full set of skill-management commands, see [AWS CLI](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
 

@@ -16,13 +16,13 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| id | string | Yes1 | Outbound order line ID. |
-| cust\_order\_id | string | Yes1 | Outbound order ID. |
-| company\_id2 | string | No | Company ID. |
+| id | string | Yes<sup>1</sup> | Outbound order line ID. |
+| cust\_order\_id | string | Yes<sup>1</sup> | Outbound order ID. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
 | order\_date | timestamp | No | Date and time when customer order was placed. |
-| product\_id2 | string | Yes1 | Product ID. |
-| product\_group\_id2 | string | No | Product group ID. |
-| customer\_tpartner\_id2 | string | No | Trading partner ID for customer. |
+| product\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product ID. |
+| product\_group\_id<sup>2</sup> | string | No | Product group ID. |
+| customer\_tpartner\_id<sup>2</sup> | string | No | Trading partner ID for customer. |
 | status | string | No | Status of the customer order. |
 | init\_quantity\_requested | double | No | Original order quantity. |
 | final\_quantity\_requested | double | No | Final quantity after any cancellations or changes. |
@@ -38,8 +38,8 @@ The table below lists the column names supported by the data entity:
 | tax | double | No | Tax amount for order line. |
 | incoterm1 | string | No | Place of ownership transfer. |
 | incoterm2 | string | No | Place of ownership transfer. |
-| ship\_from\_site\_id2 | string | No | Site ID where the product is shipped from. |
-| ship\_to\_site\_id2 | string | No | Site ID where the product is shipped to. |
+| ship\_from\_site\_id<sup>2</sup> | string | No | Site ID where the product is shipped from. |
+| ship\_to\_site\_id<sup>2</sup> | string | No | Site ID where the product is shipped to. |
 | ship\_to\_site\_address\_1 | string | No | Address of ship-to site. |
 | ship\_to\_site\_address\_2 | string | No | Address of ship-to site. |
 | ship\_to\_site\_address\_city | string | No | City of ship-to site. |
@@ -60,9 +60,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

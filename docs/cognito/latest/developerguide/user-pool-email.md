@@ -84,7 +84,7 @@ Under the following combination of conditions, you must specify the `SourceArn` 
 Your EmailSendingAccount is `COGNITO_DEFAULT`.
 You want to use a custom `FROM` address.
 Your user pool sends emails in an **Alternate Region**.
-Your user pool has a *second*[1](#cognito-email-alternate-regions-note) **Alternate Region** specified in the table of **Amazon SES supported Regions** that follows.
+Your user pool has a *second*<sup>[1](#cognito-email-alternate-regions-note)</sup> **Alternate Region** specified in the table of **Amazon SES supported Regions** that follows.
 
 If you create a user pool programmatically–with an AWS SDK, the Amazon Cognito API or CLI, the AWS CDK, or AWS CloudFormation–your user pool sends email messages with the Amazon SES identity that the `SourceArn` parameter of [EmailConfiguration](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html#CognitoUserPools-CreateUserPool-request-EmailConfiguration) specifies for your user pool. The Amazon SES identity must occupy a supported AWS Region. If your `EmailSendingAccount` is `COGNITO_DEFAULT` and you don't specify a `SourceArn` parameter, Amazon Cognito sends email messages from `no-reply@verificationemail.com` using resources in the Region where you created your user pool.
 
@@ -97,35 +97,35 @@ The following table shows the AWS Regions where you can use Amazon SES identitie
 | US West (N. California) | In-Region only | US West (N. California) |
 | US West (Oregon) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |
 | Canada (Central) | Backwards compatible | Canada (Central), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
-| Canada West (Calgary) | Alternate Region | Canada (Central), US West (N. California)[1](#cognito-email-alternate-regions-note) |
-| Mexico (Central) | Alternate Region | US East (N. Virginia), US West (Oregon)[1](#cognito-email-alternate-regions-note) |
+| Canada West (Calgary) | Alternate Region | Canada (Central), US West (N. California)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
+| Mexico (Central) | Alternate Region | US East (N. Virginia), US West (Oregon)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
 | Asia Pacific (Tokyo) | Backwards compatible | Asia Pacific (Tokyo), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
-| Asia Pacific (Hong Kong) | Alternate Region | Asia Pacific (Singapore), Asia Pacific (Tokyo)[1](#cognito-email-alternate-regions-note) |
+| Asia Pacific (Hong Kong) | Alternate Region | Asia Pacific (Singapore), Asia Pacific (Tokyo)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
 | Asia Pacific (Seoul) | Backwards compatible | Asia Pacific (Seoul), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
 | Asia Pacific (Malaysia) | Alternate Region | Asia Pacific (Sydney), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |
 | Asia Pacific (Thailand) | Alternate Region | Asia Pacific (Singapore), Asia Pacific (Mumbai)[1](#cognito-email-alternate-regions-note) |
 | Asia Pacific (Mumbai) | Backwards compatible | Asia Pacific (Mumbai), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
-| Asia Pacific (Hyderabad) | Alternate Region | Asia Pacific (Mumbai), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |
+| Asia Pacific (Hyderabad) | Alternate Region | Asia Pacific (Mumbai), Asia Pacific (Singapore)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
 | Asia Pacific (Singapore) | Backwards compatible | Asia Pacific (Singapore), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
 | Asia Pacific (Sydney) | Backwards compatible | Asia Pacific (Sydney), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
 | Asia Pacific (Osaka) | In-Region only | Asia Pacific (Osaka) |
 | Asia Pacific (Jakarta) | In-Region only | Asia Pacific (Jakarta) |
-| Asia Pacific (Melbourne) | Alternate Region | Asia Pacific (Sydney), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |
+| Asia Pacific (Melbourne) | Alternate Region | Asia Pacific (Sydney), Asia Pacific (Singapore)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
 | Europe (Ireland) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |
 | Europe (London) | Backwards compatible | Europe (London), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
 | Europe (Paris) | In-Region only | Europe (Paris) |
 | Europe (Frankfurt) | Backwards compatible | Europe (Frankfurt), US East (N. Virginia), US West (Oregon), Europe (Ireland) |
-| Europe (Zurich) | Alternate Region | Europe (Frankfurt), Europe (London)[1](#cognito-email-alternate-regions-note) |
+| Europe (Zurich) | Alternate Region | Europe (Frankfurt), Europe (London)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
 | Europe (Stockholm) | In-Region only | Europe (Stockholm) |
 | Europe (Milan) | In-Region only | Europe (Milan) |
 | Europe (Spain) | Alternate Region | Europe (Paris), Europe (Stockholm)[1](#cognito-email-alternate-regions-note) |
 | Middle East (Bahrain) | In-Region only | Middle East (Bahrain) |
-| Middle East (UAE) | Alternate Region | Europe (Frankfurt), Europe (London)[1](#cognito-email-alternate-regions-note) |
+| Middle East (UAE) | Alternate Region | Europe (Frankfurt), Europe (London)<sup>[1](#cognito-email-alternate-regions-note)</sup> |
 | South America (São Paulo) | In-Region only | South America (São Paulo) |
 | Israel (Tel Aviv) | In-Region only | Israel (Tel Aviv) |
 | Africa (Cape Town) | In-Region only | Africa (Cape Town) |
 
- 1 Used in user pools with the default email configuration. Amazon Cognito distributes email messages among verified identities with the same email address in each Region. To use a custom `FROM` address, configure `EmailConfiguration` with a `SourceArn` parameter in the format `arn:{{${Partition}}}:ses:*:{{${Account}}}:identity/{{${IdentityName}}}`.
+ <sup>1</sup> Used in user pools with the default email configuration. Amazon Cognito distributes email messages among verified identities with the same email address in each Region. To use a custom `FROM` address, configure `EmailConfiguration` with a `SourceArn` parameter in the format `arn:{{${Partition}}}:ses:*:{{${Account}}}:identity/{{${IdentityName}}}`.
 
 ## Configuring email for your user pool
 <a name="user-pool-email-configure"></a>

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-usecase-emr.html
 ---
 
-# Trusted identity propagation with Amazon EMR
+# Trusted identity propagation with Amazon EMR (legacy experience)
 
 The following diagram shows a trusted identity propagation configuration for Amazon EMR Studio using Amazon EMR on Amazon EC2 with access control provided by AWS Lake Formation and Amazon S3 Access Grants.
 

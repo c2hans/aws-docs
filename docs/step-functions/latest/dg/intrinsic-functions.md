@@ -521,7 +521,7 @@ Hello, my name is Arnav.
 ## Reserved characters in intrinsic functions
 <a name="intrinsic-functions-escapes"></a>
 
- The following characters are reserved for intrinsic functions, and must be escaped with a backslash ('\\') if you want them to appear in the Value: '{}, and \\.
+ The following characters are reserved for intrinsic functions, and must be escaped with a backslash ('\\') if you want them to appear in the Value: **'****{****}**, and **\\**.
 
 If the character `\` needs to appear as part of the value without serving as an escape character, you must escape it with a backslash. The following escaped character sequences are used with intrinsic functions:
 + The literal string `\'` represents `'`.

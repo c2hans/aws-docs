@@ -39,9 +39,9 @@ The agent sends each signal to its CloudWatch destination:
 ## Attributes that the agent adds
 <a name="eks-observability-addon-otlp-endpoint-enrichment"></a>
 
-The agent identifies the pod that sent the telemetry from the `k8s.pod.uid`, `k8s.pod.name`, and `k8s.namespace.name` attributes that the sender set, and otherwise from the connection's source IP address. It then adds the standard telemetry attributes (see [Standard telemetry attributes](eks-standard-telemetry-attributes.md)):
+The agent identifies the pod that sent the telemetry from the `k8s.pod.uid`, `k8s.pod.name`, and `k8s.namespace.name` attributes that the sender set, and otherwise from the connection's source IP address. It then adds the standard telemetry attributes (see [Telemetry enrichment](eks-standard-telemetry-attributes.md)):
 + The namespace, pod, container, node, and workload attributes (`k8s.*`), including `k8s.workload.name` and `k8s.workload.type`.
-+ The pod and node labels, as `k8s.pod.label.*` and `k8s.node.label.*` attributes. The `otelFilters.podLabels` and `otelFilters.nodeLabels` settings decide which labels are added. For more information, see [Telemetry filters](eks-observability-addon-telemetry-filters.md).
++ The pod and node labels, as `k8s.pod.label.*` and `k8s.node.label.*` attributes. The `otelFilters.podLabels` and `otelFilters.nodeLabels` settings decide which labels are added. For more information, see [OpenTelemetry filters](eks-observability-addon-telemetry-filters.md).
 + The cloud and host attributes of the node, `k8s.cluster.name`, and `cloud.resource_id`.
 + The service identity attributes, such as `service.name`, when the sender did not set them. For more information, see [OpenTelemetry service identity](eks-observability-addon-service-identity.md).
 

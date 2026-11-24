@@ -36,6 +36,7 @@ The trust policy allows the HealthOmics service to assume the role.
 
 **Topics**
 + [Example IAM service policies](#permissions-service-samplepolicies)
++ [Permissions for a run parameters file](#permissions-service-parametersuri)
 + [Use session policies to scope down permissions](#permissions-service-sessionpolicy)
 + [Example CloudFormation template](#permissions-service-sampletemplates)
 
@@ -172,6 +173,11 @@ The following example shows the policy for a service role that publishes run met
   ]
 }
 ```
+
+## Permissions for a run parameters file
+<a name="permissions-service-parametersuri"></a>
+
+If you specify the run parameters with the `parametersUri` field of **StartRun**, the service role needs permission to read the parameters file in Amazon S3, and to decrypt it if the file is encrypted with an AWS KMS key. The identity that calls **StartRun** needs the same read access to the file. For more information, see [Permissions for the parameters file](workflows-run-inputs.md#run-parameters-uri-permissions).
 
 ## Use session policies to scope down permissions
 <a name="permissions-service-sessionpolicy"></a>

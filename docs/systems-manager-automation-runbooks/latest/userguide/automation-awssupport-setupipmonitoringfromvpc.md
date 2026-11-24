@@ -95,106 +95,227 @@ Linux, macOS, Windows
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
 
-**Warning**
- It is recommended to pass `TestInstanceProfileName` parameter or ensure security guardrails in place to prevent misuse of mutable IAM permissions.
+**Important**
+We recommend that you pass the `TestInstanceProfileName` parameter. The example policy on this page assumes that you do. The IAM role inside that instance profile must trust `ec2.amazonaws.com`. It must also have the permissions listed for `TestInstanceProfileName`.
+If you leave `TestInstanceProfileName` empty, the automation creates an IAM role and instance profile for the test instance. It deletes them with the CloudFormation stack. In that case, the `AutomationAssumeRole` needs the following extra permissions. The example policy doesn't grant them. Scope them to `role/SetupIPMonitoringFromVPC-*` and `instance-profile/SetupIPMonitoringFromVPC-*`:
+`iam:CreateRole`, `iam:GetRole`, `iam:TagRole`, and `iam:DeleteRole`
+`iam:PutRolePolicy`, `iam:GetRolePolicy`, and `iam:DeleteRolePolicy`
+`iam:AttachRolePolicy` and `iam:DetachRolePolicy`
+`iam:CreateInstanceProfile`, `iam:GetInstanceProfile`, `iam:AddRoleToInstanceProfile`, `iam:RemoveRoleFromInstanceProfile`, and `iam:DeleteInstanceProfile`
+`iam:PassRole` on `role/SetupIPMonitoringFromVPC-*`, with `iam:PassedToService` set to `ec2.amazonaws.com`
+If you grant these permissions to an untrusted principal, that principal can create an IAM role with elevated permissions and use it. This results in privilege escalation in your AWS account. Grant them only to the `AutomationAssumeRole`. Make sure security guardrails are in place to prevent misuse of mutable IAM permissions.
 
- It is recommended that the user who runs the automation have the **AmazonSSMAutomationRole** IAM managed policy attached. In addition, the user must have the following policy attached to their user account, group, or role:
-
-------
-#### [ JSON ]
-
-****
+ It is recommended that the user who runs the automation have the **AmazonSSMAutomationRole** IAM managed policy attached. In addition, the user must have the following policy attached to their user account, group, or role. The policy scopes the log group permissions to the default `CloudWatchLogGroupNamePrefix`. If you use a different prefix, update the log group resource. In the following example, replace {{111122223333}} with your AWS account ID, {{TestInstanceProfile}} with the name of the instance profile that you pass in `TestInstanceProfileName`, and {{TestInstanceRole}} with the name of the IAM role inside that instance profile:
 
 ```json
 {
-    "Version":"2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
+            "Sid": "ReadTestInstanceProfile",
+            "Action": "iam:GetInstanceProfile",
+            "Resource": "arn:aws:iam::{{111122223333}}:instance-profile/{{TestInstanceProfile}}",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "PassTestInstanceRole",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::{{111122223333}}:role/{{TestInstanceRole}}",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": "ec2.amazonaws.com"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "ActionsWithoutResourceLevelPermissions",
             "Action": [
-                "iam:CreateRole",
-                "iam:CreateInstanceProfile",
-                "iam:GetRole",
-                "iam:GetInstanceProfile",
-                "iam:DetachRolePolicy",
-                "iam:AttachRolePolicy",
-                "iam:PassRole",
-                "iam:AddRoleToInstanceProfile",
-                "iam:GetRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DeleteInstanceProfile",
-                "iam:PutRolePolicy",
-                "iam:TagRole"
+                "ec2:DescribeInstances",
+                "ec2:DescribeImages",
+                "ec2:DescribeInstanceTypes",
+                "ec2:DescribeLaunchTemplates",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ssm:DescribeInstanceInformation",
+                "ssm:ListCommands",
+                "ssm:ListCommandInvocations"
             ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "CloudFormationStack",
+            "Action": [
+                "cloudformation:CreateChangeSet",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStacks"
+            ],
+            "Resource": "arn:aws:cloudformation:*:{{111122223333}}:stack/AWSSupport-SetupIPMonitoringFromVPC-*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "CloudFormationLanguageExtensions",
+            "Action": "cloudformation:CreateChangeSet",
+            "Resource": "arn:aws:cloudformation:*:aws:transform/LanguageExtensions",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "ReadAmazonLinuxAmiParameters",
+            "Action": "ssm:GetParameters",
+            "Resource": "arn:aws:ssm:*::parameter/aws/service/ami-amazon-linux-latest/*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "CreateLaunchTemplate",
+            "Action": "ec2:CreateLaunchTemplate",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "CreateTaggedSecurityGroup",
+            "Action": "ec2:CreateSecurityGroup",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:security-group/*",
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/AWSSupport-SetupIPMonitoringFromVPC-AutomationExecution": "false"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "CreateSecurityGroupInVpc",
+            "Action": "ec2:CreateSecurityGroup",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:vpc/*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "RunInstancesWithAmazonImage",
+            "Action": "ec2:RunInstances",
+            "Resource": "arn:aws:ec2:*::image/*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:Owner": "amazon"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "RunInstancesResources",
+            "Action": "ec2:RunInstances",
             "Resource": [
-                "arn:aws:iam::{{111122223333}}:role/SetupIPMonitoringFromVPC*",
-                "arn:aws:iam::{{111122223333}}:instance-profile/SetupIPMonitoringFromVPC*"
+                "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+                "arn:aws:ec2:*:{{111122223333}}:network-interface/*",
+                "arn:aws:ec2:*:{{111122223333}}:security-group/*",
+                "arn:aws:ec2:*:{{111122223333}}:subnet/*",
+                "arn:aws:ec2:*:{{111122223333}}:volume/*"
             ],
             "Effect": "Allow"
         },
         {
+            "Sid": "RunTaggedInstance",
+            "Action": "ec2:RunInstances",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:instance/*",
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/AWSSupport-SetupIPMonitoringFromVPC-AutomationExecution": "false"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "TagOnCreateOnly",
+            "Action": "ec2:CreateTags",
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:instance/*",
+                "arn:aws:ec2:*:{{111122223333}}:network-interface/*",
+                "arn:aws:ec2:*:{{111122223333}}:security-group/*",
+                "arn:aws:ec2:*:{{111122223333}}:volume/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "ec2:CreateAction": [
+                        "CreateSecurityGroup",
+                        "RunInstances"
+                    ]
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "ManageTaggedResources",
             "Action": [
-                "cloudformation:CreateStack",
-                "cloudformation:CreateChangeSet",
-                "cloudformation:DeleteStack",
-                "cloudformation:DescribeStacks",
-                "cloudformation:DescribeStackEvents",
-                "cloudwatch:PutDashboard",
-                "cloudwatch:DeleteDashboards",
                 "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateLaunchTemplate",
                 "ec2:DeleteSecurityGroup",
-                "ec2:DescribeImages",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeInstanceTypes",
-                "ec2:DescribeVpcs",
-                "ec2:DeleteLaunchTemplate",
-                "ec2:DeleteSecurityGroup",
-                "ec2:RunInstances",
-                "ec2:TerminateInstances",
-                "ec2:DescribeInstanceStatus",
-                "ec2:CreateTags",
-                "ec2:AssignIpv6Addresses",
-                "ec2:DescribeTags",
-                "ec2:DescribeInstances",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeLaunchTemplates",
                 "ec2:RevokeSecurityGroupEgress",
+                "ec2:TerminateInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:instance/*",
+                "arn:aws:ec2:*:{{111122223333}}:security-group/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:ResourceTag/AWSSupport-SetupIPMonitoringFromVPC-AutomationExecution": "false"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "DeleteLaunchTemplateThroughCloudFormation",
+            "Action": "ec2:DeleteLaunchTemplate",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:launch-template/*",
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "RunShellScriptDocument",
+            "Action": "ssm:SendCommand",
+            "Resource": "arn:aws:ssm:*::document/AWS-RunShellScript",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "SendCommandToTaggedInstance",
+            "Action": "ssm:SendCommand",
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:instance/*",
+            "Condition": {
+                "Null": {
+                    "ssm:resourceTag/AWSSupport-SetupIPMonitoringFromVPC-AutomationExecution": "false"
+                }
+            },
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "TestResultLogGroups",
+            "Action": [
                 "logs:CreateLogGroup",
                 "logs:DeleteLogGroup",
                 "logs:PutMetricFilter",
                 "logs:PutRetentionPolicy",
-                "logs:TagResource",
-                "ssm:DescribeInstanceInformation",
-                "ssm:GetParameter",
-                "ssm:GetParameters",
-                "ssm:SendCommand",
-                "ssm:ListCommands",
-                "ssm:ListCommandInvocations"
+                "logs:TagResource"
             ],
-            "Resource": [
-                "*"
+            "Resource": "arn:aws:logs:*:{{111122223333}}:log-group:/AWSSupport-SetupIPMonitoringFromVPC*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "TestResultDashboard",
+            "Action": [
+                "cloudwatch:DeleteDashboards",
+                "cloudwatch:PutDashboard"
             ],
+            "Resource": "arn:aws:cloudwatch::{{111122223333}}:dashboard/subnet-*",
             "Effect": "Allow"
         }
     ]
 }
 ```
-
-------
-
-If the `TestInstanceProfileName` parameter is provided, the following IAM permissions are not required to execute the runbook:
-+ iam:CreateRole
-+ iam:CreateInstanceProfile
-+ iam:DetachRolePolicy
-+ iam:AttachRolePolicy
-+ iam:AddRoleToInstanceProfile
-+ iam:RemoveRoleFromInstanceProfile
-+ iam:DeleteRole
-+ iam:DeleteRolePolicy
-+ iam:DeleteInstanceProfile
 
  **Document Steps**
 

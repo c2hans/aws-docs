@@ -21,6 +21,11 @@ Use to specify configuration options for a volume’s storage aggregate or aggre
 Type: [CreateAggregateConfiguration](API_CreateAggregateConfiguration.md) object
 Required: No
 
+ ** CloneConfiguration **   <a name="FSx-Type-CreateOntapVolumeConfiguration-CloneConfiguration"></a>
+Specifies the configuration to use when creating the volume as a clone of another FSx for ONTAP volume. A clone is a writable, point-in-time copy of its parent volume.
+Type: [CreateCloneConfiguration](API_CreateCloneConfiguration.md) object
+Required: No
+
  ** CopyTagsToBackups **   <a name="FSx-Type-CreateOntapVolumeConfiguration-CopyTagsToBackups"></a>
 A boolean flag indicating whether tags for the volume should be copied to backups. This value defaults to false. If it's set to true, all tags for the volume are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is true, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the volume, regardless of this value.
 Type: Boolean

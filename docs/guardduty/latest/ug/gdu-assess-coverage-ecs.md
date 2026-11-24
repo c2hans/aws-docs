@@ -4,11 +4,11 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/gdu-assess-coverage-
 
 # Runtime coverage and troubleshooting for Amazon ECS clusters
 
-The runtime coverage for Amazon ECS clusters includes the tasks running on AWS Fargate and Amazon ECS container instances[1](#ecs-container-instance), which are Amazon EC2 instances registered to the cluster.
+The runtime coverage for Amazon ECS clusters includes the tasks running on AWS Fargate and Amazon ECS container instances<sup>[1](#ecs-container-instance)</sup>, which are Amazon EC2 instances registered to the cluster.
 
 For an Amazon ECS cluster that runs on Fargate, the runtime coverage is assessed at the task level. Runtime Monitoring monitors tasks that start after enablement. To include a Fargate task that was already running, stop and start the task again, and check that the associated service is supported.
 
-For information about Amazon ECS container, see [Capacity creation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity.html).
+<sup></sup>For information about Amazon ECS container, see [Capacity creation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity.html).
 
 **Topics**
 + [Reviewing coverage statistics](#ecs-review-coverage-statistics-ecs-runtime-monitoring)

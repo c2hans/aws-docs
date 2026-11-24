@@ -69,7 +69,7 @@ Allows access to take the [tax interview](https://docs.aws.amazon.com/marketplac
 Allows access to view the tax interview status in AWS Partner Central.
 
 **`tax:GetTaxInfoReportingDocument`**
-Allows AWS Marketplace sellers to view and download tax documents (for example, 1099-K forms) from the Tax dashboard
+Allows AWS Marketplace sellers to view and download tax documents (for example, 1099-K forms) from the Tax and invoices page
 
 **`payments:CreatePaymentInstrument`**
 Allows access to add a bank account to AWS Partner Central.
@@ -306,7 +306,7 @@ To grant permissions to view and use the **File Upload** page, use a policy simi
 ## Example 6: Permissions to use the Support page
 <a name="example-support-page"></a>
 
-If you use an AWS managed policy for AWS Marketplace or AWS Partner Central, you already have the permissions to use the AWS Partner Central and Marketplace Support page. If you use a customer managed policy, use a policy similar to the following example. It grants permissions to create, track, reply to, and resolve support cases. With `aws-marketplace:ListEntities`, the support chat can confirm that your account is a seller.
+If you use an AWS managed policy for AWS Marketplace or AWS Partner Central, you already have the permissions to use the AWS Partner Central and Marketplace Support page. The exception is `AWSMarketplaceSellerProductsReadOnly`, which covers only the `support` read actions in the following example. If you use a customer managed policy, use a policy similar to the following example. With this policy, you can create, track, reply to, and resolve support cases. With `aws-marketplace:ListEntities`, the support chat can confirm that your account is a seller.
 
 You can't scope these actions to specific resources, so each statement must use `"Resource": "*"`. If your account is also an AWS Partner, add `partnercentral:ListPartners` for the `AWS` and `Sandbox` catalogs. For more information, see [Required permissions](https://docs.aws.amazon.com/partner-central/latest/getting-started/getting-support.html#support-permissions) in the *AWS Partner Central Getting Started Guide*.
 

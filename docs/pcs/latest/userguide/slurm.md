@@ -13,6 +13,7 @@ Slurm is an open-source workload manager designed for Linux clusters that provid
 + [Slurm REST API in AWS PCS](slurm-rest-api.md)
 + [Rebooting compute nodes with Slurm in AWS PCS](slurm-reboot.md)
 + [Configuring hardware topology in AWS PCS](hardware-topology.md)
++ [Network topology-aware scheduling in AWS PCS](network-topology.md)
 + [Configuring Multi-Instance GPU (MIG) in AWS PCS](mig-configuration.md)
 + [Extend Slurm functionality on AWS PCS with SPANK plugins](spank.md)
 + [Use Slurm CLI Filter Plugins to customize job submission in AWS PCS](slurm-cli-filter-plugins.md)

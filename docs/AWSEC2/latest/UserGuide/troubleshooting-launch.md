@@ -15,6 +15,7 @@ The following are troubleshooting tips to help you solve issues when launching a
 + [Insufficient permissions](#troubleshooting-launch-permissions)
 + [High CPU usage shortly after Windows starts (Windows instances only)](#high-cpu-issue)
 + [Launching an IMDSv1-enabled instance fails](#launching-an-imdsv1-enabled-instance-fails)
++ [ENA queue count exceeds the maximum](#troubleshooting-launch-ena-queues)
 
 ## Invalid device name
 <a name="troubleshooting-launch-devicename"></a>
@@ -237,3 +238,25 @@ This error is thrown when you attempt to launch a new instance to be IMDSv1 enab
 If you’re ready to use IMDSv2 only, launch your instance with IMDSv1 disabled (`httpTokens = required`). To check if you’re ready, see [Transition to using Instance Metadata Service Version 2](instance-metadata-transition-to-version-2.md).
 
 If you still require IMDSv1 support on new or existing instances, you'll need to disable IMDSv2 enforcement for the account in the Region. To disable IMDSv2 enforcement, set `HttpTokensEnforced` to `disabled`. For more information, see [ModifyInstanceMetadataDefaults](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMetadataDefaults.html) in the Amazon EC2 API Reference. If you prefer to configure this setting using the console, see [Enforce IMDSv2 at the account level](configuring-IMDS-new-instances.md#enforce-imdsv2-at-the-account-level).
+
+## ENA queue count exceeds the maximum
+<a name="troubleshooting-launch-ena-queues"></a>
+
+### Description
+<a name="troubleshooting-launch-ena-queues-description"></a>
+
+You get the `InvalidParameterValue` error with one of the following messages when you try to launch an instance with multiple network interfaces:
++ `The sum of ENA queue counts for all interfaces on network card 0 exceeds the maximum allowed value of 128`
++ `The ENA queue count for an interface on network card 0 exceeds the maximum allowed value of 32`
+
+### Cause
+<a name="troubleshooting-launch-ena-queues-cause"></a>
+
+On instance types that support configurable ENA queue allocation, every network interface takes ENA queues from its network card's pool. Either the network interfaces in your launch request need more queues than the network card provides, or one network interface asks for more queues than the maximum per interface. This can happen even though the number of network interfaces is within the instance type's maximum.
+
+### Solution
+<a name="troubleshooting-launch-ena-queues-solution"></a>
+
+Specify `EnaQueueCount` for each network interface in the launch request so that each count is no more than the maximum per interface, and the total on each network card fits in its pool. For example, for an instance type with a pool of 128 queues per network card and a default of 16, to launch it with 10 network interfaces, specify `"EnaQueueCount":8` for each one (10 × 8 = 80).
+
+For how to calculate a queue count that fits, see [Network interface limits and ENA queues](ena-queues.md#ena-queues-network-interface-limits). For other ENA queue errors, see [Troubleshoot ENA queue issues for Amazon EC2 network interfaces](troubleshooting-ena-queues.md).

@@ -41,7 +41,8 @@ RDS collects disk metrics for `rdsdbdata` as well as additional storage volumes 
   - **Metric:**  `avgQueueLen`  / **Console name:**  **Avg Queue Size**  / **Description:** The number of requests waiting in the I/O device's queue.
   - **Metric:**  `avgReqSz`  / **Console name:**  **Ave Request Size**  / **Description:** The average request size, in kilobytes.
   - **Metric:**  `await`  / **Console name:**  **Disk I/O Await**  / **Description:** The number of milliseconds required to respond to requests, including queue time and service time.
-  - **Metric:**  `device`  / **Console name:**  Not applicable  / **Description:** The identifier of the disk device in use.
+  - **Metric:**  `device`  / **Console name:**  Not applicable  / **Description:** The identifier of the disk device in use. For Aurora local instance storage, this value is `rdstemp`. The Aurora cluster volume entry doesn't include this field.
+  - **Metric:**  `diskQueueDepth`  / **Console name:**  **Disk Queue Depth**  / **Description:** The number of outstanding read and write requests waiting to access the Aurora cluster volume.<br />This metric is only available for Amazon Aurora.
   - **Metric:**  `readIOsPS`  / **Console name:**  **Read IO/s**  / **Description:** The number of read operations per second.
   - **Metric:**  `readKb`  / **Console name:**  **Read Total**  / **Description:** The total number of kilobytes read.
   - **Metric:**  `readKbPS`  / **Console name:**  **Read Kb/s**  / **Description:** The number of kilobytes read per second.

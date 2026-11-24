@@ -11,9 +11,9 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 | --- | --- | --- |
 |  Normal instantiation |  <pre>AmazonDynamoDB standardClient = AmazonDynamoDBClientBuilder.standard()<br />    .withCredentials(credentialsProvider)<br />    .withRegion(Regions.US_EAST_1)<br />    .build();<br />DynamoDBMapper mapper = new DynamoDBMapper(standardClient);</pre>  |  <pre>DynamoDbClient standardClient = DynamoDbClient.builder()<br />    .credentialsProvider(ProfileCredentialsProvider.create())<br />    .region(Region.US_EAST_1)<br />    .build();<br />DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()<br />    .dynamoDbClient(standardClient)<br />    .build();</pre>  |
 |  Minimal instantiation |  <pre>AmazonDynamoDB standardClient = AmazonDynamoDBClientBuilder.standard();<br />DynamoDBMapper mapper = new DynamoDBMapper(standardClient);</pre>  |  <pre>DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.create();</pre>  |
-|  With attribute transformer\* |  <pre>DynamoDBMapper mapper = new DynamoDBMapper(standardClient, <br />                        attributeTransformerInstance);</pre>  |  <pre>DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()<br />    .dynamoDbClient(standardClient)<br />    .extensions(extensionAInstance, extensionBInstance)<br />    .build();</pre>  |
+|  With attribute transformer<sup>\*</sup> |  <pre>DynamoDBMapper mapper = new DynamoDBMapper(standardClient, <br />                        attributeTransformerInstance);</pre>  |  <pre>DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()<br />    .dynamoDbClient(standardClient)<br />    .extensions(extensionAInstance, extensionBInstance)<br />    .build();</pre>  |
 
-\*Extensions in V2 correspond roughly to attribute transformers in V1. The [Use extensions to customize DynamoDB Enhanced Client operations](ddb-en-client-extensions.md) section contains more information on extensions in V2.
+<sup>\*</sup>Extensions in V2 correspond roughly to attribute transformers in V1. The [Use extensions to customize DynamoDB Enhanced Client operations](ddb-en-client-extensions.md) section contains more information on extensions in V2.
 
 ## Establish mapping to DynamoDB table/index
 <a name="dynamodb-mapping-api-changes-mapping"></a>

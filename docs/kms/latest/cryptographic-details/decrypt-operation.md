@@ -31,7 +31,7 @@ The *ciphertext* and the *EKT* are sent, along with the encryption context, over
 
 The HSM runs the following:
 
-1. Decrypts the *EKT* to obtain the *HBK = Decrypt(DKi, EKT) *.
+1. Decrypts the *EKT* to obtain the *HBK = Decrypt(DK<sub>i</sub>, EKT) *.
 
 1. Extracts the nonce *N* from the *ciphertext* structure.
 

@@ -29,6 +29,11 @@ Required: No
 The resource type of the IPAM policy document.
 The AWS service or resource type that can use IP addresses through IPAM policies. Supported services and resource types include:
 + Elastic IP addresses
++ Application Load Balancers
++ Amazon RDS
++ NAT gateways in regional availability mode
++ Lambda Network Connector
++ Automated Internet Firewall
 Type: String
 Valid Values: `alb | eip | rds | rnat`
 Required: No

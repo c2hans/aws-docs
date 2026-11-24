@@ -66,7 +66,7 @@ If you no longer need the IAM service roles that CloudFormation requires to perf
 1. In the confirmation dialog box, choose **Yes, Delete**. If you are sure, you can proceed with the deletion even if the service last accessed data is still loading.
 
 **To delete a service role (AWS CLI)**
-+ Use the following **delete-role** command. When you are prompted to confirm, type **y**, and then press Enter.
++ Use the following **delete-role** command. When you are prompted to confirm, type **y**, and then press **Enter**.
 
   ```
   aws iam delete-role --role-name {{role name}}

@@ -39,6 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::WAFv2::WebACL",
   "Properties" : {
+      "[AnalyticsConfig](#cfn-wafv2-webacl-analyticsconfig)" : {{AnalyticsConfig}},
       "[ApplicationConfig](#cfn-wafv2-webacl-applicationconfig)" : {{ApplicationConfig}},
       "[AssociationConfig](#cfn-wafv2-webacl-associationconfig)" : {{AssociationConfig}},
       "[CaptchaConfig](#cfn-wafv2-webacl-captchaconfig)" : {{CaptchaConfig}},
@@ -65,6 +66,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```yaml
 Type: AWS::WAFv2::WebACL
 Properties:
+  [AnalyticsConfig](#cfn-wafv2-webacl-analyticsconfig): {{
+    AnalyticsConfig}}
   [ApplicationConfig](#cfn-wafv2-webacl-applicationconfig): {{
     ApplicationConfig}}
   [AssociationConfig](#cfn-wafv2-webacl-associationconfig): {{
@@ -98,6 +101,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-wafv2-webacl-properties"></a>
+
+`AnalyticsConfig`  <a name="cfn-wafv2-webacl-analyticsconfig"></a>
+The security analytics configuration for the web ACL. For more information, see [AnalyticsConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html#cfn-wafv2-webacl-analyticsconfig).
+*Required*: No
+*Type*: [AnalyticsConfig](aws-properties-wafv2-webacl-analyticsconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ApplicationConfig`  <a name="cfn-wafv2-webacl-applicationconfig"></a>
 Returns a list of `ApplicationAttribute`s.

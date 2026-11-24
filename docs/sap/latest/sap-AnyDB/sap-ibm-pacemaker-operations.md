@@ -124,7 +124,7 @@ Follow SAP recommended patching processes to update your landscape on AWS. For o
 + Backup/Recovery of databases from S3.
 + Creation of systems from AMI and point-in-time recovery via snapshots.
 + Changing EC2 instance size of pilot light systems.
-+ Validation of integration (AD/DNS, email, 3^rd^ party, and more)
++ Validation of integration (AD/DNS, email, 3<sup>^rd</sup>^ party, and more)
 
 ### Support
 <a name="sap-ibm-pacemaker-support"></a>

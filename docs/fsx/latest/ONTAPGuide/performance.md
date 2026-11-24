@@ -82,14 +82,14 @@ The following table shows the maximum throughput capacity that file systems can 
   <tr><td>Multi-AZ</td><td>1</td><td>18,432</td><td>4,500</td></tr>
   <tr><td rowspan="2"><b>Second-generation</b></td><td>Single-AZ</td><td rowspan="2">6,144</td><td rowspan="2">2,048</td><td>12</td><td>73,728</td><td>24,576</td></tr>
   <tr><td>Multi-AZ</td><td>1</td><td>6,144</td><td>2,048</td></tr>
-  <tr><td rowspan="2"><b>First-generation</b></td><td>Single-AZ</td><td rowspan="2">4,0961, 2</td><td>1,0001</td><td>1</td><td>4,0961, 2</td><td>1,0001</td></tr>
-  <tr><td>Multi-AZ</td><td>1,8001</td><td>1</td><td>4,0961, 2</td><td>1,8001</td></tr>
+  <tr><td rowspan="2"><b>First-generation</b></td><td>Single-AZ</td><td rowspan="2">4,096<sup>1, 2</sup></td><td>1,000<sup>1</sup></td><td>1</td><td>4,096<sup>1, 2</sup></td><td>1,000<sup>1</sup></td></tr>
+  <tr><td>Multi-AZ</td><td>1,800<sup>1</sup></td><td>1</td><td>4,096<sup>1, 2</sup></td><td>1,800<sup>1</sup></td></tr>
 </tbody>
 </table>
 
 **Note**
-1 Varies by AWS Region. See [Availability by AWS Region](#perf-region-availability).
-2 To provision 4 GBps of throughput capacity, your file system must be configured with a minimum of 5,120 GiB of SSD storage capacity and 160,000 SSD IOPS.
+<sup>1</sup> Varies by AWS Region. See [Availability by AWS Region](#perf-region-availability).
+<sup>2</sup> To provision 4 GBps of throughput capacity, your file system must be configured with a minimum of 5,120 GiB of SSD storage capacity and 160,000 SSD IOPS.
 
 ## Impact of storage capacity on performance
 <a name="storage-capacity-and-performance"></a>

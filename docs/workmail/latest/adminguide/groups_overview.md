@@ -6,7 +6,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMa
 
 # Working with groups
 
-You can use groups as distribution lists in Amazon WorkMail for receiving emails for generic email addresses, such as sales@example.com or support@example.com. You can create multiple email aliases for a group.
+You can use groups as distribution lists in Amazon WorkMail for receiving emails for generic email addresses, such as [sales@example.com](mailto:sales@example.com) or [support@example.com](mailto:support@example.com). You can create multiple email aliases for a group.
 
 You can also use groups as security groups to share a mailbox or calendar with a certain team.
 

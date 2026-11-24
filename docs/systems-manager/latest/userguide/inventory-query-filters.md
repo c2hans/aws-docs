@@ -20,7 +20,7 @@ After you collect inventory data, you can use the filter capabilities in AWS Sys
 
 1. Enter a value in the text box. For example, enter *Amazon* (SSM Agent is named *Amazon SSM Agent*).
 
-1. Press Enter. The system returns a list of managed nodes that include an application name that begins with the word *Amazon*.
+1. Press **Enter**. The system returns a list of managed nodes that include an application name that begins with the word *Amazon*.
 
 **Note**
 You can combine multiple filters to refine your search.

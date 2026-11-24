@@ -55,32 +55,56 @@ Before you begin using the procedures described in the following sections, be su
 + You have created a destination FSx for ONTAP file system with an SVM, but you have not created a destination volume. For more information, see [Creating file systems](creating-file-systems.md).
 
 The commands in these procedures use the following cluster, SVM, and volume aliases:
-+ {{`FSx-Dest`}} – the destination (FSx) cluster's ID (in the format FSxIdabcdef1234567890a).
-+ {{`OnPrem-Source`}} – the source cluster's ID.
++ {{`FSx-Dest`}} – the destination (FSx) cluster name, used in ONTAP CLI commands (in the format FSxIdabcdef1234567890a).
++ {{`FSx-DestID`}} – the destination file system ID, used in AWS CLI commands (in the format fs-abcdef1234567890a). The cluster name is `FSxId` followed by the same characters.
++ {{`OnPrem-Source`}} – the source cluster's name.
 + {{`DestSVM`}} – the destination SVM name.
++ {{`DestSVMID`}} – the destination SVM ID (in the format svm-abcdef1234567890a).
 + {{`SourceSVM`}} – the source SVM name.
++ {{`DestVolID`}} – the destination volume ID (in the format fsvol-abcdef1234567890a).
 + Both the source and destination volume names are `vol1`.
 
 **Note**
 An FSx for ONTAP file system is referred to as a cluster in all of the ONTAP CLI commands.
 
-The procedures in this section use the following NetApp ONTAP CLI commands.
+The procedures in this section use the following AWS CLI or NetApp ONTAP CLI commands.
 + [volume create](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/volume__create.html) command
 + [cluster](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/TOC__cluster.html) commands
 + [vserver peer](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/TOC__vserver__peer.html) commands
 + [snapmirror](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/TOC__snapmirror.html) commands
 
-You will use the NetApp ONTAP CLI to create and manage a SnapMirror configuration on your FSx for ONTAP file system. For more information, see [Using the NetApp ONTAP CLI](managing-resources-ontap-apps.md#netapp-ontap-cli).
+On your FSx for ONTAP file system, you can use either the AWS CLI or the NetApp ONTAP CLI. On your on-premises cluster, you use the NetApp ONTAP CLI. For more information about the ONTAP CLI, see [Using the NetApp ONTAP CLI](managing-resources-ontap-apps.md#netapp-ontap-cli).
 
 ## Create the destination volume
 <a name="create-destination-volume"></a>
 
-You can create a data protection (DP) destination volume using the Amazon FSx console, the AWS CLI, and the Amazon FSx API, in addition to the NetApp ONTAP CLI and REST API. For information about creating a destination volume using the Amazon FSx console and AWS CLI, see [Creating volumes](creating-volumes.md).
+You can create a data protection (DP) destination volume using the Amazon FSx console, the AWS CLI, and the Amazon FSx API, in addition to the NetApp ONTAP CLI and REST API. For information about creating a destination volume using the Amazon FSx console, see [Creating volumes](creating-volumes.md).
 
 **Note**
 ONTAP does not preserve post-process compression savings achieved at the source in the destination DP volume when the destination volume's tiering policy is `All`. To preserve post-process compression savings, you should set the destination volume tiering policy to `Auto` and enable inactive-data-compression on the destination file system to re-apply post-process compression savings at the destination.
 
-In the following procedure, you will use the NetApp ONTAP CLI to create a destination volume on your FSx for ONTAP file system. You will need the `fsxadmin` password and the IP address or DNS name of the file system's management port.
+Create a volume on the destination file system that has a storage capacity that is at least equal to the storage capacity of the source volume, and designate it as a DP volume. If you plan to use data tiering, we recommend that you set the tiering policy to `All`. This ensures that your data is immediately transferred to capacity pool storage and prevents you from running out of capacity on your SSD tier. After migration, you can switch the tiering policy to `Auto`.
+
+**Note**
+File metadata is always stored on the SSD-based primary tier, regardless of the volume's data tiering policy.
+
+### To create the destination volume (AWS CLI)
+<a name="create-destination-volume-cli"></a>
++ Use the **create-volume** command with `OntapVolumeType` set to `DP`.
+
+  ```
+  aws fsx create-volume \
+      --volume-type ONTAP \
+      --name vol1 \
+      --ontap-configuration '{"StorageVirtualMachineId": "{{DestSVMID}}", "SizeInMegabytes": 1024, "OntapVolumeType": "DP", "TieringPolicy": {"Name": "ALL"}}'
+  ```
+
+  Note the `VolumeId` in the output. You use it as {{`DestVolID`}} when you create the SnapMirror relationship.
+
+### To create the destination volume (ONTAP CLI)
+<a name="create-destination-volume-ontap"></a>
+
+You need the `fsxadmin` password and the IP address or DNS name of the file system's management port.
 
 1. Establish an SSH session with the destination file system using user `fsxadmin` and the password that you set when you created the file system.
 
@@ -88,11 +112,7 @@ In the following procedure, you will use the NetApp ONTAP CLI to create a destin
    ssh fsxadmin@{{file-system-management-endpoint-ip-address}}
    ```
 
-1. Create a volume on the destination cluster that has a storage capacity that is at least equal to the storage capacity of the source volume. Use `-type DP` to designate it as a destination for a SnapMirror relationship.
-
-   If you plan to use data tiering, we recommended that you set `-tiering-policy` to `all`. This ensures that your data is immediately transferred to capacity pool storage and prevents you from running out of capacity on your SSD tier. After migration, you can switch `-tiering-policy` to `auto`.
-**Note**
-File metadata is always stored on the SSD-based primary tier, regardless of the volume's data tiering policy.
+1. Create the volume. Use `-type DP` to designate it as a destination for a SnapMirror relationship.
 
    ```
    FSx-Dest::> vol create -vserver {{DestSVM}} -volume vol1 -aggregate aggr1 -size 1g -type DP -tiering-policy all
@@ -125,19 +145,29 @@ For second-generation and third-generation Single-AZ file systems, there are two
 ## Establish cluster peering between source and destination
 <a name="cluster-peering"></a>
 
-Establish a cluster peer relationship on the destination cluster by providing the inter-cluster IP addresses. You will also need to create a passphrase which you will need to enter in when you establish cluster peering on the source cluster.
+Establish a cluster peer relationship on both clusters by providing each cluster's inter-cluster IP addresses and the same passphrase. First create the cluster peer on the destination file system, and then on the source cluster. For more information, see [Creating a cluster peer](creating-cluster-peers.md).
 
-1. Set up peering on the destination cluster using the following command. For second-generation and third-generation Single-AZ file systems, you'll need to provide each inter-cluster IP address.
+1. Create the cluster peer on the destination file system. For second-generation and third-generation Single-AZ file systems, you'll need to provide each inter-cluster IP address. Use one of the following:
+   + **AWS CLI** – Create a secret in AWS Secrets Manager that contains the peering passphrase. For more information, see [Creating the cluster peer passphrase](creating-cluster-peers.md#cluster-peer-passphrase-secret). Then use the **create-cluster-peer** command. For `--peer-addresses`, specify the source cluster's inter-cluster IP addresses.
 
-   ```
-   FSx-Dest::> cluster peer create -address-family ipv4 -peer-addrs {{source_inter_1}},{{source_inter_2}}
+     ```
+     aws fsx create-cluster-peer \
+         --file-system-id {{FSx-DestID}} \
+         --peer-addresses {{source_inter_1}} {{source_inter_2}} \
+         --passphrase-secret-arn {{passphrase-secret-arn}} \
+         --allowed-svm-mode ALL
+     ```
+   + **ONTAP CLI** – Run the following command, and enter a passphrase when prompted.
 
-   Enter the passphrase:
-   Confirm the passphrase:
-   Notice: Now use the same passphrase in the "cluster peer create" command in the other cluster.
-   ```
+     ```
+     FSx-Dest::> cluster peer create -address-family ipv4 -peer-addrs {{source_inter_1}},{{source_inter_2}}
 
-1. Next, establish the cluster peer relationship on the source cluster. You’ll need to enter the passphrase you created above to authenticate. For second-generation and third-generation Single-AZ file systems, you'll need to provide each inter-cluster IP address.
+     Enter the passphrase:
+     Confirm the passphrase:
+     Notice: Now use the same passphrase in the "cluster peer create" command in the other cluster.
+     ```
+
+1. Create the cluster peer on the source cluster. You'll need to enter the same passphrase that you used on the destination file system. For second-generation and third-generation Single-AZ file systems, you'll need to provide each inter-cluster IP address.
 
    ```
    OnPrem-Source::> cluster peer create -address-family ipv4 -peer-addrs {{dest_inter_1}},{{dest_inter_2}}
@@ -146,7 +176,13 @@ Establish a cluster peer relationship on the destination cluster by providing th
    Confirm the passphrase:
    ```
 
-1. Verify the peering was successful using the following command on the source cluster. In the output, `Availability` should be set to `Available`.
+1. Verify that the peering was successful. If you use the AWS CLI, run the **describe-cluster-peers** command. In the output, `Status` should be `available`.
+
+   ```
+   aws fsx describe-cluster-peers --filters Name=file-system-id,Values={{FSx-DestID}}
+   ```
+
+   If you use the ONTAP CLI, run the following command on the source cluster. In the output, `Availability` should be set to `Available`.
 
    ```
    OnPrem-Source::> cluster peer show
@@ -159,27 +195,41 @@ Establish a cluster peer relationship on the destination cluster by providing th
 ## Create an SVM peering relationship
 <a name="svm-peering"></a>
 
-With cluster peering established, the next step is peering the SVMs. Create an SVM peering relationship on the destination cluster (FSx-Dest) using the `vserver peer` command. Additional aliases used in the following commands are as follows:
-+ `DestLocalName` – this is name used to identify the destination SVM when configuring SVM peering on the source SVM.
-+ `SourceLocalName` – this is the name used to identify the source SVM when configuring SVM peering on the destination SVM.
+With cluster peering established, the next step is peering the SVMs. Create an SVM peering relationship from the destination SVM, and then accept it on the source cluster. For more information, see [Creating an SVM peer](creating-svm-peers.md).
 
-1. Use the following command to create an SVM peering relationship between the source and destination SVMs.
+1. Create the SVM peer on the destination file system. Use one of the following:
+   + **AWS CLI** – Use the **create-storage-virtual-machine-peer** command. Specify the destination SVM by its ID, and the source SVM and source cluster by their names.
 
-   ```
-   FSx-Dest::> vserver peer create -vserver {{DestSVM}} -peer-vserver {{SourceSVM}} -peer-cluster {{OnPrem-Source}} -applications snapmirror -local-name {{SourceLocalName}}
+     ```
+     aws fsx create-storage-virtual-machine-peer \
+         --storage-virtual-machine-id {{DestSVMID}} \
+         --peer-svm-name {{SourceSVM}} \
+         --peer-cluster-name {{OnPrem-Source}} \
+         --applications SNAPMIRROR
+     ```
+   + **ONTAP CLI** – Run the following command.
 
-    Info: [Job 207] 'vserver peer create' job queued
-   ```
+     ```
+     FSx-Dest::> vserver peer create -vserver {{DestSVM}} -peer-vserver {{SourceSVM}} -peer-cluster {{OnPrem-Source}} -applications snapmirror
+
+      Info: [Job 207] 'vserver peer create' job queued
+     ```
 
 1. Accept the peering relationship on the source cluster:
 
    ```
-   OnPrem-Source::> vserver peer accept -vserver {{SourceSVM}} -peer-vserver {{DestSVM}} -local-name {{DestLocalName}}
+   OnPrem-Source::> vserver peer accept -vserver {{SourceSVM}} -peer-vserver {{DestSVM}}
 
     Info: [Job 211] 'vserver peer accept' job queued
    ```
 
-1. Verify the SVM peering status using the following command; `Peer State` should be set to `peered` in the response.
+1. Verify the SVM peering status. If you use the AWS CLI, run the **describe-storage-virtual-machine-peers** command. In the output, `State` should be `PEERED`.
+
+   ```
+   aws fsx describe-storage-virtual-machine-peers --filters Name=file-system-id,Values={{FSx-DestID}}
+   ```
+
+   If you use the ONTAP CLI, run the following command on the source cluster. In the output, `Peer State` should be set to `peered`.
 
    ```
    OnPrem-Source::> vserver peer show
@@ -193,32 +243,45 @@ With cluster peering established, the next step is peering the SVMs. Create an S
 ## Create the SnapMirror relationship
 <a name="snapmirror-relationship"></a>
 
-Now that you have peered the source and destination SVMs, the next steps are to create and initialize the SnapMirror relationship on the destination cluster.
+Now that you have peered the source and destination SVMs, the next step is to create the SnapMirror relationship on the destination file system. For more information, see [Creating a SnapMirror relationship](creating-snapmirror-relationships.md).
 
 **Note**
-Once you create and initialize a SnapMirror relationship, the destination volumes are read-only until the relationship is broken.
-+ Use the `[snapmirror create](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__create.html)` command to create the SnapMirror relationship on the destination cluster. The `snapmirror create` command must be used from the destination SVM.
+Once you create a SnapMirror relationship, the destination volumes are read-only until the relationship is broken.
 
-  You can optionally use `-throttle` to set the maximum bandwidth (in kB/sec) for the SnapMirror relationship.
+### To create the SnapMirror relationship (AWS CLI)
+<a name="snapmirror-relationship-cli"></a>
++ Use the **create-snapmirror-relationship** command to create the SnapMirror relationship. For `--destination`, specify the ID of the destination volume that you created. You can optionally use `--throttle-in-kbps` to set the maximum bandwidth (in KB/s) for the relationship, where `0` means unlimited.
 
   ```
-  FSx-Dest::> snapmirror create -source-path {{SourceLocalName}}:vol1 -destination-path {{DestSVM}}:vol1 -vserver {{DestSVM}} -throttle unlimited
-
-   Operation succeeded: snapmirror create for the relationship with destination "DestSVM:vol1".
+  aws fsx create-snapmirror-relationship \
+      --source Path={{SourceSVM}}:vol1 \
+      --destination VolumeId={{DestVolID}} \
+      --throttle-in-kbps 0
   ```
+
+  Amazon FSx creates the relationship and starts the initial (baseline) transfer.
+
+### To create the SnapMirror relationship (ONTAP CLI)
+<a name="snapmirror-relationship-ontap"></a>
+
+1. Use the `[snapmirror create](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__create.html)` command to create the SnapMirror relationship on the destination cluster. You can optionally use `-throttle` to set the maximum bandwidth (in kB/sec) for the SnapMirror relationship.
+
+   ```
+   FSx-Dest::> snapmirror create -source-path {{SourceSVM}}:vol1 -destination-path {{DestSVM}}:vol1 -vserver {{DestSVM}} -throttle unlimited
+
+    Operation succeeded: snapmirror create for the relationship with destination "DestSVM:vol1".
+   ```
+
+1. Start the initial (baseline) transfer. SnapMirror begins transferring snapshots of data from the source volume to the destination volume.
+
+   ```
+   FSx-Dest::> snapmirror initialize -destination-path {{DestSVM}}:vol1 -source-path {{SourceSVM}}:vol1
+   ```
 
 ## Transfer data to your FSx for ONTAP file system
 <a name="transfer-data"></a>
 
-Now that the you've created the SnapMirror relationship, you can transfer data to the destination file system.
-
-1. You can transfer data to the destination file system by running the following command on the destination file system.
-**Note**
-Once you run this command, SnapMirror begins transferring snapshots of data from the source volume to the destination volume.
-
-   ```
-   FSx-Dest::> snapmirror initialize -destination-path {{DestSVM}}:vol1 -source-path {{SourceLocalName}}:vol1
-   ```
+When you create the SnapMirror relationship, Amazon FSx starts transferring snapshots of data from the source volume to the destination volume.
 
 1. If you are migrating data that is being actively used, you’ll need to update your destination cluster so that it remains synced with your source cluster. To perform a one-time update to the destination cluster, run the following command.
 
@@ -226,7 +289,15 @@ Once you run this command, SnapMirror begins transferring snapshots of data from
    FSx-Dest::> snapmirror update -destination-path {{DestSVM}}:vol1
    ```
 
-1. You can also schedule hourly or daily updates prior to completing the migration and moving your clients to FSx for ONTAP. You can establish a SnapMirror update schedule using the [`snapmirror modify`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__modify.html) command.
+1. You can also schedule hourly or daily updates prior to completing the migration and moving your clients to FSx for ONTAP. To set a transfer schedule with the AWS CLI, use the **update-snapmirror-relationship** command.
+
+   ```
+   aws fsx update-snapmirror-relationship \
+       --snapmirror-relationship-id {{snapmirror-0123456789abcdef0}} \
+       --transfer-schedule hourly
+   ```
+
+   To set a transfer schedule with the ONTAP CLI, use the [`snapmirror modify`](https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-9101/snapmirror__modify.html) command.
 
    ```
    FSx-Dest::> snapmirror modify -destination-path {{DestSVM}}:vol1 -schedule hourly

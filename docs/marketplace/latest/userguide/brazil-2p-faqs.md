@@ -73,7 +73,7 @@ Enroll in the AWS ISV Accelerate program by joining the [AWS Partner Network](ht
 
 **Invoicing**
 + A seller invoice is generated for each transaction, which you can retain for your home-country tax records.
-+ Seller invoices are accessible from the Tax Portal in AWS Partner Central for download and record-keeping.
++ Seller invoices are accessible from the **Disbursement invoices** tab on the **Tax and invoices** page in AWS Partner Central for download and record-keeping.
 
 **Tax compliance**
 + Ensure your tax identity and bank details are correctly configured during seller registration.
@@ -102,7 +102,7 @@ The 6% (new) and 5% (renewal) margins are current and subject to change.
 
 ## What documents do I receive?
 <a name="brazil-2p-faq-documents"></a>
-+ **Seller invoice**: An invoice is generated and issued under your name for each transaction. To find it in AWS Partner Central, choose **Tax** in the left side navigation, and then, in **Tax details**, choose **View invoices**. For consumption or overages transactions, a monthly invoice is generated based on the usage.
++ **Seller invoice**: An invoice is generated and issued under your name for each transaction. To find it in AWS Partner Central, in the left navigation pane, under **Settings**, choose **Tax and invoices**, and then choose the **Disbursement invoices** tab. Review each invoice and notify AWS of any errors or discrepancies. For consumption or overages transactions, a monthly invoice is generated based on the usage.
 + **Seller reporting**: Reporting through the Seller Insights dashboard, showing transaction details, WHT amounts, authorization IDs, and payment status.
 + **WHT confirmation letter**: If you require additional documentation to substantiate that WHT deductions were performed, contact your Partner Development Manager to request a WHT confirmation letter. Because of IRRF filing timelines, this letter is only available after AWS Brazil completes its annual IRRF filing with the Brazilian Federal Revenue, typically by February of the following calendar year.
 

@@ -105,6 +105,8 @@ Each source load balancer has its own configuration file, terminology, behavior 
 
 AWS Transform migrates the Local Traffic Manager (LTM) module of F5 BIG-IP: its virtual servers, with their pools and monitors. AWS Transform doesn't migrate other BIG-IP modules.
 
+You can run F5 BIG-IP Virtual Edition (VE) on AWS alongside ALBs and NLBs to keep using other BIG-IP modules or iRules. For more information, see [Migrating from F5 BIG-IP to F5 BIG-IP VE on the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/introduction.html).
+
 **Configuration file:** Provide the `bigip.conf` configuration file that you export from your F5 BIG-IP system, or an archive (zip or tar) of the configuration files, including `bigip_base.conf` and partition files. F5 calls each entry that receives client traffic a virtual server, identified by a VIP.
 
 **Behavior changes:** You must acknowledge each F5 behavior change before AWS Transform includes the load balancers.

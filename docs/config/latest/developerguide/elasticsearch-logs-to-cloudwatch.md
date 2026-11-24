@@ -33,7 +33,7 @@ Comma-separated list of logs that are enabled. Valid values are 'search', 'index
 ...
 ```
 
-\*An object with one or more of the following keys: `SEARCH_SLOW_LOGS`, `ES_APPLICATION_LOGS`, `INDEX_SLOW_LOGS`, `AUDIT_LOGS`, depending on the types of logs you want to publish. Each key needs a valid `LogPublishingOption` value.
+<sup>\*</sup>An object with one or more of the following keys: `SEARCH_SLOW_LOGS`, `ES_APPLICATION_LOGS`, `INDEX_SLOW_LOGS`, `AUDIT_LOGS`, depending on the types of logs you want to publish. Each key needs a valid `LogPublishingOption` value.
 
  For more information on proactive evaluation, see [Evaluation Mode](./evaluate-config-rules.html).
 

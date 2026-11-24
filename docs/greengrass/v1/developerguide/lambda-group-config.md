@@ -184,7 +184,7 @@ You can use the AWS IoT Greengrass dependency checker to determine which isolati
    sudo ./check_ggc_dependencies | more
    ```
 
-1. Where `more` appears, press the Spacebar key to display another page of text.
+1. Where `more` appears, press the **Spacebar** key to display another page of text.
 
 For information about the **modprobe** command, run **man modprobe** in the terminal.
 

@@ -76,15 +76,15 @@ Amazon Cognito limits the claims and scopes that you can add, modify, or suppres
 | token\_use | ID, Access | No | No | No | N/A | N/A | User, machine | N/A |
 | sid[5](#cognito-pretoken-sid-note) | ID, Access | No | No | No | N/A | N/A | User, machine | N/A |
 
- 1 Access tokens for machine identities are only available with `v3_0` of the trigger input event. Event version three is only available in the **Essentials** and **Plus** feature tiers. User pools on the **Lite** tier can receive `v1_0` events. User pools on the **Lite** tier with advanced security features can receive `v1_0` and `v2_0` events.
+ <sup>1</sup> Access tokens for machine identities are only available with `v3_0` of the trigger input event. Event version three is only available in the **Essentials** and **Plus** feature tiers. User pools on the **Lite** tier can receive `v1_0` events. User pools on the **Lite** tier with advanced security features can receive `v1_0` and `v2_0` events.
 
-2 Configure your pre token generation trigger to event version `v1_0` for ID token only, `v2_0` for ID and access token, `v3_0` for ID and access token with capabilities for machine identities.
+<sup>2</sup> Configure your pre token generation trigger to event version `v1_0` for ID token only, `v2_0` for ID and access token, `v3_0` for ID and access token with capabilities for machine identities.
 
- 3 To suppress the `cognito:preferred_role` and `cognito:roles` claims, add `cognito:groups` to `claimsToSuppress`.
+ <sup>3</sup> To suppress the `cognito:preferred_role` and `cognito:roles` claims, add `cognito:groups` to `claimsToSuppress`.
 
- 4 You can add an `aud` claim to access tokens, but its value must match the app client ID of the current session. You can derive the client ID in the request event from `event.callerContext.clientId`.
+ <sup>4</sup> You can add an `aud` claim to access tokens, but its value must match the app client ID of the current session. You can derive the client ID in the request event from `event.callerContext.clientId`.
 
- 5 Amazon Cognito reserves the `sid` claim for session management. When you enable session tracking for your user pool, Amazon Cognito rejects attempts to add or override the `sid` claim with a pre token generation trigger. For more information, see [Managing user sessions](managing-user-sessions.md).
+ <sup>5</sup> Amazon Cognito reserves the `sid` claim for session management. When you enable session tracking for your user pool, Amazon Cognito rejects attempts to add or override the `sid` claim with a pre token generation trigger. For more information, see [Managing user sessions](managing-user-sessions.md).
 
 ## Customizing the identity token
 <a name="user-pool-lambda-pre-token-generation-idtoken"></a>
@@ -311,7 +311,7 @@ The versions two and three request events add fields that customize the access t
 | scopesToAdd | A list of scopes that you want to add to the `scope` claim in your user's access token. You can't add scope values that contain one or more blank-space characters. | 2 |
 | scopesToSuppress | A list of scopes that you want to remove from the `scope` claim in your user's access token. | 2 |
 
- \* Response objects to version one events can return strings. Response objects to version two and three events can return [complex objects](#user-pool-lambda-pre-token-generation-event-versions).
+ <sup>\*</sup> Response objects to version one events can return strings. Response objects to version two and three events can return [complex objects](#user-pool-lambda-pre-token-generation-event-versions).
 
 ## Pre token trigger event version two example: Add and suppress claims, scopes, and groups
 <a name="aws-lambda-triggers-pre-token-generation-example-version-2-overview"></a>

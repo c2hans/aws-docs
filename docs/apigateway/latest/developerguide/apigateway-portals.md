@@ -2,9 +2,12 @@
 source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-portals.html
 ---
 
-# API Gateway portals
+# API Gateway Portals
 
 You can use an API Gateway portal to share your APIs and API documentation with API consumers in a web page. A portal contains a set of *portal products*. Each portal product is a logical grouping of REST APIs and contains the documentation that you create and publish for your API consumers. Product pages within a portal contain the custom documentation at the portal product level. *Product REST endpoint pages* contain the documentation for each of the REST APIs and the path, method, and stage of a REST API. The combination of product pages and product REST endpoint pages provide the complete documentation to allow API consumers to learn how to start using your REST APIs.
+
+**Note**
+This section describes API Gateway Portals, the portals you created before API Portal launched. You now manage these portals from the **Documentation portals** section of API Portal in the API Gateway console, and you create new portals as API Portal documentation portals; see [Documentation portals in API Portal](apiportal-documentation-portals.md). The API Gateway Portals API and AWS CLI (the `apigateway` portal operations) are unchanged, and existing portals continue to work under their current pricing. There is no migration between the two at launch.
 
 Use a portal to do the following:
 + Use API Gateway for your entire API lifecycle, from creating your APIs to documenting and distributing them.

@@ -106,6 +106,7 @@ Nitro Enclaves has the following requirements:
   <tr><td>C7a</td><td>All instance types, <b>except</b>: <code>c7a.medium</code> | <code>c7a.large</code> | <code>c7a.metal-48xl</code></td></tr>
   <tr><td>C7g</td><td>All instance types, <b>except</b>: <code>c7g.medium</code> | <code>c7g.metal</code></td></tr>
   <tr><td>C7gd</td><td>All instance types, <b>except</b>: <code>c7gd.medium</code> | <code>c7gd.metal</code></td></tr>
+  <tr><td>C7gn</td><td>All instance types, <b>except</b>: <code>c7gn.medium</code> | <code>c7gn.metal</code></td></tr>
   <tr><td>C7i</td><td>All instance types, <b>except</b>: <code>c7i.large</code> | <code>c7i.metal-24xl</code> | <code>c7i.metal-48xl</code></td></tr>
   <tr><td>C8a</td><td>All instance types, <b>except</b>: <code>c8a.medium</code> | <code>c8a.metal-24xl</code> | <code>c8a.metal-48xl</code></td></tr>
   <tr><td>C8g</td><td>All instance types, <b>except</b>: <code>c8g.medium</code> | <code>c8g.metal-24xl</code> | <code>c8g.metal-48xl</code></td></tr>
@@ -222,9 +223,9 @@ Nitro Enclaves has the following requirements:
   <tr><td>P5e</td><td>All instance types.</td></tr>
   <tr><td>P5en</td><td>All instance types.</td></tr>
   <tr><td>P6-B300</td><td>All instance types.</td></tr>
-  <tr><td>P6e-GB200</td><td>All instance types.</td></tr>
   <tr><td>Trn2</td><td>All instance types.</td></tr>
   <tr><td>Trn2u</td><td>All instance types.</td></tr>
+  <tr><td>Trn3</td><td>All instance types.</td></tr>
 </tbody>
 </table>
 

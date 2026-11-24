@@ -10,7 +10,7 @@ Create an Amazon Machine Image (AMI) from a Windows Server 2008 R2, 2012 R2, 201
 + Windows Server 2008 R2 to Windows Server 2016
 + Windows Server 2012 R2 to Windows Server 2016
 + Windows Server 2012 R2 to Windows Server 2019
-+ Windows Server 2012 R2 to Windows Server 2022 [1](#awsec2-clone-upgrade-windows-footnote1)
++ Windows Server 2012 R2 to Windows Server 2022 <sup>[1](#awsec2-clone-upgrade-windows-footnote1)</sup>
 + Windows Server 2012 R2 to Windows Server 2025
 + Windows Server 2016 to Windows Server 2019
 + Windows Server 2016 to Windows Server 2022
@@ -19,7 +19,7 @@ Create an Amazon Machine Image (AMI) from a Windows Server 2008 R2, 2012 R2, 201
 + Windows Server 2019 to Windows Server 2025
 + Windows Server 2022 to Windows Server 2025
 
-1 Microsoft's Windows Setup permits this in-place upgrade to complete. However, Microsoft does not list Windows Server 2012 R2 to Windows Server 2022 as a supported upgrade path. This path exceeds Microsoft's two-version limit for targets of Windows Server 2022 and earlier. See Microsoft's [Supported in-place upgrade paths by version](https://learn.microsoft.com/en-us/windows-server/get-started/install-upgrade-migrate?tabs=media#supported-in-place-upgrade-paths-by-version). For a Microsoft-supported outcome, upgrade Windows Server 2012 R2 to Windows Server 2025 directly. Alternatively, upgrade Windows Server 2012 R2 to Windows Server 2019 first, and then to Windows Server 2022.
+<sup>1</sup> Microsoft's Windows Setup permits this in-place upgrade to complete. However, Microsoft does not list Windows Server 2012 R2 to Windows Server 2022 as a supported upgrade path. This path exceeds Microsoft's two-version limit for targets of Windows Server 2022 and earlier. See Microsoft's [Supported in-place upgrade paths by version](https://learn.microsoft.com/en-us/windows-server/get-started/install-upgrade-migrate?tabs=media#supported-in-place-upgrade-paths-by-version). For a Microsoft-supported outcome, upgrade Windows Server 2012 R2 to Windows Server 2025 directly. Alternatively, upgrade Windows Server 2012 R2 to Windows Server 2019 first, and then to Windows Server 2022.
 
 The upgrade operation is a multi-step process that can take 2 hours to complete. We recommend performing an operating system upgrade on instances with at least 2 vCPUs and 4 GB of RAM. The automation creates an AMI from the instance and then launches a temporary instance from the newly created AMI in the `SubnetId` that you specify. The security groups associated with your original instance are applied to the temporary instance. The automation then performs an in-place upgrade to the `TargetWindowsVersion` on the temporary instance. Directly upgrading Windows Server 2008 R2 to Windows Server 2016, 2019, or 2022 is not supported. To upgrade a Windows Server 2008 R2 instance to one of these versions, the automation performs an in-place upgrade twice. The automation also updates or installs the AWS drivers required by the temporary instance. After the upgrade, the automation creates a new AMI from the temporary instance and then terminates the temporary instance.
 

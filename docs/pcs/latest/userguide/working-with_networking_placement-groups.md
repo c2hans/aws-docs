@@ -30,3 +30,5 @@ We recommended you include a **cluster** placement group when you configure an A
      ```
 
 1.  Include the placement group in the EC2 launch template for the AWS PCS compute node group.
+
+A cluster placement group also helps network topology-aware scheduling. Because it packs instances close together, Slurm has more nodes under the same network switches to choose from when it allocates a multi-node job. For more information, see [Network topology-aware scheduling in AWS PCS](network-topology.md).

@@ -38,13 +38,13 @@ DataSync supports some transfers between storage resources that are associated w
 |  + Amazon S3  |  + NFS<br />+ SMB<br />+ HDFS<br />+ Object Storage  | Yes |
 |  + Amazon S3  |  + Amazon S3<br />+ Amazon EFS<br />+ Amazon FSx  | No |
 |  + Amazon EFS<br />+ Amazon FSx  |  + Amazon S3  | No |
-|  + Amazon EFS1<br />+ Amazon FSx for OpenZFS1<br />+ Amazon FSx for Windows File Server2<br />+ Amazon FSx for NetApp ONTAP3  |  + Amazon EFS<br />+ Amazon FSx  | Yes (when used as an NFS/SMB location) |
+|  + Amazon EFS<sup>1</sup><br />+ Amazon FSx for OpenZFS<sup>1</sup><br />+ Amazon FSx for Windows File Server<sup>2</sup><br />+ Amazon FSx for NetApp ONTAP<sup>3</sup>  |  + Amazon EFS<br />+ Amazon FSx  | Yes (when used as an NFS/SMB location) |
 
-1 Configured as an [NFS location](create-nfs-location.md).
+<sup>1</sup> Configured as an [NFS location](create-nfs-location.md).
 
-2 Configured as an [SMB location](create-smb-location.md).
+<sup>2</sup> Configured as an [SMB location](create-smb-location.md).
 
-3 Configured as an NFS or SMB location.
+<sup>3</sup> Configured as an NFS or SMB location.
 
 ## Supported transfers in the same AWS Region
 <a name="working-with-locations-same-region"></a>

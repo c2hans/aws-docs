@@ -34,16 +34,16 @@ The following table compares the features that are supported by the Amazon DCV c
 | [Amazon DCV Extensions](https://docs.aws.amazon.com/dcv/latest/extsdkguide/what-is.html) | ✓ | ✗ | ✓ | ✓ |
 | [WebAuthN](https://docs.aws.amazon.com/dcv/latest/adminguide/config-webauthn-redirect.html) | ✓ | ✗ | ✓ | ✓ |
 
-1These clients support printing to a file only. They don't support printing to a local printer.
+<sup>1</sup>These clients support printing to a file only. They don't support printing to a local printer.
 
-2 Supported by Firefox, Edge, and Google Chrome.
+<sup>2</sup> Supported by Firefox, Edge, and Google Chrome.
 
-3 Supported in Chromium-based browsers only. This includes Google Chrome and Microsoft Edge version 79 and later. Tilt and pressure events aren't supported in other browsers.
+<sup>3</sup> Supported in Chromium-based browsers only. This includes Google Chrome and Microsoft Edge version 79 and later. Tilt and pressure events aren't supported in other browsers.
 
-4Support for up to two monitors.
+<sup>4</sup>Support for up to two monitors.
 
-5Supported in Chromium-based browsers only. This includes Google Chrome and Microsoft Edge version 79 and later. This doesn't include Firefox and Safari.
+<sup>5</sup>Supported in Chromium-based browsers only. This includes Google Chrome and Microsoft Edge version 79 and later. This doesn't include Firefox and Safari.
 
-6Supported gamepads on macOS: DualShock 4 (PS4), DualSense (PS5), and Xbox controllers. Third-party or compatible controllers are not supported.
+<sup>6</sup>Supported gamepads on macOS: DualShock 4 (PS4), DualSense (PS5), and Xbox controllers. Third-party or compatible controllers are not supported.
 
 For more information about the Amazon DCV server features, see [ Amazon DCV server features](https://docs.aws.amazon.com/dcv/latest/adminguide/servers.html#features) in the *Amazon DCV Administrator Guide*.

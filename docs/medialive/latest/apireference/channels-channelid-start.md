@@ -1577,6 +1577,11 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     "maximumBitrate": enum,
     "resolution": enum
   },
+  "jpegXsInputSpecification": {
+    "codec": enum,
+    "maximumBitrate": enum,
+    "resolution": enum
+  },
   "logLevel": enum,
   "maintenance": {
     "maintenanceDay": enum,
@@ -2704,6 +2709,7 @@ Maximum CDI input resolution; SD is 480i and 576i up to 30 frames-per-second (fp
 | inferenceSettings | [DescribeInferenceSettings](#channels-channelid-start-model-describeinferencesettings) | False | Contains the Elemental Inference configuration for a channel, as returned by DescribeChannel and related describe operations. |
 | inputAttachments | Array of type [InputAttachment](#channels-channelid-start-model-inputattachment) | False | List of input attachments for channel. |
 | inputSpecification | [InputSpecification](#channels-channelid-start-model-inputspecification) | False | Specification of network and file inputs for this channel |
+| jpegXsInputSpecification | [JpegXsInputSpecification](#channels-channelid-start-model-jpegxsinputspecification) | False | Specification of the JPEG XS (TR-07) input for this channel. This field is present only on a channel that ingests JPEG XS video in an MPEG-2 transport stream. Such a channel uses this specification instead of `inputSpecification`, and every input attached to it is a `MEDIACONNECT` or `MEDIACONNECT_ROUTER` input. |
 | logLevel | [LogLevel](#channels-channelid-start-model-loglevel) | False | The log level being written to CloudWatch Logs. |
 | maintenance | [MaintenanceStatus](#channels-channelid-start-model-maintenancestatus) | False | Maintenance settings for this channel. |
 | name | string | False | The name of the channel. (user-mutable) |
@@ -4602,6 +4608,7 @@ codec in increasing order of complexity
 + `MPEG2`
 + `AVC`
 + `HEVC`
++ `JPEGXS`
 
 ### InputDeblockFilter
 <a name="channels-channelid-start-model-inputdeblockfilter"></a>
@@ -4765,6 +4772,29 @@ Input Source End Behavior
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | message | string | False |  |
+
+### JpegXsInputMaximumBitrate
+<a name="channels-channelid-start-model-jpegxsinputmaximumbitrate"></a>
+
+The maximum bitrate of a JPEG XS input, in megabits per second. `MAX_500_MBPS` is 500 Mbps.
++ `MAX_500_MBPS`
+
+### JpegXsInputResolution
+<a name="channels-channelid-start-model-jpegxsinputresolution"></a>
+
+The maximum resolution of a JPEG XS input. `HD` is 720 to 1080 lines of vertical resolution.
++ `HD`
+
+### JpegXsInputSpecification
+<a name="channels-channelid-start-model-jpegxsinputspecification"></a>
+
+Specification of the JPEG XS (TR-07) input for a channel. Use this specification instead of `InputSpecification` for a channel that ingests JPEG XS video in an MPEG-2 transport stream from `MEDIACONNECT` or `MEDIACONNECT_ROUTER` inputs. All three fields are required, and each field has one valid value.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| codec | [InputCodec](#channels-channelid-start-model-inputcodec) | False | The input codec. The only valid value is `JPEGXS`. |
+| maximumBitrate | [JpegXsInputMaximumBitrate](#channels-channelid-start-model-jpegxsinputmaximumbitrate) | False | The maximum input bitrate. The only valid value is `MAX_500_MBPS`. |
+| resolution | [JpegXsInputResolution](#channels-channelid-start-model-jpegxsinputresolution) | False | The maximum input resolution. The only valid value is `HD`. |
 
 ### KeyProviderSettings
 <a name="channels-channelid-start-model-keyprovidersettings"></a>

@@ -17,7 +17,7 @@ To begin parsing an S3 URI in v1, you instantiate an `AmazonS3URI` by using a co
 | Package name | com.amazonaws.services.s3 | software.amazon.awssdk.services.s3 |
 | Class names | [AmazonS3URI](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3URI.html) | [S3URI](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Uri.html) |
 
-1 [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). 2 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). <sup>2</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ## API changes
 <a name="migration-3-uri-parser-api-changes"></a>

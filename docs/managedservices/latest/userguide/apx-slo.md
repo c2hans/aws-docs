@@ -11,17 +11,17 @@ The following table describes the goals of the AWS Managed Services (AMS) servic
 **AMS Service Level Objectives**
 
 - **Change management**
-  - **Performance Indicator (PI):** Time taken to schedule or reject automated RFCs / **Plus (Business Days, M-F 8AM to 6PM local time):** <=30 min / **Premium (Calendar Days, 24 x 7):** <=30 min
-  - **Performance Indicator (PI):** Time of initiation of scheduled RFCs compared to scheduled execution time / **Plus (Business Days, M-F 8AM to 6PM local time):** <=1 min  / **Premium (Calendar Days, 24 x 7):** <=1 min
-  - **Performance Indicator (PI):** Time taken to approve/reject non-automated RFCs, available in CT catalog / **Plus (Business Days, M-F 8AM to 6PM local time):** <=48 hours / **Premium (Calendar Days, 24 x 7):** <=24 hours
-  - **Performance Indicator (PI):** Time taken to approve/reject non-automated RFCs not available in CT catalog / **Plus (Business Days, M-F 8AM to 6PM local time):** <=5 days / **Premium (Calendar Days, 24 x 7):** <=5 days
+  - **Performance Indicator (PI):** Time taken to schedule or reject automated RFCs / **Plus <sub>(Business Days, M-F 8AM to 6PM local time)</sub>:** <=30 min / **Premium <sub>(Calendar Days, 24 x 7)</sub>:** <=30 min
+  - **Performance Indicator (PI):** Time of initiation of scheduled RFCs compared to scheduled execution time / **Plus <sub>(Business Days, M-F 8AM to 6PM local time)</sub>:** <=1 min  / **Premium <sub>(Calendar Days, 24 x 7)</sub>:** <=1 min
+  - **Performance Indicator (PI):** Time taken to approve/reject non-automated RFCs, available in CT catalog / **Plus <sub>(Business Days, M-F 8AM to 6PM local time)</sub>:** <=48 hours / **Premium <sub>(Calendar Days, 24 x 7)</sub>:** <=24 hours
+  - **Performance Indicator (PI):** Time taken to approve/reject non-automated RFCs not available in CT catalog / **Plus <sub>(Business Days, M-F 8AM to 6PM local time)</sub>:** <=5 days / **Premium <sub>(Calendar Days, 24 x 7)</sub>:** <=5 days
 
 - **Problem management**
   - **Performance Indicator (PI):** Time taken to complete root cause analysis (RCA)
-  - **Plus (Business Days, M-F 8AM to 6PM local time):** <=10 days
-  - **Premium (Calendar Days, 24 x 7):** <=10 days
+  - **Plus <sub>(Business Days, M-F 8AM to 6PM local time)</sub>:** <=10 days
+  - **Premium <sub>(Calendar Days, 24 x 7)</sub>:** <=10 days
 
 - **Service request management**
   - **Performance Indicator (PI):** Response time for first and every subsequent reply
-  - **Plus (Business Days, M-F 8AM to 6PM local time):** <=8 hours
-  - **Premium (Calendar Days, 24 x 7):** <=4 hours
+  - **Plus <sub>(Business Days, M-F 8AM to 6PM local time)</sub>:** <=8 hours
+  - **Premium <sub>(Calendar Days, 24 x 7)</sub>:** <=4 hours

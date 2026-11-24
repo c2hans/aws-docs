@@ -33,7 +33,7 @@ Previous paragraph.
 Next paragraph.
 ```
 
-To create a text block with monospace type, add a line with three backticks (`). Enter the text to show in monospace type. Then, add another new line with three backticks. The following example shows text that will be formatted to monospace type when displayed:
+To create a text block with monospace type, add a line with three backticks (**\`**). Enter the text to show in monospace type. Then, add another new line with three backticks. The following example shows text that will be formatted to monospace type when displayed:
 
 ```
 ```
@@ -45,7 +45,7 @@ The text is in monospace.
 ## Headings
 <a name="aws-markdown-headings"></a>
 
-To create headings, use the pound sign (\#). A single pound sign and a space indicate a top-level heading. Two pound signs create a second-level heading, and three pound signs create a third-level heading. The following examples show a top-level, second-level, and third-level heading:
+To create headings, use the pound sign (**\#**). A single pound sign and a space indicate a top-level heading. Two pound signs create a second-level heading, and three pound signs create a third-level heading. The following examples show a top-level, second-level, and third-level heading:
 
 ```
  # Top-level heading
@@ -62,7 +62,7 @@ To create headings, use the pound sign (\#). A single pound sign and a space ind
 ## Text Formatting
 <a name="aws-markdown-formatting"></a>
 
-To format text as italic, surround it with a single underscore ( \_ ) or asterisk (\*) on each side.
+To format text as italic, surround it with a single underscore (**\_**) or asterisk (**\***) on each side.
 
 ```
 *This text appears in italics.*
@@ -74,7 +74,7 @@ To format text as bold, surround it with double underscores or double asterisks 
 **This text appears in bold.**
 ```
 
-To format text as strikethrough, surround it with two tildes (\~) on each side.
+To format text as strikethrough, surround it with two tildes (**\~**) on each side.
 
 ```
 ~~This text appears in strikethrough.~~
@@ -83,7 +83,7 @@ To format text as strikethrough, surround it with two tildes (\~) on each side.
 ## Links
 <a name="aws-markdown-links"></a>
 
-To add a text hyperlink, enter the link text surrounded by square brackets ([ ]), followed by the full URL in parentheses (( )), as in the following example:
+To add a text hyperlink, enter the link text surrounded by square brackets (**[** **]**), followed by the full URL in parentheses (**(** **)**), as in the following example:
 
 ```
 Choose [{{link_text}}](http://my.example.com).
@@ -92,7 +92,7 @@ Choose [{{link_text}}](http://my.example.com).
 ## Lists
 <a name="aws-markdown-lists"></a>
 
-To format lines as part of a bulleted list, add them on separate lines that start with with a single asterisk (\*) and then a space, as in the following example:
+To format lines as part of a bulleted list, add them on separate lines that start with with a single asterisk (**\***) and then a space, as in the following example:
 
 ```
 Here is a bulleted list:
@@ -101,7 +101,7 @@ Here is a bulleted list:
 * Caterpillar
 ```
 
-To format lines as part of a numbered list, add them on separate lines that start with with a number, a period (.), and a space, as in the following example:
+To format lines as part of a numbered list, add them on separate lines that start with with a number, a period (**.**), and a space, as in the following example:
 
 ```
 Here is a numbered list:
@@ -115,7 +115,7 @@ Here is a numbered list:
 
 CloudWatch dashboards text widgets support Markdown tables and buttons.
 
-To create a table, separate columns using vertical bars (\|) and rows using new lines. To make the first row a header row, insert a line between the header row and the first row of values. Then, add at least three hyphens (-) for each column in the table. Separate columns using vertical bars. The following example shows Markdown for a table with two columns, a header row, and two rows of data:
+To create a table, separate columns using vertical bars (**\|**) and rows using new lines. To make the first row a header row, insert a line between the header row and the first row of values. Then, add at least three hyphens (**-**) for each column in the table. Separate columns using vertical bars. The following example shows Markdown for a table with two columns, a header row, and two rows of data:
 
 ```
 Table | Header
@@ -131,7 +131,7 @@ The Markdown text in the previous example creates the following table:
 | Amazon Web Services | AWS |
 | 1 | 2 |
 
-In a CloudWatch dashboard text widget, you can also format a hyperlink to appear as a button. To create a button, use `[button:{{Button text}}]`, followed by the full URL in parentheses(( )), as in the following example:
+In a CloudWatch dashboard text widget, you can also format a hyperlink to appear as a button. To create a button, use `[button:{{Button text}}]`, followed by the full URL in parentheses(**(** **)**), as in the following example:
 
 ```
 [button:Go to AWS](http://my.example.com)

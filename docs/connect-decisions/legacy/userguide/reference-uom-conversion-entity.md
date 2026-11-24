@@ -17,20 +17,20 @@ The table below lists the column names supported by the data entity:
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | uom | string | Yes | Unit of measure (UOM). For example, weight\_uom, currency\_uom. |
-| company\_id2 | string | No | Company ID. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
 | uom\_code | string | No | Alternate code for UOM. |
 | uom\_description | string | No | UOM description. |
 | uom\_type | string | No | UOM type, for example, currency, weight, volume, or unit. |
 | conversion\_uom\_id | string | Yes | UOM ID for conversion. |
 | conversion\_factor | double | Yes | Conversion factor. |
-| eff\_start\_date | timestamp | Yes1 | Effective start date and time. |
-| eff\_end\_date | timestamp | Yes1 | Effective end date and time. |
+| eff\_start\_date | timestamp | Yes<sup>1</sup> | Effective start date and time. |
+| eff\_end\_date | timestamp | Yes<sup>1</sup> | Effective end date and time. |
 | source | string | No | Source of data. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *timestamp* date type value is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

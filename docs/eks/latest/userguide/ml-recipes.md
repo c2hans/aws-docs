@@ -16,4 +16,4 @@ This section is designed to provide bite-sized recipes for optimizing your Amazo
 +  [Place distributed AI/ML workloads with network topology labels](ml-workload-topology.md) — Place the Pods of a distributed job close to each other using network topology labels.
 +  [Prevent Pods from being scheduled on accelerated nodes](ml-workload-taints.md) — Keep workloads off accelerated nodes by adding taints, with EKS Auto Mode, Karpenter, and managed node groups.
 +  [Configure hugepages in Amazon EKS clusters](ml-hugepages.md) — Configure hugepages for memory-intensive workloads.
-+  [Use AWS Inferentia instances with Amazon EKS for Machine Learning](ml-inferentia.md) — Create an inference cluster with AWS Inferentia instances.
++  [Use AWS Inferentia instances with Amazon EKS for machine learning](ml-inferentia.md) — Create an inference cluster with AWS Inferentia instances.

@@ -4,6 +4,9 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/working-with-igw.ht
 
 # Add internet access to a subnet
 
+**Note**
+You can apply internet protection to your VPC by using automated internet firewall. A managed firewall is applied at your internet gateway to inspect all traffic that enters or leaves your VPCs, without changing your routes. For more information, see [Automated Internet Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/internet-gateway-firewall.html) in the *AWS Network Firewall Developer Guide*.
+
 The following describes how to support internet access from a subnet in a nondefault VPC using an internet gateway. You must create the internet gateway, attach it to the VPC, and configure routing for the subnet.
 
 After you configure internet access for your subnet, you must ensure that resources in the subnet can access the internet. For example, your EC2 instances must have a public IPv4 or IPv6 address, and the security groups for your instances must allow specific traffic to and from the internet.
@@ -16,6 +19,7 @@ To remove internet access, you can detach the internet gateway from your VPC and
 + [Step 1: Create an internet gateway](#create-igw)
 + [Step 2: Attach the internet gateway to the VPC](#attach-igw)
 + [Step 3: Add a route to the subnet route table](#routing-igw)
++ [Add firewall inspection to your internet gateway](#igw-firewall-inspection)
 
 ## Step 1: Create an internet gateway
 <a name="create-igw"></a>
@@ -85,3 +89,11 @@ The route table for the subnet must have a route that sends internet traffic to 
 **To configure the subnet route table using the command line**
 + [create-route](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-route.html) (AWS CLI)
 + [New-EC2Route](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Route.html) (AWS Tools for Windows PowerShell)
+
+## Add firewall inspection to your internet gateway
+<a name="igw-firewall-inspection"></a>
+
+After you create and attach an internet gateway, you can use automated internet firewall to inspect the traffic that enters and leaves your VPCs through the internet gateway, and to apply managed network address translation (NAT). You set up and manage automated internet firewall centrally in Network Security Manager, and it does not require changes to your route tables. For more information, see [Getting started with Automated Internet Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/internet-gateway-firewall-getting-started.html) in the *AWS Network Firewall Developer Guide*.
+
+**Note**
+Automated internet firewall is available in public preview in all AWS commercial Regions. During the preview, it doesn't work with Regional NAT, **noNAT** ingress routing, or ingress-only VPC Block Public Access. During the preview, it also does not perform NAT64 for IPv6 traffic that is destined for an IPv4 destination. It also does not support Amazon EC2 [Mac instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html) or the following machine learning instance types: p4d, p4de, p6-b200, p6-b300, p6e-gb200, trn2, trn2u, and g7e.

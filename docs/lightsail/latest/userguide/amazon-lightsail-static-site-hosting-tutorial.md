@@ -197,7 +197,7 @@ To enroll in Amazon Content Partners, you need an Amazon account. This is a diff
 
 Caching causes this. Your Lightsail distribution caches content at its edge locations, and your web browser also caches content locally. After you change your configuration, both caches can continue to serve the previous content until they are cleared.
 + To clear the distribution cache, choose **Reset cache** on your distribution's management page. You can also adjust how your distribution caches content on the **Caching** tab. For more information, see [Reset the cache for your distribution](amazon-lightsail-resetting-distribution-cache.md).
-+ To clear your browser cache, hard refresh the page (press CommandShiftR on macOS, or CtrlShiftR on Windows and Linux).
++ To clear your browser cache, hard refresh the page (press **Command+Shift+R** on macOS, or **Ctrl+Shift+R** on Windows and Linux).
 
 ## Next steps and related resources
 <a name="static-site-next-steps"></a>

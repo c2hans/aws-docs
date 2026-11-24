@@ -4,12 +4,12 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 
 # Sending logs to Amazon CloudWatch
 
-OTel Container Insights collects and sends container logs to Amazon CloudWatch Logs by using the OpenTelemetry Collector's log pipeline. The Amazon CloudWatch Observability EKS add-on deploys an OpenTelemetry Collector as a DaemonSet that uses the filelog receiver to tail container log files, enrich them with Kubernetes metadata, and export them to CloudWatch Logs through the CloudWatch Logs exporter.
+With OTel Container Insights, the CloudWatch agent that the Amazon CloudWatch Observability EKS add-on deploys on each node automatically uses OpenTelemetry components to collect container logs and host logs. It sends them to the CloudWatch Logs OTLP endpoint in your Region, in the log groups that are listed in [Log groups and sources](#container-insights-eks-otel-logs-groups). The agent adds Kubernetes and cloud attributes to each log record, as described in [Telemetry enrichment](eks-standard-telemetry-attributes.md).
 
 No additional setup is required for basic log collection. Log collection is enabled by default when you follow the [Quick start](container-insights-eks-otel-quickstart.md).
 
 **Log collection costs**
-Enabling log collection ingests all container stdout and stderr from every pod in the cluster, which can significantly increase CloudWatch Logs costs. To control cost, filter logs before ingestion and set a retention policy on the log groups. For information about filtering, see [Log filtering](container-insights-eks-otel-advanced.md#container-insights-eks-otel-advanced-log-filtering). For information about retention policies, see [Set log retention](#container-insights-eks-otel-logs-retention).
+Enabling log collection ingests all container stdout and stderr from every pod in the cluster, which can significantly increase CloudWatch Logs costs. To control cost, filter logs before ingestion and set a retention policy on the log groups. For information about filtering, see [OpenTelemetry filters](eks-observability-addon-telemetry-filters.md). For information about retention policies, see [Set log retention](#container-insights-eks-otel-logs-retention).
 
 **Correlating logs with traces**
 Collecting container logs does not by itself correlate them with traces in CloudWatch Application Signals. To correlate traces with logs, instrument your application for Application Signals by using the enablement guide for your architecture, such as [Enable your applications on Amazon EKS clusters](CloudWatch-Application-Signals-Enable-EKS.md), and then configure your logging output as described in [Enable trace to log correlation](Application-Signals-TraceLogCorrelation.md).
@@ -20,69 +20,51 @@ Collecting container logs does not by itself correlate them with traces in Cloud
 Before you configure log collection, verify that you meet the following requirements.
 + OTel Container Insights installed and the `amazon-cloudwatch-observability` add-on active on your cluster
 + IAM permissions: `logs:CreateLogGroup`, `logs:CreateLogStream`, `logs:PutLogEvents`, `logs:DescribeLogGroups`, and `logs:DescribeLogStreams` (included in the `CloudWatchAgentServerPolicy` managed policy)
-+ Node access: the collector requires access to `/var/log/pods` on each node
++ Node access: the agent reads `/var/log` on each node. The add-on mounts it when log collection is on.
 
 ## Log groups and sources
 <a name="container-insights-eks-otel-logs-groups"></a>
 
-The following table describes the log group that OTel Container Insights creates and the source it collects from.
+The following table describes the log groups that OTel Container Insights creates and the sources it collects from. In the log group names, `{{cluster-name}}` is the name of your Amazon EKS cluster.
 
 | Log group | Source | Contents |
 | --- | --- | --- |
-| /aws/containerinsights/{{cluster-name}}/application | /var/log/pods/\*\*/\*.log | All container stdout and stderr logs |
+| /aws/otel/containerinsights/{{cluster-name}}/application | /var/log/containers/\*.log | Container stdout and stderr logs, except the logs of pods whose names start with cloudwatch-agent, fluent-bit, aws-node, or kube-proxy |
+| /aws/otel/containerinsights/{{cluster-name}}/host | /var/log/messages, /var/log/dmesg, and /var/log/secure | Node operating system logs |
 
 **Note**
-Host and dataplane logs will be available in a future release.
-
-## How the OTel log pipeline works
-<a name="container-insights-eks-otel-logs-pipeline"></a>
-
-The add-on's OpenTelemetry Collector runs a log pipeline with the following components.
-+ **Receivers** – The `filelog` receiver tails container log files from `/var/log/pods/`.
-+ **Processors** – The `k8sattributes` processor enriches logs with Kubernetes metadata. The `batch` processor batches log records before export. The `resource` processor appends resource attributes.
-+ **Exporters** – The `awscloudwatchlogs` exporter sends log records to CloudWatch Logs.
-
-### Log enrichment
-<a name="container-insights-eks-otel-logs-enrichment"></a>
-
-The pipeline enriches every log record with the following attributes.
-+ **Kubernetes resource attributes** – `k8s.pod.name`, `k8s.namespace.name`, `k8s.container.name`, `k8s.node.name`, and `k8s.deployment.name`
-+ **Pod labels** – All pod labels as `k8s.pod.label.*` attributes
-+ **Cloud attributes** – `cloud.region`, `cloud.account.id`, and `cloud.platform`
-+ **Cluster attributes** – `k8s.cluster.name`
+Dataplane logs will be available in a future release.
 
 ## Customizing log collection
 <a name="container-insights-eks-otel-logs-customize"></a>
 
-You can customize log collection by updating the add-on configuration values. The following sections describe common customization options.
+You can customize log collection by updating the add-on configuration values. The examples in this section are fragments to merge into your current configuration. For instructions on merging them, see [Configuring the add-on and the Helm chart](eks-observability-addon-configure.md). To drop the logs of some namespaces, use `otelFilters.namespaces`, as described in [OpenTelemetry filters](eks-observability-addon-telemetry-filters.md).
 
-### Disable log collection
+### Turning off log collection
 <a name="container-insights-eks-otel-logs-disable"></a>
 
-To disable log collection entirely, update the add-on configuration with container logs disabled.
+To turn off log collection and keep OTel Container Insights metrics, merge the following fragment into your configuration. The default is `true`.
 
-**To disable log collection**
-+ Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
-
-  ```bash
-  aws eks update-addon \
-    --cluster-name {{cluster-name}} \
-    --addon-name amazon-cloudwatch-observability \
-    --configuration-values '{"containerLogs":{"enabled":false}}' \
-    --resolve-conflicts OVERWRITE
-  ```
+```json
+{
+  "otelContainerInsights": {
+    "enabled": true,
+    "logs": { "enabled": false }
+  }
+}
+```
 
 ### Set log retention
 <a name="container-insights-eks-otel-logs-retention"></a>
 
-By default, CloudWatch Logs retains log data indefinitely. To control storage costs, you can set a retention policy on the log group.
+By default, CloudWatch Logs retains log data indefinitely. To control storage costs, you can set a retention policy on each log group.
 
 **To set log retention**
-+ Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster. Replace {{30}} with the number of days to retain logs.
++ Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster. Replace {{30}} with the number of days to retain logs. Run it again with `host` in place of `application` for the host log group.
 
   ```bash
   aws logs put-retention-policy \
-    --log-group-name "/aws/containerinsights/{{cluster-name}}/application" \
+    --log-group-name "/aws/otel/containerinsights/{{cluster-name}}/application" \
     --retention-in-days {{30}}
   ```
 
@@ -96,12 +78,12 @@ To verify that log collection is working, check that the expected log groups exi
 
   ```bash
   aws logs describe-log-groups \
-    --log-group-name-prefix "/aws/containerinsights/{{cluster-name}}" \
+    --log-group-name-prefix "/aws/otel/containerinsights/{{cluster-name}}" \
     --query "logGroups[].{Name:logGroupName,StoredBytes:storedBytes}" \
     --output table
   ```
 
-  The output displays the log group names and the number of stored bytes. A non-zero value for `StoredBytes` confirms that the pipeline is delivering logs.
+  The output displays the log group names and the number of stored bytes. A non-zero value for `StoredBytes` confirms that the agent is delivering logs.
 
 ## Troubleshooting
 <a name="container-insights-eks-otel-logs-troubleshoot"></a>
@@ -111,7 +93,7 @@ Use the following guidance to resolve common log collection issues.
 ### Log groups not created after 5 minutes
 <a name="container-insights-eks-otel-logs-ts-no-loggroup"></a>
 
-**Symptom:** The `/aws/containerinsights/{{cluster-name}}/application` log group does not appear in CloudWatch Logs after 5 minutes.
+**Symptom:** The `/aws/otel/containerinsights/{{cluster-name}}/application` log group does not appear in CloudWatch Logs after 5 minutes.
 
 **Cause:** The collector does not have the required IAM permissions to create log groups and log streams.
 
@@ -122,17 +104,19 @@ Use the following guidance to resolve common log collection issues.
 
 **Symptom:** The application log group exists in CloudWatch Logs, but it contains no log streams or log events.
 
-**Cause:** This issue occurs when containers are not writing to stdout or stderr, or the filelog receiver cannot access `/var/log/pods/` on the node.
+**Cause:** This issue occurs when containers are not writing to stdout or stderr, or the filelog receiver cannot access `/var/log/containers/` on the node.
 
 **Solution:** Complete the following steps to resolve this issue.
 
 1. Verify that your application containers write logs to stdout or stderr.
 
-1. Check that the collector DaemonSet pod has a volume mount for `/var/log/pods`.
+1. Run the following command to check that the CloudWatch agent DaemonSet has a volume mount for `/var/log`.
 
    ```bash
-   kubectl get daemonset -n amazon-cloudwatch -o yaml | grep -A 5 "var/log/pods"
+   kubectl get daemonset cloudwatch-agent -n amazon-cloudwatch -o yaml | grep "mountPath: /var/log$"
    ```
+
+1. If the mount is missing, check that `otelContainerInsights.logs.enabled` isn't `false` in the add-on configuration.
 
 1. Check the collector logs for file access errors.
 
@@ -147,4 +131,4 @@ Use the following guidance to resolve common log collection issues.
 
 **Cause:** High-volume namespaces (such as load testing or monitoring namespaces) generate large volumes of logs.
 
-**Solution:** Set a retention policy on the log group to automatically delete older logs. For instructions, see [Set log retention](#container-insights-eks-otel-logs-retention).
+**Solution:** Drop the logs of those namespaces with `otelFilters.namespaces`, and set a retention policy on the log groups to automatically delete older logs. For instructions on filtering, retention, and turning off log collection, see [OpenTelemetry filters](eks-observability-addon-telemetry-filters.md), [Set log retention](#container-insights-eks-otel-logs-retention), and [Turning off log collection](#container-insights-eks-otel-logs-disable).

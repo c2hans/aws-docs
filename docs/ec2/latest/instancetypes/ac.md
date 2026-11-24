@@ -53,6 +53,7 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 | Trn1n | trn1n.32xlarge |
 | Trn2 | trn2.3xlarge \| trn2.48xlarge |
 | Trn2u | trn2u.48xlarge |
+| Trn3 | trn3.48xlarge |
 | VT1 | vt1.3xlarge \| vt1.6xlarge \| vt1.24xlarge |
 
 ## Instance family summary
@@ -88,10 +89,11 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 | Trn1n | [Nitro v4](ec2-nitro-instances.md) | Intel (x86\_64) | ✗ No | ✗ No | ✓ Yes | ✗ No | Linux |
 | Trn2 | [Nitro v5](ec2-nitro-instances.md) | Intel (x86\_64) | ✗ No | ✗ No | ✓ Yes | ✗ No | Linux |
 | Trn2u | [Nitro v5](ec2-nitro-instances.md) | Intel (x86\_64) | ✗ No | ✗ No | ✓ Yes | ✗ No | Linux |
+| Trn3 | [Nitro v6](ec2-nitro-instances.md) | Intel (x86\_64) | ✗ No | ✗ No | ✓ Yes | ✗ No | Linux |
 | VT1 | [Nitro v3](ec2-nitro-instances.md) | Intel (x86\_64) | ✗ No | ✓ Yes | ✓ Yes | ✗ No | Linux |
 
 **Note**
-1 `p5.4xlarge` supports both Windows and Linux operating systems. `p5.48xlarge` supports Linux operating systems only.
+<sup>1</sup> `p5.4xlarge` supports both Windows and Linux operating systems. `p5.48xlarge` supports Linux operating systems only.
 
 ## Performance specifications
 <a name="ac_hardware"></a>
@@ -218,6 +220,8 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
   <tr><td>trn2.48xlarge</td><td>2048.00</td><td>Intel Xeon Sapphire Rapids</td><td>192</td><td>96</td><td>2</td><td>16 x AWS Trainium2 accelerators</td><td>8192 GiB (16 x 512 GiB)</td></tr>
   <tr><td colspan="8"><b>Trn2u</b></td></tr>
   <tr><td>trn2u.48xlarge</td><td>2048.00</td><td>Intel Xeon Sapphire Rapids</td><td>192</td><td>96</td><td>2</td><td>✗ No</td><td>✗ No</td></tr>
+  <tr><td colspan="8"><b>Trn3</b></td></tr>
+  <tr><td>trn3.48xlarge</td><td>2048.00</td><td>Intel Xeon Emerald Rapids</td><td>192</td><td>96</td><td>2</td><td>16 x Annapurna Trainium3 GPU</td><td>2304 GiB (16 x 144 GiB)</td></tr>
   <tr><td colspan="8"><b>VT1</b></td></tr>
   <tr><td>vt1.3xlarge</td><td>24.00</td><td>Intel Cascade Lake P-8259CL</td><td>12</td><td>6</td><td>2</td><td>1 x Xilinx U30 media accelerator</td><td>24 GiB (1 x 24 GiB)</td></tr>
   <tr><td>vt1.6xlarge</td><td>48.00</td><td>Intel Cascade Lake P-8259CL</td><td>24</td><td>12</td><td>2</td><td>2 x Xilinx U30 media accelerator</td><td>48 GiB (2 x 24 GiB)</td></tr>
@@ -234,132 +238,134 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 </thead>
 <tbody>
   <tr><td colspan="10"><b>DL1</b></td></tr>
-  <tr><td>dl1.24xlarge 2</td><td>4x 100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>dl1.24xlarge <sup>2</sup></td><td>4x 100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>DL2q</b></td></tr>
-  <tr><td>dl2q.24xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>dl2q.24xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>F2</b></td></tr>
-  <tr><td>f2.6xlarge 2</td><td>12.5 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>f2.12xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>f2.48xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>f2.6xlarge <sup>2</sup></td><td>12.5 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>f2.12xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>f2.48xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G4ad</b></td></tr>
-  <tr><td>g4ad.xlarge 1 2</td><td>2.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.2xlarge 1 2</td><td>4.167 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.4xlarge 1 2</td><td>8.333 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.8xlarge 2</td><td>15 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.16xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.xlarge <sup>1</sup> <sup>2</sup></td><td>2.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.2xlarge <sup>1</sup> <sup>2</sup></td><td>4.167 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.4xlarge <sup>1</sup> <sup>2</sup></td><td>8.333 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.8xlarge <sup>2</sup></td><td>15 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.16xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G4dn</b></td></tr>
-  <tr><td>g4dn.xlarge 1 2</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.2xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.4xlarge 1 2</td><td>20.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.8xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.12xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.16xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.metal 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.2xlarge <sup>1</sup> <sup>2</sup></td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.4xlarge <sup>1</sup> <sup>2</sup></td><td>20.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.8xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.12xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.16xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.metal <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G5</b></td></tr>
-  <tr><td>g5.xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5.2xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5.12xlarge 2</td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g5.16xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5.24xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g5.48xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>7</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5.xlarge <sup>1</sup> <sup>2</sup></td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5.2xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5.4xlarge <sup>1</sup> <sup>2</sup></td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5.8xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5.12xlarge <sup>2</sup></td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5.16xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5.24xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5.48xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>7</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G5g</b></td></tr>
-  <tr><td>g5g.xlarge 1 2</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.2xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.4xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.8xlarge 2</td><td>12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.16xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.metal 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.xlarge <sup>1</sup> <sup>2</sup></td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.2xlarge <sup>1</sup> <sup>2</sup></td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.4xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.8xlarge <sup>2</sup></td><td>12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.16xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.metal <sup>2</sup></td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G6</b></td></tr>
-  <tr><td>g6.xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6.2xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6.12xlarge 2</td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6.16xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6.24xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6.48xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6.xlarge <sup>1</sup> <sup>2</sup></td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6.2xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6.4xlarge <sup>1</sup> <sup>2</sup></td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6.8xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6.12xlarge <sup>2</sup></td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6.16xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6.24xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6.48xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G6e</b></td></tr>
-  <tr><td>g6e.xlarge 1 2</td><td>2.5 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.2xlarge 1 2</td><td>5.0 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.4xlarge 2</td><td>20 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.12xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>1</td><td>10</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.16xlarge 2</td><td>35 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.24xlarge 2</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>2</td><td>20</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.48xlarge 2</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>4</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.xlarge <sup>1</sup> <sup>2</sup></td><td>2.5 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.2xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.4xlarge <sup>2</sup></td><td>20 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.8xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.12xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>1</td><td>10</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.16xlarge <sup>2</sup></td><td>35 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.24xlarge <sup>2</sup></td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>2</td><td>20</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.48xlarge <sup>2</sup></td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>4</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G6f</b></td></tr>
-  <tr><td>g6f.large 1 2</td><td>1.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>1</td><td>2</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g6f.xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6f.2xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6f.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.large <sup>1</sup> <sup>2</sup></td><td>1.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>1</td><td>2</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.xlarge <sup>1</sup> <sup>2</sup></td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.2xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.4xlarge <sup>1</sup> <sup>2</sup></td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Gr6</b></td></tr>
-  <tr><td>gr6.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>gr6.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>gr6.4xlarge <sup>1</sup> <sup>2</sup></td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>gr6.8xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Gr6f</b></td></tr>
-  <tr><td>gr6f.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>gr6f.4xlarge <sup>1</sup> <sup>2</sup></td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G7</b></td></tr>
-  <tr><td>g7.2xlarge 1</td><td>40.0 / 60.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 8</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7.4xlarge 1</td><td>80.0 / 100.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 16</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.2xlarge <sup>1</sup></td><td>40.0 / 60.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 8</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.4xlarge <sup>1</sup></td><td>80.0 / 100.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 16</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td>g7.8xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8 / 32</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td>g7.12xlarge</td><td>175 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16 / 64</td><td>1</td><td>12</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td>g7.24xlarge</td><td>350 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td>g7.48xlarge</td><td>700 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>2</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>G7e</b></td></tr>
-  <tr><td>g7e.2xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.4xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.8xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.12xlarge 2</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.24xlarge 2</td><td>800 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>2</td><td>20</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.48xlarge 2</td><td>1600 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>4</td><td>40</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.2xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.4xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.8xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.12xlarge <sup>2</sup></td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.24xlarge <sup>2</sup></td><td>800 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>2</td><td>20</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.48xlarge <sup>2</sup></td><td>1600 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>4</td><td>40</td><td>64</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Inf1</b></td></tr>
-  <tr><td>inf1.xlarge 1 2</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>inf1.2xlarge 1 2</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>inf1.6xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>inf1.24xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>11</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.2xlarge <sup>1</sup> <sup>2</sup></td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.6xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.24xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>11</td><td>30</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Inf2</b></td></tr>
-  <tr><td>inf2.xlarge 1 2</td><td>2.083 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>inf2.8xlarge 1 2</td><td>16.667 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>inf2.24xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>inf2.48xlarge 2</td><td>100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.xlarge <sup>1</sup> <sup>2</sup></td><td>2.083 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.8xlarge <sup>1</sup> <sup>2</sup></td><td>16.667 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.24xlarge <sup>2</sup></td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.48xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P4d</b></td></tr>
-  <tr><td>p4d.24xlarge 2</td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p4d.24xlarge <sup>2</sup></td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P4de</b></td></tr>
-  <tr><td>p4de.24xlarge 2</td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p4de.24xlarge <sup>2</sup></td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P5</b></td></tr>
-  <tr><td>p5.4xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>p5.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p5.4xlarge <sup>2</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>p5.48xlarge <sup>2</sup></td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P5e</b></td></tr>
-  <tr><td>p5e.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p5e.48xlarge <sup>2</sup></td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P5en</b></td></tr>
-  <tr><td>p5en.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>16</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p5en.48xlarge <sup>2</sup></td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>16</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P6-B200</b></td></tr>
-  <tr><td>p6-b200.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>8</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p6-b200.48xlarge <sup>2</sup></td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>8</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P6-B300</b></td></tr>
-  <tr><td>p6-b300.48xlarge 2</td><td>6400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>17</td><td>68</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p6-b300.48xlarge <sup>2</sup></td><td>6400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>17</td><td>68</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>P6e-GB200</b></td></tr>
-  <tr><td>p6e-gb200.36xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>17</td><td>39</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>p6e-gb200.36xlarge <sup>2</sup></td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>17</td><td>39</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Trn1</b></td></tr>
-  <tr><td>trn1.2xlarge 1 2</td><td>3.125 / 12.5</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>trn1.32xlarge 2</td><td>8x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>8</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>trn1.2xlarge <sup>1</sup> <sup>2</sup></td><td>3.125 / 12.5</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>trn1.32xlarge <sup>2</sup></td><td>8x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>8</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Trn1n</b></td></tr>
-  <tr><td>trn1n.32xlarge 2</td><td>16x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>80</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>trn1n.32xlarge <sup>2</sup></td><td>16x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>80</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Trn2</b></td></tr>
-  <tr><td>trn2.3xlarge 2</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>2</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>trn2.48xlarge 2</td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>trn2.3xlarge <sup>2</sup></td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>2</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>trn2.48xlarge <sup>2</sup></td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Trn2u</b></td></tr>
-  <tr><td>trn2u.48xlarge 2</td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>trn2u.48xlarge <sup>2</sup></td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10"><b>Trn3</b></td></tr>
+  <tr><td>trn3.48xlarge <sup>2</sup></td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>VT1</b></td></tr>
-  <tr><td>vt1.3xlarge 2</td><td>3.12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>vt1.6xlarge 2</td><td>6.25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>vt1.24xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>vt1.3xlarge <sup>2</sup></td><td>3.12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>vt1.6xlarge <sup>2</sup></td><td>6.25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>vt1.24xlarge <sup>2</sup></td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
 </tbody>
 </table>
 
 **Note**
-1 These instances have a baseline bandwidth and can use a network I/O credit mechanism to burst beyond their baseline bandwidth on a best effort basis. Other instances types can sustain their maximum performance indefinitely. For more information, see [ instance network bandwidth](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html).
-2 These instance types do not support configurable ENA queue allocation.
+<sup>1</sup> These instances have a baseline bandwidth and can use a network I/O credit mechanism to burst beyond their baseline bandwidth on a best effort basis. Other instances types can sustain their maximum performance indefinitely. For more information, see [ instance network bandwidth](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html).
+<sup>2</sup> These instance types do not support configurable ENA queue allocation.
 
 ## Amazon EBS specifications
 <a name="ac_storage-ebs"></a>
@@ -384,22 +390,22 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td>f2.12xlarge</td><td>15000.00</td><td>1875.00</td><td>60000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>f2.48xlarge</td><td>60000.00</td><td>7500.00</td><td>240000.00</td><td>✓ Yes</td><td>✗ No</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>G4ad</b></td></tr>
-  <tr><td>g4ad.xlarge 1</td><td>400.00 / 3170.00</td><td>50.00 / 396.25</td><td>1700.00 / 13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>g4ad.2xlarge 1</td><td>800.00 / 3170.00</td><td>100.00 / 396.25</td><td>3400.00 / 13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>g4ad.4xlarge 1</td><td>1580.00 / 3170.00</td><td>197.50 / 396.25</td><td>6700.00 / 13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g4ad.xlarge <sup>1</sup></td><td>400.00 / 3170.00</td><td>50.00 / 396.25</td><td>1700.00 / 13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g4ad.2xlarge <sup>1</sup></td><td>800.00 / 3170.00</td><td>100.00 / 396.25</td><td>3400.00 / 13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g4ad.4xlarge <sup>1</sup></td><td>1580.00 / 3170.00</td><td>197.50 / 396.25</td><td>6700.00 / 13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4ad.8xlarge</td><td>3170.00</td><td>396.25</td><td>13333.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 24 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4ad.16xlarge</td><td>6300.00</td><td>787.50</td><td>26667.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 21 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>G4dn</b></td></tr>
-  <tr><td>g4dn.xlarge 1</td><td>950.00 / 3500.00</td><td>118.75 / 437.50</td><td>3000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>g4dn.2xlarge 1</td><td>1150.00 / 3500.00</td><td>143.75 / 437.50</td><td>6000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g4dn.xlarge <sup>1</sup></td><td>950.00 / 3500.00</td><td>118.75 / 437.50</td><td>3000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g4dn.2xlarge <sup>1</sup></td><td>1150.00 / 3500.00</td><td>143.75 / 437.50</td><td>6000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4dn.4xlarge</td><td>4750.00</td><td>593.75</td><td>20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4dn.8xlarge</td><td>9500.00</td><td>1187.50</td><td>40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4dn.12xlarge</td><td>9500.00</td><td>1187.50</td><td>40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 22 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4dn.16xlarge</td><td>9500.00</td><td>1187.50</td><td>40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g4dn.metal</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 31 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>G5</b></td></tr>
-  <tr><td>g5.xlarge 1</td><td>700.00 / 3500.00</td><td>87.50 / 437.50</td><td>3000.00 / 15000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>g5.2xlarge 1</td><td>850.00 / 3500.00</td><td>106.25 / 437.50</td><td>3500.00 / 15000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g5.xlarge <sup>1</sup></td><td>700.00 / 3500.00</td><td>87.50 / 437.50</td><td>3000.00 / 15000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g5.2xlarge <sup>1</sup></td><td>850.00 / 3500.00</td><td>106.25 / 437.50</td><td>3500.00 / 15000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5.4xlarge</td><td>4750.00</td><td>593.75</td><td>20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5.8xlarge</td><td>16000.00</td><td>2000.00</td><td>65000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5.12xlarge</td><td>16000.00</td><td>2000.00</td><td>65000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 22 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
@@ -407,15 +413,15 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td>g5.24xlarge</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 22 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5.48xlarge</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 9 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>G5g</b></td></tr>
-  <tr><td>g5g.xlarge 1</td><td>1188.00 / 4750.00</td><td>148.50 / 593.75</td><td>6000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>g5g.2xlarge 1</td><td>2375.00 / 4750.00</td><td>296.88 / 593.75</td><td>12000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g5g.xlarge <sup>1</sup></td><td>1188.00 / 4750.00</td><td>148.50 / 593.75</td><td>6000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>g5g.2xlarge <sup>1</sup></td><td>2375.00 / 4750.00</td><td>296.88 / 593.75</td><td>12000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5g.4xlarge</td><td>4750.00</td><td>593.75</td><td>20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5g.8xlarge</td><td>9500.00</td><td>1187.50</td><td>40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5g.16xlarge</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>g5g.metal</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 31 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>G6</b></td></tr>
-  <tr><td>g6.xlarge 1</td><td>1000.00 / 5000.00</td><td>125.00 / 625.00</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>g6.2xlarge 1</td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6.xlarge <sup>1</sup></td><td>1000.00 / 5000.00</td><td>125.00 / 625.00</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6.2xlarge <sup>1</sup></td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6.4xlarge</td><td>8000.00</td><td>1000.00</td><td>32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6.8xlarge</td><td>16000.00</td><td>2000.00</td><td>64000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6.12xlarge</td><td>20000.00</td><td>2500.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
@@ -423,8 +429,8 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td>g6.24xlarge</td><td>30000.00</td><td>3750.00</td><td>120000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6.48xlarge</td><td>60000.00</td><td>7500.00</td><td>240000.00</td><td>✓ Yes</td><td>✗ No</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>G6e</b></td></tr>
-  <tr><td>g6e.xlarge 1</td><td>1000.00 / 5000.00</td><td>125.00 / 625.00</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>g6e.2xlarge 1</td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6e.xlarge <sup>1</sup></td><td>1000.00 / 5000.00</td><td>125.00 / 625.00</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6e.2xlarge <sup>1</sup></td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6e.4xlarge</td><td>8000.00</td><td>1000.00</td><td>32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6e.8xlarge</td><td>16000.00</td><td>2000.00</td><td>64000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6e.12xlarge</td><td>20000.00</td><td>2500.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
@@ -432,9 +438,9 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td>g6e.24xlarge</td><td>30000.00</td><td>3750.00</td><td>120000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6e.48xlarge</td><td>60000.00</td><td>7500.00</td><td>240000.00</td><td>✓ Yes</td><td>✗ No</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>G6f</b></td></tr>
-  <tr><td>g6f.large 1</td><td>936.00 / 5000.00</td><td>117.00 / 625.00</td><td>3750.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>g6f.xlarge 1</td><td>1000.00 / 5000.00</td><td>125.00 / 625.00</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>g6f.2xlarge 1</td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6f.large <sup>1</sup></td><td>936.00 / 5000.00</td><td>117.00 / 625.00</td><td>3750.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6f.xlarge <sup>1</sup></td><td>1000.00 / 5000.00</td><td>125.00 / 625.00</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g6f.2xlarge <sup>1</sup></td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g6f.4xlarge</td><td>6000.00</td><td>750.00</td><td>24000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>Gr6</b></td></tr>
   <tr><td>gr6.4xlarge</td><td>8000.00</td><td>1000.00</td><td>32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
@@ -442,26 +448,26 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td colspan="7"><b>Gr6f</b></td></tr>
   <tr><td>gr6f.4xlarge</td><td>8000.00</td><td>1000.00</td><td>32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>G7</b></td></tr>
-  <tr><td>g7.2xlarge 1</td><td>4000.00 / 8000.00</td><td>500.00 / 1000.00</td><td>16000.00 / 32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g7.2xlarge <sup>1</sup></td><td>4000.00 / 8000.00</td><td>500.00 / 1000.00</td><td>16000.00 / 32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7.4xlarge</td><td>8000.00</td><td>1000.00</td><td>32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7.8xlarge</td><td>16000.00</td><td>2000.00</td><td>64000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7.12xlarge</td><td>20000.00</td><td>2500.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7.24xlarge</td><td>40000.00</td><td>5000.00</td><td>160000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7.48xlarge</td><td>80000.00</td><td>10000.00</td><td>320000.00</td><td>✓ Yes</td><td>✓ Yes (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs_cards.html">2 EBS cards</a>)</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>G7e</b></td></tr>
-  <tr><td>g7e.2xlarge 1</td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>g7e.2xlarge <sup>1</sup></td><td>2000.00 / 5000.00</td><td>250.00 / 625.00</td><td>8000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7e.4xlarge</td><td>8000.00</td><td>1000.00</td><td>32000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7e.8xlarge</td><td>16000.00</td><td>2000.00</td><td>64000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7e.12xlarge</td><td>25000.00</td><td>3125.00</td><td>100000.00</td><td>✓ Yes</td><td>✗ No</td><td>32 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7e.24xlarge</td><td>50000.00</td><td>6250.00</td><td>200000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td>g7e.48xlarge</td><td>100000.00</td><td>12500.00</td><td>400000.00</td><td>✓ Yes</td><td>✗ No</td><td>128 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>Inf1</b></td></tr>
-  <tr><td>inf1.xlarge 1</td><td>1190.00 / 4750.00</td><td>148.75 / 593.75</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>inf1.2xlarge 1</td><td>1190.00 / 4750.00</td><td>148.75 / 593.75</td><td>6000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>inf1.xlarge <sup>1</sup></td><td>1190.00 / 4750.00</td><td>148.75 / 593.75</td><td>4000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>inf1.2xlarge <sup>1</sup></td><td>1190.00 / 4750.00</td><td>148.75 / 593.75</td><td>6000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>inf1.6xlarge</td><td>4750.00</td><td>593.75</td><td>20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 23 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>inf1.24xlarge</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 11 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>Inf2</b></td></tr>
-  <tr><td>inf2.xlarge 1</td><td>1250.00 / 10000.00</td><td>156.25 / 1250.00</td><td>6000.00 / 40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>inf2.xlarge <sup>1</sup></td><td>1250.00 / 10000.00</td><td>156.25 / 1250.00</td><td>6000.00 / 40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>inf2.8xlarge</td><td>10000.00</td><td>1250.00</td><td>40000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 26 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>inf2.24xlarge</td><td>30000.00</td><td>3750.00</td><td>120000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 28 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>inf2.48xlarge</td><td>60000.00</td><td>7500.00</td><td>240000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 28 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
@@ -483,7 +489,7 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td colspan="7"><b>P6e-GB200</b></td></tr>
   <tr><td>p6e-gb200.36xlarge</td><td>60000.00</td><td>7500.00</td><td>240000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>Trn1</b></td></tr>
-  <tr><td>trn1.2xlarge 1</td><td>5000.00 / 20000.00</td><td>625.00 / 2500.00</td><td>16250.00 / 65000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>trn1.2xlarge <sup>1</sup></td><td>5000.00 / 20000.00</td><td>625.00 / 2500.00</td><td>16250.00 / 65000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>trn1.32xlarge</td><td>80000.00</td><td>10000.00</td><td>260000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 28 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>Trn1n</b></td></tr>
   <tr><td>trn1n.32xlarge</td><td>80000.00</td><td>10000.00</td><td>260000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 28 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
@@ -492,15 +498,17 @@ We recommend that you choose an EBS–optimized instance type that provides more
   <tr><td>trn2.48xlarge</td><td>80000.00</td><td>10000.00</td><td>260000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>Trn2u</b></td></tr>
   <tr><td>trn2u.48xlarge</td><td>80000.00</td><td>10000.00</td><td>260000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td colspan="7"><b>Trn3</b></td></tr>
+  <tr><td>trn3.48xlarge</td><td>80000.00</td><td>10000.00</td><td>260000.00</td><td>✓ Yes</td><td>✗ No</td><td>64 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>VT1</b></td></tr>
-  <tr><td>vt1.3xlarge 1</td><td>2375.00 / 4750.00</td><td>296.88 / 593.75</td><td>10000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>vt1.3xlarge <sup>1</sup></td><td>2375.00 / 4750.00</td><td>296.88 / 593.75</td><td>10000.00 / 20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 25 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>vt1.6xlarge</td><td>4750.00</td><td>593.75</td><td>20000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 23 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td>vt1.24xlarge</td><td>19000.00</td><td>2375.00</td><td>80000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
 </tbody>
 </table>
 
 **Note**
-1 These instances can support maximum performance for 30 minutes at least once every 24 hours, after which they revert to their baseline performance. Other instances can sustain the maximum performance indefinitely. If your workload requires sustained maximum performance for longer than 30 minutes, use one of these instances.
+<sup>1</sup> These instances can support maximum performance for 30 minutes at least once every 24 hours, after which they revert to their baseline performance. Other instances can sustain the maximum performance indefinitely. If your workload requires sustained maximum performance for longer than 30 minutes, use one of these instances.
 
 ## Instance store specifications
 <a name="ac_instance-store"></a>
@@ -509,7 +517,7 @@ The following table shows the instance store volume configuration for supported 
 
 <table>
 <thead>
-  <tr><th>Instance type</th><th>Instance store volumes</th><th>Instance store type</th><th>100% random read IOPS / Write IOPS</th><th>Needs initialization 1</th><th>TRIM support 2</th></tr>
+  <tr><th>Instance type</th><th>Instance store volumes</th><th>Instance store type</th><th>100% random read IOPS / Write IOPS</th><th>Needs initialization <sup>1</sup></th><th>TRIM support <sup>2</sup></th></tr>
 </thead>
 <tbody>
   <tr><td colspan="6"><b>DL1</b></td></tr>
@@ -610,12 +618,14 @@ The following table shows the instance store volume configuration for supported 
   <tr><td>trn2.48xlarge</td><td>4 x 1900 GB</td><td>NVMe SSD</td><td>1,720,000 / 720,000</td><td> </td><td>✓ Yes</td></tr>
   <tr><td colspan="6"><b>Trn2u</b></td></tr>
   <tr><td>trn2u.48xlarge</td><td>4 x 1900 GB</td><td>NVMe SSD</td><td>1,720,000 / 720,000</td><td> </td><td>✓ Yes</td></tr>
+  <tr><td colspan="6"><b>Trn3</b></td></tr>
+  <tr><td>trn3.48xlarge</td><td>4 x 1900 GB</td><td>NVMe SSD</td><td>1,720,000 / 720,000</td><td> </td><td>✓ Yes</td></tr>
 </tbody>
 </table>
 
-1 Volumes attached to certain instances suffer a first-write penalty unless initialized. For more information, see [Optimize disk performance for instance store volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disk-performance.html).
+<sup>1</sup> Volumes attached to certain instances suffer a first-write penalty unless initialized. For more information, see [Optimize disk performance for instance store volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disk-performance.html).
 
-2 For more information, see [Instance store volume TRIM support](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ssd-instance-store.html#InstanceStoreTrimSupport).
+<sup>2</sup> For more information, see [Instance store volume TRIM support](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ssd-instance-store.html#InstanceStoreTrimSupport).
 
 ## Security specifications
 <a name="ac_security"></a>
@@ -731,7 +741,7 @@ The following table shows the instance store volume configuration for supported 
   <tr><td colspan="7"><b>P6-B300</b></td></tr>
   <tr><td>p6-b300.48xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
   <tr><td colspan="7"><b>P6e-GB200</b></td></tr>
-  <tr><td>p6e-gb200.36xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td>p6e-gb200.36xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td></tr>
   <tr><td colspan="7"><b>Trn1</b></td></tr>
   <tr><td>trn1.2xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td>trn1.32xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
@@ -742,6 +752,8 @@ The following table shows the instance store volume configuration for supported 
   <tr><td>trn2.48xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
   <tr><td colspan="7"><b>Trn2u</b></td></tr>
   <tr><td>trn2u.48xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+  <tr><td colspan="7"><b>Trn3</b></td></tr>
+  <tr><td>trn3.48xlarge</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>✓ Yes</td><td>✓ Yes</td></tr>
   <tr><td colspan="7"><b>VT1</b></td></tr>
   <tr><td>vt1.3xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>
   <tr><td>vt1.6xlarge</td><td>✓ Yes</td><td>Instance store not supported</td><td>✓ Yes</td><td>✗ No</td><td>✗ No</td><td>✗ No</td></tr>

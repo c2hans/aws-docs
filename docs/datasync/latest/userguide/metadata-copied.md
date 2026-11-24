@@ -99,8 +99,8 @@ The following table describes how DataSync applies default POSIX metadata during
 
 | Source | Destination | File permissions | Folder permissions | UID | GID |
 | --- | --- | --- | --- | --- | --- |
-|  +  Amazon S31 <br />+  Object storage1 <br />+  Microsoft Azure Blob Storage1   |  +  Amazon EFS <br />+  FSx for Lustre <br />+  FSx for OpenZFS <br />+  FSx for ONTAP (using NFS) <br />+  NFS   | 0755 | 0755 | 65534 | 65534 |
+|  +  Amazon S3<sup>1</sup> <br />+  Object storage<sup>1</sup> <br />+  Microsoft Azure Blob Storage<sup>1</sup>   |  +  Amazon EFS <br />+  FSx for Lustre <br />+  FSx for OpenZFS <br />+  FSx for ONTAP (using NFS) <br />+  NFS   | 0755 | 0755 | 65534 | 65534 |
 |  +  SMB   |  +  Amazon S3 <br />+  Object storage <br />+  Amazon EFS <br />+  FSx for Lustre <br />+  FSx for OpenZFS <br />+  FSx for ONTAP (using NFS) <br />+  NFS   | 0644 | 0755 | 65534 | 65534 |
 |  +  HDFS   |  +  Amazon EFS <br />+  FSx for Lustre <br />+  FSx for OpenZFS <br />+  FSx for ONTAP (using NFS) <br />+  NFS   | 0644 | 0755 | 65534 | 65534 |
 
-1 In cases where the objects don't have metadata that was previously applied by DataSync.
+<sup>1</sup> In cases where the objects don't have metadata that was previously applied by DataSync.

@@ -33,7 +33,7 @@ None
 ...
 ```
 
-\*The valid values are `EC2` (default), `ELB`, and `VPC_LATTICE`. The `VPC_LATTICE` health check type is reserved for use with VPC Lattice, which is in preview release and is subject to change. For more information, see [Health checks for Auto Scaling instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html) in the Amazon EC2 Auto Scaling User Guide.
+<sup>\*</sup>The valid values are `EC2` (default), `ELB`, and `VPC_LATTICE`. The `VPC_LATTICE` health check type is reserved for use with VPC Lattice, which is in preview release and is subject to change. For more information, see [Health checks for Auto Scaling instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html) in the Amazon EC2 Auto Scaling User Guide.
 
  For more information on proactive evaluation, see [Evaluation Mode](./evaluate-config-rules.html).
 

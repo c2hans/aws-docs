@@ -14,7 +14,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
       hostname -I
       ```
 
-   1. On your computer, run the following command using the IP address of the core. You can use Ctrl \+ C to stop the **ping** command.
+   1. On your computer, run the following command using the IP address of the core. You can use **Ctrl** \+ **C** to stop the **ping** command.
 
       ```
       ping {{IP-address}}
@@ -72,6 +72,6 @@ Make sure that your [endpoints correspond to your certificate type](gg-core.md#c
 
 1. Choose the **Device Shadows** tab. After the GG\_Switch changes states, there should not be any updates to this shadow. That's because the GG\_TrafficLight is set to **Disable shadow sync with cloud**.
 
-1. Press Ctrl \+ C in the GG\_Switch (`lightController.py`) client device window. You should see that the GG\_TrafficLight (`trafficLight.py`) window stops receiving state change messages.
+1. Press **Ctrl** \+ **C** in the GG\_Switch (`lightController.py`) client device window. You should see that the GG\_TrafficLight (`trafficLight.py`) window stops receiving state change messages.
 
    Keep these windows open so you can run the commands in the next section.

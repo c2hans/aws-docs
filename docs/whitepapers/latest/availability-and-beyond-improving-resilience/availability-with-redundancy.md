@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  When a workload uses multiple, independent, and redundant subsystems, it can achieve a higher level of theoretical availability than by using a single subsystem. For example, consider a workload composed of two identical subsystems. It can be completely operational if either subsystem one or subsystem two is operational. For the whole system to be down, both subsystems must be down at the same time.
 
- If one subsystem's probability of failure is 1 − *α*, then the probability that two redundant subsystems being down at the same time is the product of each subsystem's probability of failure, *F* = (1−*α*1) × (1−*α*2). For a workload with two redundant subsystems, using Equation *(3)*, this gives an availability defined as:
+ If one subsystem's probability of failure is 1 − *α*, then the probability that two redundant subsystems being down at the same time is the product of each subsystem's probability of failure, *F* = (1−*α*<sub>1</sub>) × (1−*α*<sub>2</sub>). For a workload with two redundant subsystems, using Equation *(3)*, this gives an availability defined as:
 
 ![Picture of three equations](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation5.png)
 
@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  So, for two subsystems whose availability is 99%, the probability that one fails is 1% and the probability that they both fail is (1−99%) × (1−99%) = .01%. This makes the availability using two redundant subsystems 99.99%.
 
- This can be generalized to incorporate additional redundant spares, *s**,* as well. In Equation *(5)* we only assumed a single spare, but a workload might have two, three, or more spares so that it can survive the simultaneous loss of multiple subsystems without impacting availability. If a workload has three subsystems and two are spares, the probability that all three subsystems fail at the same time is (1−*α*) × (1−*α*) × (1−*α*) or (1−*α*)3. In general, a workload with *s* spares will only fail if *s* \+ 1 subsystems fail.
+ This can be generalized to incorporate additional redundant spares, *s**,* as well. In Equation *(5)* we only assumed a single spare, but a workload might have two, three, or more spares so that it can survive the simultaneous loss of multiple subsystems without impacting availability. If a workload has three subsystems and two are spares, the probability that all three subsystems fail at the same time is (1−*α*) × (1−*α*) × (1−*α*) or (1−*α*)<sup>3</sup>. In general, a workload with *s* spares will only fail if *s* \+ 1 subsystems fail.
 
  For a workload with *n* subsystems and *s* spares, *f* is the number of failure modes or the ways that *s* \+ 1 subsystems can fail out of *n*.
 
@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  Redundancy is an optimization problem. Too few spares, and the workload can fail more frequently than desired, too many spares and the workload costs too much to run. There is a threshold at which adding more spares will cost more than the additional availability they achieve warrants.
 
- Using our general availability with spares formula, Equation *(7)*, for a subsystem that has a 99.5% availability, with two spares the workload's availability is *A* ≈ 1 − (1)(1−.995)3 = 99.9999875% (approximately 3.94 seconds of downtime a year), and with 10 spares we get *A* ≈ 1 − (1)(1−.995)11 = 25.5  9′*s* (the approximate downtime would be 1.26252 × 10−15*m**s* per year, effectively 0). In comparing these two workloads, we've incurred a 5X increase in the cost of sparing to achieve four seconds less downtime a year. For most workloads, the increase in cost would be unwarranted for this increase in availability. The following figure shows this relationship.
+ Using our general availability with spares formula, Equation *(7)*, for a subsystem that has a 99.5% availability, with two spares the workload's availability is *A* ≈ 1 − (1)(1−.995)<sup>3</sup> = 99.9999875% (approximately 3.94 seconds of downtime a year), and with 10 spares we get *A* ≈ 1 − (1)(1−.995)<sup>11</sup> = 25.5  9<sup>′</sup>*s* (the approximate downtime would be 1.26252 × 10<sup>−15</sup>*m**s* per year, effectively 0). In comparing these two workloads, we've incurred a 5X increase in the cost of sparing to achieve four seconds less downtime a year. For most workloads, the increase in cost would be unwarranted for this increase in availability. The following figure shows this relationship.
 
 ![Diagram showing diminishing returns from increased sparing](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/effect-of-sparing.png)
 

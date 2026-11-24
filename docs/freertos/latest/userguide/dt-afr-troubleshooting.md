@@ -270,9 +270,9 @@ Each test suite execution has a unique execution ID that is used to create a fol
 #### S3 bucket issues
 <a name="s3-bucket-issues"></a>
 
-If you press CTRL\+C while running IDT, IDT will start a clean up process. Part of that clean up is to remove Amazon S3 resources that have been created as a part of the IDT tests. If the clean up can't finish, you might run into an issue where you have too many Amazon S3 buckets that have been created. This means the next time that you run IDT the tests will start to fail.
+If you press **CTRL\+C** while running IDT, IDT will start a clean up process. Part of that clean up is to remove Amazon S3 resources that have been created as a part of the IDT tests. If the clean up can't finish, you might run into an issue where you have too many Amazon S3 buckets that have been created. This means the next time that you run IDT the tests will start to fail.
 
-If you press CTRL\+C to stop IDT, you must let it finish the clean up process to avoid this issue. You can also delete the Amazon S3 buckets from your account that were created manually.
+If you press **CTRL\+C** to stop IDT, you must let it finish the clean up process to avoid this issue. You can also delete the Amazon S3 buckets from your account that were created manually.
 
 ## Troubleshoot timeout errors
 <a name="troubleshoot-timeout"></a>

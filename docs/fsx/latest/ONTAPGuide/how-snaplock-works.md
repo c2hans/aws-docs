@@ -26,7 +26,7 @@ SnapLock has two retention modes: Compliance and Enterprise. Amazon FSx for NetA
 | [SnapLock audit log volumes](#snaplock-audit-log-volume) | Yes | Yes |
 
 **Note**
-1EBR and Legal Hold operations are supported in the ONTAP CLI and REST API.
+<sup>1</sup>EBR and Legal Hold operations are supported in the ONTAP CLI and REST API.
 
 **Note**
 FSx for ONTAP supports tiering data to the capacity pool on all SnapLock volumes, regardless of the SnapLock type. For more information, see [Volume data tiering](volume-storage-capacity.md#volume-data-tiering).

@@ -15,7 +15,7 @@ Beyond automatically replicating your file system's data to ensure [high durabil
 **Topics**
 + [Protecting your data with volume backups](using-backups.md)
 + [Protecting your data with snapshots](snapshots-ontap.md)
++ [Replicating your data using NetApp SnapMirror](scheduled-replication.md)
 + [Protecting your data with Autonomous Ransomware Protection](ARP.md)
 + [Protecting your data with SnapLock](snaplock.md)
 + [Replicating your data with FlexCache](using-flexcache.md)
-+ [Replicating your data using NetApp SnapMirror](scheduled-replication.md)

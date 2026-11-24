@@ -86,7 +86,7 @@ EC2 provides customers with access to [instance console output](https://docs.aws
 ### The Nitro Security Chip protection of system hardware
 <a name="the-nitro-security-chip-protection-of-system-hardware"></a>
 
- The Nitro Security Chip is a device integrated into the server’s system main board. At runtime, it intercepts and moderates all operations to local non-volatile storage devices and low speed system management bus interfaces (such as Serial Peripheral Interface (SPI) and [I2C](https://en.wikipedia.org/wiki/I%C2%B2C))—in other words, to all firmware.
+ The Nitro Security Chip is a device integrated into the server’s system main board. At runtime, it intercepts and moderates all operations to local non-volatile storage devices and low speed system management bus interfaces (such as Serial Peripheral Interface (SPI) and [I<sup>2</sup>C](https://en.wikipedia.org/wiki/I%C2%B2C))—in other words, to all firmware.
 
  The Nitro Security Chip is also situated between the BMC and the main system CPU on its high-speed PCI connection, which enables this interface to be logically firewalled on production systems. The Nitro Security Chip is controlled by the Nitro Controller. The Nitro Controller, through its control of the Nitro Security Chip, is therefore able to mediate and validate updates to the firmware, or programing of other non-volatile devices, on the system mainboard or Nitro Cards of a system.
 

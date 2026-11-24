@@ -80,15 +80,15 @@ Some packages are installed using the OS’s default package manager. For AL2023
 |  [EKS service endpoints](https://docs.aws.amazon.com/general/latest/gr/eks.html)  | https://eks.{{region}}.amazonaws.com | HTTPS | 443 |
 |  [ECR service endpoints](https://docs.aws.amazon.com/general/latest/gr/ecr.html)  | https://api.ecr.{{region}}.amazonaws.com | HTTPS | 443 |
 | EKS ECR endpoints | See [View Amazon container image registries for Amazon EKS add-ons](add-ons-images.md) for regional endpoints. | HTTPS | 443 |
-| SSM binary endpoint 1  | https://amazon-ssm-{{region}}.s3.{{region}}.amazonaws.com | HTTPS | 443 |
-|  [SSM service endpoint](https://docs.aws.amazon.com/general/latest/gr/ssm.html) 1  | https://ssm.{{region}}.amazonaws.com | HTTPS | 443 |
-| IAM Anywhere binary endpoint 2  | https://rolesanywhere.amazonaws.com | HTTPS | 443 |
-|  [IAM Anywhere service endpoint](https://docs.aws.amazon.com/general/latest/gr/rolesanywhere.html) 2  | https://rolesanywhere.{{region}}.amazonaws.com | HTTPS | 443 |
+| SSM binary endpoint <sup>1</sup>  | https://amazon-ssm-{{region}}.s3.{{region}}.amazonaws.com | HTTPS | 443 |
+|  [SSM service endpoint](https://docs.aws.amazon.com/general/latest/gr/ssm.html) <sup>1</sup>  | https://ssm.{{region}}.amazonaws.com | HTTPS | 443 |
+| IAM Anywhere binary endpoint <sup>2</sup>  | https://rolesanywhere.amazonaws.com | HTTPS | 443 |
+|  [IAM Anywhere service endpoint](https://docs.aws.amazon.com/general/latest/gr/rolesanywhere.html) <sup>2</sup>  | https://rolesanywhere.{{region}}.amazonaws.com | HTTPS | 443 |
 | Operating System package manager endpoints | Package repository endpoints are OS-specific and might vary by geographic region. | HTTPS | 443 |
 
 **Note**
- 1 Access to the AWS SSM endpoints are only required if you are using AWS SSM hybrid activations for your on-premises IAM credential provider.
- 2 Access to the AWS IAM endpoints are only required if you are using AWS IAM Roles Anywhere for your on-premises IAM credential provider.
+ <sup>1</sup> Access to the AWS SSM endpoints are only required if you are using AWS SSM hybrid activations for your on-premises IAM credential provider.
+ <sup>2</sup> Access to the AWS IAM endpoints are only required if you are using AWS IAM Roles Anywhere for your on-premises IAM credential provider.
 
 ### Access required for ongoing cluster operations
 <a name="hybrid-nodes-networking-access-reqs-ongoing"></a>
@@ -100,19 +100,19 @@ Depending on your choice of CNI, you need to configure additional network access
 
 | Type | Protocol | Direction | Port | Source | Destination | Usage |
 | --- | --- | --- | --- | --- | --- | --- |
-| HTTPS | TCP | Outbound | 443 | Remote Node CIDR(s) | EKS cluster IPs 1  | kubelet to Kubernetes API server |
-| HTTPS | TCP | Outbound | 443 | Remote Pod CIDR(s) | EKS cluster IPs 1  | Pod to Kubernetes API server |
+| HTTPS | TCP | Outbound | 443 | Remote Node CIDR(s) | EKS cluster IPs <sup>1</sup>  | kubelet to Kubernetes API server |
+| HTTPS | TCP | Outbound | 443 | Remote Pod CIDR(s) | EKS cluster IPs <sup>1</sup>  | Pod to Kubernetes API server |
 | HTTPS | TCP | Outbound | 443 | Remote Node CIDR(s) |  [SSM service endpoint](https://docs.aws.amazon.com/general/latest/gr/ssm.html)  | SSM hybrid activations credential refresh and SSM heartbeats every 5 minutes |
 | HTTPS | TCP | Outbound | 443 | Remote Node CIDR(s) |  [IAM Anywhere service endpoint](https://docs.aws.amazon.com/general/latest/gr/rolesanywhere.html)  | IAM Roles Anywhere credential refresh |
 | HTTPS | TCP | Outbound | 443 | Remote Pod CIDR(s) |  [STS Regional Endpoint](https://docs.aws.amazon.com/general/latest/gr/sts.html)  | Pod to STS endpoint, only required for IRSA |
 | HTTPS | TCP | Outbound | 443 | Remote Node CIDR(s) |  [Amazon EKS Auth service endpoint](https://docs.aws.amazon.com/general/latest/gr/eks.html)  | Node to Amazon EKS Auth endpoint, only required for Amazon EKS Pod Identity |
-| HTTPS | TCP | Inbound | 10250 | EKS cluster IPs 1  | Remote Node CIDR(s) | Kubernetes API server to kubelet |
-| HTTPS | TCP | Inbound | Webhook ports | EKS cluster IPs 1  | Remote Pod CIDR(s) | Kubernetes API server to webhooks |
+| HTTPS | TCP | Inbound | 10250 | EKS cluster IPs <sup>1</sup>  | Remote Node CIDR(s) | Kubernetes API server to kubelet |
+| HTTPS | TCP | Inbound | Webhook ports | EKS cluster IPs <sup>1</sup>  | Remote Pod CIDR(s) | Kubernetes API server to webhooks |
 | HTTPS | TCP,UDP | Inbound,Outbound | 53 | Remote Pod CIDR(s) | Remote Pod CIDR(s) | Pod to CoreDNS. If you run at least 1 replica of CoreDNS in the cloud, you must allow DNS traffic to the VPC where CoreDNS is running. |
 | User-defined | User-defined | Inbound,Outbound | App ports | Remote Pod CIDR(s) | Remote Pod CIDR(s) | Pod to Pod |
 
 **Note**
- 1 The IPs of the EKS cluster. See the following section on Amazon EKS elastic network interfaces.
+ <sup>1</sup> The IPs of the EKS cluster. See the following section on Amazon EKS elastic network interfaces.
 
 ### Amazon EKS network interfaces
 <a name="hybrid-nodes-networking-eks-network-interfaces"></a>

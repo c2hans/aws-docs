@@ -101,10 +101,10 @@ You will have 130 minutes to complete your exam.
 ### Exam results
 <a name="ai-business-strategist-01-exam-results"></a>
 
-The AWS Certified AI Business Strategist (AIB-C01) exam has a pass or fail designation.1 The exam is scored against a minimum standard established by AWS professionals who follow certification industry best practices and guidelines.
+The AWS Certified AI Business Strategist (AIB-C01) exam has a pass or fail designation.<sup>1</sup> The exam is scored against a minimum standard established by AWS professionals who follow certification industry best practices and guidelines.
 
 **Note**
-1 For additional information on beta testing, see [Before Testing policies](https://aws.amazon.com/certification/policies/before-testing/).
+<sup>1</sup> For additional information on beta testing, see [Before Testing policies](https://aws.amazon.com/certification/policies/before-testing/).
 
 Your results for the exam are reported as a scaled score of 100–1,000. The minimum passing score is 700. Your score shows how you performed on the exam as a whole and whether you passed. Scaled scoring models help equate scores across multiple exam forms that might have slightly different difficulty levels.
 

@@ -41,7 +41,7 @@ You can turn CoIPs on or off when you perform any of the following actions:
   For more information, see [Restoring a DB instance to a specified time for Amazon RDS](USER_PIT.md).
 
 **Note**
-In some cases, you might turn on CoIPs for a DB instance but Amazon RDS isn't able to allocate a CoIP for the DB instance. In such cases, the DB instance status is changed to **incompatible-network**. For more information about the DB instance status, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+In some cases, you might turn on CoIPs for a DB instance but Amazon RDS isn't able to allocate a CoIP for the DB instance. In such cases, the DB instance status is changed to **incompatible-network**. For more information about the DB instance status, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ## Limitations
 <a name="rds-on-outposts.coip.limits"></a>

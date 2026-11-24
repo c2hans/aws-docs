@@ -44,6 +44,7 @@ AWS Quick supports integrations with various third-party applications and servic
 | HuggingFace | Yes | No |
 | Intercom | Yes | No |
 | Linear | Yes | No |
+| Meta ads | Yes | No |
 | Microsoft OneDrive | Yes | Yes |
 | Microsoft OneNote | Yes | No |
 | Microsoft Outlook | Yes | No |

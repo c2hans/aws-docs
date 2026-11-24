@@ -8,7 +8,7 @@ The following table lists the annotations that can be used on data classes and p
 
 **Data class annotations used in this guide**
 
-| Annotation name | Annotation applies to1 | What it does | Where it is shown in this guide |
+| Annotation name | Annotation applies to<sup>1</sup> | What it does | Where it is shown in this guide |
 | --- | --- | --- | --- |
 | DynamoDbAtomicCounter | attribute2 | Increments a tagged numerical attribute each time a record is written to the database. | [Introduction and discussion.](ddb-en-client-extensions.md#ddb-en-client-extensions-ACE) |
 | DynamoDbAttribute | attribute | Defines or renames a bean property that is mapped to a DynamoDB table attribute. |  +  [Initial discussion.](ddb-en-client-adv-features-inex-attr.md#ddb-en-client-adv-features-inex-attr-in) <br />+  [Get started section—see Note.](ddb-en-client-gs-ddbtable.md#ddb-en-client-gs-ddbtable-code) <br />+  [In MovieActor class In Query method examples.](ddb-en-client-use-multirecord.md#ddb-en-client-use-multirecord-query-example)   |
@@ -28,6 +28,6 @@ The following table lists the annotations that can be used on data classes and p
 | DynamoDbUpdateBehavior | attribute | Specifies the behavior when this attribute is updated as part of an 'update' operation such as UpdateItem. | [Introduction and example.](ddb-en-client-adv-features-upd-behavior.md) |
 | DynamoDbVersionAttribute | attribute | Increments an item version number. | [Introduction and discussion.](ddb-en-client-extensions.md#ddb-en-client-extensions-VRE) |
 
-1You can apply an attribute-level annotations to the getter or setter, but not both. This guide shows annotations on getters.
+<sup>1</sup>You can apply an attribute-level annotations to the getter or setter, but not both. This guide shows annotations on getters.
 
-2The term `property` is normally used for a value encapsulated in a JavaBean data class. However, this guide uses the term `attribute` instead, to be consistent with the terminology used by DynamoDB.
+<sup>2</sup>The term `property` is normally used for a value encapsulated in a JavaBean data class. However, this guide uses the term `attribute` instead, to be consistent with the terminology used by DynamoDB.

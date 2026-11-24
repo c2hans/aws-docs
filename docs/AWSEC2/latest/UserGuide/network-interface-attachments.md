@@ -4,19 +4,20 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/network-interfac
 
 # Network interface attachments for your EC2 instance
 
-You can create network interfaces to be used by your EC2 instances as primary or secondary network interfaces. You must attach a network interface to an EC2 instance if it is in the same Availability Zone as the network interface. The instance type of an instance determines how many network interfaces you can attach to the instance. For more information, see [Maximum IP addresses per network interface](AvailableIpPerENI.md).
+You can create network interfaces to be used by your EC2 instances as primary or secondary network interfaces. You can attach a network interface only to an instance in the same Availability Zone as the network interface. The instance type determines how many network interfaces you can attach to an instance. On instance types that support configurable ENA queue allocation, the ENA queue pool of each network card can also limit this number. For more information, see [Maximum IP addresses per network interface](AvailableIpPerENI.md).
 
 **Considerations**
-+ You can attach a network interface to an instance when it's running (hot attach), when it's stopped (warm attach), or when the instance is being launched (cold attach).
++ You can attach a network interface to an instance when it's running (hot attach), when it's stopped (warm attach), or when the instance is being launched (cold attach). You can't hot attach an EFA network interface. To attach an EFA network interface, stop the instance first (warm attach), or attach it when you launch the instance (cold attach).
 + You can detach secondary network interfaces when the instance is running or stopped. However, you can't detach the primary network interface.
 + You can detach a secondary network interface from one instance and attach it to another instance.
 + When launching an instance using the CLI, API, or an SDK, you can specify the primary network interface and additional network interfaces. Note that you can't enable the auto-assignment of public IPv4 addresses if you add a secondary network interface during launch.
 + Launching an Amazon Linux or Windows Server instance with multiple network interfaces automatically configures interfaces, private IPv4 addresses, and route tables on the operating system of the instance.
 + A warm or hot attach of an additional network interface might require you to manually bring up the second interface, configure the private IPv4 address, and modify the route table accordingly. Instances running Amazon Linux or Windows Server automatically recognize the warm or hot attach and configure themselves.
-+ You can't attach another network interface to an instance (for example, a NIC teaming configuration) to increase or double the network bandwidth to or from the dual-homed instance.
++ You can't attach another network interface to an instance (for example, a NIC teaming configuration) to increase or double the network bandwidth to or from the dual-homed instance. On some instance types with multiple network cards, you can attach network interfaces to different network cards to increase the network bandwidth available to the instance. For more information, see [Network cards](using-eni.md#network-cards).
 + If you attach multiple network interfaces from the same subnet to an instance, you might encounter networking issues such as asymmetric routing. If possible, add a secondary private IPv4 address on the primary network interface instead.
 + For EC2 instances in an IPv6-only subnet, if you attach a secondary network interface, the private DNS hostname of the secondary network interface resolves to the primary IPv6 address for the primary network interface.
 + [Windows instances] – If you add multiple network interfaces to an instance, you must configure the network interfaces to use static routing.
++ On instance types that support configurable ENA queue allocation, each network interface takes ENA queues from its network card's pool. An attachment fails when the pool doesn't have enough queues left, even if the instance hasn't reached its maximum number of network interfaces. To attach with fewer queues, specify `--ena-queue-count`. For more information, see [ENA queues](ena-queues.md).
 
 ## Attach a network interface
 <a name="attach_eni"></a>
@@ -71,6 +72,16 @@ aws ec2 attach-network-interface \
     --device-index {{1}}
 ```
 
+To set the number of ENA queues for the network interface, add `--ena-queue-count`. For example:
+
+```bash
+aws ec2 attach-network-interface \
+    --network-interface-id {{eni-1234567890abcdef0}} \
+    --instance-id {{i-1234567890abcdef0}} \
+    --device-index {{1}} \
+    --ena-queue-count {{8}}
+```
+
 ------
 #### [ PowerShell ]
 
@@ -82,6 +93,16 @@ Add-EC2NetworkInterface `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -InstanceId {{i-1234567890abcdef0}} `
     -DeviceIndex {{1}}
+```
+
+To set the number of ENA queues for the network interface, add `-EnaQueueCount`. For example:
+
+```powershell
+Add-EC2NetworkInterface `
+    -NetworkInterfaceId {{eni-1234567890abcdef0}} `
+    -InstanceId {{i-1234567890abcdef0}} `
+    -DeviceIndex {{1}} `
+    -EnaQueueCount {{8}}
 ```
 
 ------

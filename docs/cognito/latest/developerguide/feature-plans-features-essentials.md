@@ -18,6 +18,7 @@ The sections that follows present a brief overview of the features that you can 
 + Token exchange: [Exchanging tokens for downstream services](cognito-user-pools-token-exchange.md)
 + Point-in-time recovery: [Point-in-time recovery for user pools](user-pool-point-in-time-recovery.md)
 + Dynamic client registration: [Dynamic client registration](cognito-user-pools-dynamic-client-registration.md)
++ Client ID metadata documents: [Client ID metadata documents (CIMD)](cognito-user-pools-client-id-metadata.md)
 + Refresh token rotation: [Refresh token rotation](amazon-cognito-user-pools-using-the-refresh-token.md#using-the-refresh-token-rotation)
 + Resource binding: [Resource binding](cognito-user-pools-define-resource-servers.md#cognito-user-pools-resource-binding)
 + Customer managed keys: [Encryption at rest](data-protection.md#data-encryption-at-rest)

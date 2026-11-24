@@ -147,7 +147,7 @@ If you run Amazon EMR releases 6.15.0 or higher, you must also use the following
 The following example shows how to create a DataFrame and write it as a Delta Lake dataset. The example shows how to work with datasets with the Spark shell while connected to the primary node using SSH as the default hadoop user.
 
 **Note**
-To paste code samples into the Spark shell, type :paste at the prompt, paste the example, and then press CTRL \+ D.
+To paste code samples into the Spark shell, type **:paste** at the prompt, paste the example, and then press **CTRL \+ D**.
 
 ------
 #### [ PySpark ]

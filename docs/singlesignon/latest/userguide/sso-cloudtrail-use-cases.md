@@ -8,7 +8,7 @@ The CloudTrail events that IAM Identity Center emits can be valuable for a varie
 
 The following sections describe the foundational use cases that inform your workflows such as audit, incident investigation, and troubleshooting.
 
-## Identifying the user in IAM Identity Center user-initiated CloudTrail events
+## Identifying the user in IAM Identity Center AWS CloudTrail events (legacy experience of trusted identity propagation)
 <a name="user-session-iam-identity-center"></a>
 
 IAM Identity Center emits two CloudTrail fields that enable you to identify the IAM Identity Center user behind the CloudTrail events, such as signing into IAM Identity Center or AWS CLI, and using the AWS access portal, including managing MFA devices:
@@ -30,9 +30,10 @@ The `userID` and `identityStoreArn` fields display in the `onBehalfOf` element n
 ```
 
 **Tip**
-We recommend you use `userId` and `identityStoreArn` for identifying the user behind IAM Identity Center CloudTrail events. The `userName` and `principalId` fields under the `userIdentity` element are no longer available. If your workflows, such as audit or incident response, depend on having access to the `username`, you have two options:
+If your workflows, such as audit or incident response, depend on having access to the `username`, you have three options:
 Retrieve the username from the IAM Identity Center directory as explained in [Username in sign-in CloudTrail events](username-sign-in-cloudtrail-events.md).
 Get the `UserName` that IAM Identity Center emits under the `additionalEventData` element in Sign-in. This option doesn't require access to the IAM Identity Center directory. For more information, see [Username in sign-in CloudTrail events](username-sign-in-cloudtrail-events.md).
+Make sure that the simplified experience for trusted identity propagation is turned on for your instance. AWS CloudTrail then records the user's username. See [Identity context fields in AWS CloudTrail (simplified experience)](sso-info-in-cloudtrail.md#sso-cloudtrail-simplified-tip-fields).
 
 To retrieve the details of a user, including the `username` field, you query the Identity Store with user ID and Identity Store ID as parameters. You can perform this action through the [`DescribeUser`](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html) API request or through the CLI. The following is an example CLI command. You can omit the `region` parameter if your IAM Identity Center instance is in the CLI default Region.
 
@@ -57,7 +58,7 @@ For user actions inside the AWS access portal, the `credentialId` value is set t
 **Note**
 You can't use `credentialId` to correlate sign-in events to the subsequent events, such as the use of the AWS access portal. The value of the `credentialId` field emitted in sign-in events has internal use, and we recommend that you not rely on it. The value of the `credentialId` field emitted for [AWS access portal events](sso-info-in-cloudtrail.md#cloudtrail-events-access-portal-operations) invoked with OIDC equals the ID of the access token.
 
-## Identifying user background session details in IAM Identity Center user-initiated CloudTrail events
+## Identifying user background session details in IAM Identity Center AWS CloudTrail events
 <a name="identifying-user-background-session-details"></a>
 
 The following CloudTrail event captures the process of OAuth 2.0 token exchange, in which an existing access token (the `subjectToken`) that represents the user's interactive session is exchanged for a refresh token (the `requestedTokenType`). The refresh token allows any user initiated long-running jobs to continue running with the user's permissions, even after the user signs out.
@@ -128,3 +129,13 @@ Install-WindowsFeature -Name  RSAT-AD-PowerShell
   -Filter {objectGUID -eq  [GUID]::Parse("16809ecc-7225-4c20-ad98-30094aefdbca")} `
   -Properties *
 ```
+
+## Finding a user's activity by username (simplified experience for trusted identity propagation)
+<a name="sso-cloudtrail-find-activity-by-username"></a>
+
+When you turn on the simplified experience for trusted identity propagation, CloudTrail records the user's username in the `subject` field of the `onBehalfOf` element, alongside the Identity Store user ID and Identity Store ARN. The username is recorded the same way whether the user signs in to a web application, uses an IAM role created from a permission set, or uses an IAM role assigned with IAM account access manager. For a description of these fields, see [Identity context fields in AWS CloudTrail (simplified experience)](sso-info-in-cloudtrail.md#sso-cloudtrail-simplified-tip-fields).
+
+To find what a user did, search your CloudTrail events for events where `userIdentity.onBehalfOf.subject` equals the user's username. You no longer need to first look up the user's Identity Store user ID, as described in [Viewing an IAM Identity Center user by username and externalId](#view-username-extid).
+
+**Note**
+For more information about AWS services that support trusted identity propagation, including which services record the user's identity context in their CloudTrail events, see [AWS services that support TIP](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_tip_services.html) in the *IAM User Guide*.

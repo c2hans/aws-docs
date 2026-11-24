@@ -35,7 +35,7 @@ Yes. You must create a standalone AWS account that is not part of AWS Organizati
 ## What information do I need to provide for seller registration?
 <a name="india-seller-registration-requirements"></a>
 
-You must submit: GST identification number (GSTIN), Permanent Account Number (PAN) which auto-populates from GSTIN, seller signature for tax invoices, legal business name and address corresponding to your GSTIN, acknowledgements on withholding tax non-applicability and e-invoicing enablement, authorization for AWS India to raise invoices, and valid India domiciled bank account details.
+You must submit: GST identification number (GSTIN), Permanent Account Number (PAN) which auto-populates from GSTIN, seller signature for tax invoices, legal business name and address corresponding to your GSTIN, acknowledgements on withholding tax non-applicability and e-invoicing enablement, authorization for AWS India to raise invoices, and valid India domiciled bank account details. You provide your tax details on the **Tax and invoices** page in AWS Partner Central, on the **Primary tax details** tab, in the **Tax registration** and **Tax documents** sections. For more information, see [Getting started as a seller in India](getting-started-seller-india.md).
 
 ## How do I get support and assistance as a seller in India?
 <a name="india-seller-support"></a>
@@ -71,7 +71,7 @@ For USD offers: Buyers receive invoices with USD pricing, applicable GST, and fo
 ## What are my GST tax obligations and liability as a seller in India?
 <a name="india-seller-tax-obligations"></a>
 
-Buyers are charged 18% GST which is paid to you as part of your disbursement, and you are responsible for remitting GST to tax authorities in India according to applicable tax laws. AWS India facilitates issuing GST tax invoices to buyers with you as the seller on record (SoR) and shares the tax invoice with you via email for your records and compliance purposes. You must ensure your GSTIN is enabled for e-invoicing and comply with all applicable tax laws in India including GST registration and filing requirements.
+Buyers are charged 18% GST which is paid to you as part of your disbursement, and you are responsible for remitting GST to tax authorities in India according to applicable tax laws. AWS India facilitates issuing GST tax invoices to buyers with you as the seller on record (SoR) and shares the tax invoice with you via email for your records and compliance purposes. You can also view and download these invoices on the **Customer invoices** tab of the **Tax and invoices** page in AWS Partner Central. You must ensure your GSTIN is enabled for e-invoicing and comply with all applicable tax laws in India including GST registration and filing requirements.
 
 ## What banking information do I need to provide?
 <a name="india-seller-banking-requirements"></a>
@@ -81,7 +81,7 @@ You must provide bank account details in India including account number, Indian 
 ## How are AWS Marketplace listing fees handled for sellers in India?
 <a name="india-seller-listing-fees"></a>
 
-The fee structure follows standard AWS Marketplace rates, but all fees are calculated and charged in Indian Rupees (INR) with 18% GST applicable. AWS Marketplace provides a GST tax invoice for listing fees. Both listing fees and GST are deducted from your seller disbursement. You are not required to withhold funds toward listing fees due to TDS exemption under Section 194-O of the Income Tax Act. Refer to the AWS Marketplace Seller Terms for current fee information.
+The fee structure follows standard AWS Marketplace rates, but all fees are calculated and charged in Indian Rupees (INR) with 18% GST applicable. AWS Marketplace provides a GST tax invoice for listing fees, which you can download on the **Listing fee invoices** tab of the **Tax and invoices** page in AWS Partner Central. Both listing fees and GST are deducted from your seller disbursement. You are not required to withhold funds toward listing fees due to TDS exemption under Section 194-O of the Income Tax Act. Refer to the AWS Marketplace Seller Terms for current fee information.
 
 ## Do I need to withhold tax on listing fees?
 <a name="india-seller-tds-exemption"></a>

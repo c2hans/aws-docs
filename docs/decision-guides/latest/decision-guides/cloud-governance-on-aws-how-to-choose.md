@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 
  The guide is designed to help you decide which AWS cloud governance services are the best fit for your organization, to strengthen operational resilience, optimize costs, and build controls to help comply with regulations or corporate standards, while maintaining development speed and accelerating innovation.
 
-[![AWS Videos](https://img.youtube.com/vi/U0y9l5V3mMQ/0.jpg)](https://www.youtube.com/watch?v=U0y9l5V3mMQ)
+[![AWS Videos](https://img.youtube.com/vi/U0y9l5V3mMQ/0.jpg)](https://www.youtube.com/watch?v=U0y9l5V3mMQ&t=131s)
 
 *This video is a six-minute segment of a presentation introducing best practices for cloud governance.*
 

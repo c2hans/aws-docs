@@ -126,7 +126,7 @@ Use the scroll bars to see the rest of the table.
 |  [DescribeBackupJob](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeBackupJob.html)  | backup:DescribeBackupJob |  |
 |  [DescribeBackupVault](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeBackupVault.html)  |  backup:DescribeBackupVault 1  |  arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*  |
 |  [DescribeProtectedResource](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeProtectedResource.html)  | backup:DescribeProtectedResource |  |
-|  [DescribeRecoveryPoint](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeRecoveryPoint.html)  |  backup:DescribeRecoveryPoint 1  | arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*2 |
+|  [DescribeRecoveryPoint](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeRecoveryPoint.html)  |  backup:DescribeRecoveryPoint 1  | arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*<sup>2</sup> |
 |  [DescribeRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeRestoreJob.html)  | backup:DescribeRestoreJob |  |
 |  [DescribeRegionSettings](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeRegionSettings.html)  |  backup:DescribeRegionSettings  |  |
 |  [ExportBackupPlanTemplate](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ExportBackupPlanTemplate.html)  | backup:ExportBackupPlanTemplate |  |
@@ -156,19 +156,19 @@ Use the scroll bars to see the rest of the table.
 |  [PutBackupVaultLockConfiguration](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_PutBackupVaultLockConfiguration.html)  |  backup:PutBackupVaultLockConfiguration 1  |  arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*  |
 |  [PutBackupVaultNotifications](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_PutBackupVaultNotifications.html)  |  backup:PutBackupVaultNotifications 1  |  arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*  |
 |  [StartBackupJob](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_StartBackupJob.html)  | backup:StartBackupJob |  arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*  |
-|  [StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_StartRestoreJob.html)  | backup:StartRestoreJob | `arn:aws:backup:{{region}}:{{account-id}}:backup-vault:*`<br />`arn:aws:backup:{{region}}:{{account-id:}}recovery-point:*`<br />3 |
+|  [StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_StartRestoreJob.html)  | backup:StartRestoreJob | `arn:aws:backup:{{region}}:{{account-id}}:backup-vault:*`<br />`arn:aws:backup:{{region}}:{{account-id:}}recovery-point:*`<br /><sup>3</sup> |
 |  [StopBackupJob](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_StopBackupJob.html)  | backup:StopBackupJob |  |
 |  [TagResource](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_TagResource.html)  | backup:TagResource | arn:aws:backup:{{region}}:{{account-id:}}recovery-point:\* |
 |  [UntagResource](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_UntagResource.html)  | backup:UntagResource |  |
 |  [UpdateBackupPlan](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_UpdateBackupPlan.html)  | backup:UpdateBackupPlan |  arn:aws:backup:{{region}}:{{account-id}}:backup-plan:\*  |
-|  [UpdateRecoveryPointLifecycle](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_UpdateRecoveryPointLifecycle.html)  |  backup:UpdateRecoveryPointLifecycle 1  | arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*2 |
+|  [UpdateRecoveryPointLifecycle](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_UpdateRecoveryPointLifecycle.html)  |  backup:UpdateRecoveryPointLifecycle 1  | arn:aws:backup:{{region}}:{{account-id}}:backup-vault:\*<sup>2</sup> |
 |  [UpdateRegionSettings](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_UpdateRegionSettings.html)  | `backup:UpdateRegionSettings`<br />`backup:DescribeRegionSettings` |  |
 
-1 Uses the existing vault access policy.
+<sup>1</sup> Uses the existing vault access policy.
 
-2 See [AWS Backup resource ARNs](#resource-arns-table) for resource-specific recovery point ARNs.
+<sup>2</sup> See [AWS Backup resource ARNs](#resource-arns-table) for resource-specific recovery point ARNs.
 
-3 `StartRestoreJob` must have the key-value pair in the metadata for the resource. To get the metadata of the resource, call the `GetRecoveryPointRestoreMetadata` API.
+<sup>3</sup> `StartRestoreJob` must have the key-value pair in the metadata for the resource. To get the metadata of the resource, call the `GetRecoveryPointRestoreMetadata` API.
 
 For more information, see [Actions, resources, and condition keys for AWS Backup](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackup.html) in the *Service Authorization Reference*.
 

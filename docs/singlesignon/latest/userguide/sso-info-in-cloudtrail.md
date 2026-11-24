@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/sso-info-i
 
 # IAM Identity Center information in CloudTrail
 
-CloudTrail is enabled on your AWS account when you create the account. When activity occurs in IAM Identity Center, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing events with CloudTrail event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html).
+AWS CloudTrail helps you track your API activity and user actions across your AWS account, so you can audit, govern, and ensure compliance of your AWS environment. When activity occurs in IAM Identity Center, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing events with CloudTrail event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html). You can also store these events by creating a trail. A trail logs management events by default, and you can configure it to also log data events. See [Overview for creating a trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html).
 
 **Note**
 For more information about how user identification and tracking of user actions in CloudTrail events is evolving, refer to [Important changes to CloudTrail events for IAM Identity Center](https://aws.amazon.com/blogs/security/modifications-to-aws-cloudtrail-event-data-of-iam-identity-center/) in the *AWS Security Blog*.
@@ -164,9 +164,59 @@ Every event or log entry contains information about who generated the request. T
 + Whether the request was made with root user or AWS Identity and Access Management (IAM) user credentials.
 + Whether the request was made with temporary security credentials for a role or federated user.
 + Whether the request was made by another AWS service.
-+ Whether the request was made by an IAM Identity Center user. If so, the `userId` and `identityStoreArn` fields are available in the CloudTrail events to identify the IAM Identity Center user who initiated the request. For more information, see [Identifying the user in IAM Identity Center user-initiated CloudTrail events](sso-cloudtrail-use-cases.md#user-session-iam-identity-center).
++ Whether the request was made by an IAM Identity Center user. If so, the `userId` and `identityStoreArn` fields are available in the CloudTrail events to identify the IAM Identity Center user who initiated the request. For more information, see [Identifying the user in IAM Identity Center AWS CloudTrail events (legacy experience of trusted identity propagation)](sso-cloudtrail-use-cases.md#user-session-iam-identity-center).
 
 For more information, see the [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
 
 **Note**
 Currently, IAM Identity Center doesn't emit CloudTrail events for user sign-in to AWS managed web applications (for example, Amazon SageMaker AI Studio) with the [OIDC API](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/Welcome.html). These web applications are a subset of the broader set of [AWS managed applications](awsapps.md), which also include non-web applications such as Amazon Athena SQL and Amazon S3 Access Grants.
+
+## Identity context fields in AWS CloudTrail (simplified experience)
+<a name="sso-cloudtrail-simplified-tip-fields"></a>
+
+The `onBehalfOf` element appears in the `userIdentity` element of CloudTrail management and data events for requests made with credentials that carry the user's identity context, such as an Amazon S3 `GetObject` request (a data event), and identifies the IAM Identity Center user on whose behalf the request was made. These credentials come from `AssumeRole` and `AssumeRoleWithSAML` calls. When you turn on the simplified experience for trusted identity propagation, CloudTrail records the user's username in the `subject` field of this element, alongside the existing Identity Store user ID, Identity Store ARN, and IAM Identity Center instance ARN. This applies across requests made with IAM roles created from permission sets and IAM roles assigned with IAM account access manager, as well as requests that customer managed or supported AWS managed applications make on the user's behalf. For more information about the simplified experience, see [Simplified experience for trusted identity propagation](simplified-tip-overview.md). To find a user's activity by username, see [Finding a user's activity by username (simplified experience for trusted identity propagation)](sso-cloudtrail-use-cases.md#sso-cloudtrail-find-activity-by-username).
+
+**Note**
+CloudTrail records data events, such as Amazon S3 object-level requests, only if you configure a trail or event data store to log data events.
+
+The following table lists the fields in the `onBehalfOf` element.
+
+| Field | Description | New or existing |
+| --- | --- | --- |
+| subject | The user's username | New |
+| subjectType | The type of subject. For IAM Identity Center sessions, the value is always "user". | New |
+| issuer | The issuer of the user's identity. For IAM Identity Center sessions, the value is the ARN of your IAM Identity Center instance. | New |
+| userId | The user's Identity Store user ID | Existing |
+| identityStoreArn | The ARN of the Identity Store | Existing |
+| identityCenterInstanceArn | The ARN of the IAM Identity Center instance | Existing |
+
+The following example shows the `onBehalfOf` element before the simplified experience (the legacy experience):
+
+```json
+"onBehalfOf": {
+    "userId": "94482488-3041-7026-18f3-be45837cd0e4",
+    "identityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
+    "identityCenterInstanceArn": "arn:aws:sso:::instance/ssoins-1234567890abcdef"
+  }
+```
+
+With the simplified experience, the same element includes the username and additional fields:
+
+```json
+"onBehalfOf": {
+    "userId": "94482488-3041-7026-18f3-be45837cd0e4",
+    "identityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
+    "identityCenterInstanceArn": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+    "issuer": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+    "subject": "example-user-1",
+    "subjectType": "user"
+  }
+```
+
+If you have security information and event management (SIEM) rules or dashboards built on IAM Identity Center fields, plan for the following changes:
++ Services that support the simplified experience also pass the user's identity in `AssumeRole` events when they pass identity to the next service.
++ Rules and dashboards built on `additionalEventData.sessionContext` in `AssumeRole` and `AssumeRoleWithSAML` events keep working. The simplified experience doesn't remove or rename the keys in `sessionContext`, such as `identitystore:UserId` and `identitystore:IdentityStoreArn`.
++ When a user signs in to a web application, the `CreateTokenWithIAM` event does not include the username. The username appears in the `userIdentity.onBehalfOf` element of events for requests made with the user's credentials.
+
+**Note**
+For more information about AWS services that support trusted identity propagation, including which services record the user's identity context in their CloudTrail events, see [AWS services that support TIP](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_tip_services.html) in the *IAM User Guide*.

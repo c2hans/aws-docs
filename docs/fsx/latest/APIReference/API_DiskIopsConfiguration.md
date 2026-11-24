@@ -14,7 +14,7 @@ The total number of SSD IOPS provisioned for the file system.
 The minimum and maximum values for this property depend on the value of `HAPairs` and `StorageCapacity`. The minimum value is calculated as `StorageCapacity` \* 3 \* `HAPairs` (3 IOPS per GB of `StorageCapacity`). The maximum value is calculated as 200,000 \* `HAPairs`.
 Amazon FSx responds with an HTTP status code 400 (Bad Request) if the value of `Iops` is outside of the minimum or maximum values.
 Type: Long
-Valid Range: Minimum value of 0. Maximum value of 2400000.
+Valid Range: Minimum value of 0. Maximum value of 2147483647.
 Required: No
 
  ** Mode **   <a name="FSx-Type-DiskIopsConfiguration-Mode"></a>

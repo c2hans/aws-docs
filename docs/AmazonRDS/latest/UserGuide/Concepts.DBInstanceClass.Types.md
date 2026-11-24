@@ -164,6 +164,8 @@ The following burstable-performance DB instance class types are available:
 </tbody>
 </table>
 
+Amazon RDS configures burstable-performance DB instance classes for Unlimited mode. For more information about Unlimited mode, including how instances earn and spend CPU credits, see [Unlimited mode for burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-unlimited-mode.html) in the Amazon EC2 User Guide.
+
 **Note**
 The DB instance classes that use the AWS Nitro System (db.m5, db.r5, db.t3) are throttled on combined read plus write workload.
 

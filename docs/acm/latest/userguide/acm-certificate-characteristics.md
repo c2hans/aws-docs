@@ -72,7 +72,7 @@ ECDSA keys are smaller and more computationally efficient than RSA keys of compa
 </tbody>
 </table>
 
-Security strength, as a power of 2, relates to the number of guesses needed to break the encryption. For example, both a 3072-bit RSA key and a 256-bit ECDSA key can be retrieved with no more than 2128 guesses.
+Security strength, as a power of 2, relates to the number of guesses needed to break the encryption. For example, both a 3072-bit RSA key and a 256-bit ECDSA key can be retrieved with no more than 2<sup>128</sup> guesses.
 For help choosing an algorithm, see the AWS blog post [How to evaluate and use ECDSA certificates in AWS Certificate Manager](https://aws.amazon.com/blogs/security/how-to-evaluate-and-use-ecdsa-certificates-in-aws-certificate-manager/).
 [Integrated services](https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html) allow only supported algorithms and key sizes for their resources. Support varies based on whether the certificate is imported into IAM or ACM. For details, see each service's documentation:
 + For Elastic Load Balancing, see [HTTPS Listeners for Your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html).

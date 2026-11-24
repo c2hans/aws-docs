@@ -4,10 +4,10 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnapsh
 
 # CreateSnapshot
 
-Creates a snapshot of an existing Amazon FSx for OpenZFS volume. With snapshots, you can easily undo file changes and compare file versions by restoring the volume to a previous version.
+Creates a snapshot of an existing Amazon FSx for OpenZFS or Amazon FSx for NetApp ONTAP volume. With snapshots, you can easily undo file changes and compare file versions by restoring the volume to a previous version.
 
 If a snapshot with the specified client request token exists, and the parameters match, this operation returns the description of the existing snapshot. If a snapshot with the specified client request token exists, and the parameters don't match, this operation returns `IncompatibleParameterError`. If a snapshot with the specified client request token doesn't exist, `CreateSnapshot` does the following:
-+ Creates a new OpenZFS snapshot with an assigned ID, and an initial lifecycle state of `CREATING`.
++ Creates a new snapshot with an assigned ID, and an initial lifecycle state of `CREATING`.
 + Returns the description of the snapshot.
 
 By using the idempotent operation, you can retry a `CreateSnapshot` operation without the risk of creating an extra snapshot. This approach can be useful when an initial call fails in a way that makes it unclear whether a snapshot was created. If you use the same client request token and the initial call created a snapshot, the operation returns a successful result because all the parameters are the same.
@@ -21,6 +21,11 @@ The `CreateSnapshot` operation returns while the snapshot's lifecycle state is s
 {
    "ClientRequestToken": "{{string}}",
    "Name": "{{string}}",
+   "OntapConfiguration": {
+      "ExpiryTime": {{number}},
+      "SnaplockExpiryTime": {{number}},
+      "SnapmirrorLabel": "{{string}}"
+   },
    "Tags": [
       {
          "Key": "{{string}}",
@@ -51,6 +56,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 203.
 Pattern: `^[a-zA-Z0-9_:.-]{1,203}$`
 Required: Yes
+
+ ** [OntapConfiguration](#API_CreateSnapshot_RequestSyntax) **   <a name="FSx-CreateSnapshot-request-OntapConfiguration"></a>
+Specifies the configuration to use when creating the ONTAP snapshot.
+Type: [CreateOntapSnapshotConfiguration](API_CreateOntapSnapshotConfiguration.md) object
+Required: No
 
  ** [Tags](#API_CreateSnapshot_RequestSyntax) **   <a name="FSx-CreateSnapshot-request-Tags"></a>
 A list of `Tag` values, with a maximum of 50 elements.
@@ -254,13 +264,21 @@ Required: Yes
                "FileSystemId": "string",
                "Lifecycle": "string",
                "LifecycleTransitionReason": {
-                  "Message": "string"
+                  "Message": "string",
+                  "OntapError": {
+                     "Code": "string",
+                     "Message": "string"
+                  }
                },
                "Name": "string",
                "OntapConfiguration": {
                   "AggregateConfiguration": {
                      "Aggregates": [ "string" ],
                      "TotalConstituents": number
+                  },
+                  "CloneConfiguration": {
+                     "ParentVolumeId": "string",
+                     "SnapshotId": "string"
                   },
                   "CopyTagsToBackups": boolean,
                   "FlexCacheEndpointType": "string",
@@ -358,11 +376,23 @@ Required: Yes
       "CreationTime": number,
       "Lifecycle": "string",
       "LifecycleTransitionReason": {
-         "Message": "string"
+         "Message": "string",
+         "OntapError": {
+            "Code": "string",
+            "Message": "string"
+         }
       },
       "Name": "string",
+      "OntapConfiguration": {
+         "ExpiryTime": number,
+         "SizeInMegabytes": number,
+         "SnaplockExpiryTime": number,
+         "SnapmirrorLabel": "string",
+         "UUID": "string"
+      },
       "ResourceARN": "string",
       "SnapshotId": "string",
+      "SnapshotType": "string",
       "Tags": [
          {
             "Key": "string",
@@ -394,6 +424,14 @@ For information about the errors that are common to all actions, see [Common Err
 A generic error indicating a failure with a client request.
  ** Message **
 A detailed error message.
+HTTP Status Code: 400
+
+ ** IncompatibleParameterError **
+The error returned when a second request is received with the same client request token but different parameters settings. A client request token should always uniquely identify a single request.
+ ** Message **
+A detailed error message.
+ ** Parameter **
+A parameter that is incompatible with the earlier request.
 HTTP Status Code: 400
 
  ** InternalServerError **

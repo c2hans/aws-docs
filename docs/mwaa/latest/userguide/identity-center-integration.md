@@ -29,12 +29,7 @@ IAM Identity Center integration requires Apache Airflow version 3.3.1 or later. 
 + Users and groups synced into IAM Identity Center from your corporate identity provider (for example, Okta, Azure AD, or Ping) through SAML or federation, or managed directly in the IAM Identity Center directory.
 + The Amazon MWAA environment's AWS account must be accessible in your IAM Identity Center organization.
 + The IAM Identity Center instance must be in the same AWS Region as the Amazon MWAA environment. If the IAM Identity Center instance is in a different Region, users can't sign in to the Apache Airflow UI. For more information, see [Troubleshooting](#iic-integration-troubleshooting).
-+ IAM Identity Center integration works with both the public network and private network access modes. If your environment uses a private Apache Airflow webserver, the Amazon VPC must allow the webserver to reach the following IAM Identity Center endpoints. For each endpoint, create the Amazon VPC endpoint, or give the webserver outbound internet access through a NAT gateway. In the following list, {{region}} is the AWS Region of your IAM Identity Center instance, which is the same Region as your environment. For more information about access modes, see [Apache Airflow access modes](configuring-networking.md).
-  + `oidc.{{region}}.amazonaws.com` (Amazon VPC endpoint service name `com.amazonaws.{{region}}.sso-oidc`), for the device code sign-in.
-  + `portal.sso.{{region}}.amazonaws.com` (Amazon VPC endpoint service name `com.amazonaws.{{region}}.sso`), to get the credentials for your Permission Set role.
-  + `identitystore.{{region}}.amazonaws.com` (Amazon VPC endpoint service name `com.amazonaws.{{region}}.identitystore`), to look up your user name and group memberships.
-
-  Amazon MWAA already provides the connectivity for authorization checks, so you don't need to configure anything for them.
++ An environment that uses the public network access mode for the Apache Airflow webserver. You can't use IAM Identity Center integration with the private network access mode. For more information, see [Known limitations](#iic-integration-limitations).
 
 ## How it works
 <a name="iic-integration-how-it-works"></a>
@@ -426,6 +421,7 @@ To fully sign out of IAM Identity Center, log out from the IAM Identity Center a
 ## Known limitations
 <a name="iic-integration-limitations"></a>
 + **One-way enablement.** Once IAM Identity Center integration is enabled on an environment, it cannot be disabled. Use the parallel-environment approach described in [Recommended: create a new environment](#iic-integration-enabling-new-env) for a safe migration path.
++ **Private webserver access isn't supported yet.** You can't use IAM Identity Center integration on environments that use the private network access mode for the Apache Airflow webserver. This is a temporary limitation. You can't disable IAM Identity Center integration after you enable it, so don't enable it on an environment that uses private network access mode. For more information about access modes, see [Apache Airflow access modes](configuring-networking.md).
 + **Apache Airflow 3.3.1 or later required.** IAM Identity Center integration is not available on earlier Apache Airflow versions. The console version gate enforces this.
 + **Same Region required.** The IAM Identity Center instance must be in the same AWS Region as the Amazon MWAA environment. Cross-Region IAM Identity Center instances aren't supported.
 + **Role selection for multi-Permission-Set users.** Users with more than one Permission Set assigned in IAM Identity Center must select a role during login. To eliminate this step, assign a single dedicated Permission Set per user for Amazon MWAA access.
@@ -439,16 +435,14 @@ To fully sign out of IAM Identity Center, log out from the IAM Identity Center a
 <a name="iic-integration-troubleshooting"></a>
 
 Sign-in shows "Could not connect to AWS IAM Identity Center. This is likely a temporary issue. Please try again."
-**Root cause:** Amazon MWAA can't reach the IAM Identity Center instance configured on the environment. The most common cause is that the IAM Identity Center instance is in a different AWS Region than the Amazon MWAA environment. IAM Identity Center integration requires both to be in the same Region, and retrying doesn't help in this case. On an environment with a private Apache Airflow webserver, the Amazon VPC might also not allow the webserver to communicate with IAM Identity Center. A temporary network or service issue can also cause this error. If the connection is lost while you wait for the sign-in to complete, the page shows "An error occurred. Please restart the sign-in process." instead.
+**Root cause:** Amazon MWAA can't reach the IAM Identity Center instance configured on the environment. The most common cause is that the IAM Identity Center instance is in a different AWS Region than the Amazon MWAA environment. IAM Identity Center integration requires both to be in the same Region, and retrying doesn't help in this case. A temporary network or service issue can also cause this error. If the connection is lost while you wait for the sign-in to complete, the page shows "An error occurred. Please restart the sign-in process." instead.
 **Resolution:**
 
 1. In the IAM Identity Center console, check which AWS Region your IAM Identity Center instance is in, and compare it with the Region of the Amazon MWAA environment.
 
 1. If the Regions are different, create an Amazon MWAA environment with IAM Identity Center integration in the same Region as your IAM Identity Center instance. Before you start, review the considerations in [Recommended: create a new environment](#iic-integration-enabling-new-env).
 
-1. If the Regions match and your environment uses a private Apache Airflow webserver, search the `airflow-{{environment-name}}-WebServer` log group for `StartDeviceAuthorization request failed`. If you find it, check that the Amazon VPC allows the webserver to reach `oidc.{{region}}.amazonaws.com`. Create the Amazon VPC endpoint `com.amazonaws.{{region}}.sso-oidc`, or give the webserver outbound internet access through a NAT gateway. Also check your route tables, security groups, and network ACLs.
-
-1. If the Regions match and the network allows access, wait a few minutes and try to sign in again. If the error continues, verify the access portal URL and Identity Store ID as described in the next entry, and then contact AWS Support.
+1. If the Regions match, wait a few minutes and try to sign in again. If the error continues, verify the access portal URL and Identity Store ID as described in the next entry, and then contact AWS Support.
 
 Apache Airflow shows "Unable to start sign-in"
 **Root cause:** The IAM Identity Center configuration on the environment is incorrect. The access portal URL or Identity Store ID is invalid, the IAM Identity Center instance is not reachable, or the OIDC client registration has not completed.
@@ -462,18 +456,8 @@ Apache Airflow shows "Unable to start sign-in"
 
 User has no roles after IAM Identity Center authentication
 After you authenticate, Apache Airflow shows "Your account does not have access to this Airflow environment. Contact your administrator."
-**Root cause:** One of the following:
-+ No Permission Set is assigned to the user for this AWS account in IAM Identity Center.
-+ The environment uses a private Apache Airflow webserver, and the Amazon VPC doesn't allow the webserver to reach `portal.sso.{{region}}.amazonaws.com`. The webserver can't get the list of roles or their credentials, so the sign-in looks the same as a missing assignment.
-**Resolution:**
-
-1. In the IAM Identity Center console, assign the appropriate Permission Set to the user or their group. The change takes effect on the user's next Apache Airflow login, after IAM Identity Center provisions the role.
-
-1. If the Permission Set is already assigned and your environment uses a private Apache Airflow webserver, search the `airflow-{{environment-name}}-WebServer` log group for `GetRoleCredentials failed`. If you find it, create the Amazon VPC endpoint `com.amazonaws.{{region}}.sso`, or give the webserver outbound internet access through a NAT gateway.
-
-Sign-in fails with "An internal error occurred" after you select a role
-**Root cause:** The environment uses a private Apache Airflow webserver, and the Amazon VPC doesn't allow the webserver to reach `identitystore.{{region}}.amazonaws.com`. Amazon MWAA can get your role credentials, but can't look up your user name and group memberships. If the lookup is denied instead, the error is "Could not look up your user information from IAM Identity Center". For that error, see the `identitystore` permissions in [Configuring access with Permission Sets](#iic-integration-permission-sets).
-**Resolution:** Search the `airflow-{{environment-name}}-WebServer` log group for `identitystore lookup failed`. If you find it, create the Amazon VPC endpoint `com.amazonaws.{{region}}.identitystore`, or give the webserver outbound internet access through a NAT gateway.
+**Root cause:** No Permission Set is assigned to the user for this AWS account in IAM Identity Center.
+**Resolution:** In the IAM Identity Center console, assign the appropriate Permission Set to the user or their group. The change takes effect on the user's next Apache Airflow login, after IAM Identity Center provisions the role.
 
 All Apache Airflow actions denied ("Access Denied")
 **Root cause:** The IAM policies of the selected Permission Set do not include `airflow:AccessAirflowResource`, or condition key values do not match.

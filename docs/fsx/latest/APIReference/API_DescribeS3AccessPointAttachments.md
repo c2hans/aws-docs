@@ -71,7 +71,11 @@ Required: No
          "CreationTime": number,
          "Lifecycle": "string",
          "LifecycleTransitionReason": {
-            "Message": "string"
+            "Message": "string",
+            "OntapError": {
+               "Code": "string",
+               "Message": "string"
+            }
          },
          "Name": "string",
          "OntapConfiguration": {

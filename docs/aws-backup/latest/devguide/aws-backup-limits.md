@@ -38,9 +38,9 @@ The following quotas apply when working with AWS Backup.
 | Legal holds per account | 50 | No |
 | Nested backup layers of application stacks | 10 | No |
 
-1The limit for concurrent copy jobs from one Region to another Region is 100 per account per Region. Once this limit is reached, if a specific vault in the destination Region has fewer than 5 concurrent copy jobs, new copy jobs can begin, up to a maximum of 5 concurrently.
+<sup>1</sup>The limit for concurrent copy jobs from one Region to another Region is 100 per account per Region. Once this limit is reached, if a specific vault in the destination Region has fewer than 5 concurrent copy jobs, new copy jobs can begin, up to a maximum of 5 concurrently.
 
-2Limit only apply to resource types [fully managed by AWS Backup](backup-feature-availability.md).
+<sup>2</sup>Limit only apply to resource types [fully managed by AWS Backup](backup-feature-availability.md).
 
 ## Backup index and search quotas
 <a name="aws-backup-search-quotas-table"></a>

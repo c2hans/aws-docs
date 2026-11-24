@@ -102,7 +102,7 @@ This command requires the `cursor` CLI command on your PATH. To add it in Cursor
 
 Alternatively, you can install the extension from within Cursor:
 
-1. Open Extensions ( Cmd Shift X  on macOS, or  Ctrl Shift X  on Windows and Linux).
+1. Open Extensions (**Cmd+Shift+X** on macOS, or **Ctrl+Shift+X** on Windows and Linux).
 
 1. Search for ** AWS Startup Advisor**.
 

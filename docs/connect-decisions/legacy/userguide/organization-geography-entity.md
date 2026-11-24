@@ -18,8 +18,8 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | id | string | Yes | Geographical ID. Referred to by other entities as geo\_id or region\_id. |
 | description | string | No | Geographical location. |
-| company\_id 1 | string | No | Company ID. |
-| parent\_geo\_id 1 | string | No | Stores parent geographical ID for this record. If blank, this is a top level region in the company. |
+| company\_id <sup>1</sup> | string | No | Company ID. |
+| parent\_geo\_id <sup>1</sup> | string | No | Stores parent geographical ID for this record. If blank, this is a top level region in the company. |
 | address\_1 | string | No | City corresponding to this geo-region. |
 | address\_2 | string | No | City corresponding to this geo-region. |
 | address\_3 | string | No | City corresponding to this geo-region. |
@@ -33,7 +33,7 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1 Foreign key
+<sup>1</sup> Foreign key
 
 **Foreign key (FK)**
 

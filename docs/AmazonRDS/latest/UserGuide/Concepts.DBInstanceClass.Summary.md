@@ -27,7 +27,7 @@ The following terminology is used to describe hardware specifications for DB ins
 The number of virtual central processing units (CPUs). A *virtual CPU *is a unit of capacity that you can use to compare DB instance classes. Instead of purchasing or leasing a particular processor to use for several months or years, you are renting capacity by the hour. Our goal is to make a consistent and specific amount of CPU capacity available, within the limits of the actual underlying hardware.
 
 **ECU**
-The relative measure of the integer processing power of an Amazon EC2 instance. To make it easy for developers to compare CPU capacity between different instance classes, we have defined an Amazon EC2 Compute Unit. The amount of CPU that is allocated to a particular instance is expressed in terms of these EC2 Compute Units. One ECU currently provides CPU capacity equivalent to a 1.0–1.2 GHz 2007 Opteron or 2007 Xeon processor.
+The relative measure of the integer processing power of an Amazon EC2 instance. To help you compare CPU capacity between different instance classes, AWS defines the Amazon EC2 Compute Unit (ECU). AWS expresses the amount of CPU that is allocated to a particular instance in these ECUs. One ECU provides CPU capacity equivalent to a 1.0–1.2 GHz 2007 Opteron or 2007 Xeon processor. ECU is a legacy measure and isn't defined for newer instance classes. In the following tables, — in the ECU column means that no ECU value is defined for that instance class. To compare these instance classes, use vCPU instead. Variable in the ECU column means that the instance class is a burstable-performance class, so its CPU capacity varies with its CPU credit balance.
 
 **Memory (GiB)**
 The RAM, in gibibytes, allocated to the DB instance. There is often a consistent ratio between memory and vCPU. As an example, take the db.r4 instance class, which has a memory to vCPU ratio similar to the db.r5 instance class. However, for most use cases the db.r5 instance class provides better, more consistent performance than the db.r4 instance class.
@@ -89,10 +89,10 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.m8i.16xlarge | 64 | — | — | — | 256 | EBS only | 20,000 | 30 |
 | db.m8i.12xlarge | 48 | — | — | — | 192 | EBS only | 15,000 | 22.5 |
 | db.m8i.8xlarge | 32 | — | — | — | 128 | EBS only | 10,000 | 15 |
-| db.m8i.4xlarge | 16 | — | — | — | 64 | EBS only | Up to 10,000 | Up to 15 |
-| db.m8i.2xlarge | 8 | — | — | — | 32 | EBS only | Up to 10,000 | Up to 15 |
-| db.m8i.xlarge | 4 | — | — | — | 16 | EBS only | Up to 10,000 | Up to 12.5 |
-| db.m8i.large | 2 | — | — | — | 8 | EBS only | Up to 10,000 | Up to 12.5 |
+| db.m8i.4xlarge\* | 16 | — | — | — | 64 | EBS only | Up to 10,000 | Up to 15 |
+| db.m8i.2xlarge\* | 8 | — | — | — | 32 | EBS only | Up to 10,000 | Up to 15 |
+| db.m8i.xlarge\* | 4 | — | — | — | 16 | EBS only | Up to 10,000 | Up to 12.5 |
+| db.m8i.large\* | 2 | — | — | — | 8 | EBS only | Up to 10,000 | Up to 12.5 |
 
 **db.m8id – general-purpose instance classes powered by Intel Xeon 6 processors and SSD storage**
 
@@ -135,10 +135,10 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.m7i.16xlarge | 64 | — | — | — | 256 | EBS-optimized only | 20,000 | 25 |
 | db.m7i.12xlarge | 48 | — | — | — | 192 | EBS-optimized only | 15,000 | 18.75 |
 | db.m7i.8xlarge | 32 | — | — | — | 128 | EBS-optimized only | 10,000 | 12.5 |
-| db.m7i.4xlarge | 16 | — | — | — | 64 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.m7i.2xlarge | 8 | — | — | — | 32 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.m7i.xlarge | 4 | — | — | — | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.m7i.large | 2 | — | — | — | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.m7i.4xlarge\* | 16 | — | — | — | 64 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.m7i.2xlarge\* | 8 | — | — | — | 32 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.m7i.xlarge\* | 4 | — | — | — | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.m7i.large\* | 2 | — | — | — | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
 
 **db.m7g – general-purpose instance classes powered by AWS Graviton3 processors**
 
@@ -147,7 +147,7 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.m7g.16xlarge | 64 | — | 256 | EBS-optimized only | 20,000 | 30 |
 | db.m7g.12xlarge | 48 | — | 192 | EBS-optimized only | 15,000 | 22.5 |
 | db.m7g.8xlarge | 32 | — | 128 | EBS-optimized only | 10,000 | 15 |
-| db.m7g.4xlarge | 16 | — | 64 | EBS-optimized only | Up to 10,000 | Up to 15 |
+| db.m7g.4xlarge\* | 16 | — | 64 | EBS-optimized only | Up to 10,000 | Up to 15 |
 | db.m7g.2xlarge\* | 8 | — | 32 | EBS-optimized only | Up to 10,000 | Up to 15 |
 | db.m7g.xlarge\* | 4 | — | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
 | db.m7g.large\* | 2 | — | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
@@ -171,7 +171,7 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.m6gd.16xlarge | 64 | — | 256 | 2 x 1900 NVMe SSD | 19,000 | 25 |
 | db.m6gd.12xlarge | 48 | — | 192 | 2 x 1425 NVMe SSD | 14,250 | 20 |
 | db.m6gd.8xlarge | 32 | — | 128 | 1 x 1900 NVMe SSD | 9,500 | 12 |
-| db.m6gd.4xlarge\* | 16 | — | 64 | 1 x 950 NVMe SSD | 4,750 | Up to 10 |
+| db.m6gd.4xlarge | 16 | — | 64 | 1 x 950 NVMe SSD | 4,750 | Up to 10 |
 | db.m6gd.2xlarge\* | 8 | — | 32 | 1 x 474 NVMe SSD | Up to 4,750 | Up to 10 |
 | db.m6gd.xlarge\* | 4 | — | 16 | 1 x 237 NVMe SSD | Up to 4,750 | Up to 10 |
 | db.m6gd.large\* | 2 | — | 8 | 1 x 118 NVMe SSD | Up to 4,750 | Up to 10 |
@@ -307,9 +307,9 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.x2g.12xlarge | 48 | — | 768 | EBS-optimized only | 14,250 | 20 |
 | db.x2g.8xlarge | 32 | — | 512 | EBS-optimized only | 9,500 | 12 |
 | db.x2g.4xlarge | 16 | — | 256 | EBS-optimized only | 4,750 | Up to 10 |
-| db.x2g.2xlarge | 8 | — | 128 | EBS-optimized only | Up to 4,750 | Up to 10 |
-| db.x2g.xlarge | 4 | — | 64 | EBS-optimized only | Up to 4,750 | Up to 10 |
-| db.x2g.large | 2 | — | 32 | EBS-optimized only | Up to 4,750 | Up to 10 |
+| db.x2g.2xlarge\* | 8 | — | 128 | EBS-optimized only | Up to 4,750 | Up to 10 |
+| db.x2g.xlarge\* | 4 | — | 64 | EBS-optimized only | Up to 4,750 | Up to 10 |
+| db.x2g.large\* | 2 | — | 32 | EBS-optimized only | Up to 4,750 | Up to 10 |
 
 **db.x2idn – memory-optimized instance classes with 3rd generation Intel Xeon Scalable processors**
 
@@ -329,9 +329,9 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.x2iedn.24xlarge | 96 | — | — | — | 3,072 | 2 x 1425 NVMe SSD | 60,000 | 75 |
 | db.x2iedn.16xlarge | 64 | — | — | — | 2,048 | 1 x 1900 NVMe SSD | 40,000 | 50 |
 | db.x2iedn.8xlarge | 32 | — | — | — | 1,024 | 1 x 950 NVMe SSD | 20,000 | 25 |
-| db.x2iedn.4xlarge | 16 | — | — | — | 512 | 1 x 475 NVMe SSD | Up to 20,000 | Up to 25 |
-| db.x2iedn.2xlarge | 8 | — | — | — | 256 | 1 x 237 NVMe SSD | Up to 20,000 | Up to 25 |
-| db.x2iedn.xlarge | 4 | — | — | — | 128 | 1 x 118 NVMe SSD | Up to 20,000 | Up to 25 |
+| db.x2iedn.4xlarge\* | 16 | — | — | — | 512 | 1 x 475 NVMe SSD | Up to 20,000 | Up to 25 |
+| db.x2iedn.2xlarge\* | 8 | — | — | — | 256 | 1 x 237 NVMe SSD | Up to 20,000 | Up to 25 |
+| db.x2iedn.xlarge\* | 4 | — | — | — | 128 | 1 x 118 NVMe SSD | Up to 20,000 | Up to 25 |
 
 **db.x2iezn – memory-optimized instance classes with 2nd generation Intel Xeon Scalable processors**
 
@@ -340,9 +340,9 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.x2iezn.metal | 48 | 24 | 2 | — | 1,536 | EBS-optimized only | 19,000 | 100 |
 | db.x2iezn.12xlarge | 48 | — | — | — | 1,536 | EBS-optimized only | 19,000 | 100 |
 | db.x2iezn.8xlarge | 32 | — | — | — | 1,024 | EBS-optimized only | 12,000 | 75 |
-| db.x2iezn.6xlarge | 24 | — | — | — | 768 | EBS-optimized only | Up to 9,500 | 50 |
-| db.x2iezn.4xlarge | 16 | — | — | — | 512 | EBS-optimized only | Up to 4,750 | Up to 25 |
-| db.x2iezn.2xlarge | 8 | — | — | — | 256 | EBS-optimized only | Up to 3,170 | Up to 25 |
+| db.x2iezn.6xlarge\* | 24 | — | — | — | 768 | EBS-optimized only | Up to 9,500 | 50 |
+| db.x2iezn.4xlarge\* | 16 | — | — | — | 512 | EBS-optimized only | Up to 4,750 | Up to 25 |
+| db.x2iezn.2xlarge\* | 8 | — | — | — | 256 | EBS-optimized only | Up to 3,170 | Up to 25 |
 
 **db.x1e – memory-optimized instance classes**
 
@@ -371,10 +371,10 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.m8gd.16xlarge | 64 | — | 256 | 2 x 1900 NVMe SSD | 20,000 | 30 |
 | db.m8gd.12xlarge | 48 | — | 192 | 3 x 950 NVMe SSD | 15,000 | 22.5 |
 | db.m8gd.8xlarge | 32 | — | 128 | 1 x 1900 NVMe SSD | 10,000 | 15 |
-| db.m8gd.4xlarge | 16 | — | 64 | 1 x 950 NVMe SSD | Up to 10,000 | Up to 15 |
-| db.m8gd.2xlarge | 8 | — | 32 | 1 x 474 NVMe SSD | Up to 10,000 | Up to 15 |
-| db.m8gd.xlarge | 4 | — | 16 | 1 x 237 NVMe SSD | Up to 10,000 | Up to 12.5 |
-| db.m8gd.large | 2 | — | 8 | 1 x 118 NVMe SSD | Up to 10,000 | Up to 12.5 |
+| db.m8gd.4xlarge\* | 16 | — | 64 | 1 x 950 NVMe SSD | Up to 10,000 | Up to 15 |
+| db.m8gd.2xlarge\* | 8 | — | 32 | 1 x 474 NVMe SSD | Up to 10,000 | Up to 15 |
+| db.m8gd.xlarge\* | 4 | — | 16 | 1 x 237 NVMe SSD | Up to 10,000 | Up to 12.5 |
+| db.m8gd.large\* | 2 | — | 8 | 1 x 118 NVMe SSD | Up to 10,000 | Up to 12.5 |
 
 **db.r8gd – memory-optimized instance classes with AWS Graviton4 processors**
 
@@ -385,10 +385,10 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r8gd.16xlarge | 64 | — | 512 | 2 x 1900 NVMe SSD | 20,000 | 30 |
 | db.r8gd.12xlarge | 48 | — | 384 | 3 x 950 NVMe SSD | 15,000 | 22.5 |
 | db.r8gd.8xlarge | 32 | — | 256 | 1 x 1900 NVMe SSD | 10,000 | 15 |
-| db.r8gd.4xlarge | 16 | — | 128 | 1 x 950 NVMe SSD | Up to 10,000 | Up to 15 |
-| db.r8gd.2xlarge | 8 | — | 64 | 1 x 474 NVMe SSD | Up to 10,000 | Up to 15 |
-| db.r8gd.xlarge | 4 | — | 32 | 1 x 237 NVMe SSD | Up to 10,000 | Up to 12.5 |
-| db.r8gd.large | 2 | — | 16 | 1 x 118 NVMe SSD | Up to 10,000 | Up to 12.5 |
+| db.r8gd.4xlarge\* | 16 | — | 128 | 1 x 950 NVMe SSD | Up to 10,000 | Up to 15 |
+| db.r8gd.2xlarge\* | 8 | — | 64 | 1 x 474 NVMe SSD | Up to 10,000 | Up to 15 |
+| db.r8gd.xlarge\* | 4 | — | 32 | 1 x 237 NVMe SSD | Up to 10,000 | Up to 12.5 |
+| db.r8gd.large\* | 2 | — | 16 | 1 x 118 NVMe SSD | Up to 10,000 | Up to 12.5 |
 
 **db.r9g – memory-optimized instance classes with AWS Graviton5 processors**
 
@@ -431,10 +431,10 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r8i.16xlarge | 64 | — | — | — | 512 | EBS only | 20,000 | 30 |
 | db.r8i.12xlarge | 48 | — | — | — | 384 | EBS only | 15,000 | 22.5 |
 | db.r8i.8xlarge | 32 | — | — | — | 256 | EBS only | 10,000 | 15 |
-| db.r8i.4xlarge | 16 | — | — | — | 128 | EBS only | Up to 10,000 | Up to 15 |
-| db.r8i.2xlarge | 8 | — | — | — | 64 | EBS only | Up to 10,000 | Up to 15 |
-| db.r8i.xlarge | 4 | — | — | — | 32 | EBS only | Up to 10,000 | Up to 12.5 |
-| db.r8i.large | 2 | — | — | — | 16 | EBS only | Up to 10,000 | Up to 12.5 |
+| db.r8i.4xlarge\* | 16 | — | — | — | 128 | EBS only | Up to 10,000 | Up to 15 |
+| db.r8i.2xlarge\* | 8 | — | — | — | 64 | EBS only | Up to 10,000 | Up to 15 |
+| db.r8i.xlarge\* | 4 | — | — | — | 32 | EBS only | Up to 10,000 | Up to 12.5 |
+| db.r8i.large\* | 2 | — | — | — | 16 | EBS only | Up to 10,000 | Up to 12.5 |
 
 **db.r8id – memory-optimized instance classes powered by Intel Xeon 6 processors and SSD storage**
 
@@ -484,15 +484,15 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r7i.4xlarge.tpc2.mem4x | 16 | — | — | — | 512 | 64 | EBS-optimized only | 20,000 | Up to 12.5 |
 | db.r7i.4xlarge.tpc2.mem3x | 16 | — | — | — | 384 | 48 | EBS-optimized only | 15,000 | Up to 12.5 |
 | db.r7i.4xlarge.tpc2.mem2x | 16 | — | — | — | 256 | 32 | EBS-optimized only | 10,000 | Up to 12.5 |
-| db.r7i.4xlarge | 16 | — | — | — | 128 | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.r7i.4xlarge\* | 16 | — | — | — | 128 | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
 | db.r7i.3xlarge.tpc2.mem4x | 12 | — | — | — | 384 | 48 | EBS-optimized only | 15,000 | Up to 12.5 |
 | db.r7i.2xlarge.tpc2.mem8x | 8 | — | — | — | 512 | 64 | EBS-optimized only | 20,000 | Up to 12.5 |
 | db.r7i.2xlarge.tpc2.mem4x | 8 | — | — | — | 256 | 32 | EBS-optimized only | 10,000 | Up to 12.5 |
-| db.r7i.2xlarge | 8 | — | — | — | 64 | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.r7i.xlarge.tpc2.mem4x | 4 | — | — | — | 128 | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.r7i.xlarge.tpc2.mem2x | 4 | — | — | — | 64 | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.r7i.xlarge | 4 | — | — | — | 32 | 4 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
-| db.r7i.large | 2 | — | — | — | 16 | 2 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.r7i.2xlarge\* | 8 | — | — | — | 64 | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.r7i.xlarge.tpc2.mem4x\* | 4 | — | — | — | 128 | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.r7i.xlarge.tpc2.mem2x\* | 4 | — | — | — | 64 | 8 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.r7i.xlarge\* | 4 | — | — | — | 32 | 4 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
+| db.r7i.large\* | 2 | — | — | — | 16 | 2 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
 
 **db.r7g – memory-optimized instance classes with AWS Graviton3 processors**
 
@@ -501,7 +501,7 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r7g.16xlarge | 64 | — | 512 | EBS-optimized only | 20,000 | 30 |
 | db.r7g.12xlarge | 48 | — | 384 | EBS-optimized only | 15,000 | 22.5 |
 | db.r7g.8xlarge | 32 | — | 256 | EBS-optimized only | 10,000 | 15 |
-| db.r7g.4xlarge | 16 | — | 128 | EBS-optimized only | Up to 10,000 | Up to 15 |
+| db.r7g.4xlarge\* | 16 | — | 128 | EBS-optimized only | Up to 10,000 | Up to 15 |
 | db.r7g.2xlarge\* | 8 | — | 64 | EBS-optimized only | Up to 10,000 | Up to 15 |
 | db.r7g.xlarge\* | 4 | — | 32 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
 | db.r7g.large\* | 2 | — | 16 | EBS-optimized only | Up to 10,000 | Up to 12.5 |
@@ -586,10 +586,10 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r6i.4xlarge.tpc2.mem2x | 16 | — | 256 | EBS-optimized only | 10,000 | 12.5 |
 | db.r6i.2xlarge.tpc2.mem8x | 8 | — | 512 | EBS-optimized only | 20,000 | 25 |
 | db.r6i.2xlarge.tpc2.mem4x | 8 | — | 256 | EBS-optimized only | 10,000 | 12.5 |
-| db.r6i.2xlarge.tpc1.mem2x | 8 | — | 128 | EBS-optimized only | Up to 10,000 | 12.5 |
-| db.r6i.xlarge.tpc2.mem4x | 4 | — | 128 | EBS-optimized only | Up to 10,000 | 12.5 |
-| db.r6i.xlarge.tpc2.mem2x | 4 | — | 64 | EBS-optimized only | Up to 10,000 | 12.5 |
-| db.r6i.large.tpc1.mem2x | 2 | — | 32 | EBS-optimized only | Up to 10,000 | 12.5 |
+| db.r6i.2xlarge.tpc1.mem2x\* | 8 | — | 128 | EBS-optimized only | Up to 10,000 | 12.5 |
+| db.r6i.xlarge.tpc2.mem4x\* | 4 | — | 128 | EBS-optimized only | Up to 10,000 | 12.5 |
+| db.r6i.xlarge.tpc2.mem2x\* | 4 | — | 64 | EBS-optimized only | Up to 10,000 | 12.5 |
+| db.r6i.large.tpc1.mem2x\* | 2 | — | 32 | EBS-optimized only | Up to 10,000 | 12.5 |
 
 **db.r6i – memory-optimized instance classes with 3rd Generation Intel Xeon Scalable processors**
 
@@ -632,8 +632,8 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r5b.2xlarge.tpc2.mem4x | 8 | — | 256 | EBS-optimized only | 20,000 | 10 |
 | db.r5b.2xlarge.tpc1.mem2x | 8 | — | 128 | EBS-optimized only | 10,000 | Up to 10 |
 | db.r5b.xlarge.tpc2.mem4x | 4 | — | 128 | EBS-optimized only | 10,000 | Up to 10 |
-| db.r5b.xlarge.tpc2.mem2x | 4 | — | 64 | EBS-optimized only | Up to 10,000 | Up to 10 |
-| db.r5b.large.tpc1.mem2x | 2 | — | 32 | EBS-optimized only | Up to 10,000 | Up to 10 |
+| db.r5b.xlarge.tpc2.mem2x\* | 4 | — | 64 | EBS-optimized only | Up to 10,000 | Up to 10 |
+| db.r5b.large.tpc1.mem2x\* | 2 | — | 32 | EBS-optimized only | Up to 10,000 | Up to 10 |
 
 **db.r5b – memory-optimized instance classes with Intel Xeon Platinum processors and EBS optimization**
 
@@ -662,8 +662,8 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.r5.2xlarge.tpc2.mem4x | 8 | — | 256 | EBS-optimized only | 6,800 | 10 |
 | db.r5.2xlarge.tpc1.mem2x | 8 | — | 128 | EBS-optimized only | 4,750 | Up to 10 |
 | db.r5.xlarge.tpc2.mem4x | 4 | — | 128 | EBS-optimized only | 4,750 | Up to 10 |
-| db.r5.xlarge.tpc2.mem2x | 4 | — | 64 | EBS-optimized only | Up to 4,750 | Up to 10 |
-| db.r5.large.tpc1.mem2x | 2 | — | 32 | EBS-optimized only | Up to 4,750 | Up to 10 |
+| db.r5.xlarge.tpc2.mem2x\* | 4 | — | 64 | EBS-optimized only | Up to 4,750 | Up to 10 |
+| db.r5.large.tpc1.mem2x\* | 2 | — | 32 | EBS-optimized only | Up to 4,750 | Up to 10 |
 
 **db.r5 – memory-optimized instance classes**
 
@@ -716,10 +716,12 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.c6gd.12xlarge | 48 | — | 96 | 2 x 1425 NVMe SSD | 14,250 | 20 |
 | db.c6gd.8xlarge | 32 | — | 64 | 1 x 1900 NVMe SSD | 9,500 | 12 |
 | db.c6gd.4xlarge | 16 | — | 32 | 1 x 950 NVMe SSD | 4,750 | Up to 10 |
-| db.c6gd.2xlarge | 8 | — | 16 | 1 x 474 NVMe SSD | Up to 4,750 | Up to 10 |
-| db.c6gd.xlarge | 4 | — | 8 | 1 x 237 NVMe SSD | Up to 4,750 | Up to 10 |
-| db.c6gd.large | 2 | — | 4 | 1 x 118 NVMe SSD | Up to 4,750 | Up to 10 |
-| db.c6gd.medium | 1 | — | 2 | 1 x 59 NVMe SSD | Up to 4,750 | Up to 10 |
+| db.c6gd.2xlarge\* | 8 | — | 16 | 1 x 474 NVMe SSD | Up to 4,750 | Up to 10 |
+| db.c6gd.xlarge\* | 4 | — | 8 | 1 x 237 NVMe SSD | Up to 4,750 | Up to 10 |
+| db.c6gd.large\* | 2 | — | 4 | 1 x 118 NVMe SSD | Up to 4,750 | Up to 10 |
+| db.c6gd.medium\* | 1 | — | 2 | 1 x 59 NVMe SSD | Up to 4,750 | Up to 10 |
+
+\* These DB instance classes can support maximum performance for 30 minutes at least once every 24 hours. For more information about baseline performance of the underlying EC2 instance types, see [Amazon EBS–optimized instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html) in the *Amazon EC2 User Guide.*
 
 ## Hardware specifications for the burstable-performance instance classes
 <a name="hardware-specifications.burstable-inst-classes"></a>

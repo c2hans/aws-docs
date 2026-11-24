@@ -47,6 +47,6 @@ To generate a Kraus operator, you can iterate through a list of matrices, printi
 When using Kraus operators, remember the following:
 + The number of qubits must not exceed 2. The [current definition in the schemas](https://github.com/aws/amazon-braket-sdk-python/blob/0d28a8fa89263daf5d88bc706e79200d8dc091a8/src/braket/circuits/noises.py#L811-L814)) sets this limit.
 + The length of the argument list must be a multiple of 8. This means it must be composed only of 2x2 matrices.
-+ The total length does not exceed 22\*num\_qubits matrices. This means 4 matrices for 1 qubit and 16 for 2 qubits.
++ The total length does not exceed 2<sup>2\*num\_qubits</sup> matrices. This means 4 matrices for 1 qubit and 16 for 2 qubits.
 + All supplied matrices are [completely positive trace preserving (CPTP)](https://github.com/aws/amazon-braket-sdk-python/blob/0d28a8fa89263daf5d88bc706e79200d8dc091a8/src/braket/circuits/quantum_operator_helpers.py#L94-L108).
 + The product of the Kraus operators with their transpose conjugates need to add up to an identity matrix.

@@ -366,6 +366,13 @@ This policy is designed to support comprehensive load balancing management withi
 
 Amazon EKS automatically creates an access entry with this access policy for the cluster IAM role when Auto Mode is enabled, ensuring that the necessary permissions are in place for the load balancing capability to function properly.
 
+**Important**
+This policy includes write access to `configmaps`. If you associate this policy to a non-service-linked role at cluster scope on a cluster using `API_AND_CONFIG_MAP` authentication mode, that role can overwrite the `aws-auth` ConfigMap. This enables the identity to be a cluster administrator.
+This behavior does not apply when:
+Your cluster uses `API`-only authentication mode (the `aws-auth` ConfigMap is never consulted for identity resolution).
+Only the EKS service-linked role is associated with this policy (the default for EKS Auto Mode clusters).
+To avoid this behavior on `API_AND_CONFIG_MAP` clusters, migrate to `API`-only authentication mode. For more information, see [Migrating existing `aws-auth ConfigMap` entries to access entries](migrating-access-entries.md).
+
 ## AmazonEKSNetworkingClusterPolicy
 <a name="_amazoneksnetworkingclusterpolicy"></a>
 
@@ -589,6 +596,7 @@ View details about updates to access policies, since they were introduced. For a
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Safety note added | Added a safety note to [AmazonEKSLoadBalancingClusterPolicy](#_amazoneksloadbalancingclusterpolicy). The note documents that associating this policy to a non-service-linked role at cluster scope on `API_AND_CONFIG_MAP` clusters allows the associated identity to become a cluster administrator. Clusters using `API`-only authentication mode are not affected. For more information, see [Migrating existing `aws-auth ConfigMap` entries to access entries](migrating-access-entries.md). | November 23, 2026 |
 | Update Argo CD access policy permissions | Add read access for the `argocd-notifications-cm` ConfigMap and the `argocd-notifications-secret` Secret, by name only, to `AmazonEKSArgoCDClusterPolicy`. This allows the notifications controller to read notification configuration from additional namespaces. The update applies automatically to existing Argo CD capabilities; no action is required. | November 2, 2026 |
 | Update Argo CD access policy permissions | Move the `events`, `applications`, and `applicationsets` permissions from `AmazonEKSArgoCDPolicy` to `AmazonEKSArgoCDClusterPolicy`. The update applies automatically to existing Argo CD capabilities; no action is required. | September 24, 2026 |
 | Add policies for EKS Capabilities | Publish `AmazonEKSACKPolicy`, `AmazonEKSArgoCDClusterPolicy`, `AmazonEKSArgoCDPolicy`, and `AmazonEKSKROPolicy` for managing EKS Capabilities | November 22, 2025 |

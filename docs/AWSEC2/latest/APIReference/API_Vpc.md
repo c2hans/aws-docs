@@ -45,6 +45,11 @@ Indicates whether the VPC is the default VPC.
 Type: Boolean
 Required: No
 
+ ** NetworkFirewallAssociationSet.N **
+Information about the firewall associations for the VPC. Automated Internet Firewall, a feature of Amazon Virtual Private Cloud (Amazon VPC), inspects traffic between the VPC and its internet gateway or egress-only internet gateway. This list is empty if the VPC doesn't have a firewall.
+Type: Array of [NetworkFirewallAssociation](API_NetworkFirewallAssociation.md) objects
+Required: No
+
  ** ownerId **
 The ID of the AWS account that owns the VPC.
 Type: String

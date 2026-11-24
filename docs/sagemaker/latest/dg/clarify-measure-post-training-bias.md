@@ -9,27 +9,27 @@ Amazon SageMaker Clarify is no longer open to new customers. Existing customers 
 
 Amazon SageMaker Clarify provides eleven post-training data and model bias metrics to help quantify various conceptions of fairness. These concepts cannot all be satisfied simultaneously and the selection depends on specifics of the cases involving potential bias being analyzed. Most of these metrics are a combination of the numbers taken from the binary classification confusion matrices for the different demographic groups. Because fairness and bias can be defined by a wide range of metrics, human judgment is required to understand and choose which metrics are relevant to the individual use case, and customers should consult with appropriate stakeholders to determine the appropriate measure of fairness for their application.
 
-We use the following notation to discuss the bias metrics. The conceptual model described here is for binary classification, where events are labeled as having only two possible outcomes in their sample space, referred to as positive (with value 1) and negative (with value 0). This framework is usually extensible to multicategory classification in a straightforward way or to cases involving continuous valued outcomes when needed. In the binary classification case, positive and negative labels are assigned to outcomes recorded in a raw dataset for a favored facet *a* and for a disfavored facet *d*. These labels y are referred to as *observed labels* to distinguish them from the *predicted labels* y' that are assigned by a machine learning model during the training or inferences stages of the ML lifecycle. These labels are used to define probability distributions Pa(y) and Pd(y) for their respective facet outcomes.
+We use the following notation to discuss the bias metrics. The conceptual model described here is for binary classification, where events are labeled as having only two possible outcomes in their sample space, referred to as positive (with value 1) and negative (with value 0). This framework is usually extensible to multicategory classification in a straightforward way or to cases involving continuous valued outcomes when needed. In the binary classification case, positive and negative labels are assigned to outcomes recorded in a raw dataset for a favored facet *a* and for a disfavored facet *d*. These labels y are referred to as *observed labels* to distinguish them from the *predicted labels* y' that are assigned by a machine learning model during the training or inferences stages of the ML lifecycle. These labels are used to define probability distributions P<sub>a</sub>(y) and P<sub>d</sub>(y) for their respective facet outcomes.
 + labels:
   + y represents the n observed labels for event outcomes in a training dataset.
   + y' represents the predicted labels for the n observed labels in the dataset by a trained model.
 + outcomes:
   + A positive outcome (with value 1) for a sample, such as an application acceptance.
-    + n(1) is the number of observed labels for positive outcomes (acceptances).
-    + n'(1) is the number of predicted labels for positive outcomes (acceptances).
+    + n<sup>(1)</sup> is the number of observed labels for positive outcomes (acceptances).
+    + n'<sup>(1)</sup> is the number of predicted labels for positive outcomes (acceptances).
   + A negative outcome (with value 0) for a sample, such as an application rejection.
-    + n(0) is the number of observed labels for negative outcomes (rejections).
-    + n'(0) is the number of predicted labels for negative outcomes (rejections).
+    + n<sup>(0)</sup> is the number of observed labels for negative outcomes (rejections).
+    + n'<sup>(0)</sup> is the number of predicted labels for negative outcomes (rejections).
 + facet values:
   + facet *a* – The feature value that defines a demographic that bias favors.
-    + na is the number of observed labels for the favored facet value: na = na(1) \+ na(0) the sum of the positive and negative observed labels for the value facet *a*.
-    + n'a is the number of predicted labels for the favored facet value: n'a = n'a(1) \+ n'a(0) the sum of the positive and negative predicted outcome labels for the facet value *a*. Note that n'a = na.
+    + n<sub>a</sub> is the number of observed labels for the favored facet value: n<sub>a</sub> = n<sub>a</sub><sup>(1)</sup> \+ n<sub>a</sub><sup>(0)</sup> the sum of the positive and negative observed labels for the value facet *a*.
+    + n'<sub>a</sub> is the number of predicted labels for the favored facet value: n'<sub>a</sub> = n'<sub>a</sub><sup>(1)</sup> \+ n'<sub>a</sub><sup>(0)</sup> the sum of the positive and negative predicted outcome labels for the facet value *a*. Note that n'<sub>a</sub> = n<sub>a</sub>.
   + facet *d* – The feature value that defines a demographic that bias disfavors.
-    + nd is the number of observed labels for the disfavored facet value: nd = nd(1) \+ nd(0) the sum of the positive and negative observed labels for the facet value *d*.
-    + n'd is the number of predicted labels for the disfavored facet value: n'd = n'd(1) \+ n'd(0) the sum of the positive and negative predicted labels for the facet value *d*. Note that n'd = nd.
+    + n<sub>d</sub> is the number of observed labels for the disfavored facet value: n<sub>d</sub> = n<sub>d</sub><sup>(1)</sup> \+ n<sub>d</sub><sup>(0)</sup> the sum of the positive and negative observed labels for the facet value *d*.
+    + n'<sub>d</sub> is the number of predicted labels for the disfavored facet value: n'<sub>d</sub> = n'<sub>d</sub><sup>(1)</sup> \+ n'<sub>d</sub><sup>(0)</sup> the sum of the positive and negative predicted labels for the facet value *d*. Note that n'<sub>d</sub> = n<sub>d</sub>.
 + probability distributions for outcomes of the labeled facet data outcomes:
-  + Pa(y) is the probability distribution of the observed labels for facet *a*. For binary labeled data, this distribution is given by the ratio of the number of samples in facet *a* labeled with positive outcomes to the total number, Pa(y1) = na(1)/ na, and the ratio of the number of samples with negative outcomes to the total number, Pa(y0) = na(0)/ na.
-  + Pd(y) is the probability distribution of the observed labels for facet *d*. For binary labeled data, this distribution is given by the number of samples in facet *d* labeled with positive outcomes to the total number, Pd(y1) = nd(1)/ nd, and the ratio of the number of samples with negative outcomes to the total number, Pd(y0) = nd(0)/ nd.
+  + P<sub>a</sub>(y) is the probability distribution of the observed labels for facet *a*. For binary labeled data, this distribution is given by the ratio of the number of samples in facet *a* labeled with positive outcomes to the total number, P<sub>a</sub>(y<sup>1</sup>) = n<sub>a</sub><sup>(1)</sup>/ n<sub>a</sub>, and the ratio of the number of samples with negative outcomes to the total number, P<sub>a</sub>(y<sup>0</sup>) = n<sub>a</sub><sup>(0)</sup>/ n<sub>a</sub>.
+  + P<sub>d</sub>(y) is the probability distribution of the observed labels for facet *d*. For binary labeled data, this distribution is given by the number of samples in facet *d* labeled with positive outcomes to the total number, P<sub>d</sub>(y<sup>1</sup>) = n<sub>d</sub><sup>(1)</sup>/ n<sub>d</sub>, and the ratio of the number of samples with negative outcomes to the total number, P<sub>d</sub>(y<sup>0</sup>) = n<sub>d</sub><sup>(0)</sup>/ n<sub>d</sub>.
 
 The following table contains a cheat sheet for quick guidance and links to the post-training bias metrics.
 

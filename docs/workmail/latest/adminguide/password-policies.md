@@ -22,8 +22,8 @@ Passwords must also contain characters from three out of five of the following g
 + Uppercase characters
 + Lowercase characters
 + Numerical digits (0 through 9)
-+ Special characters (for example, <, \~, or \!)
-+ Latin-1 supplement characters (for example, é, ü, or ñ)
++ Special characters (for example, **<**, **\~**, or **\!**)
++ Latin-1 supplement characters (for example, **é**, **ü**, or **ñ**)
 
 Amazon WorkMail directory password policies can't be changed.
 

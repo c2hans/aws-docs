@@ -52,19 +52,19 @@ Perform these steps in the terminal window of your local host computer.
 
          **`5 Localisation Options Configure language and regional settings`**
 
-         Use the Tab key to move to **<Select>,** and then press the space bar.
+         Use the **Tab** key to move to **<Select>,** and then press the **space bar**.
 
       1. In the localization options menu, choose option **L1**.
 
          **`L1 Locale Configure language and regional settings`**
 
-         Use the Tab key to move to **<Select>,** and then press the space bar.
+         Use the **Tab** key to move to **<Select>,** and then press the **space bar**.
 
-      1. In the list of locale options, choose the locales that you want to install on your Raspberry Pi by using the arrow keys to scroll and the space bar to mark those that you want.
+      1. In the list of locale options, choose the locales that you want to install on your Raspberry Pi by using the arrow keys to scroll and the **space bar** to mark those that you want.
 
          In the United States, **`en_US.UTF-8`** is a good one to choose.
 
-      1. After selecting the locales for your device, use the Tab key to choose **<OK>**, and then press the space bar to display the **Configuring locales** confirmation page.
+      1. After selecting the locales for your device, use the **Tab** key to choose **<OK>**, and then press the **space bar** to display the **Configuring locales** confirmation page.
 
    1. To set the device’s time zone:
 
@@ -72,23 +72,23 @@ Perform these steps in the terminal window of your local host computer.
 
          **`5 Localisation Options Configure language and regional settings`**
 
-         Use the Tab key to move to **<Select>,** and then press the space bar.
+         Use the **Tab** key to move to **<Select>,** and then press the **space bar**.
 
       1. In the localization options menu, use the arrow key to choose option **L2**:
 
          **`L2 time zone Configure time zone`**
 
-         Use the Tab key to move to **<Select>,** and then press the space bar.
+         Use the **Tab** key to move to **<Select>,** and then press the **space bar**.
 
       1. In the **Configuring tzdata** menu, choose your geographical area from the list.
 
-         Use the Tab key to move to **<OK>**, and then press the space bar.
+         Use the **Tab** key to move to **<OK>**, and then press the **space bar**.
 
       1. In the list of cities, use the arrow keys to choose a city in your time zone.
 
-         To set the time zone, use the Tab key to move to **<OK>**, and then press the space bar.
+         To set the time zone, use the **Tab** key to move to **<OK>**, and then press the **space bar**.
 
-   1. When you’ve finished updating the settings, use the Tab key to move to **<Finish>**, and then press the space bar to close the **raspi-config** app.
+   1. When you’ve finished updating the settings, use the **Tab** key to move to **<Finish>**, and then press the **space bar** to close the **raspi-config** app.
 
 1. Enter this command to restart your Raspberry Pi.
 

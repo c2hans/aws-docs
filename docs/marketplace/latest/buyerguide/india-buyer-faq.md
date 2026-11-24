@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/india-buye
 
 # Buyers in India FAQ
 
-This FAQ addresses common questions for buyers in India who purchase products from sellers in India on AWS Marketplace.
+This FAQ addresses common questions for buyers in India who purchase products on AWS Marketplace, from sellers in India and from sellers based outside India.
 
 **Topics**
 + [How do I identify products from sellers in India?](#india-buyer-identify-products)
@@ -28,6 +28,7 @@ This FAQ addresses common questions for buyers in India who purchase products fr
 + [What happens if I change my account location from India to non-India?](#india-buyer-location-changes)
 + [What is the difference between B2B and B2C buyers in India?](#india-buyer-b2b-vs-b2c)
 + [What happens if I delete or have an invalid GSTIN?](#india-buyer-gstin-deletion)
++ [Buying from sellers outside India](#india-buyer-outside-sellers)
 + [How do I get support for purchases from sellers in India?](#india-buyer-support)
 
 ## How do I identify products from sellers in India?
@@ -134,6 +135,56 @@ The classification of a transaction as business-to-business (B2B) or business-to
 <a name="india-buyer-gstin-deletion"></a>
 
 If you delete your GSTIN or if your GSTIN becomes invalid, your transactions will be treated as B2C instead of B2B. This means tax invoices will require the seller's signature for compliance. Additionally, you may not be able to claim input tax credit without valid GST details. Make sure to keep your GSTIN information current in your AWS India Tax Settings to maintain B2B status and proper tax treatment.
+
+## Buying from sellers outside India
+<a name="india-buyer-outside-sellers"></a>
+
+The following questions are for buyers in India who buy from sellers based outside India.
+
+### Who bills me when I buy from a seller outside India?
+<a name="india-buyer-outside-billing"></a>
+
+AWS, Inc. bills you in US dollars (USD), based on your account location. These purchases appear on a different invoice from your purchases from sellers in India, which AWS India bills in Indian rupees (INR). For more information, see [Can I purchase from both sellers in India and sellers in other locations?](#india-buyer-mixed-purchases).
+
+### What tax documents does the seller provide?
+<a name="india-buyer-outside-tax-documents"></a>
+
+Sellers outside India who sell paid offers to buyers in India must provide these documents:
++ **No Permanent Establishment (PE) Declaration** – The seller's statement confirming that they don't have a permanent establishment in India.
++ **Tax Residency Certificate (TRC)** – A certificate from the seller's home-country tax authority confirming the seller's country of tax residence.
++ **Form 41** – An online self-declaration that non-resident taxpayers file to claim benefits under a Double Taxation Avoidance Agreement (DTAA).
+
+### Where can I find these documents?
+<a name="india-buyer-outside-find-documents"></a>
+
+Before you accept the offer, you can download these documents from the procurement widget.
+
+After you accept the offer, you can download them from the AWS Marketplace console. Open the agreement and go to the **Tax compliance documents** section. You can view each document there, or select documents and choose **Download**. You can also choose **Download tax documents** at the top of the agreement page.
+
+### How can I use these documents?
+<a name="india-buyer-outside-use-documents"></a>
+
+You can use them for your procurement and accounts payable processes, as your organization's tax compliance requirements call for.
+
+### Can I withhold tax when I pay the invoice?
+<a name="india-buyer-outside-withholding"></a>
+
+No. You're responsible for paying the full invoice amount. Don't withhold any amount for taxes.
+
+### How often are the documents updated?
+<a name="india-buyer-outside-renewal"></a>
+
+Sellers must renew these documents every year. If a document expires, the seller has a grace period of up to 90 days to submit an updated version. The console always shows the seller's latest documents.
+
+### What if I need more documents, or documents for earlier periods?
+<a name="india-buyer-outside-more-documents"></a>
+
+Contact AWS Marketplace buyer support.
+
+### Do these documents apply to purchases from sellers in India?
+<a name="india-buyer-outside-india-sellers"></a>
+
+No. Purchases from sellers in India go through AWS India and include GST. For details, see the other questions in this FAQ.
 
 ## How do I get support for purchases from sellers in India?
 <a name="india-buyer-support"></a>

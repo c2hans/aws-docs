@@ -49,7 +49,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **What is the process for submitting the partner manifest? And for AWS services to send findings to Security Hub CSPM?**
 
-   To submit the manifest information to the Security Hub CSPM team, use securityhub-partners@amazon.com.
+   To submit the manifest information to the Security Hub CSPM team, use [securityhub-partners@amazon.com](mailto:securityhub-partners@amazon.com).
 
    You are issued product ARNs within seven calendar days.
 
@@ -323,7 +323,7 @@ The following are common questions about setting up and maintaining an integrati
 
 1. **Where do I send questions, comments, and bugs?**
 
-   securityhub-partners@amazon.com
+   [securityhub-partners@amazon.com](mailto:securityhub-partners@amazon.com)
 
 1. **Which Region do I send findings to for items related to global AWS services? For example, where do I send IAM related findings?**
 

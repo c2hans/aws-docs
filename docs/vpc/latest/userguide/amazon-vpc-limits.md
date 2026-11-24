@@ -68,7 +68,7 @@ While the default quotas for customer-managed prefix lists are adjustable, you c
 
 | Name | Default | Adjustable | Comments |
 | --- | --- | --- | --- |
-| Network interfaces per instance | Varies by instance type | No | For more information, see [Network interfaces per instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#AvailableIpPerENI). |
+| Network interfaces per instance | Varies by instance type | No | On instance types that support configurable ENA queue allocation, the number of network interfaces you can attach also depends on the ENA queue count of each network interface. For more information, see [Maximum IP addresses per network interface](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AvailableIpPerENI.html) and [ENA queues](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-queues.html) in the Amazon EC2 User Guide. |
 |  Network interfaces per Region  |  5,000  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/vpc/quotas/L-DF5E4CA3) | This quota applies to individual AWS account VPCs and shared VPCs. This limit is enforced per Availability Zone (AZ). If, for example, the network interfaces are in three AZs, each AZ will have a limit of 5,000 limit and the Region will have a limit of 15,000. |
 
 ## Route tables

@@ -27,6 +27,7 @@ Review the failure reason to help you troubleshoot why the run failed. The follo
 | INPUT\_URI\_NOT\_FOUND | The provided URI does not exist: {{uri}}. Check that the URI path exists and confirm that the role can access the object. |
 | `INSTANCE_RESERVATION_FAILED` | There isn't enough instance capacity to complete the workflow run. Wait and try the workflow run again. To learn more about instance reservation failed error mitigations, see [Mitigating INSTANCE\_RESERVATION\_FAILED errors](#workflows-mitigate-instance-reservation-failed). |
 | INVALID\_ECR\_IMAGE\_URI | The Amazon ECR image URI structure isn't valid. Provide a valid URI and try again. |
+| `INVALID_RUN_PARAMETERS` | For a run that you started with `parametersUri`, HealthOmics found a problem with the parameters file after **StartRun** returned. Check the `statusMessage` field of the run, fix the file, and start a new run. For more information, see [Troubleshoot parameters file errors](workflows-run-inputs.md#run-parameters-uri-errors). |
 | `INVALID_TASK_RESOURCE_VALUE` | The requested GPU, CPU, or memory is either too high for available compute capacity, or is less than the minimum value of 1 for task {{ID}}. |
 | `INVALID_URI_INPUT` | The URI structure isn't a valid {{uri}}. Check the URI structure and try again. |
 |  MODIFIED\_INPUT\_RESOURCE  | The provided URI {{uri}} was modified after the run started. Retry the run. |

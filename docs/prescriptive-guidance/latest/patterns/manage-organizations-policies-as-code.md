@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Manage AWS Organizations policies as code by using AWS CodePipeline and Amazon Bedrock
-<a name="manage-organizations-policies-as-code"></a>
 
 *Andre Cavalcante and Mariana Pessoa de Queiroz, Amazon Web Services*
 

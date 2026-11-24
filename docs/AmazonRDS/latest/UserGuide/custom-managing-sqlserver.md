@@ -28,7 +28,7 @@ You can delete an RDS Custom for SQL Server DB instance using the console or the
 Deleting a RDS Custom for SQL Server DB instance will permanently delete the EC2 instance and the associated Amazon EBS volumes. You shouldn’t terminate or delete these resources at any time, otherwise, the deletion and the final snapshot creation may fail.
 
 **Note**
-You can't create a final DB snapshot of your DB instance if it has a status of `creating`, `failed`, `incompatible-create`, `incompatible-restore`, or `incompatible-network`. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+You can't create a final DB snapshot of your DB instance if it has a status of `creating`, `failed`, `incompatible-create`, `incompatible-restore`, or `incompatible-network`. For more information, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status).
 
 **Important**
 When you choose to take a final snapshot, we recommend that you avoid writing data to your DB instance while the DB instance deletion is in progress. Once the DB instance deletion is initiated, data changes are not guaranteed to be captured by the final snapshot.

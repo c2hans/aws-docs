@@ -14,4 +14,4 @@ With the AWS Abuse Signal API, you can:
 +  **List and filter reports** – Retrieve the status of all reports, with optional filtering by correlation ID.
 +  **Retry submissions safely** – Safely retry report submissions without creating duplicates by using client tokens.
 
-This document was last published on November 23, 2026.
+This document was last published on November 24, 2026.

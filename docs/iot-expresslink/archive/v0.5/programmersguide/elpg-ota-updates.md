@@ -240,10 +240,10 @@ The OTA Jobs service is generic and can transfer (stream) any type of file to a 
 | fileType  | Reserved for | Signed | Certificate | Req. Host Permission |
 | --- | --- | --- | --- | --- |
 | 101 | Module firmware update | Required | Module OTA | Y |
-| 103 | Module OTA certificate update | Self1 | Module OTA | N |
-| 107 | Server Root certificate update | Self1 | Server Root | N |
+| 103 | Module OTA certificate update | Self<sup>1</sup> | Module OTA | N |
+| 107 | Server Root certificate update | Self<sup>1</sup> | Server Root | N |
 | 202  | Host update | Optional | Host OTA | N |
-| 204 | Host OTA certificate update  | Self1 | Host OTA | N |
+| 204 | Host OTA certificate update  | Self<sup>1</sup> | Host OTA | N |
 
 [1] Certificates are already hashed and signed, no additional signing is required.
 

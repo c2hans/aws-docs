@@ -78,8 +78,8 @@ The following is example input data with records that contain a top-level key, a
 ```
 
 An example configuration analysis for the previous input example dataset should set the following parameters:
-+ The `label` parameter should use the [JMESPath](https://jmespath.org/) expression `[*].label` to extract the ground truth label for each record in the dataset. The JMESPath expression should produce a list of labels where the ith label corresponds to the ith record.
-+ The `features` parameter should use the JMESPath expression `[*].features` to extract an array of features for each record in the dataset. The JMESPath expression should produce a 2D array or matrix where the ith row contains the feature values for corresponding to the ith record.
++ The `label` parameter should use the [JMESPath](https://jmespath.org/) expression `[*].label` to extract the ground truth label for each record in the dataset. The JMESPath expression should produce a list of labels where the i<sup>th</sup> label corresponds to the i<sup>th</sup> record.
++ The `features` parameter should use the JMESPath expression `[*].features` to extract an array of features for each record in the dataset. The JMESPath expression should produce a 2D array or matrix where the i<sup>th</sup> row contains the feature values for corresponding to the i<sup>th</sup> record.
 
   The following is example input data with records that contains a top-level key and a nested key that contains a list of features and labels for each record.
 
@@ -93,8 +93,8 @@ An example configuration analysis for the previous input example dataset should 
 ```
 
 An example configuration analysis for the previous input example dataset should set the following parameters:
-+ The `label` parameter uses the [JMESPath](https://jmespath.org/) expression `data[*].label` to extract the ground truth label for each record in the dataset. The JMESPath expression should produce a list of labels where the ith label is for the ith record.
-+ The `features` parameter uses the JMESPath expression `data[*].features` to extract the array of features, for each record in the dataset. The JMESPath expression should produce a 2D array or matrix where the ith row contains the feature values for the ith record.
++ The `label` parameter uses the [JMESPath](https://jmespath.org/) expression `data[*].label` to extract the ground truth label for each record in the dataset. The JMESPath expression should produce a list of labels where the i<sup>th</sup> label is for the i<sup>th</sup> record.
++ The `features` parameter uses the JMESPath expression `data[*].features` to extract the array of features, for each record in the dataset. The JMESPath expression should produce a 2D array or matrix where the i<sup>th</sup> row contains the feature values for the i<sup>th</sup> record.
 
 ### Tabular dataset prerequisites in JSON Lines format
 <a name="clarify-processing-job-data-format-tabular-prereq-jsonlines"></a>

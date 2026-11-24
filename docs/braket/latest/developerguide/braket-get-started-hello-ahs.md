@@ -72,7 +72,7 @@ To prepare the anti-ferromagnetic phase, we need to induce interactions between 
 
 ![Hamiltonian interaction equation showing this this interaction as expressed as a sum over all spin pairs (j,k).](https://docs.aws.amazon.com/braket/latest/developerguide/images/HInteraction.png)
 
-Here, nj​=∣↑j​⟩⟨↑j​∣ is an operator that takes the value of 1 only if spin j is in the “up” state, and 0 otherwise. The strength is Vj,k​=C6​/(dj,k​)6, where C6​ is the fixed coefficient, and dj,k​ is the Euclidean distance between spins j and k. The immediate effect of this interaction term is that any state where both spin j and spin k are “up” have elevated energy (by the amount Vj,k​). By carefully designing the rest of the AHS program, this interaction will prevent neighboring spins from both being in the “up” state, an effect commonly known as "Rydberg blockade."
+Here, nj​=∣↑<sub>j</sub>​⟩⟨↑<sub>j</sub>​∣ is an operator that takes the value of 1 only if spin j is in the “up” state, and 0 otherwise. The strength is V<sub>j,k</sub>​=C<sub>6</sub>​/(d<sub>j,k​</sub>)<sup>6</sup>, where C<sub>6</sub>​ is the fixed coefficient, and d<sub>j,k</sub>​ is the Euclidean distance between spins j and k. The immediate effect of this interaction term is that any state where both spin j and spin k are “up” have elevated energy (by the amount V<sub>j,k</sub>​). By carefully designing the rest of the AHS program, this interaction will prevent neighboring spins from both being in the “up” state, an effect commonly known as "Rydberg blockade."
 
 ## Driving field
 <a name="braket-get-started-driving-field"></a>
@@ -81,7 +81,7 @@ At the beginning of the AHS program, all spins (by default) start in their “do
 
 ![Mathematical equation depicting the calculation of a Hamiltonian drive function.](https://docs.aws.amazon.com/braket/latest/developerguide/images/HDrive.png)
 
-where Ω(t),ϕ(t),Δ(t) are the time-dependent, global amplitude (aka [Rabi frequency](https://en.wikipedia.org/wiki/Rabi_frequency)), phase, and detuning of the driving field affecting all spins uniformly. Here S−,k​=∣↓k​⟩⟨↑k​∣and S\+,k​​=(S−,k​)†=∣↑k​⟩⟨↓k​∣ are the lowering and raising operators of spin k, respectively, and nk​=∣↑k​⟩⟨↑k​∣ is the same operator as before. The Ω part of the driving field coherently couples the “down” and the “up” states of all spins simultaneously, while the Δ part controls the energy reward for “up” states.
+where Ω(t),ϕ(t),Δ(t) are the time-dependent, global amplitude (aka [Rabi frequency](https://en.wikipedia.org/wiki/Rabi_frequency)), phase, and detuning of the driving field affecting all spins uniformly. Here S<sub>−,k</sub>​=∣↓<sub>k​</sub>⟩⟨↑<sub>k</sub>​∣and S<sub>\+,k</sub>​​=(S<sub>−,k</sub>​)<sup>†</sup>=∣↑<sub>k​</sub>⟩⟨↓<sub>k</sub>​∣ are the lowering and raising operators of spin k, respectively, and n<sub>k</sub>​=∣↑<sub>k</sub>​⟩⟨↑<sub>k</sub>​∣ is the same operator as before. The Ω part of the driving field coherently couples the “down” and the “up” states of all spins simultaneously, while the Δ part controls the energy reward for “up” states.
 
 To program a smooth transition from the ferromagnetic phase to the anti-ferromagnetic phase, we specify the driving field with the following code.
 

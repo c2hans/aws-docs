@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::EventsV2::EventSource EventSourceConfiguration
 
-Event source configuration. Exactly one of the two variants must be set.
+Event source configuration. Exactly one of the three variants must be set.
 
 ## Syntax
 <a name="aws-properties-eventsv2-eventsource-eventsourceconfiguration-syntax"></a>
@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```json
 {
   "[AwsServiceEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-awsserviceeventsconfiguration)" : {{AwsServiceEventsConfiguration}},
-  "[PartnerEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-partnereventsconfiguration)" : {{PartnerEventsConfiguration}}
+  "[PartnerEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-partnereventsconfiguration)" : {{PartnerEventsConfiguration}},
+  "[WebhookEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-webhookeventsconfiguration)" : {{WebhookEventsConfiguration}}
 }
 ```
 
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     AwsServiceEventsConfiguration}}
   [PartnerEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-partnereventsconfiguration): {{
     PartnerEventsConfiguration}}
+  [WebhookEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-webhookeventsconfiguration): {{
+    WebhookEventsConfiguration}}
 ```
 
 ## Properties
@@ -46,4 +49,10 @@ Configuration for forwarding a single AWS service's events.
 Configuration for forwarding a partner event source's events.
 *Required*: No
 *Type*: [PartnerEventsConfiguration](aws-properties-eventsv2-eventsource-partnereventsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WebhookEventsConfiguration`  <a name="cfn-eventsv2-eventsource-eventsourceconfiguration-webhookeventsconfiguration"></a>
+Configuration for receiving events that an external provider sends to a webhook URL.
+*Required*: No
+*Type*: [WebhookEventsConfiguration](aws-properties-eventsv2-eventsource-webhookeventsconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

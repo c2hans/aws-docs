@@ -5,10 +5,11 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/history
 # Document history
 
 The following table describes the important changes to the documentation since the last release of Amazon API Gateway. For notification about updates to this documentation, you can subscribe to an RSS feed by choosing the RSS button in the top menu panel.
-+ **Latest documentation update: **November 17, 2026
++ **Latest documentation update: **November 23, 2026
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [API Portal](history.md) | API Portal discovers the APIs running behind API Gateway REST APIs, Application Load Balancer, and CloudFront across your AWS account or your organization in AWS Organizations, evaluates their security posture, and lets you publish documentation portals for them. For more information, see [API Portal](https://docs.aws.amazon.com/apigateway/latest/developerguide/apiportal.html). | November 23, 2026 |
 | [JWT authorizers for REST APIs](history.md) | API Gateway now supports JWT authorizers for REST APIs, which validate JSON Web Tokens from an OpenID Connect (OIDC) identity provider. For more information, see [Control access to REST APIs using JWT authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-jwt-authorizer.html). | November 17, 2026 |
 | [Add an API Gateway REST API as a target for Amazon Bedrock AgentCore Gateway](history.md) | API Gateway now supports adding a REST API as a target for Amazon Bedrock AgentCore Gateway. For more information, see [Add an API Gateway REST API as a target for Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/mcp-server.html). | December 2, 2025 |
 | [Private integration with Application Load Balancer](history.md) | API Gateway now supports private integrations with Application Load Balancers for REST APIs. For more information, see [Private integrations for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/private-integration.html). | November 21, 2025 |

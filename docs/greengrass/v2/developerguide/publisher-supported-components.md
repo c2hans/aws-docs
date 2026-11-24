@@ -33,7 +33,7 @@ This component offers the following benefits:
 This component must run on the following platform:
 + os: linux
 
-If you are interested in purchasing this component, contact Bosch Software and Digital Solutions: AIShield.Contact@bosch.com.
+If you are interested in purchasing this component, contact Bosch Software and Digital Solutions: [AIShield.Contact@bosch.com](mailto:AIShield.Contact@bosch.com).
 
 ## AI EdgeLabs Sensor
 <a name="publisher-supported-components-AIEdgeLabs"></a>
@@ -51,7 +51,7 @@ This component offers the following benefits:
 This component must run on one of the following platforms:
 + os: linux
 
-If you are interested in purchasing this component, contact AI EdgeLabs: contact@edgelabs.ai.
+If you are interested in purchasing this component, contact AI EdgeLabs: [contact@edgelabs.ai](mailto:contact@edgelabs.ai).
 
 ## Greengrass S3 Ingestor
 <a name="publisher-supported-components-S3Ingestor"></a>
@@ -62,4 +62,4 @@ This component must run on one of the following platforms:
 + os: linux
 + os: Windows
 
-If you are interested in purchasing this component, contact Nathan Glover: nathan@glovers.id.au.
+If you are interested in purchasing this component, contact Nathan Glover: [nathan@glovers.id.au](mailto:nathan@glovers.id.au).

@@ -13,7 +13,7 @@ Integrations that send findings to Security Hub CSPM have an Amazon Resource Nam
 
 An integration might not be available in all AWS Regions. If an integration isn't supported in the Region that you are currently signed in to on the Security Hub CSPM console, it doesn't appear on the **Integrations** page of the console. For a list of integrations that are available in the China Regions and AWS GovCloud (US) Regions, see [Availability of integrations by Region](securityhub-regions.md#securityhub-regions-integration-support).
 
-If you have a security solution and are interested in becoming a Security Hub CSPM partner, send email to securityhub-partners@amazon.com. For more information, see the [Partner Integration Guide](https://docs.aws.amazon.com/securityhub/latest/partnerguide/integration-overview.html).
+If you have a security solution and are interested in becoming a Security Hub CSPM partner, send email to [securityhub-partners@amazon.com](mailto:securityhub-partners@amazon.com). For more information, see the [Partner Integration Guide](https://docs.aws.amazon.com/securityhub/latest/partnerguide/integration-overview.html).
 
 ## Overview of third-party integrations with Security Hub CSPM
 <a name="integrations-third-party-summary"></a>

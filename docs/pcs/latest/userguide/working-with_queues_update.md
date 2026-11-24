@@ -45,7 +45,7 @@ Queue updates can take several minutes.
 
    1. Replace {{region-code}} with the AWS Region that you want to create your cluster in.
 
-   1. Replace {{my-queue}} with the name or `computeNodeGroupId` for your queue.
+   1. Replace {{my-queue}} with the name or `queueId` for your queue.
 
    1. Replace {{my-cluster}} with the name or `clusterId` of your cluster.
 

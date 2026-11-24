@@ -13,15 +13,15 @@ Specificity is perfect for a facet if all of the y=0 cases are correctly predict
 
 The following formula is for the difference in the specificity for facets *a* and *d*.
 
-        SD = TNd/(TNd \+ FPd) - TNa/(TNa \+ FPa) = TNRd - TNRa
+        SD = TN<sub>d</sub>/(TN<sub>d</sub> \+ FP<sub>d</sub>) - TN<sub>a</sub>/(TN<sub>a</sub> \+ FP<sub>a</sub>) = TNR<sub>d</sub> - TNR<sub>a</sub>
 
 The following variables used to calculated SD are defined as follows:
-+ TNd are the true negatives predicted for facet *d*.
-+ FPd are the false positives predicted for facet *d*.
-+ TNd are the true negatives predicted for facet *a*.
-+ FPd are the false positives predicted for facet *a*.
-+ TNRa = TNa/(TNa \+ FPa) is the true negative rate, also known as the specificity, for facet *a*.
-+ TNRd = TNd/(TNd \+ FPd) is the true negative rate, also known as the specificity, for facet *d*.
++ TN<sub>d</sub> are the true negatives predicted for facet *d*.
++ FP<sub>d</sub> are the false positives predicted for facet *d*.
++ TN<sub>d</sub> are the true negatives predicted for facet *a*.
++ FP<sub>d</sub> are the false positives predicted for facet *a*.
++ TNR<sub>a</sub> = TN<sub>a</sub>/(TN<sub>a</sub> \+ FP<sub>a</sub>) is the true negative rate, also known as the specificity, for facet *a*.
++ TNR<sub>d</sub> = TN<sub>d</sub>/(TN<sub>d</sub> \+ FP<sub>d</sub>) is the true negative rate, also known as the specificity, for facet *d*.
 
 For example, consider the following confusion matrices for facets *a* and *d*.
 

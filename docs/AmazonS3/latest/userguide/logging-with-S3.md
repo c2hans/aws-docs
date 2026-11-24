@@ -15,25 +15,25 @@ The following table lists the key properties of CloudTrail logs and Amazon S3 se
 | Log properties | AWS CloudTrail | Amazon S3 server logs |
 | --- |--- |--- |
 | Can be forwarded to other systems (Amazon CloudWatch Logs, Amazon CloudWatch Events) | Yes | Yes |
-| Deliver logs to more than one destination (for example, send the same logs to two different buckets) | Yes | Yes3 |
+| Deliver logs to more than one destination (for example, send the same logs to two different buckets) | Yes | Yes<sup>3</sup> |
 | Turn on logs for a subset of objects (prefix) | Yes | No |
-| Cross-account log delivery (target and source bucket owned by different accounts) | Yes | Yes3 |
+| Cross-account log delivery (target and source bucket owned by different accounts) | Yes | Yes<sup>3</sup> |
 | Integrity validation of log file by using digital signature or hashing | Yes | No |
-| Default or choice of encryption for log files | Yes | Yes3 |
+| Default or choice of encryption for log files | Yes | Yes<sup>3</sup> |
 | Object operations (by using Amazon S3 APIs) | Yes | Yes |
 | Bucket operations (by using Amazon S3 APIs) | Yes | Yes |
-| Searchable UI for logs | Yes | Yes3 |
+| Searchable UI for logs | Yes | Yes<sup>3</sup> |
 | Fields for Object Lock parameters, Amazon S3 Select properties for log records | Yes | No |
 | Fields for `Object Size`, `Total Time`, `Turn-Around Time`, and `HTTP Referer` for log records | Yes | Yes |
 | Lifecycle transitions, expirations, restores | No | Yes |
 | Logging of keys in a batch delete operation | Yes | Yes |
-| Authentication failures1 | No | Yes |
-| Accounts where logs get delivered | Bucket owner2, and requester | Bucket owner, and other accounts with Amazon CloudWatch Logs delivery |
+| Authentication failures<sup>1</sup> | No | Yes |
+| Accounts where logs get delivered | Bucket owner<sup>2</sup>, and requester | Bucket owner, and other accounts with Amazon CloudWatch Logs delivery |
 | **Performance and Cost** | **AWS CloudTrail** | **Amazon S3 Server Logs** |
 | --- |--- |--- |
-| Price | Management events (first delivery) are free; data events incur a fee, in addition to storage of logs | No cost for Amazon S3 bucket delivery in addition to storage of logs; CloudWatch vended logs rates for Amazon CloudWatch Logs delivery3. |
+| Price | Management events (first delivery) are free; data events incur a fee, in addition to storage of logs | No cost for Amazon S3 bucket delivery in addition to storage of logs; CloudWatch vended logs rates for Amazon CloudWatch Logs delivery<sup>3</sup>. |
 | Speed of log delivery | Data events every 5 minutes; management events every 15 minutes | Within a few hours |
-| Log format | JSON | Space-delimited text records for delivery to an Amazon S3 bucket. Structured JSON for delivery to Amazon CloudWatch Logs3. |
+| Log format | JSON | Space-delimited text records for delivery to an Amazon S3 bucket. Structured JSON for delivery to Amazon CloudWatch Logs<sup>3</sup>. |
 
 **Notes**
 

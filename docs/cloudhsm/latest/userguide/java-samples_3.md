@@ -23,7 +23,7 @@ The following code samples show you how to use the [AWS CloudHSM JCE provider](j
 + [Generate an AES key](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/SymmetricKeys.java)
 + [Encrypt and decrypt with AES-GCM](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/AESGCMEncryptDecryptRunner.java)
 + [Encrypt and decrypt with AES-CTR]( https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/AESCTREncryptDecryptRunner.java)
-+ [Encrypt and decrypt with D3DES-ECB]( https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/DESedeECBEncryptDecryptRunner.java)**see note [1](#java-samples-code-note-1)**
++ [Encrypt and decrypt with D3DES-ECB]( https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/DESedeECBEncryptDecryptRunner.java)<sup>**see note [1](#java-samples-code-note-1)**</sup>
 + [Wrap and unwrap keys with AES-GCM](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/AESGCMWrappingRunner.java)
 + [Wrap and unwrap keys with AES](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/AESWrappingRunner.java)
 + [Wrap and unwrap keys with RSA](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/master/src/main/java/com/amazonaws/cloudhsm/examples/RSAWrappingRunner.java)

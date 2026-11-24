@@ -95,7 +95,7 @@ The sandbox:
 + Uses real AWS services (DynamoDB, API Gateway, Lambda)
 + Gives each developer an isolated environment. The stack is named `<stackId>-<sandboxId>`. AWS CDK Blocks keeps the sandbox ID in `.cdk-blocks-sandbox/sandbox-id.txt`, which you don’t commit, so each machine gets its own stack.
 
- `cdk watch` hotswaps only code. It skips an infrastructure change, such as a new CDK Block or a changed CDK Block option, and prints a warning about changes that can’t be hotswapped. To deploy that change, stop the sandbox and run `npm run sandbox` again. Pressing  Ctrl C  stops only the local processes. Your AWS resources keep running until you destroy them.
+ `cdk watch` hotswaps only code. It skips an infrastructure change, such as a new CDK Block or a changed CDK Block option, and prints a warning about changes that can’t be hotswapped. To deploy that change, stop the sandbox and run `npm run sandbox` again. Pressing **Ctrl+C** stops only the local processes. Your AWS resources keep running until you destroy them.
 
 The same code that ran locally now runs on AWS. CDK Blocks automatically resolve to their AWS implementations. `KVStore` becomes a DynamoDB table, `Auth` provisions an Amazon Cognito user pool, and `ApiNamespace` creates an API Gateway endpoint backed by a Lambda function.
 

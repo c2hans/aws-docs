@@ -252,14 +252,14 @@ This section describes the limits and quotas of the AWS IoT Core rules engine.
 
 **AWS IoT Core rules engine**
 
-| Limit display name | Description | Default value | Default value in select AWS Regions\* | Adjustable |
+| Limit display name | Description | Default value | Default value in select AWS Regions<sup>\*</sup> | Adjustable |
 | --- | --- | --- | --- | --- |
 | `[Maximum number of actions per rule](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-51309716)` | The maximum number of entries in the rule's actions property. | 10 | 10 | No |
 | `[Maximum number of rules per AWS account](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-954FA751)` | The maximum number of rules that can be defined in a single AWS account. | 1000 | 1000 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-954FA751) |
 | `[Rule evaluations per second per AWS account](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-5E9B88DA)` | The maximum number of rules that can be evaluated per second per AWS account. This quota includes rule evaluations that result from inbound Basic Ingest messages. | 20000 | 2000 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-5E9B88DA) |
 | `[Rule payload size](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-4FB8C075)` | The maximum size of a rule payload. A rule payload includes the rule SQL, action definitions, error action definitions, rule SQL version, and description encoded in JSON using UTF-8 character encoding. Creation or modification of a rule will be rejected if the rule payload exceeds the maximum size. | 128 Kilobytes | 128 Kilobytes | No |
 
-\***Select AWS Regions**: Europe (Stockholm), Middle East (Bahrain), Middle East (UAE), Europe (Paris), Asia Pacific (Hong Kong), AWS GovCloud (US-East), AWS GovCloud (US-West), US West (N. California), Canada (Central), China (Ningxia), Asia Pacific (Malaysia), Europe (Spain)
+<sup>\*</sup>**Select AWS Regions**: Europe (Stockholm), Middle East (Bahrain), Middle East (UAE), Europe (Paris), Asia Pacific (Hong Kong), AWS GovCloud (US-East), AWS GovCloud (US-West), US West (N. California), Canada (Central), China (Ningxia), Asia Pacific (Malaysia), Europe (Spain)
 
 #### AWS IoT Core rules engine HTTP actions limits and quotas
 <a name="rules-http-action-limits"></a>
@@ -298,7 +298,7 @@ This section describes the limits and quotas of the AWS IoT Core rules engine.
 
 This table describes the maximum number of transactions per second (TPS) that can be made to each of these AWS IoT Core API actions.
 
-| Limit display name | Description | Default value | Default value in select AWS Regions\* | Adjustable |
+| Limit display name | Description | Default value | Default value in select AWS Regions<sup>\*</sup> | Adjustable |
 | --- | --- | --- | --- | --- |
 | [`AcceptCertificateTransfer API TPS`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-136C6B71) | The maximum number of transactions per second (TPS) that can be made for the AcceptCertificateTransfer API. | 10 | 10 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-136C6B71) |
 | [`AddThingToBillingGroup API TPS`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-1F4BE39E) | The maximum number of transactions per second (TPS) that can be made for the AddThingToBillingGroup API. | 60 | 60 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-1F4BE39E) |
@@ -455,7 +455,7 @@ This table describes the maximum number of transactions per second (TPS) that ca
 
 **AWS IoT Core Device Shadow actions**
 
-| Limit display name | Description | Default value | Default value in select AWS Regions\* | Adjustable |
+| Limit display name | Description | Default value | Default value in select AWS Regions<sup>\*</sup> | Adjustable |
 | --- | --- | --- | --- | --- |
 | `[Device Shadow API requests/second per account](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-6CC6395A)` | Number of device shadow API requests per second per account. This value is adjustable and subject to per-account quotas, depending on the region. | 4000 | 400 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-6CC6395A) |
 | `[Maximum depth of JSON device state documents](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-2A7BC612)` | The maximum number of levels in the desired or reported section of the JSON device state document is 8. | 8 | 8 | No |
@@ -465,7 +465,7 @@ This table describes the maximum number of transactions per second (TPS) that ca
 | `[Maximum thing name size](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-83BC2FA9)` | Maximum size of a thing name, which is 128 bytes of UTF-8 encoded characters. | 128 Bytes | 128 Bytes | No |
 | `[Requests per second per thing](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-EFF4BE08)` | The Device Shadow service supports up to 20 requests per second per shadow. This limit applies to both HTTP and MQTT API calls for GetThingShadow, UpdateThingShadow, DeleteThingShadow, and ListNamedShadowsForThing (classic shadows only). | 20 | 20 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-EFF4BE08) |
 
-\***Select AWS Regions**: Europe (Paris), Europe (Stockholm), Asia Pacific (Hong Kong), South America (São Paulo), Canada (Central), Middle East (Bahrain), Middle East (UAE), China (Ningxia), AWS GovCloud (US-East), AWS GovCloud (US-West) Asia Pacific (Malaysia), Europe (Spain)
+<sup>\*</sup>**Select AWS Regions**: Europe (Paris), Europe (Stockholm), Asia Pacific (Hong Kong), South America (São Paulo), Canada (Central), Middle East (Bahrain), Middle East (UAE), China (Ningxia), AWS GovCloud (US-East), AWS GovCloud (US-West) Asia Pacific (Malaysia), Europe (Spain)
 
 The levels in the `desired` and `reported` sections of the Device Shadow's JSON state document are counted as shown here for the `desired` object.
 
@@ -514,7 +514,7 @@ Fleet provisioning also has these limits, which can't be changed.
 **Note**
 The limits listed below are per AWS Regions.
 
-| Limit display name | Description | Default value | Default value in select AWS Regions\* | Adjustable |
+| Limit display name | Description | Default value | Default value in select AWS Regions<sup>\*</sup> | Adjustable |
 | --- | --- | --- | --- | --- |
 | [`Client ID size`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-E2D9C89C) | Size of the client ID, which is 128 bytes of UTF-8 encoded characters. | 128 Bytes | 128 Bytes | No |
 | [`Connect requests per second per account`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-AEA1E176) | The maximum number of MQTT CONNECT requests per second per account. | 3000 | 100 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-AEA1E176) |
@@ -567,12 +567,12 @@ The limits listed below are per AWS Regions.
 
 **AWS IoT Core credential limits and quotas**
 
-| Limit display name | Description | Default value | Default value in select AWS Regions\* | Adjustable |
+| Limit display name | Description | Default value | Default value in select AWS Regions<sup>\*</sup> | Adjustable |
 | --- | --- | --- | --- | --- |
 | `[AssumeRoleWithCertificate API TPS](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-DA868E55)` | The maximum number of transactions per second (TPS) that can be made for the AssumeRoleWithCertificate API. | 50 | 100 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-DA868E55) |
 | `[Maximum number of AWS IoT Core role aliases](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-8AF17D80)` | Maximum number of AWS IoT Core role aliases registered in your AWS account. AWS IoT role alias allows connected devices to authenticate to AWS IoT using X.509 certificates and obtain short-lived AWS credentials from an IAM role that is associated with the role alias. | 100 | 100 | No |
 
-\***Select AWS Regions**: US East (N. Virginia), US West (Oregon), Europe (Ireland) Asia Pacific (Malaysia), Europe (Spain)
+<sup>\*</sup>**Select AWS Regions**: US East (N. Virginia), US West (Oregon), Europe (Ireland) Asia Pacific (Malaysia), Europe (Spain)
 
 **Note**
 **Large Region** limits apply to AWS Regions: US East (N. Virginia), US West (Oregon), and Europe (Ireland)

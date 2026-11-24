@@ -37,7 +37,7 @@ You must consider the risk and impact of each failure type, and the cost of miti
 <table>
 <tbody>
   <tr><td rowspan="2"> <b>Patterns</b> </td><td colspan="3"> <b>Business requirements</b> </td><td colspan="3"> <b>Solution characteristics</b> </td><td colspan="2"> <b>Implementation details</b> </td></tr>
-  <tr><td> <b>Resilience type</b> </td><td> <b>Recovery point objective1 </b> </td><td> <b>Recovery time objective2 </b> </td><td> <b>Cost</b> </td><td> <b>Complexity</b> </td><td> <b>Capacity re-use3 </b> </td><td> <b>SAP HANA System Replication4 </b> </td><td> <b>Amazon S3 replication5 </b> </td></tr>
+  <tr><td> <b>Resilience type</b> </td><td> <b>Recovery point objective<sup>1</sup> </b> </td><td> <b>Recovery time objective<sup>2</sup> </b> </td><td> <b>Cost</b> </td><td> <b>Complexity</b> </td><td> <b>Capacity re-use<sup>3</sup> </b> </td><td> <b>SAP HANA System Replication<sup>4</sup> </b> </td><td> <b>Amazon S3 replication<sup>5</sup> </b> </td></tr>
   <tr><td> <a href="hana-ops-patterns-single.md#hana-ops-patterns-pattern1">Pattern 1</a> </td><td rowspan="4">Single Region disaster recovery</td><td>Near zero</td><td>Low</td><td>Medium</td><td>Medium</td><td>Optional</td><td>2-tier</td><td rowspan="4">Same Region</td></tr>
   <tr><td> <a href="hana-ops-patterns-single.md#hana-ops-patterns-pattern2">Pattern 2</a> </td><td>Near zero</td><td>Low</td><td>Medium</td><td>High</td><td>Yes</td><td>3-tier</td></tr>
   <tr><td> <a href="hana-ops-patterns-single.md#hana-ops-patterns-pattern3">Pattern 3</a> </td><td>Low</td><td>Medium</td><td>Low</td><td>Medium</td><td>Yes</td><td>2-tier</td></tr>
@@ -49,12 +49,12 @@ You must consider the risk and impact of each failure type, and the cost of miti
 </tbody>
 </table>
 
- * 1To achieve near zero recovery point objective, SAP HANA System Replication must be setup in sync mode for the SAP HANA instances within the same Region.*
+ * <sup>1</sup>To achieve near zero recovery point objective, SAP HANA System Replication must be setup in sync mode for the SAP HANA instances within the same Region.*
 
- * 2To achieve the lowest recovery time objective, we recommend using a high availability setup with third-party cluster solutions in combination with SAP HANA System Replication.*
+ * <sup>2</sup>To achieve the lowest recovery time objective, we recommend using a high availability setup with third-party cluster solutions in combination with SAP HANA System Replication.*
 
- * 3A production sized Amazon EC2 instance can be deployed as an MCOS installation to accommodate a non-production SAP HANA instance.*
+ * <sup>3</sup>A production sized Amazon EC2 instance can be deployed as an MCOS installation to accommodate a non-production SAP HANA instance.*
 
- * 4SAP HANA System Replication and the number of SAP HANA instance copies as targets.*
+ * <sup>4</sup>SAP HANA System Replication and the number of SAP HANA instance copies as targets.*
 
- * 5Same-Region replication copies objects across Amazon S3 buckets in the same Region.*
+ * <sup>5</sup>Same-Region replication copies objects across Amazon S3 buckets in the same Region.*

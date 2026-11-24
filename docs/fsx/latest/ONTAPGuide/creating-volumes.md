@@ -26,6 +26,13 @@ The volume's security style is automatically set to the root volume's security s
 
 1. In the **Volume style** section, choose **FlexVol**.
 
+1. In the **Source snapshot or volume (Clone)** section, choose one of the following:
+   + **Create an empty volume** – The new volume starts out with no data on it. This is the default.
+   + **Clone from existing volume** – Creates a clone from the current state of another volume. Choose the parent volume.
+   + **Clone from existing snapshot** – Creates a clone from a snapshot of another volume. Choose the snapshot.
+
+   For more information, see [Volume clones](managing-volumes.md#volume-clones).
+
 1. In the **Volume details** section, provide the following information:
    + In the **Volume name** field, provide a name for the volume. You can use up to 203 alphanumeric or underscore (\_) characters.
    + For **Volume size**, enter any whole number in the range of 20–314572800 to specify the size in mebibytes (MiB).
@@ -67,6 +74,13 @@ You can only create FlexGroup volumes for file systems with multiple HA pairs us
 
 1. In the **Volume style** section, choose **FlexGroup**.
 
+1. In the **Source snapshot or volume (Clone)** section, choose one of the following:
+   + **Create an empty volume** – The new volume starts out with no data on it. This is the default.
+   + **Clone from existing volume** – Creates a clone from the current state of another volume. Choose the parent volume.
+   + **Clone from existing snapshot** – Creates a clone from a snapshot of another volume. Choose the snapshot.
+
+   For more information, see [Volume clones](managing-volumes.md#volume-clones).
+
 1. In the **Volume details** section, provide the following information:
    + In the **Volume name** field, provide a name for the volume. You can use up to 203 alphanumeric or underscore (\_) characters.
    + For **Volume size**, enter any whole number in the range of 800 gibibytes (GiB)–2,400 tebibytes (TiB) per HA pair. For example, a file system with 12 high-availability (HA) pairs would have a minimum volume size of 9,600 GiB and a maximum size of 20,480 TiB.
@@ -92,17 +106,27 @@ You can monitor the update progress on the **File systems** detail page, in the 
 
 ## To create a volume (CLI)
 <a name="create-volume-cli"></a>
-+ To create an FSx for ONTAP volume, use the [create-volume](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-volume.html) CLI command (or the equivalent [CreateVolume](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateVolume.html) API operation), as shown in the following example.
 
-  ```
-  aws fsx create-volume \
-      --volume-type ONTAP \
-      --name vol1 \
-      --ontap-configuration CopyTagsToBackups=true,JunctionPath=/vol1,SecurityStyle=NTFS, \
-            SizeInMegabytes=1024,SnapshotPolicy=default, \
-            StorageVirtualMachineId=svm-abcdef0123456789a,OntapVolumeType=RW, \
-            StorageEfficiencyEnabled=true
-  ```
+1. To create an FSx for ONTAP volume, use the [create-volume](https://docs.aws.amazon.com/cli/latest/reference/fsx/create-volume.html) CLI command (or the equivalent [CreateVolume](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateVolume.html) API operation), as shown in the following example.
+
+   ```
+   aws fsx create-volume \
+       --volume-type ONTAP \
+       --name vol1 \
+       --ontap-configuration CopyTagsToBackups=true,JunctionPath=/vol1,SecurityStyle=NTFS, \
+             SizeInMegabytes=1024,SnapshotPolicy=default, \
+             StorageVirtualMachineId=svm-abcdef0123456789a,OntapVolumeType=RW, \
+             StorageEfficiencyEnabled=true
+   ```
+
+1. To create a volume clone, add `CloneConfiguration` to `--ontap-configuration`. For `ParentVolumeId`, specify the ID of the parent volume. To clone from an existing snapshot, also specify `SnapshotId`. If you don't specify a snapshot, Amazon FSx clones the current state of the parent volume. If you omit `SizeInMegabytes`, the clone uses the size of the parent volume.
+
+   ```
+   aws fsx create-volume \
+       --volume-type ONTAP \
+       --name vol1_clone \
+       --ontap-configuration 'StorageVirtualMachineId={{svm-abcdef0123456789a}},JunctionPath=/vol1_clone,CloneConfiguration={ParentVolumeId={{fsvol-abcdef0123456789b}},SnapshotId={{fsvolsnap-abcdef0123456789c}}}'
+   ```
 
 After successfully creating the volume, Amazon FSx returns its description in JSON format, as shown in the following example.
 
@@ -137,3 +161,5 @@ After successfully creating the volume, Amazon FSx returns its description in JS
 ```
 
 You can also create a new volume by restoring a backup of a volume to a new volume. For more information, see [Restoring backups to a new volume](using-backups.md#restoring-backups).
+
+You can also create a volume clone from the **Volumes** page by choosing a volume and then choosing **Actions**, **Create clone**, or from the **Snapshots** page by choosing a snapshot and then choosing **Actions**, **Create clone from snapshot**.

@@ -8,6 +8,7 @@ The following table describes the releases for IPAM.
 
 | Feature | Description | Release Date |
 | --- | --- | --- |
+| [Updates to the AWS managed policy](iam-ipam-managed-pol.md#iam-ipam-managed-pol-updates) - Update to an existing policy | Existing AWSIPAMServiceRolePolicy updated. | November 19, 2026 |
 | [Updates to the AWS managed policy](iam-ipam-managed-pol.md#iam-ipam-managed-pol-updates) - New policy | New AWSIPAMOutboundServiceRolePolicy and AWSServiceRoleForIPAMOutbound service-linked role for discovering resources in external providers. | October 28, 2026 |
 | [Updates to the AWS managed policy](iam-ipam-managed-pol.md#iam-ipam-managed-pol-updates) - Update to an existing policy | Existing AWSIPAMServiceRolePolicy updated. | October 15, 2026 |
 | [Updates to the AWS managed policy](iam-ipam-managed-pol.md#iam-ipam-managed-pol-updates) - Update to an existing policy | Existing AWSIPAMServiceRolePolicy updated. | September 9, 2026 |

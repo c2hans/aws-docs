@@ -42,7 +42,7 @@ Surrogate values are not supported in the message attributes. For example, using
 + **String.Array** – An array, formatted as a string, that can contain multiple values. The values can be strings, numbers, or the keywords `true`, `false`, and `null`. A String.Array of number or boolean type does not require quotes. Multiple String.Array values are separated by commas.
 
   This data type isn't supported for AWS Lambda subscriptions. If you specify this data type for Lambda endpoints, it's passed as the `String` data type in the JSON payload that Amazon SNS delivers to Lambda.
-+ **Number** – Numbers are positive or negative integers or floating-point numbers. Numbers have sufficient range and precision to encompass most of the possible values that integers, floats, and doubles typically support. A number can have a value from -109 to 109, with 5 digits of accuracy after the decimal point. Leading and trailing zeroes are trimmed.
++ **Number** – Numbers are positive or negative integers or floating-point numbers. Numbers have sufficient range and precision to encompass most of the possible values that integers, floats, and doubles typically support. A number can have a value from -10<sup>9</sup> to 10<sup>9</sup>, with 5 digits of accuracy after the decimal point. Leading and trailing zeroes are trimmed.
 
   This data type isn't supported for AWS Lambda subscriptions. If you specify this data type for Lambda endpoints, it's passed as the `String` data type in the JSON payload that Amazon SNS delivers to Lambda.
 + **Binary** – Binary type attributes can store any binary data; for example, compressed data, encrypted data, or images.
@@ -55,7 +55,7 @@ The following table lists the reserved message attributes for mobile push notifi
 - **ADM**
   - AWS.SNS.MOBILE.ADM.TTL
 
-- **APNs1**
+- **APNs<sup>1</sup>**
   - AWS.SNS.MOBILE.APNS\_MDM.TTL
   - AWS.SNS.MOBILE.APNS\_MDM\_SANDBOX.TTL
   - AWS.SNS.MOBILE.APNS\_PASSBOOK.TTL
@@ -92,4 +92,4 @@ The following table lists the reserved message attributes for mobile push notifi
   - AWS.SNS.MOBILE.WNS.TTL
   - AWS.SNS.MOBILE.WNS.Type
 
-1 Apple will reject Amazon SNS notifications if message attributes do not meet their requirements. For additional details, see [Sending Notification Requests to APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns) on the Apple Developer website.
+<sup>1</sup> Apple will reject Amazon SNS notifications if message attributes do not meet their requirements. For additional details, see [Sending Notification Requests to APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns) on the Apple Developer website.

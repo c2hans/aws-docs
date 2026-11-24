@@ -21,6 +21,7 @@ The following data types are supported:
 +  [AutonomousDatabaseConnectionStrings](API_AutonomousDatabaseConnectionStrings.md)
 +  [AutonomousDatabaseConnectionUrls](API_AutonomousDatabaseConnectionUrls.md)
 +  [AutonomousDatabasePeerSummary](API_AutonomousDatabasePeerSummary.md)
++  [AutonomousDatabaseRefreshableCloneSummary](API_AutonomousDatabaseRefreshableCloneSummary.md)
 +  [AutonomousDatabaseSummary](API_AutonomousDatabaseSummary.md)
 +  [AutonomousDatabaseVersionSummary](API_AutonomousDatabaseVersionSummary.md)
 +  [AutonomousDatabaseWalletDetails](API_AutonomousDatabaseWalletDetails.md)

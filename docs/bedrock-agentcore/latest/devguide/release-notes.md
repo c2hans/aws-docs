@@ -9,6 +9,15 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026
 <a name="_november_2026"></a>
 
+### Runtime: Instances available in AWS GovCloud (US-West)
+<a name="runtime_instances_available_in_shared_aws_govcloud_us_west"></a>
+
+Instances is the compute type of Amazon Bedrock AgentCore Runtime that runs your agents on Amazon EC2 instances in your account. Use Instances for long-running agents and agents that need dedicated compute. If your workloads have elevated compliance needs, you can keep the instances, volumes, and session data of your agents in AWS GovCloud (US-West).
+
+You can use Instances in the following AWS Region: AWS GovCloud (US-West).
+
+For more information about Region support, see [Supported AWS Regions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html). For more information about AgentCore in AWS GovCloud (US), see the [AWS GovCloud (US) documentation for AgentCore](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-bedrock-agentcore.html).
+
 ### Identity: Runtime identity service-linked role policy updated
 <a name="_identity_runtime_identity_service_linked_role_policy_updated_2"></a>
 

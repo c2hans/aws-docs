@@ -20,7 +20,7 @@ The following table shows the identity types, the protocols they use, and the po
 
 **AWS IoT Core data plane API and policy types**
 
-- **MQTT over TLS/TCP, TLS mutual authentication (port 8883 or 443)[†](protocols.md#protocol-port))**
+- **MQTT over TLS/TCP, TLS mutual authentication (port 8883 or 443)<sup>[†](protocols.md#protocol-port)</sup>)**
   - **SDK:** AWS IoT Device SDK
   - **Identity type:** X.509 certificates
   - **Policy type:** AWS IoT Core policy

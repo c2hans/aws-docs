@@ -9,6 +9,7 @@ AWS Systems Manager Automation provides a low-code visual design experience that
 This section includes the following topics.
 + [Error handling with the visual design experience](visual-designer-error-handling.md)
 + [Configuring inputs and outputs for your actions](visual-designer-action-inputs-outputs.md)
++ [Using Azure and Google Cloud actions in the visual design experience](visual-designer-multicloud.md)
 + [Tutorial: Create a runbook using the visual design experience](visual-designer-tutorial.md)
 + [Overview of the visual design experience interface](visual-designer-interface-overview.md)
 + [Using the visual design experience](visual-designer-use.md)
@@ -24,5 +25,6 @@ When you create or edit a runbook, you can access the visual design experience f
 + [Interface overview](visual-designer-interface-overview.md)
 + [Using the visual design experience](visual-designer-use.md)
 + [Configure inputs and outputs](visual-designer-action-inputs-outputs.md)
++ [Using Azure and Google Cloud actions in the visual design experience](visual-designer-multicloud.md)
 + [Error handling with the visual design experience](visual-designer-error-handling.md)
 + [Tutorial: Create a runbook using the visual design experience](visual-designer-tutorial.md)

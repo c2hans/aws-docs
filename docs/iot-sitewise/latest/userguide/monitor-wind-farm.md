@@ -141,7 +141,7 @@ In this procedure, you create a project in your portal. *Projects* are resources
 
 1. In the left navigation pane in your portal, choose the **Assets** tab. On the **Assets** page, you can explore all assets available in the portal and add assets to projects.
 
-1. In the asset browser, choose **Demo Wind Farm Asset**. When you choose an asset, you can explore that asset's live and historical data. You can also press Shift to select multiple assets and compare their data side-by-side.
+1. In the asset browser, choose **Demo Wind Farm Asset**. When you choose an asset, you can explore that asset's live and historical data. You can also press **Shift** to select multiple assets and compare their data side-by-side.
 
 1. Choose **Add asset to project** in the upper left. Projects contain dashboards that your portal users can view to explore your data. Each project has access to a subset of your assets in AWS IoT SiteWise. When you add an asset to a project, all users with access to that project can also access data for that asset and its children.
 ![The "Assets" page with the demo wind farm asset and "Add asset to project" highlighted.](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/monitor-wind-farm/portal-add-asset-project-console.png)

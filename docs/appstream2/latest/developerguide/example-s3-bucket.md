@@ -53,7 +53,7 @@ In the following example, the bucket policy only allows WorkSpaces Applications 
 You can also use the `aws:SourceArn` condition to limit resource access for specific resources.
 
 **Note**
-If you don’t know the full ARN of a resource, or you want to specify multiple resources, use the `aws:SourceArn` global context condition key with wildcards (\*) for the unknown portions of the ARN.
+If you don’t know the full ARN of a resource, or you want to specify multiple resources, use the `aws:SourceArn` global context condition key with wildcards (**\***) for the unknown portions of the ARN.
 
 ------
 #### [ JSON ]
@@ -99,7 +99,7 @@ If you don’t know the full ARN of a resource, or you want to specify multiple 
 You can use the `aws:SourceArn` and `aws:SourceAccount` conditions to limit the resource access for specific resources and accounts.
 
 **Note**
-If you don’t know the full ARN of a resources, or if you want to specify multiple resources, use the `aws:SourceArn` global context condition key with wildcards (\*) for the unknown portions of the ARN.
+If you don’t know the full ARN of a resources, or if you want to specify multiple resources, use the `aws:SourceArn` global context condition key with wildcards (**\***) for the unknown portions of the ARN.
 
 ```json
 {

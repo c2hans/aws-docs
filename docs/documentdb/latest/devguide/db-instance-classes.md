@@ -192,7 +192,7 @@ The following table provides details of the Amazon DocumentDB instance classes, 
 
 <table>
 <thead>
-  <tr><th>Instance class</th><th>vCPU1</th><th>Memory (GiB)2</th><th>NVMe SSD tiered cache (GiB)3</th><th>Max. temp. storage (GiB)4</th><th>Baseline / burst bandwidth (Gbps)5</th><th>Supporting Engines6</th></tr>
+  <tr><th>Instance class</th><th>vCPU<sup>1</sup></th><th>Memory (GiB)<sup>2</sup></th><th>NVMe SSD tiered cache (GiB)<sup>3</sup></th><th>Max. temp. storage (GiB)<sup>4</sup></th><th>Baseline / burst bandwidth (Gbps)<sup>5</sup></th><th>Supporting Engines<sup>6</sup></th></tr>
 </thead>
 <tbody>
   <tr><td colspan="7"><b>R8G – Current Generation Memory-Optimized Instance Class based on Graviton4</b>R8G is the newest instance family (Graviton4), available on engine versions 5.0 and 8.0 only.</td></tr>

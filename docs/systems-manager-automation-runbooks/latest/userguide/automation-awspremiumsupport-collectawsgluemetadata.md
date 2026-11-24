@@ -95,7 +95,7 @@ Amazon
 ## Required IAM permissions to run this runbook
 <a name="automation-awspremiumsupport-collectawsgluemetadata-iam-runbook"></a>
 
- To run this runbook, the AutomationAssumeRole or your IAM user requires the following actions. These permissions are required to create a new temporary Amazon VPC and the Amazon EC2 instance using CloudFormation.
+ To run this runbook, the AutomationAssumeRole requires the following actions. These permissions are required to create a new temporary Amazon VPC and the Amazon EC2 instance using CloudFormation.
 +  `cloudformation:CreateStack`
 +  `cloudformation:DeleteStack`
 +  `cloudformation:DescribeStackEvents`
@@ -158,6 +158,7 @@ Amazon
 +  `iam:PassRole`
 +  `iam:PutRolePolicy`
 +  `iam:RemoveRoleFromInstanceProfile`
++  `iam:TagRole`
 +  `s3:GetAccountPublicAccessBlock`
 +  `s3:GetBucketAcl`
 +  `s3:GetBucketPolicyStatus`
@@ -176,6 +177,10 @@ Amazon
 
 The following example policy shows the least-privilege permissions required for the `AutomationAssumeRole`. Replace `REGION`, `ACCOUNTID`, and `S3_BUCKET_NAME` with your own values:
 
+**Important**
+ Attach this policy only to the `AutomationAssumeRole`, a role that only the SSM service principal (`ssm.amazonaws.com`) can assume. Don't attach it to IAM users or to roles that people use. If you do, anyone who can use that user or role can create IAM roles through AWS CloudFormation stacks and grant themselves additional permissions.
+ Always specify this role in the `AutomationAssumeRole` parameter, and allow only the people who run this runbook to pass it.
+
 ```json
 {
     "Version": "2012-10-17",
@@ -190,10 +195,33 @@ The following example policy shows the least-privilege permissions required for 
                 "cloudformation:DescribeStacks",
                 "cloudformation:UpdateStack"
             ],
-            "Resource": "arn:aws:cloudformation:{{REGION}}:{{ACCOUNTID}}:stack/AWSPremiumSupport-CollectAWSGlueMetadata-*/*"
+            "Resource": "arn:aws:cloudformation:{{REGION}}:{{ACCOUNTID}}:stack/AWSSupport-EC2HelperInstance-*/*"
         },
         {
-            "Sid": "EC2NetworkingAccess",
+            "Sid": "EC2DescribeAccess",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeAddresses",
+                "ec2:DescribeImages",
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:DescribeInternetGateways",
+                "ec2:DescribeNatGateways",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcEndpoints",
+                "ec2:DescribeVpcs"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestedRegion": "{{REGION}}"
+                }
+            }
+        },
+        {
+            "Sid": "EC2WriteOnlyThroughCloudFormation",
             "Effect": "Allow",
             "Action": [
                 "ec2:AllocateAddress",
@@ -207,7 +235,6 @@ The following example policy shows the least-privilege permissions required for 
                 "ec2:CreateRouteTable",
                 "ec2:CreateSecurityGroup",
                 "ec2:CreateSubnet",
-                "ec2:CreateTags",
                 "ec2:CreateVpc",
                 "ec2:CreateVpcEndpoint",
                 "ec2:DeleteInternetGateway",
@@ -219,36 +246,85 @@ The following example policy shows the least-privilege permissions required for 
                 "ec2:DeleteTags",
                 "ec2:DeleteVpc",
                 "ec2:DeleteVpcEndpoints",
-                "ec2:DescribeAddresses",
-                "ec2:DescribeImages",
-                "ec2:DescribeInstances",
-                "ec2:DescribeInstanceStatus",
-                "ec2:DescribeInternetGateways",
-                "ec2:DescribeNatGateways",
-                "ec2:DescribeRouteTables",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeVpcEndpoints",
-                "ec2:DescribeVpcs",
                 "ec2:DetachInternetGateway",
                 "ec2:DisassociateRouteTable",
                 "ec2:ModifySubnetAttribute",
                 "ec2:ModifyVpcAttribute",
-                "ec2:RebootInstances",
                 "ec2:ReleaseAddress",
                 "ec2:RevokeSecurityGroupEgress",
-                "ec2:RunInstances",
-                "ec2:TerminateInstances"
+                "ec2:RunInstances"
             ],
             "Resource": "*",
             "Condition": {
                 "StringEquals": {
                     "aws:RequestedRegion": "{{REGION}}"
+                },
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
                 }
             }
         },
         {
-            "Sid": "IAMRoleAccess",
+            "Sid": "EC2TerminateHelperInstanceOnlyThroughCloudFormation",
+            "Effect": "Allow",
+            "Action": "ec2:TerminateInstances",
+            "Resource": "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:instance/*",
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/Name": "AWSPremiumSupport-CollectAWSGlueMetadata-*"
+                },
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "EC2RebootHelperInstance",
+            "Effect": "Allow",
+            "Action": "ec2:RebootInstances",
+            "Resource": "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:instance/*",
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/Name": "AWSPremiumSupport-CollectAWSGlueMetadata-*"
+                }
+            }
+        },
+        {
+            "Sid": "EC2CreateTagsOnNetworkResources",
+            "Effect": "Allow",
+            "Action": "ec2:CreateTags",
+            "Resource": [
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:elastic-ip/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:internet-gateway/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:natgateway/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:route-table/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:security-group/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:subnet/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:vpc/*",
+                "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:vpc-endpoint/*"
+            ],
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "EC2CreateTagsOnlyAtInstanceLaunch",
+            "Effect": "Allow",
+            "Action": "ec2:CreateTags",
+            "Resource": "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:instance/*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:CreateAction": "RunInstances"
+                },
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "IAMRoleWriteOnlyThroughCloudFormation",
             "Effect": "Allow",
             "Action": [
                 "iam:AddRoleToInstanceProfile",
@@ -259,11 +335,27 @@ The following example policy shows the least-privilege permissions required for 
                 "iam:DeleteRole",
                 "iam:DeleteRolePolicy",
                 "iam:DetachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:TagRole"
+            ],
+            "Resource": [
+                "arn:aws:iam::{{ACCOUNTID}}:role/AWSPremiumSupport-CollectAWSGlueMetadata-*",
+                "arn:aws:iam::{{ACCOUNTID}}:instance-profile/AWSPremiumSupport-CollectAWSGlueMetadata-*"
+            ],
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "IAMRoleRead",
+            "Effect": "Allow",
+            "Action": [
                 "iam:GetInstanceProfile",
                 "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile"
+                "iam:GetRolePolicy"
             ],
             "Resource": [
                 "arn:aws:iam::{{ACCOUNTID}}:role/AWSPremiumSupport-CollectAWSGlueMetadata-*",
@@ -271,21 +363,29 @@ The following example policy shows the least-privilege permissions required for 
             ]
         },
         {
-            "Sid": "PassRoleToEC2",
+            "Sid": "PassRoleToEC2OnlyThroughCloudFormation",
             "Effect": "Allow",
             "Action": "iam:PassRole",
             "Resource": "arn:aws:iam::{{ACCOUNTID}}:role/AWSPremiumSupport-CollectAWSGlueMetadata-*",
             "Condition": {
                 "StringEquals": {
                     "iam:PassedToService": "ec2.amazonaws.com"
+                },
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": "cloudformation.amazonaws.com"
                 }
             }
+        },
+        {
+            "Sid": "DenyAssumeHelperInstanceRole",
+            "Effect": "Deny",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::{{ACCOUNTID}}:role/AWSPremiumSupport-CollectAWSGlueMetadata-*"
         },
         {
             "Sid": "S3BucketAccess",
             "Effect": "Allow",
             "Action": [
-                "s3:GetAccountPublicAccessBlock",
                 "s3:GetBucketAcl",
                 "s3:GetBucketPolicyStatus",
                 "s3:GetBucketPublicAccessBlock",
@@ -294,21 +394,56 @@ The following example policy shows the least-privilege permissions required for 
             "Resource": "arn:aws:s3:::{{S3_BUCKET_NAME}}"
         },
         {
+            "Sid": "S3AccountPublicAccessBlock",
+            "Effect": "Allow",
+            "Action": "s3:GetAccountPublicAccessBlock",
+            "Resource": "*"
+        },
+        {
             "Sid": "SSMAutomationAccess",
             "Effect": "Allow",
             "Action": [
                 "ssm:DescribeAutomationExecutions",
                 "ssm:DescribeInstanceInformation",
-                "ssm:GetDocument",
-                "ssm:GetParameters",
                 "ssm:ListCommandInvocations",
-                "ssm:ListCommands",
-                "ssm:SendCommand"
+                "ssm:ListCommands"
             ],
             "Resource": "*",
             "Condition": {
                 "StringEquals": {
                     "aws:RequestedRegion": "{{REGION}}"
+                }
+            }
+        },
+        {
+            "Sid": "SSMGetRunbookDocument",
+            "Effect": "Allow",
+            "Action": "ssm:GetDocument",
+            "Resource": "arn:aws:ssm:{{REGION}}::document/AWSPremiumSupport-CollectAWSGlueMetadata"
+        },
+        {
+            "Sid": "SSMGetAmiParameters",
+            "Effect": "Allow",
+            "Action": "ssm:GetParameters",
+            "Resource": [
+                "arn:aws:ssm:{{REGION}}::parameter/aws/service/ami-amazon-linux-latest/*",
+                "arn:aws:ssm:{{REGION}}::parameter/aws/service/ami-windows-latest/*"
+            ]
+        },
+        {
+            "Sid": "SSMSendCommandDocument",
+            "Effect": "Allow",
+            "Action": "ssm:SendCommand",
+            "Resource": "arn:aws:ssm:{{REGION}}::document/AWS-RunShellScript"
+        },
+        {
+            "Sid": "SSMSendCommandOnlyHelperInstance",
+            "Effect": "Allow",
+            "Action": "ssm:SendCommand",
+            "Resource": "arn:aws:ec2:{{REGION}}:{{ACCOUNTID}}:instance/*",
+            "Condition": {
+                "StringLike": {
+                    "ssm:resourceTag/Name": "AWSPremiumSupport-CollectAWSGlueMetadata-*"
                 }
             }
         },

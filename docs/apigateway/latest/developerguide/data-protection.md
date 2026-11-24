@@ -15,3 +15,28 @@ For data protection purposes, we recommend that you protect AWS account credenti
 + If you require FIPS 140-3 validated cryptographic modules when accessing AWS through a command line interface or an API, use a FIPS endpoint. For more information about the available FIPS endpoints, see [Federal Information Processing Standard (FIPS) 140-3](https://aws.amazon.com/compliance/fips/).
 
 We strongly recommend that you never put confidential or sensitive information, such as your customers' email addresses, into tags or free-form text fields such as a **Name** field. This includes when you work with API Gateway or other AWS services using the console, API, AWS CLI, or AWS SDKs. Any data that you enter into tags or free-form text fields used for names may be used for billing or diagnostic logs. If you provide a URL to an external server, we strongly recommend that you do not include credentials information in the URL to validate your request to that server.
+
+## Data protection in API Portal
+<a name="data-protection-apiportal"></a>
+
+API Portal stores the following data on your behalf:
++ **API inventory**: for each discovered API, its HTTP method, path, host, port, the ARN and AWS account of the resource that serves it, when it was first and last seen, its visibility and AWS WAF status, and, when AI endpoint identification is enabled, the AI protocols seen in its traffic. Discovery derives this metadata from your resources' configuration and from service traffic logs. API Portal doesn't store request or response bodies.
++ **Security posture findings** for each managed API.
++ **Documentation portal content**: product and page text that you write, API reference pages generated from your API definitions, portal themes, and logos that you upload.
+
+### Encryption at rest
+<a name="data-protection-apiportal-at-rest"></a>
+
+API Portal encrypts all stored data at rest, including the API inventory, security posture findings, and documentation portal content, using encryption keys that API Portal manages in AWS KMS.
+
+### Encryption in transit
+<a name="data-protection-apiportal-in-transit"></a>
+
+All API Portal endpoints require TLS 1.2 or later. Documentation portals are served over HTTPS through CloudFront.
+
+### Key management
+<a name="data-protection-apiportal-keys"></a>
+
+API Portal creates and manages the encryption keys for your data. You can't supply a customer managed AWS KMS key for API Portal resources. API Portal doesn't use your content to improve the service.
+
+When you disable discovery for an account, API Portal stops updating that account's inventory. When an account leaves your organization, its APIs are marked orphaned and are no longer rediscovered. Deleting a managed API, product, or documentation portal deletes the associated data.

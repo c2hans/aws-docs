@@ -24,7 +24,7 @@ From time to time, AWS CloudHSM may deprecate functionality in order to remain c
 ## FIPS 140 Compliance: 2024 Mechanism Deprecation
 <a name="compliance-dep-notif-1"></a>
 
-The National Institute of Standards and Technology (NIST)[1](#dep-notif-1) advises that support for Triple DES (DESede, 3DES, DES3) encryption and RSA key wrap and unwrap with PKCS\#1 v1.5 padding is disallowed after December 31, 2023. Therefore, support for these end on January 1, 2024 in our Federal Information Processing Standard (FIPS) mode clusters. Support for these remain for clusters in non-FIPs mode.
+The National Institute of Standards and Technology (NIST)<sup>[1](#dep-notif-1)</sup> advises that support for Triple DES (DESede, 3DES, DES3) encryption and RSA key wrap and unwrap with PKCS\#1 v1.5 padding is disallowed after December 31, 2023. Therefore, support for these end on January 1, 2024 in our Federal Information Processing Standard (FIPS) mode clusters. Support for these remain for clusters in non-FIPs mode.
 
 This guidance applies to the following cryptographic operations:
 + Triple DES key generation

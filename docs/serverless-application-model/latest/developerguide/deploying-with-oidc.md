@@ -27,9 +27,9 @@ AWS SAM references this URL when it generates the `AWS::IAM::OIDCProvider` resou
    + GitHub repository name.
    + Branch that deployments will occur from.
 
-1. AWS SAM displays a summary of the entered OIDC configuration. Enter the number for a setting to edit it, or press Enter to continue.
+1. AWS SAM displays a summary of the entered OIDC configuration. Enter the number for a setting to edit it, or press **Enter** to continue.
 
-1. When prompted to confirm the creation of resources needed to support the entered OIDC connection, press Y to continue.
+1. When prompted to confirm the creation of resources needed to support the entered OIDC connection, press **Y** to continue.
 
 AWS SAM generates an `AWS::IAM::OIDCProvider` AWS CloudFormation resource with the provided configuration that assumes the pipeline execution role. To learn more about this CloudFormation resource type, see [AWS::IAM::OIDCProvider](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-oidcprovider.html) in the *AWS CloudFormation User Guide*.
 

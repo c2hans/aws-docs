@@ -44,5 +44,5 @@ Consider [*P*, *Q*) as the range query for an archive of *N* megabytes (MB) and 
 
 + If *P* is an odd number, there is only one possible tree-hash aligned range—that is [*P*, *P* \+ 1 MB).
 + If *P* is an even number and *k* is the maximum number, where *P* can be written as 2*k* \* *X*, then there are at most *k* tree-hash aligned ranges that start with *P*. *X* is an integer greater than 0. The tree-hash aligned ranges fall in the following categories:
-  + For each *i*, where (0 <= *i* <= *k*) and where *P* \+ 2*i* < *N*, then [*P*, *Q* \+ 2*i*) is a tree-hash aligned range.
+  + For each *i*, where (0 <= *i* <= *k*) and where *P* \+ 2<sup>*i*</sup> < *N*, then [*P*, *Q* \+ 2<sup>*i*</sup>) is a tree-hash aligned range.
   + *P* = 0 is the special case where *A* = 2[lgN]\*0

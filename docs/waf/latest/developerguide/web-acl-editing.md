@@ -19,7 +19,7 @@ To add or remove rules from a protection pack (web ACL) or change configuration 
 Before you deploy changes in your protection pack (web ACL) for production traffic, test and tune them in a staging or testing environment until you are comfortable with the potential impact to your traffic. Then test and tune your updated rules in count mode with your production traffic before enabling them. For guidance, see [Testing and tuning your AWS WAF protections](web-acl-testing.md).
 
 **Note**
-Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond the basic protection pack (web ACL) price. For more information, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md) and [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
+For information about WCUs, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md). For pricing details, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
 **To edit a protection pack (web ACL)**
 
@@ -41,7 +41,7 @@ Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond th
 Before you deploy changes in your web ACL for production traffic, test and tune them in a staging or testing environment until you are comfortable with the potential impact to your traffic. Then test and tune your updated rules in count mode with your production traffic before enabling them. For guidance, see [Testing and tuning your AWS WAF protections](web-acl-testing.md).
 
 **Note**
-Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond the basic protection pack (web ACL) price. For more information, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md) and [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
+For information about WCUs, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md). For pricing details, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
 **Temporary inconsistencies during updates**
 When you create or change a protection pack (web ACL) or other AWS WAF resources, the changes take a small amount of time to propagate to all areas where the resources are stored. The propagation time can be from a few seconds to a number of minutes.
@@ -63,7 +63,7 @@ To add or remove rules from a web ACL or change configuration settings, access t
 Before you deploy changes in your web ACL for production traffic, test and tune them in a staging or testing environment until you are comfortable with the potential impact to your traffic. Then test and tune your updated rules in count mode with your production traffic before enabling them. For guidance, see [Testing and tuning your AWS WAF protections](web-acl-testing.md).
 
 **Note**
-Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond the basic protection pack (web ACL) price. For more information, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md) and [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
+For information about WCUs, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md). For pricing details, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
 **To edit a web ACL**
 

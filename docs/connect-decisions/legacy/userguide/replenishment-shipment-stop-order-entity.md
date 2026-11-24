@@ -17,20 +17,20 @@ The table below lists the column names supported by the data entity:
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | shipment\_stop\_order\_id | string | Yes | Shipment stop order ID. |
-| shipment\_stop\_id1 | string | Yes | Shipment stop ID. |
-| shipment\_id1 | string | Yes | Shipment ID. |
-| company\_id1 | string | No | Company ID. |
-| site\_id1 | string | No | Site ID. |
-| inbound\_order\_id1 | string | No | Inbound order ID. |
-| inbound\_order\_line\_id1 | string | No | Inbound order line ID. |
-| inbound\_order\_line\_schedule\_id1 | string | No | Inbound order line schedule ID. |
+| shipment\_stop\_id<sup>1</sup> | string | Yes | Shipment stop ID. |
+| shipment\_id<sup>1</sup> | string | Yes | Shipment ID. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
+| site\_id<sup>1</sup> | string | No | Site ID. |
+| inbound\_order\_id<sup>1</sup> | string | No | Inbound order ID. |
+| inbound\_order\_line\_id<sup>1</sup> | string | No | Inbound order line ID. |
+| inbound\_order\_line\_schedule\_id<sup>1</sup> | string | No | Inbound order line schedule ID. |
 | action | string | No | Pickup or drop off shipment. |
 | quantity | double | No | Quantity associated with action and order. |
 | quantity\_uom | string | No | Quantity UOM of the shipment. |
 | source\_event\_id | string | No | ID of the event created in the source system.  |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

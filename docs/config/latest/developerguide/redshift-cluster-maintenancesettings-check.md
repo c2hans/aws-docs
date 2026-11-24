@@ -41,7 +41,7 @@ Scheduled maintenance window for clusters (for example, Mon:09:30-Mon:10:00).
 ...
 ```
 
-\*For more information on valid values for these inputs, see [AutomatedSnapshotRetentionPeriod](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod), [PreferredMaintenanceWindow](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-preferredmaintenancewindow), and [AllowVersionUpgrade](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade) in the AWS CloudFormation User Guide.
+<sup>\*</sup>For more information on valid values for these inputs, see [AutomatedSnapshotRetentionPeriod](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod), [PreferredMaintenanceWindow](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-preferredmaintenancewindow), and [AllowVersionUpgrade](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade) in the AWS CloudFormation User Guide.
 
  For more information on proactive evaluation, see [Evaluation Mode](./evaluate-config-rules.html).
 

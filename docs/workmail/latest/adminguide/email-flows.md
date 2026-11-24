@@ -90,7 +90,7 @@ Both sender and recipient patterns take one of the following forms:
   ```
 
 **Note**
-The \+ symbol is not valid inside of sender or recipient patterns.
+The **\+** symbol is not valid inside of sender or recipient patterns.
 
 Multiple patterns can be specified for one rule. For more information, see [Inbound email rule actions](#email-flows-rule-actions) and [Outbound email rule actions](#email-flows-rule-outbound).
 

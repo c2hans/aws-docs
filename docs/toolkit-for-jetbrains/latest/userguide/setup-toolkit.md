@@ -37,7 +37,7 @@ If you need to install a specific version of the AWS Toolkit for JetBrains, you 
 
 1. Navigate to the [AWS Toolkit for JetBrains versions page](https://plugins.jetbrains.com/plugin/11349-aws-toolkit/versions) and download the preferred plugin version.
 
-1. Open your JetBrains and press CtrlAltS to open the IDE settings. On macOS, press Cmd, instead.
+1. Open your JetBrains and press **Ctrl+Alt+S** to open the IDE settings. On macOS, press **Cmd+,** instead.
 
 1. Select **Plugins**, choose the **Settings** icon, and then choose **Install Plugin from Disk**.
 

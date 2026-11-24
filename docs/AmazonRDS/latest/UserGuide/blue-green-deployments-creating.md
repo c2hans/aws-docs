@@ -45,11 +45,21 @@ Before you create an RDS for PostgreSQL blue/green deployment that uses physical
 Before you create an RDS for PostgreSQL blue/green deployment that uses logical replication, make sure to do the following. For a list of versions that use logical replication versus physical replication, see [PostgreSQL replication methods for blue/green deployments](blue-green-deployments-replication-type.md).
 + Associate the instance with a custom DB parameter group with logical replication (`rds.logical_replication`) turned on. Logical replication is required for replication from the blue environment to the green environment. For instructions, see [Modifying parameters in a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Modifying.md).
 
-  Because blue/green deployments require at least one background worker per database, make sure to tune the following configuration settings according to your workload. For instructions to tune each setting, see [Configuration Settings](https://www.postgresql.org/docs/current/logical-replication-config.html) in the PostgreSQL documentation.
-  + `max_replication_slots`
-  + `max_wal_senders`
-  + `max_logical_replication_workers`
-  + `max_worker_processes`
+  A blue/green deployment replicates each database on the DB instance through its own logical replication slot, subscription, and apply worker. This includes the `postgres` database and the `rdsadmin` database. Set the following parameters in the DB parameter group according to the number of databases on the DB instance. When you create the blue/green deployment, Amazon RDS checks these values and fails the creation if they're too low. For instructions to tune each setting, see [Configuration Settings](https://www.postgresql.org/docs/current/logical-replication-config.html) in the PostgreSQL documentation.
+  + `max_replication_slots` – At least the number of databases on the DB instance plus one. The default value is 20.
+  + `max_wal_senders` – At least the number of databases on the DB instance plus one. The default value is 35.
+  + `max_logical_replication_workers` – At least the number of databases on the DB instance plus one. The default value is 4, so you must raise this parameter if the DB instance has more than three user databases.
+  + `max_worker_processes` – At least `max_logical_replication_workers` plus one. The default value is the greater of 8 and twice the number of vCPUs.
+
+  To count the databases on the DB instance, including the `rdsadmin` database, run the following query:
+
+  ```sql
+  SELECT count(*) FROM pg_database WHERE datistemplate = false;
+  ```
+
+  For example, if the query returns 7 (five user databases, `postgres`, and `rdsadmin`), set `max_replication_slots`, `max_wal_senders`, and `max_logical_replication_workers` to 8 or higher, and `max_worker_processes` to 9 or higher.
+**Important**
+If you specify a different DB parameter group for the green environment, set the same values in that parameter group too. Amazon RDS checks only the parameter group of the blue DB instance when it creates the blue/green deployment. If `max_logical_replication_workers` in the green environment is lower than the number of databases, some databases don't replicate to the green environment and the green DB instance logs `out of logical replication worker slots`, even though the blue/green deployment shows as available.
 
   After you enable logical replication and set all configuration options, make sure to reboot the DB instance so that your changes take effect. Blue/green deployments *require* that the DB instance be in sync with the DB parameter group, otherwise creation fails. For more information, see [Rebooting a DB instance](USER_RebootInstance.md).
 + Confirm that the DB instance isn't the source or target of external replication. For more information, see [General limitations for blue/green deployments](blue-green-deployments-considerations.md#blue-green-deployments-limitations-general).
@@ -97,7 +107,7 @@ Adjust storage and performance settings in the green environment to optimize res
 
 You can change the storage type of the green DB instance to gp2, gp3, io1, or io2. For gp3 storage, you can also adjust storage throughput to enhance data transfer performance for high-demand workloads, or to reduce costs for less intensive applications. For more information, see [Amazon RDS DB instance storage](CHAP_Storage.md).
 
-You can also choose to increase or decrease allocated storage in the green environment. However, a storage reduction only occurs if the target allocated storage is at least 20% more than the current storage usage. If you decrease the allocated storage, Amazon RDS initiates a storage configuration upgrade. For more information, see [Upgrade the storage configuration](#blue-green-deployments-storage). The minimum target storage is calculated as:
+You can also choose to increase or decrease allocated storage in the green environment. If you decrease the allocated storage, Amazon RDS initiates a storage configuration upgrade. For more information, see [Upgrade the storage configuration](#blue-green-deployments-storage). Amazon RDS calculates the minimum storage that you can set on the green DB instance as follows:
 
 ```
 Minimum Target Storage = Total Allocated Storage × (Current Utilization ÷ 100) × 1.2
@@ -108,7 +118,12 @@ Minimum Target Storage = Total Allocated Storage × (Current Utilization ÷ 100)
 1. Current Utilization: The percentage of allocated storage in use, from the `os.fileSys.usedPercent` metric in Enhanced Monitoring.
 
 **Note**
-Since storage utilization fluctuates over time, we recommend setting the target storage slightly above the calculated minimum to account for potential increases during the reduction process.
+After reduction, the green DB instance's allocated storage must leave at least 20% free space above the storage currently in use on the blue DB instance. Amazon RDS calculates this minimum from used storage, not allocated storage.
+
+Example: Suppose the blue DB instance has 100 GiB allocated and is 50% utilized (50 GiB used). The minimum target storage is 100 × (50 ÷ 100) × 1.2 = 60 GiB. You can reduce allocated storage from 100 GiB down to 60 GiB, but no lower.
+
+**Note**
+Because storage utilization fluctuates over time, we recommend setting the target storage slightly above the calculated minimum to account for potential increases during the reduction process.
 
 If the blue DB instance uses magnetic storage, you must change the green DB instance to a General Purpose or Provisioned IOPS storage type in order to increase or decrease the allocated storage.
 
@@ -147,7 +162,7 @@ Storage initialization is available only for instances in blue/green deployments
 
 During storage initialization, the instance remains fully available and usable for database operations, though storage might not reach full performance until initialization completes. While the storage initialization is underway, the overall instance status changes to **Storage-initialization**, and the progress indicator reflects the minimum initialization level across all volumes of the DB instance.
 
-Use the console, AWS CLI, or Amazon RDS API to monitor storage initialization. Blue/green deployments are one of several workflows where you can use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response to observe per-volume progress. For details on all covered workflows and field semantics, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+Use the console, AWS CLI, or Amazon RDS API to monitor storage initialization. Blue/green deployments are one of several workflows where you can use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response to observe per-volume progress. For details on all covered workflows and field semantics, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ------
 #### [ Console ]

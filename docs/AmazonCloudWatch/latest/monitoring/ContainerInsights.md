@@ -16,7 +16,7 @@ To install the add-on or the chart, and to see which features are on by default,
 
 Container Insights on Amazon EKS comes in two variants. For a comparison, see [Compare Container Insights approaches](container-insights-eks-compare.md).
 + [Enhanced Container Insights (Classic)](container-insights-eks-classic.md) – Sends CloudWatch metrics through embedded metric format. Application Signals (Classic) belongs to this variant.
-+ [OTel Container Insights (Recommended)](container-insights-eks-otel.md) – Sends OpenTelemetry metrics that you query with PromQL. The OTLP endpoint, ServiceMonitor and PodMonitor scraping, service identity, the standard telemetry attributes, and the telemetry filters are described under this variant.
++ [OTel Container Insights (Recommended)](container-insights-eks-otel.md) – Sends OpenTelemetry metrics that you query with PromQL. The OTLP endpoint, ServiceMonitor and PodMonitor scraping, service identity, accelerated compute, telemetry enrichment, and OpenTelemetry filters are described under this variant.
 
 CloudWatch automatically collects metrics for many resources, such as CPU, memory, disk, and network. Container Insights also provides diagnostic information, such as container restart failures, to help you isolate issues and resolve them quickly. You can also set CloudWatch alarms on metrics that Container Insights collects.
 

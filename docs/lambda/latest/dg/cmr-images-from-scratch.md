@@ -239,7 +239,7 @@ The OS-only base image includes the [runtime interface emulator](https://github.
    {"pythonVersion": "3.14.8"}
    ```
 
-1. To stop the container, press CtrlC in the terminal window where the container runs.
+1. To stop the container, press **Ctrl+C** in the terminal window where the container runs.
 
 If you use your own entrypoint, the RIE doesn't start automatically. To test locally, download the RIE and run your entrypoint under it. You can [build the emulator into your image](https://github.com/aws/aws-lambda-runtime-interface-emulator/?tab=readme-ov-file#build-rie-into-your-base-image) or [install the emulator on your local machine](https://github.com/aws/aws-lambda-runtime-interface-emulator/?tab=readme-ov-file#test-an-image-without-adding-rie-to-the-image).
 

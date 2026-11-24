@@ -15,3 +15,6 @@ Files on FSx for OpenZFS volumes are identified with a `StorageClass` of `FSX_OP
 + [Listing files using an S3 access point](list-object-ap.md)
 + [Tagging a file using an S3 access point](add-tag-set-ap.md)
 + [Deleting a file using an S3 access point](delete-object-ap.md)
++ [Copying a file from an Amazon S3 bucket using an S3 access point](copy-object-bucket-to-ap.md)
++ [Copying a file to an Amazon S3 bucket using an S3 access point](copy-object-ap-to-bucket.md)
++ [Copying a file between S3 access points](copy-object-ap-to-ap.md)

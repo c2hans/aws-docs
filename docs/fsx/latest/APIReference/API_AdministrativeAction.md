@@ -35,8 +35,9 @@ Describes the type of administrative action, as follows:
 +  `DOWNLOAD_DATA_FROM_BACKUP` - An FSx for ONTAP backup is being restored to a new volume on a second-generation or third-generation file system. Once the all the file metadata is loaded onto the volume, you can mount the volume with read-only access. during this process.
 +  `VOLUME_INITIALIZE_WITH_SNAPSHOT` - A volume is being created from a snapshot on a different FSx for OpenZFS file system. You can initiate this from the Amazon FSx console, API (`CreateVolume`), or CLI (`create-volume`) when using the using the `FULL_COPY` strategy.
 +  `VOLUME_UPDATE_WITH_SNAPSHOT` - A volume is being updated from a snapshot on a different FSx for OpenZFS file system. You can initiate this from the Amazon FSx console, API (`CopySnapshotAndUpdateVolume`), or CLI (`copy-snapshot-and-update-volume`).
++  `VOLUME_CLONE_SPLIT` - An FSx for ONTAP volume clone is being split from its parent volume. You can initiate this from the Amazon FSx console, Amazon FSx API (`UpdateVolume`) or CLI (`update-volume`) by setting `SplitAction` to `START` in the volume's `CloneConfiguration`.
 Type: String
-Valid Values: `FILE_SYSTEM_UPDATE | STORAGE_OPTIMIZATION | FILE_SYSTEM_ALIAS_ASSOCIATION | FILE_SYSTEM_ALIAS_DISASSOCIATION | VOLUME_UPDATE | SNAPSHOT_UPDATE | RELEASE_NFS_V3_LOCKS | VOLUME_RESTORE | THROUGHPUT_OPTIMIZATION | IOPS_OPTIMIZATION | STORAGE_TYPE_OPTIMIZATION | MISCONFIGURED_STATE_RECOVERY | VOLUME_UPDATE_WITH_SNAPSHOT | VOLUME_INITIALIZE_WITH_SNAPSHOT | DOWNLOAD_DATA_FROM_BACKUP`
+Valid Values: `FILE_SYSTEM_UPDATE | STORAGE_OPTIMIZATION | FILE_SYSTEM_ALIAS_ASSOCIATION | FILE_SYSTEM_ALIAS_DISASSOCIATION | VOLUME_UPDATE | SNAPSHOT_UPDATE | RELEASE_NFS_V3_LOCKS | VOLUME_RESTORE | THROUGHPUT_OPTIMIZATION | IOPS_OPTIMIZATION | STORAGE_TYPE_OPTIMIZATION | MISCONFIGURED_STATE_RECOVERY | VOLUME_UPDATE_WITH_SNAPSHOT | VOLUME_INITIALIZE_WITH_SNAPSHOT | DOWNLOAD_DATA_FROM_BACKUP | VOLUME_CLONE_SPLIT`
 Required: No
 
  ** FailureDetails **   <a name="FSx-Type-AdministrativeAction-FailureDetails"></a>
@@ -51,7 +52,7 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
  ** ProgressPercent **   <a name="FSx-Type-AdministrativeAction-ProgressPercent"></a>
-The percentage-complete status of a `STORAGE_OPTIMIZATION` or `DOWNLOAD_DATA_FROM_BACKUP` administrative action. Does not apply to any other administrative action type.
+The percentage-complete status of a `STORAGE_OPTIMIZATION`, `DOWNLOAD_DATA_FROM_BACKUP`, or `VOLUME_CLONE_SPLIT` administrative action. Does not apply to any other administrative action type.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 100.
 Required: No
@@ -88,7 +89,7 @@ Type: [FileSystem](API_FileSystem.md) object
 Required: No
 
  ** TargetSnapshotValues **   <a name="FSx-Type-AdministrativeAction-TargetSnapshotValues"></a>
-A snapshot of an Amazon FSx for OpenZFS volume.
+A snapshot of an Amazon FSx for OpenZFS or Amazon FSx for NetApp ONTAP volume.
 Type: [Snapshot](API_Snapshot.md) object
 Required: No
 

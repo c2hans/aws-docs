@@ -33,4 +33,7 @@ Slurm deprecates `ExclusiveUser` from version 26.05 in favor of `Exclusive`. AWS
 **Note**
 AWS PCS supports the `CR_Core`, `CR_Core_Memory`, `CR_Socket`, and `CR_Socket_Memory` values. AWS PCS supports the `CR_Socket` and `CR_Socket_Memory` values on Slurm version 25.11 and later.
 Slurm uses the queue value only when the cluster-level `SelectTypeParameters` value is `CR_Core`, `CR_Core_Memory`, `CR_Socket`, or `CR_Socket_Memory`. If the cluster-level value is `CR_CPU` (the default) or `CR_CPU_Memory`, Slurm ignores the queue value.
++ [Topology](https://slurm.schedmd.com/slurm.conf.html#OPT_Topology)
+**Note**
+Available from Slurm 26.05. Accepted values are `network-tree`, which enables network topology-aware scheduling for the queue, and `flat`, which is the default. You can't set `Topology` on a queue with UltraServer compute node groups. For more information, see [Network topology-aware scheduling in AWS PCS](network-topology.md).
 + [TRESBillingWeights](https://slurm.schedmd.com/slurm.conf.html#OPT_TRESBillingWeights)

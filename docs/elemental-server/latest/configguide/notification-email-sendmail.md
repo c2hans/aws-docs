@@ -65,7 +65,7 @@ To configure AWS Elemental Server to relay the notification emails through a mai
    smtp.your.provider
    ```
 
-1. Save and exit the file. For Nano, press Ctrl\+O to save and Ctrl\+X to exit.
+1. Save and exit the file. For Nano, press **Ctrl**\+**O** to save and **Ctrl**\+**X** to exit.
 
 ## Step D: Check the `hosts` file
 <a name="notification-email-sendmail-hosts"></a>
@@ -86,7 +86,7 @@ If your network isn't configured with DNS, add a static entry to the `hosts` fil
    10.24.34.2 ExampleMailHostname
    ```
 
-1. Save and exit the file. For nano, press Ctrl\+O to save and Ctrl\+X to exit.
+1. Save and exit the file. For nano, press **Ctrl**\+**O** to save and **Ctrl**\+**X** to exit.
 
 ## Step E: Apply the changes
 <a name="notification-email-sendmail-apply"></a>

@@ -60,9 +60,9 @@ The following table is a list of AWS Regions and Local Zones that support Amazon
 | Phoenix local zone | us-west-2-phx-1 |  |  | Yes |  |  |  |  |
 | Phoenix local zone 2 | us-west-2-phx-2 |  |  | Yes |  |  |  |  |
 
-\* Available to AWS accounts that have already opted in.
+<sup>\*</sup> Available to AWS accounts that have already opted in.
 
-† Valid fleet home region for DDoS protection (player gateway).
+<sup>†</sup> Valid fleet home region for DDoS protection (player gateway).
 
 **Note**
 Some AWS Regions and all Local Zones are not enabled by default for an AWS account. You must first opt in to these Regions or Local Zones before you can deploy game servers to those locations. For more information about Regions that aren't enabled by default and how to enable them, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html) in the *AWS General Reference*. See [Getting started with Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html) in the *AWS Local Zones User Guide*. (Fleets created before February 28, 2022 are not affected by this requirement.)

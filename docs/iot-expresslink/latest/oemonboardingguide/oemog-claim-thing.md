@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ## Register as an OEM with AWS
 <a name="oemog-claim-thing-register"></a>
 
-1. Send an email with the following information to [expresslink-onboarding@amazon.com](expresslink-onboarding@amazon.com):
+1. Send an email with the following information to [expresslink-onboarding@amazon.com](mailto:expresslink-onboarding@amazon.com):
    + Company name
    + AWS account ID
    + Technical/Developer Contact (name and email)

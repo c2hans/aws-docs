@@ -91,20 +91,20 @@ The following table lists the well-known XID codes, their meanings, and the defa
 | 95 | Uncontained memory error – A memory error occurred that may have affected other applications or system memory. | Reboot | 10m |
 | 109 | Context switch timeout – A GPU context switch did not complete in time, indicating the GPU is hung and requires a reset. | Reboot | 10m |
 | 110 | Security fault error – A security fault was detected on the GPU, which requires a GPU reset and, if persistent, hardware investigation. | Reboot | 10m |
-| 119 | GSP RPC Timeout – Communication with the GPU System Processor timed out, possibly due to firmware issues. | Reboot 1  | 10m |
-| 120 | GSP Error – An error occurred in the GPU System Processor. | Reboot 1  | 10m |
+| 119 | GSP RPC Timeout – Communication with the GPU System Processor timed out, possibly due to firmware issues. | Reboot <sup>1</sup>  | 10m |
+| 120 | GSP Error – An error occurred in the GPU System Processor. | Reboot <sup>1</sup>  | 10m |
 | 136 | Link training failed – The GPU failed to establish a healthy NVLink connection during link training. | Reboot | 10m |
 | 140 | ECC Unrecovered Error – An ECC error escaped containment and may have corrupted data. | Reboot | 10m |
-| 142 | NVENC3 Error – The NVENC3 video encoder hardware failed with no automated recovery available. Applies to GB200. | Replace 2  | 10m |
+| 142 | NVENC3 Error – The NVENC3 video encoder hardware failed with no automated recovery available. Applies to GB200. | Replace <sup>2</sup>  | 10m |
 | 143 | GPU initialization error – The GPU failed to initialize correctly. | Reboot | 10m |
-| 151 | Key rotation error – Confidential computing key rotation failed. Applies to H100, B100, and GB200. | Replace 2  | 10m |
+| 151 | Key rotation error – Confidential computing key rotation failed. Applies to H100, B100, and GB200. | Replace <sup>2</sup>  | 10m |
 | 155 | NVLink software-defined error – A software-defined error was reported on NVLink. | Reboot | 10m |
 | 156 | Resource retirement event – The GPU retired a hardware resource due to detected faults. | Reboot | 10m |
 | 158 | GPU fatal timeout – A fatal timeout occurred on the GPU. | Reboot | 10m |
 
- 1 On self-managed Karpenter `v1.15.0` and later, XID `119` and `120` are treated as fatal and the node is replaced rather than rebooted, after the same 10 minute wait.
+ <sup>1</sup> On self-managed Karpenter `v1.15.0` and later, XID `119` and `120` are treated as fatal and the node is replaced rather than rebooted, after the same 10 minute wait.
 
- 2 On self-managed Karpenter `v1.15.0` and later, XID `142` and `151` aren’t matched by a dedicated repair policy, so the node is replaced after 30 minutes rather than 10.
+ <sup>2</sup> On self-managed Karpenter `v1.15.0` and later, XID `142` and `151` aren’t matched by a dedicated repair policy, so the node is replaced after 30 minutes rather than 10.
 
 To view the current node conditions related to GPU health, run the following command.
 

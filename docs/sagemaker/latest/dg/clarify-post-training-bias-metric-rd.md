@@ -11,15 +11,15 @@ The recall difference (RD) metric is the difference in recall of the model betwe
 
 The formula for difference in the recall rates for facets *a* and *d*:
 
-        RD = TPa/(TPa \+ FNa) - TPd/(TPd \+ FNd) = TPRa - TPRd
+        RD = TP<sub>a</sub>/(TP<sub>a</sub> \+ FN<sub>a</sub>) - TP<sub>d</sub>/(TP<sub>d</sub> \+ FN<sub>d</sub>) = TPR<sub>a</sub> - TPR<sub>d</sub>
 
 Where:
-+ TPa are the true positives predicted for facet *a*.
-+ FNa are the false negatives predicted for facet *a*.
-+ TPd are the true positives predicted for facet *d*.
-+ FNd are the false negatives predicted for facet *d*.
-+ TPRa = TPa/(TPa \+ FNa) is the recall for facet *a*, or its true positive rate.
-+ TPRd TPd/(TPd \+ FNd) is the recall for facet *d*, or its true positive rate.
++ TP<sub>a</sub> are the true positives predicted for facet *a*.
++ FN<sub>a</sub> are the false negatives predicted for facet *a*.
++ TP<sub>d</sub> are the true positives predicted for facet *d*.
++ FN<sub>d</sub> are the false negatives predicted for facet *d*.
++ TPR<sub>a</sub> = TP<sub>a</sub>/(TP<sub>a</sub> \+ FN<sub>a</sub>) is the recall for facet *a*, or its true positive rate.
++ TPR<sub>d</sub> TP<sub>d</sub>/(TP<sub>d</sub> \+ FN<sub>d</sub>) is the recall for facet *d*, or its true positive rate.
 
 For example, consider the following confusion matrices for facets *a* and *d*.
 

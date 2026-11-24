@@ -2,11 +2,11 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/eks-observability-addon-telemetry-filters.html
 ---
 
-# Telemetry filters
+# OpenTelemetry filters
 
 The `otelFilters` settings are cluster-level include and exclude lists for the OpenTelemetry telemetry that the Amazon CloudWatch Observability add-on and Helm chart collect. They are the main way to control the cost of label enrichment. Each change to a filter restarts the agent pods that it affects, because the agent reads its configuration only at startup.
 
-The telemetry filters are available in version 8.0.0 and later of the add-on and the Helm chart.
+OpenTelemetry filters are available in version 8.0.0 and later of the add-on and the Helm chart.
 
 ## How filters match
 <a name="eks-observability-addon-telemetry-filters-rules"></a>
@@ -21,10 +21,10 @@ The telemetry filters are available in version 8.0.0 and later of the add-on and
 Each filter applies to the following telemetry.
 
 `otelFilters.namespaces`
-Applies to the metrics and logs of OTel Container Insights, and to the metrics, traces, and logs that the OTLP endpoint receives. It doesn't apply to ServiceMonitor and PodMonitor scraping.
+Applies to the metrics and logs of OTel Container Insights, to the metrics, traces, and logs that the OTLP endpoint receives, and to ServiceMonitor and PodMonitor scraping.
 
 `otelFilters.metricNames`
-Applies to the metrics of OTel Container Insights, and to the metrics that the OTLP endpoint receives, including span metrics. It doesn't apply to ServiceMonitor and PodMonitor scraping.
+Applies to the metrics of OTel Container Insights, to the metrics that the OTLP endpoint receives, including span metrics, and to ServiceMonitor and PodMonitor scraping. An include list that leaves out `up` also drops the `up` metric of scraped targets.
 
 `otelFilters.podLabels`, `otelFilters.nodeLabels`
 Apply to the metrics and logs of OTel Container Insights, to the metrics, traces, and logs that the OTLP endpoint receives, and to ServiceMonitor and PodMonitor scraping.
@@ -34,7 +34,7 @@ Apply to the metrics and logs of OTel Container Insights, to the metrics, traces
 
 `otelFilters.namespaces` drops the pod and container telemetry of the namespaces that it filters out. It doesn't apply to node-level metrics, to host logs, or to the metrics of control-plane components such as Karpenter and KEDA. Records without a Kubernetes namespace always pass.
 
-The filter never drops GPU, AWS Neuron, or EFA device metrics, because a device belongs to a pod only for a while. When the pod that uses a device is in a filtered namespace, the agent keeps the device metrics and removes their pod, namespace, and container attributes.
+The filter never drops GPU, AWS Trainium and Inferentia, or EFA device metrics, because a device belongs to a pod only for a while. When the pod that uses a device is in a filtered namespace, the agent keeps the device metrics and removes their pod, namespace, and container attributes.
 
 The following add-on configuration drops the telemetry of the `kube-system` namespace and of every namespace whose name starts with `test-`:
 

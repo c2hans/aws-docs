@@ -20,11 +20,9 @@ The following diagram shows the key components that you'll use in this tutorial:
 **Cost for this tutorial**
 When you create your AWS account, you can get started with Amazon EC2 for free using the [AWS Free Tier](https://aws.amazon.com/free/).
 
-If you created your AWS account before July 15, 2025, it's less than 12 months old, and you haven't already exceeded the Free Tier benefits for Amazon EC2, it won't cost you anything to complete this tutorial, because this tutorial helps you select options that are within the Free Tier benefits. Otherwise, you'll incur the standard Amazon EC2 usage fees from the time that you launch the instance (even if it remains idle) until you terminate it.
+If your AWS account is less than 6 months old and you haven't used up all your credits, it won't cost you anything to complete this tutorial, because this tutorial helps you select options that are within the Free Tier benefits.
 
-If you created your AWS account on or after July 15, 2025, it's less than 6 months old, and you haven't used up all your credits, it won't cost you anything to complete this tutorial, because this tutorial helps you select options that are within the Free Tier benefits.
-
-For information on how to determine whether you are eligible for the Free Tier, see [Track your Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
+For information on how to determine whether you are eligible for the Free Tier, see [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 
 **Topics**
 + [Step 1: Launch an instance](#ec2-launch-instance)
@@ -204,8 +202,7 @@ You'll stop incurring charges for that instance or usage that counts against you
 
 After you start your instance, you might want to explore the following next steps:
 + Explore the Amazon EC2 core concepts with the introductory tutorials. For more information, see [Tutorials for launching EC2 instances](ec2-instance-launch-tutorials.md).
-+ Learn how to track your Amazon EC2 Free Tier usage using the console. For more information, see [Track your Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
-+ Configure a CloudWatch alarm to notify you if your usage exceeds the Free Tier (for accounts created before July 15, 2025). For more information, see [Tracking your AWS Free Tier usage](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html) in the *AWS Billing User Guide*.
++ Learn how to track your AWS Free Tier usage. For more information, see [Tracking your AWS Free Tier usage](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html) in the *AWS Billing User Guide*.
 + Add an EBS volume. For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume.html) in the *Amazon EBS User Guide*.
 + Learn how to remotely manage your EC2 instance using the Run command. For more information, see [AWS Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 + Learn about instance purchasing options. For more information, see [Amazon EC2 billing and purchasing options](instance-purchasing-options.md).

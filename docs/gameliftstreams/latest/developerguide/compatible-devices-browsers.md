@@ -25,7 +25,7 @@ The following table lists supported desktop devices, browsers, and input options
 | macOS | macOS 15.3 or later | Firefox 128 ESR\+ | Keyboard, mouse, microphone |
 | Linux\* | Ubuntu LTS or later | Chrome 133\+, Firefox 128 ESR\+, Edge 133\+, CEF | Keyboard, mouse, game controller: Xbox (USB or Bluetooth, fully supported), PlayStation 5 DualSense (USB or Bluetooth, partial support through XInput; not supported in Firefox), PlayStation 4 DualShock 4 (USB or Bluetooth) |
 
-\* Supported with caveats. Gamepad is not detected in Firefox on Ubuntu. Use Chrome, Edge, or a Chromium-based application for game controller support on Linux.
+<sup>\*</sup> Supported with caveats. Gamepad is not detected in Firefox on Ubuntu. Use Chrome, Edge, or a Chromium-based application for game controller support on Linux.
 
 ## Mobile devices
 <a name="compatible-devices-browsers-mobile"></a>
@@ -41,7 +41,7 @@ The following table lists supported mobile devices, browsers, and input options.
 **Note**
 The virtual gamepad touch overlay is intended for casual interaction and short sessions. For extended gameplay, a Bluetooth game controller provides more responsive and comfortable input.
 
-\* Microphone is not supported on Pixel 9 devices. See [Known issues](#compatible-devices-browsers-known-issues) for details.
+<sup>\*</sup> Microphone is not supported on Pixel 9 devices. See [Known issues](#compatible-devices-browsers-known-issues) for details.
 
 ## TV devices
 <a name="compatible-devices-browsers-tv"></a>
@@ -54,7 +54,7 @@ The following table lists supported TV devices, browsers, and input options.
 | LG Smart TV (2024 models and later) | webOS 25 or later | LG webOS native app, LG TV browser, WebView | Game controller: Xbox (Bluetooth, fully supported), PlayStation 5 DualSense (Bluetooth, partial support through XInput). Limited keyboard and mouse. |
 | Amazon Fire TV Stick 4K Max (1st and 2nd Gen) | Fire TV OS 7.7 or later | Firefox 128 ESR\+ (recommended), WebView | Game controller: Xbox (Bluetooth, fully supported), PlayStation 5 DualSense (Bluetooth, partial support through XInput; WebView only, not supported in Firefox). Limited keyboard and mouse. |
 
-\* Supported with caveats. On 2025 models, the Samsung native app is recommended for the best experience. The browser and WebView might deliver a reduced frame rate on these models.
+<sup>\*</sup> Supported with caveats. On 2025 models, the Samsung native app is recommended for the best experience. The browser and WebView might deliver a reduced frame rate on these models.
 
 ## Known issues
 <a name="compatible-devices-browsers-known-issues"></a>

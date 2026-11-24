@@ -91,7 +91,7 @@ The following table details the shared responsibility model for different featur
 | Hardware lifecycle | AWS | AWS | AWS | AWS |
 | Power, network, and cooling | AWS | AWS | AWS | AWS |
 
-1 A custom engine version (CEV) is a binary volume snapshot of a database version and Amazon Machine Image (AMI). An RDS provided engine version (RPEV) is the default Amazon Machine Image (AMI) and Microsoft SQL Server installation.
+<sup>1</sup> A custom engine version (CEV) is a binary volume snapshot of a database version and Amazon Machine Image (AMI). An RDS provided engine version (RPEV) is the default Amazon Machine Image (AMI) and Microsoft SQL Server installation.
 
 You can create an RDS Custom DB instance using Microsoft SQL Server. In this case:
 + You can choose from two licensing models: License Included (LI) and Bring Your Own Media (BYOM).

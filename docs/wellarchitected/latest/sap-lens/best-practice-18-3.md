@@ -52,15 +52,15 @@ Any discussion of Database licensing policies in this document is for informatio
 
  You use bring your own licenses (BYOL) for the following operating systems:
 + Windows Server
-+ Red Hat Enterprise Linux1
++ Red Hat Enterprise Linux<sup>1</sup>
 + SUSE Linux Enterprise Server
-+ Red Hat Enterprise Linux for SAP2
-+ SUSE Linux Enterprise Server for SAP2
++ Red Hat Enterprise Linux for SAP<sup>2</sup>
++ SUSE Linux Enterprise Server for SAP<sup>2</sup>
 +  Oracle Enterprise Linux (Oracle Premium Support requirements are detailed in SAP Note: [2069760 - Oracle Linux 7.x SAP Installation and Upgrade](https://launchpad.support.sap.com/#/notes/2069760) ) [Requires SAP Portal Access]
 
-1 Consider SAP Note: [2871484 - SAP supported variants of Red Hat Enterprise Linux](https://launchpad.support.sap.com/#/notes/0002871484) [Requires SAP Portal Access] as SAP no longer supports standard Red Hat Enterprise Linux for any SAP workloads as of RHEL 8.
+<sup>1</sup> Consider SAP Note: [2871484 - SAP supported variants of Red Hat Enterprise Linux](https://launchpad.support.sap.com/#/notes/0002871484) [Requires SAP Portal Access] as SAP no longer supports standard Red Hat Enterprise Linux for any SAP workloads as of RHEL 8.
 
-2 These products have a longer term support which might reduce your operational costs for upgrades – see SUSE Documentation: [SUSE Enterprise Support Policy](https://www.suse.com/support/policy-products/) and Red Hat Documentation: [Red Hat Enterprise Support Policy](https://access.redhat.com/support/policy/updates/errata/#Long_Support) for more details.
+<sup>2</sup> These products have a longer term support which might reduce your operational costs for upgrades – see SUSE Documentation: [SUSE Enterprise Support Policy](https://www.suse.com/support/policy-products/) and Red Hat Documentation: [Red Hat Enterprise Support Policy](https://access.redhat.com/support/policy/updates/errata/#Long_Support) for more details.
 
  **Suggestion 18.3.3 – Consider the use of Amazon EC2 Dedicated Hosts to mitigate licensing restrictions**
 

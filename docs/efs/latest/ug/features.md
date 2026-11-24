@@ -118,7 +118,7 @@ The following table compares the storage classes. For more details about the per
 
 <table>
 <thead>
-  <tr><th>Storage class</th><th>Designed for</th><th>First byte read latency</th><th>Durability (designed for)1</th><th>Availability SLA</th><th>Availability Zones</th><th>Minimum billing charge per file2</th><th>Minimum storage duration</th></tr>
+  <tr><th>Storage class</th><th>Designed for</th><th>First byte read latency</th><th>Durability (designed for)<sup>1</sup></th><th>Availability SLA</th><th>Availability Zones</th><th>Minimum billing charge per file<sup>2</sup></th><th>Minimum storage duration</th></tr>
 </thead>
 <tbody>
   <tr><td>EFS Standard</td><td>Active data requiring fast sub-millisecond latency performance</td><td>Sub-millisecond</td><td rowspan="3">99.999999999%<br />(11 9's)</td><td rowspan="2">99.99% (Regional)<br />99.9% (One Zone)</td><td rowspan="2">=&gt;3 (Regional)<br />1 (One Zone)</td><td>Not applicable</td><td>Not applicable</td></tr>
@@ -127,9 +127,9 @@ The following table compares the storage classes. For more details about the per
 </tbody>
 </table>
 
-1Because One Zone file systems store data in a single AWS Availability Zone, data that is stored in these types of file systems might be lost in the event of a disaster or other fault that affects all copies of the data within the Availability Zone, or in the event of Availability Zone destruction.
+<sup>1</sup>Because One Zone file systems store data in a single AWS Availability Zone, data that is stored in these types of file systems might be lost in the event of a disaster or other fault that affects all copies of the data within the Availability Zone, or in the event of Availability Zone destruction.
 
-2Lifecycle policies updated on or after 12 PM PT, November 26, 2023 will tier files that are smaller than 128 KiB to the IA class. For more information about how Amazon EFS meters and bills for individual files and metadata, see [How Amazon EFS reports file system and object sizes](metered-sizes.md).
+<sup>2</sup>Lifecycle policies updated on or after 12 PM PT, November 26, 2023 will tier files that are smaller than 128 KiB to the IA class. For more information about how Amazon EFS meters and bills for individual files and metadata, see [How Amazon EFS reports file system and object sizes](metered-sizes.md).
 
 #### Storage class billing
 <a name="billing"></a>

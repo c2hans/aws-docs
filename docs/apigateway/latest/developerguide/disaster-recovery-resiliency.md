@@ -13,3 +13,5 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 To prevent your APIs from being overwhelmed by too many requests, API Gateway throttles requests to your APIs. Specifically, API Gateway sets a limit on a steady-state rate and a burst of request submissions against all APIs in your account. You can configure custom throttling for your APIs. To learn more, see [Throttle requests to your REST APIs for better throughput in API Gateway](api-gateway-request-throttling.md).
 
 You can use Route 53 health checks to control DNS failover from an API Gateway API in a primary region to an API Gateway API in a secondary region. For an example, see [Configure custom health checks for DNS failover for an API Gateway API](dns-failover.md).
+
+API Portal is a Regional service. Its API inventory is rebuilt continuously by discovery, so no backup of the inventory is needed. A published documentation portal is a snapshot that is served independently of later edits; you can republish or disable it at any time. API Portal doesn't replicate products or documentation portals across Regions.

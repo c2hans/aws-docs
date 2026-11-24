@@ -22,7 +22,7 @@ Here are some common reasons to use the asset manager:
 
 1. You can search for assets by name, or browse for them in a list. Choose one of the following methods:
 
-   To search by name, select the appropriate search bar, using the name as your guide. Enter your search term and press ENTER. Find assets a user or group has access to by using the **Search by User or Group name** bar. Find other assets by using the **Search by asset name** bar.
+   To search by name, select the appropriate search bar, using the name as your guide. Enter your search term and press **ENTER**. Find assets a user or group has access to by using the **Search by User or Group name** bar. Find other assets by using the **Search by asset name** bar.
 
    To browse for assets by type, select a button by its name to view a type of asset, for example: browse analyses by selecting the **Analyses** button, browse for Data sources by selecting the **Data sources** button, and so on.
 

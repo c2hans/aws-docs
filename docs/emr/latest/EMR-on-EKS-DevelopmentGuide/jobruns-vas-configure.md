@@ -18,26 +18,26 @@ Configure the feature toggle parameter as a label, and configure the remaining p
 
 You must include the following two parameters on the Spark job driver when you submit your job:
 
-| Key | Description | Accepted values | Default value | Type | Spark parameter1 |
+| Key | Description | Accepted values | Default value | Type | Spark parameter<sup>1</sup> |
 | --- | --- | --- | --- | --- | --- |
 | `dynamic.sizing` | Feature toggle | `true`, `false` | not set | label | `spark.kubernetes.driver.label.emr-containers.amazonaws.com/dynamic.sizing` |
 | `dynamic.sizing.signature` | Job signature | *string* | not set | annotation | `spark.kubernetes.driver.annotation.emr-containers.amazonaws.com/dynamic.sizing.signature` |
 
-1 Use this parameter as a `SparkSubmitParameter` or `ConfigurationOverride` in the `StartJobRun` API.
+<sup>1</sup> Use this parameter as a `SparkSubmitParameter` or `ConfigurationOverride` in the `StartJobRun` API.
 + **`dynamic.sizing`** – You can turn vertical autoscaling on and off with the `dynamic.sizing` label. To turn on vertical autoscaling, set `dynamic.sizing` to `true` on the Spark driver pod. If you omit this label or set it to any value other than `true`, vertical autoscaling is off.
 + **`dynamic.sizing.signature`** – Set the job signature with the `dynamic.sizing.signature` annotation on the driver pod. Vertical autoscaling aggregates your resource usage data across different runs of Amazon EMR Spark jobs to derive resource recommendations. You provide the unique identifier to tie the jobs together.
 
 **Note**
 If your job recurs at a fixed interval such as daily or weekly, then your job signature should remain the same for each new instance of the job. This ensures that vertical autoscaling can compute and aggregate recommendations across different runs of the job.
 
-1 Use this parameter as a `SparkSubmitParameter` or `ConfigurationOverride` in the `StartJobRun` API.
+<sup>1</sup> Use this parameter as a `SparkSubmitParameter` or `ConfigurationOverride` in the `StartJobRun` API.
 
 ## Optional parameters
 <a name="jobruns-vas-parameters-opt"></a>
 
 Vertical autoscaling also supports the following optional parameters. Set them as annotations on the driver pod.
 
-| Key | Description | Accepted values | Default value | Type | Spark parameter1 |
+| Key | Description | Accepted values | Default value | Type | Spark parameter<sup>1</sup> |
 | --- | --- | --- | --- | --- | --- |
 | `dynamic.sizing.mode` | Vertical autoscaling mode | `Off`, `Initial`, `Auto` | `Off` | annotation | `spark.kubernetes.driver.annotation.emr-containers.amazonaws.com/dynamic.sizing.mode` |
 | `dynamic.sizing.scale.memory` | Enables memory scaling | *`true`, `false`* | `true` | annotation | `spark.kubernetes.driver.annotation.emr-containers.amazonaws.com/dynamic.sizing.scale.memory` |

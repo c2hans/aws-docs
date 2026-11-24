@@ -16,6 +16,9 @@ AMS creates a new service request four days before the next Patch Maintenance Wi
 AMS creates a new service request, even if the Patch Maintenance Window is created less than four days before it's scheduled to run.
 The [Patch Maintenance window must be in an “enabled” state](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-disable.html) to receive Service Request notifications.
 
+**Note**
+AMS patch notifications support maintenance windows that target instances by tag, by instance ID, or by a resource group in AWS Resource Groups, including windows that combine these target types. For resource group targets, AMS includes the Amazon EC2 instances in the group at the time each notification is sent.
+
 One hour before patching begins, AMS notifies you through the patch service request. After patching completes, AMS updates the patch service request with a link to the Patch Manager console. Use the link to view patch compliance for the instances targeted by the Patch Maintenance Window.
 
 **Note**
@@ -65,6 +68,9 @@ The following table describes the Patch Maintenance Window advance notice event 
 | StartTime | The start time, in ISO format, of the patching maintenance window | 2021-02-03T22:14:05.814308 |
 | WindowArn | The unique identifier of the Patching Maintenance Window | arn:aws:ssm:us-east-1: 123456789012:maintenancewindow/mw-00000001235 |
 | Results | The list of instances that are targeted by the patch window | InstanceId – the instance ID of the targeted instance |
+
+**Note**
+The `Results` field lists the Amazon EC2 instances targeted by the maintenance window. For a resource group target, these are the Amazon EC2 members of the group when the notification was sent.
 
 The following is the Patch Maintenance Window end event schema:
 

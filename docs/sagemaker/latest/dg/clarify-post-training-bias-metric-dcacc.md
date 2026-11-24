@@ -11,11 +11,11 @@ This metric compares the observed labels to the labels predicted by the model an
 
 The formula for the difference in conditional acceptance:
 
-        DCAcc = ca - cd
+        DCAcc = c<sub>a</sub> - c<sub>d</sub>
 
 Where:
-+ ca = na(1)/ n'a(1) is the ratio of the observed number of positive outcomes of value 1 (acceptances) of facet *a* to the predicted number of positive outcome (acceptances) for facet *a*.
-+ cd = nd(1)/ n'd(1) is the ratio of the observed number of positive outcomes of value 1 (acceptances) of facet *d* to the predicted number of predicted positive outcomes (acceptances) for facet *d*.
++ c<sub>a</sub> = n<sub>a</sub><sup>(1)</sup>/ n'<sub>a</sub><sup>(1)</sup> is the ratio of the observed number of positive outcomes of value 1 (acceptances) of facet *a* to the predicted number of positive outcome (acceptances) for facet *a*.
++ c<sub>d</sub> = n<sub>d</sub><sup>(1)</sup>/ n'<sub>d</sub><sup>(1)</sup> is the ratio of the observed number of positive outcomes of value 1 (acceptances) of facet *d* to the predicted number of predicted positive outcomes (acceptances) for facet *d*.
 
 The DCAcc metric can capture both positive and negative biases that reveal preferential treatment based on qualifications. Consider the following instances of age-based bias on loan acceptances.
 

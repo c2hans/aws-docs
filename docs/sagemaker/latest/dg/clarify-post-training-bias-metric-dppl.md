@@ -13,11 +13,11 @@ A comparison of difference in proportions of labels (DPL), a measure of pre-trai
 
 The formula for the DPPL is:
 
-        DPPL = q'a - q'd
+        DPPL = q'<sub>a</sub> - q'<sub>d</sub>
 
 Where:
-+ q'a = n'a(1)/na is the predicted proportion of facet *a* who get a positive outcome of value 1. In our example, the proportion of a middle-aged facet predicted to get granted a loan. Here n'a(1) represents the number of members of facet *a* who get a positive predicted outcome of value 1 and na the is number of members of facet *a*.
-+ q'd = n'd(1)/nd is the predicted proportion of facet *d* who get a positive outcome of value 1. In our example, a facet of older and younger people predicted to get granted a loan. Here n'd(1) represents the number of members of facet *d* who get a positive predicted outcome and nd the is number of members of facet *d*.
++ q'<sub>a</sub> = n'<sub>a</sub><sup>(1)</sup>/n<sub>a</sub> is the predicted proportion of facet *a* who get a positive outcome of value 1. In our example, the proportion of a middle-aged facet predicted to get granted a loan. Here n'<sub>a</sub><sup>(1)</sup> represents the number of members of facet *a* who get a positive predicted outcome of value 1 and n<sub>a</sub> the is number of members of facet *a*.
++ q'<sub>d</sub> = n'<sub>d</sub><sup>(1)</sup>/n<sub>d</sub> is the predicted proportion of facet *d* who get a positive outcome of value 1. In our example, a facet of older and younger people predicted to get granted a loan. Here n'<sub>d</sub><sup>(1)</sup> represents the number of members of facet *d* who get a positive predicted outcome and n<sub>d</sub> the is number of members of facet *d*.
 
 If DPPL is close enough to 0, it means that post-training *demographic parity* has been achieved.
 

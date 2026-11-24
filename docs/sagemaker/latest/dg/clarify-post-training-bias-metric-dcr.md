@@ -11,11 +11,11 @@ This metric compares the observed labels to the labels predicted by the model an
 
 The formula for the difference in conditional acceptance:
 
-        DCR = rd - ra
+        DCR = r<sub>d</sub> - r<sub>a</sub>
 
 Where:
-+ rd = nd(0)/ n'd(0) is the ratio of the observed number of negative outcomes of value 0 (rejections) of facet *d* to the predicted number of negative outcome (rejections) for facet *d*.
-+ ra = na(0)/ n'a(0) is the ratio of the observed number of negative outcomes of value 0 (rejections) of facet *a* to the predicted number of negative outcome of value 0 (rejections) for facet *a*.
++ r<sub>d</sub> = n<sub>d</sub><sup>(0)</sup>/ n'<sub>d</sub><sup>(0)</sup> is the ratio of the observed number of negative outcomes of value 0 (rejections) of facet *d* to the predicted number of negative outcome (rejections) for facet *d*.
++ r<sub>a</sub> = n<sub>a</sub><sup>(0)</sup>/ n'<sub>a</sub><sup>(0)</sup> is the ratio of the observed number of negative outcomes of value 0 (rejections) of facet *a* to the predicted number of negative outcome of value 0 (rejections) for facet *a*.
 
 The DCR metric can capture both positive and negative biases that reveal preferential treatment based on qualifications. Consider the following instances of age-based bias on loan rejections.
 

@@ -25,7 +25,7 @@ These services integrate with more than 120 other AWS services (including Amazon
 
 This guide helps you select the AWS monitoring and observability services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](https://img.youtube.com/vi/7PQv9eYCJW8/0.jpg)](https://www.youtube.com/watch?v=7PQv9eYCJW8)
+[![AWS Videos](https://img.youtube.com/vi/7PQv9eYCJW8/0.jpg)](https://www.youtube.com/watch?v=7PQv9eYCJW8&t=104s)
 
 In this four-minute clip from his re:Invent 2023 presentation, senior AWS worldwide specialist Toshal Dudhwala outlines how to build an observability strategy.
 

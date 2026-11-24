@@ -45,6 +45,8 @@ If you have not provided your RUT (Registro Único Tributario) informing us of y
 
 **Notwithstanding anything to the contrary in Section 7(g):**
 
+**Sellers incorporated in India**
+
 If you are incorporated in India and transact with Subscribers located in India, the following applies:
 
 Amazon Web Services India Private Limited ("AWS India") is your AWS Processing Party and will calculate, collect, and remit Taxes.
@@ -53,15 +55,43 @@ You must provide documentation required by AWS to remit Transaction Proceeds, an
 
 You will provide your India Goods and Service Tax ("India GST") registration number and other tax details (collectively, "Tax Information") to AWS. AWS will (1) calculate India GST as of the invoice date, (2) issue the invoice in your name using your Tax Information, and (3) collect and disburse India GST to you. In all cases, it is your obligation to report and remit any India GST to the Indian tax authorities within prescribed timelines under applicable law.
 
+**Sellers incorporated outside India**
+
 If you are incorporated outside India and transact with Subscribers located in India, the following applies:
 
 Amazon Web Services Inc. is your AWS Processing Party and will calculate, collect, and remit Taxes.
 
-You will provide the following on an annual basis: (a) a No Permanent Establishment Declaration; (b) a Tax Residency Certificate; and (c) a Form 10F/Non-Resident Self-Declaration (together, the "India Tax Documents").
+You will provide the following on an annual basis: (a) a No Permanent Establishment Declaration; (b) a Tax Residency Certificate; and (c) a Form 41 (together, the "India Tax Documents").
 
 By submitting the India Tax Documents, you hereby consent to AWS storing your tax documents in a repository and agree to cooperate with AWS and your Subscribers located in India to ensure timely submission of the India Tax Documents and resolve any collection issues.
 
 Failure to timely comply with these obligations may result in delays, disputes, extended payment cycles or other payment irregularities ("Payment Irregularities"). AWS will not be liable for any such Payment Irregularities for Transactions with your Subscribers located in India arising from your failure to timely comply with these obligations.
+
+### Provide India tax documents
+<a name="tax-services-india-tax-documents"></a>
+
+If you're a seller based outside India and you sell to buyers in India, you must share the three India Tax Documents listed above on the **Tax and invoices** page in AWS Partner Central.
+
+**To upload your India tax documents**
+
+1. Sign in to AWS Partner Central at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+
+1. In the left navigation pane, under **Settings**, choose **Tax and invoices**.
+
+1. Choose the **Global tax management** tab, and then choose **India**.
+
+1. Upload each of the three documents, and select the correct expiry date for each document.
+
+For a guided walkthrough, see the [interactive demo](https://awsmarketplace.storylane.io/share/yt5tcvvvhyzn).
+
+When you upload a document, AWS Marketplace runs basic checks to make sure that it isn't blank, doesn't contain only images, and doesn't contain profanity.
+
+You can upload a document any number of times. Buyers see only the latest version of each document.
+
+Buyers in India can see your documents on the procurement widget before they accept your offer, and in the AWS Marketplace console after they accept it.
+
+**Important**
+You're responsible for keeping these documents in good standing. After a document expires, you have a grace period of up to 90 days to upload a new version. After the grace period ends, you might be unable to sell paid offers to buyers in India until you upload a current document.
 
 ## Japan: Tax Collection and Tax Invoicing
 <a name="tax-services-japan"></a>
@@ -84,23 +114,17 @@ As a non-Switzerland-based seller, you can add a supplemental tax registration f
 
 **To add a Supplemental Tax Registration (Swiss VAT ID)**
 
-1. Sign in to **AWS Partner Central**.
+1. Sign in to AWS Partner Central at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 
-1. Go to **Tax and invoices**.
+1. In the left navigation pane, under **Settings**, choose **Tax and invoices**.
 
-1. Choose the **Tax Information** tab.
+1. Choose the **Global tax management** tab, and then choose **Switzerland**.
 
-1. Scroll to the **Supplemental tax registrations - optional** section.
+1. On the **Switzerland tax details** page, choose **Add registration**.
 
-1. Choose **Add supplemental tax information**.
+1. Enter your Swiss TRN (for example, CHE-123.456.789MWST), business name, and business address, and then choose **Submit**.
 
-1. Complete the tax registration form with your **Tax registration number**, **Business name**, and **Address**.
-
-1. Choose **Request verification**. Wait for the verification process to complete. When verification finishes, the new supplemental tax registration appears in the list with a **Verified** status.
-**Note**
-Verification might take a few minutes, but it is typically near-immediate.
-
-After verification, the process is complete. When you sell to a buyer in Switzerland, AWS manages tax collection and includes it on the AWS Marketplace invoice.
+After the supplemental tax registration for Switzerland is verified, AWS can collect Swiss VAT on your sales to buyers in Switzerland where AWS EMEA is the invoicing entity, and includes it on the AWS Marketplace invoice. For more information, see [Supplemental tax registrations](supplemental-tax-registrations.md).
 
 ## Singapore: Tax Collection and Tax Invoicing
 <a name="tax-services-singapore"></a>
@@ -179,16 +203,16 @@ Buyers who are GST-registered may use the AWS-generated tax invoice to support i
 ### Access to Tax Invoices
 <a name="tax-services-singapore-access"></a>
 
-Eligible Sellers can access copies of AWS-generated tax invoices through the Tax and Compliance Portal in AWS Partner Central. Eligible Sellers are responsible for using these invoices to prepare and support their GST return filings. AWS will retain tax invoices and related documentation for a minimum period of 10 years from the date of issue. Eligible Sellers remain responsible for their own record-keeping obligations under Singapore GST law.
+Eligible Sellers can see AWS-generated tax invoices on the **Customer invoices** tab of the **Tax and invoices** page in AWS Partner Central. Eligible Sellers are responsible for using these invoices to prepare and support their GST return filings. AWS will retain tax invoices and related documentation for a minimum period of 10 years from the date of issue. Eligible Sellers remain responsible for their own record-keeping obligations under Singapore GST law.
 
 Buyers will receive their tax invoices electronically through the usual AWS billing and notification channels.
 
 ### Changes to GST Registration Status or Details
 <a name="tax-services-singapore-registration-changes"></a>
 
-Eligible Sellers are responsible for ensuring that their GST registration details reflected on AWS-generated tax invoices are accurate at all times. While the Eligible Seller remains GST-registered, changes to details such as the Eligible Seller's legal name, registered address, or other registration details can be updated through the Tax Registration page in AWS Partner Central.
+Eligible Sellers are responsible for ensuring that their GST registration details reflected on AWS-generated tax invoices are accurate at all times. While the Eligible Seller remains GST-registered, changes to details such as the Eligible Seller's legal name, registered address, or other registration details can be updated through the **Tax registration** section of the **Tax and invoices** page in AWS Partner Central.
 
-Where an Eligible Seller's GST registration ceases to exist (including where registration is cancelled, lapsed, or otherwise terminated), the Eligible Seller must update their GST registration status through the Tax Registration page in AWS Partner Central as soon as practicable. This update must be made no later than the effective date of the change. AWS will stop generating GST tax invoices on behalf of that Eligible Seller from the date the update is made in the Tax Registration page.
+Where an Eligible Seller's GST registration ceases to exist (including where registration is cancelled, lapsed, or otherwise terminated), the Eligible Seller must update their GST registration status through the **Tax registration** section of the **Tax and invoices** page in AWS Partner Central as soon as practicable. This update must be made no later than the effective date of the change. AWS will stop generating GST tax invoices on behalf of that Eligible Seller from the date the update is made in the **Tax registration** section of the **Tax and invoices** page.
 
 The Eligible Seller is responsible for any GST implications arising from a failure to provide timely notification. This includes any penalties that might be imposed by the IRAS, and any tax invoices generated or GST collected by AWS on behalf of the Eligible Seller after the date of deregistration.
 

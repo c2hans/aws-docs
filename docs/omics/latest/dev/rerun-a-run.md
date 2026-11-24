@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/rerun-a-run.html
 
 For runs you haven't deleted yet, use the console or API to rerun the run. For runs that youv'e deleted, use the HealthOmics **rerun** tool.
 
+**Note**
+You can't use the `runId` field of **StartRun** to rerun a run that you started with `parametersUri`. To repeat such a run, call **StartRun** with the workflow and a `parametersUri`. For more information, see [Limitations of parameters files](workflows-run-inputs.md#run-parameters-uri-limitations).
+
 **Topics**
 + [Rerun a run using the console](#rerun-a-run-console)
 + [Rerun a run using the API](#rerun-a-run-api)

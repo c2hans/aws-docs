@@ -16,9 +16,9 @@ This topic details the changes in the SDK for Java Amazon Elastic Compute Cloud 
 | Instantiation approach | Use static utility methods; no instantiation:<pre>String localHostName = <br />           EC2MetadataUtils.getLocalHostName();</pre> | Use a static factory method:<pre>Ec2MetadataClient client = Ec2MetadataClient.create();</pre><br />Or use a builder approach:<pre>Ec2MetadataClient client = Ec2MetadataClient.builder()<br />    .endpointMode(EndpointMode.IPV6)<br />    .build();</pre> |
 | Types of clients | Synchronous only utility methods: EC2MetadataUtils | Synchronous: `Ec2MetadataClient`<br />Asynchronous: `Ec2MetadataAsyncClient` |
 
-1 [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). 2 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom). <sup>2</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
-3Notice the declaration of the `apache-client` module for v2. V2 of the EC2 metadata utility requires an implementation of the `SdkHttpClient` interface for the synchronous metadata client, or the `SdkAsyncHttpClient` interface for the asynchronous metadata client. The [Configure HTTP clients in the AWS SDK for Java 2.x](http-configuration.md) section shows the list of HTTP clients that you can use.
+<sup>3</sup>Notice the declaration of the `apache-client` module for v2. V2 of the EC2 metadata utility requires an implementation of the `SdkHttpClient` interface for the synchronous metadata client, or the `SdkAsyncHttpClient` interface for the asynchronous metadata client. The [Configure HTTP clients in the AWS SDK for Java 2.x](http-configuration.md) section shows the list of HTTP clients that you can use.
 
 ### Requesting metadata
 <a name="migration-imds-fetching-changes"></a>

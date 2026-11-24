@@ -108,6 +108,7 @@ Your Multi-Region Access Point also supports buckets in the following opt-in AWS
 + `Asia Pacific (Jakarta)`
 + `Asia Pacific (Melbourne)`
 + `Asia Pacific (Hyderabad)`
++ `Asia Pacific (Thailand)`
 + `Canada West (Calgary)`
 + `Europe (Zurich)`
 + `Europe (Milan)`

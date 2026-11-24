@@ -30,7 +30,7 @@ If a model can fit well using a subset of the library's features, adding more mo
   For more information, see [Activation Checkpointing](model-parallel-extended-features-pytorch-activation-checkpointing.md).
 
 **Tensor parallelism**
-+ The degree of tensor parallelism should be a power of two (2, 4, 8, ..., 2n), where the maximum degree must be equal to the number of GPUs per node. For example, if you use a node with 8 GPUs, possible numbers for the degree of tensor parallelism are 2, 4, and 8. We don’t recommend arbitrary numbers (such as 3, 5, 6, and 7) for the degree of tensor parallelism. When you use multiple nodes, misconfiguring the degree of tensor parallelism might result in running tensor parallelism across the nodes; this adds significant overhead from communication of activations across the nodes and can become computationally expensive.
++ The degree of tensor parallelism should be a power of two (2, 4, 8, ..., 2<sup>n</sup>), where the maximum degree must be equal to the number of GPUs per node. For example, if you use a node with 8 GPUs, possible numbers for the degree of tensor parallelism are 2, 4, and 8. We don’t recommend arbitrary numbers (such as 3, 5, 6, and 7) for the degree of tensor parallelism. When you use multiple nodes, misconfiguring the degree of tensor parallelism might result in running tensor parallelism across the nodes; this adds significant overhead from communication of activations across the nodes and can become computationally expensive.
 
   For more information, see [Tensor Parallelism](model-parallel-extended-features-pytorch-tensor-parallelism.md).<a name="model-parallel-best-practices-configuration-pipeline-across-nodes"></a>
 

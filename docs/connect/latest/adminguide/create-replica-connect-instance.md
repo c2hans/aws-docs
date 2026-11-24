@@ -36,7 +36,6 @@ The `replicaAlias` attribute in the [ReplicateInstance](https://docs.aws.amazon.
     + Use Amazon Lex Global Resiliency to replicate bots across AWS Regions and retain the bot ID.
     + Change your flows to branch based on the AWS Region where the flow is running. At flow runtime, these parameters are replaced with the Region where the flow is run, as shown in the following example.
 ![The properties page of the check contact attributes block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-requirements.png)
-  + To allow AWS managed keys in the replica instance, using the AWS console, create a temporary Connect Customer instance in the Region where you are planning to create the replica instance. This will create the default AWS managed keys for Connect Customer.
 + [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) copies the Connect Customer configuration across AWS Regions as part of the initial replication process. After this first step completes, any changes made to either the original or [mirrored resources](#mirrored-resources) at a later time are continuously synchronized. This happens bidirectionally, from source to replica, and from the replica to the source.
 + All phone numbers on the source instance that aren't already associated to number groups are automatically added to the default traffic distribution group. This step enables the phone numbers to be available in both source and replica Regions, and enables phone number-flow associations to be mirrored across AWS Regions.
 + For instances in Asia Pacific (Tokyo), only phone numbers that are explicitly enabled for Connect Customer Global Resiliency (ACGR) will support complete replication behavior to Asia Pacific (Osaka). When routing through Asia Pacific (Osaka), inbound calls might experience delivery times of up to 20 seconds.
@@ -101,7 +100,7 @@ The service quotas for these resources are automatically matched across AWS Regi
 + Integrations
   + Supported application types are `STANDARD`, `SERVICE`, and `MCP_SERVER`.
 + Integration associations
-  + Supported integration types are `APPLICATION`, `WISDOM_ASSISTANT`, `WISDOM_KNOWLEDGE_BASE`, and `WISDOM_QUICK_RESPONSES`.
+  + Supported integration types are `APPLICATION` and `WISDOM_QUICK_RESPONSES`.
 
 **Important notes about specific resources**
 **Saved reports**: While saved reports are replicated, the schedules associated with saved reports are *not* replicated.

@@ -45,7 +45,7 @@ Required: No
  ** ThroughputCapacity **   <a name="FSx-Type-UpdateFileSystemWindowsConfiguration-ThroughputCapacity"></a>
 Sets the target value for a file system's throughput capacity, in MB/s, that you are updating the file system to. Valid values are 8, 16, 32, 64, 128, 256, 512, 1024, 2048. You cannot make a throughput capacity update request if there is an existing throughput capacity update request in progress. For more information, see [Managing Throughput Capacity](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-throughput-capacity.html).
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: No
 
  ** WeeklyMaintenanceStartTime **   <a name="FSx-Type-UpdateFileSystemWindowsConfiguration-WeeklyMaintenanceStartTime"></a>

@@ -11,13 +11,13 @@ The difference in acceptance rates (DAR) metric is the difference in the ratios 
 
 The formula for difference in acceptance rates between facets *a* and *d*:
 
-        DAR = TPa/(TPa \+ FPa) - TPd/(TPd \+ FPd)
+        DAR = TP<sub>a</sub>/(TP<sub>a</sub> \+ FP<sub>a</sub>) - TP<sub>d</sub>/(TP<sub>d</sub> \+ FP<sub>d</sub>)
 
 Where:
-+ TPa are the true positives predicted for facet *a*.
-+ FPa are the false positives predicted for facet *a*.
-+ TPd are the true positives predicted for facet *d*.
-+ FPd are the false positives predicted for facet *d*.
++ TP<sub>a</sub> are the true positives predicted for facet *a*.
++ FP<sub>a</sub> are the false positives predicted for facet *a*.
++ TP<sub>d</sub> are the true positives predicted for facet *d*.
++ FP<sub>d</sub> are the false positives predicted for facet *d*.
 
 For example, suppose the model accepts 70 middle-aged applicants (facet *a*) for a loan (predicted positive labels) of whom only 35 are actually accepted (observed positive labels). Also suppose the model accepts 100 applicants from other age demographics (facet *d*) for a loan (predicted positive labels) of whom only 40 are actually accepted (observed positive labels). Then DAR = 35/70 - 40/100 = 0.10, which indicates a potential bias against qualified people from the second age group (facet *d*).
 

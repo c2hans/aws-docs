@@ -24,7 +24,7 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 ```
 
 **Note**
- AWS automatically includes an authorization ID in access denied error responses for supported APIs, but authorization IDs are not guaranteed. [In some cases](#access-troubleshooter-no-authorization-id), the error response does not include an authorization ID. When details are recorded, they might not be available immediately, because AWS records them asynchronously. If a call to `GetRequestAuthorizationDetails` returns a not-found response, wait a short time and try again. AWS retains authorization details for at least 24 hours after the denial.
+ AWS automatically includes an authorization ID in access denied error responses for supported APIs, but authorization IDs are not guaranteed. [In some cases](#access-troubleshooter-no-authorization-id), the error response does not include an authorization ID. When details are recorded, they might not be available immediately, because AWS records them asynchronously. If a call to `GetRequestAuthorizationDetails` returns a not-found response, see [Resolve a not-found response](#access-troubleshooter-not-found). AWS retains authorization details for at least 24 hours after the denial.
 
 ## Concepts and definitions
 <a name="access-troubleshooter-concepts"></a>
@@ -33,8 +33,8 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 +  **Check.** One authorization requirement, such as the caller's identity-based permissions or an organization's service control policies. For more information about checks, check types, and relevant policy types, see [How checks work](#access-troubleshooter-policy-checks).
 +  **Evaluation.** For each action/resource pair in the request, the condition context keys that applied, the evaluated result, and the checks that produced that result. The result is `ALLOW`, `EXPLICIT_DENY` (a policy explicitly denied the action), or `IMPLICIT_DENY` (at least one required check had no matching allow statement).
 +  **Policies evaluated during authorization.** All the policies AWS considered for the request, including policies that did not match the action/resource pair. Each entry gives the policy type (for example, identity-based, resource-based, SCP, RCP, permissions boundary, or session policy) and the same Amazon Resource Name ([ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns)) (for managed policies) or URI used in the evaluations (for inline and other non-managed policies). Use the [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) or URI to match a policy back to the evaluation that referenced it. The "Attached to" field lists the entities that the evaluated policy is attached to: the principal [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) for identity-based policies, session policies, and permissions boundaries; the resource [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) for resource-based policies; and one or more [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns)s of the root, OU, or account for SCPs and RCPs.
-+  **Policy URI.** An identifier returned in the `uri` field of `GetRequestAuthorizationDetails`. For a managed policy, this is the policy [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns). For an inline policy, AWS generates the identifier.
-+  **Request context.** The values of the condition context keys evaluated for the request. This includes global condition context keys and service-specific condition context keys.
++  **Policy URI.** An identifier returned in the `uri` field of `GetRequestAuthorizationDetails`. For a managed policy, this is the policy [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns). For an inline policy, AWS generates the identifier. A generated identifier doesn't indicate what kind of policy it refers to. Use the policy type and "Attached to" fields of the same entry to identify it.
++  **Request context.** The values of the condition context keys evaluated for the request. This includes global condition context keys and service-specific condition context keys. Every value is returned as a string, whatever the type of the condition context key. For example, a Boolean value appears as `"false"`, and a multivalued key such as `aws:PrincipalOrgPaths` appears as a bracketed list inside a single string.
 
  Use these results together to identify which policy denied access and why. The evaluation reflects the policies as they were at the time of the denial. Policies might have changed since then.
 
@@ -52,7 +52,7 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 ## Troubleshoot using AWS API or AWS CLI
 <a name="access-troubleshooter-api-cli"></a>
 
- To troubleshoot a denial using the AWS API or AWS CLI:
+ To troubleshoot a denial using the AWS API or AWS CLI (version 2.40.4 or later):
 
 1. Locate the authorization ID in the access denied error response.
 
@@ -104,7 +104,7 @@ aws iam-toolbox get-request-authorization-policy \
 }
 ```
 
- If the operation returns `ResourceNotFoundException`, verify that the authorization ID is correct, that you used the AWS Region where the denial occurred, and that the policy URI is from the `policies` list for that authorization ID. Also check that you meet the account or organization requirements described in [Additional considerations](#access-troubleshooter-considerations). The recorded authorization details might also have expired.
+ If the operation returns `ResourceNotFoundException`, verify that the policy URI is from the `policies` list for that authorization ID. For the other causes, see [Resolve a not-found response](#access-troubleshooter-not-found).
 
 ## How checks work
 <a name="access-troubleshooter-policy-checks"></a>
@@ -139,6 +139,28 @@ aws iam-toolbox get-request-authorization-policy \
 | `PERMISSIONS_BOUNDARY` | `PERMISSIONS_BOUNDARY` | The role or user whose permissions boundary applies. |
 | `SESSION` | `SESSION_POLICY`<br />`RESOURCE_BASED_POLICY` | The session, scoped by its session policy. |
 
+## Resolve a not-found response
+<a name="access-troubleshooter-not-found"></a>
+
+ `GetRequestAuthorizationDetails` and `GetRequestAuthorizationPolicy` return the same `ResourceNotFoundException` in each of the following cases. For security reasons, the response doesn't indicate which case applies.
++ AWS hasn't finished recording the authorization details yet.
++ You called the API in a different AWS Region from the one where the denial occurred.
++ The authorization ID is incorrect.
++ The authorization details have expired.
++  You don't meet the account or organization requirements described in [Additional considerations](#access-troubleshooter-considerations).
+
+ Only the first case resolves itself over time. Check for the other cases first, then retry:
+
+1.  Confirm that the authorization ID matches the one in the error message exactly. An authorization ID contains only lowercase letters and digits.
+
+1.  Confirm that you call the API in the AWS Region of the request that was denied. This is the Region of the endpoint that returned the error, which can differ from your default Region.
+
+1.  Confirm that you call the API from an account that meets the requirements in [Additional considerations](#access-troubleshooter-considerations).
+
+1.  If the denial occurred recently, retry after a few seconds.
+
+1.  If the denial occurred more than 24 hours ago, the details might have expired. If you can safely repeat the denied request, repeat it to get a new authorization ID.
+
 ## When you don't receive an authorization ID
 <a name="access-troubleshooter-no-authorization-id"></a>
 
@@ -147,6 +169,7 @@ aws iam-toolbox get-request-authorization-policy \
 +  **The service isn't supported by Access Troubleshooter yet.** See [Supported services](#access-troubleshooter-supported-services).
 +  **The API isn't supported by Access Troubleshooter yet.** Some APIs within a supported service don't return an authorization ID.
 +  **The request type isn't supported by Access Troubleshooter yet.** This includes requests made by a service on your behalf and anonymous requests.
++  **The service returns its own error message.** In some cases, a supported service may decide to not include an authorization ID, or to return a service-specific error message.
 
  If you don't receive an authorization ID, see [Troubleshoot access denied error messages](troubleshoot_access-denied.md) for other ways to diagnose the denial.
 
@@ -156,6 +179,8 @@ aws iam-toolbox get-request-authorization-policy \
  **Required permissions.** To call `GetRequestAuthorizationDetails`, you must have permissions for the `iam:GetRequestAuthorizationDetails` action. To retrieve a policy document with `GetRequestAuthorizationPolicy`, you must have permissions for the `iam:GetRequestAuthorizationPolicy` action.
 
  **Who can retrieve policy documents.** When AWS records a denied request, it records the caller's AWS account and organization, if any. If an organization was recorded, you must call `GetRequestAuthorizationPolicy` from an account in that organization. Otherwise, you must call it from the recorded account.
+
+ **Access to recorded SCPs and RCPs.** `GetRequestAuthorizationPolicy` returns every policy type evaluated for the request, including SCPs and RCPs. A principal in a member account who has permissions for `iam:GetRequestAuthorizationPolicy` can retrieve the recorded SCPs and RCPs, even without permissions to call `organizations:DescribePolicy`. The recorded documents include the full policy content, such as role names and other values in conditions. You can't allow retrieval of some policy types and deny others. To limit who can read recorded SCPs and RCPs, limit who has permissions for `iam:GetRequestAuthorizationPolicy`, for example with an SCP that denies the action.
 
  **Cross-organization requests.** When a denied request involves more than one AWS organization, `GetRequestAuthorizationDetails` returns only the details that belong to your own organization. This applies in both directions:
 + If you are in the organization of the denied caller, you see only the details that pertain to that organization.

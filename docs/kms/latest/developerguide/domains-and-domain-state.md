@@ -26,9 +26,9 @@ The full domain state is available only on the HSM. The domain state is synchron
 ## Domain keys
 <a name="domain-keys"></a>
 
-All the HSMs in a domain share a set of domain keys, *{DKr }*. These keys are shared through a domain state export routine. The exported domain state can be imported into any HSM that is a member of the domain.
+All the HSMs in a domain share a set of domain keys, *{DK<sub>r</sub> }*. These keys are shared through a domain state export routine. The exported domain state can be imported into any HSM that is a member of the domain.
 
-The set of domain keys, *{DKr }*, always includes one active domain key, and several deactivated domain keys. Domain keys are rotated daily to ensure that AWS complies with [Recommendation for Key Management - Part 1](https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final). During domain key rotation, all existing KMS keys encrypted under the outgoing domain key are re-encrypted under the new active domain key. The active domain key is used to encrypt any new EKTs. The expired domain keys can be used only to decrypt previously encrypted EKTs for a number of days equivalent to the number of recently rotated domain keys.
+The set of domain keys, *{DK<sub>r</sub> }*, always includes one active domain key, and several deactivated domain keys. Domain keys are rotated daily to ensure that AWS complies with [Recommendation for Key Management - Part 1](https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final). During domain key rotation, all existing KMS keys encrypted under the outgoing domain key are re-encrypted under the new active domain key. The active domain key is used to encrypt any new EKTs. The expired domain keys can be used only to decrypt previously encrypted EKTs for a number of days equivalent to the number of recently rotated domain keys.
 
 ## Exported domain tokens
 <a name="exported-domain-tokens"></a>

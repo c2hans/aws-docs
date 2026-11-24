@@ -19,6 +19,8 @@ This section also provides general guidance for testing your use of rule groups 
 + For the Bot Control AWS Managed Rules rule group, also see [Testing and deploying AWS WAF Bot Control](waf-bot-control-deploying.md).
 + For the account takeover prevention AWS Managed Rules rule group, also see [Testing and deploying ATP](waf-atp-deploying.md).
 + For the account creation fraud prevention AWS Managed Rules rule group, also see [Testing and deploying ACFP](waf-acfp-deploying.md).
++ For the AI Security AWS Managed Rules rule group, also see [Testing and deploying AWS WAF AI Security](waf-ai-security-deploying.md).
++ For the API Security AWS Managed Rules rule group, also see [Testing and deploying AWS WAF API Security](waf-api-security-deploying.md).
 
 **Temporary inconsistencies during updates**
 When you create or change a protection pack (web ACL) or other AWS WAF resources, the changes take a small amount of time to propagate to all areas where the resources are stored. The propagation time can be from a few seconds to a number of minutes.

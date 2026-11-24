@@ -206,6 +206,6 @@ For more information about automatic minor version upgrades, see [Automatic mino
 ## Amazon Aurora patch versions
 <a name="Aurora.VersionPolicy.PatchVersions"></a>
 
-Aurora versions use the `{{major}}.{{minor}}.{{patch}}` scheme. An Aurora patch version includes important fixes added to a minor version after its initial release (for example, Aurora MySQL 3.04.0, 3.04.1, ..., 3.04.3). While each new minor version provides new Aurora features, new patch versions within a specific minor version are primarily used to resolve important issues.
+Aurora versions use the `{{major}}.{{minor}}.{{patch}}` scheme. An Aurora patch version includes important fixes added to a minor version after its initial release (for example, Aurora MySQL 3.04.0, 3.04.1, ..., 3.04.3). While each new minor version provides new Aurora features, patch versions within a minor version are primarily used to deliver fixes for critical stability and security issues.
 
 For more information on patching, see [Maintaining an Amazon Aurora DB cluster](USER_UpgradeDBInstance.Maintenance.md).

@@ -11,7 +11,7 @@ When you’re setting up filter policies in Amazon SNS, there are a few importan
 
 When configuring filter policies in Amazon SNS, follow these important rules to make sure they work effectively while maintaining system performance and compatibility:
 + **String matching** – For string matching in the filter policy, the comparison is case-sensitive.
-+ **Numeric matching** – For numeric matching, the value can range from -109 to 109 (-1 billion to 1 billion), with five digits of accuracy after the decimal point.
++ **Numeric matching** – For numeric matching, the value can range from -10<sup>9</sup> to 10<sup>9</sup> (-1 billion to 1 billion), with five digits of accuracy after the decimal point.
 + **Filter policy complexity** – The total combination of values in a filter policy must not exceed **150**. To calculate the total combination, multiply the number of values in each array in the filter policy.
 + **Limit number of keys** – A filter policy can have a maximum of **five** keys.
 

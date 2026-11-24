@@ -28,9 +28,9 @@ The PKCS \#11 library tables for AWS CloudHSM contain a list of attributes that 
   <tr><td><code>CKA_ID</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_LOCAL</code></td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_TOKEN</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE</code></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>True</td><td></td></tr>
-  <tr><td><code>CKA_ENCRYPT</code></td><td>✖</td><td>✔<a href="#f10">3</a></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_DECRYPT</code></td><td>✔<a href="#f10">3</a></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>True</td><td></td></tr>
+  <tr><td><code>CKA_ENCRYPT</code></td><td>✖</td><td>✔<sup><a href="#f10">3</a></sup></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
+  <tr><td><code>CKA_DECRYPT</code></td><td>✔<sup><a href="#f10">3</a></sup></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DERIVE</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_MODIFIABLE</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_DESTROYABLE</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>True</td><td></td></tr>
@@ -38,26 +38,26 @@ The PKCS \#11 library tables for AWS CloudHSM contain a list of attributes that 
   <tr><td><code>CKA_SIGN_RECOVER</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_VERIFY</code></td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_VERIFY_RECOVER</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_WRAP</code></td><td>✖</td><td>✔<a href="#f10">3</a></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
+  <tr><td><code>CKA_WRAP</code></td><td>✖</td><td>✔<sup><a href="#f10">3</a></sup></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_WRAP_TEMPLATE</code></td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_TRUSTED</code></td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_WRAP_WITH_TRUSTED</code></td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_UNWRAP</code></td><td>✔<a href="#f10">3</a></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
+  <tr><td><code>CKA_UNWRAP</code></td><td>✔<sup><a href="#f10">3</a></sup></td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_UNWRAP_TEMPLATE</code></td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_SENSITIVE</code></td><td>✔<a href="#f8">1</a></td><td>✖</td><td>✔<a href="#f8">1</a></td><td>✖</td><td>✔</td><td>✖</td><td>True</td><td></td></tr>
+  <tr><td><code>CKA_SENSITIVE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✖</td><td>✔<sup><a href="#f8">1</a></sup></td><td>✖</td><td>✔</td><td>✖</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_ALWAYS_SENSITIVE</code></td><td>R</td><td>✖</td><td>R</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EXTRACTABLE</code></td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_NEVER_EXTRACTABLE</code></td><td>R</td><td>✖</td><td>R</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_MODULUS</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_MODULUS_BITS</code></td><td>✖</td><td>✖</td><td>✖</td><td> ✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_MODULUS_BITS</code></td><td>✖</td><td>✖</td><td>✖</td><td> ✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_PRIME_1</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_PRIME_2</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_COEFFICIENT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EXPONENT_1</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EXPONENT_2</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_PRIVATE_EXPONENT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_PUBLIC_EXPONENT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_EC_PARAMS</code></td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_PUBLIC_EXPONENT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_EC_PARAMS</code></td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EC_POINT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_VALUE</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_VALUE_LEN</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
@@ -81,7 +81,7 @@ The PKCS \#11 library tables for AWS CloudHSM contain a list of attributes that 
   <tr><td><code>CKA_ID</code></td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_LOCAL</code></td><td>R </td><td>R</td><td>R</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_TOKEN</code></td><td>✔</td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE</code></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>True</td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>True</td><td></td></tr>
   <tr><td><code>CKA_ENCRYPT</code></td><td>✔</td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DECRYPT</code></td><td>✔ </td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DERIVE</code></td><td>✔ </td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
@@ -113,7 +113,7 @@ The PKCS \#11 library tables for AWS CloudHSM contain a list of attributes that 
   <tr><td><code>CKA_EC_PARAMS</code></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EC_POINT</code></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_VALUE</code></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_VALUE_LEN</code></td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✔<a href="#f9">2</a></td><td> </td><td></td></tr>
+  <tr><td><code>CKA_VALUE_LEN</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td> </td><td></td></tr>
   <tr><td><code>CKA_CHECK_VALUE</code></td><td>R </td><td>R</td><td>R</td><td> </td><td></td></tr>
 </tbody>
 </table>
@@ -130,13 +130,13 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
 </thead>
 <tbody>
   <tr><td> </td><td><b>EC private</b></td><td><b>EC public</b></td><td><b>RSA private</b></td><td><b>RSA public</b></td><td><b>AES</b></td><td><b>DES3</b></td><td><b>Generic Secret</b></td><td> </td><td></td></tr>
-  <tr><td><code>CKA_CLASS</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td></td><td></td></tr>
-  <tr><td><code>CKA_KEY_TYPE</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td></td><td></td></tr>
+  <tr><td><code>CKA_CLASS</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td></td><td></td></tr>
+  <tr><td><code>CKA_KEY_TYPE</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td></td><td></td></tr>
   <tr><td><code>CKA_LABEL</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔ </td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_ID</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔ </td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_LOCAL</code></td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_TOKEN</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔ </td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE</code></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>True</td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>True</td><td></td></tr>
   <tr><td><code>CKA_ENCRYPT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✔</td><td>✔ </td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DECRYPT</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✔ </td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DERIVE</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔ </td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
@@ -156,18 +156,18 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
   <tr><td><code>CKA_ALWAYS_SENSITIVE</code></td><td>R</td><td>✖</td><td>R</td><td>✖</td><td>R</td><td>R</td><td>R</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EXTRACTABLE</code></td><td>✔</td><td>✖</td><td>✔</td><td>✖</td><td>✔ </td><td>✔</td><td>✔</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_NEVER_EXTRACTABLE</code></td><td>R</td><td>✖</td><td>R</td><td>✖</td><td>R</td><td>R</td><td>R</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_MODULUS</code></td><td>✖</td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_MODULUS</code></td><td>✖</td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_MODULUS_BITS</code></td><td>✖</td><td>✖</td><td>✖</td><td> ✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_PRIME_1</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_PRIME_2</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_COEFFICIENT</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EXPONENT_1</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EXPONENT_2</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE_EXPONENT</code></td><td>✖</td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_PUBLIC_EXPONENT</code></td><td>✖</td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_EC_PARAMS</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_EC_POINT</code></td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_VALUE</code></td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✖</td><td>✖</td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td> </td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE_EXPONENT</code></td><td>✖</td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_PUBLIC_EXPONENT</code></td><td>✖</td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_EC_PARAMS</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_EC_POINT</code></td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
+  <tr><td><code>CKA_VALUE</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✖</td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td> </td><td></td></tr>
   <tr><td><code>CKA_VALUE_LEN</code></td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_CHECK_VALUE</code></td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td> </td><td></td></tr>
 </tbody>
@@ -182,13 +182,13 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
 </thead>
 <tbody>
   <tr><td> </td><td><b>EC private</b></td><td><b>RSA private</b></td><td><b>AES</b></td><td><b>DES3</b></td><td><b>Generic Secret</b></td><td> </td><td></td></tr>
-  <tr><td><code>CKA_CLASS</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td></td><td></td></tr>
-  <tr><td><code>CKA_KEY_TYPE</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td></td><td></td></tr>
+  <tr><td><code>CKA_CLASS</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td></td><td></td></tr>
+  <tr><td><code>CKA_KEY_TYPE</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td></td><td></td></tr>
   <tr><td><code>CKA_LABEL</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_ID</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_LOCAL</code></td><td>R</td><td>R</td><td>R</td><td>R</td><td>R</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_TOKEN</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE</code></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>True</td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>True</td><td></td></tr>
   <tr><td><code>CKA_ENCRYPT</code></td><td>✖</td><td>✖</td><td>✔</td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DECRYPT</code></td><td>✖</td><td>✔</td><td>✔</td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DERIVE</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
@@ -230,13 +230,13 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
 </thead>
 <tbody>
   <tr><td> </td><td><b>AES</b></td><td><b>DES3</b></td><td><b>Generic Secret</b></td><td> </td><td></td></tr>
-  <tr><td><code>CKA_CLASS</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td></td><td></td></tr>
-  <tr><td><code>CKA_KEY_TYPE</code></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td>✔<a href="#f9">2</a></td><td></td><td></td></tr>
+  <tr><td><code>CKA_CLASS</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td></td><td></td></tr>
+  <tr><td><code>CKA_KEY_TYPE</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✔<sup><a href="#f9">2</a></sup></td><td></td><td></td></tr>
   <tr><td><code>CKA_LABEL</code></td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_ID</code></td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td></tr>
   <tr><td><code>CKA_LOCAL</code></td><td>R</td><td>R</td><td>R</td><td>True</td><td></td></tr>
   <tr><td><code>CKA_TOKEN</code></td><td>✔</td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE</code></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>True</td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>True</td><td></td></tr>
   <tr><td><code>CKA_ENCRYPT</code></td><td>✔</td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DECRYPT</code></td><td>✔</td><td>✔</td><td>✖</td><td>False</td><td></td></tr>
   <tr><td><code>CKA_DERIVE</code></td><td>✔</td><td>✔</td><td>✔</td><td>False</td><td></td></tr>
@@ -264,7 +264,7 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
   <tr><td><code>CKA_EC_PARAMS</code></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_EC_POINT</code></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
   <tr><td><code>CKA_VALUE</code></td><td>✖</td><td>✖</td><td>✖</td><td> </td><td></td></tr>
-  <tr><td><code>CKA_VALUE_LEN</code></td><td>✔<a href="#f9">2</a></td><td>✖</td><td>✔<a href="#f9">2</a></td><td> </td><td></td></tr>
+  <tr><td><code>CKA_VALUE_LEN</code></td><td>✔<sup><a href="#f9">2</a></sup></td><td>✖</td><td>✔<sup><a href="#f9">2</a></sup></td><td> </td><td></td></tr>
   <tr><td><code>CKA_CHECK_VALUE</code></td><td>R</td><td>R</td><td>R</td><td> </td><td></td></tr>
 </tbody>
 </table>
@@ -284,7 +284,7 @@ ML-DSA key import through `C_CreateObject` is not supported. To use ML-DSA keys,
   <tr><td><code>CKA_ID</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td></tr>
   <tr><td><code>CKA_LOCAL</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>R</td><td>R</td><td>✔</td><td>✔</td><td>✔</td><td></td></tr>
   <tr><td><code>CKA_TOKEN</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td></tr>
-  <tr><td><code>CKA_PRIVATE</code></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔</td><td>✔</td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td>✔<a href="#f8">1</a></td><td></td></tr>
+  <tr><td><code>CKA_PRIVATE</code></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔</td><td>✔</td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td>✔<sup><a href="#f8">1</a></sup></td><td></td></tr>
   <tr><td><code>CKA_ENCRYPT</code></td><td>✖</td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✔</td><td>✔</td><td>✖</td><td></td></tr>
   <tr><td><code>CKA_DECRYPT</code></td><td>✖</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>✖</td><td>✔</td><td>✔</td><td>✖</td><td></td></tr>
   <tr><td><code>CKA_DERIVE</code></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✖</td><td>✖</td><td>✔</td><td>✔</td><td>✔</td><td></td></tr>

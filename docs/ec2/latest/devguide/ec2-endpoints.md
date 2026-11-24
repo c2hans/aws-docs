@@ -5,9 +5,10 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/ec2-endpoints.html
 # Amazon EC2 service endpoints
 
 An endpoint is a URL that serves as an entry point for an AWS web service. Amazon EC2 supports the following endpoint types:
-+ [IPv4 endpoints](#ipv4)
-+ [Dual-stack endpoints](#ipv6) (support both IPv4 and IPv6)
-+ [ FIPS endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#FIPS-endpoints)
++ [IPv4 endpoints](#ipv4), which support IPv4 traffic only
++ [Dual-stack endpoints](#ipv6), which support both IPv4 and IPv6 traffic
++ [Zonal endpoints](#zonal-endpoints), which are dual-stack endpoints for a single Availability Zone and are in preview
++ [ FIPS endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#FIPS-endpoints), which use FIPS 140-validated cryptographic modules
 
 When you make a request, you can specify the endpoint to use. If you do not specify an endpoint, the IPv4 endpoint is used by default. To use a different endpoint type, you must specify it in your request. For examples of how to do this, see [Specifying endpoints](#examples). For a table of available endpoints, see [Service endpoints by Region](#service-endpoints).
 
@@ -28,10 +29,100 @@ For example, the IPv4 endpoint name for the `eu-west-1` Region is `ec2.eu-west-1
 
 Dual-stack endpoints support both IPv4 and IPv6 traffic. When you make a request to a dual-stack endpoint, the endpoint URL resolves to an IPv6 or an IPv4 address, depending on the protocol used by your network and client.
 
-Amazon EC2 supports only regional dual-stack endpoints, which means that you must specify the Region as part of the endpoint name. Dual-stack endpoint names use the following naming convention:
+Regional dual-stack endpoints include the AWS Region in the endpoint name. They use the following naming convention:
 + `ec2.{{region}}.api.aws`
 
 For example, the dual-stack endpoint name for the `eu-west-1` Region is `ec2.eu-west-1.api.aws`.
+
+Amazon EC2 also has dual-stack endpoints for individual Availability Zones, in preview. For more information, see [Zonal endpoints](#zonal-endpoints).
+
+## Zonal endpoints
+<a name="zonal-endpoints"></a>
+
+**Note**
+Zonal endpoints are in preview release for Amazon EC2 and are subject to change. For more information, see the Betas and Previews section of the [AWS Service Terms](https://aws.amazon.com/service-terms/) on the AWS website.
+
+A zonal endpoint is an Amazon EC2 endpoint for a single Availability Zone. Amazon EC2 handles requests to a zonal endpoint in that Availability Zone, so issues in other Availability Zones are less likely to affect them. If your workload already runs separately in each Availability Zone, zonal endpoints let you isolate its Amazon EC2 API calls the same way.
+
+Zonal endpoints are dual-stack and available for all Regions. Zonal endpoint names use the following naming conventions:
++ Dual-stack: `ec2-{{az-id}}.{{region}}.api.aws`
++ FIPS dual-stack, in the US and Canada Regions only: `ec2-fips-{{az-id}}.{{region}}.api.aws`
+
+For example, the zonal endpoint name for `use1-az1` is `ec2-use1-az1.us-east-1.api.aws`.
+
+The name uses the Availability Zone ID, such as `use1-az1`, not the Availability Zone name, such as `us-east-1a`. For more information about Availability Zone IDs, see [Availability Zone IDs for your AWS resources](https://docs.aws.amazon.com/ram/latest/userguide/working-with-az-ids.html).
+
+To get the Availability Zone IDs for a Region, run the following [describe-availability-zones](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-availability-zones.html) command in the AWS Command Line Interface (AWS CLI).
+
+```bash
+PROMPT> aws ec2 describe-availability-zones \
+    --region us-east-1 \
+    --query "AvailabilityZones[].[ZoneName,ZoneId]" \
+    --output table
+```
+
+### Resolving zonal endpoint request errors
+<a name="zonal-endpoints-requests"></a>
+
+Zonal endpoints accept requests for actions that work on resources in one Availability Zone, such as [RunInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html), [CreateVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVolume.html), [AttachVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVolume.html), and [StopInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html). The request must target resources in the endpoint's Availability Zone.
+
+If a zonal endpoint can't process a request, it returns one of the following errors instead of forwarding the request to another Availability Zone:
++ `InvalidParameterValue`: The request targets a resource in a different Availability Zone. For example, you send a `RunInstances` request for a subnet in `use1-az2` to `ec2-use1-az1.us-east-1.api.aws`. Send the request to the zonal endpoint for the resource's Availability Zone.
++ `UnsupportedOperation`: Zonal endpoints don't support the action. This includes actions that don't work on resources in a single Availability Zone, such as `DescribeRegions`. Send the request to the regional endpoint.
+
+Both are client errors, so retrying on the same zonal endpoint returns the same error. For more information, see [Error codes for the Amazon EC2 API](errors-overview.md).
+
+### Zonal endpoint access control and auditing
+<a name="zonal-endpoints-enforce"></a>
+
+Use the `ec2:EndpointZone` condition key in IAM policies to control which endpoints principals can use. On requests to a zonal endpoint, the key contains the endpoint's Availability Zone ID. For more information about the condition keys for Amazon EC2, see [Actions, resources, and condition keys for Amazon EC2](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html) in the *Service Authorization Reference*.
+
+The following policy denies `RunInstances` requests that don't use a zonal endpoint.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "RequireZonalEndpointForRunInstances",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": "*",
+            "Condition": {
+                "Null": {
+                    "ec2:EndpointZone": "true"
+                }
+            }
+        }
+    ]
+}
+```
+
+The following policy denies `RunInstances` and `CreateVolume` requests unless they use the `use1-az1` zonal endpoint.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "OnlyUse1Az1Endpoint",
+            "Effect": "Deny",
+            "Action": [
+                "ec2:RunInstances",
+                "ec2:CreateVolume"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringNotEquals": {
+                    "ec2:EndpointZone": "use1-az1"
+                }
+            }
+        }
+    ]
+}
+```
+
+To audit which endpoint a request used, check the `clientProvidedHostHeader` field in the `tlsDetails` element of the CloudTrail event. For more information about the fields in a CloudTrail event, see [CloudTrail record contents](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html) in the *AWS CloudTrail User Guide*.
 
 ## Service endpoints by Region
 <a name="service-endpoints"></a>
@@ -96,6 +187,16 @@ The following examples show how to specify an endpoint for the `us-east-2` Regio
   ```
   aws ec2 describe-regions --region us-east-2 --endpoint-url https://{{ec2.us-east-2.amazonaws.com}}
   ```
++ **Zonal (preview)**
+
+  The following example creates a volume in `use2-az1` by using the zonal endpoint for that Availability Zone. For more information about the requests that a zonal endpoint accepts, see [Resolving zonal endpoint request errors](#zonal-endpoints-requests).
+
+  ```
+  aws ec2 create-volume --region us-east-2 \
+      --availability-zone-id use2-az1 \
+      --size 8 \
+      --endpoint-url https://{{ec2-use2-az1.us-east-2.api.aws}}
+  ```
 
 ------
 #### [ AWS SDK for Java 2.x ]
@@ -116,6 +217,27 @@ The following examples show how to specify an endpoint for the `us-east-2` Regio
       .region(Region.US_EAST_2)
       .endpointOverride(URI.create("https://{{ec2.us-east-2.amazonaws.com}}"))
       .build();
+  ```
++ **Zonal (preview)**
+
+  The following example creates a client that sends requests to the zonal endpoint for `use2-az1`.
+
+  ```java
+  import java.net.URI;
+
+  import software.amazon.awssdk.regions.Region;
+  import software.amazon.awssdk.services.ec2.Ec2Client;
+
+  public class ZonalEndpointExample {
+      public static void main(String[] args) {
+          try (Ec2Client client = Ec2Client.builder()
+                  .region(Region.US_EAST_2)
+                  .endpointOverride(URI.create("https://{{ec2-use2-az1.us-east-2.api.aws}}"))
+                  .build()) {
+              // Send requests for resources in use2-az1.
+          }
+      }
+  }
   ```
 
 ------

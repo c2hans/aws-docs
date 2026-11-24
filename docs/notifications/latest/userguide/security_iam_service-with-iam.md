@@ -40,7 +40,7 @@ To specify multiple actions in a single statement, separate them with commas as 
       "notifications:action2"
 ```
 
-You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `Get`, include the following action:
+You can specify multiple actions using wildcards (**\***). For example, to specify all actions that begin with the word `Get`, include the following action:
 
 ```
 "Action": "notifications:Get*"

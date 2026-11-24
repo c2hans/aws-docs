@@ -15,6 +15,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Enable Amazon GuardDuty conditionally by using AWS CloudFormation templates](enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates.md)
 + [Enable transparent data encryption in Amazon RDS for SQL Server](enable-transparent-data-encryption-in-amazon-rds-for-sql-server.md)
 + [Identify public Amazon S3 buckets in AWS Organizations by using Security Hub CSPM](identify-public-s3-buckets-in-aws-organizations-using-security-hub.md)
++ [Manage AWS Organizations policies as code by using AWS CodePipeline and Amazon Bedrock](manage-organizations-policies-as-code.md)
 + [Monitor Amazon ElastiCache clusters for at-rest encryption](monitor-amazon-elasticache-clusters-for-at-rest-encryption.md)
 + [Monitor IAM root user activity](monitor-iam-root-user-activity.md)
 + [Prevent internet access at the account level by using a service control policy](prevent-internet-access-at-the-account-level-by-using-a-service-control-policy.md)

@@ -112,7 +112,7 @@ Required: No
  ** ThroughputCapacity **   <a name="FSx-Type-WindowsFileSystemConfiguration-ThroughputCapacity"></a>
 The throughput of the Amazon FSx file system, measured in megabytes per second.
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: No
 
  ** WeeklyMaintenanceStartTime **   <a name="FSx-Type-WindowsFileSystemConfiguration-WeeklyMaintenanceStartTime"></a>

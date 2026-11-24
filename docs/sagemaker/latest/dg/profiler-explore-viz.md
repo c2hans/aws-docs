@@ -68,15 +68,15 @@ You can zoom in and out and pan left or right in the timeline interface using yo
 For more tips on the keyboard shortcuts to interact with the **Timeline** interface, choose **Keyboard shortcuts** in the left pane.
 
 The timeline tracks are organized in a tree structure, giving you information from the host level to the device level. For example, if you run `N` instances with eight GPUs in each, the timeline structure of each instance would be as follows.
-+ **algo-inode** – This is what SageMaker AI tags to assign jobs to provisioned instances. The digit inode is randomly assigned. For example, if you use 4 instances, this section expands from **algo-1** to **algo-4**.
++ **algo-i<sub>node</sub>** – This is what SageMaker AI tags to assign jobs to provisioned instances. The digit i<sub>node</sub> is randomly assigned. For example, if you use 4 instances, this section expands from **algo-1** to **algo-4**.
   + **CPU** – In this section, you can check the average CPU utilization rate and performance counters.
   + **GPUs** – In this section, you can check the average GPU utilization rate, individual GPU utilization rate, and kernels.
     + **SUM Utilization** – The average GPU utilization rates per instance.
     + **HOST-0 PID-123** – A unique name assigned to each process track. The acronym PID is the process ID, and the number appended to it is the process ID number that's recorded during data capture from the process. This section shows the following information from the process.
-      + **GPU-inum\_gpu utilization** – The utilization rate of the inum\_gpu-th GPU over time.
-      + **GPU-inum\_gpu device** – The kernel runs on the inum\_gpu-th GPU device.
-        + **stream icuda\_stream** – CUDA streams showing kernel runs on the GPU device. To learn more about CUDA streams, see the slides in PDF at [CUDA C/C\+\+ Streams and Concurrency](https://developer.download.nvidia.com/CUDA/training/StreamsAndConcurrencyWebinar.pdf) provided by NVIDIA.
-      + **GPU-inum\_gpu host** – The kernel launches on the inum\_gpu-th GPU host.
+      + **GPU-i<sub>num\_gpu</sub> utilization** – The utilization rate of the i<sub>num\_gpu</sub>-th GPU over time.
+      + **GPU-i<sub>num\_gpu</sub> device** – The kernel runs on the i<sub>num\_gpu</sub>-th GPU device.
+        + **stream i<sub>cuda\_stream</sub>** – CUDA streams showing kernel runs on the GPU device. To learn more about CUDA streams, see the slides in PDF at [CUDA C/C\+\+ Streams and Concurrency](https://developer.download.nvidia.com/CUDA/training/StreamsAndConcurrencyWebinar.pdf) provided by NVIDIA.
+      + **GPU-i<sub>num\_gpu</sub> host** – The kernel launches on the i<sub>num\_gpu</sub>-th GPU host.
 
 The following several screenshots show the **Timeline** of the profile of a training job run on `ml.p4d.24xlarge` instances, which are equipped with 8 NVIDIA A100 Tensor Core GPUs in each.
 

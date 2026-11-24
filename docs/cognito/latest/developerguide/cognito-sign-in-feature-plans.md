@@ -103,6 +103,7 @@ See [create-user-pool](https://docs.aws.amazon.com/cli/latest/reference/cognito-
 | Step-up authentication | Request a target authentication level when a user signs in, and set custom ACR level URIs for your user pool | Essentials \+ Plus |
 | Token exchange | Exchange a user's token for a new token that's scoped and bound to the audience of a downstream service | Essentials \+ Plus |
 | Dynamic client registration | Let applications and AI agents register their own app clients at runtime through your user pool domain | Essentials \+ Plus |
+| Client ID metadata documents | Let MCP clients and AI agents sign users in with an HTTPS client ID and a hosted metadata document, without a separate app client for each one | Essentials \+ Plus |
 | Refresh token rotation | Issue a new refresh token each time an app client uses a refresh token | Essentials \+ Plus |
 | Resource binding | Request access tokens for a specific resource server with the resource parameter in managed login | Essentials \+ Plus |
 | Customer managed keys | Encrypt user pool data at rest with your own AWS KMS customer managed key | Essentials \+ Plus |

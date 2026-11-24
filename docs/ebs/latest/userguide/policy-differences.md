@@ -33,12 +33,12 @@ The following table highlights the differences between the default policy for EB
 | Support cross-account sharing | No | Yes |
 | Support extended deletion 2 | Yes | No |
 
-1 For default policies:
+<sup>1</sup> For default policies:
 + You can't copy tags to cross-Region copies.
 + Copies use the same retention period as the source snapshot.
 + Copies get the same encryption state as the source snapshot. If the destination Region is enabled for encryption by default, copies are always encrypted, even if the source snapshots are unencrypted. Copies are always encrypted with the default KMS key for the destination Region.
 
-2 For default and custom policies:
+<sup>2</sup> For default and custom policies:
 + If a target instance or volume is deleted, Amazon Data Lifecycle Manager continues deleting snapshots up to, but not including, the last one based on the retention period. For default policies, you can extend deletion to include the last snapshot.
 + If a policy is deleted or enters the error or disabled state, Amazon Data Lifecycle Manager stops deleting snapshots. For default policies, you can extend deletion to continue deleting snapshots, including the last one.
 
@@ -62,11 +62,11 @@ The following table highlights the differences between the default policy for EB
 | Support cross-Region copying | Yes, with default settings 1 | Yes, with custom settings |
 | Support extended deletion 2 | Yes | No |
 
-1For default policies:
+<sup>1</sup>For default policies:
 + You can't copy tags to cross-Region copies.
 + Copies use the same retention period as the source AMI.
 + Copies get the same encryption state as the source AMI. If the destination Region is enabled for encryption by default, copies are always encrypted, even if the source AMIs are unencrypted. Copies are always encrypted with the default KMS key for the destination Region.
 
-2 For default and custom policies:
+<sup>2</sup> For default and custom policies:
 + If a targeted instance is terminated, Amazon Data Lifecycle Manager continues deregistering AMIs up to, but not including, the last one based on the retention period. For default policies, you can extend deregistration to include the last AMI.
 + If a policy is deleted or enters the error or disabled state, Amazon Data Lifecycle Manager stops deregistering AMIs. For default policies, you can extend deletion to continue deregistering AMIs, including the last one.

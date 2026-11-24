@@ -10,6 +10,8 @@ With Slack connected, an alert's notification rules can deliver to Slack channel
 
 Connecting the integration is not enough: delivery also requires the alert's access profile to grant this integration and the channels the alert posts to. Omni checks the grant when you create the alert and again on every delivery, so revoking it stops notifications for alerts that were already working. If an alert fires but nothing reaches Slack, check the profile. See [Access profiles](omni-access-profiles.md).
 
+Alerts that use `DefaultAccessProfileForAsyncWorkflows` post to the same channels the agent answers in. To give alerts their own set of channels, use a separate access profile for them.
+
 To connect:
 
 1. In **Settings**, choose **Integrations**.
@@ -49,7 +51,7 @@ If you author grants through the API instead of the console, use your own integr
           "resourceArns": ["arn:aws:cloudwatch:region:account-id:integration/integration-id"]
         }
       ],
-      "contextConditions": { "channelNames": ["#oncall-alerts", "#incidents"] }
+      "contextConditions": { "channelNames": ["oncall-alerts", "incidents"] }
     },
     { "actions": ["cloudwatch:GetOmniThread", "cloudwatch:CreateOmniThread"] }
   ]
@@ -62,7 +64,21 @@ Pair it with a viewer grant:
 { "name": "slack-agent-viewer", "permission": "READ" }
 ```
 
-**Regional Slack apps.** The Slack app is Region-specific, and you do not choose it: **Enable** directs you to the Amazon CloudWatch Slack app for the Region your space is in. It appears in your workspace as a bot with a matching name. Within one Region, a Slack workspace can be connected to only one space. The same workspace can be connected to spaces in different Regions. Each Region installs its own bot, so mention the bot whose name matches the Region of the space you want to reach.
+**Choose where Omni answers.** Omni posts in a channel when a grant on `DefaultAccessProfileForAsyncWorkflows` allows that channel. By default, the profile allows every channel. To limit Omni to specific channels, list them in `slack-agent-integration`, and remove `cloudwatch:InvokeIntegration` from any other grant on the profile that doesn't list channels.
+
+**Regional Slack apps.** The Slack app is Region-specific, and you do not choose it: **Enable** directs you to the Amazon CloudWatch Slack app for the Region your space is in. It appears in your workspace as a bot with a matching name. Several spaces in the same Region can connect the same Slack workspace, even from different AWS accounts. They share that Region's bot. This is available in every Region listed in the bot table below. You can also connect the same workspace to spaces in different Regions. Each Region installs its own bot, so mention the bot whose name matches the Region of the space you want to reach.
+
+**Choose the space that answers in a channel.** When more than one connected space grants the agent a channel, the channel uses one of them. To set it, do one of the following:
++ Mention the bot with the space's name.
++ Reply to the bot's list of spaces with a number.
+
+In a channel that already uses a space, naming a different space answers only that message.
+
+**Change a channel's space.** You or any other member of the channel can change the channel's space. To change it, mention the bot with `switch` and choose a number from the list.
+
+The list and each reply show the space name, Region, and AWS account ID to everyone in the channel. To keep a channel on one space, limit the other spaces' grants to other channels.
+
+**Shared channels.** Anyone who can post in a channel the bot is in can mention it and get answers from your space. This includes guests and members of other organizations in Slack Connect channels. To keep answers within your organization, invite the bot only to channels that aren't shared with other organizations.
 
 **Invite the bot to each channel.** Connecting the workspace does not add the bot to any channel. Before an alert can deliver notifications to a channel, or a mention in that channel can reach the agent, invite the Region's bot to it from Slack:
 

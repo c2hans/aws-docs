@@ -24,7 +24,7 @@ As a best practice we recommend limiting the use of `enum` based partition proje
 ## Integer type
 <a name="partition-projection-integer-type"></a>
 
-Use the integer type for partition columns whose possible values are interpretable as integers within a defined range. Projected integer columns are currently limited to the range of a Java signed long (-263 to 263-1 inclusive).
+Use the integer type for partition columns whose possible values are interpretable as integers within a defined range. Projected integer columns are currently limited to the range of a Java signed long (-2<sup>63</sup> to 2<sup>63</sup>-1 inclusive).
 
 | Property name | Example values | Description |
 | --- | --- | --- |

@@ -27,7 +27,7 @@ We offer services and tools to help you with cost management and optimization, i
 
 This decision guide will help you determine which cost management services and tools are the best fit for your needs.
 
-[![AWS Videos](https://img.youtube.com/vi/0aYZUqpwJKE/0.jpg)](https://www.youtube.com/watch?v=0aYZUqpwJKE)
+[![AWS Videos](https://img.youtube.com/vi/0aYZUqpwJKE/0.jpg)](https://www.youtube.com/watch?v=0aYZUqpwJKE&t=192s)
 
 Seven-minute clip from re:Invent 2023 explaining how to improve AWS cost reporting.
 

@@ -20,11 +20,11 @@ The table below lists the column names supported by the data entity:
 |  Column name | Data type | Required | Description |
 | --- | --- | --- | --- |
 | product\_alternate\_id | string | Yes | Unique identifier for a record. |
-| product\_id 2 | string | Yes | Product ID. |
+| product\_id <sup>2</sup> | string | Yes | Product ID. |
 | alternative\_product\_id | string | Yes | Alternate product ID. |
 | site\_id | string | No | Site ID. |
 | alternate\_type | string | No | Alternate product type. For example, similar\_demand\_value. |
-| company\_id 2 | string | No | Company ID. |
+| company\_id <sup>2</sup> | string | No | Company ID. |
 | priority | int | No | Priority or rank of alternatives. |
 | alternate\_group\_id | string | No | Used to group interchangeable alternate products. Note, this field does not correspond to product\_group in product\_hierarchy. |
 | status | string | No | Status of the alternate product record. For example, Active, Inactive. |
@@ -36,9 +36,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for string is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for string is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

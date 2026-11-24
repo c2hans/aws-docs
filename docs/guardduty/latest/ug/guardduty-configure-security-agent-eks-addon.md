@@ -66,12 +66,12 @@ When GuardDuty creates an Amazon EKS add-on for you, the assigned `PriorityClass
 <tbody>
   <tr><td><code>aws-guardduty-agent.priorityclass</code></td><td><code>Never</code></td><td>No action</td><td>1000000</td></tr>
   <tr><td><code>aws-guardduty-agent.priorityclass-high</code></td><td><code>PreemptLowerPriority</code></td><td rowspan="3">Assigning this value will preempt a pod running with the priority value lower than the agent pod value.</td><td>100000000</td></tr>
-  <tr><td><code>system-cluster-critical</code><b>1</b></td><td><code>PreemptLowerPriority</code></td><td>2000000000</td></tr>
-  <tr><td><code>system-node-critical</code><b>1</b></td><td><code>PreemptLowerPriority</code></td><td>2000001000</td></tr>
+  <tr><td><code>system-cluster-critical</code><sup><b>1</b></sup></td><td><code>PreemptLowerPriority</code></td><td>2000000000</td></tr>
+  <tr><td><code>system-node-critical</code><sup><b>1</b></sup></td><td><code>PreemptLowerPriority</code></td><td>2000001000</td></tr>
 </tbody>
 </table>
 
-**1** Kubernetes provides these two `PriorityClass` options – `system-cluster-critical` and `system-node-critical`. For more information, see [PriorityClass](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#how-to-use-priority-and-preemption) in the *Kubernetes documentation*.
+<sup>**1**</sup> Kubernetes provides these two `PriorityClass` options – `system-cluster-critical` and `system-node-critical`. For more information, see [PriorityClass](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#how-to-use-priority-and-preemption) in the *Kubernetes documentation*.
 
 **`dnsPolicy` settings**
 Choose one of the following DNS policy options that Kubernetes supports. When no configuration is specified, `ClusterFirst` is used as the default value.

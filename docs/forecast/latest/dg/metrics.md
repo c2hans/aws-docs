@@ -76,8 +76,8 @@ The loss function is calculated as follows.
 
 Where:
 *τ* - a quantile in the set {0.01, 0.02, ..., 0.99}
-qi,t(τ) - the τ-quantile that the model predicts.
-yi,t - the observed value at point (i,t)
+q<sub>i,t</sub><sup>(τ)</sup> - the τ-quantile that the model predicts.
+y<sub>i,t</sub> - the observed value at point (i,t)
 
 The quantiles (τ) for wQL can range from 0.01 (P1) to 0.99 (P99). The wQL metric cannot be calculated for the mean forecast.
 
@@ -106,10 +106,10 @@ The Weighted Absolute Percentage Error (WAPE) measures the overall deviation of 
 ![WAPE formula showing sum of absolute differences between actual and predicted values divided by sum of actual values.](https://docs.aws.amazon.com/forecast/latest/dg/images/WAPE.png)
 
 Where:
-yi,t - the observed value at point (i,t)
-ŷi,t - the predicted value at point (i,t)
+y<sub>i,t</sub> - the observed value at point (i,t)
+ŷ<sub>i,t</sub> - the predicted value at point (i,t)
 
- Forecast uses the mean forecast as the predicted value, ŷi,t.
+ Forecast uses the mean forecast as the predicted value, ŷ<sub>i,t</sub>.
 
 WAPE is more robust to outliers than Root Mean Square Error (RMSE) because it uses the absolute error instead of the squared error.
 
@@ -125,11 +125,11 @@ Root Mean Square Error (RMSE) is the square root of the average of squared error
 ![RMSE formula showing square root of sum of squared differences between predicted and actual values.](https://docs.aws.amazon.com/forecast/latest/dg/images/metrics-rmse.png)
 
 Where:
-yi,t - the observed value at point (i,t)
-ŷi,t - the predicted value at point (i,t)
+y<sub>i,t</sub> - the observed value at point (i,t)
+ŷ<sub>i,t</sub> - the predicted value at point (i,t)
 nT - the number of data points in a testing set
 
-Forecast uses the mean forecast as the predicted value, ŷi,t. When calculating predictor metrics, nT is the number of data points in a backtest window.
+Forecast uses the mean forecast as the predicted value, ŷ<sub>i,t</sub>. When calculating predictor metrics, nT is the number of data points in a backtest window.
 
 RMSE uses the squared value of the residuals, which amplifies the impact of outliers. In use cases where only a few large mispredictions can be very costly, the RMSE is the more relevant metric.
 
@@ -143,11 +143,11 @@ Mean Absolute Percentage Error (MAPE) takes the absolute value of the percentage
 ![MAPE formula showing one over n times the sum of absolute value of A sub t minus F sub t divided by A sub t.](https://docs.aws.amazon.com/forecast/latest/dg/images/mape.png)
 
 Where:
-At - the observed value at point *t*
-Ft - the predicted value at point *t*
+A<sub>t</sub> - the observed value at point *t*
+F<sub>t</sub> - the predicted value at point *t*
 n - the number of data points in the time series
 
-Forecast uses the mean forecast as the predicted value, Ft.
+Forecast uses the mean forecast as the predicted value, F<sub>t</sub>.
 
 MAPE is useful for cases where values differ significantly between time points and outliers have a significant impact.
 
@@ -159,9 +159,9 @@ Mean Absolute Scaled Error (MASE) is calculated by dividing the average error by
 ![MASE formula showing mean of absolute errors divided by scaled mean absolute error.](https://docs.aws.amazon.com/forecast/latest/dg/images/mase.png)
 
 Where:
-Yt - the observed value at point *t*
-Yt-m - the observed value at point *t-m*
-ej - the error at point *j* (observed value - predicted value)
+Y<sub>t</sub> - the observed value at point *t*
+Y<sub>t-m</sub> - the observed value at point *t-m*
+e<sub>j</sub> - the error at point *j* (observed value - predicted value)
 m - the seasonality value
 
 Forecast uses the mean forecast as the predicted value.

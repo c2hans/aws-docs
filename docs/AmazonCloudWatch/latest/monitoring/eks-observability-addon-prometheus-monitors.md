@@ -12,8 +12,8 @@ Scraping is on by default, and is available in version 8.0.0 and later of the Am
 <a name="eks-observability-addon-prometheus-monitors-how"></a>
 + The CloudWatch agent on each node scrapes the targets on its own node. To have the cluster-level CloudWatch agent scrape the targets of a monitor instead, add the annotation `cloudwatch.aws.amazon.com/scraper: cluster-scraper` to the monitor's metadata.
 + By default, the agent scrapes every ServiceMonitor and PodMonitor in the cluster, every 30 seconds.
-+ The metrics carry the resource attribute `cloudwatch.solution` with the value `k8s-otel-prometheus-monitors`, the Kubernetes attributes of the scraped pod, and the service identity attributes. For more information, see [OpenTelemetry service identity](eks-observability-addon-service-identity.md).
-+ The agent keeps the `up` metric for every target, so `up == 0` shows a target that fails to scrape.
++ The metrics carry the resource attribute `cloudwatch.solution` with the value `k8s-otel-prometheus-monitors`, the Kubernetes and cloud attributes of the scraped pod, and its service identity attributes. They don't get the node labels. For more information, see [Telemetry enrichment](eks-standard-telemetry-attributes.md) and [OpenTelemetry service identity](eks-observability-addon-service-identity.md).
++ The agent keeps the `up` metric for every target, so `up == 0` shows a target that fails to scrape. An `otelFilters.metricNames` include list that leaves out `up` drops it.
 + The metrics always go to the regional CloudWatch endpoint.
 
 The add-on and the chart don't install the ServiceMonitor and PodMonitor custom resource definitions (CRDs). The CloudWatch agent operator creates both CRDs only if they don't exist, and leaves a copy that prometheus-operator, kube-prometheus-stack, or another tool installed unchanged.

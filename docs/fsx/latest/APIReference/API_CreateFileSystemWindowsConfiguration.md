@@ -12,7 +12,7 @@ The configuration object for the Microsoft Windows file system used in `CreateFi
  ** ThroughputCapacity **   <a name="FSx-Type-CreateFileSystemWindowsConfiguration-ThroughputCapacity"></a>
 Sets the throughput capacity of an Amazon FSx file system, measured in megabytes per second (MB/s), in 2 to the *n*th increments, between 2^3 (8) and 2^11 (2048).
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: Yes
 
  ** ActiveDirectoryId **   <a name="FSx-Type-CreateFileSystemWindowsConfiguration-ActiveDirectoryId"></a>

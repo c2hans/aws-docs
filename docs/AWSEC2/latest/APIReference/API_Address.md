@@ -77,7 +77,6 @@ Required: No
 
  ** serviceManaged **
 The service that manages the elastic IP address.
-The only option supported today is `alb`.
 Type: String
 Valid Values: `alb | nlb | rnat | rds`
 Required: No

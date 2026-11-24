@@ -168,7 +168,7 @@ It MUST NOT match the nested member:
 { "A": { "a" } }
 ```
 
-Valid values of target members depend on what is referencing them. A metric target MUST be a numeric value or an array of numeric values. Numeric values MUST be in the range -2360 to 2360. If a value is outside this range, CloudWatch does not publish that metric. Numeric array metric targets MUST NOT have more than 100 members. If a numeric array exceeds this limit, CloudWatch does not extract any metrics from the log event. A dimension target MUST have a string value.
+Valid values of target members depend on what is referencing them. A metric target MUST be a numeric value or an array of numeric values. Numeric values MUST be in the range -2<sup>360</sup> to 2<sup>360</sup>. If a value is outside this range, CloudWatch does not publish that metric. Numeric array metric targets MUST NOT have more than 100 members. If a numeric array exceeds this limit, CloudWatch does not extract any metrics from the log event. A dimension target MUST have a string value.
 
 ### Embedded metric format example and JSON schema
 <a name="CloudWatch_Embedded_Metric_Format_Specification_structure_example"></a>

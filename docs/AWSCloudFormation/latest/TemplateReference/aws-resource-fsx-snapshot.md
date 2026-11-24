@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::FSx::Snapshot
 
-A snapshot of an Amazon FSx for OpenZFS volume.
+A snapshot of an Amazon FSx for OpenZFS or Amazon FSx for NetApp ONTAP volume.
 
 ## Syntax
 <a name="aws-resource-fsx-snapshot-syntax"></a>

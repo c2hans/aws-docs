@@ -10,7 +10,7 @@ Every authentication token must be accompanied by a valid signature, using AWS s
 
 You can use an authentication token when you connect to Amazon RDS from another AWS service, such as AWS Lambda. By using a token, you can avoid placing a password in your code. Alternatively, you can use an AWS SDK to programmatically create and programmatically sign an authentication token.
 
-After you have a signed IAM authentication token, you can connect to an Amazon RDS DB instance. Following, you can find out how to do this using either a command line tool or an AWS SDK, such as the AWS SDK for Java or AWS SDK for Python (Boto3).
+After you have a signed IAM authentication token, you can connect to an Amazon RDS DB instance. Following, you can find out how to do this using either a command line tool or an AWS SDK, such as the AWS SDK for Java or AWS SDK for Python (Boto3). If you use JavaScript or Node.js, you can generate an authentication token with the `Signer` class in the AWS SDK for JavaScript v3. This class is in the `@aws-sdk/rds-signer` package. Then pass the token as the password to your database client, such as `mysql2` or `pg`, over an SSL/TLS connection. For more information, see [@aws-sdk/rds-signer](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_rds_signer.html) in the AWS SDK for JavaScript API Reference.
 
 For more information, see the following blog posts:
 + [Use IAM authentication to connect with SQL Workbench/J to Aurora MySQL or Amazon RDS for MySQL](https://aws.amazon.com/blogs/database/use-iam-authentication-to-connect-with-sql-workbenchj-to-amazon-aurora-mysql-or-amazon-rds-for-mysql/)

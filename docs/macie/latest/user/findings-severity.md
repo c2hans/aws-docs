@@ -105,10 +105,10 @@ The following table indicates the severity levels that Macie assigns to findings
 
 | Sensitive data type | 1 occurrence | 2–99 occurrences | 100 or more occurrences |
 | --- | --- | --- | --- |
-| Bank account number 1 | High | High | High |
+| Bank account number <sup>1</sup> | High | High | High |
 | Credit card expiration date | Low | Medium | High |
 | Credit card magnetic stripe data | High | High | High |
-| Credit card number 2 | High | High | High |
+| Credit card number <sup>2</sup> | High | High | High |
 | Credit card verification code | Medium | High | High |
 
 1. Severity levels are the same for any type of bank account number—a Basic Bank Account Number (BBAN), an International Bank Account Number (IBAN), or a Canadian or US bank account number.
@@ -153,10 +153,10 @@ The following table indicates the severity levels that Macie assigns to sensitiv
 | Public transportation card number | Medium | Medium | High |
 | Social Insurance Number (SIN) | High | High | High |
 | Social Security number (SSN) | High | High | High |
-| Taxpayer identification or reference number \* | High | High | High |
+| Taxpayer identification or reference number <sup>\*</sup> | High | High | High |
 | Vehicle identification number (VIN) | Low | Low | Medium |
 
-\* Exceptions are: CUIT numbers for organizations in Argentina (`ARGENTINA_ORGANIZATION_TAX_IDENTIFICATION_NUMBER`), NIT numbers for organizations in Colombia (`COLOMBIA_ORGANIZATION_NIT_NUMBER`), and RFC numbers for organizations in Mexico (`MEXICO_ORGANIZATION_RFC_NUMBER`). For those types, the severity levels are: **Medium** for 1–99 occurrences, and **High** for 100 or more occurrences.
+<sup>\*</sup> Exceptions are: CUIT numbers for organizations in Argentina (`ARGENTINA_ORGANIZATION_TAX_IDENTIFICATION_NUMBER`), NIT numbers for organizations in Colombia (`COLOMBIA_ORGANIZATION_NIT_NUMBER`), and RFC numbers for organizations in Mexico (`MEXICO_ORGANIZATION_RFC_NUMBER`). For those types, the severity levels are: **Medium** for 1–99 occurrences, and **High** for 100 or more occurrences.
 
 If a finding reports multiple types of PHI, PII, or both PHI and PII in an object, Macie determines the finding's severity by calculating the severity for each type, determining which type produces the highest severity, and assigning that highest severity to the finding.
 

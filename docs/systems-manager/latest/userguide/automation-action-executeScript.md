@@ -82,6 +82,8 @@ inputs:
    def {{functionName}}(events, context):
    ...
  Attachment: "{{scriptAttachment}}.zip"
+ CloudConnector: "{{cloudConnectorId}}"
+ Package: "{{packageName}}"
 ```
 
 ------
@@ -96,7 +98,9 @@ inputs:
         "InputPayload": {
             "{{scriptInput}}": "{{{{parameterValue}}}}"
         },
-        "Attachment": "{{scriptAttachment}}.zip"
+        "Attachment": "{{scriptAttachment}}.zip",
+        "CloudConnector": "{{cloudConnectorId}}",
+        "Package": "{{packageName}}"
     }
 }
 ```
@@ -227,6 +231,30 @@ The name of a standalone script file or .zip file that can be invoked by the act
 To invoke a file for Python, use the `filename.method_name` format in `Handler`.
 The attachment for a Python script can be a .py file or a .zip file that contains the script. PowerShell scripts must be stored in .zip files.
 When including Python libraries in your attachment, we recommend adding an empty `__init__.py` file in each module directory. This lets you import the modules from the library in your attachment within your script content. For example: `from library import module`
+Type: String
+Required: No
+
+CloudConnector
+The ID of a Systems Manager Cloud Connector for Microsoft Azure or Google Cloud, such as `a1b2c3d4-5678-90ab-cdef-111122223333`. Specify the connector ID, not its ARN. At run time, Automation uses the runbook's assume role (or the credentials of the identity that initiated runbook execution) to assume the federation role specified in the Cloud Connector. The federation role must trust that identity. Automation then uses the federation role to obtain short-lived credentials for the cloud environment specified in the connector. If the credential exchange is successful, environment variables in the script's runtime environment are populated with the credentials and other cloud-specific information. For more information, see [Permissions for automations that use a Cloud Connector](automation-cloud-connector-permissions.md).
+Automation sets only the variables for the connector's cloud. For an Azure connector, Automation sets the following variables:
++ `AZURE_ACCESS_TOKEN`: An access token for Azure Resource Manager.
++ `AZURE_TENANT_ID`: The connector's tenant ID.
++ `AZURE_CLIENT_ID`: The connector's application ID.
++ `AZURE_SUBSCRIPTION_IDS`: The connector's subscription IDs, separated by commas. Set only when the connector specifies subscriptions.
+The Azure token works only with Azure Resource Manager (`https://management.azure.com`). It doesn't work with Azure data-plane APIs, such as Blob Storage, Key Vault secrets, or Microsoft Graph, so use it with the management libraries (`azure.mgmt.*`).
+For a Google Cloud connector, Automation sets the following variables:
++ `GCP_ACCESS_TOKEN`: An access token for the connector's service account, with the `https://www.googleapis.com/auth/cloud-platform` scope.
++ `GCP_SERVICE_ACCOUNT_EMAIL`: The email address of the connector's service account.
++ `GCP_WORKLOAD_IDENTITY_POOL_PROVIDER`: The connector's workload identity pool provider, in the form `projects/{{PROJECT_NUMBER}}/locations/global/workloadIdentityPools/{{POOL}}/providers/{{PROVIDER}}`.
++ `GCP_ORGANIZATION_ID`: The connector's organization ID. Set only when the connector specifies an organization.
++ `GCP_PROJECT_IDS`: The connector's project IDs, separated by commas. Set only when the connector specifies projects.
+The tokens are short-lived and can't be refreshed. Don't write them to the script's output or logs. For examples that use these variables, see [`aws:executeScript` Cloud Connector examples](#automation-action-executeScript-multicloud-examples).
+Type: String
+Required: No
+
+Package
+The name of an Azure or Google Cloud SDK package to add to the script's runtime. The script imports the package's libraries directly, so you don't install them. Without `CloudConnector`, the script gets the libraries but no cloud credentials. Use a package for the same cloud as `CloudConnector`. Automation doesn't check that they match. For the available packages, the libraries in each, and the runtimes that each supports, see [Azure and Google Cloud SDK packages](automation-multicloud-packages.md). For examples, see [Use the Azure and Google Cloud SDKs in a script](automation-multicloud-runbooks.md#automation-multicloud-runbooks-sdk).
+`Package` is supported only with the automation supported python runtime and does not support PowerShell.
 Type: String
 Required: NoOutput
 
@@ -481,6 +509,107 @@ def cleanup_s3_bucket(events, context):
     except Exception as e:
         print(f"Error during S3 cleanup: {str(e)}")
         raise
+```
+
+## `aws:executeScript` Cloud Connector examples
+<a name="automation-action-executeScript-multicloud-examples"></a>
+
+The following examples use the environment variables that Automation sets when you specify `CloudConnector`. Each example is a complete runbook. For more examples, see [Use the Azure and Google Cloud SDKs in a script](automation-multicloud-runbooks.md#automation-multicloud-runbooks-sdk).
+
+### Example – Azure
+<a name="automation-action-executeScript-multicloud-azure-example"></a>
+
+This example lists the VMs in each of the connector's Azure subscriptions. The script builds an Azure credential from `AZURE_ACCESS_TOKEN` and gets the subscriptions from `AZURE_SUBSCRIPTION_IDS`. Automation doesn't set `AZURE_SUBSCRIPTION_IDS` for a connector that covers the whole tenant.
+
+```yaml
+description: Lists the VMs in each of the connector's Azure subscriptions.
+schemaVersion: '0.3'
+assumeRole: '{{ AutomationAssumeRole }}'
+parameters:
+  AutomationAssumeRole:
+    type: AWS::IAM::Role::Arn
+    description: The role that Automation assumes to run this runbook.
+  CloudConnector:
+    type: AWS::SSM::CloudConnector::Id
+    description: The Cloud Connector for the Azure subscriptions.
+mainSteps:
+  - name: listVms
+    action: aws:executeScript
+    inputs:
+      Runtime: python3.11
+      Handler: list_vms
+      CloudConnector: '{{ CloudConnector }}'
+      Package: azure_202610
+      Script: |-
+        import os
+        import time
+        from types import SimpleNamespace
+
+        from azure.core.credentials import AccessToken
+        from azure.mgmt.compute import ComputeManagementClient
+
+        def list_vms(events, context):
+            # The token can't be refreshed, so get_token returns the same token every time.
+            token = AccessToken(os.environ["AZURE_ACCESS_TOKEN"], int(time.time()) + 600)
+            credential = SimpleNamespace(get_token=lambda *scopes, **kwargs: token)
+
+            vms = {}
+            for subscription_id in os.environ["AZURE_SUBSCRIPTION_IDS"].split(","):
+                with ComputeManagementClient(credential, subscription_id) as client:
+                    vms[subscription_id] = [vm.name for vm in client.virtual_machines.list_all()]
+            return vms
+    outputs:
+      - Name: Vms
+        Selector: $.Payload
+        Type: StringMap
+```
+
+### Example – Google Cloud
+<a name="automation-action-executeScript-multicloud-gcp-example"></a>
+
+This example lists the VM instances in each of the connector's Google Cloud projects. The script builds a credential from `GCP_ACCESS_TOKEN` and gets the projects from `GCP_PROJECT_IDS`. Automation sets `GCP_PROJECT_IDS` only when the connector specifies projects.
+
+```yaml
+description: Lists the VM instances in each of the connector's Google Cloud projects.
+schemaVersion: '0.3'
+assumeRole: '{{ AutomationAssumeRole }}'
+parameters:
+  AutomationAssumeRole:
+    type: AWS::IAM::Role::Arn
+    description: The role that Automation assumes to run this runbook.
+  CloudConnector:
+    type: AWS::SSM::CloudConnector::Id
+    description: The Cloud Connector for the Google Cloud projects.
+mainSteps:
+  - name: listInstances
+    action: aws:executeScript
+    inputs:
+      Runtime: python3.11
+      Handler: list_instances
+      CloudConnector: '{{ CloudConnector }}'
+      Package: gcp_202610
+      Script: |-
+        import os
+
+        from google.cloud import compute_v1
+        from google.oauth2.credentials import Credentials
+
+        def list_instances(events, context):
+            # The token can't be refreshed. Credentials without an expiry time don't try to refresh it.
+            credentials = Credentials(token=os.environ["GCP_ACCESS_TOKEN"])
+
+            instances = {}
+            with compute_v1.InstancesClient(credentials=credentials) as client:
+                for project in os.environ["GCP_PROJECT_IDS"].split(","):
+                    names = []
+                    for _, scoped_list in client.aggregated_list(project=project):
+                        names.extend(instance.name for instance in scoped_list.instances)
+                    instances[project] = names
+            return instances
+    outputs:
+      - Name: Instances
+        Selector: $.Payload
+        Type: StringMap
 ```
 
 ## Troubleshooting aws:executeScript attachments

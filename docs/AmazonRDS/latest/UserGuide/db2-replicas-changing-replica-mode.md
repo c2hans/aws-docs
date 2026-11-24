@@ -15,7 +15,7 @@ Before changing replica modes, make sure the following conditions are met:
 + No active maintenance operations are running on the replica.
 + You have the necessary permissions to modify the DB instance.
 
-The change operation can take a few minutes. During the operation, the DB instance status changes to **modifying**. For more information about status changes, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status). When you change from read-only to standby mode, the replica disconnects all active connections.
+The change operation can take a few minutes. During the operation, the DB instance status changes to **modifying**. For more information about status changes, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status). When you change from read-only to standby mode, the replica disconnects all active connections.
 
 **Important**
 Because changing replica modes temporarily interrupts service, plan the change during a maintenance window to minimize impact on your applications.

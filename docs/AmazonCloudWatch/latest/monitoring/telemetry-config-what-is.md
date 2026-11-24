@@ -36,6 +36,7 @@ In addition to the resource types above, telemetry **enablement rules** (using t
 + AWS X-Ray Transaction Search
 + Amazon EKS Container Insights
 + AWS Network Firewall Logs
++ CloudWatch Omni Events
 
 When you enable telemetry configuration, CloudWatch creates AWS Config service-linked configuration recorders that discover resources and their associated telemetry configuration metadata. For more information, see [Configuration Recorder](https://docs.aws.amazon.com/config/latest/developerguide/config-concepts.html#config-recorder) in the AWS Config Developer Guide.
 

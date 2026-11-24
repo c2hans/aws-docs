@@ -20,11 +20,11 @@ The key hierarchy and the specific key properties appear in the following table.
 
 | Key | Description | Lifecycle |
 | --- | --- | --- |
-| **Domain key** | A 256-bit AES-GCM key only in memory of an HSM used to wrap versions of the KMS keys, the HSM backing keys. | Rotated daily1 |
-| **HSM backing key** | A 256-bit symmetric key or RSA or elliptic curve private key, used to protect customer data and keys and stored encrypted under domain keys. One or more HSM backing keys comprise the KMS key, represented by the keyId. | Rotated yearly2 (optional config.) |
+| **Domain key** | A 256-bit AES-GCM key only in memory of an HSM used to wrap versions of the KMS keys, the HSM backing keys. | Rotated daily<sup>1</sup> |
+| **HSM backing key** | A 256-bit symmetric key or RSA or elliptic curve private key, used to protect customer data and keys and stored encrypted under domain keys. One or more HSM backing keys comprise the KMS key, represented by the keyId. | Rotated yearly<sup>2</sup> (optional config.) |
 | **Derived encryption key** | A 256-bit AES-GCM key only in memory of an HSM used to encrypt customer data and keys. Derived from an HBK for each encryption. | Used once per encrypt and regenerated on decrypt  |
 | **Customer data key** | User-deﬁned symmetric or asymmetric key exported from HSM in plaintext and ciphertext.<br />Encrypted under an HSM backing key and returned to authorized users over TLS channel. | Rotation and use controlled by application |
 
-1 AWS KMS might from time to time relax domain key rotation to at most weekly to account for domain administration and configuration tasks.
+<sup>1</sup> AWS KMS might from time to time relax domain key rotation to at most weekly to account for domain administration and configuration tasks.
 
-2 Default AWS managed keys created and managed by AWS KMS on your behalf are automatically rotated annually.
+<sup>2</sup> Default AWS managed keys created and managed by AWS KMS on your behalf are automatically rotated annually.

@@ -124,7 +124,7 @@ For Container Insights to collect NVIDIA GPU metrics, you must meet the followin
 + [The NVIDIA device plugin for Kubernetes](https://github.com/NVIDIA/k8s-device-plugin) must be installed in the cluster.
 + [The NVIDIA container toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) must be installed on the nodes of the cluster. For example, the Amazon EKS optimized accelerated AMIs are built with the necessary components.
 
-You can opt out of collecting NVIDIA GPU metrics by setting the `accelerated_compute_metrics` option in the beginn CloudWatch agent configuration file to `false`. For more information and an example opt-out configuration, see [(Optional) Additional configuration](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
+You can opt out of collecting NVIDIA GPU metrics by setting the `accelerated_compute_metrics` option in the beginn CloudWatch agent configuration file to `false`. For more information and an example opt-out configuration, see [(Optional) Configuring Enhanced Container Insights (Classic) and Fluent Bit](install-CloudWatch-Observability-EKS-addon.md#install-CloudWatch-Observability-EKS-addon-configuration).
 
 | Metric name | Dimensions | Description |
 | --- | --- | --- |

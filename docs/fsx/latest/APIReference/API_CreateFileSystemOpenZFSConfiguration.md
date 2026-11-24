@@ -27,7 +27,7 @@ Specifies the throughput of an Amazon FSx for OpenZFS file system, measured in m
 + For `SINGLE_AZ_1`, valid values are 64, 128, 256, 512, 1024, 2048, 3072, or 4096 MBps.
 You pay for additional throughput capacity that you provision.
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: Yes
 
  ** AutomaticBackupRetentionDays **   <a name="FSx-Type-CreateFileSystemOpenZFSConfiguration-AutomaticBackupRetentionDays"></a>

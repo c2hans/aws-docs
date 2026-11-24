@@ -22,7 +22,7 @@ To migrate users from your existing user directory into Amazon Cognito user pool
 | UserMigration\_Authentication[1](#cognito-migrate-user-passwordless-note) | User migration at sign-in. |
 | UserMigration\_ForgotPassword | User migration during forgot-password flow. |
 
-1 Amazon Cognito doesn't invoke this trigger when users authenticate with [passwordless sign-in](amazon-cognito-user-pools-authentication-flow-methods.md#amazon-cognito-user-pools-authentication-flow-methods-passwordless).
+<sup>1</sup> Amazon Cognito doesn't invoke this trigger when users authenticate with [passwordless sign-in](amazon-cognito-user-pools-authentication-flow-methods.md#amazon-cognito-user-pools-authentication-flow-methods-passwordless).
 
 ## Migrate user Lambda trigger parameters
 <a name="cognito-user-pools-lambda-trigger-syntax-user-migration"></a>

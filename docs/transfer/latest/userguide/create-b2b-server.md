@@ -157,8 +157,8 @@ The following table provides a list of AWS Transfer Family AS2 send and receive 
 
 | Capability | Inbound: Receiving with server | Outbound: Sending with connector |
 | --- |--- |--- |
-| [TLS Encrypted Transport (HTTPS)](send-as2-messages.md#as2-https-process) | Yes 1 | Yes |
-| Non-TLS Transport (HTTP) | Yes | Yes 2 |
+| [TLS Encrypted Transport (HTTPS)](send-as2-messages.md#as2-https-process) | Yes <sup>1</sup> | Yes |
+| Non-TLS Transport (HTTP) | Yes | Yes <sup>2</sup> |
 | Synchronous MDN | Yes | Yes |
 | Message Compression | Yes | Yes |
 | Asynchronous MDN | Yes | Yes |

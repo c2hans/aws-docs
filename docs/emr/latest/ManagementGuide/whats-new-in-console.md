@@ -23,11 +23,11 @@ The following table lists the main Amazon EMR console components status.
 | Security configurations | ✔ |
 | Virtual clusters (Amazon EMR on EKS)  | ✔ |
 | View and manage your Amazon Virtual Private Cloud subnets1 | ✔ |
-| Notebooks2 | ✔  |
+| Notebooks<sup>2</sup> | ✔  |
 
-1 In the console, you can view and manage your Amazon VPC subnets within the **Networking** section when you create a cluster.
+<sup>1</sup> In the console, you can view and manage your Amazon VPC subnets within the **Networking** section when you create a cluster.
 
-2 EMR Notebooks are available as EMR Studio Workspaces in the console. The **Create Workspace** button in the console lets you create new notebooks. To access or create Workspaces, EMR Notebooks users need additional IAM role permissions. For more information, see [Amazon EMR Notebooks are Amazon EMR Studio Workspaces in the console](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-migration.html) and [Amazon EMR console](https://docs.aws.amazon.com/emr/latest/ManagementGuide/whats-new-in-console.html).
+<sup>2</sup> EMR Notebooks are available as EMR Studio Workspaces in the console. The **Create Workspace** button in the console lets you create new notebooks. To access or create Workspaces, EMR Notebooks users need additional IAM role permissions. For more information, see [Amazon EMR Notebooks are Amazon EMR Studio Workspaces in the console](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-migration.html) and [Amazon EMR console](https://docs.aws.amazon.com/emr/latest/ManagementGuide/whats-new-in-console.html).
 
 ## Summary of differences
 <a name="console-diff"></a>
@@ -54,7 +54,7 @@ To create and work with clusters of release 5.20.1 and earlier, you can use the 
 | Capability | Console |
 | --- | --- |
 | Terminology: Amazon EMR cluster node types | Primary, core, task |
-| [Amazon EMR supported releases](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-components.html)1 | Amazon EMR release 5.20.1 and later |
+| [Amazon EMR supported releases](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-components.html)<sup>1</sup> | Amazon EMR release 5.20.1 and later |
 | [Quickly launching a cluster](emr-launch-with-quick-options.md) | Use the **Create cluster** button under the **Summary** panel. Your cluster name can't contain the characters <, >, $, \|, or ` (backtick). |
 | [Configuring a Spot provisioning timeout](emr-provisioning-timeout.md) | Define a timeout period for provisioning instances for each fleet in your cluster. |
 |  [Service roles and Amazon EC2 instance profile role](emr-iam-roles.md#emr-iam-roles-summary) | The console doesn't create default roles; you must create roles with the [IAM Console](https://console.aws.amazon.com/iam/) or select an already-created IAM role |
@@ -63,7 +63,7 @@ To create and work with clusters of release 5.20.1 and earlier, you can use the 
 | [EMR File System consistent view (EMRFS CV)](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-plan-consistent-view.html) | With the release of Amazon S3 strong read-after-write consistency on December 1, 2020, you don't need to use EMRFS CV with your EMR clusters |
 | [Debugging](emr-plan-debugging.md) | You can debug jobs using the Application UI interface on the cluster details page |
 
-1 You can't create or edit clusters using releases earlier than Amazon EMR 5.20.1 in the console, but any existing clusters created using releases earlier than 5.20.1 will continue to work. To create and edit clusters with Amazon EMR releases earlier than 5.20.1, use the API or CLI. You can view all clusters using the console, but clusters created earlier than 5.20.1 might not be compatible with newer features.
+<sup>1</sup> You can't create or edit clusters using releases earlier than Amazon EMR 5.20.1 in the console, but any existing clusters created using releases earlier than 5.20.1 will continue to work. To create and edit clusters with Amazon EMR releases earlier than 5.20.1, use the API or CLI. You can view all clusters using the console, but clusters created earlier than 5.20.1 might not be compatible with newer features.
 
 ### Viewing and searching for clusters
 <a name="console-diff-cluster-list"></a>
@@ -95,8 +95,8 @@ Applying a data filter to the cluster list queries the entire database. But when
 | --- | --- |
 | Cloning security configurations | ✔ |
 | [Federated governance using Trino and Apache Ranger ](https://aws.amazon.com/blogs/big-data/enable-federated-governance-using-trino-and-apache-ranger-on-amazon-emr/) | ✔ |
-| [Using a runtime role to submit work to a cluster](emr-steps-runtime-roles.md)1 | ✔ |
+| [Using a runtime role to submit work to a cluster](emr-steps-runtime-roles.md)<sup>1</sup> | ✔ |
 | [Authorizing access to EMR File System (EMRFS) data](emr-emrfs-iam-roles.md) | Amazon S3 access points |
 | AWS Lake Formation access controls | Runtime roles  |
 
-1 To pass a role during step submission, your cluster must use a security configuration with an IAM permissions policy attached so that the user can pass only the approved roles and your jobs can access Amazon EMR resources. For more information, see [Runtime roles for Amazon EMR steps](emr-steps-runtime-roles.md).
+<sup>1</sup> To pass a role during step submission, your cluster must use a security configuration with an IAM permissions policy attached so that the user can pass only the approved roles and your jobs can access Amazon EMR resources. For more information, see [Runtime roles for Amazon EMR steps](emr-steps-runtime-roles.md).

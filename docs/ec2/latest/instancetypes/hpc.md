@@ -75,25 +75,25 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 </thead>
 <tbody>
   <tr><td colspan="10"><b>Hpc6a</b></td></tr>
-  <tr><td>hpc6a.48xlarge 1</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc6a.48xlarge <sup>1</sup></td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Hpc6id</b></td></tr>
-  <tr><td>hpc6id.32xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>2</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc6id.32xlarge <sup>1</sup></td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>2</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Hpc7a</b></td></tr>
-  <tr><td>hpc7a.12xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7a.24xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7a.48xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7a.96xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.12xlarge <sup>1</sup></td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.24xlarge <sup>1</sup></td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.48xlarge <sup>1</sup></td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.96xlarge <sup>1</sup></td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Hpc7g</b></td></tr>
-  <tr><td>hpc7g.4xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7g.8xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7g.16xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7g.4xlarge <sup>1</sup></td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7g.8xlarge <sup>1</sup></td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7g.16xlarge <sup>1</sup></td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
   <tr><td colspan="10"><b>Hpc8a</b></td></tr>
   <tr><td>hpc8a.96xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32 / 128</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
 </tbody>
 </table>
 
 **Note**
-1 These instance types do not support configurable ENA queue allocation.
+<sup>1</sup> These instance types do not support configurable ENA queue allocation.
 For `hpc6id.32xlarge`, you must attach at least 2 ENIs, to separate network cards, to achieve 200 Gbps throughput. Each ENI attached to a network card can achieve up to 170 Gbps.
 For `hpc7a.12xlarge`, `hpc7a.24xlarge`, `hpc7a.48xlarge`, `hpc7a.96xlarge`, you must attach at least 2 ENIs, to separate network cards, to achieve 300 Gbps throughput. Each ENI attached to a network card can achieve up to 150 Gbps.
 
@@ -112,25 +112,25 @@ We recommend that you choose an EBS–optimized instance type that provides more
 </thead>
 <tbody>
   <tr><td colspan="7"><b>Hpc6a</b></td></tr>
-  <tr><td>hpc6a.48xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>hpc6a.48xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>Hpc6id</b></td></tr>
-  <tr><td>hpc6id.32xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 23 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>hpc6id.32xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 23 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>Hpc7a</b></td></tr>
-  <tr><td>hpc7a.12xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>hpc7a.24xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>hpc7a.48xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
-  <tr><td>hpc7a.96xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>hpc7a.12xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>hpc7a.24xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>hpc7a.48xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>hpc7a.96xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
   <tr><td colspan="7"><b>Hpc7g</b></td></tr>
-  <tr><td>hpc7g.4xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>hpc7g.8xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
-  <tr><td>hpc7g.16xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>hpc7g.4xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>hpc7g.8xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
+  <tr><td>hpc7g.16xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>Up to 27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#shared-limit">Shared limit</a>)</td></tr>
   <tr><td colspan="7"><b>Hpc8a</b></td></tr>
-  <tr><td>hpc8a.96xlarge 1</td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
+  <tr><td>hpc8a.96xlarge <sup>1</sup></td><td>87.00 / 2085.00</td><td>10.88 / 260.62</td><td>500.00 / 11000.00</td><td>✓ Yes</td><td>✗ No</td><td>27 (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit">Dedicated limit</a>)</td></tr>
 </tbody>
 </table>
 
 **Note**
-1 These instances can support maximum performance for 30 minutes at least once every 24 hours, after which they revert to their baseline performance. Other instances can sustain the maximum performance indefinitely. If your workload requires sustained maximum performance for longer than 30 minutes, use one of these instances.
+<sup>1</sup> These instances can support maximum performance for 30 minutes at least once every 24 hours, after which they revert to their baseline performance. Other instances can sustain the maximum performance indefinitely. If your workload requires sustained maximum performance for longer than 30 minutes, use one of these instances.
 
 ## Instance store specifications
 <a name="hpc_instance-store"></a>
@@ -139,7 +139,7 @@ The following table shows the instance store volume configuration for supported 
 
 <table>
 <thead>
-  <tr><th>Instance type</th><th>Instance store volumes</th><th>Instance store type</th><th>100% random read IOPS / Write IOPS</th><th>Needs initialization 1</th><th>TRIM support 2</th></tr>
+  <tr><th>Instance type</th><th>Instance store volumes</th><th>Instance store type</th><th>100% random read IOPS / Write IOPS</th><th>Needs initialization <sup>1</sup></th><th>TRIM support <sup>2</sup></th></tr>
 </thead>
 <tbody>
   <tr><td colspan="6"><b>Hpc6id</b></td></tr>
@@ -147,9 +147,9 @@ The following table shows the instance store volume configuration for supported 
 </tbody>
 </table>
 
-1 Volumes attached to certain instances suffer a first-write penalty unless initialized. For more information, see [Optimize disk performance for instance store volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disk-performance.html).
+<sup>1</sup> Volumes attached to certain instances suffer a first-write penalty unless initialized. For more information, see [Optimize disk performance for instance store volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disk-performance.html).
 
-2 For more information, see [Instance store volume TRIM support](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ssd-instance-store.html#InstanceStoreTrimSupport).
+<sup>2</sup> For more information, see [Instance store volume TRIM support](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ssd-instance-store.html#InstanceStoreTrimSupport).
 
 ## Security specifications
 <a name="hpc_security"></a>

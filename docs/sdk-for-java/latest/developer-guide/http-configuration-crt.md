@@ -106,11 +106,11 @@ To restrict the Java runtime to platform-specific version of the AWS CRT library
     </dependencies>
 ```
 
-1Replace the version shown in red with the version of the Java SDK that you want to use. Find the latest on [Maven Central](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup>Replace the version shown in red with the version of the Java SDK that you want to use. Find the latest on [Maven Central](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
-2Replace the version of `software.amazon.awssdk.crt:aws-crt` that would be provided by the *Uber-jar option*. See the following **Steps to determine the AWS CRT artifact version**.
+<sup>2</sup>Replace the version of `software.amazon.awssdk.crt:aws-crt` that would be provided by the *Uber-jar option*. See the following **Steps to determine the AWS CRT artifact version**.
 
-3Replace the `classifier` value with one for your platform. Refer to the AWS CRT for Java GitHub page for a [listing of available values](https://github.com/awslabs/aws-crt-java?tab=readme-ov-file#platform-specific-jars).
+<sup>3</sup>Replace the `classifier` value with one for your platform. Refer to the AWS CRT for Java GitHub page for a [listing of available values](https://github.com/awslabs/aws-crt-java?tab=readme-ov-file#platform-specific-jars).
 
 **Steps to determine the AWS CRT artifact version**
 

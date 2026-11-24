@@ -15,9 +15,9 @@ For information about purchasing reserved DB instances and viewing the billing f
 ## Overview of reserved DB instances
 <a name="USER_WorkingWithReservedDBInstances.Overview"></a>
 
-When you purchase a reserved DB instance in Amazon RDS, you purchase a commitment to getting a discounted rate, on a specific DB instance type, for the duration of the reserved DB instance. To use an Amazon RDS reserved DB instance, you create a new DB instance just like you do for an on-demand instance.
+When you purchase a reserved DB instance in Amazon RDS, you purchase a commitment to getting a discounted rate, on a specific DB instance type, for the duration of the reserved DB instance. You don't need to create a new DB instance to use a reserved DB instance. The reserved DB instance discount automatically applies to any running DB instance in your account that matches it. The discount applies whether that DB instance existed before you made the purchase or you create it afterward.
 
-The new DB instance that you create must have the same specifications as the reserved DB instance for the following:
+To receive the discount, a DB instance must have the same specifications as the reserved DB instance for the following:
 + AWS Region
 + DB engine (The DB engine's version number doesn't need to match.)
 + DB instance type
@@ -25,7 +25,7 @@ The new DB instance that you create must have the same specifications as the res
 + Edition (RDS for Db2, RDS for SQL Server, and RDS for Oracle)
 + License type (license-included or bring-your-own-license)
 
-If the specifications of the new DB instance match an existing reserved DB instance for your account, you are billed at the discounted rate offered for the reserved DB instance. Otherwise, the DB instance is billed at an on-demand rate.
+If the specifications of a running DB instance match a reserved DB instance for your account, you're billed at the discounted rate offered for the reserved DB instance. Otherwise, the DB instance is billed at an on-demand rate.
 
 You can modify a DB instance that you're using as a reserved DB instance. If the modification is within the specifications of the reserved DB instance, part or all of the discount still applies to the modified DB instance. If the modification is outside the specifications, such as changing the instance class, the discount no longer applies. For more information, see [Size-flexible reserved DB instances](#USER_WorkingWithReservedDBInstances.SizeFlexible).
 
@@ -95,6 +95,7 @@ You can compare usage for different reserved DB instance sizes by using normaliz
 | 16xlarge | 128 | 256 | 384 |
 | 24xlarge | 192 | 384 | 576 |
 | 32xlarge | 256 | 512 | 768 |
+| 48xlarge | 384 | 768 | 1,152 |
 
 For example, suppose that you purchase a `db.t2.medium` reserved DB instance, and you have two running `db.t2.small` DB instances in your account in the same AWS Region. In this case, the billing benefit is applied in full to both instances.
 

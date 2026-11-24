@@ -38,7 +38,7 @@ You need to add the following Maven dependency to enable the SDK to send metrics
 </dependencies>
 ```
 
- \*Replace the version number with the latest version of the SDK available at [Maven Central](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom).
+ <sup>\*</sup>Replace the version number with the latest version of the SDK available at [Maven Central](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom).
 
 AWS SDK for Java metrics are *disabled by default*. To enable it for your local development environment, include a system property that points to your AWS security credential file when starting up the JVM. For example:
 

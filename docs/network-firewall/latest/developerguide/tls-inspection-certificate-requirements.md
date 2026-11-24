@@ -59,7 +59,7 @@ For more information about working with certificates in ACM, see [Importing cert
 The following requirements are specific to CA certificates that are used for outbound SSL/TLS inspection.
 
 **Supported certificates**
-You can use CA certificates that are imported into ACM for outbound inspection—including private certificates—but you can't generate intermediate CA certificates using ACM. However, Network Firewall doesn't support TLS traffic to or from destination servers that use a server certificate signed by a private CA. In other words, Network Firewall does certificate verification of downstream server certificates to allow TLS traffic where server certificates are signed by public well-known roots contained on the [Mozilla Included CA Certificate List ](https://wiki.mozilla.org/CA/Included_Certificates). Network Firewall also doesn't support certificates issued by AWS Private Certificate Authority.
+You can use CA certificates that are imported into ACM for outbound inspection—including private certificates—but you can't generate intermediate CA certificates using ACM. However, Network Firewall doesn't support TLS traffic to or from destination servers that use a server certificate signed by a private CA. In other words, Network Firewall does certificate verification of downstream server certificates to allow TLS traffic where server certificates are signed by public well-known roots contained on the [Mozilla Included CA Certificate List ](https://wiki.mozilla.org/CA/Included_Certificates). You can't reference a certificate ARN from AWS Private Certificate Authority directly in your TLS inspection configuration, which accepts only ACM ARNs. However, you can use a subordinate CA issued by AWS Private Certificate Authority for outbound inspection if you first import it into ACM with its private key and certificate chain, and then reference the ACM ARN. For the steps, see [Creating a certificate for TLS inspection with AWS Private CA](#tls-certificate-via-pca).
 
 **Revoked certificates**
 For outbound TLS, you can enable certificate revocation checks, which allows Network Firewall to check revocation status with Online Certificate Status Protocol (OCSP) and Certificate Revocation List (CRL) on behalf of clients. For more information see [Checking certificate revocation status](#tls-inspection-check-certificate-revocation-status).
@@ -105,17 +105,17 @@ Revocation status checking doesn't include support for the following:
 
 For information about troubleshooting issues related to certificate revocation, see [Troubleshooting TLS inspection in AWS Network Firewall](troubleshooting-tls-inspection.md).
 
-## Creating a certificate for inbound TLS inspection with AWS Private CA
+## Creating a certificate for TLS inspection with AWS Private CA
 <a name="tls-certificate-via-pca"></a>
 
-You can use AWS Private CA to create certificates for inbound TLS inspection. This procedure shows you how to create a certificate that works with Network Firewall inbound inspection.
+You can use AWS Private CA to create certificates for TLS inspection. This procedure shows you how to create a subordinate CA certificate, signed by AWS Private CA and imported into ACM, that works with Network Firewall TLS inspection.
 
 **Prerequisites**
 Before you begin, verify that you have the following:
 + A certificate authority (CA) with ACTIVE status in AWS Private CA
 + OpenSSL installed on your system
 
-**To create a certificate for inbound TLS inspection**
+**To create a certificate for TLS inspection**
 
 1. Create an OpenSSL configuration file named `openssl_temp.cnf`. Use the following template and modify the values for your environment. The `req_ext` section must have `basicConstraints` enabled. Adjust the `pathlen` value based on your Public Key Infrastructure (PKI) structure.
 

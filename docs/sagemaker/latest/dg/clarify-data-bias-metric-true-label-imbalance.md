@@ -11,11 +11,11 @@ The difference in proportions of labels (DPL) compares the proportion of observe
 
 The formula for the difference in proportions of labels is as follows:
 
-        DPL = (qa - qd)
+        DPL = (q<sub>a</sub> - q<sub>d</sub>)
 
 Where:
-+ qa = na(1)/na is the proportion of facet *a* who have an observed label value of 1. For example, the proportion of a middle-aged demographic who get approved for loans. Here na(1) represents the number of members of facet *a* who get a positive outcome and na the is number of members of facet *a*.
-+ qd = nd(1)/nd is the proportion of facet *d* who have an observed label value of 1. For example, the proportion of people outside the middle-aged demographic who get approved for loans. Here nd(1) represents the number of members of the facet *d* who get a positive outcome and nd the is number of members of the facet *d*.
++ q<sub>a</sub> = n<sub>a</sub><sup>(1)</sup>/n<sub>a</sub> is the proportion of facet *a* who have an observed label value of 1. For example, the proportion of a middle-aged demographic who get approved for loans. Here n<sub>a</sub><sup>(1)</sup> represents the number of members of facet *a* who get a positive outcome and n<sub>a</sub> the is number of members of facet *a*.
++ q<sub>d</sub> = n<sub>d</sub><sup>(1)</sup>/n<sub>d</sub> is the proportion of facet *d* who have an observed label value of 1. For example, the proportion of people outside the middle-aged demographic who get approved for loans. Here n<sub>d</sub><sup>(1)</sup> represents the number of members of the facet *d* who get a positive outcome and n<sub>d</sub> the is number of members of the facet *d*.
 
 If DPL is close enough to 0, then we say that *demographic parity* has been achieved.
 

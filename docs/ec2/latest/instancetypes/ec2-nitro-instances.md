@@ -42,20 +42,20 @@ See the [Nitro instance requirements](#nitro-requirements) section for the minim
 **Nitro v6**
 + Default TCP established timeout for idle TCP connections has been reduced from 432,000 seconds to 350 seconds.
 + Traffic Mirroring is not supported.
-+ Up to 400 Gbps\* per network card.
++ Up to 400 Gbps<sup>\*</sup> per network card.
 
 **Nitro v5**
 + Traffic Mirroring is not supported.
-+ Up to 200 Gbps\* per network card.
++ Up to 200 Gbps<sup>\*</sup> per network card.
 
 **Nitro v4**
-+ GPU accelerated and Trainium based instance types support up to 100 Gbps\* per network card for consistency. Other instance types support up to 170 Gbps\* per network card.
++ GPU accelerated and Trainium based instance types support up to 100 Gbps<sup>\*</sup> per network card for consistency. Other instance types support up to 170 Gbps<sup>\*</sup> per network card.
 + Supports ENA Express. For more information about ENA Express, including what specific instance types support it see [Improve network performance with ENA Express on your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-express.html) in the *Amazon EC2 User Guide*.
 + Supports RDMA read and RDMA write for select instance types. For more information, see [ Elastic Fabric Adapter](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html#efa-instance-types).
 + Traffic Mirroring is supported.
 
 **Nitro v3**
-+ Up to 100 Gbps\* per network card.
++ Up to 100 Gbps<sup>\*</sup> per network card.
 + Encryption in transit.
 + Traffic Mirroring is supported.
 
@@ -63,7 +63,7 @@ See the [Nitro instance requirements](#nitro-requirements) section for the minim
 + Enhanced networking with Elastic Network Adapter (ENA).
 + Traffic Mirroring is supported.
 
-\* *Your instance type might support a lower maximum bandwidth. For more information, refer to the network specifications for your instance type in the instance family pages.*
+<sup>\*</sup> *Your instance type might support a lower maximum bandwidth. For more information, refer to the network specifications for your instance type in the instance family pages.*
 
 ## Virtualized instances
 <a name="nitro-instance-types"></a>
@@ -76,7 +76,7 @@ The following virtualized instances are built on the Nitro System:
 + **Compute Optimized**: C8a \| C8gb \| C8gn \| C8i \| C8id \| C8i-flex \| C8in \| C8ine \| C8ib \| C9g \| C9gd
 + **Memory Optimized**: R8a \| R8gb \| R8gn \| R8i \| R8id \| R8i-flex \| R8in \| R8idn \| R8ib \| R8idb \| R9g \| R9gd \| X8aedz \| X8i
 + **Storage Optimized**: I8ge
-+ **Accelerated Computing**: G7 \| G7e \| P6-B200 \| P6-B300
++ **Accelerated Computing**: G7 \| G7e \| P6-B200 \| P6-B300 \| Trn3
 + **High Performance Computing**: Hpc8a
 
 ------

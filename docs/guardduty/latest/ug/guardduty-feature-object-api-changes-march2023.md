@@ -56,7 +56,7 @@ The following table shows the mapping of protection types, `dataSources`, and `f
 
 <table>
 <thead>
-  <tr><th>GuardDuty protection type</th><th>Data source name*</th><th>Feature name</th></tr>
+  <tr><th>GuardDuty protection type</th><th>Data source name<sup>*</sup></th><th>Feature name</th></tr>
 </thead>
 <tbody>
   <tr><td><a href="guardduty_data-sources.md#guardduty_vpc">VPC Flow Logs</a></td><td><code>flowLogs</code> (read only; can't be modified)</td><td><code>FLOW_LOGS</code> (read only; can't be modified)</td></tr>

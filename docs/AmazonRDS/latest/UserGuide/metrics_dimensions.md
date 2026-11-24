@@ -57,7 +57,7 @@ aws cloudwatch list-metrics --namespace AWS/RDS
 
 To obtain metric data, use the command [`get-metric-data`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-data.html).
 
-The following example gets `CPUUtilization` statistics for instance `my-instance` over the specific 24-hour period, with a 5-minute granularity.
+The following example gets `CPUUtilization` statistics for instance `my-instance` over the specific 24-hour period, with a 6-minute granularity.
 
 Create a JSON file `CPU_metric.json` with the following contents.
 

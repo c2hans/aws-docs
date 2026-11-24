@@ -15,6 +15,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
+ ** OntapError **   <a name="FSx-Type-LifecycleTransitionReason-OntapError"></a>
+The error returned by ONTAP when an operation on the resource fails. Returned only for certain FSx for ONTAP resources.
+Type: [OntapError](API_OntapError.md) object
+Required: No
+
 ## See Also
 <a name="API_LifecycleTransitionReason_SeeAlso"></a>
 

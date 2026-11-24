@@ -385,3 +385,14 @@ When enabling AWS Network Firewall logging:
 + CloudWatch does not change log types that already have a logging destination, such as Amazon S3, Firehose, or CloudWatch Logs. The rule adds only the missing log types.
 + If a log group with the destination name already exists and CloudWatch telemetry rules did not create it, CloudWatch does not modify the log group or enable logging for that firewall.
 + Deleting the rule does not remove the logging configuration from your firewalls. Log delivery and the associated charges continue until you remove the logging destinations from each firewall.
+
+**CloudWatch Omni Events**
+When enabling CloudWatch Omni Events:
++ Supports the LOGS telemetry type on the `AWS::CloudWatchOmni` resource type. CloudWatch rejects a rule that specifies any other telemetry type.
++ Does not support a destination configuration. CloudWatch rejects a rule that specifies one, because CloudWatch Omni Events always sends events to the service-managed `aws/cloudwatch-omni/events` log group.
++ CloudWatch creates the `aws/cloudwatch-omni/events` log group if it does not already exist, with a retention period of 30 days. CloudWatch also attaches a resource policy that allows only the CloudWatch managed rule to deliver events to the log group. Deliveries from rules that you own are denied.
++ CloudWatch creates a managed Amazon EventBridge rule named `aws-events-managed-omni-rule` in your account. The rule matches a curated set of events and sends them to the log group.
++ If a rule with the name `aws-events-managed-omni-rule` already exists and CloudWatch telemetry rules did not create it, CloudWatch replaces it with the managed rule while your telemetry rule is enabled.
++ If you delete or change the managed rule, the log group, or the log group resource policy, CloudWatch restores it the next time it evaluates your telemetry rule.
++ You can create only one CloudWatch Omni Events rule per scope.
++ Deleting the telemetry rule removes the managed Amazon EventBridge rule and its target, so CloudWatch stops sending new events. It does not delete the log group, so you keep the events that CloudWatch already captured. If you recreated a rule named `aws-events-managed-omni-rule` yourself, deleting the telemetry rule does not remove it.

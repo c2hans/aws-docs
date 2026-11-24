@@ -34,6 +34,8 @@ CloudTrail Lake event data stores and queries incur costs. When you create an ev
 
 Amazon API Gateway logs all API Gateway actions as management events, except for [TestInvokeAuthorizer](https://docs.aws.amazon.com/cli/latest/reference/apigateway/test-invoke-authorizer.html) and [TestInvokeMethod](https://docs.aws.amazon.com/cli/latest/reference/apigateway/test-invoke-method.html). For a list of the Amazon API Gateway actions that API Gateway logs to CloudTrail, see the [Amazon API Gateway API Reference](https://docs.aws.amazon.com/apigateway/latest/api/API_Operations.html).
 
+API Portal operations, such as `PutDiscoveryConfiguration`, `CreateManagedApi`, `CreateProduct`, and `UpdatePortalPublishStatus`, are logged as management events with the event source `apiportal.amazonaws.com`.
+
 ## API Gateway event example
 <a name="cloudtrail-event-examples"></a>
 

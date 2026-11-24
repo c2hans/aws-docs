@@ -18,11 +18,11 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | id | string | Yes | Partner ID. Referred to by other entities as tpartner\_id unless explicitly stated otherwise. |
 | description | string | No | Description of the trading partner. |
-| company\_id 2 | string | No | Company ID. |
-| tpartner\_type | string | Yes1 | Type of partner, for example, vendor, channel partner, or 3PL. |
-| geo\_id 2 | string | Yes1 | Region of the company associated with the trading partner. |
-| eff\_start\_date | timestamp | Yes1 | The start timestamp of the relationship between the trading partner and the company. |
-| eff\_end\_date | timestamp | Yes1 | The end timestamp of the relationship between the trading partner and the company. |
+| company\_id <sup>2</sup> | string | No | Company ID. |
+| tpartner\_type | string | Yes<sup>1</sup> | Type of partner, for example, vendor, channel partner, or 3PL. |
+| geo\_id <sup>2</sup> | string | Yes<sup>1</sup> | Region of the company associated with the trading partner. |
+| eff\_start\_date | timestamp | Yes<sup>1</sup> | The start timestamp of the relationship between the trading partner and the company. |
+| eff\_end\_date | timestamp | Yes<sup>1</sup> | The end timestamp of the relationship between the trading partner and the company. |
 | is\_active | string | No | Indicates whether trading partner is active or inactive. |
 | address\_1 | string | No | The address corresponding to the trading partner. |
 | address\_2 | string | No | The address corresponding to the trading partner. |
@@ -41,9 +41,9 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED; and the default value for *timestamp* is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED; and the default value for *timestamp* is 1900-01-01 00:00:00 for start date, and 9999-12-31 23:59:59 for end date.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

@@ -13,11 +13,11 @@ The comparison of positive proportions in predicted labels metric can be assesse
 
 The formula for the ratio of proportions of the predicted labels:
 
-        DI = q'd/q'a
+        DI = q'<sub>d</sub>/q'<sub>a</sub>
 
 Where:
-+ q'a = n'a(1)/na is the predicted proportion of facet *a* who get a positive outcome of value 1. In our example, the proportion of a middle-aged facet predicted to get granted a loan. Here n'a(1) represents the number of members of facet *a* who get a positive predicted outcome and na the is number of members of facet *a*.
-+ q'd = n'd(1)/nd is the predicted proportion of facet *d* a who get a positive outcome of value 1. In our example, a facet of older and younger people predicted to get granted a loan. Here n'd(1) represents the number of members of facet *d* who get a positive predicted outcome and nd the is number of members of facet *d*.
++ q'<sub>a</sub> = n'<sub>a</sub><sup>(1)</sup>/n<sub>a</sub> is the predicted proportion of facet *a* who get a positive outcome of value 1. In our example, the proportion of a middle-aged facet predicted to get granted a loan. Here n'<sub>a</sub><sup>(1)</sup> represents the number of members of facet *a* who get a positive predicted outcome and n<sub>a</sub> the is number of members of facet *a*.
++ q'<sub>d</sub> = n'<sub>d</sub><sup>(1)</sup>/n<sub>d</sub> is the predicted proportion of facet *d* a who get a positive outcome of value 1. In our example, a facet of older and younger people predicted to get granted a loan. Here n'<sub>d</sub><sup>(1)</sup> represents the number of members of facet *d* who get a positive predicted outcome and n<sub>d</sub> the is number of members of facet *d*.
 
 For binary, multicategory facet, and continuous labels, the DI values range over the interval [0, ∞).
 + Values less than 1 indicate that facet *a* has a higher proportion of predicted positive outcomes than facet *d*. This is referred to as *positive bias*.

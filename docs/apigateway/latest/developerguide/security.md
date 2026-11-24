@@ -22,4 +22,5 @@ For more information, see [Security Overview of Amazon API Gateway](https://d1.a
 + [Resilience in Amazon API Gateway](disaster-recovery-resiliency.md)
 + [Infrastructure security in Amazon API Gateway](infrastructure-security.md)
 + [Vulnerability analysis in Amazon API Gateway](vulnerability-analysis.md)
++ [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
 + [Security best practices in Amazon API Gateway](security-best-practices.md)

@@ -151,6 +151,15 @@ This policy grants read-only permissions that allow access to view products on t
 
 This policy grants `aws-marketplace` read-only permissions to view the deployment configuration for products, view and list the jobs that publish it, and list its tags.
 
+This policy also includes `support` and `support-console` read-only permissions. With these permissions, you can do the following:
++ View and search Support cases.
++ Read the correspondence on a case.
++ Read the contents of a case's attachments.
++ View the service, category, and severity options for a new case.
++ View the Support Center console, including the account's support plan and subscription status.
+
+This access covers every Support case in the account, not only cases about AWS Marketplace. You can't create a case, reply to a case, resolve a case, or add attachments to a case.
+
 To view the permissions for this policy, see [AWSMarketplaceSellerProductsReadOnly](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSMarketplaceSellerProductsReadOnly.html) in the *AWS Managed Policy Reference*.
 
 ## AWS managed policy: AWSMarketplaceSellerOfferManagement

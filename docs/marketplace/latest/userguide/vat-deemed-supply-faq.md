@@ -15,7 +15,7 @@ This FAQ answers commonly asked questions about VAT on AWS Marketplace Deemed Su
 + [For which countries can I submit a request for VAT on Deemed Supply?](#faq-countries-branches)
 + [What if I sell to Buyers in the UK, Norway and multiple EU countries?](#faq-multiple-countries)
 + **Access and Permissions**
-+ [Why can't I see the Deemed VAT section in my AWS Marketplace Management portal?](#faq-iam-permissions)
++ [Why can't I see VAT on deemed supply on the Tax and invoices page?](#faq-iam-permissions)
 + **Invoice Submission Process**
 + [How do I submit a VAT invoice for VAT payment?](#faq-how-to-submit)
 + [Can I submit a VAT invoice for a Deemed Supply before the Buyer has paid AWS?](#faq-submit-before-buyer-paid)
@@ -51,8 +51,8 @@ This FAQ answers commonly asked questions about VAT on AWS Marketplace Deemed Su
 + **Errors, Duplicates, and Corrections**
 + [What happens if my invoice is rejected?](#faq-invoice-rejected)
 + [Can I submit more than one invoice for the same transaction?](#faq-duplicate-invoice)
-+ **Deemed VAT Supply vs Tax Portal**
-+ [How do Deemed VAT Supply Invoicing and the Tax Portal differ?](#faq-deemed-vs-tax-portal)
++ **Deemed VAT Supply vs invoice tabs**
++ [How do Deemed VAT Supply Invoicing and the invoice tabs on the Tax and invoices page differ?](#faq-deemed-vs-tax-portal)
 + **Support**
 + [Where can I get additional help with VAT on Deemed Supplies?](#faq-additional-help)
 
@@ -87,7 +87,7 @@ For any other transactions where the Seller needs to raise an invoice under Mark
 ## How do I identify which AWS EMEA branch I need to invoice?
 <a name="faq-identify-branch"></a>
 
-Your invoice must be addressed to the AWS EMEA branch where the Buyer is located. The Buyer's country code determines the correct branch. To identify the country of the branch facilitating the transaction, navigate to the Tax Information Tab in AWS Partner Central.
+Your invoice must be addressed to the AWS EMEA branch where the Buyer is located. The Buyer's country code determines the correct branch. To identify the country of the branch facilitating the transaction, go to the **Tax and invoices** page in AWS Partner Central. The **AWS EMEA local VAT number** appears in the **Tax summary**, and in the **VAT on deemed supply summary** when you apply a disbursement.
 
 **Important**
 Always use the branch information as displayed in these FAQs. Do not assume the branch name and address based on the Buyer's country alone. The correct legal entity name and address must be verified in the branch listing.
@@ -202,7 +202,7 @@ Legal Basis: UK VAT Act 1994, s.47(4)
 
 If you sell to Buyers with AWS accounts in multiple countries from multiple Seller accounts, you must issue separate invoices to each relevant AWS EMEA branch facilitating the transaction. Each branch has its own name, address, and VAT identification number.
 
-## Why can't I see the Deemed VAT section in my AWS Marketplace Management portal?
+## Why can't I see VAT on deemed supply on the Tax and invoices page?
 <a name="faq-iam-permissions"></a>
 
 Your AWS Identity and Access Management (IAM) user or role might lack the required permissions. Attach the following IAM policy to the user or role that you use to sign in.
@@ -238,20 +238,22 @@ This policy grants access to the Deemed VAT feature:
 }
 ```
 
-Without these permissions, the Deemed VAT section does not appear in the portal. Contact your administrator if AWS has not yet enabled your account.
+Without these permissions, **VAT on deemed supply** does not appear on the **Tax and invoices** page. Contact your administrator if AWS has not yet enabled your account.
 
 ## How do I submit a VAT invoice for VAT payment?
 <a name="faq-how-to-submit"></a>
 
-You can submit a VAT invoice in AWS Partner Central. Navigate to the Tax Information tab. Then:
+You can submit a VAT invoice on the **Tax and invoices** page in AWS Partner Central. Choose the **VAT on deemed supply** tab. Then:
 
-1. Select Deemed Supply-eligible line items to upload a VAT invoice.
+1. In **VAT on deemed supply eligible payables**, select the eligible payables.
 
-1. Choose Apply VAT disbursement once line items are selected.
+1. Choose **Apply disbursement**.
 
-1. Review the submission page details and upload the VAT invoice by choosing the Upload file button.
+1. Under **Upload seller invoice**, choose **Choose seller invoice** and upload your VAT invoice.
 
-1. Once you have reviewed the submission details, choose the Submit disbursement button and confirm.
+1. Review the submission details, and then choose **Apply disbursement**.
+
+For the full procedure, see [VAT on Deemed Supply](vat-on-deemed-supply.md).
 
 ## Can I submit a VAT invoice for a Deemed Supply before the Buyer has paid AWS?
 <a name="faq-submit-before-buyer-paid"></a>
@@ -328,9 +330,9 @@ This language may be included in the Invoice Description field or as a separate 
 ## Do I need to submit an e-invoice instead of a PDF?
 <a name="faq-e-invoicing"></a>
 
-In jurisdictions where e-invoicing is mandatory (e.g., Italy via the Sistema di Intercambio), you must submit your e-invoice in the required electronic format. XMLs must be submitted for Italy, Belgium, Poland and Romania transactions. Please note that XMLs will be rejected if used for VAT payment requests in any other jurisdiction.
+In jurisdictions where e-invoicing is mandatory (e.g., Italy via the Sistema di Intercambio), you must submit your e-invoice in the required electronic format. XMLs must be submitted for Italy, Poland, Belgium, Romania, and Croatia transactions. The invoice must be a single file, PDF or XML, with a maximum file size of 10 MB. Please note that XMLs will be rejected if used for VAT payment requests in any other jurisdiction.
 
-Where e-invoices are represented by a PDF, you can submit e-invoices through AWS Partner Central. AWS Marketplace will validate your e-invoice against the applicable government system requirements. If validation fails, you will receive an error response detailing the issue, and you will be asked to re-submit a corrected e-invoice.
+Where e-invoices are represented by a PDF, you can upload them the same way as other invoices, on the **VAT on deemed supply** tab in AWS Partner Central. AWS Marketplace will validate your e-invoice against the applicable government system requirements. If validation fails, you will receive an error response detailing the issue, and you will be asked to re-submit a corrected e-invoice.
 
 For jurisdictions where e-invoicing is not currently mandatory, you must submit your invoice in PDF format. As more EU Member States adopt mandatory e-invoicing requirements, additional e-invoicing formats may be required. AWS will communicate any changes to supported formats in advance.
 
@@ -345,10 +347,10 @@ AWS will only disburse the VAT amount stated on the invoice. The net amount of t
 ## How can I track the status of my VAT payment?
 <a name="faq-track-status"></a>
 
-You can track the status of all your VAT invoices in the Tax Information tab of AWS Partner Central. Each invoice will display one of the following statuses:
+You can track the status of all your VAT invoices in the **VAT on deemed supply submissions** table on the **VAT on deemed supply** tab. Select a submission and choose **View details**. Each invoice will display one of the following statuses:
 + **PENDING:** Invoice was received.
 + **ACCEPTED:** Invoice received and validated, awaiting payment from the Buyer.
-+ **REJECTED:** Invoice failed validation. Check the rejection reason and re-upload a corrected invoice.
++ **REJECTED:** Invoice failed validation. Review the submission with **View details**, correct the issue, and submit again.
 
 ## When do I need to submit a credit note for a refund?
 <a name="faq-refund-when-credit-note"></a>
@@ -368,17 +370,17 @@ If AWS previously disbursed VAT to you for the original transaction, AWS recover
 ## Where can I find refunds and submit a credit note?
 <a name="faq-refund-find-submit"></a>
 
-In AWS Partner Central, choose **Settings**, choose the **Tax information** tab, and scroll down to the **VAT on deemed supply** section. Refunds appear in the eligible line items table. To submit a credit note:
+On the **Tax and invoices** page in AWS Partner Central, choose the **VAT on deemed supply** tab. Refunds appear in the same **VAT on deemed supply eligible payables** table as forward charges. To submit a credit note:
 
-1. Select the refund line item or line items that the credit note covers.
+1. Select the refund payables that the credit note covers.
 
-1. Choose **Apply VAT disbursement**.
+1. Choose **Apply disbursement**.
 
-1. Upload your credit note in the required PDF or XML format. The maximum file size is 10 MB.
+1. Under **Upload seller invoice**, choose **Choose seller invoice** and upload your credit note in the required PDF or XML format. The maximum file size is 10 MB.
 
 1. Review the submission details.
 
-1. Choose **Submit VAT on deemed supply disbursement** and complete the confirmation.
+1. Choose **Apply disbursement** and complete the confirmation.
 
 At the confirmation step, enter the total amount exactly as displayed, including the "-" sign where applicable.
 
@@ -401,7 +403,7 @@ A **Paid** status on the refund does not necessarily mean that AWS has already r
 ## How soon will a refund appear in AWS Partner Central?
 <a name="faq-refund-timing"></a>
 
-A refund can take up to 72 hours after the Buyer refund is generated to appear in the eligible line items table. A refund might appear while its status is still **Unpaid**. If you do not see an expected refund after 72 hours, confirm that your selected date range includes the transaction before reporting it as missing.
+A refund can take up to 72 hours after the Buyer refund is generated to appear in the **VAT on deemed supply eligible payables** table. A refund might appear while its status is still **Unpaid**. If you do not see an expected refund after 72 hours, confirm that your selected date range includes the transaction before reporting it as missing.
 
 ## Does submitting a credit note trigger VAT recovery?
 <a name="faq-refund-recovery-trigger"></a>
@@ -417,7 +419,7 @@ No. Creating, submitting, or having a credit note accepted does not, by itself, 
 
 If AWS previously disbursed VAT to you for the original transaction and that transaction is later refunded, AWS deducts the applicable VAT amount from your seller balance after the recovery conditions are met. You will see the recovery as a deduction from your balance rather than as a separate charge or invoice.
 
-To review the financial adjustment, use the Collections and Disbursements dashboard in Insights. Use the **VAT on deemed supply** section to view eligible line items and track the status of your submitted documents.
+To review the financial adjustment, use the Collections and Disbursements dashboard in Insights. Use the **VAT on deemed supply** tab to view eligible payables and track the status of your submitted documents.
 
 ## Can I include multiple refunds on one credit note?
 <a name="faq-refund-consolidate"></a>
@@ -443,7 +445,7 @@ You can track your credit-note submissions in the **VAT on deemed supply submiss
 + **Accepted** – AWS successfully validated the document.
 + **Rejected** – The document did not pass validation and must be corrected before you resubmit it.
 
-After you submit a credit note, AWS Partner Central removes the corresponding refund line items from the eligible line items table. If the credit note is rejected, those line items become available again so that you can correct the document and submit a new credit note. Common reasons for rejection include:
+After you submit a credit note, AWS Partner Central removes the corresponding refund payables from the **VAT on deemed supply eligible payables** table. If the credit note is rejected, those line items become available again so that you can correct the document and submit a new credit note. Common reasons for rejection include:
 + The AWS VAT entity information on your credit note does not match the transaction.
 + The VAT amount does not match the amount shown for the selected refund line items.
 + Your legal entity name does not match your registered legal entity name.
@@ -516,23 +518,23 @@ If your invoice fails validation, you will receive an error response identifying
 + VAT amount on invoice does not match the calculated VAT for the transaction(s).
 + Incorrect AWS EMEA branch name or VAT number.
 
-You can correct the issue and re-upload the invoice through AWS Partner Central.
+If a submission is rejected, review it with **View details**, correct the issue, and submit again by selecting the payables and choosing **Apply disbursement**.
 
 ## Can I submit more than one invoice for the same transaction?
 <a name="faq-duplicate-invoice"></a>
 
 No. The automated validation system includes controls to prevent duplicate invoicing.
 
-## How do Deemed VAT Supply Invoicing and the Tax Portal differ?
+## How do Deemed VAT Supply Invoicing and the invoice tabs on the Tax and invoices page differ?
 <a name="faq-deemed-vs-tax-portal"></a>
 
 AWS Marketplace has launched the following capabilities accessible through AWS Partner Central:
 + **Deemed VAT Supply Invoicing:** Enables Sellers to submit VAT invoices to AWS and receive automated VAT disbursements for deemed supply of Digital Services in the EU, Norway, and the UK. This capability is for Sellers transacting through AWS EMEA SARL branches who must invoice AWS for VAT under deemed supply law.
-+ **Tax Portal:** Provides Sellers centralized access to view, search, filter, and download listing fee and tax invoices issued by AWS. For more information, see [Managing invoices](https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html). This capability is for all Sellers needing the ability to download and reconcile listing fee invoices or tax invoices issued by AWS across any invoicing entity.
++ **Listing fee invoices and Customer invoices tabs:** On the **Tax and invoices** page, provide Sellers centralized access to view, search, filter, and download listing fee and tax invoices issued by AWS. For more information, see [Managing invoices](https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html). This capability is for all Sellers needing the ability to download and reconcile listing fee invoices or tax invoices issued by AWS across any invoicing entity.
 
 The following table summarizes the key differences:
 
-| Dimension | Deemed VAT Supply Invoicing | Tax Portal |
+| Dimension | Deemed VAT Supply Invoicing | Listing fee invoices and Customer invoices tabs |
 | --- | --- | --- |
 | Invoice direction | Seller submits invoices to AWS | Seller retrieves invoices from AWS |
 | Scope | EU, Norway, UK deemed supply transactions | All invoicing entities globally |

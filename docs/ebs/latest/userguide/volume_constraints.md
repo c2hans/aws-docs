@@ -54,7 +54,7 @@ Among other impacts, the partitioning scheme determines how many logical data bl
 ### MBR
 <a name="mbr-partitioning"></a>
 
-MBR uses a 32-bit data structure to store block addresses. This means that each data block is mapped with one of 232 possible integers. The maximum addressable size of a volume is given by the following formula:
+MBR uses a 32-bit data structure to store block addresses. This means that each data block is mapped with one of 2<sup>32</sup> possible integers. The maximum addressable size of a volume is given by the following formula:
 
 ```
 232 × Block size
@@ -71,7 +71,7 @@ Engineering workarounds to increase this 2-TiB limit for MBR volumes have not me
 ### GPT
 <a name="gpt-partitioning"></a>
 
-GPT uses a 64-bit data structure to store block addresses. This means that each data block is mapped with one of 264 possible integers. The maximum addressable size of a volume is given by the following formula:
+GPT uses a 64-bit data structure to store block addresses. This means that each data block is mapped with one of 2<sup>64</sup> possible integers. The maximum addressable size of a volume is given by the following formula:
 
 ```
 264 × Block size
@@ -112,12 +112,12 @@ The following table shows the sector sizes that Amazon EBS advertises for the di
 </thead>
 <tbody>
   <tr><td>All Xen-based instance types</td><td colspan="2">Amazon EBS always advertises 512-byte physical sectors</td></tr>
-  <tr><td>A1 | C5 | C5a | C5ad | C5d | C5n | C6g | C6gd | DL1 | D3 | D3en | G4ad | G4dn | G5 | G5g | I3 | I3en | Inf1 | M5 | M5a | M5ad | M5d | M5dn | M5n | M5zn | M6g | M6gd | P3dn | P4d | P4de | R5 | R5a | R5ad | R5d | R5dn | R5n | R6g | R6gd | T3 | T3a | T4g | U-12tb1 | U-18tb1 | U-24tb1 | U-3tb1 | U-6tb1 | U-9tb1 | X2gd | X2iezn | VT1 | Z1d</td><td>Amazon EBS always advertises 512-byte physical sectors</td><td>Amazon EBS advertises 512-byte or 4-KiB physical sectors 1</td></tr>
-  <tr><td>All other Nitro-based instances</td><td colspan="2">Amazon EBS advertises 512-byte or 4-KiB physical sectors 1</td></tr>
+  <tr><td>A1 | C5 | C5a | C5ad | C5d | C5n | C6g | C6gd | DL1 | D3 | D3en | G4ad | G4dn | G5 | G5g | I3 | I3en | Inf1 | M5 | M5a | M5ad | M5d | M5dn | M5n | M5zn | M6g | M6gd | P3dn | P4d | P4de | R5 | R5a | R5ad | R5d | R5dn | R5n | R6g | R6gd | T3 | T3a | T4g | U-12tb1 | U-18tb1 | U-24tb1 | U-3tb1 | U-6tb1 | U-9tb1 | X2gd | X2iezn | VT1 | Z1d</td><td>Amazon EBS always advertises 512-byte physical sectors</td><td>Amazon EBS advertises 512-byte or 4-KiB physical sectors <sup>1</sup></td></tr>
+  <tr><td>All other Nitro-based instances</td><td colspan="2">Amazon EBS advertises 512-byte or 4-KiB physical sectors <sup>1</sup></td></tr>
 </tbody>
 </table>
 
-1 Depends on the operating system support. See the following section.
+<sup>1</sup> Depends on the operating system support. See the following section.
 
 **Operating system support**
 The following table provides example operating systems and the corresponding physical sector sizes advertised by Amazon EBS. This is **not an exhaustive list**. We recommend that you verify the physical sector size advertised by Amazon EBS in your operating system.
@@ -125,9 +125,9 @@ The following table provides example operating systems and the corresponding phy
 | Operating system | Advertised physical sector size |
 | --- | --- |
 |  +  Amazon Linux with kernel version 4.14 and earlier <br />+  RHEL 7.9 and earlier <br />+  Ubuntu 20.04 and earlier <br />+  Windows 7/Windows Server 2008 and earlier   | 512 byte |
-|  +  Amazon Linux with kernel version 5.3 and later <br />+  RHEL8.8 and later <br />+  Ubuntu 22.04 and later <br />+  Windows 8/Windows Server 2012 and later 1   | 4 KiB |
+|  +  Amazon Linux with kernel version 5.3 and later <br />+  RHEL8.8 and later <br />+  Ubuntu 22.04 and later <br />+  Windows 8/Windows Server 2012 and later <sup>1</sup>   | 4 KiB |
 
-1 For Windows workloads, make sure that you are using the latest version of the [AWS NVMe drivers](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/aws-nvme-drivers.html). Amazon EBS advertises 4-KiB physical sectors with AWS NVMe driver version 1.4.1 and later.
+<sup>1</sup> For Windows workloads, make sure that you are using the latest version of the [AWS NVMe drivers](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/aws-nvme-drivers.html). Amazon EBS advertises 4-KiB physical sectors with AWS NVMe driver version 1.4.1 and later.
 
 ### Non-default block sizes
 <a name="block-size-additional"></a>

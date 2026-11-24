@@ -132,11 +132,9 @@ A DB instance outage can occur when a DB instance is rebooted. It can also occur
  A DB instance reboot occurs when you change a setting that requires a reboot, or when you manually cause a reboot. A reboot can occur immediately if you change a setting and request that the change take effect immediately. Or it can occur during the DB instance's maintenance window.
 
  A DB instance reboot occurs immediately when one of the following occurs:
-+ You change the backup retention period for a DB instance from 0 to a nonzero value or from a nonzero value to 0. You then set **Apply Immediately** to `true`.
 + You change the DB instance class, and **Apply Immediately** is set to `true`.
 
 A DB instance reboot occurs during the maintenance window when one of the following occurs:
-+ You change the backup retention period for a DB instance from 0 to a nonzero value or from a nonzero value to 0, and **Apply Immediately** is set to `false`.
 + You change the DB instance class, and **Apply Immediately** is set to `false`.
 
 When you change a static parameter in a DB parameter group, the change doesn't take effect until the DB instance associated with the parameter group is rebooted. The change requires a manual reboot. The DB instance isn't automatically rebooted during the maintenance window.

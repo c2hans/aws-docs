@@ -50,7 +50,7 @@ Before you start, make sure you have:
 
 1.  **Open the chat panel.**
 
-   1. Press  Ctrl 3  (macOS:  Cmd 3 ) and open the AWS Coding Plugin Chat view.
+   1. Press **Ctrl+3** (macOS: **Cmd+3**) and open the AWS Coding Plugin Chat view.
 
 1.  **Automatic project configuration.**
 

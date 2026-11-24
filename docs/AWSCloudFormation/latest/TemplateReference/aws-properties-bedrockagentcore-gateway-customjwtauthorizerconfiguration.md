@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[AllowedAudience](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-allowedaudience)" : {{[ String, ... ]}},
   "[AllowedClients](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-allowedclients)" : {{[ String, ... ]}},
   "[AllowedScopes](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-allowedscopes)" : {{[ String, ... ]}},
+  "[CertificateConfigurations](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-certificateconfigurations)" : {{[ CertificateConfiguration, ... ]}},
   "[CustomClaims](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-customclaims)" : {{[ CustomClaimValidationType, ... ]}},
   "[DiscoveryUrl](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-discoveryurl)" : {{String}},
   "[PrivateEndpoint](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-privateendpoint)" : {{PrivateEndpoint}}
@@ -40,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [AllowedScopes](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-allowedscopes): {{
     - String}}
+  [CertificateConfigurations](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-certificateconfigurations): {{
+    - CertificateConfiguration}}
   [CustomClaims](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-customclaims): {{
     - CustomClaimValidationType}}
   [DiscoveryUrl](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-discoveryurl): {{String}}
@@ -79,6 +82,14 @@ An array of scopes that are allowed to access the token.
 *Type*: Array of String
 *Maximum*: `255`
 *Minimum*: `1 | 1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CertificateConfigurations`  <a name="cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-certificateconfigurations"></a>
+The private certificate authority (CA) configurations for the identity provider. Use this to have AgentCore Identity trust a private CA when establishing TLS connections to identity provider endpoints. You can specify only one certificate authority configuration in this list. Provide the certificate by reference to an Amazon S3 object or an AWS Secrets Manager secret. You can use this only together with `privateEndpoint`.
+*Required*: No
+*Type*: Array of [CertificateConfiguration](aws-properties-bedrockagentcore-gateway-certificateconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CustomClaims`  <a name="cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-customclaims"></a>

@@ -8,25 +8,25 @@ Amazon Managed Service for Prometheus vends usage metrics to CloudWatch. These m
 
 | CloudWatch metric name | Resource name | CloudWatch namespace | Description |
 | --- | --- | --- | --- |
-| ResourceCount\* | CreateAlertManagerAlertsTPS | `AWS/Usage` | The maximum number of `CreateAlertManagerAlerts` API operations per second, per workspace |
-| ResourceCount\* | DeleteAlertManagerSilencesTPS | `AWS/Usage` | The maximum number of `DeleteAlertManagerSilences` API operations per second, per workspace |
-| ResourceCount\* | GetAlertManagerSilenceTPS | `AWS/Usage` | The maximum number of `GetAlertManagerSilence` API operations per second, per workspace |
-| ResourceCount\* | GetAlertManagerStatusTPS | `AWS/Usage` | The maximum number of `GetAlertManagerStatus` API operations per second, per workspace |
-| ResourceCount\* | GetLabelsTPS | `AWS/Usage` | The maximum number of `GetLabels` API operations per second, per workspace |
-| ResourceCount\* | GetMetricMetadataTPS | `AWS/Usage` | The maximum number of `GetMetricMetadata` API operations per second, per workspace |
-| ResourceCount\* | GetSeriesTPS | `AWS/Usage` | The maximum number of `GetSeries` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | CreateAlertManagerAlertsTPS | `AWS/Usage` | The maximum number of `CreateAlertManagerAlerts` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | DeleteAlertManagerSilencesTPS | `AWS/Usage` | The maximum number of `DeleteAlertManagerSilences` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | GetAlertManagerSilenceTPS | `AWS/Usage` | The maximum number of `GetAlertManagerSilence` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | GetAlertManagerStatusTPS | `AWS/Usage` | The maximum number of `GetAlertManagerStatus` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | GetLabelsTPS | `AWS/Usage` | The maximum number of `GetLabels` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | GetMetricMetadataTPS | `AWS/Usage` | The maximum number of `GetMetricMetadata` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | GetSeriesTPS | `AWS/Usage` | The maximum number of `GetSeries` API operations per second, per workspace |
 | ResourceCount | InhibitionRulesInAlertManagerDefinition | `AWS/Usage` | The maximum number of inhibition rules in alert manager definition file. |
-| ResourceCount\* | ListAlertManagerAlertGroupInfosTPS | `AWS/Usage` | The maximum number of `ListAlertManagerAlertGroupInfos` API operations per second, per workspace |
-| ResourceCount\* | ListAlertManagerAlertGroupsTPS | `AWS/Usage` | The maximum number of `ListAlertManagerAlertGroups` API operations per second, per workspace |
-| ResourceCount\* | ListAlertManagerAlertsTPS | `AWS/Usage` | The maximum number of `ListAlertManagerAlerts` API operations per second, per workspace |
-| ResourceCount\* | ListAlertManagerReceiversTPS | `AWS/Usage` | The maximum number of `ListAlertManagerReceivers` API operations per second, per workspace |
-| ResourceCount\* | ListAlertManagerSilencesTPS | `AWS/Usage` | The maximum number of `ListAlertManagerSilences` API operations per second, per workspace |
-| ResourceCount\* | ListAlertsTPS | `AWS/Usage` | The maximum number of `ListAlerts` API operations per second, per workspace |
-| ResourceCount\* | ListRulesTPS | `AWS/Usage` | The maximum number of `ListRules` API operations per second, per workspace |
-| ResourceCount\* | PutAlertManagerSilencesTPS | `AWS/Usage` | The maximum number of `PutAlertManagerSilences` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListAlertManagerAlertGroupInfosTPS | `AWS/Usage` | The maximum number of `ListAlertManagerAlertGroupInfos` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListAlertManagerAlertGroupsTPS | `AWS/Usage` | The maximum number of `ListAlertManagerAlertGroups` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListAlertManagerAlertsTPS | `AWS/Usage` | The maximum number of `ListAlertManagerAlerts` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListAlertManagerReceiversTPS | `AWS/Usage` | The maximum number of `ListAlertManagerReceivers` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListAlertManagerSilencesTPS | `AWS/Usage` | The maximum number of `ListAlertManagerSilences` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListAlertsTPS | `AWS/Usage` | The maximum number of `ListAlerts` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | ListRulesTPS | `AWS/Usage` | The maximum number of `ListRules` API operations per second, per workspace |
+| ResourceCount<sup>\*</sup> | PutAlertManagerSilencesTPS | `AWS/Usage` | The maximum number of `PutAlertManagerSilences` API operations per second, per workspace |
 | ResourceCount | HAReplicaGroupCount | `AWS/Usage` | Number of high availability replica groups |
-| ResourceCount\* | QueryMetricsTPS | `AWS/Usage` | Query operations per second |
-| ResourceCount\* | RemoteWriteTPS | `AWS/Usage` | Remote write operations per second |
+| ResourceCount<sup>\*</sup> | QueryMetricsTPS | `AWS/Usage` | Query operations per second |
+| ResourceCount<sup>\*</sup> | RemoteWriteTPS | `AWS/Usage` | Remote write operations per second |
 | ResourceCount | ActiveAlerts | `AWS/Usage` | Number of active alerts per workspace<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum |
 | ResourceCount | ActiveSeries | `AWS/Usage` | Number of active series per workspace<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum |
 | ResourceCount | AlertAggregationGroupSize | `AWS/Usage` | The maximum size of an alert aggregation group in alert manager definition file. Each label value combination of `group_by` would create an aggregation group. |
@@ -54,24 +54,24 @@ Amazon Managed Service for Prometheus vends usage metrics to CloudWatch. These m
 | AnomalyDetectorEvaluationFailures | WorkspaceId, AnomalyDetectorId | `AWS/Prometheus` | Number of anomaly detector failures in the interval<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | AnomalyDetectorLastEvaluationDuration | WorkspaceId, AnomalyDetectorId | `AWS/Prometheus` | Duration of an anomaly detector’s last evaluation<br />Units: Seconds<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | AnomalyDetectorMissedEvaluations | WorkspaceId, AnomalyDetectorId | `AWS/Prometheus` | Number of missed anomaly detector evaluations in the interval<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
-| DiscardedSamples\*\* |  - | `AWS/Prometheus` | Number of discarded samples by reason<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
-| DiscardedSeries\*\* |  - | `AWS/Prometheus` | Number of series that contain a discarded sample by reason<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
+| DiscardedSamples<sup>\*\*</sup> |  - | `AWS/Prometheus` | Number of discarded samples by reason<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
+| DiscardedSeries<sup>\*\*</sup> |  - | `AWS/Prometheus` | Number of series that contain a discarded sample by reason<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | DiscardedSamplesPerLabelSet |  - | `AWS/Prometheus` | The count of discarded samples for each user-defined label set<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | DiscardedSeriesPerLabelSet |  - | `AWS/Prometheus` | The count of series that contain a discarded sample for each user-defined label set<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | IngestionRatePerLabelSet |  - | `AWS/Prometheus` | The ingestion rate for each user-defined label set<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | NativeHistogramIngestedBucketsRate |  - | `AWS/Prometheus` | Rate of populated buckets received per second across all native histogram samples. Excludes rejected buckets.<br />Units: Count per second<br />Valid Statistics: Average, Minimum, Maximum |
 | NativeHistogramReducedResolutionCount |  - | `AWS/Prometheus` | Count of native histogram samples with automatically reduced bucket resolution. Resolution is reduced when a sample exceeds the maximum bucket count limit.<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | OutOfOrderIngestionRate |  - | `AWS/Prometheus` | Out-of-order sample ingestion rate<br />Units: Count per second<br />Valid Statistics: Average, Minimum, Maximum, Sum |
-| OutOfOrderSampleAge\*\*\* |  - | `AWS/Prometheus` | The difference between an out-of-order sample's timestamp and its ingestion time, which indicates how old the sample is when ingested.<br />Units: Seconds<br />Valid Statistics: Average, Minimum, Maximum, Sum |
+| OutOfOrderSampleAge<sup>\*\*\*</sup> |  - | `AWS/Prometheus` | The difference between an out-of-order sample's timestamp and its ingestion time, which indicates how old the sample is when ingested.<br />Units: Seconds<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | QuerySamplesProcessed |  - | `AWS/Prometheus` | Number of query samples processed<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | RuleEvaluations |  - | `AWS/Prometheus` | Total number of rule evaluations<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | RuleEvaluationFailures |  - | `AWS/Prometheus` | Number of rule evaluation failures in the interval<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | RuleGroupIterationsMissed |  - | `AWS/Prometheus` | Number of Rule Group iterations missed in the interval.<br />Units: Count<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 | RuleGroupLastEvaluationDuration |  - | `AWS/Prometheus` | Duration of a rule group's last evaluation.<br />Units: Seconds<br />Valid Statistics: Average, Minimum, Maximum, Sum |
 
-\*TPS metrics are generated every minute and are a per-second average over that minute. Short burst periods will not be captured in the TPS metrics.
+<sup>\*</sup>TPS metrics are generated every minute and are a per-second average over that minute. Short burst periods will not be captured in the TPS metrics.
 
-\*\*Some of the reasons that cause samples to be discarded are as follows. Not all reasons below appear in the DiscardedSeries metric.
+<sup>\*\*</sup>Some of the reasons that cause samples to be discarded are as follows. Not all reasons below appear in the DiscardedSeries metric.
 
 |  Reason  |  Meaning  |
 | --- | --- |
@@ -97,7 +97,7 @@ Amazon Managed Service for Prometheus vends usage metrics to CloudWatch. These m
 | native\_histogram\_rate\_limited | Native histogram sample was rejected because the native histogram ingestion rate limit was reached. |
 | per\_user\_native\_histogram\_series\_limit | User has hit the native histogram active series limit per workspace. |
 
-\*\*\*The `OutOfOrderSampleAge` metric includes a `Percentile` dimension. You can use this metric to determine the appropriate out of order time window for your workspace. The valid values for the `Percentile` dimension are as follows.
+<sup>\*\*\*</sup>The `OutOfOrderSampleAge` metric includes a `Percentile` dimension. You can use this metric to determine the appropriate out of order time window for your workspace. The valid values for the `Percentile` dimension are as follows.
 
 |  Percentile  |  Description  |
 | --- | --- |

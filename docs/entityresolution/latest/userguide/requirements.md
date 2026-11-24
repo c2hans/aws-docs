@@ -49,11 +49,11 @@ The following is an example of validations for identifying provider attributes.
 + Either the `FirstName` or `LastName` attribute is mandatory.
 + If the `Email` attribute is present, it must be hashed.
 
-As a provider, you must identify the attributes in your provider service product and then communicate these attributes to the AWS Entity Resolution Business Development team at aws-entity-resolution-bd@amazon.com for additional validation before proceeding.
+As a provider, you must identify the attributes in your provider service product and then communicate these attributes to the AWS Entity Resolution Business Development team at [aws-entity-resolution-bd@amazon.com](mailto:aws-entity-resolution-bd@amazon.com) for additional validation before proceeding.
 
 ## Request the AWS Entity Resolution OpenAPI specification
 <a name="request-openapi-spec"></a>
 
 AWS Entity Resolution has an OpenAPI specification that you as a provider can use as a handshake that contains the APIs involved in the integration. For more information, see [Using the AWS Entity Resolution OpenAPI specification](entity-resolution-open-api.md).
 
-To request the OpenAPI definition, contact the AWS Entity Resolution Business Development team at aws-entity-resolution-bd@amazon.com.
+To request the OpenAPI definition, contact the AWS Entity Resolution Business Development team at [aws-entity-resolution-bd@amazon.com](mailto:aws-entity-resolution-bd@amazon.com).

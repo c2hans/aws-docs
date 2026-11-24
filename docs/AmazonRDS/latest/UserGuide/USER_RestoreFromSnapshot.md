@@ -15,12 +15,12 @@ To help mitigate the effects of lazy loading on tables to which you require quic
 
 When you restore a DB instance from a DB snapshot, the volumes use lazy loading. When you restore a DB instance to a point in time, create a read replica, or convert a Single-AZ deployment to a Multi-AZ DB instance deployment, Amazon RDS instead initializes the new volumes at a rate of up to 4 TiB per hour for volumes that use gp3 or io2 Block Express storage. For more information, see [Storage volume initialization](CHAP_Storage.md#CHAP_Storage.initialization).
 
-To monitor initialization progress on the restored DB instance, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+To monitor initialization progress on the restored DB instance, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status).
 
 **Important**
 Starting July 1, 2026, you can no longer restore a snapshot to magnetic storage. When you restore a snapshot of a magnetic volume, you must choose a different storage type, such as General Purpose SSD (gp3) or Provisioned IOPS SSD (io2 Block Express). For more information about Amazon RDS storage types, see [Amazon RDS DB instance storage](CHAP_Storage.md).
 
-You can restore a DB instance and use a different storage type than the source DB snapshot. In this case, the restore process is slower because of the additional work required to migrate the data to the new storage type.
+You can restore a DB instance and use a different storage type than the source DB snapshot. In some cases, the restore process can be slower because of the additional work required to migrate the data to the new storage type.
 
 You can use CloudFormation to restore a DB instance from a DB instance snapshot. For more information, see [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbinstance.html) in the *AWS CloudFormation User Guide*.
 

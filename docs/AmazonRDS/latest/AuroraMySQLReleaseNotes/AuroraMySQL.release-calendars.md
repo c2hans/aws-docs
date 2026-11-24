@@ -69,11 +69,11 @@ Amazon RDS Extended Support charges apply only to certain minor versions after a
 |  **3.09** (Compatible with Community MySQL 8.0.40) | May 14, 2025 | August 31, 2026 |
 |  **3.08** (Compatible with Community MySQL 8.0.39) | November 18, 2024 | August 31, 2026 |
 |  **3.04** (Compatible with Community MySQL 8.0.28) (LTS) | July 31, 2023 | October 31, 2026 |
-|  **2.121 ** (Compatible with Community MySQL 5.7.40 or 5.7.442)  | July 25, 2023 | October 31, 2024 |
-|  **2.111 ** (Compatible with Community MySQL 5.7.12) | October 25, 2022 | October 31, 2024 |
+|  **2.12<sup>1</sup> ** (Compatible with Community MySQL 5.7.40 or 5.7.44<sup>2</sup>)  | July 25, 2023 | October 31, 2024 |
+|  **2.11<sup>1</sup> ** (Compatible with Community MySQL 5.7.12) | October 25, 2022 | October 31, 2024 |
 
 LTS – Aurora MySQL long-term support (LTS) versions. For more information, see [Long-term support (LTS) and beta releases for Amazon Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Update.SpecialVersions.html).
 
- 1 This minor version will continue to be available when the major version is in Amazon RDS Extended Support.
+ <sup>1</sup> This minor version will continue to be available when the major version is in Amazon RDS Extended Support.
 
- 2 Aurora MySQL 2.12 versions through 2.12.1 are compatible with MySQL version 5.7.40, and versions 2.12.2 and higher are compatible with MySQL version 5.7.44.
+ <sup>2</sup> Aurora MySQL 2.12 versions through 2.12.1 are compatible with MySQL version 5.7.40, and versions 2.12.2 and higher are compatible with MySQL version 5.7.44.

@@ -31,8 +31,8 @@ The following procedures describe how to view asset data on the **Assets** page 
 1. Do any of the following actions to adjust the displayed time range for your data:<a name="modify-visualization-time-range"></a>
    + <a name="modify-visualization-zoom-in-selected"></a>Click and drag a time range on one of the line or bar charts to zoom in to the selected time range.
    + <a name="modify-visualization-zoom-in-point"></a>Double-click on a time range to zoom in on the selected point.
-   + <a name="modify-visualization-zoom-out-point"></a>Press Shift and then double-click on a time range to zoom out from the selected point.
-   + <a name="modify-visualization-shift-range"></a>Press Shift and then drag the mouse on a time range to shift the range left or right.
+   + <a name="modify-visualization-zoom-out-point"></a>Press **Shift** and then double-click on a time range to zoom out from the selected point.
+   + <a name="modify-visualization-shift-range"></a>Press **Shift** and then drag the mouse on a time range to shift the range left or right.
    + <a name="modify-visualization-predefined-time"></a>Use the drop-down list to choose a predefined time range to view.
    + Use the time range control to open the calendar and specify a start and end time for your range.
 

@@ -235,6 +235,7 @@ All of the following instance types support EFA. Additionally, the tables indica
 | p6-b200.48xlarge | Yes | Yes | Yes | Yes |
 | p6-b300.48xlarge | Yes | Yes | Yes | Yes |
 | p6e-gb200.36xlarge | Yes | Yes | Yes | No |
+| trn3.48xlarge | Yes | Yes | No | No |
 | High Performance Computing |
 | --- |
 | hpc8a.96xlarge | Yes | Yes | No | No |
@@ -499,15 +500,15 @@ Some of the listed operating systems might not be supported with Intel MPI. If y
 
 EFAs have the following limitations:
 + RDMA write is not supported with all instance types. For more information, see [Supported instance types](#efa-instance-types).
-+ EFA traffic1 between P4d/P4de/DL1 instances and other instance types is currently not supported.
++ EFA traffic<sup>1</sup> between P4d/P4de/DL1 instances and other instance types is currently not supported.
 + [Instance types that support multiple network cards](using-eni.md#network-cards) can be configured with one EFA per network card. All other supported instance types support only one EFA per instance.
 + `c7g.16xlarge`, `m7g.16xlarge`, and `r7g.16xlarge` Dedicated Instances and Dedicated Hosts are not supported when an EFA is attached.
-+ EFA traffic1 can't cross Availability Zones or VPCs. This does not apply to normal IP traffic from the ENA device of an EFA interface.
-+ EFA traffic1 is not routable. Normal IP traffic from the ENA device of an EFA interface remains routable.
++ EFA traffic<sup>1</sup> can't cross Availability Zones or VPCs. This does not apply to normal IP traffic from the ENA device of an EFA interface.
++ EFA traffic<sup>1</sup> is not routable. Normal IP traffic from the ENA device of an EFA interface remains routable.
 + EFA is not supported on AWS Outposts.
 + The EFA device of an EFA (EFA with ENA) interface is supported on Windows instances only for AWS Cloud Digital Interface Software Development Kit (AWS CDI SDK) based applications. If you attach an EFA (EFA with ENA) interface to a Windows instance for non-CDI SDK based applications, it functions as an ENA interface, without the added EFA device capabilities. The EFA-only interface is not supported by AWS CDI based applications on Windows or Linux. For more information, see the [AWS Cloud Digital Interface Software Development Kit (AWS CDI SDK) User Guide](https://docs.aws.amazon.com/CDI-SDK/latest/ug/what-is.html).
 
-1*EFA traffic* refers to the traffic transmitted through the EFA device of either an EFA (EFA with ENA) or EFA-only interface.
+<sup>1</sup>*EFA traffic* refers to the traffic transmitted through the EFA device of either an EFA (EFA with ENA) or EFA-only interface.
 
 ## EFA pricing
 <a name="efa-pricing"></a>

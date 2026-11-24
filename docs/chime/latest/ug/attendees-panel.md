@@ -89,7 +89,7 @@ You can add an attendee at any time during a meeting. However, the attendee must
 
 **To add an attendee**
 
-1. Choose the **Add attendee** icon at the top of the panel ( ![An icon showing a plus sign surrounded by a square.](https://docs.aws.amazon.com/chime/latest/ug/images/attendees-add-icon.png)), or press  Ctrl N .
+1. Choose the **Add attendee** icon at the top of the panel ( ![An icon showing a plus sign surrounded by a square.](https://docs.aws.amazon.com/chime/latest/ug/images/attendees-add-icon.png)), or press **Ctrl+N**.
 
 1. In the **Add attendees** dialog box, enter and select the name of the attendee you want to add. Then, choose **Add**.
 

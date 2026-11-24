@@ -24,10 +24,10 @@ The following code samples show you how to use the [AWS CloudHSM JCE provider](j
 + [Generate Asymmetric Keys](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/AsymmetricKeys.java)
 + [Encrypt and decrypt with AES-GCM](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/AESGCMEncryptDecryptRunner.java)
 + [Encrypt and decrypt with AES-CTR](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/AESCTREncryptDecryptRunner.java)
-+ [Encrypt and decrypt with DESede-ECB](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/DESedeECBEncryptDecryptRunner.java)see note [1](#java-samples-code-5-note-1)
++ [Encrypt and decrypt with DESede-ECB](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/DESedeECBEncryptDecryptRunner.java)<sup>see note [1](#java-samples-code-5-note-1)</sup>
 + [Sign and Verify with RSA Keys](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/RSAOperationsRunner.java)
 + [Sign and Verify with EC Keys](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/ECOperationsRunner.java)
-+ [Sign and Verify with EdDSA Keys](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/EdDSAOperationsRunner.java)see note [2](#java-samples-code-5-note-2)
++ [Sign and Verify with EdDSA Keys](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/EdDSAOperationsRunner.java)<sup>see note [2](#java-samples-code-5-note-2)</sup>
 + [Sign and Verify with ML-DSA Keys](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/MldsaOperationsRunner.java)
 + [Use supported key attributes](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/KeyAttributesRunner.java)
 + [Use the CloudHSM key store](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/KeyStoreExampleRunner.java)

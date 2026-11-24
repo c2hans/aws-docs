@@ -22,6 +22,8 @@ The guidance provided in this section is intended for users who know generally h
 + [AWS WAF Fraud Control account creation fraud prevention (ACFP)](waf-acfp.md)
 + [AWS WAF Fraud Control account takeover prevention (ATP)](waf-atp.md)
 + [AWS WAF Bot Control](waf-bot-control.md)
++ [AWS WAF API Security](waf-api-security.md)
++ [AWS WAF AI Security](waf-ai-security.md)
 + [AWS WAF Distributed Denial of Service (DDoS) prevention](waf-anti-ddos.md)
 + [Client application integrations in AWS WAF](waf-application-integration.md)
 + [CAPTCHA and Challenge in AWS WAF](waf-captcha-and-challenge.md)

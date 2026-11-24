@@ -78,6 +78,7 @@ The following example shows the response for a completed run of a private WDL wo
 | status | Current run status (see the preceding table). |
 | failureReason | Why the run failed. Returned for a FAILED run. See [Run failure reasons](workflows-run-errors.md). |
 | statusMessage | Detail about the current status. For some failures it names the resource involved, such as a container image URI. |
+| parametersUri | GetRun returns this field instead of parameters for a run that you started with parametersUri. The value is a presigned HTTPS URL for the stored copy of your parameters file, which expires after at most 10 minutes, or the s3:// URI that you submitted. Treat the presigned URL as a credential. See [Get the parameters of a run](workflows-run-inputs.md#run-parameters-uri-getrun). |
 | logLocation | The CloudWatch log stream ARNs for the run: runLogStream for the run log, and engineLogStream for the engine log. |
 | workflowType | Whether the workflow is PRIVATE or READY2RUN. |
 | accelerators | Accelerator type used (for example, GPU), if applicable. |

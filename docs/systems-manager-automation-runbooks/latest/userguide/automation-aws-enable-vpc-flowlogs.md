@@ -79,89 +79,52 @@ Linux, macOS, Windows
 **Required IAM permissions**
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
-+  `ssm:StartAutomationExecution`
-+  `ssm:GetAutomationExecution`
 +  `ec2:CreateFlowLogs`
-+  `ec2:DeleteFlowLogs`
-+  `ec2:DescribeFlowLogs`
-+  `iam:AttachRolePolicy`
 +  `iam:CreateRole`
-+  `iam:CreatePolicy`
-+  `iam:DeletePolicy`
 +  `iam:DeleteRole`
-+  `iam:DeleteRolePolicy`
-+  `iam:GetPolicy`
 +  `iam:GetRole`
 +  `iam:TagRole`
 +  `iam:PassRole`
-+  `iam:PutRolePolicy`
-+  `iam:UpdateRole`
 +  `logs:CreateLogDelivery`
 +  `logs:CreateLogGroup`
-+  `logs:DeleteLogDelivery`
 +  `logs:DeleteLogGroup`
 +  `logs:DescribeLogGroups`
-+  `logs:DescribeLogStreams`
++  `logs:PutRetentionPolicy`
++  `logs:TagResource`
 +  `s3:GetBucketLocation`
 +  `s3:GetBucketAcl`
 +  `s3:GetBucketPublicAccessBlock`
 +  `s3:GetBucketPolicyStatus`
-+  `s3:GetBucketAcl`
-+  `s3:ListBucket`
-+  `s3:PutObject`
++  `s3:GetEncryptionConfiguration`
++  `s3:GetAccountPublicAccessBlock`
 
 Sample Policy
 
-------
-#### [ JSON ]
-
-****
-
 ```json
 {
-    "Version":"2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
-        {
-            "Sid": "SSMExecutionPermissions",
-            "Effect": "Allow",
-            "Action": [
-                "ssm:StartAutomationExecution",
-                "ssm:GetAutomationExecution"
-            ],
-            "Resource": "*"
-        },
         {
             "Sid": "EC2FlowLogsPermissions",
             "Effect": "Allow",
-            "Action": [
-                "ec2:CreateFlowLogs",
-                "ec2:DeleteFlowLogs",
-                "ec2:DescribeFlowLogs"
-            ],
+            "Action": "ec2:CreateFlowLogs",
             "Resource": [
-            "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:{{instance}}/{{resource-id}}",
-            "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:{{subnet}}/{{resource-id}}",
-            "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:{{vpc}}/{{resource-id}}",
-            "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:{{transit-gateway}}/{{resource-id}}",
-            "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:{{transit-gateway-attachment}}/{{resource-id}}"
-          ]
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:subnet/{{resource-id}}",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:vpc/{{resource-id}}",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:transit-gateway/{{resource-id}}",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:transit-gateway-attachment/{{resource-id}}",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:network-interface/*",
+                "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:vpc-flow-log/*"
+            ]
         },
         {
             "Sid": "IAMCreateRolePermissions",
             "Effect": "Allow",
             "Action": [
-                "iam:AttachRolePolicy",
                 "iam:CreateRole",
-                "iam:CreatePolicy",
-                "iam:DeletePolicy",
                 "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:GetPolicy",
                 "iam:GetRole",
-                "iam:TagRole",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:UpdateRole"
+                "iam:TagRole"
             ],
             "Resource": [
                 "arn:aws:iam::{{111122223333}}:role/{{role-name}}",
@@ -169,19 +132,32 @@ Sample Policy
             ]
         },
         {
+            "Sid": "IAMPassRoleToFlowLogs",
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": [
+                "arn:aws:iam::{{111122223333}}:role/{{role-name}}",
+                "arn:aws:iam::{{111122223333}}:role/AWSSupportCreateFlowLogsRole"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": "vpc-flow-logs.amazonaws.com"
+                }
+            }
+        },
+        {
             "Sid": "CloudWatchLogsPermissions",
             "Effect": "Allow",
             "Action": [
-                "logs:CreateLogDelivery",
                 "logs:CreateLogGroup",
-                "logs:DeleteLogDelivery",
                 "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:DescribeLogStreams"
+                "logs:PutRetentionPolicy",
+                "logs:TagResource"
             ],
             "Resource": [
                 "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{log-group-name}}",
-                "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{log-group-name}}:*"
+                "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{log-group-name}}:*",
+                "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:AWSSupport-EnableVPCFlowLogs-*"
             ]
         },
         {
@@ -190,22 +166,36 @@ Sample Policy
             "Action": [
                 "s3:GetBucketLocation",
                 "s3:GetBucketPublicAccessBlock",
-                "s3:GetAccountPublicAccessBlock",
                 "s3:GetBucketPolicyStatus",
                 "s3:GetBucketAcl",
-                "s3:ListBucket",
-                "s3:PutObject"
+                "s3:GetEncryptionConfiguration"
             ],
-            "Resource": [
-                "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
-                "arn:aws:s3:::{{amzn-s3-demo-bucket}}/*"
-            ]
+            "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
+        },
+        {
+            "Sid": "S3AccountPublicAccessBlock",
+            "Effect": "Allow",
+            "Action": "s3:GetAccountPublicAccessBlock",
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudWatchLogsDelivery",
+            "Effect": "Allow",
+            "Action": "logs:CreateLogDelivery",
+            "Resource": "*"
+        },
+        {
+            "Sid": "DescribeLogGroups",
+            "Effect": "Allow",
+            "Action": "logs:DescribeLogGroups",
+            "Resource": "*"
         }
     ]
 }
 ```
 
-------
+**Note**
+If a run partly succeeds and then fails, the runbook can't delete the flow logs it already created, because this policy does not grant `ec2:DeleteFlowLogs`. Use `describe-flow-logs` on the target resources to find flow logs created after the run started, and delete them yourself.
 
  **Document Steps**
 +  `aws:branch` - Branches based on the value specified for the `LogDestinationType` parameter.

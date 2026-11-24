@@ -7,7 +7,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.
 ## Overview
 <a name="data-retention-overview"></a>
 
-Amazon Bedrock gives you explicit control over whether the prompts and outputs from your inference requests are retained. You can configure data retention in a given AWS Region at the account level or project level, and the setting is enforced consistently across the Messages, Chat Completions, and Responses APIs. The setting is per-Region: it governs every request in the Region where you set it and does not propagate to other Regions. A Region you have not configured remains at `inherit` and falls back to each model's default.
+Amazon Bedrock gives you explicit control over whether the prompts and outputs from your inference requests are retained. You can configure data retention in a given AWS Region at the account level or project level, and the setting is enforced consistently across the Messages, Chat Completions, and Responses APIs, and the InvokeModel and Converse APIs on the bedrock-runtime endpoint. The setting is per-Region: it governs every request in the Region where you set it and does not propagate to other Regions. A Region you have not configured remains at `inherit` and falls back to each model's default.
+
+Choose the mode that matches your policy. If your policy prohibits retention, choose `none`. If you accept each model's standard retention, choose `default`. To use models that require AWS automated review or human review, choose `aws_review`. Your retention mode and your trusted access program enrollment are separate, and changing one doesn't change the other. Some programs change where Amazon Bedrock stores retained inputs and outputs and who reviews them, so read the program's page before you enroll.
 
 Your data retention configuration is yours to manage. If your account in a specific Region or project is configured for zero data retention (`data_retention_mode: none`) and you invoke a model that requires retention, Amazon Bedrock will block the request and return an error — you always control your retention policy.
 
@@ -24,9 +26,9 @@ Amazon Bedrock does not share your content with model providers for any current 
 | **Mode** | **Behavior** |
 | --- | --- |
 | none | Zero data retention. No request or response data is written to durable storage by AWS or shared with the model provider. On the Responses API, store defaults to false and store=true is rejected. Background mode is not available. Chat Completions and Messages requests are never retained. |
-| default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior; if ZDR applied previously, then ZDR still applies. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer through `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
-| aws\_review | This mode allows your inputs and outputs to be retained for human review by AWS. Review is carried out by AWS within the AWS boundary — the model provider does not review your content, and your content is not shared with the provider. Some model providers require Amazon to conduct human review as a condition of access to their models, and this mode is required for access to those models. If a model does not require human review, AWS will not review your content.<br />See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
-| `provider_data_share`<br />**(legacy)** | **This mode is legacy, and Amazon Bedrock does not share your content with model providers today.** Setting this mode does not cause your inputs or outputs to be shared with a model provider. New configurations should use `aws_review`.<br />**If you are already set to `provider_data_share`, you do not need to change anything** — it sits above `aws_review` in the ordering below, so it continues to satisfy every model that requires human review. See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
+| default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer through `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
+| aws\_review | This mode allows your inputs and outputs to be retained for automated or human review by AWS, unless a trusted access program changes who reviews them. Review is carried out by AWS within the AWS boundary — the model provider does not review your content, and your inputs and outputs are not shared with the provider. Some model providers require Amazon to conduct human review as a condition of access to their models, and this mode is required for access to those models. If a model does not require human review, AWS will not review your content.<br />For more information, see [Automated review and human review](automated-review-human-review.md). |
+| `provider_data_share`<br />**(legacy)** | **This mode is legacy, and Amazon Bedrock does not share your content with model providers today.** Setting this mode does not cause your inputs or outputs to be shared with a model provider. New configurations should use `aws_review`.<br />**If you are already set to `provider_data_share`, you do not need to change anything** — it sits above `aws_review` in the ordering below, so it continues to satisfy every model that requires human review. |
 | inherit | No opinion at this scope — defer to a broader scope. This is the default for new accounts and projects. |
 
 **Human review: `aws_review` and legacy `provider_data_share`**
@@ -34,9 +36,9 @@ Some model providers require that inputs and outputs be available for human revi
 
 | **Mode** | **Who reviews your content** | **Does your content leave AWS?** |
 | --- | --- | --- |
-| aws\_review | AWS | No |
+| aws\_review | AWS, unless a trusted access program changes it to customer review | No |
 | provider\_data\_share (legacy) | No one — provider review is not supported today | No |
-AWS reviews content only for models whose provider requires human review. Sharing content with model providers is not supported today, so `provider_data_share` grants a permission that is not exercised — use `aws_review` instead.
+AWS reviews content only for models whose provider requires human review. Sharing content with model providers is not supported today, so `provider_data_share` grants a permission that is not exercised — use `aws_review` instead. To learn how Amazon Bedrock reviews your inputs and outputs, who reviews them, and what information the model provider receives, see [Automated review and human review](automated-review-human-review.md).
 
 ## How modes are ordered
 <a name="data-retention-mode-ordering"></a>
@@ -55,6 +57,8 @@ A model is available to you when your effective mode is at or above the mode tha
 If your account or project is already set to `provider_data_share`, you do not need to take any action to continue using models that require `aws_review`, including Claude Fable 5, Claude Fable 5.1, and Claude Fable 5.2. Because `provider_data_share` is the more permissive setting, it continues to satisfy those models' requirement.
 Moving from `provider_data_share` to `aws_review` is nonetheless worth doing where you can: it states the behavior that actually applies, since content sharing with model providers is not supported today.
 
+Your mode sets the most retention that you allow. It doesn't cause Amazon Bedrock to retain inputs and outputs for a model that can process your requests without retention.
+
 **Important**
 Configuring your account or project to `aws_review` does *not* mean all models will start retaining your content for review. Your configured mode sets what you allow — each model independently declares which modes it supports through `allowed_modes`. Most models currently do not require human review. The interaction works as follows:
 If a model's `allowed_modes` includes `none`, we won't persist anything.
@@ -67,7 +71,7 @@ Setting the legacy `provider_data_share` does not cause your content to be share
 <a name="data-retention-resolution"></a>
 
 Data retention is configured at two scopes, with the model's own default as the fallback:
-+ **Project** (most specific) — set through `POST /v1/organization/projects/{project_id}`
++ **Project** (most specific) — set through `POST /v1/organization/projects/{project_id}` on the bedrock-mantle endpoint, or through `CreateProject` or `UpdateProject` for projects that you use with the bedrock-runtime endpoint
 + **Account** (at the Region level) — set through `PUT /v1/data_retention`
 + **Model default** (least specific, read-only) — the model's built-in default
 
@@ -104,7 +108,9 @@ curl -X PUT https://bedrock-mantle.us-east-1.api.aws/v1/data_retention \
 ### Set project-level data retention
 <a name="data-retention-set-project"></a>
 
-Projects are specific to the bedrock-mantle endpoint. The Bedrock control plane and Runtime APIs have no project concept, so bedrock-runtime requests cannot be project-scoped.
+You can set a data retention mode on a project. Unless the mode is `inherit`, it takes precedence over your account mode for requests that you send through the project. To create projects and send requests through them, see [Projects](projects.md).
+
+For a project on the bedrock-mantle endpoint, set `data_retention` on the project.
 
 ```
 curl https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects/proj_abc123 \
@@ -113,22 +119,12 @@ curl https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects/proj_abc1
   -d '{ "data_retention": { "mode": "aws_review" } }'
 ```
 
-To invoke models with your desired data retention mode on a bedrock-runtime endpoint, set your account data retention mode in that Region using the Bedrock Control Plane API.
+For a project on the bedrock-runtime endpoint, set `dataRetention` with `UpdateProject`, or when you create the project with `CreateProject`.
 
-```
-curl -X PUT https://bedrock.us-east-1.amazonaws.com/data-retention \
-  -H "Authorization: Bearer $AWS_BEARER_TOKEN_BEDROCK" \
-  -H "Content-Type: application/json" \
-  -d '{ "mode": "aws_review" }'
-```
-
-**Response:**
-
-```json
-{
-  "mode": "aws_review",
-  "updated_at": "2026-06-07T20:19:44.723Z"
-}
+```bash
+aws bedrock update-project \
+    --project-identifier {{proj_abcdefghijklmnopqrst}} \
+    --data-retention mode=aws_review
 ```
 
 ### Check your current configuration
@@ -150,6 +146,12 @@ To check your current configuration on a bedrock-runtime endpoint, use the Bedro
 # Account level
 curl https://bedrock.us-east-1.amazonaws.com/data-retention \
   -H "Authorization: Bearer $AWS_BEARER_TOKEN_BEDROCK"
+```
+
+To check a project that you use with the bedrock-runtime endpoint, run the following command. The `dataRetention` field in the response shows the project's mode.
+
+```bash
+aws bedrock get-project --project-identifier {{proj_abcdefghijklmnopqrst}}
 ```
 
 ### Check a model's effective mode and allowed modes
@@ -184,9 +186,11 @@ The Bedrock control plane does not expose a per-model retention signal.
 
 Each model declares the retention modes that satisfy its requirement through `allowed_modes`, which lists every mode at or above the minimum the model needs. If your effective mode sits below what the model requires — see [How modes are ordered](#data-retention-mode-ordering) — the model will appear as `status: "unavailable"` in the models list on the bedrock-mantle endpoint, and requests to it on the bedrock-runtime endpoint will fail with a `ValidationException` error.
 
-**Example:** Claude Fable 5, Claude Fable 5.1, and Claude Fable 5.2 require human review (`allowed_modes: ["aws_review", "provider_data_share"]`). You must explicitly set your data retention mode to `aws_review`, or to the legacy `provider_data_share`, before you can invoke these models. If your effective mode is `none` or `default`, these models will be unavailable.
+**Example:** Claude Fable 5, Claude Fable 5.1, and Claude Fable 5.2 require human review (`allowed_modes: ["aws_review", "provider_data_share"]`).
 
-By setting `aws_review`, you are explicitly instructing us to retain your inputs and outputs so that AWS can perform the human review the model provider requires as a condition of access. Your content is not shared with the model provider. See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
+You must explicitly set your data retention mode to `aws_review`, or to the legacy `provider_data_share`, before you can invoke these models, including when your account is enrolled in Anthropic Enterprise Frontier Safeguards (EFS) or Anthropic Enterprise Data Controls (EDC). If your effective mode is `none` or `default`, or if you haven't set a mode, these models will be unavailable. If your account is approved for ZDR on the model, you can also use `none` or `default`.
+
+By setting `aws_review`, you are explicitly instructing us to retain your inputs and outputs so that AWS can perform the human review the model provider requires as a condition of access. Your content is not shared with the model provider. If a trusted access program that you're enrolled in changes who reviews your inputs and outputs, the program's page describes it.
 
 **Note**
 At launch, there is no console UI for configuring data retention. Customers must use the API (see "Configuring data retention" above) or the Bedrock SDK.
@@ -251,7 +255,7 @@ Some models require data retention for safety and abuse-prevention purposes. If 
 Accounts approved for ZDR on a specific model will see `"none"` included in that model's `allowed_modes`.
 
 **Anthropic Claude models**
-ZDR for Claude models that require data retention is granted to customers who are eligible for the Enterprise Frontier Safeguards program. To find out whether you're eligible, contact your AWS account team or AWS Support. For more information, see [Model-specific abuse detection](abuse-detection.md#abuse-detection-model-specific).
+If you're eligible for Anthropic Enterprise Frontier Safeguards (EFS), you can get ZDR for certain Claude models that require data retention. If you enroll in EFS or Anthropic Enterprise Data Controls (EDC) without ZDR, or after your ZDR period ends, Amazon Bedrock retains your inputs and outputs for those models. The program's page describes where Amazon Bedrock stores them, for how long, and who reviews them. For more information, see [Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC) for Anthropic models](anthropic-efs-enterprise-data-controls.md) and [Model-specific abuse detection](abuse-detection.md#abuse-detection-model-specific).
 
 ## Enforcing retention policy with IAM
 <a name="data-retention-iam"></a>
@@ -283,7 +287,9 @@ You can enforce a data retention policy across your organization using IAM polic
 {
     "Effect": "Deny",
     "Action": [
-        "bedrock:PutAccountDataRetention"
+        "bedrock:PutAccountDataRetention",
+        "bedrock:CreateProject",
+        "bedrock:UpdateProject"
     ],
     "Resource": "*",
     "Condition": {
@@ -320,18 +326,23 @@ This prevents anyone in the organization from setting data retention to anything
 
 Use this when your organization accepts retention for abuse detection but cannot permit human review of its content. Models that require human review will appear as `status: "unavailable"` on the bedrock-mantle endpoint, and requests to them on the bedrock-runtime endpoint will fail with a `ValidationException` error.
 
+The `bedrock-mantle:DataRetentionMode` and `bedrock:DataRetentionMode` condition keys control which mode can be set, not where Amazon Bedrock stores retained inputs and outputs. Include the project actions in your policies, because a project's mode takes precedence over your account mode.
+
 ## What data is retained and for how long
 <a name="data-retention-what-is-retained"></a>
 
-For models requiring `aws_review` (currently Claude Fable 5, Claude Fable 5.1, and Claude Fable 5.2): user prompts and completions are retained within the AWS boundary for up to 30 days and may be reviewed by AWS to meet the human review requirement the model provider imposes as a condition of access. Your content is not shared with the model provider.
+For models requiring `aws_review` (currently Claude Fable 5, Claude Fable 5.1, and Claude Fable 5.2): user prompts and completions are retained within the AWS boundary for up to 30 days and may be reviewed by AWS to meet the human review requirement the model provider imposes as a condition of access. Your content is not shared with the model provider. If your account is enrolled in EFS or EDC, the program's page describes where Amazon Bedrock stores your retained inputs and outputs and who reviews them.
 
 For the legacy `provider_data_share` mode: Amazon Bedrock does not share your content with model providers today, so this mode results in the same handling as `aws_review` — retained within the AWS boundary for up to 30 days, and reviewed by AWS only where the model requires it.
 
 For models under `default` mode: data may be retained for abuse detection purposes — see [Amazon Bedrock abuse detection](abuse-detection.html) for required retention details. For retention beyond abuse detection (for example, Responses API with `store=true`), consult the model's documentation and terms.
 
-If cross-region inference is enabled for these models, retained inputs and outputs are stored in destination Regions (that is, the Region where your inference request is processed).
-
 See [Anthropic Terms of Service](https://aws.amazon.com/legal/bedrock/third-party-models/) for model-specific data handling details.
+
+## Where retained inputs and outputs are stored
+<a name="data-retention-storage-location"></a>
+
+By default, Amazon Bedrock stores retained inputs and outputs in Amazon-managed storage. Some trusted access programs let you store them in your own Amazon S3 bucket instead. For details, see the program's page.
 
 ## IAM actions reference
 <a name="data-retention-iam-reference"></a>
@@ -349,3 +360,15 @@ See [Anthropic Terms of Service](https://aws.amazon.com/legal/bedrock/third-part
 | --- | --- |
 | GET /data-retention | bedrock:GetAccountDataRetention |
 | PUT /data-retention | bedrock:PutAccountDataRetention |
+| PUT /v1/data\_retention/storage/anthropic | bedrock:PutAccountDataRetentionStorage |
+| GET /v1/data\_retention/storage/anthropic | bedrock:GetAccountDataRetentionStorage |
+| DELETE /v1/data\_retention/storage/anthropic | bedrock:DeleteAccountDataRetentionStorage |
+| PUT /v1/data\_retention/organization-storage/anthropic | bedrock:PutOrganizationDataRetentionStorage |
+| GET /v1/data\_retention/organization-storage/anthropic | bedrock:GetOrganizationDataRetentionStorage |
+| DELETE /v1/data\_retention/organization-storage/anthropic | bedrock:DeleteOrganizationDataRetentionStorage |
+| PUT /v1/projects/{projectIdentifier}/data\_retention/storage/anthropic | bedrock:PutProjectDataRetentionStorage |
+| GET /v1/projects/{projectIdentifier}/data\_retention/storage/anthropic | bedrock:GetProjectDataRetentionStorage |
+| DELETE /v1/projects/{projectIdentifier}/data\_retention/storage/anthropic | bedrock:DeleteProjectDataRetentionStorage |
+| POST /projects | bedrock:CreateProject |
+| GET /projects/{projectIdentifier} | bedrock:GetProject |
+| POST /projects/{projectIdentifier} | bedrock:UpdateProject |

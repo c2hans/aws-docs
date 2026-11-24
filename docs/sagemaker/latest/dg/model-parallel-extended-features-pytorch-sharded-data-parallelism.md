@@ -404,11 +404,11 @@ For example, assume that we want to set 32 GPUs with a tensor parallel degree of
 
 ![Figure 1: Tensor parallelism groups.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/distributed/model-parallel/sdp_tp_group_tp.jpg)
 
-Figure 1: Tensor parallelism groups for (nodes, sharded data parallel degree, tensor parallel degree) = (4, 4, 4), where each rectangle represents a GPU with indices from 0 to 31. The GPUs form tensor parallelism groups from TPG0 to TPG7. Replication groups are ({TPG0, TPG4}, {TPG1, TPG5}, {TPG2, TPG6} and {TPG3, TPG7}); each replication group pair shares the same color but filled differently.
+Figure 1: Tensor parallelism groups for (nodes, sharded data parallel degree, tensor parallel degree) = (4, 4, 4), where each rectangle represents a GPU with indices from 0 to 31. The GPUs form tensor parallelism groups from TPG<sub>0</sub> to TPG<sub>7</sub>. Replication groups are ({TPG<sub>0</sub>, TPG<sub>4</sub>}, {TPG<sub>1</sub>, TPG<sub>5</sub>}, {TPG<sub>2</sub>, TPG<sub>6</sub>} and {TPG<sub>3</sub>, TPG<sub>7</sub>}); each replication group pair shares the same color but filled differently.
 
 ![Figure 2: Sharded data parallelism groups.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/distributed/model-parallel/sdp_tp_group_sdp.jpg)
 
-Figure 2: Sharded data parallelism groups for (nodes, sharded data parallel degree, tensor parallel degree) = (4, 4, 4), where each rectangle represents a GPU with indices from 0 to 31. The GPUs form sharded data parallelism groups from SDPG0 to SDPG7. Replication groups are ({SDPG0, SDPG4}, {SDPG1, SDPG5}, {SDPG2, SDPG6} and {SDPG3, SDPG7}); each replication group pair shares the same color but filled differently.
+Figure 2: Sharded data parallelism groups for (nodes, sharded data parallel degree, tensor parallel degree) = (4, 4, 4), where each rectangle represents a GPU with indices from 0 to 31. The GPUs form sharded data parallelism groups from SDPG<sub>0</sub> to SDPG<sub>7</sub>. Replication groups are ({SDPG<sub>0</sub>, SDPG<sub>4</sub>}, {SDPG<sub>1</sub>, SDPG<sub>5</sub>}, {SDPG<sub>2</sub>, SDPG<sub>6</sub>} and {SDPG<sub>3</sub>, SDPG<sub>7</sub>}); each replication group pair shares the same color but filled differently.
 
 ### How to activate sharded data parallelism with tensor parallelism
 <a name="model-parallel-extended-features-pytorch-sharded-data-parallelism-with-tensor-parallelism-activate"></a>

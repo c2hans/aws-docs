@@ -99,5 +99,5 @@ The following Regions and engine versions are available for Data API with Aurora
 | <a name="data-api-asv2-ams-me-south-1"></a>Middle East (Bahrain) | Version 3.07 and higher | Version 8.4.7 and higher |
 | <a name="data-api-asv2-ams-me-central-1"></a>Middle East (UAE) | Version 3.07 and higher | Version 8.4.7 and higher |
 | <a name="data-api-asv2-ams-sa-east-1"></a>South America (São Paulo) | Version 3.07 and higher | Version 8.4.7 and higher |
-| <a name="data-api-asv2-ams-gov-us-east-1"></a>AWS GovCloud (US-East) | Not available | Not available |
-| <a name="data-api-asv2-ams-gov-us-west-1"></a>AWS GovCloud (US-West) | Not available | Not available |
+| <a name="data-api-asv2-ams-gov-us-east-1"></a>AWS GovCloud (US-East) | Version 3.07 and higher | Version 8.4.7 and higher |
+| <a name="data-api-asv2-ams-gov-us-west-1"></a>AWS GovCloud (US-West) | Version 3.07 and higher | Version 8.4.7 and higher |

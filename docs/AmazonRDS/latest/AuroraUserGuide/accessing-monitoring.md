@@ -9,7 +9,7 @@ Using the Amazon RDS console, you can quickly access the status of your DB clust
 **Topics**
 + [Viewing an Amazon Aurora DB cluster](#Aurora.Viewing)
 + [Viewing DB cluster status](#Aurora.Status)
-+ [Viewing DB instance statusin an Aurora cluster](#Overview.DBInstance.Status)
++ [Viewing DB instance status in an Aurora cluster](#Overview.DBInstance.Status)
 
 ## Viewing an Amazon Aurora DB cluster
 <a name="Aurora.Viewing"></a>
@@ -215,7 +215,7 @@ To view just the status of the DB clusters, use the following query in AWS CLI.
 aws rds describe-db-clusters --query 'DBClusters[*].[DBClusterIdentifier,Status]' --output table
 ```
 
-## Viewing DB instance statusin an Aurora cluster
+## Viewing DB instance status in an Aurora cluster
 <a name="Overview.DBInstance.Status"></a>
 
 The status of a DB instance in an Aurora cluster indicates its current operational state. You can use the following procedures to view the DB instance status of a cluster in the Amazon RDS console, the AWS CLI command, or the API operation.

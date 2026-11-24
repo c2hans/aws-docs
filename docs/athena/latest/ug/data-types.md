@@ -14,10 +14,10 @@ To facilitate interoperability with other query engines, Athena uses [Apache Hiv
 </thead>
 <tbody>
   <tr><td colspan="2">BOOLEAN</td><td>Values are <code>true</code> and <code>false</code>.</td></tr>
-  <tr><td colspan="2">TINYINT</td><td>An 8-bit signed integer in two's complement format, with a minimum value of -27 and a maximum value of 27-1.</td></tr>
-  <tr><td colspan="2">SMALLINT</td><td>A 16-bit signed integer in two's complement format, with a minimum value of -215 and a maximum value of 215-1.</td></tr>
-  <tr><td colspan="2">INT, INTEGER</td><td>A 32-bit signed value in two's complement format, with a minimum value of -231 and a maximum value of 231-1.</td></tr>
-  <tr><td colspan="2">BIGINT</td><td> A 64-bit signed integer in two's complement format, with a minimum value of -263 and a maximum value of 263-1.</td></tr>
+  <tr><td colspan="2">TINYINT</td><td>An 8-bit signed integer in two's complement format, with a minimum value of -2<sup>7</sup> and a maximum value of 2<sup>7</sup>-1.</td></tr>
+  <tr><td colspan="2">SMALLINT</td><td>A 16-bit signed integer in two's complement format, with a minimum value of -2<sup>15</sup> and a maximum value of 2<sup>15</sup>-1.</td></tr>
+  <tr><td colspan="2">INT, INTEGER</td><td>A 32-bit signed value in two's complement format, with a minimum value of -2<sup>31</sup> and a maximum value of 2<sup>31</sup>-1.</td></tr>
+  <tr><td colspan="2">BIGINT</td><td> A 64-bit signed integer in two's complement format, with a minimum value of -2<sup>63</sup> and a maximum value of 2<sup>63</sup>-1.</td></tr>
   <tr><td>FLOAT</td><td>REAL</td><td>A 32-bit signed single-precision floating point number. The range is 1.40129846432481707e-45 to 3.40282346638528860e+38, positive or negative. Follows the IEEE Standard for Floating-Point Arithmetic (IEEE 754).</td></tr>
   <tr><td colspan="2">DOUBLE</td><td>A 64-bit signed double-precision floating point number. The range is 4.94065645841246544e-324d to 1.79769313486231570e+308d, positive or negative. Follows the IEEE Standard for Floating-Point Arithmetic (IEEE 754).</td></tr>
   <tr><td colspan="2">DECIMAL({{precision}}, {{scale}})</td><td><code>precision</code> is the total number of digits. <code>scale</code> (optional) is the number of digits in fractional part with a default of 0. For example, use these type definitions: <code>decimal(11,5)</code>, <code>decimal(15)</code>. The maximum value for {{precision}} is 38, and the maximum value for {{scale}} is 38.</td></tr>

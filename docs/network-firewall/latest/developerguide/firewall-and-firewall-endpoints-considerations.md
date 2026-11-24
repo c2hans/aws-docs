@@ -50,9 +50,10 @@ When a firewall owner unshares a firewall:
 For more information about unsharing firewalls, see [Unsharing a shared Network Firewall resource](sharing.md#sharing-unshare).
 
 **TLS inspection limitations**
-TLS inspection is not supported for firewalls with VPC endpoint associations.
-+ A firewall policy that has TLS inspection enabled cannot be added to a firewall that has VPC endpoint associations.
-+ A VPC endpoint association cannot be created from a firewall that has a firewall policy with TLS inspection enabled.
+Firewalls support TLS inspection on the following endpoints:
++ A firewall's primary endpoints.
++ VPC endpoint associations in the same account as the firewall.
+A firewall can't have both a TLS inspection configuration and a VPC endpoint association in a different account from the firewall. If a firewall has a TLS inspection configuration, you can't add a VPC endpoint association from another account; and if a firewall has a VPC endpoint association from another account, you can't add a TLS inspection configuration to its policy.
 For details, see [Troubleshooting firewall endpoint failures in AWS Network Firewall](firewall-troubleshooting-endpoint-failures.md) and [Inspecting SSL/TLS traffic with TLS inspection configurations in AWS Network Firewall](tls-inspection-configurations.md).
 
 **NAT/Proxy firewalls**

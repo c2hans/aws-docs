@@ -16,19 +16,19 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| id | string | Yes1 | Order line ID. The value must be unique. |
-| order\_id2 | string | Yes1 | ID of parent order. |
-| company\_id2 | string | No | Company ID. |
-| tpartner\_id2 | string | Yes1 | Partner that the order will be sent to. |
+| id | string | Yes<sup>1</sup> | Order line ID. The value must be unique. |
+| order\_id<sup>2</sup> | string | Yes<sup>1</sup> | ID of parent order. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| tpartner\_id<sup>2</sup> | string | Yes<sup>1</sup> | Partner that the order will be sent to. |
 | line\_creation\_date | timestamp | No | Line creation date. |
-| product\_id2 | string | Yes1 | Product ID. |
-| product\_group\_id2 | string | No | Product group ID. |
+| product\_id<sup>2</sup> | string | Yes<sup>1</sup> | Product ID. |
+| product\_group\_id<sup>2</sup> | string | No | Product group ID. |
 | supplier\_product\_id | string | No | Product number used by supplier. |
 | order\_type | string | No | Type of order. |
 | external\_line\_number | string | No | Alternate line number if used by customer system. |
 | status | string | No | Status of the line, for example, canceled, closed, or open. |
-| from\_site\_id2 | string | No | Site where order line originates. |
-| to\_site\_id2 | string | No | Site where the order will arrive. |
+| from\_site\_id<sup>2</sup> | string | No | Site where order line originates. |
+| to\_site\_id<sup>2</sup> | string | No | Site where the order will arrive. |
 | vendor\_status | string | No | Status of the line in the vendor system.. |
 | cost | double | No | Cost of the product in company's currency, after all discounts. |
 | cost\_uom | string | No | Cost UOM in company's currency. |
@@ -53,7 +53,7 @@ The table below lists the column names supported by the data entity:
 | incoterm\_location\_2 | string | No | Incoterm location 2. Can be a site\_id or the location used on order/EDI. |
 | requisition\_number | string | No | Requisition number. |
 | order\_receive\_date | timestamp | No | Date and time when the order is unloaded into the company location. |
-| reservation\_id2 | string | No | Reservation ID associated with the line. |
+| reservation\_id<sup>2</sup> | string | No | Reservation ID associated with the line. |
 | reference\_object | string | No | If record is created by or in response to another object / entity, then enter the entity name. For example, inbound\_order, outbound\_order |
 | reference\_object\_type | string | No | If activity is created by or in response to a specific type of object, specify the type here. For example, PO (Purchase Order) vs TO (Transfer Order) |
 | reference\_object\_id | string | No | ID of associated reference object. |
@@ -65,9 +65,9 @@ The table below lists the column names supported by the data entity:
 | sap\_lips\_\_vbeln | string | No | Delivery Number. Predicate key for SAP mapping. Upsert key for VTTP, LIKP.  |
 | sap\_vttp\_\_tknum | string | No | Shipment Number. Predicate key for SAP mapping. Upsert key for VTTK.  |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

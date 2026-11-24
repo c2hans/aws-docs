@@ -70,7 +70,7 @@ The first column in the following table lists usage types that appear in your bi
 + A tiering charge applies to data tiered from EFS Standard storage to EFS Infrequent Access (IA) storage, and from EFS IA storage to EFS Standard storage.
 + EFS IA and EFS Archive storage have a minimum billable file size of 128 KiB. Files smaller than 128 KiB can be tiered to these storage classes but are charged for 128 KiB of storage at the appropriate storage class rate.
 + For file systems using Elastic throughput, metadata operations are metered in 1 KiB increments after the first 4 KiB and data operations are metered in 1 KiB increments after the first 32 KiB.
-+ Storage usage is calculated in binary gigabytes (GB), where 1 GB is 230 bytes. See [How Amazon EFS reports file system and object sizes](metered-sizes.md) for additional details on how storage and throughput usage are metered to calculate your Amazon EFS bill.
++ Storage usage is calculated in binary gigabytes (GB), where 1 GB is 2<sup>30</sup> bytes. See [How Amazon EFS reports file system and object sizes](metered-sizes.md) for additional details on how storage and throughput usage are metered to calculate your Amazon EFS bill.
 + GB-Month is derived by taking the total number of GB-hours, aggregating these over the course of a month, and then dividing by the number of hours in that month.
 
 ## Tracking operations in your usage reports

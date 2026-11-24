@@ -539,6 +539,7 @@ The following table shows the default `max_connections` values for Aurora MySQL.
 | 128 | 5,000 |
 | 192 | 6,000 |
 | 256 | 6,000 |
+| 384 | 7,000 |
 
 **Note**
 These Aurora MySQL values are the same across all Aurora serverless platform versions.

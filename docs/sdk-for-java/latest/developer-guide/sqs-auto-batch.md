@@ -35,7 +35,7 @@ You need to use version *2.28.0 *or later of the SDK for Java 2.x to have access
 </dependencies>
 ```
 
-1 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom)
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom)
 
 ## Create a batch manager
 <a name="sqs-auto-batch-create"></a>

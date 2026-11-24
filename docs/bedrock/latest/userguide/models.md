@@ -17,6 +17,7 @@ For new applications, we recommend the `bedrock-runtime` endpoint. See [Inferenc
 + [Get list of models](models-get-info.md) – Programmatically list and discover available models on each endpoint.
 + [Model lifecycle](model-lifecycle.md) – Model versioning, deprecation timelines, and migration guidance.
 + [Request access to models](model-access.md) – Request and manage access to models in your account.
++ [Trusted access programs in Amazon Bedrock](trusted-access-programs.md) – Find trusted access programs, check your status, request approval, and opt in or out.
 + [Use product ID condition keys to control access](model-access-product-ids.md) – Use IAM product ID condition keys to control which models users can invoke.
 
 **Choosing a model**

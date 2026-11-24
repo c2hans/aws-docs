@@ -1244,6 +1244,7 @@ The `c5n`, `d3`, `d3en`, `g3`, `g3s`, `g4dn`, `i3`, `i3en`, `inf1`, `m5dn`, `m5n
 | trn2.3xlarge | 1 | 14 |
 | trn2.48xlarge | 31 | 242 |
 | trn2u.48xlarge | 31 | 242 |
+| trn3.48xlarge | 31 | 242 |
 | vt1.3xlarge | 3 | 40 |
 | vt1.6xlarge | 7 | 60 |
 | vt1.24xlarge | 14 | 120 |

@@ -12,14 +12,14 @@ During training, IP Insights automatically generates negative samples by randoml
 
 ![An image containing the equation for log loss.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/ip-insight-image-cross-entropy.png)
 
-yn is the label that indicates whether the sample is from the real distribution governing observed data (yn=1) or from the distribution generating negative samples (yn=0). pn is the probability that the sample is from the real distribution, as predicted by the model.
+y<sub>n</sub> is the label that indicates whether the sample is from the real distribution governing observed data (y<sub>n</sub>=1) or from the distribution generating negative samples (y<sub>n</sub>=0). p<sub>n</sub> is the probability that the sample is from the real distribution, as predicted by the model.
 
 Generating negative samples is an important process that is used to achieve an accurate model of the observed data. If negative samples are extremely unlikely, for example, if all of the IP addresses in negative samples are 10.0.0.0, then the model trivially learns to distinguish negative samples and fails to accurately characterize the actual observed dataset. To keep negative samples more realistic, IP Insights generates negative samples both by randomly generating IP addresses and randomly picking IP addresses from training data. You can configure the type of negative sampling and the rates at which negative samples are generated with the `random_negative_sampling_rate` and `shuffled_negative_sampling_rate` hyperparameters.
 
-Given an nth (entity, IP address pair), the IP Insights model outputs a *score*, Sn , that indicates how compatible the entity is with the IP address. This score corresponds to the log odds ratio for a given (entity, IP address) of the pair coming from a real distribution as compared to coming from a negative distribution. It is defined as follows:
+Given an nth (entity, IP address pair), the IP Insights model outputs a *score*, S<sub>n</sub> , that indicates how compatible the entity is with the IP address. This score corresponds to the log odds ratio for a given (entity, IP address) of the pair coming from a real distribution as compared to coming from a negative distribution. It is defined as follows:
 
 ![An image containing the equation for the score, a log odds ratio.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/ip-insight-image-log-odds.png)
 
-The score is essentially a measure of the similarity between the vector representations of the nth entity and IP address. It can be interpreted as how much more likely it would be to observe this event in reality than in a randomly generated dataset. During training, the algorithm uses this score to calculate an estimate of the probability of a sample coming from the real distribution, pn, to use in the cross entropy minimization, where:
+The score is essentially a measure of the similarity between the vector representations of the nth entity and IP address. It can be interpreted as how much more likely it would be to observe this event in reality than in a randomly generated dataset. During training, the algorithm uses this score to calculate an estimate of the probability of a sample coming from the real distribution, p<sub>n</sub>, to use in the cross entropy minimization, where:
 
 ![An image showing the equation for probability that the sample is from a real distribution.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/ip-insight-image-sample-probability.png)

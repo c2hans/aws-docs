@@ -18,6 +18,8 @@ If you want to remain on an LTS minor version for the duration of its lifecycle,
 +  The testing cycle for the cluster and associated applications takes a long time for each update to the Aurora PostgreSQL database engine.
 +  The database version for your Aurora PostgreSQL cluster has all the DB engine features and bug fixes that your application needs.
 
+ Because LTS patch versions include only fixes for critical stability and security issues, clusters that remain on an LTS release don't receive fixes for less critical issues or new features that are available in later minor versions. Consider this trade-off when you choose between an LTS release and upgrading to newer minor versions.
+
  The current LTS releases for Aurora PostgreSQL are as follows:
 + PostgreSQL 17.7. It was released on December 18, 2025. For more information, see [ PostgreSQL 17.7](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html#aurorapostgresql-versions-version177x) in the *Release Notes for Aurora PostgreSQL*.
 + PostgreSQL 16.8. It was released on April 07, 2025. For more information, see [ PostgreSQL 16.8](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html#aurorapostgresql-versions-version168x) in the *Release Notes for Aurora PostgreSQL*.

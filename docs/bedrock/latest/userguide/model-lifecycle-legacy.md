@@ -104,6 +104,14 @@ The following models are in the Legacy state with an announced EOL date. Migrate
   - **EOL date:** January 8, 2027
   - **Public extended access start date:** October 8, 2026
 
+- **Anthropic**
+  - **Model name:** Claude Opus 4.5
+  - **Model ID:** anthropic.claude-opus-4-5-20251101-v1:0
+  - **Regions:** af-south-1, ap-east-2, ap-northeast-1, ap-northeast-2, ap-northeast-3, ap-south-1, ap-south-2, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-southeast-5, ap-southeast-6, ap-southeast-7, ca-central-1, ca-west-1, eu-central-1, eu-central-2, eu-north-1, eu-south-1, eu-south-2, eu-west-1, eu-west-2, eu-west-3, il-central-1, me-central-1, me-south-1, mx-central-1, sa-east-1, us-east-1, us-east-2, us-west-1, us-west-2
+  - **Legacy date:** November 23, 2026
+  - **EOL date:** May 23, 2027
+  - **Public extended access start date:** February 23, 2027
+
 - **DeepSeek**
   - **Model name:** DeepSeek-R1
   - **Model ID:** deepseek.r1-v1:0

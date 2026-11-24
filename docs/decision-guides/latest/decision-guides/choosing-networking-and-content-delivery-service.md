@@ -16,7 +16,7 @@ Amazon Web Services (AWS) offers 20\+ purpose-built networking and content deliv
 
 This decision guide will help you ask the right questions to choose the networking and content delivery services and tools that fit your needs.
 
-[![AWS Videos](https://img.youtube.com/vi/cRdDCkbE4es/0.jpg)](https://www.youtube.com/watch?v=cRdDCkbE4es)
+[![AWS Videos](https://img.youtube.com/vi/cRdDCkbE4es/0.jpg)](https://www.youtube.com/watch?v=cRdDCkbE4es&t=123s)
 
 This video provides a four-minute introduction to AWS networking.
 

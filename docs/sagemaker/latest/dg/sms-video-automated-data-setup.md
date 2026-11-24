@@ -45,9 +45,9 @@ Make sure your video files are stored in an Amazon S3 bucket in the same AWS Reg
 
 1. Choose a method of **Frame extraction**.
    + When you choose **Use all frames extracted from the video to create a labeling task**, Ground Truth extracts all frames from each video in your **S3 location for input datasets**, up to 2,000 frames. If a video in your input dataset contains more than 2,000 frames, the first 2,000 are extracted and used for that labeling task.
-   + When you choose **Use every {{x}} frame from a video to create a labeling task**, Ground Truth extracts every {{x}}th frame from each video in your **S3 location for input datasets**.
+   + When you choose **Use every {{x}} frame from a video to create a labeling task**, Ground Truth extracts every {{x}}<sup>th</sup> frame from each video in your **S3 location for input datasets**.
 
-     For example, if your video is 2 seconds long, and has a [frame rate](https://en.wikipedia.org/wiki/Frame_rate) of 30 frames per second, there are 60 frames in your video. If you specify 10 here, Ground Truth extracts every 10th frame from your video. This means the 1st, 10th, 20th, 30th, 40th, 50th, and 60th frames are extracted.
+     For example, if your video is 2 seconds long, and has a [frame rate](https://en.wikipedia.org/wiki/Frame_rate) of 30 frames per second, there are 60 frames in your video. If you specify 10 here, Ground Truth extracts every 10<sup>th</sup> frame from your video. This means the 1<sup>st</sup>, 10<sup>th</sup>, 20<sup>th</sup>, 30<sup>th</sup>, 40<sup>th</sup>, 50<sup>th</sup>, and 60<sup>th</sup> frames are extracted.
 
 1. Choose or create an IAM execution role. Make sure that this role has permission to access your Amazon S3 locations for input and output data specified in steps 5 and 6.
 

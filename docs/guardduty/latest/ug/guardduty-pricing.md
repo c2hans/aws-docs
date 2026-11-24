@@ -9,7 +9,7 @@ This section focuses on the AWS Free Tier model that GuardDuty uses for various 
 **AWS Free Tier**
 AWS Free Tier helps you explore and try out AWS services free of charge up to specified limits for each service. There are three categories – 12 months free, always free, and short-term free trials. Amazon GuardDuty belongs to the short-term free trial category and offers a 30-day free trial. When you continue using GuardDuty after this free trial ends, you start incurring cost based on how you use this service.
 
-****1**Exception to GuardDuty 30-day free trial**
+**<sup>**1**</sup>Exception to GuardDuty 30-day free trial**
 On-demand malware scan (under Malware Protection for EC2) and Malware Protection for S3 don't fall into the GuardDuty 30-day short term free trial category. Malware Protection for S3 includes a Free Tier whereas the On-demand malware scan follows a pay-as-you-use cost model. There is no 30-day free trial or a Free Tier cost model with On-demand malware scan.
 
 ## Using GuardDuty 30-day free trial
@@ -19,7 +19,7 @@ When using GuardDuty for the first time in an AWS Region, your AWS account is au
 
 Use the following table to review which protection plans are enabled by default with GuardDuty, and their free trial availability.
 
-| Protection plan | Enabled by default with GuardDuty | Separate free trial availability**[2](#protection-plan-separate-enablement-gdu)** |
+| Protection plan | Enabled by default with GuardDuty | Separate free trial availability<sup>**[2](#protection-plan-separate-enablement-gdu)**</sup> |
 | --- | --- | --- |
 | [EKS Protection](kubernetes-protection.md) | Yes | Yes |
 | [S3 Protection](s3-protection.md) | Yes | Yes |
@@ -31,7 +31,7 @@ Use the following table to review which protection plans are enabled by default 
 | [Lambda Protection](lambda-protection.md) | Yes | Yes |
 | [Malware Protection for AWS Backup](malware-protection-backup.md) | No | No |
 
-**2**When you enable GuardDuty for the first time, protection plans (except Runtime Monitoring) are automatically enabled and included in the initial 30-day free trial. When an existing GuardDuty account enables a new protection plan after their initial GuardDuty free trial has expired, then that protection plan comes with its own 30-day free trial. For more information about free trials for protection plans, see the document associated with each protection plan.
+<sup>**2**</sup>When you enable GuardDuty for the first time, protection plans (except Runtime Monitoring) are automatically enabled and included in the initial 30-day free trial. When an existing GuardDuty account enables a new protection plan after their initial GuardDuty free trial has expired, then that protection plan comes with its own 30-day free trial. For more information about free trials for protection plans, see the document associated with each protection plan.
 
 **View estimated usage cost during free trial** – During 30-day free trial of GuardDuty and potentially a protection plan, GuardDuty provides estimated usage cost for your account. If you're a delegated GuardDuty administrator account, you can view the total estimated usage cost and account-level breakdown for all the member accounts that have enabled GuardDuty. For more information, see [Monitoring GuardDuty Usage and Estimating Costs](monitoring_costs.md).
 

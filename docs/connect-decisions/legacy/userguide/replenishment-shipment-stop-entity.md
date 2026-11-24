@@ -17,10 +17,10 @@ The table below lists the column names supported by the data entity:
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
 | shipment\_stop\_id | string | Yes | Shipment stop ID. |
-| shipment\_id1 | string | Yes | Shipment ID. |
+| shipment\_id<sup>1</sup> | string | Yes | Shipment ID. |
 | sequence | int | No | Sequence of the shipment. |
-| company\_id1 | string | No | Company ID. |
-| site\_id1 | string | No | Site ID. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
+| site\_id<sup>1</sup> | string | No | Site ID. |
 | planned\_arrival\_start\_dttm | timestamp | No | Planned start date and time for the shipment arrival. |
 | planned\_arrival\_end\_dttm | timestamp | No | Planned end date and time for the shipments arrival. |
 | planned\_departure\_start\_dttm | timestamp | No | Planned start date and time for the shipment departure. |
@@ -34,7 +34,7 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system.  |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

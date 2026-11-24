@@ -46,7 +46,7 @@ To use the S3 Transfer Manager with enhanced multipart performance, configure yo
 </dependencies>
 ```
 
-1 [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom). 2[Find the latest CRT version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk.crt/aws-crt).
+<sup>1</sup> [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom). <sup>2</sup>[Find the latest CRT version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk.crt/aws-crt).
 
 ------
 #### [ Use the Java-based S3 async client ]
@@ -71,7 +71,7 @@ To use the S3 Transfer Manager with enhanced multipart performance, configure yo
 </dependencies>
 ```
 
-1 [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 ------
 
@@ -450,7 +450,7 @@ Add the `s3-transfer-manager` artifact to your project if you haven't already:
 </dependencies>
 ```
 
-1 [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+<sup>1</sup> [Find the latest BOM version on the Maven Central Repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
 
 #### Imports
 <a name="transfer-manager-presigned-imports"></a>

@@ -24,17 +24,17 @@ The change from training data to live data appears significant. The feature rank
 We can detect the drift by comparing how the ranking of the individual features changed from training data to live data. In addition to being sensitive to changes in ranking order, we also want to be sensitive to the raw attribution score of the features. For instance, given two features that fall in the ranking by the same number of positions going from training to live data, we want to be more sensitive to the feature that had a higher attribution score in the training data. With these properties in mind, we use the Normalized Discounted Cumulative Gain (NDCG) score for comparing the feature attributions rankings of training and live data.
 
 Specifically, assume we have the following:
-+ *F=[f1​,…,fm​] * is the list of features sorted with respect to their attribution scores in the training data where *m* is the total number of features. For instance, in our case, *F*=[SAT Score, GPA, Class Rank].
++ *F=[f<sub>1</sub>​,…,f<sub>m</sub>​] * is the list of features sorted with respect to their attribution scores in the training data where *m* is the total number of features. For instance, in our case, *F*=[SAT Score, GPA, Class Rank].
 + *a(f)* is a function that returns the feature attribution score on the training data given a feature *f*. For example, *a*(SAT Score) = 0.70.
-+ *F′=[f′​1​, …, f′​m​] *is the list of features sorted with respect to their attribution scores in the live data. For example, *F*′= [Class Rank, GPA, SAT Score].
++ *F′=[f′​<sub>1</sub>​, …, f′​<sub>m</sub>​] *is the list of features sorted with respect to their attribution scores in the live data. For example, *F*′= [Class Rank, GPA, SAT Score].
 
 Then, we can compute the NDCG as:
 
         NDCG=DCG/iDCG​
 
 with
-+ DCG = ∑1m*a*(*f'i*)/log2​(*i*\+1)
-+ iDCG = ∑1m*a*(*fi*)/log2​(*i*\+1)
++ DCG = ∑<sub>1</sub><sup>m</sup>*a*(*f'<sub>i</sub>*)/log<sub>2​</sub>(*i*\+1)
++ iDCG = ∑<sub>1</sub><sup>m</sup>*a*(*f<sub>i</sub>*)/log<sub>2​</sub>(*i*\+1)
 
 The quantity DCG measures whether features with high attribution in the training data are also ranked higher in the feature attribution computed on the live data. The quantity iDCG measures the *ideal score* and it's just a normalizing factor to ensure that the final quantity resides in the range [0, 1], with 1 being the best possible value. A NDCG value of 1 means that the feature attribution ranking in the live data is the same as the one in the training data. In this particular example, because the ranking changed by quite a bit, the NDCG value is 0.69.
 

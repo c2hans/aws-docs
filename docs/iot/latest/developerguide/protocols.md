@@ -25,16 +25,16 @@ How a device or client connects to the message broker is configurable using an [
 | --- | --- | --- | --- | --- |
 | MQTT over WebSocket | Publish, Subscribe | Signature Version 4 | 443 | N/A |
 | MQTT over WebSocket | Publish, Subscribe | Custom authentication | 443 | N/A |
-| MQTT | Publish, Subscribe | X.509 client certificate | 443† | `x-amzn-mqtt-ca` |
+| MQTT | Publish, Subscribe | X.509 client certificate | 443<sup>†</sup> | `x-amzn-mqtt-ca` |
 | MQTT | Publish, Subscribe | X.509 client certificate | 8883 | N/A |
-| MQTT | Publish, Subscribe | Custom authentication | 443† | `mqtt` |
+| MQTT | Publish, Subscribe | Custom authentication | 443<sup>†</sup> | `mqtt` |
 | HTTPS | Publish only | Signature Version 4 | 443 | N/A |
-| HTTPS | Publish only | X.509 client certificate | 443† | `x-amzn-http-ca` |
+| HTTPS | Publish only | X.509 client certificate | 443<sup>†</sup> | `x-amzn-http-ca` |
 | HTTPS | Publish only | X.509 client certificate | 8443 | N/A |
 | HTTPS | Publish only | Custom authentication | 443 | N/A |
 
 **Application Layer Protocol Negotiation (ALPN)**
-†When using default endpoint configurations, clients that connect on port 443 with X.509 client certificate authentication must implement the [Application Layer Protocol Negotiation (ALPN)](https://tools.ietf.org/html/rfc7301) TLS extension and use the [ALPN protocol name](https://tools.ietf.org/html/rfc7301#section-3.1) listed in the ALPN ProtocolNameList sent by the client as part of the `ClientHello` message.
+<sup>†</sup>When using default endpoint configurations, clients that connect on port 443 with X.509 client certificate authentication must implement the [Application Layer Protocol Negotiation (ALPN)](https://tools.ietf.org/html/rfc7301) TLS extension and use the [ALPN protocol name](https://tools.ietf.org/html/rfc7301#section-3.1) listed in the ALPN ProtocolNameList sent by the client as part of the `ClientHello` message.
 On port 443, the [IoT:Data-ATS](iot-connect-devices.md#iot-connect-device-endpoint-table) endpoint supports ALPN x-amzn-http-ca HTTP, but the [IoT:Jobs](iot-connect-devices.md#iot-connect-device-endpoint-table) endpoint does not.
 On port 8443 HTTPS and port 443 MQTT with ALPN x-amzn-mqtt-ca, [custom authentication](custom-authentication.md) can't be used.
 
@@ -120,13 +120,13 @@ MQTT connection duration depends on the authentication feature that you use. The
 
 **MQTT connection duration by authentication feature**
 
-|  Feature  |  Maximum duration \*  |
+|  Feature  |  Maximum duration <sup>\*</sup>  |
 | --- | --- |
 | X.509 client certificate | 1–2 weeks |
 | Custom authentication | 1–2 weeks |
 | Signature Version 4 | Up to 24 hours |
 
-\* Not guaranteed
+<sup>\*</sup> Not guaranteed
 
 With X.509 certificates and custom authentication, connection duration has no hard limit, but it can be as short as a few minutes. Connection interruptions can occur for various reasons. The following list contains some of the most common reasons.
 + Wi-Fi availability interruptions

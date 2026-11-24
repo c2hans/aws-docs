@@ -271,7 +271,7 @@ Most current MongoDB-compatible drivers enable retryable writes by default. Amaz
 
 On engine versions earlier than 8.0.2, enabling retryable writes results in an error message similar to the following.
 
-``` none
+```
 {"ok":0,"errmsg":"Retryable writes are not supported","code":301,"name":"MongoError"}
 ```
 

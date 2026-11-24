@@ -36,3 +36,4 @@ AgentCore records service API activity in AWS CloudTrail so you can audit who pe
 + [Amazon Bedrock AgentCore generated observability data](observability-service-provided.md)
 + [View observability data for your Amazon Bedrock AgentCore agents](observability-view.md)
 + [Monitor AgentCore resources across accounts](observability-cross-account.md)
++ [Monitor per-agent costs with Amazon CloudWatch](observability-per-agent-cost.md)

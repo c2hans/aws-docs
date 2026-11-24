@@ -8,4 +8,4 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/Welcome.html
 
 You can use these APIs to complete RTB Fabric tasks, such as creating gateways and links, attaching modules to links, and tracking updates. For more information about RTB Fabric, including the required permissions to use the service, see the [AWS RTB Fabric User Guide](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/).
 
-This document was last published on November 23, 2026.
+This document was last published on November 24, 2026.

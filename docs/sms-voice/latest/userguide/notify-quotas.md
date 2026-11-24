@@ -30,7 +30,7 @@ This section describes the default quotas, rate limits, and supported countries 
 **Note**
 For a given destination phone number, the limit is 10 messages per day per notify configuration and 10 messages per day per account.
 
-\* Some countries require a customer-owned origination identity. Use the `ListNotifyCountries` API to check which countries require customer-owned identities. For more information, see [Notify supported countries](notify-countries.md).
+<sup>\*</sup> Some countries require a customer-owned origination identity. Use the `ListNotifyCountries` API to check which countries require customer-owned identities. For more information, see [Notify supported countries](notify-countries.md).
 
 ## API rate limits
 <a name="notify-quotas-api"></a>

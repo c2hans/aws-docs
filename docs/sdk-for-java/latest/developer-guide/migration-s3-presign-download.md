@@ -27,7 +27,7 @@ The following table shows the dependency and class name changes from v1 to v2.
 | Package name | com.amazonaws.services.s3 | software.amazon.awssdk.services.s3 |
 | Class names | AmazonS3, TransferManager | S3AsyncClient, S3TransferManager |
 
-1 [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom) on the Maven Central website. 2 [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom) on the Maven Central website.
+<sup>1</sup> [Latest version](https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom) on the Maven Central website. <sup>2</sup> [Latest version](https://central.sonatype.com/artifact/software.amazon.awssdk/bom) on the Maven Central website.
 
 ## API changes
 <a name="migration-s3-presign-api-changes"></a>

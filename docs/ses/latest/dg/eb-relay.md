@@ -4,143 +4,211 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-relay.html
 
 # SMTP relay
 
-Because Mail Manager is deployed between your email environment (such as Microsoft 365, Google Workspace, or On-Premise Exchange) and the internet, Mail Manager uses SMTP relays to route incoming emails that are processed by Mail Manager to your email environment. It can also route outbound emails to another email infrastructure such as another Exchange server or a third-party email gateway before sending to end recipients.
+Simple Mail Transfer Protocol (SMTP) can transfer email through one or more servers before the message reaches its final recipient. An SMTP server that passes the message to the next server is a relay. For the SMTP relay model, see [RFC 5321, section 3.6](https://www.rfc-editor.org/rfc/rfc5321.html#section-3.6).
 
-A SMTP relay is a vital component of your email infrastructure, responsible for efficiently routing emails between servers when designated by a rule action defined in a rule set.
+An SES Mail Manager SMTP relay is a reusable destination configuration. It specifies the public SMTP server hostname, port, and authentication that a rule action uses to deliver email. Use a relay when Mail Manager must filter, scan, modify, or archive email before handing it to an existing mailbox provider, on-premises mail server, or email gateway.
 
-Specifically, a SMTP relay can redirect incoming email between SES Mail Manager and an external email infrastructure such as Exchange, on-premise or third-party email gateways, and others. Incoming emails to an ingress endpoint will be processed by a rule that will route specified email to the designated SMTP relay, which in turn, will pass it on to the external email infrastructure defined in the SMTP relay.
+The relay resource and SMTP relay action have different purposes. The relay resource defines where and how Mail Manager connects. The action selects the current email and SMTP envelope recipients to send through that relay. For action fields, envelope-sender behavior, failure handling, and action order, see [SMTP relay](eb-rules-actions.md#eb-rules-actions-relay).
 
-When your ingress endpoint receives email, it uses a traffic policy to determine which emails to block or allow. The email you allow in passes to a rule set that applies conditional rules to execute the actions you've defined for specific types of email. One of the rule actions you can define is *SMTPRelay action*—if you select this action, the email will be passed along to the external SMTP server defined in your SMTP relay.
+The following list provides a text equivalent for the diagram.
 
-For example, you could use the *SMTPRelay action* to send email from your ingress endpoint to your on-premise Microsoft Exchange Server. You would set up your Exchange server to have a *public* SMTP endpoint that can only be accessed using certain credentials. When you create the SMTP relay, you enter the server name, port, and credentials of your Exchange server and give your SMTP relay a unique name, say, "RelayToMyExchangeServer". Then, you create a rule in your ingress endpoint's rule set that says, "When *From address* contains *'gmail.com'*, then perform *SMTPRelay action* using the SMTP relay called *RelayToMyExchangeServer*".
+Google Workspace mailbox delivery
+Internet senders connect to an *Open ingress point* for `example.com` on port 25. A traffic policy with a `DENY` default action allows the intended recipients and requires TLS 1.2 or later. An ordered rule set archives the accepted email and runs the relay action. The unauthenticated SMTP relay connects over TLS to `aspmx.l.google.com` on port 25. Google Workspace then delivers the email to the corporate mailbox.
+
+Microsoft 365 mailbox delivery
+Internet senders connect to an *Open ingress point* for `example.org` on port 25. A traffic policy with a `DENY` default action allows the intended recipients and requires TLS 1.2 or later. An ordered rule set archives the accepted email and runs the relay action. The unauthenticated SMTP relay connects over TLS to `example-org.mail.protection.outlook.com` on port 25. Microsoft 365 then delivers the email to the corporate mailbox.
+
+Authenticated SMTP gateway
+An application or mail server connects to an *Authenticated ingress point* on port 587. A traffic policy with a `DENY` default action allows the approved domains and limits the maximum message size to 30 MiB. An ordered rule set scans and archives the accepted email before it runs the relay action. The SMTP relay uses the destination username and password from AWS Secrets Manager to connect over TLS to `smtp.gateway.example.net` on port 587.
+
+For every flow, a traffic-policy rejection returns an SMTP rejection before rule-set processing. For accepted email, rule-set application logs record action status, destination SMTP responses, and rejected recipients. Relay metrics count delivered and rejected recipients by relay ID. The final relay outcome changes from `IN_PROGRESS` to `SUCCESS` or `FAILURE`.
+
+The following diagram illustrates these flows.
+
+![Open ingress point and Authenticated ingress point connect to Traffic policy, Rule set, SMTP relay, Public SMTP destination.](https://docs.aws.amazon.com/ses/latest/dg/images/smtp-relay-flows.png)
+
+For an unauthenticated destination, configure the destination to accept connections from the [Mail Manager SMTP relay IP ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) for your AWS Region. Do not add these shared IP ranges to your domain's SPF record.
 
 **Note**
-All SMTP endpoints you configure with Amazon SES SMTP relay must be public as private SMTP endpoints are not supported.
+The destination must provide a public SMTP endpoint. Private SMTP endpoints are not supported. Mail Manager requires TLS when it connects to the destination.
 
-Now, when email from *gmail.com* arrives to your ingress endpoint, the rule will trigger the *SMTPRelay action* and contact your Exchange server using the credentials you provided when creating your SMTP relay and deliver the email to your Exchange server. Thus, email received from *gmail.com* is *relayed* to your Exchange server.
+## How SMTP relay works
+<a name="eb-relay-how-it-works"></a>
 
-You must first create an SMTP relay before it can be designated in a rule action. The procedure in the next section will walk you through creating an SMTP relay in the SES console.
+Email follows these steps when a rule uses an SMTP relay action.
 
-## Creating an SMTP relay in the SES console
+1. A sender connects to an open or authenticated ingress endpoint.
+
+1. The ingress endpoint's traffic policy accepts or rejects each SMTP envelope recipient. Rejected recipients do not enter rule-set processing.
+
+1. The assigned rule set evaluates its rules and runs actions in order for the selected recipients.
+
+1. Earlier actions can archive the email, add headers, or replace SMTP envelope recipients before the relay action runs.
+
+1. The relay action loads the destination from the relay resource and sends the current MIME email to the selected recipients.
+
+1. Rule-set processing waits for a final delivery or rejection outcome for each selected recipient. For logs and metrics, see [Monitor and troubleshoot rule sets](eb-rules-monitoring.md).
+
+A relay uses the configured hostname as a fixed next-hop SMTP server. To let SES resolve recipient domains and deliver directly to their mail servers, use the [Send to internet action](eb-rules-actions.md#eb-rules-actions-send) instead.
+
+## Choosing destination authentication and port
+<a name="eb-relay-authentication-port"></a>
+
+Choose authentication and a port according to the service exposed by the destination SMTP server. Authentication on the source ingress endpoint is independent from authentication on the destination relay.
+
+| Destination | Authentication | Common port | When to use |
+| --- | --- | --- | --- |
+| Mail server or inbound gateway | NoAuthentication. Configure the destination to accept the regional Mail Manager SMTP relay IP ranges. | 25 | Relaying email between mail servers, including delivery to Google Workspace and Microsoft 365. |
+| Authenticated SMTP server | SecretArn. The AWS Secrets Manager secret contains the destination username and password. | 587, when supported | Submitting email to a public SMTP server that requires SMTP credentials. |
+
+[RFC 6409](https://www.rfc-editor.org/rfc/rfc6409.html) separates message relay from message submission. SMTP relay between mail servers continues to use port 25. Authenticated message submission normally uses port 587. Always use the port documented by the destination provider.<a name="relay-inbound-tab"></a><a name="relay-outbound-tab"></a>
+
+## Before you create an SMTP relay
+<a name="eb-relay-before-you-begin"></a>
+
+1. Configure a public SMTP hostname and port on the destination. Confirm that it accepts TLS connections from Mail Manager.
+
+1. For an unauthenticated destination, allow the [regional Mail Manager SMTP relay IP ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges). Verify every intended recipient email identity in SES. For identity instructions, see [Creating a domain identity](creating-identities.md#verify-domain-procedure).
+
+1. For an authenticated destination, create an AWS Secrets Manager secret that contains `username` and `password`. Configure the resource and AWS KMS key policies described in [Permission policies for SMTP relay](eb-policies.md#eb-policies-relay).
+
+1. Create the rule set that selects the messages and recipients to relay. For setup instructions, see [Create and manage rule sets](eb-rules-setup.md).
+
+**Warning**
+An unauthenticated relay requires verified recipient identities. If any selected recipient is not verified, the relay action rejects the complete send before delivery starts.
+
+## Creating and managing an SMTP relay
 <a name="eb-relay-create-console"></a>
 
-The following procedure shows you how to use the **SMTP relays** page in the SES console to create SMTP relays and manage the ones you've already created.
-
-**To create and manage SMTP relays using the console**
+**To create an SMTP relay in the SES console**
 
 1. Sign in to the AWS Management Console and open the Amazon SES console at [https://console.aws.amazon.com/ses/](https://console.aws.amazon.com/ses/).
 
-1. In the left navigation panel, choose **SMTP relays** under **Mail Manager**.
+1. In the navigation pane, under **Mail Manager**, choose **SMTP relays**.
 
-1. On the **SMTP relays** page, select **Create SMTP relay**.
+1. Choose **Create SMTP relay**, and enter a unique relay name.
 
-1. On the **Create SMTP relay** page, enter a unique name for your SMTP relay.
+1. Enter the public destination SMTP server hostname and port.
 
-1. Depending on whether you want to configure an inbound (non-authenticated) or outbound (authenticated) SMTP relay, follow the respective instructions:
+1. For an unauthenticated destination, choose **No authentication**. For an authenticated destination, select the AWS Secrets Manager secret that contains its SMTP username and password.
 
-------
-#### [ Inbound ]
+1. Choose **Create SMTP relay**.
 
-**To configure an inbound SMTP relay**
+To update a relay, select its name and change its name, destination hostname, port, or authentication. To delete a relay, remove its references from rule sets, and then choose **Delete** on the **SMTP relays** page.
 
-   1. When SMTP relay is used as an inbound gateway to route incoming emails processed by Mail Manager to your external email environment, you will first need to configure the email hosting environment. While every email hosting provider has their own GUI and configuration workflow unique to them, the principals of configuring them to work with inbound gateways, such as your Mail Manager SMTP relay, will be similar.
+### Creating an SMTP relay with the AWS CLI
+<a name="eb-relay-create-cli"></a>
 
-      To help illustrate this, we have provided examples of how to configure Google Workspaces and Microsoft Office 365 to work with your SMTP relay as an inbound gateway in the following sections:
-      + [Setting up Google Workspaces](#eb-relay-inbound-google)
-      + [Setting up Microsoft Office 365](#eb-relay-inbound-ms365)
+The following command creates an unauthenticated relay to Google Workspace on port 25.
+
+```bash
+PROMPT> aws mailmanager create-relay \
+  --region {{us-east-1}} \
+  --relay-name {{google-workspace}} \
+  --server-name aspmx.l.google.com \
+  --server-port 25 \
+  --authentication '{"NoAuthentication": {}}'
+```
+
+Replace the AWS Region and relay name with your values. Before using the relay, configure Google Workspace as described in [Setting up Google Workspace for inbound (unauthenticated) SMTP relay](#eb-relay-inbound-google).
+
+The following command creates an authenticated relay to a public SMTP submission server on port 587.
+
+```bash
+PROMPT> aws mailmanager create-relay \
+  --region {{us-east-1}} \
+  --relay-name {{corporate-submission}} \
+  --server-name {{smtp.gateway.example.com}} \
+  --server-port 587 \
+  --authentication '{
+    "SecretArn": "arn:aws:secretsmanager:{{us-east-1}}:{{123456789012}}:secret:{{mail-manager-relay-credentials}}"
+  }'
+```
+
+Replace the AWS Region, account ID, relay name, destination hostname, and secret name with your values. For complete field constraints, see [`CreateRelay`](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_CreateRelay.html). To manage the resource with CloudFormation, see [`AWS::SES::MailManagerRelay`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ses-mailmanagerrelay.html).
+
+### Using Secrets Manager credentials
+<a name="eb-relay-secrets-manager"></a>
+
+An authenticated relay reads the destination SMTP username and password from the secret referenced by `SecretArn`. Store the secret as a JSON object with the following keys.
+
+```json
+{
+  "username": "{{smtp-user}}",
+  "password": "{{smtp-password}}"
+}
+```
+
+Use the exact lowercase keys `username` and `password`. The values must match credentials accepted by the destination SMTP server. For the required secret resource policy and AWS KMS key policy, see [Secrets resource policy](eb-policies.md#eb-policies-relay-secrets) and [KMS CMK policy](eb-policies.md#eb-policies-relay-cmk).
+
+#### Rotating destination credentials
+<a name="eb-relay-secrets-rotation"></a>
+
+Updating the secret does not update the credential on the destination SMTP server. Coordinate both changes to avoid authentication failures.
+
+**To rotate SMTP relay credentials**
+
+1. Configure the destination SMTP server to accept the new credential while the previous credential remains valid.
+
+1. Update the secret's `AWSCURRENT` version with the new `username` and `password`.
+
+1. Confirm successful relay deliveries in the rule-set logs and relay metrics.
+
+1. Remove the previous credential from the destination SMTP server.
+
 **Note**
-Ensure that your intended recipient destinations are SES verified email identities. For example, if you want to deliver email to recipients *abc@example.com*, *admin@example.com*, *postmaster@acme.com*, and *support@acme.com*, then we'd recommend that you verify the `example.com` and `acme.com` domains in SES. If a recipient destination is not verified, SES will not attempt to deliver the email to the public SMTP server.
+Mail Manager can temporarily use cached credentials. Keep the previous credential valid during the transition when the destination supports overlapping credentials.
 
-   1. After you've configured Google Workspaces or Microsoft Office 365 to work with inbound gateways, enter the host name of the public SMTP server with the values below respective to your provider:
-      + Google Workspaces: `aspmx.l.google.com`
-      + Microsoft Office 365: `<your_domain>.mail.protection.outlook.com`
+## Using SMTP relays with ingress points and rules
+<a name="eb-relay-rules-ingress"></a>
 
-        Replace the dots with "-" in your domain name. For example, if your domain is *acme.com*, you would enter `acme-com.mail.protection.outlook.com`
+An open or authenticated ingress endpoint can reference a rule set that contains an SMTP relay action. The ingress endpoint controls how the sender connects to Mail Manager. The relay resource separately controls how Mail Manager connects to the destination SMTP server.
 
-   1. Enter port number 25 for the public SMTP server.
+Actions run in configured order. Common patterns include:
++ `Archive`, and then `Relay`, to retain email before mailbox delivery.
++ `AddHeader`, and then `Relay`, to pass routing or classification information to the destination.
++ `ReplaceRecipient`, and then `Relay`, to deliver to a different SMTP envelope recipient.
++ Separate recipient rules and relay resources to route users to Google Workspace, Microsoft 365, or another mail system.
 
-   1. Leave the Authentication section blank (do not select or create a secret ARN).
+For complete examples, see [Rule set examples](eb-rules-examples.md). For a complete Google Workspace and Microsoft 365 architecture, see [AWS Messaging Blog: How to use SES Mail Manager SMTP Relay action to deliver inbound email to Google Workspace and Microsoft 365](https://aws.amazon.com/blogs/messaging-and-targeting/how-to-use-ses-mail-manager-smtp-relay-action-to-deliver-inbound-email-to-google-workspace-and-microsoft-365/).
 
-------
-#### [ Outbound ]
+## Monitoring relay delivery
+<a name="eb-relay-monitoring"></a>
 
-**To configure an outbound SMTP relay**
+An SMTP relay action first records delivery as in progress. After the destination reports the outcome for every selected recipient, the action records success or failure. A single action can deliver some recipients and reject others.
 
-   1. Enter the host name of the public SMTP server you want your relay to connect to.
+Use rule-set application logs to inspect the action status and destination SMTP responses. Use the relay delivery and rejection metrics to monitor outcomes by relay ID. For log fields, metrics, and troubleshooting queries, see [Monitor and troubleshoot rule sets](eb-rules-monitoring.md).
 
-   1. Enter the port number for the public SMTP server.
+## Recommendations
+<a name="eb-relay-recommendations"></a>
++ Use a separate relay resource for each destination, credential set, or operational owner.
++ Use port 25 for mail-server relay. Use port 587 when an authenticated destination provides an SMTP submission service on that port.
++ Use `DENY` as the traffic policy default action and allow only intended recipients and traffic.
++ Put Archive before SMTP relay when the email must be retained before delivery.
++ Use `DROP` as the relay action failure policy when a destination rejection must stop later processing for that recipient.
++ Do not use consecutive SMTP relay actions as automatic failure-only fallback. With `CONTINUE`, recipients delivered by the first action also reach the next action and can receive duplicate email.
++ Test the complete flow with a subdomain before changing the MX record for a production domain.
 
-   1. Setup authentication for your public SMTP server by selecting one of your secrets from **Secret ARN**. *If you select a previously created secret, it must contain the policies indicated in the following steps for creating a new secret.*
-      + You have the option to create a new secret by choosing **Create new**—the AWS Secrets Manager console will open where you can continue to create a new key:
+## SMTP relay use cases
+<a name="eb-relay-use-cases"></a>
 
-      1. Choose **Other type of secret** in **Secret type**.
+Use Mail Manager as an inbound SMTP gateway to filter, inspect, and archive email before final delivery to an existing mailbox provider. The following walkthroughs preserve the provider-specific configuration needed for Google Workspace and Microsoft 365.
 
-      1. Enter the following keys and values in **Key/value pairs**:
+For an archive-before-delivery example that relays email to an existing mail server, see [AWS Messaging Blog: Archiving and sending to final SMTP server](https://aws.amazon.com/blogs/messaging-and-targeting/archiving-and-sending-to-final-smtp-server/).
 
-<table>
-<thead>
-  <tr><th>Key</th><th>value</th></tr>
-</thead>
-<tbody>
-  <tr><td><code>username</code></td><td><i>my_username</i></td></tr>
-  <tr><td><code>password</code></td><td><i>my_password</i></td></tr>
-</tbody>
-</table>
-
-**Note**
-For both of the keys, you must only enter `username` and `password` as shown (anything else will cause authentication to fail). For the values, enter your own username and password respectively.
-
-      1. Select **Add new key** to create a KMS customer managed key (CMK) in **Encryption key**—the AWS KMS console will open.
-
-      1. Choose **Create key** on the **Customer manged keys** page.
-
-      1. Keep the default values on the **Configure key** page and select **Next**.
-
-      1. Enter a name for your key in **Alias** (optionally, you can add a description and tag), followed by **Next**.
-
-      1. Select any users (other than yourself) or roles you want to permit to administer the key in **Key administrators** followed by **Next**.
-
-      1. Select any users (other than yourself) or roles you want to permit to use the key in **Key users** followed by **Next**.
-
-      1. Copy and paste the [KMS CMK policy](eb-policies.md#eb-policies-relay-cmk) into the **Key policy** JSON text editor at the `"statement"` level by adding it as an additional statement separated by a comma. Replace the region and account number with your own.
-
-      1. Choose **Finish**.
-
-      1. Select your browser's tab where you have the AWS Secrets Manager **Store a new secret** page open and select the *refresh icon* (circular arrow) next to the **Encryption key** field, then click inside the field and select your newly created key.
-
-      1. Enter a name in the **Secret name** field on the **Configure secret** page.
-
-      1. Select **Edit permissions** in **Resource permissions**.
-
-      1. Copy and paste the [Secrets resource policy](eb-policies.md#eb-policies-relay-secrets) into the **Resource permissions** JSON text editor and replace the region and account number with your own. (Be sure to delete any example code in the editor.)
-
-      1. Choose **Save** followed by **Next**.
-
-      1. Optionally configure rotation followed by **Next**.
-
-      1. Review and store your new secret by choosing **Store**.
-
-      1. Select your browser's tab where you have the SES **Create SMTP relay** page open and choose **Refresh list**, then select your newly created secret in **Secret ARN**.
-
-------
-
-1. Select **Create SMTP relay**.
-
-1. You can view and manage the SMTP relays you've already created from the **SMTP relays** page. If there's an SMTP relay you want to remove, select it's radio button followed by **Delete**.
-
-1. To edit an SMTP relay, select its name. On the details page, you can change the relay's name, the external SMTP server's name, port, and login credentials by selecting the corresponding **Edit** or **Update** button followed by **Save changes**.
-
-## Setting up Google Workspaces for inbound (non-authenticated) SMTP relay
+### Setting up Google Workspace for inbound (unauthenticated) SMTP relay
 <a name="eb-relay-inbound-google"></a>
 
-The following walkthrough example shows you how to setup Google Workspaces to work with a Mail Manager inbound (non-authenticated) SMTP relay.
+The following walkthrough shows how to set up Google Workspace to receive email from an unauthenticated Mail Manager SMTP relay. Configure the relay with `aspmx.l.google.com` as the destination hostname, port `25`, and `NoAuthentication`.
+
+For the complete provider configuration and end-to-end mail flow, see [AWS Messaging Blog: How to use SES Mail Manager SMTP Relay action to deliver inbound email to Google Workspace and Microsoft 365](https://aws.amazon.com/blogs/messaging-and-targeting/how-to-use-ses-mail-manager-smtp-relay-action-to-deliver-inbound-email-to-google-workspace-and-microsoft-365/).
 
 **Prerequisites**
 + Access to the Google administrator console ([Google administrator console](https://admin.google.com/) > Apps > Google Workspace > Gmail).
 + Access to the domain nameserver hosting the MX records for the domains which will be used for Mail Manager setup.
 
-**To setup Google Workspaces to work with an inbound SMTP relay**
-+ **Add Mail Manager IP addresses to the Inbound gateway configuration**
+**To set up Google Workspace to work with an inbound SMTP relay**
++ **Add Mail Manager SMTP relay IP ranges to the inbound gateway configuration**
 
   1. In the [Google administrator console](https://admin.google.com/), go to **Apps > Google Workspace > Gmail**.
 
@@ -148,30 +216,32 @@ The following walkthrough example shows you how to setup Google Workspaces to wo
 
   1. Enable **Inbound gateway**, and configure it with the following details:
 ![Enable Inbound gateway, and configure it with details.](https://docs.aws.amazon.com/ses/latest/dg/images/GoogleWSInboundGateway.png)
-     + In **Gateway IPs**, select **Add **, and add the ingress endpoint IPs specific to your region from the [SMTP Relay IP Ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) table.
+     + In **Gateway IPs**, choose **Add**, and add the ranges for your AWS Region from the [Mail Manager SMTP relay IP ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) table.
      + Select **Automatically detect external IP**.
      + Select **Require TLS for connections from the email gateways listed above**.
      + Select **Save** at the bottom of the dialog box to save the configuration. Once saved, the administrator console will show the **Inbound gateway** as enabled.
 
-## Setting up Microsoft Office 365 for inbound (non-authenticated) SMTP relay
+### Setting up Microsoft 365 for inbound (unauthenticated) SMTP relay
 <a name="eb-relay-inbound-ms365"></a>
 
-The following walkthrough example shows you how to setup Microsoft Office 365 to work with a Mail Manager inbound (non-authenticated) SMTP relay.
+The following walkthrough shows how to set up Microsoft 365 to receive email from an unauthenticated Mail Manager SMTP relay. Use the hostname from your Microsoft 365 MX record as the relay destination. For example, for `example.com`, use `example-com.mail.protection.outlook.com`, port `25`, and `NoAuthentication`.
+
+For the complete provider configuration and end-to-end mail flow, see [AWS Messaging Blog: How to use SES Mail Manager SMTP Relay action to deliver inbound email to Google Workspace and Microsoft 365](https://aws.amazon.com/blogs/messaging-and-targeting/how-to-use-ses-mail-manager-smtp-relay-action-to-deliver-inbound-email-to-google-workspace-and-microsoft-365/).
 
 **Prerequisites**
 + Access to the Microsoft Security admin center ([Microsoft Security admin center](https://security.microsoft.com/homepage) > Email & collaboration > Policies & Rules > Threat policies).
 + Access to the domain nameserver hosting the MX records for the domains which will be used for Mail Manager setup.
 
-**To setup Microsoft Office 365 to work with an inbound SMTP relay**
+**To set up Microsoft 365 to work with an inbound SMTP relay**
 
-1. **Add Mail Manager IP addresses to the Allow list**
+1. **Add Mail Manager SMTP relay IP ranges to the allow list**
 
    1. In the [Microsoft Security admin center](https://security.microsoft.com/homepage), go to **Email & collaboration > Policies & Rules > Threat policies**.
 
-   1. Select **Anti-spam** under **Polices**.
+   1. Select **Anti-spam** under **Policies**.
 
    1. Select **Connection filter policy** followed by **Edit connection filter policy**.
-      + In the **Always allow messages from the following IP addresses or address range** dialog, add the ingress endpoint IPs specific to your region from the [SMTP Relay IP Ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) table.
+      + In the **Always allow messages from the following IP addresses or address range** dialog, add the ranges for your AWS Region from the [Mail Manager SMTP relay IP ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) table.
       + Select **Save**.
 
    1. Return to the **Anti-spam** option and choose **Anti-spam inbound policy**.
@@ -182,10 +252,10 @@ The following walkthrough example shows you how to setup Microsoft Office 365 to
 
 1. **Enhanced Filtering configuration (recommended)**
 
-   This option will allow Microsoft Office 365 to properly identify the original connecting IP before the message was received by SES Mail Manager.
+   This option lets Microsoft 365 identify the original connecting IP before the message was received by SES Mail Manager.
 
    1. **Create an inbound connector**
-      + Login to the new [Exchange admin center](https://admin.exchange.microsoft.com/#/homepage) and go to **Mail flow** > **Connectors**.
+      + Sign in to the [Exchange admin center](https://admin.exchange.microsoft.com/#/homepage) and go to **Mail flow** > **Connectors**.
       + Select **Add a connector**.
       + In **Connection from**, select **Partner organization** followed by **Next**.
       + Fill in the fields as follows:
@@ -193,7 +263,7 @@ The following walkthrough example shows you how to setup Microsoft Office 365 to
         + **Description** – Connector for filtering
 ![Adding a connector.](https://docs.aws.amazon.com/ses/latest/dg/images/MSExAddConnector.png)
       + Select **Next**.
-      + In **Authenticating sent email**, select **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization** and add the ingress endpoint IPs specific to your region from the [SMTP Relay IP Ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) table.
+      + In **Authenticating sent email**, select **By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization**. Add the ranges for your AWS Region from the [Mail Manager SMTP relay IP ranges](https://docs.aws.amazon.com/general/latest/gr/ses.html#ses_mm_relay_ip_ranges) table.
 ![In Authenticating sent email, select By verifying that the IP address of the sending server matches one of the following IP addresses, which belong to your partner organization and add the ingress endpoint IPs specific to your region from the following table.](https://docs.aws.amazon.com/ses/latest/dg/images/MSExAuthSentMail.png)
       + Select **Next**.
       + In **Security restrictions**, accept the default **Reject email messages if they aren’t sent over TLS** setting, followed by **Next**.
@@ -204,7 +274,7 @@ The following walkthrough example shows you how to setup Microsoft Office 365 to
       Now that the inbound connector has been configured, you will need to enable the enhanced filtering configuration of the connector in the **Microsoft Security admin center**.
       + In the [Microsoft Security admin center](https://security.microsoft.com/homepage), go to **Email & collaboration > Policies & Rules > Threat policies**.
       + Select **Enhanced filtering** under **Rules**.
-![Select Enhanced filtering under Rules within Threat polices.](https://docs.aws.amazon.com/ses/latest/dg/images/MSO365ThreatPolicies.png)
+![Select Enhanced filtering under Rules within Threat policies.](https://docs.aws.amazon.com/ses/latest/dg/images/MSO365ThreatPolicies.png)
       + Select the **Simple Email Service Mail Manager connector** that you created previously to edit its configuration parameters.
       + Select both **Automatically detect and skip the last IP address** and **Apply to entire organization**.
 ![Edit the previously created connector's configuration.](https://docs.aws.amazon.com/ses/latest/dg/images/MSO365EditConnector.png)

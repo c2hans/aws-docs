@@ -19,6 +19,7 @@ This managed policy enables IPAM to do the following:
 + Allocate CIDRs from your IPAM pools when enforcing IPAM policy allocation rules (statement `IPAMAllocationPolicyActions`). For more information, see [Defining a public IPv4 allocation strategy with IPAM policies](define-public-ipv4-allocation-strategy-with-ipam-policies.md).
 + Modify and read managed prefix lists (statements `PrefixListResolverWriteActions` and `PrefixListResolverReadActions`). For more information, see [Automate prefix list updates with IPAM](automate-prefix-list-updates.md).
 + Create, associate, and delete the DHCP option sets that IPAM manages for IPAM policy DHCP rules (statement `IPAMDhcpOptionSetManagementActions`). IPAM does not modify or delete DHCP option sets that you create.
++ Create, read, update, and delete the Route 53 IP guardrail policies that IPAM manages to keep the address records in your Route 53 hosted zones within the IP address space that your IPAM policy DNS record rules allow (statement `IPAMRoute53IpGuardrailPolicyActions`). IPAM does not modify other Route 53 resources.
 
 To view the current JSON policy document, version history, and ARN for this policy, see [AWSIPAMServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSIPAMServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
 
@@ -38,6 +39,7 @@ View details about updates to AWS managed policies for IPAM since this service b
 
 | Change | Description | Date |
 | --- | --- | --- |
+| AWSIPAMServiceRolePolicy | Actions added to the AWSIPAMServiceRolePolicy managed policy (route53:CreateIpGuardrailPolicy, route53:GetIpGuardrailPolicy, route53:UpdateIpGuardrailPolicy, and route53:DeleteIpGuardrailPolicy) to let IPAM keep Route 53 IP guardrail policies in sync with IPAM policy DNS record rules. | November 19, 2026 |
 | AWSIPAMOutboundServiceRolePolicy – New policy | IPAM added a new AWS managed policy for the AWSServiceRoleForIPAMOutbound service-linked role. With this policy, IPAM requests AWS web identity tokens (sts:GetWebIdentityToken) to federate into external providers of IPAM resources. | October 28, 2026 |
 | AWSIPAMServiceRolePolicy | Actions added to the AWSIPAMServiceRolePolicy managed policy (ec2:DescribeDhcpOptions, ec2:CreateDhcpOptions, ec2:AssociateDhcpOptions, and ec2:DeleteDhcpOptions) to let IPAM create, associate, and delete the DHCP option sets that it manages for IPAM policy DHCP rules. | October 15, 2026 |
 | AWSIPAMServiceRolePolicy | Actions added to the AWSIPAMServiceRolePolicy managed policy (route53:ListHostedZones, route53:GetHostedZone, route53:ListResourceRecordSets, and route53:ListTagsForResource) to let IPAM read DNS records in Route 53 hosted zones during resource discovery. | October 15, 2026 |

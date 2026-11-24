@@ -37,7 +37,7 @@ If the device was ordered with the NFS transfer mechanism, the bucket name will 
 
 This video shows how to upload files to Amazon S3 storage using AWS OpsHub.
 
-[![AWS Videos](https://img.youtube.com/vi/Bw8rzQhT1nM/0.jpg)](https://www.youtube.com/watch?v=Bw8rzQhT1nM)
+[![AWS Videos](https://img.youtube.com/vi/Bw8rzQhT1nM/0.jpg)](https://www.youtube.com/watch?v=Bw8rzQhT1nM&t=472s)
 
 **To upload a file**
 

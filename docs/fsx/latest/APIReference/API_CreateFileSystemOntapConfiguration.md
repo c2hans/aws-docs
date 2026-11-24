@@ -19,7 +19,7 @@ Specifies the FSx for ONTAP file system deployment type to use in creating the f
 +  `SINGLE_AZ_3` - A file system configured with multiple high-availability (HA) pairs for Single-AZ redundancy. This is a third-generation FSx for ONTAP file system.
 For information about the use cases for Multi-AZ and Single-AZ deployments, refer to [Choosing a file system deployment type](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/high-availability-AZ.html).
 Type: String
-Valid Values: `MULTI_AZ_1 | SINGLE_AZ_1 | SINGLE_AZ_2 | MULTI_AZ_2`
+Valid Values: `MULTI_AZ_1 | SINGLE_AZ_1 | SINGLE_AZ_2 | MULTI_AZ_2 | SINGLE_AZ_3 | MULTI_AZ_3`
 Required: Yes
 
  ** AutomaticBackupRetentionDays **   <a name="FSx-Type-CreateFileSystemOntapConfiguration-AutomaticBackupRetentionDays"></a>
@@ -92,7 +92,7 @@ Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following
 + The value of `ThroughputCapacity` and `ThroughputCapacityPerHAPair` are not the same value.
 + The value of `ThroughputCapacity` when divided by the value of `HAPairs` is outside of the valid range for `ThroughputCapacity`.
 Type: Integer
-Valid Range: Minimum value of 8. Maximum value of 100000.
+Valid Range: Minimum value of 8. Maximum value of 2147483647.
 Required: No
 
  ** ThroughputCapacityPerHAPair **   <a name="FSx-Type-CreateFileSystemOntapConfiguration-ThroughputCapacityPerHAPair"></a>
@@ -109,7 +109,7 @@ Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following
 + The value of deployment type is `SINGLE_AZ_2` or `SINGLE_AZ_3` and `ThroughputCapacity` / `ThroughputCapacityPerHAPair` is not a valid HA pair (a value between 1 and 12).
 + The value of `ThroughputCapacityPerHAPair` is not a valid value.
 Type: Integer
-Valid Range: Minimum value of 128. Maximum value of 6144.
+Valid Range: Minimum value of 128. Maximum value of 2147483647.
 Required: No
 
  ** WeeklyMaintenanceStartTime **   <a name="FSx-Type-CreateFileSystemOntapConfiguration-WeeklyMaintenanceStartTime"></a>

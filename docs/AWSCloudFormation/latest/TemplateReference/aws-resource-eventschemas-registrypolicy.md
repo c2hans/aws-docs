@@ -21,8 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::EventSchemas::RegistryPolicy",
   "Properties" : {
       "[Policy](#cfn-eventschemas-registrypolicy-policy)" : {{Json}},
-      "[RegistryName](#cfn-eventschemas-registrypolicy-registryname)" : {{String}},
-      "[RevisionId](#cfn-eventschemas-registrypolicy-revisionid)" : {{String}}
+      "[RegistryName](#cfn-eventschemas-registrypolicy-registryname)" : {{String}}
     }
 }
 ```
@@ -35,7 +34,6 @@ Type: AWS::EventSchemas::RegistryPolicy
 Properties:
   [Policy](#cfn-eventschemas-registrypolicy-policy): {{Json}}
   [RegistryName](#cfn-eventschemas-registrypolicy-registryname): {{String}}
-  [RevisionId](#cfn-eventschemas-registrypolicy-revisionid): {{String}}
 ```
 
 ## Properties
@@ -50,12 +48,6 @@ A resource-based policy.
 `RegistryName`  <a name="cfn-eventschemas-registrypolicy-registryname"></a>
 The name of the registry.
 *Required*: Yes
-*Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`RevisionId`  <a name="cfn-eventschemas-registrypolicy-revisionid"></a>
-The revision ID of the policy.
-*Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -79,6 +71,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Id`  <a name="Id-fn::getatt"></a>
 The ID of the policy.
+
+`RevisionId`  <a name="RevisionId-fn::getatt"></a>
+Property description not available.
 
 ## Examples
 <a name="aws-resource-eventschemas-registrypolicy--examples"></a>

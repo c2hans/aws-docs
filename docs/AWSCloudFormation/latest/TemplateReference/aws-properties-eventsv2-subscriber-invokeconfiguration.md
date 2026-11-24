@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[HttpParameters](#cfn-eventsv2-subscriber-invokeconfiguration-httpparameters)" : {{HttpParameters}},
   "[KinesisParameters](#cfn-eventsv2-subscriber-invokeconfiguration-kinesisparameters)" : {{KinesisParameters}},
   "[LambdaParameters](#cfn-eventsv2-subscriber-invokeconfiguration-lambdaparameters)" : {{LambdaParameters}},
+  "[MskParameters](#cfn-eventsv2-subscriber-invokeconfiguration-mskparameters)" : {{MskParameters}},
   "[RoleArn](#cfn-eventsv2-subscriber-invokeconfiguration-rolearn)" : {{String}},
   "[SnsParameters](#cfn-eventsv2-subscriber-invokeconfiguration-snsparameters)" : {{SnsParameters}},
   "[SqsParameters](#cfn-eventsv2-subscriber-invokeconfiguration-sqsparameters)" : {{SqsParameters}},
@@ -43,6 +44,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     KinesisParameters}}
   [LambdaParameters](#cfn-eventsv2-subscriber-invokeconfiguration-lambdaparameters): {{
     LambdaParameters}}
+  [MskParameters](#cfn-eventsv2-subscriber-invokeconfiguration-mskparameters): {{
+    MskParameters}}
   [RoleArn](#cfn-eventsv2-subscriber-invokeconfiguration-rolearn): {{String}}
   [SnsParameters](#cfn-eventsv2-subscriber-invokeconfiguration-snsparameters): {{
     SnsParameters}}
@@ -80,6 +83,12 @@ Parameters for writing events to an Amazon Kinesis Data Streams target.
 Parameters for invoking an AWS Lambda function target.
 *Required*: No
 *Type*: [LambdaParameters](aws-properties-eventsv2-subscriber-lambdaparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MskParameters`  <a name="cfn-eventsv2-subscriber-invokeconfiguration-mskparameters"></a>
+Parameters for producing events to an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster, used when TargetArn is an Amazon MSK cluster ARN.
+*Required*: No
+*Type*: [MskParameters](aws-properties-eventsv2-subscriber-mskparameters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RoleArn`  <a name="cfn-eventsv2-subscriber-invokeconfiguration-rolearn"></a>

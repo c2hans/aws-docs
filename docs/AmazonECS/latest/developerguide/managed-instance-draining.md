@@ -64,7 +64,7 @@ If your instances aren't terminating even after reaching and exceeding the maxim
 ## Draining behavior for Amazon ECS Managed Instances
 <a name="managed-instances-draining-behavior"></a>
 
-Amazon ECS Managed Instances termination ensures graceful workload transitions while optimizing costs and maintaining system health. The termination system provides three distinct decision paths for instance termination, each with different timing characteristics and customer impact profiles.
+Amazon ECS Managed Instances termination ensures graceful workload transitions while optimizing costs and maintaining system health. The termination system provides the following decision paths for instance termination, each with different timing characteristics and customer impact profiles.
 
 ### Termination decision paths
 <a name="managed-instances-termination-paths"></a>
@@ -77,6 +77,14 @@ Amazon ECS Managed Instances continuously monitors and proactively optimizes cos
 
 Infrastructure refresh termination
 Amazon ECS Managed Instances automatically manages and updates software on managed container instances to ensure security and compliance while maintaining workload availability. For more information, see [patching in Amazon ECS Managed Instances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-patching.html).
+
+Instance health replacement
+Amazon ECS drains and replaces an instance when its container instance health is impaired, for example by a failed GPU or a critical daemon, or when Amazon EC2 reports a problem with the instance. For more information, see [Container instance-health issues](container-instance-health.md#container-instance-health-action) and [Instance lifecycle](managed-instances-patching.md#managed-instances-lifecycle).
+
+Infrastructure optimization
+Amazon ECS drains underutilized instances and moves their service tasks to other instances. For more information, see [Underutilized Instance Detection](managed-instances-infrastructure-optimization.md#underutilized-instance-detection).
+
+Service tasks stopped by this draining have the stopped reason `Task in service {{service-name}} stopped due to instance draining: {{reason}}`, where {{reason}} says why the instance is draining. For example, it starts with `INSTANCE_HEALTH` or is `INFRASTRUCTURE_HEALTH` for instance health replacement, is `INFRASTRUCTURE_OPTIMIZATION` for infrastructure optimization, and is `PATCHING` or `EVENT_WINDOW_PATCHING` for infrastructure refresh.
 
 ### Graceful draining and workload migration
 <a name="managed-instances-draining-coordination"></a>

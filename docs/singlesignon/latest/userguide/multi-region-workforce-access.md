@@ -45,9 +45,9 @@ During a Regional disruption, a workforce user might need to sign in again in an
 | Alternative IPv4 only2 | Yes | Yes |  **Pattern:** `https://{{[Identity Center instance ID]}}.{{ [Region]}}.portal.amazonaws.com` <br /> **Example:** `https://ssoins-111111h2222j33pp.eu-west-1.portal.amazonaws.com`  |
 | Dual-stack2 | Yes | Yes |  **Pattern:** `https://{{[Identity Center instance ID]}}.portal.{{ [Region]}}.app.aws` <br /> **Example:** `https://ssoins-111111h2222j33pp.portal.eu-west-1.app.aws`  |
 
-1 In additional Regions, the custom alias is not supported, and the `awsapps.com` parent domain is not available.
+<sup>1</sup> In additional Regions, the custom alias is not supported, and the `awsapps.com` parent domain is not available.
 
-2 The alternative IPv4 only and dual-stack portal endpoints don't have the trailing `/start` in the URL.
+<sup>2</sup> The alternative IPv4 only and dual-stack portal endpoints don't have the trailing `/start` in the URL.
 
 ## Assertion Consumer Service (ACS) endpoints in the primary and additional AWS Regions
 <a name="acs-endpoints"></a>

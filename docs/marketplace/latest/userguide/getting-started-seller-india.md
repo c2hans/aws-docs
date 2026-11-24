@@ -10,7 +10,7 @@ AWS Marketplace allows sellers in India to sell paid offers to buyers in India (
 <a name="india-seller-key-benefits"></a>
 + Sellers in India can sell paid offers on AWS Marketplace and receive disbursements to bank accounts in India in Indian rupees (INR).
 + Buyers are invoiced in Indian rupees (INR) and invoices include Goods and Service Tax (GST), as applicable.
-+ AWS India facilitates issuance of tax-compliant invoices to AWS customers in INR with you as Seller of Record (SoR), based on information provided in the tax registration tab in AWS Partner Central.
++ AWS India facilitates issuance of tax-compliant invoices to AWS customers in INR with you as Seller of Record (SoR), based on information provided in the **Tax registration** section on the **Tax and invoices** page in AWS Partner Central.
 
 ## Important considerations
 <a name="india-seller-considerations"></a>
@@ -56,14 +56,14 @@ You must submit the following information before you can start listing your offe
 
 1. Permanent Account Number (PAN) - auto-populated from the GSTIN you provided
 
-1. Seller signature that is used on tax invoices for your buyers – In the tax registration form, upload an image of your authorized seller signature under the **Seller signature** section. You can access the tax registration form from the **Tax summary** container on the **Tax details** page.
+1. Seller signature that is used on tax invoices for your buyers – On the **Tax and invoices** page, in the **Tax documents** section, upload an image of your authorized seller signature.
 
    The following requirements apply to seller signature uploads:
    + File format: .png, .jpg, .jpeg, or .gif only
    + Maximum file size: 3.5 MB
    + Maximum files: 1
 
-   After you upload your signature, it goes through a validation process that can take up to 30 minutes. The validation status (accepted or rejected) is displayed in the **Tax summary** container on the **Tax details** page. If your signature is rejected, a reason is provided so you can adjust and re-upload your signature.
+   After you upload your signature, it goes through a validation process that can take up to 30 minutes. The validation status (accepted or rejected) is displayed in the **Tax summary** on the **Tax and invoices** page. If your signature is rejected, a reason is provided so you can adjust and re-upload your signature.
 
    You will also receive email notifications if any compliance validation process fails for GSTIN updates or seller signature updates.
 
@@ -76,6 +76,20 @@ You must submit the following information before you can start listing your offe
    1. confirmation that your GSTIN is enabled for e-invoicing;
 
    1. authorization to AWS India to raise invoices (e-invoices to GST registered buyers) for sales made by you through AWS Marketplace, along with a declaration that you are responsible for remitting the applicable GST to the Government
+
+**To provide your tax information**
+
+1. Sign in to AWS Partner Central at [https://us-east-1.console.aws.amazon.com/partnercentral/home](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+
+1. In the left navigation pane, under **Settings**, choose **Tax and invoices**.
+
+1. On the **Primary tax details** tab, in the **Tax registration** section, choose **Update tax registration**.
+
+1. Enter your GSTIN, PAN, legal business name, and business address, and then choose **Submit**.
+
+1. In the **Tax documents** section, choose **Update** and upload your authorized seller signature (PNG, JPG, or GIF).
+
+1. Track the verification status in the **Tax summary** and in each section.
 
 **Important**
 Ensure that e-invoicing is enabled for your GSTIN number before proceeding. Failure to enable this functionality results in tax invoice generation failures. In the event of such a failure, you need to:

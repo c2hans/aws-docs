@@ -15,6 +15,14 @@ Type: String
 Valid Values: `ALLOW | SKIP`
 Required: Yes
 
+ ** CentralizeWithDataProtection **   <a name="cwoa-Type-SourceLogsConfiguration-CentralizeWithDataProtection"></a>
+Specifies whether this centralization rule centralizes log events with data protection applied. If you don't specify this setting, or you set it to `DISABLED`, the rule centralizes the original log events, including any sensitive data that a data protection policy on the source log group masks.
+When you set this to `ENABLED`, the rule centralizes the same masked data that anyone in the source account without the `logs:Unmask` permission sees. The rule doesn't copy the original values to the destination, so you can't unmask them in the destination account. The rule centralizes log events from source log groups that don't have a data protection policy without changes.
+The setting applies only to log events that the rule centralizes after you enable it. It doesn't change log events that the rule already centralized.
+Type: String
+Valid Values: `ENABLED | DISABLED`
+Required: No
+
  ** DataSourceSelectionCriteria **   <a name="cwoa-Type-SourceLogsConfiguration-DataSourceSelectionCriteria"></a>
 The selection criteria that specifies which data sources to centralize. The selection criteria uses the same filter expression format as `LogGroupSelectionCriteria`, but operates on `DataSourceName` and `DataSourceType` operands. When both `LogGroupSelectionCriteria` and `DataSourceSelectionCriteria` are specified, a log event must match both criteria to be centralized.
 Type: String

@@ -40,3 +40,10 @@ Using outbound identity federation, your AWS workloads can securely:
 1. The external service uses the verification keys to verify the token's signature and validates claims such as expiration, issuer, audience, and subject. It also validates any AWS identity, session-context, `subject_mode`, and `scope` claims used by its authorization model.
 
 1. After successful validation, the external service grants access according to the identity and claims in the token.
+
+## Verification key rotation
+<a name="verification-key-rotation"></a>
+
+AWS automatically rotates the keys that sign and verify your account's tokens. During automatic rotation, AWS publishes the public key for a new signing key in your issuer's JSON Web Key Set (JWKS) before it signs any token with the new key. It also keeps publishing the old public key until the tokens signed with the old key expire. External services that fetch keys from your JWKS keep working through rotation. If an external service caches the JWKS, it should fetch the JWKS again when its cached copy expires or when it sees an unknown key ID (`kid`). For guidelines on caching keys, see [Cache verification keys and metadata](id_roles_providers_outbound_getting_started.md#cache-verification-keys).
+
+If you disable outbound identity federation and then enable it again, your account gets new keys. Until cached copies of the old keys expire, external services might fail to verify new tokens. If that happens, wait and try again with a new token. The wait can take up to a few hours. If verification keeps failing after that, make sure that the external service has refreshed its cached keys for your issuer.

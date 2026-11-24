@@ -75,13 +75,7 @@ When you launch an instance, if you modify the configuration of any volumes or s
 The instance type defines the hardware configuration and size of the instance. Larger instance types have more CPU and memory. For more information, see [Amazon EC2 instance types](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html).
 + **Instance type**: Ensure that the instance type is compatible with the AMI that you've specified. For more information, see [Amazon EC2 instance types](instance-types.md).
 
-  **Free Tier** – You can use instance types that are labeled **Free tier eligible** for free under the Free Tier. The specific instance types depend on when you created your AWS account.
-
-  If your created your AWS account before July 15, 2025 and it's less than 12 months old, you can use Amazon EC2 under the Free Tier by selecting the **t2.micro** instance type, or the **t3.micro** instance type in Regions where **t2.micro** is unavailable. Be aware that when you launch a **t3.micro** instance, it defaults to [**Unlimited** mode](burstable-performance-instances-unlimited-mode.md), which might incur additional charges based on CPU usage.
-
-  If you created your AWS account on or after July 15, 2025, you can use **t3.micro**, **t3.small**, **t4g.micro**, **t4g.small**, **c7i-flex.large**, and **m7i-flex.large** instance types for 6 months or until your credits are used up.
-
-  For more information, see [Free Tier benefits before and after July 15, 2025](ec2-free-tier-usage.md#ec2-free-tier-comparison).
+  **Free Tier** – If you're eligible for the AWS Free Tier, you can use instance types that are labeled **Free tier eligible** for free for 6 months or until your credits are used up. For more information, see [Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 + **Compare instance types**: You can compare different instance types by the following attributes: number of vCPUs, architecture, amount of memory (GiB), amount of storage (GB), storage type, and network performance.
 + **Get advice**: You can get guidance and suggestions for instance types from the EC2 instance type finder. For more information, see [Get recommendations from EC2 instance type finder](get-ec2-instance-type-recommendations.md).
 + (Launch templates only) **Advanced**: To specify instance attributes and let Amazon EC2 identify the instance types with those attributes, choose **Advanced**, and then choose **Specify instance type attributes**.

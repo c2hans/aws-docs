@@ -275,7 +275,7 @@ Lambda base images include the runtime interface emulator (RIE). When you run th
    {"sdkVersion": "2.4.0"}
    ```
 
-1. To stop the container, press CtrlC in the terminal window where the container runs.
+1. To stop the container, press **Ctrl+C** in the terminal window where the container runs.
 
 The RIE starts extensions only from `/opt/extensions`. To test a runtime-level extension locally, also copy it to `/opt/extensions` in a test image.
 

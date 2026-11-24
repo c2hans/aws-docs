@@ -23,10 +23,10 @@ This topic provides information about supported mechanisms for JCE provider with
 The AWS CloudHSM software library for Java allows you to use the following operations for generate key and key pair functions.
 + `RSA`
 + `EC`
-+ `EdDSA (Ed25519)`see note [2](#java-gen-key-pairs-5-note-2)
++ `EdDSA (Ed25519)`<sup>see note [2](#java-gen-key-pairs-5-note-2)</sup>
 + `ML-DSA`
 + `AES`
-+ `DESede (Triple DES)`see note [1](#java-gen-key-pairs-5-note-1)
++ `DESede (Triple DES)`<sup>see note [1](#java-gen-key-pairs-5-note-1)</sup>
 + `GenericSecret`
 
 ## Cipher functions
@@ -43,7 +43,7 @@ The AWS CloudHSM software library for Java supports the following algorithm, mod
 | AESWrap | ECB | `AESWrap/ECB/NoPadding`<br />`AESWrap/ECB/PKCS5Padding`<br />`AESWrap/ECB/ZeroPadding` | Implements `Cipher.WRAP_MODE` and `Cipher.UNWRAP_MODE`. |
 | DESede (Triple DES) | CBC | `DESede/CBC/PKCS5Padding`<br />`DESede/CBC/NoPadding` | Implements `Cipher.ENCRYPT_MODE` and `Cipher.DECRYPT_MODE`. See note [1](#java-gen-key-pairs-5-note-1) below for an upcoming change. |
 | DESede (Triple DES) | ECB | `DESede/ECB/NoPadding`<br />`DESede/ECB/PKCS5Padding` | Implements `Cipher.ENCRYPT_MODE` and `Cipher.DECRYPT_MODE`. See note [1](#java-gen-key-pairs-5-note-1) below for an upcoming change. |
-| RSA | ECB | `RSA/ECB/PKCS1Padding` **see note [1](#java-gen-key-pairs-5-note-1)**<br />`RSA/ECB/OAEPPadding`<br />`RSA/ECB/OAEPWithSHA-1ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-224ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-256ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-384ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-512ANDMGF1Padding` | Implements `Cipher.WRAP_MODE`, `Cipher.UNWRAP_MODE`, `Cipher.ENCRYPT_MODE`, and `Cipher.DECRYPT_MODE`. |
+| RSA | ECB | `RSA/ECB/PKCS1Padding` <sup>**see note [1](#java-gen-key-pairs-5-note-1)**</sup><br />`RSA/ECB/OAEPPadding`<br />`RSA/ECB/OAEPWithSHA-1ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-224ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-256ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-384ANDMGF1Padding`<br />`RSA/ECB/OAEPWithSHA-512ANDMGF1Padding` | Implements `Cipher.WRAP_MODE`, `Cipher.UNWRAP_MODE`, `Cipher.ENCRYPT_MODE`, and `Cipher.DECRYPT_MODE`. |
 | RSA | ECB | `RSA/ECB/NoPadding` | Implements `Cipher.ENCRYPT_MODE` and `Cipher.DECRYPT_MODE`. |
 | RSAAESWrap | ECB | `RSAAESWrap/ECB/OAEPPadding`<br />`RSAAESWrap/ECB/OAEPWithSHA-1ANDMGF1Padding`<br />`RSAAESWrap/ECB/OAEPWithSHA-224ANDMGF1Padding`<br />`RSAAESWrap/ECB/OAEPWithSHA-256ANDMGF1Padding`<br />`RSAAESWrap/ECB/OAEPWithSHA-384ANDMGF1Padding`<br />`RSAAESWrap/ECB/OAEPWithSHA-512ANDMGF1Padding` | Implements `Cipher.WRAP_MODE` and `Cipher.UNWRAP_MODE`. |
 
@@ -89,7 +89,7 @@ The AWS CloudHSM software library for Java supports the following types of signa
 + `ML-DSA-87`
 + `ML-DSA-EXTERNAL-MU`
 
-**EdDSA Signature Types**see note [2](#java-gen-key-pairs-5-note-2)
+**EdDSA Signature Types**<sup>see note [2](#java-gen-key-pairs-5-note-2)</sup>
 + `Ed25519` or `EdDSA` (Maximum data size: 16,000 bytes)
 + `Ed25519ph`
 
@@ -125,11 +125,11 @@ The AWS CloudHSM software library for Java supports the following CMAC algorithm
 <a name="java-key-derivation_5"></a>
 
 The AWS CloudHSM software library for Java supports ECDH with Key Derivation Functions (KDF). The following KDF types are supported:
-+ `ECDHwithX963SHA1KDF` Supports X9.63 KDF SHA1 algorithm[3](#kdf2)
-+ `ECDHwithX963SHA224KDF` Supports X9.63 KDF SHA224 algorithm[3](#kdf2)
-+ `ECDHwithX963SHA256KDF` Supports X9.63 KDF SHA256 algorithm[3](#kdf2)
-+ `ECDHwithX963SHA384KDF` Supports X9.63 KDF SHA384 algorithm[3](#kdf2)
-+ `ECDHwithX963SHA512KDF` Supports X9.63 KDF SHA512 algorithm[3](#kdf2)
++ `ECDHwithX963SHA1KDF` Supports X9.63 KDF SHA1 algorithm<sup>[3](#kdf2)</sup>
++ `ECDHwithX963SHA224KDF` Supports X9.63 KDF SHA224 algorithm<sup>[3](#kdf2)</sup>
++ `ECDHwithX963SHA256KDF` Supports X9.63 KDF SHA256 algorithm<sup>[3](#kdf2)</sup>
++ `ECDHwithX963SHA384KDF` Supports X9.63 KDF SHA384 algorithm<sup>[3](#kdf2)</sup>
++ `ECDHwithX963SHA512KDF` Supports X9.63 KDF SHA512 algorithm<sup>[3](#kdf2)</sup>
 
 ## Convert keys to key specifications using key factories
 <a name="java-key-factories"></a>

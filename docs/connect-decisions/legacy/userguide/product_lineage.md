@@ -75,7 +75,7 @@ The following table shows an example of how Demand Planning Product lineage feat
 | product\_id | Required | Product 123 | Product 123 | Product 123 | Product 123 | Product 123 | Product 123 | Product 123 | Product 123 | Product 123 | Null | Product 123 |
 | alternative\_product\_id | Required | Product XYZ | Null | Product XYZ | Product XYZ | Product XYZ | Product XYZ | Product XYZ | Product XYZ | Product XYZ | Null | Product XYZ |
 | alternate\_type | Required | Similar\_Demand\_Product | Similar\_Demand\_Product | Null or a different value | Similar\_Demand\_Product | Similar\_Demand\_Product | Similar\_Demand\_Product | Similar\_Demand\_Product | Similar\_Demand\_Product | Similar\_Demand\_Product | Similar\_Demand\_Product | Similar\_Demand\_Product |
-| status\* | Required | active | active | active | inactive | active | active | Null | active | active | active | active |
+| status<sup>\*</sup> | Required | active | active | active | inactive | active | active | Null | active | active | active | active |
 | alternate\_product\_qty | Required | 100 | 60 | 100 | 100 | Null | 100 | 100 | 100 | 100 | 100 | 60 |
 | alternate\_product\_qty\_uom | Required | percentage | percentage | percentage | percentage | percentage | Null or a different value | percentage | percentage | percentage | percentage | percentage |
 | eff\_start\_date | Required | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | Null | 2023-01-01 00:00:00 | 2023-01-01 00:00:00 | Null |

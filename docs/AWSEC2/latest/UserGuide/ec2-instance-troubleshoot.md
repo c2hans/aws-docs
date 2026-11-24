@@ -25,3 +25,4 @@ The following procedures and tips can help you troubleshoot issues with your Ama
 + [EC2Rescue for Windows instances](Windows-Server-EC2Rescue.md)
 + [EC2 Serial Console](ec2-serial-console.md)
 + [Send diagnostic interrupts](diagnostic-interrupt.md)
++ [ENA queue issues](troubleshooting-ena-queues.md)

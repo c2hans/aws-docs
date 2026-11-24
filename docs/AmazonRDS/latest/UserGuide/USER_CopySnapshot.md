@@ -11,7 +11,7 @@ You can copy a snapshot within the same AWS Region, you can copy a snapshot acro
 ## Copying a DB snapshot
 <a name="USER_CopyDBSnapshot"></a>
 
-For each AWS account, you can copy up to 20 DB snapshots at a time from one AWS Region to another. If you copy a DB snapshot to another AWS Region, you create a manual DB snapshot that is retained in that AWS Region. Copying a DB snapshot out of the source AWS Region incurs Amazon RDS data transfer charges.
+For each AWS account, you can copy up to 20 DB snapshots at a time from one AWS Region to another. If you copy a DB snapshot to another AWS Region, you create a manual DB snapshot that is retained in that AWS Region. Copying a DB snapshot out of the source AWS Region incurs Amazon RDS data transfer charges. Copying a DB snapshot to another AWS account within the same AWS Region doesn't incur data transfer charges. However, the destination account incurs charges for the storage that the snapshot copy uses.
 
 For more information about data transfer pricing, see [Amazon RDS pricing](https://aws.amazon.com/rds/pricing/).
 
@@ -325,7 +325,7 @@ The following are some limitations when you copy snapshots:
 + When you request multiple snapshot copies for the same source DB instance, they're queued internally. The copies requested later won't start until the previous snapshot copies are completed. For more information, see [ Why is my EC2 AMI or EBS snapshot creation slow?](https://aws.amazon.com/premiumsupport/knowledge-center/ebs-snapshot-ec2-ami-creation-slow/) in the AWS Knowledge Center.
 + Depending on the AWS Regions involved and the amount of data to be copied, a cross-Region snapshot copy can take hours to complete. In some cases, there might be a large number of cross-Region snapshot copy requests from a given source Region. In such cases, Amazon RDS might put new cross-Region copy requests from that source Region into a queue until some in-progress copies complete. No progress information is displayed about copy requests while they are in the queue. Progress information is displayed when the copy starts.
 + If a copy is still pending when you start another copy, the second copy doesn't start until the first copy finishes.
-+ You can't copy a snapshot of a Multi-AZ DB cluster.
++ You can't copy a snapshot of a Multi-AZ DB cluster. This limitation applies only to Multi-AZ DB cluster deployments, which have one writer DB instance and two reader DB instances. You can copy snapshots of Single-AZ DB instances and Multi-AZ DB instance deployments. Multi-AZ DB instance deployments have a primary DB instance and a standby DB instance in a different Availability Zone. For more information about deployment types, see [Configuring and managing a Multi-AZ deployment for Amazon RDS](Concepts.MultiAZ.md) and [Multi-AZ DB cluster deployments for Amazon RDS](multi-az-db-clusters-concepts.md).
 + You can only copy snapshots of DB instances that use io2 volumes to AWS Regions where io2 Block Express volumes are available. For more information, see [Amazon RDS DB instance storage](CHAP_Storage.md).
 
 ## Considerations

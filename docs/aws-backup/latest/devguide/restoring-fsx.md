@@ -13,7 +13,7 @@ When restoring Amazon FSx file systems, AWS Backup creates a new file system and
 **Note**
 You can't restore to an existing Amazon FSx file system, and you can't restore individual files or folders.
 FSx for ONTAP doesn’t support backing up certain volume types, including DP (data-protection) volumes, LS (load-sharing) volumes, full volumes, or volumes on file systems that are full. For more information, please see [FSx for ONTAP Working with backups](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-backups.html).
- AWS Backup vaults that contain recovery points of Amazon FSx file systems are visible outside of AWS Backup. You can restore the recovery points using Amazon FSx but you can't delete them.
+The recovery points that AWS Backup creates for Amazon FSx resources are also visible as backups in Amazon FSx. You can restore them using either Amazon FSx or AWS Backup, but you can delete them only through AWS Backup.
 
 You can see backups created by the built-in Amazon FSx automatic backup functionality from the AWS Backup console. You can also recover these backups using AWS Backup. However, you can't delete these backups or change the automatic backup schedules of your Amazon FSx file systems using AWS Backup.
 

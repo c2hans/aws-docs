@@ -132,12 +132,12 @@ The following table lists the input fields available at each lifecycle hook. In 
 
 For the `POST_ORIGIN_RESPONSE` fields, including the `mediaPlayList.*` and `tag` variables, see [Media playlist and tag variables (mediaPlayList.\*, tag)](monetization-functions-hooks-post-origin.md#monetization-functions-hooks-post-origin-vars).
 
-\* `session.referer` is only present when a Referer header is included in the session initialization request. Use `$exists(session.referer)` to check before accessing.
+<sup>\*</sup> `session.referer` is only present when a Referer header is included in the session initialization request. Use `$exists(session.referer)` to check before accessing.
 
-† The `avail` namespace is present only when the ADS response applies to a single ad break. It is not present for multi-break (VMAP) responses or prefetched responses. Use `$exists(avail)` to check before accessing.
+<sup>†</sup> The `avail` namespace is present only when the ADS response applies to a single ad break. It is not present for multi-break (VMAP) responses or prefetched responses. Use `$exists(avail)` to check before accessing.
 
-‡ At `POST_ADS_RESPONSE`, `adId` is the `id` attribute of the VAST `<Ad>` element.
+<sup>‡</sup> At `POST_ADS_RESPONSE`, `adId` is the `id` attribute of the VAST `<Ad>` element.
 
-§ At `PRE_MANIFEST_INSERTION`, `adId` is an internal placement identifier. It is stable for an ad within its ad break, but it is not the VAST ad ID and is not comparable across ad breaks or across hooks. For identity checks that span ad breaks or hooks, use `vastAdId` (the `id` attribute of the VAST `<Ad>` element) or `creativeId`.
+<sup>§</sup> At `PRE_MANIFEST_INSERTION`, `adId` is an internal placement identifier. It is stable for an ad within its ad break, but it is not the VAST ad ID and is not comparable across ad breaks or across hooks. For identity checks that span ad breaks or hooks, use `vastAdId` (the `id` attribute of the VAST `<Ad>` element) or `creativeId`.
 
-¶ On DASH VOD streams, `adTitle` and `adSystem` are `null` at this hook. Use `vastAdId` or `creativeId` in predicates there.
+<sup>¶</sup> On DASH VOD streams, `adTitle` and `adSystem` are `null` at this hook. Use `vastAdId` or `creativeId` in predicates there.

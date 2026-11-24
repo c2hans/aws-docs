@@ -18,8 +18,8 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | id | string | Yes | Site ID. |
 | description | string | No | Description of the site. |
-| company\_id1 | string | No | Company ID. |
-| geo\_id1 | string | No | If the site belongs to a geography, displays the ID of the geographical hierarchy. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
+| geo\_id<sup>1</sup> | string | No | If the site belongs to a geography, displays the ID of the geographical hierarchy. |
 | address\_1 | string | No | Site address. |
 | address\_2 | string | No | Site address. |
 | address\_3 | string | No | Site address. |
@@ -35,7 +35,7 @@ The table below lists the column names supported by the data entity:
 | latitude | double | No | Latitude of the site location. |
 | longitude | double | No | Longitude of the site location. |
 | is\_active | string | No | Indicates whether site is active ("true") or deleted ("false") |
-| site\_calendar\_id1 | string | No | Site's operating and holiday calendar. |
+| site\_calendar\_id<sup>1</sup> | string | No | Site's operating and holiday calendar. |
 | site\_classifier | string | No | Information about site classification. For example, if a store is "high foot fall store" or if DC is Central DC vs Regional DC. |
 | open\_date | timestamp | No | Date when the site started operations. |
 | end\_date | timestamp | No | Date when the site discontinued operational perspective. |
@@ -43,7 +43,7 @@ The table below lists the column names supported by the data entity:
 | source\_event\_id | string | No | ID of the event created in the source system. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

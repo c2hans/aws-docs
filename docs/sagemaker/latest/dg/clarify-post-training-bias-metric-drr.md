@@ -11,13 +11,13 @@ The difference in rejection rates (DRR) metric is the difference in the ratios o
 
 The formula for difference in rejection rates between facets *a* and *d*:
 
-        DRR = TNd/(TNd \+ FNd) - TNa/(TNa \+ FNa)
+        DRR = TN<sub>d</sub>/(TN<sub>d</sub> \+ FN<sub>d</sub>) - TN<sub>a</sub>/(TN<sub>a</sub> \+ FN<sub>a</sub>)
 
 The components for the previous DRR equation are as follows.
-+ TNd are the true negatives predicted for facet *d*.
-+ FNd are the false negatives predicted for facet *d*.
-+ TPa are the true negatives predicted for facet *a*.
-+ FNa are the false negatives predicted for facet *a*.
++ TN<sub>d</sub> are the true negatives predicted for facet *d*.
++ FN<sub>d</sub> are the false negatives predicted for facet *d*.
++ TP<sub>a</sub> are the true negatives predicted for facet *a*.
++ FN<sub>a</sub> are the false negatives predicted for facet *a*.
 
 For example, suppose the model rejects 100 middle-aged applicants (facet *a*) for a loan (predicted negative labels) of whom 80 are actually unqualified (observed negative labels). Also suppose the model rejects 50 applicants from other age demographics (facet *d*) for a loan (predicted negative labels) of whom only 40 are actually unqualified (observed negative labels). Then DRR = 40/50 - 80/100 = 0, so no bias is indicated.
 

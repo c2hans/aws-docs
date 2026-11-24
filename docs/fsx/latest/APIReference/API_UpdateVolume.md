@@ -14,6 +14,9 @@ Updates the configuration of an Amazon FSx for NetApp ONTAP or Amazon FSx for Op
    "ClientRequestToken": "{{string}}",
    "Name": "{{string}}",
    "OntapConfiguration": {
+      "CloneConfiguration": {
+         "SplitAction": "{{string}}"
+      },
       "CopyTagsToBackups": {{boolean}},
       "JunctionPath": "{{string}}",
       "SecurityStyle": "{{string}}",
@@ -302,11 +305,23 @@ Required: Yes
                "CreationTime": number,
                "Lifecycle": "string",
                "LifecycleTransitionReason": {
-                  "Message": "string"
+                  "Message": "string",
+                  "OntapError": {
+                     "Code": "string",
+                     "Message": "string"
+                  }
                },
                "Name": "string",
+               "OntapConfiguration": {
+                  "ExpiryTime": number,
+                  "SizeInMegabytes": number,
+                  "SnaplockExpiryTime": number,
+                  "SnapmirrorLabel": "string",
+                  "UUID": "string"
+               },
                "ResourceARN": "string",
                "SnapshotId": "string",
+               "SnapshotType": "string",
                "Tags": [
                   {
                      "Key": "string",
@@ -323,13 +338,21 @@ Required: Yes
       "FileSystemId": "string",
       "Lifecycle": "string",
       "LifecycleTransitionReason": {
-         "Message": "string"
+         "Message": "string",
+         "OntapError": {
+            "Code": "string",
+            "Message": "string"
+         }
       },
       "Name": "string",
       "OntapConfiguration": {
          "AggregateConfiguration": {
             "Aggregates": [ "string" ],
             "TotalConstituents": number
+         },
+         "CloneConfiguration": {
+            "ParentVolumeId": "string",
+            "SnapshotId": "string"
          },
          "CopyTagsToBackups": boolean,
          "FlexCacheEndpointType": "string",

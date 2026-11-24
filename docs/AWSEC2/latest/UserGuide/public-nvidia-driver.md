@@ -44,9 +44,9 @@ P6-B200 and P6-B300 instance types require installation and configuration of add
 | P6e-GB200 | Tesla | HGX-Series | B200 | 570 or later |
 | P6-B3002 | Tesla | HGX-Series | B300 | 580 or later |
 
-1 The operating system for G5g instances is Linux aarch64.
+<sup>1</sup> The operating system for G5g instances is Linux aarch64.
 
-2 For P6-B200 and P6-B300 instance types, there are additional installation requirements to configure NVIDIA Fabric Manager.
+<sup>2</sup> For P6-B200 and P6-B300 instance types, there are additional installation requirements to configure NVIDIA Fabric Manager.
 
 ## Option 2: Install with the CUDA toolkit
 <a name="public-nvidia-driver-cuda-install"></a>

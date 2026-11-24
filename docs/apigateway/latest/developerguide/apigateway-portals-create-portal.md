@@ -30,9 +30,10 @@ If you use your own domain name, API Gateway uses the `TLS_1_2` security policy 
 ## Create a portal
 <a name="apigateway-portals-create-portal-create"></a>
 
-You use the API Gateway console to create and configure your portal. The following procedures guide you through all required steps. You can also choose **Skip to Review and create** at the end of the first procedure to create an empty portal.
+**Note**
+The API Gateway console no longer creates API Gateway Portals. To create a new portal in the console, create an API Portal documentation portal; see [Create a documentation portal in API Portal](apiportal-portals-create.md). The procedures below describe the previous console experience and remain for reference; the AWS CLI commands in this section continue to work for existing portals.
 
-The following procedure shows how to create a portal. First, you define your portal details.
+The following procedure shows how a portal was created in the console. First, you define your portal details.
 
 **To define your portal details**
 

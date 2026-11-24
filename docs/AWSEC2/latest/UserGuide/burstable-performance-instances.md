@@ -28,7 +28,7 @@ The following table summarizes the key differences between the burstable instanc
 </thead>
 <tbody>
   <tr><td colspan="3"><b>Latest generation</b></td></tr>
-  <tr><td>T9g</td><td>Latest generation lower cost Graviton5-based instances with up to 35% better price/performance compared to T4g instances</td><td>AWS Graviton5 processors with Arm Neoverse V3 cores</td></tr>
+  <tr><td>T9g</td><td>Latest generation lower cost Graviton5-based instances with up to 45% better price/performance compared to T4g instances</td><td>AWS Graviton5 processors with Arm Neoverse V3 cores</td></tr>
   <tr><td>T8i</td><td>Latest generation lower cost x86-based instances with up to 30% better price/performance compared to T3 instances</td><td>Intel Xeon Granite Rapids processors</td></tr>
   <tr><td>T4g</td><td>Lowest cost EC2 instance type with up to 40% higher price/performance and 20% lower costs vs T3</td><td>AWS Graviton2 processors with Arm Neoverse N1 cores</td></tr>
   <tr><td>T3a</td><td>Lowest cost x86-based instances with 10% lower costs vs T3 instances</td><td>AMD 1st gen EPYC processors</td></tr>
@@ -40,7 +40,7 @@ The following table summarizes the key differences between the burstable instanc
 
 For information about instance pricing and additional specifications, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/) and [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/). For information about burstable network performance, see [Amazon EC2 instance network bandwidth](ec2-instance-network-bandwidth.md).
 
-If your created your AWS account before July 15, 2025 and it's less than 12 months old, you can use a `t2.micro` instance for free (or a `t3.micro` instance in Regions where `t2.micro` is unavailable) within certain usage limits. If you created your AWS account on or after July 15, 2025, you can use `t3.micro`, `t3.small`, `t4g.micro`, `t4g.small`, `t8i.micro`, `t8i.small`, `t9g.micro`, `t9g.small` instance types for a 6-month period or until your credits are used up. For more information, see [AWS Free Tier](https://aws.amazon.com/free/).
+If you're eligible for the AWS Free Tier, you can use `t3.micro`, `t3.small`, `t4g.micro`, `t4g.small`, `t8i.micro`, `t8i.small`, `t9g.micro`, `t9g.small` instance types for a 6-month period or until your credits are used up. For more information, see [AWS Free Tier](https://aws.amazon.com/free/).
 
 **Supported purchasing options for T instances**
 + On-Demand Instances

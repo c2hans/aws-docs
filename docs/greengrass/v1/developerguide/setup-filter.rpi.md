@@ -36,7 +36,7 @@ Connect your Raspberry Pi to the *same* network that your computer is connected 
    You should see the following:
 ![Raspberry Pi Software Configuration Tool (raspi-config) screenshot.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.png)
 
-   Scroll down and choose **Interfacing Options** and then choose **P2 SSH**. When prompted, choose **Yes**. (Use the Tab key followed by Enter). SSH should now be enabled. Choose **OK**. Use the Tab key to choose **Finish** and then press Enter. If the Raspberry Pi doesn't reboot automatically, run the following command:
+   Scroll down and choose **Interfacing Options** and then choose **P2 SSH**. When prompted, choose **Yes**. (Use the **Tab** key followed by **Enter**). SSH should now be enabled. Choose **OK**. Use the **Tab** key to choose **Finish** and then press **Enter**. If the Raspberry Pi doesn't reboot automatically, run the following command:
 
    ```
    sudo reboot
@@ -158,7 +158,7 @@ For more information on updating your kernel, see the [ Cgroups not loaded after
    sudo ./check_ggc_dependencies | more
    ```
 
-   Where `more` appears, press the Spacebar key to display another screen of text.
+   Where `more` appears, press the **Spacebar** key to display another screen of text.
 **Important**
 <a name="lambda-runtime-prereqs"></a>This tutorial requires the Python 3.7 runtime to run local Lambda functions. When stream manager is enabled, it also requires the Java 8 runtime. If the `check_ggc_dependencies` script produces warnings about these missing runtime prerequisites, make sure to install them before you continue. You can ignore warnings about other missing optional runtime prerequisites.
 

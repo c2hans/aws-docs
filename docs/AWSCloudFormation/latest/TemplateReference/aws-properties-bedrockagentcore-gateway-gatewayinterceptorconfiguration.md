@@ -20,7 +20,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[InputConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-inputconfiguration)" : {{InterceptorInputConfiguration}},
   "[InterceptionPoints](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptionpoints)" : {{[ String, ... ]}},
-  "[Interceptor](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptor)" : {{InterceptorConfiguration}}
+  "[Interceptor](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptor)" : {{InterceptorConfiguration}},
+  "[ResponseInterceptionMode](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-responseinterceptionmode)" : {{String}},
+  "[ResponseStreamingConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-responsestreamingconfiguration)" : {{ResponseStreamingConfiguration}}
 }
 ```
 
@@ -34,6 +36,9 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [Interceptor](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptor): {{
     InterceptorConfiguration}}
+  [ResponseInterceptionMode](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-responseinterceptionmode): {{String}}
+  [ResponseStreamingConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-responsestreamingconfiguration): {{
+    ResponseStreamingConfiguration}}
 ```
 
 ## Properties
@@ -57,4 +62,17 @@ The supported points of interception. This field specifies which points during t
 The infrastructure settings of an interceptor configuration. This structure defines how the interceptor can be invoked.
 *Required*: Yes
 *Type*: [InterceptorConfiguration](aws-properties-bedrockagentcore-gateway-interceptorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResponseInterceptionMode`  <a name="cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-responseinterceptionmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `BUFFERED | STREAM`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResponseStreamingConfiguration`  <a name="cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-responsestreamingconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [ResponseStreamingConfiguration](aws-properties-bedrockagentcore-gateway-responsestreamingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

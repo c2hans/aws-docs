@@ -280,7 +280,7 @@ When an instance has additional storage volumes, storage operations such as init
 
 To observe per-volume state, use the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) operation. The response includes `StorageOperationStatus` and `StorageOperationPercentProgress` at the top level (which report the state of the primary volume) and on each entry in the `AdditionalStorageVolumes` array (which report the state of that specific volume). During an operation, `StorageOperationStatus` is set to `Initializing` or `Optimizing`; both fields are absent when the operation is complete.
 
-For more information about DB instance status and the storage operation fields, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+For more information about DB instance status and the storage operation fields, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status).
 
 For more information about working with additional storage volumes, see the following sections:
 + [Working with storage for Amazon RDS DB instances](USER_PIOPS.StorageTypes.md)
@@ -325,7 +325,7 @@ Volumes that use gp2, io1, or magnetic storage initialize at a variable rate tha
 
 When you restore a DB instance from a DB snapshot, the volumes load data in the background using lazy loading instead. For more information, see [Restoring to a DB instance](USER_RestoreFromSnapshot.md).
 
-To monitor initialization progress per volume, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+To monitor initialization progress per volume, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status ](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ## Monitoring database performance
 <a name="Concepts.Storage.Metrics"></a>

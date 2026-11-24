@@ -15,7 +15,7 @@ The following table shows approximate performance for common cryptographic algor
 
 **Performance data for hsm1.medium**
 
-| Operation | Two-HSM cluster[1](#performance1) | Three-HSM cluster[2](#performance2) | Six-HSM cluster[3](#performance3) |
+| Operation | Two-HSM cluster<sup>[1](#performance1)</sup> | Three-HSM cluster<sup>[2](#performance2)</sup> | Six-HSM cluster<sup>[3](#performance3)</sup> |
 | --- | --- | --- | --- |
 | RSA 2048-bit sign  | 2,000 ops/sec | 3,000 ops/sec | 5,000 ops/sec |
 | EC P256 sign  | 500 ops/sec | 750 ops/sec | 1,500 ops/sec |
@@ -24,7 +24,7 @@ The following table shows approximate performance for common cryptographic algor
 
 **Performance data for hsm2m.medium**
 
-| Operation | Two-HSM cluster[1](#performance1) | Three-HSM cluster[2](#performance2) | Six-HSM cluster[3](#performance3) |
+| Operation | Two-HSM cluster<sup>[1](#performance1)</sup> | Three-HSM cluster<sup>[2](#performance2)</sup> | Six-HSM cluster<sup>[3](#performance3)</sup> |
 | --- | --- | --- | --- |
 | RSA 2048-bit sign | 2,000 ops/sec | 3,000 ops/sec | 5,000 ops/sec |
 | EC P256 sign | 3,000 ops/sec | 4,500 ops/sec | 7,000 ops/sec |

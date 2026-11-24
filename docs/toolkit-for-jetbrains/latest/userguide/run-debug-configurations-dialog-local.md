@@ -19,7 +19,7 @@ The **Configuration** tab of the **Run/Debug Configurations** dialog box for loc
 (Required) The name of this configuration.
 
 **Allow parallel run / Allow running in parallel **
-(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.1
+(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.<sup>1</sup>
 
 **From handler / From template**
 (Required) Depending on which option you choose, you must configure additional settings.
@@ -50,15 +50,15 @@ The **Configuration** tab of the **Run/Debug Configurations** dialog box for loc
 Either **File** or **Text** is required, but not both.
 
 **Before launch: window**
-(Optional) Lists any tasks that must be performed before starting this configuration.2
+(Optional) Lists any tasks that must be performed before starting this configuration.<sup>2</sup>
 
 ***Notes***
-1 For more information, see the following:
+<sup>1</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Common options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#common) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Common options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#common) on the PyCharm Help website.
 + For WebStorm, see [Common options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#common) on the WebStorm Help website.
 + For JetBrains Rider, see [Common options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#common) on the JetBrains Rider Help website.
-2 For more information, see the following:
+<sup>2</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Before Launch options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#before-launch-options) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Before Launch options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#before-launch-options) on the PyCharm Help website.
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.
@@ -72,7 +72,7 @@ The **SAM CLI** tab of the **Run/Debug Configurations** dialog box for local fun
 (Required) The name of this configuration.
 
 **Allow parallel run / Allow running in parallel**
-(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.1
+(Optional) If selected, allows IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider to launch as many instances of the configuration to run in parallel as needed.<sup>1</sup>
 
 **Build function inside a container**
 (Optional) If selected, the AWS SAM CLI builds any of the serverless application's functions inside of a Lambda-like Docker container locally before deployment. This is useful if the function depends on packages that have natively compiled dependencies or programs. For more information, see [Building applications](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-build.html) in the *AWS Serverless Application Model Developer Guide*.
@@ -84,15 +84,15 @@ The **SAM CLI** tab of the **Run/Debug Configurations** dialog box for local fun
 (Optional) The name or ID of an existing Docker network for Lambda Docker containers to connect to, with the default bridge network. If not specified, the Lambda containers connect only to the default bridge Docker network.
 
 **Before launch: window**
-(Optional) Lists any tasks that must be performed before starting this configuration.2
+(Optional) Lists any tasks that must be performed before starting this configuration.<sup>2</sup>
 
 ***Notes***
-1 For more information, see the following:
+<sup>1</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Common options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#common) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Common options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#common) on the PyCharm Help website.
 + For WebStorm, see [Common options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#common) on the WebStorm Help website.
 + For JetBrains Rider, see [Common options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#common) on the JetBrains Rider Help website.
-2 For more information, see the following:
+<sup>2</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Before Launch options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#before-launch-options) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Before Launch options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#before-launch-options) on the PyCharm Help website.
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.
@@ -109,12 +109,12 @@ The **AWS Connection** tab of the **Run/Debug Configurations** dialog box for lo
 (Required) The name of the AWS Region to use for the connected account.
 
 ***Notes***
-1 For more information, see the following:
+<sup>1</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Common options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#common) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Common options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#common) on the PyCharm Help website.
 + For WebStorm, see [Common options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#common) on the WebStorm Help website.
 + For JetBrains Rider, see [Common options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#common) on the JetBrains Rider Help website.
-2 For more information, see the following:
+<sup>2</sup> For more information, see the following:
 + For IntelliJ IDEA, see [Before Launch options](https://www.jetbrains.com/help/idea/run-debug-configurations-dialog.html#before-launch-options) on the IntelliJ IDEA Help website.
 + For PyCharm, see [Before Launch options](https://www.jetbrains.com/help/pycharm/run-debug-configurations-dialog.html#before-launch-options) on the PyCharm Help website.
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.

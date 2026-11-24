@@ -187,20 +187,20 @@ The table below summarizes the Cilium Ingress and Cilium Gateway features as of 
 | Feature | Ingress | Gateway |
 | --- | --- | --- |
 | Service type LoadBalancer | Yes | Yes |
-| Service type NodePort | Yes | No1  |
+| Service type NodePort | Yes | No<sup>1</sup>  |
 | Host network | Yes | Yes |
 | Shared load balancer | Yes | Yes |
-| Dedicated load balancer | Yes | No2  |
+| Dedicated load balancer | Yes | No<sup>2</sup>  |
 | Network policies | Yes | Yes |
-| Protocols | Layer 7 (HTTP(S), gRPC) | Layer 7 (HTTP(S), gRPC)3  |
+| Protocols | Layer 7 (HTTP(S), gRPC) | Layer 7 (HTTP(S), gRPC)<sup>3</sup>  |
 | TLS Passthrough | Yes | Yes |
 | Traffic Management | Path and Host routing | Path and Host routing, URL redirect and rewrite, traffic splitting, header modification |
 
- 1 Cilium Gateway support for NodePort services is planned for Cilium version 1.18.x ([\#27273](https://github.com/cilium/cilium/pull/27273))
+ <sup>1</sup> Cilium Gateway support for NodePort services is planned for Cilium version 1.18.x ([\#27273](https://github.com/cilium/cilium/pull/27273))
 
- 2 Cilium Gateway support for dedicated load balancers ([\#25567](https://github.com/cilium/cilium/issues/25567))
+ <sup>2</sup> Cilium Gateway support for dedicated load balancers ([\#25567](https://github.com/cilium/cilium/issues/25567))
 
- 3 Cilium Gateway support for TCP/UDP ([\#21929](https://github.com/cilium/cilium/issues/21929))
+ <sup>3</sup> Cilium Gateway support for TCP/UDP ([\#21929](https://github.com/cilium/cilium/issues/21929))
 
 ## Install Cilium Gateway
 <a name="hybrid-nodes-ingress-cilium-gateway-install"></a>

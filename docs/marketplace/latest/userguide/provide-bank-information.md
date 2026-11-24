@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/provide-ban
 Providing bank account information is required for sellers who plan to offer paid products on AWS Marketplace. This information allows AWS to disburse payments for your product sales.
 
 **Note**
-You must complete your tax information before you can provide banking information. For a list of countries where you can offer paid products in AWS Marketplace, see [Seller eligibility requirements](seller-eligibility.md).
+You must complete your tax information on the **Tax and invoices** page in AWS Partner Central before you can provide banking information. For a list of countries where you can offer paid products in AWS Marketplace, see [Seller eligibility requirements](seller-eligibility.md).
 
 **Sellers in India**
 Sellers in India must provide bank accounts located in India with IFSC codes and can only receive disbursements in Indian rupee. For detailed information, see [Getting started as a seller in India](getting-started-seller-india.md).

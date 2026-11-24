@@ -463,7 +463,7 @@ Actions:
 ##### Choosing the action order
 <a name="eb-rules-actions-archive-order"></a>
 
-Place Archive before delivery or Drop when you need to retain the email first:
+Place Archive before delivery or Drop when the archive request must be accepted before the later action runs:
 
 ```
 Actions:
@@ -471,7 +471,7 @@ Actions:
 2. Relay through CorporateRelay
 ```
 
-For email that must not continue unless archiving succeeds, configure `ActionFailurePolicy` as `DROP`.
+This action order does not confirm that durable archive storage completes before delivery. `ActionFailurePolicy` does not cover a storage failure that occurs after Mail Manager accepts the archive request.
 
 ##### Configuration fields and limits
 <a name="eb-rules-actions-archive-configuration"></a>
@@ -496,7 +496,7 @@ Separate permissions can be required when you create or update an archive that u
 ##### Creating an Archive action with the AWS CLI
 <a name="eb-rules-actions-archive-cli"></a>
 
-The following command creates a rule set that writes email to the existing archive `ar-id-1234`. Replace the AWS Region, archive ID, and rule set name with your values:
+The following command creates a rule set that submits email to the existing archive `a-1a2b3c4d5e6f`. Replace the AWS Region, archive ID, and rule set name with your values:
 
 ```bash
 PROMPT> aws mailmanager create-rule-set \
@@ -506,8 +506,7 @@ PROMPT> aws mailmanager create-rule-set \
     "Name": "archive-orders",
     "Actions": [{
       "Archive": {
-        "TargetArchive": "{{ar-id-1234}}",
-        "ActionFailurePolicy": "DROP"
+        "TargetArchive": "{{a-1a2b3c4d5e6f}}"
       }
     }]
   }]'
@@ -521,8 +520,8 @@ A referenced archive cannot be deleted while a rule set uses it. Remove the Arch
 ##### Recommendations
 <a name="eb-rules-actions-archive-recommendations"></a>
 + Put Add header before Archive when the archived email must contain the added header.
-+ Put Archive before SMTP relay, Send to internet, Bounce, or Drop when retention must happen first.
-+ Use `DROP` when processing must stop if the Archive action reports a customer configuration error.
++ Put Archive before SMTP relay, Send to internet, Bounce, or Drop when the archive request must be accepted before the later action runs.
++ Do not use `ActionFailurePolicy` as confirmation that durable storage completed. Verify customer managed AWS KMS key access and test representative archive searches.
 + Configure the archive retention period according to your regulatory and business requirements.
 + Configure a customer managed AWS KMS key when you require control over key policy, rotation, or auditing.
 + Test archive searches and exports before relying on the archive for a compliance workflow.
@@ -1159,7 +1158,7 @@ The SMTP server name, port, authentication, secret, and encryption settings belo
 
 The SMTP relay action does not contain an IAM role and does not require `iam:PassRole`. The principal creating or updating the rule set needs permission for `ses:CreateRuleSet` or `ses:UpdateRuleSet`.
 
-An authenticated relay can require an AWS Secrets Manager resource policy that allows SES to read the relay credentials and an AWS KMS key policy that allows SES to decrypt the secret. For relay creation, see [Creating an SMTP relay in the SES console](eb-relay.md#eb-relay-create-console). For the credential and key policies, see [Permission policies for SMTP relay](eb-policies.md#eb-policies-relay).
+An authenticated relay can require an AWS Secrets Manager resource policy that allows SES to read the relay credentials and an AWS KMS key policy that allows SES to decrypt the secret. For relay creation, see [Creating and managing an SMTP relay](eb-relay.md#eb-relay-create-console). For the credential and key policies, see [Permission policies for SMTP relay](eb-policies.md#eb-policies-relay).
 
 ##### Creating an SMTP relay action with the AWS CLI
 <a name="eb-rules-actions-relay-cli"></a>

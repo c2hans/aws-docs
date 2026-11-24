@@ -26,29 +26,29 @@ SSD-backed volumes are optimized for transactional workloads involving frequent 
   <tr><th></th><th colspan="2"><a href="general-purpose.md">Amazon EBS General Purpose SSD volumes</a></th><th colspan="2"><a href="provisioned-iops.md">Amazon EBS Provisioned IOPS SSD volumes</a></th></tr>
 </thead>
 <tbody>
-  <tr><td><b>Volume type</b></td><td><code>gp3</code> 6</td><td><code>gp2</code></td><td><code>io2</code> Block Express</td><td><code>io1</code></td></tr>
+  <tr><td><b>Volume type</b></td><td><code>gp3</code> <sup>6</sup></td><td><code>gp2</code></td><td><code>io2</code> Block Express</td><td><code>io1</code></td></tr>
   <tr><td><b>Durability</b></td><td colspan="2">99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)</td><td>99.999% durability (0.001% annual failure rate)</td><td>99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)</td></tr>
-  <tr><td><b>Use cases</b></td><td colspan="2"> <ul><li>Transactional workloads</li><li>Virtual desktops</li><li>Medium-sized, single-instance databases</li><li>Low-latency interactive applications</li><li>Boot volumes</li><li>Development and test environments</li></ul> </td><td>Workloads that require:<ul><li> Consistent sub-millisecond latency with average latency under 500 microseconds 5 </li><li> Sustained IOPS performance </li><li> More than 80,000 IOPS or 2,000 MiB/s of throughput </li></ul></td><td> <ul><li> Workloads that require sustained IOPS performance or more than 16,000 IOPS </li><li> I/O-intensive database workloads </li></ul> </td></tr>
+  <tr><td><b>Use cases</b></td><td colspan="2"> <ul><li>Transactional workloads</li><li>Virtual desktops</li><li>Medium-sized, single-instance databases</li><li>Low-latency interactive applications</li><li>Boot volumes</li><li>Development and test environments</li></ul> </td><td>Workloads that require:<ul><li> Consistent sub-millisecond latency with average latency under 500 microseconds <sup>5</sup> </li><li> Sustained IOPS performance </li><li> More than 80,000 IOPS or 2,000 MiB/s of throughput </li></ul></td><td> <ul><li> Workloads that require sustained IOPS performance or more than 16,000 IOPS </li><li> I/O-intensive database workloads </li></ul> </td></tr>
   <tr><td><b>Volume size</b></td><td>1 GiB - 64 TiB </td><td>1 GiB - 16 TiB </td><td>4 GiB - 64 TiB </td><td>4 GiB - 16 TiB </td></tr>
-  <tr><td><b>Max IOPS</b></td><td>80,000 3 (25.6 KiB I/O 4)</td><td>16,000 (16 KiB I/O 4)</td><td>256,000 3 (16 KiB I/O 4) </td><td>64,000 (16 KiB I/O 4)</td></tr>
-  <tr><td><b>Max throughput</b></td><td>2,000 MiB/s</td><td>250 MiB/s 1</td><td>4,000 MiB/s</td><td>1,000 MiB/s 2</td></tr>
+  <tr><td><b>Max IOPS</b></td><td>80,000 <sup>3</sup> (25.6 KiB I/O <sup>4</sup>)</td><td>16,000 (16 KiB I/O <sup>4</sup>)</td><td>256,000 <sup>3</sup> (16 KiB I/O <sup>4</sup>) </td><td>64,000 (16 KiB I/O <sup>4</sup>)</td></tr>
+  <tr><td><b>Max throughput</b></td><td>2,000 MiB/s</td><td>250 MiB/s <sup>1</sup></td><td>4,000 MiB/s</td><td>1,000 MiB/s <sup>2</sup></td></tr>
   <tr><td><b>Amazon EBS Multi-attach</b></td><td colspan="2">Not supported</td><td colspan="2">Supported</td></tr>
   <tr><td><b>NVMe reservations</b></td><td colspan="2">Not supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td><b>Boot volume</b></td><td colspan="4">Supported</td></tr>
 </tbody>
 </table>
 
-1 The throughput limit is between 128 MiB/s and 250 MiB/s, depending on the volume size. For more information, see [`gp2` volume performance](general-purpose.md#gp2-performance). Volumes created before **December 3, 2018** that have not been modified since creation might not reach full performance unless you [modify the volume](ebs-modify-volume.md).
+<sup>1</sup> The throughput limit is between 128 MiB/s and 250 MiB/s, depending on the volume size. For more information, see [`gp2` volume performance](general-purpose.md#gp2-performance). Volumes created before **December 3, 2018** that have not been modified since creation might not reach full performance unless you [modify the volume](ebs-modify-volume.md).
 
-2 To achieve maximum throughput of 1,000 MiB/s, the volume must be provisioned with 64,000 IOPS and it must be attached to a [ Nitro-based instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html). Volumes created before **December 6, 2017** that have not been modified since creation might not reach full performance unless you [modify the volume](ebs-modify-volume.md).
+<sup>2</sup> To achieve maximum throughput of 1,000 MiB/s, the volume must be provisioned with 64,000 IOPS and it must be attached to a [ Nitro-based instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html). Volumes created before **December 6, 2017** that have not been modified since creation might not reach full performance unless you [modify the volume](ebs-modify-volume.md).
 
-3 [ Nitro-based instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) support volumes provisioned with up to 256,000 IOPS. Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS.
+<sup>3</sup> [ Nitro-based instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) support volumes provisioned with up to 256,000 IOPS. Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS.
 
-4 Represents the required I/O size to reach maximum IOPS within the volume's throughput limit.
+<sup>4</sup> Represents the required I/O size to reach maximum IOPS within the volume's throughput limit.
 
-5 `io2` Block Express volumes are designed to deliver an average latency of under 500 microseconds for 16KiB I/O operations.
+<sup>5</sup> `io2` Block Express volumes are designed to deliver an average latency of under 500 microseconds for 16KiB I/O operations.
 
-6 On Outposts, gp3 volumes support sizes up to 16 TiB, IOPS up to 16,000, and throughput up to 1,000 MiB/s.
+<sup>6</sup> On Outposts, gp3 volumes support sizes up to 16 TiB, IOPS up to 16,000, and throughput up to 1,000 MiB/s.
 
 For more information about the SSD-backed volume types, see the following:
 + [Amazon EBS General Purpose SSD volumes](general-purpose.md)

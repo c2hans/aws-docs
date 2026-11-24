@@ -58,7 +58,7 @@ A tenant setup for Amazon WorkMail.
 A globally unique name to identify your organization. The alias is used to access the Amazon WorkMail web application (https://{{alias}}.awsapps.com/mail).
 
 **Domain**
-The web address that comes after the @ symbol in an email address. You can add a domain that receives mail and delivers it to mailboxes in your organization.
+The web address that comes after the **@** symbol in an email address. You can add a domain that receives mail and delivers it to mailboxes in your organization.
 
 **Test mail domain**
 A domain is automatically configured during setup that can be used for testing Amazon WorkMail. The test mail domain is {{alias}}.awsapps.com and is used as the default domain if you don't configure your own domain. The test mail domain is subject to different limits. For more information, see [Amazon WorkMail quotas](workmail_limits.md).

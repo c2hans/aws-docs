@@ -16,15 +16,15 @@ The table below lists the column names supported by the data entity:
 
 | Column | Data type | Required | Description |
 | --- | --- | --- | --- |
-| company\_id2 | string | No | Company ID. |
-| object\_name | string | Yes1 | For example, sites, or transportation lanes. |
-| object\_field | string | Yes1 | For example, site\_type, or trans\_mode. |
-| object\_field\_value | string | Yes1 | For example, site\_type:01, or trans\_mode:01. |
-| object\_field\_desc | string | Yes1 | For example, site\_type:01:DC, or trans\_mode:01:Surface. |
+| company\_id<sup>2</sup> | string | No | Company ID. |
+| object\_name | string | Yes<sup>1</sup> | For example, sites, or transportation lanes. |
+| object\_field | string | Yes<sup>1</sup> | For example, site\_type, or trans\_mode. |
+| object\_field\_value | string | Yes<sup>1</sup> | For example, site\_type:01, or trans\_mode:01. |
+| object\_field\_desc | string | Yes<sup>1</sup> | For example, site\_type:01:DC, or trans\_mode:01:Surface. |
 
-1You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
+<sup>1</sup>You must enter a value. When you ingest data from SAP or EDI, the default value for *string* is SCN\_RESERVED\_NO\_VALUE\_PROVIDED.
 
-2Foreign key
+<sup>2</sup>Foreign key
 
 **Foreign key (FK)**
 

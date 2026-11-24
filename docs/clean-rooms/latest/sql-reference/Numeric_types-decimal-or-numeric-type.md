@@ -38,7 +38,7 @@ pricepaid | salesid
  However, results of explicit casts of values selected from tables are not rounded.
 
 **Note**
-The maximum positive value that you can insert into a DECIMAL(19,0) column is `9223372036854775807` (263 -1). The maximum negative value is `-9223372036854775807`. For example, an attempt to insert the value `9999999999999999999` (19 nines) will cause an overflow error. Regardless of the placement of the decimal point, the largest string that AWS Clean Rooms can represent as a DECIMAL number is `9223372036854775807`. For example, the largest value that you can load into a DECIMAL(19,18) column is `9.223372036854775807`.
+The maximum positive value that you can insert into a DECIMAL(19,0) column is `9223372036854775807` (2<sup>63</sup> -1). The maximum negative value is `-9223372036854775807`. For example, an attempt to insert the value `9999999999999999999` (19 nines) will cause an overflow error. Regardless of the placement of the decimal point, the largest string that AWS Clean Rooms can represent as a DECIMAL number is `9223372036854775807`. For example, the largest value that you can load into a DECIMAL(19,18) column is `9.223372036854775807`.
 These rules are because of the following:
 DECIMAL values with 19 or fewer significant digits of precision are stored internally as 8-byte integers.
 DECIMAL values with 20 to 38 significant digits of precision are stored as 16-byte integers.

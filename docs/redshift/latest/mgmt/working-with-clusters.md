@@ -60,7 +60,7 @@ You might be restricted to fewer nodes depending on the quota that is applied to
 
 The following table describes specifications for RG nodes.
 
-| Node type | vCPU | RAM (GiB) | Default slices per node | Managed storage limit per node 1 | Node range with create cluster | Total managed storage capacity 2 |
+| Node type | vCPU | RAM (GiB) | Default slices per node | Managed storage limit per node <sup>1</sup> | Node range with create cluster | Total managed storage capacity <sup>2</sup> |
 | --- | --- | --- | --- | --- | --- | --- |
 | rg.large (single-node) | 2 | 16 | 2 | 1 TB | 1 | 1 TB |
 | rg.large (multi-node) | 2 | 16 | 2 | 8 TB | 2–16 | 128 TB |
@@ -68,17 +68,17 @@ The following table describes specifications for RG nodes.
 | rg.4xlarge | 16 | 128 | 8 | 128 TB | 2–324 | 8192 TB4 |
 | rg.12xlarge | 48 | 384 | 16 | 128 TB | 2–128 | 16,384 TB |
 
-1 The storage limit for Amazon Redshift managed storage. This is a hard limit.
+<sup>1</sup> The storage limit for Amazon Redshift managed storage. This is a hard limit.
 
-2 Total managed storage limit is the maximum number of nodes times the managed storage limit per node.
+<sup>2</sup> Total managed storage limit is the maximum number of nodes times the managed storage limit per node.
 
-3 You can create a cluster with the rg.xlarge (multi-node) node type that has up to 16 nodes. For multiple-node clusters, you can resize with elastic resize to a maximum of 32 nodes.
+<sup>3</sup> You can create a cluster with the rg.xlarge (multi-node) node type that has up to 16 nodes. For multiple-node clusters, you can resize with elastic resize to a maximum of 32 nodes.
 
-4 You can create a cluster with the rg.4xlarge (multi-node) node type with up to 32 nodes. You can resize it with elastic resize to a maximum of 64 nodes.
+<sup>4</sup> You can create a cluster with the rg.4xlarge (multi-node) node type with up to 32 nodes. You can resize it with elastic resize to a maximum of 64 nodes.
 
 The following table describes specifications for RA3 nodes.
 
-| Node type | vCPU | RAM (GiB) | Default slices per node | Managed storage limit per node 1 | Node range with create cluster  | Total managed storage capacity 2 |
+| Node type | vCPU | RAM (GiB) | Default slices per node | Managed storage limit per node <sup>1</sup> | Node range with create cluster  | Total managed storage capacity <sup>2</sup> |
 | --- | --- | --- | --- | --- | --- | --- |
 | ra3.large (single-node) | 2 | 16 | 2 | 1 TB | 1 | 1 TB3 |
 | ra3.large (multi-node) | 2 | 16 | 2 | 8 TB | 2-16 | 128 TB |
@@ -87,15 +87,15 @@ The following table describes specifications for RA3 nodes.
 | ra3.4xlarge | 12 | 96 | 4 | 128 TB | 2–325 | 8192 TB5 |
 | ra3.16xlarge | 48 | 384 | 16 | 128 TB | 2–128 | 16,384 TB |
 
-1 The storage limit for Amazon Redshift managed storage. This is a hard limit.
+<sup>1</sup> The storage limit for Amazon Redshift managed storage. This is a hard limit.
 
-2 Total managed storage limit is the maximum number of nodes times the managed storage limit per node.
+<sup>2</sup> Total managed storage limit is the maximum number of nodes times the managed storage limit per node.
 
-3 To resize a single-node cluster to multi-node, only classic resize is supported.
+<sup>3</sup> To resize a single-node cluster to multi-node, only classic resize is supported.
 
-4 You can create a cluster with the ra3.xlplus (multi-node) node type that has up to 16 nodes. For multiple-node clusters, you can resize with elastic resize to a maximum of 32 nodes.
+<sup>4</sup> You can create a cluster with the ra3.xlplus (multi-node) node type that has up to 16 nodes. For multiple-node clusters, you can resize with elastic resize to a maximum of 32 nodes.
 
-5 You can create a cluster with the ra3.4xlarge node type with up to 32 nodes. You can resize it with elastic resize to a maximum of 64 nodes.
+<sup>5</sup> You can create a cluster with the ra3.4xlarge node type with up to 32 nodes. You can resize it with elastic resize to a maximum of 64 nodes.
 
 ### Determining the number of nodes
 <a name="how-many-nodes"></a>

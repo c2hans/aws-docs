@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/devops-on-amazon-redshift/inde
 title: 'Guidance for DevOps on Amazon Redshift'
 canonical_url: https://docs.aws.amazon.com/solutions/devops-on-amazon-redshift/
 source: aws-documentation
-generated_on: 2026-11-23
+generated_on: 2026-11-24
 ---
 
 # Guidance for DevOps on Amazon Redshift

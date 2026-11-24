@@ -90,7 +90,7 @@ Before updating the agent to a specific version, add the image registry for Guar
 
 The following table shows the release version history of [Amazon EKS add-on GuardDuty agent](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html#add-ons-guard-duty).
 
-| Agent version | Container image | Release notes | Availability date | End of standard support[1](#eks-security-agent-life-support-end) |
+| Agent version | Container image | Release notes | Availability date | End of standard support<sup>[1](#eks-security-agent-life-support-end)</sup> |
 | --- | --- | --- | --- | --- |
 | v1.17.4 | **x86\_64 (AMD64)**: `sha256:d670886a92fa2893a4ccbac83a281ef469b7fa10f90589c48b79d84381948e60`<br />**Graviton (ARM64)**: `sha256:f2b02e7ecdd89c5e6ccba620fd2c0cc8849b55e1a388dbf04362eb98197d3810` | General security feature updates. | November 12, 2026 | – |
 | v1.17.3 | **x86\_64 (AMD64)**: `sha256:5b4fa544f410a36f6835df6749943707529d3b7a18ebff0cb463df38109641d1`<br />**Graviton (ARM64)**: `sha256:e8e9b075fceefe837f92eb7f840a990ccb8158c8b321c3f169db5188ff8e3290` | General security feature updates. | October 23, 2026 | – |
@@ -116,7 +116,7 @@ The following table shows the release version history of [Amazon EKS add-on Guar
 | v1.1.0 | `sha256:b19ba3a3c1a508d153263ae2fda891a7928b5ca9b3a5692db6c101829303281c` | In addition to [Kubernetes versions supported by GuardDuty security agent](prereq-runtime-monitoring-eks-support.md#gdu-agent-supported-k8-version), this agent release also supports Kubernetes version 1.26.<br />General performance enhancements and stability improvements. | May 2, 2023 | May 14, 2024 |
 | v1.0.0 | `sha256:e38bdd2b1323e89113f1a31bd4bc8e5a8098525dd98e6981a28b9906b1e4411e` | Initial release of Amazon EKS add-on agent. | March 30, 2023 | May 14, 2024 |
 
-**1** For information about updating your current agent version that is approaching the end of standard support, see [Updating security agent manually for Amazon EKS resources](eksrunmon-update-security-agent.md).
+<sup>**1**</sup> For information about updating your current agent version that is approaching the end of standard support, see [Updating security agent manually for Amazon EKS resources](eksrunmon-update-security-agent.md).
 
 ## Additional resources - next steps
 <a name="runtime-monitoring-related-agent-versions-next-steps"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/documen
 
 The cloud providers of an SSM document are metadata that declare which clouds the document runs on. The values are `AWS`, `Azure`, and `GCP`. Cloud providers apply to Automation runbooks. Use them to declare that a runbook works with Microsoft Azure or Google Cloud resources, in addition to or instead of AWS resources.
 
-You set cloud providers when you create or update a runbook.
+You set cloud providers when you create or update a runbook. In the visual design experience, you set them on the runbook's attributes instead. For more information, see [Using Azure and Google Cloud actions in the visual design experience](visual-designer-multicloud.md).
 
 ## How the Automation console uses cloud providers
 <a name="documents-cloud-providers-why"></a>

@@ -113,6 +113,6 @@ Consider these best practices when creating your public profile:
 ## Next steps
 <a name="next-steps-after-profile"></a>
 
-After creating your public profile, you can proceed to the next step in the registration process: [Step 2: Provide tax information](provide-tax-information.md).
+After creating your public profile, you can proceed to the next step in the registration process: [Step 2: Provide tax information](provide-tax-information.md), which you complete on the **Tax and invoices** page in AWS Partner Central.
 
 If you're only planning to offer free products on AWS Marketplace, you've completed the required registration steps. However, if you plan to offer paid products, you must complete all the remaining registration steps.

@@ -135,7 +135,7 @@ Creates a period. A period must contain at least one of the following items: `be
 
   Type: String
 
-  Constraints: Comma-delimited list of abbreviated day names (mon) or numbers (0). Use - to specify a range. Use / to specify every n^th^ day of the week.
+  Constraints: Comma-delimited list of abbreviated day names (mon) or numbers (0). Use - to specify a range. Use / to specify every n<sup>^th</sup>^ day of the week.
 
   Required: No
 
@@ -144,7 +144,7 @@ Creates a period. A period must contain at least one of the following items: `be
 
   Type: String
 
-  Constraints: Comma-delimited list of abbreviated months names (jan) or numbers (1). Use - to specify a range. Use / to specify every n^th^ month.
+  Constraints: Comma-delimited list of abbreviated months names (jan) or numbers (1). Use - to specify a range. Use / to specify every n<sup>^th</sup>^ month.
 
   Required: No
 
@@ -153,7 +153,7 @@ Creates a period. A period must contain at least one of the following items: `be
 
   Type: String
 
-  Constraints: Comma-delimited list of abbreviated months names (jan) or numbers (1). Use - to specify a range. Use / to specify every n^th^ day of the month.
+  Constraints: Comma-delimited list of abbreviated months names (jan) or numbers (1). Use - to specify a range. Use / to specify every n<sup>^th</sup>^ day of the month.
 
   Required: No
 

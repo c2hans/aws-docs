@@ -18,13 +18,13 @@ The table below lists the column names supported by the data entity:
 | --- | --- | --- | --- |
 | id | string | Yes | Product group ID. |
 | description | string | No | Description of the product group. |
-| company\_id1 | string | No | Company ID. |
-| parent\_product\_group\_id1 | string | No | Parent of this product group. If null, it indicates this record is a top level product group. |
+| company\_id<sup>1</sup> | string | No | Company ID. |
+| parent\_product\_group\_id<sup>1</sup> | string | No | Parent of this product group. If null, it indicates this record is a top level product group. |
 | creation\_date | timestamp | No | Date when the product group was created. |
 | update\_date | timestamp | No | Date when the product group was updated. |
 | source | string | No | Source of data. |
 
-1Foreign key
+<sup>1</sup>Foreign key
 
 **Foreign key (FK)**
 

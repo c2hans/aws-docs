@@ -119,7 +119,7 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td><i>R</i></td><td><i>I</i></td></tr>
   <tr><td rowspan="2">Define baseline infrastructure templates (Stacks) for application deployment through AMS change management system.<br /><i>Self-Service Provisioning</i></td><td>I</td><td>R</td></tr>
   <tr><td><i>R</i></td><td><i>I</i></td></tr>
-  <tr><td> Creating baseline approved AMIs8</td><td> I</td><td>R</td></tr>
+  <tr><td> Creating baseline approved AMIs<sup>8</sup></td><td> I</td><td>R</td></tr>
   <tr><td> Evaluate customer application inventory and determine fit with available infrastructure templates (Stacks) </td><td>R</td><td>C</td></tr>
   <tr><td> Define unique Stacks that are in addition to the baseline template offerings </td><td> R </td><td> C </td></tr>
   <tr><td colspan="3"><b>Logging, Monitoring and Event Management</b></td></tr>
@@ -239,7 +239,7 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
   <tr><td colspan="3"><b>Security Incident Response – Post Incident Report</b></td></tr>
   <tr><td colspan="3"><b>Post incident reporting</b></td></tr>
   <tr><td>Share appropriate lessons learned and action items with customer post incident as required</td><td>I</td><td>R</td></tr>
-  <tr><td colspan="3"><b>Patch Management9</b></td></tr>
+  <tr><td colspan="3"><b>Patch Management<sup>9</sup></b></td></tr>
   <tr><td rowspan="2">Monitor for applicable updates to supported OS and software preinstalled with supported OS for EC2 instances.<br /><i>Self-Service Provisioning</i></td><td>I</td><td>R</td></tr>
   <tr><td><i>R</i></td><td><i>C</i></td></tr>
   <tr><td>Notify customer of upcoming updates (<i>applies to AMS Standard Patch only</i>)</td><td>I</td><td>R</td></tr>
@@ -281,6 +281,6 @@ Some sections contain 'R' for both AMS and Customers. This is because, in the AW
 </tbody>
 </table>
 
-8AMS provides AMIs for Amazon EC2 only
+<sup>8</sup>AMS provides AMIs for Amazon EC2 only
 
-9AMS is responsible for End of Life OSes only when the customer signs an extended support agreement with OS vendor
+<sup>9</sup>AMS is responsible for End of Life OSes only when the customer signs an extended support agreement with OS vendor

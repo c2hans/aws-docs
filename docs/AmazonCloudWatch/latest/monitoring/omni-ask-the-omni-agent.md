@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 The Omni agent is the AI assistant built into the CloudWatch Omni web UI. Ask about your systems in plain language, and the agent answers from the telemetry available to it: it writes and runs queries, correlates signals across telemetry, and builds views and dashboards on demand.
 
 **Note**
-CloudWatch Omni supports AI agents on three surfaces. This page covers the agent in the Omni web UI. For AI assistance while developing an AI agent in the IDE extension, see [Develop with the IDE extension](omni-develop-with-the-ide-extension.md). To use Omni from your own coding agent, see [Use Omni skills](omni-use-omni-skills.md). The Omni agent can also delegate an investigation to the AWS DevOps Agent. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
+CloudWatch Omni supports AI agents on three surfaces. This page covers the agent in the Omni web UI. For AI assistance while developing an AI agent in the IDE extension, see [Develop with the IDE extension](omni-develop-with-the-ide-extension.md). To use Omni from your own coding agent, see [Use Omni skills](omni-use-omni-skills.md). The Omni agent can also delegate an investigation to the AWS DevOps Agent. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md). To teach the Omni agent how your team works, see [Customize the Omni agent with skills](omni-customize-the-omni-agent-with-skills.md).
 
 ## Where you can ask
 <a name="omni-ask-the-omni-agent-where-you-can-ask"></a>
