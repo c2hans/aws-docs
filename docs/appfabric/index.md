@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appfabric/index.html
 title: 'AWS AppFabric Documentation'
 canonical_url: https://docs.aws.amazon.com/appfabric/
 source: aws-documentation
-generated_on: 2026-11-21
+generated_on: 2026-11-23
 ---
 
 # AWS AppFabric Documentation

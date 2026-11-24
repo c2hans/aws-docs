@@ -38,4 +38,4 @@ Plan and implement a migration strategy for your current workloads. Use a gradua
 You can upload data to the solution using one of the following methods:
 + Programmatic migration – Use REST APIs to create resource structures and obtain temporary S3 credentials, then upload directly to Amazon S3
 + Client applications – Use the web portal or desktop application for interactive uploads
-+ Amazon S3 Import connector – Import files that are already in an Amazon S3 bucket, without downloading and re-uploading them. SDMA copies the files in the background, verifies their integrity, and skips files it already stores. For more information, see [Importing files from Amazon S3](connector-s3-import.md).
++ Amazon S3 Import connector – Import files that are already in an Amazon S3 bucket, without downloading and re-uploading them. SDMA copies the files in the background, verifies their integrity, and skips files it already stores. For more information, see [Importing Files from Amazon S3](connector-s3-import.md).

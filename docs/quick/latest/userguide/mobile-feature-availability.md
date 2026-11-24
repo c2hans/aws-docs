@@ -17,6 +17,7 @@ The following tables summarize feature availability on mobile compared to deskto
 | Feature | Availability |
 | --- | --- |
 | Chatting with Quick | Available |
+| Voice mode | Available |
 | Response modes (Fast, Balanced, Smart) | Available |
 | Thinking effort | Available |
 | Attachments and file uploads | Available |

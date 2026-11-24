@@ -50,9 +50,10 @@ Required: No
 
  ** [credentialProviderConfigurations](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-credentialProviderConfigurations"></a>
 The credential provider configurations for the payment connector. These configurations specify how the connector authenticates with the payment provider.
+For an `AwsBilling` payment connector, omit this parameter or specify an empty list. The service uses the AWS Marketplace service-linked role in your account, which must exist before you create the connector, and you must have permission to call `iam:GetRole` on it.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
-Required: Yes
+Required: No
 
  ** [description](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-description"></a>
 A description of the payment connector.
@@ -79,7 +80,7 @@ Required: No
  ** [type](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-type"></a>
 The type of payment connector, which determines the payment provider integration.
 Type: String
-Valid Values: `CoinbaseCDP | StripePrivy`
+Valid Values: `CoinbaseCDP | StripePrivy | AwsBilling`
 Required: Yes
 
 ## Response Syntax
@@ -151,7 +152,7 @@ Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_F
  ** [type](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-type"></a>
 The type of the created payment connector.
 Type: String
-Valid Values: `CoinbaseCDP | StripePrivy`
+Valid Values: `CoinbaseCDP | StripePrivy | AwsBilling`
 
 ## Errors
 <a name="API_CreatePaymentConnector_Errors"></a>

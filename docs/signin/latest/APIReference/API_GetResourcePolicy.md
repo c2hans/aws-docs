@@ -49,15 +49,15 @@ Type: [SigninResourceBasedPolicy](API_SigninResourceBasedPolicy.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You do not have sufficient access to perform this action.
+You do not have permission to perform this operation.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+An internal error occurred while processing the request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The request was denied because the specified resource was not found.
+A resource specified in the request could not be found.
 HTTP Status Code: 400
 
  ** TooManyRequestsError **

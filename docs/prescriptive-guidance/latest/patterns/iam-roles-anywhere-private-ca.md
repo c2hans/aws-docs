@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ia
 ---
 
 # Securing AWS IAM Roles Anywhere with a private certificate
-<a name="iam-roles-anywhere-private-ca"></a>
 
 *Barnali Singh, Amazon Web Services*
 

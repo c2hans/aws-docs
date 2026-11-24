@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/architecture-details.html
 ---
 
-# Architecture details
+# Architecture Details
 
 This section provides detailed technical information about the Spatial Data Management on AWS architecture, including component interactions, data flows, and AWS services used.
 

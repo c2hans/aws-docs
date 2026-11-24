@@ -2,11 +2,11 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-s3-import.html
 ---
 
-# Importing files from Amazon S3
+# Importing Files from Amazon S3
 
 You can use the Amazon S3 Import connector to browse a source bucket, select files or folders, and import them into SDMA without downloading and re-uploading through the portal. SDMA copies the selected files into your library using AWS Deadline Cloud and verifies integrity during the transfer. When the job completes, the imported files appear as a new asset in your project.
 
-Filters, `output` blocks, `${…​}` variables, and `$temp` values work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), and [Intermediate state with $temp variables](connector-configuration.md#temp-variables).
+Filters, `output` blocks, `${…​}` variables, and `$temp` values work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), [Variable Substitution](connector-configuration.md#variable-substitution), and [Intermediate State with $temp Variables](connector-configuration.md#temp-variables).
 
 ## Overview
 <a name="s3-import-overview"></a>
@@ -18,7 +18,7 @@ The Amazon S3 Import connector is initially created during deployment as a disab
 
 SDMA needs an IAM role to access the source S3 bucket. Create a role in the account that owns the bucket, then store its ARN in the SDMA secret.
 
-### Step 1: Create an IAM role in the source account
+### Step 1: Create an IAM Role in the Source Account
 <a name="s3-import-role-setup"></a>
 
 Create a role that grants read access to the source bucket. The role name **must** start with `SpatialDataManagementContentDerivation-`.
@@ -84,7 +84,7 @@ Add these ARNs as trusted principals:
 }
 ```
 
-### Step 2: Update the Secrets Manager secret
+### Step 2: Update the Secrets Manager Secret
 <a name="s3-import-secret"></a>
 
 SDMA creates a secret named `SpatialDataManagementContentSecret-S3ImportConnector-<suffix>` during deployment with placeholder values. Update it with the role ARN from Step 1.
@@ -104,7 +104,7 @@ Update the secret value to the following JSON structure:
 **Note**
 If the source bucket is in the same account as SDMA, use the same account ID. The role still needs the `SpatialDataManagementContentDerivation-` prefix.
 
-### Step 3: Configure VPC endpoint access (cross-account only)
+### Step 3: Configure VPC Endpoint Access (Cross-Account Only)
 <a name="s3-import-vpc-endpoint"></a>
 
 If the source bucket is in a **different** AWS account, you must allowlist that account on the S3 VPC endpoint policy. Set the `S3ImportSourceAccountIds` CloudFormation parameter during deployment:
@@ -121,12 +121,12 @@ This adds the external account(s) to the `aws:PrincipalAccount` condition on the
 
 If the source bucket is in the **same** account as SDMA, this parameter is not needed.
 
-## Connector configuration
+## Connector Configuration
 <a name="s3-import-configuration"></a>
 
 The Amazon S3 Import connector is initially created with placeholder values. Update the connector configuration in the Spatial Data Portal under **Connectors** > **S3 Import** > **Edit**.
 
-### Full configuration example
+### Full Configuration Example
 <a name="_full-configuration-example"></a>
 
 ```json
@@ -203,7 +203,7 @@ The Amazon S3 Import connector is initially created with placeholder values. Upd
 }
 ```
 
-### Configuration fields
+### Configuration Fields
 <a name="_configuration-fields"></a>
 
 The following fields are pre-filled by SDMA during deployment and do not require manual configuration:
@@ -225,15 +225,21 @@ The following fields require manual configuration:
 |  `deadlineJob` step > `parameters.TemplateId`  | The asset template ID to associate imported assets with. |
 |  `deadlineJob` step > `output.assets[].assetTemplateIds`  | Same template ID as above (for output routing). |
 
-### Queue and fleet recommendations
+### Queue and Fleet Recommendations
 <a name="_queue-and-fleet-recommendations"></a>
 
-The Amazon S3 Import connector uses a dedicated Deadline Cloud queue (`spatial-data-management-s3-import-queue`) that is separate from the default content derivation queue. This keeps import jobs isolated from format conversion, rendering, and other processing work. You can modify this queue’s fleet configuration in the AWS Deadline Cloud console based on your usage needs. Consider the following fleet configuration options:
-+ Use a service-managed fleet for most use cases. It scales automatically based on import demand.
-+ Use high-bandwidth instances (for example, `c5n` or `m5n` families) for high-throughput imports involving thousands of files or multi-GB transfers.
-+ Configure workers with no large local disk requirement. The worker streams, hashes, and uploads each file before the next batch starts.
+An import is a network job. Every byte passes through the worker. The worker reads each file from the source bucket, and uploads it to your library unless your library already holds it. Network bandwidth sets how fast an import runs, so choose the fleet for bandwidth first.
 
-## Enabling the connector
+The Amazon S3 Import connector uses a dedicated Deadline Cloud queue (`spatial-data-management-s3-import-queue`) that is separate from the default content derivation queue. The two queues share one service-managed fleet, `spatial-data-management-main-fleet`, which scales with demand. A change to that fleet in the AWS Deadline Cloud console applies to both queues. Consider the following fleet options:
++  **One import runs on one worker.** An import is a single task, so its speed is the network bandwidth of the one worker that runs it. A larger instance makes an import faster. More workers only let more imports run at the same time.
++  **Choose instance types for network bandwidth.** Use network-optimized types, such as the `c5n` or `m5n` families. Compare the network bandwidth that is listed for each size, not its vCPUs or memory. In a service-managed fleet, set the allowed instance types to the ones that you choose. The fleet also runs content derivation, so this changes the instances, and the cost, of derivation jobs too.
++  **Use large sizes.** Sizes of 4xlarge and smaller list an "up to" bandwidth that they hold only in short bursts. By default the fleet asks for workers with 16 vCPUs, which fall in that group. Larger sizes sustain the bandwidth that they list.
++  **Plan for twice the inbound traffic.** A file that is new to your library is read from the source twice, once to hash it and once to upload it. Inbound traffic is about twice the size of the new data. Inbound and outbound bandwidth are separate limits, and inbound is the one that limits an import.
++  **Keep the source bucket in the same Region as SDMA.** A source bucket in another Region is slower, and AWS bills the transfer.
++  **Check the job log.** The job prints its network rate (`net`) and CPU use (`cpu`) every minute. If `net` stays well below the instance’s listed bandwidth, raise `FileWorkers` and `PartConcurrency`. See [Tune an Import](#s3-import-tuning).
++  **Do not size for disk or memory.** Workers need no large local disk, because the job never writes file data to it. Memory only holds the parts that are in flight, and the settings in [Tune an Import](#s3-import-tuning) control that amount.
+
+## Enabling the Connector
 <a name="s3-import-enable"></a>
 
 After editing and saving the connector:
@@ -246,10 +252,10 @@ After editing and saving the connector:
 
 1. Under **Connector Associations**, add the S3 Import connector.
 
-## Importing files from S3
+## Importing Files from S3
 <a name="s3-import-usage"></a>
 
-1. Ensure the project uses an asset template associated with the Amazon S3 Import connector. For more information, see [Enabling the connector](#s3-import-enable).
+1. Ensure the project uses an asset template associated with the Amazon S3 Import connector. For more information, see [Enabling the Connector](#s3-import-enable).
 
 1. Navigate to the project and select **Create Asset**.
 
@@ -265,10 +271,35 @@ After editing and saving the connector:
 
 1. When the job completes, the asset appears in the project with all imported files.
 
-## How it works
+## How It Works
 <a name="s3-import-how-it-works"></a>
 
-When you submit an import, SDMA submits a job to AWS Deadline Cloud that copies the selected files from the source bucket into your library in the background. The connector verifies each file’s integrity during transfer and automatically deduplicates any files that already exist, rather than copying them again.
+When you submit an import, a job on AWS Deadline Cloud copies the selected files from the source bucket into your library in the background.
++ The job reads each file from the source bucket in ranges and hashes it first. If your library already holds a file with that hash, the job skips the upload.
++ Files that are not already in your library are copied. If a source file changes while the job copies it, the job rejects the file instead of storing a mismatch.
++ Several files copy at the same time, each in its own process. No file data is written to local disk.
++ Importing files that your library already holds is much faster than the first import, because nothing is uploaded.
+
+### Tune an Import
+<a name="s3-import-tuning"></a>
+
+Three optional parameters on the `deadlineJob` step control how much work runs at once. Add them to the step’s `parameters`:
+
+| Parameter | Default | Description |
+| --- | --- | --- |
+|  `FileWorkers`  |  `8`  | Files copied at the same time, one process each. |
+|  `PartConcurrency`  |  `8`  | Ranged reads, and part uploads, in flight for each file. |
+|  `PartSizeMiB`  |  `64`  | Size of each part, in MiB. |
+
+Peak memory use is about 2 × `FileWorkers` × `PartConcurrency` × `PartSizeMiB`. At the defaults, that is 8 GiB. On workers with less memory, lower these values.
+
+```json
+"parameters": {
+  "FileWorkers": "4",
+  "PartConcurrency": "4",
+  "PartSizeMiB": "32"
+}
+```
 
 ## Troubleshooting
 <a name="s3-import-troubleshooting"></a>

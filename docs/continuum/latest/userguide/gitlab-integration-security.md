@@ -61,7 +61,7 @@ A pipeline execution policy or a scan execution policy on your project can force
 
 Under the shared responsibility model, you are responsible for the GitLab access that you grant to AWS Continuum. Follow these practices:
 + Use a project or group access token instead of a personal access token, so that the token isn't tied to one person's account and access.
-+ Grant the least privilege that AWS Continuum needs. To scan code and open merge requests, use a token with the `api` scope and the **Developer** role. Don't use a token that belongs to an administrator or that has the `sudo` or `admin_mode` scope.
++ Grant the least privilege that AWS Continuum needs. Use a token with the `api` scope and the **Maintainer** role on the group or project. AWS Continuum needs the **Maintainer** role to read the project's CI/CD variables when it scans code. The **Owner** role on ancestor groups is optional. With this role, AWS Continuum can also read group CI/CD variables. Don't use a token that belongs to an administrator or that has the `sudo` or `admin_mode` scope.
 + Add the `self_rotate` scope so that AWS Continuum can rotate the token, or set an expiration date and replace the token before it expires.
 + Create a separate access token for each integration. Don't use the token anywhere else, and don't rotate it yourself. If the integration stops working because GitLab returns `401 Unauthorized`, create a new integration with a new access token.
 + Protect your default and release branches, and require approval before a merge request can be merged.

@@ -109,6 +109,18 @@ The following table lists the languages supported by AI features in Connect Cust
 + \*\* Redaction support is only for post-call analytics and chat analytics. It is not supported for real-time call analytics.
 + † You can manually complete performance evaluations in any language. Automated performance evaluations filled using generative AI is not available in instances in the following AWS Regions: Africa (Cape Town), Asia Pacific (Mumbai), and AWS GovCloud (US-West).
 
+### Contacts with more than one language
+<a name="supported-languages-multi-language"></a>
+
+In the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block, you can choose up to five languages for a voice contact. When you choose the languages, follow these guidelines:
++ Choose languages from the column of your analytics mode. For post-call analytics, use the **Post-call analytics** column. For real-time call analytics, use the **Real-time call analytics** column.
++ Choose only one dialect of each language. For example, choose `en-US` or `en-GB`, but not both.
++ Check the column of each feature. A feature applies to a segment only if the language of the segment has a check mark in the column of the feature.
++ If you turn on redaction for post-call analytics, make sure that at least one language has a check mark in the **Redaction** column.
++ In the flow block and in the Flow language, use the language code with a hyphen, for example, `en-US`.
+
+For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
+
 ### Guardrails
 <a name="qic-guardrails"></a>
 

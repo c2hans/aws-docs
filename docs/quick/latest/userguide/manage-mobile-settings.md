@@ -30,6 +30,8 @@ Mobile settings allow AWS Quick admins to enhance data security and maintain com
 
    1. Choose **Update** to apply your changes.
 
+To turn voice mode on or off for mobile users, use [Custom permissions](custom-permissions.md). The setting applies to desktop and mobile.
+
 ## Best practices
 <a name="mobile-best-practices"></a>
 + Regularly review and update mobile security settings to align with your organization's security policies

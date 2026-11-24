@@ -14,6 +14,8 @@ You can access generative AI-powered post-contact summaries multiple ways:
 + **Managers and supervisors** can access summaries for voice, chat, and email contacts on the Connect Customer admin website, on the **Contact details** and the **Contact search** pages. They can use the summaries to quickly understand the issues and outcomes for the contacts they are reviewing. To learn about the managers experience, see [View post-contact summaries on the Connect Customer admin website](#summaries-on-website).
 + **Developers** can directly ingest the summaries from the [APIs](contact-lens-api.md) into third-party systems. They can also [integrate with Amazon Kinesis Data Streams](contact-analysis-segment-streams.md) for streaming. This latter option is useful when you have higher loads and you want to avoid having the TPS throttled.
 
+Summaries are produced in the language of the original conversation automatically. For a contact with more than one language, conversational analytics writes the summary in the most spoken language among the chosen languages that support summaries. If none of the chosen languages support summaries, conversational analytics doesn't write a summary. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
+
 **Topics**
 + [Enable post-contact summaries](#gen-ai-getstarted)
 + [Enable contact summaries for email](#enable-email-summaries)
@@ -100,7 +102,7 @@ After you complete these steps, agents who have these permissions see a post-con
 
 **To enable contact summaries for email contacts**
 
-1. Add a [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block to your inbound email flow.
+1. Add a [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block to your inbound email flow.
 
 1. Configure the **Properties** page of the block:
 

@@ -86,13 +86,13 @@ No explicit Allow for `partnercentral:*` actions is required for MCP protocol ac
 **Configure your MCP client**
 Use one of the following clients to connect.
 
-**Amazon Quick**
+**AWS Quick**
 Create a connector and install it in Quick Desktop.
 
 **Part 1: Create the connector**
-Complete the following steps in Amazon Quick.
+Complete the following steps in AWS Quick.
 
-1. In the left panel of Amazon Quick, open **Capabilities** → **Connectors**.
+1. In the left panel of AWS Quick, open **Capabilities** → **Connectors**.
 
 1. Choose **Create** → **Web Connectors**. Quick web opens in your default browser.
 
@@ -134,6 +134,8 @@ Install the connector in your desktop application.
 
 **Re-sign in to the connector**
 To sign in again after the token expires, the connector owner must open the connector page in Quick web and choose **Sign In**.
+
+After you install the connector, add the AWS Partner Central plugin or individual AWS Partner skills in AWS Quick to start using ready-made co-sell and funding workflows. For instructions, see [AWS Quick](https://docs.aws.amazon.com/partner-central/latest/developer-guide/partner-central-aws-quick.html).
 
 **Claude Code CLI**
 Run the following command:

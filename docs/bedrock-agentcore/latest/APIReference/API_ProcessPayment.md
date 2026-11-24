@@ -57,10 +57,10 @@ Type: [PaymentInput](API_PaymentInput.md) object
 Required: Yes
 
  ** [paymentInstrumentId](#API_ProcessPayment_RequestSyntax) **   <a name="BedrockAgentCore-ProcessPayment-request-paymentInstrumentId"></a>
-The ID of the payment instrument to use.
+The ID of the payment instrument to use. For the `CRYPTO_X402` and `MPP` payment types, specify the ID of a payment instrument that you created. For the `AWS_BILLING_X402` payment type, specify the service-managed instrument ID `aws.agentcorepayments.awsbilling.v1`. You don't create this instrument; it's available for any payment manager that has an AWS Billing payment connector.
 Type: String
-Length Constraints: Fixed length of 34.
-Pattern: `payment-instrument-[0-9a-zA-Z-]{15}`
+Length Constraints: Minimum length of 34. Maximum length of 35.
+Pattern: `(payment-instrument-[0-9a-zA-Z-]{15}|aws\.agentcorepayments\.awsbilling\.v1)`
 Required: Yes
 
  ** [paymentManagerArn](#API_ProcessPayment_RequestSyntax) **   <a name="BedrockAgentCore-ProcessPayment-request-paymentManagerArn"></a>
@@ -80,7 +80,7 @@ Required: Yes
  ** [paymentType](#API_ProcessPayment_RequestSyntax) **   <a name="BedrockAgentCore-ProcessPayment-request-paymentType"></a>
 The type of payment to process.
 Type: String
-Valid Values: `CRYPTO_X402 | MPP`
+Valid Values: `CRYPTO_X402 | MPP | AWS_BILLING_X402`
 Required: Yes
 
 ## Response Syntax
@@ -115,10 +115,10 @@ The timestamp when the payment was created.
 Type: Timestamp
 
  ** [paymentInstrumentId](#API_ProcessPayment_ResponseSyntax) **   <a name="BedrockAgentCore-ProcessPayment-response-paymentInstrumentId"></a>
-The ID of the payment instrument used.
+The ID of the payment instrument used. For the `AWS_BILLING_X402` payment type, this is the service-managed instrument ID `aws.agentcorepayments.awsbilling.v1`.
 Type: String
-Length Constraints: Fixed length of 34.
-Pattern: `payment-instrument-[0-9a-zA-Z-]{15}`
+Length Constraints: Minimum length of 34. Maximum length of 35.
+Pattern: `(payment-instrument-[0-9a-zA-Z-]{15}|aws\.agentcorepayments\.awsbilling\.v1)`
 
  ** [paymentManagerArn](#API_ProcessPayment_ResponseSyntax) **   <a name="BedrockAgentCore-ProcessPayment-response-paymentManagerArn"></a>
 The ARN of the payment manager.
@@ -140,7 +140,7 @@ Pattern: `payment-session-[0-9a-zA-Z-]{15}`
  ** [paymentType](#API_ProcessPayment_ResponseSyntax) **   <a name="BedrockAgentCore-ProcessPayment-response-paymentType"></a>
 The type of payment processed.
 Type: String
-Valid Values: `CRYPTO_X402 | MPP`
+Valid Values: `CRYPTO_X402 | MPP | AWS_BILLING_X402`
 
  ** [processPaymentId](#API_ProcessPayment_ResponseSyntax) **   <a name="BedrockAgentCore-ProcessPayment-response-processPaymentId"></a>
 The unique identifier of the processed payment.

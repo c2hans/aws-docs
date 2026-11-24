@@ -27,6 +27,7 @@ This approach helps ensure your applications remain stable as the service evolve
 + [Sample contact event for when a voice call is connected to an agent using routing criteria](#sample-routing-criteria-event-connected)
 + [Sample event for when routing step expires on a contact](#sample-routing-step-expires)
 + [Sample contact event for when a voice call is connected to an agent provided by the customer using routing criteria](#sample-contact-event-voice-call-routing-criteria)
++ [Sample event for a contact with more than one analytics language](#sample-contact-event-multi-language-analytics)
 
 ## Contact events data model
 <a name="contact-events-data-model"></a>
@@ -1275,6 +1276,53 @@ The following sample event shows a contact that has a user-defined tag with **De
                 }
             }]
         }]
+    }
+}
+```
+
+## Sample event for a contact with more than one analytics language
+<a name="sample-contact-event-multi-language-analytics"></a>
+
+The following example shows a `CONTACT_DATA_UPDATED` event for a voice contact that conversational analytics analyzes in two languages. The `languageLocales` field contains both languages, in the order set in the flow.
+
+```json
+{
+    "version": "0",
+    "id": "the event ID",
+    "detail-type": "Amazon Connect Contact Event",
+    "source": "aws.connect",
+    "account": "the account ID",
+    "time": "2026-10-08T17:43:48Z",
+    "region": "us-west-2",
+    "resources": [
+        "contactArn",
+        "instanceArn"
+    ],
+    "detail": {
+        "eventType": "CONTACT_DATA_UPDATED",
+        "contactId": "the contact ID",
+        "channel": "VOICE",
+        "instanceArn": "arn:aws:connect:us-west-2:the account ID:instance/the instance ID",
+        "initiationMethod": "INBOUND",
+        "updatedProperties": ["ContactLens.ConversationalAnalytics.Configuration"],
+        "contactLens": {
+            "conversationalAnalytics": {
+                "configuration": {
+                    "enabled": true,
+                    "channelConfiguration": {
+                        "analyticsModes": ["RealTime"]
+                    },
+                    "languageLocale": "en-US",
+                    "languageLocales": ["en-US", "es-US"],
+                    "redactionConfiguration": {
+                        "behavior": "Enable",
+                        "policy": "RedactedAndOriginal",
+                        "entities": ["NAME", "PHONE"],
+                        "maskMode": "EntityType"
+                    }
+                }
+            }
+        }
     }
 }
 ```

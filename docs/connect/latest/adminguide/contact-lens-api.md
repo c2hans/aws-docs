@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-a
 # Use conversational analytics APIs for chat analytics
 
 Conversational analytics includes two APIs that support conversational analytics. Use these APIs to build solutions that make your contact center more efficient.
-+ [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_ListRealtimeContactAnalysisSegments.html): Use for voice contacts.
++ [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_ListRealtimeContactAnalysisSegments.html): Use for voice contacts. For a contact with more than one language, the `LanguageCode` field of each `Transcript` segment contains the language of the segment.
 + [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html): Use for chat contacts.
 
 These conversational analytics APIs are polling APIs, with a standard request/response exchange, where you don't need to integrate with any other service. However, there are [rate limitations](amazon-connect-service-limits.md#connect-contactlens-api-quotas). If needed, you can eliminate these limitations by using the [streaming API](contact-analysis-segment-streams.md). It requires integration with Amazon Kinesis Data Streams.

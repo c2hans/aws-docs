@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 The REST API connector sends resource metadata to external REST endpoints. It supports all HTTP methods and works for both publishing and synchronization.
 
-Filters, `output` blocks, `${…​}` variables, and `$temp` values work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), and [Intermediate state with $temp variables](connector-configuration.md#temp-variables).
+Filters, `output` blocks, `${…​}` variables, and `$temp` values work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), [Variable Substitution](connector-configuration.md#variable-substitution), and [Intermediate State with $temp Variables](connector-configuration.md#temp-variables).
 
 ## Prerequisites
 <a name="rest-prerequisites"></a>
@@ -73,7 +73,7 @@ Filters, `output` blocks, `${…​}` variables, and `$temp` values work the sam
      }
      ```
 
-## Step types
+## Step Types
 <a name="rest-step-types"></a>
 
 The REST API connector supports the following step type.
@@ -82,7 +82,7 @@ The REST API connector supports the following step type.
 | --- | --- |
 |  `rest`  | Executes an HTTP request to the configured endpoint. Supports GET, POST, PUT, PATCH, and DELETE methods. The HTTP method, path, headers, and body are configurable per step. |
 
-## Create this connector
+## Create This Connector
 <a name="rest-create"></a>
 
 1. In the Spatial Data Portal, go to **Library settings** > **Connectors**.
@@ -152,12 +152,12 @@ The REST API connector supports the following step type.
 }
 ```
 
-## Configuration fields
+## Configuration Fields
 <a name="rest-config-fields"></a>
 
 The following table describes the configuration fields for the REST API connector.
 
-### Connector-level fields (`restConfig`)
+### Connector-Level Fields (`restConfig`)
 <a name="_connector-level-fields-restconfig"></a>
 
 | Field | Required | Description |
@@ -167,11 +167,11 @@ The following table describes the configuration fields for the REST API connecto
 |  `restConfig.headers`  | No | Default HTTP headers included in every request. Values are strings. |
 |  `restConfig.queryParams`  | No | Default query parameters included in every request. Values support `${variable}` substitution. |
 |  `restConfig.allowMultilineInSubstitution`  | No | When `true`, variable substitution preserves single quotes, tabs, newlines, and carriage returns in request body values. Use this when substituting multi-line content such as SQL or WKT. URL path and query-string substitution remains strict regardless of this flag. Defaults to `false`. |
-|  `restConfig.initialize`  | No | Session initialization configuration. See [Session initialization](#rest-session-initialization). |
+|  `restConfig.initialize`  | No | Session initialization configuration. See [Session Initialization](#rest-session-initialization). |
 |  `restConfig.sampling`  | No | Sampling configuration. See [Sampling](#rest-sampling). |
 |  `fieldMappings`  | No | Default field mappings for request body construction. |
 
-### Step-level fields
+### Step-Level Fields
 <a name="_step-level-fields"></a>
 
 | Field | Required | Description |
@@ -181,7 +181,7 @@ The following table describes the configuration fields for the REST API connecto
 |  `headers`  | No | Per-step HTTP headers. Merged with connector-level headers; step-level values override connector-level values for the same header name. |
 |  `queryParams`  | No | Per-step query parameters with `${variable}` substitution. Appended to the request URL. |
 |  `body`  | No | A JSON body template with `${variable}` references that are resolved at execution time. Use this when the request body structure differs from what field mappings produce. |
-|  `bodyFromFile`  | No | Sends binary file content as the request body instead of a JSON payload. See [Sending file content as the request body](#rest-body-from-file). |
+|  `bodyFromFile`  | No | Sends binary file content as the request body instead of a JSON payload. See [Sending File Content as the Request Body](#rest-body-from-file). |
 |  `fieldMappings`  | No | Step-level field mappings that override connector-level mappings. |
 |  `responseFieldMapping`  | No | Maps fields from the API response to `$temp.*` variables (for use in subsequent steps) or to connected resource fields. |
 |  `payload.fields`  | No | Array of target field names to include in the output. If omitted, all mapped fields are included. |
@@ -191,12 +191,12 @@ The following table describes the configuration fields for the REST API connecto
 |  `successConditions`  | No | Custom success criteria. Use `expectSuccess: false` with `responseMatch` to wait for a specific response (for example, polling until a resource is deleted). |
 |  `onError`  | No | Error handling: `fail` (default) or `record-and-continue`. |
 
-## Connected resources
+## Connected Resources
 <a name="rest-connected-resources"></a>
 
 When a REST `POST` or `PUT` step creates or updates a record in an external system, SDMA automatically captures the external ID from the response. This stored ID is called a *connected resource* and you can reference it in subsequent steps.
 
-### How it works
+### How It Works
 <a name="_how-it-works"></a>
 
 1. A `POST` step sends a request to the external API (for example, `POST /records`).
@@ -207,7 +207,7 @@ When a REST `POST` or `PUT` step creates or updates a record in an external syst
 
 1. On subsequent update or delete triggers, you can reference the stored ID using `${project.connectedResource.<field>}` in step paths or other interpolated fields.
 
-### Controlling the stored field name
+### Controlling the Stored Field Name
 <a name="_controlling-the-stored-field-name"></a>
 
 Use `responseFieldMapping` in the step to control which response field SDMA captures and what name SDMA stores it under:
@@ -229,7 +229,7 @@ In this example, SDMA stores the `id` field from the API response as `externalRe
 
 In the full configuration example above, the `POST /records` step creates a record. The external API returns a response containing an `externalId` field. SDMA stores this value automatically. The update and delete triggers then use `${project.connectedResource.externalId}` in their paths to target the correct external record.
 
-## Sending file content as the request body
+## Sending File Content as the Request Body
 <a name="rest-body-from-file"></a>
 
 The `bodyFromFile` step field sends binary file content directly as the HTTP request body instead of a JSON payload constructed from field mappings. Use this when an external API expects the raw file content — for example, uploading a derived file to a third-party system.
@@ -249,7 +249,7 @@ The `bodyFromFile` step field sends binary file content directly as the HTTP req
 
 When `bodyFromFile` is present, SDMA reads the file content from the asset’s content-addressable storage using the file hash from the resource metadata. SDMA ignores the `body` and `fieldMappings` fields for that step.
 
-## Request body templates
+## Request Body Templates
 <a name="rest-body-template"></a>
 
 The `body` step field provides a JSON body template with `${variable}` references that SDMA resolves at execution time. Use this when the request body structure differs from what field mappings produce. For example, use `body` when the external API expects a specific JSON shape with nested objects or when you need to include values from `$temp.*` variables set by previous steps.
@@ -273,16 +273,19 @@ SDMA scans each string value in the body for `${variable}` references and resolv
 **Note**
  `body` and `fieldMappings` serve different purposes. Field mappings construct a flat or nested payload from source/target pairs and are the standard approach for most connectors. `body` is for cases where you need explicit control over the JSON structure. If both are present, `body` takes precedence.
 
-## SIGv4 signing for AWS service endpoints
+## SIGv4 Signing for AWS Service Endpoints
 <a name="rest-sigv4"></a>
 
 When the security config type is `AssumeRole`, SDMA signs all HTTP requests with [AWS Signature Version 4 (SIGv4)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html) using the assumed role’s credentials. This allows REST connectors to call AWS service endpoints directly — for example, Amazon SageMaker inference endpoints, AWS Lambda function URLs, or Amazon Bedrock APIs.
 
-SDMA determines the AWS service name for signing from the endpoint hostname:
-+ Hostnames containing `sagemaker` → signed as `sagemaker`
-+ Hostnames containing `lambda` → signed as `lambda`
-+ Hostnames containing `bedrock` → signed as `bedrock`
-+ All other hostnames → signed as `execute-api` (suitable for Amazon API Gateway endpoints)
+SDMA signs for the service and Region that an AWS endpoint’s hostname names, so a REST step can call any AWS service, in any Region:
++  `runtime.sagemaker.us-west-2.amazonaws.com` is signed as `sagemaker` in `us-west-2`.
++ Amazon Bedrock runtime and agent hostnames are signed as `bedrock`, and Lambda function URLs as `lambda`.
++ Requests to Amazon S3 carry the payload hash that Amazon S3 requires.
++ For a custom domain in front of an AWS service, set `signingName` and `signingRegion` in the REST step’s `securityConfig`.
++ Any other hostname is signed as `execute-api` in the deployment’s Region, which suits Amazon API Gateway endpoints.
+
+SDMA rejects a connector that sets `signingName` or `signingRegion` anywhere except a REST `securityConfig`, or whose `signingRegion` differs from the Region of an AWS endpoint’s hostname.
 
 ```json
 {
@@ -298,7 +301,7 @@ SDMA determines the AWS service name for signing from the endpoint hostname:
 
 The assumed role must have permissions to invoke the target AWS service endpoint.
 
-## Session initialization
+## Session Initialization
 <a name="rest-session-initialization"></a>
 
 Some REST APIs require a session handshake before accepting requests. The `restConfig.initialize` block configures this. When present, SDMA sends a POST request to the specified endpoint before the first step executes and captures a session token from the response to include in all subsequent requests.
@@ -339,9 +342,9 @@ The `restConfig.sampling` block enables SDMA to respond to text-generation callb
 }
 ```
 
-Sampling requires session initialization (`restConfig.initialize`).
+Sampling requires session initialization (`restConfig.initialize`). To call the model in another Region, add `region`. When `modelId` is an ARN, SDMA uses the Region in the ARN.
 
-## Safety and limits
+## Safety and Limits
 <a name="rest-safety"></a>
 
 The REST API client enforces the following safety measures:

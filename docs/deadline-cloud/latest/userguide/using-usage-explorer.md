@@ -39,7 +39,9 @@ Cost per job =
 + Compute rate comes from [AWS Deadline Cloud pricing](https://aws.amazon.com/deadline-cloud/pricing/) for service-managed fleets. For customer-managed fleets, the estimate uses a fixed flat rate for each worker hour. The rate doesn't include the Deadline Cloud worker charge or the cost of your instances or hardware. To align the estimates with your costs, use the [Adjust usage explorer and budget estimates with the cost scale factor](#cost-scale-factor).
 + License rate comes from the Deadline Cloud base license price and applies only to service-managed fleets. The estimate doesn't include additional pricing tiers. For more information, see [AWS Deadline Cloud pricing](https://aws.amazon.com/deadline-cloud/pricing/).
 
-Your estimate reflects only the time that your tasks run. Your bill reflects the time that each worker is connected, including idle time. For more information, see [Charges for workers](cost-management.md#worker-charges).
+Your estimate includes the time that your tasks run and the time that your workers are idle. Your bill reflects the time that each worker is connected. For more information, see [Charges for workers](cost-management.md#worker-charges).
+
+Idle time is priced at the same rate as the worker's compute time. For customer-managed fleets, idle time uses the same fixed flat rate for each worker hour. The usage explorer shows idle cost as a separate usage type, and budgets count it. For a long-running idle worker, the idle cost updates periodically, not only when the worker stops.
 
 For information about costs that aren't included in these estimates, see [Understand estimated and actual costs for Deadline Cloud](cost-management.md).
 
@@ -108,6 +110,10 @@ To open the Deadline Cloud usage explorer, use the following procedure.
 From the usage explorer page, you can select specific parameters in which the data can be displayed. By default, you see total usage in time (hours and minutes) within the last 7 days. You can change these parameters, and the information displayed changes dynamically in accordance to the parameter settings.
 
 You can group the results based on the queue, fleet, job, user, usage type, instance type, or license product. If you choose license product, costs are calculated for specific licenses. If you filter by fleet and group by usage type, you can see persistent volume cost associated with your fleets. For all other groups the time is calculated by adding up the time taken for each task to run.
+
+The usage explorer includes idle worker cost. If you group by usage type, idle cost appears as its own usage type, separate from the cost of running tasks. If you group by queue, each queue associated with a fleet shows the full idle cost of that fleet. Each queue that shares a fleet shows the full idle cost of that fleet.
+
+For a long-running idle worker, the idle cost updates periodically, not only when the worker stops. For customer-managed fleets, idle time uses the flat estimate rate for each worker hour. For more information, see [How the usage explorer and budgets estimate costs](#manage-costs-assumptions).
 
 You can filter results by queues or by fleets, but you cannot filter by both at the same time.
 

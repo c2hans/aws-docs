@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-recording-
 # Flow block in Connect Customer: Set recording and analytics behavior
 
 **Note**
-This block remains supported in existing flows for backwards compatibility, but it is replaced by [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) for new flows or modifications.
+This block remains supported in existing flows for backwards compatibility, but it is replaced by [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) for new flows or modifications. This block supports only one analytics language. To analyze a contact in more than one language, use the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block.
 
 This topic defines the flow block for setting options to record or monitor voice for agent and customer, enable automated interaction, enable screen recording, and to set analytics behavior for contacts.
 

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-fan-out-write-back.html
 ---
 
-# Processing changed files and writing results back
+# Processing Changed Files and Writing Results Back
 
 A common integration sends the files an asset version changed to an external system. It then records what that system returned on each file. For example, a publishing service returns a publish ID for every file it accepts, and you want each file in SDMA to carry its own publish ID.
 
@@ -14,9 +14,9 @@ SDMA supports this with one trigger that combines four ideas:
 
 The external system only has to answer the request. It does not call back into SDMA, and it does not need SDMA credentials. SDMA writes the results itself.
 
-Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), and [Variable Substitution](connector-configuration.md#variable-substitution).
 
-## Example – Publishing changed files and writing back publish IDs
+## Example – Publishing Changed Files and Writing Back Publish IDs
 <a name="fan-out-example"></a>
 
 The following connector publishes changed files through an AWS Lambda function in batches of up to 500, and writes each returned publish ID to the matching file’s `publishId` attribute:
@@ -86,7 +86,7 @@ The following connector publishes changed files through an AWS Lambda function i
 
 The sections below explain each part.
 
-## Selecting the files a version changed
+## Selecting the Files a Version Changed
 <a name="fan-out-change-filter"></a>
 
  `changeState` compares the triggering version with the version immediately before it. Each file is `added` (new in this version), `modified` (same path, different content), or neither. The example accepts `added` and `modified`, so unchanged files are left alone.
@@ -105,7 +105,7 @@ Because the trigger matches only when files changed, an update that changes only
 **Important**
  `changeState` looks back one version only. Suppose a version’s publish failed, and a later version is created before you re-run it. The later version’s change set then excludes the files from the failed version, and the connector skips them. To catch up, add a second trigger on `onDemand` without the `changeState` filter, so a manual run covers every file.
 
-## Running the steps for each file or batch
+## Running the Steps for Each File or Batch
 <a name="fan-out-apply-to"></a>
 
 Use `applyTo` when you need a separate result for each file, or when the external system accepts files one at a time or in groups. Without `applyTo`, a trigger’s steps run once for the whole asset. With `applyTo`, they run once for each item in a collection.
@@ -120,7 +120,7 @@ Use `applyTo` when you need a separate result for each file, or when the externa
 |  `onError`  | What happens when one run fails: `fail` (default) stops the fan-out, `record-and-continue` records the failure and moves on. |
 |  `circuitBreakerThreshold`  | With `record-and-continue`, the number of consecutive failures that stops the fan-out. Defaults to `5`. |
 
-### What a step sees
+### What a Step Sees
 <a name="_what-a-step-sees"></a>
 
 With `batchSize` of `1`, each run of the steps receives one file under the name `file`. Your mappings then use `file.hash`, `file.path`, and so on.
@@ -129,7 +129,7 @@ With `batchSize` greater than `1`, each run receives a list of files under the p
 
 Batching suits a service that accepts many files in each request. A changed version of 2,000 files becomes four calls instead of 2,000.
 
-### How runs are recorded
+### How Runs Are Recorded
 <a name="fan-out-invocations"></a>
 
 A fan-out records one parent invocation for the trigger, and one child invocation for each file.
@@ -150,9 +150,9 @@ The parent’s counters depend on batching:
 
 The parent ends `SUCCEEDED` only if every item or batch succeeded. Otherwise, it ends `FAILED`, and the counters show how many failed. With `record-and-continue`, a failed batch does not stop the others. If the circuit breaker stops the fan-out, the parent’s `context` also includes `applyToCircuitBreakerTripped`, and items that never ran count as failed.
 
-When the steps include a `wait`, the parent stays `IN_PROGRESS` until every child that started has finished. For more information, see [Steps that wait for each file](#fan-out-wait).
+When the steps include a `wait`, the parent stays `IN_PROGRESS` until every child that started has finished. For more information, see [Steps That Wait for Each File](#fan-out-wait).
 
-### Steps that wait for each file
+### Steps That Wait for Each File
 <a name="fan-out-wait"></a>
 
 When the steps include a `wait`, each file runs as its own connector invocation. Each one sends its request, waits for its own result, and resumes independently. No compute is held while the files wait.
@@ -195,7 +195,7 @@ The same pattern applies to any collection of files that each needs its own long
 }
 ```
 
-Here `${parameters.connectorInvocationId}` is the ID of the run, and `${file.hash}` tells the files apart, so every file gets its own request and output paths. `${file.hash}` alone would not be enough: a later run would find the earlier output already in place. Each new asset records lineage back to the source asset and the `.mp4` it came from (see [Lineage from an asset trigger](connector-configuration.md#asset-lineage)).
+Here `${parameters.connectorInvocationId}` is the ID of the run, and `${file.hash}` tells the files apart, so every file gets its own request and output paths. `${file.hash}` alone would not be enough: a later run would find the earlier output already in place. Each new asset records lineage back to the source asset and the `.mp4` it came from (see [Lineage from an Asset Trigger](connector-configuration.md#asset-lineage)).
 
 How this differs from steps that do not wait:
 
@@ -211,7 +211,7 @@ With a `wait`, these are not supported: `batchSize` greater than `1`, `source`, 
 **Note**
 An item’s invocation that stops before its wait is saved — for example, because its function was stopped — leaves the trigger’s invocation `IN_PROGRESS`. This is the same behavior as a single `wait` step, but such an item also holds one of the `concurrency` slots.
 
-## Shaping the request
+## Shaping the Request
 <a name="fan-out-request"></a>
 
 The connector-level `fieldMappings` build the request body. Each mapping copies a value from SDMA into a named field:
@@ -232,7 +232,7 @@ The connector-level `fieldMappings` build the request body. Each mapping copies 
 
 Field names can contain spaces, so you can match the external system’s own field names exactly.
 
-## Writing results back to each file
+## Writing Results Back to Each File
 <a name="fan-out-correlate"></a>
 
 The function’s response describes the files it handled, but not in SDMA’s terms. A correlate mapping connects the two. The following JSON shows an example response returned by the function:
@@ -260,9 +260,9 @@ So the file with hash `<hash-1>` gets `publishId` `pub-001`, and the file with h
 
 Matching on `file.hash` is reliable because the request sent each file’s hash, and the function echoes it back. You can match on `file.path` instead if the external system works with paths.
 
-For more information about correlate options, see [Correlate mapping](connector-configuration.md#correlate-mapping).
+For more information about correlate options, see [Correlate Mapping](connector-configuration.md#correlate-mapping).
 
-## Why write back through output routing
+## Why Write Back Through Output Routing
 <a name="fan-out-why-output"></a>
 
 You can write results back to an asset in two ways, and both are supported:
@@ -271,7 +271,7 @@ You can write results back to an asset in two ways, and both are supported:
 
 Direct writes are a good fit for systems that act on their own schedule, such as an editing tool or a nightly job. When the values come back as the **result of a connector step**, output routing is usually the better choice. This is because of how SDMA versions assets.
 
-### How versions relate to writes
+### How Versions Relate to Writes
 <a name="_how-versions-relate-to-writes"></a>
 
 An asset’s history is a list of versions. Each version records a consistent state of the asset: its files and its metadata at one moment.
@@ -296,9 +296,9 @@ In short, output routing keeps metadata and derived content with the content ver
 **Tip**
 If your function already calls the SDK to write results back, you can usually move that logic into the response instead. Return the values in the function’s response, add an `output` block with a correlate mapping, and remove the SDK call. The function becomes simpler, and it no longer needs SDMA credentials.
 
-Output routing works the same way for every step type that returns a response, including `rest` and `lambdaInvoke` steps, and for Deadline Cloud jobs. For more information about output routing, see [Output routing](connector-configuration.md#output-routing).
+Output routing works the same way for every step type that returns a response, including `rest` and `lambdaInvoke` steps, and for Deadline Cloud jobs. For more information about output routing, see [Output Routing](connector-configuration.md#output-routing).
 
-## Writing the Lambda function
+## Writing the Lambda Function
 <a name="fan-out-lambda-contract"></a>
 
 The function in this example must do only three things:
@@ -331,10 +331,10 @@ def handler(event, context):
 
 Leave a file out of `publishedFiles` if the function could not handle it. That file keeps its previous value, and the next run that includes it can try again.
 
-The connector’s role must allow `lambda:InvokeFunction` on the function. For more information about the role setup, see [AWS Lambda connector](connector-lambda.md).
+The connector’s role must allow `lambda:InvokeFunction` on the function. For more information about the role setup, see [AWS Lambda Connector](connector-lambda.md).
 
 ## Considerations
 <a name="fan-out-considerations"></a>
 +  **Batch size.** Choose a `batchSize` the external system can handle in one request, within the Lambda function’s time and payload limits.
 +  **Failures.** With `record-and-continue`, one failed batch does not stop the rest. Use `fail` when a partial result is worse than none.
-+  **Approving the connector.** Because the trigger writes to file metadata, approve the connector on the asset template, as for any connector with an `output` block. For more information, see [Connectors, templates, and projects](connectors-overview.md#connector-blast-radius).
++  **Approving the connector.** Because the trigger writes to file metadata, approve the connector on the asset template, as for any connector with an `output` block. For more information, see [Connectors, Templates, and Projects](connectors-overview.md#connector-blast-radius).

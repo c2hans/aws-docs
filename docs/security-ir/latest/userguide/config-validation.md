@@ -284,7 +284,7 @@ Confirm that:
 
  If the StackSet isn't deployed, containment authorization in the console doesn't result in actual containment actions being taken.
 
- To set or update your containment preference, create an AWS Support case with case type **Technical: Security Incident Response Service / Other**.
+ To set or update your containment preference, see [Define containment action preferences](contain.md#define-containment-action-preferences).
 
  **If you want EC2 Triage:** Deploy the **Containment with EC2 Triage** CloudFormation template. This allows Security Incident Response engineers to collect investigative data from Amazon EC2 instances using AWS Systems Manager.
 

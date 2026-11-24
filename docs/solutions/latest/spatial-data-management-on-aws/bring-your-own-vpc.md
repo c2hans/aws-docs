@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/bring-your-own-vpc.html
 ---
 
-# Bring your own VPC
+# Bring Your Own VPC
 
 By default, Spatial Data Management on AWS creates a new Amazon Virtual Private Cloud (Amazon VPC) with all required subnets, NAT gateways, and VPC endpoints. If your organization already has a VPC, you can deploy the solution into it instead.
 

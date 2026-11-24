@@ -104,6 +104,25 @@ The following table lists applications and versions that contain plugin sync scr
 | Foundry Nuke | nuke | 15.0, 16.0, 17.0 | Linux | Yes | Yes |
 | SideFX Houdini | houdini | 19.5, 20.0, 20.5, 21.0, 22.0 | Linux | Yes | Yes |
 | Maxon Cinema 4D | cinema4d | Linux: 2024.5.1, 2025.3.1, and 2026.3.4; Windows: 2025.3.3 and 2026.3.4 | 2024: Linux; 2025 and 2026: Linux and Windows | Yes | Yes |
-| Adobe After Effects | aftereffects | 25.6 or 25.6.4; 26.0 or 26.0.0 | Windows | Yes | Yes |
+| Adobe After Effects | aftereffects | 25.6, 26.0, 26, 26.5, 27, 27.0, or the full version number, such as 26.5.3. See [After Effects version folders](#plugin-sync-after-effects-versions). | Windows | Yes | Yes |
 
 If your application or version does not appear in the table, see [Package a plugin](conda-package.md#conda-package-plugins) or [Configure jobs using queue environments](configure-jobs.md), or use a customer-managed fleet. The [conda recipe samples](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) on the GitHub website include plugin sync scripts that you can use with a self-hosted channel.
+
+### After Effects version folders
+<a name="plugin-sync-after-effects-versions"></a>
+
+You can upload After Effects plugins to more than one version folder. The package downloads every folder that exists, from the most general to the most specific. A file in a more specific folder replaces a file with the same name from a more general folder.
+
+The following table lists the version folders that each package version reads:
+
+| Package version | Version folders, in the order read | Use it to |
+| --- | --- | --- |
+| 26.5 (26.5.3) and 27.0 | 26, 26.5, 26.5.3; 27, 27.0 | Upload to the major folder, such as 27/, to reach every package of that major version, including later minor and patch releases. Upload to a {{major.minor}} folder, such as 26.5/, for a plugin build that only supports that release. |
+| 25.6 (25.6.4) and 26.0 (26.0.0) | 25.6, 25.6.4; 26.0, 26.0.0 | Upload to the {{major.minor}} folder, such as 26.0/. These packages don't read a major folder. |
+| 24.6, 25.1, 25.2 | None | These packages don't include plugin sync. Use a conda package or a host configuration script instead. |
+
+The most specific folder is the full version number that the service-managed fleet installs, such as `26.5.3`. A folder with that name applies only to that patch release. When a newer patch release reaches the `deadline-cloud` channel, jobs that request `aftereffects=26.5` install it and stop reading the old folder. Use the major or {{major.minor}} folder instead.
+
+Inside a version folder, put `.aex` plugins and their folders at the top level. The package copies them to a `deadline-plugin-sync` folder under the After Effects `Plug-ins` directory. After Effects scans that folder at launch. Put startup scripts (`.jsx` files) in a `startup/` subfolder. The package copies them to the After Effects `Scripts/Startup` directory, and `aerender` runs them before it renders.
+
+For example, to deliver a plugin to every After Effects 27 job on Windows workers, upload it to `plugins/windows/aftereffects/27/` under your queue's job attachments root prefix. For the full Amazon S3 path, see [Upload plugin files to Amazon S3](#plugin-sync-upload).

@@ -113,6 +113,8 @@ AWS Quick stores data in your AWS Quick account and on the user's device.
 
 AWS Quick keeps each user's conversations, memory, knowledge graph, library, skills, and indexed folder content in your AWS Quick account. Each user's data is separate from other users' data. AWS Quick encrypts it at rest. You can register an AWS Key Management Service (AWS KMS) [customer managed key](customer-managed-keys.md) for the resource types that page lists.
 
+Voice mode doesn't store your audio. AWS Quick keeps a text transcript of voice conversations, the same as typed chat.
+
 ### On the user's device
 <a name="desktop-security-data-storage"></a>
 

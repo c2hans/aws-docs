@@ -16,7 +16,7 @@ Amazon FSx for NetApp ONTAP file systems are available in the following AWS Regi
 | AWS GovCloud (US-West) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Africa (Cape Town) | ✓ | ✓ |  |  |  |  |
 | Asia Pacific (Hong Kong) | ✓ | ✓ |  |  |  |  |
-| Asia Pacific (Tokyo) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Asia Pacific (Tokyo) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Asia Pacific (Seoul) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Asia Pacific (Osaka) | ✓ | ✓ |  |  |  |  |
 | Asia Pacific (Mumbai) | ✓ | ✓ | ✓ | ✓ |  |  |
@@ -35,8 +35,8 @@ Amazon FSx for NetApp ONTAP file systems are available in the following AWS Regi
 | Europe (Zurich) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Europe (Stockholm) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Europe (Milan) | ✓ | ✓ |  |  |  |  |
-| Europe (Spain) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Europe (Ireland) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Europe (Spain) | ✓ | ✓ | ✓ | ✓ |  |  |
+| Europe (Ireland) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Europe (London) | ✓ | ✓ | ✓ | ✓ |  |  |
 | Europe (Paris) | ✓ | ✓ |  |  |  |  |
 | Israel (Tel Aviv) | ✓ | ✓ |  |  |  |  |

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 # Deployment Steps
 
-## Step 1: Launch stack
+## Step 1: Launch Stack
 <a name="step-1-launch-stack"></a>
 
  **Option 1: Launch directly in AWS Console**
@@ -52,7 +52,7 @@ Key parameters to configure:
 
 | Parameter | Description | Default | Valid Values |
 | --- | --- | --- | --- |
-|  `DeploymentMode`  | Deployment environment – Dev or Prod. You can use this to configure scale and cost tendencies |  `dev`  |  `dev`, `prod`  |
+|  `DeploymentMode`  | Deployment environment – Dev, Prod, or Minimal. You can use this to configure scale and cost tendencies. Minimal is for accounts with reduced AWS service limits, and is intended only for short-term, very low volume, single-user trials. Dev or Prod is almost always more appropriate. For more information, see [Deployment Modes](planning-prerequisites.md#deployment-modes). |  `Dev`  |  `Dev`, `Prod`, `Minimal`  |
 
 Optional Parameters
 

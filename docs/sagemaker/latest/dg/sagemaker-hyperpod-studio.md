@@ -4,9 +4,11 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 
 # HyperPod in Studio
 
-You can launch machine learning workloads on Amazon SageMaker HyperPod clusters and view HyperPod cluster information in Amazon SageMaker Studio. The increased visibility into cluster details and hardware metrics can help your team identify the right candidate for your pre-training or fine-tuning workloads.
+You can run machine learning workloads on Amazon SageMaker HyperPod clusters and view HyperPod cluster information in Amazon SageMaker Studio. The increased visibility into cluster details and hardware metrics can help your team identify the right candidate for your pre-training or fine-tuning workloads.
 
-A set of commands are available to help you get started when you launch Studio IDEs on a HyperPod cluster. You can work on your training scripts, use Docker containers for the training scripts, and submit jobs to the cluster, all from within the Studio IDEs. The following sections provide information on how to set this up, how to discover clusters and monitor their tasks, how to view cluster information, and how to connect to HyperPod clusters in IDEs within Studio.
+For Amazon EKS clusters, HyperPod in Studio provides a unified environment for training job submission, model deployment, Studio IDE access, cluster domain configuration, task priority management, and workload observability.
+
+The following sections cover setting up HyperPod in Studio, discovering clusters and viewing cluster information, submitting and managing training jobs and model deployments, and connecting to HyperPod clusters in IDEs.
 
 **Topics**
 + [Setting up HyperPod in Studio](sagemaker-hyperpod-studio-setup.md)

@@ -7,20 +7,20 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 The following section lists troubleshooting solutions for HyperPod in Studio.
 
 **Topics**
-+ [Tasks tab](#sagemaker-hyperpod-studio-troubleshoot-tasks)
++ [Workloads tab](#sagemaker-hyperpod-studio-troubleshoot-tasks)
 + [Metrics tab](#sagemaker-hyperpod-studio-troubleshoot-metrics)
 
-## Tasks tab
+## Workloads tab
 <a name="sagemaker-hyperpod-studio-troubleshoot-tasks"></a>
 
-If you get `Custom Resource Definition (CRD) is not configured on the cluster` while in the **Tasks** tab.
+If you get `Custom Resource Definition (CRD) is not configured on the cluster` while in the **Workloads** tab.
 + Grant `EKSAdminViewPolicy` and `ClusterAccessRole` policies to your domain execution role.
 
   For information on how to add tags to your execution role, see [Tag IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags_roles.html).
 
   To learn how to attach policies to an IAM user or group, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).
 
-If the tasks grid for Slurm metrics doesn’t stop loading in the **Tasks** tab.
+If the tasks grid for Slurm metrics doesn’t stop loading in the **Workloads** tab.
 + Ensure that `RunAs` enabled in your [AWS Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) preferences and the role you are using has the `SSMSessionRunAs` tag attached.
   + To enable `RunAs`, navigate to the **Preference** tab in the [Systems Manager console](https://console.aws.amazon.com/systems-manager/session-manager).
   +  [Turn on Run As support for Linux and macOS managed nodes](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-preferences-run-as.html)

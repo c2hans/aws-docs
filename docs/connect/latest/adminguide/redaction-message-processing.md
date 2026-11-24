@@ -43,7 +43,7 @@ When both built-in redaction and a custom message processor are enabled simultan
 <a name="redaction-message-processing-configure"></a>
 
 You can enable message processing using either of the following methods:
-+ **Flow block** – Use the **Set recording, analytics and processing behavior** flow block. For more information, see [Flow block in Connect Customer: Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md).
++ **Flow block** – Use the **Set recording, analytics, and processing behavior** flow block. For more information, see [Flow block in Connect Customer: Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md).
 + **API** – Call the `StartContactMediaProcessing` API for programmatic activation. For more information, see [StartContactMediaProcessing](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactMediaProcessing.html) in the *Connect Customer API Reference*.
 
 To stop message processing before the chat ends, call the `StopContactMediaProcessing` API. For more information, see [StopContactMediaProcessing](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactMediaProcessing.html) in the *Connect Customer API Reference*.
@@ -54,7 +54,7 @@ The `StartContactMediaProcessing` and `StopContactMediaProcessing` APIs are for 
 ## Enable built-in sensitive data redaction
 <a name="redaction-message-processing-builtin"></a>
 
-In-flight sensitive data redaction is powered by Conversational Analytics. To enable it, configure the **Set recording, analytics and processing behavior** flow block with the following settings:
+In-flight sensitive data redaction is powered by Conversational Analytics. To enable it, configure the **Set recording, analytics, and processing behavior** flow block with the following settings:
 
 1. **Select Action**: Choose `Set recording and analytics behavior`.
 
@@ -64,7 +64,7 @@ In-flight sensitive data redaction is powered by Conversational Analytics. To en
 
 1. Under **Configure Conversational Analytics** > **Redaction** > **In-flight message redaction**: Select **Enable in-flight redaction**.
 
-![The Set recording, analytics and processing behavior flow block configured with conversational analytics enabled for chat.](https://docs.aws.amazon.com/connect/latest/adminguide/images/message-processing-enable-analytics.png)
+![The Set recording, analytics, and processing behavior flow block configured with conversational analytics enabled for chat.](https://docs.aws.amazon.com/connect/latest/adminguide/images/message-processing-enable-analytics.png)
 
 ![The in-flight message redaction configuration with redaction enabled.](https://docs.aws.amazon.com/connect/latest/adminguide/images/message-processing-redaction-config.png)
 
@@ -145,7 +145,7 @@ Choose one of the following methods to activate your custom processor:
 
 **Option 1: Use the flow block**
 
-Configure the **Set recording, analytics and processing behavior** flow block with the following settings:
+Configure the **Set recording, analytics, and processing behavior** flow block with the following settings:
 
 1. **Select Action**: Choose `Set message processor`.
 
@@ -159,7 +159,7 @@ Configure the **Set recording, analytics and processing behavior** flow block wi
 
 **Option 2: Use the StartContactMediaProcessing API**
 
-![The Set recording, analytics and processing behavior flow block configured with Set message processor action for chat.](https://docs.aws.amazon.com/connect/latest/adminguide/images/message-processing-activate-flow-block.png)
+![The Set recording, analytics, and processing behavior flow block configured with Set message processor action for chat.](https://docs.aws.amazon.com/connect/latest/adminguide/images/message-processing-activate-flow-block.png)
 
 Alternatively, you can activate message processing by calling the `StartContactMediaProcessing` API. This requires your instance ID, the chat's contact ID, the Lambda processor ARN, and a failure mode. For more information, see [StartContactMediaProcessing](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactMediaProcessing.html) in the *Connect Customer API Reference*.
 
@@ -174,6 +174,6 @@ Alternatively, you can activate message processing by calling the `StartContactM
 ### Important considerations
 <a name="redaction-message-processing-considerations"></a>
 + Message processing stays active for the entire duration of the chat, even if an individual contact segment ends (for example, during a transfer).
-+ `StartContactMediaProcessing` and the **Set recording, analytics and processing behavior** flow block do not retroactively process prior messages.
++ `StartContactMediaProcessing` and the **Set recording, analytics, and processing behavior** flow block do not retroactively process prior messages.
 + To stop message processing before the chat ends, call the [StopContactMediaProcessing](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactMediaProcessing.html) API.
 + Message processing is not available in the AWS GovCloud (US-West) Region.

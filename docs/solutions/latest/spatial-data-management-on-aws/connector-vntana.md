@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-vntana.html
 ---
 
-# Integrating with VNTANA for 3D optimization
+# Integrating with VNTANA for 3D Optimization
 
  [VNTANA](https://aws.amazon.com/marketplace/pp/prodview-ooio3bidshgy4), available on AWS Marketplace, provides automated 3D model optimization — converting CAD files into web-ready formats like glTF/GLB, USDZ, FBX, and generating thumbnails, all through a containerized processing pipeline. The VNTANA connector for SDMA brings this capability directly into your governed asset workflow. The connector uses SDMA’s [connector framework](connectors.md) and runs processing jobs through [AWS Deadline Cloud](connector-deadline-cloud.md).
 
@@ -10,7 +10,7 @@ When a CAD file (`.zip`, `.stp`, `.stl`, or other supported formats) is uploaded
 
 This means a template author can define once that "all CAD uploads in this project get optimized by VNTANA" — and every asset created under that template gets web-ready 3D previews, format conversions, and thumbnails automatically from the moment of ingestion. No manual processing, no separate tools, no ungoverned side channels.
 
-## How it works
+## How It Works
 <a name="vntana-how-it-works"></a>
 
 The VNTANA connector uses a Deadline-to-ECS bridge pattern:
@@ -25,7 +25,7 @@ The VNTANA connector uses a Deadline-to-ECS bridge pattern:
 
 1. GLB and other preview-capable formats are marked as previews, making them immediately viewable in the Spatial Data Portal.
 
-## Setup and installation
+## Setup and Installation
 <a name="vntana-setup"></a>
 
 VNTANA provides an open-source CDK package that deploys the ECS infrastructure, staging buckets, and connector configuration into your SDMA account. The full installation guide — including IAM role setup, stack deployment, connector registration, and template wiring — is available at:
@@ -38,7 +38,7 @@ The quickstart covers:
 + Registering the connector in SDMA and wiring it to an asset template.
 + Verifying end-to-end by uploading a CAD file and watching the job complete.
 
-## What the connector looks like
+## What the Connector Looks Like
 <a name="vntana-connector-shape"></a>
 
 The VNTANA quickstart generates the connector configuration automatically. You do not need to write it by hand. The generated connector has the following shape:

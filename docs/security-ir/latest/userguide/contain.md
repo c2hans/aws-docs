@@ -13,6 +13,25 @@ An essential part of containment is deciding whether to shut down a system, isol
 
 These decisions become easier when you have predetermined strategies and procedures. The service uses a combination of your containment preferences (configured during onboarding), the nature of the threat, and real-time analysis to determine the appropriate response.
 
+## Define containment action preferences
+<a name="define-containment-action-preferences"></a>
+
+**Important**
+AWS Security Incident Response doesn't enable containment capabilities by default. You must explicitly authorize containment actions through your containment preferences.
+
+To authorize Security Incident Response engineers to perform containment actions on your behalf, you must deploy an [AWS CloudFormation StackSet](working-with-stacksets.md) that creates the required AWS Identity and Access Management (IAM) roles. You must also define your organization-level or account-level containment preferences. Account-level preferences supersede organization-level preferences.
+
+Security Incident Response supports three containment options:
++ **Approval required** (default): No containment action without your explicit case-by-case authorization.
++ **Contain confirmed**: Proactive containment of resources confirmed as affected.
++ **Contain suspected**: Proactive containment of resources with a high likelihood of being affected.
+
+To set or update your containment preference, create an AWS Support case with case type **Technical: Security Incident Response Service / Other**. In your case, specify the following information:
++ Your AWS Organizations ID or the specific account IDs where containment actions should be authorized.
++ Your preferred containment option.
+
+After your preference is configured, Security Incident Response runs the supported containment actions during active security incidents to help protect your environment.
+
 ## Supported containment actions
 <a name="supported-containment-actions"></a>
 

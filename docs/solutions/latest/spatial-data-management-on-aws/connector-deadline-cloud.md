@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-deadline-cloud.html
 ---
 
-# Create and transform content with AWS Deadline Cloud
+# Create and Transform Content with AWS Deadline Cloud
 
 The AWS Deadline Cloud connector submits compute jobs to [AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/what-is-deadline-cloud.html).
 
@@ -17,9 +17,9 @@ The Deadline Cloud connector uses the `deadlineJob` step type. Unlike other step
 **Important**
 Deadline Cloud connectors execute the job templates you provide. SDMA does not validate or inspect job logic — that responsibility falls on the customer side of the shared responsibility model. Deadline Cloud provides its own execution isolation, IAM model, and job lifecycle management. Test job templates thoroughly in a non-production environment before enabling them.
 
-Filters, `output` blocks, `${…​}` variables, and type suffixes such as `:number` work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), and [Type coercion](connector-configuration.md#type-coercion).
+Filters, `output` blocks, `${…​}` variables, and type suffixes such as `:number` work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), [Variable Substitution](connector-configuration.md#variable-substitution), and [Type Coercion](connector-configuration.md#type-coercion).
 
-## How it works
+## How It Works
 <a name="deadline-how-it-works"></a>
 
 When a trigger matches an event, the Deadline Cloud connector performs the following steps:
@@ -45,7 +45,7 @@ When a trigger matches an event, the Deadline Cloud connector performs the follo
 
 Open Job Description matters for SDMA because it provides a declarative, portable, and auditable way to define processing jobs. Rather than writing code that calls AWS APIs directly, you write a job template that describes the work. The template declares what parameters it takes, what scripts to run, what files it needs, and where to write outputs. Because the template is declarative, you can review, version, and inspect it without reading implementation code. SDMA handles the submission, file attachment, and result ingestion around that template. This means you can test the same job template locally using the [Open Job Description CLI](https://github.com/OpenJobDescription/openjd-cli), iterate on it independently of SDMA, and version it as an asset within SDMA alongside the scripts and resources it depends on.
 
-### Key concepts
+### Key Concepts
 <a name="_key-concepts"></a>
 
 A job template defines the runtime environment and the processes that run as part of a Deadline Cloud job. You can write job templates in YAML (`template.yaml`) or JSON (`template.json`). A job template contains:
@@ -57,14 +57,14 @@ A job template defines the runtime environment and the processes that run as par
 
 For a full introduction to job template authoring, see [Job template elements for job bundles](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/build-job-bundle-template.html) in the Deadline Cloud Developer Guide. The Open Job Description specification repository provides deeper guides: [How Jobs Are Constructed](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Constructed), [How Jobs Are Run](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run), and the [Introduction to Creating a Job](https://github.com/OpenJobDescription/openjd-specifications/wiki/Introduction-to-Creating-a-Job) tutorial. The [Template Schemas](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas) reference provides the formal specification for all template elements.
 
-For details on how SDMA assembles job bundles and maps configuration to Open Job Description concepts, see [Job template configuration](#deadline-template-modes) and [Configuration fields](#deadline-config-fields).
+For details on how SDMA assembles job bundles and maps configuration to Open Job Description concepts, see [Job Template Configuration](#deadline-template-modes) and [Configuration Fields](#deadline-config-fields).
 
-## Walkthrough: TIF to Cloud-Optimized GeoTIFF conversion
+## Walkthrough: TIF to Cloud-Optimized GeoTIFF Conversion
 <a name="deadline-walkthrough"></a>
 
 This walkthrough shows how to set up a Deadline Cloud connector that automatically converts uploaded GeoTIFF files to Cloud-Optimized GeoTIFF (COG) format. When a `.tif` file is uploaded to an asset, the connector submits a job that runs a Python conversion script on Deadline Cloud workers and writes the COG back as a derived file.
 
-### Step 1: Create the IAM role
+### Step 1: Create the IAM Role
 <a name="_step-1-create-the-iam-role"></a>
 
 Create an IAM role that SDMA can assume to submit jobs to your Deadline Cloud farm. The role needs:
@@ -129,7 +129,7 @@ aws lambda get-function \
 }
 ```
 
-### Step 2: Upload the job template and scripts
+### Step 2: Upload the Job Template and Scripts
 <a name="_step-2-upload-the-job-template-and-scripts"></a>
 
 Create a project and asset in SDMA to hold your job template and any supporting scripts. This asset becomes the template asset that the connector references. Take care with project access — anyone who can modify this asset can change what the connector executes.
@@ -211,7 +211,7 @@ overview_levels, compression = sys.argv[3], sys.argv[4]
 
 The script receives its arguments from the job template’s `{{Param.*}}` references. It reads the input file from the path SDMA staged and writes the COG to the output directory. Deadline Cloud’s job attachments system then uploads the result to S3 for SDMA to ingest and store in the asset.
 
-### Step 3: Create the connector
+### Step 3: Create the Connector
 <a name="_step-3-create-the-connector"></a>
 
 In the Spatial Data Portal, go to **Library settings** > **Content** > **Connectors** > **Derive content** > **Create deriver**. Select **AWS Deadline Cloud** as the connector type and paste the following configuration:
@@ -254,12 +254,12 @@ In the Spatial Data Portal, go to **Library settings** > **Content** > **Connect
 }
 ```
 
-### Step 4: Approve the connector on a template
+### Step 4: Approve the Connector on a Template
 <a name="_step-4-approve-the-connector-on-a-template"></a>
 
 In the Spatial Data Portal, go to **Library settings** > **Content** > **Asset templates** and modify the template that governs your GeoTIFF assets to include the connector. From that point on, the connector automatically converts every `.tif` file uploaded to an asset under that template to COG format. SDMA writes the COG back as a derived file with provenance linking it to the job that produced it.
 
-### What happens at runtime
+### What Happens at Runtime
 <a name="_what-happens-at-runtime"></a>
 
 1. A user uploads a `.tif` file to an asset.
@@ -274,24 +274,24 @@ In the Spatial Data Portal, go to **Library settings** > **Content** > **Asset t
 
 1. SDMA reads the job’s output manifest, matches the `.tif` output against the declared `derivedFiles` filter, and ingests the COG as a derived file on the asset.
 
-1. The COG raises an `upload` event on a `derivedFile` resource, which the next connector, such as a publish connector, can match (see [Chaining connectors](connector-configuration.md#chaining-connectors)). The source `.tif` file raises `derivationComplete`.
+1. The COG raises an `upload` event on a `derivedFile` resource, which the next connector, such as a publish connector, can match (see [Chaining Connectors](connector-configuration.md#chaining-connectors)). The source `.tif` file raises `derivationComplete`.
 
-## Getting started
+## Getting Started
 <a name="deadline-getting-started"></a>
 
-The [Walkthrough: TIF to Cloud-Optimized GeoTIFF conversion](#deadline-walkthrough) walks through each of these steps in detail. At a high level:
+The [Walkthrough: TIF to Cloud-Optimized GeoTIFF Conversion](#deadline-walkthrough) walks through each of these steps in detail. At a high level:
 
-1.  **Deadline Cloud farm and queue** — Use the defaults SDMA deploys, or create your own. The queue’s job attachments must point to the SDMA CAS bucket — see [Deadline Cloud infrastructure](#deadline-infrastructure).
+1.  **Deadline Cloud farm and queue** — Use the defaults SDMA deploys, or create your own. The queue’s job attachments must point to the SDMA CAS bucket — see [Deadline Cloud Infrastructure](#deadline-infrastructure).
 
 1.  **IAM role** — Create a role starting with `SpatialDataManagementContentDerivation-` that the SDMA solution account can assume. Grant `deadline:CreateJob`, `deadline:GetJob`, and `deadline:GetQueue` on your farm and queue. See [Step 1](#deadline-walkthrough) for the trust and permissions policies.
 
-1.  **Job template** — Write an Open Job Description template and upload it (with any supporting scripts) as an SDMA asset. See [Open Job Description](#deadline-openjd) for the key concepts and [Required parameters](#deadline-required-parameters) for the parameters SDMA auto-injects.
+1.  **Job template** — Write an Open Job Description template and upload it (with any supporting scripts) as an SDMA asset. See [Open Job Description](#deadline-openjd) for the key concepts and [Required Parameters](#deadline-required-parameters) for the parameters SDMA auto-injects.
 
 1.  **Connector configuration** — In the Spatial Data Portal, go to **Library settings** > **Content** > **Connectors** > **Derive content** > **Create deriver**. Select **AWS Deadline Cloud**, paste your configuration JSON, and create.
 
 1.  **Template approval** — Add the connector ID to the `permittedConnectorIds` list on the asset template that should trigger jobs.
 
-## Job template configuration
+## Job Template Configuration
 <a name="deadline-template-modes"></a>
 
 SDMA loads job templates from SDMA assets and supports two template configuration modes.
@@ -303,7 +303,7 @@ A [job bundle](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/
 
 Deadline Cloud is directly compatible with SDMA’s content-addressable storage (CAS). When configuring Deadline Cloud, you grant access to the S3 bucket and prefix containing SDMA’s CAS. When running jobs, Deadline Cloud loads asset content onto its workers seamlessly using manifest references — no transfer step is necessary because the files are already in S3. Deadline Cloud writes job outputs back to CAS, and SDMA ingests them into the governed asset record if they match predefined output filters.
 
-### Template asset mode (recommended)
+### Template Asset Mode (Recommended)
 <a name="_template-asset-mode-recommended"></a>
 
 Use the `templateAsset` block to reference an SDMA asset containing the job template and any supporting files. SDMA attaches the entire asset to the Deadline Cloud job as a job attachment, so the template can reference scripts, configuration files, or other resources stored alongside it.
@@ -332,7 +332,7 @@ In this mode, SDMA builds a multi-manifest job attachment with stable mount path
 
 These mount paths are deterministic, so your job template can reference files at known locations using the auto-injected `PATH` parameters (`InputFile`, `WorkspacePath`, `BundlePath`).
 
-### Simple mode
+### Simple Mode
 <a name="_simple-mode"></a>
 
 Use `templateProjectId` and `templateAssetId` to reference the template asset directly. This mode uses a single-manifest attachment with the asset’s original root path.
@@ -353,7 +353,7 @@ Use `templateProjectId` and `templateAssetId` to reference the template asset di
 **Note**
 Template asset mode and simple mode are mutually exclusive. Use template asset mode for new connectors — it provides stable mount paths and supports multi-asset jobs.
 
-## Required parameters
+## Required Parameters
 <a name="deadline-required-parameters"></a>
 
 Any job template used with an SDMA Deadline Cloud connector must declare the following parameters. SDMA auto-injects values for these at submission time. Your template does not need to use all of them in its scripts, but it must declare them so that Deadline Cloud accepts the values SDMA provides.
@@ -388,7 +388,7 @@ parameterDefinitions:
 **Important**
 If your job template omits any of these parameter declarations, Deadline Cloud rejects the job at submission time because SDMA always passes values for all of them.
 
-## Job parameters
+## Job Parameters
 <a name="deadline-parameters"></a>
 
 The `parameters` block in the trigger-level `deadlineJob` configuration passes values for the parameters declared in your job template. Parameter values support `${variable}` substitution from SDMA resource metadata.
@@ -406,7 +406,7 @@ The `parameters` block in the trigger-level `deadlineJob` configuration passes v
 
 SDMA passes these values to the Deadline Cloud [CreateJob](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html) API, and they become available in your job template via `{{Param.OutputFormat}}`, `{{Param.Quality}}`, and `{{Param.TileSize}}` variable references.
 
-### Parameter type annotations
+### Parameter Type Annotations
 <a name="_parameter-type-annotations"></a>
 
 Open Job Description job templates declare parameter types (`STRING`, `INT`, `FLOAT`, `PATH`), and the Deadline Cloud CreateJob API expects parameter values in a typed format. SDMA connector parameter values are strings by default. Use a postfix `:type` annotation to declare the Deadline Cloud wire type:
@@ -421,10 +421,10 @@ Use `:number` for parameters declared as `INT` or `FLOAT` in the job template. U
 
 SDMA treats colons that are not a recognized type suffix as literal characters. For example, `s3://bucket/key` is unaffected because `//bucket/key` is not a recognized suffix.
 
-## Output configuration
+## Output Configuration
 <a name="deadline-outputs"></a>
 
-A Deadline Cloud job routes its results with the same `output` block as every other step type, placed inside the trigger-level `deadlineJob`. For the output targets and how `fieldMappings` work, see [Output routing](connector-configuration.md#output-routing). This section covers what is specific to Deadline Cloud: how SDMA chooses which of a job’s files to ingest.
+A Deadline Cloud job routes its results with the same `output` block as every other step type, placed inside the trigger-level `deadlineJob`. For the output targets and how `fieldMappings` work, see [Output Routing](connector-configuration.md#output-routing). This section covers what is specific to Deadline Cloud: how SDMA chooses which of a job’s files to ingest.
 
 A job writes its outputs to the `WorkspacePath` directory. When the job completes, Deadline Cloud job attachments upload the outputs to Amazon S3, and SDMA reads the job’s output manifest. A `rest` or `lambdaInvoke` step names where its results are, with `s3Uri`. A Deadline Cloud job instead names nothing, so each output entry uses a `filter` to choose files from the manifest.
 
@@ -440,14 +440,14 @@ A job writes its outputs to the `WorkspacePath` directory. When the job complete
 }
 ```
 
-### How SDMA selects output files
+### How SDMA Selects Output Files
 <a name="deadline-output-selection"></a>
-+  **Filters.** An output entry’s `filter` supports the trigger filter fields: `fileExtensionFilter`, `fileNameRegex`, `pathRegex`, `minFileSizeMB`, and `maxFileSizeMB` (see [Trigger filters](connector-configuration.md#trigger-filters)).
-+  **Targets.** `derivedFiles`, `siblingDerivedFiles`, `files`, and `metadataAttributes` select files from the manifest. On a project trigger, `assets` selects asset envelope files (see [Creating assets from connector output](connector-configuration.md#creating-assets)). A Deadline Cloud job on an asset trigger does not create assets from its output. To create assets from an asset, use a `rest`, `lambdaInvoke`, or `wait` step instead.
++  **Filters.** An output entry’s `filter` supports the trigger filter fields: `fileExtensionFilter`, `fileNameRegex`, `pathRegex`, `minFileSizeMB`, and `maxFileSizeMB` (see [Trigger Filters](connector-configuration.md#trigger-filters)).
++  **Targets.** `derivedFiles`, `siblingDerivedFiles`, `files`, and `metadataAttributes` select files from the manifest. On a project trigger, `assets` selects asset envelope files (see [Creating Assets from Connector Output](connector-configuration.md#creating-assets)). A Deadline Cloud job on an asset trigger does not create assets from its output. To create assets from an asset, use a `rest`, `lambdaInvoke`, or `wait` step instead.
 +  **One target for each file.** When a file matches more than one target, the first match wins, in this order: `files`, `siblingDerivedFiles`, `derivedFiles`.
 +  **Undeclared files are skipped.** SDMA ignores a file that matches no output entry, with one exception: files named by the built-in conventions. A file whose name contains `spatial_data_mgmt_metadata` is always read as a metadata document, and a file whose name contains `spatial_data_mgmt_preview` is always ingested as a derived file.
 
-### Writing metadata from a job
+### Writing Metadata from a Job
 <a name="deadline-output-metadata"></a>
 
 A job writes metadata as a JSON file in its output directory. The `metadataAttributes` target reads that file, and its `fieldMappings` take their `source` from the file’s top-level fields.
@@ -476,7 +476,7 @@ Each value updates an attribute that already exists rather than adding a second 
 
 A file named `spatial_data_mgmt_metadata.json` is read even without a `metadataAttributes` target. Without one, SDMA writes its values as suggestions on the triggering file, for a user to review. With a `metadataAttributes` target, SDMA applies its `fieldMappings` and writes the values as confirmed attributes. The `filter` is optional for this file name, but if you declare one, the file must match it.
 
-## Additional assets
+## Additional Assets
 <a name="deadline-additional-assets"></a>
 
 In template asset mode, you can attach additional SDMA assets to the job as extra job attachments. Use this when a job needs access to shared libraries, reference data, or other assets beyond the triggering asset and the template.
@@ -503,10 +503,10 @@ In template asset mode, you can attach additional SDMA assets to the job as extr
 **Note**
 SDMA currently resolves additional assets from the triggering asset’s project. SDMA accepts the `projectId` field for forward compatibility but does not yet use it for cross-project resolution.
 
-## More configuration examples
+## More Configuration Examples
 <a name="deadline-more-examples"></a>
 
-### As a step in a multi-step connector
+### As a Step in a Multi-Step Connector
 <a name="_as-a-step-in-a-multi-step-connector"></a>
 
 You can also use the `deadlineJob` step type within the trigger\+steps model for multi-step workflows:
@@ -534,10 +534,10 @@ You can also use the `deadlineJob` step type within the trigger\+steps model for
 ]
 ```
 
-## Deadline Cloud infrastructure
+## Deadline Cloud Infrastructure
 <a name="deadline-infrastructure"></a>
 
-### Farms, queues, and fleets
+### Farms, Queues, and Fleets
 <a name="_farms-queues-and-fleets"></a>
 
 Deadline Cloud organizes compute resources into [farms, queues, and fleets](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/how-it-works.html). A farm is the top-level container. Queues hold submitted jobs and manage scheduling. Fleets provide the compute workers that execute jobs. For a full overview of these concepts, see [Concepts and terminology](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/concepts-terminology.html) in the Deadline Cloud Developer Guide.
@@ -552,7 +552,7 @@ Although Deadline Cloud lazy-loads content from S3 (only fetching files when the
 **Important**
 The Deadline Cloud [queue](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/queues.html) used by a connector must have its [job attachments configuration](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/storage-job-attachments.html) set to the same S3 bucket and root prefix as SDMA’s content-addressable storage. The queue’s IAM role must also have permission to read from and write to that bucket and prefix. Without this, Deadline Cloud cannot access asset content or write outputs back to SDMA.
 
-### Software and dependencies
+### Software and Dependencies
 <a name="_software-and-dependencies"></a>
 
 Deadline Cloud uses [queue environments](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs.html) to configure the software available to jobs. The default queue environment uses the [conda](https://docs.conda.io/en/latest/) package manager to install software into an isolated virtual environment for each session.
@@ -562,7 +562,7 @@ Job templates declare their dependencies using the `CondaPackages` parameter —
 + The [conda-forge](https://conda-forge.org/) channel — a community-maintained collection of open-source packages. To use conda-forge packages, set the `CondaChannels` parameter in your job template to include `conda-forge`.
 + Custom S3-hosted channels — for applications not available on public channels, you can [create a conda channel in Amazon S3](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/configure-jobs-s3-channel.html) and [build your own conda packages](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/conda-package.html). Add the S3 channel URL to the queue environment’s `CondaChannels` default so it is available to all jobs in that queue.
 
-### Licensed software
+### Licensed Software
 <a name="_licensed-software"></a>
 
 Deadline Cloud supports two approaches for using licensed software in jobs:
@@ -571,7 +571,7 @@ Deadline Cloud supports two approaches for using licensed software in jobs:
 
 Management of licensed software, runtime environments, and containers is outside SDMA’s scope. SDMA submits job configuration to Deadline Cloud; the queue environment and fleet configuration determine the software environment.
 
-## Step types
+## Step Types
 <a name="deadline-step-types"></a>
 
 The Deadline Cloud connector supports the following step type.
@@ -580,10 +580,10 @@ The Deadline Cloud connector supports the following step type.
 | --- | --- |
 |  `deadlineJob`  | Submits a job to Deadline Cloud using an Open Job Description job template. The job runs asynchronously in Deadline Cloud’s isolated compute environment. SDMA monitors completion through EventBridge lifecycle events and ingests declared outputs. |
 
-## Configuration fields
+## Configuration Fields
 <a name="deadline-config-fields"></a>
 
-### How SDMA maps to Open Job Description
+### How SDMA Maps to Open Job Description
 <a name="_how-sdma-maps-to-open-job-description"></a>
 
 When SDMA submits a job, it maps connector configuration to Open Job Description concepts as follows:
@@ -596,7 +596,7 @@ When SDMA submits a job, it maps connector configuration to Open Job Description
 |  `deadlineConfig.additionalAssets`  | Additional input manifests attached to the job |
 | Auto-injected parameters (for example, `InputFile`, `WorkspacePath`) |  `PATH`-typed parameters that reference the worker’s local mount paths |
 
-### Connector-level fields (`deadlineConfig`)
+### Connector-Level Fields (`deadlineConfig`)
 <a name="_connector-level-fields-deadlineconfig"></a>
 
 | Field | Required | Description |
@@ -610,10 +610,10 @@ When SDMA submits a job, it maps connector configuration to Open Job Description
 |  `deadlineConfig.templateAssetId`  | Yes (simple mode) | Asset ID for the template asset. Mutually exclusive with `templateAsset`. |
 |  `deadlineConfig.additionalAssets`  | No | Array of additional SDMA assets to attach to the job as job attachments. Each entry requires `assetId`. `rootPath` is optional (defaults to `/sdma/assets/<assetId>`). |
 |  `deadlineConfig.maxRetriesPerTask`  | No | Per-task retry limit passed to Deadline Cloud. Defaults to `1`. |
-|  `deadlineConfig.maxFailedTasksCount`  | No | Maximum failed tasks before the job is cancelled. If omitted, the Deadline Cloud default applies. |
+|  `deadlineConfig.maxFailedTasksCount`  | No | Maximum failed tasks before the job is canceled. If omitted, the Deadline Cloud default applies. |
 |  `deadlineConfig.deadlineMonitorUrl`  | No | Base URL for Deadline Cloud Monitor. Used to generate a direct link to the job in the Spatial Data Portal if required. |
 
-### Trigger-level fields (`deadlineJob`)
+### Trigger-Level Fields (`deadlineJob`)
 <a name="_trigger-level-fields-deadlinejob"></a>
 
 | Field | Required | Description |
@@ -625,7 +625,7 @@ When SDMA submits a job, it maps connector configuration to Open Job Description
 |  `deadlineJob.output.files`  | No | Array of regular file output declarations. Each entry has a `filter`. |
 |  `deadlineJob.output.metadataAttributes`  | No | Metadata output declaration with a `filter` and optional `fieldMappings`. |
 
-## Job completion and output ingestion
+## Job Completion and Output Ingestion
 <a name="deadline-completion"></a>
 
 When a Deadline Cloud job completes, the following occurs:
@@ -636,18 +636,18 @@ When a Deadline Cloud job completes, the following occurs:
 
 1. If the job succeeded, SDMA reads the job’s output manifest from S3.
 
-1. SDMA selects output files as described in [How SDMA selects output files](#deadline-output-selection), and routes them to the asset as derived files, files, metadata, or assets.
+1. SDMA selects output files as described in [How SDMA Selects Output Files](#deadline-output-selection), and routes them to the asset as derived files, files, metadata, or assets.
 
 1. SDMA updates the connector invocation status to `SUCCEEDED` or `FAILED`.
 
-1. Each new derived file raises an `upload` event on a `derivedFile` resource, which can start the next connector. If the job succeeded and was started from a file, that file also raises `derivationComplete`. For more information, see [Chaining connectors](connector-configuration.md#chaining-connectors).
+1. Each new derived file raises an `upload` event on a `derivedFile` resource, which can start the next connector. If the job succeeded and was started from a file, that file also raises `derivationComplete`. For more information, see [Chaining Connectors](connector-configuration.md#chaining-connectors).
 
-## Security model
+## Security Model
 <a name="deadline-security"></a>
 
 The Deadline Cloud connector follows the same security model as other SDMA connectors, with additional considerations for compute workloads.
 
-### IAM role
+### IAM Role
 <a name="_iam-role"></a>
 
 SDMA uses the IAM role specified in `deadlineConfig.securityConfig.assumeRoleArn` for all Deadline Cloud API calls (job submission, status queries). This role must:
@@ -655,7 +655,7 @@ SDMA uses the IAM role specified in `deadlineConfig.securityConfig.assumeRoleArn
 + Have permissions to create and query jobs on the specified farm and queue.
 + Be assumable by the SDMA solution account.
 
-### Shared responsibility
+### Shared Responsibility
 <a name="_shared-responsibility"></a>
 
 SDMA submits job configuration to Deadline Cloud but does not execute, sandbox, or inspect job logic. The security of what a job does is the customer’s responsibility:
@@ -664,15 +664,15 @@ SDMA submits job configuration to Deadline Cloud but does not execute, sandbox, 
 +  **Runtime dependencies** — Management of containers, licensed software, or runtime environments is outside SDMA’s scope. See the Deadline Cloud documentation on [workloads](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/what-is-a-deadline-cloud-workload.html) for guidance on configuring worker environments.
 +  **Fleet configuration** — You manage Deadline Cloud farm and queue sizing, concurrency limits, and cost controls in your Deadline Cloud configuration.
 
-### Output ingestion safety
+### Output Ingestion Safety
 <a name="_output-ingestion-safety"></a>
 
 SDMA enforces strict output ingestion controls:
-+ SDMA ingests only files that match a declared output entry, plus files named by the built-in conventions (see [How SDMA selects output files](#deadline-output-selection)).
++ SDMA ingests only files that match a declared output entry, plus files named by the built-in conventions (see [How SDMA Selects Output Files](#deadline-output-selection)).
 + SDMA only accepts outputs when correlated to a known, active connector invocation.
 + SDMA ignores events that cannot be correlated to a known invocation.
 
-## Error handling
+## Error Handling
 <a name="deadline-error-handling"></a>
 
 The following table describes common Deadline Cloud connector errors and their resolution.
@@ -688,9 +688,9 @@ The following table describes common Deadline Cloud connector errors and their r
 | Output | No output filters configured | SDMA skips all outputs. Add `derivedFiles`, `files`, or `metadataAttributes` entries to the `output` block. |
 | Output | File extension not in allowlist | The output file’s extension does not match any declared filter. Add the appropriate `fileExtensionFilter` to the `output` block. |
 
-If a Deadline Cloud connector repeatedly fails, the connector’s failure policy (if configured) may automatically disable the connector to prevent runaway resubmission. See [Failure policy](connector-configuration.md#failure-policy) in the connectors overview.
+If a Deadline Cloud connector repeatedly fails, the connector’s failure policy (if configured) may automatically disable the connector to prevent runaway resubmission. See [Failure Policy](connector-configuration.md#failure-policy) in the connectors overview.
 
-## Further reading
+## Further Reading
 <a name="deadline-further-reading"></a>
 +  [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications) — The specification repository, including the formal template schemas and design documentation.
 +  [How Jobs Are Constructed](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Constructed) — Open Job Description guide explaining job template structure, parameters, steps, tasks, and environments.

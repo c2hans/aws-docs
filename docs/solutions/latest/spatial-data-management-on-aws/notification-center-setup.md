@@ -2,10 +2,14 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/notification-center-setup.html
 ---
 
-# Setting up notification rules
+# Setting Up Notification Rules
 
 ## Prerequisites
 <a name="_prerequisites"></a>
+
+ **For Slack and email notifications:**
+
+Slack and email channels send through an IAM role in your account. The connector must define a `securityConfig` that assumes that role. The role name must start with `SpatialDataManagementContentPublisher-`, and its trust policy must allow the SDMA connector invocation role to assume it. If the role cannot be assumed, SDMA does not save the connector, and the error names the role to add to the trust policy. For more information, see [Security Configuration](connector-configuration.md#security-configuration).
 
  **For Slack notifications:**
 
@@ -13,7 +17,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 **Note**
 The secret must be in the **same AWS region** as the SDMA deployment. Cross-region secret access is not supported.
 
-1. Grant the SDMA connector invocation Lambda permission to read the secret:
+1. Allow the role that the connector assumes to read the secret:
 
    ```json
    {
@@ -32,11 +36,28 @@ The secret must be in the **same AWS region** as the SDMA deployment. Cross-regi
 
 Amazon SES must be configured in your AWS account with a verified sending identity. Recipients must have a verified email address in their Cognito user profile.
 
+Allow the role that the connector assumes to send email from the sending identity. In the following example, replace `<region>`, `<account-id>`, and `<sending-identity>` with your own values:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "ses:SendEmail",
+      "Resource": "arn:aws:ses:<region>:<account-id>:identity/<sending-identity>"
+    }
+  ]
+}
+```
+
+If SES denies any address, the delivery fails, and the invocation shows as failed in the Portal.
+
  **For in-app notifications:**
 
 No additional setup required. The notification inbox is available automatically after deployment.
 
-## Create a notification rule
+## Create a Notification Rule
 <a name="_create-a-notification-rule"></a>
 
 1. Create a connector with `"connectorType": "notification"` and `"direction": "publish"` at the library level. Specify the recipients, channel, and triggers in the `notificationConfig` block.
@@ -47,7 +68,7 @@ No additional setup required. The notification inbox is available automatically 
 
 Every delivery is recorded as a connector invocation — visible in the portal with status, timestamp, and result.
 
-## Deliver to multiple channels
+## Deliver to Multiple Channels
 <a name="_deliver-to-multiple-channels"></a>
 
 A notification rule targets exactly one channel. To deliver to multiple channels for the same event, create one rule per channel and associate all of them to the same template.
@@ -62,8 +83,10 @@ For example, to send both a Slack message and an in-app notification when an ass
 
 Each connector is dispatched independently — if the Slack delivery fails and retries, the in-app delivery is unaffected.
 
-## Example – alert owners when an asset fails quality checks (Slack)
+## Example – Alert Owners When an Asset Fails Quality Checks (Slack)
 <a name="_example-alert-owners-when-an-asset-fails-quality-checks-slack"></a>
+
+In the following example, replace `<account-id>`, `<region>`, and `<secret-name>` with your own values:
 
 ```json
 {
@@ -72,6 +95,10 @@ Each connector is dispatched independently — if the Slack delivery fails and r
   "direction": "publish",
   "enabled": true,
   "connectorConfig": {
+    "securityConfig": {
+      "type": "AssumeRole",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-Notifications"
+    },
     "notificationConfig": {
       "recipients": [
         {"role": "OWNER"}
@@ -98,7 +125,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 }
 ```
 
-## Example – in-app notification when a new asset is created
+## Example – In-App Notification When a New Asset Is Created
 <a name="_example-in-app-notification-when-a-new-asset-is-created"></a>
 
 ```json
@@ -115,7 +142,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
       ],
       "channels": [
         {"type": "inApp"}
-      ],
+      ]
     },
     "triggers": [
       {
@@ -128,7 +155,44 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 }
 ```
 
-## Example – multi-channel delivery (two rules, one template)
+## Example – Email a Team Alias When a File Is Added
+<a name="_example-email-a-team-alias-when-a-file-is-added"></a>
+
+```json
+{
+  "connectorName": "New File Alert — Email",
+  "connectorType": "notification",
+  "direction": "publish",
+  "enabled": true,
+  "connectorConfig": {
+    "securityConfig": {
+      "type": "AssumeRole",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-Notifications"
+    },
+    "notificationConfig": {
+      "recipients": [{"role": "OWNER"}],
+      "channels": [
+        {
+          "type": "email",
+          "senderEmail": "<verified-sender>",
+          "emailAddresses": ["site-surveys@example.com"]
+        }
+      ]
+    },
+    "triggers": [
+      {
+        "resources": ["file"],
+        "events": ["upload"],
+        "steps": [{"stepType": "notification"}]
+      }
+    ]
+  }
+}
+```
+
+This rule emails the project owners and the alias. To email only the alias, add `"includeRecipientEmails": false` to the channel.
+
+## Example – Multi-Channel Delivery (Two Rules, One Template)
 <a name="_example-multi-channel-delivery-two-rules-one-template"></a>
 
 Create two connectors — one per channel — and associate both to the same template:
@@ -140,6 +204,7 @@ Create two connectors — one per channel — and associate both to the same tem
   "connectorType": "notification",
   "direction": "publish",
   "connectorConfig": {
+    "securityConfig": {"type": "AssumeRole", "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-Notifications"},
     "notificationConfig": {
       "recipients": [{"role": "OWNER"}],
       "channels": [{"type": "slack", "webhookUrlSecretArn": "arn:aws:secretsmanager:<region>:<account-id>:secret:<slack-secret>"}]

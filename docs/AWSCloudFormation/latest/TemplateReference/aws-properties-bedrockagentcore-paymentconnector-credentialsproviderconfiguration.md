@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::BedrockAgentCore::PaymentConnector CredentialsProviderConfiguration
 
-The credential provider configuration for a payment connector. Specifies the payment provider type and its associated credential provider.
+The configuration for a payment connector. Specifies the payment provider type and either its associated credential provider or, for an AWS Billing payment connector, its billing configuration.
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-paymentconnector-credentialsproviderconfiguration-syntax"></a>

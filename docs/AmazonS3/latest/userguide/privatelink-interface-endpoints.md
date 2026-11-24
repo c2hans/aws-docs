@@ -57,8 +57,6 @@ Interface endpoints for Amazon S3 does not support the following:
 + Using [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) or [UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html) between buckets in different AWS Regions
 + Transport Layer Security (TLS) 1.0
 + Transport Layer Security (TLS) 1.1
-+ Transport Layer Security (TLS) 1.3
-+ Hybrid post-quantum Transport Layer Security (TLS)
 
 ## Creating a VPC endpoint
 <a name="s3-creating-vpc"></a>

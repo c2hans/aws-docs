@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/update-the-solution.html
 ---
 
-# Update the solution
+# Update the Solution
 
 This section describes how to update the Spatial Data Management Application to a newer version.
 

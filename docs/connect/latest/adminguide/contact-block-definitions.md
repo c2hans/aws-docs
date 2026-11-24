@@ -53,7 +53,7 @@ The following table lists all available flow blocks that you can use. Choose any
 |  [Set hold flow](set-hold-flow.md)  | Links from one flow type to another. |
 |  [Set logging behavior](set-logging-behavior.md)  | Enables flow logs so you can track events as contacts interact with flows. |
 |  [Set recording and analytics behavior](set-recording-behavior.md) | Sets options for recording conversations. |
-|  [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md)  | Sets options to configure recording behavior for agent and customer, enable automated interaction, enable screen recording, set analytics behavior for contacts, and set custom processing behavior. |
+|  [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md)  | Sets options to configure recording behavior for agent and customer, enable automated interaction, enable screen recording, set analytics behavior for contacts, and set custom processing behavior. |
 |  [Set routing criteria](set-routing-criteria.md)  | Sets routing criteria on contacts of any channel, such as Voice, Chat, and Task, to define how the contact should be routed within its queue. A routing criteria is a sequence of one or more routing steps. |
 | [Set Touchtone Buffer Behavior](set-touchtone-buffer-behavior.md) | Controls touchtone buffering behavior, enabling customers to type ahead during IVR interactions. |
 |  [Set Voice ID](set-voice-id.md)  | When the call is connected to a flow, sends audio to Connect Customer Voice ID to verify the caller's identity and match against fraudsters on a watch list.  |

@@ -8,6 +8,10 @@ The Deadline Cloud budget manager helps you control spending on a queue. You can
 
 Budgets use the same cost estimates as the usage explorer. Before you set a budget amount, review [How the usage explorer and budgets estimate costs](using-usage-explorer.md#manage-costs-assumptions) to understand how Deadline Cloud calculates the estimate. To understand why the estimate can differ from your AWS bill, see [Understand estimated and actual costs for Deadline Cloud](cost-management.md). To align usage explorer and budget estimates with your organization's pricing, see [Adjust usage explorer and budget estimates with the cost scale factor](using-usage-explorer.md#cost-scale-factor).
 
+A budget counts idle worker cost along with the cost of running tasks. Deadline Cloud counts the full idle cost of a fleet against every queue that is associated with the fleet. If queues share a fleet, each queue's budget counts that full cost, so a budget can reach its limit sooner.
+
+For a long-running idle worker, the idle cost updates periodically, not only when the worker stops. The usage explorer shows idle cost as a separate usage type.
+
 ![The budget manager showing active budgets with status, resource, remaining percentage, and remaining amount.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/monitor/budget-manager.png)
 
 To try the budget manager with sample data, open the [demo budget manager](https://_demo.us-east-1.deadlinecloud.amazonaws.com/us-west-2/farms/farm-94d29d9475dd814529b87a52f20ff9cb/budget?demo=moonrise).

@@ -31,6 +31,7 @@ For more information about patch releases and how to apply them, see [About patc
 <a name="AuroraMySQL.Updates.8410.NewFeatures"></a>
 + Aurora MySQL minor version upgrades to this release from version 8.4.7 or 8.4.8 now complete faster, allowing your writer instance to return to service sooner. No configuration changes or opt-in are required; the improvement is applied automatically.
 + Added support for tagged global transaction identifiers (GTIDs). This feature extends the GTID format to include a user-defined tag, so that transactions sharing the same source server UUID can be grouped and identified separately. A tagged GTID has the format UUID:TAG:NUMBER, where TAG is an alphanumeric label that you assign to a set of transactions. Use tagged GTIDs to distinguish transactions from different workloads or sources within complex replication topologies. For more information, see [Using GTID tags with an Aurora MySQL DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-replication-gtid.tags.html) in the *Amazon Aurora User Guide*.
++ Aurora Serverless now supports a maximum database capacity of 384 Aurora Capacity Units (ACUs) for Aurora MySQL, up from 256 ACUs. Each ACU provides 2 gibibytes (GiB) of memory with proportional CPU and networking so a single Aurora Serverless database can now scale to 768 GiB of memory.
 
 ### Improvements
 <a name="AuroraMySQL.Updates.8410.Improvements"></a>

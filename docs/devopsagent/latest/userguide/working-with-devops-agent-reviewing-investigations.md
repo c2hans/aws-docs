@@ -46,7 +46,7 @@ The following table describes how automatic Reviews work.
 | --- | --- |
 | When ticket closes | An automatic Review runs when the linked ServiceNow or PagerDuty ticket is resolved. Only investigations that started from that ticket and are complete when it's resolved are eligible. |
 | After investigation completes | An automatic Review runs 7 days after an investigation completes. This trigger covers all investigations. You can't change this delay. |
-| Sampling rate | The percentage of eligible investigations that get an automatic Review. One rate applies across both triggers. The default is 10 percent. A higher sampling rate reviews more of your investigations, which gives you more feedback on investigation quality. You can set a whole number from 1 to 100. For example, at 10 percent, about 1 in 10 eligible investigations gets an automatic Review. |
+| Sampling rate | The percentage of eligible investigations that get an automatic Review. One rate applies across both triggers. The default is 10 percent. During the preview of automatic Reviews, you can set a whole number from 1 to 10. A higher sampling rate reviews more of your investigations, which gives you more feedback on investigation quality. Higher sampling rates become configurable when automatic Reviews are generally available. For example, at 10 percent, about 1 in 10 eligible investigations gets an automatic Review. |
 | Default state | Automatic Reviews are on by default, with both triggers selected. |
 | Limit | Each investigation gets at most one automatic Review, even if you select both triggers. |
 
@@ -55,7 +55,7 @@ The following table describes how automatic Reviews work.
 ## Turn automatic Reviews on or off
 <a name="turn-automatic-reviews-on-or-off"></a>
 
-Turn off automatic Reviews if you only want Reviews that you launch yourself. Choose which triggers run automatic Reviews. Raise the sampling rate for broader coverage, or lower it to review fewer investigations.
+Turn off automatic Reviews if you only want Reviews that you launch yourself. Choose which triggers run automatic Reviews. Lower the sampling rate to review fewer investigations, or raise it, up to the 10 percent maximum during the preview, for broader coverage.
 
 You change these settings on the Grader agent's page in your Operator Web App.
 
@@ -69,7 +69,7 @@ To turn automatic Reviews on or off:
 
 1. In **Automated reviews**, turn **Enable automatic reviews** on or off.
 
-1. (Optional) For **Sampling rate**, enter a whole number from 1 to 100.
+1. (Optional) For **Sampling rate**, enter a whole number from 1 to 10. During the preview of automatic Reviews, 10 percent is the maximum.
 
 1. Under **When to review**, select one or more triggers: **When ticket closes**, **After investigation completes**, or both.
 

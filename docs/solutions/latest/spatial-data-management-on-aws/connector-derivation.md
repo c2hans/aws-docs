@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-derivation.html
 ---
 
-# Metadata lookup and enrichment
+# Metadata Lookup and Enrichment
 
 Metadata lookup is a role that S3, REST API, and DynamoDB connectors can fill. When a derive connector includes a `derivation` block in its trigger configuration, it uses the lookup-derivation execution model: fetch records from an external data source, match them to SDMA files or assets by a key field, and write the matched values as governed metadata attributes.
 
@@ -11,9 +11,9 @@ This is how you automate bulk metadata enrichment. A domain expert defines the e
 **Important**
 Derive connectors use the IAM role prefix `SpatialDataManagementContentDerivation-` (not `SpatialDataManagementContentPublisher-` used by publish connectors). SDMA validates the role name prefix and tests role assumption when the connector is created.
 
-Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), and [Variable Substitution](connector-configuration.md#variable-substitution).
 
-## Create a derive connector with lookup
+## Create a Derive Connector with Lookup
 <a name="derivation-create"></a>
 
 1. In the Spatial Data Portal, go to **Library settings** > **Connectors**.
@@ -35,7 +35,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 
 The connector type you select determines the protocol and authentication model. The `derivation` block in the trigger configuration is what makes it a lookup connector — the same S3, DynamoDB, or REST connector type can also fill publish, resource provision, or content production roles depending on its configuration.
 
-## Lookup operations
+## Lookup Operations
 <a name="derivation-operations"></a>
 
 The lookup-derivation model supports the following operations (used as the `derivation.op` value).
@@ -46,7 +46,7 @@ The lookup-derivation model supports the following operations (used as the `deri
 |  `restLookup`  | Calls a REST API endpoint and matches response records to resources. Useful for enriching metadata from external catalogs or databases. |
 |  `dynamodbLookup`  | Performs a GetItem on an Amazon DynamoDB table and applies the result to a resource. Useful for single-record lookups by key. |
 
-## Record matching
+## Record Matching
 <a name="derivation-matching"></a>
 
 The `applyTo` block controls how external records are matched to resources:
@@ -57,7 +57,7 @@ The `applyTo` block controls how external records are matched to resources:
 +  `mappingPolicy` – Controls how derived attributes interact with existing attributes: `inherit` (default) or `override`.
 +  `responseFieldMapping` – Maps external record fields to resource metadata attributes.
 
-## Amazon S3 lookup
+## Amazon S3 Lookup
 <a name="s3-lookup"></a>
 
 The `s3Lookup` operation reads a file from S3 and parses it into records. It supports CSV and JSON content types.
@@ -119,7 +119,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
      }
      ```
 
-### CSV options
+### CSV Options
 <a name="s3-lookup-csv-options"></a>
 
 For CSV files, the following options are available in the trigger-level `derivation.s3Config.csvOptions`:
@@ -170,7 +170,7 @@ This example reads a CSV file from S3 and applies metadata to files based on fil
 }
 ```
 
-## REST API lookup
+## REST API Lookup
 <a name="rest-lookup"></a>
 
 The `restLookup` operation calls a REST API endpoint and parses the response into records. It supports GET and POST methods, query parameter substitution, and response filtering.
@@ -286,7 +286,7 @@ This example calls a REST API to look up file metadata from an external catalog 
 
 The `responseFilter` field uses dot notation to extract a nested array from the API response (for example, `data.items` extracts the `items` array from `{ "data": { "items": […​] } }`).
 
-## Amazon DynamoDB lookup
+## Amazon DynamoDB Lookup
 <a name="ddb-lookup"></a>
 
 The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and returns the item as a single record. It automatically deserializes DynamoDB attribute types (S, N, BOOL, M, L) to native values.
@@ -348,7 +348,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
      }
      ```
 
-### Partition key resolution
+### Partition Key Resolution
 <a name="ddb-lookup-key-resolution"></a>
 
 The partition key value can be resolved in two ways:
@@ -402,7 +402,7 @@ This example looks up file metadata from a DynamoDB table using the filename as 
 **Note**
 The `dynamodbConfig` at the trigger’s `derivation` level is merged with the connector-level `dynamodbConfig`. Use the trigger-level config to override specific fields like `consistentRead` per trigger.
 
-## Copy fields
+## Copy Fields
 <a name="copy-fields"></a>
 
 The `copyFields` configuration provides a shortcut for copying a set of fields from the external record to resource metadata using prefix-based matching. Instead of listing individual field mappings, you specify a source prefix and target prefix:
@@ -416,7 +416,7 @@ The `copyFields` configuration provides a shortcut for copying a set of fields f
 
 This copies all fields starting with `metadata.` from the external record to the resource, replacing the prefix with `file.`. For example, `metadata.classification` becomes `file.classification`.
 
-## Record ID mapping
+## Record ID Mapping
 <a name="record-id-mapping"></a>
 
 The `recordIdMapping` configuration stores the external record’s identifier as a metadata attribute on the matched resource:
@@ -429,12 +429,12 @@ The `recordIdMapping` configuration stores the external record’s identifier as
 
 This writes the record’s key (from the external source) to the `external_id` attribute on the matched file.
 
-## Configuration fields
+## Configuration Fields
 <a name="derivation-config-fields"></a>
 
 The following tables describe the configuration fields for the metadata derivation connector.
 
-### Connector-level fields
+### Connector-Level Fields
 <a name="_connector-level-fields"></a>
 
 | Field | Required | Description |
@@ -448,7 +448,7 @@ The following tables describe the configuration fields for the metadata derivati
 |  `dynamodbConfig.region`  | No | AWS Region of the DynamoDB table. |
 |  `securityConfig`  | Yes (for `dynamodbLookup`) | Connector-level authentication configuration, a sibling of `dynamodbConfig`. Must use `AssumeRole` type. |
 
-### Trigger-level derivation fields
+### Trigger-Level Derivation Fields
 <a name="_trigger-level-derivation-fields"></a>
 
 | Field | Required | Description |
@@ -476,7 +476,7 @@ The following tables describe the configuration fields for the metadata derivati
 |  `derivation.recordIdMapping.target`  | No | Resource field to store the external record ID (for example, `file.external_id`). |
 |  `derivation.onError`  | No | Error handling: `fail` (default) or `record-and-continue`. |
 
-## Error handling
+## Error Handling
 <a name="derivation-error-handling"></a>
 
 The following table describes common derivation errors and their resolution.

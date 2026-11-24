@@ -64,6 +64,7 @@ The type of payment connector, which determines the payment provider integration
 
 `CredentialProviderConfigurations`  <a name="cfn-bedrockagentcore-paymentconnector-credentialproviderconfigurations"></a>
 The credential provider configurations for the payment connector. These configurations specify how the connector authenticates with the payment provider.
+For an `AwsBilling` payment connector, omit this parameter or specify an empty list. The service uses the AWS Marketplace service-linked role in your account, which must exist before you create the connector, and you must have permission to call `iam:GetRole` on it.
 *Required*: No
 *Type*: Array of [CredentialsProviderConfiguration](aws-properties-bedrockagentcore-paymentconnector-credentialsproviderconfiguration.md)
 *Minimum*: `0`

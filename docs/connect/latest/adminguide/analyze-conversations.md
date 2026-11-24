@@ -17,7 +17,7 @@ With conversational analytics, you can analyze conversations between customers a
 
 **Email analytics support**
 + **Email analytics**: Use to analyze email conversations between customers and agents. conversational analytics automatically categorizes email contacts, redacts sensitive data from email transcripts, and generates contact summaries. This helps you understand email conversation trends and ensure compliance across your email channel.
-+ Because email contacts are asynchronous, with one participant acting at a time, the real-time and post-contact distinction that applies to voice and chat does not apply to email. An email analysis is initiated as soon as the [Flow block in Connect Customer: Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) is used when an email contact is received or sent.
++ Because email contacts are asynchronous, with one participant acting at a time, the real-time and post-contact distinction that applies to voice and chat does not apply to email. An email analysis is initiated as soon as the [Flow block in Connect Customer: Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) is used when an email contact is received or sent.
 
 You can protect your customer's privacy by redacting sensitive data, such as name, address, and credit card information from transcripts and audio recordings.
 

@@ -133,6 +133,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateUpdatedImage  **
+  - **IAM action:**  [appstream:CreateUpdatedImage](#list_appstream-action-CreateUpdatedImage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateUsageReportSubscription  **
   - **IAM action:**  [appstream:CreateUsageReportSubscription](#list_appstream-action-CreateUsageReportSubscription)
   - **Condition key:**
@@ -351,6 +355,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DisassociateFleet  **
   - **IAM action:**  [appstream:DisassociateFleet](#list_appstream-action-DisassociateFleet)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DisassociateSoftwareFromImageBuilder  **
+  - **IAM action:**  [appstream:DisassociateSoftwareFromImageBuilder](#list_appstream-action-DisassociateSoftwareFromImageBuilder)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

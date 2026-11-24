@@ -8,3 +8,4 @@ Download AWS Quick from the [App Store](https://apps.apple.com/us/app/amazon-qui
 
 **Note**
 Some capabilities require a recent version of iOS or Android. To get the full mobile experience, keep the app and your operating system up to date.
+To use voice mode, update to the latest version of the app and allow AWS Quick to use your microphone.

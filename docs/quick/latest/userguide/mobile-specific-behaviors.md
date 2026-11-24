@@ -9,3 +9,4 @@ Some capabilities work differently on mobile than on desktop.
 + On-device file access: Quick can read and write files on your device when you grant access. You approve each request, and you control which folders Quick can use.
 + Approvals as cards: when an agent needs your permission to take an action, the request appears as a card in the conversation that you can allow or deny.
 + Biometric app lock: when biometric lock is on, AWS Quick requires Face ID, Touch ID, or a fingerprint each time you open the app.
++ Voice mode: talk to Quick hands-free. When Quick needs your approval during a voice conversation, tap the approval card to allow or deny.

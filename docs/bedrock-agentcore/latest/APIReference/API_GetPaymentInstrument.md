@@ -50,8 +50,8 @@ Required: No
  ** [paymentInstrumentId](#API_GetPaymentInstrument_RequestSyntax) **   <a name="BedrockAgentCore-GetPaymentInstrument-request-paymentInstrumentId"></a>
 The ID of the payment instrument to retrieve.
 Type: String
-Length Constraints: Fixed length of 34.
-Pattern: `payment-instrument-[0-9a-zA-Z-]{15}`
+Length Constraints: Minimum length of 34. Maximum length of 35.
+Pattern: `(payment-instrument-[0-9a-zA-Z-]{15}|aws\.agentcorepayments\.awsbilling\.v1)`
 Required: Yes
 
  ** [paymentManagerArn](#API_GetPaymentInstrument_RequestSyntax) **   <a name="BedrockAgentCore-GetPaymentInstrument-request-paymentManagerArn"></a>

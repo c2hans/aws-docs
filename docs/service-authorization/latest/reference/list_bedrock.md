@@ -143,6 +143,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [bedrock:TagResource](#list_bedrock-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock.amazonaws.com / **Access level:** Write
 
+- **   CreateProject  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:TagResource](#list_bedrock-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreatePromptRouter  **
   - **SDK client:** bedrock
   - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -522,6 +529,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** bedrock
   - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [bedrock:ListTagsForResource](#list_bedrock-action-ListTagsForResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+
+- **   ListTrustedAccessPrograms  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   PutAccountDataRetention  **
   - **SDK client:** bedrock

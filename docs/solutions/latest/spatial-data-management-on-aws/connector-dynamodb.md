@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-dynamodb.html
 ---
 
-# Amazon DynamoDB connector
+# Amazon DynamoDB Connector
 
 The Amazon DynamoDB connector performs single-record lookups by partition key and writes the result as metadata attributes on matched files or assets. It can also serve values from a DynamoDB table as selectable field values during template authoring and metadata entry.
 
@@ -10,7 +10,7 @@ DynamoDB connectors are well suited for per-file metadata enrichment where each 
 
 DynamoDB is a derive-only connector type. It does not yet have a step type in the trigger\+steps model and cannot be used as a publisher.
 
-Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), and [Variable Substitution](connector-configuration.md#variable-substitution).
 
 ## Roles
 <a name="dynamodb-roles"></a>
@@ -77,19 +77,19 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
      }
      ```
 
-## Using DynamoDB for metadata lookup
+## Using DynamoDB for Metadata Lookup
 <a name="dynamodb-as-lookup"></a>
 
 A DynamoDB derive connector performs a `GetItem` on a table using a partition key derived from the file or asset being processed. The result is matched to the SDMA resource and written as metadata attributes.
 
-### Partition key resolution
+### Partition Key Resolution
 <a name="_partition-key-resolution"></a>
 
 The partition key value can be resolved in two ways:
 +  **Explicit** — set `dynamodbConfig.partitionKeyValue` to a template string (for example, `${asset.assetId}`).
 +  **From match config** — if `partitionKeyValue` is omitted, the value is derived from the `applyTo.match.target` field. For example, if `match.target` is `file.path:basename`, the file’s basename is used as the partition key value.
 
-### Example – enrich file metadata from a DynamoDB table
+### Example – Enrich File Metadata from a DynamoDB Table
 <a name="_example-enrich-file-metadata-from-a-dynamodb-table"></a>
 
 ```json
@@ -134,14 +134,14 @@ The partition key value can be resolved in two ways:
 
 The `dynamodbConfig` at the trigger’s `derivation` level is merged with the connector-level `dynamodbConfig`. Use the trigger-level config to override specific fields like `consistentRead` per trigger.
 
-For full details on the lookup-derivation model and `applyTo` matching, see [Metadata lookup and enrichment](connector-derivation.md).
+For full details on the lookup-derivation model and `applyTo` matching, see [Metadata Lookup and Enrichment](connector-derivation.md).
 
-## Using DynamoDB as a field provider for templates
+## Using DynamoDB as a Field Provider for Templates
 <a name="dynamodb-as-field-provider"></a>
 
 A DynamoDB connector can serve values from a table as selectable options in the Spatial Data Portal. This uses the connector-level `fieldMappings` \+ `ddbConfig` shorthand — no triggers, no `resources` block.
 
-### Example – serve classification values from DynamoDB for template authoring
+### Example – Serve Classification Values from DynamoDB for Template Authoring
 <a name="_example-serve-classification-values-from-dynamodb-for-template-authoring"></a>
 
 ```json
@@ -166,10 +166,10 @@ This connector has no triggers. When a template references this connector, the P
 
 Field mappings can include an `options` object to declare cascading dependencies between fields — for example, selecting a classification can filter the available sub-categories.
 
-## Configuration fields
+## Configuration Fields
 <a name="dynamodb-config-fields"></a>
 
-### Connector-level fields
+### Connector-Level Fields
 <a name="_connector-level-fields"></a>
 
 | Field | Required | Description |
@@ -179,7 +179,7 @@ Field mappings can include an `options` object to declare cascading dependencies
 |  `dynamodbConfig.region` (or `ddbConfig.region`) | No | AWS Region of the DynamoDB table. |
 |  `securityConfig`  | Yes | Connector-level authentication configuration, a sibling of `dynamodbConfig` (or `ddbConfig`). Must use `AssumeRole` type. |
 
-### Trigger-level derivation fields
+### Trigger-Level Derivation Fields
 <a name="_trigger-level-derivation-fields"></a>
 
 | Field | Required | Description |

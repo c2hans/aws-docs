@@ -14,4 +14,4 @@ This interface reference for Oracle Database@AWS contains documentation for a pr
 + For a list of common query parameters, see [Common Parameters](https://docs.aws.amazon.com/odb/latest/APIReference/CommonParameters.html).
 + For descriptions of the error codes, see [Common Errors](https://docs.aws.amazon.com/odb/latest/APIReference/CommonErrors.html).
 
-This document was last published on November 20, 2026.
+This document was last published on November 23, 2026.

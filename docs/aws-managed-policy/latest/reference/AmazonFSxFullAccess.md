@@ -17,13 +17,13 @@ You can attach `AmazonFSxFullAccess` to your users, groups, and roles.
 <a name="AmazonFSxFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 28, 2018, 16:34 UTC
-+ **Edited time:** February 12, 2026, 17:58 UTC
++ **Edited time:** November 21, 2026, 20:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonFSxFullAccess`
 
 ## Policy version
 <a name="AmazonFSxFullAccess-version"></a>
 
-**Policy version:** v13 (default)
+**Policy version:** v14 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -53,25 +53,36 @@ The policy's default version is the version that defines the permissions for the
         "fsx:CopySnapshotAndUpdateVolume",
         "fsx:CreateAndAttachS3AccessPoint",
         "fsx:CreateBackup",
+        "fsx:CreateClusterPeer",
         "fsx:CreateDataRepositoryAssociation",
         "fsx:CreateDataRepositoryTask",
         "fsx:CreateFileCache",
         "fsx:CreateFileSystem",
         "fsx:CreateFileSystemFromBackup",
+        "fsx:CreateSnapmirrorPolicy",
+        "fsx:CreateSnapmirrorRelationship",
         "fsx:CreateSnapshot",
+        "fsx:CreateSnapshotPolicy",
         "fsx:CreateStorageVirtualMachine",
+        "fsx:CreateStorageVirtualMachinePeer",
         "fsx:CreateVolume",
         "fsx:CreateVolumeFromBackup",
         "fsx:DetachAndDeleteS3AccessPoint",
         "fsx:DeleteBackup",
+        "fsx:DeleteClusterPeer",
         "fsx:DeleteDataRepositoryAssociation",
         "fsx:DeleteFileCache",
         "fsx:DeleteFileSystem",
+        "fsx:DeleteSnapmirrorPolicy",
+        "fsx:DeleteSnapmirrorRelationship",
         "fsx:DeleteSnapshot",
+        "fsx:DeleteSnapshotPolicy",
         "fsx:DeleteStorageVirtualMachine",
+        "fsx:DeleteStorageVirtualMachinePeer",
         "fsx:DeleteVolume",
         "fsx:DescribeAssociatedFileGateways",
         "fsx:DescribeBackups",
+        "fsx:DescribeClusterPeers",
         "fsx:DescribeDataRepositoryAssociations",
         "fsx:DescribeDataRepositoryTasks",
         "fsx:DescribeFileCaches",
@@ -79,7 +90,11 @@ The policy's default version is the version that defines the permissions for the
         "fsx:DescribeFileSystems",
         "fsx:DescribeS3AccessPointAttachments",
         "fsx:DescribeSharedVpcConfiguration",
+        "fsx:DescribeSnapmirrorPolicies",
+        "fsx:DescribeSnapmirrorRelationships",
+        "fsx:DescribeSnapshotPolicies",
         "fsx:DescribeSnapshots",
+        "fsx:DescribeStorageVirtualMachinePeers",
         "fsx:DescribeStorageVirtualMachines",
         "fsx:DescribeVolumes",
         "fsx:DisassociateFileGateway",
@@ -90,12 +105,17 @@ The policy's default version is the version that defines the permissions for the
         "fsx:RestoreVolumeFromSnapshot",
         "fsx:TagResource",
         "fsx:UntagResource",
+        "fsx:UpdateClusterPeer",
         "fsx:UpdateDataRepositoryAssociation",
         "fsx:UpdateFileCache",
         "fsx:UpdateFileSystem",
         "fsx:UpdateSharedVpcConfiguration",
+        "fsx:UpdateSnapmirrorPolicy",
+        "fsx:UpdateSnapmirrorRelationship",
         "fsx:UpdateSnapshot",
+        "fsx:UpdateSnapshotPolicy",
         "fsx:UpdateStorageVirtualMachine",
+        "fsx:UpdateStorageVirtualMachinePeer",
         "fsx:UpdateVolume"
       ],
       "Resource" : "*"

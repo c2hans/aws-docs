@@ -51,7 +51,7 @@ A **Cloud Connector** is the link between your AWS Quick workspace and the Partn
 A few things to understand up front:
 + **The Cloud Connector is a shared entity, not a personal login.** A person authorizes the Cloud Connector once through browser-based AWS Sign-In; after that, everyone you publish it to operates through that single shared identity. The Cloud Connector is **not user-aware** — it does not know which individual is typing. (See [Decisions to make before you create the Cloud Connector](#mcp-quick-decisions) for how this shared identity maps to individual use.)
 + **Authorizing it grants no extra permissions.** As the Getting Started guide states, authorizing an agent does not grant it any additional AWS permissions. AWS evaluates every request against your IAM policies, service control policies, resource control policies, and permission boundaries.
-+ **You set it up once and publish it.** When you create the Cloud Connector you choose the aliases or the organization you share it with, and who else can own it.
++ **You set it up once and publish it.** When you create the Cloud Connector you choose the aliases or the organization you share it with, and who else can own it. The IAM role's maximum session duration setting determines how long the Cloud Connector's credentials stay valid. For more information, see [Update the maximum session duration for a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-role-settings.html).
 + **Every change to your pipeline asks first.** Before the agents create or change anything in Partner Central, they show you the action and wait for your approval.
 
 ### Decisions to make before you create the Cloud Connector
@@ -89,19 +89,34 @@ The Cloud Connector owner is responsible for maintaining the session. When the s
 + If that user has no Partner Central permissions configured for the Cloud Connector, they get an error and cannot use it.
 + If that user does sign in, the Cloud Connector inherits that user's permissions instead of the centrally managed ones, which may not be scoped correctly for the MCP or may be narrower than intended.
 
-Choose an owner who can stay on top of session renewals and understands the connector's intended permission scope. For more information about session duration, see [OAuth sign-in overview](https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html) in the AWS Sign-In User Guide.
+Choose an owner who can manage session renewals and understands the connector's intended permission scope. How often the owner must sign in again depends on the Cloud Connector's maximum session duration: A shorter maximum means more frequent re-authentication. You set that maximum on the IAM role. For instructions, see [Update the maximum session duration for a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-role-settings.html). For more information about the sign-in session itself, see [OAuth sign-in overview](https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html) in the AWS Sign-In User Guide.
 
 ## Find and add the AWS Partner skills
 <a name="mcp-quick-skills"></a>
 
-The **AWS Partner skills** are ready-made, persona-based workflows that turn the agents' capabilities into repeatable motions. There are two ways to get them.
+The **AWS Partner skills** are ready-made, persona-based workflows that turn the agents' capabilities into repeatable motions. There are three ways to get them.
 
-### Option A (recommended): Add from the official skills catalog in AWS Quick
+### Option A (recommended): Install the AWS Partner Central plugin
+<a name="mcp-quick-plugin"></a>
+
+The **AWS Partner Central** plugin is the fastest way to get the skills. Installing the plugin adds all the published AWS Partner Central skills in a single action, instead of adding each skill one at a time.
+
+To install the plugin, complete the following steps:
+
+1. In AWS Quick, choose **Customize**, then **Plugins**, then **Browse all**. (See [Customize](https://docs.aws.amazon.com/quick/latest/userguide/customize-desktop.html) in the AWS Quick User Guide.)
+
+1. Search for the **AWS Partner Central** plugin.
+
+1. Choose the plugin to preview its description, then install it.
+
+### Option B: Add from the official skills catalog in AWS Quick
 <a name="mcp-quick-catalog"></a>
 
 AWS Quick includes an **Official** skills catalog, published by Amazon, that you browse from within the app.
 
-1. In AWS Quick, go to **Customize**, **Skills**, then choose **Browse all** to open the **Add to Quick** catalog, scoped to skills. (See [Customize](https://docs.aws.amazon.com/quick/latest/userguide/customize-desktop.html) and [Skills](https://docs.aws.amazon.com/quick/latest/userguide/skills-desktop.html) in the AWS Quick User Guide.)
+To add a skill from the catalog, complete the following steps:
+
+1. In AWS Quick, choose **Customize**, then **Skills**, then **Browse all** to open the **Add to Quick** catalog, scoped to skills. (See [Customize](https://docs.aws.amazon.com/quick/latest/userguide/customize-desktop.html) and [Skills](https://docs.aws.amazon.com/quick/latest/userguide/skills-desktop.html) in the AWS Quick User Guide.)
 
 1. Choose the **Official** set — the curated, first-party skills published by Amazon, which you can filter by category.
 
@@ -109,7 +124,7 @@ AWS Quick includes an **Official** skills catalog, published by Amazon, that you
 
 1. Choose a skill to preview its description, then add it.
 
-### Option B: Download from the official GitHub catalog
+### Option C: Download from the official GitHub catalog
 <a name="mcp-quick-github"></a>
 
 The AWS Partner skills are also published in the official Amazon Quick catalog repository on GitHub, which you can download and import:

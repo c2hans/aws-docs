@@ -30,8 +30,8 @@ Required: Yes
  ** paymentInstrumentId **   <a name="BedrockAgentCore-Type-PaymentInstrument-paymentInstrumentId"></a>
 The unique identifier for this payment instrument.
 Type: String
-Length Constraints: Fixed length of 34.
-Pattern: `payment-instrument-[0-9a-zA-Z-]{15}`
+Length Constraints: Minimum length of 34. Maximum length of 35.
+Pattern: `(payment-instrument-[0-9a-zA-Z-]{15}|aws\.agentcorepayments\.awsbilling\.v1)`
 Required: Yes
 
  ** paymentInstrumentType **   <a name="BedrockAgentCore-Type-PaymentInstrument-paymentInstrumentType"></a>

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-eventbridge.html
 ---
 
-# Amazon EventBridge connector
+# Amazon EventBridge Connector
 
 The Amazon EventBridge connector publishes events to a custom EventBridge event bus when asset lifecycle events occur. Use this connector to fan out resource events to multiple downstream consumers through EventBridge rules — notifying external systems, triggering workflows in other AWS accounts, or feeding event-driven architectures.
 
@@ -10,7 +10,7 @@ EventBridge is a publish-only connector type. It sends events outward from SDMA 
 
 Step type: `eventBridgePutEvents`
 
-Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), and [Variable Substitution](connector-configuration.md#variable-substitution).
 
 ## Roles
 <a name="eventbridge-roles"></a>
@@ -77,10 +77,10 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
      }
      ```
 
-## Using EventBridge as a publisher
+## Using EventBridge as a Publisher
 <a name="eventbridge-as-publisher"></a>
 
-### Example – publish asset events to an event bus
+### Example – Publish Asset Events to an Event Bus
 <a name="_example-publish-asset-events-to-an-event-bus"></a>
 
 ```json
@@ -115,7 +115,7 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
 
 Downstream consumers create EventBridge rules that match on `source` and `detailType` to route events to AWS Step Functions state machines, Amazon SQS queues, AWS Lambda functions, or other targets.
 
-## Using EventBridge as a step type in multi-step triggers
+## Using EventBridge as a Step Type in Multi-Step Triggers
 <a name="eventbridge-as-step-type"></a>
 
 The `eventBridgePutEvents` step type can appear in multi-step triggers. A common pattern is to write metadata to S3, invoke a Lambda function, and then publish a notification event:
@@ -143,7 +143,7 @@ The `eventBridgePutEvents` step type can appear in multi-step triggers. A common
 ]
 ```
 
-## Configuration fields
+## Configuration Fields
 <a name="eventbridge-config-fields"></a>
 
 | Field | Required | Description |

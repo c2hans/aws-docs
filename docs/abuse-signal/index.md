@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/abuse-signal/index.html
 title: 'AWS Abuse Signal API'
 canonical_url: https://docs.aws.amazon.com/abuse-signal/
 source: aws-documentation
-generated_on: 2026-11-20
+generated_on: 2026-11-23
 ---
 
 # AWS Abuse Signal API

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/use-cases.html
 ---
 
-# Use cases
+# Use Cases
 
 ## Geospatial and Mapping
 <a name="geospatial-and-mapping"></a>
@@ -22,12 +22,17 @@ In manufacturing environments, the solution helps teams manage factory floor sca
 ## Infrastructure and Construction
 <a name="infrastructure-and-construction"></a>
 
-Construction projects benefit from centralized management of site surveys, Building Information Modeling (BIM) models, and progress tracking data. Project managers can monitor construction progress through temporal point cloud comparisons, while engineers can access detailed design models.
+Construction projects benefit from centralized management of site surveys, Building Information Modeling (BIM) models, and progress tracking data. Project managers can monitor construction progress by comparing a new scan with an earlier one, or by opening it beside the design model, while engineers can access detailed design models.
 
 ## Energy and Utilities
 <a name="energy-and-utilities"></a>
 
 Utility companies use the solution to organize pipeline surveys, facility maintenance records, and asset inspection data. Field teams can access up-to-date infrastructure models, while compliance teams can track inspection history.
+
+## Digital Twins
+<a name="digital-twins"></a>
+
+Owners of plants, campuses, and networks keep versioned scans, BIM models, and point clouds of each site as assets. Each new capture becomes a version, so teams can see how a site changed and which scan a decision was based on. Connectors keep derived views and external systems in step with the latest approved capture.
 
 ## Media and Entertainment
 <a name="media-and-entertainment"></a>

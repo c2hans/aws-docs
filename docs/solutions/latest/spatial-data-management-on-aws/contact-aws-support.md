@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans/business-plus/), [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/), or [Unified Operations](https://aws.amazon.com/premiumsupport/plans/unified-operations/), you can use the AWS Support Center to get expert assistance with this solution. The following sections provide instructions.
 
-## Create case
+## Create Case
 <a name="create-case"></a>
 
 1. Sign in to [Support Center](https://support.console.aws.amazon.com/support/home#/).
 
 1. Choose **Create case**.
 
-## How can we help?
+## How Can We Help?
 <a name="how-can-we-help"></a>
 
 1. Choose **Technical**.
@@ -26,7 +26,7 @@ If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans
 
 1. When you enter the **Service**, **Category**, and **Severity**, the interface populates links to common troubleshooting questions. If you can’t resolve your question with these links, choose **Next step: Additional information**.
 
-## Additional information
+## Additional Information
 <a name="additional-information"></a>
 
 1. For **Subject**, enter text summarizing your question or issue.
@@ -37,14 +37,14 @@ If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans
 
 1. Attach the information that AWS Support needs to process the request.
 
-## Help us resolve your case faster
+## Help Us Resolve Your Case Faster
 <a name="help-us-resolve-your-case-faster"></a>
 
 1. Enter the requested information.
 
 1. Choose **Next step: Solve now or contact us**.
 
-## Solve now or contact us
+## Solve Now or Contact Us
 <a name="solve-now-or-contact-us"></a>
 
 1. Review the **Solve now** solutions.

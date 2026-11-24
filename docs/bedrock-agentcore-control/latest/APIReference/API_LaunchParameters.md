@@ -25,6 +25,11 @@ The Capacity Reservation targeting option for the instances.
 Type: [CapacityReservationSpecification](API_CapacityReservationSpecification.md) object
 Required: No
 
+ ** cpuOptions **   <a name="bedrockagentcorecontrol-Type-LaunchParameters-cpuOptions"></a>
+The central processing unit (CPU) options for the instances that the capacity provider launches.
+Type: [CpuOptions](API_CpuOptions.md) object
+Required: No
+
  ** ephemeralVolumes **   <a name="bedrockagentcorecontrol-Type-LaunchParameters-ephemeralVolumes"></a>
 The block device mappings for instance store (ephemeral) volumes. You can specify up to five mappings.
 Type: Array of [EphemeralBlockDeviceMapping](API_EphemeralBlockDeviceMapping.md) objects

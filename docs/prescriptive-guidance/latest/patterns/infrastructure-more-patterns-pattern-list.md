@@ -27,6 +27,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 + [Document your AWS landing zone design](document-your-aws-landing-zone-design.md)
 + [Enable Amazon EKS Auto Mode across EKS clusters by using GitHub Actions](enable-eks-auto-mode-using-github-actions.md)
 + [Export AWS Backup reports from across an organization in AWS Organizations as a CSV file](export-aws-backup-reports-from-across-an-organization-in-aws-organizations-as-a-csv-file.md)
++ [Securing AWS IAM Roles Anywhere with a private certificate](iam-roles-anywhere-private-ca.md)
 + [Implement path-based API versioning by using custom domains in Amazon API Gateway](implement-path-based-api-versioning-by-using-custom-domains.md)
 + [Install the SSM Agent and CloudWatch agent on Amazon EKS worker nodes using preBootstrapCommands](install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands.md)
 + [Manage AWS Service Catalog products in multiple AWS accounts and AWS Regions](manage-aws-service-catalog-products-in-multiple-aws-accounts-and-aws-regions.md)

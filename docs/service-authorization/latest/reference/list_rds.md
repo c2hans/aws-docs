@@ -1877,7 +1877,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:RestoreDBClusterFromS3](#list_rds-action-RestoreDBClusterFromS3)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** rds-preview.amazonaws.com, rds.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** rds.amazonaws.com / **Access level:** Write
 
 - **   RestoreDBClusterFromSnapshot  **
   - **SDK client:** rds

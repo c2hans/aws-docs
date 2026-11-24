@@ -72,7 +72,7 @@ If deployment fails with permission errors:
 ## Deployment Modes
 <a name="deployment-modes"></a>
 
-You can configure the deployment mode during AWS CloudFormation deployment. These modes provide simpler configuration options for proof of concept or test environments. Both modes are feature compatible.
+You can configure the deployment mode during AWS CloudFormation deployment. Dev and Prod are feature compatible. They differ in scale and cost.
 
 ### Development Mode
 <a name="development-mode"></a>
@@ -82,3 +82,14 @@ You can configure the deployment mode during AWS CloudFormation deployment. Thes
 ### Production Mode
 <a name="production-mode"></a>
 + Provisioned concurrency for AWS Lambda
+
+### Minimal Mode
+<a name="minimal-mode"></a>
++ A reduced-footprint deployment for accounts with reduced AWS service limits
++ AWS Lambda functions have no reserved concurrency
++ Lower performance. Use it only for short-term, very low volume, single-user trials, not for production or proof-of-concept workloads
+
+### AWS Lambda Concurrency
+<a name="lambda-concurrency-requirement"></a>
+
+In Dev and Prod modes, the solution reserves AWS Lambda concurrency for four functions: 240 for the resource operation function, 80 for the asset watcher, 40 for connector invocation, and 40 for asynchronous connector invocation. That is 400 in total. Lambda requires at least 100 unreserved concurrent executions in the account, so the account’s concurrent executions quota must be at least 500. If it is lower, request an increase in the Service Quotas console, or use Minimal mode for a trial.

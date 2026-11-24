@@ -12,6 +12,11 @@ The payment input details, which vary by payment type.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** awsBillingX402 **   <a name="BedrockAgentCore-Type-PaymentInput-awsBillingX402"></a>
+Input for an AWS Billing x402 payment, which pays an AWS Marketplace seller's quote and charges it to the AWS account that owns the payment manager.
+Type: [AwsBillingX402PaymentInput](API_AwsBillingX402PaymentInput.md) object
+Required: No
+
  ** cryptoX402 **   <a name="BedrockAgentCore-Type-PaymentInput-cryptoX402"></a>
 Input for a crypto X402 payment.
 Type: [CryptoX402PaymentInput](API_CryptoX402PaymentInput.md) object

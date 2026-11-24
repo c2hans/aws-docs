@@ -2,24 +2,24 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/external-identity-provider.html
 ---
 
-# Configure any external identity provider
+# Configure Any External Identity Provider
 
 This page describes the protocol-level configuration that applies to any OpenID Connect (OIDC) or SAML 2.0 identity provider, along with the steps to enable, verify, and troubleshoot federation. For a detailed walkthrough of a specific provider, see [Configure Microsoft Entra ID](configure-entra-id.md).
 
-Before you begin, complete the prerequisites and gather your Amazon Cognito values described in [Single sign-on (SSO)](sso.md). The procedures below use the placeholders defined in [Placeholders used in these procedures](sso.md#sso-placeholders).
+Before you begin, complete the prerequisites and gather your Amazon Cognito values described in [Single Sign-On (SSO)](sso.md). The procedures below use the placeholders defined in [Placeholders Used in These Procedures](sso.md#sso-placeholders).
 
-## Configure OIDC federation
+## Configure OIDC Federation
 <a name="generic-oidc"></a>
 
 At a high level, configuring OIDC federation requires you to:
 
-1. Register an application (relying party) in your identity provider, using the OIDC redirect endpoint from [Gather your Amazon Cognito values](sso.md#sso-gather-cognito-values) as the redirect (callback) URI.
+1. Register an application (relying party) in your identity provider, using the OIDC redirect endpoint from [Gather Your Amazon Cognito Values](sso.md#sso-gather-cognito-values) as the redirect (callback) URI.
 
 1. Obtain a client ID, a client secret, and the issuer URL from your identity provider.
 
 1. Register your identity provider as an OIDC identity provider in the Amazon Cognito user pool, and map identity provider claims to user pool attributes.
 
-1. Enable the identity provider for the portal app client (see [Enable the identity provider for the app client](#idp-enable-app-client)).
+1. Enable the identity provider for the portal app client (see [Enable the Identity Provider for the App Client](#idp-enable-app-client)).
 
 To create the OIDC identity provider in Amazon Cognito:
 
@@ -52,14 +52,14 @@ To create the OIDC identity provider in Amazon Cognito:
 
 1. Choose **Add identity provider**.
 
-Then enable the identity provider as described in [Enable the identity provider for the app client](#idp-enable-app-client).
+Then enable the identity provider as described in [Enable the Identity Provider for the App Client](#idp-enable-app-client).
 
-## Configure SAML federation
+## Configure SAML Federation
 <a name="generic-saml"></a>
 
 At a high level, configuring SAML 2.0 federation requires you to:
 
-1. Create a SAML application in your identity provider, and provide it with the Amazon Cognito service provider (SP) values from [Gather your Amazon Cognito values](sso.md#sso-gather-cognito-values) (the ACS URL and the SP entity ID / audience URI).
+1. Create a SAML application in your identity provider, and provide it with the Amazon Cognito service provider (SP) values from [Gather Your Amazon Cognito Values](sso.md#sso-gather-cognito-values) (the ACS URL and the SP entity ID / audience URI).
 
 1. Configure the SAML attributes (claims) that the identity provider sends, and (optionally) a groups claim.
 
@@ -67,7 +67,7 @@ At a high level, configuring SAML 2.0 federation requires you to:
 
 1. Register your identity provider as a SAML identity provider in the Amazon Cognito user pool, and map SAML attributes to user pool attributes.
 
-1. Enable the identity provider for the portal app client (see [Enable the identity provider for the app client](#idp-enable-app-client)).
+1. Enable the identity provider for the portal app client (see [Enable the Identity Provider for the App Client](#idp-enable-app-client)).
 
 To create the SAML identity provider in Amazon Cognito:
 
@@ -89,9 +89,9 @@ To create the SAML identity provider in Amazon Cognito:
 
 1. Choose **Save changes**.
 
-Then enable the identity provider as described in [Enable the identity provider for the app client](#idp-enable-app-client).
+Then enable the identity provider as described in [Enable the Identity Provider for the App Client](#idp-enable-app-client).
 
-## Enable the identity provider for the app client
+## Enable the Identity Provider for the App Client
 <a name="idp-enable-app-client"></a>
 
 After you create the OIDC or SAML identity provider, enable it for the portal app client so that it appears on the sign-in page.
@@ -108,7 +108,7 @@ To require federation-only sign-in, clear **Cognito user pool** so that users ca
 
 1. Choose **Save changes**.
 
-## Verify the integration
+## Verify the Integration
 <a name="idp-test"></a>
 
 1. In your identity provider, make sure a test user is assigned to the SDMA application.
@@ -128,7 +128,7 @@ Newly federated users start with no permissions in SDMA. An administrator in the
 <a name="idp-troubleshooting"></a>
 
  **The sign-in button does not appear**
-+ Confirm that the identity provider is enabled for the portal app client. See [Enable the identity provider for the app client](#idp-enable-app-client).
++ Confirm that the identity provider is enabled for the portal app client. See [Enable the Identity Provider for the App Client](#idp-enable-app-client).
 + Confirm that you saved the **Login pages** configuration for the correct app client.
 
  ** `redirect_mismatch` or `redirect_uri` error after sign-in**

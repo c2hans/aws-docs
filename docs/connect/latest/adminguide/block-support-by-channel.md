@@ -45,7 +45,7 @@ The following table lists all available flow blocks, and whether they support ro
 |  [Set hold flow](set-hold-flow.md)  | Yes | No - Error branch | No - Error branch | No - Error branch |
 |  [Set logging behavior](set-logging-behavior.md)  | Yes | Yes | Yes | Yes |
 |  [Set recording and analytics behavior](set-recording-behavior.md) | Yes | Yes | No - Error branch | No - Error branch |
-|  [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md)  | Yes | Yes | Yes | Yes |
+|  [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md)  | Yes | Yes | Yes | Yes |
 |  [Set routing criteria](set-routing-criteria.md) | Yes | Yes | Yes | Yes |
 |  [Set Voice ID](set-voice-id.md)  | Yes | No - Error branch | No - Error branch | No - Error branch |
 | [Set voice](set-voice.md)  | Yes | No - Success branch | No - Success branch | No - Success branch |

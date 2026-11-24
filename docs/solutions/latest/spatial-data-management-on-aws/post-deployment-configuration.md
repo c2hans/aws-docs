@@ -56,10 +56,9 @@ Upon successful login, you will see different interfaces depending on your user 
 
  **General User:**
 
-![First-time login portal view for general users showing standard access to portal features](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-login-portal-browser-user.png)
+![First-time login portal view for a general user with no project access showing the No projects are visible to you message](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-login-portal-browser-user.png)
+
+A user with no project access sees the **No projects are visible to you** message. Users who have Contributor access or above to the library also get a **Create Project** button. Other users see "Please contact an administrator for access. You must have Contributor level access or above to create projects."
 
 **Note**
 The interface you see on first-time login will vary based on your assigned user group and permissions. Administrator users (members of the SpatialDataManagementAdministrators group) have access to additional management features and system configuration options. General users who are not part of the administrators group and have not been granted specific permissions to the Default Library or any Projects will see the standard portal interface with limited access until additional permissions are assigned to them.
-
-## Reuse existing networking infrastructure
-<a name="reuse_existing_networking_infrastructure"></a>

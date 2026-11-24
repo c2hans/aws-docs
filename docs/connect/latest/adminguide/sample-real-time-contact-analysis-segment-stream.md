@@ -128,6 +128,23 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 }
 ```
 
+For a contact with more than one language, each `Transcript` segment contains a `LanguageCode` field, as shown in the following example.
+
+```json
+{
+    "Transcript": {
+        "Id": "4295e927-43aa-4447-bbfc-8fccc2027530",
+        "ParticipantId": "CUSTOMER",
+        "ParticipantRole": "CUSTOMER",
+        "Content": "Hola, necesito ayuda con mi solicitud.",
+        "BeginOffsetMillis": 25010,
+        "EndOffsetMillis": 27690,
+        "Sentiment": "NEUTRAL",
+        "LanguageCode": "es-US"
+    }
+}
+```
+
 ## Sample COMPLETED event
 <a name="sample-completed-event"></a>
 + EventType: COMPLETED

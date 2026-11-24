@@ -21,7 +21,7 @@ When you sign in, Quick opens to a chat-first homepage, where you start by typin
 
 The homepage shows a time-aware greeting, with the chat composer as the main entry point. It also surfaces connection setup cards for data sources that you have not set up yet. In addition, it shows **Quick Briefs**, a summary of your highest-priority feed items, with a link to open the full feed.
 
-From the chat composer, you choose which agent handles the conversation. You set the response mode to **Fast**, **Balanced**, or **Smart**. You also set the thinking effort to **Off**, **Low**, **Medium**, or **High**. You can start an **Incognito** chat, a private conversation that Quick does not save to your history.
+From the chat composer, you choose which agent handles the conversation. You set the response mode to **Fast**, **Balanced**, or **Smart**. You also set the thinking effort to **Off**, **Low**, **Medium**, or **High**. You can start an **Incognito** chat, a private conversation that Quick does not save to your history. You can also start voice mode from the chat composer. For more information, see [Using voice mode (Preview)](using-voice-mode.md).
 
 The following are all the available AWS Quick capabilities:
 + **Chat** – Start and continue conversations with Quick. Chat is the primary way that you work.

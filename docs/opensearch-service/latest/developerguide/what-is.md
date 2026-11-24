@@ -66,7 +66,7 @@ Use the following table to help you decide whether provisioned Amazon OpenSearch
 <a name="choosing-version"></a>
 
 OpenSearch Service supports the following versions of **OpenSearch**:
-+ 3.5, 3.3, 3.1, 2.19, 2.17, 2.15, 2.13, 2.11, 2.9, 2.7, 2.5, 2.3, 1.3, 1.2, 1.1, and 1.0
++ 3.9, 3.7, 3.5, 3.3, 3.1, 2.19, 2.17, 2.15, 2.13, 2.11, 2.9, 2.7, 2.5, 2.3, 1.3, 1.2, 1.1, and 1.0
 
 OpenSearch Service supports the following versions of legacy **Elasticsearch**:
 + 7.10, 7.9, 7.8, 7.7, 7.4, 7.1, 6.8, 6.7, 6.5, 6.4, 6.3, 6.2, 6.0, 5.6, 5.5, 5.3, 5.1, 2.3, and 1.5

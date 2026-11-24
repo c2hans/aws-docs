@@ -27,6 +27,7 @@ If you have any questions or concerns, Support is available on the community for
 <a name="AuroraMySQL.Updates.3140.NewFeatures"></a>
 + Aurora MySQL minor version upgrades to this release from version 3.08 or higher now complete faster, allowing your writer instance to return to service sooner. No configuration changes or opt-in are required; the improvement is applied automatically.
 + Aurora MySQL introduces the hybrid key exchange groups `X25519MLKEM768` and `SecP256r1MLKEM768` alongside the classical elliptic-curve groups for TLS 1.3 connections. Clients that support post-quantum key exchange automatically negotiate a quantum-resistant shared secret; those that do not continue using classical groups. To verify which group a session negotiated, query the new `Aurora_ssl_named_group` status variable: `SHOW STATUS LIKE 'Aurora_ssl_named_group';`
++ Aurora Serverless now supports a maximum database capacity of 384 Aurora Capacity Units (ACUs) for Aurora MySQL, up from 256 ACUs. Each ACU provides 2 gibibytes (GiB) of memory with proportional CPU and networking so a single Aurora Serverless database can now scale to 768 GiB of memory.
 
 ## Improvements
 <a name="AuroraMySQL.Updates.3140.Improvements"></a>

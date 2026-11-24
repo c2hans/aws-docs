@@ -25,20 +25,20 @@ Alternatively, use the AWS CLI:
 aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <YOUR STACK> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `PortalStackNested`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`PortalCloudFrontDistributionUrl`].OutputValue' --output text
 ```
 
-For more information on accessing the portal URL, see [Deploy the solution](deploy-the-solution.md).
+For more information on accessing the portal URL, see [Deploy the Solution](deploy-the-solution.md).
 
 ## Create Your Profile
 <a name="create-profile"></a>
 
-1. Launch the Spatial Data Management desktop application
+1. Launch the Spatial Data Management desktop application.
 
-1. On the welcome screen, choose **Add Profile** or **Create New Profile**
+1. On **Find your portal** (step 1 of 3), enter your **Portal URL**. This is the URL you copied from the CloudFormation outputs.
 
-1. Enter the profile details:
-   +  **Profile Name** – Enter a descriptive name (for example, `Production` or `My Deployment`)
-   +  **Portal URL** – Paste the portal URL you copied from CloudFormation outputs
+1. Select **I confirm this URL is from a trusted source**, and choose **Next**.
 
-1. Choose **Save** or **Create**
+1. On **Name your profile** (step 2 of 3), enter a **Profile name** and choose **Next**. A name has 1 to 100 letters, numbers, hyphens, or underscores, with no spaces, for example `demo-env`. The profile is not public and is stored only on your computer.
+
+1. Complete **Review and launch**, step 3 of 3.
 
 1. Sign in with your Amazon Cognito credentials
 
@@ -46,4 +46,6 @@ For more information on accessing the portal URL, see [Deploy the solution](depl
 
 Your profile is now configured and you are ready to start using the application.
 
-![Create profile on your client application](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-profile-setup.png)
+![Step 1 of 3 of the desktop application profile setup: Find your portal](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-profile-setup.png)
+
+![Step 2 of 3 of the desktop application profile setup: Name your profile](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-profile-name.png)

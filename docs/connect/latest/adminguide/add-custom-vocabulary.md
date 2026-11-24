@@ -12,7 +12,7 @@ This topic explains how to add custom vocabularies using the Connect Customer ad
 <a name="things-to-know-about-cust-vocab"></a>
 + You must set a vocabulary as the **default** for it to be applied to the analyses to generate transcripts. The following image shows the **Custom vocabularies** page. Choose the ellipsis, and then choose **Set as default**.
 ![The custom vocabularies page, the location of the ellipses, the set as default option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-custom-vocab-default.png)
-+ You can have one vocabulary per language applied to the analyses. This means only one file per language can be in the **Ready (default)** state.
++ You can have one vocabulary per language applied to the analyses. This means only one file per language can be in the **Ready (default)** state. For a contact with more than one language, conversational analytics applies the default custom vocabulary of each language that you choose. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
 + You can upload and activate up to 20 vocabulary files. You can activate all 20 files at the same time.
 + Transcription is a one-time event. A newly uploaded vocabulary isn't applied retroactively to existing transcriptions.
 + Your text file must be in LF format. If you use any other format, such CRLF format, your custom vocabulary is not accepted by Amazon Transcribe.

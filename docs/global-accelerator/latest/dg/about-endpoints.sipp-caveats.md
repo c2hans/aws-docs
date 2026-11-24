@@ -18,7 +18,6 @@ Client IP address preservation is not supported for Elastic IP address endpoints
 **Network Load Balancer endpoints**
 If you want to enable client IP address preservation when you add Network Load Balancer resources as endpoints to Global Accelerator, be aware that client IP address preservation is not supported for the following:
 + Network Load Balancers without security groups
-+ Network Load Balancers with security groups that have TLS listeners attached
 + Network Load Balancers with security groups that perform IPv4 to IPv6 NAT translation to their EC2 targets
 In addition, for Network Load Balancers, client IP address preservation is supported only when targets are in the same VPC as the Network Load Balancer. Traffic must flow directly from the Network Load Balancer to the target.
 These requirements apply only to Network Load Balancer endpoints, not to other load balancing endpoints, such as Application Load Balancers.

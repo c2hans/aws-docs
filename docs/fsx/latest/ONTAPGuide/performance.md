@@ -320,7 +320,7 @@ The following table shows the AWS Regions where each generation of FSx for ONTAP
 | AWS GovCloud (US-West) | ✓ | ✓ |  |
 | Africa (Cape Town) | ✓ |  |  |
 | Asia Pacific (Hong Kong) | ✓ |  |  |
-| Asia Pacific (Tokyo) | ✓ | ✓ | ✓ |
+| Asia Pacific (Tokyo) | ✓ | ✓ |  |
 | Asia Pacific (Seoul) | ✓ | ✓ |  |
 | Asia Pacific (Osaka) | ✓ |  |  |
 | Asia Pacific (Mumbai) | ✓ | ✓ |  |
@@ -339,8 +339,8 @@ The following table shows the AWS Regions where each generation of FSx for ONTAP
 | Europe (Zurich) | ✓ | ✓ |  |
 | Europe (Stockholm) | ✓ | ✓ |  |
 | Europe (Milan) | ✓ |  |  |
-| Europe (Spain) | ✓ | ✓ | ✓ |
-| Europe (Ireland) | ✓\* | ✓ | ✓ |
+| Europe (Spain) | ✓ | ✓ |  |
+| Europe (Ireland) | ✓\* | ✓ |  |
 | Europe (London) | ✓ | ✓ |  |
 | Europe (Paris) | ✓ |  |  |
 | Israel (Tel Aviv) | ✓ |  |  |

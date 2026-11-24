@@ -9,7 +9,7 @@ As a managed service, Amazon S3 is protected by the AWS global network security 
 Access to Amazon S3 through the network is through AWS published APIs. Clients must support Transport Layer Security (TLS) 1.2. We recommend also supporting TLS 1.3 and hybrid post-quantum key exchange. To learn about post-quantum cryptography at AWS, including links to blog posts and research papers, see [Post-Quantum Cryptography for AWS](https://aws.amazon.com/security/post-quantum-cryptography/).
 
 **Note**
-TLS 1.3 is supported in all S3 endpoints, except for AWS PrivateLink for Amazon S3 and Multi-Region Access Points.
+TLS 1.3 is supported in all S3 endpoints, except Multi-Region Access Points.
 
 Clients must also support cipher suites with Perfect Forward Secrecy (PFS) such as Ephemeral Diffie-Hellman (DHE) or Elliptic Curve Diffie-Hellman Ephemeral (ECDHE). Additionally, requests must be signed using AWS Signature V4 or AWS Signature V2, requiring valid credentials to be provided.
 

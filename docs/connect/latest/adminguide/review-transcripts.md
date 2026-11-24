@@ -28,6 +28,11 @@ The following image shows an example of a chat contact. **System Message** appli
 
 1. In the **Recording** and **Transcript** sections of the **Contact details** page, review what was spoken or written, when, and their sentiment.
 
+   If a contact has more than one language, the transcript shows each segment in its language. For post-call analytics, if the language of a segment doesn't support redaction, conversational analytics redacts the entire segment. The redacted transcript shows the language code of the segment, for example, `[Content Removed - ko-KR redaction is not supported]`.
+
+   The following image shows the transcript of a contact with more than one language.
+![The Recording and Transcript sections of the Contact details page for a contact with more than one language. The transcript shows one customer turn in English. Conversational analytics removed the content of two customer turns because their language doesn't support redaction.](https://docs.aws.amazon.com/connect/latest/adminguide/images/review-transcripts-multi-language-redaction.png)
+
 1. For calls, if desired, choose the play prompt to listen to the recording. Or, choose the relevant part of the recording to listen to the portion you're interested in.
 
 1. For chats, if desired, use the graph to navigate to the portion of the transcript you're interested in.

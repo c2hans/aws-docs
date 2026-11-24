@@ -9,12 +9,22 @@ The solution addresses these challenges by providing:
 ## Centralized Data Management
 <a name="centralized-data-management"></a>
 
-Manage each dataset as an asset with versions, metadata, and permissions, rather than as loose files in a bucket. Files are stored in Amazon Simple Storage Service (Amazon S3) by content, so identical files are stored once across versions and assets. Use the web portal, desktop client, or APIs to upload, download, and manage files and folders, preserving the data structure.
+Manage each dataset as an asset with versions, metadata, and permissions, rather than as loose files in a bucket. You can store any file type. Files are stored in Amazon Simple Storage Service (Amazon S3) by content, so identical files are stored once across versions and assets. Use the Spatial Data Portal, desktop application, or APIs to upload, download, and manage files and folders, preserving the data structure.
+
+## Work with Content Where It Lives
+<a name="work-where-content-lives"></a>
+
+In a cloud workflow, content stays in place, and people and applications come to it. Open point clouds, 3D models, maps, tables, images, and video in the browser, without saving a copy to your computer. For many formats, the Portal reads only the part of the file on screen, so a very large capture opens quickly. Compare two versions of a file, swipe between two images, or see the lines that changed between two text files. You can also layer GeoTIFF and vector files on one map. For the file types you can view, see [View and inspect your content](view-your-content.md).
 
 ## Versions and Lineage
 <a name="versions-and-lineage"></a>
 
-Every change to an asset creates a new version. Metadata and derived content, such as previews, converted formats, and model outputs, are recorded on the version they describe, so a result stays with the data it was made from, even after later uploads. Assets that a connector creates from another asset record where they came from, so you can trace a result back to its source.
+Every change to an asset creates a new version. Metadata and derived content, such as previews, converted formats, and model outputs, are recorded on the version they describe, so a result stays with the data it was made from, even after later uploads. Assets that a connector creates from another asset record where they came from, so you can trace a result back to its source. A connector run also records the connector version and the parameter values it ran with, and each attribute that a run writes records which run wrote it.
+
+## Fine-Grained Access Control
+<a name="fine-grained-access-control"></a>
+
+Grant access to each library, project, asset template, and connector separately. The Owner, Manager, Contributor, and Viewer levels decide who can change content and who can only look. Projects add a Consumer level for people who may download files but not change them. Users can sign in with your organization’s identity provider, such as Microsoft Entra ID, through SAML 2.0 or OpenID Connect. See [Access Management](access-control.md) and [Single Sign-On (SSO)](sso.md).
 
 ## Automated Metadata Enrichment
 <a name="automated-metadata-enrichment"></a>

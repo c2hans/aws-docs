@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/partner-integrations.html
 ---
 
-# Partner integrations
+# Partner Integrations
 
 SDMA integrates with third-party partner products available on AWS Marketplace. These integrations use SDMA’s connector framework to bring partner capabilities — such as 3D optimization, format conversion, and quality analysis — directly into your governed asset workflow.
 

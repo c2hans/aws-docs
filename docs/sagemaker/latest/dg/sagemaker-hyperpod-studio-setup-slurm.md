@@ -86,14 +86,14 @@ The following instructions describe how to set up a HyperPod Slurm cluster in St
 
 1. [Turn on Run As support for Linux and macOS managed nodes](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-preferences-run-as.html). The Run As settings are account wide and is required for all SSM sessions to start successfully.
 
-1. (Optional) [Restrict task view in Studio for Slurm clusters](#sagemaker-hyperpod-studio-setup-slurm-restrict-tasks-view). For information on viewable tasks in Studio, see [Tasks](sagemaker-hyperpod-studio-tabs.md#sagemaker-hyperpod-studio-tabs-tasks).
+1. (Optional) [Restrict task view in Studio for Slurm clusters](#sagemaker-hyperpod-studio-setup-slurm-restrict-tasks-view). For information on viewable tasks in Studio, see [Workloads](sagemaker-hyperpod-studio-workloads.md).
 
 In Amazon SageMaker Studio you can navigate to view your clusters in HyperPod clusters (under Compute).
 
 ## Restrict task view in Studio for Slurm clusters
 <a name="sagemaker-hyperpod-studio-setup-slurm-restrict-tasks-view"></a>
 
-You can restrict users to view Slurm tasks that are authorized to view, without requiring manual input of namespaces or additional permissions checks. The restriction is applied based on the users’ IAM role, providing a streamlined and secure user experience. The following section provides information on how to restrict task view in Studio for Slurm clusters. For information on viewable tasks in Studio, see [Tasks](sagemaker-hyperpod-studio-tabs.md#sagemaker-hyperpod-studio-tabs-tasks).
+You can restrict users to view Slurm tasks that are authorized to view, without requiring manual input of namespaces or additional permissions checks. The restriction is applied based on the users’ IAM role, providing a streamlined and secure user experience. The following section provides information on how to restrict task view in Studio for Slurm clusters. For information on viewable tasks in Studio, see [Workloads](sagemaker-hyperpod-studio-workloads.md).
 
 All Studio users can view, manage, and interact with all Slurm cluster tasks by default. To restrict this, you can manage access to SageMaker HyperPod clusters at an IAM role or user level by using the **Run As** feature in [AWS Systems Manager Agent (SSM Agent)](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
 

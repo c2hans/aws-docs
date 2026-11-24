@@ -4,13 +4,18 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 
 # CredentialsProviderConfiguration
 
-The credential provider configuration for a payment connector. Specifies the payment provider type and its associated credential provider.
+The configuration for a payment connector. Specifies the payment provider type and either its associated credential provider or, for an AWS Billing payment connector, its billing configuration.
 
 ## Contents
 <a name="API_CredentialsProviderConfiguration_Contents"></a>
 
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** awsBilling **   <a name="bedrockagentcorecontrol-Type-CredentialsProviderConfiguration-awsBilling"></a>
+The configuration for an AWS Billing payment connector. The service sets this configuration when it creates the connector and returns it in responses. Don't specify it when you create an AWS Billing payment connector.
+Type: [AwsBillingConnectorConfiguration](API_AwsBillingConnectorConfiguration.md) object
+Required: No
 
  ** coinbaseCDP **   <a name="bedrockagentcorecontrol-Type-CredentialsProviderConfiguration-coinbaseCDP"></a>
 The credential provider configuration for a Coinbase CDP payment connector.

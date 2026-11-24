@@ -57,11 +57,11 @@ Pattern: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso::[0-9]{12}:applicati
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You do not have sufficient access to perform this action.
+You do not have permission to perform this operation.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+An internal error occurred while processing the request.
 HTTP Status Code: 500
 
  ** SetupFailedException **
@@ -72,11 +72,11 @@ The request to set up an IAM Identity Center application that represents the AWS
 HTTP Status Code: 400
 
  ** ThrottlingException **
-Indicates that the principal has crossed the throttling limits of the API operations.
+Your request was throttled because you exceeded the allowed request rate.
 HTTP Status Code: 400
 
  ** ValidationException **
-The request failed because it contains a syntax error.
+The request contains invalid or incorrectly formatted input.
 HTTP Status Code: 400
 
 ## See Also

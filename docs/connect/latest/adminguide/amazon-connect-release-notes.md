@@ -9,6 +9,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026 Updates
 <a name="nov26-release-notes"></a>
 
+### Amazon Connect Customer conversational analytics now analyzes calls in more than one language
+<a name="nov26-multi-language-analytics"></a>
+
+Amazon Connect Customer conversational analytics can now analyze a voice contact in up to five languages, including calls in which customers and agents switch languages. In the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) flow block, choose the languages that your customers and agents speak. Conversational analytics identifies the language of each segment of the call and transcribes the segment in that language. Redaction, sentiment analysis, and contact summaries work for each language that supports them. The contact record, contact events, the DescribeContact API, and the conversational analytics output files include the languages of the contact. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
+
+Available in all AWS Regions where Connect Customer conversational analytics is offered. For more information, see [Availability of Connect Customer features by Region](regions.md).
+
 ### Amazon Connect Customer analytics dashboards now show agent status metrics
 <a name="nov26-agent-status-metrics"></a>
 

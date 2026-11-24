@@ -37,7 +37,7 @@ Required: Yes
  ** type **   <a name="bedrockagentcorecontrol-Type-PaymentConnectorSummary-type"></a>
 The type of the payment connector, which determines the payment provider integration.
 Type: String
-Valid Values: `CoinbaseCDP | StripePrivy`
+Valid Values: `CoinbaseCDP | StripePrivy | AwsBilling`
 Required: Yes
 
  ** provisionMode **   <a name="bedrockagentcorecontrol-Type-PaymentConnectorSummary-provisionMode"></a>

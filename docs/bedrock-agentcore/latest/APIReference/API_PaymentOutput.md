@@ -12,6 +12,11 @@ The payment output details, which vary by payment type.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** awsBillingX402 **   <a name="BedrockAgentCore-Type-PaymentOutput-awsBillingX402"></a>
+Output from an AWS Billing x402 payment.
+Type: [AwsBillingX402PaymentOutput](API_AwsBillingX402PaymentOutput.md) object
+Required: No
+
  ** cryptoX402 **   <a name="BedrockAgentCore-Type-PaymentOutput-cryptoX402"></a>
 Output from a crypto X402 payment.
 Type: [CryptoX402PaymentOutput](API_CryptoX402PaymentOutput.md) object

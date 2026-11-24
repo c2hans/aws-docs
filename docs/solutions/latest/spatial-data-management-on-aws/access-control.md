@@ -41,7 +41,7 @@ The following table provides a high-level overview of the permission levels and 
 | Remove Contributors or Viewers | ✓ | ✓ |  |  |
 | View all members | ✓ | ✓ | ✓ |  |
 
-### Permission level details
+### Permission Level Details
 <a name="permission-level-summary-details"></a>
 
 #### Owner
@@ -65,12 +65,13 @@ The following table provides a high-level overview of the permission levels and 
 + Can view the list of members
 + Has access to create and edit features in the Spatial Data Portal
 
-#### Consumer (Projects only)
+#### Consumer (Projects Only)
 <a name="consumer"></a>
 + Can view resource details and download file content
 + Can obtain temporary credentials for asset downloads via the CLI or desktop application
 + Cannot create, update, or delete anything
 + Cannot see the list of members
++ Can open files in the Portal’s viewers, compare files, and layer maps (see [View and inspect your content](view-your-content.md))
 + Has access to view and download features in the Spatial Data Portal
 
 **Note**
@@ -81,23 +82,24 @@ Consumer is only available on Projects. It provides the same read and download a
 + Read-only access to resource metadata (names, descriptions, file listings, attributes)
 + Can see file metadata and server-generated thumbnail previews
 + Cannot download file content or obtain temporary credentials for asset downloads on Projects
++ Cannot open file contents in the Portal’s viewers, compare files, or use layer maps
 + Cannot create, update, or delete anything
 + Cannot see the list of members
 + Has access only to view features in the Spatial Data Portal
 
-## Library-level Creation Control
+## Library-Level Creation Control
 <a name="library-level-creation-control"></a>
 
 The permission model separates resource creation from resource operation. This design provides granular control over who can create primary resource types versus who can use and operate them.
 
-### How it works
+### How It Works
 <a name="_how-it-works"></a>
 + To create new Projects, Asset Templates, or Connectors, you need at least Contributor permissions on the Library itself
 + When you create a resource, you automatically become its Owner
 + Library-level permissions also directly inherit to all resources under that Library
 + This separation allows organizations to grant full operational control over individual resources to their owners without providing them higher-level access to create new primary resources
 
-### Example scenarios
+### Example Scenarios
 <a name="_example-scenarios"></a>
 
  **Alice is a Library Contributor:**
@@ -275,7 +277,7 @@ The solution has four main resource types, each with its own permission manageme
 + Connector details page shows configuration and status
 + Access Management tab shows who has access
 
-### View your permission level
+### View Your Permission Level
 <a name="managing-permissions-in-the-portal"></a>
 
 The Spatial Data Portal controls what you can see and do based on your permission level. To understand your access:
@@ -285,7 +287,7 @@ The Spatial Data Portal controls what you can see and do based on your permissio
 + If you see "View" and "Download" options, you have Consumer or higher permissions on a Project
 + If you only see "View" options without download controls, you have Viewer permissions on a Project
 
-### View members
+### View Members
 <a name="viewing-members"></a>
 
 To see who has access to a resource, complete the following steps.
@@ -301,7 +303,7 @@ To see who has access to a resource, complete the following steps.
 **Note**
 You must be a Contributor or higher to view the Access Management tab.
 
-### Add members
+### Add Members
 <a name="adding-members"></a>
 
 To grant someone access to a resource, complete the following steps.
@@ -324,7 +326,7 @@ To grant someone access to a resource, complete the following steps.
 **Note**
 You must be a Manager or Owner to add members.
 
-### Change permission levels
+### Change Permission Levels
 <a name="changing-permission-levels"></a>
 
 To change someone’s permission level, complete the following steps.
@@ -346,7 +348,7 @@ To change someone’s permission level, complete the following steps.
 + Owners can change any permission level
 + You cannot change your own permission level
 
-### Removing members
+### Removing Members
 <a name="removing-members"></a>
 
 To remove someone’s access:
@@ -522,7 +524,7 @@ Either party can remove an association at any time:
 
  **As a Library Owner or Manager:**
 
-1. Create the Project (from the home page, select "Create project")
+1. Create the Project (from the **Projects** page, choose Browse projects and **Create**)
 
 1. Add team members with appropriate permissions:
    + Add Project Managers (can manage team access)

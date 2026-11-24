@@ -20,11 +20,12 @@ This document provides a comprehensive inventory of all AWS resources deployed b
 
 | Function Name | Purpose | Timeout | Memory | Concurrency | VPC |
 | --- | --- | --- | --- | --- | --- |
-| Resource Operation Function | Main API handler for CRUD operations on libraries, projects, assets, files, connectors, and templates | 900s | 1024 MB | Reserved: 300 | Private subnets |
-| Connector Invocation Function | Executes connector workflows for external system integrations | 900s | 512 MB | Reserved: 100 | Private subnets |
+| Resource Operation Function | Main API handler for CRUD operations on libraries, projects, assets, files, connectors, and templates | 900s | 1024 MB | Reserved: 240 | Private subnets |
+| Connector Invocation Function | Executes connector workflows for external system integrations | 900s | 512 MB | Reserved: 40 | Private subnets |
+| Connector Invocation Async Function | Starts each queued connector run | 900s | 2654 MB | Reserved: 40 | Private subnets |
 | Cognito Identity Function | Handles Cognito user pool triggers for user lifecycle events | 900s | 1024 MB | Default | Private subnets |
 | Assets Search Indexer Function | Indexes asset metadata into OpenSearch for full-text and geospatial search | 900s | 1024 MB | Default | Private subnets |
-| Asset Watcher Function | Processes S3 notifications for file uploads/changes, EventBridge for asset operations, and Dymano DB streams for connector invocation updates | 900s | 1024 MB | Reserved: 100 | Private subnets |
+| Asset Watcher Function | Processes S3 notifications for file uploads/changes, EventBridge for asset operations, and DynamoDB streams for connector invocation updates | 900s | 1024 MB | Reserved: 80 | Private subnets |
 | Metric Emitter Function | Emits custom CloudWatch metrics for application monitoring | 900s | 256 MB | Default | Private subnets |
 | System Bootstrap Function | Initializes system during deployment, creates default library, sets up OpenSearch indexes, and configures initial system state | 900s | 1024 MB | Default | Private subnets |
 
@@ -94,21 +95,20 @@ There are also 6 additional lambdas that get created for managing custom resourc
 ## Amazon SQS Queues
 <a name="amazon-sqs-queues"></a>
 
- **Total Queues Deployed:** 8 (4 primary \+ 4 dead letter queues)
+ **Total Queues Deployed:** 5 (4 primary \+ 1 shared dead letter queue)
 
 | Queue Name | Type | Purpose | Visibility Timeout | Message Retention | Dead Letter Queue |
 | --- | --- | --- | --- | --- | --- |
-| Asset File Notification Queue | Standard | Receives S3 event notifications for file uploads/changes | 900s | 14 days | Yes (max 3 retries) |
-| Asset CRUD Notification Queue | Standard | Receives EventBridge events for asset create/update/delete operations | 900s | 14 days | Yes (max 3 retries) |
-| Deadline Notification Queue | Standard | Receives notifications from AWS Deadline Cloud for job status updates | 900s | 14 days | Yes (max 3 retries) |
-| Connector Queue | FIFO | Queues connector invocation requests for sequential processing | 900s | 14 days | Yes (max 3 retries) |
-| Dead Letter Queues (4 instances) | Standard | Captures failed messages after max retry attempts | — | 14 days | — |
+| Asset File Notification Queue | Standard | Receives S3 event notifications for file uploads/changes | 1,200s | 4 days | Yes (max 5 receives) |
+| Asset CRUD Notification Queue | Standard | Receives EventBridge events for asset create/update/delete operations | 1,200s | 4 days | Yes (max 5 receives) |
+| Deadline Notification Queue | Standard | Receives notifications from AWS Deadline Cloud for job status updates | 1,200s | 4 days | Yes (max 5 receives) |
+| Connector Queue | FIFO | Queues connector invocation requests, ordered for each resource and connector | 1,200s | 14 days | No |
+| Asset Watcher Dead Letter Queue | Standard | Captures messages from the three notification queues after 5 failed receives | 30s | 14 days | — |
 
  **Configuration:**
-+ All queues encrypted with KMS customer-managed keys
-+ All queues configured with 900s visibility timeout
-+ Message retention set to 14 days
-+ Dead letter queues configured with max receive count of 3
++ The visibility timeout of each queue that a function reads is longer than the function’s 900 second timeout, so a long run is not delivered a second time while it is still running.
++ Messages that fail five times in a notification queue move to the dead letter queue, where they are kept for 14 days.
++ The file and Deadline notification queues batch messages for 2 seconds.
 
 ## Amazon EventBridge Scheduler
 <a name="eventbridge-scheduler"></a>
@@ -259,10 +259,10 @@ Deadline Cloud
 
  **Deployed Resources:**
 + VPC Infrastructure (1 VPC, 6 subnets across 2 AZs, 18 VPC endpoints, 4 security groups)
-+ Lambda Functions (13 total)
++ Lambda Functions (see [AWS Lambda Functions](#aws-lambda-functions))
 + DynamoDB Tables (12 total)
 + S3 Buckets (5 total)
-+ SQS Queues (8 total: 4 primary \+ 4 dead letter)
++ SQS Queues (5 total: 4 primary \+ 1 shared dead letter)
 + API Gateway (1 REST API)
 + Cognito (1 user pool, 1 identity pool)
 + EventBridge (multiple rules for event routing)

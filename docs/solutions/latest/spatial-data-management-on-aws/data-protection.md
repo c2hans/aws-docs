@@ -2,36 +2,36 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/data-protection.html
 ---
 
-# Data protection
+# Data Protection
 
 The Spatial Data Management Application (SDMA) protects both customer content and metadata.
 
-## Encryption at rest
+## Encryption at Rest
 <a name="encryption-at-rest"></a>
 
 The solution encrypts all stored data at rest using industry-standard encryption:
 
-### Customer content (spatial assets)
+### Customer Content (Spatial Assets)
 <a name="_customer-content-spatial-assets"></a>
 
  **Amazon S3** The solution encrypts all spatial asset files (for example, point clouds, 3D models, images, E57, and LAS files) using server-side encryption with Amazon S3 managed keys (SSE-S3).
 
-### Metadata and application data
+### Metadata and Application Data
 <a name="_metadata-and-application-data"></a>
 
  **Amazon DynamoDB** The solution encrypts all DynamoDB tables using AWS owned keys (default encryption). Backups are encrypted with the same keys. **Amazon OpenSearch Serverless** Data is encrypted at rest using AWS managed encryption.
 
-### Logs and audit data
+### Logs and Audit Data
 <a name="_logs-and-audit-data"></a>
 
  **Amazon CloudWatch Logs** – Log data is encrypted using AWS KMS. **AWS CloudTrail** – Audit logs stored in S3 are encrypted using SSE-S3. **S3 access logs** – Access logs are encrypted using SSE-S3.
 
-### Message queues
+### Message Queues
 <a name="_message-queues"></a>
 
  **Amazon SQS** All queues use AWS KMS encryption for messages at rest.
 
-## Encryption in transit
+## Encryption in Transit
 <a name="encryption-in-transit"></a>
 
 The solution encrypts all transmitted data in transit:

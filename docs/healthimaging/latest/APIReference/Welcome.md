@@ -6,4 +6,4 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/Welcom
 
 This is the *AWS HealthImaging API Reference*. For an introduction to the service, see [What is AWS HealthImaging?](https://docs.aws.amazon.com/healthimaging/latest/devguide/what-is.html) in the *AWS HealthImaging Developer Guide*.
 
-This document was last published on November 20, 2026.
+This document was last published on November 23, 2026.

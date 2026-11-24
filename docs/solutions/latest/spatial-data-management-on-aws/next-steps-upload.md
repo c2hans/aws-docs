@@ -8,5 +8,5 @@ Now that you have uploaded your first asset, you can:
 + Add metadata to improve discoverability
 + Create asset templates to standardize future uploads
 + Assign permissions to allow other users to access the asset
-+ Configure connectors to process new uploads and publish results to external systems. For an example of three connectors working on one asset, see [Example – three connectors, one asset](connectors-overview.md#connector-example-chain).
++ Configure connectors to process new uploads and publish results to external systems. For an example of three connectors working on one asset, see [Example – Three Connectors, One Asset](connectors-overview.md#connector-example-chain).
 + Upload additional assets to build your spatial data library

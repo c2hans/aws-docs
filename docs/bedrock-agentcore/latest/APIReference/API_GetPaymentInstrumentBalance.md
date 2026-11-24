@@ -58,8 +58,8 @@ Required: Yes
  ** [paymentInstrumentId](#API_GetPaymentInstrumentBalance_RequestSyntax) **   <a name="BedrockAgentCore-GetPaymentInstrumentBalance-request-paymentInstrumentId"></a>
 The ID of the payment instrument to query balance for.
 Type: String
-Length Constraints: Fixed length of 34.
-Pattern: `payment-instrument-[0-9a-zA-Z-]{15}`
+Length Constraints: Minimum length of 34. Maximum length of 35.
+Pattern: `(payment-instrument-[0-9a-zA-Z-]{15}|aws\.agentcorepayments\.awsbilling\.v1)`
 Required: Yes
 
  ** [paymentManagerArn](#API_GetPaymentInstrumentBalance_RequestSyntax) **   <a name="BedrockAgentCore-GetPaymentInstrumentBalance-request-paymentManagerArn"></a>
@@ -104,8 +104,8 @@ The following data is returned in JSON format by the service.
  ** [paymentInstrumentId](#API_GetPaymentInstrumentBalance_ResponseSyntax) **   <a name="BedrockAgentCore-GetPaymentInstrumentBalance-response-paymentInstrumentId"></a>
 The ID of the payment instrument.
 Type: String
-Length Constraints: Fixed length of 34.
-Pattern: `payment-instrument-[0-9a-zA-Z-]{15}`
+Length Constraints: Minimum length of 34. Maximum length of 35.
+Pattern: `(payment-instrument-[0-9a-zA-Z-]{15}|aws\.agentcorepayments\.awsbilling\.v1)`
 
  ** [tokenBalance](#API_GetPaymentInstrumentBalance_ResponseSyntax) **   <a name="BedrockAgentCore-GetPaymentInstrumentBalance-response-tokenBalance"></a>
 The balance of the supported token on the requested chain.

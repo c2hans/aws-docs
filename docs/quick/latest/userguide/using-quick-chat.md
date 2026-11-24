@@ -19,6 +19,7 @@ Quick chat provides you with the following capabilities.
 + [Chatting with Topics](#chatting-with-topics)
 + [Web search](#web-search)
 + [Upload files and chat](#file-uploads)
++ [Voice mode](#voice-mode)
 + [Slash commands](#slash-commands)
 + [Mentions](#mentions)
 + [All data and apps panel](#all-data-and-apps)
@@ -38,6 +39,7 @@ Quick chat provides you with the following capabilities.
 + [Running work in the background](#background-work)
 + [Chat features in the desktop app](#desktop-app-chat)
 + [AWS Quick chat explanations](chat-explanations.md)
++ [Using voice mode (Preview)](using-voice-mode.md)
 
 ## Welcome message
 <a name="welcome-message"></a>
@@ -175,6 +177,11 @@ Documents uploaded through the chat interface are deleted with the associated co
 
 **Note**
 Audio and video files are not supported as file uploads.
+
+## Voice mode
+<a name="voice-mode"></a>
+
+To talk to Quick instead of typing, choose the voice mode icon in the chat input. Quick answers out loud and keeps a text transcript in the conversation. For more information, see [Using voice mode (Preview)](using-voice-mode.md).
 
 ## Slash commands
 <a name="slash-commands"></a>

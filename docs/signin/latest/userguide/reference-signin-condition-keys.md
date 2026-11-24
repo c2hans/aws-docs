@@ -127,6 +127,7 @@ The following OAuth condition keys are available.
 | signin:OAuthGrantType | String | Controls which OAuth grant types are permitted. Values: authorization\_code, refresh\_token, client\_credentials, urn:ietf:params:oauth:grant-type:token-exchange, urn:ietf:params:oauth:grant-type:jwt-bearer. | signin:CreateOAuth2Token |
 | signin:OAuthClientAuthentication | String | Controls permitted OAuth client authentication methods. | signin:CreateOAuth2Token |
 | signin:OAuthTokenType | String | Controls operations performed on OAuth access and refresh tokens. Values: access\_token, refresh\_token. | signin:RevokeOAuth2Token, signin:IntrospectOAuth2Token |
+| signin:PutSignInDurationBlock | Boolean | Blocks the creation and renewal of extended sign-in sessions. | signin:CreateOAuth2Token |
 
 ### signin:OAuthClientId
 <a name="reference-signin-condition-keys-oauth-client-id"></a>
@@ -334,6 +335,43 @@ Applicable actions
 }
 ```
 
+### signin:PutSignInDurationBlock
+<a name="reference-signin-condition-keys-oauth-put-signin-duration-block"></a>
+
+Use `signin:PutSignInDurationBlock` in a service control policy (SCP) to block users from extending the sign-in session duration for sign-in sessions, such as those used by the AWS CLI and OAuth applications.
+
+Supported values include:
++ `true`
++ `false`
+
+Applicable actions
++ `signin:CreateOAuth2Token`
+
+The following example SCP blocks the creation and renewal of extended sign-in sessions:
+
+**Example – Block extended sign-in sessions:**
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyExtendedSignInSessions",
+      "Effect": "Deny",
+      "Action": "signin:CreateOAuth2Token",
+      "Resource": "*",
+      "Condition": {
+        "Bool": {
+          "signin:PutSignInDurationBlock": "true"
+        }
+      }
+    }
+  ]
+}
+```
+
+When this policy is applied, AWS denies attempts to create or renew extended sign-in sessions, including sessions established before the policy took effect. The SCP does not change the configured sign-in duration on individual IAM users or roles; instead, it restricts the use of extended sessions within the affected accounts.
+
 ## Condition key availability by action
 <a name="reference-signin-condition-keys-availability"></a>
 
@@ -354,6 +392,7 @@ The following table shows which condition keys are available for each action.
 | signin:OAuthGrantType | No | No | Yes | No | No | No |
 | signin:OAuthClientAuthentication | No | No | Yes | No | No | No |
 | signin:OAuthTokenType | No | No | No | Yes | Yes | No |
+| signin:PutSignInDurationBlock | No | No | Yes | No | No | No |
 
 **Note**
 The `signin:CreateAccount` action is used exclusively in VPC endpoint policies for Console Private Access and is not available for resource-based policies or RCPs. No service-specific condition keys are associated with it. See [Console Private Access](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/console-private-access.html).

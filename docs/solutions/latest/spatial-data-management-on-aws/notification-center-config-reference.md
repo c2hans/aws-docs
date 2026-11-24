@@ -2,16 +2,20 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/notification-center-config-reference.html
 ---
 
-# Configuration reference
+# Configuration Reference
 
 | Field | Required | Description |
 | --- | --- | --- |
 |  `notificationConfig.recipients`  | Yes | Array of recipient entries. Each entry specifies a user (`principalId` \+ `"principalType": "USER"`), a group (`principalId` \+ `"principalType": "GROUP"`), or a project role (`"role": "OWNER"` \| `"MANAGER"` \| `"CONTRIBUTOR"` \| `"VIEWER"`). |
 |  `notificationConfig.channels`  | Yes | Array with exactly one channel entry. Specify `"type": "slack"`, `"type": "inApp"`, or `"type": "email"`. |
 |  `notificationConfig.channels[].webhookUrlSecretArn`  | Slack only | ARN of the Secrets Manager secret containing the Slack webhook URL. |
+|  `securityConfig`  | Slack and email | The role that the connector assumes to read the Slack secret or send email. Slack and email channels need it. See [Security Configuration](connector-configuration.md#security-configuration). |
+|  `notificationConfig.channels[].emailAddresses`  | No (email only) | Addresses to send to in addition to the resolved recipients. Required when `includeRecipientEmails` is `false`. |
+|  `notificationConfig.channels[].includeRecipientEmails`  | No (email only) | Defaults to `true`. Set to `false` to send only to `emailAddresses`. |
+|  `notificationConfig.channels[].region`  | No (email only) | The Region of the Amazon SES identity to send from. Defaults to the deployment’s Region. |
 |  `notificationConfig.channels[].senderEmail`  | No (email only) | The address that SDMA sends email from. You must verify this address as an Amazon SES identity. If you omit this field, SDMA uses the sender configured for the deployment. |
 |  `notificationConfig.messages`  | No | Message templates. Either a flat array of strings (applied to all events), or a per-resource-type object with keys `asset`, `project`, `file`, and/or `default`. Supports `${eventName}` and all standard SDMA field variables. Multiple entries are concatenated with newlines. If omitted, defaults to `"{resourceName} — {eventName}"`. |
 |  `triggers[].steps`  | Yes | Array with one entry: `[{"stepType": "notification"}]`. |
 |  `triggers[].resources`  | Yes | Resource types that activate this rule: `"asset"`, `"project"`, or `"file"`. |
 |  `triggers[].events`  | Yes | Lifecycle events that activate this rule. See [Connector configuration](connector-configuration.md) for supported event types. |
-|  `triggers[].filter`  | No | Optional filter, for example on file type or on project, asset, or file metadata attributes. See [Trigger filters](connector-configuration.md#trigger-filters). |
+|  `triggers[].filter`  | No | Optional filter, for example on file type or on project, asset, or file metadata attributes. See [Trigger Filters](connector-configuration.md#trigger-filters). |

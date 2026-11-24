@@ -35,4 +35,4 @@ Connect Customer conversational analytics analyzes the sentiment of each speaker
 + Frequency. The number of times the sentiment is positive, negative or neutral.
 + Sentiment streaks. The consecutive turns with same sentiment.
 
-The overall sentiment score is the average of the scores assigned during each portion of the call.
+The overall sentiment score is the average of the scores assigned during each portion of the call. For a contact with more than one language, the overall sentiment score is available only if all the languages that you choose support sentiment analysis.

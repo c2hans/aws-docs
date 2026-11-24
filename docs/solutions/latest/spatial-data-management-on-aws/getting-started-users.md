@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/getting-started-users.html
 ---
 
-# Getting Started for users
+# Getting Started for Users
 
 ## Test or Proof of Concept Setup
 <a name="test-proof-of-concept-setup"></a>
@@ -20,7 +20,7 @@ If you are evaluating Spatial Data Management on AWS or running a proof of conce
    + Assign one user as **Contributor** to test content creation workflows
    + Assign one user as **Viewer** to test read-only access
 
-1. Choose a user (Library Owner or Contributor) and follow the [Upload your first asset](upload-first-asset.md) guide to create your first project and upload your first asset
+1. Choose a user (Library Owner or Contributor) and follow the [Upload Your First Asset](upload-first-asset.md) guide to create your first project and upload your first asset
 
 This setup allows you to evaluate the solution’s permission model and test different user workflows.
 

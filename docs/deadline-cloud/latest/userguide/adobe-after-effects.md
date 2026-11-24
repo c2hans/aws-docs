@@ -24,6 +24,7 @@ The following table shows current support levels for After Effects versions:
 | 2024 | Windows, macOS | Windows |
 | 2025 | Windows, macOS | Windows |
 | 2026 | Windows, macOS | Windows |
+| 2027 | Windows, macOS | Windows |
 
 ## Deadline Cloud Conda Channel
 <a name="after-effects-conda-channel"></a>
@@ -37,6 +38,8 @@ The following table lists all conda packages applicable to After Effects availab
 | Windows | aftereffects | 25.2 |
 | Windows | aftereffects | 25.6 |
 | Windows | aftereffects | 26.0 |
+| Windows | aftereffects | 26.5 |
+| Windows | aftereffects | 27.0 |
 
 ## Getting started
 <a name="after-effects-getting-started"></a>
@@ -59,7 +62,7 @@ Complete the following steps to set up After Effects with Deadline Cloud. You wi
 
 To install the Deadline Cloud submitter for After Effects, prepare the following environment:
 + Windows or macOS workstation.
-+ Adobe After Effects 24, 25, or 26 installation.
++ Install Adobe After Effects 24, 25, 26, or 27.
 + Python 3.9 or higher.
 + Access to an Deadline Cloud farm with either:
   + A service-managed fleet with After Effects available (via custom conda package).
@@ -93,7 +96,7 @@ During the installer process, you choose between User Install or System Install.
 
 1. Run the installer (no admin required).
 
-1. Follow the prompts and select the After Effects submitter and choose the major version (for example, 24, 25, or 26).
+1. Follow the prompts and select the After Effects submitter and choose the major version (for example, 24, 25, 26, or 27).
 
 1. The submitter is installed based on your operating system:
    + **macOS**: The installer automatically places `DeadlineCloudSubmitter(User).jsx` and `DeadlineCloudSubmitter_Assets` into your After Effects user preferences directory for all minor versions of the selected major version:
@@ -442,7 +445,7 @@ See [Font attachment system](#after-effects-font-attachment) for supported font 
 ## After Effects plugins
 <a name="after-effects-plugins"></a>
 
-You can make After Effects plugins available on service-managed fleet workers by using either a conda package or a host configuration script. Plugins that are packaged as a conda package install into the After Effects `Plug-ins` directory when the conda environment activates. Plugins that require a full installer instead use a host configuration script that runs when each worker launches. To package several `.aex` plugins together, use the [aftereffects-plugin-bundle conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-plugin-bundle) on the GitHub website.
+You can make After Effects plugins available on service-managed fleet workers by using plugin sync, a conda package, or a host configuration script. With plugin sync, you upload `.aex` plugins and startup scripts to your queue's job attachments bucket, and the After Effects conda package copies them to each worker with no package to build. For the folder layout and the version folders that each After Effects version reads, see [Deliver custom plugins with plugin sync](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/plugin-sync.html) in the *Deadline Cloud Developer Guide*. Plugins that are packaged as a conda package install into the After Effects `Plug-ins` directory when the conda environment activates. Plugins that require a full installer instead use a host configuration script that runs when each worker launches. To package several `.aex` plugins together, use the [aftereffects-plugin-bundle conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-plugin-bundle) on the GitHub website.
 
 ### Saber
 <a name="after-effects-saber"></a>

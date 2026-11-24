@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 You can authenticate with the Spatial Data Management on AWS representational state transfer (REST) API using AWS IAM credentials and Signature Version 4 (SigV4) signing.
 
 **Note**
-If you are a user logged in through the Spatial Data Management portal using Amazon Cognito credentials, you can view the interactive API documentation at `<SDMA-PORTAL-FQDN>/api-docs`. You can find the portal fully qualified domain name (FQDN) in the AWS CloudFormation stack outputs after deployment. For more information, see [Deploy the solution](deploy-the-solution.md). The instructions below are for programmatic access using IAM SigV4 authentication.
+If you are a user logged in through the Spatial Data Management portal using Amazon Cognito credentials, you can view the interactive API documentation at `<SDMA-PORTAL-FQDN>/api-docs`. You can find the portal fully qualified domain name (FQDN) in the AWS CloudFormation stack outputs after deployment. For more information, see [Deploy the Solution](deploy-the-solution.md). The instructions below are for programmatic access using IAM SigV4 authentication.
 
-## Placeholders used in this guide
+## Placeholders Used in This Guide
 <a name="placeholders"></a>
 
 The examples in this guide use the following placeholders. You can find these values in the AWS CloudFormation stack outputs after deployment.
@@ -36,12 +36,12 @@ The high-level flow is:
 
 1. Send the signed request. API Gateway validates the signature and processes the call.
 
-## Setting up IAM access
+## Setting Up IAM Access
 <a name="iam-permissions"></a>
 
 The calling IAM principal (user or role) must have the `execute-api:Invoke` permission on the API. This section walks through creating a role with the correct policy and obtaining credentials.
 
-### Creating an IAM role for API access
+### Creating an IAM Role for API Access
 <a name="_creating-an-iam-role-for-api-access"></a>
 
 If you do not already have a role with the required permissions, create one:
@@ -67,7 +67,7 @@ If you do not already have a role with the required permissions, create one:
    }
    ```
 
-   Replace the placeholders with your deployment values. See [Placeholders used in this guide](#placeholders) for details.
+   Replace the placeholders with your deployment values. See [Placeholders Used in This Guide](#placeholders) for details.
 
 1. Name the policy (for example, `SpatialDataMgmtApiInvoke`), create it, and attach it to the role.
 
@@ -79,7 +79,7 @@ To restrict access to specific operations, narrow the `Resource` ARN. For exampl
 "Resource": "arn:aws:execute-api:<REGION>:<ACCOUNT_ID>:<API_ID>/2025-04-18/GET/iam/libraries*"
 ```
 
-#### Example: Assets and Projects access
+#### Example: Assets and Projects Access
 <a name="_example-assets-and-projects-access"></a>
 
 The following policy grants a user full access to Assets and Projects APIs, but no access to other resources such as Libraries, Connectors, or Asset Templates:
@@ -109,7 +109,7 @@ The Amazon Resource Name (ARN) pattern breakdown:
 |  `/iam/libraries//projects/ `  | All project operations under any library |
 |  `/iam/libraries//projects//assets/*`  | All asset operations under any project |
 
-#### Example: Read-only access
+#### Example: Read-Only Access
 <a name="_example-read-only-access"></a>
 
 To grant read-only access across all resources:
@@ -156,12 +156,12 @@ aws iam put-role-policy \
   }'
 ```
 
-### Obtaining credentials
+### Obtaining Credentials
 <a name="obtaining-credentials"></a>
 
 Once the role exists, obtain credentials to sign your requests.
 
-#### Temporary credentials with `AssumeRole`
+#### Temporary Credentials with `AssumeRole`
 <a name="_temporary-credentials-with-assumerole"></a>
 
 If you have an IAM role with the `execute-api:Invoke` permission, assume it to get temporary credentials:
@@ -191,7 +191,7 @@ aws sso login --profile <PROFILE_NAME>
 
 Then use `--profile <PROFILE_NAME>` with the AWS CLI, or set `AWS_PROFILE=<PROFILE_NAME>` so that SDKs and tools like `awscurl` pick up the credentials automatically.
 
-#### IAM user access keys
+#### IAM User Access Keys
 <a name="_iam-user-access-keys"></a>
 
 **Important**
@@ -205,7 +205,7 @@ aws configure
 
 Provide your `Access Key ID` and `Secret Access Key` when prompted. The AWS CLI stores your credentials in `~/.aws/credentials`.
 
-## Signing requests
+## Signing Requests
 <a name="signing-requests"></a>
 
 All requests to `/iam/` endpoints must include a SigV4 signature with the service name `execute-api` and the region where the API is deployed.
@@ -280,7 +280,7 @@ const signed = await signer.sign(request);
 // Use signed.headers with fetch or axios
 ```
 
-## API stage and URL format
+## API Stage and URL Format
 <a name="api-stage"></a>
 
 The API is deployed under the stage name `2025-04-18`. The full URL pattern is:
@@ -291,7 +291,7 @@ https://<API_ID>.execute-api.<REGION>.amazonaws.com/2025-04-18/iam/<resource-pat
 
 If a custom domain is configured, the stage name may be omitted depending on the base path mapping.
 
-## Rate limits
+## Rate Limits
 <a name="rate-limits"></a>
 
 The API enforces the following default limits. These values are configurable through Amazon API Gateway usage plan settings.

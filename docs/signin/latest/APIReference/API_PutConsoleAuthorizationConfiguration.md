@@ -67,7 +67,7 @@ Pattern: `(\d{12}|o-[a-z0-9]{10}|r-[0-9a-z]{4,32})`
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-You do not have sufficient access to perform this action.
+You do not have permission to perform this operation.
 HTTP Status Code: 400
 
  ** ConflictException **
@@ -75,11 +75,11 @@ The request conflicts with the current state of the resource. For example, this 
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+An internal error occurred while processing the request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The request was denied because the specified resource was not found.
+A resource specified in the request could not be found.
 HTTP Status Code: 400
 
  ** TooManyRequestsError **
@@ -87,7 +87,7 @@ The request was denied due to rate limiting.
 HTTP Status Code: 400
 
  ** ValidationException **
-The request failed because it contains a syntax error.
+The request contains invalid or incorrectly formatted input.
 HTTP Status Code: 400
 
 ## See Also

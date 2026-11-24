@@ -6,12 +6,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 This page provides detailed walkthroughs for federating the Amazon Cognito user pool with Microsoft Entra ID (formerly Azure Active Directory) using either OIDC or SAML 2.0. Microsoft Entra ID is the most common external identity provider for SDMA.
 
-Before you begin, complete the prerequisites and gather your Amazon Cognito values described in [Single sign-on (SSO)](sso.md). These procedures use the placeholders defined in [Placeholders used in these procedures](sso.md#sso-placeholders). For protocol-level background that applies to any identity provider, see [Configure any external identity provider](external-identity-provider.md).
+Before you begin, complete the prerequisites and gather your Amazon Cognito values described in [Single Sign-On (SSO)](sso.md). These procedures use the placeholders defined in [Placeholders Used in These Procedures](sso.md#sso-placeholders). For protocol-level background that applies to any identity provider, see [Configure Any External Identity Provider](external-identity-provider.md).
 
-## Connect Entra ID using OIDC
+## Connect Entra ID Using OIDC
 <a name="entra-oidc"></a>
 
-### Step 1: Create an application registration in Entra ID
+### Step 1: Create an Application Registration in Entra ID
 <a name="entra-oidc-create-app"></a>
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) on the Microsoft website.
@@ -24,7 +24,7 @@ Before you begin, complete the prerequisites and gather your Amazon Cognito valu
 
 1. Select **Register an application to integrate with Entra ID (App you’re developing)**, and then choose **Create**.
 
-### Step 2: Configure the application registration
+### Step 2: Configure the Application Registration
 <a name="entra-oidc-configure-registration"></a>
 
 1. In the application registration, add the following **Redirect URI** with a platform type of **Web**:
@@ -39,7 +39,7 @@ You can find the domain portion under **Branding** > **Domain** in the Amazon Co
 
 1. On the **Overview** page, note the **Application (client) ID** and the **Directory (tenant) ID**. You need these values later.
 
-### Step 3: Create a client secret
+### Step 3: Create a Client Secret
 <a name="entra-oidc-client-secret"></a>
 
 1. In your registered application, choose **Certificates & secrets**.
@@ -52,7 +52,7 @@ You can find the domain portion under **Branding** > **Domain** in the Amazon Co
 **Important**
 Immediately copy the secret **Value** (not the **Secret ID**) and store it securely. The value is shown only once, and you provide it to Amazon Cognito in a later step.
 
-### Step 4: Configure API permissions
+### Step 4: Configure API Permissions
 <a name="entra-oidc-api-permissions"></a>
 
 1. In your registered application, choose **API permissions** > **Add a permission**.
@@ -64,7 +64,7 @@ Immediately copy the secret **Value** (not the **Secret ID**) and store it secur
    +  `profile`
    +  `email`
 
-### Step 5: Enable the groups claim
+### Step 5: Enable the Groups Claim
 <a name="entra-oidc-groups-claim"></a>
 
 If you plan to use Entra ID groups to assign permissions in SDMA, add a groups claim to the tokens.
@@ -81,7 +81,7 @@ Entra ID includes only groups that are assigned to the application when you sele
 
 1. Choose **Save**.
 
-### Step 6: (Optional) Emit group display names instead of group IDs
+### Step 6: (Optional) Emit Group Display Names Instead of Group IDs
 <a name="entra-oidc-group-names"></a>
 
 By default, the groups claim emits group IDs (GUIDs). To emit group display names, edit the application manifest.
@@ -113,7 +113,7 @@ By default, the groups claim emits group IDs (GUIDs). To emit group display name
 
 1. Save the modified manifest.
 
-### Step 7: Create the OIDC identity provider in Amazon Cognito
+### Step 7: Create the OIDC Identity Provider in Amazon Cognito
 <a name="entra-oidc-cognito-idp"></a>
 
 1. In the [Amazon Cognito console](https://console.aws.amazon.com/cognito/), choose **User pools**, and then select your user pool.
@@ -150,12 +150,12 @@ By default, the groups claim emits group IDs (GUIDs). To emit group display name
 
 1. Choose **Add identity provider**.
 
-Then enable the identity provider ([Enable the identity provider for the app client](external-identity-provider.md#idp-enable-app-client)) and verify the integration ([Verify the integration](external-identity-provider.md#idp-test)).
+Then enable the identity provider ([Enable the Identity Provider for the App Client](external-identity-provider.md#idp-enable-app-client)) and verify the integration ([Verify the Integration](external-identity-provider.md#idp-test)).
 
-## Connect Entra ID using SAML 2.0
+## Connect Entra ID Using SAML 2.0
 <a name="entra-saml"></a>
 
-### Step 1: Create an enterprise application in Entra ID
+### Step 1: Create an Enterprise Application in Entra ID
 <a name="entra-saml-create-app"></a>
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) on the Microsoft website.
@@ -168,18 +168,18 @@ Then enable the identity provider ([Enable the identity provider for the app cli
 
 1. Select **Integrate any other application you don’t find in the gallery (Non-gallery)**, and then choose **Create**.
 
-### Step 2: Configure basic SAML settings
+### Step 2: Configure Basic SAML Settings
 <a name="entra-saml-basic-config"></a>
 
 1. In the enterprise application, choose **Single sign-on**, and then choose **SAML**.
 
-1. In the **Basic SAML Configuration** section, choose **Edit**, and enter the following (see [Gather your Amazon Cognito values](sso.md#sso-gather-cognito-values) for these values):
+1. In the **Basic SAML Configuration** section, choose **Edit**, and enter the following (see [Gather Your Amazon Cognito Values](sso.md#sso-gather-cognito-values) for these values):
    +  **Identifier (Entity ID)** – `urn:amazon:cognito:sp:<USER_POOL_ID>`
    +  **Reply URL (Assertion Consumer Service URL)** – `https://<COGNITO_DOMAIN>.auth.<REGION>.amazoncognito.com/saml2/idpresponse`
 
 1. Choose **Save**.
 
-### Step 3: Configure attributes and claims
+### Step 3: Configure Attributes and Claims
 <a name="entra-saml-claims"></a>
 
 1. In the **Attributes & Claims** section, choose **Edit**.
@@ -217,21 +217,21 @@ Then enable the identity provider ([Enable the identity provider for the app cli
 **Important**
 Whichever source attribute you choose, you must use that same value form when you assign permissions to groups in SDMA. If you emit group display names, assign SDMA access using those names; if you emit group IDs, assign access using the GUIDs. For more information, see [Access Management](access-control.md).
 
-### Step 4: Obtain the identity provider metadata
+### Step 4: Obtain the Identity Provider Metadata
 <a name="entra-saml-metadata"></a>
 
 1. In the **SAML Certificates** section, copy the **App Federation Metadata Url**, or choose **Download** next to **Federation Metadata XML** to download the metadata file.
 
 You provide this metadata URL or file to Amazon Cognito in Step 6.
 
-### Step 5: Assign users and groups
+### Step 5: Assign Users and Groups
 <a name="entra-saml-assign-users"></a>
 
 1. In the enterprise application, choose **Users and groups**.
 
 1. Choose **Add user/group**, select the users or groups who should access SDMA, and then choose **Assign**.
 
-### Step 6: Create the SAML identity provider in Amazon Cognito
+### Step 6: Create the SAML Identity Provider in Amazon Cognito
 <a name="entra-saml-cognito-idp"></a>
 
 1. In the [Amazon Cognito console](https://console.aws.amazon.com/cognito/), choose **User pools**, and then select your user pool.
@@ -264,4 +264,4 @@ You provide this metadata URL or file to Amazon Cognito in Step 6.
 
 1. Choose **Save changes**.
 
-Then enable the identity provider ([Enable the identity provider for the app client](external-identity-provider.md#idp-enable-app-client)) and verify the integration ([Verify the integration](external-identity-provider.md#idp-test)).
+Then enable the identity provider ([Enable the Identity Provider for the App Client](external-identity-provider.md#idp-enable-app-client)) and verify the integration ([Verify the Integration](external-identity-provider.md#idp-test)).

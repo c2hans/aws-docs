@@ -122,7 +122,7 @@ Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_F
  ** [type](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-type"></a>
 The type of the payment connector, which determines the payment provider integration.
 Type: String
-Valid Values: `CoinbaseCDP | StripePrivy`
+Valid Values: `CoinbaseCDP | StripePrivy | AwsBilling`
 
 ## Errors
 <a name="API_GetPaymentConnector_Errors"></a>

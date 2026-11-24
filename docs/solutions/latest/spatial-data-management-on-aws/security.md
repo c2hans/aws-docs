@@ -9,7 +9,7 @@ When you build systems on AWS infrastructure, security responsibilities are shar
 This solution follows AWS security best practices and implements multiple layers of security controls.
 
  **Topics**
-+  [Data protection](data-protection.md)
++  [Data Protection](data-protection.md)
 +  [Identity and Access Management](identity-and-access-management.md)
 +  [Resilience](resilience.md)
 +  [Infrastructure Security](infrastructure-security.md)

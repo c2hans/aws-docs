@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-e
 
 # Example conversational analytics output files for a call
 
-The following sections provide examples of the output that results when conversational analytics detects issues, matches categories, indicates loudness, redacts sensitive data, and skipped analysis.
+The following sections provide examples of the output that results when conversational analytics detects issues, matches categories, indicates loudness, redacts sensitive data, analyzes a call in more than one language, and skipped analysis.
 
 Expand each section to learn more.
 
@@ -15,9 +15,12 @@ The following example shows the schema for a call that conversational analytics 
 
 Note the following about the analyzed file:
 + It doesn't indicate which sensitive data were redacted. All data are referred to as PII (personally identifiable information).
-+ Each turn includes a `Redaction` section only if it includes PII.
++ Each turn includes a `Redaction` section only if it includes PII or if its language doesn't support redaction.
 + If a `Redaction` section exists, it includes the offset in milliseconds. In a .wav file, the redacted portion will be silence. If desired, you can use the offset to replace the silence with something else, such as a beep.
 + If two or more PII redactions exist in a turn, the first offset applies to the first PII, the second offset applies to the second PII, and so on.
++ `LanguageCode` is the language of the contact. If you choose more than one language, `LanguageCode` is the most spoken language.
++ For voice contacts, the file always contains `LanguageCodes`. It lists only the languages that the participants spoke, from the languages that you choose to analyze.
++ `Configuration` shows the conversational analytics settings of the contact. `Configuration.LanguageLocales` lists all the languages that you set in the flow, in the order that you set them.
 
 ```json
 {
@@ -56,7 +59,23 @@ Note the following about the analyzed file:
         }
     ]
   },
+  "Configuration": {
+      "ChannelConfiguration": {
+          "AnalyticsModes": ["PostContact"]
+      },
+      "LanguageLocales": ["en-US"],
+      "RedactionConfiguration": {
+          "Behavior": "Enable",
+          "Policy": "RedactedAndOriginal",
+          "Entities": ["CREDIT_DEBIT_NUMBER", "NAME", "USERNAME"],
+          "MaskMode": "PII"
+      },
+      "SummaryConfiguration": {
+          "SummaryModes": ["PostContact"]
+      }
+  },
   "LanguageCode": "en-US",
+  "LanguageCodes": ["en-US"],
   "Participants": [
       {
           "ParticipantId": "CUSTOMER",
@@ -761,3 +780,167 @@ In this example, `RedactionMaskMode` is set to PII. When an entity is redacted, 
   ]
 }
 ```
+
+## Example original file for a call analyzed by conversational analytics in more than one language
+<a name="example-multi-language-original-file"></a>
+
+In the following example, the administrator chose `en-US`, `es-US`, and `fr-CA`. The participants spoke English and Spanish, but not French. As a result, `LanguageCodes` doesn't contain `fr-CA`.
+
+```json
+{
+  "Version": "1.1.0",
+  "AccountId": "your AWS account ID",
+  "Channel": "VOICE",
+  "ContentMetadata": {
+      "Output": "Raw"
+  },
+  "JobStatus": "COMPLETED",
+  "Configuration": {
+      "ChannelConfiguration": {
+          "AnalyticsModes": ["PostContact"]
+      },
+      "LanguageLocales": ["en-US", "es-US", "fr-CA"],
+      "RedactionConfiguration": {
+          "Behavior": "Disable"
+      },
+      "SummaryConfiguration": {
+          "SummaryModes": ["PostContact"]
+      }
+  },
+  "LanguageCode": "es-US",
+  "LanguageCodes": ["en-US", "es-US"],
+  "Participants": [
+      {
+          "ParticipantId": "CUSTOMER",
+          "ParticipantRole": "CUSTOMER"
+      },
+      {
+          "ParticipantId": "AGENT",
+          "ParticipantRole": "AGENT"
+      }
+  ],
+  "ConversationCharacteristics": {
+      "ContactSummary": {
+          "PostContactSummary": {
+              "Content": "El cliente llamó para cancelar su plan. El agente confirmó la cancelación."
+          }
+      },
+      ...
+  },
+  "Transcript": [
+      {
+          "BeginOffsetMillis": 0,
+          "Content": "Thank you for calling. How can I help you?",
+          "EndOffsetMillis": 3100,
+          "Id": "the ID of the turn",
+          "LanguageCode": "en-US",
+          "ParticipantId": "AGENT",
+          "Sentiment": "NEUTRAL"
+      },
+      {
+          "BeginOffsetMillis": 3200,
+          "Content": "Hola. Prefiero hablar en español. Quiero cancelar mi plan.",
+          "EndOffsetMillis": 7400,
+          "Id": "the ID of the turn",
+          "LanguageCode": "es-US",
+          "ParticipantId": "CUSTOMER",
+          "Sentiment": "NEGATIVE"
+      },
+      {
+          "BeginOffsetMillis": 7500,
+          "Content": "Claro. Su plan está cancelado.",
+          "EndOffsetMillis": 9800,
+          "Id": "the ID of the turn",
+          "LanguageCode": "es-US",
+          "ParticipantId": "AGENT",
+          "Sentiment": "POSITIVE"
+      }
+  ]
+}
+```
+
+Note the following about this example:
++ `Configuration.LanguageLocales` contains all three languages, in the order set in the flow. `LanguageCodes` contains only the languages that the participants spoke.
++ `LanguageCode` is `es-US` because Spanish is the most spoken language of the contact.
++ The summary is in Spanish because Spanish is the most spoken language among the chosen languages that support summaries.
+
+## Example redacted file for a call with a language that doesn't support redaction
+<a name="example-redacted-file-unsupported-language"></a>
+
+In the following example, the administrator chose `en-US` and `pl-PL`. Polish doesn't support redaction or sentiment analysis.
+
+```json
+{
+  "Version": "1.1.0",
+  "AccountId": "your AWS account ID",
+  "ContentMetadata": {
+      "Output": "Redacted",
+      "RedactionTypes": ["PII"],
+      "RedactionTypesMetadata": {
+          "PII": {
+              "RedactionEntitiesRequested": ["NAME"],
+              "RedactionMaskMode": "PII"
+          }
+      }
+  },
+  "Channel": "VOICE",
+  "JobStatus": "COMPLETED",
+  "Configuration": {
+      "ChannelConfiguration": {
+          "AnalyticsModes": ["PostContact"]
+      },
+      "LanguageLocales": ["en-US", "pl-PL"],
+      "RedactionConfiguration": {
+          "Behavior": "Enable",
+          "Policy": "RedactedAndOriginal",
+          "Entities": ["NAME"],
+          "MaskMode": "PII"
+      }
+  },
+  "LanguageCode": "en-US",
+  "LanguageCodes": ["en-US", "pl-PL"],
+  ...
+  "Transcript": [
+      {
+          "BeginOffsetMillis": 0,
+          "Content": "Hello, my name is [PII]. I need help with my order.",
+          "EndOffsetMillis": 4000,
+          "Id": "the ID of the turn",
+          "LanguageCode": "en-US",
+          "ParticipantId": "CUSTOMER",
+          "Sentiment": "NEUTRAL",
+          "Redaction": {
+              "RedactedTimestamps": [
+                  {
+                      "BeginOffsetMillis": 1100,
+                      "EndOffsetMillis": 1600
+                  }
+              ]
+          }
+      },
+      {
+          "BeginOffsetMillis": 4100,
+          "Content": "[Content Removed - pl-PL redaction is not supported]",
+          "EndOffsetMillis": 7000,
+          "Id": "the ID of the turn",
+          "LanguageCode": "pl-PL",
+          "ParticipantId": "CUSTOMER",
+          "Redaction": {
+              "RedactedTimestamps": [
+                  {
+                      "BeginOffsetMillis": 4100,
+                      "EndOffsetMillis": 7000
+                  }
+              ],
+              "Unsupported": true
+          }
+      }
+  ]
+}
+```
+
+Note the following about this example:
++ Conversational analytics redacts the entire Polish turn. The `Content` of the turn is `[Content Removed - pl-PL redaction is not supported]`, and `RedactedTimestamps` covers the entire turn. The redacted audio is silent for the duration of the turn.
++ `"Unsupported": true` indicates that conversational analytics redacted the entire turn because its language doesn't support redaction.
++ The Polish turn has no `Sentiment` field because Polish doesn't support sentiment analysis. For the same reason, the file has no contact-level sentiment scores.
++ In the original file, the Polish turn contains its original text. Its `Redaction` object also contains `"Unsupported": true`.

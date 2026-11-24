@@ -21,7 +21,7 @@ Be aware of the following requirements and limitations for different types of re
 **Network Load Balancer endpoints**
 + A Network Load Balancer endpoint can be internet-facing or internal.
 + Client IP address preservation is only supported for Network Load Balancers that support security groups.
-+ Client IP address preservation is supported for Network Load Balancers with TCP and UDP listeners, but not with TLS termination.
++ Client IP address preservation is supported for Network Load Balancers with TCP, UDP, and TLS listeners.
 + Dual-stack Network Load Balancers can be added as endpoints for IPv4 or dual-stack accelerators, but there are a few restrictions:
   + For IPv4 accelerators, when you add a dual-stack Network Load Balancer, you cannot enable client IP address preservation for the endpoint in Global Accelerator.
   + The Network Load Balancer must support security groups.

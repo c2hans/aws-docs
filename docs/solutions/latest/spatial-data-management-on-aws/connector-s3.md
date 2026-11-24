@@ -2,13 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-s3.html
 ---
 
-# Amazon S3 connector
+# Amazon S3 Connector
 
 The Amazon S3 connector is a multi-purpose primitive that can publish structured metadata to S3 buckets, derive metadata from S3-hosted CSV or JSON files, and serve reference data from S3 files as selectable field values during template authoring.
 
 Step types: `s3PutObject`, `s3DeleteObject`
 
-Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), and [Variable Substitution](connector-configuration.md#variable-substitution).
 
 ## Roles
 <a name="s3-roles"></a>
@@ -66,12 +66,12 @@ Filters, `output` blocks, and `${…​}` variables work the same way for every 
      + For publish: `s3:PutObject` (and `s3:DeleteObject` if using delete triggers).
      + For derive/lookup: `s3:GetObject` on the source file.
 
-## Using S3 as a publisher
+## Using S3 as a Publisher
 <a name="s3-as-publisher"></a>
 
 A publish connector writes structured JSON to an S3 bucket when asset events occur. This is useful for feeding data lakes, downstream processing pipelines, or any system that consumes structured data from S3.
 
-### Example – publish asset metadata to S3 on create or update
+### Example – Publish Asset Metadata to S3 on Create or Update
 <a name="_example-publish-asset-metadata-to-s3-on-create-or-update"></a>
 
 ```json
@@ -114,12 +114,12 @@ A publish connector writes structured JSON to an S3 bucket when asset events occ
 
 The `objectKey` supports `${variable}` substitution, so each asset gets its own S3 object organized by project. The `payload.fields` array selects which mapped fields to include — only `assetId`, `name`, and `siteCode` are written, even though the connector could map more fields.
 
-## Using S3 for metadata lookup
+## Using S3 for Metadata Lookup
 <a name="s3-as-lookup"></a>
 
 An S3 derive connector reads a CSV or JSON file from S3 and matches records to SDMA files or assets. This is the bulk metadata enrichment pattern — upload a spreadsheet of metadata once, and every asset created under the template gets its files enriched automatically.
 
-### Example – enrich file metadata from a CSV
+### Example – Enrich File Metadata from a CSV
 <a name="_example-enrich-file-metadata-from-a-csv"></a>
 
 ```json
@@ -164,16 +164,16 @@ An S3 derive connector reads a CSV or JSON file from S3 and matches records to S
 
 The `match` block joins external records to SDMA files — here, matching the CSV’s `file_name` column against each file’s basename. The `fieldMappings` at the connector level define which CSV columns become which file metadata attributes.
 
-For full details on the lookup-derivation model, `applyTo` matching, and CSV options, see [Metadata lookup and enrichment](connector-derivation.md).
+For full details on the lookup-derivation model, `applyTo` matching, and CSV options, see [Metadata Lookup and Enrichment](connector-derivation.md).
 
-## Using S3 as a field provider for templates
+## Using S3 as a Field Provider for Templates
 <a name="s3-as-field-provider"></a>
 
 An S3 connector can serve values from a CSV or JSON file as selectable options in the Spatial Data Portal. When a template author defines a metadata attribute, the Portal queries the connector to populate dropdown lists, typeaheads, or cascading field selections.
 
 This uses the connector-level `fieldMappings` \+ `s3Config` shorthand — no triggers, no `resources` block. The connector exists purely to provide reference data for template authoring and metadata entry.
 
-### Example – serve site codes from a CSV for template authoring
+### Example – Serve Site Codes from a CSV for Template Authoring
 <a name="_example-serve-site-codes-from-a-csv-for-template-authoring"></a>
 
 ```json
@@ -198,7 +198,7 @@ This connector has no triggers — it does not run on lifecycle events. Its valu
 
 Field mappings can include an `options` object to declare cascading dependencies between fields — for example, selecting a site ID can filter the available site names.
 
-## Using S3 as a step type in multi-step triggers
+## Using S3 as a Step Type in Multi-Step Triggers
 <a name="s3-as-step-type"></a>
 
 The `s3PutObject` and `s3DeleteObject` step types can participate in multi-step triggers alongside other step types. For example, a trigger might write metadata to S3, then invoke a Lambda function to post-process it:
@@ -224,10 +224,10 @@ The `s3PutObject` and `s3DeleteObject` step types can participate in multi-step 
 ]
 ```
 
-## Configuration fields
+## Configuration Fields
 <a name="s3-config-fields"></a>
 
-### Connector-level fields
+### Connector-Level Fields
 <a name="_connector-level-fields"></a>
 
 | Field | Required | Description |
@@ -238,7 +238,7 @@ The `s3PutObject` and `s3DeleteObject` step types can participate in multi-step 
 |  `s3Config.csvOptions.hasHeader`  | No | Whether the CSV has a header row. Defaults to `true`. |
 |  `s3Config.csvOptions.delimiter`  | No | CSV delimiter character. Defaults to `,`. |
 
-### Step-level fields
+### Step-Level Fields
 <a name="_step-level-fields"></a>
 
 | Field | Required | Description |

@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ui-agents.html
 
 UI agent is a native agent that understands natural language instructions to perform complex browser actions. It can autonomously navigate websites, click, type, read data, and produce structured outputs optimized for downstream automation steps. Example use cases include summarizing products on a webpage or fetching data by navigating websites.
 
+**Note**
+To download a file from a website, use a [Click](actions-web-browser.md#click) action with **Get File Download** turned on instead of a UI agent. The action waits for the download to finish and stores the file in the variable that you name in **Downloaded File**, so later steps can read or upload it. If no download starts, the step fails.
+
 ## Properties
 <a name="ui-agent-properties"></a>
 

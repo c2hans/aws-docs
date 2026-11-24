@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-stac.html
 ---
 
-# Publishing to STAC with the REST API connector
+# Publishing to STAC with the REST API Connector
 
 This guide shows how to use the REST API connector to publish SDMA asset metadata as [STAC (SpatioTemporal Asset Catalog)](https://stacspec.org/) Items to a STAC-compliant API. STAC connectors are not a separate connector type — they are REST API connectors configured with field mappings that construct STAC Items and triggers that target STAC collection endpoints.
 
 Use this pattern to integrate with geoportal platforms or any STAC-compliant catalog. When assets are created, updated, or deleted in SDMA, the connector automatically publishes, updates, or removes the corresponding STAC Items.
 
-Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), and [Variable Substitution](connector-configuration.md#variable-substitution).
 
-## How it works
+## How It Works
 <a name="stac-how-it-works"></a>
 
 The connector maps SDMA asset metadata to the STAC Item specification using field mappings, then publishes the result to STAC collection endpoints using REST steps:
@@ -34,7 +34,7 @@ The connector also supports **resource discovery** — it queries the STAC API�
    +  **Trust policy** must allow the SDMA solution account to assume it.
    +  **Permissions policy** must grant `secretsmanager:GetSecretValue` on the credentials secret.
 
-## Create this connector
+## Create This Connector
 <a name="stac-create"></a>
 
 1. In the Spatial Data Portal, go to **Library settings** > **Connectors**.
@@ -47,14 +47,14 @@ The connector also supports **resource discovery** — it queries the STAC API�
 
 1. For **Connector type**, select **REST API**.
 
-1. Paste the connector configuration JSON (see [Full configuration](#stac-full-configuration)) into the JSON editor.
+1. Paste the connector configuration JSON (see [Full Configuration](#stac-full-configuration)) into the JSON editor.
 
 1. Choose **Create**.
 
 **Note**
 STAC connectors use the REST API connector type. The STAC-specific behavior comes entirely from the configuration — the field mappings construct STAC Items and the triggers target STAC API endpoints.
 
-## Associate a project with a STAC collection
+## Associate a Project with a STAC Collection
 <a name="stac-collection-linking"></a>
 
 The connector publishes items to a specific STAC collection. To link a project to a collection:
@@ -67,7 +67,7 @@ The connector publishes items to a specific STAC collection. To link a project t
 
 The selected collection ID is stored as the `stac_collection_id` metadata attribute on the project. The connector’s triggers use this value in URL paths — for example, `POST /stac/collections/${project.metadataAttributes.stac_collection_id}/items`.
 
-## Full configuration
+## Full Configuration
 <a name="stac-full-configuration"></a>
 
 The following is a complete, working STAC connector configuration. Replace the placeholder values with your environment-specific values.
@@ -181,12 +181,12 @@ The following is a complete, working STAC connector configuration. Replace the p
 }
 ```
 
-## Understanding the field mappings
+## Understanding the Field Mappings
 <a name="stac-field-mappings"></a>
 
 The field mappings construct a STAC Item from SDMA asset metadata. The key patterns:
 
-### Core STAC Item fields
+### Core STAC Item Fields
 <a name="_core-stac-item-fields"></a>
 
 | STAC field | Source | Notes |
@@ -201,7 +201,7 @@ The field mappings construct a STAC Item from SDMA asset metadata. The key patte
 |  `properties.title`  |  `asset.assetName`  | Human-readable title. |
 |  `properties.tags`  |  `asset.metadataAttributes`  | All asset metadata attributes as a tags object. |
 
-### Per-file asset entries
+### Per-File Asset Entries
 <a name="_per-file-asset-entries"></a>
 
 The `assets[${file.path}]` pattern iterates over all files in the SDMA asset and creates a STAC asset entry for each one:
@@ -219,7 +219,7 @@ The `assets[${file.path}]` pattern iterates over all files in the SDMA asset and
 
 Fields prefixed with `x:` are STAC extension properties — custom fields that carry SDMA-specific metadata into the catalog.
 
-## The update pattern
+## The Update Pattern
 <a name="stac-update-pattern"></a>
 
 The update trigger uses a three-step delete-wait-recreate pattern because many STAC APIs reject POST requests when an item with the same ID already exists:

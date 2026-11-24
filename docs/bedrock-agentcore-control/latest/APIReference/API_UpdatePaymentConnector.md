@@ -68,7 +68,7 @@ Required: No
  ** [type](#API_UpdatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-request-type"></a>
 The updated type of the payment connector.
 Type: String
-Valid Values: `CoinbaseCDP | StripePrivy`
+Valid Values: `CoinbaseCDP | StripePrivy | AwsBilling`
 Required: No
 
 ## Response Syntax
@@ -140,7 +140,7 @@ Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_F
  ** [type](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-type"></a>
 The type of the updated payment connector.
 Type: String
-Valid Values: `CoinbaseCDP | StripePrivy`
+Valid Values: `CoinbaseCDP | StripePrivy | AwsBilling`
 
 ## Errors
 <a name="API_UpdatePaymentConnector_Errors"></a>

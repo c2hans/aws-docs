@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connector-wait.html
 ---
 
-# Working with wait steps
+# Working with Wait Steps
 
 Many integrations take real time to respond. A point-cloud import can run for minutes, a render or an inference job might take an hour, a model training run can take several, and an external review might not come back until someone acts on it. A `wait` step lets a connector start that kind of work, pause until it finishes, and then act on the result — all without holding any running compute while the external work is in progress.
 
 Use a wait step when you need a connector trigger to block on an external outcome before continuing. A wait of a few seconds and a wait of several hours cost the same.
 
-Filters, `output` blocks, `${…​}` variables, `$temp` values, and type suffixes such as `:number` work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), [Intermediate state with $temp variables](connector-configuration.md#temp-variables), and [Type coercion](connector-configuration.md#type-coercion).
+Filters, `output` blocks, `${…​}` variables, `$temp` values, and type suffixes such as `:number` work the same way for every connector type. For more information, see [Trigger Filters](connector-configuration.md#trigger-filters), [Output Routing](connector-configuration.md#output-routing), [Variable Substitution](connector-configuration.md#variable-substitution), [Intermediate State with $temp Variables](connector-configuration.md#temp-variables), and [Type Coercion](connector-configuration.md#type-coercion).
 
-## How wait steps work
+## How Wait Steps Work
 <a name="wait-overview"></a>
 
 A typical pattern is: start a job, wait for it to finish, then write the results back.
@@ -27,7 +27,7 @@ A typical pattern is: start a job, wait for it to finish, then write the results
 
 1. On failure or timeout, the invocation is marked `FAILED` and the remaining steps do not run.
 
-## Result sources
+## Result Sources
 <a name="wait-result-sources"></a>
 
 A wait step needs to know when the external work is done. There are two ways this can happen, and you choose the one that fits the integration:
@@ -39,7 +39,7 @@ A wait step needs to know when the external work is done. There are two ways thi
 
 Each wait step must declare exactly one of these. Declaring both is a validation error — SDMA needs a single, unambiguous path to a result.
 
-## Wait step configuration
+## Wait Step Configuration
 <a name="wait-configuration"></a>
 
 ```json
@@ -61,35 +61,35 @@ The `wait` block is a sibling of `stepType` and `output` on the step object. It 
 |  `timeoutSeconds`  | integer | 7200 | Maximum seconds to wait for a result before failing the step. Minimum 10, maximum 86400 (24 hours). |
 |  `poll`  | object | — | Polling result source. Mutually exclusive with `externalCompletion`. |
 |  `externalCompletion`  | object | — | External-completion result source. Mutually exclusive with `poll`. |
-|  `failure`  | object | — | Where the external system writes a failure file. Only for output-driven waits. See [Failing fast on a failure file](#wait-failure-artifact). |
+|  `failure`  | object | — | Where the external system writes a failure file. Only for output-driven waits. See [Failing Fast on a Failure File](#wait-failure-artifact). |
 
-A wait step can also declare `responseFieldMapping` to capture values from its result into `$temp.*` variables. See [Capturing values from the result](#wait-capture).
+A wait step can also declare `responseFieldMapping` to capture values from its result into `$temp.*` variables. See [Capturing Values from the Result](#wait-capture).
 
-## Polling result source
+## Polling Result Source
 <a name="wait-polling"></a>
 
 With a polling wait, SDMA checks for the result on an interval you configure. There are two polling modes:
 +  **REST polling** (`type: "rest"`, the default) — SDMA issues an HTTP request to a status endpoint and evaluates the response against the patterns you declare (`successWhen` and `failureWhen`). If neither matches, it checks again later.
-+  **Output polling** (`type: "output"`) — SDMA checks whether the step’s declared output files have appeared in S3. When all declared targets are present, the wait resolves. See [Output-driven wait](#wait-output-driven) for details.
++  **Output polling** (`type: "output"`) — SDMA checks whether the step’s declared output files have appeared in S3. When all declared targets are present, the wait resolves. See [Output-Driven Wait](#wait-output-driven) for details.
 
 Choose REST polling when the external system exposes a status endpoint. Choose output polling when the external system writes its results to S3 and has no status API (or when you want to wait on the actual output rather than a status flag).
 
-### Poll configuration
+### Poll Configuration
 <a name="_poll-configuration"></a>
 
 | Field | Type | Default | Description |
 | --- | --- | --- | --- |
-|  `type`  | string |  `rest`  | How to check for the result. `rest` polls an HTTP endpoint. `output` watches S3 for the step’s declared output (see [Output-driven wait](#wait-output-driven)). |
+|  `type`  | string |  `rest`  | How to check for the result. `rest` polls an HTTP endpoint. `output` watches S3 for the step’s declared output (see [Output-Driven Wait](#wait-output-driven)). |
 |  `intervalSeconds`  | integer | 30 | Seconds between polls. Minimum 10, maximum 3600. |
 |  `method`  | string |  `GET`  | HTTP method for the poll request. Only applies when `type` is `rest`. |
 |  `path`  | string | — | URL path to poll. Supports `${…​}` variable substitution. Required when `type` is `rest`. |
-|  `successWhen`  | pattern | — | Pattern that means the external work succeeded. Required when `type` is `rest`. See [Result classifier patterns](#wait-classifier). |
+|  `successWhen`  | pattern | — | Pattern that means the external work succeeded. Required when `type` is `rest`. See [Result Classifier Patterns](#wait-classifier). |
 |  `failureWhen`  | pattern | — | Pattern that means the external work failed. Optional. If omitted, only `successWhen` is checked and non-matching responses trigger the next poll. Only applies when `type` is `rest`. |
 |  `headers`  | object | — | Additional HTTP headers for the poll request. Only applies when `type` is `rest`. |
 |  `body`  | object | — | Request body template for POST polls. Supports `${…​}` variable substitution. Only applies when `type` is `rest`. |
 |  `queryParams`  | object | — | Query parameters for the poll request. Only applies when `type` is `rest`. |
 
-### REST polling example
+### REST Polling Example
 <a name="_rest-polling-example"></a>
 
 A connector that starts an import via a REST POST, captures the job version, then polls a status endpoint until the import is ready:
@@ -162,7 +162,7 @@ In this example:
 
 1. Once the wait resolves successfully, the third step runs — fetching per-file metadata and writing it back to individual files using a correlate mapping.
 
-### Output polling example
+### Output Polling Example
 <a name="_output-polling-example"></a>
 
 A connector that invokes an inference service, then waits for the results to appear in S3:
@@ -222,14 +222,14 @@ In this example:
 
 1. On completion, SDMA reads the summary JSON and maps `score` to asset metadata, then ingests the `.geojson` files as derived files.
 
-No `successWhen` or `failureWhen` is needed — the presence of the declared output files is the success signal. See [Output-driven wait](#wait-output-driven) for the full reference.
+No `successWhen` or `failureWhen` is needed — the presence of the declared output files is the success signal. See [Output-Driven Wait](#wait-output-driven) for the full reference.
 
-## External completion result source
+## External Completion Result Source
 <a name="wait-external-completion"></a>
 
 With an external-completion wait, SDMA suspends the trigger and waits for the external system to call back. The third party calls the `UpdateConnectorInvocation` API endpoint with a freeform JSON body when it is done. SDMA evaluates that body using the same `successWhen` / `failureWhen` patterns.
 
-### External completion configuration
+### External Completion Configuration
 <a name="_external-completion-configuration"></a>
 
 | Field | Required | Description |
@@ -237,7 +237,7 @@ With an external-completion wait, SDMA suspends the trigger and waits for the ex
 |  `successWhen`  | Yes | Pattern that means the external work succeeded. |
 |  `failureWhen`  | No | Pattern that means the external work failed. If the posted body matches neither pattern, SDMA marks the invocation as `FAILED` — the third party should only post when it has a final result. |
 
-### External completion example
+### External Completion Example
 <a name="_external-completion-example"></a>
 
 A connector that starts an external quality review, passes the callback URL, and writes the review results back as asset metadata when the external system posts its decision:
@@ -304,12 +304,12 @@ SDMA evaluates `{"status": "complete"}` against `successWhen` — it matches (su
 
 The callback URL for the current invocation is available as `${invocation.callbackUrl}` in any step configuration field that supports variable substitution. The preceding REST step passes it to the external system so it knows where to post the result.
 
-## Result classifier patterns
+## Result Classifier Patterns
 <a name="wait-classifier"></a>
 
 The `successWhen` and `failureWhen` fields accept a pattern that SDMA matches against the response body (for polling) or the posted body (for external completion). These patterns describe what "success" and "failure" look like in the external system’s response.
 
-### Pattern semantics
+### Pattern Semantics
 <a name="_pattern-semantics"></a>
 
 | Shape | Match rule |
@@ -320,7 +320,7 @@ The `successWhen` and `failureWhen` fields accept a pattern that SDMA matches ag
 
 The special key `$status` matches the HTTP status code of the poll response (not a body field). It is only meaningful for polling waits.
 
-### Pattern examples
+### Pattern Examples
 <a name="_pattern-examples"></a>
 
 Simple field match — succeeds when the response contains `"status": "ready"` (extra fields are ignored):
@@ -356,12 +356,12 @@ Combined status and body — succeeds only when both HTTP 200 and body field mat
 "successWhen": { "$status": 200, "result": { "state": "DONE" } }
 ```
 
-### Tie-breaking
+### Tie-Breaking
 <a name="_tie-breaking"></a>
 
 If the response matches both `successWhen` and `failureWhen`, success wins. Design patterns so they are mutually exclusive to avoid ambiguity.
 
-## Output-driven wait
+## Output-Driven Wait
 <a name="wait-output-driven"></a>
 
 An output-driven wait (`poll.type: "output"`) completes when the step’s declared `output` targets are available in S3, rather than polling an HTTP endpoint. Use this when the external system writes results to S3 and you want SDMA to detect and ingest them automatically.
@@ -407,12 +407,12 @@ In this example:
 + The wait completes when both a `_summary.json` file and a `.zip` file exist under the invocation prefix.
 + On completion, SDMA reads the summary JSON and maps `polygonCount` to asset metadata, then ingests the `.zip` files as derived files.
 
-### Completion rule
+### Completion Rule
 <a name="_completion-rule"></a>
 
 Output-driven wait uses an **all targets present** rule: every S3-backed target declared in the step’s `output` block must be available before the wait resolves. If `metadataAttributes.uri` is declared, it serves as both the completion signal and the data source that `fieldMappings` map from.
 
-### Failing fast on a failure file
+### Failing Fast on a Failure File
 <a name="wait-failure-artifact"></a>
 
 Many systems that write results to S3 also write a file when the work fails. For example, an Amazon SageMaker asynchronous endpoint writes to its failure path. By default, an output-driven wait cannot detect that file, and it keeps waiting until `timeoutSeconds` runs out.
@@ -441,7 +441,7 @@ SDMA checks for the failure file only after it finds the declared output absent.
 + The `output` block must declare at least one S3-backed target with a `uri`. A wait step with `poll.type: "output"` and no `uri` in any output target is a validation error — there would be nothing to wait for.
 + The `path`, `method`, `successWhen`, and `failureWhen` fields do not apply in output mode. Only `type`, `intervalSeconds`, and `timeoutSeconds` are relevant.
 
-## Capturing values from the result
+## Capturing Values from the Result
 <a name="wait-capture"></a>
 
 A wait step can declare `responseFieldMapping`, in the same form as other steps, to capture values from its result into `$temp.*` variables. The result it reads depends on the wait’s source. The following table shows where SDMA reads values from for each source.
@@ -475,14 +475,14 @@ The following JSON shows an output-driven wait step that captures values from it
 
 Steps that run after the wait can then use `${$temp.trainingSeconds}` and `${$temp.actionMae}` — for example, to post a summary to an external system.
 
-## Timeout behavior
+## Timeout Behavior
 <a name="wait-timeout"></a>
 
 If `timeoutSeconds` elapses without a result, SDMA marks the invocation as `FAILED`. Remaining steps do not execute. The poll schedule (if any) is deleted.
 
 Choose a timeout that exceeds the expected duration of the external work by a comfortable margin. For jobs that may take hours, values up to 86400 (24 hours) are supported.
 
-## Resume semantics
+## Resume Semantics
 <a name="wait-resume"></a>
 
 When a wait resolves successfully:
@@ -493,7 +493,7 @@ When a wait resolves successfully:
 
 1. If a resumed step initiates another wait, the trigger suspends again — multiple waits in a single trigger are supported (though uncommon).
 
-## Error handling
+## Error Handling
 <a name="wait-error-handling"></a>
 
 A wait step has four failure modes:
@@ -509,7 +509,7 @@ For REST polling, a response that matches neither pattern is **not** a failure �
 ### Interaction with `onError`
 <a name="_interaction-with-onerror"></a>
 
-The `onError` field (`fail` or `record-and-continue`) is not supported on the wait step itself. A wait step always fails the invocation on any of the four failure modes in [Error handling](#wait-error-handling) — there is no option to continue past a failed wait.
+The `onError` field (`fail` or `record-and-continue`) is not supported on the wait step itself. A wait step always fails the invocation on any of the four failure modes in [Error Handling](#wait-error-handling) — there is no option to continue past a failed wait.
 
 However, `onError` works normally on steps that run **after** a successful wait. If the trigger resumes and a subsequent step fails:
 + With `onError: fail` (the default) — the invocation is marked `FAILED` and no further steps run.
@@ -517,7 +517,7 @@ However, `onError` works normally on steps that run **after** a successful wait.
 
 This means a trigger like **[rest → wait → rest (record-and-continue) → rest]** behaves as you would expect: if the third step fails, it is recorded but the fourth step still runs.
 
-## Providing the callback URL to external systems
+## Providing the Callback URL to External Systems
 <a name="wait-callback-url"></a>
 
 For external-completion waits, the third party needs to know the URL to call. SDMA makes this available as `${invocation.callbackUrl}`. A common pattern is to pass it in a preceding REST step:

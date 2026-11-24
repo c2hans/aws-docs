@@ -37,7 +37,7 @@ The identifier of the instance where this contact takes place.
 Type: String
 
 **LanguageCode**
-The language code associated to this contact.
+The language code associated to this contact. For a contact with more than one language, this field contains the first language in the list that you set in the flow (the preferred language). This is the same value as `LanguageLocale` in the contact record. It isn't the most spoken language.
 Type: String
 Valid values: the language code for one of the [supported languages for conversational analytics real-time call analytics](supported-languages.md#supported-languages-contact-lens).
 
@@ -124,7 +124,7 @@ Required: No
   Type: Integer
 
 **Transcript**
-The analyzed transcript.
+The analyzed transcript. For a contact with more than one language, the `LanguageCode` field of each `Transcript` segment contains the language of the segment.
 Type: [Transcript](https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Transcript.html) object
 Required: No
 

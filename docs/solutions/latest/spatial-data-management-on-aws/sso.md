@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/sso.html
 ---
 
-# Single sign-on (SSO)
+# Single Sign-On (SSO)
 
 Spatial Data Management on AWS (SDMA) authenticates users with an Amazon Cognito user pool that the solution creates at deployment time. Instead of managing users and groups directly in Amazon Cognito, you can federate the user pool with your organization’s external identity provider (IdP). With federation, you can enable single sign-on (SSO): your users sign in to the Spatial Data Portal with their existing corporate credentials, and user and group management stays centralized in your identity system.
 
@@ -11,7 +11,7 @@ Amazon Cognito supports two federation protocols:
 +  **Security Assertion Markup Language (SAML) 2.0** – An XML-based standard for exchanging authentication and authorization data. Choose SAML when your identity provider is configured as a SAML 2.0 IdP.
 
 This section is organized as follows:
-+  [Configure any external identity provider](external-identity-provider.md) – Protocol-level instructions that apply to any OIDC or SAML 2.0 identity provider, plus the steps to enable, verify, and troubleshoot federation.
++  [Configure Any External Identity Provider](external-identity-provider.md) – Protocol-level instructions that apply to any OIDC or SAML 2.0 identity provider, plus the steps to enable, verify, and troubleshoot federation.
 +  [Configure Microsoft Entra ID](configure-entra-id.md) – Detailed OIDC and SAML walkthroughs for Microsoft Entra ID (formerly Azure Active Directory), the most common use case.
 
 The prerequisites, placeholders, and Amazon Cognito values on this page apply to both.
@@ -23,12 +23,12 @@ Groups that you pass from your identity provider can be mapped to Amazon Cognito
 <a name="sso-prerequisites"></a>
 
 Before you begin, make sure that you have:
-+ A deployed SDMA stack with an Amazon Cognito user pool. For more information, see [Deploy the solution](deploy-the-solution.md).
++ A deployed SDMA stack with an Amazon Cognito user pool. For more information, see [Deploy the Solution](deploy-the-solution.md).
 + Administrative access to the AWS account where SDMA is deployed, with permission to configure Amazon Cognito.
 + Administrative access to your identity provider.
 + A Cognito hosted UI domain configured for the user pool. You can find or configure this value in the Amazon Cognito console under your user pool, in **Branding** > **Domain**.
 
-## Placeholders used in these procedures
+## Placeholders Used in These Procedures
 <a name="sso-placeholders"></a>
 
 The procedures in this section use the following placeholders. Replace them with the values from your deployment.
@@ -41,7 +41,7 @@ The procedures in this section use the following placeholders. Replace them with
 |  `<APP_CLIENT>`  | The Cognito app client used by the portal. The name follows the pattern `spatial-data-portal-client`. |
 |  `<TENANT_ID>`  | (Microsoft Entra ID only) Your **Directory (tenant) ID** (a GUID). Find it on the **Overview** page of your Entra ID app registration. |
 
-## Gather your Amazon Cognito values
+## Gather Your Amazon Cognito Values
 <a name="sso-gather-cognito-values"></a>
 
 You need the following values from the Amazon Cognito console for both OIDC and SAML configuration. Record them before you start.
@@ -68,7 +68,7 @@ For SAML, Amazon Cognito also acts as the service provider (SP) with the followi
 | Assertion consumer service (ACS) URL / Reply URL |  `https://<COGNITO_DOMAIN>.auth.<REGION>.amazoncognito.com/saml2/idpresponse`  |
 | Service provider entity ID / Audience URI / Identifier |  `urn:amazon:cognito:sp:<USER_POOL_ID>`  |
 
-## Session and token lifetimes
+## Session and Token Lifetimes
 <a name="sso-session-lifetimes"></a>
 
 Federation changes where users authenticate, not how long their SDMA session lasts. After a federated user signs in, the Amazon Cognito tokens issued to the portal app client govern the session, not the session lifetime you configure in your identity provider. The solution configures the portal app client with the following token lifetimes:

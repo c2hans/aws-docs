@@ -25,4 +25,4 @@ You can use [AWS SDKs](http://aws.amazon.com/tools/#sdk) to access Amazon SQS us
 +  *Amazon Web Services General Reference*
   +  [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#sqs_region)
 
-This document was last published on November 20, 2026.
+This document was last published on November 23, 2026.

@@ -14,5 +14,6 @@ Continuum for code vulnerabilities integrates with GitHub and Amazon S3 for code
 + [Adding AWS context](cv-adding-context.md)
 + [Connecting an Amazon EKS cluster to AWS Continuum](cv-onboard-eks-cluster.md)
 + [Triggering a scan](cv-triggering-scan.md)
++ [Controlling which findings AWS Continuum pursues](cv-focus-mode-issue-budget.md)
 + [Viewing discovered issues](cv-viewing-issues.md)
 + [Viewing generated patches](cv-viewing-patches.md)

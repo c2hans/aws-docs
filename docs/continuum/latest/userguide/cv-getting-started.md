@@ -88,11 +88,34 @@ To configure a GitLab integration, do the following:
 
 1. For **GitLab instance**, select **GitLab.com** or a self-managed instance. If you select a self-managed instance, enter the instance URL. The URL must use HTTPS.
 
-1. For **Access token**, enter a personal, group, or project access token.
+1. For **Access token**, enter a personal, group, or project access token with the `api` scope and at least the **Maintainer** role on the group or project.
 
-1. For **Group or project**, specify the GitLab group or project to scan.
+1. For **What this integration reads**, choose **Group** to read every project in a group, including subgroups. Choose **Project** to read a single project. You can't change this choice after you create the integration.
+
+1. For **Group path** or **Project path**, enter the full path as it appears in the GitLab URL, such as `my-company/platform` or `my-company/platform/checkout`.
 
 After you create the integration, the console opens **Create environment**. Continue to [Creating an environment](#cv-getting-started-s3-environment).
+
+### Scanning a single project from GitLab
+<a name="cv-getting-started-gitlab-single-project"></a>
+
+To scan only one GitLab project, use a project integration, or use a group integration and select only that project in the environment.
+
+To use a project integration, do the following:
+
+1. When you create the integration, for **What this integration reads**, choose **Project**.
+
+1. For **Project path**, enter the project's full path. Use a personal or project access token with at least the **Maintainer** role on the project.
+
+The integration reads only that project.
+
+To use a group integration, do the following:
+
+1. When you create the environment, for **Integration**, select the group integration.
+
+1. For **Projects**, enter only the project's path, such as `group/project`. The project must be in the integration's group or one of its subgroups.
+
+In the API, a project integration is a `CreateIntegration` request whose `gitlab` configuration sets `targetType` to `PROJECT` and `targetPath` to the project's full path. In `CreateEnvironment`, each entry in `repositorySources` selects one project: its `repository` value is the project's full path.
 
 ## Getting started through Amazon S3
 <a name="cv-getting-started-s3"></a>
@@ -302,13 +325,15 @@ To configure the environment, continue in the same form:
 
 1. For **Environment name**, enter a name.
 
+1. (Optional) In **Focus mode**, choose which findings AWS Continuum pursues and how many issues each scan can create. For more information, see [Controlling which findings AWS Continuum pursues](cv-focus-mode-issue-budget.md).
+
 1. In **Code sources**, for **Integration**, select the integration that you want to use.
 
 1. Configure the code source:
 
    1. If you selected a GitHub integration, for **Repositories**, enter the repositories that you want to scan. Enter each repository as `owner/repository`.
 
-   1. If you selected a GitLab integration, for **Repositories**, enter the GitLab projects that you want to scan. Enter each project by its path, such as `group/project` or `group/subgroup/project`.
+   1. If you selected a GitLab integration, for **Projects**, enter the GitLab projects that you want to scan. Enter each project by its path, such as `group/project` or `group/subgroup/project`.
 
    1. If you selected an Amazon S3 integration, for **Source code base path**, enter the prefix where you uploaded your code. The default is `code/`.
 

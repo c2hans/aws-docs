@@ -17,7 +17,7 @@ The following image shows a block that's configured for call recording and speec
 The procedures in this topic describe the steps to enable conversational analytics for calls, chats, or emails.
 
 **Note**
-For new flows, the [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block replaces the [Set recording and analytics behavior](set-recording-behavior.md) block. The new block reorganizes the analytics options. The following procedures and images describe the earlier block, which remains supported in existing flows. The steps to enable conversational analytics are equivalent in both blocks.
+For new flows, the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block replaces the [Set recording and analytics behavior](set-recording-behavior.md) block. The new block reorganizes the analytics options. The following procedures and images describe the earlier block, which remains supported in existing flows. The steps to enable conversational analytics are equivalent in both blocks. Only the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block supports more than one language for a contact. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
 
 **Topics**
 + [Important things to know](#important-set-behaviorblock)
@@ -87,7 +87,7 @@ After conversational analytics is enabled for your instance, you can add [Set re
 
       If your instance was created before October 2018, additional configuration is needed to access real-time call analytics. For more information, see [Service-linked role permissions](connect-slr.md#slr-permissions).
 
-1. Choose from the [list of available languages](supported-languages.md#supported-languages-contact-lens).
+1. Choose the language of the call from the [list of available languages](supported-languages.md#supported-languages-contact-lens). To choose more than one language, use the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
 
    For instructions about specifying the language dynamically, see [Dynamically enable redaction based on the customer's language](#dynamically-enable-analytics-contact-flow).
 
@@ -123,7 +123,7 @@ By choosing this option you will receive both real-time and post-chat analytics.
 
 You can enable conversational analytics for email contacts to automatically categorize emails, redact sensitive data, and generate contact summaries.
 
-1. In the flow designer, add a [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block to your inbound email flow. Place the block before the email contact is routed to a queue or agent.
+1. In the flow designer, add a [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block to your inbound email flow. Place the block before the email contact is routed to a queue or agent.
 
 1. Open the block properties. For **Action**, choose **Set recording and analytics behavior**.
 
@@ -141,7 +141,7 @@ You can enable conversational analytics for email contacts to automatically cate
 
 1. Choose **Save**.
 
-1. If the email contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block with **Enable conversational analytics for conversational analytics** enabled.
+1. If the email contact is going to be transferred to another agent or queue, repeat these steps to add another [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block with **Enable conversational analytics for conversational analytics** enabled.
 
 ## Enable redaction of sensitive data
 <a name="enable-redaction"></a>
@@ -153,6 +153,10 @@ When you configure the [Set recording and analytics behavior](set-recording-beha
 If you accept the default settings, conversational analytics redacts all personally identifiable information (PII) it identifies, and replaces it with **[PII]** in the transcript. The default settings are shown in the following image because the following options are selected: **Redact sensitive data**, **Redact All PII data**, and **Replace with placeholder PII**.
 
 ![The default settings for sensitive data redaction.](https://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-enable-redaction-default.png)
+
+If you choose more than one language for a contact, conversational analytics redacts sensitive data in each language that supports redaction. For post-call analytics, if the language of a segment doesn't support redaction, conversational analytics redacts the entire segment. Conversational analytics replaces the text of the segment in the redacted transcript and silences the segment in the redacted audio.
+
+For post-call analytics, you must choose at least one language that supports redaction. To check which languages support redaction, see [AI features](supported-languages.md#supported-languages-contact-lens). For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
 
 ### Select PII entities to redact
 <a name="select-pii-entities-redact"></a>
@@ -183,7 +187,7 @@ For the location of redacted files and examples, see [Output file locations](exa
 ## Disable sentiment analysis
 <a name="disable-sentiment-analysis-voice-and-chat"></a>
 
-When you choose a language that is supported by sentiment analysis, AND choose **Enable speech analytics** or **Enable chat analytics**, sentiment analysis is enabled by default for all agents and customers. For a list of languages supported by sentiment analysis, see [AI features](supported-languages.md#supported-languages-contact-lens).
+When you choose a language that is supported by sentiment analysis, AND choose **Enable speech analytics** or **Enable chat analytics**, sentiment analysis is enabled by default for all agents and customers. For a list of languages supported by sentiment analysis, see [AI features](supported-languages.md#supported-languages-contact-lens). If you choose more than one language for a contact, conversational analytics analyzes the sentiment of only the segments whose language supports sentiment analysis.
 
 The following image shows the sentiment analysis option is enabled on the **Set recording and analytics behavior** block.
 
@@ -205,7 +209,7 @@ You can dynamically enable the redaction of the output files based on the langua
   + None
   + RedactedOnly
   + RedactedAndOriginal
-+ Language: Choose from the [list of available languages](supported-languages.md#supported-languages-contact-lens).
++ Language: Choose from the [list of available languages](supported-languages.md#supported-languages-contact-lens). The [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block accepts a list of up to five languages. For more information, see [Specify more than one language dynamically](#specify-multiple-languages-dynamically).
 
 You can set these attributes in the following ways:
 + User defined: use a **Set contact attributes** block. For general instructions about using this block, see [How to reference contact attributes](how-to-reference-attributes.md). Define the **Destination key** and **Value** for redaction and language as needed.
@@ -225,6 +229,32 @@ You can set these attributes in the following ways:
      'language': 'en-US'
   }
   ```
+
+### Specify more than one language dynamically
+<a name="specify-multiple-languages-dynamically"></a>
+
+You can set **Analytics Languages** dynamically in the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) block. The block can get the value from a Lambda function or a data table. At run time, the value must be a list of one to five language codes. The first language in the list is the preferred language for transcription. The following list describes the sources that you can use:
++ **Lambda function** – Return the languages as a list. In the **AWS Lambda function** block, for **Response validation**, choose **JSON**.
++ **Data table** – Use an attribute that contains a list of text values.
+
+The following example shows a Lambda response in JSON that returns a redaction option and two languages.
+
+```json
+{
+    "redaction_option": "RedactedOnly",
+    "languages": ["en-US", "es-US"]
+}
+```
+
+**To use the languages from the Lambda response**
+
+1. In the **Set recording, analytics, and processing behavior** block, for **Analytics Languages**, choose **Set dynamically**.
+
+1. For **Namespace**, choose **Lambda invocation**.
+
+1. For **Key**, choose **Result data**, and then enter `languages`.
+
+If the value isn't a valid list at run time, the block takes the **Error** branch. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
 
 ## Design a flow for key highlights
 <a name="call-summarization-agent"></a>

@@ -22,6 +22,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Restrict access based on IP address or geolocation by using AWS WAF](aws-waf-restrict-access-geolocation.md)
 + [Scan Git repositories for sensitive information and security issues by using git-secrets](scan-git-repositories-for-sensitive-information-and-security-issues-by-using-git-secrets.md)
 + [Secure sensitive data in CloudWatch Logs by using Amazon Macie](secure-cloudwatch-logs-using-macie.md)
++ [Securing AWS IAM Roles Anywhere with a private certificate](iam-roles-anywhere-private-ca.md)
 + [Send custom attributes to Amazon Cognito and inject them into tokens](send-custom-attributes-cognito.md)
 + [Update AWS CLI credentials from AWS IAM Identity Center by using PowerShell](update-aws-cli-credentials-from-aws-iam-identity-center-by-using-powershell.md)
 + [Use Network Firewall to capture the DNS domain names from the Server Name Indication for outbound traffic](use-network-firewall-to-capture-the-dns-domain-names-from-the-server-name-indication-sni-for-outbound-traffic.md)

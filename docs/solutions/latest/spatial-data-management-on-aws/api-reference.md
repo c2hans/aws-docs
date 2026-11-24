@@ -651,7 +651,7 @@ Retrieves connector resources in the context of an asset, enabling server-side r
 |  `connectorId`  | path | String | Yes | Pattern: `^connector-[a-fA-F0-9]{32}$`  |
 |  `resourceType`  | query | String | Yes | — |
 |  `fileId`  | query | String | No | Pattern: `^file-[a-fA-F0-9]{32}$`  |
-|  `fileIds`  | query | String | No | Comma-separated list of file IDs. When provided, metadata from all files is merged (e.g. lumidb\_id values combined for multi-file queries). |
+|  `fileIds`  | query | String | No | Comma-separated list of file IDs. When provided, metadata from all files is merged, so one request can cover several files, for example to view several point clouds together. |
 |  `aabb`  | query | String | No | JSON-encoded axis-aligned bounding box for spatial filtering. Passed through to the connector as a boundary parameter. |
 |  `params`  | query | String | No | Optional JSON-encoded parameters for truly dynamic values (e.g., tile URI) that cannot be resolved from metadata. |
 
@@ -3331,7 +3331,7 @@ Allowed values:
 +  `DELETED`
 +  `REVIEWED`
 
-## Data types
+## Data Types
 <a name="api-data-types"></a>
 
 The API uses the following complex data types:

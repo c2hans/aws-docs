@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/notification-center-messages.html
 ---
 
-# Message templates
+# Message Templates
 
 By default, SDMA generates the notification message as `"{resourceName} — {eventName}"` (for example, `"My Asset — Asset Created"`). To customize the message, add a `messages` field to the notification rule configuration.
 

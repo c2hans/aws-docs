@@ -698,7 +698,7 @@ Type: [Configuration](#ctr-Configuration)
 ## Configuration
 <a name="ctr-Configuration"></a>
 
-Configuration for conversational analytics. You configure conversational analytics by using the [Set recording and analytics behavior](set-recording-behavior.md) flow block in the Connect Customer admin website, or by using the [UpdateContactRecordingBehavior](https://docs.aws.amazon.com/connect/latest/APIReference/contact-actions-updatecontactrecordingbehavior.html) contact action in the Flow language.
+Configuration for conversational analytics. You configure conversational analytics by using the [Set recording, analytics, and processing behavior](set-recording-analytics-processing-behavior.md) flow block in the Connect Customer admin website, or by using the [UpdateContactRecordingAndAnalyticsBehavior](https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-updatecontactrecordingandanalyticsbehavior.html) contact action in the Flow language. Existing flows can also use the [Set recording and analytics behavior](set-recording-behavior.md) block and the [UpdateContactRecordingBehavior](https://docs.aws.amazon.com/connect/latest/APIReference/contact-actions-updatecontactrecordingbehavior.html) action.
 
 **Enabled**
 Is conversational analytics enabled for the contact?
@@ -709,8 +709,13 @@ Channel-specific conversational analytics configuration for the contact. Convers
 Type: [ChannelConfiguration](#ctr-ChannelConfiguration)
 
 **LanguageLocale**
-Language locale used by conversational analytics to analyze the contact.
+Language locale used by conversational analytics to analyze the contact. If you choose more than one language, this field contains the first language in `LanguageLocales`. This is the preferred language for transcription.
 Type: String
+
+**LanguageLocales**
+All the languages that you set in the flow configuration, in the order that you set them. The first language is the preferred language for transcription. For voice contacts, this field has one to five items. For other channels, it can have zero to five items.
+Type: Array of strings
+Length: 0 to 5 items
 
 **RedactionConfiguration**
 Redaction configuration for the contact.

@@ -21,12 +21,12 @@ Before setting up any client application, ensure you have:
 + Network access to your deployment
   + Contact your IT Administrator if you need custom domain access or VPN connection
 
-## Web portal setup
+## Web Portal Setup
 <a name="web-portal-setup"></a>
 
 The web portal requires no installation and can be accessed directly through a web browser.
 
-### Access the web portal
+### Access the Web Portal
 <a name="access-web-portal"></a>
 
 1. Obtain the portal URL from your IT Administrator or the person who deployed the solution.
@@ -56,29 +56,32 @@ Alternatively, if you have AWS CLI access:
 aws cloudformation describe-stacks --stack-name $(aws cloudformation list-stack-resources --stack-name <stack-name> --query 'StackResourceSummaries[?starts_with(LogicalResourceId, `PortalStackNested`)].PhysicalResourceId' --output text) --query 'Stacks[0].Outputs[?OutputKey==`PortalCloudFrontDistributionUrl`].OutputValue' --output text
 ```
 
-## Desktop application setup
+## Desktop Application Setup
 <a name="desktop-client-setup"></a>
 
 The desktop application provides a graphical interface for managing spatial data with enhanced performance for large file operations. The desktop application is a standalone installer and does not require the CLI to be installed.
 
-### Download desktop application
+**Note**
+The following features need Spatial Data Portal desktop application version 0.2.8 or later: editing an asset in place from the Spatial Data Portal (placing, renaming, moving, and dropping files), **Sync from local folder**, and transfer progress in the menu bar or tray. If your desktop application is older, the Portal does not show these controls. Download the latest version below. For more information, see [Edit assets in the Portal](edit-assets-in-the-portal.md).
+
+### Download Desktop Application
 <a name="download-desktop-application"></a>
 
 Download the appropriate installer for your platform.
 +  **Windows:**
-  +  [SpatialDataPortal\_0.2.7\_x64-setup.exe](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/windows_v2/SpatialDataPortal_0.2.7_x64-setup.exe)
+  +  [SpatialDataPortal\_0.2.8\_x64-setup.exe](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/windows_v2/SpatialDataPortal_0.2.8_x64-setup.exe)
 +  **macOS:**
-  +  **Intel:** [Spatial Data Portal 0.2.7 x64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.7+x64.dmg) – For Intel-based Macs
-  +  **Apple Silicon (M1/M2/M3):** [Spatial Data Portal 0.2.7 aarch64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.7+aarch64.dmg) – Optimized for Apple Silicon
+  +  **Intel:** [Spatial Data Portal 0.2.8 x64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.8+x64.dmg) – For Intel-based Macs
+  +  **Apple Silicon (M1/M2/M3):** [Spatial Data Portal 0.2.8 aarch64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.8+aarch64.dmg) – Optimized for Apple Silicon
 +  **Linux:**
-  +  **AppImage (Universal):** [spatial-data-portal\_0.2.7\_amd64.AppImage](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.7_amd64.AppImage) – No installation required, runs on any Linux distribution
-  +  **DEB Package:** [spatial-data-portal\_0.2.7\_amd64.deb](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.7_amd64.deb) – For Ubuntu, Debian, and derivatives
-  +  **RPM Package:** [spatial-data-portal-0.2.7-1.x86\_64.rpm](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal-0.2.7-1.x86_64.rpm) – For Red Hat, Fedora, SUSE, and derivatives
+  +  **AppImage (Universal):** [spatial-data-portal\_0.2.8\_amd64.AppImage](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.8_amd64.AppImage) – No installation required, runs on any Linux distribution
+  +  **DEB Package:** [spatial-data-portal\_0.2.8\_amd64.deb](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.8_amd64.deb) – For Ubuntu, Debian, and derivatives
+  +  **RPM Package:** [spatial-data-portal-0.2.8-1.x86\_64.rpm](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal-0.2.8-1.x86_64.rpm) – For Red Hat, Fedora, SUSE, and derivatives
 
-### Installation instructions
+### Installation Instructions
 <a name="installation-instructions"></a>
 
-#### Windows installation
+#### Windows Installation
 <a name="windows-installation"></a>
 
 1. Double-click the downloaded `.exe` file.
@@ -93,7 +96,7 @@ Download the appropriate installer for your platform.
 
  **Security note:** The application is digitally signed. If Windows SmartScreen shows a warning about an unrecognized app, do not proceed with the installation. Contact your IT Administrator to verify you have the official signed application.
 
-#### macOS installation
+#### macOS Installation
 <a name="macos-installation"></a>
 
  **Choose the correct version for your Mac:**
@@ -111,7 +114,7 @@ Download the appropriate installer for your platform.
 
  **Security note:** The application is digitally signed. If macOS shows a security warning about an unidentified developer, do not proceed with the installation. Contact your IT Administrator to verify you have the official signed application.
 
-#### Linux installation
+#### Linux Installation
 <a name="linux-installation"></a>
 
  **Option 1: AppImage (Recommended for most users)**
@@ -119,8 +122,8 @@ Download the appropriate installer for your platform.
 1. Make executable and run:
 
    ```bash
-   chmod +x spatial-data-portal_0.2.7_amd64.AppImage
-   ./spatial-data-portal_0.2.7_amd64.AppImage
+   chmod +x spatial-data-portal_0.2.8_amd64.AppImage
+   ./spatial-data-portal_0.2.8_amd64.AppImage
    ```
 
 1. (Optional) Integrate with system:
@@ -128,13 +131,13 @@ Download the appropriate installer for your platform.
    ```bash
    # Move to applications directory
    sudo mkdir -p /opt/spatial-data-management
-   sudo mv spatial-data-portal_0.2.7_amd64.AppImage /opt/spatial-data-management/
+   sudo mv spatial-data-portal_0.2.8_amd64.AppImage /opt/spatial-data-management/
 
    # Create desktop entry
    cat > ~/.local/share/applications/spatial-data-management.desktop <<EOF
    [Desktop Entry]
    Name=Spatial Data Management
-   Exec=/opt/spatial-data-management/spatial-data-portal_0.2.7_amd64.AppImage
+   Exec=/opt/spatial-data-management/spatial-data-portal_0.2.8_amd64.AppImage
    Icon=spatial-data-management
    Type=Application
    Categories=Utility;
@@ -144,7 +147,7 @@ Download the appropriate installer for your platform.
  **Option 2: DEB Package (Ubuntu/Debian)**
 
 ```bash
-sudo dpkg -i spatial-data-portal_0.2.7_amd64.deb
+sudo dpkg -i spatial-data-portal_0.2.8_amd64.deb
 sudo apt-get install -f  # Fix any dependency issues if needed
 ```
 
@@ -152,23 +155,23 @@ sudo apt-get install -f  # Fix any dependency issues if needed
 
 ```bash
 # Red Hat/CentOS
-sudo rpm -i spatial-data-portal-0.2.7-1.x86_64.rpm
+sudo rpm -i spatial-data-portal-0.2.8-1.x86_64.rpm
 
 # Fedora (preferred method)
-sudo dnf install spatial-data-portal-0.2.7-1.x86_64.rpm
+sudo dnf install spatial-data-portal-0.2.8-1.x86_64.rpm
 
 # SUSE
-sudo zypper install spatial-data-portal-0.2.7-1.x86_64.rpm
+sudo zypper install spatial-data-portal-0.2.8-1.x86_64.rpm
 ```
 
-### Configure desktop application
+### Configure Desktop Application
 <a name="configure-desktop-application"></a>
 
 1. Launch the application.
 
 1. Sign in with your Amazon Cognito credentials provided by your IT Administrator.
 
-## CLI and Python SDK setup
+## CLI and Python SDK Setup
 <a name="cli-setup"></a>
 
 The CLI and Python SDK are distributed as a single Python package that provides both a command-line tool and a programmatic SDK for full access to Spatial Data Management features, including file upload and download capabilities.
@@ -181,7 +184,7 @@ The CLI/SDK can be installed independently for automation and scripting workflow
 + Python 3.8 or later
 + pip (Python package installer)
 
-### Verify Python installation
+### Verify Python Installation
 <a name="verify-python-installation"></a>
 
 ```bash
@@ -198,20 +201,20 @@ pip3 --version
 
 If Python is not installed, download from [python.org](https://www.python.org/downloads/).
 
-### Install from wheel file
+### Install from Wheel File
 <a name="install-cli-from-wheel"></a>
 
-#### Step 1: Obtain the wheel file
+#### Step 1: Obtain the Wheel File
 <a name="obtain-cli-wheel"></a>
 
 Download the wheel file (`.whl`) from your IT Administrator or from the Amazon S3 location:
 
 **Note**
 Always download the latest available version for the most recent features and bug fixes. For information about all releases, see the [Release notes](release-notes.html).
-+ Download [CLI wheel 0.1.10](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.10-py3-none-any.whl)
-+ Download [Checksum 0.1.10](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.10-py3-none-any.whl.sha256)
++ Download [CLI wheel 0.1.11](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.11-py3-none-any.whl)
++ Download [Checksum 0.1.11](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.11-py3-none-any.whl.sha256)
 
-#### Step 2: Verify file integrity (recommended)
+#### Step 2: Verify File Integrity (Recommended)
 <a name="verify-file-integrity"></a>
 
 Verify the downloaded file using the SHA256 checksum:
@@ -243,7 +246,7 @@ sha256sum -c <filename>.whl.sha256
 
  **Important:** Do not proceed with installation if the checksum verification fails. Contact your IT Administrator for a valid file.
 
-#### Step 3: Install the wheel file
+#### Step 3: Install the Wheel File
 <a name="install-cli-wheel"></a>
 
  **Windows:**
@@ -296,10 +299,10 @@ pip uninstall amzn-spatial-data-mgmt
 rm -rf ~/.spatial-data-mgmt
 ```
 
-## System requirements and browser compatibility
+## System Requirements and Browser Compatibility
 <a name="system-requirements"></a>
 
-### Web portal browser requirements
+### Web Portal Browser Requirements
 <a name="web-portal-browser-requirements"></a>
 
  **Supported browsers:**
@@ -313,7 +316,7 @@ rm -rf ~/.spatial-data-mgmt
 + Cookies must be enabled for authentication
 + Local storage required for session management
 
-### Desktop application system requirements
+### Desktop Application System Requirements
 <a name="desktop-system-requirements"></a>
 
  **Windows:**
@@ -334,7 +337,7 @@ rm -rf ~/.spatial-data-mgmt
 + 4 GB RAM minimum (8 GB recommended)
 + 500 MB available disk space
 
-### CLI/SDK system requirements
+### CLI/SDK System Requirements
 <a name="cli-system-requirements"></a>
 + Python 3.8 or later
 + pip (Python package installer)
@@ -345,7 +348,7 @@ rm -rf ~/.spatial-data-mgmt
 
 This section provides solutions to common issues you might encounter when setting up or using the client applications.
 
-### Web portal issues
+### Web Portal Issues
 <a name="web-portal-issues"></a>
 
  **Issue: Cannot access portal URL**
@@ -372,7 +375,7 @@ This section provides solutions to common issues you might encounter when settin
 + Ensure cookies and local storage are enabled
 + Update browser to latest version
 
-### Desktop application issues
+### Desktop Application Issues
 <a name="desktop-application-issues"></a>
 
  **Issue: Application will not start**
@@ -402,7 +405,7 @@ This section provides solutions to common issues you might encounter when settin
 + Check write permissions for download directory
 + Review download logs for specific errors
 
-### CLI/SDK issues
+### CLI/SDK Issues
 <a name="cli-issues"></a>
 
  **Issue: Access denied when downloading CLI version 0.1.1**
@@ -442,15 +445,15 @@ This section provides solutions to common issues you might encounter when settin
 + Check pip is using correct Python version: `pip --version`
 + Ensure you are using `pip3` on macOS/Linux if multiple Python versions exist
 
-## Getting help
+## Getting Help
 <a name="getting-help"></a>
 
-### Web portal
+### Web Portal
 <a name="web-portal-help"></a>
 + In-app help: Choose the **?** icon in top navigation
 + User guide: Available in portal under **Help**, and then choose **Documentation**
 
-### Desktop application
+### Desktop Application
 <a name="desktop-application-help"></a>
 + In-app help: **Help** → **Documentation**
 + Logs location:

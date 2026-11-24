@@ -120,6 +120,7 @@ Use this group to control access to AI-powered features such as natural language
 | Quick event triggers | Users can't create or use Quick event triggers. | AI | Triggers |
 | Schedule triggers | Users can't create or use schedule triggers. | AI | Triggers |
 | Use internet to enhance results | Restricts usage of web-based search in Chat agents and Research. | AI | Not applicable |
+| Voice mode | Users can't use voice mode in chat on desktop or mobile. | AI | Not applicable |
 
 ### BI capabilities
 <a name="custom-permissions-bi-capabilities"></a>

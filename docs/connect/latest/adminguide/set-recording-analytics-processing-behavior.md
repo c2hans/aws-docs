@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-recording-analytics-processing-behavior.html
 ---
 
-# Flow block in Connect Customer: Set recording, analytics and processing behavior
+# Flow block in Connect Customer: Set recording, analytics, and processing behavior
 
 This topic defines the flow block for setting options to configure recording behavior for agent and customer, enable automated interaction, enable screen recording, set analytics behavior for contacts, and set custom processing behavior.
 
@@ -41,7 +41,7 @@ Using this block in other flow types does not always guarantee that calls are re
 ## How to configure this block
 <a name="set-recording-analytics-processing-behavior-properties"></a>
 
-You can configure the **Set recording, analytics and processing behavior** block by using the Connect Customer admin website. This guide will walk through how to configure each action in this block.
+You can configure the **Set recording, analytics, and processing behavior** block by using the Connect Customer admin website. This guide will walk through how to configure each action in this block.
 
 ### Set message processing
 <a name="set-message-processing"></a>
@@ -68,7 +68,7 @@ The following guide will discuss the **Set recording and analytics** action in t
 + You can enable automated interaction call recording to hear how a customer is interacting with your IVR or conversational AI bot. No additional charges apply.
 + You can enable screen recording of agents, if agent screen recording has been set up as described in [Enable screen recording](https://docs.aws.amazon.com/connect/latest/adminguide/enable-sr.html). For pricing information, see [Amazon Connect Pricing](https://aws.amazon.com/connect/pricing/).
 + You can configure conversational analytics settings for voice, chat, and email contacts. For pricing information, see [Amazon Connect Pricing](https://aws.amazon.com/connect/pricing/). This includes:
-  + Language in which customers and agents will interact (to improve the speech to text transcript generation).
+  + Languages that customers and agents speak (to improve the speech to text transcript generation). For voice contacts, you can choose up to five languages.
   + Redaction of sensitive data.
   + Additional Generative AI capabilities.
 
@@ -115,7 +115,9 @@ Sentiment analysis is not available for email contacts at this time.
 
 As shown in the following image, the voice settings are split into three sections: **Enable** recording, and **Enable** and **configure** conversational analytics.
 
-![The Voice channel configuration showing recording and analytics settings.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-recording-analytics-processing-behavior-voice-config.png)
+In the following image, **Analytics Languages** has English (United States) and Spanish (United States) selected. Redaction is on, and AI analytics includes sentiment analysis and summaries.
+
+![The Voice settings of the block with recording and conversational analytics turned on, and English (United States) and Spanish (United States) selected in Analytics Languages.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-recording-analytics-processing-behavior-voice-config-multi-language.png)
 
 **Recording settings:**
 + **Agent and customer voice recording**: Choose who you want to record.
@@ -123,8 +125,8 @@ As shown in the following image, the voice settings are split into three section
 + **Automated interaction call recording**: Choose whether to enable voice recording when the customer is interacting with bots and other automation.
 
 **Configuration:**
-+ **Language**: You can dynamically enable the redaction of the output files based on the language of the customer. For instructions, see [Dynamically enable redaction based on the customer's language](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#dynamically-enable-analytics-contact-flow).
-+ **Conversational Analytics Redaction**: Choose whether to redact sensitive data. For more information, see [Enable redaction of sensitive data](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#enable-redaction).
++ **Analytics Languages**: Choose up to five languages that the customer and the agent speak. Put the language that you expect them to speak most first in the list. Conversational analytics uses the first language as the preferred language for transcription. For more information, see [Analyze contacts in more than one language](multi-language-analytics.md).
++ **Conversational Analytics Redaction**: Choose whether to redact sensitive data. For more information, see [Enable redaction of sensitive data](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#enable-redaction). To turn on redaction dynamically, based on the customer's language, see [Dynamically enable redaction based on the customer's language](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#dynamically-enable-analytics-contact-flow).
 + **Sentiment**: Choose whether to enable sentiment analysis.
 + **Generative AI capabilities**: For more information, see [View generative AI-powered post-contact summaries](https://docs.aws.amazon.com/connect/latest/adminguide/view-generative-ai-contact-summaries.html)
 
@@ -145,13 +147,13 @@ Though not a media channel, you can find this in the media channel dropdown of t
 The settings in the **Analytics** section are overwritten by each subsequent **Set recording and analytics behavior** block in the flow.
 + **For calls**: Unselecting **Enable speech analytics on agent and customer voice recordings** disables conversational analytics.
 
-  For example, let's say you have two **Set recording, analytics and processing behavior** blocks in your flow.
+  For example, let's say you have two **Set recording, analytics, and processing behavior** blocks in your flow.
   + The first block has enabled real-time speech analytics on agent and customer voice recordings selected.
   + The second block later in the flow has it unselected.
 
   In this case, the analytics appear only during the time analytics was enabled.
 
-  Another example: let's say you have two **Set recording, analytics and processing behavior** blocks in your flow.
+  Another example: let's say you have two **Set recording, analytics, and processing behavior** blocks in your flow.
   + The first block has **Enabled post-call speech analytics on agent and customer voice recordings** selected.
   + The second block later in the flow has it unselected.
 
@@ -162,7 +164,7 @@ The settings in the **Analytics** section are overwritten by each subsequent **S
 When a call is transferred by using the [Transfer to phone number](https://docs.aws.amazon.com/connect/latest/adminguide/transfer-to-phone-number.html) block, the recording continues.
 + **For chat**: Real-time chat starts analysis as soon as any block in the flow enables it. No block later in the flow disables the real time chat settings.
 + If an agent puts a customer on hold, the agent is still recorded, but the customer is not.
-+ If you want to transfer a contact to another agent or queue, and you want to continue using conversational analytics to collect data, you need to add to the flow another **Set recording, analytics and processing behavior** block with **Enable analytics** turned on. This is because a transfer generates a second contact ID and contact record. conversational analytics needs to run on that contact record as well.
++ If you want to transfer a contact to another agent or queue, and you want to continue using conversational analytics to collect data, you need to add to the flow another **Set recording, analytics, and processing behavior** block with **Enable analytics** turned on. This is because a transfer generates a second contact ID and contact record. conversational analytics needs to run on that contact record as well.
 + **When** you enable conversational analytics, the type of flow that the block is in, and where it is placed in the flow, determine **whether** agents receive the key highlights transcript, and **when** they receive it.
 
   For more information and example use cases that explain how the block affects the agent's experience with key highlights, see [Design a flow for key highlights](https://docs.aws.amazon.com/connect/latest/adminguide/enable-analytics.html#call-summarization-agent).
@@ -180,4 +182,4 @@ In the case where **Set recording and analytics behavior** is selected as the ac
 
 When the **Set message processor** action is selected, the block shows three branches: **Success**, **Error** and **Channel mismatch**:
 
-![A configured Set recording, analytics and processing behavior block with Set message processor action.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-recording-analytics-processing-behavior-configured-message-processor.png)
+![A configured Set recording, analytics, and processing behavior block with Set message processor action.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-recording-analytics-processing-behavior-configured-message-processor.png)
