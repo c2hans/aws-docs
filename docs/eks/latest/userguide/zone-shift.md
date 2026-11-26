@@ -15,7 +15,7 @@ You can start a zonal shift for an EKS cluster, or you can allow AWS to shift tr
 ## Understanding east-west network traffic flow between Pods
 <a name="_understanding_east_west_network_traffic_flow_between_pods"></a>
 
-The following diagram illustrates two example workloads, Orders, and Products. The purpose of this example is to show how workloads and Pods in different AZs communicate.
+The following diagram illustrates two example workloads, Orders and Products. The purpose of this example is to show how workloads and Pods in different AZs communicate.
 
 ![Illustration of network traffic](https://docs.aws.amazon.com/eks/latest/userguide/images/zs-traffic-flow-before-1.png)
 
@@ -263,10 +263,12 @@ No, by default Amazon EKS runs and scales the Kubernetes control plane across mu
 
  **Are there any costs associated with this new feature?**
 
-You can use ARC zonal shift and zonal autoshift in your EKS cluster at no additional charge. However, you will continue to pay for provisioned instances and we strongly recommended that you pre-scale your Kubernetes data plane before using this feature. You should consider a balance between cost and application availability.
+You can use ARC zonal shift and zonal autoshift in your EKS cluster at no additional charge. However, you will continue to pay for provisioned instances, and we strongly recommend that you pre-scale your Kubernetes data plane before using this feature. You should consider a balance between cost and application availability.
 
 ## Additional resources
 <a name="_additional_resources"></a>
+
+For more information about zonal shift and building resilient workloads, see the following resources:
 +  [How a zonal shift works](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.how-it-works.html)
 +  [Best practices for zonal shifts in ARC](https://docs.aws.amazon.com/r53recovery/latest/dg/route53-arc-best-practices.zonal-shifts.html#zonalshift.route53-arc-best-practices.zonal-shifts)
 +  [Resources and scenarios supported for zonal shift and zonal autoshift](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.html)

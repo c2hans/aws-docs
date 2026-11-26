@@ -578,6 +578,8 @@ The following data types are supported by Amazon SageMaker Service:
 +  [MonitoringScheduleSummary](API_MonitoringScheduleSummary.md)
 +  [MonitoringStatisticsResource](API_MonitoringStatisticsResource.md)
 +  [MonitoringStoppingCondition](API_MonitoringStoppingCondition.md)
++  [MoveClusterNodeLogicalIdsError](API_MoveClusterNodeLogicalIdsError.md)
++  [MoveClusterNodesError](API_MoveClusterNodesError.md)
 +  [MultiModelConfig](API_MultiModelConfig.md)
 +  [NeoVpcConfig](API_NeoVpcConfig.md)
 +  [NestedFilters](API_NestedFilters.md)

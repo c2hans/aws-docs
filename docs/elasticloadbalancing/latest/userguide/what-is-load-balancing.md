@@ -24,6 +24,7 @@ For more information about the current generation load balancers, see the follow
 + [User Guide for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/)
 + [User Guide for Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/)
 + [User Guide for Gateway Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/)
++ [User Guide for Elastic Load Balancing for Envoy](https://docs.aws.amazon.com/elasticloadbalancing/latest/elbproxy/what-is.html)
 
 Classic Load Balancers are the previous generation of load balancers from Elastic Load Balancing. We recommend that you migrate to a current generation load balancer. For more information, see [Migrate your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/migrate-classic-load-balancer.html).
 
@@ -36,6 +37,7 @@ You can create, access, and manage your load balancers using any of the followin
 + **AWS SDKs** — Provide language-specific APIs and take care of many of the connection details, such as calculating signatures, handling request retries, and error handling. For more information, see [AWS SDKs](https://aws.amazon.com/developer/tools/).
 + **Query API**— Provides low-level API actions that you call using HTTPS requests. Using the Query API is the most direct way to access Elastic Load Balancing. However, the Query API requires that your application handle low-level details such as generating the hash to sign the request, and error handling. For more information, see the following:
   + Application Load Balancers, Network Load Balancers, and Gateway Load Balancers — [API version 2015-12-01](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/)
+  + Elastic Load Balancing for Envoy — [API version 2026-11-25](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/)
   + Classic Load Balancers — [API version 2012-06-01](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/)
 
 ## Related services

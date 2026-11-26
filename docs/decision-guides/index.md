@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # AWS Decision Guides
@@ -21,6 +21,10 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 
 ## Recently updated
 
+- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: November 2026**
+- [Choosing an AWS application integration service](/decision-guides/latest/decision-guides/application-integration-on-aws-how-to-choose.html): Evaluate services for connecting applications through messaging, events, workflows, and API management. **Last updated: November 2026**
+- [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: November 2026**
+- [AWS WAF or AWS Shield?](/decision-guides/latest/decision-guides/waf-or-shield.html): Choose between web application firewall and DDoS protection services. **Last updated: November 2026**
 - [Choosing an AWS monitoring and observability service](/decision-guides/latest/decision-guides/monitoring-on-aws-how-to-choose.html): Compare monitoring, logging, and observability services to maintain visibility into workload health. **Last updated: November 2026**
 - [AWS CloudTrail or Amazon CloudWatch?](/decision-guides/latest/decision-guides/cloudtrail-or-cloudwatch.html): Understand the differences between audit logging and operational monitoring. **Last updated: November 2026**
 - [Choosing an AWS analytics service](/decision-guides/latest/decision-guides/analytics-on-aws-how-to-choose.html): Compare data lake, data warehouse, streaming, and business intelligence services for your data workloads. **Last updated: November 2026**
@@ -29,12 +33,10 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 - [Choosing an AWS compute service](/decision-guides/latest/decision-guides/choosing-aws-compute-service.html): Compare Amazon EC2, container, serverless, and edge compute options to choose the right compute service for your workload. **Last updated: November 2026**
 - [Choosing a modern application strategy](/decision-guides/latest/decision-guides/modern-apps-strategy-on-aws-how-to-choose.html): Evaluate modern application development approaches to find the best fit for your organization. **Last updated: November 2026**
 - [Choosing a vector database for your generative AI applications](/decision-guides/latest/decision-guides/vector-database-guide.html): Compare AWS vector database and vector search options for generative AI workloads across managed RAG, search, operational databases, in-memory, and low-cost storage. **Last updated: October 2026**
-- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: October 2026**
 - [Choosing an AWS serverless service](/decision-guides/latest/decision-guides/choosing-aws-serverless-service.html): Evaluate serverless compute, API, integration, data, and deployment services to choose the right combination for your workload. **Last updated: September 2026**
 - [Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?](/decision-guides/latest/decision-guides/lightsail-elastic-beanstalk-ec2.html): Compare simplified, managed, and full-control compute options for deploying web applications. **Last updated: September 2026**
 - [AWS Fargate or AWS Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: August 2026**
 - [Amazon Bedrock or Amazon SageMaker AI?](/decision-guides/latest/decision-guides/bedrock-or-sagemaker.html): Understand when to use Amazon Bedrock for building AI-powered applications versus SageMaker AI for custom model development. **Last updated: July 2026**
-- [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: June 2026**
 - [Choosing a purchasing option for Amazon EC2](/decision-guides/latest/decision-guides/ec2-purchasing-options-aws-how-to-choose.html): Compare On-Demand Instances, Reserved Instances, Savings Plans, and Spot Instances to optimize cost and performance for your Amazon EC2 workloads. **Last updated: June 2026**
 
 ## Decision guides by technology
@@ -102,22 +104,22 @@ AWS offers tools and services across five domains to help you achieve and mainta
 - [Choosing AWS security, identity, and governance services](/decision-guides/latest/decision-guides/choosing-aws-security-services.html): Evaluate services for protecting workloads, managing access, and meeting compliance requirements. **Last updated: June 2025**
 - [Choosing an AWS identity service](/decision-guides/latest/decision-guides/identity-on-aws-how-to-choose.html): Compare identity services for managing authentication, authorization, and user access. **Last updated: June 2025**
 - [Choosing an AWS cryptography service](/decision-guides/latest/decision-guides/guide.html): Evaluate encryption key management, hardware security modules, and certificate services. **Last updated: January 2025**
-- [AWS WAF or AWS Shield?](/decision-guides/latest/decision-guides/waf-or-shield.html): Choose between web application firewall and DDoS protection services. **Last updated: September 2024**
+- [AWS WAF or AWS Shield?](/decision-guides/latest/decision-guides/waf-or-shield.html): Choose between web application firewall and DDoS protection services. **Last updated: November 2026**
 
 ## Serverless & Application Integration
 
 Choose the right serverless and integration services for your workloads. These guides help you evaluate serverless compute, API, and data services, as well as messaging, event-driven, and workflow services.
 
 - [Choosing an AWS serverless service](/decision-guides/latest/decision-guides/choosing-aws-serverless-service.html): Evaluate serverless compute, API, integration, data, and deployment services to choose the right combination for your workload. **Last updated: September 2026**
-- [Choosing an AWS application integration service](/decision-guides/latest/decision-guides/application-integration-on-aws-how-to-choose.html): Evaluate services for connecting applications through messaging, events, workflows, and API management. **Last updated: March 2025**
+- [Choosing an AWS application integration service](/decision-guides/latest/decision-guides/application-integration-on-aws-how-to-choose.html): Evaluate services for connecting applications through messaging, events, workflows, and API management. **Last updated: November 2026**
 - [Amazon SQS, Amazon SNS, or Amazon EventBridge?](/decision-guides/latest/decision-guides/sns-or-sqs-or-eventbridge.html): Understand the differences between queuing, pub/sub, and event bus services. **Last updated: September 2024**
 
 ## Storage & Databases
 
 Choose the right AWS storage or database service for your data. AWS offers block, file, object, and cache storage options, plus purpose-built databases for relational, key-value, document, graph, and other data models.
 
-- [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: June 2026**
-- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: October 2026**
+- [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: November 2026**
+- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: November 2026**
 
 ---
 

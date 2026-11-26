@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 # UpdateAgentStatus
 
 **Note**
- For use by AWS Ground Station Agent and shouldn't be called directly.
+For use by AWS Ground Station Agent and shouldn't be called directly.
 
 Update the status of the agent.
 

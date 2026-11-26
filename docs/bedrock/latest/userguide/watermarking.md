@@ -18,16 +18,23 @@ The following table lists the models available in Amazon Bedrock that add a wate
 | Anthropic | Claude Fable 5 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Fable 5.1 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Fable 5.2 | Text | On | Anthropic watermark detection |
+| Anthropic | Claude Haiku 4.5 † | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Haiku 5.5 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Mythos 5 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Mythos 5.1 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Mythos 5.2 | Text | On | Anthropic watermark detection |
+| Anthropic | Claude Opus 4.5 † | Text | On | Anthropic watermark detection |
+| Anthropic | Claude Opus 4.6 † | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Opus 4.7 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Opus 4.8 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Opus 5 | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Opus 5.5 | Text | On | Anthropic watermark detection |
+| Anthropic | Claude Sonnet 4.5 † | Text | On | Anthropic watermark detection |
+| Anthropic | Claude Sonnet 4.6 † | Text | On | Anthropic watermark detection |
 | Anthropic | Claude Sonnet 5 | Text | On | Anthropic watermark detection |
-| Anthropic | Claude Sonnet 5.5 | Text | On | Anthropic watermark detection |
+| Anthropic | Claude Sonnet 5.5 | Text | On | Anthropic watermark detection | <a name="watermarking-sampling-note"></a>
+
+† When a request sets `temperature`, `top_p`, or `top_k` to a non-default value, output from this model doesn't reliably carry the watermark.
 
 ### Amazon Nova Sonic models
 <a name="watermarking-nova-sonic"></a>

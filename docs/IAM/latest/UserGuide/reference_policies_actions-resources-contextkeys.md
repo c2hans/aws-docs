@@ -58,6 +58,7 @@ The **condition keys** table lists all of the condition keys that you can use in
 + [AWS Agent Registry Public Search and Discovery (agent-discovery)](list_agent-discovery.md)
 + [AWS Amplify (amplify)](list_amplify.md)
 + [AWS Amplify Admin (amplifybackend)](list_amplifybackend.md)
++ [AWS Amplify Gen 3 (amplifygen3)](list_amplifygen3.md)
 + [AWS Amplify UI Builder (amplifyuibuilder)](list_amplifyuibuilder.md)
 + [AWS API Portal (apiportal)](list_apiportal.md)
 + [AWS App Mesh (appmesh)](list_appmesh.md)

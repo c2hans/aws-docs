@@ -28,7 +28,7 @@ Required: No
  ** associationType **   <a name="AWSPartnerCentral-Type-channel_RelationshipSummary-associationType"></a>
 The type of association for the relationship.
 Type: String
-Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL`
+Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL | MANAGED_SERVICES_END_CUSTOMER`
 Required: No
 
  ** catalog **   <a name="AWSPartnerCentral-Type-channel_RelationshipSummary-catalog"></a>

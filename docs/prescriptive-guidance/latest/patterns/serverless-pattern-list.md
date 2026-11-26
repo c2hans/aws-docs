@@ -16,4 +16,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Run AWS Systems Manager Automation tasks synchronously from AWS Step Functions](run-aws-systems-manager-automation-tasks-synchronously-from-aws-step-functions.md)
 + [Run parallel reads of S3 objects by using Python in an AWS Lambda function](run-parallel-reads-of-s3-objects-by-using-python-in-an-aws-lambda-function.md)
 + [Send telemetry data from AWS Lambda to OpenSearch for real-time analytics and visualization](send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.md)
++ [Set up private access to an Amazon S3 bucket through a VPC endpoint](set-up-private-access-to-an-amazon-s3-bucket-through-a-vpc-endpoint.md)
 + [More patterns](serverless-more-patterns-pattern-list.md)

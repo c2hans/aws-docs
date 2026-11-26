@@ -78,11 +78,11 @@ Once you're satisfied with your chatbot's responses, deploy it for use:
 
 1. Choose your integration method.
 
-## Next Steps
+## Next steps
 <a name="next-steps-quick"></a>
 
 Congratulations\! You now have a working Amazon Lex V2 chatbot. Here's what you can do next:
-+ **Enable Assisted NLU** – Improve understanding with AI-powered natural language processing.
++ **Enable assisted NLU** – Improve understanding with AI-powered natural language processing.
 + **Add More Intents** – Expand your chatbot's capabilities with additional use cases.
 + **Integrate with Lambda** – Add business logic and external system integration. See [Integrating an AWS Lambda function into your Amazon Lex V2 bot](lambda.md).
 + **Set Up Monitoring** – Track usage and performance. See [Measuring operational metrics with Amazon CloudWatch](monitoring-cloudwatch.md).

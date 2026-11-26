@@ -54,7 +54,7 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Encrypt = true, Wrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY | For ISO\_FORMAT\_4+   AES\_128  <br />+   AES\_192  <br />+   AES\_256  <br />For other PIN block formats+   TDES\_2KEY  <br />+   TDES\_3KEY   |  +  { Encrypt = true, Wrap = true } <br />+  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
 | PIN Generation Key | TR31\_V2\_VISA\_PIN\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Generate = true } <br />+  { Generate = true, Verify = true }  |
 
 ## GeneratePinData (for `IBM3624`)
@@ -64,7 +64,7 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET+  { Encrypt = true, Wrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true } <br />For IBM3624\_PIN\_OFFSET+  { Encrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY | For ISO\_FORMAT\_4+   AES\_128  <br />+   AES\_192  <br />+   AES\_256  <br />For other PIN block formats+   TDES\_2KEY  <br />+   TDES\_3KEY   | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET+  { Encrypt = true, Wrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true } <br />For IBM3624\_PIN\_OFFSET+  { Encrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
 | PIN Generation Key | TR31\_V1\_IBM3624\_PIN\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Generate = true } <br />+  { Generate = true, Verify = true }  |
 
 ## VerifyPinData (for VISA/ABA schemes)
@@ -74,7 +74,7 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY | For ISO\_FORMAT\_4+   AES\_128  <br />+   AES\_192  <br />+   AES\_256  <br />For other PIN block formats+   TDES\_2KEY  <br />+   TDES\_3KEY   |  +  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
 | PIN Generation Key | TR31\_V2\_VISA\_PIN\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Verify = true } <br />+  { Generate = true, Verify = true }  |
 
 ## VerifyPinData (for `IBM3624`)
@@ -84,7 +84,7 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET+  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY | For ISO\_FORMAT\_4+   AES\_128  <br />+   AES\_192  <br />+   AES\_256  <br />For other PIN block formats+   TDES\_2KEY  <br />+   TDES\_3KEY   | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET+  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
 | PIN Verification Key | TR31\_V1\_IBM3624\_PIN\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Verify = true } <br />+  { Generate = true, Verify = true }  |
 
 ## Decrypt Data

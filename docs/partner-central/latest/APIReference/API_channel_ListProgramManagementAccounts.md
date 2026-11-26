@@ -21,7 +21,8 @@ Lists program management accounts based on specified criteria.
       "sortBy": "{{string}}",
       "sortOrder": "{{string}}"
    },
-   "statuses": [ "{{string}}" ]
+   "statuses": [ "{{string}}" ],
+   "type": "{{string}}"
 }
 ```
 
@@ -72,7 +73,7 @@ Required: No
  ** [programs](#API_channel_ListProgramManagementAccounts_RequestSyntax) **   <a name="AWSPartnerCentral-channel_ListProgramManagementAccounts-request-programs"></a>
 Filter by program types.
 Type: Array of strings
-Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER`
+Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER | MANAGED_SERVICES_PROVIDER`
 Required: No
 
  ** [sort](#API_channel_ListProgramManagementAccounts_RequestSyntax) **   <a name="AWSPartnerCentral-channel_ListProgramManagementAccounts-request-sort"></a>
@@ -84,6 +85,12 @@ Required: No
 Filter by program management account statuses.
 Type: Array of strings
 Valid Values: `PENDING | ACTIVE | INACTIVE`
+Required: No
+
+ ** [type](#API_channel_ListProgramManagementAccounts_RequestSyntax) **   <a name="AWSPartnerCentral-channel_ListProgramManagementAccounts-request-type"></a>
+Filter by program management account type.
+Type: String
+Valid Values: `RESALE_BILLING_TRANSFER | MANAGED_SERVICES`
 Required: No
 
 ## Response Syntax
@@ -103,6 +110,7 @@ Required: No
          "revision": "string",
          "startDate": "string",
          "status": "string",
+         "type": "string",
          "updatedAt": "string"
       }
    ],

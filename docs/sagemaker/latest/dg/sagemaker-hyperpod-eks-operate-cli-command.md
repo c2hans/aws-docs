@@ -13,4 +13,5 @@ The following topics provide guidance on writing SageMaker HyperPod API request 
 + [Updating the SageMaker HyperPod platform software](sagemaker-hyperpod-eks-operate-cli-command-update-cluster-software.md)
 + [Accessing SageMaker HyperPod cluster nodes](sagemaker-hyperpod-eks-operate-access-through-terminal.md)
 + [Scaling down a SageMaker HyperPod cluster](smcluster-scale-down.md)
++ [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md)
 + [Deleting a SageMaker HyperPod cluster](sagemaker-hyperpod-eks-operate-cli-command-delete-cluster.md)

@@ -102,6 +102,10 @@ For ELB load balancers, do one of the following:
 The console prepends **dualstack.** for Application and Classic Load Balancer from a different account. When a client, such as a web browser, requests the IP address for your domain name (example.com) or subdomain name (www.example.com), the client can request an IPv4 address (an A record), an IPv6 address (a AAAA record), or both IPv4 and IPv6 addresses (in separate requests). The **dualstack.** designation allows Route 53 to respond with the appropriate IP address for your load balancer based on which IP address format the client requested.
 For more information, see [Routing traffic to an ELB load balancer](routing-to-elb-load-balancer.md).
 
+**Elastic Load Balancing for Envoy proxies**
+For Elastic Load Balancing for Envoy proxies, choose the Region that the proxy is in, and enter the DNS name of the proxy. To get the DNS name, use the `dnsName` field that the `GetProxy` or `ListProxies` API operation returns.
+For more information, see [Routing traffic to an Elastic Load Balancing for Envoy proxy](routing-to-elb-envoy-proxy.md).
+
 **AWS Global Accelerator accelerators**
 For AWS Global Accelerator accelerators, enter the DNS name for the accelerator. You can enter the DNS name of an accelerator that you created using the current AWS account or using a different AWS account.
 

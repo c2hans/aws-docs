@@ -6,13 +6,17 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 
 The following actions are supported by Partner Central Channel API:
 +  [AcceptChannelHandshake](API_channel_AcceptChannelHandshake.md)
++  [CancelChannelContract](API_channel_CancelChannelContract.md)
 +  [CancelChannelHandshake](API_channel_CancelChannelHandshake.md)
++  [CreateChannelContract](API_channel_CreateChannelContract.md)
 +  [CreateChannelHandshake](API_channel_CreateChannelHandshake.md)
 +  [CreateProgramManagementAccount](API_channel_CreateProgramManagementAccount.md)
 +  [CreateRelationship](API_channel_CreateRelationship.md)
 +  [DeleteProgramManagementAccount](API_channel_DeleteProgramManagementAccount.md)
 +  [DeleteRelationship](API_channel_DeleteRelationship.md)
++  [GetChannelContract](API_channel_GetChannelContract.md)
 +  [GetRelationship](API_channel_GetRelationship.md)
++  [ListChannelContracts](API_channel_ListChannelContracts.md)
 +  [ListChannelHandshakes](API_channel_ListChannelHandshakes.md)
 +  [ListProgramManagementAccounts](API_channel_ListProgramManagementAccounts.md)
 +  [ListRelationships](API_channel_ListRelationships.md)

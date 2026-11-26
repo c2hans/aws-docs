@@ -4,6 +4,26 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/anthropic-efs-e
 
 # Enterprise Frontier Safeguards and Enterprise Data Controls on Amazon Bedrock (public preview)
 
+## Introduction
+<a name="efs-edc-intro"></a>
+
+Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC) apply to Anthropic Claude models on Amazon Bedrock that require data retention to detect activity that violates AWS's or third-party model providers' terms of service or use policies, called "Covered Models".
+
+EFS and EDC provides you with control over how those policies are met, such as where retained data is stored and how it is reviewed. EFS and EDC are in public preview.
+
+**Storage and encryption options**
++ EFS: retained data is stored in your own Amazon S3 bucket, in your AWS account, encrypted with your AWS KMS key.
++ EDC: retained data is stored in Amazon-managed storage, encrypted with AWS managed keys, so there's no bucket or key to set up.
+
+For the current list of covered models and their retention requirements, see [Amazon Bedrock abuse detection](abuse-detection.md) and [Covered Models](https://support.claude.com/en/articles/15425695-covered-models) on the Anthropic website.
+
+To understand how to control your data, see [Data retention](data-retention.md).
+
+Eligibility is determined under the EFS and EDC program. To find out whether your organization is eligible, contact your AWS account team or AWS Support.
+
+## Before you begin
+<a name="efs-edc-before-you-begin"></a>
+
 This topic shows you how to set up Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC) on Amazon Bedrock.
 
 **Note**

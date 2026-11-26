@@ -52,20 +52,22 @@ Files in the snapshot are slow the first time a session reads them. In the `disk
 ### Example – Headless browser agent
 <a name="runtime-v2-optimize-example"></a>
 
-The following FastAPI application uses a headless browser to return the title of a web page:
+The following agent uses the AgentCore SDK and a headless browser to return the title of a web page:
 + In the `memory` call, it starts a browser that sessions don’t use. That browser keeps Chromium’s files in memory in the snapshot, so a session launches its own browser in a fraction of a second instead of several seconds. Each session needs its own browser because a browser that’s running at the time of the snapshot has the same random state in every session, including the keys for its TLS connections.
 + In the `disk` call, it opens an HTTPS page, so that the files and the TLS setup that a page load uses are fast for new sessions.
-+ Each request opens and closes its own page in the session’s browser. Without the hook, the first request launches the browser, so the application also works without the hook.
++ Each request opens and closes its own page in the session’s browser. Without the hook, the first request launches the browser, so the agent also works without the hook.
 
-In a test with 100 new sessions, the first response in a session took 2.9 seconds at the median and 3.6 seconds at the 90th percentile with the warmup hook, compared with 5.4 and 32.3 seconds without it.
+The warmup handlers and the entrypoint are all `async` functions, so the SDK runs them on the same event loop. Keep them `async`: every request reuses the Playwright connection that the `memory` call starts, and that connection works only on the event loop that created it.
+
+In a test with 100 new sessions, the first response in a session took 3.0 seconds at the median and 3.5 seconds at the 90th percentile with the warmup hook, compared with 5.4 and 28.7 seconds without it.
 
 ```python
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, Request
+from bedrock_agentcore import BedrockAgentCoreApp, HookConfig, WarmupType
 from playwright.async_api import async_playwright
 
-app = FastAPI()
+app = BedrockAgentCoreApp(warmup_hook=HookConfig(path="/warmup"))
 playwright = None
 snapshot_browser = None  # keeps Chromium's files in memory in the snapshot; sessions don't use it
 browser = None  # each session launches its own
@@ -89,35 +91,30 @@ async def open_page(url):
     finally:
         await page.close()
 
-@app.get("/ping")
-def ping():
-    return {"status": "Healthy"}
-
-@app.post("/warmup")
-async def warmup(request: Request):
+@app.warmup(WarmupType.MEMORY)
+async def start_snapshot_browser():
+    # Start a browser that sessions don't use. Its files stay in memory in the
+    # snapshot, so each session launches its own browser quickly.
     global playwright, snapshot_browser
-    warmup_type = request.headers.get(
-        "X-Amzn-Bedrock-AgentCore-Runtime-Warmup-Type", ""
-    ).lower()
-    if warmup_type == "memory":
-        # Start a browser that sessions don't use. Its files stay in memory in the
-        # snapshot, so each session launches its own browser quickly.
-        playwright = await async_playwright().start()
-        snapshot_browser = await playwright.chromium.launch()
-    elif warmup_type == "disk":
-        # Open one page, as a session does, so that its files are fast for new sessions.
-        async with open_page("https://example.com"):
-            pass
-    return {"status": "ok"}
+    playwright = await async_playwright().start()
+    snapshot_browser = await playwright.chromium.launch()
 
-@app.post("/invocations")
-async def invoke(request: Request):
-    payload = await request.json()
+@app.warmup(WarmupType.DISK)
+async def open_one_page():
+    # Open one page, as a session does, so that its files are fast for new sessions.
+    async with open_page("https://example.com"):
+        pass
+
+@app.entrypoint
+async def invoke(payload):
     async with open_page(payload["url"]) as page:
         return {"title": await page.title()}
+
+if __name__ == "__main__":
+    app.run()
 ```
 
-The following Dockerfile installs snapshot-safe OpenSSL, Python, and the browser into an Amazon Linux 2023 container image:
+The following Dockerfile installs snapshot-safe OpenSSL, Python, the AgentCore SDK, and the browser into an Amazon Linux 2023 container image:
 
 ```dockerfile
 FROM --platform=linux/arm64 public.ecr.aws/amazonlinux/amazonlinux:2023
@@ -130,15 +127,15 @@ RUN dnf swap -y openssl-libs openssl-snapsafe-libs \
 # The Playwright driver needs libatomic on ARM64; Chromium needs the rest.
 RUN dnf install -y libatomic alsa-lib at-spi2-atk cups-libs libXcomposite \
     libXdamage libXrandr libxkbcommon mesa-libgbm nss pango && dnf clean all
-RUN pip3.11 install --no-cache-dir fastapi==0.162.7 uvicorn==0.54.0 playwright==1.65.1
+RUN pip3.11 install --no-cache-dir bedrock-agentcore playwright==1.65.1
 RUN playwright install chromium
 
 COPY app.py .
 EXPOSE 8080
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["python3.11", "app.py"]
 ```
 
-Create the agent runtime on platform version V2 with a build warmup hook that calls `POST /warmup` on port `8080`. For more information, see [Configure lifecycle hooks](runtime-lifecycle-hooks.md#runtime-lifecycle-hooks-configure).
+Create the agent runtime on platform version V2 with a build warmup hook that calls `POST /warmup`. For more information, see [Configure lifecycle hooks](runtime-lifecycle-hooks.md#runtime-lifecycle-hooks-configure).
 
 If you don’t configure a build warmup hook, AgentCore Runtime takes the snapshot as soon as your health check passes. Anything that sessions need in memory must then load before your health check passes, and the first requests of new sessions read their files slowly.
 

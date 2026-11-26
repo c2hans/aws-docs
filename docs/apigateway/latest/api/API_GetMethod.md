@@ -119,15 +119,15 @@ A boolean flag specifying whether a valid ApiKey is required to invoke this meth
 Type: Boolean
 
  ** [authorizationScopes](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-authorizationScopes"></a>
-A list of authorization scopes configured on the method. The scopes are used with a `COGNITO_USER_POOLS` authorizer to authorize the method invocation. The authorization works by matching the method scopes against the scopes parsed from the access token in the incoming request. The method invocation is authorized if any method scopes matches a claimed scope in the access token. Otherwise, the invocation is not authorized. When the method scope is configured, the client must provide an access token instead of an identity token for authorization purposes.
+A list of authorization scopes configured on the method. The scopes are used with a `COGNITO_USER_POOLS` authorizer to authorize the method invocation. The authorization works by matching the method scopes against the scopes parsed from the access token in the incoming request. The method invocation is authorized if any method scopes matches a claimed scope in the access token. Otherwise, the invocation is not authorized. When the method scope is configured, the client must provide an access token instead of an identity token for authorization purposes. The scopes are also used with a `JWT` authorizer. When scopes are configured, the `scope` (or `scp`) claim of the token must contain at least one of the configured scopes.
 Type: Array of strings
 
  ** [authorizationType](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-authorizationType"></a>
-The method's authorization type. Valid values are `NONE` for open access, `AWS_IAM` for using AWS IAM permissions, `CUSTOM` for using a custom authorizer, or `COGNITO_USER_POOLS` for using a Cognito user pool.
+The method's authorization type. Valid values are `NONE` for open access, `AWS_IAM` for using AWS IAM permissions, `CUSTOM` for using a custom authorizer, `COGNITO_USER_POOLS` for using a Cognito user pool, or `JWT` for using a JWT authorizer.
 Type: String
 
  ** [authorizerId](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-authorizerId"></a>
-The identifier of an authorizer to use on this method. The method's authorization type must be `CUSTOM` or `COGNITO_USER_POOLS`.
+The identifier of an Authorizer to use on this method. The `authorizationType` must be `CUSTOM`.
 Type: String
 
  ** [httpMethod](#API_GetMethod_ResponseSyntax) **   <a name="apigw-GetMethod-response-httpMethod"></a>

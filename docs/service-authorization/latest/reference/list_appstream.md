@@ -72,20 +72,22 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   CreateAppBlock  **
-  - **IAM action:**  [appstream:CreateAppBlock](#list_appstream-action-CreateAppBlock)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [appstream:CreateAppBlock](#list_appstream-action-CreateAppBlock)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateAppBlockBuilder  **
   - **IAM action:**  [appstream:CreateAppBlockBuilder](#list_appstream-action-CreateAppBlockBuilder)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
-- **   CreateApplication  **
-  - **IAM action:**  [appstream:CreateApplication](#list_appstream-action-CreateApplication)
+- **   CreateAppBlockBuilderStreamingURL  **
+  - **IAM action:**  [appstream:CreateAppBlockBuilderStreamingURL](#list_appstream-action-CreateAppBlockBuilderStreamingURL)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   CreateApplication  **
+  - **IAM action:**  [appstream:CreateApplication](#list_appstream-action-CreateApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [appstream:TagResource](#list_appstream-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateDirectoryConfig  **
   - **IAM action:**  [appstream:CreateDirectoryConfig](#list_appstream-action-CreateDirectoryConfig)

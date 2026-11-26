@@ -13,6 +13,7 @@ To specify an action, use the `cloudwatch:` prefix followed by the API operation
 
 **Topics**
 + [CloudWatch API operations and required permissions for actions](#cw-permissions-table)
++ [CloudWatch Recommendations permissions](#cw-recommendations-permissions)
 + [CloudWatch Application Signals API operations and required permissions for actions](#cw-application-signals-permissions-table)
 + [CloudWatch Contributor Insights API operations and required permissions for actions](#cw-contributor-insights-permissions-table)
 + [CloudWatch Events API operations and required permissions for actions](#cwe-permissions-table)
@@ -64,6 +65,128 @@ To specify an action, use the `cloudwatch:` prefix followed by the API operation
 | [TagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html) | `cloudwatch:TagResource`<br />Required to add or update tags on CloudWatch resources such as alarms and Contributor Insights rules. |
 | [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UntagResource.html) | `cloudwatch:UntagResource`<br />Required to remove tags from CloudWatch resources . |
 | [UpdateResourceMetricsConfiguration](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UpdateResourceMetricsConfiguration.html) | `cloudwatch:UpdateResourceMetricsConfiguration`<br />Required to update a resource metrics configuration, including the metric selections for a resource.<br />To restrict which resources a principal can target, use the `cloudwatch:ResourceArn` condition key. See [Condition keys for resource metrics configuration access](iam-cw-condition-keys-resource-arn.md). |
+
+## CloudWatch Recommendations permissions
+<a name="cw-recommendations-permissions"></a>
+
+With CloudWatch Recommendations, you can assess the alarms and metrics in your account and get recommendations to improve your monitoring. You use it from the **Recommendations** panel in [Accelerated Compute Insights](Accelerated-Compute-Insights.md). CloudWatch Recommendations uses the following actions:
++ `cloudwatch:StartMonitoringAssessment` (read) starts an assessment.
++ `cloudwatch:GetMonitoringAssessment` (read) returns the status, progress, scope, and retention of an assessment.
++ `cloudwatch:ListMonitoringAssessments` (list) lists the assessments in your account.
++ `cloudwatch:ListMonitoringAssessmentResults` (list) lists the recommendations that an assessment produced.
+
+An assessment is not a resource that has an ARN, so these actions do not support resource-level permissions. Use `"Resource": "*"` in policy statements for these actions.
+
+The **CloudWatchFullAccessV2** managed policy grants all four actions. For the CloudWatch actions that **CloudWatchReadOnlyAccess** grants, see [CloudWatchReadOnlyAccess](managed-policies-cloudwatch.md#managed-policies-cloudwatch-CloudWatchReadOnlyAccess).
+
+### How CloudWatch Recommendations reads your account
+<a name="cw-recommendations-permissions-assessment-reads"></a>
+
+CloudWatch Recommendations does not assume a role in your account. An assessment reads your account with a forward access session for the principal that called `StartMonitoringAssessment`. The session can do only what that principal can do. An assessment reads only the calling account, and only what the caller could read directly. You don't create a role or grant `iam:PassRole`. For more information, see [Forward access sessions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_forward_access_sessions.html) in the *IAM User Guide*.
+
+An assessment reads your alarms and metrics with the following actions, so the principal that starts it needs these permissions too:
++ `cloudwatch:DescribeAlarms`
++ `cloudwatch:GetMetricData`
++ `cloudwatch:GetMetricStatistics`
++ `cloudwatch:GetOTelEnrichment`
++ `cloudwatch:ListMetrics`
+
+Before it records an assessment, `StartMonitoringAssessment` makes one small read-only call for each of these actions. If any call is denied, `StartMonitoringAssessment` returns `AccessDeniedException`, names every denied action, and does not start the assessment. The metric calls read the namespace `CloudWatchRecommendations/PermissionPreflight`, which holds no data, so you might see that namespace in your CloudTrail events.
+
+Some recommendations set an alarm threshold as a percentage of a resource setting, such as provisioned capacity, or of a service quota. To calculate these thresholds, the assessment also reads the resource and the quota. The principal that starts the assessment needs these permissions:
++ `cloudformation:GetResource`, to read the resource through AWS Cloud Control API (Cloud Control API)
++ `servicequotas:GetServiceQuota` and `servicequotas:GetAWSDefaultServiceQuota`, to read the quota
+
+Cloud Control API also uses your permissions to read the resource, so you need the read permissions of each resource type that you want assessed. To find them, look at `handlers.read.permissions` in the resource type's schema. For example, the following AWS CLI command shows the schema for Lambda functions:
+
+```
+aws cloudformation describe-type \
+    --type RESOURCE \
+    --type-name AWS::Lambda::Function \
+    --query Schema \
+    --output text
+```
+
+Because the assessment makes these reads on your behalf, the `aws:ViaAWSService` condition key is `true` for them. If a policy denies requests that don't come from a specific IP address range or VPC, it also denies these reads. To allow them, add `"Bool": {"aws:ViaAWSService": "false"}` to the condition of the `Deny` statement. For more information, see [Example: Allow assessment reads when a policy restricts the source IP address](#cw-recommendations-permissions-deny-example).
+
+An assessment does not change your alarms or any other resource. You review a recommendation and decide whether to apply it.
+
+AWS encrypts assessment results with an AWS owned key and deletes them when the assessment's retention period ends. You can set a retention period of 1 to 90 days when you start the assessment. The default is 90 days.
+
+### Example: Allow a principal to run assessments and read recommendations
+<a name="cw-recommendations-permissions-example"></a>
+
+The following policy grants the permissions to start an assessment from the **Recommendations** panel and to read its results. The second statement grants the reads that the assessment makes of your alarms and metrics. The third statement grants the reads that it makes to calculate thresholds based on a resource setting or a service quota.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CloudWatchRecommendations",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:StartMonitoringAssessment",
+                "cloudwatch:GetMonitoringAssessment",
+                "cloudwatch:ListMonitoringAssessments",
+                "cloudwatch:ListMonitoringAssessmentResults"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AssessmentReads",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:DescribeAlarms",
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:GetOTelEnrichment",
+                "cloudwatch:ListMetrics"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "ThresholdReads",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:GetResource",
+                "servicequotas:GetServiceQuota",
+                "servicequotas:GetAWSDefaultServiceQuota"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+For thresholds based on a resource setting, also grant the read permissions of each resource type that you want assessed. For more information, see [How CloudWatch Recommendations reads your account](#cw-recommendations-permissions-assessment-reads).
+
+### Example: Allow assessment reads when a policy restricts the source IP address
+<a name="cw-recommendations-permissions-deny-example"></a>
+
+The following policy denies requests from outside the IP address range `198.51.100.0/24`. The `aws:ViaAWSService` condition excludes requests that an AWS service makes on your behalf, so the assessment can still read your account.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenyOutsideCorporateNetwork",
+            "Effect": "Deny",
+            "Action": "*",
+            "Resource": "*",
+            "Condition": {
+                "NotIpAddress": {
+                    "aws:SourceIp": "198.51.100.0/24"
+                },
+                "Bool": {
+                    "aws:ViaAWSService": "false"
+                }
+            }
+        }
+    ]
+}
+```
 
 ## CloudWatch Application Signals API operations and required permissions for actions
 <a name="cw-application-signals-permissions-table"></a>

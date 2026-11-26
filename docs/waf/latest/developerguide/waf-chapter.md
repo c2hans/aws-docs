@@ -12,6 +12,7 @@ AWS WAF is a web application firewall that lets you monitor the HTTP(S) requests
 + Amazon CloudFront distribution
 + Amazon API Gateway REST API
 + Application Load Balancer
++ Elastic Load Balancing for Envoy proxy
 + AWS AppSync GraphQL API
 + Amazon Cognito user pool
 + AWS App Runner service

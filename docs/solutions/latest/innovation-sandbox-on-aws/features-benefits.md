@@ -24,6 +24,10 @@ Reduces administrative overhead by implementing standardized policies, guardrail
 
 Maintains better cost control and takes necessary action to reduce unnecessary spend; monitors spend patterns, sends automated alerts at defined thresholds, and restricts access or clean up resources when budget thresholds are approached.
 
+ **Act on spend between billing updates**
+
+AWS Cost Explorer can take hours to report usage. With **Estimated cost tracking**, budget thresholds can act on each lease’s estimated current cost, and spend rate thresholds can send an alert or freeze a lease that spends faster than a set amount per hour or per day. With **Amazon Bedrock token monitoring**, token usage counts toward the lease budget between Cost Explorer reports.
+
  **Gain visibility into sandbox usage**
 
 Centrally monitors all sandbox accounts, tracks sandbox usage metrics, and makes informed decisions with detailed visibility of sandbox environments using the web User Interface (UI).

@@ -25,7 +25,6 @@ A query parameter to indicate whether to rollback the API update (`true`) or not
 
  ** [mode](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-uri-mode"></a>
 The `mode` query parameter to specify the update mode. Valid values are "merge" and "overwrite". By default, the update mode is "merge".
-When you use `overwrite` mode, the entire API definition is replaced. Any API configurations not explicitly included in the import body are reset to their default values. To preserve existing configurations, use `merge` mode, or ensure that your OpenAPI definition includes all desired API configuration settings, such as API Gateway extensions.
 Valid Values: `merge | overwrite`
 
  ** [parameters](#API_PutRestApi_RequestSyntax) **   <a name="apigw-PutRestApi-request-uri-parameters"></a>
@@ -148,7 +147,7 @@ Type: String
  ** [securityPolicy](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-securityPolicy"></a>
  The Transport Layer Security (TLS) version \+ cipher suite for this RestApi.
 Type: String
-Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
+Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
 
  ** [tags](#API_PutRestApi_ResponseSyntax) **   <a name="apigw-PutRestApi-response-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
@@ -178,6 +177,10 @@ HTTP Status Code: 409
  ** LimitExceededException **
 The request exceeded the rate limit. Retry after the specified time period.
 HTTP Status Code: 429
+
+ ** NotFoundException **
+The requested resource is not found. Make sure that the request URI is correct.
+HTTP Status Code: 404
 
  ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.

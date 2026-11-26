@@ -162,7 +162,7 @@ These steps create a schedule rule that starts a pipeline build every 90 days. E
      --targets '[{
        "Id": "1",
        "Arn": "arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{my-pipeline}}",
-       "RoleArn": "arn:aws:iam::{{111122223333}}:role/{{EventBridgeImageBuilderRole}}"
+       "RoleArn": "arn:aws:iam::{{111122223333}}:role/{{eventbridge-image-builder-role}}"
      }]'
    ```
 
@@ -170,6 +170,62 @@ These steps create a schedule rule that starts a pipeline build every 90 days. E
 
    ```
    aws events list-targets-by-rule --rule refresh-image-every-90-days
+   ```
+
+------
+#### [ PowerShell ]
+
+These steps create a schedule rule that starts a pipeline build every 90 days. EventBridge needs an IAM role that it can assume to call `imagebuilder:StartImagePipelineExecution` on your pipeline.
+
+1. To create a rule with a rate expression, run the [Write-EVBRule](https://docs.aws.amazon.com/powershell/latest/reference/items/Write-EVBRule.html) cmdlet:
+
+   ```ps
+   Write-EVBRule -Name refresh-image-every-90-days `
+       -ScheduleExpression "rate(90 days)"
+   ```
+
+1. Create an IAM role that EventBridge can assume, with this trust policy:
+
+   ```json
+   {
+       "Version": "2012-10-17",
+       "Statement": [{
+           "Effect": "Allow",
+           "Principal": { "Service": "events.amazonaws.com" },
+           "Action": "sts:AssumeRole"
+       }]
+   }
+   ```
+
+   Attach a permissions policy that allows the pipeline to start:
+
+   ```json
+   {
+       "Version": "2012-10-17",
+       "Statement": [{
+           "Effect": "Allow",
+           "Action": "imagebuilder:StartImagePipelineExecution",
+           "Resource": "arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{my-pipeline}}"
+       }]
+   }
+   ```
+
+1. To add the pipeline as the rule's target, run the [Write-EVBTarget](https://docs.aws.amazon.com/powershell/latest/reference/items/Write-EVBTarget.html) cmdlet. The target references the role from the previous step:
+
+   ```ps
+   Import-Module AWS.Tools.EventBridge
+   $target = [Amazon.EventBridge.Model.Target]@{
+       Id      = "1"
+       Arn     = "arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{my-pipeline}}"
+       RoleArn = "arn:aws:iam::{{111122223333}}:role/{{eventbridge-image-builder-role}}"
+   }
+   Write-EVBTarget -Rule refresh-image-every-90-days -Target $target
+   ```
+
+1. To confirm that the target is attached, run the [Get-EVBTargetsByRule](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EVBTargetsByRule.html) cmdlet:
+
+   ```ps
+   Get-EVBTargetsByRule -Rule refresh-image-every-90-days
    ```
 
 ------
@@ -229,7 +285,24 @@ aws events put-rule \
 
 aws events put-targets \
   --rule rebuild-on-base-available \
-  --targets '[{"Id":"1","Arn":"arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{dependent-pipeline}}","RoleArn":"arn:aws:iam::{{111122223333}}:role/{{EventBridgeImageBuilderRole}}"}]'
+  --targets '[{"Id":"1","Arn":"arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{dependent-pipeline}}","RoleArn":"arn:aws:iam::{{111122223333}}:role/{{eventbridge-image-builder-role}}"}]'
+```
+
+------
+#### [ PowerShell ]
+
+To create the rule and add the pipeline as the target, run the [Write-EVBRule](https://docs.aws.amazon.com/powershell/latest/reference/items/Write-EVBRule.html) cmdlet and the [Write-EVBTarget](https://docs.aws.amazon.com/powershell/latest/reference/items/Write-EVBTarget.html) cmdlet:
+
+```ps
+Write-EVBRule -Name rebuild-on-base-available `
+    -EventPattern '{"source":["aws.imagebuilder"],"detail-type":["EC2 Image Builder Image State Change"],"detail":{"state":{"status":["AVAILABLE"]}},"resources":[{"prefix":"arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image/{{my-base-image}}/"}]}'
+
+$target = [Amazon.EventBridge.Model.Target]@{
+    Id      = "1"
+    Arn     = "arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image-pipeline/{{dependent-pipeline}}"
+    RoleArn = "arn:aws:iam::{{111122223333}}:role/{{eventbridge-image-builder-role}}"
+}
+Write-EVBTarget -Rule rebuild-on-base-available -Target $target
 ```
 
 ------
@@ -305,9 +378,25 @@ aws events put-targets \
   --targets '[{"Id":"1","Arn":"arn:aws:sns:{{us-west-2}}:{{111122223333}}:{{image-status}}"}]'
 ```
 
-EventBridge also needs permission to send events to your target. For more information about the permissions that each target type requires, see [Permissions for sending events to targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html#targets-permissions) and [Using resource-based policies for Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-resource-based.html) in the *Amazon EventBridge User Guide*.
+------
+#### [ PowerShell ]
+
+To create the rule and send matching events to an Amazon SNS topic, run the [Write-EVBRule](https://docs.aws.amazon.com/powershell/latest/reference/items/Write-EVBRule.html) cmdlet and the [Write-EVBTarget](https://docs.aws.amazon.com/powershell/latest/reference/items/Write-EVBTarget.html) cmdlet:
+
+```ps
+Write-EVBRule -Name image-available-or-failed `
+    -EventPattern '{"source":["aws.imagebuilder"],"detail-type":["EC2 Image Builder Image State Change"],"detail":{"state":{"status":["AVAILABLE","FAILED"]}}}'
+
+$target = [Amazon.EventBridge.Model.Target]@{
+    Id  = "1"
+    Arn = "arn:aws:sns:{{us-west-2}}:{{111122223333}}:{{image-status}}"
+}
+Write-EVBTarget -Rule image-available-or-failed -Target $target
+```
 
 ------
+
+EventBridge needs permission to send events to your target. For the permissions that each target type requires, see [Permissions for sending events to targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html#targets-permissions) in the *Amazon EventBridge User Guide*. For resource-based policies, see [Using resource-based policies for Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-resource-based.html).
 
 **Note**
 When you match the `EC2 Image Builder Workflow Step Waiting` event, your target can call `SendWorkflowStepAction` with the `workflow-step-execution-id` from the event and an `action` of `RESUME` or `STOP`. See [WaitForAction](wfdoc-step-actions.md#wfdoc-step-action-waitfor).

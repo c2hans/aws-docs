@@ -73,8 +73,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Read
 
 - **   ContinueDeployment  **
-  - **IAM action:**  [codedeploy:ContinueDeployment](#list_codedeploy-action-ContinueDeployment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [codedeploy:CreateCloudFormationDeployment](#list_codedeploy-action-CreateCloudFormationDeployment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [codedeploy:ContinueDeployment](#list_codedeploy-action-ContinueDeployment)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateApplication  **
   - **IAM action:**  [codedeploy:CreateApplication](#list_codedeploy-action-CreateApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -265,8 +267,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Tagging, Write
 
 - **   SkipWaitTimeForInstanceTermination  **
-  - **IAM action:**  [codedeploy:CreateCloudFormationDeployment](#list_codedeploy-action-CreateCloudFormationDeployment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [codedeploy:SkipWaitTimeForInstanceTermination](#list_codedeploy-action-SkipWaitTimeForInstanceTermination)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [codedeploy:SkipWaitTimeForInstanceTermination](#list_codedeploy-action-SkipWaitTimeForInstanceTermination)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   StopDeployment  **
   - **IAM action:**  [codedeploy:CreateCloudFormationDeployment](#list_codedeploy-action-CreateCloudFormationDeployment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

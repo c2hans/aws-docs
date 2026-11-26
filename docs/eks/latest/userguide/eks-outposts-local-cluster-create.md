@@ -49,6 +49,7 @@ You could also use the [AWS CLI](https://docs.aws.amazon.com/cli/latest/referenc
 1. Copy the contents that follow to your device. Replace the following values and then run the modified command to create the `outpost-control-plane.yaml` file:
    + Replace {{region-code}} with the [supported AWS Region](eks-outposts-local-cluster-overview.md#outposts-control-plane-supported-regions) that you want to create your cluster in.
    + Replace {{my-cluster}} with a name for your cluster. The name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphanumeric character and can’t be longer than 100 characters. The name must be unique within the AWS Region and AWS account that you’re creating the cluster in.
+   + Replace {{kubernetes-version}} with a supported version. For more information about supported versions, see [Learn Kubernetes and Amazon EKS platform versions for AWS Outposts](eks-outposts-platform-versions.md).
    + Replace {{vpc-ExampleID1}} and {{subnet-ExampleID1}} with the IDs of your existing VPC and subnet. The VPC and subnet must meet the requirements in [Create a VPC and subnets for Amazon EKS clusters on AWS Outposts](eks-outposts-vpc-subnet-requirements.md).
    + Replace {{uniqueid}} with the ID of your Outpost.
    + Replace {{m5.large}} with an instance type available on your Outpost. Before choosing an instance type, see [Select instance types and placement groups for Amazon EKS clusters on AWS Outposts based on capacity considerations](eks-outposts-capacity-considerations.md). Three control plane instances are deployed. You can’t change this number.
@@ -61,7 +62,7 @@ You could also use the [AWS CLI](https://docs.aws.amazon.com/cli/latest/referenc
      metadata:
        name: my-cluster
        region: region-code
-       version: "1.37"
+       version: "kubernetes-version"
 
      vpc:
        clusterEndpoints:

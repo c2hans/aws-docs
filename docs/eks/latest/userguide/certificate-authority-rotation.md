@@ -496,6 +496,7 @@ metadata:
 spec:
   disruption:
     consolidationPolicy: WhenEmptyOrUnderutilized
+    consolidateAfter: 0s
     budgets:
       - nodes: "10%"
   template:
@@ -504,6 +505,10 @@ spec:
         group: karpenter.k8s.aws
         kind: EC2NodeClass
         name: default
+      requirements:
+        - key: karpenter.sh/capacity-type
+          operator: In
+          values: ["on-demand"]
 ```
 
 If `disruption` is configured with a consolidation policy, drift detection is active by default. Karpenter will replace nodes that have drifted from their desired state, which includes CA data changes.

@@ -67,6 +67,9 @@ Each capability type grants the capability role the required permissions, settin
 
 See [Review access policy permissions](access-policy-permissions.md) for more detailed information.
 
+**Note**
+When you delete a capability, Amazon EKS retains the access entry that it created for the capability’s IAM role. This preserves any permissions that you added to the access entry. If you no longer need the access entry, delete it manually. For more information, see [Delete access entries](deleting-access-entries.md).
+
 ## Additional Kubernetes permissions
 <a name="additional-kubernetes-permissions"></a>
 

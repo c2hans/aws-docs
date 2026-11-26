@@ -26,7 +26,7 @@ Valid Range: Minimum value of 1. Maximum value of 10.
 If nextToken is returned, there are more results available. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours; using an expired token fails with ValidationException.
 
  ** [subscriptionType](#API_ListAvailableModules_RequestSyntax) **   <a name="rtbfabric-ListAvailableModules-request-uri-subscriptionType"></a>
-Lists only modules of this type: AWS\_BUILT\_IN for built-in modules, MARKETPLACE for modules that you subscribe to in AWS Marketplace, and PRIVATE for modules that a vendor shares with your account.
+Lists only modules of this type: AWS\_BUILT\_IN for built-in modules, or MARKETPLACE for modules that you subscribe to in AWS Marketplace.
 Valid Values: `MARKETPLACE | PRIVATE | AWS_BUILT_IN`
 
 ## Request Body

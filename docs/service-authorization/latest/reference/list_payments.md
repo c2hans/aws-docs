@@ -30,6 +30,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   GetAccountBalance  **
+  - **IAM action:**  [payments:GetAccountBalance](#list_payments-action-GetAccountBalance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [payments:GetPaymentStatus](#list_payments-action-GetPaymentStatus)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+
+- **   GetFinancialRecord  **
+  - **IAM action:**  [payments:GetFinancialRecord](#list_payments-action-GetFinancialRecord)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [payments:GetPaymentStatus](#list_payments-action-GetPaymentStatus)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 

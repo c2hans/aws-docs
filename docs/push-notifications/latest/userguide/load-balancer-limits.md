@@ -12,7 +12,8 @@ Your AWS account has the following quotas related to AWS End User Messaging Push
 
 | Resource | Default quota | Eligible for increase |
 | --- | --- | --- |
-| Maximum number of push notifications that can be sent per second in a campaign | 25,000 notifications per second | Yes, use the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home) |
+| Maximum number of push notifications that can be sent per second per campaign | 25,000 notifications per second | Yes, use the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home) |
+| Maximum number of push notifications that can be sent per second per account (SendMessages) | 4,000 notifications per second | Yes, use the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home) |
 | Amazon Device Messaging (ADM) message payload size | 6 KB per message | No |
 | Apple Push Notification service (APNs) message payload size | 4 KB per message | No |
 | APNs sandbox message payload size | 4 KB per message | No |

@@ -21,6 +21,6 @@ The answers from the `shot` question set appear on items with the type `SHOT`. E
 Scene answers
 The answers from the `scene` question set appear on items with the type `SCENE`. Elemental Inference answers the questions periodically while a scene is in progress, and again when the scene ends. A `SCENE` item can have no `customQuestions` object until Elemental Inference first answers the questions for that scene. The final item for a scene has the final answers.
 
-An item can also have no `customQuestions` object when Elemental Inference couldn't answer the questions for that shot or scene. For example, the analysis failed or returned unusable answers, or Elemental Inference couldn't read the version. A missing `customQuestions` object doesn't mean that the feed has no customer decisions.
+An item can also have no `customQuestions` object when Elemental Inference couldn't answer the questions for that shot or scene. For example, the analysis failed or returned unusable answers, or Elemental Inference couldn't read the version. A missing `customQuestions` object doesn't mean that the feed has no custom decisions.
 
 To find out which questions produced an answer, use the `questionSetVersion` and `sha256` fields. The questions of a published version never change. `DRAFT` can change over time, so the `sha256` value tells you which content of `DRAFT` produced the answer. To compare, run `get-question-set` and check the `sha256` value in the response.

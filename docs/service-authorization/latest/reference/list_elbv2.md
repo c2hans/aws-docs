@@ -351,6 +351,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [AssociateCertificate](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_AssociateCertificate.html)  **
+  - **Description:** Grants permission to associate an ACM certificate with a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CancelProxyVersionUpdate](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_CancelProxyVersionUpdate.html)  **
+  - **Description:** Grants permission to cancel an in-progress version update for a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [CreateListener](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateListener.html)  **
   - **Description:** Grants permission to create a listener for the specified Application Load Balancer
   - **Resource types (\*required):** [loadbalancer/app/](#list_elbv2-resource-loadbalancer_app_) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elbv2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)<br />[elasticloadbalancing:ListenerProtocol](#list_elbv2-elasticloadbalancing_ListenerProtocol)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)<br />[elasticloadbalancing:SecurityPolicy](#list_elbv2-elasticloadbalancing_SecurityPolicy)
@@ -363,6 +375,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [loadbalancer/app/](#list_elbv2-resource-loadbalancer_app_) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elbv2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)<br />[elasticloadbalancing:Scheme](#list_elbv2-elasticloadbalancing_Scheme)<br />[elasticloadbalancing:SecurityGroup](#list_elbv2-elasticloadbalancing_SecurityGroup)<br />[elasticloadbalancing:Subnet](#list_elbv2-elasticloadbalancing_Subnet)
   - **Resource types (\*required):** [loadbalancer/gwy/](#list_elbv2-resource-loadbalancer_gwy_) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elbv2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)<br />[elasticloadbalancing:Scheme](#list_elbv2-elasticloadbalancing_Scheme)<br />[elasticloadbalancing:SecurityGroup](#list_elbv2-elasticloadbalancing_SecurityGroup)<br />[elasticloadbalancing:Subnet](#list_elbv2-elasticloadbalancing_Subnet)
   - **Resource types (\*required):** [loadbalancer/net/](#list_elbv2-resource-loadbalancer_net_) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_elbv2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)<br />[elasticloadbalancing:Scheme](#list_elbv2-elasticloadbalancing_Scheme)<br />[elasticloadbalancing:SecurityGroup](#list_elbv2-elasticloadbalancing_SecurityGroup)<br />[elasticloadbalancing:Subnet](#list_elbv2-elasticloadbalancing_Subnet)
+  - **Access level:** Write
+
+- **   [CreateProxy](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_CreateProxy.html)  **
+  - **Description:** Grants permission to create a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_elbv2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateRule](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateRule.html)  **
@@ -395,6 +413,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [loadbalancer/app/](#list_elbv2-resource-loadbalancer_app_) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
   - **Resource types (\*required):** [loadbalancer/gwy/](#list_elbv2-resource-loadbalancer_gwy_) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
   - **Resource types (\*required):** [loadbalancer/net/](#list_elbv2-resource-loadbalancer_net_) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteProxy](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_DeleteProxy.html)  **
+  - **Description:** Grants permission to delete a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteRule](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteRule.html)  **
@@ -523,6 +547,36 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [DisassociateCertificate](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_DisassociateCertificate.html)  **
+  - **Description:** Grants permission to disassociate an ACM certificate from a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [GetProxy](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_GetProxy.html)  **
+  - **Description:** Grants permission to get information about a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetProxyAttributes](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_GetProxyAttributes.html)  **
+  - **Description:** Grants permission to get the attributes of a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetProxyConfigurationContents](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_GetProxyConfigurationContents.html)  **
+  - **Description:** Grants permission to get the configuration file and configuration archive contents of a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetProxyUpdate](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_GetProxyUpdate.html)  **
+  - **Description:** Grants permission to get information about a proxy update
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetResourcePolicy](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_GetResourcePolicy.html)  **
   - **Description:** Grants permission to retrieve the resource policy associated with the resource
   - **Resource types (\*required):** [truststore](#list_elbv2-resource-truststore)
@@ -539,6 +593,36 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve a trust store revocation content
   - **Resource types (\*required):** [truststore\*](#list_elbv2-resource-truststore)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [ListCertificateAssociations](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_ListCertificateAssociations.html)  **
+  - **Description:** Grants permission to list the ACM certificate associations for a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListProxies](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_ListProxies.html)  **
+  - **Description:** Grants permission to list the proxies in your account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListProxyUpdates](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_ListProxyUpdates.html)  **
+  - **Description:** Grants permission to list the updates for a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListProxyVersions](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_ListProxyVersions.html)  **
+  - **Description:** Grants permission to list the available proxy versions
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListTagsForResource](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_ListTagsForResource.html)  **
+  - **Description:** Grants permission to list the tags for a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [ModifyCapacityReservation](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyCapacityReservation.html)  **
@@ -657,6 +741,42 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [loadbalancer/net/](#list_elbv2-resource-loadbalancer_net_) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)<br />[elasticloadbalancing:Subnet](#list_elbv2-elasticloadbalancing_Subnet)
   - **Access level:** Write
 
+- **   [TagResource](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_TagResource.html)  **
+  - **Description:** Grants permission to add tags to a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_elbv2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)
+  - **Access level:** Tagging, Write
+
+- **   [UntagResource](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_UntagResource.html)  **
+  - **Description:** Grants permission to remove tags from a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_elbv2-aws_TagKeys)
+  - **Access level:** Tagging, Write
+
+- **   [UpdateProxyAttributes](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_UpdateProxyAttributes.html)  **
+  - **Description:** Grants permission to update the attributes of a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateProxyConfiguration](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_UpdateProxyConfiguration.html)  **
+  - **Description:** Grants permission to update the configuration of a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateProxyNetworkConfiguration](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_UpdateProxyNetworkConfiguration.html)  **
+  - **Description:** Grants permission to update the network configuration of a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateProxyVersion](https://docs.aws.amazon.com/elasticloadbalancing/elb-proxy/latest/APIReference/API_UpdateProxyVersion.html)  **
+  - **Description:** Grants permission to update the version of a proxy
+  - **Resource types (\*required):** [proxy\*](#list_elbv2-resource-proxy)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 ## Permission-only actions for AWS Elastic Load Balancing V2
 <a name="list_elbv2-permission-only-actions"></a>
 
@@ -668,10 +788,22 @@ The following actions are defined by AWS Elastic Load Balancing V2 but are not d
   - **Condition keys:**
   - **Access level:** Permissions management, Write
 
+- **   [CreateProxyWafAssociation](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-AssociateWebACL)  **
+  - **Description:** Grants permission to associate a WAF web ACL with a proxy
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateWebACLAssociation](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-AssociateWebACL)  **
   - **Description:** Grants permission to associate WAF WebACL to the specified load balancer
   - **Resource types (\*required):** [loadbalancer/app/\*](#list_elbv2-resource-loadbalancer_app_)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteProxyWafAssociation](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-DisassociateWebACL)  **
+  - **Description:** Grants permission to disassociate a WAF web ACL from a proxy
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** Write
 
 - **   [DeleteWebACLAssociation](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-AssociateWebACL)  **
@@ -691,6 +823,18 @@ The following actions are defined by AWS Elastic Load Balancing V2 but are not d
   - **Resource types (\*required):** [loadbalancer/app/\*](#list_elbv2-resource-loadbalancer_app_)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [GetProxyWafAssociation](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-GetWebACLForResource)  **
+  - **Description:** Grants permission to get the WAF web ACL associated with a proxy
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [ListProxyWafAssociations](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-ListResourcesForWebACL)  **
+  - **Description:** Grants permission to list the proxies associated with a WAF web ACL
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
 
 - **   [SetWebAcl](https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.html#security_iam_action-AssociateWebACL)  **
   - **Description:** Grants permission to give WebAcl permission to WAF
@@ -713,6 +857,7 @@ The following resource types are defined by this service and can be used in the 
 |  [loadbalancer/app/](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html#application-load-balancer-overview)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId} | [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_) |
 |  [loadbalancer/gwy/](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gateway-load-balancers.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/gwy/${LoadBalancerName}/${LoadBalancerId} | [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_) |
 |  [loadbalancer/net/](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html#network-load-balancer-overview)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/net/${LoadBalancerName}/${LoadBalancerId} | [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_) |
+|  [proxy](https://docs.aws.amazon.com/elasticloadbalancing/)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:proxy/${ProxyName}:${ProxyId} | [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_) |
 |  [targetgroup](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:targetgroup/${TargetGroupName}/${TargetGroupId} | [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_) |
 |  [truststore](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/trust-store.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:truststore/${TrustStoreName}/${TrustStoreId} | [aws:ResourceTag/${TagKey}](#list_elbv2-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elbv2-elasticloadbalancing_ResourceTag___TagKey_) |
 

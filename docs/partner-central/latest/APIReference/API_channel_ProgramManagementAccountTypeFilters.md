@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** programs **   <a name="AWSPartnerCentral-Type-channel_ProgramManagementAccountTypeFilters-programs"></a>
 Filter by program types.
 Type: Array of strings
-Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER`
+Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER | MANAGED_SERVICES_PROVIDER`
 Required: No
 
 ## See Also

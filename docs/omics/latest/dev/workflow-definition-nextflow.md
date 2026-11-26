@@ -229,7 +229,7 @@ If a process gets a fallback order from more than one place, HealthOmics uses th
 
 1. The top level of the `process` scope in the config file.
 
-HealthOmics sets the **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** environment variable in the task container. Its value is the active profile's accelerator type (for example, `nvidia-l40s`) or `cpu` for a CPU-only profile. Use it to branch your command when GPU and CPU code paths differ.
+HealthOmics sets the **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** environment variable in the task container. Its value is the active profile's accelerator type (for example, `nvidia-l40s`) or `cpu` for a CPU-only profile. For an expanded accelerator search profile, it is the accelerator type of the instance that the task runs on. Use it to branch your command when GPU and CPU code paths differ.
 
 Keep the following in mind when you use the directive in Nextflow:
 + Write **memory** with one of the units B, KB, MB, GB or TB, for example `'32 GB'`. GiB, MiB and TiB are not accepted.

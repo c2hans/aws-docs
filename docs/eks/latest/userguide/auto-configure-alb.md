@@ -238,6 +238,22 @@ The following table lists the fields that you can set in an `IngressClassParams`
 |  `minimumLoadBalancerCapacity.capacityUnits`  | Reserves a minimum capacity for the ALB, in load balancer capacity units (LCUs). Set to `0` to remove the reservation. Overrides the `alb.ingress.kubernetes.io/minimum-load-balancer-capacity` annotation. |  `1000`  |
 |  `ipamConfiguration.ipv4IPAMPoolId`  | ID of the Amazon VPC IP Address Manager (IPAM) pool that an internet-facing ALB uses for its public IPv4 addresses. Overrides the `alb.ingress.kubernetes.io/ipam-ipv4-pool-id` annotation. |  `ipam-pool-0123456789abcdef0`  |
 
+To select subnets by tag, specify `subnets.matchTags`. Specify either `subnets.ids` or `subnets.matchTags`, not both. The following example selects subnets that have the tag key `Environment` with the value `prod`.
+
+```yaml
+apiVersion: eks.amazonaws.com/v1
+kind: IngressClassParams
+metadata:
+  name: alb-matchtags
+spec:
+  scheme: internet-facing
+  subnets:
+    matchTags:
+      - key: Environment
+        values:
+          - prod
+```
+
 ## Considerations
 <a name="_considerations"></a>
 + You cannot use Annotations on an IngressClass to configure load balancers with EKS Auto Mode. IngressClass configuration should be done through IngressClassParams. However, you can use annotations on individual Ingress resources to configure load balancer behavior (such as `alb.ingress.kubernetes.io/security-group-prefix-lists` or `alb.ingress.kubernetes.io/conditions.*`).
@@ -270,7 +286,7 @@ The following tables provide a detailed comparison of changes in IngressClassPar
 | Previous | New | Description |
 | --- | --- | --- |
 |  `kubernetes.io/ingress.class`  | Not supported | Use `spec.ingressClassName` on Ingress objects |
-|  `alb.ingress.kubernetes.io/group.name`  | Not supported | Specify groups in IngressClass only |
+|  `alb.ingress.kubernetes.io/group.name`  | Not supported | Specify groups in IngressClassParams only |
 |  `alb.ingress.kubernetes.io/waf-acl-id`  | Not supported | Use WAF v2 instead |
 |  `alb.ingress.kubernetes.io/web-acl-id`  | Not supported | Use WAF v2 instead |
 |  `alb.ingress.kubernetes.io/dry-run-plan`  | Not supported | Dry-run plan is currently not supported |

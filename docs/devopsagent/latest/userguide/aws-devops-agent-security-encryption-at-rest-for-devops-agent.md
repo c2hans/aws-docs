@@ -266,6 +266,8 @@ Before disabling or deleting a key:
 
 **Note:**: AWS DevOps Agent does not automatically re-encrypt data under a new key. If you need to rotate to a new customer managed key, you must create a new resource with the new key.
 
+If your AWS IAM Identity Center instance uses a customer managed AWS KMS key, the key policy must allow AWS managed applications to use the key through Identity Store. You need this permission to assign groups to access profiles. The baseline KMS key policy in the *AWS IAM Identity Center User Guide* includes this statement (`AllowManagedApps`). This requirement doesn't apply when you assign users. For more information about access profiles, see [Controlling web app access with access profiles](aws-devops-agent-security-controlling-web-app-access-with-access-profiles.md).
+
 ## Monitoring your encryption keys
 <a name="monitoring-your-encryption-keys"></a>
 

@@ -13,10 +13,27 @@ If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans
 
 1. Choose **Create case**.
 
-## How can we help?
-<a name="how-can-we-help"></a>
+## Describe your issue
+<a name="describe-your-issue"></a>
 
-1. Choose **Technical**.
+On the **Support interactions** page, describe your issue in the text box and submit it. An AI-powered assistant uses your description to route your case and help resolve it. The following screenshot shows the **Support interactions** page, where the assistant greets you above the description text box.
+
+![The Support interactions page in AWS Support Center](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/contact-support-page.png)
+
+Describe your issue in natural language, and include details such as:
++ The solution name, Innovation Sandbox on AWS, and the version you are using
++ The AWS services involved
++ Error messages or unexpected behavior
++ Steps you have already taken to troubleshoot
+
+The assistant guides you through resolving the issue or connects you with a support engineer.
+
+## Use the form-based workflow
+<a name="use-the-form-based-workflow"></a>
+
+If you prefer to create the case with a form, provide the following information:
+
+1. For **Type**, choose **Technical**.
 
 1. For **Service**, choose **Solutions**.
 
@@ -24,31 +41,20 @@ If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans
 
 1. For **Severity**, choose the option that best matches your use case.
 
-1. When you enter the **Service**, **Category**, and **Severity**, the interface populates links to common troubleshooting questions.
+1. For **Subject**, enter text summarizing your question or issue.
 
-If you cannot resolve your question with these links, choose **Next step: Additional information**.
+1. For **Description**, describe the issue in detail, including the name of this product and the version you are using, such as this example: `Innovation Sandbox on AWS vX.Y.Z`.
+
+1. In the **Attachments** section, choose **Attach files** to provide the information that AWS Support needs to process the request. For what to include, see [Additional information](#additional-information).
+
+1. At the bottom of the form, choose **Submit**.
 
 ## Additional information
 <a name="additional-information"></a>
 
-1. For **Subject**, enter text summarizing your question or issue.
-
-1. For **Description**, describe the issue in detail, including the name of this product and the version you are using, such as this example: Innovation Sandbox on AWS vX.Y.Z.
-
-1. Choose **Attach files**.
-
-1. Attach the information that AWS Support needs to process the request.
-
-## Help us resolve your case faster
-<a name="help-us-resolve-your-case-faster"></a>
-
-1. Enter the requested information.
-
-1. Choose **Next step: Solve now or contact us**.
-
-## Solve now or contact us
-<a name="solve-now-or-contact-us"></a>
-
-Review the **Solve now** solutions.
-
-If you cannot resolve your issue with these solutions, choose **Contact us**, enter the requested information, and choose **Submit**.
+To help AWS Support resolve your case faster, attach a `.zip` file containing the following, as applicable:
++ The solution version
++ The Hub account ID and the Region where you deployed the solution
++ The Amazon Resource Name (ARN) of the failed CloudFormation stack, if you are reporting a deployment or update failure
++ Log entries from the **Compute-ISBLogGroup log group** for the time of the issue
++ The affected sandbox account ID or lease ID, and the account or lease status shown in the web UI

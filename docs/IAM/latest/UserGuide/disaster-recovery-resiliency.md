@@ -15,11 +15,11 @@ In Regions that are [enabled by default](https://docs.aws.amazon.com/accounts/la
 Certain events can interrupt communication between AWS Regions over the network. However, even when you can't communicate with the global IAM endpoint, AWS STS can still authenticate IAM principals and IAM can authorize your requests. The specific details of an event that interrupts communication will determine your ability to access AWS services. In most situations, you can continue to use IAM credentials in your AWS environment. The following conditions might apply to an event that interrupts communication.
 
 **Access keys for IAM users**
-You can authenticate indefinitely in a Region with long-term [access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html). When you use the AWS Command Line Interface and APIs, you can provide AWS access keys so that AWS can verify your identity in programmatic requests.
+Access keys are long-term credentials that you provide when you use the AWS Command Line Interface or AWS APIs so that AWS can verify your identity in programmatic requests. In AWS Regions that are enabled by default, you can authenticate with long-term [access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for the duration of the event. In [opt-in Regions](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html), which are disabled by default until you enable them, you can authenticate with long-term access keys for up to 100 days after the Region loses communication with other Regions.
 As a [best practice](best-practices.md), we recommend that your users sign in with [temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) instead of long-term access keys.
 
 **Temporary credentials**
-You can [request new temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access.html) with the AWS STS Regional [service endpoint](https://docs.aws.amazon.com/general/latest/gr/sts.html#sts_region) for at least 24 hours. The following API operations generate temporary credentials.
+You can continue to [request new temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access.html) with the AWS STS Regional [service endpoint](https://docs.aws.amazon.com/general/latest/gr/sts.html#sts_region) for the duration of the event. The following API operations generate temporary credentials.
 + **AssumeRole**
 + **AssumeRoleWithWebIdentity**
 + **AssumeRoleWithSAML**
@@ -27,16 +27,17 @@ You can [request new temporary credentials](https://docs.aws.amazon.com/IAM/late
 + **GetSessionToken**
 
 **Principals and permissions**
-+ You might not be able to add, modify, or remove principals or permissions in IAM.
-+ Your credentials might not reflect changes to your permissions that you recently applied in IAM. For more information, see [Changes that I make are not always immediately visible](troubleshoot.md#troubleshoot_general_eventual-consistency).
++ From the disconnected Region, you might not be able to reach the IAM control plane to add, modify, or remove principals or permissions.
++ Changes that you make to principals or permissions from outside the disconnected Region don't take effect in that Region for the duration of the event.
++ Changes that you applied in IAM shortly before the event might not be reflected in your credentials. For more information, see [Changes that I make are not always immediately visible](troubleshoot.md#troubleshoot_general_eventual-consistency).
 
 **AWS Management Console**
-+ You might be able to use a Regional sign-in endpoint to sign in to the AWS Management Console as an IAM user. Regional sign-in endpoints have the following URL format.
++ You can use a Regional sign-in endpoint to sign in to the AWS Management Console as an IAM user, through SAML 2.0 federation, or through a custom identity broker. Regional console endpoints have the following URL format.
 
-  `https://{{{Account ID}}}.signin.aws.amazon.com/console?region={{{Region}}}`
+  `https://{{{Region}}}.console.aws.amazon.com`
 
-  *Example: https://111122223333.signin.aws.amazon.com/console?region=us-west-2*
-+ You might not be able to complete [Universal 2nd Factor (U2F)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_u2f.html) multi-factor authentication (MFA).
+  *Example: https://us-west-2.console.aws.amazon.com*
++ You can complete multi-factor authentication (MFA) with [passkeys, U2F security keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_u2f.html), and TOTP devices.
 
 ## Best practices for IAM resilience
 <a name="region-dependency-best-practices"></a>
@@ -46,3 +47,5 @@ AWS has built resilience into AWS Regions and Availability Zones. When you obser
 1. Use an AWS STS Regional [service endpoint](https://docs.aws.amazon.com/general/latest/gr/sts.html#sts_region) instead of the default global endpoint.
 
 1. Review the configuration of your environment for vital resources that routinely create or modify IAM resources, and prepare a fallback solution that uses existing IAM resources.
+
+1. Create an IAM user for emergency access, with a console password and MFA, that you can use to sign in through a Regional sign-in endpoint if your identity provider is unavailable.

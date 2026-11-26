@@ -147,7 +147,7 @@ To view the permissions for this policy, see [AWSMarketplaceRead-only](https://d
 
 You can attach the `AWSPrivateMarketplaceAdminFullAccess` policy to your IAM identities.
 
-This identity-based policy enables administrators to manage AWS Private Marketplace configurations and associated organizational controls. This policy includes IAM and Organizations permissions. It grants permissions to do the following actions:
+This identity-based policy enables administrators to manage AWS Private Marketplace configurations and associated organizational controls. This policy includes IAM, Organizations, and AWS invoicing permissions. It grants permissions to do the following actions:
 
 1. Manage Private Marketplace service-linked roles (SLR).
 
@@ -178,6 +178,18 @@ This identity-based policy enables administrators to manage AWS Private Marketpl
    1. List organizational hierarchy information.
 
    1. Monitor AWS service access and delegated administrators.
+
+1. Manage buyer approval requests.
+
+   1. List and view agreement approval requests and their terms.
+
+   1. Accept or reject agreement approval requests.
+
+1. Manage procurement system connections.
+
+   1. List available procurement portals and their suppliers.
+
+   1. List, view, create, and update procurement portal preferences in your own account.
 
 This policy is designed for administrators who need to set up and manage Private Marketplace across an Organizations structure, granting both console and programmatic access to these functions.
 
@@ -211,7 +223,7 @@ To view the permissions for this policy, see [AWSPrivateMarketplaceRequests](htt
 
 You can't attach the `AWSServiceRoleForPrivateMarketplaceAdminPolicy` to your IAM entities. This policy is attached to a service-linked role that allows AWS Marketplace to perform actions on your behalf. For more information, see [Using service-linked roles for AWS Marketplace](buyer-using-service-linked-roles.md).
 
-This policy grants contributor permissions that allow AWS Marketplace to describe and update Private Marketplace resources and describe AWS Organizations.
+This policy grants contributor permissions that allow AWS Marketplace to describe and update Private Marketplace resources and describe AWS Organizations. It also allows AWS Marketplace to retrieve agreement approval requests and their terms, and to accept or reject those requests on behalf of designated approvers.
 
 To view the permissions for this policy, see [AWSServiceRoleForPrivateMarketplaceAdminPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForPrivateMarketplaceAdminPolicy.html) in the *AWS Managed Policy Reference*.
 
@@ -259,6 +271,8 @@ In AWS Marketplace Vendor Insights, an assessor is equal to a buyer, and a vendo
 | Change | Description | Date |
 | --- | --- | --- |
 | [AWSMarketplaceFullAccess](#security-iam-awsmanpol-awsmarketplacefullaccess) — updates to existing policy | AWS Marketplace added permissions that let Agent Mode with deployment capability check an account's capacity, service quotas, and enabled Regions before deploying purchased software. These permissions also let Agent Mode manage the CloudFormation stacks, network interfaces, and security group rules used to deploy and clean up that software. | November 19, 2026 |
+| [AWSPrivateMarketplaceAdminFullAccess](#security-iam-awsmanpol-awsprivatemarketplaceadminfullaccess) — updates to existing policy | AWS Marketplace added permissions for Private Marketplace administrators to list, view, accept, and reject agreement approval requests, and to list, view, create, and update procurement portal preferences. | November 18, 2026 |
+| [AWSServiceRoleForPrivateMarketplaceAdminPolicy](#private-marketplace-slr-manpol) — updates to existing policy | AWS Marketplace added permissions to retrieve agreement approval requests and their terms, and to accept or reject those requests on behalf of designated approvers. | November 18, 2026 |
 | [AWSMarketplaceManageSubscriptions](#security-iam-awsmanpol-awsmarketplacemanagesubscriptions) — updates to existing policy | AWS Marketplace added permissions for buyers to review, accept, and cancel agreement requests, start and track approvals for agreement requests, and view product deployment configurations. | November 18, 2026 |
 | [AWSMarketplaceRead-only](#security-iam-awsmanpol-awsmarketplaceread-only) — updates to existing policy | AWS Marketplace added read-only permissions to view agreement requests, approvals, and product deployment configurations. | November 18, 2026 |
 | [AWSMarketplaceManageSubscriptions](#security-iam-awsmanpol-awsmarketplacemanagesubscriptions) — updates to existing policy | AWS Marketplace added the aws-marketplace:GetAgreementContacts read-only action to view contact information for purchase agreements. | November 18, 2026 |

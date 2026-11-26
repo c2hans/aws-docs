@@ -671,7 +671,7 @@ See also [https://aws.amazon.com/datapipeline](https://aws.amazon.com/datapipeli
 See [schema](#schema).
 
 **data source**<a name="data_source"></a>
-The database, file, or repository that provides information required by an application or database. For example, in [OpsWorks](#opsworks), valid data sources include an [instance](#instance) for a stack's MySQL layer or a stack's [Amazon RDS](#AmazonRelationalDatabaseService) service layer. In [Amazon Redshift ](#redshift), valid data sources include text files in an [Amazon S3](#amazons3) [bucket](#bucket), in an [Amazon EMR](#AmazonElasticMapReduce) cluster, or on a remote host that a cluster can access through an SSH connection.
+The database, file, or repository that provides information required by an application or database. In [Amazon Redshift ](#redshift), valid data sources include text files in an [Amazon S3](#amazons3) [bucket](#bucket), in an [Amazon EMR](#AmazonElasticMapReduce) cluster, or on a remote host that a cluster can access through an SSH connection.
 See also [datasource](#datasource).
 
 **database engine**<a name="databaseengine"></a>
@@ -732,14 +732,6 @@ See also [node](#node).
 
 **Dedicated Reserved Instance**<a name="DedicatedReservedInstance"></a>
 An option that you purchase to guarantee that sufficient capacity will be available to launch [Dedicated Instances](#DedicatedInstance) into a [Amazon VPC](#vpc).
-
-**AWS DeepComposer**<a name="deepcomposer"></a>
-AWS DeepComposer is a web service designed specifically to educate developers through tutorials, sample code, and training data.
-See also [https://aws.amazon.com/deepcomposer](https://aws.amazon.com/deepcomposer/).
-
-**AWS DeepLens**<a name="deeplens"></a>
-AWS DeepLens is a tool that provides AWS customers with a centralized place to search, discover, and connect with trusted APN Technology and Consulting Partners, based on customers' business needs.
-See also [https://aws.amazon.com/deeplens](https://aws.amazon.com/deeplens/).
 
 **AWS DeepRacer**<a name="deepracer"></a>
 AWS DeepRacer is a cloud-based 3D racing simulator, global racing league, and fully autonomous 1/18th-scale race car driven by reinforcement learning.
@@ -925,10 +917,6 @@ See also [https://aws.amazon.com/elasticloadbalancing](https://aws.amazon.com/el
 
 **elastic network interface**<a name="elasticnetworkinterface"></a>
 An additional network interface that can be attached to an [instance](#instance). Elastic network interfaces include a primary private IP address, one or more secondary private IP addresses, an Elastic IP Address (optional), a MAC address, membership in specified [security groups](#SecurityGroup), a description, and a source/destination check flag. You can create an elastic network interface, attach it to an instance, detach it from an instance, and attach it to another instance.
-
-**Elastic Transcoder**<a name="elastictranscoder"></a>
-Amazon Elastic Transcoder is a cloud-based media transcoding service. Elastic Transcoder is a highly scalable tool for converting (or *transcoding*) media files from their source format into versions that play on devices such as smartphones, tablets, and PCs.
-See also [https://aws.amazon.com/elastictranscoder/](https://aws.amazon.com/elastictranscoder/).
 
 **ElastiCache**<a name="elasticache"></a>
 Amazon ElastiCache is a web service that simplifies deploying, operating, and scaling an in-memory cache in the cloud. The service improves the performance of web applications by providing information retrieval from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases.
@@ -1388,14 +1376,6 @@ A company that provides subscribers with access to the internet. Many ISPs are a
 **intrinsic function**<a name="intrinsicfunction"></a>
 A special action in a [CloudFormation](#CloudFormation) template that assigns values to properties not available until runtime. These functions follow the format *Fn::Attribute*, such as `Fn::GetAtt`. Arguments for intrinsic functions can be parameters, pseudo parameters, or the output of other intrinsic functions.
 
-**AWS IoT 1-Click**<a name="AWSIoTOneClick"></a>
-AWS IoT 1-Click is a service that simple devices can use to launch AWS Lambda functions.
-See also [https://aws.amazon.com/iot-1-click](https://aws.amazon.com/iot-1-click/).
-
-**AWS IoT Analytics**<a name="AWSIoTAnalytics"></a>
-AWS IoT Analytics is a fully managed service used to run sophisticated analytics on massive volumes of IoT data.
-See also [https://aws.amazon.com/iot-analytics](https://aws.amazon.com/iot-analytics/).
-
 **AWS IoT Core**<a name="AWSIoT"></a>
 AWS IoT Core is a managed cloud platform that lets connected devices easily and securely interact with cloud applications and other devices.
 See also [https://aws.amazon.com/iot](https://aws.amazon.com/iot/).
@@ -1420,17 +1400,9 @@ See also [https://aws.amazon.com/iot-fleetwise](https://aws.amazon.com/iot-fleet
 AWS IoT Greengrass is a software that you can use to run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices in a secure way.
 See also [https://aws.amazon.com/greengrass](https://aws.amazon.com/greengrass/).
 
-**AWS IoT RoboRunner**<a name="roborunner"></a>
-AWS IoT RoboRunner is a solution that provides infrastructure for integrating robots with work management systems and building robotics fleet management applications.
-See also [https://aws.amazon.com/roborunner](https://aws.amazon.com/roborunner/).
-
 **AWS IoT SiteWise**<a name="AWSIoTSiteWise"></a>
 AWS IoT SiteWise is a managed service that you can use to collect, organize, and analyze data from industrial equipment at scale.
 See also [https://aws.amazon.com/iot-sitewise](https://aws.amazon.com/iot-sitewise/).
-
-**AWS IoT Things Graph**<a name="AWSIoTThingsGraph"></a>
-AWS IoT Things Graph is a service that you can use to visually connect different devices and web services to build IoT applications.
-See also [https://aws.amazon.com/iot-things-graph](https://aws.amazon.com/iot-things-graph/).
 
 **IP address**<a name="IPaddress"></a>
 A numerical address (for example, 192.0.2.44) that networked devices use to communicate with one another using the Internet Protocol (IP). Each [EC2 instance](#ec2instance) is assigned two IP addresses at launch, which are directly mapped to each other through network address translation ([NAT](#nat)): a private IP address (following RFC 1918) and a public IP address. Instances launched in a [VPC](#vpc) are assigned only a private IP address. Instances launched in your default VPC are assigned both a private IP address and a public IP address.
@@ -1592,17 +1564,6 @@ A case-sensitive unique string within an [CloudFormation](#CloudFormation) templ
 Amazon Lookout for Equipment is a machine learning service that uses data from sensors mounted on factory equipment to detect abnormal behavior so you can take action before machine failures occur.
 See also [https://aws.amazon.com/lookout-for-equipment/](https://aws.amazon.com/lookout-for-equipment/).
 
-**Lookout for Metrics**<a name="lookout-for-metrics"></a>
-Amazon Lookout for Metrics is a machine learning (ML) service that automatically detects and diagnoses anomalies in business and operational data, such as a sudden dip in sales revenue or customer acquisition rates.
-See also [https://aws.amazon.com/lookout-for-metrics](https://aws.amazon.com/lookout-for-metrics/).
-
-**Lookout for Vision**<a name="lookout-for-vision"></a>
-Amazon Lookout for Vision is a machine learning service that uses computer vision (CV) to find defects in industrial products. Amazon Lookout for Vision can identify missing components in an industrial product, damage to vehicles or structures, irregularities in production lines, and even minuscule defects in silicon wafers—or any other physical item where quality is important.
-See also [https://aws.amazon.com/lookout-for-vision/](https://aws.amazon.com/lookout-for-vision/).
-
-**Lumberyard**<a name="lumberyard"></a>
-See [O3DE](#o3de).
-
 ### M<a name="M"></a>
 
  [Numbers and symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ)
@@ -1744,9 +1705,6 @@ See also [regression model](#regression-model).
 Amazon Mobile Analytics is a service for collecting, visualizing, understanding, and extracting mobile app usage data at scale.
 See also [https://aws.amazon.com/mobileanalytics](https://aws.amazon.com/mobileanalytics/).
 
-**Mobile Hub**<a name="AWSMobileHub"></a>
-See [Amplify](#Amplify).
-
 **AWS Mobile SDK**<a name="mobilesdk"></a>
 See [Amplify](#Amplify).
 
@@ -1846,10 +1804,6 @@ Amazon Machine Learning: A transformation that aids in text string analysis. An 
 **NICE Desktop Cloud Visualization**<a name="dcv"></a>
 A remote visualization technology for securely connecting users to graphic-intensive 3D applications hosted on a remote, high-performance server.
 
-**Nimble Studio**<a name="nimble-studio"></a>
-Amazon Nimble Studio is a managed AWS cloud service for creative studios to produce visual effects, animation, and interactive content—from storyboard to final deliverable.
-See also [https://aws.amazon.com/nimble-studio/](https://aws.amazon.com/nimble-studio/).
-
 **node**<a name="node"></a>
 [OpenSearch Service](#AmazonElasticsearchService): An OpenSearch instance. A node can be either a data instance or a dedicated master instance.
 See also [dedicated master node](#dedicatedmasternode).
@@ -1900,10 +1854,6 @@ See also [https://aws.amazon.com/elasticsearch-service](https://aws.amazon.com/e
 
 **operation**<a name="operation"></a>
 An API function. Also called an *action*.
-
-**OpsWorks**<a name="opsworks"></a>
-AWS OpsWorks is a configuration management service that helps you use Chef to configure and operate groups of instances and applications. You can define the application's architecture and the specification of each component including package installation, software configuration, and [resources](#resource) such as storage. You can automate tasks based on time, load, or lifecycle events.
-See also [https://aws.amazon.com/opsworks/](https://aws.amazon.com/opsworks/).
 
 **optimistic locking**<a name="optimistic-locking"></a>
 A strategy to ensure that an item that you want to update has not been modified by others before you perform the update. For [DynamoDB](#dynamodb), optimistic locking support is provided by the AWS SDKs.
@@ -1961,10 +1911,6 @@ See also [pagination](#Pagination).
 
 **paid AMI**<a name="paidAMI"></a>
 An [Amazon Machine Image (AMI)](#AmazonMachineImage) that you sell to other [Amazon EC2](#ec2) users on [AWS Marketplace](#marketplace).
-
-**AWS Panorama**<a name="panorama"></a>
-AWS Panorama is a machine learning (ML) Appliance and Software Development Kit (SDK) that organizations can use to bring computer vision (CV) to on-premises cameras to make predictions locally.
-See also [https://aws.amazon.com/panorama](https://aws.amazon.com/panorama/).
 
 **AWS ParallelCluster**<a name="parallelcluster"></a>
 AWS ParallelCluster is an AWS supported open source cluster management tool that helps you to deploy and manage high performance computing (HPC) clusters in the AWS Cloud.
@@ -2132,10 +2078,6 @@ See also [HVM virtualization](#HVM).
 
  [Numbers and symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ)
 
-**Amazon QLDB**<a name="qldb"></a>
-Amazon Quantum Ledger Database (Amazon QLDB) is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority.
-See also [https://aws.amazon.com/qldb](https://aws.amazon.com/qldb/).
-
 **quartile binning transformation**<a name="quartile-binning-transformation"></a>
 Amazon Machine Learning: A process that takes two inputs, a numerical variable and a parameter called a bin number, and outputs a categorical variable. Quartile binning transformations discover non-linearity in a variable's distribution by enabling the machine learning model to learn separate importance values for parts of the numeric variable’s distribution.
 
@@ -2286,7 +2228,7 @@ AWS Resilience Hub gives you a central place to define, validate, and track the 
 See also [https://aws.amazon.com/resilience-hub](https://aws.amazon.com/resilience-hub/).
 
 **resource**<a name="resource"></a>
-An entity that users can work with in AWS, such as an [EC2 instance](#ec2instance), an [DynamoDB](#dynamodb) table, an [Amazon S3](#amazons3) [bucket](#bucket), an [IAM](#IAM) user, or an [OpsWorks](#opsworks) [stack](#stack).
+An entity that users can work with in AWS, such as an [EC2 instance](#ec2instance), an [DynamoDB](#dynamodb) table, an [Amazon S3](#amazons3) [bucket](#bucket), or an [IAM](#IAM) user.
 
 **Resource Groups**<a name="arg"></a>
 AWS Resource Groups is a web service that AWS customers can use to manage and automate tasks on large numbers of resources at one time.
@@ -2603,10 +2545,6 @@ See also [https://aws.amazon.com/vpn/site-to-site-vpn](https://aws.amazon.com/vp
 **sloppy phrase search**<a name="sloppyphrasesearch"></a>
 A search for a phrase that specifies how close the terms must be to one another to be considered a match.
 
-**AWS SMS**<a name="server-migration-service"></a>
-AWS Server Migration Service is a service that combines data collection tools with automated server replication to speed the migration of on-premises servers to AWS.
-See also [https://aws.amazon.com/server-migration-service](https://aws.amazon.com/server-migration-service/).
-
 **SMTP**<a name="smtp"></a>
 Simple Mail Transfer Protocol. The standard that's used to exchange email messages between internet hosts for the purpose of routing and delivery.
 
@@ -2694,7 +2632,6 @@ See also [Transport Layer Security (TLS)](#transportlayersecurity).
 
 **stack**<a name="stack"></a>
 [CloudFormation](#CloudFormation): A collection of AWS resources that you create and delete as a single unit.
-[OpsWorks](#opsworks): A set of instances that you manage collectively, typically because they have a common purpose such as serving PHP applications. A stack serves as a container and handles tasks that apply to the group of instances as a whole, such as managing applications and cookbooks.
 
 **station**<a name="stage"></a>
 [CodePipeline](#AWSCodePipeline): A portion of a pipeline workflow where one or more actions are performed.
@@ -2774,10 +2711,6 @@ An HTML-coded button that provides a simple way to charge customers a recurring 
 
 **suggestions**<a name="suggestions"></a>
 Documents that contain a match for the partial search string in the field that's designated by the [suggester](#suggester). [CloudSearch](#cloudSearch) suggestions include the document IDs and field values for each matching document. To be a match, the string must match the contents of the field starting from the beginning of the field.
-
-**Sumerian**<a name="AmazonSumerian"></a>
-Amazon Sumerian is a set of tools for creating and running high-quality 3D, augmented reality (AR), and virtual reality (VR) applications on the web.
-See also [https://aws.amazon.com/sumerian/](https://aws.amazon.com/sumerian/).
 
 **supported AMI**<a name="supportedAMI"></a>
 An [Amazon Machine Image (AMI)](#AmazonMachineImage) similar to a [paid AMI](#paidAMI), except that the owner charges for additional software or a service that customers use with their own AMIs.
@@ -3047,10 +2980,6 @@ Site-to-Site VPN CloudHub is a feature that enables secure communication between
 AWS WAF is a web application firewall service that controls access to content by allowing or blocking web requests based on criteria that you specify. For example, you can filter access based on the header values or the IP addresses that the requests originate from. AWS WAF helps protect web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources.
 See also [https://aws.amazon.com/waf/](https://aws.amazon.com/waf/).
 
-**Amazon WAM**<a name="wam"></a>
-Amazon WorkSpaces Application Manager (Amazon WAM) is a web service for deploying and managing applications for WorkSpaces. Amazon WAM accelerates software deployment, upgrades, patching, and retirement by packaging Windows desktop applications into virtualized application containers.
-See also [https://aws.amazon.com/workspaces/applicationmanager](https://aws.amazon.com/workspaces/applicationmanager).
-
 **warm standby**<a name="warmstandby"></a>
 An [active-passive](#activepassive) disaster recovery strategy in which a workload is scaled down in the passive standby Region, but is otherwise fully functional. This is not an Amazon EC2 Auto Scaling term, but an industry-standard resilience term.
 See also [back up and restore](#backupand)[hot standby](#hotstandby)[pilot light](#pilotlight).
@@ -3064,14 +2993,6 @@ See also [https://aws.amazon.com/wavelength](https://aws.amazon.com/wavelength/)
 
 **Web Services Description Language**<a name="WSDL_full"></a>
 See [WSDL](#WSDL).
-
-**WorkDocs**<a name="workdocs"></a>
-Amazon WorkDocs is a managed, secure enterprise document storage and sharing service with administrative controls and feedback capabilities.
-See also [https://aws.amazon.com/workdocs/](https://aws.amazon.com/workdocs/).
-
-**Amazon WorkLink**<a name="worklink"></a>
-Amazon WorkLink is a cloud-based service that provides secure access to internal websites and web apps from mobile devices.
-See also [https://aws.amazon.com/worklink/](https://aws.amazon.com/worklink/).
 
 **WorkMail**<a name="workmail"></a>
 Amazon WorkMail is a managed, secure business email and calendar service with support for existing desktop and mobile email clients.

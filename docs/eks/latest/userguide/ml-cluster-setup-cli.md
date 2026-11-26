@@ -503,7 +503,7 @@ Install the controller. The `nodeSelector` and toleration place the controller o
 ```bash
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --namespace kube-system \
-  --version 3.4.2 \
+  --version 3.6.3 \
   --set clusterName=${CLUSTER_NAME} \
   --set region=${AWS_REGION} \
   --set vpcId=${VPC_ID} \

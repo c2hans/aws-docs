@@ -35,7 +35,7 @@ For Amazon CloudFront, don't use this call. Instead, use the CloudFront call `Li
 If you don't provide a resource type, the call uses the resource type `APPLICATION_LOAD_BALANCER`.
 Default: `APPLICATION_LOAD_BALANCER`
 Type: String
-Valid Values: `APPLICATION_LOAD_BALANCER | API_GATEWAY | APPSYNC | COGNITO_USER_POOL | APP_RUNNER_SERVICE | VERIFIED_ACCESS_INSTANCE | AMPLIFY | AGENTCORE_GATEWAY`
+Valid Values: `APPLICATION_LOAD_BALANCER | API_GATEWAY | APPSYNC | COGNITO_USER_POOL | APP_RUNNER_SERVICE | VERIFIED_ACCESS_INSTANCE | AMPLIFY | ELB_PROXY | AGENTCORE_GATEWAY`
 Required: No
 
  ** [WebACLArn](#API_ListResourcesForWebACL_RequestSyntax) **   <a name="WAF-ListResourcesForWebACL-request-WebACLArn"></a>

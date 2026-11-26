@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 
 Creates a trust store.
 
-For more information, see [Mutual TLS for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/mutual-authentication.html).
+For more information, see [Mutual TLS for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/mutual-authentication.html) or [Mutual TLS for Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/mutual-authentication.html).
 
 ## Request Parameters
 <a name="API_CreateTrustStore_RequestParameters"></a>

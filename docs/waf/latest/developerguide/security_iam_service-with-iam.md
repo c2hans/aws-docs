@@ -188,6 +188,30 @@ Requires permission to call `elasticloadbalancing:SetWebACL` action on the Appli
 }
 ```
 
+**Elastic Load Balancing for Envoy proxy**
+Requires permission to call the `elasticloadbalancing:CreateProxyWafAssociation` action and to call AWS WAF `AssociateWebACL` on a web ACL. The following policy statements grant these permissions. The `elasticloadbalancing` proxy association actions are permission-only actions that don't support resource-level permissions, so their statement uses `"Resource": "*"`. Replace {{region}} and {{account-id}} with your AWS Region and account ID.
+
+```json
+{
+    "Sid": "AssociateWebACL1",
+    "Effect": "Allow",
+    "Action": [
+        "wafv2:AssociateWebACL"
+    ],
+    "Resource": [
+        "arn:aws:wafv2:{{region}}:{{account-id}}:regional/webacl/*/*"
+    ]
+},
+{
+    "Sid": "AssociateWebACL2",
+    "Effect": "Allow",
+    "Action": [
+        "elasticloadbalancing:CreateProxyWafAssociation"
+    ],
+    "Resource": "*"
+}
+```
+
 **AWS AppSync GraphQL API**
  **Old Permission Setting**
 
@@ -412,6 +436,30 @@ Requires permission to call the `elasticloadbalancing:DeleteWebACLAssociation` a
 }
 ```
 
+**Elastic Load Balancing for Envoy proxy**
+Requires permission to call the `elasticloadbalancing:DeleteProxyWafAssociation` action and to call AWS WAF `DisassociateWebACL`. The following policy statements grant these permissions. Replace {{region}} and {{account-id}} with your AWS Region and account ID. The `elasticloadbalancing` proxy association actions are permission-only actions that don't support resource-level permissions, so their statement uses `"Resource": "*"`.
+
+```json
+{
+    "Sid": "DisassociateWebACL1",
+    "Effect": "Allow",
+    "Action": [
+        "wafv2:DisassociateWebACL"
+    ],
+    "Resource": [
+        "arn:aws:wafv2:{{region}}:{{account-id}}:regional/webacl/*/*"
+    ]
+},
+{
+    "Sid": "DisassociateWebACL2",
+    "Effect": "Allow",
+    "Action": [
+        "elasticloadbalancing:DeleteProxyWafAssociation"
+    ],
+    "Resource": "*"
+}
+```
+
 **AWS AppSync GraphQL API**
 **Old Permission Setting**
 
@@ -614,6 +662,31 @@ Require permission to call AWS WAF `GetWebACLForResource` and `GetWebACL` for a 
     "Resource": [
         "arn:aws:elasticloadbalancing:*:{{account-id}}:loadbalancer/app/*/*"
     ]
+}
+```
+
+**Elastic Load Balancing for Envoy proxy**
+Requires permission to call the `elasticloadbalancing:GetProxyWafAssociation` action and to call AWS WAF `GetWebACLForResource` and `GetWebACL`. The following policy statements grant these permissions. Replace {{region}} and {{account-id}} with your AWS Region and account ID. The `elasticloadbalancing` proxy association actions are permission-only actions that don't support resource-level permissions, so their statement uses `"Resource": "*"`.
+
+```json
+{
+    "Sid": "GetWebACLForResource1",
+    "Effect": "Allow",
+    "Action": [
+        "wafv2:GetWebACLForResource",
+        "wafv2:GetWebACL"
+    ],
+    "Resource": [
+        "arn:aws:wafv2:{{region}}:{{account-id}}:regional/webacl/*/*"
+    ]
+},
+{
+    "Sid": "GetWebACLForResource2",
+    "Effect": "Allow",
+    "Action": [
+        "elasticloadbalancing:GetProxyWafAssociation"
+    ],
+    "Resource": "*"
 }
 ```
 
@@ -838,6 +911,30 @@ Require permission to call AWS WAF `ListResourcesForWebACL` for a protection pac
 }
 ```
 
+**Elastic Load Balancing for Envoy proxy**
+Requires permission to call the `elasticloadbalancing:ListProxyWafAssociations` action and to call AWS WAF `ListResourcesForWebACL`. The following policy statements grant these permissions. Replace {{region}} and {{account-id}} with your AWS Region and account ID. The `elasticloadbalancing` proxy association actions are permission-only actions that don't support resource-level permissions, so their statement uses `"Resource": "*"`.
+
+```json
+{
+    "Sid": "ListResourcesForWebACL1",
+    "Effect": "Allow",
+    "Action": [
+        "wafv2:ListResourcesForWebACL"
+    ],
+    "Resource": [
+        "arn:aws:wafv2:{{region}}:{{account-id}}:regional/webacl/*/*"
+    ]
+},
+{
+    "Sid": "ListResourcesForWebACL2",
+    "Effect": "Allow",
+    "Action": [
+        "elasticloadbalancing:ListProxyWafAssociations"
+    ],
+    "Resource": "*"
+}
+```
+
 **AWS AppSync GraphQL API**
  **Old Permission Setting**
 
@@ -1008,7 +1105,7 @@ For general information about ARN specifications, see [Amazon Resource Names (AR
 
 The following lists requirements that are specific to the ARNs of `wafv2` resources:
 + {{region}}: For AWS WAF resources that you use to protect Amazon CloudFront distributions, set this to `us-east-1`. Otherwise, set this to the Region you're using with your protected regional resources.
-+ {{scope}}: Set the scope to `global` for use with an Amazon CloudFront distribution or `regional` for use with any of the regional resources that AWS WAF supports. The regional resources are an Amazon API Gateway REST API, an Application Load Balancer, an AWS AppSync GraphQL API, an Amazon Cognito user pool, an AWS App Runner service, an Amazon Bedrock AgentCore Gateway, and an AWS Verified Access instance.
++ {{scope}}: Set the scope to `global` for use with an Amazon CloudFront distribution or `regional` for use with any of the regional resources that AWS WAF supports. The regional resources are an Amazon API Gateway REST API, an Application Load Balancer, an Elastic Load Balancing for Envoy proxy, an AWS AppSync GraphQL API, an Amazon Cognito user pool, an AWS App Runner service, an Amazon Bedrock AgentCore Gateway, and an AWS Verified Access instance.
 + {{resource-type}}: Specify one of the following values: `webacl`, `rulegroup`, `ipset`, `regexpatternset`, or `managedruleset`.
 + {{resource-name}}: Specify the name that you gave the AWS WAF resource, or specify a wildcard (`*`) to indicate all resources that satisfy the other specifications in the ARN. You must either specify the resource name and resource ID or specify a wildcard for both.
 + {{resource-id}}: Specify the ID of the AWS WAF resource, or specify a wildcard (`*`) to indicate all resources that satisfy the other specifications in the ARN. You must either specify the resource name and resource ID or specify a wildcard for both.

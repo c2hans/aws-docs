@@ -142,7 +142,7 @@ You can't change the CloudWatch metric name after you create the web ACL.
 
    You only need to choose this option for Regional resource types. For CloudFront distributions, the Region is hard-coded to the US East (N. Virginia) Region, `us-east-1`, for Global (CloudFront) applications.
 
-1. (CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway) For **Web request inspection size limit - optional**, if you want to specify a different body inspection size limit, select the limit. Inspecting body sizes over the default of 16 KB can incur additional costs. For information about this option, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
+1. (Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, and Elastic Load Balancing for Envoy) For **Web request inspection size limit - optional**, if you want to specify a different body inspection size limit, select the limit. The default is 8 KB for Application Load Balancer and 16 KB for the other resource types. Inspecting body sizes over the default can incur additional costs. For information about this option, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 
 1. (Optional) For **Associated AWS resources - optional**, if you want to specify your resources now, choose **Add AWS resources**. In the dialog box, choose the resources that you want to associate, and then choose **Add**. AWS WAF returns you to the **Describe web ACL and associated AWS resources** page.
 **Note**

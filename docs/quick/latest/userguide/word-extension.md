@@ -12,7 +12,7 @@ The Word extension enables users to:
 + Format or restructure your documents.
 + Redline your documents with track changes and/or comments enabled.
 
-The Quick Word extension is available within AWS Quick to all eligible users by default and requires no administrative setup for user access if users can access the Microsoft Word app store. Users can search for AWS Quick in the Microsoft Word app store or visit the [Quick for Word Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010615) to add the extension.
+All users can install the AWS Quick Word extension without administrative setup if they can access the Microsoft Word app store. Users can search for AWS Quick in the Microsoft Word app store or visit the [Quick for Word Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010615) to add the extension.
 
 **Important**
 The AWS Quick Word extension uses generative AI to create and execute code within your Word application sandbox to help you perform tasks within Word. AI can make mistakes and perform inaccurate actions within your Word document.

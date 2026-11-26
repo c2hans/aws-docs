@@ -125,18 +125,28 @@ The examples use AWS MCP Server in US West (Oregon). Replace {{idp-issuer-url}} 
 ### Kiro
 <a name="ema-step4-kiro"></a>
 
-Requires Kiro CLI 3.5.0 or later in a V3 session, or Kiro IDE 1.4.236 or later.
+Requires at least Kiro CLI 3.5.0 or Kiro IDE 1.4.236.
 
-In Kiro CLI, store the IdP details once, and then add each MCP server with enterprise mode.
+To configure Kiro CLI:
 
-```bash
-kiro-cli mcp idp setup --issuer {{idp-issuer-url}} --client-id {{idp-client-id}}
+1. Connect Kiro to your IdP.
 
-kiro-cli mcp add --name aws-mcp --url https://aws-mcp.us-west-2.api.aws/mcp --scope global \
-    --oauth-mode enterprise --oauth-client-id {{agent-client-id}}
-```
+   ```bash
+   kiro-cli mcp idp setup --issuer {{idp-issuer-url}} \
+       --client-id {{idp-client-id}}
+   ```
 
-Kiro IDE and Kiro CLI read the same user-level `~/.kiro/settings/mcp.json` file, so you can make the same change there instead.
+1. Add each MCP server with enterprise mode.
+
+   ```bash
+   kiro-cli mcp add --name aws-mcp \
+       --url https://aws-mcp.us-west-2.api.aws/mcp \
+       --scope global \
+       --oauth-mode enterprise \
+       --oauth-client-id {{agent-client-id}}
+   ```
+
+Alternatively, add the following JSON configuration to `~/.kiro/settings/mcp.json`.
 
 ```json
 {
@@ -156,14 +166,14 @@ Kiro IDE and Kiro CLI read the same user-level `~/.kiro/settings/mcp.json` file,
 }
 ```
 
-To sign in from Kiro CLI, type `/mcp` on its own, not `/mcp list`, which prints a table that you can't navigate. The first row is the organization sign-in, which shows as not signed in, and each server that uses it says that it needs organization sign-in. Select the first row and press Enter, then finish signing in through your browser. In Kiro IDE, choose **Sign in** on the Organization sign-in row. For more information, see [MCP configuration](https://kiro.dev/docs/mcp/configuration/) on the Kiro website.
+To sign in, select the organization sign-in row in the MCP server list. In Kiro CLI, this list appears when you run `/mcp`. For more information, see [Organization sign-in](https://kiro.dev/docs/mcp/configuration/#organization-sign-in) on the Kiro website.
 
 ### Codex CLI
 <a name="ema-step4-codex"></a>
 
-Requires Codex CLI 0.156.0 or later.
+Requires at least Codex CLI 0.156.0.
 
-Add the following to `~/.codex/config.toml`. Codex reads these settings only from that file, not from project configuration. Keep the two callback settings above the first table header.
+Add the following TOML configuration to `~/.codex/config.toml`, keeping the callback settings at the top.
 
 ```toml
 mcp_oauth_callback_url = "http://localhost:43123/callback"
@@ -184,14 +194,18 @@ auth = "ema_auth"
 client_id = "{{agent-client-id}}"
 ```
 
-Codex adds an identifier to the end of the callback URL, so the redirect URI to register has the form `http://localhost:43123/callback/{{callback-id}}`. To find it, start Codex and run `/mcp login aws-mcp`. When Okta rejects the redirect URI, copy the `redirect_uri` value from the address bar of the browser, register it on the Codex sign-in application, and sign in again. The identifier depends only on the IdP issuer, so one registered URI works for every employee.
+Codex adds an identifier to the callback URL. To get the full redirect URI, run `/mcp login aws-mcp` and copy the `redirect_uri` from the address bar of the Okta error page. Register it once on the Codex sign-in application that you set up in [Step 3: Configure your identity provider](#ema-step3), and then sign in again.
 
 ### Claude
 <a name="ema-step4-claude"></a>
 
 An administrator of your Claude organization adds the MCP server as a custom connector.
 
-Choose one of the following sign-in modes. In either mode, make sure that the client ID matches the resource connection configuration at the IdP.
+Choose one of the following identity sources:
++ For IdP-managed, your IdP issues the ID-JAG. We recommend choosing this option if your IdP supports it.
++ For Claude-issued, Claude issues the ID-JAG. Complete Steps 1 and 2 with the issuer URL that Claude shows during the managed authorization setup. You can skip Step 3.
+
+Choose one of the following sign-in modes. In either mode, make sure that the client ID matches the resource connection configuration at the IdP when you use the IdP-managed identity source.
 
 | Mode | Use case | OAuth client |
 | --- | --- | --- |
@@ -202,9 +216,12 @@ Choose one of the following sign-in modes. In either mode, make sure that the cl
 
 1. For **Authentication**, choose **Sign in when needed**. For **OAuth client**, choose **Use your own OAuth client**, enter the client ID for your mode, and leave the client secret blank.
 
-1. Open the connector, and on the **Configuration** tab choose **Set up** next to **Managed authorization**. Choose **IdP-managed** as the identity source.
+1. Open the connector, and on the **Configuration** tab choose **Set up** next to **Managed authorization**. Choose the identity source. For Claude-issued, enter the role ARN from Step 2 as the tenant ID. Then confirm that the connection checks pass.
 
 1. Choose the Claude member roles that connect through managed authorization, and then choose **Save**.
+
+**Note**
+Claude-issued ID-JAGs identify the employee only by email address. To control access for each employee, turn on trusted identity propagation (TIP) for the IAM OIDC identity provider from Step 1 and choose the `email` claim as the subject. With TIP, the email address is available as `aws:OriginIdentity/Subject`, which you can use in IAM policies, including the role trust policy. To use AWS Lake Formation or Amazon S3 Access Grants, also turn on group-based access for the provider. Make sure that each employee's username in IAM Identity Center is their email address. For more information, see [Configure TIP for an OIDC provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_tip_federation_configure_oidc.html) in the *IAM User Guide*.
 
 For more information, see [Auto-connect your organization's apps to Claude](https://support.claude.com/en/articles/15537633-authorize-mcp-connectors-for-your-entire-organization) on the Claude Help Center website.
 
@@ -219,15 +236,15 @@ AWS CloudTrail records each token request as a `CreateOAuth2Token` event, as in 
     "userIdentity": {
         "type": "AssumedRole",
         "principalId": "AROA1234567890EXAMPLE:IDAAG.nM5xzagNal2jb_tdJucKeDBJHAU6XtsjXoSpIzOqvoE",
-        "arn": "arn:aws:sts::123456789012:assumed-role/OktaXAA/IDAAG.nM5xzagNal2jb_tdJucKeDBJHAU6XtsjXoSpIzOqvoE",
+        "arn": "arn:aws:sts::123456789012:assumed-role/OktaAwsMcpReadOnly/IDAAG.nM5xzagNal2jb_tdJucKeDBJHAU6XtsjXoSpIzOqvoE",
         "accountId": "123456789012",
         "sessionContext": {
             "sessionIssuer": {
                 "type": "Role",
                 "principalId": "AROA1234567890EXAMPLE",
-                "arn": "arn:aws:iam::123456789012:role/OktaXAA",
+                "arn": "arn:aws:iam::123456789012:role/OktaAwsMcpReadOnly",
                 "accountId": "123456789012",
-                "userName": "OktaXAA"
+                "userName": "OktaAwsMcpReadOnly"
             },
             "webIdFederationData": {
                 "federatedProvider": "arn:aws:iam::123456789012:oidc-provider/example.okta.com",

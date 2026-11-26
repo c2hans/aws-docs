@@ -46,7 +46,19 @@ A configuration setting that controls whether a lease template appears in the ge
 
  **Budget threshold**
 
-A predefined customer-defined spending limit that triggers specific actions when reached. The solution uses thresholds to send alerts, stop resources, and prevent new resource creation.
+A spending amount, in USD, at which the solution sends an alert or freezes the lease. Each budget threshold acts on **Reported cost** or, when estimated cost tracking is on, **Estimated cost**. When a lease reaches its maximum budget, the solution terminates the lease and cleans up the account. For more information, see [Reported cost, estimated cost, and current cost](manager-guide.md#threshold-cost-basis).
+
+ **Estimated cost tracking**
+
+An optional setting for lease templates and leases that estimates each lease’s current cost from the trend in its reported spend. The lease **Cost** tab shows the estimate as **Predicted spend now**.
+
+ **Spend rate threshold**
+
+A spending rate, in USD per hour or per day, at which the solution sends an alert or freezes the lease. Spend rate thresholds require estimated cost tracking.
+
+ **Amazon Bedrock token monitoring**
+
+An optional setting for lease templates and leases that monitors and attributes Amazon Bedrock token usage to the lease budget between AWS Cost Explorer reports.
 
  **Account recycling**
 

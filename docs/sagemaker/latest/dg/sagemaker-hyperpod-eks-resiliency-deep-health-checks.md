@@ -18,6 +18,9 @@ aws sagemaker list-cluster-events \
 
 Deep health checks that run when nodes start (`OnStartDeepHealthChecks`) don't create an operation. For more information, see [Tracking requests with SageMaker HyperPod cluster operations](sagemaker-hyperpod-cluster-operations.md).
 
+**Note**
+A moved node does not rerun the basic or deep health checks, even if the target instance group has deep health checks enabled. To validate a moved node, run an on-demand deep health check with [StartClusterHealthCheck](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartClusterHealthCheck.html). For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
 ## Deep health check types
 <a name="sagemaker-hyperpod-eks-resiliency-deep-health-checks-types"></a>
 

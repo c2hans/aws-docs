@@ -65,7 +65,7 @@ As a user, you are responsible for keeping company information safe. The followi
 ### Conversation retention policy and accuracy
 <a name="teams-conversation-retention"></a>
 
-AWS Quick automatically deletes conversations after 30 days of inactivity. Teams conversation retention follows your company's specific history rules. Teams retention periods may exceed AWS Quick's 30-day limit. To start fresh, begin a new conversation by using the `/new_conv` command
+AWS Quick keeps each conversation for 365 days. It keeps conversations that you pin or move to a folder for 750 days. For more information about retention periods, see [Usage limits](usage-limits.md). Messages in Teams follow your company's Teams retention rules, which can differ from AWS Quick's retention periods. To start fresh, begin a new conversation by using the `/new_conv` command.
 
 Users can review past conversations in Teams or all conversations from all channels (Teams, browser extensions, and so on) in your AWS Quick chat instance.
 

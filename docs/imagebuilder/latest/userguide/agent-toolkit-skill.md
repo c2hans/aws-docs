@@ -13,7 +13,7 @@ The skill handles one-off builds and recurring pipelines for golden Amazon Machi
 Your agent can also diagnose a failed build. The skill directs the agent to the workflow step that failed and to the component logs in Amazon CloudWatch Logs. It provides remediation steps for common failure scenarios such as instance connectivity timeouts, missing instance profile permissions, and component errors.
 
 **Note**
-The skill runs in your own AI coding agent. For the AI features built into the Image Builder console, see [Create and update resources with AI](ai-assisted-resource-creation.md) and [Troubleshoot failed builds with AI](devops-agent-troubleshooting.md).
+The skill runs in your own AI coding agent. For the AI features built into the Image Builder console, see [Creating and updating resources with AI](ai-assisted-resource-creation.md) and [Troubleshoot failed builds with AI](devops-agent-troubleshooting.md).
 
 **Topics**
 + [Get the skill](#agent-toolkit-skill-get)

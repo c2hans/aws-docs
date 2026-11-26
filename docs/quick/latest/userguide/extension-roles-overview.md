@@ -22,7 +22,7 @@ AWS Quick implements a hierarchical permission model for extensions that balance
 | --- | --- |
 | Administrators |  +  Enable/remove extension access to their organization's workspaces and organizations <br />+  Create extensions for Slack, Teams, Word, and Outlook <br />+  Assign owners for extensions created <br />+  Control whether extensions are available for users in AWS Quick <br />+  Use all enabled extensions   |
 | Authors |  +  Create and install extensions using administrator enabled extension access <br />+  Edit/delete extensions for which they are owners <br />+  Use all enabled extensions   |
-| Readers (Reader Pro only) |  +  Use all enabled extensions   |
+| Readers |  +  Use all enabled extensions   |
 
 Beyond the broad user type categories, AWS Quick implements granular permission controls that determine specific actions users can perform with individual extensions. These permissions operate independently of user types, allowing administrators to fine-tune access based on organizational needs and security requirements. The following table outlines how user permissions determine what you can do with a extension:
 
@@ -83,7 +83,7 @@ The following table shows how each user type in AWS Quick interacts with extensi
 | --- | --- |
 | Administrators |  +  Enable/remove extension access to their organization's workspaces and organizations <br />+  Create extensions for Slack, Teams, Word, and Outlook <br />+  Assign owners for extensions created <br />+  Control whether extensions are available for users in AWS Quick <br />+  Use all enabled extensions   |
 | Authors |  +  Create and install extensions using administrator enabled extension access <br />+  Edit/delete extensions for which they are owners <br />+  Use all enabled extensions   |
-| Readers (Reader Pro only) |  +  Use all enabled extensions   |
+| Readers |  +  Use all enabled extensions   |
 
 The following table outlines how user permissions determine what you can do with a extension:
 

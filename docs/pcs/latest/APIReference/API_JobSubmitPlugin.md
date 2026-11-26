@@ -10,7 +10,7 @@ A job submit plugin configuration, including its name, runtime language, and scr
 <a name="API_JobSubmitPlugin_Contents"></a>
 
  ** name **   <a name="PCS-Type-JobSubmitPlugin-name"></a>
-A unique name for the plugin. The name can be up to 64 characters long. Valid characters are letters, numbers, spaces, underscores (`_`), and hyphens (`-`). The first character must be a letter or a number.
+A unique name for the plugin. The name can be up to 64 characters long. Valid characters are letters, numbers, underscores (`_`), and hyphens (`-`). The first character must be a letter or a number.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[A-Za-z0-9][A-Za-z0-9_-]*`

@@ -35,6 +35,8 @@ Use this shape when a separate pipeline builds the image or when an image produc
 
 Supply a `SourceBundle` when Elastic Beanstalk must build the container image from application source. The `SourceBundle` identifies the source archive in Amazon Simple Storage Service (Amazon S3) with two fields, `S3Bucket` and `S3Key`. A source bundle also requires an `ImageConfiguration` whose `Build` member specifies how Elastic Beanstalk converts the source into an image. Set `Process` to `true` in the `CreateApplicationVersion` request to start the build; with the AWS CLI, use `--process`. If you omit this setting, Elastic Beanstalk defers the build until you first deploy the application version to an environment. When processing starts, Elastic Beanstalk builds the image and pushes it to Amazon Elastic Container Registry in your account. For the Docker and buildpack build types and their settings, see [Build configuration](#beanstalk-cluster-app-versions-buildconfig).
 
+Put your application files at the root of the archive. A `docker` build looks for the Dockerfile relative to the root, and a `buildpack` build detects your language from the files at the root.
+
 **Note**
 On macOS, create the source archive with `zip -X -r ../my-app.zip .` from inside the source directory. The Finder's **Compress** command adds `__MACOSX` metadata entries, and a buildpack build can fail on one of those entries with `zip: not a valid zip file`, naming a file that you did not create.
 

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/using-serv
 
 # Service-linked role to configure Private Marketplace in AWS Marketplace
 
-AWS Marketplace uses the service-linked role named `AWSServiceRoleForPrivateMarketplaceAdmin` to describe and update Private Marketplace resources and describe AWS Organizations.
+AWS Marketplace uses the service-linked role named `AWSServiceRoleForPrivateMarketplaceAdmin` to describe and update Private Marketplace resources, describe AWS Organizations, and retrieve and record decisions on agreement approval requests on behalf of designated approvers.
 
 The `AWSServiceRoleForPrivateMarketplaceAdmin` service-linked role trusts the following services to assume the role:
 + `private-marketplace.marketplace.amazonaws.com`

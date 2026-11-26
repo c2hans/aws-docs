@@ -165,6 +165,25 @@ These actions control access to access token operations for remote MCP and A2A s
 + **aidevops:RotateAccessToken** – Allows users to rotate an access token, generating a new value while preserving configuration.
 + **aidevops:RevokeAccessToken** – Allows users to revoke an access token, permanently disabling it.
 
+## Access profile management actions
+<a name="access-profile-management-actions"></a>
+
+These actions control who can create, view, update, reorder, and delete access profiles, and who can set their IAM roles and members. Access profiles decide what each person can do in the web app. For more information, see [Controlling web app access with access profiles](aws-devops-agent-security-controlling-web-app-access-with-access-profiles.md).
++ **aidevops:BatchCreateAccessProfileAssignment** – Use this permission to assign groups and users to an access profile.
++ **aidevops:BatchDeleteAccessProfileAssignment** – Use this permission to remove groups and users from an access profile.
++ **aidevops:BatchDeleteAccessProfileEntitlement** – Use this permission to remove the IAM role from an access profile.
++ **aidevops:BatchPutAccessProfileEntitlement** – Use this permission to set the IAM role of an access profile.
++ **aidevops:CreateAccessProfile** – Use this permission to create an access profile in an Agent Space.
++ **aidevops:DeleteAccessProfile** – Use this permission to delete an access profile.
++ **aidevops:GetAccessProfile** – Use this permission to view the details of an access profile.
++ **aidevops:ListAccessProfileAssignments** – Use this permission to list the groups and users assigned to an access profile.
++ **aidevops:ListAccessProfileEntitlements** – Use this permission to view the IAM role of an access profile.
++ **aidevops:ListAccessProfiles** – Use this permission to list the access profiles in an Agent Space in order of precedence.
++ **aidevops:UpdateAccessProfile** – Use this permission to change the name and description of an access profile.
++ **aidevops:UpdateAccessProfilesOrder** – Use this permission to change the precedence of the access profiles in an Agent Space.
+
+To set the IAM role of an access profile, you also need `iam:PassRole`. For the required policy, see the "Required permissions to set an access profile's IAM role" section of the access profiles topic.
+
 ## Usage and monitoring actions
 <a name="usage-and-monitoring-actions"></a>
 

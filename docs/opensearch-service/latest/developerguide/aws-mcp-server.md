@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 # Set up the AWS MCP Server
 
-The AWS MCP Server is a managed Model Context Protocol server from the Agent Toolkit for AWS. It gives your AI agent authenticated access to AWS – running AWS API calls on your behalf, executing scripts in a sandboxed environment, and serving AWS skills (including the [amazon-opensearch-service skill](amazon-opensearch-service-skill.md)) on demand. Use it to work with OpenSearch Service domains and OpenSearch Serverless collections from your agent.
+The AWS MCP Server is a managed Model Context Protocol server from the Agent Toolkit for AWS. It gives your AI agent authenticated access to AWS – running AWS API calls on your behalf, executing scripts in a sandboxed environment, and serving AWS skills (including the [amazon-opensearch-service skill](amazon-opensearch-service-skill.md) and the [amazon-opensearch-memory skill](amazon-opensearch-memory-skill.md)) on demand. Use it to work with OpenSearch Service domains and OpenSearch Serverless collections from your agent.
 
 **Note**
 The AWS MCP Server connects to public Amazon OpenSearch Service endpoints. It does not support domains or collections deployed in a VPC. If your OpenSearch Service domain or OpenSearch Serverless collection uses VPC access, use the open source [opensearch-mcp-server-py](https://github.com/opensearch-project/opensearch-mcp-server-py) instead, which supports VPC connectivity through local configuration.

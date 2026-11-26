@@ -25,6 +25,9 @@ The `KubernetesConfig` parameter is declarative, meaning you specify the complet
 + **Updating labels or taints** - Modify the values in the `KubernetesConfig` for the labels or taints you want to change, and include all others you want to keep
 + **Removing labels or taints** - Omit the labels or taints you want to remove from the `KubernetesConfig`, keeping only those you want to retain
 
+**Note**
+When a node moves to another instance group, it takes on the target instance group's labels and taints, and the source instance group's labels and taints are not carried over. If the target instance group has custom taints but does not have nodes yet, make sure the NVIDIA and EFA device plugin DaemonSets in the target cluster tolerate those taints. Otherwise, the moved node reports zero GPUs to Kubernetes. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
 ### Creating a cluster with labels and taints
 <a name="sagemaker-hyperpod-eks-custom-labels-and-taints-create"></a>
 

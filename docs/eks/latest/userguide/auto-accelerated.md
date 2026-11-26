@@ -41,7 +41,7 @@ The following provides an example of how to launch accelerated workloads with Am
 ## Prerequisites
 <a name="_prerequisites"></a>
 + A Kubernetes cluster with Amazon EKS Auto Mode configured.
-+ A `default` EKS Node class as created when the `general-purpose` or `system` Managed Node Pools are enabled.
++ A `default` EKS Node Class as created when the `general-purpose` or `system` managed node pools are enabled.
 
 ## Step 1: Deploy a GPU workload
 <a name="_step_1_deploy_a_gpu_workload"></a>
@@ -98,6 +98,7 @@ metadata:
 spec:
   nodeSelector:
     eks.amazonaws.com/compute-type: auto
+    eks.amazonaws.com/instance-gpu-name: l40s
   restartPolicy: OnFailure
   containers:
   - name: nvidia-smi
@@ -134,19 +135,36 @@ nodepool.karpenter.sh/gpu created
 pod/nvidia-smi created
 ```
 
-Wait a few seconds, and check the nodes in your cluster. You should now see a new node provisioned in your Amazon EKS Auto Mode cluster:
+Check the NodeClaims in your cluster with the following `kubectl` command. It can take a few minutes for a node to launch. The `TYPE`, `CAPACITY`, `ZONE`, and `NODE` columns fill in as the instance launches, and `READY` changes from `Unknown` to `True`.
 
 ```bash
-> kubectl get nodes
+kubectl get nodeclaims
+```
 
+The output looks similar to the following:
+
+```bash
 NAME        TYPE          CAPACITY    ZONE         NODE                  READY   AGE
 gpu-dnknr   g6e.2xlarge   on-demand   us-west-2b   i-02315c7d7643cdee6   True    76s
+```
+
+Confirm that the node joined the cluster with the following `kubectl` command:
+
+```bash
+kubectl get nodes -L node.kubernetes.io/instance-type
+```
+
+The output looks similar to the following:
+
+```bash
+NAME                  STATUS   ROLES    AGE   VERSION               INSTANCE-TYPE
+i-02315c7d7643cdee6   Ready    <none>   14s   v1.37.0-eks-29d7970   g6e.2xlarge
 ```
 
 ## Step 2: Validate
 <a name="_step_2_validate"></a>
 
-You can see Amazon EKS Auto Mode launched a `g6e.2xlarge` rather than a `g6.2xlarge` as the workload required an instance with an L40S `GPU`, according to the following Kubernetes scheduling constraints:
+Amazon EKS Auto Mode launched an instance with an NVIDIA L40S GPU, such as a `g6e.2xlarge`. The exact instance size depends on available capacity. The following Kubernetes scheduling constraints require an L40S GPU:
 
 ```yaml
 ...
@@ -216,10 +234,8 @@ EKS Auto Mode keeps DRA and device plugins from managing the same device type on
 ### Prerequisites
 <a name="_prerequisites_2"></a>
 + A Kubernetes cluster with Amazon EKS Auto Mode configured, running **Kubernetes version 1.36 or later**. DRA is not available on EKS Auto Mode clusters running earlier versions. To check your cluster version, run `kubectl version`. For information about updating a cluster, see [Update existing cluster to new Kubernetes version](update-cluster.md).
-+ A `default` EKS Node class as created when the `general-purpose` or `system` Managed Node Pools are enabled.
++ A `default` EKS Node Class as created when the `general-purpose` or `system` managed node pools are enabled.
 +  `kubectl` configured to communicate with your cluster, see [Install or update `kubectl`](install-kubectl.md#kubectl-install-update) for more information.
-+ A GPU instance family that EKS Auto Mode has DRA device metadata for. The `g7e` instance family is not supported with DRA and dynamic capacity provisioning. Use the NVIDIA device plugin for `g7e` GPUs, as shown in [Deploy an accelerated workload](auto-accelerated.md).
-+ For EFA devices with dynamic capacity provisioning, use an instance type with NVIDIA GPUs. EKS Auto Mode doesn’t yet have EFA DRA device metadata for EFA-enabled instance types without GPUs. Examples include `hpc7a` and `c6in`. Support for these instance types is coming soon. For more information, see [aws/karpenter-provider-aws\#9879](https://github.com/aws/karpenter-provider-aws/pull/9879) on GitHub. Until then, use static capacity provisioning or the EFA device plugin for them.
 
 ### Step 1: Create the DeviceClass
 <a name="_step_1_create_the_deviceclass"></a>
@@ -372,8 +388,8 @@ kubectl get nodes -L eks.amazonaws.com/device-manager-nvidia
 An example output is as follows.
 
 ```bash
-NAME                  STATUS   ROLES    AGE   VERSION   DEVICE-MANAGER-NVIDIA
-i-02315c7d7643cdee6   Ready    <none>   76s   v1.36.0   dra
+NAME                  STATUS   ROLES    AGE   VERSION               DEVICE-MANAGER-NVIDIA
+i-02315c7d7643cdee6   Ready    <none>   76s   v1.37.0-eks-29d7970   dra
 ```
 
 Look at the container’s logs by running the following command:

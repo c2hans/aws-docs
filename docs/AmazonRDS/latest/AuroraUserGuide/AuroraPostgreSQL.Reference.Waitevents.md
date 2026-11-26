@@ -87,6 +87,9 @@ A backend process is waiting for a condition defined by an extension or module.
 **IO:AuroraEnhancedLogicalWALRead**
 A backend process is fetching log records from the change data capture (CDC) volume.
 
+**IO:AuroraGDRiskyQueryLogWrite**
+Aurora PostgreSQL collects information about some SQL statements that GuardDuty RDS Protection can use to detect threats. This wait event occurs when a backend process writes this information. For more information about GuardDuty RDS Protection, see [GuardDuty RDS Protection](https://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html) in the *Amazon GuardDuty User Guide*.
+
 **IO:AuroraOptimizedReadsCacheRead**
 A process is waiting for a read from Optimized Reads tiered cache because the page isn't available in shared memory.
 

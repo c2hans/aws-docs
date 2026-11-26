@@ -29,7 +29,7 @@ The following shows the syntax for retrieving the list of rate limited IP addres
 aws wafv2 get-rate-based-statement-managed-keys --scope=CLOUDFRONT --region=us-east-1 --web-acl-name={{WebACLName}} --web-acl-id={{WebACLId}} --rule-name={{RuleName}}
 ```
 
-The following shows the syntax for a regional application, an Amazon API Gateway REST API, an Application Load Balancer, an AWS AppSync GraphQL API, an Amazon Cognito user pool, an AWS App Runner service, AWS Amplify, an Amazon Bedrock AgentCore Gateway, or an AWS Verified Access instance.
+The following shows the syntax for a regional application, an Amazon API Gateway REST API, an Application Load Balancer, an Elastic Load Balancing for Envoy proxy, an AWS AppSync GraphQL API, an Amazon Cognito user pool, an AWS App Runner service, AWS Amplify, an Amazon Bedrock AgentCore Gateway, or an AWS Verified Access instance.
 
 ```
 aws wafv2 get-rate-based-statement-managed-keys --scope=REGIONAL --region={{region}} --web-acl-name={{WebACLName}} --web-acl-id={{WebACLId}} --rule-name={{RuleName}}

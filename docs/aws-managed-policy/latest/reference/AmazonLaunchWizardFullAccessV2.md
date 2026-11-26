@@ -17,13 +17,13 @@ You can attach `AmazonLaunchWizardFullAccessV2` to your users, groups, and roles
 <a name="AmazonLaunchWizardFullAccessV2-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: September 01, 2023, 17:14 UTC
-+ **Edited time:** October 20, 2026, 16:37 UTC
++ **Edited time:** November 23, 2026, 20:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonLaunchWizardFullAccessV2`
 
 ## Policy version
 <a name="AmazonLaunchWizardFullAccessV2-version"></a>
 
-**Policy version:** v3 (default)
+**Policy version:** v4 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -198,7 +198,9 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:ec2:*:*:volume/*",
         "arn:aws:ec2:*:*:key-pair/*",
         "arn:aws:ec2:*:*:placement-group/*",
-        "arn:aws:ec2:*:*:launch-template/*"
+        "arn:aws:ec2:*:*:launch-template/*",
+        "arn:aws:ec2:*:*:capacity-reservation/*",
+        "arn:aws:resource-groups:*:*:group/*"
       ],
       "Condition" : {
         "ForAnyValue:StringEquals" : {
@@ -236,7 +238,8 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:ec2:*:*:vpc/*",
         "arn:aws:ec2:*:*:subnet/*",
         "arn:aws:ec2:*:*:elastic-ip/*",
-        "arn:aws:ec2:*:*:route-table/*"
+        "arn:aws:ec2:*:*:route-table/*",
+        "arn:aws:ec2:*:*:launch-template/*"
       ],
       "Condition" : {
         "ForAnyValue:StringEquals" : {
@@ -504,6 +507,8 @@ The policy's default version is the version that defines the permissions for the
         "ec2:DescribeStaleSecurityGroups",
         "ec2:DescribeInstanceTypeOfferings",
         "ec2:DescribePlacementGroups",
+        "ec2:DescribeCapacityReservations",
+        "ec2:GetGroupsForCapacityReservation",
         "iam:GetRole",
         "iam:GetRolePolicy",
         "iam:GetUser",
@@ -637,7 +642,9 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : [
         "elasticfilesystem:UntagResource",
-        "elasticfilesystem:TagResource"
+        "elasticfilesystem:TagResource",
+        "elasticfilesystem:DeleteReplicationConfiguration",
+        "elasticfilesystem:DescribeReplicationConfigurations"
       ],
       "Resource" : "arn:aws:elasticfilesystem:*:*:file-system/*",
       "Condition" : {

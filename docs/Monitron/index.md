@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/Monitron/index.html
 title: 'Amazon Monitron Documentation'
 canonical_url: https://docs.aws.amazon.com/Monitron/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Amazon Monitron Documentation

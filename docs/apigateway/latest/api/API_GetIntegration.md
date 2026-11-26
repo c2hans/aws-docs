@@ -124,7 +124,7 @@ Specifies the integration's responses.
 Type: String to [IntegrationResponse](API_IntegrationResponse.md) object map
 
  ** [integrationTarget](#API_GetIntegration_ResponseSyntax) **   <a name="apigw-GetIntegration-response-integrationTarget"></a>
- The ALB or NLB listener to send the request to.
+ The ALB or NLB ARN to send the request to.
 Type: String
 
  ** [passthroughBehavior](#API_GetIntegration_ResponseSyntax) **   <a name="apigw-GetIntegration-response-passthroughBehavior"></a>

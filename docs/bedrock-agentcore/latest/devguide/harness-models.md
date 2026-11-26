@@ -240,7 +240,7 @@ printf '%s' "$OPENAI_API_KEY" | agentcore add credentials api-key \
   --name my-openai-key \
   --api-key -
 ```
-From the AgentCore project directory that you created earlier, add a second harness that uses the Responses format. Then deploy the project. This harness calls Amazon Bedrock with the execution role and does not use the API key. The OpenAI harness in [Select the model API format](#harness-model-api-format) uses it.
+From the AgentCore project directory that you created earlier, add a second harness that uses the Responses format. Then deploy the project. This harness calls Amazon Bedrock with the execution role and does not use the API key. The execution role that the CLI generates includes the permissions for the Amazon Bedrock `bedrock-mantle` endpoint. The OpenAI harness in [Select the model API format](#harness-model-api-format) uses the API key.
 
 ```bash
 agentcore add harness \
@@ -273,6 +273,8 @@ For `bedrockModelConfig`, `apiFormat` selects both the API protocol and the Amaz
 +  `chat_completions` - the OpenAI-compatible Chat Completions API, served by the `bedrock-mantle` endpoint.
 
 The `bedrock-mantle` endpoint supports a different set of models and capabilities than the default `bedrock-runtime` endpoint. For details, see [Endpoints supported by Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
+
+The `responses` and `chat_completions` formats need Bedrock Mantle permissions on the execution role in addition to the sample execution role policy. See [Bedrock Mantle (`responses` and `chat_completions` formats)](harness-security.md#harness-mantle-permissions).
 
 For `openAiModelConfig`, `apiFormat` can be one of:
 +  `responses` - the OpenAI Responses API. This is the default.

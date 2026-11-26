@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 
 Container for azimuth elevation segment data.
 
-Specify either [AzElSegmentsData:s3Object](#groundstation-Type-AzElSegmentsData-s3Object) to reference data in Amazon S3, or [AzElSegmentsData:azElData](#groundstation-Type-AzElSegmentsData-azElData) to provide data inline.
+Specify either AzElSegmentsData$s3Object to reference data in Amazon S3, or AzElSegmentsData$azElData to provide data inline.
 
 ## Contents
 <a name="API_AzElSegmentsData_Contents"></a>

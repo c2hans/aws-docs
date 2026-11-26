@@ -24,7 +24,7 @@ The expression must be a string. It can be the name of a field that uses the str
 
 Decimal(Fixed) in the legacy data preparation experience.
 
-Decimal(Float) in the new data preparation experience.
+Decimal(Float) in the data preparation experience.
 
 ## Example
 <a name="parseDecimal-function-example"></a>

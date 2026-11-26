@@ -4,7 +4,10 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/certguard-exa
 
 # Example policies
 
-The following examples show common certificate governance controls. Most examples are `Deny` statements that you can use in an identity-based policy, SCP, RCP, or VPC endpoint policy. The example that allows only an approved DNS name is an `Allow` statement, for example in an AWS RAM customer managed permission. Combine statements as needed, and scope them to the principals or CAs they're meant for.
+**Note**
+X.509 certificate condition keys aren't supported yet in the resource-based policy of a private CA, including AWS RAM customer managed permissions and policies that you set with [PutPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPolicy.html). Support is coming soon. You can use the keys today in identity-based policies, service control policies (SCPs), and resource control policies (RCPs). For details and alternatives, see [Supported policy types](certguard-policy-types.md).
+
+The following examples show common certificate governance controls. Most examples are `Deny` statements that you can use in an identity-based policy, SCP, RCP, or VPC endpoint policy. The example that allows only an approved DNS name uses an `Allow` statement, which you can use in an identity-based policy. Combine statements as needed, and scope them to the principals or CAs they're meant for.
 
 ## Require approved key algorithms and sizes
 <a name="certguard-example-key-strength"></a>
@@ -187,7 +190,7 @@ The following policy denies certificates with any DNS name outside `example.com`
 ## Allow only certificates for an approved DNS name
 <a name="certguard-example-dns-only"></a>
 
-A `ForAllValues` condition is `true` when the certificate has no values for the key. In an `Allow` statement, such as one in an AWS RAM customer managed permission, a `ForAllValues:StringLike` condition on `acm-pca:x509SAN/DNS` therefore allows a certificate that has no DNS names and identifies its subject only by IP address, URI, email address, directory name, or other name. To close these gaps, combine the pattern match with `Null` conditions and a count of SAN entries.
+A `ForAllValues` condition is `true` when the certificate has no values for the key. In an `Allow` statement, a `ForAllValues:StringLike` condition on `acm-pca:x509SAN/DNS` therefore allows a certificate that has no DNS names and identifies its subject only by IP address, URI, email address, directory name, or other name. To close these gaps, combine the pattern match with `Null` conditions and a count of SAN entries.
 
 The following policy allows a certificate only when its SAN extension has exactly one entry, that entry is a DNS name in `example.com`, and any subject common name is also in `example.com`.
 

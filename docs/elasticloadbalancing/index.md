@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/index.html
 title: 'Elastic Load Balancing Documentation'
 canonical_url: https://docs.aws.amazon.com/elasticloadbalancing/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Elastic Load Balancing Documentation
@@ -16,6 +16,12 @@ Elastic Load Balancing automatically distributes your incoming traffic across mu
 ## Overview
 
 - [User Guide](/elasticloadbalancing/latest/userguide/): Learn about Elastic Load Balancing.
+
+## Elastic Load Balancing - elb-proxy
+
+- [User Guide for ELB for Envoy](/elasticloadbalancing/latest/elbproxy/what-is.html): Use ELB for Envoy for advanced routing of TCP, UDP, HTTP, and HTTPS traffic.
+- [API Reference](/elasticloadbalancing/elb-proxy/latest/APIReference/): Provides syntax and examples for the API actions.
+- [AWS CLI Reference](/cli/latest/reference/elb-proxy/): Provides syntax and examples for the commands.
 
 ## Elastic Load Balancing - Version 2
 

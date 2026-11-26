@@ -349,6 +349,7 @@ The following actions are supported by Amazon SageMaker Service:
 +  [ListUserProfiles](API_ListUserProfiles.md)
 +  [ListWorkforces](API_ListWorkforces.md)
 +  [ListWorkteams](API_ListWorkteams.md)
++  [MoveClusterNodes](API_MoveClusterNodes.md)
 +  [PutEndpointPolicy](API_PutEndpointPolicy.md)
 +  [PutModelPackageGroupPolicy](API_PutModelPackageGroupPolicy.md)
 +  [QueryLineage](API_QueryLineage.md)

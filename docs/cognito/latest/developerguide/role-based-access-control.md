@@ -109,6 +109,9 @@ Rules are evaluated in order, and the IAM role for the first matching rule is us
 
 You can set multiple rules for an authentication provider in the identity pool (federated identities) console. Rules are applied in order. You can drag the rules to change their order. The first matching rule takes precedence. If the match type is `NotEqual` and the claim doesn't exist, the rule is not evaluated. If no rules match, the **Role resolution** setting is applied to either **Use default authenticated role** or **Deny request**.
 
+**Important**
+When no rules match and you choose **Use default authenticated role**, your identity pool issues credentials for your authenticated role to any user that your IdP authenticates. With SAML IdPs, this includes users that your IdP authenticated for other applications. To restrict credentials to the users that your rules identify, choose **Deny request**. For more information, see [SAML federation trust scope in identity pools](saml-identity-provider.md#saml-identity-provider-trust-scope).
+
 In the API and CLI, you can specify the role to be assigned when no rules match in the `AmbiguousRoleResolution` field of the [RoleMapping](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_RoleMapping.html) type, which is specified in the `RoleMappings` parameter of the [SetIdentityPoolRoles](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_SetIdentityPoolRoles.html) API.
 
 To add rule-based mapping to an identity provider in the Amazon Cognito console, add or update an IdP and select **Choose role with rules** under **Role selection**. From there, you can add rules that map provider claims to IAM roles.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/distributed-order-management-o
 title: 'Guidance for Distributed Order Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/distributed-order-management-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for Distributed Order Management on AWS

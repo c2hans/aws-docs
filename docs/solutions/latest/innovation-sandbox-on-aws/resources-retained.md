@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 
 # Resources retained after deletion
 
-Some resources, which contain customer data, are not deleted automatically when you uninstall the stacks. The cost of these resources is minimal, and you can manually delete these resources.
+The solution’s CloudFormation stacks retain the following resources after deletion. Review these resources and manually delete any that you no longer need. Retained resources can continue to incur charges.
 
  **Compute stack**
 + Customer Managed Key
@@ -23,10 +23,15 @@ Some resources, which contain customer data, are not deleted automatically when 
 + CloudWatch log group
   +  `InnovationSandbox-Data-ISBLogGroupCustomResourcesXXXXX`
 + DynamoDB tables
-  +  `InnovationSandbox-Data-LeaseTableXXXXX`
+  +  `InnovationSandbox-Data-SandboxAccountTableXXXXX`
   +  `InnovationSandbox-Data-LeaseTemplateTableXXXXX`
-  +  `InnovationSandbox-Data-AccountTableXXXXX`
+  +  `InnovationSandbox-Data-LeaseTableXXXXX`
+  +  `InnovationSandbox-Data-BlueprintTableXXXXX`
+  +  `InnovationSandbox-Data-PrincipalTableXXXXX`
+  +  `InnovationSandbox-Data-CleanupReportTableXXXXX`
   +  `InnovationSandbox-Data-ConfigTableXXXXX`
+  +  `InnovationSandbox-Data-SandboxSpacesUsageTableXXXXX`
+  +  `InnovationSandbox-Data-LeaseCostHistoryTableXXXXX`
 
  **IDC stack**
 + Customer Managed Key

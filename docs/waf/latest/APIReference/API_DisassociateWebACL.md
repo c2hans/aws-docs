@@ -32,6 +32,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the resource to disassociate from the web ACL.
 The ARN must be in one of the following formats:
 + For an Application Load Balancer: `arn:partition:elasticloadbalancing:region:account-id:loadbalancer/app/load-balancer-name/load-balancer-id `
++ For an Elastic Load Balancing for Envoy proxy: `arn:partition:elasticloadbalancing:region:account-id:proxy/proxy-name:proxy-id `
 + For an Amazon API Gateway REST API: `arn:partition:apigateway:region::/restapis/api-id/stages/stage-name `
 + For an AWS AppSync GraphQL API: `arn:partition:appsync:region:account-id:apis/GraphQLApiId `
 + For an Amazon Cognito user pool: `arn:partition:cognito-idp:region:account-id:userpool/user-pool-id `

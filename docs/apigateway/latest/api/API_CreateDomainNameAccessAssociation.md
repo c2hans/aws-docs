@@ -80,7 +80,7 @@ If the action is successful, the service sends back an HTTP 201 response.
 The following data is returned in JSON format by the service.
 
  ** [accessAssociationSource](#API_CreateDomainNameAccessAssociation_ResponseSyntax) **   <a name="apigw-CreateDomainNameAccessAssociation-response-accessAssociationSource"></a>
- The identifier of the domain name access association source. For a VPCE, the value is the VPC endpoint ID.
+ The ARN of the domain name access association source. For a VPCE, the ARN must be a VPC endpoint.
 Type: String
 
  ** [accessAssociationSourceType](#API_CreateDomainNameAccessAssociation_ResponseSyntax) **   <a name="apigw-CreateDomainNameAccessAssociation-response-accessAssociationSourceType"></a>

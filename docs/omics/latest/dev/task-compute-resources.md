@@ -20,3 +20,4 @@ HealthOmics matches instance types to fit the compute and memory requirements th
 + [Compute and memory requirements for HealthOmics tasks](memory-and-compute-tasks.md)
 + [Task accelerators in a HealthOmics workflow definition](task-accelerators.md)
 + [Advanced resource configuration](advanced-resource-configuration.md)
++ [Expanded accelerator search](expanded-accelerator-search.md)

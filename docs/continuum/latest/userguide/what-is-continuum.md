@@ -10,19 +10,12 @@ Frontier AI models have given attackers new capabilities, such as generating com
 
 With AWS Continuum, you can discover, prioritize, validate, and remediate vulnerabilities at machine speed. AWS Continuum for code vulnerabilities focuses on finding, validating, and remediating first-party code vulnerabilities. It integrates with GitHub and Amazon S3 for code and context.
 
-**Topics**
-+ [Features of AWS Continuum](#what-is-continuum-features)
+To get started with AWS Continuum, see [Getting started with code vulnerabilities](cv-getting-started.md).
 
 ## Features of AWS Continuum
 <a name="what-is-continuum-features"></a>
 
-AWS Continuum provides the following features.
-
-Code vulnerabilities
-AWS Continuum finds, validates, and remediates first-party code vulnerabilities across your repositories and uploaded code. For more information, see [Code vulnerabilities](code-vulnerabilities.md).
-
-Penetration testing
-AWS Continuum continuously validates exploitability against your environment. For more information, see [Perform a penetration test](https://docs.aws.amazon.com/securityagent/latest/userguide/perform-penetration-test.html) in the *AWS Security Agent User Guide*.
-
-Threat modeling
-AWS Continuum models threats to identify security risks in your architecture. For more information, see [Perform a threat model](https://docs.aws.amazon.com/securityagent/latest/userguide/perform-threat-model.html) in the *AWS Security Agent User Guide*.
+AWS Continuum provides the following features:
++ **Code vulnerabilities** – AWS Continuum finds, validates, and remediates first-party code vulnerabilities across your repositories and uploaded code. For more information, see [Code vulnerabilities](code-vulnerabilities.md).
++ **Penetration testing** – AWS Continuum continuously validates exploitability against your environment. For more information, see [Perform a penetration test](https://docs.aws.amazon.com/securityagent/latest/userguide/perform-penetration-test.html) in the *AWS Security Agent User Guide*.
++ **Threat modeling** – AWS Continuum models threats to identify security risks in your architecture. For more information, see [Perform a threat model](https://docs.aws.amazon.com/securityagent/latest/userguide/perform-threat-model.html) in the *AWS Security Agent User Guide*.

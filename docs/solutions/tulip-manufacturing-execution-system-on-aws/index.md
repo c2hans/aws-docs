@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/tulip-manufacturing-execution-
 title: 'Guidance for Tulip Manufacturing Execution System (MES) on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/tulip-manufacturing-execution-system-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for Tulip Manufacturing Execution System (MES) on AWS

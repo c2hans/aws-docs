@@ -135,6 +135,16 @@ Local preference BGP community tags are mutually exclusive. To load balance traf
 
 Local preference BGP community tags are evaluated before any AS\_PATH attribute, and are evaluated in order from lowest to highest preference (where highest preference is preferred).
 
+#### Maintenance signaling BGP communities
+<a name="maintenance-signaling-bgp-communities"></a>
+
+During a planned maintenance event, Direct Connect proactively signals that the device endpoint undergoing maintenance is draining traffic. It applies all three signals to the routes it advertises to you over the affected private or transit virtual interface. You can't choose which signals Direct Connect advertises, but you can choose how your network responds to them. Your network can then move returning traffic to a redundant connection before maintenance activities begin. Direct Connect uses the following signals together:
++ AS\_PATH prepend: Direct Connect prepends its ASN three additional times to the routes advertised from the endpoint under maintenance. Because that path becomes longer, your router automatically prefers a redundant connection that advertises the same prefixes with a shorter AS\_PATH. This signal requires no configuration on your router, unless you apply your own route preference configuration. For example, if your router uses local preference to choose between paths, local preference takes precedence over AS\_PATH length, and this signal alone won't move your traffic.
++ `7224:2200`: the Direct Connect maintenance community. To act on it, configure a BGP import policy that matches `7224:2200` and takes action so your router prefers the redundant connection. For example, lower the local preference of those routes, or prepend your own ASN to them.
++ `65535:0`: the well-known GRACEFUL\_SHUTDOWN community defined in RFC 8326. To act on it, configure an import policy that sets the local preference of routes carrying `65535:0` to the lowest value, so your router prefers the alternate path while the affected session drains.
+
+The AS\_PATH prepend takes effect without any configuration. The `7224:2200` and `65535:0` communities move traffic only if you configure an import policy that acts on them. You can combine these mechanisms. For example, match `7224:2200` and both lower local preference and prepend your ASN for deterministic failover. Because Direct Connect advertises all three signals while the BGP session is still established, your network can shift traffic off the endpoint before it goes down, which supports a make-before-break failover without dropped BGP sessions.
+
 ### AS\_PATH loop prevention
 <a name="as-path-loop-prevention"></a>
 

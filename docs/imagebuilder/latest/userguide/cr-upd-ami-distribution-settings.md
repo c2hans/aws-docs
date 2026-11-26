@@ -79,7 +79,7 @@ A distribution configuration allows you to specify the name and description of y
 #### [ Console ]
 
 **Tip**
-Now you can create with AI. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).
+Now you can create with AI. For more information, see [Creating and updating resources with AI](ai-assisted-resource-creation.md).
 
 Follow these steps to create a new AMI distribution configuration in the AWS Management Console:
 
@@ -446,7 +446,7 @@ To update tags for your distribution configuration resource, see the [Tag resour
 #### [ Console ]
 
 **Tip**
-Now you can create with AI. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).
+Now you can create with AI. For more information, see [Creating and updating resources with AI](ai-assisted-resource-creation.md).
 
 Follow these steps to update an AMI distribution configuration in the AWS Management Console:
 

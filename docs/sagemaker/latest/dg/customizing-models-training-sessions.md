@@ -126,5 +126,5 @@ For a list of all SageMaker AI quotas, see [Supported Regions and Quotas](region
 + [Python SDK reference](training-sessions-sdk.md)
 + [API reference](training-sessions-api.md)
 + [End-to-end examples](training-sessions-example.md)
-+ [Troubleshooting and best practices](training-sessions-troubleshooting.md)
++ [Troubleshooting and best practices for Training Sessions](training-sessions-troubleshooting.md)
 + [Security in SageMaker AI Training Sessions](training-sessions-security.md)

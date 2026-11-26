@@ -225,6 +225,8 @@ You can specify a namespace and service account by name that doesn’t exist in 
    ```bash
    aws iam list-attached-role-policies --role-name my-role --query 'AttachedPolicies[].PolicyArn' --output text
    ```
+**Note**
+This command returns managed policies but not inline policies. If you embedded an inline policy in the role, such as with `aws iam put-role-policy` or the IAM console, list it with `aws iam list-role-policies --role-name my-role`. To view its permissions, run `aws iam get-role-policy --role-name my-role --policy-name my-policy`. The remaining steps in this procedure apply to managed policies.
 
    An example output is as follows.
 

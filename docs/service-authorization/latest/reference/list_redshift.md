@@ -1013,7 +1013,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateRedshiftIdcApplication](https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateRedshiftIdcApplication.html)  **
   - **Description:** Grants permission to create a redshift idc application
   - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateScheduledAction](https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateScheduledAction.html)  **
@@ -1042,6 +1042,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [hsmconfiguration](#list_redshift-resource-hsmconfiguration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [integration](#list_redshift-resource-integration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [parametergroup](#list_redshift-resource-parametergroup) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
+  - **Resource types (\*required):** [qev2idcapplication](#list_redshift-resource-qev2idcapplication) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
+  - **Resource types (\*required):** [redshiftidcapplication](#list_redshift-resource-redshiftidcapplication) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [securitygroup](#list_redshift-resource-securitygroup) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [securitygroupingress-cidr](#list_redshift-resource-securitygroupingress-cidr) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [securitygroupingress-ec2securitygroup](#list_redshift-resource-securitygroupingress-ec2securitygroup) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
@@ -1145,7 +1147,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteRedshiftIdcApplication](https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteRedshiftIdcApplication.html)  **
   - **Description:** Grants permission to delete a redshift idc application
   - **Resource types (\*required):** [redshiftidcapplication\*](#list_redshift-resource-redshiftidcapplication)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteResourcePolicy](https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteResourcePolicy.html)  **
@@ -1180,6 +1182,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [hsmconfiguration](#list_redshift-resource-hsmconfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [integration](#list_redshift-resource-integration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [parametergroup](#list_redshift-resource-parametergroup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
+  - **Resource types (\*required):** [qev2idcapplication](#list_redshift-resource-qev2idcapplication) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
+  - **Resource types (\*required):** [redshiftidcapplication](#list_redshift-resource-redshiftidcapplication) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [securitygroup](#list_redshift-resource-securitygroup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [securitygroupingress-cidr](#list_redshift-resource-securitygroupingress-cidr) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Resource types (\*required):** [securitygroupingress-ec2securitygroup](#list_redshift-resource-securitygroupingress-ec2securitygroup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
@@ -1444,6 +1448,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [hsmconfiguration](#list_redshift-resource-hsmconfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integration](#list_redshift-resource-integration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [parametergroup](#list_redshift-resource-parametergroup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [qev2idcapplication](#list_redshift-resource-qev2idcapplication) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [redshiftidcapplication](#list_redshift-resource-redshiftidcapplication) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [securitygroup](#list_redshift-resource-securitygroup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [securitygroupingress-cidr](#list_redshift-resource-securitygroupingress-cidr) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [securitygroupingress-ec2securitygroup](#list_redshift-resource-securitygroupingress-ec2securitygroup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
@@ -1544,6 +1550,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ModifyAccountAttributes](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyAccountAttributes.html)  **
+  - **Description:** Grants permission to modify the account-level settings for Amazon Redshift and Amazon Redshift Serverless in the current AWS Region
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Permissions management, Write
+
 - **   [ModifyAquaConfiguration](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyAquaConfiguration.html)  **
   - **Description:** Grants permission to modify the AQUA configuration of a cluster
   - **Resource types (\*required):** [cluster\*](#list_redshift-resource-cluster)
@@ -1637,7 +1649,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ModifyRedshiftIdcApplication](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyRedshiftIdcApplication.html)  **
   - **Description:** Grants permission to modify a redshift idc application
   - **Resource types (\*required):** [redshiftidcapplication\*](#list_redshift-resource-redshiftidcapplication)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [ModifyScheduledAction](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyScheduledAction.html)  **
@@ -1792,7 +1804,7 @@ The following actions are defined by Amazon Redshift but are not directly invoca
 - **   [CreateQev2IdcApplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  **
   - **Description:** Grants permission to create a qev2 idc application
   - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_redshift-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_redshift-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateSavedQuery](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  **
@@ -1804,7 +1816,7 @@ The following actions are defined by Amazon Redshift but are not directly invoca
 - **   [DeleteQev2IdcApplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  **
   - **Description:** Grants permission to delete a qev2 idc application
   - **Resource types (\*required):** [qev2idcapplication\*](#list_redshift-resource-qev2idcapplication)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteSavedQueries](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  **
@@ -1888,7 +1900,7 @@ The following actions are defined by Amazon Redshift but are not directly invoca
 - **   [ModifyQev2IdcApplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  **
   - **Description:** Grants permission to modify a qev2 idc application
   - **Resource types (\*required):** [qev2idcapplication\*](#list_redshift-resource-qev2idcapplication)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [ModifySavedQuery](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  **
@@ -1927,8 +1939,8 @@ The following resource types are defined by this service and can be used in the 
 |  [integration](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.html)  | arn:${Partition}:redshift:${Region}:${Account}:integration:${IntegrationIdentifier} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
 |  [namespace](https://docs.aws.amazon.com/redshift/latest/dg/concepts.html)  | arn:${Partition}:redshift:${Region}:${Account}:namespace:${ClusterNamespace} |   |
 |  [parametergroup](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html)  | arn:${Partition}:redshift:${Region}:${Account}:parametergroup:${ParameterGroupName} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
-|  [qev2idcapplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  | arn:${Partition}:redshift:${Region}:${Account}:qev2idcapplication:${Qev2IdcApplicationId} |   |
-|  [redshiftidcapplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  | arn:${Partition}:redshift:${Region}:${Account}:redshiftidcapplication:${RedshiftIdcApplicationId} |   |
+|  [qev2idcapplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  | arn:${Partition}:redshift:${Region}:${Account}:qev2idcapplication:${Qev2IdcApplicationId} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
+|  [redshiftidcapplication](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html)  | arn:${Partition}:redshift:${Region}:${Account}:redshiftidcapplication:${RedshiftIdcApplicationId} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
 |  [securitygroup](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html)  | arn:${Partition}:redshift:${Region}:${Account}:securitygroup:${SecurityGroupName}/ec2securitygroup/${Owner}/${Ec2SecurityGroupId} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
 |  [securitygroupingress-cidr](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html)  | arn:${Partition}:redshift:${Region}:${Account}:securitygroupingress:${SecurityGroupName}/cidrip/${IpRange} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
 |  [securitygroupingress-ec2securitygroup](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html)  | arn:${Partition}:redshift:${Region}:${Account}:securitygroupingress:${SecurityGroupName}/ec2securitygroup/${Owner}/${Ece2SecuritygroupId} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |

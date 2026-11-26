@@ -134,7 +134,8 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 
 | **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $16.875 | $21.09375 | $1.6875 | $101.25 |
+| In-Region (bedrock-mantle) | $16.875 | $21.09375 | $1.6875 | $101.25 |
+| Geo CRIS | $16.875 | $21.09375 | $1.6875 | $101.25 |
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-56-cyber-programmatic-access"></a>
@@ -143,10 +144,10 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | openai.gpt-5.6-cyber | Not supported | us.openai.gpt-5.6-cyber | global.openai.gpt-5.6-cyber |
+| bedrock-runtime | openai.gpt-5.6-cyber | Not supported | us.openai.gpt-5.6-cyber in the commercial AWS Regions, us-gov.openai.gpt-5.6-cyber in the AWS GovCloud (US) Regions | global.openai.gpt-5.6-cyber |
 | bedrock-mantle | openai.gpt-5.6-cyber | https://bedrock-mantle.{region}.api.aws/openai/v1 | Not supported | Not supported |
 
-*For example, if region is us-east-2 (Ohio), then the bedrock-mantle endpoint URL will be "https://bedrock-mantle.us-east-2.api.aws/openai/v1". On `bedrock-runtime`, the base URL is "https://bedrock-runtime.{region}.amazonaws.com/openai/v1" and requests must name the geographic cross-Region inference ID `us.openai.gpt-5.6-cyber` as the model.*
+*For example, if region is us-east-2 (Ohio), then the bedrock-mantle endpoint URL will be "https://bedrock-mantle.us-east-2.api.aws/openai/v1". On `bedrock-runtime`, the base URL is "https://bedrock-runtime.{region}.amazonaws.com/openai/v1" and requests must name a cross-Region inference ID as the model: `us.openai.gpt-5.6-cyber` or `global.openai.gpt-5.6-cyber` in the commercial Regions, or `us-gov.openai.gpt-5.6-cyber` in the AWS GovCloud (US) Regions.*
 
 ## Service Tiers
 <a name="model-card-openai-gpt-56-cyber-tiers"></a>
@@ -209,6 +210,8 @@ Availability differs by endpoint.
 | me-south-1 (Bahrain) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | af-south-1 (Cape Town) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | sa-east-1 (São Paulo) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| us-gov-east-1 (AWS GovCloud (US-East)) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| us-gov-west-1 (AWS GovCloud (US-West)) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 ***Geo inference details***
 
@@ -226,6 +229,15 @@ Geo inference ID: `us.openai.gpt-5.6-cyber`
 | us-west-2 (Oregon) | us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
 | ca-central-1 (Canada) | ca-central-1 (Canada), us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
 | ca-west-1 (Calgary) | ca-west-1 (Calgary), us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
+
+**Geo: US-GOV**
+
+Geo inference ID: `us-gov.openai.gpt-5.6-cyber`
+
+| **Source Region** | **Destination Regions** |
+| --- | --- |
+| us-gov-east-1 (AWS GovCloud (US-East)) | us-gov-east-1 (AWS GovCloud (US-East)) |
+| us-gov-west-1 (AWS GovCloud (US-West)) | us-gov-east-1 (AWS GovCloud (US-East)) |
 
 ## Quotas and Limits
 <a name="model-card-openai-gpt-56-cyber-quotas"></a>
@@ -280,7 +292,7 @@ OPENAI_BASE_URL="https://bedrock-mantle.us-east-2.api.aws/openai/v1"
 ------
 
 **Note**
-On `bedrock-runtime`, name a cross-Region inference profile as the model — `us.openai.gpt-5.6-cyber` or `global.openai.gpt-5.6-cyber`. This model is not available for in-Region inference on that endpoint. Your IAM identity also needs `bedrock:InvokeModel` on your account's default project (`arn:aws:bedrock:{region}:{account-id}:project/default`) in addition to the inference profile.
+On `bedrock-runtime`, name a cross-Region inference profile as the model — `us.openai.gpt-5.6-cyber` or `global.openai.gpt-5.6-cyber` (in the AWS GovCloud (US) Regions, `us-gov.openai.gpt-5.6-cyber`). This model is not available for in-Region inference on that endpoint. Your IAM identity also needs `bedrock:InvokeModel` on your account's default project (`arn:aws:bedrock:{region}:{account-id}:project/default`, or `arn:aws-us-gov:bedrock:{region}:{account-id}:project/default` in the AWS GovCloud (US) Regions) in addition to the inference profile.
 
 ### Step 5 - Run your first inference request
 <a name="model-card-openai-gpt-56-cyber-sample-code-request"></a>

@@ -229,6 +229,41 @@ The following example shows the `userIdentity` element of the `AssumeRoleWithSAM
 }
 ```
 
+**`userIdentity` for a request made by an IAM Identity Center user with the simplified experience for trusted identity propagation**
+
+The following example shows a `userIdentity` element for a request made with an IAM role session that was federated through IAM Identity Center, when the simplified experience for trusted identity propagation is configured. This applies to any IAM role that IAM Identity Center federates into: roles created from permission sets, roles assigned with IAM account access manager, and roles used by applications that make requests on the user's behalf. This example shows a role created from a permission set. The `onBehalfOf` element contains the user's username in `subject`, alongside the Identity Store user ID and Identity Store ARN. For IAM Identity Center sessions, `issuer` is the ARN of the IAM Identity Center instance. IAM Identity Center sessions don't include `federatedProviderArn` or `transactionContext`. For more information, see [Trusted identity propagation overview](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html) in the *IAM Identity Center User Guide*.
+
+```JSON
+"userIdentity": {
+    "type": "AssumedRole",
+    "principalId": "AROA123456789EXAMPLE:example-user-1",
+    "arn": "arn:aws:sts::111122223333:assumed-role/AWSReservedSSO_ExamplePermissionSet_0123456789abcdef/example-user-1",
+    "accountId": "111122223333",
+    "accessKeyId": "ASIAIOSFODNN7EXAMPLE",
+    "sessionContext": {
+        "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROA123456789EXAMPLE",
+            "arn": "arn:aws:iam::111122223333:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_ExamplePermissionSet_0123456789abcdef",
+            "accountId": "111122223333",
+            "userName": "AWSReservedSSO_ExamplePermissionSet_0123456789abcdef"
+        },
+        "attributes": {
+            "creationDate": "2026-11-10T18:22:05Z",
+            "mfaAuthenticated": "false"
+        }
+    },
+    "onBehalfOf": {
+        "userId": "94482488-3041-7026-18f3-be45837cd0e4",
+        "identityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
+        "identityCenterInstanceArn": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+        "issuer": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+        "subject": "example-user-1",
+        "subjectType": "user"
+    }
+}
+```
+
 **`userIdentity` for the `AssumeRole` request that IAM Roles Anywhere makes to create a role session with trusted identity propagation context**
 
 The following example shows the `userIdentity` element of the `AssumeRole` event that IAM Roles Anywhere records when it creates a role session for a workload. The `type` is `AWSService`, and `invokedBy` is `service.rolesanywhere.amazonaws.com`. The `onBehalfOf` element identifies the workload from its X.509 certificate. `subject` is the value from the certificate field that the profile uses as the subject source. `federatedProviderArn` is the ARN of the trust anchor that authenticated the certificate, and `issuer` is the SHA-384 hash of the trust anchor's CA certificate. IAM Roles Anywhere sessions don't include `transactionContext`.
@@ -441,37 +476,40 @@ The credential ID for the request. This is only set when the caller uses a beare
 ## Trusted identity propagation
 <a name="cloudtrail-event-reference-user-identity-tip"></a>
 
-When a request is made with credentials that carry trusted identity propagation (TIP) context, the `userIdentity` element can contain additional information about the human user or workload on whose behalf the call was made. TIP context comes from one of two paths:
+When a request is made with credentials that carry trusted identity propagation (TIP) context, the `userIdentity` element can contain additional information about the human user or workload on whose behalf the call was made. TIP context comes from one of three paths:
 + **IAM federation** – Sessions created through an IAM SAML or OIDC identity provider when trusted identity propagation is configured for that identity provider. For more information, see [Logging TIP activity with AWS CloudTrail](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_tip_cloudtrail.html) in the *IAM User Guide*.
++ **IAM Identity Center** – Sessions that come through IAM Identity Center when you have configured the simplified experience for trusted identity propagation. For more information, see [Trusted identity propagation overview](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html) in the *IAM Identity Center User Guide*.
 + **IAM Roles Anywhere** – Sessions created through IAM Roles Anywhere, where the TIP context comes from an external X.509 certificate. For more information, see [Trusted identity propagation with IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trusted-identity-propagation.html) in the *IAM User Guide*.
 
 ### `onBehalfOf` fields
 <a name="cloudtrail-event-reference-user-identity-tip-onbehalfof"></a>
 
-When a request is made with credentials that carry trusted identity propagation (TIP) context, the `onBehalfOf` element can contain additional attributes. These attributes identify the human user or workload on whose behalf the call was made. The `subject`, `subjectType`, `issuer`, and `federatedProviderArn` attributes appear for IAM federation sessions only if trusted identity propagation is configured for the IAM identity provider. For IAM Roles Anywhere sessions, the `subject`, `issuer`, and `federatedProviderArn` attributes appear only if trusted identity propagation is turned on for the profile. `subjectType` appears only if the profile also declares a subject type. These attributes also appear only for requests to AWS services that support TIP. `onBehalfOf` can appear with any `userIdentity` type.
+When a request is made with credentials that carry trusted identity propagation (TIP) context, the `onBehalfOf` element can contain additional attributes. These attributes identify the human user or workload on whose behalf the call was made. The `subject`, `subjectType`, `issuer`, and `federatedProviderArn` attributes appear for IAM federation sessions only if trusted identity propagation is configured for the IAM identity provider, and `identityCenterInstanceArn` appears when the identity provider is also linked to an IAM Identity Center instance. For IAM Roles Anywhere sessions, the `subject`, `issuer`, and `federatedProviderArn` attributes appear only if trusted identity propagation is turned on for the profile. `subjectType` appears only if the profile also declares a subject type. For IAM Identity Center sessions, the `subject`, `subjectType`, `issuer`, and `identityCenterInstanceArn` attributes appear only if you have configured the simplified experience for trusted identity propagation. These attributes also appear only for requests to AWS services that support TIP. `onBehalfOf` can appear with any `userIdentity` type.
 
 The `onBehalfOf` element can contain the following additional attributes:
 + `subject` – The identifier of the human user or workload on whose behalf the call was made, as asserted by the trusted identity source, such as an identity provider for IAM federation, or an X.509 certificate for IAM Roles Anywhere.
 + `subjectType` – The type of the subject. Valid values are `user` and `workload`.
 + `issuer` – The issuer from which the TIP context originated. For OIDC federation, the issuer is the `iss` claim of the OIDC token without the `https://` prefix, for example `idp.example.com`. For SAML federation, the issuer is a lowercase hexadecimal SHA-384 hash. AWS computes the hash from the DER-encoded public key that verified the signature of the SAML assertion. The hash identifies the signing key, not the `Issuer` element of the SAML assertion. For IAM Roles Anywhere, the issuer is a lowercase hexadecimal SHA-384 hash of the DER-encoded CA certificate of the trust anchor that the certificate chain validated to.
-+ `federatedProviderArn` – The ARN of the provider resource that established the TIP identity. For IAM federation, this is the IAM SAML or OIDC provider ARN. For IAM Roles Anywhere, this is the ARN of the trust anchor that authenticated the session's certificate.
++ `identityCenterInstanceArn` – The ARN of the IAM Identity Center instance, for example `arn:aws:sso:::instance/ssoins-1234567890abcdef`. Present for IAM Identity Center sessions, and for IAM federation sessions when your identity provider is linked to an IAM Identity Center instance. Matches the `aws:IdentityCenterInstanceArn` condition key.
++ `federatedProviderArn` – The ARN of the provider resource that established the TIP identity. For IAM federation, this is the IAM SAML or OIDC provider ARN. For IAM Roles Anywhere, this is the ARN of the trust anchor that authenticated the session's certificate. IAM Identity Center sessions don't include `federatedProviderArn`.
 
 ### `transactionContext` fields
 <a name="cloudtrail-event-reference-user-identity-tip-transactioncontext"></a>
 
-`transactionContext` appears only if trusted identity propagation is configured for the IAM identity provider in your account, and only for requests to AWS services that support TIP. It appears only for sessions created through IAM federation (`AssumeRoleWithSAML` or `AssumeRoleWithWebIdentity`) and role sessions chained from them. IAM Roles Anywhere sessions don't include `transactionContext`. When the originator is a human user, `transactionContext` can contain personal information, depending on the runtime mappings that are configured.
+`transactionContext` appears only if trusted identity propagation is configured for the IAM identity provider in your account, and only for requests to AWS services that support TIP. It appears only for sessions created through IAM federation (`AssumeRoleWithSAML` or `AssumeRoleWithWebIdentity`) and role sessions chained from them. IAM Identity Center and IAM Roles Anywhere sessions don't include `transactionContext`. When the originator is a human user, `transactionContext` can contain personal information, depending on the runtime mappings that are configured.
 
 ### Which account receives these events
 <a name="cloudtrail-event-reference-user-identity-tip-accounts"></a>
 
 For information about which account receives events that contain these attributes, including role chains and cross-account requests, see the following:
 + IAM federation: [Logging TIP activity with AWS CloudTrail](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_tip_cloudtrail.html) in the *IAM User Guide*.
++ IAM Identity Center: [Trusted identity propagation overview](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html) in the *IAM Identity Center User Guide*.
 + IAM Roles Anywhere: [Trusted identity propagation with IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trusted-identity-propagation.html) in the *IAM User Guide*.
 
 ### Where to view trusted identity propagation data
 <a name="cloudtrail-event-reference-user-identity-tip-view"></a>
 
-If trusted identity propagation is configured for your IAM identity provider, you can view CloudTrail events that contain these fields in the following locations:
+If trusted identity propagation is configured for your IAM identity provider, or you configured the simplified experience for trusted identity propagation in IAM Identity Center, you can view CloudTrail events that contain these fields in the following locations:
 + CloudTrail Event history. For more information about how to view events in Event history, see [Working with CloudTrail event history](view-cloudtrail-events.md).
 + The Amazon S3 bucket associated with a CloudTrail trail. For more information about how to set up a trail to receive events, see [Working with CloudTrail trails](cloudtrail-trails.md).
 + CloudTrail Lake. For more information about how to retrieve events from CloudTrail Lake, see [Working with AWS CloudTrail Lake](cloudtrail-lake.md).

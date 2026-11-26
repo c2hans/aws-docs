@@ -54,12 +54,15 @@ Required: Yes
 ```
 {
    "relationshipDetail": {
+      "accountScope": "string",
       "arn": "string",
       "associatedAccountId": "string",
       "associationType": "string",
       "catalog": "string",
+      "channelContractId": "string",
       "createdAt": "string",
       "displayName": "string",
+      "endDate": "string",
       "id": "string",
       "programManagementAccountId": "string",
       "resaleAccountModel": "string",

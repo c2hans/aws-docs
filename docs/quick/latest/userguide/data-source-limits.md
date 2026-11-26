@@ -13,12 +13,12 @@ Data sources that you use with AWS Quick Sight must conform to the following quo
 ## SPICE quotas for imported data
 <a name="spice-limits"></a>
 
-When you create a new dataset in AWS Quick Sight, [SPICE](spice.md) limits the number of rows you can add to a dataset. You can ingest data into SPICE from a query or from a file. Each file can have up to 2,000 columns. Each column name can have up to 127 Unicode characters. Each field can have up to 2,047 Unicode characters.If you use the new data preparation experience to create your SPICE dataset, each field can have up to 65,534 Unicode characters.
+When you create a new dataset in AWS Quick Sight, [SPICE](spice.md) limits the number of rows you can add to a dataset. You can ingest data into SPICE from a query or from a file. Each file can have up to 2,000 columns. Each column name can have up to 127 Unicode characters. Each field can have up to 2,047 Unicode characters.If you use the data preparation experience to create your SPICE dataset, each field can have up to 65,534 Unicode characters.
 
 To retrieve a subset of data from a larger set, you can deselect columns or apply filters to reduce the size of the data. If you are importing from Amazon S3, each manifest can specify up to 1,000 files.
 
 Quotas for SPICE are as follows:
-+  2,047 Unicode characters for each field. (65,534 Unicode characters with new data preparation experience)
++  2,047 Unicode characters for each field. (65,534 Unicode characters with the data preparation experience)
 + 127 Unicode characters for each column name
 + 2,000 columns for each file
 + 1,000 files for each manifest

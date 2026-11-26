@@ -25,6 +25,8 @@ With continuous provisioning enabled, you can initiate multiple scaling operatio
 
 Continuous provisioning also gives you access to [DescribeClusterEvent](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterEvent.html) and [ListClusterEvent](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterEvents.html) for detailed event monitoring and operational visibility.
 
+To move running nodes from one instance group to another, use `MoveClusterNodes` instead of scaling one group down and another up. The same instances keep running in the target instance group, so the nodes are ready sooner. A move lowers the source instance group's instance count and raises the target's count as each node arrives, and it cannot take the source below its minimum instance count. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
 ## Tracking scaling requests with cluster operations
 <a name="sagemaker-hyperpod-scaling-eks-tracking"></a>
 
@@ -104,6 +106,7 @@ Calling these operations will return a [ClusterInstanceStatusDetails](https://do
 +  **SystemUpdating**: The node is undergoing AMI patching, either triggered manually or as part of patching cronjobs.
 +  **DeepHealthCheckInProgress**: [Deep health checks (DHCs)](sagemaker-hyperpod-eks-resiliency-deep-health-checks.md) are being conducted. This could take anywhere between a few mins to several hours depending on the nature of tests. Bad nodes are replaced and healthy nodes switch to Running.
 +  **NotFound** : Used in [BatchAddClusterNodes](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchAddClusterNodes.html) response to indicate a node has been deleted during idempotent replay.
++  **DetachInProgress and AttachInProgress**: The node is moving between instance groups. It is `DetachInProgress` on the source cluster, then `AttachInProgress` on the target cluster, and `Running` on the target cluster when the move is complete.
 
 ## Minimum capacity requirements (MinCount)
 <a name="sagemaker-hyperpod-scaling-eks-mincount"></a>
@@ -137,7 +140,7 @@ InService
 When MinCount ≤ CurrentCount ≤ TargetCount. The instance group is ready for use and all mutating operations are unblocked.
 
 During `Creating` or `Updating` status, the following restrictions apply:
-+ Mutating operations such as `BatchAddClusterNodes`, `BatchDeleteClusterNodes`, or `UpdateClusterSoftware` are blocked
++ Mutating operations such as `BatchAddClusterNodes`, `BatchDeleteClusterNodes`, `UpdateClusterSoftware`, or `MoveClusterNodes` are blocked
 + You can still modify MinCount and TargetCount values to correct configuration errors
 + Cluster and Instance group deletion is always permitted
 

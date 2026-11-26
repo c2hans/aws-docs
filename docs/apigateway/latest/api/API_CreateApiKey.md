@@ -169,6 +169,10 @@ HTTP Status Code: 409
 The request exceeded the rate limit. Retry after the specified time period.
 HTTP Status Code: 429
 
+ ** NotFoundException **
+The requested resource is not found. Make sure that the request URI is correct.
+HTTP Status Code: 404
+
  ** TooManyRequestsException **
 The request has reached its throttling limit. Retry after the specified time period.
 HTTP Status Code: 429

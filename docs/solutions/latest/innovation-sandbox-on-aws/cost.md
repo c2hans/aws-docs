@@ -31,7 +31,15 @@ We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/lat
 |  **Total Cost per month (USD)**  | \~**$36.40**  | \~**$65.25**  | \~**$149.20**  |
 
 **Important**
-This estimate does not include the costs incurred by sandbox account usage or blueprint deployments. Customers are responsible for setting appropriate lease configurations, monitoring spend of sandbox accounts, and considering the cost of resources deployed through blueprints.
+This estimate does not include the costs incurred by sandbox account usage or blueprint deployments. You are responsible for setting appropriate lease configurations, monitoring spend of sandbox accounts, and considering the cost of resources deployed through blueprints.
 
 **Note**
 Blueprint deployments may incur additional costs depending on the resources defined in your CloudFormation StackSets. Consider the cost of blueprint resources when planning your deployment and setting lease budget limits. For example, a blueprint that deploys Amazon RDS databases, Amazon ElastiCache clusters, or Amazon EC2 instances will incur ongoing costs for the duration of the lease.
+
+## Optional feature costs
+<a name="optional-feature-costs"></a>
+
+The following usage-based costs depend on the optional features that you enable:
++  **Estimated cost tracking**: For example, estimated cost tracking can cost less than USD $0.01 for each monitored lease each month. This estimate covers incremental Amazon DynamoDB reads and AWS Lambda calculations. It excludes the existing hourly AWS Cost Explorer polling represented in the example cost table.
++  **Amazon Bedrock token monitoring**: For example, Amazon Bedrock token monitoring can cost approximately USD $0.18–USD $0.35 for each monitored lease each month in each managed Region. This estimate covers baseline Amazon CloudWatch metric reads. A single query window requests four metrics, while a query split across two windows requests eight. Activity-dependent per-model queries increase this cost.
++  **Cost reconciliation**: Token monitoring shares an hourly AWS Cost Explorer reconciliation query. For example, a one-page query batch can cost approximately USD $7.20 for a 30-day month and cover up to 99 accounts. The example cost is approximately USD $0.07 for each account only when the page contains all 99 accounts. Additional pages, batches, and fallback queries increase the cost.

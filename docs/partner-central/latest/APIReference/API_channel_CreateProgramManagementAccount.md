@@ -21,7 +21,8 @@ Creates a new program management account for managing partner relationships.
          "key": "{{string}}",
          "value": "{{string}}"
       }
-   ]
+   ],
+   "type": "{{string}}"
 }
 ```
 
@@ -59,7 +60,7 @@ Required: Yes
  ** [program](#API_channel_CreateProgramManagementAccount_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateProgramManagementAccount-request-program"></a>
 The program type for the management account.
 Type: String
-Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER`
+Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER | MANAGED_SERVICES_PROVIDER`
 Required: Yes
 
  ** [clientToken](#API_channel_CreateProgramManagementAccount_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateProgramManagementAccount-request-clientToken"></a>
@@ -72,6 +73,12 @@ Required: No
  ** [tags](#API_channel_CreateProgramManagementAccount_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateProgramManagementAccount-request-tags"></a>
 Key-value pairs to associate with the program management account.
 Type: Array of [Tag](API_channel_Tag.md) objects
+Required: No
+
+ ** [type](#API_channel_CreateProgramManagementAccount_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateProgramManagementAccount-request-type"></a>
+The type of the program management account (for example, resale billing transfer, managed services), required for the managed services provider program.
+Type: String
+Valid Values: `RESALE_BILLING_TRANSFER | MANAGED_SERVICES`
 Required: No
 
 ## Response Syntax

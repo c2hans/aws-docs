@@ -30,7 +30,19 @@ The following table compares the collaboration modes.
 | Talk to the customer (text) | The collaborator. On voice, Connect Customer converts speech to text and text to speech. | Voice over WebSocket (wss://): one persistent connection for the session. HTTP JSON-RPC (https://): a request and response for each exchange, with no persistent connection. Chat: a new connection for each customer message. | No. Connect Customer provides the voice. | **Connect AI agent collaborator:** uses its Complete or Escalate tool.<br />**External collaborator:** sends a FINISH event with COMPLETE or ESCALATE.<br />Control returns to the main Connect AI agent. | Connect AI agent and external collaborators |
 | Talk to the customer (audio) | The collaborator, using its own AI voice | One persistent wss:// connection for the session. | Yes, bidirectional audio on voice contacts, over WebSocket (wss://) only | The collaborator sends a FINISH event with COMPLETE or ESCALATE. Control returns to the main Connect AI agent. | External only |
 
-When a collaborator that talks to the customer completes or escalates, control returns to the main Connect AI agent, which is invoked again with the collaborator's reason. The main Connect AI agent can continue the conversation, invoke another collaborator, or use its Complete or Escalate tool to return the contact to the flow. For more information about these tools, see [Tools for orchestrator AI agents](agentic-self-service.md#agentic-self-service-default-tools).
+The following table shows how each mode works in self-service and in agent assistance.
+
+**Collaboration mode support by use case**
+
+| Mode | Self-service | Agent assistance |
+| --- | --- | --- |
+| Handle actions behind the scenes | Supported | Supported. The orchestrator writes its own answer for the human agent in the Connect assistant panel. |
+| Talk to the customer (text) | Supported. The collaborator talks to the customer. | Supported. The collaborator talks to the human agent in the Connect assistant panel until it hands back. |
+| Talk to the customer (audio streaming) | Supported on voice contacts (wss://, Amazon Nova Sonic bot locale) | Not supported. The Connect assistant panel is text, and the collaborator isn't on the call's audio path. The configuration is accepted, but Connect Customer doesn't negotiate audio and the collaborator works in text. |
+
+Immediate handoff (`immediateHandoff` set to `true`) works in both use cases. In agent assistance, the collaborator answers the human agent's first message in the panel, and the orchestrator doesn't answer first.
+
+When a collaborator that talks to the customer completes or escalates, control returns to the main Connect AI agent, which is invoked again with the collaborator's reason. In self-service, the main Connect AI agent can continue the conversation, invoke another collaborator, or use its Complete or Escalate tool to return the contact to the flow. In agent assistance, the contact is already with a human agent, so the main Connect AI agent answers the human agent's next message in the Connect assistant panel. For more information about these tools, see [Tools for orchestrator AI agents](agentic-self-service.md#agentic-self-service-default-tools).
 
 For Connect AI agent collaborators, Connect Customer manages the connection for you.
 
@@ -53,6 +65,8 @@ The decision to bring in a collaborator is instruction-driven. When you configur
 For example, you might write an instruction such as the following: "When the customer asks about the status of an insurance claim, use the claims collaborator to look up the claim and return the result." Or: "When the customer wants to speak with a specialist about an investment portfolio review, bring in the portfolio advisor collaborator and let it talk to the customer."
 
 For a collaborator that talks to the customer, you can instead set `immediateHandoff` to `true`. With immediate handoff, the collaborator takes over the conversation on the first turn, and your Connect AI agent does not evaluate instructions first.
+
+In agent assistance, the orchestrator can bring in a collaborator for a question the human agent types, or for a proactive recommendation. When Connect Customer detects the customer's intent from the transcript and the agent selects the recommendation, the orchestrator evaluates the collaborator instructions as it does for a typed question.
 
 ## How a talk-to-the-customer collaboration ends
 <a name="a2a-how-it-works-ends"></a>
@@ -96,6 +110,11 @@ In talk to the customer mode, Connect Customer passes the conversation history a
 Connect Customer doesn't pass custom contact attributes to external collaborators. You can't choose which context is shared. For details about what the external agent receives, see [Build an external AI agent server](a2a-external-server.md).
 
 In talk to the customer mode, the collaborator also builds its own conversation history with the customer for the duration of its turn. When the collaborator finishes and control returns to your Connect AI agent, Connect Customer merges the collaborator's conversation history into your Connect AI agent's session. Your Connect AI agent then has context about what happened during the collaboration.
+
+In agent assistance, the following also applies:
++ The conversation history that Connect Customer sends to the collaborator is what appears in the Connect assistant panel: the human agent's messages and the AI agents' replies. It doesn't include the customer's conversation with the human agent.
++ The history includes only what appeared in the panel. It doesn't include anything the collaborator looked up behind the scenes, such as tool calls and their results. If the collaborator needs that information later in the conversation, the collaborator must store it.
++ When the collaborator handles actions behind the scenes, it receives only the request that the orchestrator writes for it. Use the collaborator's instruction to say what that request must include, such as the customer's name.
 
 ## Voice contacts in talk-to-the-customer mode
 <a name="a2a-how-it-works-voice-contacts"></a>

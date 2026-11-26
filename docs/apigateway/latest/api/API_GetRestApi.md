@@ -131,7 +131,7 @@ Type: String
  ** [securityPolicy](#API_GetRestApi_ResponseSyntax) **   <a name="apigw-GetRestApi-response-securityPolicy"></a>
  The Transport Layer Security (TLS) version \+ cipher suite for this RestApi.
 Type: String
-Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
+Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
 
  ** [tags](#API_GetRestApi_ResponseSyntax) **   <a name="apigw-GetRestApi-response-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
@@ -289,7 +289,6 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160601/us-east-1/ap
   "createdDate": "2016-04-05T19:58:27Z",
   "description": "Your first API with Amazon API Gateway. This is a sample API that integrates via HTTP with our demo Pet Store endpoints",
   "id": "0n1anifwvf",
-  "rootResourceId" : "1abcd23e4f",
   "name": "PetStore"
 }
 ```

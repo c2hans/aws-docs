@@ -21,6 +21,6 @@ This section covers how to interact with Amazon Bedrock programmatically. For ne
 + [Making inference requests](inference.md)
 + [Use a tool to complete an Amazon Bedrock model response](tool-use.md)
 + [Web Search](web-search.md)
-+ [Projects (OpenAI-compatible)](projects.md)
-+ [Workspaces (Anthropic-compatible)](workspaces.md)
++ [Projects](projects.md)
++ [Projects and workspaces on the bedrock-mantle endpoint](workspaces.md)
 + [API keys](api-keys.md)

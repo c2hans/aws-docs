@@ -11,7 +11,7 @@ To help you manage your Image Builder resources, you can assign your own metadat
 For more information about tagging your resources using Image Builder commands in the AWS CLI, see the [Tag resources](tag-resources.md) section of this guide.
 
 **Tip**
-Now you can create with AI. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).
+Now you can create with AI. For more information, see [Creating and updating resources with AI](ai-assisted-resource-creation.md).
 
 **Topics**
 + [Manage recipes in Image Builder](manage-recipes.md)

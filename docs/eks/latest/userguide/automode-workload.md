@@ -28,13 +28,15 @@ First, use `kubectl` to list the node pools on your cluster.
 kubectl get nodepools
 ```
 
-Sample Output:
+Sample output:
 
 ```shell
-general-purpose
+NAME              NODECLASS   NODES   READY   AGE
+general-purpose   default     0       True    5m
+system            default     0       True    5m
 ```
 
-In this tutorial, we will deploy a workload configured to use the `general-purpose` node pool. This node pool is built into EKS Auto Mode, and includes reasonable defaults for general workloads, such as microservices and web apps. You can create your own node pool. For more information, see [Create a Node Pool for EKS Auto Mode](create-node-pool.md).
+In this tutorial, you deploy a workload configured to use the `general-purpose` node pool. This node pool is built into EKS Auto Mode, and includes reasonable defaults for general workloads, such as microservices and web apps. You can create your own node pool. For more information, see [Create a Node Pool for EKS Auto Mode](create-node-pool.md).
 
 Second, use `kubectl` to list the nodes connected to your cluster.
 

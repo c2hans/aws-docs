@@ -200,10 +200,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** collector.continuum.amazonaws.com / **Access level:** Write
 
 - **   UpdateEnvironment  **
-  - **IAM action:**  [continuum:UpdateEnvironment](#list_continuum-action-UpdateEnvironment)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [continuum:UpdateEnvironment](#list_continuum-action-UpdateEnvironment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** continuum.amazonaws.com / **Access level:** Write
 
 - **   UpdateIntegration  **
   - **IAM action:**  [continuum:UpdateIntegration](#list_continuum-action-UpdateIntegration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

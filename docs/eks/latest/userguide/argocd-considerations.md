@@ -202,19 +202,37 @@ kubectl apply -f cluster-secret.yaml
 ### Configure Access Entry on target cluster
 <a name="_configure_access_entry_on_target_cluster"></a>
 
-The target cluster must have an Access Entry that grants the Argo CD capability role permission to deploy applications. Replace {{region-code}} with the AWS Region that your target cluster is in, replace {{target-cluster}} with the name of your target cluster, and replace the ARN with your Argo CD capability role ARN.
+The target cluster must have an access entry for the Argo CD capability role, with an access policy that grants the role permission to deploy applications. Replace {{region-code}} with the AWS Region that your target cluster is in, replace {{target-cluster}} with the name of your target cluster, and replace the ARN with your Argo CD capability role ARN.
+
+#### Step 1: Create the access entry
+<a name="_step_1_create_the_access_entry"></a>
+
+The access entry lets the Argo CD capability role authenticate to the target cluster. It grants no Kubernetes permissions until you associate an access policy in the next step. Run the following command to create the access entry.
 
 ```bash
 aws eks create-access-entry \
   --region {{region-code}} \
   --cluster-name {{target-cluster}} \
   --principal-arn {{arn:aws:iam::111122223333:role/ArgoCDCapabilityRole}} \
-  --type STANDARD \
-  --kubernetes-groups system:masters
+  --type STANDARD
 ```
 
-**Note**
-For production use, consider using more restrictive Kubernetes groups instead of `system:masters`.
+#### Step 2: Associate the cluster admin access policy
+<a name="_step_2_associate_the_cluster_admin_access_policy"></a>
+
+Associating the `AmazonEKSClusterAdminPolicy` policy grants the Argo CD role cluster-wide admin access. Run the following command to apply this policy.
+
+**Important**
+ `AmazonEKSClusterAdminPolicy` provides full cluster-admin access. Use it to get started, not in production. For production use, we recommend granting narrower permissions. You can associate `AmazonEKSAdminPolicy` or `AmazonEKSEditPolicy` scoped to specific namespaces (`--access-scope type=namespace,namespaces={{namespace-name}} `), or add Kubernetes groups to the access entry and bind them to your own `Role` or `ClusterRole` objects. Namespace-scoped policies don’t allow creating namespaces or CRDs, so Applications that create them fail to sync.
+
+```bash
+aws eks associate-access-policy \
+  --region {{region-code}} \
+  --cluster-name {{target-cluster}} \
+  --principal-arn {{arn:aws:iam::111122223333:role/ArgoCDCapabilityRole}} \
+  --policy-arn arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy \
+  --access-scope type=cluster
+```
 
 ### Private cluster access
 <a name="_private_cluster_access"></a>

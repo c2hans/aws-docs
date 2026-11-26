@@ -118,8 +118,8 @@ for event in response["events"]:
 <a name="batch-eval-interpreting-scores"></a>
 
 Batch evaluation scores follow the same conventions as on-demand evaluation:
-+  **Numeric scores** (`value`): Range depends on the evaluator. Most built-in evaluators score from 0 to 1, where higher is better.
-+  **Labels** (`label`): Categorical descriptions of the score. For example, `Builtin.Helpfulness` returns labels like `Very Helpful`, `Somewhat Helpful`, `Not Helpful`.
++  **Numeric scores** (`value`): Range depends on the evaluator. Most built-in evaluators score from 0 to 1, where higher is better. For `Builtin.Refusal` and `Builtin.FailureAnalysis`, a higher score is worse. For `Builtin.Refusal`, `1.0` means that the agent refused. For `Builtin.FailureAnalysis`, `1.0` means that the session had failures.
++  **Labels** (`label`): Categorical descriptions of the score. For example, `Builtin.Helpfulness` returns labels such as `Very Helpful`, `Somewhat Helpful`, and `Not Helpful`.
 
 ## Error handling
 <a name="batch-eval-error-handling"></a>

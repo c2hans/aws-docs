@@ -46,6 +46,7 @@ Static capacity node pools have several important constraints and behaviors:
  **Disruption management:**
 + Configure appropriate disruption budgets to balance availability with maintenance operations.
 + Consider your application’s tolerance for node replacement when setting budget percentages.
++ Include `consolidateAfter` whenever you set `disruption`. The NodePool schema requires the field, and static capacity node pools ignore its value.
 
  **Monitoring:**
 + Regularly monitor the `status.nodes` field to ensure your desired capacity is maintained.
@@ -173,6 +174,8 @@ spec:
     nodes: 25
 
   disruption:
+    # Required by the schema. Ignored when replicas is set.
+    consolidateAfter: 0s
     # Conservative disruption for production workloads
     budgets:
       - nodes: 10%
@@ -217,6 +220,8 @@ spec:
     nodes: 15
 
   disruption:
+    # Required by the schema. Ignored when replicas is set.
+    consolidateAfter: 0s
     budgets:
       - nodes: 25%
 ```

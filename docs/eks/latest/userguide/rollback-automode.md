@@ -63,15 +63,12 @@ NodePool disruption budgets control how many nodes can be disrupted simultaneous
 + A budget of `nodes: 0` for drift blocks rollback indefinitely. This triggers an ERROR insight.
 + A restrictive budget (for example, `nodes: 1`) slows rollback but allows forward progress.
 
-Example NodePool with a disruption budget that allows 10% of nodes to be replaced at a time:
+The following YAML excerpt from a NodePool sets a disruption budget that allows 10% of nodes to be replaced at a time for drift. The NodePool schema requires `consolidateAfter` whenever you set `disruption`.
 
 ```yaml
-apiVersion: karpenter.sh/v1
-kind: NodePool
-metadata:
-  name: default
 spec:
   disruption:
+    consolidateAfter: 0s
     budgets:
       - nodes: "10%"
         reasons:

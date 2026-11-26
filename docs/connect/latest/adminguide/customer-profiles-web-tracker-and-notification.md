@@ -41,9 +41,9 @@ The **Advanced Data Collection** automatically captures common website interacti
 
 | **Visitor activity** | **Capture mode** | **What is captured** |
 | --- | --- | --- |
-| Clicks | Automatic | Links and buttons clicked, including the element text and destination URL. |
+| Clicks | Automatic | The tracker captures links and buttons clicked, including the element text, destination URL, and surrounding context of the element (human-readable text processed from its surrounding HTML). |
 | Searches | Automatic | Search queries entered on your site through standard search input fields. |
-| Form submissions | Automatic | When forms are submitted. Form field values, passwords, and payment information are never captured. |
+| Form submissions | Automatic | The tracker captures form field keys and values when forms are submitted. It never captures secret or sensitive information, such as passwords and payment information. |
 
 ## Common use cases
 <a name="web-notification-use-cases"></a>

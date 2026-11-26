@@ -44,4 +44,4 @@ Of the API operations discussed in this guide, the following will prove the most
 +  [GenerateDataKey](API_GenerateDataKey.md)
 +  [GenerateDataKeyWithoutPlaintext](API_GenerateDataKeyWithoutPlaintext.md)
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

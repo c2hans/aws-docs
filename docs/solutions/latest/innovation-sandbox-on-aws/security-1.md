@@ -16,14 +16,14 @@ IAM roles allow customers to assign granular access policies and permissions to 
 
 AWS IAM Identity Center provides a central way to manage access to multiple AWS accounts and business applications using SAML 2.0-based authentication. The solution uses an Amazon Cognito user pool federated to IAM Identity Center as the SAML service provider. You sign in to the web UI with your existing corporate credentials, so you don’t need to manage separate accounts or passwords. After sign-in, the web UI obtains temporary IAM credentials from a Cognito identity pool and signs API requests with those credentials. You do not manage any long-lived application secrets for authentication.
 
-The solution API can also be accessed programmatically; for details, see [Programmatic access (machine-to-machine)](m2m-access.md).
+For more information about accessing the solution API programmatically, see [Machine-to-machine (M2M) access](m2m-access.md).
 
 ## AWS Key Management Service
 <a name="kms"></a>
 
-This solution creates four KMS Customer Managed Keys (one for each stack - AccountPool, IDC, Data, and Compute) to encrypt various AWS resources. The encrypted services include Amazon CloudWatch Logs, Amazon Simple Queue Service (SQS) queues, Amazon EventBridge event buses, AWS Secrets Manager secrets, AWS CodeBuild projects, and Amazon DynamoDB tables.
+This solution creates four AWS KMS customer managed keys (one for each stack - AccountPool, IDC, Data, and Compute) to encrypt various AWS resources. The encrypted services include Amazon CloudWatch Logs, Amazon Simple Queue Service (SQS) queues, Amazon EventBridge event buses, AWS Secrets Manager secrets, AWS CodeBuild projects, Amazon DynamoDB tables, and the Amazon SNS notification integration topic.
 
-Each CMK is specifically tailored to its stack’s requirements, with appropriate key policies that grant necessary permissions to relevant services and IAM roles. This approach of using separate CMKs per stack follows the principle of separation of concerns and allows for more granular control over encryption permissions across different components of the solution.
+Each key is specifically tailored to its stack’s requirements, with appropriate key policies that grant necessary permissions to relevant services and IAM roles. This approach of using separate keys per stack follows the principle of separation of concerns and allows for more granular control over encryption permissions across different components of the solution.
 
 ## AWS WAF
 <a name="waf"></a>
@@ -50,6 +50,11 @@ This solution uses the default CloudFront certificate which has a minimum suppor
 <a name="amazon-dynamodb"></a>
 
 All user data stored in Amazon DynamoDB is encrypted at rest using customer managed keys (CMK) stored in AWS KMS.
+
+## Amazon SNS integration topic
+<a name="amazon-sns-security"></a>
+
+The notification integration topic carries every notification the solution publishes, including recipients' email addresses. The topic is encrypted with the Compute stack’s KMS key. Its access policy grants no access to other accounts and denies publish requests that don’t use TLS, so principals in the Hub account need IAM permissions to use it. The solution creates no subscriptions and grants `sns:Subscribe` to none of its roles. Grant permission to subscribe only to principals that need the full notification stream. For more information, see [Security and delivery](notification-integration.md#notification-integration-security).
 
 ## AWS Lambda
 <a name="aws-lambda"></a>

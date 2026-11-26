@@ -349,6 +349,7 @@ The following actions are supported by Amazon SageMaker Service:
 +  [ListUserProfiles](API_ListUserProfiles.md)
 +  [ListWorkforces](API_ListWorkforces.md)
 +  [ListWorkteams](API_ListWorkteams.md)
++  [MoveClusterNodes](API_MoveClusterNodes.md)
 +  [PutEndpointPolicy](API_PutEndpointPolicy.md)
 +  [PutModelPackageGroupPolicy](API_PutModelPackageGroupPolicy.md)
 +  [QueryLineage](API_QueryLineage.md)
@@ -453,6 +454,10 @@ The following actions are supported by Amazon SageMaker Feature Store Runtime:
 +  [ListRecords](API_feature_store_ListRecords.md)
 +  [PutRecord](API_feature_store_PutRecord.md)
 +  [UpdateRecord](API_feature_store_UpdateRecord.md)
+
+The following actions are supported by Amazon SageMaker Gateway Runtime:
++  [InvokeGlobalInferenceGateway](API_gateway_runtime_InvokeGlobalInferenceGateway.md)
++  [InvokeGlobalInferenceGatewayWithResponseStream](API_gateway_runtime_InvokeGlobalInferenceGatewayWithResponseStream.md)
 
 The following actions are supported by Amazon SageMaker geospatial capabilities:
 +  [DeleteEarthObservationJob](API_geospatial_DeleteEarthObservationJob.md)

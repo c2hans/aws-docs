@@ -23,6 +23,7 @@ AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS r
 + Amazon CloudFront distribution
 + Amazon API Gateway REST API
 + Application Load Balancer
++ Elastic Load Balancing for Envoy proxy
 + AWS AppSync GraphQL API
 + Amazon Cognito user pool
 + AWS App Runner service
@@ -33,7 +34,7 @@ AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS r
 AWS WAF lets you control access to your content. Based on conditions that you specify, such as the IP addresses that requests originate from or the values of query strings, your protected resource responds to requests either with the requested content, with an HTTP 403 status code (Forbidden), or with a custom response.
 
 At the simplest level, AWS WAF lets you choose one of the following behaviors:
-+ **Allow all requests except the ones that you specify** – This is useful when you want Amazon CloudFront, Amazon API Gateway, Application Load Balancer, AWS AppSync, Amazon Cognito, AWS App Runner, Amazon Bedrock AgentCore Gateway, or AWS Verified Access to serve content for a public website, but you also want to block requests from attackers.
++ **Allow all requests except the ones that you specify** – This is useful when you want Amazon CloudFront, Amazon API Gateway, Application Load Balancer, Elastic Load Balancing for Envoy, AWS AppSync, Amazon Cognito, AWS App Runner, Amazon Bedrock AgentCore Gateway, or AWS Verified Access to serve content for a public website, but you also want to block requests from attackers.
 + **Block all requests except the ones that you specify** – This is useful when you want to serve content for a restricted website whose users are readily identifiable by properties in web requests, such as the IP addresses that they use to browse to the website.
 + **Count requests that match your criteria** – You can use the Count action to track your web traffic without modifying how you handle it. You can use this for general monitoring and also to test your new web request handling rules. When you want to allow or block requests based on new properties in the web requests, you can first configure AWS WAF to count the requests that match those properties. This lets you confirm your new configuration settings before you switch your rules to allow or block matching requests.
 + **Run CAPTCHA or challenge checks against requests that match your criteria** – You can implement CAPTCHA and silent challenge controls against requests to help reduce bot traffic to your protected resources.

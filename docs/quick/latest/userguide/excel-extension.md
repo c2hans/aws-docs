@@ -13,7 +13,7 @@ The Excel extension enables users to:
 + Automate spreadsheet operations such as formatting and applying filters and transformations.
 + Apply Excel functions and build and decode complex workbooks.
 
-The Quick Excel extension is available within AWS Quick to all eligible users by default and requires no administrative setup for user access if users can access the Microsoft Excel app store. Users can search for AWS Quick in the Microsoft Excel app store or visit the [Quick for Excel Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010611) to add the extension.
+All users can install the AWS Quick Excel extension without administrative setup if they can access the Microsoft Excel app store. Users can search for AWS Quick in the Microsoft Excel app store or visit the [Quick for Excel Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010611) to add the extension.
 
 **Important**
 The AWS Quick Excel extension uses generative AI to create and execute code within your Excel application sandbox to help you perform tasks within Excel. AI can make mistakes and perform inaccurate actions within your Excel workbook.

@@ -31,7 +31,7 @@ Before you use the Troubleshoot feature, make sure that the IAM user or role tha
 
 For more information about IAM policies, see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
 
-The Create with AI feature uses the same permissions and agent space. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).
+The Create with AI feature uses the same permissions and agent space. For more information, see [Creating and updating resources with AI](ai-assisted-resource-creation.md).
 
 ## Set up troubleshooting
 <a name="devops-agent-troubleshooting-setup"></a>

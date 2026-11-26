@@ -85,7 +85,7 @@ Locales marked with an asterisk (\*) have limited feature support through genera
 
 **Generative AI feature support**
 
-Generative AI feature support includes [Assisted NLU](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-nlu.html) in Primary Mode, [Assisted Slot Resolution](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-slot.html), and [Intent Disambiguation](https://docs.aws.amazon.com/lexv2/latest/dg/generative-intent-disambiguation.html).
+Generative AI feature support includes [assisted NLU](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-nlu.html) in Primary Mode, [Assisted Slot Resolution](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-slot.html), and [Intent Disambiguation](https://docs.aws.amazon.com/lexv2/latest/dg/generative-intent-disambiguation.html).
 
 ## Languages and locales supported by Amazon Lex V2 features
 <a name="language-features"></a>

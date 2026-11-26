@@ -411,6 +411,39 @@ The `AmazonS3ReadOnlyAccess` policy grants read access to all S3 buckets. To con
 
 We recommend that you install the Amazon EFS CSI driver through the Amazon EKS add-on. To add an Amazon EKS add-on to your cluster, see [Create an Amazon EKS add-on](creating-an-add-on.md). For more information about add-ons, see [Amazon EKS add-ons](eks-add-ons.md). If you’re unable to use the Amazon EKS add-on, we encourage you to submit an issue about why you can’t to the [Containers roadmap GitHub repository](https://github.com/aws/containers-roadmap/issues).
 
+**Note**
+If you use IAM roles for service accounts, each of the driver’s service accounts must be annotated with its own IAM role from Step 1:
+If you created the roles with the `eksctl` commands in Step 1, `eksctl` already annotated the `efs-csi-controller-sa` and `efs-csi-node-sa` service accounts. Leave the **Service account role** field empty when you create the Amazon EKS add-on.
+If you created the roles in the AWS Management Console or with the AWS CLI, set both annotations in the add-on’s configuration values. Enter them under **Optional configuration settings** in the console, or pass them with the `--configuration-values` option of the `aws eks create-addon` command. Replace `<111122223333>` with your account ID.
+
+  ```json
+  {
+    "controller": {
+      "serviceAccount": {
+        "annotations": {
+          "eks.amazonaws.com/role-arn": "arn:aws:iam::<111122223333>:role/AmazonEKS_EFS_CSI_ControllerRole"
+        }
+      }
+    },
+    "node": {
+      "serviceAccount": {
+        "annotations": {
+          "eks.amazonaws.com/role-arn": "arn:aws:iam::<111122223333>:role/AmazonEKS_EFS_CSI_NodeRole"
+        }
+      }
+    }
+  }
+  ```
+Don’t use the **Service account role** field or the `--service-account-role-arn` option. The add-on applies that single role to both service accounts, which replaces the node role.
+For a self-managed installation, annotate both service accounts with their respective role ARNs, as described in the driver [installation documentation](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/docs/install.md#set-up-driver-permission) on GitHub.
+If you add the annotations after the driver is already installed, restart the driver’s Pods for the change to take effect:
+
+  ```bash
+  kubectl rollout restart deployment efs-csi-controller -n kube-system
+  kubectl rollout restart daemonset efs-csi-node -n kube-system
+  ```
+If you use EKS Pod Identities, you don’t need to annotate the service accounts.
+
 **Important**
 Before adding the Amazon EFS driver as an Amazon EKS add-on, confirm that you don’t have a self-managed version of the driver installed on your cluster. If so, see [Uninstalling the Amazon EFS CSI Driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/docs/install.md#uninstalling-the-amazon-efs-csi-driver) on GitHub.
 

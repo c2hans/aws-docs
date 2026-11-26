@@ -10,7 +10,7 @@ Represents a domain name access association between an access association source
 <a name="API_DomainNameAccessAssociation_Contents"></a>
 
  ** accessAssociationSource **   <a name="apigw-Type-DomainNameAccessAssociation-accessAssociationSource"></a>
- The identifier of the domain name access association source. For a VPCE, the value is the VPC endpoint ID.
+ The ARN of the domain name access association source. For a VPCE, the ARN must be a VPC endpoint.
 Type: String
 Required: No
 

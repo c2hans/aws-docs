@@ -15,13 +15,22 @@ Type: String
 Valid Values: `on | off`
 Required: No
 
+ ** ClientCertificateIdentityFilters.member.N **
+[Network Load Balancers] The client certificate identity filters. The load balancer admits a connection only if the client certificate matches at least one filter. If you don't specify any filters, the load balancer admits every client certificate that passes trust store validation and revocation checks.
+You can specify filters only when the mode is `verify`. You can specify up to 100 filters per listener.
+Type: Array of [ClientCertificateIdentityFilter](API_ClientCertificateIdentityFilter.md) objects
+Array Members: Maximum number of 100 items.
+Required: No
+
  ** IgnoreClientCertificateExpiry **
 Indicates whether expired client certificates are ignored.
 Type: Boolean
 Required: No
 
  ** Mode **
-The client certificate handling method. Options are `off`, `passthrough` or `verify`. The default value is `off`.
+The client certificate handling method. The default value is `off`.
+[Application Load Balancers] The possible values are `off`, `passthrough`, and `verify`.
+[Network Load Balancers] The possible values are `off` and `verify`.
 Type: String
 Required: No
 

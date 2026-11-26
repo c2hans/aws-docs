@@ -88,7 +88,7 @@ The following table lists the minimum CoreDNS Add-on version required for each K
 
       1. Expand the **Optional configuration settings**.
 
-      1. Enter the JSON key `"autoscaling":` and value of a nested JSON object with a key `"enabled":` and value `true` in **Configuration values**. The resulting text must be a valid JSON object. If this key and value are the only data in the text box, surround the key and value with curly braces `{ }`. The following example shows autoscaling is enabled:
+      1. Enter the JSON key `"autoScaling":` and value of a nested JSON object with a key `"enabled":` and value `true` in **Configuration values**. The resulting text must be a valid JSON object. If this key and value are the only data in the text box, surround the key and value with curly braces `{ }`. The following example shows autoscaling is enabled:
 
          ```json
          {
@@ -124,26 +124,13 @@ The following table lists the minimum CoreDNS Add-on version required for each K
          }
          ```
 
-   1. To apply the new configuration by replacing the CoreDNS pods, choose **Save changes**.
+   1. To apply the new configuration, choose **Save changes**.
 
-      Amazon EKS applies changes to the EKS Add-ons by using a *rollout* of the Kubernetes Deployment for CoreDNS. You can track the status of the rollout in the **Update history** of the add-on in the AWS Management Console and with `kubectl rollout status deployment/coredns --namespace kube-system`.
+      When the update changes only the `autoScaling` settings, Amazon EKS doesn’t restart the existing CoreDNS pods. Amazon EKS changes only the number of replicas in the CoreDNS Deployment, and the pod template stays the same. If the same update also changes other configuration values or the add-on version, Amazon EKS rolls out the CoreDNS Deployment and replaces its pods.
 
-       `kubectl rollout` has the following commands:
+      You can track the update in the **Update history** of the add-on in the AWS Management Console. If the update fails, an entry with the type **Addon Update** and a status of **Failed** appears in the **Update history**. To see the health issues that Amazon EKS reports for the add-on, run `aws eks describe-addon --cluster-name my-cluster --addon-name coredns --query addon.health`, replacing `my-cluster` with the name of your cluster.
 
-      ```shell
-      kubectl rollout
-
-      history  -- View rollout history
-      pause    -- Mark the provided resource as paused
-      restart  -- Restart a resource
-      resume   -- Resume a paused resource
-      status   -- Show the status of the rollout
-      undo     -- Undo a previous rollout
-      ```
-
-      If the rollout takes too long, Amazon EKS will undo the rollout, and a message with the type of **Addon Update** and a status of **Failed** will be added to the **Update history** of the add-on. To investigate any issues, start from the history of the rollout, and run `kubectl logs` on a CoreDNS pod to see the logs of CoreDNS.
-
-1. If the new entry in the **Update history** has a status of **Successful**, then the rollout has completed and the add-on is using the new configuration in all of the CoreDNS pods. As you change the number of nodes and CPU cores of nodes in the cluster, Amazon EKS scales the number of replicas of the CoreDNS deployment.
+1. If the new entry in the **Update history** has a status of **Successful**, then the add-on is using the new autoscaling configuration. As you change the number of nodes and CPU cores of nodes in the cluster, Amazon EKS scales the number of replicas of the CoreDNS deployment.
 
 ### Configuring CoreDNS autoscaling in the AWS Command Line Interface
 <a name="coredns-autoscaling-cli"></a>
@@ -183,22 +170,9 @@ The following table lists the minimum CoreDNS Add-on version required for each K
        --resolve-conflicts PRESERVE --configuration-values '{"autoScaling":{"enabled":true}}'
    ```
 
-   Amazon EKS applies changes to the EKS Add-ons by using a *rollout* of the Kubernetes Deployment for CoreDNS. You can track the status of the rollout in the **Update history** of the add-on in the AWS Management Console and with `kubectl rollout status deployment/coredns --namespace kube-system`.
+   When the update changes only the `autoScaling` settings, Amazon EKS doesn’t restart the existing CoreDNS pods. Amazon EKS changes only the number of replicas in the CoreDNS Deployment, and the pod template stays the same. If the same update also changes other configuration values or the add-on version, Amazon EKS rolls out the CoreDNS Deployment and replaces its pods.
 
-    `kubectl rollout` has the following commands:
-
-   ```shell
-   kubectl rollout
-
-   history  -- View rollout history
-   pause    -- Mark the provided resource as paused
-   restart  -- Restart a resource
-   resume   -- Resume a paused resource
-   status   -- Show the status of the rollout
-   undo     -- Undo a previous rollout
-   ```
-
-   If the rollout takes too long, Amazon EKS will undo the rollout, and a message with the type of **Addon Update** and a status of **Failed** will be added to the **Update history** of the add-on. To investigate any issues, start from the history of the rollout, and run `kubectl logs` on a CoreDNS pod to see the logs of CoreDNS.
+   You can track the update in the **Update history** of the add-on in the AWS Management Console. If the update fails, an entry with the type **Addon Update** and a status of **Failed** appears in the **Update history**. To see the health issues that Amazon EKS reports for the add-on, run `aws eks describe-addon --cluster-name my-cluster --addon-name coredns --query addon.health`, replacing `my-cluster` with the name of your cluster.
 
 1. (Optional) You can provide minimum and maximum values that autoscaling can scale the number of CoreDNS pods to.
 
@@ -222,4 +196,4 @@ The following table lists the minimum CoreDNS Add-on version required for each K
    aws eks describe-addon --cluster-name my-cluster --addon-name coredns
    ```
 
-   If you see this line: `"status": "ACTIVE"`, then the rollout has completed and the add-on is using the new configuration in all of the CoreDNS pods. As you change the number of nodes and CPU cores of nodes in the cluster, Amazon EKS scales the number of replicas of the CoreDNS deployment.
+   If you see this line: `"status": "ACTIVE"`, then the add-on is using the new autoscaling configuration. As you change the number of nodes and CPU cores of nodes in the cluster, Amazon EKS scales the number of replicas of the CoreDNS deployment.

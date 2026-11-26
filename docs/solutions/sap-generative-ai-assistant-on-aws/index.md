@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/sap-generative-ai-assistant-on
 title: 'Guidance for SAP Generative AI Assistant on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/sap-generative-ai-assistant-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for SAP Generative AI Assistant on AWS

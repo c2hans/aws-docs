@@ -410,9 +410,11 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to associate a WebACL with a resource
   - **Resource types (\*required):** [agentcore-gateway](#list_wafv2-resource-agentcore-gateway) / **Condition keys:**
   - **Resource types (\*required):** [amplify-app](#list_wafv2-resource-amplify-app) / **Condition keys:**
+  - **Resource types (\*required):** [amplifygen3-app](#list_wafv2-resource-amplifygen3-app) / **Condition keys:**
   - **Resource types (\*required):** [apigateway](#list_wafv2-resource-apigateway) / **Condition keys:**
   - **Resource types (\*required):** [apprunner](#list_wafv2-resource-apprunner) / **Condition keys:**
   - **Resource types (\*required):** [appsync](#list_wafv2-resource-appsync) / **Condition keys:**
+  - **Resource types (\*required):** [elb-proxy](#list_wafv2-resource-elb-proxy) / **Condition keys:**
   - **Resource types (\*required):** [loadbalancer/app/](#list_wafv2-resource-loadbalancer_app_) / **Condition keys:**
   - **Resource types (\*required):** [userpool](#list_wafv2-resource-userpool) / **Condition keys:**
   - **Resource types (\*required):** [verified-access-instance](#list_wafv2-resource-verified-access-instance) / **Condition keys:**
@@ -529,9 +531,11 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to disassociate a WebACL from an application resource
   - **Resource types (\*required):** [agentcore-gateway](#list_wafv2-resource-agentcore-gateway) / **Condition keys:**
   - **Resource types (\*required):** [amplify-app](#list_wafv2-resource-amplify-app) / **Condition keys:**
+  - **Resource types (\*required):** [amplifygen3-app](#list_wafv2-resource-amplifygen3-app) / **Condition keys:**
   - **Resource types (\*required):** [apigateway](#list_wafv2-resource-apigateway) / **Condition keys:**
   - **Resource types (\*required):** [apprunner](#list_wafv2-resource-apprunner) / **Condition keys:**
   - **Resource types (\*required):** [appsync](#list_wafv2-resource-appsync) / **Condition keys:**
+  - **Resource types (\*required):** [elb-proxy](#list_wafv2-resource-elb-proxy) / **Condition keys:**
   - **Resource types (\*required):** [loadbalancer/app/](#list_wafv2-resource-loadbalancer_app_) / **Condition keys:**
   - **Resource types (\*required):** [userpool](#list_wafv2-resource-userpool) / **Condition keys:**
   - **Resource types (\*required):** [verified-access-instance](#list_wafv2-resource-verified-access-instance) / **Condition keys:**
@@ -649,9 +653,11 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve the WebACL that's associated with a resource
   - **Resource types (\*required):** [agentcore-gateway](#list_wafv2-resource-agentcore-gateway) / **Condition keys:**
   - **Resource types (\*required):** [amplify-app](#list_wafv2-resource-amplify-app) / **Condition keys:**
+  - **Resource types (\*required):** [amplifygen3-app](#list_wafv2-resource-amplifygen3-app) / **Condition keys:**
   - **Resource types (\*required):** [apigateway](#list_wafv2-resource-apigateway) / **Condition keys:**
   - **Resource types (\*required):** [apprunner](#list_wafv2-resource-apprunner) / **Condition keys:**
   - **Resource types (\*required):** [appsync](#list_wafv2-resource-appsync) / **Condition keys:**
+  - **Resource types (\*required):** [elb-proxy](#list_wafv2-resource-elb-proxy) / **Condition keys:**
   - **Resource types (\*required):** [loadbalancer/app/](#list_wafv2-resource-loadbalancer_app_) / **Condition keys:**
   - **Resource types (\*required):** [userpool](#list_wafv2-resource-userpool) / **Condition keys:**
   - **Resource types (\*required):** [verified-access-instance](#list_wafv2-resource-verified-access-instance) / **Condition keys:**
@@ -728,7 +734,9 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve an array of the Amazon Resource Names (ARNs) for the resources that are associated with a web ACL
   - **Resource types (\*required):** [agentcore-gateway](#list_wafv2-resource-agentcore-gateway) / **Condition keys:**
   - **Resource types (\*required):** [amplify-app](#list_wafv2-resource-amplify-app) / **Condition keys:**
+  - **Resource types (\*required):** [amplifygen3-app](#list_wafv2-resource-amplifygen3-app) / **Condition keys:**
   - **Resource types (\*required):** [apprunner](#list_wafv2-resource-apprunner) / **Condition keys:**
+  - **Resource types (\*required):** [elb-proxy](#list_wafv2-resource-elb-proxy) / **Condition keys:**
   - **Resource types (\*required):** [userpool](#list_wafv2-resource-userpool) / **Condition keys:**
   - **Resource types (\*required):** [verified-access-instance](#list_wafv2-resource-verified-access-instance) / **Condition keys:**
   - **Resource types (\*required):** [webacl\*](#list_wafv2-resource-webacl) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_wafv2-aws_ResourceTag___TagKey_)
@@ -872,9 +880,11 @@ The following resource types are defined by this service and can be used in the 
 | --- | --- | --- |
 |  [agentcore-gateway](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:bedrock-agentcore:${Region}:${Account}:gateway/${GatewayId} |   |
 |  [amplify-app](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId} |   |
+|  [amplifygen3-app](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:amplifygen3:${Region}:${Account}:app/${AppName} |   |
 |  [apigateway](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:apigateway:${Region}::/restapis/${ApiId}/stages/${StageName} |   |
 |  [apprunner](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:apprunner:${Region}:${Account}:service/${ServiceName}/${ServiceId} |   |
 |  [appsync](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId} |   |
+|  [elb-proxy](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:proxy/${ProxyName}:${ProxyId} |   |
 |  [ipset](https://docs.aws.amazon.com/waf/latest/APIReference/API_IPSet.html)  | arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/ipset/${Name}/${Id} | [aws:ResourceTag/${TagKey}](#list_wafv2-aws_ResourceTag___TagKey_) |
 |  [loadbalancer/app/](https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId} |   |
 |  [managedruleset](https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleSet.html)  | arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/managedruleset/${Name}/${Id} |   |

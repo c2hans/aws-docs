@@ -63,15 +63,15 @@ You must reboot the DB instance to apply these parameter changes.
 1. **Create a subscription from logical replica instance** – Create another RDS for PostgreSQL DB instance as the logical replica instance. Make sure that VPC is setup correctly to ensure that this logical replica instance can access the physical read replica instance. For more information, see [Amazon VPC and Amazon RDS](USER_VPC.md). If your source DB instance is idle, connectivity issues might occur and the primary doesn't send the data to the read replica.
 
    ```
+   Postgres=>CREATE TABLE LR_test (a int PRIMARY KEY);
+   CREATE TABLE
+   ```
+
+   ```
    Postgres=>CREATE SUBSCRIPTION testsub CONNECTION 'host={{Physical replica host name}} port={{port}}
                    dbname={{source_db_name}} user={{user}} password={{password}}' PUBLICATION {{testpub;}}
    NOTICE:  created replication slot "testsub" on publisher
    CREATE SUBSCRIPTION
-   ```
-
-   ```
-   Postgres=>CREATE TABLE LR_test (a int PRIMARY KEY);
-   CREATE TABLE
    ```
 
    Use a SELECT query to verify the details of the subscription on the logical replica instance.

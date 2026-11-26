@@ -3171,6 +3171,12 @@ The following actions are defined by Amazon RDS but are not directly invocable t
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [DescribeSchemas](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrds.html)  **
+  - **Description:** Grants permission to return the database schema metadata of an RDS resource that is opted in to AWS Schema Catalog schema discovery
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [DisableInternetAccessGateway](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html)  **
   - **Description:** Grants permission to disable Internet Access Gateway for a DB cluster
   - **Resource types (\*required):** [cluster\*](#list_rds-resource-cluster)

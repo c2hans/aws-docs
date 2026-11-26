@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cognito/index.html
 title: 'Amazon Cognito Documentation'
 canonical_url: https://docs.aws.amazon.com/cognito/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Amazon Cognito Documentation

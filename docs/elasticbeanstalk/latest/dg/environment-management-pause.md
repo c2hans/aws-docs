@@ -15,7 +15,7 @@ The Elastic Beanstalk console displays this status. However, Elastic Beanstalk h
 **Note**
 Pausing doesn't stop charges for resources that exist independently of the environment's instances, such as a load balancer, an Elastic IP address that a single-instance environment keeps allocated, a coupled Amazon RDS database instance, or stored application versions and CloudWatch data. To stop the charges that pausing leaves in place, terminate the environment, which also deletes the AWS resources that Elastic Beanstalk created for it. Terminating doesn't delete your application versions or a retained database. It also keeps your CloudWatch Logs logs, unless log streaming is configured to delete them when the environment terminates. For more information, see [Terminate an Elastic Beanstalk environment](using-features.terminating.md).
 
-You can pause both load-balanced and single-instance environments. In either case, Elastic Beanstalk scales the environment to zero instances while it's paused. The two types differ only when you resume: a load-balanced environment resumes with the capacity you choose, while a single-instance environment always resumes with exactly one instance.
+You can pause both load-balanced and single-instance environments. In either case, Elastic Beanstalk scales the environment to zero instances while it's paused. The two types differ when you resume: a load-balanced environment resumes with the capacity you choose, while a single-instance environment always resumes with exactly one instance.
 
 ## Pausing an environment
 <a name="environment-management-pause-pausing"></a>
@@ -73,4 +73,4 @@ $ aws elasticbeanstalk update-environment --environment-id e-{{vdnftxubwq}} \
                     Namespace=aws:autoscaling:asg,OptionName=MaxSize,Value={{4}}
 ```
 
-This example applies to a load-balanced environment. A single-instance environment always resumes with one instance, so set both `MinSize` and `MaxSize` to `1`. Elastic Beanstalk overrides other values for a single-instance environment.
+This example applies to a load-balanced environment. A single-instance environment always resumes with one instance, so set both `MinSize` and `MaxSize` to `1`. Elastic Beanstalk overrides any other nonzero value you set for a single-instance environment.

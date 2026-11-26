@@ -80,12 +80,12 @@ After you choose **Done**, the console opens the intent editor. You can use the 
 
 1. Test the bot. Start the conversation with one of the sample utterances, such as "I would like to pick up flowers."
 
-## Enable NLU to Improve Understanding
+## Enabling assisted NLU
 <a name="enable-assisted-nlu"></a>
 
-Now that you have a working chatbot, let's enhance it with Assisted NLU to improve intent recognition and slot resolution. Assisted NLU uses Large Language Models (LLMs) to better understand user requests, even when they use different phrasing than your training examples.
+Now that you have a working chatbot, enhance it with assisted NLU to improve intent recognition and slot resolution. Assisted NLU uses Large Language Models (LLMs) to better understand user requests, even when they use different phrasing than your training examples.
 
-**To enable Assisted NLU**
+**To enable assisted NLU**
 
 1. In the Amazon Lex V2 console, navigate to your bot's settings.
 
@@ -95,14 +95,14 @@ Now that you have a working chatbot, let's enhance it with Assisted NLU to impro
 
 1. Choose **Save** to apply the changes.
 
-1. Build your bot again to apply the Assisted NLU enhancement.
+1. Build your bot again to apply the assisted NLU enhancement.
 
-**Test the Improvement:** Try these variations in your test console to see how Assisted NLU handles different phrasings:
+Test the improvement by trying these variations in your test console to see how assisted NLU handles different phrasings:
 + "I want to buy some roses" (should trigger OrderFlowers intent and capture FlowerType)
 + "Can I get flowers delivered tomorrow?" (should trigger OrderFlowers intent and capture PickupDate)
 + "I need tulips for pickup at 3 PM" (should trigger OrderFlowers intent and capture FlowerType and PickupTime)
 
-Notice how the chatbot can understand these natural variations without requiring you to add them as explicit sample utterances. This is powered by Assisted NLU, which uses AI to improve natural language understanding.
+Notice how the chatbot can understand these natural variations without requiring you to add them as explicit sample utterances. This is powered by assisted NLU, which uses AI to improve natural language understanding.
 
 ## Next steps
 <a name="getting-started-next-steps"></a>

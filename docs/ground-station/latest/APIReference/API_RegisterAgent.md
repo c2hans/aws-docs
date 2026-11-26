@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_R
 # RegisterAgent
 
 **Note**
- For use by AWS Ground Station Agent and shouldn't be called directly.
+For use by AWS Ground Station Agent and shouldn't be called directly.
 
- Registers a new agent with AWS Ground Station.
+Registers a new agent with AWS Ground Station.
 
 ## Request Syntax
 <a name="API_RegisterAgent_RequestSyntax"></a>

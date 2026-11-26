@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/generative-intent-disamb
 
 # Resolve ambiguous user inputs with Intent Disambiguation
 
-Intent Disambiguation is an improvement to Assisted NLU that helps resolve ambiguous user inputs when multiple intents could match. When enabled, the system presents clarifying questions to users, helping them specify their exact intent for improved conversation accuracy. The system uses a large language model (LLM) that analyzes the intent names and descriptions as context, and based on the ambiguity of the user utterance, returns the most likely matching intents. The LLM evaluates whether the user input clearly matches a single intent or multiple intents and is ambiguous enough to require disambiguation, then provides the candidate intents.
+Intent Disambiguation is an improvement to assisted NLU that helps resolve ambiguous user inputs when multiple intents could match. When enabled, the system presents clarifying questions to users, helping them specify their exact intent for improved conversation accuracy. The system uses a large language model (LLM) that analyzes the intent names and descriptions as context. Based on the ambiguity of the user utterance, it returns the most likely matching intents. The LLM evaluates whether the user input clearly matches a single intent or multiple intents and is ambiguous enough to require disambiguation, then provides the candidate intents.
 
 The Intent Disambiguation feature is available in English, Spanish, Portuguese, Catalan, French, Italian, German, Chinese, Japanese, and Korean locales. Specifically, it supports locales that begin with `en_`, `es_`, `pt_` (pt\_BR, pt\_PT), `ca_` (ca\_ES), `fr_` (fr\_CA, fr\_FR), `it_` (it\_IT), `de_` (de\_AT, de\_DE), `zh_` (zh\_CN, zh\_HK), `ja_JP`, and `ko_KR`. For the complete list of supported locales, see the table in [Languages and locales supported by Amazon Lex V2](how-languages.md).
 
@@ -33,7 +33,7 @@ Configure user-friendly display names for your intents to improve the disambigua
 
 1. On the **Bot Locale** page, click on **Configure** under the **Assisted NLU** section.
 
-1. Enable [Assisted NLU](assisted-nlu.md) and select either Primary or Fallback mode (Intent Disambiguation works with both modes).
+1. Enable [assisted NLU](assisted-nlu.md) and select either Primary or Fallback mode (Intent Disambiguation works with both modes).
 
 1. In the **Intent Disambiguation** section within the Assisted NLU configuration, use the toggle button to enable the Intent Disambiguation feature.
 

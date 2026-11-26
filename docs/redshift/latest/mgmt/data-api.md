@@ -35,7 +35,7 @@ Before you use the Amazon Redshift Data API, review the following steps:
 Consider the following when calling the Data API:
 + The Amazon Redshift Data API can access databases in Amazon Redshift provisioned clusters and Redshift Serverless workgroups. For a list of AWS Regions where the Redshift Data API is available, see the endpoints listed for [Redshift Data API](https://docs.aws.amazon.com/general/latest/gr/redshift-service.html) in the *Amazon Web Services General Reference*.
 + The maximum duration of a query is 24 hours.
-+ The maximum number of active queries (`STARTED` and `SUBMITTED` queries) per Amazon Redshift cluster is 2000.
++ The maximum number of active queries (`STARTED` and `SUBMITTED` queries) per Amazon Redshift cluster is 1000.
 + The maximum query result size is 500 MB (after gzip compression). If a call returns more than 500 MB of response data, the call is ended.
 + The maximum retention time for query results is 24 hours.
 + The maximum query statement size is 200 KB.
@@ -48,7 +48,6 @@ Consider the following when calling the Data API:
   + ra3.xlplus
   + ra3.4xlarge
   + ra3.16xlarge
-+ The cluster must be in a virtual private cloud (VPC) based on the Amazon VPC service.
 + By default, users with the same IAM role as the runner of an `ExecuteStatement` or `BatchExecuteStatement` API operation can act on the same statement with `CancelStatement`, `DescribeStatement`, `GetStatementResult`, `GetStatementResultV2`, and `ListStatements` API operations. To act on the same SQL statement from another user, the user must be able to assume the IAM role of the user who ran the SQL statement. For more information about how to assume a role, see [Authorizing access to the Amazon Redshift Data API](data-api-access.md).
 + The SQL statements in the `Sqls` parameter of the `BatchExecuteStatement` API operation run serially in the order of the array. Subsequent SQL statements don't start until the previous statement completes. By default, all SQL statements are run as a single transaction. If any SQL statement fails, all work is rolled back. Use the `ExecutionMode` parameter to control transaction behavior:
   + `TRANSACTION` (default) — The service runs all SQL statements as a single transaction and commits or rolls back all of them together.

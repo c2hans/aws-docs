@@ -85,7 +85,7 @@ This complete isolation between sessions is crucial for enterprise security, par
 ## Platform versions
 <a name="runtime-platform-versions"></a>
 
-A platform version controls how AgentCore Runtime starts your agent. You set it with the `platformVersion` field (`V1` or `V2`) on each agent runtime. V1 is the default. The platform version applies to the agent runtime itself; it is separate from the [runtime versions](#runtime-versions) that capture your configuration history.
+A platform version controls how AgentCore Runtime starts your agent. You set it with the `platformVersion` field (`V1` or `V2`) on each agent runtime. V1 is the default. Runtimes that an AgentCore harness manages can run on V2. For more information, see [Build time on Runtime platform version V2](harness-versioning.md#harness-platform-version). The platform version applies to the agent runtime itself. It is separate from the [runtime versions](#runtime-versions) that capture your configuration history.
 
 Amazon Bedrock AgentCore Runtime V2 starts your agent from a snapshot, which keeps cold starts fast and consistent regardless of concurrency or image size. AgentCore Runtime prepares your environment once and takes a snapshot of it, then restores that snapshot for each new instance instead of initializing your environment on each start.
 
@@ -152,6 +152,12 @@ You set the platform version for each agent runtime. Set it when you create a ru
 1. (Optional) Configure **Inbound auth**, **Advanced configurations**, and **Permissions**, such as the IAM execution role and KMS encryption key.
 
 1. Choose **Create runtime**. AgentCore creates agent runtime version 1 and a `DEFAULT` endpoint that points to it.
+In your AgentCore CLI project, run the following commands. Replace `myagent` with the name of your agent.
+
+```bash
+agentcore add runtime --name myagent --platform-version V2
+agentcore deploy
+```
 
 1. Set `--platform-version V2` on the `create-agent-runtime` command.
 
@@ -228,6 +234,9 @@ def wait_until_ready(client, agent_runtime_id):
 
 On V2, AgentCore Runtime manages a snapshot for each runtime version that an endpoint points to. You do not create or delete snapshots directly. They follow your runtime and endpoint changes.
 
+**Note**
+Runtimes that an AgentCore harness manages can run on V2. Each harness endpoint gets its own snapshot build, including an endpoint that points to a version that `DEFAULT` already serves. For more information, see [Build time on Runtime platform version V2](harness-versioning.md#harness-platform-version).
+
 Created
 AgentCore Runtime prepares a snapshot when an endpoint points to a version. When you create a runtime, AgentCore Runtime hosts your version on the default endpoint and prepares its snapshot. A runtime can have more than one endpoint that points to different versions, so a runtime can have more than one snapshot at a time.
 
@@ -283,6 +292,13 @@ To choose a baseline, start with consumption-based pricing and monitor the `CPUU
 To set a resource configuration, include `resourceConfigurations` with one entry when you create or update a V2 agent runtime. You set the baseline in memory with `minimumMemoryInMiB`. vCPU is proportional to memory: 1 vCPU for every 4 GB.
 
 **Example**
+In your AgentCore CLI project, run the following commands. Replace `myagent` with the name of your agent.
+
+```bash
+agentcore add runtime --name myagent --platform-version V2 \
+  --resource-configurations '[{"minimumMemoryInMiB":4096}]'
+agentcore deploy
+```
 
 ```bash
 aws bedrock-agentcore-control create-agent-runtime \

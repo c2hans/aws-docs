@@ -25,9 +25,9 @@ This rule group requires configuration. A managed rule group reference statement
 AI Security works in two layers: Protocol compliance and Content assessment.
 
 **Protocol recognition and compliance** runs inside AWS WAF. The rule group identifies whether a request is an LLM inference call, an MCP message, or an A2A message, and it labels requests that it doesn't recognize.
-+ **MCP** is recognized at protocol versions `2025-06-18`, `2025-11-25`, and `2026-07-28`. Earlier versions, such as `2024-11-05` and `2025-03-26`, aren't recognized.
++ **MCP** is recognized at protocol versions `2025-06-18`, `2025-11-25`, and `2026-07-28`. Earlier versions, such as `2024-11-05` and `2025-03-26`, aren't recognized. To block MCP requests at earlier versions, see [Blocking MCP requests at unsupported protocol versions](waf-ai-security-example-block-unsupported-mcp.md).
 + **A2A** is recognized at version 1.0 only. A2A 0.3 traffic, and A2A traffic that declares any other version, isn't recognized.
-+ **LLM** traffic is recognized for operations from OpenAI, Anthropic, Google Gemini, and Ollama. Amazon Bedrock's own runtime APIs, such as `Converse` and `InvokeModel`, aren't recognized.
++ **LLM** traffic is recognized for operations from OpenAI, Anthropic, Google Gemini, and Ollama. Amazon Bedrock's own runtime APIs, such as `Converse` and `InvokeModel`, aren't recognized. Amazon Bedrock Guardrails covers these APIs natively, so the rule group doesn't include them.
 
 For recognized MCP and A2A messages, the rule group checks the message against its protocol at two levels: Baseline and Strict. **Baseline** violations are malformed messages. Strict violations also include constructs that the protocol permits but that are uncommon. **Strict includes Baseline.** A Baseline check that matches publishes both the baseline and the strict level label for its protocol.
 
@@ -35,6 +35,12 @@ For recognized MCP and A2A messages, the rule group checks the message against i
 + MCP `tools/call` messages. Other MCP methods are recognized but not assessed.
 + A2A `SendMessage` and `SendStreamingMessage` operations sent with POST, including the REST routes `POST /message:send` and `POST /message:stream`. Other A2A 1.0 operations are recognized but not assessed.
 + Recognized LLM operations, except OpenAI embeddings, image variations, audio transcriptions, and audio translations. These are recognized but not assessed, and they get no outcome label.
+
+**Body size limits.** AWS WAF assesses only the part of a request or response body that's within the body inspection size limit.
++ **Requests** – The default limit is 8 KB for an Application Load Balancer and 16 KB for an Amazon CloudFront distribution or an Amazon API Gateway REST API. You can increase the limit up to 64 KB in your protection pack (web ACL) configuration. Increasing the limit can incur additional costs.
++ **Responses** – The limit uses the default for the resource type: 8 KB for an Application Load Balancer and 16 KB for an Amazon CloudFront distribution or an Amazon API Gateway REST API.
+
+AWS WAF doesn't send text beyond the limit to Amazon Bedrock for assessment. LLM requests often carry the whole conversation, with the newest message at the end of the body, so a long conversation can push the newest message past the limit. If your agentic traffic has large request bodies, increase the request limit. For details, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 
 **Important**
 For a protection pack (web ACL) that protects an Amazon CloudFront distribution, AWS WAF sends message text to Amazon Bedrock in one of the Regions where this rule group is available, and you can't choose which. Each CloudFront edge location sends content to the closest of these Regions, so content from one distribution can be assessed in more than one Region, including Regions outside the country of your viewers or your origin. For an Application Load Balancer or an Amazon API Gateway REST API, AWS WAF sends the text to Amazon Bedrock in the Region of the protection pack (web ACL). For information about how Amazon Bedrock handles this content, see [Data protection](https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html) in the *Amazon Bedrock User Guide*.

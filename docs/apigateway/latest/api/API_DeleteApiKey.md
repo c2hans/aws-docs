@@ -64,6 +64,28 @@ HTTP Status Code: 429
 The request is denied because the caller has insufficient permissions.
 HTTP Status Code: 401
 
+## Examples
+<a name="API_DeleteApiKey_Examples"></a>
+
+### Retrieve client certificates
+<a name="API_DeleteApiKey_Example_1"></a>
+
+ The following example request retrieves the available client certificates in the caller's AWS account.
+
+ A successful response returns the requested `ClientCertificate` resources that can be navigated to by following the linked item or examining the embedded item resource.
+
+#### Sample Request
+<a name="API_DeleteApiKey_Example_1_Request"></a>
+
+```
+```
+
+#### Sample Response
+<a name="API_DeleteApiKey_Example_1_Response"></a>
+
+```
+```
+
 ## See Also
 <a name="API_DeleteApiKey_SeeAlso"></a>
 

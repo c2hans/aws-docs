@@ -49,7 +49,7 @@ This intent handles order verification and status inquiries, providing customers
   + "Track my order {OrderNumber}"
   + "Has my order shipped yet"
 + **AI-Powered Features:**
-  + Uses Assisted NLU to understand variations like "my package", "my stuff", "my delivery"
+  + Uses assisted NLU to understand variations like "my package", "my stuff", "my delivery"
   + Automatically extracts order numbers from natural speech patterns
 
 ### UpsellProducts Intent
@@ -161,7 +161,7 @@ Bot: "Great! I'll make sure john.doe@email.com gets personalized deals based on 
 
 This chatbot leverages multiple AI capabilities to provide intelligent, personalized customer service while driving business growth.
 
-### Assisted NLU Implementation
+### Assisted NLU implementation
 <a name="assisted-nlu-implementation"></a>
 
 Assisted NLU uses Large Language Models to understand customer intent even when they use non-standard phrasing or combine multiple requests in a single utterance.
@@ -601,7 +601,7 @@ Before proceeding with the bot creation, verify you have:
 ### Enable AI-Powered Features
 <a name="enable-ai-features-procedure"></a>
 
-**To enable Assisted NLU and other AI features**
+**To enable assisted NLU and other AI features**
 
 1. In the left navigation pane, choose **Bot settings**.
 

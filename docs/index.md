@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Welcome to AWS Documentation
@@ -88,6 +88,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 
 ### Business Applications
 
+- [AWS App Monetization](/appmonetization/?icmpid=docs_homepage_busapp): Set up pricing, meter usage, bill customers, and collect payments for applications
 - [Amazon Connect Customer](/connect/?icmpid=docs_homepage_busapp): Omnichannel cloud contact center
 - [AWS App Studio](/appstudio/?icmpid=docs_homepage_busapp): Build internal applications to automate processes and simplify organization activities
 - [AWS AppFabric](/appfabric/?icmpid=docs_homepage_busapp): Aggregate and analyze data across SaaS applications
@@ -327,6 +328,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon DevOps Guru](/devops-guru/?icmpid=docs_homepage_ml): Improve application availability with ML-powered cloud operations
 - [Amazon Forecast](/forecast/?icmpid=docs_homepage_ml): Increase forecast accuracy using machine learning
 - [Amazon Fraud Detector](/frauddetector/?icmpid=docs_homepage_ml): Detect more online fraud faster
+- [AWS Greenlight](/greenlight/?icmpid=docs_homepage_ml): Control and prove what AI agents can do with automated reasoning
 - [AWS HealthImaging](/healthimaging/?icmpid=docs_homepage_ml): Manage medical imaging data
 - [AWS HealthLake](/healthlake/?icmpid=docs_homepage_ml): Securely store, transform, query, and analyze health data in minutes
 - [AWS HealthOmics](/omics/?icmpid=docs_homepage_ml): Transform omics data into insights
@@ -370,6 +372,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Managed Service for Prometheus](/prometheus/?icmpid=docs_homepage_mgmtgov): Highly available, secure, and managed monitoring for your containers
 - [AWS Management Console](/awsconsolehelpdocs/latest/gsg/what-is.html?icmpid=docs_homepage_mgmtgov): Web-based user interface comprising multiple AWS service consoles
 - [AWS Organizations](/organizations/?icmpid=docs_homepage_mgmtgov): Central governance and management across AWS accounts
+- [AWS Payments Manager](/payments-manager/?icmpid=docs_homepage_mgmtgov): Pay AWS more efficiently with less manual work and lower risk
 - [AWS Proton](/proton/?icmpid=docs_homepage_mgmtgov): Automate management for container and serverless deployments
 - [AWS Resilience Hub](/resilience-hub/?icmpid=docs_homepage_mgmtgov): Prepare and protect your applications from disruptions
 - [AWS Resource Explorer](/ARG/?icmpid=docs_homepage_mgmtgov): Search for and discover relevant resources across AWS

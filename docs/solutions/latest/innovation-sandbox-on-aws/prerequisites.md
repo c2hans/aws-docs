@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 Before launching the stacks, you must meet the following prerequisites:
 
 1.  **Identify the AWS account where you want to deploy the solution**: Use the [AWS Management Console](https://console.aws.amazon.com/console/home) to identify and name this as the **Hub** account. We recommend you dedicate this account for running the solution with no other workloads running in the account.
+   + The Hub account must not already have an Amazon CloudWatch observability sink in any Region in the AccountPool stack’s **ISB Managed Regions** parameter. Sinks that another Innovation Sandbox on AWS deployment created are exempt. If the Hub account has another sink in a managed Region, use a different Hub account or remove that Region from **ISB Managed Regions**.
 
 1.  **Verify your home Region**: You must deploy all the stacks in the same AWS Region, and enable IAM Identity Center (IDC) in the same home Region. If you have already enabled IDC, use that Region as your home Region.
 
@@ -17,7 +18,11 @@ Before launching the stacks, you must meet the following prerequisites:
 1.  **Ensure you have enabled and set up AWS IAM Identity Center**: [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/) is used to centrally manage access to your AWS accounts and applications. Enable IAM Identity Center at the organizational level, either using the Organization Management account or a delegated administration account.
    + To enable IAM Identity Center, open the IAM Identity Center console, choose your home Region, and on the main page, for Enable IAM Identity Center, choose **Enable**.
 
-1.  **Configure Amazon SES for the application to send email notifications**: Set up Amazon SES for the solution and request production access using the Hub account. For more information, see [Setting up Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/setting-up.html) and [Requesting production access](https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html). You later configure the notification sender address on the **Settings** page of the web UI. The solution rejects the save unless that address (or its parent domain) is a verified identity in Amazon SES in the Hub account.
+1.  **Choose how the solution sends email notifications**: The solution sends email through Amazon SES in the Hub account, using one of the following identities. In either case, request SES production access for the Hub account; while the Hub account is in the SES sandbox, it can send only to verified recipients. If you use an identity owned by another account, that account must also have production access in the same Region. For more information, see [Requesting production access](https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html). You can skip this prerequisite if you plan to deliver notifications only through the Amazon SNS integration topic. For more information, see [Integrate notifications with other tools](notification-integration.md).
+   +  **An identity in the Hub account**: Set up Amazon SES in the Hub account and verify the sender address or its domain. For more information, see [Setting up Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/setting-up.html).
+   +  **An identity owned by another account**: If your organization verifies senders in a shared account, that account can authorize the Hub account to send through its identity. The identity must be in the Region where you deploy the solution. For more information, see [Send email through an SES identity in another account](delegated-ses-sending.md).
+
+     You later configure the notification sender address on the **Settings** page of the web UI. The solution rejects the save unless the address is covered by the identity you chose.
 
 1.  **Enable resource sharing using AWS Resource Access Manager (RAM)**: For more information on how to set this up, refer to [Enable resource sharing within AWS Organizations](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html#getting-started-sharing-orgs).
 

@@ -2426,14 +2426,37 @@ None.
 ### UpdateOS (Linux, Windows)
 <a name="action-modules-updateos"></a>
 
-The **UpdateOS** action module adds support for installing Windows and Linux updates. It installs all available updates by default. Alternatively, you can configure a list of one or more specific updates for the action module to install. You can also specify updates to exclude from the installation.
+The **UpdateOS** action module adds support for installing Windows and Linux updates. As the following list describes, by default it runs the update command of the instance's package manager on Linux. On Windows, it installs updates from the instance's configured update source. This might not include every available update. Alternatively, you can configure a list of one or more specific updates for the action module to install. You can also specify updates to exclude from the installation.
 
 If both "include" and "exclude" lists are provided, the resulting list of updates can include only those listed in the "include" list that are not listed in the "exclude" list.
 
 **Note**
 **UpdateOS** doesn't support Amazon Linux 2023 (AL2023). We recommend that you update your base AMI to the new version that comes with every release. For other alternatives, see [Control the updates received from major and minor releases](https://docs.aws.amazon.com/linux/al2023/ug/deterministic-upgrades.html#controlling-release-updates) in the *Amazon Linux 2023 User Guide*.
 + **Windows**. Updates are installed from the update source configured on the target machine.
-+ **Linux**. The application checks for the supported package manager in the Linux platform and uses either `yum` or `apt-get` package manager. If neither are supported, an error is returned. You should have `sudo` permissions to run the **UpdateOS** action module. If you do not have `sudo` permissions an `error.Input` is returned.
++ **Linux**. **UpdateOS** checks for the `yum`, `apt-get`, `zypper`, and `pkg` package managers and uses the one that it finds. If it finds none of them, it returns an error. When you don't specify an `include` list, **UpdateOS** runs the command in the following table for the package manager that it finds.
+
+**Commands that UpdateOS runs without an include list**
+
+<table>
+<thead>
+  <tr><th>Package manager</th><th>Command</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>yum</code></td><td><code>yum -y update</code></td></tr>
+  <tr><td><code>apt-get</code></td><td><code>DEBIAN_FRONTEND=noninteractive apt-get -yq update</code>, and then <code>DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef -yq upgrade</code></td></tr>
+  <tr><td><code>zypper</code></td><td><code>zypper --non-interactive --gpg-auto-import-keys update --auto-agree-with-licenses</code></td></tr>
+  <tr><td><code>pkg</code></td><td><code>pkg upgrade -fy</code></td></tr>
+</tbody>
+</table>
+
+  The behavior of that command determines which updates **UpdateOS** installs. If you specify an `exclude` list, **UpdateOS** passes the packages to `yum` with the `--exclude` option. For `apt-get`, `zypper`, and `pkg`, it holds or locks the excluded packages before it runs the command and releases them afterward.
+
+  You should have `sudo` permissions to run the **UpdateOS** action module. If you do not have `sudo` permissions an `error.Input` is returned.
+
+**Note**
+For instances that use `apt-get`, such as Ubuntu and Debian, **UpdateOS** runs `apt-get upgrade` when you don't specify an `include` list. The `apt-get upgrade` command doesn't install packages that aren't already installed, so it holds back updates that require a new package. For example, Ubuntu and Debian ship each new kernel version as a new package, so `apt-get upgrade` holds back these kernel updates. To install updates that are held back, do one of the following:
+Add a second **UpdateOS** step after the step that installs your other updates, and list the packages in its `include` input. Use a separate step, because an **UpdateOS** step with an `include` list updates only the packages that it lists. For example, on Ubuntu, include `linux-aws`, `linux-image-aws`, and `linux-headers-aws`. **UpdateOS** then runs `apt-get --only-upgrade install` for these packages, which also installs the new kernel package that they depend on.
+Add an [ExecuteBash (Linux, macOS)](#action-modules-executebash) step to your component. In that step, run `apt-get -yq update`, and then run `DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef -yq upgrade --with-new-pkgs`. The upgrade command uses the same options that **UpdateOS** uses, so `apt-get` handles configuration files the same way. The `-y` option answers yes to the confirmation prompt, so `apt-get` doesn't wait for input.
 
 **Input**
 

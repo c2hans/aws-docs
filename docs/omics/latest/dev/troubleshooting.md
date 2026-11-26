@@ -56,6 +56,8 @@ If there are issues with your code and the processes have not exited properly, y
 
 GPU instances are resources that might not always be immediately available in your preferred AWS Region. For more information about improving GPU acquisition success, see [Mitigating INSTANCE\_RESERVATION\_FAILED errors](workflows-run-errors.md#workflows-mitigate-instance-reservation-failed).
 
+If you use expanded accelerator search and your run fails with `INSTANCE_RESERVATION_FAILED`, none of the matching instance types had capacity within the wait time. Consider increasing the wait time, adding accelerator types, or widening the vCPU and memory range. For more information, see [Expanded accelerator search](expanded-accelerator-search.md).
+
 If you use the `omicsResourceFallbackOrder` directive and your run fails with `ALL_PROFILES_INSTANCE_RESERVATION_FAILED`, none of the accelerators you specified had capacity within their wait times. Consider increasing the resource wait time, or specify alternate accelerators or a CPU option in your fallback order. For more information, see [Advanced resource configuration](advanced-resource-configuration.md).
 
 ## Troubleshooting run metrics

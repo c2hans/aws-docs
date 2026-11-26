@@ -126,3 +126,15 @@ As a best practice, only implement developer providers under the following condi
 + To create accountability for the use of developer-authenticated credentials, design your developer provider name and identifiers to indicate the authentication source. For example: `"Logins" : {"MyCorp provider" : "{{[provider application ID]}}"}`.
 + Avoid long-lived user credentials. Configure your server-side client to request identities with service-linked roles like [EC2 instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) and [Lambda execution roles](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html).
 + Avoid mixing internal and external sources of trust in the same identity pool. Add your developer provider and your single sign-on (SSO) providers in separate identity pools.
+
+### Isolate applications that share a SAML IdP
+<a name="identity-pools-security-best-practices-cib-saml"></a>
+
+Identity pool SAML trust is scoped to the SAML IdP that you register in IAM, not to an individual application. Identity pools use the shared AWS relying party audience `urn:amazon:webservices`, and don't check whether your IdP issued an assertion for a specific identity pool. Any user that your IdP authenticates, for any application, can present their SAML assertion to an identity pool that trusts that IdP.
+
+As a best practice, when your SAML IdP serves more than one application, take the following precautions:
++ Register a dedicated IAM SAML provider, backed by a separate IdP application and signing certificate, for each trust boundary.
++ Use rules-based role mapping on claims that end users can't modify, and set `AmbiguousRoleResolution` to `Deny` instead of `AuthenticatedRole`.
++ Restrict your role trust policies by using the `cognito-identity.amazonaws.com:aud` and `cognito-identity.amazonaws.com:amr` condition keys. SAML condition keys like `saml:aud` don't apply to roles that identity pools assume.
+
+For more information, see [SAML federation trust scope in identity pools](saml-identity-provider.md#saml-identity-provider-trust-scope).

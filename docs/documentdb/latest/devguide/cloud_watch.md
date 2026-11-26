@@ -21,7 +21,7 @@ CloudWatch also lets you set alarms so that you can be notified if a metric valu
 To monitor the health and performance of your Amazon DocumentDB cluster and instances, you can view the following metrics in the Amazon DocumentDB console.
 
 **Note**
-Unless otherwise noted, metrics in the following tables apply to both instance-based and elastic clusters.
+The metrics in the following tables apply to instance-based clusters, and are published in the `AWS/DocDB` namespace. Amazon DocumentDB elastic clusters publish a smaller set of metrics in the `AWS/DocDB-Elastic` namespace. For the list of metrics that elastic clusters publish, see [Elastic cluster metrics](#elastic-cluster-metrics).
 
 **Topics**
 + [Resource utilization metrics](#resource-utilization)
@@ -32,6 +32,7 @@ Unless otherwise noted, metrics in the following tables apply to both instance-b
 + [Throughput metrics](#throughput-metrics)
 + [System metrics](#system-metrics)
 + [T3 instance metrics](#t3-instance-metrics)
++ [Elastic cluster metrics](#elastic-cluster-metrics)
 
 ### Resource utilization metrics
 <a name="resource-utilization"></a>
@@ -114,6 +115,9 @@ Unless otherwise noted, metrics in the following tables apply to both instance-b
 
 Amazon DocumentDB publishes per-command latency and concurrency metrics to CloudWatch. These metrics help you identify which operations contribute most to your workload and detect tail-latency issues or concurrency pressure.
 
+**Note**
+Command-level metrics are available only for instance-based Amazon DocumentDB clusters. Amazon DocumentDB elastic clusters do not publish these metrics.
+
 Each command in the following table emits three metrics in a 1-minute period:
 + `AvgDuration` — The average execution time of the command, in microseconds.
 + `P100Duration` — The maximum execution time of the command (100th percentile), in microseconds.
@@ -174,6 +178,29 @@ Metric names follow the pattern `Command.{{commandName}}.{{metricName}}`. For ex
 | CPUCreditBalance | The number of CPU credits that an instance has accrued. This balance is depleted when the CPU bursts and CPU credits are spent more quickly than they are earned.  |
 | CPUSurplusCreditBalance | The number of surplus CPU credits spent to sustain CPU performance when the CPUCreditBalance value is zero. |
 | CPUSurplusCreditsCharged | The number of surplus CPU credits exceeding the maximum number of CPU credits that can be earned in a 24-hour period, and thus attracting an additional charge. For more information, see [ Monitoring your CPU credits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-monitoring-cpu-credits.html).  |
+
+### Elastic cluster metrics
+<a name="elastic-cluster-metrics"></a>
+
+Amazon DocumentDB elastic clusters publish metrics to the `AWS/DocDB-Elastic` namespace. Most metrics are published at both the cluster level, with the `ClusterId` and `ClusterName` dimensions, and the shard level, with the `ClusterId`, `ClusterName`, and `ShardId` dimensions. `DatabaseConnections` and the `Opcounters` metrics are published at the cluster level only. `BufferCacheHitRatio` and `DBInstanceReplicaLag` are published at the shard level only. Use the shard-level metrics to detect uneven traffic across shards.
+
+Elastic clusters publish the following metrics only. Metrics that are not in this section, such as [Command-level metrics](#command-level-metrics), are not available for elastic clusters.
+
+The following metrics are specific to elastic clusters:
+
+| Metric | Description |
+| --- | --- |
+| PrimaryInstanceCPUUtilization | The percentage of CPU used by the primary instances of the shards. |
+| PrimaryInstanceFreeableMemory | The amount of available random access memory on the primary instances of the shards, in bytes. |
+| ReplicaInstanceCPUUtilization | The percentage of CPU used by the replica instances of the shards. |
+| ReplicaInstanceFreeableMemory | The amount of available random access memory on the replica instances of the shards, in bytes. |
+
+Elastic clusters also publish the following metrics. These metrics have the same meaning as the instance-based metrics with the same name.
++ [Resource utilization metrics](#resource-utilization): `DatabaseConnections`, `DatabaseCursorsMax`, `DatabaseCursorsTimedOut`, `VolumeBytesUsed`
++ [Latency metrics](#latency-metrics): `DBInstanceReplicaLag`
++ [Operations metrics](#operations-metrics): `DocumentsDeleted`, `DocumentsInserted`, `DocumentsReturned`, `DocumentsUpdated`, `OpcountersCommand`, `OpcountersDelete`, `OpcountersGetmore`, `OpcountersInsert`, `OpcountersQuery`, `OpcountersUpdate`, `TTLDeletedDocuments`
++ [Throughput metrics](#throughput-metrics): `ReadThroughput`, `WriteThroughput`, `VolumeReadIOPs`, `VolumeWriteIOPs`
++ [System metrics](#system-metrics): `BufferCacheHitRatio`
 
 ## Viewing CloudWatch data
 <a name="cloud_watch-view_data"></a>

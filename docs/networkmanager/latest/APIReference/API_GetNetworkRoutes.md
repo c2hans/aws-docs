@@ -208,7 +208,7 @@ Length Constraints: Minimum length of 0. Maximum length of 1500.
 Pattern: `[\s\S]*`
 
  ** [RouteTableTimestamp](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-RouteTableTimestamp"></a>
-The route table creation time.
+The time when Network Manager last collected the routes in the route table.
 Type: Timestamp
 
  ** [RouteTableType](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-RouteTableType"></a>

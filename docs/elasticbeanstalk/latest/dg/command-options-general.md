@@ -62,8 +62,8 @@ Configure your environment's Auto Scaling group. For more information, see [Auto
 | Cooldown | Cooldown periods help prevent Amazon EC2 Auto Scaling from initiating additional scaling activities before the effects of previous activities are visible. A cooldown period is the amount of time, in seconds, after a scaling activity completes before another scaling activity can start. | `360`  | `0` to `10000` |
 | Custom Availability Zones | Define the AZs for your instances. | None | `us-east-1a` <br />`us-east-1b` <br />`us-east-1c` <br />`us-east-1d` <br />`us-east-1e` <br />`eu-central-1`  |
 | EnableCapacityRebalancing | Specifies whether to enable the Capacity Rebalancing feature for Spot Instances in your Auto Scaling Group. For more information, see [Capacity Rebalancing](https://docs.aws.amazon.com/autoscaling/ec2/userguide/capacity-rebalance.html) in the *Amazon EC2 Auto Scaling User Guide*.<br />This option is only relevant when `EnableSpot` is set to `true` in the [`aws:ec2:instances`](#command-options-general-ec2instances) namespace, and there is at least one Spot Instance in your Auto Scaling group. | `false` | `true`<br />`false` |
-| MinSize | The minimum number of instances that you want in your Auto Scaling group. | `1`  | `1` to `10000` |
-| MaxSize | The maximum number of instances that you want in your Auto Scaling group. | `4`  | `1` to `10000` |
+| MinSize | The minimum number of instances that you want in your Auto Scaling group. Set this option and MaxSize to `0` to pause the environment. | `1`  | `0` to `10000` |
+| MaxSize | The maximum number of instances that you want in your Auto Scaling group. | `4`  | `0` to `10000` |
 
 ## aws:autoscaling:launchconfiguration
 <a name="command-options-general-autoscalinglaunchconfiguration"></a>

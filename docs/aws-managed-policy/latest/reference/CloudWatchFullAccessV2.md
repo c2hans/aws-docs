@@ -17,13 +17,13 @@ You can attach `CloudWatchFullAccessV2` to your users, groups, and roles.
 <a name="CloudWatchFullAccessV2-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: August 01, 2023, 11:32 UTC
-+ **Edited time:** November 18, 2026, 15:07 UTC
++ **Edited time:** November 23, 2026, 22:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/CloudWatchFullAccessV2`
 
 ## Policy version
 <a name="CloudWatchFullAccessV2-version"></a>
 
-**Policy version:** v20 (default)
+**Policy version:** v21 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -293,6 +293,14 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : "config:GetConnector",
       "Resource" : "arn:aws:config:*:*:connector/*"
+    },
+    {
+      "Sid" : "CloudWatchDevOpsAgentListPermissions",
+      "Effect" : "Allow",
+      "Action" : [
+        "aidevops:ListAgentSpaces"
+      ],
+      "Resource" : "*"
     }
   ]
 }

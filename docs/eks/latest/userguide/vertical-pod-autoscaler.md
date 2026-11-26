@@ -42,9 +42,9 @@ In this section, you deploy the Vertical Pod Autoscaler to your cluster.
 1. If your nodes don’t have internet access to the `registry.k8s.io` container registry, then you need to pull the following images and push them to your own private repository. For more information about how to pull the images and push them to your own private repository, see [Copy a container image from one repository to another repository](copy-image-to-repository.md).
 
    ```bash
-   registry.k8s.io/autoscaling/vpa-admission-controller:0.10.0
-   registry.k8s.io/autoscaling/vpa-recommender:0.10.0
-   registry.k8s.io/autoscaling/vpa-updater:0.10.0
+   registry.k8s.io/autoscaling/vpa-admission-controller:1.8.1
+   registry.k8s.io/autoscaling/vpa-recommender:1.8.1
+   registry.k8s.io/autoscaling/vpa-updater:1.8.1
    ```
 
    If you’re pushing the images to a private Amazon ECR repository, then replace `registry.k8s.io` in the manifests with your registry. Replace {{111122223333}} with your account ID. Replace {{region-code}} with the AWS Region that your cluster is in. The following commands assume that you named your repository the same as the repository name in the manifest. If you named your repository something different, then you’ll need to change it too.

@@ -13,7 +13,7 @@ Currently, AWS DevOps Agent supports Dynatrace users with a built-in, 2-way inte
 + **Telemetry introspection** - AWS DevOps Agent can introspect Dynatrace telemetry as it investigates an issue. It uses a Dynatrace Model Context Protocol (MCP) server that AWS DevOps Agent hosts.
 + **Status updates** - AWS DevOps Agent publishes key investigation findings, root cause analyses, and generated mitigation plans to the Dynatrace user interface.
 
-AWS DevOps Agent sends an event to Dynatrace when an investigation starts and each time its status changes, including when it completes or fails. It also sends updates as the investigation progresses. It sends these events for every investigation that Dynatrace triggers, even when an investigation ends without findings.
+AWS DevOps Agent sends an event to Dynatrace when an investigation starts and each time its status changes, including when it completes or fails. It also sends updates as the investigation progresses. It sends these events for every investigation that Dynatrace triggers, even when an investigation ends without findings. To stop status updates, or limit them to the investigations that you choose, without removing the integration, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md).
 
 ## Prerequisites
 <a name="prerequisites"></a>

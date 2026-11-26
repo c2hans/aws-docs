@@ -9,8 +9,8 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/a
 |  |  |
 | --- |--- |
 | **Purpose** | Help determine which AWS application integration services are the best fit for your workloads. |
-| **Last updated** | April 16, 2025 |
-| **Covered services** |  +  [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) <br />+  [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html) <br />+  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html) <br />+  [Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-getting-started.html) <br />+  [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/getting-started.html) <br />+  [Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) <br />+  [Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) <br />+  [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)   |
+| **Last updated** | November 24, 2026 |
+| **Covered services** |  +  [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) <br />+  [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html) <br />+  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html) <br />+  [Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-getting-started.html) <br />+  [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/getting-started.html) <br />+  [Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) <br />+  [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html) <br />+  [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) <br />+  [Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) <br />+  [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)   |
 
 ## Introduction
 <a name="intro"></a>
@@ -19,40 +19,41 @@ Application integration is a suite of services that enables communication betwee
 
 Choosing an integration service that is the best fit for your organization and workloads can become difficult. This decision guide will help you ask the right questions to discover your requirements and provides clear guidance on how to evaluate and choose the right integration services for your workloads.
 
-[![AWS Videos](https://img.youtube.com/vi/Zrj7RD7G24Q/0.jpg)](https://www.youtube.com/watch?v=Zrj7RD7G24Q&t=58s)
-
-*This 8½-minute clip is from a one hour recording of a presentation by AWS director of enterprise strategy Gregor Hohpe at AWS re:Invent 2022. It provides an overview of available AWS application integration services.*
+For a detailed comparison of Amazon SQS, Amazon SNS, and EventBridge, see the [Amazon SQS, Amazon SNS, or EventBridge decision guide](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/sns-or-sqs-or-eventbridge.html).
 
 ## Understand
 <a name="understand"></a>
 
-One of the key benefits of modernization is the ability to shift operational responsibilities, allowing you to free up resources to do more value-add and innovation-led activities.
+Managed integration services reduce infrastructure work. Compare the operating models to understand which responsibilities remain with your team.
 
-There is a spectrum of shared responsibility options across different levels of modernization, ranging from hosting your message broker on Amazon Elastic Compute Cloud (Amazon EC2)—where you are managing scaling, security configurations, provisioning, patching, and more—to serverless offerings where all of the underlying infrastructure is managed.
+<a name="appint-operations-serverless"></a>**Serverless services**
 
-![Diagram showing operational responsibility between AWS application integration services.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/operational-responsibility.png)
+With EventBridge, Amazon SNS, Amazon SQS, Step Functions, and Amazon Data Firehose, AWS manages the underlying infrastructure. You configure the services and your applications.
 
-As you start to explore and understand your criteria, environment, and the suite of integration services that AWS offers, we recommend that you review some best practices. These best practices are applicable regardless of which service (or suite of services) you choose.
+<a name="appint-operations-capacity"></a>**Fully managed services with capacity settings**
 
-**Understand integration in your environment**
+Amazon Kinesis Data Streams and Amazon Managed Service for Apache Flink run on infrastructure operated by AWS. You choose capacity or processing parallelism (the number of tasks running at once).
 
-It's common that some organizations spend more time than they would like on maintaining open-source integrations. We recommend that you consider community sources, and/or backing from enterprises or foundations when making these investments. An investment in these projects is not just financial, but also an investment in knowledge capital and potentially technical debt, as these components and associated integrations will typically need updating. For more information, see the [AWS Open Source blog](https://aws.amazon.com/blogs/opensource/).
+<a name="appint-operations-open-source"></a>**Managed open source services**
 
-**Understand your architecture characteristics**
+Amazon MQ, Amazon MWAA, and Amazon Managed Streaming for Apache Kafka run ActiveMQ or RabbitMQ, Apache Airflow, and Apache Kafka, respectively. AWS operates the infrastructure. You choose capacity settings and supported software versions for provisioned resources.
 
-The ability to support a wide range of architectures is important. We recommend that you use the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc) as a guide to help you understand the decisions you make when building architectures on AWS. Additionally, using the Well-Architected Framework allows you to learn architectural best practices for designing and operating reliable, scalable, secure, efficient, and cost-effective systems in the Cloud.
+<a name="appint-operations-self-managed"></a>**Self-managed brokers on Amazon EC2**
 
-**Use a combination of integration services**
+You can run Apache Kafka, RabbitMQ, or ActiveMQ on Amazon EC2. You install, scale, patch, and secure both the brokers and their servers.
 
-If you are using purpose-built services, a combination of services might be the best fit for your use case. The following lists out a few common ways AWS customers are using a combination of services.
-+ Routing Amazon EventBridge or Amazon Simple Notification Service (Amazon SNS) events to an Amazon Simple Queue Service (Amazon SQS) queue as a buffer for downstream consumers.
-+ Pulling events directly from a stream (Amazon Kinesis Data Streams or Amazon Managed Streaming for Apache Kafka (Amazon MSK)) or a queue (Amazon SQS or Amazon MQ) with EventBridge Pipes and sending events to an EventBridge bus to push out to consumers.
-+ Routing EventBridge or Amazon SNS events to a Kinesis Data Streams or Amazon MSK for gathering and viewing analytics.
+The following diagram shows these four operating models from left to right, in order of increasing operational responsibility for your team. The double-headed arrow represents a comparison, not message flow.
+
+![Four columns show increasing operational responsibility, left to right, from serverless to self-managed Amazon EC2 brokers.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/operational-responsibility.png)
+
+See [operational criteria](#appint-operational-criteria) and [Messaging or streaming](#appint-messaging-or-streaming) for service differences.
+
+Use the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) to evaluate your architecture's reliability, security, and cost.
 
 ## Define
 <a name="define"></a>
 
-Once you have a clearer picture of your criteria, environment, strategic direction, and available services (including both deployment hosted and managed modalities), you need to identify your integration requirements. You might already know some of your requirements if you are migrating to an existing integration platform or message broker. However, you need to establish how these requirements would change if you move to a cloud environment, if at all.
+After you have a clearer picture of your criteria, environment, strategic direction, and available services (including both deployment hosted and managed modalities), you need to identify your integration requirements. You might already know some of your requirements if you are migrating to an existing integration platform or message broker. However, you need to establish how these requirements would change if you move to a cloud environment, if at all.
 
 **Messaging or streaming platforms**
 
@@ -64,28 +65,77 @@ Consider an insurance company which receives different claims as messages for di
 
 **Example 2:**
 
-Consider an airline in which a flight status update needs to notify all connected systems such as baggage or gate operations using a protocol such as Advanced Messaging Queuing Protocol (AMQP). The big question with functional and business use case primitives is what constitutes a best fit messaging platform. We have multiple choices that can determine the suitability of the platform based on the use case.
+Consider an airline in which a flight status update needs to notify all connected systems such as baggage or gate operations using a protocol such as Advanced Message Queuing Protocol (AMQP). The big question with functional and business use case primitives is what constitutes a best fit messaging platform. We have multiple choices that can determine the suitability of the platform based on the use case.
 + **Market adoption:** This platform is widely adopted by a huge customer community and a good enough fit for most use cases. It is tried and tested with a vibrant support community for any issues that might be encountered. It is a low-risk decision with enough training available for the development resources.
 + **Best fit for use case: **These platforms will be tailored for specific industry use cases such as airlines, logistics, or healthcare. They might be the best fit for those use cases with ready-made templates available for adoption. These platforms can be easy to get started but can lack the level of adoption in the market as well as flexibility. Adopting this type of platform might require extensive time and resources for validation and building in house expertise.
 + **Modern: ** These platforms are built with the next generation architecture to address cloud-scale deployments, multi-tenancy, disaster recovery, and serverless type of pricing. Using this type of platform might require some refactoring of workloads for long-term viability. It uses a cloud-native platform and focuses on using the well-architected principles of modern applications.
 
 **Example 3:**
 
-If the messaging platform is part of a bigger loan processing workflow which needs to be multi-region, the messaging platform also needs to support the same business requirements. If the business needs the ability to recover and rollback to a previous state in rainy day situations, the underlying messaging or streaming platform also needs capability to have some snapshotting or replay capability to recreate the state of the system.
+If the messaging platform is part of a bigger loan processing workflow which needs to be multi-Region, the messaging platform also needs to support the same business requirements. If the business needs the ability to recover and rollback to a previous state in rainy day situations, the underlying messaging or streaming platform also needs capability to have some snapshotting or replay capability to recreate the state of the system.
 
 The integration platform you choose should facilitate asynchronous processing of loan applications or act as the store and forward channel for a multi-step media processing workflow. The criticality of the business process would determine the capabilities needed from the messaging or streaming platform.
 
+### Messaging or streaming
+<a name="appint-messaging-or-streaming"></a>
+
+Compare how consumers receive data and whether they need to read it again.
+
+With messaging, producers (applications sending data) send messages to consumers (applications receiving it). A queue distributes work among consumers. Consumers delete queue messages after successful processing. A topic publishes messages to multiple subscribers.
+
+With streaming, producers write records (individual data items) to a stream. Amazon Kinesis Data Streams and Amazon Managed Streaming for Apache Kafka retain records for consumers to read and replay. Amazon Data Firehose buffers and delivers records to destinations. Amazon Managed Service for Apache Flink processes and analyzes streaming data.
+
+Kinesis Data Streams divides streams into shards, and Apache Kafka divides topics into partitions. These are portions of a stream that consumers can process in parallel. Ordering is scoped to a shard or partition, not an entire stream. With Kinesis Data Streams, `PutRecords` does not guarantee record ordering. See [PutRecords ordering behavior](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html).
+
+The following table compares queues and topics with retained data streams.
+
+| Dimension | Streaming | Messaging |
+| --- | --- | --- |
+| Data lifecycle | Retention and cleanup settings control availability. | Consumers delete queue messages after processing. Unprocessed messages remain until their retention period expires. |
+| Ordering | Ordering is scoped to a shard or partition. | Amazon SQS standard queues use best-effort ordering. Amazon SQS FIFO queues and Amazon SNS FIFO topics preserve order within a message group. |
+| Consumers | Applications read independently. | Queues distribute work among consumers. Topics deliver messages to subscribers, subject to subscription filters. |
+| Traffic | Streaming data ingestion. | Commands, tasks, and event notifications. |
+| Replay | Consumers reread retained records. | Amazon SQS can redrive failed messages from a dead-letter queue (DLQ). Amazon SNS FIFO topics and EventBridge also support archiving and replay. |
+
+Amazon SQS retains messages for four days by default, with a maximum of 14 days. Kinesis Data Streams retains records for 24 hours by default, configurable up to 365 days. See [SQS message quotas](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-messages.html) and [Kinesis retention settings](https://docs.aws.amazon.com/streams/latest/dev/kinesis-extended-retention.html). Kafka retention and cleanup policies affect which records remain available for replay.
+
+Some capabilities span both messaging and streaming, so use the table as a starting point rather than a strict split. On Amazon SQS standard queues, [fair queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-fair-queues.html) use a message group ID to identify tenants and reduce noisy-neighbor impact in multi-tenant workloads. Kinesis Data Streams [supports records up to 10 MiB](https://docs.aws.amazon.com/streams/latest/dev/large-records.html) for intermittent large payloads, above the 1 MiB default. Compare the specific capability you need against current service quotas rather than assuming it belongs to only one category.
+
+Queues distribute tasks, topics notify multiple subscribers, and independent consumers can reread records from retained streams. Kinesis Data Streams provides AWS-native streaming, while Amazon MSK runs Apache Kafka. Firehose provides buffered delivery, and Managed Service for Apache Flink processes streaming data. See each service's [getting-started resources](#appint-use) for configuration details.
+
+### Use a combination of integration services
+<a name="appint-combine-services"></a>
+
+If you are using purpose-built services, a combination of services might be a good fit for your use case. Examples include:
++ Routing Amazon EventBridge or Amazon Simple Notification Service (Amazon SNS) events to an Amazon Simple Queue Service (Amazon SQS) queue as a buffer for downstream consumers.
++ Reading events from a stream (Amazon Kinesis Data Streams or Amazon MSK) or a queue (Amazon SQS or Amazon MQ) with [EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html), and sending them to a Custom Event Bus – Classic in the same account and Region.
++ Routing EventBridge events to Kinesis Data Streams or Firehose for analytics.
++ Subscribing Firehose to an Amazon SNS standard topic to deliver messages to Amazon S3 or analytics destinations. See [Subscription prerequisites](https://docs.aws.amazon.com/sns/latest/dg/prereqs-kinesis-data-firehose.html).
++ Processing Kinesis Data Streams or Amazon MSK records with Managed Service for Apache Flink. See [Supported streaming sources](https://docs.aws.amazon.com/managed-flink/latest/java/how-sources.html).
+
+### Messaging between applications and people
+<a name="appint-a2p"></a>
+
+The services compared here primarily connect application components. For customer communications, use [Amazon Simple Email Service](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) for email. [AWS End User Messaging](https://docs.aws.amazon.com/end-user-messaging/) supports SMS, MMS, RCS, voice, WhatsApp, and mobile push. Amazon SNS also supports email and SMS for operational alerts.
+
+### Integration for agent workloads
+<a name="appint-agent-workloads"></a>
+
+Integration services also connect to AI-agent workloads. Events can trigger an agent, queues can absorb bursty inference demand, and workflows can give an agent a fixed set of steps to call. For example, AWS Step Functions state machines can be exposed to agents as tools through [Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-step-functions.html): the agent decides when to run a workflow and what input to pass, and the state machine decides which steps run and in what order.
+
 ## Consider
-<a name="consider"></a>
+<a name="appint-operational-criteria"></a>
 
 When considering a major application integration architecture in the cloud, there are different ways to determine the functional requirements for each of the integration points.
 
 The following is some of the criteria to consider when choosing an application integration service.
 
 ------
-#### [ Managed service and operation overhead ]
+#### [ Managed service overhead ]
 
 Consider moving to the cloud to reduce operational cost by standardizing on managed services that shift the operational burden to AWS. Higher levels of abstraction allow developers and operators to focus on their own unique value-add activities, instead of undifferentiated tasks.
+
+Some services offer lower-operational-overhead modes worth weighing against their standard deployment. [Amazon MWAA Serverless](https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html) runs workflows without an environment to provision and bills for actual run time. [Amazon MSK Express brokers](https://aws.amazon.com/blogs/aws/introducing-express-brokers-for-amazon-msk-to-deliver-high-throughput-and-faster-scaling-for-your-kafka-clusters/) lower operational overhead for Apache Kafka workloads.
 
 ------
 #### [ Open source ]
@@ -99,25 +149,25 @@ Consider standardization on [open source technologies](https://aws.amazon.com/bl
 
 When choosing the right integration service, it is important to understand the characteristics of the messages that need to be sent between the applications. Key characteristics like the message format, size, retention and priority can drive the decision of the integration service.
 
- Some integration services are better suited for small text based messages whereas some are designed to support multiple formats such as text and binary and offer bigger message sizes. The need to have a replay capability can also be an important factor alongside ordering of messages in some scenarios.
+Some integration services support text messages, while others also support binary data. Compare current service quotas for message size. Retention, replay, and ordering requirements can also affect your choice. See [Messaging or streaming](#appint-messaging-or-streaming).
 
- For example, message ordering can be implemented by using the FIFO functionality offered by Amazon SNS and Amazon SQS. There is also a consideration of having a pull or push based architecture, such as EventBridge or Amazon SNS invoking a Lambda function asynchronously.
-
- A pull based architecture could use services such as Amazon SQS or Kinesis Data Streams, where messages are stored on a queue or a stream and then can be retrieved by a consuming system. Messaging services like Amazon MQ offer capabilities around bigger message payloads and have unlimited retention. However, they do not offer replay capability.
+For example, Amazon SNS and Amazon SQS first-in, first-out (FIFO) messaging preserves ordering within a message group. Amazon SNS and EventBridge can push events to targets. Amazon SQS consumers poll for messages. Kinesis Data Streams consumers can poll for records or receive them through [enhanced fan-out](https://docs.aws.amazon.com/streams/latest/dev/enhanced-consumers.html), which provides dedicated read throughput.
 
 ------
-#### [ Rapid iteration and feature velocity ]
+#### [ Rapid iteration ]
 
 If your primary focus is building and iterating quickly, serverless services might provide the best value. Serverless services let you build applications without managing infrastructure. They provide managed functionality and integrations to reduce time spent writing boiler plate code.
 
-Another benefit of serverless when testing new ideas is that these services offer usage based pricing. Your code only runs when the service is invoked, so an experiment does not require an upfront investment.
+Compare each service's pricing model with your workload before estimating costs. Usage-based services can still have capacity, storage, or data-transfer charges.
 
 ------
 #### [ Application portability ]
 
-Many applications use certain protocols - such as Advanced Message Queuing Protocol (AMQP) or MQ Telemetry Transport (MQTT) - to connect to a messaging service. Alternatively, they have some library dependency which uses a certain messaging protocol. Examples of such libraries or frameworks include Spring Boot, Celery, or MassTransit.
+Many applications use certain protocols - such as Advanced Message Queuing Protocol (AMQP) or MQ Telemetry Transport (MQTT) - to connect to a messaging service. Alternatively, they have some library dependency which uses a certain messaging protocol.
 
  You might want to preserve such applications for different reasons. In these cases, the choice of your integration service also depends on the support of the required protocols to have portability with your applications.
+
+Amazon MQ supports broker protocols such as JMS, AMQP, MQTT, STOMP, and OpenWire, and can run migrated ActiveMQ or RabbitMQ workloads without rewriting application code. Its fit is defined by protocol compatibility and migration needs rather than by message size.
 
 ------
 #### [ Automation portability ]
@@ -126,7 +176,7 @@ You might need to have a service that provides compatibility with your infrastru
 
  Managed open source services (such as Amazon MQ and Amazon MSK) provide the benefits of the cloud, while being compatible with many popular deployment tools used for on-premises deployments.
 
- If refactoring the application is an option, you can benefit from using serverless services for providing this capability natively, as well as rich integration with a variety of AWS services.
+If refactoring is an option, consider AWS-native APIs and managed integrations. Moving from broker protocols can require application and automation changes.
 
 ------
 #### [ Organization size and skills ]
@@ -142,16 +192,16 @@ Now that you know the criteria you will use to evaluate your application integra
 
 | Service type | When would you use it? | What is it optimized for? | Associated services |
 | --- |--- |--- |--- |
-| Capacity | Use when you need to decouple publishers and subscribers and send events to multiple subscribers simultaneously. | Optimized for asynchronous, loosely coupled communication between publishers and subscribers. Events provide flexibility in message routing and delivery and are well-suited for event-driven architectures where events play a central role in initiating actions or workflows. | [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html)<br />[Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) |
-|  Messaging  |  Use when you need either pub/sub messaging to broadcast messages to multiple recipients simultaneously, or point-to-point messaging when you need reliable and asynchronous communication between components.  |  Optimized for high-throughput, scalable, and reliable asynchronous pub/sub and point-to-point messaging between distributed components.  |  [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html) [Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-getting-started.html)  |
+| Events | Use when you need to decouple publishers and subscribers and send events to multiple subscribers simultaneously. | Optimized for asynchronous event routing and delivery between loosely coupled publishers and subscribers. | [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html)<br />[Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) |
+|  Messaging  |  Use when you need either pub/sub messaging to broadcast messages to multiple recipients simultaneously, or point-to-point messaging when you need reliable and asynchronous communication between components.  |  Optimized for high-throughput, scalable, and reliable asynchronous pub/sub and point-to-point messaging between distributed components.  |  [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html) [Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-getting-started.html) [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html)  |
 | --- |--- |--- |--- |
-| Streaming | Use streaming services such as Amazon Kinesis Data Streams and Amazon Managed Streaming for Apache Kafka (MSK) in scenarios that involve handling and processing real-time streaming data. | Optimized for ingesting, processing, and analyzing large volumes of real-time streaming data for use cases that require real-time analytics, real-time monitoring, data exploration, and other applications that demand the processing of high-velocity data streams. | [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/getting-started.html)<br />[Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html) |
-|  Workflows  |  Use when you need to design, coordinate, and manage workflows or sequences of tasks in an organized and scalable manner.  |  Optimized for use cases such as business process management, application orchestration, data pipeline automation, and microservices coordination. Workflows abstract the underlying infrastructure complexity, allowing you to focus on designing and managing your workflows effectively. They are capable of handling dependencies and sequencing, allowing for parallelism and conditional branching while providing fault tolerance, error handling, and retries to ensure reliable workflow execution.  |  [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) [Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html)  |
+| Streaming | Use streaming services such as Amazon Kinesis Data Streams and Amazon Managed Streaming for Apache Kafka (MSK) in scenarios that involve handling and processing real-time streaming data. | Optimized for streaming ingestion, replay, delivery, and processing of streaming data. | [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/getting-started.html)<br />[Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html)<br />[Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)<br />[Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) |
+|  Workflows  |  Use when you need to design, coordinate, and manage workflows or sequences of tasks in an organized and scalable manner.  |  Optimized for coordinating dependent tasks, parallel steps, and conditional branches, with error handling and retries.  |  [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) [Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html)  |
 | --- |--- |--- |--- |
-| Scheduling | Use scheduling when you need to automate routine tasks such as data processing, backups, or system health checks. Tasks often need to be run at specific times or intervals, such as every night, hour, or minute. | Optimized for reliable, time-based tasks with built-in retry logic. Suitable for workflows requiring precise scheduling and integration with various AWS services. | [Amazon EventBridge](https://docs.aws.amazon.com/scheduler/latest/UserGuide/getting-started.html) |
+| Scheduling | Use scheduling when you need work to happen at a specific time for each customer, order, or account, such as an abandoned-cart reminder, a billing notice, or a deposit hold release. Create one-time or recurring schedules in each customer's time zone, scale to billions of them, and delete a schedule when the underlying state changes. | Optimized for time-based tasks with retry controls and integration with AWS services. | [Amazon EventBridge Scheduler](https://docs.aws.amazon.com/scheduler/latest/UserGuide/getting-started.html) |
 
 ## Use
-<a name="use"></a>
+<a name="appint-use"></a>
 
 You should now have a clear understanding of what each AWS application integration service does—and which one might be right for you. To explore how to use and learn more about each of the available AWS application integration services—we have provided a pathway to explore how each of the services work. The following section provides links to in-depth documentation, hands-on tutorials, and resources to get you started.
 
@@ -169,7 +219,7 @@ You should now have a clear understanding of what each AWS application integrati
   [Explore the guide](https://explore.skillbuilder.aws/learn/course/external/view/elearning/14124/amazon-simple-notification-service-amazon-sns-troubleshooting)
 + **Build a turn-based game with Amazon DynamoDB and Amazon SNS**
 
-  Learn how to build a multiplayer, turn-based game using Amazon DynamoDB and Amazon Amazon SNS.
+  Learn how to build a multiplayer, turn-based game using Amazon DynamoDB and Amazon SNS.
 
   [Get started with the tutorial](https://aws.amazon.com/getting-started/hands-on/turn-based-game-dynamodb-amazon-sns/)
 + **Building event driven architectures**
@@ -235,7 +285,7 @@ You should now have a clear understanding of what each AWS application integrati
   [Get started with the tutorial](https://explore.skillbuilder.aws/learn/course/external/view/elearning/15008/building-event-driven-applications-with-amazon-eventbridge)
 + **Kafka connector for Amazon EventBridge**
 
-  This connector allows you to convert records from one or more Kafka topics into events, and send those events to the event bus of your choice.
+  Convert Kafka records into events and send them to a Custom Event Bus – Classic.
 
   [Explore the guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/kafka-connector.html)
 + **Introducing cross-account targets for Amazon EventBridge Event Buses**
@@ -271,6 +321,11 @@ You should now have a clear understanding of what each AWS application integrati
   Discover how using quorum queues with RabbitMQ can provide higher availability and data security.
 
   [Read the blog post](https://aws.amazon.com/blogs/compute/introducing-quorum-queues-on-amazon-mq-for-rabbitmq/)
++ **RabbitMQ 4.3 on Amazon MQ**
+
+  Reference for recent broker features, including quorum queue strict priority ordering, delayed retry with configurable backoff, and granular per-consumer consumer timeout.
+
+  [Explore the guide](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-43.html)
 + **Creating and connecting to an ActiveMQ broker**
 
   Learn how you can use the AWS Management Console to create a basic broker.
@@ -410,6 +465,76 @@ You should now have a clear understanding of what each AWS application integrati
   [Get started with the workshop](https://catalog.workshops.aws/amazon-mwaa-for-analytics/en-US)
 
 ------
+#### [ Amazon Data Firehose ]
++ **What is Amazon Data Firehose?**
+
+  Learn how Firehose buffers and delivers streaming data to destinations.
+
+  [Explore the guide](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
++ **Create a Firehose stream**
+
+  Create a stream and configure its source and destination.
+
+  [Get started with the tutorial](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html)
++ **Amazon SNS subscriptions**
+
+  Deliver messages from an Amazon SNS standard topic through Firehose.
+
+  [Explore the guide](https://docs.aws.amazon.com/sns/latest/dg/sns-firehose-as-subscriber.html)
+
+------
+#### [ Amazon Managed Service for Apache Flink ]
++ **What is Amazon Managed Service for Apache Flink?**
+
+  Learn how to process and analyze streaming data with Apache Flink.
+
+  [Explore the guide](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html)
++ **Create a Flink application**
+
+  Build an application that reads and processes streaming data.
+
+  [Get started with the tutorial](https://docs.aws.amazon.com/managed-flink/latest/java/getting-started.html)
++ **How Flink applications work**
+
+  Explore application components and stream processing.
+
+  [Explore the guide](https://docs.aws.amazon.com/managed-flink/latest/java/how-it-works.html)
+
+------
+
+### Configuration and best practices
+<a name="appint-config-best-practices"></a>
+
+Use the following practices when you configure and operate your integration services. Each entry describes the consideration; follow the linked documentation for the exact steps, parameters, and values.
+
+**Reliability**
+
+Review these reliability considerations before you move an integration to production:
+
+Dead-letter queues (DLQs)
+Failed messages need somewhere to go. An [EventBridge rule target](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rule-dlq.html) or an [Amazon SNS subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-configure-dead-letter-queue.html) needs an Amazon SQS queue policy that lets the service deliver those messages to its DLQ.
+
+System attributes
+Request `AWSTraceHeader` through `MessageSystemAttributeNames` in the [ReceiveMessage API](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html), not through `MessageAttributeNames`.
+
+Record delimiters
+The documented [Amazon SNS notification format](https://docs.aws.amazon.com/sns/latest/dg/firehose-archived-message-format-S3.html) already separates messages with line breaks in Amazon S3. Avoid adding another delimiter in Firehose.
+
+Long polling
+Amazon SQS uses short polling by default. [Long polling](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html) can reduce empty responses and cost.
+
+**Security**
+
+Review these security considerations before you move an integration to production:
+
+Service permissions
+A [confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) occurs when a caller tricks a service into accessing resources that the caller cannot access directly. Restrict service principals with `aws:SourceArn` and `aws:SourceAccount` where supported. For [Amazon S3 notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html), use the bucket ARN and owner's account ID.
+
+Encryption
+Use a [customer managed AWS KMS key](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-server-side-encryption.html) when you need control of an Amazon SQS queue's encryption key.
+
+Credentials
+Store credentials in [AWS Secrets Manager](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_identities_secrets.html), not application code. For [Amazon MSK username/password authentication](https://docs.aws.amazon.com/msk/latest/developerguide/msk-password-tutorial.html), use secret names starting with `AmazonMSK_` and a customer managed AWS KMS key.
 
 ## Explore
 <a name="explore"></a>

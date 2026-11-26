@@ -35,6 +35,7 @@ Amazon DocumentDB supports many aggregation operators in view definitions while 
 + $addFields for adding computed fields
 + $sort for ordering results
 + $limit and $skip for pagination
++ $lookup and $graphLookup for joining data from other collections (Amazon DocumentDB 8.0 starting with engine version 8.0.3)
 
 Some specialized operators like $currentOp, $replaceRoot, and $geoNear currently work in direct aggregation queries rather than view definitions.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 # Connecting Slack
 
 You can connect AWS DevOps Agent to Slack in two ways:
-+ **One-way notifications** – AWS DevOps Agent posts incident response findings, root cause analyses, and mitigation plans to public or private Slack channels that you select.
++ **One-way notifications** – AWS DevOps Agent posts a live summary card for each investigation to public or private Slack channels that you select. You can change what the card and its replies say. For more information, see [Viewing investigation results in Slack](#viewing-investigation-results-in-slack) and [Customizing the card and replies](#customizing-the-card-and-replies).
 + **Bidirectional communication** – AWS DevOps Agent also receives and responds to messages in a private Slack channel. Mention the app to start a conversation. AWS DevOps Agent replies in a thread. You can also move an investigation into its own Slack code channel. For more information, see [Using Slack code channels](connecting-to-ticketing-and-chat-using-slack-code-channels.html).
 
 You can enable bidirectional communication only in private Slack channels. Public channels support one-way notifications only.
@@ -242,6 +242,24 @@ You can edit the Slack association at any time. Bidirectional mode can be enable
 1. Save your changes.
 
 To stop using a channel with the Agent Space, select its association and choose **Remove**. Removing a channel association does not unregister the Slack workspace from AWS DevOps Agent.
+
+You can choose which investigations post to a channel, such as only Critical and High investigations or only those from one source integration. You can also stop investigation updates and custom agent notifications without removing the channel. To do either, set a notification policy for the channel. For more information about notification policies, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md).
+
+## Viewing investigation results in Slack
+<a name="viewing-investigation-results-in-slack"></a>
+
+AWS DevOps Agent keeps one summary card for each investigation in the channel and updates it as the investigation runs. The card shows the investigation's status and a short summary, and links to the investigation in the AWS DevOps Agent web app. When the association has bidirectional communication turned on, you can also move the investigation's updates to a [code channel](connecting-to-ticketing-and-chat-using-slack-code-channels.html).
+
+AWS DevOps Agent also replies in the card's thread at key moments. For example, it replies when it finds a root cause, posts a mitigation plan, needs your team to act, or concludes. A [custom agent](working-with-devops-agent-custom-agents-index.md) run posts its [notifications](custom-agents-custom-agent-outputs.md#notifications) in its own thread.
+
+### Customizing the card and replies
+<a name="customizing-the-card-and-replies"></a>
+
+The Incident UI agent writes the summary card and the replies. To change them, add [skills](about-aws-devops-agent-devops-agent-skills-index.md#creating-skills) or [agent instructions](about-aws-devops-agent-agent-instructions.md#agent-type-scoping) that target the **Incident UI** agent type. For example, you can change the following:
++ The card's header, and which sections it shows, in what order and with what labels, such as adding a **Customer impact** section.
++ Which moments get a reply and how each reply reads, such as skipping progress updates or replying when a deployment becomes the leading suspect.
+
+Added sections and section labels also appear in the [investigation summary](production-operations-autonomous-incident-response.md#viewing-the-investigation-summary) in the web app.
 
 ## Sharing a Slack workspace across multiple AWS accounts
 <a name="sharing-a-slack-workspace-across-multiple-aws-accounts"></a>

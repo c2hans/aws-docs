@@ -13,12 +13,8 @@ After you deploy the Innovation Sandbox on AWS solution:
 
 1. Choose the **Compute** stack to view stack details.
 
-1. On the Stack details page, choose the **Outputs** tab. The web UI URL is the value assigned to the `CloudFrontDistributionUrl` key.
+1. On the Stack details page, choose the **Outputs** tab. The web UI URL is the value assigned to the `ResolvedUrl` key.
 
-![The Outputs tab of the Compute stack showing the CloudFront distribution URL](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/compute-stack-outputs.png)
-
-**Web UI URL**
-
-1. Choose to open the web UI for the solution. The Amazon Cognito hosted sign-in page opens.
+1. Open the web UI URL. The Amazon Cognito hosted sign-in page opens.
 
 The solution authenticates you through Amazon Cognito, which federates to AWS IAM Identity Center using SAML 2.0. Sign in with your IAM Identity Center credentials.

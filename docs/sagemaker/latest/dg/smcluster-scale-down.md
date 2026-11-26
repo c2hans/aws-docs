@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/smcluster-scale-down
 
 You can scale down the number of instances running on your Amazon SageMaker HyperPod cluster. You might want to scale down a cluster for various reasons, such as reduced resource utilization or cost optimization.
 
+**Note**
+For EKS-orchestrated clusters that use continuous provisioning, you can move these nodes to another instance group instead of removing them. The same instances keep running in the target instance group. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
 The following page outlines two main approaches to scaling down:
 + **Scale down at the instance group level:** This approach uses the `UpdateCluster` API, with which you can:
   + Scale down the instance counts for specific instance groups independently. SageMaker AI handles the termination of nodes in a way that reaches the new target instance counts you've set for each group. See [Scale down an instance group](#smcluster-scale-down-updatecluster).

@@ -11,9 +11,9 @@ Enable maintenance mode before you continue, so that managers and users cannot m
 
 1. Log in to the web UI as an **Administrator**.
 
-1. From the left pane, choose **Settings**, then choose the **General** tab.
+1. From the left pane, choose **Settings**, then choose **General**.
 
-1. Under **Maintenance Mode**, turn on the **Maintenance mode** toggle, and choose **Save**.
+1. Under **Maintenance mode**, turn on the **Maintenance mode** toggle, and choose **Save changes**.
 
 1. On the confirmation dialog, choose **Turn on maintenance mode**.
 

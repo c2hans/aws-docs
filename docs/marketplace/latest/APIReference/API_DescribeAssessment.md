@@ -123,7 +123,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[\w\-]+$`
 
  ** [AssessmentResult](#API_DescribeAssessment_ResponseSyntax) **   <a name="AWSMarketplaceService-DescribeAssessment-response-AssessmentResult"></a>
-The overall result of the assessment.
+The overall result of the assessment. Omitted when the assessment doesn't have a result yet.
 Type: String
 Valid Values: `PASS | FAIL`
 

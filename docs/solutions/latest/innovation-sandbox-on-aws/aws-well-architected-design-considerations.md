@@ -36,6 +36,8 @@ The solution implements comprehensive security controls:
   + Integrates with AWS IAM Identity Center for centralized access control.
   + Automatically implements least privilege permissions.
   + Enforces role-based access across sandbox accounts.
+  + Limits the Sandbox Spaces agent to the permissions of the requesting user in the sandbox account.
+  + Filters remote MCP server tools by role and enforces role-based access in the API.
 +  **Network security**
   + Isolates sandbox environments from production systems.
   + Restricts access to internal networks.
@@ -44,6 +46,7 @@ The solution implements comprehensive security controls:
   + Prevents access to sensitive corporate resources.
   + Implements service control policies for data protection.
   + Maintains isolation between sandbox environments.
+  + Isolates Sandbox Spaces conversation memory by lease and by user.
 
 ## Reliability
 <a name="reliability"></a>
@@ -95,6 +98,7 @@ The solution optimizes costs through multiple mechanisms:
   + Implements multi-tier budget threshold monitoring.
   + Provides visibility into spending across accounts.
   + Reduces monthly cost overruns through automated controls.
+  + Counts Sandbox Spaces model usage toward the lease budget.
 
 **Note**
 Identification of cost/budget overrun per account is best effort due to Cost Explorer service limitation.

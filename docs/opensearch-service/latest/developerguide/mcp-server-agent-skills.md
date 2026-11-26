@@ -10,6 +10,8 @@ You can work with Amazon OpenSearch Service and OpenSearch Serverless directly f
 
 Together, the skill tells the agent what to do and the AWS MCP Server gives it the authenticated access to do it – against managed OpenSearch Service domains and OpenSearch Serverless collections alike.
 
+To integrate an application with Amazon OpenSearch Memory, use the [amazon-opensearch-memory skill](amazon-opensearch-memory-skill.md). It helps your agent create spaces, write events, and search memories, and it works with the same AWS MCP Server.
+
 **Note**
 The fastest way to get both is to install the `aws-data-analytics` plugin, which bundles the AWS MCP Server configuration and the OpenSearch skill in a single install.
 
@@ -35,6 +37,8 @@ Investigate why my service is returning 500s and correlate with recent traces
 Set up an OpenSearch Serverless collection for my search application
 ```
 
+For Amazon OpenSearch Memory tasks, see [amazon-opensearch-memory skill](amazon-opensearch-memory-skill.md).
+
 ## Get started
 <a name="ai-agent-integrations-get-started"></a>
 
@@ -42,4 +46,4 @@ Set up an OpenSearch Serverless collection for my search application
 
 1. Make sure your AWS credentials are configured with permission for the OpenSearch operations you intend to run. See [Identity-based policies](ac.md#ac-types-identity) for domains and [Data access control for Amazon OpenSearch Serverless](serverless-data-access.md) for collections.
 
-1. Ask your agent an OpenSearch question. It loads the `amazon-opensearch-service` skill and runs the work for you.
+1. Ask your agent an OpenSearch question. It loads the `amazon-opensearch-service` skill and runs the work for you. For a question about Amazon OpenSearch Memory, the agent loads the `amazon-opensearch-memory` skill instead. See [amazon-opensearch-memory skill](amazon-opensearch-memory-skill.md).

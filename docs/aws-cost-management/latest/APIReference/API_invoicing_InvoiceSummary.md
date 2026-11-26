@@ -81,7 +81,7 @@ Required: No
  ** InvoiceType **   <a name="awscostmanagement-Type-invoicing_InvoiceSummary-InvoiceType"></a>
  The type of invoice.
 Type: String
-Valid Values: `INVOICE | CREDIT_MEMO | PAYMENT_RECEIPT`
+Valid Values: `INVOICE | CREDIT_MEMO | PAYMENT_RECEIPT | SETTLEMENT_STATEMENT | SETTLEMENT_STATEMENT_CREDIT`
 Required: No
 
  ** IssuedDate **   <a name="awscostmanagement-Type-invoicing_InvoiceSummary-IssuedDate"></a>

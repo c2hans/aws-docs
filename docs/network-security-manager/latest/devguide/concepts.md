@@ -156,3 +156,10 @@ AWS Network Security Manager is a regional service. You create resources and dep
 AWS Network Security Manager uses an IAM service-linked role named `AWSServiceRoleForNetworkSecurityManager` to act in the member accounts of your organization on your behalf. This role trusts the `network-security-manager.amazonaws.com` service principal. It uses the `NetworkSecurityManagerServiceRolePolicy` AWS managed policy.
 
 AWS Network Security Manager creates this role automatically when you enable the service, so there is no manual setup. The role lets AWS Network Security Manager manage AWS WAF and AWS Shield Advanced protections, discover protected resources through AWS Config, and perform cross-account operations. For more information, see [Using service-linked roles for AWS Network Security Manager](using-service-linked-roles.md).
+
+### AWS managed templates
+<a name="concepts-managed-templates"></a>
+
+AWS provides predefined templates that help you accelerate and ease policy creation. These templates reference predefined rules and rule groups associated with their respective firewalls. Each template focuses on a specific firewall type and use case.
+
+AWS defines the managed template; you can't edit it. Its contents change as AWS updates take place. The names of these templates start with the string `AWSManagedTemplate` followed by the supported firewall and its use case. For example: `AWSManagedTemplateIGWFirewallBaseline`.

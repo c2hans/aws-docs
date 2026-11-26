@@ -162,7 +162,7 @@ Scratch 2, Persistent 1, and Persistent 2 deployment types are available in the 
 | Europe (Spain) | ✓ | ✓ | ✓ | ✓ |
 | Europe (Stockholm) | ✓ | ✓ | ✓ | ✓ |
 | Europe (Zurich) | ✓ | ✓ | ✓ | ✓ |
-| Israel (Tel Aviv) | ✓ \* |  |  | ✓ |
+| Israel (Tel Aviv) | ✓ | ✓ |  | ✓ |
 | Mexico (Central) | ✓ \* |  |  |  |
 | Middle East (Bahrain) |  |  | ✓ | ✓ |
 | Middle East (UAE) |  |  | ✓ | ✓ |

@@ -23,6 +23,7 @@ Isolated and confidential pods that run in Nitro Sandboxes can mount Amazon EFS 
 + Take note of the resource quotas for Amazon EFS. For more information, see [Amazon EFS quotas](https://docs.aws.amazon.com/efs/latest/ug/limits.html).
 + Starting in version [2.0.0](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/CHANGELOG-2.x.md#v200), this driver switched from using `stunnel` to `efs-proxy` for TLS connections. When `efs-proxy` is used, it will open a number of threads equal to one plus the number of cores for the node it’s running on.
 + The Amazon EFS CSI driver isn’t compatible with Amazon EKS Hybrid Nodes.
++ Don’t install `amazon-efs-utils` on worker nodes that run the Amazon EFS CSI driver. The driver packages its own copy of `efs-utils` and manages the mount process, including the watchdog that maintains TLS connections. Installing `amazon-efs-utils` on the node runs a second watchdog, and the two can conflict when managing TLS configuration and state files. This can cause mount failures and permission denied errors on Amazon EFS directories hours after the mounts initially succeed. If you need to mount an Amazon EFS file system directly on a node, do so on nodes that don’t run the Amazon EFS CSI driver.
 
 ## Prerequisites
 <a name="efs-csi-prereqs"></a>
@@ -306,6 +307,13 @@ Run the following commands to create an IAM role with AWS CLI.
 
 We recommend that you install the Amazon EFS CSI driver through the Amazon EKS add-on. To add an Amazon EKS add-on to your cluster, see [Create an Amazon EKS add-on](creating-an-add-on.md). For more information about add-ons, see [Amazon EKS add-ons](eks-add-ons.md). If you’re unable to use the Amazon EKS add-on, we encourage you to submit an issue about why you can’t to the [Containers roadmap GitHub repository](https://github.com/aws/containers-roadmap/issues).
 
+**Note**
+If you use IAM roles for service accounts, you must associate the IAM role that you created in Step 1 with the driver’s service account:
+When you create the Amazon EKS add-on, specify the role in the **Service account role** field in the console, or with the `--service-account-role-arn` option of the `aws eks create-addon` command.
+For a self-managed installation, annotate the `efs-csi-controller-sa` service account with the role ARN, as described in the driver [installation documentation](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/docs/install.md#set-up-driver-permission) on GitHub.
+If you add the role association after the driver is already installed, restart the controller for the change to take effect: `kubectl rollout restart deployment efs-csi-controller -n kube-system`.
+If you use EKS Pod Identities, you don’t need to annotate the service account.
+
 **Important**
 Before adding the Amazon EFS driver as an Amazon EKS add-on, confirm that you don’t have a self-managed version of the driver installed on your cluster. If so, see [Uninstalling the Amazon EFS CSI Driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/docs/install.md#uninstalling-the-amazon-efs-csi-driver) on GitHub.
 
@@ -320,3 +328,7 @@ To create an Amazon EFS file system, see [Create an Amazon EFS file system for A
 <a name="efs-sample-app"></a>
 
 You can deploy a variety of sample apps and modify them as needed. For more information, see [Examples](https://github.com/kubernetes-sigs/aws-efs-csi-driver/tree/master/examples/kubernetes) on GitHub.
+
+The examples include complete manifests for [dynamic provisioning](https://github.com/kubernetes-sigs/aws-efs-csi-driver/tree/master/examples/kubernetes/efs/dynamic_provisioning) and [static provisioning](https://github.com/kubernetes-sigs/aws-efs-csi-driver/tree/master/examples/kubernetes/efs/static_provisioning) on GitHub. The dynamic provisioning example defines a `StorageClass` and a `PersistentVolumeClaim`, and the driver creates the `PersistentVolume` for you. The static provisioning example defines all three.
+
+For the `StorageClass` parameters that dynamic provisioning supports, such as `provisioningMode`, `fileSystemId`, and `directoryPerms`, see [Storage Class Parameters for Dynamic Provisioning](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/docs/parameters.md) on GitHub.

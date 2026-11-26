@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/i
 | --- |--- |
 | **Time to read** |  10 minutes  |
 | **Purpose** | Help determine which AWS identity service is the best fit for your organization. |
-| **Last updated** | August 15, 2025 |
+| **Last updated** | November 24, 2026 |
 
 ## Introduction
 <a name="intro"></a>
@@ -25,7 +25,7 @@ As shown in the preceding diagram, identity is the unique identification of an e
 
 |  |  |
 | --- |--- |
-| **Services covered** |  +  [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.htm) <br />+  [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) <br />+  [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) <br />+  [AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) <br />+  [IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html) <br />+  [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) <br />+  [Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html)   |
+| **Services covered** |  +  [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) <br />+  [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) <br />+  [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) <br />+  [AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) <br />+  [IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html) <br />+  [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) <br />+  [Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html)   |
 
  Though there are similarities between some identity services, these services address different scenarios. This decision guide helps you get started and choose the right AWS identity service for your use case.
 
@@ -53,13 +53,15 @@ The preceding video is from a re:Inforce 2024 session by Lucas Wagner, a senior 
 ## Choose which AWS identity services to use
 <a name="choose"></a>
 
+**Note**
+AWS publishes recommended practices for securing workforce access with IAM Identity Center at the organization level. For more information about security best practices, see [Security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the IAM User Guide.
+
 The following table helps you find recommended AWS services for your use cases. For best results, consider the additional services and capabilities recommended for your objective.
 
 | I am a... | I want to... | AWS identity service | Additional services and capabilities to consider |
 | --- | --- | --- | --- |
-| Cloud/Identity administrator | Make it easier for my team to grant and audit access to AWS applications, such as Amazon Q and Amazon SageMaker AI. | [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | [Trusted identity propagation in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html)<br />[AWS Lake Formation](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-lf.html)<br />[Amazon S3 Access Grants](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-s3.html) |
-| Cloud/Identity administrator | Make it easier for the owners of my organization's data to grant data access by workforce user or group. | [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | [Trusted identity propagation in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html)<br />[AWS Lake Formation](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-lf.html)<br />[Amazon S3 Access Grants](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-s3.html) |
-| Cloud/Identity administrator<br />OR<br />Developer | Configure workforce access to AWS accounts and the resources in them, such as Amazon S3 buckets. | [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)<br />[Federation with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_iam) | [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)<br />[Centralize root access for member accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-enable-root-access.html)<br />[Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) |
+| Cloud/Identity administrator | Make it easier for my team to grant and audit access to AWS applications, such as Amazon Q and Amazon SageMaker AI.<br />Make it easier for data owners to grant data access by workforce user or group. | [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | [Trusted identity propagation in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html)<br />[AWS Lake Formation](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-lf.html)<br />[Amazon S3 Access Grants](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-s3.html) |
+| Cloud/Identity administrator<br />OR<br />Developer | Configure workforce access to AWS accounts and the resources in them, such as Amazon S3 buckets. | Connect your workforce through IAM Identity Center at the organization level, then assign access based on how you manage roles:<br />[IAM account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html) is suited when you create and manage your own IAM roles.<br />IAM Identity Center [permission sets](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetsconcept.html) are suited when you want AWS to provision and maintain standardized roles across accounts.<br />[IAM federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_iam) can be a good fit for existing per-account setups or multi-tenant SaaS that needs account isolation. It does not use IAM Identity Center. | [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)<br />[Centralize root access for member accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-enable-root-access.html)<br />[Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) |
 | Cloud/Identity administrator | Run Active Directory dependent workloads in AWS. | [AWS Directory Service for Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html), also known as AWS Managed Microsoft AD | [Integrations with AWS services and applications](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) |
 | Cloud/Identity administrator | Join my AWS workloads to my on-premises Microsoft Active Directory Domain Services. | [AWS Directory Service for Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html), also known as AWS Managed Microsoft AD | [Integrations with AWS services and applications](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) |
 | Cloud/Identity administrator | Configure the access of my workloads to AWS resources. | [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) | [AWS Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html) |
@@ -95,6 +97,8 @@ An [*organization instance*](https://docs.aws.amazon.com/singlesignon/latest/use
 <a name="federation-with-iam"></a>
 
 You can also use IAM to federate workforce users through your identity provider to specific AWS accounts. Users assume IAM roles to perform scoped actions on the AWS resources in the account. You can federate with an identity provider that provides identity information using either OpenID Connect (OIDC) or SAML 2.0. For more information, see [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html).
+
+If you already federate your identity provider directly into [IAM roles in each account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_iam), that configuration remains supported and requires no migration. You can run it in parallel with IAM Identity Center and adopt central management later, at your own pace.
 
 ### For your workloads
 <a name="for-your-workloads"></a>
@@ -164,11 +168,14 @@ This section suggests additional services you should consider.
 <a name="resources"></a>
 
  User guides with specific deployment guidance for AWS identity services:
-+ [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.htm)
++ [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
   + [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+  + [IAM account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html)
   + [IAM federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_iam)
+  + [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
   + [AWS STS API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
 + [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
+  + [Trusted identity propagation](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html)
 + [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)
   + [Policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html)
   + [Policy validation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-checks-validating-policies.html)

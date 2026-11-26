@@ -12,4 +12,4 @@ Welcome to the * AWS Entity Resolution API Reference*.
 
 To learn more about AWS Entity Resolution concepts, procedures, and best practices, see the [AWS Entity Resolution User Guide](https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html).
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

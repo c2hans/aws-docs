@@ -177,11 +177,11 @@ Version information for a contact.
 Type: [ContactVersion](API_ContactVersion.md) object
 
  ** [visibilityEndTime](#API_DescribeContact_ResponseSyntax) **   <a name="groundstation-DescribeContact-response-visibilityEndTime"></a>
- Projected time in UTC your satellite will set below the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts.
+Projected time in UTC your satellite will set below the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts.
 Type: Timestamp
 
  ** [visibilityStartTime](#API_DescribeContact_ResponseSyntax) **   <a name="groundstation-DescribeContact-response-visibilityStartTime"></a>
- Projected time in UTC your satellite will rise above the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts.
+Projected time in UTC your satellite will rise above the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts.
 Type: Timestamp
 
 ## Errors

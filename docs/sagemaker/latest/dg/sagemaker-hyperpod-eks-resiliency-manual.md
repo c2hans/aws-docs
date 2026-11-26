@@ -68,3 +68,6 @@ kubectl label nodes <node-name> \
 ```
 
 After the labels `UnschedulablePendingReplacement` or `UnschedulablePendingReboot` are applied, you should be able to see the node is terminated or rebooted in a few minutes.
+
+**Note**
+A node cannot be rebooted or replaced while it is moving between instance groups. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).

@@ -13,7 +13,7 @@ We recommend that you configure all EC2 instances that Image Builder launches fr
 #### [ Console ]
 
 **Tip**
-Now you can create with AI. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).
+Now you can create with AI. For more information, see [Creating and updating resources with AI](ai-assisted-resource-creation.md).
 
 To create an infrastructure configuration resource from the Image Builder console, follow these steps:
 
@@ -190,7 +190,7 @@ This example targets a host resource group instead of a specific host ID. Becaus
    ```
 
 **Build on an instance from an Auto Scaling group**
-This example takes the build instance from an existing Amazon EC2 Auto Scaling group and waits up to 10 minutes for an instance if the group has none available. For the requirements, see [Build on an instance from an Auto Scaling group](infra-config-parent-instance.md).
+This example takes the build instance from an existing Amazon EC2 Auto Scaling group. If the group has no instance available, Image Builder waits up to 10 minutes for one. For the requirements, see [Build on an instance from an Auto Scaling group](infra-config-parent-instance.md).
 
    The following example JSON file defines this infrastructure configuration:
 
@@ -306,6 +306,18 @@ New-EC2IBInfrastructureConfiguration -Name {{host-resource-group-infra-config}} 
     -TerminateInstanceOnFailure $false `
     -Placement_Tenancy host `
     -Placement_HostResourceGroupArn arn:aws:resource-groups:{{us-west-2}}:{{111122223333}}:group/{{my-host-group}}
+```
+
+**Build on an instance from an Auto Scaling group**
+This example takes the build instance from an existing Amazon EC2 Auto Scaling group. If the group has no instance available, Image Builder waits up to 10 minutes for one. The `ParentInstance_AutoScalingGroup_CapacityWaitTimeoutSecond` parameter sets the wait time in seconds. For the requirements, see [Build on an instance from an Auto Scaling group](infra-config-parent-instance.md).
+
+The following example creates this infrastructure configuration:
+
+```ps
+New-EC2IBInfrastructureConfiguration -Name {{parent-instance-infra-config}} `
+    -InstanceProfileName {{EC2InstanceProfileForImageBuilder}} `
+    -ParentInstance_AutoScalingGroup_Name {{my-build-pool}} `
+    -ParentInstance_AutoScalingGroup_CapacityWaitTimeoutSecond 600
 ```
 
 ------

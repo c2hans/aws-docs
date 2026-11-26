@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
   <tr><td>Form.ValidationErrors</td><td>Number</td><td>Number of validation errors in the form.</td></tr>
   <tr><td>Form.FieldsCompleted</td><td>Number</td><td>Number of fields completed.</td></tr>
   <tr><td>Form.FieldsRequired</td><td>Number</td><td>Number of fields required.</td></tr>
-  <tr><td>Form.Inputs</td><td>String-to-string map</td><td>Key-value pairs of the form input fields. The key is the name of the input field, and the value is the value of the input field.<br />Limit: 50 entries</td></tr>
+  <tr><td>Form.Inputs</td><td>String</td><td>JSON-serialized string of key-value pairs of the form input fields. The key is the name of the input field, and the value is the value of the input field. For example, <code>{"origin":"SEA","destination":"JFK"}</code>.<br />Limit: 50 entries</td></tr>
   <tr><td colspan="3">Search</td></tr>
   <tr><td>Search.Query</td><td>String</td><td>Query string used in the input</td></tr>
   <tr><td>Search.TotalMatchingResults</td><td>Number</td><td>Total number of search results.</td></tr>

@@ -122,7 +122,7 @@ runtime {
 }
 ```
 
-HealthOmics sets the **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** environment variable automatically in the container. Its value is the active profile's accelerator type (for example, `nvidia-l40s`) or `cpu` for a CPU-only profile. Use it to branch your command when GPU and CPU code paths differ.
+HealthOmics sets the **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** environment variable automatically in the container. Its value is the active profile's accelerator type (for example, `nvidia-l40s`) or `cpu` for a CPU-only profile. For an expanded accelerator search profile, it is the accelerator type of the instance that the task runs on. Use it to branch your command when GPU and CPU code paths differ.
 
 If every profile in the list is exhausted, the task fails with failure reason `ALL_PROFILES_INSTANCE_RESERVATION_FAILED`. OOM and service-error retries operate within the current profile and do not advance to the next one.
 

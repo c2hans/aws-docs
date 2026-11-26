@@ -210,7 +210,7 @@ Skills created in the AWS DevOps Agent Operator Web App contain a name, descript
   + **Name** – Lowercase letters, numbers, and hyphens only (maximum 64 characters). Must not start or end with a hyphen. Example: `rds-throttling-investigation`
   + **Description** – Brief explanation of when to use this skill (minimum 100 characters recommended, maximum 1,024 characters). This helps the agent determine when to activate the skill.
   + **Status** – Set to Active (default) or Inactive. Inactive skills are not used by the agent.
-  + **Agent Type** – Select one or more agent types that can use this skill. **Generic** is selected by default and makes the skill available to all agent types. To target specific agents, deselect Generic and choose from: On-demand, Incident Triage, Incident RCA, Incident Mitigation, Evaluation, or Release testing.
+  + **Agent Type** – Select one or more agent types that can use this skill. **Generic** is selected by default and makes the skill available to all agent types. To target specific agents, deselect Generic and choose from: **On-demand**, **Incident Triage**, **Incident RCA**, **Incident Mitigation**, **Incident UI**, **Evaluation**, or **Release testing**.
   + **Instructions** – Step-by-step procedures in Markdown format. Be specific and actionable.
 + Choose "Create" to save the skill.
 
@@ -265,7 +265,7 @@ description: Comprehensive RDS performance investigation procedures
 + Choose **Add skill**.
 + Select **Upload skill** from the modal.
 + Drag and drop your .zip file or choose to browse (ZIP files only, maximum 6 MB).
-+ Select one or more agent types that can use this skill (Generic is selected by default and applies to all agent types; deselect to target On-demand, Incident Triage, Incident RCA, Incident Mitigation, Evaluation, or Release testing specifically).
++ Select one or more agent types that can use this skill (**Generic** is selected by default and applies to all agent types; deselect to target **On-demand**, **Incident Triage**, **Incident RCA**, **Incident Mitigation**, **Incident UI**, **Evaluation**, or **Release testing** specifically).
 + Review the zip file requirements and validation results.
 + Choose "Upload" to add the skill to your Agent Space.
 
@@ -371,7 +371,7 @@ AWS DevOps Agent provides comprehensive skill management capabilities through th
 
 **Viewing skills** – Choose any skill to see its detail view. Skills created in the UI display editable content. You can modify the name, description, or instructions, and then choose **Save changes**. Skills uploaded as zip files display a file tree showing SKILL.md and any additional directories like references/ and assets/. Choose a file in the tree to view or edit it. Skills imported from a repository display their files in read-only mode. Skills that you added from the Skills Catalog open in their own tab instead, which shows the skill's current version in the catalog. For more information, see [Viewing catalog skills](devops-agent-skills-skills-catalog.md#viewing-catalog-skills).
 
-**Selecting agents for a skill** – Configure which agent types can use each skill when creating or editing it. In the Agent Type dropdown, select one or more agent types using the checkboxes: **Generic** (default — applies to all agent types), **On-demand** (conversational queries), **Incident Triage** (initial incident assessment), **Incident RCA** (root cause analysis), **Incident Mitigation** (automated incident response), **Evaluation** (proactive recommendations), or **Release testing** (automated UI and API testing). Generic is selected by default and makes the skill available to all agent types. Skills targeted to specific agents reduce context consumption and improve agent focus. You can't change the agent types of a skill that you added from the Skills Catalog.
+**Selecting agents for a skill** – Configure which agent types can use each skill when creating or editing it. In the Agent Type dropdown, select one or more agent types using the checkboxes: **Generic** (default — applies to all agent types), **On-demand** (conversational queries), **Incident Triage** (initial incident assessment), **Incident RCA** (root cause analysis), **Incident Mitigation** (automated incident response), **Incident UI** (the investigation summary and the [Slack card and replies](connecting-to-ticketing-and-chat-connecting-slack.md#customizing-the-card-and-replies)), **Evaluation** (proactive recommendations), or **Release testing** (automated UI and API testing). Generic is selected by default and makes the skill available to all agent types. Skills targeted to specific agents reduce context consumption and improve agent focus. You can't change the agent types of a skill that you added from the Skills Catalog.
 
 **Activating and deactivating skills** – Temporarily disable skills without deleting them. On the **Skills** tab, turn off the toggle on the skill's row. The agent stops loading the skill for new investigations, and its content and configuration stay as they are. In-progress investigations continue using the skill. Turn the toggle back on to make the skill immediately available again. To activate or deactivate skills programmatically, see [Activating and deactivating skills](about-aws-devops-agent-managing-assets.md#activating-and-deactivating-skills) on the Managing assets page.
 

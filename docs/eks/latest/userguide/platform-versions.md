@@ -37,7 +37,7 @@ https://github.com/awsdocs/amazon-eks-user-guide/commits/mainline/latest/ug/vers
 ## Kubernetes version `1.37`
 <a name="platform-versions-1-37"></a>
 
-The following admission controllers are enabled for all `1.37` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`.
+The following admission controllers are enabled for all `1.37` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ClusterTrustBundleAttest`, `ValidatingAdmissionPolicy`, `PodTopologyLabels`, `MutatingAdmissionPolicy`, `NodeDeclaredFeatureValidator`, `PodResizeValidator`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ The following admission controllers are enabled for all `1.37` platform versions
 ## Kubernetes version `1.36`
 <a name="platform-versions-1-36"></a>
 
-The following admission controllers are enabled for all `1.36` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`.
+The following admission controllers are enabled for all `1.36` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ValidatingAdmissionPolicy`, `PodTopologyLabels`, `MutatingAdmissionPolicy`, `NodeDeclaredFeatureValidator`, `PodResizeValidator`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ The following admission controllers are enabled for all `1.36` platform versions
 ## Kubernetes version `1.35`
 <a name="platform-versions-1-35"></a>
 
-The following admission controllers are enabled for all `1.35` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`.
+The following admission controllers are enabled for all `1.35` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ValidatingAdmissionPolicy`, `PodTopologyLabels`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |
@@ -105,7 +105,7 @@ The following admission controllers are enabled for all `1.35` platform versions
 ## Kubernetes version `1.34`
 <a name="platform-versions-1-34"></a>
 
-The following admission controllers are enabled for all `1.34` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`.
+The following admission controllers are enabled for all `1.34` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ValidatingAdmissionPolicy`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |
@@ -143,7 +143,7 @@ The following admission controllers are enabled for all `1.34` platform versions
 ## Kubernetes version `1.33`
 <a name="platform-versions-1-33"></a>
 
-The following admission controllers are enabled for all `1.33` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`.
+The following admission controllers are enabled for all `1.33` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ValidatingAdmissionPolicy`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |
@@ -193,7 +193,7 @@ The following admission controllers are enabled for all `1.33` platform versions
 ## Kubernetes version `1.32`
 <a name="platform-versions-1-32"></a>
 
-The following admission controllers are enabled for all `1.32` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`.
+The following admission controllers are enabled for all `1.32` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ValidatingAdmissionPolicy`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |
@@ -252,7 +252,7 @@ The following admission controllers are enabled for all `1.32` platform versions
 ## Kubernetes version `1.31`
 <a name="platform-versions-1-31"></a>
 
-The following admission controllers are enabled for all `1.31` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ResourceQuota`, `ObjectCount`.
+The following admission controllers are enabled for all `1.31` platform versions: `NodeRestriction`, `ExtendedResourceToleration`, `NamespaceLifecycle`, `LimitRanger`, `ServiceAccount`, `TaintNodesByCondition`, `PodSecurity`, `Priority`, `DefaultTolerationSeconds`, `DefaultStorageClass`, `StorageObjectInUseProtection`, `PersistentVolumeClaimResize`, `RuntimeClass`, `CertificateApproval`, `CertificateSigning`, `CertificateSubjectRestriction`, `DefaultIngressClass`, `MutatingAdmissionWebhook`, `ValidatingAdmissionWebhook`, `ValidatingAdmissionPolicy`, `ResourceQuota`, `ObjectCount`, `DenyExemptAPF`.
 
 | Kubernetes version | EKS platform version | Release notes | Release date |
 | --- | --- | --- | --- |

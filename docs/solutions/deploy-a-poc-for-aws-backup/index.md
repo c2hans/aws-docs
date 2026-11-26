@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploy-a-poc-for-aws-backup/in
 title: 'Deploy a PoC for AWS Backup'
 canonical_url: https://docs.aws.amazon.com/solutions/deploy-a-poc-for-aws-backup/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Deploy a PoC for AWS Backup

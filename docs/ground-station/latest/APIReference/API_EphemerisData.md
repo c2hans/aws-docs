@@ -14,10 +14,10 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** azEl **   <a name="groundstation-Type-EphemerisData-azEl"></a>
 Azimuth elevation ephemeris data.
- Use this ephemeris type to provide pointing angles directly, rather than satellite orbital elements. Use this when you need precise antenna pointing but have imprecise or unknown satellite trajectory information.
- The azimuth elevation data specifies the antenna pointing direction at specific times relative to a ground station location. AWS Ground Station uses 4th order Lagrange interpolation to compute pointing angles between the provided data points.
+Use this ephemeris type to provide pointing angles directly, rather than satellite orbital elements. Use this when you need precise antenna pointing but have imprecise or unknown satellite trajectory information.
+The azimuth elevation data specifies the antenna pointing direction at specific times relative to a ground station location. AWS Ground Station uses 4th order Lagrange interpolation to compute pointing angles between the provided data points.
  AWS Ground Station automatically filters interpolated pointing angles, including only those that are above the site mask elevation of the specified ground station.
- For more detail about providing azimuth elevation ephemerides to AWS Ground Station, see the [azimuth elevation ephemeris section](https://docs.aws.amazon.com/ground-station/latest/ug/providing-azimuth-elevation-ephemeris-data.html) of the AWS Ground Station User Guide.
+For more detail about providing azimuth elevation ephemerides to AWS Ground Station, see the [azimuth elevation ephemeris section](https://docs.aws.amazon.com/ground-station/latest/ug/providing-azimuth-elevation-ephemeris-data.html) of the AWS Ground Station User Guide.
 Type: [AzElEphemeris](API_AzElEphemeris.md) object
 Required: No
 
@@ -29,7 +29,7 @@ Required: No
 
  ** tle **   <a name="groundstation-Type-EphemerisData-tle"></a>
 Two-line element set (TLE) ephemeris.
- For more detail about providing Two-line element sets to AWS Ground Station, see the [TLE section](https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-ephemeris-data.html) of the AWS Ground Station user guide.
+For more detail about providing Two-line element sets to AWS Ground Station, see the [TLE section](https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-ephemeris-data.html) of the AWS Ground Station user guide.
 Type: [TLEEphemeris](API_TLEEphemeris.md) object
 Required: No
 

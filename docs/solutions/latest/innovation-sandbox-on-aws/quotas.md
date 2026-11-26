@@ -24,6 +24,7 @@ Use the following links to view service quotas. To view the service quotas for a
 |  [AWS RAM](https://docs.aws.amazon.com/general/latest/gr/ram.html)  |  [Amazon S3](https://docs.aws.amazon.com/general/latest/gr/s3.html)  |
 |  [AWS Secrets Manager](https://docs.aws.amazon.com/general/latest/gr/asm.html)  |  [Amazon SQS](https://docs.aws.amazon.com/general/latest/gr/sqs-service.html)  |
 |  [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/general/latest/gr/ssm.html#parameter-store)  |  [AWS Step Functions](https://docs.aws.amazon.com/general/latest/gr/step-functions.html)  |
+|  [Amazon SES](https://docs.aws.amazon.com/general/latest/gr/ses.html)  |  [Amazon SNS](https://docs.aws.amazon.com/general/latest/gr/sns.html)  |
 
 ## AWS CloudFormation quotas
 <a name="aws-cloudformation-quotas"></a>

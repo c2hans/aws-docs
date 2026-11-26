@@ -26,7 +26,7 @@ Required: Yes
  ** Status **   <a name="sagemaker-Type-NodeAdditionResult-Status"></a>
 The current status of the node. Possible values include `Pending`, `Running`, `Failed`, `ShuttingDown`, `SystemUpdating`, `DeepHealthCheckInProgress`, and `NotFound`.
 Type: String
-Valid Values: `Running | Failure | Pending | ShuttingDown | SystemUpdating | DeepHealthCheckInProgress | NotFound`
+Valid Values: `Running | Failure | Pending | ShuttingDown | SystemUpdating | DeepHealthCheckInProgress | NotFound | DetachInProgress | AttachInProgress`
 Required: Yes
 
  ** AvailabilityZones **   <a name="sagemaker-Type-NodeAdditionResult-AvailabilityZones"></a>

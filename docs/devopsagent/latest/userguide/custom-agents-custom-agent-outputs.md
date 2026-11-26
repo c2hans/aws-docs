@@ -51,7 +51,7 @@ You can also browse all artifacts in your Agent Space from the **Artifacts** pag
 
 Notifications let you follow a running agent in real time. A custom agent sends short progress updates to your configured notification channels while it works. For example, a notification might appear as a message in the chat thread for the invocation. Unlike text responses, which are recorded in the invocation trajectory, notifications reach you as work happens, so you learn about a notable finding when it occurs rather than only at the end.
 
-The agent sends each notification to the notification channels set up for your Agent Space, such as a connected Slack channel. If you have not set up a notification channel, the agent still runs as normal; it just does not send a notification. To set up a chat channel, follow the steps in [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.md).
+The agent sends each notification to the notification channels set up for your Agent Space, such as a connected Slack channel. A channel whose notifications are off doesn't receive them. For more information about notification policies, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md). If you have not set up a notification channel, the agent still runs as normal; it just does not send a notification. To set up a chat channel, follow the steps in [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.md).
 
 ### Producing notifications
 <a name="producing-notifications"></a>

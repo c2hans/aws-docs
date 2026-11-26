@@ -59,7 +59,7 @@ Pattern: `[^\x00-\x1F\x7F]*`
 Required: No
 
  ** [requestedSupportPlan](#API_channel_UpdateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_UpdateRelationship-request-requestedSupportPlan"></a>
-The updated support plan for the relationship.
+The updated support plan for the relationship. Applies only to billing transfer relationships.
 Type: [SupportPlan](API_channel_SupportPlan.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No

@@ -76,6 +76,9 @@ The ID of the associated resource:
 + For an Application Load Balancer, the ID is the `load-balancer-id` in the ARN syntax:
 
   `arn:partition:elasticloadbalancing:region:account-id:loadbalancer/app/load-balancer-name/load-balancer-id`
++ For an Elastic Load Balancing for Envoy proxy, the ID is the full ARN of the proxy:
+
+  `arn:partition:elasticloadbalancing:region:account-id:proxy/proxy-name:proxy-id`
 + For an Amazon API Gateway REST API, the ID is the `api-id` in the ARN syntax:
 
   `arn:partition:apigateway:region::/restapis/api-id/stages/stage-name`
@@ -90,20 +93,20 @@ The ID of the associated resource:
   `arn:partition:apprunner:region:account-id:service/apprunner-service-name/apprunner-service-id`
 
 **httpSourceName**
-The source of the request. Possible values: `CF` for Amazon CloudFront, `APIGW` for Amazon API Gateway, `ALB` for Application Load Balancer, `APPSYNC` for AWS AppSync, `COGNITOIDP` for Amazon Cognito, `APPRUNNER` for App Runner, and `VERIFIED_ACCESS` for Verified Access.
+The source of the request. Possible values: `CF` for Amazon CloudFront, `APIGW` for Amazon API Gateway, `ALB` for Application Load Balancer, `APPSYNC` for AWS AppSync, `COGNITOIDP` for Amazon Cognito, `APPRUNNER` for App Runner, `VERIFIED_ACCESS` for Verified Access, and `ELB_PROXY` for an Elastic Load Balancing for Envoy proxy.
 
 **httpVersion**
 The HTTP version.
 
 **ja3Fingerprint**
 The JA3 fingerprint of the request.
-JA3 fingerprint inspection is available only for Amazon CloudFront distributions and Application Load Balancers.
+JA3 fingerprint inspection is available only for Amazon CloudFront distributions, Application Load Balancers, and Elastic Load Balancing for Envoy proxies. For Elastic Load Balancing for Envoy proxies, HTTP/3 (QUIC) requests do not have a JA3 fingerprint.
 The JA3 fingerprint is a 32-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation.
 You provide this value when you configure a JA3 fingerprint match in your protection pack (web ACL) rules. For information about creating a match against the JA3 fingerprint, see [JA3 fingerprint](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-ja3-fingerprint) in the [Request components in AWS WAF](waf-rule-statement-fields-list.md) for a rule statement.
 
 **ja4Fingerprint**
 The JA4 fingerprint of the request.
-JA4 fingerprint inspection is available only for Amazon CloudFront distributions and Application Load Balancers.
+JA4 fingerprint inspection is available only for Amazon CloudFront distributions, Application Load Balancers, and Elastic Load Balancing for Envoy proxies. For Elastic Load Balancing for Envoy proxies, HTTP/3 (QUIC) requests do not have a JA4 fingerprint.
 The JA4 fingerprint is a 36-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation.
 You provide this value when you configure a JA4 fingerprint match in your protection pack (web ACL) rules. For information about creating a match against the JA4 fingerprint, see [JA4 fingerprint](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-ja4-fingerprint) in the [Request components in AWS WAF](waf-rule-statement-fields-list.md) for a rule statement.
 

@@ -665,7 +665,7 @@ The `cursor.min()` and `cursor.max()` methods require a `hint` that names the in
 | [$facet](facet.md) | No | No | No | Yes (8.0.2\+) | No |
 | $fill | No | No | No | No | No |
 | [$geoNear](geoNear.md) | Yes | Yes | Yes | Yes | Yes |
-| [$graphLookup](graphLookup.md) | No | No | No | Yes | No |
+| [$graphLookup](graphLookup.md) | No | No | No | Yes (8.0.2\+) | No |
 | [$group](group.md) | Yes | Yes | Yes | Yes | Yes |
 | [$indexStats](indexStats.md) | Yes | Yes | Yes | Yes | No |
 | [$limit](limit.md) | Yes | Yes | Yes | Yes | Yes |
@@ -685,7 +685,7 @@ The `cursor.min()` and `cursor.max()` methods require a `hint` that names the in
 | [$skip](skip.md) | Yes | Yes | Yes | Yes | Yes |
 | [$sort](sort.md) | Yes | Yes | Yes | Yes | Yes |
 | [$sortByCount](sortByCount.md) | No | No | No | Yes (8.0.1\+) | No |
-| $unionWith | - | - | No | No | No |
+| [$unionWith](unionWith.md) | - | - | No | Yes (8.0.3\+) | No |
 | [$unset](unset-stage.md) | - | - | No | Yes | No |
 | [$unwind](unwind.md) | Yes | Yes | Yes | Yes | Yes |
 | [$replaceWith](replaceWith.md) | No | No | No | Yes | No |

@@ -61,6 +61,19 @@ curl -fsSL https://github.com/aws/agent-toolkit-for-aws/blob/main/setup-instruct
 If you don't have an AWS account yet, the setup instructions start sign-up for you.
 
 ------
+#### [ Use your coding agent ]
+
+If you have an AI coding agent that supports the Model Context Protocol (MCP), such as Claude Code, Kiro, Codex, or Cursor, you can install the Agent Toolkit for AWS and connect it to your project. Copy and paste the following prompt into your coding agent to set up the Agent Toolkit for AWS:
+
+If you don't have an AWS account yet, the prompt also helps you create one.
+
+```
+I do not have an AWS account yet. Follow the setup instructions at https://docs.aws.amazon.com/agent-toolkit/latest/userguide/samples/setup.md to create one and set up the Agent Toolkit for AWS.
+```
+
+The agent guides you through setting up the Agent Toolkit, including the AWS MCP server configuration and agent skills. For more information about the Agent Toolkit for AWS, see the [Agent Toolkit User Guide](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html).
+
+------
 
 When you use our new AWS experience, your agent will install the AWS MCP server, and you get access to agent skills that can be used with your projects. You'll also get a rule file with guidance tuned for this experience. The rule file will also let you define what level of help you want the agent to provide. The following are the supported help levels:
 + **Low**: While you're building, the skill will only flag security risks. It won't suggest any improvements or alternatives to your architecture.

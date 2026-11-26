@@ -17,7 +17,7 @@ This guide covers:
 + Known issues and solutions [Known issues and solutions](#network-policies-troubleshooting-known-issues)
 
 **Note**
-Note that network policies are only applied to pods that are made by Kubernetes *Deployments*. For more limitations of the network policies in the VPC CNI, see [Considerations](cni-network-policy.md#cni-network-policy-considerations).
+Network policies apply to pods that a controller creates and to pods that you create directly. Pods in the same namespace whose names are the same before the last hyphen share network policy rules. For more information, see [A network policy applies to pods that it doesn’t select](#network-policies-troubleshooting-standalone-pods). For more limitations of the network policies in the VPC CNI, see [Considerations](cni-network-policy.md#cni-network-policy-considerations).
 
 You can troubleshoot and investigate network connections that use network policies by reading the [Network policy logs](#network-policies-troubleshooting-flowlogs) and by running tools from the [eBPF SDK](#network-policies-ebpf-sdk).
 
@@ -507,9 +507,11 @@ If you make a network policy `kind: NetworkPolicy` and it doesn’t affect the p
 
  **Solution**: The network policy agent in the VPC CNI can’t have as many ports specified as Calico does. Instead, use port ranges in the network policies. The maximum number of unique combinations of ports for each protocol in each `ingress:` or `egress:` selector in a network policy is 24. Use port ranges to reduce the number of unique ports and avoid this limitation.
 
-### Network policy agent doesn’t support standalone pods
+### A network policy applies to pods that it doesn’t select
 <a name="network-policies-troubleshooting-standalone-pods"></a>
 
- **Issue**: Network policies applied to standalone pods may have inconsistent behavior.
+ **Issue**: A pod is blocked or allowed by a network policy that doesn’t select it.
 
- **Solution**: The Network Policy agent currently only supports pods that are deployed as part of a deployment/replicaset. If network policies are applied to standalone pods, there might be some inconsistencies in the behavior. This is documented at the top of this page, in the [Considerations](cni-network-policy.md#cni-network-policy-considerations), and in the [aws-network-policy-agent GitHub issue \#327](https://github.com/aws/aws-network-policy-agent/issues/327) on GitHub. Deploy pods as part of a deployment or replicaset for consistent network policy behavior.
+ **Solution**: The network policy agent identifies a pod by its namespace and the part of its name before the last hyphen (`-`). Pods on the same node that share this identifier share one set of network policy rules. The agent applies the rules of every policy that selects any of these pods to all of them. For example, a pod named `db-debug` that you create directly shares the identifier `db` with the pod `db-0` of a StatefulSet named `db`. A policy that selects only `db-debug` also applies to `db-0`. The shared rules can remain on the other pods after you delete the selected pod.
+
+To give each pod only the policies that select it, make the part of each pod name before the last hyphen unique in its namespace. You can also create the pods with a controller such as a Deployment. For more information, see [Considerations](cni-network-policy.md#cni-network-policy-considerations) and [aws-network-policy-agent issue \#327](https://github.com/aws/aws-network-policy-agent/issues/327) on GitHub.

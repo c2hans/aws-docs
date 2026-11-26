@@ -507,6 +507,165 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   BatchCreateCampaignAsset  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:BatchCreateCampaignAsset](#list_partner-central-action-BatchCreateCampaignAsset)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateCampaign  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:CreateCampaign](#list_partner-central-action-CreateCampaign)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [partnercentral:TagResource](#list_partner-central-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateSocialConnectionAuthorizationUrl  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:CreateSocialConnectionAuthorizationUrl](#list_partner-central-action-CreateSocialConnectionAuthorizationUrl)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeactivateCampaignAsset  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:DeactivateCampaignAsset](#list_partner-central-action-DeactivateCampaignAsset)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteCampaign  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:DeleteCampaign](#list_partner-central-action-DeleteCampaign)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteCampaignAsset  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:DeleteCampaignAsset](#list_partner-central-action-DeleteCampaignAsset)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteSocialConnection  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:DeleteSocialConnection](#list_partner-central-action-DeleteSocialConnection)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   GetCampaign  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:GetCampaign](#list_partner-central-action-GetCampaign)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCampaignAsset  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:GetCampaignAsset](#list_partner-central-action-GetCampaignAsset)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCampaignAssetActivationTask  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:GetCampaignAssetActivationTask](#list_partner-central-action-GetCampaignAssetActivationTask)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCampaignAssetExportTask  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:GetCampaignAssetExportTask](#list_partner-central-action-GetCampaignAssetExportTask)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetCampaignTemplate  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:GetCampaignTemplate](#list_partner-central-action-GetCampaignTemplate)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListCampaignAssets  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:ListCampaignAssets](#list_partner-central-action-ListCampaignAssets)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListCampaigns  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:ListCampaigns](#list_partner-central-action-ListCampaigns)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListSocialConnections  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:ListSocialConnections](#list_partner-central-action-ListSocialConnections)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListTagsForResource  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:ListTagsForResource](#list_partner-central-action-ListTagsForResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   SearchCampaignTemplates  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:SearchCampaignTemplates](#list_partner-central-action-SearchCampaignTemplates)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   StartCampaignAssetActivationTask  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:StartCampaignAssetActivationTask](#list_partner-central-action-StartCampaignAssetActivationTask)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StartCampaignAssetExportTask  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:StartCampaignAssetExportTask](#list_partner-central-action-StartCampaignAssetExportTask)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   TagResource  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:TagResource](#list_partner-central-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   UntagResource  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:UntagResource](#list_partner-central-action-UntagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   UpdateCampaign  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:UpdateCampaign](#list_partner-central-action-UpdateCampaign)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateCampaignAsset  **
+  - **SDK client:** partnercentral-marketing
+  - **IAM action:**  [partnercentral:UpdateCampaignAsset](#list_partner-central-action-UpdateCampaignAsset)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateMarketplaceRevenueShare  **
   - **SDK client:** partnercentral-revenue-measurement
   - **IAM action:**  [partnercentral:CreateMarketplaceRevenueShare](#list_partner-central-action-CreateMarketplaceRevenueShare)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

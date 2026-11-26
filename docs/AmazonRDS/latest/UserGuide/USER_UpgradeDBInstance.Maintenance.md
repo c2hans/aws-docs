@@ -258,6 +258,9 @@ With Amazon RDS, you can choose when to apply maintenance operations. You can de
    + **Patch now**
    + **Patch at next window**
 **Note**
+If you choose **Patch now**, Amazon RDS applies the pending maintenance action immediately and synchronously instead of waiting for the next maintenance window. Before the action starts, the console displays the following confirmation message:
+"Modifications in this request are synchronously applied as soon as possible. If you apply the changes immediately, it might cause unexpected downtime."
+This message is shown deliberately to discourage this action for instances that cannot tolerate even a brief period of unavailability outside your maintenance window. Depending on the maintenance action, applying it immediately can make your DB instance unavailable for a short time. To control when this happens, choose **Patch at next window**.
 If you choose **Patch at next window** and later want to delay the update, you can choose **Defer upgrade**. You can't defer a maintenance action if it has already started.
 To cancel a maintenance action, modify the DB instance and disable **Auto minor version upgrade**.
 

@@ -13,6 +13,9 @@ X.509 certificate condition keys are available only for the `acm-pca:IssueCertif
 **Important**
 A new `Deny` statement can block certificate requests that you didn't intend to block, including requests that other AWS services and connectors make on your behalf. Before you apply a policy broadly, read [Before you deploy a policy](certguard-before-you-deploy.md) and test the policy in a non-production account.
 
+**Note**
+X.509 certificate condition keys aren't supported yet in the resource-based policy of a private CA, including AWS RAM customer managed permissions and policies that you set with [PutPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPolicy.html). Support is coming soon. You can use the keys today in identity-based policies, service control policies (SCPs), and resource control policies (RCPs). For details and alternatives, see [Supported policy types](certguard-policy-types.md).
+
 **Topics**
 + [Supported policy types](certguard-policy-types.md)
 + [Condition key reference](#certguard-condition-key-reference)

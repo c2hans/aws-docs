@@ -6,6 +6,10 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/a2a-collaborat
 
 Agent-to-agent collaboration lets a Connect Customer AI agent collaborate with other AI agents during a live contact. The collaborating agent can be either an AI agent that you already run in your Connect Customer instance, or an external agent that you or a third party hosts outside of Connect Customer, including agents that run on Amazon Bedrock AgentCore.
 
+Collaboration works with both kinds of orchestrator AI agents:
++ **Self-service** (`Connect.SelfService`): the AI agent talks to the customer through an Amazon Lex bot.
++ **Agent assistance** (`Connect.AgentAssistance`): the AI agent helps a human agent in the Connect assistant panel in the agent workspace. In agent assistance, the AI agent's conversation partner is the human agent, not the customer.
+
 Collaboration uses the Agent-to-Agent (A2A) protocol, an open standard originally developed by Google and now governed by the Linux Foundation. Connect Customer adds A2A extensions that the base protocol does not provide. For details, see the [A2A protocol contract for external AI agents](https://docs.aws.amazon.com/connect/latest/devguide/a2a-developer-guide.html) in the *Connect Customer Developer Guide*.
 
 **Topics**
@@ -42,13 +46,17 @@ Connect Customer handles the infrastructure so your Connect AI agent and the col
 + **Observability.** Connect Customer publishes traces automatically for Connect AI agent collaborators. External collaborators must send trace data back to Connect Customer. If Connect Customer detects that an external agent is not sending the required trace data, Connect Customer disables that endpoint for new contacts. For details, see [Observability for collaborating AI agents](a2a-observability.md).
 + **Failures.** If a collaboration fails, the contact returns to the error branch of your contact flow, where you configure the fallback. For external collaborators, Connect Customer first retries a WebSocket connection attempt once for certain errors. In talk to the customer mode on voice contacts over WebSocket, it also reconnects once if the connection drops during the session. For details, see [Connection retries, reconnects, and close codes](a2a-external-server.md#a2a-external-server-reconnect).
 
+  In agent assistance, the contact is already with a human agent, so a failed collaboration doesn't change the contact's path through the flow. The orchestrator receives the error and tells the human agent it couldn't complete the request.
+
 ## Requirements
 <a name="a2a-collaboration-requirements"></a>
 
 The following requirements apply to all agent-to-agent collaboration:
 + Your instance must be on the **Connect Customer** tier. Agent-to-agent collaboration is not available on Customer Basic.
 + You configure collaboration through the Connect Customer API. There is no console interface for this feature. You use the `CreateAIAgent` and `UpdateAIAgent` API operations to add collaborators to your Connect AI agent's configuration. You use the `CreateAIAgentVersion` API operation to publish a version that you can deploy.
-+ Your contact flow reaches your Connect AI agent through an Amazon Lex V2 bot with the `AMAZON.QInConnectIntent`. Audio streaming requires a bot locale that uses Amazon Nova Sonic speech-to-speech, with a single `AMAZON.QInConnectIntent`.
++ How your contact flow reaches your Connect AI agent depends on the use case:
+  + **Self-service:** through an Amazon Lex V2 bot with the `AMAZON.QInConnectIntent`. Audio streaming requires a bot locale that uses Amazon Nova Sonic speech-to-speech, with a single `AMAZON.QInConnectIntent`.
+  + **Agent assistance:** through the [Connect assistant](connect-assistant-block.md) block (`CreateWisdomSession`), with the orchestrator set as the Agent Assistance AI agent (`OrchestrationAIAgentConfiguration.AgentAssistanceAgentVersionArn`). No Amazon Lex bot is required. Turn on Contact Lens real-time analytics in the flow so the assistant receives the transcript.
 
 The following additional requirements apply to Connect AI agent collaborators:
 + A collaborator that talks to the customer must have the reserved Complete tool, and should also have the Escalate tool, so it can give control back to the main Connect AI agent. The main Connect AI agent is invoked again with the reason that the collaborator gives. It can continue the conversation, invoke another collaborator, or use its Complete or Escalate tool to return the contact to the flow. For more information, see [Tools for orchestrator AI agents](agentic-self-service.md#agentic-self-service-default-tools).
@@ -69,7 +77,7 @@ You need the following permissions when you configure collaboration:
 + **API key secret for external collaborators.** You store the external agent's API key as an AWS Secrets Manager secret that is encrypted with a customer managed KMS key. For the required secret and key configuration, see [Store the external agent's API key](a2a-setup-external.md#a2a-setup-external-step1).
 
 Connect Customer uses the following permissions at runtime:
-+ **Security profile for external collaborators.** The security profile of your Connect AI agent must allow the external application (type `THIRD_PARTY`). You must also associate the security profile with your Connect AI agent (entity type `AI_AGENT`).
++ **Security profile for the orchestrator.** The Connect AI agent that calls the collaborator (the orchestrator) needs a security profile associated with it (entity type `AI_AGENT`). If the collaborator is an external agent, the orchestrator's security profile must also allow the external agent's application (type `THIRD_PARTY`).
 + **Amazon Lex and Connect AI agent permissions.** Your Amazon Lex bot uses the `AMAZON.QInConnectIntent` to reach your Connect AI agent. The existing permissions for that setup apply. For the required permissions, see [AMAZON.QInConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html) in the *Amazon Lex V2 Developer Guide*. For how to create the intent from your Connect Customer instance, see [Create an agent assist intent](create-qic-intent-connect.md).
 + **Contact context for external collaborators.** To pass contact context (customer address, system address, and channel) to an external collaborator that talks to the customer, the security profile of your Connect AI agent must grant the **Access Contact Control Panel** permission.
 

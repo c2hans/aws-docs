@@ -36,7 +36,7 @@ You can use a `NodeClass` to:
 Learn how to [Create an Amazon EKS NodeClass](create-node-class.md).
 
 ### Considerations
-<a name="_considerations"></a>
+<a name="auto-networking-consider"></a>
 
 EKS Auto Mode supports:
 + EKS Network Policies.

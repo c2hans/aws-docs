@@ -40,7 +40,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [patchOperations](#API_UpdateClientCertificate_RequestSyntax) **   <a name="apigw-UpdateClientCertificate-request-patchOperations"></a>
-For more information about supported patch operations, see [Patch Operations](patch-operations.md).
+For more information about supported patch operations, see [Patch Operations](https://docs.aws.amazon.com/apigateway/latest/api/patch-operations.html).
 Type: Array of [PatchOperation](API_PatchOperation.md) objects
 Required: No
 

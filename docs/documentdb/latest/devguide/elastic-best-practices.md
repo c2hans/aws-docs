@@ -60,3 +60,5 @@ The following list describes guidelines for monitoring your elastic clusters.
     + This should be monitored at the per-shard level to determine skew.
   + `Documents-Inserted/Updated/Returned/Deleted`
     + This should be monitored at the per-shard level to determine skew.
+
+For the full list of metrics that elastic clusters publish, see [Elastic cluster metrics](cloud_watch.md#elastic-cluster-metrics).

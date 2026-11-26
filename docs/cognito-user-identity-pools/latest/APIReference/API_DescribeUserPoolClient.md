@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 
 Given an app client ID, returns configuration information. This operation is useful when you want to inspect an existing app client and programmatically replicate the configuration to another app client. For more information about app clients, see [App clients](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html).
 
+The response includes `ClientSecret` only when Amazon Cognito generated the app client's original secret and you haven't deleted it. The response doesn't include custom secrets that you provided, or secrets that you added with `AddUserPoolClientSecret`. After you delete the original secret with `DeleteUserPoolClientSecret`, the response doesn't include `ClientSecret`. To get the IDs and creation dates of all of an app client's secrets without their values, use `ListUserPoolClientSecrets`.
+
 **Note**
 Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.
  [Signing AWS API Requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html)

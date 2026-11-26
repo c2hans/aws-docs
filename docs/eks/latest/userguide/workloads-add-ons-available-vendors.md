@@ -10,6 +10,8 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
 In addition to the previous list of Amazon EKS add-ons, you can also add a wide selection of operational software Amazon EKS add-ons from independent software vendors. Choose an add-on to learn more about it and its installation requirements.
 
+These add-ons pull their container images from an Amazon ECR repository that AWS Marketplace manages in the US East (N. Virginia) Region (`us-east-1`), whatever Region your cluster is in. If your cluster doesn’t have outbound internet access and is in another Region, these add-ons need Amazon ECR and Amazon S3 interface endpoints for `us-east-1` in the cluster’s VPC. For more information, see [Deploy private clusters with limited internet access](private-clusters.md).
+
 [![AWS Videos](https://img.youtube.com/vi/IIPj119mspc/0.jpg)](https://www.youtube.com/watch?v=IIPj119mspc)
 
 ## Accuknox

@@ -48,7 +48,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [patchOperations](#API_UpdateIntegration_RequestSyntax) **   <a name="apigw-UpdateIntegration-request-patchOperations"></a>
-For more information about supported patch operations, see [Patch Operations](patch-operations.md).
+For more information about supported patch operations, see [Patch Operations](https://docs.aws.amazon.com/apigateway/latest/api/patch-operations.html).
 Type: Array of [PatchOperation](API_PatchOperation.md) objects
 Required: No
 
@@ -141,7 +141,7 @@ Specifies the integration's responses.
 Type: String to [IntegrationResponse](API_IntegrationResponse.md) object map
 
  ** [integrationTarget](#API_UpdateIntegration_ResponseSyntax) **   <a name="apigw-UpdateIntegration-response-integrationTarget"></a>
- The ALB or NLB listener to send the request to.
+ The ALB or NLB ARN to send the request to.
 Type: String
 
  ** [passthroughBehavior](#API_UpdateIntegration_ResponseSyntax) **   <a name="apigw-UpdateIntegration-response-passthroughBehavior"></a>

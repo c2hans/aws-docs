@@ -10,7 +10,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 
 This page explains what protection packs (web ACLs) are and how they work.
 
- A protection pack (web ACL) gives you fine-grained control over all of the HTTP(S) web requests that your protected resource responds to. You can protect Amazon CloudFront, Amazon API Gateway, Application Load Balancer, AWS AppSync, Amazon Cognito, AWS App Runner, AWS Amplify, Amazon CloudWatch, Amazon Bedrock AgentCore Gateway, and AWS Verified Access resources.
+ A protection pack (web ACL) gives you fine-grained control over all of the HTTP(S) web requests that your protected resource responds to. You can protect Amazon CloudFront, Amazon API Gateway, Application Load Balancer, Elastic Load Balancing for Envoy, AWS AppSync, Amazon Cognito, AWS App Runner, AWS Amplify, Amazon CloudWatch, Amazon Bedrock AgentCore Gateway, and AWS Verified Access resources.
 
 You can use criteria like the following to allow or block requests:
 + IP address origin of the request

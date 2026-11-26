@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/cv-viewing-is
 
 You can review issues for an environment on the **Issues** tab in the AWS Continuum console. Use search and the severity filter to find an issue, then choose its title to review the available details.
 
-**To find and review an issue**
+**To find and review issues**
 
 1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/).
 
@@ -28,6 +28,9 @@ If the table shows **No matching issues**, choose **Clear filters** to remove yo
 
 If no issues appear after you clear filters, a scan or its results might still be processing. Check the **Scans** tab for progress, then refresh the issues list.
 
+## Reviewing issue details
+<a name="cv-viewing-issues-details"></a>
+
 The available details depend on the issue's processing results. You might see the following:
 + **Issue details**
 + **Severity** and **Processing status**
@@ -39,3 +42,5 @@ The available details depend on the issue's processing results. You might see th
 When **Proof** appears, review the evidence shown there, such as **Source analysis**. The proof type depends on the issue. A unit test or executable proof might not be available.
 
 For more information about available patches, see [Viewing generated patches](cv-viewing-patches.md).
+
+An issue's **Processing status** describes AWS Continuum processing. A completed issue can still have a pull or merge request awaiting your review. For request states, merge-based closure, and findings that return after a revert, see [Tracking pull and merge requests](cv-viewing-patches.md#cv-viewing-patches-lifecycle).

@@ -816,6 +816,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Permissions management, Write
 
+- **   [BatchGetOmniSloReport](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_BatchGetOmniSloReport.html)  **
+  - **Description:** Grants permission to get current reports for Omni SLOs
+  - **Resource types (\*required):** [omni-slo\*](#list_cloudwatch-resource-omni-slo)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Read
+
 - **   [BatchGetServiceLevelIndicatorReport](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html#ApplicationSignals-PreviewSDK)  **
   - **Description:** Grants permission to batch get service level indicator report
   - **Resource types (\*required):**
@@ -827,6 +833,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [slo\*](#list_cloudwatch-resource-slo)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [CompleteExperimentRun](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CompleteExperimentRun.html)  **
+  - **Description:** Grants permission to complete a run of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
 
 - **   [CreateAccessGrant](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateAccessGrant.html)  **
   - **Description:** Grants permission to create an access grant
@@ -864,6 +876,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [CreateExperiment](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateExperiment.html)  **
+  - **Description:** Grants permission to create an experiment
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
 - **   [CreateIngestionEndpoint](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateIngestionEndpoint.html)  **
   - **Description:** Grants permission to create an ingestion endpoint
   - **Resource types (\*required):**
@@ -874,6 +892,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create an integration
   - **Resource types (\*required):**
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
+- **   [CreateLookup](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateLookup.html)  **
+  - **Description:** Grants permission to create a lookup
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
 - **   [CreateOmniAgentAsset](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateOmniAgentAsset.html)  **
@@ -888,6 +912,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
+- **   [CreateOmniSlo](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateOmniSlo.html)  **
+  - **Description:** Grants permission to create an Omni SLO
+  - **Resource types (\*required):** [omni-slo\*](#list_cloudwatch-resource-omni-slo)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
 - **   [CreateOmniThread](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateOmniThread.html)  **
   - **Description:** Grants permission to create an omni thread
   - **Resource types (\*required):**
@@ -896,6 +926,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateOneTimeDeepLinkCode](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateOneTimeDeepLinkCode.html)  **
   - **Description:** Grants permission to create a one-time deep link code
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [CreateProvisioningRolesForOrganization](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_CreateProvisioningRolesForOrganization.html)  **
+  - **Description:** Grants permission to create the provisioning roles for an organization member account
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Write
@@ -984,6 +1020,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteExperiment](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteExperiment.html)  **
+  - **Description:** Grants permission to delete an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
+- **   [DeleteExperimentRun](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteExperimentRun.html)  **
+  - **Description:** Grants permission to delete a run of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
 - **   [DeleteIngestionEndpoint](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteIngestionEndpoint.html)  **
   - **Description:** Grants permission to delete an ingestion endpoint
   - **Resource types (\*required):** [ingestion-endpoint\*](#list_cloudwatch-resource-ingestion-endpoint)
@@ -999,6 +1047,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteIntegration](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteIntegration.html)  **
   - **Description:** Grants permission to delete an integration
   - **Resource types (\*required):** [integration\*](#list_cloudwatch-resource-integration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
+- **   [DeleteLookup](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteLookup.html)  **
+  - **Description:** Grants permission to delete a lookup
+  - **Resource types (\*required):** [lookup\*](#list_cloudwatch-resource-lookup)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
@@ -1023,6 +1077,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteOmniDashboard](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteOmniDashboard.html)  **
   - **Description:** Grants permission to delete an omni dashboard
   - **Resource types (\*required):** [omni-dashboard\*](#list_cloudwatch-resource-omni-dashboard)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
+- **   [DeleteOmniSlo](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_DeleteOmniSlo.html)  **
+  - **Description:** Grants permission to delete an Omni SLO
+  - **Resource types (\*required):** [omni-slo\*](#list_cloudwatch-resource-omni-slo)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
@@ -1194,6 +1254,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetExperiment](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetExperiment.html)  **
+  - **Description:** Grants permission to get an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Read
+
+- **   [GetExperimentRun](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetExperimentRun.html)  **
+  - **Description:** Grants permission to get a run of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Read
+
 - **   [GetIngestionEndpoint](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetIngestionEndpoint.html)  **
   - **Description:** Grants permission to get an ingestion endpoint
   - **Resource types (\*required):** [ingestion-endpoint\*](#list_cloudwatch-resource-ingestion-endpoint)
@@ -1216,6 +1288,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to get an intelligence configuration
   - **Resource types (\*required):**
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Read
+
+- **   [GetLookup](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetLookup.html)  **
+  - **Description:** Grants permission to get a lookup
+  - **Resource types (\*required):** [lookup\*](#list_cloudwatch-resource-lookup)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Read
 
 - **   [GetMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html)  **
@@ -1263,6 +1341,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetOmniDashboard](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetOmniDashboard.html)  **
   - **Description:** Grants permission to get an omni dashboard
   - **Resource types (\*required):** [omni-dashboard\*](#list_cloudwatch-resource-omni-dashboard)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Read
+
+- **   [GetOmniSlo](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetOmniSlo.html)  **
+  - **Description:** Grants permission to get an Omni SLO
+  - **Resource types (\*required):** [omni-slo\*](#list_cloudwatch-resource-omni-slo)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Read
 
@@ -1386,6 +1470,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** List
 
+- **   [ListAnomalies](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListAnomalies.html)  **
+  - **Description:** Grants permission to list anomalies
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
 - **   [ListDashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListDashboards.html)  **
   - **Description:** Grants permission to return a list of all CloudWatch dashboards in your account
   - **Resource types (\*required):**
@@ -1404,14 +1494,38 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListExperimentRuns](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListExperimentRuns.html)  **
+  - **Description:** Grants permission to list the runs of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
+- **   [ListExperiments](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListExperiments.html)  **
+  - **Description:** Grants permission to list experiments
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
 - **   [ListIngestionEndpoints](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListIngestionEndpoints.html)  **
   - **Description:** Grants permission to list ingestion endpoints
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListIntegrationTargets](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListIntegrationTargets.html)  **
+  - **Description:** Grants permission to list the targets available on an integration
+  - **Resource types (\*required):** [integration\*](#list_cloudwatch-resource-integration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
 - **   [ListIntegrations](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListIntegrations.html)  **
   - **Description:** Grants permission to list integrations
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
+- **   [ListLookups](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListLookups.html)  **
+  - **Description:** Grants permission to list lookups
   - **Resource types (\*required):**
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** List
@@ -1452,6 +1566,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListObservations](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListObservations.html)  **
+  - **Description:** Grants permission to list observations
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
 - **   [ListOmniAgentAssets](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListOmniAgentAssets.html)  **
   - **Description:** Grants permission to list agent assets
   - **Resource types (\*required):**
@@ -1460,6 +1580,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListOmniDashboards](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListOmniDashboards.html)  **
   - **Description:** Grants permission to list omni dashboards
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** List
+
+- **   [ListOmniSlos](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_ListOmniSlos.html)  **
+  - **Description:** Grants permission to list Omni SLOs
   - **Resource types (\*required):**
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** List
@@ -1505,9 +1631,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [alarm-mute-rule](#list_cloudwatch-resource-alarm-mute-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [dashboard](#list_cloudwatch-resource-dashboard) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [experiment](#list_cloudwatch-resource-experiment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [insight-rule](#list_cloudwatch-resource-insight-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [lookup](#list_cloudwatch-resource-lookup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [metric-query-definition](#list_cloudwatch-resource-metric-query-definition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [metric-stream](#list_cloudwatch-resource-metric-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [omni-slo](#list_cloudwatch-resource-omni-slo) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [service](#list_cloudwatch-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [slo](#list_cloudwatch-resource-slo) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Description:** **SCENARIO: **CloudWatch-Alarm / **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm) / **Condition keys:**  / **Access level:**
@@ -1560,6 +1689,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a CloudWatch dashboard, or update an existing dashboard if it already exists
   - **Resource types (\*required):** [dashboard\*](#list_cloudwatch-resource-dashboard)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [PutExperimentRunResults](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_PutExperimentRunResults.html)  **
+  - **Description:** Grants permission to report results for a run of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
 - **   [PutInsightRule](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutInsightRule.html)  **
@@ -1640,6 +1775,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [StartExperimentRun](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_StartExperimentRun.html)  **
+  - **Description:** Grants permission to start a run of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
 - **   [StartMetricStreams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_StartMetricStreams.html)  **
   - **Description:** Grants permission to start all CloudWatch metric streams that you specify
   - **Resource types (\*required):** [metric-stream\*](#list_cloudwatch-resource-metric-stream)
@@ -1668,6 +1809,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to start a telemetry query session
   - **Resource types (\*required):**
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
+- **   [StopExperimentRun](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_StopExperimentRun.html)  **
+  - **Description:** Grants permission to stop a run of an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
 - **   [StopMetricStreams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_StopMetricStreams.html)  **
@@ -1699,9 +1846,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [alarm-mute-rule](#list_cloudwatch-resource-alarm-mute-rule) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [dashboard](#list_cloudwatch-resource-dashboard) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [experiment](#list_cloudwatch-resource-experiment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [insight-rule](#list_cloudwatch-resource-insight-rule) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [lookup](#list_cloudwatch-resource-lookup) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [metric-query-definition](#list_cloudwatch-resource-metric-query-definition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [metric-stream](#list_cloudwatch-resource-metric-stream) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [omni-slo](#list_cloudwatch-resource-omni-slo) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [service](#list_cloudwatch-resource-service) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [slo](#list_cloudwatch-resource-slo) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Description:** **SCENARIO: **CloudWatch-Alarm / **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm) / **Condition keys:**  / **Access level:**
@@ -1719,9 +1869,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [alarm-mute-rule](#list_cloudwatch-resource-alarm-mute-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [dashboard](#list_cloudwatch-resource-dashboard) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [experiment](#list_cloudwatch-resource-experiment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [insight-rule](#list_cloudwatch-resource-insight-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [lookup](#list_cloudwatch-resource-lookup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [metric-query-definition](#list_cloudwatch-resource-metric-query-definition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [metric-stream](#list_cloudwatch-resource-metric-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Resource types (\*required):** [omni-slo](#list_cloudwatch-resource-omni-slo) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [service](#list_cloudwatch-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Resource types (\*required):** [slo](#list_cloudwatch-resource-slo) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Description:** **SCENARIO: **CloudWatch-Alarm / **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm) / **Condition keys:**  / **Access level:**
@@ -1758,6 +1911,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateExperiment](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_UpdateExperiment.html)  **
+  - **Description:** Grants permission to update an experiment
+  - **Resource types (\*required):** [experiment\*](#list_cloudwatch-resource-experiment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
 - **   [UpdateIngestionEndpoint](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_UpdateIngestionEndpoint.html)  **
   - **Description:** Grants permission to update an ingestion endpoint
   - **Resource types (\*required):** [ingestion-endpoint\*](#list_cloudwatch-resource-ingestion-endpoint)
@@ -1770,6 +1929,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
+- **   [UpdateLookup](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_UpdateLookup.html)  **
+  - **Description:** Grants permission to update a lookup
+  - **Resource types (\*required):** [lookup\*](#list_cloudwatch-resource-lookup)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
 - **   [UpdateOmniAgentAsset](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_UpdateOmniAgentAsset.html)  **
   - **Description:** Grants permission to update an agent asset
   - **Resource types (\*required):** [omni-agent-asset\*](#list_cloudwatch-resource-omni-agent-asset)
@@ -1779,6 +1944,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateOmniDashboard](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_UpdateOmniDashboard.html)  **
   - **Description:** Grants permission to update an omni dashboard
   - **Resource types (\*required):** [omni-dashboard\*](#list_cloudwatch-resource-omni-dashboard)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Write
+
+- **   [UpdateOmniSlo](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_UpdateOmniSlo.html)  **
+  - **Description:** Grants permission to update an Omni SLO
+  - **Resource types (\*required):** [omni-slo\*](#list_cloudwatch-resource-omni-slo)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
@@ -1916,13 +2087,16 @@ The following resource types are defined by this service and can be used in the 
 |  [dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch::${Account}:dashboard/${DashboardName} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [dataset](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:dataset/${DatasetId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [domain](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:domain/${DomainId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
+|  [experiment](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:experiment/${ExperimentId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [ingestion-endpoint](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:ingestion-endpoint/${IngestionEndpointName}/${IngestionEndpointId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [insight-rule](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:insight-rule/${InsightRuleName} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [integration](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:integration/${IntegrationId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
+|  [lookup](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:lookup/${LookupName}/${LookupId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [metric-query-definition](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:metric-query-definition/${MetricDataQueryDefinitionId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [metric-stream](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:metric-stream/${MetricStreamName} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [omni-agent-asset](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:omni-agent-asset/${AssetId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [omni-dashboard](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:omni-dashboard/${DashboardId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
+|  [omni-slo](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:omni-slo/${SloId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [organization-access-grant](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:organization-access-grant/${GrantId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [organization-domain](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:organization-domain/${DomainId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:service/${ServiceName}-${UniqueAttributesHex} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |

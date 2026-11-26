@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 # Connecting Microsoft Teams
 
 You can connect AWS DevOps Agent to Microsoft Teams in two ways:
-+ **One-way notifications**: AWS DevOps Agent posts incident response findings, root cause analyses, and mitigation plans to the Teams channel that you select.
++ **One-way notifications**: AWS DevOps Agent posts a live Adaptive Card to the Teams channel that you select and updates the card as the investigation runs.
 + **Bidirectional communication**: AWS DevOps Agent also receives and responds to messages in a private or shared Teams channel. Mention the app to start a conversation. AWS DevOps Agent replies in the thread under your message.
 
 You can enable bidirectional communication only in private and shared channels. Standard channels support one-way notifications only.
@@ -281,9 +281,7 @@ To stop using a channel with the Agent Space, remove its association. For more i
 ## Viewing investigation results in Microsoft Teams
 <a name="viewing-investigation-results-in-microsoft-teams"></a>
 
-While AWS DevOps Agent investigates, it posts Adaptive Cards to the associated Microsoft Teams channel: one when the investigation starts, then cards with observations, findings, causes, and the investigation summary. Each card has a **View Investigation** button that opens the investigation in the AWS DevOps Agent console. Cards for the same investigation are threaded as replies under the first card.
-
-![An Investigation started card in the Teams channel with a View Investigation button and threaded replies.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/teams-results-card.png)
+When an investigation starts, AWS DevOps Agent posts one live Adaptive Card to the associated Microsoft Teams channel and updates it as the investigation runs. The card has a **View Investigation** button that opens the investigation in the AWS DevOps Agent web app. AWS DevOps Agent posts each mitigation plan as a reply under the card.
 
 To trigger an investigation and verify notifications:
 
@@ -295,11 +293,11 @@ To trigger an investigation and verify notifications:
 
 ``` Investigate lambda errors ```
 
-1. Cards start arriving within a few minutes. A full investigation can take longer.
+1. Switch to your Microsoft Teams channel.
 
-1. Switch to your Microsoft Teams channel. You should see:
-   + An **Investigation started** card with the investigation title and a **View Investigation** button.
-   + Follow-up cards with observations, findings, causes, and the investigation summary, each with a **View Investigation** button.
+Within a few minutes, a card with the investigation's title and a **View Investigation** button appears in the channel. The card keeps updating as the investigation runs.
+
+If you move an association to another channel while an investigation runs, its updates move to the new channel after a channel member [authorizes it](#step-9-authorize-the-channel).
 
 ## Managing channel associations
 <a name="managing-channel-associations"></a>
@@ -324,6 +322,8 @@ To disconnect an Agent Space from a Microsoft Teams channel:
 1. Under **Communications**, select the Microsoft Teams association and choose **Remove**.
 
 Other [Agent Spaces](about-aws-devops-agent-what-are-devops-agent-spaces.html) associated with the same channel stay connected. Removing a channel association does not unregister Microsoft Teams from AWS DevOps Agent. To fully deregister Microsoft Teams, remove all associations first, then go to the **Capability Providers** page. Under **Currently registered**, choose **View all** on the **Microsoft Teams** card. In **Registrations**, select the registration, and then choose **Deregister** from the **Actions** menu.
+
+You can choose which investigations post to a channel, such as only Critical and High investigations or only those from one source integration. You can also stop investigation updates and custom agent notifications without removing the channel. To do either, set a notification policy for the channel. For more information about notification policies, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md).
 
 ## Troubleshooting Microsoft Teams communication
 <a name="troubleshooting-microsoft-teams-communication"></a>

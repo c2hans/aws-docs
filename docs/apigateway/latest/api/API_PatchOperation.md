@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PatchOperation
 
 # PatchOperation
 
-For more information about supported patch operations, see [Patch Operations](patch-operations.md).
+For more information about supported patch operations, see [Patch Operations](https://docs.aws.amazon.com/apigateway/latest/api/patch-operations.html).
 
 ## Contents
 <a name="API_PatchOperation_Contents"></a>

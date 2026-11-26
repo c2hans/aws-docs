@@ -19,9 +19,9 @@ AWS Continuum determines network reachability by reasoning over your AWS configu
 
 To collect AWS context, you create an AWS Continuum Collector in the account and AWS Region where your code runs. The collector gathers context such as AWS Config resources, AWS Lambda APIs, and Amazon EKS context. You then authorize an AWS Continuum environment to use that inventory.
 
-To integrate AWS infrastructure context, do the following.
+**To integrate AWS infrastructure context**
 
-1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/) and sign in to the AWS account that contains the infrastructure that you want AWS Continuum to collect context from.
+1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/) and sign in to the AWS account that contains the infrastructure from which you want AWS Continuum to collect context.
 
 1. In the AWS Region where the code runs, create an AWS Continuum Collector.
 
@@ -35,7 +35,7 @@ To integrate AWS infrastructure context, do the following.
 
    1. Wait for the collector status to change to **Active**.
 
-1. Sign in to the account that owns the environment. Create or select an IAM role that AWS Continuum can assume to authorize access to collector data. For more information, see [Authorizing an environment to use collector data](#cv-adding-context-cross-account).
+1. Sign in to the account that owns the environment. Create or select an AWS Identity and Access Management (IAM) role that AWS Continuum can assume to authorize access to collector data. For more information, see [Authorizing an environment to use collector data](#cv-adding-context-cross-account).
 
 1. Sign in to the account that owns the collector and add a resource policy on the collector that grants the environment account access. Skip this step for same-account access. If `AssociateCollector` returns `AccessDeniedException`, check the caller's association and role-passing permissions. Verify that the collector data-access role can access the collector. For instructions on resolving authorization errors, see [Troubleshooting collector authorization](#cv-adding-context-cross-account-troubleshooting).
 
@@ -43,13 +43,13 @@ To integrate AWS infrastructure context, do the following.
 
 The collector gathers the following information from an AWS account:
 + AWS Config resources. The collector includes the following resource types:
-  + Amazon API Gateway: REST API methods, REST APIs, and stages; and Amazon API Gateway Version 2 (HTTP and WebSocket) APIs, integrations, and stages
+  + Amazon API Gateway: REST API methods, REST APIs, and stages, as well as Amazon API Gateway Version 2 (HTTP and WebSocket) APIs, integrations, and stages
   + Amazon Elastic Compute Cloud (Amazon EC2): instances, internet gateways, NAT gateways, network ACLs, network interfaces, route tables, security groups, subnets, transit gateways, transit gateway attachments, VPCs, and VPC endpoints
   + AWS Identity and Access Management (IAM): groups, instance profiles, OpenID Connect (OIDC) identity providers, policies, roles, and users
   + Amazon Elastic Container Service (Amazon ECS): clusters, services, and task definitions
   + Amazon Elastic Kubernetes Service (Amazon EKS): clusters, Fargate profiles, and node groups
   + Amazon Elastic Container Registry (Amazon ECR): repositories and public repositories
-  + Elastic Load Balancing: Classic Load Balancers; and Elastic Load Balancing Version 2 listeners, listener rules, Application Load Balancers and Network Load Balancers, and target groups
+  + Elastic Load Balancing: Classic Load Balancers, as well as Elastic Load Balancing Version 2 listeners, listener rules, Application Load Balancers and Network Load Balancers, and target groups
   + Amazon Relational Database Service (Amazon RDS): DB clusters and DB instances
   + Amazon Redshift: clusters
   + Amazon DynamoDB: tables
@@ -69,7 +69,7 @@ The collector gathers the following information from an AWS account:
   + Amazon Simple Queue Service (Amazon SQS): queues
   + Amazon OpenSearch Service: domains
   + Amazon OpenSearch Service (legacy Elasticsearch): Elasticsearch domains
-  + Amazon Route 53: hosted zones
+  + Amazon Route 53: hosted zones
   + AWS Key Management Service (AWS KMS): KMS keys
   + AWS Secrets Manager: secrets
   + Amazon GuardDuty: detectors
@@ -80,7 +80,7 @@ The collector also gathers the following:
 + Amazon EKS Kubernetes objects: pods, deployments, nodes, and replicas
 + Amazon ECR container images
 
-After you complete these steps, AWS Continuum can use the authorized collector inventory when it generates context for the environment. Repeat these steps for each account from which you want to collect AWS context. For information about collector quotas, see [Quotas for AWS Continuum](quotas.md).
+After you complete these steps, AWS Continuum can use the authorized collector inventory when it generates context for the environment. Repeat these steps for each account from which you want to collect AWS context. For information about collector quotas, see [AWS Continuum quotas](quotas.md).
 
 ## Authorizing an environment to use collector data
 <a name="cv-adding-context-cross-account"></a>
@@ -92,12 +92,9 @@ The following controls work together:
 + The collector data-access role represents the environment when AWS Continuum requests authorization.
 + For cross-account access, the collector resource policy represents the collector owner's consent.
 
-The following table lists the responsibilities for each account.
-
-| Account | Responsibilities |
-| --- | --- |
-| Collector account | Create the collector. For cross-account access, grant the environment account access in the collector resource policy and manage the policy with GetResourcePolicy and PutResourcePolicy. |
-| Environment account | Create the environment and collector data-access role. Associate the collector with the environment and pass the role to AWS Continuum. |
+Each account has the following responsibilities:
++ **Collector account** – Create the collector. For cross-account access, grant the environment account access in the collector resource policy and manage the policy with `GetResourcePolicy` and `PutResourcePolicy`.
++ **Environment account** – Create the environment and collector data-access role. Associate the collector with the environment and pass the role to AWS Continuum.
 
 If the collector and environment are in the same account, that account performs both sets of responsibilities. You don't need to add an `Allow` statement to the collector resource policy for same-account access.
 
@@ -105,11 +102,13 @@ The examples use the AWS Continuum public API namespace, `continuum`.
 
 In the following examples, replace {{collector-account}} with the ID of the account that owns the collector, and {{environment-account}} with the ID of the account that owns the environment. Replace {{environment-id}}, {{collector-id}}, and {{region}} with your resource values.
 
+**To authorize an environment to use collector data**
+
 1. Open the [IAM console](https://console.aws.amazon.com/iam/) in the account that owns the environment.
 
    Create an IAM role for collector data access. The role trust policy must allow the AWS Continuum service principal, `continuum.amazonaws.com`, to assume it. The following trust policy limits role assumption to the specified environment:
 
-   ```JSON
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -135,7 +134,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Attach an identity policy that permits the role to request authorization for every collector that can contribute data to the environment:
 
-   ```JSON
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -155,7 +154,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    The IAM principal that manages the resource policy must belong to the collector account and have the following permissions for the collector:
 
-   ```JSON
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -174,7 +173,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Use the following collector resource policy:
 
-   ```JSON
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -193,7 +192,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Call `GetResourcePolicy` with the full collector ARN in the `arn` input:
 
-   ```JSON
+   ```json
    {
      "arn": "arn:aws:continuum:{{region}}:{{collector-account}}:collectors/{{collector-id}}"
    }
@@ -201,7 +200,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Copy the `revisionId` from the response. Read the `policy`. Add the `AllowEnvironmentAccount` statement and retain all existing statements. Serialize the complete policy as a JSON string. Call `PutResourcePolicy` with the following input:
 
-   ```JSON
+   ```json
    {
      "arn": "arn:aws:continuum:{{region}}:{{collector-account}}:collectors/{{collector-id}}",
      "policy": "{{JSON-serialized-policy-document}}",
@@ -217,7 +216,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    The following example grants the caller these permissions:
 
-   ```JSON
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -239,7 +238,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
    Then call `AssociateCollector` with the following input:
 
-   ```JSON
+   ```json
    {
      "environmentId": "{{environment-id}}",
      "collectorArn": "arn:aws:continuum:{{region}}:{{collector-account}}:collectors/{{collector-id}}",
@@ -253,7 +252,7 @@ In the following examples, replace {{collector-account}} with the ID of the acco
 
 1. To confirm the stored association, call `ListAssociatedCollectors` in the environment account with the following input. The caller needs `continuum:ListAssociatedCollectors` permission for the environment.
 
-   ```JSON
+   ```json
    {
      "environmentId": "{{environment-id}}"
    }

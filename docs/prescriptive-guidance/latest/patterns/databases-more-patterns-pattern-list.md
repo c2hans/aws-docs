@@ -42,7 +42,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Migrate an on-premises Oracle database to Amazon RDS for Oracle](migrate-an-on-premises-oracle-database-to-amazon-rds-for-oracle.md)
 + [Migrate an on-premises Oracle database to Amazon RDS for Oracle using Oracle Data Pump](migrate-an-on-premises-oracle-database-to-amazon-rds-for-oracle-using-oracle-data-pump.md)
 + [Migrate an on-premises Oracle database to Amazon RDS for PostgreSQL by using an Oracle bystander and AWS DMS](migrate-an-on-premises-oracle-database-to-amazon-rds-for-postgresql-by-using-an-oracle-bystander-and-aws-dms.md)
-+ [Migrate an on-premises Oracle database to Oracle on Amazon EC2](migrate-an-on-premises-oracle-database-to-oracle-on-amazon-ec2.md)
 + [Migrate an on-premises PostgreSQL database to Aurora PostgreSQL](migrate-an-on-premises-postgresql-database-to-aurora-postgresql.md)
 + [Migrate an on-premises ThoughtSpot Falcon database to Amazon Redshift](migrate-an-on-premises-thoughtspot-falcon-database-to-amazon-redshift.md)
 + [Migrate an Oracle database from Amazon EC2 to Amazon RDS for MariaDB using AWS DMS and AWS SCT](migrate-an-oracle-database-from-amazon-ec2-to-amazon-rds-for-mariadb-using-aws-dms-and-aws-sct.md)

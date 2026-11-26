@@ -63,6 +63,10 @@ The following additional best practices can further improve your success rate wh
    + `nvidia-t4-a10g-l4` draws from G4, G5, and G6 instance families
    + `nvidia-l4-a10g` draws from G5 and G6 instance families
 
+1. **Use expanded accelerator search**
+
+   To choose the accelerator types yourself, list several accelerator types in `acceleratorType`, separated by commas, and set a vCPU and memory range with `omicsMaxCpu` and `omicsMaxMemory`. HealthOmics searches every matching instance type at the same time. To learn more, see [Expanded accelerator search](expanded-accelerator-search.md).
+
 1. **Consider running your workflow in another AWS Region**
 
    GPU availability varies across AWS Regions. If your data residency requirements allow it, consider running GPU-intensive workflows in a different Region where capacity may be more readily available. To learn more about supported Regions, see [Service quotas and endpoints for AWS HealthOmics](https://docs.aws.amazon.com/general/latest/gr/healthomics-quotas.html).

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/electric-vehicle-battery-healt
 title: 'Guidance for Electric Vehicle Battery Health Prediction on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/electric-vehicle-battery-health-prediction-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for Electric Vehicle Battery Health Prediction on AWS

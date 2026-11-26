@@ -16,16 +16,16 @@ Additionally, AWS supports managed policies for job functions that span multiple
 You can't attach `AWSContinuumCollectorServiceRolePolicy` to your IAM entities. This policy is attached to the `AWSServiceRoleForContinuumCollector` service-linked role that allows AWS Continuum to collect resource information and security findings and validate network reachability on your behalf. For more information, see [Using service-linked roles for AWS Continuum](using-service-linked-roles.md).
 
 Several statements use `aws:ResourceAccount` conditions to require the resource account to match the calling principal's account. These conditions apply to the following permissions:
-+ Lambda function and layer version reads
-+ Access Analyzer findings
-+ GuardDuty findings
-+ ECR image metadata
-+ WAFv2 resource associations
-+ API Gateway metadata
-+ Amazon EKS metadata reads
++ AWS Lambda function and layer version reads
++ AWS Identity and Access Management Access Analyzer findings
++ Amazon GuardDuty findings
++ Amazon Elastic Container Registry (Amazon ECR) image metadata
++ AWS WAFV2 resource associations
++ Amazon API Gateway metadata
++ Amazon Elastic Kubernetes Service (Amazon EKS) metadata reads
 + Network Insights create, start, tag, and delete actions
 + Tiros reachability queries
-+ S3 bucket reads
++ Amazon S3 bucket reads
 
 GuardDuty uses `Resource: "*"` with the account condition.
 
@@ -34,9 +34,10 @@ IAM policy reads are limited to AWS managed policies under `arn:aws:iam::aws:pol
 + Elastic Load Balancing metadata reads
 + Network Insights describe actions
 + Security service discovery and Amazon Inspector findings
-+ S3 account public access reads
++ Amazon S3 account public access reads
 
-**Permissions details**
+### Permissions details
+<a name="security-iam-awsmanpol-collector-permissions-details"></a>
 
 This policy includes the following permissions. AWS Continuum uses them to map your resources and their relationships and determine whether exposures are network-reachable in your environment.
 + Lambda allows AWS Continuum to read function information, function policies, aliases, versions, and function URL configurations (`lambda:GetFunction`, `lambda:GetPolicy`, `lambda:ListAliases`, `lambda:ListVersionsByFunction`, and `lambda:ListFunctionUrlConfigs`), read layer versions and their policies (`lambda:GetLayerVersion` and `lambda:GetLayerVersionPolicy`), and list event source mappings (`lambda:ListEventSourceMappings`).
@@ -44,7 +45,7 @@ This policy includes the following permissions. AWS Continuum uses them to map y
 + IAM Access Analyzer allows AWS Continuum to list analyzers and findings (`access-analyzer:ListAnalyzers` and `access-analyzer:ListFindings`).
 + GuardDuty allows AWS Continuum to list and retrieve findings (`guardduty:ListFindings` and `guardduty:GetFindings`).
 + Amazon ECR allows AWS Continuum to read private image metadata (`ecr:DescribeImages`).
-+ WAFv2 allows AWS Continuum to list resource associations for regional web ACLs and global web ACLs in `us-east-1` (`wafv2:ListResourcesForWebACL`).
++ AWS WAFV2 allows AWS Continuum to list resource associations for regional web ACLs and global web ACLs in `us-east-1` (`wafv2:ListResourcesForWebACL`).
 + API Gateway allows AWS Continuum to read REST API resources, stage exports, authorizers, custom domain names, base path mappings, API exports, routes, and API mappings on the specified resource paths (`apigateway:GET`).
 + Elastic Load Balancing allows AWS Continuum to read load balancer, listener, and target group attributes and target health (`elasticloadbalancing:DescribeLoadBalancerAttributes`, `elasticloadbalancing:DescribeListenerAttributes`, `elasticloadbalancing:DescribeTargetGroupAttributes`, and `elasticloadbalancing:DescribeTargetHealth`).
 + Amazon EKS allows AWS Continuum to list and describe Pod Identity associations and access entries and list associated access policies (`eks:ListPodIdentityAssociations`, `eks:DescribePodIdentityAssociation`, `eks:ListAccessEntries`, `eks:DescribeAccessEntry`, and `eks:ListAssociatedAccessPolicies`).
@@ -53,10 +54,10 @@ This policy includes the following permissions. AWS Continuum uses them to map y
 + Amazon EC2 allows AWS Continuum to read Network Insights paths and analyses (`ec2:DescribeNetworkInsightsPaths` and `ec2:DescribeNetworkInsightsAnalyses`).
 + Amazon EC2 allows AWS Continuum to create Network Insights paths and start analyses (`ec2:CreateNetworkInsightsPath` and `ec2:StartNetworkInsightsAnalysis`).
 
-  Creation requests must include `AWSContinuum=true` and may specify only the `AWSContinuum` tag key. To start an analysis, the path must have the `AWSContinuum=true` resource tag.
+  Creation requests must include `AWSContinuum=true` and can specify only the `AWSContinuum` tag key. To start an analysis, the path must have the `AWSContinuum=true` resource tag.
 + Amazon EC2 allows AWS Continuum to tag Network Insights paths and analyses during creation (`ec2:CreateTags`).
 
-  Tagging is permitted only during `CreateNetworkInsightsPath` or `StartNetworkInsightsAnalysis`. Tagging requests must include `AWSContinuum=true` and may specify only the `AWSContinuum` tag key.
+  Tagging is permitted only during `CreateNetworkInsightsPath` or `StartNetworkInsightsAnalysis`. Tagging requests must include `AWSContinuum=true` and can specify only the `AWSContinuum` tag key.
 + Amazon EC2 allows AWS Continuum to delete Network Insights paths and analyses (`ec2:DeleteNetworkInsightsPath` and `ec2:DeleteNetworkInsightsAnalysis`).
 
   The paths and analyses must have the `AWSContinuum=true` resource tag.

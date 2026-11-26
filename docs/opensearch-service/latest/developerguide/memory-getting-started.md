@@ -239,3 +239,4 @@ Now that you have completed the basic workflow, learn more about the following t
 + [Working with events in Amazon OpenSearch Memory](memory-events.md) and [Working with memories in Amazon OpenSearch Memory](memory-memories.md) – The event and memory operations in detail.
 + [Searching memories and events in Amazon OpenSearch Memory](memory-search.md) – The query language.
 + [Security in Amazon OpenSearch Memory](memory-security.md) – Controlling access with IAM and encrypting a space with your own key.
++ [amazon-opensearch-memory skill](amazon-opensearch-memory-skill.md) – Using an AI coding agent to create spaces, write events, and search memories.

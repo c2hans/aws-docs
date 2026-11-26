@@ -53,10 +53,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   CreateAgentOrganizationalProfile  **
-  - **IAM action:**  [wellarchitected:CreateAgentOrganizationalProfile](#list_wellarchitected-action-CreateAgentOrganizationalProfile)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [wellarchitected:CreateAgentOrganizationalProfile](#list_wellarchitected-action-CreateAgentOrganizationalProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [wellarchitected:TagResource](#list_wellarchitected-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateAgentOrganizationalReport  **
   - **IAM action:**  [wellarchitected:CreateAgentOrganizationalReport](#list_wellarchitected-action-CreateAgentOrganizationalReport)

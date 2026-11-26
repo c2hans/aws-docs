@@ -17,6 +17,41 @@ The Innovation Sandbox on AWS solution can be updated to newer versions via two 
 **Note**
 During the update process, you should turn on maintenance mode to prevent managers and users from making API requests while the update is in progress. For more information, see [Managing maintenance mode](administrator-guide.md#maintenance-mode).
 
+Some configuration changes require coordinated stack updates:
++ To change the **AWS Access Portal URL**, follow [Change the AWS access portal URL after deployment](step3-deploy-data-stack.md#update-access-portal-url).
++ To add or remove an **ISB Managed Region**, including an opt-in Region, follow [Change managed Regions after deployment](step1-deploy-accountpool-stack.md#update-managed-regions).
+
+## Update considerations for version 1.4.0
+<a name="update-considerations-version-1-4-0"></a>
+
+### Check the Region of your Compute stack
+<a name="update-supported-regions-1-4-0"></a>
+
+**Important**
+Version 1.4.0 adds Sandbox Spaces, which runs on [Amazon Bedrock AgentCore](https://aws.amazon.com/bedrock/agentcore/). Version 1.4.0 isn’t available in the following Regions because they don’t support the AgentCore capabilities that Sandbox Spaces requires:
+US West (N. California) - `us-west-1`
+Africa (Cape Town) - `af-south-1`
+Asia Pacific (Hong Kong) - `ap-east-1`
+Asia Pacific (Hyderabad) - `ap-south-2`
+Asia Pacific (Jakarta) - `ap-southeast-3`
+Asia Pacific (Melbourne) - `ap-southeast-4`
+Asia Pacific (Osaka) - `ap-northeast-3`
+Europe (Milan) - `eu-south-1`
+Europe (Spain) - `eu-south-2`
+Europe (Zurich) - `eu-central-2`
+Middle East (Bahrain) - `me-south-1`
+Middle East (UAE) - `me-central-1`
+For the Regions where you can deploy version 1.4.0, see [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions).
+
+### Account Pool stack parameter defaults
+<a name="update-account-pool-parameter-defaults"></a>
+
+Version 1.4.0 changes the default value of **Bedrock Inference Profile Patterns** to `arn:aws:bedrock:*:*:inference-profile/*`. This value matches every inference profile, so the Region Limit SCP doesn’t block inference profiles that route requests to Regions outside your managed Regions. To limit cross-Region inference, update the Account Pool stack and set this parameter to only the inference profile patterns that you allow. When you update the stack in the CloudFormation console, the stack keeps your current value for this parameter.
+
+Sandbox Spaces can’t invoke a model whose inference profile this parameter doesn’t allow. Before you enable a model for Sandbox Spaces, confirm that this parameter allows the model’s inference profile.
+
+Version 1.4.0 also adds the **Account Pool OU Name (Optional)** parameter. If you leave it empty, the OU keeps its current name, `<namespace>_InnovationSandboxAccountPool`, so the update doesn’t rename the OU.
+
 ## Update considerations for version 1.3.3
 <a name="update-considerations-version-1-3-3"></a>
 
@@ -44,7 +79,7 @@ Future M2M client stack updates re-read the API ID from the SSM parameter. An SS
 
 The new **Allow group assignments** setting defaults to **Do not allow groups** when no value has previously been saved. Existing group assignments retain access and can be removed, but new group assignments and group searches are blocked.
 
-To continue assigning IAM Identity Center groups to leases, open the **Lease Policies** section of the **Settings** page and set **Allow group assignments** to **Allow all groups**. A pending lease request that already contains a group cannot be approved while group assignments are disabled; deny the request or re-enable group assignments before approving it.
+To continue assigning IAM Identity Center groups to leases, open the **Lease policies** group of the **Settings** page and set **Allow group assignments** to **Allow all groups**. A pending lease request that already contains a group cannot be approved while group assignments are disabled; deny the request or re-enable group assignments before approving it.
 
 ## Update considerations for version 1.3.0
 <a name="update-considerations-version-1-3-0"></a>

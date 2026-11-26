@@ -8,7 +8,7 @@ AWS PrivateLink publishes data points to Amazon CloudWatch for your interface en
 
 You can use metrics to verify that your system is performing as expected. For example, you can create a CloudWatch alarm to monitor a specified metric and initiate an action (such as sending a notification to an email address) if the metric goes outside what you consider an acceptable range.
 
-Metrics are published for all interface endpoints, Gateway Load Balancer endpoints, and endpoint services. They are not published for gateway endpoints or for endpoint service consumers that use cross-Region access. Metrics for resource VPC endpoints and service-network VPC endpoints are published by Amazon VPC Lattice to the `AWS/VpcLattice` namespace, not to `AWS/PrivateLinkEndpoints`. For more information, see [Resource endpoint and service-network endpoint metrics](#resource-endpoint-service-network-endpoint-metrics). By default, AWS PrivateLink sends metrics to CloudWatch in one-minute intervals, at no additional cost.
+Metrics are published for all interface endpoints, Gateway Load Balancer endpoints, and endpoint services. They are not published for gateway endpoints. Metrics for resource VPC endpoints and service-network VPC endpoints are published by Amazon VPC Lattice to the `AWS/VpcLattice` namespace, not to `AWS/PrivateLinkEndpoints`. For more information, see [Resource endpoint and service-network endpoint metrics](#resource-endpoint-service-network-endpoint-metrics). By default, AWS PrivateLink sends metrics to CloudWatch in one-minute intervals, at no additional cost.
 
 For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 

@@ -81,11 +81,14 @@ The `eventPayload` supports the following objects. Use any combination of fields
 | **cart** | `cart_id`\*, `item_list`\*, `total_value`, `currency` | Shopping cart |
 | **order** | `order_id`\*, `item_list`\*, `total_value`, `currency`, `payment_method`, `shipping_address`, `discount` | A completed order |
 | **search** | `search_query`\*, `total_matching_results`, `results_per_page`, `filter_expression`, `sort_criteria` | A search action |
-| **form** | `form_id`\*, `form_name`, `form_length`, `validation_errors`, `fields_completed` | A form interaction |
+| **form** | `form_id`\*, `form_name`, `form_length`, `validation_errors`, `fields_completed`, `fields_required`, `form_inputs` | A form interaction |
 | **scroll** | `depth_percentage`, `position_x`, `position_y` | Scroll position (at least one field required) |
 | **event\_value** | number | Numerical value representing the importance of an event |
 
 \* Required field
+
+**Note**
+`form_inputs` is a JSON-serialized string of the form input field names and values, for example `JSON.stringify({ origin: "Seattle", destination: "New York" })`. Include this value to help improve the model performance of Predictive Insights. For more information about Predictive Insights, see [Predictive Insights (Preview)](customer-profiles-predictive-insights.md).
 
 ### Integration Steps and Usage Examples
 <a name="chat-widget-track-business-events-examples"></a>
@@ -120,6 +123,27 @@ await amazon_connect.Web.ClickStream.recordBusinessMetric('view_items', {
             currency: 'USD'
         }
     ]
+});
+```
+
+**Example – Form Submission**
+
+The following JavaScript example records a custom form submission event that includes the visitor's form input values.
+
+```javascript
+await amazon_connect.Web.ClickStream.recordBusinessMetric('form_complete', {
+    form: {
+        form_id: 'flight-booking-form',
+        form_name: 'Flight Booking',
+        form_length: 3,
+        fields_completed: 3,
+        fields_required: 2,
+        form_inputs: JSON.stringify({
+            origin: 'Seattle',
+            destination: 'New York',
+            departure_date: '2026-12-20'
+        })
+    }
 });
 ```
 
@@ -216,7 +240,7 @@ For the full list of activities the tracker captures by default, see [What the w
 ## Privacy and consent
 <a name="chat-widget-data-tracker-privacy"></a>
 
-The web data tracker is opt-in by design. If you do not enable **Data collection** on the Communications widget, no clickstream data is captured. Form field values, passwords, and payment information are never collected automatically, even when form submission events are tracked.
+The web data tracker is opt-in by design. If you do not enable **Data collection** on the Communications widget, no clickstream data is captured. When the web data tracker tracks form submission events, it captures form field keys and values. The web data tracker never automatically collects secret and sensitive information, such as passwords and payment information.
 
 **Important**
 You are responsible for obtaining appropriate visitor consent before initializing data tracking, in accordance with your privacy policy and applicable regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).

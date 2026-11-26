@@ -19,6 +19,30 @@ Subscribe to the RSS feed to get notified about new releases automatically: [clo
 
 The highlights below cover notable releases from the past year, most recent first.
 
+## Bedrock Unified Insights Lens Dashboard (BUILD) v1.0.0: new dashboard for Amazon Bedrock (November 24, 2026)
+<a name="whats-new-build-100"></a>
+
+A new dashboard, Bedrock Unified Insights Lens (BUILD), gives you visibility into Amazon Bedrock model invocation activity across accounts and Regions, based on your Bedrock model invocation logs.
++  **Overview** — requests, callers, accounts, input, output, and prompt cache tokens, error rate, daily trends, and token consumption by a dimension you choose (account, Region, operation, model, model category, caller role or session).
++  **Usage Breakdown** — operations, model categories, models, and Regions as tokens or requests, account usage, and a ranked table of tokens and requests by caller.
++  **Reliability** — error rate, throttling, the daily mix of request outcomes, errors by error code, and stop reasons.
++  **Capacity & Cost Drivers** — traffic type (single Region or cross-Region inference), capacity model, service tier, and prompt cache hit rate.
++  **Raw Data Explorer** — request-level tables with a filter above each column.
+
+Requires CID Data Collection v3.14.12 or later with the Bedrock module enabled.
+
+See the [Bedrock Unified Insights Lens Dashboard](bedrock-unified-insights-lens-dashboard.md), or explore the [demo dashboard with synthetic data](https://cid.workshops.aws.dev/demo?dashboard=build).
+
+View the [changelog entry](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework/blob/main/changes/CHANGELOG-bedrock-unified-insights-lens-dashboard.md).
+
+## Data Collection v3.14.12: Bedrock module (November 24, 2026)
+<a name="whats-new-data-collection-3-14-12"></a>
++  **Bedrock module** — a new module that collects Amazon Bedrock model invocation logs from the S3 buckets you list, for the [Bedrock Unified Insights Lens Dashboard](bedrock-unified-insights-lens-dashboard.md). It is pull-based: you enable Bedrock model invocation logging and grant the collector read access with a bucket policy, and nothing is deployed in your source accounts. A daily collector copies new log files from the last 30 days and registers the Athena partitions, with manual backfill for older logs.
+
+See [Deploy the Bedrock module](bedrock-unified-insights-lens-dashboard.md).
+
+View the [release notes](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-data-collection/releases/tag/3.14.12).
+
 ## Data Exports v0.14.0: standardized cost and rate columns in CUR 2.0 (November 24, 2026)
 <a name="whats-new-data-exports-0140"></a>
 +  **Standardized cost and rate** — new `EnableStandardizedCostAndRate` parameter (default `yes`) turns on the `INCLUDE_STANDARDIZED_COST_AND_RATE` setting of the CUR 2.0 export. It adds 14 `cost_analytics_*` columns that show the cost and rate for billed, list, contracted, effective, public equivalent billed, public equivalent effective, and public On-Demand charges, so you can compare costs consistently across pricing models.

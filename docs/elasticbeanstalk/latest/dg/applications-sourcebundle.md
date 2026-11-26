@@ -27,10 +27,10 @@ If you are deploying your application with the Elastic Beanstalk Command Line In
 ## Creating a source bundle from the command line
 <a name="using-features.deployment.source.commandline"></a>
 
-Create a source bundle using the `zip` command. To include hidden files and folders, use a pattern like the following.
+The following `zip` command creates a source bundle. Run it from inside your project folder. It uses `.` (the current folder) as the input, so the archive includes hidden files and folders without adding a top-level folder.
 
 ```
-~/myapp$ zip ../myapp.zip -r * .[^.]*
+~/myapp$ zip -r ../myapp.zip .
   adding: app.js (deflated 63%)
   adding: index.js (deflated 44%)
   adding: manual.js (deflated 64%)
@@ -127,3 +127,16 @@ If you are deploying multiple applications or an ASP.NET Core application, put y
 You may want to test your source bundle locally before you upload it to Elastic Beanstalk. Because Elastic Beanstalk essentially uses the command line to extract the files, it's best to do your tests from the command line rather than with a GUI tool.
 
 Ensure that the decompressed files appear in the same folder as the archive itself, rather than in a new top-level folder or directory.
+
+On macOS or Linux, you can also list the contents of the archive without decompressing it. No path should start with the name of your project folder.
+
+```
+$ unzip -l myapp.zip
+Archive:  myapp.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+      151  11-16-2026 10:02   package.json
+      144  11-16-2026 10:02   server.js
+        0  11-16-2026 10:02   .ebextensions/
+...
+```

@@ -112,7 +112,7 @@ Type: String
 Required: No
 
  ** routingMode **   <a name="apigw-Type-DomainName-routingMode"></a>
-The routing mode for this domain name. The routing mode determines how API Gateway sends traffic from your custom domain name to your APIs.
+The routing mode for this domain name. The routing mode determines how API Gateway sends traffic from your custom domain name to your private APIs.
 Type: String
 Valid Values: `BASE_PATH_MAPPING_ONLY | ROUTING_RULE_ONLY | ROUTING_RULE_THEN_BASE_PATH_MAPPING`
 Required: No
@@ -120,7 +120,7 @@ Required: No
  ** securityPolicy **   <a name="apigw-Type-DomainName-securityPolicy"></a>
 The Transport Layer Security (TLS) version \+ cipher suite for this DomainName.
 Type: String
-Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
+Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
 Required: No
 
  ** tags **   <a name="apigw-Type-DomainName-tags"></a>

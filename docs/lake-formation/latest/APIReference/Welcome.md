@@ -6,4 +6,4 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/Welco
 
 Defines the public endpoint for the AWS Lake Formation service.
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

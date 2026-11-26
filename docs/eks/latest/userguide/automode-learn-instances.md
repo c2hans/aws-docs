@@ -76,14 +76,14 @@ EKS Auto Mode supports the following instance types:
 
 | Family | Instance Types |
 | --- | --- |
-| Compute Optimized (C) | c9g, c9gd, c8a, c8g, c8gb, c8gd, c8gn, c8i, c8i-flex, c8ib, c8id, c7a, c7g, c7gd, c7gn, c7i, c7i-flex, c6a, c6g, c6gd, c6gn, c6i, c6id, c6in, c5, c5a, c5ad, c5d, c5n, c4 |
-| General Purpose (M) | m9g, m9gd, m8a, m8azn, m8g, m8gb, m8gd, m8gn, m8i, m8i-flex, m8id, m7a, m7g, m7gd, m7i, m7i-flex, m6a, m6g, m6gd, m6i, m6id, m6idn, m6in, m5, m5a, m5ad, m5d, m5dn, m5n, m5zn, m4 |
-| Memory Optimized (R) | r9g, r8a, r8g, r8gb, r8gd, r8gn, r8i, r8i-flex, r8id, r7a, r7g, r7gd, r7i, r7iz, r6a, r6g, r6gd, r6i, r6id, r6idn, r6in, r5, r5a, r5ad, r5b, r5d, r5dn, r5n, r4 |
+| Compute Optimized (C) | c9g, c9gd, c8a, c8g, c8gb, c8gd, c8gn, c8i, c8i-flex, c8ib, c8id, c8in, c8ine, c7a, c7g, c7gd, c7gn, c7i, c7i-flex, c6a, c6g, c6gd, c6gn, c6i, c6id, c6in, c5, c5a, c5ad, c5d, c5n, c4 |
+| General Purpose (M) | m9g, m9gd, m8a, m8azn, m8g, m8gb, m8gd, m8gn, m8i, m8i-flex, m8id, m8idb, m8idn, m8in, m8ine, m7a, m7g, m7gd, m7i, m7i-flex, m6a, m6g, m6gd, m6i, m6id, m6idn, m6in, m5, m5a, m5ad, m5d, m5dn, m5n, m5zn, m4 |
+| Memory Optimized (R) | r9g, r9gd, r8a, r8g, r8gb, r8gd, r8gn, r8i, r8i-flex, r8ib, r8id, r8in, r7a, r7g, r7gd, r7i, r7iz, r6a, r6g, r6gd, r6i, r6id, r6idn, r6in, r5, r5a, r5ad, r5b, r5d, r5dn, r5n, r4, r3 |
 | Burstable (T) | t4g, t3, t3a, t2 |
 | High Memory (Z/X) | z1d, x8aedz, x8g, x8i, x2gd |
 | Storage Optimized (I/D) | i8g, i8ge, i7i, i7ie, i4g, is4gen, im4gn, i4i, i3, i3en, d3, d3en |
 | Accelerated Computing (Trn/P/Inf/G) | trn2, trn1, trn1n, p6-b200, p6-b300, p5, p5e, p5en, p4d, p4de, p3, p3dn, inf2, inf1, g7e, g7, g6, gr6, g6e, g5, g5g, g4ad, g4dn |
-| High Performance Computing (X2/HPC) | x2idn, x2iedn, x2iezn, hpc8a |
+| High Performance Computing (X2/HPC) | x2idn, x2iedn, x2iezn, hpc8a, hpc7g |
 
 Additionally, EKS Auto Mode will only create EC2 instances that meet the following requirements:
 + More than 1 CPU
@@ -103,12 +103,14 @@ For more information about the Amazon EC2 Instance Metadata Service (IMDS), see 
 
 ## Considerations
 <a name="_considerations"></a>
-+ If the configured ephemeral storage in the NodeClass is smaller than the NVMe local storage for the instance, EKS Auto Mode eliminates the need for manual configuration by automatically taking the following actions:
++ If the configured ephemeral storage in the NodeClass is smaller than or equal to the total combined NVMe local storage for the instance, EKS Auto Mode eliminates the need for manual configuration by automatically taking the following actions:
   + Uses a smaller (20 GiB) Amazon EBS data volume to reduce costs.
   + Formats and configures the NVMe local storage for ephemeral data use. This includes setting up a RAID 0 array if there are multiple NVMe drives.
-+ When `ephemeralStorage.size` equals or exceeds the local NVMe capacity, the following actions occur:
-  + Auto Mode skips the small EBS volume.
-  + The NVMe drive(s) are exposed directly for your workload.
+  + Ignores the `ephemeralStorage.iops` and `ephemeralStorage.throughput` settings.
++ If `ephemeralStorage.size` exceeds the total combined NVMe local storage for the instance, EKS Auto Mode takes the following actions:
+  + Provisions an Amazon EBS data volume of the size that `ephemeralStorage.size` specifies, and uses it for ephemeral data.
+  + Leaves the NVMe local storage unformatted and unmounted.
++ EKS Auto Mode compares `ephemeralStorage.size` with the NVMe local storage of the instance in gigabytes (GB). For example, `100Gi` (107.4 GB) exceeds the 100 GB of NVMe local storage on a `c5d.xlarge` instance, but `100G` does not.
 + Amazon EKS Auto Mode does not support the following AWS Fault Injection Service actions:
   +  `ec2:RebootInstances`
   +  `ec2:SendSpotInstanceInterruptions`

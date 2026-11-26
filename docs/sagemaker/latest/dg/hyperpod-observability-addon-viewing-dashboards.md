@@ -64,6 +64,13 @@ SageMaker HyperPod automatically exposes MIG-specific metrics, including:
 + `nvidia_mig_memory_usage`: Memory utilization per MIG instance
 + `nvidia_mig_compute_utilization`: Compute utilization per MIG instance
 
+### NCCL profiler dashboard
+<a name="hyperpod-observability-addon-nccl-profiler-dashboard"></a>
+
+The NCCL profiler dashboard provides visibility into the collective communication performance of your distributed training jobs. The dashboard shows NVIDIA Collective Communications Library (NCCL) metrics next to GPU metrics, from the job level down to a single GPU. For your job, you can identify the node or GPU that slows down collective operations, and see whether the slowdown comes from communication within a node or across nodes. Because NCCL and GPU metrics appear together, the dashboard helps you determine whether a slow GPU is caused by a hardware issue, which makes it valuable for troubleshooting jobs that run slower than expected without raising an error.
+
+The dashboard shows data only for training jobs that you configure to load the SageMaker HyperPod NCCL profiler. For information about how to turn on NCCL metrics and read the dashboard, see [Monitoring NCCL communication in training jobs on SageMaker HyperPod clusters](hyperpod-observability-nccl-metrics.md).
+
 ### Cluster Logs dashboard
 <a name="hyperpod-observability-addon-cluster-logs-dashboard"></a>
 

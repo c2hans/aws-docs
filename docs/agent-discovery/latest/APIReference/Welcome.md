@@ -6,4 +6,4 @@ source_url: https://docs.aws.amazon.com/agent-discovery/latest/APIReference/Welc
 
  AWS Agent Registry Public Search (Agent Discovery) lets you search public records for AI agents, tools, skills, and other resources that their publishers have made discoverable.
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

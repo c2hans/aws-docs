@@ -394,11 +394,13 @@ The following sample covers a harness on the public network, which pulls its man
         "bedrock-agentcore:ListEvents",
         "bedrock-agentcore:RetrieveMemoryRecords"
       ],
-      "Resource": "arn:aws:bedrock-agentcore:<region>:<accountId>:memory/harness_<agentNameAbbrv>_*"
+      "Resource": "arn:aws:bedrock-agentcore:<region>:<accountId>:memory/<agentName>-*"
     }
   ]
 }
 ```
+
+The `AgentCoreMemory` statement covers the managed Memory that the harness creates. The harness names that Memory after itself (`<agentName>-<suffix>`). If the harness uses your own Memory instead, scope the statement to that Memory’s ARN. See [AgentCore Memory](#harness-memory-permissions).
 
 When you deploy a harness project without specifying an execution role, the AgentCore CLI’s CDK stack creates the role and grants permissions for supported configured features. Review supplemental permissions such as [VPC managed-image pull access](#harness-vpc-managed-ecr), which are not automatically added for that case. The policy above is for cases where you provide the role yourself. Imported execution roles are immutable to the generated CDK application; their owner must attach the required policies.
 
@@ -413,6 +415,35 @@ Tool selection is a separate security boundary from IAM permissions. `allowedToo
 <a name="_additional_permissions_for_optional_features"></a>
 
 Below are sample policies you can append to your execution role based on the features your harness uses. Follow the principle of least privilege - grant your harness agent only the specific tools and credentials it needs for inference. See [Placeholder reference](#harness-optional-placeholders) for placeholder definitions.
+
+#### Bedrock Mantle (`responses` and `chat_completions` formats)
+<a name="harness-mantle-permissions"></a>
+
+Add this policy when an Amazon Bedrock model configuration sets `apiFormat` to `responses` or `chat_completions`. These formats call Amazon Bedrock Powered by AWS Mantle (Bedrock Mantle) through the `bedrock-mantle` endpoint, which the `BedrockModelInvocation` statement doesn’t cover. For more information about the endpoint, see [Endpoints supported by Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html). For the API formats, see [Select the model API format](harness-models.md#harness-model-api-format).
+
+In the following policy, replace `<region>` and `<accountId>` with your AWS Region and account ID.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BedrockMantleInference",
+      "Effect": "Allow",
+      "Action": "bedrock-mantle:CreateInference",
+      "Resource": "arn:aws:bedrock-mantle:<region>:<accountId>:project/default"
+    },
+    {
+      "Sid": "BedrockMantleCallWithBearerToken",
+      "Effect": "Allow",
+      "Action": "bedrock-mantle:CallWithBearerToken",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+Keep `"Resource": "*"` for `bedrock-mantle:CallWithBearerToken`. It is a permission-only action that doesn’t support resource-level permissions, so its statement must specify all resources. For more information, see [Actions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_bedrock-mantle.html).
 
 #### Lifecycle hook targets
 <a name="harness-lifecycle-hook-permissions"></a>
@@ -535,7 +566,7 @@ harness.addToPolicy(new iam.PolicyStatement({
 Run `agentcore deploy` from the project root to apply the policy. If the Harness uses an imported execution role, have its owner attach the JSON policy above instead. For general stack extension guidance, see [Customize the project’s CDK code](customize-project-cdk-code.md).
 
 #### AgentCore Memory
-<a name="_agentcore_memory"></a>
+<a name="harness-memory-permissions"></a>
 
 Add this policy when your harness uses a customer-owned memory instance.
 
@@ -774,7 +805,6 @@ Replace the following placeholders in the policies above with values specific to
 |  `<region>`  | The AWS Region where your resource is deployed. |
 |  `<accountId>`  | Your AWS account ID. |
 |  `<agentName>`  | The name of your harness agent. |
-|  `<agentNameAbbrv>`  | The abbreviated form of your harness agent name used in default AgentCore Memory resource names. |
 |  `<memoryId>`  | The ID of your AgentCore memory resource. |
 |  `<browserCustomId>`  | The ID of your custom browser resource. |
 |  `<codeInterpreterCustomId>`  | The ID of your custom code interpreter resource. |

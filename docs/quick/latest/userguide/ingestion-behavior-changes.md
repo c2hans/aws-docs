@@ -4,15 +4,15 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ingestion-behavio
 
 # Ingestion behavior changes
 
-The new data preparation experience introduces an important change in how data quality issues are handled during SPICE ingestion. This change significantly impacts data completeness and transparency in your datasets.
+The data preparation experience introduces an important change in how data quality issues are handled during SPICE ingestion. This change significantly impacts data completeness and transparency in your datasets.
 
 In the legacy experience, when encountering data type inconsistencies (such as incorrect date formats or [similar issues](errors-spice-ingestion.md)), the entire row containing problematic cells is skipped during ingestion. This approach results in fewer rows in the final dataset, potentially obscuring data quality issues.
 
-The new experience takes a more granular approach to data inconsistencies. When encountering problematic cells, only the inconsistent values are converted to null values while retaining the entire row. This preservation ensures that related data in other columns remains accessible for analysis.
+The data preparation experience takes a more granular approach to data inconsistencies. When encountering problematic cells, only the inconsistent values are converted to null values while retaining the entire row. This preservation ensures that related data in other columns remains accessible for analysis.
 
 **Impact on dataset quality**
 
-Datasets created in the new experience will typically contain more rows than their legacy counterparts when the source data contains inconsistencies. This enhanced approach offers several benefits:
+Datasets created in the data preparation experience will typically contain more rows than their legacy counterparts when the source data contains inconsistencies. This enhanced approach offers several benefits:
 + Improved data completeness by retaining all rows
 + Greater transparency in identifying data quality issues
 + Better visibility of problematic values for remediation

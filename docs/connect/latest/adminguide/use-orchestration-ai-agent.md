@@ -10,6 +10,7 @@ Orchestrator AI Agents serve as primary agents for resolving customer interactio
   + Return to control: Ends the conversation and exits the GCI block in self-service flows
   + Constant: Returns a static string value. Useful for testing and rapid iteration during development
 + **Security Profiles**: Security profiles control which tools an AI Agent can execute. Agents can only use tools they have explicit permission to access through their assigned security profile.
++ **Collaborators**: An orchestrator AI agent can bring in other AI agents during a contact, in both self-service and agent assistance. You add collaborators through the API. For more information, see [Agent-to-agent collaboration](a2a-collaboration.md).
 
 **Note**
 Orchestration AI agents require chat streaming to be enabled for chat contacts. Without chat streaming enabled, some messages will fail to render. For more information, see [Enable message streaming for AI-powered chat](https://docs.aws.amazon.com/connect/latest/adminguide/message-streaming-ai-chat.html).

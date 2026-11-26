@@ -27,7 +27,7 @@ Pattern: `^[\w\-]+$`
 Required: No
 
  ** AssessmentResult **   <a name="AWSMarketplaceService-Type-AssessmentSummary-AssessmentResult"></a>
-The overall result of the assessment.
+The overall result of the assessment. Omitted when the assessment doesn't have a result yet.
 Type: String
 Valid Values: `PASS | FAIL`
 Required: No

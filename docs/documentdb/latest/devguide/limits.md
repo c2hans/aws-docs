@@ -330,6 +330,7 @@ The following table describes maximum quotas for Amazon DocumentDB elastic clust
 | Databases per cluster | 10,000 |
 | UnSharded collections per cluster | 100,000 |
 | Sharded collections per cluster | 1000 |
+| Collection name length | 54 bytes |
 | Users per cluster | 100 |
 | Writes in a single batch command | 100,000 |
 | Indexes per collection | 64 |

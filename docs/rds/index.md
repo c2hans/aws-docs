@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/rds/index.html
 title: 'Amazon RDS and Aurora Documentation'
 canonical_url: https://docs.aws.amazon.com/rds/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Amazon RDS and Aurora Documentation

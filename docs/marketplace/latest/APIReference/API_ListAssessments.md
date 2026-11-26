@@ -54,13 +54,26 @@ Type: [AssessmentTargetFilter](API_AssessmentTargetFilter.md) object
 Required: No
 
  ** [FrameworkFilters](#API_ListAssessments_RequestSyntax) **   <a name="AWSMarketplaceService-ListAssessments-request-FrameworkFilters"></a>
-Framework-specific filters. Set exactly one member to filter results to assessments performed against that framework.
+Framework-specific filters. Set exactly one member to filter results to assessments performed against that framework. You must also specify `FrameworkId`, and the member that you set must match it. Filters are supported only for `AMISecurity` and `ContainerSecurity`.
 Type: [FrameworkFilters](API_FrameworkFilters.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** [FrameworkId](#API_ListAssessments_RequestSyntax) **   <a name="AWSMarketplaceService-ListAssessments-request-FrameworkId"></a>
-The unique identifier of a framework. When specified, only assessments performed against this framework are returned. For example, `AMISecurity`. Required when you use `EntityIds` in `AssessmentTargetFilter`.
+The unique identifier of a framework. When specified, only assessments performed against this framework are returned. Required when you use `EntityIds` in `AssessmentTargetFilter`. Valid values are:
++  `AMISecurity` - Assesses the security of an AMI delivery option.
++  `ContainerSecurity` - Assesses the security of a container delivery option.
++  `ProductListingQuality` - Assesses the quality of a product listing.
++  `SolutionListingQuality` - Assesses the quality of a solution listing.
++  `ProductListingRecommendations` - Generates content and feature recommendations for a product listing.
++  `SolutionListingRecommendations` - Generates content and feature recommendations for a solution listing.
++  `SaaSResolveCustomerSellerTesting` - Verifies that your SaaS product successfully called `ResolveCustomer`.
++  `SaaSEntitlementSellerTesting` - Verifies that your SaaS contract product successfully called `GetEntitlements`.
++  `SaaSMeteringSellerTesting` - Verifies that your SaaS usage-based product sent a metering record for each metered dimension and reported no undeclared dimensions.
++  `AMIMeteringSellerTesting` - Verifies that your AMI product sent a metering record for each metered dimension and reported no undeclared dimensions.
++  `ContainerCustomMeteringSellerTesting` - Verifies that your container product sent a metering record for each metered dimension and reported no undeclared dimensions.
++  `ContainerHourlyMeteringSellerTesting` - Verifies that your container product called `RegisterUsage` within 6 hours of the container launching.
++  `SelfAttestedSellerTesting` - Records the results that you report for each control.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[\w\-@]+$`

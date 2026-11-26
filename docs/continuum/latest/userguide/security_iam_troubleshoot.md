@@ -37,10 +37,10 @@ To learn more, consult the following:
 You might see an `AccessDeniedException` error when you create or update an AWS Continuum environment that references an integration. This can happen when the caller can create or update the environment but can't use its referenced integration. AWS Continuum checks that the caller can use the referenced integration before it accepts the environment configuration.
 
 To resolve this error, grant the calling principal the permission for the operation that you are performing:
-+ When creating an environment, `continuum:CreateEnvironment` on the account- and Region-scoped `environments/*` resource and on every referenced integration ARN.
-+ When updating source configuration, `continuum:UpdateEnvironment` on the environment ARN and on every referenced integration ARN.
++ When creating an environment, `continuum:CreateEnvironment` on the account- and Region-scoped `environments/*` resource and on every referenced integration ARN
++ When updating source configuration, `continuum:UpdateEnvironment` on the environment ARN and on every referenced integration ARN
 
-For information about read actions and resource guidance for these console tasks, see [Using the AWS Continuum console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
+For information about read actions and resource guidance for these console tasks, see [Allowing users to access the AWS Continuum console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
 
 ## I am not authorized to create the Continuum collector service-linked role
 <a name="security_iam_troubleshoot-collector-slr"></a>
@@ -97,7 +97,7 @@ To resolve this error, verify the following:
 + The integration role trust policy and external ID match the integration.
 + The role's permissions policy grants `s3:ListBucket` on the bucket without conditions. It also grants `s3:GetObject` and `s3:GetObjectVersion` on the code and context prefixes that your environment uses.
 
-If role validation succeeds, verify that the console operator has `continuum:CreateIntegration` and `iam:PassRole` for the exact integration role. For the complete console permission guidance, see [Using the AWS Continuum console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
+If role validation succeeds, verify that the console operator has `continuum:CreateIntegration` and `iam:PassRole` for the exact integration role. For the complete console permission guidance, see [Allowing users to access the AWS Continuum console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
 
 For the full set of bucket permissions, the trust policy, and the integration procedure, see [Getting started through Amazon S3](cv-getting-started.md#cv-getting-started-s3).
 

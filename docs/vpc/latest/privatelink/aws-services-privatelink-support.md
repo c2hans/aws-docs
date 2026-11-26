@@ -477,10 +477,14 @@ Choose the link in the **AWS service** column to see the documentation for servi
   - com.amazonaws.{{region}}.access-analyzer
   - com.amazonaws.{{region}}.access-analyzer-fips
 
-- **IAM Identity Center**
+- ** [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/vpc-interface-endpoints.html) **
   - com.amazonaws.{{region}}.identitystore
   - com.amazonaws.{{region}}.sso
   - com.amazonaws.{{region}}.sso-oauth
+  - com.amazonaws.{{region}}.signin
+  - com.amazonaws.{{region}}.signin-v2
+  - com.amazonaws.{{region}}.sso.portal.app
+  - com.amazonaws.{{region}}.sso.portal
 
 - ** [IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/vpc-interface-endpoints.html) **
   - com.amazonaws.{{region}}.rolesanywhere

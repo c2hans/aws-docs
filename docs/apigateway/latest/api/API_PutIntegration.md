@@ -44,7 +44,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [http\_method](#API_PutIntegration_RequestSyntax) **   <a name="apigw-PutIntegration-request-uri-method"></a>
+ ** [http\_method](#API_PutIntegration_RequestSyntax) **   <a name="apigw-PutIntegration-request-uri-httpMethod"></a>
 Specifies the HTTP method for the integration.
 Required: Yes
 
@@ -100,7 +100,7 @@ Type: String
 Required: No
 
  ** [integrationTarget](#API_PutIntegration_RequestSyntax) **   <a name="apigw-PutIntegration-request-integrationTarget"></a>
- The ALB or NLB listener to send the request to.
+ The ALB or NLB ARN to send the request to.
 Type: String
 Required: No
 
@@ -142,7 +142,7 @@ Valid Values: `HTTP | AWS | MOCK | HTTP_PROXY | AWS_PROXY`
 Required: Yes
 
  ** [uri](#API_PutIntegration_RequestSyntax) **   <a name="apigw-PutIntegration-request-uri"></a>
-Specifies the Uniform Resource Identifier (URI) of the integration endpoint. For `HTTP` or `HTTP_PROXY` integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification, and use a valid top-level domain. For a private HTTP integration with a `connectionType` of `VPC_LINK`, the URI is not used for routing. For `AWS` or `AWS_PROXY` integrations, the URI is of the form `arn:aws:apigateway:{region}:{subdomain.service|service}:path|action/{service_api`}. Here, {Region} is the API Gateway region (e.g., us-east-1); {service} is the name of the integrated AWS service (e.g., s3); and {subdomain} is a designated subdomain supported by certain AWS service for fast host-name lookup. action can be used for an AWS service action-based API, using an Action={name}&{p1}={v1}&p2={v2}... query string. The ensuing {service\_api} refers to a supported action {name} plus any required input parameters. Alternatively, path can be used for an AWS service path-based API. The ensuing service\_api refers to the path to an AWS service resource, including the region of the integrated AWS service, if applicable. For example, for integration with the S3 API of `GetObject`, the `uri` can be either `arn:aws:apigateway:us-west-2:s3:action/GetObject&Bucket={bucket}&Key={key}` or `arn:aws:apigateway:us-west-2:s3:path/{bucket}/{key}`.
+Specifies Uniform Resource Identifier (URI) of the integration endpoint. For HTTP or `HTTP_PROXY` integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification, for either standard integration, where `connectionType` is not `VPC_LINK`, or private integration, where `connectionType` is `VPC_LINK`. For a private HTTP integration, the URI is not used for routing. For `AWS` or `AWS_PROXY` integrations, the URI is of the form `arn:aws:apigateway:{region}:{subdomain.service|service}:path|action/{service_api`}. Here, {Region} is the API Gateway region (e.g., us-east-1); {service} is the name of the integrated AWS service (e.g., s3); and {subdomain} is a designated subdomain supported by certain AWS service for fast host-name lookup. action can be used for an AWS service action-based API, using an Action={name}&{p1}={v1}&p2={v2}... query string. The ensuing {service\_api} refers to a supported action {name} plus any required input parameters. Alternatively, path can be used for an AWS service path-based API. The ensuing service\_api refers to the path to an AWS service resource, including the region of the integrated AWS service, if applicable. For example, for integration with the S3 API of `GetObject`, the `uri` can be either `arn:aws:apigateway:us-west-2:s3:action/GetObject&Bucket={bucket}&Key={key}` or `arn:aws:apigateway:us-west-2:s3:path/{bucket}/{key}`.
 Type: String
 Required: No
 
@@ -235,7 +235,7 @@ Specifies the integration's responses.
 Type: String to [IntegrationResponse](API_IntegrationResponse.md) object map
 
  ** [integrationTarget](#API_PutIntegration_ResponseSyntax) **   <a name="apigw-PutIntegration-response-integrationTarget"></a>
- The ALB or NLB listener to send the request to.
+ The ALB or NLB ARN to send the request to.
 Type: String
 
  ** [passthroughBehavior](#API_PutIntegration_ResponseSyntax) **   <a name="apigw-PutIntegration-response-passthroughBehavior"></a>

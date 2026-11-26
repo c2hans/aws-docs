@@ -25,7 +25,7 @@ AI Security processes each message in a fixed order. Any step can end the sequen
 
 AWS WAF recognizes more traffic than it assesses. Recognition adds a `traffic:` label to the message. Only assessed operations continue to text extraction and content assessment.
 
-**MCP.** AWS WAF recognizes MCP traffic at protocol versions `2025-06-18`, `2025-11-25`, and `2026-07-28`. AWS WAF recognizes any MCP method at these versions and assesses only `tools/call`. It doesn't recognize earlier versions, such as `2024-11-05` and `2025-03-26`.
+**MCP.** AWS WAF recognizes MCP traffic at protocol versions `2025-06-18`, `2025-11-25`, and `2026-07-28`. AWS WAF recognizes any MCP method at these versions and assesses only `tools/call`. It doesn't recognize earlier versions, such as `2024-11-05` and `2025-03-26`. To block MCP requests at earlier versions, see [Blocking MCP requests at unsupported protocol versions](waf-ai-security-example-block-unsupported-mcp.md).
 
 **A2A.** AWS WAF recognizes A2A traffic at version 1.0 only. A2A 0.3 traffic, and A2A traffic that declares any other version, isn't recognized. AWS WAF recognizes any A2A 1.0 operation and assesses only `SendMessage` and `SendStreamingMessage` on POST. In the REST binding, these operations are `POST /message:send` and `POST /message:stream`.
 
@@ -44,7 +44,7 @@ AWS WAF doesn't send the recognized but not assessed operations to Amazon Bedroc
 
 AWS WAF classifies a POST to an LLM route as LLM traffic when the body contains fields specific to an LLM inference call.
 
-AWS WAF matches an LLM route by the end of the URI path and by the format of the request body, not by the host. A server that implements one of these APIs, such as a gateway or a self-hosted model with an OpenAI-compatible endpoint, is recognized the same way. Amazon Bedrock's own runtime APIs, such as `Converse` and `InvokeModel`, aren't recognized. A request in their format gets the `traffic:not_recognized` label and no content assessment.
+AWS WAF matches an LLM route by the end of the URI path and by the format of the request body, not by the host. A server that implements one of these APIs, such as a gateway or a self-hosted model with an OpenAI-compatible endpoint, is recognized the same way. Amazon Bedrock's own runtime APIs, such as `Converse` and `InvokeModel`, aren't recognized. A request in their format gets the `traffic:not_recognized` label and no content assessment. Amazon Bedrock Guardrails covers these APIs natively, so the rule group doesn't include them. To protect these calls, specify a guardrail in the request: in the header of an `InvokeModel` or `InvokeModelWithResponseStream` request, or in the `guardrailConfig` field of a `Converse` or `ConverseStream` request. For details, see [Use cases for Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use.html) in the *Amazon Bedrock User Guide*.
 
 An agentic API that AWS WAF doesn't recognize receives no compliance checking and no content assessment.
 

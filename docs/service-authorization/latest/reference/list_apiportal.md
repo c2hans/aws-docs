@@ -39,10 +39,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [apiportal:TagResource](#list_apiportal-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreatePortalPreview  **
-  - **IAM action:**  [apiportal:CreatePortalPreview](#list_apiportal-action-CreatePortalPreview)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [apiportal:CreatePortalPreview](#list_apiportal-action-CreatePortalPreview)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [apiportal:GetProduct](#list_apiportal-action-GetProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   CreateProduct  **
   - **IAM action:**  [apiportal:CreateProduct](#list_apiportal-action-CreateProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

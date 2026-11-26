@@ -50,6 +50,24 @@ Content-type: application/json
          "id": "string",
          "identitySource": "string",
          "identityValidationExpression": "string",
+         "jwtConfiguration": {
+            "defaultAlgorithms": [ "string" ],
+            "issuers": [
+               {
+                  "additionalClaims": [
+                     {
+                        "claimName": "string",
+                        "expectedValues": [ "string" ],
+                        "format": "string",
+                        "required": boolean
+                     }
+                  ],
+                  "audiences": [ "string" ],
+                  "issuer": "string",
+                  "jwksUri": "string"
+               }
+            ]
+         },
          "name": "string",
          "providerARNs": [ "string" ],
          "type": "string"

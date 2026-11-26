@@ -17,4 +17,5 @@ The topics in this section provide content on defining your infrastructure in yo
 + [Manage time-based events with EventBridge Scheduler in AWS SAM](using-eventbridge-scheduler.md)
 + [Orchestrating AWS SAM resources with AWS Step Functions](serverless-step-functions-in-sam.md)
 + [Set up code signing for your AWS SAM application](authoring-codesigning.md)
++ [Run functions on Lambda Managed Instances with AWS SAM](authoring-lambda-managed-instances.md)
 + [Validate AWS SAM template files](serverless-sam-cli-using-validate.md)

@@ -15,11 +15,11 @@ After you create a custom image, you are responsible for Amazon EC2 system patch
 For macOS patching, we recommend that you create a new version of your recipe that uses the latest managed AMI for the base image, and then build an updated custom image from the recipe and your other image build resources. If your Mac instances are not easily replaced, see the [Update the operating system and software on Mac instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-instance-updates.html) page in the *Amazon EC2 User Guide* for more information.
 
 The following are two ways you can keep your Image Builder AMIs up to date.
-+ **AWS-provided patching components** – EC2 Image Builder provides the following build components that install all pending operating system updates:
++ **AWS-provided patching components** – EC2 Image Builder provides the following build components that install operating system updates:
   + `update-linux`
   + `update-windows`
 
-  These components use the `UpdateOS` action module. For more information, see [UpdateOS](toe-action-modules.md#action-modules-updateos). The components can be added to your image build pipelines by selecting them from the list of AWS-provided components.
+  These components use the `UpdateOS` action module. On Linux, they run the update command of the instance's package manager. On Windows, they install updates from the instance's configured update source. This might not include every available update. For example, on Ubuntu and Debian, the update tools hold back updates that require a new package. A new kernel version is one such update. The `update-linux` component doesn't have input parameters. To install the updates that it holds back, add your own component after `update-linux` in your recipe. For more information about what that component can do, see [UpdateOS](toe-action-modules.md#action-modules-updateos). The components can be added to your image build pipelines by selecting them from the list of AWS-provided components.
 + **Custom build components with patching operations** – To selectively install or update patches on operating systems of supported AMIs, you can author an Image Builder component to install the required patches. A custom component can install patches using shell scripts (Bash or PowerShell), or it can use the `UpdateOS` action module to specify patches for installation or exclusion. For more information, see [Action modules supported by AWSTOE component manager](toe-action-modules.md).
 
   Component that uses the `UpdateOS` action module (Linux and Windows only. The `UpdateOS` action module is not supported for macOS.)

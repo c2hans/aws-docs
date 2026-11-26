@@ -19,6 +19,7 @@ The following data types are supported:
 +  [CapacityReservationStatus](API_CapacityReservationStatus.md)
 +  [Certificate](API_Certificate.md)
 +  [Cipher](API_Cipher.md)
++  [ClientCertificateIdentityFilter](API_ClientCertificateIdentityFilter.md)
 +  [DescribeTrustStoreRevocation](API_DescribeTrustStoreRevocation.md)
 +  [FixedResponseActionConfig](API_FixedResponseActionConfig.md)
 +  [ForwardActionConfig](API_ForwardActionConfig.md)

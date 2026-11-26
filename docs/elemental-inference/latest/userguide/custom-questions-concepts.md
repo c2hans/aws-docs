@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/custom-questions-concepts.html
 ---
 
-# Concepts for customer decisions
+# Concepts for custom decisions
 
 The following concepts describe how question sets work.
 

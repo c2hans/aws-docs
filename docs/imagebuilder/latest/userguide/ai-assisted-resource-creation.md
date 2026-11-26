@@ -2,20 +2,60 @@
 source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/ai-assisted-resource-creation.html
 ---
 
-# Create and update resources with AI
+# Creating and updating resources with AI
 
 Configuring EC2 Image Builder resources means working through many settings. The Create with AI feature in Image Builder, powered by AWS DevOps Agent, suggests values from a natural language description of the resource that you want to create or edit.
 
 For example, describe a component that installs software, or distribution settings that copy an Amazon Machine Image (AMI) to several AWS Regions. You review and apply the suggested values, and then create or update the resource yourself.
 
 **Topics**
-+ [Prerequisites](#ai-assisted-resource-creation-prereqs)
-+ [Set up Create with AI](#ai-assisted-resource-creation-setup)
++ [How Create with AI works](#ai-assisted-resource-creation-how-it-works)
 + [DevOps Agent pricing for Create with AI](#ai-assisted-resource-creation-pricing)
-+ [Create a resource with AI](#ai-assisted-resource-creation-create)
-+ [Update a resource with AI](#ai-assisted-resource-creation-update)
-+ [What Create with AI does](#ai-assisted-resource-creation-checks)
-+ [Considerations](#ai-assisted-resource-creation-considerations)
++ [Prerequisites](#ai-assisted-resource-creation-prereqs)
++ [Setting up Create with AI](#ai-assisted-resource-creation-setup)
++ [Creating a resource with AI](#ai-assisted-resource-creation-create)
++ [Updating a resource with AI](#ai-assisted-resource-creation-update)
+
+## How Create with AI works
+<a name="ai-assisted-resource-creation-how-it-works"></a>
+
+### What Create with AI does
+<a name="ai-assisted-resource-creation-checks"></a>
+
+You can use Create with AI for the following resources:
++ Components
++ Image recipes
++ Container recipes
++ Image pipelines
++ Image workflows
++ Infrastructure configurations
++ Distribution settings
+
+When you describe a resource, the assistant can do the following:
++ **Look up your resources** – Finds your existing images, components, and recipes to use in its suggestions.
++ **Check the suggested values** – Validates the values with a dry run before it shows them, and fixes values that Image Builder rejects. For more information about dry runs, see [Validate Image Builder resource creation with a dry run](dry-run-resources.md).
++ **Suggest dependent resources** – For recipes and pipelines, suggests new resources that they need, such as a recipe, components, an infrastructure configuration, distribution settings, or workflows. Image Builder creates these resources when you create the parent resource.
+
+### Considerations
+<a name="ai-assisted-resource-creation-considerations"></a>
+
+Note the following when you use Create with AI:
++ You create or update the resource yourself. The AI doesn't create or modify resources.
++ DevOps Agent processes your requests in the agent space in your account, in the AWS Region of that agent space.
++ Create with AI doesn't support lifecycle policies.
+
+**Important**
+Suggested dependent resources are real resources in your account. They can incur costs when you use them in builds.
+
+**Note**
+AI generates these suggestions. Review every value before you create or update the resource.
+
+For more information about DevOps Agent, see the [AWS DevOps Agent User Guide](https://docs.aws.amazon.com/devopsagent/latest/userguide/).
+
+## DevOps Agent pricing for Create with AI
+<a name="ai-assisted-resource-creation-pricing"></a>
+
+Create with AI uses DevOps Agent. AWS bills DevOps Agent usage separately from Image Builder, based on the time that the agent spends working on your requests, per agent-second. Creating an agent space is free. Charges appear in your AWS bill and in Cost Explorer under **AWS DevOps Agent**. For current rates, see [AWS DevOps Agent pricing](https://aws.amazon.com/devops-agent/pricing/).
 
 ## Prerequisites
 <a name="ai-assisted-resource-creation-prereqs"></a>
@@ -29,38 +69,24 @@ To use Create with AI, the IAM user or role that you use needs the following per
 
 Create with AI uses the same agent space setup as the Troubleshoot feature. For more information, see [Prerequisites](devops-agent-troubleshooting.md#devops-agent-troubleshooting-prereqs) and [Set up troubleshooting](devops-agent-troubleshooting.md#devops-agent-troubleshooting-setup).
 
-## Set up Create with AI
+## Setting up Create with AI
 <a name="ai-assisted-resource-creation-setup"></a>
 
-Create with AI requires an AWS DevOps Agent agent space. The first time that you open the assistant, choose one of the following options in the drawer:
+Create with AI requires a DevOps Agent agent space. The first time that you open the assistant, choose one of the following options in the drawer:
 + **Set up for me** – Image Builder creates an agent space and configures permissions for you.
 + **Use a different agent space** – Select an agent space that you already configured.
 
-Create with AI is available only in commercial AWS Regions. If AWS DevOps Agent isn't available in your current Region, you select a supported Region for the chat. The resources that you create stay in your current Region. For more information, see [Supported Regions for AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-supported-regions.html).
+Create with AI is available only in commercial AWS Regions. If DevOps Agent isn't available in your current Region, you select a supported Region for the chat. The resources that you create stay in your current Region. For more information, see [Supported Regions for AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-supported-regions.html).
 
-## DevOps Agent pricing for Create with AI
-<a name="ai-assisted-resource-creation-pricing"></a>
-
-Create with AI uses AWS DevOps Agent. AWS bills DevOps Agent usage separately from Image Builder, based on the time that the agent spends working on your requests, per agent-second. Creating an agent space is free. Charges appear in your AWS bill and in Cost Explorer under **AWS DevOps Agent**. For current rates, see [AWS DevOps Agent pricing](https://aws.amazon.com/devops-agent/pricing/).
-
-## Create a resource with AI
+## Creating a resource with AI
 <a name="ai-assisted-resource-creation-create"></a>
-
-You can use Create with AI for the following resources:
-+ Components
-+ Image recipes
-+ Container recipes
-+ Image pipelines
-+ Image workflows
-+ Infrastructure configurations
-+ Distribution settings
 
 The following are examples of requests that you can send to the assistant:
 + Component: `Install and configure nginx on Amazon Linux 2023`
 + Image recipe: `Create an Ubuntu 22 web server image with the CloudWatch agent`
 + Distribution settings: `Distribute my AMI to us-east-1, us-west-2 and eu-west-1 with a build-dated name`
 
-To create a resource with AI, follow these steps:
+**To create a resource with AI**
 
 1. Open the EC2 Image Builder console at [https://console.aws.amazon.com/imagebuilder/](https://console.aws.amazon.com/imagebuilder/).
 
@@ -80,12 +106,12 @@ To refine the values before or after you apply them, send another message in the
 
 If the assistant can't produce values that pass validation, the drawer shows a warning. You can still choose **Apply to form** and fix the fields in the form.
 
-## Update a resource with AI
+## Updating a resource with AI
 <a name="ai-assisted-resource-creation-update"></a>
 
 Use Update with AI to change several fields from one description. Update with AI doesn't change fields that you can't edit, such as the resource name.
 
-To update a resource with AI, follow these steps:
+**To update a resource with AI**
 
 1. Open the EC2 Image Builder console at [https://console.aws.amazon.com/imagebuilder/](https://console.aws.amazon.com/imagebuilder/).
 
@@ -100,27 +126,3 @@ To update a resource with AI, follow these steps:
 1. In the form, review every field and edit the values as needed.
 
 1. Save or submit the form as you normally do.
-
-## What Create with AI does
-<a name="ai-assisted-resource-creation-checks"></a>
-
-When you describe a resource, the assistant can do the following:
-+ **Look up your resources** – Finds your existing images, components, and recipes to use in its suggestions.
-+ **Check the suggested values** – Validates the values with a dry run before it shows them, and fixes values that Image Builder rejects. For more information about dry runs, see [Validate Image Builder resource creation with a dry run](dry-run-resources.md).
-+ **Suggest dependent resources** – For recipes and pipelines, suggests new resources that they need, such as a recipe, components, an infrastructure configuration, distribution settings, or workflows. Image Builder creates these resources when you create the parent resource.
-
-## Considerations
-<a name="ai-assisted-resource-creation-considerations"></a>
-
-Note the following when you use Create with AI:
-+ You create or update the resource yourself. The AI doesn't create or modify resources.
-+ AWS DevOps Agent processes your requests in the agent space in your account, in the AWS Region of that agent space.
-+ Lifecycle policies aren't supported.
-
-**Important**
-Suggested dependent resources are real resources in your account. They can incur costs when you use them in builds.
-
-**Note**
-AI generates these suggestions. Review every value before you create or update the resource.
-
-For more information about AWS DevOps Agent, see the [*AWS DevOps Agent User Guide*](https://docs.aws.amazon.com/devopsagent/latest/userguide/).

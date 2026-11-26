@@ -13,7 +13,7 @@ Keeping clusters patched is operationally expensive, even with full AMI visibili
 
 Auto-patching on HyperPod addresses this by applying patch-level AMI updates automatically and in a workload-aware manner:
 + **Opt-in, per instance group** – You enable auto-patching by adding an `AutoPatchConfig` to an instance group on [CreateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) or [UpdateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html). Different instance groups in the same cluster can use different patching strategies.
-+ **Workload-aware** – HyperPod applies patches only as nodes become idle, so it does not interrupt running workloads.
++ **Workload-aware** – With the `WhenIdle` and `WhenAllIdle` strategies, HyperPod applies patches only as nodes become idle, so it does not interrupt running workloads. With the `DrainFirst` strategy, which is available only for Amazon EKS clusters, HyperPod evicts running pods before it patches a node.
 + **Patch-only** – Auto-patching applies only patch-level updates within your currently selected AMI line (for example, 1.2.3 → 1.2.4), following semantic versioning. It never crosses a minor or major version boundary, which preserves backward compatibility between critical AI/ML software components such as NVIDIA drivers, CUDA, and EFA with your existing training and inference containers.
 + **Predictable schedule** – When a new patch AMI is released, HyperPod sets a fixed patch date 21 days out. You can move it earlier or defer it up to 60 days.
 + **Built-in visibility** – You receive AWS Health (PHD) notifications when a patch AMI is available, and on completion or failure. Live patch progress is shown on the cluster details page in the console.
@@ -23,7 +23,7 @@ The result is that security patches land on a predictable cadence without worklo
 ## Prerequisites
 <a name="sagemaker-hyperpod-ami-auto-patching-prerequisites"></a>
 + **AMI versioning** – Auto-patching requires that your cluster has a tracked AMI version. Clusters created on or after January 1, 2026 have AMI versioning; clusters created before that date are not eligible for auto-patching.
-+ **HyperPod EKS clusters** – Auto-patching is available only for HyperPod Amazon EKS clusters.
++ **HyperPod EKS or Slurm clusters** – Auto-patching is available for both Slurm and Amazon EKS-orchestrated HyperPod clusters.
 
 ## Enabling auto-patching
 <a name="sagemaker-hyperpod-ami-auto-patching-enable"></a>
@@ -67,6 +67,7 @@ aws sagemaker update-cluster \
 Set `PatchingStrategy` to one of:
 + `"WhenIdle"` – ideal for training workloads; patches each node as it goes idle.
 + `"WhenAllIdle"` – ideal for training workloads; patches the whole instance group atomically once it is fully idle.
++ `"DrainFirst"` – ideal for workloads that never go idle, such as inference. It cordons nodes and evicts their running pods, then patches the nodes in batches through a rolling update.
 
 ## Disabling auto-patching
 <a name="sagemaker-hyperpod-ami-auto-patching-disable"></a>
@@ -103,24 +104,28 @@ Add the `PatchSchedule` to the `AutoPatchConfig` object in the `update_cluster.j
 ## Patching strategies
 <a name="sagemaker-hyperpod-ami-auto-patching-strategies"></a>
 
-When you enable auto-patching on an instance group, you choose a patching strategy. HyperPod currently supports two strategies, both designed for training workloads.
+When you enable auto-patching on an instance group, you choose a patching strategy. HyperPod currently supports three strategies, designed for training and inference workloads.
 
 | Strategy | How it works | Best for | Caveat |
 | --- | --- | --- | --- |
 | WhenIdle | HyperPod cordons all nodes in the instance group, then patches each node individually as it becomes idle. | Training workloads where you want opportunistic, disruption-less patching node by node. | Long-running workloads can leave some nodes unpatched and cordoned for an extended period. The instance group might temporarily run a mix of AMI versions. |
 | WhenAllIdle | HyperPod cordons all nodes, then patches the entire instance group atomically once every node is idle. | Training workloads where you want all nodes on a consistent AMI version after a single, atomic patch. | If the instance group does not fully drain, the patch fails and is retried on the next cycle. |
+| DrainFirst | HyperPod cordons nodes and evicts their running pods, then patches the nodes in batches. It uncordons each node after patching. | Workloads that never go idle, such as inference, where you need patching to finish on a predictable schedule. | Evicting pods disrupts running workloads. This strategy requires `MaximumBatchSize` in `DeploymentConfig` and is available only for clusters that use Amazon EKS as the orchestrator. |
 
-In both strategies, HyperPod cordons nodes first so that no new workload is scheduled onto a node that is waiting to be patched. HyperPod patches a node only after it is idle, so it never forcibly interrupts active workloads. No new pods are assigned to already cordoned nodes for 24 hours until the node is successfully patched. Nodes stay cordoned for up to 24 hours, and then HyperPod uncordons them whether or not patching succeeded. During auto-patching, HyperPod modifies the following node attributes when cordoning and uncordoning nodes.
+For `WhenIdle` and `WhenAllIdle`, you can set how long HyperPod waits for nodes to become idle after a scheduled patch starts by using `IdleWaitWindowInSeconds` in `AutoPatchConfig`. Valid values are from 3600 (1 hour) to 2160000 (25 days). The default is 86400 (24 hours). Nodes that don't become idle within this window are uncordoned and remain on the previous AMI version. This setting doesn't apply to `DrainFirst`.
+
+In the idle node-based strategies (`WhenIdle` and `WhenAllIdle`), HyperPod cordons nodes first so that no new workload is scheduled onto a node that is waiting to be patched. HyperPod patches a node only after it is idle, so it never forcibly interrupts active workloads. No new pods are assigned to already cordoned nodes until the node is successfully patched. Nodes stay cordoned for up to the idle wait window (24 hours by default), and then HyperPod uncordons them whether or not patching succeeded. During auto-patching on Amazon EKS clusters, HyperPod modifies the following node attributes when cordoning and uncordoning nodes.
 + Label `sagemaker.amazonaws.com/cordoned-by: AutoPatching` – added when the node is cordoned, removed when it is uncordoned.
 + Node spec `spec.unschedulable: true` – set when the node is cordoned, cleared when it is uncordoned.
 
-Separately, HyperPod adds the following label when it detects that a node is idle.
+Separately, on Amazon EKS clusters, HyperPod adds the following label when it detects that a node is idle.
 + Label `sagemaker.amazonaws.com/idle: true`
 
 ### Choosing a strategy
 <a name="sagemaker-hyperpod-ami-auto-patching-choosing-strategy"></a>
 + Use `WhenIdle` when you want patches to make progress as soon as individual nodes free up and you can tolerate temporary AMI version skew across the instance group. If some nodes stay busy for a long time, you can manually upgrade the remaining nodes to converge faster, or uncordon them.
 + Use `WhenAllIdle` when AMI version consistency across the instance group matters more than patch speed, and you expect the group to drain fully within a few hours. If the group does not drain, you can trigger a manual patch later or wait for the next auto-patch cycle.
++ Use `DrainFirst` when your workloads never go idle, such as inference, and waiting for nodes to be idle would delay patching indefinitely. Set `MaximumBatchSize` in `DeploymentConfig` to control how many nodes are patched at once, so that enough capacity keeps serving traffic. Use `DrainPolicy` to set how long HyperPod waits for pods to drain (`DrainTimeoutInSeconds`) and what happens if the drain times out (`OnDrainTimeout`). This strategy is available only for clusters that use Amazon EKS as the orchestrator.
 
 ## Patch schedule
 <a name="sagemaker-hyperpod-ami-auto-patching-patch-schedule"></a>
@@ -151,9 +156,9 @@ No. Auto-patching only applies patch-level updates within your currently selecte
 
 **What does a node being idle mean?**
 
-On HyperPod Amazon EKS, a node is considered idle when it has no active workload pods running on it. Because HyperPod cordons nodes before patching, no new workloads are scheduled onto a node after it is queued for a patch, so after your workload pods complete and drain, the node becomes idle and HyperPod patches it. `WhenIdle` evaluates idleness per node; `WhenAllIdle` waits until every node in the instance group is idle at the same time.
+A node is considered idle when it has no active workload pods running on it. Because HyperPod cordons nodes before patching, no new workloads are scheduled onto a node after it is queued for a patch, so after your workload pods complete and drain, the node becomes idle and HyperPod patches it. `WhenIdle` evaluates idleness per node; `WhenAllIdle` waits until every node in the instance group is idle at the same time.
 
-The following namespaces are excluded when evaluating node idleness – pods running in them are not counted when determining whether a node is idle:
+On Amazon EKS clusters, the following namespaces are excluded when evaluating node idleness – pods running in them are not counted when determining whether a node is idle:
 + `kube-system`
 + `kube-public`
 + `kube-node-lease`
@@ -173,7 +178,7 @@ The following namespaces are excluded when evaluating node idleness – pods run
 + `prometheus-node-exporter`
 + `jupyter-k8s-system`
 
-In addition, the following pods are excluded when evaluating node idleness – they are not counted when determining whether a node is idle:
+In addition, on Amazon EKS clusters, the following pods are excluded when evaluating node idleness – they are not counted when determining whether a node is idle:
 + **DaemonSet pods** – infrastructure pods managed by a DaemonSet that run on every node.
 + **Static pods** – pods owned by the node itself.
 + **Completed pods** – pods that have finished execution (in the `Succeeded` or `Failed` phase).
@@ -181,7 +186,7 @@ In addition, the following pods are excluded when evaluating node idleness – t
 
 **What happens if my nodes never go idle?**
 
-With the `WhenIdle` patching strategy, nodes that remain busy stay cordoned and unpatched until they become idle, up to a maximum of 24 hours. If some nodes can't be patched because of running workloads, the instance group can end up with a mix of AMI versions across its nodes. To converge faster, you can manually upgrade the remaining nodes by calling the `UpdateClusterSoftware` API. With the `WhenAllIdle` strategy, if all nodes in an instance group don't fully drain within 24 hours, the patch fails and is retried on the next auto-patch cycle. This ensures that all nodes end up on a consistent AMI version. However, if you have workloads that run longer than 24 hours, the patch fails under this strategy.
+With the `WhenIdle` patching strategy, nodes that remain busy stay cordoned and unpatched until they become idle, up to the idle wait window (24 hours by default). If some nodes can't be patched because of running workloads, the instance group can end up with a mix of AMI versions across its nodes. To converge faster, you can manually upgrade the remaining nodes by calling the `UpdateClusterSoftware` API. With the `WhenAllIdle` strategy, if all nodes in an instance group don't fully drain within the idle wait window, the patch fails and is retried on the next auto-patch cycle. This ensures that all nodes end up on a consistent AMI version. However, if you have workloads that run longer than the idle wait window, the patch fails under this strategy. You can raise the window by setting `IdleWaitWindowInSeconds`.
 
 **What should I do if my instance group is partially patched?**
 

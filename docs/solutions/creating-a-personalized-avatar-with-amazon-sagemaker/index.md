@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/creating-a-personalized-avatar
 title: 'Guidance for Creating a Personalized Avatar with Amazon SageMaker'
 canonical_url: https://docs.aws.amazon.com/solutions/creating-a-personalized-avatar-with-amazon-sagemaker/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for Creating a Personalized Avatar with Amazon SageMaker

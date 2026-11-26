@@ -203,11 +203,18 @@ System-mediated time-slicing is alpha. It requires the alpha `ConsumableShares` 
 ### Procedure
 <a name="_procedure_2"></a>
 
-1. Install the NVIDIA DRA driver as described in [Install the NVIDIA DRA driver](device-management-nvidia-dra-device-plugin.md#eks-nvidia-dra-driver), adding the `ConsumableShares` feature gate and the number of shares per GPU. This is a cluster-wide driver setting. The following example configures four shares per GPU.
+1. Install the NVIDIA DRA driver as described in [Install the NVIDIA DRA driver](device-management-nvidia-dra-device-plugin.md#eks-nvidia-dra-driver), adding the `ConsumableShares` feature gate and the number of shares per GPU. This is a cluster-wide driver setting. Consumable shares require NVIDIA DRA driver chart version `0.5.0` or later. Earlier chart versions, such as `0.4.1`, do not have the `consumableShares` value or the `ConsumableShares` feature gate. The following example installs chart version `0.5.1` and configures four shares per GPU.
 
    ```bash
-   --set featureGates.ConsumableShares=true \
-   --set consumableShares=4
+   helm install dra-driver-nvidia-gpu \
+       oci://registry.k8s.io/dra-driver-nvidia/charts/dra-driver-nvidia-gpu \
+       --version {{0.5.1}} \
+       --create-namespace \
+       --namespace nvidia \
+       --set resources.computeDomains.enabled=false \
+       --set gpuResourcesEnabledOverride=true \
+       --set featureGates.ConsumableShares=true \
+       --set consumableShares=4
    ```
 
 1. Tell Karpenter the same sharing mode with the `karpenter.k8s.aws/nvidia-consumable-capacity` annotation on your `EC2NodeClass`. Karpenter cannot read the driver’s configuration, so this value **must** match the driver’s `consumableShares` setting.

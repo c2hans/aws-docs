@@ -20,4 +20,4 @@ Describes the API operations for creating and managing workloads, conducting len
 
 For more information, see [What is AWS Well-Architected Tool?](https://docs.aws.amazon.com/wellarchitected/latest/userguide/tool.html)
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

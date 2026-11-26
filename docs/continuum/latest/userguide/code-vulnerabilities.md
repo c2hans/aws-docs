@@ -4,9 +4,11 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/code-vulnerab
 
 # Code vulnerabilities
 
-Continuum for code vulnerabilities is a feature of AWS Continuum that discovers, validates, prioritizes, and recommends remediation for code vulnerabilities.
+AWS Continuum for code vulnerabilities is a feature of AWS Continuum that discovers, validates, prioritizes, and recommends remediation for code vulnerabilities.
 
-Continuum for code vulnerabilities integrates with GitHub and Amazon S3 for code and context. You connect a code source, add context about your infrastructure and business, and then review the issues and patches that AWS Continuum produces.
+AWS Continuum for code vulnerabilities integrates with GitHub, GitLab, and Amazon S3 for code and context. You connect a code source, add context about your infrastructure and business, and then review the issues and patches that AWS Continuum produces.
+
+AWS Continuum tracks generated GitHub pull requests and GitLab merge requests as open, merged, or closed without merging. After all requests for an issue's latest remediation run merge into their original target branches, AWS Continuum closes the issue to new findings. If a later finding identifies the vulnerability again, it can start a new issue and remediation attempt. For details, see [Tracking pull and merge requests](cv-viewing-patches.md#cv-viewing-patches-lifecycle).
 
 **Topics**
 + [Supported languages and source files](cv-supported-languages.md)

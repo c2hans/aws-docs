@@ -13,7 +13,7 @@ The Outlook extension enables users to:
 + Summarize emails and draft contextual responses using Quick data.
 + Access their enterprise data and perform actions in external applications.
 
-The AWS Quick Outlook extension is available within AWS Quick to all eligible users by default and requires no administrative setup for user access if users can access the Microsoft Outlook app store. Users can search for AWS Quick in the Microsoft Outlook app store or visit the [Quick for Outlook Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010695) to add the extension.
+All users can install the AWS Quick Outlook extension without administrative setup if they can access the Microsoft Outlook app store. Users can search for AWS Quick in the Microsoft Outlook app store or visit the [Quick for Outlook Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010695) to add the extension.
 
 **Important**
 The AWS Quick Outlook extension uses generative AI to create and execute code within your Outlook application sandbox to help you perform your Outlook tasks. AI can make mistakes and perform inaccurate actions within your Outlook mailbox.

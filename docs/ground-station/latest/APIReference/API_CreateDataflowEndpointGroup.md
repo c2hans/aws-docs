@@ -91,19 +91,19 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [contactPostPassDurationSeconds](#API_CreateDataflowEndpointGroup_RequestSyntax) **   <a name="groundstation-CreateDataflowEndpointGroup-request-contactPostPassDurationSeconds"></a>
- Amount of time, in seconds, after a contact ends that the Ground Station Dataflow Endpoint Group will be in a `POSTPASS` state. A [Ground Station Dataflow Endpoint Group State Change event](https://docs.aws.amazon.com/ground-station/latest/ug/monitoring.automating-events.html) will be emitted when the Dataflow Endpoint Group enters and exits the `POSTPASS` state.
+Amount of time, in seconds, after a contact ends that the Ground Station Dataflow Endpoint Group will be in a `POSTPASS` state. A [Ground Station Dataflow Endpoint Group State Change event](https://docs.aws.amazon.com/ground-station/latest/ug/monitoring.automating-events.html) will be emitted when the Dataflow Endpoint Group enters and exits the `POSTPASS` state.
 Type: Integer
 Valid Range: Minimum value of 30. Maximum value of 480.
 Required: No
 
  ** [contactPrePassDurationSeconds](#API_CreateDataflowEndpointGroup_RequestSyntax) **   <a name="groundstation-CreateDataflowEndpointGroup-request-contactPrePassDurationSeconds"></a>
- Amount of time, in seconds, before a contact starts that the Ground Station Dataflow Endpoint Group will be in a `PREPASS` state. A [Ground Station Dataflow Endpoint Group State Change event](https://docs.aws.amazon.com/ground-station/latest/ug/monitoring.automating-events.html) will be emitted when the Dataflow Endpoint Group enters and exits the `PREPASS` state.
+Amount of time, in seconds, before a contact starts that the Ground Station Dataflow Endpoint Group will be in a `PREPASS` state. A [Ground Station Dataflow Endpoint Group State Change event](https://docs.aws.amazon.com/ground-station/latest/ug/monitoring.automating-events.html) will be emitted when the Dataflow Endpoint Group enters and exits the `PREPASS` state.
 Type: Integer
 Valid Range: Minimum value of 30. Maximum value of 480.
 Required: No
 
  ** [endpointDetails](#API_CreateDataflowEndpointGroup_RequestSyntax) **   <a name="groundstation-CreateDataflowEndpointGroup-request-endpointDetails"></a>
-Endpoint details of each endpoint in the dataflow endpoint group. All dataflow endpoints within a single dataflow endpoint group must be of the same type. You cannot mix [ AWS Ground Station Agent endpoints](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AwsGroundStationAgentEndpoint.html) with [Dataflow endpoints](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DataflowEndpoint.html) in the same group. If your use case requires both types of endpoints, you must create separate dataflow endpoint groups for each type.
+Endpoint details of each endpoint in the dataflow endpoint group. All dataflow endpoints within a single dataflow endpoint group must be of the same type. You cannot mix [AWS Ground Station Agent endpoints](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_AwsGroundStationAgentEndpoint.html) with [Dataflow endpoints](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DataflowEndpoint.html) in the same group. If your use case requires both types of endpoints, you must create separate dataflow endpoint groups for each type.
 Type: Array of [EndpointDetails](API_EndpointDetails.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 500 items.
 Required: Yes

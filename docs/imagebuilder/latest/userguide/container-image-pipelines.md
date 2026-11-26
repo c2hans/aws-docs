@@ -15,7 +15,7 @@ You can manage container image pipelines from the Image Builder console, the API
 For more information and a step-by-step tutorial about using the **Create image pipeline** console wizard, see [Tutorial: Create an image pipeline with output Docker container image from the Image Builder console wizard](start-build-container-pipeline.md).
 
 **Tip**
-Now you can create with AI. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).
+Now you can create with AI. For more information, see [Creating and updating resources with AI](ai-assisted-resource-creation.md).
 
 **Topics**
 + [Create a container image pipeline from the AWS CLI](cli-create-container-pipeline.md)

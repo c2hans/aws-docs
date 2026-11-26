@@ -744,3 +744,34 @@ Consider the following when configuring kernel sysctls on a NodeClass:
 +  ** `vm.dirty_background_ratio` and `vm.dirty_ratio` ** – These two fields must both be set or both be omitted, and `vm.dirty_background_ratio` must be strictly less than `vm.dirty_ratio`. NodeClass admission rejects configurations that violate either rule.
 +  ** `net.ipv4.neigh.default.gc_thresh1`, `gc_thresh2`, and `gc_thresh3` ** – The three ARP-cache thresholds must all be set together or all omitted, and their values must satisfy `gc_thresh1 < gc_thresh2 < gc_thresh3`. NodeClass admission rejects configurations that violate either rule.
 +  ** `net.ipv4.tcp_congestion_control` ** – Only `cubic` and `reno` are accepted.
+
+## Network policy event logs
+<a name="network-policy-event-logs"></a>
+
+When you set `networkPolicyEventLogs: Enabled`, the network policy agent on each EKS Auto Mode node writes a log entry for each network policy decision to the following local file. Each entry’s message starts with `Flow Info`. Each entry includes the source and destination IP address and port, the protocol, the direction, and a `Verdict` of `ACCEPT` or `DENY`.
+
+```
+/var/log/aws-routed-eni/network-policy-agent.log
+```
+
+**Important**
+EKS Auto Mode does not automatically export these logs to Amazon CloudWatch Logs.
+
+### How to access the logs
+<a name="network-policy-event-logs-access"></a>
+
+EKS Auto Mode nodes don’t support direct SSH or AWS Systems Manager (SSM) access. To view the logs, use one of the following methods:
++  `NodeDiagnostic`: Collect node logs through Amazon S3. In the log archive, the file is `var_log/aws-routed-eni/network-policy-agent.log`. For more information, see [Retrieve node logs using kubectl and Amazon S3](auto-get-logs.md).
++  `kubectl debug`: Access the node filesystem directly using a debug container. Replace `<node-name>` with the name of the EKS Auto Mode node that you want to inspect.
+
+  ```bash
+  kubectl debug node/<node-name> \
+    --image=public.ecr.aws/amazonlinux/amazonlinux:2023 \
+    --profile=sysadmin -it
+  ```
+
+  Then, from within the debug container, show the network policy decisions:
+
+  ```bash
+  grep Verdict /host/var/log/aws-routed-eni/network-policy-agent.log
+  ```

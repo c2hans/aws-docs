@@ -9,11 +9,11 @@ This page covers monitoring your harness, controlling execution costs, and manag
 ## Observability
 <a name="harness-observability"></a>
 
-Every harness invocation automatically generates traces, logs, and metrics through [AgentCore Observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) in CloudWatch. Model calls, tool invocations, memory operations, shell commands: each step appears with timing and payload details. No extra configuration. Traces are available from the first invocation.
+Every harness invocation automatically generates traces, logs, and metrics through [AgentCore Observability](observability.md) in CloudWatch. Model calls, tool invocations, memory operations, and shell commands each appear with timing and payload details. Before you can view traces, turn on CloudWatch Transaction Search in your account and Region. For instructions on enabling CloudWatch Transaction Search, see [Enabling CloudWatch Transaction Search](observability-configure.md#observability-configure-builtin-cw). Without Transaction Search, the harness can’t deliver spans, and its runtime logs show span export errors (`Failed to export span batch`).
 
 Traces, logs, and metrics flow to CloudWatch through the harness execution role. View them on the [AgentCore observability](https://console.aws.amazon.com/bedrock-agentcore/observability) page or the [CloudWatch generative AI observability](https://console.aws.amazon.com/cloudwatch/home#/gen-ai-observability/agent-core/agents) page, or query programmatically through the CloudWatch Logs and X-Ray APIs.
 
-Before you see traces, [enable Transaction Search in CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Enable-Lambda-TransactionSearch.html) (one-time per account). See [AgentCore Observability getting started](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-get-started.html) for setup details. When you deploy with the AgentCore CLI, `agentcore deploy` enables Transaction Search for you. To opt out, run `agentcore config transactionSearch false`.
+For more information about setup, see [Get started with AgentCore Observability](observability-get-started.md). When you deploy with the AgentCore CLI, `agentcore deploy` enables Transaction Search for you. To opt out, run `agentcore config transactionSearch false`.
 
 Learn more: [Observability overview](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) · [metrics](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-runtime-metrics.html) · [telemetry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-telemetry.html)
 

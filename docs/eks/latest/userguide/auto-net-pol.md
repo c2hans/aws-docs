@@ -101,6 +101,8 @@ You can optionally create a new Node Class to change the default behavior of the
      # Include other Node Class configurations as needed
    ```
 
+   For where EKS Auto Mode writes the network policy event logs and how to read them, see [Network policy event logs](create-node-class.md#network-policy-event-logs).
+
 1. Apply the Node Class configuration to your cluster:
 
    ```
@@ -114,6 +116,75 @@ You can optionally create a new Node Class to change the default behavior of the
    ```
 
 1. Update your Node Pool to use this Node Class. For more information, see [Create a Node Pool for EKS Auto Mode](create-node-pool.md).
+
+### Using DefaultDeny with CoreDNS
+<a name="using-defaultdeny-with-coredns"></a>
+
+When you set `networkPolicy: DefaultDeny` in your NodeClass, the default behavior for pods with no network policy applied is to deny all traffic—including DNS queries to the CoreDNS service on port 53. In upstream Kubernetes, pods with no network policy applied allow all traffic by default. With `DefaultDeny` mode, you must explicitly create network policies to allow desired traffic, including DNS resolution.
+
+Create a `ClusterNetworkPolicy` to allow egress DNS traffic to CoreDNS. The policy takes effect only after you enable the Network Policy Controller in Step 1. Without it, nodes that use `DefaultDeny` still block DNS, and no policy can allow it. Choose the example that matches your cluster’s IP family.
+
+**Important**
+Apply this policy before you set `networkPolicy: DefaultDeny` in your NodeClass. A node launched with `DefaultDeny` blocks DNS for every pod on it that no policy allows.
+
+**Example**
+
+```yaml
+apiVersion: networking.k8s.aws/v1alpha1
+kind: ClusterNetworkPolicy
+metadata:
+  name: allow-dns-egress
+spec:
+  tier: Admin
+  priority: 1
+  subject:
+    namespaces:
+      matchLabels: {} # Apply to all namespaces
+  egress:
+    - action: Accept
+      to:
+      - networks:
+        - 10.100.0.10/32
+      ports:
+      - portNumber:
+          protocol: UDP
+          port: 53
+      - portNumber:
+          protocol: TCP
+          port: 53
+      name: allow-dns
+```
+Replace with your cluster’s CoreDNS IP address, the `.10` address of the Service CIDR. EKS Auto Mode runs CoreDNS on each node and doesn’t create a `kube-dns` Service. For more information, see [Determining the CoreDNS IP address](#auto-net-pol-coredns-ip). Using the specific CoreDNS IP (`/32`) rather than the entire service CIDR limits port 53 access to only the DNS service.
+
+```yaml
+apiVersion: networking.k8s.aws/v1alpha1
+kind: ClusterNetworkPolicy
+metadata:
+  name: allow-dns-egress
+spec:
+  tier: Admin
+  priority: 1
+  subject:
+    namespaces:
+      matchLabels: {} # Apply to all namespaces
+  egress:
+    - action: Accept
+      to:
+      - networks:
+        - fd00:100::a/128
+      ports:
+      - portNumber:
+          protocol: UDP
+          port: 53
+      - portNumber:
+          protocol: TCP
+          port: 53
+      name: allow-dns
+```
+Replace with your cluster’s CoreDNS IPv6 address, the Service CIDR’s network address with `a` appended. EKS Auto Mode runs CoreDNS on each node and doesn’t create a `kube-dns` Service. For more information, see [Determining the CoreDNS IP address](#auto-net-pol-coredns-ip). Using the specific CoreDNS IP (`/128`) rather than the entire service CIDR limits port 53 access to only the DNS service.
+
+**Note**
+On IPv6 clusters, network policies don’t filter a pod’s IPv4 egress. Pods on an IPv6 cluster also have an IPv4 interface for egress to IPv4 destinations. After a policy selects a pod, such as this DNS policy, the pod’s IPv4 egress isn’t restricted.
 
 ## How does it work?
 <a name="_how_does_it_work"></a>
@@ -193,7 +264,7 @@ At the Kubernetes network level, this would allow egress from any pods in the "g
 ![Illustration of workload in EKS Auto communicating with applications on prem](https://docs.aws.amazon.com/eks/latest/userguide/images/eks-auto-to-on-prem.png)
 
 ### Determining the CoreDNS IP address
-<a name="_determining_the_coredns_ip_address"></a>
+<a name="auto-net-pol-coredns-ip"></a>
 
 For your application to resolve DNS, it must be allowed to communicate with CoreDNS, which runs locally on each EKS Auto Mode instance. The CoreDNS IP address is derived from the Service CIDR range configured for the cluster, and it remains fixed for the lifetime of the cluster. You can therefore determine it once and reference it directly in your network policies.
 
@@ -260,10 +331,10 @@ The network policy capabilities supported in EKS are evaluated in a specific ord
 
 1.  **Admin tier policies (evaluated first)**: All Admin tier ClusterNetworkPolicies are evaluated before any other policies. Within the Admin tier, policies are processed in priority order (lowest priority number first). The action type determines what happens next.
    +  **Deny action (highest precedence)**: When an Admin policy with a Deny action matches traffic, that traffic is immediately blocked regardless of any other policies. No further ClusterNetworkPolicy or NetworkPolicy rules are processed. This ensures that organization-wide security controls cannot be overridden by namespace-level policies.
-   +  **Allow action**: After Deny rules are evaluated, Admin policies with Allow actions are processed in priority order (lowest priority number first). When an Allow action matches, the traffic is accepted and no further policy evaluation occurs. These policies can grant access across multiple namespaces based on label selectors, providing centralized control over which workloads can access specific resources.
+   +  **Accept action**: After Deny rules are evaluated, Admin policies with Accept actions are processed in priority order (lowest priority number first). When an Accept action matches, the traffic is accepted and no further policy evaluation occurs. These policies can grant access across multiple namespaces based on label selectors, providing centralized control over which workloads can access specific resources.
    +  **Pass action**: Pass actions in Admin tier policies delegate decision-making to lower tiers. When traffic matches a Pass rule, evaluation skips all remaining Admin tier rules for that traffic and proceeds directly to the NetworkPolicy tier. This allows administrators to explicitly delegate control for certain traffic patterns to application teams. For example, you might use Pass rules to delegate intra-namespace traffic management to namespace administrators while maintaining strict controls over external access.
 
-1.  **Network policy tier**: If no Admin tier policy matches with Deny or Allow, or if a Pass action was matched, namespace-scoped ApplicationNetworkPolicy and traditional NetworkPolicy resources are evaluated next. These policies provide fine-grained control within individual namespaces and are managed by application teams. Namespace-scoped policies can only be more restrictive than Admin policies. They cannot override an Admin policy’s Deny decision, but they can further restrict traffic that was allowed or passed by Admin policies.
+1.  **Network policy tier**: If no Admin tier policy matches with Deny or Accept, or if a Pass action was matched, namespace-scoped ApplicationNetworkPolicy and traditional NetworkPolicy resources are evaluated next. These policies provide fine-grained control within individual namespaces and are managed by application teams. Namespace-scoped policies cannot override an Admin policy’s Deny or Accept decision. For traffic that an Admin policy passes or doesn’t match, the namespace-scoped policies decide whether to allow it.
 
 1.  **Baseline tier Admin policies**: If no Admin or namespace-scoped policies match the traffic, Baseline tier ClusterNetworkPolicies are evaluated. These provide default security postures that can be overridden by namespace-scoped policies, allowing administrators to set organization-wide defaults while giving teams flexibility to customize as needed. Baseline policies are evaluated in priority order (lowest priority number first).
 

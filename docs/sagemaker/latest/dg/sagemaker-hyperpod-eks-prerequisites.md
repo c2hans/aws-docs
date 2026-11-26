@@ -29,6 +29,7 @@ When provisioning your Amazon EKS cluster, consider the following:
 **Note**
 [AWS VPC CNI plugin for Kubernetes](https://github.com/aws/amazon-vpc-cni-k8s) is the only CNI supported by SageMaker HyperPod.
    + The [type of the subnet](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-types) in your VPC must be private for HyperPod clusters.
+   + To move nodes between two clusters, the clusters must share a VPC and subnet. A cluster's VPC cannot change after you create it, so plan your cluster networking accordingly. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
 
 1. **IAM roles**
    + Ensure the necessary IAM roles for HyperPod are set up as guided in the [AWS Identity and Access Management for SageMaker HyperPod](sagemaker-hyperpod-prerequisites-iam.md) section.

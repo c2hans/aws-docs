@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 
 |  |  |
 | --- |--- |
-| **Purpose** | Help determine which AWS storage service is the best fit for your organization. |
-| **Last updated** | October 5, 2026 |
-| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Data Transfer Terminal](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
+| **Purpose** | Help determine which AWS storage services fit your organization and workloads. |
+| **Last updated** | November 24, 2026 |
+| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) (including S3 Tables, S3 Vectors, S3 Files, and S3 Express One Zone) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Data Transfer Terminal](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
 
 ## Introduction
 <a name="intro"></a>
@@ -20,6 +20,8 @@ AWS offers a broad portfolio of reliable, scalable, and secure storage services 
 You can select from block, file, and object storage services as well as cloud data migration options for your workload. Choosing the right storage service for your workload requires you to make a series of decisions based on your business needs.
 
 This decision guide will help you ask the right questions, provide a clear path for implementation, and help you migrate from your existing on-premises or cloud storage.
+
+The guide also covers new applications and AI workloads, including storage for vector embeddings, tabular data, and AI agents that need to find and use data.
 
 ## Understand
 <a name="understand"></a>
@@ -34,6 +36,17 @@ For example, services in the Amazon FSx data storage family come in four options
 + **Amazon FSx for OpenZFS** a fully managed file storage service that enables you to move data to AWS from on-premises ZFS or other Linux-based file servers.
 + **Amazon FSx for NetApp ONTAP** a fully managed service that provides scalable file storage built on the NetApp ONTAP file system.
 
+### How storage categories overlap
+<a name="storage-overlap"></a>
+
+AWS storage services fall into three main categories: object, file, and block. Each category matches a way that applications access data. Object storage uses an HTTP API, file storage uses a file protocol such as NFS or SMB, and block storage attaches to a compute instance as a disk.
+
+Some features let one category use another category's interface. This means you can choose storage based on where your data lives, and then add the access method your application needs:
++ **S3 Files** gives file-based applications NFS access to data in an Amazon S3 bucket. The data stays in Amazon S3 as the system of record.
++ **Amazon S3 Access Points for Amazon FSx** expose data in Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS through the Amazon S3 API, without copying it to a bucket.
+
+You can use these features when both file-based and Amazon S3-based applications need the same data.
+
 ### Definitions
 <a name="definitions"></a>
 
@@ -41,6 +54,13 @@ There are AWS service options for the following storage types:
 + **Block** — Block storage is technology that controls data storage and storage devices. It takes any data, like a file or database entry, and divides it into blocks of equal sizes. The block storage system then stores the data block on underlying physical storage in a manner that is optimized for fast access and retrieval.
 + **File system** — File systems store data in a hierarchical structure of files and folders. In network environments, file-based storage often uses network-attached storage (NAS) technology. NAS allows users to access network storage data in similar ways to a local hard drive. File storage is user-friendly and allows users to manage file-sharing control.
 + **Object** — Object storage is a technology that stores and manages data in an unstructured format called objects. Each object is tagged with a unique identifier and contains metadata that describes the underlying content. In addition to object storage, Amazon S3 also supports table storage (S3 Tables, for Apache Iceberg analytics), vector storage (S3 Vectors, for AI and ML embeddings), and file access to your Amazon S3 data (S3 Files).
++ **S3 Express One Zone** — An Amazon S3 storage class that uses directory buckets in a single Availability Zone. It is designed for frequently accessed, latency-sensitive data.
++ **S3 Tables** — Apache Iceberg tables stored in Amazon S3 table buckets, with automatic maintenance such as compaction. It is designed for structured, tabular data that you query with SQL engines.
++ **S3 Vectors** — Vector storage and similarity search in Amazon S3. It is designed for storing and querying vector embeddings.
++ **S3 Files** — Fully managed NFS file access to data in an Amazon S3 bucket, with file locking and POSIX permissions.
++ **S3 Metadata** — Queryable object metadata in fully managed, read-only Apache Iceberg tables. It includes system-defined metadata, custom metadata such as object tags, user-defined metadata, and annotations.
++ **Amazon S3 annotations** — Business context that you attach to objects so that people, agents, and analytics tools can find the right data.
++ **Amazon S3 Access Points for Amazon FSx** — Amazon S3 access points that attach to an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS file system, so that Amazon S3-based applications can read file data without copying it to a bucket.
 + **Cache** — A cache is a high-speed data storage layer used to temporarily store frequently accessed or recently used data closer to the point of access, with the aim of improving system performance and reducing latency. It serves as a buffer between the slower and larger primary storage (such as disks or remote storage) and the computing resources that need to access the data.
 + **Hybrid/Edge** — Hybrid/Edge storage combines on-premises storage infrastructure with cloud storage services, allowing data mobility between the two environments based on requirements like performance, cost, and compliance. It provides benefits such as low-latency access, cost optimization, data sovereignty, cloud scalability, and business continuity.
 
@@ -91,7 +111,7 @@ Performance is a critical factor to consider when choosing an AWS storage servic
 + Do other metrics (such as IOPS or throughput) dominate your applications performance profile?
 + Is your workload read or write-heavy?
 
-Different storage services provide different performance ceilings. For example, Amazon EBS gp3 volumes support up to 64 TiB of capacity, 80,000 IOPS, and 2,000 MB/s of throughput.
+Different storage services provide different performance ceilings. For example, Amazon EBS gp3 volumes support up to 64 TiB of capacity, 80,000 IOPS, and 2,000 MiB/s of throughput.
 
 ------
 #### [ Migration strategy and risks ]
@@ -161,12 +181,20 @@ If your workload has data-location or regulatory requirements, consider where yo
 The AWS Well-Architected Framework sustainability pillar provides guidance for reducing the environmental impact of your workloads. For storage, choosing right-sized storage classes and using tiering such as Intelligent-Tiering and Infrequent Access or Archive tiers helps reduce your storage footprint.
 
 ------
-#### [ Modern workloads (AI/ML and containers) ]
+#### [ AI, agent, and container workloads ]
 
 For AI and ML pipelines, match storage to each stage:
-+ Use S3 Vectors to store embeddings for retrieval-augmented generation (RAG) and semantic search.
-+ Use S3 Express One Zone for latency-sensitive training and inference.
-+ Use S3 Files and Amazon FSx for Lustre for data preparation and training datasets.
++ **Training data and data preparation** — Amazon S3, S3 Files, Amazon EFS, or Amazon FSx for Lustre for highly parallel access across many compute nodes.
++ **File-based training on Amazon S3 data** — You can link an Amazon FSx for Lustre file system to an Amazon S3 bucket. The file system presents the objects as files, so training jobs can read them through a file interface.
++ **Latency-sensitive training and inference** — S3 Express One Zone for consistent single-digit millisecond access to frequently used data, especially for workloads with many small or random reads.
++ **Retrieval-augmented generation (RAG) and semantic search** — S3 Vectors for storing and querying embeddings. You can choose S3 Vectors as the vector store for Amazon Bedrock Knowledge Bases.
+
+S3 Vectors fits storage-native, cost-sensitive vector workloads at scale. For low-latency or high-QPS vector search, see the Choosing an AWS vector database guide.
+
+For AI agents:
++ **Agent memory and retrieval** — S3 Vectors provides vector storage for AI agents. An agent can store embeddings and retrieve related context with similarity queries.
++ **Finding data** — S3 Metadata can query a table of the objects in a bucket and their metadata. Amazon S3 annotations can attach business context to objects so that agents and analytics tools can find the right data.
++ **File-based tools** — Agents and functions that expect a file system can use Amazon EFS or S3 Files. Amazon EC2, Lambda, Amazon ECS, and Amazon EKS can mount S3 Files.
 
 For container workloads, you can provide file, block, and object access to workloads on Amazon EKS:
 + Attach file and block storage through Container Storage Interface (CSI) drivers, such as the Amazon EFS CSI driver and the Amazon EBS CSI driver.
@@ -180,25 +208,28 @@ For container workloads, you can provide file, block, and object access to workl
 
 Now that you know the criteria you should use to evaluate your storage options, you are ready to choose which AWS storage services are right for your business needs.
 
-The following table highlights which storage options are optimized for which circumstances. Use it to help determine the one that is the best fit for your use case.
+The following table highlights which storage options are optimized for which circumstances. Use it to help determine which options fit your use case.
 
 | Storage type | What is it optimized for? | Storage services or tools |
-| --- |--- |--- |
+| --- | --- | --- |
 | Block | Applications requiring low-latency, high-performance durable storage attached to single Amazon EC2 instances or containers, such as databases and general-purpose local instance storage. | [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html)<br />[ Amazon EC2 instance store ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) |
-|  File system  |  Applications and workloads requiring shared read and write access across multiple Amazon EC2 instances or containers, or from multiple on-premises servers, such as team file shares, highly available enterprise applications, analytics workloads, and ML training.  |  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) [Amazon FSx](https://docs.aws.amazon.com/fsx/) [Amazon FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html) [Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html) [Amazon FSx for OpenZFS](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/what-is-fsx.html) [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html) [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html) [Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html) [S3 Files](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html) (file access to Amazon S3 data)  |
-| --- |--- |--- |
-| Object | Read-heavy workloads such as content distribution, web hosting, big data analytics, and ML workflows. Well-suited for scenarios where data needs to be stored, accessed, and distributed globally over the internet. | [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) |
-|  Cache  |  Fully managed, scalable, and high-speed cache on AWS for processing file data stored in disparate locations—including on-premises NFS file systems, and/or in cloud file systems (Amazon FSx for OpenZFS, Amazon FSx for NetApp ONTAP), and Amazon S3.  |  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html)  |
-| --- |--- |--- |
+| File system | Applications and workloads requiring shared read and write access across multiple Amazon EC2 instances or containers, or from multiple on-premises servers, such as team file shares, highly available enterprise applications, analytics workloads, and ML training. | [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)<br />[Amazon FSx](https://docs.aws.amazon.com/fsx/)<br />[Amazon FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html)<br />[Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html)<br />[Amazon FSx for OpenZFS](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/what-is-fsx.html)<br />[Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)<br />[Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)<br />Amazon FSx File Gateway remains available to existing customers only. |
+| Object (general purpose) | Durable storage for unstructured data up to 50 TB, with storage classes from frequent access to archive. Fits content distribution, web hosting, analytics, and ML. | [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) general purpose buckets |
+| Object (low latency) | Consistent single-digit millisecond access to frequently used data, such as latency-sensitive analytics and ML workloads with many small or random reads. | [S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html) |
+| Tables | Apache Iceberg tables for structured data that you query with SQL engines, with automatic table maintenance. | [S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables.html) |
+| Vectors | Cost-sensitive storage and similarity search for vector embeddings at scale, such as RAG, semantic search, and AI agents. For low-latency or high-QPS search, see [Choosing an AWS vector database](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/vector-database-guide.html). | [S3 Vectors](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors.html) |
+| File access to Amazon S3 data | NFS access to data that already lives in Amazon S3, alongside object access. | [S3 Files](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html) |
+| Cache | Fully managed, scalable, and high-speed cache on AWS for processing file data stored in disparate locations—including on-premises NFS file systems, and/or in cloud file systems (Amazon FSx for OpenZFS, Amazon FSx for NetApp ONTAP), and Amazon S3. | [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) |
 | Hybrid/Edge | Deliver low-latency data to on-premises applications and providing on-premises applications access to cloud-backed storage. | [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)<br />[AWS Storage Gateway Tape Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)<br />[AWS Storage Gateway Volume Gateway](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html) |
+
+Choose S3 Files when the data already lives in Amazon S3 and needs file-path access alongside object access. Choose Amazon EFS when the file system is the main home for the data.
 
 The following table provides a detailed look at your online and offline options.
 
 | Migration options | When speed is the priority | When bandwidth is important | Storage services or tools |
-| --- |--- |--- |--- |
+| --- | --- | --- | --- |
 | Online | Online is optimized for frequent updates to data. Use it for time-critical or ongoing workloads. | Consider scheduling your transfer during off hours when you have sufficient bandwidth. | [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/setting-up.html)<br />[AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)<br />[ Amazon FSx for NetApp ONTAP SnapMirror ](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/scheduled-replication.html)<br />[AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) |
-|  Offline  | Suitable for one-time or periodic uploads - and when data can be static in transit. |  This choice makes sense when you need to use only the minimum available bandwidth - and you prefer the predictability of physical moves.   |  [AWS Data Transfer Terminal](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html) The Snow Family remains available to existing customers only.  |
-| --- |--- |--- |--- |
+| Offline | Suitable for one-time or periodic uploads - and when data can be static in transit. | This choice makes sense when you need to use only the minimum available bandwidth - and you prefer the predictability of physical moves.  | [AWS Data Transfer Terminal](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html)<br />The Snow Family remains available to existing customers only. |
 
 ## Use
 <a name="use"></a>
@@ -224,6 +255,78 @@ To explore how to use and learn more about each of the available AWS storage ser
   The following tutorials present complete end-to-end procedures for common Amazon S3 tasks. These tutorials are intended for a lab-type environment and provide general guidance.
 
    [Get started with the tutorials ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorials.html)
+
+------
+#### [ S3 Vectors ]
++  **Getting started with S3 Vectors**
+
+  Learn how to create a vector bucket and a vector index, store vector embeddings that you generate with an Amazon Bedrock embedding model, and run similarity queries.
+
+   [Follow the S3 Vectors getting started tutorial](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-getting-started.html)
++  **Using S3 Vectors with Amazon Bedrock Knowledge Bases**
+
+  Learn how to select S3 Vectors as the vector store when you create a knowledge base for a RAG application.
+
+   [Read about S3 Vectors with Knowledge Bases](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-bedrock-kb.html)
++  **Metadata filtering in S3 Vectors**
+
+  Learn how to attach metadata to vectors and filter query results by that metadata.
+
+   [Read about S3 Vectors metadata filtering](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-metadata-filtering.html)
+
+------
+#### [ S3 Tables ]
++  **Getting started with S3 Tables**
+
+  Learn how to create a table bucket, integrate it with AWS analytics services, create a namespace and a table, and query the table with SQL in Amazon Athena.
+
+   [Follow the S3 Tables getting started tutorial](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-getting-started.html)
++  **Migrating tables to S3 Tables**
+
+  Learn how to migrate AWS Glue Data Catalog-registered Apache Hive tables stored as Parquet in Amazon S3 to Apache Iceberg tables in S3 Tables.
+
+   [Read about migrating to S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-migrate.html)
++  **Maintenance for S3 Tables**
+
+  Learn about the automatic maintenance that S3 Tables runs, such as compaction, and how to configure it.
+
+   [Read about S3 Tables maintenance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance.html)
+
+------
+#### [ S3 Express One Zone ]
++  **Getting started with S3 Express One Zone**
+
+  Learn how to configure a gateway VPC endpoint, create a directory bucket, and import objects from a general purpose bucket.
+
+   [Follow the S3 Express One Zone getting started tutorial](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-getting-started.html)
++  **Working with directory buckets**
+
+  Learn how directory buckets work, including naming, Availability Zones, and access.
+
+   [Read about directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html)
++  **Optimizing directory bucket performance**
+
+  Learn how to place compute and storage together and design requests for low latency.
+
+   [Read about directory bucket performance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-optimizing-performance.html)
+
+------
+#### [ S3 Files ]
++  **Getting started with S3 Files**
+
+  Learn how to create an S3 file system for a bucket, mount it on an Amazon EC2 instance, and test file operations.
+
+   [Follow the S3 Files getting started tutorial](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-getting-started.html)
++  **Mounting S3 file systems on compute resources**
+
+  Learn how to mount an S3 file system on Amazon EC2 instances, Lambda functions, Amazon EKS clusters, and Amazon ECS clusters.
+
+   [Read about mounting S3 file systems](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-attach-compute.html)
++  **S3 Files performance specifications**
+
+  Learn about throughput, latency, and other performance details for S3 file systems.
+
+   [Read the S3 Files performance specifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-performance.html)
 
 ------
 #### [ Amazon EBS ]
@@ -288,6 +391,11 @@ To explore how to use and learn more about each of the available AWS storage ser
   This guide provides an introduction to Amazon FSx for OpenZFS. Amazon FSx for OpenZFS includes FSx Intelligent-Tiering for automatic cost optimization, and supports Amazon S3 Access Points, which makes file data accessible to AI, ML, and analytics services without moving data.
 
    [Get started with the tutorial](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/getting-started.html)
++  **Accessing Amazon FSx data through Amazon S3 Access Points**
+
+  Learn how to attach an Amazon S3 access point to an Amazon FSx for NetApp ONTAP volume so that Amazon S3-based applications can read file data without copying it.
+
+   [Read about Amazon S3 Access Points for Amazon FSx](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/accessing-data-via-s3-access-points.html)
 
 ------
 #### [ Amazon File Cache ]
@@ -311,7 +419,7 @@ To explore how to use and learn more about each of the available AWS storage ser
    [Explore the guide](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)
 +  **User guide for Amazon FSx File Gateway**
 
-  Describes Amazon FSx File Gateway, which provides access to in-cloud Amazon FSx for Windows File Server shares from on-premises facilities. Includes instructions on working with the console and the API.
+  Describes Amazon FSx File Gateway, which provides access to in-cloud Amazon FSx for Windows File Server shares from on-premises facilities. Includes instructions on working with the console and the API. New customers can no longer use Amazon FSx File Gateway. Existing customers can continue to use it.
 
    [Explore the guide](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html)
 +  **User guide for Tape Gateway**

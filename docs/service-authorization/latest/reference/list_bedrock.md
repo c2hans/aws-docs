@@ -426,10 +426,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetProject  **
   - **SDK client:** bedrock
-  - **IAM action:**  [bedrock:GetProject](#list_bedrock-action-GetProject)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Read
+  - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [bedrock:GetProject](#list_bedrock-action-GetProject)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   GetProjectDataRetentionStorage  **
   - **SDK client:** bedrock
@@ -472,6 +470,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   GetTrustedAccessProgramOrganizationEnrollment  **
   - **SDK client:** bedrock
   - **IAM action:**  [bedrock:GetTrustedAccessProgramOrganizationEnrollment](#list_bedrock-action-GetTrustedAccessProgramOrganizationEnrollment)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetTrustedAccessProgramProjectEnrollment  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:GetTrustedAccessProgramProjectEnrollment](#list_bedrock-action-GetTrustedAccessProgramProjectEnrollment)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -661,6 +666,27 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   PutTrustedAccessProgramAccountEnrollment  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:PutTrustedAccessProgramAccountEnrollment](#list_bedrock-action-PutTrustedAccessProgramAccountEnrollment)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   PutTrustedAccessProgramOrganizationEnrollment  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:PutTrustedAccessProgramOrganizationEnrollment](#list_bedrock-action-PutTrustedAccessProgramOrganizationEnrollment)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   PutTrustedAccessProgramProjectEnrollment  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:PutTrustedAccessProgramProjectEnrollment](#list_bedrock-action-PutTrustedAccessProgramProjectEnrollment)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   PutUseCaseForModelAccess  **
   - **SDK client:** bedrock
   - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -685,6 +711,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [bedrock:CallWithBearerToken](#list_bedrock-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [bedrock:InvokeAutomatedReasoningPolicy](#list_bedrock-action-InvokeAutomatedReasoningPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [bedrock:StartAutomatedReasoningPolicyTestWorkflow](#list_bedrock-action-StartAutomatedReasoningPolicyTestWorkflow)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   StartTrustedAccessProgramAccountApplication  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:StartTrustedAccessProgramAccountApplication](#list_bedrock-action-StartTrustedAccessProgramAccountApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StartTrustedAccessProgramOrganizationApplication  **
+  - **SDK client:** bedrock
+  - **IAM action:**  [bedrock:StartTrustedAccessProgramOrganizationApplication](#list_bedrock-action-StartTrustedAccessProgramOrganizationApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   StartTrustedAccessProgramProjectApplication  **
   - **SDK client:** bedrock

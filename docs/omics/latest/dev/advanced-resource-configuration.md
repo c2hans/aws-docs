@@ -36,10 +36,10 @@ In WDL, use **omicsResourceFallbackOrder** instead of the task's usual **acceler
 <a name="advanced-resource-configuration-runtime-fields"></a>
 
 **Note**
-On this page, *profile* refers to an individual accelerator or CPU resource configuration declared within **omicsResourceFallbackOrder** that consists of the 5 per-profile fields.
+On this page, *profile* refers to an individual accelerator or CPU resource configuration declared within **omicsResourceFallbackOrder** that consists of the 7 per-profile fields.
 
 When using **omicsResourceFallbackOrder**, task-level runtime fields split into two sets:
-+ **Per-profile fields** (**acceleratorType**, **acceleratorCount**, **cpu**, **memory**, **omicsResourceWaitTimeoutInMin**) — configurable independently for each profile in the list.
++ **Per-profile fields** (**acceleratorType**, **acceleratorCount**, **cpu**, **memory**, **omicsMaxCpu**, **omicsMaxMemory**, **omicsResourceWaitTimeoutInMin**) — configurable independently for each profile in the list.
 + **Shared fields** (all other runtime fields, such as **docker**, **maxRetries**) — set once at the top level and apply the same way to every profile.
 
 In WDL, the CPU field is **cpu**. In Nextflow, it is **cpus**, and **memory** is written as for the Nextflow **memory** directive, for example `'32 GB'`. The shared fields in Nextflow are the process's other directives, such as **container**, **errorStrategy**, and **maxRetries**.
@@ -138,13 +138,15 @@ Each entry in the **omicsResourceFallbackOrder** list is a map describing one re
 
 | Field | Type | Default when omitted | Notes |
 | --- | --- | --- | --- |
-| acceleratorType | String | When not specified, the profile is considered as CPU | Must be one of the 7 supported accelerator types. See [Task accelerators in a HealthOmics workflow definition](task-accelerators.md). Omit this field to specify a CPU-only profile. For CPU profile, do not set it to "". |
+| acceleratorType | String | When not specified, the profile is considered as CPU | A supported accelerator type, or a comma-separated list of accelerator types for expanded accelerator search, for example "nvidia-l4,nvidia-tesla-a10g". See [Task accelerators in a HealthOmics workflow definition](task-accelerators.md). Omit this field to specify a CPU-only profile. For CPU profile, do not set it to "". |
 | acceleratorCount | Integer | Field absent when acceleratorType is also absent | Must be specified together with acceleratorType. A profile cannot have one without the other. |
 | cpu (WDL) | Integer or Float | 1 vCPU, or the GPU instance-type default for a GPU profile | Rounded up to a whole vCPU, minimum 1. Same fractional support as the top-level runtime.cpu. |
 | cpus (Nextflow) | Integer, Float, or a String holding a whole number (for example, '8') | The process's cpus, if set. Otherwise the GPU instance-type default for a GPU profile. | Truncated to a whole vCPU, as the cpus directive does. A value below 1 runs with 1 vCPU. A negative value is rejected. |
 | memory (WDL) | String, for example "32 GiB" | 1 GiB, or the GPU instance-type default for a GPU profile | Same format as the top-level runtime.memory. Rounded up to a whole GiB. |
 | memory (Nextflow) | String or Nextflow memory value, for example '32 GB' or 32.GB | The process's memory, if set. Otherwise the GPU instance-type default for a GPU profile. | Same format as the memory directive: B, KB, MB, GB or TB. Rounded down to a whole GB. A value below 1 GB runs with 1 GB. |
-| omicsResourceWaitTimeoutInMin | Integer | 20 minutes for Single GPU accelerator bundle and 30 minutes for multi-GPU accelerator bundles. These are also recommended minimum values. | There is no upper bound. Controls how long HealthOmics searches for one profile before moving to the next profile. See [Timeout behavior](#advanced-resource-configuration-timeout-behavior). |
+| omicsMaxCpu | Integer | No upper limit | The maximum vCPUs for expanded accelerator search in this profile. Must be at least the profile's cpu (WDL) or cpus (Nextflow). Not allowed in a CPU profile. See [Expanded accelerator search](expanded-accelerator-search.md). |
+| omicsMaxMemory | String, in the same format as memory | No upper limit | The maximum memory for expanded accelerator search in this profile. Must be at least the profile's memory. Not allowed in a CPU profile. |
+| omicsResourceWaitTimeoutInMin | Integer | 20 minutes | The allowed range is 20–10080 minutes (7 days). HealthOmics sets a value below 20 to 20 and a value above 10080 to 10080, and writes a warning to the run log. Controls how long HealthOmics searches for one profile before moving to the next profile. See [Timeout behavior](#advanced-resource-configuration-timeout-behavior). |
 
 **Note**
 Omitted fields take default value, not values inherited from an earlier profile in the list. A field left out of a profile takes its documented default (as given in the table above), not a value copied from an earlier profile in the list.
@@ -154,7 +156,8 @@ Omitted fields take default value, not values inherited from an earlier profile 
 
 **omicsResourceWaitTimeoutInMin** controls how long HealthOmics waits for accelerator capacity on a given profile before advancing to the next one.
 + **Per-profile, not global.** Each accelerator profile can specify its own timeout. Configure a longer wait for a preferred high-end accelerator and a shorter wait for a fallback type.
-+ **20-minute recommended minimum.** Values below 20 minutes (30 for multi-GPU bundles) are accepted but generate a validation warning.
++ **Predefined accelerator bundles.** A predefined accelerator bundle that spans several instance families, such as `nvidia-t4-a10g-l4`, searches its families one at a time. We recommend a wait timeout of at least 30 minutes for a profile that uses one.
++ The allowed range is 20–10080 minutes. A value below 20 minutes is set to 20, and a value above 10080 minutes is set to 10080. HealthOmics writes a warning to the run log that names the profile, for example `omicsResourceFallbackOrder profile 2/3: omicsResourceWaitTimeoutInMin 5 is outside 20-10080 and was set to 20 for task 'align'.`
 + **Timeout advances, not fails.** When the timeout elapses, HealthOmics moves to the next profile — the task does not fail. Failure only occurs after all profiles are exhausted.
 + **Not applicable to CPU-only profiles.** A CPU profile has no capacity limitations. Omit **omicsResourceWaitTimeoutInMin** on the final CPU profile.
 + **Retries receive a fresh timeout window.** Each OOM or service-error retry starts its own full **omicsResourceWaitTimeoutInMin** window on the same profile, rather than inheriting time already spent by a prior attempt.
@@ -173,7 +176,7 @@ HealthOmics sets the following environment variable in the task container so you
 
 HealthOmics validates the following at workflow creation time and re-checks at task runtime. All rules reject the workflow or task unless noted otherwise.
 
-1. **Cannot mix with individual resource directives.** If **omicsResourceFallbackOrder** is specified, the top-level **acceleratorType**, **acceleratorCount**, **cpu**, **memory**, and **omicsResourceWaitTimeoutInMin** must not be specified in the same task.
+1. **Cannot mix with individual resource directives.** If **omicsResourceFallbackOrder** is specified, the top-level **acceleratorType**, **acceleratorCount**, **cpu**, **memory**, **omicsMaxCpu**, **omicsMaxMemory**, and **omicsResourceWaitTimeoutInMin** must not be specified in the same task.
 
 1. **Must be a list.** **omicsResourceFallbackOrder** must be written as an array of profiles.
 
@@ -185,15 +188,21 @@ HealthOmics validates the following at workflow creation time and re-checks at t
 
 1. ****acceleratorType** and **acceleratorCount** go together.** A profile that sets one must set the other. A CPU profile must omit both.
 
-1. **Supported accelerator types only.** **acceleratorType** must be a supported accelerator type or omitted (CPU profile). Empty string `""` is not accepted.
+1. **Supported accelerator types only.** **acceleratorType** must be a supported accelerator type, a comma-separated list of supported accelerator types, or omitted (CPU profile). Empty string `""` is not accepted.
 
 1. **Accelerator type unavailable in the Region (warning only).** If an accelerator type isn't supported in the workflow's AWS Region, HealthOmics skips that profile at task scheduling time. You get a warning in the runtime logs when an accelerator is skipped because it's not supported (or not offered) in that Region.
 
-1. **Minimum wait timeout.** **omicsResourceWaitTimeoutInMin** recommended value is ≥ 20 minutes (≥ 30 for multi-GPU bundles).
+1. **Minimum wait timeout.** **omicsResourceWaitTimeoutInMin** is set to the nearest value in the range 20–10080 minutes, with a warning.
 
 1. **Duplicate profiles (warning only).** Duplicate profiles are allowed but produce a warning. Consider increasing **omicsResourceWaitTimeoutInMin** on the earlier profile instead.
 
-1. **Unrecognized fields rejected.** Only the 5 per-profile fields listed above are allowed.
+1. **Unrecognized fields rejected.** Only the 7 per-profile fields listed above are allowed.
+
+1. `omicsMaxCpu` and `omicsMaxMemory` apply only to a profile with an `acceleratorType`. A CPU profile that sets either field is rejected.
+
+1. `omicsMaxCpu` must be at least `cpu`, and `omicsMaxMemory` must be at least `memory`.
+
+1. Warning only: When no instance type matches an expanded search profile, HealthOmics skips the profile and writes a warning to the run log. The task is rejected only when no profile in the list can run.
 
 1. **Correct types.** For example, **acceleratorCount** must be a number, not a string.
 
@@ -224,7 +233,7 @@ In WDL, if all profiles are exhausted on the first engine attempt with no instan
 <a name="advanced-resource-configuration-best-practices"></a>
 
 Follow these best practices when you configure resource fallback:
-+ **Avoid multi-GPU bundle types in fallback order.** Accelerator types that span multiple instance families (for example, `nvidia-t4-a10g-l4`) are not recommended inside **omicsResourceFallbackOrder**. Use single-family types instead. For details on available accelerator types, see [Task accelerators in a HealthOmics workflow definition](task-accelerators.md).
++ **Avoid multi-GPU bundle types in fallback order.** Accelerator types that span multiple instance families (for example, `nvidia-t4-a10g-l4`) are not recommended inside **omicsResourceFallbackOrder**. Use single-family types instead. For details on available accelerator types, see [Task accelerators in a HealthOmics workflow definition](task-accelerators.md). To search several accelerator types within one profile, list them in a comma-separated `acceleratorType` instead. Because expanded search tries all listed types at the same time, the profile doesn't wait on each family in turn. See [Expanded accelerator search](expanded-accelerator-search.md).
 + **Set appropriate wait timeouts.** For high-priority accelerator profiles, increase **omicsResourceWaitTimeoutInMin** to give HealthOmics more time to find capacity.
 + **Place CPU profiles last.** If you include a CPU-only fallback, it must be the last entry so accelerators are preferred when available.
 + **Use multi-architecture container images.** When using GPU to CPU fallback, ensure your Docker image supports both GPU-accelerated and CPU-only code paths.

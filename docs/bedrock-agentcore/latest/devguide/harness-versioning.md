@@ -91,6 +91,18 @@ Endpoint is being updated to a new version
 UPDATE\_FAILED
 Indicates update operation failure
 
+## Build time on Runtime platform version V2
+<a name="harness-platform-version"></a>
+
+A harness runs on AgentCore Runtime, and it can run on [Runtime platform version V2](runtime-how-it-works.md#runtime-platform-versions). V2 starts each session from a snapshot of the prepared environment. Runtime platform versions are separate from the harness versions on this page.
+
+On platform version V2, each build prepares and snapshots the environment. You notice this in the following ways:
++  `CreateHarness` and `UpdateHarness` need several minutes to reach `READY`. A build takes about 4 minutes. The first build in an account can take longer.
++ Each endpoint gets its own snapshot build. Creating an endpoint, or updating it to a version, runs a full build, even when `DEFAULT` already serves that version.
++ Poll `GetHarness` or `GetHarnessEndpoint` until the status is `READY` or ends in `FAILED`. Allow several minutes for each build.
+
+For more information about snapshots, see [Snapshot lifecycle](runtime-how-it-works.md#runtime-v2-snapshot-lifecycle).
+
 ## Creating an endpoint
 <a name="harness-creating-endpoints"></a>
 

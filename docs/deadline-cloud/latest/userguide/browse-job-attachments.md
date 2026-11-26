@@ -77,9 +77,12 @@ The following file types support inline preview:
 + Audio: MP3, WAV, OGG, FLAC, AAC, WebM
 + 3D meshes and point clouds: GLB, glTF, OBJ, STL, PLY, PCD
 + 3D scenes: USD, USDA, USDC, USDZ
++ Robot descriptions: URDF
 
 For what the table, data, and log viewers show, see [Viewing data and log files](preview-task-outputs.md#preview-task-outputs-data).
 
 In the full-screen preview of a 3D file, a toolbar has the same view buttons and settings. A panel next to the view shows the properties of the file and, when the file has more than one object, its scene graph. To hide or show this panel, choose **Hide properties panel** or **Show properties panel**. For more information, see [Viewing 3D meshes and point clouds](preview-task-outputs.md#preview-task-outputs-3d) and [Viewing the properties of a mesh or point cloud](preview-task-outputs.md#preview-task-outputs-properties).
 
 For a USD, USDA, USDC, or USDZ file, the full-screen preview lists details of the scene, such as its up axis, its units, and its prim hierarchy.
+
+For a URDF file, the toolbar of the full-screen preview also has the **Joint positions** icon, which opens the panel for posing the robot. For more information about posing a robot, see [Viewing and posing a URDF robot](preview-task-outputs.md#preview-task-outputs-urdf).

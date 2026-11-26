@@ -26,6 +26,9 @@ HyperPod emits two categories of events for EKS clusters on continuous provision
 
 **EKS-specific events** cover orchestrator-specific operations such as EKS access entry management, Kubernetes configuration updates (labels and taints), Karpenter autoscaling lifecycle, pod eviction and cordon/uncordon during patching, and bake time alarm monitoring with auto-rollback. These events provide visibility into EKS-specific lifecycle stages that were previously only observable through CloudWatch logs. For the complete list, see [EKS-specific events](sagemaker-hyperpod-cluster-events-reference.md#sagemaker-hyperpod-cluster-events-eks) in the HyperPod cluster events reference.
 
+**Note**
+Node movement emits two events per node. The source cluster records an **EC2 instance detached for move** event and the target cluster records an **EC2 instance attached after move** event, so you can follow a move through cluster events without polling. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md). For the full event descriptions, see [EKS-specific events](sagemaker-hyperpod-cluster-events-reference.md#sagemaker-hyperpod-cluster-events-eks).
+
 ## Viewing events in the console
 <a name="sagemaker-hyperpod-cluster-events-eks-console"></a>
 

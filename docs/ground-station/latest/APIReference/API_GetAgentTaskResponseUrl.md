@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 # GetAgentTaskResponseUrl
 
 **Note**
- For use by AWS Ground Station Agent and shouldn't be called directly.
+For use by AWS Ground Station Agent and shouldn't be called directly.
 
 Gets a presigned URL for uploading agent task response logs.
 

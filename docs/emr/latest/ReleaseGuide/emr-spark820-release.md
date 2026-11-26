@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark820-rel
 ## emr-spark-8.2.0 supported lifecycle
 <a name="emr-spark820-supported-lifecycle"></a>
 
-This release is designated as a Long Term Support (LTS) release. The following table describes the supported lifecycle dates for Amazon EMR Spark 8.2.0.
+The following table describes the supported lifecycle dates for Amazon EMR Spark 8.2.0.
 
 | Support phase | Date |
 | --- | --- |
 | Initial release date | November 18, 2026 |
-| Standard support until | November 17, 2029 |
+| Standard support until | November 17, 2028 |
 | End of life | November 18, 2029 |
 
 ## emr-spark-8.2.0 application versions
@@ -59,16 +59,11 @@ The following release notes include information for Amazon EMR release 8.2.0 (em
   + **Spark Declarative Pipelines** — Materialized views defined in Spark Declarative Pipelines can now be stored as Iceberg materialized views in the AWS Glue Data Catalog. Unlike materialized views created with SQL, a pipeline run leaves them unchanged when their definition and sources haven't changed. Otherwise, the pipeline refreshes them incrementally when possible. To opt in, set `spark.sql.pipelines.materializedView.implWithGlueIcebergMVMode` to `GLUE_ICEBERG_MV_PREFERRED`. Refresh skipping and incremental refresh also require `spark.sql.optimizer.incrementalMVRefresh.enabled` set to `true`. The setting applies to materialized views that the pipeline creates after you opt in. A view that can't be stored as an AWS Glue materialized view is created as a regular AWS Glue Iceberg table, as before.
   + **Schema evolution** — Materialized views now support schema evolution with `CREATE OR REPLACE`.
 + **Governed custom user-defined functions with Lake Formation fine-grained access control** — Spark jobs on clusters that use Lake Formation FGAC can now call administrator-approved custom user-defined functions (UDFs) packaged as Lake Formation custom code artifacts. Approved artifact JARs load automatically when the application starts, so you no longer pass them with `--jars`. Row filters can call these functions by their database-qualified name, and queries that call unapproved functions are rejected. Governed UDFs work in Spark Connect sessions and when the driver runs on a core node. Cluster operators can turn off governed UDFs, limit which AWS Glue UDFs are allowed, and configure how long Lake Formation access contexts last and when they refresh. The job's execution role needs the `lakeformation:GetTemporaryGlueFunctionCredentials` permission.
-+ **Trusted identity propagation for steps, sessions, and live UIs** — Steps and interactive sessions (Spark Connect and Livy) can now carry IAM Identity Center trusted identity context into the runtime role sessions that Amazon EMR assumes on your behalf. This works on clusters that use runtime roles, IAM Identity Center, or Lake Formation FGAC. Downstream services, including Lake Formation and Amazon S3 Access Grants, can then authorize and audit access as the original user. Running steps and sessions pick up refreshed identity context without being relaunched. The persistent Spark History Server now shows each user as the owner of their completed applications.
-
-  Amazon EMR also removes the temporary operating system user that it creates for each workload, along with that user's HDFS home directory and credentials, shortly after the application finishes. This cleanup is on by default. To turn it off, set `emr.secretagent.users.teardown.enabled` to `false`.
 + **Spark Connect on multi-primary clusters** — Amazon EMR now supports Spark Connect sessions on multi-primary clusters running emr-spark-8.2.0 and later.
 + **New S3A settings for EMRFS-to-S3A migration** — Two new opt-in parameters, `fs.s3a.emrfs.compatibility.folder.marker.as.dir` and `fs.s3a.emrfs.compatibility.marker.empty`, help you migrate from EMRFS to S3A. Both parameters default to `false`.
 + **More Iceberg operations under fine-grained access control** — On clusters with Lake Formation FGAC, you can now run `ALTER TABLE ... SET LOCATION`, `ALTER TABLE ... WRITE ORDERED BY`, `ALTER TABLE ... WRITE DISTRIBUTED BY`, and the `add_files` and `register_table` procedures on Iceberg tables.
 + **Spark Connect and Amazon S3 enhancements under fine-grained access control** — On clusters with Lake Formation FGAC, Spark Connect sessions support more query plans and expressions, including creating SQL user-defined functions. Jobs can also set a custom AWS KMS encryption context for Amazon S3 server-side encryption and add custom S3A request headers.
-+ **Lineage capture for Spark jobs** — Amazon EMR 8.2.0 adds the `glue-openlineage-spark` library, which automatically captures OpenLineage-compatible lineage from Apache Spark jobs and publishes it to the AWS Glue Data Catalog or a custom transport. Captured lineage includes input and output datasets and columns, schemas, user identity, and more. This library replaces the `datazone-openlineage-spark` library. It's installed at a fixed path that doesn't include a version number, so Spark configurations that reference it continue to work after you upgrade.
 + **Spark Operator version 2 on Amazon EMR on EKS** — The Spark Operator for Amazon EMR on EKS is upgraded to version 2, based on open-source Spark Operator 2.5.0. For more information, see the Amazon EMR on EKS emr-spark-8.2.0 release notes.
-+ **Trusted identity propagation on Amazon EMR on EKS** — Amazon EMR on EKS now supports trusted identity propagation for IAM federated users, for both batch jobs and interactive Spark Connect and Livy sessions. For more information, see the Amazon EMR on EKS emr-spark-8.2.0 release notes.
 
 ### Changes, enhancements, and resolved issues
 <a name="emrspark820-changes"></a>

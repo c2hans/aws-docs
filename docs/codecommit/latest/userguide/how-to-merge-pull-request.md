@@ -43,7 +43,7 @@ If an approval rule was created for a pull request, you can edit it or delete it
 
 1. If you choose the squash or 3-way merge strategy, review the automatically generated commit message and modify it if you want to change the information. Add your name and email address for the commit history.
 
-1. (Optional) Clear the option to delete the source branch as part of the merge. The default is to delete the source branch when a pull request is merged.
+1. (Optional) Select **Delete source branch {{branch-name}} after merging?** if you want CodeCommit to delete the source branch when you merge the pull request. If you don't select this option, CodeCommit keeps the source branch.
 
 1. Choose **Merge pull request** to complete the merge.
 

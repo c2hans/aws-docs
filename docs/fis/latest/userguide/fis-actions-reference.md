@@ -517,7 +517,7 @@ Runs the Amazon EC2 API action [StopInstances](https://docs.aws.amazon.com/AWSEC
 **Permissions**
 + `ec2:StopInstances`
 + `ec2:StartInstances`
-+ `ec2:DescribeInstances` – Optional. Required with **completeIfInstancesTerminated** to validate instance state at end of action.
++ `ec2:DescribeInstances` – Optional. Required with **startInstancesAfterDuration** to check instance state before restarting the instances.
 + `kms:CreateGrant` – Optional. Required with **startInstancesAfterDuration** to restart instances with encrypted volumes.
 
 **AWS managed policy**

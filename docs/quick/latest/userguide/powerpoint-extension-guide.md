@@ -4,15 +4,16 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/powerpoint-extens
 
 # AWS Quick Microsoft PowerPoint extension
 
-The AWS Quick extension for PowerPoint helps you create compelling, data-driven presentations by integrating your enterprise data, AI-powered design assistance, and intelligent content generation directly into PowerPoint.
+The AWS Quick extension for PowerPoint helps you go from an idea to a presentation-ready deck. Quick builds slides directly in your deck using your company's brand assets, your organization's knowledge, and live data from your dashboards.
 
 You can search for AWS Quick in the Microsoft PowerPoint app store or visit the [Quick for PowerPoint Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010606) to add the extension.
 
 Key capabilities include:
-+ **Presentation creation with enterprise data:** Generate complete presentations using data from Quick dashboards, spaces, and knowledge bases. Pull real-time metrics and insights directly from your organization's data sources, or create presentations from outlines, topics, or natural language descriptions.
-+ **Visual narratives from enterprise knowledge:** Use Quick's enterprise knowledge to create contextual, accurate presentations. Import and visualize data from your Quick spaces, dashboards, and knowledge bases in compelling slides.
-+ **Brand consistency and professional design:** Apply your organization's themes and templates to presentations, respect existing presentation formatting and primary slide layouts, and generate professionally formatted tables, layouts, and design elements.
-+ **Natural language editing:** Select slides or content and request modifications using conversational prompts. Add, delete, reorder, or reorganize slides effortlessly, and chat about your presentation content to get insights and suggestions.
++ **Draft decks from your enterprise knowledge:** Generate complete presentations from an outline, a topic, or an existing document. Ground slides in your spaces, knowledge bases, connected tools, and the web, and bring in charts and metrics from your Quick dashboards and datasets. Run research on a market, competitor, or trend, and turn its findings and charts into slides. For more information about research, see [Using AWS Quick Research](using-amazon-quick-research.md).
++ **Stay on brand:** Apply your company's brand assets so that every deck uses approved themes, fonts, and colors. Quick respects your existing primary slides, layouts, and formatting, and generates images and visuals that fit your slide design. For more information, see [Managing brand assets](brand-assets.md).
++ **Review and refine with natural language:** Select slides or content and ask Quick to rewrite, redesign, or restructure them. Add, delete, and reorder slides, and review every change that Quick makes.
++ **Connect your work across tools:** Build a deck from a flow's results, such as an account briefing flow that gathers a customer's CRM history, support tickets, and usage trends. Use your [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) to act on your deck, such as sharing it to a team channel or logging commitments from a customer pitch in your CRM. Pick up where you left off, such as turning an analysis from the AWS Quick desktop application or a Word document into a deck.
++ **Get personalized results:** Quick learns your preferences and writing style over time. For more information, see [Memory and response personalization](using-quick-chat.md#chat-memory).
 
 **Important**
 The AWS Quick PowerPoint extension uses generative AI to create and execute code within your PowerPoint application sandbox. AI can make mistakes and perform inaccurate actions within your PowerPoint slide deck. No presentation data is read when the side panel is closed, and no data is sent to AWS Quick unless you explicitly send a prompt.
@@ -33,7 +34,7 @@ As a user, you are responsible for keeping company information safe. The followi
 ### Conversation retention and accuracy
 <a name="powerpoint-conversation-retention"></a>
 
-Each conversation is stored for 30 days. You can review and manage your conversation history by choosing the conversation history button in the PowerPoint extension.
+AWS Quick keeps each conversation for 365 days. It keeps conversations that you pin or move to a folder for 750 days. You can review and manage your conversation history by choosing the conversation history button in the PowerPoint extension. For more information about retention periods, see [Usage limits](usage-limits.md).
 
 AWS Quick uses generative AI. You should review responses for accuracy.
 
@@ -49,9 +50,11 @@ To protect your organization's data, carefully evaluate usage and plan deploymen
 
 The following prompts demonstrate common ways to use Quick within PowerPoint. You can adapt these to your specific needs.
 + "Create a 10-slide presentation on [topic] including key metrics and recommendations, pulling data from my Quick dashboard."
-+ "Add a slide with a competitive comparison showing our advantages over the top 3 competitors."
++ "Research the top 3 competitors in [market] and add a comparison slide with your findings."
++ "Turn [Word document name] into a 6-slide deck using our brand assets."
 + "Make this deck more executive-friendly by reducing text and emphasizing key numbers."
-+ "Reorganize this presentation to lead with results instead of methodology."
++ "Generate an image for the title slide that fits the deck's design."
++ "Run my account briefing flow for [customer name] and build a quarterly business review deck from the results."
 + "Create a chart slide comparing actual vs. target performance by department using data from my Quick space."
 
 **Tip**

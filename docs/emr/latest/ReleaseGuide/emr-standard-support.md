@@ -150,7 +150,7 @@ When the support period ends, Long Term Support releases transition directly to 
 | 7.14 | September 8, 2026 | September 8, 2028 | N/A | September 9, 2028 | September 8, 2029 |
 | emr-spark-8.0 | May 21, 2026 | May 20, 2028 | N/A | May 21, 2028 | May 21, 2029 |
 | emr-spark-8.1 [LTS] | September 8, 2026 | September 7, 2029 | N/A | September 8, 2029 | September 8, 2029 |
-| emr-spark-8.2 [LTS] | November 18, 2026 | November 17, 2029 | N/A | November 18, 2029 | November 18, 2029 |
+| emr-spark-8.2 | November 18, 2026 | November 17, 2028 | N/A | November 18, 2028 | November 18, 2029 |
 
 You can use Apache Spark Upgrade Agent to upgrade your Apache Spark existing applications on EMR on EC2 and EMR Serverless from older EMR versions to latest EMR version. To learn more, see [What is Apache Spark Upgrade Agent for Amazon EMR](spark-upgrades.md).
 

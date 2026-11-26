@@ -41,16 +41,31 @@ Supported patterns:
 | Builtin glob |  `"file_*"`  |  `file_operations`  |
 |  `@builtin`  |  `"@builtin"`  | All builtin tools |
 |  `@builtin/name`  |  `"@builtin/shell"`  | Specific builtin |
-|  `@server`  |  `"@git"`  | All tools from an MCP server |
-|  `@server/tool`  |  `"@git/git_status"`  | Specific MCP tool |
-|  `@server/glob`  |  `"@git/read_*"`  | Glob within a server |
-|  `@*/tool`  |  `"@*-mcp/status"`  | Glob across servers |
+|  `@name` (remote MCP server) |  `"@exa"`  | All tools from the MCP server named `exa`  |
+|  `@name` (Gateway) |  `"@my-gateway"`  | All tools from the Gateway named `my-gateway`  |
+|  `@name` (Browser) |  `"@browser"`  | The Browser tool named `browser`  |
+|  `@name` (Code Interpreter) |  `"@code_interpreter"`  | The Code Interpreter tool named `code_interpreter`  |
+|  `@name` (inline function) |  `"@approve_purchase"`  | The inline function named `approve_purchase`  |
+|  `@name/tool` (MCP server) |  `"@git/git_status"`  | Specific MCP tool |
+|  `@name/tool` (Gateway) |  `"@my-gateway/orders___StartExecution"`  | Specific Gateway tool, named `<target-name>___<tool-name>`  |
+|  `@name/glob`  |  `"@git/read_*"`  | Glob within a configured tool |
+|  `@*/tool`  |  `"@*-mcp/status"`  | Glob across configured tools |
+
+In `@name`, `name` is the `name` field of the configured tool in `tools`. A plain name matches only built-in tools. To select a configured tool, use `@<name>`. For example, `"approve_purchase"` matches nothing, and `"@approve_purchase"` selects the inline function.
+
+Each `allowedTools` entry can be 1–64 characters long. A selector for one Gateway tool contains the gateway name and the full tool name, as in `@<name>/<target-name>___<tool-name>`. If that selector is longer than 64 characters, use a shorter glob that matches only the tools you want, such as `"@my-gateway/orders___Start*"`. You can also give the Gateway target a shorter name.
+
+The following list keeps `shell`, `read`, the Code Interpreter, and the inline function from the AWS CLI/boto3 example in [Add tools](#harness-add-tools), and leaves out every other tool:
+
+```python
+allowedTools=["shell", "read", "@code_interpreter", "@approve_purchase"]
+```
 
 **Note**
  `allowedTools` scopes LLM tool selection during `InvokeHarness` only. It does not affect [InvokeAgentRuntimeCommand](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-execute-command.html), which is a separate API with its own IAM action (`bedrock-agentcore:InvokeAgentRuntimeCommand`) that executes commands directly without passing through the LLM. To prevent direct command execution, do not grant `bedrock-agentcore:InvokeAgentRuntimeCommand` in your IAM policies.
 
 ## Add tools
-<a name="_add_tools"></a>
+<a name="harness-add-tools"></a>
 
 **Remote MCP security**
 Remote MCP connections originate inside the harness session microVM. MCP URLs can point to public or private endpoints that the runtime can reach.

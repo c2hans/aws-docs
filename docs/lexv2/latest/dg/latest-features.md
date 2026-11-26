@@ -15,7 +15,7 @@ Amazon Lex V2 now provides the AMAZON.BedrockAgentIntent built-in intent to seam
 ## Assisted NLU for improved intent classification and slot resolution
 <a name="w2aab7b7"></a>
 
-Amazon Lex V2 now offers Assisted NLU to improve intent classification and slot resolution using Large Language Models (LLMs) while staying within your bot's configured intents and slots.
+Amazon Lex V2 now offers assisted NLU to improve intent classification and slot resolution using Large Language Models (LLMs) while staying within your bot's configured intents and slots.
 + [Documentation](https://docs.aws.amazon.com/lexv2/latest/dg/assisted-nlu.html)
 
 ## Custom vocabulary support for 17 additional languages

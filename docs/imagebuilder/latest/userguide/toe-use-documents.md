@@ -285,11 +285,11 @@ phases:
 #### [ Windows ]
 
 **Example 1: Install Windows updates**
-The following is an example document that installs all available Windows updates, runs a configuration script, validates the changes before the AMI is created, and tests the changes after the AMI is created.
+The following is an example document that installs Windows updates, runs a configuration script, validates the changes before the AMI is created, and tests the changes after the AMI is created.
 
 ```yaml
 name: RunConfig_UpdateWindows
-description: 'This document will install all available Windows updates and run a config script. It will then validate the changes before an AMI is created. Then after AMI creation, it will test all the changes.'
+description: 'This document will install Windows updates and run a config script. It will then validate the changes before an AMI is created. Then after AMI creation, it will test all the changes.'
 schemaVersion: 1.0
 phases:
   - name: build

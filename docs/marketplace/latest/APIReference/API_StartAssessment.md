@@ -57,7 +57,14 @@ Pattern: `^[\w\-]+$`
 Required: Yes
 
  ** [FrameworkId](#API_StartAssessment_RequestSyntax) **   <a name="AWSMarketplaceService-StartAssessment-request-FrameworkId"></a>
-The unique identifier of the framework that defines the controls to run.
+The unique identifier of the framework that defines the controls to run. Valid values are:
++  `SaaSResolveCustomerSellerTesting` - Verifies that your SaaS product successfully called `ResolveCustomer`.
++  `SaaSEntitlementSellerTesting` - Verifies that your SaaS contract product successfully called `GetEntitlements`.
++  `SaaSMeteringSellerTesting` - Verifies that your SaaS usage-based product sent a metering record for each metered dimension and reported no undeclared dimensions.
++  `AMIMeteringSellerTesting` - Verifies that your AMI product sent a metering record for each metered dimension and reported no undeclared dimensions.
++  `ContainerCustomMeteringSellerTesting` - Verifies that your container product sent a metering record for each metered dimension and reported no undeclared dimensions.
++  `ContainerHourlyMeteringSellerTesting` - Verifies that your container product called `RegisterUsage` within 6 hours of the container launching.
++  `SelfAttestedSellerTesting` - Records the results that you report for each control.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[\w\-@]+$`
@@ -71,7 +78,7 @@ Pattern: `^[!-~]+$`
 Required: No
 
  ** [Controls](#API_StartAssessment_RequestSyntax) **   <a name="AWSMarketplaceService-StartAssessment-request-Controls"></a>
-The controls to provide input for. Every control in the framework is included in the assessment, and a control that you don't specify gets no input. You can specify 1–100 controls.
+The controls to provide input for. If you omit this parameter, every control in the framework runs with no input. For a self-attested framework, a control that you don't specify keeps its result from the most recent completed assessment of the framework for the entity. If there is none, the control is recorded as `NOT_EXECUTED` and the framework fails. You can specify 1–100 controls.
 Type: Array of [ControlInput](API_ControlInput.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No

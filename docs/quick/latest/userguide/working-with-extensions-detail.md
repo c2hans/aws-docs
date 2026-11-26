@@ -12,11 +12,11 @@ AWS Quick extensions enable you to optimize your daily tasks with assistance fro
 Extensions are part of the same Quick runtime as the web, desktop, and mobile experiences. Your conversations, agents, and context are kept in your AWS Quick account, so you can start work in an extension and continue it on the web, desktop, or mobile without losing context.
 
 The following extension types are available:
-+ **Browser Extension** - Enhance your web browsing experience with AI-powered page summarization, content analysis, and knowledge access across Google Chrome, Firefox, and Microsoft Edge browsers. No admin setup required.
-+ **Microsoft Outlook extension** - Manage your entire inbox using natural language. Summarize unread messages, organize your inbox, schedule meetings, and draft contextual responses using your Quick enterprise data. No admin setup required.
-+ **Microsoft Excel extension** - Perform in-depth analysis of your workbooks, import and clean up data, generate tables and charts, and automate spreadsheet operations using natural language. No admin setup required.
-+ **Microsoft Word extension** - Generate formatted documents, make edits while maintaining writing style and structure, and redline documents with track changes and comments. No admin setup required.
-+ **Microsoft PowerPoint extension** - Create visually appealing presentations, edit slides using natural language, and streamline operations such as restructuring presentations and applying transitions. No admin setup required.
++ **Browser extension** - Analyze web pages, act on them in your connected apps, and reach your enterprise knowledge from any tab in Google Chrome, Firefox, and Microsoft Edge. No admin setup required.
++ **Microsoft Outlook extension** - Prioritize your inbox, manage your calendar, draft replies grounded in your organization's knowledge, and capture decisions and action items from email threads. No admin setup required.
++ **Microsoft Excel extension** - Build, validate, and analyze workbooks using data from your dashboards, knowledge bases, and connected tools. No admin setup required.
++ **Microsoft Word extension** - Draft, refine, and review documents grounded in your organization's knowledge, and redline documents against your rules with track changes and comments. No admin setup required.
++ **Microsoft PowerPoint extension** - Build on-brand, data-driven presentations from your organization's knowledge and dashboards, and edit slides using natural language. No admin setup required.
 + **Slack extension** - Access Quick capabilities directly within Slack channels and direct messages, enabling seamless collaboration and knowledge sharing without leaving your team communication platform. Requires admin to configure extension access.
 + **Microsoft Teams extension** - Integrate Quick into your Teams workspace for real-time collaboration, thread analysis, and knowledge retrieval during meetings and conversations. Requires admin to configure extension access.
 

@@ -11,6 +11,7 @@ You can use the connections feature in the Developer Tools console to connect AW
 
 The following differences apply to AWS CodeStar Connections:
 + Since AWS GovCloud (US) operates as isolated Regions, you cannot share or use connections resources with other services outside of the Regions. For example, you cannot use a connection in AWS GovCloud (US-East) with a pipeline in CodePipeline that is not in the AWS GovCloud (US-East) Region.
++ Supported source providers in AWS GovCloud (US) are Bitbucket, GitHub, GitHub Enterprise Server, GitLab, and GitLab self-managed.
 
 ## Documentation
 <a name="w132aac16c94b7"></a>

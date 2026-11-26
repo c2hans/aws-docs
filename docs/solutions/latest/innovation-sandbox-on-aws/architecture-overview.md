@@ -26,7 +26,7 @@ The high-level process flow for the solution components deployed with the AWS Cl
 
 1. AWS Lambda functions manage the lifecycle of accounts using the [AWS Organizations](https://aws.amazon.com/organizations/) API, moving them between organizational units (OUs) based on account status. [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) attached to OUs restrict which services and resources sandbox users can access.
 
-1. The solution’s backend includes an event-driven architecture built on [Amazon EventBridge](https://aws.amazon.com/eventbridge/) for routing domain events. The solution monitors sandbox account leases for breaches in configured budget and duration thresholds, and publishes events that trigger email notifications via [Amazon Simple Email Service](https://aws.amazon.com/ses/) and invoke Lambda functions responsible for lease and account lifecycle management.
+1. The solution’s backend includes an event-driven architecture built on [Amazon EventBridge](https://aws.amazon.com/eventbridge/) for routing domain events. The solution monitors sandbox account leases for breaches in configured budget, spend rate, and duration thresholds, and publishes events that trigger email notifications via [Amazon Simple Email Service](https://aws.amazon.com/ses/) and invoke Lambda functions responsible for lease and account lifecycle management. For leases with **Amazon Bedrock token monitoring** on, the solution also reads Amazon Bedrock metrics from sandbox accounts through [Amazon CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html).
 
 1.  [AWS Step Functions](https://aws.amazon.com/step-functions/) orchestrates complex, multi-step workflows including blueprint deployment and assignment processing. Step Functions coordinates the sequencing, retries, and error handling for these long-running operations.
 
@@ -37,3 +37,5 @@ The high-level process flow for the solution components deployed with the AWS Cl
 1.  [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) stores the account cleanup configuration, including the AWS Nuke resource filter that AWS CodeBuild reads at the start of each cleanup run, and the post-cleanup validation exclusion list. Administrators manage these configurations through the AWS AppConfig console.
 
 1. Users access assigned sandbox accounts via the IAM Identity Center access portal console, or programmatically using credentials. The solution provides a direct link in the web UI to access the AWS account with Single Sign-On (SSO).
+
+For the architecture of Sandbox Spaces and the remote Model Context Protocol (MCP) server, see [Sandbox Spaces](sandbox-spaces-architecture.md) and [MCP server](mcp-server-architecture.md) in Architecture details.

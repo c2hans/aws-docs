@@ -94,7 +94,11 @@ Pattern: `[\w\s+=,.@-]+`
 Required: No
 
  ** ClientSecret **   <a name="CognitoUserPools-Type-UserPoolClientType-ClientSecret"></a>
-The app client secret.
+The app client secret. Amazon Cognito returns this value only for the secret that it generated when you created the app client, and only until you delete that secret. Amazon Cognito doesn't return this value in the following cases:
++ You provided a custom `ClientSecret` when you created the app client.
++ You deleted the app client's original secret with `DeleteUserPoolClientSecret`.
++ Amazon Cognito manages the app client's secret in AWS Secrets Manager. Amazon Cognito returns `ClientSecretArn` instead.
+Amazon Cognito never returns a secret that you added with `AddUserPoolClientSecret` in this field. When an app client has two active secrets, this field contains the original secret.
 Type: String
 Length Constraints: Minimum length of 24. Maximum length of 64.
 Pattern: `[\w+]+`
@@ -252,7 +256,8 @@ Required: No
  ** WriteAttributes **   <a name="CognitoUserPools-Type-UserPoolClientType-WriteAttributes"></a>
 The list of user attributes that you want your app client to have write access to. After your user authenticates in your app, their access token authorizes them to set or modify their own attribute value for any attribute in this list.
 An example of this kind of activity is when you present your user with a form to update their profile information and they change their last name. Your app then makes an [UpdateUserAttributes](API_UpdateUserAttributes.md) API request and sets `family_name` to the new value.
-When you don't specify the `WriteAttributes` for your app client, your app can write the values of the Standard attributes of your user pool. When your user pool has write access to these default attributes, `WriteAttributes` doesn't return any information. Amazon Cognito only populates `WriteAttributes` in the API response if you have specified your own custom set of write attributes.
+When you don't specify the `WriteAttributes` for your app client, your app can write the values of all standard and custom attributes of your user pool. When your user pool has write access to these default attributes, `WriteAttributes` doesn't return any information. Amazon Cognito only populates `WriteAttributes` in the API response if you have specified your own custom set of write attributes.
+User attributes are shared by all app clients in a user pool. A value that a user writes through one app client appears in the tokens that every app client issues for that user. If you use an attribute for authorization decisions, for example as a principal tag in an identity pool, remove that attribute from the `WriteAttributes` of every app client in your user pool. For more information, see [Using attributes for access control](https://docs.aws.amazon.com/cognito/latest/developerguide/attributes-for-access-control.html).
 If your app client allows users to sign in through an IdP, this array must include all attributes that you have mapped to IdP attributes. Amazon Cognito updates mapped attributes when users sign in to your application through an IdP. If your app client does not have write access to a mapped attribute, Amazon Cognito throws an error when it tries to update the attribute. For more information, see [Specifying IdP Attribute Mappings for Your user pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-specifying-attribute-mapping.html).
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 2048.

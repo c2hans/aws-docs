@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 # Datasets
 
-Datasets are collections of indexes that represent a logical grouping of your observability data. You use datasets to organize logs and traces data so that you can query and analyze related indexes together in the Discover experience. Each dataset maps to one or more indexes in your OpenSearch Service domain and defines the data type, time field, and query language for the Discover page.
+Datasets are collections of indexes that represent a logical grouping of your observability data. You use datasets to organize logs and traces data so that you can query and analyze related indexes together in the Discover experience. Each dataset maps to one or more indexes in your OpenSearch Service domain or collection and defines the data type, time field, and query language for the Discover page.
 
 ## Dataset types
 <a name="observability-datasets-types"></a>
@@ -29,7 +29,7 @@ Complete the following steps to create a logs dataset in OpenSearch UI.
 1. Choose **Create dataset**.
 
 1. Select a data source from the list of available OpenSearch Service connections.
-![Data source selection dialog showing OpenSearch 3.4 with logs-otel-v1 wildcard pattern and one matching index.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/datasets/datasets-select-data-source.png)
+![Data source selection dialog showing an OpenSearch data source with the logs-otel-v1 wildcard pattern and one matching index.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/datasets/datasets-select-data-source.png)
 
 1. Configure the dataset by entering a name, selecting the index, and specifying the timestamp field.
 ![Dataset configuration dialog showing fields for dataset name, language, time field, and OTel logs schema mappings including trace ID, span ID, service name, and timestamp.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/datasets/datasets-configure-logs.png)

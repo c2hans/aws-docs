@@ -196,9 +196,6 @@ Postman-Token: 5637af27-dc29-fc5c-9dfe-0645d52cb515
       },
       {
         "href": "/restapis/o81lxisefl/gatewayresponses/AUTHORIZER_FAILURE"
-      },
-      {
-        "href": "/restapis/o81lxisefl/gatewayresponses/WAF_FILTERED"
       }
     ]
   },
@@ -621,27 +618,6 @@ Postman-Token: 5637af27-dc29-fc5c-9dfe-0645d52cb515
         },
         "responseType": "AUTHORIZER_FAILURE",
         "statusCode": "500"
-      },
-      {
-        "_links": {
-          "self": {
-            "href": "/restapis/o81lxisefl/gatewayresponses/WAF_FILTERED"
-          },
-          "gatewayresponse:put": {
-            "href": "/restapis/o81lxisefl/gatewayresponses/{response_type}",
-            "templated": true
-          },
-          "gatewayresponse:update": {
-            "href": "/restapis/o81lxisefl/gatewayresponses/WAF_FILTERED"
-          }
-        },
-        "defaultResponse": true,
-        "responseParameters": {},
-        "responseTemplates": {
-          "application/json": "{\"message\":$context.error.messageString}"
-        },
-        "responseType": "WAF_FILTERED",
-        "statusCode": "403"
       }
     ]
   }

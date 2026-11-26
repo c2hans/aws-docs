@@ -24,7 +24,7 @@ A field that uses the integer data type, a literal value like **14**, or a call 
 
 Decimal(Fixed) in the legacy data preparation experience.
 
-Decimal(Float) in the new data preparation experience.
+Decimal(Float) in the data preparation experience.
 
 ## Example
 <a name="intToDecimal-function-example"></a>

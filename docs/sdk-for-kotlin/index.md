@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/index.html
 title: 'AWS SDK for Kotlin Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-kotlin/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # AWS SDK for Kotlin Documentation

@@ -15,7 +15,7 @@ New to Amazon Lex V2? Follow this progressive learning path to get started quick
 
 1. **Customize Your Chatbot** (15 minutes) – Modify the template to match your specific use case. Add your own intents, update sample utterances, and configure slot types for your domain.
 
-1. **Test and Refine** (10 minutes) – Use the built-in test console to have conversations with your chatbot. Enable Assisted NLU for improved understanding with minimal training data.
+1. **Test and Refine** (10 minutes) – Use the built-in test console to have conversations with your chatbot. Enable assisted NLU for improved understanding with minimal training data.
 
 1. **Deploy and Integrate** (20 minutes) – Publish your chatbot and integrate it with your preferred platform (Slack, web app, or mobile application).
 

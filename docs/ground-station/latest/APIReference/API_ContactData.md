@@ -92,12 +92,12 @@ Type: [ContactVersion](API_ContactVersion.md) object
 Required: No
 
  ** visibilityEndTime **   <a name="groundstation-Type-ContactData-visibilityEndTime"></a>
- Projected time in UTC your satellite will set below the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts. *This field is not present for contacts with a `SCHEDULING` or `SCHEDULED` status.*
+Projected time in UTC your satellite will set below the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts. *This field is not present for contacts with a `SCHEDULING` or `SCHEDULED` status.*
 Type: Timestamp
 Required: No
 
  ** visibilityStartTime **   <a name="groundstation-Type-ContactData-visibilityStartTime"></a>
- Projected time in UTC your satellite will rise above the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts. *This field is not present for contacts with a `SCHEDULING` or `SCHEDULED` status.*
+Projected time in UTC your satellite will rise above the [receive mask](https://docs.aws.amazon.com/ground-station/latest/ug/site-masks.html). This time is based on the satellite's current active ephemeris for future contacts and the ephemeris that was active during contact execution for completed contacts. *This field is not present for contacts with a `SCHEDULING` or `SCHEDULED` status.*
 Type: Timestamp
 Required: No
 

@@ -40,7 +40,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [patchOperations](#API_UpdateApiKey_RequestSyntax) **   <a name="apigw-UpdateApiKey-request-patchOperations"></a>
-For more information about supported patch operations, see [Patch Operations](patch-operations.md).
+For more information about supported patch operations, see [Patch Operations](https://docs.aws.amazon.com/apigateway/latest/api/patch-operations.html).
 Type: Array of [PatchOperation](API_PatchOperation.md) objects
 Required: No
 
@@ -142,6 +142,28 @@ HTTP Status Code: 429
  ** UnauthorizedException **
 The request is denied because the caller has insufficient permissions.
 HTTP Status Code: 401
+
+## Examples
+<a name="API_UpdateApiKey_Examples"></a>
+
+### Retrieve client certificates
+<a name="API_UpdateApiKey_Example_1"></a>
+
+ The following example request retrieves the available client certificates in the caller's AWS account.
+
+ A successful response returns the requested `ClientCertificate` resources that can be navigated to by following the linked item or examining the embedded item resource.
+
+#### Sample Request
+<a name="API_UpdateApiKey_Example_1_Request"></a>
+
+```
+```
+
+#### Sample Response
+<a name="API_UpdateApiKey_Example_1_Response"></a>
+
+```
+```
 
 ## See Also
 <a name="API_UpdateApiKey_SeeAlso"></a>

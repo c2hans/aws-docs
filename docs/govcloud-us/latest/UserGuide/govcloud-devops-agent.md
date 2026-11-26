@@ -24,7 +24,7 @@ When you connect a third-party provider, remote MCP server, or remote agent to a
 + An Agent Space in AWS GovCloud (US-West) can discover and monitor resources in both AWS GovCloud (US-West) and AWS GovCloud (US-East).
 + Amazon Resource Names (ARNs) for AWS DevOps Agent resources use the pattern `arn:aws-us-gov:aidevops:us-gov-west-1:account-id:agentspace/agent-space-id `.
 + The endpoint that third-party providers such as GitHub or GitLab use to deliver webhook events to AWS DevOps Agent is `https://us-gov.event-ai.global.api.aws`.
-+  AWS DevOps Agent uses only foundation models that are available in Amazon Bedrock in the AWS GovCloud (US) Regions. Some agent capabilities use different Anthropic Claude model versions than in other AWS Regions. Cross-Region inference is not used.
++  AWS DevOps Agent uses only foundation models that are available in Amazon Bedrock in the AWS GovCloud (US) Regions. Some agent capabilities use different foundation model versions than in other AWS Regions.
 + Interface VPC endpoints (AWS PrivateLink) for the AWS DevOps Agent API endpoints are not available. Use the public Regional endpoints.
 + Topology enrichment for Amazon EKS clusters is not available. The topology shows an EKS cluster as a single node and does not include Kubernetes namespaces, pods, or their relationships.
 + Sandbox (preview) is not available.

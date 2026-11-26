@@ -578,6 +578,8 @@ The following data types are supported by Amazon SageMaker Service:
 +  [MonitoringScheduleSummary](API_MonitoringScheduleSummary.md)
 +  [MonitoringStatisticsResource](API_MonitoringStatisticsResource.md)
 +  [MonitoringStoppingCondition](API_MonitoringStoppingCondition.md)
++  [MoveClusterNodeLogicalIdsError](API_MoveClusterNodeLogicalIdsError.md)
++  [MoveClusterNodesError](API_MoveClusterNodesError.md)
 +  [MultiModelConfig](API_MultiModelConfig.md)
 +  [NeoVpcConfig](API_NeoVpcConfig.md)
 +  [NestedFilters](API_NestedFilters.md)
@@ -876,6 +878,10 @@ The following data types are supported by Amazon SageMaker Feature Store Runtime
 +  [BatchWriteRecordError](API_feature_store_BatchWriteRecordError.md)
 +  [FeatureValue](API_feature_store_FeatureValue.md)
 +  [TtlDuration](API_feature_store_TtlDuration.md)
+
+The following data types are supported by Amazon SageMaker Gateway Runtime:
++  [PayloadPart](API_gateway_runtime_PayloadPart.md)
++  [ResponseStream](API_gateway_runtime_ResponseStream.md)
 
 The following data types are supported by Amazon SageMaker geospatial capabilities:
 +  [AreaOfInterest](API_geospatial_AreaOfInterest.md)

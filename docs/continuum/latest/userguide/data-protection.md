@@ -17,7 +17,7 @@ For data protection purposes, we recommend that you protect AWS account credenti
 We strongly recommend that you never put confidential or sensitive information, such as your customers' email addresses, into tags or free-form text fields such as a **Name** field. This includes when you work with AWS Continuum or other AWS services using the console, API, AWS CLI, or AWS SDKs. Any data that you enter into tags or free-form text fields used for names may be used for billing or diagnostic logs. If you provide a URL to an external server, we strongly recommend that you do not include credentials information in the URL to validate your request to that server.
 
 **Note**
-The data protection information in this topic applies to AWS Continuum. It does not cover Continuum for Penetration testing (formerly known as Security Agent).
+The data protection information in this topic applies to AWS Continuum. It does not cover AWS Continuum for penetration testing (formerly known as Security Agent).
 
 **Note**
 AWS Continuum automatically selects the optimal AWS Region within your geographic area to process your inference requests. This approach maximizes available compute resources and model availability. Your data remains stored only in the Region where the request originated. However, AWS Continuum might process input prompts and output results outside that Region. AWS Continuum encrypts all data in transit across the Amazon secure network.

@@ -2,9 +2,9 @@
 source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/custom-questions-use-cases.html
 ---
 
-# Use cases for customer decisions
+# Use cases for custom decisions
 
-Use customer decisions for things that are specific to your business and that the built-in classifications don't cover. Each decision is answered either yes or no, or with options from a list that you provide. For more information, see [Question types](custom-questions-types.md).
+Use custom decisions for things that are specific to your business and that the built-in classifications don't cover. Each decision is answered either yes or no, or with options from a list that you provide. For more information, see [Question types](custom-questions-types.md).
 
 The following examples show which type of question fits each use case:
 + **Detect on-screen graphics** – Ask "Is a scoreboard graphic visible on screen?" for each shot. The answer is yes or no, so use a `yesNo` question.

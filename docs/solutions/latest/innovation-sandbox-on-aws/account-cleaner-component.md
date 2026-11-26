@@ -13,7 +13,7 @@ The **Account Cleaner** recycles sandbox accounts either during onboarding or af
 
 1.  **Initialization**: The function validates the account, fetches the global cleanup configuration, and verifies that the cleanup spoke role exists in the sandbox account.
 
-1.  **Access revocation**: The function waits for any in-progress lease assignment revocation to complete, then performs an authoritative sweep to remove all remaining IAM Identity Center account assignments from the sandbox account.
+1.  **Access revocation**: The function waits for any in-progress lease assignment revocation to complete, then performs an authoritative sweep to remove all remaining IAM Identity Center account assignments from the sandbox account, except the solution’s Admin and Manager group assignments.
 
 1.  **Pre-cleanup resource enumeration**: The function queries [AWS Resource Explorer](https://aws.amazon.com/resource-explorer/) across all ISB-managed regions to capture a baseline count of resource types in the account before cleanup begins.
 

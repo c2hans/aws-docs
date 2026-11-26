@@ -13,11 +13,15 @@ EKS Auto Mode provides simplified cluster management with automatic node provisi
 This guide also demonstrates how to use Kubernetes taints and tolerations to ensure that only specific workloads run on your Local Zone nodes, helping you control costs and optimize resource usage.
 
 ## Prerequisites
-<a name="_prerequisites"></a>
+<a name="auto-local-zone-prereqs"></a>
 
 Before you begin deploying EKS Auto Mode nodes onto Local Zones, ensure you have the following prerequisites in place:
 +  [An existing EKS Auto Mode Cluster](create-auto.md)
 +  [Opted-in to local zone in your AWS account](https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html#getting-started-find-local-zone)
++ A Local Zone that supports `gp3` Amazon EBS volumes
+
+**`gp3` volume support required**
+Amazon EKS Auto Mode uses `gp3` volumes for each node’s root and data volumes, and the NodeClass doesn’t have a setting for another volume type. Amazon EBS volume type availability varies by Local Zone, and some Local Zones support only `gp2`. If the Local Zone doesn’t support `gp3`, EKS Auto Mode can’t launch nodes in it. To confirm which volume types are available in your Local Zone, see the [AWS Local Zones features page](https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/), or contact AWS Support.
 
 ## Step 1: Create Local Zone Subnet
 <a name="_step_1_create_local_zone_subnet"></a>
@@ -148,6 +152,9 @@ Together, these ensure that your latency-sensitive application runs only on Loca
 <a name="step_5_verify_with_shared_aws_console"></a>
 
 After setting up your NodeClass, NodePool, and Deployments, you should verify that nodes are being provisioned in your Local Zone as expected and that your workloads are running on them. You can use the AWS Management Console to verify that EC2 instances are being launched in the correct Local Zone subnet.
+
+**Nodes don’t appear in your Local Zone**
+If nodes don’t appear in your Local Zone, one possible cause is a Local Zone that doesn’t support `gp3` Amazon EBS volumes. For more information, see the [prerequisites](#auto-local-zone-prereqs) at the beginning of this topic.
 
 Additionally, you can check the Kubernetes node list using `kubectl get nodes -o wide` to confirm that the nodes are joining your cluster with the correct labels and taints:
 

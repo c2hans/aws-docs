@@ -19,6 +19,9 @@ Changes don't affect images that you already distributed
 Image Builder saves a copy of the distribution settings with each image when it creates the image. When you update a distribution configuration, the changes apply only to images that Image Builder creates after the update. Earlier images keep their saved settings, including builds that are still in progress and retries that you start with **RetryImage**. To distribute with the updated settings, create a new image or run **DistributeImage**.
 Images that Image Builder already distributed remain in place until you remove them, either manually or with an Image Builder lifecycle policy. For example, if you remove a Region, the AMI that Image Builder already copied to that Region stays there.
 
+Dynamic tags in output fields
+The AMI name, AMI description, and AMI tag values, plus the container image description and container tags, can include dynamic tags such as `{{imagebuilder:buildDate}}` that Image Builder resolves for each build. For the list of supported dynamic tags, see [Tag Image Builder output resources](tag-resources.md).
+
 Image Builder enforces the following default service quotas for each Region in a distribution configuration. For the current values, and whether each quota is adjustable, see [EC2 Image Builder endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/imagebuilder.html).
 
 | Setting | Default quota per Region |

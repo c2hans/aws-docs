@@ -75,7 +75,7 @@ API Security is available for protection packs (web ACLs) that protect the follo
 + Application Load Balancers
 + Amazon API Gateway REST APIs
 
-The rule group doesn't support the other resource types that AWS WAF protects. It is not available for AWS AppSync GraphQL APIs, Amazon Cognito user pools, AWS App Runner services, Amazon Bedrock AgentCore Gateways, AWS Verified Access instances, or AWS Amplify apps.
+The rule group doesn't support the other resource types that AWS WAF protects. It is not available for AWS AppSync GraphQL APIs, Amazon Cognito user pools, AWS App Runner services, Amazon Bedrock AgentCore Gateways, AWS Verified Access instances, Elastic Load Balancing for Envoy proxies, or AWS Amplify apps.
 
 The rule group only supports REST APIs. It does not support other API types such as WebSockets or stream mode.
 

@@ -13,7 +13,7 @@ For cost attribution using the Responses or Chat Completions APIs on [`bedrock-m
 
 You reference a workspace in a Messages API request by setting the `anthropic-workspace-id` HTTP header. Tags applied to the workspace are attached to the billing record for each request and appear as AWS cost allocation tags in CUR and Cost Explorer.
 
-For details on creating workspaces, managing tags, and using the Messages API with workspaces, see [Workspaces (Anthropic-compatible)](workspaces.md).
+For details on creating workspaces, managing tags, and using the Messages API with workspaces, see [Projects and workspaces on the bedrock-mantle endpoint](workspaces.md).
 
 **Note**
 Workspaces deliver aggregated billed dollars to AWS Cost Explorer and CUR 2.0. The finest grain is per usage type per day. [Per-request metadata tagging](cost-mgmt-request-metadata.md) is available only on `bedrock-runtime` APIs, so per-prompt cost detail is not currently available for Messages API workloads that use workspaces.

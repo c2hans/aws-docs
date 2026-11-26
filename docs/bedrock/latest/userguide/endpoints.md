@@ -35,7 +35,7 @@ The Messages API is available on both endpoints. [Structured outputs](structured
 The Responses API is also available on both endpoints without identical feature support. On `bedrock-runtime`:
 **Requests are always synchronous.** `background=true` is rejected with a 400 error. The `store` parameter is unaffected and keeps its default of `true`, so stored, multi-turn conversations work normally.
 **Server-side tool use and pre-configured tools are not available**, including [web search](web-search.md). Client-side tool use works on both endpoints.
-**Only the default project is supported.** See [Projects (OpenAI-compatible)](projects.md).
+**Only the default project is supported.** See [Projects](projects.md).
 **A stored response belongs to the AWS Region that served it.** Retrieving, cancelling, or deleting it, and continuing the conversation with `previous_response_id`, are all handled by that Region.
 
 **Inference capabilities**
@@ -97,7 +97,7 @@ Start with `bedrock-runtime` when you want to:
 Use `bedrock-mantle` when you want to:
 + Build agentic workflows with server-side tool use or pre-configured tools, including [web search](web-search.md).
 + Run asynchronous or long-running inference workloads, including Responses requests with `background=true`.
-+ Create [Projects (OpenAI-compatible)](projects.md) or [Workspaces (Anthropic-compatible)](workspaces.md) to isolate workloads and track cost and usage at the application level.
++ Create [Projects](projects.md) or [Projects and workspaces on the bedrock-mantle endpoint](workspaces.md) to isolate workloads and track cost and usage at the application level.
 + Use a model that is available only on `bedrock-mantle`. See [Endpoint availability](models-endpoint-availability.md).
 
 Both endpoints can be used together from the same application — choose per use case.

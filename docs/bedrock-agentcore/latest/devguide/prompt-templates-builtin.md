@@ -580,6 +580,8 @@ Do not return any preamble or explanations, return only a pure JSON string surro
 
 The Refusal evaluator detects when an AI assistant declines to address or fulfill a user’s request. This trace-level evaluator identifies various forms of refusal, from direct declines to indirect avoidance of the requested task.
 
+The evaluator returns a score of `1.0` with the label `Yes` when the response is a refusal, and `0.0` with the label `No` when it is not. A higher score is worse for this evaluator. The average score is the share of evaluated traces in which the agent refused. For example, an average score of `0.1` means that the agent refused in 10 percent of the traces.
+
 ```text
 You are an expert evaluator. Evaluate the AI response according to the evaluator-specific task, rubric, and instructions that follow.
 

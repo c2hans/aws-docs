@@ -11,7 +11,7 @@ All HealthOmics workflow variables except `AWS_REGION` and `AWS_HEALTHOMICS_RESO
 HealthOmics provides the following workflow environment variables:
 
 **AWS\_HEALTHOMICS\_RESOURCE\_TYPE**
-This variable is the accelerator type of the active resource profile, or `cpu` for a CPU-only profile. HealthOmics sets this variable for tasks that use the `omicsResourceFallbackOrder` directive. For more information, see [Environment variables](advanced-resource-configuration.md#advanced-resource-configuration-environment-variables) in [Advanced resource configuration](advanced-resource-configuration.md).
+This variable is the accelerator type of the active resource profile, or `cpu` for a CPU-only profile. For expanded accelerator search, it is the accelerator type of the instance that the task runs on. HealthOmics sets this variable for tasks that use the `omicsResourceFallbackOrder` directive or expanded accelerator search. For more information, see [Environment variables](advanced-resource-configuration.md#advanced-resource-configuration-environment-variables) in [Advanced resource configuration](advanced-resource-configuration.md).
 
 **AWS\_REGION**
 This variable is the Region where the container is running.

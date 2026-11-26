@@ -334,6 +334,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListNetworkMigrationInsights  **
+  - **IAM action:**  [mgn:ListNetworkMigrationInsights](#list_mgn-action-ListNetworkMigrationInsights)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListNetworkMigrationMapperSegmentConstructs  **
   - **IAM action:**  [mgn:ListNetworkMigrationMapperSegmentConstructs](#list_mgn-action-ListNetworkMigrationMapperSegmentConstructs)
   - **Condition key:**
@@ -503,10 +509,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   StartRemoteSourceActionJob  **
-  - **IAM action:**  [mgn:StartRemoteSourceActionJob](#list_mgn-action-StartRemoteSourceActionJob)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [mgn:StartRemoteSourceActionJob](#list_mgn-action-StartRemoteSourceActionJob)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [mgn:TagResource](#list_mgn-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   StartReplication  **
   - **IAM action:**  [mgn:StartReplication](#list_mgn-action-StartReplication)

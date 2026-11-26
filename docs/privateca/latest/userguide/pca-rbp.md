@@ -16,6 +16,9 @@ AWS Certificate Manager (ACM) users with cross-account shared access to a privat
 
 You can also add X.509 certificate condition keys to the `Allow` statement for `IssueCertificate` to restrict the certificates that cross-account principals can request. Resource-based policies don't support `Deny` statements. For more information, see [Control certificate issuance with X.509 certificate condition keys](certguard-condition-keys.md).
 
+**Note**
+The resource-based policy of a private CA doesn't yet support X.509 certificate condition keys (`acm-pca:x509*`). Support is coming soon. Until then, `PutPolicy` rejects a policy that uses these keys with an error that says the condition key does not exist in the service `acm-pca`. To restrict the certificates that principals in other accounts can request from a shared CA, use a resource control policy (RCP) in the organization that owns the CA. RCPs don't apply to a CA in the organization's management account. The accounts that request certificates can also limit their own requests with identity-based policies or service control policies (SCPs). For more information, see [Supported policy types](certguard-policy-types.md).
+
 ## Policy examples
 <a name="rbp-policy-examples"></a>
 

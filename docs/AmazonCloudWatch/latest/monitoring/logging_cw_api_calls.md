@@ -30,6 +30,7 @@ For information about CloudWatch Logs API calls that are logged in CloudTrail, s
 **Topics**
 + [CloudWatch information in CloudTrail](#cw_info_in_ct)
 + [CloudWatch data events in CloudTrail](#CloudWatch-data-plane-events)
++ [CloudWatch Recommendations information in CloudTrail](#cw_recommendations_info_in_ct)
 + [Query generation information in CloudTrail](#cwl_query-generation-cloudtrail)
 + [Amazon Q Developer operational investigations events in CloudTrail](#Q-Developer-Investigations-Cloudtrail)
 + [Network Flow Monitor in CloudTrail](#CloudWatch-NetworkFlowMonitor-info-in-ct)
@@ -490,6 +491,72 @@ The following is an example of a CloudTrail event for a **QueryMetrics** (PromQL
         "cipherSuite": "TLS_AES_128_GCM_SHA256",
         "clientProvidedHostHeader": "monitoring.us-east-1.amazonaws.com"
     }
+}
+```
+
+## CloudWatch Recommendations information in CloudTrail
+<a name="cw_recommendations_info_in_ct"></a>
+
+CloudTrail logs the CloudWatch Recommendations operations as management events under the `monitoring.amazonaws.com` event source, the same event source as the other CloudWatch API operations. CloudTrail logs the following actions:
++ `StartMonitoringAssessment`
++ `GetMonitoringAssessment`
++ `ListMonitoringAssessments`
++ `ListMonitoringAssessmentResults`
+
+All four are read-only events (`"readOnly": true`). An assessment is not a resource with an ARN, so the events don't include a `resources` field. CloudTrail logs denied requests with their error code, so you can see who tried an operation that they weren't authorized to perform.
+
+An assessment reads your alarms and metrics with the forward access session of the principal that called `StartMonitoringAssessment`. CloudTrail logs those reads, such as `DescribeAlarms`, as separate events in your account. Their `userIdentity` element identifies that principal, and their `invokedBy`, `sourceIPAddress`, and `userAgent` fields show `AWS Internal`. For more information, see [How CloudWatch Recommendations reads your account](permissions-reference-cw.md#cw-recommendations-permissions-assessment-reads).
+
+### Example: CloudWatch Recommendations log file entry
+<a name="understanding-CloudWatch-Recommendations-entries-in-CloudTrail"></a>
+
+The following example shows a CloudTrail log entry for the `StartMonitoringAssessment` action.
+
+```json
+{
+    "eventVersion": "1.11",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLEID:example-session",
+        "arn": "arn:aws:sts::111122223333:assumed-role/ExampleRole/example-session",
+        "accountId": "111122223333",
+        "accessKeyId": "ASIAIOSFODNN7EXAMPLE",
+        "sessionContext": {
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAEXAMPLEID",
+                "arn": "arn:aws:iam::111122223333:role/ExampleRole",
+                "accountId": "111122223333",
+                "userName": "ExampleRole"
+            },
+            "attributes": {
+                "creationDate": "2026-11-20T16:20:08Z",
+                "mfaAuthenticated": "false"
+            }
+        }
+    },
+    "eventTime": "2026-11-20T16:21:10Z",
+    "eventSource": "monitoring.amazonaws.com",
+    "eventName": "StartMonitoringAssessment",
+    "awsRegion": "us-east-2",
+    "sourceIPAddress": "192.0.2.1",
+    "userAgent": "aws-sdk-java/2.x",
+    "requestParameters": {
+        "retentionInDays": 30,
+        "scope": {
+            "predefinedScope": {
+                "type": "AcceleratedComputeInsights"
+            }
+        }
+    },
+    "responseElements": null,
+    "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "readOnly": true,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111122223333",
+    "eventCategory": "Management"
 }
 ```
 

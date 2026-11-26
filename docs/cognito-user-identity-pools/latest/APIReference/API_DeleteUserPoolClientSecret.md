@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 
 Deletes a specific client secret from a user pool app client. You cannot delete the last remaining secret for an app client.
 
+When you delete the secret that the app client had when you created it, `DescribeUserPoolClient` and `UpdateUserPoolClient` no longer return `ClientSecret` for the app client.
+
 ## Request Syntax
 <a name="API_DeleteUserPoolClientSecret_RequestSyntax"></a>
 

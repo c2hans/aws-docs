@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/extension-access.
 
 Extension access connects your AWS Quick account to third party applications like Microsoft Teams, Microsoft Outlook, Microsoft Word, Microsoft Excel, Microsoft PowerPoint, and Slack. Think of it as giving permission for AWS Quick to work inside the apps your team already uses, helping them accomplish their work, assisted by generative AI, and without context switching.
 
-As an admin, you configure extension access. Then, either an admin or an author must install the extension in the AWS Quick console to make the extension available to end users. This default extension is available for use to all users on eligible subscriptions after setup. Installed extensions are available under **Connections** > **Extensions** in the AWS Quick menu for further configuration and management.
+As an admin, you configure extension access. Then, either an admin or an author must install the extension in the AWS Quick console to make the extension available to end users. After setup, the extension is available to all users, regardless of their role or subscription. Installed extensions are available under **Connections** > **Extensions** in the AWS Quick menu for further configuration and management.
 
 If you're an admin user of AWS Quick, you configure AWS Quick access to extensions, and can also deploy extensions for end user use. As an admin, you can also allow authors to edit and deploy extensions after you configure access.
 
 User roles and extension permissions work as follows:
 + **IAM Administrators:** Can enable/remove extension access, create extensions, assign owners, and control extension availability for the organization.
 + **Authors:** Can create and install extensions using administrator-enabled access, and edit/delete extensions they own.
-+ **Readers (Reader Pro only):** Can use all enabled extensions but cannot create or modify them.
++ **Readers:** Can use all enabled extensions but cannot create or modify them.
 
 Here's what you need to know about extension access:
 + **What it is:** A secure connection between your AWS Quick instance and your organization's account in third-party apps (like your Microsoft 365 or Slack workspace).

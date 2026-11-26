@@ -151,7 +151,7 @@ The following code example shows how a DTMF configuration would be represented b
 ### Configure for Amazon Lex input
 <a name="get-customer-input-lex-tab-properties"></a>
 + **Select a Lex bot**: After you create your Amazon Lex bot, choose the name of the bot from the drop-down list. Only built bots appear in the drop-down list.
-+ Enter an ARN: Specify the Amazon Resource Name of the Amazon Lex bot.
++ **Enter an ARN**: Specify the Amazon Resource Name (ARN) of the Amazon Lex V2 bot alias, for example `arn:aws:lex:{{region}}:{{account-id}}:bot-alias/{{botId}}/{{aliasId}}`. Only a bot alias ARN is supported.
 + **Session attributes**: Specify [Amazon Lex session attributes](connect-attrib-list.md#attribs-lex-table) that apply to the current contact's session only. The following image shows the session attributes configured for a max speech duration of 8000 milliseconds (8 seconds).
 ![The properties page of the Get customer input block, the session attributes section.](https://docs.aws.amazon.com/connect/latest/adminguide/images/get-customer-input-properties3.png)
 + **Intents**
@@ -163,9 +163,9 @@ The following code example shows how a DTMF configuration would be represented b
     + Select intents from a dropdown list.
     + Filter the dropdown list of intents by locale. Based on the locale selected, intents for the bot are listed in the dropdown list.
 
-    When you select a Lex bot ARN and alias from a dropdown lists, you can add intents for that bot by searching using locale. In order for intents to be listed, the bot must have a Connect Customer tag and the bot alias must have a version associated with it.
+    When you select a Lex bot and alias from the dropdown lists, you can add intents for that bot by searching using locale. In order for intents to be listed, the bot must have a Connect Customer tag and the bot alias must have a version associated with it.
 
-    The **Intents** dropdown box does not list intents for Amazon Lex V1 bots, cross region bots, or if the bot ARN is dynamically set. For these intents, try the following options to find them.
+    The **Intents** dropdown box does not list intents for Amazon Lex V1 bots, cross region bots, or if the bot alias ARN is dynamically set. For these intents, try the following options to find them.
     + Check whether the **AmazonConnectEnabled** tag is set to True:
 
       1. Open the Amazon Lex console, choose **Bots**, select the bot, then choose **Tags**.

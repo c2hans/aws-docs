@@ -32,7 +32,7 @@ Inspect the request body as plain text. The request body immediately follows the
  AWS WAF does not support inspecting the entire contents of the web request body if the body exceeds the limit for the resource type. When a web request body is larger than the limit, the underlying host service only forwards the contents that are within the limit to AWS WAF for inspection.
 + For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
 + For Application Load Balancer, the default limit is 8 KB (8,192 bytes), and you can change the limit in the web ACL `AssociationConfig`.
-+ For CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
++ For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Elastic Load Balancing for Envoy, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
 + For AWS Amplify, use the CloudFront limit.
 For information about how to handle oversized request bodies, see the `Body` object configuration.
 Type: [Body](API_Body.md) object
@@ -56,7 +56,7 @@ Type: [Headers](API_Headers.md) object
 Required: No
 
  ** JA3Fingerprint **   <a name="WAF-Type-FieldToMatch-JA3Fingerprint"></a>
-Available for use with Amazon CloudFront distributions and Application Load Balancers. Match against the request's JA3 fingerprint. The JA3 fingerprint is a 32-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
+Available for use with Amazon CloudFront distributions, Application Load Balancers, and Elastic Load Balancing for Envoy proxies. Match against the request's JA3 fingerprint. The JA3 fingerprint is a 32-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
 You can use this choice with a `ByteMatchStatement`, `RegexMatchStatement`, `RegexPatternSetReferenceStatement`, or `SizeConstraintStatement`. You can't use it with `SqliMatchStatement` or `XssMatchStatement`.
 You can obtain the JA3 fingerprint for client requests from the web ACL logs. If AWS WAF is able to calculate the fingerprint, it includes it in the logs. For information about the logging fields, see [Log fields](https://docs.aws.amazon.com/waf/latest/developerguide/logging-fields.html) in the * AWS WAF Developer Guide*.
 Provide the JA3 fingerprint string from the logs in your string match statement specification, to match with any future requests that have the same TLS configuration. To match a group of TLS configurations with a single pattern, use a regex statement.
@@ -64,7 +64,7 @@ Type: [JA3Fingerprint](API_JA3Fingerprint.md) object
 Required: No
 
  ** JA4Fingerprint **   <a name="WAF-Type-FieldToMatch-JA4Fingerprint"></a>
-Available for use with Amazon CloudFront distributions and Application Load Balancers. Match against the request's JA4 fingerprint. The JA4 fingerprint is a 36-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
+Available for use with Amazon CloudFront distributions, Application Load Balancers, and Elastic Load Balancing for Envoy proxies. Match against the request's JA4 fingerprint. The JA4 fingerprint is a 36-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
 You can use this choice with a `ByteMatchStatement`, `RegexMatchStatement`, `RegexPatternSetReferenceStatement`, or `SizeConstraintStatement`. You can't use it with `SqliMatchStatement` or `XssMatchStatement`.
 You can obtain the JA4 fingerprint for client requests from the web ACL logs. If AWS WAF is able to calculate the fingerprint, it includes it in the logs. For information about the logging fields, see [Log fields](https://docs.aws.amazon.com/waf/latest/developerguide/logging-fields.html) in the * AWS WAF Developer Guide*.
 Provide the JA4 fingerprint string from the logs in your string match statement specification, to match with any future requests that have the same TLS configuration. To match a group of TLS configurations with a single pattern, use a regex statement.
@@ -76,7 +76,7 @@ Inspect the request body as JSON. The request body immediately follows the reque
  AWS WAF does not support inspecting the entire contents of the web request body if the body exceeds the limit for the resource type. When a web request body is larger than the limit, the underlying host service only forwards the contents that are within the limit to AWS WAF for inspection.
 + For AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
 + For Application Load Balancer, the default limit is 8 KB (8,192 bytes), and you can change the limit in the web ACL `AssociationConfig`.
-+ For CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
++ For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Elastic Load Balancing for Envoy, the default limit is 16 KB (16,384 bytes), and you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
 + For AWS Amplify, use the CloudFront limit.
 For information about how to handle oversized request bodies, see the `JsonBody` object configuration.
 Type: [JsonBody](API_JsonBody.md) object

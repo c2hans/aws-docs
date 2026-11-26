@@ -51,6 +51,20 @@ After you create the SAML provider, configure your SAML IdP to add relying party
 
 When your SAML IdP includes more than one signing certificate in SAML metadata, at sign-in your identity pool determines that the SAML assertion is valid if it matches any certificate in the SAML metadata.
 
+## SAML federation trust scope in identity pools
+<a name="saml-identity-provider-trust-scope"></a>
+
+Identity pools federate SAML through the same AWS relying party as IAM SAML federation. The relying party uses the metadata at `https://signin.aws.amazon.com/static/saml-metadata.xml` and the audience `urn:amazon:webservices`.
+
+Identity pools don't have a SAML service provider entity ID for each identity pool, and you can't set a custom audience for an identity pool. Your identity pool trusts the SAML IdP that you register as an IAM SAML provider, not a specific application.
+
+Your identity pool accepts a valid, signed, unexpired, and unreplayed SAML assertion from that IdP. It accepts the assertion even when the IdP issued it for a different application. The `AudienceRestriction`, `Recipient`, and `Destination` values in the assertion don't identify an individual identity pool. Your identity pool doesn't use these values to separate one application from another.
+
+If a single SAML IdP serves several applications, any user that the IdP authenticates for one of those applications can present their assertion to your identity pool. Your identity pool configuration determines which role, if any, that user receives. To keep applications that share an IdP isolated from each other, apply the following configurations:
++ Create a dedicated IAM SAML provider for each trust boundary. In your IdP, configure a separate application with a separate signing certificate for each identity pool or group of applications that requires isolation. Register each one as its own IAM SAML provider. Add to each identity pool only the SAML providers that it trusts.
++ Use rules-based role mapping, and deny requests that don't match a rule. Map a role only when an assertion contains a claim that identifies the application or audience that you trust. Choose a claim that end users can't modify. Set **Role resolution** to **Deny request**, or set `AmbiguousRoleResolution` to `Deny`. With **Use default authenticated role**, or `AuthenticatedRole`, your identity pool issues credentials for your authenticated role to every user that your IdP authenticates. For more information, see [Using role-based access control](role-based-access-control.md).
++ Restrict the trust policies of your roles to your identity pool. Your identity pool assumes roles with `AssumeRoleWithWebIdentity` through the `cognito-identity.amazonaws.com` principal. SAML condition keys like `saml:aud` aren't present in these requests and have no effect in the trust policy. Use the `cognito-identity.amazonaws.com:aud` and `cognito-identity.amazonaws.com:amr` condition keys. Don't reuse a role across identity pools that belong to different trust boundaries. For more information, see [IAM roles](iam-roles.md).
+
 ## Customizing your user role with SAML
 <a name="role-customization-saml"></a>
 

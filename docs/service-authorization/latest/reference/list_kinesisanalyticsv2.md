@@ -161,6 +161,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ImportSnapshot  **
   - **IAM action:**  [kinesisanalytics:ImportSnapshot](#list_kinesisanalyticsv2-action-ImportSnapshot)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [kinesisanalytics:TagResource](#list_kinesisanalyticsv2-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** kinesisanalytics.amazonaws.com / **Access level:** Write
 
 - **   ListApplicationOperations  **

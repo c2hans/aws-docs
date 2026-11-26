@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/discovering-
 
 # Discovering and attaching modules
 
-Modules let you filter, enrich, or rate-limit the bid requests on a link before RTB Fabric forwards them. You can attach built-in modules, AWS Marketplace modules, and modules shared by vendors. This topic shows how to find modules and subscribe to them in AWS Marketplace, attach them to a link as a *flow*, and track each change.
+Modules let you filter, enrich, or rate-limit the bid requests on a link before RTB Fabric forwards them. You can attach built-in modules and AWS Marketplace modules. This topic shows how to find modules and subscribe to them in AWS Marketplace, attach them to a link as a *flow*, and track each change.
 
 **Topics**
 + [Finding modules that you can attach](#finding-modules)
@@ -35,7 +35,7 @@ To find modules with the API, use the following operations. They list only the m
 
 | Operation | Returns |
 | --- | --- |
-| [ListAvailableModules](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListAvailableModules.html) | The modules that you can attach, newest first. To list one kind only, set subscriptionType to AWS\_BUILT\_IN, MARKETPLACE, or PRIVATE. |
+| [ListAvailableModules](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListAvailableModules.html) | The modules that you can attach, newest first. To list one kind only, set subscriptionType to AWS\_BUILT\_IN or MARKETPLACE. |
 | [GetAvailableModule](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetAvailableModule.html) | One module, with its name, description, and how you have access to it. |
 | [ListAvailableModuleVersions](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListAvailableModuleVersions.html) | A module's ACTIVE and DEPRECATED versions, highest version first. You can attach only an ACTIVE version. |
 | [GetAvailableModuleVersion](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetAvailableModuleVersion.html) | One version, with the values that you need to attach it: its Amazon Resource Name (ARN), its configurableActions, and the configurationSchema for its parameters. |
@@ -63,7 +63,7 @@ The built-in modules have the following module IDs and versions. A module versio
 | --- | --- | --- |
 | Rate Limiter Module | module-rateLimiter, 1.0.0 | tps (required): the maximum transactions per second, from 1 through 16,777,216. |
 | No-bid module | module-noBid, 1.0.0 | Optional reason (up to 50 letters and digits) and reasonCode (0 through 10). reason labels the module's log events and isn't returned in the response. With reasonCode, the response is HTTP 200 with the code as nbr. Without it, the response is HTTP 204 with no body. |
-| OpenRTB Attribute Module | module-openrtbAttributeFilter, 2.0.0 | filterType, filterConfiguration, and an optional action, as described in [OpenRTB Attribute Module](modules.md#openrtb-attribute-module-example). |
+| OpenRTB Attribute Module | module-openrtbAttributeFilter, 2.0.0 | filterType, filterConfiguration, and an optional action, as described in [OpenRTB Attribute Module](built-in-modules.md#openrtb-attribute-module). |
 
 ## How flows work
 <a name="how-flows-work"></a>

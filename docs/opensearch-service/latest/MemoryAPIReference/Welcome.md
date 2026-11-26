@@ -8,4 +8,4 @@ Amazon OpenSearch Memory lets your AI agents and applications recall facts and s
 
 A space groups related events and memories, and holds the memory strategies that you configure for them. Use the space operations to create, get, list, update, and delete spaces. Use the event and memory operations to write, read, list, search, update, and delete a space's events and memories.
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

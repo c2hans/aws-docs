@@ -8,6 +8,8 @@ Innovation Sandbox applies AWS Organizations account tags to sandbox accounts th
 
 For planning details about the tagging feature, see [Account cost allocation tags](account-cost-allocation-tags-planning.md) in Plan your deployment. For an architectural description, see [Account cost allocation tagging](account-cost-allocation-tagging.md) in Architecture details.
 
+The `LeaseCostFallbackRuns` metric in the `InnovationSandbox/CostAttribution` CloudWatch namespace counts the hourly lease monitoring runs in which the solution couldn’t read the cost of at least one lease by tag and used the account’s total cost instead. Expect a non-zero count for up to a day after deployment. After that, if you see a non-zero count, check that the tag keys are active and still applied to the accounts. For more information, see [Checking tag activation status](troubleshooting.md#checking-tag-activation-status).
+
 ## Querying sandbox costs by tag
 <a name="querying-sandbox-costs-by-tag"></a>
 
@@ -22,7 +24,7 @@ After the ISB tag keys are active, you can analyze sandbox costs in AWS Cost Exp
 The solution attributes cost to a tag only from the time it applies the tag to the account — tags are not retroactive. Leases created before this feature was deployed do not have account tags and continue to use the solution’s existing cost attribution.
 
 ## Checking tag activation status
-<a name="checking-tag-activation-status"></a>
+<a name="monitoring-tag-activation-status"></a>
 
 To verify whether ISB tag keys are active:
 

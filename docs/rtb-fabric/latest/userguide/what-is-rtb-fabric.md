@@ -41,7 +41,7 @@ For important service limits including HTTP request timeouts and performance con
 #### Modules
 <a name="modules-overview"></a>
 
-Modules are configurable components that process RTB traffic flowing through your links to implement rate limiting, filtering, error handling, and other traffic management capabilities. RTB Fabric provides built-in modules for rate limiting, OpenRTB filtering, and error masking that are available at no additional charge. You can configure modules using the RTB Fabric API. For more information, see [Modules](modules.md).
+Modules let you process bid requests inline on your links to filter them, enrich them with additional data, or observe traffic. You can use built-in modules for rate limiting, sampled no-bid responses, and OpenRTB filtering at no additional charge, and vendor modules from AdTech partners through AWS Marketplace. You can configure modules with the RTB Fabric console or the RTB Fabric API. For more information, see [Modules](modules.md).
 
 ## Common use cases
 <a name="use-cases"></a>

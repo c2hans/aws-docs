@@ -65,7 +65,7 @@ Follow the AWS Cloud9 documentation for [Creating an environment](https://docs.a
 
 Once you’ve created the environment, the browser will navigate to the Cloud9 IDE for the newly created environment. The Cloud9 IDE connects to the EC2 instance that hosts the environment and can be used to edit files and create terminal sessions. Now is a good time to familiarize yourself with the Cloud9 IDE.
 
-One important user interface element is the [**console**](https://docs.aws.amazon.com/cloud9/latest/user-guide/tour-ide.html#tour-ide-console) at the bottom of the screen which will appear as a tab named **bash - "ip-...**. This panel provides an interactive terminal session where you can run arbitrary shell commands. You can toggle it being open or closed with the F6 keyboard shortcut.
+One important user interface element is the [**console**](https://docs.aws.amazon.com/cloud9/latest/user-guide/tour-ide.html#tour-ide-console) at the bottom of the screen which will appear as a tab named **bash - "ip-...**. This panel provides an interactive terminal session where you can run arbitrary shell commands. You can toggle it being open or closed with the **F6** keyboard shortcut.
 
 By default, Cloud9 EC2 environments come preconfigured with almost all of the required [Prerequisites](getting-started.md#prerequisites) for working with RFDK, except for the version of NodeJS. We recommend using the [LTS release](https://nodejs.org/en/about/releases/) of NodeJS, which can be installed and configured with the following commands:
 
@@ -104,7 +104,7 @@ For more details, see [Step 2: Configure the AWS CLI Credential Helper On Your A
 
 In this step, we clone the CodeCommit repo created in [Step 1: Create an AWS CodeCommit repository](#create-codecommit-repo) into your Cloud9 environment.
 
-1. From the Cloud9 IDE, ensure the console panel is open. If not, press the F6 key to toggle it.
+1. From the Cloud9 IDE, ensure the console panel is open. If not, press the **F6** key to toggle it.
 
 1. Run the following commands substituting {{my\_repo\_name}} with the CodeCommit repository name created in step 1.
 

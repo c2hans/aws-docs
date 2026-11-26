@@ -75,7 +75,7 @@ Valid Range: Minimum value of 1. Maximum value of 10.
 Required: Yes
 
  ** [Scope](#API_GetTopPathStatisticsByTraffic_RequestSyntax) **   <a name="WAF-GetTopPathStatisticsByTraffic-request-Scope"></a>
-Specifies whether the web ACL is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer, an AWS AppSync GraphQL API, an Amazon Cognito user pool, an AWS App Runner service, or an AWS Verified Access instance.
+Specifies whether the web ACL is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer, an Elastic Load Balancing for Envoy proxy, an AWS AppSync GraphQL API, an Amazon Cognito user pool, an AWS App Runner service, or an AWS Verified Access instance.
 Type: String
 Valid Values: `CLOUDFRONT | REGIONAL`
 Required: Yes

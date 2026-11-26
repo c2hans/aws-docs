@@ -6,33 +6,33 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 To use observability features in Amazon OpenSearch Service, you need to ingest application traces, logs, and metrics. This page covers configuring the OpenTelemetry Collector and OpenSearch Ingestion pipelines to process and route telemetry data to OpenSearch and Amazon Managed Service for Prometheus.
 
+This page is for pipelines that you set up yourself. An observability stack already configures its pipeline, as described in [Get started](observability-get-started.md).
+
 ## Configuring the OpenTelemetry Collector
 <a name="observability-ingestion-otel"></a>
 
 The OpenTelemetry (OTel) Collector is the entry point for all application telemetry. It receives data through OTLP and routes traces and logs to OpenSearch Ingestion while sending metrics to Prometheus.
-
-You can configure the OTel Collector using one of the following approaches:
 
 The OTel Collector exports traces and logs to an OpenSearch Ingestion endpoint using SigV4 authentication, and metrics to Amazon Managed Service for Prometheus using the Prometheus remote write exporter. OpenSearch Ingestion handles processing, enrichment, and routing to OpenSearch.
 
 ### OTel Collector configuration with OpenSearch Ingestion
 <a name="observability-ingestion-otel-osis"></a>
 
-The following example configuration uses SigV4 authentication to export traces and logs to an OpenSearch Ingestion endpoint, and metrics to Prometheus:
+The following example configuration uses SigV4 authentication to export traces and logs to an OpenSearch Ingestion endpoint, and metrics to Prometheus. The endpoint paths must match the `traces_path` and `logs_path` of the pipeline source:
 
 ```
 extensions:
   sigv4auth:
-    region: {{us-west-2}}
+    region: {{region}}
     service: osis
 
 exporters:
   otlphttp/osis-traces:
-    traces_endpoint: ${OSIS_ENDPOINT}/v1/traces
+    traces_endpoint: ${OSIS_ENDPOINT}/{{pipeline-name}}/v1/traces
     auth: { authenticator: sigv4auth }
     compression: none
   otlphttp/osis-logs:
-    logs_endpoint: ${OSIS_ENDPOINT}/v1/logs
+    logs_endpoint: ${OSIS_ENDPOINT}/{{pipeline-name}}/v1/logs
     auth: { authenticator: sigv4auth }
     compression: none
   # Amazon Managed Service for Prometheus via Prometheus Remote Write with SigV4 auth
@@ -59,12 +59,12 @@ service:
 ```
 
 **Note**
-The IAM principal sending data needs `osis:Ingest` and `aps:RemoteWrite` permission on the pipeline ARN.
+The IAM principal sending data needs `osis:Ingest` permission on the pipeline ARN. Because this example writes metrics directly to Amazon Managed Service for Prometheus, the principal also needs `aps:RemoteWrite` permission on the workspace ARN. You can instead send metrics to the metrics path of the pipeline, as an observability stack does. The pipeline then writes them to the workspace, and the sender needs only `osis:Ingest`.
 
 ## Configuring OpenSearch Ingestion pipelines
 <a name="observability-ingestion-pipelines"></a>
 
-OpenSearch Ingestion (or self-managed Data Prepper) receives telemetry from the OTel Collector and processes it for application performance monitoring (APM).
+OpenSearch Ingestion receives telemetry from the OTel Collector and processes it for application performance monitoring (APM).
 
 ### Pipeline architecture
 <a name="observability-ingestion-pipeline-arch"></a>
@@ -211,11 +211,14 @@ otel-metrics-pipeline:
           region: '{{region}}'
 ```
 
+**Note**
+The example sets `serverless: false` in each `opensearch` sink, which is the setting for a domain. To write to an Amazon OpenSearch Serverless collection, set `serverless: true` under `aws` and use the collection endpoint as the host.
+
 ## Verifying ingestion
 <a name="observability-ingestion-verify"></a>
 
 After you configure the OTel Collector and pipelines, verify that telemetry data is flowing correctly.
-+ **Verify OpenSearch indexes** – Confirm that the following indexes exist in your domain: `otel-v1-apm-span-*`, `otel-v2-apm-service-map`, and `logs-otel-v1-*`.
++ **Verify OpenSearch indexes** – Confirm that the following indexes exist in your domain or collection: `otel-v1-apm-span*` (or `otel-v2-apm-span*` if the pipeline uses the v2 span index template, as an observability stack does on a domain with the engine optimized for log analytics), `otel-v2-apm-service-map*`, and `logs-otel-v1*`.
 + **Verify Prometheus targets** – Confirm that the Prometheus remote write target is receiving metrics from the service map pipeline.
 + **Verify in OpenSearch UI** – Navigate to **Observability**, then **Application Monitoring** to confirm that your services appear.
 
@@ -224,6 +227,6 @@ After you configure the OTel Collector and pipelines, verify that telemetry data
 
 After you verify that telemetry data is ingested, explore the following topics:
 + [Application monitoring](observability-app-monitoring.md) – Monitor application health with service maps and RED metrics.
-+ [Discover traces](observability-analyze-traces.md) – Discover and analyze distributed traces.
-+ [Discover logs](observability-analyze-logs.md) – Discover and query application logs.
-+ [Discover metrics](observability-metrics.md) – Discover and query Prometheus metrics using PromQL.
++ [Discover Traces](observability-analyze-traces.md) – Discover and analyze distributed traces.
++ [Discover Logs](observability-analyze-logs.md) – Discover and query application logs.
++ [Discover Metrics](observability-metrics.md) – Discover and query Prometheus metrics using PromQL.

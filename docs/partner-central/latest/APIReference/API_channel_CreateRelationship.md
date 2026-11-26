@@ -11,6 +11,7 @@ Creates a new partner relationship between accounts.
 
 ```
 {
+   "accountScope": "{{string}}",
    "associatedAccountId": "{{string}}",
    "associationType": "{{string}}",
    "catalog": "{{string}}",
@@ -20,6 +21,7 @@ Creates a new partner relationship between accounts.
    "requestedSupportPlan": { ... },
    "resaleAccountModel": "{{string}}",
    "sector": "{{string}}",
+   "startDate": "{{string}}",
    "tags": [
       {
          "key": "{{string}}",
@@ -39,17 +41,10 @@ The request accepts the following data in JSON format.
 **Note**
 In the following list, the required parameters are described first.
 
- ** [associatedAccountId](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-associatedAccountId"></a>
-The AWS account ID to associate in this relationship.
-Type: String
-Length Constraints: Fixed length of 12.
-Pattern: `[0-9]*`
-Required: Yes
-
  ** [associationType](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-associationType"></a>
 The type of association for the relationship (e.g., reseller, distributor).
 Type: String
-Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL`
+Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL | MANAGED_SERVICES_END_CUSTOMER`
 Required: Yes
 
  ** [catalog](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-catalog"></a>
@@ -79,6 +74,19 @@ Type: String
 Valid Values: `COMMERCIAL | GOVERNMENT | GOVERNMENT_EXCEPTION`
 Required: Yes
 
+ ** [accountScope](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-accountScope"></a>
+The account scope for a managed services relationship (for example, entire organization, specific member accounts). Applies only to managed services relationships.
+Type: String
+Valid Values: `ENTIRE_ORGANIZATION | SPECIFIC_MEMBER_ACCOUNTS`
+Required: No
+
+ ** [associatedAccountId](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-associatedAccountId"></a>
+The AWS account ID to associate in this relationship.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `[0-9]*`
+Required: No
+
  ** [clientToken](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-clientToken"></a>
 A unique, case-sensitive identifier to ensure idempotency of the request.
 Type: String
@@ -87,15 +95,20 @@ Pattern: `[!-~]*`
 Required: No
 
  ** [requestedSupportPlan](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-requestedSupportPlan"></a>
-The support plan requested for this relationship.
+The support plan requested for this relationship. Applies only to billing transfer relationships.
 Type: [SupportPlan](API_channel_SupportPlan.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** [resaleAccountModel](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-resaleAccountModel"></a>
-The resale account model for the relationship.
+The resale account model for the relationship. Applies only to billing transfer relationships.
 Type: String
 Valid Values: `DISTRIBUTOR | END_CUSTOMER | SOLUTION_PROVIDER`
+Required: No
+
+ ** [startDate](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-startDate"></a>
+The start date of the managed services relationship. Applies only to managed services relationships.
+Type: Timestamp
 Required: No
 
  ** [tags](#API_channel_CreateRelationship_RequestSyntax) **   <a name="AWSPartnerCentral-channel_CreateRelationship-request-tags"></a>

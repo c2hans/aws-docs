@@ -11,7 +11,7 @@ You can instead use an external MySQL-compatible database that you own, such as 
 + Job records persist across cluster updates.
 + Multiple clusters can share one database, accumulating history across clusters that come and go.
 
-HyperPod does not create, host, or manage the database. Provisioning, sizing, patching, backups, and availability remain your responsibility.
+HyperPod does not host or manage the database. You can use a database that you already have, or, when you create a cluster in the SageMaker AI console, provision a new Amazon RDS for MariaDB database. CloudFormation creates the new database in your account as part of the cluster's stack. Sizing, patching, backups, and availability remain your responsibility. For more information, see [Provision a new database in the console](#sagemaker-hyperpod-external-accounting-db-slurm-provision-new).
 
 **Note**
 An external accounting database requires continuous provisioning. For more information, see [Continuous provisioning for enhanced cluster operations with Slurm](sagemaker-hyperpod-scaling-slurm.md). This feature also requires clusters to run on Amazon Machine Images (AMIs) released after August 30, 2026.
@@ -26,11 +26,13 @@ You configure an external accounting database by adding an `AccountingDatabase` 
 
 When you include `AccountingDatabase` in a `CreateCluster` request, HyperPod validates the configuration, then during provisioning retrieves the database credentials from Secrets Manager using the secret ARN you provided, writes the Slurm accounting configuration on the controller instance, tests connectivity to your database, and starts `slurmdbd` against it. The cluster reaches `InService` only after the accounting database connection succeeds.
 
+When you choose **Provision a new Amazon RDS for MariaDB database** in the console, CloudFormation creates the DB instance and its supporting resources as part of the cluster's stack. Amazon RDS creates and manages the secret that contains the database credentials. The new endpoint and secret ARN are then passed to `CreateCluster` in the same way. For more information, see [Provision a new database in the console](#sagemaker-hyperpod-external-accounting-db-slurm-provision-new).
+
 Your database credentials are never passed through the API and are never stored by HyperPod. You pass only the secret ARN, and HyperPod persists only that ARN.
 
 When you omit `AccountingDatabase`, the cluster uses the internal MariaDB database on the controller instance and behavior is unchanged.
 
-If the database configuration fails, the cluster does not fall back to the internal MariaDB database. Falling back would mean that jobs run during the gap never record to your database, leaving a permanent gap in your `sacct` history and fairshare records. Instead, cluster creation fails and reports the reason. For more information, see [Troubleshooting](#sagemaker-hyperpod-external-accounting-db-slurm-troubleshooting).
+If the database configuration fails, the cluster does not fall back to the internal MariaDB database. Falling back would mean that jobs run during the gap never record to your database, leaving a permanent gap in your `sacct` history and fairshare records. Instead, cluster creation fails and reports the reason. For more information, see [Troubleshooting accounting database errors](#sagemaker-hyperpod-external-accounting-db-slurm-troubleshooting).
 
 ### Responsibilities
 <a name="sagemaker-hyperpod-external-accounting-db-slurm-responsibilities"></a>
@@ -39,10 +41,12 @@ Because the database is outside of the HyperPod control plane, two concerns rema
 + **Network connectivity** – You own the security groups, subnets, VPC endpoints, and routing that let the controller instance reach the database on the configured port. HyperPod validates the connection but does not configure the network.
 + **Credential management** – You own the Secrets Manager secret, its contents, its rotation policy, and the IAM permissions that let the controller instance read it.
 
+If the console provisions a new database, CloudFormation creates a security group for the database that allows inbound traffic from the cluster security group on the database port, and Amazon RDS creates and manages the secret. The cluster execution role gets read access to the secret. For more information, see [IAM permissions](#sagemaker-hyperpod-external-accounting-db-slurm-iam).
+
 ## Prerequisites
 <a name="sagemaker-hyperpod-external-accounting-db-slurm-prerequisites"></a>
 
-Complete the following before you create or update a cluster with an `AccountingDatabase`. Because these involve resources that you own, HyperPod cannot create them for you. For more information on the prerequisites, see [Accounting Configuration](https://slurm.schedmd.com/accounting.html#slurm-accounting-configuration-before-build) on the SchedMD website.
+Complete the following before you create or update a cluster with an existing database. Because these involve resources that you own, HyperPod can't create them for you. If you provision a new database in the console, see [Requirements for a new database](#sagemaker-hyperpod-external-accounting-db-slurm-provision-new-prereqs) instead. For more information on the prerequisites, see [Accounting Configuration](https://slurm.schedmd.com/accounting.html#slurm-accounting-configuration-before-build) on the SchedMD website.
 
 | Prerequisite | Detail |
 | --- | --- |
@@ -57,7 +61,7 @@ Complete the following before you create or update a cluster with an `Accounting
 ### IAM permissions
 <a name="sagemaker-hyperpod-external-accounting-db-slurm-iam"></a>
 
-Add the following statements to your cluster execution role. Include the `kms:Decrypt` statement only if your secret is encrypted with a customer managed key.
+If you use the console and choose **Create a new IAM role** in the permissions settings, the console grants the new role `secretsmanager:GetSecretValue` on the secret, and `kms:Decrypt` through Secrets Manager. If you use an existing execution role or the API, add the following statements to the execution role. Include the `kms:Decrypt` statement only if your secret is encrypted with a customer managed key.
 
 ```json
 {
@@ -108,6 +112,8 @@ If you configure the external accounting database in the SageMaker AI console, t
 
 **Note**
 The `secretsmanager:ListSecrets` and `rds:DescribeDBInstances` actions do not support resource-level permissions, so you must set `Resource` to `*` for these actions.
+
+To provision a new database in the console, the console role needs additional permissions. For more information, see [Console permissions for a new database](#sagemaker-hyperpod-external-accounting-db-slurm-provision-new-console-perms).
 
 **Note**
 Do not use plaintext database connections in production environments.
@@ -232,7 +238,7 @@ In your `create_cluster.json` file, add an `AccountingDatabase` object to the cl
    }
    ```
 
-   If the accounting database cannot be configured, the cluster status becomes `Failed` and `FailureMessage` describes the cause. For more information, see [Troubleshooting](#sagemaker-hyperpod-external-accounting-db-slurm-troubleshooting).
+   If the accounting database cannot be configured, the cluster status becomes `Failed` and `FailureMessage` describes the cause. For more information, see [Troubleshooting accounting database errors](#sagemaker-hyperpod-external-accounting-db-slurm-troubleshooting).
 
 ### Using the console
 <a name="sagemaker-hyperpod-external-accounting-db-slurm-create-console"></a>
@@ -255,10 +261,91 @@ In your `create_cluster.json` file, add an `AccountingDatabase` object to the cl
 
 1. Complete the remaining steps in the wizard and choose **Create cluster**.
 
+### Provision a new database in the console
+<a name="sagemaker-hyperpod-external-accounting-db-slurm-provision-new"></a>
+
+When you create a cluster in the console, you can provision a new Amazon RDS for MariaDB database for Slurm accounting. CloudFormation creates the following resources in your account, as part of the cluster's stack:
++ An Amazon RDS for MariaDB DB instance in the cluster's private subnets. The storage is encrypted, and the DB instance isn't publicly accessible.
++ A DB subnet group that contains the cluster's private subnets.
++ A security group for the DB instance that allows inbound TCP traffic on the database port only from the cluster security group.
++ A DB parameter group with the following settings, which Slurm recommends. For more information, see [Accounting Configuration](https://slurm.schedmd.com/accounting.html#slurm-accounting-configuration-before-build) on the SchedMD website.
+  + `innodb_lock_wait_timeout` – `900`
+  + `innodb_snapshot_isolation` – `OFF`
+  + `max_allowed_packet` – `67108864` (64 MiB)
++ A Secrets Manager secret that Amazon RDS creates and manages. The secret contains the primary username and a generated password.
+
+The DB instance uses the default Amazon RDS for MariaDB engine version in your Region.
+
+#### Requirements for a new database
+<a name="sagemaker-hyperpod-external-accounting-db-slurm-provision-new-prereqs"></a>
+
+| Requirement | Detail |
+| --- | --- |
+| Cluster VPC | In the network settings, choose a new or existing VPC for the cluster. The database is created in that VPC. You can't provision a new database in the SageMaker AI service VPC. |
+| Availability Zones | The cluster's subnets must be in at least 2 Availability Zones. |
+| Console permissions | The IAM role or user that you use to access the console needs the permissions in [Console permissions for a new database](#sagemaker-hyperpod-external-accounting-db-slurm-provision-new-console-perms). |
+
+#### To provision a new database
+<a name="sagemaker-hyperpod-external-accounting-db-slurm-provision-new-steps"></a>
+
+1. Open the SageMaker AI console and choose **HyperPod clusters**, then **Create cluster**.
+
+1. Choose the custom setup option, and configure your instance groups, networking, and other settings as usual.
+
+1. Expand the **Accounting database** section and choose **Provision a new Amazon RDS for MariaDB database**.
+
+1. Configure the database settings. For descriptions and defaults, see the following table.
+
+1. Complete the remaining steps in the wizard and choose **Create cluster**.
+
+The following table describes the database settings for step 4.
+
+| Setting | Default | Description |
+| --- | --- | --- |
+| DB instance identifier | None | A unique name for the DB instance. Use 1–63 letters, numbers, or hyphens, starting with a letter, with no two consecutive hyphens, and not ending with a hyphen. The identifier must be unique in your account in the AWS Region. If you leave it blank, CloudFormation generates an identifier. |
+| DB instance class | db.m5.large | The compute and memory capacity of the DB instance. The list shows the DB instance classes that are available for the MariaDB engine version in your Region. |
+| Allocated storage | 20 GiB | The initial storage for the DB instance. Minimum 20 GiB. Maximum 65,536 GiB. |
+| Port | 3306 | The port on which the database accepts connections. Valid range: 1150–65535. |
+| Primary username | admin | The username that's stored in the generated secret. Use 1–16 letters, digits, or underscores, starting with a letter. The username can't be a word reserved by the database engine. |
+| Database name | slurm\_acct\_db\_{cluster\_id} | The schema name for Slurm accounting data. slurmdbd creates the schema. |
+
+#### Console permissions for a new database
+<a name="sagemaker-hyperpod-external-accounting-db-slurm-provision-new-console-perms"></a>
+
+If you provision a new database in the SageMaker AI console, the IAM role or user that you use to access the console also needs the following permissions. The console creates the cluster's CloudFormation stack without a service role, so CloudFormation creates the database resources with the permissions of that role or user.
++ `rds:DescribeDBEngineVersions` and `rds:DescribeOrderableDBInstanceOptions` – List the DB instance classes in **DB instance class**.
++ `rds:DescribeDBInstances` – Check that the **DB instance identifier** isn't already in use.
++ Permissions to create, update, and delete the following CloudFormation resource types. For the permissions that each resource type requires, see the resource type in the [AWS resource and property types reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html).
+  + `AWS::RDS::DBInstance`
+  + `AWS::RDS::DBSubnetGroup`
+  + `AWS::RDS::DBParameterGroup`
+  + `AWS::EC2::SecurityGroup`
+  + `AWS::EC2::SecurityGroupIngress`
+  + `AWS::SecretsManager::ResourcePolicy` – only if you choose an existing IAM role for the cluster
+
+#### Managing a provisioned database
+<a name="sagemaker-hyperpod-external-accounting-db-slurm-provision-new-manage"></a>
+
+The DB instance is an Amazon RDS for MariaDB instance in your account. To view or manage it, for example to monitor it, change its backup settings, or connect to it, use the [Amazon RDS console](https://console.aws.amazon.com/rds/). The DB instance identifier is the one that you entered, or the one that CloudFormation generated if you left it blank.
+
+#### Deleting a provisioned database
+<a name="sagemaker-hyperpod-external-accounting-db-slurm-provision-new-delete"></a>
+
+The DB instance is part of the cluster's CloudFormation stack, not the cluster.
++ **Deleting the cluster** – When you delete the cluster in the SageMaker AI console, the CloudFormation stack and the DB instance remain in your account.
++ **Deleting the stack** – When you delete the cluster's CloudFormation stack, CloudFormation takes a final DB snapshot and then deletes the DB instance. CloudFormation also takes a final DB snapshot if stack creation fails after the DB instance is created.
+
+The final DB snapshot is a manual DB snapshot that contains all of the data on the DB instance, including your Slurm accounting data. To find the snapshot, open the Amazon RDS console and choose **Snapshots**, then **Manual**. To recover the accounting data, restore the snapshot to a new DB instance and attach that DB instance to a cluster as an existing database. If you don't need the data, delete the snapshot.
+
+**Important**
+The final DB snapshot stays in your account until you delete it, and you're charged for its storage.
+
+For more information, see [Restoring to a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RestoreFromSnapshot.html) and [Deleting a DB snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteSnapshot.html) in the *Amazon RDS User Guide*.
+
 ## Change the accounting database on an existing cluster
 <a name="sagemaker-hyperpod-external-accounting-db-slurm-update"></a>
 
-You can repoint a running cluster at a different database, or attach an external database to a cluster that is using the internal MariaDB database, with a single `UpdateCluster` call.
+You can repoint a running cluster at a different database, or attach an external database to a cluster that is using the internal MariaDB database, with a single `UpdateCluster` call. To change the database, use an existing database. You can't provision a new database when you edit a cluster.
 
 HyperPod retrieves the credentials from Secrets Manager, rewrites the Slurm accounting configuration, and restarts `slurmdbd` against the new database. Running jobs are not affected, but new accounting records for running jobs will be lost. We recommend that you stop running jobs and migrate the accounting data before you change the database.
 
@@ -408,7 +495,7 @@ Retrieve the MariaDB username and password before the `UpdateCluster` call to sw
 
 If `slurmdbd` stops or cannot reach your database, HyperPod emits a `Warn` cluster event—`Slurm component slurmdbd is unhealthy. slurmdbd is not running. Job accounting records are not being written.`—while the cluster stays `InService` and jobs keep running, though accounting records for that period are never written.
 
-## Troubleshooting
+## Troubleshooting accounting database errors
 <a name="sagemaker-hyperpod-external-accounting-db-slurm-troubleshooting"></a>
 
 Accounting database errors are reported through cluster events for updates, and through `ClusterStatus` and `FailureMessage` for cluster creation. Accounting configuration logs are also delivered to Amazon CloudWatch for the life of the cluster.

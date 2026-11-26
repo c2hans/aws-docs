@@ -4,16 +4,17 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/outlook-extension
 
 # AWS Quick Microsoft Outlook extension
 
-The AWS Quick extension for Outlook helps you manage your entire inbox using natural language. You can summarize unread messages, organize your inbox, schedule meetings, and draft responses, all without leaving Outlook.
+The AWS Quick extension for Outlook helps you stay on top of your inbox and calendar without leaving Outlook. Quick helps you focus on what matters, drafts replies grounded in your organization's knowledge, and captures the decisions and action items in your email threads.
 
 You can search for AWS Quick in the Microsoft Outlook app store or visit the [Quick for Outlook Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010695) to add the extension.
 
 Key capabilities include:
-+ **Inbox management:** Summarize and prioritize your unread emails, search for specific emails or discussions using natural language queries, and organize your inbox by moving emails to folders, flagging messages for follow-up, and more.
-+ **Calendar and meeting management:** Summarize your calendar, find optimal meeting times with coworkers, and schedule meetings using natural language instructions.
-+ **Email summaries and replies:** Open the Quick side panel to ask questions about an email thread in focus or generate a contextual reply.
-+ **Enterprise knowledge integration:** Use Quick's knowledge sources to draft contextual responses to emails or to perform inbox and calendar tasks.
-+ **External actions:** Perform actions in third-party applications using your configured [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Outlook.
++ **Prioritize and manage your inbox:** Ask Quick what needs your attention and get your unread email prioritized. Find any email or discussion using natural language search, and move, flag, and file messages with a prompt.
++ **Manage your calendar:** Find the best time to meet with coworkers and schedule meetings in plain language. See what your day looks like and what you need to prepare for.
++ **Draft replies with enterprise context:** Ask about the open email thread and draft replies grounded in your spaces, knowledge bases, connected tools, and the web.
++ **Capture decisions and action items:** Pull the decisions and action items out of email threads so that nothing slips.
++ **Connect your work across tools:** Run flows and use your [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) to act on an email, such as creating a ticket or logging a meeting outcome in your CRM. Pick up where you left off, such as sharing results from the AWS Quick desktop application by email.
++ **Get personalized replies:** Quick learns your preferences and writing style over time. For more information, see [Memory and response personalization](using-quick-chat.md#chat-memory).
 
 **Important**
 The AWS Quick Outlook extension uses generative AI to create and execute code within your Outlook application sandbox. AI can make mistakes and perform inaccurate actions within your Outlook mailbox. No email or content is read when the side panel is closed, and no data is sent to AWS Quick unless you explicitly send a prompt.
@@ -37,7 +38,7 @@ As a user, you are responsible for keeping company information safe. The followi
 ### Conversation retention and accuracy
 <a name="outlook-conversation-retention"></a>
 
-Each conversation is stored for 30 days. You can review and manage your conversation history by choosing the conversation history button in the Outlook extension.
+AWS Quick keeps each conversation for 365 days. It keeps conversations that you pin or move to a folder for 750 days. You can review and manage your conversation history by choosing the conversation history button in the Outlook extension. For more information about retention periods, see [Usage limits](usage-limits.md).
 
 AWS Quick uses generative AI. You should review responses for accuracy.
 
@@ -54,11 +55,12 @@ To protect your organization's data, carefully evaluate email usage and plan dep
 <a name="outlook-sample-prompts"></a>
 
 The following prompts demonstrate common ways to use Quick within Outlook. You can adapt these to your specific needs.
-+ "Summarize all unread emails and highlight any that need urgent responses today."
-+ "Draft a follow-up email to [contact name] referencing the key points from this thread."
++ "What needs my attention today? Prioritize my unread emails."
++ "What does my day look like, and what do I need to prepare for?"
 + "Schedule a 30-minute meeting with the contacts in this email thread for next week."
-+ "Find all emails discussing [project name] and create a summary of action items."
++ "Pull the decisions and action items out of this thread."
 + "Using data from my Quick space, draft a status update email for the leadership team on our quarterly metrics."
++ "Create a ticket from this customer request and reply to let them know we're on it."
 
 **Tip**
 For best results, be specific in your prompts. Include names, dates, and goals. You can also reference your Quick spaces, dashboards, and knowledge bases for personalized results.

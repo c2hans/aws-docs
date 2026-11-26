@@ -39,10 +39,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateAutonomousDatabaseBackup  **
-  - **IAM action:**  [odb:CreateAutonomousDatabaseBackup](#list_odb-action-CreateAutonomousDatabaseBackup)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [odb:CreateAutonomousDatabaseBackup](#list_odb-action-CreateAutonomousDatabaseBackup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateAutonomousDatabaseWallet  **
   - **IAM action:**  [odb:CreateAutonomousDatabaseWallet](#list_odb-action-CreateAutonomousDatabaseWallet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

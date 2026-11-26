@@ -44,7 +44,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [patchOperations](#API_UpdateUsage_RequestSyntax) **   <a name="apigw-UpdateUsage-request-patchOperations"></a>
-For more information about supported patch operations, see [Patch Operations](patch-operations.md).
+For more information about supported patch operations, see [Patch Operations](https://docs.aws.amazon.com/apigateway/latest/api/patch-operations.html).
 Type: Array of [PatchOperation](API_PatchOperation.md) objects
 Required: No
 
@@ -80,7 +80,7 @@ The ending date of the usage data.
 Type: String
 
  ** [values](#API_UpdateUsage_ResponseSyntax) **   <a name="apigw-UpdateUsage-response-values"></a>
-The usage data, as daily logs of used and remaining quotas, over the specified time interval indexed over the API keys in a usage plan. For example, `{..., "values" : { "{api_key}" : [ [0, 100], [10, 90], [100, 10]]}`, where `{api_key}` stands for an API key ID and the daily log entry is of the format `[used quota, remaining quota]`.
+The usage data, as daily logs of used and remaining quotas, over the specified time interval indexed over the API keys in a usage plan. For example, `{..., "values" : { "{api_key}" : [ [0, 100], [10, 90], [100, 10]]}`, where `{api_key}` stands for an API key value and the daily log entry is of the format `[used quota, remaining quota]`.
 Type: String to array of arrays of longs map
 
  ** [position](#API_UpdateUsage_ResponseSyntax) **   <a name="apigw-UpdateUsage-response-position"></a>

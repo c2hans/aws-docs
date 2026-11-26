@@ -76,7 +76,7 @@ After you set up the connector, you can use the following read-only actions to a
 **Note**
 This connector supports read-only actions. You can access the ISO products and jurisdictions covered by your Verisk subscription.
 
-## Troubleshooting
+## Troubleshooting the Verisk Underwriting Intelligence connector
 <a name="verisk-integration-troubleshooting"></a>
 
 To edit, share, or delete your connector, see [Managing existing integrations](integration-workflows.md#managing-existing-integrations).

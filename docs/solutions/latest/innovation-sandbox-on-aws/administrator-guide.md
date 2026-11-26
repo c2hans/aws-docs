@@ -12,7 +12,10 @@ This section describes the various actions an Administrator can perform using th
 As an Administrator, you can add new AWS accounts to your account pool using the web UI. Adding new accounts will increase the number of accounts you can lease to your end users, allowing them to work with temporary AWS accounts. After you add new accounts to the account pool, you can lease these accounts to users.
 
 **Important**
-You will need to create the AWS accounts and add them to your organization before adding them to the account pool. The Innovation Sandbox solution cannot create new accounts for you.
+Create the AWS accounts and add them to your organization before adding them to the account pool. Innovation Sandbox cannot create accounts.
+
+**Important**
+AWS sets the opt-in status for an opt-in Region to `DISABLED` by default. Before moving an account to the **Entry** OU, set the opt-in status for every configured opt-in Region to `ENABLED`. Otherwise, onboarding leaves the account without an observability link in that Region. For more information about managed opt-in Regions, see [Managed opt-in Regions](plan-your-deployment.md#managed-opt-in-regions).
 
 1. From the [AWS Organizations](https://console.aws.amazon.com/organizations/) console in your org management account, move accounts that you want to onboard into the **Entry** OU located under the **<NAMESPACE>\_InnovationSandboxAccountPool** OU. This will stage them to be registered with the solution.
 
@@ -179,6 +182,47 @@ Quarantining an account cannot be reversed. Any leaseholder on the account loses
 **Note**
 Every quarantine action, regardless of cause, is recorded for auditing purposes. For more information, refer to [Monitoring the solution](monitoring-the-solution.md).
 
+## Registering and managing permission sets
+<a name="permission-sets"></a>
+
+Permission sets define what users and groups can do in a sandbox account. Administrators create and maintain them in AWS IAM Identity Center, then register them with Innovation Sandbox. Administrators and managers select which permission sets a lease allows and which one it uses by default.
+
+In the web UI, choose **Permission Sets** to view the catalog. Administrators can choose a permission set name to view its policies in IAM Identity Center.
+
+![Permission Sets page showing the registered permission sets table with search, pagination, and the Manage permission sets button](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/permission-sets-page.png)
+
+The solution’s built-in user permission set is available without registration. The Admin and Manager permission sets provide operational access and cannot be selected for lease assignments. Service control policies (SCPs) continue to limit access in sandbox accounts.
+
+### Register a permission set
+<a name="register-permission-set"></a>
+
+You must have permission to manage permission sets in the IAM Identity Center instance configured for this deployment. For instructions on configuring policies and session duration, see [Create, manage, and delete permission sets](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsets.html) in the *AWS IAM Identity Center User Guide*.
+
+To register a permission set:
+
+1. In the web UI, choose **Permission Sets**.
+
+1. Choose **Manage permission sets** to open the IAM Identity Center console.
+
+1. Create a permission set or choose an existing one.
+
+1. Configure its policies and session duration for the intended use.
+
+1. Add the tag key `ISB:<namespace>:ManagedPermissionSet` with the value `true`. Replace `<namespace>` with the **Namespace** used to deploy the solution. Both the key and value are case sensitive.
+
+1. Return to the web UI and refresh the catalog after synchronization. If the permission set does not appear, see [Permission set does not appear in the catalog](troubleshooting.md#permission-set-not-in-catalog).
+
+Registration makes a permission set available for selection; it does not grant account access. Choose the allowed permission sets when [creating a template](manager-guide.md#template-access-settings), then select one for each [user or group assignment](manager-guide.md#lease-sharing-add).
+
+### Updating or unregistering a permission set
+<a name="maintain-permission-sets"></a>
+
+Manage policies, session duration, tags, and deletion in AWS IAM Identity Center. When you change policies, apply the updates to the provisioned accounts through IAM Identity Center; Innovation Sandbox does not manage policy updates.
+
+Before removing the registration tag, replace the permission set in affected assignments, templates, and lease access settings. Removing the tag blocks new grants after the catalog updates, but retains existing access. For recovery guidance, see [An assignment uses an unavailable permission set](troubleshooting.md#unavailable-permission-set).
+
+For leases that use Sandbox Spaces, select permission sets without a permissions boundary. A permissions boundary does not prevent normal IAM Identity Center access, but Sandbox Spaces rejects messages from users assigned that permission set.
+
 ## Registering and managing blueprints
 <a name="registering-managing-blueprints"></a>
 
@@ -282,7 +326,9 @@ To register a blueprint using the registration wizard:
 
    1. For **Regions**, select the AWS Regions where the blueprint will be deployed. You can select multiple regions.
 **Note**
-The available regions are determined by the **ISB Managed Regions** parameter configured during AccountPool stack deployment. To add or remove regions, update the AccountPool stack parameter. For more information, see [Deploy the AccountPool stack](step1-deploy-accountpool-stack.md). You can view the currently configured managed regions on the **Read-only** tab of the **Settings** page.
+The **ISB Managed Regions** parameter determines the Regions available for blueprint deployment. To add or remove Regions, update the Account Pool stack first, and then update the Compute stack with a new **Force configuration update (optional)** value. Before adding an opt-in Region, set its opt-in status to `ENABLED` in the hub account and every pool account. For the complete sequence, see [Update managed Regions](step1-deploy-accountpool-stack.md#update-managed-regions). The **Read-only** tab of the **Settings** page displays the current managed Regions.
+**Important**
+Before removing a Region from **ISB Managed Regions**, clean up all resources in that Region across every sandbox account. After you remove the Region, automated account cleanup and post-cleanup validation no longer scan it. Resources left in that Region can remain in the account and continue to incur charges.
 
    1. For **Deployment Timeout**, enter the maximum time (in minutes) to wait for deployment completion (default: 30 minutes).
 
@@ -300,8 +346,8 @@ The available regions are determined by the **ISB Managed Regions** parameter co
 
    1. If you selected **Custom**, configure these parameters:
       +  **Region concurrency type**: Sequential (one region at a time) or Parallel (all regions simultaneously)
-      +  **Max concurrent percentage**: Percentage of regions to deploy concurrently
-      +  **Failure tolerance percentage**: Percentage of regions that can fail before the overall deployment is marked as failed. Set to 0% to stop on the first failure.
+      +  **Max concurrent percentage**: Maximum percentage of target accounts to deploy concurrently in each Region. Innovation Sandbox targets one account per lease deployment.
+      +  **Failure tolerance percentage**: Percentage of target accounts that can fail in a Region before the overall deployment is marked as failed. Innovation Sandbox deploys to one account at a time, so any percentage below 100% tolerates zero account failures in a Region.
       +  **Concurrency mode**: Strict (reduces concurrency on failures) or Soft (maintains maximum concurrency)
 
          **What success and failure mean in Innovation Sandbox**
@@ -310,13 +356,13 @@ The available regions are determined by the **ISB Managed Regions** parameter co
         +  **Deployment succeeds**: The user is granted access to the sandbox account with the pre-deployed resources. The lease becomes **Active**.
         +  **Deployment fails**: The lease is terminated, the account is cleaned up and returned to the available pool, and the user does not receive access. If the lease required manual approval, it is reset to **PendingApproval** so the manager can investigate and re-approve. Administrators and managers are notified by email.
 
-        The failure tolerance percentage controls when CloudFormation considers the overall deployment as failed. If the number of region failures stays within the tolerance, CloudFormation marks the deployment as succeeded, even though some regions have no resources. The user receives the account, but resources may be missing in those failed regions. You can review per-region results in the deployment history on the blueprint details page.
+        The failure tolerance percentage controls how many target accounts can fail in each Region before CloudFormation marks the operation as failed. It does not represent a percentage of target Regions. CloudFormation rounds the percentage of accounts down to a whole number. You can review per-Region results in the deployment history on the blueprint details page.
 
-         **Example: Blueprint deploys to 3 regions (us-east-1, us-west-2, eu-west-1) with 100% concurrency and 30% failure tolerance**
-        +  **1 of 3 regions fails** (33% failure rate, within 30% tolerance rounded up): CloudFormation marks the deployment as **succeeded**. The user receives the sandbox account and the lease becomes Active. However, the failed region has no blueprint resources. The deployment history on the blueprint details page shows the per-region results.
-        +  **2 of 3 regions fail** (66% failure rate, exceeds 30% tolerance): CloudFormation marks the deployment as **failed**. The lease is terminated, the account is cleaned up, and the user does not receive access. Administrators and managers are notified by email to investigate the blueprint configuration.
+         **Example: Blueprint deploys to one account in 3 Regions with 100% concurrency and 30% failure tolerance**
+
+        Because Innovation Sandbox deploys a blueprint to one sandbox account at a time, each Region has one target account. CloudFormation rounds 30% of one account down to zero tolerated failures. If a stack instance fails in any Region, the operation fails. With parallel Region concurrency, stack instances already in progress in other Regions can still complete.
 **Tip**
-For new blueprints, use the **Default** strategy (0% failure tolerance) until you have validated that the StackSet deploys reliably. Switch to **Custom** with higher failure tolerance only when you understand the trade-off: users may receive accounts with missing resources in failed regions.
+For new blueprints, use the **Default** strategy (0% failure tolerance) until you have validated that the StackSet deploys reliably. Use 100% failure tolerance only when you accept that a user can receive an account with missing resources in any or all target Regions.
 
    1. Choose **Next**.
 ![Deployment Configuration page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step3.png)
@@ -403,7 +449,7 @@ You cannot unregister blueprints that are associated with active lease templates
 
 You can view and modify your Innovation Sandbox settings on the **Settings** page. From the left navigation pane, choose **Settings**. Administrators can edit every section; Managers see a read-only view of the same sections; sandbox users cannot access the **Settings** page.
 
-![Innovation Sandbox Settings page showing Leases & Cost](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-page-overview.png)
+![Innovation Sandbox Settings page showing the setting search, the list of settings groups, and the Lease policies group](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-page-overview.png)
 
 **Innovation Sandbox Settings page**
 As an Administrator, you can modify all global settings directly on the **Settings** page. Managers can open the **Settings** page to view the current values, but cannot change them.
@@ -417,57 +463,86 @@ If you upgraded to v1.3.0 or later from an earlier version, your account still c
 ### Modify configuration
 <a name="modify-configuration"></a>
 
-Settings are organized into four tabs: **Leases & Cost**, **Cleanup**, **General**, and **Read-only**. Each configuration section has its own **Save** button, so saving one section does not affect any other section.
+Settings are organized into six groups: **General**, **Lease policies**, **Cost**, **Account cleanup**, **Notifications**, and **Sandbox Spaces**. Each group has its own **Save changes** button, so saving one group does not affect any other group.
 
 To modify a setting:
 
 1. In the solution web UI, from the left navigation pane, choose **Settings**.
 
-1. Choose the tab that contains the section you want to change. Use **Leases & Cost** for Lease Policies and Cost Reporting, and **Cleanup** for the account cleanup loop. Use **General** for Maintenance Mode, Terms of Service, and Notification.
+1. Choose the group that contains the setting you want to change.
 
 1. Update the values in the section you want to change.
 
-1. Choose **Save**. A confirmation message, "Settings saved.", displays, and the new values take effect immediately.
+1. Choose **Save changes**. A confirmation message, "Settings saved.", displays, and the new values take effect immediately.
 
 **Note**
-If another Administrator saves the same section after you loaded the page, your **Save** fails with a **Conflict** error. The error reads: "These settings were modified by another administrator. Reload to see the latest values." Choose **Reload** to load the latest values, reapply your changes, and choose **Save** again. Reloading discards your unsaved edits for that section.
+If another Administrator saves the same group after you loaded the page, a **Settings changed by another administrator** alert appears. Choose **Reload latest values** to load the latest values, reapply your changes, and choose **Save changes** again. Reloading discards your unsaved edits for that group.
 
 ### Completing initial setup
 <a name="completing-initial-setup"></a>
 
-Every configuration section starts with built-in default values. Until you save each section for the first time, the **Settings** item in the left navigation pane displays a badge. The badge shows how many sections have not yet been saved. Each unsaved section on the **Settings** page displays a **Using default values** alert. (The **Maintenance Mode** section shows a maintenance-specific warning instead. For more information, see [Managing maintenance mode](#maintenance-mode).) If every section is still unsaved, the **Settings** page also shows an **Initial setup required** banner. Innovation Sandbox is fully operational with the default values in the meantime.
+Every configuration section starts with built-in default values. Until you save each section for the first time, the **Settings** item in the left navigation pane displays a badge. The badge shows how many sections have not yet been saved. Each unsaved section on the **Settings** page displays a **Default settings have not been saved** alert. (The **Maintenance mode** section shows a maintenance-specific warning instead. For more information, see [Managing maintenance mode](#maintenance-mode).) Innovation Sandbox is fully operational with the default values in the meantime.
 
-Review each section and choose **Save** to apply it to your deployment. You can save a section with its default values unchanged; doing so removes it from the count of sections needing attention.
+Review each section and choose **Save changes** to apply it to your deployment. You can save a section with its default values unchanged; doing so removes it from the count of sections needing attention.
 
 ### Managing maintenance mode
 <a name="maintenance-mode"></a>
 
 Maintenance mode temporarily restricts the solution to Administrators. When maintenance mode is on, Managers and sandbox users lose access to the Innovation Sandbox web application. A maintenance banner displays on every page of the web UI. Their existing sandbox accounts are unaffected, and Administrators retain full access. Use maintenance mode when performing sensitive maintenance work, such as initial setup, troubleshooting, or upgrading the solution.
 
-![Settings page General tab with Maintenance Mode toggle](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-general-maintenance.png)
+![Settings page General group with the maintenance banner and the Maintenance mode toggle turned on](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-general-maintenance.png)
 
-**Maintenance Mode section on the General tab**
+**Maintenance mode section in the General group**
 To turn maintenance mode on or off:
 
 1. In the solution web UI, from the left navigation pane, choose **Settings**.
 
-1. Choose the **General** tab.
+1. Choose **General**.
 
-1. Under **Maintenance Mode**, turn the **Maintenance mode** toggle on or off.
+1. Under **Maintenance mode**, turn the **Maintenance mode** toggle on or off.
 
-1. Choose **Save**.
+1. Choose **Save changes**.
 
 1. On the confirmation dialog, choose **Turn on maintenance mode** or **Turn off maintenance mode**.
 
 **Important**
 New deployments of Innovation Sandbox on AWS start with maintenance mode turned **ON**. After you finish reviewing the **Settings** page, turn maintenance mode off so Managers and users can access the solution.
 
+### Allowing cost tracking features
+<a name="cost-tracking-settings"></a>
+
+The **Allow estimated cost tracking**, **Allow Bedrock token monitoring**, and **Enable service cost breakdown** settings are off by default. Only administrators can change them.
+
+To allow estimated cost tracking and Amazon Bedrock token monitoring:
+
+1. In the solution web UI, from the left navigation pane, choose **Settings**.
+
+1. On the **Settings** page, choose **Lease policies**.
+
+1. In **Cost tracking**, turn on **Allow estimated cost tracking**, **Allow Bedrock token monitoring**, or both.
+
+1. Choose **Save changes**.
+
+![Lease policies Cost tracking settings with Allow estimated cost tracking and Allow Bedrock token monitoring turned on](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-lease-policies-cost-tracking.png)
+
+Administrators and managers can then turn on estimated cost tracking and Amazon Bedrock token monitoring for each lease template or lease. For more information, see [Step 5: Budget](manager-guide.md#template-budget-settings) and [Changing a lease’s budget settings](manager-guide.md#edit-lease-budget).
+
+To turn on service cost breakdown for all leases:
+
+1. On the **Settings** page, choose **Cost**.
+
+1. In **Cost monitoring**, turn on **Enable service cost breakdown**.
+
+1. Choose **Save changes**.
+
+Leases that already have billed cost when you turn this on don’t show a **Top services** breakdown.
+
 ### Global configuration settings
 <a name="global-settings"></a>
 
 The following tables list the global configuration settings you can view or modify on the **Settings** page, grouped by section. For the cost reporting settings, see [Cost report configuration settings](#cost-report-settings).
 
- **Lease Policies** (**Leases & Cost** tab)
+ **Lease policies** (**Lease policies** section)
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -475,16 +550,18 @@ The following tables list the global configuration settings you can view or modi
 | Max budget | Number (USD) | 50 | Maximum budget, in USD, that a lease template can be created with. Range: 0 to 1,000,000,000. |
 | Require max duration | Boolean | On | Require lease templates to define a maximum duration. |
 | Max lease duration | Number (hours) | 168 | Maximum duration, in hours, that a lease template can be created with. Range: 0 to 87,600. |
+| Allow estimated cost tracking | Boolean | Off | When enabled, lease templates and leases can turn on estimated cost tracking, which enables the **Estimated cost** basis and spend rate thresholds. For more information, see [Allowing cost tracking features](#cost-tracking-settings). |
+| Allow Bedrock token monitoring | Boolean | Off | When enabled, lease templates and leases can turn on Amazon Bedrock token monitoring, which tracks Amazon Bedrock token cost between Cost Explorer reports. For more information, see [Allowing cost tracking features](#cost-tracking-settings). |
 | Max leases per user | Number | 3 | Maximum number of concurrent active leases (including pending requests) a single user can have. |
-| Lease record TTL | Number (days) | 30 | Number of days an expired lease record is retained before it is permanently deleted. Deletion might take up to 48 hours after the TTL expires. |
+| Lease record retention (days) | Number (days) | 30 | Number of days an expired lease record is retained before it is permanently deleted. Deletion might take up to 48 hours after the TTL expires. It also sets how long Innovation Sandbox keeps a lease’s **Cost** tab data after the lease’s expiration date. |
 | Allow user lease termination | Boolean | On | When enabled, users can terminate their own active leases. When disabled, only Admins and Managers can. |
-| Rate limit window | Number (hours) | 168 | Rolling window, in hours, used to rate-limit lease requests. Must not exceed the **Lease record TTL** converted to hours (days × 24). |
+| Rate limit window | Number (hours) | 168 | Rolling window, in hours, used to rate-limit lease requests. Must not exceed the **Lease record retention (days)** value converted to hours (days × 24). |
 | Max requests per window | Number | 10 | Maximum number of lease requests a user can make within the rate limit window before further requests are rejected. |
 | Enable lease sharing | Boolean | Off | When enabled, lease owners can manage assignments on leases that permit sharing. Admins and Managers always retain access. |
 | Enable principal search | Boolean | On | When enabled, the user typeahead search used to find and assign principals is available. When disabled, it is unavailable to all roles. |
 | Allow group assignments | Selection | Do not allow groups | Controls whether IAM Identity Center groups can be assigned to leases. When set to **Do not allow groups**, only individual users can be added. Existing group assignments remain and can be removed. |
 
- **Cleanup** (**Cleanup** tab)
+ **Account cleanup** (**Account cleanup** section)
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -496,20 +573,129 @@ The following tables list the global configuration settings you can view or modi
 | Cleanup report retention (days) | Number | 730 | Days a cleanup report is retained before it is deleted. Range: 14 to 3650. |
 | On validation failure | Silent, Warn, or Quarantine | Silent | What happens when post-cleanup validation finds remaining resources. **Silent** (default): validation runs and captures data but takes no action. **Warn**: logs a warning and surfaces remaining resources in the UI, but returns the account to available. **Quarantine**: moves the account to quarantine for manual review. |
 
- **General** (**General** tab)
+ **General** (**General** section)
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
 | Maintenance mode | Boolean | On | Restricts web application access to Admins. For more information, see [Managing maintenance mode](#maintenance-mode). |
 | Terms of service content | String | Built-in default terms of service text | Terms of service presented to users when requesting a lease. You can customize this with your own words on how users should responsibly use their sandbox account and what they are responsible for. Maximum 10,000 characters. |
-| Email from address | String | Empty (notifications disabled) | Sender address used for all email notifications. Leave empty to disable email notifications. The address (or its parent domain) must be a verified identity in Amazon SES. |
+
+ **Notifications** (**Notifications** section)
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Email notifications (SES) | Boolean | On | When enabled, the solution sends notification emails through Amazon SES. Email is sent only when **Email from address (SES)** is also set. |
+| Email from address (SES) | String | Empty | Sender address used for all notification emails. The address must be covered by the SES identity the solution sends through: a verified identity in the Hub account, or the delegated identity set by the **Delegated SES Identity ARN** Compute stack parameter. The solution validates any address you enter, even while email notifications are off. |
+| SNS integration topic | Boolean | Off | When enabled, the solution publishes notifications to the Amazon SNS integration topic for your own subscribers. For more information, see [Integrate notifications with other tools](notification-integration.md). |
+
+If **SNS integration topic** is off and email is either off or has no sender address, the solution doesn’t deliver notifications, and the **Settings** page shows an **All notifications are off** warning.
+
+ **Cost monitoring** (**Cost** section)
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Enable service cost breakdown | Boolean | Off | Collects a per-service cost breakdown for every lease. The breakdown fills the **Top services** table on a lease’s **Cost** tab. Budget and spend rate alerts also say what drove the spend. For more information, see [Allowing cost tracking features](#cost-tracking-settings). |
+
+ **Sandbox Spaces** (**Sandbox Spaces** section)
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Enable Sandbox Spaces | Boolean | Off | Lets lease templates offer a Sandbox Space to users with an active lease. When off, templates can’t enable a Sandbox Space, and the Sandbox Spaces on active leases become unavailable until you turn the setting back on. Conversations and the list of enabled models are kept. For more information, refer to [Managing Sandbox Spaces](#manage-sandbox-spaces). |
 
 ### Cost report configuration settings
 <a name="cost-report-settings"></a>
 
-The following table includes the **Cost Reporting** settings you can view or modify on the **Leases & Cost** tab of the **Settings** page. Use these settings for cost attribution and reporting.
+The following table includes the cost reporting settings you can view or modify in the **Cost** group of the **Settings** page. Use these settings for cost attribution and reporting.
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
 | Cost report groups | Array of strings | Empty | List of valid cost report group names that can be assigned to lease templates. Maximum of 100 cost report groups, with each group name limited to 50 characters. |
 | Require cost report group | Boolean | Off | Determines whether a cost report group is required on leases and lease templates. When enabled, all new lease template creation and updates require a valid cost report group to be assigned. This is not enforced for existing leases or lease templates; they need to be manually updated. |
+
+## Managing Sandbox Spaces
+<a name="manage-sandbox-spaces"></a>
+
+Sandbox Spaces is an AI agent workspace in the web UI. Users with an active lease describe what they want to build, and the agent creates and operates AWS resources in their sandbox account. The agent uses Amazon Bedrock models. Users get a Sandbox Space only when you turn the feature on and a manager turns it on for the lease template. For more information, refer to [Using Sandbox Spaces](user-section.md#using-sandbox-spaces).
+
+As an Administrator, you control two things on the **Settings** page, in the **Sandbox Spaces** section:
++ Whether Sandbox Spaces is available in your deployment.
++ Which Amazon Bedrock models users can choose from.
+
+Managers can view this section but can’t change it. Managers choose whether to turn on Sandbox Spaces for each lease template, and which of the models you enable each template offers. For more information, refer to [Creating lease templates](manager-guide.md#creating-lease-templates).
+
+**Note**
+Sandbox Spaces calls Amazon Bedrock from the user’s sandbox account, so model usage is charged to that account and counts toward the lease budget. Amazon Bedrock token monitoring is turned on for every lease that has a Sandbox Space, even when the **Allow Bedrock token monitoring** setting is off.
+
+**Important**
+Sandbox Spaces models that use cross-Region inference run only when the `BedrockInferenceProfilePatterns` parameter on the AccountPool stack allows their inference profiles. The default value, `arn:aws:bedrock:*:*:inference-profile/*`, allows all inference profiles. If you set the parameter to an empty value, the service control policy blocks cross-Region Amazon Bedrock inference, and Sandbox Spaces can’t run models that use cross-Region inference profiles. To allow only some profiles, set patterns that match only those profiles. The exemption applies to every principal in the sandbox accounts, not only to Sandbox Spaces. The **Sandbox Spaces** section of the **Settings** page shows the current value of the parameter. For more information, refer to [Step 1: Deploy the AccountPool stack](step1-deploy-accountpool-stack.md) and [SCP customization limitations](scp-customization-limitations.md).
+
+**Note**
+The agent runs commands with the permission set that is assigned to the user on the lease. The agent can’t use a permission set that has a permissions boundary, whether AWS managed or customer managed.
+
+### Turning Sandbox Spaces on or off
+<a name="sandbox-spaces-enable"></a>
+
+Sandbox Spaces is off by default. Before you turn it on, make sure that the Region where the solution is deployed is one of the managed Regions of the deployment (**ISB Managed Regions** on the AccountPool stack). The solution doesn’t save the setting when it isn’t. For more information, refer to [Step 1: Deploy the AccountPool stack](step1-deploy-accountpool-stack.md).
+
+1. In the solution web UI, from the left navigation pane, choose **Settings**.
+
+1. Choose **Sandbox Spaces**.
+
+1. Under **Availability**, turn on **Enable Sandbox Spaces**.
+
+1. Choose **Save changes**.
+
+![Sandbox Spaces section of the Settings page with Enable Sandbox Spaces turned on and three enabled models in the Models table](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-sandbox-spaces.png)
+
+To turn Sandbox Spaces off, turn off **Enable Sandbox Spaces**, choose **Save changes**, and then choose **Save changes** in the **Confirm settings changes** dialog. When you turn Sandbox Spaces off:
++ Users can’t send new messages to the agent, and lease templates can’t turn on Sandbox Spaces.
++ Tasks that the agent is already running aren’t cancelled. They can continue to make AWS calls while their leases remain active.
++ Conversations and your list of enabled models are kept for when you turn Sandbox Spaces back on.
++ A lease template or lease that already has Sandbox Spaces turned on can still turn it off, but can’t turn it back on until you turn on the setting here.
+
+### Enabling models
+<a name="sandbox-spaces-add-models"></a>
+
+Users can choose only from the models you enable. Enable at least one model before users start a conversation. The **Models** table on the **Sandbox Spaces** section lists the models that are enabled, with the columns **Model**, **Provider**, **Availability**, **Input / 1K**, **Output / 1K**, **Cache read / 1K**, and **Cache write / 1K**. The prices are on-demand list prices per 1,000 tokens. Until you enable a model, the table shows **No Sandbox Spaces models**.
+
+To enable models:
+
+1. In the **Sandbox Spaces** section of the **Settings** page, in the **Models** table, choose **Add models**.
+
+1. On the **Add Sandbox Spaces models** page, review the **Available models** table. It lists the Amazon Bedrock models that are eligible for Sandbox Spaces, which are active models that accept text input, produce text output, and support response streaming. Direct models must also support on-demand inference. Global and Regional inference profiles appear as separate rows, and the **Type** column shows **Foundation model** or **Inference profile**. To find a model, enter text in **Filter models**, or filter by **Provider** or **Type**. To reload the list, choose the refresh button.
+![Add Sandbox Spaces models page with one model selected in the Available models table and the Enable selected models button](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-sandbox-spaces-add-models.png)
+
+1. Select the models to enable. You can’t select a model that shows **Price unavailable**, because the solution can’t calculate its cost.
+
+1. Choose **Enable selected models**. The button shows the number of models you selected.
+
+1. In the **Review models to add** dialog, review the models, and then choose **Submit**.
+
+The models are added to the **Models** table, and the web UI returns to the **Sandbox Spaces** section. Models that you previously disabled also appear in the **Available models** table, so that you can enable them again.
+
+### Disabling models
+<a name="sandbox-spaces-disable-models"></a>
+
+Disabling a model doesn’t change the model lists on lease templates and leases that include it, but users can no longer choose the model in a Sandbox Space. If a template or lease uses the disabled model as its default model, its Sandbox Spaces settings show the default model as **Disabled**, and a manager must choose another default before saving changes to those settings. If a lease has no enabled models left, the user sees a message that no enabled model is available and to contact an administrator.
+
+You can’t disable every model while **Enable Sandbox Spaces** is on. If you try, a **Settings not saved** message appears that says **Keep at least one model enabled while Sandbox Spaces is turned on.** To disable every model, turn off **Enable Sandbox Spaces** first.
+
+If you disable the default model of a lease template, requests for leases from that template fail with the message **This template’s default model is no longer available. Contact an administrator to update the template.**
+
+To disable models:
+
+1. In the **Sandbox Spaces** section of the **Settings** page, in the **Models** table, select the models to disable.
+
+1. Choose **Actions**, and then choose **Disable**.
+
+1. Choose **Save changes**.
+
+To make a model available again, choose **Add models** and enable it.
+
+**Note**
+If another administrator changes the same models after you load the page, your save fails and the web UI shows a **Model catalog conflict** message. Reload the latest values, and then make your changes again.
+
+### Choosing models
+<a name="sandbox-spaces-model-guidance"></a>
+
+The models in the list are provided by AWS and aren’t validated by the solution. Tool-use reliability varies by model. A model might describe an action in its reply without running it, and you are still charged for the tokens it uses. Before you offer a model widely, try it in a Sandbox Space with a task that makes changes in an account, such as creating an S3 bucket. If a model doesn’t run the actions that you ask for, disable it. To limit the models that a group of users can choose from, manage the model list on the lease template. For more information, refer to [Creating lease templates](manager-guide.md#creating-lease-templates).

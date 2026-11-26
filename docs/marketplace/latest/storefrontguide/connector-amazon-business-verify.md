@@ -36,7 +36,7 @@ Test the buyer journey after you publish the storefront. If you use single sign-
 **Offer details vary**
 Not every product has a list price discount, quantity tiers, or other offers. Buyers review the current offer and complete purchases in Amazon Business.
 
-## Troubleshooting
+## Troubleshooting the Amazon Business connector
 <a name="connector-amazon-business-troubleshooting"></a>
 
 Use the following table to resolve common issues.

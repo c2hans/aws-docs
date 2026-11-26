@@ -42,6 +42,11 @@ Before removing existing `aws-auth` `ConfigMap` entries that were created by Ama
    arn:aws:iam::111122223333:role/EKS-my-cluster-fargateprofile1                                   system:node:{{SessionName}}             system:bootstrappers,system:nodes,system:node-proxier
    arn:aws:iam::111122223333:role/EKS-my-cluster-managed-ng                                        system:node:{{EC2PrivateDNSName}}       system:bootstrappers,system:nodes
    ```
+**Reserved prefix handling**
+Access entries don’t accept usernames or Kubernetes group names that start with `system:`, `amazon:`, `aws:`, `eks:`, or `iam:`. You can’t copy the values for `aws-auth` entries that use these prefixes. Migrate the two most common cases as follows:
+ **Node roles** (username starts with `system:node:`): Create the access entry with type `EC2_LINUX` or `EC2_WINDOWS`, and let Amazon EKS set the username and Kubernetes groups.
+ **Cluster administrators** (group `system:masters`): Create a `STANDARD` access entry without Kubernetes groups, and associate the `AmazonEKSClusterAdminPolicy` access policy with the cluster as the access scope.
+For more information, see [Create access entries](creating-access-entries.md) and [Associate access policies with access entries](access-policies.md).
 
 1.  [Create access entries](creating-access-entries.md) for any of the `ConfigMap` entries that you created returned in the previous output. When creating the access entries, make sure to specify the same values for `ARN`, `USERNAME`, `GROUPS`, and `ACCOUNT` returned in your output. In the example output, you would create access entries for all entries except the last two entries, since those entries were created by Amazon EKS for a Fargate profile and a managed node group.
 

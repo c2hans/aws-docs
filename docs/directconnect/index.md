@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/directconnect/index.html
 title: 'Direct Connect Documentation'
 canonical_url: https://docs.aws.amazon.com/directconnect/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Direct Connect Documentation

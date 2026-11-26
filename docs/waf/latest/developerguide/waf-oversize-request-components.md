@@ -16,7 +16,7 @@ When AWS WAF allows a web request to proceed to your protected resource, the ent
 
 **Component inspection size limits**
 The component inspection size limits are as follows:
-+ **`Body` and `JSON Body`** – For Application Load Balancer and AWS AppSync, AWS WAF can inspect the first 8 KB of the body of a request. For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway, by default, AWS WAF can inspect the first 16 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
++ **`Body` and `JSON Body`** – For AWS AppSync, AWS WAF can inspect the first 8 KB of the body of a request. For Application Load Balancer, by default, AWS WAF can inspect the first 8 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, and Elastic Load Balancing for Envoy, by default, AWS WAF can inspect the first 16 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 + **`Headers`** – AWS WAF can inspect at most the first 8 KB (8,192 bytes) of the request headers and at most the first 200 headers. The content is available for inspection by AWS WAF up to the first limit reached.
 
   These limits apply when you inspect all headers in a request. When you inspect a single header, AWS WAF can inspect the full contents of that header without these size or count restrictions.
@@ -65,7 +65,7 @@ You can add a rule in your protection pack (web ACL) that blocks requests with o
 
    1. For **Match type**, choose **Size greater than**.
 
-   1. For **Size**, type a number that's at least the minimum size for the component type. For headers and cookies, type `8192`. In Application Load Balancer or AWS AppSync protection packs (web ACLs), for bodies, type `8192`. For bodies in CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, or Amazon Bedrock AgentCore Gateway protection packs (web ACLs), if you're using the default body size limit, type `16384`. Otherwise, type the body size limit that you've defined for your protection pack (web ACL).
+   1. For **Size**, type a number that's at least the minimum size for the component type. For headers and cookies, type `8192`. In AWS AppSync protection packs (web ACLs), for bodies, type `8192`. For bodies in Application Load Balancer protection packs (web ACLs), if you're using the default body size limit, type `8192`. For bodies in CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, or Elastic Load Balancing for Envoy protection packs (web ACLs), if you're using the default body size limit, type `16384`. Otherwise, type the body size limit that you've defined for your protection pack (web ACL).
 
    1. For **Oversize handling**, select **Match**.
 

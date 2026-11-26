@@ -57,20 +57,6 @@ The following APIs in the Amazon GuardDuty API Reference may have regional diffe
 + [GetMemberDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMemberDetectors.html)
 + [DescribeOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeOrganizationConfiguration.html)
 
-**Amazon EC2 finding types – [DefenseEvasion:EC2/UnusualDoHActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unsualdohactivity) and [DefenseEvasion:EC2/UnusualDoTActivity](guardduty_finding-types-ec2.md#defenseevasion-ec2-unusualdotactivity)**
-The following table shows the AWS Regions where GuardDuty is available but these two Amazon EC2 finding types are not yet supported.
-
-<table>
-<thead>
-  <tr><th>AWS Region</th><th>Region code</th></tr>
-</thead>
-<tbody>
-  <tr><td>Asia Pacific (Seoul)</td><td>ap-northeast-2</td></tr>
-  <tr><td>Asia Pacific (Osaka)</td><td>ap-northeast-3</td></tr>
-  <tr><td>Asia Pacific (Jakarta)</td><td>ap-southeast-3</td></tr>
-</tbody>
-</table>
-
 **AWS GovCloud (US) Regions**
 For latest information, see [Amazon GuardDuty](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-guardduty.html) in the *AWS GovCloud (US) User Guide*.
 

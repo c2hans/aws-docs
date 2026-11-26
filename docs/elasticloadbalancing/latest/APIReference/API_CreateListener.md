@@ -48,7 +48,7 @@ Type: String
 Required: Yes
 
  ** MutualAuthentication **
-[HTTPS listeners] The mutual authentication configuration information.
+[HTTPS and TLS listeners] The mutual authentication configuration information.
 Type: [MutualAuthenticationAttributes](API_MutualAuthenticationAttributes.md) object
 Required: No
 

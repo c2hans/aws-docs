@@ -19,14 +19,16 @@ AWS Sign-In supports sign-in sessions for the AWS CLI, agentic tools, and other 
 **Note**
 Extended sign-in sessions are not supported for AWS Management Console sessions. Console sessions continue to follow their existing session duration settings.
 
-## Configure sign-in session duration
+## Configure sign-in duration
 <a name="oauth-sign-in-session-configure-duration"></a>
+
+When a user authenticates through AWS Sign-In using OAuth, AWS establishes a sign-in session that represents the user's authenticated access and enables applications to obtain short-lived credentials without requiring repeated sign-ins. Sign-in duration is a configurable AWS Identity and Access Management (IAM) setting that determines how long this session can remain active.
 
 Administrators can configure the maximum sign-in session duration for individual IAM roles and users. The default session duration is 12 hours, and the maximum configurable duration is 90 days.
 
 Configuring durations at the principal level allows organizations to provide longer sessions to users and roles that require extended access, while maintaining shorter sessions for other workloads.
 
-### Configure session duration for an IAM role
+### Configure sign-in duration for an IAM role
 <a name="oauth-sign-in-session-configure-duration-role"></a>
 
 1. Sign in to the AWS Management Console and open the IAM console.
@@ -43,7 +45,7 @@ Configuring durations at the principal level allows organizations to provide lon
 
 The configured duration applies to new sign-in sessions established using the role. For more information about configuring role settings, see [Updating role settings](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-role-settings.html) in the *AWS Identity and Access Management User Guide*.
 
-### Configure session duration for an IAM user
+### Configure sign-in duration for an IAM user
 <a name="oauth-sign-in-session-configure-duration-user"></a>
 
 1. Open the IAM console.

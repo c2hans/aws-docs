@@ -23,4 +23,7 @@ You can create customer managed permissions that include any combination of thes
 
 You can also add conditions to a customer managed permission. For example, add X.509 certificate condition keys to the `IssueCertificate` statement to restrict the certificates that principals in other accounts can request. Customer managed permissions support only `Allow` statements. For more information, see [Control certificate issuance with X.509 certificate condition keys](certguard-condition-keys.md).
 
+**Note**
+Customer managed permissions for a private CA don't yet support X.509 certificate condition keys (`acm-pca:x509*`). Support is coming soon. Until then, AWS RAM rejects a permission that uses these keys with an error that says the condition key does not exist in the service `acm-pca`. To restrict the certificates that principals in other accounts can request from a shared CA, use a resource control policy (RCP) in the organization that owns the CA. RCPs don't apply to a CA in the organization's management account. The accounts that request certificates can also limit their own requests with identity-based policies or service control policies (SCPs). For more information, see [Supported policy types](certguard-policy-types.md).
+
 For more information about creating customer managed permissions, see [Creating customer managed permissions](https://docs.aws.amazon.com/ram/latest/userguide/create-customer-managed-permissions.html) in the *AWS RAM User Guide*.

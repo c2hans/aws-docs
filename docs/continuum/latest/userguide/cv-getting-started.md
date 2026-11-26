@@ -6,11 +6,11 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/cv-getting-st
 
 AWS Continuum scans your code sources for security vulnerabilities.
 
-Before you connect a code source, check that your repositories contain supported source files outside the excluded folders. See [Supported languages and source files](cv-supported-languages.md).
+Before you connect a code source, check that your repositories contain supported source files outside the excluded folders. For more information, see [Supported languages and source files](cv-supported-languages.md).
 
 To start using AWS Continuum for code vulnerabilities, use a GitHub, GitLab, or Amazon S3 integration. If you don't have an integration, create one. Then create an environment that uses the integration.
 
-By default, you can add up to 10 code repositories to an environment across all of its integrations. Integrations and environments are subject to additional quotas. For more information about quotas and requesting an increase, see [Quotas for AWS Continuum](quotas.md).
+By default, you can add up to 10 code repositories to an environment across all of its integrations. Integrations and environments are subject to additional quotas. For more information about quotas and requesting an increase, see [AWS Continuum quotas](quotas.md).
 
 ## Connecting a code source
 <a name="cv-getting-started-enable"></a>
@@ -29,7 +29,7 @@ To scan code hosted in GitHub, connect a GitHub integration. Then create an envi
 
 Use a GitHub account that can install the GitHub app, or request approval from an organization owner.
 
-To configure a GitHub integration, do the following:
+**To configure a GitHub integration**
 
 1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/).
 
@@ -45,8 +45,6 @@ To configure a GitHub integration, do the following:
 
 1. If you selected **Organization**, enter the GitHub organization name for **Organization name**.
 
-To install the GitHub app and authorize the integration, continue in the same form:
-
 1. If the GitHub app is not installed, choose **Install GitHub app**. Install the app in the account that you selected.
 
 1. If GitHub requires organization approval, wait for an owner to approve the installation.
@@ -59,7 +57,7 @@ To install the GitHub app and authorize the integration, continue in the same fo
 
 1. Return to the AWS Continuum console.
 
-If the console still shows **Waiting for GitHub** after you authorize, choose **Cancel authorization**. Start authorization again.
+1. If the console still shows **Waiting for GitHub** after you authorize, choose **Cancel authorization**. Start authorization again.
 
 After you create the integration, the console opens **Create environment**. Continue to [Creating an environment](#cv-getting-started-s3-environment).
 
@@ -71,10 +69,10 @@ To scan code hosted in GitLab, connect a GitLab integration. Then create an envi
 A GitLab integration authenticates with a GitLab access token. You can use a personal, group, or project access token for a GitLab group or project. AWS Continuum validates the token when you create the integration. If the token can't access the group or project that you specify, AWS Continuum doesn't create the integration.
 
 **Important**
-AWS Continuum works only with GitLab groups and projects whose visibility is **Private**. Internal and public projects are not supported.
+AWS Continuum works only with GitLab groups and projects whose visibility is **Private**. It doesn't support internal or public projects.
 Create a dedicated access token for this integration, and don't reuse it with other tools. If the token has the `self_rotate` scope, AWS Continuum rotates it automatically with a 90-day lifetime. Otherwise, replace the token before it expires. For more information about securing GitLab integrations, see [Security for GitLab integrations in AWS Continuum](gitlab-integration-security.md).
 
-To configure a GitLab integration, do the following:
+**To configure a GitLab integration**
 
 1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/).
 
@@ -92,7 +90,7 @@ To configure a GitLab integration, do the following:
 
 1. For **What this integration reads**, choose **Group** to read every project in a group, including subgroups. Choose **Project** to read a single project. You can't change this choice after you create the integration.
 
-1. For **Group path** or **Project path**, enter the full path as it appears in the GitLab URL, such as `my-company/platform` or `my-company/platform/checkout`.
+1. For **Group path** or **Project path**, enter the full path as it appears in the GitLab URL, such as `anycompany/platform` or `anycompany/platform/checkout`.
 
 After you create the integration, the console opens **Create environment**. Continue to [Creating an environment](#cv-getting-started-s3-environment).
 
@@ -101,7 +99,7 @@ After you create the integration, the console opens **Create environment**. Cont
 
 To scan only one GitLab project, use a project integration, or use a group integration and select only that project in the environment.
 
-To use a project integration, do the following:
+**To use a project integration**
 
 1. When you create the integration, for **What this integration reads**, choose **Project**.
 
@@ -109,13 +107,13 @@ To use a project integration, do the following:
 
 The integration reads only that project.
 
-To use a group integration, do the following:
+**To use a group integration**
 
 1. When you create the environment, for **Integration**, select the group integration.
 
 1. For **Projects**, enter only the project's path, such as `group/project`. The project must be in the integration's group or one of its subgroups.
 
-In the API, a project integration is a `CreateIntegration` request whose `gitlab` configuration sets `targetType` to `PROJECT` and `targetPath` to the project's full path. In `CreateEnvironment`, each entry in `repositorySources` selects one project: its `repository` value is the project's full path.
+In the API, a project integration is a `CreateIntegration` request whose `gitlab` configuration sets `targetType` to `PROJECT` and `targetPath` to the project's full path. In `CreateEnvironment`, each entry in `repositorySources` selects one project. Its `repository` value is the project's full path.
 
 ## Getting started through Amazon S3
 <a name="cv-getting-started-s3"></a>
@@ -126,7 +124,7 @@ In the following example, replace {{amzn-s3-demo-bucket}} with your bucket name.
 
 The example source URI is `s3://{{amzn-s3-demo-bucket}}/code/{{my-app.zip}}`. Its object key is `code/{{my-app.zip}}`. The corresponding **Source code base path** value is `code/`.
 
-To prepare an Amazon S3 source, do the following:
+**To prepare an Amazon S3 source**
 
 1. Create an Amazon S3 bucket in the same account and AWS Region where you enable AWS Continuum.
 
@@ -149,7 +147,7 @@ In addition to the read permissions for the console, the IAM principal that crea
 
 Restrict `iam:PassRole` to the integration role. Use the `iam:PassedToService` condition key with the value `continuum.amazonaws.com`.
 
-For information about permissions required to create an integration in the console, see [Using the AWS Continuum console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
+For information about permissions required to create an integration in the console, see [Allowing users to access the AWS Continuum console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
 
 Save the following JSON permissions policy as `integration-permissions.json`. Use it to let AWS Continuum list the bucket and read source objects and versions under your code and context prefixes. It also grants AWS Continuum permission to upload and read patches under `continuum-patches/`.
 
@@ -157,7 +155,7 @@ Grant `s3:ListBucket` without a condition. AWS Continuum uses this permission to
 
 Use each configured prefix exactly, including any trailing slash. If you omit these values, the defaults are `code/` and `context/`, respectively. Your source files can be stored under other prefixes, but the policy must grant access to those prefixes.
 
-Replace {{bucket-name}} with the bucket used by your integration. Replace {{code-prefix}} with the **Source code base path** value. Replace {{context-prefix}} with the **Knowledge documents base path** value.
+Replace {{bucket-name}} with the bucket used by your integration. Replace {{code-prefix}} with the **Source code base path** value. Replace {{context-prefix}} with the **Knowledge documents base path** value:
 
 ```json
 {
@@ -197,7 +195,7 @@ Replace {{bucket-name}} with the bucket used by your integration. Replace {{code
 }
 ```
 
-Use the following trust policy so that the AWS Continuum service principal, `continuum.amazonaws.com`, can assume the role with an external ID. Replace {{external-id}} with the external ID that you enter when creating the integration. Save the policy as `trust-policy.json`.
+Use the following trust policy so that the AWS Continuum service principal, `continuum.amazonaws.com`, can assume the role with an external ID. Replace {{external-id}} with the external ID that you enter when creating the integration. Save the policy as `trust-policy.json`:
 
 ```json
 {
@@ -229,7 +227,7 @@ If a command fails, resolve the error before continuing. If `create-role` return
 1. Create the role with the required path.
 
    ```bash
-   aws iam create-role \
+   PROMPT> aws iam create-role \
        --role-name ContinuumIntegrationRole \
        --path /continuum/integrations/ \
        --assume-role-policy-document file://trust-policy.json
@@ -240,7 +238,7 @@ If a command fails, resolve the error before continuing. If `create-role` return
 1. Attach the bucket permissions as an inline policy.
 
    ```bash
-   aws iam put-role-policy \
+   PROMPT> aws iam put-role-policy \
        --role-name ContinuumIntegrationRole \
        --policy-name ContinuumIntegrationAccess \
        --policy-document file://integration-permissions.json
@@ -251,7 +249,7 @@ If a command fails, resolve the error before continuing. If `create-role` return
 1. Verify that the role's Amazon Resource Name (ARN) includes `role/continuum/integrations/`.
 
    ```bash
-   aws iam get-role \
+   PROMPT> aws iam get-role \
        --role-name ContinuumIntegrationRole \
        --query 'Role.Arn' \
        --output text
@@ -278,6 +276,8 @@ For more information about external IDs, see [Access to AWS accounts owned by th
 
 After you prepare the bucket and IAM role, create an Amazon S3 integration. The integration connects the bucket and role so that an environment can access your code.
 
+**To configure an Amazon S3 integration**
+
 1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/).
 
 1. Under **Code vulnerabilities**, choose **Integrations**.
@@ -288,11 +288,9 @@ After you prepare the bucket and IAM role, create an Amazon S3 integration. The 
 
 1. For **Name**, enter an integration name.
 
-1. For **S3 bucket**, use one of the following options:
-   + To select a bucket, choose **Browse S3**. Select your bucket.
+1. For **S3 bucket**, choose how to specify the bucket. Do one of the following:
+   + To navigate to a bucket, choose **Browse S3**. Select your bucket.
    + To enter an ARN, choose **Enter bucket ARN manually**. For **Bucket ARN**, enter the bucket ARN.
-
-To grant access and create the integration, continue in the same form:
 
 1. For **IAM role ARN**, select the role that you created.
 
@@ -313,15 +311,15 @@ After you create a GitHub, GitLab, or Amazon S3 integration, the console opens *
 
 If you already have an integration, use these steps to open **Create environment**:
 
+**To create an environment**
+
 1. Open the AWS Continuum console at [https://console.aws.amazon.com/continuum/](https://console.aws.amazon.com/continuum/).
 
 1. In the navigation pane, choose **Environments**.
 
 1. Choose **Create environment**.
 
-Keep **Automatically deliver remediation patches** selected to deliver patches to your code source. AWS Continuum uploads patches to your Amazon S3 bucket, opens pull requests in your GitHub repositories, or opens merge requests in your GitLab projects.
-
-To configure the environment, continue in the same form:
+1. To deliver patches to your code source, keep **Automatically deliver remediation patches** selected. AWS Continuum uploads patches to your Amazon S3 bucket, opens pull requests in your GitHub repositories, or opens merge requests in your GitLab projects.
 
 1. For **Environment name**, enter a name.
 
@@ -338,8 +336,6 @@ To configure the environment, continue in the same form:
    1. If you selected an Amazon S3 integration, for **Source code base path**, enter the prefix where you uploaded your code. The default is `code/`.
 
    1. If you selected an Amazon S3 integration and uploaded custom context, enter its prefix in **Knowledge documents base path**. The default is `context/`.
-
-To set the scan frequency and create the environment, continue in the same form:
 
 1. Expand **Scan schedule**.
 
@@ -362,7 +358,7 @@ To set the scan frequency and create the environment, continue in the same form:
 
 After you create the environment, the console opens **Environments**. Creating the environment starts the first build and scan. The selected scan frequency applies to subsequent scans.
 
-To follow the first scan, do the following:
+**To follow the first scan**
 
 1. On the **Environments** page, find the **Created {{environment-name}}** notification. Choose **View environment details**.
 
@@ -372,7 +368,7 @@ To follow the first scan, do the following:
 
 1. Review the **Status** column for the first scan. Refresh the results to check for updates.
 
-When a scan completes successfully, its **Status** changes to **Succeeded**. AWS Continuum may continue processing findings into issues and generating patches after the scan completes.
+When a scan completes successfully, its **Status** changes to **Succeeded**. AWS Continuum might continue processing findings into issues and generating patches after the scan completes.
 
 To follow this processing, choose the **Findings** or **Issues** tab and refresh the results. Open an issue to review its processing status and any available patches.
 

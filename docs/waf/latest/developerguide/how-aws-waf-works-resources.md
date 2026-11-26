@@ -21,6 +21,7 @@ You can protect regional resources in all Regions where AWS WAF is available. Yo
 You can use AWS WAF to protect the following regional resource types:
 + Amazon API Gateway REST API
 + Application Load Balancer
++ Elastic Load Balancing for Envoy proxy
 + AWS AppSync GraphQL API
 + Amazon Cognito user pool
 + AWS App Runner service

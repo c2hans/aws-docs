@@ -29,7 +29,7 @@ If you created Topics before the multi-dataset Topics feature launched, your exi
 ## Migrating from legacy Topics
 <a name="legacy-topics-migration"></a>
 
-You can migrate your business context from legacy Topics into enriched datasets using Dataset Enrichment in the new data preparation experience. This moves column descriptions, synonyms, calculated fields, named entities, filters, and custom instructions from the separate legacy Topic object into the dataset itself.
+You can migrate your business context from legacy Topics into enriched datasets using Dataset Enrichment in the data preparation experience. This moves column descriptions, synonyms, calculated fields, named entities, filters, and custom instructions from the separate legacy Topic object into the dataset itself.
 
 After migrating your dataset-intrinsic metadata into Dataset Enrichment, you can create a new multi-dataset Topic that uses the enriched datasets with defined relationships.
 

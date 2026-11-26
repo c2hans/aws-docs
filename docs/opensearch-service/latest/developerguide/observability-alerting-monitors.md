@@ -76,7 +76,7 @@ source=application_logs | where status_code = 503 | stats count() by host
 ```
 
 **Note**
-PPL command and function support depends on the engine that backs your data source. For PPL syntax, see [PPL](https://docs.opensearch.org/latest/sql-and-ppl/ppl/index/) on the OpenSearch website.
+PPL command and function support depends on the engine that backs your data source. For PPL syntax, see [Piped Processing Language reference](https://observability.opensearch.org/docs/ppl/).
 
 ### Per-document monitors
 <a name="observability-alerting-monitors-per-document"></a>

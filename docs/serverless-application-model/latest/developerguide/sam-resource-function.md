@@ -332,7 +332,9 @@ If you set the `Role` property, this property is ignored.
 *CloudFormation compatibility*: This property is similar to the `[Policies](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies)` property of an `AWS::IAM::Role` resource.
 
  `PublishToLatestPublished`   <a name="sam-function-publishtolatestpublished"></a>
-Specifies whether to publish the latest function version when the function is updated.
+Specifies whether Lambda publishes function updates to the `$LATEST.PUBLISHED` version.
+Lambda applies this property only to functions that run on Lambda Managed Instances (functions that specify `CapacityProviderConfig`). AWS SAM passes it through to the function unchanged. If you don't specify this property, Lambda publishes updates to the `$LATEST.PUBLISHED` version. If you set it to `false`, updates apply to `$LATEST` only.
+For how the `$LATEST.PUBLISHED` version is created and updated, see [Run functions on Lambda Managed Instances with AWS SAM](authoring-lambda-managed-instances.md).
 *Type*: Boolean
 *Required*: No
 *CloudFormation compatibility*: This property is passed directly to the `[PublishToLatestPublished](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-publishtolatestpublished)` property of an `AWS::Lambda::Function` resource.

@@ -45,7 +45,7 @@ Before you start, confirm that you have the following:
   + `connect:CreateIntegrationAssociation`, `connect:UpdateSecurityProfile`, `connect:AssociateSecurityProfiles` ([Associate the application with your Connect instance](#a2a-setup-external-step3) and [Configure the security profile for your Connect AI agent](#a2a-setup-external-step4))
   + `wisdom:CreateAIAgent`, `wisdom:UpdateAIAgent`, `wisdom:CreateAIAgentVersion` ([Add the external collaborator](#a2a-setup-external-step5) and [Publish the updated configuration](#a2a-setup-external-step7)). IAM actions for Connect AI agents use the `wisdom` service prefix.
 + **Security profile permissions.** Your Connect AI agent needs a security profile that allows the external agent's application. If you want the external agent to receive contact context, the security profile must also grant the **Access Contact Control Panel** permission. You configure both in [Configure the security profile for your Connect AI agent](#a2a-setup-external-step4).
-+ **An Amazon Lex V2 bot with the `AMAZON.QInConnectIntent`.** All agent-to-agent collaboration requires this bot, associated with your Connect Customer instance. For more information, see [Add the Amazon Lex bot to your Connect Customer instance](amazon-lex.md#lex-bot-add-to-connect) and [AMAZON.QInConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html) in the *Amazon Lex V2 Developer Guide*.
++ **For self-service, an Amazon Lex V2 bot with the `AMAZON.QInConnectIntent`.** The bot must be associated with your Connect Customer instance. For agent assistance, no Amazon Lex bot is needed. In the flow's [Connect assistant](connect-assistant-block.md) block, set the orchestrator as the Agent Assistance AI agent. For more information about the bot, see [Add the Amazon Lex bot to your Connect Customer instance](amazon-lex.md#lex-bot-add-to-connect) and [AMAZON.QInConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html) in the *Amazon Lex V2 Developer Guide*.
 
   For external collaborators, the bot locale settings depend on audio streaming:
   + **Audio streaming** (`audioStreamingEnabled` is `true`): The bot locale must use Amazon Nova Sonic speech-to-speech and contain a single `AMAZON.QInConnectIntent`. The bot does not perform speech-to-speech for the collaborator. Audio streams directly between Connect Customer and the external agent.
@@ -320,6 +320,15 @@ aws qconnect create-ai-agent-version \
 ```
 
 After you publish, new contacts that reach your Connect AI agent use the updated configuration with the external collaborator.
+
+## Use the orchestrator in the Connect assistant (agent assistance)
+<a name="a2a-setup-external-agent-assistance"></a>
+
+In your contact flow, before the [Transfer to queue](transfer-to-queue.md) block:
++ Add the [Set recording and analytics behavior](set-recording-behavior.md) block with Contact Lens real-time analytics for voice and chat.
++ Add the [Connect assistant](connect-assistant-block.md) block and set the Agent Assistance AI agent to the published orchestrator version (`AgentAssistanceAgentVersionArn`).
+
+When the contact reaches a human agent, the Connect assistant panel uses the orchestrator and its collaborators.
 
 ## Trace data requirements
 <a name="a2a-setup-external-trace"></a>

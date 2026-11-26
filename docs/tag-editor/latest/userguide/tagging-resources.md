@@ -9,6 +9,9 @@ After you [find resources](find-resources-to-tag.md) that you want to tag, you c
 **Important**
 Do not store personally identifiable information (PII) or other confidential or sensitive information in tags. We use tags to provide you with billing and administration services. Tags are not intended to be used for private or sensitive data.
 
+**Important**
+We don't recommend using Tag Editor to manage AWS CloudFormation stack tags. Tagging CloudFormation stacks from Tag Editor initiates a stack update and may cause unexpected tagging behavior, resulting in downtime or other issues. We recommend using CloudFormation to update stacks instead. For more information, see [Stack options](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html#configure-stack-options) in the *AWS CloudFormation User Guide*.
+
 **Other ways to manage your tags**
 This topic discusses tagging resources by using Tag Editor in the AWS Management Console. However, you can also manage the tags on your AWS resources by using the following tools:
 You can type or script commands at your shell prompt by using the [`resourcegroupstaggingapi` commands](https://docs.aws.amazon.com/cli/latest/reference/resourcegroupstaggingapi/index.html#cli-aws-resourcegroupstaggingapi) in the AWS Command Line Interface (AWS CLI).

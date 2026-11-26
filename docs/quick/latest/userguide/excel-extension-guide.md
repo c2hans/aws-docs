@@ -4,17 +4,16 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/excel-extension-g
 
 # AWS Quick Microsoft Excel extension
 
-The AWS Quick extension for Excel helps you work with data faster by automating data cleaning, analysis, and visualization tasks while integrating with your enterprise data sources.
+The AWS Quick extension for Excel helps you build models and workbooks faster. Quick works directly in your spreadsheet, pulls in data from your dashboards, knowledge bases, and connected tools, and helps you validate your numbers before you share them.
 
 You can search for AWS Quick in the Microsoft Excel app store or visit the [Quick for Excel Microsoft store page](https://marketplace.microsoft.com/en-us/product/WA200010611) to add the extension.
 
 Key capabilities include:
-+ **Data import and preparation:** Pull data from Quick dashboards, structured datasets, spaces, and uploaded files directly into your spreadsheet. Identify inconsistencies and clean data automatically, and apply formatting and templates based on your data and objectives.
-+ **Spreadsheet debugging:** Ask Quick to explain calculations behind cells or tables, debug and fix formula errors, and highlight anomalies and inconsistencies in your data.
-+ **Data analysis and insights:** Automatically analyze patterns and trends, create pivot tables and charts with natural language prompts, and perform sensitivity analysis and scenario planning.
-+ **Spreadsheet automation:** Apply filters, transformations, and conditional formatting using prompts, and generate appropriate templates based on your content and objectives.
-+ **Enterprise knowledge integration:** Choose an agent or a space to respond from and incorporate relevant information from your organization's knowledge into your spreadsheets. Integrate data from Quick dashboards, spaces, and knowledge bases.
-+ **External actions:** Perform actions in third-party applications using your configured [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) or apps directly from Excel.
++ **Build models and workbooks from your data:** Pull data from Quick dashboards, datasets, spaces, connected tools, and uploaded files into your workbook. Describe the model or report that you need, and Quick builds it with formulas, structure, and formatting. Quick applies templates, filters, formatting, and conditional formatting directly to your cells.
++ **Validate and debug:** Ask Quick to explain the logic behind any cell, formula, or table. Find and fix formula errors, inconsistencies, and anomalies, and review every change that Quick makes to your workbook.
++ **Run deep analysis:** Analyze trends, run sensitivity analysis, and plan scenarios using natural language. Create pivot tables and charts with a single prompt, and turn your analysis into a report that's ready to share.
++ **Use enterprise knowledge:** Choose an agent or a space to respond from, and bring relevant information from your organization's knowledge into your spreadsheets.
++ **Connect your work across tools:** Use your [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) to act on your workbook, such as updating forecasts in your planning system or filing a ticket for each budget variance. Pick up where you left off, such as using an Excel analysis to write a Word document or a PowerPoint deck.
 
 **Important**
 The AWS Quick Excel extension uses generative AI to create and execute code within your Excel application sandbox. AI can make mistakes and perform inaccurate actions within your Excel workbook. No spreadsheet data is read when the side panel is closed, and no data is sent to AWS Quick unless you explicitly send a prompt.
@@ -35,7 +34,7 @@ As a user, you are responsible for keeping company information safe. The followi
 ### Conversation retention and accuracy
 <a name="excel-conversation-retention"></a>
 
-Each conversation is stored for 30 days. You can review and manage your conversation history by choosing the conversation history button in the Excel extension.
+AWS Quick keeps each conversation for 365 days. It keeps conversations that you pin or move to a folder for 750 days. You can review and manage your conversation history by choosing the conversation history button in the Excel extension. For more information about retention periods, see [Usage limits](usage-limits.md).
 
 AWS Quick uses generative AI. You should review responses for accuracy.
 
@@ -52,9 +51,11 @@ To protect your organization's data, carefully evaluate usage and plan deploymen
 The following prompts demonstrate common ways to use Quick within Excel. You can adapt these to your specific needs.
 + "Import data from my Quick dashboard and identify which items are trending above or below target."
 + "Create a pivot table showing totals by category and region."
-+ "Generate a chart comparing this quarter's performance to last quarter."
++ "Build a 12-month revenue forecast model with assumptions on a separate sheet."
 + "Explain the formula in cell D5 and suggest a more efficient approach."
-+ "Apply conditional formatting to highlight any values that exceed the threshold by more than 10%."
++ "Find and fix any formula errors or inconsistencies in this sheet."
++ "Run a sensitivity analysis on gross margin if unit costs rise by 5%, 10%, and 15%."
++ "File a ticket for each budget line that's more than 10% over plan."
 
 **Tip**
 For best results, be specific in your prompts. Include names, dates, and goals. You can also reference your Quick spaces, dashboards, and knowledge bases for personalized results.

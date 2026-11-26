@@ -25,7 +25,7 @@ The number of decimal places to use for the return values.
 ## Return type
 <a name="round-function-return-type"></a>
 
-| Operand | Return type in the legacy data preparation experience | Return type in the new data preparation experience |
+| Operand | Return type in the legacy data preparation experience | Return type in the data preparation experience |
 | --- | --- | --- |
 | INT | DECIMAL(FIXED) | DECIMAL(FIXED) |
 | DECIMAL(FIXED) | DECIMAL(FIXED) | DECIMAL(FIXED) |

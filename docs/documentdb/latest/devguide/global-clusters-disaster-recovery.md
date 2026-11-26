@@ -10,6 +10,7 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 + [Performing a switchover for an Amazon DocumentDB global cluster](#global-cluster-switchover)
 + [Unblocking a global cluster switchover or failover](#unblocking-gc-so-fo)
 + [Managing RPOs for Amazon DocumentDB global clusters](#global-clusters-manage-recovery)
++ [Using ARC Region switch with global clusters](#global-clusters-arc-region-switch)
 
 By using a global cluster, you can recover from disasters such as Region failures quickly. Recovery from disaster is typically measured using values for RTO and RPO.
 + **Recovery time objective (RTO)** — The time it takes a system to return to a working state after a disaster. In other words, RTO measures downtime. For a global cluster, RTO in minutes.
@@ -689,3 +690,16 @@ aws docdb reset-db-cluster-parameter-group ^
  To reset the `global_db_rpo` parameter, use the [ResetDBClusterParameterGroup](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_ResetDBClusterParameterGroup.html) API operation.
 
 ------
+
+## Using ARC Region switch with global clusters
+<a name="global-clusters-arc-region-switch"></a>
+
+You can use Region switch in Amazon Application Recovery Controller (ARC) to recover an app that runs in more than one AWS Region. You build a plan with the steps to run in a recovery. One of those steps can fail over or switch over your Amazon DocumentDB global cluster. A plan can span AWS accounts and Regions. Region switch shows the recovery as it runs. It also makes reports that you can use for compliance.
+
+The step for Amazon DocumentDB global clusters has two modes:
++ **Switchover** — Use this for planned work when all clusters are healthy. No data is lost.
++ **Failover** — Use this for an outage you did not plan. Some data might be lost.
+
+After either mode runs, the endpoint that you write to changes. Make sure that your app uses the new endpoint.
+
+For more information about configuring Region switch for global clusters, see [Amazon DocumentDB Global Cluster execution block](https://docs.aws.amazon.com/r53recovery/latest/dg/documentdb-global-cluster-block.html) in the *Amazon Application Recovery Controller (ARC) Developer Guide*.

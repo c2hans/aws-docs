@@ -51,7 +51,7 @@ aws eks create-access-entry --cluster-name <cluster-name> --principal-arn <iam-i
 Replace:
 +  `<cluster-name>` with your EKS cluster name
 +  `<iam-identity-arn>` with the ARN of the IAM user or role
-+  `<groups>` with a comma-separated list of Kubernetes groups (e.g., "system:developers,system:readers")
++  `<groups>` with a space-separated list of Kubernetes group names, such as `my-viewers my-developers`. A group name can’t start with `system:`, `eks:`, `aws:`, `amazon:`, or `iam:`.
 
  [View the CLI reference for all configuration options](https://docs.aws.amazon.com/cli/latest/reference/eks/create-access-entry.html).
 
@@ -63,6 +63,34 @@ For the IAM principal to have access to Kubernetes objects on your cluster, you 
 1. Create Kubernetes `Role` or `ClusterRole` objects that define the permissions.
 
 1. Create Kubernetes `RoleBinding` or `ClusterRoleBinding` objects on your cluster that specify the group name as a `subject` for `kind: Group`.
+
+The following example grants the `my-viewers` group read access to Pods in the `default` namespace. Use the same group name that you passed to `--kubernetes-groups` in the previous step.
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: pod-reader
+  namespace: default
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: my-viewers-pod-reader
+  namespace: default
+subjects:
+- kind: Group
+  name: my-viewers
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+```
 
 For detailed information about configuring groups and permissions in Kubernetes, see [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) in the Kubernetes documentation.
 

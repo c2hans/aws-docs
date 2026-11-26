@@ -41,3 +41,4 @@ For more information, see the following related resources:
 + [Amazon OpenSearch Memory API Reference](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/Welcome.html)
 + [AWS CLI commands for Amazon OpenSearch Memory](https://docs.aws.amazon.com/cli/latest/reference/opensearchmemory/)
 + [SDKs & Tools](https://aws.amazon.com/tools/)
++ [amazon-opensearch-memory skill](amazon-opensearch-memory-skill.md) for AI coding agents

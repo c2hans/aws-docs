@@ -52,7 +52,7 @@ Required: No
  ** [associationTypes](#API_channel_ListRelationships_RequestSyntax) **   <a name="AWSPartnerCentral-channel_ListRelationships-request-associationTypes"></a>
 Filter by association types.
 Type: Array of strings
-Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL`
+Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL | MANAGED_SERVICES_END_CUSTOMER`
 Required: No
 
  ** [displayNames](#API_channel_ListRelationships_RequestSyntax) **   <a name="AWSPartnerCentral-channel_ListRelationships-request-displayNames"></a>

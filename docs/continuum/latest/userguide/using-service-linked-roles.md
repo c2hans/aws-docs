@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/using-service
 
 AWS Continuum uses AWS Identity and Access Management (IAM) [service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to AWS Continuum. Service-linked roles are predefined by AWS Continuum and include all the permissions that the service requires to call other AWS services on your behalf.
 
-A service-linked role makes setting up AWS Continuum easier because you don't have to manually add the necessary permissions. AWS Continuum defines the permissions of its service-linked roles, and unless defined otherwise, only AWS Continuum can assume its roles. The defined permissions include the trust policy and the permissions policy, and that permissions policy can't be attached to any other IAM entity.
+A service-linked role makes setting up AWS Continuum easier because you don't need to manually add the necessary permissions. AWS Continuum defines the permissions of its service-linked roles, and unless defined otherwise, only AWS Continuum can assume its roles. The defined permissions include the trust policy and the permissions policy, and that permissions policy can't be attached to any other IAM entity.
 
 You can delete a service-linked role only after first deleting its related resources. This protects your AWS Continuum resources because you can't inadvertently remove permission to access the resources.
 
@@ -24,7 +24,7 @@ For information about other services that support service-linked roles, see [AWS
 AWS Continuum uses the service-linked role named `AWSServiceRoleForContinuumCollector`. This role allows AWS Continuum to collect resource information and security findings and validate network reachability. The role trusts the `collector.continuum.amazonaws.com` service to assume the role.
 
 **Important**
-Network Insights creation requests must include the `AWSContinuum=true` tag and may specify only the `AWSContinuum` tag key. Tagging is permitted only during path or analysis creation. The role can start analyses only on paths with this tag and delete only paths and analyses with this tag. These create, start, tag, and delete permissions require the resource account to match the calling principal's account.
+Network Insights creation requests must include the `AWSContinuum=true` tag and can specify only the `AWSContinuum` tag key. Tagging is permitted only during path or analysis creation. The role can start analyses only on paths with this tag and delete only paths and analyses with this tag. These create, start, tag, and delete permissions require the resource account to match the calling principal's account.
 
 The permissions policy for the role, named `AWSContinuumCollectorServiceRolePolicy`, allows AWS Continuum to perform the following tasks. Network Insights paths and analyses and Tiros reachability queries help AWS Continuum validate network reachability.
 + **Lambda** – Retrieve function information, policies, aliases, versions, and function URL configurations. Retrieve layer versions, their policies, and event source mappings.
@@ -44,12 +44,12 @@ The permissions policy for the role, named `AWSContinuumCollectorServiceRolePoli
 + **Amazon S3** – Retrieve account-level public access block settings and bucket ACLs, locations, policy status, and public access block settings.
 
 **Note**
-If you monitor API calls, you might see calls to Tiros APIs. Tiros is a service that is only accessible by AWS services and that surfaces network reachability findings to Reachability Analyzer. Calls to the Tiros endpoint are required for Reachability Analyzer to function. To access Reachability Analyzer, users must also have the same API permissions.
+If you monitor API calls, you might see calls to Tiros APIs. Tiros is a service that is only accessible by AWS services and that surfaces network reachability findings to Reachability Analyzer. Calls to the Tiros endpoint are required for Reachability Analyzer to function. To access Reachability Analyzer, you must also have the same API permissions.
 
 ### Permissions policy
 <a name="continuum-collector-permissions-policy"></a>
 
-The role is configured with the following permissions policy.
+The role is configured with the following permissions policy:
 
 ```json
 {
@@ -349,14 +349,12 @@ You must configure permissions to allow your users, groups, or roles to create, 
 ## Creating a service-linked role for AWS Continuum
 <a name="create-slr"></a>
 
-You can use the IAM console, the AWS CLI, or the AWS API to create `AWSServiceRoleForContinuumCollector`. In the AWS CLI or the AWS API, specify `collector.continuum.amazonaws.com` as the service name.
-
-For instructions, see [Creating a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#create-service-linked-role) in the *IAM User Guide*.
+You can use the IAM console, the AWS CLI, or the AWS API to create `AWSServiceRoleForContinuumCollector`. In the AWS CLI or the AWS API, specify `collector.continuum.amazonaws.com` as the service name. For instructions, see [Creating a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#create-service-linked-role) in the *IAM User Guide*.
 
 ## Editing a service-linked role for AWS Continuum
 <a name="edit-slr"></a>
 
-AWS Continuum does not allow you to edit the `AWSServiceRoleForContinuumCollector` service-linked role. After you create a service-linked role, you can't change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
+You can't edit the `AWSServiceRoleForContinuumCollector` service-linked role for AWS Continuum. After you create a service-linked role, you can't change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
 
 ## Deleting a service-linked role for AWS Continuum
 <a name="delete-slr"></a>

@@ -42,6 +42,7 @@ Below are the release notes for X86 Base DLAMI:
 Below are the release notes for ARM64 Base DLAMI:
 
 ** **GPU** **
++ [ARM64 Base AMI with Single CUDA and 64k Kernel (Ubuntu 26.04)](aws-deep-learning-arm64-base-with-single-cuda-and-64k-kernel-ami-ubuntu-26-04.md)
 + [ARM64 Base AMI with Single CUDA (Amazon Linux 2023)](aws-deep-learning-arm64-base-with-single-cuda-ami-amazon-linux-2023.md)
 + [ARM64 Base AMI with Single CUDA (Ubuntu 24.04)](aws-deep-learning-arm64-base-with-single-cuda-ami-ubuntu-24-04.md)
 + [ARM64 Base AMI with Single CUDA (Ubuntu 22.04)](aws-deep-learning-arm64-base-with-single-cuda-ami-ubuntu-22-04.md)

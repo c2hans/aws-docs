@@ -103,7 +103,7 @@ Users can access conversation history in Slack. Deleting the conversation in Sla
 ### Conversation retention policy and accuracy
 <a name="slack-conversation-retention"></a>
 
-AWS Quick automatically deletes conversations after 30 days of inactivity. Slack conversation retention follows your company's specific history rules, and Slack retention periods may exceed AWS Quick's 30-day limit.
+AWS Quick keeps each conversation for 365 days. It keeps conversations that you pin or move to a folder for 750 days. For more information about retention periods, see [Usage limits](usage-limits.md). Messages in Slack follow your company's Slack retention rules, which can differ from AWS Quick's retention periods.
 
 Users can access conversation history in Slack through the AI App History tab. Deleting the conversation in Slack will not delete from conversation history in AWS Quick. However, users need to visit the AWS Quick chat instance to manage their conversations.
 

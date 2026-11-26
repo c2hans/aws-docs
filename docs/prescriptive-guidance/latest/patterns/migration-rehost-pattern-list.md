@@ -15,7 +15,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Migrate an on-premises SFTP server to AWS using AWS Transfer for SFTP](migrate-an-on-premises-sftp-server-to-aws-using-aws-transfer-for-sftp.md)
 + [Migrate an on-premises VM to Amazon EC2 by using AWS Application Migration Service](migrate-an-on-premises-vm-to-amazon-ec2-by-using-aws-application-migration-service.md)
 + [Migrate small sets of data from on premises to Amazon S3 using AWS SFTP](migrate-small-sets-of-data-from-on-premises-to-amazon-s3-using-aws-sftp.md)
-+ [Migrate an on-premises Oracle database to Oracle on Amazon EC2](migrate-an-on-premises-oracle-database-to-oracle-on-amazon-ec2.md)
 + [Migrate an on-premises Oracle database to Amazon EC2 by using Oracle Data Pump](migrate-an-on-premises-oracle-database-to-amazon-ec2-by-using-oracle-data-pump.md)
 + [Migrate RHEL BYOL systems to AWS License-Included instances by using AWS MGN](migrate-rhel-byol-systems-to-aws-license-included-instances-by-using-aws-mgn.md)
 + [Migrate an on-premises Microsoft SQL Server database to Amazon EC2](migrate-an-on-premises-microsoft-sql-server-database-to-amazon-ec2.md)

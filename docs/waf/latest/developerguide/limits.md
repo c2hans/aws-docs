@@ -27,6 +27,7 @@ AWS WAF has default quotas on the maximum number of entities you can have per ac
 | Maximum number of token domains in a protection pack (web ACL) token domain list | 10 |
 | Maximum number of regex pattern sets  | 10 |
 | Maximum number of Application Load Balancer associations per protection pack (web ACL) | 100  |
+| Maximum number of Elastic Load Balancing for Envoy proxy associations per protection pack (web ACL) | 100 |
 | Maximum number of Amazon API Gateway REST API associations per protection pack (web ACL) | 100 |
 | Maximum number of Amazon Cognito user pool associations per protection pack (web ACL) | 100 |
 | Maximum number of AWS AppSync GraphQL API associations per protection pack (web ACL) | 100 |
@@ -53,9 +54,9 @@ AWS WAF has fixed quotas on the following entity settings per account per Region
 | Maximum number of characters in a string match statement | 200 |
 | Maximum number of characters in each regex pattern | 200 |
 | Maximum number of unique regex patterns per regex pattern set | 10 |
-| Maximum size of a web request body that can be inspected for Application Load Balancer and AWS AppSync protections | 8 KB |
+| Maximum size of a web request body that can be inspected for AWS AppSync protections | 8 KB |
 | Maximum size of a web request body that can be inspected for Amazon Bedrock AgentCore Gateway protections | 16 KB |
-| Maximum size of a web request body that can be inspected for CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway protections\*\* | 64 KB |
+| Maximum size of a web request body that can be inspected for Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, and Elastic Load Balancing for Envoy protections\*\* | 64 KB |
 | Maximum number of text transformations per rule statement | 10 |
 | Maximum size of the custom response body content for a single custom response definition | 4 KB |
 | Maximum number of custom headers for a single custom response definition | 10 |
@@ -65,7 +66,7 @@ AWS WAF has fixed quotas on the following entity settings per account per Region
 
 \*For information about WCUs, see [Web ACL capacity units (WCUs) in AWS WAF](aws-waf-capacity-units.md). For pricing details, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
 
-\*\*By default, the body inspection limit is set to 16 KB for CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway resources, but you can increase this for any of these resources in your protection pack (web ACL) configuration, up to the listed maximum. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
+\*\*By default, the body inspection limit is set to 8 KB for Application Load Balancer and to 16 KB for CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, and Elastic Load Balancing for Envoy resources, but you can increase this for any of these resources in your protection pack (web ACL) configuration, up to the listed maximum. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 
 AWS WAF has the following fixed quotas on calls per account per Region. These quotas apply to the total calls to the service through any available means, including the console, CLI, AWS CloudFormation, the REST API, and the SDKs. These quotas can't be changed.
 

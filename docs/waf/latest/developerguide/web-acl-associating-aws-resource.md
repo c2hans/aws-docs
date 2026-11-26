@@ -12,6 +12,7 @@ You can use AWS WAF to create the following associations between protection pack
 + Associate a regional protection pack (web ACL) with any of the regional resources listed below. For this option, the protection pack (web ACL) must be in the same region as your resource.
   + Amazon API Gateway REST API
   + Application Load Balancer
+  + Elastic Load Balancing for Envoy proxy
   + AWS AppSync GraphQL API
   + Amazon Cognito user pool
   + AWS App Runner service

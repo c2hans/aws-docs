@@ -7,25 +7,25 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/browser-extension
 **Important**
 The AWS Quick browser extension extension doesn't need any admin setup to install and use.
 
-The AWS Quick browser extension integrates AI-powered assistance directly into your web browsing experience. Users can access Quick capabilities within their browser to enhance productivity, streamline research, and get instant help without switching between applications.
+The AWS Quick browser extension helps you get answers about any web page without switching tabs. Quick understands the page you're viewing, grounds its answers in your organization's knowledge, and helps you act on the page in your connected apps.
 
 Key capabilities include:
-+ Summarize web pages for quick understanding.
-+ Ask questions about multiple web pages and access organizational knowledge from spaces.
-+ Use actions from [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) configured in Quick.
-+ Analyze files uploaded to Quick during browsing sessions.
-
-The AI-powered assistance enables you to maximize reading productivity, streamline research and analysis of complex information, and get instant help when creating content without context switching during web browsing.
++ **Understand any web page:** Ask questions about the page you're viewing or about several open tabs at once. Right-click any selection to get an explanation or to chat about it with Quick. Pull out key details, compare sources, and draft content from what you're reading.
++ **Reach your enterprise knowledge:** Type **@Quick** in your address bar or open Quick from your browser toolbar to ask anything. Get answers from your spaces, knowledge bases, dashboards, and connected apps, or switch to a specialized agent for curated responses.
++ **Curate your organization's knowledge:** Ask Quick to add a web page to a space so that your team can use it in future work.
++ **Connect your work across tools:** Use your [connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) to act on the page, such as updating a ticket's status or logging a prospect in your CRM. Run flows with the page as context, and turn your web research into a Word document or a PowerPoint deck.
++ **Get personalized responses:** Quick learns your preferences and writing style over time. For more information, see [Memory and response personalization](using-quick-chat.md#chat-memory).
 
 **Topics**
 + [Supported browsers](#browser-extension-supported-browsers)
 + [Browser extension benefits](#browser-extension-benefits)
 + [Browser extension use cases](#browser-extension-use-cases)
++ [Run AWS Quick Flows in the browser extension](#browser-extension-run-flows)
++ [Sample prompts](#browser-extension-sample-prompts)
 + [Install and configure the browser extension](#install-and-configure-browser)
 + [Deploy the browser extension in your organization](#deploy-browser-extension-organization)
 + [Browser extension usage guidelines](#browser-extensions-usage-guidelines)
 + [Browser extension known limitations](#browser-extension-known-limitations)
-+ [Using AWS Quick Flows in the browser extension](flows-in-browser-extension.md)
 
 ## Supported browsers
 <a name="browser-extension-supported-browsers"></a>
@@ -38,88 +38,133 @@ The Quick browser extension is compatible with the following browsers:
 ## Browser extension benefits
 <a name="browser-extension-benefits"></a>
 
-The Quick browser extension provides powerful AI-driven capabilities that transform how you interact with web content. These key benefits help you work more efficiently and make better use of information you encounter while browsing, bringing enterprise knowledge directly into your web research workflows without requiring application switching.
-
-**Embedded productivity features**
-+ Summarize a snapshot of any web page for quick understanding and analysis.
-+ Ask questions about one or more web pages using your organizational knowledge.
-+ Analyze both files you upload to Quick and specific spaces it can access.
-+ Execute actions from configured connectors without leaving your browser.
+The Quick browser extension brings your enterprise knowledge and connected apps into the browser, so you can work with web content without switching applications.
++ Ask questions about the page you're viewing or several open tabs, and compare information across sources.
++ Get an explanation of any text that you select on a page.
++ Get answers from your spaces, knowledge bases, dashboards, and connected apps from your address bar or browser toolbar.
++ Analyze files that you upload alongside the web pages in your conversation.
++ Add useful web pages to a space for your team.
++ Run flows and take actions in your connected apps using the page as context, without leaving your browser.
 
 ## Browser extension use cases
 <a name="browser-extension-use-cases"></a>
 
 The following are common use cases that help you make the best use of your Quick browser extension:
 
-**Summarize web pages**
+**Ask about the page you're viewing**
 
-Use this procedure to quickly understand web page content without reading the entire page.
+Use this procedure to summarize a web page, pull out key details, or ask questions about it without reading the entire page.
 
-1. Open the Quick browser extension.
+1. Navigate to the web page that you want to ask about.
 
-1. Log in and navigate to the web page you want to summarize.
+1. Open the Quick browser extension and sign in.
 
-1. From the chat interface, select **Summarize** for a summary of a snapshot of that web page.
+1. In the chat window, enter your request, such as **Summarize this page**.
 
-Your conversation now contains a snapshot of this web page. You can continue to chat about the web page and ask follow-up questions.
+You can continue to chat about the web page and ask follow-up questions.
 
-**Add individual pages to your conversation scope**
+**Add tabs to a conversation**
 
-Use this procedure to include multiple web pages in your conversation context for comprehensive analysis.
+Use this procedure to include several open tabs in your conversation so that you can analyze and compare information across web pages.
 
-1. Navigate to the web page you want to add to your conversation.
+1. In the chat window, choose the **\+** button, and then choose **Add tabs**.
 
-1. Select the **\+** icon to add the page to your scope.
+1. Choose the tabs that you want to include in your Quick conversation.
 
-1. Navigate from tab to tab and select the **\+** icon for each page you want to chat about.
+You can now chat about all of the tabs that you added to the conversation.
 
-1. You can now chat about all the pages you've added to your scope.
+**Ask about a selection on a page**
 
-This allows you to analyze and compare information across multiple web pages in a single conversation.
+Use this procedure to get an explanation of specific text on a web page.
+
+1. On the web page, select the text that you want to ask about.
+
+1. Right-click the selection, and then choose the Quick option to get an explanation or to chat about the selection.
+
+**Ask Quick from your address bar**
+
+Use this procedure to ask a question of your enterprise knowledge from any tab.
+
+1. In your browser's address bar, enter **@Quick** followed by your question.
+
+1. Press **Enter**.
+
+Quick answers from your spaces, knowledge bases, dashboards, and connected apps. You can also open Quick from your browser toolbar to ask a question.
+
+**Add a web page to a space**
+
+Use this procedure to save a web page to a space so that your team can use it in future work.
+
+1. Navigate to the web page that you want to add.
+
+1. In the chat window, ask Quick to add the page to a space, such as **Add this page to my [space name] space**.
 
 **Add files to a conversation**
 
 Upload files to enhance your conversation with document analysis capabilities.
 
-1. Select the **paperclip** icon.
+1. Choose the **paperclip** icon.
 
-1. Select the files to add to the conversation.
+1. Choose the files to add to the conversation.
 
-1. Select **Add to chat**.
+1. Choose **Add to chat**.
 
 The files are now available to use in the Quick conversation.
-
-**Add webpages as context to a conversation**
-
-Include multiple browser tabs in your conversation for comprehensive web content analysis.
-
-1. Select **No tabs selected**.
-
-1. From **Add tabs**, choose the tabs you want to include in your Quick conversation.
-
-1. Select **Confirm**.
-
-The tabs are now available in your Quick conversation.
 
 **Reset conversation context**
 
 Start fresh when you need to clear your current conversation context.
 
-1. Select the **\+ icon inside the bubble** to start a new conversation.
+1. Choose the **\+ icon inside the bubble** to start a new conversation.
 
-1. Alternatively, you can reset your conversation by selecting the **X** icon to end the current conversation and then open the Quick extension to start a new conversation.
+1. Alternatively, reset your conversation by choosing the **X** icon to end the current conversation, then open the Quick extension to start a new one.
 
 This clears all previous context and allows you to begin with a clean slate.
 
 **Use actions in chat**
 
-Execute external actions directly from your browser extension conversation.
+Take actions in your connected apps using the web page as context.
 
-1. Ask the chat to perform a specific action.
+1. Ask Quick to perform a specific action, such as **Update the status of this ticket to resolved** or **Log this prospect's details in our CRM**.
 
 1. Follow the prompts in the chat and on-screen to complete the action.
 
 This enables you to perform tasks in external applications without leaving your browser.
+
+## Run AWS Quick Flows in the browser extension
+<a name="browser-extension-run-flows"></a>
+
+You can run any flow that you created or that was shared with you directly from the browser extension chat. The flow can use the web pages in your conversation as context. You need permission to run flows in your AWS Quick account.
+
+**Run a flow**
+
+1. Open the Quick browser extension.
+
+1. (Optional) To include other open tabs as context, choose the **\+** button, choose **Add tabs**, and then choose the tabs.
+
+1. In the chat window, ask Quick to run the flow by name, such as **Run my account briefing flow for this customer**.
+
+1. When Quick prompts you for required inputs, provide them in the chat.
+
+While the flow runs, the extension shows a progress tracker with the completed and remaining steps, and displays the flow's outputs in the chat. To stop the flow, choose **End** in the progress tracker. You can then continue your conversation.
+
+Quick saves your flow runs in your conversation history. To view a past run or resume an incomplete flow, open your conversation history and choose the conversation that contains the flow run.
+
+For more information about flows, see the [flows documentation](https://docs.aws.amazon.com/quicksuite/latest/userguide/using-amazon-quick-flows.html).
+
+## Sample prompts
+<a name="browser-extension-sample-prompts"></a>
+
+The following prompts demonstrate common ways to use Quick in your browser. You can adapt these to your specific needs.
++ "Summarize this page and list the three most important points."
++ "Compare the pricing and features described in these tabs in a table."
++ "How does this article relate to our strategy in my [space name] space?"
++ "Draft a short email to my team summarizing this announcement."
++ "Add this page to my [space name] space."
++ "Log this prospect's company details as a new lead in our CRM."
+
+**Tip**
+For best results, be specific in your prompts. Include names, dates, and goals. You can also reference your Quick spaces, dashboards, and knowledge bases for personalized results.
 
 ## Install and configure the browser extension
 <a name="install-and-configure-browser"></a>
@@ -198,10 +243,7 @@ When using the Quick browser extension, users can review past conversations and 
 ### Conversation retention and data privacy
 <a name="conversation-retention-policy"></a>
 
-AWS Quick maintains strict data privacy through automated retention policies:
-+ AWS Quick automatically deletes conversations and related files after 30 days of inactivity.
-+ Browser extension conversation retention follows your company's specific history rules.
-+ Browser extension retention periods may exceed AWS Quick's standard 30-day limit based on organizational policies.
+AWS Quick keeps each conversation for 365 days. It keeps conversations that you pin or move to a folder for 750 days. You can review and manage your conversation history by choosing the conversation history button in the browser extension. For more information about retention periods, see [Usage limits](usage-limits.md).
 
 ## Browser extension known limitations
 <a name="browser-extension-known-limitations"></a>

@@ -23,4 +23,4 @@ For authentication of requests, Support uses [Signature Version 4 Signing Proces
 
 For more information about this service and the endpoints to use, see [About the AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html) in the * AWS Support User Guide*.
 
-This document was last published on November 24, 2026.
+This document was last published on November 26, 2026.

@@ -28,5 +28,6 @@ For information about setting up the add-on on clusters with Restricted Instance
 + [Customizing SageMaker HyperPod cluster metrics dashboards and alerts](hyperpod-observability-addon-customizing.md)
 + [Creating custom SageMaker HyperPod cluster metrics](hyperpod-observability-addon-custom-metrics.md)
 + [SageMaker HyperPod cluster metrics](hyperpod-observability-cluster-metrics.md)
++ [Monitoring NCCL communication in training jobs on SageMaker HyperPod clusters](hyperpod-observability-nccl-metrics.md)
 + [Preconfigured alerts](hyperpod-observability-addon-alerts.md)
 + [Troubleshooting the Amazon SageMaker HyperPod observability add-on](hyperpod-observability-addon-troubleshooting.md)

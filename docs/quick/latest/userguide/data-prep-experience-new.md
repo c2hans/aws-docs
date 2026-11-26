@@ -16,7 +16,7 @@ The platform emphasizes collaboration and reusability, enabling teams to share a
 + [Advanced workflow capabilities](advanced-workflow-capabilities.md)
 + [SPICE-only features](spice-only-features.md)
 + [Switching between data preparation experiences](switching-between-data-prep-experiences.md)
-+ [Features not supported in the new data preparation experience](unsupported-features.md)
++ [Expanded feature support in the data preparation experience](unsupported-features.md)
 + [Data preparation limits](data-preparation-limits.md)
 + [Ingestion behavior changes](ingestion-behavior-changes.md)
 + [Frequently asked questions](new-data-prep-faqs.md)

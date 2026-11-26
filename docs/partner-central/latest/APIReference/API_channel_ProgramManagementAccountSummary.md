@@ -54,7 +54,7 @@ Required: No
  ** program **   <a name="AWSPartnerCentral-Type-channel_ProgramManagementAccountSummary-program"></a>
 The program type for the management account.
 Type: String
-Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER`
+Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER | MANAGED_SERVICES_PROVIDER`
 Required: No
 
  ** revision **   <a name="AWSPartnerCentral-Type-channel_ProgramManagementAccountSummary-revision"></a>
@@ -73,6 +73,12 @@ Required: No
 The current status of the program management account.
 Type: String
 Valid Values: `PENDING | ACTIVE | INACTIVE`
+Required: No
+
+ ** type **   <a name="AWSPartnerCentral-Type-channel_ProgramManagementAccountSummary-type"></a>
+The type of the program management account.
+Type: String
+Valid Values: `RESALE_BILLING_TRANSFER | MANAGED_SERVICES`
 Required: No
 
  ** updatedAt **   <a name="AWSPartnerCentral-Type-channel_ProgramManagementAccountSummary-updatedAt"></a>

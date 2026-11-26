@@ -30,7 +30,9 @@ You are charged additional fees when you use this managed rule group. For more i
 
 This page describes Version\_1.0, which is the default and only version of this rule group.
 
-**Resource type support.** This rule group is supported for protection packs (web ACLs) that protect Amazon CloudFront distributions, Application Load Balancers, and Amazon API Gateway REST APIs. AWS WAF rejects a request to associate a protection pack (web ACL) that uses this rule group with any other resource type. These include AWS AppSync GraphQL APIs, Amazon Cognito user pools, AWS App Runner services, Amazon Bedrock AgentCore Gateways, AWS Verified Access instances, and AWS Amplify apps.
+**Resource type support.** This rule group is supported for protection packs (web ACLs) that protect Amazon CloudFront distributions, Application Load Balancers, and Amazon API Gateway REST APIs. AWS WAF rejects a request to associate a protection pack (web ACL) that uses this rule group with any other resource type. These include AWS AppSync GraphQL APIs, Amazon Cognito user pools, AWS App Runner services, Amazon Bedrock AgentCore Gateways, AWS Verified Access instances, Elastic Load Balancing for Envoy proxies, and AWS Amplify apps.
+
+**Body size limits.** The rule group assesses only the part of a body that's within the body inspection size limit. For requests, the default limit is 8 KB for an Application Load Balancer and 16 KB for an Amazon CloudFront distribution or an Amazon API Gateway REST API, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For responses, the limit uses the default for the resource type: 8 KB for an Application Load Balancer and 16 KB for an Amazon CloudFront distribution or an Amazon API Gateway REST API. For details, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 
 **Firewall Manager.** This rule group isn't currently supported with AWS Firewall Manager or AWS Network Security Manager.
 
@@ -204,9 +206,9 @@ AWS WAF doesn't send the recognized but not assessed operations to Amazon Bedroc
 
 AWS WAF classifies a POST to an LLM route as LLM traffic when the body contains fields specific to an LLM inference call.
 
-AWS WAF matches an LLM route by the end of the URI path and by the format of the request body, not by the host. A server that implements one of these APIs, such as a gateway or a self-hosted model with an OpenAI-compatible endpoint, is recognized the same way. Amazon Bedrock's own runtime APIs, such as `Converse` and `InvokeModel`, aren't recognized. A request in their format gets the `traffic:not_recognized` label and no content assessment.
+AWS WAF matches an LLM route by the end of the URI path and by the format of the request body, not by the host. A server that implements one of these APIs, such as a gateway or a self-hosted model with an OpenAI-compatible endpoint, is recognized the same way. Amazon Bedrock's own runtime APIs, such as `Converse` and `InvokeModel`, aren't recognized. A request in their format gets the `traffic:not_recognized` label and no content assessment. Amazon Bedrock Guardrails covers these APIs natively, so the rule group doesn't include them. To protect these calls, specify a guardrail in the request: in the header of an `InvokeModel` or `InvokeModelWithResponseStream` request, or in the `guardrailConfig` field of a `Converse` or `ConverseStream` request. For details, see [Use cases for Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use.html) in the *Amazon Bedrock User Guide*.
 
-**MCP** is recognized at protocol versions `2025-06-18`, `2025-11-25`, and `2026-07-28`. Earlier versions, such as `2024-11-05` and `2025-03-26`, aren't recognized.
+**MCP** is recognized at protocol versions `2025-06-18`, `2025-11-25`, and `2026-07-28`. Earlier versions, such as `2024-11-05` and `2025-03-26`, aren't recognized. To block MCP requests at earlier versions, see [Blocking MCP requests at unsupported protocol versions](waf-ai-security-example-block-unsupported-mcp.md).
 
 **A2A** is recognized at version 1.0 only. A2A 0.3 traffic, and A2A traffic that declares any other version, isn't recognized. The rule group labels it `traffic:not_recognized`, and AWS WAF doesn't check its compliance or assess it.
 

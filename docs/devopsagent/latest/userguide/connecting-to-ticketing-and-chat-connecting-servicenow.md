@@ -218,7 +218,7 @@ If you registered your ServiceNow connection from the **Capability Providers** p
 ### ServiceNow ticket updates
 <a name="servicenow-ticket-updates"></a>
 
-During all triggered incident response Investigations, your DevOps Agent will provide updates of its key findings, root cause analyses, and mitigation plans into the originating ticket. The agent findings are posted to the comments of an incident, and we'll currently only post agent records of type `finding`, `cause`, `investigation_summary`, `mitigation_summary` , and investigation status updates (e.g `AWS DevOps Agent started/finished its investigation`).
+During all triggered incident response Investigations, your DevOps Agent will provide updates of its key findings, root cause analyses, and mitigation plans into the originating ticket. The agent findings are posted to the comments of an incident, and we'll currently only post agent records of type `finding`, `cause`, `investigation_summary`, `mitigation_summary` , and investigation status updates (e.g `AWS DevOps Agent started/finished its investigation`). If notifications are off for the ServiceNow integration, or its notification policy leaves the investigation out, the agent doesn't post these updates. For more information about notification policies, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md).
 
 ## Ticket routing and orchestration examples
 <a name="ticket-routing-and-orchestration-examples"></a>

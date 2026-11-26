@@ -25,7 +25,7 @@ The following tables list the metrics and dimensions for HealthImaging. Each is 
 | --- | --- |
 | CallCount | The number of calls to APIs. This can be reported either for the account or a specified data store.<br />Units: Count<br />Valid Statistics: Sum, Count<br />Dimensions: Operation, data store ID, data store type |
 
-You can get metrics for HealthImaging with the AWS Management Console, the AWS CLI, or the CloudWatch API. You can use the CloudWatch API through one of the Amazon AWS Software Development Kits (SDKs) or the CloudWatch API tools. The HealthImaging console displays graphs based on the raw data from the CloudWatch API.
+You can get metrics for HealthImaging with the AWS Management Console, the AWS CLI, or the CloudWatch API. You can use the CloudWatch API through one of the AWS Software Development Kits (SDKs) or the CloudWatch API tools. The HealthImaging console displays graphs based on the raw data from the CloudWatch API.
 
 You must have the appropriate CloudWatch permissions to monitor HealthImaging with CloudWatch. For more information, see [Identity and access management for CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html) in the *CloudWatch User Guide*.
 

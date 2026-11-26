@@ -53,7 +53,7 @@ Type: String to [IntegrationResponse](API_IntegrationResponse.md) object map
 Required: No
 
  ** integrationTarget **   <a name="apigw-Type-Integration-integrationTarget"></a>
- The ALB or NLB listener to send the request to.
+ The ALB or NLB ARN to send the request to.
 Type: String
 Required: No
 

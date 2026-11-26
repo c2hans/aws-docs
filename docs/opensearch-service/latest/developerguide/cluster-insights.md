@@ -16,7 +16,7 @@ Insights are also available through additional channels, including [notification
 Note: Domains running OpenSearch versions earlier than 2.17 can be associated as data sources in the OpenSearch UI application, but will not appear in the Cluster Insights Overview. Only domains running OpenSearch 2.17 or later are fully supported for Cluster Insights in the Dashboards UI.
 
 ## Benefits
-<a name="w2aac24b5"></a>
+<a name="w2aac26b5"></a>
 + **Proactive monitoring** - Monitor cluster health proactively with detailed performance metrics across all components - from individual nodes and indices to shards and search queries.
 + **Unified visibility** - Consolidate monitoring data into a single dashboard
 + **Actionable recommendations** - Get step-by-step guidance for issue resolution
@@ -26,7 +26,7 @@ Note: Domains running OpenSearch versions earlier than 2.17 can be associated as
 With Cluster Insights, you can maintain optimal cluster performance, reduce operational overhead, and ensure consistent best practices across your OpenSearch clusters
 
 ## Access Cluster Insights through Console
-<a name="w2aac24b7"></a>
+<a name="w2aac26b7"></a>
 
 Review performance and resilience recommendations and make necessary configuration changes, all within the same Console. In the Console, under the **Cluster health** tab, you can access Cluster Insights that lists all the active Insights. Click on any Insight to view the recommendations.
 
@@ -35,7 +35,7 @@ Screen-1: Cluster Insights under the Cluster Health tab
 ![Insights panel showing Incorrect Cluster Manager Configuration recommendation with medium severity and active status.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_console_cluster_health.png)
 
 ## Access Cluster Insights and detailed metrics through OpenSearch UI
-<a name="w2aac24b9"></a>
+<a name="w2aac26b9"></a>
 
 You can view insights for a specific OpenSearch Service cluster through the **OpenSearch UI (Dashboards)**. In OpenSearch UI, an application is simply an organizational construct like a folder. Each application can connect to and display insights for multiple OpenSearch Service clusters. Accessing Cluster Insights requires an administrative role in the OpenSearch UI application.
 
@@ -43,7 +43,7 @@ You can view insights for a specific OpenSearch Service cluster through the **Op
 Accessing Cluster Insights requires an administrative role in the OpenSearch UI application.
 
 ## Create and configure an application to view Cluster Insights
-<a name="w2aac24c11"></a>
+<a name="w2aac26c11"></a>
 
 1. Open the OpenSearch Service console at [https://console.aws.amazon.com/aos/home](https://console.aws.amazon.com/aos/home)
 
@@ -66,12 +66,12 @@ Screen-3: Cluster Insights under the Manage data section
 ![Cluster insights card highlighted in the Manage data section of the data administration overview.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_manage_data.png)
 
 ## Understanding Cluster Insights
-<a name="w2aac24c13"></a>
+<a name="w2aac26c13"></a>
 
 This section describes the various insights available in Cluster Insights.
 
 ### Overview Dashboard
-<a name="w2aac24c13b5"></a>
+<a name="w2aac26c13b5"></a>
 
 The **Cluster Insights Overview** page, as shown in the following screenshot, provides a high-level view of your cluster health at the application level and comprises the following sections:
 
@@ -80,7 +80,7 @@ Screen-4: Cluster Insights landing page in OpenSearch UI application.
 ![Cluster Insights overview page showing cluster health status, insights trends, and severity-based insights table.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_overview.png)
 
 ### Current cluster status
-<a name="w2aac24c13b7"></a>
+<a name="w2aac26c13b7"></a>
 
 A donut chart displays your cluster health status:
 + **Green** - All primary shards and replicas are allocated to nodes
@@ -88,27 +88,27 @@ A donut chart displays your cluster health status:
 + **Red** - At least one primary shard is not allocated to any node
 
 ### Insights trend
-<a name="w2aac24c13b9"></a>
+<a name="w2aac26c13b9"></a>
 
 The trend graph tracks issue patterns over the past 30 days, helping you identify emerging problems and monitor resolution progress.
 
 ### Current open insights
-<a name="w2aac24c13c11"></a>
+<a name="w2aac26c13c11"></a>
 
 A count organized by severity of open insights for the last 30 days.
 
 ### OpenSearch Service Clusters
-<a name="w2aac24c13c13"></a>
+<a name="w2aac26c13c13"></a>
 
 This section lists all your OpenSearch clusters with key statistics including node count, shard count, and active queries.
 
 ### Top insights by severity
-<a name="w2aac24c13c15"></a>
+<a name="w2aac26c13c15"></a>
 
 You can review insights across all domains in your application. This section prioritizes issues that need immediate attention (Critical, and High Severity). Each insight includes a description and specific recommendations, which can help you focus on critical issues first.
 
 ### Insight details
-<a name="w2aac24c13c17"></a>
+<a name="w2aac26c13c17"></a>
 
 Each insight in the **Top insights by severity** section is interactive and provides detailed analysis. For example, when you choose the **Large Shard Size** insight:
 
@@ -121,22 +121,22 @@ Each insight in the **Top insights by severity** section is interactive and prov
 1. The History tab displays a timeline of resource remediation actions.
 
 ### Cluster Details
-<a name="w2aac24c13c21"></a>
+<a name="w2aac26c13c21"></a>
 
 When you select a specific cluster in the **OpenSearch Service Clusters** section, OpenSearch displays insights for that cluster across the following tabs: Cluster health, Nodes view, Index view, Shard view, and Query view. The **Cluster health** tab displays the following information:
 
 ### Overview
-<a name="w2aac24c13c23"></a>
+<a name="w2aac26c13c23"></a>
 
 Key information includes cluster health, shard count, node count, index count, and document statistics.
 
 ### Configuration best practices
-<a name="w2aac24c13c25"></a>
+<a name="w2aac26c13c25"></a>
 
 Donut charts show compliance with recommended settings for resilience, and security.
 
 ### Insights
-<a name="w2aac24c13c27"></a>
+<a name="w2aac26c13c27"></a>
 
 A table lists recent insights generated for the cluster, with the same detailed breakdown and remediation guidance available from the overview page.
 
@@ -151,7 +151,7 @@ Screen-6: Insight details. Provides you details, recommendations, and historical
 ![Large shard size insight showing 10 shards exceeding 50GB across 200 total shards.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_large_shard_size.png)
 
 ### Metrics Section
-<a name="w2aac24c13c29"></a>
+<a name="w2aac26c13c29"></a>
 
 Interactive charts in this section display the following cluster metrics:
 + Overall cluster health metrics such as Cluster Status, Write status, and searchable documents
@@ -159,7 +159,7 @@ Interactive charts in this section display the following cluster metrics:
 + Resource Utilization metrics like JVM and CPU utilization
 
 ### Node, Index, and Shard views
-<a name="w2aac24c13c31"></a>
+<a name="w2aac26c13c31"></a>
 
 The **Node**, **Index**, and **Shard views** use OpenSearch stats to provide detailed visibility into cluster operations. You can view:
 + Real-time metrics such as CPU utilization and JVM memory pressure
@@ -173,7 +173,7 @@ Screen-7: Node, Index, and Shard level metrics
 ![Shard view table showing CPU utilization, heap allocation, indexing metrics, and search latency for cluster shards.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_shard_view.png)
 
 ### Query View
-<a name="w2aac24c13c33"></a>
+<a name="w2aac26c13c33"></a>
 
 **Note**
  Query View feature is supported for OpenSearch versions 2.19 or later.
@@ -181,7 +181,7 @@ Screen-7: Node, Index, and Shard level metrics
 The **Query View** page helps you monitor resource-intensive queries with:
 
 #### Access Setup
-<a name="w2aac24c13c33b7"></a>
+<a name="w2aac26c13c33b7"></a>
 
 Viewing Top N queries requires fine-grained access control permissions. Ensure the following:
 + Fine-grained access control is enabled on your domain.
@@ -191,12 +191,12 @@ Viewing Top N queries requires fine-grained access control permissions. Ensure t
 Without proper role mappings, users may receive 403 Forbidden errors when attempting to access query insights data. For details, see [Fine-grained access control](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html).
 
 #### Live dashboards
-<a name="w2aac24c13c33b9"></a>
+<a name="w2aac26c13c33b9"></a>
 
 View execution stats, CPU and memory usage, and completion progress for every query.
 
 #### Top N queries
-<a name="w2aac24c13c33c11"></a>
+<a name="w2aac26c13c33c11"></a>
 
 A ranked table shows the most significant queries with details including:
 + Query count
@@ -205,7 +205,7 @@ A ranked table shows the most significant queries with details including:
 + Target indices and shard count
 
 #### Query details
-<a name="w2aac24c13c33c13"></a>
+<a name="w2aac26c13c33c13"></a>
 
 Double-click any query to see:
 + Exact query payload and execution steps
@@ -217,6 +217,6 @@ Screen-8: In-flight live view. You can also view Top-N queries
 ![Query view dashboard showing active queries, performance metrics, distribution charts, and query details table.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_query_view.png)
 
 ### Access Insights through Amazon EventBridge events
-<a name="w2aac24c13c35"></a>
+<a name="w2aac26c13c35"></a>
 
 You can monitor insights through Amazon EventBridge events. For additional details check [notifications](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html).

@@ -9,7 +9,7 @@ The Anthropic Messages API provides native access to Claude models using the Ant
 | **Endpoint** | **Base URL** | **Use case** |
 | --- | --- | --- |
 | bedrock-runtime | https://bedrock-runtime.{region}.amazonaws.com/anthropic | Recommended for new applications. Uses AWS SDK integrations, IAM authentication, and invocation logging. |
-| bedrock-mantle | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | Supports Amazon Bedrock API key authentication and [Workspaces (Anthropic-compatible)](workspaces.md). |
+| bedrock-mantle | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | Supports Amazon Bedrock API key authentication and [Projects and workspaces on the bedrock-mantle endpoint](workspaces.md). |
 
 ## Supported Regions
 <a name="inference-messages-api-supported"></a>

@@ -86,6 +86,7 @@ When you grant the OAuth scopes during registration, you already have `incidents
 <a name="managing-pagerduty-connections"></a>
 + **Updating credentials** – If your OAuth credentials need to be updated, deregister PagerDuty from the Capability Providers page and re-register with the new credentials.
 + **Viewing connections** – In the AWS DevOps Agent console, select your Agent Space and go to the Capabilities tab to view connected communication integrations.
++ **Customizing notifications** – To choose which PagerDuty incidents get updates, such as only Critical and High incidents, or to stop updates without removing the connection, set a notification policy for the PagerDuty integration. For more information about notification policies, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md).
 + **Removing PagerDuty** – To disconnect PagerDuty from an Agent Space, select it in the Communications section and choose **Remove**. To completely remove the registration, remove it from all Agent Spaces first, then deregister from the Capability Providers page.
 
 ## Webhook support

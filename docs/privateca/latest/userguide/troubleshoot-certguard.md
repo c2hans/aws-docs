@@ -4,6 +4,9 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/troubleshoot-
 
 # AccessDeniedException with X.509 certificate condition keys
 
+**Note**
+X.509 certificate condition keys aren't supported yet in the resource-based policy of a private CA, including AWS RAM customer managed permissions and policies that you set with [PutPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPolicy.html). Support is coming soon. You can use the keys today in identity-based policies, service control policies (SCPs), and resource control policies (RCPs). For details and alternatives, see [Supported policy types](certguard-policy-types.md).
+
 When a policy that uses X.509 certificate condition keys denies a request, AWS Private CA returns an `AccessDeniedException`. The response doesn't say which condition key or value caused the denial. Use the following steps to find the cause.
 
 1. Find the denied request in AWS CloudTrail. The error message might state whether an explicit `Deny` statement or the absence of an `Allow` statement caused the denial, and the type of policy involved. If it does, start with the policies of that type. Otherwise, check each type of policy that applies to the principal: identity-based policies, SCPs, RCPs, VPC endpoint policies, and the CA's resource-based policy.

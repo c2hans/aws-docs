@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-troubleshooting.html
 ---
 
-# Troubleshooting and best practices
+# Troubleshooting and best practices for Training Sessions
 
 ## Common errors and solutions
 <a name="training-sessions-troubleshooting-errors"></a>

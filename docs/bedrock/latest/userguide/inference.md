@@ -98,7 +98,7 @@ If you scope your policy to specific resources instead of using `"Resource": "*"
     ]
 }
 ```
-The Converse, Invoke, and Chat Completions APIs don't require a project resource. For more information about the default project, see [Projects (OpenAI-compatible)](projects.md).
+The Converse, Invoke, and Chat Completions APIs don't require a project resource. For more information about the default project, see [Projects](projects.md).
 
 For a detailed breakdown of each permission, see [Prerequisites for running model inference](inference-prereq.md).
 

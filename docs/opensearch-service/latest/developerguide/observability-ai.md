@@ -8,59 +8,81 @@ AI observability in OpenSearch provides end-to-end tooling for monitoring, debug
 
 AI observability includes the following capabilities:
 + **Agent tracing** – Capture hierarchical execution traces across agent orchestration steps, LLM calls, tool invocations, and retrieval operations.
++ **Agent evaluations** – Score agent runs offline with test suites and online on production traces, compare agent versions, and open the trace behind each result. For more information, see [Agent evaluations](observability-ai-evaluations.md).
 + **GenAI semantic conventions** – Use standardized OTel attributes such as `gen_ai.system`, `gen_ai.request.model`, and `gen_ai.usage.input_tokens` to describe AI-specific telemetry.
 + **Auto-instrumentation** – Automatically capture traces from popular AI frameworks and providers, including OpenAI, Anthropic, Amazon Bedrock, LangChain, and more than 20 additional libraries.
 + **PPL querying** – Query and aggregate trace data using Piped Processing Language (PPL) directly from OpenSearch UI.
+
+## Architecture
+<a name="observability-ai-architecture"></a>
+
+Your agent produces traces and agent logs with any OpenTelemetry GenAI instrumentation, such as the built-in instrumentation of Strands Agents, or with the `@observe` decorator of the OpenSearch GenAI SDK. Your evaluation code produces evaluation results with the SDK. The SDK sends all three signals over OTLP, signed with SigV4, to an OpenSearch Ingestion pipeline. The pipeline writes each signal to its own index in an OpenSearch Service domain or an OpenSearch Serverless collection:
++ Spans go to `otel-v1-apm-span*` (`otel-v2-apm-span*` for an observability stack on a domain with the engine optimized for log analytics).
++ Agent logs go to `logs-otel-v1*`.
++ Evaluation results, which are log events named `gen_ai.evaluation.result`, go to `otel-v1-genai-evaluation*`.
+
+OpenSearch UI reads these indexes. The Agent Traces pages show the traces with their logs, and the Evaluations pages show the evaluation results with a link to the trace that each result judged. The Logs pages show the agent logs on their own, so you can search them without opening a trace. The following diagram shows the agent and evaluation code sending these signals to the pipeline, the pipeline writing them to the three indexes, and OpenSearch UI reading them.
+
+![Architecture diagram. Inside the OpenSearch GenAI SDK, your agent, instrumented with any OpenTelemetry GenAI instrumentation, sends OTLP traces and logs, and your evaluation code sends OTLP evaluation results, signed with SigV4, to an OpenSearch Ingestion pipeline. The pipeline writes spans to otel-v1-apm-span*, agent logs to logs-otel-v1*, and evaluation results to otel-v1-genai-evaluation*, in an OpenSearch Service domain or an OpenSearch Serverless collection. OpenSearch UI reads all three indexes for its Agent Traces, Evaluations, and Logs pages.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ai-observability/ai-observability-architecture.png)
+
+In the diagram, the OpenSearch GenAI SDK contains your agent and your evaluation code. The agent sends traces and logs, and the evaluation code sends evaluation results, to the OpenSearch Ingestion pipeline. The pipeline connects to three indexes inside the OpenSearch Service domain or OpenSearch Serverless collection: `otel-v1-apm-span*` for spans, `logs-otel-v1*` for agent logs, and `otel-v1-genai-evaluation*` for evaluation results. The domain or collection connects to OpenSearch UI, where the Agent Traces, Evaluations, and Logs pages read the data.
 
 ## Getting started
 <a name="observability-ai-getting-started"></a>
 
 This section walks you through instrumenting an AI agent, sending traces to Amazon OpenSearch Service, and viewing them in OpenSearch UI.
 
+Agent tracing works with spans that follow the OpenTelemetry [semantic conventions for generative AI spans](https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-spans.md). You don't need the OpenSearch GenAI SDK to send traces. You can instrument your agent with any of the following:
++ An agent framework with built-in OpenTelemetry instrumentation that follows these conventions, such as Strands Agents.
++ The OpenInference or OpenLLMetry (Traceloop) instrumentation libraries. The `otel_traces` processor in your pipeline maps their attributes to `gen_ai.*` attributes.
++ The OpenSearch GenAI SDK, which also signs requests to the pipeline with SigV4.
+
+OpenSearch Ingestion accepts only SigV4-signed requests. If you don't use the SDK, send your traces through an OpenTelemetry Collector with the `sigv4auth` extension. For more information, see [Using an OpenSearch Ingestion pipeline with OpenTelemetry Collector](configure-client-otel.md). The following procedures use the SDK.
+
 ### To install the SDK
 <a name="observability-ai-install-sdk"></a>
 
-Install the OpenTelemetry GenAI instrumentation package:
+Install the OpenSearch GenAI SDK and the OpenTelemetry instrumentation package for your LLM provider. The following example installs the Python SDK with the OpenAI instrumentation.
 
+```bash
+pip install "opensearch-genai-observability-sdk-py>=0.3.0" opentelemetry-instrumentation-openai-v2
 ```
-pip install opentelemetry-instrumentation-openai-v2 opentelemetry-sdk opentelemetry-exporter-otlp
-```
+
+For TypeScript, install `@opensearch-project/genai-observability-sdk-ts` instead.
 
 ### To instrument your agent code
 <a name="observability-ai-instrument"></a>
 
-The following example shows how to register the OTel SDK, annotate your agent functions with the `@observe` decorator, and enrich spans with GenAI attributes.
+The OpenSearch GenAI SDK is built on OpenTelemetry and the GenAI semantic conventions. It works in three parts:
++ `register()` sets up the trace and log exporters, signs them with SigV4 for OpenSearch Ingestion, and turns on every installed OpenTelemetry instrumentation package, so LLM calls are traced without code changes.
++ The `@observe` decorator records your agent and tool functions as `invoke_agent` and `execute_tool` spans.
++ `enrich()` adds GenAI attributes, such as the model and the agent version, to the current span.
+
+The following Python code example traces an agent and its tool. Replace the placeholder values with your own.
 
 ```python
-from opentelemetry import trace
-from opentelemetry.sdk.trace import TracerProvider
-from opentelemetry.sdk.trace.export import BatchSpanProcessor
-from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+from opensearch_genai_observability_sdk_py import Op, enrich, observe, register
 
-# Register the tracer provider
-provider = TracerProvider()
-processor = BatchSpanProcessor(
-    OTLPSpanExporter(endpoint="<your-osis-endpoint>")  # Use your OpenSearch Ingestion endpoint with SigV4
+register(
+    service_name="travel-assistant",
+    traces_endpoint="https://{{pipeline-endpoint}}/{{traces-path}}",
+    logs_endpoint="https://{{pipeline-endpoint}}/{{logs-path}}",
+    sigv4={"service": "osis", "region": "{{region}}"},
 )
-provider.add_span_processor(processor)
-trace.set_tracer_provider(provider)
 
-tracer = trace.get_tracer(__name__)
+# weather_api() and call_llm() are your own tool and LLM code.
+@observe(op=Op.EXECUTE_TOOL)
+def get_weather(city: str) -> str:
+    return weather_api(city)
 
-# Decorate your agent function
-@observe
-def run_agent(prompt: str):
-    with tracer.start_as_current_span("invoke_agent") as span:
-        span.set_attribute("gen_ai.operation.name", "invoke_agent")
-        span.set_attribute("gen_ai.system", "openai")
-        span.set_attribute("gen_ai.request.model", "gpt-4")
-
-        # Enrich with token usage after the LLM call
-        response = call_llm(prompt)
-        span.set_attribute("gen_ai.usage.input_tokens", response.input_tokens)
-        span.set_attribute("gen_ai.usage.output_tokens", response.output_tokens)
-        return response
+@observe(name="Travel Assistant", op=Op.INVOKE_AGENT)
+def run_agent(prompt: str) -> str:
+    enrich(model="gpt-4o", provider="openai", agent_version="1.0.0")
+    weather = get_weather("Paris")
+    return call_llm(prompt, weather)  # traced by the OpenAI instrumentation
 ```
+
+The SDK works with any agent framework, such as Strands Agents, LangGraph, CrewAI, the OpenAI Agents SDK, and Amazon Bedrock Agents. The same SDK also records evaluation results next to the traces. For more information, see [Agent evaluations](observability-ai-evaluations.md). For a runnable example for each framework, see [Framework integrations](https://observability.opensearch.org/docs/send-data/ai-agents/integrations/) in the OpenSearch observability stack documentation.
 
 **Note**
 When you send traces to Amazon OpenSearch Service, use your OpenSearch Ingestion pipeline endpoint with SigV4 authentication instead of a localhost endpoint. For more information about configuring OpenSearch Ingestion pipelines, see [Overview of Amazon OpenSearch Ingestion](ingestion.md).
@@ -68,41 +90,22 @@ When you send traces to Amazon OpenSearch Service, use your OpenSearch Ingestion
 ### To view traces in OpenSearch UI
 <a name="observability-ai-view-traces"></a>
 
-After your instrumented application sends trace data, you can explore it in OpenSearch UI. In your observability workspace, expand **Discover** in the left navigation and choose **Agent Traces**.
+After your instrumented application sends trace data, you can explore it in OpenSearch UI. Open your observability workspace. In the left navigation, under **Agent Monitoring**, choose **Traces**.
 
-## Agent Tracing UI
+## Agent tracing UI
 <a name="observability-ai-agent-tracing"></a>
 
 The Agent Traces page in OpenSearch UI provides a purpose-built interface for exploring, debugging, and monitoring LLM agent execution traces. It gives developers and platform operators full observability into agentic AI applications, including hierarchical trace views, detail flyouts, flow visualizations, and aggregate metrics.
-
-### Architecture
-<a name="observability-ai-architecture"></a>
-
-The following diagram shows the data flow from instrumented applications to the Agent Traces UI:
-
-```
-LLM Application (with OTel SDK + GenAI instrumentation)
-    |
-    |  OTLP (gRPC/HTTP)
-    v
-OTel Collector (batch, transform)
-    |
-    +---- OTLP ----> OpenSearch Ingestion --> OpenSearch (otel-v1-apm-span-*)
-    |
-    +---- Prometheus Remote Write --> Prometheus (metrics)
-                                          |
-                                          v
-                              OpenSearch UI
-                              +-- Agent Traces Plugin
-```
 
 ### Prerequisites
 <a name="observability-ai-prereqs"></a>
 
 Before you use Agent Traces, make sure you have the following:
-+ An OpenSearch cluster with trace data indexed in `otel-v1-apm-span-*` indices.
++ An OpenSearch Service domain or an OpenSearch Serverless collection with trace data indexed in `otel-v1-apm-span*` indices.
+**Note**
+On a domain with the engine optimized for log analytics, an observability stack stores spans in `otel-v2-apm-span*` indexes instead.
 + OpenTelemetry instrumentation with GenAI semantic conventions enabled in your LLM application.
-+ OpenSearch Ingestion configured with the `otel_trace_raw` processor to ingest spans into OpenSearch.
++ OpenSearch Ingestion configured with the `otel_traces` processor to ingest spans into OpenSearch.
 + PPL query support enabled in OpenSearch UI.
 
 ### Required span attributes
@@ -193,11 +196,14 @@ When you choose a trace ID, a flyout panel opens with two main areas:
 
 Agent Traces uses PPL (Piped Processing Language) for all data fetching. You can write queries in the query panel at the top of the page.
 
+**Note**
+The following examples query the `otel-v1-apm-span*` index. On a domain with the engine optimized for log analytics, an observability stack stores spans in `otel-v2-apm-span*`. For such a domain, use that index name instead.
+
 **To list root traces**
 The following query returns the 100 most recent root agent traces:
 
 ```
-source = otel-v1-apm-span-*
+source = otel-v1-apm-span*
 | where parentSpanId = "" AND isnotnull(`attributes.gen_ai.operation.name`)
 | sort - startTime
 | head 100
@@ -207,7 +213,7 @@ source = otel-v1-apm-span-*
 The following query returns the complete span tree for a specific trace:
 
 ```
-source = otel-v1-apm-span-*
+source = otel-v1-apm-span*
 | where traceId = "{{trace-id}}"
 | head 1000
 ```
@@ -216,7 +222,7 @@ source = otel-v1-apm-span-*
 The following query computes average duration and total token usage grouped by model:
 
 ```
-source = otel-v1-apm-span-*
+source = otel-v1-apm-span*
 | where isnotnull(`attributes.gen_ai.request.model`)
 | stats avg(durationInNanos) as avg_duration,
         sum(`attributes.gen_ai.usage.input_tokens`) as total_input_tokens,

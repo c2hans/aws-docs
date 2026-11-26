@@ -11,10 +11,11 @@ Amazon Web Services (AWS), Amazon Lightsail, and third-party application vendors
 AL2023 (kernel 6.1): `6.1.189-236.400.amzn2023`
 Amazon Linux 2 (kernel 4.14): `4.14.355-287.758.amzn2`
 Amazon Linux 2 (kernel 5.10, if you installed it yourself): `5.10.271-272.1121.amzn2`
-For the update steps, see [Update Amazon Linux on Lightsail instances](update-amazon-linux.md). For affected instances that use other Linux blueprints, see [Address CVE-2026-98432 on Linux-based Lightsail instances](address-cve-2026-98432.md).
+For the update steps, see [Updating Amazon Linux on Lightsail instances](update-amazon-linux.md). For affected instances that use other Linux blueprints, see [Addressing CVE-2026-98432 on Linux-based Lightsail instances](address-cve-2026-98432.md).
 
 **Topics**
-+ [Update Amazon Linux on Lightsail instances](update-amazon-linux.md)
++ [Instance blueprint software support](#instance-blueprint-vendor-links)
++ [Updating Amazon Linux on Lightsail instances](update-amazon-linux.md)
 
 ## Instance blueprint software support
 <a name="instance-blueprint-vendor-links"></a>

@@ -298,6 +298,16 @@ The following events are emitted only for HyperPod clusters orchestrated with Am
 | Instance patching rollback succeeded | Instance <instance-id> in IG <instance-group-name> rolled back successfully to previous AMI. |
 | Instance patching rollback failed | UpdateClusterSoftware rollback failed for instance <instance-id> in IG <instance-group-name>. |
 
+### Node movement
+<a name="sagemaker-hyperpod-cluster-events-eks-node-movement"></a>
+
+Node movement emits the following events, one per node. Both are instance-level events with level `Info` and resource type `Instance`. The source cluster and source instance group record **EC2 instance detached for move** when the node leaves the source instance group. The target cluster and target instance group record **EC2 instance attached after move** when the node is running in the target instance group, which means the move completed. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
+| Event | Description |
+| --- | --- |
+| EC2 instance detached for move | EC2 Instance <instance-id> detached from InstanceGroup <source-instance-group-name> in Cluster <source-cluster-name> for movement to Cluster <target-cluster-name> and InstanceGroup <target-instance-group-name> |
+| EC2 instance attached after move | EC2 Instance <instance-id> attached to InstanceGroup <target-instance-group-name> in Cluster <target-cluster-name> from Cluster <source-cluster-name> and InstanceGroup <source-instance-group-name> |
+
 ## Slurm-specific events
 <a name="sagemaker-hyperpod-cluster-events-slurm"></a>
 

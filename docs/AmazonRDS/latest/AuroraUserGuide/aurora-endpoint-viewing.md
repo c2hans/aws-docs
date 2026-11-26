@@ -7,17 +7,17 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ## Console
 <a name="aurora-view-endpoint.console"></a>
 
-To view custom endpoints with the AWS Management Console, go to the cluster detail page for the cluster and look under the **Endpoints** section. This section contains information only about custom endpoints. The details for the built-in endpoints are listed in the main **Details** section. To see the details for a specific custom endpoint, select its name to bring up the detail page for that endpoint.
+To view custom endpoints in the AWS Management Console, choose **Databases**, and then choose the name of your DB cluster. On the **Connectivity & security** tab, look in the **Endpoints** section. This section lists the cluster's writer and reader endpoints and any custom endpoints. The **Type** column identifies custom endpoints. If you haven't created any custom endpoints for the cluster, only the writer and reader endpoints appear. To see the details for a specific custom endpoint, choose its name.
 
 The following screenshot shows how the list of custom endpoints for an Aurora cluster is initially empty.
 
 ![Endpoints page with no custom endpoints.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/AuroraCustomEndpointEmptyList.png)
 
-After you create some custom endpoints for that cluster, they are shown under the **Endpoints** section.
+After you create custom endpoints for the cluster, the **Endpoints** section on the **Connectivity & security** tab shows them.
 
 ![Endpoints page with two custom endpoints.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/AuroraCustomEndpointList.png)
 
-Clicking through to the detail page shows which DB instances the endpoint is currently associated with.
+The endpoint's detail page shows which DB instances are currently associated with the endpoint.
 
 ![DB instances associated with a custom endpoint.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/AuroraCustomEndpointDetail.png)
 

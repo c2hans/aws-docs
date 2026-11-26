@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 
 Two-line element set (TLE) ephemeris.
 
- For more detail about providing Two-line element sets to AWS Ground Station, see the [TLE section](https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-ephemeris-data.html) of the AWS Ground Station user guide.
+For more detail about providing Two-line element sets to AWS Ground Station, see the [TLE section](https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-ephemeris-data.html) of the AWS Ground Station user guide.
 
 ## Contents
 <a name="API_TLEEphemeris_Contents"></a>

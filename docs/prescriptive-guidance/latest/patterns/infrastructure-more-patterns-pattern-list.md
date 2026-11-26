@@ -31,6 +31,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 + [Securing AWS IAM Roles Anywhere with a private certificate](iam-roles-anywhere-private-ca.md)
 + [Implement path-based API versioning by using custom domains in Amazon API Gateway](implement-path-based-api-versioning-by-using-custom-domains.md)
 + [Install the SSM Agent and CloudWatch agent on Amazon EKS worker nodes using preBootstrapCommands](install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands.md)
++ [Manage AWS IAM Identity Center permission sets as code by using AWS CodePipeline](manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.md)
 + [Manage AWS Service Catalog products in multiple AWS accounts and AWS Regions](manage-aws-service-catalog-products-in-multiple-aws-accounts-and-aws-regions.md)
 + [Manage AWS Organizations policies as code by using AWS CodePipeline and Amazon Bedrock](manage-organizations-policies-as-code.md)
 + [Migrate DNS records in bulk to an Amazon Route 53 private hosted zone](migrate-dns-records-in-bulk-to-a-route-53.md)

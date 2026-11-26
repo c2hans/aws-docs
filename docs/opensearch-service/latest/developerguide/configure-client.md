@@ -117,6 +117,6 @@ The client application can then use the [AssumeRole](https://docs.aws.amazon.com
 <a name="configure-client-next"></a>
 
 After you export your data to a pipeline, you can [query it](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/searching.html) from the OpenSearch Service domain that is configured as a sink for the pipeline. The following resources can help you get started:
-+ [Observability in Amazon OpenSearch Service](observability.md)
++ [Observability stack in Amazon OpenSearch Service](observability.md)
 + [Discover Traces](observability-analyze-traces.md)
-+ [Observability in Amazon OpenSearch Service](observability.md)
++ [Observability stack in Amazon OpenSearch Service](observability.md)

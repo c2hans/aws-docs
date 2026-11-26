@@ -12,7 +12,7 @@ Details of an instance in a SageMaker HyperPod cluster.
  ** Status **   <a name="sagemaker-Type-ClusterInstanceStatusDetails-Status"></a>
 The status of an instance in a SageMaker HyperPod cluster.
 Type: String
-Valid Values: `Running | Failure | Pending | ShuttingDown | SystemUpdating | DeepHealthCheckInProgress | NotFound`
+Valid Values: `Running | Failure | Pending | ShuttingDown | SystemUpdating | DeepHealthCheckInProgress | NotFound | DetachInProgress | AttachInProgress`
 Required: Yes
 
  ** Message **   <a name="sagemaker-Type-ClusterInstanceStatusDetails-Message"></a>

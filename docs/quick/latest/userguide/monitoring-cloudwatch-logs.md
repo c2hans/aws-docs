@@ -43,6 +43,7 @@ AWS Quick supports the following log types. You specify one of these values as t
 + `KB_FILE_SYNC_LOGS` – Per-document knowledge base sync status, including crawl and indexing failures.
 + `DLP_LOGS` – Data loss prevention enforcement decisions and configuration changes.
 + `APPS_LOGS` – Activity in apps in Quick, such as app opens, dataset queries, app storage operations, action invocations, and model invocations, including requests that were refused.
++ `TOOL_CALL_LOGS` – Permission decisions and approvals for the tools that chat agents use, such as creating an issue or sending a message.
 
 ## Prerequisites
 <a name="quicksuite-chat-feedback-logging-prerequisites"></a>
@@ -164,6 +165,8 @@ Create a delivery source with the [PutDeliverySource](https://docs.aws.amazon.co
 }
 ```
 
+The following `PutDeliverySource` request creates a delivery source for the `TOOL_CALL_LOGS` log type. Replace {{my-quick-tool-call-delivery-source}}, {{your-region}}, and {{your-account-id}} with your own values.
+
 ```json
 {
     "logType": "APPS_LOGS",
@@ -171,6 +174,25 @@ Create a delivery source with the [PutDeliverySource](https://docs.aws.amazon.co
     "resourceArn": "arn:aws:quicksight:{{your-region}}:{{your-account-id}}:account/{{your-account-id}}"
 }
 ```
+
+```json
+{
+    "logType": "TOOL_CALL_LOGS",
+    "name": "{{my-quick-tool-call-delivery-source}}",
+    "resourceArn": "arn:aws:quicksight:{{your-region}}:{{your-account-id}}:account/{{your-account-id}}"
+}
+```
+
+This request includes the following fields.
+
+`logType`
+The log type to deliver. For tool call logs, this is `TOOL_CALL_LOGS`.
+
+`name`
+A name for the delivery source.
+
+`resourceArn`
+The ARN of your AWS Quick account.
 
 To enable user conversation logging with the CloudWatch Logs API operations, you call the `PutDeliverySource`, `PutDeliveryDestination`, and `CreateDelivery` API operations.
 
@@ -619,10 +641,10 @@ The following is an example of a configuration updated event:
 **Note**
 The `file_name` field is customer content. When you configure a customer managed AWS KMS key for delivery, this field is encrypted. Without a key, Quick delivers it in cleartext.
 
-## Apps logs
+## App logs
 <a name="quicksuite-apps-logs"></a>
 
-With apps logs, you can see what happens when users view your apps in Quick. You get one record for each app open and for each request that an app makes for a user, such as a dataset query or an app storage operation. You also get records for refused and failed requests, except requests that fail authentication, so you can see why an app fails for some users. The account that owns an app receives its records, and one delivery covers every app in that account.
+With app logs, you can see what happens when users view your apps in Quick. You get one record for each app open and for each request that an app makes for a user, such as a dataset query or an app storage operation. You also get records for refused and failed requests, except requests that fail authentication, so you can see why an app fails for some users. The account that owns an app receives its records, and a single log delivery for `APPS_LOGS` covers every app in that account, so you don't need to set one up for each app.
 
 The `event_type` field identifies the kind of activity:
 + `OPEN` – A user opened a published app, or was refused.
@@ -633,13 +655,13 @@ The `event_type` field identifies the kind of activity:
 
 Quick can add new `event_type`, `operation`, and `status_code` values. Write queries that check for the values you want, such as `status_code = "success"`, instead of listing the values you don't want.
 
-Each record contains the following fields. A field that has no value for a record contains `-`. For example, `model_id` is `-` on every record whose `event_type` isn't `INFERENCE`.
+A field that has no value for a record contains `-`. For example, `model_id` is `-` on every record whose `event_type` isn't `INFERENCE`. Each record contains the following fields.
 + `event_timestamp` – (Default, Long) When the event began, as Unix epoch time in milliseconds.
 + `resource_arn` – (Default, String) Resource ARN of your AWS Quick account.
 + `log_type` – (Default, String) `APPS_LOGS`.
 + `account_id` – (Default, String) AWS account ID of the app owner.
 + `user_arn` – (Default, String) AWS Quick user ARN of the user who viewed the app. For an anonymous user of a public link, the ARN contains `publicAnonymousUser`. For an anonymous user of an embedded app, it contains `anonymousUser`.
-+ `user_type` – (Default, String) AWS Quick user type of the user (for example, `ADMIN_PRO`), or `-` for an anonymous user.
++ `user_type` – (Default, String) AWS Quick user type of the user (for example, `ADMIN_PRO` (Enterprise)), or `-` for an anonymous user.
 + `namespace` – (Default, String) AWS Quick namespace. Currently always `default`.
 + `status_code` – (Default, String) Outcome of the request. Values:
   + `success` – The request did what the app asked.
@@ -670,16 +692,16 @@ Each record contains the following fields. A field that has no value for a recor
 + `action_id` – (Default, String) On `ACTION`, the action that the app invoked (for example, `GetIssue`).
 + `connector_id` – (Default, String) On `ACTION`, the ID of the action connector.
 + `operation_category` – (Default, String) On `ACTION`, whether the action reads (`READ`) or changes (`WRITE`) data.
-+ `model_id` – (Default, String) On `INFERENCE`, the model that the app asked for.
++ `model_id` – (Default, String) On `INFERENCE`, the model that the app used.
 
 All fields are in the default field list. The `event_timestamp`, `resource_arn`, `log_type`, and `account_id` fields are mandatory. Your delivered records also contain `space_id`, `dashboard_id`, `sheet_id`, and `visual_id`, reserved for event types not yet reported. These are always `-` today.
 
-Apps logs contain no prompts, query text, stored item values, or query results. The `table_name` and `storage_key` fields contain names that the app chooses, and you receive them as is.
+App logs contain no prompts, query text, stored item values, or query results. The `table_name` and `storage_key` fields contain names that the app chooses, and you receive them as is.
 
 **Note**
-The `user_arn`, `user_type`, `namespace`, `status_code`, `table_name`, and `storage_key` fields are encrypted when your account uses a customer managed AWS KMS key. Without a key, they are delivered in cleartext. If you use a customer managed key, its key policy must contain the statement in [Set up IAM permissions](#quicksuite-chat-feedback-setup-iam-permissions). Otherwise, log delivery drops your apps log records.
+The `user_arn`, `user_type`, `namespace`, `status_code`, `table_name`, and `storage_key` fields are encrypted when your account uses a customer managed AWS KMS key. Without a key, they are delivered in cleartext. If you use a customer managed key, its key policy must contain the statement in [Set up IAM permissions](#quicksuite-chat-feedback-setup-iam-permissions). Otherwise, log delivery drops your app log records.
 
-The following is an example of an apps log for an `OPEN` event:
+The following is an example of an app log for an `OPEN` event:
 
 ```json
 {
@@ -709,6 +731,150 @@ The following is an example of an apps log for an `OPEN` event:
     "model_id": "-"
 }
 ```
+
+## Tool call logs
+<a name="quicksuite-tool-call-logs"></a>
+
+Tool call logs record the permission decisions for the tools that chat agents use on behalf of your users, such as creating a Jira issue or sending a Slack message. Use them to audit each tool call: whether Quick ran it, sent it to a user for approval, or blocked it, and who approved it. The `event_type` field identifies the specific event.
+
+Tool call logs contain identifiers and decision values only. They don't contain tool inputs, tool outputs, or the agent's reasoning.
+
+Every permission check emits a `PERMISSION_EVALUATED` record. A call that Quick allows immediately produces one record, with a `verdict` of `ALLOW`. A call that needs approval and receives it usually produces three records: the initial `REVIEW` evaluation, an `AUTO_APPROVED` or `HUMAN_APPROVED` event, and a final `ALLOW` evaluation when the call runs. A call that your policies deny produces a single `PERMISSION_EVALUATED` record with a `DENY` verdict, and the call doesn't run. A call that a user denies produces the initial `REVIEW` evaluation and a `HUMAN_DENIED` event, with no final evaluation because the call doesn't run.
+
+When Smart Approvals can't write its approval, Quick emits an `AUTO_APPROVAL_REJECTED` event and evaluates the permission again. The records that follow depend on that evaluation and on any later decision that the user makes, so the number of records for such a call varies.
+
+Records for the same tool call share `tool_call_id` when that identifier is available.
+
+Every `TOOL_CALL_LOGS` record includes these common fields:
++ `resource_arn` – Resource ARN of your AWS Quick account.
++ `event_timestamp` – Unix epoch time in milliseconds when Quick made the decision.
++ `log_type` – `TOOL_CALL_LOGS`.
++ `account_id` – AWS account ID.
++ `event_id` – Unique identifier for the record. Use it to remove duplicate records.
++ `event_type` – The event that the record represents. Approval and denial outcomes appear in this field.
++ `status_code` – Always `success`. This field doesn't express the permission, approval, or denial outcome.
++ `connector_id` – Connector that the tool belongs to.
++ `action_id` – Tool or operation that the agent called, for example `jira_create_issue`.
+
+Quick includes the following fields when they're known. When a value isn't known, the field is `-`.
++ `user_arn` – AWS Quick user that the agent acted for. For scheduled and triggered runs, this is the user that the run acts on behalf of, who might not be the person reading the log.
++ `namespace` – AWS Quick namespace of the user.
++ `conversation_id` – Conversation that made the tool call. Use it to join a tool call to its conversation in `CHAT_LOGS`.
++ `agent_id` – Custom chat agent that made the call. This field is empty for the default assistant.
++ `surface_type` – Client experience where the call was made. This field uses the same values as `CHAT_LOGS`.
++ `tool_call_id` – Groups the records for one tool call when the identifier is available. This field is `-` when the producer or the approval client doesn't supply a valid tool call identifier.
++ `outpost_id` – Set only for local tools that run on a user's device.
+
+Records also contain `user_type`, `user_message_id`, and `system_message_id`. Quick currently delivers these fields as `-`.
+
+The `event_type` field takes one of the following values.
+
+`PERMISSION_EVALUATED`
+Quick evaluated the tool permission policies for a tool call. This is the only event type that has a `verdict`.
+
+`AUTO_APPROVED`
+Smart Approvals approved the tool call and wrote an `ALLOW_ONCE` grant.
+
+`AUTO_APPROVAL_REJECTED`
+Quick couldn't write the Smart Approvals grant, so it evaluates the permission again. The records that follow depend on that evaluation and on any decision that the user makes.
+
+`HUMAN_APPROVED`
+The user approved the tool call.
+
+`HUMAN_DENIED`
+The user denied or canceled the tool call, so the call doesn't run.
+
+Decision records add the following fields:
++ `verdict` – The policy result, present only on `PERMISSION_EVALUATED` records: `ALLOW` (the call runs), `REVIEW` (the call waits for approval), or `DENY` (Quick blocks the call). On approval and denial records, this field is `-`.
++ `decided_by` – The policy layer that produced the verdict, on `REVIEW` and `DENY` verdicts when it's known: `SYSTEM` (a built-in Quick rule), `ADMIN` (an administrator's tool permission setting), `CREATOR` (the agent creator's setting), `USER` (the user's own setting), `GUARDRAIL` (a guardrail), `NO_POLICY_DEFAULT` (no setting matched, so the default applied), `AUTO_APPROVAL_LIMIT` (a Smart Approvals usage limit), or `EVALUATION_FAILED` (the permission check couldn't complete, so Quick blocked the call).
++ `review_reason` – Why approval was needed, on some `REVIEW` verdicts: `CUSTOM_RULE_BREACHED` or `AUTO_APPROVAL_LIMIT_BREACH`.
++ `approved_by` – Who approved the call: `HUMAN` or `SMART_APPROVALS`.
++ `approver_arn` – AWS Quick user who approved the call, on `HUMAN_APPROVED` records.
++ `approval_scope` – How long the approval lasts: `ALLOW_ONCE` (this call only), `ALLOW_SESSION` (the rest of the conversation), or `ALLOW_ALWAYS` (until the user removes it). Smart Approvals always uses `ALLOW_ONCE`.
+
+The following example shows the three records for a tool call that Smart Approvals approved:
+
+```json
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1793660400001,
+    "log_type": "TOOL_CALL_LOGS",
+    "account_id": "111122223333",
+    "event_id": "3f1c2b9e-7a4d-4e1a-9c0b-2d6f8e5a1b7c",
+    "event_type": "PERMISSION_EVALUATED",
+    "status_code": "success",
+    "user_arn": "arn:aws:quicksight:us-east-1:111122223333:user/default/johndoe",
+    "namespace": "default",
+    "conversation_id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "tool_call_id": "tooluse_EXAMPLE1",
+    "connector_id": "jira",
+    "action_id": "jira_create_issue",
+    "verdict": "REVIEW",
+    "decided_by": "USER"
+}
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1793660400870,
+    "log_type": "TOOL_CALL_LOGS",
+    "account_id": "111122223333",
+    "event_id": "8d2e4f6a-1b3c-4d5e-8f7a-9b0c1d2e3f4a",
+    "event_type": "AUTO_APPROVED",
+    "status_code": "success",
+    "user_arn": "arn:aws:quicksight:us-east-1:111122223333:user/default/johndoe",
+    "namespace": "default",
+    "conversation_id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "tool_call_id": "tooluse_EXAMPLE1",
+    "connector_id": "jira",
+    "action_id": "jira_create_issue",
+    "approved_by": "SMART_APPROVALS",
+    "approval_scope": "ALLOW_ONCE"
+}
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1793660400902,
+    "log_type": "TOOL_CALL_LOGS",
+    "account_id": "111122223333",
+    "event_id": "c4b3a291-8e7d-4c6b-a5f4-e3d2c1b0a9f8",
+    "event_type": "PERMISSION_EVALUATED",
+    "status_code": "success",
+    "user_arn": "arn:aws:quicksight:us-east-1:111122223333:user/default/johndoe",
+    "namespace": "default",
+    "conversation_id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "tool_call_id": "tooluse_EXAMPLE1",
+    "connector_id": "jira",
+    "action_id": "jira_create_issue",
+    "verdict": "ALLOW",
+    "approved_by": "SMART_APPROVALS",
+    "approval_scope": "ALLOW_ONCE"
+}
+```
+
+The following example shows a tool call that an administrator's setting blocked:
+
+```json
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1793660600001,
+    "log_type": "TOOL_CALL_LOGS",
+    "account_id": "111122223333",
+    "event_id": "5e6f7a8b-9c0d-4e1f-a2b3-c4d5e6f7a8b9",
+    "event_type": "PERMISSION_EVALUATED",
+    "status_code": "success",
+    "user_arn": "arn:aws:quicksight:us-east-1:111122223333:user/default/johndoe",
+    "namespace": "default",
+    "conversation_id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "tool_call_id": "tooluse_EXAMPLE2",
+    "connector_id": "slack",
+    "action_id": "slack_send_message",
+    "verdict": "DENY",
+    "decided_by": "ADMIN"
+}
+```
+
+When an earlier `ALLOW_SESSION` or `ALLOW_ALWAYS` approval, or a policy setting, allows a tool call, `approved_by` is `-`.
+
+**Note**
+When you configure a customer managed AWS KMS key for delivery, AWS Quick encrypts the `user_arn`, `namespace`, `status_code`, `conversation_id`, `agent_id`, `surface_type`, and `approver_arn` fields.
 
 ## Security considerations
 <a name="quicksuite-chat-feedback-security-considerations"></a>

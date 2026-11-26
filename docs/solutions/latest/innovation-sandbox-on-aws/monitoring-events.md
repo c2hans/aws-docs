@@ -40,7 +40,7 @@ All Innovation Sandbox events follow this standard EventBridge structure:
 
 Events are organized into the following categories:
 +  **Lease Lifecycle Events** - Lease creation, approval, denial, and termination
-+  **Lease Monitoring Events** - Budget and duration threshold alerts
++  **Lease Monitoring Events** - Budget, spend rate, and duration threshold alerts
 +  **Lease Assignment Events** - Requests to share a lease, and confirmed access grants and removals
 +  **Account Management Events** - Account cleanup, drift detection, and account quarantine (automatic and manual)
 +  **Cost Reporting Events** - Cost report generation and failures
@@ -142,6 +142,8 @@ Published when a lease is terminated for any reason. The reason field provides s
 
  **Reason Types:** `Expired`, `BudgetExceeded`, `ManuallyTerminated`, `UserTerminated`, `AccountQuarantined`, `Ejected`, `ProvisioningFailed`
 
+For `BudgetExceeded`, `totalSpend` is the higher of the cost accrued on the lease and the cost that the budget check compared with the budget. When Amazon Bedrock token monitoring is on, the budget check includes the token cost estimate. For more information, see [Cost and budget](sandbox-spaces-cost.md).
+
  `UserTerminated` indicates that the leaseholder terminated their own lease; `ManuallyTerminated` indicates termination by an administrator or manager.
 
 ## Lease monitoring events
@@ -150,7 +152,7 @@ Published when a lease is terminated for any reason. The reason field provides s
 ### LeaseBudgetThresholdAlert
 <a name="lease-budget-threshold-alert"></a>
 
-Published when a lease’s spending reaches a configured budget threshold percentage.
+Published when a lease’s cost reaches a budget threshold whose action is **Send alert**. For information about how each cost basis is measured, see [Reported cost, estimated cost, and current cost](manager-guide.md#threshold-cost-basis).
 
  **Detail Type:** `LeaseBudgetThresholdAlert`
 
@@ -166,12 +168,76 @@ Published when a lease’s spending reaches a configured budget threshold percen
     },
     "accountId": "123456789012",
     "budget": 100.00,
-    "totalSpend": 80.00,
-    "budgetThresholdTriggered": 0.8,
-    "actionRequested": "ALERT"
+    "totalSpend": 72.40,
+    "budgetThresholdTriggered": 80.00,
+    "actionRequested": "ALERT",
+    "triggeredBy": "PREDICTED",
+    "predictedCost": 80.35,
+    "rate": 1.25,
+    "rateSource": "HOURLY",
+    "hoursToBudgetExhaustion": 15.72,
+    "lastReportedAt": "2024-01-15T08:00:12.345Z",
+    "insight": {
+      "kind": "COMPOSITION",
+      "service": "Amazon Elastic Compute Cloud - Compute",
+      "amount": 44.89,
+      "shareOfComparedSpend": 0.62
+    }
   }
 }
 ```
+
+ **Fields:**
+
+| Field | Description |
+| --- | --- |
+|  `totalSpend`  | Reported cost: the billed total from AWS Cost Explorer. |
+|  `budgetThresholdTriggered`  | The threshold amount in USD. |
+|  `triggeredBy`  |  `REPORTED` for a **Reported cost** threshold, or `PREDICTED` for an **Estimated cost** threshold. |
+|  `predictedCost`, `rate`, `rateSource`  |  `predictedCost` is the estimated cost in USD. `rate` is the spend rate used for the estimate, in USD per hour or per day, as `rateSource` shows (`HOURLY` or `DAILY`). |
+|  `hoursToBudgetExhaustion`  | Hours until the lease reaches its maximum budget at the current spend rate. |
+|  `lastReportedAt`  | The date and time when Innovation Sandbox recorded the latest reported cost from AWS Cost Explorer. |
+|  `insight`  | The service that explains the cost: the highest-cost service (`COMPOSITION`), the service with the largest cost change (`CHANGE`), or a new service (`NEW_ENTRANT`). Present only when **Enable service cost breakdown** is turned on. |
+|  `countdownRate`, `countdownRateSource`, `unbilledBedrockTokenCost`  |  `countdownRate` is the spend rate including Amazon Bedrock token usage, in USD per hour or per day, as `countdownRateSource` shows (`HOURLY` or `DAILY`). `unbilledBedrockTokenCost` is the unbilled Amazon Bedrock token cost in USD. Present only on leases with Amazon Bedrock token monitoring. |
+
+### LeaseSpendRateThresholdAlert
+<a name="lease-spend-rate-threshold-alert"></a>
+
+Published when a lease’s spend rate reaches a spend rate threshold whose action is **Send alert**. A spend rate threshold with **Freeze lease** publishes [LeaseFreezingThresholdAlert](#lease-freezing-threshold-alert) instead. Innovation Sandbox publishes at most one spending alert per lease per check. If a budget threshold and a spend rate threshold with **Send alert** are crossed in the same check, only `LeaseBudgetThresholdAlert` is published, but both crossings appear in **Breach history**. For more information, see [Spend rate thresholds](manager-guide.md#spend-rate-thresholds).
+
+ **Detail Type:** `LeaseSpendRateThresholdAlert`
+
+ **Schema:**
+
+```json
+{
+  "detail-type": "LeaseSpendRateThresholdAlert",
+  "detail": {
+    "leaseId": {
+      "uuid": "550e8400-e29b-41d4-a716-446655440000",
+      "userEmail": "developer@example.com"
+    },
+    "accountId": "123456789012",
+    "rateBasis": "HOURLY",
+    "thresholdRate": 2.00,
+    "measuredRate": 3.50,
+    "budget": 100.00,
+    "totalSpend": 42.75,
+    "predictedCost": 46.25,
+    "hoursToBudgetExhaustion": 15.36,
+    "lastReportedAt": "2024-01-15T08:00:12.345Z"
+  }
+}
+```
+
+ **Fields:**
+
+| Field | Description |
+| --- | --- |
+|  `rateBasis`  | The unit of both rates: `HOURLY` (**Per hour**) or `DAILY` (**Per day**). |
+|  `thresholdRate`  | The threshold rate in USD. |
+|  `measuredRate`  | The lease’s measured spend rate in USD. |
+| Other fields | Same as in [LeaseBudgetThresholdAlert](#lease-budget-threshold-alert). |
 
 ### LeaseBudgetExceeded
 <a name="lease-budget-exceeded"></a>
@@ -192,10 +258,13 @@ Published when a lease’s spending exceeds the configured budget limit.
     },
     "accountId": "123456789012",
     "budget": 100.00,
-    "totalSpend": 105.50
+    "totalSpend": 105.50,
+    "detectedBy": "LEASE_MONITORING"
   }
 }
 ```
+
+The `detectedBy` field shows which check found that the lease reached its maximum budget: `LEASE_MONITORING` (hourly lease monitoring) or `TOKEN_POLL` (Amazon Bedrock token monitoring). The `totalSpend` value is reported cost for `LEASE_MONITORING` and current cost for `TOKEN_POLL`.
 
 ### LeaseDurationThresholdAlert
 <a name="lease-duration-threshold-alert"></a>
@@ -225,7 +294,7 @@ Published when a lease reaches a configured duration threshold.
 ### LeaseFreezingThresholdAlert
 <a name="lease-freezing-threshold-alert"></a>
 
-Published when a lease reaches a threshold that triggers a freezing action. This event uses the same schema as LeaseFrozen.
+Published when a lease reaches a budget, spend rate, or duration threshold whose action freezes the lease. This event uses the same schema as [LeaseFrozen](#lease-frozen).
 
  **Detail Type:** `LeaseFreezingThresholdAlert`
 
@@ -242,9 +311,11 @@ Published when a lease reaches a threshold that triggers a freezing action. This
     "accountId": "123456789012",
     "reason": {
       "type": "BudgetExceeded",
-      "triggeredBudgetThreshold": 0.95,
+      "triggeredBudgetThreshold": 95.00,
       "budget": 100.00,
-      "totalSpend": 95.00
+      "totalSpend": 91.30,
+      "triggeredBy": "PREDICTED",
+      "rateSource": "HOURLY"
     }
   }
 }
@@ -293,13 +364,23 @@ Published when a lease is frozen (access suspended but not terminated).
     "accountId": "123456789012",
     "reason": {
       "type": "BudgetExceeded",
-      "triggeredBudgetThreshold": 0.95,
+      "triggeredBudgetThreshold": 95.00,
       "budget": 100.00,
-      "totalSpend": 95.00
+      "totalSpend": 95.00,
+      "triggeredBy": "REPORTED"
     }
   }
 }
 ```
+
+ **Reason Types:**
+
+| Type | Published when | Fields |
+| --- | --- | --- |
+|  `BudgetExceeded`  | The lease reaches a budget threshold with **Freeze lease**  |  `triggeredBudgetThreshold` (USD), `budget`, `totalSpend` (reported cost), `triggeredBy` (`REPORTED` or `PREDICTED`), `rateSource` (with `PREDICTED`) |
+|  `SpendRateExceeded`  | The lease reaches a spend rate threshold with **Freeze lease**  |  `rateBasis` (`HOURLY` or `DAILY`), `thresholdRate`, `measuredRate`, `budget`, `totalSpend` (reported cost) |
+|  `Expired`  | The lease reaches a duration threshold with **Freeze Lease**  |  `triggeredDurationThreshold`, `leaseDurationInHours`  |
+|  `ManuallyFrozen`  | An administrator or manager freezes the lease |  `comment`  |
 
 ### LeaseUnfrozen
 <a name="lease-unfrozen"></a>
@@ -661,5 +742,11 @@ Event schemas may evolve over time. Design your integration to be resilient:
 + Ignore unknown fields in event payloads
 + Provide default values for missing optional fields
 + Version your event processing logic when breaking changes occur
+
+Version 1.4.0 makes the following changes to lease monitoring events:
++ Adds the `LeaseSpendRateThresholdAlert` detail type
++ Adds optional fields to `LeaseBudgetThresholdAlert`, including `triggeredBy`
++ Adds the `SpendRateExceeded` reason type to `LeaseFreezingThresholdAlert` and `LeaseFrozen`, and the optional fields `triggeredBy` and `rateSource` to their `BudgetExceeded` reason
++ Adds the required field `detectedBy` to `LeaseBudgetExceeded`
 
 For the complete source code, refer to the Innovation Sandbox on AWS [GitHub repository](https://github.com/aws-solutions/innovation-sandbox-on-aws).

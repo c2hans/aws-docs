@@ -116,7 +116,7 @@ To grant access only to specific DICOM studies, attach a policy to the role that
                 "medical-imaging:SearchDICOMSeries"
             ],
             "Resource": [
-                "arn:aws:medical-imaging:us-west-2:{{account-id}}:datastore/{{your-datastore-id}}"
+                "arn:aws:medical-imaging:us-west-2:{{111122223333}}:datastore/{{your-datastore-id}}"
             ],
             "Condition": {
                 "StringEquals": {
@@ -145,7 +145,7 @@ An example policy for wildcard matching:
                 "medical-imaging:SearchDICOMSeries"
             ],
             "Resource": [
-                "arn:aws:medical-imaging:us-west-2:{{account-id}}:datastore/{{your-datastore-id}}"
+                "arn:aws:medical-imaging:us-west-2:{{111122223333}}:datastore/{{your-datastore-id}}"
             ],
             "Condition": {
                 "StringLike": {
@@ -170,7 +170,7 @@ An example policy for multiple matches:
                 "medical-imaging:SearchDICOMSeries"
             ],
             "Resource": [
-                "arn:aws:medical-imaging:us-west-2:{{account-id}}:datastore/{{your-datastore-id}}"
+                "arn:aws:medical-imaging:us-west-2:{{111122223333}}:datastore/{{your-datastore-id}}"
             ],
             "Condition": {
                 "StringEquals": {
@@ -201,7 +201,7 @@ To grant access only to specific image sets corresponding to a DICOM Series, att
                 "medical-imaging:SearchDICOMInstances"
             ],
             "Resource": [
-                "arn:aws:medical-imaging:us-west-2:{{account-id}}:datastore/{{your-datastore-id}}"
+                "arn:aws:medical-imaging:us-west-2:{{111122223333}}:datastore/{{your-datastore-id}}"
             ],
             "Condition": {
                 "StringEquals": {
@@ -232,7 +232,7 @@ To grant access only to image sets of a particular DICOM Study and Series, attac
                 "medical-imaging:SearchDICOMInstances"
             ],
             "Resource": [
-                "arn:aws:medical-imaging:us-west-2:{{account-id}}:datastore/{{your-datastore-id}}"
+                "arn:aws:medical-imaging:us-west-2:{{111122223333}}:datastore/{{your-datastore-id}}"
             ],
             "Condition": {
                 "StringEquals": {

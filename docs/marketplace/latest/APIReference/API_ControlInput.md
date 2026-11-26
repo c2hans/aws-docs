@@ -20,7 +20,7 @@ Pattern: `^[\w\-]+$`
 Required: Yes
 
  ** Input **   <a name="AWSMarketplaceService-Type-ControlInput-Input"></a>
-Optional. The input for the control, as a JSON document. The fields that a control accepts depend on the control.
+Optional. The input for the control, as a JSON document. The fields that a control accepts depend on the control. For a self-attested framework, the input is the result that you attest to. If you omit it, the control is recorded as `PASS`.
 Type: JSON value
 Required: No
 

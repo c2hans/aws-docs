@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Manage AWS IAM Identity Center permission sets as code by using AWS CodePipeline
-<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline"></a>
 
 *Andre Cavalcante and Claison Amorim, Amazon Web Services*
 

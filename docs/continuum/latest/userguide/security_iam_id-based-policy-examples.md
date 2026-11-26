@@ -10,10 +10,10 @@ The IAM action prefix for AWS Continuum is `continuum`. For instructions on crea
 
 **Topics**
 + [Policy best practices](#security_iam_service-with-iam-policy-best-practices)
-+ [Using the AWS Continuum console](#security_iam_id-based-policy-examples-console)
-+ [Allow users to view their own permissions](#security_iam_id-based-policy-examples-view-own-permissions)
-+ [Allow users to view findings and issues](#security_iam_id-based-policy-examples-view-findings)
-+ [Allow users to submit custom findings](#security_iam_id-based-policy-examples-submit-findings)
++ [Allowing users to access the AWS Continuum console](#security_iam_id-based-policy-examples-console)
++ [Allowing users to view their own permissions](#security_iam_id-based-policy-examples-view-own-permissions)
++ [Allowing users to view findings and issues](#security_iam_id-based-policy-examples-view-findings)
++ [Allowing users to submit custom findings](#security_iam_id-based-policy-examples-submit-findings)
 
 ## Policy best practices
 <a name="security_iam_service-with-iam-policy-best-practices"></a>
@@ -27,7 +27,7 @@ Identity-based policies determine whether someone can create, access, or delete 
 
 For more information about best practices in IAM, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
 
-## Using the AWS Continuum console
+## Allowing users to access the AWS Continuum console
 <a name="security_iam_id-based-policy-examples-console"></a>
 
 To access the AWS Continuum console, you must have a minimum set of permissions. These permissions must allow you to list and view details about the AWS Continuum resources in your AWS account. If you create an identity-based policy that is more restrictive than the minimum required permissions, the console won't function as intended for entities (users or roles) with that policy.
@@ -59,7 +59,7 @@ Use the following permissions to create and manage integrations and their roles.
 | Create a GitHub integration | Console operator | `continuum:StartIntegrationAuthorization`, `continuum:CreateIntegration`, `continuum:ListIntegrations`, and `continuum:GetIntegration`. GitHub installation and OAuth authorization are separate prerequisites. Creating a GitHub integration does not require `iam:PassRole`. |
 | Create an Amazon S3 integration | Console operator | `continuum:CreateIntegration`, `continuum:ListIntegrations`, and `continuum:GetIntegration`. The role picker requires `iam:ListRoles` with `Resource: "*"`. Bucket browsing requires `s3:ListAllMyBuckets` with `Resource: "*"`. Creation also requires `iam:PassRole` on the exact same-account integration role under `/continuum/integrations/`. Restrict `iam:PassRole` with `iam:PassedToService` set to `continuum.amazonaws.com`. |
 | Create the Amazon S3 integration role | Customer administrator | `iam:CreateRole` and `iam:PutRolePolicy`. The verification command also requires `iam:GetRole`. Create the role under `/continuum/integrations/`. For the trust and access policies, see [Granting access to the bucket](cv-getting-started.md#cv-getting-started-s3-role). |
-| Read source code and deliver patches | Amazon S3 integration role | AWS Continuum assumes this role by using its trust policy and matching external ID. Grant the integration role these permissions:+ Bucket – unconditional `s3:ListBucket` on the bucket.<br />+ Source objects – `s3:GetObject` and `s3:GetObjectVersion`.<br />+ Patch destination – `s3:PutObject`, `s3:GetObject`, and `s3:GetObjectVersion`.<br />These permissions belong to the integration role, not the console operator. |
+| Read source code and deliver patches | Amazon S3 integration role | AWS Continuum assumes this role by using its trust policy and matching external ID. Grant the integration role these permissions:+  Bucket – Unconditional `s3:ListBucket` on the bucket <br />+  Source objects – `s3:GetObject` and `s3:GetObjectVersion` <br />+  Patch destination – `s3:PutObject`, `s3:GetObject`, and `s3:GetObjectVersion` <br />These permissions belong to the integration role, not the console operator. |
 | Delete an integration | Console operator | `continuum:DeleteIntegration`, `continuum:ListIntegrations`, and `continuum:GetIntegration`. You cannot delete an integration that an environment references. |
 
 Use the following permissions for collector tasks.
@@ -76,7 +76,7 @@ Use the following permissions for collector tasks.
 
 For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
-## Allow users to view their own permissions
+## Allowing users to view their own permissions
 <a name="security_iam_id-based-policy-examples-view-own-permissions"></a>
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
@@ -116,74 +116,72 @@ This example shows how you might create a policy that allows IAM users to view t
 }
 ```
 
-## Allow users to view findings and issues
+## Allowing users to view findings and issues
 <a name="security_iam_id-based-policy-examples-view-findings"></a>
 
 Use this policy to view findings and issues in one environment through the AWS Continuum API.
 
 The `ListFindingsAndIssuesInEnvironment` statement grants list permissions on the environment's Amazon Resource Name (ARN). The `GetFindingsAndIssuesInEnvironment` statement grants get permissions on finding and issue ARNs within that environment.
 
-For more information about permissions to use the console, see [Using the AWS Continuum console](#security_iam_id-based-policy-examples-console).
+For more information about permissions to use the console, see [Allowing users to access the AWS Continuum console](#security_iam_id-based-policy-examples-console).
 
-Replace {{region}} with your AWS Region. Replace {{account-id}} with your AWS account ID. Replace {{environment-id}} with the ID of the environment that you want to access.
+**To allow users to view findings and issues**
++ Use the following policy, where {{region}} is your AWS Region, {{account-id}} is your AWS account ID, and {{environment-id}} is the ID of the environment that you want to access:
 
-Use the following policy:
+  ```json
+  {
+     "Version": "2012-10-17",
+     "Statement": [
+        {
+           "Sid": "ListFindingsAndIssuesInEnvironment",
+           "Effect": "Allow",
+           "Action": [
+              "continuum:ListCodeFindings",
+              "continuum:ListCodeIssues"
+           ],
+           "Resource": "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}"
+        },
+        {
+           "Sid": "GetFindingsAndIssuesInEnvironment",
+           "Effect": "Allow",
+           "Action": [
+              "continuum:GetCodeFinding",
+              "continuum:GetCodeIssue"
+           ],
+           "Resource": [
+              "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}/code-findings/*",
+              "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}/code-issues/*"
+           ]
+        }
+     ]
+  }
+  ```
 
-```
-{
-   "Version": "2012-10-17",
-   "Statement": [
-      {
-         "Sid": "ListFindingsAndIssuesInEnvironment",
-         "Effect": "Allow",
-         "Action": [
-            "continuum:ListCodeFindings",
-            "continuum:ListCodeIssues"
-         ],
-         "Resource": "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}"
-      },
-      {
-         "Sid": "GetFindingsAndIssuesInEnvironment",
-         "Effect": "Allow",
-         "Action": [
-            "continuum:GetCodeFinding",
-            "continuum:GetCodeIssue"
-         ],
-         "Resource": [
-            "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}/code-findings/*",
-            "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}/code-issues/*"
-         ]
-      }
-   ]
-}
-```
-
-## Allow users to submit custom findings
+## Allowing users to submit custom findings
 <a name="security_iam_id-based-policy-examples-submit-findings"></a>
 
 Use this policy to submit custom findings to one environment through the AWS Continuum API.
 
 `continuum:CreateCodeFinding` requires permission on both the environment ARN and the `code-findings/*` resources within that environment. Granting access to only one of these resources doesn't authorize the request.
 
-For more information about permissions to use the console, see [Using the AWS Continuum console](#security_iam_id-based-policy-examples-console).
+For more information about permissions to use the console, see [Allowing users to access the AWS Continuum console](#security_iam_id-based-policy-examples-console).
 
-Replace {{region}} with your AWS Region. Replace {{account-id}} with your AWS account ID. Replace {{environment-id}} with the ID of the environment that you want to access.
+**To allow users to submit custom findings**
++ Use the following policy, where {{region}} is your AWS Region, {{account-id}} is your AWS account ID, and {{environment-id}} is the ID of the environment that you want to access:
 
-Use the following policy:
-
-```
-{
-   "Version": "2012-10-17",
-   "Statement": [
-      {
-         "Sid": "SubmitCustomFindings",
-         "Effect": "Allow",
-         "Action": "continuum:CreateCodeFinding",
-         "Resource": [
-            "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}",
-            "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}/code-findings/*"
-         ]
-      }
-   ]
-}
-```
+  ```json
+  {
+     "Version": "2012-10-17",
+     "Statement": [
+        {
+           "Sid": "SubmitCustomFindings",
+           "Effect": "Allow",
+           "Action": "continuum:CreateCodeFinding",
+           "Resource": [
+              "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}",
+              "arn:aws:continuum:{{region}}:{{account-id}}:environments/{{environment-id}}/code-findings/*"
+           ]
+        }
+     ]
+  }
+  ```

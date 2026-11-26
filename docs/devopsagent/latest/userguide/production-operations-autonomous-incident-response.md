@@ -51,6 +51,39 @@ To investigate faster, AWS DevOps Agent can delegate parts of an investigation t
 
 You can expand any sub-agent entry to see its complete nested timeline, including the context and task it was given, its individual reasoning steps with timing, the tool calls it made, and its own findings. You can trace exactly how each part of a parallel investigation reached its conclusions. Collapse the entry again to keep the overall timeline readable.
 
+## Fast agent
+<a name="fast-agent"></a>
+
+The *Fast agent* is a feature of AWS DevOps Agent that gives you a preliminary root cause early, before the full investigation finishes. It starts with each investigation and investigates the same incident with a narrower set of tools. It stops as soon as it can explain the symptoms, and it doesn't propose a mitigation.
+
+An investigation starts the sub-agents described in [Viewing sub-agent execution timelines](#viewing-sub-agent-execution-timelines) to perform specific tasks. The Fast agent is different: it runs on its own, alongside the investigation.
+
+When the Fast agent finds a root cause, the following happens:
++ The cause section of the **Summary** tab shows that root cause, labeled **Preliminary**. When the investigation identifies its own cause, it replaces the preliminary one.
++ The investigation receives the Fast agent's report once and compares it with its own evidence. Its final root cause can differ from the preliminary one.
+
+The Fast agent runs only when an investigation starts, not when you send a message to an investigation that's already running. It stops when the investigation ends.
+
+### Tracking Fast agent time
+<a name="tracking-fast-agent-time"></a>
+
+The Fast agent's time is tracked as investigation time, in addition to the investigation's own time. It runs from when the investigation starts until the Fast agent reports or the investigation ends.
+
+### Turning the Fast agent on or off
+<a name="turning-the-fast-agent-on-or-off"></a>
+
+The Fast agent is on by default for each Agent Space, including Agent Spaces created before it was available. To turn it off or back on, you need `aidevops:UpdateAgentSpace`. For more information, see [DevOps Agent IAM permissions](aws-devops-agent-security-devops-agent-iam-permissions.md).
+
+To turn the Fast agent off or on in the console:
+
+1. Open the AWS DevOps Agent console at [https://console.aws.amazon.com/aidevops/home\#/agent-spaces](https://console.aws.amazon.com/aidevops/home#/agent-spaces), and choose your Agent Space.
+
+1. On the **Configuration** tab, in the **Fast agent** section, turn **Enable the Fast agent** off or on.
+
+1. To confirm turning it off, choose **Turn off the Fast agent**.
+
+The change affects only investigations that start after it. A Fast agent that's already running continues until its investigation ends.
+
 ## Chat with an investigation
 <a name="chat-with-an-investigation"></a>
 
@@ -136,9 +169,11 @@ AWS DevOps Agent makes one of three decisions:
 ### Viewing triage decisions
 <a name="viewing-triage-decisions"></a>
 
-When incidents are linked, the primary investigation receives a steering message containing the linked incident's details and correlation reasoning. On your AWS DevOps Agent Space web app, you'll see a status of **LINKED** along with correlation reasoning explaining why incidents were linked. The primary investigation displays a list of all linked incidents, allowing you to see the full scope of related issues being investigated together. Your external ticket system (ServiceNow, PagerDuty, etc.) and communication channel (Slack) will receive a notification that the incident was linked along with correlation reasoning.
+When incidents are linked, the primary investigation receives a steering message containing the linked incident's details and correlation reasoning. On your AWS DevOps Agent Space web app, you'll see a status of **LINKED** along with correlation reasoning explaining why incidents were linked. The primary investigation displays a list of all linked incidents, allowing you to see the full scope of related issues being investigated together. Your external ticket system (for example, ServiceNow and PagerDuty) and communication channel (Microsoft Teams) will receive a notification that the incident was linked along with correlation reasoning. Slack doesn't post a notice when incidents are linked.
 
 When incidents are skipped, the AWS DevOps Agent Space web app displays a status of **SKIPPED** along with the reason explaining why the incident was filtered. Your external ticket system and communication channel also receive a notification that the incident was skipped along with the skip reason.
+
+An integration doesn't receive the linked or skipped notification if its notifications are turned off, or if its notification policy filter excludes the incident. For more information about notification policies, see [Notification policies](connecting-to-ticketing-and-chat-notification-policies.md).
 
 ### Correcting triage decisions
 <a name="correcting-triage-decisions"></a>

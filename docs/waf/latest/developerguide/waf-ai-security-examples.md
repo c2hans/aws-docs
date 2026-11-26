@@ -17,6 +17,7 @@ The examples show each label with its full namespace, `awswaf:managed:aws:ai-sec
 + [Scoping the rule group to your agentic endpoints](waf-ai-security-example-scope-down.md)
 + [Overriding the blocking rules during rollout](waf-ai-security-example-rollout-overrides.md)
 + [Blocking messages that AWS WAF couldn't assess](waf-ai-security-example-block-unassessed.md)
++ [Blocking MCP requests at unsupported protocol versions](waf-ai-security-example-block-unsupported-mcp.md)
 + [Acting on a single finding category](waf-ai-security-example-single-category.md)
 + [Blocking a prompt attack only from unauthenticated clients](waf-ai-security-example-anonymous-clients.md)
 + [Alarming on failed Amazon Bedrock calls](waf-ai-security-example-call-failed-alarm.md)

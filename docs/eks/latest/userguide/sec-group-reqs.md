@@ -21,7 +21,10 @@ When you create a cluster, Amazon EKS creates a security group that’s named `e
 | Outbound | All | All |  | 0.0.0.0/0(`IPv4`) or ::/0 (`IPv6`) |
 | Outbound | All | All |  | Self (for EFA traffic) |
 
-The default security group includes an outbound rule that allows Elastic Fabric Adapter (EFA) traffic with the destination of the same security group. This enables EFA traffic within the cluster, which is beneficial for AI/ML and High Performance Computing (HPC) workloads. For more information, see [Elastic Fabric Adapter for AI/ML and HPC workloads on Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html) in the *Amazon Elastic Compute Cloud User Guide*.
+For clusters on Kubernetes version `1.33` or later, the default security group includes an outbound rule that allows Elastic Fabric Adapter (EFA) traffic with the destination of the same security group. Amazon EKS adds this rule to new clusters and to existing clusters when you upgrade them to version `1.33` or later. This rule enables EFA traffic within the cluster, which is beneficial for AI/ML and High Performance Computing (HPC) workloads. For more information, see [Elastic Fabric Adapter for AI/ML and HPC workloads on Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html) in the *Amazon Elastic Compute Cloud User Guide*.
+
+**Note**
+For new clusters created with Kubernetes version `1.33` or later, the inbound rule of the default cluster security group has the description `Allows EFA traffic, which is not matched by CIDR rules.` If you upgrade a cluster created with an earlier version to `1.33` or later, Amazon EKS doesn’t add this description to its existing inbound rule.
 
 **Important**
 If your cluster doesn’t need the outbound rule to `0.0.0.0/0` (IPv4), `::/0` (IPv6), you can remove it. If you remove it, you must still have the minimum rules listed in [Restricting cluster traffic](#security-group-restricting-cluster-traffic). If you remove the inbound or outbound rules that allow traffic to/from the cluster security group itself, Amazon EKS recreates it whenever the cluster is updated.

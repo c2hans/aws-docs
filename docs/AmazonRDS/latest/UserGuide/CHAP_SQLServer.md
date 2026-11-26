@@ -77,33 +77,96 @@ There are also advanced administrative tasks for working with SQL Server DB inst
 <a name="SQLServer.Concepts.General.FeatureSupport.Limits"></a>
 
 The Amazon RDS implementation of Microsoft SQL Server on a DB instance has some limitations that you should be aware of:
-+ The maximum number of databases supported on a DB instance depends on the instance class type and the availability mode—Single-AZ, Multi-AZ Database Mirroring (DBM), or Multi-AZ Availability Groups (AGs). The Microsoft SQL Server system databases don't count toward this limit.
++ The maximum number of databases supported on a DB instance depends on the SQL Server edition, the instance class type, and the availability mode—Single-AZ, Multi-AZ with Database Mirroring (DBM), Multi-AZ with Always On Availability Groups (AGs), or, for Web Edition, Multi-AZ with block level replication. The Microsoft SQL Server system databases don't count toward this limit. On Multi-AZ DB instances with Always On AGs, on DB instances with read replicas, and on read replicas, the database count also depends on the number of worker threads. The number of worker threads is the `max worker threads` value in your parameter group or, if that value is `0`, a default that SQL Server calculates from the vCPU count. Amazon RDS requires three worker threads per database. See the following sections for more information.
 
-  The following table shows the maximum number of supported databases for each instance class type and availability mode. Use this table to help you decide if you can move from one instance class type to another, or from one availability mode to another. If your source DB instance has more databases than the target instance class type or availability mode can support, modifying the DB instance fails. You can see the status of your request in the **Events** pane.
+  The following tables show the maximum number of supported databases for each edition, instance class type, and availability mode. Use these tables to help you decide if you can move from one instance class type to another, or from one availability mode to another. If your source DB instance has more databases than the target instance class type or availability mode can support, modifying the DB instance fails. You can see the status of your request in the **Events** pane.
 
+**Enterprise Edition and Enterprise Developer Edition**
+<a name="rds-sql-server-max-db-count-enterprise"></a>
 <table>
 <thead>
-  <tr><th>Instance type</th><th>vCPU configured on RDS</th><th>Single-AZ</th><th>Multi-AZ with DBM</th><th>Multi-AZ with Always On AGs</th></tr>
+  <tr><th>Instance type</th><th>Single-AZ</th><th>Multi-AZ with DBM</th><th>Multi-AZ with Always On AGs</th></tr>
 </thead>
 <tbody>
-  <tr><td>db.*.micro to db.*.medium</td><td>N/A</td><td>30</td><td>N/A</td><td>N/A</td></tr>
-  <tr><td>db.*.large</td><td>N/A</td><td>30</td><td>30</td><td>30</td></tr>
-  <tr><td>db.*.xlarge to db.*.16xlarge</td><td>4 vCPUs - 64 vCPUs</td><td>100</td><td>50</td><td>75</td></tr>
-  <tr><td>db.*.24xlarge to db.*.32xlarge</td><td>4 vCPUs - 64 vCPUs</td><td>100</td><td>50</td><td>75</td></tr>
-  <tr><td>db.*.24xlarge to db.*.32xlarge</td><td>96 vCPUs - 128 vCPUs</td><td>100</td><td> 50</td><td>100</td></tr>
+  <tr><td>db.*.xlarge to db.*.96xlarge</td><td>500</td><td>50</td><td>500</td></tr>
+</tbody>
+</table>
+
+**Standard Edition and Standard Developer Edition**
+<a name="rds-sql-server-max-db-count-standard"></a>
+<table>
+<thead>
+  <tr><th>Instance type</th><th>Single-AZ</th><th>Multi-AZ with DBM</th><th>Multi-AZ with Always On AGs</th></tr>
+</thead>
+<tbody>
+  <tr><td>db.*.large</td><td>30</td><td>30</td><td>30</td></tr>
+  <tr><td>db.*.xlarge to db.*.16xlarge</td><td>500</td><td>50</td><td>75</td></tr>
+  <tr><td>db.*.24xlarge to db.*.32xlarge</td><td>500</td><td>50</td><td>100</td></tr>
+</tbody>
+</table>
+
+**Web Edition**
+<a name="rds-sql-server-max-db-count-web"></a>
+<table>
+<thead>
+  <tr><th>Instance type</th><th>Single-AZ</th><th>Multi-AZ</th></tr>
+</thead>
+<tbody>
+  <tr><td>db.*.small to db.*.large</td><td>30</td><td>30</td></tr>
+  <tr><td>db.*.xlarge to db.*.8xlarge</td><td>500</td><td>500</td></tr>
+</tbody>
+</table>
+
+**Express Edition**
+<a name="rds-sql-server-max-db-count-express"></a>
+<table>
+<thead>
+  <tr><th>Instance type</th><th>Single-AZ</th></tr>
+</thead>
+<tbody>
+  <tr><td>db.t3.micro to db.t3.large</td><td>30</td></tr>
+  <tr><td>db.t3.xlarge</td><td>100</td></tr>
 </tbody>
 </table>
 
   \* Represents the different instance class types.
+**Note**
+For the burstable instance classes db.t3.xlarge and db.t3.2xlarge, the maximum number of databases is the following:
+Single-AZ and Web Edition Multi-AZ – 100
+Multi-AZ with Always On AGs – 75
+Multi-AZ with DBM – 50
 
-  For example, let's say that your DB instance runs on a db.\*.16xlarge with Single-AZ and that it has 76 databases. You modify the DB instance to upgrade to using Multi-AZ Always On AGs. This upgrade fails, because your DB instance contains more databases than your target configuration can support. If you upgrade your instance class type to db.\*.24xlarge instead, the modification succeeds.
+  For example, using the preceding tables, suppose that your DB instance runs Standard Edition on a db.\*.16xlarge with Single-AZ and has 76 databases. You modify the DB instance to use Multi-AZ Always On AGs. This modification fails because your DB instance contains more databases than your target configuration can support. If you upgrade your instance class type to db.\*.24xlarge instead, the modification succeeds.
 
-  If the upgrade fails, you see events and messages similar to the following:
+  If the modification fails, you see events and messages similar to the following:
   +  `Unable to modify database instance class. The instance has 76 databases, but after conversion it would only support 75.`
   +  `Unable to convert the DB instance to Multi-AZ: The instance has 76 databases, but after conversion it would only support 75.`
 
    If the point-in-time restore or snapshot restore fails, you see events and messages similar to the following:
   +  `Database instance put into incompatible-restore. The instance has 76 databases, but after conversion it would only support 75.`
+
+  Some DB instances also have a database limit based on the number of SQL Server worker threads. This limit applies if your DB instance uses Always On AGs for Multi-AZ, has read replicas, or is a read replica. The instance supports at most one database for every three worker threads. The lower of this limit and the value in the preceding tables applies.
+
+  The number of worker threads is the value of the `max worker threads` parameter if you set it. Otherwise, SQL Server calculates it from the number of vCPUs on the instance. If you lower `max worker threads` or reduce the number of vCPUs on the DB instance, make sure that the instance can still support its current number of databases.
+
+  The default parameter value for `max worker threads` is `0`, deferring the configuration to the default value calculated by SQL Server based on the logical CPU (vCPU) count. If you use Optimize CPU, the number of vCPUs is the number of CPU cores multiplied by the threads per core. For SQL Server 2016 SP2 and later, SQL Server calculates the number of worker threads as follows:
+  + If the instance has up to 4 vCPUs, SQL Server uses 512 worker threads.
+  + If the instance has more than 4 and up to 64 vCPUs, SQL Server uses 512 \+ ((vCPUs - 4) × 16) worker threads.
+  + If the instance has more than 64 vCPUs, SQL Server uses 512 \+ ((vCPUs - 4) × 32) worker threads.
+
+  For more information about how SQL Server calculates the number of worker threads, see [Configure the max worker threads server configuration option](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/configure-the-max-worker-threads-server-configuration-option) on the Microsoft Learn website.
+
+  For example, suppose that your DB instance runs Enterprise Edition on a db.r5.4xlarge with Multi-AZ Always On AGs and 16 vCPUs. The instance uses the default parameter group, where `max worker threads` is `0`, so SQL Server calculates the number of worker threads from the vCPU count. The maximum number of databases is calculated as follows:
+
+  1. SQL Server uses 512 \+ ((16 - 4) × 16) = 704 worker threads.
+
+  1. The database limit based on worker threads is 704 / 3 = 234 databases, rounded down.
+
+  1. The Enterprise Edition table shows 500 databases for this configuration. The lower value applies, so the instance supports 234 databases.
+
+  If you set `max worker threads` to 1500 on the same DB instance, the database limit based on worker threads is 1500 / 3 = 500. In this case, the instance supports 500 databases.
+
+  For DB instances that don't use Always On AGs, Amazon RDS temporarily raises worker threads while a backup runs.
 + The following ports are reserved for Amazon RDS, and you can't use them when you create a DB instance: `1234, 1434, 3260, 3343, 3389, 47001,` and `49152-49156`.
 + Client connections from IP addresses within the range 169.254.0.0/16 are not permitted. This is the Automatic Private IP Addressing Range (APIPA), which is used for local-link addressing.
 + SQL Server Standard Edition uses only a subset of the available processors if the DB instance has more processors than the software limits (24 cores, 4 sockets, and 128GB RAM). Examples of this are the db.m5.24xlarge and db.r5.24xlarge instance classes.

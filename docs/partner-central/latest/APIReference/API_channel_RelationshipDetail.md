@@ -12,6 +12,12 @@ Detailed information about a partner relationship.
 **Note**
 In the following list, the required parameters are described first.
 
+ ** accountScope **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-accountScope"></a>
+The account scope of the managed services relationship. Applies only to managed services relationships.
+Type: String
+Valid Values: `ENTIRE_ORGANIZATION | SPECIFIC_MEMBER_ACCOUNTS`
+Required: No
+
  ** arn **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-arn"></a>
 The Amazon Resource Name (ARN) of the relationship.
 Type: String
@@ -28,7 +34,7 @@ Required: No
  ** associationType **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-associationType"></a>
 The type of association for the relationship.
 Type: String
-Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL`
+Valid Values: `DOWNSTREAM_SELLER | END_CUSTOMER | INTERNAL | MANAGED_SERVICES_END_CUSTOMER`
 Required: No
 
  ** catalog **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-catalog"></a>
@@ -36,6 +42,13 @@ The catalog identifier associated with the relationship.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-zA-Z]*`
+Required: No
+
+ ** channelContractId **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-channelContractId"></a>
+The identifier of the channel contract currently in effect for the relationship. Applies only to managed services relationships.
+Type: String
+Length Constraints: Fixed length of 16.
+Pattern: `cc-[a-z0-9]{13}`
 Required: No
 
  ** createdAt **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-createdAt"></a>
@@ -48,6 +61,11 @@ The display name of the relationship.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 30.
 Pattern: `[^\x00-\x1F\x7F]*`
+Required: No
+
+ ** endDate **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-endDate"></a>
+The end date of the relationship.
+Type: Timestamp
 Required: No
 
  ** id **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-id"></a>
@@ -65,7 +83,7 @@ Pattern: `pma-[a-z0-9]{13}`
 Required: No
 
  ** resaleAccountModel **   <a name="AWSPartnerCentral-Type-channel_RelationshipDetail-resaleAccountModel"></a>
-The resale account model for the relationship.
+The resale account model for the relationship. Applies only to billing transfer relationships.
 Type: String
 Valid Values: `DISTRIBUTOR | END_CUSTOMER | SOLUTION_PROVIDER`
 Required: No

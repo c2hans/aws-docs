@@ -238,6 +238,17 @@ By default, your new subnets are implicitly associated with your VPC’s [main r
    ```bash
    kubectl set env daemonset aws-node -n kube-system AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG=true
    ```
+**Managing the VPC CNI plugin as an Amazon EKS add-on**
+This command applies only when you manage the Amazon VPC CNI plugin as a self-managed add-on. If you manage it as an Amazon EKS add-on, don’t set this environment variable with `kubectl set env`. Amazon EKS manages the `AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG` field in the `aws-node` DaemonSet. After you change it with `kubectl`, the next add-on update fails with a configuration conflict, or, with `--resolve-conflicts OVERWRITE`, resets the value to `false` and turns off custom networking. To keep the setting across add-on updates, set it in the add-on configuration instead:
+
+   ```bash
+   aws eks update-addon \
+       --cluster-name my-custom-networking-cluster \
+       --addon-name vpc-cni \
+       --resolve-conflicts OVERWRITE \
+       --configuration-values '{"env":{"AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG":"true"}}'
+   ```
+The `--configuration-values` value replaces the add-on’s whole stored configuration. If you already set configuration values for the add-on, such as `enableNetworkPolicy`, include them in the JSON. To view your current values, run `aws eks describe-addon --cluster-name my-custom-networking-cluster --addon-name vpc-cni --query addon.configurationValues`. To view the configuration keys that your add-on version supports, run `aws eks describe-addon-configuration --addon-name vpc-cni --addon-version {{version-number}} `. For more information about updating Amazon EKS add-ons, see [Update an Amazon EKS add-on](updating-an-add-on.md).
 
 1. Retrieve the ID of your [cluster security group](sec-group-reqs.md) and store it in a variable for use in the next step. Amazon EKS automatically creates this security group when you create your cluster.
 
@@ -329,6 +340,16 @@ If you also use security groups for Pods, the security group that’s specified 
 
       ```bash
       kubectl set env daemonset aws-node -n kube-system ENI_CONFIG_LABEL_DEF=topology.kubernetes.io/zone
+      ```
+**Managing the VPC CNI plugin as an Amazon EKS add-on**
+If you manage the Amazon VPC CNI plugin as an Amazon EKS add-on, set `ENI_CONFIG_LABEL_DEF` in the add-on configuration instead of with `kubectl set env`, so that the add-on configuration holds all of your custom networking settings. Because each update replaces the stored configuration, include `AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG` and any other values that you already set.
+
+      ```bash
+      aws eks update-addon \
+          --cluster-name my-custom-networking-cluster \
+          --addon-name vpc-cni \
+          --resolve-conflicts OVERWRITE \
+          --configuration-values '{"env":{"AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG":"true","ENI_CONFIG_LABEL_DEF":"topology.kubernetes.io/zone"}}'
       ```
 
 ## Step 4: Deploy Amazon EC2 nodes

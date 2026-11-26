@@ -34,7 +34,7 @@ EKS Hybrid Nodes has the following high-level features:
 ## Considerations
 <a name="hybrid-nodes-general"></a>
 + EKS Hybrid Nodes can be used with new or existing EKS clusters.
-+ EKS Hybrid Nodes is available in all AWS Regions, except the AWS GovCloud (US) Regions and the AWS China Regions.
++ EKS Hybrid Nodes is available in all commercial AWS Regions and the China Regions.
 + EKS Hybrid Nodes must have a reliable connection between your on-premises environment and AWS. EKS Hybrid Nodes is not a fit for disconnected, disrupted, intermittent or limited (DDIL) environments. If you are running in a DDIL environment, consider [Amazon EKS Anywhere](https://aws.amazon.com/eks/eks-anywhere/). Reference the [Best Practices for EKS Hybrid Nodes](https://docs.aws.amazon.com/eks/latest/best-practices/hybrid-nodes-network-disconnections.html) for information on how hybrid nodes behave during network disconnection scenarios.
 + Running EKS Hybrid Nodes on cloud infrastructure, including AWS Regions, AWS Local Zones, AWS Outposts, or in other clouds, is not supported. You will be charged the hybrid nodes fee if you run hybrid nodes on Amazon EC2 instances.
 + Billing for hybrid nodes starts when the nodes join the EKS cluster and stops when the nodes are removed from the cluster. Be sure to remove your hybrid nodes from your EKS cluster if you are not using them.

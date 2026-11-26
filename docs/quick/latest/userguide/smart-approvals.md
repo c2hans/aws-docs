@@ -78,6 +78,8 @@ When you turn Smart Approvals off, your eligible actions need your review instea
 
 AWS Quick records Smart Approvals activity in AWS CloudTrail. CloudTrail records each action that Smart Approvals approves and each change that a user makes to their Smart Approvals setting. Each review event identifies the user, the agent, the connector and action, and the time. All Smart Approvals events use the event source `quicksight.amazonaws.com`.
 
+To audit each tool call that Smart Approvals approves, together with the initial permission evaluation and, when the call runs, the final permission evaluation, deliver the `TOOL_CALL_LOGS` vended log. For more information, see [Tool call logs](monitoring-cloudwatch-logs.md#quicksuite-tool-call-logs).
+
 ### Changes to a user's Smart Approvals setting
 <a name="smart-approvals-audit-setting"></a>
 

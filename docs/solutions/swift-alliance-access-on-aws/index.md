@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/swift-alliance-access-on-aws/i
 title: 'Guidance for SWIFT Alliance Access on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/swift-alliance-access-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for SWIFT Alliance Access on AWS

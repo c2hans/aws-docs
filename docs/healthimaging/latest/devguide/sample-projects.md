@@ -18,10 +18,10 @@ An [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) project fo
 **[ Amazon CloudFront Delivery](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/amazon-cloudfront-delivery)**
 An AWS serverless project for creating an [Amazon CloudFront](https://aws.amazon.com/cloudfront/) distribution with an HTTPS endpoint that caches (by using GET) and delivers image frames from the edge. By default, the endpoint authenticates requests with an Amazon Cognito JSON web token (JWT). Both authentication and request signing is done at the edge using [Lambda@Edge](https://aws.amazon.com/lambda/edge/). This service is a feature of Amazon CloudFront that lets you run code closer to users of your application, which improves performance and reduces latency. There is no infrastucture to manage.
 
-**[ AWS HealthImaging Viewer UI](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/imaging-viewer-ui)**
+**[AWS HealthImaging Viewer UI](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/imaging-viewer-ui)**
 An [AWS Amplify](https://aws.amazon.com/amplify/) project for deploying a frontend UI with backend authentication with which you can view image set metadata attributes and image frames (pixel data) stored in AWS HealthImaging using progressive decoding. You can optionally integrate the Tile Level Marker (TLM) Proxy and/or Amazon CloudFront Delivery projects above to load image frames using an alternative method.
 
-**[ AWS HealthImaging DICOMweb Proxy](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/dicomweb-proxy)**
+**[AWS HealthImaging DICOMweb Proxy](https://github.com/aws-samples/aws-healthimaging-samples/tree/main/dicomweb-proxy)**
 A Python-based project for enabling DICOMweb WADO-RS and QIDO-RS endpoints on a HealthImaging data store to support web-based medical imaging viewers and other DICOMweb-compatible apps.
 This project does not use HealthImaging's representation of DICOMweb APIs described in [Using DICOMweb with AWS HealthImaging](using-dicomweb.md).
 

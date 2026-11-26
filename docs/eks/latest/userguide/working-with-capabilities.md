@@ -252,12 +252,13 @@ When you no longer need a capability on your cluster, you can delete the capabil
 
 **Important**
  **Delete cluster resources before deleting the capability.**
-Deleting a capability resource does not automatically delete resources created through that capability:
+Deleting a capability resource does not automatically delete resources created for or through that capability, inside or outside your cluster:
 All Kubernetes Custom Resource Definitions (CRDs) remain installed in your cluster.
-ACK resources remain in your cluster, and corresponding AWS resources remain in your account
-Argo CD Applications and their Kubernetes resources remain in your cluster
-kro ResourceGraphDefinitions and instances remain in your cluster
-You should delete these resources before deleting the capability to avoid orphaned resources.
+ACK resources remain in your cluster, and corresponding AWS resources remain in your account.
+Argo CD Applications and their Kubernetes resources remain in your cluster.
+kro ResourceGraphDefinitions and instances remain in your cluster.
+The access entry that Amazon EKS created for the capability’s IAM role remains on your cluster, along with any access policies associated with it.
+Delete these resources before deleting the capability to avoid orphaned resources. If you no longer need the access entry, delete it after you delete the capability. For more information, see [Delete access entries](deleting-access-entries.md).
 You may optionally choose to retain AWS resources associated with ACK Kubernetes resources. See [ACK considerations](ack-considerations.md)
 
 ### Console

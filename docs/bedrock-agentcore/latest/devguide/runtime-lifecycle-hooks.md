@@ -69,6 +69,15 @@ Hook headers are reserved. AgentCore Runtime drops them from session endpoint re
 Specify `hooksConfiguration` when you create or update an agent runtime. The following example creates a V2 runtime with a build warmup hook that calls `POST /warmup` on port `8080`. For what the hook does, see [Warmup hook](#runtime-lifecycle-hooks-warmup). Replace the Region, container image URI, and execution role ARN with your values.
 
 **Example**
+In your AgentCore CLI project, run the following commands. Replace `myagent` with the name of your agent.
+
+```bash
+agentcore add runtime --name myagent --language python --platform-version V2 \
+  --resource-configurations '[{"minimumMemoryInMiB":4096}]' \
+  --hooks-configuration '{"build":{"warmup":{"action":{"httpPost":{"path":"/warmup"}}}}}'
+agentcore deploy
+```
+Without a `port`, AgentCore Runtime calls the hook on your agent’s serving port.
 
 ```python
 import boto3
@@ -156,67 +165,73 @@ For how to use the warmup hook to make the first requests of new sessions fast, 
 <a name="runtime-lifecycle-hooks-warmup-handler"></a>
 
 Your warmup handler runs in your agent’s server, alongside `/ping` and your invocation handler:
-+  **Keep `/ping` responsive.** Your server must keep answering `/ping` while the warmup runs. Don’t block your server’s only thread inside the warmup handler. Run the work in a separate thread or process, or use a server that handles requests concurrently.
++  **Keep `/ping` responsive.** Your server must keep answering `/ping` while the warmup runs. Don’t block your server’s only thread inside the warmup handler. Run the work in a separate thread or process, or use a server that handles requests concurrently. `BedrockAgentCoreApp` in the AgentCore SDK does this for you.
 +  **Return `2xx` only after the work is done.** What you’ve loaded when you respond is what sessions start with.
-+  **Serve the warmup hook from a single server process.** AgentCore Runtime sends each warmup call to one process. Sessions start with what that process and the processes that it starts hold when the call returns. If your server runs several worker processes, for example `uvicorn --workers 2`, the other workers don’t receive the call.
++  **Serve the warmup hook from a single server process.** AgentCore Runtime sends each warmup call to one process. Sessions start with what that process and the processes that it starts hold when the call returns. If your server runs several worker processes, for example `uvicorn --workers 2`, the other workers don’t receive the call. If you use several workers, have the process that receives the call warm them too.
 
-The following FastAPI application serves `/ping`, `/invocations`, and a warmup hook at `POST /warmup` on port `8080`. It runs the warmup work in a worker thread, so the server keeps answering `/ping`. Replace `load_shared_state` and `STARTUP_FILES` with your agent’s own work and files.
+With the AgentCore SDK, register your warmup work as handlers on `BedrockAgentCoreApp`. The SDK serves the hook at the path that you give it. It reads the warmup type, runs the handler for that type, and responds after the handler finishes. Your agent keeps answering `/ping` during that time.
+
+**Example**
 
 ```python
-import asyncio
+from bedrock_agentcore import BedrockAgentCoreApp, HookConfig, WarmupType
 
-from fastapi import FastAPI, Request, Response
+app = BedrockAgentCoreApp(warmup_hook=HookConfig(path="/warmup"))  # serves the hook at POST /warmup
+MODEL = None
 
-app = FastAPI()
+@app.warmup(WarmupType.MEMORY)
+def load_model():
+    # Load what every session needs, such as imports, models, and caches.
+    global MODEL
+    MODEL = load_my_model()
 
-# Files that each session reads when it starts.
-STARTUP_FILES = ["/app/models/tokenizer.json", "/app/config/agent.json"]
-
-def load_shared_state():
-    # Load what every session needs into memory, such as heavy imports,
-    # model weights, and caches.
-    ...
-
+@app.warmup(WarmupType.DISK)
 def read_startup_files():
-    # Read the files that a session reads when it starts, so that new
-    # sessions can use them faster.
-    for path in STARTUP_FILES:
+    # Read the files that a session reads when it starts.
+    for path in ["/app/config/agent.json"]:
         with open(path, "rb") as f:
-            while f.read(1024 * 1024):
+            while f.read(1 << 20):
                 pass
 
-@app.get("/ping")
-def ping():
-    return {"status": "Healthy"}
+@app.entrypoint
+def invoke(payload):
+    return MODEL.predict(payload)
 
-@app.post("/warmup")
-async def warmup(request: Request):
-    # Header lookup in Starlette and FastAPI is case-insensitive.
-    warmup_type = request.headers.get(
-        "X-Amzn-Bedrock-AgentCore-Runtime-Warmup-Type", ""
-    ).lower()
-
-    # Run the work in a worker thread so that /ping keeps answering.
-    if warmup_type == "memory":
-        await asyncio.to_thread(load_shared_state)
-    elif warmup_type == "disk":
-        await asyncio.to_thread(read_startup_files)
-
-    # Respond only after the work is done.
-    return Response(status_code=200)
-
-@app.post("/invocations")
-async def invoke(request: Request):
-    payload = await request.json()
-    # Per-request work runs here on every session.
-    return {"response": payload.get("prompt", "")}
+if __name__ == "__main__":
+    app.run()
 ```
 
-If you save the application as `app.py`, start it in your container with the following command:
+```typescript
+import { readFile } from 'fs/promises'
+import { BedrockAgentCoreApp } from 'bedrock-agentcore/runtime'
 
-```bash
-uvicorn app:app --host 0.0.0.0 --port 8080
+let model: Model | undefined
+
+const app = new BedrockAgentCoreApp({
+  invocationHandler: {
+    process: async (request) => model!.predict(request),
+  },
+  warmupHook: {
+    path: '/warmup', // serves the hook at POST /warmup
+    handlers: {
+      memory: async () => {
+        // Load what every session needs, such as imports, models, and caches.
+        model = await loadModel()
+      },
+      disk: async () => {
+        // Read the files that a session reads when it starts.
+        for (const file of ['/app/config/agent.json']) {
+          await readFile(file)
+        }
+      },
+    },
+  },
+})
+
+app.run()
 ```
+
+The path that you give the SDK, and the port if you set one, must match `httpPost` in `hooksConfiguration`. If a handler fails, the warmup call fails, and so does the create or update.
 
 ## View hook logs
 <a name="runtime-lifecycle-hooks-logs"></a>

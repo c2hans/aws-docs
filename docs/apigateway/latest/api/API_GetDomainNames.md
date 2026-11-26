@@ -25,7 +25,7 @@ The maximum number of returned results per page. The default value is 25 and the
 The current pagination position in the paged result set.
 
  ** [resourceOwner](#API_GetDomainNames_RequestSyntax) **   <a name="apigw-GetDomainNames-request-uri-resourceOwner"></a>
-The owner of the domain name.
+The owner of the domain name access association.
 Valid Values: `SELF | OTHER_ACCOUNTS`
 
 ## Request Body

@@ -30,7 +30,7 @@ In the following list, the required parameters are described first.
 The Amazon Resource Name (ARN) of the resource to remove tags from.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:[a-z-]+:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/(program-management-account/pma-[a-z0-9]{13}(/relationship/rs-[a-z0-9]{13})?|channel-handshake/ch-[a-z0-9]{13})`
+Pattern: `arn:[a-z-]+:partnercentral:[a-z0-9-]+:[0-9]{12}:catalog/[a-zA-Z]+/(program-management-account/pma-[a-z0-9]{13}(/relationship/rs-[a-z0-9]{13})?|channel-handshake/ch-[a-z0-9]{13}|channel-contract/cc-[a-z0-9]{13})`
 Required: Yes
 
  ** [tagKeys](#API_channel_UntagResource_RequestSyntax) **   <a name="AWSPartnerCentral-channel_UntagResource-request-tagKeys"></a>

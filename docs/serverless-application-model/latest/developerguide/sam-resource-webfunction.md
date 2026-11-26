@@ -6,11 +6,14 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 
  Creates an AWS Lambda Web Function, which serves HTTP requests through a managed endpoint. Unlike a Lambda Event Function, which runs in response to invocations and events, a Web Function runs your web server and receives HTTP requests directly. From a single `AWS::Serverless::WebFunction`, AWS SAM generates the Web Function, an immutable revision that contains your code and configuration, and an endpoint that routes traffic to one or more revisions.
 
+How your code receives requests depends on the runtime:
++ Node.js – The HTTP server runs in your code and must listen on the host and port in the `AWS_LAMBDA_HTTP_ENDPOINT` environment variable. The runtime does not set `PORT`. By default, the runtime runs `index.js` at the root of the deployment package.
++ Python – The HTTP server runs in the runtime and serves your Asynchronous Server Gateway Interface (ASGI) or Web Server Gateway Interface (WSGI) application. By default, the runtime serves the `app` object in `main.py` at the root of the deployment package.
+
+Use [EntryPoint](#sam-webfunction-entrypoint) to change the default. For more information about each runtime, see [Lambda Web Function runtimes](https://docs.aws.amazon.com/lambda/latest/dg/web-functions-runtimes.html) in the *AWS Lambda Developer Guide*.
+
 **Note**
 When you deploy to AWS CloudFormation, AWS SAM transforms your AWS SAM resources into CloudFormation resources. For more information, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
-
-**Important**
-Your function code must run an HTTP server that listens on the host and port in the `AWS_LAMBDA_HTTP_ENDPOINT` environment variable. The runtime does not set `PORT`. By default, the runtime runs `index.js` at the root of the deployment package. Use [EntryPoint](#sam-webfunction-entrypoint) to run a different file.
 
 **Important**
 The Amazon S3 bucket that holds your deployment package must meet the following requirements:
@@ -122,11 +125,14 @@ Where the endpoint serves traffic.
 *CloudFormation compatibility*: This property is passed directly to the [EndpointType](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-webfunctionendpoint.html#cfn-lambda-webfunctionendpoint-endpointtype) property of an `AWS::Lambda::WebFunctionEndpoint` resource.
 
  `EntryPoint`   <a name="sam-webfunction-entrypoint"></a>
-The file that the runtime runs, relative to the root of the deployment package. AWS SAM passes it to the runtime in the reserved `AWS_LAMBDA_NODEJS_ENTRYPOINT` environment variable.
+`EntryPoint` specifies the entry point of your application. AWS SAM passes it to the runtime in a reserved environment variable that depends on the runtime:
++ Node.js (`nodejs*`) – The file that the runtime runs, relative to the root of the deployment package. AWS SAM passes it in `AWS_LAMBDA_NODEJS_ENTRYPOINT`. The default is `index.js`.
++ Python (`python*`) – The application object that the runtime imports and serves, in the form `[asgi:|wsgi:]module:attribute`. AWS SAM passes it in `AWS_LAMBDA_PYTHON_ENTRYPOINT`. The default is `main:app`.
+This property isn't supported for other runtimes. If `Runtime` is an intrinsic function that AWS SAM can't resolve, AWS SAM uses `AWS_LAMBDA_NODEJS_ENTRYPOINT`. To use this property with a Python runtime, specify `Runtime` as a literal value or a parameter reference.
 You can't use this property when `EnvironmentVariables` is an intrinsic function.
 *Type*: String
 *Required*: No
-*Default*: `index.js`
+*Default*: The default entry point of the runtime
 *CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
 
  `EnvironmentVariables`   <a name="sam-webfunction-environmentvariables"></a>
@@ -193,7 +199,7 @@ A map of revision IDs to traffic weights. Use this property when `AutoDeployment
 *CloudFormation compatibility*: This property is similar to the [RevisionWeights](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-webfunctionendpoint.html#cfn-lambda-webfunctionendpoint-revisionweights) property of an `AWS::Lambda::WebFunctionEndpoint` resource. AWS SAM converts the map into a list of `RevisionId` and `Weight` objects.
 
  `Runtime`   <a name="sam-webfunction-runtime"></a>
-The runtime for the function, for example `nodejs24.x`.
+The runtime for the function, for example `nodejs24.x` or `python3.15`.
 *Type*: String
 *Required*: Yes
 *CloudFormation compatibility*: This property is passed directly to the [BuildConfig.RuntimeConfig.Runtime](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-lambda-webfunctionrevision-runtimeconfig.html#cfn-lambda-webfunctionrevision-runtimeconfig-runtime) property of an `AWS::Lambda::WebFunctionRevision` resource.

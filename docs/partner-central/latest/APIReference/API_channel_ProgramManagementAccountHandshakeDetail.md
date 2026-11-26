@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
  ** program **   <a name="AWSPartnerCentral-Type-channel_ProgramManagementAccountHandshakeDetail-program"></a>
 The program associated with the handshake.
 Type: String
-Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER`
+Valid Values: `SOLUTION_PROVIDER | DISTRIBUTION | DISTRIBUTION_SELLER | MANAGED_SERVICES_PROVIDER`
 Required: No
 
 ## See Also

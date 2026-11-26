@@ -616,6 +616,30 @@ The following example policy statement grants permission to view cluster operati
 }
 ```
 
+A cluster administrator who moves nodes also needs the following permissions:
++ `sagemaker:MoveClusterNodesFrom` and `sagemaker:BatchDeleteClusterNodes`: move nodes out of the source cluster
++ `sagemaker:MoveClusterNodesTo` and `sagemaker:BatchAddClusterNodes`: move nodes into the target cluster
++ `eks:DescribeCluster`: describe the Amazon EKS cluster of the source and target SageMaker HyperPod clusters
+
+The following example policy statement grants these permissions. For the full policy, including the per-cluster resources and condition-key scoping, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
+```json
+{
+    "Effect": "Allow",
+    "Action": [
+        "sagemaker:MoveClusterNodesFrom",
+        "sagemaker:MoveClusterNodesTo",
+        "sagemaker:BatchDeleteClusterNodes",
+        "sagemaker:BatchAddClusterNodes",
+        "eks:DescribeCluster"
+    ],
+    "Resource": [
+        "arn:aws:sagemaker:region:account-id:cluster/*",
+        "arn:aws:eks:region:account-id:cluster/*"
+    ]
+}
+```
+
 To grant permissions to access the SageMaker AI console, use the sample policy provided at [Permissions required to use the Amazon SageMaker AI console](https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_id-based-policy-examples.html#console-permissions).
 
 To grant permissions to access the Amazon EC2 Systems Manager console, use the sample policy provided at [Using the AWS Systems Manager console](https://docs.aws.amazon.com/systems-manager/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console) in the * AWS Systems Manager User Guide*.

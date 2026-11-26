@@ -8,6 +8,14 @@ This topic covers release notes that track update, fixes, and new features for A
 
 The HyperPod AMI releases are documented separately to include information of the key components including general AMI releases, versions, and dependencies. If you are looking for these information related to HyperPod AMI releases, see [Amazon SageMaker HyperPod AMI](sagemaker-hyperpod-release-ami.md).
 
+## SageMaker HyperPod release notes: November 20, 2026
+<a name="sagemaker-hyperpod-release-notes-20261120"></a>
+
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+
+**New features**
++ With the `MoveClusterNodes` API, you can move running nodes from one instance group to another, within a cluster or between clusters in the same AWS account and Region, with a single API call. You choose the source and target instance groups and either name the nodes to move or let HyperPod pick them. HyperPod detaches each node from the source and attaches it to the target without terminating the Amazon EC2 instance, so the node keeps its instance ID, IP address, and capacity, including SageMaker HyperPod managed reservations and Flexible Training Plans. The node takes on the target instance group's AMI, lifecycle scripts, security groups, labels, and taints. You can track each node with the `DescribeClusterNode` API and with cluster events. Node movement is available at no additional charge for Amazon EKS orchestrated SageMaker HyperPod clusters with continuous provisioning, in all AWS Regions where SageMaker HyperPod is available, using the AWS CLI or the AWS SDKs. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
 ## SageMaker HyperPod release notes: November 16, 2026
 <a name="sagemaker-hyperpod-release-notes-20261116"></a>
 

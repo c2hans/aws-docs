@@ -17,13 +17,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AmazonConnectCampaignsServiceLinkedRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: September 23, 2021, 20:54 UTC
-+ **Edited time:** June 18, 2026, 23:12 UTC
++ **Edited time:** November 23, 2026, 17:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy`
 
 ## Policy version
 <a name="AmazonConnectCampaignsServiceLinkedRolePolicy-version"></a>
 
-**Policy version:** v5 (default)
+**Policy version:** v6 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -58,7 +58,8 @@ The policy's default version is the version that defines the permissions for the
         "connect:StopContact",
         "connect:DescribeContactFlow",
         "connect:SendOutboundEmail",
-        "connect:SendOutboundWebNotification"
+        "connect:SendOutboundWebNotification",
+        "connect:StartTaskContact"
       ],
       "Resource" : "arn:aws:connect:*:*:instance/*"
     },

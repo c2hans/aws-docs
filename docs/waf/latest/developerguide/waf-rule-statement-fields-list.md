@@ -117,7 +117,7 @@ If you don't use a text transformation with this option, AWS WAF doesn't normali
 Inspects the request's JA3 fingerprint.
 
 **Note**
-JA3 fingerprint inspection is available only for Amazon CloudFront distributions and Application Load Balancers.
+JA3 fingerprint inspection is available only for Amazon CloudFront distributions, Application Load Balancers, and Elastic Load Balancing for Envoy proxies. For Elastic Load Balancing for Envoy proxies, HTTP/3 (QUIC) requests do not have a JA3 fingerprint.
 
 The JA3 fingerprint is a 32-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
 
@@ -141,7 +141,7 @@ To use this match option, you must log your protection pack (web ACL) traffic. F
 Inspects the request's JA4 fingerprint.
 
 **Note**
-JA4 fingerprint inspection is available only for Amazon CloudFront distributions and Application Load Balancers.
+JA4 fingerprint inspection is available only for Amazon CloudFront distributions, Application Load Balancers, and Elastic Load Balancing for Envoy proxies. For Elastic Load Balancing for Envoy proxies, HTTP/3 (QUIC) requests do not have a JA4 fingerprint.
 
 The JA4 fingerprint is a 36-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. JA4 fingerprinting is an extension of the JA3 fingerprinting that can result in fewer unique fingerprints for some browsers. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
 
@@ -192,7 +192,7 @@ The request body is the part of the request that immediately follows the request
 + In the console, you select this under the **Request option** choice **Body**, by selecting the **Content type** choice **Plain text**.
 + In the API, in the rule's `FieldToMatch` specification, you specify `Body` to inspect the request body as plain text.
 
-For Application Load Balancer and AWS AppSync, AWS WAF can inspect the first 8 KB of the body of a request. For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway, by default, AWS WAF can inspect the first 16 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
+For AWS AppSync, AWS WAF can inspect the first 8 KB of the body of a request. For Application Load Balancer, by default, AWS WAF can inspect the first 8 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, and Elastic Load Balancing for Envoy, by default, AWS WAF can inspect the first 16 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 
 You must specify oversize handling for this component type. Oversize handling defines how AWS WAF handles requests that have body data that is larger than AWS WAF can inspect. You can choose to continue the inspection, or to skip inspection and mark the request as matching or not matching the rule. For more information about handling oversize content, see [Oversize web request components in AWS WAF](waf-oversize-request-components.md).
 
@@ -207,7 +207,7 @@ The request body is the part of the request that immediately follows the request
 + In the console, you select this under the **Request option** choice **Body**, by selecting the **Content type** choice **JSON**.
 + In the API, in the rule's `FieldToMatch` specification, you specify `JsonBody`.
 
-For Application Load Balancer and AWS AppSync, AWS WAF can inspect the first 8 KB of the body of a request. For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Amazon Bedrock AgentCore Gateway, by default, AWS WAF can inspect the first 16 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
+For AWS AppSync, AWS WAF can inspect the first 8 KB of the body of a request. For Application Load Balancer, by default, AWS WAF can inspect the first 8 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, Amazon Bedrock AgentCore Gateway, and Elastic Load Balancing for Envoy, by default, AWS WAF can inspect the first 16 KB, and you can increase the limit up to 64 KB in your protection pack (web ACL) configuration. For more information, see [Considerations for managing body inspection in AWS WAF](web-acl-setting-body-inspection-limit.md).
 
 You must specify oversize handling for this component type. Oversize handling defines how AWS WAF handles requests that have body data that is larger than AWS WAF can inspect. You can choose to continue the inspection, or to skip inspection and mark the request as matching or not matching the rule. For more information about handling oversize content, see [Oversize web request components in AWS WAF](waf-oversize-request-components.md).
 

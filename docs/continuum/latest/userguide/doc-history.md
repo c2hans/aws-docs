@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/doc-history.h
 
 # Document history for the AWS Continuum User Guide
 
-The following table describes the documentation releases for AWS Continuum.
+The following table describes important changes to the documentation since the last release of AWS Continuum. For notification about updates to this documentation, you can subscribe to an RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |

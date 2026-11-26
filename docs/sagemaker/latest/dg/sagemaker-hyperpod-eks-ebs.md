@@ -53,6 +53,9 @@ Do not replace nodes before uninstalling the add-on. The conflict will recur on 
 
 To use NVMe instance storage on HyperPod, rely on the AMI's built-in LVM configuration through the standard mount path (`/opt/sagemaker`). For dynamically provisioned, pod-level block storage, use the Amazon EBS CSI driver as described in the rest of this page.
 
+**Note**
+You cannot move a node that has an Amazon EBS volume you attached with the Amazon EBS CSI driver or the `AttachClusterNodeVolume` API. This keeps the data on those volumes safe. To move the node, detach the volumes first. A move rejects such a node with `InvalidNodeStatus`. For more information, see [Move nodes between instance groups and clusters](smcluster-eks-move-nodes.md).
+
 ## Use cases
 <a name="sagemaker-hyperpod-eks-ebs-use"></a>
 

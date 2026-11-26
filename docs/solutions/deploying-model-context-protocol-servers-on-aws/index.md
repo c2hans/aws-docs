@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-model-context-protoc
 title: 'Guidance for Deploying Model Context Protocol Servers on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-model-context-protocol-servers-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-26
 ---
 
 # Guidance for Deploying Model Context Protocol Servers on AWS

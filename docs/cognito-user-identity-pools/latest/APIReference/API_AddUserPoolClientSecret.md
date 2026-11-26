@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 
 Creates a new client secret for an existing confidential user pool app client. Supports up to 2 active secrets per app client for zero-downtime credential rotation workflows.
 
+ `DescribeUserPoolClient` and `UpdateUserPoolClient` don't return secrets that you add with this operation.
+
 ## Request Syntax
 <a name="API_AddUserPoolClientSecret_RequestSyntax"></a>
 

@@ -36,7 +36,7 @@ The build instance is already running, so it keeps the settings that the group l
 
 To change these settings, update the group's launch template.
 
-## Requirements
+## Parent instance requirements
 <a name="infra-config-parent-instance-requirements"></a>
 
 Before you use a parent instance, make sure that the following are true:
@@ -110,7 +110,12 @@ The following example policy grants these permissions for one group. Attach it t
 }
 ```
 
-Instead of writing the policy yourself, you can create a role that has EC2ImageBuilderExecutionPolicy and these permissions from the EC2ImageBuilderParentInstanceASGRoleTemplate role template. In the console, choose **Create new role with required permission** in the infrastructure configuration. With the AWS CLI, use the [acquire-role](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/acquire-role.html) command. The following example creates a role named `EC2ImageBuilderParentInstanceASG-{{my-build-pool}}` for the `{{my-build-pool}}` group. The role template isn't available in the AWS GovCloud (US) Regions or the China Regions.
+Instead of writing the policy yourself, you can create a role that has EC2ImageBuilderExecutionPolicy and these permissions from the EC2ImageBuilderParentInstanceASGRoleTemplate role template. In the console, choose **Create new role with required permission** in the infrastructure configuration. The role template isn't available in the AWS GovCloud (US) Regions or the China Regions.
+
+------
+#### [ AWS CLI ]
+
+With the AWS CLI, use the [acquire-role](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/acquire-role.html) command. The following example creates a role named `EC2ImageBuilderParentInstanceASG-{{my-build-pool}}` for the `{{my-build-pool}}` group:
 
 ```sh
 aws iam acquire-role \
@@ -118,6 +123,24 @@ aws iam acquire-role \
     --replacement-values \
     'AutoScalingGroupName={Values=[{{my-build-pool}}]},RoleNameSuffix={Values=[{{my-build-pool}}]}'
 ```
+
+------
+#### [ PowerShell ]
+
+With AWS Tools for PowerShell, use the [Invoke-IAMAcquireRole](https://docs.aws.amazon.com/powershell/latest/reference/items/Invoke-IAMAcquireRole.html) cmdlet. The `ReplacementValue` parameter takes a hashtable, and each value in it is a `ReplacementValueEntry` object. The following example creates a role named `EC2ImageBuilderParentInstanceASG-{{my-build-pool}}` for the `{{my-build-pool}}` group:
+
+```ps
+Import-Module AWS.Tools.IdentityManagement
+$replacementValues = @{
+    AutoScalingGroupName = [Amazon.IdentityManagement.Model.ReplacementValueEntry]@{ Values = @("{{my-build-pool}}") }
+    RoleNameSuffix       = [Amazon.IdentityManagement.Model.ReplacementValueEntry]@{ Values = @("{{my-build-pool}}") }
+}
+Invoke-IAMAcquireRole `
+    -TemplateArn arn:aws:iam::aws:role-template/imagebuilder.amazonaws.com/EC2ImageBuilderParentInstanceASGRoleTemplate:3 `
+    -ReplacementValue $replacementValues
+```
+
+------
 
 ## When the group has no instance available
 <a name="infra-config-parent-instance-capacity"></a>

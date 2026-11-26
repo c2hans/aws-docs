@@ -138,7 +138,7 @@ Ephemeral storage can be configured in increments of 16 GiB. For more informatio
 
 GPU instance storage capacity is fixed per instance type and is provided at no additional cost.
 
-GPU tasks always use local NVMe ephemeral storage. The `scratchStorageMode` setting on `StartRun` does not apply to GPU tasks and setting this value to `SHARED` will have no effect on GPU instances. Capacity is fixed per instance type and cannot be customized using the `disk` directive. The NVMe capacity is pre-determined by the instance type selected for the task's `cpu`, `memory`, and `acceleratorType` requirements.
+GPU tasks always use local NVMe ephemeral storage. The `scratchStorageMode` setting on `StartRun` does not apply to GPU tasks and setting this value to `SHARED` will have no effect on GPU instances. Capacity is fixed per instance type and cannot be customized using the `disk` directive. The NVMe capacity is pre-determined by the instance type selected for the task's `cpu`, `memory`, and `acceleratorType` requirements, except with expanded accelerator search (see [Considerations for expanded accelerator search](#ephemeral-storage-gpu-expanded-search)).
 
 | Size | GPUs | vCPU | Memory (GiB) | G4dn NVMe (T4) | G5 NVMe (A10G) | G6 NVMe (L4) | G6e NVMe (L40S) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -149,6 +149,11 @@ GPU tasks always use local NVMe ephemeral storage. The `scratchStorageMode` sett
 | 12xlarge | 4 | 48 | 192 | 900 GiB | 3,800 GiB | 3,760 GiB | 3,800 GiB |
 | 16xlarge | 1 | 64 | 256 | 900 GiB | 1,900 GiB | 1,880 GiB | 1,900 GiB |
 | 24xlarge | 4 | 96 | 384 | — | 3,800 GiB | 3,760 GiB | 3,800 GiB |
+
+#### Considerations for expanded accelerator search
+<a name="ephemeral-storage-gpu-expanded-search"></a>
+
+With expanded accelerator search, `disks` (WDL) or `disk` (Nextflow) sets the minimum local NVMe storage that the task needs. It doesn't change the storage of a GPU instance: HealthOmics only matches instance types whose local NVMe storage is at least that size. For more information, see [Expanded accelerator search](expanded-accelerator-search.md).
 
 ## Configuring ephemeral storage size
 <a name="ephemeral-storage-configure-size"></a>

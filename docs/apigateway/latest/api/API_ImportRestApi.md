@@ -142,7 +142,7 @@ Type: String
  ** [securityPolicy](#API_ImportRestApi_ResponseSyntax) **   <a name="apigw-ImportRestApi-response-securityPolicy"></a>
  The Transport Layer Security (TLS) version \+ cipher suite for this RestApi.
 Type: String
-Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
+Valid Values: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_Ext2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
 
  ** [tags](#API_ImportRestApi_ResponseSyntax) **   <a name="apigw-ImportRestApi-response-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.

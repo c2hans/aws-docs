@@ -66,6 +66,9 @@ Select **A — IPv4 address**
 **ELB load balancer**
 Select **A — IPv4 address** or **AAAA — IPv6 address**
 
+**Elastic Load Balancing for Envoy proxy**
+Select **A — IPv4 address** or **AAAA — IPv6 address**, depending on the IP addressing configuration of your proxy.
+
 **Amazon S3 bucket**
 Select **A — IPv4 address**
 
