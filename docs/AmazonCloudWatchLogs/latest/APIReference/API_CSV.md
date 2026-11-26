@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 The `CSV` processor parses comma-separated values (CSV) from the log events into columns.
 
-For more information about this processor including examples, see [ csv](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-csv) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ csv](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Configurable.html#CloudWatch-Logs-Transformation-csv) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_CSV_Contents"></a>

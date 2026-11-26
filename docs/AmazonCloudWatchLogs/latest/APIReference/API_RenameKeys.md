@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 Use this processor to rename keys in a log event.
 
-For more information about this processor including examples, see [ renameKeys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-renameKeys) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ renameKeys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-JSONMutate.html#CloudWatch-Logs-Transformation-renameKeys) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_RenameKeys_Contents"></a>

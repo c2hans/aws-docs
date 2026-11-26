@@ -23,7 +23,7 @@ Pre-deployment validation involves these phases:
 
 1. **Initiate a stack operation** – Create a stack, update a stack, or create a change set as you normally would. Pre-deployment validation is enabled by default on all three operations.
 
-1. **Validation execution** – CloudFormation runs multiple validation checks against your template and target environment. CloudFormation supports six types of pre-deployment validation. Property syntax validation and resource name conflict detection run on all supported operations. Four additional validations run during change set creation only: S3 bucket emptiness validation, service quota checks, Recorder conflict detection, and ECR repository delete readiness.
+1. **Validation execution** – CloudFormation runs multiple validation checks against your template and target environment. CloudFormation supports six types of pre-deployment validation. Property syntax validation and resource name conflict detection run on all supported operations. Four additional validations run during change set creation only: S3 bucket emptiness validation, service quota validation, AWS Config recorder conflict detection, and ECR repository delete readiness.
 
 1. **Review validation results** – CloudFormation provides detailed feedback on any issues found, including precise path pinpointing the issue location in template, eliminating manual template debugging.
 
@@ -100,7 +100,7 @@ Pre-deployment validation runs automatically on CreateStack and UpdateStack oper
 ### Validate using a change set (console)
 <a name="validate-stack-deployments-console-changeset"></a>
 
-You can also use change sets to validate your template before deployment. Change sets support all six validation types, including WARN-mode validations (S3 bucket emptiness, service quota, Config Recorder conflict, and ECR repository delete readiness) that are only available during change set creation. You can use a change set to validate a new stack before you create it, or to validate an update to an existing stack.
+You can also use change sets to validate your template before deployment. Change sets support all six validation types, including WARN-mode validations (S3 bucket emptiness validation, service quota validation, AWS Config recorder conflict detection, and ECR repository delete readiness) that are only available during change set creation. You can use a change set to validate a new stack before you create it, or to validate an update to an existing stack.
 
 **To validate using a change set**
 
@@ -233,25 +233,25 @@ Change sets also surface WARN-mode validations that are not available on direct 
 <a name="validate-stack-deployments-validation-types"></a>
 
 Pre-deployment validation includes the following types of checks:
-+ **Property Syntax Validation** – Validates resource properties against AWS resource schemas. It checks for required properties and valid property values and identifies deprecated or unsupported property combinations.
-+ **Resource Name Conflict Detection** – Checks for naming conflicts with existing AWS resources. It validates that resource names meet AWS naming requirements and identifies potential conflicts before deployment attempts.
-+ **S3 Bucket Emptiness Validation** – Warns when attempting to delete S3 buckets that contain objects. It provides object counts to help assess deletion impact and helps prevent common S3 deletion failures.
-+ **Service Quota Validation** – Checks whether creating resources would exceed your AWS service quotas. This validation currently runs during change set creation only and operates in WARN mode. The operation proceeds, and you receive alerts about potential quota issues.
-+ ** Recorder Conflict Detection** – Warns when your template adds rules to an account that doesn't have recording enabled, or defines an Recorder in an account where one is already active. This validation currently runs during change set creation only and operates in WARN mode.
-+ **ECR Repository Delete Readiness** – Validates that ECR repositories targeted for deletion are empty or have appropriate force-delete settings. This validation currently runs during change set creation only and operates in WARN mode.
++ **Property syntax validation** – Validates resource properties against AWS resource schemas. It checks for required properties and valid property values and identifies deprecated or unsupported property combinations.
++ **Resource name conflict detection** – Checks for naming conflicts with existing AWS resources. It validates that resource names meet AWS naming requirements and identifies potential conflicts before deployment attempts.
++ **S3 bucket emptiness validation** – Checks whether an S3 bucket that the operation deletes still contains objects. This validation runs during change set creation only and operates in WARN mode. It checks only for objects in the bucket, not for bucket policies or other settings that can prevent deletion.
++ **Service quota validation** – Checks whether creating resources would exceed your AWS service quotas. This validation currently runs during change set creation only and operates in WARN mode. The operation proceeds, and you receive alerts about potential quota issues.
++ **AWS Config recorder conflict detection** – Checks whether the operation creates an AWS Config configuration recorder that conflicts with an existing recorder in the Region. This validation runs during change set creation only and operates in WARN mode.
++ **ECR repository delete readiness** – Validates that ECR repositories targeted for deletion are empty or have appropriate force-delete settings. This validation currently runs during change set creation only and operates in WARN mode.
 
 The following table summarizes each validation type, its mode, and the operations on which it runs.
 
 | Validation type | Mode | Available on |
 | --- | --- | --- |
 | Property syntax validation | FAIL | CreateStack, UpdateStack, CreateChangeSet |
-| Resource name conflict (RAE) | FAIL | CreateStack, UpdateStack, CreateChangeSet |
-| S3 bucket emptiness | WARN | CreateChangeSet |
-| Service Quota | WARN | CreateChangeSet |
-|  Recorder conflict | WARN | CreateChangeSet |
-| ECR Repository delete readiness | WARN | CreateChangeSet |
+| Resource name conflict detection | FAIL | CreateStack, UpdateStack, CreateChangeSet |
+| S3 bucket emptiness validation | WARN | CreateChangeSet |
+| Service quota validation | WARN | CreateChangeSet |
+| AWS Config recorder conflict detection | WARN | CreateChangeSet |
+| ECR repository delete readiness | WARN | CreateChangeSet |
 
-Each validation type provides specific error messages and with error location in the template to help you resolve issues quickly.
+Each validation type returns an error message and the location of the error in the template.
 
 ## Resource limitations
 <a name="validate-stack-deployments-resource-limitations"></a>

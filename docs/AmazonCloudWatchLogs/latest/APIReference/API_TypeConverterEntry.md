@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 # TypeConverterEntry
 
-This object defines one value type that will be converted using the [ typeConverter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-typeConverter) processor.
+This object defines one value type that will be converted using the [ typeConverter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Datatype.html#CloudWatch-Logs-Transformation-typeConverter) processor.
 
 ## Contents
 <a name="API_TypeConverterEntry_Contents"></a>

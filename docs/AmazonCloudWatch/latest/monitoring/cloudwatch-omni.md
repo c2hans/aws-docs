@@ -35,6 +35,7 @@ The following sections describe what you can do in CloudWatch Omni:
 + Receive a notification when a condition you define is met. See [Alerts](omni-alerts.md).
 + Investigate incidents to find the root cause. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
 + Connect Omni to Slack. See [Connect Slack](omni-connect-slack.md).
++ Page your on-call responders through PagerDuty. For information about connecting PagerDuty, see [Connect PagerDuty](omni-connect-pagerduty.md).
 + Call Omni from code or a coding agent. See [Use Omni skills](omni-use-omni-skills.md).
 
 ## How Omni relates to CloudWatch

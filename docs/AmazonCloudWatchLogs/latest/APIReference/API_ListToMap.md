@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 This processor takes a list of objects that contain key fields, and converts them into a map of target keys.
 
-For more information about this processor including examples, see [ listToMap](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-listToMap) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ listToMap](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-JSONMutate.html#CloudWatch-Logs-Transformation-listToMap) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_ListToMap_Contents"></a>

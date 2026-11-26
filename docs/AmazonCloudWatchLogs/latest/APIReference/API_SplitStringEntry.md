@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 # SplitStringEntry
 
-This object defines one log field that will be split with the [ splitString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-splitString) processor.
+This object defines one log field that will be split with the [ splitString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-StringMutate.html#CloudWatch-Logs-Transformation-splitString) processor.
 
 ## Contents
 <a name="API_SplitStringEntry_Contents"></a>

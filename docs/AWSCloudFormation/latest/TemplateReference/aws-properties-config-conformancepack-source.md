@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Config::ConformancePack Source
 
-Provides the CustomPolicyDetails, the rule owner (` AWS ` for managed rules, `CUSTOM_POLICY` for Custom Policy rules, and `CUSTOM_LAMBDA` for Custom Lambda rules), the rule identifier, and the events that cause the evaluation of your AWS resources.
+Provides the identifier of the managed conformance pack that AWS Config deploys in your account.
 
 ## Syntax
 <a name="aws-properties-config-conformancepack-source-syntax"></a>
@@ -33,9 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-config-conformancepack-source-properties"></a>
 
 `SourceIdentifier`  <a name="cfn-config-conformancepack-source-sourceidentifier"></a>
-For AWS Config Managed rules, a predefined identifier from a list. For example, `IAM_PASSWORD_POLICY` is a managed rule. To reference a managed rule, see [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html).
-For AWS Config Custom Lambda rules, the identifier is the Amazon Resource Name (ARN) of the rule's AWS Lambda function, such as `arn:aws:lambda:us-east-2:123456789012:function:custom_rule_name`.
-For AWS Config Custom Policy rules, this field will be ignored.
+A predefined identifier for a managed conformance pack, such as `NIST-SP-800-53_R5`. The identifier specifies which framework's managed conformance pack AWS Config deploys in your account. For the identifier of each managed conformance pack, see the [Managed Conformance Pack Catalog](https://docs.aws.amazon.com/config/latest/developerguide/managed-conformance-pack-catalog.html) in the *AWS Config Developer Guide*.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

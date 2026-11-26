@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Config::ConformancePack Scope
 
-Defines which resources trigger an evaluation for an AWS Config rule. The scope can include one or more resource types, a combination of a tag key and value, or a combination of one resource type and one resource ID. Specify a scope to constrain which resources trigger an evaluation for a rule. Otherwise, evaluations for the rule are triggered when any resource in your recording group changes in configuration.
+Defines which resources trigger an evaluation for the AWS Config rules in a managed conformance pack. The scope is a tag key, or a tag key and value, that is applied to every rule in the conformance pack. Specify a scope to constrain which resources trigger an evaluation for the rules. Otherwise, evaluations of the rules are triggered when any resource in your recording group changes in configuration.
 
 ## Syntax
 <a name="aws-properties-config-conformancepack-scope-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-config-conformancepack-scope-properties"></a>
 
 `TagKey`  <a name="cfn-config-conformancepack-scope-tagkey"></a>
-The tag key that is applied to only those AWS resources that you want to trigger an evaluation for the rule.
+The tag key that applies to only those AWS resources that you want to trigger an evaluation for the rules in the conformance pack.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -43,7 +43,7 @@ The tag key that is applied to only those AWS resources that you want to trigger
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TagValue`  <a name="cfn-config-conformancepack-scope-tagvalue"></a>
-The tag value applied to only those AWS resources that you want to trigger an evaluation for the rule. If you specify a value for `TagValue`, you must also specify a value for `TagKey`.
+The tag value that applies to only those AWS resources that you want to trigger an evaluation for the rules in the conformance pack. If you don't specify a value for `TagValue`, resources that have the tag key `TagKey` trigger an evaluation, regardless of the tag value.
 *Required*: No
 *Type*: String
 *Minimum*: `0`

@@ -15,7 +15,7 @@ EC2 Fleet and Spot Fleet are designed to be a useful way to launch a fleet of te
 + [Monitor your EC2 Fleet or Spot Fleet](fleet-monitor.md)
 + [Tutorials for EC2 Fleet](fleet-tutorials.md)
 + [Example CLI configurations for EC2 Fleet](ec2-fleet-examples.md)
-+ [Example CLI configurations Spot Fleet](spot-fleet-examples.md)
++ [Example CLI configurations for Spot Fleet](spot-fleet-examples.md)
 + [Quotas for EC2 Fleet and Spot Fleet](fleet-quotas.md)
 
 ## Features and benefits

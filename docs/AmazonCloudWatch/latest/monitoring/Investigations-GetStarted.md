@@ -4,6 +4,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 
 # Configure CloudWatch investigations
 
+**Note**
+For new setups, we recommend AWS DevOps Agent, which provides an improved investigation experience. To get started, create an agent space. For more information, see [Getting started with AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-started-with-aws-devops-agent.html).
+
 Configuring CloudWatch investigations creates an investigation group that CloudWatch investigations will use to access telemetry and aggregate data related to the investigation. Before you create the investigation group, you can walk-through a sample investigation to get an overall idea of how they work.
 
 **Topics**

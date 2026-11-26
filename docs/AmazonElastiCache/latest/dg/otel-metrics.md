@@ -131,7 +131,7 @@ ElastiCache Insights is a prebuilt dashboard in the CloudWatch console that visu
 
 1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
 
-1. In the navigation pane, under **Infrastructure Monitoring**, choose **ElastiCache Insights**.
+1. In the navigation pane, under **Infrastructure Monitoring**, choose **All Insights**, and then choose **ElastiCache Insights**.
 
 To open the dashboard directly, go to [https://console.aws.amazon.com/cloudwatch/home\#dashboards/insights/elasticache](https://console.aws.amazon.com/cloudwatch/home#dashboards/insights/elasticache).
 
@@ -315,7 +315,7 @@ max_over_time(
    "@resource.aws.elasticache.replication_group.id"="my-cluster"}[24h])
 ```
 
-Both functions require a range in square brackets, and the range is limited to 7 days.
+Both functions require a range in square brackets. For the limits on PromQL queries, see [PromQL limits and restrictions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-PromQL.html#CloudWatch-PromQL-Limits) in the *Amazon CloudWatch User Guide*.
 
 ##### Find highest values: The busiest nodes across every replication group
 <a name="otel-metrics.querying.key-promql-capabilities.other-useful-functions.find-highest-values-the-busiest-nodes-across-every-replication-group"></a>

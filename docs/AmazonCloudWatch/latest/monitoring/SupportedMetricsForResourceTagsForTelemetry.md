@@ -276,6 +276,32 @@ The `AWS/Backup` namespace includes enriched metrics for the following resource 
 | NumberOfRestoreJobsPending | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
 | NumberOfRestoreJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
 
+## AWS/Bedrock-AgentCore
+<a name="supported-metrics-ns-aws-bedrock-agentcore"></a>
+
+The `AWS/Bedrock-AgentCore` namespace includes enriched metrics for the following resource types.
++ [AWS::BedrockAgentCore::Runtime](#supported-metrics-aws-bedrock-agentcore-aws-bedrockagentcore-runtime)
+
+### AWS::BedrockAgentCore::Runtime
+<a name="supported-metrics-aws-bedrock-agentcore-aws-bedrockagentcore-runtime"></a>
+
+| Metric | Dimensions |
+| --- | --- |
+| ActiveStreamingConnections | + `Operation`, `Resource` |
+| CPUUsed-vCPUHours | + `Name`, `Resource`, `Service`<br />+ `Resource`, `Service` |
+| Duration | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource` |
+| Errors | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| InboundStreamingBytesProcessed | + `Operation`, `Resource` |
+| Invocations | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| Latency | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| MemoryUsed-GBHours | + `Name`, `Resource`, `Service`<br />+ `Resource`, `Service` |
+| OutboundStreamingBytesProcessed | + `Operation`, `Resource` |
+| OverheadLatency | + `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| Sessions | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| SystemErrors | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| Throttles | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+| UserErrors | + `ComputeType`, `Name`, `Operation`, `Resource`<br />+ `Name`, `Operation`, `Resource`<br />+ `Operation`, `Resource` |
+
 ## AWS/ClientVPN
 <a name="supported-metrics-ns-aws-clientvpn"></a>
 
@@ -521,8 +547,16 @@ The `AWS/DynamoDB` namespace includes enriched metrics for the following resourc
 | ConsumedChangeDataCaptureUnits | + `DelegatedOperation`, `TableName` |
 | ConsumedReadCapacityUnits | + `TableName` |
 | ConsumedWriteCapacityUnits | + `GlobalSecondaryIndexName`, `Source`, `TableName`<br />+ `Source`, `TableName`<br />+ `TableName` |
+| FailedToReplicateRecordCount | + `DelegatedOperation`, `TableName` |
+| FaultInjectionServiceInducedErrors | + `Operation`, `TableName` |
+| OnDemandMaxReadRequestUnits | + `TableName` |
+| OnDemandMaxWriteRequestUnits | + `TableName` |
 | ProvisionedReadCapacityUnits | + `TableName` |
 | ProvisionedWriteCapacityUnits | + `TableName` |
+| ReadAccountLimitThrottleEvents | + `TableName` |
+| ReadKeyRangeThroughputThrottleEvents | + `TableName` |
+| ReadMaxOnDemandThroughputThrottleEvents | + `TableName` |
+| ReadProvisionedThroughputThrottleEvents | + `TableName` |
 | ReadThrottleEvents | + `TableName` |
 | ReturnedItemCount | + `Operation`, `TableName`<br />+ `Operation`, `TableName`, `Verb` |
 | SuccessfulRequestLatency | + `Operation`, `OperationType`, `TableName`<br />+ `Operation`, `TableName`<br />+ `Operation`, `TableName`, `Verb` |
@@ -531,6 +565,10 @@ The `AWS/DynamoDB` namespace includes enriched metrics for the following resourc
 | ThrottledRequests | + `Operation`, `TableName`<br />+ `Operation`, `TableName`, `Verb` |
 | TimeToLiveDeletedItemCount | + `TableName` |
 | TransactionConflict | + `TableName` |
+| WriteAccountLimitThrottleEvents | + `TableName` |
+| WriteKeyRangeThroughputThrottleEvents | + `TableName` |
+| WriteMaxOnDemandThroughputThrottleEvents | + `TableName` |
+| WriteProvisionedThroughputThrottleEvents | + `TableName` |
 | WriteThrottleEvents | + `TableName` |
 
 ## AWS/EBS
@@ -668,8 +706,24 @@ The `AWS/ECS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
+| ActiveConnectionCount | + `ClusterName`, `DiscoveryName`, `ServiceName` |
 | CPUUtilization | + `ClusterName`, `ServiceName` |
+| ClientTLSNegotiationErrorCount | + `ClusterName`, `DiscoveryName`, `ServiceName` |
+| EBSFilesystemUtilization | + `ClusterName`, `ServiceName` |
+| GrpcRequestCount | + `ClusterName`, `DiscoveryName`, `ServiceName` |
+| HTTPCode\_Target\_2XX\_Count | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| HTTPCode\_Target\_3XX\_Count | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| HTTPCode\_Target\_4XX\_Count | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| HTTPCode\_Target\_5XX\_Count | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| LiveTaskCount | + `ClusterName`, `ServiceName` |
 | MemoryUtilization | + `ClusterName`, `ServiceName` |
+| NewConnectionCount | + `ClusterName`, `DiscoveryName`, `ServiceName` |
+| ProcessedBytes | + `ClusterName`, `DiscoveryName`, `ServiceName` |
+| RequestCount | + `ClusterName`, `DiscoveryName`, `ServiceName` |
+| RequestCountPerTarget | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| TargetProcessedBytes | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| TargetResponseTime | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
+| TargetTLSNegotiationErrorCount | + `ClusterName`, `ServiceName`, `TargetDiscoveryName` |
 
 ## AWS/EFS
 <a name="supported-metrics-ns-aws-efs"></a>
@@ -750,6 +804,7 @@ The `AWS/ELB` namespace includes enriched metrics for the following resource typ
 | BackendConnectionErrors | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
 | DesyncMitigationMode\_NonCompliant\_Request\_Count | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
 | EstimatedALBActiveConnectionCount | + `LoadBalancerName` |
+| EstimatedALBConsumedLCUs | + `LoadBalancerName` |
 | EstimatedALBNewConnectionCount | + `LoadBalancerName` |
 | EstimatedProcessedBytes | + `LoadBalancerName` |
 | HTTPCode\_Backend\_2XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
@@ -851,6 +906,7 @@ The `AWS/ES` namespace includes enriched metrics for the following resource type
 | AsynchronousSearchCompletionRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | AsynchronousSearchFailureRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | AsynchronousSearchInitializedRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchMaxRunningTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | AsynchronousSearchPersistFailedRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | AsynchronousSearchPersistRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | AsynchronousSearchRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
@@ -946,6 +1002,8 @@ The `AWS/ES` namespace includes enriched metrics for the following resource type
 | ExpandTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | ExpandTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | FetchCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| FetchLatency | + `ClientId`, `DomainName`, `NodeId` |
+| FetchRate | + `ClientId`, `DomainName`, `NodeId` |
 | FetchTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | FetchTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | FollowerCheckPoint | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
@@ -1077,6 +1135,9 @@ The `AWS/ES` namespace includes enriched metrics for the following resource type
 | MlRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | MlTaskIndexStatus.red | + `ClientId`, `DomainName` |
 | MlTaskIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| NativeMemoryPressure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| NativeRuntimeResidentMemory | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| NativeSearchRuntimeCPUUtilization | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | Nodes | + `ClientId`, `DomainName` |
 | OldGenJVMMemoryPressure | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | OpenContexts | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
@@ -1171,6 +1232,8 @@ The `AWS/ES` namespace includes enriched metrics for the following resource type
 | ThreadpoolMergeQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | ThreadpoolMergeRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | ThreadpoolMergeThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolNativeSearchCPUQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolNativeSearchCPUThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | ThreadpoolOpendistro\_monitor\_runnerQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | ThreadpoolOpendistro\_monitor\_runnerRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | ThreadpoolOpendistro\_monitor\_runnerThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
@@ -1195,6 +1258,8 @@ The `AWS/ES` namespace includes enriched metrics for the following resource type
 | WarmConcurrentSearchLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | WarmConcurrentSearchRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | WarmFreeStorageSpace | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmIndexingLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmIndexingRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | WarmJVMGCOldCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | WarmJVMGCOldCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 | WarmJVMGCYoungCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
@@ -1634,6 +1699,7 @@ The `AWS/Firehose` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
+| ActivePartitionsLimit | + `DeliveryStreamName` |
 | BackupToS3.Bytes | + `DeliveryStreamName` |
 | BackupToS3.DataFreshness | + `DeliveryStreamName` |
 | BackupToS3.Records | + `DeliveryStreamName` |
@@ -1662,15 +1728,19 @@ The `AWS/Firehose` namespace includes enriched metrics for the following resourc
 | DeliveryToHttpEndpoint.ProcessedRecords | + `DeliveryStreamName` |
 | DeliveryToHttpEndpoint.Records | + `DeliveryStreamName` |
 | DeliveryToHttpEndpoint.Success | + `DeliveryStreamName` |
-| DeliveryToIceberg.Bytes | + `DeliveryStreamName`, `IcebergTableName` |
-| DeliveryToIceberg.DataFreshness | + `DeliveryStreamName`, `IcebergTableName` |
-| DeliveryToIceberg.Success | + `DeliveryStreamName`, `IcebergTableName` |
-| DeliveryToIceberg.SuccessfulRowCount | + `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.DataFreshness | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.FailedRowCount | + `DeliveryStreamName` |
+| DeliveryToIceberg.IncomingRowCount | + `DeliveryStreamName` |
+| DeliveryToIceberg.Success | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.SuccessfulRowCount | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `IcebergTableName` |
 | DeliveryToRedshift.Bytes | + `DeliveryStreamName` |
+| DeliveryToRedshift.DataFreshness | + `DeliveryStreamName` |
 | DeliveryToRedshift.Records | + `DeliveryStreamName` |
 | DeliveryToRedshift.Success | + `DeliveryStreamName` |
 | DeliveryToS3.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
 | DeliveryToS3.DataFreshness | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DeliveryToS3.ObjectCount | + `DeliveryStreamName` |
 | DeliveryToS3.Records | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
 | DeliveryToS3.Success | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
 | DeliveryToSnowflake.Bytes | + `DeliveryStreamName` |
@@ -1694,6 +1764,7 @@ The `AWS/Firehose` namespace includes enriched metrics for the following resourc
 | IncomingBytes | + `DeliveryStreamName` |
 | IncomingPutRequests | + `DeliveryStreamName` |
 | IncomingRecords | + `DeliveryStreamName` |
+| JQProcessing.Duration | + `DeliveryStreamName` |
 | KMSKeyAccessDenied | + `DeliveryStreamName` |
 | KMSKeyDisabled | + `DeliveryStreamName` |
 | KMSKeyInvalidState | + `DeliveryStreamName` |
@@ -1706,6 +1777,9 @@ The `AWS/Firehose` namespace includes enriched metrics for the following resourc
 | OutputDecompressedBytes.Success | + `DeliveryStreamName` |
 | OutputDecompressedRecords.Failed | + `DeliveryStreamName` |
 | OutputDecompressedRecords.Success | + `DeliveryStreamName` |
+| PartitionCount | + `DeliveryStreamName` |
+| PartitionCountExceeded | + `DeliveryStreamName` |
+| PerPartitionThroughput | + `DeliveryStreamName` |
 | PutRecord.Bytes | + `DeliveryStreamName` |
 | PutRecord.Latency | + `DeliveryStreamName` |
 | PutRecord.Requests | + `DeliveryStreamName` |
@@ -1991,9 +2065,16 @@ The `AWS/Kinesis` namespace includes enriched metrics for the following resource
 | IteratorAgeMilliseconds | + `ShardId`, `StreamName` |
 | OutgoingBytes | + `ShardId`, `StreamName` |
 | OutgoingRecords | + `ShardId`, `StreamName` |
+| PutRecord.Bytes | + `StreamName` |
+| PutRecord.Latency | + `StreamName` |
 | PutRecord.Success | + `StreamName` |
 | PutRecords.Bytes | + `StreamName` |
+| PutRecords.FailedRecords | + `StreamName` |
+| PutRecords.Latency | + `StreamName` |
 | PutRecords.Success | + `StreamName` |
+| PutRecords.SuccessfulRecords | + `StreamName` |
+| PutRecords.ThrottledRecords | + `StreamName` |
+| PutRecords.TotalRecords | + `StreamName` |
 | ReadProvisionedThroughputExceeded | + `ShardId`, `StreamName`<br />+ `StreamName` |
 | SubscribeToShard.RateExceeded | + `ConsumerName`, `StreamName` |
 | SubscribeToShard.Success | + `ConsumerName`, `StreamName` |
@@ -2019,6 +2100,10 @@ The `AWS/KinesisAnalytics` namespace includes enriched metrics for the following
 | backPressuredTimeMsPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
 | busyTimeMsPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
 | bytesRequestedPerFetch | + `Application`, `Flow`, `Id`<br />+ `Application`, `Flow`, `Id`, `ShardId` |
+| bytes\_consumed\_rate | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
+| cancellingTime | + `Application` |
+| commitsFailed | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
+| commitsSucceeded | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
 | committedOffsets | + `Application`, `Flow`, `Topic` |
 | containerCPUUtilization | + `Application` |
 | containerDiskUtilization | + `Application` |
@@ -2028,6 +2113,7 @@ The `AWS/KinesisAnalytics` namespace includes enriched metrics for the following
 | currentOffsets | + `Application`, `Flow`, `Topic` |
 | currentOutputWatermark | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
 | downtime | + `Application` |
+| failingTime | + `Application` |
 | fullRestarts | + `Application` |
 | heapMemoryUtilization | + `Application` |
 | idleTimeMsPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
@@ -2051,6 +2137,9 @@ The `AWS/KinesisAnalytics` namespace includes enriched metrics for the following
 | numberOfFailedCheckpoints | + `Application` |
 | oldGenerationGCCount | + `Application` |
 | oldGenerationGCTime | + `Application` |
+| records\_lag\_max | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
+| restartingTime | + `Application` |
+| runningTime | + `Application` |
 | taskmanagerFileDescriptorsMax | + `Application` |
 | taskmanagerFileDescriptorsOpen | + `Application` |
 | threadCount | + `Application` |
@@ -2316,21 +2405,34 @@ The `AWS/NetworkELB` namespace includes enriched metrics for the following resou
 | ConsumedLCUs\_UDP | + `LoadBalancer` |
 | HealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
 | NewFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| NewFlowCount\_QUIC | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | NewFlowCount\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
 | NewFlowCount\_TLS | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer` |
 | NewFlowCount\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| PeakBytesPerSecond | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | PeakPacketsPerSecond | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | PortAllocationErrorCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | ProcessedBytes | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedBytes\_QUIC | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | ProcessedBytes\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | ProcessedBytes\_TLS | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | ProcessedBytes\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | ProcessedPackets | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| QUIC\_Unknown\_Server\_ID\_Packet\_Drop\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| RejectedFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ReservedLCUs | + `LoadBalancer` |
+| SecurityGroupBlockedFlowCount\_Inbound\_ICMP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| SecurityGroupBlockedFlowCount\_Inbound\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| SecurityGroupBlockedFlowCount\_Inbound\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| SecurityGroupBlockedFlowCount\_Outbound\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| SecurityGroupBlockedFlowCount\_Outbound\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | TCP\_Client\_Reset\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | TCP\_ELB\_Reset\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | TCP\_Target\_Reset\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 | TargetTLSNegotiationErrorCount | + `LoadBalancer` |
 | UnHealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| UnhealthyRoutingFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ZonalHealthStatus | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
 
 ## AWS/NetworkFirewall
 <a name="supported-metrics-ns-aws-networkfirewall"></a>
@@ -2697,6 +2799,9 @@ The `AWS/S3` namespace includes enriched metrics for the following resource type
 | PostRequests | + `BucketName`, `FilterId` |
 | PutRequests | + `BucketName`, `FilterId` |
 | ReplicationLatency | + `DestinationBucket`, `RuleId`, `SourceBucket` |
+| SelectBytesReturned | + `BucketName`, `FilterId` |
+| SelectBytesScanned | + `BucketName`, `FilterId` |
+| SelectRequests | + `BucketName`, `FilterId` |
 | TotalRequestLatency | + `BucketName`, `FilterId` |
 
 ## AWS/SNS

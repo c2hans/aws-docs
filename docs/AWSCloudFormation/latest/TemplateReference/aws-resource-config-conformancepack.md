@@ -8,6 +8,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 A conformance pack is a collection of AWS Config rules and remediation actions that can be easily deployed in an account and a region. ConformancePack creates a service linked role in your account. The service linked role is created only when the role does not exist in your account.
 
+To create a custom conformance pack, specify one of `TemplateBody`, `TemplateS3Uri`, or `TemplateSSMDocumentDetails`. To create a managed conformance pack, specify `Source`. A managed conformance pack is a collection of AWS Config rules that AWS builds and maintains for a compliance or governance framework. AWS updates a deployed managed conformance pack automatically when new AWS Config managed rules map to the framework's controls, or when the framework is revised.
+
 ## Syntax
 <a name="aws-resource-config-conformancepack-syntax"></a>
 
@@ -62,6 +64,7 @@ Properties:
 
 `ConformancePackInputParameters`  <a name="cfn-config-conformancepack-conformancepackinputparameters"></a>
 A list of ConformancePackInputParameter objects.
+A custom conformance pack can have a maximum of 60 input parameters. A managed conformance pack can have a maximum of 330 input parameters.
 *Required*: No
 *Type*: Array of [ConformancePackInputParameter](aws-properties-config-conformancepack-conformancepackinputparameter.md)
 *Minimum*: `0`
@@ -94,15 +97,15 @@ The prefix for the Amazon S3 bucket.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Scope`  <a name="cfn-config-conformancepack-scope"></a>
-An object of type `ConformancePackScope`, which contains the tag key and optional tag value that defines which resources trigger an evaluation for the AWS Config rules in the managed conformance pack.
-Managed conformance packs with a scope populate this field. Custom conformance packs leave it empty.
+The tag key, and optional tag value, that defines which resources trigger an evaluation for the AWS Config rules in a managed conformance pack. If you don't specify a scope, the rules in the conformance pack are unscoped.
+You can only specify `Scope` for a managed conformance pack. If you specify `Scope`, you must also specify `Source`.
 *Required*: No
 *Type*: [Scope](aws-properties-config-conformancepack-scope.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Source`  <a name="cfn-config-conformancepack-source"></a>
-Contains the identifier of the managed conformance pack that AWS Config deploys in your account.
-This field applies only to managed conformance packs. Custom conformance packs leave it empty.
+The managed conformance pack to deploy. If you specify `Source`, AWS Config creates a managed conformance pack. AWS builds and maintains managed conformance packs for specific compliance and governance frameworks, and keeps your deployed pack up to date as the framework and the available AWS Config managed rules change.
+If you specify `Source`, you can't specify `TemplateBody`, `TemplateS3Uri`, `TemplateSSMDocumentDetails`, `DeliveryS3Bucket`, or `DeliveryS3KeyPrefix`. You can't convert an existing conformance pack between a managed conformance pack and a custom conformance pack.
 *Required*: No
 *Type*: [Source](aws-properties-config-conformancepack-source.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -166,6 +169,10 @@ The type of the conformance pack. Valid values:
 ## Examples
 <a name="aws-resource-config-conformancepack--examples"></a>
 
+**Topics**
++ [Conformance Pack](#aws-resource-config-conformancepack--examples--Conformance_Pack)
++ [Managed conformance pack](#aws-resource-config-conformancepack--examples--Managed_conformance_pack)
+
 ### Conformance Pack
 <a name="aws-resource-config-conformancepack--examples--Conformance_Pack"></a>
 
@@ -202,4 +209,50 @@ Resources:
           ConformancePackName: ConformancePackName
           DeliveryS3Bucket: DeliveryS3Bucket
           TemplateS3Uri: s3://bucketname/prefix
+```
+
+### Managed conformance pack
+<a name="aws-resource-config-conformancepack--examples--Managed_conformance_pack"></a>
+
+The following example creates a managed conformance pack from the NIST SP 800-53 Rev. 5 managed conformance pack. The scope limits the rules in the conformance pack to resources that have the tag key `Environment` with the value `Production`.
+
+#### JSON
+<a name="aws-resource-config-conformancepack--examples--Managed_conformance_pack--json"></a>
+
+```json
+{
+    "Resources": {
+        "ManagedConformancePack": {
+            "Type": "AWS::Config::ConformancePack",
+            "Properties": {
+                "ConformancePackName": "ManagedConformancePackName",
+                "Source": {
+                    "SourceIdentifier": "NIST-SP-800-53_R5"
+                },
+                "Scope": {
+                    "TagKey": "Environment",
+                    "TagValue": "Production"
+                }
+            }
+        }
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-config-conformancepack--examples--Managed_conformance_pack--yaml"></a>
+
+```yaml
+---
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+    ManagedConformancePack:
+        Type: AWS::Config::ConformancePack
+        Properties:
+          ConformancePackName: ManagedConformancePackName
+          Source:
+            SourceIdentifier: NIST-SP-800-53_R5
+          Scope:
+            TagKey: Environment
+            TagValue: Production
 ```

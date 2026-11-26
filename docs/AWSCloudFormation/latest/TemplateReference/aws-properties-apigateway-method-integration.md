@@ -118,7 +118,7 @@ Specifies the integration's responses.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IntegrationTarget`  <a name="cfn-apigateway-method-integration-integrationtarget"></a>
-The ALB or NLB listener to send the request to. Only supported for private integrations that use VPC links V2.
+The ALB or NLB ARN to send the request to. Only supported for private integrations that use VPC links V2.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

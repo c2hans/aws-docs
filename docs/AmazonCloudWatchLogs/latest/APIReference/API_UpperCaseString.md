@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 This processor converts a string field to uppercase.
 
-For more information about this processor including examples, see [ upperCaseString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-upperCaseString) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ upperCaseString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-StringMutate.html#CloudWatch-Logs-Transformation-upperCaseString) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_UpperCaseString_Contents"></a>

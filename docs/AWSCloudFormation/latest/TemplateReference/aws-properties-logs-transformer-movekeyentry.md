@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Logs::Transformer MoveKeyEntry
 
-This object defines one key that will be moved with the [ moveKey](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-moveKey) processor.
+This object defines one key that will be moved with the [ moveKey](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-JSONMutate.html#CloudWatch-Logs-Transformation-moveKeys) processor.
 
 ## Syntax
 <a name="aws-properties-logs-transformer-movekeyentry-syntax"></a>

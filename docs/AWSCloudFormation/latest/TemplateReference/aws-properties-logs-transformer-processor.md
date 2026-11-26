@@ -112,7 +112,7 @@ Use this parameter to include the [ copyValue](https://docs.aws.amazon.com/Amazo
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Csv`  <a name="cfn-logs-transformer-processor-csv"></a>
-Use this parameter to include the [ CSV](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-CSV) processor in your transformer.
+Use this parameter to include the [ CSV](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Configurable.html#CloudWatch-Logs-Transformation-csv) processor in your transformer.
 *Required*: No
 *Type*: [Csv](aws-properties-logs-transformer-csv.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

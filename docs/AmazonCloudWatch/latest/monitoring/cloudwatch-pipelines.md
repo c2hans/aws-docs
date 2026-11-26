@@ -28,6 +28,7 @@ Up to 300 pipelines for collecting data from CloudWatch Logs
 Up to 30 pipelines for collecting data from other sources
 Metrics pipelines per account: up to 300
 Up to 20 processors per pipeline (logs and metrics)
+Maximum event size during transformation: 512 KB. If an event exceeds this size after a processor runs, the pipeline does not transform the event. You see the original raw log event, and no data is lost.
 Metrics pipelines supported ingestion path: OTLP only
 
 ## Pipeline components

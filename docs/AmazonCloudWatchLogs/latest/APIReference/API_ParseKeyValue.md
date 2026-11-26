@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 This processor parses a specified field in the original log event into key-value pairs.
 
-For more information about this processor including examples, see [ parseKeyValue](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-parseKeyValue) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ parseKeyValue](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Configurable.html#CloudWatch-Logs-Transformation-parseKeyValue) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_ParseKeyValue_Contents"></a>

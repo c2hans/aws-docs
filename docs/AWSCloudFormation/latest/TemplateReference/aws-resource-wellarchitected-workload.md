@@ -31,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Lenses](#cfn-wellarchitected-workload-lenses)" : {{[ String, ... ]}},
       "[NonAwsRegions](#cfn-wellarchitected-workload-nonawsregions)" : {{[ String, ... ]}},
       "[Notes](#cfn-wellarchitected-workload-notes)" : {{String}},
+      "[PillarPriorities](#cfn-wellarchitected-workload-pillarpriorities)" : {{[ String, ... ]}},
+      "[ProfileArns](#cfn-wellarchitected-workload-profilearns)" : {{[ String, ... ]}},
       "[ReviewOwner](#cfn-wellarchitected-workload-reviewowner)" : {{String}},
       "[Tags](#cfn-wellarchitected-workload-tags)" : {{[ TagsItems, ... ]}},
       "[WorkloadName](#cfn-wellarchitected-workload-workloadname)" : {{String}}
@@ -60,6 +62,10 @@ Properties:
   [NonAwsRegions](#cfn-wellarchitected-workload-nonawsregions): {{
     - String}}
   [Notes](#cfn-wellarchitected-workload-notes): {{String}}
+  [PillarPriorities](#cfn-wellarchitected-workload-pillarpriorities): {{
+    - String}}
+  [ProfileArns](#cfn-wellarchitected-workload-profilearns): {{
+    - String}}
   [ReviewOwner](#cfn-wellarchitected-workload-reviewowner): {{String}}
   [Tags](#cfn-wellarchitected-workload-tags): {{
     - TagsItems}}
@@ -151,6 +157,22 @@ For a review template, these are the notes that will be associated with the work
 *Type*: String
 *Maximum*: `2084`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PillarPriorities`  <a name="cfn-wellarchitected-workload-pillarpriorities"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ProfileArns`  <a name="cfn-wellarchitected-workload-profilearns"></a>
+The list of profile ARNs associated with the workload.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0 | 0`
+*Maximum*: `2084 | 1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ReviewOwner`  <a name="cfn-wellarchitected-workload-reviewowner"></a>
 Property description not available.

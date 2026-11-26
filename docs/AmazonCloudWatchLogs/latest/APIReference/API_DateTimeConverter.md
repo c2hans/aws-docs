@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 This processor converts a datetime string into a format that you specify.
 
-For more information about this processor including examples, see [ datetimeConverter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-datetimeConverter) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ datetimeConverter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Datatype.html#CloudWatch-Logs-Transformation-datetimeConverter) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_DateTimeConverter_Contents"></a>

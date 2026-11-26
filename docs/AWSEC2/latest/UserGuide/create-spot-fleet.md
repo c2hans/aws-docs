@@ -180,7 +180,7 @@ Use the [request-spot-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec
 aws ec2 request-spot-fleet --spot-fleet-request-config file://{{config.json}}
 ```
 
-For example configuration files, see [Example CLI configurations Spot Fleet](spot-fleet-examples.md).
+For example configuration files, see [Example CLI configurations for Spot Fleet](spot-fleet-examples.md).
 
 ------
 #### [ PowerShell ]
@@ -196,7 +196,7 @@ Request-EC2SpotFleet `
     -SpotFleetRequestConfig_LaunchTemplateConfig @($launchConfig)
 ```
 
-Define the launch configuration as follows, setting the launch template and override properties that you need. For example configurations, see [Example CLI configurations Spot Fleet](spot-fleet-examples.md).
+Define the launch configuration as follows, setting the launch template and override properties that you need. For example configurations, see [Example CLI configurations for Spot Fleet](spot-fleet-examples.md).
 
 ```powershell
 $lcSpec = Amazon.EC2.Model.FleetLaunchTemplateSpecification

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 This processor deletes entries from a log event. These entries are key-value pairs.
 
-For more information about this processor including examples, see [ deleteKeys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-deleteKeys) in the *CloudWatch Logs User Guide*.
+For more information about this processor including examples, see [ deleteKeys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-JSONMutate.html#CloudWatch-Logs-Transformation-deleteKeys) in the *CloudWatch Logs User Guide*.
 
 ## Contents
 <a name="API_DeleteKeys_Contents"></a>

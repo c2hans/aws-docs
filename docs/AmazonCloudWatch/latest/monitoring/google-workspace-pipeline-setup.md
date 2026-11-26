@@ -95,12 +95,12 @@ The processor transforms ingested events into OCSF format using the `google_work
 | Error | Likely cause | Resolution or connector behavior |
 | --- | --- | --- |
 | 401 Unauthorized | Invalid or expired service account credentials | Verify that the private\_key stored in AWS Secrets Manager matches the current service account key. If necessary, regenerate the key in the Google Cloud console. |
-| 403 Forbidden – Not Authorized to access this resource/api | Domain-wide delegation is not configured or scopes are not authorized. | Verify that the service account client ID is added in the Google Admin console with the correct OAuth scopes. Make sure that the subject is an administrator account. |
+| 403 Forbidden – Not Authorized to access this resource/api | The administrator account that the pipeline impersonates does not have the required Reports or Alert Center privileges. | Make sure that the administrator account that you specified as the subject, which is the account that the JWT impersonates, has the Reports and Alert Center privileges. |
 | 403 Forbidden – Access Not Configured | A required API is not enabled. | Enable the Admin SDK API and Alert Center API in the Google Cloud console. |
 | 429 Too Many Requests | An API rate limit is exceeded. | The connector automatically backs off and retries. If the error persists, verify that other workloads are not consuming the same Google Workspace API quota. |
 | 400 Bad Request – Invalid subject | The subject email is not a valid administrator account. | Verify that the subject value is an administrator email address in your Google Workspace organization. |
 | No data appears in the log group. | The pipeline resource policy was not added within 5 minutes of pipeline creation, before the pipeline became active. | Delete and recreate the pipeline, and then immediately add the CloudWatch Logs resource policy. |
-| Some applications are missing from the data. | Service account scopes are too restrictive. | Verify that all required OAuth scopes are authorized in the Google Admin console domain-wide delegation settings. |
+| Token exchange error from https://oauth2.googleapis.com/token in the pipeline logs, with an error such as access\_denied | One or both OAuth scopes are not authorized for the service account client ID in domain-wide delegation. The pipeline requests both scopes in one token request, so Google rejects the whole request. | In the Google Admin console, edit the domain-wide delegation entry for the service account client ID so that it includes both https://www.googleapis.com/auth/admin.reports.audit.readonly and https://www.googleapis.com/auth/apps.alerts, and then choose Authorize. The pipeline collects no data from any Google Workspace application until both scopes are authorized. |
 
 ### Gmail activity shows fewer events than expected
 <a name="google-workspace-troubleshooting-gmail"></a>
@@ -111,7 +111,7 @@ The processor transforms ingested events into OCSF format using the `google_work
 <a name="google-workspace-troubleshooting-alert-center"></a>
 + The current version of the Alert Center API, v1beta1, is available to all Google Workspace customers. Access depends on a privilege rather than on an edition. Verify that the impersonated `subject` account holds the Alert center administrator privilege.
 + Alerts can take up to 24 hours to appear after the triggering event.
-+ Verify that the `https://www.googleapis.com/auth/apps.alerts` scope is authorized.
++ If the `https://www.googleapis.com/auth/apps.alerts` scope is not authorized, the pipeline can't get a token and collects no data from any application. Empty Alert Center results while other applications return data point to the privilege or timing causes above.
 
 ### Access Transparency logs do not appear
 <a name="google-workspace-troubleshooting-access-transparency"></a>

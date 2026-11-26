@@ -6,7 +6,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::ApiGateway::Authorizer JwtIssuer
 
-<a name="aws-properties-apigateway-authorizer-jwtissuer-description"></a>The `JwtIssuer` property type specifies Property description not available. for an [AWS::ApiGateway::Authorizer](aws-resource-apigateway-authorizer.md).
+The `JwtIssuer` property type specifies an issuer that a `JWT` authorizer trusts, the audiences it accepts from that issuer, and any additional claim rules.
+
+`JwtIssuer` is a property of the [JwtConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-authorizer-jwtconfiguration.html) property type.
 
 ## Syntax
 <a name="aws-properties-apigateway-authorizer-jwtissuer-syntax"></a>
@@ -39,19 +41,23 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-apigateway-authorizer-jwtissuer-properties"></a>
 
 `AdditionalClaims`  <a name="cfn-apigateway-authorizer-jwtissuer-additionalclaims"></a>
-Property description not available.
+The additional claim rules for this issuer. Claim names must be unique within the issuer.
 *Required*: No
 *Type*: Array of [JwtAdditionalClaim](aws-properties-apigateway-authorizer-jwtadditionalclaim.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Audiences`  <a name="cfn-apigateway-authorizer-jwtissuer-audiences"></a>
-Property description not available.
+The audiences that the issuer can issue tokens for. None can be empty. The token's `aud` claim must contain at least one of these values.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Issuer`  <a name="cfn-apigateway-authorizer-jwtissuer-issuer"></a>
-Property description not available.
+The OpenID Connect (OIDC) issuer URL. The value must be an absolute `https` URL that includes a host and has no user information, query, or fragment. It must exactly match the `iss` claim of the token, and the issuer's OIDC discovery document must name this exact issuer.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+<a name="aws-properties-apigateway-authorizer-jwtissuer--seealso"></a>
++ [JwtIssuerInput](https://docs.aws.amazon.com/apigateway/latest/api/API_JwtIssuerInput.html) in the *Amazon API Gateway REST API Reference*

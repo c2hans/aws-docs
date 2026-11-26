@@ -104,7 +104,7 @@ max_over_time({"valkey.memory.used",
                "@resource.aws.elasticache.replication_group.id"="my-cluster"}[24h])
 ```
 
-The range sets the period, up to 7 days.
+The range sets the period.
 
 ### How fast the dataset is growing
 <a name="otel-metrics-queries.memory-and-capacity.how-fast-the-dataset-is-growing"></a>

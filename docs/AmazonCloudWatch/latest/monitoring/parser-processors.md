@@ -39,12 +39,12 @@ This table lists the supported schema combinations.
 
 | Pipeline source type | Supported Schemas | Version | Mapping Version |
 | --- | --- | --- | --- |
-| cloudwatch\_logs | cloud\_trail: | 1.5 | Not required |
-| cloudwatch\_logs | route53\_resolver: | 1.5 | Not required |
-| cloudwatch\_logs | vpc\_flow: | 1.5 | Not required |
-| cloudwatch\_logs | eks\_audit: | 1.5 | Not required |
-| cloudwatch\_logs | aws\_waf: | 1.5 | Not required |
-| cloudwatch\_logs | aws\_nlb: | 1.5 | Not required |
+| cloudwatch\_logs | cloud\_trail: | 1.5 | 1.5.0 |
+| cloudwatch\_logs | route53\_resolver: | 1.5 | 1.5.0 |
+| cloudwatch\_logs | vpc\_flow: | 1.5 | 1.5.0 |
+| cloudwatch\_logs | eks\_audit: | 1.5 | 1.5.0 |
+| cloudwatch\_logs | aws\_waf: | 1.5 | 1.5.0 |
+| cloudwatch\_logs | nlb\_access\_logs: | 1.5 | 1.5.0 |
 | s3 | Any OCSF schema | Any | Any |
 | microsoft\_office365 | microsoft\_office365: | 1.5 | 1.5.0 |
 | microsoft\_entraid | microsoft\_entraid: | 1.5 | 1.5.0 |

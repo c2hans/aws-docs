@@ -34,6 +34,8 @@ View details about updates to AWS managed policies for CloudWatch since this ser
 
 | Change | Description | Date |
 | --- | --- | --- |
+|  [CloudWatchReadOnlyAccess](#managed-policies-cloudwatch-CloudWatchReadOnlyAccess) – Updated policy | CloudWatch added the `aidevops:ListAgentSpaces` permission to **CloudWatchReadOnlyAccess**.<br />With this permission, you can view the agent spaces in AWS DevOps Agent from CloudWatch investigations, so that you can choose an agent space when you hand off an investigation to AWS DevOps Agent. The permission only lists agent spaces. It doesn't grant access to the contents of an agent space. | November 24, 2026 |
+|  [CloudWatchFullAccessV2](#managed-policies-cloudwatch-CloudWatchFullAccessV2) – Updated policy | CloudWatch added the `aidevops:ListAgentSpaces` permission to **CloudWatchFullAccessV2**.<br />With this permission, you can view the agent spaces in AWS DevOps Agent from CloudWatch investigations, so that you can choose an agent space when you hand off an investigation to AWS DevOps Agent. The permission only lists agent spaces. It doesn't grant access to the contents of an agent space. | November 23, 2026 |
 |  [CloudWatchReadOnlyAccess](#managed-policies-cloudwatch-CloudWatchReadOnlyAccess) – Updated policy | CloudWatch added the `cloudwatch:StartMonitoringAssessment` permission to **CloudWatchReadOnlyAccess**, so that users with this policy can start a CloudWatch Recommendations assessment. An assessment reads the account with the caller's own permissions and does not change any resources. | November 23, 2026 |
 |  [CloudWatchFullAccessV2](#managed-policies-cloudwatch-CloudWatchFullAccessV2) – Updated policy | CloudWatch updated the `kms:DescribeKey` permission in **CloudWatchFullAccessV2** so that you can also use it for requests that CloudWatch makes on your behalf (`kms:ViaService`), in addition to requests from CloudWatch Logs. The permission still applies only to keys in your own account. | November 18, 2026 |
 |  [CloudWatchAgentServerPolicy](#managed-policies-cloudwatch-CloudWatchAgentServerPolicy) – Updated policy | CloudWatch added the `cloudwatch:PutProfileRecords` permission to **CloudWatchAgentServerPolicy**.<br />With this permission, the CloudWatch agent can send continuous profiling data to CloudWatch in OpenTelemetry format, in addition to metrics, logs, and traces. | November 6, 2026 |
@@ -135,6 +137,8 @@ It includes `rum`, `synthetics`, and `xray` permissions so that users can have f
 
 It includes the `kms:DescribeKey` permission. CloudWatch Logs requires this permission from the caller to create a log group with a customer managed AWS KMS key or to associate a key with a log group. You also need it to encrypt the `aws/spans` log group with a customer managed key when you enable [Transaction Search](CloudWatch-Transaction-Search.md). You can use this permission only for requests that CloudWatch Logs or CloudWatch makes on your behalf, and only for keys in your own account.
 
+It includes the `aidevops:ListAgentSpaces` permission, so that you can view the agent spaces in AWS DevOps Agent from CloudWatch investigations and choose one when you hand off an investigation to AWS DevOps Agent.
+
 To see the full contents of the policy, see [CloudWatchFullAccessV2](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchFullAccessV2.html) in the *AWS Managed Policy Reference Guide*.
 
 ## CloudWatchFullAccess
@@ -152,6 +156,8 @@ The **CloudWatchFullAccess** policy is on the path to deprecation. We recommend 
 It includes `rum`, `synthetics`, and `xray` permissions so that users can have read-only access to CloudWatch Synthetics, AWS X-Ray, and CloudWatch RUM, all of which are under the CloudWatch service.
 
 It includes the `cloudwatch:StartMonitoringAssessment` permission, so that users with this policy can start a CloudWatch Recommendations assessment of the alarms and metrics in their account. An assessment reads the account with the caller's own permissions and does not change any resources.
+
+It includes the `aidevops:ListAgentSpaces` permission, so that you can view the agent spaces in AWS DevOps Agent from CloudWatch investigations and choose one when you hand off an investigation to AWS DevOps Agent.
 
 To see the full contents of the policy, see [CloudWatchReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html) in the *AWS Managed Policy Reference Guide*.
 

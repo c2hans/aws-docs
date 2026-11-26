@@ -59,7 +59,7 @@ The name of the payment connector.
 The type of payment connector, which determines the payment provider integration.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `CoinbaseCDP | StripePrivy | Stripe | PayPal | AmazonPay | AwsBilling`
+*Allowed values*: `CoinbaseCDP | StripePrivy | AwsBilling`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CredentialProviderConfigurations`  <a name="cfn-bedrockagentcore-paymentconnector-credentialproviderconfigurations"></a>

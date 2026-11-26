@@ -24,6 +24,7 @@ The following tables list, per namespace, the supported resources and their enri
 + [AWS/AutoScaling](#otel-enrichment-ns-aws-autoscaling)
 + [AWS/Backup](#otel-enrichment-ns-aws-backup)
 + [AWS/Bedrock](#otel-enrichment-ns-aws-bedrock)
++ [AWS/Bedrock-AgentCore](#otel-enrichment-ns-aws-bedrock-agentcore)
 + [AWS/BedrockMantle](#otel-enrichment-ns-aws-bedrockmantle)
 + [AWS/ClientVPN](#otel-enrichment-ns-aws-clientvpn)
 + [AWS/CloudFront](#otel-enrichment-ns-aws-cloudfront)
@@ -40,6 +41,7 @@ The following tables list, per namespace, the supported resources and their enri
 + [AWS/EBS](#otel-enrichment-ns-aws-ebs)
 + [AWS/EC2](#otel-enrichment-ns-aws-ec2)
 + [AWS/EC2CapacityReservations](#otel-enrichment-ns-aws-ec2capacityreservations)
++ [AWS/ECS](#otel-enrichment-ns-aws-ecs)
 + [AWS/EFS](#otel-enrichment-ns-aws-efs)
 + [AWS/EKS](#otel-enrichment-ns-aws-eks)
 + [AWS/ELB](#otel-enrichment-ns-aws-elb)
@@ -70,6 +72,7 @@ The following tables list, per namespace, the supported resources and their enri
 + [AWS/NATGateway](#otel-enrichment-ns-aws-natgateway)
 + [AWS/NetworkELB](#otel-enrichment-ns-aws-networkelb)
 + [AWS/NetworkFirewall](#otel-enrichment-ns-aws-networkfirewall)
++ [AWS/Observability Admin](#otel-enrichment-ns-aws-observability-admin)
 + [AWS/Pinpoint](#otel-enrichment-ns-aws-pinpoint)
 + [AWS/Prometheus](#otel-enrichment-ns-aws-prometheus)
 + [AWS/RDS](#otel-enrichment-ns-aws-rds)
@@ -104,6 +107,7 @@ The `AWS/AIDevOps` namespace is published under the OpenTelemetry instrumentatio
 | Metric | OpenTelemetry metric | Instrument type | Data point attributes |
 | --- | --- | --- | --- |
 | ConsumedChatRequests | ConsumedChatRequests | Sum | AgentSpaceUUID |
+| ConsumedCodeChangeRiskAnalysisTime | ConsumedCodeChangeRiskAnalysisTime | Histogram | AgentSpaceUUID |
 | ConsumedEvaluationTime | ConsumedEvaluationTime | Histogram | AgentSpaceUUID |
 | ConsumedInvestigationTime | ConsumedInvestigationTime | Histogram | AgentSpaceUUID |
 | ConsumedOnDemandTime | ConsumedOnDemandTime | Histogram | AgentSpaceUUID |
@@ -402,6 +406,7 @@ The `AWS/ApplicationELB` namespace is published under the OpenTelemetry instrume
 
 The `AWS/Athena` namespace is published under the OpenTelemetry instrumentation scope `cloudwatch.aws/athena`. All enriched instruments use Delta temporality.
 + [AWS::Athena::CapacityReservation](#otel-enrichment-aws-athena-aws-athena-capacityreservation)
++ [AWS::Athena::WorkGroup](#otel-enrichment-aws-athena-aws-athena-workgroup)
 
 ### AWS::Athena::CapacityReservation
 <a name="otel-enrichment-aws-athena-aws-athena-capacityreservation"></a>
@@ -410,7 +415,24 @@ The `AWS/Athena` namespace is published under the OpenTelemetry instrumentation 
 
 | Metric | OpenTelemetry metric | Instrument type | Data point attributes |
 | --- | --- | --- | --- |
+| DPUAllocated | DPUAllocated | Histogram | Capacity Reservation |
 | DPUConsumed | DPUConsumed | Histogram | Capacity Reservation, WorkGroup |
+
+### AWS::Athena::WorkGroup
+<a name="otel-enrichment-aws-athena-aws-athena-workgroup"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| DPUCount | DPUCount | Histogram | QueryState, QueryType, WorkGroup |
+| EngineExecutionTime | EngineExecutionTime | Histogram | QueryState, QueryType, WorkGroup |
+| ProcessedBytes | ProcessedBytes | Histogram | QueryState, QueryType, WorkGroup |
+| QueryPlanningTime | QueryPlanningTime | Histogram | QueryState, QueryType, WorkGroup |
+| QueryQueueTime | QueryQueueTime | Histogram | QueryState, QueryType, WorkGroup |
+| ServicePreProcessingTime | ServicePreProcessingTime | Histogram | QueryState, QueryType, WorkGroup |
+| ServiceProcessingTime | ServiceProcessingTime | Histogram | QueryState, QueryType, WorkGroup |
+| TotalExecutionTime | TotalExecutionTime | Histogram | QueryState, QueryType, WorkGroup |
 
 ## AWS/AutoScaling
 <a name="otel-enrichment-ns-aws-autoscaling"></a>
@@ -515,6 +537,303 @@ The `AWS/Bedrock` namespace is published under the OpenTelemetry instrumentation
 | OutputImageCount | OutputImageCount | Sum | BucketedStepSize, ImageSize, ModelId |
 | OutputTokenCount | OutputTokenCount | Sum | ModelId |
 | TimeToFirstToken | TimeToFirstToken | Histogram | ModelId |
+
+## AWS/Bedrock-AgentCore
+<a name="otel-enrichment-ns-aws-bedrock-agentcore"></a>
+
+The `AWS/Bedrock-AgentCore` namespace is published under the OpenTelemetry instrumentation scope `cloudwatch.aws/bedrock-agentcore`. All enriched instruments use Delta temporality.
++ [AWS::BedrockAgentCore::BrowserCustom](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-browsercustom)
++ [AWS::BedrockAgentCore::CodeInterpreterCustom](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-codeinterpretercustom)
++ [AWS::BedrockAgentCore::Gateway](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-gateway)
++ [AWS::BedrockAgentCore::Memory](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-memory)
++ [AWS::BedrockAgentCore::PaymentManager](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-paymentmanager)
++ [AWS::BedrockAgentCore::PolicyEngine](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-policyengine)
++ [AWS::BedrockAgentCore::Runtime](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-runtime)
++ [AWS::BedrockAgentCore::WorkloadIdentity](#otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-workloadidentity)
++ [`browser`](#otel-enrichment-aws-bedrock-agentcore-browser)
++ [`code-interpreter`](#otel-enrichment-aws-bedrock-agentcore-code-interpreter)
+
+### AWS::BedrockAgentCore::BrowserCustom
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-browsercustom"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| CPUUsed-vCPUHours | CPUUsed-vCPUHoursForBrowser | Sum | Resource, Service |
+| Duration | DurationForBrowser | Histogram | Operation, Resource |
+| Errors | ErrorsForBrowser | Sum | Operation, Resource |
+| Errors | ErrorsForBrowserByTool | Sum | Operation, Resource, ToolName |
+| Invocations | InvocationsForBrowser | Sum | Operation, Resource |
+| Invocations | InvocationsForBrowserByTool | Sum | Operation, Resource, ToolName |
+| Latency | LatencyForBrowser | Histogram | Operation, Resource |
+| Latency | LatencyForBrowserByTool | Histogram | Operation, Resource, ToolName |
+| MemoryUsed-GBHours | MemoryUsed-GBHoursForBrowser | Sum | Resource, Service |
+| SystemErrors | SystemErrorsForBrowser | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForBrowserByTool | Sum | Operation, Resource, ToolName |
+| TakeOverCount | TakeOverCountForBrowser | Sum | Operation, Resource |
+| TakeOverReleaseCount | TakeOverReleaseCountForBrowser | Sum | Operation, Resource |
+| Throttles | ThrottlesForBrowser | Sum | Operation, Resource |
+| Throttles | ThrottlesForBrowserByTool | Sum | Operation, Resource, ToolName |
+| UserErrors | UserErrorsForBrowser | Sum | Operation, Resource |
+| UserErrors | UserErrorsForBrowserByTool | Sum | Operation, Resource, ToolName |
+
+### AWS::BedrockAgentCore::CodeInterpreterCustom
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-codeinterpretercustom"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| CPUUsed-vCPUHours | CPUUsed-vCPUHoursForCodeInterpreter | Sum | Resource, Service |
+| Duration | DurationForCodeInterpreter | Histogram | Operation, Resource |
+| Errors | ErrorsForCodeInterpreter | Sum | Operation, Resource |
+| Errors | ErrorsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| Invocations | InvocationsForCodeInterpreter | Sum | Operation, Resource |
+| Invocations | InvocationsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| Latency | LatencyForCodeInterpreter | Histogram | Operation, Resource |
+| Latency | LatencyForCodeInterpreterByTool | Histogram | Operation, Resource, ToolName |
+| MemoryUsed-GBHours | MemoryUsed-GBHoursForCodeInterpreter | Sum | Resource, Service |
+| SystemErrors | SystemErrorsForCodeInterpreter | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| Throttles | ThrottlesForCodeInterpreter | Sum | Operation, Resource |
+| Throttles | ThrottlesForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| UserErrors | UserErrorsForCodeInterpreter | Sum | Operation, Resource |
+| UserErrors | UserErrorsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+
+### AWS::BedrockAgentCore::Gateway
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-gateway"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| AllowDecisions | AllowDecisionsForGatewayPolicy | Sum | OperationName, TargetResource |
+| DenyDecisions | DenyDecisionsForGatewayPolicy | Sum | OperationName, TargetResource |
+| DeterminingPolicies | DeterminingPoliciesForGatewayPolicy | Histogram | OperationName, TargetResource |
+| Duration | DurationForGateway | Histogram | Operation, Protocol, Resource |
+| Duration | DurationForGatewayByMethod | Histogram | Method, Operation, Protocol, Resource |
+| Duration | DurationForGatewayByTool | Histogram | Method, Name, Operation, Protocol, Resource |
+| EarliestCertificateDaysToExpiry | EarliestCertificateDaysToExpiry | Histogram | Operation, Protocol, Resource |
+| GuardrailLatency | GuardrailLatencyForGatewayPolicy | Histogram | OperationName, TargetResource |
+| Invocations | InvocationsForGateway | Sum | Operation, Protocol, Resource |
+| Invocations | InvocationsForGatewayByMethod | Sum | Method, Operation, Protocol, Resource |
+| Invocations | InvocationsForGatewayByTool | Sum | Method, Name, Operation, Protocol, Resource |
+| Invocations | InvocationsForGatewayPolicy | Sum | OperationName, TargetResource |
+| Latency | LatencyForGateway | Histogram | Operation, Protocol, Resource |
+| Latency | LatencyForGatewayByMethod | Histogram | Method, Operation, Protocol, Resource |
+| Latency | LatencyForGatewayByTool | Histogram | Method, Name, Operation, Protocol, Resource |
+| Latency | LatencyForGatewayPolicy | Histogram | OperationName, TargetResource |
+| LogOnlyDecisionFlips | LogOnlyDecisionFlipsForGatewayPolicy | Sum | OperationName, TargetResource |
+| LogOnlyMatches | LogOnlyMatchesForGatewayPolicy | Sum | OperationName, TargetResource |
+| MismatchErrors | MismatchErrorsForGatewayPolicy | Sum | OperationName, TargetResource |
+| MismatchErrors | MismatchErrorsForGatewayPolicyByEnforcementMode | Sum | OperationName, PolicyEnforcementMode, TargetResource |
+| NoDeterminingPolicies | NoDeterminingPoliciesForGatewayPolicy | Sum | OperationName, TargetResource |
+| SuppressOutputs | SuppressOutputsForGatewayPolicy | Sum | OperationName, TargetResource |
+| SystemErrors | SystemErrorsForGateway | Sum | Operation, Protocol, Resource |
+| SystemErrors | SystemErrorsForGatewayByMethod | Sum | Method, Operation, Protocol, Resource |
+| SystemErrors | SystemErrorsForGatewayByTool | Sum | Method, Name, Operation, Protocol, Resource |
+| SystemErrors | SystemErrorsForGatewayPolicy | Sum | OperationName, TargetResource |
+| TargetExecutionTime | TargetExecutionTimeForGateway | Histogram | Operation, Protocol, Resource |
+| TargetExecutionTime | TargetExecutionTimeForGatewayByMethod | Histogram | Method, Operation, Protocol, Resource |
+| TargetExecutionTime | TargetExecutionTimeForGatewayByTool | Histogram | Method, Name, Operation, Protocol, Resource |
+| TargetType.API\_GATEWAY | TargetType.API\_GATEWAY | Sum | Operation, Protocol, Resource |
+| TargetType.CONNECTOR | TargetType.CONNECTOR | Sum | Operation, Protocol, Resource |
+| TargetType.LAMBDA | TargetType.LAMBDA | Sum | Operation, Protocol, Resource |
+| TargetType.MCP | TargetType.MCP | Sum | Operation, Protocol, Resource |
+| TargetType.OPENAPI | TargetType.OPENAPI | Sum | Operation, Protocol, Resource |
+| TargetType.SMITHY | TargetType.SMITHY | Sum | Operation, Protocol, Resource |
+| TemporalLatency | TemporalLatencyForGatewayPolicy | Histogram | OperationName, TargetResource |
+| Throttles | ThrottlesForGateway | Sum | Operation, Protocol, Resource |
+| Throttles | ThrottlesForGatewayByMethod | Sum | Method, Operation, Protocol, Resource |
+| Throttles | ThrottlesForGatewayByTool | Sum | Method, Name, Operation, Protocol, Resource |
+| TotalMismatchedPolicies | TotalMismatchedPoliciesForGatewayPolicy | Histogram | OperationName, TargetResource |
+| UserErrors | UserErrorsForGateway | Sum | Operation, Protocol, Resource |
+| UserErrors | UserErrorsForGatewayByMethod | Sum | Method, Operation, Protocol, Resource |
+| UserErrors | UserErrorsForGatewayByTool | Sum | Method, Name, Operation, Protocol, Resource |
+| UserErrors | UserErrorsForGatewayPolicy | Sum | OperationName, TargetResource |
+| WafBlocks | WafBlocks | Sum | Operation, Protocol, Resource |
+| WafFailCloses | WafFailCloses | Sum | Operation, Protocol, Resource |
+| WafFailOpens | WafFailOpens | Sum | Operation, Protocol, Resource |
+
+### AWS::BedrockAgentCore::Memory
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-memory"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| CreationCount | CreationCountForMemory | Sum | ItemType, Resource |
+| Errors | ErrorsForMemory | Sum | Operation, Resource |
+| FailedExtraction | FailedExtractionForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| InputTokenUsage | InputTokenUsageForMemory | Sum | Operation, Resource |
+| InputTokenUsage | InputTokenUsageForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| InputTokenUsage | InputTokenUsageForMemoryByStrategyType | Sum | Operation, Resource, StrategyType |
+| Invocations | InvocationsForMemory | Sum | Operation, Resource |
+| Invocations | InvocationsForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| Latency | LatencyForMemory | Histogram | Operation, Resource |
+| Latency | LatencyForMemoryByStrategy | Histogram | Operation, Resource, StrategyId, StrategyType |
+| NamespaceResolutionFailure | NamespaceResolutionFailureForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| OutputTokenUsage | OutputTokenUsageForMemory | Sum | Operation, Resource |
+| OutputTokenUsage | OutputTokenUsageForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| OutputTokenUsage | OutputTokenUsageForMemoryByStrategyType | Sum | Operation, Resource, StrategyType |
+| StreamPublishingFailure | StreamPublishingFailureForMemory | Sum | Operation, Resource |
+| StreamPublishingSuccess | StreamPublishingSuccessForMemory | Sum | Operation, Resource |
+| StreamUserError | StreamUserErrorForMemory | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForMemory | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| Throttles | ThrottlesForMemory | Sum | Operation, Resource |
+| TokenCount | TokenCountForMemory | Sum | Operation, Resource |
+| TokenCount | TokenCountForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+| UserErrors | UserErrorsForMemory | Sum | Operation, Resource |
+| UserErrors | UserErrorsForMemoryByStrategy | Sum | Operation, Resource, StrategyId, StrategyType |
+
+### AWS::BedrockAgentCore::PaymentManager
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-paymentmanager"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| BuyerApprovalCount | BuyerApprovalCountForPaymentManager | Sum | AgentName, BuyerApprovalStatus, CaptureStrategy, Operation, PaymentConnectorId, PaymentManagerId |
+| OperationFailure | OperationFailureForPaymentManagerByAgent | Sum | AgentName, Operation, PaymentManagerId |
+| OperationFailure | OperationFailureForPaymentManagerByConnector | Sum | AgentName, Operation, PaymentConnectorId, PaymentManagerId |
+| OperationLatency | OperationLatencyForPaymentManagerByAgent | Histogram | AgentName, Operation, PaymentManagerId |
+| OperationLatency | OperationLatencyForPaymentManagerByConnector | Histogram | AgentName, Operation, PaymentConnectorId, PaymentManagerId |
+| OperationSuccess | OperationSuccessForPaymentManagerByAgent | Sum | AgentName, Operation, PaymentManagerId |
+| OperationSuccess | OperationSuccessForPaymentManagerByConnector | Sum | AgentName, Operation, PaymentConnectorId, PaymentManagerId |
+| PaymentIntentCount | PaymentIntentCountForPaymentManager | Sum | AgentName, CaptureStrategy, ConnectorType, Operation, PaymentConnectorId, PaymentIntentStatus, PaymentManagerId |
+| SpendAmount | SpendAmountForPaymentManager | Sum | AgentName, Currency, Operation, PaymentConnectorId, PaymentManagerId |
+| Throttles | ThrottlesForPaymentManagerByAgent | Sum | AgentName, Operation, PaymentManagerId |
+| TransactionCount | TransactionCountForPaymentManager | Sum | AgentName, CaptureStrategy, ConnectorType, Operation, PaymentConnectorId, PaymentManagerId |
+| UserErrors | UserErrorsForPaymentManagerByAgent | Sum | AgentName, Operation, PaymentManagerId |
+| UserErrors | UserErrorsForPaymentManagerByConnector | Sum | AgentName, Operation, PaymentConnectorId, PaymentManagerId |
+
+### AWS::BedrockAgentCore::PolicyEngine
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-policyengine"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| AllowDecisions | AllowDecisionsForPolicyEngine | Sum | OperationName, PolicyEngine |
+| AllowDecisions | AllowDecisionsForPolicyEngineByMode | Sum | Mode, OperationName, PolicyEngine |
+| ConfidenceScore | ConfidenceScoreForPolicyEngineByEnforcementMode | Histogram | OperationName, PolicyEnforcementMode, PolicyEngine |
+| ConfidenceThreshold | ConfidenceThresholdForPolicyEngineByEnforcementMode | Histogram | OperationName, PolicyEnforcementMode, PolicyEngine |
+| DenyDecisions | DenyDecisionsForPolicyEngine | Sum | OperationName, PolicyEngine |
+| DenyDecisions | DenyDecisionsForPolicyEngineByMode | Sum | Mode, OperationName, PolicyEngine |
+| DeterminingPolicies | DeterminingPoliciesForPolicyEngine | Histogram | OperationName, PolicyEngine |
+| LogOnlyDecisionFlips | LogOnlyDecisionFlipsForPolicyEngine | Sum | OperationName, PolicyEngine |
+| LogOnlyMatches | LogOnlyMatchesForPolicyEngine | Sum | OperationName, PolicyEngine |
+| NoDeterminingPolicies | NoDeterminingPoliciesForPolicyEngine | Sum | OperationName, PolicyEngine |
+| SuppressOutputs | SuppressOutputsForPolicyEngine | Sum | OperationName, PolicyEngine |
+| TotalMismatchedPolicies | TotalMismatchedPoliciesForPolicyEngine | Histogram | OperationName, PolicyEngine |
+
+### AWS::BedrockAgentCore::Runtime
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-runtime"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| ActiveStreamingConnections | ActiveStreamingConnectionsForRuntime | Histogram | Operation, Resource |
+| CPUUsed-vCPUHours | CPUUsed-vCPUHoursForRuntime | Sum | Resource, Service |
+| CPUUsed-vCPUHours | CPUUsed-vCPUHoursForRuntimeByEndpoint | Sum | Name, Resource, Service |
+| Errors | ErrorsForRuntime | Sum | Operation, Resource |
+| Errors | ErrorsForRuntimeByComputeType | Sum | ComputeType, Name, Operation, Resource |
+| Errors | ErrorsForRuntimeByEndpoint | Sum | Name, Operation, Resource |
+| InboundStreamingBytesProcessed | InboundStreamingBytesProcessedForRuntime | Sum | Operation, Resource |
+| Invocations | InvocationsForRuntime | Sum | Operation, Resource |
+| Invocations | InvocationsForRuntimeByComputeType | Sum | ComputeType, Name, Operation, Resource |
+| Invocations | InvocationsForRuntimeByEndpoint | Sum | Name, Operation, Resource |
+| Latency | LatencyForRuntime | Histogram | Operation, Resource |
+| Latency | LatencyForRuntimeByComputeType | Histogram | ComputeType, Name, Operation, Resource |
+| Latency | LatencyForRuntimeByEndpoint | Histogram | Name, Operation, Resource |
+| MemoryUsed-GBHours | MemoryUsed-GBHoursForRuntime | Sum | Resource, Service |
+| MemoryUsed-GBHours | MemoryUsed-GBHoursForRuntimeByEndpoint | Sum | Name, Resource, Service |
+| OutboundStreamingBytesProcessed | OutboundStreamingBytesProcessedForRuntime | Sum | Operation, Resource |
+| OverheadLatency | OverheadLatencyForRuntime | Histogram | Operation, Resource |
+| OverheadLatency | OverheadLatencyForRuntimeByEndpoint | Histogram | Name, Operation, Resource |
+| Sessions | SessionsForRuntime | Sum | Operation, Resource |
+| Sessions | SessionsForRuntimeByComputeType | Sum | ComputeType, Name, Operation, Resource |
+| Sessions | SessionsForRuntimeByEndpoint | Sum | Name, Operation, Resource |
+| SystemErrors | SystemErrorsForRuntime | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForRuntimeByComputeType | Sum | ComputeType, Name, Operation, Resource |
+| SystemErrors | SystemErrorsForRuntimeByEndpoint | Sum | Name, Operation, Resource |
+| Throttles | ThrottlesForRuntime | Sum | Operation, Resource |
+| Throttles | ThrottlesForRuntimeByComputeType | Sum | ComputeType, Name, Operation, Resource |
+| Throttles | ThrottlesForRuntimeByEndpoint | Sum | Name, Operation, Resource |
+| UserErrors | UserErrorsForRuntime | Sum | Operation, Resource |
+| UserErrors | UserErrorsForRuntimeByComputeType | Sum | ComputeType, Name, Operation, Resource |
+| UserErrors | UserErrorsForRuntimeByEndpoint | Sum | Name, Operation, Resource |
+
+### AWS::BedrockAgentCore::WorkloadIdentity
+<a name="otel-enrichment-aws-bedrock-agentcore-aws-bedrockagentcore-workloadidentity"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| ApiKeyFetchFailures | ApiKeyFetchFailures | Sum | ExceptionType, ProviderName, TokenVault, WorkloadIdentity, WorkloadIdentityDirectory |
+| ApiKeyFetchSuccess | ApiKeyFetchSuccess | Sum | ProviderName, TokenVault, WorkloadIdentity, WorkloadIdentityDirectory |
+| ApiKeyFetchThrottles | ApiKeyFetchThrottles | Sum | ProviderName, TokenVault, WorkloadIdentity, WorkloadIdentityDirectory |
+| PaymentTokenFetchFailures | PaymentTokenFetchFailures | Sum | ExceptionType, ProviderName, TokenVault, WorkloadIdentity, WorkloadIdentityDirectory |
+| PaymentTokenFetchSuccess | PaymentTokenFetchSuccess | Sum | ProviderName, TokenVault, WorkloadIdentity, WorkloadIdentityDirectory |
+| PaymentTokenFetchThrottles | PaymentTokenFetchThrottles | Sum | ProviderName, TokenVault, WorkloadIdentity, WorkloadIdentityDirectory |
+| ResourceAccessTokenFetchFailures | ResourceAccessTokenFetchFailures | Sum | ExceptionType, ProviderName, TokenVault, Type, WorkloadIdentity, WorkloadIdentityDirectory |
+| ResourceAccessTokenFetchSuccess | ResourceAccessTokenFetchSuccess | Sum | ProviderName, TokenVault, Type, WorkloadIdentity, WorkloadIdentityDirectory |
+| ResourceAccessTokenFetchThrottles | ResourceAccessTokenFetchThrottles | Sum | ProviderName, TokenVault, Type, WorkloadIdentity, WorkloadIdentityDirectory |
+| WorkloadAccessTokenFetchFailures | WorkloadAccessTokenFetchFailures | Sum | ExceptionType, WorkloadIdentity, WorkloadIdentityDirectory |
+| WorkloadAccessTokenFetchSuccess | WorkloadAccessTokenFetchSuccess | Sum | WorkloadIdentity, WorkloadIdentityDirectory |
+| WorkloadAccessTokenFetchThrottles | WorkloadAccessTokenFetchThrottles | Sum | WorkloadIdentity, WorkloadIdentityDirectory |
+
+### `browser`
+<a name="otel-enrichment-aws-bedrock-agentcore-browser"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| CPUUsed-vCPUHours | CPUUsed-vCPUHoursForBrowser | Sum | Resource, Service |
+| Duration | DurationForBrowser | Histogram | Operation, Resource |
+| Errors | ErrorsForBrowser | Sum | Operation, Resource |
+| Errors | ErrorsForBrowserByTool | Sum | Operation, Resource, ToolName |
+| Invocations | InvocationsForBrowser | Sum | Operation, Resource |
+| Invocations | InvocationsForBrowserByTool | Sum | Operation, Resource, ToolName |
+| Latency | LatencyForBrowser | Histogram | Operation, Resource |
+| Latency | LatencyForBrowserByTool | Histogram | Operation, Resource, ToolName |
+| MemoryUsed-GBHours | MemoryUsed-GBHoursForBrowser | Sum | Resource, Service |
+| SystemErrors | SystemErrorsForBrowser | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForBrowserByTool | Sum | Operation, Resource, ToolName |
+| TakeOverCount | TakeOverCountForBrowser | Sum | Operation, Resource |
+| TakeOverReleaseCount | TakeOverReleaseCountForBrowser | Sum | Operation, Resource |
+| Throttles | ThrottlesForBrowser | Sum | Operation, Resource |
+| Throttles | ThrottlesForBrowserByTool | Sum | Operation, Resource, ToolName |
+| UserErrors | UserErrorsForBrowser | Sum | Operation, Resource |
+| UserErrors | UserErrorsForBrowserByTool | Sum | Operation, Resource, ToolName |
+
+### `code-interpreter`
+<a name="otel-enrichment-aws-bedrock-agentcore-code-interpreter"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| CPUUsed-vCPUHours | CPUUsed-vCPUHoursForCodeInterpreter | Sum | Resource, Service |
+| Duration | DurationForCodeInterpreter | Histogram | Operation, Resource |
+| Errors | ErrorsForCodeInterpreter | Sum | Operation, Resource |
+| Errors | ErrorsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| Invocations | InvocationsForCodeInterpreter | Sum | Operation, Resource |
+| Invocations | InvocationsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| Latency | LatencyForCodeInterpreter | Histogram | Operation, Resource |
+| Latency | LatencyForCodeInterpreterByTool | Histogram | Operation, Resource, ToolName |
+| MemoryUsed-GBHours | MemoryUsed-GBHoursForCodeInterpreter | Sum | Resource, Service |
+| SystemErrors | SystemErrorsForCodeInterpreter | Sum | Operation, Resource |
+| SystemErrors | SystemErrorsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| Throttles | ThrottlesForCodeInterpreter | Sum | Operation, Resource |
+| Throttles | ThrottlesForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
+| UserErrors | UserErrorsForCodeInterpreter | Sum | Operation, Resource |
+| UserErrors | UserErrorsForCodeInterpreterByTool | Sum | Operation, Resource, ToolName |
 
 ## AWS/BedrockMantle
 <a name="otel-enrichment-ns-aws-bedrockmantle"></a>
@@ -1178,8 +1497,18 @@ The `AWS/DynamoDB` namespace is published under the OpenTelemetry instrumentatio
 | ConsumedChangeDataCaptureUnits | ConsumedChangeDataCaptureUnits | Sum | DelegatedOperation, TableName |
 | ConsumedReadCapacityUnits | ConsumedReadCapacityUnits | Sum | TableName |
 | ConsumedWriteCapacityUnits | ConsumedWriteCapacityUnits | Sum | TableName |
+| ConsumedWriteCapacityUnits | ConsumedWriteCapacityUnitsByGlobalSecondaryIndexBySource | Sum | GlobalSecondaryIndexName, Source, TableName |
+| ConsumedWriteCapacityUnits | ConsumedWriteCapacityUnitsBySource | Sum | Source, TableName |
+| FailedToReplicateRecordCount | FailedToReplicateRecordCount | Sum | DelegatedOperation, TableName |
+| FaultInjectionServiceInducedErrors | FaultInjectionServiceInducedErrors | Sum | Operation, TableName |
+| OnDemandMaxReadRequestUnits | OnDemandMaxReadRequestUnits | Histogram | TableName |
+| OnDemandMaxWriteRequestUnits | OnDemandMaxWriteRequestUnits | Histogram | TableName |
 | ProvisionedReadCapacityUnits | ProvisionedReadCapacityUnits | Histogram | TableName |
 | ProvisionedWriteCapacityUnits | ProvisionedWriteCapacityUnits | Histogram | TableName |
+| ReadAccountLimitThrottleEvents | ReadAccountLimitThrottleEvents | Sum | TableName |
+| ReadKeyRangeThroughputThrottleEvents | ReadKeyRangeThroughputThrottleEvents | Sum | TableName |
+| ReadMaxOnDemandThroughputThrottleEvents | ReadMaxOnDemandThroughputThrottleEvents | Sum | TableName |
+| ReadProvisionedThroughputThrottleEvents | ReadProvisionedThroughputThrottleEvents | Sum | TableName |
 | ReadThrottleEvents | ReadThrottleEvents | Sum | TableName |
 | ReturnedItemCount | ReturnedItemCount | Histogram | Operation, TableName |
 | SuccessfulRequestLatency | SuccessfulRequestLatency | Histogram | Operation, TableName |
@@ -1188,6 +1517,10 @@ The `AWS/DynamoDB` namespace is published under the OpenTelemetry instrumentatio
 | ThrottledRequests | ThrottledRequests | Sum | Operation, TableName |
 | TimeToLiveDeletedItemCount | TimeToLiveDeletedItemCount | Sum | TableName |
 | TransactionConflict | TransactionConflict | Sum | TableName |
+| WriteAccountLimitThrottleEvents | WriteAccountLimitThrottleEvents | Sum | TableName |
+| WriteKeyRangeThroughputThrottleEvents | WriteKeyRangeThroughputThrottleEvents | Sum | TableName |
+| WriteMaxOnDemandThroughputThrottleEvents | WriteMaxOnDemandThroughputThrottleEvents | Sum | TableName |
+| WriteProvisionedThroughputThrottleEvents | WriteProvisionedThroughputThrottleEvents | Sum | TableName |
 | WriteThrottleEvents | WriteThrottleEvents | Sum | TableName |
 
 ### `index`
@@ -1197,9 +1530,24 @@ The `AWS/DynamoDB` namespace is published under the OpenTelemetry instrumentatio
 
 | Metric | OpenTelemetry metric | Instrument type | Data point attributes |
 | --- | --- | --- | --- |
+| ConsumedReadCapacityUnits | ConsumedReadCapacityUnitsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| ConsumedWriteCapacityUnits | ConsumedWriteCapacityUnitsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| OnDemandMaxReadRequestUnits | OnDemandMaxReadRequestUnitsByGlobalSecondaryIndex | Histogram | GlobalSecondaryIndexName, TableName |
+| OnDemandMaxWriteRequestUnits | OnDemandMaxWriteRequestUnitsByGlobalSecondaryIndex | Histogram | GlobalSecondaryIndexName, TableName |
 | OnlineIndexConsumedWriteCapacity | OnlineIndexConsumedWriteCapacity | Sum | GlobalSecondaryIndexName, TableName |
 | OnlineIndexPercentageProgress | OnlineIndexPercentageProgress | Histogram | GlobalSecondaryIndexName, TableName |
 | OnlineIndexThrottleEvents | OnlineIndexThrottleEvents | Sum | GlobalSecondaryIndexName, TableName |
+| ProvisionedReadCapacityUnits | ProvisionedReadCapacityUnitsByGlobalSecondaryIndex | Histogram | GlobalSecondaryIndexName, TableName |
+| ProvisionedWriteCapacityUnits | ProvisionedWriteCapacityUnitsByGlobalSecondaryIndex | Histogram | GlobalSecondaryIndexName, TableName |
+| ReadAccountLimitThrottleEvents | ReadAccountLimitThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| ReadKeyRangeThroughputThrottleEvents | ReadKeyRangeThroughputThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| ReadMaxOnDemandThroughputThrottleEvents | ReadMaxOnDemandThroughputThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| ReadProvisionedThroughputThrottleEvents | ReadProvisionedThroughputThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| ReadThrottleEvents | ReadThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| WriteKeyRangeThroughputThrottleEvents | WriteKeyRangeThroughputThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| WriteMaxOnDemandThroughputThrottleEvents | WriteMaxOnDemandThroughputThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| WriteProvisionedThroughputThrottleEvents | WriteProvisionedThroughputThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
+| WriteThrottleEvents | WriteThrottleEventsByGlobalSecondaryIndex | Sum | GlobalSecondaryIndexName, TableName |
 
 ### `stream`
 <a name="otel-enrichment-aws-dynamodb-stream"></a>
@@ -1210,6 +1558,7 @@ The `AWS/DynamoDB` namespace is published under the OpenTelemetry instrumentatio
 | --- | --- | --- | --- |
 | ReturnedBytes | ReturnedBytes | Histogram | Operation, StreamLabel, TableName |
 | ReturnedRecordsCount | ReturnedRecordsCount | Histogram | Operation, StreamLabel, TableName |
+| SuccessfulRequestLatency | SuccessfulRequestLatencyForStream | Histogram | Operation, StreamLabel, TableName |
 
 ## AWS/EBS
 <a name="otel-enrichment-ns-aws-ebs"></a>
@@ -1361,6 +1710,38 @@ The `AWS/EC2CapacityReservations` namespace is published under the OpenTelemetry
 | TotalInstanceCount | TotalInstanceCount | Histogram | CapacityReservationId |
 | UsedInstanceCount | UsedInstanceCount | Histogram | CapacityReservationId |
 
+## AWS/ECS
+<a name="otel-enrichment-ns-aws-ecs"></a>
+
+The `AWS/ECS` namespace is published under the OpenTelemetry instrumentation scope `cloudwatch.aws/ecs`. All enriched instruments use Delta temporality.
++ [AWS::ECS::Service](#otel-enrichment-aws-ecs-aws-ecs-service)
+
+### AWS::ECS::Service
+<a name="otel-enrichment-aws-ecs-aws-ecs-service"></a>
++ `cloud.resource_id` enrichment: Supported
++ `tag.*` enrichment: Supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| ActiveConnectionCount | ActiveConnectionCount | Histogram | ClusterName, DiscoveryName, ServiceName |
+| CPUUtilization | CPUUtilization | Histogram | ClusterName, ServiceName |
+| ClientTLSNegotiationErrorCount | ClientTLSNegotiationErrorCount | Sum | ClusterName, DiscoveryName, ServiceName |
+| EBSFilesystemUtilization | EBSFilesystemUtilization | Histogram | ClusterName, ServiceName |
+| GrpcRequestCount | GrpcRequestCount | Sum | ClusterName, DiscoveryName, ServiceName |
+| HTTPCode\_Target\_2XX\_Count | HTTPCode\_Target\_2XX\_Count | Sum | ClusterName, ServiceName, TargetDiscoveryName |
+| HTTPCode\_Target\_3XX\_Count | HTTPCode\_Target\_3XX\_Count | Sum | ClusterName, ServiceName, TargetDiscoveryName |
+| HTTPCode\_Target\_4XX\_Count | HTTPCode\_Target\_4XX\_Count | Sum | ClusterName, ServiceName, TargetDiscoveryName |
+| HTTPCode\_Target\_5XX\_Count | HTTPCode\_Target\_5XX\_Count | Sum | ClusterName, ServiceName, TargetDiscoveryName |
+| LiveTaskCount | LiveTaskCount | Histogram | ClusterName, ServiceName |
+| MemoryUtilization | MemoryUtilization | Histogram | ClusterName, ServiceName |
+| NewConnectionCount | NewConnectionCount | Sum | ClusterName, DiscoveryName, ServiceName |
+| ProcessedBytes | ProcessedBytes | Sum | ClusterName, DiscoveryName, ServiceName |
+| RequestCount | RequestCount | Sum | ClusterName, DiscoveryName, ServiceName |
+| RequestCountPerTarget | RequestCountPerTarget | Histogram | ClusterName, ServiceName, TargetDiscoveryName |
+| TargetProcessedBytes | TargetProcessedBytes | Sum | ClusterName, ServiceName, TargetDiscoveryName |
+| TargetResponseTime | TargetResponseTime | Histogram | ClusterName, ServiceName, TargetDiscoveryName |
+| TargetTLSNegotiationErrorCount | TargetTLSNegotiationErrorCount | Sum | ClusterName, ServiceName, TargetDiscoveryName |
+
 ## AWS/EFS
 <a name="otel-enrichment-ns-aws-efs"></a>
 
@@ -1446,6 +1827,7 @@ The `AWS/ELB` namespace is published under the OpenTelemetry instrumentation sco
 | BackendConnectionErrors | BackendConnectionErrors | Sum | AvailabilityZone, LoadBalancerName |
 | DesyncMitigationMode\_NonCompliant\_Request\_Count | DesyncMitigationMode\_NonCompliant\_Request\_Count | Sum | AvailabilityZone, LoadBalancerName |
 | EstimatedALBActiveConnectionCount | EstimatedALBActiveConnectionCount | Histogram | LoadBalancerName |
+| EstimatedALBConsumedLCUs | EstimatedALBConsumedLCUs | Histogram | LoadBalancerName |
 | EstimatedALBNewConnectionCount | EstimatedALBNewConnectionCount | Sum | LoadBalancerName |
 | EstimatedProcessedBytes | EstimatedProcessedBytes | Sum | LoadBalancerName |
 | HTTPCode\_Backend\_2XX | HTTPCode\_Backend\_2XX | Sum | AvailabilityZone, LoadBalancerName |
@@ -1551,6 +1933,7 @@ The `AWS/ES` namespace is published under the OpenTelemetry instrumentation scop
 | AsynchronousSearchCompletionRate | AsynchronousSearchCompletionRate | Sum | ClientId, DomainName, NodeId |
 | AsynchronousSearchFailureRate | AsynchronousSearchFailureRate | Sum | ClientId, DomainName, NodeId |
 | AsynchronousSearchInitializedRate | AsynchronousSearchInitializedRate | Sum | ClientId, DomainName, NodeId |
+| AsynchronousSearchMaxRunningTime | AsynchronousSearchMaxRunningTime | Histogram | ClientId, DomainName, NodeId |
 | AsynchronousSearchPersistFailedRate | AsynchronousSearchPersistFailedRate | Sum | ClientId, DomainName, NodeId |
 | AsynchronousSearchPersistRate | AsynchronousSearchPersistRate | Sum | ClientId, DomainName, NodeId |
 | AsynchronousSearchRejected | AsynchronousSearchRejected | Sum | ClientId, DomainName, NodeId |
@@ -1646,6 +2029,8 @@ The `AWS/ES` namespace is published under the OpenTelemetry instrumentation scop
 | ExpandTimeInMillis | ExpandTimeInMillis | Histogram | ClientId, DomainName, NodeId |
 | ExpandTotal | ExpandTotal | Sum | ClientId, DomainName, NodeId |
 | FetchCurrent | FetchCurrent | Histogram | ClientId, DomainName, NodeId |
+| FetchLatency | FetchLatency | Histogram | ClientId, DomainName, NodeId |
+| FetchRate | FetchRate | Histogram | ClientId, DomainName, NodeId |
 | FetchTimeInMillis | FetchTimeInMillis | Histogram | ClientId, DomainName, NodeId |
 | FetchTotal | FetchTotal | Sum | ClientId, DomainName, NodeId |
 | FollowerCheckPoint | FollowerCheckPoint | Histogram | ClientId, ConnectionId, DomainName |
@@ -1777,6 +2162,9 @@ The `AWS/ES` namespace is published under the OpenTelemetry instrumentation scop
 | MlRequestCount | MlRequestCount | Sum | ClientId, DomainName, NodeId |
 | MlTaskIndexStatus.red | MlTaskIndexStatus.red | Histogram | ClientId, DomainName |
 | MlTaskIndexStatusIndexExists | MlTaskIndexStatusIndexExists | Histogram | ClientId, DomainName |
+| NativeMemoryPressure | NativeMemoryPressure | Histogram | ClientId, DomainName, NodeId |
+| NativeRuntimeResidentMemory | NativeRuntimeResidentMemory | Histogram | ClientId, DomainName, NodeId |
+| NativeSearchRuntimeCPUUtilization | NativeSearchRuntimeCPUUtilization | Histogram | ClientId, DomainName, NodeId |
 | Nodes | Nodes | Histogram | ClientId, DomainName |
 | OldGenJVMMemoryPressure | OldGenJVMMemoryPressure | Histogram | ClientId, DomainName, NodeId |
 | OpenContexts | OpenContexts | Histogram | ClientId, DomainName, NodeId |
@@ -1871,6 +2259,8 @@ The `AWS/ES` namespace is published under the OpenTelemetry instrumentation scop
 | ThreadpoolMergeQueue | ThreadpoolMergeQueue | Histogram | ClientId, DomainName, NodeId |
 | ThreadpoolMergeRejected | ThreadpoolMergeRejected | Sum | ClientId, DomainName, NodeId |
 | ThreadpoolMergeThreads | ThreadpoolMergeThreads | Histogram | ClientId, DomainName, NodeId |
+| ThreadpoolNativeSearchCPUQueue | ThreadpoolNativeSearchCPUQueue | Histogram | ClientId, DomainName, NodeId |
+| ThreadpoolNativeSearchCPUThreads | ThreadpoolNativeSearchCPUThreads | Histogram | ClientId, DomainName, NodeId |
 | ThreadpoolOpendistro\_monitor\_runnerQueue | ThreadpoolOpendistro\_monitor\_runnerQueue | Histogram | ClientId, DomainName, NodeId |
 | ThreadpoolOpendistro\_monitor\_runnerRejected | ThreadpoolOpendistro\_monitor\_runnerRejected | Sum | ClientId, DomainName, NodeId |
 | ThreadpoolOpendistro\_monitor\_runnerThreads | ThreadpoolOpendistro\_monitor\_runnerThreads | Histogram | ClientId, DomainName, NodeId |
@@ -1895,6 +2285,8 @@ The `AWS/ES` namespace is published under the OpenTelemetry instrumentation scop
 | WarmConcurrentSearchLatency | WarmConcurrentSearchLatency | Histogram | ClientId, DomainName, NodeId |
 | WarmConcurrentSearchRate | WarmConcurrentSearchRate | Sum | ClientId, DomainName, NodeId |
 | WarmFreeStorageSpace | WarmFreeStorageSpace | Histogram | ClientId, DomainName, NodeId |
+| WarmIndexingLatency | WarmIndexingLatency | Histogram | ClientId, DomainName, NodeId |
+| WarmIndexingRate | WarmIndexingRate | Histogram | ClientId, DomainName, NodeId |
 | WarmJVMGCOldCollectionCount | WarmJVMGCOldCollectionCount | Sum | ClientId, DomainName, NodeId |
 | WarmJVMGCOldCollectionTime | WarmJVMGCOldCollectionTime | Sum | ClientId, DomainName, NodeId |
 | WarmJVMGCYoungCollectionCount | WarmJVMGCYoungCollectionCount | Sum | ClientId, DomainName, NodeId |
@@ -2371,6 +2763,7 @@ The `AWS/Firehose` namespace is published under the OpenTelemetry instrumentatio
 
 | Metric | OpenTelemetry metric | Instrument type | Data point attributes |
 | --- | --- | --- | --- |
+| ActivePartitionsLimit | ActivePartitionsLimit | Histogram | DeliveryStreamName |
 | BackupToS3.Bytes | BackupToS3.Bytes | Sum | DeliveryStreamName |
 | BackupToS3.DataFreshness | BackupToS3.DataFreshness | Histogram | DeliveryStreamName |
 | BackupToS3.Records | BackupToS3.Records | Sum | DeliveryStreamName |
@@ -2401,13 +2794,17 @@ The `AWS/Firehose` namespace is published under the OpenTelemetry instrumentatio
 | DeliveryToHttpEndpoint.Success | DeliveryToHttpEndpoint.Success | Sum | DeliveryStreamName |
 | DeliveryToIceberg.Bytes | DeliveryToIceberg.Bytes | Sum | DeliveryStreamName, IcebergTableName |
 | DeliveryToIceberg.DataFreshness | DeliveryToIceberg.DataFreshness | Histogram | DeliveryStreamName, IcebergTableName |
+| DeliveryToIceberg.FailedRowCount | DeliveryToIceberg.FailedRowCount | Sum | DeliveryStreamName |
+| DeliveryToIceberg.IncomingRowCount | DeliveryToIceberg.IncomingRowCount | Sum | DeliveryStreamName |
 | DeliveryToIceberg.Success | DeliveryToIceberg.Success | Sum | DeliveryStreamName, IcebergTableName |
 | DeliveryToIceberg.SuccessfulRowCount | DeliveryToIceberg.SuccessfulRowCount | Sum | DeliveryStreamName, IcebergTableName |
 | DeliveryToRedshift.Bytes | DeliveryToRedshift.Bytes | Sum | DeliveryStreamName |
+| DeliveryToRedshift.DataFreshness | DeliveryToRedshift.DataFreshness | Histogram | DeliveryStreamName |
 | DeliveryToRedshift.Records | DeliveryToRedshift.Records | Sum | DeliveryStreamName |
 | DeliveryToRedshift.Success | DeliveryToRedshift.Success | Sum | DeliveryStreamName |
 | DeliveryToS3.Bytes | DeliveryToS3.Bytes | Sum | DeliveryStreamName |
 | DeliveryToS3.DataFreshness | DeliveryToS3.DataFreshness | Histogram | DeliveryStreamName |
+| DeliveryToS3.ObjectCount | DeliveryToS3.ObjectCount | Sum | DeliveryStreamName |
 | DeliveryToS3.Records | DeliveryToS3.Records | Sum | DeliveryStreamName |
 | DeliveryToS3.Success | DeliveryToS3.Success | Sum | DeliveryStreamName |
 | DeliveryToSnowflake.Bytes | DeliveryToSnowflake.Bytes | Sum | DeliveryStreamName |
@@ -2431,6 +2828,7 @@ The `AWS/Firehose` namespace is published under the OpenTelemetry instrumentatio
 | IncomingBytes | IncomingBytes | Sum | DeliveryStreamName |
 | IncomingPutRequests | IncomingPutRequests | Sum | DeliveryStreamName |
 | IncomingRecords | IncomingRecords | Sum | DeliveryStreamName |
+| JQProcessing.Duration | JQProcessing.Duration | Histogram | DeliveryStreamName |
 | KMSKeyAccessDenied | KMSKeyAccessDenied | Sum | DeliveryStreamName |
 | KMSKeyDisabled | KMSKeyDisabled | Sum | DeliveryStreamName |
 | KMSKeyInvalidState | KMSKeyInvalidState | Sum | DeliveryStreamName |
@@ -2443,6 +2841,9 @@ The `AWS/Firehose` namespace is published under the OpenTelemetry instrumentatio
 | OutputDecompressedBytes.Success | OutputDecompressedBytes.Success | Sum | DeliveryStreamName |
 | OutputDecompressedRecords.Failed | OutputDecompressedRecords.Failed | Sum | DeliveryStreamName |
 | OutputDecompressedRecords.Success | OutputDecompressedRecords.Success | Sum | DeliveryStreamName |
+| PartitionCount | PartitionCount | Histogram | DeliveryStreamName |
+| PartitionCountExceeded | PartitionCountExceeded | Histogram | DeliveryStreamName |
+| PerPartitionThroughput | PerPartitionThroughput | Histogram | DeliveryStreamName |
 | PutRecord.Bytes | PutRecord.Bytes | Histogram | DeliveryStreamName |
 | PutRecord.Latency | PutRecord.Latency | Histogram | DeliveryStreamName |
 | PutRecord.Requests | PutRecord.Requests | Sum | DeliveryStreamName |
@@ -3050,14 +3451,24 @@ The `AWS/Kinesis` namespace is published under the OpenTelemetry instrumentation
 | GetRecords.Records | GetRecords.Records | Sum | StreamName |
 | GetRecords.Success | GetRecords.Success | Sum | StreamName |
 | IncomingBytes | IncomingBytes | Sum | StreamName |
+| IncomingBytes | IncomingBytesByShard | Sum | ShardId, StreamName |
 | IncomingRecords | IncomingRecords | Sum | StreamName |
+| IncomingRecords | IncomingRecordsByShard | Sum | ShardId, StreamName |
 | IteratorAgeMilliseconds | IteratorAgeMilliseconds | Histogram | ShardId, StreamName |
 | OutgoingBytes | OutgoingBytes | Sum | ShardId, StreamName |
 | OutgoingRecords | OutgoingRecords | Sum | ShardId, StreamName |
+| PutRecord.Bytes | PutRecord.Bytes | Sum | StreamName |
+| PutRecord.Latency | PutRecord.Latency | Histogram | StreamName |
 | PutRecord.Success | PutRecord.Success | Sum | StreamName |
 | PutRecords.Bytes | PutRecords.Bytes | Sum | StreamName |
+| PutRecords.FailedRecords | PutRecords.FailedRecords | Sum | StreamName |
+| PutRecords.Latency | PutRecords.Latency | Histogram | StreamName |
 | PutRecords.Success | PutRecords.Success | Sum | StreamName |
+| PutRecords.SuccessfulRecords | PutRecords.SuccessfulRecords | Sum | StreamName |
+| PutRecords.ThrottledRecords | PutRecords.ThrottledRecords | Sum | StreamName |
+| PutRecords.TotalRecords | PutRecords.TotalRecords | Sum | StreamName |
 | ReadProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | Sum | StreamName |
+| ReadProvisionedThroughputExceeded | ReadProvisionedThroughputExceededByShard | Sum | ShardId, StreamName |
 | SubscribeToShard.RateExceeded | SubscribeToShard.RateExceeded | Sum | ConsumerName, StreamName |
 | SubscribeToShard.Success | SubscribeToShard.Success | Sum | ConsumerName, StreamName |
 | SubscribeToShardEvent.Bytes | SubscribeToShardEvent.Bytes | Sum | ConsumerName, StreamName |
@@ -3065,6 +3476,7 @@ The `AWS/Kinesis` namespace is published under the OpenTelemetry instrumentation
 | SubscribeToShardEvent.Records | SubscribeToShardEvent.Records | Sum | ConsumerName, StreamName |
 | SubscribeToShardEvent.Success | SubscribeToShardEvent.Success | Sum | ConsumerName, StreamName |
 | WriteProvisionedThroughputExceeded | WriteProvisionedThroughputExceeded | Sum | StreamName |
+| WriteProvisionedThroughputExceeded | WriteProvisionedThroughputExceededByShard | Sum | ShardId, StreamName |
 
 ## AWS/KinesisAnalytics
 <a name="otel-enrichment-ns-aws-kinesisanalytics"></a>
@@ -3082,20 +3494,27 @@ The `AWS/KinesisAnalytics` namespace is published under the OpenTelemetry instru
 | KPUs | KPUs | Histogram | Application |
 | KPUs-Interactive | KPUs-Interactive | Histogram | Application |
 | backPressuredTimeMsPerSecond | backPressuredTimeMsPerSecond | Histogram | Application |
+| backPressuredTimeMsPerSecond | backPressuredTimeMsPerSecondByTask | Histogram | Application, Task |
 | busyTimeMsPerSecond | busyTimeMsPerSecond | Histogram | Application |
+| busyTimeMsPerSecond | busyTimeMsPerSecondByTask | Histogram | Application, Task |
 | bytesRequestedPerFetch | bytesRequestedPerFetch | Histogram | Application, Flow, Id |
+| cancellingTime | cancellingTime | Histogram | Application |
 | committedOffsets | committedOffsets | Histogram | Application, Flow, Topic |
 | containerCPUUtilization | containerCPUUtilization | Histogram | Application |
 | containerDiskUtilization | containerDiskUtilization | Histogram | Application |
 | containerMemoryUtilization | containerMemoryUtilization | Histogram | Application |
 | cpuUtilization | cpuUtilization | Histogram | Application |
 | currentInputWatermark | currentInputWatermark | Histogram | Application |
+| currentInputWatermark | currentInputWatermarkByTask | Histogram | Application, Task |
 | currentOffsets | currentOffsets | Histogram | Application, Flow, Topic |
 | currentOutputWatermark | currentOutputWatermark | Histogram | Application |
+| currentOutputWatermark | currentOutputWatermarkByTask | Histogram | Application, Task |
 | downtime | downtime | Histogram | Application |
+| failingTime | failingTime | Histogram | Application |
 | fullRestarts | fullRestarts | Sum | Application |
 | heapMemoryUtilization | heapMemoryUtilization | Histogram | Application |
 | idleTimeMsPerSecond | idleTimeMsPerSecond | Histogram | Application |
+| idleTimeMsPerSecond | idleTimeMsPerSecondByTask | Histogram | Application, Task |
 | jobmanagerFileDescriptorsMax | jobmanagerFileDescriptorsMax | Histogram | Application |
 | jobmanagerFileDescriptorsOpen | jobmanagerFileDescriptorsOpen | Histogram | Application |
 | jobmanagerHeapMemoryUtilization | jobmanagerHeapMemoryUtilization | Histogram | Application |
@@ -3108,14 +3527,21 @@ The `AWS/KinesisAnalytics` namespace is published under the OpenTelemetry instru
 | metaspaceMemoryUtilization | metaspaceMemoryUtilization | Histogram | Application |
 | millisBehindLatest | millisBehindLatest | Histogram | Application, Flow, Id |
 | numLateRecordsDropped | numLateRecordsDropped | Sum | Application |
+| numLateRecordsDropped | numLateRecordsDroppedByOperator | Histogram | Application, Task, TaskOperator |
 | numRecordsIn | numRecordsIn | Sum | Application |
+| numRecordsIn | numRecordsInByTask | Histogram | Application, Task |
 | numRecordsInPerSecond | numRecordsInPerSecond | Histogram | Application |
+| numRecordsInPerSecond | numRecordsInPerSecondByTask | Histogram | Application, Task |
 | numRecordsOut | numRecordsOut | Sum | Application |
+| numRecordsOut | numRecordsOutByTask | Histogram | Application, Task |
 | numRecordsOutPerSecond | numRecordsOutPerSecond | Histogram | Application |
+| numRecordsOutPerSecond | numRecordsOutPerSecondByTask | Histogram | Application, Task |
 | numRestarts | numRestarts | Sum | Application |
 | numberOfFailedCheckpoints | numberOfFailedCheckpoints | Sum | Application |
 | oldGenerationGCCount | oldGenerationGCCount | Sum | Application |
 | oldGenerationGCTime | oldGenerationGCTime | Sum | Application |
+| restartingTime | restartingTime | Histogram | Application |
+| runningTime | runningTime | Histogram | Application |
 | taskmanagerFileDescriptorsMax | taskmanagerFileDescriptorsMax | Histogram | Application |
 | taskmanagerFileDescriptorsOpen | taskmanagerFileDescriptorsOpen | Histogram | Application |
 | threadCount | threadCount | Histogram | Application |
@@ -3429,22 +3855,41 @@ The `AWS/NetworkELB` namespace is published under the OpenTelemetry instrumentat
 | ActiveFlowCount\_TLS | ActiveFlowCount\_TLS | Histogram | AvailabilityZone, LoadBalancer, TargetGroup |
 | ActiveFlowCount\_UDP | ActiveFlowCount\_UDP | Histogram | AvailabilityZone, LoadBalancer, TargetGroup |
 | ActiveZonalShiftHostCount | ActiveZonalShiftHostCount | Histogram | AvailabilityZone, LoadBalancer, TargetGroup |
+| ClientTLSNegotiationErrorCount | ClientTLSNegotiationErrorCount | Sum | LoadBalancer |
+| ConsumedLCUs | ConsumedLCUs | Histogram | LoadBalancer |
+| ConsumedLCUs\_TCP | ConsumedLCUs\_TCP | Histogram | LoadBalancer |
+| ConsumedLCUs\_TLS | ConsumedLCUs\_TLS | Histogram | LoadBalancer |
+| ConsumedLCUs\_UDP | ConsumedLCUs\_UDP | Histogram | LoadBalancer |
 | HealthyHostCount | HealthyHostCount | Histogram | AvailabilityZone, LoadBalancer, TargetGroup |
 | NewFlowCount | NewFlowCount | Sum | AvailabilityZone, LoadBalancer, TargetGroup |
+| NewFlowCount\_QUIC | NewFlowCount\_QUIC | Sum | AvailabilityZone, LoadBalancer |
 | NewFlowCount\_TCP | NewFlowCount\_TCP | Sum | AvailabilityZone, LoadBalancer, TargetGroup |
 | NewFlowCount\_TLS | NewFlowCount\_TLS | Sum | AvailabilityZone, LoadBalancer, TargetGroup |
 | NewFlowCount\_UDP | NewFlowCount\_UDP | Sum | AvailabilityZone, LoadBalancer, TargetGroup |
+| PeakBytesPerSecond | PeakBytesPerSecond | Histogram | AvailabilityZone, LoadBalancer |
 | PeakPacketsPerSecond | PeakPacketsPerSecond | Histogram | AvailabilityZone, LoadBalancer |
 | PortAllocationErrorCount | PortAllocationErrorCount | Sum | AvailabilityZone, LoadBalancer |
 | ProcessedBytes | ProcessedBytes | Sum | AvailabilityZone, LoadBalancer |
+| ProcessedBytes\_QUIC | ProcessedBytes\_QUIC | Sum | AvailabilityZone, LoadBalancer |
 | ProcessedBytes\_TCP | ProcessedBytes\_TCP | Sum | AvailabilityZone, LoadBalancer |
 | ProcessedBytes\_TLS | ProcessedBytes\_TLS | Sum | AvailabilityZone, LoadBalancer |
 | ProcessedBytes\_UDP | ProcessedBytes\_UDP | Sum | AvailabilityZone, LoadBalancer |
 | ProcessedPackets | ProcessedPackets | Sum | AvailabilityZone, LoadBalancer |
+| QUIC\_Unknown\_Server\_ID\_Packet\_Drop\_Count | QUIC\_Unknown\_Server\_ID\_Packet\_Drop\_Count | Sum | AvailabilityZone, LoadBalancer |
+| RejectedFlowCount | RejectedFlowCount | Sum | AvailabilityZone, LoadBalancer |
+| ReservedLCUs | ReservedLCUs | Histogram | LoadBalancer |
+| SecurityGroupBlockedFlowCount\_Inbound\_ICMP | SecurityGroupBlockedFlowCount\_Inbound\_ICMP | Sum | AvailabilityZone, LoadBalancer |
+| SecurityGroupBlockedFlowCount\_Inbound\_TCP | SecurityGroupBlockedFlowCount\_Inbound\_TCP | Sum | AvailabilityZone, LoadBalancer |
+| SecurityGroupBlockedFlowCount\_Inbound\_UDP | SecurityGroupBlockedFlowCount\_Inbound\_UDP | Sum | AvailabilityZone, LoadBalancer |
+| SecurityGroupBlockedFlowCount\_Outbound\_TCP | SecurityGroupBlockedFlowCount\_Outbound\_TCP | Sum | AvailabilityZone, LoadBalancer |
+| SecurityGroupBlockedFlowCount\_Outbound\_UDP | SecurityGroupBlockedFlowCount\_Outbound\_UDP | Sum | AvailabilityZone, LoadBalancer |
 | TCP\_Client\_Reset\_Count | TCP\_Client\_Reset\_Count | Sum | AvailabilityZone, LoadBalancer |
 | TCP\_ELB\_Reset\_Count | TCP\_ELB\_Reset\_Count | Sum | AvailabilityZone, LoadBalancer |
 | TCP\_Target\_Reset\_Count | TCP\_Target\_Reset\_Count | Sum | AvailabilityZone, LoadBalancer |
+| TargetTLSNegotiationErrorCount | TargetTLSNegotiationErrorCount | Sum | LoadBalancer |
 | UnHealthyHostCount | UnHealthyHostCount | Histogram | AvailabilityZone, LoadBalancer, TargetGroup |
+| UnhealthyRoutingFlowCount | UnhealthyRoutingFlowCount | Sum | AvailabilityZone, LoadBalancer |
+| ZonalHealthStatus | ZonalHealthStatus | Histogram | AvailabilityZone, LoadBalancer |
 
 ## AWS/NetworkFirewall
 <a name="otel-enrichment-ns-aws-networkfirewall"></a>
@@ -3476,6 +3921,42 @@ The `AWS/NetworkFirewall` namespace is published under the OpenTelemetry instrum
 | TLSRevocationStatusRevokedConnections | TLSRevocationStatusRevokedConnections | Sum | AvailabilityZone, Engine, FirewallName |
 | TLSRevocationStatusUnknownConnections | TLSRevocationStatusUnknownConnections | Sum | AvailabilityZone, Engine, FirewallName |
 | TLSTimedOutConnections | TLSTimedOutConnections | Sum | AvailabilityZone, Engine, FirewallName |
+
+## AWS/Observability Admin
+<a name="otel-enrichment-ns-aws-observability-admin"></a>
+
+The `AWS/Observability Admin` namespace is published under the OpenTelemetry instrumentation scope `cloudwatch.aws/observabilityadmin`. All enriched instruments use Delta temporality.
++ [`telemetry-pipeline`](#otel-enrichment-aws-observability-admin-telemetry-pipeline)
+
+### `telemetry-pipeline`
+<a name="otel-enrichment-aws-observability-admin-telemetry-pipeline"></a>
++ `cloud.resource_id` enrichment: Not supported
++ `tag.*` enrichment: Not supported
+
+| Metric | OpenTelemetry metric | Instrument type | Data point attributes |
+| --- | --- | --- | --- |
+| PipelineBytesIn | PipelineBytesInBySignal | Sum | PipelineName, Signal |
+| PipelineBytesInByDataSource | PipelineBytesInByDataSource | Sum | DataSource, DataType, PipelineName |
+| PipelineBytesOut | PipelineBytesOutBySignal | Sum | PipelineName, Signal |
+| PipelineBytesOutByDataSource | PipelineBytesOutByDataSource | Sum | DataSource, DataType, PipelineName |
+| PipelineDataPointsIn | PipelineDataPointsIn | Sum | Dataset, PipelineName |
+| PipelineDataPointsIn | PipelineDataPointsInBySignal | Sum | PipelineName, Signal |
+| PipelineDataPointsOut | PipelineDataPointsOut | Sum | Dataset, PipelineName |
+| PipelineDataPointsOut | PipelineDataPointsOutBySignal | Sum | PipelineName, Signal |
+| PipelineDataPointsUnprocessed | PipelineDataPointsUnprocessed | Sum | Dataset, PipelineName |
+| PipelineDataPointsUnprocessed | PipelineDataPointsUnprocessedBySignal | Sum | PipelineName, Signal |
+| PipelineErrors | PipelineErrors | Sum | Dataset, PipelineName |
+| PipelineErrors | PipelineErrorsBySignal | Sum | PipelineName, Signal |
+| PipelineErrorsByErrorType | PipelineErrorsByErrorType | Sum | DataSource, DataType, ErrorComponent, ErrorSource, ErrorType, PipelineName |
+| PipelineRecordsIn | PipelineRecordsInBySignal | Sum | PipelineName, Signal |
+| PipelineRecordsInByDataSource | PipelineRecordsInByDataSource | Sum | DataSource, DataType, PipelineName |
+| PipelineRecordsOut | PipelineRecordsOutBySignal | Sum | PipelineName, Signal |
+| PipelineRecordsOutByDataSource | PipelineRecordsOutByDataSource | Sum | DataSource, DataType, PipelineName |
+| PipelineRecordsUnprocessed | PipelineRecordsUnprocessedBySignal | Sum | PipelineName, Signal |
+| PipelineRecordsUnprocessedByDataSource | PipelineRecordsUnprocessedByDataSource | Sum | DataSource, DataType, PipelineName |
+| PipelineWarnings | PipelineWarnings | Sum | Dataset, PipelineName |
+| PipelineWarnings | PipelineWarningsBySignal | Sum | PipelineName, Signal |
+| PipelineWarningsByWarningType | PipelineWarningsByWarningType | Sum | DataSource, DataType, PipelineName, WarningComponent, WarningSource, WarningType |
 
 ## AWS/Pinpoint
 <a name="otel-enrichment-ns-aws-pinpoint"></a>
@@ -3924,6 +4405,9 @@ The `AWS/S3` namespace is published under the OpenTelemetry instrumentation scop
 | PostRequests | PostRequests | Sum | BucketName, FilterId |
 | PutRequests | PutRequests | Sum | BucketName, FilterId |
 | ReplicationLatency | ReplicationLatency | Histogram | DestinationBucket, RuleId, SourceBucket |
+| SelectBytesReturned | SelectBytesReturned | Sum | BucketName, FilterId |
+| SelectBytesScanned | SelectBytesScanned | Sum | BucketName, FilterId |
+| SelectRequests | SelectRequests | Sum | BucketName, FilterId |
 | TotalRequestLatency | TotalRequestLatency | Histogram | BucketName, FilterId |
 
 ## AWS/SNS

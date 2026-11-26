@@ -80,7 +80,7 @@ Defines the type of log that the source is sending.
 + For AWS PCS, the valid values are `PCS_SCHEDULER_LOGS`, `PCS_JOBCOMP_LOGS`, `PCS_SCHEDULER_AUDIT_LOGS`, and `PCS_SCALING_LOGS`.
 + For Amazon Q, the valid values are `EVENT_LOGS` and `SYNC_JOB_LOGS`.
 + For Amazon Q in Connect AI agents, the valid value is `EVENT_LOGS`.
-+ For Quick, the valid values are `AGENT_HOURS_LOGS`, `AGENT_METADATA_LOGS`, `CHAT_LOGS`, `DLP_LOGS`, `FEEDBACK_LOGS`, `INDEX_USAGE_LOGS`, and `KB_FILE_SYNC_LOGS`.
++ For Quick, the valid values are `AGENT_HOURS_LOGS`, `AGENT_METADATA_LOGS`, `APPS_LOGS`, `CHAT_LOGS`, `DLP_LOGS`, `FEEDBACK_LOGS`, `INDEX_USAGE_LOGS`, and `KB_FILE_SYNC_LOGS`.
 + For Route 53 Global Resolver, the valid value is `GLOBAL_RESOLVER_LOGS`.
 + For AWS RTB Fabric, the valid value is `APPLICATION_LOGS`.
 + For Amazon S3, the valid value is `S3_SERVER_ACCESS_LOGS`.

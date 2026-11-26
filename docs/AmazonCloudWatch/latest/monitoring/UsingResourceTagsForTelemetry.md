@@ -26,6 +26,7 @@ For the specific metrics that CloudWatch enriches for each resource type, see [S
 | AWS::AppSync::GraphQLApi | Yes | Yes |
 | AWS::Athena::WorkGroup | Yes | No |
 | AWS::Backup::BackupVault | Yes | No |
+| AWS::BedrockAgentCore::Runtime | Yes | No |
 | AWS::CloudFront::Distribution | Yes | Yes |
 | AWS::CloudFront::Function | Yes | Yes |
 | AWS::CloudWatch::MetricStream | Yes | No |

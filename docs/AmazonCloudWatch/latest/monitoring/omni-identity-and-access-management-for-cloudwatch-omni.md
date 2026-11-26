@@ -73,7 +73,7 @@ The space operator role carries `CloudWatchOmniSpaceAccessPolicy` as its base po
 
 | Managed policy | What it grants | When it is attached |
 | --- | --- | --- |
-| CloudWatchOmniSpaceAccessPolicy | The space experience — space and access-grant management, telemetry queries, the context graph, alerts, dashboards, access profiles, views, threads, and integrations — together with evaluation management. It also carries the supporting permissions those need in other services, including CloudWatch Logs, AWS KMS, Secrets Manager, IAM Identity Center, and Amazon SNS. | Always. This is the base policy. |
+| CloudWatchOmniSpaceAccessPolicy | The space experience — space and access-grant management, telemetry queries, the context graph, alerts, service level objectives (SLOs), dashboards, access profiles, views, lookups, threads, experiments, and integrations — together with evaluation management. It also carries the supporting permissions those need in other services, including CloudWatch Logs, AWS KMS, Secrets Manager, IAM Identity Center, Amazon SNS, Amazon Bedrock AgentCore, the AWS Price List, and ObservabilityAdmin. | Always. This is the base policy. |
 | CloudWatchOmniModelInferencePolicy | Model inference only: invoking foundation models and inference profiles in Amazon Bedrock, including streaming responses, and invoking models served through Amazon Bedrock Mantle. It grants nothing else. | Only for spaces that use the prompt playground or run evaluations with custom evaluators. A view-only space does not receive it. |
 
 Keeping inference in its own policy means that a space can set up and view its evaluation configuration without holding permission to invoke a model. Only running a model requires the second policy.
@@ -94,6 +94,7 @@ Setup uses several IAM roles, and CloudWatch Omni creates most of them for you. 
 | CloudWatchOmniIntegrationEnablementRole | Enabling telemetry integrations for your account. One role per member account. | CloudWatch Omni | Required for integrations |
 | CloudWatchOmniDatasetIntegrationExecutionRole | Dataset integration. Assumed by logs.amazonaws.com, and restricted to dataset integrations in your own account. | CloudWatch Omni | Required for dataset integration |
 | AgentCoreEvaluationRole | Execution role for online agent evaluations. You pass its ARN when you create or update a space. | You | Optional. You can opt out, or point to an existing role. |
+| CloudWatchOmniProvisioningRole | With this role, your organization's management account or delegated administrator can create the account's space and Dataset integration for you. It carries CloudWatchOmniProvisioningPolicy, and it trusts cloudwatch.amazonaws.com only for requests from your organization's management account and its organization domain. There is one role per member account, under the /service-role/ path. | CloudWatch Omni | Required only when your organization's administrator sets up the space for you |
 
 **Required** means the role must exist for that capability to work, not that you have to create it yourself.
 

@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/innovation-sandbox-on-aws//in
 title: 'Innovation Sandbox on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/innovation-sandbox-on-aws/
 source: aws-documentation
-generated_on: 2026-11-24
+generated_on: 2026-11-25
 ---
 
 # Innovation Sandbox on AWS
 
-Accelerate cloud innovation with automated, secure, and cost-controlled sandbox environments
+Accelerate cloud and AI innovation with automated, secure, and cost-controlled sandbox environments
 
-- **Version**: 1.3.7
+- **Version**: 1.4.0
 - **Release**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 60 mins
@@ -21,29 +21,29 @@ Accelerate cloud innovation with automated, secure, and cost-controlled sandbox 
 
 ## Overview
 
-Innovation Sandbox on AWS empowers organizations to accelerate cloud innovation by automating the complete lifecycle of temporary sandbox environments. Cloud administrators can provision secure, governed AWS accounts in minutes, not days, with built-in spend controls, automated policy enforcement, and intelligent account lifecycle management. By eliminating weeks of manual administration and reducing operational overhead, Innovation Sandbox frees your teams to focus on what matters most: learning, experimenting, and building on AWS.
+Innovation Sandbox on AWS helps organizations accelerate cloud and AI innovation by automating the lifecycle and governance of temporary sandbox environments. Cloud administrators can provision secure, governed AWS accounts in minutes, with built-in spend controls, automated policy enforcement, and account lifecycle management. Because every sandbox is an isolated account with policy guardrails and spend monitoring already in place, builders and their AI agents can experiment with confidence: each sandbox helps keep mistakes away from production systems and is cleaned up at the end of the lease. By eliminating the manual administration of sandbox environments, Innovation Sandbox frees your teams to focus on what matters most: learning, experimenting, and building on AWS.
 
 ## Benefits
 
-### Manage and monitor temporary sandbox environments
+### Provision, manage, and monitor temporary sandbox environments
 
-Streamline your development workflow with fully automated sandbox lifecycle management that provisions, monitors, and manages short-lived environments from creation through decommissioning. Through an intuitive web interface, users can easily request account leases and track usage and costs, while administrators maintain visibility and control across the entire sandbox ecosystem, eliminating manual overhead and ensuring consistent governance throughout the account lifecycle.
+Automate the full lifecycle of temporary AWS accounts, from provisioning and monitoring through cleanup and recycling. Users request sandbox leases and track their usage and costs through a web interface, while administrators see and control every account from one place.
 
-### Enhance operational efficiency
+### Built for AI experimentation
 
-Reduce administrative overhead and accelerate cloud adoption by automatically applying standardized governance policies across all sandbox accounts. Eliminate weeks of manual configuration work while ensuring consistent security and compliance controls, freeing your team to focus on innovation rather than administration.
+Sandboxes are a natural place to deploy and validate AI-built workloads and to test autonomous agents. With Sandbox Spaces, each user can get an AI agent with their sandbox and use natural language to explore the account, create resources, analyze data, and build applications, without setting up a local development environment. Builders can also work in sandbox accounts directly from the IDEs and AI tools they already use: through the Innovation Sandbox Model Context Protocol (MCP) server, they and their coding agents can request a sandbox, build and deploy into it, and check spend against the budget without leaving the tool.
 
-### Accelerate experimentation with Blueprints
+### Governance built in
 
-Deploy pre-configured environments instantly using Blueprints: reusable CloudFormation StackSets that automatically provision common resources in new sandbox accounts. Whether setting up training labs, deploying standard networking stacks, configuring data access patterns, or preparing AI/ML experimentation environments, Blueprints eliminate repetitive setup work and get users productive from the start.
+Gain visibility into sandbox activity and apply consistent guardrails to every sandbox automatically. Service control policies define which AWS services, features, Regions, and models users can access. Set budget and duration limits to alert users, freeze account access, or end the lease and clean up the account. When an experiment proves its value, eject the account to carry the work into a non-sandbox environment.
 
-### Establish cost governance controls
+### Collaborate in shared sandboxes
 
-Gain visibility into sandbox spending with cost tracking and automated budget enforcement. Configure budget limits and alerts to proactively manage costs. Notifications and spend-limiting mechanisms activate when usage approaches your defined thresholds, preventing budget overruns before they happen.
+Sandbox work is often a team effort. Assign multiple users or groups to a single lease, or let users share their leases with others, so teams can build together under one budget and time limit. Fine-grained permissions let you give each user or group a different level of access in the same sandbox. Hackathons, workshops, classrooms, and group prototyping exercises get a common environment, while administrators keep full visibility into who has access to each account.
 
-### Flexible account lifecycle management
+### Get started faster with Blueprints
 
-Automatically freeze accounts when they reach time or budget limits, preserving work while preventing additional spend. Frozen accounts can be easily reinstated to continue development, or ejected from the sandbox ecosystem to transition workloads into non-sandbox environments, providing a clear path from prototype to production-ready solutions.
+Deploy preconfigured environments instantly using Blueprints: reusable CloudFormation StackSets that automatically provision common resources in new sandbox accounts. Whether you're setting up training labs, deploying standard networking stacks, configuring data access patterns, or preparing AI/ML experimentation environments, Blueprints eliminate repetitive setup work and get users productive from the start.
 
 ## How it works
 

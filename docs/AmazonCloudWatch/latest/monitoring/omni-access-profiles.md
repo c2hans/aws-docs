@@ -107,4 +107,4 @@ On the detail page, **Edit access profile** changes the profile's name, descript
 + To understand how access to a space works, see [Control access to your space](omni-control-access-to-your-space.md).
 + To add members and set their permission levels, see [Manage space members and permissions](omni-manage-space-members-and-permissions.md).
 + To create an alert that uses a profile, see [Alerts](omni-alerts.md).
-+ To connect the integrations a profile can invoke, see [Connect Slack](omni-connect-slack.md).
++ For information about connecting the integrations a profile can invoke, see [Connect Slack](omni-connect-slack.md) and [Connect PagerDuty](omni-connect-pagerduty.md).

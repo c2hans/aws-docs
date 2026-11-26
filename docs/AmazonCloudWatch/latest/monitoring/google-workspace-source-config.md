@@ -25,6 +25,7 @@ Before you begin, make sure you have the following:
 + The Admin SDK Reports API enabled in the Google Cloud console.
 + The Alert Center API enabled in the Google Cloud console.
 + Super-admin access to the Google Admin console for domain-wide delegation authorization.
++ Domain-wide delegation authorized for both OAuth scopes listed in [Configure Google Workspace](#google-workspace-product-configuration). The pipeline requires both scopes together.
 + An AWS account with permissions to create and manage CloudWatch pipelines. For more information, see [API caller permissions](pipeline-iam-reference.md#api-caller-permissions).
 + An AWS account with permissions to create and update secrets in AWS Secrets Manager, and a source role that can retrieve the stored credentials. For more information, see [Third-party sources (API Pull)](pipeline-iam-reference.md#third-party-api-pull).
 + An AWS account with permissions to create and manage CloudWatch Logs log groups. For more information, see [CloudWatch Logs API operations and required permissions for actions](permissions-reference-cw.md#cwl-permissions-table).
@@ -77,9 +78,11 @@ Before you begin, make sure you have the following:
 
    1. For **Client ID**, enter the value of the `client_id` key from the service account JSON key file.
 
-   1. For **OAuth scopes**, add the following comma-delimited scopes:
+   1. For **OAuth scopes**, add both of the following comma-delimited scopes. You must authorize both scopes together:
       + [Admin Audit Read Only](https://www.googleapis.com/auth/admin.reports.audit.readonly)
       + [Alerts](https://www.googleapis.com/auth/apps.alerts)
+**Important**
+You must authorize both scopes together. If either scope is not authorized for the client ID, Google rejects the token request. The pipeline then can't collect any data, including events that need only the other scope. For more information, see [Authenticating with Google Workspace](#google-workspace-authentication) and [Troubleshooting](google-workspace-pipeline-setup.md#google-workspace-troubleshooting).
 
    1. Choose **Authorize**.
 
@@ -150,7 +153,7 @@ Google Workspace uses OAuth 2.0 with service account authentication and domain-w
 
 1. Signs a JWT with the service account private key.
 
-1. Exchanges the JWT for an access token through Google's OAuth endpoint.
+1. Exchanges the JWT for an access token through the Google OAuth endpoint. The JWT requests both the `admin.reports.audit.readonly` and `apps.alerts` scopes in a single `scope` claim. Google issues a token only if both scopes are authorized for the service account in domain-wide delegation.
 
 1. Impersonates the specified administrator account to access organization-wide data.
 

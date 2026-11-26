@@ -4,6 +4,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 
 # CloudWatch investigations
 
+**Note**
+You can now use AWS DevOps Agent for an improved investigation experience. To get started, create an agent space, or if your account already has one, start investigations from that space. For more information, see [Getting started with AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-started-with-aws-devops-agent.html).
+
 The CloudWatch investigations feature is a generative AI-powered assistant that can help you respond to incidents in your system. It uses generative AI to scan your system's telemetry and quickly surface telemetry data and suggestions that might be related to your issue. These suggestions include metrics, logs, deployment events, and root-cause hypotheses with visual representations when multiple resources are involved. For a complete list of types of data that the AI assistant can surface, see [Insights that CloudWatch investigations can surface in investigations](Investigations-SuggestionTypes.md).
 
 You can conduct investigations without any additional configuration in CloudWatch operational troubleshooting. When you start an investigation, CloudWatch investigations uses the permissions associated with the signed-in user to investigate and analyze the resources associated with the alarm, metrics, or Logs Insights query and provide troubleshooting suggestions. No resources are created by the investigation, and every action taken by CloudWatch investigations is logged in CloudTrail for traceability. The investigation provides you the following information to assist you with operational troubleshooting:

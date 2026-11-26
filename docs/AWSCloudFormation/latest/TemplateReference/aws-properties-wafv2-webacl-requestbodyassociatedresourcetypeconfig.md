@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::WAFv2::WebACL RequestBodyAssociatedResourceTypeConfig
 
-Customizes the maximum size of the request body that your protected Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access resources forward to AWS WAF for inspection. The default size is 8 KB (8,192 bytes) for Application Load Balancer and 16 KB (16,384 bytes) for the other resource types. You can change the setting for any of the available resource types.
+Customizes the maximum size of the request body that your protected Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, and Elastic Load Balancing for Envoy resources forward to AWS WAF for inspection. The default size is 8 KB (8,192 bytes) for Application Load Balancer and 16 KB (16,384 bytes) for the other resource types. You can change the setting for any of the available resource types.
 
 **Note**
 You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see [AWS WAF Pricing](https://aws.amazon.com/waf/pricing/).
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-wafv2-webacl-requestbodyassociatedresourcetypeconfig-properties"></a>
 
 `DefaultSizeInspectionLimit`  <a name="cfn-wafv2-webacl-requestbodyassociatedresourcetypeconfig-defaultsizeinspectionlimit"></a>
-Specifies the maximum size of the web request body component that an associated Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resource should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body.
+Specifies the maximum size of the web request body component that an associated Application Load Balancer, CloudFront, API Gateway, Amazon Cognito, App Runner, Verified Access, or Elastic Load Balancing for Envoy resource should send to AWS WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body.
 You can specify `KB_8` only for Application Load Balancer, with the `APPLICATION_LOAD_BALANCER` resource type.
 Default: `8 KB (8,192 bytes)` for Application Load Balancer and `16 KB (16,384 bytes)` for the other resource types
 *Required*: Yes

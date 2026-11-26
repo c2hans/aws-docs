@@ -12,7 +12,7 @@ For more information about this processor including examples, see [grok](https:/
 <a name="API_Grok_Contents"></a>
 
  ** match **   <a name="CWL-Type-Grok-match"></a>
-The grok pattern to match against the log event. For a list of supported grok patterns, see [Supported grok patterns](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Configurable.html#CloudWatch-Logs-Transformation-Grok).
+The grok pattern to match against the log event. For a list of supported grok patterns, see [Supported grok patterns](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Configurable.html#Grok-Patterns).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: Yes

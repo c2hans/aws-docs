@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[CapacityProviderVolume](#cfn-bedrockagentcore-runtime-filesystemconfiguration-capacityprovidervolume)" : {{CapacityProviderVolumeConfiguration}},
   "[EfsAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-efsaccesspoint)" : {{EfsAccessPointConfiguration}},
+  "[S3BucketMount](#cfn-bedrockagentcore-runtime-filesystemconfiguration-s3bucketmount)" : {{S3BucketMountConfiguration}},
   "[S3FilesAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-s3filesaccesspoint)" : {{S3FilesAccessPointConfiguration}},
   "[SessionStorage](#cfn-bedrockagentcore-runtime-filesystemconfiguration-sessionstorage)" : {{SessionStorageConfiguration}}
 }
@@ -33,6 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     CapacityProviderVolumeConfiguration}}
   [EfsAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-efsaccesspoint): {{
     EfsAccessPointConfiguration}}
+  [S3BucketMount](#cfn-bedrockagentcore-runtime-filesystemconfiguration-s3bucketmount): {{
+    S3BucketMountConfiguration}}
   [S3FilesAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-s3filesaccesspoint): {{
     S3FilesAccessPointConfiguration}}
   [SessionStorage](#cfn-bedrockagentcore-runtime-filesystemconfiguration-sessionstorage): {{
@@ -52,6 +55,12 @@ Property description not available.
 Configuration for an Amazon EFS access point to mount into the AgentCore Runtime.
 *Required*: No
 *Type*: [EfsAccessPointConfiguration](aws-properties-bedrockagentcore-runtime-efsaccesspointconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`S3BucketMount`  <a name="cfn-bedrockagentcore-runtime-filesystemconfiguration-s3bucketmount"></a>
+Property description not available.
+*Required*: No
+*Type*: [S3BucketMountConfiguration](aws-properties-bedrockagentcore-runtime-s3bucketmountconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `S3FilesAccessPoint`  <a name="cfn-bedrockagentcore-runtime-filesystemconfiguration-s3filesaccesspoint"></a>

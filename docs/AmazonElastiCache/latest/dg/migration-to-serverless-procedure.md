@@ -18,7 +18,7 @@ Confirm the following:
 + Confirm that you have a AWS Secrets Manager secret that holds your source credentials, if your source requires authentication.
 + Confirm that your application's users are set up on your target cache, with the same user names, passwords, and permissions as on your source, if your source requires authentication. For more information about setting up target users, see [Setting up your application's users on your target](migration-to-serverless-auth.md#migration-to-serverless-auth-target-users).
 + Confirm that you have your source TLS configuration, if your source requires TLS.
-+ Confirm that you have at least three subnets in different Availability Zones for your target cache, each with free IP addresses.
++ Confirm that you have at least three subnets in different Availability Zones for your target cache, each with free IP addresses. In a Region where your account has two Availability Zones, such as US West (N. California), use a subnet in each of the two.
 + Confirm that you have AWS CLI version 2.38.3 or later, if you use the AWS CLI.
 
 ## Creating the migration
@@ -47,7 +47,7 @@ You can create a migration with the ElastiCache console or the AWS CLI.
 **Warning**
 Your target cache must be empty when you create the migration. If it contains any keys, the prepare step fails and the target's **Events** tab shows "The serverless cache must have no keys before migration can begin." To empty the target, run `FLUSHALL` on it before you create the migration. `FLUSHALL` removes every key in the cache. You can have ElastiCache clear the target for you only when you start the data sync.
 
-1. Under **Target details**, for **Choose target cache**, choose your cache. Only compatible caches are listed.
+1. Under **Target details**, for **Choose target cache**, choose your cache. The list shows your ElastiCache Serverless for Valkey caches. You can't choose a cache that is not available, or a cache whose subnets are in too few Availability Zones for the migration, and the console shows the reason. For the requirement, see [Network requirements](migration-to-serverless-prerequisites.md#migration-to-serverless-network-requirements). You can't change the subnets of a serverless cache, so if your cache's subnets are in too few Availability Zones, create a new target cache. If your IAM identity can't call `ec2:DescribeSubnets`, the console checks only the number of subnets. A cache whose subnets share an Availability Zone then fails the prepare step with a subnet message.
 
 1. Choose **Create**. The migration details page opens. Its title is **Migration:** followed by your cache name.
 

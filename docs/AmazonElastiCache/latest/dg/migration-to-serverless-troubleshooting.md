@@ -28,7 +28,10 @@ Check the migration's events before you plan to start the data sync again.
 After cutover has begun, you can no longer stop the data sync. While the migration is in `cutting-over`, `StopMigration` fails with `InvalidServerlessCacheStateFault`. With automatic cutover, ElastiCache accepts a `StopMigration` call made during `syncing`. If cutover begins before the stop takes effect, the cutover continues, and the completion event reports that the stop was ignored.
 
 **To stop the data sync (console)**
-+ On the migration details page, choose **Stop**. **Stop** is available only while **Current state** is **Data sync in progress**. While the data sync stops, the **Current state** is **Stopping**.
+
+1. On the migration details page, choose **Stop**. **Stop** is available only while **Current state** is **Data sync in progress**.
+
+1. In the **Stop migration** dialog box, choose **Stop**. The dialog notes that data already synced stays on your target and that migration charges continue until you complete the migration. While the data sync stops, the **Current state** is **Stopping**.
 
 **To stop the data sync (AWS CLI)**
 

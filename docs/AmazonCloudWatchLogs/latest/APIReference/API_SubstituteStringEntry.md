@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 # SubstituteStringEntry
 
-This object defines one log field key that will be replaced using the [ substituteString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-substituteString) processor.
+This object defines one log field key that will be replaced using the [ substituteString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-StringMutate.html#CloudWatch-Logs-Transformation-substituteString) processor.
 
 ## Contents
 <a name="API_SubstituteStringEntry_Contents"></a>

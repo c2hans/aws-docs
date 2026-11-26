@@ -46,19 +46,23 @@ You can create an alert in three ways, depending on where you start:
 
 Then name the alert, set the thresholds and evaluation timing, and add destinations. Choose the name deliberately: an alert cannot be renamed later.
 
+If your space is connected to an investigation agent, you can also turn on **Auto-trigger an investigation with your agent**. Choose the agent and the severities (Warning, Critical, or both) that start an investigation. See [Investigate a firing alert](#omni-alerts-investigate-a-firing-alert).
+
 Every alert also carries an **access profile** (the identity it evaluates its query and sends notifications as), and Omni selects one for you by default. You can select a different profile for finer-grained control. If an alert reports no data from the moment you create it, rather than going quiet after working, check its profile before the query. See [Access profiles](omni-access-profiles.md).
 
 Creating an alert requires permission to create alerts in the space and access to a profile that carries the grants below. Whichever profile the alert uses, it must carry these grants:
 + Grants that allow the alert and you, its creator, to assume the profile.
 + A grant that allows the query actions, `cloudwatch:StartTelemetryQuery` and `cloudwatch:GetTelemetryQueryResults`.
-+ If the alert notifies a Slack channel, a grant that allows the Slack integration, scoped to that channel. See [Connect Slack](omni-connect-slack.md).
++ If the alert auto-triggers an investigation, a grant that allows invoking the investigation agent's integration (`cloudwatch:InvokeIntegration`).
++ If the alert notifies a Slack channel, a grant that allows the Slack integration, scoped to that channel. For information about the Slack integration, see [Connect Slack](omni-connect-slack.md).
++ If the alert pages PagerDuty, a grant that allows the PagerDuty integration. For information about the PagerDuty integration, see [Connect PagerDuty](omni-connect-pagerduty.md).
 
 For how to author grants, see [Custom grant actions](omni-custom-grant-actions.md).
 
 ## Send notifications
 <a name="omni-alerts-send-notifications"></a>
 
-Notification rules route by state: send warning notifications to one destination and critical notifications to another, and notify on recovery to OK so the person who was notified knows the alert cleared. A destination is a Slack channel (connected through the Slack integration, see [Connect Slack](omni-connect-slack.md)) or an Amazon SNS topic.
+Notification rules route by state: send warning notifications to one destination and critical notifications to another, and notify on recovery to OK so the person who was notified knows the alert cleared. A destination is a Slack channel connected through the Slack integration, a PagerDuty service connected through the PagerDuty integration, or an Amazon SNS topic.
 
 Delivery to a Slack channel also requires that the Region's Amazon CloudWatch bot has been invited to that channel. For the invite command and the bot names by Region, see [Connect Slack](omni-connect-slack.md).
 
@@ -76,4 +80,8 @@ An alert evaluates against your space's CloudWatch Dataset, so it can fire on te
 ## Investigate a firing alert
 <a name="omni-alerts-investigate-a-firing-alert"></a>
 
-Investigations are manual: an alert never starts one automatically when it fires. When your space is connected to the AWS DevOps Agent, you start the investigation yourself from a firing alert's **Investigate** action. The investigation is scoped to that alert and seeded with the alert's context: its state and what fired. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
+When your space is connected to an investigation agent, such as the AWS DevOps Agent or an AWS Partner agent, you can investigate a firing alert in two ways:
++ To start an investigation yourself, choose the alert's **Investigate** action and select the agent. The investigation covers that alert and starts with the alert's context: its state and what fired.
++ To start an investigation automatically, turn on **Auto-trigger an investigation with your agent** in the alert's create or edit form, then choose the agent and the severities. When the alert breaches at a chosen severity, CloudWatch Omni starts the investigation for you. Make sure the alert's access profile can invoke the agent's integration. If it can't, the form offers the **Grant permission** action.
+
+For more information, see [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md) and [Investigate with ResolveAI](omni-investigate-with-resolve-ai.md).

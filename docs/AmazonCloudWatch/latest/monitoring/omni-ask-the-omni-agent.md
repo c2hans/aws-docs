@@ -62,7 +62,7 @@ The agent is scoped to observability. It declines unrelated work, such as genera
 
 The agent works with your permissions: it can read only the telemetry you have access to (the space's logs and traces, plus metrics queried from CloudWatch Metrics). Its permissions are the same as yours in the Omni web UI. Actions that change something, such as creating an alert, always require your confirmation in the conversation. For permission levels, see [Control access to your space](omni-control-access-to-your-space.md).
 
-## Investigations with the AWS DevOps Agent
+## Omni agent investigations
 <a name="omni-ask-the-omni-agent-investigations-with-the-devops-agent"></a>
 
-If your space is connected to the AWS DevOps Agent, the Omni agent automatically delegates root cause analysis to it, and you can track the investigation's progress from the conversation. The investigation runs with the permissions of the DevOps Agent, not yours. It can read CloudWatch Logs log groups directly, and your data scope does not filter its results. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
+When you ask the Omni agent to investigate an issue, you can investigate with a connected investigation agent, such as the AWS DevOps Agent. If more than one investigator is available, Omni asks which one to use. For more information about investigations, see [Investigations](omni-investigations.md).

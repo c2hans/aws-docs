@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet-examples.html
 ---
 
-# Example CLI configurations Spot Fleet
+# Example CLI configurations for Spot Fleet
 
 You can define your Spot Fleet configuration in a JSON file, and then reference that file using the [request-spot-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-fleet.html) AWS CLI command to create your fleet, as follows:
 
